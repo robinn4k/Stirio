@@ -35,6 +35,8 @@ const CACHE_PATHS = [
   'js/cookies.js',
   'js/constructor.js',
   'js/firebase-config.js',
+  // Telegram integration
+  'js/telegram.js',
   // Wiki 3D modules
   'js/wiki.js',
   'js/wiki-data.js',

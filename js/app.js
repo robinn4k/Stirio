@@ -24,6 +24,7 @@ import {
 import { getLocalizedRounds } from './questions.js';
 import { getBotName, scheduleBotAnswer, DIFFICULTIES } from './bot.js';
 import { initWiki, bindWikiEvents } from './wiki.js';
+import { isTelegram, initTelegram, getTelegramUser, hapticImpact, hapticNotification, hapticSelection, showBackButton, hideBackButton } from './telegram.js';
 
 // ─── DOM helpers ─────────────────────────────────────────────
 const $ = id => document.getElementById(id);
@@ -31,6 +32,11 @@ const showView = id => {
   setLoading(false); // always clear any pending loading spinner on navigation
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   $(id).classList.add('active');
+  // Telegram: show/hide back button based on view
+  if (isTelegram) {
+    if (id === 'view-dashboard' || id === 'view-login') hideBackButton();
+    else showBackButton();
+  }
 };
 const setLoading = show => $('loading').classList.toggle('hidden', !show);
 const toast = (msg, type = 'info') => {
@@ -39,18 +45,45 @@ const toast = (msg, type = 'info') => {
   el.className = `toast toast-${type} show`;
   clearTimeout(el._t);
   el._t = setTimeout(() => el.classList.remove('show'), 3000);
+  // Telegram: haptic feedback on toasts
+  if (isTelegram) {
+    if (type === 'success') hapticNotification('success');
+    else if (type === 'error') hapticNotification('error');
+    else hapticImpact('light');
+  }
 };
 
 // ─── INIT ─────────────────────────────────────────────────────
 async function init() {
   setLoading(true);
+
+  // Telegram Mini App: init early to apply theme and expand
+  if (isTelegram) {
+    document.body.classList.add('tg-app');
+    initTelegram();
+    // Auto-detect language from Telegram user
+    const tgUser = getTelegramUser();
+    if (tgUser?.languageCode) {
+      const supported = ['es', 'en', 'fr', 'pt', 'de'];
+      const tgLang = tgUser.languageCode.slice(0, 2);
+      if (supported.includes(tgLang)) setLang(tgLang);
+    }
+  }
+
   document.documentElement.lang = getLang();
   translateHTML();
   updateLangToggle();
   await initFirebase();
   await initRivals();
-  // getCurrentUser() is set by initFirebase() if returning from a Google redirect.
-  // Fall back to restoreSession() for previously saved sessions (guest or Google).
+
+  // Telegram: auto-login as guest with Telegram user name
+  if (isTelegram && !getCurrentUser() && !restoreSession()) {
+    const tgUser = getTelegramUser();
+    const guestName = tgUser?.displayName || 'Telegram User';
+    signInAsGuest();
+    updateGuestName(guestName);
+  }
+
   const user = getCurrentUser() || restoreSession();
   if (user) {
     await Promise.all([loadAchievementsFromCloud(), loadLearnFromCloud()]);
@@ -61,6 +94,24 @@ async function init() {
   initWiki({ showView, t, toast });
   setLoading(false);
   bindEvents();
+
+  // Telegram: handle back button events
+  if (isTelegram) {
+    window.addEventListener('telegram-back', () => {
+      const active = document.querySelector('.view.active');
+      if (!active) return;
+      const id = active.id;
+      // Navigate back based on current view
+      if (id === 'view-dashboard') {
+        window.Telegram.WebApp.close();
+      } else {
+        // Click the back button in the current view's header
+        const backBtn = active.querySelector('.icon-btn:first-child');
+        if (backBtn) backBtn.click();
+        else goToDashboard();
+      }
+    });
+  }
 
   window.addEventListener('offline', () => toast(t('offline.message'), 'error'));
   window.addEventListener('online',  () => toast(t('online.message'),  'success'));

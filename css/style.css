@@ -2280,3 +2280,49 @@ img { display: block; max-width: 100%; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ══════════════════════════════════════════════════
+   TELEGRAM MINI APP – Adaptations
+══════════════════════════════════════════════════ */
+
+/* Use Telegram viewport height when available */
+body.tg-app {
+  height: var(--tg-viewport-height, 100vh);
+  overflow: hidden;
+}
+body.tg-app #app {
+  height: var(--tg-viewport-height, 100vh);
+}
+body.tg-app .view {
+  min-height: var(--tg-viewport-height, 100vh);
+}
+
+/* Hide login view elements not needed in Telegram */
+body.tg-app #view-login .btn-google,
+body.tg-app #view-login .login-note {
+  display: none;
+}
+
+/* Adjust header for Telegram back button (avoid double back) */
+body.tg-app .app-header .icon-btn:first-child {
+  visibility: hidden;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Safe area padding for Telegram */
+body.tg-app {
+  padding-top: var(--tg-safe-top, 0px);
+  padding-bottom: var(--tg-safe-bottom, 0px);
+}
+
+/* Smoother touch scrolling in Telegram WebView */
+body.tg-app .dashboard-body,
+body.tg-app .wiki-hub-body,
+body.tg-app .wiki-category-body,
+body.tg-app .wiki-article-body {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
