@@ -35,6 +35,13 @@ const CACHE_PATHS = [
   'js/cookies.js',
   'js/constructor.js',
   'js/firebase-config.js',
+  // Wiki 3D modules
+  'js/wiki.js',
+  'js/wiki-data.js',
+  'js/wiki-3d.js',
+  'js/wiki-scenes.js',
+  // 3D model assets
+  'models/alambique.glb',
   // i18n question bundles (contain the icon fields for Learn cards)
   'js/i18n/questions_es.js',
   'js/i18n/questions_en.js',
@@ -46,7 +53,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v2.4`;
+const STATIC_CACHE_VERSION = `Stirio-v2.5`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
