@@ -23,6 +23,7 @@ import {
 } from './rivals.js';
 import { getLocalizedRounds } from './questions.js';
 import { getBotName, scheduleBotAnswer, DIFFICULTIES } from './bot.js';
+import { initWiki, bindWikiEvents } from './wiki.js';
 
 // ─── DOM helpers ─────────────────────────────────────────────
 const $ = id => document.getElementById(id);
@@ -57,6 +58,7 @@ async function init() {
   } else {
     showView('view-login');
   }
+  initWiki({ showView, t, toast });
   setLoading(false);
   bindEvents();
 
@@ -976,6 +978,7 @@ async function renderLeaderboard(roundId) {
 // ─── EVENT BINDING ────────────────────────────────────────────
 function bindEvents() {
   bindLoginEvents();
+  bindWikiEvents();
 
   // Language toggle
   $('btn-lang-toggle').addEventListener('click', toggleLanguage);

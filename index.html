@@ -118,6 +118,11 @@
             <span class="qm-label" data-i18n="dashboard.duel">Duelo</span>
             <span class="qm-badge qm-badge-beta">BETA</span>
           </button>
+          <button class="qm-btn qm-btn-wiki" id="btn-wiki">
+            <span class="qm-icon">🌐</span>
+            <span class="qm-label" data-i18n="dashboard.wiki">Wiki 3D</span>
+            <span class="qm-badge qm-badge-new">NEW</span>
+          </button>
         </div>
 
         <h2 class="section-title" data-i18n="dashboard.select_round">Selecciona una Ronda</h2>
@@ -597,6 +602,73 @@
       </div>
     </div>
 
+    <!-- ══ WIKI HUB ══ -->
+    <div id="view-wiki-hub" class="view">
+      <div class="app-header">
+        <button class="icon-btn" id="btn-back-wiki-hub">←</button>
+        <h2 class="header-title" data-i18n="wiki.title">🌐 Wiki 3D</h2>
+        <div class="header-spacer"></div>
+      </div>
+      <div class="wiki-hub-body">
+        <div class="wiki-hero">
+          <div class="wiki-hero-canvas" id="wiki-hero-canvas"></div>
+          <div class="wiki-hero-overlay">
+            <h2 class="wiki-hero-title" data-i18n="wiki.hero_title">Explora el mundo de la coctelería</h2>
+            <p class="wiki-hero-sub" data-i18n="wiki.hero_sub">Modelos 3D interactivos · Técnicas · Historia</p>
+          </div>
+        </div>
+        <div class="wiki-search-wrap">
+          <input class="wiki-search" id="wiki-search" type="text" data-i18n-placeholder="wiki.search" placeholder="Buscar en la wiki...">
+        </div>
+        <div class="wiki-categories-grid" id="wiki-categories-grid"></div>
+      </div>
+    </div>
+
+    <!-- ══ WIKI CATEGORY ══ -->
+    <div id="view-wiki-category" class="view">
+      <div class="app-header">
+        <button class="icon-btn" id="btn-back-wiki-category">←</button>
+        <h2 class="header-title" id="wiki-category-title"></h2>
+        <div class="header-spacer"></div>
+      </div>
+      <div class="wiki-category-body">
+        <div class="wiki-category-desc" id="wiki-category-desc"></div>
+        <div class="wiki-articles-list" id="wiki-articles-list"></div>
+      </div>
+    </div>
+
+    <!-- ══ WIKI ARTICLE ══ -->
+    <div id="view-wiki-article" class="view">
+      <div class="app-header">
+        <button class="icon-btn" id="btn-back-wiki-article">←</button>
+        <h2 class="header-title" id="wiki-article-title"></h2>
+        <button class="icon-btn" id="btn-wiki-fullscreen-3d" title="3D">🔭</button>
+      </div>
+      <div class="wiki-article-body" id="wiki-article-body">
+        <div class="wiki-3d-viewport" id="wiki-article-3d"></div>
+        <div class="wiki-article-content" id="wiki-article-content"></div>
+      </div>
+    </div>
+
+    <!-- ══ WIKI 3D FULLSCREEN ══ -->
+    <div id="view-wiki-3d" class="view">
+      <div class="wiki-3d-header">
+        <button class="icon-btn" id="btn-back-wiki-3d">←</button>
+        <h2 class="header-title" id="wiki-3d-title"></h2>
+        <div class="wiki-3d-controls">
+          <button class="icon-btn" id="btn-wiki-3d-rotate" title="Auto-rotate">🔄</button>
+          <button class="icon-btn" id="btn-wiki-3d-explode" title="Explode">💥</button>
+          <button class="icon-btn" id="btn-wiki-3d-reset" title="Reset">🎯</button>
+        </div>
+      </div>
+      <div class="wiki-3d-canvas-wrap" id="wiki-3d-canvas-full"></div>
+      <div class="wiki-3d-info-panel" id="wiki-3d-info-panel">
+        <div class="wiki-3d-info-title" id="wiki-3d-info-title"></div>
+        <div class="wiki-3d-info-text" id="wiki-3d-info-text"></div>
+      </div>
+      <div class="wiki-3d-hotspots" id="wiki-3d-hotspots"></div>
+    </div>
+
     <!-- ══ SHARE MODAL ══ -->
     <div id="share-modal" class="share-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
       <div class="share-modal-card">
@@ -650,6 +722,14 @@
     <a href="legal.html#terms">Términos</a>
   </footer>
 
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
   <script type="module" src="js/app.js"></script>
   <script type="module" src="js/cookies.js"></script>
 </body>
