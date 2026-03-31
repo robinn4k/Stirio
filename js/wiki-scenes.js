@@ -779,29 +779,63 @@ export async function buildAlambiqueScene(scene, camera, ctx) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// SCENE: HERO — Animated cocktail for the wiki hub header
+// SCENE: HERO — Animated bar tools for the wiki hub header
 // ═══════════════════════════════════════════════════════════════════════
 
 export function buildHeroScene(scene, camera, ctx) {
-  // Rotating cocktail lineup
-  const types = ['martini', 'rocks', 'highball'];
-  const colors = [['#ecf0f1'], ['#c0392b', '#e74c3c'], ['#2ecc71', '#f1c40f']];
-  const ratios = [[1.0], [0.6, 0.4], [0.5, 0.5]];
+  // Rotating bar tools lineup
+  const metal = metalMaterial();
 
-  types.forEach((type, i) => {
-    const angle = (i / types.length) * Math.PI * 2;
-    const r = 2.0;
-    const glass = buildGlass(type);
-    glass.position.set(Math.cos(angle) * r, -0.3, Math.sin(angle) * r);
-    scene.add(glass);
+  // Shaker
+  const shakerBody = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.4, 0.35, 1.8, 32),
+    metal
+  );
+  shakerBody.position.set(-2, 0, 0);
+  scene.add(shakerBody);
 
-    const liquid = buildLiquidLayers(type, colors[i], ratios[i]);
-    liquid.position.copy(glass.position);
-    scene.add(liquid);
+  // Jigger
+  const jiggerTop = new THREE.Mesh(
+    new THREE.ConeGeometry(0.3, 0.6, 32, 1, true),
+    metal
+  );
+  jiggerTop.position.set(0, 0.3, 0);
+  const jiggerBot = new THREE.Mesh(
+    new THREE.ConeGeometry(0.25, 0.5, 32, 1, true),
+    metal
+  );
+  jiggerBot.rotation.x = Math.PI;
+  jiggerBot.position.set(0, -0.25, 0);
+  scene.add(jiggerTop);
+  scene.add(jiggerBot);
+
+  // Bar spoon
+  const spoonHandle = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.02, 0.02, 2.5, 8),
+    metal
+  );
+  spoonHandle.position.set(2, 0, 0);
+  scene.add(spoonHandle);
+  const spoonBowl = new THREE.Mesh(
+    new THREE.SphereGeometry(0.1, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2),
+    metal
+  );
+  spoonBowl.position.set(2, -1.25, 0);
+  scene.add(spoonBowl);
+
+  // Rotate the whole scene
+  const group = new THREE.Group();
+  scene.children.forEach(c => {
+    if (c.type === 'Mesh') group.add(c);
+  });
+  scene.add(group);
+
+  ctx.addAnimation((delta, t) => {
+    group.rotation.y = t * 0.3;
   });
 
-  camera.position.set(0, 3, 5);
-  ctx.controls.target.set(0, 0.5, 0);
+  camera.position.set(0, 2, 5);
+  ctx.controls.target.set(0, 0, 0);
   ctx.controls.enableZoom = false;
   ctx.controls.enablePan = false;
 }

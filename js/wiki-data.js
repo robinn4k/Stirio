@@ -3,191 +3,18 @@
 
 export const WIKI_CATEGORIES = [
   {
-    id: 'cocktails',
-    icon: '🍸',
-    gradient: 'linear-gradient(135deg, #e74c3c, #c0392b)',
-    has3d: true,
-    articles: [
-      {
-        id: 'margarita',
-        icon: '🍋',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'margarita', colors: ['#f1c40f', '#e67e22'], layers: [0.7, 0.3] },
-        ingredients: ['50 ml Tequila 100% Agave', '20 ml Triple Sec', '15 ml Jugo de Lima Fresco'],
-        method: 'shake',
-        garnish: 'salt-rim',
-      },
-      {
-        id: 'mojito',
-        icon: '🌿',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'highball', colors: ['#2ecc71', '#f1c40f', '#ecf0f1'], layers: [0.2, 0.5, 0.3] },
-        ingredients: ['45 ml Ron Blanco', '20 ml Jugo de Lima', '6 Ramas de Menta', '2 cdtas Azucar', 'Soda'],
-        method: 'muddle',
-        garnish: 'mint-sprig',
-      },
-      {
-        id: 'dry-martini',
-        icon: '🫒',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'martini', colors: ['#ecf0f1'], layers: [1.0] },
-        ingredients: ['60 ml Ginebra', '10 ml Vermouth Seco'],
-        method: 'stir',
-        garnish: 'olive',
-      },
-      {
-        id: 'negroni',
-        icon: '🍊',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'rocks', colors: ['#c0392b', '#e74c3c'], layers: [0.6, 0.4] },
-        ingredients: ['30 ml Ginebra', '30 ml Campari', '30 ml Vermouth Dulce'],
-        method: 'stir',
-        garnish: 'orange-slice',
-      },
-      {
-        id: 'old-fashioned',
-        icon: '🥃',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'rocks', colors: ['#d35400', '#e67e22'], layers: [0.8, 0.2] },
-        ingredients: ['45 ml Bourbon', '1 Terron de Azucar', '2-3 Gotas Angostura', 'Agua'],
-        method: 'build',
-        garnish: 'orange-peel',
-      },
-      {
-        id: 'pina-colada',
-        icon: '🍍',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'hurricane', colors: ['#f1c40f', '#ecf0f1'], layers: [0.6, 0.4] },
-        ingredients: ['50 ml Ron Blanco', '30 ml Crema de Coco', '50 ml Jugo de Pina'],
-        method: 'blend',
-        garnish: 'pineapple-wedge',
-      },
-      {
-        id: 'cosmopolitan',
-        icon: '🌸',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'martini', colors: ['#e91e63', '#f06292'], layers: [0.8, 0.2] },
-        ingredients: ['40 ml Vodka Citron', '15 ml Cointreau', '15 ml Jugo de Lima', '30 ml Jugo de Arandanos'],
-        method: 'shake',
-        garnish: 'lemon-twist',
-      },
-      {
-        id: 'espresso-martini',
-        icon: '☕',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'martini', colors: ['#3e2723', '#4e342e', '#d7ccc8'], layers: [0.6, 0.2, 0.2] },
-        ingredients: ['50 ml Vodka', '30 ml Licor de Cafe', '10 ml Jarabe', '1 Espresso'],
-        method: 'shake',
-        garnish: 'coffee-beans',
-      },
-      {
-        id: 'gin-fizz',
-        icon: '🫧',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'highball', colors: ['#ecf0f1', '#bdc3c7'], layers: [0.7, 0.3] },
-        ingredients: ['45 ml Ginebra', '30 ml Jugo de Limon', '10 ml Jarabe', 'Soda'],
-        method: 'shake',
-        garnish: 'lemon-wheel',
-      },
-      {
-        id: 'bellini',
-        icon: '🍑',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'flute', colors: ['#ffcc80', '#ffe0b2'], layers: [0.5, 0.5] },
-        ingredients: ['100 ml Prosecco', '50 ml Pure de Durazno Blanco'],
-        method: 'build',
-        garnish: 'none',
-      },
-      {
-        id: 'pisco-sour',
-        icon: '🥚',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'rocks', colors: ['#fff9c4', '#f5f5dc', '#ffffff'], layers: [0.5, 0.3, 0.2] },
-        ingredients: ['60 ml Pisco', '30 ml Jugo de Limon', '20 ml Jarabe', '1 Clara de Huevo'],
-        method: 'shake',
-        garnish: 'bitters-drops',
-      },
-      {
-        id: 'hurricane',
-        icon: '🌀',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'hurricane', colors: ['#e74c3c', '#e67e22', '#f39c12'], layers: [0.4, 0.3, 0.3] },
-        ingredients: ['50 ml Ron Blanco', '50 ml Ron Oscuro', '25 ml Maracuya', '25 ml Naranja', '10 ml Jarabe', '10 ml Granadina'],
-        method: 'shake',
-        garnish: 'orange-cherry',
-      },
-      {
-        id: 'negroni-sbagliato',
-        icon: '🥂',
-        has3d: true,
-        scene: 'cocktail-glass',
-        sceneParams: { glass: 'rocks', colors: ['#c0392b', '#e74c3c', '#f5f5dc'], layers: [0.4, 0.3, 0.3] },
-        ingredients: ['30 ml Campari', '30 ml Vermouth Dulce', '30 ml Prosecco'],
-        method: 'build',
-        garnish: 'orange-slice',
-      },
-    ]
-  },
-  {
     id: 'techniques',
     icon: '🔧',
     gradient: 'linear-gradient(135deg, #3498db, #2980b9)',
-    has3d: true,
+    has3d: false,
     articles: [
-      {
-        id: 'shake',
-        icon: '🫨',
-        has3d: true,
-        scene: 'technique-shake',
-      },
-      {
-        id: 'stir',
-        icon: '🥄',
-        has3d: true,
-        scene: 'technique-stir',
-      },
-      {
-        id: 'muddle',
-        icon: '🪵',
-        has3d: true,
-        scene: 'technique-muddle',
-      },
-      {
-        id: 'build',
-        icon: '🧱',
-        has3d: true,
-        scene: 'technique-build',
-      },
-      {
-        id: 'layer',
-        icon: '🌈',
-        has3d: true,
-        scene: 'technique-layer',
-      },
-      {
-        id: 'strain',
-        icon: '🫗',
-        has3d: true,
-        scene: 'technique-strain',
-      },
-      {
-        id: 'blend',
-        icon: '🌪️',
-        has3d: true,
-        scene: 'technique-blend',
-      },
+      { id: 'shake', icon: '🫨', has3d: false },
+      { id: 'stir', icon: '🥄', has3d: false },
+      { id: 'muddle', icon: '🪵', has3d: false },
+      { id: 'build', icon: '🧱', has3d: false },
+      { id: 'layer', icon: '🌈', has3d: false },
+      { id: 'strain', icon: '🫗', has3d: false },
+      { id: 'blend', icon: '🌪️', has3d: false },
     ]
   },
   {
@@ -202,6 +29,7 @@ export const WIKI_CATEGORIES = [
       { id: 'vodka', icon: '❄️', has3d: false },
       { id: 'tequila', icon: '🌵', has3d: false },
       { id: 'brandy', icon: '🍇', has3d: false },
+      { id: 'world-map', icon: '🗺️', has3d: false },
       { id: 'distillation', icon: '⚗️', has3d: true, scene: 'alambique' },
       { id: 'fermentation', icon: '🫧', has3d: false },
     ]
@@ -265,129 +93,9 @@ export const WIKI_CATEGORIES = [
 // Each entry has: title key, sections[], optional 3d scene config
 
 export const WIKI_ARTICLES = {
-  // ── COCKTAILS ──────────────────────────────────────────────
-  'cocktails.margarita': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'margarita', colors: ['#f1c40f','#e67e22'], layers: [0.7,0.3] }},
-      { type: 'info-grid', items: ['glass:margarita', 'method:shake', 'garnish:salt-rim'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.mojito': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'highball', colors: ['#2ecc71','#f1c40f','#ecf0f1'], layers: [0.2,0.5,0.3] }},
-      { type: 'info-grid', items: ['glass:highball', 'method:muddle', 'garnish:mint-sprig'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.dry-martini': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'martini', colors: ['#ecf0f1'], layers: [1.0] }},
-      { type: 'info-grid', items: ['glass:martini', 'method:stir', 'garnish:olive'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.negroni': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'rocks', colors: ['#c0392b','#e74c3c'], layers: [0.6,0.4] }},
-      { type: 'info-grid', items: ['glass:rocks', 'method:stir', 'garnish:orange-slice'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.old-fashioned': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'rocks', colors: ['#d35400','#e67e22'], layers: [0.8,0.2] }},
-      { type: 'info-grid', items: ['glass:rocks', 'method:build', 'garnish:orange-peel'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.pina-colada': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'hurricane', colors: ['#f1c40f','#ecf0f1'], layers: [0.6,0.4] }},
-      { type: 'info-grid', items: ['glass:hurricane', 'method:blend', 'garnish:pineapple-wedge'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.cosmopolitan': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'martini', colors: ['#e91e63','#f06292'], layers: [0.8,0.2] }},
-      { type: 'info-grid', items: ['glass:martini', 'method:shake', 'garnish:lemon-twist'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.espresso-martini': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'martini', colors: ['#3e2723','#4e342e','#d7ccc8'], layers: [0.6,0.2,0.2] }},
-      { type: 'info-grid', items: ['glass:martini', 'method:shake', 'garnish:coffee-beans'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.gin-fizz': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'highball', colors: ['#ecf0f1','#bdc3c7'], layers: [0.7,0.3] }},
-      { type: 'info-grid', items: ['glass:highball', 'method:shake', 'garnish:lemon-wheel'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.bellini': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'flute', colors: ['#ffcc80','#ffe0b2'], layers: [0.5,0.5] }},
-      { type: 'info-grid', items: ['glass:flute', 'method:build', 'garnish:none'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.pisco-sour': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'rocks', colors: ['#fff9c4','#f5f5dc','#ffffff'], layers: [0.5,0.3,0.2] }},
-      { type: 'info-grid', items: ['glass:rocks', 'method:shake', 'garnish:bitters-drops'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.hurricane': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'hurricane', colors: ['#e74c3c','#e67e22','#f39c12'], layers: [0.4,0.3,0.3] }},
-      { type: 'info-grid', items: ['glass:hurricane', 'method:shake', 'garnish:orange-cherry'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-  'cocktails.negroni-sbagliato': {
-    sections: [
-      { type: 'hero-3d', scene: 'cocktail-glass', params: { glass: 'rocks', colors: ['#c0392b','#e74c3c','#f5f5dc'], layers: [0.4,0.3,0.3] }},
-      { type: 'info-grid', items: ['glass:rocks', 'method:build', 'garnish:orange-slice'] },
-      { type: 'ingredients' },
-      { type: 'steps' },
-      { type: 'history' },
-    ]
-  },
-
   // ── TECHNIQUES ─────────────────────────────────────────────
   'techniques.shake': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-shake' },
       { type: 'text-block', key: 'description' },
       { type: 'text-block', key: 'when_to_use' },
       { type: 'step-list', key: 'steps' },
@@ -397,7 +105,6 @@ export const WIKI_ARTICLES = {
   },
   'techniques.stir': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-stir' },
       { type: 'text-block', key: 'description' },
       { type: 'text-block', key: 'when_to_use' },
       { type: 'step-list', key: 'steps' },
@@ -406,7 +113,6 @@ export const WIKI_ARTICLES = {
   },
   'techniques.muddle': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-muddle' },
       { type: 'text-block', key: 'description' },
       { type: 'step-list', key: 'steps' },
       { type: 'tips', key: 'tips' },
@@ -414,14 +120,12 @@ export const WIKI_ARTICLES = {
   },
   'techniques.build': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-build' },
       { type: 'text-block', key: 'description' },
       { type: 'step-list', key: 'steps' },
     ]
   },
   'techniques.layer': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-layer' },
       { type: 'text-block', key: 'description' },
       { type: 'step-list', key: 'steps' },
       { type: 'tips', key: 'tips' },
@@ -429,14 +133,12 @@ export const WIKI_ARTICLES = {
   },
   'techniques.strain': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-strain' },
       { type: 'text-block', key: 'description' },
       { type: 'step-list', key: 'steps' },
     ]
   },
   'techniques.blend': {
     sections: [
-      { type: 'hero-3d', scene: 'technique-blend' },
       { type: 'text-block', key: 'description' },
       { type: 'step-list', key: 'steps' },
     ]
@@ -482,6 +184,12 @@ export const WIKI_ARTICLES = {
     sections: [
       { type: 'text-block', key: 'description' },
       { type: 'text-block', key: 'types' },
+    ]
+  },
+  'spirits.world-map': {
+    sections: [
+      { type: 'text-block', key: 'description' },
+      { type: 'spirit-map' },
     ]
   },
   'spirits.distillation': {

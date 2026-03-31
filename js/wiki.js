@@ -2,6 +2,7 @@
 import { WIKI_CATEGORIES, WIKI_ARTICLES, TIMELINE_DATA, GLOSSARY_DATA } from './wiki-data.js';
 import { mountScene, dispose, toggleAutoRotate, resetCamera } from './wiki-3d.js';
 import { SCENE_BUILDERS } from './wiki-scenes.js';
+import { initSpiritMap, disposeMap } from './wiki-map.js';
 
 let showView, t, toast;
 let currentCategory = null;
@@ -19,6 +20,7 @@ export function initWiki(helpers) {
 export function renderWikiHub() {
   navStack = [];
   dispose();
+  disposeMap();
 
   const grid = document.getElementById('wiki-categories-grid');
   if (!grid) return;
@@ -131,6 +133,12 @@ export function openArticle(catId, artId) {
   if (bodyEl) {
     const articleDef = WIKI_ARTICLES[catId + '.' + artId];
     bodyEl.innerHTML = renderArticleContent(catId, artId, art, articleDef);
+
+    // Initialize spirit map if this article has one
+    const mapEl = document.getElementById('wiki-spirit-map');
+    if (mapEl) {
+      setTimeout(() => initSpiritMap(mapEl), 50);
+    }
   }
 
   showView('view-wiki-article');
@@ -238,6 +246,12 @@ function renderArticleContent(catId, artId, art, articleDef) {
               </div>`
             ).join('')}
           </div>
+        </div>`;
+        break;
+
+      case 'spirit-map':
+        html += `<div class="wiki-section">
+          <div class="wiki-spirit-map" id="wiki-spirit-map" style="height:450px;border-radius:12px;overflow:hidden;"></div>
         </div>`;
         break;
     }
