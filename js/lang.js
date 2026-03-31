@@ -789,6 +789,7 @@ const translations = {
     'offline.message': '📶 No connection — offline mode',
     'online.message': '✅ Connection restored',
     'dashboard.duel': 'Duel',
+    'dashboard.wiki': 'Wiki 3D',
     'duel.title': '⚔️ Duel',
     'duel.online_count': '{n} Rivals online',
     'duel.challenge_friend': '🤝 Challenge a Friend',
