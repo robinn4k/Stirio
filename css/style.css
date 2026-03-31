@@ -237,6 +237,211 @@ img { display: block; max-width: 100%; }
 
 .dashboard-body { padding: 16px 16px 80px; overflow-y: auto; }
 
+/* ═══ TAB BAR ═══ */
+.tab-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  display: flex; justify-content: space-around;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 6px 0; padding-bottom: calc(6px + env(safe-area-inset-bottom, 0px));
+  z-index: 50;
+}
+.tab-btn {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  gap: 2px; padding: 6px 0;
+  background: none; border: none; color: var(--text-dim);
+  font-size: .65rem; font-weight: 600;
+  cursor: pointer; transition: color .2s;
+}
+.tab-btn.active { color: var(--gold); }
+.tab-btn .tab-icon { font-size: 1.3rem; }
+.tab-btn .tab-label { letter-spacing: .02em; }
+
+/* Tab content container */
+.tab-content {
+  padding: 12px 16px 80px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tab-pane { display: none; }
+.tab-pane.active { display: block; animation: fadeIn .25s ease; }
+.tab-section { margin-bottom: 20px; }
+.section-header { display: flex; justify-content: space-between; align-items: center; }
+.section-count { font-size: .8rem; color: var(--text-muted); font-weight: 700; }
+
+/* ═══ TAB 1: APRENDER ═══ */
+/* Journey card */
+.journey-card {
+  background: linear-gradient(135deg, var(--gold)18, var(--surface));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px; cursor: pointer;
+  transition: transform .15s, box-shadow .2s;
+}
+.journey-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.journey-card:active { transform: scale(.98); }
+.journey-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.journey-level {
+  font-size: .8rem; font-weight: 800; color: var(--bg);
+  background: var(--gold); border-radius: 8px; padding: 4px 10px;
+  white-space: nowrap;
+}
+.journey-xp-info { flex: 1; }
+.journey-xp-bar {
+  height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden;
+}
+.journey-xp-fill {
+  height: 100%; background: linear-gradient(90deg, var(--gold), var(--amber));
+  border-radius: 3px; transition: width .5s ease;
+}
+.journey-xp-text { font-size: .7rem; color: var(--text-muted); margin-top: 3px; }
+.journey-streak { font-size: .95rem; font-weight: 700; color: var(--gold); white-space: nowrap; }
+.journey-cta {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: .85rem; font-weight: 600; color: var(--gold-light);
+}
+.journey-arrow { font-size: 1.2rem; }
+
+/* Courses grid */
+.courses-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+}
+.course-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px;
+  cursor: pointer; transition: transform .15s, border-color .2s;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.course-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.course-card:active { transform: scale(.97); }
+.course-icon { font-size: 1.8rem; }
+.course-name { font-size: .85rem; font-weight: 700; color: var(--text); }
+.course-meta { font-size: .7rem; color: var(--text-muted); }
+.course-bar { height: 4px; background: var(--surface2); border-radius: 2px; overflow: hidden; }
+.course-bar-fill {
+  height: 100%; border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--amber));
+  transition: width .4s ease;
+}
+.course-mastery { font-size: .68rem; font-weight: 600; color: var(--text-dim); margin-top: 2px; }
+
+/* Reference grid */
+.reference-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+}
+.ref-btn {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  color: var(--text); cursor: pointer;
+  transition: transform .12s, border-color .2s;
+}
+.ref-btn:hover { border-color: var(--gold); }
+.ref-btn:active { transform: scale(.96); }
+.ref-icon { font-size: 1.2rem; flex-shrink: 0; }
+.ref-label { font-size: .78rem; font-weight: 600; flex: 1; }
+.ref-count { font-size: .65rem; font-weight: 700; color: var(--text-dim); }
+
+/* ═══ TAB 2: JUGAR ═══ */
+/* Daily challenge card */
+.daily-card {
+  display: flex; align-items: center; justify-content: space-between;
+  background: linear-gradient(135deg, var(--gold)15, var(--surface));
+  border: 1px solid var(--gold-dark);
+  border-radius: var(--radius-lg);
+  padding: 16px; cursor: pointer;
+  transition: transform .15s, box-shadow .2s;
+}
+.daily-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.daily-card:active { transform: scale(.98); }
+.daily-left { display: flex; align-items: center; gap: 12px; }
+.daily-icon { font-size: 1.8rem; }
+.daily-title { font-size: .95rem; font-weight: 700; color: var(--text); }
+.daily-sub { font-size: .72rem; color: var(--text-muted); margin-top: 2px; }
+.daily-badge {
+  font-size: .8rem; font-weight: 700; color: var(--gold-light);
+  white-space: nowrap;
+}
+.daily-badge.done { color: var(--green); }
+
+/* Play modes grid */
+.play-modes-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+}
+.play-mode-card {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 6px; padding: 18px 12px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text); cursor: pointer;
+  transition: transform .15s, border-color .2s;
+}
+.play-mode-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.play-mode-card:active { transform: scale(.96); }
+.play-mode-icon { font-size: 2rem; }
+.play-mode-title { font-size: .85rem; font-weight: 700; }
+.play-mode-desc { font-size: .7rem; color: var(--text-muted); }
+
+/* Duel card */
+.duel-card {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px; cursor: pointer;
+  transition: transform .15s, border-color .2s;
+}
+.duel-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.duel-card:active { transform: scale(.98); }
+.duel-card-left { display: flex; align-items: center; gap: 12px; }
+.duel-card-icon { font-size: 1.8rem; }
+.duel-card-title { font-size: .95rem; font-weight: 700; color: var(--text); }
+.duel-card-sub { font-size: .72rem; color: var(--text-muted); margin-top: 2px; }
+.duel-card-right { display: flex; align-items: center; gap: 8px; }
+.duel-online { font-size: .72rem; color: var(--green); font-weight: 600; }
+.duel-card-arrow { font-size: 1.1rem; color: var(--text-dim); }
+
+/* Rounds panel (Quiz Libre toggle) */
+.rounds-panel { margin-top: 12px; }
+.rounds-panel.hidden { display: none; }
+
+/* ═══ TAB 3: PROGRESO ═══ */
+.stats-bar-wide { margin: 0; }
+.ach-preview { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.ach-preview-item {
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.ach-preview-item.locked { opacity: .3; filter: grayscale(1); }
+.ach-preview-item.unlocked { border-color: var(--gold); }
+.lb-preview { margin: 8px 0; }
+.btn-see-all {
+  display: block; width: 100%;
+  background: none; border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted); font-size: .8rem; font-weight: 600;
+  padding: 10px; cursor: pointer; margin-top: 8px;
+  transition: color .2s, border-color .2s;
+}
+.btn-see-all:hover { color: var(--gold); border-color: var(--gold); }
+.mastery-topics { display: flex; flex-direction: column; gap: 8px; }
+.mastery-topic {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 10px 14px;
+}
+.mastery-topic-name { flex: 1; font-size: .85rem; font-weight: 600; color: var(--text); }
+.mastery-topic-bar {
+  flex: 1; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden;
+}
+.mastery-topic-bar-fill {
+  height: 100%; border-radius: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--amber));
+}
+.mastery-topic-pct { font-size: .75rem; font-weight: 700; color: var(--text-muted); min-width: 36px; text-align: right; }
+
 /* Stats bar */
 .stats-bar {
   display: flex; gap: 8px;
@@ -582,6 +787,7 @@ img { display: block; max-width: 100%; }
   .rounds-grid { max-width: 540px; margin: 0 auto; }
   .stats-bar { max-width: 540px; margin: 16px auto 24px; }
   .dashboard-body { max-width: 580px; margin: 0 auto; }
+  .tab-content { max-width: 580px; margin: 0 auto; }
 }
 
 @media (max-width: 360px) {
