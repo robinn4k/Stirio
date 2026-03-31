@@ -82,7 +82,7 @@ function toggleLanguage() {
   // Re-render current view if on dashboard
   const dashboard = $('view-dashboard');
   if (dashboard && dashboard.classList.contains('active')) {
-    goToDashboard();
+    goToDashboard().then(() => switchTab(currentTab));
   }
 }
 
@@ -113,6 +113,26 @@ function bindLoginEvents() {
 }
 
 // ─── DASHBOARD ────────────────────────────────────────────────
+// ─── TAB SWITCHING ───────────────────────────────────────────
+let currentTab = 'tab-learn';
+function switchTab(tabId) {
+  currentTab = tabId;
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  $(tabId)?.classList.add('active');
+  document.querySelector(`.tab-btn[data-tab="${tabId}"]`)?.classList.add('active');
+}
+
+// ─── COURSE DEFINITIONS ──────────────────────────────────────
+const COURSES = [
+  { id: 'cocktails', icon: '🍸', key: 'course.cocktails', rounds: [1, 6, 11, 16, 17, 18, 19, 20, 21, 22, 23, 24] },
+  { id: 'spirits',   icon: '🥃', key: 'course.spirits',   rounds: [2, 7, 12] },
+  { id: 'techniques',icon: '⚗️', key: 'course.techniques', rounds: [3, 8, 13] },
+  { id: 'tools',     icon: '🛠️', key: 'course.tools',      rounds: [4, 9, 14] },
+  { id: 'wines',     icon: '🍷', key: 'course.wines',      rounds: [5, 10, 15] },
+  { id: 'history',   icon: '📜', key: 'course.history',    rounds: [5, 10, 15] },
+];
+
 async function goToDashboard() {
   const user = getCurrentUser();
   if (!user) { showView('view-login'); return; }
@@ -126,43 +146,134 @@ async function goToDashboard() {
   const games = stats?.games || 0;
   const best = stats?.best || 0;
   const avg = games > 0 ? Math.round((stats?.total || 0) / games) : 0;
-  const completedRounds = stats?.rounds ? Object.keys(stats.rounds).length : 0;
 
   $('stat-games').textContent = games;
   $('stat-best').textContent = best;
   $('stat-avg').textContent = avg;
-  if ($('stat-rounds')) $('stat-rounds').textContent = completedRounds;
   $('user-best').textContent = t('dashboard.best', { n: best });
 
-  // Update learn banner streak
-  const { streak } = getLearnStats();
-  $('banner-streak').textContent = `🔥 ${streak}`;
+  // ── Tab 1: Aprender ──
+  const { xp, streak } = getLearnStats();
+  const lvl = getLevelInfo(xp);
+  $('journey-level-badge').textContent = t('learn.level', { n: lvl.level });
+  $('journey-xp-fill').style.width = `${lvl.pct}%`;
+  $('journey-xp-text').textContent = lvl.maxLevel ? t('learn.max_level') : `${lvl.cur} / ${lvl.need} XP`;
+  $('journey-streak').textContent = `🔥 ${streak}`;
 
-  // Daily challenge badge
+  renderCoursesGrid();
+
+  // ── Tab 2: Jugar ──
   const dailyStatus = getDailyStatus();
-  const dailyBadge = $('qm-daily-badge');
+  const dailyBadge = $('daily-play-badge');
   if (dailyStatus.played) {
-    dailyBadge.textContent = '✓';
-    dailyBadge.classList.add('show');
-    dailyBadge.style.background = 'var(--green)';
+    dailyBadge.textContent = '✓ ' + t('dashboard.completed');
+    dailyBadge.classList.add('done');
   } else {
-    dailyBadge.classList.remove('show');
+    dailyBadge.textContent = t('dashboard.play');
+    dailyBadge.classList.remove('done');
   }
 
-  // Achievement badge (unlocked count)
-  const achList = getAchievements();
-  const achUnlocked = achList.filter(a => a.unlocked).length;
-  const achBadge = $('qm-ach-badge');
-  achBadge.textContent = achUnlocked;
-  achBadge.classList.toggle('show', achUnlocked > 0);
-  achBadge.style.background = 'var(--gold)';
-  achBadge.style.color = '#0d0508';
-
-  // Render round cards
+  // Render round cards for Quiz Libre
   renderRoundCards(stats);
+
+  // ── Tab 3: Progreso ──
+  $('stat-streak').textContent = streak;
+  renderProgressTab(stats);
+
   translateHTML();
   updateLangToggle();
   showView('view-dashboard');
+  switchTab(currentTab);
+}
+
+function renderCoursesGrid() {
+  const grid = $('courses-grid');
+  grid.innerHTML = '';
+  const learnRounds = getLearnRounds();
+
+  COURSES.forEach(course => {
+    // Calculate mastery from associated learn rounds
+    const courseLearnRounds = learnRounds.filter(r => course.rounds.includes(r.id));
+    const totalMastery = courseLearnRounds.length > 0
+      ? courseLearnRounds.reduce((sum, r) => sum + (r.progress?.masteryScore || 0), 0) / courseLearnRounds.length
+      : 0;
+    const masteryPct = Math.round(totalMastery * 100);
+    const lessonsCount = courseLearnRounds.length;
+
+    const card = document.createElement('div');
+    card.className = 'course-card';
+    card.innerHTML = `
+      <div class="course-icon">${course.icon}</div>
+      <div class="course-name">${t(course.key)}</div>
+      <div class="course-meta">${lessonsCount} ${t('dashboard.lessons')}</div>
+      <div class="course-bar"><div class="course-bar-fill" style="width:${masteryPct}%"></div></div>
+      <div class="course-mastery">${masteryPct}%</div>
+    `;
+    card.addEventListener('click', () => goToLearnHub());
+    grid.appendChild(card);
+  });
+}
+
+function renderProgressTab(stats) {
+  // Achievement preview
+  const achList = getAchievements();
+  const achUnlocked = achList.filter(a => a.unlocked).length;
+  $('progress-ach-count').textContent = `${achUnlocked}/${achList.length}`;
+
+  const achGrid = $('ach-preview-grid');
+  achGrid.innerHTML = '';
+  achList.forEach(a => {
+    const item = document.createElement('div');
+    item.className = `ach-preview-item ${a.unlocked ? 'unlocked' : 'locked'}`;
+    item.textContent = a.icon;
+    item.title = a.title;
+    achGrid.appendChild(item);
+  });
+
+  // Leaderboard preview (top 5)
+  fetchLeaderboard(null).then(scores => {
+    const list = $('lb-preview-list');
+    list.innerHTML = '';
+    const user = getCurrentUser();
+    scores.slice(0, 5).forEach((entry, i) => {
+      const isMe = user && entry.uid === user.uid;
+      const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
+      const item = document.createElement('div');
+      item.className = 'leaderboard-entry' + (isMe ? ' leaderboard-me' : '');
+      item.innerHTML = `
+        <div class="lb-rank">${medal}</div>
+        <div class="lb-info"><div class="lb-name">${entry.name}</div></div>
+        <div class="lb-score">${entry.score} pts</div>
+      `;
+      list.appendChild(item);
+    });
+    if (scores.length === 0) {
+      list.innerHTML = `<div class="leaderboard-empty">${t('leaderboard.empty')}</div>`;
+    }
+  });
+
+  // Mastery per topic
+  const masteryContainer = $('mastery-topics');
+  masteryContainer.innerHTML = '';
+  const learnRounds = getLearnRounds();
+
+  COURSES.forEach(course => {
+    const courseRounds = learnRounds.filter(r => course.rounds.includes(r.id));
+    const totalMastery = courseRounds.length > 0
+      ? courseRounds.reduce((sum, r) => sum + (r.progress?.masteryScore || 0), 0) / courseRounds.length
+      : 0;
+    const pct = Math.round(totalMastery * 100);
+
+    const row = document.createElement('div');
+    row.className = 'mastery-topic';
+    row.innerHTML = `
+      <span style="font-size:1.2rem">${course.icon}</span>
+      <span class="mastery-topic-name">${t(course.key)}</span>
+      <div class="mastery-topic-bar"><div class="mastery-topic-bar-fill" style="width:${pct}%"></div></div>
+      <span class="mastery-topic-pct">${pct}%</span>
+    `;
+    masteryContainer.appendChild(row);
+  });
 }
 
 function renderRoundCards(stats) {
@@ -982,6 +1093,30 @@ function bindEvents() {
 
   // Language toggle
   $('btn-lang-toggle').addEventListener('click', toggleLanguage);
+
+  // Tab bar switching
+  $('tab-bar').addEventListener('click', e => {
+    const btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    switchTab(btn.dataset.tab);
+  });
+
+  // Quiz Libre toggle
+  $('btn-quiz-libre').addEventListener('click', () => {
+    const panel = $('rounds-panel');
+    panel.classList.toggle('hidden');
+  });
+
+  // Reference shortcuts (glossary/map open specific wiki articles)
+  if ($('btn-glossary')) $('btn-glossary').addEventListener('click', () => {
+    // Open wiki to glossary category
+    const wikiBtn = $('btn-wiki');
+    if (wikiBtn) wikiBtn.click();
+  });
+  if ($('btn-map')) $('btn-map').addEventListener('click', () => {
+    const wikiBtn = $('btn-wiki');
+    if (wikiBtn) wikiBtn.click();
+  });
 
   // Dashboard header
   $('btn-leaderboard-header').addEventListener('click', () => goToLeaderboard('view-dashboard'));

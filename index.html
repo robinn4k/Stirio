@@ -55,81 +55,200 @@
         </div>
         <div class="header-right">
           <button class="lang-toggle" id="btn-lang-toggle" title="EN / ES">ES</button>
-          <button class="icon-btn" id="btn-leaderboard-header" title="Ranking">🏆</button>
           <button class="icon-btn" id="btn-logout" title="Opciones">⚙️</button>
         </div>
       </div>
-      <div class="dashboard-body">
-        <!-- Learning mode banner -->
-        <div class="learn-banner" id="btn-go-learn">
-          <div class="learn-banner-icon">📚</div>
-          <div class="learn-banner-info">
-            <div class="learn-banner-title" data-i18n="dashboard.learn_mode">Modo Aprendizaje</div>
-            <div class="learn-banner-sub" data-i18n="dashboard.learn_sub">Aprende paso a paso · A tu ritmo</div>
+
+      <!-- ── Tab Content ── -->
+      <div class="tab-content">
+
+        <!-- ═══ TAB 1: APRENDER ═══ -->
+        <div class="tab-pane active" id="tab-learn">
+          <div class="tab-section">
+            <!-- My Journey card -->
+            <div class="journey-card" id="btn-go-learn">
+              <div class="journey-header">
+                <div class="journey-level" id="journey-level-badge">Nv. 1</div>
+                <div class="journey-xp-info">
+                  <div class="journey-xp-bar"><div class="journey-xp-fill" id="journey-xp-fill"></div></div>
+                  <div class="journey-xp-text" id="journey-xp-text">0 / 100 XP</div>
+                </div>
+                <div class="journey-streak" id="journey-streak">🔥 0</div>
+              </div>
+              <div class="journey-cta">
+                <span data-i18n="dashboard.continue_learning">Continuar aprendiendo</span>
+                <span class="journey-arrow">→</span>
+              </div>
+            </div>
           </div>
-          <div class="learn-banner-right">
-            <span class="learn-banner-streak" id="banner-streak">🔥 0</span>
-            <span class="learn-banner-arrow">→</span>
+
+          <!-- Courses grid -->
+          <div class="tab-section">
+            <h2 class="section-title" data-i18n="dashboard.courses">Cursos</h2>
+            <div class="courses-grid" id="courses-grid"></div>
+          </div>
+
+          <!-- Quick Reference -->
+          <div class="tab-section">
+            <h2 class="section-title" data-i18n="dashboard.reference">Referencia Rápida</h2>
+            <div class="reference-grid">
+              <button class="ref-btn" id="btn-fichas">
+                <span class="ref-icon">📖</span>
+                <span class="ref-label" data-i18n="dashboard.fichas">Fichas IBA</span>
+                <span class="ref-count">90</span>
+              </button>
+              <button class="ref-btn" id="btn-wiki">
+                <span class="ref-icon">🌐</span>
+                <span class="ref-label" data-i18n="dashboard.wiki_ref">Enciclopedia</span>
+              </button>
+              <button class="ref-btn" id="btn-glossary">
+                <span class="ref-icon">📝</span>
+                <span class="ref-label" data-i18n="dashboard.glossary">Glosario</span>
+                <span class="ref-count">70+</span>
+              </button>
+              <button class="ref-btn" id="btn-map">
+                <span class="ref-icon">🗺️</span>
+                <span class="ref-label" data-i18n="dashboard.map">Mapa Destilados</span>
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="stats-bar">
-          <div class="stat-item">
-            <div class="stat-value" id="stat-games">0</div>
-            <div class="stat-label" data-i18n="dashboard.games">Partidas</div>
+        <!-- ═══ TAB 2: JUGAR ═══ -->
+        <div class="tab-pane" id="tab-play">
+          <!-- Daily Challenge -->
+          <div class="tab-section">
+            <div class="daily-card" id="btn-daily">
+              <div class="daily-left">
+                <div class="daily-icon">📅</div>
+                <div class="daily-info">
+                  <div class="daily-title" data-i18n="dashboard.daily_title">Reto Diario</div>
+                  <div class="daily-sub" data-i18n="dashboard.daily_sub">10 preguntas nuevas cada día</div>
+                </div>
+              </div>
+              <div class="daily-right">
+                <span class="daily-badge" id="daily-play-badge" data-i18n="dashboard.play">Jugar →</span>
+              </div>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-value" id="stat-best">0</div>
-            <div class="stat-label" data-i18n="dashboard.best_label">Mejor</div>
+
+          <!-- Quick Modes -->
+          <div class="tab-section">
+            <h2 class="section-title" data-i18n="dashboard.quick_modes">Modos Rápidos</h2>
+            <div class="play-modes-grid">
+              <button class="play-mode-card" id="btn-speed">
+                <span class="play-mode-icon">⚡</span>
+                <span class="play-mode-title" data-i18n="dashboard.speed">Velocidad</span>
+                <span class="play-mode-desc" data-i18n="dashboard.speed_desc">60 segundos</span>
+              </button>
+              <button class="play-mode-card" id="btn-constructor">
+                <span class="play-mode-icon">🍹</span>
+                <span class="play-mode-title" data-i18n="dashboard.constructor">Constructor</span>
+                <span class="play-mode-desc" data-i18n="dashboard.constructor_desc">Ingredientes</span>
+              </button>
+              <button class="play-mode-card" id="btn-blind">
+                <span class="play-mode-icon">👃</span>
+                <span class="play-mode-title" data-i18n="dashboard.blind">Cata a Ciegas</span>
+                <span class="play-mode-desc" data-i18n="dashboard.blind_desc">35+ destilados</span>
+              </button>
+              <button class="play-mode-card" id="btn-quiz-libre">
+                <span class="play-mode-icon">🎲</span>
+                <span class="play-mode-title" data-i18n="dashboard.quiz_libre">Quiz Libre</span>
+                <span class="play-mode-desc" data-i18n="dashboard.quiz_desc">24 rondas</span>
+              </button>
+            </div>
+            <!-- Rounds grid (hidden by default, shown when Quiz Libre clicked) -->
+            <div class="rounds-panel hidden" id="rounds-panel">
+              <div class="rounds-grid" id="rounds-grid"></div>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-value" id="stat-avg">0</div>
-            <div class="stat-label" data-i18n="dashboard.avg">Media</div>
+
+          <!-- Multiplayer -->
+          <div class="tab-section">
+            <h2 class="section-title" data-i18n="dashboard.multiplayer">Multijugador</h2>
+            <div class="duel-card" id="btn-duel">
+              <div class="duel-card-left">
+                <span class="duel-card-icon">⚔️</span>
+                <div class="duel-card-info">
+                  <div class="duel-card-title" data-i18n="dashboard.duel">Duelo</div>
+                  <div class="duel-card-sub" data-i18n="dashboard.duel_sub">Reta a amigos o rivales al azar</div>
+                </div>
+              </div>
+              <div class="duel-card-right">
+                <span class="duel-online" id="duel-online-indicator"></span>
+                <span class="duel-card-arrow">→</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="quick-modes-title" data-i18n="dashboard.game_modes">Modos de juego</div>
-        <div class="quick-modes-grid">
-          <button class="qm-btn" id="btn-daily">
-            <span class="qm-icon">📅</span>
-            <span class="qm-label" data-i18n="dashboard.daily">Reto Diario</span>
-            <span class="qm-badge" id="qm-daily-badge"></span>
-          </button>
-          <button class="qm-btn" id="btn-speed">
-            <span class="qm-icon">⚡</span>
-            <span class="qm-label" data-i18n="dashboard.speed">Velocidad</span>
-          </button>
-          <button class="qm-btn" id="btn-constructor">
-            <span class="qm-icon">🍹</span>
-            <span class="qm-label" data-i18n="dashboard.constructor">Constructor</span>
-          </button>
-          <button class="qm-btn" id="btn-blind">
-            <span class="qm-icon">👃</span>
-            <span class="qm-label" data-i18n="dashboard.blind">Blind Tasting</span>
-          </button>
-          <button class="qm-btn" id="btn-fichas">
-            <span class="qm-icon">📖</span>
-            <span class="qm-label" data-i18n="dashboard.fichas">Fichas IBA</span>
-          </button>
-          <button class="qm-btn" id="btn-achievements">
-            <span class="qm-icon">🏆</span>
-            <span class="qm-label" data-i18n="dashboard.achievements">Logros</span>
-            <span class="qm-badge" id="qm-ach-badge"></span>
-          </button>
-          <button class="qm-btn" id="btn-duel">
-            <span class="qm-icon">⚔️</span>
-            <span class="qm-label" data-i18n="dashboard.duel">Duelo</span>
-            <span class="qm-badge qm-badge-beta">BETA</span>
-          </button>
-          <button class="qm-btn qm-btn-wiki" id="btn-wiki">
-            <span class="qm-icon">🌐</span>
-            <span class="qm-label" data-i18n="dashboard.wiki">Wiki 3D</span>
-            <span class="qm-badge qm-badge-new">NEW</span>
-          </button>
         </div>
 
-        <h2 class="section-title" data-i18n="dashboard.select_round">Selecciona una Ronda</h2>
-        <div class="rounds-grid" id="rounds-grid"></div>
+        <!-- ═══ TAB 3: PROGRESO ═══ -->
+        <div class="tab-pane" id="tab-progress">
+          <!-- Stats -->
+          <div class="tab-section">
+            <div class="stats-bar stats-bar-wide">
+              <div class="stat-item">
+                <div class="stat-value" id="stat-games">0</div>
+                <div class="stat-label" data-i18n="dashboard.games">Partidas</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" id="stat-best">0</div>
+                <div class="stat-label" data-i18n="dashboard.best_label">Mejor</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" id="stat-avg">0</div>
+                <div class="stat-label" data-i18n="dashboard.avg">Media</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" id="stat-streak">0</div>
+                <div class="stat-label">🔥 <span data-i18n="dashboard.streak">Racha</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievements preview -->
+          <div class="tab-section">
+            <div class="section-header">
+              <h2 class="section-title" data-i18n="dashboard.achievements">Logros</h2>
+              <span class="section-count" id="progress-ach-count">0/14</span>
+            </div>
+            <div class="ach-preview" id="ach-preview-grid"></div>
+            <button class="btn-see-all" id="btn-achievements" data-i18n="dashboard.see_all">Ver todos →</button>
+          </div>
+
+          <!-- Leaderboard preview -->
+          <div class="tab-section">
+            <div class="section-header">
+              <h2 class="section-title" data-i18n="leaderboard.title">🏆 Ranking Global</h2>
+            </div>
+            <div class="lb-preview" id="lb-preview-list"></div>
+            <button class="btn-see-all" id="btn-leaderboard-header" data-i18n="dashboard.see_all">Ver todos →</button>
+          </div>
+
+          <!-- Mastery per topic -->
+          <div class="tab-section">
+            <h2 class="section-title" data-i18n="dashboard.mastery_topics">Dominio por Tema</h2>
+            <div class="mastery-topics" id="mastery-topics"></div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- ── Tab Bar (fixed bottom) ── -->
+      <nav class="tab-bar" id="tab-bar">
+        <button class="tab-btn active" data-tab="tab-learn">
+          <span class="tab-icon">📚</span>
+          <span class="tab-label" data-i18n="tab.learn">Aprender</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-play">
+          <span class="tab-icon">🎮</span>
+          <span class="tab-label" data-i18n="tab.play">Jugar</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-progress">
+          <span class="tab-icon">🏆</span>
+          <span class="tab-label" data-i18n="tab.progress">Progreso</span>
+        </button>
+      </nav>
     </div>
 
     <!-- ══ QUIZ ══ -->
