@@ -34,7 +34,6 @@ export function renderWikiHub() {
       <div class="wiki-cat-icon">${cat.icon}</div>
       <div class="wiki-cat-name">${t('wiki.cat.' + cat.id)}</div>
       <div class="wiki-cat-count">${cat.articles.length} ${t('wiki.articles')}</div>
-      ${cat.has3d ? '<div class="wiki-cat-3d-badge">3D</div>' : ''}
     `;
     card.addEventListener('click', () => openCategory(cat.id));
     grid.appendChild(card);

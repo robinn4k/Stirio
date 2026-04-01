@@ -5,6 +5,13 @@
   --bg:          #0d0508;
   --surface:     #1a0d12;
   --surface2:    #261520;
+  --bg-warm:     #3a1a05;
+  --bg-accent:   #1a0a20;
+  --bg-deep:     #1a1025;
+  --bg-canvas1:  #0a0a1a;
+  --bg-canvas2:  #1a0a2a;
+  --bg-canvas-d1:#050510;
+  --bg-canvas-d2:#100520;
   --border:      rgba(201,151,28,.18);
   --gold:        #c9971c;
   --gold-light:  #e8b830;
@@ -17,6 +24,10 @@
   --text:        #f0e6d3;
   --text-muted:  #8b7355;
   --text-dim:    #5a4a35;
+  --btn-text:    #0d0508;
+  --overlay:     rgba(13,5,8,.85);
+  --overlay-heavy:rgba(13,5,8,.95);
+  --overlay-mid: rgba(13,5,8,.9);
   --radius:      12px;
   --radius-lg:   20px;
   --shadow:      0 4px 24px rgba(0,0,0,.5);
@@ -121,7 +132,7 @@ img { display: block; max-width: 100%; }
 }
 .btn-primary:active, .btn-secondary:active, .btn-ghost:active { transform: scale(.97); }
 
-.btn-primary  { background: var(--gold); color: #0d0508; }
+.btn-primary  { background: var(--gold); color: var(--btn-text); }
 .btn-primary:hover { background: var(--gold-light); }
 
 .btn-secondary {
@@ -145,8 +156,8 @@ img { display: block; max-width: 100%; }
 
 .login-bg {
   position: fixed; inset: 0; z-index: 0;
-  background: radial-gradient(ellipse at 30% 20%, #3a1a05 0%, #0d0508 60%),
-              radial-gradient(ellipse at 70% 80%, #1a0a20 0%, transparent 60%);
+  background: radial-gradient(ellipse at 30% 20%, var(--bg-warm) 0%, var(--bg) 60%),
+              radial-gradient(ellipse at 70% 80%, var(--bg-accent) 0%, transparent 60%);
 }
 .login-bg::after {
   content: '';
@@ -687,7 +698,7 @@ img { display: block; max-width: 100%; }
 .filter-btn.active {
   background: var(--gold);
   border-color: var(--gold);
-  color: #0d0508;
+  color: var(--btn-text);
 }
 
 .leaderboard-list { padding: 0 16px 80px; }
@@ -750,7 +761,7 @@ img { display: block; max-width: 100%; }
 ══════════════════════════════════════════════════ */
 .loading-overlay {
   position: fixed; inset: 0; z-index: 2000;
-  background: rgba(13,5,8,.85); backdrop-filter: blur(4px);
+  background: var(--overlay); backdrop-filter: blur(4px);
   display: flex; align-items: center; justify-content: center;
 }
 .loading-overlay.hidden { display: none; }
@@ -1046,7 +1057,7 @@ img { display: block; max-width: 100%; }
 .learn-hero-level { flex: 1; text-align: center; }
 .learn-level-badge {
   display: inline-block;
-  background: var(--gold); color: #0d0508;
+  background: var(--gold); color: var(--btn-text);
   font-size: .78rem; font-weight: 800;
   padding: 3px 10px; border-radius: 20px;
   margin-bottom: 8px;
@@ -1069,6 +1080,25 @@ img { display: block; max-width: 100%; }
   padding: 20px 16px 10px;
   max-width: 580px; margin: 0 auto; width: 100%;
 }
+
+.learn-course-filter {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 14px; margin: 0 16px 8px;
+  max-width: 548px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: .85rem; font-weight: 600;
+  color: var(--gold-light);
+  width: fit-content;
+}
+.learn-course-filter.hidden { display: none; }
+.learn-course-filter-clear {
+  background: none; border: none; color: var(--text-muted);
+  cursor: pointer; font-size: .8rem; padding: 2px 4px;
+  line-height: 1;
+}
+.learn-course-filter-clear:hover { color: var(--text); }
 
 .learn-lessons {
   padding: 0 16px 80px;
@@ -1268,7 +1298,7 @@ img { display: block; max-width: 100%; }
 
 .lesson-theory-btn {
   margin-top: 16px; padding: 15px;
-  background: var(--gold); color: #0d0508;
+  background: var(--gold); color: var(--btn-text);
   border-radius: var(--radius);
   font-size: 1rem; font-weight: 700; width: 100%;
   transition: transform .12s, opacity .2s;
@@ -1397,7 +1427,7 @@ img { display: block; max-width: 100%; }
 
 .cookie-btn-accept {
   background: var(--gold);
-  color: #0d0508;
+  color: var(--btn-text);
   border: none;
   border-radius: var(--radius);
   padding: 8px 16px;
@@ -1949,7 +1979,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   height: 220px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--surface), #1a1025);
+  background: linear-gradient(135deg, var(--surface), var(--bg-deep));
 }
 .wiki-hero-canvas {
   width: 100%;
@@ -1961,7 +1991,7 @@ img { display: block; max-width: 100%; }
   left: 0;
   right: 0;
   padding: 24px 16px;
-  background: linear-gradient(transparent, rgba(13,5,8,.95));
+  background: linear-gradient(transparent, var(--overlay-heavy));
   pointer-events: none;
 }
 .wiki-hero-title {
@@ -2137,7 +2167,7 @@ img { display: block; max-width: 100%; }
 .wiki-3d-viewport {
   width: 100%;
   height: 280px;
-  background: linear-gradient(135deg, #0a0a1a, #1a0a2a);
+  background: linear-gradient(135deg, var(--bg-canvas1), var(--bg-canvas2));
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   overflow: hidden;
 }
@@ -2374,7 +2404,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  background: rgba(13,5,8,.9);
+  background: var(--overlay-mid);
   backdrop-filter: blur(12px);
   position: absolute;
   top: 0;
@@ -2393,7 +2423,7 @@ img { display: block; max-width: 100%; }
 .wiki-3d-canvas-wrap {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #050510, #100520);
+  background: linear-gradient(135deg, var(--bg-canvas-d1), var(--bg-canvas-d2));
 }
 .wiki-3d-info-panel {
   position: absolute;
@@ -2401,7 +2431,7 @@ img { display: block; max-width: 100%; }
   left: 0;
   right: 0;
   padding: 16px;
-  background: linear-gradient(transparent, rgba(13,5,8,.95));
+  background: linear-gradient(transparent, var(--overlay-heavy));
   z-index: 10;
 }
 .wiki-3d-info-title {
@@ -2684,4 +2714,41 @@ img { display: block; max-width: 100%; }
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.5;
+}
+
+/* Theme selector */
+.settings-theme-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.settings-theme-swatch {
+  width: 56px; height: 56px;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  cursor: pointer;
+  position: relative;
+  transition: border-color .2s, transform .15s;
+  display: flex; align-items: flex-end; justify-content: center;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+.settings-theme-swatch::before {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: inherit;
+  opacity: .5;
+}
+.settings-theme-swatch:hover { transform: scale(1.08); }
+.settings-theme-swatch.active {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+.settings-theme-swatch .swatch-label {
+  font-size: .6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.7);
+  position: relative;
+  z-index: 1;
 }
