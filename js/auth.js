@@ -95,6 +95,8 @@ async function signOutUser() {
   }
   currentUser = null;
   localStorage.removeItem('cq_current_user');
+  localStorage.removeItem('cq_guest_id');
+  localStorage.removeItem('cq_guest_name');
 }
 
 // ─── Persistencia local ──────────────────────────────────────
