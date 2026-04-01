@@ -1,4 +1,4 @@
-import { initFirebase, signInWithGoogle, signInAsGuest, signOutUser, restoreSession, getCurrentUser, updateGuestName } from './auth.js';
+import { initFirebase, signInWithGoogle, signInAsGuest, signOutUser, restoreSession, getCurrentUser, updateGuestName, updateUserProfile, uploadProfilePhoto, deleteUserData, deleteUserAccount } from './auth.js';
 import { startRound, startCustomRound, answerQuestion, abortRound, getRounds } from './quiz.js';
 import { saveScore, fetchLeaderboard, getUserStats } from './leaderboard.js';
 import { getLearnStats, getLevelInfo, getLearnRounds, startLesson, answerLesson, advanceLesson, advanceFromTheory, abortLesson, MASTERY_LEVELS, getMasteryLevel } from './learn.js';
@@ -1120,17 +1120,7 @@ function bindEvents() {
 
   // Dashboard header
   $('btn-leaderboard-header').addEventListener('click', () => goToLeaderboard('view-dashboard'));
-  $('btn-logout').addEventListener('click', async () => {
-    const user = getCurrentUser();
-    if (user?.isGuest) {
-      showView('view-login');
-      return;
-    }
-    if (confirm(t('confirm.sign_out'))) {
-      await signOutUser();
-      showView('view-login');
-    }
-  });
+  $('btn-logout').addEventListener('click', () => goToSettings());
 
   // Quiz controls
   $('btn-quit-quiz').addEventListener('click', () => {
@@ -1227,6 +1217,136 @@ function bindEvents() {
   });
 
   bindDuelEvents();
+  bindSettingsEvents();
+}
+
+// ══════════════════════════════════════════════════════════════
+// ─── SETTINGS / USER MANAGEMENT ──────────────────────────────
+// ══════════════════════════════════════════════════════════════
+
+function goToSettings() {
+  const user = getCurrentUser();
+  if (!user) return;
+  const isGuest = user.isGuest;
+
+  // Toggle sections based on user type
+  const googleOnly = ['settings-photo-section', 'settings-account-section', 'settings-danger-section'];
+  googleOnly.forEach(id => {
+    const el = $(id);
+    if (el) el.style.display = isGuest ? 'none' : '';
+  });
+  const guestNotice = $('settings-guest-notice');
+  if (guestNotice) guestNotice.style.display = isGuest ? '' : 'none';
+
+  // Populate avatar
+  const avatar = $('settings-avatar');
+  if (user.photo) {
+    avatar.innerHTML = `<img src="${user.photo}" alt="avatar">`;
+  } else {
+    avatar.textContent = isGuest ? '👤' : '🍸';
+  }
+
+  // Populate name
+  $('settings-name-input').value = user.name || '';
+
+  // Populate email
+  const emailEl = $('settings-email');
+  if (emailEl) emailEl.textContent = user.email || '';
+
+  $('settings-photo-status').textContent = '';
+  showView('view-settings');
+}
+
+function bindSettingsEvents() {
+  $('btn-settings-back').addEventListener('click', () => goToDashboard());
+
+  // Change photo
+  $('btn-change-photo').addEventListener('click', () => $('settings-photo-input').click());
+  $('settings-photo-input').addEventListener('change', async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) {
+      toast(t('settings.photo_too_large') || 'La imagen es demasiado grande (máx. 5MB)', 'error');
+      return;
+    }
+    const status = $('settings-photo-status');
+    status.textContent = t('settings.uploading') || 'Subiendo...';
+    try {
+      const url = await uploadProfilePhoto(file);
+      $('settings-avatar').innerHTML = `<img src="${url}" alt="avatar">`;
+      status.textContent = '✓';
+      toast(t('settings.photo_updated') || 'Foto actualizada', 'success');
+    } catch (err) {
+      console.error('Photo upload failed:', err);
+      status.textContent = '';
+      toast(t('settings.photo_error') || 'Error al subir la foto', 'error');
+    }
+    e.target.value = '';
+  });
+
+  // Save name
+  $('btn-save-name').addEventListener('click', async () => {
+    const name = $('settings-name-input').value.trim();
+    if (!name) return;
+    const user = getCurrentUser();
+    try {
+      if (user?.isGuest) {
+        updateGuestName(name);
+      } else {
+        await updateUserProfile({ name });
+      }
+      toast(t('settings.name_updated') || 'Nombre actualizado', 'success');
+    } catch (err) {
+      console.error('Name update failed:', err);
+      toast(t('settings.name_error') || 'Error al actualizar el nombre', 'error');
+    }
+  });
+
+  // Sign out
+  $('btn-settings-logout').addEventListener('click', async () => {
+    const user = getCurrentUser();
+    if (user?.isGuest) {
+      showView('view-login');
+      return;
+    }
+    if (confirm(t('confirm.sign_out'))) {
+      await signOutUser();
+      showView('view-login');
+    }
+  });
+
+  // Delete data
+  $('btn-delete-data').addEventListener('click', async () => {
+    if (!confirm(t('settings.confirm_delete_data') || '¿Estás seguro de que quieres borrar todos tus datos? Esta acción no se puede deshacer.')) return;
+    setLoading(true);
+    try {
+      await deleteUserData();
+      toast(t('settings.data_deleted') || 'Datos eliminados correctamente', 'success');
+      goToDashboard();
+    } catch (err) {
+      console.error('Delete data failed:', err);
+      toast(t('settings.delete_error') || 'Error al borrar los datos', 'error');
+    } finally {
+      setLoading(false);
+    }
+  });
+
+  // Delete account
+  $('btn-delete-account').addEventListener('click', async () => {
+    if (!confirm(t('settings.confirm_delete_account') || '¿Estás seguro de que quieres eliminar tu cuenta permanentemente? Esta acción NO se puede deshacer.')) return;
+    if (!confirm(t('settings.confirm_delete_account_2') || 'Esta es tu última oportunidad. ¿Eliminar cuenta y todos los datos?')) return;
+    setLoading(true);
+    try {
+      await deleteUserAccount();
+      toast(t('settings.account_deleted') || 'Cuenta eliminada', 'success');
+      showView('view-login');
+    } catch (err) {
+      console.error('Delete account failed:', err);
+      toast(t('settings.delete_account_error') || 'Error al eliminar la cuenta. Intenta iniciar sesión de nuevo.', 'error');
+    } finally {
+      setLoading(false);
+    }
+  });
 }
 
 // ══════════════════════════════════════════════════════════════

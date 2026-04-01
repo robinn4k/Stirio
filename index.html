@@ -251,6 +251,67 @@
       </nav>
     </div>
 
+    <!-- ══ SETTINGS ══ -->
+    <div id="view-settings" class="view">
+      <div class="app-header">
+        <div class="header-left">
+          <button class="icon-btn" id="btn-settings-back" aria-label="Back">←</button>
+          <h1 class="header-title" data-i18n="settings.title">Configuración</h1>
+        </div>
+      </div>
+      <div class="settings-body">
+        <!-- Profile Photo (Google only) -->
+        <div class="settings-section" id="settings-photo-section">
+          <h2 class="settings-label" data-i18n="settings.photo">Foto de perfil</h2>
+          <div class="settings-photo-row">
+            <div class="settings-avatar" id="settings-avatar">👤</div>
+            <div class="settings-photo-actions">
+              <input type="file" id="settings-photo-input" accept="image/*" hidden>
+              <button class="btn-secondary btn-sm" id="btn-change-photo" data-i18n="settings.change_photo">Cambiar foto</button>
+              <span class="settings-hint" id="settings-photo-status"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Display Name -->
+        <div class="settings-section">
+          <h2 class="settings-label" data-i18n="settings.name">Nombre</h2>
+          <div class="settings-name-row">
+            <input type="text" class="settings-input" id="settings-name-input" maxlength="30" placeholder="Tu nombre">
+            <button class="btn-primary btn-sm" id="btn-save-name" data-i18n="settings.save">Guardar</button>
+          </div>
+        </div>
+
+        <!-- Account Info (Google only) -->
+        <div class="settings-section" id="settings-account-section">
+          <h2 class="settings-label" data-i18n="settings.account">Cuenta</h2>
+          <div class="settings-account-info">
+            <span id="settings-email" class="settings-email"></span>
+            <span class="settings-provider-badge" id="settings-provider-badge">Google</span>
+          </div>
+        </div>
+
+        <!-- Sign Out -->
+        <div class="settings-section">
+          <button class="btn-secondary settings-full-btn" id="btn-settings-logout" data-i18n="settings.sign_out">Cerrar sesión</button>
+        </div>
+
+        <!-- Danger Zone (Google only) -->
+        <div class="settings-section danger-zone" id="settings-danger-section">
+          <h2 class="settings-label danger-label" data-i18n="settings.danger_zone">Zona de peligro</h2>
+          <button class="btn-warning settings-full-btn" id="btn-delete-data" data-i18n="settings.delete_data">Borrar todos mis datos</button>
+          <p class="settings-hint" data-i18n="settings.delete_data_hint">Elimina tu progreso, logros, puntuaciones y datos de aprendizaje.</p>
+          <button class="btn-danger settings-full-btn" id="btn-delete-account" data-i18n="settings.delete_account">Eliminar mi cuenta</button>
+          <p class="settings-hint" data-i18n="settings.delete_account_hint">Elimina permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.</p>
+        </div>
+
+        <!-- Guest notice -->
+        <div class="settings-section settings-guest-notice" id="settings-guest-notice">
+          <p data-i18n="settings.guest_notice">Inicia sesión con Google para gestionar tu cuenta completa, subir foto de perfil y sincronizar tu progreso.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- ══ QUIZ ══ -->
     <div id="view-quiz" class="view">
       <div class="quiz-header">
