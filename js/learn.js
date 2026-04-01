@@ -69,7 +69,16 @@ export function getMasteryLevel(score) {
 // ─── Stats ────────────────────────────────────────────────────
 export function getLearnStats() {
   const d = getData();
-  return { xp: d.xp || 0, streak: d.streak || 0, rounds: d.rounds || {} };
+  let streak = d.streak || 0;
+  // If lastDate is not today or yesterday, the streak has expired
+  if (streak > 0 && d.lastDate) {
+    const today = new Date().toDateString();
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+    if (d.lastDate !== today && d.lastDate !== yesterday) {
+      streak = 0;
+    }
+  }
+  return { xp: d.xp || 0, streak, rounds: d.rounds || {} };
 }
 
 export function getLevelInfo(xp) {
