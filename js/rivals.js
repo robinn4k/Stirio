@@ -214,23 +214,35 @@ export async function createFriendRoom(uid, name, setup) {
 
 export async function joinByCode(uid, name, code) {
   if (!db) throw new Error('RTDB no inicializado');
-  const { ref, get, set, update, onDisconnect } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+  const { ref, get, runTransaction, onDisconnect } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
 
   const codeSnap = await get(ref(db, `codes/${code.toUpperCase()}`));
   if (!codeSnap.exists()) return null;
 
   const roomId = codeSnap.val();
-  const roomSnap = await get(ref(db, `rooms/${roomId}`));
-  if (!roomSnap.exists()) return null;
+  const roomRef = ref(db, `rooms/${roomId}`);
 
-  const room = roomSnap.val();
-  if (room.players?.p2) return 'full';
-  if (room.players?.p1?.uid === uid) return 'self'; // can't join own room
+  // Use transaction to atomically check and set p2 (prevents race condition)
+  const result = await runTransaction(roomRef, (room) => {
+    if (!room) return undefined; // room doesn't exist, abort
+    if (room.players?.p2) return undefined; // already full, abort
+    if (room.players?.p1?.uid === uid) return undefined; // can't join own room, abort
+    room.players.p2 = { uid, name, score: 0, currentQ: 0, answers: {}, ready: true };
+    room.status = 'ready';
+    return room;
+  });
+
+  if (!result.committed) {
+    // Determine why the transaction was aborted
+    const roomSnap = await get(roomRef);
+    if (!roomSnap.exists()) return null;
+    const room = roomSnap.val();
+    if (room.players?.p1?.uid === uid) return 'self';
+    if (room.players?.p2) return 'full';
+    return null;
+  }
 
   const p2Ref = ref(db, `rooms/${roomId}/players/p2`);
-  await set(p2Ref, { uid, name, score: 0, currentQ: 0, answers: {}, ready: true });
-  await update(ref(db, `rooms/${roomId}`), { status: 'ready' });
-
   onDisconnect(p2Ref).update({ disconnected: true });
 
   return roomId;
@@ -326,20 +338,29 @@ export async function registerPlayerDisconnect(roomId, slot) {
 
 /**
  * Submit an answer for a player.
+ * Score is computed from the answer data rather than trusting the client value.
  * @param {string} roomId
  * @param {string} slot - 'p1' or 'p2'
  * @param {number} qIndex - question index (0-based)
  * @param {boolean} correct
  * @param {number} timeLeft - seconds remaining
- * @param {number} newScore - cumulative score after this answer
  */
-export async function submitAnswer(roomId, slot, qIndex, correct, timeLeft, newScore) {
+export async function submitAnswer(roomId, slot, qIndex, correct, timeLeft) {
   if (!db) return;
-  const { ref, update } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+  const { ref, update, get } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+
+  // Clamp timeLeft to valid range to prevent score inflation
+  const clampedTime = Math.max(0, Math.min(timeLeft, 60));
+  const earnedPoints = calcScore(correct, clampedTime);
+
+  // Read current score and add earned points (prevents client-side score manipulation)
+  const scoreSnap = await get(ref(db, `rooms/${roomId}/players/${slot}/score`));
+  const currentScore = scoreSnap.val() || 0;
+
   const updates = {
-    [`rooms/${roomId}/players/${slot}/answers/${qIndex}`]: { correct, timeLeft },
+    [`rooms/${roomId}/players/${slot}/answers/${qIndex}`]: { correct, timeLeft: clampedTime },
     [`rooms/${roomId}/players/${slot}/currentQ`]: qIndex + 1,
-    [`rooms/${roomId}/players/${slot}/score`]: newScore
+    [`rooms/${roomId}/players/${slot}/score`]: currentScore + earnedPoints
   };
   await update(ref(db), updates);
 }

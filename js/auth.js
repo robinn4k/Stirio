@@ -50,7 +50,7 @@ async function signInWithGoogle() {
 
 // Login como invitado
 function signInAsGuest() {
-  const guestId = localStorage.getItem('cq_guest_id') || 'guest_' + Date.now();
+  const guestId = localStorage.getItem('cq_guest_id') || 'guest_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
   localStorage.setItem('cq_guest_id', guestId);
   currentUser = {
     uid: guestId,

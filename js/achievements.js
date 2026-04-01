@@ -48,7 +48,25 @@ export async function loadAchievementsFromCloud() {
     const { doc, getDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
     const snap = await getDoc(doc(db, 'users', user.uid));
     if (snap.exists() && snap.data().achievements) {
-      localStorage.setItem(KEY, JSON.stringify(snap.data().achievements));
+      const cloud = snap.data().achievements;
+      const local = load();
+      // Merge: keep union of unlocked achievements and max of each stat
+      const merged = {
+        unlocked: [...new Set([...(local.unlocked || []), ...(cloud.unlocked || [])])],
+        stats: { ...local.stats }
+      };
+      if (cloud.stats) {
+        for (const [k, v] of Object.entries(cloud.stats)) {
+          if (typeof v === 'number') {
+            merged.stats[k] = Math.max(merged.stats[k] || 0, v);
+          } else if (!(k in merged.stats)) {
+            merged.stats[k] = v;
+          }
+        }
+      }
+      localStorage.setItem(KEY, JSON.stringify(merged));
+      // Sync merged result back to cloud
+      syncToCloud(merged);
     }
   } catch (e) { console.warn('achievements cloud load failed:', e); }
 }
