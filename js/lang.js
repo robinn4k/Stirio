@@ -5,6 +5,9 @@ export const SUPPORTED_LANGS = ['es', 'en', 'fr', 'pt', 'de'];
 
 const translations = {
   es: {
+    'cookie.text': 'Usamos cookies analíticas para mejorar la experiencia. <a href="cookies.html">Política de cookies</a> · <a href="privacidad.html">Privacidad</a>',
+    'cookie.reject': 'Rechazar',
+    'cookie.accept': 'Aceptar',
     'login.tagline': 'Domina el arte del cóctel',
     'login.sub': 'Aprende · Pon a prueba tus conocimientos · Ranking global',
     'login.google': 'Iniciar sesión con Google',
@@ -663,6 +666,9 @@ const translations = {
     'wiki.map.ouzo.desc': 'Grecia produce ouzo, destilado anisado que se vuelve turbio con agua (efecto louche). Bebida icónica de la cultura mediterránea griega.',
   },
   en: {
+    'cookie.text': 'We use analytics cookies to improve your experience. <a href="cookies.html">Cookie policy</a> · <a href="privacidad.html">Privacy</a>',
+    'cookie.reject': 'Reject',
+    'cookie.accept': 'Accept',
     'login.tagline': 'Master the art of cocktails',
     'login.sub': 'Learn · Test your knowledge · Global ranking',
     'login.google': 'Sign in with Google',
@@ -1321,6 +1327,9 @@ const translations = {
     'wiki.map.ouzo.desc': 'Greece produces ouzo, an anise-flavored spirit that turns cloudy with water (louche effect). Iconic drink of Greek Mediterranean culture.',
   },
   fr: {
+    'cookie.text': 'Nous utilisons des cookies analytiques pour améliorer votre expérience. <a href="cookies.html">Politique de cookies</a> · <a href="privacidad.html">Confidentialité</a>',
+    'cookie.reject': 'Refuser',
+    'cookie.accept': 'Accepter',
     'login.tagline': "Maîtrisez l'art du cocktail",
     'login.sub': 'Apprenez · Testez vos connaissances · Classement mondial',
     'login.google': 'Se connecter avec Google',
@@ -1978,6 +1987,9 @@ const translations = {
     'wiki.gloss.pour_test.def': 'Un test pour vérifier la précision d\'un barman dans le versement libre de mesures standard.',
   },
   pt: {
+    'cookie.text': 'Usamos cookies analíticos para melhorar a experiência. <a href="cookies.html">Política de cookies</a> · <a href="privacidad.html">Privacidade</a>',
+    'cookie.reject': 'Rejeitar',
+    'cookie.accept': 'Aceitar',
     'login.tagline': 'Domine a arte do cocktail',
     'login.sub': 'Aprenda · Teste seus conhecimentos · Ranking global',
     'login.google': 'Entrar com Google',
@@ -2635,6 +2647,9 @@ const translations = {
     'wiki.gloss.pour_test.def': 'Um teste para verificar a precisão de um bartender ao despejar medidas padrão sem jigger.',
   },
   de: {
+    'cookie.text': 'Wir verwenden analytische Cookies, um Ihre Erfahrung zu verbessern. <a href="cookies.html">Cookie-Richtlinie</a> · <a href="privacidad.html">Datenschutz</a>',
+    'cookie.reject': 'Ablehnen',
+    'cookie.accept': 'Akzeptieren',
     'login.tagline': 'Meistere die Kunst des Cocktails',
     'login.sub': 'Lerne · Teste dein Wissen · Globales Ranking',
     'login.google': 'Mit Google anmelden',

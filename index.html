@@ -55,7 +55,7 @@
         </div>
         <div class="header-right">
           <button class="lang-toggle" id="btn-lang-toggle" title="EN / ES">ES</button>
-          <button class="icon-btn" id="btn-logout" title="Opciones">⚙️</button>
+          <button class="icon-btn" id="btn-logout" title="Opciones" aria-label="Opciones">⚙️</button>
         </div>
       </div>
 
@@ -254,7 +254,7 @@
     <!-- ══ QUIZ ══ -->
     <div id="view-quiz" class="view">
       <div class="quiz-header">
-        <button class="icon-btn quit-btn" id="btn-quit-quiz">✕</button>
+        <button class="icon-btn quit-btn" id="btn-quit-quiz" aria-label="Close">✕</button>
         <div class="quiz-round-title" id="quiz-round-title"></div>
         <div class="quiz-q-counter">
           <span id="quiz-q-current">1</span><span class="quiz-q-total">/10</span>
@@ -325,7 +325,7 @@
     <!-- ══ LEADERBOARD ══ -->
     <div id="view-leaderboard" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-leaderboard">←</button>
+        <button class="icon-btn" id="btn-back-leaderboard" aria-label="Back">←</button>
         <h2 class="header-title" data-i18n="leaderboard.title">🏆 Ranking Global</h2>
         <div class="header-spacer"></div>
       </div>
@@ -336,7 +336,7 @@
     <!-- ══ SPEED MODE ══ -->
     <div id="view-speed" class="view">
       <div class="app-header">
-        <button class="icon-btn quit-btn" id="btn-quit-speed">✕</button>
+        <button class="icon-btn quit-btn" id="btn-quit-speed" aria-label="Close">✕</button>
         <h2 class="header-title" data-i18n="speed.title">⚡ Modo Velocidad</h2>
         <div class="speed-counter" id="speed-counter">0/0</div>
       </div>
@@ -354,7 +354,7 @@
     <!-- ══ CONSTRUCTOR MODE ══ -->
     <div id="view-constructor" class="view">
       <div class="app-header">
-        <button class="icon-btn quit-btn" id="btn-quit-constructor">✕</button>
+        <button class="icon-btn quit-btn" id="btn-quit-constructor" aria-label="Close">✕</button>
         <h2 class="header-title" data-i18n="constructor.title">🍹 Constructor</h2>
         <div class="quiz-q-counter"><span id="con-q-num">1</span><span class="quiz-q-total">/20</span></div>
       </div>
@@ -379,7 +379,7 @@
     <!-- ══ BLIND TASTING ══ -->
     <div id="view-blind" class="view">
       <div class="app-header">
-        <button class="icon-btn quit-btn" id="btn-quit-blind">✕</button>
+        <button class="icon-btn quit-btn" id="btn-quit-blind" aria-label="Close">✕</button>
         <h2 class="header-title" data-i18n="blind.title">👃 Blind Tasting</h2>
         <div class="quiz-q-counter"><span id="blind-q-num">1</span><span class="quiz-q-total">/18</span></div>
       </div>
@@ -405,12 +405,12 @@
     <!-- ══ FICHAS IBA ══ -->
     <div id="view-fichas" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-fichas">←</button>
+        <button class="icon-btn" id="btn-back-fichas" aria-label="Back">←</button>
         <h2 class="header-title" data-i18n="fichas.title">📖 Fichas IBA</h2>
         <div class="header-spacer"></div>
       </div>
       <div class="fichas-search-wrap">
-        <input class="fichas-search" id="fichas-search" type="text" data-i18n-placeholder="fichas.search" placeholder="Buscar cóctel...">
+        <input class="fichas-search" id="fichas-search" type="text" data-i18n-placeholder="fichas.search" placeholder="Buscar cóctel..." aria-label="Search">
       </div>
       <div class="fichas-grid" id="fichas-grid"></div>
     </div>
@@ -418,7 +418,7 @@
     <!-- ══ FICHA DETAIL ══ -->
     <div id="view-ficha-detail" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-ficha-detail">←</button>
+        <button class="icon-btn" id="btn-back-ficha-detail" aria-label="Back">←</button>
         <h2 class="header-title" id="ficha-detail-name">Negroni</h2>
         <div class="header-spacer"></div>
       </div>
@@ -446,7 +446,7 @@
     <!-- ══ ACHIEVEMENTS ══ -->
     <div id="view-achievements" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-achievements">←</button>
+        <button class="icon-btn" id="btn-back-achievements" aria-label="Back">←</button>
         <h2 class="header-title" data-i18n="achievements.title">🏆 Logros</h2>
         <div class="ach-count" id="ach-count">0/14</div>
       </div>
@@ -482,7 +482,7 @@
     <!-- ══ LEARN HUB ══ -->
     <div id="view-learn-hub" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-learn">←</button>
+        <button class="icon-btn" id="btn-back-learn" aria-label="Back">←</button>
         <h2 class="header-title" data-i18n="learn.title">📚 Aprendizaje</h2>
         <div class="header-spacer"></div>
       </div>
@@ -511,7 +511,7 @@
     <div id="view-lesson" class="view">
       <!-- Header: progress bar + phase label -->
       <div class="lesson-header">
-        <button class="icon-btn quit-btn" id="btn-quit-lesson">✕</button>
+        <button class="icon-btn quit-btn" id="btn-quit-lesson" aria-label="Close">✕</button>
         <div class="lesson-progress-wrap">
           <div class="lesson-progress-bar">
             <div class="lesson-progress-fill" id="lesson-progress-fill"></div>
@@ -597,7 +597,7 @@
     <!-- ══ DUEL MENU ══ -->
     <div id="view-duel" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-duel">←</button>
+        <button class="icon-btn" id="btn-back-duel" aria-label="Back">←</button>
         <span class="header-title" data-i18n="duel.title">⚔️ Duelo</span>
         <div class="header-spacer"></div>
       </div>
@@ -628,7 +628,7 @@
     <!-- ══ DUEL LOBBY ══ -->
     <div id="view-duel-lobby" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-duel-lobby">←</button>
+        <button class="icon-btn" id="btn-back-duel-lobby" aria-label="Back">←</button>
         <span class="header-title" data-i18n="duel.lobby_title">Sala de Espera</span>
         <div class="header-spacer"></div>
       </div>
@@ -726,7 +726,7 @@
     <!-- ══ WIKI HUB ══ -->
     <div id="view-wiki-hub" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-wiki-hub">←</button>
+        <button class="icon-btn" id="btn-back-wiki-hub" aria-label="Back">←</button>
         <h2 class="header-title" data-i18n="wiki.title">🌐 Wiki 3D</h2>
         <div class="header-spacer"></div>
       </div>
@@ -739,7 +739,7 @@
           </div>
         </div>
         <div class="wiki-search-wrap">
-          <input class="wiki-search" id="wiki-search" type="text" data-i18n-placeholder="wiki.search" placeholder="Buscar en la wiki...">
+          <input class="wiki-search" id="wiki-search" type="text" data-i18n-placeholder="wiki.search" placeholder="Buscar en la wiki..." aria-label="Search">
         </div>
         <div class="wiki-categories-grid" id="wiki-categories-grid"></div>
       </div>
@@ -748,7 +748,7 @@
     <!-- ══ WIKI CATEGORY ══ -->
     <div id="view-wiki-category" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-wiki-category">←</button>
+        <button class="icon-btn" id="btn-back-wiki-category" aria-label="Back">←</button>
         <h2 class="header-title" id="wiki-category-title"></h2>
         <div class="header-spacer"></div>
       </div>
@@ -761,9 +761,9 @@
     <!-- ══ WIKI ARTICLE ══ -->
     <div id="view-wiki-article" class="view">
       <div class="app-header">
-        <button class="icon-btn" id="btn-back-wiki-article">←</button>
+        <button class="icon-btn" id="btn-back-wiki-article" aria-label="Back">←</button>
         <h2 class="header-title" id="wiki-article-title"></h2>
-        <button class="icon-btn" id="btn-wiki-fullscreen-3d" title="3D">🔭</button>
+        <button class="icon-btn" id="btn-wiki-fullscreen-3d" title="3D" aria-label="3D view">🔭</button>
       </div>
       <div class="wiki-article-body" id="wiki-article-body">
         <div class="wiki-3d-viewport" id="wiki-article-3d"></div>
@@ -774,12 +774,12 @@
     <!-- ══ WIKI 3D FULLSCREEN ══ -->
     <div id="view-wiki-3d" class="view">
       <div class="wiki-3d-header">
-        <button class="icon-btn" id="btn-back-wiki-3d">←</button>
+        <button class="icon-btn" id="btn-back-wiki-3d" aria-label="Back">←</button>
         <h2 class="header-title" id="wiki-3d-title"></h2>
         <div class="wiki-3d-controls">
-          <button class="icon-btn" id="btn-wiki-3d-rotate" title="Auto-rotate">🔄</button>
-          <button class="icon-btn" id="btn-wiki-3d-explode" title="Explode">💥</button>
-          <button class="icon-btn" id="btn-wiki-3d-reset" title="Reset">🎯</button>
+          <button class="icon-btn" id="btn-wiki-3d-rotate" title="Auto-rotate" aria-label="Auto-rotate">🔄</button>
+          <button class="icon-btn" id="btn-wiki-3d-explode" title="Explode" aria-label="Explode">💥</button>
+          <button class="icon-btn" id="btn-wiki-3d-reset" title="Reset" aria-label="Reset">🎯</button>
         </div>
       </div>
       <div class="wiki-3d-canvas-wrap" id="wiki-3d-canvas-full"></div>
@@ -824,14 +824,14 @@
 
   <!-- Cookie Consent Banner -->
   <div id="cookie-banner" class="hidden">
-    <p class="cookie-text">
+    <p class="cookie-text" data-i18n-html="cookie.text">
       Usamos cookies analíticas para mejorar la experiencia.
       <a href="cookies.html">Política de cookies</a> ·
       <a href="privacidad.html">Privacidad</a>
     </p>
     <div class="cookie-actions">
-      <button class="cookie-btn-reject" id="cookie-reject">Rechazar</button>
-      <button class="cookie-btn-accept" id="cookie-accept">Aceptar</button>
+      <button class="cookie-btn-reject" id="cookie-reject" data-i18n="cookie.reject">Rechazar</button>
+      <button class="cookie-btn-accept" id="cookie-accept" data-i18n="cookie.accept">Aceptar</button>
     </div>
   </div>
 
