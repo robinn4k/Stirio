@@ -91,17 +91,15 @@ function bindLoginEvents() {
   $('btn-google-login').addEventListener('click', async () => {
     setLoading(true);
     try {
-      // signInWithGoogle() calls signInWithRedirect() — the page will navigate
-      // away to Google. The result is handled by getRedirectResult() in initFirebase()
-      // when the app loads again after the redirect.
       await signInWithGoogle();
-      // If we reach here the redirect has not fired yet (e.g. unsupported browser
-      // fallback) — keep the spinner; the page will reload anyway.
+      await Promise.all([loadAchievementsFromCloud(), loadLearnFromCloud()]);
+      await goToDashboard();
     } catch (e) {
       const msg = e?.code === 'auth/unauthorized-domain'
         ? t('error.unauthorized_domain')
-        : t('error.google_signin');
-      toast(msg, 'error');
+        : (e?.code === 'auth/popup-closed-by-user' ? null : t('error.google_signin'));
+      if (msg) toast(msg, 'error');
+    } finally {
       setLoading(false);
     }
   });

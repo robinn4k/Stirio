@@ -12,28 +12,13 @@ async function initFirebase() {
   if (!FIREBASE_ENABLED) return false;
   try {
     const { initializeApp } = await import(`${FIREBASE_CDN}/firebase-app.js`);
-    const { getAuth, getRedirectResult, onAuthStateChanged } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+    const { getAuth, onAuthStateChanged } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
     const { getFirestore } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
     app = initializeApp(firebaseConfig);
     auth = getAuth(app);
     db = getFirestore(app);
 
-    // Handle the result of signInWithRedirect (called on every page load after redirect)
-    const result = await getRedirectResult(auth);
-    if (result) {
-      const user = result.user;
-      currentUser = {
-        uid: user.uid,
-        name: user.displayName || user.email?.split('@')[0] || 'Jugador Google',
-        email: user.email,
-        photo: user.photoURL,
-        provider: 'google',
-        isGuest: false
-      };
-      saveUserLocal(currentUser);
-    }
-
-    // Wait for onAuthStateChanged to detect persisted sessions (fixes username not showing)
+    // Wait for onAuthStateChanged to detect persisted sessions
     if (!currentUser) {
       await new Promise(resolve => {
         const unsub = onAuthStateChanged(auth, (firebaseUser) => {
@@ -64,11 +49,22 @@ async function initFirebase() {
 // ─── Login con Google ────────────────────────────────────────
 async function signInWithGoogle() {
   if (!auth) throw new Error('Firebase no configurado. Configura firebase-config.js primero.');
-  const { GoogleAuthProvider, signInWithRedirect } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+  const { GoogleAuthProvider, signInWithPopup } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
   const provider = new GoogleAuthProvider();
   provider.addScope('profile');
   provider.addScope('email');
-  await signInWithRedirect(auth, provider);
+  const result = await signInWithPopup(auth, provider);
+  const user = result.user;
+  currentUser = {
+    uid: user.uid,
+    name: user.displayName || user.email?.split('@')[0] || 'Jugador Google',
+    email: user.email,
+    photo: user.photoURL,
+    provider: 'google',
+    isGuest: false
+  };
+  saveUserLocal(currentUser);
+  return currentUser;
 }
 
 // ─── Login como invitado ─────────────────────────────────────
