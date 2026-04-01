@@ -282,6 +282,12 @@
           </div>
         </div>
 
+        <!-- Theme -->
+        <div class="settings-section">
+          <h2 class="settings-label" data-i18n="settings.theme">Tema</h2>
+          <div class="settings-theme-grid" id="settings-theme-grid"></div>
+        </div>
+
         <!-- Account Info (Google only) -->
         <div class="settings-section" id="settings-account-section">
           <h2 class="settings-label" data-i18n="settings.account">Cuenta</h2>
@@ -565,6 +571,10 @@
         </div>
       </div>
       <div class="learn-lessons-title" data-i18n="learn.choose_lesson">Elige una lección</div>
+      <div id="learn-course-filter" class="learn-course-filter hidden">
+        <span id="learn-course-filter-name"></span>
+        <button id="btn-clear-course-filter" class="learn-course-filter-clear" aria-label="Clear filter">✕</button>
+      </div>
       <div class="learn-lessons" id="learn-lessons"></div>
     </div>
 
@@ -788,7 +798,7 @@
     <div id="view-wiki-hub" class="view">
       <div class="app-header">
         <button class="icon-btn" id="btn-back-wiki-hub" aria-label="Back">←</button>
-        <h2 class="header-title" data-i18n="wiki.title">🌐 Wiki 3D</h2>
+        <h2 class="header-title" data-i18n="wiki.title">📚 Biblioteca</h2>
         <div class="header-spacer"></div>
       </div>
       <div class="wiki-hub-body">
@@ -800,7 +810,7 @@
           </div>
         </div>
         <div class="wiki-search-wrap">
-          <input class="wiki-search" id="wiki-search" type="text" data-i18n-placeholder="wiki.search" placeholder="Buscar en la wiki..." aria-label="Search">
+          <input class="wiki-search" id="wiki-search" type="text" data-i18n-placeholder="wiki.search" placeholder="Buscar en la biblioteca..." aria-label="Search">
         </div>
         <div class="wiki-categories-grid" id="wiki-categories-grid"></div>
       </div>

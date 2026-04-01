@@ -41,9 +41,98 @@ const toast = (msg, type = 'info') => {
   el._t = setTimeout(() => el.classList.remove('show'), 3000);
 };
 
+// ─── THEMES ──────────────────────────────────────────────────
+const THEMES = {
+  classic: {
+    key: 'theme.classic',
+    bg: '#0d0508', surface: '#1a0d12', surface2: '#261520',
+    bgWarm: '#3a1a05', bgAccent: '#1a0a20', bgDeep: '#1a1025',
+    bgCanvas1: '#0a0a1a', bgCanvas2: '#1a0a2a',
+    bgCanvasD1: '#050510', bgCanvasD2: '#100520',
+    text: '#f0e6d3', textMuted: '#8b7355', textDim: '#5a4a35',
+    btnText: '#0d0508',
+    overlay: 'rgba(13,5,8,.85)', overlayHeavy: 'rgba(13,5,8,.95)', overlayMid: 'rgba(13,5,8,.9)',
+  },
+  midnight: {
+    key: 'theme.midnight',
+    bg: '#080e12', surface: '#0f1a22', surface2: '#182a35',
+    bgWarm: '#0a1a2a', bgAccent: '#0a1525', bgDeep: '#0f1a28',
+    bgCanvas1: '#080e14', bgCanvas2: '#0f1a28',
+    bgCanvasD1: '#050a10', bgCanvasD2: '#0f1520',
+    text: '#e8edf2', textMuted: '#6b8599', textDim: '#3d5566',
+    btnText: '#080e12',
+    overlay: 'rgba(8,14,18,.85)', overlayHeavy: 'rgba(8,14,18,.95)', overlayMid: 'rgba(8,14,18,.9)',
+  },
+  forest: {
+    key: 'theme.forest',
+    bg: '#080f0a', surface: '#0f1a12', surface2: '#1a2e1f',
+    bgWarm: '#0a1f0d', bgAccent: '#0a1a10', bgDeep: '#0f1a14',
+    bgCanvas1: '#080f0a', bgCanvas2: '#0f1a12',
+    bgCanvasD1: '#050a06', bgCanvasD2: '#0f1a0f',
+    text: '#e8f0e6', textMuted: '#6b8b6e', textDim: '#3d5940',
+    btnText: '#080f0a',
+    overlay: 'rgba(8,15,10,.85)', overlayHeavy: 'rgba(8,15,10,.95)', overlayMid: 'rgba(8,15,10,.9)',
+  },
+  navy: {
+    key: 'theme.navy',
+    bg: '#07090f', surface: '#0e1320', surface2: '#1a2040',
+    bgWarm: '#0a1030', bgAccent: '#0f0a25', bgDeep: '#0e1530',
+    bgCanvas1: '#07090f', bgCanvas2: '#0e1320',
+    bgCanvasD1: '#050710', bgCanvasD2: '#0e1320',
+    text: '#e6eaf2', textMuted: '#6b7599', textDim: '#3d4566',
+    btnText: '#07090f',
+    overlay: 'rgba(7,9,15,.85)', overlayHeavy: 'rgba(7,9,15,.95)', overlayMid: 'rgba(7,9,15,.9)',
+  },
+};
+
+function applyTheme(themeId) {
+  const theme = THEMES[themeId] || THEMES.classic;
+  const s = document.documentElement.style;
+  s.setProperty('--bg', theme.bg);
+  s.setProperty('--surface', theme.surface);
+  s.setProperty('--surface2', theme.surface2);
+  s.setProperty('--bg-warm', theme.bgWarm);
+  s.setProperty('--bg-accent', theme.bgAccent);
+  s.setProperty('--bg-deep', theme.bgDeep);
+  s.setProperty('--bg-canvas1', theme.bgCanvas1);
+  s.setProperty('--bg-canvas2', theme.bgCanvas2);
+  s.setProperty('--bg-canvas-d1', theme.bgCanvasD1);
+  s.setProperty('--bg-canvas-d2', theme.bgCanvasD2);
+  s.setProperty('--text', theme.text);
+  s.setProperty('--text-muted', theme.textMuted);
+  s.setProperty('--text-dim', theme.textDim);
+  s.setProperty('--btn-text', theme.btnText);
+  s.setProperty('--overlay', theme.overlay);
+  s.setProperty('--overlay-heavy', theme.overlayHeavy);
+  s.setProperty('--overlay-mid', theme.overlayMid);
+  localStorage.setItem('cq_theme', themeId);
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme.bg);
+}
+
+function renderThemeGrid() {
+  const grid = $('settings-theme-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  const current = localStorage.getItem('cq_theme') || 'classic';
+  Object.entries(THEMES).forEach(([id, theme]) => {
+    const swatch = document.createElement('div');
+    swatch.className = `settings-theme-swatch${id === current ? ' active' : ''}`;
+    swatch.style.background = `linear-gradient(135deg, ${theme.surface}, ${theme.surface2})`;
+    swatch.innerHTML = `<span class="swatch-label">${t(theme.key)}</span>`;
+    swatch.addEventListener('click', () => {
+      applyTheme(id);
+      grid.querySelectorAll('.settings-theme-swatch').forEach(s => s.classList.remove('active'));
+      swatch.classList.add('active');
+      toast(t('settings.theme_updated') || 'Tema actualizado', 'success');
+    });
+    grid.appendChild(swatch);
+  });
+}
+
 // ─── INIT ─────────────────────────────────────────────────────
 async function init() {
   setLoading(true);
+  applyTheme(localStorage.getItem('cq_theme') || 'classic');
   document.documentElement.lang = getLang();
   translateHTML();
   updateLangToggle();
@@ -216,7 +305,7 @@ function renderCoursesGrid() {
       <div class="course-bar"><div class="course-bar-fill" style="width:${masteryPct}%"></div></div>
       <div class="course-mastery">${masteryPct}%</div>
     `;
-    card.addEventListener('click', () => goToLearnHub());
+    card.addEventListener('click', () => goToLearnHub(course));
     grid.appendChild(card);
   });
 }
@@ -817,7 +906,10 @@ function showExtraResult({ emoji, title, correct, correctLbl, score, scoreLbl, e
 }
 
 // ─── LEARN HUB ───────────────────────────────────────────────
-function goToLearnHub() {
+let activeCourse = null;
+
+function goToLearnHub(course = null) {
+  activeCourse = course;
   const { xp, streak } = getLearnStats();
   const lvl = getLevelInfo(xp);
 
@@ -827,9 +919,25 @@ function goToLearnHub() {
   $('learn-xp-fill').style.width = `${lvl.pct}%`;
   $('learn-xp-text').textContent = lvl.maxLevel ? t('learn.max_level') : `${lvl.cur} / ${lvl.need} XP`;
 
+  // Course filter chip
+  const filterEl = $('learn-course-filter');
+  if (filterEl) {
+    if (course) {
+      $('learn-course-filter-name').textContent = `${course.icon} ${t(course.key)}`;
+      filterEl.classList.remove('hidden');
+    } else {
+      filterEl.classList.add('hidden');
+    }
+  }
+
+  let rounds = getLearnRounds();
+  if (course) {
+    rounds = rounds.filter(r => course.rounds.includes(r.id));
+  }
+
   const container = $('learn-lessons');
   container.innerHTML = '';
-  getLearnRounds().forEach(r => {
+  rounds.forEach(r => {
     const { sessionCount, masteryLevel, masteryKey, masteryIcon, masteryScore } = r.progress;
     const masteryInfo = MASTERY_LEVELS[masteryLevel] || MASTERY_LEVELS[0];
     const pips = [0, 1, 2].map(i =>
@@ -1202,6 +1310,7 @@ function bindEvents() {
   // Learning mode
   $('btn-go-learn').addEventListener('click', () => goToLearnHub());
   $('btn-back-learn').addEventListener('click', () => goToDashboard());
+  $('btn-clear-course-filter').addEventListener('click', () => goToLearnHub());
   $('btn-quit-lesson').addEventListener('click', () => {
     if (confirm(t('confirm.quit_lesson'))) { abortLesson(); goToLearnHub(); }
   });
@@ -1265,6 +1374,7 @@ function goToSettings() {
   if (emailEl) emailEl.textContent = user.email || '';
 
   $('settings-photo-status').textContent = '';
+  renderThemeGrid();
   showView('view-settings');
 }
 
