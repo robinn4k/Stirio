@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+#
+# Pre-commit hook: auto-bump SW cache version when cached assets change.
+# Compares staged files against the CACHE_PATHS list in sw.js.
+# If any cached file is staged (and sw.js version wasn't already bumped
+# in this commit), it increments the minor version automatically.
+
+SW_FILE="sw.js"
+
+# Only run if sw.js exists
+[ -f "$SW_FILE" ] || exit 0
+
+# Get list of staged files (Added, Modified, Renamed)
+STAGED=$(git diff --cached --name-only --diff-filter=AMR)
+
+# Extract cached paths from sw.js (the CACHE_PATHS array entries)
+CACHED_PATHS=$(sed -n "/^const CACHE_PATHS/,/^]/p" "$SW_FILE" \
+  | grep -oP "'\K[^']+")
+
+# Check if sw.js itself is already staged (manual bump)
+if echo "$STAGED" | grep -qx "$SW_FILE"; then
+  exit 0
+fi
+
+# Check if any staged file matches a cached path
+NEEDS_BUMP=false
+for file in $STAGED; do
+  for cached in $CACHED_PATHS; do
+    if [ "$file" = "$cached" ]; then
+      NEEDS_BUMP=true
+      break 2
+    fi
+  done
+done
+
+if [ "$NEEDS_BUMP" = true ]; then
+  # Extract current version like "Stirio-v3.2"
+  CURRENT=$(grep -oP "Stirio-v\K[0-9]+\.[0-9]+" "$SW_FILE")
+  if [ -z "$CURRENT" ]; then
+    exit 0
+  fi
+
+  MAJOR=$(echo "$CURRENT" | cut -d. -f1)
+  MINOR=$(echo "$CURRENT" | cut -d. -f2)
+  NEW_MINOR=$((MINOR + 1))
+  NEW_VERSION="Stirio-v${MAJOR}.${NEW_MINOR}"
+
+  # Replace in sw.js
+  sed -i "s/Stirio-v${CURRENT}/${NEW_VERSION}/" "$SW_FILE"
+  git add "$SW_FILE"
+
+  echo "[pre-commit] SW cache bumped: Stirio-v${CURRENT} -> ${NEW_VERSION}"
+fi
+
+exit 0
