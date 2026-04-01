@@ -1,23 +1,36 @@
 import { getDb, getCurrentUser, isFirebaseReady } from './auth.js';
+import { t } from './lang.js';
 
 const KEY = 'cq_achievements';
 
-export const ALL = [
-  { id: 'first_game',      icon: '🎯', title: 'Primera Partida',    desc: 'Completa tu primer quiz' },
-  { id: 'perfect_quiz',    icon: '⭐', title: 'Quiz Perfecto',       desc: '10/10 en cualquier ronda de quiz' },
-  { id: 'daily_first',     icon: '📅', title: 'Reto del Día',        desc: 'Completa el Reto Diario por primera vez' },
-  { id: 'daily_perfect',   icon: '🏅', title: 'Día Perfecto',        desc: '10/10 en el Reto Diario' },
-  { id: 'speed_20',        icon: '⚡', title: 'Velocista',           desc: 'Responde 20+ preguntas en Modo Velocidad' },
-  { id: 'speed_30',        icon: '🚀', title: 'Supersónico',         desc: 'Responde 30+ preguntas en Modo Velocidad' },
-  { id: 'streak_3',        icon: '🔥', title: 'En Racha',            desc: 'Mantén una racha de aprendizaje de 3 días' },
-  { id: 'streak_7',        icon: '💥', title: 'Semana Perfecta',     desc: 'Mantén una racha de aprendizaje de 7 días' },
-  { id: 'lessons_5',       icon: '📚', title: 'Estudiante',          desc: 'Completa 5 lecciones de aprendizaje' },
-  { id: 'lessons_10',      icon: '🎓', title: 'Graduado',            desc: 'Completa 10 lecciones de aprendizaje' },
-  { id: 'xp_500',          icon: '💫', title: 'Acumulador',          desc: 'Consigue 500 XP en Modo Aprendizaje' },
-  { id: 'perfect_lesson',  icon: '❤️',  title: 'Sin Rasguños',        desc: 'Completa una lección sin perder ninguna vida' },
-  { id: 'all_rounds',      icon: '🌍', title: 'Explorador',          desc: 'Juega todas las 10 rondas al menos una vez' },
-  { id: 'fichas_reader',   icon: '📖', title: 'Estudioso',           desc: 'Abre 5 fichas de referencia distintas' },
+const ACHIEVEMENT_DEFS = [
+  { id: 'first_game',      icon: '🎯' },
+  { id: 'perfect_quiz',    icon: '⭐' },
+  { id: 'daily_first',     icon: '📅' },
+  { id: 'daily_perfect',   icon: '🏅' },
+  { id: 'speed_20',        icon: '⚡' },
+  { id: 'speed_30',        icon: '🚀' },
+  { id: 'streak_3',        icon: '🔥' },
+  { id: 'streak_7',        icon: '💥' },
+  { id: 'lessons_5',       icon: '📚' },
+  { id: 'lessons_10',      icon: '🎓' },
+  { id: 'xp_500',          icon: '💫' },
+  { id: 'perfect_lesson',  icon: '❤️' },
+  { id: 'all_rounds',      icon: '🌍' },
+  { id: 'fichas_reader',   icon: '📖' },
 ];
+
+// Returns localized achievement definitions
+function localizedAll() {
+  return ACHIEVEMENT_DEFS.map(a => ({
+    ...a,
+    title: t(`ach.${a.id}`),
+    desc: t(`ach.${a.id}.desc`)
+  }));
+}
+
+// Backwards-compatible export
+export const ALL = ACHIEVEMENT_DEFS;
 
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || { unlocked: [], stats: {} }; }
@@ -73,7 +86,7 @@ export async function loadAchievementsFromCloud() {
 
 export function getAchievements() {
   const { unlocked } = load();
-  return ALL.map(a => ({ ...a, unlocked: unlocked.includes(a.id) }));
+  return localizedAll().map(a => ({ ...a, unlocked: unlocked.includes(a.id) }));
 }
 
 export function getStats() { return load().stats || {}; }
@@ -107,8 +120,9 @@ export function checkAchievements(statsPatch) {
     fichas_reader:   (s.fichasOpened || 0) >= 5,
   };
 
+  const all = localizedAll();
   const newlyUnlocked = [];
-  ALL.forEach(a => {
+  all.forEach(a => {
     if (!d.unlocked.includes(a.id) && map[a.id]) {
       d.unlocked.push(a.id);
       newlyUnlocked.push(a);
