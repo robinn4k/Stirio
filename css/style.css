@@ -229,6 +229,10 @@ img { display: block; max-width: 100%; }
   background: var(--surface2); border: 2px solid var(--gold);
   font-size: 1.4rem;
   display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.user-avatar img {
+  width: 100%; height: 100%; object-fit: cover;
 }
 .user-name  { font-weight: 700; font-size: .95rem; color: var(--text); }
 .user-best  { font-size: .78rem; color: var(--gold); }
