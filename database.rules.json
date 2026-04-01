@@ -15,19 +15,19 @@
     "rooms": {
       "$roomId": {
         ".read": "auth != null",
-        ".write": "auth != null"
+        ".write": "auth != null && (!data.exists() || data.child('players/p1/uid').val() === auth.uid || data.child('players/p2/uid').val() === auth.uid)"
       }
     },
     "codes": {
       "$code": {
         ".read": "auth != null",
-        ".write": "auth != null"
+        ".write": "auth != null && (!data.exists() || !newData.exists())"
       }
     },
     "matched": {
       "$uid": {
         ".read": "auth != null && auth.uid === $uid",
-        ".write": "auth != null"
+        ".write": "auth != null && (!data.exists() || auth.uid === $uid)"
       }
     }
   }

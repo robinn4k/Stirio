@@ -1699,7 +1699,7 @@ async function handleDuelAnswer(selectedIndex) {
   setTimeout(() => scoreEl.classList.remove('bump'), 200);
 
   // Sync to Firebase
-  rtdbSubmitAnswer(duelState.roomId, duelState.slot, duelState.currentQ, correct, duelState.timeLeft, duelState.score)
+  rtdbSubmitAnswer(duelState.roomId, duelState.slot, duelState.currentQ, correct, duelState.timeLeft)
     .catch(() => {});
 
   // Advance after brief pause
@@ -1716,7 +1716,7 @@ async function handleDuelTimeout() {
     if (i === q.correctIndex) btn.classList.add('correct');
   });
 
-  rtdbSubmitAnswer(duelState.roomId, duelState.slot, duelState.currentQ, false, 0, duelState.score)
+  rtdbSubmitAnswer(duelState.roomId, duelState.slot, duelState.currentQ, false, 0)
     .catch(() => {});
 
   setTimeout(() => advanceDuelQuestion(), 1200);
