@@ -139,7 +139,16 @@ async function goToDashboard() {
 
   // Header user info
   $('user-name').textContent = user.name;
-  $('user-avatar').textContent = user.isGuest ? '👤' : '🍸';
+  const avatarEl = $('user-avatar');
+  if (user.photo) {
+    const img = document.createElement('img');
+    img.src = user.photo;
+    img.alt = 'avatar';
+    avatarEl.textContent = '';
+    avatarEl.appendChild(img);
+  } else {
+    avatarEl.textContent = user.isGuest ? '👤' : '🍸';
+  }
 
   // Load stats
   const stats = await getUserStats();
@@ -1241,7 +1250,11 @@ function goToSettings() {
   // Populate avatar
   const avatar = $('settings-avatar');
   if (user.photo) {
-    avatar.innerHTML = `<img src="${user.photo}" alt="avatar">`;
+    const img = document.createElement('img');
+    img.src = user.photo;
+    img.alt = 'avatar';
+    avatar.textContent = '';
+    avatar.appendChild(img);
   } else {
     avatar.textContent = isGuest ? '👤' : '🍸';
   }
@@ -1273,7 +1286,11 @@ function bindSettingsEvents() {
     status.textContent = t('settings.uploading') || 'Subiendo...';
     try {
       const url = await uploadProfilePhoto(file);
-      $('settings-avatar').innerHTML = `<img src="${url}" alt="avatar">`;
+      const img = document.createElement('img');
+      img.src = url;
+      img.alt = 'avatar';
+      $('settings-avatar').textContent = '';
+      $('settings-avatar').appendChild(img);
       status.textContent = '✓';
       toast(t('settings.photo_updated') || 'Foto actualizada', 'success');
     } catch (err) {
@@ -1304,11 +1321,6 @@ function bindSettingsEvents() {
 
   // Sign out
   $('btn-settings-logout').addEventListener('click', async () => {
-    const user = getCurrentUser();
-    if (user?.isGuest) {
-      showView('view-login');
-      return;
-    }
     if (confirm(t('confirm.sign_out'))) {
       await signOutUser();
       showView('view-login');
