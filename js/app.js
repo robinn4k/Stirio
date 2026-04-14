@@ -250,7 +250,7 @@ async function goToDashboard() {
   $('stat-games').textContent = games;
   $('stat-best').textContent = best;
   $('stat-avg').textContent = avg;
-  $('user-best').textContent = t('dashboard.best', { n: best });
+  // user-best removed (Task 1.1) — level shown instead (Task 1.2)
 
   // ── Tab 1: Aprender ──
   const { xp, streak } = getLearnStats();
