@@ -11,7 +11,7 @@ import { t } from './lang.js';
 // ─── Storage ─────────────────────────────────────────────────
 const KEY = 'cq_academy_data';
 const KEY_LEARN = 'cq_learn_data';
-const DATA_VERSION = 2;
+const DATA_VERSION = 3;
 
 function getData() {
   try {
@@ -35,8 +35,10 @@ function setData(data) {
 function _migrateData(data) {
   if (data.levels) {
     for (const [id, levelData] of Object.entries(data.levels)) {
+      const level = ACADEMY_LEVELS.find(l => l.id === parseInt(id));
+
+      // v1 → v2: populate lessons for completed levels
       if (levelData.completed && !levelData.lessons) {
-        const level = ACADEMY_LEVELS.find(l => l.id === parseInt(id));
         if (level) {
           levelData.lessons = {};
           level.lessons.forEach((_, li) => {
@@ -50,10 +52,44 @@ function _migrateData(data) {
       } else if (!levelData.lessons) {
         levelData.lessons = {};
       }
+
+      // v2 → v3: populate practiceCompleted based on sequence order
+      if (!levelData.practiceCompleted) {
+        levelData.practiceCompleted = {};
+        if (level && level.sequence) {
+          if (levelData.completed) {
+            // Level fully completed → all practice rounds done
+            level.sequence.forEach(item => {
+              if (item.type === 'practice') levelData.practiceCompleted[item.roundId] = true;
+            });
+          } else {
+            // Infer: practice rounds before completed lessons must be done
+            _inferPracticeCompletion(level, levelData);
+          }
+        }
+      }
     }
   }
   data._version = DATA_VERSION;
   return data;
+}
+
+/** For partially completed levels, mark practice rounds before completed lessons as done */
+function _inferPracticeCompletion(level, levelData) {
+  let lastCompletedSeqIdx = -1;
+  for (let i = level.sequence.length - 1; i >= 0; i--) {
+    const item = level.sequence[i];
+    if (item.type === 'lesson' && levelData.lessons?.[item.index]?.completed) {
+      lastCompletedSeqIdx = i;
+      break;
+    }
+  }
+  for (let i = 0; i < lastCompletedSeqIdx; i++) {
+    const item = level.sequence[i];
+    if (item.type === 'practice') {
+      levelData.practiceCompleted[item.roundId] = true;
+    }
+  }
 }
 
 // ─── Cloud Sync ──────────────────────────────────────────────
@@ -91,6 +127,7 @@ export async function loadAcademyFromCloud() {
             bestScore: Math.max(ll.bestScore || 0, cl.bestScore || 0),
             attempts: Math.max(ll.attempts || 0, cl.attempts || 0),
             lessons: _mergeLessons(ll.lessons, cl.lessons),
+            practiceCompleted: _mergePractice(ll.practiceCompleted, cl.practiceCompleted),
           };
         }
       }
@@ -115,6 +152,14 @@ function _mergeLessons(localLessons, cloudLessons) {
   return merged;
 }
 
+function _mergePractice(local, cloud) {
+  const merged = { ...(local || {}) };
+  for (const [rid, val] of Object.entries(cloud || {})) {
+    merged[rid] = merged[rid] || val;
+  }
+  return merged;
+}
+
 // ─── Public Getters ──────────────────────────────────────────
 
 export function isLevelUnlocked(levelId) {
@@ -128,6 +173,46 @@ export function isLessonUnlocked(levelId, lessonIndex) {
   if (lessonIndex === 0) return true;
   const data = getData();
   return data.levels?.[levelId]?.lessons?.[lessonIndex - 1]?.completed === true;
+}
+
+export function isSequenceItemUnlocked(levelId, seqIndex) {
+  if (!isLevelUnlocked(levelId)) return false;
+  if (seqIndex === 0) return true;
+  const level = ACADEMY_LEVELS.find(l => l.id === levelId);
+  if (!level || !level.sequence || seqIndex >= level.sequence.length) return false;
+  const prevItem = level.sequence[seqIndex - 1];
+  return _isSeqItemCompleted(levelId, prevItem);
+}
+
+function _isSeqItemCompleted(levelId, item) {
+  const data = getData();
+  return _isSeqItemCompletedFromData(data, levelId, item);
+}
+
+function _isSeqItemCompletedFromData(data, levelId, item) {
+  if (item.type === 'lesson') {
+    return data.levels?.[levelId]?.lessons?.[item.index]?.completed === true;
+  }
+  return data.levels?.[levelId]?.practiceCompleted?.[item.roundId] === true;
+}
+
+export function markPracticeCompleted(levelId, roundId) {
+  const d = getData();
+  d.levels = d.levels || {};
+  d.levels[levelId] = d.levels[levelId] || {};
+  d.levels[levelId].practiceCompleted = d.levels[levelId].practiceCompleted || {};
+  d.levels[levelId].practiceCompleted[roundId] = true;
+
+  // Check if all sequence items now completed → mark level completed
+  const level = ACADEMY_LEVELS.find(l => l.id === levelId);
+  if (level && level.sequence) {
+    const allDone = level.sequence.every(item => _isSeqItemCompletedFromData(d, levelId, item));
+    if (allDone && !d.levels[levelId].completed) {
+      d.levels[levelId].completed = true;
+      d.totalCompleted = (d.totalCompleted || 0) + 1;
+    }
+  }
+  setData(d);
 }
 
 export function getAcademyStats() {
@@ -156,7 +241,27 @@ export function getAcademyLevels() {
         attempts: lp.attempts || 0,
       };
     });
-    const lessonsCompleted = lessonProgress.filter(l => l.completed).length;
+
+    // Build enriched sequence with unlock/completion state
+    const sequenceProgress = (level.sequence || []).map((item, si) => {
+      const unlocked = isSequenceItemUnlocked(level.id, si);
+      if (item.type === 'lesson') {
+        const lp = progress.lessons?.[item.index] || {};
+        return {
+          ...item, seqIndex: si, unlocked,
+          completed: !!lp.completed,
+          bestScore: lp.bestScore || 0,
+        };
+      }
+      return {
+        ...item, seqIndex: si, unlocked,
+        completed: !!progress.practiceCompleted?.[item.roundId],
+      };
+    });
+
+    const seqCompleted = sequenceProgress.filter(s => s.completed).length;
+    const seqTotal = sequenceProgress.length;
+
     return {
       id: level.id,
       key: level.key,
@@ -169,8 +274,9 @@ export function getAcademyLevels() {
       bestScore: progress.bestScore || 0,
       attempts: progress.attempts || 0,
       lessons: lessonProgress,
-      lessonsCompleted,
-      lessonsTotal: level.lessons.length,
+      sequence: sequenceProgress,
+      lessonsCompleted: seqCompleted,
+      lessonsTotal: seqTotal,
       questions: level.questions,
     };
   });
@@ -182,9 +288,17 @@ let as = null;
 
 export function startAcademyLesson(levelId, lessonIndex) {
   const level = ACADEMY_LEVELS.find(l => l.id === levelId);
-  if (!level || !isLessonUnlocked(levelId, lessonIndex)) return null;
+  if (!level) return null;
   const lesson = level.lessons[lessonIndex];
   if (!lesson) return null;
+
+  // Check unlock via sequence (preferred) or legacy lesson chain
+  if (level.sequence) {
+    const seqIdx = level.sequence.findIndex(s => s.type === 'lesson' && s.index === lessonIndex);
+    if (seqIdx < 0 || !isSequenceItemUnlocked(levelId, seqIdx)) return null;
+  } else if (!isLessonUnlocked(levelId, lessonIndex)) {
+    return null;
+  }
 
   const cards = lesson.cards.map(card => ({
     ...card, lessonKey: lesson.key, lessonIndex,
@@ -326,12 +440,13 @@ function _finishLesson() {
     attempts: lessonAttempts,
   };
 
-  // Check if all lessons in level are now completed
-  const allLessonsCompleted = level.lessons.every((_, li) =>
-    d.levels[levelId].lessons[li]?.completed === true
-  );
+  // Check if all sequence items in level are now completed
+  d.levels[levelId].practiceCompleted = d.levels[levelId].practiceCompleted || {};
+  const allSeqCompleted = level.sequence
+    ? level.sequence.every(item => _isSeqItemCompletedFromData(d, levelId, item))
+    : level.lessons.every((_, li) => d.levels[levelId].lessons[li]?.completed === true);
   const prevLevelCompleted = d.levels[levelId].completed;
-  if (allLessonsCompleted && !prevLevelCompleted) {
+  if (allSeqCompleted && !prevLevelCompleted) {
     d.levels[levelId].completed = true;
     d.totalCompleted = (d.totalCompleted || 0) + 1;
   }
@@ -351,13 +466,20 @@ function _finishLesson() {
   _crossWriteXP(xp);
   _touchStreak();
 
-  // Determine what was unlocked
+  // Determine what was unlocked (sequence-aware)
+  const currentSeqIdx = level.sequence
+    ? level.sequence.findIndex(s => s.type === 'lesson' && s.index === lessonIndex)
+    : -1;
+  const nextSeqIdx = currentSeqIdx >= 0 ? currentSeqIdx + 1 : -1;
+  const hasNextSeqItem = nextSeqIdx >= 0 && nextSeqIdx < (level.sequence || []).length;
+  const nextSeqItem = hasNextSeqItem ? level.sequence[nextSeqIdx] : null;
+
   const nextLessonIndex = lessonIndex + 1;
   const hasNextLesson = nextLessonIndex < level.lessons.length;
-  const unlockNextLesson = passed && !prevLesson.completed && hasNextLesson;
+  const unlockNextLesson = passed && !prevLesson.completed && hasNextSeqItem;
 
   const nextLevel = ACADEMY_LEVELS.find(l => l.id === levelId + 1);
-  const levelCompleted = allLessonsCompleted && !prevLevelCompleted;
+  const levelCompleted = allSeqCompleted && !prevLevelCompleted;
   const unlockNextLevel = levelCompleted && !!nextLevel;
 
   const result = {
@@ -374,6 +496,7 @@ function _finishLesson() {
     unlockNextLesson,
     nextLessonIndex: hasNextLesson ? nextLessonIndex : null,
     nextLessonKey: hasNextLesson ? level.lessons[nextLessonIndex].key : null,
+    nextSeqItem,
     levelCompleted,
     unlockNextLevel,
     nextLevelKey: nextLevel ? nextLevel.key : null,
