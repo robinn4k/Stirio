@@ -51,6 +51,22 @@ const SPIRIT_REGIONS = [
   // ── Raki / Ouzo ──
   { id: 'raki', spirit: 'raki', lat: 41.01, lng: 28.98, icon: '🇹🇷', origin: 'Turkey', place: 'Istanbul', dateCreated: 's. XVII' },
   { id: 'ouzo', spirit: 'ouzo', lat: 37.97, lng: 23.73, icon: '🇬🇷', origin: 'Greece', place: 'Lesbos / Athens', dateCreated: 's. XIX' },
+  // ── Additional Rum ──
+  { id: 'ron-dominicana', spirit: 'rum', lat: 18.47, lng: -69.90, icon: '🇩🇴', origin: 'Dominican Republic', place: 'Santo Domingo', dateCreated: 's. XVI' },
+  { id: 'ron-venezuela', spirit: 'rum', lat: 10.50, lng: -66.92, icon: '🇻🇪', origin: 'Venezuela', place: 'Caracas', dateCreated: 's. XVIII' },
+  { id: 'ron-colombia', spirit: 'rum', lat: 6.25, lng: -75.56, icon: '🇨🇴', origin: 'Colombia', place: 'Medellin', dateCreated: 's. XVII' },
+  { id: 'ron-panama', spirit: 'rum', lat: 8.98, lng: -79.52, icon: '🇵🇦', origin: 'Panama', place: 'Herrera', dateCreated: 's. XVIII' },
+  { id: 'ron-trinidad', spirit: 'rum', lat: 10.65, lng: -61.50, icon: '🇹🇹', origin: 'Trinidad & Tobago', place: 'Port of Spain', dateCreated: 's. XVII' },
+  { id: 'ron-guyana', spirit: 'rum', lat: 6.80, lng: -58.16, icon: '🏴', origin: 'Guyana', place: 'Demerara', dateCreated: 's. XVII' },
+  // ── Additional Agave ──
+  { id: 'raicilla', spirit: 'mezcal', lat: 20.68, lng: -105.25, icon: '🌿', origin: 'Mexico', place: 'Jalisco (Sierra Occidental)', dateCreated: 's. XVII' },
+  { id: 'sotol', spirit: 'mezcal', lat: 28.63, lng: -106.09, icon: '🏜️', origin: 'Mexico', place: 'Chihuahua', dateCreated: 's. XVI' },
+  { id: 'bacanora', spirit: 'mezcal', lat: 28.95, lng: -109.41, icon: '🌵', origin: 'Mexico', place: 'Sonora', dateCreated: 's. XVII' },
+  // ── Eaux de Vie / Fruit Spirits ──
+  { id: 'kirsch', spirit: 'eaudevie', lat: 47.99, lng: 7.85, icon: '🍒', origin: 'Germany', place: 'Black Forest', dateCreated: 's. XVI' },
+  { id: 'absinthe', spirit: 'eaudevie', lat: 46.77, lng: 6.63, icon: '🧚', origin: 'Switzerland / France', place: 'Val-de-Travers', dateCreated: '1792' },
+  // ── Shochu ──
+  { id: 'shochu', spirit: 'sake', lat: 31.60, lng: 130.56, icon: '🇯🇵', origin: 'Japan', place: 'Kagoshima / Kyushu', dateCreated: 's. XVI' },
 ];
 
 // Spirit color mapping for markers
@@ -71,6 +87,7 @@ const SPIRIT_COLORS = {
   aquavit: '#2980b9',
   raki: '#9b59b6',
   ouzo: '#34495e',
+  eaudevie: '#a3d977',
 };
 
 /**
