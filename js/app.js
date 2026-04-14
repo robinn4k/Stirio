@@ -11,7 +11,7 @@ import { startBlind, answerBlind, revealNextClue, abortBlind } from './blind.js'
 import { getLang, setLang, t, translateHTML, preloadAllTranslations } from './lang.js';
 import { loadAchievementsFromCloud } from './achievements.js';
 import { loadLearnFromCloud } from './learn.js';
-import { startAcademy, advanceAcademyCard, answerAcademy, advanceAcademy, abortAcademy, getAcademyStats, getAcademyLevels, isLevelUnlocked, loadAcademyFromCloud } from './academy.js';
+import { startAcademy, startAcademyLesson, advanceAcademyCard, answerAcademy, advanceAcademy, abortAcademy, getAcademyStats, getAcademyLevels, isLevelUnlocked, isLessonUnlocked, loadAcademyFromCloud } from './academy.js';
 import { ACADEMY_LEVELS } from './academy_data.js';
 import { showShareModal, closeShareModal } from './share.js';
 import {
@@ -1250,6 +1250,8 @@ function showLessonResult({ xp, correct, total, round, masteryGains, masteryLeve
 
 // ─── ACADEMY ─────────────────────────────────────────────────
 let currentAcademyLevelId = null;
+let currentAcademyLessonIndex = null;
+let lastAcademyResult = null;
 
 function renderAcademyBanner() {
   const stats = getAcademyStats();
@@ -1257,7 +1259,6 @@ function renderAcademyBanner() {
   const completed = Object.values(stats.levels).filter(l => l.completed).length;
   $('academy-banner-progress').textContent = `${completed}/${ACADEMY_LEVELS.length}`;
 
-  // Show current/next level name in banner subtitle
   const nextLevel = levels.find(l => l.unlocked && !l.completed) || levels[levels.length - 1];
   const subEl = $('academy-banner-sub');
   if (subEl && nextLevel) {
@@ -1275,13 +1276,13 @@ function goToAcademyHub() {
   container.innerHTML = '';
 
   levels.forEach((level, i) => {
-    // Connector line between levels
     if (i > 0) {
       const conn = document.createElement('div');
       conn.className = 'academy-level-connector';
       container.appendChild(conn);
     }
 
+    // Level header card (non-clickable grouper)
     const card = document.createElement('div');
     const stateClass = level.completed ? 'completed' : level.unlocked ? '' : 'locked';
     card.className = `academy-level-card ${stateClass}`;
@@ -1294,13 +1295,9 @@ function goToAcademyHub() {
       meta = `<div class="academy-lock-icon">🔒</div>`;
     }
 
-    // Practice mastery for this level
-    const practiceRounds = getPracticeRoundsForLevel(level.id);
-    let practiceMasteryHtml = '';
-    if (level.unlocked && practiceRounds.length > 0) {
-      const avgMastery = practiceRounds.reduce((sum, r) => sum + (r.progress?.masteryScore || 0), 0) / practiceRounds.length;
-      const masteryPct = Math.round(avgMastery * 100);
-      practiceMasteryHtml = `<div class="academy-level-practice-mastery">${t('academy.practice')}: ${masteryPct}%</div>`;
+    let progressHtml = '';
+    if (level.unlocked) {
+      progressHtml = `<div class="academy-level-progress">${t('academy.lessons_progress', { a: level.lessonsCompleted, b: level.lessonsTotal })}</div>`;
     }
 
     card.innerHTML = `
@@ -1309,16 +1306,48 @@ function goToAcademyHub() {
         <div class="academy-level-name">${t(level.key)}</div>
         <div class="academy-level-sub">${t(level.descKey)}</div>
         <div class="academy-level-meta">${meta}</div>
-        ${practiceMasteryHtml}
+        ${progressHtml}
       </div>
     `;
-
-    if (level.unlocked) {
-      card.addEventListener('click', () => beginAcademyLevel(level.id));
-    }
     container.appendChild(card);
 
+    // Lesson sub-cards for unlocked levels
+    if (level.unlocked) {
+      const lessonList = document.createElement('div');
+      lessonList.className = 'academy-lesson-list';
+      lessonList.style.setProperty('--level-color', level.color);
+
+      level.lessons.forEach((lesson, li) => {
+        const lCard = document.createElement('div');
+        const lState = lesson.completed ? 'completed' : lesson.unlocked ? '' : 'locked';
+        lCard.className = `academy-lesson-card ${lState}`;
+
+        let statusIcon = '▶';
+        if (lesson.completed) statusIcon = '';
+        else if (!lesson.unlocked) statusIcon = '🔒';
+
+        let scoreHtml = '';
+        if (lesson.completed) {
+          scoreHtml = `<span class="academy-lesson-score">${t('academy.best_score', { n: lesson.bestScore })}</span>`;
+        }
+
+        lCard.innerHTML = `
+          <span class="academy-lesson-status">${statusIcon}</span>
+          <span class="academy-lesson-name">${t(lesson.key)}</span>
+          ${scoreHtml}
+        `;
+
+        if (lesson.unlocked) {
+          lCard.addEventListener('click', () => beginAcademyLesson(level.id, li));
+        }
+        lessonList.appendChild(lCard);
+      });
+
+      container.appendChild(lessonList);
+    }
+
     // Practice section (collapsible) for unlocked levels
+    const practiceRounds = getPracticeRoundsForLevel(level.id);
     if (level.unlocked && practiceRounds.length > 0) {
       const practiceSection = document.createElement('div');
       practiceSection.className = 'academy-practice-section';
@@ -1376,9 +1405,10 @@ function goToAcademyHub() {
   translateHTML();
 }
 
-function beginAcademyLevel(levelId) {
+function beginAcademyLesson(levelId, lessonIndex) {
   currentAcademyLevelId = levelId;
-  const payload = startAcademy(levelId);
+  currentAcademyLessonIndex = lessonIndex;
+  const payload = startAcademyLesson(levelId, lessonIndex);
   if (!payload) return;
   showView('view-academy-lesson');
   renderAcademyCard(payload);
@@ -1506,6 +1536,7 @@ function handleAcademyContinue() {
 }
 
 function showAcademyResult(result) {
+  lastAcademyResult = result;
   $('ar-emoji').textContent = result.passed ? '🎉' : '📚';
   $('ar-title').textContent = result.passed ? t('academy.passed') : t('academy.failed');
   $('ar-correct').textContent = `${result.correct ?? 0}/${result.total ?? 0}`;
@@ -1520,16 +1551,28 @@ function showAcademyResult(result) {
 
   // Unlock banner
   const unlockEl = $('ar-unlock-banner');
-  if (result.unlockNext) {
+  if (result.levelCompleted && result.unlockNextLevel) {
     $('ar-unlock-text').textContent = `🔓 ${t('academy.level_unlocked', { n: result.levelId + 2 })}: ${t(result.nextLevelKey)}`;
+    unlockEl.classList.remove('hidden');
+  } else if (result.unlockNextLesson) {
+    $('ar-unlock-text').textContent = `🔓 ${t('academy.lesson_unlocked')}`;
+    unlockEl.classList.remove('hidden');
+  } else if (result.levelCompleted) {
+    $('ar-unlock-text').textContent = `🏆 ${t('academy.level_completed')}`;
     unlockEl.classList.remove('hidden');
   } else {
     unlockEl.classList.add('hidden');
   }
 
-  // Next button visibility
+  // Next button: show when there's a next lesson or next level
   const nextBtn = $('btn-ar-next');
-  if (result.unlockNext || (result.passed && result.levelId < ACADEMY_LEVELS.length - 1)) {
+  const hasNext = result.unlockNextLesson || result.unlockNextLevel ||
+    (result.passed && result.nextLessonIndex !== null) ||
+    (result.passed && result.levelCompleted && result.levelId < ACADEMY_LEVELS.length - 1);
+  if (hasNext) {
+    nextBtn.textContent = (result.nextLessonIndex !== null && !result.levelCompleted)
+      ? t('academy.next_lesson')
+      : t('academy.next_level');
     nextBtn.classList.remove('hidden');
   } else {
     nextBtn.classList.add('hidden');
@@ -1747,13 +1790,18 @@ function bindEvents() {
   });
   $('btn-acad-next-card').addEventListener('click', () => handleAcademyCardAdvance());
   $('btn-acad-continue').addEventListener('click', () => handleAcademyContinue());
-  $('btn-ar-retry').addEventListener('click', () => beginAcademyLevel(currentAcademyLevelId));
+  $('btn-ar-retry').addEventListener('click', () => beginAcademyLesson(currentAcademyLevelId, currentAcademyLessonIndex));
   $('btn-ar-next').addEventListener('click', () => {
-    const nextId = currentAcademyLevelId + 1;
-    if (nextId < ACADEMY_LEVELS.length && isLevelUnlocked(nextId)) {
-      beginAcademyLevel(nextId);
+    const r = lastAcademyResult;
+    if (r && r.nextLessonIndex !== null && !r.levelCompleted) {
+      beginAcademyLesson(currentAcademyLevelId, r.nextLessonIndex);
     } else {
-      goToAcademyHub();
+      const nextId = currentAcademyLevelId + 1;
+      if (nextId < ACADEMY_LEVELS.length && isLevelUnlocked(nextId)) {
+        beginAcademyLesson(nextId, 0);
+      } else {
+        goToAcademyHub();
+      }
     }
   });
   $('btn-ar-home').addEventListener('click', () => goToAcademyHub());

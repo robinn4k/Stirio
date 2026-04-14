@@ -22,6 +22,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l0.tip1' },
           { type: 'theory', key: 'academy.l0.t2' },
           { type: 'note',   key: 'academy.l0.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l0.les0.q1', a: ['academy.l0.les0.q1a1','academy.l0.les0.q1a2','academy.l0.les0.q1a3','academy.l0.les0.q1a4'], exp: 'academy.l0.les0.q1exp' },
+          { q: 'academy.l0.les0.q2', a: ['academy.l0.les0.q2a1','academy.l0.les0.q2a2','academy.l0.les0.q2a3','academy.l0.les0.q2a4'], exp: 'academy.l0.les0.q2exp' },
+          { q: 'academy.l0.les0.q3', a: ['academy.l0.les0.q3a1','academy.l0.les0.q3a2','academy.l0.les0.q3a3','academy.l0.les0.q3a4'], exp: 'academy.l0.les0.q3exp' },
         ]
       },
       {
@@ -31,6 +37,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l0.tip2' },
           { type: 'example', cocktail: 'Old Fashioned' },
           { type: 'theory', key: 'academy.l0.t4' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l0.les1.q1', a: ['academy.l0.les1.q1a1','academy.l0.les1.q1a2','academy.l0.les1.q1a3','academy.l0.les1.q1a4'], exp: 'academy.l0.les1.q1exp' },
+          { q: 'academy.l0.les1.q2', a: ['academy.l0.les1.q2a1','academy.l0.les1.q2a2','academy.l0.les1.q2a3','academy.l0.les1.q2a4'], exp: 'academy.l0.les1.q2exp' },
+          { q: 'academy.l0.les1.q3', a: ['academy.l0.les1.q3a1','academy.l0.les1.q3a2','academy.l0.les1.q3a3','academy.l0.les1.q3a4'], exp: 'academy.l0.les1.q3exp' },
         ]
       },
       {
@@ -40,6 +52,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l0.tip3' },
           { type: 'note',   key: 'academy.l0.note2' },
           { type: 'example', cocktail: 'Daiquiri' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l0.les2.q1', a: ['academy.l0.les2.q1a1','academy.l0.les2.q1a2','academy.l0.les2.q1a3','academy.l0.les2.q1a4'], exp: 'academy.l0.les2.q1exp' },
+          { q: 'academy.l0.les2.q2', a: ['academy.l0.les2.q2a1','academy.l0.les2.q2a2','academy.l0.les2.q2a3','academy.l0.les2.q2a4'], exp: 'academy.l0.les2.q2exp' },
+          { q: 'academy.l0.les2.q3', a: ['academy.l0.les2.q3a1','academy.l0.les2.q3a2','academy.l0.les2.q3a3','academy.l0.les2.q3a4'], exp: 'academy.l0.les2.q3exp' },
         ]
       },
     ],
@@ -75,6 +93,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l1.tip1' },
           { type: 'example', cocktail: 'Cuba Libre' },
           { type: 'note',   key: 'academy.l1.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l1.les0.q1', a: ['academy.l1.les0.q1a1','academy.l1.les0.q1a2','academy.l1.les0.q1a3','academy.l1.les0.q1a4'], exp: 'academy.l1.les0.q1exp' },
+          { q: 'academy.l1.les0.q2', a: ['academy.l1.les0.q2a1','academy.l1.les0.q2a2','academy.l1.les0.q2a3','academy.l1.les0.q2a4'], exp: 'academy.l1.les0.q2exp' },
+          { q: 'academy.l1.les0.q3', a: ['academy.l1.les0.q3a1','academy.l1.les0.q3a2','academy.l1.les0.q3a3','academy.l1.les0.q3a4'], exp: 'academy.l1.les0.q3exp' },
         ]
       },
       {
@@ -84,6 +108,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Moscow Mule' },
           { type: 'tip',    key: 'academy.l1.tip2' },
           { type: 'example', cocktail: 'John Collins' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l1.les1.q1', a: ['academy.l1.les1.q1a1','academy.l1.les1.q1a2','academy.l1.les1.q1a3','academy.l1.les1.q1a4'], exp: 'academy.l1.les1.q1exp' },
+          { q: 'academy.l1.les1.q2', a: ['academy.l1.les1.q2a1','academy.l1.les1.q2a2','academy.l1.les1.q2a3','academy.l1.les1.q2a4'], exp: 'academy.l1.les1.q2exp' },
+          { q: 'academy.l1.les1.q3', a: ['academy.l1.les1.q3a1','academy.l1.les1.q3a2','academy.l1.les1.q3a3','academy.l1.les1.q3a4'], exp: 'academy.l1.les1.q3exp' },
         ]
       },
       {
@@ -93,6 +123,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Paloma' },
           { type: 'note',   key: 'academy.l1.note2' },
           { type: 'example', cocktail: "Dark 'n' Stormy" },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l1.les2.q1', a: ['academy.l1.les2.q1a1','academy.l1.les2.q1a2','academy.l1.les2.q1a3','academy.l1.les2.q1a4'], exp: 'academy.l1.les2.q1exp' },
+          { q: 'academy.l1.les2.q2', a: ['academy.l1.les2.q2a1','academy.l1.les2.q2a2','academy.l1.les2.q2a3','academy.l1.les2.q2a4'], exp: 'academy.l1.les2.q2exp' },
+          { q: 'academy.l1.les2.q3', a: ['academy.l1.les2.q3a1','academy.l1.les2.q3a2','academy.l1.les2.q3a3','academy.l1.les2.q3a4'], exp: 'academy.l1.les2.q3exp' },
         ]
       },
     ],
@@ -128,6 +164,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l2.tip1' },
           { type: 'example', cocktail: 'Whiskey Sour' },
           { type: 'note',   key: 'academy.l2.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l2.les0.q1', a: ['academy.l2.les0.q1a1','academy.l2.les0.q1a2','academy.l2.les0.q1a3','academy.l2.les0.q1a4'], exp: 'academy.l2.les0.q1exp' },
+          { q: 'academy.l2.les0.q2', a: ['academy.l2.les0.q2a1','academy.l2.les0.q2a2','academy.l2.les0.q2a3','academy.l2.les0.q2a4'], exp: 'academy.l2.les0.q2exp' },
+          { q: 'academy.l2.les0.q3', a: ['academy.l2.les0.q3a1','academy.l2.les0.q3a2','academy.l2.les0.q3a3','academy.l2.les0.q3a4'], exp: 'academy.l2.les0.q3exp' },
         ]
       },
       {
@@ -137,6 +179,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Daiquiri' },
           { type: 'tip',    key: 'academy.l2.tip2' },
           { type: 'example', cocktail: 'Margarita' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l2.les1.q1', a: ['academy.l2.les1.q1a1','academy.l2.les1.q1a2','academy.l2.les1.q1a3','academy.l2.les1.q1a4'], exp: 'academy.l2.les1.q1exp' },
+          { q: 'academy.l2.les1.q2', a: ['academy.l2.les1.q2a1','academy.l2.les1.q2a2','academy.l2.les1.q2a3','academy.l2.les1.q2a4'], exp: 'academy.l2.les1.q2exp' },
+          { q: 'academy.l2.les1.q3', a: ['academy.l2.les1.q3a1','academy.l2.les1.q3a2','academy.l2.les1.q3a3','academy.l2.les1.q3a4'], exp: 'academy.l2.les1.q3exp' },
         ]
       },
       {
@@ -146,6 +194,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Pisco Sour' },
           { type: 'note',   key: 'academy.l2.note2' },
           { type: 'example', cocktail: 'Sidecar' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l2.les2.q1', a: ['academy.l2.les2.q1a1','academy.l2.les2.q1a2','academy.l2.les2.q1a3','academy.l2.les2.q1a4'], exp: 'academy.l2.les2.q1exp' },
+          { q: 'academy.l2.les2.q2', a: ['academy.l2.les2.q2a1','academy.l2.les2.q2a2','academy.l2.les2.q2a3','academy.l2.les2.q2a4'], exp: 'academy.l2.les2.q2exp' },
+          { q: 'academy.l2.les2.q3', a: ['academy.l2.les2.q3a1','academy.l2.les2.q3a2','academy.l2.les2.q3a3','academy.l2.les2.q3a4'], exp: 'academy.l2.les2.q3exp' },
         ]
       },
       {
@@ -155,6 +209,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l2.tip3' },
           { type: 'example', cocktail: "Bee's Knees" },
           { type: 'example', cocktail: 'Penicillin' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l2.les3.q1', a: ['academy.l2.les3.q1a1','academy.l2.les3.q1a2','academy.l2.les3.q1a3','academy.l2.les3.q1a4'], exp: 'academy.l2.les3.q1exp' },
+          { q: 'academy.l2.les3.q2', a: ['academy.l2.les3.q2a1','academy.l2.les3.q2a2','academy.l2.les3.q2a3','academy.l2.les3.q2a4'], exp: 'academy.l2.les3.q2exp' },
+          { q: 'academy.l2.les3.q3', a: ['academy.l2.les3.q3a1','academy.l2.les3.q3a2','academy.l2.les3.q3a3','academy.l2.les3.q3a4'], exp: 'academy.l2.les3.q3exp' },
         ]
       },
     ],
@@ -190,6 +250,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l3.tip1' },
           { type: 'example', cocktail: 'Old Fashioned' },
           { type: 'note',   key: 'academy.l3.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l3.les0.q1', a: ['academy.l3.les0.q1a1','academy.l3.les0.q1a2','academy.l3.les0.q1a3','academy.l3.les0.q1a4'], exp: 'academy.l3.les0.q1exp' },
+          { q: 'academy.l3.les0.q2', a: ['academy.l3.les0.q2a1','academy.l3.les0.q2a2','academy.l3.les0.q2a3','academy.l3.les0.q2a4'], exp: 'academy.l3.les0.q2exp' },
+          { q: 'academy.l3.les0.q3', a: ['academy.l3.les0.q3a1','academy.l3.les0.q3a2','academy.l3.les0.q3a3','academy.l3.les0.q3a4'], exp: 'academy.l3.les0.q3exp' },
         ]
       },
       {
@@ -199,6 +265,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Manhattan' },
           { type: 'tip',    key: 'academy.l3.tip2' },
           { type: 'example', cocktail: 'Negroni' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l3.les1.q1', a: ['academy.l3.les1.q1a1','academy.l3.les1.q1a2','academy.l3.les1.q1a3','academy.l3.les1.q1a4'], exp: 'academy.l3.les1.q1exp' },
+          { q: 'academy.l3.les1.q2', a: ['academy.l3.les1.q2a1','academy.l3.les1.q2a2','academy.l3.les1.q2a3','academy.l3.les1.q2a4'], exp: 'academy.l3.les1.q2exp' },
+          { q: 'academy.l3.les1.q3', a: ['academy.l3.les1.q3a1','academy.l3.les1.q3a2','academy.l3.les1.q3a3','academy.l3.les1.q3a4'], exp: 'academy.l3.les1.q3exp' },
         ]
       },
       {
@@ -208,6 +280,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Dry Martini' },
           { type: 'note',   key: 'academy.l3.note2' },
           { type: 'example', cocktail: 'Sazerac' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l3.les2.q1', a: ['academy.l3.les2.q1a1','academy.l3.les2.q1a2','academy.l3.les2.q1a3','academy.l3.les2.q1a4'], exp: 'academy.l3.les2.q1exp' },
+          { q: 'academy.l3.les2.q2', a: ['academy.l3.les2.q2a1','academy.l3.les2.q2a2','academy.l3.les2.q2a3','academy.l3.les2.q2a4'], exp: 'academy.l3.les2.q2exp' },
+          { q: 'academy.l3.les2.q3', a: ['academy.l3.les2.q3a1','academy.l3.les2.q3a2','academy.l3.les2.q3a3','academy.l3.les2.q3a4'], exp: 'academy.l3.les2.q3exp' },
         ]
       },
       {
@@ -217,6 +295,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Boulevardier' },
           { type: 'tip',    key: 'academy.l3.tip3' },
           { type: 'example', cocktail: 'Vieux Carré' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l3.les3.q1', a: ['academy.l3.les3.q1a1','academy.l3.les3.q1a2','academy.l3.les3.q1a3','academy.l3.les3.q1a4'], exp: 'academy.l3.les3.q1exp' },
+          { q: 'academy.l3.les3.q2', a: ['academy.l3.les3.q2a1','academy.l3.les3.q2a2','academy.l3.les3.q2a3','academy.l3.les3.q2a4'], exp: 'academy.l3.les3.q2exp' },
+          { q: 'academy.l3.les3.q3', a: ['academy.l3.les3.q3a1','academy.l3.les3.q3a2','academy.l3.les3.q3a3','academy.l3.les3.q3a4'], exp: 'academy.l3.les3.q3exp' },
         ]
       },
     ],
@@ -252,6 +336,12 @@ export const ACADEMY_LEVELS = [
           { type: 'note',   key: 'academy.l4.note1' },
           { type: 'example', cocktail: 'Mai Tai' },
           { type: 'tip',    key: 'academy.l4.tip1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l4.les0.q1', a: ['academy.l4.les0.q1a1','academy.l4.les0.q1a2','academy.l4.les0.q1a3','academy.l4.les0.q1a4'], exp: 'academy.l4.les0.q1exp' },
+          { q: 'academy.l4.les0.q2', a: ['academy.l4.les0.q2a1','academy.l4.les0.q2a2','academy.l4.les0.q2a3','academy.l4.les0.q2a4'], exp: 'academy.l4.les0.q2exp' },
+          { q: 'academy.l4.les0.q3', a: ['academy.l4.les0.q3a1','academy.l4.les0.q3a2','academy.l4.les0.q3a3','academy.l4.les0.q3a4'], exp: 'academy.l4.les0.q3exp' },
         ]
       },
       {
@@ -261,6 +351,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Zombie' },
           { type: 'tip',    key: 'academy.l4.tip2' },
           { type: 'example', cocktail: 'Piña Colada' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l4.les1.q1', a: ['academy.l4.les1.q1a1','academy.l4.les1.q1a2','academy.l4.les1.q1a3','academy.l4.les1.q1a4'], exp: 'academy.l4.les1.q1exp' },
+          { q: 'academy.l4.les1.q2', a: ['academy.l4.les1.q2a1','academy.l4.les1.q2a2','academy.l4.les1.q2a3','academy.l4.les1.q2a4'], exp: 'academy.l4.les1.q2exp' },
+          { q: 'academy.l4.les1.q3', a: ['academy.l4.les1.q3a1','academy.l4.les1.q3a2','academy.l4.les1.q3a3','academy.l4.les1.q3a4'], exp: 'academy.l4.les1.q3exp' },
         ]
       },
       {
@@ -270,6 +366,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: "Planter's Punch" },
           { type: 'note',   key: 'academy.l4.note2' },
           { type: 'example', cocktail: 'Singapore Sling' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l4.les2.q1', a: ['academy.l4.les2.q1a1','academy.l4.les2.q1a2','academy.l4.les2.q1a3','academy.l4.les2.q1a4'], exp: 'academy.l4.les2.q1exp' },
+          { q: 'academy.l4.les2.q2', a: ['academy.l4.les2.q2a1','academy.l4.les2.q2a2','academy.l4.les2.q2a3','academy.l4.les2.q2a4'], exp: 'academy.l4.les2.q2exp' },
+          { q: 'academy.l4.les2.q3', a: ['academy.l4.les2.q3a1','academy.l4.les2.q3a2','academy.l4.les2.q3a3','academy.l4.les2.q3a4'], exp: 'academy.l4.les2.q3exp' },
         ]
       },
     ],
@@ -305,6 +407,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l5.tip1' },
           { type: 'example', cocktail: 'Ramos Fizz' },
           { type: 'note',   key: 'academy.l5.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l5.les0.q1', a: ['academy.l5.les0.q1a1','academy.l5.les0.q1a2','academy.l5.les0.q1a3','academy.l5.les0.q1a4'], exp: 'academy.l5.les0.q1exp' },
+          { q: 'academy.l5.les0.q2', a: ['academy.l5.les0.q2a1','academy.l5.les0.q2a2','academy.l5.les0.q2a3','academy.l5.les0.q2a4'], exp: 'academy.l5.les0.q2exp' },
+          { q: 'academy.l5.les0.q3', a: ['academy.l5.les0.q3a1','academy.l5.les0.q3a2','academy.l5.les0.q3a3','academy.l5.les0.q3a4'], exp: 'academy.l5.les0.q3exp' },
         ]
       },
       {
@@ -314,6 +422,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Porto Flip' },
           { type: 'tip',    key: 'academy.l5.tip2' },
           { type: 'example', cocktail: 'Clover Club' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l5.les1.q1', a: ['academy.l5.les1.q1a1','academy.l5.les1.q1a2','academy.l5.les1.q1a3','academy.l5.les1.q1a4'], exp: 'academy.l5.les1.q1exp' },
+          { q: 'academy.l5.les1.q2', a: ['academy.l5.les1.q2a1','academy.l5.les1.q2a2','academy.l5.les1.q2a3','academy.l5.les1.q2a4'], exp: 'academy.l5.les1.q2exp' },
+          { q: 'academy.l5.les1.q3', a: ['academy.l5.les1.q3a1','academy.l5.les1.q3a2','academy.l5.les1.q3a3','academy.l5.les1.q3a4'], exp: 'academy.l5.les1.q3exp' },
         ]
       },
       {
@@ -323,6 +437,12 @@ export const ACADEMY_LEVELS = [
           { type: 'example', cocktail: 'Brandy Crusta' },
           { type: 'note',   key: 'academy.l5.note2' },
           { type: 'example', cocktail: 'Last Word' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l5.les2.q1', a: ['academy.l5.les2.q1a1','academy.l5.les2.q1a2','academy.l5.les2.q1a3','academy.l5.les2.q1a4'], exp: 'academy.l5.les2.q1exp' },
+          { q: 'academy.l5.les2.q2', a: ['academy.l5.les2.q2a1','academy.l5.les2.q2a2','academy.l5.les2.q2a3','academy.l5.les2.q2a4'], exp: 'academy.l5.les2.q2exp' },
+          { q: 'academy.l5.les2.q3', a: ['academy.l5.les2.q3a1','academy.l5.les2.q3a2','academy.l5.les2.q3a3','academy.l5.les2.q3a4'], exp: 'academy.l5.les2.q3exp' },
         ]
       },
       {
@@ -332,6 +452,12 @@ export const ACADEMY_LEVELS = [
           { type: 'tip',    key: 'academy.l5.tip3' },
           { type: 'example', cocktail: 'French 75' },
           { type: 'example', cocktail: 'Gin Fizz' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.l5.les3.q1', a: ['academy.l5.les3.q1a1','academy.l5.les3.q1a2','academy.l5.les3.q1a3','academy.l5.les3.q1a4'], exp: 'academy.l5.les3.q1exp' },
+          { q: 'academy.l5.les3.q2', a: ['academy.l5.les3.q2a1','academy.l5.les3.q2a2','academy.l5.les3.q2a3','academy.l5.les3.q2a4'], exp: 'academy.l5.les3.q2exp' },
+          { q: 'academy.l5.les3.q3', a: ['academy.l5.les3.q3a1','academy.l5.les3.q3a2','academy.l5.les3.q3a3','academy.l5.les3.q3a4'], exp: 'academy.l5.les3.q3exp' },
         ]
       },
     ],
