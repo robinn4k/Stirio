@@ -65,10 +65,19 @@
 
         <!-- ═══ TAB 1: APRENDER ═══ -->
         <div class="tab-pane active" id="tab-learn">
+          <!-- Academy Banner (with integrated XP bar) -->
           <div class="tab-section">
-            <!-- My Journey card -->
-            <div class="journey-card" id="btn-go-learn">
-              <div class="journey-header">
+            <div class="academy-banner" id="btn-academy">
+              <div class="academy-banner-top">
+                <div class="academy-banner-icon">🎓</div>
+                <div class="academy-banner-info">
+                  <div class="academy-banner-title" data-i18n="dashboard.academy">Cocktail Academy</div>
+                  <div class="academy-banner-sub" data-i18n="dashboard.academy_desc">Aprende paso a paso</div>
+                </div>
+                <div class="academy-banner-progress" id="academy-banner-progress">0/6</div>
+                <span class="academy-banner-arrow">→</span>
+              </div>
+              <div class="academy-xp-row">
                 <div class="journey-level" id="journey-level-badge">Nv. 1</div>
                 <div class="journey-xp-info">
                   <div class="journey-xp-bar"><div class="journey-xp-fill" id="journey-xp-fill"></div></div>
@@ -76,23 +85,10 @@
                 </div>
                 <div class="journey-streak" id="journey-streak">🔥 0</div>
               </div>
-              <div class="journey-cta">
-                <span data-i18n="dashboard.continue_learning">Continuar aprendiendo</span>
-                <span class="journey-arrow">→</span>
-              </div>
             </div>
-          </div>
-
-          <!-- Academy Banner -->
-          <div class="tab-section">
-            <div class="academy-banner" id="btn-academy">
-              <div class="academy-banner-icon">🎓</div>
-              <div class="academy-banner-info">
-                <div class="academy-banner-title" data-i18n="dashboard.academy">Cocktail Academy</div>
-                <div class="academy-banner-sub" data-i18n="dashboard.academy_desc">Aprende paso a paso</div>
-              </div>
-              <div class="academy-banner-progress" id="academy-banner-progress">0/6</div>
-              <span class="academy-banner-arrow">→</span>
+            <div class="journey-cta-card" id="btn-go-learn">
+              <span data-i18n="dashboard.continue_learning">Continuar aprendiendo</span>
+              <span class="journey-arrow">→</span>
             </div>
           </div>
 
