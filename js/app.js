@@ -8,7 +8,7 @@ import { getAchievements, checkAchievements, updateStats, getStats } from './ach
 import { fichas } from './fichas.js';
 import { startConstructor, answerConstructor, abortConstructor } from './constructor.js';
 import { startBlind, answerBlind, revealNextClue, abortBlind } from './blind.js';
-import { getLang, setLang, t, translateHTML } from './lang.js';
+import { getLang, setLang, t, translateHTML, preloadAllTranslations } from './lang.js';
 import { loadAchievementsFromCloud } from './achievements.js';
 import { loadLearnFromCloud } from './learn.js';
 import { showShareModal, closeShareModal } from './share.js';
@@ -134,6 +134,7 @@ async function init() {
   setLoading(true);
   applyTheme(localStorage.getItem('cq_theme') || 'classic');
   document.documentElement.lang = getLang();
+  await preloadAllTranslations();
   translateHTML();
   updateLangToggle();
   await initFirebase();
@@ -831,11 +832,16 @@ function handleBlindContinue() {
 
 // ─── FICHAS ───────────────────────────────────────────────────
 let fichasOpened = 0;
+let fichasActiveFilters = { category: 'all', glass: 'all', method: 'all' };
+let fichasSearchQuery = '';
 
 function goToFichas() {
   showView('view-fichas');
   translateHTML();
-  renderFichasGrid(fichas);
+  buildFichaFilterChips();
+  applyFichaFilters();
+  const countEl = $('fichas-total-count');
+  if (countEl) countEl.textContent = fichas.length;
 }
 
 function renderFichasGrid(list) {
@@ -849,6 +855,72 @@ function renderFichasGrid(list) {
     card.addEventListener('click', () => openFichaDetail(f));
     grid.appendChild(card);
   });
+}
+
+function buildChipRow(containerId, items, filterKey) {
+  const container = $(containerId);
+  container.innerHTML = '';
+  const allBtn = document.createElement('button');
+  allBtn.className = 'filter-btn' + (fichasActiveFilters[filterKey] === 'all' ? ' active' : '');
+  allBtn.textContent = t('fichas.filter_all');
+  allBtn.dataset.value = 'all';
+  allBtn.addEventListener('click', () => {
+    fichasActiveFilters[filterKey] = 'all';
+    updateChipActive(container, 'all');
+    applyFichaFilters();
+  });
+  container.appendChild(allBtn);
+
+  const seen = new Map();
+  fichas.forEach(f => {
+    const raw = f['_raw' + filterKey.charAt(0).toUpperCase() + filterKey.slice(1)];
+    if (raw && !seen.has(raw)) seen.set(raw, f[filterKey]);
+  });
+  seen.forEach((localized, raw) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (fichasActiveFilters[filterKey] === raw ? ' active' : '');
+    btn.textContent = t(localized);
+    btn.dataset.value = raw;
+    btn.addEventListener('click', () => {
+      fichasActiveFilters[filterKey] = raw;
+      updateChipActive(container, raw);
+      applyFichaFilters();
+    });
+    container.appendChild(btn);
+  });
+}
+
+function updateChipActive(container, value) {
+  container.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.value === value);
+  });
+}
+
+function buildFichaFilterChips() {
+  buildChipRow('fichas-cat-chips', null, 'category');
+  buildChipRow('fichas-glass-chips', null, 'glass');
+  buildChipRow('fichas-method-chips', null, 'method');
+}
+
+function applyFichaFilters() {
+  let filtered = fichas;
+  if (fichasSearchQuery) {
+    const q = fichasSearchQuery;
+    filtered = filtered.filter(f =>
+      t(f.name).toLowerCase().includes(q) ||
+      t(f.category).toLowerCase().includes(q) ||
+      f.ingredients.some(ing => t(ing).toLowerCase().includes(q))
+    );
+  }
+  if (fichasActiveFilters.category !== 'all')
+    filtered = filtered.filter(f => f._rawCategory === fichasActiveFilters.category);
+  if (fichasActiveFilters.glass !== 'all')
+    filtered = filtered.filter(f => f._rawGlass === fichasActiveFilters.glass);
+  if (fichasActiveFilters.method !== 'all')
+    filtered = filtered.filter(f => f._rawMethod === fichasActiveFilters.method);
+
+  renderFichasGrid(filtered);
+  $('fichas-count').textContent = `${filtered.length} / ${fichas.length}`;
 }
 
 function openFichaDetail(f) {
@@ -1291,8 +1363,14 @@ function bindEvents() {
   $('btn-back-fichas').addEventListener('click', () => goToDashboard());
   $('btn-back-ficha-detail').addEventListener('click', () => goToFichas());
   $('fichas-search').addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase();
-    renderFichasGrid(fichas.filter(f => t(f.name).toLowerCase().includes(q) || t(f.category).toLowerCase().includes(q)));
+    fichasSearchQuery = e.target.value.toLowerCase();
+    applyFichaFilters();
+  });
+  $('fichas-toggle-filters').addEventListener('click', () => {
+    const extra = $('fichas-extra-filters');
+    extra.classList.toggle('hidden');
+    $('fichas-toggle-filters').textContent = extra.classList.contains('hidden')
+      ? t('fichas.more_filters') : t('fichas.less_filters');
   });
 
   // Achievements

@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, beforeAll } from 'vitest';
 
 // Mock localStorage and document.documentElement for Node environment
 const localStorageMock = (() => {
@@ -20,8 +20,12 @@ if (typeof document === 'undefined') {
   };
 }
 
-// Import the i18n module
-const { t, getLang, setLang, getSupportedLangs, translateHTML } = await import('../js/lang.js');
+// Import the i18n module and preload translations (fetch is mocked in tests/setup.js)
+const { t, getLang, setLang, getSupportedLangs, translateHTML, preloadAllTranslations } = await import('../js/lang.js');
+
+beforeAll(async () => {
+  await preloadAllTranslations();
+});
 
 describe('i18n — lang.js', () => {
   beforeEach(() => {

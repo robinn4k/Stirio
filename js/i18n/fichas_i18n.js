@@ -1484,6 +1484,9 @@ const STORIES = {
 export function localizeFicha(f) {
   return {
     ...f,
+    _rawCategory: f.category,
+    _rawGlass: f.glass,
+    _rawMethod: f.method,
     category: CATEGORIES[f.category] ?? f.category,
     glass: GLASSES[f.glass] ?? f.glass,
     method: METHODS[f.method] ?? f.method,

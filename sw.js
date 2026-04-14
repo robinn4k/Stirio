@@ -32,6 +32,10 @@ const CACHE_PATHS = [
   'js/blind.js',
   'js/bot.js',
   'js/fichas.js',
+  'js/fichas/index.js',
+  'js/fichas/iba_unforgettables.js',
+  'js/fichas/iba_contemporary.js',
+  'js/fichas/iba_new_era.js',
   'js/cookies.js',
   'js/constructor.js',
   'js/firebase-config.js',
@@ -49,13 +53,19 @@ const CACHE_PATHS = [
   'js/i18n/questions_de.js',
   'js/i18n/questions_fr.js',
   'js/i18n/questions_pt.js',
-  'js/i18n/fichas_i18n.js'
+  'js/i18n/fichas_i18n.js',
+  // Per-language translation files
+  'i18n/es.json',
+  'i18n/en.json',
+  'i18n/fr.json',
+  'i18n/pt.json',
+  'i18n/de.json'
 ];
 
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v3.4`;
+const STATIC_CACHE_VERSION = `Stirio-v3.6`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
