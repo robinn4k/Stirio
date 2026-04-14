@@ -61,6 +61,17 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'practice', roundId: 3 },
+      { type: 'practice', roundId: 4 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 8 },
+      { type: 'practice', roundId: 9 },
+      { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 13 },
+      { type: 'practice', roundId: 14 },
+    ],
     questions: [
       { q: 'academy.l0.q1',  a: ['academy.l0.q1a1','academy.l0.q1a2','academy.l0.q1a3','academy.l0.q1a4'], exp: 'academy.l0.q1exp' },
       { q: 'academy.l0.q2',  a: ['academy.l0.q2a1','academy.l0.q2a2','academy.l0.q2a3','academy.l0.q2a4'], exp: 'academy.l0.q2exp' },
@@ -131,6 +142,13 @@ export const ACADEMY_LEVELS = [
           { q: 'academy.l1.les2.q3', a: ['academy.l1.les2.q3a1','academy.l1.les2.q3a2','academy.l1.les2.q3a3','academy.l1.les2.q3a4'], exp: 'academy.l1.les2.q3exp' },
         ]
       },
+    ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'practice', roundId: 1 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 6 },
+      { type: 'lesson', index: 2 },
     ],
     questions: [
       { q: 'academy.l1.q1',  a: ['academy.l1.q1a1','academy.l1.q1a2','academy.l1.q1a3','academy.l1.q1a4'], exp: 'academy.l1.q1exp' },
@@ -218,6 +236,16 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'practice', roundId: 1 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 11 },
+      { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 16 },
+      { type: 'practice', roundId: 17 },
+      { type: 'lesson', index: 3 },
+    ],
     questions: [
       { q: 'academy.l2.q1',  a: ['academy.l2.q1a1','academy.l2.q1a2','academy.l2.q1a3','academy.l2.q1a4'], exp: 'academy.l2.q1exp' },
       { q: 'academy.l2.q2',  a: ['academy.l2.q2a1','academy.l2.q2a2','academy.l2.q2a3','academy.l2.q2a4'], exp: 'academy.l2.q2exp' },
@@ -304,6 +332,15 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'practice', roundId: 2 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 7 },
+      { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 12 },
+      { type: 'lesson', index: 3 },
+    ],
     questions: [
       { q: 'academy.l3.q1',  a: ['academy.l3.q1a1','academy.l3.q1a2','academy.l3.q1a3','academy.l3.q1a4'], exp: 'academy.l3.q1exp' },
       { q: 'academy.l3.q2',  a: ['academy.l3.q2a1','academy.l3.q2a2','academy.l3.q2a3','academy.l3.q2a4'], exp: 'academy.l3.q2exp' },
@@ -374,6 +411,15 @@ export const ACADEMY_LEVELS = [
           { q: 'academy.l4.les2.q3', a: ['academy.l4.les2.q3a1','academy.l4.les2.q3a2','academy.l4.les2.q3a3','academy.l4.les2.q3a4'], exp: 'academy.l4.les2.q3exp' },
         ]
       },
+    ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'practice', roundId: 18 },
+      { type: 'practice', roundId: 19 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 20 },
+      { type: 'practice', roundId: 21 },
+      { type: 'lesson', index: 2 },
     ],
     questions: [
       { q: 'academy.l4.q1',  a: ['academy.l4.q1a1','academy.l4.q1a2','academy.l4.q1a3','academy.l4.q1a4'], exp: 'academy.l4.q1exp' },
@@ -460,6 +506,18 @@ export const ACADEMY_LEVELS = [
           { q: 'academy.l5.les3.q3', a: ['academy.l5.les3.q3a1','academy.l5.les3.q3a2','academy.l5.les3.q3a3','academy.l5.les3.q3a4'], exp: 'academy.l5.les3.q3exp' },
         ]
       },
+    ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'practice', roundId: 5 },
+      { type: 'practice', roundId: 10 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 15 },
+      { type: 'practice', roundId: 22 },
+      { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 23 },
+      { type: 'practice', roundId: 24 },
+      { type: 'lesson', index: 3 },
     ],
     questions: [
       { q: 'academy.l5.q1',  a: ['academy.l5.q1a1','academy.l5.q1a2','academy.l5.q1a3','academy.l5.q1a4'], exp: 'academy.l5.q1exp' },

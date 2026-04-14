@@ -11,7 +11,7 @@ import { startBlind, answerBlind, revealNextClue, abortBlind } from './blind.js'
 import { getLang, setLang, t, translateHTML, preloadAllTranslations } from './lang.js';
 import { loadAchievementsFromCloud } from './achievements.js';
 import { loadLearnFromCloud } from './learn.js';
-import { startAcademy, startAcademyLesson, advanceAcademyCard, answerAcademy, advanceAcademy, abortAcademy, getAcademyStats, getAcademyLevels, isLevelUnlocked, isLessonUnlocked, loadAcademyFromCloud } from './academy.js';
+import { startAcademy, startAcademyLesson, advanceAcademyCard, answerAcademy, advanceAcademy, abortAcademy, getAcademyStats, getAcademyLevels, isLevelUnlocked, isLessonUnlocked, isSequenceItemUnlocked, markPracticeCompleted, loadAcademyFromCloud } from './academy.js';
 import { ACADEMY_LEVELS } from './academy_data.js';
 import { showShareModal, closeShareModal } from './share.js';
 import {
@@ -224,21 +224,6 @@ const COURSES = [
   { id: 'history',   icon: '📜', key: 'course.history',    rounds: [5, 10, 15] },
 ];
 
-// Maps each academy level to thematically related learn round IDs
-const ACADEMY_PRACTICE_MAP = {
-  0: [3, 4, 8, 9, 13, 14],       // Foundations → Techniques + Tools
-  1: [1, 6],                       // Highballs & Collins → Cocktails basics
-  2: [1, 11, 16, 17],             // Sours & Daisies → Cocktail families
-  3: [2, 7, 12],                   // Spirit-Forward → Spirits
-  4: [18, 19, 20, 21],            // Tropical & Tiki → Cocktail advanced
-  5: [5, 10, 15, 22, 23, 24],    // Advanced → History/Wines + remaining
-};
-
-function getPracticeRoundsForLevel(levelId) {
-  const roundIds = ACADEMY_PRACTICE_MAP[levelId] || [];
-  const allRounds = getLearnRounds();
-  return allRounds.filter(r => roundIds.includes(r.id));
-}
 
 let lessonEntryPoint = 'learn'; // 'academy' | 'learn'
 
@@ -1244,6 +1229,11 @@ function showLessonResult({ xp, correct, total, round, masteryGains, masteryLeve
   });
   showNewAchievements(newly);
 
+  // Mark practice round completed in Academy data if launched from Academy
+  if (lessonEntryPoint === 'academy' && currentPracticeRoundId != null) {
+    markPracticeCompleted(currentAcademyLevelId, currentPracticeRoundId);
+  }
+
   showView('view-lesson-result');
   translateHTML();
 }
@@ -1251,6 +1241,7 @@ function showLessonResult({ xp, correct, total, round, masteryGains, masteryLeve
 // ─── ACADEMY ─────────────────────────────────────────────────
 let currentAcademyLevelId = null;
 let currentAcademyLessonIndex = null;
+let currentPracticeRoundId = null;
 let lastAcademyResult = null;
 
 function renderAcademyBanner() {
@@ -1272,6 +1263,7 @@ function renderAcademyBanner() {
 
 function goToAcademyHub() {
   const levels = getAcademyLevels();
+  const learnRounds = getLearnRounds();
   const container = $('academy-levels');
   container.innerHTML = '';
 
@@ -1311,98 +1303,92 @@ function goToAcademyHub() {
     `;
     container.appendChild(card);
 
-    // Lesson sub-cards for unlocked levels
-    if (level.unlocked) {
+    // Unified sequence sub-cards (lessons + practice interleaved)
+    if (level.unlocked && level.sequence) {
       const lessonList = document.createElement('div');
       lessonList.className = 'academy-lesson-list';
       lessonList.style.setProperty('--level-color', level.color);
 
-      level.lessons.forEach((lesson, li) => {
+      level.sequence.forEach((seqItem) => {
         const lCard = document.createElement('div');
-        const lState = lesson.completed ? 'completed' : lesson.unlocked ? '' : 'locked';
+        let name, completed, unlocked, scoreHtml = '';
+
+        if (seqItem.type === 'lesson') {
+          const lesson = level.lessons[seqItem.index];
+          name = t(lesson.key);
+          completed = seqItem.completed;
+          unlocked = seqItem.unlocked;
+          if (completed) {
+            scoreHtml = `<span class="academy-lesson-score">${t('academy.best_score', { n: seqItem.bestScore })}</span>`;
+          }
+        } else {
+          const round = learnRounds.find(r => r.id === seqItem.roundId);
+          name = round ? t(round.title) : `Round ${seqItem.roundId}`;
+          completed = seqItem.completed;
+          unlocked = seqItem.unlocked;
+          if (completed) {
+            scoreHtml = `<span class="academy-lesson-score">✓</span>`;
+          }
+        }
+
+        const lState = completed ? 'completed' : unlocked ? '' : 'locked';
         lCard.className = `academy-lesson-card ${lState}`;
 
         let statusIcon = '▶';
-        if (lesson.completed) statusIcon = '';
-        else if (!lesson.unlocked) statusIcon = '🔒';
-
-        let scoreHtml = '';
-        if (lesson.completed) {
-          scoreHtml = `<span class="academy-lesson-score">${t('academy.best_score', { n: lesson.bestScore })}</span>`;
-        }
+        if (completed) statusIcon = '';
+        else if (!unlocked) statusIcon = '🔒';
 
         lCard.innerHTML = `
           <span class="academy-lesson-status">${statusIcon}</span>
-          <span class="academy-lesson-name">${t(lesson.key)}</span>
+          <span class="academy-lesson-name">${name}</span>
           ${scoreHtml}
         `;
 
-        if (lesson.unlocked) {
-          lCard.addEventListener('click', () => beginAcademyLesson(level.id, li));
+        if (unlocked) {
+          if (seqItem.type === 'lesson') {
+            lCard.addEventListener('click', () => beginAcademyLesson(level.id, seqItem.index));
+          } else {
+            lCard.addEventListener('click', () => {
+              lessonEntryPoint = 'academy';
+              currentAcademyLevelId = level.id;
+              currentPracticeRoundId = seqItem.roundId;
+              beginLesson(seqItem.roundId);
+            });
+          }
         }
         lessonList.appendChild(lCard);
       });
 
       container.appendChild(lessonList);
     }
-
-    // Practice section (collapsible) for unlocked levels
-    const practiceRounds = getPracticeRoundsForLevel(level.id);
-    if (level.unlocked && practiceRounds.length > 0) {
-      const practiceSection = document.createElement('div');
-      practiceSection.className = 'academy-practice-section';
-
-      const toggleBtn = document.createElement('button');
-      toggleBtn.className = 'academy-practice-toggle';
-      toggleBtn.innerHTML = `<span class="academy-practice-toggle-icon">▶</span> ${t('academy.practice_toggle', { n: practiceRounds.length })}`;
-      toggleBtn.addEventListener('click', () => {
-        practiceSection.classList.toggle('expanded');
-        toggleBtn.querySelector('.academy-practice-toggle-icon').textContent =
-          practiceSection.classList.contains('expanded') ? '▼' : '▶';
-      });
-      container.appendChild(toggleBtn);
-
-      const practiceList = document.createElement('div');
-      practiceList.className = 'academy-practice-list';
-      practiceRounds.forEach(r => {
-        const { sessionCount, masteryLevel, masteryScore } = r.progress;
-        const masteryInfo = MASTERY_LEVELS[masteryLevel] || MASTERY_LEVELS[0];
-        const masteryPct = Math.round(masteryScore * 100);
-        const pips = [0, 1, 2].map(pi =>
-          `<span class="mastery-pip${pi < masteryLevel ? ' filled' : ''}"></span>`
-        ).join('');
-
-        const rCard = document.createElement('div');
-        rCard.className = 'academy-practice-round';
-        rCard.style.setProperty('--round-color', r.color);
-        rCard.innerHTML = `
-          <div class="lesson-card-icon">${r.icon}</div>
-          <div class="lesson-card-info">
-            <div class="lesson-card-title">${t(r.title)}</div>
-            <div class="lesson-card-progress">
-              <div class="lesson-card-bar"><div class="lesson-card-bar-fill" style="width:${masteryPct}%"></div></div>
-            </div>
-            <div class="lesson-card-mastery">
-              <span class="mastery-pips">${pips}</span>
-              <span class="mastery-label-text">${masteryInfo.icon} ${t('learn.mastery_' + (masteryInfo.key || 'novato'))}</span>
-            </div>
-          </div>
-        `;
-        rCard.addEventListener('click', (e) => {
-          e.stopPropagation();
-          lessonEntryPoint = 'academy';
-          beginLesson(r.id);
-        });
-        practiceList.appendChild(rCard);
-      });
-
-      practiceSection.appendChild(practiceList);
-      container.appendChild(practiceSection);
-    }
   });
 
   showView('view-academy-hub');
   translateHTML();
+}
+
+/** Navigate to the next item in the Academy sequence after a practice round */
+function _navigateToNextAcademySeqItem() {
+  const level = ACADEMY_LEVELS.find(l => l.id === currentAcademyLevelId);
+  if (!level || !level.sequence) { goToAcademyHub(); return; }
+
+  const currentIdx = level.sequence.findIndex(
+    s => s.type === 'practice' && s.roundId === currentPracticeRoundId
+  );
+  const nextIdx = currentIdx >= 0 ? currentIdx + 1 : -1;
+
+  if (nextIdx >= 0 && nextIdx < level.sequence.length) {
+    const next = level.sequence[nextIdx];
+    if (next.type === 'lesson') {
+      beginAcademyLesson(currentAcademyLevelId, next.index);
+    } else {
+      lessonEntryPoint = 'academy';
+      currentPracticeRoundId = next.roundId;
+      beginLesson(next.roundId);
+    }
+  } else {
+    goToAcademyHub();
+  }
 }
 
 function beginAcademyLesson(levelId, lessonIndex) {
@@ -1564,13 +1550,13 @@ function showAcademyResult(result) {
     unlockEl.classList.add('hidden');
   }
 
-  // Next button: show when there's a next lesson or next level
+  // Next button: show when there's a next sequence item or next level
   const nextBtn = $('btn-ar-next');
-  const hasNext = result.unlockNextLesson || result.unlockNextLevel ||
-    (result.passed && result.nextLessonIndex !== null) ||
+  const hasNext = (result.passed && result.nextSeqItem && !result.levelCompleted) ||
+    result.unlockNextLevel ||
     (result.passed && result.levelCompleted && result.levelId < ACADEMY_LEVELS.length - 1);
   if (hasNext) {
-    nextBtn.textContent = (result.nextLessonIndex !== null && !result.levelCompleted)
+    nextBtn.textContent = (result.nextSeqItem && !result.levelCompleted)
       ? t('academy.next_lesson')
       : t('academy.next_level');
     nextBtn.classList.remove('hidden');
@@ -1770,12 +1756,16 @@ function bindEvents() {
   $('btn-lesson-continue').addEventListener('click', () => handleLessonContinue());
   $('btn-lr-retry').addEventListener('click', () => beginLesson(currentLessonRoundId));
   $('btn-lr-continue').addEventListener('click', () => {
-    const rounds = getLearnRounds();
-    const idx = rounds.findIndex(r => r.id === currentLessonRoundId);
-    const next = rounds[idx + 1];
-    if (next) beginLesson(next.id);
-    else if (lessonEntryPoint === 'academy') goToAcademyHub();
-    else goToLearnHub();
+    if (lessonEntryPoint === 'academy') {
+      // From Academy: go to next sequence item or back to hub
+      _navigateToNextAcademySeqItem();
+    } else {
+      const rounds = getLearnRounds();
+      const idx = rounds.findIndex(r => r.id === currentLessonRoundId);
+      const next = rounds[idx + 1];
+      if (next) beginLesson(next.id);
+      else goToLearnHub();
+    }
   });
   $('btn-lr-home').addEventListener('click', () => {
     if (lessonEntryPoint === 'academy') goToAcademyHub();
@@ -1793,15 +1783,34 @@ function bindEvents() {
   $('btn-ar-retry').addEventListener('click', () => beginAcademyLesson(currentAcademyLevelId, currentAcademyLessonIndex));
   $('btn-ar-next').addEventListener('click', () => {
     const r = lastAcademyResult;
-    if (r && r.nextLessonIndex !== null && !r.levelCompleted) {
-      beginAcademyLesson(currentAcademyLevelId, r.nextLessonIndex);
-    } else {
-      const nextId = currentAcademyLevelId + 1;
-      if (nextId < ACADEMY_LEVELS.length && isLevelUnlocked(nextId)) {
-        beginAcademyLesson(nextId, 0);
+    if (!r) { goToAcademyHub(); return; }
+
+    // Use sequence-aware navigation: find next item in sequence
+    if (r.nextSeqItem && !r.levelCompleted) {
+      if (r.nextSeqItem.type === 'lesson') {
+        beginAcademyLesson(r.levelId, r.nextSeqItem.index);
+      } else {
+        lessonEntryPoint = 'academy';
+        currentAcademyLevelId = r.levelId;
+        currentPracticeRoundId = r.nextSeqItem.roundId;
+        beginLesson(r.nextSeqItem.roundId);
+      }
+    } else if (r.unlockNextLevel) {
+      const nextLevel = ACADEMY_LEVELS.find(l => l.id === r.levelId + 1);
+      if (nextLevel && nextLevel.sequence && nextLevel.sequence.length > 0) {
+        const first = nextLevel.sequence[0];
+        if (first.type === 'lesson') beginAcademyLesson(nextLevel.id, first.index);
+        else {
+          lessonEntryPoint = 'academy';
+          currentAcademyLevelId = nextLevel.id;
+          currentPracticeRoundId = first.roundId;
+          beginLesson(first.roundId);
+        }
       } else {
         goToAcademyHub();
       }
+    } else {
+      goToAcademyHub();
     }
   });
   $('btn-ar-home').addEventListener('click', () => goToAcademyHub());
