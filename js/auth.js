@@ -182,7 +182,7 @@ async function deleteUserData() {
   } catch (e) { console.warn('delete rtdb presence:', e); }
 
   // Clear all local storage keys
-  ['cq_learn_data', 'cq_user_stats', 'cq_achievements', 'cq_daily', 'cq_leaderboard'].forEach(k => localStorage.removeItem(k));
+  ['cq_learn_data', 'cq_user_stats', 'cq_achievements', 'cq_daily', 'cq_leaderboard', 'cq_academy_data'].forEach(k => localStorage.removeItem(k));
 }
 
 // ─── Borrar cuenta completa ──────────────────────────────────
