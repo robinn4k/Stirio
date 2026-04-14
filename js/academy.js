@@ -11,16 +11,52 @@ import { t } from './lang.js';
 // ─── Storage ─────────────────────────────────────────────────
 const KEY = 'cq_academy_data';
 const KEY_LEARN = 'cq_learn_data';
+const DATA_VERSION = 2;
 
 function getData() {
-  try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
-  catch { return {}; }
+  try {
+    let d = JSON.parse(localStorage.getItem(KEY)) || {};
+    if ((d._version || 0) < DATA_VERSION) {
+      d = _migrateData(d);
+      localStorage.setItem(KEY, JSON.stringify(d));
+    }
+    return d;
+  } catch { return { _version: DATA_VERSION }; }
 }
 
 function setData(data) {
+  data._version = DATA_VERSION;
   localStorage.setItem(KEY, JSON.stringify(data));
   syncAcademyToCloud(data);
 }
+
+// ─── Migration ───────────────────────────────────────────────
+
+function _migrateData(data) {
+  if (data.levels) {
+    for (const [id, levelData] of Object.entries(data.levels)) {
+      if (levelData.completed && !levelData.lessons) {
+        const level = ACADEMY_LEVELS.find(l => l.id === parseInt(id));
+        if (level) {
+          levelData.lessons = {};
+          level.lessons.forEach((_, li) => {
+            levelData.lessons[li] = {
+              completed: true,
+              bestScore: levelData.bestScore || 0,
+              attempts: 1,
+            };
+          });
+        }
+      } else if (!levelData.lessons) {
+        levelData.lessons = {};
+      }
+    }
+  }
+  data._version = DATA_VERSION;
+  return data;
+}
+
+// ─── Cloud Sync ──────────────────────────────────────────────
 
 async function syncAcademyToCloud(data) {
   const user = getCurrentUser();
@@ -40,10 +76,10 @@ export async function loadAcademyFromCloud() {
     const { doc, getDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
     const snap = await getDoc(doc(db, 'users', user.uid));
     if (snap.exists() && snap.data().academyData) {
-      const cloud = snap.data().academyData;
+      let cloud = snap.data().academyData;
+      if ((cloud._version || 0) < DATA_VERSION) cloud = _migrateData(cloud);
       const local = getData();
-      // Merge: keep best scores and max XP
-      const merged = { ...local };
+      const merged = { ...local, _version: DATA_VERSION };
       merged.xp = Math.max(local.xp || 0, cloud.xp || 0);
       merged.totalCompleted = Math.max(local.totalCompleted || 0, cloud.totalCompleted || 0);
       if (cloud.levels) {
@@ -54,6 +90,7 @@ export async function loadAcademyFromCloud() {
             completed: ll.completed || cl.completed,
             bestScore: Math.max(ll.bestScore || 0, cl.bestScore || 0),
             attempts: Math.max(ll.attempts || 0, cl.attempts || 0),
+            lessons: _mergeLessons(ll.lessons, cl.lessons),
           };
         }
       }
@@ -63,12 +100,34 @@ export async function loadAcademyFromCloud() {
   } catch (e) { console.warn('academy cloud load failed:', e); }
 }
 
+function _mergeLessons(localLessons, cloudLessons) {
+  const l = localLessons || {};
+  const c = cloudLessons || {};
+  const merged = { ...l };
+  for (const [li, cl] of Object.entries(c)) {
+    const ll = merged[li] || {};
+    merged[li] = {
+      completed: ll.completed || cl.completed,
+      bestScore: Math.max(ll.bestScore || 0, cl.bestScore || 0),
+      attempts: Math.max(ll.attempts || 0, cl.attempts || 0),
+    };
+  }
+  return merged;
+}
+
 // ─── Public Getters ──────────────────────────────────────────
 
 export function isLevelUnlocked(levelId) {
   if (levelId === 0) return true;
   const data = getData();
   return data.levels?.[levelId - 1]?.completed === true;
+}
+
+export function isLessonUnlocked(levelId, lessonIndex) {
+  if (!isLevelUnlocked(levelId)) return false;
+  if (lessonIndex === 0) return true;
+  const data = getData();
+  return data.levels?.[levelId]?.lessons?.[lessonIndex - 1]?.completed === true;
 }
 
 export function getAcademyStats() {
@@ -86,12 +145,33 @@ export function getAcademyLevels() {
   const d = getData();
   return ACADEMY_LEVELS.map(level => {
     const progress = d.levels?.[level.id] || {};
+    const lessonProgress = level.lessons.map((lesson, li) => {
+      const lp = progress.lessons?.[li] || {};
+      return {
+        ...lesson,
+        index: li,
+        unlocked: isLessonUnlocked(level.id, li),
+        completed: !!lp.completed,
+        bestScore: lp.bestScore || 0,
+        attempts: lp.attempts || 0,
+      };
+    });
+    const lessonsCompleted = lessonProgress.filter(l => l.completed).length;
     return {
-      ...level,
+      id: level.id,
+      key: level.key,
+      descKey: level.descKey,
+      icon: level.icon,
+      color: level.color,
+      passThreshold: level.passThreshold,
       unlocked: isLevelUnlocked(level.id),
       completed: !!progress.completed,
       bestScore: progress.bestScore || 0,
       attempts: progress.attempts || 0,
+      lessons: lessonProgress,
+      lessonsCompleted,
+      lessonsTotal: level.lessons.length,
+      questions: level.questions,
     };
   });
 }
@@ -100,20 +180,17 @@ export function getAcademyLevels() {
 
 let as = null;
 
-export function startAcademy(levelId) {
+export function startAcademyLesson(levelId, lessonIndex) {
   const level = ACADEMY_LEVELS.find(l => l.id === levelId);
-  if (!level || !isLevelUnlocked(levelId)) return null;
+  if (!level || !isLessonUnlocked(levelId, lessonIndex)) return null;
+  const lesson = level.lessons[lessonIndex];
+  if (!lesson) return null;
 
-  // Flatten all cards from all lessons
-  const cards = [];
-  level.lessons.forEach((lesson, li) => {
-    lesson.cards.forEach(card => {
-      cards.push({ ...card, lessonKey: lesson.key, lessonIndex: li });
-    });
-  });
+  const cards = lesson.cards.map(card => ({
+    ...card, lessonKey: lesson.key, lessonIndex,
+  }));
 
-  // Prepare assessment questions with shuffled answers
-  const questions = level.questions.map(q => {
+  const questions = lesson.questions.map(q => {
     const correct = q.a[0];
     const shuffled = [...q.a].sort(() => Math.random() - 0.5);
     return {
@@ -126,7 +203,9 @@ export function startAcademy(levelId) {
 
   as = {
     levelId,
+    lessonIndex,
     level,
+    lesson,
     phase: 'cards',
     cards,
     cardIndex: 0,
@@ -140,12 +219,16 @@ export function startAcademy(levelId) {
   return _cardPayload();
 }
 
+// Backward compat: start first lesson of level
+export function startAcademy(levelId) {
+  return startAcademyLesson(levelId, 0);
+}
+
 export function advanceAcademyCard() {
   if (!as || as.phase !== 'cards') return null;
 
   as.cardIndex++;
   if (as.cardIndex >= as.cards.length) {
-    // Transition to assessment phase
     as.phase = 'question';
     as.answered = false;
     return _questionPayload();
@@ -183,7 +266,7 @@ export function advanceAcademy() {
   as.answered = false;
 
   if (as.questionIndex >= as.questions.length) {
-    return _finishLevel();
+    return _finishLesson();
   }
 
   as.phase = 'question';
@@ -219,34 +302,63 @@ function _questionPayload() {
   };
 }
 
-function _finishLevel() {
-  const { levelId, level, correctCount, questions, xp } = as;
+function _finishLesson() {
+  const { levelId, lessonIndex, level, lesson, correctCount, questions, xp } = as;
   const total = questions.length;
   const pct = Math.round((correctCount / total) * 100);
-  const passed = pct >= level.passThreshold;
+  const threshold = lesson.passThreshold || level.passThreshold;
+  const passed = pct >= threshold;
 
-  // Persist level result
+  // Persist lesson result
   const d = getData();
-  const prev = d.levels?.[levelId] || {};
-  const attempts = (prev.attempts || 0) + 1;
-  const bestScore = Math.max(prev.bestScore || 0, pct);
-  const completed = prev.completed || passed;
-
   d.levels = d.levels || {};
-  d.levels[levelId] = { completed, bestScore, attempts };
-  d.xp = (d.xp || 0) + xp;
-  if (passed && !prev.completed) {
+  d.levels[levelId] = d.levels[levelId] || {};
+  d.levels[levelId].lessons = d.levels[levelId].lessons || {};
+
+  const prevLesson = d.levels[levelId].lessons[lessonIndex] || {};
+  const lessonAttempts = (prevLesson.attempts || 0) + 1;
+  const lessonBestScore = Math.max(prevLesson.bestScore || 0, pct);
+  const lessonCompleted = prevLesson.completed || passed;
+
+  d.levels[levelId].lessons[lessonIndex] = {
+    completed: lessonCompleted,
+    bestScore: lessonBestScore,
+    attempts: lessonAttempts,
+  };
+
+  // Check if all lessons in level are now completed
+  const allLessonsCompleted = level.lessons.every((_, li) =>
+    d.levels[levelId].lessons[li]?.completed === true
+  );
+  const prevLevelCompleted = d.levels[levelId].completed;
+  if (allLessonsCompleted && !prevLevelCompleted) {
+    d.levels[levelId].completed = true;
     d.totalCompleted = (d.totalCompleted || 0) + 1;
   }
+
+  // Update level-level bestScore (average of lesson scores)
+  const lessonScores = level.lessons.map((_, li) =>
+    d.levels[levelId].lessons[li]?.bestScore || 0
+  );
+  d.levels[levelId].bestScore = Math.round(
+    lessonScores.reduce((s, v) => s + v, 0) / lessonScores.length
+  );
+  d.levels[levelId].attempts = (d.levels[levelId].attempts || 0) + 1;
+
+  d.xp = (d.xp || 0) + xp;
   setData(d);
 
-  // Cross-write XP to learn data (avoids circular import)
   _crossWriteXP(xp);
-  // Touch streak
   _touchStreak();
 
+  // Determine what was unlocked
+  const nextLessonIndex = lessonIndex + 1;
+  const hasNextLesson = nextLessonIndex < level.lessons.length;
+  const unlockNextLesson = passed && !prevLesson.completed && hasNextLesson;
+
   const nextLevel = ACADEMY_LEVELS.find(l => l.id === levelId + 1);
-  const unlockNext = passed && !prev.completed && !!nextLevel;
+  const levelCompleted = allLessonsCompleted && !prevLevelCompleted;
+  const unlockNextLevel = levelCompleted && !!nextLevel;
 
   const result = {
     done: true,
@@ -256,8 +368,14 @@ function _finishLevel() {
     correct: correctCount,
     total,
     levelId,
+    lessonIndex,
     levelKey: level.key,
-    unlockNext,
+    lessonKey: lesson.key,
+    unlockNextLesson,
+    nextLessonIndex: hasNextLesson ? nextLessonIndex : null,
+    nextLessonKey: hasNextLesson ? level.lessons[nextLessonIndex].key : null,
+    levelCompleted,
+    unlockNextLevel,
     nextLevelKey: nextLevel ? nextLevel.key : null,
     levelsCompleted: Object.values(d.levels).filter(l => l.completed).length,
     academyPerfect: pct === 100,

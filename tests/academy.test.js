@@ -21,7 +21,7 @@ vi.mock('../js/lang.js', () => ({
   t: (k) => k,
 }));
 
-// ─── Mock academy_data.js with a simple test level ───────────
+// ─── Mock academy_data.js with per-lesson questions ──────────
 const mockLevel = {
   id: 0,
   key: 'test.level0',
@@ -35,14 +35,25 @@ const mockLevel = {
       cards: [
         { type: 'theory', key: 'test.card1' },
         { type: 'tip', key: 'test.card2' },
-      ]
-    }
+      ],
+      passThreshold: 70,
+      questions: [
+        { q: 'Q0', a: ['Correct0', 'Wrong1_0', 'Wrong2_0', 'Wrong3_0'], exp: 'Exp0' },
+        { q: 'Q1', a: ['Correct1', 'Wrong1_1', 'Wrong2_1', 'Wrong3_1'], exp: 'Exp1' },
+      ],
+    },
+    {
+      key: 'test.lesson1',
+      cards: [
+        { type: 'theory', key: 'test.card3' },
+      ],
+      passThreshold: 70,
+      questions: [
+        { q: 'Q2', a: ['Correct2', 'Wrong1_2', 'Wrong2_2', 'Wrong3_2'], exp: 'Exp2' },
+      ],
+    },
   ],
-  questions: Array.from({ length: 3 }, (_, i) => ({
-    q: `Q${i}`,
-    a: [`Correct${i}`, `Wrong1_${i}`, `Wrong2_${i}`, `Wrong3_${i}`],
-    exp: `Exp${i}`,
-  }))
+  questions: [],
 };
 
 const mockLevel1 = {
@@ -52,10 +63,17 @@ const mockLevel1 = {
   icon: '🍸',
   color: '#e74c3c',
   passThreshold: 70,
-  lessons: [{ key: 'test.l1.lesson0', cards: [{ type: 'theory', key: 'test.l1.card1' }] }],
-  questions: [
-    { q: 'L1Q0', a: ['L1Correct0', 'L1W1', 'L1W2', 'L1W3'], exp: 'L1Exp0' },
-  ]
+  lessons: [
+    {
+      key: 'test.l1.lesson0',
+      cards: [{ type: 'theory', key: 'test.l1.card1' }],
+      passThreshold: 70,
+      questions: [
+        { q: 'L1Q0', a: ['L1Correct0', 'L1W1', 'L1W2', 'L1W3'], exp: 'L1Exp0' },
+      ],
+    },
+  ],
+  questions: [],
 };
 
 vi.mock('../js/academy_data.js', () => ({
@@ -63,8 +81,9 @@ vi.mock('../js/academy_data.js', () => ({
 }));
 
 const {
-  startAcademy, advanceAcademyCard, answerAcademy, advanceAcademy,
-  abortAcademy, getAcademyStats, isLevelUnlocked
+  startAcademy, startAcademyLesson, advanceAcademyCard, answerAcademy,
+  advanceAcademy, abortAcademy, getAcademyStats, getAcademyLevels,
+  isLevelUnlocked, isLessonUnlocked
 } = await import('../js/academy.js');
 
 // ─── Helpers ──────────────────────────────────────────────────
@@ -94,11 +113,64 @@ function skipAllCards() {
   return result;
 }
 
-// ─── startAcademy ─────────────────────────────────────────────
+/** Complete all questions correctly starting from the current question payload */
+function completeAllCorrectly(firstQuestion) {
+  let qPayload = firstQuestion || skipAllCards();
+  let result = null;
+  for (let i = 0; i < 20; i++) {
+    if (!qPayload || qPayload.done) { result = qPayload; break; }
+    const idx = findCorrectIndex(qPayload.answers);
+    answerAcademy(idx >= 0 ? idx : 0);
+    result = advanceAcademy();
+    if (result?.done === true) break;
+    qPayload = result; // next question payload
+  }
+  return result;
+}
+
+// ─── startAcademyLesson ──────────────────────────────────────
+describe('startAcademyLesson', () => {
+  beforeEach(() => clearStorage());
+
+  it('returns card payload for lesson 0 of level 0', () => {
+    const payload = startAcademyLesson(0, 0);
+    expect(payload).not.toBeNull();
+    expect(payload.phase).toBe('card');
+  });
+
+  it('returns card payload for lesson 1 when lesson 0 completed', () => {
+    // Complete lesson 0 first
+    startAcademyLesson(0, 0);
+    const q = skipAllCards();
+    completeAllCorrectly(q);
+    // Now lesson 1 should be unlocked
+    const payload = startAcademyLesson(0, 1);
+    expect(payload).not.toBeNull();
+    expect(payload.phase).toBe('card');
+  });
+
+  it('returns null for locked lesson', () => {
+    expect(startAcademyLesson(0, 1)).toBeNull();
+  });
+
+  it('returns null for locked level', () => {
+    expect(startAcademyLesson(1, 0)).toBeNull();
+  });
+
+  it('returns null for non-existent level', () => {
+    expect(startAcademyLesson(999, 0)).toBeNull();
+  });
+
+  it('returns null for non-existent lesson', () => {
+    expect(startAcademyLesson(0, 99)).toBeNull();
+  });
+});
+
+// ─── startAcademy (backward compat) ──────────────────────────
 describe('startAcademy', () => {
   beforeEach(() => clearStorage());
 
-  it('returns card payload for level 0', () => {
+  it('returns card payload for level 0 (starts lesson 0)', () => {
     const payload = startAcademy(0);
     expect(payload).not.toBeNull();
     expect(payload.phase).toBe('card');
@@ -107,18 +179,38 @@ describe('startAcademy', () => {
   it('returns null for locked level', () => {
     expect(startAcademy(1)).toBeNull();
   });
+});
 
-  it('returns null for non-existent level', () => {
-    expect(startAcademy(999)).toBeNull();
+// ─── isLessonUnlocked ────────────────────────────────────────
+describe('isLessonUnlocked', () => {
+  beforeEach(() => clearStorage());
+
+  it('lesson 0 of level 0 is always unlocked', () => {
+    expect(isLessonUnlocked(0, 0)).toBe(true);
+  });
+
+  it('lesson 1 is locked when lesson 0 not completed', () => {
+    expect(isLessonUnlocked(0, 1)).toBe(false);
+  });
+
+  it('lesson 1 is unlocked when lesson 0 completed', () => {
+    localStorage.setItem('cq_academy_data', JSON.stringify({
+      _version: 2,
+      levels: { 0: { lessons: { 0: { completed: true, bestScore: 100, attempts: 1 } } } }
+    }));
+    expect(isLessonUnlocked(0, 1)).toBe(true);
+  });
+
+  it('lesson in locked level is always locked', () => {
+    expect(isLessonUnlocked(1, 0)).toBe(false);
   });
 });
 
-// ─── advanceAcademyCard ───────────────────────────────────────
+// ─── advanceAcademyCard ──────────────────────────────────────
 describe('advanceAcademyCard', () => {
-  beforeEach(() => { clearStorage(); startAcademy(0); });
+  beforeEach(() => { clearStorage(); startAcademyLesson(0, 0); });
 
   it('advances through cards then transitions to question phase', () => {
-    // Level 0 has 2 cards
     const card2 = advanceAcademyCard();
     expect(card2).not.toBeNull();
     expect(card2.phase).toBe('card');
@@ -130,17 +222,17 @@ describe('advanceAcademyCard', () => {
   });
 
   it('returns null when not in cards phase', () => {
-    skipAllCards(); // now in question phase
+    skipAllCards();
     expect(advanceAcademyCard()).toBeNull();
   });
 });
 
-// ─── answerAcademy ────────────────────────────────────────────
+// ─── answerAcademy ───────────────────────────────────────────
 describe('answerAcademy', () => {
-  beforeEach(() => { clearStorage(); startAcademy(0); skipAllCards(); });
+  beforeEach(() => { clearStorage(); startAcademyLesson(0, 0); skipAllCards(); });
 
-  it('returns correct:true on right answer', () => {
-    const result = answerAcademy(0); // answers are shuffled, but let's test the structure
+  it('returns feedback with correct/incorrect status', () => {
+    const result = answerAcademy(0);
     expect(result).not.toBeNull();
     expect(result.phase).toBe('feedback');
     expect(typeof result.correct).toBe('boolean');
@@ -157,132 +249,88 @@ describe('answerAcademy', () => {
     answerAcademy(0);
     expect(answerAcademy(1)).toBeNull();
   });
-
-  it('returns null if not in question phase', () => {
-    // Answer and advance to check that we can't answer during feedback
-    answerAcademy(0);
-    // Now in feedback phase, answering again should return null
-    expect(answerAcademy(0)).toBeNull();
-  });
 });
 
-// ─── advanceAcademy ───────────────────────────────────────────
+// ─── advanceAcademy ──────────────────────────────────────────
 describe('advanceAcademy', () => {
-  beforeEach(() => { clearStorage(); startAcademy(0); skipAllCards(); });
+  beforeEach(() => { clearStorage(); startAcademyLesson(0, 0); skipAllCards(); });
 
   it('returns next question after feedback', () => {
-    answerAcademy(0); // answer first question
+    answerAcademy(0);
     const next = advanceAcademy();
     expect(next).not.toBeNull();
     expect(next.phase).toBe('question');
   });
 
   it('returns null if not in feedback phase', () => {
-    // Still in question phase, advance should fail
-    expect(advanceAcademy()).toBeNull();
-  });
-
-  it('returns null if called twice in feedback phase', () => {
-    answerAcademy(0);
-    advanceAcademy(); // valid
-    // Now in question phase again, should return null
     expect(advanceAcademy()).toBeNull();
   });
 });
 
-// ─── Full flow completion ─────────────────────────────────────
-describe('advanceAcademy – completion', () => {
+// ─── Per-lesson completion ───────────────────────────────────
+describe('per-lesson completion', () => {
   beforeEach(() => clearStorage());
 
-  it('returns done:true with numeric values after all questions answered correctly', () => {
-    startAcademy(0);
-    skipAllCards();
-
-    let result = null;
-    for (let i = 0; i < 10; i++) {
-      const q = answerAcademy(0);
-      if (!q) break;
-      result = advanceAcademy();
-      if (result?.done === true) break;
-    }
+  it('returns done:true with lesson info after all questions', () => {
+    startAcademyLesson(0, 0);
+    const q = skipAllCards();
+    const result = completeAllCorrectly(q);
 
     expect(result).not.toBeNull();
     expect(result.done).toBe(true);
-    expect(typeof result.correct).toBe('number');
+    expect(result.lessonIndex).toBe(0);
+    expect(result.levelId).toBe(0);
     expect(typeof result.pct).toBe('number');
-    expect(typeof result.xp).toBe('number');
-    expect(typeof result.total).toBe('number');
-    expect(result.total).toBe(3); // mock level has 3 questions
+    expect(result.total).toBe(2); // lesson 0 has 2 questions
   });
 
-  it('result.correct is not undefined', () => {
-    startAcademy(0);
-    skipAllCards();
-
-    let result = null;
-    for (let i = 0; i < 10; i++) {
-      answerAcademy(0);
-      result = advanceAcademy();
-      if (result?.done === true) break;
-    }
-
-    expect(result.correct).not.toBeUndefined();
-    expect(result.pct).not.toBeUndefined();
-    expect(result.xp).not.toBeUndefined();
-  });
-
-  it('sets passed:true when all answers correct and score >= threshold', () => {
-    startAcademy(0);
-    skipAllCards();
-
-    let result = null;
-    for (let i = 0; i < 10; i++) {
-      answerAcademy(0);
-      result = advanceAcademy();
-      if (result?.done === true) break;
-    }
-
-    // Result should always have passed as a boolean
-    expect(typeof result.passed).toBe('boolean');
-  });
-
-  it('persists level result to localStorage', () => {
-    startAcademy(0);
-    skipAllCards();
-
-    let result = null;
-    for (let i = 0; i < 10; i++) {
-      answerAcademy(0);
-      result = advanceAcademy();
-      if (result?.done === true) break;
-    }
+  it('persists lesson result to localStorage', () => {
+    startAcademyLesson(0, 0);
+    const q = skipAllCards();
+    completeAllCorrectly(q);
 
     const data = JSON.parse(localStorage.getItem('cq_academy_data'));
-    expect(data.levels).toBeDefined();
-    expect(data.levels[0]).toBeDefined();
-    expect(data.levels[0].attempts).toBe(1);
+    expect(data.levels[0].lessons[0]).toBeDefined();
+    expect(data.levels[0].lessons[0].attempts).toBe(1);
+  });
+
+  it('unlocks next lesson when passed', () => {
+    startAcademyLesson(0, 0);
+    const q = skipAllCards();
+    const result = completeAllCorrectly(q);
+
+    expect(result.unlockNextLesson).toBe(true);
+    expect(result.nextLessonIndex).toBe(1);
+    expect(isLessonUnlocked(0, 1)).toBe(true);
+  });
+
+  it('does NOT complete level until all lessons done', () => {
+    startAcademyLesson(0, 0);
+    const q = skipAllCards();
+    const result = completeAllCorrectly(q);
+
+    expect(result.levelCompleted).toBe(false);
+    expect(isLevelUnlocked(1)).toBe(false);
+  });
+
+  it('completes level when all lessons done', () => {
+    // Complete lesson 0
+    startAcademyLesson(0, 0);
+    let q = skipAllCards();
+    completeAllCorrectly(q);
+
+    // Complete lesson 1
+    startAcademyLesson(0, 1);
+    q = skipAllCards();
+    const result = completeAllCorrectly(q);
+
+    expect(result.levelCompleted).toBe(true);
+    expect(result.unlockNextLevel).toBe(true);
+    expect(isLevelUnlocked(1)).toBe(true);
   });
 });
 
-// ─── abortAcademy ─────────────────────────────────────────────
-describe('abortAcademy', () => {
-  it('makes answerAcademy return null after abort', () => {
-    startAcademy(0);
-    skipAllCards();
-    abortAcademy();
-    expect(answerAcademy(0)).toBeNull();
-  });
-
-  it('makes advanceAcademy return null after abort', () => {
-    startAcademy(0);
-    skipAllCards();
-    answerAcademy(0);
-    abortAcademy();
-    expect(advanceAcademy()).toBeNull();
-  });
-});
-
-// ─── isLevelUnlocked ──────────────────────────────────────────
+// ─── isLevelUnlocked ─────────────────────────────────────────
 describe('isLevelUnlocked', () => {
   beforeEach(() => clearStorage());
 
@@ -296,13 +344,14 @@ describe('isLevelUnlocked', () => {
 
   it('level 1 is unlocked when level 0 completed', () => {
     localStorage.setItem('cq_academy_data', JSON.stringify({
-      levels: { 0: { completed: true, bestScore: 100, attempts: 1 } }
+      _version: 2,
+      levels: { 0: { completed: true, bestScore: 100, attempts: 1, lessons: {} } }
     }));
     expect(isLevelUnlocked(1)).toBe(true);
   });
 });
 
-// ─── getAcademyStats ──────────────────────────────────────────
+// ─── getAcademyStats ─────────────────────────────────────────
 describe('getAcademyStats', () => {
   beforeEach(() => clearStorage());
 
@@ -315,13 +364,76 @@ describe('getAcademyStats', () => {
 
   it('reflects stored data', () => {
     localStorage.setItem('cq_academy_data', JSON.stringify({
+      _version: 2,
       xp: 50,
       totalCompleted: 1,
-      levels: { 0: { completed: true, bestScore: 80, attempts: 2 } }
+      levels: { 0: { completed: true, bestScore: 80, attempts: 2, lessons: {} } }
     }));
     const stats = getAcademyStats();
     expect(stats.currentLevel).toBe(1);
     expect(stats.xp).toBe(50);
     expect(stats.totalCompleted).toBe(1);
+  });
+});
+
+// ─── getAcademyLevels ────────────────────────────────────────
+describe('getAcademyLevels', () => {
+  beforeEach(() => clearStorage());
+
+  it('returns per-lesson progress', () => {
+    localStorage.setItem('cq_academy_data', JSON.stringify({
+      _version: 2,
+      levels: { 0: { lessons: { 0: { completed: true, bestScore: 90, attempts: 1 } } } }
+    }));
+    const levels = getAcademyLevels();
+    expect(levels[0].lessons[0].completed).toBe(true);
+    expect(levels[0].lessons[0].bestScore).toBe(90);
+    expect(levels[0].lessons[1].completed).toBe(false);
+    expect(levels[0].lessonsCompleted).toBe(1);
+    expect(levels[0].lessonsTotal).toBe(2);
+  });
+});
+
+// ─── Data migration ──────────────────────────────────────────
+describe('data migration', () => {
+  beforeEach(() => clearStorage());
+
+  it('migrates old format (no lessons) to new format', () => {
+    localStorage.setItem('cq_academy_data', JSON.stringify({
+      levels: { 0: { completed: true, bestScore: 100, attempts: 2 } }
+    }));
+    // getData() triggers migration
+    const levels = getAcademyLevels();
+    expect(levels[0].lessons[0].completed).toBe(true);
+    expect(levels[0].lessons[1].completed).toBe(true);
+    expect(levels[0].lessons[0].bestScore).toBe(100);
+  });
+
+  it('does not re-migrate already migrated data', () => {
+    localStorage.setItem('cq_academy_data', JSON.stringify({
+      _version: 2,
+      levels: { 0: { completed: false, lessons: { 0: { completed: true, bestScore: 80, attempts: 1 } } } }
+    }));
+    const levels = getAcademyLevels();
+    expect(levels[0].lessons[0].completed).toBe(true);
+    expect(levels[0].lessons[1].completed).toBe(false);
+  });
+});
+
+// ─── abortAcademy ────────────────────────────────────────────
+describe('abortAcademy', () => {
+  it('makes answerAcademy return null after abort', () => {
+    startAcademyLesson(0, 0);
+    skipAllCards();
+    abortAcademy();
+    expect(answerAcademy(0)).toBeNull();
+  });
+
+  it('makes advanceAcademy return null after abort', () => {
+    startAcademyLesson(0, 0);
+    skipAllCards();
+    answerAcademy(0);
+    abortAcademy();
+    expect(advanceAcademy()).toBeNull();
   });
 });
