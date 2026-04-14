@@ -1873,9 +1873,7 @@ function renderDuelQuestion() {
   $('duel-timer-num').classList.remove('urgent');
 
   // Question text
-  $('duel-question').textContent = typeof q.question === 'object'
-    ? (q.question[getLang()] ?? q.question.en ?? q.question.es ?? '')
-    : q.question;
+  $('duel-question').textContent = t(q.question);
 
   // Answers
   const grid = $('duel-answers');
@@ -1884,8 +1882,7 @@ function renderDuelQuestion() {
   q.answers.forEach((ans, i) => {
     const btn = document.createElement('button');
     btn.className = 'answer-btn';
-    const ansText = typeof ans === 'object' ? (ans[getLang()] ?? ans.en ?? ans.es ?? '') : ans;
-    btn.innerHTML = `<span class="answer-letter">${labels[i]}</span><span class="answer-text">${ansText}</span>`;
+    btn.innerHTML = `<span class="answer-letter">${labels[i]}</span><span class="answer-text">${t(ans)}</span>`;
     btn.addEventListener('click', () => handleDuelAnswer(i));
     grid.appendChild(btn);
   });
@@ -2188,11 +2185,8 @@ function renderBotQuestion() {
   $('duel-timer-num').textContent = botDuelState.timeLeft;
   $('duel-timer-num').classList.remove('urgent');
 
-  // Question text — use lang captured at game-start to match question data
-  const lang = botDuelState.lang || getLang();
-  $('duel-question').textContent = typeof q.question === 'object'
-    ? (q.question[lang] ?? q.question.en ?? q.question.es ?? '')
-    : q.question;
+  // Question text
+  $('duel-question').textContent = t(q.question);
 
   // Answer buttons — wired to bot handler
   const grid = $('duel-answers');
@@ -2201,8 +2195,7 @@ function renderBotQuestion() {
   q.answers.forEach((ans, i) => {
     const btn = document.createElement('button');
     btn.className = 'answer-btn';
-    const ansText = typeof ans === 'object' ? (ans[lang] ?? ans.en ?? ans.es ?? '') : ans;
-    btn.innerHTML = `<span class="answer-letter">${labels[i]}</span><span class="answer-text">${ansText}</span>`;
+    btn.innerHTML = `<span class="answer-letter">${labels[i]}</span><span class="answer-text">${t(ans)}</span>`;
     btn.addEventListener('click', () => handleBotPlayerAnswer(i));
     grid.appendChild(btn);
   });

@@ -1,4 +1,95 @@
-# Claude Code — Project Instructions
+# Stirio — Project Guide
+
+Stirio is a cocktail learning Progressive Web App. Users master mixology through quizzes, flashcards, daily challenges, speed rounds, blind tastings, and a 3D encyclopedia. The app is built for mobile-first usage with offline support.
+
+## Project Values
+
+- **Flawless i18n**: Every user-visible string must be translated into all 5 supported languages (es, en, fr, pt, de). Never ship Spanish-only content.
+- **Impeccable UX**: Smooth transitions, clear feedback, responsive across all devices.
+- **Offline-first**: The app must work without an internet connection. Cloud sync is optional.
+- **Clean, modular code**: Each JS module owns one responsibility. No monolith functions.
+
+## Tech Stack
+
+- **Runtime**: Vanilla JavaScript (ES6 modules), no frameworks, no build tools
+- **Styling**: Single CSS file with CSS custom properties for theming (4 themes)
+- **Backend**: Firebase (Auth, Firestore, Realtime Database, Storage)
+- **PWA**: Service Worker (`sw.js`) caches all static assets for offline use
+- **3D**: Three.js for the wiki encyclopedia's 3D scenes
+- **Testing**: Vitest (`npm test`)
+
+## Architecture
+
+```
+index.html          Single SPA root — all views are div.view toggled via classList
+js/app.js           View router, event bindings, rendering logic (~2300 lines)
+js/lang.js          i18n core: t(), getLang(), setLang(), all translation keys
+js/quiz.js          Quiz round engine (state, timer, scoring)
+js/learn.js         Learning mode (mastery, XP, streaks, spaced repetition)
+js/daily.js         Daily challenge (seeded RNG for consistent questions per day)
+js/speed.js         Speed mode (60-second timed challenge)
+js/blind.js         Blind tasting mode (clue-based spirit identification)
+js/constructor.js   Constructor mode (ingredient-to-cocktail matching)
+js/fichas.js        IBA cocktail flashcard data (90 cocktails)
+js/rivals.js        Real-time 1v1 multiplayer via Firebase RTDB
+js/bot.js           AI opponent logic for solo duels
+js/auth.js          Firebase Auth (Google + guest mode)
+js/leaderboard.js   Score persistence (localStorage + Firestore)
+js/achievements.js  Achievement tracking
+js/questions.js     Language-aware question loader
+js/i18n/            Per-language question files + fichas translation lookup
+js/wiki*.js         3D encyclopedia modules
+css/style.css       All styles, CSS variables for themes
+sw.js               Service Worker (bump STATIC_CACHE_VERSION on asset changes)
+```
+
+## Internationalization (i18n)
+
+### How it works
+
+The `t()` function in `lang.js` supports two modes:
+
+1. **String keys**: `t('login.tagline')` → looks up in `translations[currentLang]`
+2. **Multilingual objects**: `t({es: 'Hola', en: 'Hello'})` → returns value for current language
+
+**Fallback chain**: current lang → English → Spanish → first available → empty string
+
+### Adding translations
+
+- **UI strings**: Add the key to ALL 5 language blocks in `js/lang.js`
+- **Quiz questions**: Add the question to ALL 5 files in `js/i18n/questions_{lang}.js`
+- **Cocktail data**: Add Spanish entry to `js/fichas.js`, translations to `js/i18n/fichas_i18n.js`
+- **Blind tasting**: Add multilingual objects directly in `js/blind.js`
+
+### Adding a new language
+
+1. Add lang code to `SUPPORTED_LANGS` in `js/lang.js`
+2. Add a new translation block in `js/lang.js`
+3. Create `js/i18n/questions_{lang}.js` with all 24 rounds
+4. Add entries to `js/i18n/fichas_i18n.js` lookup dictionaries
+5. Add entries to `js/blind.js` multilingual objects
+
+## How to Add New Content
+
+### New quiz round
+
+1. Choose a unique numeric `id` (next available after 24)
+2. Add the round object to all 5 files: `js/i18n/questions_{es,en,fr,pt,de}.js`
+3. Each round needs: `id`, `title`, `subtitle`, `icon`, `color`, and 10 `questions`
+4. Each question: `{ q: "...", a: ["correct", "wrong1", "wrong2", "wrong3"], exp: "..." }`
+5. The first answer `a[0]` is always the correct one
+
+### New cocktail (fichas)
+
+1. Add the Spanish entry to `js/fichas.js` inside the `FICHAS` array
+2. Add translations for glass, method, garnish, ingredients, story to `js/i18n/fichas_i18n.js`
+3. If using a new glass/method type, add it to the respective `GLASSES`/`METHODS` dictionary
+
+## Service Worker
+
+Any time you add, rename, or remove a JS/CSS/asset file:
+1. Add/update the path in `CACHE_PATHS` in `sw.js`
+2. Bump `STATIC_CACHE_VERSION` (e.g., `Stirio-v3.4` → `Stirio-v3.5`)
 
 ## Git Workflow
 
@@ -23,3 +114,11 @@ https://claude.ai/code/session_<id>
 ```
 
 Never merge with `--no-ff` or fast-forward multiple commits directly into main.
+
+## Development Guidelines
+
+- **Never rewrite large files in a single pass.** Work in small, sequential steps.
+- **All user-visible text goes through `t()`** — no hardcoded strings.
+- **Test with `npm test`** before pushing.
+- **Test i18n manually**: Toggle language in the app and verify all modes display correctly.
+- **Preserve offline functionality**: Any new fetch/import must be cached by the service worker.
