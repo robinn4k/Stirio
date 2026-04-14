@@ -1589,6 +1589,7 @@ function bindEvents() {
   $('btn-fichas').addEventListener('click', () => goToFichas());
   $('btn-achievements').addEventListener('click', () => goToAchievements());
   $('btn-duel').addEventListener('click', () => goToDuelMenu());
+  $('btn-duel-home').addEventListener('click', () => goToDuelMenu());
   $('btn-games').addEventListener('click', () => goToGames());
 
   // Mini games (Phaser)
