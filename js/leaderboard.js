@@ -166,4 +166,26 @@ async function getUserRank(roundId = null) {
   return idx >= 0 ? idx + 1 : null;
 }
 
-export { saveScore, fetchLeaderboard, getUserStats, getUserRank, getLocalUserStats };
+// --- RESET LEADERBOARD (migration tool) ---
+
+async function resetLeaderboard() {
+  // Clear local leaderboard data
+  localStorage.removeItem(LOCAL_KEY);
+  localStorage.removeItem(LOCAL_USER_KEY);
+
+  // Clear Firestore scores for current user
+  const user = getCurrentUser();
+  if (isFirebaseReady() && user && !user.isGuest) {
+    try {
+      const db = getDb();
+      const { collection, query, where, getDocs, deleteDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+      const q = query(collection(db, 'scores'), where('uid', '==', user.uid));
+      const snap = await getDocs(q);
+      for (const d of snap.docs) await deleteDoc(d.ref);
+    } catch (e) {
+      console.warn('Error resetting Firestore leaderboard:', e);
+    }
+  }
+}
+
+export { saveScore, fetchLeaderboard, getUserStats, getUserRank, getLocalUserStats, resetLeaderboard };
