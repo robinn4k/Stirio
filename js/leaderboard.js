@@ -1,4 +1,5 @@
 import { getDb, getCurrentUser, isFirebaseReady } from './auth.js';
+import { getLearnStats, getLevelInfo } from './learn.js';
 
 const LOCAL_KEY = 'cq_leaderboard';
 const LOCAL_USER_KEY = 'cq_user_stats';
@@ -15,8 +16,16 @@ function saveLocalScores(scores) {
 }
 
 function getLocalUserStats() {
-  try { return JSON.parse(localStorage.getItem(LOCAL_USER_KEY)) || { games: 0, best: 0, total: 0, rounds: {} }; }
-  catch { return { games: 0, best: 0, total: 0, rounds: {} }; }
+  let stats;
+  try { stats = JSON.parse(localStorage.getItem(LOCAL_USER_KEY)) || { games: 0, best: 0, total: 0, rounds: {} }; }
+  catch { stats = { games: 0, best: 0, total: 0, rounds: {} }; }
+  // Augment with learn-based ranking fields
+  const { xp, streak } = getLearnStats();
+  const lvl = getLevelInfo(xp);
+  stats.level = lvl.level;
+  stats.xpTotal = xp;
+  stats.streakDays = streak;
+  return stats;
 }
 
 function saveLocalUserStats(stats) {
@@ -68,9 +77,12 @@ async function saveScore({ roundId, roundTitle, score, corrects, wrongs }) {
       if (!existing.exists() || score > existing.data().score) {
         await setDoc(scoreRef, entry);
       }
-      // Update user document
+      // Update user document with score + ranking fields
+      const { xp: lxp, streak: lstreak } = getLearnStats();
+      const llvl = getLevelInfo(lxp);
       const userRef = doc(db, 'users', user.uid);
       const userDoc = await getDoc(userRef);
+      const rankFields = { level: llvl.level, xpTotal: lxp, streakDays: lstreak };
       if (userDoc.exists()) {
         const data = userDoc.data();
         await updateDoc(userRef, {
@@ -78,11 +90,12 @@ async function saveScore({ roundId, roundTitle, score, corrects, wrongs }) {
           best: Math.max(data.best || 0, score),
           total: (data.total || 0) + score,
           [`rounds.${roundId}`]: Math.max((data.rounds?.[roundId] || 0), score),
+          ...rankFields,
           name: user.name,
           lastSeen: Date.now()
         });
       } else {
-        await setDoc(userRef, { ...stats, name: user.name, uid: user.uid, lastSeen: Date.now() });
+        await setDoc(userRef, { ...stats, ...rankFields, name: user.name, uid: user.uid, lastSeen: Date.now() });
       }
     } catch (e) {
       console.warn('Error al guardar en Firestore:', e);
