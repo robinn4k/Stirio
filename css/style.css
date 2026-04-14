@@ -2777,3 +2777,140 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 1;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   COCKTAIL ACADEMY
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Dashboard Banner ── */
+.academy-banner {
+  display: flex; align-items: center; gap: 14px;
+  padding: 18px 16px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #1a0a20 0%, #2a1535 100%);
+  border: 1px solid var(--border);
+  cursor: pointer; transition: transform .15s, box-shadow .15s;
+}
+.academy-banner:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.academy-banner-icon { font-size: 2rem; }
+.academy-banner-info { flex: 1; }
+.academy-banner-title { font-weight: 700; color: var(--text); font-size: 1rem; }
+.academy-banner-sub { font-size: .75rem; color: var(--text-muted); margin-top: 2px; }
+.academy-banner-progress { font-size: .85rem; color: var(--gold); font-weight: 700; }
+.academy-banner-arrow { color: var(--gold); font-size: 1.2rem; }
+
+/* ── Academy Hub ── */
+.academy-hub-body { padding: 0 0 24px; flex: 1; overflow-y: auto; }
+.academy-hero {
+  text-align: center; padding: 12px 16px 20px;
+}
+.academy-hero-sub { font-size: .85rem; color: var(--text-muted); }
+
+.academy-levels { padding: 0 16px; display: flex; flex-direction: column; gap: 0; }
+.academy-level-card {
+  display: flex; align-items: center; gap: 14px; padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--level-color, var(--gold));
+  border-radius: var(--radius);
+  cursor: pointer; transition: transform .15s, box-shadow .15s;
+  position: relative;
+}
+.academy-level-card:hover:not(.locked) { transform: translateX(4px); box-shadow: var(--shadow); }
+.academy-level-card.locked {
+  opacity: .4; filter: grayscale(.8); cursor: not-allowed;
+}
+.academy-level-card.completed { border-left-width: 4px; }
+.academy-level-card.completed::after {
+  content: '✓'; position: absolute; top: 8px; right: 12px;
+  background: rgba(39,174,96,.15); color: #7dcea0;
+  border: 1px solid rgba(39,174,96,.3);
+  border-radius: 50%; width: 24px; height: 24px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .75rem; font-weight: 700;
+}
+.academy-level-icon { font-size: 2rem; width: 44px; text-align: center; }
+.academy-level-info { flex: 1; }
+.academy-level-name { font-weight: 700; color: var(--text); }
+.academy-level-sub { font-size: .75rem; color: var(--text-muted); margin-top: 2px; }
+.academy-level-meta { display: flex; gap: 12px; margin-top: 6px; align-items: center; }
+.academy-level-score { font-size: .7rem; color: var(--gold); font-weight: 600; }
+.academy-lock-icon { font-size: 1.2rem; opacity: .5; }
+
+.academy-level-connector {
+  width: 2px; height: 12px; background: var(--border);
+  margin: 0 0 0 37px;
+}
+
+/* ── Academy Cards ── */
+.acad-card-wrap {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 24px 16px; gap: 24px;
+}
+.acad-card {
+  width: 100%; max-width: 420px;
+  padding: 24px 20px; border-radius: var(--radius-lg);
+  background: var(--surface); border: 1px solid var(--border);
+  text-align: center;
+  animation: fadeIn .25s ease;
+}
+.acad-card-theory { border-left: 4px solid var(--gold); }
+.acad-card-tip    { border-left: 4px solid var(--green); }
+.acad-card-note   { border-left: 4px solid var(--amber); }
+.acad-card-example { border-left: 4px solid #9b59b6; }
+.acad-card-type {
+  font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.acad-card-icon { font-size: 2rem; margin-bottom: 12px; }
+.acad-card-body {
+  font-size: .9rem; color: var(--text); line-height: 1.6;
+  text-align: left;
+}
+
+/* ── Mini Ficha (example card) ── */
+.mini-ficha { text-align: left; }
+.mini-ficha-header {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 14px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.mini-ficha-icon { font-size: 1.8rem; }
+.mini-ficha-name { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+.mini-ficha-details { font-size: .82rem; color: var(--text-muted); }
+.mini-ficha-row { display: flex; gap: 6px; margin-bottom: 4px; }
+.mini-ficha-row strong { color: var(--text); min-width: 70px; }
+.mini-ficha-ingredients { padding-left: 16px; margin-top: 6px; }
+.mini-ficha-ingredients li { margin-bottom: 2px; }
+.mini-ficha-story {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-style: italic; font-size: .8rem;
+  color: var(--text-muted); line-height: 1.5;
+}
+
+/* ── Academy Result ── */
+.ar-pass-indicator {
+  display: inline-block; padding: 8px 20px;
+  border-radius: var(--radius); font-weight: 700;
+  font-size: .9rem; margin: 8px 0 16px;
+}
+.ar-pass-indicator.passed {
+  background: rgba(39,174,96,.15); color: var(--green);
+  border: 1px solid rgba(39,174,96,.3);
+}
+.ar-pass-indicator.failed {
+  background: rgba(231,76,60,.15); color: var(--red);
+  border: 1px solid rgba(231,76,60,.3);
+}
+.ar-unlock-banner {
+  background: linear-gradient(135deg, #8B7500, var(--gold));
+  color: #1a0d12; padding: 14px; border-radius: var(--radius);
+  text-align: center; font-weight: 700; margin: 12px 0;
+  animation: scaleIn .4s cubic-bezier(.4,0,.2,1);
+}
+@keyframes scaleIn {
+  from { transform: scale(.8); opacity: 0; }
+  to   { transform: scale(1);  opacity: 1; }
+}

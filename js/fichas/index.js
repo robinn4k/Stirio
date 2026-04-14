@@ -2,11 +2,13 @@ import { localizeFicha } from '../i18n/fichas_i18n.js';
 import { IBA_UNFORGETTABLES } from './iba_unforgettables.js';
 import { IBA_CONTEMPORARY } from './iba_contemporary.js';
 import { IBA_NEW_ERA } from './iba_new_era.js';
+import { DIFFORDS_COCKTAILS } from './diffords.js';
 
 const ALL_RAW = [
   ...IBA_UNFORGETTABLES,
   ...IBA_CONTEMPORARY,
   ...IBA_NEW_ERA,
+  ...DIFFORDS_COCKTAILS,
 ];
 
 const seen = new Set();

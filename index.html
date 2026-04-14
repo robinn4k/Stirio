@@ -82,6 +82,19 @@
             </div>
           </div>
 
+          <!-- Academy Banner -->
+          <div class="tab-section">
+            <div class="academy-banner" id="btn-academy">
+              <div class="academy-banner-icon">🎓</div>
+              <div class="academy-banner-info">
+                <div class="academy-banner-title" data-i18n="dashboard.academy">Cocktail Academy</div>
+                <div class="academy-banner-sub" data-i18n="dashboard.academy_desc">Aprende paso a paso</div>
+              </div>
+              <div class="academy-banner-progress" id="academy-banner-progress">0/6</div>
+              <span class="academy-banner-arrow">→</span>
+            </div>
+          </div>
+
           <!-- Courses grid -->
           <div class="tab-section">
             <h2 class="section-title" data-i18n="dashboard.courses">Cursos</h2>
@@ -674,6 +687,99 @@
           <button class="btn-primary" id="btn-lr-continue" data-i18n="lesson.next">Siguiente lección</button>
           <button class="btn-secondary" id="btn-lr-retry" data-i18n="lesson.retry">Repetir lección</button>
           <button class="btn-ghost" id="btn-lr-home" data-i18n="lesson.home">← Inicio</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ACADEMY HUB ══ -->
+    <div id="view-academy-hub" class="view">
+      <div class="app-header">
+        <button class="icon-btn" id="btn-back-academy" aria-label="Back">←</button>
+        <h2 class="header-title" data-i18n="academy.title">🎓 Cocktail Academy</h2>
+        <div class="header-spacer"></div>
+      </div>
+      <div class="academy-hub-body">
+        <div class="academy-hero">
+          <div class="academy-hero-sub" data-i18n="academy.hero_sub">Domina las familias de cócteles</div>
+        </div>
+        <div class="academy-levels" id="academy-levels"></div>
+      </div>
+    </div>
+
+    <!-- ══ ACADEMY LESSON ══ -->
+    <div id="view-academy-lesson" class="view">
+      <div class="lesson-header">
+        <button class="icon-btn quit-btn" id="btn-quit-academy" aria-label="Close">✕</button>
+        <div class="lesson-progress-wrap">
+          <div class="lesson-progress-bar">
+            <div class="lesson-progress-fill" id="acad-progress-fill"></div>
+          </div>
+        </div>
+        <div class="lesson-phase-label" id="acad-phase-label">📖</div>
+      </div>
+
+      <!-- Cards phase: theory/tip/note/example -->
+      <div class="acad-card-wrap" id="acad-card-wrap">
+        <div class="acad-card" id="acad-card">
+          <div class="acad-card-type" id="acad-card-type"></div>
+          <div class="acad-card-icon" id="acad-card-icon">🍸</div>
+          <div class="acad-card-body" id="acad-card-body"></div>
+        </div>
+        <button class="lesson-theory-btn" id="btn-acad-next-card" data-i18n="academy.next_card">Continuar →</button>
+      </div>
+
+      <!-- Assessment phase -->
+      <div class="lesson-body hidden" id="acad-question-body">
+        <div class="lesson-q-counter" id="acad-q-counter">1 / 10</div>
+        <div class="question-card">
+          <p class="question-text" id="acad-question"></p>
+        </div>
+        <div class="answers-grid" id="acad-answers"></div>
+      </div>
+
+      <div class="lesson-feedback" id="acad-feedback">
+        <div class="lesson-feedback-top">
+          <div class="lesson-feedback-icon" id="acad-feedback-icon">✅</div>
+          <div class="lesson-feedback-text">
+            <div class="lesson-feedback-label" id="acad-feedback-label"></div>
+            <div class="lesson-feedback-exp" id="acad-feedback-exp"></div>
+          </div>
+        </div>
+        <button class="lesson-continue-btn" id="btn-acad-continue" data-i18n="lesson.continue">Continuar</button>
+      </div>
+    </div>
+
+    <!-- ══ ACADEMY RESULT ══ -->
+    <div id="view-academy-result" class="view">
+      <div class="lesson-result-body">
+        <div class="lesson-result-emoji" id="ar-emoji">🎉</div>
+        <h2 class="lesson-result-title" id="ar-title"></h2>
+
+        <div class="ar-pass-indicator" id="ar-pass-indicator"></div>
+
+        <div class="lesson-result-stats">
+          <div class="lr-stat">
+            <div class="lr-stat-val" id="ar-correct">0</div>
+            <div class="lr-stat-label" data-i18n="lesson.correct_label">✅ Correctas</div>
+          </div>
+          <div class="lr-stat">
+            <div class="lr-stat-val" id="ar-score">0%</div>
+            <div class="lr-stat-label" data-i18n="academy.score_label">📊 Puntuación</div>
+          </div>
+          <div class="lr-stat">
+            <div class="lr-stat-val" id="ar-xp">+0</div>
+            <div class="lr-stat-label" data-i18n="lesson.xp_earned">⭐ XP</div>
+          </div>
+        </div>
+
+        <div class="ar-unlock-banner hidden" id="ar-unlock-banner">
+          <span id="ar-unlock-text"></span>
+        </div>
+
+        <div class="lesson-result-actions">
+          <button class="btn-primary" id="btn-ar-next" data-i18n="academy.next_level">Siguiente nivel</button>
+          <button class="btn-secondary" id="btn-ar-retry" data-i18n="lesson.retry">Reintentar</button>
+          <button class="btn-ghost" id="btn-ar-home" data-i18n="academy.back_hub">← Academy</button>
         </div>
       </div>
     </div>
