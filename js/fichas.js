@@ -1,3 +1,5 @@
+import { localizeFicha } from './i18n/fichas_i18n.js';
+
 export const FICHAS = [
   // ===== THE UNFORGETTABLES (1-33) =====
   {
@@ -1001,4 +1003,4 @@ export const fichas = FICHAS.filter(f => {
   if (seen.has(f.name)) return false;
   seen.add(f.name);
   return true;
-});
+}).map(localizeFicha);

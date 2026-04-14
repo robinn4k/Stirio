@@ -48,13 +48,14 @@ const CACHE_PATHS = [
   'js/i18n/questions_en.js',
   'js/i18n/questions_de.js',
   'js/i18n/questions_fr.js',
-  'js/i18n/questions_pt.js'
+  'js/i18n/questions_pt.js',
+  'js/i18n/fichas_i18n.js'
 ];
 
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v3.3`;
+const STATIC_CACHE_VERSION = `Stirio-v3.4`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

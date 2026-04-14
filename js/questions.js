@@ -12,6 +12,3 @@ export function getLocalizedRounds(lang) {
   const l = lang || getLang();
   return langMap[l] || langMap.en;
 }
-
-// Backward compatibility
-export const rounds = roundsEs;
