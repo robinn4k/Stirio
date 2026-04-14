@@ -207,16 +207,27 @@ export function initSpiritMap(container) {
 
     const marker = L.marker([region.lat, region.lng], { icon: markerIcon }).addTo(mapInstance);
 
+    // Build origin line: "Origin · Place"
+    const originParts = [region.origin, region.place].filter(Boolean);
+    const originLine = originParts.join(' · ');
+
+    // Build date line: "Since XXXX"
+    const dateLine = region.dateCreated
+      ? `${t('wiki.map.since')} ${region.dateCreated}`
+      : '';
+
     marker.bindPopup(`
       <div class="spirit-popup">
         <div class="spirit-popup-icon">${region.icon}</div>
         <div class="spirit-popup-title">${name}</div>
         <div class="spirit-popup-spirit" style="color:${color}">${spiritName}</div>
+        ${originLine ? `<div class="spirit-popup-origin">${originLine}</div>` : ''}
+        ${dateLine ? `<div class="spirit-popup-date">${dateLine}</div>` : ''}
         <div class="spirit-popup-desc">${desc}</div>
       </div>
     `, {
       className: 'spirit-popup-container',
-      maxWidth: 250,
+      maxWidth: 280,
     });
   });
 
