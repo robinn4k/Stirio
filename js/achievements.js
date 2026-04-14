@@ -18,6 +18,10 @@ const ACHIEVEMENT_DEFS = [
   { id: 'perfect_lesson',  icon: '❤️' },
   { id: 'all_rounds',      icon: '🌍' },
   { id: 'fichas_reader',   icon: '📖' },
+  { id: 'academy_first',   icon: '🎓' },
+  { id: 'academy_3',       icon: '📚' },
+  { id: 'academy_all',     icon: '🏆' },
+  { id: 'academy_perfect', icon: '💎' },
 ];
 
 // Returns localized achievement definitions
@@ -118,6 +122,10 @@ export function checkAchievements(statsPatch) {
     perfect_lesson:  !!s.perfectLesson,
     all_rounds:      (s.roundsPlayed || 0) >= 10,
     fichas_reader:   (s.fichasOpened || 0) >= 5,
+    academy_first:   (s.academyLevels || 0) >= 1,
+    academy_3:       (s.academyLevels || 0) >= 3,
+    academy_all:     (s.academyLevels || 0) >= 6,
+    academy_perfect: !!s.academyPerfect,
   };
 
   const all = localizedAll();

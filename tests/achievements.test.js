@@ -46,8 +46,8 @@ describe('achievements.js', () => {
   });
 
   describe('ALL definitions', () => {
-    it('has 14 achievements', () => {
-      expect(ALL.length).toBe(14);
+    it('has 18 achievements', () => {
+      expect(ALL.length).toBe(18);
     });
 
     it('each has id and icon', () => {
@@ -66,7 +66,7 @@ describe('achievements.js', () => {
   describe('getAchievements', () => {
     it('returns all achievements with unlocked status', () => {
       const achs = getAchievements();
-      expect(achs.length).toBe(14);
+      expect(achs.length).toBe(18);
       achs.forEach(a => {
         expect(a).toHaveProperty('unlocked');
         expect(a).toHaveProperty('id');

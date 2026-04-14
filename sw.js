@@ -36,6 +36,9 @@ const CACHE_PATHS = [
   'js/fichas/iba_unforgettables.js',
   'js/fichas/iba_contemporary.js',
   'js/fichas/iba_new_era.js',
+  'js/fichas/diffords.js',
+  'js/academy.js',
+  'js/academy_data.js',
   'js/cookies.js',
   'js/constructor.js',
   'js/firebase-config.js',
@@ -65,7 +68,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v3.6`;
+const STATIC_CACHE_VERSION = `Stirio-v3.7`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

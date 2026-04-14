@@ -11,6 +11,8 @@ import { startBlind, answerBlind, revealNextClue, abortBlind } from './blind.js'
 import { getLang, setLang, t, translateHTML, preloadAllTranslations } from './lang.js';
 import { loadAchievementsFromCloud } from './achievements.js';
 import { loadLearnFromCloud } from './learn.js';
+import { startAcademy, advanceAcademyCard, answerAcademy, advanceAcademy, abortAcademy, getAcademyStats, getAcademyLevels, isLevelUnlocked, loadAcademyFromCloud } from './academy.js';
+import { ACADEMY_LEVELS } from './academy_data.js';
 import { showShareModal, closeShareModal } from './share.js';
 import {
   initRivals, isRivalsReady, ensureAnonymousAuth, waitForFirebaseAuthUid,
@@ -143,7 +145,7 @@ async function init() {
   // Fall back to restoreSession() for previously saved sessions (guest or Google).
   const user = getCurrentUser() || restoreSession();
   if (user) {
-    await Promise.all([loadAchievementsFromCloud(), loadLearnFromCloud()]);
+    await Promise.all([loadAchievementsFromCloud(), loadLearnFromCloud(), loadAcademyFromCloud()]);
     await goToDashboard();
   } else {
     showView('view-login');
@@ -258,6 +260,7 @@ async function goToDashboard() {
   $('journey-streak').textContent = `🔥 ${streak}`;
 
   renderCoursesGrid();
+  renderAcademyBanner();
 
   // ── Tab 2: Jugar ──
   const dailyStatus = getDailyStatus();
@@ -1206,6 +1209,233 @@ function showLessonResult({ xp, correct, total, round, masteryGains, masteryLeve
   translateHTML();
 }
 
+// ─── ACADEMY ─────────────────────────────────────────────────
+let currentAcademyLevelId = null;
+
+function renderAcademyBanner() {
+  const stats = getAcademyStats();
+  const completed = Object.values(stats.levels).filter(l => l.completed).length;
+  $('academy-banner-progress').textContent = `${completed}/${ACADEMY_LEVELS.length}`;
+}
+
+function goToAcademyHub() {
+  const levels = getAcademyLevels();
+  const container = $('academy-levels');
+  container.innerHTML = '';
+
+  levels.forEach((level, i) => {
+    // Connector line between levels
+    if (i > 0) {
+      const conn = document.createElement('div');
+      conn.className = 'academy-level-connector';
+      container.appendChild(conn);
+    }
+
+    const card = document.createElement('div');
+    const stateClass = level.completed ? 'completed' : level.unlocked ? '' : 'locked';
+    card.className = `academy-level-card ${stateClass}`;
+    card.style.setProperty('--level-color', level.color);
+
+    let meta = '';
+    if (level.completed) {
+      meta = `<div class="academy-level-score">${t('academy.best_score')}: ${level.bestScore}%</div>`;
+    } else if (!level.unlocked) {
+      meta = `<div class="academy-lock-icon">🔒</div>`;
+    }
+
+    card.innerHTML = `
+      <div class="academy-level-icon">${level.icon}</div>
+      <div class="academy-level-info">
+        <div class="academy-level-name">${t(level.key)}</div>
+        <div class="academy-level-sub">${t(level.descKey)}</div>
+        <div class="academy-level-meta">${meta}</div>
+      </div>
+    `;
+
+    if (level.unlocked) {
+      card.addEventListener('click', () => beginAcademyLevel(level.id));
+    }
+    container.appendChild(card);
+  });
+
+  showView('view-academy-hub');
+  translateHTML();
+}
+
+function beginAcademyLevel(levelId) {
+  currentAcademyLevelId = levelId;
+  const payload = startAcademy(levelId);
+  if (!payload) return;
+  showView('view-academy-lesson');
+  renderAcademyCard(payload);
+}
+
+function renderAcademyCard(payload) {
+  $('acad-card-wrap').classList.remove('hidden');
+  $('acad-question-body').classList.add('hidden');
+  $('acad-feedback').className = 'lesson-feedback';
+
+  const cardEl = $('acad-card');
+  cardEl.className = `acad-card acad-card-${payload.type}`;
+
+  if (payload.type === 'example') {
+    const ficha = fichas.find(f => f.name === payload.cocktail);
+    _renderMiniFicha(cardEl, ficha);
+  } else {
+    const typeLabels = {
+      theory: '📖 ' + t('academy.theory'),
+      tip:    '💡 ' + t('academy.tip'),
+      note:   '📝 ' + t('academy.bartender_note'),
+    };
+    $('acad-card-type').textContent = typeLabels[payload.type] || '';
+    $('acad-card-icon').textContent = payload.type === 'note' ? '🍸' : payload.type === 'tip' ? '💡' : '📖';
+    $('acad-card-body').innerHTML = t(payload.key);
+  }
+
+  // Progress bar
+  const pct = payload.progress ? (payload.progress.done / payload.progress.total) * 100 : 0;
+  $('acad-progress-fill').style.width = `${pct}%`;
+  $('acad-phase-label').textContent = '📖 ' + t('academy.phase_cards');
+}
+
+function _renderMiniFicha(container, ficha) {
+  if (!ficha) {
+    container.innerHTML = '<div class="acad-card-body">—</div>';
+    return;
+  }
+  $('acad-card-type').textContent = '🍹 ' + t('academy.example');
+  $('acad-card-icon').textContent = ficha.icon || '🍸';
+  container.querySelector('#acad-card-body').innerHTML = `
+    <div class="mini-ficha">
+      <div class="mini-ficha-header">
+        <span class="mini-ficha-icon">${ficha.icon || '🍸'}</span>
+        <span class="mini-ficha-name">${ficha.name}</span>
+      </div>
+      <div class="mini-ficha-details">
+        <div class="mini-ficha-row"><strong>${t('fichas.glass')}:</strong> ${t(ficha.glass)}</div>
+        <div class="mini-ficha-row"><strong>${t('fichas.method')}:</strong> ${t(ficha.method)}</div>
+        <div class="mini-ficha-row"><strong>${t('fichas.garnish')}:</strong> ${t(ficha.garnish)}</div>
+        <div class="mini-ficha-row"><strong>${t('fichas.ingredients')}:</strong></div>
+        <ul class="mini-ficha-ingredients">
+          ${ficha.ingredients.map(i => `<li>${t(i)}</li>`).join('')}
+        </ul>
+      </div>
+      ${ficha.story ? `<div class="mini-ficha-story">${t(ficha.story)}</div>` : ''}
+    </div>
+  `;
+}
+
+function renderAcademyQuestion(payload) {
+  $('acad-card-wrap').classList.add('hidden');
+  $('acad-question-body').classList.remove('hidden');
+  $('acad-feedback').className = 'lesson-feedback';
+  $('acad-phase-label').textContent = '❓ ' + t('academy.phase_assessment');
+  $('acad-q-counter').textContent = `${payload.done + 1} / ${payload.total}`;
+  $('acad-question').textContent = t(payload.question);
+
+  const grid = $('acad-answers');
+  grid.innerHTML = '';
+  payload.answers.forEach((ans, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.dataset.index = i;
+    btn.innerHTML = `<span class="answer-letter">${'ABCD'[i]}</span><span class="answer-text">${t(ans)}</span>`;
+    btn.addEventListener('click', () => handleAcademyAnswer(i));
+    grid.appendChild(btn);
+  });
+
+  // Progress bar
+  const pct = payload.progress ? (payload.progress.done / payload.progress.total) * 100 : 0;
+  $('acad-progress-fill').style.width = `${pct}%`;
+
+  // Animate in
+  const body = $('acad-question-body');
+  body.classList.remove('slide-in');
+  void body.offsetWidth;
+  body.classList.add('slide-in');
+}
+
+function handleAcademyAnswer(selectedIndex) {
+  const result = answerAcademy(selectedIndex);
+  if (!result) return;
+
+  document.querySelectorAll('#acad-answers .answer-btn').forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === result.correctIndex) btn.classList.add('correct');
+    else if (i === result.selectedIndex && !result.correct) btn.classList.add('wrong');
+  });
+
+  $('acad-feedback-icon').textContent = result.correct ? '✅' : '❌';
+  $('acad-feedback-label').textContent = result.correct ? t('lesson.correct') : t('lesson.incorrect');
+  $('acad-feedback-exp').textContent = result.explanation ? t(result.explanation) : '';
+  $('acad-feedback').className = `lesson-feedback show ${result.correct ? 'fb-correct' : 'fb-wrong'}`;
+}
+
+function handleAcademyCardAdvance() {
+  const result = advanceAcademyCard();
+  if (!result) return;
+  if (result.phase === 'card') {
+    renderAcademyCard(result);
+  } else {
+    renderAcademyQuestion(result);
+  }
+}
+
+function handleAcademyContinue() {
+  const result = advanceAcademy();
+  if (!result) return;
+  if (result.done) {
+    showAcademyResult(result);
+  } else {
+    renderAcademyQuestion(result);
+  }
+}
+
+function showAcademyResult(result) {
+  $('ar-emoji').textContent = result.passed ? '🎉' : '📚';
+  $('ar-title').textContent = result.passed ? t('academy.passed') : t('academy.failed');
+  $('ar-correct').textContent = `${result.correct}/${result.total}`;
+  $('ar-score').textContent = `${result.pct}%`;
+  $('ar-xp').textContent = `+${result.xp}`;
+
+  const passEl = $('ar-pass-indicator');
+  passEl.textContent = result.passed
+    ? `✅ ${t('academy.pass_label')}`
+    : `❌ ${t('academy.fail_label')}`;
+  passEl.className = `ar-pass-indicator ${result.passed ? 'passed' : 'failed'}`;
+
+  // Unlock banner
+  const unlockEl = $('ar-unlock-banner');
+  if (result.unlockNext) {
+    $('ar-unlock-text').textContent = `🔓 ${t('academy.level_unlocked')}: ${t(result.nextLevelKey)}`;
+    unlockEl.classList.remove('hidden');
+  } else {
+    unlockEl.classList.add('hidden');
+  }
+
+  // Next button visibility
+  const nextBtn = $('btn-ar-next');
+  if (result.unlockNext || (result.passed && result.levelId < ACADEMY_LEVELS.length - 1)) {
+    nextBtn.classList.remove('hidden');
+  } else {
+    nextBtn.classList.add('hidden');
+  }
+
+  // Achievement check
+  const stats = getStats();
+  const learnStats = getLearnStats();
+  const newly = checkAchievements({
+    academyLevels: result.levelsCompleted,
+    academyPerfect: result.academyPerfect || stats.academyPerfect,
+    xp: learnStats.xp,
+    streak: learnStats.streak,
+  });
+  showNewAchievements(newly);
+
+  showView('view-academy-result');
+  translateHTML();
+}
+
 // ─── LEADERBOARD ─────────────────────────────────────────────
 let currentFilter = null;
 
@@ -1402,6 +1632,25 @@ function bindEvents() {
     if (next) beginLesson(next.id); else goToLearnHub();
   });
   $('btn-lr-home').addEventListener('click', () => goToLearnHub());
+
+  // Academy mode
+  $('btn-academy').addEventListener('click', () => goToAcademyHub());
+  $('btn-back-academy').addEventListener('click', () => goToDashboard());
+  $('btn-quit-academy').addEventListener('click', () => {
+    if (confirm(t('confirm.quit_lesson'))) { abortAcademy(); goToAcademyHub(); }
+  });
+  $('btn-acad-next-card').addEventListener('click', () => handleAcademyCardAdvance());
+  $('btn-acad-continue').addEventListener('click', () => handleAcademyContinue());
+  $('btn-ar-retry').addEventListener('click', () => beginAcademyLevel(currentAcademyLevelId));
+  $('btn-ar-next').addEventListener('click', () => {
+    const nextId = currentAcademyLevelId + 1;
+    if (nextId < ACADEMY_LEVELS.length && isLevelUnlocked(nextId)) {
+      beginAcademyLevel(nextId);
+    } else {
+      goToAcademyHub();
+    }
+  });
+  $('btn-ar-home').addEventListener('click', () => goToAcademyHub());
 
   // Leaderboard back
   $('btn-back-leaderboard').addEventListener('click', () => {
