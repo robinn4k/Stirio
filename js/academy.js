@@ -213,7 +213,7 @@ function _questionPayload() {
     phase: 'question',
     question: q.question,
     answers: q.answers,
-    done: as.questionIndex,
+    current: as.questionIndex,
     total: as.questions.length,
     progress: { done: as.cards.length + as.questionIndex, total: as.cards.length + as.questions.length },
   };

@@ -1444,7 +1444,7 @@ function renderAcademyQuestion(payload) {
   $('acad-question-body').classList.remove('hidden');
   $('acad-feedback').className = 'lesson-feedback';
   $('acad-phase-label').textContent = '❓ ' + t('academy.phase_assessment');
-  $('acad-q-counter').textContent = `${payload.done + 1} / ${payload.total}`;
+  $('acad-q-counter').textContent = `${payload.current + 1} / ${payload.total}`;
   $('acad-question').textContent = t(payload.question);
 
   const grid = $('acad-answers');
@@ -1498,7 +1498,7 @@ function handleAcademyCardAdvance() {
 function handleAcademyContinue() {
   const result = advanceAcademy();
   if (!result) return;
-  if (result.done) {
+  if (result.done === true) {
     showAcademyResult(result);
   } else {
     renderAcademyQuestion(result);
