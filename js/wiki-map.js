@@ -67,6 +67,67 @@ const SPIRIT_REGIONS = [
   { id: 'absinthe', spirit: 'eaudevie', lat: 46.77, lng: 6.63, icon: '🧚', origin: 'Switzerland / France', place: 'Val-de-Travers', dateCreated: '1792' },
   // ── Shochu ──
   { id: 'shochu', spirit: 'sake', lat: 31.60, lng: 130.56, icon: '🇯🇵', origin: 'Japan', place: 'Kagoshima / Kyushu', dateCreated: 's. XVI' },
+
+  // ══ VINOS FORTIFICADOS ══
+  // ── Jerez / Sherry ──
+  { id: 'fino-jerez', spirit: 'fortified', lat: 36.69, lng: -6.14, icon: '🍷', origin: 'Spain', place: 'Jerez de la Frontera', dateCreated: 's. XVIII' },
+  { id: 'manzanilla', spirit: 'fortified', lat: 36.78, lng: -6.35, icon: '🌊', origin: 'Spain', place: 'Sanlúcar de Barrameda', dateCreated: 's. XVIII' },
+  // ── Oporto ──
+  { id: 'porto', spirit: 'fortified', lat: 41.14, lng: -8.61, icon: '🇵🇹', origin: 'Portugal', place: 'Douro Valley', dateCreated: 's. XVII' },
+  // ── Madeira ──
+  { id: 'madeira', spirit: 'fortified', lat: 32.63, lng: -16.90, icon: '🏝️', origin: 'Portugal', place: 'Madeira Island', dateCreated: 's. XV' },
+
+  // ══ VERMUTS Y APERITIVOS ══
+  { id: 'vermut-rosso', spirit: 'vermouth', lat: 45.07, lng: 7.69, icon: '🍸', origin: 'Italy', place: 'Turin', dateCreated: '1786' },
+  { id: 'vermut-dry', spirit: 'vermouth', lat: 43.18, lng: 3.00, icon: '🌿', origin: 'France', place: 'Marseillan', dateCreated: '1813' },
+  { id: 'dubonnet', spirit: 'vermouth', lat: 48.86, lng: 2.35, icon: '🇫🇷', origin: 'France', place: 'Paris', dateCreated: 's. XIX' },
+  { id: 'lillet', spirit: 'vermouth', lat: 44.78, lng: -0.30, icon: '🍋', origin: 'France', place: 'Podensac, Bordeaux', dateCreated: '1872' },
+
+  // ══ LICORES MONASTICOS Y DE HIERBAS ══
+  { id: 'chartreuse', spirit: 'liqueur', lat: 45.37, lng: 5.59, icon: '🟢', origin: 'France', place: 'Voiron', dateCreated: '1605' },
+  { id: 'benedictine', spirit: 'liqueur', lat: 49.76, lng: 0.38, icon: '✝️', origin: 'France', place: 'Fécamp', dateCreated: '1510' },
+  { id: 'galliano', spirit: 'liqueur', lat: 43.32, lng: 11.33, icon: '🌟', origin: 'Italy', place: 'Tuscany', dateCreated: '1896' },
+  { id: 'strega', spirit: 'liqueur', lat: 41.13, lng: 14.78, icon: '🧙', origin: 'Italy', place: 'Benevento', dateCreated: '1860' },
+  { id: 'drambuie', spirit: 'liqueur', lat: 55.95, lng: -3.19, icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', origin: 'Scotland', place: 'Edinburgh', dateCreated: '1745' },
+
+  // ══ LICORES CITRICOS ══
+  { id: 'cointreau', spirit: 'liqueur', lat: 47.47, lng: -0.56, icon: '🍊', origin: 'France', place: 'Angers', dateCreated: '1875' },
+  { id: 'grand-marnier', spirit: 'liqueur', lat: 45.69, lng: -0.33, icon: '🥃', origin: 'France', place: 'Cognac region', dateCreated: '1880' },
+  { id: 'curacao', spirit: 'liqueur', lat: 12.17, lng: -68.98, icon: '🏝️', origin: 'Curaçao / Netherlands', place: 'Curaçao Island', dateCreated: 's. XIX' },
+
+  // ══ LICORES DE FRUTAS Y FLORES ══
+  { id: 'maraschino', spirit: 'liqueur', lat: 44.12, lng: 15.23, icon: '🍒', origin: 'Croatia / Italy', place: 'Zadar', dateCreated: '1821' },
+  { id: 'st-germain', spirit: 'liqueur', lat: 45.90, lng: 6.12, icon: '🌸', origin: 'France', place: 'French Alps', dateCreated: '2007' },
+  { id: 'chambord', spirit: 'liqueur', lat: 47.62, lng: 1.52, icon: '👑', origin: 'France', place: 'Loire Valley', dateCreated: '1685' },
+  { id: 'creme-cassis', spirit: 'liqueur', lat: 47.32, lng: 5.04, icon: '🫐', origin: 'France', place: 'Burgundy', dateCreated: '1841' },
+
+  // ══ LICORES DE SEMILLAS Y CREMAS ══
+  { id: 'amaretto', spirit: 'liqueur', lat: 45.70, lng: 8.63, icon: '🌰', origin: 'Italy', place: 'Saronno', dateCreated: '1525' },
+  { id: 'frangelico', spirit: 'liqueur', lat: 44.70, lng: 8.04, icon: '🌰', origin: 'Italy', place: 'Piedmont', dateCreated: 's. XVIII' },
+  { id: 'kahlua', spirit: 'liqueur', lat: 19.20, lng: -96.13, icon: '☕', origin: 'Mexico', place: 'Veracruz', dateCreated: '1936' },
+  { id: 'baileys', spirit: 'liqueur', lat: 53.35, lng: -6.26, icon: '🥛', origin: 'Ireland', place: 'Dublin', dateCreated: '1974' },
+
+  // ══ AMAROS ITALIANOS ══
+  { id: 'fernet-branca', spirit: 'amaro', lat: 45.46, lng: 9.19, icon: '🌿', origin: 'Italy', place: 'Milan', dateCreated: '1845' },
+  { id: 'amaro-averna', spirit: 'amaro', lat: 37.49, lng: 14.06, icon: '🍋', origin: 'Italy', place: 'Caltanissetta, Sicily', dateCreated: '1868' },
+  { id: 'amaro-montenegro', spirit: 'amaro', lat: 44.49, lng: 11.34, icon: '🏔️', origin: 'Italy', place: 'Bologna', dateCreated: '1885' },
+  { id: 'cynar', spirit: 'amaro', lat: 45.41, lng: 11.88, icon: '🌿', origin: 'Italy', place: 'Padua', dateCreated: '1952' },
+  { id: 'ramazzotti', spirit: 'amaro', lat: 45.47, lng: 9.18, icon: '🍊', origin: 'Italy', place: 'Milan', dateCreated: '1815' },
+  { id: 'nonino', spirit: 'amaro', lat: 46.10, lng: 13.24, icon: '🍇', origin: 'Italy', place: 'Friuli', dateCreated: '1933' },
+  { id: 'braulio', spirit: 'amaro', lat: 46.47, lng: 10.37, icon: '🏔️', origin: 'Italy', place: 'Bormio', dateCreated: '1875' },
+
+  // ══ AMARGOS CENTROEUROPEOS ══
+  { id: 'jagermeister', spirit: 'amaro', lat: 52.16, lng: 10.53, icon: '🦌', origin: 'Germany', place: 'Wolfenbüttel', dateCreated: '1934' },
+  { id: 'underberg', spirit: 'amaro', lat: 51.43, lng: 6.60, icon: '🌿', origin: 'Germany', place: 'Rheinberg', dateCreated: '1846' },
+
+  // ══ APERITIVOS AMARGOS ROJOS ══
+  { id: 'campari', spirit: 'aperitivo', lat: 45.47, lng: 9.19, icon: '🔴', origin: 'Italy', place: 'Milan', dateCreated: '1860' },
+  { id: 'aperol', spirit: 'aperitivo', lat: 45.41, lng: 11.88, icon: '🧡', origin: 'Italy', place: 'Padua', dateCreated: '1919' },
+  { id: 'suze', spirit: 'aperitivo', lat: 48.86, lng: 2.35, icon: '💛', origin: 'France', place: 'Paris', dateCreated: '1889' },
+
+  // ══ COCKTAIL BITTERS ══
+  { id: 'angostura', spirit: 'bitters', lat: 10.65, lng: -61.50, icon: '🏷️', origin: 'Trinidad & Tobago', place: 'Port of Spain', dateCreated: '1824' },
+  { id: 'peychauds', spirit: 'bitters', lat: 29.95, lng: -90.07, icon: '⚜️', origin: 'USA', place: 'New Orleans', dateCreated: '1830' },
 ];
 
 // Spirit color mapping for markers
@@ -88,6 +149,12 @@ const SPIRIT_COLORS = {
   raki: '#9b59b6',
   ouzo: '#34495e',
   eaudevie: '#a3d977',
+  fortified: '#722f37',
+  vermouth: '#c39bd3',
+  liqueur: '#f4d03f',
+  amaro: '#6e2c00',
+  aperitivo: '#e74c3c',
+  bitters: '#d4ac0d',
 };
 
 /**
