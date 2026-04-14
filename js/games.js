@@ -1561,6 +1561,7 @@ export function initGames(containerId, onNavigate) {
   const container = document.getElementById(containerId);
   const w = container.clientWidth;
   const h = container.clientHeight;
+  const dpr = Math.min(window.devicePixelRatio || 1, 3);
 
   game = new Phaser.Game({
     type: Phaser.AUTO,
@@ -1569,10 +1570,24 @@ export function initGames(containerId, onNavigate) {
     height: h,
     backgroundColor: '#0d0508',
     scale: {
-      mode: Phaser.Scale.RESIZE,
-      autoCenter: Phaser.Scale.CENTER_BOTH,
+      mode: Phaser.Scale.NONE,
+      zoom: dpr,
+    },
+    render: {
+      antialias: true,
+      roundPixels: false,
+      transparent: false,
     },
     scene: [MenuScene, MixologyRushScene, NinjaShakerScene, CocktailTinderScene, GameResultScene],
+  });
+
+  // Force canvas CSS size to fill container (canvas internal res is w*dpr × h*dpr)
+  requestAnimationFrame(() => {
+    const canvas = container.querySelector('canvas');
+    if (canvas) {
+      canvas.style.width = '100%';
+      canvas.style.height = '100%';
+    }
   });
 }
 
