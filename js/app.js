@@ -247,14 +247,16 @@ async function goToDashboard() {
   const best = stats?.best || 0;
   const avg = games > 0 ? Math.round((stats?.total || 0) / games) : 0;
 
+  // Compute level early so header can use it
+  const { xp, streak } = getLearnStats();
+  const lvl = getLevelInfo(xp);
+
   $('stat-games').textContent = games;
   $('stat-best').textContent = best;
   $('stat-avg').textContent = avg;
-  // user-best removed (Task 1.1) — level shown instead (Task 1.2)
+  $('user-level').textContent = t('learn.level', { n: lvl.level });
 
   // ── Tab 1: Aprender ──
-  const { xp, streak } = getLearnStats();
-  const lvl = getLevelInfo(xp);
   $('journey-level-badge').textContent = t('learn.level', { n: lvl.level });
   $('journey-xp-fill').style.width = `${lvl.pct}%`;
   $('journey-xp-text').textContent = lvl.maxLevel ? t('learn.max_level') : `${lvl.cur} / ${lvl.need} XP`;
