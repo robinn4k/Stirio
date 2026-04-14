@@ -26,6 +26,7 @@ import {
 import { getLocalizedRounds } from './questions.js';
 import { getBotName, scheduleBotAnswer, DIFFICULTIES } from './bot.js';
 import { initWiki, bindWikiEvents } from './wiki.js';
+import { initGames, destroyGames } from './games.js';
 
 // ─── DOM helpers ─────────────────────────────────────────────
 const $ = id => document.getElementById(id);
@@ -606,6 +607,24 @@ function startDailyChallenge() {
       });
       showNewAchievements(newly);
       await handleRoundComplete(result);
+    }
+  });
+}
+
+// ─── MINI GAMES (Phaser) ─────────────────────────────────────
+
+function goToGames() {
+  showView('view-games');
+  translateHTML();
+  initGames('phaser-container', (action, payload) => {
+    if (action === 'home') {
+      destroyGames();
+      goToDashboard();
+    } else if (action === 'learn-recipe' && payload) {
+      destroyGames();
+      const ficha = fichas.find(f => f.name === payload);
+      if (ficha) openFichaDetail(ficha);
+      else goToDashboard();
     }
   });
 }
@@ -1568,6 +1587,10 @@ function bindEvents() {
   $('btn-fichas').addEventListener('click', () => goToFichas());
   $('btn-achievements').addEventListener('click', () => goToAchievements());
   $('btn-duel').addEventListener('click', () => goToDuelMenu());
+  $('btn-games').addEventListener('click', () => goToGames());
+
+  // Mini games (Phaser)
+  $('btn-quit-games').addEventListener('click', () => { destroyGames(); goToDashboard(); });
 
   // Speed mode
   $('btn-quit-speed').addEventListener('click', () => { if (confirm(t('confirm.quit'))) { abortSpeed(); goToDashboard(); } });
