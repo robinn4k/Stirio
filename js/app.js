@@ -38,6 +38,7 @@ const showView = id => {
 const setLoading = show => $('loading').classList.toggle('hidden', !show);
 const toast = (msg, type = 'info') => {
   const el = $('toast');
+  if (el.classList.contains('toast-update')) return;
   el.textContent = msg;
   el.className = `toast toast-${type} show`;
   clearTimeout(el._t);
@@ -1282,7 +1283,7 @@ function goToAcademyHub() {
 
     let meta = '';
     if (level.completed) {
-      meta = `<div class="academy-level-score">${t('academy.best_score', { n: level.bestScore })}</div>`;
+      meta = `<div class="academy-level-score">✓ ${t('academy.completed')}</div>`;
     } else if (!level.unlocked) {
       meta = `<div class="academy-lock-icon">🔒</div>`;
     }
@@ -1318,17 +1319,14 @@ function goToAcademyHub() {
           name = t(lesson.key);
           completed = seqItem.completed;
           unlocked = seqItem.unlocked;
-          if (completed) {
-            scoreHtml = `<span class="academy-lesson-score">${t('academy.best_score', { n: seqItem.bestScore })}</span>`;
-          }
         } else {
           const round = learnRounds.find(r => r.id === seqItem.roundId);
           name = round ? t(round.title) : `Round ${seqItem.roundId}`;
           completed = seqItem.completed;
           unlocked = seqItem.unlocked;
-          if (completed) {
-            scoreHtml = `<span class="academy-lesson-score">✓</span>`;
-          }
+        }
+        if (completed) {
+          scoreHtml = `<span class="academy-lesson-score">✓</span>`;
         }
 
         const lState = completed ? 'completed' : unlocked ? '' : 'locked';
@@ -1362,6 +1360,13 @@ function goToAcademyHub() {
       container.appendChild(lessonList);
     }
   });
+
+  // Free Practice button
+  const fpCard = document.createElement('div');
+  fpCard.className = 'journey-cta-card journey-cta-secondary academy-free-practice';
+  fpCard.innerHTML = `<span>${t('learn.free_practice')}</span><span class="journey-arrow">→</span>`;
+  fpCard.addEventListener('click', () => { lessonEntryPoint = 'learn'; goToLearnHub(); });
+  container.appendChild(fpCard);
 
   showView('view-academy-hub');
   translateHTML();
@@ -1740,8 +1745,6 @@ function bindEvents() {
   $('btn-er-home').addEventListener('click', () => goToDashboard());
 
   // Learning mode
-  $('btn-go-learn').addEventListener('click', () => goToAcademyHub());
-  $('btn-free-practice').addEventListener('click', () => { lessonEntryPoint = 'learn'; goToLearnHub(); });
   $('btn-back-learn').addEventListener('click', () => goToDashboard());
   $('btn-back-to-academy').addEventListener('click', () => goToAcademyHub());
   $('btn-clear-course-filter').addEventListener('click', () => goToLearnHub());
