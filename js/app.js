@@ -25,7 +25,7 @@ import {
 } from './rivals.js';
 import { getLocalizedRounds } from './questions.js';
 import { getBotName, scheduleBotAnswer, DIFFICULTIES } from './bot.js';
-import { initWiki, bindWikiEvents } from './wiki.js';
+import { initWiki, bindWikiEvents, openArticle } from './wiki.js';
 import { initGames, destroyGames } from './games.js';
 
 // ─── DOM helpers ─────────────────────────────────────────────
@@ -1552,8 +1552,7 @@ function bindEvents() {
     if (wikiBtn) wikiBtn.click();
   });
   if ($('btn-map')) $('btn-map').addEventListener('click', () => {
-    const wikiBtn = $('btn-wiki');
-    if (wikiBtn) wikiBtn.click();
+    openArticle('spirits', 'world-map');
   });
 
   // Dashboard header
