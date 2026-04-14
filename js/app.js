@@ -1508,9 +1508,9 @@ function handleAcademyContinue() {
 function showAcademyResult(result) {
   $('ar-emoji').textContent = result.passed ? '🎉' : '📚';
   $('ar-title').textContent = result.passed ? t('academy.passed') : t('academy.failed');
-  $('ar-correct').textContent = `${result.correct}/${result.total}`;
-  $('ar-score').textContent = `${result.pct}%`;
-  $('ar-xp').textContent = `+${result.xp}`;
+  $('ar-correct').textContent = `${result.correct ?? 0}/${result.total ?? 0}`;
+  $('ar-score').textContent = `${result.pct ?? 0}%`;
+  $('ar-xp').textContent = `+${result.xp ?? 0}`;
 
   const passEl = $('ar-pass-indicator');
   passEl.textContent = result.passed
