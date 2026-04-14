@@ -224,6 +224,24 @@ const COURSES = [
   { id: 'history',   icon: '📜', key: 'course.history',    rounds: [5, 10, 15] },
 ];
 
+// Maps each academy level to thematically related learn round IDs
+const ACADEMY_PRACTICE_MAP = {
+  0: [3, 4, 8, 9, 13, 14],       // Foundations → Techniques + Tools
+  1: [1, 6],                       // Highballs & Collins → Cocktails basics
+  2: [1, 11, 16, 17],             // Sours & Daisies → Cocktail families
+  3: [2, 7, 12],                   // Spirit-Forward → Spirits
+  4: [18, 19, 20, 21],            // Tropical & Tiki → Cocktail advanced
+  5: [5, 10, 15, 22, 23, 24],    // Advanced → History/Wines + remaining
+};
+
+function getPracticeRoundsForLevel(levelId) {
+  const roundIds = ACADEMY_PRACTICE_MAP[levelId] || [];
+  const allRounds = getLearnRounds();
+  return allRounds.filter(r => roundIds.includes(r.id));
+}
+
+let lessonEntryPoint = 'learn'; // 'academy' | 'learn'
+
 async function goToDashboard() {
   const user = getCurrentUser();
   if (!user) { showView('view-login'); return; }
@@ -262,8 +280,8 @@ async function goToDashboard() {
   $('journey-xp-text').textContent = lvl.maxLevel ? t('learn.max_level') : `${lvl.cur} / ${lvl.need} XP`;
   $('journey-streak').textContent = `🔥 ${streak}`;
 
-  renderCoursesGrid();
   renderAcademyBanner();
+  // Courses grid removed from dashboard — now lives inside Academy Hub
 
   // ── Tab 2: Jugar ──
   const dailyStatus = getDailyStatus();
@@ -1060,7 +1078,7 @@ function goToLearnHub(course = null) {
         </div>
       </div>
     `;
-    card.addEventListener('click', () => beginLesson(r.id));
+    card.addEventListener('click', () => { lessonEntryPoint = 'learn'; beginLesson(r.id); });
     container.appendChild(card);
   });
 
@@ -1235,8 +1253,20 @@ let currentAcademyLevelId = null;
 
 function renderAcademyBanner() {
   const stats = getAcademyStats();
+  const levels = getAcademyLevels();
   const completed = Object.values(stats.levels).filter(l => l.completed).length;
   $('academy-banner-progress').textContent = `${completed}/${ACADEMY_LEVELS.length}`;
+
+  // Show current/next level name in banner subtitle
+  const nextLevel = levels.find(l => l.unlocked && !l.completed) || levels[levels.length - 1];
+  const subEl = $('academy-banner-sub');
+  if (subEl && nextLevel) {
+    if (completed >= ACADEMY_LEVELS.length) {
+      subEl.textContent = t('academy.all_completed');
+    } else {
+      subEl.textContent = `${t('academy.current_level')}: ${t(nextLevel.key)}`;
+    }
+  }
 }
 
 function goToAcademyHub() {
@@ -1259,9 +1289,18 @@ function goToAcademyHub() {
 
     let meta = '';
     if (level.completed) {
-      meta = `<div class="academy-level-score">${t('academy.best_score')}: ${level.bestScore}%</div>`;
+      meta = `<div class="academy-level-score">${t('academy.best_score', { n: level.bestScore })}</div>`;
     } else if (!level.unlocked) {
       meta = `<div class="academy-lock-icon">🔒</div>`;
+    }
+
+    // Practice mastery for this level
+    const practiceRounds = getPracticeRoundsForLevel(level.id);
+    let practiceMasteryHtml = '';
+    if (level.unlocked && practiceRounds.length > 0) {
+      const avgMastery = practiceRounds.reduce((sum, r) => sum + (r.progress?.masteryScore || 0), 0) / practiceRounds.length;
+      const masteryPct = Math.round(avgMastery * 100);
+      practiceMasteryHtml = `<div class="academy-level-practice-mastery">${t('academy.practice')}: ${masteryPct}%</div>`;
     }
 
     card.innerHTML = `
@@ -1270,6 +1309,7 @@ function goToAcademyHub() {
         <div class="academy-level-name">${t(level.key)}</div>
         <div class="academy-level-sub">${t(level.descKey)}</div>
         <div class="academy-level-meta">${meta}</div>
+        ${practiceMasteryHtml}
       </div>
     `;
 
@@ -1277,6 +1317,59 @@ function goToAcademyHub() {
       card.addEventListener('click', () => beginAcademyLevel(level.id));
     }
     container.appendChild(card);
+
+    // Practice section (collapsible) for unlocked levels
+    if (level.unlocked && practiceRounds.length > 0) {
+      const practiceSection = document.createElement('div');
+      practiceSection.className = 'academy-practice-section';
+
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'academy-practice-toggle';
+      toggleBtn.innerHTML = `<span class="academy-practice-toggle-icon">▶</span> ${t('academy.practice_toggle', { n: practiceRounds.length })}`;
+      toggleBtn.addEventListener('click', () => {
+        practiceSection.classList.toggle('expanded');
+        toggleBtn.querySelector('.academy-practice-toggle-icon').textContent =
+          practiceSection.classList.contains('expanded') ? '▼' : '▶';
+      });
+      container.appendChild(toggleBtn);
+
+      const practiceList = document.createElement('div');
+      practiceList.className = 'academy-practice-list';
+      practiceRounds.forEach(r => {
+        const { sessionCount, masteryLevel, masteryScore } = r.progress;
+        const masteryInfo = MASTERY_LEVELS[masteryLevel] || MASTERY_LEVELS[0];
+        const masteryPct = Math.round(masteryScore * 100);
+        const pips = [0, 1, 2].map(pi =>
+          `<span class="mastery-pip${pi < masteryLevel ? ' filled' : ''}"></span>`
+        ).join('');
+
+        const rCard = document.createElement('div');
+        rCard.className = 'academy-practice-round';
+        rCard.style.setProperty('--round-color', r.color);
+        rCard.innerHTML = `
+          <div class="lesson-card-icon">${r.icon}</div>
+          <div class="lesson-card-info">
+            <div class="lesson-card-title">${t(r.title)}</div>
+            <div class="lesson-card-progress">
+              <div class="lesson-card-bar"><div class="lesson-card-bar-fill" style="width:${masteryPct}%"></div></div>
+            </div>
+            <div class="lesson-card-mastery">
+              <span class="mastery-pips">${pips}</span>
+              <span class="mastery-label-text">${masteryInfo.icon} ${t('learn.mastery_' + (masteryInfo.key || 'novato'))}</span>
+            </div>
+          </div>
+        `;
+        rCard.addEventListener('click', (e) => {
+          e.stopPropagation();
+          lessonEntryPoint = 'academy';
+          beginLesson(r.id);
+        });
+        practiceList.appendChild(rCard);
+      });
+
+      practiceSection.appendChild(practiceList);
+      container.appendChild(practiceSection);
+    }
   });
 
   showView('view-academy-hub');
@@ -1618,11 +1711,17 @@ function bindEvents() {
   $('btn-er-home').addEventListener('click', () => goToDashboard());
 
   // Learning mode
-  $('btn-go-learn').addEventListener('click', () => goToLearnHub());
+  $('btn-go-learn').addEventListener('click', () => goToAcademyHub());
+  $('btn-free-practice').addEventListener('click', () => { lessonEntryPoint = 'learn'; goToLearnHub(); });
   $('btn-back-learn').addEventListener('click', () => goToDashboard());
+  $('btn-back-to-academy').addEventListener('click', () => goToAcademyHub());
   $('btn-clear-course-filter').addEventListener('click', () => goToLearnHub());
   $('btn-quit-lesson').addEventListener('click', () => {
-    if (confirm(t('confirm.quit_lesson'))) { abortLesson(); goToLearnHub(); }
+    if (confirm(t('confirm.quit_lesson'))) {
+      abortLesson();
+      if (lessonEntryPoint === 'academy') goToAcademyHub();
+      else goToLearnHub();
+    }
   });
   $('btn-lesson-theory-continue').addEventListener('click', () => handleTheoryContinue());
   $('btn-lesson-continue').addEventListener('click', () => handleLessonContinue());
@@ -1631,9 +1730,14 @@ function bindEvents() {
     const rounds = getLearnRounds();
     const idx = rounds.findIndex(r => r.id === currentLessonRoundId);
     const next = rounds[idx + 1];
-    if (next) beginLesson(next.id); else goToLearnHub();
+    if (next) beginLesson(next.id);
+    else if (lessonEntryPoint === 'academy') goToAcademyHub();
+    else goToLearnHub();
   });
-  $('btn-lr-home').addEventListener('click', () => goToLearnHub());
+  $('btn-lr-home').addEventListener('click', () => {
+    if (lessonEntryPoint === 'academy') goToAcademyHub();
+    else goToLearnHub();
+  });
 
   // Academy mode
   $('btn-academy').addEventListener('click', () => goToAcademyHub());

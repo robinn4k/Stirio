@@ -2889,6 +2889,54 @@ img { display: block; max-width: 100%; }
   margin: 0 0 0 37px;
 }
 
+.academy-level-practice-mastery {
+  font-size: .7rem; color: var(--text-muted); margin-top: 4px;
+}
+
+/* ── Academy Practice Sections ── */
+.academy-practice-toggle {
+  display: flex; align-items: center; gap: 8px;
+  background: none; border: none; color: var(--gold);
+  font-size: .8rem; font-weight: 600; font-family: inherit;
+  cursor: pointer; padding: 8px 16px 4px 16px;
+  transition: color .15s;
+}
+.academy-practice-toggle:hover { color: var(--text); }
+.academy-practice-toggle-icon {
+  font-size: .65rem; transition: transform .2s;
+}
+.academy-practice-section .academy-practice-list {
+  max-height: 0; overflow: hidden; transition: max-height .3s ease;
+  padding: 0 16px;
+}
+.academy-practice-section.expanded .academy-practice-list {
+  max-height: 1200px;
+}
+.academy-practice-round {
+  display: flex; align-items: center; gap: 12px; padding: 12px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-left: 3px solid var(--round-color, var(--gold));
+  border-radius: var(--radius); margin-bottom: 8px;
+  cursor: pointer; transition: transform .15s, box-shadow .15s;
+}
+.academy-practice-round:hover { transform: translateX(3px); box-shadow: var(--shadow); }
+
+/* ── Free Practice CTA (secondary) ── */
+.journey-cta-secondary {
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text-muted); font-size: .85rem; margin-top: 0;
+}
+.journey-cta-secondary:hover { color: var(--text); border-color: var(--gold); }
+
+/* ── Learn Breadcrumb ── */
+.learn-breadcrumb { padding: 8px 16px 0; }
+.learn-breadcrumb-btn {
+  background: none; border: none; color: var(--gold);
+  font-size: .8rem; font-family: inherit; cursor: pointer;
+  padding: 4px 0;
+}
+.learn-breadcrumb-btn:hover { color: var(--text); }
+
 /* ── Academy Cards ── */
 .acad-card-wrap {
   flex: 1; display: flex; flex-direction: column;
