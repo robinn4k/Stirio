@@ -42,6 +42,8 @@ const CACHE_PATHS = [
   'js/cookies.js',
   'js/constructor.js',
   'js/games.js',
+  'js/game-audio.js',
+  'js/game-fx.js',
   'js/firebase-config.js',
   // Wiki 3D modules
   'js/wiki.js',
@@ -69,7 +71,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v4.2`;
+const STATIC_CACHE_VERSION = `Stirio-v4.3`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
