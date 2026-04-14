@@ -275,17 +275,7 @@ img { display: block; max-width: 100%; }
 .section-count { font-size: .8rem; color: var(--text-muted); font-weight: 700; }
 
 /* ═══ TAB 1: APRENDER ═══ */
-/* Journey card */
-.journey-card {
-  background: linear-gradient(135deg, var(--gold)18, var(--surface));
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 16px; cursor: pointer;
-  transition: transform .15s, box-shadow .2s;
-}
-.journey-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-.journey-card:active { transform: scale(.98); }
-.journey-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+/* Journey XP elements (now inside academy banner) */
 .journey-level {
   font-size: .8rem; font-weight: 800; color: var(--bg);
   background: var(--gold); border-radius: 8px; padding: 4px 10px;
@@ -301,10 +291,6 @@ img { display: block; max-width: 100%; }
 }
 .journey-xp-text { font-size: .7rem; color: var(--text-muted); margin-top: 3px; }
 .journey-streak { font-size: .95rem; font-weight: 700; color: var(--gold); white-space: nowrap; }
-.journey-cta {
-  display: flex; justify-content: space-between; align-items: center;
-  font-size: .85rem; font-weight: 600; color: var(--gold-light);
-}
 .journey-arrow { font-size: 1.2rem; }
 
 /* Courses grid */
@@ -2801,19 +2787,34 @@ img { display: block; max-width: 100%; }
 
 /* ── Dashboard Banner ── */
 .academy-banner {
-  display: flex; align-items: center; gap: 14px;
   padding: 18px 16px; border-radius: var(--radius-lg);
   background: linear-gradient(135deg, #1a0a20 0%, #2a1535 100%);
   border: 1px solid var(--border);
   cursor: pointer; transition: transform .15s, box-shadow .15s;
 }
 .academy-banner:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.academy-banner-top { display: flex; align-items: center; gap: 14px; }
 .academy-banner-icon { font-size: 2rem; }
 .academy-banner-info { flex: 1; }
 .academy-banner-title { font-weight: 700; color: var(--text); font-size: 1rem; }
 .academy-banner-sub { font-size: .75rem; color: var(--text-muted); margin-top: 2px; }
 .academy-banner-progress { font-size: .85rem; color: var(--gold); font-weight: 700; }
 .academy-banner-arrow { color: var(--gold); font-size: 1.2rem; }
+.academy-xp-row {
+  display: flex; align-items: center; gap: 12px;
+  margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.journey-cta-card {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 8px; padding: 12px 16px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--gold)18, var(--surface));
+  border: 1px solid var(--border);
+  cursor: pointer; font-size: .85rem; font-weight: 600; color: var(--gold-light);
+  transition: transform .15s, box-shadow .15s;
+}
+.journey-cta-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.journey-cta-card:active { transform: scale(.98); }
 
 /* ── Academy Hub ── */
 .academy-hub-body { padding: 0 0 24px; flex: 1; overflow-y: auto; }
