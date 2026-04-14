@@ -1521,7 +1521,7 @@ function showAcademyResult(result) {
   // Unlock banner
   const unlockEl = $('ar-unlock-banner');
   if (result.unlockNext) {
-    $('ar-unlock-text').textContent = `🔓 ${t('academy.level_unlocked')}: ${t(result.nextLevelKey)}`;
+    $('ar-unlock-text').textContent = `🔓 ${t('academy.level_unlocked', { n: result.levelId + 2 })}: ${t(result.nextLevelKey)}`;
     unlockEl.classList.remove('hidden');
   } else {
     unlockEl.classList.add('hidden');
