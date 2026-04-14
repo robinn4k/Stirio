@@ -293,6 +293,20 @@ img { display: block; max-width: 100%; }
 .journey-streak { font-size: .95rem; font-weight: 700; color: var(--gold); white-space: nowrap; }
 .journey-arrow { font-size: 1.2rem; }
 
+/* Academy container */
+.academy-container {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 0;
+  overflow: hidden;
+}
+.academy-container .academy-banner { border-radius: 0; border: none; }
+.academy-container .journey-cta-card {
+  margin: 0 16px; border-radius: var(--radius);
+}
+.academy-container .courses-grid {
+  padding: 12px 16px 16px;
+}
+
 /* Courses grid */
 .courses-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
