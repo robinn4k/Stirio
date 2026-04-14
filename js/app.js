@@ -334,11 +334,11 @@ function renderProgressTab(stats) {
   });
 
   // Leaderboard preview (top 5)
-  fetchLeaderboard(null).then(scores => {
+  fetchLeaderboard().then(entries => {
     const list = $('lb-preview-list');
     list.innerHTML = '';
     const user = getCurrentUser();
-    scores.slice(0, 5).forEach((entry, i) => {
+    entries.slice(0, 5).forEach((entry, i) => {
       const isMe = user && entry.uid === user.uid;
       const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
       const item = document.createElement('div');
@@ -346,11 +346,11 @@ function renderProgressTab(stats) {
       item.innerHTML = `
         <div class="lb-rank">${medal}</div>
         <div class="lb-info"><div class="lb-name">${entry.name}</div></div>
-        <div class="lb-score">${entry.score} pts</div>
+        <div class="lb-level-badge">${t('learn.level', { n: entry.level || 1 })}</div>
       `;
       list.appendChild(item);
     });
-    if (scores.length === 0) {
+    if (entries.length === 0) {
       list.innerHTML = `<div class="leaderboard-empty">${t('leaderboard.empty')}</div>`;
     }
   });
@@ -1463,62 +1463,39 @@ let currentFilter = null;
 async function goToLeaderboard(fromView) {
   $('btn-back-leaderboard').dataset.from = fromView || 'view-dashboard';
   setLoading(true);
-  await renderLeaderboard(null);
-  buildLeaderboardFilters();
+  $('leaderboard-filters').innerHTML = '';
+  await renderLeaderboard();
   showView('view-leaderboard');
   translateHTML();
   setLoading(false);
 }
 
-function buildLeaderboardFilters() {
-  const bar = $('leaderboard-filters');
-  bar.innerHTML = `<button class="filter-btn active" data-filter="all">${t('leaderboard.all')}</button>`;
-  const rounds = getRounds();
-  rounds.forEach(r => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn';
-    btn.dataset.filter = r.id;
-    btn.textContent = r.icon + ' ' + t(r.title);
-    bar.appendChild(btn);
-  });
-  bar.addEventListener('click', async e => {
-    const btn = e.target.closest('.filter-btn');
-    if (!btn) return;
-    bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter === 'all' ? null : parseInt(btn.dataset.filter);
-    currentFilter = filter;
-    setLoading(true);
-    await renderLeaderboard(filter);
-    setLoading(false);
-  });
-}
-
-async function renderLeaderboard(roundId) {
-  const scores = await fetchLeaderboard(roundId);
+async function renderLeaderboard() {
+  const entries = await fetchLeaderboard();
   const user = getCurrentUser();
   const list = $('leaderboard-list');
   list.innerHTML = '';
 
-  if (scores.length === 0) {
+  if (entries.length === 0) {
     list.innerHTML = `<div class="leaderboard-empty">${t('leaderboard.empty')}</div>`;
     return;
   }
 
-  scores.forEach((entry, i) => {
+  entries.forEach((entry, i) => {
     const isMe = user && entry.uid === user.uid;
     const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
-    const dateLang = getLang() === 'en' ? 'en-US' : 'es-ES';
-    const date = new Date(entry.date).toLocaleDateString(dateLang, { day: '2-digit', month: 'short' });
+    const level = entry.level || 1;
+    const xp = entry.xpTotal || 0;
+    const streak = entry.streakDays || 0;
     const item = document.createElement('div');
     item.className = 'leaderboard-entry' + (isMe ? ' leaderboard-me' : '');
     item.innerHTML = `
       <div class="lb-rank">${medal}</div>
       <div class="lb-info">
         <div class="lb-name">${entry.name}${isMe ? ` <span class="lb-you">${t('leaderboard.you')}</span>` : ''}</div>
-        <div class="lb-meta">${entry.roundTitle} · ${date}</div>
+        <div class="lb-meta">${xp} XP · 🔥 ${streak} ${t('leaderboard.days')}</div>
       </div>
-      <div class="lb-score">${entry.score} pts</div>
+      <div class="lb-level-badge">${t('learn.level', { n: level })}</div>
     `;
     list.appendChild(item);
   });

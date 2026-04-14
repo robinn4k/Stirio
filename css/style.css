@@ -730,6 +730,11 @@ img { display: block; max-width: 100%; }
 .lb-meta   { font-size: .76rem; color: var(--text-muted); margin-top: 2px; }
 .lb-you    { font-size: .72rem; color: var(--gold); background: rgba(201,151,28,.15); padding: 1px 6px; border-radius: 10px; }
 .lb-score  { font-weight: 800; font-size: 1.1rem; color: var(--gold); }
+.lb-level-badge {
+  font-size: .78rem; font-weight: 800; color: var(--bg);
+  background: var(--gold); border-radius: 8px; padding: 4px 10px;
+  white-space: nowrap;
+}
 
 .leaderboard-empty {
   text-align: center; padding: 60px 20px;
