@@ -2603,6 +2603,17 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+.spirit-popup-origin {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+}
+.spirit-popup-date {
+  font-size: 0.7rem;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
 .spirit-popup-desc {
   font-size: 0.8rem;
   color: #bbb;
