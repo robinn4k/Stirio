@@ -158,6 +158,7 @@ export function answerAcademy(selectedIndex) {
   if (!as || as.phase !== 'question' || as.answered) return null;
 
   as.answered = true;
+  as.phase = 'feedback';
   const q = as.questions[as.questionIndex];
   const correct = selectedIndex === q.correctIndex;
 
