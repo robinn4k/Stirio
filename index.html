@@ -72,7 +72,7 @@
                 <div class="academy-banner-icon">🎓</div>
                 <div class="academy-banner-info">
                   <div class="academy-banner-title" data-i18n="dashboard.academy">Cocktail Academy</div>
-                  <div class="academy-banner-sub" data-i18n="dashboard.academy_desc">Aprende paso a paso</div>
+                  <div class="academy-banner-sub" id="academy-banner-sub" data-i18n="dashboard.academy_desc">Aprende paso a paso</div>
                 </div>
                 <div class="academy-banner-progress" id="academy-banner-progress">0/6</div>
                 <span class="academy-banner-arrow">→</span>
@@ -87,10 +87,14 @@
               </div>
             </div>
             <div class="journey-cta-card" id="btn-go-learn">
-              <span data-i18n="dashboard.continue_learning">Continuar aprendiendo</span>
+              <span data-i18n="dashboard.continue_academy">Continuar en la Academia</span>
               <span class="journey-arrow">→</span>
             </div>
-            <div class="courses-grid" id="courses-grid"></div>
+            <div class="journey-cta-card journey-cta-secondary" id="btn-free-practice">
+              <span data-i18n="learn.free_practice">Practica Libre</span>
+              <span class="journey-arrow">→</span>
+            </div>
+            <div class="courses-grid hidden" id="courses-grid"></div>
           </div>
 
           <!-- Multiplayer shortcut -->
@@ -611,8 +615,11 @@
     <div id="view-learn-hub" class="view">
       <div class="app-header">
         <button class="icon-btn" id="btn-back-learn" aria-label="Back">←</button>
-        <h2 class="header-title" data-i18n="learn.title">📚 Aprendizaje</h2>
+        <h2 class="header-title" data-i18n="learn.free_practice">📚 Practica Libre</h2>
         <div class="header-spacer"></div>
+      </div>
+      <div class="learn-breadcrumb" id="learn-breadcrumb">
+        <button class="learn-breadcrumb-btn" id="btn-back-to-academy" data-i18n="academy.back_hub">← Volver a Academia</button>
       </div>
       <div class="learn-hero">
         <div class="learn-hero-stats">
