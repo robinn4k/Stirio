@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -176,6 +177,23 @@
             </div>
           </div>
 
+          <!-- Mini Games -->
+          <div class="tab-section">
+            <h2 class="section-title" data-i18n="dashboard.mini_games">Mini Juegos</h2>
+            <div class="daily-card" id="btn-games">
+              <div class="daily-left">
+                <div class="daily-icon">🕹️</div>
+                <div class="daily-info">
+                  <div class="daily-title" data-i18n="dashboard.games_title">Arcade Coctelero</div>
+                  <div class="daily-sub" data-i18n="dashboard.games_sub">Aprende recetas jugando</div>
+                </div>
+              </div>
+              <div class="daily-right">
+                <span class="daily-badge" data-i18n="dashboard.play">Jugar →</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Multiplayer -->
           <div class="tab-section">
             <h2 class="section-title" data-i18n="dashboard.multiplayer">Multijugador</h2>
@@ -262,6 +280,16 @@
           <span class="tab-label" data-i18n="tab.progress">Progreso</span>
         </button>
       </nav>
+    </div>
+
+    <!-- ══ MINI GAMES (Phaser) ══ -->
+    <div id="view-games" class="view">
+      <div class="app-header">
+        <button class="icon-btn" id="btn-quit-games" aria-label="Back">←</button>
+        <h2 class="header-title" data-i18n="games.title">Mini Juegos</h2>
+        <div class="header-spacer"></div>
+      </div>
+      <div id="phaser-container"></div>
     </div>
 
     <!-- ══ SETTINGS ══ -->
