@@ -95,7 +95,7 @@
               <button class="ref-btn" id="btn-fichas">
                 <span class="ref-icon">📖</span>
                 <span class="ref-label" data-i18n="dashboard.fichas">Fichas IBA</span>
-                <span class="ref-count">90</span>
+                <span class="ref-count" id="fichas-total-count">90</span>
               </button>
               <button class="ref-btn" id="btn-wiki">
                 <span class="ref-icon">🌐</span>
@@ -479,6 +479,19 @@
       <div class="fichas-search-wrap">
         <input class="fichas-search" id="fichas-search" type="text" data-i18n-placeholder="fichas.search" placeholder="Buscar cóctel..." aria-label="Search">
       </div>
+      <div class="fichas-filter-bar" id="fichas-filter-bar">
+        <div class="fichas-filter-row">
+          <div class="fichas-filter-chips" id="fichas-cat-chips"></div>
+        </div>
+        <div class="fichas-filter-row fichas-extra-filters hidden" id="fichas-extra-filters">
+          <div class="fichas-filter-label" data-i18n="fichas.filter_glass">Vaso</div>
+          <div class="fichas-filter-chips" id="fichas-glass-chips"></div>
+          <div class="fichas-filter-label" data-i18n="fichas.filter_method">Método</div>
+          <div class="fichas-filter-chips" id="fichas-method-chips"></div>
+        </div>
+        <button class="fichas-toggle-filters" id="fichas-toggle-filters" data-i18n="fichas.more_filters">+ Más filtros</button>
+      </div>
+      <div class="fichas-count" id="fichas-count"></div>
       <div class="fichas-grid" id="fichas-grid"></div>
     </div>
 

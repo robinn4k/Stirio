@@ -989,6 +989,27 @@ img { display: block; max-width: 100%; }
 .ficha-ingredients li::before { content: '●'; color: var(--gold); }
 .ficha-story { font-size: .88rem; color: var(--text-muted); line-height: 1.7; }
 
+/* Filter bar */
+.fichas-filter-bar { padding: 0 16px 4px; }
+.fichas-filter-row { margin-bottom: 8px; }
+.fichas-filter-label {
+  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--text-muted); margin-bottom: 6px;
+}
+.fichas-filter-chips {
+  display: flex; gap: 6px; overflow-x: auto;
+  scrollbar-width: none; padding-bottom: 4px;
+}
+.fichas-filter-chips::-webkit-scrollbar { display: none; }
+.fichas-toggle-filters {
+  background: none; border: none; color: var(--gold);
+  font-size: .78rem; font-weight: 600; cursor: pointer; padding: 4px 0;
+}
+.fichas-count {
+  padding: 0 16px 8px; font-size: .75rem; color: var(--text-dim);
+}
+.fichas-extra-filters.hidden { display: none; }
+
 /* ══════════════════════════════════════════════════
    ACHIEVEMENTS
 ══════════════════════════════════════════════════ */

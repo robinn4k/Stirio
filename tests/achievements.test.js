@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, beforeAll } from 'vitest';
 
 // Mock Firebase imports used by achievements.js
 vi.mock('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js', () => ({
@@ -21,6 +21,11 @@ const {
   getStats,
   updateStats,
 } = await import('../js/achievements.js');
+const { preloadAllTranslations } = await import('../js/lang.js');
+
+beforeAll(async () => {
+  await preloadAllTranslations();
+});
 
 // Mock localStorage
 const localStorageMock = (() => {
