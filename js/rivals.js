@@ -223,6 +223,13 @@ export async function joinByCode(uid, name, code) {
   const roomId = codeSnap.val();
   const roomRef = ref(db, `rooms/${roomId}`);
 
+  // Pre-fetch room data to populate the local cache. Without this, the
+  // transaction handler receives null on its first speculative call (no local
+  // data for this path yet) and the `if (!room) return undefined` below aborts
+  // the transaction before Firebase ever fetches the server value.
+  const prefetch = await get(roomRef);
+  if (!prefetch.exists()) return null;
+
   const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
   let assignedSlot = null;
 
