@@ -1580,10 +1580,12 @@ export function initGames(containerId, onNavigate) {
   });
 
   // HiDPI: boost canvas buffer + text resolution without changing game coordinates.
-  // Game logic stays in CSS-pixel coords; we just give WebGL more physical pixels.
+  // Game logic stays in CSS-pixel coords (w × h). We enlarge the canvas to
+  // w*dpr × h*dpr and wrap gl.viewport / gl.scissor so every Phaser call that
+  // passes logical pixels is transparently scaled to physical pixels.
   const dpr = Math.min(window.devicePixelRatio || 1, 3);
   if (dpr > 1) {
-    // Text objects default their internal bitmap resolution to this value
+    // Text objects use this to generate high-res bitmap textures
     game.config.resolution = dpr;
 
     const gl = game.renderer.gl;
@@ -1593,13 +1595,21 @@ export function initGames(containerId, onNavigate) {
       // Enlarge canvas buffer to device-pixel dimensions
       game.canvas.width = pw;
       game.canvas.height = ph;
-      // Phaser resets gl.viewport to (w,h) every frame in preRender —
-      // override it to the full device-pixel size so rendering is crisp.
-      const origPreRender = game.renderer.preRender.bind(game.renderer);
-      game.renderer.preRender = function () {
-        origPreRender();
-        gl.viewport(0, 0, pw, ph);
-      };
+      // Keep Phaser's cached drawingBufferHeight at the logical size so its
+      // scissor Y-flip calculation (drawingBufferHeight - y - h) stays correct.
+      game.renderer.drawingBufferHeight = h;
+
+      // Wrap the two GL calls that position content on the canvas.
+      // Phaser always passes logical (CSS-pixel) values; we scale to physical.
+      const _origViewport = gl.viewport.bind(gl);
+      gl.viewport = (x, y, vw, vh) =>
+        _origViewport(Math.round(x * dpr), Math.round(y * dpr),
+                      Math.round(vw * dpr), Math.round(vh * dpr));
+
+      const _origScissor = gl.scissor.bind(gl);
+      gl.scissor = (x, y, sw, sh) =>
+        _origScissor(Math.round(x * dpr), Math.round(y * dpr),
+                     Math.round(sw * dpr), Math.round(sh * dpr));
     }
   }
 }
