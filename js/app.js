@@ -2340,7 +2340,6 @@ async function handleJoinByCode() {
 
     if (result === null) { toast(t('duel.invalid_code'), 'error'); return; }
     if (result === 'full') { toast(t('duel.room_full'), 'error'); return; }
-    if (result === 'self') { toast(t('duel.invalid_code'), 'error'); return; }
 
     // joinByCode now returns { roomId, slot } for multi-player support
     const joinedRoomId = result.roomId;
