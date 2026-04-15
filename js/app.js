@@ -1968,11 +1968,12 @@ function bindSettingsEvents() {
 
 let duelState = {
   roomId: null,
-  slot: null,        // 'p1' | 'p2'
+  slot: null,        // 'p1' | 'p2' | 'p3' | 'p4'
   myUid: null,
   myName: null,
   mode: null,        // 'friend-host' | 'friend-join' | 'random'
   code: null,
+  maxPlayers: 2,     // 2, 3, or 4
   questions: [],
   currentQ: 0,
   score: 0,
@@ -1996,10 +1997,136 @@ function resetDuelState() {
   if (typeof duelState.unsubLobby === 'function') duelState.unsubLobby();
   duelState = {
     roomId: null, slot: null, myUid: null, myName: null,
-    mode: null, code: null, questions: [], currentQ: 0, score: 0,
+    mode: null, code: null, maxPlayers: 2, questions: [], currentQ: 0, score: 0,
     timer: null, timeLeft: 20, answered: false, gameStarted: false,
     unsubRoom: null, unsubLobby: null, unsubOnline: null, unsubMatch: null, matchTimeout: null,
   };
+}
+
+const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
+const MEDALS = ['🥇', '🥈', '🥉', '4.'];
+
+function getSelectedPlayerCount() {
+  const active = document.querySelector('#player-count-picker .diff-btn.active');
+  return active ? parseInt(active.dataset.players, 10) : 2;
+}
+
+/**
+ * Render lobby player slots dynamically based on maxPlayers.
+ * @param {number} maxPlayers
+ * @param {object} players - room.players from Firebase (may be partial)
+ * @param {string} myName - current user's display name
+ */
+function renderLobbyPlayers(maxPlayers, players, myName) {
+  const container = $('lobby-players');
+  if (!container) return;
+  container.innerHTML = '';
+  container.className = maxPlayers > 2 ? 'lobby-players lobby-players--multi' : 'lobby-players';
+
+  for (let i = 0; i < maxPlayers; i++) {
+    const slot = ALL_SLOTS[i];
+    const p = players?.[slot];
+    const joined = p && !p.disconnected;
+
+    const div = document.createElement('div');
+    div.className = 'lobby-player-slot' + (i > 0 && !joined ? ' lobby-player-slot--rival' : '') + (joined && i > 0 ? ' lobby-player-slot--rival joined' : '');
+    div.id = `lobby-slot-${slot}`;
+
+    const avatar = document.createElement('div');
+    avatar.className = 'lobby-player-avatar';
+    avatar.textContent = joined ? '👤' : '❓';
+
+    const name = document.createElement('div');
+    name.className = 'lobby-player-name';
+    name.textContent = joined ? (p.name || myName) : t('duel.waiting_opponent');
+
+    div.appendChild(avatar);
+    div.appendChild(name);
+    container.appendChild(div);
+
+    // Add VS separator between slots (only for 2-player mode)
+    if (maxPlayers === 2 && i === 0) {
+      const vs = document.createElement('div');
+      vs.className = 'lobby-vs';
+      vs.textContent = t('duel.vs');
+      container.appendChild(vs);
+    }
+  }
+
+  // Update player count
+  const countEl = $('lobby-players-count');
+  if (countEl) {
+    const joined = ALL_SLOTS.slice(0, maxPlayers).filter(s => players?.[s] && !players[s].disconnected).length;
+    countEl.textContent = t('duel.players_joined', { n: joined, max: maxPlayers });
+  }
+}
+
+/**
+ * Set up the game header for the current match.
+ * 2 players: use existing left-center-right layout.
+ * 3-4 players: use compact scoreboard grid.
+ */
+function setupGameHeader(maxPlayers, mySlot, myName, players) {
+  const h2p = $('duel-header-2p');
+  const hMulti = $('duel-header-multi');
+
+  if (maxPlayers <= 2) {
+    h2p.classList.remove('hidden');
+    hMulti.classList.add('hidden');
+    $('duel-me-name').textContent = myName;
+    const oppSlot = mySlot === 'p1' ? 'p2' : 'p1';
+    const opp = players?.[oppSlot];
+    $('duel-rival-name').textContent = opp?.name || t('duel.waiting_opponent');
+    $('duel-me-score').textContent = 0;
+    $('duel-rival-score').textContent = 0;
+  } else {
+    h2p.classList.add('hidden');
+    hMulti.classList.remove('hidden');
+    renderScoreboard(maxPlayers, mySlot, myName, players);
+  }
+}
+
+/**
+ * Render the multi-player scoreboard in game header.
+ */
+function renderScoreboard(maxPlayers, mySlot, myName, players) {
+  const board = $('duel-scoreboard');
+  if (!board) return;
+  board.innerHTML = '';
+
+  for (let i = 0; i < maxPlayers; i++) {
+    const slot = ALL_SLOTS[i];
+    const p = players?.[slot];
+    const isMe = slot === mySlot;
+
+    const item = document.createElement('div');
+    item.className = 'duel-scoreboard-item' + (isMe ? ' duel-scoreboard-item--me' : '');
+    item.id = `scoreboard-${slot}`;
+
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'duel-sb-name';
+    nameSpan.textContent = isMe ? myName : (p?.name || '...');
+
+    const scoreSpan = document.createElement('span');
+    scoreSpan.className = 'duel-sb-score';
+    scoreSpan.id = `sb-score-${slot}`;
+    scoreSpan.textContent = '0';
+
+    item.appendChild(nameSpan);
+    item.appendChild(scoreSpan);
+    board.appendChild(item);
+  }
+}
+
+/**
+ * Update a single player's score in the scoreboard (multi-player mode).
+ */
+function updateScoreboardScore(slot, score) {
+  const el = $(`sb-score-${slot}`);
+  if (!el) return;
+  el.textContent = score;
+  el.classList.add('bump');
+  setTimeout(() => el.classList.remove('bump'), 200);
 }
 
 // ─── Duel Menu ────────────────────────────────────────────────
@@ -2089,9 +2216,11 @@ async function goToDuelLobby(mode) {
   const setup = prepareDuelSetup(randomRound);
 
   if (mode === 'friend-host') {
+    const maxPlayers = getSelectedPlayerCount();
+    duelState.maxPlayers = maxPlayers;
     setLoading(true);
     try {
-      const { roomId, code } = await withTimeout(createFriendRoom(duelState.myUid, duelState.myName, setup), 10_000);
+      const { roomId, code } = await withTimeout(createFriendRoom(duelState.myUid, duelState.myName, setup, maxPlayers), 10_000);
       if (!duelState.myUid) { setLoading(false); return; } // user navigated away
       duelState.roomId = roomId;
       duelState.slot = 'p1';
@@ -2100,10 +2229,8 @@ async function goToDuelLobby(mode) {
       // Only transition to lobby after successful room creation
       showView('view-duel-lobby');
       showLobbySection('friend-host');
-      $('lobby-p1-name').textContent = duelState.myName;
-      $('lobby-p2-name').textContent = t('duel.waiting_opponent');
-      $('lobby-p2-avatar').textContent = '❓';
-      $('lobby-p2-name').closest('.lobby-player-slot').classList.remove('joined');
+      const initialPlayers = { p1: { uid: duelState.myUid, name: duelState.myName } };
+      renderLobbyPlayers(maxPlayers, initialPlayers, duelState.myName);
       $('btn-start-duel').classList.add('hidden');
       $('lobby-code-display').textContent = code;
       setLoading(false);
@@ -2111,12 +2238,14 @@ async function goToDuelLobby(mode) {
       await registerPlayerDisconnect(roomId, 'p1');
       duelState.unsubRoom = await listenRoom(roomId, room => {
         if (!room) return;
-        const p2 = room.players?.p2;
-        if (p2 && !p2.disconnected) {
-          $('lobby-p2-name').textContent = p2.name;
-          $('lobby-p2-avatar').textContent = '👤';
-          $('lobby-p2-name').closest('.lobby-player-slot').classList.add('joined');
+        const max = room.maxPlayers || 2;
+        renderLobbyPlayers(max, room.players, duelState.myName);
+        // Show start button when all slots are filled
+        const joinedCount = ALL_SLOTS.slice(0, max).filter(s => room.players?.[s] && !room.players[s].disconnected).length;
+        if (joinedCount >= max) {
           $('btn-start-duel').classList.remove('hidden');
+        } else {
+          $('btn-start-duel').classList.add('hidden');
         }
         if (room.status === 'playing') {
           startDuelGame(room);
@@ -2130,15 +2259,14 @@ async function goToDuelLobby(mode) {
 
   } else if (mode === 'friend-join') {
     // Transition immediately — no async op until user submits a code
+    duelState.maxPlayers = 2; // will be updated when room data arrives
     showView('view-duel-lobby');
     showLobbySection('friend-join');
-    $('lobby-p1-name').textContent = t('duel.waiting_opponent');
-    $('lobby-p2-name').textContent = duelState.myName;
-    $('lobby-p2-avatar').textContent = '❓';
-    $('lobby-p2-name').closest('.lobby-player-slot').classList.remove('joined');
+    renderLobbyPlayers(2, {}, duelState.myName);
     $('btn-start-duel').classList.add('hidden');
 
   } else if (mode === 'random') {
+    duelState.maxPlayers = 2; // random is always 2-player
     setLoading(true);
     try {
       const result = await withTimeout(joinQueue(duelState.myUid, duelState.myName, setup), 10_000);
@@ -2147,10 +2275,7 @@ async function goToDuelLobby(mode) {
       // Only transition to lobby after successful queue join
       showView('view-duel-lobby');
       showLobbySection('random');
-      $('lobby-p1-name').textContent = duelState.myName;
-      $('lobby-p2-name').textContent = t('duel.waiting_opponent');
-      $('lobby-p2-avatar').textContent = '❓';
-      $('lobby-p2-name').closest('.lobby-player-slot').classList.remove('joined');
+      renderLobbyPlayers(2, { p1: { uid: duelState.myUid, name: duelState.myName } }, duelState.myName);
       $('btn-start-duel').classList.add('hidden');
       setLoading(false);
 
@@ -2198,16 +2323,7 @@ async function goToDuelLobby(mode) {
 }
 
 function handleRandomRoomUpdate(room) {
-  const p1 = room.players?.p1;
-  const p2 = room.players?.p2;
-  const opponentData = duelState.slot === 'p1' ? p2 : p1;
-  const lobbyEl = $('lobby-p2-name');
-  if (opponentData && !opponentData.disconnected && lobbyEl) {
-    lobbyEl.textContent = opponentData.name;
-    $('lobby-p2-avatar').textContent = '👤';
-    const rivalSlot = lobbyEl.closest('.lobby-player-slot');
-    if (rivalSlot) rivalSlot.classList.add('joined');
-  }
+  renderLobbyPlayers(2, room.players, duelState.myName);
   if (room.status === 'playing') {
     startDuelGame(room);
   }
@@ -2226,29 +2342,27 @@ async function handleJoinByCode() {
     if (result === 'full') { toast(t('duel.room_full'), 'error'); return; }
     if (result === 'self') { toast(t('duel.invalid_code'), 'error'); return; }
 
-    duelState.roomId = result;
-    duelState.slot = 'p2';
+    // joinByCode now returns { roomId, slot } for multi-player support
+    const joinedRoomId = result.roomId;
+    const joinedSlot = result.slot;
+    duelState.roomId = joinedRoomId;
+    duelState.slot = joinedSlot;
     $('lobby-code-input').value = '';
 
-    await registerPlayerDisconnect(result, 'p2');
+    await registerPlayerDisconnect(joinedRoomId, joinedSlot);
 
-    // P2 joined — hide the code input and show the waiting-for-host state.
-    // Passing an unknown mode to showLobbySection hides all three sections so
-    // only the player slots remain visible. This prevents P2 from thinking the
-    // join failed (if the input were still shown) and navigating back.
+    // Hide the code input and show the waiting-for-host state.
     showLobbySection('p2-waiting');
-    $('lobby-p2-name').textContent = duelState.myName;
-    $('lobby-p2-avatar').textContent = '👤';
-    $('lobby-p2-name').closest('.lobby-player-slot').classList.add('joined');
 
-    duelState.unsubRoom = await listenRoom(result, room => {
+    duelState.unsubRoom = await listenRoom(joinedRoomId, room => {
       if (!room) return;
-      const p1 = room.players?.p1;
-      if (p1) {
-        $('lobby-p2-name').textContent = duelState.myName;
-        $('lobby-p1-name').textContent = p1.name;
-      }
-      if (p1?.disconnected) {
+      const max = room.maxPlayers || 2;
+      duelState.maxPlayers = max;
+      renderLobbyPlayers(max, room.players, duelState.myName);
+
+      // Check if host disconnected
+      const host = room.players?.p1;
+      if (host?.disconnected) {
         toast(t('duel.rival_left'), 'error');
         cleanupAndGoToDuelMenu();
         return;
@@ -2292,56 +2406,81 @@ function startDuelGame(roomData) {
     duelState.unsubLobby = null;
   }
 
+  const maxPlayers = roomData?.maxPlayers || duelState.maxPlayers || 2;
+  duelState.maxPlayers = maxPlayers;
+
   // Reconstruct questions locally in the player's own language
   if (roomData?.setup) {
     duelState.questions = loadDuelQuestionsFromSetup(roomData.setup);
   }
 
-  // Set opponent name from room data
-  const opponentSlot = duelState.slot === 'p1' ? 'p2' : 'p1';
-  const opp = roomData?.players?.[opponentSlot];
-  if (opp) $('duel-rival-name').textContent = opp.name || t('duel.waiting_opponent');
+  // Set up game header based on player count
+  setupGameHeader(maxPlayers, duelState.slot, duelState.myName, roomData?.players);
 
   // Subscribe to live score updates
   let resultShown = false;
   listenRoom(duelState.roomId, room => {
     if (!room || resultShown) return;
 
-    const oppNow = room.players?.[opponentSlot];
-    if (oppNow) {
-      $('duel-rival-score').textContent = oppNow.score || 0;
-      if (oppNow.disconnected) {
-        resultShown = true;
-        toast(t('duel.rival_left'), 'error');
-        stopDuelTimer();
-        finishGame(duelState.roomId).catch(() => {});
-        showDuelResult(duelState.score, oppNow.score || 0, oppNow.name || '?');
-        return;
+    const max = room.maxPlayers || 2;
+    const me = room.players?.[duelState.slot];
+
+    // Update opponent scores and check disconnects
+    if (max <= 2) {
+      // 2-player: use existing rival score display
+      const opponentSlot = duelState.slot === 'p1' ? 'p2' : 'p1';
+      const oppNow = room.players?.[opponentSlot];
+      if (oppNow) {
+        $('duel-rival-score').textContent = oppNow.score || 0;
+        if (oppNow.disconnected) {
+          resultShown = true;
+          toast(t('duel.rival_left'), 'error');
+          stopDuelTimer();
+          finishGame(duelState.roomId).catch(() => {});
+          showDuelResultMulti(room.players, max);
+          return;
+        }
+      }
+    } else {
+      // Multi-player: update scoreboard and check disconnects
+      let anyDisconnect = false;
+      for (let i = 0; i < max; i++) {
+        const s = ALL_SLOTS[i];
+        if (s === duelState.slot) continue;
+        const p = room.players?.[s];
+        if (p) {
+          updateScoreboardScore(s, p.score || 0);
+          if (p.disconnected && !anyDisconnect) {
+            anyDisconnect = true;
+            toast(t('duel.player_left'), 'info');
+          }
+        }
       }
     }
 
-    const me = room.players?.[duelState.slot];
-    // Use Firebase me.currentQ as fallback: when the opponent finishes first and sets
-    // status='finished', our local duelState.currentQ may not yet be incremented
-    // (the 1.2s setTimeout hasn't fired), but Firebase already has our last answer.
+    // Check if game is finished
     const myProgress = Math.max(duelState.currentQ, me?.currentQ || 0);
     const myFinished = myProgress >= QUESTIONS_PER_DUEL;
-    // Wait for the opponent's final answer to be synced before reading their score.
-    // Without this check, if we finish first we'd show the result immediately with
-    // the opponent's partial score (e.g. 485 instead of their eventual 885).
-    const oppFinished = (oppNow?.currentQ || 0) >= QUESTIONS_PER_DUEL;
-    if (room.status === 'finished' && me && myFinished && oppFinished) {
+
+    // Wait for all non-disconnected players to finish
+    let allFinished = true;
+    for (let i = 0; i < max; i++) {
+      const s = ALL_SLOTS[i];
+      const p = room.players?.[s];
+      if (p && !p.disconnected && (p.currentQ || 0) < QUESTIONS_PER_DUEL) {
+        allFinished = false;
+        break;
+      }
+    }
+
+    if (room.status === 'finished' && me && myFinished && allFinished) {
       resultShown = true;
-      const myScore = Math.max(duelState.score, me.score || 0);
-      const oppScore = oppNow?.score || 0;
-      const oppName = oppNow?.name || t('duel.waiting_opponent');
       stopDuelTimer();
-      showDuelResult(myScore, oppScore, oppName);
+      showDuelResultMulti(room.players, max);
     }
   }).then(unsub => { duelState.unsubRoom = unsub; });
 
   showView('view-duel-game');
-  $('duel-me-name').textContent = duelState.myName;
   duelState.currentQ = 0;
   duelState.score = 0;
   duelState.answered = false;
@@ -2360,10 +2499,15 @@ function renderDuelQuestion() {
   const pct = (duelState.currentQ / QUESTIONS_PER_DUEL) * 100;
   $('duel-progress-fill').style.width = pct + '%';
   $('duel-q-num').textContent = duelState.currentQ + 1;
+  // Keep multi-player counter in sync
+  const qNumMulti = $('duel-q-num-multi');
+  if (qNumMulti) qNumMulti.textContent = duelState.currentQ + 1;
 
   // Timer display
   $('duel-timer-num').textContent = duelState.timeLeft;
   $('duel-timer-num').classList.remove('urgent');
+  const timerMulti = $('duel-timer-num-multi');
+  if (timerMulti) { timerMulti.textContent = duelState.timeLeft; timerMulti.classList.remove('urgent'); }
 
   // Question text
   $('duel-question').textContent = t(q.question);
@@ -2381,7 +2525,11 @@ function renderDuelQuestion() {
   });
 
   // Score display
-  $('duel-me-score').textContent = duelState.score;
+  if (duelState.maxPlayers <= 2) {
+    $('duel-me-score').textContent = duelState.score;
+  } else {
+    updateScoreboardScore(duelState.slot, duelState.score);
+  }
 
   startDuelTimer();
 }
@@ -2392,6 +2540,9 @@ function startDuelTimer() {
     duelState.timeLeft--;
     $('duel-timer-num').textContent = duelState.timeLeft;
     if (duelState.timeLeft <= 5) $('duel-timer-num').classList.add('urgent');
+    // Sync multi-player timer
+    const tm = $('duel-timer-num-multi');
+    if (tm) { tm.textContent = duelState.timeLeft; if (duelState.timeLeft <= 5) tm.classList.add('urgent'); }
     if (duelState.timeLeft <= 0) {
       stopDuelTimer();
       if (!duelState.answered) handleDuelTimeout();
@@ -2423,10 +2574,14 @@ async function handleDuelAnswer(selectedIndex) {
   });
 
   // Bump my score display
-  $('duel-me-score').textContent = duelState.score;
-  const scoreEl = $('duel-me-score');
-  scoreEl.classList.add('bump');
-  setTimeout(() => scoreEl.classList.remove('bump'), 200);
+  if (duelState.maxPlayers <= 2) {
+    const scoreEl = $('duel-me-score');
+    scoreEl.textContent = duelState.score;
+    scoreEl.classList.add('bump');
+    setTimeout(() => scoreEl.classList.remove('bump'), 200);
+  } else {
+    updateScoreboardScore(duelState.slot, duelState.score);
+  }
 
   // Sync to Firebase
   rtdbSubmitAnswer(duelState.roomId, duelState.slot, duelState.currentQ, correct, duelState.timeLeft)
@@ -2464,27 +2619,84 @@ async function advanceDuelQuestion() {
 
 // ─── Duel Result ──────────────────────────────────────────────
 
-function showDuelResult(myScore, oppScore, oppName) {
+/**
+ * Show results for multi-player duel (works for 2, 3, or 4 players).
+ * Reads scores from room.players and renders a ranked list.
+ */
+function showDuelResultMulti(players, maxPlayers) {
   if (typeof duelState.unsubRoom === 'function') duelState.unsubRoom();
 
+  // Build ranked list of players
+  const ranked = [];
+  for (let i = 0; i < maxPlayers; i++) {
+    const slot = ALL_SLOTS[i];
+    const p = players?.[slot];
+    if (!p) continue;
+    const isMe = slot === duelState.slot;
+    ranked.push({
+      name: isMe ? duelState.myName : (p.name || '?'),
+      score: isMe ? Math.max(duelState.score, p.score || 0) : (p.score || 0),
+      isMe,
+      disconnected: !!p.disconnected,
+    });
+  }
+  ranked.sort((a, b) => b.score - a.score);
+
+  // Determine my position
+  const myEntry = ranked.find(r => r.isMe);
+  const myScore = myEntry?.score || 0;
+  const topScore = ranked[0]?.score || 0;
+
   let icon, title;
-  if (myScore > oppScore) { icon = '🏆'; title = t('duel.victory'); }
-  else if (myScore < oppScore) { icon = '😔'; title = t('duel.defeat'); }
-  else { icon = '🤝'; title = t('duel.tie'); }
+  if (myScore > 0 && myScore >= topScore) { icon = '🏆'; title = t('duel.victory'); }
+  else if (myScore === topScore && topScore > 0) { icon = '🤝'; title = t('duel.tie'); }
+  else { icon = '😔'; title = t('duel.defeat'); }
 
   $('duel-result-icon').textContent = icon;
   $('duel-result-title').textContent = title;
 
-  $('duel-final-me-label').textContent = duelState.myName;
-  $('duel-final-me-score').textContent = myScore + ' pts';
-  $('duel-final-rival-label').textContent = oppName;
-  $('duel-final-rival-score').textContent = oppScore + ' pts';
+  // Render ranked score cards
+  const container = $('duel-final-scores');
+  container.innerHTML = '';
+  container.className = maxPlayers > 2 ? 'duel-final-scores duel-final-scores--multi' : 'duel-final-scores';
 
-  // Highlight winner
-  $('duel-final-me').classList.toggle('winner', myScore >= oppScore && myScore > 0);
-  $('duel-final-rival').classList.toggle('winner', oppScore > myScore);
+  ranked.forEach((entry, idx) => {
+    const card = document.createElement('div');
+    card.className = 'duel-score-card' + (entry.score >= topScore && entry.score > 0 ? ' winner' : '');
+
+    const medal = document.createElement('span');
+    medal.className = 'duel-rank-medal';
+    medal.textContent = MEDALS[idx] || `${idx + 1}.`;
+
+    const label = document.createElement('div');
+    label.className = 'duel-score-label';
+    label.textContent = entry.name + (entry.disconnected ? ' ⚡' : '');
+
+    const value = document.createElement('div');
+    value.className = 'duel-score-value';
+    value.textContent = entry.score + ' pts';
+
+    card.appendChild(medal);
+    card.appendChild(label);
+    card.appendChild(value);
+    container.appendChild(card);
+  });
 
   showView('view-duel-result');
+}
+
+/**
+ * Legacy 2-player result display (used by bot mode).
+ */
+function showDuelResult(myScore, oppScore, oppName) {
+  if (typeof duelState.unsubRoom === 'function') duelState.unsubRoom();
+
+  const players = {};
+  players[duelState.slot || 'p1'] = { name: duelState.myName, score: myScore };
+  const oppSlot = duelState.slot === 'p1' ? 'p2' : 'p1';
+  players[oppSlot] = { name: oppName, score: oppScore };
+
+  showDuelResultMulti(players, 2);
 }
 
 function cleanupAndGoToDuelMenu() {
@@ -2597,10 +2809,18 @@ function bindDuelEvents() {
     resetDuelState();
     goToDuelMenu();
   });
-  $('btn-duel-home').addEventListener('click', () => {
+  $('btn-duel-exit').addEventListener('click', () => {
     resetBotDuelState();
     resetDuelState();
     goToDashboard();
+  });
+
+  // Player count picker toggle (inside friend-mode-picker)
+  $('player-count-picker').querySelectorAll('.diff-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      $('player-count-picker').querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
   });
 }
 
