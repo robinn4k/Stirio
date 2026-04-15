@@ -187,7 +187,7 @@ export async function listenOnlineCount(cb) {
 
 // ─── Room: Friend Code ────────────────────────────────────────
 
-export async function createFriendRoom(uid, name, setup) {
+export async function createFriendRoom(uid, name, setup, maxPlayers = 2) {
   if (!db) throw new Error('RTDB no inicializado');
   const { ref, set, onDisconnect } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
   const roomId = generateRoomId();
@@ -197,6 +197,7 @@ export async function createFriendRoom(uid, name, setup) {
     code,
     status: 'waiting',
     setup,
+    maxPlayers,
     createdAt: Date.now(),
     players: {
       p1: { uid, name, score: 0, currentQ: 0, answers: {}, ready: false }
@@ -222,13 +223,36 @@ export async function joinByCode(uid, name, code) {
   const roomId = codeSnap.val();
   const roomRef = ref(db, `rooms/${roomId}`);
 
-  // Use transaction to atomically check and set p2 (prevents race condition)
+  const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
+  let assignedSlot = null;
+
+  // Use transaction to atomically find next empty slot (prevents race condition)
   const result = await runTransaction(roomRef, (room) => {
-    if (!room) return undefined; // room doesn't exist, abort
-    if (room.players?.p2) return undefined; // already full, abort
-    if (room.players?.p1?.uid === uid) return undefined; // can't join own room, abort
-    room.players.p2 = { uid, name, score: 0, currentQ: 0, answers: {}, ready: true };
-    room.status = 'ready';
+    if (!room) return undefined;
+    const max = room.maxPlayers || 2;
+
+    // Check if this user already occupies a slot
+    for (let i = 0; i < max; i++) {
+      if (room.players?.[ALL_SLOTS[i]]?.uid === uid) return undefined;
+    }
+
+    // Find next empty slot
+    assignedSlot = null;
+    for (let i = 1; i < max; i++) { // start at p2 (p1 is the host)
+      if (!room.players?.[ALL_SLOTS[i]]) {
+        assignedSlot = ALL_SLOTS[i];
+        break;
+      }
+    }
+    if (!assignedSlot) return undefined; // all slots taken
+
+    if (!room.players) room.players = {};
+    room.players[assignedSlot] = { uid, name, score: 0, currentQ: 0, answers: {}, ready: true };
+
+    // Count joined players to determine if room is ready
+    const joinedCount = ALL_SLOTS.slice(0, max).filter(s => room.players[s]).length;
+    room.status = joinedCount >= max ? 'ready' : 'waiting';
+
     return room;
   });
 
@@ -237,15 +261,21 @@ export async function joinByCode(uid, name, code) {
     const roomSnap = await get(roomRef);
     if (!roomSnap.exists()) return null;
     const room = roomSnap.val();
-    if (room.players?.p1?.uid === uid) return 'self';
-    if (room.players?.p2) return 'full';
+    const max = room.maxPlayers || 2;
+    // Check if user tried to join own room
+    for (let i = 0; i < max; i++) {
+      if (room.players?.[ALL_SLOTS[i]]?.uid === uid) return 'self';
+    }
+    // Check if all slots are taken
+    const filledCount = ALL_SLOTS.slice(0, max).filter(s => room.players?.[s]).length;
+    if (filledCount >= max) return 'full';
     return null;
   }
 
-  const p2Ref = ref(db, `rooms/${roomId}/players/p2`);
-  onDisconnect(p2Ref).update({ disconnected: true });
+  const slotRef = ref(db, `rooms/${roomId}/players/${assignedSlot}`);
+  onDisconnect(slotRef).update({ disconnected: true });
 
-  return roomId;
+  return { roomId, slot: assignedSlot };
 }
 
 // ─── Room: Matchmaking Queue ──────────────────────────────────

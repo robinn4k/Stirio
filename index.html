@@ -830,7 +830,13 @@
         <div class="duel-hero">⚔️</div>
         <button class="btn-primary duel-action-btn" id="btn-challenge-friend" data-i18n="duel.challenge_friend">🤝 Retar a un amigo</button>
         <div class="duel-difficulty hidden" id="friend-mode-picker">
-          <div class="duel-difficulty-btns">
+          <p class="duel-difficulty-label" data-i18n="duel.pick_players">Jugadores</p>
+          <div class="duel-difficulty-btns" id="player-count-picker">
+            <button class="diff-btn active" data-players="2">2</button>
+            <button class="diff-btn" data-players="3">3</button>
+            <button class="diff-btn" data-players="4">4</button>
+          </div>
+          <div class="duel-difficulty-btns" style="margin-top:8px">
             <button class="diff-btn" id="btn-host-room" data-i18n="duel.create_room">🎯 Crear sala</button>
             <button class="diff-btn" id="btn-join-room" data-i18n="duel.join_code">🔑 Tengo un código</button>
           </div>
@@ -882,18 +888,9 @@
           <p class="lobby-searching-text" data-i18n="duel.searching">Buscando rival...</p>
         </div>
 
-        <!-- Player slots (shown in all modes) -->
-        <div class="lobby-players">
-          <div class="lobby-player-slot">
-            <div class="lobby-player-avatar">👤</div>
-            <div class="lobby-player-name" id="lobby-p1-name">Tú</div>
-          </div>
-          <div class="lobby-vs" data-i18n="duel.vs">VS</div>
-          <div class="lobby-player-slot lobby-player-slot--rival">
-            <div class="lobby-player-avatar" id="lobby-p2-avatar">❓</div>
-            <div class="lobby-player-name" id="lobby-p2-name" data-i18n="duel.waiting_opponent">Esperando...</div>
-          </div>
-        </div>
+        <!-- Player slots (rendered dynamically by JS) -->
+        <div class="lobby-players-count" id="lobby-players-count"></div>
+        <div class="lobby-players" id="lobby-players"></div>
 
         <!-- Start button (host only, after p2 joins) -->
         <button class="btn-primary hidden" id="btn-start-duel" data-i18n="duel.start_duel">¡Empezar Duelo!</button>
@@ -902,18 +899,29 @@
 
     <!-- ══ DUEL GAME ══ -->
     <div id="view-duel-game" class="view">
-      <div class="duel-game-header">
-        <div class="duel-player-info">
-          <div class="duel-player-name" id="duel-me-name" data-i18n="duel.you">Tú</div>
-          <div class="duel-player-score" id="duel-me-score">0</div>
+      <div class="duel-game-header" id="duel-game-header">
+        <!-- 2-player layout (default) -->
+        <div class="duel-header-2p" id="duel-header-2p">
+          <div class="duel-player-info">
+            <div class="duel-player-name" id="duel-me-name" data-i18n="duel.you">Tú</div>
+            <div class="duel-player-score" id="duel-me-score">0</div>
+          </div>
+          <div class="duel-game-center">
+            <div class="duel-q-counter"><span id="duel-q-num">1</span>/10</div>
+            <div class="duel-timer-num" id="duel-timer-num">20</div>
+          </div>
+          <div class="duel-player-info duel-player-info--rival">
+            <div class="duel-player-name" id="duel-rival-name" data-i18n="duel.waiting_opponent">Rival</div>
+            <div class="duel-player-score" id="duel-rival-score">0</div>
+          </div>
         </div>
-        <div class="duel-game-center">
-          <div class="duel-q-counter"><span id="duel-q-num">1</span>/10</div>
-          <div class="duel-timer-num" id="duel-timer-num">20</div>
-        </div>
-        <div class="duel-player-info duel-player-info--rival">
-          <div class="duel-player-name" id="duel-rival-name" data-i18n="duel.waiting_opponent">Rival</div>
-          <div class="duel-player-score" id="duel-rival-score">0</div>
+        <!-- Multi-player scoreboard (3-4 players, hidden by default) -->
+        <div class="duel-header-multi hidden" id="duel-header-multi">
+          <div class="duel-game-center">
+            <div class="duel-q-counter"><span id="duel-q-num-multi">1</span>/10</div>
+            <div class="duel-timer-num" id="duel-timer-num-multi">20</div>
+          </div>
+          <div class="duel-scoreboard" id="duel-scoreboard"></div>
         </div>
       </div>
       <div class="quiz-progress-bar">
@@ -931,19 +939,10 @@
         <div class="duel-result-icon" id="duel-result-icon">🏆</div>
         <div class="duel-result-title" id="duel-result-title"></div>
       </div>
-      <div class="duel-final-scores">
-        <div class="duel-score-card" id="duel-final-me">
-          <div class="duel-score-label" id="duel-final-me-label" data-i18n="duel.you">Tú</div>
-          <div class="duel-score-value" id="duel-final-me-score">0 pts</div>
-        </div>
-        <div class="duel-score-card" id="duel-final-rival">
-          <div class="duel-score-label" id="duel-final-rival-label">Rival</div>
-          <div class="duel-score-value" id="duel-final-rival-score">0 pts</div>
-        </div>
-      </div>
+      <div class="duel-final-scores" id="duel-final-scores"></div>
       <div class="duel-result-actions">
         <button class="btn-primary" id="btn-duel-rematch" data-i18n="duel.rematch">⚔️ Revancha</button>
-        <button class="btn-ghost" id="btn-duel-home" data-i18n="duel.home">← Inicio</button>
+        <button class="btn-ghost" id="btn-duel-exit" data-i18n="duel.home">← Inicio</button>
       </div>
     </div>
 
