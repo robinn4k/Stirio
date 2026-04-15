@@ -215,72 +215,40 @@ export async function createFriendRoom(uid, name, setup, maxPlayers = 2) {
 
 export async function joinByCode(uid, name, code) {
   if (!db) throw new Error('RTDB no inicializado');
-  const { ref, get, runTransaction, onDisconnect } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+  const { ref, get, update, onDisconnect } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
 
   const codeSnap = await get(ref(db, `codes/${code.toUpperCase()}`));
   if (!codeSnap.exists()) return null;
 
   const roomId = codeSnap.val();
-  const roomRef = ref(db, `rooms/${roomId}`);
+  const roomSnap = await get(ref(db, `rooms/${roomId}`));
+  if (!roomSnap.exists()) return null;
 
-  // Pre-fetch room data to populate the local cache. Without this, the
-  // transaction handler receives null on its first speculative call (no local
-  // data for this path yet) and the `if (!room) return undefined` below aborts
-  // the transaction before Firebase ever fetches the server value.
-  const prefetch = await get(roomRef);
-  if (!prefetch.exists()) return null;
-
+  const room = roomSnap.val();
+  const max = room.maxPlayers || 2;
   const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
+
+  // Find first empty slot (p2, p3, p4 — p1 is the host)
   let assignedSlot = null;
-
-  // Use transaction to atomically find next empty slot (prevents race condition)
-  const result = await runTransaction(roomRef, (room) => {
-    if (!room) return undefined;
-    const max = room.maxPlayers || 2;
-
-    // Check if this user already occupies a slot
-    for (let i = 0; i < max; i++) {
-      if (room.players?.[ALL_SLOTS[i]]?.uid === uid) return undefined;
+  for (let i = 1; i < max; i++) {
+    if (!room.players?.[ALL_SLOTS[i]]) {
+      assignedSlot = ALL_SLOTS[i];
+      break;
     }
+  }
+  if (!assignedSlot) return 'full';
 
-    // Find next empty slot
-    assignedSlot = null;
-    for (let i = 1; i < max; i++) { // start at p2 (p1 is the host)
-      if (!room.players?.[ALL_SLOTS[i]]) {
-        assignedSlot = ALL_SLOTS[i];
-        break;
-      }
-    }
-    if (!assignedSlot) return undefined; // all slots taken
-
-    if (!room.players) room.players = {};
-    room.players[assignedSlot] = { uid, name, score: 0, currentQ: 0, answers: {}, ready: true };
-
-    // Count joined players to determine if room is ready
-    const joinedCount = ALL_SLOTS.slice(0, max).filter(s => room.players[s]).length;
-    room.status = joinedCount >= max ? 'ready' : 'waiting';
-
-    return room;
-  });
-
-  if (!result.committed) {
-    // Determine why the transaction was aborted
-    const roomSnap = await get(roomRef);
-    if (!roomSnap.exists()) return null;
-    const room = roomSnap.val();
-    const max = room.maxPlayers || 2;
-    // Check if user tried to join own room
-    for (let i = 0; i < max; i++) {
-      if (room.players?.[ALL_SLOTS[i]]?.uid === uid) return 'self';
-    }
-    // Check if all slots are taken
-    const filledCount = ALL_SLOTS.slice(0, max).filter(s => room.players?.[s]).length;
-    if (filledCount >= max) return 'full';
-    return null;
+  // Atomic multi-path write (same pattern as submitAnswer)
+  const joinedCount = ALL_SLOTS.slice(0, max).filter(s => s === assignedSlot || room.players?.[s]).length;
+  const updates = {
+    [`rooms/${roomId}/players/${assignedSlot}`]: { uid, name, score: 0, currentQ: 0, answers: {}, ready: true },
+  };
+  if (joinedCount >= max) {
+    updates[`rooms/${roomId}/status`] = 'ready';
   }
 
-  const slotRef = ref(db, `rooms/${roomId}/players/${assignedSlot}`);
-  onDisconnect(slotRef).update({ disconnected: true });
+  await update(ref(db), updates);
+  onDisconnect(ref(db, `rooms/${roomId}/players/${assignedSlot}`)).update({ disconnected: true });
 
   return { roomId, slot: assignedSlot };
 }
