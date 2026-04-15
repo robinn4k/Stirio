@@ -1587,9 +1587,6 @@ export function initGames(containerId, onNavigate) {
   // drawImage, stroke, etc.) are then rendered at physical pixel quality while
   // game logic stays in CSS-pixel coordinates — zero changes to scene code.
   if (dpr > 1) {
-    // Text objects render their internal bitmaps at this resolution
-    game.config.resolution = dpr;
-
     const canvas = game.canvas;
     canvas.width = Math.round(w * dpr);
     canvas.height = Math.round(h * dpr);
