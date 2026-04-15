@@ -75,6 +75,27 @@ export const WIKI_CATEGORIES = [
     ]
   },
   {
+    id: 'liqueurs',
+    icon: '🍸',
+    gradient: 'linear-gradient(135deg, #f4d03f, #f39c12)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'amaros',
+    icon: '🌿',
+    gradient: 'linear-gradient(135deg, #6e2c00, #a04000)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'mixers',
+    icon: '🧊',
+    gradient: 'linear-gradient(135deg, #00b4d8, #0077b6)',
+    has3d: false,
+    articles: []
+  },
+  {
     id: 'glossary',
     icon: '📚',
     gradient: 'linear-gradient(135deg, #34495e, #2c3e50)',
@@ -148,42 +169,76 @@ export const WIKI_ARTICLES = {
   'spirits.whisky': {
     sections: [
       { type: 'text-block', key: 'description' },
-      { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'origin' },
+      { type: 'text-block', key: 'history' },
       { type: 'text-block', key: 'production' },
+      { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'tasting' },
       { type: 'text-block', key: 'regions' },
+      { type: 'text-block', key: 'cocktails' },
+      { type: 'tips', key: 'tips' },
     ]
   },
   'spirits.gin': {
     sections: [
       { type: 'text-block', key: 'description' },
+      { type: 'text-block', key: 'origin' },
+      { type: 'text-block', key: 'history' },
+      { type: 'text-block', key: 'production' },
       { type: 'text-block', key: 'botanicals' },
       { type: 'text-block', key: 'styles' },
+      { type: 'text-block', key: 'tasting' },
+      { type: 'text-block', key: 'cocktails' },
+      { type: 'tips', key: 'tips' },
     ]
   },
   'spirits.rum': {
     sections: [
       { type: 'text-block', key: 'description' },
+      { type: 'text-block', key: 'origin' },
+      { type: 'text-block', key: 'history' },
+      { type: 'text-block', key: 'production' },
       { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'tasting' },
       { type: 'text-block', key: 'regions' },
+      { type: 'text-block', key: 'cocktails' },
+      { type: 'tips', key: 'tips' },
     ]
   },
   'spirits.vodka': {
     sections: [
       { type: 'text-block', key: 'description' },
+      { type: 'text-block', key: 'origin' },
+      { type: 'text-block', key: 'history' },
       { type: 'text-block', key: 'production' },
+      { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'tasting' },
+      { type: 'text-block', key: 'cocktails' },
+      { type: 'tips', key: 'tips' },
     ]
   },
   'spirits.tequila': {
     sections: [
       { type: 'text-block', key: 'description' },
-      { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'origin' },
+      { type: 'text-block', key: 'history' },
       { type: 'text-block', key: 'production' },
+      { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'tasting' },
+      { type: 'text-block', key: 'cocktails' },
+      { type: 'tips', key: 'tips' },
     ]
   },
   'spirits.brandy': {
     sections: [
       { type: 'text-block', key: 'description' },
+      { type: 'text-block', key: 'origin' },
+      { type: 'text-block', key: 'history' },
+      { type: 'text-block', key: 'production' },
       { type: 'text-block', key: 'types' },
+      { type: 'text-block', key: 'tasting' },
+      { type: 'text-block', key: 'cocktails' },
+      { type: 'tips', key: 'tips' },
     ]
   },
   'spirits.world-map': {
