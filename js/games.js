@@ -1562,8 +1562,10 @@ export function initGames(containerId, onNavigate) {
   const w = container.clientWidth;
   const h = container.clientHeight;
 
+  const dpr = Math.min(window.devicePixelRatio || 1, 3);
+
   game = new Phaser.Game({
-    type: Phaser.AUTO,
+    type: Phaser.CANVAS,
     parent: containerId,
     width: w,
     height: h,
@@ -1579,38 +1581,23 @@ export function initGames(containerId, onNavigate) {
     scene: [MenuScene, MixologyRushScene, NinjaShakerScene, CocktailTinderScene, GameResultScene],
   });
 
-  // HiDPI: boost canvas buffer + text resolution without changing game coordinates.
-  // Game logic stays in CSS-pixel coords (w × h). We enlarge the canvas to
-  // w*dpr × h*dpr and wrap gl.viewport / gl.scissor so every Phaser call that
-  // passes logical pixels is transparently scaled to physical pixels.
-  const dpr = Math.min(window.devicePixelRatio || 1, 3);
+  // HiDPI: enlarge the canvas buffer to device-pixel resolution and wrap
+  // Canvas2D's setTransform so Phaser's identity reset (1,0,0,1,0,0) becomes
+  // a dpr scale (dpr,0,0,dpr,0,0). All drawing operations (fillRect, fillText,
+  // drawImage, stroke, etc.) are then rendered at physical pixel quality while
+  // game logic stays in CSS-pixel coordinates — zero changes to scene code.
   if (dpr > 1) {
-    // Text objects use this to generate high-res bitmap textures
+    // Text objects render their internal bitmaps at this resolution
     game.config.resolution = dpr;
 
-    const gl = game.renderer.gl;
-    if (gl) {
-      const pw = Math.round(w * dpr);
-      const ph = Math.round(h * dpr);
-      // Enlarge canvas buffer to device-pixel dimensions
-      game.canvas.width = pw;
-      game.canvas.height = ph;
-      // Keep Phaser's cached drawingBufferHeight at the logical size so its
-      // scissor Y-flip calculation (drawingBufferHeight - y - h) stays correct.
-      game.renderer.drawingBufferHeight = h;
+    const canvas = game.canvas;
+    canvas.width = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
 
-      // Wrap the two GL calls that position content on the canvas.
-      // Phaser always passes logical (CSS-pixel) values; we scale to physical.
-      const _origViewport = gl.viewport.bind(gl);
-      gl.viewport = (x, y, vw, vh) =>
-        _origViewport(Math.round(x * dpr), Math.round(y * dpr),
-                      Math.round(vw * dpr), Math.round(vh * dpr));
-
-      const _origScissor = gl.scissor.bind(gl);
-      gl.scissor = (x, y, sw, sh) =>
-        _origScissor(Math.round(x * dpr), Math.round(y * dpr),
-                     Math.round(sw * dpr), Math.round(sh * dpr));
-    }
+    const ctx = game.renderer.gameContext;
+    const _origST = ctx.setTransform.bind(ctx);
+    ctx.setTransform = (a, b, c, d, e, f) =>
+      _origST(a * dpr, b * dpr, c * dpr, d * dpr, e * dpr, f * dpr);
   }
 }
 
