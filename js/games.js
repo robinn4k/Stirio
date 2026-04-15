@@ -1561,7 +1561,6 @@ export function initGames(containerId, onNavigate) {
   const container = document.getElementById(containerId);
   const w = container.clientWidth;
   const h = container.clientHeight;
-  const dpr = Math.min(window.devicePixelRatio || 1, 3);
 
   game = new Phaser.Game({
     type: Phaser.AUTO,
@@ -1571,7 +1570,6 @@ export function initGames(containerId, onNavigate) {
     backgroundColor: '#0d0508',
     scale: {
       mode: Phaser.Scale.NONE,
-      zoom: dpr,
     },
     render: {
       antialias: true,
@@ -1581,14 +1579,29 @@ export function initGames(containerId, onNavigate) {
     scene: [MenuScene, MixologyRushScene, NinjaShakerScene, CocktailTinderScene, GameResultScene],
   });
 
-  // Force canvas CSS size to fill container (canvas internal res is w*dpr × h*dpr)
-  requestAnimationFrame(() => {
-    const canvas = container.querySelector('canvas');
-    if (canvas) {
-      canvas.style.width = '100%';
-      canvas.style.height = '100%';
+  // HiDPI: boost canvas buffer + text resolution without changing game coordinates.
+  // Game logic stays in CSS-pixel coords; we just give WebGL more physical pixels.
+  const dpr = Math.min(window.devicePixelRatio || 1, 3);
+  if (dpr > 1) {
+    // Text objects default their internal bitmap resolution to this value
+    game.config.resolution = dpr;
+
+    const gl = game.renderer.gl;
+    if (gl) {
+      const pw = Math.round(w * dpr);
+      const ph = Math.round(h * dpr);
+      // Enlarge canvas buffer to device-pixel dimensions
+      game.canvas.width = pw;
+      game.canvas.height = ph;
+      // Phaser resets gl.viewport to (w,h) every frame in preRender —
+      // override it to the full device-pixel size so rendering is crisp.
+      const origPreRender = game.renderer.preRender.bind(game.renderer);
+      game.renderer.preRender = function () {
+        origPreRender();
+        gl.viewport(0, 0, pw, ph);
+      };
     }
-  });
+  }
 }
 
 export function destroyGames() {
