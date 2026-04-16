@@ -69,10 +69,11 @@ export const useNinjaShaker = create((set, get) => ({
     const ing = s.pool[s.poolIdx % s.pool.length];
     const id = `${s.poolIdx}-${Date.now()}`;
     // Spawn near bottom edge, arc upward. Position in world units (camera at 0,0,10).
+    // Tuned for GRAVITY=-7 in Orbs.jsx → ~1.8 s of air-time per orb.
     const spawnX = (Math.random() - 0.5) * 6;  // -3..3
-    const vx = (Math.random() - 0.5) * 1.4;
-    const vy = 5.5 + Math.random() * 1.2;
-    const spin = (Math.random() - 0.5) * 3;
+    const vx = (Math.random() - 0.5) * 1.1;
+    const vy = 5.0 + Math.random() * 0.9;
+    const spin = (Math.random() - 0.5) * 2;
     const orb = {
       id,
       ingredient: ing.name,

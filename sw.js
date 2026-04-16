@@ -48,7 +48,7 @@ const CACHE_PATHS = [
   // games work offline; the hashed JS asset is fetched by the iframe's
   // own index.html at runtime.
   'games-r3f-demo/index.html',
-  'games-r3f-demo/assets/index-LWDqgDJE.js',
+  'games-r3f-demo/assets/index-DdX6QnQR.js',
   // Wiki 3D modules
   'js/wiki.js',
   'js/wiki-data.js',
@@ -75,7 +75,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v5.3`;
+const STATIC_CACHE_VERSION = `Stirio-v5.4`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

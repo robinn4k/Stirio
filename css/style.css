@@ -979,7 +979,10 @@ img { display: block; max-width: 100%; }
   border: 0;
   display: block;
   background: #08110c;
-  touch-action: none;
+  /* No `touch-action` here on purpose. Setting it on the iframe wrapper
+     breaks touch events on iOS Safari (events never reach the embedded
+     document). The canvas INSIDE the iframe already sets
+     `touch-action: none` to cancel scroll/zoom while playing. */
 }
 
 .blind-clues-card {

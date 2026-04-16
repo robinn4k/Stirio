@@ -24,7 +24,8 @@ export default function NinjaShaker({ onExit }) {
   // Auto-start the moment this game mounts.
   useEffect(() => { if (status === 'idle') start(); }, [status, start]);
 
-  // Spawn cadence — mirrors the original Phaser difficulty curve.
+  // Spawn cadence — adaptive to device. Mobile / reduced gets a much
+  // calmer curve so taps can actually land on each orb.
   useEffect(() => {
     if (status !== 'playing') return;
     let timer;
@@ -32,7 +33,9 @@ export default function NinjaShaker({ onExit }) {
       const spawned = useNinjaShaker.getState().totalSpawned;
       if (useNinjaShaker.getState().status !== 'playing') return;
       if (spawned >= maxSpawn) return;
-      const delay = spawned < 8 ? 1100 : spawned < 15 ? 900 : spawned < 25 ? 720 : 580;
+      const delay = reduced
+        ? (spawned < 8 ? 1600 : spawned < 15 ? 1350 : spawned < 25 ? 1100 : 900)
+        : (spawned < 8 ? 1200 : spawned < 15 ? 1000 : spawned < 25 ? 820 : 680);
       timer = setTimeout(() => {
         spawn();
         schedule();
@@ -40,7 +43,7 @@ export default function NinjaShaker({ onExit }) {
     };
     schedule();
     return () => clearTimeout(timer);
-  }, [status, spawn, maxSpawn]);
+  }, [status, spawn, maxSpawn, reduced]);
 
   const onSlice = (x, y, color) => {
     const id = `sfx-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
