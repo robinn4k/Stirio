@@ -1,82 +1,107 @@
 import { useEffect, useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
+import { Text } from '@react-three/drei';
 import { getIngredientEmoji } from '../../data/cocktails.js';
 
-const SWIPE_THRESHOLD = 1.4;       // world units horizontal
-const FLYAWAY_SPEED = 14;          // units / s once past threshold
-const SPRING = 10;                 // spring back to center
+const SWIPE_THRESHOLD = 1.4;
+const FLYAWAY_SPEED = 16;
+const FLYAWAY_TIME = 0.35;       // seconds before we notify the store
+const SPRING = 10;
 
 /**
- * Tinder-style swipe card. Dragged horizontally the card tilts and fades in a
- * YES / NOPE stamp. If released past the threshold it flies off; otherwise it
- * springs back to the center.
+ * Tinder-style swipe card rendered entirely in-canvas (no Html portals).
+ * Stamps and emblem use drei <Text>. The fly-away animation runs fully
+ * before we notify the store that the swipe is done — this prevents the
+ * card from vanishing mid-animation, which previously felt "stuck".
  */
 export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe }) {
   const group = useRef();
+  const noStampRef = useRef();
+  const yesStampRef = useRef();
   const [dragging, setDragging] = useState(false);
-  const state = useRef({ x: 0, y: 0, flying: null }); // flying: 'left' | 'right' | null
-  const entered = useRef(false);
+  const [, forceTick] = useState(0);
+  const s = useRef({ x: 0, y: depth === 0 ? 1 : 0.6, flyingDir: null, flyingAge: 0, notified: false, entered: false });
+  const captured = useRef({ target: null, id: null });
 
   useEffect(() => {
-    state.current.x = 0;
-    state.current.y = depth === 0 ? 1 : 0.6; // entrance from below
-    state.current.flying = null;
-    entered.current = false;
+    s.current.x = 0;
+    s.current.y = depth === 0 ? 1 : 0.6;
+    s.current.flyingDir = null;
+    s.current.flyingAge = 0;
+    s.current.notified = false;
+    s.current.entered = false;
   }, [card.id, depth]);
 
   useFrame((_, dt) => {
     if (!group.current) return;
-    const s = state.current;
+    const st = s.current;
 
-    // Entrance animation: ease towards 0.
-    if (!entered.current) {
-      s.y += (0 - s.y) * Math.min(1, dt * 8);
-      if (Math.abs(s.y) < 0.01) entered.current = true;
+    if (!st.entered) {
+      st.y += (0 - st.y) * Math.min(1, dt * 8);
+      if (Math.abs(st.y) < 0.01) st.entered = true;
     }
 
-    if (s.flying && depth === 0) {
-      s.x += (s.flying === 'right' ? FLYAWAY_SPEED : -FLYAWAY_SPEED) * dt;
-      s.y += 0.6 * dt; // a little lift as it flies away
+    if (st.flyingDir && depth === 0) {
+      st.flyingAge += dt;
+      st.x += (st.flyingDir === 'right' ? FLYAWAY_SPEED : -FLYAWAY_SPEED) * dt;
+      st.y += 0.6 * dt;
+      if (!st.notified && st.flyingAge > FLYAWAY_TIME) {
+        st.notified = true;
+        onSwipe?.(st.flyingDir);
+      }
     } else if (!dragging && depth === 0) {
-      s.x += (0 - s.x) * Math.min(1, dt * SPRING);
+      st.x += (0 - st.x) * Math.min(1, dt * SPRING);
     }
 
     const z = depth === 0 ? 0 : -0.2;
     const scale = depth === 0 ? 1 : 0.94;
-    group.current.position.set(s.x, s.y - depth * 0.2, z);
-    group.current.rotation.z = -s.x * 0.18;
+    group.current.position.set(st.x, st.y - depth * 0.2, z);
+    group.current.rotation.z = -st.x * 0.18;
     group.current.scale.setScalar(scale);
+
+    // Drive stamp opacity (Text materials hold their own opacity).
+    if (depth === 0) {
+      const no = st.x < 0 ? Math.min(1, -st.x / SWIPE_THRESHOLD) : 0;
+      const yes = st.x > 0 ? Math.min(1, st.x / SWIPE_THRESHOLD) : 0;
+      if (noStampRef.current) noStampRef.current.material.opacity = no;
+      if (yesStampRef.current) yesStampRef.current.material.opacity = yes;
+    }
   });
 
   const handlePointerDown = (e) => {
-    if (!interactive || state.current.flying) return;
+    if (!interactive || s.current.flyingDir) return;
     e.stopPropagation();
-    e.target.setPointerCapture?.(e.pointerId);
+    try { e.target.setPointerCapture(e.pointerId); } catch { /* best-effort */ }
+    captured.current = { target: e.target, id: e.pointerId };
     setDragging(true);
   };
 
   const handlePointerMove = (e) => {
     if (!dragging) return;
-    if (e.point) {
-      state.current.x = e.point.x;
+    if (e.point) s.current.x = e.point.x;
+  };
+
+  const releaseCapture = () => {
+    const c = captured.current;
+    if (c.target) {
+      try { c.target.releasePointerCapture(c.id); } catch { /* ignore */ }
     }
+    captured.current = { target: null, id: null };
   };
 
   const handlePointerUp = () => {
     if (!dragging) return;
     setDragging(false);
-    const x = state.current.x;
+    releaseCapture();
+    const x = s.current.x;
     if (Math.abs(x) > SWIPE_THRESHOLD) {
-      const dir = x > 0 ? 'right' : 'left';
-      state.current.flying = dir;
-      onSwipe?.(dir);
+      s.current.flyingDir = x > 0 ? 'right' : 'left';
+      s.current.flyingAge = 0;
     }
   };
 
   const emoji = getIngredientEmoji(card.ingredient);
-  // Visual opacity of stamps depends on drag distance.
-  const cardDragX = state.current.x;
+  const strokeColor = card.belongs ? '#a78bfa' : '#64748b';
 
   return (
     <group
@@ -86,17 +111,17 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
-      {/* Soft shadow below card */}
-      <mesh position={[0.08, -2.2, -0.15]} rotation={[-Math.PI / 2, 0, 0]}>
+      {/* Shadow plane below the card */}
+      <mesh position={[0.08, -2.2, -0.15]} rotation={[-Math.PI / 2, 0, 0]} raycast={null}>
         <planeGeometry args={[3.0, 1.5]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.45} />
+        <meshBasicMaterial color="#000000" transparent opacity={0.45} depthWrite={false} />
       </mesh>
-      {/* Soft glow halo behind card */}
-      <mesh position={[0, 0, -0.25]}>
+      {/* Glow halo */}
+      <mesh position={[0, 0, -0.25]} raycast={null}>
         <planeGeometry args={[3.8, 4.6]} />
-        <meshBasicMaterial color="#f87171" transparent opacity={0.15} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.15} depthWrite={false} />
       </mesh>
-      {/* Card back (deepest tone) */}
+      {/* Card base (main hitbox) */}
       <mesh>
         <boxGeometry args={[3.1, 3.9, 0.14]} />
         <meshStandardMaterial
@@ -107,93 +132,115 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           metalness={0.15}
         />
       </mesh>
-      {/* Top gradient band — warm rose */}
-      <mesh position={[0, 0.85, 0.073]}>
+      {/* Top warm band */}
+      <mesh position={[0, 0.85, 0.073]} raycast={null}>
         <planeGeometry args={[3.08, 2.0]} />
-        <meshBasicMaterial color="#3b1322" transparent opacity={0.7} />
+        <meshBasicMaterial color="#3b1322" transparent opacity={0.7} depthWrite={false} />
       </mesh>
-      <mesh position={[0, 1.55, 0.074]}>
+      <mesh position={[0, 1.55, 0.074]} raycast={null}>
         <planeGeometry args={[3.08, 0.6]} />
-        <meshBasicMaterial color="#f87171" transparent opacity={0.2} />
-      </mesh>
-      {/* Inner stroke */}
-      <mesh position={[0, 0, 0.075]}>
-        <planeGeometry args={[3.0, 3.8]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.04} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.2} depthWrite={false} />
       </mesh>
       {/* Accent line under the emblem */}
-      <mesh position={[0, 0.2, 0.078]}>
+      <mesh position={[0, 0.25, 0.078]} raycast={null}>
         <planeGeometry args={[1.6, 0.03]} />
-        <meshBasicMaterial color="#f87171" transparent opacity={0.7} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.8} />
       </mesh>
       {/* Outer edge stroke */}
-      <mesh position={[0, 0, -0.05]}>
+      <mesh position={[0, 0, -0.05]} raycast={null}>
         <boxGeometry args={[3.22, 4.04, 0.02]} />
-        <meshBasicMaterial color={card.belongs ? '#a78bfa' : '#64748b'} transparent opacity={0.45} />
+        <meshBasicMaterial color={strokeColor} transparent opacity={0.45} depthWrite={false} />
       </mesh>
-      {/* Content via Html billboard */}
-      <Html center distanceFactor={6} style={{ pointerEvents: 'none' }}>
-        <div style={{
-          width: 230, display: 'flex', flexDirection: 'column', alignItems: 'center',
-          userSelect: 'none', color: '#f0e6d3', position: 'relative',
-        }}>
-          {/* Emblem */}
-          <div style={{
-            width: 108, height: 108, borderRadius: 999,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 58, marginTop: -30, marginBottom: 18,
-            background: 'radial-gradient(circle at 30% 25%, rgba(255,255,255,.18) 0%, rgba(248,113,113,.25) 40%, rgba(10,6,10,.7) 100%)',
-            border: '2px solid rgba(248,113,113,.4)',
-            boxShadow: '0 8px 24px rgba(248,113,113,.25), inset 0 0 20px rgba(255,255,255,.08)',
-            filter: 'drop-shadow(0 4px 8px rgba(0,0,0,.5))',
-          }}>
-            {emoji}
-          </div>
-          {/* Ingredient name */}
-          <div style={{
-            fontSize: 21, fontWeight: 900, textAlign: 'center', lineHeight: 1.15,
-            letterSpacing: 0.4, textShadow: '0 2px 6px rgba(0,0,0,.6)',
-            padding: '0 12px',
-          }}>
-            {card.ingredient}
-          </div>
-          {/* Subtitle */}
-          <div style={{
-            marginTop: 14, fontSize: 10, color: '#cbd5e1', letterSpacing: 1.2,
-            textTransform: 'uppercase', opacity: 0.7,
-          }}>
-            ingrediente
-          </div>
-
-          {/* Stamps appear when dragging past threshold */}
-          {depth === 0 && (
-            <>
-              <div style={{
-                position: 'absolute', top: -42, left: -6,
-                transform: `rotate(-22deg)`,
-                padding: '8px 16px', borderRadius: 10,
-                border: '4px solid #f87171', color: '#f87171',
-                fontWeight: 900, fontSize: 28, letterSpacing: 3,
-                background: 'rgba(248,113,113,.08)',
-                opacity: cardDragX < 0 ? Math.min(1, -cardDragX / SWIPE_THRESHOLD) : 0,
-                transition: 'opacity .05s',
-                boxShadow: '0 0 20px rgba(248,113,113,.4)',
-              }}>NOPE</div>
-              <div style={{
-                position: 'absolute', top: -42, right: -6,
-                transform: `rotate(22deg)`,
-                padding: '8px 18px', borderRadius: 10,
-                border: '4px solid #34d399', color: '#34d399',
-                fontWeight: 900, fontSize: 28, letterSpacing: 3,
-                background: 'rgba(52,211,153,.08)',
-                opacity: cardDragX > 0 ? Math.min(1, cardDragX / SWIPE_THRESHOLD) : 0,
-                transition: 'opacity .05s',
-                boxShadow: '0 0 20px rgba(52,211,153,.4)',
-              }}>SÍ</div>
-            </>
-          )}
-        </div>
-      </Html>
+      {/* Emblem disc */}
+      <mesh position={[0, 0.95, 0.075]} raycast={null}>
+        <circleGeometry args={[0.55, 32]} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.2} depthWrite={false} />
+      </mesh>
+      <mesh position={[0, 0.95, 0.08]} raycast={null}>
+        <circleGeometry args={[0.5, 32]} />
+        <meshStandardMaterial
+          color="#1a0a14"
+          emissive="#3b1322"
+          emissiveIntensity={0.5}
+        />
+      </mesh>
+      {/* Emoji (big) */}
+      <Text
+        position={[0, 0.95, 0.09]}
+        fontSize={0.75}
+        anchorX="center"
+        anchorY="middle"
+        raycast={null}
+      >
+        {emoji}
+      </Text>
+      {/* Ingredient name */}
+      <Text
+        position={[0, -0.1, 0.08]}
+        fontSize={0.3}
+        color="#f0e6d3"
+        outlineWidth={0.015}
+        outlineColor="#0a0608"
+        anchorX="center"
+        anchorY="middle"
+        maxWidth={2.7}
+        textAlign="center"
+        fontWeight="bold"
+        raycast={null}
+      >
+        {card.ingredient}
+      </Text>
+      {/* Subtitle */}
+      <Text
+        position={[0, -0.55, 0.08]}
+        fontSize={0.13}
+        color="#cbd5e1"
+        anchorX="center"
+        anchorY="middle"
+        letterSpacing={0.2}
+        raycast={null}
+      >
+        INGREDIENTE
+      </Text>
+      {/* NOPE / SÍ stamps — only on the foreground card */}
+      {depth === 0 && (
+        <>
+          <Text
+            ref={noStampRef}
+            position={[-1.0, 1.2, 0.12]}
+            rotation={[0, 0, 0.38]}
+            fontSize={0.55}
+            color="#f87171"
+            outlineWidth={0.025}
+            outlineColor="#1a0a18"
+            anchorX="center"
+            anchorY="middle"
+            fontWeight="900"
+            raycast={null}
+            material-transparent
+            material-opacity={0}
+          >
+            NOPE
+          </Text>
+          <Text
+            ref={yesStampRef}
+            position={[1.0, 1.2, 0.12]}
+            rotation={[0, 0, -0.38]}
+            fontSize={0.55}
+            color="#34d399"
+            outlineWidth={0.025}
+            outlineColor="#071a10"
+            anchorX="center"
+            anchorY="middle"
+            fontWeight="900"
+            raycast={null}
+            material-transparent
+            material-opacity={0}
+          >
+            SÍ
+          </Text>
+        </>
+      )}
     </group>
   );
 }

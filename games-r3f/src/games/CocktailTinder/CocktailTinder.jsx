@@ -7,6 +7,7 @@ import SwipeCard from './SwipeCard.jsx';
 import CocktailTinderHUD from './CocktailTinderHUD.jsx';
 import ResultScreen from '../../components/ResultScreen.jsx';
 import BokehBackground from '../../components/BokehBackground.jsx';
+import useReducedGraphics from '../../hooks/useReducedGraphics.js';
 
 export default function CocktailTinder({ onExit }) {
   const status = useCocktailTinder(s => s.status);
@@ -18,6 +19,7 @@ export default function CocktailTinder({ onExit }) {
   const correct = useCocktailTinder(s => s.correct);
   const bestStreak = useCocktailTinder(s => s.bestStreak);
   const total = deck.length;
+  const reduced = useReducedGraphics();
 
   useEffect(() => { if (status === 'idle') start(); }, [status, start]);
 
@@ -28,19 +30,19 @@ export default function CocktailTinder({ onExit }) {
     <>
       <Canvas
         camera={{ position: [0, 0, 8], fov: 50 }}
-        dpr={[1, 2]}
-        gl={{ antialias: true, alpha: false }}
+        dpr={reduced ? 1 : [1, 2]}
+        gl={{ antialias: !reduced, alpha: false, powerPreference: 'high-performance' }}
       >
         <color attach="background" args={['#1a0810']} />
         <fog attach="fog" args={['#1a0810', 10, 25]} />
 
-        <ambientLight intensity={0.45} />
+        <ambientLight intensity={0.55} />
         <directionalLight position={[4, 5, 6]} intensity={1.1} />
         <pointLight position={[-4, 2, 4]} intensity={0.5} color="#f87171" />
         <pointLight position={[4, -2, 4]} intensity={0.4} color="#fbbf24" />
 
-        <Stars radius={24} depth={25} count={400} factor={1.8} fade speed={0.35} />
-        <BokehBackground colors={['#f87171', '#fbbf24', '#a78bfa']} count={12} depth={6} />
+        <Stars radius={24} depth={25} count={reduced ? 200 : 400} factor={1.8} fade speed={0.35} />
+        {!reduced && <BokehBackground colors={['#f87171', '#fbbf24', '#a78bfa']} count={10} depth={6} />}
 
         {/* Show up to 2 cards stacked so the next one is visible behind. */}
         {next && <SwipeCard key={`${next.id}-bg`} card={next} depth={1} interactive={false} />}
@@ -53,12 +55,14 @@ export default function CocktailTinder({ onExit }) {
           />
         )}
 
-        <Environment preset="sunset" background={false} />
+        {!reduced && <Environment preset="sunset" background={false} />}
 
-        <EffectComposer>
-          <Bloom intensity={0.55} luminanceThreshold={0.3} luminanceSmoothing={0.2} mipmapBlur />
-          <Vignette eskil={false} offset={0.22} darkness={0.75} />
-        </EffectComposer>
+        {!reduced && (
+          <EffectComposer>
+            <Bloom intensity={0.5} luminanceThreshold={0.3} luminanceSmoothing={0.2} mipmapBlur />
+            <Vignette eskil={false} offset={0.22} darkness={0.72} />
+          </EffectComposer>
+        )}
       </Canvas>
 
       {status === 'playing' && <CocktailTinderHUD />}

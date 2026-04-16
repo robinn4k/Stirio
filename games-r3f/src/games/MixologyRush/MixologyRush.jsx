@@ -1,13 +1,14 @@
 import { useEffect, useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Stars, Environment } from '@react-three/drei';
-import { EffectComposer, Bloom, Vignette, ChromaticAberration } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { useMixologyRush } from './useMixologyRush.js';
 import Shaker from './Shaker.jsx';
 import Card from './Card.jsx';
 import MixologyRushHUD from './MixologyRushHUD.jsx';
 import ResultScreen from '../../components/ResultScreen.jsx';
 import BokehBackground from '../../components/BokehBackground.jsx';
+import useReducedGraphics from '../../hooks/useReducedGraphics.js';
 
 // Layout: cards placed in a 2-col grid in the upper half of the world so
 // they never overlap the central shaker. Camera is at z=11 → visible world
@@ -41,6 +42,7 @@ export default function MixologyRush({ onExit }) {
   const correctTotal = useMixologyRush(s => s.correctTotal);
   const bestCombo = useMixologyRush(s => s.bestCombo);
   const round = useMixologyRush(s => s.round);
+  const reduced = useReducedGraphics();
 
   useEffect(() => { if (status === 'idle') start(); }, [status, start]);
 
@@ -66,19 +68,19 @@ export default function MixologyRush({ onExit }) {
     <>
       <Canvas
         camera={{ position: [0, 0, 11], fov: 50 }}
-        dpr={[1, 2]}
-        gl={{ antialias: true, alpha: false }}
+        dpr={reduced ? 1 : [1, 2]}
+        gl={{ antialias: !reduced, alpha: false, powerPreference: 'high-performance' }}
       >
         <color attach="background" args={['#160821']} />
         <fog attach="fog" args={['#160821', 12, 28]} />
 
-        <ambientLight intensity={0.4} />
+        <ambientLight intensity={0.5} />
         <directionalLight position={[5, 6, 6]} intensity={1.1} />
         <pointLight position={[-4, 2, 4]} intensity={0.7} color="#a78bfa" />
         <pointLight position={[4, -2, 4]} intensity={0.5} color="#d4a44a" />
 
-        <Stars radius={28} depth={30} count={500} factor={2.2} fade speed={0.3} />
-        <BokehBackground colors={['#a78bfa', '#6b4fa2', '#d4a44a']} count={14} depth={7} />
+        <Stars radius={28} depth={30} count={reduced ? 250 : 500} factor={2.2} fade speed={0.3} />
+        {!reduced && <BokehBackground colors={['#a78bfa', '#6b4fa2', '#d4a44a']} count={12} depth={7} />}
 
         <Shaker position={SHAKER_POS} radius={SHAKER_RADIUS} />
 
@@ -92,12 +94,14 @@ export default function MixologyRush({ onExit }) {
             />
           ))}
 
-        <Environment preset="sunset" background={false} />
+        {!reduced && <Environment preset="sunset" background={false} />}
 
-        <EffectComposer>
-          <Bloom intensity={0.7} luminanceThreshold={0.3} luminanceSmoothing={0.2} mipmapBlur />
-          <Vignette eskil={false} offset={0.2} darkness={0.8} />
-        </EffectComposer>
+        {!reduced && (
+          <EffectComposer>
+            <Bloom intensity={0.65} luminanceThreshold={0.3} luminanceSmoothing={0.2} mipmapBlur />
+            <Vignette eskil={false} offset={0.2} darkness={0.78} />
+          </EffectComposer>
+        )}
       </Canvas>
 
       {(status === 'playing' || status === 'between') && <MixologyRushHUD />}

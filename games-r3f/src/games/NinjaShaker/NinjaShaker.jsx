@@ -8,6 +8,7 @@ import SliceEffects from './SliceEffects.jsx';
 import NinjaShakerHUD from './NinjaShakerHUD.jsx';
 import ResultScreen from '../../components/ResultScreen.jsx';
 import BokehBackground from '../../components/BokehBackground.jsx';
+import useReducedGraphics from '../../hooks/useReducedGraphics.js';
 
 export default function NinjaShaker({ onExit }) {
   const status = useNinjaShaker(s => s.status);
@@ -18,6 +19,7 @@ export default function NinjaShaker({ onExit }) {
   const correct = useNinjaShaker(s => s.correct);
   const bestCombo = useNinjaShaker(s => s.bestCombo);
   const [slices, setSlices] = useState([]);
+  const reduced = useReducedGraphics();
 
   // Auto-start the moment this game mounts.
   useEffect(() => { if (status === 'idle') start(); }, [status, start]);
@@ -50,29 +52,32 @@ export default function NinjaShaker({ onExit }) {
     <>
       <Canvas
         camera={{ position: [0, 0, 10], fov: 55 }}
-        dpr={[1, 2]}
-        gl={{ antialias: true, alpha: false }}
+        dpr={reduced ? 1 : [1, 2]}
+        gl={{ antialias: !reduced, alpha: false, powerPreference: 'high-performance' }}
+        frameloop="always"
       >
         <color attach="background" args={['#08110c']} />
         <fog attach="fog" args={['#08110c', 10, 25]} />
 
-        <ambientLight intensity={0.35} />
+        <ambientLight intensity={0.4} />
         <directionalLight position={[5, 8, 5]} intensity={1.1} />
         <pointLight position={[-4, -2, 4]} intensity={0.6} color="#34d399" />
         <pointLight position={[4, -2, 4]} intensity={0.4} color="#d4a44a" />
 
-        <Stars radius={30} depth={30} count={600} factor={2.5} fade speed={0.4} />
-        <BokehBackground colors={['#34d399', '#6ee7b7', '#d4a44a']} count={14} depth={7} />
+        <Stars radius={30} depth={30} count={reduced ? 300 : 600} factor={2.5} fade speed={0.3} />
+        {!reduced && <BokehBackground colors={['#34d399', '#6ee7b7', '#d4a44a']} count={12} depth={7} />}
 
         {status === 'playing' && <Orbs onSlice={onSlice} />}
         <SliceEffects slices={slices} />
 
-        <Environment preset="night" background={false} />
+        {!reduced && <Environment preset="night" background={false} />}
 
-        <EffectComposer>
-          <Bloom intensity={0.6} luminanceThreshold={0.25} luminanceSmoothing={0.18} mipmapBlur />
-          <Vignette eskil={false} offset={0.18} darkness={0.75} />
-        </EffectComposer>
+        {!reduced && (
+          <EffectComposer>
+            <Bloom intensity={0.55} luminanceThreshold={0.3} luminanceSmoothing={0.18} mipmapBlur />
+            <Vignette eskil={false} offset={0.18} darkness={0.72} />
+          </EffectComposer>
+        )}
       </Canvas>
 
       {status === 'playing' && <NinjaShakerHUD />}

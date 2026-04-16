@@ -1,26 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
-import { useFrame, useThree } from '@react-three/fiber';
-import { Html } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
+import { Text } from '@react-three/drei';
 import { getIngredientEmoji } from '../../data/cocktails.js';
 
-const RETURN_SPEED = 6; // units per second
+const RETURN_SPEED = 6;
 
 /**
- * A single draggable ingredient card in 3D world-space.
- * - Position springs back to `homePosition` when not dragged.
- * - During drag the pointer world coords drive position directly.
+ * A draggable ingredient card in 3D world-space.
+ * - Spring-back to `homePosition` when not dragged.
+ * - World-coordinate dragging via R3F pointer events. No Html portals so
+ *   pointer capture is stable on mobile.
  */
 export default function Card({ card, homePosition, onDrop }) {
   const group = useRef();
-  const { viewport, camera } = useThree();
   const [dragging, setDragging] = useState(false);
   const posRef = useRef([...homePosition]);
-  const mounted = useRef(false);
+  const captured = useRef({ target: null, id: null });
 
-  // Fresh entrance animation when the card first appears.
   useEffect(() => {
     posRef.current = [homePosition[0], homePosition[1] + 2, homePosition[2]];
-    mounted.current = true;
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useFrame((_, dt) => {
@@ -33,7 +31,6 @@ export default function Card({ card, homePosition, onDrop }) {
       posRef.current[2] += (homePosition[2] - posRef.current[2]) * step;
     }
     g.position.set(posRef.current[0], posRef.current[1], posRef.current[2]);
-    // Gentle tilt based on horizontal drag delta from home.
     const dx = posRef.current[0] - homePosition[0];
     g.rotation.z = -dx * 0.12;
     g.rotation.y = dragging ? Math.sin(performance.now() / 260) * 0.08 : 0;
@@ -41,25 +38,31 @@ export default function Card({ card, homePosition, onDrop }) {
 
   const handlePointerDown = (e) => {
     e.stopPropagation();
-    e.target.setPointerCapture?.(e.pointerId);
+    try { e.target.setPointerCapture(e.pointerId); } catch { /* best-effort */ }
+    captured.current = { target: e.target, id: e.pointerId };
     setDragging(true);
   };
 
   const handlePointerMove = (e) => {
     if (!dragging) return;
-    // Project pointer into the z=0 plane using camera + pointer coords.
-    const w = viewport.width;
-    const h = viewport.height;
-    // pointer is in NDC (-1..1) via e.pointer; fall back to unproject via e.point.
     if (e.point) {
       posRef.current[0] = e.point.x;
       posRef.current[1] = e.point.y;
     }
   };
 
-  const handlePointerUp = (e) => {
+  const releaseCapture = () => {
+    const c = captured.current;
+    if (c.target) {
+      try { c.target.releasePointerCapture(c.id); } catch { /* ignore */ }
+    }
+    captured.current = { target: null, id: null };
+  };
+
+  const handlePointerUp = () => {
     if (!dragging) return;
     setDragging(false);
+    releaseCapture();
     onDrop(card.id, posRef.current);
   };
 
@@ -77,17 +80,17 @@ export default function Card({ card, homePosition, onDrop }) {
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
-      {/* Shadow disc under the card */}
-      <mesh position={[0.05, -0.4, -0.1]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[1.9, 0.7]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.35} />
+      {/* Shadow */}
+      <mesh position={[0.05, -0.4, -0.1]} raycast={null}>
+        <planeGeometry args={[1.9, 0.3]} />
+        <meshBasicMaterial color="#000000" transparent opacity={0.35} depthWrite={false} />
       </mesh>
-      {/* Outer glow plate */}
-      <mesh position={[0, 0, -0.06]}>
+      {/* Glow plate */}
+      <mesh position={[0, 0, -0.06]} raycast={null}>
         <planeGeometry args={[2.0, 0.85]} />
-        <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.55 : 0.28} />
+        <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.55 : 0.28} depthWrite={false} />
       </mesh>
-      {/* Card body (darker) */}
+      {/* Card body (main hitbox) */}
       <mesh>
         <boxGeometry args={[1.8, 0.7, 0.14]} />
         <meshStandardMaterial
@@ -99,40 +102,46 @@ export default function Card({ card, homePosition, onDrop }) {
         />
       </mesh>
       {/* Glossy top half */}
-      <mesh position={[0, 0.16, 0.072]}>
+      <mesh position={[0, 0.16, 0.072]} raycast={null}>
         <planeGeometry args={[1.78, 0.35]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.08} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.08} depthWrite={false} />
       </mesh>
       {/* Left accent bar */}
-      <mesh position={[-0.78, 0, 0.072]}>
+      <mesh position={[-0.78, 0, 0.072]} raycast={null}>
         <planeGeometry args={[0.06, 0.58]} />
-        <meshStandardMaterial
-          color={accent}
-          emissive={accent}
-          emissiveIntensity={1.1}
-        />
+        <meshStandardMaterial color={accent} emissive={accent} emissiveIntensity={1.1} />
       </mesh>
-      {/* Emoji badge circle behind the emoji */}
-      <mesh position={[-0.55, 0, 0.075]}>
-        <circleGeometry args={[0.2, 32]} />
-        <meshBasicMaterial color={accent} transparent opacity={0.25} />
+      {/* Emoji badge circle */}
+      <mesh position={[-0.55, 0, 0.075]} raycast={null}>
+        <circleGeometry args={[0.2, 24]} />
+        <meshBasicMaterial color={accent} transparent opacity={0.25} depthWrite={false} />
       </mesh>
-      {/* Content via Html billboard */}
-      <Html center distanceFactor={7} style={{ pointerEvents: 'none' }}>
-        <div style={{
-          display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none',
-          width: 170, padding: '4px 10px',
-        }}>
-          <div style={{ fontSize: 30, filter: 'drop-shadow(0 2px 3px rgba(0,0,0,.55))' }}>{emoji}</div>
-          <div style={{
-            fontSize: 12, color: '#f5f3ff', fontWeight: 800, lineHeight: 1.15,
-            letterSpacing: 0.2, textShadow: '0 1px 3px rgba(0,0,0,.55)',
-            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
-          }}>
-            {card.ingredient}
-          </div>
-        </div>
-      </Html>
+      {/* Emoji as Text */}
+      <Text
+        position={[-0.55, 0, 0.08]}
+        fontSize={0.3}
+        anchorX="center"
+        anchorY="middle"
+        raycast={null}
+      >
+        {emoji}
+      </Text>
+      {/* Ingredient name as Text */}
+      <Text
+        position={[0.15, 0, 0.08]}
+        fontSize={0.14}
+        color="#f5f3ff"
+        outlineWidth={0.008}
+        outlineColor="#1a0e28"
+        anchorX="center"
+        anchorY="middle"
+        maxWidth={1.0}
+        textAlign="center"
+        fontWeight="bold"
+        raycast={null}
+      >
+        {card.ingredient}
+      </Text>
     </group>
   );
 }
