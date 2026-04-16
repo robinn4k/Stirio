@@ -1,5 +1,6 @@
 import { getLocalizedRounds } from './questions.js';
 import { getLang } from './lang.js';
+import { shuffle } from './utils.js';
 
 const TOTAL_TIME = 60;
 const PTS = 50;
@@ -7,15 +8,10 @@ const PTS = 50;
 let ss = null;
 
 function allQuestions() {
-  const q = getLocalizedRounds(getLang()).flatMap(r => r.questions);
-  // Fisher-Yates shuffle
-  for (let i = q.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [q[i], q[j]] = [q[j], q[i]];
-  }
+  const q = shuffle(getLocalizedRounds(getLang()).flatMap(r => r.questions));
   return q.map(q => {
     const correct = q.a[0];
-    const answers = [...q.a].sort(() => Math.random() - 0.5);
+    const answers = shuffle(q.a);
     return { question: q.q, answers, correctIndex: answers.indexOf(correct) };
   });
 }

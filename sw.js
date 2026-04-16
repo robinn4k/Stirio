@@ -18,6 +18,7 @@ const CACHE_PATHS = [
   'flags/es.svg',
   // JS modules
   'js/app.js',
+  'js/utils.js',
   'js/rivals.js',
   'js/questions.js',
   'js/learn.js',
@@ -71,7 +72,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v5.0`;
+const STATIC_CACHE_VERSION = `Stirio-v5.1`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

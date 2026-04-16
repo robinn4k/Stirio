@@ -7,6 +7,7 @@
 import { ACADEMY_LEVELS } from './academy_data.js';
 import { getDb, getCurrentUser, isFirebaseReady } from './auth.js';
 import { t } from './lang.js';
+import { shuffle } from './utils.js';
 
 // ─── Storage ─────────────────────────────────────────────────
 const KEY = 'cq_academy_data';
@@ -306,7 +307,7 @@ export function startAcademyLesson(levelId, lessonIndex) {
 
   const questions = lesson.questions.map(q => {
     const correct = q.a[0];
-    const shuffled = [...q.a].sort(() => Math.random() - 0.5);
+    const shuffled = shuffle(q.a);
     return {
       question: q.q,
       answers: shuffled,
