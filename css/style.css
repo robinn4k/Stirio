@@ -965,7 +965,11 @@ img { display: block; max-width: 100%; }
 #view-games {
   background: var(--bg);
   overflow: hidden;
-  display: flex;
+}
+#view-games.active {
+  /* Flex layout only when the view is actually active — otherwise the
+     generic `.view { display: none }` rule must win so the iframe isn't
+     floating on top of other views (dashboard, academy, duel, …). */
   flex-direction: column;
 }
 #view-games .app-header { flex: 0 0 auto; }
