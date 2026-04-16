@@ -1,26 +1,31 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Stars, Environment } from '@react-three/drei';
-import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import { useMixologyRush } from './useMixologyRush.js';
 import Shaker from './Shaker.jsx';
 import Card from './Card.jsx';
 import MixologyRushHUD from './MixologyRushHUD.jsx';
 import ResultScreen from '../../components/ResultScreen.jsx';
+import BokehBackground from '../../components/BokehBackground.jsx';
 
-// Layout: cards float in two columns around the shaker (center of world).
-// World space: camera at z=11, roughly 8 units wide / 13 tall visible.
-const SHAKER_POS = [0, -2.2, 0];
-const SHAKER_RADIUS = 1.2;
+// Layout: cards placed in a 2-col grid in the upper half of the world so
+// they never overlap the central shaker. Camera is at z=11 → visible world
+// width ≈ 10, height ≈ 13.
+const SHAKER_POS = [0, -2.6, 0];
+const SHAKER_RADIUS = 0.9;
 
-function cardPositions(n, ringRadius = 3.4) {
-  // Distribute cards on a semicircle above the shaker.
+function cardPositions(n) {
+  const cols = 2;
+  const colGap = 2.4;   // horizontal distance between card centers
+  const rowGap = 0.85;  // vertical distance
+  const startY = 3.2;   // top-most row
   const positions = [];
   for (let i = 0; i < n; i++) {
-    const t = n === 1 ? 0.5 : i / (n - 1);
-    const angle = Math.PI * (0.15 + t * 0.7); // 0.15π..0.85π (mostly upper)
-    const x = Math.cos(angle) * ringRadius;
-    const y = Math.sin(angle) * ringRadius * 0.9;
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const x = (col - 0.5) * colGap;
+    const y = startY - row * rowGap;
     positions.push([x, y, 0]);
   }
   return positions;
@@ -73,6 +78,7 @@ export default function MixologyRush({ onExit }) {
         <pointLight position={[4, -2, 4]} intensity={0.5} color="#d4a44a" />
 
         <Stars radius={28} depth={30} count={500} factor={2.2} fade speed={0.3} />
+        <BokehBackground colors={['#a78bfa', '#6b4fa2', '#d4a44a']} count={14} depth={7} />
 
         <Shaker position={SHAKER_POS} radius={SHAKER_RADIUS} />
 

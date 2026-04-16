@@ -86,72 +86,109 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
-      {/* Shadow behind */}
-      <mesh position={[0.05, -0.05, -0.05]}>
-        <boxGeometry args={[3.2, 4, 0.02]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.3} />
+      {/* Soft shadow below card */}
+      <mesh position={[0.08, -2.2, -0.15]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[3.0, 1.5]} />
+        <meshBasicMaterial color="#000000" transparent opacity={0.45} />
       </mesh>
-      {/* Card */}
+      {/* Soft glow halo behind card */}
+      <mesh position={[0, 0, -0.25]}>
+        <planeGeometry args={[3.8, 4.6]} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.15} />
+      </mesh>
+      {/* Card back (deepest tone) */}
       <mesh>
-        <boxGeometry args={[3.1, 3.9, 0.12]} />
+        <boxGeometry args={[3.1, 3.9, 0.14]} />
         <meshStandardMaterial
-          color="#1f0b15"
+          color="#1a0a18"
           emissive="#3b1322"
-          emissiveIntensity={0.2}
+          emissiveIntensity={0.18}
           roughness={0.4}
-          metalness={0.1}
+          metalness={0.15}
         />
       </mesh>
-      {/* Top glass highlight */}
-      <mesh position={[0, 1.5, 0.065]}>
-        <boxGeometry args={[3.0, 0.9, 0.02]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.05} />
+      {/* Top gradient band — warm rose */}
+      <mesh position={[0, 0.85, 0.073]}>
+        <planeGeometry args={[3.08, 2.0]} />
+        <meshBasicMaterial color="#3b1322" transparent opacity={0.7} />
+      </mesh>
+      <mesh position={[0, 1.55, 0.074]}>
+        <planeGeometry args={[3.08, 0.6]} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.2} />
+      </mesh>
+      {/* Inner stroke */}
+      <mesh position={[0, 0, 0.075]}>
+        <planeGeometry args={[3.0, 3.8]} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.04} />
+      </mesh>
+      {/* Accent line under the emblem */}
+      <mesh position={[0, 0.2, 0.078]}>
+        <planeGeometry args={[1.6, 0.03]} />
+        <meshBasicMaterial color="#f87171" transparent opacity={0.7} />
       </mesh>
       {/* Outer edge stroke */}
-      <mesh position={[0, 0, -0.04]}>
-        <boxGeometry args={[3.25, 4.05, 0.02]} />
-        <meshBasicMaterial color="#6b7280" transparent opacity={0.35} />
+      <mesh position={[0, 0, -0.05]}>
+        <boxGeometry args={[3.22, 4.04, 0.02]} />
+        <meshBasicMaterial color={card.belongs ? '#a78bfa' : '#64748b'} transparent opacity={0.45} />
       </mesh>
       {/* Content via Html billboard */}
       <Html center distanceFactor={6} style={{ pointerEvents: 'none' }}>
         <div style={{
-          width: 210, display: 'flex', flexDirection: 'column', alignItems: 'center',
-          userSelect: 'none', color: '#f0e6d3',
+          width: 230, display: 'flex', flexDirection: 'column', alignItems: 'center',
+          userSelect: 'none', color: '#f0e6d3', position: 'relative',
         }}>
+          {/* Emblem */}
           <div style={{
-            width: 78, height: 78, borderRadius: 999,
+            width: 108, height: 108, borderRadius: 999,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 44, marginBottom: 12,
-            background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,.08), rgba(0,0,0,.4))',
-            border: '1px solid rgba(255,255,255,.1)',
+            fontSize: 58, marginTop: -30, marginBottom: 18,
+            background: 'radial-gradient(circle at 30% 25%, rgba(255,255,255,.18) 0%, rgba(248,113,113,.25) 40%, rgba(10,6,10,.7) 100%)',
+            border: '2px solid rgba(248,113,113,.4)',
+            boxShadow: '0 8px 24px rgba(248,113,113,.25), inset 0 0 20px rgba(255,255,255,.08)',
+            filter: 'drop-shadow(0 4px 8px rgba(0,0,0,.5))',
           }}>
             {emoji}
           </div>
+          {/* Ingredient name */}
           <div style={{
-            fontSize: 19, fontWeight: 800, textAlign: 'center', lineHeight: 1.2,
+            fontSize: 21, fontWeight: 900, textAlign: 'center', lineHeight: 1.15,
+            letterSpacing: 0.4, textShadow: '0 2px 6px rgba(0,0,0,.6)',
+            padding: '0 12px',
           }}>
             {card.ingredient}
           </div>
+          {/* Subtitle */}
+          <div style={{
+            marginTop: 14, fontSize: 10, color: '#cbd5e1', letterSpacing: 1.2,
+            textTransform: 'uppercase', opacity: 0.7,
+          }}>
+            ingrediente
+          </div>
+
           {/* Stamps appear when dragging past threshold */}
           {depth === 0 && (
             <>
               <div style={{
-                position: 'absolute', top: 6, left: 10,
-                transform: `rotate(-18deg)`,
-                padding: '6px 12px', borderRadius: 8,
-                border: '3px solid #f87171', color: '#f87171',
-                fontWeight: 900, fontSize: 22, letterSpacing: 2,
+                position: 'absolute', top: -42, left: -6,
+                transform: `rotate(-22deg)`,
+                padding: '8px 16px', borderRadius: 10,
+                border: '4px solid #f87171', color: '#f87171',
+                fontWeight: 900, fontSize: 28, letterSpacing: 3,
+                background: 'rgba(248,113,113,.08)',
                 opacity: cardDragX < 0 ? Math.min(1, -cardDragX / SWIPE_THRESHOLD) : 0,
                 transition: 'opacity .05s',
+                boxShadow: '0 0 20px rgba(248,113,113,.4)',
               }}>NOPE</div>
               <div style={{
-                position: 'absolute', top: 6, right: 10,
-                transform: `rotate(18deg)`,
-                padding: '6px 12px', borderRadius: 8,
-                border: '3px solid #34d399', color: '#34d399',
-                fontWeight: 900, fontSize: 22, letterSpacing: 2,
+                position: 'absolute', top: -42, right: -6,
+                transform: `rotate(22deg)`,
+                padding: '8px 18px', borderRadius: 10,
+                border: '4px solid #34d399', color: '#34d399',
+                fontWeight: 900, fontSize: 28, letterSpacing: 3,
+                background: 'rgba(52,211,153,.08)',
                 opacity: cardDragX > 0 ? Math.min(1, cardDragX / SWIPE_THRESHOLD) : 0,
                 transition: 'opacity .05s',
+                boxShadow: '0 0 20px rgba(52,211,153,.4)',
               }}>SÍ</div>
             </>
           )}

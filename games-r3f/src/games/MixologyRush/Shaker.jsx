@@ -26,18 +26,23 @@ export default function Shaker({ position, radius }) {
   return (
     <group position={position}>
       {/* soft outer glow disc */}
-      <mesh ref={glowRef} position={[0, 0, -0.1]}>
-        <circleGeometry args={[radius * 2.2, 64]} />
-        <meshBasicMaterial color="#a78bfa" transparent opacity={0.12} />
+      <mesh ref={glowRef} position={[0, 0, -0.2]}>
+        <circleGeometry args={[radius * 1.9, 64]} />
+        <meshBasicMaterial color="#a78bfa" transparent opacity={0.18} />
+      </mesh>
+      {/* mid glow disc */}
+      <mesh position={[0, 0, -0.12]}>
+        <circleGeometry args={[radius * 1.4, 64]} />
+        <meshBasicMaterial color="#c4a7ff" transparent opacity={0.1} />
       </mesh>
       {/* animated ring */}
       <mesh ref={ringRef}>
-        <torusGeometry args={[radius + 0.25, 0.05, 16, 64]} />
+        <torusGeometry args={[radius + 0.18, 0.035, 16, 64]} />
         <meshStandardMaterial
           color="#d4a44a"
           emissive="#d4a44a"
-          emissiveIntensity={0.8}
-          roughness={0.35}
+          emissiveIntensity={1.1}
+          roughness={0.3}
         />
       </mesh>
       {/* inner sphere */}
@@ -46,20 +51,25 @@ export default function Shaker({ position, radius }) {
         <meshStandardMaterial
           color="#2d1f3d"
           emissive="#6b4fa2"
-          emissiveIntensity={0.35}
-          roughness={0.25}
-          metalness={0.3}
+          emissiveIntensity={0.45}
+          roughness={0.22}
+          metalness={0.35}
         />
       </mesh>
-      <Html center distanceFactor={7} style={{ pointerEvents: 'none' }}>
+      {/* tiny orbiting highlight */}
+      <mesh position={[radius * 0.45, radius * 0.45, 0.35]}>
+        <sphereGeometry args={[0.07, 16, 16]} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.55} />
+      </mesh>
+      <Html center distanceFactor={7} position={[0, 0, 0.1]} style={{ pointerEvents: 'none' }}>
         <div style={{
           display: 'flex', flexDirection: 'column', alignItems: 'center', userSelect: 'none',
         }}>
-          <div style={{ fontSize: 36 }}>🍸</div>
+          <div style={{ fontSize: 32, filter: 'drop-shadow(0 2px 6px rgba(0,0,0,.6))' }}>🍸</div>
           <div style={{
-            marginTop: 2, fontSize: 10, color: '#cfd8dc', letterSpacing: 0.4,
-            padding: '2px 8px', borderRadius: 10, background: 'rgba(10,8,20,.55)',
-            border: '1px solid rgba(167,139,250,.5)',
+            marginTop: 2, fontSize: 9, color: '#cfd8dc', letterSpacing: 0.6,
+            padding: '2px 8px', borderRadius: 10, background: 'rgba(10,8,20,.6)',
+            border: '1px solid rgba(167,139,250,.55)', textTransform: 'uppercase',
           }}>
             arrastra aquí
           </div>

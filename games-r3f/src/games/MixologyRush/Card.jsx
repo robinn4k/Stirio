@@ -63,8 +63,10 @@ export default function Card({ card, homePosition, onDrop }) {
     onDrop(card.id, posRef.current);
   };
 
-  const baseColor = card.correct ? '#6b4fa2' : '#374151';
-  const edgeColor = card.correct ? '#a78bfa' : '#6b7280';
+  const baseColor = card.correct ? '#3b1f5a' : '#1f2937';
+  const midColor = card.correct ? '#6b4fa2' : '#374151';
+  const edgeColor = card.correct ? '#c4a7ff' : '#6b7280';
+  const accent = card.correct ? '#a78bfa' : '#9ca3af';
   const emoji = getIngredientEmoji(card.ingredient);
 
   return (
@@ -75,36 +77,56 @@ export default function Card({ card, homePosition, onDrop }) {
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
-      {/* Card body: rounded box */}
+      {/* Shadow disc under the card */}
+      <mesh position={[0.05, -0.4, -0.1]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[1.9, 0.7]} />
+        <meshBasicMaterial color="#000000" transparent opacity={0.35} />
+      </mesh>
+      {/* Outer glow plate */}
+      <mesh position={[0, 0, -0.06]}>
+        <planeGeometry args={[2.0, 0.85]} />
+        <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.55 : 0.28} />
+      </mesh>
+      {/* Card body (darker) */}
       <mesh>
-        <boxGeometry args={[1.6, 0.55, 0.12]} />
+        <boxGeometry args={[1.8, 0.7, 0.14]} />
         <meshStandardMaterial
           color={baseColor}
-          emissive={baseColor}
-          emissiveIntensity={0.25}
-          roughness={0.35}
-          metalness={0.1}
+          emissive={midColor}
+          emissiveIntensity={0.5}
+          roughness={0.3}
+          metalness={0.25}
         />
       </mesh>
-      {/* Highlight strip on top */}
-      <mesh position={[0, 0.23, 0.065]}>
-        <boxGeometry args={[1.58, 0.08, 0.02]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.15} />
+      {/* Glossy top half */}
+      <mesh position={[0, 0.16, 0.072]}>
+        <planeGeometry args={[1.78, 0.35]} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.08} />
       </mesh>
-      {/* Edge glow */}
-      <mesh position={[0, 0, -0.05]}>
-        <boxGeometry args={[1.72, 0.67, 0.02]} />
-        <meshBasicMaterial color={edgeColor} transparent opacity={0.35} />
+      {/* Left accent bar */}
+      <mesh position={[-0.78, 0, 0.072]}>
+        <planeGeometry args={[0.06, 0.58]} />
+        <meshStandardMaterial
+          color={accent}
+          emissive={accent}
+          emissiveIntensity={1.1}
+        />
       </mesh>
-      {/* Content: emoji + label via Html billboard */}
+      {/* Emoji badge circle behind the emoji */}
+      <mesh position={[-0.55, 0, 0.075]}>
+        <circleGeometry args={[0.2, 32]} />
+        <meshBasicMaterial color={accent} transparent opacity={0.25} />
+      </mesh>
+      {/* Content via Html billboard */}
       <Html center distanceFactor={7} style={{ pointerEvents: 'none' }}>
         <div style={{
-          display: 'flex', alignItems: 'center', gap: 8, userSelect: 'none',
-          width: 150, padding: '4px 8px',
+          display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none',
+          width: 170, padding: '4px 10px',
         }}>
-          <div style={{ fontSize: 26 }}>{emoji}</div>
+          <div style={{ fontSize: 30, filter: 'drop-shadow(0 2px 3px rgba(0,0,0,.55))' }}>{emoji}</div>
           <div style={{
-            fontSize: 11, color: '#eee', fontWeight: 700, lineHeight: 1.15,
+            fontSize: 12, color: '#f5f3ff', fontWeight: 800, lineHeight: 1.15,
+            letterSpacing: 0.2, textShadow: '0 1px 3px rgba(0,0,0,.55)',
             overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
           }}>
             {card.ingredient}

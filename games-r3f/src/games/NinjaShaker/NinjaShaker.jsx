@@ -7,6 +7,7 @@ import Orbs from './Orbs.jsx';
 import SliceEffects from './SliceEffects.jsx';
 import NinjaShakerHUD from './NinjaShakerHUD.jsx';
 import ResultScreen from '../../components/ResultScreen.jsx';
+import BokehBackground from '../../components/BokehBackground.jsx';
 
 export default function NinjaShaker({ onExit }) {
   const status = useNinjaShaker(s => s.status);
@@ -61,6 +62,7 @@ export default function NinjaShaker({ onExit }) {
         <pointLight position={[4, -2, 4]} intensity={0.4} color="#d4a44a" />
 
         <Stars radius={30} depth={30} count={600} factor={2.5} fade speed={0.4} />
+        <BokehBackground colors={['#34d399', '#6ee7b7', '#d4a44a']} count={14} depth={7} />
 
         {status === 'playing' && <Orbs onSlice={onSlice} />}
         <SliceEffects slices={slices} />
