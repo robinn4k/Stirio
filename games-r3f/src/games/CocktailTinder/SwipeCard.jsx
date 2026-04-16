@@ -112,12 +112,12 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
       onPointerCancel={handlePointerUp}
     >
       {/* Shadow plane below the card */}
-      <mesh position={[0.08, -2.2, -0.15]} rotation={[-Math.PI / 2, 0, 0]} raycast={null}>
+      <mesh position={[0.08, -2.2, -0.15]} rotation={[-Math.PI / 2, 0, 0]} raycast={() => null}>
         <planeGeometry args={[3.0, 1.5]} />
         <meshBasicMaterial color="#000000" transparent opacity={0.45} depthWrite={false} />
       </mesh>
       {/* Glow halo */}
-      <mesh position={[0, 0, -0.25]} raycast={null}>
+      <mesh position={[0, 0, -0.25]} raycast={() => null}>
         <planeGeometry args={[3.8, 4.6]} />
         <meshBasicMaterial color="#f87171" transparent opacity={0.15} depthWrite={false} />
       </mesh>
@@ -133,30 +133,30 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
         />
       </mesh>
       {/* Top warm band */}
-      <mesh position={[0, 0.85, 0.073]} raycast={null}>
+      <mesh position={[0, 0.85, 0.073]} raycast={() => null}>
         <planeGeometry args={[3.08, 2.0]} />
         <meshBasicMaterial color="#3b1322" transparent opacity={0.7} depthWrite={false} />
       </mesh>
-      <mesh position={[0, 1.55, 0.074]} raycast={null}>
+      <mesh position={[0, 1.55, 0.074]} raycast={() => null}>
         <planeGeometry args={[3.08, 0.6]} />
         <meshBasicMaterial color="#f87171" transparent opacity={0.2} depthWrite={false} />
       </mesh>
       {/* Accent line under the emblem */}
-      <mesh position={[0, 0.25, 0.078]} raycast={null}>
+      <mesh position={[0, 0.25, 0.078]} raycast={() => null}>
         <planeGeometry args={[1.6, 0.03]} />
         <meshBasicMaterial color="#f87171" transparent opacity={0.8} />
       </mesh>
       {/* Outer edge stroke */}
-      <mesh position={[0, 0, -0.05]} raycast={null}>
+      <mesh position={[0, 0, -0.05]} raycast={() => null}>
         <boxGeometry args={[3.22, 4.04, 0.02]} />
         <meshBasicMaterial color={strokeColor} transparent opacity={0.45} depthWrite={false} />
       </mesh>
       {/* Emblem disc */}
-      <mesh position={[0, 0.95, 0.075]} raycast={null}>
+      <mesh position={[0, 0.95, 0.075]} raycast={() => null}>
         <circleGeometry args={[0.55, 32]} />
         <meshBasicMaterial color="#f87171" transparent opacity={0.2} depthWrite={false} />
       </mesh>
-      <mesh position={[0, 0.95, 0.08]} raycast={null}>
+      <mesh position={[0, 0.95, 0.08]} raycast={() => null}>
         <circleGeometry args={[0.5, 32]} />
         <meshStandardMaterial
           color="#1a0a14"
@@ -170,7 +170,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
         fontSize={0.75}
         anchorX="center"
         anchorY="middle"
-        raycast={null}
+        raycast={() => null}
       >
         {emoji}
       </Text>
@@ -186,7 +186,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
         maxWidth={2.7}
         textAlign="center"
         fontWeight="bold"
-        raycast={null}
+        raycast={() => null}
       >
         {card.ingredient}
       </Text>
@@ -198,7 +198,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
         anchorX="center"
         anchorY="middle"
         letterSpacing={0.2}
-        raycast={null}
+        raycast={() => null}
       >
         INGREDIENTE
       </Text>
@@ -216,7 +216,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
             anchorX="center"
             anchorY="middle"
             fontWeight="900"
-            raycast={null}
+            raycast={() => null}
             material-transparent
             material-opacity={0}
           >
@@ -233,7 +233,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
             anchorX="center"
             anchorY="middle"
             fontWeight="900"
-            raycast={null}
+            raycast={() => null}
             material-transparent
             material-opacity={0}
           >

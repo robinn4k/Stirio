@@ -81,12 +81,12 @@ export default function Card({ card, homePosition, onDrop }) {
       onPointerCancel={handlePointerUp}
     >
       {/* Shadow */}
-      <mesh position={[0.05, -0.4, -0.1]} raycast={null}>
+      <mesh position={[0.05, -0.4, -0.1]} raycast={() => null}>
         <planeGeometry args={[1.9, 0.3]} />
         <meshBasicMaterial color="#000000" transparent opacity={0.35} depthWrite={false} />
       </mesh>
       {/* Glow plate */}
-      <mesh position={[0, 0, -0.06]} raycast={null}>
+      <mesh position={[0, 0, -0.06]} raycast={() => null}>
         <planeGeometry args={[2.0, 0.85]} />
         <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.55 : 0.28} depthWrite={false} />
       </mesh>
@@ -102,17 +102,17 @@ export default function Card({ card, homePosition, onDrop }) {
         />
       </mesh>
       {/* Glossy top half */}
-      <mesh position={[0, 0.16, 0.072]} raycast={null}>
+      <mesh position={[0, 0.16, 0.072]} raycast={() => null}>
         <planeGeometry args={[1.78, 0.35]} />
         <meshBasicMaterial color="#ffffff" transparent opacity={0.08} depthWrite={false} />
       </mesh>
       {/* Left accent bar */}
-      <mesh position={[-0.78, 0, 0.072]} raycast={null}>
+      <mesh position={[-0.78, 0, 0.072]} raycast={() => null}>
         <planeGeometry args={[0.06, 0.58]} />
         <meshStandardMaterial color={accent} emissive={accent} emissiveIntensity={1.1} />
       </mesh>
       {/* Emoji badge circle */}
-      <mesh position={[-0.55, 0, 0.075]} raycast={null}>
+      <mesh position={[-0.55, 0, 0.075]} raycast={() => null}>
         <circleGeometry args={[0.2, 24]} />
         <meshBasicMaterial color={accent} transparent opacity={0.25} depthWrite={false} />
       </mesh>
@@ -122,7 +122,7 @@ export default function Card({ card, homePosition, onDrop }) {
         fontSize={0.3}
         anchorX="center"
         anchorY="middle"
-        raycast={null}
+        raycast={() => null}
       >
         {emoji}
       </Text>
@@ -138,7 +138,7 @@ export default function Card({ card, homePosition, onDrop }) {
         maxWidth={1.0}
         textAlign="center"
         fontWeight="bold"
-        raycast={null}
+        raycast={() => null}
       >
         {card.ingredient}
       </Text>

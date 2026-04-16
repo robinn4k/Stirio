@@ -30,17 +30,17 @@ export default function Shaker({ position, radius }) {
   return (
     <group>
       {/* soft outer glow disc */}
-      <mesh ref={glowRef} position={[position[0], position[1], position[2] - 0.2]} raycast={null}>
+      <mesh ref={glowRef} position={[position[0], position[1], position[2] - 0.2]} raycast={() => null}>
         <circleGeometry args={[radius * 1.9, 48]} />
         <meshBasicMaterial color="#a78bfa" transparent opacity={0.18} depthWrite={false} />
       </mesh>
       {/* mid glow disc */}
-      <mesh position={[position[0], position[1], position[2] - 0.12]} raycast={null}>
+      <mesh position={[position[0], position[1], position[2] - 0.12]} raycast={() => null}>
         <circleGeometry args={[radius * 1.4, 48]} />
         <meshBasicMaterial color="#c4a7ff" transparent opacity={0.1} depthWrite={false} />
       </mesh>
       {/* animated ring */}
-      <mesh ref={ringRef} position={position} raycast={null}>
+      <mesh ref={ringRef} position={position} raycast={() => null}>
         <torusGeometry args={[radius + 0.18, 0.035, 12, 48]} />
         <meshStandardMaterial
           color="#d4a44a"
@@ -50,7 +50,7 @@ export default function Shaker({ position, radius }) {
         />
       </mesh>
       {/* inner sphere (ref mesh provides the bobbing Y) */}
-      <mesh ref={ref} position={position} raycast={null}>
+      <mesh ref={ref} position={position} raycast={() => null}>
         <sphereGeometry args={[radius, 24, 24]} />
         <meshStandardMaterial
           color="#2d1f3d"
@@ -67,7 +67,7 @@ export default function Shaker({ position, radius }) {
         fontSize={0.75}
         anchorX="center"
         anchorY="middle"
-        raycast={null}
+        raycast={() => null}
       >
         🍸
       </Text>
@@ -80,7 +80,7 @@ export default function Shaker({ position, radius }) {
         anchorX="center"
         anchorY="middle"
         letterSpacing={0.15}
-        raycast={null}
+        raycast={() => null}
       >
         ARRASTRA AQUÍ
       </Text>

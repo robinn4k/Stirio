@@ -59,12 +59,12 @@ export default function Orb({ orb, registerState, onSlice }) {
     <group ref={group} onPointerDown={handleSlice}>
       <group ref={core}>
         {/* Outer halo */}
-        <mesh ref={halo} position={[0, 0, -0.05]} raycast={null}>
+        <mesh ref={halo} position={[0, 0, -0.05]} raycast={() => null}>
           <sphereGeometry args={[RADIUS * 1.55, 16, 16]} />
           <meshBasicMaterial color={glowColor} transparent opacity={orb.correct ? 0.22 : 0.08} depthWrite={false} />
         </mesh>
         {/* Mid glow */}
-        <mesh raycast={null}>
+        <mesh raycast={() => null}>
           <sphereGeometry args={[RADIUS * 1.15, 16, 16]} />
           <meshBasicMaterial color={glowColor} transparent opacity={orb.correct ? 0.18 : 0.06} depthWrite={false} />
         </mesh>
@@ -80,7 +80,7 @@ export default function Orb({ orb, registerState, onSlice }) {
           />
         </mesh>
         {/* Glass highlight (decorative, no raycast) */}
-        <mesh position={[-0.18, 0.2, 0.52]} raycast={null}>
+        <mesh position={[-0.18, 0.2, 0.52]} raycast={() => null}>
           <sphereGeometry args={[0.14, 12, 12]} />
           <meshBasicMaterial color="#ffffff" transparent opacity={0.45} />
         </mesh>
@@ -92,7 +92,7 @@ export default function Orb({ orb, registerState, onSlice }) {
         fontSize={0.6}
         anchorX="center"
         anchorY="middle"
-        raycast={null}
+        raycast={() => null}
       >
         {emoji}
       </Text>
@@ -107,7 +107,7 @@ export default function Orb({ orb, registerState, onSlice }) {
         anchorX="center"
         anchorY="middle"
         maxWidth={3}
-        raycast={null}
+        raycast={() => null}
       >
         {orb.ingredient}
       </Text>
