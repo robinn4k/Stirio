@@ -761,6 +761,9 @@ img { display: block; max-width: 100%; }
 .toast.toast-update {
   border-color: var(--accent); color: var(--accent);
   pointer-events: auto; cursor: pointer;
+  /* Sit above the cookie banner (z-index 9999) and other overlays so the
+     update prompt stays clickable on desktop where those layers can cover it. */
+  z-index: 10001;
   animation: pulse-border 1.5s ease-in-out infinite;
 }
 @keyframes pulse-border {
