@@ -95,7 +95,19 @@ export default function Menu({ onPick }) {
         ))}
       </div>
 
-      <p style={{ fontSize: 10, color: '#8c7b58', marginTop: 16, maxWidth: 320, textAlign: 'center' }}>
+      <a
+        href="../"
+        style={{
+          marginTop: 8, padding: '10px 18px', borderRadius: 999,
+          border: '1px solid #d4a44a55', background: 'rgba(8,17,12,.5)',
+          color: '#d4a44a', fontWeight: 700, fontSize: 13,
+          textDecoration: 'none', letterSpacing: 0.3,
+        }}
+      >
+        ← Volver a Stirio
+      </a>
+
+      <p style={{ fontSize: 10, color: '#8c7b58', marginTop: 10, maxWidth: 320, textAlign: 'center' }}>
         Vanilla React + Three.js declarativo · drei · postprocessing · Zustand
       </p>
     </div>

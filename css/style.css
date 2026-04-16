@@ -961,29 +961,8 @@ img { display: block; max-width: 100%; }
 ══════════════════════════════════════════════════ */
 #view-blind { background: var(--bg); overflow-y: auto; }
 
-/* Mini-games (R3F, embedded via iframe) */
-#view-games {
-  background: var(--bg);
-  overflow: hidden;
-}
-#view-games.active {
-  /* Flex layout only when the view is actually active — otherwise the
-     generic `.view { display: none }` rule must win so the iframe isn't
-     floating on top of other views (dashboard, academy, duel, …). */
-  flex-direction: column;
-}
-#view-games .app-header { flex: 0 0 auto; }
-.games-iframe {
-  flex: 1 1 auto;
-  width: 100%;
-  border: 0;
-  display: block;
-  background: #08110c;
-  /* No `touch-action` here on purpose. Setting it on the iframe wrapper
-     breaks touch events on iOS Safari (events never reach the embedded
-     document). The canvas INSIDE the iframe already sets
-     `touch-action: none` to cancel scroll/zoom while playing. */
-}
+/* Mini-games (R3F build under /games-r3f-demo/) are now opened via
+   navigation, not via iframe. No dedicated view in the SPA. */
 
 .blind-clues-card {
   margin: 12px 16px;

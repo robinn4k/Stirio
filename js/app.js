@@ -26,8 +26,8 @@ import {
 import { getLocalizedRounds } from './questions.js';
 import { getBotName, scheduleBotAnswer, DIFFICULTIES } from './bot.js';
 import { initWiki, bindWikiEvents, openArticle } from './wiki.js';
-// Mini-games were migrated from Phaser to the R3F PoC under games-r3f-demo/
-// and are now embedded in <iframe id="games-iframe">. See goToGames() below.
+// Mini-games were migrated from Phaser to the R3F PoC under games-r3f-demo/.
+// The SPA now navigates to that build directly; see goToGames() below.
 import { showConfirm } from './utils.js';
 
 // ─── DOM helpers ─────────────────────────────────────────────
@@ -634,31 +634,15 @@ function startDailyChallenge() {
   });
 }
 
-// ─── MINI GAMES (R3F, embedded) ──────────────────────────────
-// The mini-games now live as a self-contained Vite build under
-// /games-r3f-demo/. They're embedded via <iframe> to keep the vanilla SPA
-// runtime untouched. We assign src only on open so the iframe never runs
-// animations while the user isn't in the games view; clearing it on quit
-// releases its GL context and audio.
-
-const GAMES_IFRAME_SRC = 'games-r3f-demo/index.html';
-
-function openGamesIframe() {
-  const el = document.getElementById('games-iframe');
-  if (!el) return;
-  if (el.getAttribute('src') !== GAMES_IFRAME_SRC) el.setAttribute('src', GAMES_IFRAME_SRC);
-}
-
-function closeGamesIframe() {
-  const el = document.getElementById('games-iframe');
-  if (!el) return;
-  el.removeAttribute('src');
-}
+// ─── MINI GAMES ──────────────────────────────────────────────
+// Mini-games live as a self-contained Vite build under /games-r3f-demo/.
+// Previous attempts with <iframe> had unreliable touch behaviour on iOS
+// and intermittent pointer-events capture issues on desktop, so we now
+// simply navigate to the games page. The games app has a "← Stirio"
+// button in its menu to navigate back.
 
 function goToGames() {
-  showView('view-games');
-  translateHTML();
-  openGamesIframe();
+  window.location.href = 'games-r3f-demo/';
 }
 
 // ─── SPEED MODE ───────────────────────────────────────────────
@@ -1678,7 +1662,6 @@ function bindViewCleanups() {
   registerViewCleanup('view-speed',       () => abortSpeed());
   registerViewCleanup('view-constructor', () => abortConstructor());
   registerViewCleanup('view-blind',       () => abortBlind());
-  registerViewCleanup('view-games',       () => closeGamesIframe());
   // Duel uses a 4-view flow (menu → lobby → game → result). Cleanup only when
   // the user is truly exiting the duel flow, not when transitioning between
   // these sub-views. We let the existing resetDuelState() calls in the duel
@@ -1762,7 +1745,6 @@ function bindEvents() {
   $('btn-games').addEventListener('click', () => goToGames());
 
   // Mini games (Phaser)
-  $('btn-quit-games').addEventListener('click', () => { closeGamesIframe(); goToDashboard(); });
 
   // Speed mode
   $('btn-quit-speed').addEventListener('click', async () => { if (await showConfirm(t('confirm.quit'))) { abortSpeed(); goToDashboard(); } });
