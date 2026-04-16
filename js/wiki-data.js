@@ -134,6 +134,8 @@ export const WIKI_CATEGORIES = [
       { id: 'creme-de-cassis', icon: '🍇', has3d: false },
       { id: 'ginger-liqueur', icon: '🫚', has3d: false },
       { id: 'ancho-reyes', icon: '🌶️', has3d: false },
+      { id: 'amarula', icon: '🐘', has3d: false },
+      { id: 'tia-maria', icon: '☕', has3d: false },
     ]
   },
   {
@@ -176,6 +178,16 @@ export const WIKI_CATEGORIES = [
       { id: 'herbs-spices', icon: '🌿', has3d: false },
       { id: 'creme-de-violette', icon: '💜', has3d: false },
       { id: 'allspice-dram', icon: '🫙', has3d: false },
+    ]
+  },
+  {
+    id: 'beer',
+    icon: '🍺',
+    gradient: 'linear-gradient(135deg, #f0b429, #d4940a)',
+    has3d: false,
+    articles: [
+      { id: 'cerveza', icon: '🍻', has3d: false },
+      { id: 'sidra', icon: '🍏', has3d: false },
     ]
   },
   {
@@ -626,6 +638,8 @@ export const WIKI_ARTICLES = {
   'liqueurs.creme-de-cassis': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'liqueurs.ginger-liqueur': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'liqueurs.ancho-reyes': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.amarula': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.tia-maria': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
 
   // ── AMAROS & BITTERS ──────────────────────────────────────
   'amaros.campari': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
@@ -657,6 +671,10 @@ export const WIKI_ARTICLES = {
   'mixers.herbs-spices': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'mixers.creme-de-violette': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'mixers.allspice-dram': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+
+  // ── BEER & CIDER ─────────────────────────────────────────
+  'beer.cerveza': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'beer.sidra': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
 
   // ── GLOSSARY ───────────────────────────────────────────────
   'glossary.spirits-terms': { sections: [{ type: 'glossary-list' }] },
