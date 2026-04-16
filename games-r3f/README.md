@@ -1,6 +1,6 @@
 # Stirio Games — R3F PoC
 
-A self-contained proof of concept that rebuilds the **Ninja Shaker** mini-game
+A self-contained proof of concept that rebuilds the **three Stirio mini-games**
 with React Three Fiber + Three.js + drei + postprocessing, replacing the
 original Phaser implementation with a declarative JSX scene graph.
 
@@ -8,53 +8,77 @@ This subproject is **isolated** from the Stirio vanilla SPA — its own
 `package.json`, its own Vite build, no shared dependencies. Once validated we
 can plan a full migration.
 
-## Why R3F
+## Games
 
-- Declarative JSX scene graph (`<mesh>`, `<directionalLight>`, `<EffectComposer>`).
-- `@react-three/drei` ships high-quality helpers (`Stars`, `Environment`,
-  `Trail`, `Html`).
-- `@react-three/postprocessing` adds bloom, vignette, etc. in a few lines.
-- Real 3D: orbs are spheres with emissive materials and glass highlights, trails
-  are real post-processed curves, physics runs in the render loop.
+| Icon | Title | Gameplay |
+|---|---|---|
+| 🔪 | **Ninja Shaker** | Orbs arc up with gravity; tap ONLY those that belong to the target cocktail. Combo × multiplier. |
+| 🍸 | **Mixology Rush** | Drag ingredient cards onto the central shaker. 5 rounds, timer shrinks per round. |
+| 💘 | **Cocktail Tinder** | Swipe ingredient cards right (belongs) or left (distractor). Streak bonus. |
+
+All three share the same cocktail dataset (`src/data/cocktails.js`) and the
+generic `<ResultScreen>` overlay.
 
 ## Run locally
 
 ```bash
 cd games-r3f
 npm install
-npm run dev
+npm run dev              # http://localhost:5173
+npm run build            # writes ../games-r3f-demo/ (served on GH Pages)
 ```
 
-Opens on http://localhost:5173.
+## GH Pages deploy
 
-## Gameplay
+`vite.config.js` sets `base: '/Stirio/games-r3f-demo/'` and `outDir: '../games-r3f-demo'`.
+Running `npm run build` produces a ready-to-serve folder committed at repo root.
+Deployed at https://robinn4k.github.io/Stirio/games-r3f-demo/ alongside the
+vanilla SPA.
 
-- A random cocktail from `src/data/cocktails.js` is picked.
-- Orbs arc up from the bottom with gravity. Each carries one ingredient:
-  green glow = belongs to the cocktail, grey = distractor.
-- Tap a green orb to slice it (+10 pts × combo multiplier).
-- Tap a grey orb → –1 ❤️ and combo reset.
-- Let a green orb fall off-screen → –1 ❤️.
-- 35 spawns per round, combo tiers at ×5 (🔥) and ×8 (LEGENDARY).
+## File tree
 
-## Files
+```
+games-r3f/
+├─ package.json, vite.config.js, index.html, README.md
+├─ src/
+│  ├─ main.jsx, App.jsx, Menu.jsx
+│  ├─ components/
+│  │  └─ ResultScreen.jsx              # shared end-of-round overlay
+│  ├─ data/
+│  │  └─ cocktails.js                  # cocktails + ingredient emoji + distractor pool
+│  └─ games/
+│     ├─ NinjaShaker/
+│     │  ├─ NinjaShaker.jsx            # Canvas + spawn loop
+│     │  ├─ Orbs.jsx / Orb.jsx         # physics + 3D meshes with trails
+│     │  ├─ SliceEffects.jsx
+│     │  ├─ NinjaShakerHUD.jsx
+│     │  └─ useNinjaShaker.js          # Zustand store
+│     ├─ MixologyRush/
+│     │  ├─ MixologyRush.jsx
+│     │  ├─ Shaker.jsx                 # pulsing 3D target sphere
+│     │  ├─ Card.jsx                   # draggable 3D card with spring-back
+│     │  ├─ MixologyRushHUD.jsx
+│     │  └─ useMixologyRush.js
+│     └─ CocktailTinder/
+│        ├─ CocktailTinder.jsx
+│        ├─ SwipeCard.jsx              # horizontal swipe w/ YES/NOPE stamps
+│        ├─ CocktailTinderHUD.jsx
+│        └─ useCocktailTinder.js
+```
 
-| Path | Role |
-|---|---|
-| `src/NinjaShaker.jsx` | Scene root: Canvas, lighting, postprocessing, spawn loop |
-| `src/components/Orbs.jsx` | Physics tick (gravity + culling), renders each `<Orb>` |
-| `src/components/Orb.jsx` | One ingredient: sphere + glass highlight + emoji/label via `<Html>` |
-| `src/components/SliceEffects.jsx` | Transient particle bursts on slice |
-| `src/components/HUD.jsx` | DOM overlay: score, lives, combo, progress bar, flair |
-| `src/components/TitleScreen.jsx` | Splash before starting |
-| `src/components/ResultScreen.jsx` | End-of-round summary + retry |
-| `src/hooks/useGame.js` | Zustand store — single source of truth for session state |
-| `src/data/cocktails.js` | Simplified cocktail + ingredient data (local PoC copy) |
+## Stack
 
-## Next steps if promoted to the main app
+- React 18 + Vite 5
+- Three.js 0.170
+- `@react-three/fiber` — declarative renderer
+- `@react-three/drei` — `Html`, `Trail`, `Stars`, `Environment`
+- `@react-three/postprocessing` — `Bloom`, `Vignette`
+- `zustand` — lightweight store, one per game
 
-1. Share cocktail data with the SPA instead of duplicating it.
-2. Wire score + combo to Stirio's achievements and XP flow.
-3. Port the other two Phaser games (Mixology Rush, Cocktail Tinder) to R3F.
-4. Decide whether to switch the whole SPA to React + Vite, or keep the games
-   subproject as an iframe embedded in the vanilla view.
+## Next steps if promoted
+
+1. Share the cocktail dataset with the main Stirio SPA.
+2. Wire the score / streak / combo into Stirio achievements + XP.
+3. Decide: migrate the whole SPA to React + Vite, or keep `games-r3f` as an
+   iframe embedded in the vanilla view.
+4. Add sound (Web Audio) — the current PoC is silent.

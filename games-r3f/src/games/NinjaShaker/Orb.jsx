@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Html, Trail } from '@react-three/drei';
 import * as THREE from 'three';
-import { getIngredientEmoji } from '../data/cocktails.js';
+import { getIngredientEmoji } from '../../data/cocktails.js';
 
 /**
  * One ingredient orb. We keep per-frame physics state on a ref managed by

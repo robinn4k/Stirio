@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useGame } from '../hooks/useGame.js';
+import { useNinjaShaker as useGame } from './useNinjaShaker.js';
 
 const panelStyle = {
   position: 'absolute', pointerEvents: 'none',

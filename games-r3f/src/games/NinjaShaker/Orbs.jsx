@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
-import { useGame } from '../hooks/useGame.js';
+import { useNinjaShaker as useGame } from './useNinjaShaker.js';
 import Orb from './Orb.jsx';
 
 const GRAVITY = -10;   // world units / s²

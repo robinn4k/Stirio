@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { COCKTAILS, getDistractors, shuffle } from '../data/cocktails.js';
+import { COCKTAILS, getDistractors, shuffle } from '../../data/cocktails.js';
 
 const MAX_SPAWN = 35;
 const MAX_LIVES = 3;
@@ -18,7 +18,7 @@ function pickCocktail() {
   return COCKTAILS[Math.floor(Math.random() * COCKTAILS.length)];
 }
 
-export const useGame = create((set, get) => ({
+export const useNinjaShaker = create((set, get) => ({
   // Session
   cocktail: null,
   pool: [],
