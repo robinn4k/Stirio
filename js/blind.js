@@ -1,4 +1,5 @@
 // Blind Tasting mode: aroma/flavor description → guess the spirit
+import { shuffle } from './utils.js';
 
 export const SPIRITS = [
   {
@@ -294,7 +295,7 @@ export const SPIRITS = [
 let bs = null;
 
 export function startBlind() {
-  const questions = [...SPIRITS].sort(() => Math.random() - 0.5);
+  const questions = shuffle(SPIRITS);
   bs = { questions, index: 0, correct: 0, answered: 0, revealed: 1 };
   return _payload();
 }

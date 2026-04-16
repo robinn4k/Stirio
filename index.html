@@ -50,12 +50,12 @@
         <div class="header-left">
           <div class="user-avatar" id="user-avatar">👤</div>
           <div class="user-info">
-            <div class="user-name" id="user-name">Invitado</div>
-            <div class="user-level" id="user-level">Nv. 1</div>
+            <div class="user-name" id="user-name" data-i18n="auth.guest_label">Invitado</div>
+            <div class="user-level" id="user-level"></div>
           </div>
         </div>
         <div class="header-right">
-          <button class="lang-toggle" id="btn-lang-toggle" title="EN / ES">ES</button>
+          <button class="lang-toggle" id="btn-lang-toggle" title="Change language" aria-label="Change language">ES</button>
           <button class="icon-btn" id="btn-logout" title="Opciones" aria-label="Opciones">⚙️</button>
         </div>
       </div>
@@ -78,7 +78,7 @@
                 <span class="academy-banner-arrow">→</span>
               </div>
               <div class="academy-xp-row">
-                <div class="journey-level" id="journey-level-badge">Nv. 1</div>
+                <div class="journey-level" id="journey-level-badge"></div>
                 <div class="journey-xp-info">
                   <div class="journey-xp-bar"><div class="journey-xp-fill" id="journey-xp-fill"></div></div>
                   <div class="journey-xp-text" id="journey-xp-text">0 / 100 XP</div>
@@ -620,7 +620,7 @@
             <div class="learn-hero-stat-label" data-i18n="learn.streak">🔥 Racha</div>
           </div>
           <div class="learn-hero-level">
-            <div class="learn-level-badge" id="learn-level-badge">Nv. 1</div>
+            <div class="learn-level-badge" id="learn-level-badge"></div>
             <div class="learn-xp-bar"><div class="learn-xp-fill" id="learn-xp-fill"></div></div>
             <div class="learn-xp-text" id="learn-xp-text">0 / 100 XP</div>
           </div>
@@ -1035,12 +1035,23 @@
   </div>
 
   <!-- Toast notification -->
-  <div id="toast" class="toast"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Confirm modal (replaces native confirm() for in-app polish) -->
+  <div id="confirm-modal" class="confirm-modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-msg">
+    <div class="confirm-modal-card">
+      <p id="confirm-modal-msg" class="confirm-modal-msg"></p>
+      <div class="confirm-modal-actions">
+        <button id="confirm-modal-cancel" class="btn-ghost" data-i18n="confirm.cancel">Cancelar</button>
+        <button id="confirm-modal-ok" class="btn-primary" data-i18n="confirm.ok">Aceptar</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Loading overlay -->
-  <div id="loading" class="loading-overlay hidden">
+  <div id="loading" class="loading-overlay hidden" role="status" aria-live="polite">
     <div class="loading-content">
-      <div class="loading-spinner">🍸</div>
+      <div class="loading-spinner" aria-hidden="true">🍸</div>
       <div class="loading-text" data-i18n="loading.text">Preparando cócteles...</div>
     </div>
   </div>

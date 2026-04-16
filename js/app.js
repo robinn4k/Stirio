@@ -27,11 +27,26 @@ import { getLocalizedRounds } from './questions.js';
 import { getBotName, scheduleBotAnswer, DIFFICULTIES } from './bot.js';
 import { initWiki, bindWikiEvents, openArticle } from './wiki.js';
 import { initGames, destroyGames } from './games.js';
+import { showConfirm } from './utils.js';
 
 // ─── DOM helpers ─────────────────────────────────────────────
 const $ = id => document.getElementById(id);
+
+// Per-view cleanup registry: when a view becomes inactive, its registered
+// callback is invoked. This prevents timer/listener leaks when the user
+// navigates away from a game or duel via any path (UI button, system back,
+// language toggle, etc.).
+const viewCleanups = new Map();
+function registerViewCleanup(viewId, fn) { viewCleanups.set(viewId, fn); }
+function runViewCleanup(viewId) {
+  const fn = viewCleanups.get(viewId);
+  if (!fn) return;
+  try { fn(); } catch (e) { console.warn(`cleanup error for ${viewId}:`, e); }
+}
 const showView = id => {
   setLoading(false); // always clear any pending loading spinner on navigation
+  const current = document.querySelector('.view.active');
+  if (current && current.id !== id) runViewCleanup(current.id);
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   $(id).classList.add('active');
 };
@@ -53,7 +68,7 @@ const THEMES = {
     bgWarm: '#3a1a05', bgAccent: '#1a0a20', bgDeep: '#1a1025',
     bgCanvas1: '#0a0a1a', bgCanvas2: '#1a0a2a',
     bgCanvasD1: '#050510', bgCanvasD2: '#100520',
-    text: '#f0e6d3', textMuted: '#8b7355', textDim: '#5a4a35',
+    text: '#f0e6d3', textMuted: '#b0956e', textDim: '#8c7b58',
     btnText: '#0d0508',
     overlay: 'rgba(13,5,8,.85)', overlayHeavy: 'rgba(13,5,8,.95)', overlayMid: 'rgba(13,5,8,.9)',
   },
@@ -63,7 +78,7 @@ const THEMES = {
     bgWarm: '#0a1a2a', bgAccent: '#0a1525', bgDeep: '#0f1a28',
     bgCanvas1: '#080e14', bgCanvas2: '#0f1a28',
     bgCanvasD1: '#050a10', bgCanvasD2: '#0f1520',
-    text: '#e8edf2', textMuted: '#6b8599', textDim: '#3d5566',
+    text: '#e8edf2', textMuted: '#93adc0', textDim: '#7a94a6',
     btnText: '#080e12',
     overlay: 'rgba(8,14,18,.85)', overlayHeavy: 'rgba(8,14,18,.95)', overlayMid: 'rgba(8,14,18,.9)',
   },
@@ -73,7 +88,7 @@ const THEMES = {
     bgWarm: '#0a1f0d', bgAccent: '#0a1a10', bgDeep: '#0f1a14',
     bgCanvas1: '#080f0a', bgCanvas2: '#0f1a12',
     bgCanvasD1: '#050a06', bgCanvasD2: '#0f1a0f',
-    text: '#e8f0e6', textMuted: '#6b8b6e', textDim: '#3d5940',
+    text: '#e8f0e6', textMuted: '#95b998', textDim: '#7a9c7f',
     btnText: '#080f0a',
     overlay: 'rgba(8,15,10,.85)', overlayHeavy: 'rgba(8,15,10,.95)', overlayMid: 'rgba(8,15,10,.9)',
   },
@@ -83,7 +98,7 @@ const THEMES = {
     bgWarm: '#0a1030', bgAccent: '#0f0a25', bgDeep: '#0e1530',
     bgCanvas1: '#07090f', bgCanvas2: '#0e1320',
     bgCanvasD1: '#050710', bgCanvasD2: '#0e1320',
-    text: '#e6eaf2', textMuted: '#6b7599', textDim: '#3d4566',
+    text: '#e6eaf2', textMuted: '#969fc0', textDim: '#7a84a6',
     btnText: '#07090f',
     overlay: 'rgba(7,9,15,.85)', overlayHeavy: 'rgba(7,9,15,.95)', overlayMid: 'rgba(7,9,15,.9)',
   },
@@ -155,6 +170,7 @@ async function init() {
   initWiki({ showView, t, toast });
   setLoading(false);
   bindEvents();
+  bindViewCleanups();
 
   window.addEventListener('offline', () => toast(t('offline.message'), 'error'));
   window.addEventListener('online',  () => toast(t('online.message'),  'success'));
@@ -1611,21 +1627,60 @@ async function renderLeaderboard() {
   entries.forEach((entry, i) => {
     const isMe = user && entry.uid === user.uid;
     const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
-    const level = entry.level || 1;
-    const xp = entry.xpTotal || 0;
-    const streak = entry.streakDays || 0;
+    const level = Number(entry.level) || 1;
+    const xp = Number(entry.xpTotal) || 0;
+    const streak = Number(entry.streakDays) || 0;
+    // entry.name comes from Firebase — must be inserted as text, never as HTML, to prevent XSS.
+    const name = typeof entry.name === 'string' ? entry.name : '';
     const item = document.createElement('div');
     item.className = 'leaderboard-entry' + (isMe ? ' leaderboard-me' : '');
-    item.innerHTML = `
-      <div class="lb-rank">${medal}</div>
-      <div class="lb-info">
-        <div class="lb-name">${entry.name}${isMe ? ` <span class="lb-you">${t('leaderboard.you')}</span>` : ''}</div>
-        <div class="lb-meta">${xp} XP · 🔥 ${streak} ${t('leaderboard.days')}</div>
-      </div>
-      <div class="lb-level-badge">${t('learn.level', { n: level })}</div>
-    `;
+    const rank = document.createElement('div');
+    rank.className = 'lb-rank';
+    rank.textContent = medal;
+    const info = document.createElement('div');
+    info.className = 'lb-info';
+    const nameEl = document.createElement('div');
+    nameEl.className = 'lb-name';
+    nameEl.textContent = name;
+    if (isMe) {
+      const you = document.createElement('span');
+      you.className = 'lb-you';
+      you.textContent = ` ${t('leaderboard.you')}`;
+      nameEl.appendChild(you);
+    }
+    const meta = document.createElement('div');
+    meta.className = 'lb-meta';
+    meta.textContent = `${xp} XP · 🔥 ${streak} ${t('leaderboard.days')}`;
+    info.append(nameEl, meta);
+    const badge = document.createElement('div');
+    badge.className = 'lb-level-badge';
+    badge.textContent = t('learn.level', { n: level });
+    item.append(rank, info, badge);
     list.appendChild(item);
   });
+}
+
+// ─── VIEW CLEANUP BINDING ─────────────────────────────────────
+// Ensures timers and Firebase listeners are released when a game/duel view
+// is left by any means (back button, nav, language toggle, unexpected flow).
+function bindViewCleanups() {
+  registerViewCleanup('view-quiz',        () => abortRound());
+  registerViewCleanup('view-speed',       () => abortSpeed());
+  registerViewCleanup('view-constructor', () => abortConstructor());
+  registerViewCleanup('view-blind',       () => abortBlind());
+  // Duel uses a 4-view flow (menu → lobby → game → result). Cleanup only when
+  // the user is truly exiting the duel flow, not when transitioning between
+  // these sub-views. We let the existing resetDuelState() calls in the duel
+  // code handle intra-flow transitions; here we clean up on exit-to-dashboard.
+  const duelViewIds = new Set(['view-duel', 'view-duel-lobby', 'view-duel-game', 'view-duel-result']);
+  const duelCleanupOnLeave = () => {
+    // Defer check to next tick: active class has been toggled by showView.
+    queueMicrotask(() => {
+      const next = document.querySelector('.view.active');
+      if (!next || !duelViewIds.has(next.id)) resetDuelState();
+    });
+  };
+  duelViewIds.forEach(id => registerViewCleanup(id, duelCleanupOnLeave));
 }
 
 // ─── EVENT BINDING ────────────────────────────────────────────
@@ -1664,8 +1719,8 @@ function bindEvents() {
   $('btn-logout').addEventListener('click', () => goToSettings());
 
   // Quiz controls
-  $('btn-quit-quiz').addEventListener('click', () => {
-    if (confirm(t('confirm.quit_game'))) {
+  $('btn-quit-quiz').addEventListener('click', async () => {
+    if (await showConfirm(t('confirm.quit_game'))) {
       abortRound();
       goToDashboard();
     }
@@ -1699,14 +1754,14 @@ function bindEvents() {
   $('btn-quit-games').addEventListener('click', () => { destroyGames(); goToDashboard(); });
 
   // Speed mode
-  $('btn-quit-speed').addEventListener('click', () => { if (confirm(t('confirm.quit'))) { abortSpeed(); goToDashboard(); } });
+  $('btn-quit-speed').addEventListener('click', async () => { if (await showConfirm(t('confirm.quit'))) { abortSpeed(); goToDashboard(); } });
 
   // Constructor mode
-  $('btn-quit-constructor').addEventListener('click', () => { if (confirm(t('confirm.quit'))) { abortConstructor(); goToDashboard(); } });
+  $('btn-quit-constructor').addEventListener('click', async () => { if (await showConfirm(t('confirm.quit'))) { abortConstructor(); goToDashboard(); } });
   $('btn-con-continue').addEventListener('click', handleConstructorContinue);
 
   // Blind tasting
-  $('btn-quit-blind').addEventListener('click', () => { if (confirm(t('confirm.quit'))) { abortBlind(); goToDashboard(); } });
+  $('btn-quit-blind').addEventListener('click', async () => { if (await showConfirm(t('confirm.quit'))) { abortBlind(); goToDashboard(); } });
   $('btn-blind-reveal').addEventListener('click', () => {
     const q = revealNextClue();
     if (!q) return;
@@ -1748,8 +1803,8 @@ function bindEvents() {
   $('btn-back-learn').addEventListener('click', () => goToDashboard());
   $('btn-back-to-academy').addEventListener('click', () => goToAcademyHub());
   $('btn-clear-course-filter').addEventListener('click', () => goToLearnHub());
-  $('btn-quit-lesson').addEventListener('click', () => {
-    if (confirm(t('confirm.quit_lesson'))) {
+  $('btn-quit-lesson').addEventListener('click', async () => {
+    if (await showConfirm(t('confirm.quit_lesson'))) {
       abortLesson();
       if (lessonEntryPoint === 'academy') goToAcademyHub();
       else goToLearnHub();
@@ -1778,8 +1833,8 @@ function bindEvents() {
   // Academy mode
   $('btn-academy').addEventListener('click', () => goToAcademyHub());
   $('btn-back-academy').addEventListener('click', () => goToDashboard());
-  $('btn-quit-academy').addEventListener('click', () => {
-    if (confirm(t('confirm.quit_lesson'))) { abortAcademy(); goToAcademyHub(); }
+  $('btn-quit-academy').addEventListener('click', async () => {
+    if (await showConfirm(t('confirm.quit_lesson'))) { abortAcademy(); goToAcademyHub(); }
   });
   $('btn-acad-next-card').addEventListener('click', () => handleAcademyCardAdvance());
   $('btn-acad-continue').addEventListener('click', () => handleAcademyContinue());
@@ -1922,7 +1977,7 @@ function bindSettingsEvents() {
 
   // Sign out
   $('btn-settings-logout').addEventListener('click', async () => {
-    if (confirm(t('confirm.sign_out'))) {
+    if (await showConfirm(t('confirm.sign_out'))) {
       await signOutUser();
       showView('view-login');
     }
@@ -1930,7 +1985,7 @@ function bindSettingsEvents() {
 
   // Delete data
   $('btn-delete-data').addEventListener('click', async () => {
-    if (!confirm(t('settings.confirm_delete_data') || '¿Estás seguro de que quieres borrar todos tus datos? Esta acción no se puede deshacer.')) return;
+    if (!await showConfirm(t('settings.confirm_delete_data') || '¿Estás seguro de que quieres borrar todos tus datos? Esta acción no se puede deshacer.')) return;
     setLoading(true);
     try {
       await deleteUserData();
@@ -1946,8 +2001,8 @@ function bindSettingsEvents() {
 
   // Delete account
   $('btn-delete-account').addEventListener('click', async () => {
-    if (!confirm(t('settings.confirm_delete_account') || '¿Estás seguro de que quieres eliminar tu cuenta permanentemente? Esta acción NO se puede deshacer.')) return;
-    if (!confirm(t('settings.confirm_delete_account_2') || 'Esta es tu última oportunidad. ¿Eliminar cuenta y todos los datos?')) return;
+    if (!await showConfirm(t('settings.confirm_delete_account') || '¿Estás seguro de que quieres eliminar tu cuenta permanentemente? Esta acción NO se puede deshacer.')) return;
+    if (!await showConfirm(t('settings.confirm_delete_account_2') || 'Esta es tu última oportunidad. ¿Eliminar cuenta y todos los datos?')) return;
     setLoading(true);
     try {
       await deleteUserAccount();

@@ -1,6 +1,8 @@
 import { firebaseConfig, FIREBASE_ENABLED } from './firebase-config.js';
+import { t } from './lang.js';
 
 const FIREBASE_CDN = 'https://www.gstatic.com/firebasejs/10.7.1';
+const AUTH_INIT_TIMEOUT_MS = 8000;
 
 let app = null;
 let auth = null;
@@ -18,15 +20,22 @@ async function initFirebase() {
     auth = getAuth(app);
     db = getFirestore(app);
 
-    // Wait for onAuthStateChanged to detect persisted sessions
+    // Wait for onAuthStateChanged to detect persisted sessions (with timeout so UI never hangs)
     if (!currentUser) {
       await new Promise(resolve => {
+        let settled = false;
+        const settle = () => { if (!settled) { settled = true; resolve(); } };
+        const timeoutId = setTimeout(() => {
+          console.warn(`initFirebase: onAuthStateChanged timed out after ${AUTH_INIT_TIMEOUT_MS}ms`);
+          settle();
+        }, AUTH_INIT_TIMEOUT_MS);
         const unsub = onAuthStateChanged(auth, (firebaseUser) => {
+          clearTimeout(timeoutId);
           unsub();
           if (firebaseUser && !currentUser) {
             currentUser = {
               uid: firebaseUser.uid,
-              name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Jugador Google',
+              name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || t('auth.google_player'),
               email: firebaseUser.email,
               photo: firebaseUser.photoURL,
               provider: 'google',
@@ -34,7 +43,7 @@ async function initFirebase() {
             };
             saveUserLocal(currentUser);
           }
-          resolve();
+          settle();
         });
       });
     }
@@ -57,7 +66,7 @@ async function signInWithGoogle() {
   const user = result.user;
   currentUser = {
     uid: user.uid,
-    name: user.displayName || user.email?.split('@')[0] || 'Jugador Google',
+    name: user.displayName || user.email?.split('@')[0] || t('auth.google_player'),
     email: user.email,
     photo: user.photoURL,
     provider: 'google',
@@ -73,7 +82,7 @@ function signInAsGuest() {
   localStorage.setItem('cq_guest_id', guestId);
   currentUser = {
     uid: guestId,
-    name: localStorage.getItem('cq_guest_name') || 'Invitado',
+    name: localStorage.getItem('cq_guest_name') || t('auth.guest_label'),
     email: null,
     photo: null,
     provider: 'guest',
@@ -112,7 +121,7 @@ function restoreSession() {
 // ─── Actualizar nombre (invitado) ────────────────────────────
 function updateGuestName(name) {
   if (currentUser && currentUser.isGuest) {
-    currentUser.name = name.trim() || 'Invitado';
+    currentUser.name = name.trim() || t('auth.guest_label');
     localStorage.setItem('cq_guest_name', currentUser.name);
     saveUserLocal(currentUser);
   }

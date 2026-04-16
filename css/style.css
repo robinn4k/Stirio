@@ -22,8 +22,8 @@
   --red:         #e74c3c;
   --red-dark:    #a93226;
   --text:        #f0e6d3;
-  --text-muted:  #8b7355;
-  --text-dim:    #5a4a35;
+  --text-muted:  #b0956e; /* raised from #8b7355 → WCAG AA on dark bg */
+  --text-dim:    #8c7b58; /* raised from #5a4a35 → WCAG AA on dark bg */
   --btn-text:    #0d0508;
   --overlay:     rgba(13,5,8,.85);
   --overlay-heavy:rgba(13,5,8,.95);
@@ -788,6 +788,44 @@ img { display: block; max-width: 100%; }
 }
 .loading-text { font-size: .85rem; color: var(--text-muted); margin-top: 12px; }
 
+/* ── Confirm modal ── */
+.confirm-modal {
+  position: fixed; inset: 0; z-index: 2100;
+  background: var(--overlay-heavy); backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  animation: confirm-fade-in 140ms ease-out;
+}
+.confirm-modal.hidden { display: none; }
+.confirm-modal-card {
+  width: 100%; max-width: 380px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  box-shadow: var(--shadow);
+  animation: confirm-slide-in 180ms cubic-bezier(.2,.9,.3,1);
+}
+.confirm-modal-msg {
+  color: var(--text);
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.confirm-modal-actions {
+  display: flex; gap: 10px;
+  justify-content: center;
+}
+.confirm-modal-actions button { min-width: 120px; }
+@keyframes confirm-fade-in {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes confirm-slide-in {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
 /* ══════════════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════════════ */
@@ -804,6 +842,23 @@ img { display: block; max-width: 100%; }
   .answers-grid { grid-template-columns: 1fr; }
   .results-score-value { font-size: 2.8rem; }
   .stat-value { font-size: 1.2rem; }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .dashboard-body,
+  .tab-content { max-width: 680px; }
+  .round-card { max-width: 620px; }
+  .rounds-grid,
+  .stats-bar { max-width: 680px; }
+  .answers-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .dashboard-body,
+  .tab-content { max-width: 760px; }
+  .rounds-grid { max-width: 760px; }
 }
 
 /* ══════════════════════════════════════════════════

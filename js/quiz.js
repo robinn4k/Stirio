@@ -1,5 +1,6 @@
 import { getLocalizedRounds } from './questions.js';
 import { getLang, t } from './lang.js';
+import { shuffle } from './utils.js';
 
 const QUESTIONS_PER_ROUND = 10;
 const POINTS_PER_CORRECT = 100;
@@ -22,16 +23,6 @@ let state = {
 };
 
 let onComplete = null;
-
-// Baraja un array (Fisher-Yates)
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 // Prepara las preguntas de una ronda, barajando opciones
 // Compatible con multilingual objects {es, en, fr, pt, de} AND plain strings

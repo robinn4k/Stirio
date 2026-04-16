@@ -1,6 +1,7 @@
 import { getLocalizedRounds } from './questions.js';
 import { getLang } from './lang.js';
 import { getDb, getCurrentUser, isFirebaseReady } from './auth.js';
+import { shuffle } from './utils.js';
 
 // ─── Storage ──────────────────────────────────────────────────
 const KEY = 'cq_learn_data';
@@ -155,7 +156,7 @@ export function startLesson(roundId) {
   // Build question objects
   const questions = selected.map(({ i, q }) => {
     const correct  = q.a[0];
-    const shuffled = [...q.a].sort(() => Math.random() - 0.5);
+    const shuffled = shuffle(q.a);
     return {
       srcIndex:    i,
       theory:      q.theory || q.exp || '',
