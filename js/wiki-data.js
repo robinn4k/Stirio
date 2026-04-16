@@ -15,6 +15,11 @@ export const WIKI_CATEGORIES = [
       { id: 'layer', icon: '🌈', has3d: false },
       { id: 'strain', icon: '🫗', has3d: false },
       { id: 'blend', icon: '🌪️', has3d: false },
+      { id: 'double-strain', icon: '🫗', has3d: false },
+      { id: 'dry-shake', icon: '🥚', has3d: false },
+      { id: 'fat-wash', icon: '🧈', has3d: false },
+      { id: 'infusion', icon: '🌶️', has3d: false },
+      { id: 'swizzle', icon: '🌴', has3d: false },
     ]
   },
   {
@@ -49,6 +54,10 @@ export const WIKI_CATEGORIES = [
       { id: 'bourbon-rye', icon: '🌽', has3d: false },
       { id: 'scotch', icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', has3d: false },
       { id: 'irish-whiskey', icon: '☘️', has3d: false },
+      { id: 'applejack', icon: '🍎', has3d: false },
+      { id: 'slivovitz', icon: '🇷🇸', has3d: false },
+      { id: 'zubrowka', icon: '🦬', has3d: false },
+      { id: 'fireball', icon: '🔥', has3d: false },
       { id: 'world-map', icon: '🗺️', has3d: false },
       { id: 'distillation', icon: '⚗️', has3d: true, scene: 'alambique' },
       { id: 'fermentation', icon: '🫧', has3d: false },
@@ -136,6 +145,11 @@ export const WIKI_CATEGORIES = [
       { id: 'ancho-reyes', icon: '🌶️', has3d: false },
       { id: 'amarula', icon: '🐘', has3d: false },
       { id: 'tia-maria', icon: '☕', has3d: false },
+      { id: 'advocaat', icon: '🥚', has3d: false },
+      { id: 'underberg', icon: '🌱', has3d: false },
+      { id: 'genepi', icon: '🏔️', has3d: false },
+      { id: 'creme-de-mure', icon: '🫐', has3d: false },
+      { id: 'creme-de-peche', icon: '🍑', has3d: false },
     ]
   },
   {
@@ -188,6 +202,20 @@ export const WIKI_CATEGORIES = [
     articles: [
       { id: 'cerveza', icon: '🍻', has3d: false },
       { id: 'sidra', icon: '🍏', has3d: false },
+    ]
+  },
+  {
+    id: 'families',
+    icon: '👪',
+    gradient: 'linear-gradient(135deg, #e74c3c, #c0392b)',
+    has3d: false,
+    articles: [
+      { id: 'sours-family', icon: '🍋', has3d: false },
+      { id: 'fizz-family', icon: '🫧', has3d: false },
+      { id: 'flip-family', icon: '🥚', has3d: false },
+      { id: 'julep-family', icon: '🌿', has3d: false },
+      { id: 'punch-family', icon: '🏺', has3d: false },
+      { id: 'tiki-family', icon: '🗿', has3d: false },
     ]
   },
   {
@@ -259,6 +287,11 @@ export const WIKI_ARTICLES = {
       { type: 'step-list', key: 'steps' },
     ]
   },
+  'techniques.double-strain': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'when' }, { type: 'text-block', key: 'how' }, { type: 'tips', key: 'tips' }] },
+  'techniques.dry-shake': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'when' }, { type: 'text-block', key: 'how' }, { type: 'tips', key: 'tips' }] },
+  'techniques.fat-wash': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'when' }, { type: 'text-block', key: 'how' }, { type: 'tips', key: 'tips' }] },
+  'techniques.infusion': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'when' }, { type: 'text-block', key: 'how' }, { type: 'tips', key: 'tips' }] },
+  'techniques.swizzle': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'when' }, { type: 'text-block', key: 'how' }, { type: 'tips', key: 'tips' }] },
 
   // ── SPIRITS ────────────────────────────────────────────────
   'spirits.whisky': {
@@ -455,6 +488,10 @@ export const WIKI_ARTICLES = {
   'spirits.bourbon-rye': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'spirits.scotch': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'spirits.irish-whiskey': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'spirits.applejack': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'spirits.slivovitz': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'spirits.zubrowka': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'spirits.fireball': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'spirits.world-map': {
     sections: [
       { type: 'text-block', key: 'description' },
@@ -640,6 +677,11 @@ export const WIKI_ARTICLES = {
   'liqueurs.ancho-reyes': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'liqueurs.amarula': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'liqueurs.tia-maria': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.advocaat': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.underberg': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.genepi': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.creme-de-mure': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.creme-de-peche': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
 
   // ── AMAROS & BITTERS ──────────────────────────────────────
   'amaros.campari': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
@@ -675,6 +717,14 @@ export const WIKI_ARTICLES = {
   // ── BEER & CIDER ─────────────────────────────────────────
   'beer.cerveza': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'beer.sidra': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+
+  // ── FAMILIES (cocktail families/structures) ────────────────
+  'families.sours-family': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'structure' }, { type: 'text-block', key: 'examples' }, { type: 'tips', key: 'tips' }] },
+  'families.fizz-family': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'structure' }, { type: 'text-block', key: 'examples' }, { type: 'tips', key: 'tips' }] },
+  'families.flip-family': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'structure' }, { type: 'text-block', key: 'examples' }, { type: 'tips', key: 'tips' }] },
+  'families.julep-family': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'structure' }, { type: 'text-block', key: 'examples' }, { type: 'tips', key: 'tips' }] },
+  'families.punch-family': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'structure' }, { type: 'text-block', key: 'examples' }, { type: 'tips', key: 'tips' }] },
+  'families.tiki-family': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'structure' }, { type: 'text-block', key: 'examples' }, { type: 'tips', key: 'tips' }] },
 
   // ── GLOSSARY ───────────────────────────────────────────────
   'glossary.spirits-terms': { sections: [{ type: 'glossary-list' }] },
