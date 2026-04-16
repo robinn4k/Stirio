@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -285,14 +284,20 @@
       </nav>
     </div>
 
-    <!-- ══ MINI GAMES (Phaser) ══ -->
+    <!-- ══ MINI GAMES (R3F + Three.js) ══ -->
     <div id="view-games" class="view">
       <div class="app-header">
         <button class="icon-btn" id="btn-quit-games" aria-label="Back">←</button>
         <h2 class="header-title" data-i18n="games.title">Mini Juegos</h2>
         <div class="header-spacer"></div>
       </div>
-      <div id="phaser-container"></div>
+      <iframe
+        id="games-iframe"
+        class="games-iframe"
+        title="Stirio Games"
+        loading="lazy"
+        allow="fullscreen; accelerometer; gyroscope"
+      ></iframe>
     </div>
 
     <!-- ══ SETTINGS ══ -->

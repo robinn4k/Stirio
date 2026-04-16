@@ -42,10 +42,13 @@ const CACHE_PATHS = [
   'js/academy_data.js',
   'js/cookies.js',
   'js/constructor.js',
-  'js/games.js',
-  'js/game-audio.js',
-  'js/game-fx.js',
   'js/firebase-config.js',
+  // Mini-games are now an isolated React + Three.js build under
+  // games-r3f-demo/, loaded via <iframe>. We cache the entry file so the
+  // games work offline; the hashed JS asset is fetched by the iframe's
+  // own index.html at runtime.
+  'games-r3f-demo/index.html',
+  'games-r3f-demo/assets/index-LWDqgDJE.js',
   // Wiki 3D modules
   'js/wiki.js',
   'js/wiki-data.js',
@@ -72,7 +75,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v5.1`;
+const STATIC_CACHE_VERSION = `Stirio-v5.2`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

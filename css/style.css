@@ -961,19 +961,21 @@ img { display: block; max-width: 100%; }
 ══════════════════════════════════════════════════ */
 #view-blind { background: var(--bg); overflow-y: auto; }
 
-/* Games (Phaser) */
-#view-games { background: var(--bg); overflow: hidden; }
-#phaser-container {
-  flex: 1;
-  width: 100%;
+/* Mini-games (R3F, embedded via iframe) */
+#view-games {
+  background: var(--bg);
   overflow: hidden;
-  touch-action: none;
+  display: flex;
+  flex-direction: column;
 }
-#phaser-container canvas {
+#view-games .app-header { flex: 0 0 auto; }
+.games-iframe {
+  flex: 1 1 auto;
+  width: 100%;
+  border: 0;
   display: block;
-  width: 100% !important;
-  height: 100% !important;
-  image-rendering: auto;
+  background: #08110c;
+  touch-action: none;
 }
 
 .blind-clues-card {
