@@ -38,6 +38,8 @@ export const WIKI_CATEGORIES = [
       { id: 'aquavit', icon: '🌾', has3d: false },
       { id: 'absinthe', icon: '💚', has3d: false },
       { id: 'raki-ouzo-arak', icon: '⭐', has3d: false },
+      { id: 'shochu', icon: '🇯🇵', has3d: false },
+      { id: 'grappa', icon: '🍇', has3d: false },
       { id: 'world-map', icon: '🗺️', has3d: false },
       { id: 'distillation', icon: '⚗️', has3d: true, scene: 'alambique' },
       { id: 'fermentation', icon: '🫧', has3d: false },
@@ -81,6 +83,8 @@ export const WIKI_CATEGORIES = [
       { id: 'sparkling', icon: '🫧', has3d: false },
       { id: 'fortified', icon: '🏰', has3d: false },
       { id: 'vermouth', icon: '🌿', has3d: false },
+      { id: 'lillet', icon: '🥂', has3d: false },
+      { id: 'dubonnet', icon: '💎', has3d: false },
     ]
   },
   {
@@ -104,6 +108,11 @@ export const WIKI_CATEGORIES = [
       { id: 'chambord', icon: '👑', has3d: false },
       { id: 'frangelico', icon: '🫒', has3d: false },
       { id: 'pastis', icon: '☀️', has3d: false },
+      { id: 'cointreau', icon: '🍊', has3d: false },
+      { id: 'grand-marnier', icon: '🎀', has3d: false },
+      { id: 'curacao', icon: '🔵', has3d: false },
+      { id: 'galliano', icon: '🌾', has3d: false },
+      { id: 'strega', icon: '🧙', has3d: false },
     ]
   },
   {
@@ -121,6 +130,7 @@ export const WIKI_CATEGORIES = [
       { id: 'peychauds-bitters', icon: '❤️', has3d: false },
       { id: 'orange-bitters', icon: '🟡', has3d: false },
       { id: 'suze', icon: '🌼', has3d: false },
+      { id: 'jagermeister', icon: '🦌', has3d: false },
     ]
   },
   {
@@ -389,6 +399,8 @@ export const WIKI_ARTICLES = {
       { type: 'tips', key: 'tips' },
     ]
   },
+  'spirits.shochu': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'spirits.grappa': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'spirits.world-map': {
     sections: [
       { type: 'text-block', key: 'description' },
@@ -535,6 +547,9 @@ export const WIKI_ARTICLES = {
     ]
   },
 
+  'wines.lillet': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'wines.dubonnet': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+
   // ── LIQUEURS ───────────────────────────────────────────────
   'liqueurs.triple-sec': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'liqueurs.chartreuse': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
@@ -552,6 +567,12 @@ export const WIKI_ARTICLES = {
   'liqueurs.frangelico': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'liqueurs.pastis': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
 
+  'liqueurs.cointreau': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.grand-marnier': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.curacao': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.galliano': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+  'liqueurs.strega': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+
   // ── AMAROS & BITTERS ──────────────────────────────────────
   'amaros.campari': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'amaros.aperol': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
@@ -562,6 +583,8 @@ export const WIKI_ARTICLES = {
   'amaros.peychauds-bitters': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'amaros.orange-bitters': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
   'amaros.suze': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
+
+  'amaros.jagermeister': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'history' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'tasting' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
 
   // ── MIXERS ────────────────────────────────────────────────
   'mixers.tonic-water': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'origin' }, { type: 'text-block', key: 'types' }, { type: 'text-block', key: 'production' }, { type: 'text-block', key: 'cocktails' }, { type: 'tips', key: 'tips' }] },
