@@ -2325,10 +2325,18 @@ function registerSW() {
       el.textContent = t('sw.update');
       el.className = 'toast toast-update show';
       clearTimeout(el._t);
+      // Drop any previous handler before re-binding so repeated updatefound
+      // events never stack listeners on the same element.
+      if (el._ut) el.removeEventListener('click', el._ut);
       el._ut = () => {
         if (reg.waiting) {
           reg.waiting.postMessage({ type: 'SKIP_WAITING' });
           navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload(), { once: true });
+          // Safety net: some browsers don't fire controllerchange reliably.
+          setTimeout(() => window.location.reload(), 1500);
+        } else {
+          // No waiting worker (already activated): a reload picks up the new assets.
+          window.location.reload();
         }
       };
       el.addEventListener('click', el._ut, { once: true });
