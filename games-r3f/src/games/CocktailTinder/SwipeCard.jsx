@@ -23,6 +23,10 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
   const group = useRef();
   const noStampRef = useRef();
   const yesStampRef = useRef();
+  const noPlateRef = useRef();
+  const noFrameRef = useRef();
+  const yesPlateRef = useRef();
+  const yesFrameRef = useRef();
   const s = useRef({ x: 0, y: depth === 0 ? 1 : 0.6, flyingDir: null, flyingAge: 0, notified: false, entered: false });
   const dragStartX = useRef(0);
 
@@ -79,6 +83,10 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
       const yes = st.x > 0 ? Math.min(1, st.x / SWIPE_THRESHOLD) : 0;
       if (noStampRef.current) noStampRef.current.material.opacity = no;
       if (yesStampRef.current) yesStampRef.current.material.opacity = yes;
+      if (noPlateRef.current) noPlateRef.current.material.opacity = no * 0.12;
+      if (noFrameRef.current) noFrameRef.current.material.opacity = no * 0.22;
+      if (yesPlateRef.current) yesPlateRef.current.material.opacity = yes * 0.12;
+      if (yesFrameRef.current) yesFrameRef.current.material.opacity = yes * 0.22;
     }
   });
 
@@ -172,14 +180,36 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
       >
         INGREDIENTE
       </GameText>
-      {/* NOPE / SÍ stamps — only on the foreground card */}
+      {/* NOPE / SÍ corner stamps — only on the foreground card.
+          Tinder convention: LIKE on the LEFT rotated CCW, NOPE on the RIGHT
+          rotated CW. Both sit in the top corners so they never cover the
+          emoji/emblem area. Rubber-stamp plates fade in with the text. */}
       {depth === 0 && (
         <>
+          {/* NOPE — top-right corner */}
+          <mesh
+            ref={noFrameRef}
+            position={[1.15, 1.62, 0.116]}
+            rotation={[0, 0, 0.42]}
+            raycast={() => null}
+          >
+            <planeGeometry args={[1.46, 0.61]} />
+            <meshBasicMaterial color="#f87171" transparent opacity={0} depthWrite={false} />
+          </mesh>
+          <mesh
+            ref={noPlateRef}
+            position={[1.15, 1.62, 0.118]}
+            rotation={[0, 0, 0.42]}
+            raycast={() => null}
+          >
+            <planeGeometry args={[1.4, 0.55]} />
+            <meshBasicMaterial color="#f87171" transparent opacity={0} depthWrite={false} />
+          </mesh>
           <GameText
             ref={noStampRef}
-            position={[-1.0, 1.2, 0.12]}
-            rotation={[0, 0, 0.38]}
-            fontSize={0.55}
+            position={[1.15, 1.62, 0.12]}
+            rotation={[0, 0, 0.42]}
+            fontSize={0.48}
             color="#f87171"
             outlineWidth={0.025}
             outlineColor="#1a0a18"
@@ -192,11 +222,30 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           >
             NOPE
           </GameText>
+          {/* SÍ — top-left corner */}
+          <mesh
+            ref={yesFrameRef}
+            position={[-1.15, 1.62, 0.116]}
+            rotation={[0, 0, -0.42]}
+            raycast={() => null}
+          >
+            <planeGeometry args={[1.46, 0.61]} />
+            <meshBasicMaterial color="#34d399" transparent opacity={0} depthWrite={false} />
+          </mesh>
+          <mesh
+            ref={yesPlateRef}
+            position={[-1.15, 1.62, 0.118]}
+            rotation={[0, 0, -0.42]}
+            raycast={() => null}
+          >
+            <planeGeometry args={[1.4, 0.55]} />
+            <meshBasicMaterial color="#34d399" transparent opacity={0} depthWrite={false} />
+          </mesh>
           <GameText
             ref={yesStampRef}
-            position={[1.0, 1.2, 0.12]}
-            rotation={[0, 0, -0.38]}
-            fontSize={0.55}
+            position={[-1.15, 1.62, 0.12]}
+            rotation={[0, 0, -0.42]}
+            fontSize={0.48}
             color="#34d399"
             outlineWidth={0.025}
             outlineColor="#071a10"

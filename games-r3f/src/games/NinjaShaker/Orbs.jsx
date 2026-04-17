@@ -3,10 +3,10 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { useNinjaShaker as useGame } from './useNinjaShaker.js';
 import Orb from './Orb.jsx';
 
-// Gravity was -10 which gave orbs only ~1.3 s of screen time — felt
-// panicked on mobile. -7 plus gentler initial vy (tuned in the store's
-// spawn action) keeps each orb visible ~1.8-2 s.
-const GRAVITY = -7;    // world units / s²
+// Lower gravity + higher initial vy (tuned in the store's spawn action) so
+// orbs arc near the top of the visible viewport in true Fruit-Ninja style,
+// giving ~4 s of screen time.
+const GRAVITY = -4.5;  // world units / s²
 const FLOOR = -6;      // orbs below this line are considered off-screen
 
 export default function Orbs({ onSlice }) {

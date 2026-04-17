@@ -50,54 +50,64 @@ export default function Card({ card, homePosition, onDrop }) {
     g.rotation.y = dragging ? Math.sin(performance.now() / 260) * 0.08 : 0;
   });
 
-  const baseColor = card.correct ? '#3b1f5a' : '#1f2937';
-  const midColor = card.correct ? '#6b4fa2' : '#374151';
-  const edgeColor = card.correct ? '#c4a7ff' : '#6b7280';
-  const accent = card.correct ? '#a78bfa' : '#9ca3af';
+  const baseColor = '#1a1130';
+  const midColor = '#3b2464';
+  const edgeColor = '#c4a7ff';
+  const accent = '#d4a44a';
   const emoji = getIngredientEmoji(card.ingredient);
 
   return (
     <group ref={group}>
       {/* Shadow */}
-      <mesh position={[0.05, -0.4, -0.1]} raycast={() => null}>
-        <planeGeometry args={[1.9, 0.3]} />
+      <mesh position={[0.05, -0.46, -0.1]} raycast={() => null}>
+        <planeGeometry args={[2.05, 0.35]} />
         <meshBasicMaterial color="#000000" transparent opacity={0.35} depthWrite={false} />
       </mesh>
       {/* Glow plate */}
       <mesh position={[0, 0, -0.06]} raycast={() => null}>
-        <planeGeometry args={[2.0, 0.85]} />
-        <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.55 : 0.28} depthWrite={false} />
+        <planeGeometry args={[2.15, 0.95]} />
+        <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.6 : 0.32} depthWrite={false} />
       </mesh>
       {/* Card body (decorative) */}
       <mesh raycast={() => null}>
-        <boxGeometry args={[1.8, 0.7, 0.14]} />
+        <boxGeometry args={[1.95, 0.78, 0.14]} />
         <meshStandardMaterial
           color={baseColor}
           emissive={midColor}
           emissiveIntensity={0.5}
-          roughness={0.3}
+          roughness={0.35}
           metalness={0.25}
         />
       </mesh>
       {/* Glossy top half */}
-      <mesh position={[0, 0.16, 0.072]} raycast={() => null}>
-        <planeGeometry args={[1.78, 0.35]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.08} depthWrite={false} />
+      <mesh position={[0, 0.18, 0.072]} raycast={() => null}>
+        <planeGeometry args={[1.93, 0.4]} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.12} depthWrite={false} />
+      </mesh>
+      {/* Inner shimmer band */}
+      <mesh position={[0, 0.22, 0.073]} raycast={() => null}>
+        <planeGeometry args={[1.9, 0.18]} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.06} depthWrite={false} />
       </mesh>
       {/* Left accent bar */}
-      <mesh position={[-0.78, 0, 0.072]} raycast={() => null}>
-        <planeGeometry args={[0.06, 0.58]} />
+      <mesh position={[-0.86, 0, 0.072]} raycast={() => null}>
+        <planeGeometry args={[0.06, 0.66]} />
         <meshStandardMaterial color={accent} emissive={accent} emissiveIntensity={1.1} />
       </mesh>
+      {/* Emoji badge rim ring */}
+      <mesh position={[-0.6, 0, 0.074]} raycast={() => null}>
+        <circleGeometry args={[0.27, 28]} />
+        <meshBasicMaterial color={accent} transparent opacity={0.15} depthWrite={false} />
+      </mesh>
       {/* Emoji badge circle */}
-      <mesh position={[-0.55, 0, 0.075]} raycast={() => null}>
-        <circleGeometry args={[0.2, 24]} />
+      <mesh position={[-0.6, 0, 0.075]} raycast={() => null}>
+        <circleGeometry args={[0.24, 28]} />
         <meshBasicMaterial color={accent} transparent opacity={0.25} depthWrite={false} />
       </mesh>
       {/* Emoji as Text */}
       <GameText
-        position={[-0.55, 0, 0.08]}
-        fontSize={0.3}
+        position={[-0.6, 0, 0.08]}
+        fontSize={0.36}
         anchorX="center"
         anchorY="middle"
         raycast={() => null}
@@ -106,14 +116,14 @@ export default function Card({ card, homePosition, onDrop }) {
       </GameText>
       {/* Ingredient name as Text */}
       <GameText
-        position={[0.15, 0, 0.08]}
-        fontSize={0.14}
+        position={[0.2, 0, 0.08]}
+        fontSize={0.16}
         color="#f5f3ff"
-        outlineWidth={0.008}
+        outlineWidth={0.01}
         outlineColor="#1a0e28"
         anchorX="center"
         anchorY="middle"
-        maxWidth={1.0}
+        maxWidth={1.1}
         textAlign="center"
         fontWeight="bold"
         raycast={() => null}
@@ -124,7 +134,7 @@ export default function Card({ card, homePosition, onDrop }) {
           raycastable object on the card so the initial pointerdown always
           lands here regardless of what decorative layer is topmost. */}
       <mesh position={[0, 0, 0.2]} onPointerDown={startDrag}>
-        <planeGeometry args={[2.0, 0.85]} />
+        <planeGeometry args={[2.1, 0.9]} />
         <meshBasicMaterial transparent opacity={0} depthWrite={false} />
       </mesh>
     </group>

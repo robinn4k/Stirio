@@ -71,8 +71,8 @@ export default function MixologyRush({ onExit }) {
         dpr={reduced ? 1 : [1, 2]}
         gl={{ antialias: !reduced, alpha: false, powerPreference: 'high-performance' }}
       >
-        <color attach="background" args={['#160821']} />
-        <fog attach="fog" args={['#160821', 12, 28]} />
+        <color attach="background" args={['#0f0a1a']} />
+        <fog attach="fog" args={['#0f0a1a', 12, 28]} />
 
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 6, 6]} intensity={1.1} />
@@ -80,7 +80,7 @@ export default function MixologyRush({ onExit }) {
         <pointLight position={[4, -2, 4]} intensity={0.5} color="#d4a44a" />
 
         <Stars radius={28} depth={30} count={reduced ? 250 : 500} factor={2.2} fade speed={0.3} />
-        {!reduced && <BokehBackground colors={['#a78bfa', '#6b4fa2', '#d4a44a']} count={12} depth={7} />}
+        {!reduced && <BokehBackground colors={['#a78bfa']} count={8} depth={7} />}
 
         <Shaker position={SHAKER_POS} radius={SHAKER_RADIUS} />
 
