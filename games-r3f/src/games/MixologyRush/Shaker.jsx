@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text } from '@react-three/drei';
+import GameText from '../../components/GameText.jsx';
 
 /**
  * Central 3D shaker target: glowing sphere with bobbing emoji label and an
@@ -61,7 +61,7 @@ export default function Shaker({ position, radius }) {
         />
       </mesh>
       {/* bobbing emoji + label rendered as canvas Text */}
-      <Text
+      <GameText
         ref={emojiRef}
         position={[position[0], position[1] + 0.05, position[2] + 0.1]}
         fontSize={0.75}
@@ -70,8 +70,8 @@ export default function Shaker({ position, radius }) {
         raycast={() => null}
       >
         🍸
-      </Text>
-      <Text
+      </GameText>
+      <GameText
         position={[position[0], position[1] - radius - 0.4, position[2]]}
         fontSize={0.2}
         color="#cfd8dc"
@@ -83,7 +83,7 @@ export default function Shaker({ position, radius }) {
         raycast={() => null}
       >
         ARRASTRA AQUÍ
-      </Text>
+      </GameText>
     </group>
   );
 }

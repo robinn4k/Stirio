@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text } from '@react-three/drei';
+import GameText from '../../components/GameText.jsx';
 import { getIngredientEmoji } from '../../data/cocktails.js';
 
 const RADIUS = 0.65;
@@ -10,7 +10,7 @@ const RADIUS = 0.65;
  * owns the tick); this component renders the 3D mesh and handles the
  * pointer slice.
  *
- * Labels use drei <Text> (SDF rendered on the GPU) instead of <Html> to
+ * Labels use drei <GameText> (SDF rendered on the GPU) instead of <Html> to
  * avoid DOM portals per orb — that was the main cause of laggy controls
  * on mobile and pointer events being swallowed by layout thrash.
  */
@@ -87,7 +87,7 @@ export default function Orb({ orb, registerState, onSlice }) {
       </group>
 
       {/* Emoji as canvas Text — billboarded implicitly because it faces camera by default orientation */}
-      <Text
+      <GameText
         position={[0, 0, 0.72]}
         fontSize={0.6}
         anchorX="center"
@@ -95,10 +95,10 @@ export default function Orb({ orb, registerState, onSlice }) {
         raycast={() => null}
       >
         {emoji}
-      </Text>
+      </GameText>
 
       {/* Ingredient label below the orb */}
-      <Text
+      <GameText
         position={[0, -RADIUS - 0.35, 0]}
         fontSize={0.22}
         color="#f0f5f1"
@@ -110,7 +110,7 @@ export default function Orb({ orb, registerState, onSlice }) {
         raycast={() => null}
       >
         {orb.ingredient}
-      </Text>
+      </GameText>
     </group>
   );
 }

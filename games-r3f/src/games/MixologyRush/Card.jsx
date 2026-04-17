@@ -1,25 +1,39 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text } from '@react-three/drei';
+import GameText from '../../components/GameText.jsx';
 import { getIngredientEmoji } from '../../data/cocktails.js';
+import useDrag from '../../hooks/useDrag.js';
 
 const RETURN_SPEED = 6;
 
 /**
- * A draggable ingredient card in 3D world-space.
+ * Draggable ingredient card in 3D world-space.
  * - Spring-back to `homePosition` when not dragged.
- * - World-coordinate dragging via R3F pointer events. No Html portals so
- *   pointer capture is stable on mobile.
+ * - Drag handled by useDrag: attaches pointer listeners directly to the
+ *   canvas DOM so moves keep firing even after the finger leaves the card.
+ *   The previous mesh-level onPointerMove only fired while the pointer was
+ *   still over the card, which meant real drags got stuck.
+ * - A dedicated invisible hit-plane in front of the card catches the
+ *   initial pointerdown, so decorative layers + <GameText> labels never
+ *   swallow it.
  */
 export default function Card({ card, homePosition, onDrop }) {
   const group = useRef();
-  const [dragging, setDragging] = useState(false);
   const posRef = useRef([...homePosition]);
-  const captured = useRef({ target: null, id: null });
 
   useEffect(() => {
     posRef.current = [homePosition[0], homePosition[1] + 2, homePosition[2]];
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const { dragging, startDrag } = useDrag({
+    onMove: (x, y) => {
+      posRef.current[0] = x;
+      posRef.current[1] = y;
+    },
+    onEnd: () => {
+      onDrop(card.id, posRef.current);
+    },
+  });
 
   useFrame((_, dt) => {
     if (!group.current) return;
@@ -36,36 +50,6 @@ export default function Card({ card, homePosition, onDrop }) {
     g.rotation.y = dragging ? Math.sin(performance.now() / 260) * 0.08 : 0;
   });
 
-  const handlePointerDown = (e) => {
-    e.stopPropagation();
-    try { e.target.setPointerCapture(e.pointerId); } catch { /* best-effort */ }
-    captured.current = { target: e.target, id: e.pointerId };
-    setDragging(true);
-  };
-
-  const handlePointerMove = (e) => {
-    if (!dragging) return;
-    if (e.point) {
-      posRef.current[0] = e.point.x;
-      posRef.current[1] = e.point.y;
-    }
-  };
-
-  const releaseCapture = () => {
-    const c = captured.current;
-    if (c.target) {
-      try { c.target.releasePointerCapture(c.id); } catch { /* ignore */ }
-    }
-    captured.current = { target: null, id: null };
-  };
-
-  const handlePointerUp = () => {
-    if (!dragging) return;
-    setDragging(false);
-    releaseCapture();
-    onDrop(card.id, posRef.current);
-  };
-
   const baseColor = card.correct ? '#3b1f5a' : '#1f2937';
   const midColor = card.correct ? '#6b4fa2' : '#374151';
   const edgeColor = card.correct ? '#c4a7ff' : '#6b7280';
@@ -73,13 +57,7 @@ export default function Card({ card, homePosition, onDrop }) {
   const emoji = getIngredientEmoji(card.ingredient);
 
   return (
-    <group
-      ref={group}
-      onPointerDown={handlePointerDown}
-      onPointerMove={handlePointerMove}
-      onPointerUp={handlePointerUp}
-      onPointerCancel={handlePointerUp}
-    >
+    <group ref={group}>
       {/* Shadow */}
       <mesh position={[0.05, -0.4, -0.1]} raycast={() => null}>
         <planeGeometry args={[1.9, 0.3]} />
@@ -90,8 +68,8 @@ export default function Card({ card, homePosition, onDrop }) {
         <planeGeometry args={[2.0, 0.85]} />
         <meshBasicMaterial color={edgeColor} transparent opacity={dragging ? 0.55 : 0.28} depthWrite={false} />
       </mesh>
-      {/* Card body (main hitbox) */}
-      <mesh>
+      {/* Card body (decorative) */}
+      <mesh raycast={() => null}>
         <boxGeometry args={[1.8, 0.7, 0.14]} />
         <meshStandardMaterial
           color={baseColor}
@@ -117,7 +95,7 @@ export default function Card({ card, homePosition, onDrop }) {
         <meshBasicMaterial color={accent} transparent opacity={0.25} depthWrite={false} />
       </mesh>
       {/* Emoji as Text */}
-      <Text
+      <GameText
         position={[-0.55, 0, 0.08]}
         fontSize={0.3}
         anchorX="center"
@@ -125,9 +103,9 @@ export default function Card({ card, homePosition, onDrop }) {
         raycast={() => null}
       >
         {emoji}
-      </Text>
+      </GameText>
       {/* Ingredient name as Text */}
-      <Text
+      <GameText
         position={[0.15, 0, 0.08]}
         fontSize={0.14}
         color="#f5f3ff"
@@ -141,7 +119,14 @@ export default function Card({ card, homePosition, onDrop }) {
         raycast={() => null}
       >
         {card.ingredient}
-      </Text>
+      </GameText>
+      {/* Invisible hit-plane in FRONT of everything — this is the only
+          raycastable object on the card so the initial pointerdown always
+          lands here regardless of what decorative layer is topmost. */}
+      <mesh position={[0, 0, 0.2]} onPointerDown={startDrag}>
+        <planeGeometry args={[2.0, 0.85]} />
+        <meshBasicMaterial transparent opacity={0} depthWrite={false} />
+      </mesh>
     </group>
   );
 }
