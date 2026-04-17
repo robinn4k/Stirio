@@ -33,8 +33,8 @@ export default function CocktailTinder({ onExit }) {
         dpr={reduced ? 1 : [1, 2]}
         gl={{ antialias: !reduced, alpha: false, powerPreference: 'high-performance' }}
       >
-        <color attach="background" args={['#1a0810']} />
-        <fog attach="fog" args={['#1a0810', 10, 25]} />
+        <color attach="background" args={['#0f0a1a']} />
+        <fog attach="fog" args={['#0f0a1a', 10, 25]} />
 
         <ambientLight intensity={0.55} />
         <directionalLight position={[4, 5, 6]} intensity={1.1} />
@@ -42,7 +42,7 @@ export default function CocktailTinder({ onExit }) {
         <pointLight position={[4, -2, 4]} intensity={0.4} color="#fbbf24" />
 
         <Stars radius={24} depth={25} count={reduced ? 200 : 400} factor={1.8} fade speed={0.35} />
-        {!reduced && <BokehBackground colors={['#f87171', '#fbbf24', '#a78bfa']} count={10} depth={6} />}
+        {!reduced && <BokehBackground colors={['#f87171']} count={8} depth={6} />}
 
         {/* Show up to 2 cards stacked so the next one is visible behind. */}
         {next && <SwipeCard key={`${next.id}-bg`} card={next} depth={1} interactive={false} />}

@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber';
 import GameText from '../../components/GameText.jsx';
 import { getIngredientEmoji } from '../../data/cocktails.js';
 
-const RADIUS = 0.65;
+const RADIUS = 0.82;
 
 /**
  * One ingredient orb. Physics state lives on a shared ref (parent Orbs
@@ -46,8 +46,8 @@ export default function Orb({ orb, registerState, onSlice }) {
     }
   });
 
-  const bodyColor = orb.correct ? '#34d399' : '#475569';
-  const glowColor = orb.correct ? '#6ee7b7' : '#94a3b8';
+  const bodyColor = '#f9a03f';
+  const glowColor = '#ffd27a';
   const emoji = getIngredientEmoji(orb.ingredient);
 
   const handleSlice = (e) => {
@@ -61,12 +61,12 @@ export default function Orb({ orb, registerState, onSlice }) {
         {/* Outer halo */}
         <mesh ref={halo} position={[0, 0, -0.05]} raycast={() => null}>
           <sphereGeometry args={[RADIUS * 1.55, 16, 16]} />
-          <meshBasicMaterial color={glowColor} transparent opacity={orb.correct ? 0.22 : 0.08} depthWrite={false} />
+          <meshBasicMaterial color={glowColor} transparent opacity={0.22} depthWrite={false} />
         </mesh>
         {/* Mid glow */}
         <mesh raycast={() => null}>
           <sphereGeometry args={[RADIUS * 1.15, 16, 16]} />
-          <meshBasicMaterial color={glowColor} transparent opacity={orb.correct ? 0.18 : 0.06} depthWrite={false} />
+          <meshBasicMaterial color={glowColor} transparent opacity={0.18} depthWrite={false} />
         </mesh>
         {/* Core sphere (this is the pointer hit target) */}
         <mesh>
@@ -74,22 +74,31 @@ export default function Orb({ orb, registerState, onSlice }) {
           <meshStandardMaterial
             color={bodyColor}
             emissive={bodyColor}
-            emissiveIntensity={orb.correct ? 0.8 : 0.15}
+            emissiveIntensity={0.7}
             roughness={0.22}
             metalness={0.2}
           />
         </mesh>
+        {/* Decorative segment bands (no raycast) for a 3D-fruit feel */}
+        <mesh rotation={[Math.PI / 2, 0, 0]} raycast={() => null}>
+          <torusGeometry args={[RADIUS * 0.88, 0.03, 8, 32]} />
+          <meshBasicMaterial color="#d4a44a" transparent opacity={0.3} depthWrite={false} />
+        </mesh>
+        <mesh rotation={[0, Math.PI / 2, 0]} raycast={() => null}>
+          <torusGeometry args={[RADIUS * 0.88, 0.03, 8, 32]} />
+          <meshBasicMaterial color="#d4a44a" transparent opacity={0.3} depthWrite={false} />
+        </mesh>
         {/* Glass highlight (decorative, no raycast) */}
-        <mesh position={[-0.18, 0.2, 0.52]} raycast={() => null}>
-          <sphereGeometry args={[0.14, 12, 12]} />
+        <mesh position={[-0.22, 0.26, 0.66]} raycast={() => null}>
+          <sphereGeometry args={[0.17, 12, 12]} />
           <meshBasicMaterial color="#ffffff" transparent opacity={0.45} />
         </mesh>
       </group>
 
       {/* Emoji as canvas Text — billboarded implicitly because it faces camera by default orientation */}
       <GameText
-        position={[0, 0, 0.72]}
-        fontSize={0.6}
+        position={[0, 0, 0.9]}
+        fontSize={0.85}
         anchorX="center"
         anchorY="middle"
         raycast={() => null}
@@ -100,9 +109,9 @@ export default function Orb({ orb, registerState, onSlice }) {
       {/* Ingredient label below the orb */}
       <GameText
         position={[0, -RADIUS - 0.35, 0]}
-        fontSize={0.22}
+        fontSize={0.26}
         color="#f0f5f1"
-        outlineWidth={0.012}
+        outlineWidth={0.016}
         outlineColor="#08110c"
         anchorX="center"
         anchorY="middle"

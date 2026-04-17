@@ -59,8 +59,8 @@ export default function NinjaShaker({ onExit }) {
         gl={{ antialias: !reduced, alpha: false, powerPreference: 'high-performance' }}
         frameloop="always"
       >
-        <color attach="background" args={['#08110c']} />
-        <fog attach="fog" args={['#08110c', 10, 25]} />
+        <color attach="background" args={['#0f0a1a']} />
+        <fog attach="fog" args={['#0f0a1a', 10, 25]} />
 
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 8, 5]} intensity={1.1} />
@@ -68,7 +68,7 @@ export default function NinjaShaker({ onExit }) {
         <pointLight position={[4, -2, 4]} intensity={0.4} color="#d4a44a" />
 
         <Stars radius={30} depth={30} count={reduced ? 300 : 600} factor={2.5} fade speed={0.3} />
-        {!reduced && <BokehBackground colors={['#34d399', '#6ee7b7', '#d4a44a']} count={12} depth={7} />}
+        {!reduced && <BokehBackground colors={['#d4a44a']} count={8} depth={7} />}
 
         {status === 'playing' && <Orbs onSlice={onSlice} />}
         <SliceEffects slices={slices} />
