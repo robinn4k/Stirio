@@ -181,15 +181,15 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
         INGREDIENTE
       </GameText>
       {/* NOPE / SÍ corner stamps — only on the foreground card.
-          Tinder convention: LIKE on the LEFT rotated CCW, NOPE on the RIGHT
-          rotated CW. Both sit in the top corners so they never cover the
-          emoji/emblem area. Rubber-stamp plates fade in with the text. */}
+          Stamp follows the swipe direction (swipe right → SÍ on the right,
+          swipe left → NOPE on the left) so the cue matches the gesture.
+          Both sit in the top corners so they never cover the emoji. */}
       {depth === 0 && (
         <>
-          {/* NOPE — top-right corner */}
+          {/* NOPE — top-left corner (appears when swiping LEFT) */}
           <mesh
             ref={noFrameRef}
-            position={[1.15, 1.62, 0.116]}
+            position={[-1.15, 1.62, 0.116]}
             rotation={[0, 0, 0.42]}
             raycast={() => null}
           >
@@ -198,7 +198,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           </mesh>
           <mesh
             ref={noPlateRef}
-            position={[1.15, 1.62, 0.118]}
+            position={[-1.15, 1.62, 0.118]}
             rotation={[0, 0, 0.42]}
             raycast={() => null}
           >
@@ -207,7 +207,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           </mesh>
           <GameText
             ref={noStampRef}
-            position={[1.15, 1.62, 0.12]}
+            position={[-1.15, 1.62, 0.12]}
             rotation={[0, 0, 0.42]}
             fontSize={0.48}
             color="#f87171"
@@ -222,10 +222,10 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           >
             NOPE
           </GameText>
-          {/* SÍ — top-left corner */}
+          {/* SÍ — top-right corner (appears when swiping RIGHT) */}
           <mesh
             ref={yesFrameRef}
-            position={[-1.15, 1.62, 0.116]}
+            position={[1.15, 1.62, 0.116]}
             rotation={[0, 0, -0.42]}
             raycast={() => null}
           >
@@ -234,7 +234,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           </mesh>
           <mesh
             ref={yesPlateRef}
-            position={[-1.15, 1.62, 0.118]}
+            position={[1.15, 1.62, 0.118]}
             rotation={[0, 0, -0.42]}
             raycast={() => null}
           >
@@ -243,7 +243,7 @@ export default function SwipeCard({ card, depth = 0, interactive = true, onSwipe
           </mesh>
           <GameText
             ref={yesStampRef}
-            position={[-1.15, 1.62, 0.12]}
+            position={[1.15, 1.62, 0.12]}
             rotation={[0, 0, -0.42]}
             fontSize={0.48}
             color="#34d399"
