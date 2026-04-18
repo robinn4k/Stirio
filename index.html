@@ -37,14 +37,14 @@
     import('./js/achievements.js').then(m => { window.stAchievements = m; }).catch(()=>{});
   </script>
 
-  <!-- React UI components (Babel transpiles JSX in-browser) -->
-  <script type="text/babel" src="js/ui.jsx" data-type="module"></script>
-  <script type="text/babel" src="js/lesson.jsx" data-type="module"></script>
-  <script type="text/babel" src="js/screens.jsx" data-type="module"></script>
-  <script type="text/babel" src="js/reference.jsx" data-type="module"></script>
-  <script type="text/babel" src="js/legacy-modes.jsx" data-type="module"></script>
-  <script type="text/babel" src="js/duel.jsx" data-type="module"></script>
-  <script type="text/babel" src="js/app.jsx" data-type="module"></script>
+  <!-- React UI components (Babel transpiles JSX in-browser as classic scripts — shared top-level scope) -->
+  <script type="text/babel" data-presets="react" src="js/ui.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/reference.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/legacy-modes.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/duel.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/app.jsx"></script>
 
   <!-- Service worker registration -->
   <script>
