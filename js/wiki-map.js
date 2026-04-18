@@ -316,6 +316,35 @@ const SPIRIT_REGIONS = [
   { id: 'tea-ceylon', spirit: 'tea', lat: 6.97, lng: 80.79, icon: '🇱🇰', origin: 'Sri Lanka', place: 'Nuwara Eliya', dateCreated: '1867' },
   { id: 'tea-taiwan', spirit: 'tea', lat: 23.57, lng: 120.90, icon: '⛰️', origin: 'Taiwan', place: 'Alishan', dateCreated: 's. XVIII' },
   { id: 'mate', spirit: 'tea', lat: -31.42, lng: -64.18, icon: '🧉', origin: 'Argentina / Paraguay', place: 'Misiones / Paraguay', dateCreated: 's. XVI' },
+
+  // ══ LOTE C — REFRESCOS ADICIONALES ══
+  { id: 'fanta', spirit: 'soda', lat: 51.45, lng: 7.01, icon: '🟠', origin: 'Germany', place: 'Essen', dateCreated: '1940' },
+  { id: 'mountain-dew', spirit: 'soda', lat: 35.96, lng: -83.92, icon: '⛰️', origin: 'USA', place: 'Knoxville, Tennessee', dateCreated: '1940' },
+  { id: 'sprite', spirit: 'soda', lat: 33.76, lng: -84.39, icon: '🍋', origin: 'USA', place: 'Atlanta, Georgia', dateCreated: '1961' },
+  { id: 'orangina', spirit: 'soda', lat: 36.56, lng: 2.83, icon: '🍊', origin: 'Algeria / France', place: 'Boufarik / Marseille', dateCreated: '1936' },
+  { id: 'vimto', spirit: 'soda', lat: 53.48, lng: -2.24, icon: '🫐', origin: 'England', place: 'Manchester', dateCreated: '1908' },
+  { id: 'club-mate', spirit: 'soda', lat: 49.60, lng: 10.72, icon: '🧉', origin: 'Germany', place: 'Münchsteinach', dateCreated: '1924' },
+  { id: 'thums-up', spirit: 'soda', lat: 19.08, lng: 72.88, icon: '🇮🇳', origin: 'India', place: 'Mumbai', dateCreated: '1977' },
+  { id: 'appletiser', spirit: 'soda', lat: -34.16, lng: 19.01, icon: '🍏', origin: 'South Africa', place: 'Elgin, Western Cape', dateCreated: '1966' },
+  { id: 'malta-hatuey', spirit: 'soda', lat: 23.11, lng: -82.37, icon: '🌾', origin: 'Cuba', place: 'Havana', dateCreated: '1942' },
+  { id: 'kofola', spirit: 'soda', lat: 49.83, lng: 18.29, icon: '🇨🇿', origin: 'Czechoslovakia', place: 'Opava', dateCreated: '1959' },
+
+  // ══ LOTE C — CAFÉS ADICIONALES ══
+  { id: 'coffee-vietnam', spirit: 'coffee', lat: 12.68, lng: 108.05, icon: '🇻🇳', origin: 'Vietnam', place: 'Dak Lak, Central Highlands', dateCreated: '1857',
+    region: { polygon: [[13.40,107.60],[13.30,108.60],[12.50,108.75],[11.80,108.20],[11.95,107.55],[12.80,107.45]] } },
+  { id: 'coffee-sumatra', spirit: 'coffee', lat: 2.60, lng: 99.05, icon: '🏝️', origin: 'Indonesia', place: 'Sumatra (Mandheling)', dateCreated: 's. XVIII',
+    region: { polygon: [[5.80,95.20],[5.50,97.50],[2.80,99.50],[-0.50,102.00],[-3.50,103.50],[-5.80,105.40],[-5.00,103.50],[-3.00,100.50],[0.50,97.50],[4.00,95.40]] } },
+  { id: 'coffee-costa-rica', spirit: 'coffee', lat: 9.93, lng: -84.08, icon: '🇨🇷', origin: 'Costa Rica', place: 'Central Valley / Tarrazú', dateCreated: '1779' },
+  { id: 'coffee-panama', spirit: 'coffee', lat: 8.78, lng: -82.43, icon: '🌸', origin: 'Panama', place: 'Boquete, Chiriquí (Geisha)', dateCreated: '2004',
+    region: { polygon: [[8.95,-82.60],[8.90,-82.25],[8.65,-82.20],[8.55,-82.45],[8.70,-82.65]] } },
+  { id: 'coffee-honduras', spirit: 'coffee', lat: 14.77, lng: -89.14, icon: '🇭🇳', origin: 'Honduras', place: 'Copán / Marcala', dateCreated: 's. XIX' },
+
+  // ══ LOTE C — TÉS E INFUSIONES ADICIONALES ══
+  { id: 'moroccan-mint', spirit: 'tea', lat: 31.63, lng: -7.99, icon: '🌿', origin: 'Morocco', place: 'Marrakech / Atlas', dateCreated: 's. XVIII' },
+  { id: 'turkish-rize', spirit: 'tea', lat: 41.03, lng: 40.52, icon: '🇹🇷', origin: 'Turkey', place: 'Rize, Black Sea', dateCreated: '1938',
+    region: { polygon: [[41.20,40.20],[41.20,41.00],[40.85,41.15],[40.75,40.60],[40.85,40.15]] } },
+  { id: 'rooibos', spirit: 'tea', lat: -32.49, lng: 19.01, icon: '🍂', origin: 'South Africa', place: 'Cederberg', dateCreated: 's. XVIII',
+    region: { polygon: [[-32.00,18.70],[-32.10,19.35],[-32.80,19.40],[-33.00,18.85],[-32.70,18.55]] } },
 ];
 
 // Spirit color mapping for markers
