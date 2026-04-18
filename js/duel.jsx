@@ -1,8 +1,7 @@
 // Stirio — Full multiplayer Duel (2/3/4 players + RTDB + bot)
 // Depends on: ui.jsx (Icon, confettiBurst), data.js (TRIVIA_ROUNDS)
 // Consumes: window.stRivals, window.stBot, window.stAuth
-
-const { useState, useEffect, useRef, useCallback } = React;
+// React hooks come from ui.jsx's top-level destructuring (shared script scope).
 
 const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
 const QUESTIONS_PER_DUEL = 10;
