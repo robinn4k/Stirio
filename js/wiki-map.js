@@ -160,6 +160,32 @@ const SPIRIT_REGIONS = [
   // ══ WIKI: FASE 1 — AMAROS FALTANTES ══
   { id: 'becherovka', spirit: 'amaro', lat: 50.23, lng: 12.87, icon: '🇨🇿', origin: 'Czech Republic', place: 'Karlovy Vary', dateCreated: '1807' },
 
+  // ══ LOTE A — WHISKIES DEL MUNDO ══
+  { id: 'welsh-whisky', spirit: 'whisky', lat: 51.81, lng: -3.65, icon: '🏴󠁧󠁢󠁷󠁬󠁳󠁿', origin: 'Wales', place: 'Penderyn, Brecon Beacons', dateCreated: '2000' },
+  { id: 'indian-whisky', spirit: 'whisky', lat: 12.97, lng: 77.59, icon: '🇮🇳', origin: 'India', place: 'Bangalore / Goa (Amrut / Paul John)', dateCreated: '1948' },
+  { id: 'taiwanese-whisky', spirit: 'whisky', lat: 24.74, lng: 121.75, icon: '🇹🇼', origin: 'Taiwan', place: 'Yilan (Kavalan)', dateCreated: '2005' },
+  { id: 'australian-whisky', spirit: 'whisky', lat: -42.88, lng: 147.33, icon: '🇦🇺', origin: 'Australia', place: 'Tasmania / Hobart', dateCreated: '1992' },
+  { id: 'rye-indiana', spirit: 'whisky', lat: 39.84, lng: -84.88, icon: '🌾', origin: 'USA', place: 'Lawrenceburg, Indiana (MGP)', dateCreated: '1847' },
+  { id: 'canadian-whisky', spirit: 'whisky', lat: 50.63, lng: -96.98, icon: '🍁', origin: 'Canada', place: 'Gimli, Manitoba', dateCreated: '1769' },
+  { id: 'finnish-whisky', spirit: 'whisky', lat: 60.98, lng: 25.66, icon: '🇫🇮', origin: 'Finland', place: 'Lahti (Teerenpeli)', dateCreated: '2002' },
+
+  // ══ LOTE A — GINES DEL MUNDO ══
+  { id: 'gin-menorca', spirit: 'gin', lat: 39.89, lng: 4.27, icon: '🇪🇸', origin: 'Spain', place: 'Mahón, Menorca (Xoriguer)', dateCreated: 's. XVIII' },
+  { id: 'plymouth-gin', spirit: 'gin', lat: 50.37, lng: -4.14, icon: '⚓', origin: 'England', place: 'Plymouth, Black Friars', dateCreated: '1793' },
+  { id: 'monkey-47', spirit: 'gin', lat: 48.45, lng: 8.41, icon: '🐒', origin: 'Germany', place: 'Loßburg, Black Forest', dateCreated: '2010' },
+  { id: 'portland-craft-gin', spirit: 'gin', lat: 45.52, lng: -122.68, icon: '🌲', origin: 'USA', place: 'Portland, Oregon', dateCreated: 's. XXI' },
+
+  // ══ LOTE A — RONES ADICIONALES ══
+  { id: 'ron-nicaragua', spirit: 'rum', lat: 12.64, lng: -87.13, icon: '🇳🇮', origin: 'Nicaragua', place: 'Chichigalpa (Flor de Caña)', dateCreated: '1890' },
+  { id: 'ron-bermudas', spirit: 'rum', lat: 32.30, lng: -64.78, icon: '🇧🇲', origin: 'Bermuda', place: 'Hamilton (Gosling\u2019s)', dateCreated: '1806' },
+  { id: 'rhum-haiti', spirit: 'rum', lat: 18.54, lng: -72.34, icon: '🇭🇹', origin: 'Haiti', place: 'Port-au-Prince (Barbancourt)', dateCreated: '1862' },
+  { id: 'ron-mexico', spirit: 'rum', lat: 19.19, lng: -96.13, icon: '🇲🇽', origin: 'Mexico', place: 'Veracruz', dateCreated: 's. XVIII' },
+  { id: 'ron-paraguay', spirit: 'rum', lat: -25.29, lng: -57.65, icon: '🇵🇾', origin: 'Paraguay', place: 'Asunción', dateCreated: 's. XX' },
+
+  // ══ LOTE A — VODKAS ADICIONALES ══
+  { id: 'vodka-finland', spirit: 'vodka', lat: 63.13, lng: 23.13, icon: '🇫🇮', origin: 'Finland', place: 'Koskenkorva', dateCreated: '1888' },
+  { id: 'vodka-usa', spirit: 'vodka', lat: 30.27, lng: -97.74, icon: '🤠', origin: 'USA', place: 'Austin, Texas (Tito\u2019s)', dateCreated: '1997' },
+
   // ══ FASE 2 — VINOS TINTOS ══
   { id: 'bordeaux', spirit: 'wine', lat: 44.84, lng: -0.58, icon: '🍇', origin: 'France', place: 'Bordeaux / Médoc / Saint-Émilion', dateCreated: 's. I' },
   { id: 'burgundy', spirit: 'wine', lat: 47.05, lng: 4.84, icon: '🍷', origin: 'France', place: 'Côte d\u2019Or', dateCreated: 's. VI' },
@@ -392,6 +418,22 @@ export function initSpiritMap(container) {
     const name = t(`wiki.map.${region.id}`);
     const desc = t(`wiki.map.${region.id}.desc`);
     const spiritName = t(`wiki.map.spirit.${region.spirit}`);
+    const groupId = groupIdForSpirit(region.spirit);
+    if (!markersByGroup[groupId]) markersByGroup[groupId] = [];
+
+    // Optional translucent region overlay (L.polygon) for DO/AOC extensive zones.
+    // Drawn below the marker; click is still captured by the marker popup.
+    if (region.region?.polygon && Array.isArray(region.region.polygon)) {
+      const overlay = L.polygon(region.region.polygon, {
+        color,
+        fillColor: color,
+        fillOpacity: 0.18,
+        weight: 1.5,
+        opacity: 0.55,
+        interactive: false,
+      }).addTo(mapInstance);
+      markersByGroup[groupId].push(overlay);
+    }
 
     const markerIcon = L.divIcon({
       className: 'spirit-marker',
@@ -425,8 +467,6 @@ export function initSpiritMap(container) {
       maxWidth: 280,
     });
 
-    const groupId = groupIdForSpirit(region.spirit);
-    if (!markersByGroup[groupId]) markersByGroup[groupId] = [];
     markersByGroup[groupId].push(marker);
   });
 
