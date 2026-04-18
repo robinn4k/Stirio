@@ -96,6 +96,9 @@ const App = () => {
     if (m === 'iba')      { setSubScreen('iba');       return; }
     if (m === 'freequiz') { setSubScreen('freequiz');  return; }
     if (m === 'wiki')     { setSubScreen('wiki');      return; }
+    if (m === 'blind')    { setSubScreen('blind');     return; }
+    if (m === 'builder')  { setSubScreen('builder');   return; }
+    if (m === 'duel')     { setSubScreen('duel');      return; }
     if (m === 'daily')    { pickLesson(window.DAILY_LESSON && window.DAILY_LESSON()); return; }
     if (m === 'speed')    { pickLesson(window.SPEED_LESSON && window.SPEED_LESSON()); return; }
     setActiveMode(m);
@@ -168,6 +171,18 @@ const App = () => {
 
       {subScreen === 'wiki' && !activeLesson && (
         <WikiScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'blind' && !activeLesson && (
+        <BlindScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'builder' && !activeLesson && (
+        <ConstructorScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'duel' && !activeLesson && (
+        <DuelScreen onBack={() => setSubScreen(null)} />
       )}
 
       {fichaOpen && (

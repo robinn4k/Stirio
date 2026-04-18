@@ -25,11 +25,15 @@
   <script src="js/repo-data.js"></script>
   <script src="js/data.js"></script>
 
-  <!-- Firebase auth + leaderboard helpers (ES modules, loaded for side-effects) -->
+  <!-- Legacy ES modules (loaded asynchronously, exposed on window.st*) -->
   <script type="module">
     import('./js/auth.js').then(m => { window.stAuth = m; }).catch(()=>{});
     import('./js/leaderboard.js').then(m => { window.stLeaderboard = m; }).catch(()=>{});
     import('./js/lang.js').then(m => { window.stLang = m; }).catch(()=>{});
+    import('./js/blind.js').then(m => { window.stBlind = m; }).catch(()=>{});
+    import('./js/constructor.js').then(m => { window.stConstructor = m; }).catch(()=>{});
+    import('./js/bot.js').then(m => { window.stBot = m; }).catch(()=>{});
+    import('./js/achievements.js').then(m => { window.stAchievements = m; }).catch(()=>{});
   </script>
 
   <!-- React UI components (Babel transpiles JSX in-browser) -->
@@ -37,6 +41,7 @@
   <script type="text/babel" src="js/lesson.jsx" data-type="module"></script>
   <script type="text/babel" src="js/screens.jsx" data-type="module"></script>
   <script type="text/babel" src="js/reference.jsx" data-type="module"></script>
+  <script type="text/babel" src="js/legacy-modes.jsx" data-type="module"></script>
   <script type="text/babel" src="js/app.jsx" data-type="module"></script>
 
   <!-- Service worker registration -->
