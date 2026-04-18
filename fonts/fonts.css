@@ -1,3 +1,29 @@
+/* ── Fraunces (display serif) ── */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/fraunces/v24/6NUt8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Fo0Nm2CgFk0eEN4k.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/fraunces/v24/6NUt8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Fo0Nm2CgFk0eEN4k.woff2') format('woff2');
+}
+
+/* ── JetBrains Mono (mono) ── */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjOVmtLDs.woff2') format('woff2');
+}
+
+/* ── Open Sans (UI body) ── */
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;

@@ -1,0 +1,1063 @@
+// Stirio — Screens: Onboarding, Home, Profile
+// Depends on ui.jsx, data.js
+
+// ═══════════════ ONBOARDING ═══════════════
+const Onboarding = ({ onDone }) => {
+  const [step, setStep] = useState(0);
+  const [authMode, setAuthMode] = useState(null); // 'google' | 'guest'
+  const [name, setName] = useState('');
+  const [level, setLevel] = useState(null);
+
+  const next = () => setStep(s => s + 1);
+  const back = () => setStep(s => Math.max(0, s - 1));
+
+  const totalSteps = 3;
+  const canNext = {
+    0: true,
+    1: authMode === 'google' || (authMode === 'guest' && name.trim().length > 0),
+    2: level !== null,
+  }[step];
+
+  return (
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: 40,
+      display: 'grid', placeItems: 'center',
+      padding: '24px 20px',
+      overflow: 'auto',
+    }}>
+      <div style={{ maxWidth: 480, width: '100%', position: 'relative', zIndex: 2 }}>
+        {step > 0 && (
+          <div style={{ display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 32 }}>
+            {Array.from({ length: totalSteps }).map((_, i) => (
+              <div key={i} style={{
+                width: step === i ? 28 : 8, height: 8, borderRadius: 99,
+                background: i <= step ? 'var(--amber)' : 'var(--bg-3)',
+                transition: 'all .3s',
+                boxShadow: step === i ? '0 0 10px var(--amber-glow)' : 'none',
+              }} />
+            ))}
+          </div>
+        )}
+
+        <div key={step} style={{ animation: 'rise .4s ease' }}>
+          {step === 0 && (
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontSize: 88, margin: '0 auto 14px',
+                filter: 'drop-shadow(0 8px 30px var(--amber-glow))',
+                animation: 'pop .6s cubic-bezier(.2,1.4,.3,1)',
+              }}>🍸</div>
+              <h1 style={{
+                fontFamily: 'var(--f-serif)', fontWeight: 400,
+                fontSize: 'clamp(56px, 9vw, 84px)',
+                margin: '0 0 6px', lineHeight: 0.95,
+                letterSpacing: '-0.02em',
+              }}>
+                Stirio<span style={{ color: 'var(--amber)' }}>.</span>
+              </h1>
+              <p style={{
+                fontFamily: 'var(--f-serif)', fontStyle: 'italic',
+                fontSize: 20, color: 'var(--ink-2)',
+                margin: '0 0 4px',
+              }}>
+                Domina el arte del cóctel.
+              </p>
+              <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, letterSpacing: '0.14em', marginBottom: 36 }}>
+                Aprende · Juega · Compite
+              </div>
+
+              <div style={{ display: 'grid', gap: 10, maxWidth: 340, margin: '0 auto' }}>
+                <button
+                  onClick={() => { setAuthMode('google'); setName('mira_k'); next(); }}
+                  style={{
+                    padding: '14px 18px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
+                    background: '#fff', color: '#1a1a1a',
+                    borderRadius: 'var(--r-pill)',
+                    border: 0, fontWeight: 500, fontSize: 14,
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                  }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                  </svg>
+                  Continuar con Google
+                </button>
+                <button
+                  onClick={() => { setAuthMode('guest'); next(); }}
+                  className="btn"
+                  style={{ padding: '14px 18px' }}
+                >
+                  <Icon name="user" size={16} /> Continuar como invitado
+                </button>
+              </div>
+              <div style={{
+                marginTop: 22, maxWidth: 340, margin: '22px auto 0',
+                padding: '10px 14px',
+                borderRadius: 'var(--r-md)',
+                background: 'var(--bg-2)',
+                border: '1px dashed var(--line)',
+                fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)',
+                lineHeight: 1.5,
+              }}>
+                Inicia con Google para guardar tus puntuaciones<br/>y aparecer en el ranking global.
+              </div>
+            </div>
+          )}
+
+          {step === 1 && authMode === 'guest' && (
+            <div>
+              <StepTitle eyebrow="tu handle" title="¿Cómo te llamamos?" subtitle="Aparecerá en duelos y en la tabla global." />
+              <input
+                autoFocus
+                placeholder="tu alias"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                style={{
+                  width: '100%',
+                  padding: '18px 22px',
+                  fontSize: 24,
+                  fontFamily: 'var(--f-serif)',
+                  background: 'var(--bg-1)',
+                  border: '1px solid var(--line)',
+                  borderRadius: 'var(--r-md)',
+                  outline: 'none',
+                  transition: 'border .2s, box-shadow .2s',
+                }}
+                onFocus={e => { e.target.style.borderColor = 'var(--amber)'; e.target.style.boxShadow = '0 0 0 4px var(--amber-soft)'; }}
+                onBlur={e => { e.target.style.borderColor = 'var(--line)'; e.target.style.boxShadow = 'none'; }}
+              />
+            </div>
+          )}
+
+          {step === 1 && authMode === 'google' && (
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                width: 80, height: 80, borderRadius: '50%',
+                margin: '0 auto 14px',
+                background: 'linear-gradient(135deg, var(--amber), var(--berry))',
+                display: 'grid', placeItems: 'center',
+                fontSize: 32, fontWeight: 600, color: 'var(--bg-0)',
+                boxShadow: '0 0 30px var(--amber-glow)',
+              }}>M</div>
+              <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, marginBottom: 4 }}>¡Hola, mira_k!</div>
+              <div style={{ color: 'var(--ink-2)', marginBottom: 6 }}>mira.k@gmail.com</div>
+              <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em' }}>
+                · sesión iniciada con google ·
+              </div>
+            </div>
+          )}
+
+          {step === 2 && (
+            <div>
+              <StepTitle eyebrow="nivel" title="¿Qué tal te llevas con la coctelería?" subtitle="Ajustamos la dificultad. Puedes cambiarlo cuando quieras." />
+              <div style={{ display: 'grid', gap: 10 }}>
+                {[
+                  { id: 'rookie', label: 'Soy nuevo', caption: 'Empezamos por lo clásico', emoji: '🌱' },
+                  { id: 'home', label: 'Bartender casero', caption: 'Conozco lo básico, quiero más', emoji: '🏠' },
+                  { id: 'pro', label: 'Pro / curioso serio', caption: 'Dame historia, técnica y retos', emoji: '🥃' },
+                ].map(g => {
+                  const picked = level === g.id;
+                  return (
+                    <button key={g.id} onClick={() => setLevel(g.id)} style={{
+                      padding: 16,
+                      display: 'flex', alignItems: 'center', gap: 14,
+                      textAlign: 'left',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 28 }}>{g.emoji}</div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 500, fontSize: 15 }}>{g.label}</div>
+                        <div style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
+                          {g.caption}
+                        </div>
+                      </div>
+                      <div style={{
+                        width: 22, height: 22, borderRadius: '50%',
+                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
+                        display: 'grid', placeItems: 'center',
+                      }}>
+                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+              <button
+                onClick={() => { setLevel('skip'); }}
+                style={{
+                  marginTop: 14, width: '100%', padding: 10,
+                  background: 'transparent', border: 0,
+                  color: 'var(--ink-3)', fontFamily: 'var(--f-mono)', fontSize: 12,
+                  textDecoration: 'underline', textUnderlineOffset: 3,
+                }}
+              >
+                Saltar — decidir luego
+              </button>
+            </div>
+          )}
+        </div>
+
+        {step > 0 && (
+          <div style={{ display: 'flex', gap: 10, marginTop: 28 }}>
+            <button className="btn" onClick={back} style={{ padding: '12px 18px' }}>
+              <Icon name="arrowL" size={16} /> Atrás
+            </button>
+            <button
+              className="btn primary"
+              onClick={step === 2 ? () => onDone({ name: authMode === 'google' ? 'mira_k' : name, authMode, level }) : next}
+              disabled={!canNext}
+              style={{
+                flex: 1, padding: '12px 24px',
+                opacity: canNext ? 1 : 0.4,
+                pointerEvents: canNext ? 'auto' : 'none',
+              }}
+            >
+              {step === 2 ? 'Entrar a Stirio' : 'Continuar'} <Icon name="arrowR" size={16} />
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════ HOME ═══════════════
+const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
+  const featured = LESSONS[0];
+  const dailyChallenge = { id: 'daily', title: 'Reto Diario', questions: 10, xp: 120 };
+  const time = new Date().getHours();
+  const greeting = time < 12 ? 'Buenos días' : time < 19 ? 'Buenas tardes' : 'Buenas noches';
+
+  return (
+    <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 1040, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+      {/* header */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 28 }}>
+        <div>
+          <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 2 }}>
+            {greeting}, {profile.name || 'invitado'}
+          </div>
+          <div style={{
+            fontFamily: 'var(--f-serif)', fontSize: 30, fontWeight: 400,
+            letterSpacing: '-0.02em',
+          }}>
+            Stirio<span style={{ color: 'var(--amber)' }}>.</span>
+          </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <StreakBadge count={profile.streak} />
+          <button className="btn ghost" onClick={onOpenProfile} style={{ padding: 6, borderRadius: '50%' }} aria-label="Profile">
+            <div style={{
+              width: 38, height: 38, borderRadius: '50%',
+              background: profile.avatar ? 'transparent' : 'linear-gradient(135deg, var(--amber), var(--berry))',
+              display: 'grid', placeItems: 'center',
+              fontWeight: 600, fontSize: 15, color: 'var(--bg-0)',
+              overflow: 'hidden',
+            }}>
+              {profile.avatar
+                ? <img src={profile.avatar} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                : (profile.name || '?').slice(0, 1).toUpperCase()}
+            </div>
+          </button>
+        </div>
+      </div>
+
+      {/* XP bar */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{
+          display: 'flex', justifyContent: 'space-between',
+          fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)',
+          marginBottom: 6,
+        }}>
+          <span>Nivel {profile.level} · {profile.title}</span>
+          <span>{profile.xp} / {profile.xpNext} xp</span>
+        </div>
+        <div style={{ height: 8, background: 'var(--bg-2)', borderRadius: 99, overflow: 'hidden', border: '1px solid var(--line-soft)' }}>
+          <div style={{
+            width: `${(profile.xp / profile.xpNext) * 100}%`,
+            height: '100%',
+            background: 'linear-gradient(90deg, var(--amber), oklch(0.86 0.17 60))',
+            boxShadow: '0 0 14px var(--amber-glow)',
+          }} />
+        </div>
+      </div>
+
+      {/* hero: featured + daily challenge + duel */}
+      <section style={{ marginBottom: 32 }}>
+        <div className="mobile-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,2fr) minmax(0,1fr)', gap: 14 }}>
+          <FeaturedCard lesson={featured} onPlay={() => onPickLesson(featured)} />
+          <div style={{ display: 'grid', gap: 14 }}>
+            <DailyCard onPlay={() => onOpenMode('daily')} />
+            <DuelCard onPlay={() => onOpenMode('duel')} />
+          </div>
+        </div>
+      </section>
+
+      {/* Academy */}
+      <section style={{ marginBottom: 32 }}>
+        <SectionHeader eyebrow="learn" title="Cocktail Academy" action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6 familias</span>} />
+        <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}> 75 / 0.3)' }}>
+          <div style={{ fontSize: 54, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>🎓</div>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>Aprende paso a paso</div>
+            <div style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 10 }}>Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…</div>
+            <div style={{ display: 'flex', gap: 6 }}>
+              {['Sours', 'Highballs', 'Martinis', 'Old-school', 'Tiki', 'Modernos'].map((n, i) => (
+                <div key={n} style={{
+                  flex: 1, height: 6, borderRadius: 99,
+                  background: i === 0 ? 'var(--amber)' : 'var(--bg-3)',
+                  boxShadow: i === 0 ? '0 0 8px var(--amber-glow)' : 'none',
+                }} />
+              ))}
+            </div>
+          </div>
+          <button className="btn primary" onClick={() => onOpenMode('academy')} style={{ padding: '12px 18px' }}>
+            Abrir <Icon name="arrowR" size={14} />
+          </button>
+        </div>
+      </section>
+
+      {/* Quick modes */}
+      <section style={{ marginBottom: 32 }}>
+        <SectionHeader eyebrow="play" title="Modos rápidos" />
+        <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 10 }}>
+          <ModeCard icon="⚡" title="Velocidad" caption="60 segundos" accent="amber" onClick={() => onOpenMode('speed')} />
+          <ModeCard icon="🍹" title="Constructor" caption="Adivina por ingredientes" accent="cyan" onClick={() => onOpenMode('builder')} />
+          <ModeCard icon="👃" title="Cata a ciegas" caption="35+ destilados" accent="violet" onClick={() => onOpenMode('blind')} />
+          <ModeCard icon="🎲" title="Quiz libre" caption="24 rondas" accent="berry" onClick={() => onOpenMode('freequiz')} />
+        </div>
+      </section>
+
+      {/* Mini games + Arcade */}
+      <section style={{ marginBottom: 32 }}>
+        <SectionHeader eyebrow="arcade" title="Mini juegos" />
+        <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
+          <ArcadeCard title="Arcade Coctelero" subtitle="Aprende recetas jugando" icon="🕹️" onClick={() => onOpenMode('arcade')} />
+          <ArcadeCard title="Memoria de Garnish" subtitle="Empareja guarniciones" icon="🧠" onClick={() => onOpenMode('memory')} />
+          <ArcadeCard title="Ritmo de Shaker" subtitle="Agita al compás" icon="🥁" onClick={() => onOpenMode('rhythm')} />
+        </div>
+      </section>
+
+      {/* Reference */}
+      <section style={{ marginBottom: 32 }}>
+        <SectionHeader eyebrow="reference" title="Referencia rápida" />
+        <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 10 }}>
+          <RefTile icon="📖" label="Fichas IBA" count="90" onClick={() => onOpenMode('iba')} />
+          <RefTile icon="🌐" label="Enciclopedia" count="∞" onClick={() => onOpenMode('wiki')} />
+          <RefTile icon="📝" label="Glosario" count="70+" onClick={() => onOpenMode('glossary')} />
+          <RefTile icon="🗺️" label="Mapa destilados" count="12" onClick={() => onOpenMode('map')} />
+          <RefTile icon="📚" label="Biblioteca 3D" count="24" onClick={() => onOpenMode('library')} />
+        </div>
+      </section>
+
+      {/* Up next (60s) */}
+      <section style={{ marginBottom: 32 }}>
+        <SectionHeader eyebrow="60s queue" title="Rondas de 60 segundos" action={<button className="btn ghost" style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}><Icon name="shuffle" size={14} /> Aleatorio</button>} />
+        <div className="mobile-grid-lessons" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 12 }}>
+          {LESSONS.map(l => <LessonCard key={l.id} lesson={l} onPlay={() => onPickLesson(l)} />)}
+        </div>
+      </section>
+
+      {/* leaderboard preview */}
+      <section>
+        <SectionHeader eyebrow="global" title="Ranking mundial" action={<button className="btn ghost" style={{ fontFamily: 'var(--f-mono)', fontSize: 11, padding: '6px 10px' }} onClick={onOpenProfile}>Ver todos →</button>} />
+        <div className="card" style={{ padding: 4 }}>
+          {LEADERBOARD.slice(0, 5).map((p, i) => (
+            <div key={p.name} style={{
+              padding: '12px 14px',
+              display: 'flex', alignItems: 'center', gap: 12,
+              borderRadius: 'var(--r-md)',
+              background: p.self ? 'var(--amber-soft)' : 'transparent',
+              border: p.self ? '1px solid oklch(0.82 0.17 75 / 0.4)' : '1px solid transparent',
+            }}>
+              <div style={{
+                width: 24, textAlign: 'center',
+                fontFamily: 'var(--f-mono)', fontSize: 13, fontWeight: 600,
+                color: i < 3 ? 'var(--amber)' : 'var(--ink-3)',
+              }}>{i + 1}</div>
+              <div style={{ fontSize: 18 }}>{p.badge}</div>
+              <div style={{ flex: 1 }}>
+                <span style={{ fontWeight: p.self ? 600 : 400 }}>{p.name}</span>
+                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 13 }}>{p.country}</span>
+              </div>
+              <div style={{ fontFamily: 'var(--f-mono)', fontSize: 13, color: p.self ? 'var(--amber)' : 'var(--ink-1)', fontWeight: 600 }}>
+                {p.xp.toLocaleString()}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+const SectionHeader = ({ eyebrow, title, action }) => (
+  <div style={{ marginBottom: 14, display: 'flex', alignItems: 'end', justifyContent: 'space-between', gap: 12 }}>
+    <div>
+      <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 2 }}>{eyebrow}</div>
+      <h2 style={{ fontFamily: 'var(--f-serif)', fontWeight: 400, fontSize: 24, margin: 0, letterSpacing: '-0.01em' }}>{title}</h2>
+    </div>
+    {action}
+  </div>
+);
+
+// Fotos cinemáticas de Unsplash (source URL estable, recortes verticales)
+const LESSON_IMAGES = {
+  negroni: 'https://images.unsplash.com/photo-1556855810-ac404aa91e85?w=900&q=85&auto=format&fit=crop',
+  espresso: 'https://images.unsplash.com/photo-1545438102-799c3991ffb2?w=900&q=85&auto=format&fit=crop',
+  chord: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=900&q=85&auto=format&fit=crop',
+  hemingway: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900&q=85&auto=format&fit=crop',
+  color: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=900&q=85&auto=format&fit=crop',
+  daily: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=900&q=85&auto=format&fit=crop',
+};
+
+const FeaturedCard = ({ lesson, onPlay }) => {
+  const img = LESSON_IMAGES[lesson.id] || LESSON_IMAGES.negroni;
+  return (
+    <div className="card mobile-featured" style={{
+      padding: 0, overflow: 'hidden',
+      display: 'grid', gridTemplateColumns: '1fr 1fr',
+      minHeight: 260,
+      border: '1px solid var(--line)',
+      background: 'var(--bg-1)',
+      position: 'relative',
+    }}>
+      <div className="mobile-featured-copy" style={{ padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
+        <div>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
+            hoy · {lesson.difficulty}
+          </div>
+          <h3 style={{
+            fontFamily: 'var(--f-serif)', fontWeight: 400,
+            fontSize: 'clamp(26px, 3.5vw, 36px)',
+            margin: '0 0 8px', lineHeight: 1.05, letterSpacing: '-0.02em',
+          }}>
+            {lesson.title}
+          </h3>
+          <div style={{ color: 'var(--ink-2)', fontSize: 13 }}>{lesson.subtitle}</div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 20, flexWrap: 'wrap' }}>
+          <button className="btn primary" onClick={onPlay} style={{ padding: '12px 22px' }}>
+            <Icon name="play" size={14} /> Jugar · 60s
+          </button>
+          <div className="chip amber"><Icon name="bolt" size={12} /> +{lesson.xp} xp</div>
+        </div>
+      </div>
+
+      {/* Foto cinemática */}
+      <div className="mobile-featured-art" style={{ position: 'relative', overflow: 'hidden' }}>
+        <img
+          src={img}
+          alt={lesson.title}
+          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          style={{
+            position: 'absolute', inset: 0,
+            width: '100%', height: '100%',
+            objectFit: 'cover',
+            filter: 'contrast(1.08) saturate(1.1)',
+          }}
+        />
+        {/* Viñeta que funde la imagen hacia el panel de texto.
+            En split (desktop) → fade a la izquierda.
+            En stacked (mobile) → fade hacia abajo.
+            Mantenemos ambos con pesos distintos. */}
+        <div className="mobile-featured-fade" style={{
+          position: 'absolute', inset: 0,
+          pointerEvents: 'none',
+        }} />
+        {/* Tinte cálido sutil */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'radial-gradient(120% 80% at 80% 30%, var(--amber-glow) 0%, transparent 50%)',
+          mixBlendMode: 'overlay',
+          opacity: 0.5,
+        }} />
+        {/* Grano */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'repeating-radial-gradient(circle at 20% 30%, transparent 0 2px, rgba(0,0,0,0.04) 2px 3px)',
+          mixBlendMode: 'overlay',
+          opacity: 0.7,
+        }} />
+      </div>
+    </div>
+  );
+};
+
+const DailyCard = ({ onPlay }) => (
+  <button onClick={onPlay} className="card" style={{
+    padding: 18, textAlign: 'left', cursor: 'pointer',
+    display: 'flex', flexDirection: 'column', gap: 8,
+    background: 'linear-gradient(135deg, oklch(0.78 0.13 200 / 0.18), var(--bg-2))',
+    borderColor: 'oklch(0.78 0.13 200 / 0.3)',
+    minHeight: 112, transition: 'transform .15s',
+  }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+    onMouseLeave={e => e.currentTarget.style.transform = ''}
+  >
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
+      <div className="mono caps" style={{ color: 'var(--cyan)', fontSize: 10 }}>reto diario</div>
+      <div style={{ fontSize: 22 }}>📅</div>
+    </div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>10 preguntas frescas</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>Nuevas cada día · +120 XP</div>
+  </button>
+);
+
+const DuelCard = ({ onPlay }) => (
+  <button onClick={onPlay} className="card" style={{
+    padding: 18, textAlign: 'left', cursor: 'pointer',
+    display: 'flex', flexDirection: 'column', gap: 8,
+    background: 'linear-gradient(135deg, oklch(0.65 0.18 10 / 0.18), var(--bg-2))',
+    borderColor: 'oklch(0.65 0.18 10 / 0.3)',
+    minHeight: 112, transition: 'transform .15s',
+  }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+    onMouseLeave={e => e.currentTarget.style.transform = ''}
+  >
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
+      <div className="mono caps" style={{ color: 'var(--berry)', fontSize: 10 }}>multiplayer</div>
+      <div style={{ fontSize: 22 }}>⚔️</div>
+    </div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>Duelo 1 vs 1</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>Amigo · aleatorio · bot</div>
+  </button>
+);
+
+const ModeCard = ({ icon, title, caption, accent, onClick }) => (
+  <button onClick={onClick} className="card mobile-mode-card" style={{
+    padding: 16, textAlign: 'left',
+    display: 'flex', alignItems: 'center', gap: 14,
+    cursor: 'pointer', transition: 'transform .15s, border-color .2s',
+  }}
+    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = `var(--${accent})`; }}
+    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.borderColor = ''; }}
+  >
+    <div className="mode-icon" style={{ fontSize: 32, filter: `drop-shadow(0 4px 10px var(--${accent}-glow, var(--amber-glow)))` }}>{icon}</div>
+    <div>
+      <h4 style={{ fontWeight: 500, fontSize: 14, margin: 0 }}>{title}</h4>
+      <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{caption}</div>
+    </div>
+  </button>
+);
+
+const ArcadeCard = ({ icon, title, subtitle, onClick }) => (
+  <button onClick={onClick} className="card mobile-mode-card" style={{
+    padding: 18, textAlign: 'left', cursor: 'pointer',
+    display: 'flex', flexDirection: 'column', gap: 10,
+    transition: 'transform .15s, border-color .2s', minHeight: 132,
+  }}
+    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = 'var(--amber)'; }}
+    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.borderColor = ''; }}
+  >
+    <div style={{ fontSize: 40, filter: 'drop-shadow(0 6px 14px var(--amber-glow))' }}>{icon}</div>
+    <div>
+      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20, lineHeight: 1.1, marginBottom: 3 }}>{title}</div>
+      <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{subtitle}</div>
+    </div>
+  </button>
+);
+
+const LessonCard = ({ lesson, onPlay }) => (
+  <button onClick={onPlay} className="card" style={{
+    padding: 16, textAlign: 'left',
+    display: 'flex', flexDirection: 'column', gap: 10,
+    cursor: 'pointer', transition: 'transform .15s, border-color .2s',
+    width: '100%',
+  }}
+    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = `var(--${lesson.accent})`; }}
+    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.borderColor = ''; }}
+  >
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
+      <div className="chip" style={{ padding: '3px 8px' }}>{lesson.category}</div>
+      <div style={{ fontSize: 32, lineHeight: 1, filter: `drop-shadow(0 4px 12px var(--${lesson.accent}-glow, var(--amber-glow)))` }}>{lesson.emoji}</div>
+    </div>
+    <div>
+      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20, fontWeight: 400, lineHeight: 1.1, marginBottom: 4 }}>
+        {lesson.title}
+      </div>
+      <div style={{ color: 'var(--ink-3)', fontSize: 11, fontFamily: 'var(--f-mono)' }}>
+        60s · +{lesson.xp} xp · {lesson.difficulty}
+      </div>
+    </div>
+  </button>
+);
+
+const RefTile = ({ icon, label, count, onClick }) => (
+  <button onClick={onClick} className="card" style={{
+    padding: 14, textAlign: 'left', cursor: 'pointer',
+    display: 'flex', alignItems: 'center', gap: 10, transition: 'transform .15s',
+  }}
+    onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+    onMouseLeave={e => e.currentTarget.style.transform = ''}
+  >
+    <div style={{ fontSize: 24 }}>{icon}</div>
+    <div>
+      <div style={{ fontSize: 13, fontWeight: 500 }}>{label}</div>
+      <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--amber)' }}>{count}</div>
+    </div>
+  </button>
+);
+
+// ═══════════════ PROFILE ═══════════════
+const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, tweaks, onChangeTweak, playShortcuts }) => {
+  const [editingName, setEditingName] = React.useState(false);
+  const [tmpName, setTmpName] = React.useState(profile.name || '');
+  const [notif, setNotif] = React.useState(true);
+  const [units, setUnits] = React.useState('ml');
+  const [lang, setLang] = React.useState('es');
+  const [reduce, setReduce] = React.useState(false);
+  const [textScale, setTextScale] = React.useState('default');
+
+  const saveName = () => {
+    const n = tmpName.trim();
+    if (n) onUpdateProfile && onUpdateProfile({ name: n });
+    setEditingName(false);
+  };
+
+  return (
+    <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 760, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+      <button className="btn ghost" onClick={onBack} style={{ padding: 8, marginBottom: 18 }}>
+        <Icon name="arrowL" size={18} /> Back
+      </button>
+
+      {/* hero */}
+      <div className="card" style={{
+        padding: 28, marginBottom: 20,
+        display: 'flex', alignItems: 'center', gap: 22,
+        background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2) 60%)',
+        borderColor: 'oklch(0.82 0.17 75 / 0.3)',
+      }}>
+        <label style={{
+          width: 86, height: 86, borderRadius: '50%',
+          background: profile.avatar ? 'transparent' : 'linear-gradient(135deg, var(--amber), var(--berry))',
+          display: 'grid', placeItems: 'center',
+          fontSize: 36, fontWeight: 600, color: 'var(--bg-0)',
+          boxShadow: '0 0 30px var(--amber-glow)',
+          position: 'relative', overflow: 'hidden', cursor: 'pointer',
+          flexShrink: 0,
+        }} title="Cambiar foto">
+          {profile.avatar ? (
+            <img src={profile.avatar} alt="avatar" style={{
+              width: '100%', height: '100%', objectFit: 'cover',
+            }} />
+          ) : (
+            <span>{(profile.name || '?').slice(0, 1).toUpperCase()}</span>
+          )}
+          {/* camera badge */}
+          <span style={{
+            position: 'absolute', bottom: 2, right: 2,
+            width: 26, height: 26, borderRadius: '50%',
+            background: 'var(--bg-1)', border: '2px solid var(--amber)',
+            display: 'grid', placeItems: 'center',
+            fontSize: 13, color: 'var(--amber)',
+          }}>✎</span>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={(e) => {
+              const file = e.target.files && e.target.files[0];
+              if (!file) return;
+              const reader = new FileReader();
+              reader.onload = () => {
+                onUpdateProfile && onUpdateProfile({ avatar: reader.result });
+              };
+              reader.readAsDataURL(file);
+            }}
+            style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }}
+          />
+        </label>
+        <div style={{ flex: 1 }}>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>level {profile.level} · {profile.title}</div>
+          <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
+            {profile.name || 'stranger'}
+          </div>
+          <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>joined April 2026 · 🌍 earth</div>
+        </div>
+        <StreakBadge count={profile.streak} />
+      </div>
+
+      {/* stat row */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, marginBottom: 24 }}>
+        <StatTile label="TOTAL XP" value={profile.xp} color="var(--amber)" />
+        <StatTile label="LESSONS" value={24} color="var(--cyan)" />
+        <StatTile label="PERFECT" value={6} color="var(--violet)" />
+        <StatTile label="HOURS" value="2.1" color="var(--berry)" />
+      </div>
+
+      {/* activity graph */}
+      <section style={{ marginBottom: 24 }}>
+        <SectionHeader eyebrow="last 7 weeks" title="Activity" />
+        <div className="card" style={{ padding: 18 }}>
+          <ActivityHeatmap />
+        </div>
+      </section>
+
+      {/* achievements */}
+      <section style={{ marginBottom: 24 }}>
+        <SectionHeader eyebrow={`${ACHIEVEMENTS.filter(a => a.earned).length} / ${ACHIEVEMENTS.length}`} title="Achievements" />
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
+          gap: 10,
+        }}>
+          {ACHIEVEMENTS.map(a => (
+            <div key={a.id} className="card" style={{
+              padding: 14, textAlign: 'center',
+              opacity: a.earned ? 1 : 0.35,
+              borderColor: a.earned ? 'oklch(0.82 0.17 75 / 0.3)' : 'var(--line-soft)',
+              background: a.earned ? 'linear-gradient(180deg, var(--amber-soft), var(--bg-2))' : 'var(--bg-1)',
+            }}>
+              <div style={{ fontSize: 28, marginBottom: 6, filter: a.earned ? 'drop-shadow(0 0 10px var(--amber-glow))' : 'grayscale(1)' }}>{a.icon}</div>
+              <div style={{ fontWeight: 500, fontSize: 12 }}>{a.label}</div>
+              <div style={{ fontFamily: 'var(--f-mono)', fontSize: 9, color: 'var(--ink-3)', marginTop: 2 }}>{a.desc}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* leaderboard full */}
+      <section style={{ marginBottom: 24 }}>
+        <SectionHeader eyebrow="ranking" title="Global leaderboard" />
+        <div className="card" style={{ padding: 4 }}>
+          {LEADERBOARD.map((p, i) => (
+            <div key={p.name} style={{
+              padding: '12px 14px',
+              display: 'flex', alignItems: 'center', gap: 12,
+              borderRadius: 'var(--r-md)',
+              background: p.self ? 'var(--amber-soft)' : 'transparent',
+              border: p.self ? '1px solid oklch(0.82 0.17 75 / 0.4)' : '1px solid transparent',
+            }}>
+              <div style={{ width: 24, textAlign: 'center', fontFamily: 'var(--f-mono)', fontSize: 13, fontWeight: 600, color: i < 3 ? 'var(--amber)' : 'var(--ink-3)' }}>
+                {i + 1}
+              </div>
+              <div style={{ fontSize: 18 }}>{p.badge}</div>
+              <div style={{ flex: 1 }}>
+                <span style={{ fontWeight: p.self ? 600 : 400 }}>{p.name}</span>
+                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 13 }}>{p.country}</span>
+              </div>
+              <div style={{ fontFamily: 'var(--f-mono)', fontSize: 13, color: p.self ? 'var(--amber)' : 'var(--ink-1)', fontWeight: 600 }}>
+                {p.xp.toLocaleString()}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SETTINGS */}
+      <section style={{ marginBottom: 24 }}>
+        <SectionHeader eyebrow="ajustes" title="Cuenta" />
+        <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
+          <SettingsRow
+            icon="👤"
+            label="Nombre"
+            value={editingName ? (
+              <div style={{ display: 'flex', gap: 6 }}>
+                <input
+                  autoFocus
+                  value={tmpName}
+                  onChange={e => setTmpName(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter') saveName(); if (e.key === 'Escape') setEditingName(false); }}
+                  style={{
+                    background: 'var(--bg-2)', border: '1px solid var(--amber)',
+                    borderRadius: 8, padding: '6px 10px', fontSize: 14,
+                    color: 'var(--ink-0)', width: 140, outline: 'none',
+                  }}
+                />
+                <button onClick={saveName} className="btn primary" style={{ padding: '6px 12px', fontSize: 12 }}>OK</button>
+              </div>
+            ) : (
+              <button onClick={() => { setTmpName(profile.name || ''); setEditingName(true); }}
+                style={{ color: 'var(--ink-1)', fontSize: 14, display: 'flex', alignItems: 'center', gap: 6 }}>
+                {profile.name || '—'} <Icon name="edit" size={12} />
+              </button>
+            )}
+          />
+          <SettingsRow
+            icon="📧"
+            label="Cuenta"
+            value={<span style={{ color: 'var(--ink-2)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{profile.name ? `${profile.name}@google` : 'invitado'}</span>}
+          />
+
+          <SettingsDivider />
+
+          <SettingsRow
+            icon="🎨"
+            label="Tema"
+            value={
+              <select
+                value={tweaks?.theme || 'lounge'}
+                onChange={e => onChangeTweak && onChangeTweak('theme', e.target.value)}
+                style={{
+                  background: 'var(--bg-2)', border: '1px solid var(--line)',
+                  borderRadius: 8, padding: '6px 10px', fontSize: 13,
+                  color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
+                }}
+              >
+                <option value="lounge">Lounge · Original</option>
+                <option value="daybar">Daybar</option>
+                <option value="midnight">Midnight</option>
+                <option value="tiki">Tiki</option>
+                <option value="punk">Punk</option>
+                <option value="mezcal">Mezcal</option>
+              </select>
+            }
+          />
+          <SettingsRow
+            icon="▶️"
+            label="Acceso rápido (play)"
+            value={
+              <select
+                value={tweaks?.playShortcut || 'daily'}
+                onChange={e => onChangeTweak && onChangeTweak('playShortcut', e.target.value)}
+                style={{
+                  background: 'var(--bg-2)', border: '1px solid var(--line)',
+                  borderRadius: 8, padding: '6px 10px', fontSize: 13,
+                  color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
+                  maxWidth: 180,
+                }}
+              >
+                {(playShortcuts || []).map(s => (
+                  <option key={s.id} value={s.id}>{s.icon} {s.label}</option>
+                ))}
+              </select>
+            }
+          />
+          <SettingsRow
+            icon="🌐"
+            label="Idioma"
+            value={
+              <select value={lang} onChange={e => setLang(e.target.value)} style={{
+                background: 'var(--bg-2)', border: '1px solid var(--line)',
+                borderRadius: 8, padding: '6px 10px', fontSize: 13,
+                color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
+              }}>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+              </select>
+            }
+          />
+          <SettingsRow
+            icon="🥃"
+            label="Unidades"
+            value={
+              <div style={{ display: 'flex', gap: 4, background: 'var(--bg-2)', padding: 3, borderRadius: 8 }}>
+                {['ml', 'oz'].map(u => (
+                  <button key={u} onClick={() => setUnits(u)} style={{
+                    padding: '5px 12px', borderRadius: 6,
+                    background: units === u ? 'var(--amber)' : 'transparent',
+                    color: units === u ? 'var(--bg-0)' : 'var(--ink-2)',
+                    fontFamily: 'var(--f-mono)', fontSize: 12, fontWeight: 600,
+                  }}>{u}</button>
+                ))}
+              </div>
+            }
+          />
+
+          <SettingsDivider />
+
+          <SettingsRow
+            icon="🔔"
+            label="Recordatorio diario"
+            value={<Toggle on={notif} onChange={setNotif} />}
+          />
+          <SettingsRow
+            icon="🎬"
+            label="Reducir animaciones"
+            value={<Toggle on={reduce} onChange={setReduce} />}
+          />
+          <SettingsRow
+            icon="🔤"
+            label="Tamaño de texto"
+            value={
+              <div style={{ display: 'flex', gap: 4, background: 'var(--bg-2)', padding: 3, borderRadius: 8 }}>
+                {[['sm','A'],['default','A'],['lg','A']].map(([v, a], i) => (
+                  <button key={v} onClick={() => setTextScale(v)} style={{
+                    padding: '5px 10px', borderRadius: 6,
+                    background: textScale === v ? 'var(--amber)' : 'transparent',
+                    color: textScale === v ? 'var(--bg-0)' : 'var(--ink-2)',
+                    fontSize: i === 0 ? 11 : i === 1 ? 13 : 16, fontWeight: 600,
+                  }}>{a}</button>
+                ))}
+              </div>
+            }
+          />
+
+          <SettingsDivider />
+
+          <SettingsRow
+            icon="💾"
+            label="Exportar datos"
+            value={<button onClick={() => {
+              const data = JSON.stringify({ profile, tweaks }, null, 2);
+              const blob = new Blob([data], { type: 'application/json' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url; a.download = 'stirio-datos.json'; a.click();
+            }} style={{ color: 'var(--cyan)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>descargar ↓</button>}
+          />
+          <SettingsRow
+            icon="🗑️"
+            label="Borrar progreso"
+            value={<button onClick={() => {
+              if (confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) {
+                onResetData && onResetData();
+              }
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>borrar →</button>}
+          />
+          <SettingsRow
+            icon="🚪"
+            label="Cerrar sesión"
+            isLast
+            value={<button onClick={() => {
+              if (confirm('¿Cerrar sesión? Volverás al onboarding.')) {
+                onLogout && onLogout();
+              }
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>logout →</button>}
+          />
+        </div>
+
+        <div style={{
+          marginTop: 14, textAlign: 'center',
+          fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-4)',
+          letterSpacing: '0.1em', textTransform: 'uppercase',
+        }}>
+          Stirio v0.9.2 · Hecho con ❤️ en Madrid
+        </div>
+      </section>
+    </div>
+  );
+};
+
+const SettingsRow = ({ icon, label, value, isLast }) => (
+  <div style={{
+    display: 'flex', alignItems: 'center', gap: 14,
+    padding: '14px 18px',
+    borderBottom: isLast ? 'none' : '1px solid var(--line-soft)',
+    minHeight: 56,
+  }}>
+    <div style={{ fontSize: 20, width: 28, textAlign: 'center' }}>{icon}</div>
+    <div style={{ flex: 1, fontSize: 14, color: 'var(--ink-1)' }}>{label}</div>
+    <div>{value}</div>
+  </div>
+);
+
+const SettingsDivider = () => (
+  <div style={{ height: 8, background: 'var(--bg-0)' }} />
+);
+
+const Toggle = ({ on, onChange }) => (
+  <button onClick={() => onChange(!on)} style={{
+    width: 44, height: 26, borderRadius: 999,
+    background: on ? 'var(--amber)' : 'var(--bg-3)',
+    border: '1px solid ' + (on ? 'transparent' : 'var(--line)'),
+    position: 'relative', transition: 'background .2s',
+    boxShadow: on ? '0 0 12px var(--amber-glow)' : 'none',
+  }}>
+    <div style={{
+      position: 'absolute', top: 2, left: on ? 20 : 2,
+      width: 20, height: 20, borderRadius: '50%',
+      background: '#fff',
+      boxShadow: '0 2px 4px rgba(0,0,0,0.4)',
+      transition: 'left .2s cubic-bezier(.2,1.4,.3,1)',
+    }} />
+  </button>
+);
+
+const StatTile = ({ label, value, color }) => (
+  <div className="card" style={{ padding: 14 }}>
+    <div style={{
+      fontFamily: 'var(--f-mono)', fontSize: 22, fontWeight: 600, color,
+      letterSpacing: '-0.02em',
+    }}>
+      {value}
+    </div>
+    <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 2 }}>{label}</div>
+  </div>
+);
+
+const ActivityHeatmap = () => {
+  // deterministic-ish pattern
+  const cells = [];
+  for (let i = 0; i < 7 * 7; i++) {
+    const r = (Math.sin(i * 12.9) + 1) / 2;
+    const intensity = r > 0.5 ? Math.min(1, (r - 0.2) * 1.4) : 0;
+    cells.push(intensity);
+  }
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 5, maxWidth: 380 }}>
+      {cells.map((v, i) => (
+        <div key={i} style={{
+          aspectRatio: 1,
+          borderRadius: 4,
+          background: v === 0 ? 'var(--bg-3)' : `oklch(0.82 0.17 75 / ${0.2 + v * 0.8})`,
+          boxShadow: v > 0.6 ? '0 0 6px var(--amber-glow)' : 'none',
+        }} />
+      ))}
+    </div>
+  );
+};
+
+const ModeSheet = ({ mode, onClose, onStart }) => {
+  const modes = {
+    daily: { icon: '📅', title: 'Reto Diario', subtitle: '10 preguntas nuevas cada día', body: 'Una ronda curada por nuestro barman-jefe. Se renueva a medianoche.', cta: 'Empezar reto' },
+    duel: { icon: '⚔️', title: 'Duelo', subtitle: 'Reta a amigos, rivales o a un bot', body: 'Crea una sala con código, únete a una existente o busca rival aleatorio.', cta: 'Crear sala' },
+    academy: { icon: '🎓', title: 'Cocktail Academy', subtitle: 'Familias de cócteles, paso a paso', body: 'Sours, Highballs, Martinis, Old‑School, Tiki y Modernos — con teoría, práctica y quiz.', cta: 'Abrir academia' },
+    speed: { icon: '⚡', title: 'Modo Velocidad', subtitle: '60 segundos · cuantas más aciertes, más XP', body: 'Preguntas encadenadas hasta que el reloj llegue a cero.', cta: 'Empezar' },
+    builder: { icon: '🍹', title: 'Constructor', subtitle: 'Adivina el cóctel por sus ingredientes', body: 'Te damos la receta sin nombre. Tú nos dices qué es.', cta: 'Jugar' },
+    blind: { icon: '👃', title: 'Cata a ciegas', subtitle: '35+ destilados', body: 'Pistas de aroma y sabor. Identifica el destilado sin ver la etiqueta.', cta: 'Jugar' },
+    freequiz: { icon: '🎲', title: 'Quiz Libre', subtitle: '24 rondas temáticas', body: 'Elige la categoría, el largo y la dificultad. Sin presión.', cta: 'Jugar' },
+    arcade: { icon: '🕹️', title: 'Arcade Coctelero', subtitle: 'Aprende recetas jugando', body: 'Mini‑juegos con físicas: shake‑o‑meter, garnish catcher, pour target.', cta: 'Jugar' },
+    memory: { icon: '🧠', title: 'Memoria de Garnish', subtitle: 'Empareja guarniciones', body: 'Memory clásico con ingredientes, vasos y herramientas.', cta: 'Jugar' },
+    rhythm: { icon: '🥁', title: 'Ritmo de Shaker', subtitle: 'Agita al compás', body: 'Sigue el ritmo. Cuanto mejor tu tempo, más perfecta la emulsión.', cta: 'Jugar' },
+    iba: { icon: '📖', title: 'Fichas IBA', subtitle: '90 recetas oficiales', body: 'Las recetas reconocidas por la International Bartenders Association, con historia y técnica.', cta: 'Abrir' },
+    wiki: { icon: '🌐', title: 'Enciclopedia', subtitle: 'Todo el conocimiento', body: 'Bebidas, técnicas, cristalería, herramientas y personajes.', cta: 'Abrir' },
+    glossary: { icon: '📝', title: 'Glosario', subtitle: '70+ términos', body: 'Del muddle al dry shake. Todos los términos del oficio.', cta: 'Abrir' },
+    map: { icon: '🗺️', title: 'Mapa de Destilados', subtitle: '12 regiones', body: 'Whisky escocés, mezcal oaxaqueño, pisco peruano… mapa interactivo.', cta: 'Explorar' },
+    library: { icon: '📚', title: 'Biblioteca 3D', subtitle: 'Modelos interactivos', body: 'Vasos, herramientas y botellas en 3D. Gíralos, inspecciónalos.', cta: 'Abrir' },
+  };
+  const m = modes[mode];
+  if (!m) return null;
+  return (
+    <div onClick={onClose} style={{
+      position: 'fixed', inset: 0, zIndex: 55,
+      background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(8px)',
+      display: 'grid', placeItems: 'center', padding: 20,
+      animation: 'fadeIn .25s ease',
+    }}>
+      <div onClick={e => e.stopPropagation()} className="card" style={{
+        maxWidth: 460, width: '100%',
+        padding: 28,
+        background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2) 60%)',
+        borderColor: 'oklch(0.82 0.17 75 / 0.3)',
+        animation: 'slideUp .35s cubic-bezier(.2,1.1,.3,1)',
+        position: 'relative',
+      }}>
+        <button onClick={onClose} style={{ position: 'absolute', top: 14, right: 14, padding: 6, color: 'var(--ink-3)' }}>
+          <Icon name="close" size={18} />
+        </button>
+        <div style={{ fontSize: 64, marginBottom: 10, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>{m.icon}</div>
+        <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 4 }}>{m.subtitle}</div>
+        <h2 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: '0 0 10px', lineHeight: 1.05 }}>{m.title}</h2>
+        <p style={{ color: 'var(--ink-2)', lineHeight: 1.5, marginBottom: 20 }}>{m.body}</p>
+        <div style={{ display: 'flex', gap: 10 }}>
+          <button className="btn" onClick={onClose}>Cerrar</button>
+          <button className="btn primary" onClick={onStart} style={{ flex: 1 }}>
+            <Icon name="play" size={14} /> {m.cta}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+Object.assign(window, { Onboarding, Home, Profile, ModeSheet });
