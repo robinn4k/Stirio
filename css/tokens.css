@@ -1,0 +1,436 @@
+/* Stirio — Neon Lounge tokens */
+:root {
+  /* Surfaces */
+  --bg-0: oklch(0.14 0.012 60);
+  --bg-1: oklch(0.18 0.014 60);
+  --bg-2: oklch(0.22 0.016 60);
+  --bg-3: oklch(0.27 0.018 60);
+  --line: oklch(0.32 0.02 60 / 0.6);
+  --line-soft: oklch(0.32 0.02 60 / 0.25);
+
+  /* Ink */
+  --ink-0: oklch(0.98 0.01 80);
+  --ink-1: oklch(0.88 0.014 70);
+  --ink-2: oklch(0.72 0.016 65);
+  --ink-3: oklch(0.55 0.018 60);
+  --ink-4: oklch(0.42 0.02 60);
+
+  /* Signature */
+  --amber: oklch(0.82 0.17 75);
+  --amber-soft: oklch(0.82 0.17 75 / 0.18);
+  --amber-glow: oklch(0.82 0.17 75 / 0.35);
+  --cyan: oklch(0.78 0.13 200);
+  --cyan-soft: oklch(0.78 0.13 200 / 0.18);
+  --berry: oklch(0.65 0.18 10);
+  --lime: oklch(0.85 0.17 130);
+  --violet: oklch(0.7 0.15 300);
+
+  /* Semantic */
+  --ok: oklch(0.8 0.16 145);
+  --bad: oklch(0.68 0.19 25);
+  --warn: oklch(0.82 0.17 75);
+
+  /* Type — defaults; overridden per [data-type] set */
+  --f-serif: 'Fraunces', 'Instrument Serif', serif;
+  --f-ui: 'Geist', 'Inter Tight', -apple-system, system-ui, sans-serif;
+  --f-mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+
+  /* Radii */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3), 0 0 0 1px var(--line-soft);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.4), 0 0 0 1px var(--line-soft);
+  --shadow-glow: 0 0 40px var(--amber-glow), 0 0 0 1px oklch(0.82 0.17 75 / 0.4);
+}
+
+/* Themes (toggled via [data-theme]) */
+[data-theme="lounge"] { /* default neon-lounge — amber over warm black */ }
+
+[data-theme="daybar"] {
+  /* Cream paper bar, terracotta + ink */
+  --bg-0: oklch(0.96 0.015 80);
+  --bg-1: oklch(0.98 0.012 80);
+  --bg-2: oklch(0.93 0.018 70);
+  --bg-3: oklch(0.88 0.022 65);
+  --line: oklch(0.55 0.03 50 / 0.35);
+  --line-soft: oklch(0.55 0.03 50 / 0.18);
+  --ink-0: oklch(0.22 0.04 40);
+  --ink-1: oklch(0.32 0.04 40);
+  --ink-2: oklch(0.46 0.04 40);
+  --ink-3: oklch(0.58 0.04 40);
+  --ink-4: oklch(0.7 0.03 40);
+  --amber: oklch(0.56 0.18 45);
+  --amber-soft: oklch(0.56 0.18 45 / 0.12);
+  --amber-glow: oklch(0.56 0.18 45 / 0.22);
+  --cyan: oklch(0.52 0.14 200);
+  --cyan-soft: oklch(0.52 0.14 200 / 0.12);
+  --berry: oklch(0.48 0.2 20);
+  --violet: oklch(0.5 0.18 300);
+}
+
+[data-theme="midnight"] {
+  /* Deep indigo club with magenta + cyan neon */
+  --bg-0: oklch(0.11 0.035 275);
+  --bg-1: oklch(0.15 0.04 275);
+  --bg-2: oklch(0.19 0.045 275);
+  --bg-3: oklch(0.24 0.05 275);
+  --line: oklch(0.4 0.06 280 / 0.6);
+  --line-soft: oklch(0.4 0.06 280 / 0.25);
+  --amber: oklch(0.78 0.2 330);
+  --amber-soft: oklch(0.78 0.2 330 / 0.18);
+  --amber-glow: oklch(0.78 0.2 330 / 0.45);
+  --cyan: oklch(0.82 0.17 200);
+  --cyan-soft: oklch(0.82 0.17 200 / 0.18);
+  --berry: oklch(0.7 0.22 10);
+  --violet: oklch(0.74 0.2 290);
+  --lime: oklch(0.88 0.2 150);
+}
+
+[data-theme="tiki"] {
+  /* Emerald + brass, warm jungle */
+  --bg-0: oklch(0.15 0.03 150);
+  --bg-1: oklch(0.19 0.035 150);
+  --bg-2: oklch(0.23 0.04 150);
+  --bg-3: oklch(0.28 0.045 150);
+  --line: oklch(0.4 0.06 140 / 0.5);
+  --line-soft: oklch(0.4 0.06 140 / 0.22);
+  --amber: oklch(0.82 0.16 90);
+  --amber-soft: oklch(0.82 0.16 90 / 0.18);
+  --amber-glow: oklch(0.82 0.16 90 / 0.35);
+  --cyan: oklch(0.76 0.15 170);
+  --cyan-soft: oklch(0.76 0.15 170 / 0.18);
+  --berry: oklch(0.7 0.2 30);
+  --lime: oklch(0.85 0.18 140);
+}
+
+[data-theme="punk"] {
+  /* High contrast black/white with red accent */
+  --bg-0: oklch(0.08 0 0);
+  --bg-1: oklch(0.12 0 0);
+  --bg-2: oklch(0.17 0 0);
+  --bg-3: oklch(0.23 0 0);
+  --line: oklch(0.4 0 0 / 0.7);
+  --line-soft: oklch(0.4 0 0 / 0.3);
+  --ink-0: oklch(0.98 0 0);
+  --ink-1: oklch(0.9 0 0);
+  --ink-2: oklch(0.72 0 0);
+  --ink-3: oklch(0.55 0 0);
+  --amber: oklch(0.62 0.24 25);
+  --amber-soft: oklch(0.62 0.24 25 / 0.15);
+  --amber-glow: oklch(0.62 0.24 25 / 0.4);
+  --cyan: oklch(0.95 0 0);
+  --cyan-soft: oklch(0.95 0 0 / 0.1);
+  --berry: oklch(0.7 0.22 15);
+  --violet: oklch(0.95 0 0);
+}
+
+[data-theme="mezcal"] {
+  /* Smoky sepia + dusty rose */
+  --bg-0: oklch(0.17 0.015 50);
+  --bg-1: oklch(0.21 0.018 50);
+  --bg-2: oklch(0.26 0.02 50);
+  --bg-3: oklch(0.31 0.023 50);
+  --amber: oklch(0.76 0.15 40);
+  --amber-soft: oklch(0.76 0.15 40 / 0.18);
+  --amber-glow: oklch(0.76 0.15 40 / 0.3);
+  --cyan: oklch(0.72 0.1 25);
+  --berry: oklch(0.68 0.18 15);
+  --violet: oklch(0.68 0.12 35);
+}
+
+/* Typography sets — switchable via [data-type] */
+[data-type="editorial"] {
+  --f-serif: 'Fraunces', 'Instrument Serif', serif;
+  --f-ui: 'Geist', -apple-system, system-ui, sans-serif;
+  --f-mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+}
+[data-type="grotesk"] {
+  --f-serif: 'Space Grotesk', sans-serif;
+  --f-ui: 'Space Grotesk', -apple-system, system-ui, sans-serif;
+  --f-mono: 'Space Mono', ui-monospace, Menlo, monospace;
+}
+[data-type="modern"] {
+  --f-serif: 'Söhne', 'General Sans', 'Geist', sans-serif;
+  --f-ui: 'General Sans', 'Geist', -apple-system, system-ui, sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+[data-type="classic"] {
+  --f-serif: 'Playfair Display', 'Cormorant Garamond', serif;
+  --f-ui: 'Manrope', -apple-system, system-ui, sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+[data-type="retro"] {
+  --f-serif: 'VT323', 'Space Mono', monospace;
+  --f-ui: 'VT323', 'Space Mono', monospace;
+  --f-mono: 'VT323', 'Space Mono', monospace;
+}
+[data-type="brutalist"] {
+  --f-serif: 'Syne', 'Space Grotesk', sans-serif;
+  --f-ui: 'Space Grotesk', sans-serif;
+  --f-mono: 'Space Mono', ui-monospace, Menlo, monospace;
+}
+
+[data-theme="midnight-old-del"] {
+  --bg-0: oklch(0.12 0.03 260);
+  --bg-1: oklch(0.16 0.035 260);
+  --bg-2: oklch(0.2 0.04 260);
+  --bg-3: oklch(0.25 0.045 260);
+  --amber: oklch(0.78 0.17 320);
+  --amber-soft: oklch(0.78 0.17 320 / 0.18);
+  --amber-glow: oklch(0.78 0.17 320 / 0.35);
+  --cyan: oklch(0.78 0.15 200);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg-0); color: var(--ink-0); font-family: var(--f-ui); font-feature-settings: "ss01", "cv11"; }
+body {
+  min-height: 100dvh;
+  background:
+    radial-gradient(ellipse 800px 600px at 80% -10%, var(--amber-soft), transparent 60%),
+    radial-gradient(ellipse 600px 500px at -10% 100%, var(--cyan-soft), transparent 60%),
+    var(--bg-0);
+  background-attachment: fixed;
+}
+
+/* grain */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+input, textarea { font: inherit; color: inherit; }
+
+::selection { background: var(--amber); color: var(--bg-0); }
+
+.mono { font-family: var(--f-mono); letter-spacing: -0.01em; }
+.serif { font-family: var(--f-serif); }
+.caps { text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* Reusable bits */
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 10px; border-radius: var(--r-pill);
+  font-family: var(--f-mono); font-size: 11px;
+  background: var(--bg-2); color: var(--ink-1);
+  border: 1px solid var(--line-soft);
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.chip.amber { background: var(--amber-soft); color: var(--amber); border-color: oklch(0.82 0.17 75 / 0.3); }
+.chip.cyan { background: var(--cyan-soft); color: var(--cyan); border-color: oklch(0.78 0.13 200 / 0.3); }
+
+.card {
+  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 18px; border-radius: var(--r-pill);
+  background: var(--bg-2); color: var(--ink-0);
+  border: 1px solid var(--line-soft);
+  font-weight: 500; font-size: 14px;
+  transition: transform .12s ease, background .2s, border-color .2s;
+}
+.btn:hover { background: var(--bg-3); border-color: var(--line); }
+.btn:active { transform: translateY(1px); }
+.btn.primary {
+  background: var(--amber); color: oklch(0.2 0.04 60);
+  border-color: transparent;
+  box-shadow: 0 8px 24px var(--amber-glow), inset 0 1px 0 rgba(255,255,255,0.35);
+}
+.btn.primary:hover { background: oklch(0.86 0.17 75); }
+.btn.ghost { background: transparent; }
+
+/* animations */
+@keyframes pop { 0% { transform: scale(0.6); opacity: 0 } 60% { transform: scale(1.12); opacity: 1 } 100% { transform: scale(1); opacity: 1 } }
+@keyframes rise { from { transform: translateY(8px); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
+@keyframes floatXP { 0% { transform: translateY(0) scale(0.9); opacity: 0 } 20% { opacity: 1 } 100% { transform: translateY(-80px) scale(1.1); opacity: 0 } }
+@keyframes shakeX { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)} 40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)} }
+@keyframes pulseGlow { 0%,100% { box-shadow: 0 0 0 0 var(--amber-glow) } 50% { box-shadow: 0 0 0 16px transparent } }
+@keyframes slideUp { from { transform: translateY(100%); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes sweep { 0% { background-position: -200% 0 } 100% { background-position: 200% 0 } }
+@keyframes flicker { 0%,19%,21%,23%,25%,54%,56%,100% { opacity: 1 } 20%,24%,55% { opacity: 0.4 } }
+
+.pop-in { animation: pop .35s cubic-bezier(.2,1.4,.3,1) both; }
+.rise-in { animation: rise .4s ease both; }
+.fade-in { animation: fadeIn .4s ease both; }
+
+/* ─────────────────────────────────────────────────────────── */
+/* MOBILE layout overrides — active when [data-device="mobile"] */
+/* This tightens padding, stacks hero cards, shrinks type and   */
+/* forces 2-col grids so nothing overflows at 390px.            */
+/* ─────────────────────────────────────────────────────────── */
+[data-device="mobile"] {
+  /* Slightly smaller baseline type so dense Home fits */
+  --f-scale: 0.92;
+}
+
+/* Inside-phone scrollable area needs room for status bar + home indicator + bottom nav */
+[data-device="mobile"] .mobile-safe {
+  padding-top: 52px !important;    /* clear dynamic island / status bar */
+  padding-bottom: 130px !important; /* clear bottom nav + home indicator */
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  max-width: none !important;
+}
+
+/* Onboarding fills the frame */
+[data-device="mobile"] .mobile-onboarding {
+  padding: 60px 20px 60px !important;
+}
+
+/* Hero: stack featured + side cards vertically */
+[data-device="mobile"] .mobile-hero-grid {
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+}
+
+/* Featured card: flexible — let [data-featured] rules decide columns */
+[data-device="mobile"] .mobile-featured {
+  min-height: 0 !important;
+}
+[data-device="mobile"] .mobile-featured-art {
+  min-height: 160px !important;
+}
+[data-device="mobile"] .mobile-featured-copy {
+  padding: 18px !important;
+}
+[data-device="mobile"] .mobile-featured-copy h2 {
+  font-size: 26px !important;
+  line-height: 1.1 !important;
+}
+
+/* Grids of modes / arcade / reference → 2 columns */
+[data-device="mobile"] .mobile-grid-2 {
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px !important;
+}
+
+/* Lesson cards: single column stack */
+[data-device="mobile"] .mobile-grid-lessons {
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+}
+
+/* Section headers: smaller */
+[data-device="mobile"] .mobile-safe section {
+  margin-bottom: 22px !important;
+}
+[data-device="mobile"] .mobile-safe h1,
+[data-device="mobile"] .mobile-safe h2 {
+  font-size: 24px !important;
+}
+
+/* Bottom nav becomes sticky at bottom of the frame */
+[data-device="mobile"] .bottom-nav-wrap {
+  bottom: 44px !important; /* above home indicator */
+}
+
+/* Academy hero card: compact */
+[data-device="mobile"] .mobile-academy-hero {
+  padding: 14px !important;
+  gap: 12px !important;
+}
+[data-device="mobile"] .mobile-academy-hero > div:first-child {
+  font-size: 40px !important;
+}
+[data-device="mobile"] .mobile-academy-hero h3 {
+  font-size: 18px !important;
+}
+
+/* Mode cards min-height */
+[data-device="mobile"] .mobile-mode-card {
+  min-height: 92px !important;
+  padding: 12px !important;
+}
+[data-device="mobile"] .mobile-mode-card h4 {
+  font-size: 14px !important;
+}
+[data-device="mobile"] .mobile-mode-card .mode-icon {
+  font-size: 26px !important;
+}
+
+/* Leaderboard row shrink */
+[data-device="mobile"] .mobile-leaderboard-row {
+  padding: 10px 12px !important;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* DENSITY — compact shrinks padding + gaps, comfortable       */
+/* expands them.                                               */
+/* ─────────────────────────────────────────────────────────── */
+[data-density="compact"] .card { padding: 14px; }
+[data-density="compact"] .mobile-safe section { margin-bottom: 20px !important; }
+[data-density="compact"] .btn { padding: 10px 14px; font-size: 13px; }
+[data-density="compact"] .mobile-mode-card { padding: 12px !important; }
+[data-density="compact"] .mobile-featured-copy { padding: 16px !important; }
+[data-density="compact"] .mobile-featured-copy h2 { font-size: 24px !important; }
+[data-density="compact"] .mobile-academy-hero { padding: 12px !important; gap: 10px !important; }
+
+[data-density="comfortable"] .card { padding: 22px; }
+[data-density="comfortable"] .mobile-safe section { margin-bottom: 32px !important; }
+[data-density="comfortable"] .btn { padding: 14px 20px; font-size: 15px; }
+[data-density="comfortable"] .mobile-mode-card { padding: 18px !important; min-height: 108px !important; }
+[data-density="comfortable"] .mobile-featured-copy { padding: 22px !important; }
+[data-density="comfortable"] .mobile-featured-copy h2 { font-size: 30px !important; }
+[data-density="comfortable"] .mobile-academy-hero { padding: 20px !important; gap: 16px !important; }
+[data-density="comfortable"] .mobile-featured-art { min-height: 200px !important; }
+
+/* ─────────────────────────────────────────────────────────── */
+/* FEATURED LAYOUT — split (art beside copy) vs stacked        */
+/* Combined with device to beat mobile defaults.               */
+/* ─────────────────────────────────────────────────────────── */
+[data-featured="split"] .mobile-featured {
+  grid-template-columns: 1fr 1fr !important;
+}
+[data-featured="split"] .mobile-featured-art {
+  min-height: 100% !important;
+  order: 0 !important;
+}
+
+[data-featured="stacked"] .mobile-featured {
+  grid-template-columns: 1fr !important;
+}
+[data-featured="stacked"] .mobile-featured-art {
+  order: -1 !important;
+  min-height: 180px !important;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Featured image → text fade, direction depends on layout     */
+/* ─────────────────────────────────────────────────────────── */
+/* Split: image on right, copy on left → fade to left */
+[data-featured="split"] .mobile-featured-fade {
+  background: linear-gradient(
+    90deg,
+    var(--bg-1) 0%,
+    oklch(from var(--bg-1) l c h / 0.65) 18%,
+    transparent 55%,
+    oklch(0.08 0.02 40 / 0.35) 100%
+  );
+}
+/* Stacked: image on top, copy below → fade to bottom */
+[data-featured="stacked"] .mobile-featured-fade {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 35%,
+    oklch(from var(--bg-1) l c h / 0.55) 75%,
+    var(--bg-1) 100%
+  );
+}

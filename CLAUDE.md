@@ -11,35 +11,39 @@ Stirio is a cocktail learning Progressive Web App. Users master mixology through
 
 ## Tech Stack
 
-- **Runtime**: Vanilla JavaScript (ES6 modules), no frameworks, no build tools
-- **Styling**: Single CSS file with CSS custom properties for theming (4 themes)
+- **Runtime**: React 18 via UMD CDN + Babel Standalone (in-browser JSX compilation, no build step). JSX files use `Object.assign(window, {...})` to expose components as globals.
+- **Styling**: `css/tokens.css` (OKLCH design tokens, 6 themes) + `css/style.css` (base styles). Themes applied via `[data-theme]`, `[data-density]`, `[data-featured]`, `[data-device]` HTML attributes.
 - **Backend**: Firebase (Auth, Firestore, Realtime Database, Storage)
 - **PWA**: Service Worker (`sw.js`) caches all static assets for offline use
-- **3D**: Three.js for the wiki encyclopedia's 3D scenes
+- **3D**: React Three Fiber (`wiki.html` standalone page via iframe) using importmap CDN
 - **Testing**: Vitest (`npm test`)
 
 ## Architecture
 
 ```
-index.html          Single SPA root — all views are div.view toggled via classList
-js/app.js           View router, event bindings, rendering logic (~2300 lines)
+index.html          React SPA root — single <div id="root">, React CDN + Babel scripts
+css/tokens.css      OKLCH design tokens: 6 themes, density, featured, device overrides
+css/style.css       Base styles: reset, .card, .btn, .chip, animations
+js/repo-data.js     IIFE: 180 IBA cocktails + 24 trivia rounds → window.StirioRepo
+js/data.js          Bridge: builds LESSONS, ACADEMY_FAMILIES etc. from StirioRepo globals
+js/ui.jsx           UI primitives: Icon, XPPop, StreakBadge, Placeholder, Prompt, confettiBurst, playChord
+js/lesson.jsx       LessonPlayer: 7 step types (intro, choice, multi, ratio, earTrain, cutWords, colorMatch, timing)
+js/screens.jsx      Onboarding, Home (FeaturedCard, mode grid), Profile (settings), ModeSheet
+js/reference.jsx    AcademyScreen, FichasScreen (150+ IBA), FreeQuizScreen, FichaDetail
+js/app.jsx          App root: router, BottomNav FAB, TweaksPanel, 6 themes, localStorage state
+wiki.html           Standalone R3F wiki page (iframe from app.jsx WikiScreen)
 js/lang.js          i18n core: t(), getLang(), setLang(), all translation keys
 js/quiz.js          Quiz round engine (state, timer, scoring)
 js/learn.js         Learning mode (mastery, XP, streaks, spaced repetition)
 js/daily.js         Daily challenge (seeded RNG for consistent questions per day)
 js/speed.js         Speed mode (60-second timed challenge)
 js/blind.js         Blind tasting mode (clue-based spirit identification)
-js/constructor.js   Constructor mode (ingredient-to-cocktail matching)
-js/fichas.js        IBA cocktail flashcard data (90 cocktails)
+js/fichas.js        IBA cocktail flashcard data (legacy, superseded by repo-data.js)
 js/rivals.js        Real-time 1v1 multiplayer via Firebase RTDB
-js/bot.js           AI opponent logic for solo duels
 js/auth.js          Firebase Auth (Google + guest mode)
 js/leaderboard.js   Score persistence (localStorage + Firestore)
 js/achievements.js  Achievement tracking
-js/questions.js     Language-aware question loader
 js/i18n/            Per-language question files + fichas translation lookup
-js/wiki*.js         3D encyclopedia modules
-css/style.css       All styles, CSS variables for themes
 sw.js               Service Worker (bump STATIC_CACHE_VERSION on asset changes)
 ```
 

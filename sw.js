@@ -69,13 +69,23 @@ const CACHE_PATHS = [
   'i18n/en.json',
   'i18n/fr.json',
   'i18n/pt.json',
-  'i18n/de.json'
+  'i18n/de.json',
+  // Design system v2 (React + Neon Lounge)
+  'css/tokens.css',
+  'js/repo-data.js',
+  'js/data.js',
+  'js/ui.jsx',
+  'js/lesson.jsx',
+  'js/screens.jsx',
+  'js/reference.jsx',
+  'js/app.jsx',
+  'wiki.html'
 ];
 
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v6.2`;
+const STATIC_CACHE_VERSION = `Stirio-v6.3`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
