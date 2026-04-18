@@ -2759,6 +2759,59 @@ img { display: block; max-width: 100%; }
   color: #bbb;
   line-height: 1.4;
 }
+.spirit-map-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 400px;
+  background: #1a1a2e;
+}
+.spirit-map-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.6rem;
+  background: rgba(10,10,20,0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.spirit-map-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.04);
+  color: #cfd0d8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, opacity 0.15s;
+  opacity: 0.45;
+}
+.spirit-map-filter-btn.active {
+  opacity: 1;
+  color: #fff;
+  border-color: var(--filter-color, rgba(255,255,255,0.4));
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 0 1px var(--filter-color, transparent) inset;
+}
+.spirit-map-filter-btn:hover {
+  opacity: 1;
+}
+.spirit-map-filter-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px currentColor;
+}
+.spirit-map-body {
+  flex: 1;
+  min-height: 360px;
+}
 
 /* ═══ SETTINGS VIEW ═══ */
 #view-settings .header-title {

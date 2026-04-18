@@ -250,7 +250,7 @@ function renderArticleContent(catId, artId, art, articleDef) {
 
       case 'spirit-map':
         html += `<div class="wiki-section">
-          <div class="wiki-spirit-map" id="wiki-spirit-map" style="height:450px;border-radius:12px;overflow:hidden;"></div>
+          <div class="wiki-spirit-map" id="wiki-spirit-map" style="height:560px;border-radius:12px;overflow:hidden;"></div>
         </div>`;
         break;
     }
