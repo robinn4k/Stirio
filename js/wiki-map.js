@@ -6,32 +6,42 @@ let mapInstance = null;
 // ─── Region data: spirit production areas around the world ──────────
 const SPIRIT_REGIONS = [
   // ── Whisky ──
-  { id: 'scotch', spirit: 'whisky', lat: 56.49, lng: -4.20, icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', origin: 'Scotland', place: 'Highlands / Speyside / Islay', dateCreated: '1494' },
-  { id: 'irish-whiskey', spirit: 'whisky', lat: 53.35, lng: -6.26, icon: '☘️', origin: 'Ireland', place: 'Dublin / Cork', dateCreated: 's. XV' },
-  { id: 'bourbon', spirit: 'whisky', lat: 38.25, lng: -85.76, icon: '🥃', origin: 'USA', place: 'Kentucky', dateCreated: 's. XVIII' },
+  { id: 'scotch', spirit: 'whisky', lat: 56.49, lng: -4.20, icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', origin: 'Scotland', place: 'Highlands / Speyside / Islay', dateCreated: '1494',
+    region: { polygon: [[58.65,-3.05],[58.50,-5.00],[57.70,-5.80],[57.30,-7.30],[56.30,-6.80],[55.40,-5.00],[54.90,-4.00],[55.20,-2.00],[56.20,-2.20],[57.50,-1.80],[58.50,-3.00]] } },
+  { id: 'irish-whiskey', spirit: 'whisky', lat: 53.35, lng: -6.26, icon: '☘️', origin: 'Ireland', place: 'Dublin / Cork', dateCreated: 's. XV',
+    region: { polygon: [[55.35,-7.30],[55.15,-5.85],[54.30,-5.40],[53.30,-6.05],[52.20,-6.30],[51.45,-8.60],[51.60,-10.15],[53.00,-10.05],[54.30,-9.90],[55.15,-8.30]] } },
+  { id: 'bourbon', spirit: 'whisky', lat: 38.25, lng: -85.76, icon: '🥃', origin: 'USA', place: 'Kentucky', dateCreated: 's. XVIII',
+    region: { polygon: [[39.15,-84.80],[39.10,-83.70],[38.70,-82.60],[38.20,-82.50],[37.40,-82.30],[36.80,-83.70],[36.60,-88.10],[36.95,-89.10],[37.60,-88.95],[38.15,-87.90],[38.60,-86.90],[38.85,-85.50],[39.00,-85.00]] } },
   { id: 'japanese-whisky', spirit: 'whisky', lat: 34.69, lng: 135.50, icon: '🇯🇵', origin: 'Japan', place: 'Yamazaki / Yoichi', dateCreated: '1923' },
   // ── Gin ──
   { id: 'london-gin', spirit: 'gin', lat: 51.51, lng: -0.13, icon: '🌿', origin: 'England', place: 'London', dateCreated: 's. XVII' },
   { id: 'genever', spirit: 'gin', lat: 52.37, lng: 4.90, icon: '🇳🇱', origin: 'Netherlands', place: 'Amsterdam / Schiedam', dateCreated: 's. XVII' },
   // ── Tequila & Mezcal ──
-  { id: 'tequila', spirit: 'tequila', lat: 20.88, lng: -103.84, icon: '🌵', origin: 'Mexico', place: 'Tequila, Jalisco', dateCreated: 's. XVI' },
-  { id: 'mezcal', spirit: 'mezcal', lat: 17.07, lng: -96.72, icon: '🔥', origin: 'Mexico', place: 'Oaxaca', dateCreated: 's. XVI' },
+  { id: 'tequila', spirit: 'tequila', lat: 20.88, lng: -103.84, icon: '🌵', origin: 'Mexico', place: 'Tequila, Jalisco', dateCreated: 's. XVI',
+    region: { polygon: [[22.00,-104.00],[21.90,-103.00],[21.30,-102.50],[20.60,-102.60],[20.00,-103.00],[19.90,-103.80],[20.20,-104.50],[21.00,-105.30],[21.50,-105.00]] } },
+  { id: 'mezcal', spirit: 'mezcal', lat: 17.07, lng: -96.72, icon: '🔥', origin: 'Mexico', place: 'Oaxaca', dateCreated: 's. XVI',
+    region: { polygon: [[17.90,-97.60],[17.90,-96.00],[17.40,-95.20],[16.70,-95.20],[15.80,-96.00],[15.70,-97.30],[16.40,-98.30],[17.20,-98.10]] } },
   // ── Ron / Rum ──
   { id: 'ron-cuba', spirit: 'rum', lat: 23.11, lng: -82.37, icon: '🇨🇺', origin: 'Cuba', place: 'Havana / Santiago', dateCreated: 's. XVII' },
   { id: 'ron-jamaica', spirit: 'rum', lat: 18.11, lng: -77.30, icon: '🏝️', origin: 'Jamaica', place: 'Kingston', dateCreated: '1650s' },
   { id: 'ron-puerto-rico', spirit: 'rum', lat: 18.47, lng: -66.11, icon: '🇵🇷', origin: 'Puerto Rico', place: 'San Juan', dateCreated: 's. XVII' },
   { id: 'ron-barbados', spirit: 'rum', lat: 13.19, lng: -59.54, icon: '🇧🇧', origin: 'Barbados', place: 'Bridgetown', dateCreated: '1640s' },
   { id: 'ron-guatemala', spirit: 'rum', lat: 14.63, lng: -90.51, icon: '🇬🇹', origin: 'Guatemala', place: 'Quetzaltenango', dateCreated: 's. XIX' },
-  { id: 'rhum-agricole', spirit: 'rum', lat: 14.64, lng: -61.02, icon: '🍬', origin: 'Martinique', place: 'Fort-de-France', dateCreated: 's. XVII' },
+  { id: 'rhum-agricole', spirit: 'rum', lat: 14.64, lng: -61.02, icon: '🍬', origin: 'Martinique', place: 'Fort-de-France', dateCreated: 's. XVII',
+    region: { polygon: [[14.88,-61.22],[14.80,-60.85],[14.60,-60.85],[14.40,-60.92],[14.40,-61.15],[14.60,-61.23]] } },
   // ── Vodka ──
   { id: 'vodka-poland', spirit: 'vodka', lat: 52.23, lng: 21.01, icon: '🇵🇱', origin: 'Poland', place: 'Warsaw / Poznan', dateCreated: 's. VIII-IX' },
   { id: 'vodka-russia', spirit: 'vodka', lat: 55.76, lng: 37.62, icon: '❄️', origin: 'Russia', place: 'Moscow', dateCreated: 's. VIII-IX' },
   { id: 'vodka-sweden', spirit: 'vodka', lat: 59.33, lng: 18.07, icon: '🇸🇪', origin: 'Sweden', place: 'Stockholm / Ahus', dateCreated: 's. XV' },
   // ── Brandy / Cognac ──
-  { id: 'cognac', spirit: 'brandy', lat: 45.69, lng: -0.33, icon: '🍇', origin: 'France', place: 'Cognac', dateCreated: 's. XVI' },
-  { id: 'armagnac', spirit: 'brandy', lat: 43.65, lng: 0.08, icon: '🏰', origin: 'France', place: 'Gascony', dateCreated: 's. XIV' },
-  { id: 'brandy-jerez', spirit: 'brandy', lat: 36.69, lng: -6.14, icon: '🇪🇸', origin: 'Spain', place: 'Jerez de la Frontera', dateCreated: 's. XVI' },
-  { id: 'calvados', spirit: 'brandy', lat: 48.88, lng: -0.17, icon: '🍎', origin: 'France', place: 'Normandy', dateCreated: 's. XVI' },
+  { id: 'cognac', spirit: 'brandy', lat: 45.69, lng: -0.33, icon: '🍇', origin: 'France', place: 'Cognac', dateCreated: 's. XVI',
+    region: { polygon: [[46.00,-0.90],[46.10,-0.40],[45.95,0.10],[45.75,0.40],[45.45,0.30],[45.30,-0.15],[45.25,-0.60],[45.45,-1.10],[45.75,-1.05],[45.95,-0.95]] } },
+  { id: 'armagnac', spirit: 'brandy', lat: 43.65, lng: 0.08, icon: '🏰', origin: 'France', place: 'Gascony', dateCreated: 's. XIV',
+    region: { polygon: [[44.00,-0.30],[44.05,0.30],[43.85,0.55],[43.55,0.70],[43.30,0.50],[43.20,0.10],[43.30,-0.30],[43.60,-0.40],[43.85,-0.35]] } },
+  { id: 'brandy-jerez', spirit: 'brandy', lat: 36.69, lng: -6.14, icon: '🇪🇸', origin: 'Spain', place: 'Jerez de la Frontera', dateCreated: 's. XVI',
+    region: { polygon: [[36.90,-6.40],[36.85,-5.85],[36.65,-5.65],[36.40,-5.80],[36.35,-6.20],[36.55,-6.40],[36.75,-6.45]] } },
+  { id: 'calvados', spirit: 'brandy', lat: 48.88, lng: -0.17, icon: '🍎', origin: 'France', place: 'Normandy', dateCreated: 's. XVI',
+    region: { polygon: [[49.40,-1.10],[49.45,-0.70],[49.25,-0.20],[49.05,0.25],[48.80,0.30],[48.55,0.05],[48.50,-0.50],[48.65,-0.95],[48.90,-1.30],[49.20,-1.30]] } },
   { id: 'grappa', spirit: 'brandy', lat: 46.07, lng: 11.12, icon: '🇮🇹', origin: 'Italy', place: 'Veneto / Trentino', dateCreated: 's. XIV' },
   // ── Pisco ──
   { id: 'pisco-peru', spirit: 'pisco', lat: -13.72, lng: -76.21, icon: '🇵🇪', origin: 'Peru', place: 'Ica / Pisco', dateCreated: 's. XVI' },
@@ -73,7 +83,8 @@ const SPIRIT_REGIONS = [
   { id: 'fino-jerez', spirit: 'fortified', lat: 36.69, lng: -6.14, icon: '🍷', origin: 'Spain', place: 'Jerez de la Frontera', dateCreated: 's. XVIII' },
   { id: 'manzanilla', spirit: 'fortified', lat: 36.78, lng: -6.35, icon: '🌊', origin: 'Spain', place: 'Sanlúcar de Barrameda', dateCreated: 's. XVIII' },
   // ── Oporto ──
-  { id: 'porto', spirit: 'fortified', lat: 41.14, lng: -8.61, icon: '🇵🇹', origin: 'Portugal', place: 'Douro Valley', dateCreated: 's. XVII' },
+  { id: 'porto', spirit: 'fortified', lat: 41.14, lng: -8.61, icon: '🇵🇹', origin: 'Portugal', place: 'Douro Valley', dateCreated: 's. XVII',
+    region: { polygon: [[41.35,-8.05],[41.30,-7.30],[41.15,-7.00],[41.00,-6.95],[40.95,-7.35],[41.05,-7.85],[41.20,-8.15]] } },
   // ── Madeira ──
   { id: 'madeira', spirit: 'fortified', lat: 32.63, lng: -16.90, icon: '🏝️', origin: 'Portugal', place: 'Madeira Island', dateCreated: 's. XV' },
 
@@ -160,23 +171,89 @@ const SPIRIT_REGIONS = [
   // ══ WIKI: FASE 1 — AMAROS FALTANTES ══
   { id: 'becherovka', spirit: 'amaro', lat: 50.23, lng: 12.87, icon: '🇨🇿', origin: 'Czech Republic', place: 'Karlovy Vary', dateCreated: '1807' },
 
+  // ══ LOTE A — WHISKIES DEL MUNDO ══
+  { id: 'welsh-whisky', spirit: 'whisky', lat: 51.81, lng: -3.65, icon: '🏴󠁧󠁢󠁷󠁬󠁳󠁿', origin: 'Wales', place: 'Penderyn, Brecon Beacons', dateCreated: '2000' },
+  { id: 'indian-whisky', spirit: 'whisky', lat: 12.97, lng: 77.59, icon: '🇮🇳', origin: 'India', place: 'Bangalore / Goa (Amrut / Paul John)', dateCreated: '1948' },
+  { id: 'taiwanese-whisky', spirit: 'whisky', lat: 24.74, lng: 121.75, icon: '🇹🇼', origin: 'Taiwan', place: 'Yilan (Kavalan)', dateCreated: '2005' },
+  { id: 'australian-whisky', spirit: 'whisky', lat: -42.88, lng: 147.33, icon: '🇦🇺', origin: 'Australia', place: 'Tasmania / Hobart', dateCreated: '1992' },
+  { id: 'rye-indiana', spirit: 'whisky', lat: 39.84, lng: -84.88, icon: '🌾', origin: 'USA', place: 'Lawrenceburg, Indiana (MGP)', dateCreated: '1847' },
+  { id: 'canadian-whisky', spirit: 'whisky', lat: 50.63, lng: -96.98, icon: '🍁', origin: 'Canada', place: 'Gimli, Manitoba', dateCreated: '1769' },
+  { id: 'finnish-whisky', spirit: 'whisky', lat: 60.98, lng: 25.66, icon: '🇫🇮', origin: 'Finland', place: 'Lahti (Teerenpeli)', dateCreated: '2002' },
+
+  // ══ LOTE A — GINES DEL MUNDO ══
+  { id: 'gin-menorca', spirit: 'gin', lat: 39.89, lng: 4.27, icon: '🇪🇸', origin: 'Spain', place: 'Mahón, Menorca (Xoriguer)', dateCreated: 's. XVIII' },
+  { id: 'plymouth-gin', spirit: 'gin', lat: 50.37, lng: -4.14, icon: '⚓', origin: 'England', place: 'Plymouth, Black Friars', dateCreated: '1793' },
+  { id: 'monkey-47', spirit: 'gin', lat: 48.45, lng: 8.41, icon: '🐒', origin: 'Germany', place: 'Loßburg, Black Forest', dateCreated: '2010' },
+  { id: 'portland-craft-gin', spirit: 'gin', lat: 45.52, lng: -122.68, icon: '🌲', origin: 'USA', place: 'Portland, Oregon', dateCreated: 's. XXI' },
+
+  // ══ LOTE A — RONES ADICIONALES ══
+  { id: 'ron-nicaragua', spirit: 'rum', lat: 12.64, lng: -87.13, icon: '🇳🇮', origin: 'Nicaragua', place: 'Chichigalpa (Flor de Caña)', dateCreated: '1890' },
+  { id: 'ron-bermudas', spirit: 'rum', lat: 32.30, lng: -64.78, icon: '🇧🇲', origin: 'Bermuda', place: 'Hamilton (Gosling\u2019s)', dateCreated: '1806' },
+  { id: 'rhum-haiti', spirit: 'rum', lat: 18.54, lng: -72.34, icon: '🇭🇹', origin: 'Haiti', place: 'Port-au-Prince (Barbancourt)', dateCreated: '1862' },
+  { id: 'ron-mexico', spirit: 'rum', lat: 19.19, lng: -96.13, icon: '🇲🇽', origin: 'Mexico', place: 'Veracruz', dateCreated: 's. XVIII' },
+  { id: 'ron-paraguay', spirit: 'rum', lat: -25.29, lng: -57.65, icon: '🇵🇾', origin: 'Paraguay', place: 'Asunción', dateCreated: 's. XX' },
+
+  // ══ LOTE A — VODKAS ADICIONALES ══
+  { id: 'vodka-finland', spirit: 'vodka', lat: 63.13, lng: 23.13, icon: '🇫🇮', origin: 'Finland', place: 'Koskenkorva', dateCreated: '1888' },
+  { id: 'vodka-usa', spirit: 'vodka', lat: 30.27, lng: -97.74, icon: '🤠', origin: 'USA', place: 'Austin, Texas (Tito\u2019s)', dateCreated: '1997' },
+
   // ══ FASE 2 — VINOS TINTOS ══
-  { id: 'bordeaux', spirit: 'wine', lat: 44.84, lng: -0.58, icon: '🍇', origin: 'France', place: 'Bordeaux / Médoc / Saint-Émilion', dateCreated: 's. I' },
-  { id: 'burgundy', spirit: 'wine', lat: 47.05, lng: 4.84, icon: '🍷', origin: 'France', place: 'Côte d\u2019Or', dateCreated: 's. VI' },
+  { id: 'bordeaux', spirit: 'wine', lat: 44.84, lng: -0.58, icon: '🍇', origin: 'France', place: 'Bordeaux / Médoc / Saint-Émilion', dateCreated: 's. I',
+    region: { polygon: [[45.50,-1.05],[45.45,-0.20],[45.25,0.25],[44.90,0.35],[44.50,0.10],[44.30,-0.50],[44.40,-1.10],[44.80,-1.25],[45.20,-1.20]] } },
+  { id: 'burgundy', spirit: 'wine', lat: 47.05, lng: 4.84, icon: '🍷', origin: 'France', place: 'Côte d\u2019Or', dateCreated: 's. VI',
+    region: { polygon: [[47.55,4.60],[47.50,5.00],[47.15,5.20],[46.85,5.05],[46.60,4.75],[46.50,4.50],[46.85,4.40],[47.20,4.40]] } },
   { id: 'rhone', spirit: 'wine', lat: 44.93, lng: 4.89, icon: '🍇', origin: 'France', place: 'Rhône Valley', dateCreated: 's. I' },
-  { id: 'rioja', spirit: 'wine', lat: 42.46, lng: -2.45, icon: '🇪🇸', origin: 'Spain', place: 'La Rioja / Haro', dateCreated: 's. XI' },
+  { id: 'rioja', spirit: 'wine', lat: 42.46, lng: -2.45, icon: '🇪🇸', origin: 'Spain', place: 'La Rioja / Haro', dateCreated: 's. XI',
+    region: { polygon: [[42.65,-3.10],[42.70,-2.60],[42.55,-1.90],[42.35,-1.50],[42.25,-1.70],[42.20,-2.20],[42.30,-2.80],[42.50,-3.15]] } },
   { id: 'ribera-duero', spirit: 'wine', lat: 41.50, lng: -3.92, icon: '🍇', origin: 'Spain', place: 'Ribera del Duero', dateCreated: 's. XII' },
   { id: 'priorat', spirit: 'wine', lat: 41.18, lng: 0.80, icon: '🏔️', origin: 'Spain', place: 'Priorat, Cataluña', dateCreated: 's. XII' },
-  { id: 'chianti', spirit: 'wine', lat: 43.47, lng: 11.31, icon: '🇮🇹', origin: 'Italy', place: 'Tuscany', dateCreated: 's. XIII' },
-  { id: 'barolo', spirit: 'wine', lat: 44.61, lng: 7.94, icon: '🍷', origin: 'Italy', place: 'Piedmont / Langhe', dateCreated: 's. XIX' },
+  { id: 'chianti', spirit: 'wine', lat: 43.47, lng: 11.31, icon: '🇮🇹', origin: 'Italy', place: 'Tuscany', dateCreated: 's. XIII',
+    region: { polygon: [[43.85,11.00],[43.80,11.50],[43.55,11.75],[43.30,11.70],[43.15,11.45],[43.20,11.10],[43.50,10.90]] } },
+  { id: 'barolo', spirit: 'wine', lat: 44.61, lng: 7.94, icon: '🍷', origin: 'Italy', place: 'Piedmont / Langhe', dateCreated: 's. XIX',
+    region: { polygon: [[44.72,7.85],[44.72,8.05],[44.58,8.12],[44.48,8.05],[44.48,7.85],[44.58,7.78]] } },
   { id: 'brunello', spirit: 'wine', lat: 43.06, lng: 11.49, icon: '🍇', origin: 'Italy', place: 'Montalcino, Tuscany', dateCreated: '1888' },
-  { id: 'napa', spirit: 'wine', lat: 38.30, lng: -122.29, icon: '🇺🇸', origin: 'USA', place: 'Napa Valley, California', dateCreated: 's. XIX' },
+  { id: 'napa', spirit: 'wine', lat: 38.30, lng: -122.29, icon: '🇺🇸', origin: 'USA', place: 'Napa Valley, California', dateCreated: 's. XIX',
+    region: { polygon: [[38.70,-122.45],[38.60,-122.15],[38.35,-122.05],[38.15,-122.10],[38.00,-122.20],[38.10,-122.45],[38.40,-122.55]] } },
   { id: 'sonoma', spirit: 'wine', lat: 38.44, lng: -122.71, icon: '🌲', origin: 'USA', place: 'Sonoma, California', dateCreated: 's. XIX' },
   { id: 'willamette', spirit: 'wine', lat: 45.10, lng: -123.08, icon: '🇺🇸', origin: 'USA', place: 'Willamette Valley, Oregon', dateCreated: '1965' },
   { id: 'mendoza', spirit: 'wine', lat: -32.89, lng: -68.85, icon: '🇦🇷', origin: 'Argentina', place: 'Mendoza / Valle de Uco', dateCreated: 's. XVI' },
   { id: 'colchagua', spirit: 'wine', lat: -34.64, lng: -71.36, icon: '🇨🇱', origin: 'Chile', place: 'Valle de Colchagua', dateCreated: 's. XVI' },
   { id: 'stellenbosch', spirit: 'wine', lat: -33.94, lng: 18.86, icon: '🇿🇦', origin: 'South Africa', place: 'Stellenbosch', dateCreated: '1679' },
   { id: 'barossa', spirit: 'wine', lat: -34.53, lng: 138.95, icon: '🇦🇺', origin: 'Australia', place: 'Barossa Valley', dateCreated: '1842' },
+
+  // ══ LOTE B — VINOS ADICIONALES ══
+  { id: 'douro-wines', spirit: 'wine', lat: 41.13, lng: -7.55, icon: '🍷', origin: 'Portugal', place: 'Douro / Pinhão', dateCreated: '1756',
+    region: { polygon: [[41.35,-8.05],[41.30,-7.30],[41.15,-7.00],[41.00,-6.95],[40.95,-7.35],[41.05,-7.85],[41.20,-8.15]] } },
+  { id: 'vinho-verde', spirit: 'wine', lat: 41.56, lng: -8.42, icon: '🟢', origin: 'Portugal', place: 'Minho', dateCreated: 's. XII',
+    region: { polygon: [[42.00,-8.65],[42.05,-8.10],[41.70,-7.90],[41.30,-7.95],[41.20,-8.35],[41.40,-8.80],[41.80,-8.85]] } },
+  { id: 'jura', spirit: 'wine', lat: 46.79, lng: 5.77, icon: '🏔️', origin: 'France', place: 'Jura / Arbois', dateCreated: 's. IX',
+    region: { polygon: [[47.10,5.50],[47.00,5.95],[46.70,6.05],[46.50,5.90],[46.55,5.55],[46.90,5.45]] } },
+  { id: 'nero-davola', spirit: 'wine', lat: 36.88, lng: 14.72, icon: '🇮🇹', origin: 'Italy', place: 'Sicily / Pachino', dateCreated: 's. XIX' },
+  { id: 'etna', spirit: 'wine', lat: 37.75, lng: 15.00, icon: '🌋', origin: 'Italy', place: 'Mount Etna, Sicily', dateCreated: 's. XX',
+    region: { polygon: [[37.95,14.80],[37.95,15.18],[37.75,15.25],[37.60,15.18],[37.60,14.82],[37.80,14.70]] } },
+  { id: 'santorini', spirit: 'wine', lat: 36.41, lng: 25.43, icon: '🇬🇷', origin: 'Greece', place: 'Santorini', dateCreated: '~3500 a.C.',
+    region: { polygon: [[36.47,25.36],[36.46,25.48],[36.37,25.50],[36.35,25.40],[36.42,25.34]] } },
+  { id: 'georgia-wines', spirit: 'wine', lat: 41.92, lng: 45.70, icon: '🏺', origin: 'Georgia', place: 'Kakheti', dateCreated: '~6000 a.C.' },
+  { id: 'chablis', spirit: 'wine', lat: 47.82, lng: 3.80, icon: '🇫🇷', origin: 'France', place: 'Chablis, Burgundy', dateCreated: 's. XII',
+    region: { polygon: [[47.95,3.65],[47.95,4.00],[47.75,4.05],[47.65,3.85],[47.70,3.65],[47.85,3.60]] } },
+  { id: 'beaujolais', spirit: 'wine', lat: 46.10, lng: 4.72, icon: '🍇', origin: 'France', place: 'Beaujolais', dateCreated: 's. VII',
+    region: { polygon: [[46.35,4.55],[46.30,4.85],[46.00,4.90],[45.80,4.75],[45.90,4.55],[46.15,4.45]] } },
+  { id: 'provence-rose', spirit: 'wine', lat: 43.60, lng: 6.05, icon: '🌸', origin: 'France', place: 'Provence', dateCreated: 's. VI a.C.',
+    region: { polygon: [[43.85,5.70],[43.90,6.70],[43.55,6.95],[43.20,6.65],[43.15,6.10],[43.35,5.65]] } },
+  { id: 'alentejo', spirit: 'wine', lat: 38.57, lng: -7.91, icon: '🇵🇹', origin: 'Portugal', place: 'Alentejo', dateCreated: 's. II a.C.',
+    region: { polygon: [[39.30,-8.20],[39.25,-7.10],[38.50,-6.90],[37.90,-7.10],[37.85,-7.80],[38.30,-8.35],[38.85,-8.45]] } },
+  { id: 'txakoli', spirit: 'wine', lat: 43.30, lng: -2.20, icon: '🌊', origin: 'Spain', place: 'País Vasco / Getaria', dateCreated: 's. IX' },
+  { id: 'hermitage', spirit: 'wine', lat: 45.07, lng: 4.85, icon: '⛰️', origin: 'France', place: 'Rhône / Tain-l\u2019Hermitage', dateCreated: 's. II' },
+  { id: 'bandol', spirit: 'wine', lat: 43.14, lng: 5.75, icon: '🍷', origin: 'France', place: 'Bandol, Provence', dateCreated: 's. VI a.C.' },
+
+  // ══ LOTE B — FERMENTADOS TRADICIONALES ══
+  { id: 'kvass', spirit: 'soda', lat: 55.75, lng: 37.62, icon: '🍞', origin: 'Russia', place: 'Moscow / Eastern Europe', dateCreated: 's. X' },
+  { id: 'kombucha', spirit: 'soda', lat: 43.72, lng: 125.32, icon: '🍄', origin: 'China / Manchuria', place: 'Changchun', dateCreated: '~220 a.C.' },
+  { id: 'kefir', spirit: 'soda', lat: 43.03, lng: 44.68, icon: '🥛', origin: 'Caucasus', place: 'Ossetia / Elbrus', dateCreated: 's. XVIII' },
+  { id: 'chicha-morada', spirit: 'soda', lat: -12.05, lng: -77.04, icon: '🇵🇪', origin: 'Peru', place: 'Lima', dateCreated: 's. XVIII' },
+  { id: 'pulque', spirit: 'beer', lat: 19.84, lng: -98.90, icon: '🌵', origin: 'Mexico', place: 'Tlaxcala / Hidalgo', dateCreated: '~200 a.C.' },
+  { id: 'horchata-valencia', spirit: 'soda', lat: 39.47, lng: -0.38, icon: '🌾', origin: 'Spain', place: 'Valencia / Alboraya', dateCreated: 's. XIII' },
+  { id: 'airag', spirit: 'beer', lat: 47.92, lng: 106.92, icon: '🐎', origin: 'Mongolia', place: 'Ulaanbaatar / steppe', dateCreated: '~2500 a.C.' },
 
   // ══ FASE 2 — VINOS BLANCOS Y DULCES ══
   { id: 'loire-valley', spirit: 'wine', lat: 47.30, lng: 2.83, icon: '🏰', origin: 'France', place: 'Loire / Sancerre / Vouvray', dateCreated: 's. V' },
@@ -188,7 +265,8 @@ const SPIRIT_REGIONS = [
   { id: 'marlborough', spirit: 'wine', lat: -41.52, lng: 173.95, icon: '🇳🇿', origin: 'New Zealand', place: 'Marlborough', dateCreated: '1973' },
 
   // ══ FASE 2 — ESPUMOSOS ══
-  { id: 'champagne', spirit: 'sparkling', lat: 49.04, lng: 3.96, icon: '🥂', origin: 'France', place: 'Reims / Épernay', dateCreated: 's. XVII' },
+  { id: 'champagne', spirit: 'sparkling', lat: 49.04, lng: 3.96, icon: '🥂', origin: 'France', place: 'Reims / Épernay', dateCreated: 's. XVII',
+    region: { polygon: [[49.40,3.40],[49.50,4.00],[49.35,4.40],[49.10,4.50],[48.90,4.30],[48.50,4.20],[48.15,4.10],[48.05,3.95],[48.30,3.60],[48.70,3.50],[49.05,3.30]] } },
   { id: 'cremant', spirit: 'sparkling', lat: 48.24, lng: 7.36, icon: '🫧', origin: 'France', place: 'Alsace / Loire / Burgundy', dateCreated: 's. XIX' },
   { id: 'cava', spirit: 'sparkling', lat: 41.38, lng: 1.71, icon: '🫧', origin: 'Spain', place: 'Penedès, Cataluña', dateCreated: '1872' },
   { id: 'prosecco', spirit: 'sparkling', lat: 45.89, lng: 12.18, icon: '🇮🇹', origin: 'Italy', place: 'Valdobbiadene, Veneto', dateCreated: 's. XIX' },
@@ -238,6 +316,35 @@ const SPIRIT_REGIONS = [
   { id: 'tea-ceylon', spirit: 'tea', lat: 6.97, lng: 80.79, icon: '🇱🇰', origin: 'Sri Lanka', place: 'Nuwara Eliya', dateCreated: '1867' },
   { id: 'tea-taiwan', spirit: 'tea', lat: 23.57, lng: 120.90, icon: '⛰️', origin: 'Taiwan', place: 'Alishan', dateCreated: 's. XVIII' },
   { id: 'mate', spirit: 'tea', lat: -31.42, lng: -64.18, icon: '🧉', origin: 'Argentina / Paraguay', place: 'Misiones / Paraguay', dateCreated: 's. XVI' },
+
+  // ══ LOTE C — REFRESCOS ADICIONALES ══
+  { id: 'fanta', spirit: 'soda', lat: 51.45, lng: 7.01, icon: '🟠', origin: 'Germany', place: 'Essen', dateCreated: '1940' },
+  { id: 'mountain-dew', spirit: 'soda', lat: 35.96, lng: -83.92, icon: '⛰️', origin: 'USA', place: 'Knoxville, Tennessee', dateCreated: '1940' },
+  { id: 'sprite', spirit: 'soda', lat: 33.76, lng: -84.39, icon: '🍋', origin: 'USA', place: 'Atlanta, Georgia', dateCreated: '1961' },
+  { id: 'orangina', spirit: 'soda', lat: 36.56, lng: 2.83, icon: '🍊', origin: 'Algeria / France', place: 'Boufarik / Marseille', dateCreated: '1936' },
+  { id: 'vimto', spirit: 'soda', lat: 53.48, lng: -2.24, icon: '🫐', origin: 'England', place: 'Manchester', dateCreated: '1908' },
+  { id: 'club-mate', spirit: 'soda', lat: 49.60, lng: 10.72, icon: '🧉', origin: 'Germany', place: 'Münchsteinach', dateCreated: '1924' },
+  { id: 'thums-up', spirit: 'soda', lat: 19.08, lng: 72.88, icon: '🇮🇳', origin: 'India', place: 'Mumbai', dateCreated: '1977' },
+  { id: 'appletiser', spirit: 'soda', lat: -34.16, lng: 19.01, icon: '🍏', origin: 'South Africa', place: 'Elgin, Western Cape', dateCreated: '1966' },
+  { id: 'malta-hatuey', spirit: 'soda', lat: 23.11, lng: -82.37, icon: '🌾', origin: 'Cuba', place: 'Havana', dateCreated: '1942' },
+  { id: 'kofola', spirit: 'soda', lat: 49.83, lng: 18.29, icon: '🇨🇿', origin: 'Czechoslovakia', place: 'Opava', dateCreated: '1959' },
+
+  // ══ LOTE C — CAFÉS ADICIONALES ══
+  { id: 'coffee-vietnam', spirit: 'coffee', lat: 12.68, lng: 108.05, icon: '🇻🇳', origin: 'Vietnam', place: 'Dak Lak, Central Highlands', dateCreated: '1857',
+    region: { polygon: [[13.40,107.60],[13.30,108.60],[12.50,108.75],[11.80,108.20],[11.95,107.55],[12.80,107.45]] } },
+  { id: 'coffee-sumatra', spirit: 'coffee', lat: 2.60, lng: 99.05, icon: '🏝️', origin: 'Indonesia', place: 'Sumatra (Mandheling)', dateCreated: 's. XVIII',
+    region: { polygon: [[5.80,95.20],[5.50,97.50],[2.80,99.50],[-0.50,102.00],[-3.50,103.50],[-5.80,105.40],[-5.00,103.50],[-3.00,100.50],[0.50,97.50],[4.00,95.40]] } },
+  { id: 'coffee-costa-rica', spirit: 'coffee', lat: 9.93, lng: -84.08, icon: '🇨🇷', origin: 'Costa Rica', place: 'Central Valley / Tarrazú', dateCreated: '1779' },
+  { id: 'coffee-panama', spirit: 'coffee', lat: 8.78, lng: -82.43, icon: '🌸', origin: 'Panama', place: 'Boquete, Chiriquí (Geisha)', dateCreated: '2004',
+    region: { polygon: [[8.95,-82.60],[8.90,-82.25],[8.65,-82.20],[8.55,-82.45],[8.70,-82.65]] } },
+  { id: 'coffee-honduras', spirit: 'coffee', lat: 14.77, lng: -89.14, icon: '🇭🇳', origin: 'Honduras', place: 'Copán / Marcala', dateCreated: 's. XIX' },
+
+  // ══ LOTE C — TÉS E INFUSIONES ADICIONALES ══
+  { id: 'moroccan-mint', spirit: 'tea', lat: 31.63, lng: -7.99, icon: '🌿', origin: 'Morocco', place: 'Marrakech / Atlas', dateCreated: 's. XVIII' },
+  { id: 'turkish-rize', spirit: 'tea', lat: 41.03, lng: 40.52, icon: '🇹🇷', origin: 'Turkey', place: 'Rize, Black Sea', dateCreated: '1938',
+    region: { polygon: [[41.20,40.20],[41.20,41.00],[40.85,41.15],[40.75,40.60],[40.85,40.15]] } },
+  { id: 'rooibos', spirit: 'tea', lat: -32.49, lng: 19.01, icon: '🍂', origin: 'South Africa', place: 'Cederberg', dateCreated: 's. XVIII',
+    region: { polygon: [[-32.00,18.70],[-32.10,19.35],[-32.80,19.40],[-33.00,18.85],[-32.70,18.55]] } },
 ];
 
 // Spirit color mapping for markers
@@ -392,6 +499,22 @@ export function initSpiritMap(container) {
     const name = t(`wiki.map.${region.id}`);
     const desc = t(`wiki.map.${region.id}.desc`);
     const spiritName = t(`wiki.map.spirit.${region.spirit}`);
+    const groupId = groupIdForSpirit(region.spirit);
+    if (!markersByGroup[groupId]) markersByGroup[groupId] = [];
+
+    // Optional translucent region overlay (L.polygon) for DO/AOC extensive zones.
+    // Drawn below the marker; click is still captured by the marker popup.
+    if (region.region?.polygon && Array.isArray(region.region.polygon)) {
+      const overlay = L.polygon(region.region.polygon, {
+        color,
+        fillColor: color,
+        fillOpacity: 0.18,
+        weight: 1.5,
+        opacity: 0.55,
+        interactive: false,
+      }).addTo(mapInstance);
+      markersByGroup[groupId].push(overlay);
+    }
 
     const markerIcon = L.divIcon({
       className: 'spirit-marker',
@@ -425,8 +548,6 @@ export function initSpiritMap(container) {
       maxWidth: 280,
     });
 
-    const groupId = groupIdForSpirit(region.spirit);
-    if (!markersByGroup[groupId]) markersByGroup[groupId] = [];
     markersByGroup[groupId].push(marker);
   });
 
