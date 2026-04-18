@@ -293,34 +293,39 @@ const buildLessonFromRound = (round) => ({
   ],
 });
 
-// Reto Diario: RNG sembrado con día del año → 10 preguntas
-const dayOfYear = () => {
+// Reto Diario: usa el MISMO algoritmo que js/daily.js (todaySeed = YYYYMMDD UTC,
+// xor-shift PRNG, Fisher-Yates) — así React y el módulo legacy generan
+// exactamente la misma pregunta del día.
+const todaySeed = () => {
   const d = new Date();
-  const start = new Date(d.getFullYear(), 0, 0);
-  return Math.floor((d - start) / 86400000);
+  return d.getUTCFullYear() * 10000 + (d.getUTCMonth() + 1) * 100 + d.getUTCDate();
 };
-const mulberry32 = (a) => () => {
-  a |= 0; a = (a + 0x6D2B79F5) | 0;
-  let t = Math.imul(a ^ (a >>> 15), 1 | a);
-  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+const seededRng = (seed) => {
+  let s = seed >>> 0;
+  return () => {
+    s ^= s << 13; s ^= s >>> 17; s ^= s << 5;
+    return (s >>> 0) / 0x100000000;
+  };
 };
 const pickDailyQuestions = (n = 10) => {
-  const allQ = TRIVIA_ROUNDS.flatMap(r => r.questions.map(q => ({ ...q, _round: r.title, _color: r.color })));
+  // Prefer localized rounds (language-aware) when js/questions.js está cargado
+  const rounds = (window.stQuestions && window.stQuestions.getLocalizedRounds)
+    ? window.stQuestions.getLocalizedRounds((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es')
+    : TRIVIA_ROUNDS;
+  const allQ = rounds.flatMap(r => r.questions.map(q => ({ ...q, _round: r.title, _color: r.color })));
   if (!allQ.length) return [];
-  const rng = mulberry32(dayOfYear() * 9301 + 49297);
+  const rng = seededRng(todaySeed());
   const pool = allQ.slice();
-  const out = [];
-  for (let i = 0; i < Math.min(n, pool.length); i++) {
-    const idx = Math.floor(rng() * pool.length);
-    out.push(pool.splice(idx, 1)[0]);
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
   }
-  return out;
+  return pool.slice(0, n);
 };
 const DAILY_LESSON = () => {
   const qs = pickDailyQuestions(10);
   return {
-    id: 'daily-' + dayOfYear(),
+    id: 'daily-' + todaySeed(),
     category: 'Daily',
     title: 'Reto Diario',
     subtitle: `10 preguntas · ${new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long' })}`,
@@ -358,8 +363,73 @@ const SPEED_LESSON = () => {
   };
 };
 
+// ── Academy: puente a js/academy_data.js (6 niveles con lecciones reales) ──
+// window.stAcademyData se carga de forma asíncrona via import dinámico en index.html.
+// Exponemos getter dinámico para que, cuando esté disponible, la UI ya use los
+// niveles reales (6 niveles × 3-4 lecciones × 3 preguntas cada una + practice rondas).
+const getAcademyLevels = () => (window.stAcademyData && window.stAcademyData.ACADEMY_LEVELS) || [];
+
+// Traduce una key i18n usando lang.js si está cargado; si no, devuelve la key.
+const _t = (key, fallback) => {
+  if (!key) return fallback || '';
+  if (window.stLang && window.stLang.t) return window.stLang.t(key);
+  return fallback || key;
+};
+
+// Construye el payload de LessonPlayer para una lección de Academia.
+// Convierte las "cards" (theory/tip/note/example) en steps 'intro' y las
+// preguntas i18n en steps 'choice'.
+const buildAcademyLesson = (level, lessonIdx) => {
+  const lesson = level.lessons[lessonIdx];
+  if (!lesson) return null;
+  const cardTitle = { theory: '📖 Teoría', tip: '💡 Consejo', note: '📝 Nota', example: '🍸 Ejemplo' };
+  const cardSteps = (lesson.cards || []).map(card => {
+    const body = card.cocktail
+      ? `Ejemplo clásico: ${card.cocktail}. Estudia su receta, técnica y balance.`
+      : _t(card.key, '');
+    return { kind: 'intro', title: cardTitle[card.type] || '📖 Teoría', body, fact: '' };
+  });
+  const questionSteps = (lesson.questions || []).map(q => {
+    const correctText = _t(q.a[0]);
+    const shuffled = q.a.map(k => _t(k)).sort(() => Math.random() - 0.5);
+    return {
+      kind: 'choice',
+      prompt: _t(q.q),
+      options: shuffled,
+      correct: shuffled.indexOf(correctText),
+      explain: _t(q.exp),
+    };
+  });
+  return {
+    id: `academy-l${level.id}-les${lessonIdx}`,
+    category: 'Academy',
+    title: _t(level.key),
+    subtitle: _t(lesson.key),
+    emoji: level.icon,
+    accent: 'amber',
+    xp: lesson.questions.length * 20,
+    difficulty: 'Academy',
+    game: 'lesson',
+    _roundColor: level.color,
+    steps: [
+      { kind: 'intro', title: _t(level.key), body: _t(lesson.key), fact: _t(level.descKey) },
+      ...cardSteps,
+      ...questionSteps,
+    ],
+  };
+};
+
+// Construye un "practice" desde una ronda de TRIVIA_ROUNDS referenciada por la sequence.
+const buildAcademyPractice = (level, roundId) => {
+  const round = TRIVIA_ROUNDS.find(r => r.id === roundId);
+  if (!round) return null;
+  const lesson = buildLessonFromRound(round);
+  return { ...lesson, id: `academy-practice-l${level.id}-r${roundId}`, emoji: level.icon, _roundColor: level.color };
+};
+
 Object.assign(window, {
   LESSONS, ACHIEVEMENTS, LEADERBOARD, CATEGORIES,
   ALL_FICHAS, ACADEMY_FAMILIES, TRIVIA_ROUNDS,
   buildLessonFromRound, DAILY_LESSON, SPEED_LESSON,
+  getAcademyLevels, buildAcademyLesson, buildAcademyPractice,
 });

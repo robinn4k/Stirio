@@ -7,9 +7,33 @@ const { useState: useStateRef, useMemo: useMemoRef } = React;
 
 // ═══════════════ ACADEMIA ═══════════════
 
-const AcademyScreen = ({ onBack, onStartRound, onOpenFicha }) => {
-  const families = window.ACADEMY_FAMILIES || [];
-  const [openFam, setOpenFam] = useStateRef(null);
+// ── Progreso de Academia (localStorage) ──
+const ACADEMY_PROGRESS_KEY = 'cq_academy_progress';
+const loadAcademyProgress = () => {
+  try { return JSON.parse(localStorage.getItem(ACADEMY_PROGRESS_KEY)) || {}; }
+  catch { return {}; }
+};
+const levelCompleted = (progress, level) => {
+  const lp = progress[level.id];
+  if (!lp) return false;
+  return (level.lessons || []).every((_, i) => lp.lessons && lp.lessons[i]?.passed);
+};
+
+const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
+  const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
+  const [openLevel, setOpenLevel] = useStateRef(null);
+  const progress = loadAcademyProgress();
+
+  // Si academy_data.js aún no está cargado, mostramos loader + polling
+  const [retries, setRetries] = useStateRef(0);
+  React.useEffect(() => {
+    if (levels.length === 0 && retries < 20) {
+      const t = setTimeout(() => setRetries(r => r + 1), 200);
+      return () => clearTimeout(t);
+    }
+  }, [levels.length, retries]);
+
+  const completed = levels.filter(l => levelCompleted(progress, l)).length;
 
   return (
     <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
@@ -24,42 +48,184 @@ const AcademyScreen = ({ onBack, onStartRound, onOpenFicha }) => {
         </div>
       </div>
 
-      {/* Hero con progreso simulado */}
+      {/* Hero con progreso real */}
       <div style={{ padding: '16px 24px 24px' }}>
         <div className="card" style={{ padding: 18, background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: 10 }}>
             <div>
               <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>Progreso</div>
               <div style={{ fontFamily: 'var(--f-serif)', fontSize: 28, lineHeight: 1 }}>
-                0 <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ 6 familias</span>
+                {completed} <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ {levels.length || 6} niveles</span>
               </div>
             </div>
             <div style={{ fontSize: 42 }}>🎓</div>
           </div>
           <div style={{ height: 6, borderRadius: 99, background: 'var(--bg-3)', overflow: 'hidden' }}>
-            <div style={{ width: '0%', height: '100%', background: 'var(--amber)' }} />
+            <div style={{ width: `${levels.length ? (completed / levels.length) * 100 : 0}%`, height: '100%', background: 'var(--amber)', transition: 'width .3s' }} />
           </div>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 10, lineHeight: 1.4 }}>
-            Aprende cada familia en su contexto: ingredientes canónicos, técnica, historia y variantes. Termina el quiz y desbloquea la siguiente.
+            6 niveles con teoría, consejos y prácticas reales. Completa las lecciones de un nivel para desbloquear el siguiente.
           </div>
         </div>
       </div>
 
-      {/* Familias */}
+      {/* Niveles */}
       <div style={{ padding: '0 24px', display: 'grid', gap: 12 }}>
-        {families.map((fam, i) => (
-          <FamilyCard key={fam.id} fam={fam} index={i} locked={i > 0} onOpen={() => setOpenFam(fam)} />
-        ))}
+        {levels.length === 0 && (
+          <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)' }}>
+            Cargando Academia…
+          </div>
+        )}
+        {levels.map((level, i) => {
+          const prevDone = i === 0 || levelCompleted(progress, levels[i - 1]);
+          const locked = !prevDone;
+          const lessonCount = (level.lessons || []).length;
+          const doneCount = (progress[level.id]?.lessons || []).filter(l => l?.passed).length;
+          return (
+            <LevelCard key={level.id}
+              level={level}
+              index={i}
+              locked={locked}
+              progress={{ done: doneCount, total: lessonCount }}
+              onOpen={() => !locked && setOpenLevel(level)}
+            />
+          );
+        })}
       </div>
 
-      {openFam && (
-        <FamilyDetail
-          fam={openFam}
-          onClose={() => setOpenFam(null)}
-          onStartQuiz={() => { setOpenFam(null); onStartRound(openFam); }}
-          onOpenFicha={(f) => { setOpenFam(null); onOpenFicha(f); }}
+      {openLevel && (
+        <LevelDetail
+          level={openLevel}
+          progress={progress[openLevel.id] || { lessons: [], practices: {} }}
+          onClose={() => setOpenLevel(null)}
+          onStartLesson={(idx) => { setOpenLevel(null); onStartAcademyLesson(openLevel.id, idx); }}
+          onStartPractice={(roundId) => { setOpenLevel(null); onStartRound({ roundId, levelId: openLevel.id }); }}
         />
       )}
+    </div>
+  );
+};
+
+const LevelCard = ({ level, index, locked, progress, onOpen }) => {
+  const _t = (k, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k) : (f || k);
+  const title = _t(level.key);
+  const desc = _t(level.descKey);
+  return (
+    <button onClick={onOpen} className="card" style={{
+      padding: 18, textAlign: 'left', cursor: locked ? 'not-allowed' : 'pointer',
+      display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center',
+      borderLeft: `4px solid ${level.color}`,
+      opacity: locked ? 0.55 : 1,
+    }}>
+      <div style={{
+        width: 52, height: 52, borderRadius: 14,
+        background: `linear-gradient(135deg, ${level.color}, oklch(0.3 0.05 60))`,
+        display: 'grid', placeItems: 'center',
+        fontSize: 26,
+        boxShadow: `0 8px 20px ${level.color}33`,
+      }}>{level.icon}</div>
+      <div>
+        <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginBottom: 2 }}>
+          Nivel {String(index).padStart(2, '0')} · {progress.done}/{progress.total} lecciones
+        </div>
+        <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 3 }}>{title}</div>
+        <div style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.3 }}>{desc}</div>
+      </div>
+      <div>
+        {locked
+          ? <Icon name="lock" size={18} />
+          : <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--amber)', display: 'grid', placeItems: 'center', color: 'var(--bg-0)' }}>
+              <Icon name="play" size={14} />
+            </div>
+        }
+      </div>
+    </button>
+  );
+};
+
+const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice }) => {
+  const _t = (k, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k) : (f || k);
+  const sequence = level.sequence || [];
+  return (
+    <div onClick={onClose} style={{
+      position: 'fixed', inset: 0, zIndex: 55,
+      background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(10px)',
+      display: 'grid', placeItems: 'end center',
+      animation: 'fadeIn .25s',
+    }}>
+      <div onClick={e => e.stopPropagation()} style={{
+        width: '100%', maxWidth: 560, maxHeight: '86dvh',
+        background: 'var(--bg-1)',
+        borderRadius: '24px 24px 0 0',
+        padding: 24, overflowY: 'auto',
+        borderTop: `4px solid ${level.color}`,
+        animation: 'slideUp .35s cubic-bezier(.2,1.1,.3,1)',
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 14 }}>
+          <div style={{ width: 40, height: 4, borderRadius: 4, background: 'var(--line)' }} />
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
+          <div style={{
+            width: 64, height: 64, borderRadius: 16,
+            background: `linear-gradient(135deg, ${level.color}, oklch(0.3 0.05 60))`,
+            display: 'grid', placeItems: 'center', fontSize: 32,
+          }}>{level.icon}</div>
+          <div>
+            <div className="mono caps" style={{ fontSize: 10, color: level.color, marginBottom: 2 }}>Nivel {level.id}</div>
+            <h2 style={{ fontFamily: 'var(--f-serif)', fontSize: 26, margin: 0, lineHeight: 1 }}>{_t(level.key)}</h2>
+            <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 4, lineHeight: 1.3 }}>{_t(level.descKey)}</div>
+          </div>
+        </div>
+
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 10 }}>
+          Ruta del nivel
+        </div>
+        <div style={{ display: 'grid', gap: 8 }}>
+          {sequence.map((item, i) => {
+            if (item.type === 'lesson') {
+              const lesson = level.lessons[item.index];
+              if (!lesson) return null;
+              const passed = progress.lessons?.[item.index]?.passed;
+              return (
+                <button key={`${i}-lesson-${item.index}`} onClick={() => onStartLesson(item.index)} className="card" style={{
+                  padding: 14, textAlign: 'left', cursor: 'pointer',
+                  display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
+                  background: 'var(--bg-2)',
+                }}>
+                  <div style={{ fontSize: 22 }}>{passed ? '✅' : '📚'}</div>
+                  <div>
+                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>{_t(lesson.key)}</div>
+                    <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
+                      Lección · {lesson.cards?.length || 0} tarjetas · {lesson.questions?.length || 0} preguntas
+                    </div>
+                  </div>
+                  <Icon name="arrowR" size={14} />
+                </button>
+              );
+            }
+            if (item.type === 'practice') {
+              const passed = progress.practices?.[item.roundId];
+              return (
+                <button key={`${i}-practice-${item.roundId}`} onClick={() => onStartPractice(item.roundId)} className="card" style={{
+                  padding: 14, textAlign: 'left', cursor: 'pointer',
+                  display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
+                  background: 'var(--bg-2)', borderLeft: `3px solid ${level.color}`,
+                }}>
+                  <div style={{ fontSize: 22 }}>{passed ? '🏆' : '⚡'}</div>
+                  <div>
+                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>Práctica · Ronda {item.roundId}</div>
+                    <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
+                      Quiz de refuerzo
+                    </div>
+                  </div>
+                  <Icon name="arrowR" size={14} />
+                </button>
+              );
+            }
+            return null;
+          })}
+        </div>
+      </div>
     </div>
   );
 };
