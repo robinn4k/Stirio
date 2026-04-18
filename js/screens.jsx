@@ -7,6 +7,35 @@ const Onboarding = ({ onDone }) => {
   const [authMode, setAuthMode] = useState(null); // 'google' | 'guest'
   const [name, setName] = useState('');
   const [level, setLevel] = useState(null);
+  const [googleUser, setGoogleUser] = useState(null); // {uid,name,email,photo} from Firebase
+  const [authLoading, setAuthLoading] = useState(false);
+  const [authError, setAuthError] = useState(null);
+
+  const handleGoogle = async () => {
+    setAuthError(null);
+    if (!window.stAuth) { setAuthError('Auth no disponible'); return; }
+    setAuthLoading(true);
+    try {
+      await window.stAuth.initFirebase();
+      const user = await window.stAuth.signInWithGoogle();
+      setGoogleUser(user);
+      setAuthMode('google');
+      setName(user.name || '');
+      setStep(1);
+    } catch (e) {
+      console.warn('[auth] google', e);
+      setAuthError(e.code === 'auth/popup-closed-by-user' ? 'Cancelaste el login' : 'Error al iniciar con Google');
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
+  const handleGuest = () => {
+    setAuthError(null);
+    if (window.stAuth) { try { window.stAuth.signInAsGuest(); } catch {} }
+    setAuthMode('guest');
+    setStep(1);
+  };
 
   const next = () => setStep(s => s + 1);
   const back = () => setStep(s => Math.max(0, s - 1));
@@ -68,7 +97,8 @@ const Onboarding = ({ onDone }) => {
 
               <div style={{ display: 'grid', gap: 10, maxWidth: 340, margin: '0 auto' }}>
                 <button
-                  onClick={() => { setAuthMode('google'); setName('mira_k'); next(); }}
+                  onClick={handleGoogle}
+                  disabled={authLoading}
                   style={{
                     padding: '14px 18px',
                     display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
@@ -76,6 +106,8 @@ const Onboarding = ({ onDone }) => {
                     borderRadius: 'var(--r-pill)',
                     border: 0, fontWeight: 500, fontSize: 14,
                     boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                    opacity: authLoading ? 0.7 : 1,
+                    cursor: authLoading ? 'wait' : 'pointer',
                   }}
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24">
@@ -84,15 +116,22 @@ const Onboarding = ({ onDone }) => {
                     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                   </svg>
-                  Continuar con Google
+                  {authLoading ? 'Abriendo Google…' : 'Continuar con Google'}
                 </button>
                 <button
-                  onClick={() => { setAuthMode('guest'); next(); }}
+                  onClick={handleGuest}
                   className="btn"
                   style={{ padding: '14px 18px' }}
                 >
                   <Icon name="user" size={16} /> Continuar como invitado
                 </button>
+                {authError && (
+                  <div style={{
+                    padding: 10, borderRadius: 8, fontSize: 12,
+                    background: 'color-mix(in oklch, var(--red) 20%, var(--bg-2))',
+                    color: 'var(--ink-1)', textAlign: 'center',
+                  }}>{authError}</div>
+                )}
               </div>
               <div style={{
                 marginTop: 22, maxWidth: 340, margin: '22px auto 0',
@@ -135,16 +174,30 @@ const Onboarding = ({ onDone }) => {
 
           {step === 1 && authMode === 'google' && (
             <div style={{ textAlign: 'center' }}>
-              <div style={{
-                width: 80, height: 80, borderRadius: '50%',
-                margin: '0 auto 14px',
-                background: 'linear-gradient(135deg, var(--amber), var(--berry))',
-                display: 'grid', placeItems: 'center',
-                fontSize: 32, fontWeight: 600, color: 'var(--bg-0)',
-                boxShadow: '0 0 30px var(--amber-glow)',
-              }}>M</div>
-              <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, marginBottom: 4 }}>¡Hola, mira_k!</div>
-              <div style={{ color: 'var(--ink-2)', marginBottom: 6 }}>mira.k@gmail.com</div>
+              {googleUser?.photo ? (
+                <img src={googleUser.photo} alt=""
+                  referrerPolicy="no-referrer"
+                  style={{
+                    width: 80, height: 80, borderRadius: '50%',
+                    margin: '0 auto 14px', objectFit: 'cover',
+                    boxShadow: '0 0 30px var(--amber-glow)',
+                  }}/>
+              ) : (
+                <div style={{
+                  width: 80, height: 80, borderRadius: '50%',
+                  margin: '0 auto 14px',
+                  background: 'linear-gradient(135deg, var(--amber), var(--berry))',
+                  display: 'grid', placeItems: 'center',
+                  fontSize: 32, fontWeight: 600, color: 'var(--bg-0)',
+                  boxShadow: '0 0 30px var(--amber-glow)',
+                }}>{(googleUser?.name || '?').charAt(0).toUpperCase()}</div>
+              )}
+              <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, marginBottom: 4 }}>
+                ¡Hola, {googleUser?.name || 'invitado'}!
+              </div>
+              {googleUser?.email && (
+                <div style={{ color: 'var(--ink-2)', marginBottom: 6 }}>{googleUser.email}</div>
+              )}
               <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em' }}>
                 · sesión iniciada con google ·
               </div>
@@ -211,7 +264,13 @@ const Onboarding = ({ onDone }) => {
             </button>
             <button
               className="btn primary"
-              onClick={step === 2 ? () => onDone({ name: authMode === 'google' ? 'mira_k' : name, authMode, level }) : next}
+              onClick={step === 2 ? () => onDone({
+                name: authMode === 'google' ? (googleUser?.name || name) : name,
+                email: googleUser?.email || null,
+                photoURL: googleUser?.photo || null,
+                uid: googleUser?.uid || null,
+                authMode, level,
+              }) : next}
               disabled={!canNext}
               style={{
                 flex: 1, padding: '12px 24px',
