@@ -1,7 +1,6 @@
 // Stirio — App Shell
 // Depends on: ui.jsx, screens.jsx, lesson.jsx, reference.jsx, data.js, repo-data.js
-
-const { useState, useEffect, useRef } = React;
+// React hooks come from ui.jsx's top-level destructuring (shared script scope).
 
 const PLAY_SHORTCUTS = [
   { id: 'daily',     label: 'Reto diario',    icon: '📅', desc: '10 preguntas frescas' },

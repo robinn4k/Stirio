@@ -7,7 +7,8 @@
 // The live 1v1 via rivals.js (Firebase RTDB) is NOT wired here — this PR
 // ships a bot-only duel. Full matchmaking lands in a follow-up.
 
-const { useState, useEffect, useRef } = React;
+// React hooks (useState/useEffect/useRef) come from ui.jsx's top-level destructuring
+// — classic scripts share script-scope bindings, so no need to redeclare here.
 
 // Pick the right string from a multilingual object { es, en, fr, pt, de }
 const ml = (v) => {
