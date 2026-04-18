@@ -53,6 +53,33 @@ const App = () => {
   // Persist state
   useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
 
+  // Firebase auth bootstrap: restore session + init, redirect to home if signed-in
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      // Poll for auth module (loaded async via <script type=module import()>)
+      let tries = 0;
+      while (!window.stAuth && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      if (cancelled || !window.stAuth) return;
+      try {
+        const local = window.stAuth.restoreSession();
+        await window.stAuth.initFirebase(); // also detects persisted Google session
+        const user = window.stAuth.getCurrentUser() || local;
+        if (cancelled || !user) return;
+        setProfile(p => ({
+          ...p,
+          uid: user.uid,
+          name: user.name,
+          email: user.email || null,
+          photoURL: user.photo || null,
+          authMode: user.provider === 'guest' ? 'guest' : 'google',
+        }));
+        if (screen === 'onboarding') setScreen('home');
+      } catch (e) { console.warn('[auth] bootstrap', e); }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
   // Apply tweaks as data-* attrs on <html>
   useEffect(() => {
     const d = tweaks.device || 'mobile';
@@ -111,7 +138,14 @@ const App = () => {
   };
 
   const finishOnboarding = (o) => {
-    setProfile(p => ({ ...p, name: o.name, authMode: o.authMode }));
+    setProfile(p => ({
+      ...p,
+      uid: o.uid || p.uid,
+      name: o.name,
+      email: o.email || null,
+      photoURL: o.photoURL || null,
+      authMode: o.authMode,
+    }));
     setScreen('home');
   };
 
@@ -210,7 +244,8 @@ const App = () => {
           onResetData={() => {
             setProfile(p => ({ ...p, xp: 0, level: 1, streak: 0 }));
           }}
-          onLogout={() => {
+          onLogout={async () => {
+            try { if (window.stAuth) await window.stAuth.signOutUser(); } catch {}
             localStorage.removeItem(LS_STATE);
             setProfile({ name: '', authMode: null, xp: 0, xpNext: 300, level: 1, streak: 0, title: 'Curious Novice', avatar: null });
             setScreen('onboarding');
