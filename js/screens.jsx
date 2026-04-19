@@ -395,7 +395,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
       {/* Academy */}
       <section style={{ marginBottom: 32 }}>
         <SectionHeader eyebrow={tr('home.academy_eyebrow', 'aprende')} title={tr('academy.title_ui', 'Cocktail Academy')} action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6</span>} />
-        <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}> 75 / 0.3)' }}>
+        <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}>
           <div style={{ fontSize: 54, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>🎓</div>
           <div style={{ flex: 1 }}>
             <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>{tr('home.academy_title', 'Aprende paso a paso')}</div>

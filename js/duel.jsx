@@ -42,7 +42,7 @@ const Toast = ({ msg, type = 'info', onClose }) => {
 };
 
 // ─────────────────────── MENU ───────────────────────
-const ModeCard = ({ icon, title, subtitle, onClick, disabled, children }) => (
+const DuelModeCard = ({ icon, title, subtitle, onClick, disabled, children }) => (
   <div className="card" style={{
     padding: 20, cursor: disabled ? 'not-allowed' : 'pointer',
     opacity: disabled ? 0.5 : 1,
@@ -67,7 +67,7 @@ const DuelMenu = ({ onPick, rtdbReady }) => {
   const [maxPlayers, setMaxPlayers] = useState(2);
   return (
     <div style={{ display: 'grid', gap: 12 }}>
-      <ModeCard
+      <DuelModeCard
         icon="🏠"
         title={dTr('duel.host_title', 'Crear sala')}
         subtitle={dTr('duel.host_subtitle', 'Invita amigos con un código')}
@@ -89,22 +89,22 @@ const DuelMenu = ({ onPick, rtdbReady }) => {
             ))}
           </div>
         </div>
-      </ModeCard>
-      <ModeCard
+      </DuelModeCard>
+      <DuelModeCard
         icon="🔑"
         title={dTr('duel.join_title', 'Unirse con código')}
         subtitle={dTr('duel.join_subtitle', 'Introduce el código de 6 caracteres')}
         disabled={!rtdbReady}
         onClick={() => onPick('join-input')}
       />
-      <ModeCard
+      <DuelModeCard
         icon="🎲"
         title={dTr('duel.menu_random', 'Rival aleatorio')}
         subtitle={dTr('duel.random_subtitle', 'Emparejamiento rápido 1v1')}
         disabled={!rtdbReady}
         onClick={() => onPick('random')}
       />
-      <ModeCard
+      <DuelModeCard
         icon="🤖"
         title={dTr('duel.menu_bot', 'Contra bot')}
         subtitle={dTr('duel.bot_subtitle', 'Offline · 3 dificultades')}
