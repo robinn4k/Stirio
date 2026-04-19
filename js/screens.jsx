@@ -982,16 +982,28 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
             icon="🌐"
             label="Idioma"
             value={
-              <select value={lang} onChange={e => setLang(e.target.value)} style={{
-                background: 'var(--bg-2)', border: '1px solid var(--line)',
-                borderRadius: 8, padding: '6px 10px', fontSize: 13,
-                color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
-              }}>
+              <select
+                value={lang}
+                onChange={e => {
+                  const v = e.target.value;
+                  setLang(v);
+                  if (window.stLang && window.stLang.setLang) {
+                    try { window.stLang.setLang(v); } catch {}
+                  }
+                  // Fire an app-wide event so components re-render with the new language.
+                  window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: v } }));
+                }}
+                style={{
+                  background: 'var(--bg-2)', border: '1px solid var(--line)',
+                  borderRadius: 8, padding: '6px 10px', fontSize: 13,
+                  color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
+                }}
+              >
                 <option value="es">Español</option>
                 <option value="en">English</option>
                 <option value="fr">Français</option>
-                <option value="it">Italiano</option>
-                <option value="ja">日本語</option>
+                <option value="pt">Português</option>
+                <option value="de">Deutsch</option>
               </select>
             }
           />

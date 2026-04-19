@@ -210,10 +210,61 @@ const confettiBurst = (x, y, colors = ['var(--amber)', 'var(--cyan)', 'var(--lim
   }
 };
 
+// ── Cookie consent banner (GDPR) ──────────────────────────────
+const CookieBanner = () => {
+  const KEY = 'cq_cookie_consent';
+  const [hidden, setHidden] = useState(() => {
+    try { return localStorage.getItem(KEY) === 'accepted'; } catch { return false; }
+  });
+  if (hidden) return null;
+  const accept = () => {
+    try { localStorage.setItem(KEY, 'accepted'); } catch {}
+    setHidden(true);
+  };
+  return (
+    <div style={{
+      position: 'fixed', left: 12, right: 12, bottom: 12,
+      zIndex: 200, padding: 16,
+      background: 'var(--bg-1)', border: '1px solid var(--line)',
+      borderRadius: 'var(--r-lg)', boxShadow: '0 12px 40px rgba(0,0,0,.35)',
+      display: 'flex', flexDirection: 'column', gap: 10, maxWidth: 640, margin: '0 auto',
+    }}>
+      <div style={{ fontSize: 13, color: 'var(--ink-1)', lineHeight: 1.4 }}>
+        Usamos cookies esenciales para el funcionamiento de la app y cookies opcionales para análisis. Al continuar aceptas nuestra{' '}
+        <a href="cookies.html" target="_blank" rel="noopener" style={{ color: 'var(--amber)' }}>política de cookies</a>.
+      </div>
+      <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
+        <a href="privacidad.html" target="_blank" rel="noopener" className="btn ghost" style={{ padding: '8px 12px', fontSize: 12 }}>Privacidad</a>
+        <button className="btn primary" style={{ padding: '8px 14px', fontSize: 13 }} onClick={accept}>Aceptar</button>
+      </div>
+    </div>
+  );
+};
+
+// ── Legal footer ──────────────────────────────────────────────
+const LegalFooter = () => (
+  <footer style={{
+    padding: '24px 16px 120px',
+    textAlign: 'center',
+    color: 'var(--ink-3)',
+    fontSize: 11,
+    fontFamily: 'var(--f-mono)',
+    display: 'flex', flexDirection: 'column', gap: 6,
+  }}>
+    <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+      <a href="legal.html" target="_blank" rel="noopener" style={{ color: 'var(--ink-2)', textDecoration: 'none' }}>Aviso legal</a>
+      <a href="privacidad.html" target="_blank" rel="noopener" style={{ color: 'var(--ink-2)', textDecoration: 'none' }}>Privacidad</a>
+      <a href="cookies.html" target="_blank" rel="noopener" style={{ color: 'var(--ink-2)', textDecoration: 'none' }}>Cookies</a>
+    </div>
+    <div>© {new Date().getFullYear()} Stirio · Drink responsibly</div>
+  </footer>
+);
+
 // ── Export to window (referenced by other JSX files) ─────────
 Object.assign(window, {
   stUiT: t,
   Icon, Placeholder, XPPop, GlowRing, StreakBadge,
   Prompt, StepTitle,
   playChord, confettiBurst,
+  CookieBanner, LegalFooter,
 });

@@ -56,6 +56,13 @@ const App = () => {
   // Bump counter used to force re-renders when the current language changes
   const [langVersion, setLangVersion] = useState(0);
 
+  // Listen for language changes from the Profile settings selector
+  useEffect(() => {
+    const onLangChange = () => setLangVersion(v => v + 1);
+    window.addEventListener('stirio:langchange', onLangChange);
+    return () => window.removeEventListener('stirio:langchange', onLangChange);
+  }, []);
+
   // Firebase auth bootstrap + i18n preload
   useEffect(() => {
     let cancelled = false;
@@ -346,12 +353,17 @@ const App = () => {
         overflow: asDesktop ? 'visible' : 'hidden',
       }}>
         {appContent}
+        {/* Legal footer — rendered at the end of every screen's scroll area */}
+        {screen !== 'onboarding' && screen !== 'auth' && !activeLesson && <LegalFooter />}
       </div>
 
       {/* Tweaks panel — floating overlay */}
       {tweakMode && (
         <TweaksPanel tweaks={tweaks} onChange={updateTweak} onClose={() => setTweakMode(false)} />
       )}
+
+      {/* Cookie consent banner (GDPR) — hides once accepted */}
+      <CookieBanner />
 
       {/* Tweaks trigger button — always visible for dev/preview */}
       <button
