@@ -146,6 +146,7 @@ const LevelCard = ({ level, index, locked, progress, onOpen }) => {
 
 const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice }) => {
   const _t = (k, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k) : (f || k);
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const sequence = level.sequence || [];
   return (
     <div onClick={onClose} style={{
