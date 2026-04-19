@@ -555,21 +555,29 @@ const WikiScreen = ({ onBack }) => (
 // inside LessonPlayer when step is undefined). Without this, React unmounts
 // the entire tree on child error → completely blank SPA.
 class ErrorBoundary extends React.Component {
-  constructor(props) { super(props); this.state = { error: null }; }
-  static getDerivedStateFromError(error) { return { error }; }
-  componentDidCatch(err, info) { console.error('[Stirio crash]', err, info); }
-  reset = () => { try { window.location.reload(); } catch { this.setState({ error: null }); } };
+  constructor(props) { super(props); this.state = { error: null, info: null }; }
+  static getDerivedStateFromError(error) { return { error, info: null }; }
+  componentDidCatch(err, info) { this.setState({ info }); console.error('[Stirio crash]', err, info); }
+  reset = () => { try { window.location.reload(); } catch { this.setState({ error: null, info: null }); } };
   render() {
     if (!this.state.error) return this.props.children;
+    const err = this.state.error;
+    const msg = (err && (err.message || String(err))) || 'unknown error';
+    const stack = (err && err.stack) ? String(err.stack).split('\n').slice(0, 6).join('\n') : '';
+    const comp = (this.state.info && this.state.info.componentStack)
+      ? String(this.state.info.componentStack).split('\n').slice(0, 6).join('\n')
+      : '';
     return (
       <div style={{ minHeight: '100dvh', display: 'grid', placeItems: 'center', padding: 24, background: 'var(--bg-0)', color: 'var(--ink-1)' }}>
-        <div className="card" style={{ padding: 24, textAlign: 'center', maxWidth: 380 }}>
-          <div style={{ fontSize: 48, marginBottom: 8 }}>⚠️</div>
-          <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>Algo falló</h2>
-          <p style={{ color: 'var(--ink-2)', marginBottom: 16, fontSize: 14 }}>
-            La pantalla se cerró por un error inesperado. Recarga para volver al inicio.
-          </p>
-          <button className="btn primary" onClick={this.reset}>Recargar</button>
+        <div className="card" style={{ padding: 24, textAlign: 'left', maxWidth: 480, width: '100%' }}>
+          <div style={{ fontSize: 36, marginBottom: 6, textAlign: 'center' }}>⚠️</div>
+          <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 10px', textAlign: 'center' }}>Algo falló</h2>
+          <div style={{ background: 'var(--bg-2)', border: '1px solid var(--line)', borderRadius: 8, padding: 10, marginBottom: 10, fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-2)', wordBreak: 'break-word' }}>
+            <strong style={{ color: 'var(--amber)' }}>{msg}</strong>
+            {stack && <pre style={{ whiteSpace: 'pre-wrap', margin: '6px 0 0', fontSize: 10 }}>{stack}</pre>}
+            {comp && <pre style={{ whiteSpace: 'pre-wrap', margin: '6px 0 0', fontSize: 10, color: 'var(--ink-3)' }}>{comp}</pre>}
+          </div>
+          <button className="btn primary" onClick={this.reset} style={{ width: '100%' }}>Recargar</button>
         </div>
       </div>
     );
