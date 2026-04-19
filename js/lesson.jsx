@@ -12,8 +12,9 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
   const [finished, setFinished] = useState(false);
   const containerRef = useRef(null);
 
-  const step = lesson.steps[stepIdx];
-  const progress = stepIdx / lesson.steps.length;
+  const step = lesson?.steps?.[stepIdx];
+  const totalSteps = lesson?.steps?.length || 0;
+  const progress = totalSteps ? stepIdx / totalSteps : 0;
 
   // timer
   useEffect(() => {
@@ -53,6 +54,22 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
 
   if (finished) {
     return <LessonResults lesson={lesson} xp={xp} correct={correct} wrong={wrong} timeUsed={60 - timeLeft} onExit={onExit} onFinish={() => onFinish({ xp, correct, wrong })} />;
+  }
+
+  // Guard: lesson missing steps or stepIdx past end. Render a friendly exit
+  // fallback instead of crashing the whole app on step.kind undefined.
+  if (!step) {
+    const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+    return (
+      <div style={{ position: 'fixed', inset: 0, zIndex: 50, background: 'var(--bg-0)', display: 'grid', placeItems: 'center', padding: 24 }}>
+        <div className="card" style={{ padding: 24, textAlign: 'center', maxWidth: 360 }}>
+          <div style={{ fontSize: 48, marginBottom: 8 }}>⚠️</div>
+          <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>{tr('lesson.unavailable_title', 'Lección no disponible')}</h2>
+          <p style={{ color: 'var(--ink-2)', marginBottom: 16, fontSize: 14 }}>{tr('lesson.unavailable_body', 'No se pudo cargar el contenido. Vuelve y prueba de nuevo.')}</p>
+          <button className="btn primary" onClick={onExit}>{tr('ui.back', 'Salir')}</button>
+        </div>
+      </div>
+    );
   }
 
   return (
