@@ -536,7 +536,7 @@ const WikiScreen = ({ onBack }) => (
       <button className="btn ghost" onClick={onBack} style={{ padding: 8 }}>
         <Icon name="arrowL" size={18} />
       </button>
-      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20 }}>Enciclopedia 3D</div>
+      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20 }}>{(window.stUiT ? window.stUiT('wiki.header', 'Enciclopedia 3D') : 'Enciclopedia 3D')}</div>
     </div>
     <iframe
       src="wiki.html"
