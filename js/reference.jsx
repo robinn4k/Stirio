@@ -342,7 +342,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
         {filtered.length === 0 && (
           <div style={{ gridColumn: '1 / -1', padding: '40px 20px', textAlign: 'center', color: 'var(--ink-3)' }}>
             <div style={{ fontSize: 40, marginBottom: 8 }}>🥃</div>
-            <div style={{ fontSize: 13 }}>Sin resultados</div>
+            <div style={{ fontSize: 13 }}>{tr('fichas.no_results', 'Sin resultados')}</div>
           </div>
         )}
       </div>
@@ -426,7 +426,7 @@ const FichaDetail = ({ ficha, onClose }) => {
       {/* Garnish */}
       {ficha.garnish && (
         <div style={{ padding: '0 24px 20px' }}>
-          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>Garnish</div>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>{tr('ficha.garnish_label', 'Garnish')}</div>
           <div style={{ fontSize: 13, color: 'var(--ink-1)', fontStyle: 'italic' }}>
             {ficha.garnish}
           </div>
