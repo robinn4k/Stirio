@@ -975,7 +975,8 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [editingName, setEditingName] = React.useState(false);
   const [tmpName, setTmpName] = React.useState(profile.name || '');
-  const [units, setUnits] = React.useState('ml');
+  const units = tweaks?.units || 'ml';
+  const setUnits = (u) => onChangeTweak && onChangeTweak('units', u);
   const [lang, setLang] = React.useState((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es');
   const [reduce, setReduce] = React.useState(() => {
     try { return localStorage.getItem('stirio::reduce_motion') === '1'; } catch { return false; }
