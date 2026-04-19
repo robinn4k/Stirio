@@ -127,12 +127,12 @@
 
 // Wiki data from existing wiki-data.js (loaded inline below or via fetch)
 const WIKI_CATEGORIES = [
-  { id: 'highball', label: 'Highball', icon: '🥃', items: ['Mojito', 'Gin & Tonic', 'Moscow Mule', 'Dark \'n\' Stormy'] },
-  { id: 'sours', label: 'Sours', icon: '🍋', items: ['Whiskey Sour', 'Pisco Sour', 'Amaretto Sour', 'Daiquiri'] },
-  { id: 'martini', label: 'Martini & Up', icon: '🍸', items: ['Dry Martini', 'Cosmopolitan', 'Manhattan', 'Negroni'] },
-  { id: 'oldschool', label: 'Old-School', icon: '🥃', items: ['Old Fashioned', 'Sazerac', 'Vieux Carré', 'Toronto'] },
-  { id: 'tiki', label: 'Tiki', icon: '🌺', items: ['Mai Tai', 'Zombie', 'Jungle Bird', 'Painkiller'] },
-  { id: 'spirits', label: 'Espirituosos', icon: '🫙', items: ['Ron Zacapa 23', 'Mezcal Banhez', 'Vodka Grey Goose', 'Gin Hendrick\'s'] },
+  { id: 'highball',  labelKey: 'wiki.cat_highball',  labelFallback: 'Highball',      icon: '🥃', items: ['Mojito', 'Gin & Tonic', 'Moscow Mule', 'Dark \'n\' Stormy'] },
+  { id: 'sours',     labelKey: 'wiki.cat_sours',     labelFallback: 'Sours',         icon: '🍋', items: ['Whiskey Sour', 'Pisco Sour', 'Amaretto Sour', 'Daiquiri'] },
+  { id: 'martini',   labelKey: 'wiki.cat_martini',   labelFallback: 'Martini & Up',  icon: '🍸', items: ['Dry Martini', 'Cosmopolitan', 'Manhattan', 'Negroni'] },
+  { id: 'oldschool', labelKey: 'wiki.cat_oldschool', labelFallback: 'Old-School',    icon: '🥃', items: ['Old Fashioned', 'Sazerac', 'Vieux Carré', 'Toronto'] },
+  { id: 'tiki',      labelKey: 'wiki.cat_tiki',      labelFallback: 'Tiki',          icon: '🌺', items: ['Mai Tai', 'Zombie', 'Jungle Bird', 'Painkiller'] },
+  { id: 'spirits',   labelKey: 'wiki.cat_spirits',   labelFallback: 'Espirituosos',  icon: '🫙', items: ['Ron Zacapa 23', 'Mezcal Banhez', 'Vodka Grey Goose', 'Gin Hendrick\'s'] },
 ];
 
 // i18n bridge: usa window.wikiT inyectado por el module script más abajo
@@ -190,7 +190,7 @@ function buildSidebar(filter) {
     if (!items.length) return;
     const catEl = document.createElement('div');
     catEl.className = 'wiki-category';
-    catEl.textContent = cat.icon + '  ' + cat.label;
+    catEl.textContent = cat.icon + '  ' + wt(cat.labelKey, cat.labelFallback);
     sidebar.appendChild(catEl);
     items.forEach(name => {
       const el = document.createElement('div');
