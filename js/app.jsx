@@ -108,11 +108,11 @@ const App = () => {
     html.setAttribute('data-featured', featured);
   }, [tweaks]);
 
-  // Edit-mode wire (Claude Design preview)
+  // Edit-mode wire (Claude Design preview) — no-op ahora que TweaksPanel se eliminó
   useEffect(() => {
     const h = (e) => {
-      if (e.data?.type === '__activate_edit_mode')   setTweakMode(true);
-      if (e.data?.type === '__deactivate_edit_mode') setTweakMode(false);
+      if (e.data?.type === '__activate_edit_mode')   return;
+      if (e.data?.type === '__deactivate_edit_mode') return;
     };
     window.addEventListener('message', h);
     window.parent.postMessage({ type: '__edit_mode_available' }, '*');
