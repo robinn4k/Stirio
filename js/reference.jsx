@@ -382,7 +382,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
           <input
             value={q}
             onChange={e => setQ(e.target.value)}
-            placeholder="Buscar cóctel o ingrediente…"
+            placeholder={tr('fichas.search_placeholder', 'Buscar cóctel o ingrediente…')}
             style={{
               width: '100%', padding: '12px 14px 12px 38px',
               background: 'var(--bg-2)',
