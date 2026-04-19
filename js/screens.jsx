@@ -361,7 +361,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)',
           marginBottom: 6,
         }}>
-          <span>Nivel {profile.level} · {profile.title}</span>
+          <span>{(window.stLang && window.stLang.t) ? window.stLang.t('profile.level_line', { level: profile.level, title: profile.title }) : `Nivel ${profile.level} · ${profile.title}`}</span>
           <span>{profile.xp} / {profile.xpNext} xp</span>
         </div>
         <div style={{ height: 8, background: 'var(--bg-2)', borderRadius: 99, overflow: 'hidden', border: '1px solid var(--line-soft)' }}>
