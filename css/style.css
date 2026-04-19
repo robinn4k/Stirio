@@ -11,6 +11,19 @@ html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 }
+/* Text size scales the whole app via CSS zoom — works because most of the
+   inline styles use absolute px values. zoom is supported in modern Safari/
+   Chromium/Firefox 126+. Falls back gracefully (no scale) on older engines. */
+html[data-text-scale="sm"]  body { zoom: 0.9; }
+html[data-text-scale="lg"]  body { zoom: 1.12; }
+html[data-reduce-motion="1"] *,
+html[data-reduce-motion="1"] *::before,
+html[data-reduce-motion="1"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
 
 body {
   min-height: 100dvh;

@@ -719,8 +719,23 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
   const [notif, setNotif] = React.useState(true);
   const [units, setUnits] = React.useState('ml');
   const [lang, setLang] = React.useState((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es');
-  const [reduce, setReduce] = React.useState(false);
-  const [textScale, setTextScale] = React.useState('default');
+  const [reduce, setReduce] = React.useState(() => {
+    try { return localStorage.getItem('stirio::reduce_motion') === '1'; } catch { return false; }
+  });
+  const [textScale, setTextScale] = React.useState(() => {
+    try { return localStorage.getItem('stirio::text_scale') || 'default'; } catch { return 'default'; }
+  });
+
+  // Apply text scale + reduced motion to <html> as data-* attributes so
+  // tokens.css / style.css media queries can react. Persist to localStorage.
+  React.useEffect(() => {
+    document.documentElement.setAttribute('data-text-scale', textScale);
+    try { localStorage.setItem('stirio::text_scale', textScale); } catch {}
+  }, [textScale]);
+  React.useEffect(() => {
+    document.documentElement.setAttribute('data-reduce-motion', reduce ? '1' : '0');
+    try { localStorage.setItem('stirio::reduce_motion', reduce ? '1' : '0'); } catch {}
+  }, [reduce]);
 
   // Real achievements (loaded from localStorage + Firestore sync)
   const [achievements, setAchievements] = React.useState([]);
@@ -1161,7 +1176,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-4)',
           letterSpacing: '0.1em', textTransform: 'uppercase',
         }}>
-          Stirio v0.9.2 · Hecho con ❤️ en Madrid
+          Stirio v0.9.2 · Hecho con ❤️ en Málaga
         </div>
       </section>
     </div>
