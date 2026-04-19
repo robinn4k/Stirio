@@ -248,7 +248,7 @@ const LegalFooter = () => {
   const linkStyle = { color: 'inherit', textDecoration: 'none' };
   return (
     <footer style={{
-      padding: '6px 16px calc(96px + env(safe-area-inset-bottom, 0px))',
+      padding: '6px 16px 8px',
       textAlign: 'center',
       color: 'var(--ink-3)',
       fontSize: 9,

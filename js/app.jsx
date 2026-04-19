@@ -353,6 +353,13 @@ const App = () => {
         />
       )}
 
+      {/* Legal footer — inside scroll area so it rides above the fixed BottomNav */}
+      {screen !== 'onboarding' && screen !== 'auth' && !activeLesson && (
+        <div style={{ paddingBottom: 'calc(100px + env(safe-area-inset-bottom, 0px))' }}>
+          <LegalFooter />
+        </div>
+      )}
+
       {!activeLesson && screen !== 'onboarding' && !subScreen && (
         <BottomNav
           current={screen}
@@ -385,8 +392,6 @@ const App = () => {
         overflow: asDesktop ? 'visible' : 'hidden',
       }}>
         {appContent}
-        {/* Legal footer — rendered at the end of every screen's scroll area */}
-        {screen !== 'onboarding' && screen !== 'auth' && !activeLesson && <LegalFooter />}
       </div>
 
       {/* Cookie consent banner (GDPR) — hides once accepted */}
