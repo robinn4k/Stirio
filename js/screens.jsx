@@ -384,12 +384,12 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* Academy */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="learn" title="Cocktail Academy" action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6 familias</span>} />
+        <SectionHeader eyebrow={tr('home.academy_eyebrow', 'aprende')} title={tr('academy.title_ui', 'Cocktail Academy')} action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6</span>} />
         <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}> 75 / 0.3)' }}>
           <div style={{ fontSize: 54, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>🎓</div>
           <div style={{ flex: 1 }}>
-            <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>Aprende paso a paso</div>
-            <div style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 10 }}>Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…</div>
+            <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>{tr('home.academy_title', 'Aprende paso a paso')}</div>
+            <div style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 10 }}>{tr('home.academy_sub', 'Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…')}</div>
             <div style={{ display: 'flex', gap: 6 }}>
               {['Sours', 'Highballs', 'Martinis', 'Old-school', 'Tiki', 'Modernos'].map((n, i) => (
                 <div key={n} style={{
@@ -401,41 +401,41 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
             </div>
           </div>
           <button className="btn primary" onClick={() => onOpenMode('academy')} style={{ padding: '12px 18px' }}>
-            Abrir <Icon name="arrowR" size={14} />
+            {tr('home.academy_cta', 'Abrir')} <Icon name="arrowR" size={14} />
           </button>
         </div>
       </section>
 
       {/* Quick modes */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="play" title="Modos rápidos" />
+        <SectionHeader eyebrow={tr('home.quick_eyebrow', 'jugar')} title={tr('home.quick_title', 'Modos rápidos')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 10 }}>
-          <ModeCard icon="⚡" title="Velocidad" caption="60 segundos" accent="amber" onClick={() => onOpenMode('speed')} />
-          <ModeCard icon="🍹" title="Constructor" caption="Adivina por ingredientes" accent="cyan" onClick={() => onOpenMode('builder')} />
-          <ModeCard icon="👃" title="Cata a ciegas" caption="35+ destilados" accent="violet" onClick={() => onOpenMode('blind')} />
-          <ModeCard icon="🎲" title="Quiz libre" caption="24 rondas" accent="berry" onClick={() => onOpenMode('freequiz')} />
+          <ModeCard icon="⚡" title={tr('home.speed_title', 'Velocidad')} caption={tr('home.speed_caption', '60 segundos')} accent="amber" onClick={() => onOpenMode('speed')} />
+          <ModeCard icon="🍹" title={tr('home.builder_title', 'Constructor')} caption={tr('home.builder_caption', 'Adivina por ingredientes')} accent="cyan" onClick={() => onOpenMode('builder')} />
+          <ModeCard icon="👃" title={tr('home.blind_title', 'Cata a ciegas')} caption={tr('home.blind_caption', '35+ destilados')} accent="violet" onClick={() => onOpenMode('blind')} />
+          <ModeCard icon="🎲" title={tr('home.freequiz_title', 'Quiz libre')} caption={tr('home.freequiz_caption', '24 rondas')} accent="berry" onClick={() => onOpenMode('freequiz')} />
         </div>
       </section>
 
       {/* Mini games + Arcade */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="arcade" title="Mini juegos" />
+        <SectionHeader eyebrow={tr('home.arcade_eyebrow', 'arcade')} title={tr('home.arcade_title', 'Mini juegos')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
-          <ArcadeCard title="Arcade Coctelero" subtitle="Aprende recetas jugando" icon="🕹️" onClick={() => onOpenMode('arcade')} />
-          <ArcadeCard title="Memoria de Garnish" subtitle="Empareja guarniciones" icon="🧠" onClick={() => onOpenMode('memory')} />
-          <ArcadeCard title="Ritmo de Shaker" subtitle="Agita al compás" icon="🥁" onClick={() => onOpenMode('rhythm')} />
+          <ArcadeCard title={tr('home.arcade_coctelero', 'Arcade Coctelero')} subtitle={tr('home.arcade_coctelero_sub', 'Aprende recetas jugando')} icon="🕹️" onClick={() => onOpenMode('arcade')} />
+          <ArcadeCard title={tr('home.memory_title', 'Memoria de Garnish')} subtitle={tr('home.memory_sub', 'Empareja guarniciones')} icon="🧠" onClick={() => onOpenMode('memory')} />
+          <ArcadeCard title={tr('home.rhythm_title', 'Ritmo de Shaker')} subtitle={tr('home.rhythm_sub', 'Agita al compás')} icon="🥁" onClick={() => onOpenMode('rhythm')} />
         </div>
       </section>
 
       {/* Reference */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="reference" title="Referencia rápida" />
+        <SectionHeader eyebrow={tr('home.ref_eyebrow', 'referencia')} title={tr('home.ref_title', 'Referencia rápida')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 10 }}>
-          <RefTile icon="📖" label="Fichas IBA" count="90" onClick={() => onOpenMode('iba')} />
-          <RefTile icon="🌐" label="Enciclopedia" count="∞" onClick={() => onOpenMode('wiki')} />
-          <RefTile icon="📝" label="Glosario" count="70+" onClick={() => onOpenMode('glossary')} />
-          <RefTile icon="🗺️" label="Mapa destilados" count="12" onClick={() => onOpenMode('map')} />
-          <RefTile icon="📚" label="Biblioteca 3D" count="24" onClick={() => onOpenMode('library')} />
+          <RefTile icon="📖" label={tr('home.ref_iba', 'Fichas IBA')} count="90" onClick={() => onOpenMode('iba')} />
+          <RefTile icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')} count="∞" onClick={() => onOpenMode('wiki')} />
+          <RefTile icon="📝" label={tr('home.ref_glossary', 'Glosario')} count="70+" onClick={() => onOpenMode('glossary')} />
+          <RefTile icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')} count="12" onClick={() => onOpenMode('map')} />
+          <RefTile icon="📚" label={tr('home.ref_library', 'Biblioteca 3D')} count="24" onClick={() => onOpenMode('library')} />
         </div>
       </section>
 
@@ -598,7 +598,9 @@ const DailyCard = ({ onPlay }) => (
   </button>
 );
 
-const DuelCard = ({ onPlay }) => (
+const DuelCard = ({ onPlay }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  return (
   <button onClick={onPlay} className="card" style={{
     padding: 18, textAlign: 'left', cursor: 'pointer',
     display: 'flex', flexDirection: 'column', gap: 8,
@@ -613,10 +615,11 @@ const DuelCard = ({ onPlay }) => (
       <div className="mono caps" style={{ color: 'var(--berry)', fontSize: 10 }}>multiplayer</div>
       <div style={{ fontSize: 22 }}>⚔️</div>
     </div>
-    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>Duelo 1 vs 1</div>
-    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>Amigo · aleatorio · bot</div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{tr('home.duel_sub_title', 'Duelo 1 vs 1')}</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{tr('duel.menu_join', 'Amigo')} · {tr('duel.menu_random', 'aleatorio')} · {tr('duel.menu_bot', 'bot')}</div>
   </button>
-);
+  );
+};
 
 const ModeCard = ({ icon, title, caption, accent, onClick }) => (
   <button onClick={onClick} className="card mobile-mode-card" style={{

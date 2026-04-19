@@ -177,7 +177,7 @@ const LobbyHost = ({ code, maxPlayers, players, myUid, isHost, canStart, onStart
         })}
       </div>
       <div style={{ display: 'flex', gap: 10 }}>
-        <button className="btn" onClick={onLeave} style={{ flex: 1 }}>Cancelar</button>
+        <button className="btn" onClick={onLeave} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.cancel', 'Cancelar') : 'Cancelar')}</button>
         {isHost && (
           <button className="btn primary" onClick={onStart} disabled={!canStart}
             style={{ flex: 2, opacity: canStart ? 1 : 0.5 }}>
@@ -227,7 +227,7 @@ const LobbyJoin = ({ onSubmit, onCancel, loading }) => {
         />
       </div>
       <div style={{ display: 'flex', gap: 10 }}>
-        <button className="btn" onClick={onCancel} style={{ flex: 1 }}>Volver</button>
+        <button className="btn" onClick={onCancel} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Volver') : 'Volver')}</button>
         <button className="btn primary" onClick={submit} disabled={code.length !== 6 || loading}
           style={{ flex: 2, opacity: (code.length === 6 && !loading) ? 1 : 0.5 }}>
           {loading ? 'Uniendo…' : 'Unirse a sala →'}
@@ -409,7 +409,7 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematch, onExit }) => {
         ))}
       </div>
       <div style={{ display: 'flex', gap: 10 }}>
-        <button className="btn" onClick={onExit} style={{ flex: 1 }}>Volver</button>
+        <button className="btn" onClick={onExit} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Volver') : 'Volver')}</button>
         <button className="btn primary" onClick={onRematch} style={{ flex: 2 }}>Revancha</button>
       </div>
     </div>

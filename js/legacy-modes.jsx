@@ -46,8 +46,8 @@ const FinishCard = ({ icon, correct, total, onRetry, onBack }) => {
         Acertaste <strong>{correct}/{total}</strong>
       </p>
       <div style={{ display: 'flex', gap: 10 }}>
-        <button className="btn" onClick={onBack} style={{ flex: 1 }}>Salir</button>
-        <button className="btn primary" onClick={onRetry} style={{ flex: 1 }}>Jugar otra vez</button>
+        <button className="btn" onClick={onBack} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Salir') : 'Salir')}</button>
+        <button className="btn primary" onClick={onRetry} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.play_again', 'Jugar otra vez') : 'Jugar otra vez')}</button>
       </div>
     </div>
   );
