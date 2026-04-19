@@ -17,6 +17,7 @@ const TWEAK_DEFAULTS = {
   featuredLayout: 'stacked',
   device: 'mobile',
   playShortcut: 'daily',
+  units: 'ml',
 };
 
 const LS_STATE  = 'stirio::state::v2';
@@ -436,7 +437,7 @@ const App = () => {
       )}
 
       {fichaOpen && (
-        <FichaDetail ficha={fichaOpen} onClose={() => setFichaOpen(null)} />
+        <FichaDetail ficha={fichaOpen} units={tweaks.units || 'ml'} onClose={() => setFichaOpen(null)} />
       )}
 
       {activeMode && !activeLesson && (

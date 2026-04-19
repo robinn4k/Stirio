@@ -369,7 +369,23 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
 
 // ═══════════════ FICHA DETAIL ═══════════════
 
-const FichaDetail = ({ ficha, onClose }) => {
+// 1 ml → 0.033814 US fl oz. Rounds to 0.25-oz precision for drinkable values,
+// 0.1-oz otherwise. Only touches numeric ml quantities — leaves dashes, "top",
+// barspoons, and any existing oz values alone.
+const ML_PER_OZ = 29.5735;
+const mlStringToOz = (str) => str.replace(/(\d+(?:[.,]\d+)?)\s*ml\b/gi, (_, num) => {
+  const ml = parseFloat(num.replace(',', '.'));
+  if (!isFinite(ml)) return `${num} ml`;
+  const oz = ml / ML_PER_OZ;
+  // Round to nearest quarter for common bartending values (0.25 / 0.5 / 0.75 / 1)
+  const rounded = Math.abs(oz - Math.round(oz * 4) / 4) < 0.05
+    ? (Math.round(oz * 4) / 4)
+    : Math.round(oz * 10) / 10;
+  const out = Number.isInteger(rounded) ? `${rounded}` : rounded.toString();
+  return `${out} oz`;
+});
+
+const FichaDetail = ({ ficha, units = 'ml', onClose }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const heroImg = window.getFichaImage ? window.getFichaImage(ficha.name) : null;
   return (
@@ -438,7 +454,7 @@ const FichaDetail = ({ ficha, onClose }) => {
               fontSize: 13,
             }}>
               <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--amber)', flexShrink: 0 }} />
-              {ing}
+              {units === 'oz' ? mlStringToOz(ing) : ing}
             </div>
           ))}
         </div>
