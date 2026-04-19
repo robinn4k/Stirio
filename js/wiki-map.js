@@ -423,7 +423,15 @@ function applyFilter() {
 let _filterOutsideHandler = null;
 
 function buildFilterPanel(container) {
-  // Mobile-only toggle button (hidden on desktop via CSS media query)
+  // Count entries per filter group up front so users can see scope at a glance
+  // ("Vinos · 39") without needing to toggle each category to discover it.
+  const countsByGroup = {};
+  FILTER_GROUPS.forEach(g => {
+    countsByGroup[g.id] = SPIRIT_REGIONS.filter(r => g.spirits.includes(r.spirit)).length;
+  });
+
+  // Mobile-only summary/toggle button (hidden on desktop via CSS media query).
+  // On desktop the panel is always visible; the toggle is inert.
   const toggle = document.createElement('button');
   toggle.type = 'button';
   toggle.className = 'spirit-map-filter-toggle';
@@ -445,6 +453,8 @@ function buildFilterPanel(container) {
 
   FILTER_GROUPS.forEach(group => {
     const color = SPIRIT_COLORS[group.spirits[0]] || '#ffffff';
+    const label = tOr(`wiki.map.filter.${group.id}`, FILTER_LABELS_ES[group.id] || titleCase(group.id));
+    const count = countsByGroup[group.id] || 0;
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'spirit-map-filter-btn active';
@@ -452,7 +462,8 @@ function buildFilterPanel(container) {
     btn.style.setProperty('--filter-color', color);
     btn.innerHTML = `
       <span class="spirit-map-filter-dot" style="background:${color}"></span>
-      <span class="spirit-map-filter-label">${tOr(`wiki.map.filter.${group.id}`, FILTER_LABELS_ES[group.id] || titleCase(group.id))}</span>
+      <span class="spirit-map-filter-label">${label}</span>
+      <span class="spirit-map-filter-badge">${count}</span>
     `;
     btn.addEventListener('click', () => {
       if (activeGroups.has(group.id)) {
