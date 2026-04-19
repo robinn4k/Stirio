@@ -36,6 +36,49 @@
       width: 10px; height: 10px; border-radius: 50%;
       display: inline-block; box-shadow: 0 0 6px currentColor;
     }
+    /* Collapsible toggle (visible only on mobile) */
+    .spirit-map-filter-toggle {
+      display: none;
+      align-items: center; gap: 8px;
+      margin: 10px 12px 0;
+      padding: 8px 14px;
+      background: var(--bg-1, #12080a);
+      color: var(--ink-1, #eee);
+      border: 1px solid var(--line, #2a1c1e);
+      border-radius: 99px;
+      font-size: 13px; font-family: inherit; cursor: pointer;
+      align-self: flex-start;
+    }
+    .spirit-map-filter-toggle-caret {
+      transition: transform 0.2s;
+      font-size: 10px; color: var(--ink-3, #888);
+    }
+    .spirit-map-filter-toggle.open .spirit-map-filter-toggle-caret {
+      transform: rotate(180deg);
+    }
+    .spirit-map-filter-count {
+      font-family: var(--f-mono, monospace);
+      color: var(--amber, #d4a24c);
+      font-size: 11px;
+    }
+    @media (max-width: 600px) {
+      .spirit-map-filter-toggle { display: inline-flex; }
+      .spirit-map-filter {
+        display: none;
+        flex-direction: row; flex-wrap: wrap;
+        overflow: visible;
+        padding: 8px 12px 10px;
+      }
+      .spirit-map-filter.open { display: flex; }
+      .spirit-map-filter-btn {
+        flex: 1 1 calc(50% - 3px);
+        justify-content: center;
+        min-width: 0;
+      }
+      .spirit-map-filter-label {
+        overflow: hidden; text-overflow: ellipsis;
+      }
+    }
     .spirit-map-body { flex: 1; position: relative; }
     .spirit-map-body .leaflet-container { width: 100%; height: 100%; background: var(--bg-0, #0d0508); }
     .spirit-marker-dot {

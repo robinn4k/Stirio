@@ -418,9 +418,30 @@ function applyFilter() {
   });
 }
 
+// Document-level click listener for closing the mobile filter dropdown on
+// outside tap. Kept module-scoped so disposeMap() can remove it cleanly.
+let _filterOutsideHandler = null;
+
 function buildFilterPanel(container) {
+  // Mobile-only toggle button (hidden on desktop via CSS media query)
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'spirit-map-filter-toggle';
+  toggle.innerHTML = `
+    <span aria-hidden="true">🎛</span>
+    <span>${tOr('wiki.map.filters', 'Filtros')}</span>
+    <span class="spirit-map-filter-count" data-filter-count></span>
+    <span class="spirit-map-filter-toggle-caret" aria-hidden="true">▾</span>
+  `;
+  container.appendChild(toggle);
+
   const panel = document.createElement('div');
   panel.className = 'spirit-map-filter';
+
+  const updateCount = () => {
+    const el = toggle.querySelector('[data-filter-count]');
+    if (el) el.textContent = `${activeGroups.size}/${FILTER_GROUPS.length}`;
+  };
 
   FILTER_GROUPS.forEach(group => {
     const color = SPIRIT_COLORS[group.spirits[0]] || '#ffffff';
@@ -442,11 +463,32 @@ function buildFilterPanel(container) {
         btn.classList.add('active');
       }
       applyFilter();
+      updateCount();
     });
     panel.appendChild(btn);
   });
 
   container.appendChild(panel);
+  updateCount();
+
+  // Toggle open/close (mobile) — no-op visually on desktop since CSS always
+  // shows the panel there.
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = panel.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+  });
+
+  // Close when tapping outside. Remove any previous listener before adding a
+  // new one (safe if buildFilterPanel is re-invoked on map remount).
+  if (_filterOutsideHandler) document.removeEventListener('click', _filterOutsideHandler);
+  _filterOutsideHandler = (e) => {
+    if (!panel.contains(e.target) && !toggle.contains(e.target)) {
+      panel.classList.remove('open');
+      toggle.classList.remove('open');
+    }
+  };
+  document.addEventListener('click', _filterOutsideHandler);
 }
 
 // Fallback ES labels used when no i18n value exists for wiki.map.* keys.
@@ -587,5 +629,9 @@ export function disposeMap() {
   if (mapInstance) {
     mapInstance.remove();
     mapInstance = null;
+  }
+  if (_filterOutsideHandler) {
+    document.removeEventListener('click', _filterOutsideHandler);
+    _filterOutsideHandler = null;
   }
 }
