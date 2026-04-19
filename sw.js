@@ -95,7 +95,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.21`;
+const STATIC_CACHE_VERSION = `Stirio-v10.22`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
