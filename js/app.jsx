@@ -341,8 +341,8 @@ const App = () => {
         ...(asDesktop ? {} : {
           display: 'grid', placeItems: 'center',
           background: `
-            radial-gradient(1200px 600px at 20% 10%, var(--amber-glow), transparent 60%),
-            radial-gradient(900px 500px at 80% 90%, var(--cyan-soft), transparent 60%),
+            radial-gradient(1000px 500px at 20% 10%, var(--amber-glow), transparent 60%),
+            radial-gradient(700px 300px at 85% 10%, var(--cyan-soft), transparent 65%),
             var(--bg-0)
           `,
           padding: '0',
