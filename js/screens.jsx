@@ -1020,28 +1020,38 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
     try { localStorage.setItem('stirio::reduce_motion', reduce ? '1' : '0'); } catch {}
   }, [reduce]);
 
-  // Real achievements (loaded from localStorage + Firestore sync)
+  // Real achievements (loaded from localStorage + Firestore sync).
+  // Refreshed on mount, on the 'stirio:achievement' event (dispatched by
+  // checkAchievements whenever stats change), and on window focus — so the
+  // Profile UI never shows stale logros after a game finishes.
   const [achievements, setAchievements] = React.useState([]);
   React.useEffect(() => {
     let cancelled = false;
+    const readLocal = () => {
+      try {
+        if (!cancelled && window.stAchievements?.getAchievements) {
+          setAchievements(window.stAchievements.getAchievements());
+        }
+      } catch {}
+    };
     const loadAch = async () => {
       if (!window.stAchievements) return;
       try {
         if (window.stAchievements.loadAchievementsFromCloud) {
           await window.stAchievements.loadAchievementsFromCloud();
         }
-        if (!cancelled && window.stAchievements.getAchievements) {
-          setAchievements(window.stAchievements.getAchievements());
-        }
+        readLocal();
       } catch {}
     };
-    // Poll until stAchievements is loaded
     if (window.stAchievements) loadAch();
-    else {
-      const t = setTimeout(loadAch, 300);
-      return () => { cancelled = true; clearTimeout(t); };
-    }
-    return () => { cancelled = true; };
+    else setTimeout(loadAch, 300);
+    window.addEventListener('stirio:achievement', readLocal);
+    window.addEventListener('focus', readLocal);
+    return () => {
+      cancelled = true;
+      window.removeEventListener('stirio:achievement', readLocal);
+      window.removeEventListener('focus', readLocal);
+    };
   }, []);
 
   // Real leaderboard (Firestore query)
