@@ -1976,5 +1976,15 @@
   "duel.rematch": "Revanche",
   "duel.back_menu": "Voltar ao menu",
   "duel.bot_mode": "Contra bot",
-  "wiki.header": "Enciclopédia 3D"
+  "wiki.header": "Enciclopédia 3D",
+  "finish.title": "Rodada terminada!",
+  "finish.hits": "Você acertou {correct}/{total}",
+  "finish.loading": "Carregando módulo…",
+  "blind.title": "Degustação cega",
+  "blind.subtitle": "Blind tasting",
+  "blind.question": "Pergunta {n} · {total}",
+  "blind.clues": "Pistas {n}/{total}",
+  "blind.reveal_next": "+ Revelar próxima pista",
+  "builder.title": "Construtor",
+  "builder.subtitle": "Ingredientes → coquetel"
 }

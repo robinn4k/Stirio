@@ -3260,5 +3260,15 @@
   "duel.rematch": "Revancha",
   "duel.back_menu": "Volver al menú",
   "duel.bot_mode": "Contra bot",
-  "wiki.header": "Enciclopedia 3D"
+  "wiki.header": "Enciclopedia 3D",
+  "finish.title": "¡Ronda terminada!",
+  "finish.hits": "Acertaste {correct}/{total}",
+  "finish.loading": "Cargando módulo…",
+  "blind.title": "Cata a ciegas",
+  "blind.subtitle": "Blind tasting",
+  "blind.question": "Pregunta {n} · {total}",
+  "blind.clues": "Pistas {n}/{total}",
+  "blind.reveal_next": "+ Revelar pista siguiente",
+  "builder.title": "Constructor",
+  "builder.subtitle": "Ingredientes → cóctel"
 }
