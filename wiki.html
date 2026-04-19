@@ -6,6 +6,23 @@
   <title>Stirio Wiki 3D</title>
   <link rel="stylesheet" href="css/tokens.css">
   <style>
+    /* Legacy-token aliases: wiki.html was authored against a token schema
+       (--bg, --text, --surface, --accent…) that doesn't exist in tokens.css.
+       Without these aliases every var() resolves to empty string and the
+       page renders invisible on a transparent background. Map each legacy
+       name onto the real token. Scoped to this file via :root in <style>. */
+    :root {
+      --bg: var(--bg-0);
+      --text: var(--ink-0);
+      --text-2: var(--ink-2);
+      --text-muted: var(--ink-3);
+      --surface: var(--bg-1);
+      --surface-2: var(--bg-2);
+      --border: var(--line-soft);
+      --accent: var(--amber);
+      --font-sans: var(--f-ui);
+      --font-serif: var(--f-serif);
+    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; background: var(--bg); color: var(--text); font-family: var(--font-sans); overflow: hidden; }
     #wiki-root { height: 100vh; display: flex; flex-direction: column; }
