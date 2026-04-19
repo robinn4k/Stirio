@@ -289,6 +289,7 @@ const Onboarding = ({ onDone }) => {
 
 // ═══════════════ HOME ═══════════════
 const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   // Real leaderboard preview
   const [leaderboardPreview, setLeaderboardPreview] = React.useState([]);
   React.useEffect(() => {
@@ -440,7 +441,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* Up next (60s) */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="60s queue" title="Rondas de 60 segundos" action={<button className="btn ghost" style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}><Icon name="shuffle" size={14} /> Aleatorio</button>} />
+        <SectionHeader eyebrow={tr('home.queue_eyebrow', '60s queue')} title={tr('home.queue_title', 'Rondas de 60 segundos')} action={<button className="btn ghost" style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}><Icon name="shuffle" size={14} /> Aleatorio</button>} />
         <div className="mobile-grid-lessons" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 12 }}>
           {LESSONS.map(l => <LessonCard key={l.id} lesson={l} onPlay={() => onPickLesson(l)} />)}
         </div>
@@ -448,7 +449,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* leaderboard preview */}
       <section>
-        <SectionHeader eyebrow="global" title="Ranking mundial" action={<button className="btn ghost" style={{ fontFamily: 'var(--f-mono)', fontSize: 11, padding: '6px 10px' }} onClick={onOpenProfile}>Ver todos →</button>} />
+        <SectionHeader eyebrow={tr('home.ranking_eyebrow', 'global')} title={tr('home.ranking', 'Ranking mundial')} action={<button className="btn ghost" style={{ fontFamily: 'var(--f-mono)', fontSize: 11, padding: '6px 10px' }} onClick={onOpenProfile}>{tr('home.see_all', 'Ver todos →')}</button>} />
         <div className="card" style={{ padding: 4 }}>
           {(leaderboardPreview.length ? leaderboardPreview : []).map((p, i) => (
             <div key={`${p.name}-${i}`} style={{
@@ -475,7 +476,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           ))}
           {leaderboardPreview.length === 0 && (
             <div style={{ padding: '14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 12 }}>
-              Juega una ronda para aparecer en el ranking
+              {tr('home.no_ranking', 'Juega una ronda para aparecer en el ranking')}
             </div>
           )}
         </div>
@@ -694,6 +695,7 @@ const RefTile = ({ icon, label, count, onClick }) => (
 
 // ═══════════════ PROFILE ═══════════════
 const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, tweaks, onChangeTweak, playShortcuts }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [editingName, setEditingName] = React.useState(false);
   const [tmpName, setTmpName] = React.useState(profile.name || '');
   const [notif, setNotif] = React.useState(true);
@@ -841,7 +843,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
       {/* activity graph */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow="last 7 weeks" title="Activity" />
+        <SectionHeader eyebrow={tr('profile.activity_eyebrow', 'últimas 7 semanas')} title={tr('profile.activity', 'Actividad')} />
         <div className="card" style={{ padding: 18 }}>
           <ActivityHeatmap />
         </div>
@@ -851,7 +853,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
       <section style={{ marginBottom: 24 }}>
         <SectionHeader
           eyebrow={`${achievements.filter(a => a.unlocked).length} / ${achievements.length || ACHIEVEMENTS.length}`}
-          title="Achievements"
+          title={tr('profile.achievements', 'Logros')}
         />
         <div style={{
           display: 'grid',
@@ -879,7 +881,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
       {/* leaderboard full (real, from Firestore) */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow="ranking" title="Global leaderboard" />
+        <SectionHeader eyebrow={tr('profile.ranking_eyebrow', 'ranking')} title={tr('profile.ranking_title', 'Ranking global')} />
         <div className="card" style={{ padding: 4 }}>
           {(leaderboard.length ? leaderboard : []).map((p, i) => (
             <div key={`${p.name}-${i}`} style={{
@@ -904,7 +906,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           ))}
           {leaderboard.length === 0 && (
             <div style={{ padding: '18px 14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 13 }}>
-              Todavía no hay clasificación. Juega una partida para aparecer aquí.
+              {tr('profile.no_ranking', 'Todavía no hay clasificación. Juega una partida para aparecer aquí.')}
             </div>
           )}
         </div>
@@ -912,11 +914,11 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
       {/* SETTINGS */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow="ajustes" title="Cuenta" />
+        <SectionHeader eyebrow={tr('profile.eyebrow_ajustes', 'ajustes')} title={tr('profile.account_title', 'Cuenta')} />
         <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
           <SettingsRow
             icon="👤"
-            label="Nombre"
+            label={tr('profile.name', 'Nombre')}
             value={editingName ? (
               <div style={{ display: 'flex', gap: 6 }}>
                 <input
@@ -949,7 +951,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
           <SettingsRow
             icon="🎨"
-            label="Tema"
+            label={tr('profile.theme', 'Tema')}
             value={
               <select
                 value={tweaks?.theme || 'lounge'}
@@ -971,7 +973,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="▶️"
-            label="Acceso rápido (play)"
+            label={tr('profile.play_shortcut', 'Acceso rápido')}
             value={
               <select
                 value={tweaks?.playShortcut || 'daily'}
@@ -991,7 +993,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🌐"
-            label="Idioma"
+            label={tr('profile.language', 'Idioma')}
             value={
               <select
                 value={lang}
@@ -1049,7 +1051,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🔤"
-            label="Tamaño de texto"
+            label={tr('profile.text_size', 'Tamaño de texto')}
             value={
               <div style={{ display: 'flex', gap: 4, background: 'var(--bg-2)', padding: 3, borderRadius: 8 }}>
                 {[['sm','A'],['default','A'],['lg','A']].map(([v, a], i) => (
@@ -1068,7 +1070,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
           <SettingsRow
             icon="💾"
-            label="Exportar datos"
+            label={tr('profile.export', 'Exportar datos')}
             value={<button onClick={() => {
               const data = JSON.stringify({ profile, tweaks }, null, 2);
               const blob = new Blob([data], { type: 'application/json' });
@@ -1079,9 +1081,9 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🗑️"
-            label="Borrar progreso"
+            label={tr('profile.delete_progress', 'Borrar progreso')}
             value={<button onClick={async () => {
-              if (!confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) return;
+              if (!confirm(tr('profile.delete_progress_confirm', '¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.'))) return;
               // Try to also delete cloud data if signed in
               const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
               if (signedIn && window.stAuth.deleteUserData) {
@@ -1092,29 +1094,29 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🚪"
-            label="Cerrar sesión"
+            label={tr('profile.sign_out', 'Cerrar sesión')}
             value={<button onClick={() => {
-              if (confirm('¿Cerrar sesión? Volverás al onboarding.')) {
+              if (confirm(tr('profile.sign_out_confirm', '¿Cerrar sesión? Volverás al onboarding.'))) {
                 onLogout && onLogout();
               }
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>logout →</button>}
           />
           <SettingsRow
             icon="⚠️"
-            label="Borrar cuenta"
+            label={tr('profile.delete_account', 'Borrar cuenta')}
             isLast
             value={<button onClick={async () => {
               const me = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser();
               if (!me || me.isGuest) {
-                alert('Solo disponible para cuentas Google.');
+                alert(tr('profile.delete_account_only_google', 'Solo disponible para cuentas Google.'));
                 return;
               }
-              if (!confirm('¿Borrar tu cuenta de Stirio y todos tus datos? Esta acción es irreversible.')) return;
+              if (!confirm(tr('profile.delete_account_confirm', '¿Borrar tu cuenta de Stirio y todos tus datos? Esta acción es irreversible.'))) return;
               try {
                 await window.stAuth.deleteUserAccount();
                 onLogout && onLogout();
               } catch (e) {
-                alert('No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.');
+                alert(tr('profile.delete_account_error', 'No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.'));
                 console.warn('delete account failed:', e);
               }
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>eliminar →</button>}

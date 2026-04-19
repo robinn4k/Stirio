@@ -44,7 +44,6 @@ const App = () => {
     level: 4, title: 'Apprentice', streak: 3, avatar: null,
   });
   const [tweaks, setTweaks]           = useState(loadTweaks());
-  const [tweakMode, setTweakMode]     = useState(false);
   const [activeLesson, setActiveLesson] = useState(null);
   const [subScreen, setSubScreen]     = useState(null);
   const [fichaOpen, setFichaOpen]     = useState(null);
@@ -357,30 +356,8 @@ const App = () => {
         {screen !== 'onboarding' && screen !== 'auth' && !activeLesson && <LegalFooter />}
       </div>
 
-      {/* Tweaks panel — floating overlay */}
-      {tweakMode && (
-        <TweaksPanel tweaks={tweaks} onChange={updateTweak} onClose={() => setTweakMode(false)} />
-      )}
-
       {/* Cookie consent banner (GDPR) — hides once accepted */}
       <CookieBanner />
-
-      {/* Tweaks trigger button — always visible for dev/preview */}
-      <button
-        onClick={() => setTweakMode(t => !t)}
-        title="Tweaks"
-        style={{
-          position: 'fixed', bottom: 90, right: 18, zIndex: 50,
-          width: 40, height: 40, borderRadius: '50%',
-          background: 'var(--bg-2)', border: '1px solid var(--line)',
-          color: 'var(--ink-2)',
-          display: 'grid', placeItems: 'center',
-          boxShadow: 'var(--shadow-md)',
-          transition: 'color .15s',
-        }}
-      >
-        <Icon name="settings" size={18} />
-      </button>
     </>
   );
 };

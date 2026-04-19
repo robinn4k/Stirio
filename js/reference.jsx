@@ -20,6 +20,7 @@ const levelCompleted = (progress, level) => {
 };
 
 const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
   const [openLevel, setOpenLevel] = useStateRef(null);
   const progress = loadAcademyProgress();
@@ -43,8 +44,8 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>Learn</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>Cocktail Academy</h1>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('academy.eyebrow', 'Aprende')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr('academy.title_ui', 'Cocktail Academy')}</h1>
         </div>
       </div>
 
@@ -53,7 +54,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
         <div className="card" style={{ padding: 18, background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: 10 }}>
             <div>
-              <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>Progreso</div>
+              <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>{tr('academy.progress', 'Progreso')}</div>
               <div style={{ fontFamily: 'var(--f-serif)', fontSize: 28, lineHeight: 1 }}>
                 {completed} <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ {levels.length || 6} niveles</span>
               </div>
@@ -64,7 +65,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
             <div style={{ width: `${levels.length ? (completed / levels.length) * 100 : 0}%`, height: '100%', background: 'var(--amber)', transition: 'width .3s' }} />
           </div>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 10, lineHeight: 1.4 }}>
-            6 niveles con teoría, consejos y prácticas reales. Completa las lecciones de un nivel para desbloquear el siguiente.
+            {tr('academy.intro', '6 niveles con teoría, consejos y prácticas reales. Completa las lecciones de un nivel para desbloquear el siguiente.')}
           </div>
         </div>
       </div>
@@ -73,7 +74,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
       <div style={{ padding: '0 24px', display: 'grid', gap: 12 }}>
         {levels.length === 0 && (
           <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)' }}>
-            Cargando Academia…
+            {tr('academy.loading', 'Cargando Academia…')}
           </div>
         )}
         {levels.map((level, i) => {
@@ -178,7 +179,7 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
         </div>
 
         <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 10 }}>
-          Ruta del nivel
+          {tr('academy.level_route', 'Ruta del nivel')}
         </div>
         <div style={{ display: 'grid', gap: 8 }}>
           {sequence.map((item, i) => {
@@ -196,7 +197,9 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
                   <div>
                     <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>{_t(lesson.key)}</div>
                     <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
-                      Lección · {lesson.cards?.length || 0} tarjetas · {lesson.questions?.length || 0} preguntas
+                      {window.stLang && window.stLang.t
+                        ? window.stLang.t('academy.lesson_label', { cards: lesson.cards?.length || 0, questions: lesson.questions?.length || 0 })
+                        : `Lección · ${lesson.cards?.length || 0} tarjetas · ${lesson.questions?.length || 0} preguntas`}
                     </div>
                   </div>
                   <Icon name="arrowR" size={14} />
@@ -213,9 +216,13 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
                 }}>
                   <div style={{ fontSize: 22 }}>{passed ? '🏆' : '⚡'}</div>
                   <div>
-                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>Práctica · Ronda {item.roundId}</div>
+                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>
+                      {window.stLang && window.stLang.t
+                        ? window.stLang.t('academy.practice_label', { id: item.roundId })
+                        : `Práctica · Ronda ${item.roundId}`}
+                    </div>
                     <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
-                      Quiz de refuerzo
+                      {window.stLang && window.stLang.t ? window.stLang.t('academy.practice_sublabel') : 'Quiz de refuerzo'}
                     </div>
                   </div>
                   <Icon name="arrowR" size={14} />

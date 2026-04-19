@@ -229,13 +229,15 @@ const CookieBanner = () => {
       borderRadius: 'var(--r-lg)', boxShadow: '0 12px 40px rgba(0,0,0,.35)',
       display: 'flex', flexDirection: 'column', gap: 10, maxWidth: 640, margin: '0 auto',
     }}>
-      <div style={{ fontSize: 13, color: 'var(--ink-1)', lineHeight: 1.4 }}>
-        Usamos cookies esenciales para el funcionamiento de la app y cookies opcionales para análisis. Al continuar aceptas nuestra{' '}
-        <a href="cookies.html" target="_blank" rel="noopener" style={{ color: 'var(--amber)' }}>política de cookies</a>.
-      </div>
+      <div
+        style={{ fontSize: 13, color: 'var(--ink-1)', lineHeight: 1.4 }}
+        dangerouslySetInnerHTML={{
+          __html: t('cookie.text', 'Usamos cookies esenciales para el funcionamiento de la app y cookies opcionales para análisis. Al continuar aceptas nuestra <a href="cookies.html">política de cookies</a>.'),
+        }}
+      />
       <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
-        <a href="privacidad.html" target="_blank" rel="noopener" className="btn ghost" style={{ padding: '8px 12px', fontSize: 12 }}>Privacidad</a>
-        <button className="btn primary" style={{ padding: '8px 14px', fontSize: 13 }} onClick={accept}>Aceptar</button>
+        <a href="privacidad.html" target="_blank" rel="noopener" className="btn ghost" style={{ padding: '8px 12px', fontSize: 12 }}>{t('privacy', 'Privacidad')}</a>
+        <button className="btn primary" style={{ padding: '8px 14px', fontSize: 13 }} onClick={accept}>{t('cookie.accept', 'Aceptar')}</button>
       </div>
     </div>
   );
