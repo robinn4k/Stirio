@@ -87,7 +87,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v9.7`;
+const STATIC_CACHE_VERSION = `Stirio-v9.8`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
@@ -95,6 +95,10 @@ self.addEventListener('install', function(event) {
     console.log(caches)
     console.log("SW Install Event: Is in the process");
   }
+
+  // Skip the "waiting" phase — a new SW activates on the next navigation
+  // instead of waiting for every tab/PWA instance to be closed first.
+  self.skipWaiting();
 
   const onSuccessCachesOpen = (cache) => {
     if (DEBUG) {
@@ -132,7 +136,13 @@ self.addEventListener('activate', (event) => {
     )
   }
 
-  event.waitUntil(caches.keys().then(onSuccessCachesKeys))
+  event.waitUntil(Promise.all([
+    // Delete stale caches
+    caches.keys().then(onSuccessCachesKeys),
+    // Take control of all open clients (tabs/PWA) immediately, so a
+    // single reload picks up the new assets without needing to close tabs.
+    self.clients.claim(),
+  ]))
 })
 
 self.addEventListener('message', (event) => {
