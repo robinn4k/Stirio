@@ -95,10 +95,15 @@
   </div>
 </div>
 
-<!-- Three.js legacy (UMD) for compatibility without build step -->
-<script src="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.170.0/examples/js/controls/OrbitControls.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.170.0/examples/js/loaders/GLTFLoader.js"></script>
+<!-- Three.js ES modules via importmap (required by wiki-3d.js / wiki-scenes.js) -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
 
 <script>
 // Sync theme from parent
@@ -139,7 +144,36 @@ const COCKTAIL_INFO = {
 };
 
 let selectedItem = null;
-let scene, camera, renderer, controls, model, animId;
+
+// ── Per-cocktail scene parameters (glass shape + layer colors) ──
+// Keys match the items in WIKI_CATEGORIES above.
+const COCKTAIL_SCENES = {
+  'Mojito':         { builder: 'cocktail-glass', glass: 'highball', colors: ['#c8e6b4'], layers: [0.85] },
+  'Gin & Tonic':    { builder: 'cocktail-glass', glass: 'highball', colors: ['#d6efff'], layers: [0.85] },
+  'Moscow Mule':    { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#f4b860'], layers: [0.7] },
+  "Dark 'n' Stormy":{ builder: 'cocktail-glass', glass: 'highball', colors: ['#4a2d1a', '#d18b4a'], layers: [0.35, 0.5] },
+  'Whiskey Sour':   { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#e6b25a'], layers: [0.75] },
+  'Pisco Sour':     { builder: 'cocktail-glass', glass: 'coupe',    colors: ['#f2d89f'], layers: [0.85] },
+  'Amaretto Sour':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#c27a3a'], layers: [0.75] },
+  'Daiquiri':       { builder: 'cocktail-glass', glass: 'coupe',    colors: ['#eaf7ea'], layers: [0.8] },
+  'Dry Martini':    { builder: 'cocktail-glass', glass: 'martini',  colors: ['#f5f3d2'], layers: [0.85] },
+  'Cosmopolitan':   { builder: 'cocktail-glass', glass: 'martini',  colors: ['#d6376a'], layers: [0.85] },
+  'Manhattan':      { builder: 'cocktail-glass', glass: 'coupe',    colors: ['#7e1b1b'], layers: [0.85] },
+  'Negroni':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#b11f27'], layers: [0.75] },
+  'Old Fashioned':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#b07326'], layers: [0.7] },
+  'Sazerac':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#a0471c'], layers: [0.72] },
+  'Vieux Carré':    { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#8a3112'], layers: [0.72] },
+  'Toronto':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#5a240c'], layers: [0.72] },
+  'Mai Tai':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#cc5c2a'], layers: [0.75] },
+  'Zombie':         { builder: 'cocktail-glass', glass: 'hurricane',colors: ['#e04325', '#f3a130'], layers: [0.45, 0.45] },
+  'Jungle Bird':    { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#a53a1a'], layers: [0.75] },
+  'Painkiller':     { builder: 'cocktail-glass', glass: 'hurricane',colors: ['#d9aa68'], layers: [0.85] },
+  'Ron Zacapa 23':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#5b2510'], layers: [0.8] },
+  'Mezcal Banhez':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#e8e4c7'], layers: [0.8] },
+  'Vodka Grey Goose':{builder: 'cocktail-glass', glass: 'rocks',    colors: ['#e6efff'], layers: [0.8] },
+  "Gin Hendrick's": { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#dcdfe0'], layers: [0.8] },
+};
+const DEFAULT_SCENE = { builder: 'cocktail-glass', glass: 'rocks', colors: ['#b11f27'], layers: [0.75] };
 
 function buildSidebar(filter) {
   const sidebar = document.getElementById('wiki-sidebar');
@@ -165,7 +199,7 @@ function selectItem(name) {
   selectedItem = name;
   buildSidebar(document.getElementById('wiki-search-input').value);
   showInfo(name);
-  loadModel(name);
+  if (window.wikiLoadScene) window.wikiLoadScene(name);
 }
 
 function showInfo(name) {
@@ -179,160 +213,67 @@ function showInfo(name) {
   `;
 }
 
-function initThree() {
-  const canvas = document.getElementById('r3f-canvas');
-  const wrap = canvas.parentElement;
 
-  scene = new THREE.Scene();
-  scene.background = null; // transparent so CSS bg shows
-
-  const bg = new THREE.Color();
-  bg.set('#0d0508');
-  scene.background = bg;
-
-  camera = new THREE.PerspectiveCamera(45, wrap.clientWidth / wrap.clientHeight, 0.01, 100);
-  camera.position.set(0, 0.3, 1.8);
-
-  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.setSize(wrap.clientWidth, wrap.clientHeight);
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.shadowMap.enabled = true;
-
-  controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.08;
-  controls.minDistance = 0.5;
-  controls.maxDistance = 5;
-  controls.autoRotate = true;
-  controls.autoRotateSpeed = 0.8;
-
-  // Lighting
-  const ambient = new THREE.AmbientLight(0xffffff, 0.6);
-  scene.add(ambient);
-  const key = new THREE.DirectionalLight(0xffa060, 1.4);
-  key.position.set(2, 4, 3);
-  key.castShadow = true;
-  scene.add(key);
-  const fill = new THREE.DirectionalLight(0x60a0ff, 0.5);
-  fill.position.set(-3, 2, -2);
-  scene.add(fill);
-
-  // Floor (subtle)
-  const floorGeo = new THREE.CircleGeometry(0.6, 64);
-  const floorMat = new THREE.MeshStandardMaterial({ color: 0x1a0e12, roughness: 0.9, metalness: 0.1 });
-  const floor = new THREE.Mesh(floorGeo, floorMat);
-  floor.rotation.x = -Math.PI / 2;
-  floor.receiveShadow = true;
-  scene.add(floor);
-
-  const resize = () => {
-    camera.aspect = wrap.clientWidth / wrap.clientHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(wrap.clientWidth, wrap.clientHeight);
-  };
-  window.addEventListener('resize', resize);
-
-  function animate() {
-    animId = requestAnimationFrame(animate);
-    controls.update();
-    renderer.render(scene, camera);
-  }
-  animate();
-
-  document.getElementById('wiki-loading').style.display = 'none';
-  document.getElementById('r3f-canvas').style.display = 'block';
-}
-
-function loadModel(name) {
-  // Remove existing model
-  if (model) { scene.remove(model); model = null; }
-
-  // Try loading the alambique.glb as a demo model for all items
-  const loader = new THREE.GLTFLoader();
-  const modelPath = 'models/alambique.glb';
-
-  loader.load(
-    modelPath,
-    (gltf) => {
-      model = gltf.scene;
-      // Center and scale
-      const box = new THREE.Box3().setFromObject(model);
-      const size = box.getSize(new THREE.Vector3());
-      const maxDim = Math.max(size.x, size.y, size.z);
-      const scale = 1.0 / maxDim;
-      model.scale.setScalar(scale);
-      const center = box.getCenter(new THREE.Vector3());
-      model.position.set(-center.x * scale, -center.y * scale + 0.05, -center.z * scale);
-      model.castShadow = true;
-      model.traverse(c => { if (c.isMesh) c.castShadow = true; });
-      scene.add(model);
-    },
-    undefined,
-    () => {
-      // Fallback: show a placeholder glass shape
-      showPlaceholderGlass();
-    }
-  );
-}
-
-function showPlaceholderGlass() {
-  if (model) { scene.remove(model); model = null; }
-  const group = new THREE.Group();
-  // Stem
-  const stemGeo = new THREE.CylinderGeometry(0.02, 0.02, 0.4, 16);
-  const glassMat = new THREE.MeshPhysicalMaterial({ color: 0xaaddff, transparent: true, opacity: 0.35, roughness: 0, metalness: 0.1, transmission: 0.7 });
-  group.add(new THREE.Mesh(stemGeo, glassMat));
-  // Base
-  const baseGeo = new THREE.CylinderGeometry(0.18, 0.18, 0.02, 32);
-  const base = new THREE.Mesh(baseGeo, glassMat);
-  base.position.y = -0.21;
-  group.add(base);
-  // Bowl
-  const bowlGeo = new THREE.CylinderGeometry(0.22, 0.04, 0.3, 32, 1, true);
-  const bowl = new THREE.Mesh(bowlGeo, glassMat);
-  bowl.position.y = 0.35;
-  group.add(bowl);
-  // Liquid
-  const liquidGeo = new THREE.CylinderGeometry(0.19, 0.035, 0.22, 32);
-  const liquidMat = new THREE.MeshPhysicalMaterial({ color: 0xff6030, transparent: true, opacity: 0.75, roughness: 0.05 });
-  const liquid = new THREE.Mesh(liquidGeo, liquidMat);
-  liquid.position.y = 0.31;
-  group.add(liquid);
-  group.position.y = 0.05;
-  scene.add(group);
-  model = group;
-}
-
-// Init
+// Sidebar-only init runs immediately; the 3D engine starts from a separate
+// ES-module block below (which imports wiki-3d.js + wiki-scenes.js).
 document.addEventListener('DOMContentLoaded', () => {
   buildSidebar('');
   document.getElementById('wiki-search-input').addEventListener('input', e => buildSidebar(e.target.value));
-
-  // Init Three.js
-  if (typeof THREE !== 'undefined' && typeof THREE.OrbitControls !== 'undefined') {
-    initThree();
-    showPlaceholderGlass(); // show placeholder until user picks item
-  } else {
-    // Retry after a short delay (CDN might still be loading)
-    setTimeout(() => {
-      if (typeof THREE !== 'undefined') {
-        initThree();
-        showPlaceholderGlass();
-      } else {
-        document.getElementById('wiki-loading').innerHTML = `
-          <div class="wiki-fallback">
-            <div class="wiki-fallback-icon">🍸</div>
-            <div class="wiki-fallback-title">Vista 3D no disponible</div>
-            <div class="wiki-fallback-desc">No se pudo cargar Three.js. Comprueba tu conexión a internet.</div>
-          </div>`;
-      }
-    }, 2000);
-  }
-
-  // Select first item
-  selectItem('Negroni');
 });
+</script>
+
+<script type="module">
+// ── Modern ES-module 3D engine ───────────────────────────────────────
+// Uses the real wiki-3d.js + wiki-scenes.js stack (SCENE_BUILDERS for every
+// cocktail, tool, technique, alambique) via importmap-resolved three.
+import { mountScene, dispose } from './js/wiki-3d.js';
+import { SCENE_BUILDERS, buildCocktailScene } from './js/wiki-scenes.js';
+
+const canvas = document.getElementById('r3f-canvas');
+const wrap = canvas.parentElement;
+const loading = document.getElementById('wiki-loading');
+
+function buildFnFor(name) {
+  const cfg = window.COCKTAIL_SCENES[name] || window.DEFAULT_SCENE;
+  const builder = (cfg.builder && SCENE_BUILDERS[cfg.builder]) || buildCocktailScene;
+  return (scene, camera, ctx) => {
+    try {
+      if (cfg.builder === 'cocktail-glass' || !cfg.builder) {
+        buildCocktailScene(scene, camera, ctx, { glass: cfg.glass, colors: cfg.colors, layers: cfg.layers });
+      } else {
+        builder(scene, camera, ctx);
+      }
+    } catch (err) {
+      console.warn('scene build failed for', name, err);
+    }
+  };
+}
+
+window.wikiLoadScene = (name) => {
+  try {
+    // Hide the legacy loader/canvas CSS placeholder and mount a real scene
+    loading.style.display = 'none';
+    canvas.style.display = 'none'; // wiki-3d.js creates its own renderer inside wrap
+    mountScene(wrap, buildFnFor(name));
+  } catch (err) {
+    console.warn('wikiLoadScene failed:', err);
+    loading.style.display = 'block';
+    loading.innerHTML = `
+      <div class="wiki-fallback">
+        <div class="wiki-fallback-icon">🍸</div>
+        <div class="wiki-fallback-title">Vista 3D no disponible</div>
+        <div class="wiki-fallback-desc">No se pudo cargar Three.js. Comprueba tu conexión a internet.</div>
+      </div>`;
+  }
+};
+
+// Boot: select initial item once DOM is ready
+const _boot = () => (typeof window.selectItem === 'function' ? window.selectItem('Negroni') : window.wikiLoadScene('Negroni'));
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', _boot);
+} else {
+  _boot();
+}
 </script>
 </body>
 </html>

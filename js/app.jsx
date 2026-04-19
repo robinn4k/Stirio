@@ -53,12 +53,29 @@ const App = () => {
   // Persist state
   useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
 
-  // Firebase auth bootstrap: restore session + init, redirect to home if signed-in
+  // Bump counter used to force re-renders when the current language changes
+  const [langVersion, setLangVersion] = useState(0);
+
+  // Listen for language changes from the Profile settings selector
+  useEffect(() => {
+    const onLangChange = () => setLangVersion(v => v + 1);
+    window.addEventListener('stirio:langchange', onLangChange);
+    return () => window.removeEventListener('stirio:langchange', onLangChange);
+  }, []);
+
+  // Firebase auth bootstrap + i18n preload
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      // Poll for auth module (loaded async via <script type=module import()>)
+      // Poll for lang module (loaded async) and preload all translation JSONs
       let tries = 0;
+      while (!window.stLang && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      if (!cancelled && window.stLang?.preloadAllTranslations) {
+        try { await window.stLang.preloadAllTranslations(); setLangVersion(v => v + 1); } catch {}
+      }
+
+      // Poll for auth module
+      tries = 0;
       while (!window.stAuth && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
       if (cancelled || !window.stAuth) return;
       try {
@@ -132,8 +149,39 @@ const App = () => {
 
   const pickLesson   = (l) => { if (l) setActiveLesson(l); };
   const exitLesson   = ()  => setActiveLesson(null);
-  const finishLesson = ({ xp }) => {
+  const finishLesson = ({ xp, correct, total }) => {
     setProfile(p => ({ ...p, xp: p.xp + xp }));
+
+    // Persist Academy progress if this was an academy lesson
+    const id = activeLesson?.id || '';
+    const aMatch = id.match(/^academy-l(\d+)-les(\d+)$/);
+    const pMatch = id.match(/^academy-practice-l(\d+)-r(\d+)$/);
+    if (aMatch || pMatch) {
+      try {
+        const key = 'cq_academy_progress';
+        const prog = JSON.parse(localStorage.getItem(key)) || {};
+        if (aMatch) {
+          const [, levelId, lessonIdx] = aMatch.map(Number);
+          prog[levelId] = prog[levelId] || { lessons: [], practices: {} };
+          prog[levelId].lessons[lessonIdx] = { passed: true, xp, at: Date.now() };
+        } else {
+          const [, levelId, roundId] = pMatch.map(Number);
+          prog[levelId] = prog[levelId] || { lessons: [], practices: {} };
+          prog[levelId].practices[roundId] = { passed: true, xp, at: Date.now() };
+        }
+        localStorage.setItem(key, JSON.stringify(prog));
+      } catch {}
+    }
+
+    // Trigger achievement checks with updated stats
+    if (window.stAchievements && window.stAchievements.checkAchievements && typeof correct === 'number') {
+      try { window.stAchievements.checkAchievements({ correct, total, xp }); } catch {}
+    }
+    // Update leaderboard score if logged in
+    if (window.stLeaderboard && window.stLeaderboard.saveScore && typeof xp === 'number') {
+      try { window.stLeaderboard.saveScore({ score: xp, mode: activeLesson?.category || 'lesson' }); } catch {}
+    }
+
     setActiveLesson(null);
   };
 
@@ -177,11 +225,22 @@ const App = () => {
       {subScreen === 'academy' && !activeLesson && (
         <AcademyScreen
           onBack={() => setSubScreen(null)}
-          onStartRound={(fam) => {
-            const round = (window.TRIVIA_ROUNDS || []).find(r =>
-              r.title.toLowerCase().includes(fam.match.toLowerCase()) ||
-              r.title.toLowerCase().includes(fam.title.toLowerCase())
-            ) || (window.TRIVIA_ROUNDS || [])[0];
+          onStartAcademyLesson={(levelId, lessonIdx) => {
+            const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
+            const level = levels.find(l => l.id === levelId);
+            if (!level) return;
+            const lesson = window.buildAcademyLesson && window.buildAcademyLesson(level, lessonIdx);
+            if (lesson) pickLesson(lesson);
+          }}
+          onStartRound={({ roundId, levelId }) => {
+            const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
+            const level = levels.find(l => l.id === levelId);
+            const practice = level && window.buildAcademyPractice
+              ? window.buildAcademyPractice(level, roundId)
+              : null;
+            if (practice) { pickLesson(practice); return; }
+            // Fallback: sólo por roundId
+            const round = (window.TRIVIA_ROUNDS || []).find(r => r.id === roundId);
             if (round) pickLesson(window.buildLessonFromRound && window.buildLessonFromRound(round));
           }}
           onOpenFicha={(f) => setFichaOpen(f)}
@@ -294,12 +353,17 @@ const App = () => {
         overflow: asDesktop ? 'visible' : 'hidden',
       }}>
         {appContent}
+        {/* Legal footer — rendered at the end of every screen's scroll area */}
+        {screen !== 'onboarding' && screen !== 'auth' && !activeLesson && <LegalFooter />}
       </div>
 
       {/* Tweaks panel — floating overlay */}
       {tweakMode && (
         <TweaksPanel tweaks={tweaks} onChange={updateTweak} onClose={() => setTweakMode(false)} />
       )}
+
+      {/* Cookie consent banner (GDPR) — hides once accepted */}
+      <CookieBanner />
 
       {/* Tweaks trigger button — always visible for dev/preview */}
       <button

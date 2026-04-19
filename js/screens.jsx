@@ -289,6 +289,29 @@ const Onboarding = ({ onDone }) => {
 
 // ═══════════════ HOME ═══════════════
 const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
+  // Real leaderboard preview
+  const [leaderboardPreview, setLeaderboardPreview] = React.useState([]);
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      if (!window.stLeaderboard) return;
+      try {
+        const fn = window.stLeaderboard.fetchLeaderboard || window.stLeaderboard.getLeaderboard;
+        if (!fn) return;
+        const list = await fn();
+        if (!cancelled && Array.isArray(list)) {
+          const me = (window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser()) || null;
+          setLeaderboardPreview(list.slice(0, 5).map(u => ({
+            name: u.displayName || u.name || 'Player',
+            xp: u.xpTotal || u.xp || 0,
+            level: u.level || 1,
+            self: me && (u.uid === me.uid),
+          })));
+        }
+      } catch {}
+    })();
+    return () => { cancelled = true; };
+  }, []);
   const featured = LESSONS[0];
   const dailyChallenge = { id: 'daily', title: 'Reto Diario', questions: 10, xp: 120 };
   const time = new Date().getHours();
@@ -427,8 +450,8 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
       <section>
         <SectionHeader eyebrow="global" title="Ranking mundial" action={<button className="btn ghost" style={{ fontFamily: 'var(--f-mono)', fontSize: 11, padding: '6px 10px' }} onClick={onOpenProfile}>Ver todos →</button>} />
         <div className="card" style={{ padding: 4 }}>
-          {LEADERBOARD.slice(0, 5).map((p, i) => (
-            <div key={p.name} style={{
+          {(leaderboardPreview.length ? leaderboardPreview : []).map((p, i) => (
+            <div key={`${p.name}-${i}`} style={{
               padding: '12px 14px',
               display: 'flex', alignItems: 'center', gap: 12,
               borderRadius: 'var(--r-md)',
@@ -440,16 +463,21 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
                 fontFamily: 'var(--f-mono)', fontSize: 13, fontWeight: 600,
                 color: i < 3 ? 'var(--amber)' : 'var(--ink-3)',
               }}>{i + 1}</div>
-              <div style={{ fontSize: 18 }}>{p.badge}</div>
+              <div style={{ fontSize: 18 }}>{i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '•'}</div>
               <div style={{ flex: 1 }}>
                 <span style={{ fontWeight: p.self ? 600 : 400 }}>{p.name}</span>
-                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 13 }}>{p.country}</span>
+                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 12, fontFamily: 'var(--f-mono)' }}>Lv {p.level}</span>
               </div>
               <div style={{ fontFamily: 'var(--f-mono)', fontSize: 13, color: p.self ? 'var(--amber)' : 'var(--ink-1)', fontWeight: 600 }}>
                 {p.xp.toLocaleString()}
               </div>
             </div>
           ))}
+          {leaderboardPreview.length === 0 && (
+            <div style={{ padding: '14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 12 }}>
+              Juega una ronda para aparecer en el ranking
+            </div>
+          )}
         </div>
       </section>
     </div>
@@ -670,9 +698,59 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
   const [tmpName, setTmpName] = React.useState(profile.name || '');
   const [notif, setNotif] = React.useState(true);
   const [units, setUnits] = React.useState('ml');
-  const [lang, setLang] = React.useState('es');
+  const [lang, setLang] = React.useState((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es');
   const [reduce, setReduce] = React.useState(false);
   const [textScale, setTextScale] = React.useState('default');
+
+  // Real achievements (loaded from localStorage + Firestore sync)
+  const [achievements, setAchievements] = React.useState([]);
+  React.useEffect(() => {
+    let cancelled = false;
+    const loadAch = async () => {
+      if (!window.stAchievements) return;
+      try {
+        if (window.stAchievements.loadAchievementsFromCloud) {
+          await window.stAchievements.loadAchievementsFromCloud();
+        }
+        if (!cancelled && window.stAchievements.getAchievements) {
+          setAchievements(window.stAchievements.getAchievements());
+        }
+      } catch {}
+    };
+    // Poll until stAchievements is loaded
+    if (window.stAchievements) loadAch();
+    else {
+      const t = setTimeout(loadAch, 300);
+      return () => { cancelled = true; clearTimeout(t); };
+    }
+    return () => { cancelled = true; };
+  }, []);
+
+  // Real leaderboard (Firestore query)
+  const [leaderboard, setLeaderboard] = React.useState([]);
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      if (!window.stLeaderboard) return;
+      try {
+        const fn = window.stLeaderboard.fetchLeaderboard || window.stLeaderboard.getLeaderboard;
+        if (!fn) return;
+        const list = await fn();
+        if (!cancelled && Array.isArray(list)) {
+          const me = (window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser()) || null;
+          const mapped = list.map(u => ({
+            name: u.displayName || u.name || 'Player',
+            xp: u.xpTotal || u.xp || 0,
+            level: u.level || 1,
+            streak: u.streakDays || 0,
+            self: me && (u.uid === me.uid),
+          }));
+          setLeaderboard(mapped);
+        }
+      } catch {}
+    })();
+    return () => { cancelled = true; };
+  }, []);
 
   const saveName = () => {
     const n = tmpName.trim();
@@ -720,14 +798,25 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           <input
             type="file"
             accept="image/*"
-            onChange={(e) => {
+            onChange={async (e) => {
               const file = e.target.files && e.target.files[0];
               if (!file) return;
+              // Always update local state immediately for snappy UX
               const reader = new FileReader();
               reader.onload = () => {
                 onUpdateProfile && onUpdateProfile({ avatar: reader.result });
               };
               reader.readAsDataURL(file);
+              // If signed in, also upload to Firebase Storage so it syncs across devices
+              const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
+              if (signedIn && window.stAuth.uploadProfilePhoto) {
+                try {
+                  const url = await window.stAuth.uploadProfilePhoto(file);
+                  onUpdateProfile && onUpdateProfile({ avatar: url });
+                } catch (err) {
+                  console.warn('photo upload failed:', err);
+                }
+              }
             }}
             style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }}
           />
@@ -758,35 +847,42 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
         </div>
       </section>
 
-      {/* achievements */}
+      {/* achievements (real, from localStorage + Firestore) */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow={`${ACHIEVEMENTS.filter(a => a.earned).length} / ${ACHIEVEMENTS.length}`} title="Achievements" />
+        <SectionHeader
+          eyebrow={`${achievements.filter(a => a.unlocked).length} / ${achievements.length || ACHIEVEMENTS.length}`}
+          title="Achievements"
+        />
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
           gap: 10,
         }}>
-          {ACHIEVEMENTS.map(a => (
-            <div key={a.id} className="card" style={{
-              padding: 14, textAlign: 'center',
-              opacity: a.earned ? 1 : 0.35,
-              borderColor: a.earned ? 'oklch(0.82 0.17 75 / 0.3)' : 'var(--line-soft)',
-              background: a.earned ? 'linear-gradient(180deg, var(--amber-soft), var(--bg-2))' : 'var(--bg-1)',
-            }}>
-              <div style={{ fontSize: 28, marginBottom: 6, filter: a.earned ? 'drop-shadow(0 0 10px var(--amber-glow))' : 'grayscale(1)' }}>{a.icon}</div>
-              <div style={{ fontWeight: 500, fontSize: 12 }}>{a.label}</div>
-              <div style={{ fontFamily: 'var(--f-mono)', fontSize: 9, color: 'var(--ink-3)', marginTop: 2 }}>{a.desc}</div>
-            </div>
-          ))}
+          {(achievements.length ? achievements : ACHIEVEMENTS).map(a => {
+            const earned = a.unlocked ?? a.earned;
+            const label = a.title || a.label;
+            return (
+              <div key={a.id} className="card" style={{
+                padding: 14, textAlign: 'center',
+                opacity: earned ? 1 : 0.35,
+                borderColor: earned ? 'oklch(0.82 0.17 75 / 0.3)' : 'var(--line-soft)',
+                background: earned ? 'linear-gradient(180deg, var(--amber-soft), var(--bg-2))' : 'var(--bg-1)',
+              }}>
+                <div style={{ fontSize: 28, marginBottom: 6, filter: earned ? 'drop-shadow(0 0 10px var(--amber-glow))' : 'grayscale(1)' }}>{a.icon}</div>
+                <div style={{ fontWeight: 500, fontSize: 12 }}>{label}</div>
+                <div style={{ fontFamily: 'var(--f-mono)', fontSize: 9, color: 'var(--ink-3)', marginTop: 2 }}>{a.desc}</div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
-      {/* leaderboard full */}
+      {/* leaderboard full (real, from Firestore) */}
       <section style={{ marginBottom: 24 }}>
         <SectionHeader eyebrow="ranking" title="Global leaderboard" />
         <div className="card" style={{ padding: 4 }}>
-          {LEADERBOARD.map((p, i) => (
-            <div key={p.name} style={{
+          {(leaderboard.length ? leaderboard : []).map((p, i) => (
+            <div key={`${p.name}-${i}`} style={{
               padding: '12px 14px',
               display: 'flex', alignItems: 'center', gap: 12,
               borderRadius: 'var(--r-md)',
@@ -796,16 +892,21 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
               <div style={{ width: 24, textAlign: 'center', fontFamily: 'var(--f-mono)', fontSize: 13, fontWeight: 600, color: i < 3 ? 'var(--amber)' : 'var(--ink-3)' }}>
                 {i + 1}
               </div>
-              <div style={{ fontSize: 18 }}>{p.badge}</div>
+              <div style={{ fontSize: 18 }}>{i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '•'}</div>
               <div style={{ flex: 1 }}>
                 <span style={{ fontWeight: p.self ? 600 : 400 }}>{p.name}</span>
-                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 13 }}>{p.country}</span>
+                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 12, fontFamily: 'var(--f-mono)' }}>Lv {p.level}</span>
               </div>
               <div style={{ fontFamily: 'var(--f-mono)', fontSize: 13, color: p.self ? 'var(--amber)' : 'var(--ink-1)', fontWeight: 600 }}>
-                {p.xp.toLocaleString()}
+                {(p.xp || 0).toLocaleString()}
               </div>
             </div>
           ))}
+          {leaderboard.length === 0 && (
+            <div style={{ padding: '18px 14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 13 }}>
+              Todavía no hay clasificación. Juega una partida para aparecer aquí.
+            </div>
+          )}
         </div>
       </section>
 
@@ -892,16 +993,28 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
             icon="🌐"
             label="Idioma"
             value={
-              <select value={lang} onChange={e => setLang(e.target.value)} style={{
-                background: 'var(--bg-2)', border: '1px solid var(--line)',
-                borderRadius: 8, padding: '6px 10px', fontSize: 13,
-                color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
-              }}>
+              <select
+                value={lang}
+                onChange={e => {
+                  const v = e.target.value;
+                  setLang(v);
+                  if (window.stLang && window.stLang.setLang) {
+                    try { window.stLang.setLang(v); } catch {}
+                  }
+                  // Fire an app-wide event so components re-render with the new language.
+                  window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: v } }));
+                }}
+                style={{
+                  background: 'var(--bg-2)', border: '1px solid var(--line)',
+                  borderRadius: 8, padding: '6px 10px', fontSize: 13,
+                  color: 'var(--ink-0)', fontFamily: 'var(--f-mono)',
+                }}
+              >
                 <option value="es">Español</option>
                 <option value="en">English</option>
                 <option value="fr">Français</option>
-                <option value="it">Italiano</option>
-                <option value="ja">日本語</option>
+                <option value="pt">Português</option>
+                <option value="de">Deutsch</option>
               </select>
             }
           />
@@ -967,21 +1080,44 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           <SettingsRow
             icon="🗑️"
             label="Borrar progreso"
-            value={<button onClick={() => {
-              if (confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) {
-                onResetData && onResetData();
+            value={<button onClick={async () => {
+              if (!confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) return;
+              // Try to also delete cloud data if signed in
+              const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
+              if (signedIn && window.stAuth.deleteUserData) {
+                try { await window.stAuth.deleteUserData(); } catch (e) { console.warn('cloud wipe failed:', e); }
               }
+              onResetData && onResetData();
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>borrar →</button>}
           />
           <SettingsRow
             icon="🚪"
             label="Cerrar sesión"
-            isLast
             value={<button onClick={() => {
               if (confirm('¿Cerrar sesión? Volverás al onboarding.')) {
                 onLogout && onLogout();
               }
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>logout →</button>}
+          />
+          <SettingsRow
+            icon="⚠️"
+            label="Borrar cuenta"
+            isLast
+            value={<button onClick={async () => {
+              const me = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser();
+              if (!me || me.isGuest) {
+                alert('Solo disponible para cuentas Google.');
+                return;
+              }
+              if (!confirm('¿Borrar tu cuenta de Stirio y todos tus datos? Esta acción es irreversible.')) return;
+              try {
+                await window.stAuth.deleteUserAccount();
+                onLogout && onLogout();
+              } catch (e) {
+                alert('No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.');
+                console.warn('delete account failed:', e);
+              }
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>eliminar →</button>}
           />
         </div>
 
