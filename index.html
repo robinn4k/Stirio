@@ -51,9 +51,20 @@
   <script type="text/babel" data-presets="react" src="js/duel.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/app.jsx"></script>
 
-  <!-- Service worker registration -->
+  <!-- Service worker registration + auto-reload on new version -->
   <script>
     if ('serviceWorker' in navigator) {
+      // When the active SW changes (new version claimed the page), reload
+      // once so the page uses the new assets instead of a mix of old/new.
+      // Guarded to avoid infinite reload loops.
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (reloaded) return;
+        // Only reload if there was already a controller — skips the very
+        // first SW install on a fresh visit.
+        reloaded = true;
+        window.location.reload();
+      });
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('sw.js').catch(() => {});
       });
