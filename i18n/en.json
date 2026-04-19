@@ -2001,5 +2001,19 @@
   "profile.stat_hours": "HOURS",
   "profile.stranger": "stranger",
   "profile.joined": "joined · 🌍 earth",
-  "profile.level_line": "level {level} · {title}"
+  "profile.level_line": "level {level} · {title}",
+  "daily.card_title": "Daily Challenge",
+  "daily.card_subtitle": "10 questions · {date}",
+  "daily.card_body": "Ten questions picked at random from the 24 official rounds. Renewed at midnight.",
+  "daily.card_fact": "Same challenge for every player of the day.",
+  "speed.card_title": "Speed",
+  "speed.card_subtitle": "The more you nail in 60s, the more XP",
+  "speed.card_body": "The clock is ticking. Every hit counts. Misses don't subtract but cost time.",
+  "round.subtitle_fmt": "{subtitle} · {count} questions",
+  "round.intro_fact": "{count} questions selected from {total} official trivia rounds.",
+  "lesson.card_theory": "📖 Theory",
+  "lesson.card_tip": "💡 Tip",
+  "lesson.card_note": "📝 Note",
+  "lesson.card_example": "🍸 Example",
+  "lesson.example_body": "Classic example: {cocktail}. Study its recipe, technique and balance."
 }

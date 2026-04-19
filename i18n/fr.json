@@ -2001,5 +2001,19 @@
   "profile.stat_hours": "HEURES",
   "profile.stranger": "inconnu",
   "profile.joined": "inscrit · 🌍 terre",
-  "profile.level_line": "niveau {level} · {title}"
+  "profile.level_line": "niveau {level} · {title}",
+  "daily.card_title": "Défi Quotidien",
+  "daily.card_subtitle": "10 questions · {date}",
+  "daily.card_body": "Dix questions choisies au hasard parmi les 24 manches officielles. Renouvelé à minuit.",
+  "daily.card_fact": "Même défi pour tous les joueurs du jour.",
+  "speed.card_title": "Vitesse",
+  "speed.card_subtitle": "Plus tu réussis en 60s, plus d'XP",
+  "speed.card_body": "Le chrono tourne. Chaque bonne réponse compte. Les erreurs ne retirent rien mais coûtent du temps.",
+  "round.subtitle_fmt": "{subtitle} · {count} questions",
+  "round.intro_fact": "{count} questions sélectionnées parmi {total} manches officielles.",
+  "lesson.card_theory": "📖 Théorie",
+  "lesson.card_tip": "💡 Conseil",
+  "lesson.card_note": "📝 Note",
+  "lesson.card_example": "🍸 Exemple",
+  "lesson.example_body": "Exemple classique : {cocktail}. Étudie sa recette, sa technique et son équilibre."
 }

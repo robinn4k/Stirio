@@ -2001,5 +2001,19 @@
   "profile.stat_hours": "STUNDEN",
   "profile.stranger": "fremde:r",
   "profile.joined": "beigetreten · 🌍 erde",
-  "profile.level_line": "level {level} · {title}"
+  "profile.level_line": "level {level} · {title}",
+  "daily.card_title": "Tages-Challenge",
+  "daily.card_subtitle": "10 Fragen · {date}",
+  "daily.card_body": "Zehn zufällig ausgewählte Fragen aus den 24 offiziellen Runden. Aktualisiert um Mitternacht.",
+  "daily.card_fact": "Gleiche Challenge für alle Spieler des Tages.",
+  "speed.card_title": "Speed",
+  "speed.card_subtitle": "Je mehr Treffer in 60s, desto mehr XP",
+  "speed.card_body": "Die Uhr läuft. Jeder Treffer zählt. Fehler ziehen nicht ab, kosten aber Zeit.",
+  "round.subtitle_fmt": "{subtitle} · {count} Fragen",
+  "round.intro_fact": "{count} Fragen aus {total} offiziellen Trivia-Runden ausgewählt.",
+  "lesson.card_theory": "📖 Theorie",
+  "lesson.card_tip": "💡 Tipp",
+  "lesson.card_note": "📝 Notiz",
+  "lesson.card_example": "🍸 Beispiel",
+  "lesson.example_body": "Klassisches Beispiel: {cocktail}. Studiere Rezept, Technik und Balance."
 }

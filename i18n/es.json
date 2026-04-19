@@ -3285,5 +3285,19 @@
   "profile.stat_hours": "HORAS",
   "profile.stranger": "desconocido",
   "profile.joined": "se unió · 🌍 tierra",
-  "profile.level_line": "nivel {level} · {title}"
+  "profile.level_line": "nivel {level} · {title}",
+  "daily.card_title": "Reto Diario",
+  "daily.card_subtitle": "10 preguntas · {date}",
+  "daily.card_body": "Diez preguntas elegidas al azar de las 24 rondas oficiales. Se renueva a medianoche.",
+  "daily.card_fact": "Mismo reto para todos los jugadores del día.",
+  "speed.card_title": "Velocidad",
+  "speed.card_subtitle": "Cuantas más aciertes en 60s, más XP",
+  "speed.card_body": "El reloj corre. Cada acierto suma. Cada fallo no resta pero cuesta tiempo.",
+  "round.subtitle_fmt": "{subtitle} · {count} preguntas",
+  "round.intro_fact": "{count} preguntas seleccionadas de {total} rondas de trivia oficial.",
+  "lesson.card_theory": "📖 Teoría",
+  "lesson.card_tip": "💡 Consejo",
+  "lesson.card_note": "📝 Nota",
+  "lesson.card_example": "🍸 Ejemplo",
+  "lesson.example_body": "Ejemplo clásico: {cocktail}. Estudia su receta, técnica y balance."
 }

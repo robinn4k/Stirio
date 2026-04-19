@@ -2001,5 +2001,19 @@
   "profile.stat_hours": "HORAS",
   "profile.stranger": "desconhecido",
   "profile.joined": "entrou · 🌍 terra",
-  "profile.level_line": "nível {level} · {title}"
+  "profile.level_line": "nível {level} · {title}",
+  "daily.card_title": "Desafio Diário",
+  "daily.card_subtitle": "10 perguntas · {date}",
+  "daily.card_body": "Dez perguntas escolhidas ao acaso das 24 rodadas oficiais. Atualiza à meia-noite.",
+  "daily.card_fact": "Mesmo desafio para todos os jogadores do dia.",
+  "speed.card_title": "Velocidade",
+  "speed.card_subtitle": "Quanto mais acertar em 60s, mais XP",
+  "speed.card_body": "O relógio está correndo. Cada acerto soma. Erros não subtraem mas custam tempo.",
+  "round.subtitle_fmt": "{subtitle} · {count} perguntas",
+  "round.intro_fact": "{count} perguntas selecionadas de {total} rodadas oficiais.",
+  "lesson.card_theory": "📖 Teoria",
+  "lesson.card_tip": "💡 Dica",
+  "lesson.card_note": "📝 Nota",
+  "lesson.card_example": "🍸 Exemplo",
+  "lesson.example_body": "Exemplo clássico: {cocktail}. Estude sua receita, técnica e equilíbrio."
 }
