@@ -169,5 +169,14 @@ export function checkAchievements(statsPatch) {
   });
 
   save(d);
+  // Notify listeners (Profile screen, toasts, etc.) so UIs can refresh
+  // without having to remount. Guard for SSR / test envs without window.
+  try {
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('stirio:achievement', {
+        detail: { unlocked: newlyUnlocked, stats: d.stats },
+      }));
+    }
+  } catch {}
   return newlyUnlocked;
 }
