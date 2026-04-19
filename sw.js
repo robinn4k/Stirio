@@ -5,6 +5,7 @@ const BASE = new URL(self.registration.scope).pathname;
 const CACHE_PATHS = [
   '',           // root (e.g. /Stirio/ or /)
   'index.html',
+  'map.html',
   'favicon.svg',
   'logo.svg',
   'manifest.json',
@@ -93,7 +94,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.2`;
+const STATIC_CACHE_VERSION = `Stirio-v10.3`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
