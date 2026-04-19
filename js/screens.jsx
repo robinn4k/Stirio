@@ -461,7 +461,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               <RefTileLarge icon="📖" label={tr('home.ref_iba', 'Recetas')}
                 preview={fichaPreview}
-                badge={tr('home.ref_iba_badge', '90 cócteles')}
+                badge={`${fichas.length || 0} ${tr('home.ref_cocktails', 'cócteles')}`}
                 accent="amber"
                 onClick={() => onOpenMode('iba')} />
               <RefTileLarge icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')}
@@ -471,7 +471,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
                 onClick={() => onOpenMode('wiki')} />
               <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')}
                 preview={mapPreview}
-                badge={tr('home.ref_map_badge', '29 regiones')}
+                badge={`${regions.length || 0} ${tr('home.ref_regions', 'regiones')}`}
                 accent="violet"
                 onClick={() => onOpenMode('map')} />
               <RefTileLarge icon="🎓" label={tr('home.ref_academy', 'Academia')}
@@ -1054,8 +1054,19 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="📧"
-            label="Cuenta"
-            value={<span style={{ color: 'var(--ink-2)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{profile.name ? `${profile.name}@google` : 'invitado'}</span>}
+            label={tr('profile.account', 'Cuenta')}
+            value={
+              <span
+                title={profile.email || ''}
+                style={{
+                  color: 'var(--ink-2)', fontSize: 13, fontFamily: 'var(--f-mono)',
+                  maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis',
+                  whiteSpace: 'nowrap', display: 'inline-block',
+                }}
+              >
+                {profile.email || (profile.authMode === 'guest' ? tr('profile.guest', 'invitado') : '—')}
+              </span>
+            }
           />
 
           <SettingsDivider />
@@ -1239,7 +1250,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-4)',
           letterSpacing: '0.1em', textTransform: 'uppercase',
         }}>
-          Stirio v0.9.2 · Hecho con ❤️ en Málaga
+          Stirio v{typeof window !== 'undefined' && window.STIRIO_VERSION ? window.STIRIO_VERSION : '0.0.0'} · Hecho con ❤️ en Málaga
         </div>
       </section>
     </div>

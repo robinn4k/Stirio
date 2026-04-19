@@ -1,6 +1,13 @@
 // Stirio — Per-cocktail photo URLs for FichasScreen grid & detail hero.
 // Fichas whose name isn't in this map fall back to the gradient+emoji tile
-// (existing behaviour). Covers the ~30 most iconic IBA cocktails.
+// (existing behaviour). Covers a curated subset of iconic cocktails.
+//
+// Curation rule: each Unsplash photo ID must appear at most once. If two
+// cocktails look very different (e.g. Negroni vs Americano, Daiquiri vs
+// Boulevardier), only the one that the photo actually shows keeps the entry;
+// the other falls back to the emoji tile rather than lying about the drink.
+// Expanding coverage requires manually verifying each new Unsplash shot.
+//
 // Exposed via IIFE so classic <script> consumers (reference.jsx) can read it.
 
 (() => {
@@ -11,7 +18,6 @@
     'Margarita':        U('photo-1541546006121-5c3bc5e8c7b9'),
     'Mojito':           U('photo-1551538827-9c037cb4f32a'),
     'Daiquiri':         U('photo-1514362453360-8cb44e31dabf'),
-    'Manhattan':        U('photo-1514362545857-3bc16c4c7d1b'),
     'Old Fashioned':    U('photo-1527661591475-527312dd65f5'),
     'Whiskey Sour':     U('photo-1599098915050-28f5f5ffdf73'),
     'Cosmopolitan':     U('photo-1569529465841-dfecdab7503b'),
@@ -25,21 +31,14 @@
     'Sidecar':          U('photo-1551024709-8f23befc6f87'),
     'Aviation':         U('photo-1587058876311-90f65c3b16e4'),
     'White Russian':    U('photo-1551024506-0bccd828d307'),
-    'Boulevardier':     U('photo-1514362453360-8cb44e31dabf'),
     'French 75':        U('photo-1541807360746-039050215694'),
-    'Gimlet':           U('photo-1558642452-9d2a7deb7f62'),
-    'Tom Collins':      U('photo-1544145945-f90425340c7e'),
-    'John Collins':     U('photo-1544145945-f90425340c7e'),
     'Mint Julep':       U('photo-1541545554-81e6aedbecc5'),
-    'Paloma':           U('photo-1541546006121-5c3bc5e8c7b9'),
-    'Sazerac':          U('photo-1527661591475-527312dd65f5'),
-    'Americano':        U('photo-1556855810-ac404aa91e85'),
-    'Clover Club':      U('photo-1587058876311-90f65c3b16e4'),
-    'Mai Tai':          U('photo-1587223962930-cb7f31384c19'),
-    'Pisco Sour':       U('photo-1544145945-f90425340c7e'),
-    'Alexander':        U('photo-1551024506-0bccd828d307'),
-    'Last Word':        U('photo-1587058876311-90f65c3b16e4'),
-    'Martinez':         U('photo-1575023782549-62ca0d244b39'),
+    // Cocktails whose previous entry reused another drink's photo ID
+    // (Manhattan/Boulevardier shared Daiquiri; Tom Collins/John Collins/Pisco
+    // Sour shared Gin Fizz; Gimlet/Martinez/Clover Club/Last Word/Americano/
+    // Mai Tai/Paloma/Alexander/Sazerac all collided) are intentionally
+    // omitted until a verified photo is curated. They render the gradient
+    // emoji fallback, which is preferable to a misleading hero image.
   };
   window.getFichaImage = (name) => (window.FICHA_IMAGES && window.FICHA_IMAGES[name]) || null;
 })();
