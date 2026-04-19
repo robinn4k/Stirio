@@ -341,17 +341,22 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <StreakBadge count={profile.streak} />
           <button className="btn ghost" onClick={onOpenProfile} style={{ padding: 6, borderRadius: '50%' }} aria-label="Profile">
-            <div style={{
-              width: 38, height: 38, borderRadius: '50%',
-              background: profile.avatar ? 'transparent' : 'linear-gradient(135deg, var(--amber), var(--berry))',
-              display: 'grid', placeItems: 'center',
-              fontWeight: 600, fontSize: 15, color: 'var(--bg-0)',
-              overflow: 'hidden',
-            }}>
-              {profile.avatar
-                ? <img src={profile.avatar} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                : (profile.name || '?').slice(0, 1).toUpperCase()}
-            </div>
+            {(() => {
+              const photo = profile.avatar || profile.photoURL;
+              return (
+                <div style={{
+                  width: 38, height: 38, borderRadius: '50%',
+                  background: photo ? 'transparent' : 'linear-gradient(135deg, var(--amber), var(--berry))',
+                  display: 'grid', placeItems: 'center',
+                  fontWeight: 600, fontSize: 15, color: 'var(--bg-0)',
+                  overflow: 'hidden',
+                }}>
+                  {photo
+                    ? <img src={photo} alt="" referrerPolicy="no-referrer" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    : (profile.name || '?').slice(0, 1).toUpperCase()}
+                </div>
+              );
+            })()}
           </button>
         </div>
       </div>
@@ -773,6 +778,19 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
     setEditingName(false);
   };
 
+  // Real activity totals (computed from the on-device activity log)
+  const activityLog = (window.stActivity && window.stActivity.loadActivityLog && window.stActivity.loadActivityLog()) || {};
+  let lessons = 0, perfect = 0, durationMs = 0;
+  for (const k in activityLog) {
+    const d = activityLog[k] || {};
+    lessons += d.lessons || 0;
+    perfect += d.perfect || 0;
+    durationMs += d.durationMs || 0;
+  }
+  const hours = durationMs / 3600000;
+  const hoursLabel = hours >= 10 ? Math.round(hours).toString() : hours.toFixed(1);
+  const activityTotals = { lessons, perfect, hoursLabel };
+
   return (
     <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 760, margin: '0 auto', position: 'relative', zIndex: 2 }}>
       <button className="btn ghost" onClick={onBack} style={{ padding: 8, marginBottom: 18 }}>
@@ -788,15 +806,15 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
       }}>
         <label style={{
           width: 86, height: 86, borderRadius: '50%',
-          background: profile.avatar ? 'transparent' : 'linear-gradient(135deg, var(--amber), var(--berry))',
+          background: (profile.avatar || profile.photoURL) ? 'transparent' : 'linear-gradient(135deg, var(--amber), var(--berry))',
           display: 'grid', placeItems: 'center',
           fontSize: 36, fontWeight: 600, color: 'var(--bg-0)',
           boxShadow: '0 0 30px var(--amber-glow)',
           position: 'relative', overflow: 'hidden', cursor: 'pointer',
           flexShrink: 0,
         }} title="Cambiar foto">
-          {profile.avatar ? (
-            <img src={profile.avatar} alt="avatar" style={{
+          {(profile.avatar || profile.photoURL) ? (
+            <img src={profile.avatar || profile.photoURL} alt="avatar" referrerPolicy="no-referrer" style={{
               width: '100%', height: '100%', objectFit: 'cover',
             }} />
           ) : (
@@ -851,16 +869,16 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
       {/* stat row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, marginBottom: 24 }}>
         <StatTile label={tr('profile.stat_xp', 'TOTAL XP')} value={profile.xp} color="var(--amber)" />
-        <StatTile label={tr('profile.stat_lessons', 'LESSONS')} value={24} color="var(--cyan)" />
-        <StatTile label={tr('profile.stat_perfect', 'PERFECT')} value={6} color="var(--violet)" />
-        <StatTile label={tr('profile.stat_hours', 'HOURS')} value="2.1" color="var(--berry)" />
+        <StatTile label={tr('profile.stat_lessons', 'LESSONS')} value={activityTotals.lessons} color="var(--cyan)" />
+        <StatTile label={tr('profile.stat_perfect', 'PERFECT')} value={activityTotals.perfect} color="var(--violet)" />
+        <StatTile label={tr('profile.stat_hours', 'HOURS')} value={activityTotals.hoursLabel} color="var(--berry)" />
       </div>
 
       {/* activity graph */}
       <section style={{ marginBottom: 24 }}>
         <SectionHeader eyebrow={tr('profile.activity_eyebrow', 'últimas 7 semanas')} title={tr('profile.activity', 'Actividad')} />
         <div className="card" style={{ padding: 18 }}>
-          <ActivityHeatmap />
+          <ActivityHeatmap log={activityLog} />
         </div>
       </section>
 
@@ -1197,24 +1215,40 @@ const StatTile = ({ label, value, color }) => (
   </div>
 );
 
-const ActivityHeatmap = () => {
-  // deterministic-ish pattern
-  const cells = [];
-  for (let i = 0; i < 7 * 7; i++) {
-    const r = (Math.sin(i * 12.9) + 1) / 2;
-    const intensity = r > 0.5 ? Math.min(1, (r - 0.2) * 1.4) : 0;
-    cells.push(intensity);
+const ActivityHeatmap = ({ log }) => {
+  // 7 cols (days of week) × 7 rows (weeks) = last 49 days, oldest → newest,
+  // ending on today (right-most cell in the last row).
+  const days = 49;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const pad = (n) => String(n).padStart(2, '0');
+  const dayKey = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+
+  const values = [];
+  let maxXp = 0;
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const entry = (log && log[dayKey(d)]) || null;
+    const xp = entry ? (entry.xp || 0) : 0;
+    if (xp > maxXp) maxXp = xp;
+    values.push(xp);
   }
+  const scale = maxXp > 0 ? maxXp : 1;
+
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 5, maxWidth: 380 }}>
-      {cells.map((v, i) => (
-        <div key={i} style={{
-          aspectRatio: 1,
-          borderRadius: 4,
-          background: v === 0 ? 'var(--bg-3)' : `oklch(0.82 0.17 75 / ${0.2 + v * 0.8})`,
-          boxShadow: v > 0.6 ? '0 0 6px var(--amber-glow)' : 'none',
-        }} />
-      ))}
+      {values.map((xp, i) => {
+        const v = xp > 0 ? Math.min(1, xp / scale) : 0;
+        return (
+          <div key={i} style={{
+            aspectRatio: 1,
+            borderRadius: 4,
+            background: v === 0 ? 'var(--bg-3)' : `oklch(0.82 0.17 75 / ${0.2 + v * 0.8})`,
+            boxShadow: v > 0.6 ? '0 0 6px var(--amber-glow)' : 'none',
+          }} />
+        );
+      })}
     </div>
   );
 };

@@ -21,9 +21,35 @@ const TWEAK_DEFAULTS = {
 
 const LS_STATE  = 'stirio::state::v2';
 const LS_TWEAKS = 'stirio::tweaks::v1';
+const LS_ACTIVITY = 'stirio::activity::v1';
 
 const loadState  = () => { try { return JSON.parse(localStorage.getItem(LS_STATE))  || null; } catch { return null; } };
 const saveState  = (s) => { try { localStorage.setItem(LS_STATE, JSON.stringify(s)); } catch {} };
+
+// ── Activity log (per-day rollup used by Profile heatmap + stats) ──
+const activityDayKey = (d = new Date()) => {
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+};
+const loadActivityLog = () => {
+  try { return JSON.parse(localStorage.getItem(LS_ACTIVITY)) || {}; } catch { return {}; }
+};
+const recordActivity = ({ xp = 0, correct = 0, total = 0, durationMs = 0 } = {}) => {
+  try {
+    const log = loadActivityLog();
+    const key = activityDayKey();
+    const day = log[key] || { xp: 0, lessons: 0, perfect: 0, durationMs: 0 };
+    day.xp += Math.max(0, xp | 0);
+    day.lessons += 1;
+    if (total > 0 && correct >= total) day.perfect += 1;
+    day.durationMs += Math.max(0, durationMs | 0);
+    log[key] = day;
+    localStorage.setItem(LS_ACTIVITY, JSON.stringify(log));
+  } catch {}
+};
+if (typeof window !== 'undefined') {
+  window.stActivity = { loadActivityLog, recordActivity, activityDayKey };
+}
 const loadTweaks = () => {
   // Migrate legacy cq_theme key from the old vanilla JS app
   const legacyTheme = localStorage.getItem('cq_theme');
@@ -146,10 +172,17 @@ const App = () => {
     setActiveMode(m);
   };
 
-  const pickLesson   = (l) => { if (l) setActiveLesson(l); };
-  const exitLesson   = ()  => setActiveLesson(null);
+  const lessonStartAtRef = useRef(0);
+  const pickLesson   = (l) => { if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); } };
+  const exitLesson   = ()  => { lessonStartAtRef.current = 0; setActiveLesson(null); };
   const finishLesson = ({ xp, correct, total }) => {
     setProfile(p => ({ ...p, xp: p.xp + xp }));
+
+    // Record today's activity (used by Profile heatmap + stats)
+    const startedAt = lessonStartAtRef.current;
+    const durationMs = startedAt ? Math.max(0, Date.now() - startedAt) : 0;
+    lessonStartAtRef.current = 0;
+    recordActivity({ xp, correct, total, durationMs });
 
     // Persist Academy progress if this was an academy lesson
     const id = activeLesson?.id || '';
