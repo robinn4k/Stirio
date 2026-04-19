@@ -876,7 +876,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
       {/* activity graph */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow={tr('profile.activity_eyebrow', 'últimas 7 semanas')} title={tr('profile.activity', 'Actividad')} />
+        <SectionHeader eyebrow={tr('profile.activity_eyebrow', 'último mes')} title={tr('profile.activity', 'Actividad')} />
         <div className="card" style={{ padding: 18 }}>
           <ActivityHeatmap log={activityLog} />
         </div>
@@ -1216,30 +1216,35 @@ const StatTile = ({ label, value, color }) => (
 );
 
 const ActivityHeatmap = ({ log }) => {
-  // 7 cols (days of week) × 7 rows (weeks) = last 49 days, oldest → newest,
+  // 7 cols × 5 rows = last 35 days (≈ último mes), oldest → newest,
   // ending on today (right-most cell in the last row).
-  const days = 49;
+  const days = 35;
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const pad = (n) => String(n).padStart(2, '0');
   const dayKey = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 
-  const values = [];
+  const cells = [];
   let maxXp = 0;
   for (let i = days - 1; i >= 0; i--) {
     const d = new Date(today);
     d.setDate(today.getDate() - i);
     const entry = (log && log[dayKey(d)]) || null;
     const xp = entry ? (entry.xp || 0) : 0;
+    const lessons = entry ? (entry.lessons || 0) : 0;
     if (xp > maxXp) maxXp = xp;
-    values.push(xp);
+    cells.push({ xp, lessons });
   }
   const scale = maxXp > 0 ? maxXp : 1;
 
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 5, maxWidth: 380 }}>
-      {values.map((xp, i) => {
-        const v = xp > 0 ? Math.min(1, xp / scale) : 0;
+      {cells.map((c, i) => {
+        // Intensity from XP when available; fallback to a minimum tint when
+        // there was any activity (lessons > 0) so "played today" never looks
+        // like an empty cell.
+        const xpIntensity = c.xp > 0 ? Math.min(1, c.xp / scale) : 0;
+        const v = xpIntensity > 0 ? xpIntensity : (c.lessons > 0 ? 0.35 : 0);
         return (
           <div key={i} style={{
             aspectRatio: 1,
