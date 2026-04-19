@@ -1211,14 +1211,15 @@ const ActivityHeatmap = () => {
 };
 
 const ModeSheet = ({ mode, onClose, onStart }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const modes = {
-    daily: { icon: '📅', title: 'Reto Diario', subtitle: '10 preguntas nuevas cada día', body: 'Una ronda curada por nuestro barman-jefe. Se renueva a medianoche.', cta: 'Empezar reto' },
-    duel: { icon: '⚔️', title: 'Duelo', subtitle: 'Reta a amigos, rivales o a un bot', body: 'Crea una sala con código, únete a una existente o busca rival aleatorio.', cta: 'Crear sala' },
-    academy: { icon: '🎓', title: 'Cocktail Academy', subtitle: 'Familias de cócteles, paso a paso', body: 'Sours, Highballs, Martinis, Old‑School, Tiki y Modernos — con teoría, práctica y quiz.', cta: 'Abrir academia' },
-    speed: { icon: '⚡', title: 'Modo Velocidad', subtitle: '60 segundos · cuantas más aciertes, más XP', body: 'Preguntas encadenadas hasta que el reloj llegue a cero.', cta: 'Empezar' },
-    builder: { icon: '🍹', title: 'Constructor', subtitle: 'Adivina el cóctel por sus ingredientes', body: 'Te damos la receta sin nombre. Tú nos dices qué es.', cta: 'Jugar' },
-    blind: { icon: '👃', title: 'Cata a ciegas', subtitle: '35+ destilados', body: 'Pistas de aroma y sabor. Identifica el destilado sin ver la etiqueta.', cta: 'Jugar' },
-    freequiz: { icon: '🎲', title: 'Quiz Libre', subtitle: '24 rondas temáticas', body: 'Elige la categoría, el largo y la dificultad. Sin presión.', cta: 'Jugar' },
+    daily: { icon: '📅', title: tr('mode.daily.title', 'Reto Diario'), subtitle: tr('mode.daily.sub', '10 preguntas nuevas cada día'), body: tr('mode.daily.body', 'Una ronda curada por nuestro barman-jefe. Se renueva a medianoche.'), cta: tr('mode.daily.cta', 'Empezar reto') },
+    duel: { icon: '⚔️', title: tr('mode.duel.title', 'Duelo'), subtitle: tr('mode.duel.sub', 'Reta a amigos, rivales o a un bot'), body: tr('mode.duel.body', 'Crea una sala con código, únete a una existente o busca rival aleatorio.'), cta: tr('mode.duel.cta', 'Crear sala') },
+    academy: { icon: '🎓', title: tr('mode.academy.title', 'Cocktail Academy'), subtitle: tr('mode.academy.sub', 'Familias de cócteles, paso a paso'), body: tr('mode.academy.body', 'Sours, Highballs, Martinis, Old-School, Tiki y Modernos — con teoría, práctica y quiz.'), cta: tr('mode.academy.cta', 'Abrir academia') },
+    speed: { icon: '⚡', title: tr('mode.speed.title', 'Modo Velocidad'), subtitle: tr('mode.speed.sub', '60 segundos · cuantas más aciertes, más XP'), body: tr('mode.speed.body', 'Preguntas encadenadas hasta que el reloj llegue a cero.'), cta: tr('mode.speed.cta', 'Empezar') },
+    builder: { icon: '🍹', title: tr('mode.builder.title', 'Constructor'), subtitle: tr('mode.builder.sub', 'Adivina el cóctel por sus ingredientes'), body: tr('mode.builder.body', 'Te damos la receta sin nombre. Tú nos dices qué es.'), cta: tr('mode.builder.cta', 'Jugar') },
+    blind: { icon: '👃', title: tr('mode.blind.title', 'Cata a ciegas'), subtitle: tr('mode.blind.sub', '35+ destilados'), body: tr('mode.blind.body', 'Pistas de aroma y sabor. Identifica el destilado sin ver la etiqueta.'), cta: tr('mode.blind.cta', 'Jugar') },
+    freequiz: { icon: '🎲', title: tr('mode.freequiz.title', 'Quiz Libre'), subtitle: tr('mode.freequiz.sub', '24 rondas temáticas'), body: tr('mode.freequiz.body', 'Elige la categoría, el largo y la dificultad. Sin presión.'), cta: tr('mode.freequiz.cta', 'Jugar') },
     arcade: { icon: '🕹️', title: 'Arcade Coctelero', subtitle: 'Aprende recetas jugando', body: 'Mini‑juegos con físicas: shake‑o‑meter, garnish catcher, pour target.', cta: 'Jugar' },
     memory: { icon: '🧠', title: 'Memoria de Garnish', subtitle: 'Empareja guarniciones', body: 'Memory clásico con ingredientes, vasos y herramientas.', cta: 'Jugar' },
     rhythm: { icon: '🥁', title: 'Ritmo de Shaker', subtitle: 'Agita al compás', body: 'Sigue el ritmo. Cuanto mejor tu tempo, más perfecta la emulsión.', cta: 'Jugar' },
@@ -1253,7 +1254,7 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
         <h2 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: '0 0 10px', lineHeight: 1.05 }}>{m.title}</h2>
         <p style={{ color: 'var(--ink-2)', lineHeight: 1.5, marginBottom: 20 }}>{m.body}</p>
         <div style={{ display: 'flex', gap: 10 }}>
-          <button className="btn" onClick={onClose}>Cerrar</button>
+          <button className="btn" onClick={onClose}>{tr('mode.close', 'Cerrar')}</button>
           <button className="btn primary" onClick={onStart} style={{ flex: 1 }}>
             <Icon name="play" size={14} /> {m.cta}
           </button>

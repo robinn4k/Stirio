@@ -564,6 +564,7 @@ const MetaPill = ({ label, value }) => (
 // ═══════════════ FREEQUIZ — lista de las 24 rondas ═══════════════
 
 const FreeQuizScreen = ({ onBack, onStartRound }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const rounds = window.TRIVIA_ROUNDS || [];
   return (
     <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
@@ -572,8 +573,8 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>Play</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>Quiz Libre</h1>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('home.quick_eyebrow', 'jugar')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>{tr('mode.freequiz.title', 'Quiz Libre')}</h1>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 3 }}>{rounds.length} rondas temáticas · {rounds.reduce((n, r) => n + r.questions.length, 0)} preguntas</div>
         </div>
       </div>
