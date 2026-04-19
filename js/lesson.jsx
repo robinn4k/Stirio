@@ -398,10 +398,10 @@ const EarTrainStep = ({ step, onAnswer }) => {
       </button>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, maxWidth: 340, margin: '0 auto' }}>
         <button className="btn" style={{ padding: 18 }} onClick={() => onAnswer(step.chord === 'major')}>
-          <span style={{ fontFamily: 'var(--f-serif)', fontSize: 24 }}>Major</span>
+          <span style={{ fontFamily: 'var(--f-serif)', fontSize: 24 }}>{(window.stUiT ? window.stUiT('lesson.chord_major', 'Major') : 'Major')}</span>
         </button>
         <button className="btn" style={{ padding: 18 }} onClick={() => onAnswer(step.chord === 'minor')}>
-          <span style={{ fontFamily: 'var(--f-serif)', fontSize: 24 }}>minor</span>
+          <span style={{ fontFamily: 'var(--f-serif)', fontSize: 24 }}>{(window.stUiT ? window.stUiT('lesson.chord_minor', 'minor') : 'minor')}</span>
         </button>
       </div>
       <div style={{ marginTop: 18, fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
