@@ -975,7 +975,6 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [editingName, setEditingName] = React.useState(false);
   const [tmpName, setTmpName] = React.useState(profile.name || '');
-  const [notif, setNotif] = React.useState(true);
   const [units, setUnits] = React.useState('ml');
   const [lang, setLang] = React.useState((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es');
   const [reduce, setReduce] = React.useState(() => {
@@ -1349,11 +1348,6 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
           <SettingsDivider />
 
-          <SettingsRow
-            icon="🔔"
-            label="Recordatorio diario"
-            value={<Toggle on={notif} onChange={setNotif} />}
-          />
           <SettingsRow
             icon="🎬"
             label="Reducir animaciones"
