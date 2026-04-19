@@ -1216,8 +1216,8 @@ const StatTile = ({ label, value, color }) => (
 );
 
 const ActivityHeatmap = ({ log }) => {
-  // 7 cols × 5 rows = last 35 days (≈ último mes), oldest → newest,
-  // ending on today (right-most cell in the last row).
+  // 7 cols × 5 rows = last 35 days (≈ último mes). Today is top-left,
+  // going back in time toward bottom-right (oldest).
   const days = 35;
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -1226,7 +1226,7 @@ const ActivityHeatmap = ({ log }) => {
 
   const cells = [];
   let maxXp = 0;
-  for (let i = days - 1; i >= 0; i--) {
+  for (let i = 0; i < days; i++) {
     const d = new Date(today);
     d.setDate(today.getDate() - i);
     const entry = (log && log[dayKey(d)]) || null;
