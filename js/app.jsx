@@ -167,6 +167,12 @@ const App = () => {
     if (m === 'blind')    { setSubScreen('blind');     return; }
     if (m === 'builder')  { setSubScreen('builder');   return; }
     if (m === 'duel')     { setSubScreen('duel');      return; }
+    if (m === 'arcade')   { setSubScreen('arcade');    return; }
+    if (m === 'memory')   { setSubScreen('memory');    return; }
+    if (m === 'rhythm')   { setSubScreen('rhythm');    return; }
+    if (m === 'glossary') { setSubScreen('glossary');  return; }
+    if (m === 'map')      { setSubScreen('map');       return; }
+    if (m === 'library')  { setSubScreen('library');   return; }
     if (m === 'daily')    { pickLesson(window.DAILY_LESSON && window.DAILY_LESSON()); return; }
     if (m === 'speed')    { pickLesson(window.SPEED_LESSON && window.SPEED_LESSON()); return; }
     setActiveMode(m);
@@ -307,6 +313,30 @@ const App = () => {
 
       {subScreen === 'duel' && !activeLesson && (
         <DuelScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'glossary' && !activeLesson && (
+        <GlossaryScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'map' && !activeLesson && (
+        <MapScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'library' && !activeLesson && (
+        <LibraryScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'arcade' && !activeLesson && (
+        <ArcadeScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'memory' && !activeLesson && (
+        <MemoryScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'rhythm' && !activeLesson && (
+        <RhythmScreen onBack={() => setSubScreen(null)} />
       )}
 
       {fichaOpen && (
