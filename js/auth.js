@@ -153,6 +153,48 @@ async function updateUserProfile({ name, photoURL }) {
   }
 }
 
+// ─── Guardar respuestas de onboarding ────────────────────────
+// Writes onboarding answers to `users/{uid}` (merge). For guests, first
+// upgrades the local pseudo-UID to a real Firebase anonymous UID via
+// rivals.ensureAnonymousAuth so the doc is ownable under Firestore rules.
+async function saveOnboarding(payload) {
+  if (!db || !currentUser) return null;
+  let uid = currentUser.uid;
+  if (currentUser.isGuest) {
+    try {
+      const rivals = await import('./rivals.js');
+      const anonUid = await rivals.ensureAnonymousAuth();
+      if (anonUid) {
+        uid = anonUid;
+        // Persist the real anon UID so future boots hit the same Firestore doc
+        currentUser.uid = anonUid;
+        saveUserLocal(currentUser);
+      }
+    } catch (e) { console.warn('anon auth upgrade failed:', e); }
+  }
+  try {
+    const { doc, setDoc } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
+    await setDoc(doc(db, 'users', uid), { onboarding: payload }, { merge: true });
+    return uid;
+  } catch (e) {
+    console.warn('saveOnboarding cloud write failed:', e);
+    return null;
+  }
+}
+
+// ─── Leer respuestas de onboarding ───────────────────────────
+async function loadOnboarding() {
+  if (!db || !currentUser) return null;
+  try {
+    const { doc, getDoc } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
+    const snap = await getDoc(doc(db, 'users', currentUser.uid));
+    return snap.exists() ? (snap.data().onboarding || null) : null;
+  } catch (e) {
+    console.warn('loadOnboarding failed:', e);
+    return null;
+  }
+}
+
 // ─── Subir foto de perfil ────────────────────────────────────
 async function uploadProfilePhoto(file) {
   if (!app || !auth?.currentUser) throw new Error('Firebase not ready');
@@ -237,6 +279,8 @@ export {
   restoreSession,
   updateGuestName,
   updateUserProfile,
+  saveOnboarding,
+  loadOnboarding,
   uploadProfilePhoto,
   deleteUserData,
   deleteUserAccount,

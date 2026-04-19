@@ -2,12 +2,44 @@
 // Depends on ui.jsx, data.js
 
 // ═══════════════ ONBOARDING ═══════════════
+const ONBOARDING_LANGS = [
+  { id: 'es', label: 'Español',  flag: '🇪🇸' },
+  { id: 'en', label: 'English',  flag: '🇬🇧' },
+  { id: 'fr', label: 'Français', flag: '🇫🇷' },
+  { id: 'pt', label: 'Português',flag: '🇵🇹' },
+  { id: 'de', label: 'Deutsch',  flag: '🇩🇪' },
+];
+
+const ONBOARDING_INTERESTS = [
+  { id: 'iba',           fallback: 'Clásicos IBA',    emoji: '📖' },
+  { id: 'techniques',    fallback: 'Técnicas',        emoji: '🎯' },
+  { id: 'history',       fallback: 'Historia',        emoji: '📜' },
+  { id: 'tiki',          fallback: 'Tiki',            emoji: '🌺' },
+  { id: 'mocktails',     fallback: 'Mocktails',       emoji: '🍋' },
+  { id: 'spirits_world', fallback: 'Mundo destilados',emoji: '🗺️' },
+];
+
+const ONBOARDING_SPIRITS = [
+  { id: 'gin',     fallback: 'Gin',     emoji: '🌿' },
+  { id: 'rum',     fallback: 'Ron',     emoji: '🏝️' },
+  { id: 'whisky',  fallback: 'Whisky',  emoji: '🥃' },
+  { id: 'tequila', fallback: 'Tequila', emoji: '🌵' },
+  { id: 'vodka',   fallback: 'Vodka',   emoji: '❄️' },
+  { id: 'brandy',  fallback: 'Brandy',  emoji: '🍇' },
+];
+
 const Onboarding = ({ onDone }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [step, setStep] = useState(0);
   const [authMode, setAuthMode] = useState(null); // 'google' | 'guest'
   const [name, setName] = useState('');
   const [level, setLevel] = useState(null);
+  const [language, setLanguage] = useState(() => {
+    try { return (window.stLang?.getLang?.()) || 'es'; } catch { return 'es'; }
+  });
+  const [interests, setInterests] = useState([]);
+  const [alcohol, setAlcohol] = useState(null);    // 'regular' | 'mocktails'
+  const [favSpirit, setFavSpirit] = useState(null);
   const [googleUser, setGoogleUser] = useState(null); // {uid,name,email,photo} from Firebase
   const [authLoading, setAuthLoading] = useState(false);
   const [authError, setAuthError] = useState(null);
@@ -41,12 +73,32 @@ const Onboarding = ({ onDone }) => {
   const next = () => setStep(s => s + 1);
   const back = () => setStep(s => Math.max(0, s - 1));
 
-  const totalSteps = 3;
+  const totalSteps = 7;
+  const toggleInterest = (id) => setInterests(xs => xs.includes(id) ? xs.filter(x => x !== id) : [...xs, id]);
   const canNext = {
     0: true,
     1: authMode === 'google' || (authMode === 'guest' && name.trim().length > 0),
-    2: level !== null,
+    2: !!language,
+    3: level !== null,
+    4: true,                 // interests can be empty (skip-friendly)
+    5: alcohol !== null,
+    6: true,                 // favSpirit optional
   }[step];
+
+  const submit = () => onDone({
+    name: authMode === 'google' ? (googleUser?.name || name) : name,
+    email: googleUser?.email || null,
+    photoURL: googleUser?.photo || null,
+    uid: googleUser?.uid || null,
+    authMode,
+    onboarding: {
+      difficulty: level || 'skip',
+      language,
+      interests,
+      alcohol: alcohol || 'regular',
+      favSpirit: favSpirit || null,
+    },
+  });
 
   return (
     <div style={{
@@ -209,6 +261,38 @@ const Onboarding = ({ onDone }) => {
 
           {step === 2 && (
             <div>
+              <StepTitle eyebrow={tr('onboarding.lang_eyebrow', 'idioma')} title={tr('onboarding.lang_title', '¿En qué idioma prefieres Stirio?')} subtitle={tr('onboarding.lang_subtitle', 'Puedes cambiarlo luego desde Perfil.')} />
+              <div style={{ display: 'grid', gap: 10 }}>
+                {ONBOARDING_LANGS.map(l => {
+                  const picked = language === l.id;
+                  return (
+                    <button key={l.id} onClick={() => setLanguage(l.id)} style={{
+                      padding: 14,
+                      display: 'flex', alignItems: 'center', gap: 14,
+                      textAlign: 'left',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 26 }}>{l.flag}</div>
+                      <div style={{ flex: 1, fontWeight: 500, fontSize: 15 }}>{l.label}</div>
+                      <div style={{
+                        width: 22, height: 22, borderRadius: '50%',
+                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
+                        display: 'grid', placeItems: 'center',
+                      }}>
+                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {step === 3 && (
+            <div>
               <StepTitle eyebrow={tr('onboarding.level_eyebrow', 'nivel')} title={tr('onboarding.level_title', '¿Qué tal te llevas con la coctelería?')} subtitle={tr('onboarding.level_subtitle', 'Ajustamos la dificultad. Puedes cambiarlo cuando quieras.')} />
               <div style={{ display: 'grid', gap: 10 }}>
                 {[
@@ -254,7 +338,115 @@ const Onboarding = ({ onDone }) => {
                   textDecoration: 'underline', textUnderlineOffset: 3,
                 }}
               >
-                Saltar — decidir luego
+                {tr('onboarding.skip', 'Saltar — decidir luego')}
+              </button>
+            </div>
+          )}
+
+          {step === 4 && (
+            <div>
+              <StepTitle eyebrow={tr('onboarding.interests_eyebrow', 'intereses')} title={tr('onboarding.interests_title', '¿Qué te gustaría aprender?')} subtitle={tr('onboarding.interests_subtitle', 'Elige tantas como quieras.')} />
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                {ONBOARDING_INTERESTS.map(it => {
+                  const picked = interests.includes(it.id);
+                  return (
+                    <button key={it.id} onClick={() => toggleInterest(it.id)} style={{
+                      padding: 14,
+                      display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 6,
+                      textAlign: 'left',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                      minHeight: 76,
+                    }}>
+                      <div style={{ fontSize: 22 }}>{it.emoji}</div>
+                      <div style={{ fontWeight: 500, fontSize: 13 }}>
+                        {tr(`onboarding.interest.${it.id}`, it.fallback)}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {step === 5 && (
+            <div>
+              <StepTitle eyebrow={tr('onboarding.alcohol_eyebrow', 'preferencia')} title={tr('onboarding.alcohol_title', '¿Bebes alcohol?')} subtitle={tr('onboarding.alcohol_subtitle', 'Adaptamos las recetas que te sugerimos.')} />
+              <div style={{ display: 'grid', gap: 10 }}>
+                {[
+                  { id: 'regular',   fallback: 'Sí, lo normal',  caption: 'Todas las recetas', emoji: '🍸' },
+                  { id: 'mocktails', fallback: 'Solo mocktails', caption: 'Sin alcohol',       emoji: '🍹' },
+                ].map(a => {
+                  const picked = alcohol === a.id;
+                  return (
+                    <button key={a.id} onClick={() => setAlcohol(a.id)} style={{
+                      padding: 16,
+                      display: 'flex', alignItems: 'center', gap: 14,
+                      textAlign: 'left',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 28 }}>{a.emoji}</div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 500, fontSize: 15 }}>
+                          {tr(`onboarding.alcohol_${a.id}`, a.fallback)}
+                        </div>
+                        <div style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
+                          {tr(`onboarding.alcohol_${a.id}_cap`, a.caption)}
+                        </div>
+                      </div>
+                      <div style={{
+                        width: 22, height: 22, borderRadius: '50%',
+                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
+                        display: 'grid', placeItems: 'center',
+                      }}>
+                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {step === 6 && (
+            <div>
+              <StepTitle eyebrow={tr('onboarding.spirit_eyebrow', 'destilado')} title={tr('onboarding.spirit_title', '¿Tu destilado favorito?')} subtitle={tr('onboarding.spirit_subtitle', 'Lo usaremos para sugerirte recetas.')} />
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
+                {ONBOARDING_SPIRITS.map(s => {
+                  const picked = favSpirit === s.id;
+                  return (
+                    <button key={s.id} onClick={() => setFavSpirit(picked ? null : s.id)} style={{
+                      padding: 14,
+                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
+                      textAlign: 'center',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 28 }}>{s.emoji}</div>
+                      <div style={{ fontWeight: 500, fontSize: 13 }}>
+                        {tr(`onboarding.spirit.${s.id}`, s.fallback)}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+              <button
+                onClick={() => setFavSpirit(null)}
+                style={{
+                  marginTop: 14, width: '100%', padding: 10,
+                  background: 'transparent', border: 0,
+                  color: 'var(--ink-3)', fontFamily: 'var(--f-mono)', fontSize: 12,
+                  textDecoration: 'underline', textUnderlineOffset: 3,
+                }}
+              >
+                {tr('onboarding.spirit_none', 'Prefiero no decir')}
               </button>
             </div>
           )}
@@ -267,13 +459,7 @@ const Onboarding = ({ onDone }) => {
             </button>
             <button
               className="btn primary"
-              onClick={step === 2 ? () => onDone({
-                name: authMode === 'google' ? (googleUser?.name || name) : name,
-                email: googleUser?.email || null,
-                photoURL: googleUser?.photo || null,
-                uid: googleUser?.uid || null,
-                authMode, level,
-              }) : next}
+              onClick={step === totalSteps - 1 ? submit : next}
               disabled={!canNext}
               style={{
                 flex: 1, padding: '12px 24px',
@@ -281,7 +467,7 @@ const Onboarding = ({ onDone }) => {
                 pointerEvents: canNext ? 'auto' : 'none',
               }}
             >
-              {step === 2 ? tr('onboarding.enter', 'Entrar a Stirio') : tr('ui.continue', 'Continuar')} <Icon name="arrowR" size={16} />
+              {step === totalSteps - 1 ? tr('onboarding.enter', 'Entrar a Stirio') : tr('ui.continue', 'Continuar')} <Icon name="arrowR" size={16} />
             </button>
           </div>
         )}

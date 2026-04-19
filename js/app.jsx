@@ -22,6 +22,18 @@ const TWEAK_DEFAULTS = {
 const LS_STATE  = 'stirio::state::v2';
 const LS_TWEAKS = 'stirio::tweaks::v1';
 const LS_ACTIVITY = 'stirio::activity::v1';
+const LS_ONBOARDING = 'cq_onboarding';
+
+// Bump when questions change — forces existing users through the flow once.
+const ONBOARDING_VERSION = 2;
+
+const loadOnboardingLocal = () => {
+  try { return JSON.parse(localStorage.getItem(LS_ONBOARDING)) || null; } catch { return null; }
+};
+const saveOnboardingLocal = (o) => {
+  try { localStorage.setItem(LS_ONBOARDING, JSON.stringify(o)); } catch {}
+};
+const needsOnboarding = (o) => !o || typeof o.version !== 'number' || o.version < ONBOARDING_VERSION;
 
 const loadState  = () => { try { return JSON.parse(localStorage.getItem(LS_STATE))  || null; } catch { return null; } };
 const saveState  = (s) => { try { localStorage.setItem(LS_STATE, JSON.stringify(s)); } catch {} };
@@ -64,10 +76,13 @@ const loadTweaks = () => {
 
 const App = () => {
   const saved = loadState();
-  const [screen, setScreen]           = useState(saved?.screen || 'onboarding');
+  const savedOnboarding = loadOnboardingLocal();
+  const mustOnboard = needsOnboarding(savedOnboarding);
+  const [screen, setScreen]           = useState(mustOnboard ? 'onboarding' : (saved?.screen || 'home'));
   const [profile, setProfile]         = useState(saved?.profile || {
     name: '', authMode: null, xp: 340, xpNext: 500,
     level: 4, title: 'Apprentice', streak: 3, avatar: null,
+    onboarding: savedOnboarding || null,
   });
   const [tweaks, setTweaks]           = useState(loadTweaks());
   const [activeLesson, setActiveLesson] = useState(null);
@@ -147,7 +162,31 @@ const App = () => {
           photoURL: user.photo || null,
           authMode: user.provider === 'guest' ? 'guest' : 'google',
         }));
-        if (screen === 'onboarding') setScreen('home');
+
+        // Firestore-backed onboarding sync: if the cloud copy is up-to-date
+        // seed localStorage + skip the flow; if a guest has local answers
+        // but the newly-signed-in Google account doesn't yet have them in
+        // the cloud, migrate them up.
+        let cloudOnboarding = null;
+        try { cloudOnboarding = await window.stAuth.loadOnboarding(); } catch {}
+        if (cloudOnboarding && !needsOnboarding(cloudOnboarding)) {
+          saveOnboardingLocal(cloudOnboarding);
+          setProfile(p => ({ ...p, onboarding: cloudOnboarding }));
+          if (screen === 'onboarding') setScreen('home');
+          if (cloudOnboarding.language) {
+            try { window.stLang?.setLang(cloudOnboarding.language); } catch {}
+          }
+        } else {
+          const localOnb = loadOnboardingLocal();
+          if (!needsOnboarding(localOnb) && user.provider !== 'guest') {
+            // Guest→Google upgrade: push the local payload to the new cloud doc
+            try { await window.stAuth.saveOnboarding(localOnb); } catch {}
+            setProfile(p => ({ ...p, onboarding: localOnb }));
+            if (screen === 'onboarding') setScreen('home');
+          } else if (!mustOnboard && screen === 'onboarding') {
+            setScreen('home');
+          }
+        }
       } catch (e) { console.warn('[auth] bootstrap', e); }
     })();
     return () => { cancelled = true; };
@@ -267,7 +306,12 @@ const App = () => {
     setActiveLesson(null);
   };
 
-  const finishOnboarding = (o) => {
+  const finishOnboarding = async (o) => {
+    const payload = {
+      version: ONBOARDING_VERSION,
+      completedAt: Date.now(),
+      ...(o.onboarding || {}),
+    };
     setProfile(p => ({
       ...p,
       uid: o.uid || p.uid,
@@ -275,8 +319,16 @@ const App = () => {
       email: o.email || null,
       photoURL: o.photoURL || null,
       authMode: o.authMode,
+      onboarding: payload,
     }));
+    saveOnboardingLocal(payload);
+    if (payload.language) {
+      try { window.stLang?.setLang(payload.language); } catch {}
+      window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: payload.language } }));
+    }
     setScreen('home');
+    // Fire-and-forget cloud write so Home paints immediately
+    try { await window.stAuth?.saveOnboarding?.(payload); } catch {}
   };
 
   const asDesktop = (tweaks.device || 'mobile') === 'desktop';
