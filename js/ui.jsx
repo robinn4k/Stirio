@@ -244,23 +244,29 @@ const CookieBanner = () => {
 };
 
 // ── Legal footer ──────────────────────────────────────────────
-const LegalFooter = () => (
-  <footer style={{
-    padding: '24px 16px 120px',
-    textAlign: 'center',
-    color: 'var(--ink-3)',
-    fontSize: 11,
-    fontFamily: 'var(--f-mono)',
-    display: 'flex', flexDirection: 'column', gap: 6,
-  }}>
-    <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-      <a href="legal.html" target="_blank" rel="noopener" style={{ color: 'var(--ink-2)', textDecoration: 'none' }}>Aviso legal</a>
-      <a href="privacidad.html" target="_blank" rel="noopener" style={{ color: 'var(--ink-2)', textDecoration: 'none' }}>Privacidad</a>
-      <a href="cookies.html" target="_blank" rel="noopener" style={{ color: 'var(--ink-2)', textDecoration: 'none' }}>Cookies</a>
-    </div>
-    <div>© {new Date().getFullYear()} Stirio · Drink responsibly</div>
-  </footer>
-);
+const LegalFooter = () => {
+  const linkStyle = { color: 'var(--ink-4, var(--ink-3))', textDecoration: 'none', opacity: 0.55 };
+  return (
+    <footer style={{
+      padding: '10px 16px 96px',
+      textAlign: 'center',
+      color: 'var(--ink-4, var(--ink-3))',
+      fontSize: 9,
+      fontFamily: 'var(--f-mono)',
+      letterSpacing: '0.04em',
+      opacity: 0.55,
+      lineHeight: 1.5,
+    }}>
+      <a href="legal.html" target="_blank" rel="noopener" style={linkStyle}>Legal</a>
+      <span style={{ margin: '0 6px' }}>·</span>
+      <a href="privacidad.html" target="_blank" rel="noopener" style={linkStyle}>Privacy</a>
+      <span style={{ margin: '0 6px' }}>·</span>
+      <a href="cookies.html" target="_blank" rel="noopener" style={linkStyle}>Cookies</a>
+      <span style={{ margin: '0 6px' }}>·</span>
+      <span>© {new Date().getFullYear()} Stirio</span>
+    </footer>
+  );
+};
 
 // ── Export to window (referenced by other JSX files) ─────────
 Object.assign(window, {

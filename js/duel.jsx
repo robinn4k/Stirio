@@ -252,7 +252,9 @@ const LobbySearching = ({ onCancel, seconds }) => (
       <div className="spinner" style={{ margin: '0 auto 14px' }} />
       {seconds !== undefined && (
         <div className="mono caps" style={{ fontSize: 11, color: 'var(--ink-3)' }}>
-          {seconds > 0 ? `${seconds}s restantes` : 'Tiempo agotado'}
+          {seconds > 0
+            ? dTrParams('duel.seconds_left', { n: seconds }, `${seconds}s restantes`)
+            : dTr('duel.time_up', 'Tiempo agotado')}
         </div>
       )}
     </div>
@@ -488,7 +490,7 @@ const BotDuel = ({ onBack }) => {
                 background: diff === d ? 'color-mix(in oklch, var(--amber) 20%, var(--bg-2))' : undefined,
                 borderColor: diff === d ? 'var(--amber)' : undefined,
               }}>
-              <div style={{ fontWeight: 700, textTransform: 'capitalize' }}>{d === 'easy' ? '🌱 Fácil' : d === 'medium' ? '⚡ Medio' : '🔥 Difícil'}</div>
+              <div style={{ fontWeight: 700, textTransform: 'capitalize' }}>{d === 'easy' ? dTr('duel.diff_easy', '🌱 Fácil') : d === 'medium' ? dTr('duel.diff_medium', '⚡ Medio') : dTr('duel.diff_hard', '🔥 Difícil')}</div>
               <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 2 }}>
                 Precisión {Math.round(DIFFS[d].accuracy * 100)}% · Respuesta {(DIFFS[d].minMs / 1000).toFixed(1)}–{(DIFFS[d].maxMs / 1000).toFixed(1)}s
               </div>
@@ -506,7 +508,7 @@ const BotDuel = ({ onBack }) => {
     return (
       <DuelShell title="Contra bot" subtitle="Resultado" onBack={onBack}>
         <DuelResults
-          players={{ p1: { name: 'Tú', score: userScore }, p2: { name: botName.current, score: botScore } }}
+          players={{ p1: { name: dTr('duel.you', 'Tú'), score: userScore }, p2: { name: botName.current, score: botScore } }}
           mySlot="p1"
           maxPlayers={2}
           onRematch={() => { setStarted(false); setQIdx(0); setUserScore(0); setBotScore(0); setPhase('playing'); round.current = rounds[Math.floor(Math.random() * rounds.length)]; questions.current = round.current.questions.slice(0, total).map(q => ({ ...q })); }}
@@ -522,7 +524,7 @@ const BotDuel = ({ onBack }) => {
   return (
     <DuelShell title={dTr('duel.bot_mode', 'Contra bot')} subtitle={dTrParams('duel.question_progress_short', { n: qIdx + 1, total }, `Pregunta ${qIdx + 1} · ${total}`)} onBack={onBack}>
       <Scoreboard
-        players={{ p1: { name: 'Tú', score: userScore }, p2: { name: botName.current, score: botScore } }}
+        players={{ p1: { name: dTr('duel.you', 'Tú'), score: userScore }, p2: { name: botName.current, score: botScore } }}
         slots={['p1', 'p2']}
         mySlot="p1"
       />
@@ -579,9 +581,9 @@ const DuelScreen = ({ onBack }) => {
     (async () => {
       try {
         if (window.stAuth && window.stAuth.initFirebase) await window.stAuth.initFirebase();
-        if (!window.stRivals) { showToast('Sin conexión — modo bot disponible', 'info'); return; }
+        if (!window.stRivals) { showToast(dTr('duel.offline_info', 'Sin conexión — modo bot disponible'), 'info'); return; }
         const ok = await window.stRivals.initRivals();
-        if (!ok) { showToast('Sin conexión — modo bot disponible', 'info'); return; }
+        if (!ok) { showToast(dTr('duel.offline_info', 'Sin conexión — modo bot disponible'), 'info'); return; }
         const u = await window.stRivals.ensureAnonymousAuth();
         if (cancelled) return;
         if (u) {
@@ -592,7 +594,7 @@ const DuelScreen = ({ onBack }) => {
         }
       } catch (e) {
         console.warn('[duel] init failed', e);
-        showToast('Sin conexión — modo bot disponible', 'info');
+        showToast(dTr('duel.offline_info', 'Sin conexión — modo bot disponible'), 'info');
       }
     })();
     return () => { cancelled = true; cleanupListeners(); };
@@ -637,7 +639,7 @@ const DuelScreen = ({ onBack }) => {
     try {
       const rounds = window.TRIVIA_ROUNDS || [];
       const r = rounds[Math.floor(Math.random() * rounds.length)];
-      if (!r) { showToast('No hay preguntas', 'error'); return; }
+      if (!r) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
       const qs = window.stRivals.prepareDuelQuestions(r);
       const setup = { roundId: r.id, questions: qs };
       const res = await window.stRivals.createFriendRoom(uid, myName, setup, opts.maxPlayers);
@@ -647,7 +649,7 @@ const DuelScreen = ({ onBack }) => {
       setPhase('host');
     } catch (e) {
       console.error('[duel] createFriendRoom', e);
-      showToast('Error al crear sala', 'error');
+      showToast(dTr('duel.err_create_room', 'Error al crear sala'), 'error');
     }
   };
 
@@ -659,7 +661,7 @@ const DuelScreen = ({ onBack }) => {
       const result = await window.stRivals.joinByCode(uid, myName, c);
       setJoining(false);
       if (result === null) { showToast(dTr('duel.code_invalid', 'Código no válido'), 'error'); return; }
-      if (result === 'full') { showToast('Sala llena', 'error'); return; }
+      if (result === 'full') { showToast(dTr('duel.err_room_full', 'Sala llena'), 'error'); return; }
       setRoomId(result.roomId); setSlot(result.slot); setCode(c);
       await window.stRivals.registerPlayerDisconnect(result.roomId, result.slot);
       await subscribeRoom(result.roomId);
@@ -667,7 +669,7 @@ const DuelScreen = ({ onBack }) => {
     } catch (e) {
       setJoining(false);
       console.error('[duel] joinByCode', e);
-      showToast('Error al unirse', 'error');
+      showToast(dTr('duel.err_join_generic', 'Error al unirse'), 'error');
     }
   };
 
@@ -696,7 +698,7 @@ const DuelScreen = ({ onBack }) => {
               clearInterval(searchTimerRef.current); searchTimerRef.current = null;
               window.stRivals.leaveQueue(uid).catch(() => {});
               if (unsubMatchRef.current) { unsubMatchRef.current(); unsubMatchRef.current = null; }
-              showToast('No se encontraron rivales', 'info');
+              showToast(dTr('duel.no_rivals', 'No se encontraron rivales'), 'info');
               setPhase('menu');
               return 0;
             }
@@ -715,13 +717,13 @@ const DuelScreen = ({ onBack }) => {
       }
     } catch (e) {
       console.error('[duel] joinQueue', e);
-      showToast('Error al buscar rival', 'error');
+      showToast(dTr('duel.err_search', 'Error al buscar rival'), 'error');
     }
   };
 
   const handleStart = async () => {
     if (!roomId || !window.stRivals) return;
-    try { await window.stRivals.startRoom(roomId); } catch (e) { showToast('Error al iniciar', 'error'); }
+    try { await window.stRivals.startRoom(roomId); } catch (e) { showToast(dTr('duel.err_start', 'Error al iniciar'), 'error'); }
   };
 
   // Render

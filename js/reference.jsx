@@ -172,7 +172,7 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
             display: 'grid', placeItems: 'center', fontSize: 32,
           }}>{level.icon}</div>
           <div>
-            <div className="mono caps" style={{ fontSize: 10, color: level.color, marginBottom: 2 }}>Nivel {level.id}</div>
+            <div className="mono caps" style={{ fontSize: 10, color: level.color, marginBottom: 2 }}>{(window.stLang && window.stLang.t) ? window.stLang.t('academy.level_n', { n: level.id }) : `Nivel ${level.id}`}</div>
             <h2 style={{ fontFamily: 'var(--f-serif)', fontSize: 26, margin: 0, lineHeight: 1 }}>{_t(level.key)}</h2>
             <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 4, lineHeight: 1.3 }}>{_t(level.descKey)}</div>
           </div>
@@ -312,7 +312,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
             color: cat === c ? 'var(--bg-0)' : 'var(--ink-2)',
             border: `1px solid ${cat === c ? 'var(--amber)' : 'var(--line-soft)'}`,
           }}>
-            {c === 'all' ? 'Todos' : c}
+            {c === 'all' ? tr('fichas.filter_all', 'Todos') : c}
           </button>
         ))}
       </div>
@@ -342,7 +342,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
         {filtered.length === 0 && (
           <div style={{ gridColumn: '1 / -1', padding: '40px 20px', textAlign: 'center', color: 'var(--ink-3)' }}>
             <div style={{ fontSize: 40, marginBottom: 8 }}>🥃</div>
-            <div style={{ fontSize: 13 }}>Sin resultados</div>
+            <div style={{ fontSize: 13 }}>{tr('fichas.no_results', 'Sin resultados')}</div>
           </div>
         )}
       </div>
@@ -426,7 +426,7 @@ const FichaDetail = ({ ficha, onClose }) => {
       {/* Garnish */}
       {ficha.garnish && (
         <div style={{ padding: '0 24px 20px' }}>
-          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>Garnish</div>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>{tr('ficha.garnish_label', 'Garnish')}</div>
           <div style={{ fontSize: 13, color: 'var(--ink-1)', fontStyle: 'italic' }}>
             {ficha.garnish}
           </div>

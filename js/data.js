@@ -194,16 +194,6 @@ const ACHIEVEMENTS = [
   { id: 'connoisseur', label: 'Connoisseur', icon: '👑', desc: 'Master 10 topics', earned: false },
 ];
 
-const LEADERBOARD = [
-  { name: 'mira_k', xp: 12840, country: '🇪🇸', badge: '👑' },
-  { name: 'nocturne', xp: 11202, country: '🇯🇵', badge: '🌙' },
-  { name: 'basil.drop', xp: 10988, country: '🇫🇷', badge: '🌿' },
-  { name: 'you', xp: 9420, country: '🌍', badge: '🔥', self: true },
-  { name: 'vermouth_vic', xp: 9011, country: '🇮🇹', badge: '🍸' },
-  { name: 'tenor.clef', xp: 8720, country: '🇬🇧', badge: '🎹' },
-  { name: 'pigment', xp: 8455, country: '🇳🇱', badge: '🎨' },
-];
-
 const CATEGORIES = [
   { id: 'cocktails', name: 'Cocktails', emoji: '🍸', count: 42, color: 'amber' },
   { id: 'music', name: 'Music', emoji: '🎹', count: 28, color: 'cyan' },
@@ -239,19 +229,6 @@ const familyFromFicha = (f) => {
   return 'Mixed';
 };
 ALL_FICHAS.forEach(f => { f._family = familyFromFicha(f); });
-
-// Academy: 6 familias → curamos fichas de ALL_FICHAS
-const ACADEMY_FAMILIES = [
-  { id: 'highball',  title: 'Highball',    subtitle: 'Largos, refrescantes, efervescentes', icon: '🫧', color: 'oklch(0.72 0.15 200)', match: 'Highball' },
-  { id: 'sour',      title: 'Sours',       subtitle: 'Destilado, cítrico y dulce',          icon: '🍋', color: 'oklch(0.82 0.17 90)',  match: 'Sour' },
-  { id: 'stirred',   title: 'Martini & Manhattan', subtitle: 'Removidos, elegantes, espirituosos', icon: '🍸', color: 'oklch(0.75 0.14 310)', match: 'Stirred' },
-  { id: 'oldschool', title: 'Old‑school',  subtitle: 'Whisky, azúcar, bitters — el canon',   icon: '🥃', color: 'oklch(0.65 0.15 45)',  match: 'Old-school' },
-  { id: 'tiki',      title: 'Tiki',        subtitle: 'Ron, frutas, exuberancia',            icon: '🌴', color: 'oklch(0.75 0.18 25)',  match: 'Tiki' },
-  { id: 'mixed',     title: 'Mixtos',      subtitle: 'Contemporáneos y experimentales',     icon: '🧪', color: 'oklch(0.72 0.14 170)', match: 'Mixed' },
-];
-ACADEMY_FAMILIES.forEach(fam => {
-  fam.fichas = ALL_FICHAS.filter(f => f._family === fam.match);
-});
 
 // Rondas de trivia (las 24 ES reales del repo)
 const TRIVIA_ROUNDS = repo.ROUNDS_ES || [];
@@ -452,8 +429,8 @@ const buildAcademyPractice = (level, roundId) => {
 };
 
 Object.assign(window, {
-  LESSONS, ACHIEVEMENTS, LEADERBOARD, CATEGORIES,
-  ALL_FICHAS, ACADEMY_FAMILIES, TRIVIA_ROUNDS,
+  LESSONS, ACHIEVEMENTS, CATEGORIES,
+  ALL_FICHAS, TRIVIA_ROUNDS,
   buildLessonFromRound, DAILY_LESSON, SPEED_LESSON,
   getAcademyLevels, buildAcademyLesson, buildAcademyPractice,
 });
