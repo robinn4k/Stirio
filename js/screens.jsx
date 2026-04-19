@@ -316,7 +316,11 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
     })();
     return () => { cancelled = true; };
   }, []);
-  const featured = LESSONS[0];
+  // Featured cocktail rotates daily: different lesson each calendar day,
+  // cycling through LESSONS. Uses UTC day-of-epoch so everyone sees the
+  // same featured on a given day.
+  const _dayIdx = Math.floor(Date.now() / 86400000);
+  const featured = LESSONS[_dayIdx % LESSONS.length] || LESSONS[0];
   const dailyChallenge = { id: 'daily', title: 'Reto Diario', questions: 10, xp: 120 };
   const time = new Date().getHours();
   const greetingKey = time < 12 ? 'home.greet_morning' : time < 19 ? 'home.greet_afternoon' : 'home.greet_evening';
