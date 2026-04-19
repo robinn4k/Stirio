@@ -22,7 +22,7 @@
   <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js" crossorigin></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.21';</script>
+  <script>window.STIRIO_VERSION = '10.22';</script>
 
   <!-- Data layer (plain scripts — sets window.StirioRepo and game globals) -->
   <script src="js/repo-data.js"></script>
@@ -44,6 +44,14 @@
     import('./js/learn.js').then(m => { window.stLearn = m; }).catch(()=>{});
     import('./js/academy_data.js').then(m => { window.stAcademyData = m; }).catch(()=>{});
     import('./js/academy.js').then(m => { window.stAcademy = m; }).catch(()=>{});
+    // Seed window.MAP_REGIONS so Home → Referencia rápida can show the real
+    // count + preview. wiki-map.js is otherwise only loaded inside map.html.
+    import('./js/wiki-map.js').then(m => {
+      if (m.SPIRIT_REGIONS) {
+        window.MAP_REGIONS = m.SPIRIT_REGIONS;
+        window.dispatchEvent(new CustomEvent('stirio:mapregionsready'));
+      }
+    }).catch(err => console.warn('wiki-map seed failed:', err));
   </script>
 
   <!-- React UI components (Babel transpiles JSX in-browser as classic scripts — shared top-level scope) -->
