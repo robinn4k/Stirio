@@ -1889,5 +1889,22 @@
   "duel.menu_host": "Criar sala",
   "duel.menu_join": "Entrar com código",
   "duel.menu_random": "Aleatório",
-  "duel.menu_bot": "vs Bot"
+  "duel.menu_bot": "vs Bot",
+  "onboarding.handle_eyebrow": "seu identificador",
+  "onboarding.handle_title": "Como te chamamos?",
+  "onboarding.handle_subtitle": "Aparecerá em duelos e no ranking global.",
+  "onboarding.alias_placeholder": "seu nick",
+  "onboarding.google_hello": "Olá, {name}!",
+  "onboarding.google_session": "· sessão iniciada com google ·",
+  "onboarding.level_eyebrow": "nível",
+  "onboarding.level_title": "Como você está com coquetéis?",
+  "onboarding.level_subtitle": "Ajustamos a dificuldade. Pode mudar depois.",
+  "onboarding.level_rookie": "Sou novo",
+  "onboarding.level_rookie_cap": "Começamos pelos clássicos",
+  "onboarding.level_home": "Bartender caseiro",
+  "onboarding.level_home_cap": "Conheço o básico, quero mais",
+  "onboarding.level_pro": "Pro / curioso sério",
+  "onboarding.level_pro_cap": "Me dê história, técnica e desafios",
+  "onboarding.auth_cancel": "Você cancelou o login",
+  "onboarding.auth_error": "Erro ao iniciar com Google"
 }

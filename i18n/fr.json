@@ -1889,5 +1889,22 @@
   "duel.menu_host": "Créer une salle",
   "duel.menu_join": "Rejoindre avec code",
   "duel.menu_random": "Aléatoire",
-  "duel.menu_bot": "vs Bot"
+  "duel.menu_bot": "vs Bot",
+  "onboarding.handle_eyebrow": "ton pseudo",
+  "onboarding.handle_title": "Comment t'appelle-t-on ?",
+  "onboarding.handle_subtitle": "Il apparaîtra dans les duels et au classement global.",
+  "onboarding.alias_placeholder": "ton pseudo",
+  "onboarding.google_hello": "Salut, {name} !",
+  "onboarding.google_session": "· connecté avec google ·",
+  "onboarding.level_eyebrow": "niveau",
+  "onboarding.level_title": "Comment es-tu avec les cocktails ?",
+  "onboarding.level_subtitle": "On ajuste la difficulté. Modifiable à tout moment.",
+  "onboarding.level_rookie": "Je débute",
+  "onboarding.level_rookie_cap": "Commençons par les classiques",
+  "onboarding.level_home": "Barman à la maison",
+  "onboarding.level_home_cap": "Je connais les bases, j'en veux plus",
+  "onboarding.level_pro": "Pro / curieux sérieux",
+  "onboarding.level_pro_cap": "Donne-moi histoire, technique et défis",
+  "onboarding.auth_cancel": "Tu as annulé la connexion",
+  "onboarding.auth_error": "Erreur de connexion Google"
 }

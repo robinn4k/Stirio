@@ -1889,5 +1889,22 @@
   "duel.menu_host": "Raum erstellen",
   "duel.menu_join": "Mit Code beitreten",
   "duel.menu_random": "Zufall",
-  "duel.menu_bot": "vs Bot"
+  "duel.menu_bot": "vs Bot",
+  "onboarding.handle_eyebrow": "dein Handle",
+  "onboarding.handle_title": "Wie nennen wir dich?",
+  "onboarding.handle_subtitle": "Wird in Duellen und der globalen Rangliste angezeigt.",
+  "onboarding.alias_placeholder": "dein Alias",
+  "onboarding.google_hello": "Hallo, {name}!",
+  "onboarding.google_session": "· mit google angemeldet ·",
+  "onboarding.level_eyebrow": "level",
+  "onboarding.level_title": "Wie gut bist du mit Cocktails?",
+  "onboarding.level_subtitle": "Wir passen die Schwierigkeit an. Du kannst es jederzeit ändern.",
+  "onboarding.level_rookie": "Ich bin neu",
+  "onboarding.level_rookie_cap": "Beginnen wir mit den Klassikern",
+  "onboarding.level_home": "Home-Bartender",
+  "onboarding.level_home_cap": "Ich kenne die Grundlagen, will mehr",
+  "onboarding.level_pro": "Pro / ernst neugierig",
+  "onboarding.level_pro_cap": "Gib mir Geschichte, Technik und Herausforderungen",
+  "onboarding.auth_cancel": "Login abgebrochen",
+  "onboarding.auth_error": "Fehler bei der Google-Anmeldung"
 }
