@@ -509,6 +509,8 @@ const LESSON_IMAGES = {
 };
 
 const FeaturedCard = ({ lesson, onPlay }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const trP = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
   const img = LESSON_IMAGES[lesson.id] || LESSON_IMAGES.negroni;
   return (
     <div className="card mobile-featured" style={{
@@ -522,7 +524,7 @@ const FeaturedCard = ({ lesson, onPlay }) => {
       <div className="mobile-featured-copy" style={{ padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
         <div>
           <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
-            hoy · {lesson.difficulty}
+            {trP('home.today_label', { difficulty: lesson.difficulty }, `hoy · ${lesson.difficulty}`)}
           </div>
           <h3 style={{
             fontFamily: 'var(--f-serif)', fontWeight: 400,
@@ -535,7 +537,7 @@ const FeaturedCard = ({ lesson, onPlay }) => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 20, flexWrap: 'wrap' }}>
           <button className="btn primary" onClick={onPlay} style={{ padding: '12px 22px' }}>
-            <Icon name="play" size={14} /> Jugar · 60s
+            <Icon name="play" size={14} /> {tr('home.play_60s', 'Jugar · 60s')}
           </button>
           <div className="chip amber"><Icon name="bolt" size={12} /> +{lesson.xp} xp</div>
         </div>
@@ -581,7 +583,9 @@ const FeaturedCard = ({ lesson, onPlay }) => {
   );
 };
 
-const DailyCard = ({ onPlay }) => (
+const DailyCard = ({ onPlay }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  return (
   <button onClick={onPlay} className="card" style={{
     padding: 18, textAlign: 'left', cursor: 'pointer',
     display: 'flex', flexDirection: 'column', gap: 8,
@@ -593,13 +597,14 @@ const DailyCard = ({ onPlay }) => (
     onMouseLeave={e => e.currentTarget.style.transform = ''}
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-      <div className="mono caps" style={{ color: 'var(--cyan)', fontSize: 10 }}>reto diario</div>
+      <div className="mono caps" style={{ color: 'var(--cyan)', fontSize: 10 }}>{tr('home.daily_eyebrow', 'reto diario')}</div>
       <div style={{ fontSize: 22 }}>📅</div>
     </div>
-    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>10 preguntas frescas</div>
-    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>Nuevas cada día · +120 XP</div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{tr('home.daily_title', '10 preguntas frescas')}</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{tr('home.daily_sub', 'Nuevas cada día · +120 XP')}</div>
   </button>
-);
+  );
+};
 
 const DuelCard = ({ onPlay }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
@@ -615,7 +620,7 @@ const DuelCard = ({ onPlay }) => {
     onMouseLeave={e => e.currentTarget.style.transform = ''}
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-      <div className="mono caps" style={{ color: 'var(--berry)', fontSize: 10 }}>multiplayer</div>
+      <div className="mono caps" style={{ color: 'var(--berry)', fontSize: 10 }}>{tr('home.multiplayer', 'multiplayer')}</div>
       <div style={{ fontSize: 22 }}>⚔️</div>
     </div>
     <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{tr('home.duel_sub_title', 'Duelo 1 vs 1')}</div>
