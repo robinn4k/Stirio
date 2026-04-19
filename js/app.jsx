@@ -88,6 +88,37 @@ const App = () => {
     return () => window.removeEventListener('stirio:langchange', onLangChange);
   }, []);
 
+  // Hydrate profile XP/level/streak from the canonical stLearn store
+  // (cq_learn_data). This is the same source the Firestore leaderboard reads
+  // from, so Profile XP and Ranking XP stay in sync.
+  useEffect(() => {
+    let cancelled = false;
+    const syncFromLearn = () => {
+      try {
+        if (!window.stLearn) return;
+        const stats = window.stLearn.getLearnStats();
+        const lvl = window.stLearn.getLevelInfo(stats.xp);
+        const nextTotal = lvl.maxLevel ? stats.xp : (stats.xp + (lvl.need - lvl.cur));
+        setProfile(p => ({
+          ...p,
+          xp: stats.xp,
+          xpNext: nextTotal || p.xpNext,
+          level: lvl.level,
+          streak: stats.streak,
+        }));
+      } catch {}
+    };
+    (async () => {
+      let tries = 0;
+      while (!window.stLearn && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      if (cancelled) return;
+      syncFromLearn();
+    })();
+    const onFocus = () => syncFromLearn();
+    window.addEventListener('focus', onFocus);
+    return () => { cancelled = true; window.removeEventListener('focus', onFocus); };
+  }, []);
+
   // Firebase auth bootstrap + i18n preload
   useEffect(() => {
     let cancelled = false;
@@ -182,7 +213,20 @@ const App = () => {
   const pickLesson   = (l) => { if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); } };
   const exitLesson   = ()  => { lessonStartAtRef.current = 0; setActiveLesson(null); };
   const finishLesson = ({ xp, correct, total }) => {
-    setProfile(p => ({ ...p, xp: p.xp + xp }));
+    // Write XP to the canonical stLearn store (cq_learn_data) so Profile and
+    // the Firestore leaderboard read the same number. Then re-sync the React
+    // profile state from stLearn so the UI matches.
+    try { if (window.stLearn && window.stLearn.addXp) window.stLearn.addXp(xp); } catch {}
+    try {
+      if (window.stLearn && window.stLearn.getLearnStats) {
+        const stats = window.stLearn.getLearnStats();
+        const lvl = window.stLearn.getLevelInfo(stats.xp);
+        const nextTotal = lvl.maxLevel ? stats.xp : (stats.xp + (lvl.need - lvl.cur));
+        setProfile(p => ({ ...p, xp: stats.xp, xpNext: nextTotal || p.xpNext, level: lvl.level, streak: stats.streak }));
+      } else {
+        setProfile(p => ({ ...p, xp: p.xp + xp }));
+      }
+    } catch { setProfile(p => ({ ...p, xp: p.xp + xp })); }
 
     // Record today's activity (used by Profile heatmap + stats)
     const startedAt = lessonStartAtRef.current;

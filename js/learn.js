@@ -325,3 +325,18 @@ function _finishSession() {
 }
 
 export function abortLesson() { ls = null; }
+
+// Add XP and refresh streak. Used by the React LessonPlayer so that non-learn
+// modes (speed, daily, blind, academy…) also accrue XP into the canonical
+// cq_learn_data store that the leaderboard reads from.
+export function addXp(amount) {
+  const xp = Math.max(0, amount | 0);
+  if (!xp) return;
+  const d = getData();
+  const today = new Date().toDateString();
+  const yesterday = new Date(Date.now() - 86400000).toDateString();
+  const streak = d.lastDate === today ? (d.streak || 1)
+    : d.lastDate === yesterday ? (d.streak || 0) + 1
+    : 1;
+  setData({ ...d, xp: (d.xp || 0) + xp, streak, lastDate: today });
+}
