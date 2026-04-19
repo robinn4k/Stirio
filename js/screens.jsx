@@ -3,6 +3,7 @@
 
 // ═══════════════ ONBOARDING ═══════════════
 const Onboarding = ({ onDone }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [step, setStep] = useState(0);
   const [authMode, setAuthMode] = useState(null); // 'google' | 'guest'
   const [name, setName] = useState('');
@@ -13,7 +14,7 @@ const Onboarding = ({ onDone }) => {
 
   const handleGoogle = async () => {
     setAuthError(null);
-    if (!window.stAuth) { setAuthError('Auth no disponible'); return; }
+    if (!window.stAuth) { setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible')); return; }
     setAuthLoading(true);
     try {
       await window.stAuth.initFirebase();
@@ -24,7 +25,7 @@ const Onboarding = ({ onDone }) => {
       setStep(1);
     } catch (e) {
       console.warn('[auth] google', e);
-      setAuthError(e.code === 'auth/popup-closed-by-user' ? 'Cancelaste el login' : 'Error al iniciar con Google');
+      setAuthError(e.code === 'auth/popup-closed-by-user' ? tr('onboarding.auth_cancel', 'Cancelaste el login') : tr('onboarding.auth_error', 'Error al iniciar con Google'));
     } finally {
       setAuthLoading(false);
     }
@@ -89,10 +90,10 @@ const Onboarding = ({ onDone }) => {
                 fontSize: 20, color: 'var(--ink-2)',
                 margin: '0 0 4px',
               }}>
-                Domina el arte del cóctel.
+                {tr('login.tagline', 'Domina el arte del cóctel.')}
               </p>
               <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, letterSpacing: '0.14em', marginBottom: 36 }}>
-                Aprende · Juega · Compite
+                {tr('login.sub', 'Aprende · Juega · Compite')}
               </div>
 
               <div style={{ display: 'grid', gap: 10, maxWidth: 340, margin: '0 auto' }}>
@@ -116,14 +117,14 @@ const Onboarding = ({ onDone }) => {
                     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                   </svg>
-                  {authLoading ? 'Abriendo Google…' : 'Continuar con Google'}
+                  {authLoading ? tr('ui.loading', 'Cargando…') : tr('login.google', 'Continuar con Google')}
                 </button>
                 <button
                   onClick={handleGuest}
                   className="btn"
                   style={{ padding: '14px 18px' }}
                 >
-                  <Icon name="user" size={16} /> Continuar como invitado
+                  <Icon name="user" size={16} /> {tr('login.guest', 'Continuar como invitado')}
                 </button>
                 {authError && (
                   <div style={{
@@ -142,17 +143,17 @@ const Onboarding = ({ onDone }) => {
                 fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)',
                 lineHeight: 1.5,
               }}>
-                Inicia con Google para guardar tus puntuaciones<br/>y aparecer en el ranking global.
+                {tr('login.note', 'Inicia con Google para guardar tus puntuaciones y aparecer en el ranking global.')}
               </div>
             </div>
           )}
 
           {step === 1 && authMode === 'guest' && (
             <div>
-              <StepTitle eyebrow="tu handle" title="¿Cómo te llamamos?" subtitle="Aparecerá en duelos y en la tabla global." />
+              <StepTitle eyebrow={tr('onboarding.handle_eyebrow', 'tu handle')} title={tr('onboarding.handle_title', '¿Cómo te llamamos?')} subtitle={tr('onboarding.handle_subtitle', 'Aparecerá en duelos y en la tabla global.')} />
               <input
                 autoFocus
-                placeholder="tu alias"
+                placeholder={tr('onboarding.alias_placeholder', 'tu alias')}
                 value={name}
                 onChange={e => setName(e.target.value)}
                 style={{
@@ -193,25 +194,27 @@ const Onboarding = ({ onDone }) => {
                 }}>{(googleUser?.name || '?').charAt(0).toUpperCase()}</div>
               )}
               <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, marginBottom: 4 }}>
-                ¡Hola, {googleUser?.name || 'invitado'}!
+                {window.stLang && window.stLang.t
+                  ? window.stLang.t('onboarding.google_hello', { name: googleUser?.name || 'invitado' })
+                  : `¡Hola, ${googleUser?.name || 'invitado'}!`}
               </div>
               {googleUser?.email && (
                 <div style={{ color: 'var(--ink-2)', marginBottom: 6 }}>{googleUser.email}</div>
               )}
               <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em' }}>
-                · sesión iniciada con google ·
+                {tr('onboarding.google_session', '· sesión iniciada con google ·')}
               </div>
             </div>
           )}
 
           {step === 2 && (
             <div>
-              <StepTitle eyebrow="nivel" title="¿Qué tal te llevas con la coctelería?" subtitle="Ajustamos la dificultad. Puedes cambiarlo cuando quieras." />
+              <StepTitle eyebrow={tr('onboarding.level_eyebrow', 'nivel')} title={tr('onboarding.level_title', '¿Qué tal te llevas con la coctelería?')} subtitle={tr('onboarding.level_subtitle', 'Ajustamos la dificultad. Puedes cambiarlo cuando quieras.')} />
               <div style={{ display: 'grid', gap: 10 }}>
                 {[
-                  { id: 'rookie', label: 'Soy nuevo', caption: 'Empezamos por lo clásico', emoji: '🌱' },
-                  { id: 'home', label: 'Bartender casero', caption: 'Conozco lo básico, quiero más', emoji: '🏠' },
-                  { id: 'pro', label: 'Pro / curioso serio', caption: 'Dame historia, técnica y retos', emoji: '🥃' },
+                  { id: 'rookie', label: tr('onboarding.level_rookie', 'Soy nuevo'), caption: tr('onboarding.level_rookie_cap', 'Empezamos por lo clásico'), emoji: '🌱' },
+                  { id: 'home', label: tr('onboarding.level_home', 'Bartender casero'), caption: tr('onboarding.level_home_cap', 'Conozco lo básico, quiero más'), emoji: '🏠' },
+                  { id: 'pro', label: tr('onboarding.level_pro', 'Pro / curioso serio'), caption: tr('onboarding.level_pro_cap', 'Dame historia, técnica y retos'), emoji: '🥃' },
                 ].map(g => {
                   const picked = level === g.id;
                   return (
@@ -278,7 +281,7 @@ const Onboarding = ({ onDone }) => {
                 pointerEvents: canNext ? 'auto' : 'none',
               }}
             >
-              {step === 2 ? 'Entrar a Stirio' : 'Continuar'} <Icon name="arrowR" size={16} />
+              {step === 2 ? tr('onboarding.enter', 'Entrar a Stirio') : tr('ui.continue', 'Continuar')} <Icon name="arrowR" size={16} />
             </button>
           </div>
         )}
@@ -289,6 +292,7 @@ const Onboarding = ({ onDone }) => {
 
 // ═══════════════ HOME ═══════════════
 const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   // Real leaderboard preview
   const [leaderboardPreview, setLeaderboardPreview] = React.useState([]);
   React.useEffect(() => {
@@ -383,12 +387,12 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* Academy */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="learn" title="Cocktail Academy" action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6 familias</span>} />
+        <SectionHeader eyebrow={tr('home.academy_eyebrow', 'aprende')} title={tr('academy.title_ui', 'Cocktail Academy')} action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6</span>} />
         <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}> 75 / 0.3)' }}>
           <div style={{ fontSize: 54, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>🎓</div>
           <div style={{ flex: 1 }}>
-            <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>Aprende paso a paso</div>
-            <div style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 10 }}>Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…</div>
+            <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>{tr('home.academy_title', 'Aprende paso a paso')}</div>
+            <div style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 10 }}>{tr('home.academy_sub', 'Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…')}</div>
             <div style={{ display: 'flex', gap: 6 }}>
               {['Sours', 'Highballs', 'Martinis', 'Old-school', 'Tiki', 'Modernos'].map((n, i) => (
                 <div key={n} style={{
@@ -400,47 +404,47 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
             </div>
           </div>
           <button className="btn primary" onClick={() => onOpenMode('academy')} style={{ padding: '12px 18px' }}>
-            Abrir <Icon name="arrowR" size={14} />
+            {tr('home.academy_cta', 'Abrir')} <Icon name="arrowR" size={14} />
           </button>
         </div>
       </section>
 
       {/* Quick modes */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="play" title="Modos rápidos" />
+        <SectionHeader eyebrow={tr('home.quick_eyebrow', 'jugar')} title={tr('home.quick_title', 'Modos rápidos')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 10 }}>
-          <ModeCard icon="⚡" title="Velocidad" caption="60 segundos" accent="amber" onClick={() => onOpenMode('speed')} />
-          <ModeCard icon="🍹" title="Constructor" caption="Adivina por ingredientes" accent="cyan" onClick={() => onOpenMode('builder')} />
-          <ModeCard icon="👃" title="Cata a ciegas" caption="35+ destilados" accent="violet" onClick={() => onOpenMode('blind')} />
-          <ModeCard icon="🎲" title="Quiz libre" caption="24 rondas" accent="berry" onClick={() => onOpenMode('freequiz')} />
+          <ModeCard icon="⚡" title={tr('home.speed_title', 'Velocidad')} caption={tr('home.speed_caption', '60 segundos')} accent="amber" onClick={() => onOpenMode('speed')} />
+          <ModeCard icon="🍹" title={tr('home.builder_title', 'Constructor')} caption={tr('home.builder_caption', 'Adivina por ingredientes')} accent="cyan" onClick={() => onOpenMode('builder')} />
+          <ModeCard icon="👃" title={tr('home.blind_title', 'Cata a ciegas')} caption={tr('home.blind_caption', '35+ destilados')} accent="violet" onClick={() => onOpenMode('blind')} />
+          <ModeCard icon="🎲" title={tr('home.freequiz_title', 'Quiz libre')} caption={tr('home.freequiz_caption', '24 rondas')} accent="berry" onClick={() => onOpenMode('freequiz')} />
         </div>
       </section>
 
       {/* Mini games + Arcade */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="arcade" title="Mini juegos" />
+        <SectionHeader eyebrow={tr('home.arcade_eyebrow', 'arcade')} title={tr('home.arcade_title', 'Mini juegos')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
-          <ArcadeCard title="Arcade Coctelero" subtitle="Aprende recetas jugando" icon="🕹️" onClick={() => onOpenMode('arcade')} />
-          <ArcadeCard title="Memoria de Garnish" subtitle="Empareja guarniciones" icon="🧠" onClick={() => onOpenMode('memory')} />
-          <ArcadeCard title="Ritmo de Shaker" subtitle="Agita al compás" icon="🥁" onClick={() => onOpenMode('rhythm')} />
+          <ArcadeCard title={tr('home.arcade_coctelero', 'Arcade Coctelero')} subtitle={tr('home.arcade_coctelero_sub', 'Aprende recetas jugando')} icon="🕹️" onClick={() => onOpenMode('arcade')} />
+          <ArcadeCard title={tr('home.memory_title', 'Memoria de Garnish')} subtitle={tr('home.memory_sub', 'Empareja guarniciones')} icon="🧠" onClick={() => onOpenMode('memory')} />
+          <ArcadeCard title={tr('home.rhythm_title', 'Ritmo de Shaker')} subtitle={tr('home.rhythm_sub', 'Agita al compás')} icon="🥁" onClick={() => onOpenMode('rhythm')} />
         </div>
       </section>
 
       {/* Reference */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="reference" title="Referencia rápida" />
+        <SectionHeader eyebrow={tr('home.ref_eyebrow', 'referencia')} title={tr('home.ref_title', 'Referencia rápida')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 10 }}>
-          <RefTile icon="📖" label="Fichas IBA" count="90" onClick={() => onOpenMode('iba')} />
-          <RefTile icon="🌐" label="Enciclopedia" count="∞" onClick={() => onOpenMode('wiki')} />
-          <RefTile icon="📝" label="Glosario" count="70+" onClick={() => onOpenMode('glossary')} />
-          <RefTile icon="🗺️" label="Mapa destilados" count="12" onClick={() => onOpenMode('map')} />
-          <RefTile icon="📚" label="Biblioteca 3D" count="24" onClick={() => onOpenMode('library')} />
+          <RefTile icon="📖" label={tr('home.ref_iba', 'Fichas IBA')} count="90" onClick={() => onOpenMode('iba')} />
+          <RefTile icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')} count="∞" onClick={() => onOpenMode('wiki')} />
+          <RefTile icon="📝" label={tr('home.ref_glossary', 'Glosario')} count="70+" onClick={() => onOpenMode('glossary')} />
+          <RefTile icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')} count="12" onClick={() => onOpenMode('map')} />
+          <RefTile icon="📚" label={tr('home.ref_library', 'Biblioteca 3D')} count="24" onClick={() => onOpenMode('library')} />
         </div>
       </section>
 
       {/* Up next (60s) */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow="60s queue" title="Rondas de 60 segundos" action={<button className="btn ghost" style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}><Icon name="shuffle" size={14} /> Aleatorio</button>} />
+        <SectionHeader eyebrow={tr('home.queue_eyebrow', '60s queue')} title={tr('home.queue_title', 'Rondas de 60 segundos')} action={<button className="btn ghost" style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}><Icon name="shuffle" size={14} /> Aleatorio</button>} />
         <div className="mobile-grid-lessons" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 12 }}>
           {LESSONS.map(l => <LessonCard key={l.id} lesson={l} onPlay={() => onPickLesson(l)} />)}
         </div>
@@ -448,7 +452,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* leaderboard preview */}
       <section>
-        <SectionHeader eyebrow="global" title="Ranking mundial" action={<button className="btn ghost" style={{ fontFamily: 'var(--f-mono)', fontSize: 11, padding: '6px 10px' }} onClick={onOpenProfile}>Ver todos →</button>} />
+        <SectionHeader eyebrow={tr('home.ranking_eyebrow', 'global')} title={tr('home.ranking', 'Ranking mundial')} action={<button className="btn ghost" style={{ fontFamily: 'var(--f-mono)', fontSize: 11, padding: '6px 10px' }} onClick={onOpenProfile}>{tr('home.see_all', 'Ver todos →')}</button>} />
         <div className="card" style={{ padding: 4 }}>
           {(leaderboardPreview.length ? leaderboardPreview : []).map((p, i) => (
             <div key={`${p.name}-${i}`} style={{
@@ -475,7 +479,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           ))}
           {leaderboardPreview.length === 0 && (
             <div style={{ padding: '14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 12 }}>
-              Juega una ronda para aparecer en el ranking
+              {tr('home.no_ranking', 'Juega una ronda para aparecer en el ranking')}
             </div>
           )}
         </div>
@@ -505,6 +509,8 @@ const LESSON_IMAGES = {
 };
 
 const FeaturedCard = ({ lesson, onPlay }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const trP = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
   const img = LESSON_IMAGES[lesson.id] || LESSON_IMAGES.negroni;
   return (
     <div className="card mobile-featured" style={{
@@ -518,7 +524,7 @@ const FeaturedCard = ({ lesson, onPlay }) => {
       <div className="mobile-featured-copy" style={{ padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
         <div>
           <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
-            hoy · {lesson.difficulty}
+            {trP('home.today_label', { difficulty: lesson.difficulty }, `hoy · ${lesson.difficulty}`)}
           </div>
           <h3 style={{
             fontFamily: 'var(--f-serif)', fontWeight: 400,
@@ -531,7 +537,7 @@ const FeaturedCard = ({ lesson, onPlay }) => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 20, flexWrap: 'wrap' }}>
           <button className="btn primary" onClick={onPlay} style={{ padding: '12px 22px' }}>
-            <Icon name="play" size={14} /> Jugar · 60s
+            <Icon name="play" size={14} /> {tr('home.play_60s', 'Jugar · 60s')}
           </button>
           <div className="chip amber"><Icon name="bolt" size={12} /> +{lesson.xp} xp</div>
         </div>
@@ -577,7 +583,9 @@ const FeaturedCard = ({ lesson, onPlay }) => {
   );
 };
 
-const DailyCard = ({ onPlay }) => (
+const DailyCard = ({ onPlay }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  return (
   <button onClick={onPlay} className="card" style={{
     padding: 18, textAlign: 'left', cursor: 'pointer',
     display: 'flex', flexDirection: 'column', gap: 8,
@@ -589,15 +597,18 @@ const DailyCard = ({ onPlay }) => (
     onMouseLeave={e => e.currentTarget.style.transform = ''}
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-      <div className="mono caps" style={{ color: 'var(--cyan)', fontSize: 10 }}>reto diario</div>
+      <div className="mono caps" style={{ color: 'var(--cyan)', fontSize: 10 }}>{tr('home.daily_eyebrow', 'reto diario')}</div>
       <div style={{ fontSize: 22 }}>📅</div>
     </div>
-    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>10 preguntas frescas</div>
-    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>Nuevas cada día · +120 XP</div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{tr('home.daily_title', '10 preguntas frescas')}</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{tr('home.daily_sub', 'Nuevas cada día · +120 XP')}</div>
   </button>
-);
+  );
+};
 
-const DuelCard = ({ onPlay }) => (
+const DuelCard = ({ onPlay }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  return (
   <button onClick={onPlay} className="card" style={{
     padding: 18, textAlign: 'left', cursor: 'pointer',
     display: 'flex', flexDirection: 'column', gap: 8,
@@ -609,13 +620,14 @@ const DuelCard = ({ onPlay }) => (
     onMouseLeave={e => e.currentTarget.style.transform = ''}
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-      <div className="mono caps" style={{ color: 'var(--berry)', fontSize: 10 }}>multiplayer</div>
+      <div className="mono caps" style={{ color: 'var(--berry)', fontSize: 10 }}>{tr('home.multiplayer', 'multiplayer')}</div>
       <div style={{ fontSize: 22 }}>⚔️</div>
     </div>
-    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>Duelo 1 vs 1</div>
-    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>Amigo · aleatorio · bot</div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{tr('home.duel_sub_title', 'Duelo 1 vs 1')}</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{tr('duel.menu_join', 'Amigo')} · {tr('duel.menu_random', 'aleatorio')} · {tr('duel.menu_bot', 'bot')}</div>
   </button>
-);
+  );
+};
 
 const ModeCard = ({ icon, title, caption, accent, onClick }) => (
   <button onClick={onClick} className="card mobile-mode-card" style={{
@@ -694,6 +706,7 @@ const RefTile = ({ icon, label, count, onClick }) => (
 
 // ═══════════════ PROFILE ═══════════════
 const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, tweaks, onChangeTweak, playShortcuts }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [editingName, setEditingName] = React.useState(false);
   const [tmpName, setTmpName] = React.useState(profile.name || '');
   const [notif, setNotif] = React.useState(true);
@@ -822,26 +835,28 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
         </label>
         <div style={{ flex: 1 }}>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>level {profile.level} · {profile.title}</div>
-          <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
-            {profile.name || 'stranger'}
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>
+            {(window.stLang && window.stLang.t) ? window.stLang.t('profile.level_line', { level: profile.level, title: profile.title }) : `level ${profile.level} · ${profile.title}`}
           </div>
-          <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>joined April 2026 · 🌍 earth</div>
+          <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
+            {profile.name || tr('profile.stranger', 'stranger')}
+          </div>
+          <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>{tr('profile.joined', 'joined · 🌍 earth')}</div>
         </div>
         <StreakBadge count={profile.streak} />
       </div>
 
       {/* stat row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, marginBottom: 24 }}>
-        <StatTile label="TOTAL XP" value={profile.xp} color="var(--amber)" />
-        <StatTile label="LESSONS" value={24} color="var(--cyan)" />
-        <StatTile label="PERFECT" value={6} color="var(--violet)" />
-        <StatTile label="HOURS" value="2.1" color="var(--berry)" />
+        <StatTile label={tr('profile.stat_xp', 'TOTAL XP')} value={profile.xp} color="var(--amber)" />
+        <StatTile label={tr('profile.stat_lessons', 'LESSONS')} value={24} color="var(--cyan)" />
+        <StatTile label={tr('profile.stat_perfect', 'PERFECT')} value={6} color="var(--violet)" />
+        <StatTile label={tr('profile.stat_hours', 'HOURS')} value="2.1" color="var(--berry)" />
       </div>
 
       {/* activity graph */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow="last 7 weeks" title="Activity" />
+        <SectionHeader eyebrow={tr('profile.activity_eyebrow', 'últimas 7 semanas')} title={tr('profile.activity', 'Actividad')} />
         <div className="card" style={{ padding: 18 }}>
           <ActivityHeatmap />
         </div>
@@ -851,7 +866,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
       <section style={{ marginBottom: 24 }}>
         <SectionHeader
           eyebrow={`${achievements.filter(a => a.unlocked).length} / ${achievements.length || ACHIEVEMENTS.length}`}
-          title="Achievements"
+          title={tr('profile.achievements', 'Logros')}
         />
         <div style={{
           display: 'grid',
@@ -879,7 +894,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
       {/* leaderboard full (real, from Firestore) */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow="ranking" title="Global leaderboard" />
+        <SectionHeader eyebrow={tr('profile.ranking_eyebrow', 'ranking')} title={tr('profile.ranking_title', 'Ranking global')} />
         <div className="card" style={{ padding: 4 }}>
           {(leaderboard.length ? leaderboard : []).map((p, i) => (
             <div key={`${p.name}-${i}`} style={{
@@ -904,7 +919,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           ))}
           {leaderboard.length === 0 && (
             <div style={{ padding: '18px 14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 13 }}>
-              Todavía no hay clasificación. Juega una partida para aparecer aquí.
+              {tr('profile.no_ranking', 'Todavía no hay clasificación. Juega una partida para aparecer aquí.')}
             </div>
           )}
         </div>
@@ -912,11 +927,11 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
       {/* SETTINGS */}
       <section style={{ marginBottom: 24 }}>
-        <SectionHeader eyebrow="ajustes" title="Cuenta" />
+        <SectionHeader eyebrow={tr('profile.eyebrow_ajustes', 'ajustes')} title={tr('profile.account_title', 'Cuenta')} />
         <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
           <SettingsRow
             icon="👤"
-            label="Nombre"
+            label={tr('profile.name', 'Nombre')}
             value={editingName ? (
               <div style={{ display: 'flex', gap: 6 }}>
                 <input
@@ -949,7 +964,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
           <SettingsRow
             icon="🎨"
-            label="Tema"
+            label={tr('profile.theme', 'Tema')}
             value={
               <select
                 value={tweaks?.theme || 'lounge'}
@@ -971,7 +986,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="▶️"
-            label="Acceso rápido (play)"
+            label={tr('profile.play_shortcut', 'Acceso rápido')}
             value={
               <select
                 value={tweaks?.playShortcut || 'daily'}
@@ -991,7 +1006,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🌐"
-            label="Idioma"
+            label={tr('profile.language', 'Idioma')}
             value={
               <select
                 value={lang}
@@ -1049,7 +1064,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🔤"
-            label="Tamaño de texto"
+            label={tr('profile.text_size', 'Tamaño de texto')}
             value={
               <div style={{ display: 'flex', gap: 4, background: 'var(--bg-2)', padding: 3, borderRadius: 8 }}>
                 {[['sm','A'],['default','A'],['lg','A']].map(([v, a], i) => (
@@ -1068,7 +1083,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
           <SettingsRow
             icon="💾"
-            label="Exportar datos"
+            label={tr('profile.export', 'Exportar datos')}
             value={<button onClick={() => {
               const data = JSON.stringify({ profile, tweaks }, null, 2);
               const blob = new Blob([data], { type: 'application/json' });
@@ -1079,9 +1094,9 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🗑️"
-            label="Borrar progreso"
+            label={tr('profile.delete_progress', 'Borrar progreso')}
             value={<button onClick={async () => {
-              if (!confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) return;
+              if (!confirm(tr('profile.delete_progress_confirm', '¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.'))) return;
               // Try to also delete cloud data if signed in
               const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
               if (signedIn && window.stAuth.deleteUserData) {
@@ -1092,29 +1107,29 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🚪"
-            label="Cerrar sesión"
+            label={tr('profile.sign_out', 'Cerrar sesión')}
             value={<button onClick={() => {
-              if (confirm('¿Cerrar sesión? Volverás al onboarding.')) {
+              if (confirm(tr('profile.sign_out_confirm', '¿Cerrar sesión? Volverás al onboarding.'))) {
                 onLogout && onLogout();
               }
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>logout →</button>}
           />
           <SettingsRow
             icon="⚠️"
-            label="Borrar cuenta"
+            label={tr('profile.delete_account', 'Borrar cuenta')}
             isLast
             value={<button onClick={async () => {
               const me = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser();
               if (!me || me.isGuest) {
-                alert('Solo disponible para cuentas Google.');
+                alert(tr('profile.delete_account_only_google', 'Solo disponible para cuentas Google.'));
                 return;
               }
-              if (!confirm('¿Borrar tu cuenta de Stirio y todos tus datos? Esta acción es irreversible.')) return;
+              if (!confirm(tr('profile.delete_account_confirm', '¿Borrar tu cuenta de Stirio y todos tus datos? Esta acción es irreversible.'))) return;
               try {
                 await window.stAuth.deleteUserAccount();
                 onLogout && onLogout();
               } catch (e) {
-                alert('No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.');
+                alert(tr('profile.delete_account_error', 'No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.'));
                 console.warn('delete account failed:', e);
               }
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>eliminar →</button>}
@@ -1203,14 +1218,15 @@ const ActivityHeatmap = () => {
 };
 
 const ModeSheet = ({ mode, onClose, onStart }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const modes = {
-    daily: { icon: '📅', title: 'Reto Diario', subtitle: '10 preguntas nuevas cada día', body: 'Una ronda curada por nuestro barman-jefe. Se renueva a medianoche.', cta: 'Empezar reto' },
-    duel: { icon: '⚔️', title: 'Duelo', subtitle: 'Reta a amigos, rivales o a un bot', body: 'Crea una sala con código, únete a una existente o busca rival aleatorio.', cta: 'Crear sala' },
-    academy: { icon: '🎓', title: 'Cocktail Academy', subtitle: 'Familias de cócteles, paso a paso', body: 'Sours, Highballs, Martinis, Old‑School, Tiki y Modernos — con teoría, práctica y quiz.', cta: 'Abrir academia' },
-    speed: { icon: '⚡', title: 'Modo Velocidad', subtitle: '60 segundos · cuantas más aciertes, más XP', body: 'Preguntas encadenadas hasta que el reloj llegue a cero.', cta: 'Empezar' },
-    builder: { icon: '🍹', title: 'Constructor', subtitle: 'Adivina el cóctel por sus ingredientes', body: 'Te damos la receta sin nombre. Tú nos dices qué es.', cta: 'Jugar' },
-    blind: { icon: '👃', title: 'Cata a ciegas', subtitle: '35+ destilados', body: 'Pistas de aroma y sabor. Identifica el destilado sin ver la etiqueta.', cta: 'Jugar' },
-    freequiz: { icon: '🎲', title: 'Quiz Libre', subtitle: '24 rondas temáticas', body: 'Elige la categoría, el largo y la dificultad. Sin presión.', cta: 'Jugar' },
+    daily: { icon: '📅', title: tr('mode.daily.title', 'Reto Diario'), subtitle: tr('mode.daily.sub', '10 preguntas nuevas cada día'), body: tr('mode.daily.body', 'Una ronda curada por nuestro barman-jefe. Se renueva a medianoche.'), cta: tr('mode.daily.cta', 'Empezar reto') },
+    duel: { icon: '⚔️', title: tr('mode.duel.title', 'Duelo'), subtitle: tr('mode.duel.sub', 'Reta a amigos, rivales o a un bot'), body: tr('mode.duel.body', 'Crea una sala con código, únete a una existente o busca rival aleatorio.'), cta: tr('mode.duel.cta', 'Crear sala') },
+    academy: { icon: '🎓', title: tr('mode.academy.title', 'Cocktail Academy'), subtitle: tr('mode.academy.sub', 'Familias de cócteles, paso a paso'), body: tr('mode.academy.body', 'Sours, Highballs, Martinis, Old-School, Tiki y Modernos — con teoría, práctica y quiz.'), cta: tr('mode.academy.cta', 'Abrir academia') },
+    speed: { icon: '⚡', title: tr('mode.speed.title', 'Modo Velocidad'), subtitle: tr('mode.speed.sub', '60 segundos · cuantas más aciertes, más XP'), body: tr('mode.speed.body', 'Preguntas encadenadas hasta que el reloj llegue a cero.'), cta: tr('mode.speed.cta', 'Empezar') },
+    builder: { icon: '🍹', title: tr('mode.builder.title', 'Constructor'), subtitle: tr('mode.builder.sub', 'Adivina el cóctel por sus ingredientes'), body: tr('mode.builder.body', 'Te damos la receta sin nombre. Tú nos dices qué es.'), cta: tr('mode.builder.cta', 'Jugar') },
+    blind: { icon: '👃', title: tr('mode.blind.title', 'Cata a ciegas'), subtitle: tr('mode.blind.sub', '35+ destilados'), body: tr('mode.blind.body', 'Pistas de aroma y sabor. Identifica el destilado sin ver la etiqueta.'), cta: tr('mode.blind.cta', 'Jugar') },
+    freequiz: { icon: '🎲', title: tr('mode.freequiz.title', 'Quiz Libre'), subtitle: tr('mode.freequiz.sub', '24 rondas temáticas'), body: tr('mode.freequiz.body', 'Elige la categoría, el largo y la dificultad. Sin presión.'), cta: tr('mode.freequiz.cta', 'Jugar') },
     arcade: { icon: '🕹️', title: 'Arcade Coctelero', subtitle: 'Aprende recetas jugando', body: 'Mini‑juegos con físicas: shake‑o‑meter, garnish catcher, pour target.', cta: 'Jugar' },
     memory: { icon: '🧠', title: 'Memoria de Garnish', subtitle: 'Empareja guarniciones', body: 'Memory clásico con ingredientes, vasos y herramientas.', cta: 'Jugar' },
     rhythm: { icon: '🥁', title: 'Ritmo de Shaker', subtitle: 'Agita al compás', body: 'Sigue el ritmo. Cuanto mejor tu tempo, más perfecta la emulsión.', cta: 'Jugar' },
@@ -1245,7 +1261,7 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
         <h2 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: '0 0 10px', lineHeight: 1.05 }}>{m.title}</h2>
         <p style={{ color: 'var(--ink-2)', lineHeight: 1.5, marginBottom: 20 }}>{m.body}</p>
         <div style={{ display: 'flex', gap: 10 }}>
-          <button className="btn" onClick={onClose}>Cerrar</button>
+          <button className="btn" onClick={onClose}>{tr('mode.close', 'Cerrar')}</button>
           <button className="btn primary" onClick={onStart} style={{ flex: 1 }}>
             <Icon name="play" size={14} /> {m.cta}
           </button>

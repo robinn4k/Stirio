@@ -35,19 +35,23 @@ const ScreenShell = ({ title, subtitle, onBack, children }) => (
 );
 
 const FinishCard = ({ icon, correct, total, onRetry, onBack }) => {
+  const lTr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const lTrP = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
   useEffect(() => {
     if (correct / total >= 0.6) setTimeout(() => confettiBurst(window.innerWidth/2, window.innerHeight/3), 150);
   }, [correct, total]);
   return (
     <div className="card" style={{ padding: 24, textAlign: 'center' }}>
       <div style={{ fontSize: 56, marginBottom: 8 }}>{icon}</div>
-      <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>¡Ronda terminada!</h2>
-      <p style={{ color: 'var(--ink-2)', marginBottom: 18 }}>
-        Acertaste <strong>{correct}/{total}</strong>
-      </p>
+      <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>{lTr('finish.title', '¡Ronda terminada!')}</h2>
+      <p style={{ color: 'var(--ink-2)', marginBottom: 18 }}
+        dangerouslySetInnerHTML={{
+          __html: lTrP('finish.hits', { correct: `<strong>${correct}/${total}</strong>` }, `Acertaste <strong>${correct}/${total}</strong>`)
+        }}
+      />
       <div style={{ display: 'flex', gap: 10 }}>
-        <button className="btn" onClick={onBack} style={{ flex: 1 }}>Salir</button>
-        <button className="btn primary" onClick={onRetry} style={{ flex: 1 }}>Jugar otra vez</button>
+        <button className="btn" onClick={onBack} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Salir') : 'Salir')}</button>
+        <button className="btn primary" onClick={onRetry} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.play_again', 'Jugar otra vez') : 'Jugar otra vez')}</button>
       </div>
     </div>
   );
@@ -67,15 +71,15 @@ const BlindScreen = ({ onBack }) => {
   }, [api]);
 
   if (!api) return (
-    <ScreenShell title="Cata a ciegas" subtitle="Blind tasting" onBack={onBack}>
+    <ScreenShell title={(window.stUiT ? window.stUiT('blind.title', 'Cata a ciegas') : 'Cata a ciegas')} subtitle={(window.stUiT ? window.stUiT('blind.subtitle', 'Blind tasting') : 'Blind tasting')} onBack={onBack}>
       <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)' }}>
-        Cargando módulo…
+        {(window.stUiT ? window.stUiT('finish.loading', 'Cargando módulo…') : 'Cargando módulo…')}
       </div>
     </ScreenShell>
   );
 
   if (done) return (
-    <ScreenShell title="Cata a ciegas" subtitle="Blind tasting" onBack={onBack}>
+    <ScreenShell title={(window.stUiT ? window.stUiT('blind.title', 'Cata a ciegas') : 'Cata a ciegas')} subtitle={(window.stUiT ? window.stUiT('blind.subtitle', 'Blind tasting') : 'Blind tasting')} onBack={onBack}>
       <FinishCard
         icon="👃"
         correct={done.correct}
@@ -102,10 +106,10 @@ const BlindScreen = ({ onBack }) => {
   const canReveal = state.revealedClues < state.clues.length;
 
   return (
-    <ScreenShell title="Cata a ciegas" subtitle={`Pregunta ${state.index + 1} · ${state.total}`} onBack={onBack}>
+    <ScreenShell title={(window.stUiT ? window.stUiT('blind.title', 'Cata a ciegas') : 'Cata a ciegas')} subtitle={(window.stLang && window.stLang.t) ? window.stLang.t('blind.question', { n: state.index + 1, total: state.total }) : `Pregunta ${state.index + 1} · ${state.total}`} onBack={onBack}>
       <div className="card" style={{ padding: 20, marginBottom: 16 }}>
         <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 12 }}>
-          Pistas {state.revealedClues}/{state.clues.length}
+          {(window.stLang && window.stLang.t) ? window.stLang.t('blind.clues', { n: state.revealedClues, total: state.clues.length }) : `Pistas ${state.revealedClues}/${state.clues.length}`}
         </div>
         {state.clues.slice(0, state.revealedClues).map((c, i) => (
           <div key={i} style={{
@@ -118,7 +122,7 @@ const BlindScreen = ({ onBack }) => {
         ))}
         {canReveal && (
           <button className="btn" onClick={revealNext} style={{ marginTop: 6, width: '100%' }}>
-            + Revelar pista siguiente
+            {(window.stUiT ? window.stUiT('blind.reveal_next', '+ Revelar pista siguiente') : '+ Revelar pista siguiente')}
           </button>
         )}
       </div>
@@ -156,15 +160,15 @@ const ConstructorScreen = ({ onBack }) => {
   }, [api]);
 
   if (!api) return (
-    <ScreenShell title="Constructor" subtitle="Ingredientes → cóctel" onBack={onBack}>
+    <ScreenShell title={(window.stUiT ? window.stUiT('builder.title', 'Constructor') : 'Constructor')} subtitle={(window.stUiT ? window.stUiT('builder.subtitle', 'Ingredientes → cóctel') : 'Ingredientes → cóctel')} onBack={onBack}>
       <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)' }}>
-        Cargando módulo…
+        {(window.stUiT ? window.stUiT('finish.loading', 'Cargando módulo…') : 'Cargando módulo…')}
       </div>
     </ScreenShell>
   );
 
   if (done) return (
-    <ScreenShell title="Constructor" subtitle="Ingredientes → cóctel" onBack={onBack}>
+    <ScreenShell title={(window.stUiT ? window.stUiT('builder.title', 'Constructor') : 'Constructor')} subtitle={(window.stUiT ? window.stUiT('builder.subtitle', 'Ingredientes → cóctel') : 'Ingredientes → cóctel')} onBack={onBack}>
       <FinishCard
         icon="🍹"
         correct={done.correct}
@@ -188,7 +192,7 @@ const ConstructorScreen = ({ onBack }) => {
   };
 
   return (
-    <ScreenShell title="Constructor" subtitle={`Pregunta ${state.index + 1} · ${state.total}`} onBack={onBack}>
+    <ScreenShell title={(window.stUiT ? window.stUiT('builder.title', 'Constructor') : 'Constructor')} subtitle={(window.stLang && window.stLang.t) ? window.stLang.t('blind.question', { n: state.index + 1, total: state.total }) : `Pregunta ${state.index + 1} · ${state.total}`} onBack={onBack}>
       <div className="card" style={{ padding: 20, marginBottom: 16 }}>
         <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 12 }}>
           Ingredientes · {ml(state.method)} · {ml(state.glass)}

@@ -127,21 +127,28 @@
 
 // Wiki data from existing wiki-data.js (loaded inline below or via fetch)
 const WIKI_CATEGORIES = [
-  { id: 'highball', label: 'Highball', icon: '🥃', items: ['Mojito', 'Gin & Tonic', 'Moscow Mule', 'Dark \'n\' Stormy'] },
-  { id: 'sours', label: 'Sours', icon: '🍋', items: ['Whiskey Sour', 'Pisco Sour', 'Amaretto Sour', 'Daiquiri'] },
-  { id: 'martini', label: 'Martini & Up', icon: '🍸', items: ['Dry Martini', 'Cosmopolitan', 'Manhattan', 'Negroni'] },
-  { id: 'oldschool', label: 'Old-School', icon: '🥃', items: ['Old Fashioned', 'Sazerac', 'Vieux Carré', 'Toronto'] },
-  { id: 'tiki', label: 'Tiki', icon: '🌺', items: ['Mai Tai', 'Zombie', 'Jungle Bird', 'Painkiller'] },
-  { id: 'spirits', label: 'Espirituosos', icon: '🫙', items: ['Ron Zacapa 23', 'Mezcal Banhez', 'Vodka Grey Goose', 'Gin Hendrick\'s'] },
+  { id: 'highball',  labelKey: 'wiki.cat_highball',  labelFallback: 'Highball',      icon: '🥃', items: ['Mojito', 'Gin & Tonic', 'Moscow Mule', 'Dark \'n\' Stormy'] },
+  { id: 'sours',     labelKey: 'wiki.cat_sours',     labelFallback: 'Sours',         icon: '🍋', items: ['Whiskey Sour', 'Pisco Sour', 'Amaretto Sour', 'Daiquiri'] },
+  { id: 'martini',   labelKey: 'wiki.cat_martini',   labelFallback: 'Martini & Up',  icon: '🍸', items: ['Dry Martini', 'Cosmopolitan', 'Manhattan', 'Negroni'] },
+  { id: 'oldschool', labelKey: 'wiki.cat_oldschool', labelFallback: 'Old-School',    icon: '🥃', items: ['Old Fashioned', 'Sazerac', 'Vieux Carré', 'Toronto'] },
+  { id: 'tiki',      labelKey: 'wiki.cat_tiki',      labelFallback: 'Tiki',          icon: '🌺', items: ['Mai Tai', 'Zombie', 'Jungle Bird', 'Painkiller'] },
+  { id: 'spirits',   labelKey: 'wiki.cat_spirits',   labelFallback: 'Espirituosos',  icon: '🫙', items: ['Ron Zacapa 23', 'Mezcal Banhez', 'Vodka Grey Goose', 'Gin Hendrick\'s'] },
 ];
 
-const COCKTAIL_INFO = {
-  'Negroni': { chips: ['Clásico IBA', 'Stirred', 'Gin'], desc: 'El Negroni es un cóctel clásico italiano: partes iguales de ginebra, Campari y vermouth rosso. Inventado en Florencia c.1919.' },
-  'Dry Martini': { chips: ['Clásico IBA', 'Stirred', 'Gin'], desc: 'El Dry Martini es la cumbre de la elegancia: ginebra y vermouth seco con aceituna o twist de limón.' },
-  'Mojito': { chips: ['Contemporáneo IBA', 'Built', 'Ron'], desc: 'El Mojito es un highball cubano: ron, azúcar, lima, menta y soda.' },
-  'Old Fashioned': { chips: ['Clásico', 'Stirred', 'Whiskey'], desc: 'El Old Fashioned es el primer cóctel documentado: whiskey, azúcar, bitters y un twist de cítrico.' },
-  'Daiquiri': { chips: ['Clásico IBA', 'Shaken', 'Ron'], desc: 'El Daiquiri es pureza: ron blanco, lima y azúcar. Shakeado y servido en copa de cóctel.' },
-};
+// i18n bridge: usa window.wikiT inyectado por el module script más abajo
+const wt = (key, fallback) => (window.wikiT ? window.wikiT(key, fallback) : fallback);
+// Construido dinámicamente para que al cambiar idioma se traduzca todo
+function cocktailInfoFor(name) {
+  const defaults = { chips: [wt('wiki.default_chip', 'Cóctel')], desc: wt('wiki.default_desc', 'Explora este cóctel en 3D.') };
+  const perCocktail = {
+    'Negroni':       { chips: ['IBA', 'Stirred', 'Gin'],    desc: wt('wiki.negroni_desc', 'El Negroni es un cóctel clásico italiano.') },
+    'Dry Martini':   { chips: ['IBA', 'Stirred', 'Gin'],    desc: wt('wiki.martini_desc', 'El Dry Martini es la cumbre de la elegancia.') },
+    'Mojito':        { chips: ['IBA', 'Built', 'Ron'],      desc: wt('wiki.mojito_desc', 'El Mojito es un highball cubano.') },
+    'Old Fashioned': { chips: ['Classic', 'Stirred', 'Whiskey'], desc: wt('wiki.oldfashioned_desc', 'El Old Fashioned es el primer cóctel documentado.') },
+    'Daiquiri':      { chips: ['IBA', 'Shaken', 'Ron'],     desc: wt('wiki.daiquiri_desc', 'El Daiquiri es pureza.') },
+  };
+  return perCocktail[name] || defaults;
+}
 
 let selectedItem = null;
 
@@ -183,7 +190,7 @@ function buildSidebar(filter) {
     if (!items.length) return;
     const catEl = document.createElement('div');
     catEl.className = 'wiki-category';
-    catEl.textContent = cat.icon + '  ' + cat.label;
+    catEl.textContent = cat.icon + '  ' + wt(cat.labelKey, cat.labelFallback);
     sidebar.appendChild(catEl);
     items.forEach(name => {
       const el = document.createElement('div');
@@ -204,7 +211,7 @@ function selectItem(name) {
 
 function showInfo(name) {
   const panel = document.getElementById('wiki-info-panel');
-  const info = COCKTAIL_INFO[name] || { chips: ['Cóctel'], desc: 'Explora este cóctel en 3D.' };
+  const info = cocktailInfoFor(name);
   panel.style.display = 'block';
   panel.innerHTML = `
     <div class="wiki-info-name">${name}</div>
@@ -223,6 +230,17 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <script type="module">
+// ── i18n bridge: carga lang.js (mismo origen, lee el lang del localStorage) ──
+// Expone window.wikiT para que los textos de COCKTAIL_INFO se traduzcan.
+// El lang actual se determina automáticamente desde localStorage 'stirio_lang',
+// que es compartido con el parent (index.html) al ser mismo origen.
+import { t as _t, preloadAllTranslations } from './js/lang.js';
+try { await preloadAllTranslations(); } catch {}
+window.wikiT = (key, fallback) => {
+  const v = _t(key);
+  return (v && v !== key) ? v : (fallback || key);
+};
+
 // ── Modern ES-module 3D engine ───────────────────────────────────────
 // Uses the real wiki-3d.js + wiki-scenes.js stack (SCENE_BUILDERS for every
 // cocktail, tool, technique, alambique) via importmap-resolved three.

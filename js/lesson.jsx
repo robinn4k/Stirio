@@ -156,7 +156,9 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
             border: `1px solid ${stepFeedback === 'ok' ? 'var(--ok)' : 'var(--bad)'}`,
             animation: 'pop .3s cubic-bezier(.2,1.4,.3,1) both',
           }}>
-            {stepFeedback === 'ok' ? 'Nice pour.' : 'Off-spec. Try again.'}
+            {stepFeedback === 'ok'
+              ? (window.stUiT ? window.stUiT('results.nice_pour', 'Nice pour.') : 'Nice pour.')
+              : (window.stUiT ? window.stUiT('results.off_spec', 'Off-spec. Try again.') : 'Off-spec. Try again.')}
           </div>
         )}
       </div>
@@ -561,13 +563,17 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
           {perfect ? '💎' : acc >= 70 ? '✨' : '🎯'}
         </div>
         <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 4 }}>
-          Lesson complete
+          {(window.stUiT ? window.stUiT('results.lesson_complete', 'Lesson complete') : 'Lesson complete')}
         </div>
         <h1 style={{
           fontFamily: 'var(--f-serif)', fontWeight: 400,
           fontSize: 48, margin: '0 0 6px', lineHeight: 1,
         }}>
-          {perfect ? 'Flawless.' : acc >= 70 ? 'Solid pour.' : 'Not bad.'}
+          {perfect
+            ? (window.stUiT ? window.stUiT('results.flawless', 'Flawless.') : 'Flawless.')
+            : acc >= 70
+              ? (window.stUiT ? window.stUiT('results.solid', 'Solid pour.') : 'Solid pour.')
+              : (window.stUiT ? window.stUiT('results.not_bad', 'Not bad.') : 'Not bad.')}
         </h1>
         <p style={{ color: 'var(--ink-2)', margin: '0 0 28px' }}>
           {lesson.title}
@@ -578,9 +584,9 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
           display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16,
         }}>
           <Stat label="XP" value={`+${xp}`} color="var(--amber)" big />
-          <Stat label="Correct" value={correct} color="var(--ok)" />
-          <Stat label="Missed" value={wrong} color="var(--ink-3)" />
-          <Stat label="Accuracy" value={`${acc}%`} color="var(--ink-1)" />
+          <Stat label={(window.stUiT ? window.stUiT('results.stat_correct', 'Correct') : 'Correct')} value={correct} color="var(--ok)" />
+          <Stat label={(window.stUiT ? window.stUiT('results.stat_missed', 'Missed') : 'Missed')} value={wrong} color="var(--ink-3)" />
+          <Stat label={(window.stUiT ? window.stUiT('results.stat_accuracy', 'Accuracy') : 'Accuracy')} value={`${acc}%`} color="var(--ink-1)" />
         </div>
 
         {perfect && (
@@ -592,18 +598,18 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
           }}>
             <div style={{ fontSize: 32 }}>💎</div>
             <div>
-              <div style={{ fontWeight: 600, fontSize: 14 }}>Perfect Round unlocked</div>
-              <div style={{ color: 'var(--ink-2)', fontSize: 12 }}>+50 bonus XP · rare achievement</div>
+              <div style={{ fontWeight: 600, fontSize: 14 }}>{(window.stUiT ? window.stUiT('results.perfect_unlocked', 'Perfect Round unlocked') : 'Perfect Round unlocked')}</div>
+              <div style={{ color: 'var(--ink-2)', fontSize: 12 }}>{(window.stUiT ? window.stUiT('results.perfect_bonus', '+50 bonus XP · rare achievement') : '+50 bonus XP · rare achievement')}</div>
             </div>
           </div>
         )}
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 8 }}>
           <button className="btn" onClick={onExit}>
-            <Icon name="home" size={16} /> Home
+            <Icon name="home" size={16} /> {(window.stUiT ? window.stUiT('results.home', 'Home') : 'Home')}
           </button>
           <button className="btn primary" onClick={onFinish}>
-            Next lesson <Icon name="arrowR" size={16} />
+            {(window.stUiT ? window.stUiT('results.next_lesson', 'Next lesson') : 'Next lesson')} <Icon name="arrowR" size={16} />
           </button>
         </div>
       </div>

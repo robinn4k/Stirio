@@ -270,12 +270,18 @@ const normalizeQ = (raw) => {
   };
 };
 
+// Helper para traducir con interpolación dentro de data.js
+const _tp = (k, params, fallback) => {
+  if (window.stLang && window.stLang.t) return window.stLang.t(k, params);
+  return fallback;
+};
+
 // Construye una "lección" a partir de una ronda del repo
 const buildLessonFromRound = (round) => ({
   id: 'round-' + round.id,
   category: 'Cocktails',
   title: round.title,
-  subtitle: `${round.subtitle} · ${round.questions.length} preguntas`,
+  subtitle: _tp('round.subtitle_fmt', { subtitle: round.subtitle, count: round.questions.length }, `${round.subtitle} · ${round.questions.length} preguntas`),
   emoji: round.icon,
   accent: 'amber',
   xp: round.questions.length * 10,
@@ -287,7 +293,7 @@ const buildLessonFromRound = (round) => ({
       kind: 'intro',
       title: round.title,
       body: round.subtitle,
-      fact: `${round.questions.length} preguntas seleccionadas de ${TRIVIA_ROUNDS.length} rondas de trivia oficial.`,
+      fact: _tp('round.intro_fact', { count: round.questions.length, total: TRIVIA_ROUNDS.length }, `${round.questions.length} preguntas seleccionadas de ${TRIVIA_ROUNDS.length} rondas de trivia oficial.`),
     },
     ...round.questions.map(normalizeQ),
   ],
@@ -324,18 +330,27 @@ const pickDailyQuestions = (n = 10) => {
 };
 const DAILY_LESSON = () => {
   const qs = pickDailyQuestions(10);
+  const lang = (window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es';
+  const localeMap = { es: 'es-ES', en: 'en-US', fr: 'fr-FR', pt: 'pt-PT', de: 'de-DE' };
+  const dateStr = new Date().toLocaleDateString(localeMap[lang] || 'es-ES', { day: 'numeric', month: 'long' });
+  const title = _tp('daily.card_title', {}, 'Reto Diario');
   return {
     id: 'daily-' + todaySeed(),
     category: 'Daily',
-    title: 'Reto Diario',
-    subtitle: `10 preguntas · ${new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long' })}`,
+    title,
+    subtitle: _tp('daily.card_subtitle', { date: dateStr }, `10 preguntas · ${dateStr}`),
     emoji: '📅',
     accent: 'amber',
     xp: 150,
     difficulty: 'Mix',
     game: 'quiz',
     steps: [
-      { kind: 'intro', title: 'Reto Diario', body: 'Diez preguntas elegidas al azar de las 24 rondas oficiales. Se renueva a medianoche.', fact: 'Mismo reto para todos los jugadores del día.' },
+      {
+        kind: 'intro',
+        title,
+        body: _tp('daily.card_body', {}, 'Diez preguntas elegidas al azar de las 24 rondas oficiales. Se renueva a medianoche.'),
+        fact: _tp('daily.card_fact', {}, 'Mismo reto para todos los jugadores del día.'),
+      },
       ...qs.map(normalizeQ),
     ],
   };
@@ -348,8 +363,8 @@ const SPEED_LESSON = () => {
   return {
     id: 'speed-' + Date.now(),
     category: 'Speed',
-    title: 'Velocidad',
-    subtitle: 'Cuantas más aciertes en 60s, más XP',
+    title: _tp('speed.card_title', {}, 'Velocidad'),
+    subtitle: _tp('speed.card_subtitle', {}, 'Cuantas más aciertes en 60s, más XP'),
     emoji: '⚡',
     accent: 'amber',
     xp: 200,
@@ -357,7 +372,11 @@ const SPEED_LESSON = () => {
     game: 'quiz',
     _timed: 60,
     steps: [
-      { kind: 'intro', title: 'Velocidad', body: 'El reloj corre. Cada acierto suma. Cada fallo no resta pero cuesta tiempo.' },
+      {
+        kind: 'intro',
+        title: _tp('speed.card_title', {}, 'Velocidad'),
+        body: _tp('speed.card_body', {}, 'El reloj corre. Cada acierto suma. Cada fallo no resta pero cuesta tiempo.'),
+      },
       ...shuffled.map(normalizeQ),
     ],
   };
@@ -382,12 +401,17 @@ const _t = (key, fallback) => {
 const buildAcademyLesson = (level, lessonIdx) => {
   const lesson = level.lessons[lessonIdx];
   if (!lesson) return null;
-  const cardTitle = { theory: '📖 Teoría', tip: '💡 Consejo', note: '📝 Nota', example: '🍸 Ejemplo' };
+  const cardTitle = {
+    theory: _tp('lesson.card_theory', {}, '📖 Teoría'),
+    tip: _tp('lesson.card_tip', {}, '💡 Consejo'),
+    note: _tp('lesson.card_note', {}, '📝 Nota'),
+    example: _tp('lesson.card_example', {}, '🍸 Ejemplo'),
+  };
   const cardSteps = (lesson.cards || []).map(card => {
     const body = card.cocktail
-      ? `Ejemplo clásico: ${card.cocktail}. Estudia su receta, técnica y balance.`
+      ? _tp('lesson.example_body', { cocktail: card.cocktail }, `Ejemplo clásico: ${card.cocktail}. Estudia su receta, técnica y balance.`)
       : _t(card.key, '');
-    return { kind: 'intro', title: cardTitle[card.type] || '📖 Teoría', body, fact: '' };
+    return { kind: 'intro', title: cardTitle[card.type] || cardTitle.theory, body, fact: '' };
   });
   const questionSteps = (lesson.questions || []).map(q => {
     const correctText = _t(q.a[0]);

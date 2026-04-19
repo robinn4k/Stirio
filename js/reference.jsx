@@ -20,6 +20,7 @@ const levelCompleted = (progress, level) => {
 };
 
 const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
   const [openLevel, setOpenLevel] = useStateRef(null);
   const progress = loadAcademyProgress();
@@ -43,8 +44,8 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>Learn</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>Cocktail Academy</h1>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('academy.eyebrow', 'Aprende')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr('academy.title_ui', 'Cocktail Academy')}</h1>
         </div>
       </div>
 
@@ -53,7 +54,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
         <div className="card" style={{ padding: 18, background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: 10 }}>
             <div>
-              <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>Progreso</div>
+              <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>{tr('academy.progress', 'Progreso')}</div>
               <div style={{ fontFamily: 'var(--f-serif)', fontSize: 28, lineHeight: 1 }}>
                 {completed} <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ {levels.length || 6} niveles</span>
               </div>
@@ -64,7 +65,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
             <div style={{ width: `${levels.length ? (completed / levels.length) * 100 : 0}%`, height: '100%', background: 'var(--amber)', transition: 'width .3s' }} />
           </div>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 10, lineHeight: 1.4 }}>
-            6 niveles con teoría, consejos y prácticas reales. Completa las lecciones de un nivel para desbloquear el siguiente.
+            {tr('academy.intro', '6 niveles con teoría, consejos y prácticas reales. Completa las lecciones de un nivel para desbloquear el siguiente.')}
           </div>
         </div>
       </div>
@@ -73,7 +74,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
       <div style={{ padding: '0 24px', display: 'grid', gap: 12 }}>
         {levels.length === 0 && (
           <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)' }}>
-            Cargando Academia…
+            {tr('academy.loading', 'Cargando Academia…')}
           </div>
         )}
         {levels.map((level, i) => {
@@ -178,7 +179,7 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
         </div>
 
         <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 10 }}>
-          Ruta del nivel
+          {tr('academy.level_route', 'Ruta del nivel')}
         </div>
         <div style={{ display: 'grid', gap: 8 }}>
           {sequence.map((item, i) => {
@@ -196,7 +197,9 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
                   <div>
                     <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>{_t(lesson.key)}</div>
                     <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
-                      Lección · {lesson.cards?.length || 0} tarjetas · {lesson.questions?.length || 0} preguntas
+                      {window.stLang && window.stLang.t
+                        ? window.stLang.t('academy.lesson_label', { cards: lesson.cards?.length || 0, questions: lesson.questions?.length || 0 })
+                        : `Lección · ${lesson.cards?.length || 0} tarjetas · ${lesson.questions?.length || 0} preguntas`}
                     </div>
                   </div>
                   <Icon name="arrowR" size={14} />
@@ -213,9 +216,13 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
                 }}>
                   <div style={{ fontSize: 22 }}>{passed ? '🏆' : '⚡'}</div>
                   <div>
-                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>Práctica · Ronda {item.roundId}</div>
+                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>
+                      {window.stLang && window.stLang.t
+                        ? window.stLang.t('academy.practice_label', { id: item.roundId })
+                        : `Práctica · Ronda ${item.roundId}`}
+                    </div>
                     <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
-                      Quiz de refuerzo
+                      {window.stLang && window.stLang.t ? window.stLang.t('academy.practice_sublabel') : 'Quiz de refuerzo'}
                     </div>
                   </div>
                   <Icon name="arrowR" size={14} />
@@ -230,108 +237,10 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
   );
 };
 
-const FamilyCard = ({ fam, index, locked, onOpen }) => (
-  <button onClick={onOpen} className="card" style={{
-    padding: 18, textAlign: 'left', cursor: 'pointer',
-    display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center',
-    borderLeft: `4px solid ${fam.color}`,
-    opacity: locked ? 0.65 : 1,
-  }}>
-    <div style={{
-      width: 52, height: 52, borderRadius: 14,
-      background: `linear-gradient(135deg, ${fam.color}, oklch(0.3 0.05 60))`,
-      display: 'grid', placeItems: 'center',
-      fontSize: 26,
-      boxShadow: `0 8px 20px ${fam.color.replace(')', ' / 0.3)')}`,
-    }}>{fam.icon}</div>
-    <div>
-      <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginBottom: 2 }}>
-        Familia {String(index + 1).padStart(2, '0')} · {fam.fichas.length} cócteles
-      </div>
-      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 3 }}>{fam.title}</div>
-      <div style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.3 }}>{fam.subtitle}</div>
-    </div>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
-      {locked
-        ? <Icon name="lock" size={16} />
-        : <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--amber)', display: 'grid', placeItems: 'center', color: 'var(--bg-0)' }}>
-            <Icon name="play" size={14} />
-          </div>
-      }
-    </div>
-  </button>
-);
-
-const FamilyDetail = ({ fam, onClose, onStartQuiz, onOpenFicha }) => (
-  <div onClick={onClose} style={{
-    position: 'fixed', inset: 0, zIndex: 55,
-    background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(10px)',
-    display: 'grid', placeItems: 'end center',
-    animation: 'fadeIn .25s',
-  }}>
-    <div onClick={e => e.stopPropagation()} style={{
-      width: '100%', maxWidth: 560, maxHeight: '86dvh',
-      background: 'var(--bg-1)',
-      borderRadius: '24px 24px 0 0',
-      padding: 24,
-      overflowY: 'auto',
-      borderTop: `4px solid ${fam.color}`,
-      animation: 'slideUp .35s cubic-bezier(.2,1.1,.3,1)',
-    }}>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 14 }}>
-        <div style={{ width: 40, height: 4, borderRadius: 4, background: 'var(--line)' }} />
-      </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
-        <div style={{
-          width: 64, height: 64, borderRadius: 16,
-          background: `linear-gradient(135deg, ${fam.color}, oklch(0.3 0.05 60))`,
-          display: 'grid', placeItems: 'center',
-          fontSize: 32,
-        }}>{fam.icon}</div>
-        <div>
-          <div className="mono caps" style={{ fontSize: 10, color: fam.color, marginBottom: 2 }}>Familia</div>
-          <h2 style={{ fontFamily: 'var(--f-serif)', fontSize: 28, margin: 0, lineHeight: 1 }}>{fam.title}</h2>
-          <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 3 }}>{fam.subtitle}</div>
-        </div>
-      </div>
-
-      <button onClick={onStartQuiz} className="btn primary" style={{ width: '100%', padding: 14, marginBottom: 20, fontSize: 14 }}>
-        <Icon name="play" size={14} /> Empezar lección ({fam.fichas.length}+ cócteles)
-      </button>
-
-      <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 10 }}>
-        Cócteles de la familia
-      </div>
-      <div style={{ display: 'grid', gap: 8 }}>
-        {fam.fichas.slice(0, 30).map(f => (
-          <button key={f.name} onClick={() => onOpenFicha(f)} className="card" style={{
-            padding: 12, textAlign: 'left', cursor: 'pointer',
-            display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
-            background: 'var(--bg-2)',
-          }}>
-            <div style={{
-              width: 36, height: 36, borderRadius: 8,
-              background: f.color || 'var(--bg-3)',
-              display: 'grid', placeItems: 'center', fontSize: 18,
-              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.2)',
-            }}>{f.icon || '🍸'}</div>
-            <div>
-              <div style={{ fontFamily: 'var(--f-serif)', fontSize: 16, lineHeight: 1 }}>{f.name}</div>
-              <div style={{ fontSize: 10, color: 'var(--ink-3)', marginTop: 3 }} className="mono caps">
-                {f.glass}
-              </div>
-            </div>
-            <Icon name="arrowR" size={14} />
-          </button>
-        ))}
-      </div>
-    </div>
-  </div>
-);
-
 // ═══════════════ FICHAS ═══════════════
 
 const FichasScreen = ({ onBack, onOpenFicha }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const fichas = window.ALL_FICHAS || [];
   const [q, setQ] = useStateRef('');
   const [cat, setCat] = useStateRef('all');
@@ -360,8 +269,8 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>Reference</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>Fichas IBA</h1>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('ficha.reference', 'Reference')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>{tr('ficha.fichas_iba', 'Fichas IBA')}</h1>
         </div>
         <div style={{ marginLeft: 'auto', fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
           {filtered.length}/{fichas.length}
@@ -374,7 +283,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
           <input
             value={q}
             onChange={e => setQ(e.target.value)}
-            placeholder="Buscar cóctel o ingrediente…"
+            placeholder={tr('fichas.search_placeholder', 'Buscar cóctel o ingrediente…')}
             style={{
               width: '100%', padding: '12px 14px 12px 38px',
               background: 'var(--bg-2)',
@@ -443,7 +352,9 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
 
 // ═══════════════ FICHA DETAIL ═══════════════
 
-const FichaDetail = ({ ficha, onClose }) => (
+const FichaDetail = ({ ficha, onClose }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  return (
   <div onClick={onClose} style={{
     position: 'fixed', inset: 0, zIndex: 60,
     background: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(12px)',
@@ -488,13 +399,13 @@ const FichaDetail = ({ ficha, onClose }) => (
 
       {/* Meta */}
       <div style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
-        <MetaPill label="Vaso" value={ficha.glass} />
-        <MetaPill label="Método" value={ficha.method} />
+        <MetaPill label={tr('ficha.glass', 'Vaso')} value={ficha.glass} />
+        <MetaPill label={tr('ficha.method', 'Método')} value={ficha.method} />
       </div>
 
       {/* Ingredients */}
       <div style={{ padding: '0 24px 20px' }}>
-        <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 10 }}>Ingredientes</div>
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 10 }}>{tr('ficha.ingredients', 'Ingredientes')}</div>
         <div style={{ display: 'grid', gap: 6 }}>
           {(ficha.ingredients || []).map((ing, i) => (
             <div key={i} style={{
@@ -525,7 +436,7 @@ const FichaDetail = ({ ficha, onClose }) => (
       {/* Story */}
       {ficha.story && (
         <div style={{ padding: '0 24px 32px' }}>
-          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>Historia</div>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>{tr('ficha.history', 'Historia')}</div>
           <div style={{
             fontSize: 14, color: 'var(--ink-1)', lineHeight: 1.55,
             fontFamily: 'var(--f-serif)', fontStyle: 'italic',
@@ -540,7 +451,8 @@ const FichaDetail = ({ ficha, onClose }) => (
       )}
     </div>
   </div>
-);
+  );
+};
 
 const MetaPill = ({ label, value }) => (
   <div style={{
@@ -557,6 +469,7 @@ const MetaPill = ({ label, value }) => (
 // ═══════════════ FREEQUIZ — lista de las 24 rondas ═══════════════
 
 const FreeQuizScreen = ({ onBack, onStartRound }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const rounds = window.TRIVIA_ROUNDS || [];
   return (
     <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
@@ -565,8 +478,8 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>Play</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>Quiz Libre</h1>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('home.quick_eyebrow', 'jugar')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>{tr('mode.freequiz.title', 'Quiz Libre')}</h1>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 3 }}>{rounds.length} rondas temáticas · {rounds.reduce((n, r) => n + r.questions.length, 0)} preguntas</div>
         </div>
       </div>
