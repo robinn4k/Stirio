@@ -798,14 +798,25 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           <input
             type="file"
             accept="image/*"
-            onChange={(e) => {
+            onChange={async (e) => {
               const file = e.target.files && e.target.files[0];
               if (!file) return;
+              // Always update local state immediately for snappy UX
               const reader = new FileReader();
               reader.onload = () => {
                 onUpdateProfile && onUpdateProfile({ avatar: reader.result });
               };
               reader.readAsDataURL(file);
+              // If signed in, also upload to Firebase Storage so it syncs across devices
+              const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
+              if (signedIn && window.stAuth.uploadProfilePhoto) {
+                try {
+                  const url = await window.stAuth.uploadProfilePhoto(file);
+                  onUpdateProfile && onUpdateProfile({ avatar: url });
+                } catch (err) {
+                  console.warn('photo upload failed:', err);
+                }
+              }
             }}
             style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }}
           />
@@ -1069,21 +1080,44 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           <SettingsRow
             icon="🗑️"
             label="Borrar progreso"
-            value={<button onClick={() => {
-              if (confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) {
-                onResetData && onResetData();
+            value={<button onClick={async () => {
+              if (!confirm('¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.')) return;
+              // Try to also delete cloud data if signed in
+              const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
+              if (signedIn && window.stAuth.deleteUserData) {
+                try { await window.stAuth.deleteUserData(); } catch (e) { console.warn('cloud wipe failed:', e); }
               }
+              onResetData && onResetData();
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>borrar →</button>}
           />
           <SettingsRow
             icon="🚪"
             label="Cerrar sesión"
-            isLast
             value={<button onClick={() => {
               if (confirm('¿Cerrar sesión? Volverás al onboarding.')) {
                 onLogout && onLogout();
               }
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>logout →</button>}
+          />
+          <SettingsRow
+            icon="⚠️"
+            label="Borrar cuenta"
+            isLast
+            value={<button onClick={async () => {
+              const me = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser();
+              if (!me || me.isGuest) {
+                alert('Solo disponible para cuentas Google.');
+                return;
+              }
+              if (!confirm('¿Borrar tu cuenta de Stirio y todos tus datos? Esta acción es irreversible.')) return;
+              try {
+                await window.stAuth.deleteUserAccount();
+                onLogout && onLogout();
+              } catch (e) {
+                alert('No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.');
+                console.warn('delete account failed:', e);
+              }
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>eliminar →</button>}
           />
         </div>
 
