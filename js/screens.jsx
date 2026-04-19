@@ -14,7 +14,7 @@ const Onboarding = ({ onDone }) => {
 
   const handleGoogle = async () => {
     setAuthError(null);
-    if (!window.stAuth) { setAuthError('Auth no disponible'); return; }
+    if (!window.stAuth) { setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible')); return; }
     setAuthLoading(true);
     try {
       await window.stAuth.initFirebase();
@@ -281,7 +281,7 @@ const Onboarding = ({ onDone }) => {
                 pointerEvents: canNext ? 'auto' : 'none',
               }}
             >
-              {step === 2 ? 'Entrar a Stirio' : 'Continuar'} <Icon name="arrowR" size={16} />
+              {step === 2 ? tr('onboarding.enter', 'Entrar a Stirio') : tr('ui.continue', 'Continuar')} <Icon name="arrowR" size={16} />
             </button>
           </div>
         )}
