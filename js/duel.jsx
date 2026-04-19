@@ -6,6 +6,8 @@
 const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
 const QUESTIONS_PER_DUEL = 10;
 const TIME_PER_QUESTION = 15;
+const dTr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+const dTrParams = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
 
 const DuelShell = ({ title, subtitle, onBack, children }) => (
   <div style={{ minHeight: '100dvh', padding: '24px 20px 120px', maxWidth: 560, margin: '0 auto' }}>
@@ -67,13 +69,13 @@ const DuelMenu = ({ onPick, rtdbReady }) => {
     <div style={{ display: 'grid', gap: 12 }}>
       <ModeCard
         icon="🏠"
-        title="Crear sala"
-        subtitle="Invita amigos con un código"
+        title={dTr('duel.host_title', 'Crear sala')}
+        subtitle={dTr('duel.host_subtitle', 'Invita amigos con un código')}
         disabled={!rtdbReady}
         onClick={() => onPick('host', { maxPlayers })}
       >
         <div style={{ marginTop: 14, paddingTop: 12, borderTop: '1px solid var(--border)' }}>
-          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>Jugadores</div>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>{dTr('duel.host_players', 'Jugadores')}</div>
           <div style={{ display: 'flex', gap: 8 }}>
             {[2, 3, 4].map(n => (
               <button key={n} className="btn" onClick={e => { e.stopPropagation(); setMaxPlayers(n); }}
@@ -90,27 +92,27 @@ const DuelMenu = ({ onPick, rtdbReady }) => {
       </ModeCard>
       <ModeCard
         icon="🔑"
-        title="Unirse con código"
-        subtitle="Introduce el código de 6 caracteres"
+        title={dTr('duel.join_title', 'Unirse con código')}
+        subtitle={dTr('duel.join_subtitle', 'Introduce el código de 6 caracteres')}
         disabled={!rtdbReady}
         onClick={() => onPick('join-input')}
       />
       <ModeCard
         icon="🎲"
-        title="Rival aleatorio"
-        subtitle="Emparejamiento rápido 1v1"
+        title={dTr('duel.menu_random', 'Rival aleatorio')}
+        subtitle={dTr('duel.random_subtitle', 'Emparejamiento rápido 1v1')}
         disabled={!rtdbReady}
         onClick={() => onPick('random')}
       />
       <ModeCard
         icon="🤖"
-        title="Contra bot"
-        subtitle="Offline · 3 dificultades"
+        title={dTr('duel.menu_bot', 'Contra bot')}
+        subtitle={dTr('duel.bot_subtitle', 'Offline · 3 dificultades')}
         onClick={() => onPick('bot')}
       />
       {!rtdbReady && (
         <div className="card" style={{ padding: 14, fontSize: 13, color: 'var(--ink-2)', textAlign: 'center' }}>
-          Sin conexión: solo modo bot disponible.
+          {dTr('duel.offline_bot_only', 'Sin conexión: solo modo bot disponible.')}
         </div>
       )}
     </div>
@@ -128,11 +130,11 @@ const PlayerSlot = ({ name, filled, isYou, isHost }) => (
     <div style={{ fontSize: 24 }}>{filled ? '👤' : '⏳'}</div>
     <div style={{ flex: 1 }}>
       <div style={{ fontWeight: 600, color: filled ? 'var(--ink-1)' : 'var(--ink-3)' }}>
-        {filled ? name : 'Esperando jugador…'}
+        {filled ? name : dTr('duel.waiting_player', 'Esperando jugador…')}
       </div>
       {filled && (
         <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)' }}>
-          {isHost ? 'Host' : 'Jugador'} {isYou && '· Tú'}
+          {isHost ? dTr('duel.role_host', 'Host') : dTr('duel.role_player', 'Jugador')} {isYou && `· ${dTr('duel.you', 'Tú')}`}
         </div>
       )}
     </div>
@@ -153,7 +155,7 @@ const LobbyHost = ({ code, maxPlayers, players, myUid, isHost, canStart, onStart
         padding: 20, textAlign: 'center', marginBottom: 16,
         background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))',
       }}>
-        <div className="mono caps" style={{ fontSize: 11, color: 'var(--amber)', marginBottom: 6 }}>Código de sala</div>
+        <div className="mono caps" style={{ fontSize: 11, color: 'var(--amber)', marginBottom: 6 }}>{dTr('duel.room_code', 'Código de sala')}</div>
         <div style={{
           fontFamily: 'var(--f-mono)', fontSize: 36, fontWeight: 700,
           letterSpacing: 6, color: 'var(--ink-1)', marginBottom: 10,
@@ -181,12 +183,14 @@ const LobbyHost = ({ code, maxPlayers, players, myUid, isHost, canStart, onStart
         {isHost && (
           <button className="btn primary" onClick={onStart} disabled={!canStart}
             style={{ flex: 2, opacity: canStart ? 1 : 0.5 }}>
-            {canStart ? '▶ Iniciar duelo' : `Esperando (${Object.keys(players || {}).filter(s => !players[s].disconnected).length}/${maxPlayers})`}
+            {canStart
+              ? dTr('duel.start_btn', '▶ Iniciar duelo')
+              : dTrParams('duel.waiting_players', { ready: Object.keys(players || {}).filter(s => !players[s].disconnected).length, total: maxPlayers }, `Esperando (${Object.keys(players || {}).filter(s => !players[s].disconnected).length}/${maxPlayers})`)}
           </button>
         )}
         {!isHost && (
           <div className="card" style={{ flex: 2, padding: 12, textAlign: 'center', color: 'var(--ink-2)', fontSize: 13 }}>
-            Esperando al host…
+            {dTr('duel.waiting_host', 'Esperando al host…')}
           </div>
         )}
       </div>
@@ -205,7 +209,7 @@ const LobbyJoin = ({ onSubmit, onCancel, loading }) => {
     <div>
       <div className="card" style={{ padding: 24, marginBottom: 16, textAlign: 'center' }}>
         <div style={{ fontSize: 48, marginBottom: 10 }}>🔑</div>
-        <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>Introduce el código</h2>
+        <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>{dTr('duel.enter_code', 'Introduce el código')}</h2>
         <p style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 18 }}>
           Pídele al host su código de sala de 6 caracteres
         </p>
@@ -230,7 +234,7 @@ const LobbyJoin = ({ onSubmit, onCancel, loading }) => {
         <button className="btn" onClick={onCancel} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Volver') : 'Volver')}</button>
         <button className="btn primary" onClick={submit} disabled={code.length !== 6 || loading}
           style={{ flex: 2, opacity: (code.length === 6 && !loading) ? 1 : 0.5 }}>
-          {loading ? 'Uniendo…' : 'Unirse a sala →'}
+          {loading ? dTr('duel.joining', 'Uniendo…') : dTr('duel.join_btn', 'Unirse a sala →')}
         </button>
       </div>
     </div>
@@ -241,7 +245,7 @@ const LobbySearching = ({ onCancel, seconds }) => (
   <div>
     <div className="card" style={{ padding: 32, textAlign: 'center' }}>
       <div style={{ fontSize: 64, marginBottom: 14, animation: 'pulseGlow 2s ease infinite' }}>🎲</div>
-      <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>Buscando rival…</h2>
+      <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>{dTr('duel.searching', 'Buscando rival…')}</h2>
       <p style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 18 }}>
         Te emparejaremos con el siguiente jugador disponible
       </p>
@@ -650,7 +654,7 @@ const DuelScreen = ({ onBack }) => {
     try {
       const result = await window.stRivals.joinByCode(uid, myName, c);
       setJoining(false);
-      if (result === null) { showToast('Código no válido', 'error'); return; }
+      if (result === null) { showToast(dTr('duel.code_invalid', 'Código no válido'), 'error'); return; }
       if (result === 'full') { showToast('Sala llena', 'error'); return; }
       setRoomId(result.roomId); setSlot(result.slot); setCode(c);
       await window.stRivals.registerPlayerDisconnect(result.roomId, result.slot);
@@ -738,7 +742,7 @@ const DuelScreen = ({ onBack }) => {
 
   if (phase === 'join-input') {
     return (
-      <DuelShell title="Duelo" subtitle="Unirse por código" onBack={() => setPhase('menu')}>
+      <DuelShell title={dTr('duel.title', 'Duelo')} subtitle={dTr('duel.join_by_code', 'Unirse por código')} onBack={() => setPhase('menu')}>
         <LobbyJoin onSubmit={doJoin} onCancel={() => setPhase('menu')} loading={joining} />
         <Toast msg={toast?.msg} type={toast?.type} onClose={() => setToast(null)} />
       </DuelShell>
