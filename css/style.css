@@ -157,6 +157,10 @@ input[type=range]::-moz-range-thumb {
   transform: translateX(2px);
 }
 
+/* ── Horizontal lesson carousel (Home → 60s queue) ── */
+.lesson-carousel::-webkit-scrollbar { display: none; }
+.lesson-carousel { scrollbar-width: none; }
+
 /* ── Bottom nav ── */
 .nav-btn { color: var(--ink-3); transition: color .15s, transform .1s; }
 .nav-btn.active { color: var(--amber); }

@@ -707,8 +707,25 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
             </button>
           }
         />
-        <div className="mobile-grid-lessons" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 12 }}>
-          {queueOrder.map(l => <LessonCard key={l.id} lesson={l} onPlay={() => onPickLesson(l)} />)}
+        <div className="lesson-carousel" style={{
+          display: 'flex', gap: 12,
+          overflowX: 'auto',
+          scrollSnapType: 'x mandatory',
+          WebkitOverflowScrolling: 'touch',
+          // Breathing room at both edges so the first/last card doesn't kiss
+          // the viewport edge; matches the 20px Home container padding.
+          margin: '0 -20px', padding: '4px 20px 12px',
+          scrollbarWidth: 'none',
+        }}>
+          {queueOrder.map(l => (
+            <div key={l.id} style={{
+              flex: '0 0 78%',
+              maxWidth: 320,
+              scrollSnapAlign: 'start',
+            }}>
+              <LessonCard lesson={l} onPlay={() => onPickLesson(l)} />
+            </div>
+          ))}
         </div>
       </section>
 
