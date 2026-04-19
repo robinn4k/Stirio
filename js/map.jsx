@@ -36,7 +36,7 @@ const MapScreen = ({ onBack }) => {
           <Icon name="arrowL" size={18} />
         </button>
         <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20 }}>
-          {tr('map.header', 'Mapa de destilados')}
+          {tr('map.header', 'Mapa de bebidas')}
         </div>
       </div>
       <iframe

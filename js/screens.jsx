@@ -479,9 +479,9 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
                 badge="∞"
                 accent="cyan"
                 onClick={() => onOpenMode('wiki')} />
-              <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')}
+              <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa de bebidas')}
                 preview={mapPreview}
-                badge={`${regions.length || 0} ${tr('home.ref_regions', 'regiones')}`}
+                badge={`${regions.length || 0} ${tr('home.ref_drinks', 'bebidas')}`}
                 accent="violet"
                 onClick={() => onOpenMode('map')} />
               <RefTileLarge icon="🎓" label={tr('home.ref_academy', 'Academia')}
