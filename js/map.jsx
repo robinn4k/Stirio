@@ -2,6 +2,15 @@
 // The interactive Leaflet map lives in map.html and uses initSpiritMap() from
 // wiki-map.js, which contains 100+ spirit/wine/liqueur production regions.
 
+// Seed window.MAP_REGIONS (used by Home → Referencia rápida for preview + count).
+// wiki-map.js is otherwise only loaded inside the map.html iframe, so without
+// this the SPA never sees the region list.
+if (typeof window !== 'undefined' && !window.MAP_REGIONS) {
+  import('./wiki-map.js')
+    .then(m => { if (m.SPIRIT_REGIONS && !window.MAP_REGIONS) window.MAP_REGIONS = m.SPIRIT_REGIONS; })
+    .catch(() => {});
+}
+
 const MapScreen = ({ onBack }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   return (

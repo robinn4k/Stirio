@@ -635,3 +635,9 @@ export function disposeMap() {
     _filterOutsideHandler = null;
   }
 }
+
+export { SPIRIT_REGIONS };
+
+if (typeof window !== 'undefined' && !window.MAP_REGIONS) {
+  window.MAP_REGIONS = SPIRIT_REGIONS;
+}
