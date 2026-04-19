@@ -4,10 +4,16 @@
 
 // Seed window.MAP_REGIONS (used by Home → Referencia rápida for preview + count).
 // wiki-map.js is otherwise only loaded inside the map.html iframe, so without
-// this the SPA never sees the region list.
+// this the SPA never sees the region list. Dispatch an event so Home can
+// re-render once the async import resolves.
 if (typeof window !== 'undefined' && !window.MAP_REGIONS) {
   import('./wiki-map.js')
-    .then(m => { if (m.SPIRIT_REGIONS && !window.MAP_REGIONS) window.MAP_REGIONS = m.SPIRIT_REGIONS; })
+    .then(m => {
+      if (m.SPIRIT_REGIONS && !window.MAP_REGIONS) {
+        window.MAP_REGIONS = m.SPIRIT_REGIONS;
+        window.dispatchEvent(new CustomEvent('stirio:mapregionsready'));
+      }
+    })
     .catch(() => {});
 }
 
@@ -30,7 +36,7 @@ const MapScreen = ({ onBack }) => {
           <Icon name="arrowL" size={18} />
         </button>
         <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20 }}>
-          {tr('map.header', 'Mapa de destilados')}
+          {tr('map.header', 'Mapa de bebidas')}
         </div>
       </div>
       <iframe

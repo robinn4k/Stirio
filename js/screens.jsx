@@ -293,6 +293,16 @@ const Onboarding = ({ onDone }) => {
 // ═══════════════ HOME ═══════════════
 const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // window.MAP_REGIONS is populated by map.jsx's async import of wiki-map.js.
+  // Re-render when that finishes so the Map tile badge/preview reflect reality
+  // instead of showing "0 regiones" on first paint.
+  const [, setMapRegionsTick] = React.useState(0);
+  React.useEffect(() => {
+    if (window.MAP_REGIONS && window.MAP_REGIONS.length) return;
+    const onReady = () => setMapRegionsTick(t => t + 1);
+    window.addEventListener('stirio:mapregionsready', onReady);
+    return () => window.removeEventListener('stirio:mapregionsready', onReady);
+  }, []);
   // Real leaderboard preview
   const [leaderboardPreview, setLeaderboardPreview] = React.useState([]);
   React.useEffect(() => {
@@ -469,9 +479,9 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
                 badge="∞"
                 accent="cyan"
                 onClick={() => onOpenMode('wiki')} />
-              <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')}
+              <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa de bebidas')}
                 preview={mapPreview}
-                badge={`${regions.length || 0} ${tr('home.ref_regions', 'regiones')}`}
+                badge={`${regions.length || 0} ${tr('home.ref_drinks', 'bebidas')}`}
                 accent="violet"
                 onClick={() => onOpenMode('map')} />
               <RefTileLarge icon="🎓" label={tr('home.ref_academy', 'Academia')}

@@ -557,7 +557,13 @@ const BotDuel = ({ onBack }) => {
 const DuelScreen = ({ onBack }) => {
   const [phase, setPhase] = useState('menu'); // menu|host|join-input|random|playing|results|bot
   const [uid, setUid] = useState(null);
-  const [myName, setMyName] = useState('Tú');
+  const [myName, setMyName] = useState(() => {
+    try {
+      const u = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser();
+      if (u && (u.name || u.displayName)) return u.name || u.displayName;
+    } catch {}
+    return dTr('duel.guest', 'Invitado');
+  });
   const [rtdbReady, setRtdbReady] = useState(false);
   const [toast, setToast] = useState(null);
 
@@ -590,7 +596,8 @@ const DuelScreen = ({ onBack }) => {
           setUid(u);
           setRtdbReady(true);
           const curr = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser();
-          if (curr?.displayName) setMyName(curr.displayName);
+          const resolved = curr?.name || curr?.displayName;
+          if (resolved) setMyName(resolved);
         }
       } catch (e) {
         console.warn('[duel] init failed', e);
