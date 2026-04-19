@@ -312,7 +312,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
             color: cat === c ? 'var(--bg-0)' : 'var(--ink-2)',
             border: `1px solid ${cat === c ? 'var(--amber)' : 'var(--line-soft)'}`,
           }}>
-            {c === 'all' ? 'Todos' : c}
+            {c === 'all' ? tr('fichas.filter_all', 'Todos') : c}
           </button>
         ))}
       </div>
