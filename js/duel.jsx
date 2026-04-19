@@ -490,7 +490,7 @@ const BotDuel = ({ onBack }) => {
                 background: diff === d ? 'color-mix(in oklch, var(--amber) 20%, var(--bg-2))' : undefined,
                 borderColor: diff === d ? 'var(--amber)' : undefined,
               }}>
-              <div style={{ fontWeight: 700, textTransform: 'capitalize' }}>{d === 'easy' ? '🌱 Fácil' : d === 'medium' ? '⚡ Medio' : '🔥 Difícil'}</div>
+              <div style={{ fontWeight: 700, textTransform: 'capitalize' }}>{d === 'easy' ? dTr('duel.diff_easy', '🌱 Fácil') : d === 'medium' ? dTr('duel.diff_medium', '⚡ Medio') : dTr('duel.diff_hard', '🔥 Difícil')}</div>
               <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 2 }}>
                 Precisión {Math.round(DIFFS[d].accuracy * 100)}% · Respuesta {(DIFFS[d].minMs / 1000).toFixed(1)}–{(DIFFS[d].maxMs / 1000).toFixed(1)}s
               </div>
@@ -508,7 +508,7 @@ const BotDuel = ({ onBack }) => {
     return (
       <DuelShell title="Contra bot" subtitle="Resultado" onBack={onBack}>
         <DuelResults
-          players={{ p1: { name: 'Tú', score: userScore }, p2: { name: botName.current, score: botScore } }}
+          players={{ p1: { name: dTr('duel.you', 'Tú'), score: userScore }, p2: { name: botName.current, score: botScore } }}
           mySlot="p1"
           maxPlayers={2}
           onRematch={() => { setStarted(false); setQIdx(0); setUserScore(0); setBotScore(0); setPhase('playing'); round.current = rounds[Math.floor(Math.random() * rounds.length)]; questions.current = round.current.questions.slice(0, total).map(q => ({ ...q })); }}
@@ -524,7 +524,7 @@ const BotDuel = ({ onBack }) => {
   return (
     <DuelShell title={dTr('duel.bot_mode', 'Contra bot')} subtitle={dTrParams('duel.question_progress_short', { n: qIdx + 1, total }, `Pregunta ${qIdx + 1} · ${total}`)} onBack={onBack}>
       <Scoreboard
-        players={{ p1: { name: 'Tú', score: userScore }, p2: { name: botName.current, score: botScore } }}
+        players={{ p1: { name: dTr('duel.you', 'Tú'), score: userScore }, p2: { name: botName.current, score: botScore } }}
         slots={['p1', 'p2']}
         mySlot="p1"
       />
