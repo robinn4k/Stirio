@@ -135,7 +135,23 @@ input[type=range]::-moz-range-thumb {
 .btn.ghost { background: transparent; }
 
 /* ── Choice buttons (quiz) ── */
-.choice-btn:hover {
+.choice-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 18px;
+  margin: 0;
+  text-align: left;
+  background: var(--bg-2);
+  color: var(--ink-0);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-md);
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, transform .1s;
+}
+.choice-btn:disabled { cursor: default; }
+.choice-btn:hover:not(:disabled) {
   background: var(--bg-3) !important;
   border-color: var(--amber) !important;
   transform: translateX(2px);
