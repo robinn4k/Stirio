@@ -441,16 +441,47 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         </div>
       </section>
 
-      {/* Reference */}
+      {/* Reference — 2×2 with dynamic previews */}
       <section style={{ marginBottom: 32 }}>
         <SectionHeader eyebrow={tr('home.ref_eyebrow', 'referencia')} title={tr('home.ref_title', 'Referencia rápida')} />
-        <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 10 }}>
-          <RefTile icon="📖" label={tr('home.ref_iba', 'Recetas')} count="90" onClick={() => onOpenMode('iba')} />
-          <RefTile icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')} count="∞" onClick={() => onOpenMode('wiki')} />
-          <RefTile icon="📝" label={tr('home.ref_glossary', 'Glosario')} count="70+" onClick={() => onOpenMode('glossary')} />
-          <RefTile icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')} count="12" onClick={() => onOpenMode('map')} />
-          <RefTile icon="📚" label={tr('home.ref_library', 'Biblioteca 3D')} count="24" onClick={() => onOpenMode('library')} />
-        </div>
+        {(() => {
+          const dayIdx = Math.floor(Date.now() / 86400000);
+          const fichas = (window.ALL_FICHAS || []);
+          const fichaPreview = fichas.length ? fichas[dayIdx % fichas.length].name : 'Negroni, Daiquiri…';
+          const wikiCats = ['Técnicas', 'Destilados', 'Cristalería', 'Herramientas', 'Cócteles', 'Modelos 3D', 'Glosario'];
+          const wikiPreview = wikiCats[dayIdx % wikiCats.length];
+          const regions = (window.MAP_REGIONS || []);
+          const mapPreview = regions.length ? regions[dayIdx % regions.length].origin : 'Escocia, México…';
+          let academyDone = 0;
+          try {
+            const prog = JSON.parse(localStorage.getItem('cq_academy_progress') || '{}');
+            academyDone = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
+          } catch {}
+          return (
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              <RefTileLarge icon="📖" label={tr('home.ref_iba', 'Recetas')}
+                preview={fichaPreview}
+                badge={tr('home.ref_iba_badge', '90 cócteles')}
+                accent="amber"
+                onClick={() => onOpenMode('iba')} />
+              <RefTileLarge icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')}
+                preview={wikiPreview}
+                badge="∞"
+                accent="cyan"
+                onClick={() => onOpenMode('wiki')} />
+              <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')}
+                preview={mapPreview}
+                badge={tr('home.ref_map_badge', '29 regiones')}
+                accent="violet"
+                onClick={() => onOpenMode('map')} />
+              <RefTileLarge icon="🎓" label={tr('home.ref_academy', 'Academia')}
+                preview={`${academyDone}/6 ${tr('home.ref_academy_levels', 'niveles')}`}
+                badge={tr('home.ref_academy_badge', 'curso')}
+                accent="berry"
+                onClick={() => onOpenMode('academy')} />
+            </div>
+          );
+        })()}
       </section>
 
       {/* Up next (60s) */}
@@ -716,6 +747,29 @@ const RefTile = ({ icon, label, count, onClick }) => (
     <div>
       <div style={{ fontSize: 13, fontWeight: 500 }}>{label}</div>
       <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--amber)' }}>{count}</div>
+    </div>
+  </button>
+);
+
+const RefTileLarge = ({ icon, label, preview, badge, onClick, accent = 'amber' }) => (
+  <button onClick={onClick} className="card" style={{
+    padding: 16, textAlign: 'left', cursor: 'pointer',
+    display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 10,
+    minHeight: 130,
+    background: `linear-gradient(160deg, oklch(from var(--${accent}) l c h / 0.12), var(--bg-2) 70%)`,
+    borderColor: `oklch(from var(--${accent}) l c h / 0.25)`,
+    transition: 'transform .15s, border-color .2s',
+  }}
+    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = `var(--${accent})`; }}
+    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.borderColor = ''; }}
+  >
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+      <div style={{ fontSize: 30, filter: `drop-shadow(0 4px 10px var(--${accent}-glow, var(--amber-glow)))` }}>{icon}</div>
+      {badge && <div className="mono caps" style={{ fontSize: 9, color: `var(--${accent})`, padding: '2px 8px', border: `1px solid var(--${accent})`, borderRadius: 99, opacity: 0.85 }}>{badge}</div>}
+    </div>
+    <div>
+      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 17, lineHeight: 1.1, marginBottom: 4 }}>{label}</div>
+      {preview && <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{preview}</div>}
     </div>
   </button>
 );

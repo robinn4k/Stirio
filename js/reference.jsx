@@ -320,17 +320,32 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
 
       {/* Grid */}
       <div style={{ padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 10 }}>
-        {filtered.map(f => (
+        {filtered.map(f => {
+          const img = window.getFichaImage ? window.getFichaImage(f.name) : null;
+          return (
           <button key={f.name} onClick={() => onOpenFicha(f)} className="card" style={{
             padding: 12, textAlign: 'left', cursor: 'pointer',
             display: 'grid', gap: 8, aspectRatio: '1',
             background: 'var(--bg-2)',
           }}>
+            {img ? (
+              <img src={img} alt={f.name} loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  if (e.currentTarget.nextSibling) e.currentTarget.nextSibling.style.display = 'grid';
+                }}
+                style={{
+                  width: '100%', aspectRatio: '1.2',
+                  borderRadius: 10,
+                  objectFit: 'cover',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.15)',
+                }} />
+            ) : null}
             <div style={{
               width: '100%', aspectRatio: '1.2',
               borderRadius: 10,
               background: `linear-gradient(135deg, ${f.color || 'var(--bg-3)'}, oklch(0.2 0.02 60))`,
-              display: 'grid', placeItems: 'center',
+              display: img ? 'none' : 'grid', placeItems: 'center',
               fontSize: 32,
               boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.15)',
             }}>{f.icon || '🍸'}</div>
@@ -339,7 +354,8 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
               <div style={{ fontSize: 9, color: 'var(--ink-3)' }} className="mono caps">{f._family}</div>
             </div>
           </button>
-        ))}
+          );
+        })}
         {filtered.length === 0 && (
           <div style={{ gridColumn: '1 / -1', padding: '40px 20px', textAlign: 'center', color: 'var(--ink-3)' }}>
             <div style={{ fontSize: 40, marginBottom: 8 }}>🥃</div>
@@ -355,6 +371,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
 
 const FichaDetail = ({ ficha, onClose }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const heroImg = window.getFichaImage ? window.getFichaImage(ficha.name) : null;
   return (
   <div onClick={onClose} style={{
     position: 'fixed', inset: 0, zIndex: 60,
@@ -373,7 +390,10 @@ const FichaDetail = ({ ficha, onClose }) => {
       {/* Hero */}
       <div style={{
         padding: '28px 24px 32px',
-        background: `linear-gradient(160deg, ${ficha.color || 'var(--bg-2)'} 0%, oklch(0.2 0.03 60) 100%)`,
+        minHeight: heroImg ? 220 : 'auto',
+        background: heroImg
+          ? `linear-gradient(180deg, rgba(0,0,0,0.2) 0%, oklch(0.18 0.03 60 / 0.82) 75%), url(${heroImg}) center/cover`
+          : `linear-gradient(160deg, ${ficha.color || 'var(--bg-2)'} 0%, oklch(0.2 0.03 60) 100%)`,
         borderRadius: '24px 24px 0 0',
         position: 'relative',
       }}>
