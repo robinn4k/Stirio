@@ -6,7 +6,7 @@ const PLAY_SHORTCUTS = [
   { id: 'daily',     label: 'Reto diario',    icon: '📅', desc: '10 preguntas frescas' },
   { id: 'speed',     label: 'Velocidad 60s',  icon: '⚡',  desc: 'Ronda rápida de un minuto' },
   { id: 'academy',   label: 'Academia',       icon: '🎓', desc: 'Familias y rondas IBA' },
-  { id: 'iba',       label: 'Fichas IBA',     icon: '📇', desc: 'Recetario oficial' },
+  { id: 'iba',       label: 'Recetas',        icon: '📇', desc: 'Recetario oficial' },
   { id: 'freequiz',  label: 'Quiz libre',     icon: '🎲', desc: 'Elige la ronda' },
   { id: 'mode-menu', label: 'Menú de modos',  icon: '⋯',  desc: 'Mostrar todo' },
 ];

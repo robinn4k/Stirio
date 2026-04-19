@@ -445,7 +445,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
       <section style={{ marginBottom: 32 }}>
         <SectionHeader eyebrow={tr('home.ref_eyebrow', 'referencia')} title={tr('home.ref_title', 'Referencia rápida')} />
         <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 10 }}>
-          <RefTile icon="📖" label={tr('home.ref_iba', 'Fichas IBA')} count="90" onClick={() => onOpenMode('iba')} />
+          <RefTile icon="📖" label={tr('home.ref_iba', 'Recetas')} count="90" onClick={() => onOpenMode('iba')} />
           <RefTile icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')} count="∞" onClick={() => onOpenMode('wiki')} />
           <RefTile icon="📝" label={tr('home.ref_glossary', 'Glosario')} count="70+" onClick={() => onOpenMode('glossary')} />
           <RefTile icon="🗺️" label={tr('home.ref_map', 'Mapa destilados')} count="12" onClick={() => onOpenMode('map')} />
@@ -511,12 +511,17 @@ const SectionHeader = ({ eyebrow, title, action }) => (
 
 // Fotos cinemáticas de Unsplash (source URL estable, recortes verticales)
 const LESSON_IMAGES = {
-  negroni: 'https://images.unsplash.com/photo-1556855810-ac404aa91e85?w=900&q=85&auto=format&fit=crop',
-  espresso: 'https://images.unsplash.com/photo-1545438102-799c3991ffb2?w=900&q=85&auto=format&fit=crop',
-  chord: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=900&q=85&auto=format&fit=crop',
-  hemingway: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900&q=85&auto=format&fit=crop',
-  color: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=900&q=85&auto=format&fit=crop',
-  daily: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=900&q=85&auto=format&fit=crop',
+  negroni:      'https://images.unsplash.com/photo-1556855810-ac404aa91e85?w=900&q=85&auto=format&fit=crop',
+  espresso:     'https://images.unsplash.com/photo-1545438102-799c3991ffb2?w=900&q=85&auto=format&fit=crop',
+  daiquiri:     'https://images.unsplash.com/photo-1514362453360-8cb44e31dabf?w=900&q=85&auto=format&fit=crop',
+  oldfashioned: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=900&q=85&auto=format&fit=crop',
+  mojito:       'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=900&q=85&auto=format&fit=crop',
+  margarita:    'https://images.unsplash.com/photo-1541546006121-5c3bc5e8c7b9?w=900&q=85&auto=format&fit=crop',
+  manhattan:    'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=900&q=85&auto=format&fit=crop',
+  whiskeysour:  'https://images.unsplash.com/photo-1599098915050-28f5f5ffdf73?w=900&q=85&auto=format&fit=crop',
+  cosmo:        'https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=900&q=85&auto=format&fit=crop',
+  martini:      'https://images.unsplash.com/photo-1575023782549-62ca0d244b39?w=900&q=85&auto=format&fit=crop',
+  daily:        'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=900&q=85&auto=format&fit=crop',
 };
 
 const FeaturedCard = ({ lesson, onPlay }) => {
@@ -1290,7 +1295,7 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
     arcade: { icon: '🕹️', title: tr('mode.arcade.title', 'Arcade Coctelero'), subtitle: tr('mode.arcade.sub', 'Aprende recetas jugando'), body: tr('mode.arcade.body', 'Mini-juegos con físicas: shake-o-meter, garnish catcher, pour target.'), cta: tr('mode.arcade.cta', 'Jugar') },
     memory: { icon: '🧠', title: tr('mode.memory.title', 'Memoria de Garnish'), subtitle: tr('mode.memory.sub', 'Empareja guarniciones'), body: tr('mode.memory.body', 'Memory clásico con ingredientes, vasos y herramientas.'), cta: tr('mode.memory.cta', 'Jugar') },
     rhythm: { icon: '🥁', title: tr('mode.rhythm.title', 'Ritmo de Shaker'), subtitle: tr('mode.rhythm.sub', 'Agita al compás'), body: tr('mode.rhythm.body', 'Sigue el ritmo. Cuanto mejor tu tempo, más perfecta la emulsión.'), cta: tr('mode.rhythm.cta', 'Jugar') },
-    iba: { icon: '📖', title: tr('mode.iba.title', 'Fichas IBA'), subtitle: tr('mode.iba.sub', '90 recetas oficiales'), body: tr('mode.iba.body', 'Las recetas reconocidas por la International Bartenders Association, con historia y técnica.'), cta: tr('mode.iba.cta', 'Abrir') },
+    iba: { icon: '📖', title: tr('mode.iba.title', 'Recetas'), subtitle: tr('mode.iba.sub', '90 recetas oficiales'), body: tr('mode.iba.body', 'Las recetas reconocidas por la International Bartenders Association, con historia y técnica.'), cta: tr('mode.iba.cta', 'Abrir') },
     wiki: { icon: '🌐', title: tr('mode.wiki.title', 'Enciclopedia'), subtitle: tr('mode.wiki.sub', 'Todo el conocimiento'), body: tr('mode.wiki.body', 'Bebidas, técnicas, cristalería, herramientas y personajes.'), cta: tr('mode.wiki.cta', 'Abrir') },
     glossary: { icon: '📝', title: tr('mode.glossary.title', 'Glosario'), subtitle: tr('mode.glossary.sub', '70+ términos'), body: tr('mode.glossary.body', 'Del muddle al dry shake. Todos los términos del oficio.'), cta: tr('mode.glossary.cta', 'Abrir') },
     map: { icon: '🗺️', title: tr('mode.map.title', 'Mapa de Destilados'), subtitle: tr('mode.map.sub', '12 regiones'), body: tr('mode.map.body', 'Whisky escocés, mezcal oaxaqueño, pisco peruano… mapa interactivo.'), cta: tr('mode.map.cta', 'Explorar') },

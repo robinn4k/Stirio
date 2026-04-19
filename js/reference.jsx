@@ -271,7 +271,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
         </button>
         <div>
           <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('ficha.reference', 'Reference')}</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>{tr('ficha.fichas_iba', 'Fichas IBA')}</h1>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>{tr('ficha.fichas_iba', 'Recetas')}</h1>
         </div>
         <div style={{ marginLeft: 'auto', fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
           {filtered.length}/{fichas.length}

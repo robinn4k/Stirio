@@ -193,6 +193,194 @@ const LESSONS = [
       },
     ],
   },
+  {
+    id: 'margarita',
+    category: 'Cocktails',
+    title: 'Margarita Perfecta',
+    subtitle: '60 seconds · El sour mexicano',
+    emoji: '🍹',
+    accent: 'lime',
+    xp: 55,
+    difficulty: 'Intermediate',
+    game: 'ratio',
+    steps: [
+      {
+        kind: 'intro',
+        title: 'La Margarita',
+        body: 'Tequila, triple sec y zumo de lima. Familia sour — siempre cítrico y dulce en tensión.',
+        fact: 'Según una de las versiones más aceptadas, la creó Carlos "Danny" Herrera en 1938 en Tijuana.'
+      },
+      {
+        kind: 'ratio',
+        prompt: 'Proporción clásica (IBA).',
+        targets: { 'Tequila blanco': 50, 'Triple sec': 20, 'Zumo de lima': 15 },
+        tolerance: 5,
+      },
+      {
+        kind: 'choice',
+        prompt: 'Borde del vaso:',
+        options: ['Sal (media luna)', 'Azúcar', 'Nada', 'Cacao'],
+        correct: 0,
+        explain: 'Se escarcha sólo media luna para que quien no quiera sal pueda beber por el otro lado.'
+      },
+      {
+        kind: 'multi',
+        prompt: '¿Qué técnica se usa?',
+        options: ['Shake con hielo', 'Stir', 'Muddle', 'Build'],
+        correct: ['Shake con hielo'],
+      },
+    ],
+  },
+  {
+    id: 'manhattan',
+    category: 'Cocktails',
+    title: 'Manhattan',
+    subtitle: '60 seconds · Stirred, no sacudido',
+    emoji: '🥃',
+    accent: 'berry',
+    xp: 55,
+    difficulty: 'Intermediate',
+    game: 'choice',
+    steps: [
+      {
+        kind: 'intro',
+        title: 'El Manhattan',
+        body: 'Rye (o bourbon), vermut rosso y unas gotas de angostura. Stirred — solo stirring, nunca shake.',
+        fact: 'Atribuido al Manhattan Club de NY hacia 1874.'
+      },
+      {
+        kind: 'ratio',
+        prompt: 'Proporción clásica:',
+        targets: { 'Rye whiskey': 60, 'Vermut rosso': 30, 'Angostura (gotas)': 2 },
+        tolerance: 6,
+      },
+      {
+        kind: 'choice',
+        prompt: 'Garnish tradicional:',
+        options: ['Cereza marrasquino', 'Twist de naranja', 'Aceituna', 'Menta'],
+        correct: 0,
+      },
+      {
+        kind: 'choice',
+        prompt: '¿Cuál es la variante "Perfect"?',
+        options: ['Mitad vermut dulce, mitad seco', 'Sin bitters', 'Con clara de huevo', 'Con soda'],
+        correct: 0,
+        explain: 'El Perfect Manhattan usa 15 ml de cada tipo de vermut.'
+      },
+    ],
+  },
+  {
+    id: 'whiskeysour',
+    category: 'Cocktails',
+    title: 'Whiskey Sour',
+    subtitle: '60 seconds · El sour americano',
+    emoji: '🍋',
+    accent: 'amber',
+    xp: 50,
+    difficulty: 'Beginner',
+    game: 'ratio',
+    steps: [
+      {
+        kind: 'intro',
+        title: 'Whiskey Sour',
+        body: 'Bourbon, zumo de lima/limón y almíbar. La clara de huevo (versión "classic") añade cuerpo y espuma.',
+      },
+      {
+        kind: 'ratio',
+        prompt: 'Proporción sin clara:',
+        targets: { Bourbon: 60, 'Zumo de limón': 30, 'Almíbar 1:1': 15 },
+        tolerance: 5,
+      },
+      {
+        kind: 'choice',
+        prompt: '¿Qué técnica enriquece la textura?',
+        options: ['Dry shake con clara, luego shake con hielo', 'Stir largo', 'Muddle de la clara', 'Layer al final'],
+        correct: 0,
+        explain: 'Dry shake primero emulsiona la clara; el segundo shake con hielo enfría sin romper la espuma.'
+      },
+      {
+        kind: 'choice',
+        prompt: 'Garnish clásica:',
+        options: ['Cereza y media rodaja de naranja (flag)', 'Sal en el borde', 'Menta', 'Twist de pepino'],
+        correct: 0,
+      },
+    ],
+  },
+  {
+    id: 'cosmo',
+    category: 'Cocktails',
+    title: 'Cosmopolitan',
+    subtitle: '60 seconds · El ícono de los 90',
+    emoji: '🍸',
+    accent: 'berry',
+    xp: 45,
+    difficulty: 'Beginner',
+    game: 'multi',
+    steps: [
+      {
+        kind: 'intro',
+        title: 'Cosmopolitan',
+        body: 'Vodka cítrica, triple sec, zumo de arándanos y un toque de lima. Rosa, ácido, seco.',
+      },
+      {
+        kind: 'multi',
+        prompt: 'Selecciona los 4 ingredientes clásicos:',
+        options: ['Vodka cítrica', 'Triple sec (Cointreau)', 'Zumo de arándano', 'Zumo de lima', 'Ron', 'Ginebra', 'Soda'],
+        correct: ['Vodka cítrica', 'Triple sec (Cointreau)', 'Zumo de arándano', 'Zumo de lima'],
+      },
+      {
+        kind: 'choice',
+        prompt: 'Técnica:',
+        options: ['Shake con hielo, colado doble', 'Stir', 'Build', 'Layer'],
+        correct: 0,
+      },
+      {
+        kind: 'choice',
+        prompt: 'Garnish:',
+        options: ['Twist de naranja flameado', 'Sal', 'Aceituna', 'Menta'],
+        correct: 0,
+        explain: 'El flameado quema los aceites esenciales sobre la superficie.'
+      },
+    ],
+  },
+  {
+    id: 'martini',
+    category: 'Cocktails',
+    title: 'Dry Martini',
+    subtitle: '60 seconds · Gin, vermut, aceituna',
+    emoji: '🫒',
+    accent: 'cyan',
+    xp: 60,
+    difficulty: 'Intermediate',
+    game: 'ratio',
+    steps: [
+      {
+        kind: 'intro',
+        title: 'Dry Martini',
+        body: 'Gin y vermut seco, stirred (nunca shaken — a pesar de Bond). Cuanto menos vermut, más "dry".',
+        fact: 'Churchill decía que basta con mirar la botella de vermut mientras se sirve el gin.'
+      },
+      {
+        kind: 'ratio',
+        prompt: 'Proporción "medium-dry" (IBA):',
+        targets: { Gin: 60, 'Vermut seco': 10 },
+        tolerance: 4,
+      },
+      {
+        kind: 'choice',
+        prompt: 'Técnica correcta:',
+        options: ['Stir con hielo hasta diluir, colado fino', 'Shake fuerte', 'Build directo en copa', 'Muddle previo'],
+        correct: 0,
+      },
+      {
+        kind: 'choice',
+        prompt: 'Garnish clásica:',
+        options: ['Aceituna o twist de limón', 'Cereza', 'Naranja flameada', 'Menta'],
+        correct: 0,
+        explain: 'Aceituna para el sabor salino; twist de limón para aromatizar con los aceites cítricos.'
+      },
+    ],
+  },
 ];
 
 const ACHIEVEMENTS = [
