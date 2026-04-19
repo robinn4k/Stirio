@@ -2077,5 +2077,18 @@
   "mode.library.sub": "Modèles interactifs",
   "mode.library.body": "Verres, outils et bouteilles en 3D. Tourne-les, inspecte-les.",
   "mode.library.cta": "Ouvrir",
-  "fichas.filter_all": "Tous"
+  "fichas.filter_all": "Tous",
+  "duel.seconds_left": "{n}s restantes",
+  "duel.time_up": "Temps écoulé",
+  "duel.err_no_questions": "Pas de questions",
+  "duel.err_create_room": "Erreur lors de la création de la salle",
+  "duel.err_room_full": "Salle pleine",
+  "duel.err_join": "Impossible de rejoindre",
+  "duel.copy_code": "Copier le code",
+  "duel.copied": "Copié !",
+  "duel.offline_info": "Hors-ligne — mode bot disponible",
+  "duel.err_join_generic": "Erreur de connexion",
+  "duel.no_rivals": "Aucun adversaire trouvé",
+  "duel.err_search": "Erreur de recherche",
+  "duel.err_start": "Erreur au démarrage"
 }

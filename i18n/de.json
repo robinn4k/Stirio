@@ -2077,5 +2077,18 @@
   "mode.library.sub": "Interaktive Modelle",
   "mode.library.body": "Gläser, Werkzeuge und Flaschen in 3D. Dreh sie, untersuche sie.",
   "mode.library.cta": "Öffnen",
-  "fichas.filter_all": "Alle"
+  "fichas.filter_all": "Alle",
+  "duel.seconds_left": "{n}s übrig",
+  "duel.time_up": "Zeit abgelaufen",
+  "duel.err_no_questions": "Keine Fragen verfügbar",
+  "duel.err_create_room": "Fehler beim Erstellen des Raums",
+  "duel.err_room_full": "Raum voll",
+  "duel.err_join": "Beitritt fehlgeschlagen",
+  "duel.copy_code": "Code kopieren",
+  "duel.copied": "Kopiert!",
+  "duel.offline_info": "Offline — Bot-Modus verfügbar",
+  "duel.err_join_generic": "Fehler beim Beitreten",
+  "duel.no_rivals": "Keine Gegner gefunden",
+  "duel.err_search": "Fehler bei der Suche",
+  "duel.err_start": "Fehler beim Start"
 }

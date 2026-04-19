@@ -2077,5 +2077,18 @@
   "mode.library.sub": "Modelos interativos",
   "mode.library.body": "Copos, ferramentas e garrafas em 3D. Gire, inspecione.",
   "mode.library.cta": "Abrir",
-  "fichas.filter_all": "Todos"
+  "fichas.filter_all": "Todos",
+  "duel.seconds_left": "{n}s restantes",
+  "duel.time_up": "Tempo esgotado",
+  "duel.err_no_questions": "Sem perguntas",
+  "duel.err_create_room": "Erro ao criar sala",
+  "duel.err_room_full": "Sala cheia",
+  "duel.err_join": "Não foi possível entrar",
+  "duel.copy_code": "Copiar código",
+  "duel.copied": "Copiado!",
+  "duel.offline_info": "Offline — modo bot disponível",
+  "duel.err_join_generic": "Erro ao entrar",
+  "duel.no_rivals": "Nenhum rival encontrado",
+  "duel.err_search": "Erro ao buscar rival",
+  "duel.err_start": "Erro ao iniciar"
 }

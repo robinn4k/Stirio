@@ -2077,5 +2077,18 @@
   "mode.library.sub": "Interactive models",
   "mode.library.body": "Glasses, tools and bottles in 3D. Rotate them, inspect them.",
   "mode.library.cta": "Open",
-  "fichas.filter_all": "All"
+  "fichas.filter_all": "All",
+  "duel.seconds_left": "{n}s left",
+  "duel.time_up": "Time's up",
+  "duel.err_no_questions": "No questions available",
+  "duel.err_create_room": "Error creating room",
+  "duel.err_room_full": "Room full",
+  "duel.err_join": "Couldn't join",
+  "duel.copy_code": "Copy code",
+  "duel.copied": "Copied!",
+  "duel.offline_info": "Offline — bot mode available",
+  "duel.err_join_generic": "Error joining",
+  "duel.no_rivals": "No rivals found",
+  "duel.err_search": "Error looking for rival",
+  "duel.err_start": "Error starting"
 }

@@ -3361,5 +3361,18 @@
   "mode.library.sub": "Modelos interactivos",
   "mode.library.body": "Vasos, herramientas y botellas en 3D. Gíralos, inspecciónalos.",
   "mode.library.cta": "Abrir",
-  "fichas.filter_all": "Todos"
+  "fichas.filter_all": "Todos",
+  "duel.seconds_left": "{n}s restantes",
+  "duel.time_up": "Tiempo agotado",
+  "duel.err_no_questions": "No hay preguntas",
+  "duel.err_create_room": "Error al crear sala",
+  "duel.err_room_full": "Sala llena",
+  "duel.err_join": "No se pudo unir",
+  "duel.copy_code": "Copiar código",
+  "duel.copied": "¡Copiado!",
+  "duel.offline_info": "Sin conexión — modo bot disponible",
+  "duel.err_join_generic": "Error al unirse",
+  "duel.no_rivals": "No se encontraron rivales",
+  "duel.err_search": "Error al buscar rival",
+  "duel.err_start": "Error al iniciar"
 }
