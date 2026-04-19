@@ -908,14 +908,6 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           ) : (
             <span>{(profile.name || '?').slice(0, 1).toUpperCase()}</span>
           )}
-          {/* camera badge */}
-          <span style={{
-            position: 'absolute', bottom: 2, right: 2,
-            width: 26, height: 26, borderRadius: '50%',
-            background: 'var(--bg-1)', border: '2px solid var(--amber)',
-            display: 'grid', placeItems: 'center',
-            color: 'var(--amber)',
-          }}><Icon name="camera" size={12} /></span>
           <input
             type="file"
             accept="image/*"
