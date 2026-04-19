@@ -195,8 +195,8 @@ const Onboarding = ({ onDone }) => {
               )}
               <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, marginBottom: 4 }}>
                 {window.stLang && window.stLang.t
-                  ? window.stLang.t('onboarding.google_hello', { name: googleUser?.name || 'invitado' })
-                  : `¡Hola, ${googleUser?.name || 'invitado'}!`}
+                  ? window.stLang.t('onboarding.google_hello', { name: googleUser?.name || tr('home.guest', 'invitado') })
+                  : `¡Hola, ${googleUser?.name || tr('home.guest', 'invitado')}!`}
               </div>
               {googleUser?.email && (
                 <div style={{ color: 'var(--ink-2)', marginBottom: 6 }}>{googleUser.email}</div>
@@ -319,7 +319,9 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
   const featured = LESSONS[0];
   const dailyChallenge = { id: 'daily', title: 'Reto Diario', questions: 10, xp: 120 };
   const time = new Date().getHours();
-  const greeting = time < 12 ? 'Buenos días' : time < 19 ? 'Buenas tardes' : 'Buenas noches';
+  const greetingKey = time < 12 ? 'home.greet_morning' : time < 19 ? 'home.greet_afternoon' : 'home.greet_evening';
+  const greetingFallback = time < 12 ? 'Buenos días' : time < 19 ? 'Buenas tardes' : 'Buenas noches';
+  const greeting = tr(greetingKey, greetingFallback);
 
   return (
     <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 1040, margin: '0 auto', position: 'relative', zIndex: 2 }}>
@@ -327,7 +329,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 28 }}>
         <div>
           <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 2 }}>
-            {greeting}, {profile.name || 'invitado'}
+            {greeting}, {profile.name || tr('home.guest', 'invitado')}
           </div>
           <div style={{
             fontFamily: 'var(--f-serif)', fontSize: 30, fontWeight: 400,
