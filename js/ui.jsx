@@ -245,24 +245,24 @@ const CookieBanner = () => {
 
 // ── Legal footer ──────────────────────────────────────────────
 const LegalFooter = () => {
-  const linkStyle = { color: 'var(--ink-4, var(--ink-3))', textDecoration: 'none', opacity: 0.55 };
+  const linkStyle = { color: 'inherit', textDecoration: 'none' };
   return (
     <footer style={{
-      padding: '10px 16px 96px',
+      padding: '6px 16px 8px',
       textAlign: 'center',
-      color: 'var(--ink-4, var(--ink-3))',
+      color: 'var(--ink-3)',
       fontSize: 9,
       fontFamily: 'var(--f-mono)',
       letterSpacing: '0.04em',
-      opacity: 0.55,
-      lineHeight: 1.5,
+      opacity: 0.4,
+      lineHeight: 1.4,
     }}>
       <a href="legal.html" target="_blank" rel="noopener" style={linkStyle}>Legal</a>
-      <span style={{ margin: '0 6px' }}>·</span>
+      <span style={{ margin: '0 5px' }}>·</span>
       <a href="privacidad.html" target="_blank" rel="noopener" style={linkStyle}>Privacy</a>
-      <span style={{ margin: '0 6px' }}>·</span>
+      <span style={{ margin: '0 5px' }}>·</span>
       <a href="cookies.html" target="_blank" rel="noopener" style={linkStyle}>Cookies</a>
-      <span style={{ margin: '0 6px' }}>·</span>
+      <span style={{ margin: '0 5px' }}>·</span>
       <span>© {new Date().getFullYear()} Stirio</span>
     </footer>
   );
