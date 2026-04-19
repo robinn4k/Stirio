@@ -339,6 +339,7 @@ const FamilyDetail = ({ fam, onClose, onStartQuiz, onOpenFicha }) => (
 // ═══════════════ FICHAS ═══════════════
 
 const FichasScreen = ({ onBack, onOpenFicha }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const fichas = window.ALL_FICHAS || [];
   const [q, setQ] = useStateRef('');
   const [cat, setCat] = useStateRef('all');
@@ -367,8 +368,8 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>Reference</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>Fichas IBA</h1>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('ficha.reference', 'Reference')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 30, margin: 0, lineHeight: 1 }}>{tr('ficha.fichas_iba', 'Fichas IBA')}</h1>
         </div>
         <div style={{ marginLeft: 'auto', fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
           {filtered.length}/{fichas.length}
@@ -450,7 +451,9 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
 
 // ═══════════════ FICHA DETAIL ═══════════════
 
-const FichaDetail = ({ ficha, onClose }) => (
+const FichaDetail = ({ ficha, onClose }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  return (
   <div onClick={onClose} style={{
     position: 'fixed', inset: 0, zIndex: 60,
     background: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(12px)',
@@ -495,13 +498,13 @@ const FichaDetail = ({ ficha, onClose }) => (
 
       {/* Meta */}
       <div style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
-        <MetaPill label="Vaso" value={ficha.glass} />
-        <MetaPill label="Método" value={ficha.method} />
+        <MetaPill label={tr('ficha.glass', 'Vaso')} value={ficha.glass} />
+        <MetaPill label={tr('ficha.method', 'Método')} value={ficha.method} />
       </div>
 
       {/* Ingredients */}
       <div style={{ padding: '0 24px 20px' }}>
-        <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 10 }}>Ingredientes</div>
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 10 }}>{tr('ficha.ingredients', 'Ingredientes')}</div>
         <div style={{ display: 'grid', gap: 6 }}>
           {(ficha.ingredients || []).map((ing, i) => (
             <div key={i} style={{
@@ -532,7 +535,7 @@ const FichaDetail = ({ ficha, onClose }) => (
       {/* Story */}
       {ficha.story && (
         <div style={{ padding: '0 24px 32px' }}>
-          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>Historia</div>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>{tr('ficha.history', 'Historia')}</div>
           <div style={{
             fontSize: 14, color: 'var(--ink-1)', lineHeight: 1.55,
             fontFamily: 'var(--f-serif)', fontStyle: 'italic',
@@ -547,7 +550,8 @@ const FichaDetail = ({ ficha, onClose }) => (
       )}
     </div>
   </div>
-);
+  );
+};
 
 const MetaPill = ({ label, value }) => (
   <div style={{
