@@ -479,6 +479,18 @@ const Onboarding = ({ onDone }) => {
 // ═══════════════ HOME ═══════════════
 const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // 60s queue shuffle — each click of the Aleatorio button bumps queueSeed,
+  // triggering a fresh Fisher-Yates pass. Seed 0 keeps the canonical order.
+  const [queueSeed, setQueueSeed] = React.useState(0);
+  const queueOrder = React.useMemo(() => {
+    if (queueSeed === 0) return LESSONS;
+    const out = [...LESSONS];
+    for (let i = out.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [out[i], out[j]] = [out[j], out[i]];
+    }
+    return out;
+  }, [queueSeed]);
   // window.MAP_REGIONS is populated by map.jsx's async import of wiki-map.js.
   // Re-render when that finishes so the Map tile badge/preview reflect reality
   // instead of showing "0 regiones" on first paint.
@@ -682,9 +694,21 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* Up next (60s) */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow={tr('home.queue_eyebrow', '60s queue')} title={tr('home.queue_title', 'Rondas de 60 segundos')} action={<button className="btn ghost" style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}><Icon name="shuffle" size={14} /> Aleatorio</button>} />
+        <SectionHeader
+          eyebrow={tr('home.queue_eyebrow', '60s queue')}
+          title={tr('home.queue_title', 'Rondas de 60 segundos')}
+          action={
+            <button
+              className="btn ghost"
+              onClick={() => setQueueSeed(s => s + 1)}
+              style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}
+            >
+              <Icon name="shuffle" size={14} /> {tr('home.queue_shuffle', 'Aleatorio')}
+            </button>
+          }
+        />
         <div className="mobile-grid-lessons" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 12 }}>
-          {LESSONS.map(l => <LessonCard key={l.id} lesson={l} onPlay={() => onPickLesson(l)} />)}
+          {queueOrder.map(l => <LessonCard key={l.id} lesson={l} onPlay={() => onPickLesson(l)} />)}
         </div>
       </section>
 
