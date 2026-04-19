@@ -835,21 +835,23 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
         </label>
         <div style={{ flex: 1 }}>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>level {profile.level} · {profile.title}</div>
-          <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
-            {profile.name || 'stranger'}
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>
+            {(window.stLang && window.stLang.t) ? window.stLang.t('profile.level_line', { level: profile.level, title: profile.title }) : `level ${profile.level} · ${profile.title}`}
           </div>
-          <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>joined April 2026 · 🌍 earth</div>
+          <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
+            {profile.name || tr('profile.stranger', 'stranger')}
+          </div>
+          <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>{tr('profile.joined', 'joined · 🌍 earth')}</div>
         </div>
         <StreakBadge count={profile.streak} />
       </div>
 
       {/* stat row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10, marginBottom: 24 }}>
-        <StatTile label="TOTAL XP" value={profile.xp} color="var(--amber)" />
-        <StatTile label="LESSONS" value={24} color="var(--cyan)" />
-        <StatTile label="PERFECT" value={6} color="var(--violet)" />
-        <StatTile label="HOURS" value="2.1" color="var(--berry)" />
+        <StatTile label={tr('profile.stat_xp', 'TOTAL XP')} value={profile.xp} color="var(--amber)" />
+        <StatTile label={tr('profile.stat_lessons', 'LESSONS')} value={24} color="var(--cyan)" />
+        <StatTile label={tr('profile.stat_perfect', 'PERFECT')} value={6} color="var(--violet)" />
+        <StatTile label={tr('profile.stat_hours', 'HOURS')} value="2.1" color="var(--berry)" />
       </div>
 
       {/* activity graph */}
