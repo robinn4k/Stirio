@@ -231,6 +231,7 @@ const App = () => {
   };
 
   const openMode = (m) => {
+    if (m === 'mode-menu') { setActiveMode('any'); return; }
     if (m === 'academy')  { setSubScreen('academy');  return; }
     if (m === 'iba')      { setSubScreen('iba');       return; }
     if (m === 'freequiz') { setSubScreen('freequiz');  return; }
@@ -244,8 +245,18 @@ const App = () => {
     if (m === 'glossary') { setSubScreen('glossary');  return; }
     if (m === 'map')      { setSubScreen('map');       return; }
     if (m === 'library')  { setSubScreen('library');   return; }
-    if (m === 'daily')    { pickLesson(window.DAILY_LESSON && window.DAILY_LESSON()); return; }
-    if (m === 'speed')    { pickLesson(window.SPEED_LESSON && window.SPEED_LESSON()); return; }
+    if (m === 'daily') {
+      const l = typeof window.DAILY_LESSON === 'function' ? window.DAILY_LESSON() : null;
+      if (l) pickLesson(l);
+      else setActiveMode('any'); // data not ready yet — show the menu instead of doing nothing
+      return;
+    }
+    if (m === 'speed') {
+      const l = typeof window.SPEED_LESSON === 'function' ? window.SPEED_LESSON() : null;
+      if (l) pickLesson(l);
+      else setActiveMode('any');
+      return;
+    }
     setActiveMode(m);
   };
 
@@ -491,11 +502,8 @@ const App = () => {
         <BottomNav
           current={screen}
           onNav={(s) => { setScreen(s); setSubScreen(null); }}
-          onPlay={() => {
-            const s = tweaks.playShortcut || 'daily';
-            if (s === 'mode-menu') { setActiveMode('any'); return; }
-            openMode(s);
-          }}
+          shortcut={PLAY_SHORTCUTS.find(s => s.id === (tweaks.playShortcut || 'daily')) || PLAY_SHORTCUTS[0]}
+          onPlay={() => openMode(tweaks.playShortcut || 'daily')}
         />
       )}
     </div>
@@ -528,7 +536,7 @@ const App = () => {
 };
 
 // ── Bottom nav ──────────────────────────────────────────────────
-const BottomNav = ({ current, onNav, onPlay }) => (
+const BottomNav = ({ current, onNav, onPlay, shortcut }) => (
   <nav style={{
     position: 'fixed', bottom: 18, left: 0, right: 0, zIndex: 30,
     display: 'flex', justifyContent: 'center', pointerEvents: 'none',
@@ -553,12 +561,14 @@ const BottomNav = ({ current, onNav, onPlay }) => (
         boxShadow: '0 0 24px var(--amber-glow), inset 0 1px 0 rgba(255,255,255,0.4)',
         border: 0,
         transition: 'transform .12s',
+        fontSize: 24, lineHeight: 1,
       }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.08)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-        aria-label="Jugar"
+        aria-label={shortcut?.label || 'Jugar'}
+        title={shortcut?.label || 'Jugar'}
       >
-        <Icon name="play" size={22} />
+        {shortcut?.icon || <Icon name="play" size={22} />}
       </button>
       <NavBtn icon="user" label="You" active={current === 'profile'} onClick={() => onNav('profile')} />
     </div>
