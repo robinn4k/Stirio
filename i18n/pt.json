@@ -1966,5 +1966,14 @@
   "duel.host_subtitle": "Convide amigos com um código",
   "duel.random_subtitle": "Matchmaking 1v1 rápido",
   "duel.bot_subtitle": "Offline · 3 dificuldades",
-  "duel.offline_bot_only": "Offline: apenas o modo bot está disponível."
+  "duel.offline_bot_only": "Offline: apenas o modo bot está disponível.",
+  "duel.question_progress": "Pergunta {n} / {total} · {time}s",
+  "duel.question_progress_short": "Pergunta {n} · {total}",
+  "duel.won": "Você venceu!",
+  "duel.tie": "Empate",
+  "duel.place_nth": "{n}º lugar",
+  "duel.game_over": "Partida terminada",
+  "duel.rematch": "Revanche",
+  "duel.back_menu": "Voltar ao menu",
+  "duel.bot_mode": "Contra bot"
 }

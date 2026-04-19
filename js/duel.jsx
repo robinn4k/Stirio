@@ -344,7 +344,7 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
       </div>
       <div className="card" style={{ padding: 20, marginBottom: 14 }}>
         <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 8 }}>
-          Pregunta {qIdx + 1} / {QUESTIONS_PER_DUEL} · {timeLeft}s
+          {dTrParams('duel.question_progress', { n: qIdx + 1, total: QUESTIONS_PER_DUEL, time: timeLeft }, `Pregunta ${qIdx + 1} / ${QUESTIONS_PER_DUEL} · ${timeLeft}s`)}
         </div>
         <div style={{ fontSize: 16, lineHeight: 1.4 }}>{currentQ.question}</div>
       </div>
@@ -392,9 +392,13 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematch, onExit }) => {
           {won ? '🏆' : myRank === ranked.length - 1 ? '😅' : '🎉'}
         </div>
         <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>
-          {won ? '¡Ganaste!' : myRank === 0 ? 'Empate' : `${myRank + 1}º puesto`}
+          {won
+            ? dTr('duel.won', '¡Ganaste!')
+            : myRank === 0
+              ? dTr('duel.tie', 'Empate')
+              : dTrParams('duel.place_nth', { n: myRank + 1 }, `${myRank + 1}º puesto`)}
         </h2>
-        <p style={{ color: 'var(--ink-2)', fontSize: 13 }}>Partida terminada</p>
+        <p style={{ color: 'var(--ink-2)', fontSize: 13 }}>{dTr('duel.game_over', 'Partida terminada')}</p>
       </div>
       <div style={{ display: 'grid', gap: 8, marginBottom: 16 }}>
         {ranked.map((r, i) => (
@@ -414,7 +418,7 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematch, onExit }) => {
       </div>
       <div style={{ display: 'flex', gap: 10 }}>
         <button className="btn" onClick={onExit} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Volver') : 'Volver')}</button>
-        <button className="btn primary" onClick={onRematch} style={{ flex: 2 }}>Revancha</button>
+        <button className="btn primary" onClick={onRematch} style={{ flex: 2 }}>{dTr('duel.rematch', 'Revancha')}</button>
       </div>
     </div>
   );
@@ -516,7 +520,7 @@ const BotDuel = ({ onBack }) => {
   const correctIdx = answers.indexOf(currentQ.a[0]);
 
   return (
-    <DuelShell title="Contra bot" subtitle={`Pregunta ${qIdx + 1} · ${total}`} onBack={onBack}>
+    <DuelShell title={dTr('duel.bot_mode', 'Contra bot')} subtitle={dTrParams('duel.question_progress_short', { n: qIdx + 1, total }, `Pregunta ${qIdx + 1} · ${total}`)} onBack={onBack}>
       <Scoreboard
         players={{ p1: { name: 'Tú', score: userScore }, p2: { name: botName.current, score: botScore } }}
         slots={['p1', 'p2']}
