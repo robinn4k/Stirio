@@ -9,7 +9,26 @@ let auth = null;
 let db = null;
 let currentUser = null;
 
+// Local storage keys that hold user-scoped gameplay data. Cleared on sign-out
+// and after an account switch so a fresh uid always hydrates from Firestore.
+const USER_SCOPED_KEYS = [
+  'cq_learn_data',
+  'cq_user_stats',
+  'cq_achievements',
+  'cq_daily',
+  'cq_leaderboard',
+  'cq_academy_progress',
+  'stirio::state::v2',
+  'stirio::activity::v1',
+];
+
+function clearUserScopedLocal() {
+  USER_SCOPED_KEYS.forEach(k => { try { localStorage.removeItem(k); } catch {} });
+}
+
 // ─── Inicializar Firebase ────────────────────────────────────
+let persistentAuthUnsub = null;
+
 async function initFirebase() {
   if (!FIREBASE_ENABLED) return false;
   try {
@@ -48,11 +67,46 @@ async function initFirebase() {
       });
     }
 
+    // Persistent listener: fires whenever the Firebase session changes after
+    // init (sign-in as a different user, sign-out, token refresh with new uid).
+    // Emits `stirio:authchange` with { uid, prev } so the app shell can drop
+    // the previous user's cached data and rehydrate from Firestore.
+    if (!persistentAuthUnsub) {
+      let initialized = false;
+      let lastUid = null;
+      persistentAuthUnsub = onAuthStateChanged(auth, (firebaseUser) => {
+        const nextUid = firebaseUser?.uid || null;
+        if (!initialized) { initialized = true; lastUid = nextUid; return; }
+        if (nextUid === lastUid) return;
+        const prev = lastUid;
+        lastUid = nextUid;
+        // Account switch — wipe local caches so the new uid starts from
+        // Firestore as authoritative source.
+        if (prev && nextUid && prev !== nextUid) clearUserScopedLocal();
+        try {
+          window.dispatchEvent(new CustomEvent('stirio:authchange', {
+            detail: { uid: nextUid, prev },
+          }));
+        } catch {}
+      });
+    }
+
     return true;
   } catch (e) {
     console.warn('Firebase no disponible, usando modo local:', e);
     return false;
   }
+}
+
+/**
+ * Subscribe to account changes. The callback receives `{ uid, prev }` every
+ * time the authenticated Firebase user changes (sign-in, sign-out, switch).
+ * Returns an unsubscribe function.
+ */
+function subscribeAuthChange(cb) {
+  const handler = (e) => { try { cb(e.detail || {}); } catch (err) { console.warn('authchange handler:', err); } };
+  window.addEventListener('stirio:authchange', handler);
+  return () => window.removeEventListener('stirio:authchange', handler);
 }
 
 // ─── Login con Google ────────────────────────────────────────
@@ -148,6 +202,9 @@ async function signOutUser() {
   localStorage.removeItem('cq_current_user');
   localStorage.removeItem('cq_guest_id');
   localStorage.removeItem('cq_guest_name');
+  // Wipe user-scoped gameplay caches so the next sign-in starts from a clean
+  // slate and hydrates from Firestore (the authoritative source).
+  clearUserScopedLocal();
 }
 
 // ─── Persistencia local ──────────────────────────────────────
@@ -336,5 +393,7 @@ export {
   getDb,
   getCurrentUser,
   isFirebaseReady,
-  getFirebaseAuth
+  getFirebaseAuth,
+  subscribeAuthChange,
+  clearUserScopedLocal,
 };

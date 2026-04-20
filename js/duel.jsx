@@ -6,6 +6,13 @@
 const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
 const QUESTIONS_PER_DUEL = 10;
 const TIME_PER_QUESTION = 15;
+const DUEL_LANGS = [
+  { id: 'es', flag: '🇪🇸', label: 'ES' },
+  { id: 'en', flag: '🇬🇧', label: 'EN' },
+  { id: 'fr', flag: '🇫🇷', label: 'FR' },
+  { id: 'pt', flag: '🇵🇹', label: 'PT' },
+  { id: 'de', flag: '🇩🇪', label: 'DE' },
+];
 const dTr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
 const dTrParams = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
 
@@ -63,10 +70,33 @@ const DuelModeCard = ({ icon, title, subtitle, onClick, disabled, children }) =>
   </div>
 );
 
-const DuelMenu = ({ onPick, rtdbReady }) => {
+const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang }) => {
   const [maxPlayers, setMaxPlayers] = useState(2);
   return (
     <div style={{ display: 'grid', gap: 12 }}>
+      <div className="card" style={{ padding: 14 }}>
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>
+          {dTr('duel.quiz_lang', 'Idioma del quiz')}
+        </div>
+        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+          {DUEL_LANGS.map(l => {
+            const picked = quizLang === l.id;
+            return (
+              <button key={l.id} className="btn" onClick={() => onChangeLang(l.id)}
+                style={{
+                  flex: '1 1 auto', minWidth: 56, padding: '8px 10px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+                  background: picked ? 'color-mix(in oklch, var(--amber) 22%, var(--bg-2))' : undefined,
+                  borderColor: picked ? 'var(--amber)' : undefined,
+                  fontWeight: picked ? 600 : 400,
+                }}>
+                <span style={{ fontSize: 18 }}>{l.flag}</span>
+                <span style={{ fontSize: 12 }}>{l.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
       <DuelModeCard
         icon="🏠"
         title={dTr('duel.host_title', 'Crear sala')}
@@ -141,11 +171,19 @@ const PlayerSlot = ({ name, filled, isYou, isHost }) => (
   </div>
 );
 
-const LobbyHost = ({ code, maxPlayers, players, myUid, isHost, canStart, onStart, onLeave }) => {
+const LobbyHost = ({ code, maxPlayers, players, myUid, isHost, canStart, onStart, onLeave, onShareInvite }) => {
   const [copied, setCopied] = useState(false);
+  const [shared, setShared] = useState(false);
   const copy = () => {
     if (navigator.clipboard && code) {
       navigator.clipboard.writeText(code).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); });
+    }
+  };
+  const share = async () => {
+    const ok = await onShareInvite?.();
+    if (ok === 'shared' || ok === 'copied') {
+      setShared(true);
+      setTimeout(() => setShared(false), 1800);
     }
   };
   const slots = ALL_SLOTS.slice(0, maxPlayers);
@@ -160,9 +198,14 @@ const LobbyHost = ({ code, maxPlayers, players, myUid, isHost, canStart, onStart
           fontFamily: 'var(--f-mono)', fontSize: 36, fontWeight: 700,
           letterSpacing: 6, color: 'var(--ink-1)', marginBottom: 10,
         }}>{code || '------'}</div>
-        <button className="btn" onClick={copy} style={{ padding: '6px 16px' }}>
-          {copied ? '✓ Copiado' : '📋 Copiar'}
-        </button>
+        <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <button className="btn" onClick={copy} style={{ padding: '6px 16px' }}>
+            {copied ? `✓ ${dTr('duel.copied', 'Copiado')}` : `📋 ${dTr('duel.copy_code', 'Copiar')}`}
+          </button>
+          <button className="btn" onClick={share} disabled={!code} style={{ padding: '6px 16px', opacity: code ? 1 : 0.5 }}>
+            {shared ? `✓ ${dTr('duel.shared', 'Enviado')}` : `🔗 ${dTr('duel.share_invite', 'Compartir invitación')}`}
+          </button>
+        </div>
       </div>
       <div style={{ display: 'grid', gap: 10, marginBottom: 16 }}>
         {slots.map(slot => {
@@ -554,7 +597,7 @@ const BotDuel = ({ onBack }) => {
 };
 
 // ─────────────────────── ORCHESTRATOR ───────────────────────
-const DuelScreen = ({ onBack }) => {
+const DuelScreen = ({ onBack, initialInviteCode }) => {
   const [phase, setPhase] = useState('menu'); // menu|host|join-input|random|playing|results|bot
   const [uid, setUid] = useState(null);
   const [myName, setMyName] = useState(() => {
@@ -566,6 +609,9 @@ const DuelScreen = ({ onBack }) => {
   });
   const [rtdbReady, setRtdbReady] = useState(false);
   const [toast, setToast] = useState(null);
+  const [quizLang, setQuizLang] = useState(() => {
+    try { return window.stLang?.getLang?.() || 'es'; } catch { return 'es'; }
+  });
 
   const [roomId, setRoomId] = useState(null);
   const [code, setCode] = useState('');
@@ -578,6 +624,7 @@ const DuelScreen = ({ onBack }) => {
   const unsubRoomRef = useRef(null);
   const unsubMatchRef = useRef(null);
   const searchTimerRef = useRef(null);
+  const autoJoinedRef = useRef(false);
 
   const showToast = (msg, type) => setToast({ msg, type });
 
@@ -630,8 +677,21 @@ const DuelScreen = ({ onBack }) => {
       setRoom(r);
       if (r.maxPlayers) setMaxPlayers(r.maxPlayers);
       if (r.status === 'playing' && !questions) {
-        const setupQs = Array.isArray(r.setup?.questions) ? r.setup.questions : Object.values(r.setup?.questions || {});
-        setQuestions(setupQs);
+        // Prefer the language-agnostic path (setup carries indices + shared
+        // `lang`), so host and joiner see the same question text. Fall back
+        // to the pre-rendered array for older rooms that don't include lang.
+        let qs = null;
+        if (r.setup?.roundId && window.stRivals?.loadDuelQuestionsFromSetup) {
+          try {
+            qs = window.stRivals.loadDuelQuestionsFromSetup(r.setup, r.setup.lang);
+          } catch {}
+        }
+        if (!qs || !qs.length) {
+          qs = Array.isArray(r.setup?.questions)
+            ? r.setup.questions
+            : Object.values(r.setup?.questions || {});
+        }
+        setQuestions(qs);
         setPhase('playing');
       }
       if (r.status === 'finished') setPhase('results');
@@ -647,8 +707,9 @@ const DuelScreen = ({ onBack }) => {
       const rounds = window.TRIVIA_ROUNDS || [];
       const r = rounds[Math.floor(Math.random() * rounds.length)];
       if (!r) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
-      const qs = window.stRivals.prepareDuelQuestions(r);
-      const setup = { roundId: r.id, questions: qs };
+      // Language-agnostic setup — host's chosen language is attached so all
+      // players render the same text from their local question data.
+      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang };
       const res = await window.stRivals.createFriendRoom(uid, myName, setup, opts.maxPlayers);
       setRoomId(res.roomId); setCode(res.code); setSlot('p1');
       await window.stRivals.registerPlayerDisconnect(res.roomId, 'p1');
@@ -686,8 +747,7 @@ const DuelScreen = ({ onBack }) => {
     try {
       const rounds = window.TRIVIA_ROUNDS || [];
       const r = rounds[Math.floor(Math.random() * rounds.length)];
-      const qs = window.stRivals.prepareDuelQuestions(r);
-      const setup = { roundId: r.id, questions: qs };
+      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang };
       const result = await window.stRivals.joinQueue(uid, myName, setup);
       setMaxPlayers(2);
       if (!result.waiting) {
@@ -733,6 +793,16 @@ const DuelScreen = ({ onBack }) => {
     try { await window.stRivals.startRoom(roomId); } catch (e) { showToast(dTr('duel.err_start', 'Error al iniciar'), 'error'); }
   };
 
+  // Auto-join when arriving via an ?invite=CODE deep link. Runs once per
+  // DuelScreen mount after RTDB is ready.
+  useEffect(() => {
+    if (!rtdbReady || !initialInviteCode || autoJoinedRef.current) return;
+    const c = String(initialInviteCode).trim().toUpperCase();
+    if (!/^[A-Z0-9]{6}$/.test(c)) return;
+    autoJoinedRef.current = true;
+    doJoin(c);
+  }, [rtdbReady, initialInviteCode]);
+
   // Render
   if (phase === 'bot') return <BotDuel onBack={returnToMenu} />;
 
@@ -741,6 +811,8 @@ const DuelScreen = ({ onBack }) => {
       <DuelShell title="Duelo" subtitle="Reta a otros jugadores" onBack={onBack}>
         <DuelMenu
           rtdbReady={rtdbReady}
+          quizLang={quizLang}
+          onChangeLang={setQuizLang}
           onPick={(mode, opts) => {
             if (mode === 'bot') setPhase('bot');
             else if (mode === 'host') startHost(opts);
@@ -776,6 +848,30 @@ const DuelScreen = ({ onBack }) => {
     const joinedCount = ALL_SLOTS.slice(0, maxPlayers).filter(s => players[s] && !players[s].disconnected).length;
     const canStart = joinedCount >= maxPlayers;
     const isHost = slot === 'p1';
+    const shareInvite = async () => {
+      if (!code) return null;
+      const url = `${window.location.origin}${window.location.pathname}?invite=${encodeURIComponent(code)}`;
+      const text = dTrParams('duel.invite_text', { code }, `¡Reto en Stirio! Únete con el código ${code}`);
+      const title = dTr('duel.invite_title', 'Te invito a un duelo en Stirio');
+      try {
+        if (navigator.share) {
+          await navigator.share({ title, text, url });
+          return 'shared';
+        }
+      } catch (e) {
+        // User cancelled the share sheet — treat as not-shared, not an error
+        if (e && e.name === 'AbortError') return null;
+      }
+      try {
+        if (navigator.clipboard) {
+          await navigator.clipboard.writeText(url);
+          showToast(dTr('duel.invite_copied', 'Enlace copiado al portapapeles'), 'success');
+          return 'copied';
+        }
+      } catch {}
+      showToast(dTr('duel.invite_fail', 'No se pudo compartir el enlace'), 'error');
+      return null;
+    };
     return (
       <DuelShell title="Sala de duelo" subtitle={`${maxPlayers} jugadores`} onBack={returnToMenu}>
         <LobbyHost
@@ -787,6 +883,7 @@ const DuelScreen = ({ onBack }) => {
           canStart={canStart}
           onStart={handleStart}
           onLeave={returnToMenu}
+          onShareInvite={shareInvite}
         />
         <Toast msg={toast?.msg} type={toast?.type} onClose={() => setToast(null)} />
       </DuelShell>

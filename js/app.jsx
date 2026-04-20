@@ -75,10 +75,27 @@ const loadTweaks = () => {
   }
 };
 
+const readInviteFromUrl = () => {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const code = (params.get('invite') || '').toUpperCase();
+    if (!/^[A-Z0-9]{6}$/.test(code)) return null;
+    // Strip the param so a page refresh doesn't retrigger the auto-join flow.
+    try {
+      params.delete('invite');
+      const qs = params.toString();
+      const newUrl = window.location.pathname + (qs ? `?${qs}` : '') + window.location.hash;
+      window.history.replaceState({}, '', newUrl);
+    } catch {}
+    return code;
+  } catch { return null; }
+};
+
 const App = () => {
   const saved = loadState();
   const savedOnboarding = loadOnboardingLocal();
   const mustOnboard = needsOnboarding(savedOnboarding);
+  const initialInvite = readInviteFromUrl();
   const [screen, setScreen]           = useState(mustOnboard ? 'onboarding' : (saved?.screen || 'home'));
   const [profile, setProfile]         = useState(saved?.profile || {
     name: '', authMode: null, xp: 340, xpNext: 500,
@@ -87,9 +104,10 @@ const App = () => {
   });
   const [tweaks, setTweaks]           = useState(loadTweaks());
   const [activeLesson, setActiveLesson] = useState(null);
-  const [subScreen, setSubScreen]     = useState(null);
+  const [subScreen, setSubScreen]     = useState(initialInvite && !mustOnboard ? 'duel' : null);
   const [fichaOpen, setFichaOpen]     = useState(null);
   const [activeMode, setActiveMode]   = useState(null);
+  const [inviteCode, setInviteCode]   = useState(initialInvite);
 
   // Persist state
   useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
@@ -107,23 +125,24 @@ const App = () => {
   // Hydrate profile XP/level/streak from the canonical stLearn store
   // (cq_learn_data). This is the same source the Firestore leaderboard reads
   // from, so Profile XP and Ranking XP stay in sync.
+  const syncFromLearn = useCallback(() => {
+    try {
+      if (!window.stLearn) return;
+      const stats = window.stLearn.getLearnStats();
+      const lvl = window.stLearn.getLevelInfo(stats.xp);
+      const nextTotal = lvl.maxLevel ? stats.xp : (stats.xp + (lvl.need - lvl.cur));
+      setProfile(p => ({
+        ...p,
+        xp: stats.xp,
+        xpNext: nextTotal || p.xpNext,
+        level: lvl.level,
+        streak: stats.streak,
+      }));
+    } catch {}
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
-    const syncFromLearn = () => {
-      try {
-        if (!window.stLearn) return;
-        const stats = window.stLearn.getLearnStats();
-        const lvl = window.stLearn.getLevelInfo(stats.xp);
-        const nextTotal = lvl.maxLevel ? stats.xp : (stats.xp + (lvl.need - lvl.cur));
-        setProfile(p => ({
-          ...p,
-          xp: stats.xp,
-          xpNext: nextTotal || p.xpNext,
-          level: lvl.level,
-          streak: stats.streak,
-        }));
-      } catch {}
-    };
     (async () => {
       let tries = 0;
       while (!window.stLearn && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
@@ -133,7 +152,70 @@ const App = () => {
     const onFocus = () => syncFromLearn();
     window.addEventListener('focus', onFocus);
     return () => { cancelled = true; window.removeEventListener('focus', onFocus); };
-  }, []);
+  }, [syncFromLearn]);
+
+  // Listen for account switches and rehydrate user data from Firestore.
+  // stAuth.subscribeAuthChange fires whenever the Firebase uid changes
+  // (sign-in, sign-out, or switching Google accounts). The auth module also
+  // wipes user-scoped localStorage when it detects a uid swap, so the cloud
+  // loaders below repopulate cq_learn_data / cq_achievements with the new
+  // account's data instead of inheriting the previous user's state.
+  useEffect(() => {
+    let cancelled = false;
+    let unsub = null;
+    (async () => {
+      let tries = 0;
+      while (!window.stAuth?.subscribeAuthChange && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      if (cancelled || !window.stAuth?.subscribeAuthChange) return;
+      unsub = window.stAuth.subscribeAuthChange(async ({ uid, prev }) => {
+        try {
+          if (!uid) {
+            // Signed out — reset React profile to a blank slate.
+            setProfile({
+              name: '', authMode: null, xp: 0, xpNext: 300, level: 1,
+              streak: 0, title: 'Curious Novice', avatar: null, onboarding: null,
+            });
+            return;
+          }
+          // Account switch — belt-and-braces clear before cloud reload so
+          // a partial Firestore write can't leave stale local data.
+          if (prev && prev !== uid && window.stAuth?.clearUserScopedLocal) {
+            try { window.stAuth.clearUserScopedLocal(); } catch {}
+          }
+          try { await window.stLearn?.loadLearnFromCloud?.(); } catch {}
+          try { await window.stAchievements?.loadAchievementsFromCloud?.(); } catch {}
+
+          const user = window.stAuth?.getCurrentUser?.();
+          if (user) {
+            setProfile(p => ({
+              ...p,
+              uid: user.uid,
+              name: user.name || p.name,
+              email: user.email || null,
+              photoURL: user.photo || null,
+              authMode: user.provider === 'guest' ? 'guest' : (user.provider === 'email' ? 'email' : 'google'),
+            }));
+          }
+          syncFromLearn();
+
+          // Re-sync onboarding from Firestore so the new account's
+          // preferences (including language) are applied.
+          try {
+            const cloudOnboarding = await window.stAuth?.loadOnboarding?.();
+            if (cloudOnboarding) {
+              saveOnboardingLocal(cloudOnboarding);
+              setProfile(p => ({ ...p, onboarding: cloudOnboarding }));
+              if (cloudOnboarding.language) {
+                try { window.stLang?.setLang?.(cloudOnboarding.language); } catch {}
+                window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: cloudOnboarding.language } }));
+              }
+            }
+          } catch {}
+        } catch (e) { console.warn('[auth] rehydrate on authchange:', e); }
+      });
+    })();
+    return () => { cancelled = true; if (typeof unsub === 'function') unsub(); };
+  }, [syncFromLearn]);
 
   // Firebase auth bootstrap + i18n preload
   useEffect(() => {
@@ -161,8 +243,15 @@ const App = () => {
           name: user.name,
           email: user.email || null,
           photoURL: user.photo || null,
-          authMode: user.provider === 'guest' ? 'guest' : 'google',
+          authMode: user.provider === 'guest' ? 'guest' : (user.provider === 'email' ? 'email' : 'google'),
         }));
+
+        // Pull the user's XP + achievements from Firestore so the Profile /
+        // Ranking / Achievements screens paint with the authoritative data
+        // for this uid, even on a freshly-installed device.
+        try { await window.stLearn?.loadLearnFromCloud?.(); } catch {}
+        try { await window.stAchievements?.loadAchievementsFromCloud?.(); } catch {}
+        syncFromLearn();
 
         // Firestore-backed onboarding sync: if the cloud copy is up-to-date
         // seed localStorage + skip the flow; if a guest has local answers
@@ -339,6 +428,9 @@ const App = () => {
       window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: payload.language } }));
     }
     setScreen('home');
+    // If the user arrived via an invite link, drop them straight into the
+    // Duel lobby once onboarding is done.
+    if (inviteCode) setSubScreen('duel');
     // Fire-and-forget cloud write so Home paints immediately
     try { await window.stAuth?.saveOnboarding?.(payload); } catch {}
   };
@@ -420,7 +512,10 @@ const App = () => {
       )}
 
       {subScreen === 'duel' && !activeLesson && (
-        <DuelScreen onBack={() => setSubScreen(null)} />
+        <DuelScreen
+          onBack={() => { setSubScreen(null); setInviteCode(null); }}
+          initialInviteCode={inviteCode}
+        />
       )}
 
       {subScreen === 'glossary' && !activeLesson && (
