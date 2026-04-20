@@ -400,21 +400,21 @@ export const rounds = [
   },
   {
     id: 22,
-    title: "Cocktail History & Techniques",
-    subtitle: "From Punch to Modern Mixology",
+    title: "Historia y técnicas del cóctel",
+    subtitle: "Del ponche a la mixología moderna",
     icon: "📖",
     color: "#1a237e",
     questions: [
-      { q: "What type of drink preceded cocktails in the 1800s?", a: ["Punch", "Beer", "Wine coolers", "Soda water"], exp: "Punch was the dominant mixed drink before cocktails emerged in the early 1800s, typically made in large bowls for communal drinking." },
-      { q: "Who is considered the first celebrity mixologist?", a: ["Jerry Thomas", "Harry Craddock", "Harry Johnson", "Orsini"], exp: "Jerry Thomas is considered the first celebrity bartender/mixologist, known for his showmanship and his 1862 book 'The Bartender's Guide.'" },
-      { q: "When was the Volstead Act passed?", a: ["1919", "1920", "1918", "1921"], exp: "The Volstead Act was passed in 1919, providing the enforcement mechanism for the 18th Amendment, with Prohibition starting in 1920." },
-      { q: "What was a 'speakeasy'?", a: ["An illegal drinking house", "A type of cocktail", "A bartender's union meeting", "A legal wine bar"], exp: "A speakeasy was an illegal drinking establishment during Prohibition where patrons would 'speak easy' (quietly) to avoid detection." },
-      { q: "Why did tiki restaurants become popular in the 1930s?", a: ["Escape to mysteries of the orient", "Cheap rum availability", "Celebrity endorsements", "Government promotion"], exp: "Tiki restaurants became popular in the 1930s as they offered an exotic escape to the mysteries of the orient and tropical paradise." },
-      { q: "What does a well-prepared exotic drink need?", a: ["Perfect balance of flavors", "The most expensive ingredients", "Elaborate decoration only", "A secret recipe"], exp: "A well-prepared exotic drink requires a perfect balance of flavors, ensuring no single element overpowers the others." },
-      { q: "What do contemporary bartenders prioritize?", a: ["Consistency and quality ingredients", "Speed of service above all", "Flashy techniques", "Using as many ingredients as possible"], exp: "Contemporary bartenders prioritize consistency and quality ingredients, ensuring every drink meets high standards." },
-      { q: "What is the gold standard for juice in cocktails?", a: ["Fresh squeezed juice", "Pasteurized juice", "Concentrated juice", "Powdered juice mix"], exp: "Fresh squeezed juice is the gold standard in cocktails, providing the best flavor, aroma, and quality." },
-      { q: "What is the first step in crafting a cocktail?", a: ["Know the intended taste, smell, and look", "Choose the glassware", "Select the garnish", "Measure the ingredients"], exp: "The first step in crafting a cocktail is knowing the intended taste, smell, and look — having a clear vision of the final product." },
-      { q: "Why is clear ice preferred in cocktails?", a: ["Better cooling power", "It looks more elegant only", "It is cheaper to produce", "It has no taste difference"], exp: "Clear ice is preferred because it has better cooling power, melts more slowly, and is denser than cloudy ice." }
+      { q: "¿Qué tipo de bebida precedió al cóctel en el siglo XIX?", a: ["El ponche", "La cerveza", "Los wine coolers", "La soda"], exp: "El ponche era la bebida combinada dominante antes de que apareciera el cóctel a principios del siglo XIX; solía prepararse en grandes boles para beber en grupo." },
+      { q: "¿Quién es considerado el primer mixólogo famoso?", a: ["Jerry Thomas", "Harry Craddock", "Harry Johnson", "Orsini"], exp: "Jerry Thomas está considerado el primer bartender/mixólogo famoso, reconocido por su espectáculo tras la barra y por su libro de 1862 'The Bartender's Guide'." },
+      { q: "¿Cuándo se aprobó la Volstead Act?", a: ["1919", "1920", "1918", "1921"], exp: "La Volstead Act se aprobó en 1919 como mecanismo de aplicación de la 18ª Enmienda; la Ley Seca entró en vigor en 1920." },
+      { q: "¿Qué era un 'speakeasy'?", a: ["Un local de bebida clandestino", "Un tipo de cóctel", "Una reunión del sindicato de bartenders", "Un bar de vinos legal"], exp: "Un speakeasy era un local clandestino de bebida durante la Ley Seca, donde se hablaba en voz baja ('speak easy') para no ser descubiertos." },
+      { q: "¿Por qué se pusieron de moda los restaurantes tiki en los años 30?", a: ["Ofrecían una escapada a los misterios de Oriente", "Había ron barato", "Por la promoción de famosos", "Por impulso del gobierno"], exp: "Los restaurantes tiki triunfaron en los años 30 porque ofrecían una escapada exótica al misterio oriental y al paraíso tropical." },
+      { q: "¿Qué necesita una bebida exótica bien preparada?", a: ["Un equilibrio perfecto de sabores", "Los ingredientes más caros", "Sólo una decoración elaborada", "Una receta secreta"], exp: "Una bebida exótica bien preparada necesita un equilibrio perfecto de sabores, sin que ningún elemento domine sobre los demás." },
+      { q: "¿Qué priorizan los bartenders contemporáneos?", a: ["Consistencia e ingredientes de calidad", "La velocidad de servicio por encima de todo", "Las técnicas vistosas", "Usar tantos ingredientes como sea posible"], exp: "El bartender contemporáneo prioriza la consistencia y los ingredientes de calidad para asegurar que cada copa cumple un alto estándar." },
+      { q: "¿Cuál es el estándar de oro para los zumos en coctelería?", a: ["Zumo recién exprimido", "Zumo pasteurizado", "Zumo concentrado", "Zumo en polvo"], exp: "El zumo recién exprimido es el estándar de oro en coctelería: aporta el mejor sabor, aroma y calidad." },
+      { q: "¿Cuál es el primer paso al crear un cóctel?", a: ["Saber qué sabor, aroma y aspecto buscas", "Elegir la cristalería", "Seleccionar la decoración", "Medir los ingredientes"], exp: "El primer paso al crear un cóctel es tener claro el sabor, el aroma y el aspecto que se busca, es decir, una visión clara del resultado final." },
+      { q: "¿Por qué se prefiere el hielo transparente en coctelería?", a: ["Enfría mejor", "Sólo por estética", "Es más barato de producir", "No hay diferencia de sabor"], exp: "El hielo transparente se prefiere porque enfría mejor, se derrite más despacio y es más denso que el hielo turbio." }
     ]
   },
   {
