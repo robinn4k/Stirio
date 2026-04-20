@@ -210,21 +210,21 @@ export const rounds = [
   },
   {
     id: 12,
-    title: "Famous Bartenders & Cocktail Legends",
-    subtitle: "Pioneers of the Cocktail World",
+    title: "Bartenders famosos y leyendas del cóctel",
+    subtitle: "Pioneros del mundo de la coctelería",
     icon: "🎩",
     color: "#7d3c98",
     questions: [
-      { q: "What should bartenders avoid when handling glassware?", a: ["Touching the rim of a glass", "Using a tray to carry glasses", "Polishing glasses with a cloth", "Holding glasses by the stem"], exp: "Bartenders should never touch the rim of a glass for hygiene reasons, as this is where the guest's lips will touch." },
-      { q: "How should bartenders engage guests?", a: ["Make light conversation and share recommendations", "Ignore guests unless spoken to", "Only discuss the menu", "Avoid personal interaction entirely"], exp: "Good bartenders engage guests by making light conversation and sharing personalized recommendations to enhance their experience." },
-      { q: "How can bartenders improve the guest experience?", a: ["By using expertise to recommend cocktails", "By serving drinks as quickly as possible only", "By offering discounts on every order", "By memorizing every guest's name"], exp: "Bartenders improve the guest experience by using their knowledge and expertise to recommend cocktails that suit the guest's taste." },
-      { q: "Who ran the American Bar at The Savoy from 1926 to 1934?", a: ["Harry Craddock", "Jerry Thomas", "Dale DeGroff", "Dick Bradsell"], exp: "Harry Craddock was the head bartender at The Savoy's American Bar in London from 1926 to 1934." },
-      { q: "What book did Harry Craddock publish in 1930?", a: ["The Savoy Cocktail Book", "The Bartender's Guide", "The Fine Art of Mixing Drinks", "Vintage Spirits and Forgotten Cocktails"], exp: "Harry Craddock published The Savoy Cocktail Book in 1930, one of the most influential cocktail books ever written." },
-      { q: "Who is considered the father of all things tiki?", a: ["Donn Beach", "Trader Vic", "Jerry Thomas", "Harry Craddock"], exp: "Donn Beach (Ernest Raymond Beaumont Gantt) is considered the father of tiki culture, opening the first tiki bar in 1933." },
-      { q: "Which cocktail is credited to Victor Bergeron (Trader Vic)?", a: ["Mai Tai", "Zombie", "Piña Colada", "Singapore Sling"], exp: "Victor Bergeron, known as Trader Vic, is credited with creating the Mai Tai in 1944." },
-      { q: "What is Patrick Gavin Duffy known for?", a: ["Serving famous personalities drinks", "Inventing the cocktail shaker", "Writing the first bar manual", "Creating the Martini"], exp: "Patrick Gavin Duffy was known for serving famous personalities drinks and was a prominent figure in New York's bartending scene." },
-      { q: "David Embury categorized which cocktail ratio as 1:2:8?", a: ["Sour", "Old Fashioned", "Martini", "Manhattan"], exp: "In 'The Fine Art of Mixing Drinks' (1948), David Embury categorized the Sour with a ratio of 1 part sweet, 2 parts sour, 8 parts spirit." },
-      { q: "What award did Santiago Policastro receive?", a: ["The Bear of Bern", "The Golden Shaker", "The Bartender's Medal", "The IBA Lifetime Achievement"], exp: "Santiago Policastro received The Bear of Bern, a prestigious recognition in the bartending world." }
+      { q: "¿Qué deben evitar los bartenders al manipular la cristalería?", a: ["Tocar el borde del vaso", "Usar una bandeja para transportar vasos", "Pulir los vasos con un paño", "Coger las copas por el pie"], exp: "Por higiene, un bartender nunca debe tocar el borde del vaso, porque es la zona que tocarán los labios del cliente." },
+      { q: "¿Cómo debe interactuar un bartender con el cliente?", a: ["Entablando conversación ligera y ofreciendo recomendaciones", "Ignorarle salvo que hable primero", "Hablar sólo de la carta", "Evitar cualquier interacción personal"], exp: "Un buen bartender interactúa con el cliente entablando conversación ligera y ofreciéndole recomendaciones personalizadas para mejorar su experiencia." },
+      { q: "¿Cómo puede un bartender mejorar la experiencia del cliente?", a: ["Usando su conocimiento para recomendar cócteles", "Sirviendo las bebidas lo más rápido posible", "Ofreciendo descuentos en cada pedido", "Memorizando el nombre de cada cliente"], exp: "El bartender mejora la experiencia del cliente usando su conocimiento y criterio para recomendar cócteles que encajen con sus gustos." },
+      { q: "¿Quién dirigió el American Bar del Savoy entre 1926 y 1934?", a: ["Harry Craddock", "Jerry Thomas", "Dale DeGroff", "Dick Bradsell"], exp: "Harry Craddock fue el jefe de barra del American Bar del Savoy de Londres entre 1926 y 1934." },
+      { q: "¿Qué libro publicó Harry Craddock en 1930?", a: ["The Savoy Cocktail Book", "The Bartender's Guide", "The Fine Art of Mixing Drinks", "Vintage Spirits and Forgotten Cocktails"], exp: "Harry Craddock publicó The Savoy Cocktail Book en 1930, uno de los libros de coctelería más influyentes jamás escritos." },
+      { q: "¿Quién está considerado el padre del estilo tiki?", a: ["Donn Beach", "Trader Vic", "Jerry Thomas", "Harry Craddock"], exp: "Donn Beach (Ernest Raymond Beaumont Gantt) está considerado el padre de la cultura tiki; abrió el primer bar tiki en 1933." },
+      { q: "¿Qué cóctel se atribuye a Victor Bergeron (Trader Vic)?", a: ["Mai Tai", "Zombie", "Piña Colada", "Singapore Sling"], exp: "A Victor Bergeron, conocido como Trader Vic, se le atribuye la creación del Mai Tai en 1944." },
+      { q: "¿Por qué es conocido Patrick Gavin Duffy?", a: ["Por servir copas a personalidades famosas", "Por inventar la coctelera", "Por escribir el primer manual de bar", "Por crear el Martini"], exp: "Patrick Gavin Duffy fue conocido por servir copas a personalidades famosas y por ser una figura destacada de la escena bartender de Nueva York." },
+      { q: "¿Qué proporción (1:2:8) describió David Embury?", a: ["Sour", "Old Fashioned", "Martini", "Manhattan"], exp: "En 'The Fine Art of Mixing Drinks' (1948), David Embury definió el Sour con 1 parte de dulce, 2 de ácido y 8 de destilado." },
+      { q: "¿Qué premio recibió Santiago Policastro?", a: ["El Oso de Berna", "El Shaker de Oro", "La Medalla del Bartender", "El IBA Lifetime Achievement"], exp: "Santiago Policastro recibió El Oso de Berna, un reconocimiento prestigioso en el mundo de la coctelería." }
     ]
   },
   {
