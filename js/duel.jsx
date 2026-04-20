@@ -14,7 +14,15 @@ const DUEL_LANGS = [
   { id: 'de', flag: '🇩🇪', label: 'DE' },
 ];
 const dTr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
-const dTrParams = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
+// Parameterised translation with fallback: stLang.t() returns the raw key
+// when a translation is missing, which leaks things like "duel.invite_text"
+// into the UI. Fall back to the provided literal in that case.
+const dTrParams = (k, params, f) => {
+  const fb = (f !== undefined ? f : k);
+  if (!window.stLang || !window.stLang.t) return fb;
+  const v = window.stLang.t(k, params);
+  return (!v || v === k) ? fb : v;
+};
 
 const DuelShell = ({ title, subtitle, onBack, children }) => (
   <div style={{ minHeight: '100dvh', padding: '24px 20px 120px', maxWidth: 560, margin: '0 auto' }}>
@@ -70,7 +78,7 @@ const DuelModeCard = ({ icon, title, subtitle, onClick, disabled, children }) =>
   </div>
 );
 
-const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang }) => {
+const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang, useTimer, onChangeTimer }) => {
   const [maxPlayers, setMaxPlayers] = useState(2);
   return (
     <div style={{ display: 'grid', gap: 12 }}>
@@ -95,6 +103,29 @@ const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang }) => {
               </button>
             );
           })}
+        </div>
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', margin: '14px 0 8px' }}>
+          {dTr('duel.timer_label', 'Temporizador por pregunta')}
+        </div>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button className="btn" onClick={() => onChangeTimer(true)}
+            style={{
+              flex: 1, padding: '8px 10px',
+              background: useTimer ? 'color-mix(in oklch, var(--amber) 22%, var(--bg-2))' : undefined,
+              borderColor: useTimer ? 'var(--amber)' : undefined,
+              fontWeight: useTimer ? 600 : 400,
+            }}>
+            {dTr('duel.timer_on', '⏱ Con tiempo')}
+          </button>
+          <button className="btn" onClick={() => onChangeTimer(false)}
+            style={{
+              flex: 1, padding: '8px 10px',
+              background: !useTimer ? 'color-mix(in oklch, var(--amber) 22%, var(--bg-2))' : undefined,
+              borderColor: !useTimer ? 'var(--amber)' : undefined,
+              fontWeight: !useTimer ? 600 : 400,
+            }}>
+            {dTr('duel.timer_off', '∞ Sin tiempo')}
+          </button>
         </div>
       </div>
       <DuelModeCard
@@ -334,9 +365,9 @@ const Scoreboard = ({ players, slots, mySlot }) => (
   </div>
 );
 
-const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHost }) => {
+const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHost, useTimer }) => {
   const [qIdx, setQIdx] = useState(() => players[slot]?.currentQ || 0);
-  const [timeLeft, setTimeLeft] = useState(TIME_PER_QUESTION);
+  const [timeLeft, setTimeLeft] = useState(useTimer ? TIME_PER_QUESTION : 0);
   const [picked, setPicked] = useState(null);
   const [revealAt, setRevealAt] = useState(null);
 
@@ -344,18 +375,21 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
   const currentQ = questions[qIdx];
 
   useEffect(() => {
-    if (revealAt) return;
+    if (!useTimer || revealAt) return;
     if (timeLeft <= 0) { submit(null); return; }
     const t = setTimeout(() => setTimeLeft(s => s - 1), 1000);
     return () => clearTimeout(t);
-  }, [timeLeft, revealAt]);
+  }, [timeLeft, revealAt, useTimer]);
 
   const submit = async (pickIdx) => {
     if (picked !== null) return;
     setPicked(pickIdx);
     const correct = pickIdx !== null && pickIdx === currentQ.correctIndex;
     if (window.stRivals && window.stRivals.submitAnswer) {
-      try { await window.stRivals.submitAnswer(roomId, slot, qIdx, correct, timeLeft); } catch {}
+      // When untimed, award the same score as if the player answered instantly
+      // so the scoring still rewards correctness (timeLeft bonus is neutralised).
+      const reportedTime = useTimer ? timeLeft : TIME_PER_QUESTION;
+      try { await window.stRivals.submitAnswer(roomId, slot, qIdx, correct, reportedTime); } catch {}
     }
     setRevealAt(Date.now());
     setTimeout(() => {
@@ -369,27 +403,31 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
       setQIdx(qIdx + 1);
       setPicked(null);
       setRevealAt(null);
-      setTimeLeft(TIME_PER_QUESTION);
+      setTimeLeft(useTimer ? TIME_PER_QUESTION : 0);
     }, 2000);
   };
 
   if (!currentQ) return <div className="card" style={{ padding: 20 }}>Cargando preguntas…</div>;
 
-  const timerPct = Math.max(0, (timeLeft / TIME_PER_QUESTION) * 100);
+  const timerPct = useTimer ? Math.max(0, (timeLeft / TIME_PER_QUESTION) * 100) : 0;
 
   return (
     <div>
       <Scoreboard players={players} slots={slots} mySlot={slot} />
-      <div style={{ height: 4, background: 'var(--bg-3)', borderRadius: 2, marginBottom: 14, overflow: 'hidden' }}>
-        <div style={{
-          height: '100%', width: `${timerPct}%`,
-          background: timeLeft > 5 ? 'var(--amber)' : 'var(--red)',
-          transition: 'width 1s linear',
-        }} />
-      </div>
+      {useTimer && (
+        <div style={{ height: 4, background: 'var(--bg-3)', borderRadius: 2, marginBottom: 14, overflow: 'hidden' }}>
+          <div style={{
+            height: '100%', width: `${timerPct}%`,
+            background: timeLeft > 5 ? 'var(--amber)' : 'var(--red)',
+            transition: 'width 1s linear',
+          }} />
+        </div>
+      )}
       <div className="card" style={{ padding: 20, marginBottom: 14 }}>
         <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 8 }}>
-          {dTrParams('duel.question_progress', { n: qIdx + 1, total: QUESTIONS_PER_DUEL, time: timeLeft }, `Pregunta ${qIdx + 1} / ${QUESTIONS_PER_DUEL} · ${timeLeft}s`)}
+          {useTimer
+            ? dTrParams('duel.question_progress', { n: qIdx + 1, total: QUESTIONS_PER_DUEL, time: timeLeft }, `Pregunta ${qIdx + 1} / ${QUESTIONS_PER_DUEL} · ${timeLeft}s`)
+            : dTrParams('duel.question_progress_short', { n: qIdx + 1, total: QUESTIONS_PER_DUEL }, `Pregunta ${qIdx + 1} / ${QUESTIONS_PER_DUEL}`)}
         </div>
         <div style={{ fontSize: 16, lineHeight: 1.4 }}>{currentQ.question}</div>
       </div>
@@ -612,6 +650,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
   const [quizLang, setQuizLang] = useState(() => {
     try { return window.stLang?.getLang?.() || 'es'; } catch { return 'es'; }
   });
+  const [useTimer, setUseTimer] = useState(true);
 
   const [roomId, setRoomId] = useState(null);
   const [code, setCode] = useState('');
@@ -708,8 +747,10 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
       const r = rounds[Math.floor(Math.random() * rounds.length)];
       if (!r) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
       // Language-agnostic setup — host's chosen language is attached so all
-      // players render the same text from their local question data.
-      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang };
+      // players render the same text from their local question data. The
+      // useTimer flag travels with the room so joiners also see the same
+      // per-question countdown behaviour.
+      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang, useTimer };
       const res = await window.stRivals.createFriendRoom(uid, myName, setup, opts.maxPlayers);
       setRoomId(res.roomId); setCode(res.code); setSlot('p1');
       await window.stRivals.registerPlayerDisconnect(res.roomId, 'p1');
@@ -747,7 +788,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     try {
       const rounds = window.TRIVIA_ROUNDS || [];
       const r = rounds[Math.floor(Math.random() * rounds.length)];
-      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang };
+      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang, useTimer };
       const result = await window.stRivals.joinQueue(uid, myName, setup);
       setMaxPlayers(2);
       if (!result.waiting) {
@@ -813,6 +854,8 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
           rtdbReady={rtdbReady}
           quizLang={quizLang}
           onChangeLang={setQuizLang}
+          useTimer={useTimer}
+          onChangeTimer={setUseTimer}
           onPick={(mode, opts) => {
             if (mode === 'bot') setPhase('bot');
             else if (mode === 'host') startHost(opts);
@@ -892,6 +935,8 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
 
   if (phase === 'playing') {
     const players = room?.players || {};
+    // Fall back to `useTimer: true` for rooms created before this flag existed.
+    const roomUseTimer = room?.setup?.useTimer !== false;
     return (
       <DuelShell title="Duelo" subtitle="En juego" onBack={returnToMenu}>
         <DuelGame
@@ -901,6 +946,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
           players={players}
           maxPlayers={maxPlayers}
           isHost={slot === 'p1'}
+          useTimer={roomUseTimer}
           onFinish={() => { /* results set via listenRoom when status=finished */ }}
         />
         <Toast msg={toast?.msg} type={toast?.type} onClose={() => setToast(null)} />

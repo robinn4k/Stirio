@@ -34,9 +34,17 @@ const ScreenShell = ({ title, subtitle, onBack, children }) => (
   </div>
 );
 
-const FinishCard = ({ icon, correct, total, onRetry, onBack }) => {
+const FinishCard = ({ icon, correct, total, history, onRetry, onBack }) => {
   const lTr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
-  const lTrP = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
+  // stLang.t() returns the raw key on a miss, which previously surfaced
+  // "{total}" in the UI because only `correct` was passed. Pass both and fall
+  // back to a literal if the translation key isn't loaded.
+  const lTrP = (k, params, f) => {
+    const fb = (f !== undefined ? f : k);
+    if (!window.stLang || !window.stLang.t) return fb;
+    const v = window.stLang.t(k, params);
+    return (!v || v === k) ? fb : v;
+  };
   useEffect(() => {
     if (correct / total >= 0.6) setTimeout(() => confettiBurst(window.innerWidth/2, window.innerHeight/3), 150);
   }, [correct, total]);
@@ -46,9 +54,51 @@ const FinishCard = ({ icon, correct, total, onRetry, onBack }) => {
       <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 6px' }}>{lTr('finish.title', '¡Ronda terminada!')}</h2>
       <p style={{ color: 'var(--ink-2)', marginBottom: 18 }}
         dangerouslySetInnerHTML={{
-          __html: lTrP('finish.hits', { correct: `<strong>${correct}/${total}</strong>` }, `Acertaste <strong>${correct}/${total}</strong>`)
+          __html: lTrP(
+            'finish.hits',
+            { correct: `<strong>${correct}</strong>`, total: `<strong>${total}</strong>` },
+            `Acertaste <strong>${correct}/${total}</strong>`
+          )
         }}
       />
+      {Array.isArray(history) && history.length > 0 && (
+        <div style={{
+          textAlign: 'left', marginBottom: 18,
+          maxHeight: 320, overflowY: 'auto',
+          border: '1px solid var(--line-soft)', borderRadius: 'var(--r-md)',
+          background: 'var(--bg-2)',
+        }}>
+          {history.map((h, i) => {
+            const correctAns = h.answers?.[h.correctIndex];
+            const pickedAns = h.answers?.[h.selectedIndex];
+            const borderColor = i === history.length - 1 ? 'transparent' : 'var(--line-soft)';
+            return (
+              <div key={i} style={{
+                padding: '10px 14px',
+                borderBottom: `1px solid ${borderColor}`,
+                display: 'flex', alignItems: 'flex-start', gap: 10,
+                fontSize: 13, lineHeight: 1.45,
+              }}>
+                <div style={{
+                  fontSize: 18, lineHeight: 1,
+                  color: h.correct ? 'var(--ok)' : 'var(--bad)',
+                }}>{h.correct ? '✓' : '✕'}</div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontWeight: 600, color: 'var(--ink-1)', marginBottom: 2 }}>
+                    {ml(h.name)}
+                  </div>
+                  {!h.correct && (
+                    <div style={{ color: 'var(--ink-2)', fontSize: 12 }}>
+                      <div><span style={{ color: 'var(--bad)' }}>{lTr('finish.your_answer', 'Tu respuesta')}:</span> {ml(pickedAns) || '—'}</div>
+                      <div><span style={{ color: 'var(--ok)' }}>{lTr('finish.correct_answer', 'Correcta')}:</span> {ml(correctAns)}</div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
       <div style={{ display: 'flex', gap: 10 }}>
         <button className="btn" onClick={onBack} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Salir') : 'Salir')}</button>
         <button className="btn primary" onClick={onRetry} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.play_again', 'Jugar otra vez') : 'Jugar otra vez')}</button>
@@ -84,6 +134,7 @@ const BlindScreen = ({ onBack }) => {
         icon="👃"
         correct={done.correct}
         total={done.total}
+        history={done.history}
         onRetry={() => { setDone(null); setFeedback(null); setState(api.startBlind()); }}
         onBack={onBack}
       />
@@ -173,6 +224,7 @@ const ConstructorScreen = ({ onBack }) => {
         icon="🍹"
         correct={done.correct}
         total={done.total}
+        history={done.history}
         onRetry={() => { setDone(null); setFeedback(null); setState(api.startConstructor()); }}
         onBack={onBack}
       />

@@ -296,7 +296,7 @@ let bs = null;
 
 export function startBlind() {
   const questions = shuffle(SPIRITS);
-  bs = { questions, index: 0, correct: 0, answered: 0, revealed: 1 };
+  bs = { questions, index: 0, correct: 0, answered: 0, revealed: 1, history: [] };
   return _payload();
 }
 
@@ -317,11 +317,27 @@ export function answerBlind(selectedIndex) {
   const q = bs.questions[bs.index];
   const ok = selectedIndex === 0;
   if (ok) bs.correct++;
+  // Capture the per-question outcome so the finish screen can show a
+  // breakdown of what the player got right / wrong.
+  bs.history.push({
+    name: q.name,
+    answers: q.answers,
+    correctIndex: 0,
+    selectedIndex,
+    correct: ok,
+  });
   bs.answered++;
   bs.index++;
   bs.revealed = 1; // Reset clue count for the next question
   const done = bs.index >= bs.questions.length;
-  return { correct: ok, correctIndex: 0, selectedIndex, done, result: done ? { correct: bs.correct, total: bs.questions.length } : null, next: done ? null : _payload() };
+  return {
+    correct: ok,
+    correctIndex: 0,
+    selectedIndex,
+    done,
+    result: done ? { correct: bs.correct, total: bs.questions.length, history: bs.history.slice() } : null,
+    next: done ? null : _payload(),
+  };
 }
 
 export function abortBlind() { bs = null; }
