@@ -3,14 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stirio Wiki 3D</title>
+  <title>Stirio · Enciclopedia</title>
   <link rel="stylesheet" href="css/tokens.css">
   <style>
-    /* Legacy-token aliases: wiki.html was authored against a token schema
-       (--bg, --text, --surface, --accent…) that doesn't exist in tokens.css.
-       Without these aliases every var() resolves to empty string and the
-       page renders invisible on a transparent background. Map each legacy
-       name onto the real token. Scoped to this file via :root in <style>. */
+    /* Map legacy token names used here onto the real tokens from tokens.css. */
     :root {
       --bg: var(--bg-0);
       --text: var(--ink-0);
@@ -24,8 +20,20 @@
       --font-serif: var(--f-serif);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; background: var(--bg); color: var(--text); font-family: var(--font-sans); overflow: hidden; }
-    #wiki-root { height: 100vh; display: flex; flex-direction: column; }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      overflow: hidden;
+    }
+    #wiki-root {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ─── Header ─── */
     .wiki-header {
       display: flex; align-items: center; gap: 12px;
       padding: 12px 16px;
@@ -34,85 +42,307 @@
       flex-shrink: 0;
     }
     .wiki-back {
-      background: none; border: none; color: var(--accent); font-size: 20px; cursor: pointer; padding: 4px;
-      line-height: 1;
+      background: none; border: 0;
+      color: var(--accent);
+      font-size: 20px; padding: 4px 8px;
+      cursor: pointer; line-height: 1;
+      border-radius: 6px;
     }
-    .wiki-title { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 700; color: var(--text); }
+    .wiki-back:hover { background: var(--surface-2); }
+    .wiki-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+    }
     .wiki-search {
-      flex: 1; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
-      padding: 6px 10px; color: var(--text); font-size: 0.875rem;
+      flex: 1;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
     }
-    .wiki-search:focus { outline: none; border-color: var(--accent); }
-    .wiki-layout { display: flex; flex: 1; overflow: hidden; }
-    .wiki-sidebar {
-      width: 280px; overflow-y: auto; border-right: 1px solid var(--border);
-      padding: 8px 0; flex-shrink: 0;
+    .wiki-search:focus {
+      border-color: var(--accent);
     }
-    @media (max-width: 600px) { .wiki-sidebar { display: none; } }
-    .wiki-category { padding: 6px 16px; font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px; }
-    .wiki-item {
-      display: flex; align-items: center; gap: 10px;
-      padding: 8px 16px; cursor: pointer; font-size: 0.875rem; color: var(--text-2);
-      border-left: 2px solid transparent; transition: all 0.15s;
+
+    /* ─── Body (scrollable) ─── */
+    .wiki-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 18px 60px;
     }
-    .wiki-item:hover { background: var(--surface-2); color: var(--text); }
-    .wiki-item.active { border-left-color: var(--accent); color: var(--accent); background: color-mix(in oklch, var(--accent) 10%, transparent); }
-    .wiki-item-icon { font-size: 1.1rem; flex-shrink: 0; }
-    .wiki-main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
-    .wiki-canvas-wrap { flex: 1; position: relative; }
-    #r3f-canvas { width: 100%; height: 100%; display: block; }
-    .wiki-fallback {
-      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 16px; text-align: center; padding: 24px;
+    .wiki-body[data-view="article"] { padding: 0 0 60px; }
+
+    /* ─── Hub: category grid ─── */
+    .wiki-hub-intro {
+      max-width: 640px;
+      margin: 0 auto 22px;
+      text-align: center;
+      color: var(--text-2);
+      font-size: 0.95rem;
     }
-    .wiki-fallback-icon { font-size: 4rem; }
-    .wiki-fallback-title { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700; color: var(--text); }
-    .wiki-fallback-desc { color: var(--text-muted); font-size: 0.875rem; max-width: 300px; line-height: 1.5; }
-    .wiki-info-panel {
-      background: var(--surface); border-top: 1px solid var(--border);
-      padding: 16px; max-height: 220px; overflow-y: auto; flex-shrink: 0;
+    .wiki-hub-intro .title {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--text);
+      margin-bottom: 6px;
     }
-    .wiki-info-name { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-    .wiki-info-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-    .wiki-info-chip {
-      background: color-mix(in oklch, var(--accent) 15%, var(--surface-2));
-      color: var(--accent); border-radius: 999px; padding: 2px 10px; font-size: 0.75rem;
+    .wiki-cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    .wiki-info-desc { font-size: 0.875rem; color: var(--text-2); line-height: 1.6; }
+    .wiki-cat-card {
+      border-radius: 14px;
+      padding: 18px;
+      cursor: pointer;
+      text-align: left;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-family: inherit;
+      color: var(--text);
+    }
+    .wiki-cat-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      border-color: color-mix(in oklch, var(--accent) 45%, var(--border));
+    }
+    .wiki-cat-icon { font-size: 2rem; }
+    .wiki-cat-name {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .wiki-cat-count {
+      font-family: var(--f-mono, monospace);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── Category: article list ─── */
+    .wiki-cat-header {
+      max-width: 720px;
+      margin: 0 auto 16px;
+      text-align: center;
+    }
+    .wiki-cat-header .icon { font-size: 2.6rem; }
+    .wiki-cat-header .name {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      margin: 4px 0 4px;
+    }
+    .wiki-cat-header .desc {
+      color: var(--text-2);
+      font-size: 0.9rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .wiki-art-list {
+      display: grid;
+      gap: 8px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .wiki-art-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      color: var(--text);
+      text-align: left;
+      transition: border-color 0.12s, background 0.12s;
+    }
+    .wiki-art-item:hover {
+      background: var(--surface);
+      border-color: color-mix(in oklch, var(--accent) 35%, var(--border));
+    }
+    .wiki-art-item .icon { font-size: 1.5rem; flex-shrink: 0; }
+    .wiki-art-item .name { flex: 1; font-size: 0.95rem; font-weight: 500; }
+    .wiki-art-item .tag-3d {
+      font-size: 0.65rem;
+      font-family: var(--f-mono, monospace);
+      padding: 2px 6px;
+      border-radius: 99px;
+      background: color-mix(in oklch, var(--accent) 25%, transparent);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .wiki-art-item .arrow {
+      color: var(--text-muted);
+      font-family: var(--f-mono, monospace);
+    }
+
+    /* ─── Article detail ─── */
+    .wiki-article-hero {
+      padding: 32px 22px 20px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .wiki-article-hero .icon { font-size: 3rem; }
+    .wiki-article-hero .title {
+      font-family: var(--font-serif);
+      font-size: 2.1rem;
+      color: var(--text);
+      margin-top: 6px;
+      line-height: 1.1;
+    }
+    .wiki-article-hero .category {
+      font-family: var(--f-mono, monospace);
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .wiki-article-3d {
+      max-width: 760px;
+      margin: 0 auto 16px;
+      aspect-ratio: 16/10;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+    }
+    .wiki-article-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 22px 40px;
+    }
+    .wiki-section { margin-bottom: 20px; }
+    .wiki-section h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .wiki-section p {
+      color: var(--text-2);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .wiki-section.tip {
+      background: color-mix(in oklch, var(--accent) 10%, var(--surface));
+      border: 1px solid color-mix(in oklch, var(--accent) 30%, var(--border));
+      padding: 14px 16px;
+      border-radius: 12px;
+    }
+    .wiki-section.errors {
+      background: color-mix(in oklch, #e04848 12%, var(--surface));
+      border: 1px solid color-mix(in oklch, #e04848 25%, var(--border));
+      padding: 14px 16px;
+      border-radius: 12px;
+    }
+    .wiki-steps {
+      display: grid;
+      gap: 10px;
+    }
+    .wiki-step {
+      display: flex; align-items: flex-start; gap: 12px;
+    }
+    .wiki-step-num {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--bg);
+      display: grid; place-items: center;
+      font-family: var(--f-mono, monospace);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .wiki-step p {
+      flex: 1;
+      color: var(--text-2);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      padding-top: 2px;
+    }
+
+    /* ─── Search results ─── */
+    .wiki-search-results {
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      gap: 6px;
+    }
+    .wiki-empty {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      padding: 40px 20px;
+    }
+
+    /* ─── Loading ─── */
     .wiki-loading {
-      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-      background: var(--bg); flex-direction: column; gap: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px;
+      height: 100%;
+      color: var(--text-muted);
+      font-size: 0.9rem;
     }
     .wiki-spinner {
-      width: 40px; height: 40px; border: 3px solid var(--border);
-      border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite;
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: wiki-spin 0.8s linear infinite;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes wiki-spin { to { transform: rotate(360deg); } }
+
+    /* Hide WebKit scrollbars in the body for a cleaner look */
+    .wiki-body::-webkit-scrollbar { width: 8px; }
+    .wiki-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+    @media (max-width: 640px) {
+      .wiki-header { padding: 10px 12px; gap: 8px; }
+      .wiki-title { font-size: 1rem; }
+      .wiki-article-hero { padding: 22px 18px 14px; }
+      .wiki-article-hero .title { font-size: 1.6rem; }
+      .wiki-article-content { padding: 0 18px 40px; }
+    }
   </style>
 </head>
 <body>
 <div id="wiki-root">
   <div class="wiki-header">
-    <button class="wiki-back" onclick="window.parent.postMessage({type:'wiki-close'},'*')" title="Volver">←</button>
-    <span class="wiki-title">Encyclopedia 3D</span>
-    <input class="wiki-search" type="search" placeholder="Buscar cóctel, ingrediente…" id="wiki-search-input">
+    <button class="wiki-back" id="btn-back" title="Volver" aria-label="Volver">←</button>
+    <span class="wiki-title" id="view-title">Enciclopedia</span>
+    <input
+      class="wiki-search"
+      type="search"
+      id="search-input"
+      placeholder="Buscar artículo, técnica, destilado…"
+      autocomplete="off"
+    />
   </div>
-  <div class="wiki-layout">
-    <nav class="wiki-sidebar" id="wiki-sidebar"></nav>
-    <main class="wiki-main">
-      <div class="wiki-canvas-wrap">
-        <div class="wiki-loading" id="wiki-loading">
-          <div class="wiki-spinner"></div>
-          <span style="color:var(--text-muted);font-size:.875rem">Cargando Three.js…</span>
-        </div>
-        <canvas id="r3f-canvas"></canvas>
-      </div>
-      <div class="wiki-info-panel" id="wiki-info-panel" style="display:none"></div>
-    </main>
+  <div class="wiki-body" id="body" data-view="hub">
+    <div class="wiki-loading">
+      <div class="wiki-spinner"></div>
+      <span id="loading-label">Cargando enciclopedia…</span>
+    </div>
   </div>
 </div>
 
-<!-- Three.js ES modules via importmap (required by wiki-3d.js / wiki-scenes.js) -->
 <script type="importmap">
 {
   "imports": {
@@ -122,9 +352,29 @@
 }
 </script>
 
-<script>
-// Sync theme from parent
-(function() {
+<script type="module">
+import { WIKI_CATEGORIES, WIKI_ARTICLES, TIMELINE_DATA, GLOSSARY_DATA } from './js/wiki-data.js';
+import { t, preloadAllTranslations } from './js/lang.js';
+
+// 3D engine is optional — only articles with has3d use it. If imports fail
+// (CDN hiccup / offline) we still render text content.
+let mountScene = null, dispose3d = null, SCENE_BUILDERS = {};
+try {
+  const [three, scenes] = await Promise.all([
+    import('./js/wiki-3d.js'),
+    import('./js/wiki-scenes.js'),
+  ]);
+  mountScene = three.mountScene;
+  dispose3d = three.dispose;
+  SCENE_BUILDERS = scenes.SCENE_BUILDERS || {};
+} catch (e) {
+  console.warn('[wiki] 3D engine unavailable — text-only mode', e);
+}
+
+try { await preloadAllTranslations(); } catch {}
+
+// Sync parent theme
+(() => {
   const p = window.parent;
   if (p && p !== window) {
     try {
@@ -133,182 +383,347 @@
         const v = htmlEl.getAttribute('data-' + attr);
         if (v) document.documentElement.setAttribute('data-' + attr, v);
       });
-    } catch(e) {}
+    } catch {}
   }
-  window.addEventListener('message', e => {
-    if (e.data && e.data.type === 'wiki-theme') {
-      Object.entries(e.data.attrs || {}).forEach(([k,v]) => document.documentElement.setAttribute(k, v));
-    }
-  });
 })();
 
-// Wiki data from existing wiki-data.js (loaded inline below or via fetch)
-const WIKI_CATEGORIES = [
-  { id: 'highball',  labelKey: 'wiki.cat_highball',  labelFallback: 'Highball',      icon: '🥃', items: ['Mojito', 'Gin & Tonic', 'Moscow Mule', 'Dark \'n\' Stormy'] },
-  { id: 'sours',     labelKey: 'wiki.cat_sours',     labelFallback: 'Sours',         icon: '🍋', items: ['Whiskey Sour', 'Pisco Sour', 'Amaretto Sour', 'Daiquiri'] },
-  { id: 'martini',   labelKey: 'wiki.cat_martini',   labelFallback: 'Martini & Up',  icon: '🍸', items: ['Dry Martini', 'Cosmopolitan', 'Manhattan', 'Negroni'] },
-  { id: 'oldschool', labelKey: 'wiki.cat_oldschool', labelFallback: 'Old-School',    icon: '🥃', items: ['Old Fashioned', 'Sazerac', 'Vieux Carré', 'Toronto'] },
-  { id: 'tiki',      labelKey: 'wiki.cat_tiki',      labelFallback: 'Tiki',          icon: '🌺', items: ['Mai Tai', 'Zombie', 'Jungle Bird', 'Painkiller'] },
-  { id: 'spirits',   labelKey: 'wiki.cat_spirits',   labelFallback: 'Espirituosos',  icon: '🫙', items: ['Ron Zacapa 23', 'Mezcal Banhez', 'Vodka Grey Goose', 'Gin Hendrick\'s'] },
-];
+const tOr = (key, fb) => {
+  const v = t(key);
+  return (v && v !== key) ? v : fb;
+};
 
-// i18n bridge: usa window.wikiT inyectado por el module script más abajo
-const wt = (key, fallback) => (window.wikiT ? window.wikiT(key, fallback) : fallback);
-// Construido dinámicamente para que al cambiar idioma se traduzca todo
-function cocktailInfoFor(name) {
-  const defaults = { chips: [wt('wiki.default_chip', 'Cóctel')], desc: wt('wiki.default_desc', 'Explora este cóctel en 3D.') };
-  const perCocktail = {
-    'Negroni':       { chips: ['IBA', 'Stirred', 'Gin'],    desc: wt('wiki.negroni_desc', 'El Negroni es un cóctel clásico italiano.') },
-    'Dry Martini':   { chips: ['IBA', 'Stirred', 'Gin'],    desc: wt('wiki.martini_desc', 'El Dry Martini es la cumbre de la elegancia.') },
-    'Mojito':        { chips: ['IBA', 'Built', 'Ron'],      desc: wt('wiki.mojito_desc', 'El Mojito es un highball cubano.') },
-    'Old Fashioned': { chips: ['Classic', 'Stirred', 'Whiskey'], desc: wt('wiki.oldfashioned_desc', 'El Old Fashioned es el primer cóctel documentado.') },
-    'Daiquiri':      { chips: ['IBA', 'Shaken', 'Ron'],     desc: wt('wiki.daiquiri_desc', 'El Daiquiri es pureza.') },
-  };
-  return perCocktail[name] || defaults;
+const $body = document.getElementById('body');
+const $title = document.getElementById('view-title');
+const $back = document.getElementById('btn-back');
+const $search = document.getElementById('search-input');
+const $loadingLabel = document.getElementById('loading-label');
+if ($loadingLabel) $loadingLabel.textContent = tOr('wiki.loading', 'Cargando enciclopedia…');
+
+const state = {
+  view: 'hub',       // 'hub' | 'cat' | 'art' | 'search'
+  catId: null,
+  artId: null,
+  stack: [],
+};
+
+$back.addEventListener('click', goBack);
+$search.addEventListener('input', onSearchInput);
+
+function setView(v) { state.view = v; $body.setAttribute('data-view', v); }
+
+function disposeScene() {
+  if (typeof dispose3d === 'function') {
+    try { dispose3d(); } catch {}
+  }
 }
 
-let selectedItem = null;
+function goBack() {
+  if (state.view === 'hub') {
+    // At the root — close back to parent SPA
+    try { window.parent.postMessage({ type: 'wiki-close' }, '*'); } catch {}
+    return;
+  }
+  if (state.view === 'search') {
+    $search.value = '';
+    renderHub();
+    return;
+  }
+  const prev = state.stack.pop() || { view: 'hub' };
+  if (prev.view === 'hub') renderHub();
+  else if (prev.view === 'cat') openCategory(prev.catId, { push: false });
+  else renderHub();
+}
 
-// ── Per-cocktail scene parameters (glass shape + layer colors) ──
-// Keys match the items in WIKI_CATEGORIES above.
-const COCKTAIL_SCENES = {
-  'Mojito':         { builder: 'cocktail-glass', glass: 'highball', colors: ['#c8e6b4'], layers: [0.85] },
-  'Gin & Tonic':    { builder: 'cocktail-glass', glass: 'highball', colors: ['#d6efff'], layers: [0.85] },
-  'Moscow Mule':    { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#f4b860'], layers: [0.7] },
-  "Dark 'n' Stormy":{ builder: 'cocktail-glass', glass: 'highball', colors: ['#4a2d1a', '#d18b4a'], layers: [0.35, 0.5] },
-  'Whiskey Sour':   { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#e6b25a'], layers: [0.75] },
-  'Pisco Sour':     { builder: 'cocktail-glass', glass: 'coupe',    colors: ['#f2d89f'], layers: [0.85] },
-  'Amaretto Sour':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#c27a3a'], layers: [0.75] },
-  'Daiquiri':       { builder: 'cocktail-glass', glass: 'coupe',    colors: ['#eaf7ea'], layers: [0.8] },
-  'Dry Martini':    { builder: 'cocktail-glass', glass: 'martini',  colors: ['#f5f3d2'], layers: [0.85] },
-  'Cosmopolitan':   { builder: 'cocktail-glass', glass: 'martini',  colors: ['#d6376a'], layers: [0.85] },
-  'Manhattan':      { builder: 'cocktail-glass', glass: 'coupe',    colors: ['#7e1b1b'], layers: [0.85] },
-  'Negroni':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#b11f27'], layers: [0.75] },
-  'Old Fashioned':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#b07326'], layers: [0.7] },
-  'Sazerac':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#a0471c'], layers: [0.72] },
-  'Vieux Carré':    { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#8a3112'], layers: [0.72] },
-  'Toronto':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#5a240c'], layers: [0.72] },
-  'Mai Tai':        { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#cc5c2a'], layers: [0.75] },
-  'Zombie':         { builder: 'cocktail-glass', glass: 'hurricane',colors: ['#e04325', '#f3a130'], layers: [0.45, 0.45] },
-  'Jungle Bird':    { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#a53a1a'], layers: [0.75] },
-  'Painkiller':     { builder: 'cocktail-glass', glass: 'hurricane',colors: ['#d9aa68'], layers: [0.85] },
-  'Ron Zacapa 23':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#5b2510'], layers: [0.8] },
-  'Mezcal Banhez':  { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#e8e4c7'], layers: [0.8] },
-  'Vodka Grey Goose':{builder: 'cocktail-glass', glass: 'rocks',    colors: ['#e6efff'], layers: [0.8] },
-  "Gin Hendrick's": { builder: 'cocktail-glass', glass: 'rocks',    colors: ['#dcdfe0'], layers: [0.8] },
-};
-const DEFAULT_SCENE = { builder: 'cocktail-glass', glass: 'rocks', colors: ['#b11f27'], layers: [0.75] };
+function push(current) { state.stack.push(current); }
 
-function buildSidebar(filter) {
-  const sidebar = document.getElementById('wiki-sidebar');
-  sidebar.innerHTML = '';
-  WIKI_CATEGORIES.forEach(cat => {
-    const items = filter ? cat.items.filter(i => i.toLowerCase().includes(filter.toLowerCase())) : cat.items;
-    if (!items.length) return;
-    const catEl = document.createElement('div');
-    catEl.className = 'wiki-category';
-    catEl.textContent = cat.icon + '  ' + wt(cat.labelKey, cat.labelFallback);
-    sidebar.appendChild(catEl);
-    items.forEach(name => {
-      const el = document.createElement('div');
-      el.className = 'wiki-item' + (selectedItem === name ? ' active' : '');
-      el.innerHTML = `<span class="wiki-item-icon">${cat.icon}</span><span>${name}</span>`;
-      el.onclick = () => selectItem(name);
-      sidebar.appendChild(el);
-    });
+// ─── Hub ──────────────────────────────────────────────────────────
+function renderHub() {
+  disposeScene();
+  setView('hub');
+  state.catId = state.artId = null;
+  $title.textContent = tOr('wiki.title', 'Enciclopedia');
+  const categories = WIKI_CATEGORIES.map(cat => {
+    const name = tOr('wiki.cat.' + cat.id, cat.id);
+    const count = cat.articles.length;
+    const label = `${count} ${count === 1 ? tOr('wiki.article', 'artículo') : tOr('wiki.articles', 'artículos')}`;
+    return `
+      <button class="wiki-cat-card" data-cat="${cat.id}" style="background:${cat.gradient};">
+        <div class="wiki-cat-icon">${cat.icon}</div>
+        <div class="wiki-cat-name">${escapeHtml(name)}</div>
+        <div class="wiki-cat-count">${escapeHtml(label)}</div>
+      </button>
+    `;
+  }).join('');
+  $body.innerHTML = `
+    <div class="wiki-hub-intro">
+      <span class="title">${tOr('wiki.hub.title', 'Explora el mundo de los cócteles')}</span>
+      ${tOr('wiki.hub.subtitle', 'Técnicas, destilados, historia, glosario y más. Busca o elige una categoría.')}
+    </div>
+    <div class="wiki-cat-grid">${categories}</div>
+  `;
+  $body.querySelectorAll('.wiki-cat-card').forEach(el => {
+    el.addEventListener('click', () => openCategory(el.dataset.cat));
   });
 }
 
-function selectItem(name) {
-  selectedItem = name;
-  buildSidebar(document.getElementById('wiki-search-input').value);
-  showInfo(name);
-  if (window.wikiLoadScene) window.wikiLoadScene(name);
-}
-
-function showInfo(name) {
-  const panel = document.getElementById('wiki-info-panel');
-  const info = cocktailInfoFor(name);
-  panel.style.display = 'block';
-  panel.innerHTML = `
-    <div class="wiki-info-name">${name}</div>
-    <div class="wiki-info-chips">${info.chips.map(c => `<span class="wiki-info-chip">${c}</span>`).join('')}</div>
-    <div class="wiki-info-desc">${info.desc}</div>
+// ─── Category ─────────────────────────────────────────────────────
+function openCategory(catId, { push: shouldPush = true } = {}) {
+  const cat = WIKI_CATEGORIES.find(c => c.id === catId);
+  if (!cat) return renderHub();
+  disposeScene();
+  if (shouldPush) push({ view: state.view, catId: state.catId });
+  setView('cat');
+  state.catId = catId;
+  state.artId = null;
+  const name = tOr('wiki.cat.' + catId, catId);
+  $title.textContent = name;
+  const articles = cat.articles.map(art => {
+    const label = tOr('wiki.art.' + catId + '.' + art.id, art.id);
+    return `
+      <button class="wiki-art-item" data-art="${art.id}">
+        <span class="icon">${art.icon || '📄'}</span>
+        <span class="name">${escapeHtml(label)}</span>
+        ${art.has3d ? '<span class="tag-3d">3D</span>' : ''}
+        <span class="arrow">→</span>
+      </button>
+    `;
+  }).join('');
+  $body.innerHTML = `
+    <div class="wiki-cat-header">
+      <div class="icon">${cat.icon}</div>
+      <div class="name">${escapeHtml(name)}</div>
+      <div class="desc">${escapeHtml(tOr('wiki.cat.' + catId + '.desc', ''))}</div>
+    </div>
+    <div class="wiki-art-list">${articles}</div>
   `;
+  $body.querySelectorAll('.wiki-art-item').forEach(el => {
+    el.addEventListener('click', () => openArticle(catId, el.dataset.art));
+  });
 }
 
+// ─── Article ──────────────────────────────────────────────────────
+function openArticle(catId, artId) {
+  const cat = WIKI_CATEGORIES.find(c => c.id === catId);
+  if (!cat) return renderHub();
+  const art = cat.articles.find(a => a.id === artId);
+  if (!art) return renderHub();
+  disposeScene();
+  push({ view: state.view, catId: state.catId, artId: state.artId });
+  setView('art');
+  state.catId = catId;
+  state.artId = artId;
+  const title = tOr('wiki.art.' + catId + '.' + artId, artId);
+  $title.textContent = title;
+  const wantsScene = art.has3d && art.scene && SCENE_BUILDERS[art.scene] && mountScene;
 
-// Sidebar-only init runs immediately; the 3D engine starts from a separate
-// ES-module block below (which imports wiki-3d.js + wiki-scenes.js).
-document.addEventListener('DOMContentLoaded', () => {
-  buildSidebar('');
-  document.getElementById('wiki-search-input').addEventListener('input', e => buildSidebar(e.target.value));
-});
-</script>
+  $body.innerHTML = `
+    <div class="wiki-article-hero">
+      <div class="icon">${art.icon || '📄'}</div>
+      <div class="category">${escapeHtml(tOr('wiki.cat.' + catId, catId))}</div>
+      <div class="title">${escapeHtml(title)}</div>
+    </div>
+    ${wantsScene ? '<div class="wiki-article-3d" id="article-3d"></div>' : ''}
+    <div class="wiki-article-content">
+      ${renderArticleSections(catId, artId, art)}
+    </div>
+  `;
 
-<script type="module">
-// ── i18n bridge: carga lang.js (mismo origen, lee el lang del localStorage) ──
-// Expone window.wikiT para que los textos de COCKTAIL_INFO se traduzcan.
-// El lang actual se determina automáticamente desde localStorage 'stirio_lang',
-// que es compartido con el parent (index.html) al ser mismo origen.
-import { t as _t, preloadAllTranslations } from './js/lang.js';
-try { await preloadAllTranslations(); } catch {}
-window.wikiT = (key, fallback) => {
-  const v = _t(key);
-  return (v && v !== key) ? v : (fallback || key);
-};
-
-// ── Modern ES-module 3D engine ───────────────────────────────────────
-// Uses the real wiki-3d.js + wiki-scenes.js stack (SCENE_BUILDERS for every
-// cocktail, tool, technique, alambique) via importmap-resolved three.
-import { mountScene, dispose } from './js/wiki-3d.js';
-import { SCENE_BUILDERS, buildCocktailScene } from './js/wiki-scenes.js';
-
-const canvas = document.getElementById('r3f-canvas');
-const wrap = canvas.parentElement;
-const loading = document.getElementById('wiki-loading');
-
-function buildFnFor(name) {
-  const cfg = window.COCKTAIL_SCENES[name] || window.DEFAULT_SCENE;
-  const builder = (cfg.builder && SCENE_BUILDERS[cfg.builder]) || buildCocktailScene;
-  return (scene, camera, ctx) => {
+  if (wantsScene) {
     try {
-      if (cfg.builder === 'cocktail-glass' || !cfg.builder) {
-        buildCocktailScene(scene, camera, ctx, { glass: cfg.glass, colors: cfg.colors, layers: cfg.layers });
-      } else {
-        builder(scene, camera, ctx);
-      }
-    } catch (err) {
-      console.warn('scene build failed for', name, err);
+      const host = document.getElementById('article-3d');
+      mountScene(host, (scene, camera, ctx) => {
+        SCENE_BUILDERS[art.scene](scene, camera, ctx, art.sceneParams);
+      });
+    } catch (e) {
+      console.warn('[wiki] 3D scene failed:', e);
     }
-  };
-}
-
-window.wikiLoadScene = (name) => {
-  try {
-    // Hide the legacy loader/canvas CSS placeholder and mount a real scene
-    loading.style.display = 'none';
-    canvas.style.display = 'none'; // wiki-3d.js creates its own renderer inside wrap
-    mountScene(wrap, buildFnFor(name));
-  } catch (err) {
-    console.warn('wikiLoadScene failed:', err);
-    loading.style.display = 'block';
-    loading.innerHTML = `
-      <div class="wiki-fallback">
-        <div class="wiki-fallback-icon">🍸</div>
-        <div class="wiki-fallback-title">Vista 3D no disponible</div>
-        <div class="wiki-fallback-desc">No se pudo cargar Three.js. Comprueba tu conexión a internet.</div>
-      </div>`;
   }
-};
-
-// Boot: select initial item once DOM is ready
-const _boot = () => (typeof window.selectItem === 'function' ? window.selectItem('Negroni') : window.wikiLoadScene('Negroni'));
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', _boot);
-} else {
-  _boot();
 }
+
+function renderArticleSections(catId, artId, art) {
+  const def = WIKI_ARTICLES[catId + '.' + artId];
+  // No formal definition — render description if available, otherwise a stub.
+  if (!def || !Array.isArray(def.sections)) {
+    const desc = tOr('wiki.art.' + catId + '.' + artId + '.description', '');
+    return desc
+      ? `<div class="wiki-section"><p>${escapeHtml(desc)}</p></div>`
+      : `<div class="wiki-empty">${escapeHtml(tOr('wiki.article.empty', 'Pronto añadiremos más contenido para este artículo.'))}</div>`;
+  }
+
+  let out = '';
+  for (const section of def.sections) {
+    switch (section.type) {
+      case 'hero-3d':
+        // already rendered above
+        break;
+      case 'text-block': {
+        const label = tOr('wiki.label.' + section.key, humanize(section.key));
+        const body  = tOr('wiki.art.' + catId + '.' + artId + '.' + section.key, '');
+        if (!body) break;
+        out += `<div class="wiki-section">
+          <h3>${escapeHtml(label)}</h3>
+          <p>${escapeHtml(body)}</p>
+        </div>`;
+        break;
+      }
+      case 'step-list': {
+        const label = tOr('wiki.label.' + section.key, humanize(section.key));
+        out += `<div class="wiki-section">
+          <h3>${escapeHtml(label)}</h3>
+          <div class="wiki-steps">${renderSteps(catId, artId, section.key)}</div>
+        </div>`;
+        break;
+      }
+      case 'tips': {
+        const body = tOr('wiki.art.' + catId + '.' + artId + '.' + section.key, '');
+        if (!body) break;
+        out += `<div class="wiki-section tip">
+          <h3>💡 ${escapeHtml(tOr('wiki.tips', 'Consejos'))}</h3>
+          <p>${escapeHtml(body)}</p>
+        </div>`;
+        break;
+      }
+      case 'common-errors': {
+        const body = tOr('wiki.art.' + catId + '.' + artId + '.' + section.key, '');
+        if (!body) break;
+        out += `<div class="wiki-section errors">
+          <h3>⚠️ ${escapeHtml(tOr('wiki.common_errors', 'Errores comunes'))}</h3>
+          <p>${escapeHtml(body)}</p>
+        </div>`;
+        break;
+      }
+      case 'history': {
+        const body = tOr('wiki.art.' + catId + '.' + artId + '.history', '');
+        if (!body) break;
+        out += `<div class="wiki-section">
+          <h3>${escapeHtml(tOr('wiki.history', 'Historia'))}</h3>
+          <p>${escapeHtml(body)}</p>
+        </div>`;
+        break;
+      }
+      case 'timeline':
+        out += renderTimeline();
+        break;
+      case 'glossary-list':
+        out += renderGlossary(artId);
+        break;
+      default:
+        // Fallback: try to render as text-block using section.key if available
+        if (section.key) {
+          const body = tOr('wiki.art.' + catId + '.' + artId + '.' + section.key, '');
+          if (body) {
+            out += `<div class="wiki-section"><p>${escapeHtml(body)}</p></div>`;
+          }
+        }
+    }
+  }
+  if (!out) {
+    const desc = tOr('wiki.art.' + catId + '.' + artId + '.description', '');
+    out = desc
+      ? `<div class="wiki-section"><p>${escapeHtml(desc)}</p></div>`
+      : `<div class="wiki-empty">${escapeHtml(tOr('wiki.article.empty', 'Pronto añadiremos más contenido para este artículo.'))}</div>`;
+  }
+  return out;
+}
+
+function renderSteps(catId, artId, key = 'steps') {
+  const raw = tOr('wiki.art.' + catId + '.' + artId + '.' + key, '');
+  if (!raw) return '';
+  // Split on |, •, or newlines — allows translators to use any of these.
+  const parts = raw.split(/\s*(?:\||•|\n)\s*/).filter(Boolean);
+  return parts.map((step, i) => `
+    <div class="wiki-step">
+      <div class="wiki-step-num">${i + 1}</div>
+      <p>${escapeHtml(step)}</p>
+    </div>
+  `).join('');
+}
+
+function renderTimeline() {
+  if (!TIMELINE_DATA || !TIMELINE_DATA.length) return '';
+  const rows = TIMELINE_DATA.map(item => `
+    <div class="wiki-step">
+      <div class="wiki-step-num">${escapeHtml(String(item.year).slice(0, 4) || '·')}</div>
+      <p>${escapeHtml(tOr('wiki.timeline.' + item.key, ''))}</p>
+    </div>
+  `).join('');
+  return `<div class="wiki-section">
+    <h3>${escapeHtml(tOr('wiki.history', 'Historia'))}</h3>
+    <div class="wiki-steps">${rows}</div>
+  </div>`;
+}
+
+function renderGlossary(artId) {
+  const terms = (GLOSSARY_DATA && GLOSSARY_DATA[artId]) || [];
+  if (!terms.length) return '';
+  const rows = terms.map(term => `
+    <div class="wiki-section">
+      <h3>${escapeHtml(tOr('wiki.gloss.' + term, term))}</h3>
+      <p>${escapeHtml(tOr('wiki.gloss.' + term + '.def', ''))}</p>
+    </div>
+  `).join('');
+  return rows;
+}
+
+// ─── Search ───────────────────────────────────────────────────────
+function onSearchInput() {
+  const q = $search.value.trim().toLowerCase();
+  if (!q) {
+    // Empty → go back to whichever view we were on before searching
+    if (state.view === 'search') renderHub();
+    return;
+  }
+  disposeScene();
+  setView('search');
+  $title.textContent = tOr('wiki.search.title', 'Resultados de búsqueda');
+
+  const hits = [];
+  WIKI_CATEGORIES.forEach(cat => {
+    cat.articles.forEach(art => {
+      const name = tOr('wiki.art.' + cat.id + '.' + art.id, art.id);
+      const catName = tOr('wiki.cat.' + cat.id, cat.id);
+      if (name.toLowerCase().includes(q) || art.id.toLowerCase().includes(q) || catName.toLowerCase().includes(q)) {
+        hits.push({ catId: cat.id, artId: art.id, art, catName, name });
+      }
+    });
+  });
+
+  if (!hits.length) {
+    $body.innerHTML = `<div class="wiki-empty">${escapeHtml(tOr('wiki.search.empty', 'Sin resultados. Prueba otra búsqueda.'))}</div>`;
+    return;
+  }
+  $body.innerHTML = `
+    <div class="wiki-search-results">
+      ${hits.map(h => `
+        <button class="wiki-art-item" data-cat="${h.catId}" data-art="${h.artId}">
+          <span class="icon">${h.art.icon || '📄'}</span>
+          <span class="name">
+            <div>${escapeHtml(h.name)}</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">${escapeHtml(h.catName)}</div>
+          </span>
+          ${h.art.has3d ? '<span class="tag-3d">3D</span>' : ''}
+          <span class="arrow">→</span>
+        </button>
+      `).join('')}
+    </div>
+  `;
+  $body.querySelectorAll('.wiki-art-item').forEach(el => {
+    el.addEventListener('click', () => openArticle(el.dataset.cat, el.dataset.art));
+  });
+}
+
+function humanize(key) {
+  return String(key || '').replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function escapeHtml(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+// Boot
+renderHub();
 </script>
 </body>
 </html>
