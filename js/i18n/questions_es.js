@@ -419,21 +419,21 @@ export const rounds = [
   },
   {
     id: 23,
-    title: "Responsible Service & Bar Management",
-    subtitle: "Ethics, Law & Business",
+    title: "Servicio responsable y gestión del bar",
+    subtitle: "Ética, legalidad y negocio",
     icon: "⚖️",
     color: "#37474f",
     questions: [
-      { q: "What is a consequence of over-serving alcohol?", a: ["Legal liability for the bartender", "Only a verbal warning", "Increased tips", "No consequences exist"], exp: "Over-serving alcohol can result in legal liability for the bartender and the establishment, including fines and criminal charges." },
-      { q: "What is a key aspect of responsible alcohol service?", a: ["Limiting alcohol servings to intoxicated guests", "Serving as much as guests request", "Only checking ID at the door", "Offering free drinks to regulars"], exp: "Responsible service includes limiting or refusing alcohol to intoxicated guests to ensure their safety and legal compliance." },
-      { q: "What is alcohol's initial effect on inhibitions?", a: ["Suppresses control", "Enhances control", "Has no effect", "Improves judgment"], exp: "Alcohol initially suppresses the brain's control centers, lowering inhibitions and impairing judgment." },
-      { q: "At what BAC level is it illegal to drive in most jurisdictions?", a: [".08%", ".05%", ".10%", ".15%"], exp: "In most US jurisdictions, a blood alcohol concentration (BAC) of .08% is the legal limit for driving." },
-      { q: "What is true about alcohol (ethanol)?", a: ["Ethanol can lead to dependency", "Ethanol is not addictive", "Ethanol improves long-term health", "Ethanol has no calories"], exp: "Ethanol is an addictive substance that can lead to physical and psychological dependency with prolonged excessive use." },
-      { q: "What are the three main stakeholders in a bar business?", a: ["The Guests, The Business, Fellow Employees", "Owners, Suppliers, Government", "Bartenders, Managers, Investors", "Customers, Banks, Competitors"], exp: "The three main stakeholders are the Guests (who must be satisfied), the Business (which must be profitable), and Fellow Employees (who must work as a team)." },
-      { q: "What percentage of dissatisfied guests actually complain?", a: ["4%", "25%", "50%", "75%"], exp: "Only about 4% of dissatisfied guests actually complain — the rest simply leave and don't return, making complaint resolution crucial." },
-      { q: "What is gross profit?", a: ["Amount of sales minus variable costs", "Total revenue before any deductions", "Net income after all expenses", "Total tips collected"], exp: "Gross profit is calculated as the amount of sales minus variable costs (cost of goods sold)." },
-      { q: "Why are standard drink sizes important?", a: ["To prevent over-pouring and control costs", "Only for legal compliance", "To speed up service", "For aesthetic presentation only"], exp: "Standard drink sizes are important to prevent over-pouring, control costs, maintain consistency, and ensure responsible service." },
-      { q: "What does the IBA 'Unforgettables' category include?", a: ["Classic drinks that stood the test of time", "Only drinks invented after 2000", "Experimental molecular cocktails", "Non-alcoholic beverages only"], exp: "The IBA 'Unforgettables' category includes classic cocktails that have stood the test of time and remain beloved worldwide." }
+      { q: "¿Qué consecuencia tiene servir alcohol en exceso?", a: ["Responsabilidad legal para el bartender", "Sólo un aviso verbal", "Más propinas", "No tiene ninguna consecuencia"], exp: "Servir alcohol en exceso puede acarrear responsabilidad legal para el bartender y el establecimiento, con multas e incluso cargos penales." },
+      { q: "¿Cuál es una parte clave del servicio responsable de alcohol?", a: ["Limitar las consumiciones a clientes ebrios", "Servir todo lo que pida el cliente", "Comprobar el DNI sólo en la puerta", "Invitar a los clientes habituales"], exp: "El servicio responsable implica limitar o negar alcohol a los clientes ebrios para proteger su seguridad y cumplir la ley." },
+      { q: "¿Qué efecto inicial tiene el alcohol sobre las inhibiciones?", a: ["Reduce el autocontrol", "Refuerza el autocontrol", "No tiene efecto", "Mejora el juicio"], exp: "El alcohol reduce de entrada los centros de control del cerebro, bajando las inhibiciones y alterando el juicio." },
+      { q: "¿En qué tasa de alcoholemia es ilegal conducir en la mayoría de jurisdicciones?", a: ["0,08%", "0,05%", "0,10%", "0,15%"], exp: "En la mayoría de estados de EE. UU., la tasa de alcohol en sangre (BAC) límite legal para conducir es 0,08%." },
+      { q: "¿Qué es cierto sobre el alcohol (etanol)?", a: ["El etanol puede generar dependencia", "El etanol no es adictivo", "El etanol mejora la salud a largo plazo", "El etanol no tiene calorías"], exp: "El etanol es una sustancia adictiva que puede generar dependencia física y psicológica con un consumo excesivo y prolongado." },
+      { q: "¿Cuáles son las tres partes clave del negocio de un bar?", a: ["Los clientes, el negocio y los compañeros", "Dueños, proveedores y administración", "Bartenders, gerentes e inversores", "Clientes, bancos y competencia"], exp: "Las tres partes principales son los clientes (que deben quedar satisfechos), el negocio (que debe ser rentable) y los compañeros (que deben trabajar en equipo)." },
+      { q: "¿Qué porcentaje de clientes insatisfechos se queja de verdad?", a: ["4%", "25%", "50%", "75%"], exp: "Sólo alrededor del 4% de los clientes insatisfechos se queja; el resto simplemente no vuelve, así que gestionar bien las quejas es clave." },
+      { q: "¿Qué es el beneficio bruto?", a: ["Ventas menos costes variables", "Ingresos totales antes de cualquier deducción", "Beneficio neto tras todos los gastos", "Total de propinas cobradas"], exp: "El beneficio bruto se calcula como las ventas menos los costes variables (coste de la mercancía vendida)." },
+      { q: "¿Por qué son importantes las medidas estándar de servicio?", a: ["Evitan servir de más y controlan costes", "Sólo por cumplimiento legal", "Para acelerar el servicio", "Sólo para la presentación"], exp: "Las medidas estándar de servicio evitan servir de más, controlan costes, mantienen la consistencia y garantizan un servicio responsable." },
+      { q: "¿Qué incluye la categoría 'Unforgettables' de la IBA?", a: ["Clásicos que han superado la prueba del tiempo", "Sólo cócteles creados después del 2000", "Cócteles moleculares experimentales", "Sólo bebidas sin alcohol"], exp: "La categoría 'Unforgettables' de la IBA recoge cócteles clásicos que han superado la prueba del tiempo y siguen siendo referentes en todo el mundo." }
     ]
   },
   {
