@@ -691,7 +691,7 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
         )}
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 8 }}>
-          <button className="btn" onClick={onExit}>
+          <button className="btn" onClick={onFinish}>
             <Icon name="home" size={16} /> {(window.stUiT ? window.stUiT('results.home', 'Home') : 'Home')}
           </button>
           <button className="btn primary" onClick={onFinish}>

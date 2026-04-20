@@ -359,7 +359,8 @@ const App = () => {
   const lessonStartAtRef = useRef(0);
   const pickLesson   = (l) => { if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); } };
   const exitLesson   = ()  => { lessonStartAtRef.current = 0; setActiveLesson(null); };
-  const finishLesson = ({ xp, correct, total }) => {
+  const finishLesson = ({ xp, correct, wrong }) => {
+    const total = (correct || 0) + (wrong || 0);
     // Write XP to the canonical stLearn store (cq_learn_data) so Profile and
     // the Firestore leaderboard read the same number. Then re-sync the React
     // profile state from stLearn so the UI matches.
@@ -402,9 +403,35 @@ const App = () => {
       } catch {}
     }
 
-    // Trigger achievement checks with updated stats
+    // Trigger achievement checks with updated stats. We pass CUMULATIVE
+    // values (totalGames, lessonsCompleted, xp from stLearn) so
+    // achievements like lessons_5, streak_3, xp_500 can actually unlock —
+    // the previous call passed only per-session values which would never
+    // cross the threshold.
     if (window.stAchievements && window.stAchievements.checkAchievements && typeof correct === 'number') {
-      try { window.stAchievements.checkAchievements({ correct, total, xp }); } catch {}
+      try {
+        const prev = (window.stAchievements.getStats && window.stAchievements.getStats()) || {};
+        const learn = (window.stLearn && window.stLearn.getLearnStats) ? window.stLearn.getLearnStats() : { xp: 0, streak: 0 };
+        const perfect = (wrong === 0) && (correct > 0);
+        const patch = {
+          totalGames: (prev.totalGames || 0) + 1,
+          lessonsCompleted: (prev.lessonsCompleted || 0) + 1,
+          xp: learn.xp || 0,
+          streak: learn.streak || 0,
+        };
+        if (perfect) patch.perfectLesson = true;
+        // Specific round counters so `all_rounds` can unlock when 10 different
+        // rounds have been played. Tracked per roundId to avoid double-counts.
+        const activeId = activeLesson?.id || '';
+        const roundMatch = activeId.match(/^round-(\d+)$/);
+        if (roundMatch) {
+          const roundsSet = new Set(prev.roundsPlayedIds || []);
+          roundsSet.add(roundMatch[1]);
+          patch.roundsPlayedIds = Array.from(roundsSet);
+          patch.roundsPlayed = roundsSet.size;
+        }
+        window.stAchievements.checkAchievements(patch);
+      } catch (e) { console.warn('achievements check failed:', e); }
     }
     // Update leaderboard score if logged in
     if (window.stLeaderboard && window.stLeaderboard.saveScore && typeof xp === 'number') {
