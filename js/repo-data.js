@@ -1882,21 +1882,21 @@ const rounds = [
   },
   {
     id: 14,
-    title: "Bar Tools & Operations",
-    subtitle: "Equipment, Hygiene & Bar Types",
+    title: "Utensilios y operaciones de bar",
+    subtitle: "Equipamiento, higiene y tipos de barra",
     icon: "🍶",
     color: "#2ecc71",
     questions: [
-      { q: "What does 'mise en place' mean?", a: ["Everything in its place", "Ready to serve", "Clean and organized", "Preparation time"], exp: "'Mise en place' is a French term meaning 'everything in its place,' referring to the setup and organization of tools and ingredients before service." },
-      { q: "What is the difference between a garnish and a decoration?", a: ["A garnish enhances flavor; a decoration enhances appearance", "They are the same thing", "A garnish is edible; a decoration is not", "A decoration is always fruit-based"], exp: "A garnish serves a functional purpose by enhancing the flavor of the drink, while a decoration is purely aesthetic." },
-      { q: "How should hands be washed in a bar environment?", a: ["With hot water and soap", "With cold water only", "With sanitizer only", "With a dry towel"], exp: "Proper hand hygiene requires washing with hot water and soap to eliminate bacteria and maintain food safety standards." },
-      { q: "How should chemicals be stored in a bar?", a: ["Kept separate from other liquids", "Next to the spirits for easy access", "Under the bar counter", "In the same storage as mixers"], exp: "Chemicals must be kept separate from other liquids to prevent contamination and ensure safety." },
-      { q: "What is a Hawthorne strainer used for?", a: ["Straining solids from cocktails", "Measuring liquid portions", "Crushing ice", "Opening bottles"], exp: "The Hawthorne strainer, with its distinctive spring coil, is used to strain solids like ice and fruit from cocktails when pouring." },
-      { q: "What tool is used for measuring liquids in cocktail making?", a: ["Jigger", "Muddler", "Bar spoon", "Strainer"], exp: "A jigger is the standard measuring tool used by bartenders to ensure accurate and consistent liquid measurements." },
-      { q: "What does a cocktail shaker do?", a: ["Cools cocktails that contain juices and spirits", "Only mixes ingredients together", "Carbonates the drink", "Filters out impurities"], exp: "A cocktail shaker cools and mixes cocktails, especially those containing juices and spirits, through vigorous shaking with ice." },
-      { q: "What is the purpose of a muddler?", a: ["To crush sugar and fruits", "To stir cocktails", "To measure ingredients", "To strain drinks"], exp: "A muddler is used to crush or muddle sugar, fruits, and herbs to release their flavors and juices into a cocktail." },
-      { q: "What is a characteristic of a wine bar?", a: ["Focuses solely on wine and wine-related products", "Serves all types of spirits equally", "Is always located in a hotel", "Must have a sommelier on staff"], exp: "A wine bar is characterized by its sole focus on wine and wine-related products, offering extensive wine selections." },
-      { q: "How does a dispense bar serve drinks?", a: ["Through a third person (waiter/waitress)", "Directly to guests at the counter", "Through a vending machine", "Via a mobile app ordering system"], exp: "A dispense bar serves drinks through a third person such as a waiter or waitress, rather than directly to guests at the bar." }
+      { q: "¿Qué significa 'mise en place'?", a: ["Cada cosa en su sitio", "Listo para servir", "Limpio y ordenado", "Tiempo de preparación"], exp: "'Mise en place' es un término francés que significa 'cada cosa en su sitio' y hace referencia a tener preparados y organizados los utensilios e ingredientes antes del servicio." },
+      { q: "¿Cuál es la diferencia entre un garnish y una decoración?", a: ["El garnish aporta sabor; la decoración aporta apariencia", "Son lo mismo", "El garnish es comestible y la decoración no", "La decoración siempre es a base de fruta"], exp: "El garnish cumple una función al realzar el sabor de la bebida, mientras que la decoración es puramente estética." },
+      { q: "¿Cómo deben lavarse las manos en un bar?", a: ["Con agua caliente y jabón", "Sólo con agua fría", "Sólo con gel hidroalcohólico", "Con un paño seco"], exp: "La higiene correcta de manos exige lavado con agua caliente y jabón para eliminar bacterias y cumplir los estándares de seguridad alimentaria." },
+      { q: "¿Cómo deben almacenarse los productos químicos en un bar?", a: ["Separados de cualquier otro líquido", "Junto a los destilados para tenerlos a mano", "Bajo la barra", "En el mismo almacén que los refrescos"], exp: "Los productos químicos deben guardarse separados del resto de líquidos para evitar contaminación y garantizar la seguridad." },
+      { q: "¿Para qué sirve un colador Hawthorne?", a: ["Colar sólidos de los cócteles", "Medir porciones de líquido", "Picar hielo", "Abrir botellas"], exp: "El colador Hawthorne, con su característico muelle, sirve para colar sólidos como hielo o fruta al servir un cóctel." },
+      { q: "¿Qué utensilio se usa para medir líquidos en coctelería?", a: ["Jigger", "Muddler", "Cucharilla de bar", "Colador"], exp: "El jigger es el utensilio estándar con el que el bartender mide líquidos de forma precisa y consistente." },
+      { q: "¿Qué hace una coctelera?", a: ["Enfría cócteles que contienen zumos y destilados", "Sólo mezcla los ingredientes", "Gasifica la bebida", "Filtra las impurezas"], exp: "La coctelera enfría y mezcla cócteles, sobre todo los que contienen zumos y destilados, mediante una agitación enérgica con hielo." },
+      { q: "¿Cuál es el uso del muddler?", a: ["Machacar azúcar y frutas", "Remover cócteles", "Medir ingredientes", "Colar bebidas"], exp: "El muddler se usa para machacar azúcar, frutas y hierbas y liberar sus sabores y jugos en el cóctel." },
+      { q: "¿Cuál es la característica de un wine bar?", a: ["Se centra exclusivamente en vino y productos relacionados", "Sirve todo tipo de destilados por igual", "Siempre está en un hotel", "Debe tener un sommelier en plantilla"], exp: "Un wine bar se caracteriza por centrarse exclusivamente en el vino y los productos relacionados, con una amplia carta de vinos." },
+      { q: "¿Cómo sirve las bebidas un dispense bar?", a: ["A través de un camarero o camarera", "Directamente al cliente en la barra", "Mediante una máquina expendedora", "A través de un pedido por app"], exp: "Un dispense bar sirve las bebidas a través de un tercero (camarero o camarera) en vez de directamente al cliente en la barra." }
     ]
   },
   {
