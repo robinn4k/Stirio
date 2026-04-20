@@ -10,6 +10,12 @@ html {
   font-size: 16px;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  /* Clamp horizontal scroll at the root so edge-bleed layouts (Home 60s
+     carousel uses `margin: 0 -20px`, etc.) can't rubber-band the page on
+     iOS Safari. overscroll-behavior stops touch gestures from chaining. */
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  max-width: 100vw;
 }
 /* Text size scales the whole app via CSS zoom — works because most of the
    inline styles use absolute px values. zoom is supported in modern Safari/
@@ -36,6 +42,8 @@ body {
   font-family: var(--f-ui);
   font-feature-settings: "ss01", "cv11";
   overflow-x: hidden;
+  overscroll-behavior-x: none;
+  max-width: 100vw;
 }
 
 /* grain overlay */
@@ -66,7 +74,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* ── App root ── */
-#root { width: 100%; min-height: 100dvh; position: relative; z-index: 2; }
+#root { width: 100%; min-height: 100dvh; position: relative; z-index: 2; overflow-x: clip; }
 
 /* ── Range inputs ── */
 input[type=range] {
@@ -159,7 +167,13 @@ input[type=range]::-moz-range-thumb {
 
 /* ── Horizontal lesson carousel (Home → 60s queue) ── */
 .lesson-carousel::-webkit-scrollbar { display: none; }
-.lesson-carousel { scrollbar-width: none; }
+.lesson-carousel {
+  scrollbar-width: none;
+  /* Keep horizontal swipes inside the carousel — don't let iOS chain them to
+     the page. Combined with html/body overflow-x:hidden this stops the whole
+     Home from dragging sideways when you flick a card. */
+  overscroll-behavior-x: contain;
+}
 
 /* ── Bottom nav ── */
 .nav-btn { color: var(--ink-3); transition: color .15s, transform .1s; }
