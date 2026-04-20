@@ -22,7 +22,19 @@ async function syncLearnToCloud(data) {
   try {
     const db = getDb();
     const { doc, setDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
-    await setDoc(doc(db, 'users', user.uid), { learnData: data }, { merge: true });
+    // Also refresh ranking fields on every XP / streak change so the global
+    // leaderboard updates immediately without waiting for `saveScore`.
+    const xp = data.xp || 0;
+    const streak = data.streak || 0;
+    const lvl = getLevelInfo(xp);
+    await setDoc(doc(db, 'users', user.uid), {
+      learnData: data,
+      level: lvl.level,
+      xpTotal: xp,
+      streakDays: streak,
+      name: user.name,
+      lastSeen: Date.now(),
+    }, { merge: true });
   } catch (e) { console.warn('learn cloud sync failed:', e); }
 }
 

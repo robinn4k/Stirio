@@ -109,6 +109,33 @@ function subscribeAuthChange(cb) {
   return () => window.removeEventListener('stirio:authchange', handler);
 }
 
+/**
+ * Ensure the user's `users/{uid}` doc has ranking fields so they appear in
+ * the global leaderboard immediately after sign-up — even before they
+ * complete any scored round. Fills in `level`/`xpTotal`/`streakDays` only
+ * when they don't already exist (merge preserves any prior progress).
+ */
+async function seedUserDoc(user) {
+  if (!db || !user || user.isGuest) return;
+  try {
+    const { doc, getDoc, setDoc } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
+    const ref = doc(db, 'users', user.uid);
+    const snap = await getDoc(ref);
+    const existing = snap.exists() ? snap.data() : {};
+    const seed = {
+      name: user.name,
+      lastSeen: Date.now(),
+    };
+    // Only seed ranking fields if they don't exist — don't overwrite progress.
+    if (typeof existing.level !== 'number') seed.level = 1;
+    if (typeof existing.xpTotal !== 'number') seed.xpTotal = 0;
+    if (typeof existing.streakDays !== 'number') seed.streakDays = 0;
+    await setDoc(ref, seed, { merge: true });
+  } catch (e) {
+    console.warn('seedUserDoc failed:', e);
+  }
+}
+
 // ─── Login con Google ────────────────────────────────────────
 async function signInWithGoogle() {
   if (!auth) throw new Error('Firebase no configurado. Configura firebase-config.js primero.');
@@ -127,6 +154,7 @@ async function signInWithGoogle() {
     isGuest: false
   };
   saveUserLocal(currentUser);
+  seedUserDoc(currentUser);
   return currentUser;
 }
 
@@ -148,6 +176,7 @@ async function signUpWithEmail(email, password, displayName) {
     isGuest: false
   };
   saveUserLocal(currentUser);
+  seedUserDoc(currentUser);
   return currentUser;
 }
 
@@ -166,6 +195,7 @@ async function signInWithEmail(email, password) {
     isGuest: false
   };
   saveUserLocal(currentUser);
+  seedUserDoc(currentUser);
   return currentUser;
 }
 
@@ -313,7 +343,19 @@ async function uploadProfilePhoto(file) {
 // ─── Borrar datos del usuario ────────────────────────────────
 async function deleteUserData() {
   if (!db || !currentUser) return;
-  const uid = currentUser.uid;
+  // Cross-check the authoritative Firebase uid against the local
+  // `currentUser.uid`. If they disagree, an account swap is in flight and
+  // we could delete the wrong user's data — bail out and let the caller
+  // retry once the auth state has settled.
+  const authUid = auth?.currentUser?.uid || null;
+  const localUid = currentUser.uid;
+  if (!authUid || !localUid || authUid !== localUid) {
+    console.warn('deleteUserData: auth uid mismatch — aborting', { authUid, localUid });
+    const err = new Error('auth-state-unstable');
+    err.code = 'auth-state-unstable';
+    throw err;
+  }
+  const uid = authUid;
   const { doc, deleteDoc, collection, query, where, getDocs } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
 
   // Delete user document

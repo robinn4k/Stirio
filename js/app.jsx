@@ -199,12 +199,19 @@ const App = () => {
           syncFromLearn();
 
           // Re-sync onboarding from Firestore so the new account's
-          // preferences (including language) are applied.
+          // preferences (including language) are applied. If the cloud doc
+          // has a complete onboarding, skip the flow — the previous
+          // `onLogout` forces screen='onboarding' and without this jump
+          // back the user gets prompted to redo onboarding even though
+          // their answers are saved in Firestore.
           try {
             const cloudOnboarding = await window.stAuth?.loadOnboarding?.();
             if (cloudOnboarding) {
               saveOnboardingLocal(cloudOnboarding);
               setProfile(p => ({ ...p, onboarding: cloudOnboarding }));
+              if (!needsOnboarding(cloudOnboarding)) {
+                setScreen('home');
+              }
               if (cloudOnboarding.language) {
                 try { window.stLang?.setLang?.(cloudOnboarding.language); } catch {}
                 window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: cloudOnboarding.language } }));
@@ -423,6 +430,12 @@ const App = () => {
       onboarding: payload,
     }));
     saveOnboardingLocal(payload);
+    // Propagate the guest's chosen alias into stAuth so Duel, leaderboard and
+    // anything else that reads `getCurrentUser().name` sees the real name
+    // instead of the "Invitado" placeholder.
+    if (o.authMode === 'guest' && o.name) {
+      try { window.stAuth?.updateGuestName?.(o.name); } catch {}
+    }
     if (payload.language) {
       try { window.stLang?.setLang(payload.language); } catch {}
       window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: payload.language } }));

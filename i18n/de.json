@@ -1836,6 +1836,8 @@
   "profile.language": "Sprache",
   "profile.delete_progress": "Fortschritt löschen",
   "profile.delete_progress_confirm": "Deinen gesamten Fortschritt löschen? Dies setzt XP, Level und Statistiken zurück.",
+  "profile.delete_progress_confirm_who": "Fortschritt von {who} löschen? Dies setzt XP, Level und Statistiken zurück.",
+  "profile.reset_unstable": "Die Sitzung wechselt gerade das Konto. Warte einen Moment und versuch es erneut.",
   "profile.sign_out": "Abmelden",
   "profile.sign_out_confirm": "Abmelden? Du kehrst zum Onboarding zurück.",
   "profile.delete_account": "Konto löschen",

@@ -1836,6 +1836,8 @@
   "profile.language": "Idioma",
   "profile.delete_progress": "Apagar progresso",
   "profile.delete_progress_confirm": "Apagar todo o seu progresso? Isso redefine XP, nível e estatísticas.",
+  "profile.delete_progress_confirm_who": "Apagar o progresso de {who}? Isso redefine XP, nível e estatísticas.",
+  "profile.reset_unstable": "A sessão está trocando de conta. Aguarde alguns segundos e tente novamente.",
   "profile.sign_out": "Sair",
   "profile.sign_out_confirm": "Sair? Você voltará ao onboarding.",
   "profile.delete_account": "Apagar conta",

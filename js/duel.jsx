@@ -749,8 +749,11 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
       // Language-agnostic setup — host's chosen language is attached so all
       // players render the same text from their local question data. The
       // useTimer flag travels with the room so joiners also see the same
-      // per-question countdown behaviour.
-      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang, useTimer };
+      // per-question countdown behaviour. Guard against an empty quizLang
+      // slipping into Firebase (which would make joiners fall back to their
+      // local lang and break the shared view).
+      const lang = ['es','en','fr','pt','de'].includes(quizLang) ? quizLang : 'es';
+      const setup = { ...window.stRivals.prepareDuelSetup(r), lang, useTimer };
       const res = await window.stRivals.createFriendRoom(uid, myName, setup, opts.maxPlayers);
       setRoomId(res.roomId); setCode(res.code); setSlot('p1');
       await window.stRivals.registerPlayerDisconnect(res.roomId, 'p1');
@@ -788,7 +791,8 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     try {
       const rounds = window.TRIVIA_ROUNDS || [];
       const r = rounds[Math.floor(Math.random() * rounds.length)];
-      const setup = { ...window.stRivals.prepareDuelSetup(r), lang: quizLang, useTimer };
+      const lang = ['es','en','fr','pt','de'].includes(quizLang) ? quizLang : 'es';
+      const setup = { ...window.stRivals.prepareDuelSetup(r), lang, useTimer };
       const result = await window.stRivals.joinQueue(uid, myName, setup);
       setMaxPlayers(2);
       if (!result.waiting) {

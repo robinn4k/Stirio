@@ -135,9 +135,18 @@ export function prepareDuelSetup(roundData) {
  * Reconstruct localized question objects from a language-agnostic room setup.
  * Each player calls this independently using their own language setting.
  * Handles Firebase serialization: arrays stored as {0:…,1:…} objects.
+ *
+ * Multiplayer rooms should always carry `setup.lang` (host's choice) so all
+ * players render identical text. The local `getLang()` fallback is a last
+ * resort for legacy rooms and bot mode.
  */
+const SUPPORTED_DUEL_LANGS = ['es', 'en', 'fr', 'pt', 'de'];
 export function loadDuelQuestionsFromSetup(setup, lang) {
-  const l = lang || getLang();
+  const effective = (typeof lang === 'string' && SUPPORTED_DUEL_LANGS.includes(lang)) ? lang : null;
+  if (!effective) {
+    console.warn('[duel] setup.lang missing or invalid — falling back to local lang', { got: lang });
+  }
+  const l = effective || getLang();
   const rounds = getLocalizedRounds(l);
   const round = rounds.find(r => r.id === setup.roundId);
   if (!round) return [];
