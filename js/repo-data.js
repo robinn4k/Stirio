@@ -1958,21 +1958,21 @@ const rounds = [
   },
   {
     id: 18,
-    title: "Wine Fundamentals",
-    subtitle: "Grapes, Regions & Winemaking",
+    title: "Fundamentos del vino",
+    subtitle: "Uvas, regiones y elaboración",
     icon: "🍷",
     color: "#8e24aa",
     questions: [
-      { q: "What grape variety family is primarily used for white wine?", a: ["Vitis vinifera", "Vitis labrusca", "Vitis rotundifolia", "Vitis riparia"], exp: "Vitis vinifera is the primary grape species used for producing quality white (and red) wines worldwide." },
-      { q: "Which grape is known for high acidity?", a: ["Sauvignon Blanc", "Muscat", "Gewürztraminer", "Viognier"], exp: "Sauvignon Blanc is known for its high acidity, producing crisp, refreshing wines with citrus and herbaceous notes." },
-      { q: "What does 'vintage' mean in wine terminology?", a: ["The year grapes are harvested", "The age of the winery", "The quality rating of the wine", "The region where wine is made"], exp: "In wine terminology, 'vintage' refers to the year in which the grapes were harvested, indicating the growing conditions of that year." },
-      { q: "Which of these is a red wine grape?", a: ["Merlot", "Chardonnay", "Riesling", "Sauvignon Blanc"], exp: "Merlot is one of the world's most popular red wine grapes, known for its soft, plummy character." },
-      { q: "What is the purpose of canopy management in viticulture?", a: ["To regulate sunlight exposure", "To prevent rainfall", "To increase grape size", "To reduce harvest time"], exp: "Canopy management regulates sunlight exposure to the grapes, affecting ripeness, flavor development, and disease prevention." },
-      { q: "What does 'Blanc de Blancs' mean?", a: ["Made from white grapes", "White wine from red grapes", "Blended white wine", "First pressing only"], exp: "Blanc de Blancs means 'white from whites,' indicating a wine (often Champagne) made exclusively from white grapes, typically Chardonnay." },
-      { q: "What grapes are used in Blanc de Noirs?", a: ["Pinot Noir and Pinot Meunier", "Chardonnay and Riesling", "Sauvignon Blanc and Sémillon", "Muscat and Viognier"], exp: "Blanc de Noirs ('white from blacks') is made from dark-skinned grapes, primarily Pinot Noir and Pinot Meunier in Champagne." },
-      { q: "What does AOC stand for?", a: ["Appellation d'Origine Contrôlée", "Association of Oenological Control", "Appellation of Original Character", "Alliance of Organic Cellars"], exp: "AOC stands for Appellation d'Origine Contrôlée, the French system of quality and origin control for wines and other products." },
-      { q: "Which French region is famous for sparkling wine?", a: ["Champagne", "Bordeaux", "Burgundy", "Loire Valley"], exp: "Champagne is the most famous French region for sparkling wine. Only sparkling wine from this region can legally be called Champagne." },
-      { q: "What is the primary grape of Rioja?", a: ["Tempranillo", "Garnacha", "Graciano", "Mazuelo"], exp: "Tempranillo is the primary grape variety of Rioja, Spain's most prestigious wine region." }
+      { q: "¿Qué familia de variedades de uva se usa principalmente para vino blanco?", a: ["Vitis vinifera", "Vitis labrusca", "Vitis rotundifolia", "Vitis riparia"], exp: "Vitis vinifera es la especie de uva principal con la que se elaboran los vinos blancos (y tintos) de calidad en todo el mundo." },
+      { q: "¿Qué uva destaca por su alta acidez?", a: ["Sauvignon Blanc", "Moscatel", "Gewürztraminer", "Viognier"], exp: "La Sauvignon Blanc destaca por su alta acidez y da vinos frescos y vivos con notas cítricas y herbáceas." },
+      { q: "¿Qué significa 'vintage' en el vocabulario del vino?", a: ["El año de la vendimia", "La antigüedad de la bodega", "La calificación de calidad del vino", "La región de origen"], exp: "En el vocabulario del vino, 'vintage' (añada) se refiere al año en que se vendimió la uva, indicando las condiciones del ciclo vegetativo de ese año." },
+      { q: "¿Cuál de estas es una uva tinta?", a: ["Merlot", "Chardonnay", "Riesling", "Sauvignon Blanc"], exp: "La Merlot es una de las uvas tintas más populares del mundo, conocida por su carácter suave y afrutado (ciruela)." },
+      { q: "¿Para qué sirve la gestión del viñedo (canopy management)?", a: ["Regular la exposición al sol", "Evitar las lluvias", "Aumentar el tamaño de la uva", "Reducir el tiempo de vendimia"], exp: "La gestión del viñedo regula la exposición solar de las uvas e influye en la maduración, el desarrollo de aromas y la prevención de enfermedades." },
+      { q: "¿Qué significa 'Blanc de Blancs'?", a: ["Elaborado sólo con uvas blancas", "Vino blanco hecho con uvas tintas", "Vino blanco de mezcla", "Sólo del primer prensado"], exp: "Blanc de Blancs significa 'blanco de blancas' e indica un vino (normalmente Champagne) elaborado únicamente con uvas blancas, típicamente Chardonnay." },
+      { q: "¿Qué uvas se usan en un Blanc de Noirs?", a: ["Pinot Noir y Pinot Meunier", "Chardonnay y Riesling", "Sauvignon Blanc y Sémillon", "Moscatel y Viognier"], exp: "Blanc de Noirs ('blanco de tintas') se elabora con uvas de piel oscura, principalmente Pinot Noir y Pinot Meunier en Champagne." },
+      { q: "¿Qué significan las siglas AOC?", a: ["Appellation d'Origine Contrôlée", "Association of Oenological Control", "Appellation of Original Character", "Alliance of Organic Cellars"], exp: "AOC corresponde a Appellation d'Origine Contrôlée, el sistema francés de control de calidad y origen para vinos y otros productos." },
+      { q: "¿Qué región francesa es famosa por el vino espumoso?", a: ["Champagne", "Burdeos", "Borgoña", "Valle del Loira"], exp: "Champagne es la región francesa más famosa por el vino espumoso; sólo los espumosos elaborados allí pueden llamarse legalmente Champagne." },
+      { q: "¿Cuál es la uva principal del Rioja?", a: ["Tempranillo", "Garnacha", "Graciano", "Mazuelo"], exp: "La Tempranillo es la uva principal del Rioja, la región vinícola más prestigiosa de España." }
     ]
   },
   {
