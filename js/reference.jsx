@@ -507,7 +507,11 @@ const MetaPill = ({ label, value }) => (
 
 const FreeQuizScreen = ({ onBack, onStartRound }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
-  const rounds = window.TRIVIA_ROUNDS || [];
+  const lang = window.stLang?.getLang?.() || 'es';
+  const rounds = React.useMemo(
+    () => window.stQuestions?.getLocalizedRounds?.(lang) || window.TRIVIA_ROUNDS || [],
+    [lang]
+  );
   return (
     <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>

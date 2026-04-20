@@ -453,6 +453,10 @@ const _tp = (k, params, fallback) => {
   return fallback;
 };
 
+// Rondas localizadas al idioma activo (fallback a TRIVIA_ROUNDS ES si stQuestions no está cargado)
+const _localizedRounds = () =>
+  window.stQuestions?.getLocalizedRounds?.(window.stLang?.getLang?.() || 'es') || TRIVIA_ROUNDS;
+
 // Construye una "lección" a partir de una ronda del repo
 const buildLessonFromRound = (round) => ({
   id: 'round-' + round.id,
@@ -470,7 +474,7 @@ const buildLessonFromRound = (round) => ({
       kind: 'intro',
       title: round.title,
       body: round.subtitle,
-      fact: _tp('round.intro_fact', { count: round.questions.length, total: TRIVIA_ROUNDS.length }, `${round.questions.length} preguntas seleccionadas de ${TRIVIA_ROUNDS.length} rondas de trivia oficial.`),
+      fact: _tp('round.intro_fact', { count: round.questions.length, total: _localizedRounds().length }, `${round.questions.length} preguntas seleccionadas de ${_localizedRounds().length} rondas de trivia oficial.`),
     },
     ...round.questions.map(normalizeQ),
   ],
@@ -535,7 +539,7 @@ const DAILY_LESSON = () => {
 
 // Velocidad 60s: preguntas aleatorias infinitas
 const SPEED_LESSON = () => {
-  const allQ = TRIVIA_ROUNDS.flatMap(r => r.questions);
+  const allQ = _localizedRounds().flatMap(r => r.questions);
   const shuffled = allQ.sort(() => Math.random() - 0.5).slice(0, 30);
   return {
     id: 'speed-' + Date.now(),
@@ -622,7 +626,7 @@ const buildAcademyLesson = (level, lessonIdx) => {
 
 // Construye un "practice" desde una ronda de TRIVIA_ROUNDS referenciada por la sequence.
 const buildAcademyPractice = (level, roundId) => {
-  const round = TRIVIA_ROUNDS.find(r => r.id === roundId);
+  const round = _localizedRounds().find(r => r.id === roundId);
   if (!round) return null;
   const lesson = buildLessonFromRound(round);
   return { ...lesson, id: `academy-practice-l${level.id}-r${roundId}`, emoji: level.icon, _roundColor: level.color };
