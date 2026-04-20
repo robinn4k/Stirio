@@ -343,21 +343,21 @@ export const rounds = [
   },
   {
     id: 19,
-    title: "Fortified Wines & Vermouth",
-    subtitle: "Sherry, Madeira, Port & Vermouth",
+    title: "Vinos generosos y vermut",
+    subtitle: "Jerez, Madeira, Oporto y vermut",
     icon: "🍾",
     color: "#c0392b",
     questions: [
-      { q: "Which grape is used for sweet sherry?", a: ["Pedro Ximenez", "Palomino Fino", "Muscat", "Tempranillo"], exp: "Pedro Ximenez (PX) grapes are sun-dried to concentrate their sugars and used to produce intensely sweet sherries." },
-      { q: "What is the blending system used in sherry production?", a: ["Solera system", "Méthode champenoise", "Assemblage", "Cuvée system"], exp: "The Solera system is a fractional blending system where older wines are gradually blended with younger wines to achieve consistency." },
-      { q: "How is Fino sherry aged?", a: ["Under flor", "In new oak barrels", "In stainless steel tanks", "Through oxidative aging"], exp: "Fino sherry is aged under a layer of flor (a film of yeast) that protects the wine from oxidation, keeping it light and dry." },
-      { q: "What is the driest style of Madeira wine?", a: ["Sercial", "Malmsey", "Bual", "Verdelho"], exp: "Sercial is the driest style of Madeira wine, with high acidity and a lighter body." },
-      { q: "What is the estufado process in Madeira production?", a: ["Heating barrels to accelerate maturation", "Cold stabilization of wine", "Fortification with brandy", "Blending different vintages"], exp: "Estufado (or estufagem) is the process of heating Madeira wine in barrels to accelerate maturation, giving it its distinctive caramelized character." },
-      { q: "What are vermouths classified as?", a: ["Fortified wines", "Distilled spirits", "Liqueurs", "Aperitif bitters"], exp: "Vermouths are classified as fortified wines, made from a base wine that is aromatized with botanicals and fortified with a neutral spirit." },
-      { q: "What is the essential botanical ingredient in vermouth?", a: ["Wormwood", "Juniper", "Anise", "Gentian"], exp: "Wormwood (Artemisia absinthium) is the essential botanical in vermouth — the name 'vermouth' comes from the German word 'Wermut' meaning wormwood." },
-      { q: "Who initiated the export of vermouth in 1786?", a: ["Antonio Benedetto Carpano", "Martini & Rossi", "Noilly Prat", "Cinzano"], exp: "Antonio Benedetto Carpano is credited with creating modern vermouth in Turin in 1786 and initiating its commercial export." },
-      { q: "What is the sugar content of Rosso vermouth?", a: ["Up to 130 grams per liter", "Up to 50 grams per liter", "Up to 200 grams per liter", "Less than 30 grams per liter"], exp: "Rosso (sweet/red) vermouth can contain up to 130 grams of sugar per liter, giving it its characteristic sweetness." },
-      { q: "What is the typical alcohol strength of vermouth?", a: ["16% - 22%", "8% - 12%", "25% - 30%", "35% - 40%"], exp: "Vermouth typically has an alcohol strength between 16% and 22% ABV, higher than regular wine due to fortification." }
+      { q: "¿Qué uva se usa en el jerez dulce?", a: ["Pedro Ximénez", "Palomino Fino", "Moscatel", "Tempranillo"], exp: "La Pedro Ximénez (PX) se asolea para concentrar sus azúcares y se usa para elaborar jereces intensamente dulces." },
+      { q: "¿Qué sistema de mezcla se emplea en la producción de jerez?", a: ["Sistema de soleras", "Méthode champenoise", "Assemblage", "Sistema de cuvée"], exp: "El sistema de soleras es una mezcla fraccionada en la que los vinos más viejos se mezclan poco a poco con los más jóvenes para conseguir consistencia." },
+      { q: "¿Cómo se cría el jerez Fino?", a: ["Bajo velo de flor", "En barricas nuevas de roble", "En depósitos de acero inoxidable", "Mediante crianza oxidativa"], exp: "El jerez Fino se cría bajo velo de flor, una capa de levaduras que protege al vino de la oxidación y lo mantiene ligero y seco." },
+      { q: "¿Cuál es el estilo más seco del vino de Madeira?", a: ["Sercial", "Malmsey", "Bual", "Verdelho"], exp: "El Sercial es el estilo más seco del Madeira, con alta acidez y cuerpo más ligero." },
+      { q: "¿Qué es el proceso de estufado en la elaboración del Madeira?", a: ["Calentar las barricas para acelerar la maduración", "Estabilización en frío del vino", "Encabezado con brandy", "Mezcla de añadas distintas"], exp: "El estufado (o estufagem) consiste en calentar el vino de Madeira en barricas para acelerar la maduración y darle su carácter caramelizado característico." },
+      { q: "¿Cómo se clasifican los vermuts?", a: ["Como vinos generosos (aromatizados)", "Como destilados", "Como licores", "Como bitters aperitivos"], exp: "Los vermuts se clasifican como vinos generosos aromatizados: parten de un vino base al que se añaden botánicos y se encabeza con un destilado neutro." },
+      { q: "¿Cuál es el botánico esencial del vermut?", a: ["Ajenjo", "Enebro", "Anís", "Genciana"], exp: "El ajenjo (Artemisia absinthium) es el botánico imprescindible del vermut; de hecho, 'vermut' viene del alemán 'Wermut', que significa ajenjo." },
+      { q: "¿Quién inició la exportación del vermut en 1786?", a: ["Antonio Benedetto Carpano", "Martini & Rossi", "Noilly Prat", "Cinzano"], exp: "A Antonio Benedetto Carpano se le atribuye la creación del vermut moderno en Turín en 1786 y el inicio de su exportación comercial." },
+      { q: "¿Cuánto azúcar puede contener un vermut Rosso?", a: ["Hasta 130 gramos por litro", "Hasta 50 gramos por litro", "Hasta 200 gramos por litro", "Menos de 30 gramos por litro"], exp: "El vermut Rosso (rojo/dulce) puede contener hasta 130 gramos de azúcar por litro, lo que le da su característico dulzor." },
+      { q: "¿Cuál es la graduación alcohólica típica del vermut?", a: ["16% - 22%", "8% - 12%", "25% - 30%", "35% - 40%"], exp: "El vermut tiene habitualmente entre 16% y 22% de alcohol en volumen, más que un vino normal gracias al encabezado." }
     ]
   },
   {
