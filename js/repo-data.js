@@ -1920,21 +1920,21 @@ const rounds = [
   },
   {
     id: 16,
-    title: "Distillation & Brewing History",
-    subtitle: "Origins of Spirits & Beer",
+    title: "Historia de la destilación y la cerveza",
+    subtitle: "Orígenes de los destilados y la cerveza",
     icon: "⚗️",
     color: "#795548",
     questions: [
-      { q: "Where did the earliest distillation take place?", a: ["In China", "In Egypt", "In Greece", "In Mesopotamia"], exp: "The earliest evidence of distillation dates back to ancient China, where the technique was first developed." },
-      { q: "What is distillation?", a: ["Separating liquid by evaporation and condensation", "Fermenting grains with yeast", "Filtering impurities from water", "Mixing different spirits together"], exp: "Distillation is the process of separating components of a liquid mixture by selective evaporation and condensation." },
-      { q: "Who is credited with inventing the alembic?", a: ["Maria the Jewess", "Jabir ibn Hayyan", "Aristotle", "Hippocrates"], exp: "Maria the Jewess (Maria Hebraea) is credited with inventing the alembic, an early distillation apparatus." },
-      { q: "What distillation invention came in the 11th century?", a: ["The coiled cooling pipe", "The copper pot still", "The column still", "The reflux condenser"], exp: "The coiled cooling pipe was invented in the 11th century, significantly improving the efficiency of distillation." },
-      { q: "What does 'water of life' refer to?", a: ["First distilled spirits term", "A type of holy water", "Pure spring water for distillation", "A medieval medicine"], exp: "'Water of life' (aqua vitae in Latin, uisce beatha in Gaelic) was the first term used for distilled spirits." },
-      { q: "What is the best metal for distillation?", a: ["Copper", "Stainless steel", "Iron", "Aluminum"], exp: "Copper is considered the best metal for distillation because it removes sulfur compounds and produces cleaner, better-tasting spirits." },
-      { q: "Who first documented brewing?", a: ["The Egyptians", "The Greeks", "The Romans", "The Chinese"], exp: "The Egyptians were the first to document brewing, with records of beer production dating back thousands of years." },
-      { q: "What was the early fermentable sugar source for brewing?", a: ["Malted barley", "Honey", "Grapes", "Sugarcane"], exp: "Malted barley was the primary fermentable sugar source used in early brewing to produce beer." },
-      { q: "Who introduced hops to brewing?", a: ["German monks", "English farmers", "Belgian brewers", "Czech traders"], exp: "German monks introduced hops to brewing, which added bitterness, flavor, and preservative qualities to beer." },
-      { q: "What was the Prohibition period in the United States?", a: ["1920-1933", "1910-1925", "1925-1940", "1915-1930"], exp: "Prohibition in the United States lasted from 1920 to 1933, banning the manufacture, sale, and transportation of alcoholic beverages." }
+      { q: "¿Dónde tuvo lugar la destilación más antigua?", a: ["En China", "En Egipto", "En Grecia", "En Mesopotamia"], exp: "Las primeras evidencias de destilación se remontan a la antigua China, donde se desarrolló la técnica por primera vez." },
+      { q: "¿Qué es la destilación?", a: ["Separar un líquido por evaporación y condensación", "Fermentar granos con levadura", "Filtrar impurezas del agua", "Mezclar varios destilados"], exp: "La destilación es el proceso de separar los componentes de una mezcla líquida mediante evaporación y condensación selectivas." },
+      { q: "¿A quién se atribuye la invención del alambique?", a: ["María la Judía", "Jabir ibn Hayyan", "Aristóteles", "Hipócrates"], exp: "A María la Judía (Maria Hebraea) se le atribuye la invención del alambique, uno de los primeros aparatos de destilación." },
+      { q: "¿Qué invento clave de la destilación apareció en el siglo XI?", a: ["El serpentín de refrigeración", "El alambique de cobre", "El alambique de columna", "El condensador de reflujo"], exp: "El serpentín de refrigeración se inventó en el siglo XI y mejoró enormemente la eficacia de la destilación." },
+      { q: "¿A qué hacía referencia el término 'agua de la vida'?", a: ["A los primeros destilados", "A un tipo de agua bendita", "Al agua de manantial para destilar", "A un medicamento medieval"], exp: "'Agua de la vida' (aqua vitae en latín, uisce beatha en gaélico) fue el primer término usado para referirse a los destilados." },
+      { q: "¿Cuál es el mejor metal para destilar?", a: ["Cobre", "Acero inoxidable", "Hierro", "Aluminio"], exp: "El cobre se considera el mejor metal para destilar porque retira los compuestos de azufre y da destilados más limpios y sabrosos." },
+      { q: "¿Quién documentó la elaboración de cerveza por primera vez?", a: ["Los egipcios", "Los griegos", "Los romanos", "Los chinos"], exp: "Los egipcios fueron los primeros en dejar constancia escrita de la elaboración de cerveza; hay registros de milenios de antigüedad." },
+      { q: "¿Cuál era la principal fuente de azúcar fermentable en la cerveza antigua?", a: ["La cebada malteada", "La miel", "Las uvas", "La caña de azúcar"], exp: "La cebada malteada fue la fuente principal de azúcar fermentable para elaborar cerveza en la antigüedad." },
+      { q: "¿Quién introdujo el lúpulo en la cerveza?", a: ["Los monjes alemanes", "Los granjeros ingleses", "Los cerveceros belgas", "Los comerciantes checos"], exp: "Los monjes alemanes introdujeron el lúpulo en la cerveza, aportando amargor, aroma y propiedades conservantes." },
+      { q: "¿Cuánto duró la Ley Seca en Estados Unidos?", a: ["1920-1933", "1910-1925", "1925-1940", "1915-1930"], exp: "La Ley Seca en Estados Unidos duró de 1920 a 1933 y prohibía la fabricación, venta y transporte de bebidas alcohólicas." }
     ]
   },
   {
