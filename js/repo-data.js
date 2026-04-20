@@ -2072,21 +2072,21 @@ const rounds = [
   },
   {
     id: 24,
-    title: "IBA Cocktail Specifics",
-    subtitle: "Official IBA Recipes & Details",
+    title: "Cócteles IBA al detalle",
+    subtitle: "Recetas oficiales IBA y sus detalles",
     icon: "🏆",
     color: "#ff6f00",
     questions: [
-      { q: "Which IBA category does the Bramble belong to?", a: ["New Era", "Unforgettables", "Contemporary Classics", "Tiki Classics"], exp: "The Bramble, created by Dick Bradsell in the 1980s, is classified as a New Era drink in the IBA official list." },
-      { q: "What is the garnish for an Americano?", a: ["Orange slice or peel", "Lemon twist", "Cherry", "Olive"], exp: "The Americano is traditionally garnished with an orange slice or orange peel." },
-      { q: "How is an Alexander prepared?", a: ["Shake and strain", "Build in glass", "Stir and strain", "Blend with ice"], exp: "The Alexander cocktail is prepared by shaking all ingredients with ice and straining into a cocktail glass." },
-      { q: "What spirit does Between the Sheets contain?", a: ["Cognac", "Bourbon", "Scotch", "Rum only"], exp: "Between the Sheets contains Cognac along with white rum, triple sec, and lemon juice." },
-      { q: "Which IBA category does Bloody Mary belong to?", a: ["Contemporary Classics", "Unforgettables", "New Era", "Tiki Classics"], exp: "The Bloody Mary is classified as a Contemporary Classic in the IBA official cocktail list." },
-      { q: "What distinguishes the Brandy Crusta's garnish?", a: ["Sugar-crusted glass with long lemon peel", "A simple lemon wheel", "A cherry on a cocktail pick", "An orange twist"], exp: "The Brandy Crusta is distinguished by its sugar-crusted rim and a long spiral lemon peel lining the inside of the glass." },
-      { q: "What is the main spirit in a Negroni?", a: ["Gin", "Vodka", "Campari", "Whisky"], exp: "The Negroni's main spirit is gin, combined with equal parts Campari and sweet vermouth." },
-      { q: "What is the primary spirit in a Jungle Bird?", a: ["Blackstrap rum", "White rum", "Bourbon", "Tequila"], exp: "The Jungle Bird uses blackstrap rum (dark rum) as its primary spirit, combined with Campari, pineapple juice, lime juice, and simple syrup." },
-      { q: "What spirit is used in a Tipperary?", a: ["Irish Whiskey", "Scotch Whisky", "Bourbon", "Rye Whiskey"], exp: "The Tipperary cocktail uses Irish Whiskey, named after the Irish county, combined with sweet vermouth and green Chartreuse." },
-      { q: "What ingredient is optional in a Southside?", a: ["Egg White", "Soda water", "Bitters", "Sugar syrup"], exp: "Egg white is an optional ingredient in the Southside cocktail, adding a silky texture when included." }
+      { q: "¿A qué categoría IBA pertenece el Bramble?", a: ["New Era", "Unforgettables", "Contemporary Classics", "Tiki Classics"], exp: "El Bramble, creado por Dick Bradsell en los años 80, se clasifica como New Era en la lista oficial de la IBA." },
+      { q: "¿Cuál es la decoración del Americano?", a: ["Rodaja o piel de naranja", "Espiral de limón", "Cereza", "Aceituna"], exp: "El Americano se decora tradicionalmente con una rodaja o piel de naranja." },
+      { q: "¿Cómo se prepara un Alexander?", a: ["Agitado y colado", "Construido en el vaso", "Removido y colado", "Batido con hielo"], exp: "El Alexander se prepara agitando todos los ingredientes con hielo y colando en copa de cóctel." },
+      { q: "¿Qué destilado lleva un Between the Sheets?", a: ["Cognac", "Bourbon", "Scotch", "Sólo ron"], exp: "El Between the Sheets lleva Cognac junto con ron blanco, triple seco y zumo de limón." },
+      { q: "¿A qué categoría IBA pertenece el Bloody Mary?", a: ["Contemporary Classics", "Unforgettables", "New Era", "Tiki Classics"], exp: "El Bloody Mary se clasifica como Contemporary Classic en la lista oficial de cócteles de la IBA." },
+      { q: "¿Qué distingue la decoración del Brandy Crusta?", a: ["Borde escarchado con azúcar y larga piel de limón", "Una rodaja simple de limón", "Una cereza en un pincho", "Un twist de naranja"], exp: "El Brandy Crusta se distingue por su borde escarchado con azúcar y una larga espiral de piel de limón forrando el interior de la copa." },
+      { q: "¿Cuál es el destilado principal del Negroni?", a: ["Ginebra", "Vodka", "Campari", "Whisky"], exp: "El destilado principal del Negroni es la ginebra, combinada a partes iguales con Campari y vermut rojo." },
+      { q: "¿Cuál es el destilado principal del Jungle Bird?", a: ["Blackstrap rum", "Ron blanco", "Bourbon", "Tequila"], exp: "El Jungle Bird usa blackstrap rum (ron oscuro) como destilado principal, junto con Campari, zumo de piña, zumo de lima y sirope simple." },
+      { q: "¿Qué destilado se usa en un Tipperary?", a: ["Irish Whiskey", "Scotch Whisky", "Bourbon", "Rye Whiskey"], exp: "El Tipperary usa Irish Whiskey (toma el nombre del condado irlandés) combinado con vermut rojo y Chartreuse verde." },
+      { q: "¿Qué ingrediente es opcional en un Southside?", a: ["Clara de huevo", "Soda", "Bitters", "Sirope"], exp: "La clara de huevo es opcional en el Southside; aporta una textura sedosa cuando se incluye." }
     ]
   }
 ];
