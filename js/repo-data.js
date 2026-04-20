@@ -1863,21 +1863,21 @@ const rounds = [
   },
   {
     id: 13,
-    title: "Modern Bartending Pioneers",
-    subtitle: "Innovators of Contemporary Mixology",
+    title: "Pioneros de la coctelería moderna",
+    subtitle: "Innovadores de la mixología contemporánea",
     icon: "🌟",
     color: "#e74c3c",
     questions: [
-      { q: "What did Pedro Chicote establish in 1964?", a: ["The Association of Spanish Barman's (ABE)", "The first cocktail school in Spain", "The Madrid Bar Academy", "The Spanish Spirits Board"], exp: "Pedro Chicote established the Association of Spanish Barman's (ABE) in 1964, organizing the Spanish bartending profession." },
-      { q: "Who is known as 'King Cocktail'?", a: ["Dale DeGroff", "Jerry Thomas", "Harry Craddock", "Gary Regan"], exp: "Dale DeGroff earned the title 'King Cocktail' for his role in reviving classic cocktail culture at the Rainbow Room in New York." },
-      { q: "Who is Sasha Petraske?", a: ["An American mixologist", "A Russian vodka distiller", "A French sommelier", "A British pub owner"], exp: "Sasha Petraske was an influential American mixologist who changed the modern cocktail bar landscape." },
-      { q: "What bar did Sasha Petraske found in 1999?", a: ["Milk & Honey", "Death & Co", "PDT", "Angel's Share"], exp: "Sasha Petraske founded Milk & Honey in 1999 in New York City, pioneering the modern speakeasy movement." },
-      { q: "What was Sasha Petraske's cocktail philosophy?", a: ["Less is more", "More is more", "Speed over quality", "Innovation above tradition"], exp: "Petraske's philosophy of 'less is more' emphasized simplicity, quality ingredients, and impeccable technique." },
-      { q: "Who is known as 'Dr. Cocktail'?", a: ["Ted Haigh", "Dave Arnold", "Robert Hess", "Jeffrey Morgenthaler"], exp: "Ted Haigh is known as 'Dr. Cocktail' for his extensive research into vintage cocktails and spirits history." },
-      { q: "What does Robert Hess advocate for?", a: ["Craft cocktails", "Speed bartending", "Molecular mixology only", "Pre-mixed cocktails"], exp: "Robert Hess is a prominent advocate for craft cocktails and proper cocktail-making techniques." },
-      { q: "Which bar did Audrey Saunders open?", a: ["The Pegu Club", "Milk & Honey", "Death & Co", "Employees Only"], exp: "Audrey Saunders opened The Pegu Club in New York City, which became one of the most influential cocktail bars of the 2000s." },
-      { q: "What is Jeffrey Morgenthaler's notable innovation?", a: ["Barrel-aging cocktails", "Molecular garnishes", "Nitrogen-infused drinks", "Edible cocktail glasses"], exp: "Jeffrey Morgenthaler is credited with popularizing barrel-aging cocktails, a technique that adds depth and complexity." },
-      { q: "What high-tech equipment is Dave Arnold known for using?", a: ["Centrifuges", "3D printers", "Laser cutters", "Ultrasonic cleaners"], exp: "Dave Arnold is known for using centrifuges and other high-tech equipment to push the boundaries of cocktail-making at Booker and Dax." }
+      { q: "¿Qué fundó Pedro Chicote en 1964?", a: ["La Asociación de Barmans Españoles (ABE)", "La primera escuela de coctelería de España", "La Academia de Barra de Madrid", "El Consejo Español de Destilados"], exp: "Pedro Chicote fundó la Asociación de Barmans Españoles (ABE) en 1964, organizando la profesión del bartender en España." },
+      { q: "¿A quién se conoce como 'King Cocktail'?", a: ["Dale DeGroff", "Jerry Thomas", "Harry Craddock", "Gary Regan"], exp: "Dale DeGroff se ganó el apodo 'King Cocktail' por su papel en la recuperación de la cultura del cóctel clásico en el Rainbow Room de Nueva York." },
+      { q: "¿Quién era Sasha Petraske?", a: ["Un mixólogo estadounidense", "Un destilador ruso de vodka", "Un sommelier francés", "Un propietario de pub británico"], exp: "Sasha Petraske fue un influyente mixólogo estadounidense que cambió la escena moderna del cóctel." },
+      { q: "¿Qué bar fundó Sasha Petraske en 1999?", a: ["Milk & Honey", "Death & Co", "PDT", "Angel's Share"], exp: "Sasha Petraske fundó Milk & Honey en 1999 en Nueva York, siendo pionero del movimiento moderno de los speakeasy." },
+      { q: "¿Cuál era la filosofía de coctelería de Sasha Petraske?", a: ["Menos es más", "Más es más", "Rapidez antes que calidad", "Innovación por encima de la tradición"], exp: "La filosofía de Petraske, 'menos es más', ponía énfasis en la sencillez, los ingredientes de calidad y la técnica impecable." },
+      { q: "¿A quién se conoce como 'Dr. Cocktail'?", a: ["Ted Haigh", "Dave Arnold", "Robert Hess", "Jeffrey Morgenthaler"], exp: "Ted Haigh es conocido como 'Dr. Cocktail' por sus investigaciones sobre cócteles antiguos e historia de los destilados." },
+      { q: "¿Qué defiende Robert Hess?", a: ["Los cócteles artesanos", "La coctelería de velocidad", "Sólo la mixología molecular", "Los cócteles premezclados"], exp: "Robert Hess es un firme defensor de los cócteles artesanos y de las técnicas correctas de coctelería." },
+      { q: "¿Qué bar abrió Audrey Saunders?", a: ["The Pegu Club", "Milk & Honey", "Death & Co", "Employees Only"], exp: "Audrey Saunders abrió The Pegu Club en Nueva York, uno de los bares de cócteles más influyentes de los años 2000." },
+      { q: "¿Cuál es la innovación más destacada de Jeffrey Morgenthaler?", a: ["Envejecer cócteles en barrica", "Las decoraciones moleculares", "Las bebidas infusionadas con nitrógeno", "Los vasos de cóctel comestibles"], exp: "A Jeffrey Morgenthaler se le atribuye la popularización del envejecimiento de cócteles en barrica, una técnica que aporta profundidad y complejidad." },
+      { q: "¿Por qué equipo de alta tecnología es conocido Dave Arnold?", a: ["Centrifugadoras", "Impresoras 3D", "Cortadoras láser", "Limpiadores ultrasónicos"], exp: "Dave Arnold es conocido por usar centrifugadoras y otros equipos de alta tecnología para empujar los límites de la coctelería en Booker and Dax." }
     ]
   },
   {
