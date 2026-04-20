@@ -76,6 +76,52 @@ async function signInWithGoogle() {
   return currentUser;
 }
 
+// ─── Registro con email + contraseña ─────────────────────────
+async function signUpWithEmail(email, password, displayName) {
+  if (!auth) throw new Error('Firebase no configurado.');
+  const { createUserWithEmailAndPassword, updateProfile } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+  const result = await createUserWithEmailAndPassword(auth, email.trim(), password);
+  const fbUser = result.user;
+  if (displayName && displayName.trim()) {
+    try { await updateProfile(fbUser, { displayName: displayName.trim() }); } catch {}
+  }
+  currentUser = {
+    uid: fbUser.uid,
+    name: displayName?.trim() || fbUser.displayName || fbUser.email?.split('@')[0] || t('auth.email_player'),
+    email: fbUser.email,
+    photo: fbUser.photoURL || null,
+    provider: 'email',
+    isGuest: false
+  };
+  saveUserLocal(currentUser);
+  return currentUser;
+}
+
+// ─── Login con email + contraseña ─────────────────────────────
+async function signInWithEmail(email, password) {
+  if (!auth) throw new Error('Firebase no configurado.');
+  const { signInWithEmailAndPassword } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+  const result = await signInWithEmailAndPassword(auth, email.trim(), password);
+  const fbUser = result.user;
+  currentUser = {
+    uid: fbUser.uid,
+    name: fbUser.displayName || fbUser.email?.split('@')[0] || t('auth.email_player'),
+    email: fbUser.email,
+    photo: fbUser.photoURL || null,
+    provider: 'email',
+    isGuest: false
+  };
+  saveUserLocal(currentUser);
+  return currentUser;
+}
+
+// ─── Enviar email de reset de contraseña ─────────────────────
+async function sendPasswordReset(email) {
+  if (!auth) throw new Error('Firebase no configurado.');
+  const { sendPasswordResetEmail } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+  await sendPasswordResetEmail(auth, email.trim());
+}
+
 // ─── Login como invitado ─────────────────────────────────────
 function signInAsGuest() {
   const guestId = localStorage.getItem('cq_guest_id') || 'guest_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
@@ -274,6 +320,9 @@ function getFirebaseAuth() { return auth; }
 export {
   initFirebase,
   signInWithGoogle,
+  signUpWithEmail,
+  signInWithEmail,
+  sendPasswordReset,
   signInAsGuest,
   signOutUser,
   restoreSession,

@@ -43,6 +43,12 @@ const Onboarding = ({ onDone }) => {
   const [googleUser, setGoogleUser] = useState(null); // {uid,name,email,photo} from Firebase
   const [authLoading, setAuthLoading] = useState(false);
   const [authError, setAuthError] = useState(null);
+  // Email flow: 'idle' hides the form; 'signup' / 'signin' show it with the
+  // matching mode. Inputs live in the same component so back/forward preserves.
+  const [emailMode, setEmailMode] = useState('idle'); // 'idle' | 'signup' | 'signin'
+  const [emailAddr, setEmailAddr] = useState('');
+  const [emailPass, setEmailPass] = useState('');
+  const [emailName, setEmailName] = useState('');
 
   const handleGoogle = async () => {
     setAuthError(null);
@@ -68,6 +74,62 @@ const Onboarding = ({ onDone }) => {
     if (window.stAuth) { try { window.stAuth.signInAsGuest(); } catch {} }
     setAuthMode('guest');
     setStep(1);
+  };
+
+  const openEmail = (mode) => {
+    setAuthError(null);
+    setEmailMode(mode);
+  };
+
+  const emailErrorMessage = (e) => {
+    const code = e?.code || '';
+    if (code === 'auth/email-already-in-use') return tr('onboarding.email_taken', 'Ese email ya está registrado — inicia sesión.');
+    if (code === 'auth/invalid-email')        return tr('onboarding.email_invalid', 'Email no válido.');
+    if (code === 'auth/weak-password')        return tr('onboarding.email_weak', 'La contraseña debe tener al menos 6 caracteres.');
+    if (code === 'auth/user-not-found')       return tr('onboarding.email_not_found', 'No existe una cuenta con ese email.');
+    if (code === 'auth/wrong-password' || code === 'auth/invalid-credential')
+      return tr('onboarding.email_wrong_password', 'Contraseña incorrecta.');
+    if (code === 'auth/too-many-requests')    return tr('onboarding.email_rate_limit', 'Demasiados intentos — prueba más tarde.');
+    return tr('onboarding.email_error', 'No se pudo completar el acceso.');
+  };
+
+  const submitEmail = async () => {
+    setAuthError(null);
+    if (!window.stAuth) { setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible')); return; }
+    if (!emailAddr.trim() || !emailPass) { setAuthError(tr('onboarding.email_required', 'Rellena email y contraseña.')); return; }
+    if (emailPass.length < 6) { setAuthError(tr('onboarding.email_weak', 'La contraseña debe tener al menos 6 caracteres.')); return; }
+    setAuthLoading(true);
+    try {
+      await window.stAuth.initFirebase();
+      const user = emailMode === 'signup'
+        ? await window.stAuth.signUpWithEmail(emailAddr, emailPass, emailName)
+        : await window.stAuth.signInWithEmail(emailAddr, emailPass);
+      setAuthMode('email');
+      setName(user.name || emailName || '');
+      setEmailMode('idle');
+      setEmailPass('');
+      setStep(1);
+    } catch (e) {
+      console.warn('[auth] email', e);
+      setAuthError(emailErrorMessage(e));
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
+  const sendReset = async () => {
+    if (!emailAddr.trim()) { setAuthError(tr('onboarding.email_required_reset', 'Escribe tu email para recibir el enlace.')); return; }
+    if (!window.stAuth?.sendPasswordReset) return;
+    setAuthLoading(true);
+    try {
+      await window.stAuth.initFirebase();
+      await window.stAuth.sendPasswordReset(emailAddr);
+      setAuthError(tr('onboarding.email_reset_sent', 'Te enviamos un email para restablecer tu contraseña.'));
+    } catch (e) {
+      setAuthError(emailErrorMessage(e));
+    } finally {
+      setAuthLoading(false);
+    }
   };
 
   const next = () => setStep(s => s + 1);
@@ -172,8 +234,17 @@ const Onboarding = ({ onDone }) => {
                   {authLoading ? tr('ui.loading', 'Cargando…') : tr('login.google', 'Continuar con Google')}
                 </button>
                 <button
-                  onClick={handleGuest}
+                  onClick={() => openEmail('signup')}
                   className="btn"
+                  disabled={authLoading}
+                  style={{ padding: '14px 18px' }}
+                >
+                  ✉️ {tr('login.email', 'Continuar con email')}
+                </button>
+                <button
+                  onClick={handleGuest}
+                  className="btn ghost"
+                  disabled={authLoading}
                   style={{ padding: '14px 18px' }}
                 >
                   <Icon name="user" size={16} /> {tr('login.guest', 'Continuar como invitado')}
@@ -186,6 +257,115 @@ const Onboarding = ({ onDone }) => {
                   }}>{authError}</div>
                 )}
               </div>
+
+              {emailMode !== 'idle' && (
+                <div
+                  onClick={(e) => { if (e.target === e.currentTarget) { setEmailMode('idle'); setAuthError(null); } }}
+                  style={{
+                    position: 'fixed', inset: 0, zIndex: 60,
+                    background: 'oklch(0.05 0 0 / 0.7)',
+                    display: 'grid', placeItems: 'center',
+                    padding: 20,
+                  }}
+                >
+                  <form
+                    onSubmit={(e) => { e.preventDefault(); submitEmail(); }}
+                    style={{
+                      width: '100%', maxWidth: 380,
+                      background: 'var(--bg-1)',
+                      border: '1px solid var(--line)',
+                      borderRadius: 'var(--r-md)',
+                      padding: 22,
+                      display: 'grid', gap: 12,
+                      textAlign: 'left',
+                    }}
+                  >
+                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 24, textAlign: 'center' }}>
+                      {emailMode === 'signup'
+                        ? tr('onboarding.email_title_signup', 'Crea tu cuenta')
+                        : tr('onboarding.email_title_signin', 'Inicia sesión')}
+                    </div>
+                    {emailMode === 'signup' && (
+                      <input
+                        placeholder={tr('onboarding.email_name_placeholder', 'Tu nombre')}
+                        value={emailName}
+                        onChange={e => setEmailName(e.target.value)}
+                        autoComplete="name"
+                        style={{
+                          padding: '12px 14px', fontSize: 14,
+                          background: 'var(--bg-2)', border: '1px solid var(--line)',
+                          borderRadius: 8, color: 'var(--ink-0)', outline: 'none',
+                        }}
+                      />
+                    )}
+                    <input
+                      type="email"
+                      placeholder={tr('onboarding.email_placeholder', 'tu@email.com')}
+                      value={emailAddr}
+                      onChange={e => setEmailAddr(e.target.value)}
+                      autoComplete="email"
+                      style={{
+                        padding: '12px 14px', fontSize: 14,
+                        background: 'var(--bg-2)', border: '1px solid var(--line)',
+                        borderRadius: 8, color: 'var(--ink-0)', outline: 'none',
+                      }}
+                    />
+                    <input
+                      type="password"
+                      placeholder={tr('onboarding.email_password_placeholder', 'Contraseña (mín. 6)')}
+                      value={emailPass}
+                      onChange={e => setEmailPass(e.target.value)}
+                      autoComplete={emailMode === 'signup' ? 'new-password' : 'current-password'}
+                      style={{
+                        padding: '12px 14px', fontSize: 14,
+                        background: 'var(--bg-2)', border: '1px solid var(--line)',
+                        borderRadius: 8, color: 'var(--ink-0)', outline: 'none',
+                      }}
+                    />
+                    {authError && (
+                      <div style={{
+                        padding: 10, borderRadius: 8, fontSize: 12,
+                        background: 'color-mix(in oklch, var(--red) 20%, var(--bg-2))',
+                        color: 'var(--ink-1)', textAlign: 'center',
+                      }}>{authError}</div>
+                    )}
+                    <button type="submit" className="btn primary" disabled={authLoading} style={{ padding: '12px 18px' }}>
+                      {authLoading
+                        ? tr('ui.loading', 'Cargando…')
+                        : (emailMode === 'signup'
+                          ? tr('onboarding.email_cta_signup', 'Crear cuenta')
+                          : tr('onboarding.email_cta_signin', 'Entrar'))}
+                    </button>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, fontFamily: 'var(--f-mono)' }}>
+                      <button
+                        type="button"
+                        onClick={() => { setEmailMode(emailMode === 'signup' ? 'signin' : 'signup'); setAuthError(null); }}
+                        style={{ background: 'none', border: 0, color: 'var(--amber)', textDecoration: 'underline', cursor: 'pointer' }}
+                      >
+                        {emailMode === 'signup'
+                          ? tr('onboarding.email_switch_signin', 'Ya tengo cuenta')
+                          : tr('onboarding.email_switch_signup', 'Crear cuenta nueva')}
+                      </button>
+                      {emailMode === 'signin' && (
+                        <button
+                          type="button"
+                          onClick={sendReset}
+                          style={{ background: 'none', border: 0, color: 'var(--ink-3)', textDecoration: 'underline', cursor: 'pointer' }}
+                        >
+                          {tr('onboarding.email_forgot', 'Olvidé mi contraseña')}
+                        </button>
+                      )}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => { setEmailMode('idle'); setAuthError(null); }}
+                      style={{ background: 'none', border: 0, color: 'var(--ink-3)', fontSize: 11, fontFamily: 'var(--f-mono)', textDecoration: 'underline', cursor: 'pointer' }}
+                    >
+                      {tr('ui.cancel', 'Cancelar')}
+                    </button>
+                  </form>
+                </div>
+              )}
               <div style={{
                 marginTop: 22, maxWidth: 340, margin: '22px auto 0',
                 padding: '10px 14px',
