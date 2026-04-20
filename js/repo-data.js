@@ -1996,21 +1996,21 @@ const rounds = [
   },
   {
     id: 20,
-    title: "Spirits: Vodka, Gin & Rum",
-    subtitle: "World Spirits Essentials",
+    title: "Destilados: vodka, ginebra y ron",
+    subtitle: "Esenciales de los destilados del mundo",
     icon: "🧊",
     color: "#3498db",
     questions: [
-      { q: "Where was vodka first produced?", a: ["Both Poland and Russia", "Only Russia", "Sweden", "Finland"], exp: "Both Poland and Russia claim to be the birthplace of vodka, and the true origin remains a subject of debate." },
-      { q: "What does the word 'vodka' mean?", a: ["Water of life (little water)", "Pure spirit", "Clear drink", "White fire"], exp: "The word 'vodka' is a diminutive of the Slavic word 'voda' meaning water, translating roughly as 'little water' or 'water of life.'" },
-      { q: "What is the minimum ABV for vodka in the EU?", a: ["37.5%", "40%", "35%", "42%"], exp: "In the European Union, vodka must have a minimum alcohol by volume of 37.5% to be classified as vodka." },
-      { q: "What is the key botanical ingredient in gin?", a: ["Juniper berries", "Coriander seeds", "Angelica root", "Orris root"], exp: "Juniper berries are the key and legally required botanical ingredient in gin, giving it its distinctive piney flavor." },
-      { q: "What must London Dry Gin be?", a: ["Made in traditional still with no artificial flavorings", "Produced exclusively in London", "Aged in oak barrels", "Made with London tap water"], exp: "London Dry Gin must be made in a traditional still with natural botanicals and no artificial flavorings or colors added after distillation." },
-      { q: "What is rum made from?", a: ["Sugarcane juice", "Corn mash", "Grain neutral spirit", "Potato starch"], exp: "Rum is made from sugarcane juice or its byproducts (primarily molasses), then fermented and distilled." },
-      { q: "Where did molasses-based rum originate?", a: ["Barbados", "Jamaica", "Cuba", "Puerto Rico"], exp: "Barbados is credited as the origin of molasses-based rum production, with the earliest documented rum distillation." },
-      { q: "Which country is associated with 'Rhum Agricole'?", a: ["Martinique", "Jamaica", "Cuba", "Barbados"], exp: "Martinique is most associated with Rhum Agricole, which is made from fresh sugarcane juice rather than molasses and has AOC status." },
-      { q: "What is the primary ingredient in tequila?", a: ["Blue agave", "Corn", "Sugarcane", "Wheat"], exp: "Tequila must be made from at least 51% Blue Weber Agave (Agave tequilana), with 100% agave tequilas being the premium category." },
-      { q: "What distinguishes Cognac from other brandies?", a: ["Must be produced in the region of Cognac, France", "Must be aged for at least 10 years", "Must use Pinot Noir grapes", "Must be distilled three times"], exp: "Cognac must be produced in the delimited Cognac region of France, following strict production methods including double distillation in copper pot stills." }
+      { q: "¿Dónde se produjo el vodka por primera vez?", a: ["En Polonia y Rusia", "Sólo en Rusia", "En Suecia", "En Finlandia"], exp: "Tanto Polonia como Rusia reclaman la cuna del vodka; el verdadero origen sigue siendo motivo de debate." },
+      { q: "¿Qué significa la palabra 'vodka'?", a: ["Agua de la vida (pequeña agua)", "Destilado puro", "Bebida transparente", "Fuego blanco"], exp: "'Vodka' es el diminutivo de la palabra eslava 'voda' (agua), que se traduce aproximadamente como 'pequeña agua' o 'agua de la vida'." },
+      { q: "¿Cuál es la graduación mínima del vodka en la UE?", a: ["37,5%", "40%", "35%", "42%"], exp: "En la Unión Europea, el vodka debe tener al menos un 37,5% de alcohol en volumen para ser clasificado como tal." },
+      { q: "¿Cuál es el botánico clave de la ginebra?", a: ["Bayas de enebro", "Semillas de cilantro", "Raíz de angélica", "Raíz de lirio de Florencia"], exp: "Las bayas de enebro son el botánico clave, y legalmente obligatorio, de la ginebra y le dan su característico aroma a resina de pino." },
+      { q: "¿Qué requisito cumple una London Dry Gin?", a: ["Destilarse en alambique tradicional y sin aromas artificiales", "Producirse exclusivamente en Londres", "Envejecer en barrica de roble", "Elaborarse con agua del grifo de Londres"], exp: "La London Dry Gin debe destilarse en un alambique tradicional con botánicos naturales y sin aromas ni colorantes artificiales añadidos después de la destilación." },
+      { q: "¿De qué se elabora el ron?", a: ["De zumo o melaza de caña de azúcar", "De macerado de maíz", "De alcohol neutro de grano", "De almidón de patata"], exp: "El ron se elabora a partir del zumo de caña de azúcar o de sus subproductos (principalmente la melaza), que se fermentan y destilan." },
+      { q: "¿Dónde nació el ron a partir de melaza?", a: ["Barbados", "Jamaica", "Cuba", "Puerto Rico"], exp: "A Barbados se le atribuye el origen del ron a partir de melaza, con los primeros registros documentados de destilación de ron." },
+      { q: "¿Qué país se asocia con el 'Rhum Agricole'?", a: ["Martinica", "Jamaica", "Cuba", "Barbados"], exp: "La Martinica es el territorio más asociado al Rhum Agricole, elaborado con zumo fresco de caña en lugar de melaza y que cuenta con AOC propia." },
+      { q: "¿Cuál es el ingrediente principal del tequila?", a: ["Agave azul", "Maíz", "Caña de azúcar", "Trigo"], exp: "El tequila debe elaborarse con al menos un 51% de Agave Azul Weber (Agave tequilana); los tequilas '100% agave' son la categoría premium." },
+      { q: "¿Qué distingue al Cognac del resto de brandies?", a: ["Debe producirse en la región de Cognac, Francia", "Debe envejecer al menos 10 años", "Debe usar uva Pinot Noir", "Debe destilarse tres veces"], exp: "El Cognac debe elaborarse en la región delimitada de Cognac (Francia) siguiendo métodos estrictos, incluida la doble destilación en alambiques de cobre (pot stills)." }
     ]
   },
   {
