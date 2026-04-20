@@ -587,31 +587,32 @@ const NavBtn = ({ icon, label, active, onClick }) => (
 );
 
 // ── Wiki screen (iframe wrapper for the standalone wiki.html) ──
-const WikiScreen = ({ onBack }) => (
-  <div style={{
-    position: 'fixed', inset: 0, zIndex: 50,
-    background: 'var(--bg-0)',
-    display: 'flex', flexDirection: 'column',
-    animation: 'fadeIn .3s ease',
-  }}>
+// wiki.html renders its own header (back button, title, search). Don't stack
+// a second header on top — instead, listen for the `wiki-close` postMessage
+// the iframe emits when its internal back button is at the root view.
+const WikiScreen = ({ onBack }) => {
+  useEffect(() => {
+    const onMsg = (e) => {
+      if (e && e.data && e.data.type === 'wiki-close') onBack && onBack();
+    };
+    window.addEventListener('message', onMsg);
+    return () => window.removeEventListener('message', onMsg);
+  }, [onBack]);
+  return (
     <div style={{
-      display: 'flex', alignItems: 'center', gap: 12,
-      padding: '14px 18px',
-      borderBottom: '1px solid var(--line-soft)',
-      background: 'var(--bg-1)',
+      position: 'fixed', inset: 0, zIndex: 50,
+      background: 'var(--bg-0)',
+      display: 'flex', flexDirection: 'column',
+      animation: 'fadeIn .3s ease',
     }}>
-      <button className="btn ghost" onClick={onBack} style={{ padding: 8 }}>
-        <Icon name="arrowL" size={18} />
-      </button>
-      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20 }}>{(window.stUiT ? window.stUiT('wiki.header', 'Enciclopedia 3D') : 'Enciclopedia 3D')}</div>
+      <iframe
+        src="wiki.html"
+        style={{ flex: 1, border: 'none', width: '100%' }}
+        title="Enciclopedia"
+      />
     </div>
-    <iframe
-      src="wiki.html"
-      style={{ flex: 1, border: 'none', width: '100%' }}
-      title="Wiki 3D"
-    />
-  </div>
-);
+  );
+};
 
 // ── Error boundary ─────────────────────────────────────────────
 // Catches uncaught exceptions in any descendant (e.g. a blank-screen crash

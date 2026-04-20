@@ -1,8 +1,15 @@
-// Stirio — LibraryScreen: 3D model library (iframe wrapper to wiki.html)
-// Depends on: ui.jsx (Icon)
+// Stirio — LibraryScreen: iframe wrapper to wiki.html (3D-only filter).
+// wiki.html renders its own header; listen for the `wiki-close` postMessage
+// it emits from the root view to close back to the SPA.
 
 const LibraryScreen = ({ onBack }) => {
-  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  useEffect(() => {
+    const onMsg = (e) => {
+      if (e && e.data && e.data.type === 'wiki-close') onBack && onBack();
+    };
+    window.addEventListener('message', onMsg);
+    return () => window.removeEventListener('message', onMsg);
+  }, [onBack]);
   return (
     <div style={{
       position: 'fixed', inset: 0, zIndex: 50,
@@ -10,23 +17,10 @@ const LibraryScreen = ({ onBack }) => {
       display: 'flex', flexDirection: 'column',
       animation: 'fadeIn .3s ease',
     }}>
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: 12,
-        padding: '14px 18px',
-        borderBottom: '1px solid var(--line-soft)',
-        background: 'var(--bg-1)',
-      }}>
-        <button className="btn ghost" onClick={onBack} style={{ padding: 8 }} aria-label="Volver">
-          <Icon name="arrowL" size={18} />
-        </button>
-        <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20 }}>
-          {tr('library.header', 'Biblioteca 3D')}
-        </div>
-      </div>
       <iframe
         src="wiki.html?filter=3d"
         style={{ flex: 1, border: 'none', width: '100%' }}
-        title="Library 3D"
+        title="Biblioteca 3D"
       />
     </div>
   );
