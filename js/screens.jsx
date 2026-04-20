@@ -60,7 +60,7 @@ const Onboarding = ({ onDone }) => {
       setGoogleUser(user);
       setAuthMode('google');
       setName(user.name || '');
-      setStep(1);
+      setStep(2);
     } catch (e) {
       console.warn('[auth] google', e);
       setAuthError(e.code === 'auth/popup-closed-by-user' ? tr('onboarding.auth_cancel', 'Cancelaste el login') : tr('onboarding.auth_error', 'Error al iniciar con Google'));
@@ -73,7 +73,13 @@ const Onboarding = ({ onDone }) => {
     setAuthError(null);
     if (window.stAuth) { try { window.stAuth.signInAsGuest(); } catch {} }
     setAuthMode('guest');
-    setStep(1);
+    setStep(2);
+  };
+
+  const applyLanguage = (code) => {
+    setLanguage(code);
+    try { window.stLang?.setLang?.(code); } catch {}
+    try { window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: code } })); } catch {}
   };
 
   const openEmail = (mode) => {
@@ -108,7 +114,7 @@ const Onboarding = ({ onDone }) => {
       setName(user.name || emailName || '');
       setEmailMode('idle');
       setEmailPass('');
-      setStep(1);
+      setStep(2);
     } catch (e) {
       console.warn('[auth] email', e);
       setAuthError(emailErrorMessage(e));
@@ -138,9 +144,9 @@ const Onboarding = ({ onDone }) => {
   const totalSteps = 7;
   const toggleInterest = (id) => setInterests(xs => xs.includes(id) ? xs.filter(x => x !== id) : [...xs, id]);
   const canNext = {
-    0: true,
-    1: authMode === 'google' || (authMode === 'guest' && name.trim().length > 0),
-    2: !!language,
+    0: !!language,           // language picker (now the first step)
+    1: true,                 // auth step advances via its own buttons
+    2: authMode === 'google' || authMode === 'email' || (authMode === 'guest' && name.trim().length > 0),
     3: level !== null,
     4: true,                 // interests can be empty (skip-friendly)
     5: alcohol !== null,
@@ -170,7 +176,7 @@ const Onboarding = ({ onDone }) => {
       overflow: 'auto',
     }}>
       <div style={{ maxWidth: 480, width: '100%', position: 'relative', zIndex: 2 }}>
-        {step > 0 && (
+        {step !== 1 && (
           <div style={{ display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 32 }}>
             {Array.from({ length: totalSteps }).map((_, i) => (
               <div key={i} style={{
@@ -185,6 +191,56 @@ const Onboarding = ({ onDone }) => {
 
         <div key={step} style={{ animation: 'rise .4s ease' }}>
           {step === 0 && (
+            <div>
+              <div style={{ textAlign: 'center', marginBottom: 22 }}>
+                <div style={{
+                  fontSize: 64, margin: '0 auto 10px',
+                  filter: 'drop-shadow(0 6px 24px var(--amber-glow))',
+                }}>🌐</div>
+                <h1 style={{
+                  fontFamily: 'var(--f-serif)', fontWeight: 400,
+                  fontSize: 'clamp(34px, 6vw, 44px)',
+                  margin: '0 0 4px', lineHeight: 1,
+                  letterSpacing: '-0.02em',
+                }}>
+                  Stirio<span style={{ color: 'var(--amber)' }}>.</span>
+                </h1>
+              </div>
+              <StepTitle
+                eyebrow={tr('onboarding.lang_eyebrow', 'idioma')}
+                title={tr('onboarding.lang_title', '¿En qué idioma prefieres Stirio?')}
+                subtitle={tr('onboarding.lang_subtitle', 'Puedes cambiarlo luego desde Perfil.')}
+              />
+              <div style={{ display: 'grid', gap: 10 }}>
+                {ONBOARDING_LANGS.map(l => {
+                  const picked = language === l.id;
+                  return (
+                    <button key={l.id} onClick={() => applyLanguage(l.id)} style={{
+                      padding: 14,
+                      display: 'flex', alignItems: 'center', gap: 14,
+                      textAlign: 'left',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 26 }}>{l.flag}</div>
+                      <div style={{ flex: 1, fontWeight: 500, fontSize: 15 }}>{l.label}</div>
+                      <div style={{
+                        width: 22, height: 22, borderRadius: '50%',
+                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
+                        display: 'grid', placeItems: 'center',
+                      }}>
+                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {step === 1 && (
             <div style={{ textAlign: 'center' }}>
               <div style={{
                 fontSize: 88, margin: '0 auto 14px',
@@ -380,7 +436,7 @@ const Onboarding = ({ onDone }) => {
             </div>
           )}
 
-          {step === 1 && authMode === 'guest' && (
+          {step === 2 && authMode === 'guest' && (
             <div>
               <StepTitle eyebrow={tr('onboarding.handle_eyebrow', 'tu handle')} title={tr('onboarding.handle_title', '¿Cómo te llamamos?')} subtitle={tr('onboarding.handle_subtitle', 'Aparecerá en duelos y en la tabla global.')} />
               <input
@@ -405,7 +461,7 @@ const Onboarding = ({ onDone }) => {
             </div>
           )}
 
-          {step === 1 && authMode === 'google' && (
+          {step === 2 && (authMode === 'google' || authMode === 'email') && (
             <div style={{ textAlign: 'center' }}>
               {googleUser?.photo ? (
                 <img src={googleUser.photo} alt=""
@@ -435,38 +491,6 @@ const Onboarding = ({ onDone }) => {
               )}
               <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em' }}>
                 {tr('onboarding.google_session', '· sesión iniciada con google ·')}
-              </div>
-            </div>
-          )}
-
-          {step === 2 && (
-            <div>
-              <StepTitle eyebrow={tr('onboarding.lang_eyebrow', 'idioma')} title={tr('onboarding.lang_title', '¿En qué idioma prefieres Stirio?')} subtitle={tr('onboarding.lang_subtitle', 'Puedes cambiarlo luego desde Perfil.')} />
-              <div style={{ display: 'grid', gap: 10 }}>
-                {ONBOARDING_LANGS.map(l => {
-                  const picked = language === l.id;
-                  return (
-                    <button key={l.id} onClick={() => setLanguage(l.id)} style={{
-                      padding: 14,
-                      display: 'flex', alignItems: 'center', gap: 14,
-                      textAlign: 'left',
-                      borderRadius: 'var(--r-md)',
-                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
-                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
-                      transition: 'all .15s',
-                    }}>
-                      <div style={{ fontSize: 26 }}>{l.flag}</div>
-                      <div style={{ flex: 1, fontWeight: 500, fontSize: 15 }}>{l.label}</div>
-                      <div style={{
-                        width: 22, height: 22, borderRadius: '50%',
-                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
-                        display: 'grid', placeItems: 'center',
-                      }}>
-                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
-                      </div>
-                    </button>
-                  );
-                })}
               </div>
             </div>
           )}
@@ -632,11 +656,13 @@ const Onboarding = ({ onDone }) => {
           )}
         </div>
 
-        {step > 0 && (
+        {step !== 1 && (
           <div style={{ display: 'flex', gap: 10, marginTop: 28 }}>
-            <button className="btn" onClick={back} style={{ padding: '12px 18px' }}>
-              <Icon name="arrowL" size={16} /> Atrás
-            </button>
+            {step > 0 && (
+              <button className="btn" onClick={back} style={{ padding: '12px 18px' }}>
+                <Icon name="arrowL" size={16} /> {tr('ui.back', 'Atrás')}
+              </button>
+            )}
             <button
               className="btn primary"
               onClick={step === totalSteps - 1 ? submit : next}
