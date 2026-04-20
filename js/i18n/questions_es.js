@@ -381,21 +381,21 @@ export const rounds = [
   },
   {
     id: 21,
-    title: "Whisky & Brandy",
-    subtitle: "Aged Spirits & Their Traditions",
+    title: "Whisky y brandy",
+    subtitle: "Destilados envejecidos y sus tradiciones",
     icon: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
     color: "#d35400",
     questions: [
-      { q: "What is the primary grape used in Armagnac production?", a: ["Ugni blanc", "Colombard", "Folle blanche", "Baco blanc"], exp: "Ugni blanc (also known as Trebbiano) is the primary grape variety used in Armagnac production." },
-      { q: "How is Armagnac typically distilled?", a: ["Single distillation", "Double distillation", "Triple distillation", "Continuous column distillation"], exp: "Armagnac is traditionally distilled just once in a continuous column still, unlike Cognac which is double distilled." },
-      { q: "What is the earliest known reference to whisky production?", a: ["Father Jon Cor", "A Scottish monk in 1200", "King James IV", "Robert Burns"], exp: "The earliest documented reference to whisky is from 1494, recording malt given to Father Jon Cor to make aqua vitae." },
-      { q: "What is the minimum aging requirement for UK whisky?", a: ["3 years", "2 years", "5 years", "1 year"], exp: "In the UK, whisky must be aged for a minimum of 3 years in oak casks before it can legally be called whisky." },
-      { q: "What is the primary ingredient in whisky?", a: ["Cereal grains", "Grapes", "Sugarcane", "Potatoes"], exp: "Whisky is primarily made from cereal grains such as barley, corn, rye, or wheat, which are mashed, fermented, and distilled." },
-      { q: "How many times is Irish whiskey typically distilled?", a: ["Three times", "Two times", "Once", "Four times"], exp: "Irish whiskey is typically triple distilled, which contributes to its characteristically smooth and light flavor profile." },
-      { q: "What is a characteristic requirement of bourbon?", a: ["Must contain at least 51% corn", "Must be aged for 5 years minimum", "Must be produced in Kentucky", "Must use charred pine barrels"], exp: "Bourbon must contain at least 51% corn in its mash bill, along with other requirements like new charred oak barrels." },
-      { q: "What type of whisky does Japan produce?", a: ["Both single malt and blended", "Only single malt", "Only blended", "Only grain whisky"], exp: "Japan produces both single malt and blended whiskies, inspired by Scottish traditions but with a distinctive Japanese approach." },
-      { q: "What is the 'Angel's Share' in spirit aging?", a: ["Percentage of spirit lost to evaporation", "The first pour from a new barrel", "The master blender's sample", "The residue left in the cask"], exp: "The Angel's Share refers to the percentage of spirit that evaporates through the barrel during aging, typically 2-4% per year." },
-      { q: "What is the purpose of blending spirits?", a: ["To create recognizable and consistent character", "To reduce production costs only", "To increase alcohol content", "To hide defects in the spirit"], exp: "Blending creates a recognizable and consistent character, combining different spirits to achieve a balanced and harmonious final product." }
+      { q: "¿Cuál es la uva principal del Armagnac?", a: ["Ugni blanc", "Colombard", "Folle blanche", "Baco blanc"], exp: "La Ugni blanc (también conocida como Trebbiano) es la variedad principal en la elaboración del Armagnac." },
+      { q: "¿Cómo se destila tradicionalmente el Armagnac?", a: ["Una sola destilación", "Doble destilación", "Triple destilación", "Destilación continua en columna"], exp: "El Armagnac se destila tradicionalmente una sola vez en un alambique de columna continua, a diferencia del Cognac, que se destila dos veces." },
+      { q: "¿Cuál es la primera referencia conocida a la producción de whisky?", a: ["El fraile Jon Cor", "Un monje escocés en 1200", "El rey Jacobo IV", "Robert Burns"], exp: "La primera referencia documentada al whisky es de 1494 y registra la malta entregada al fraile Jon Cor para elaborar aqua vitae." },
+      { q: "¿Cuál es el envejecimiento mínimo del whisky en el Reino Unido?", a: ["3 años", "2 años", "5 años", "1 año"], exp: "En el Reino Unido, el whisky debe envejecer al menos 3 años en barrica de roble para poder llamarse legalmente whisky." },
+      { q: "¿Cuál es el ingrediente principal del whisky?", a: ["Granos de cereal", "Uvas", "Caña de azúcar", "Patatas"], exp: "El whisky se elabora principalmente con cereales como cebada, maíz, centeno o trigo, que se maceran, fermentan y destilan." },
+      { q: "¿Cuántas veces se destila habitualmente el whiskey irlandés?", a: ["Tres veces", "Dos veces", "Una vez", "Cuatro veces"], exp: "El whiskey irlandés se destila habitualmente tres veces, lo que contribuye a su perfil de sabor suave y ligero." },
+      { q: "¿Qué requisito caracteriza al bourbon?", a: ["Debe contener al menos un 51% de maíz", "Debe envejecer un mínimo de 5 años", "Debe producirse en Kentucky", "Debe usar barricas de pino carbonizado"], exp: "El bourbon debe contener al menos un 51% de maíz en su mash bill, además de otros requisitos como el uso de barricas nuevas de roble carbonizado." },
+      { q: "¿Qué tipo de whisky produce Japón?", a: ["Single malt y blended", "Sólo single malt", "Sólo blended", "Sólo whisky de grano"], exp: "Japón produce tanto single malts como blends, inspirados en la tradición escocesa pero con un enfoque propio japonés." },
+      { q: "¿Qué es la 'Angel's Share' en la crianza de un destilado?", a: ["El porcentaje de alcohol que se pierde por evaporación", "La primera muestra de una barrica nueva", "La muestra del master blender", "El residuo que queda en la barrica"], exp: "La Angel's Share ('parte de los ángeles') es el porcentaje de destilado que se evapora a través de la barrica durante la crianza, habitualmente un 2-4% al año." },
+      { q: "¿Para qué sirve el blending de destilados?", a: ["Para crear un carácter reconocible y consistente", "Sólo para reducir costes de producción", "Para subir la graduación alcohólica", "Para disimular defectos del destilado"], exp: "El blending crea un carácter reconocible y consistente combinando distintos destilados para lograr un producto final equilibrado y armonioso." }
     ]
   },
   {
