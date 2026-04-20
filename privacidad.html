@@ -6,6 +6,17 @@
   <meta name="theme-color" content="#0d0508">
   <title>Política de Privacidad · Stirio</title>
   <link rel="icon" href="favicon.svg">
+  <!-- Inherit the theme / density / device the user picked in the SPA. Runs
+       before CSS paints so there's no flash of wrong theme. -->
+  <script>
+    try {
+      var tw = JSON.parse(localStorage.getItem('stirio::tweaks::v1') || '{}');
+      var h = document.documentElement;
+      h.setAttribute('data-theme',   tw.theme   || 'lounge');
+      h.setAttribute('data-density', tw.density || 'comfortable');
+      h.setAttribute('data-device',  tw.device  || 'mobile');
+    } catch (e) {}
+  </script>
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/style.css">
