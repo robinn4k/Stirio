@@ -1939,21 +1939,21 @@ const rounds = [
   },
   {
     id: 17,
-    title: "Beer Knowledge",
-    subtitle: "Brewing, Storage & Serving",
+    title: "Cerveza",
+    subtitle: "Elaboración, conservación y servicio",
     icon: "🍺",
     color: "#f39c12",
     questions: [
-      { q: "What is the purpose of hops in beer?", a: ["To provide bitterness and aroma", "To add sweetness", "To increase alcohol content", "To clarify the beer"], exp: "Hops provide bitterness to balance the sweetness of malt, as well as contributing aroma and flavor to beer." },
-      { q: "What does the malting process convert?", a: ["Starch into soluble sugars", "Sugar into alcohol", "Water into steam", "Protein into amino acids"], exp: "The malting process converts the starch in grains into soluble sugars that can then be fermented by yeast." },
-      { q: "What characterizes bottom-fermenting yeast?", a: ["Sinks to bottom of fermentation vat", "Floats on top of the wort", "Works at room temperature", "Produces fruity flavors"], exp: "Bottom-fermenting yeast (lager yeast) sinks to the bottom of the fermentation vat and works at cooler temperatures." },
-      { q: "What does maturation do to beer?", a: ["Makes it mellower and clearer", "Increases its bitterness", "Adds more carbonation", "Darkens its color"], exp: "Maturation (conditioning) makes beer mellower and clearer as flavors integrate and particles settle out." },
-      { q: "What is the purpose of pasteurization in beer?", a: ["To extend shelf life", "To improve flavor", "To increase alcohol content", "To add carbonation"], exp: "Pasteurization extends the shelf life of beer by killing bacteria and yeast that could cause spoilage." },
-      { q: "What is beer?", a: ["A perishable product made from grains, yeasts, and hops", "A distilled spirit from barley", "A fermented wine from grapes", "A carbonated soft drink with alcohol"], exp: "Beer is a perishable product made from grains (typically barley), yeasts, hops, and water through fermentation." },
-      { q: "What is the best storage temperature for beer?", a: ["4°-21°C", "0°-2°C", "25°-30°C", "-5°-0°C"], exp: "Beer should be stored between 4°-21°C (39°-70°F) depending on the style, to maintain quality and flavor." },
-      { q: "Why are dark bottles used for beer?", a: ["To prevent light damage", "To keep beer colder", "For aesthetic reasons only", "To prevent oxygen entry"], exp: "Dark bottles protect beer from light damage (lightstrike), which causes a 'skunky' off-flavor from UV rays breaking down hop compounds." },
-      { q: "What does a dense, uneven head on beer indicate?", a: ["Natural carbonation", "Over-carbonation", "Stale beer", "Artificial carbonation"], exp: "A dense, uneven head on beer indicates natural carbonation, as opposed to the uniform bubbles of forced carbonation." },
-      { q: "What is the ideal serving temperature for European lager?", a: ["7° to 9°C", "0° to 3°C", "12° to 15°C", "3° to 5°C"], exp: "European lagers are ideally served at 7° to 9°C (45°-48°F) to best express their clean, crisp flavors." }
+      { q: "¿Para qué sirve el lúpulo en la cerveza?", a: ["Aportar amargor y aroma", "Añadir dulzor", "Aumentar el grado alcohólico", "Clarificar la cerveza"], exp: "El lúpulo aporta amargor para equilibrar el dulzor de la malta, además de contribuir al aroma y sabor de la cerveza." },
+      { q: "¿Qué transforma el proceso de malteado?", a: ["El almidón en azúcares solubles", "El azúcar en alcohol", "El agua en vapor", "Las proteínas en aminoácidos"], exp: "El malteado convierte el almidón de los granos en azúcares solubles que luego la levadura puede fermentar." },
+      { q: "¿Qué caracteriza a la levadura de fermentación baja?", a: ["Se deposita en el fondo del tanque", "Flota sobre el mosto", "Trabaja a temperatura ambiente", "Genera sabores afrutados"], exp: "La levadura de fermentación baja (la de las lager) se deposita en el fondo del tanque y trabaja a temperaturas más bajas." },
+      { q: "¿Qué efecto tiene la maduración en la cerveza?", a: ["La vuelve más suave y clara", "Aumenta su amargor", "Le añade más carbonatación", "Oscurece su color"], exp: "La maduración (o 'conditioning') hace la cerveza más suave y clara a medida que los sabores se integran y las partículas sedimentan." },
+      { q: "¿Para qué sirve la pasteurización de la cerveza?", a: ["Prolongar su vida útil", "Mejorar el sabor", "Aumentar el grado alcohólico", "Añadir carbonatación"], exp: "La pasteurización prolonga la vida útil de la cerveza al eliminar bacterias y levaduras que podrían estropearla." },
+      { q: "¿Qué es la cerveza?", a: ["Un producto perecedero elaborado con granos, levaduras y lúpulo", "Un destilado de cebada", "Un vino fermentado de uva", "Un refresco gaseoso con alcohol"], exp: "La cerveza es un producto perecedero elaborado a partir de granos (habitualmente cebada), levaduras, lúpulo y agua mediante fermentación." },
+      { q: "¿Cuál es la mejor temperatura de almacenamiento para la cerveza?", a: ["4°-21°C", "0°-2°C", "25°-30°C", "-5°-0°C"], exp: "La cerveza se conserva entre 4° y 21°C según el estilo, para mantener calidad y sabor." },
+      { q: "¿Por qué se usan botellas oscuras para la cerveza?", a: ["Para protegerla de la luz", "Para mantenerla más fría", "Sólo por estética", "Para impedir la entrada de oxígeno"], exp: "Las botellas oscuras protegen la cerveza del daño por luz (lightstrike), que genera el característico sabor 'a mofeta' al degradar la luz UV los compuestos del lúpulo." },
+      { q: "¿Qué indica una espuma densa e irregular en la cerveza?", a: ["Carbonatación natural", "Exceso de carbonatación", "Cerveza pasada", "Carbonatación artificial"], exp: "Una espuma densa e irregular indica carbonatación natural, frente a las burbujas uniformes de la carbonatación forzada." },
+      { q: "¿Cuál es la temperatura ideal de servicio de una lager europea?", a: ["7° a 9°C", "0° a 3°C", "12° a 15°C", "3° a 5°C"], exp: "Las lager europeas se sirven idealmente entre 7° y 9°C para expresar mejor sus sabores limpios y frescos." }
     ]
   },
   {
