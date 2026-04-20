@@ -191,21 +191,21 @@ export const rounds = [
   },
   {
     id: 11,
-    title: "IBA Organization & Service",
-    subtitle: "IBA Mission, Education & Bartender Ethics",
+    title: "Organización IBA y servicio",
+    subtitle: "Misión, formación y ética del bartender",
     icon: "🏛️",
     color: "#2c3e50",
     questions: [
-      { q: "What is the main mission of the IBA?", a: ["To connect, educate, and inspire bartenders worldwide", "To regulate alcohol sales globally", "To organize cocktail competitions only", "To certify bars and restaurants"], exp: "The IBA's main mission is to connect, educate, and inspire bartenders worldwide, fostering excellence in the profession." },
-      { q: "What are the core values of IBA?", a: ["Unity, Passion, Legacy", "Tradition, Innovation, Quality", "Knowledge, Service, Profit", "Creativity, Speed, Accuracy"], exp: "The IBA's core values are Unity, Passion, and Legacy, reflecting its commitment to the global bartending community." },
-      { q: "How many courses are in the IBA Education Pyramid?", a: ["10", "5", "8", "12"], exp: "The IBA Education Pyramid consists of 10 courses, providing a structured path for bartender education." },
-      { q: "What is the purpose of the IBA Academy?", a: ["To provide training and knowledge to bartenders worldwide", "To sell bartending equipment", "To license bars internationally", "To publish cocktail recipe books"], exp: "The IBA Academy aims to provide training and knowledge to bartenders worldwide, elevating professional standards." },
-      { q: "Which course is designed for novice bartenders?", a: ["IBA Foundation Course (IFC)", "IBA Master Course", "IBA Advanced Mixology", "IBA Sommelier Course"], exp: "The IBA Foundation Course (IFC) is specifically designed for novice bartenders entering the profession." },
-      { q: "What is the duration of the ICB Course?", a: ["40 hours", "20 hours", "60 hours", "80 hours"], exp: "The ICB Course has a duration of 40 hours of instruction and practice." },
-      { q: "Who can conduct IBA courses after completing TTT?", a: ["Those with extensive knowledge and completed at least 3 courses", "Any IBA member", "Only IBA board members", "Anyone with a bartending license"], exp: "After completing the Train The Trainer (TTT) program, those with extensive knowledge who have completed at least 3 courses can conduct IBA courses." },
-      { q: "What is celebrated on February 24th?", a: ["International Bartenders Day", "World Cocktail Day", "IBA Foundation Day", "Global Spirits Day"], exp: "February 24th is celebrated as International Bartenders Day, honoring bartenders around the world." },
-      { q: "What happens if a student violates the IBA code?", a: ["May be expelled without refund", "Receives a warning letter", "Must retake the course", "Is fined a penalty fee"], exp: "If a student violates the IBA code of conduct, they may be expelled from the program without a refund." },
-      { q: "What is the primary goal of a bartender?", a: ["To create the ultimate guest experience", "To sell the most expensive drinks", "To memorize all cocktail recipes", "To work as fast as possible"], exp: "The primary goal of a bartender is to create the ultimate guest experience through hospitality and expertise." }
+      { q: "¿Cuál es la misión principal de la IBA?", a: ["Conectar, formar e inspirar a bartenders de todo el mundo", "Regular las ventas de alcohol a nivel global", "Organizar únicamente competiciones de cócteles", "Certificar bares y restaurantes"], exp: "La misión principal de la IBA es conectar, formar e inspirar a bartenders de todo el mundo, fomentando la excelencia en la profesión." },
+      { q: "¿Cuáles son los valores fundamentales de la IBA?", a: ["Unidad, pasión y legado", "Tradición, innovación y calidad", "Conocimiento, servicio y beneficio", "Creatividad, velocidad y precisión"], exp: "Los valores fundamentales de la IBA son unidad, pasión y legado, que reflejan su compromiso con la comunidad global de bartenders." },
+      { q: "¿Cuántos cursos forman la Pirámide Educativa IBA?", a: ["10", "5", "8", "12"], exp: "La Pirámide Educativa IBA está formada por 10 cursos que trazan un camino estructurado para la formación del bartender." },
+      { q: "¿Cuál es el objetivo de la IBA Academy?", a: ["Ofrecer formación y conocimiento a bartenders de todo el mundo", "Vender material de coctelería", "Conceder licencias a bares internacionales", "Publicar libros de recetas de cócteles"], exp: "La IBA Academy busca ofrecer formación y conocimiento a bartenders de todo el mundo, elevando el nivel profesional." },
+      { q: "¿Qué curso está diseñado para bartenders noveles?", a: ["IBA Foundation Course (IFC)", "IBA Master Course", "IBA Advanced Mixology", "IBA Sommelier Course"], exp: "El IBA Foundation Course (IFC) está diseñado específicamente para bartenders noveles que se inician en la profesión." },
+      { q: "¿Cuál es la duración del curso ICB?", a: ["40 horas", "20 horas", "60 horas", "80 horas"], exp: "El curso ICB tiene una duración de 40 horas entre teoría y práctica." },
+      { q: "¿Quién puede impartir cursos IBA tras completar el TTT?", a: ["Quien tenga amplia experiencia y haya completado al menos 3 cursos", "Cualquier miembro de la IBA", "Sólo los miembros de la junta de la IBA", "Cualquiera con licencia de bartender"], exp: "Tras completar el programa Train The Trainer (TTT), sólo quienes tienen amplia experiencia y han completado al menos 3 cursos pueden impartir cursos IBA." },
+      { q: "¿Qué se celebra el 24 de febrero?", a: ["El Día Internacional del Bartender", "El Día Mundial del Cóctel", "El Día de la Fundación de la IBA", "El Día Mundial de los Destilados"], exp: "El 24 de febrero se celebra el Día Internacional del Bartender, en homenaje a los bartenders de todo el mundo." },
+      { q: "¿Qué ocurre si un estudiante infringe el código IBA?", a: ["Puede ser expulsado sin derecho a devolución", "Recibe una carta de aviso", "Debe repetir el curso", "Tiene que pagar una sanción"], exp: "Si un estudiante infringe el código de conducta de la IBA puede ser expulsado del programa sin derecho a devolución." },
+      { q: "¿Cuál es el objetivo principal de un bartender?", a: ["Crear la mejor experiencia posible para el cliente", "Vender las bebidas más caras", "Memorizar todas las recetas de cócteles", "Trabajar lo más rápido posible"], exp: "El objetivo principal de un bartender es crear la mejor experiencia posible para el cliente a través de la hospitalidad y el conocimiento." }
     ]
   },
   {
