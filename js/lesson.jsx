@@ -2,8 +2,13 @@
 // Depends on: ui.jsx (Icon, Prompt, playChord, confettiBurst)
 
 const LessonPlayer = ({ lesson, onExit, onFinish }) => {
+  // Timer only runs for lessons that explicitly opt in via `_timed`
+  // (currently Speed rounds set `_timed: 60` in data.js). Academy, Daily and
+  // Free Quiz lessons are self-paced so the player can actually read each
+  // question + explanation without the clock rushing them.
+  const timerDuration = Number.isFinite(lesson?._timed) ? lesson._timed : null;
   const [stepIdx, setStepIdx] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(timerDuration || 0);
   const [xp, setXp] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
@@ -16,15 +21,15 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
   const totalSteps = lesson?.steps?.length || 0;
   const progress = totalSteps ? stepIdx / totalSteps : 0;
 
-  // timer
+  // timer (only when the lesson opts in)
   useEffect(() => {
-    if (finished) return;
+    if (finished || !timerDuration) return;
     const t = setInterval(() => setTimeLeft(s => {
       if (s <= 1) { clearInterval(t); finish(); return 0; }
       return s - 1;
     }), 1000);
     return () => clearInterval(t);
-  }, [finished]);
+  }, [finished, timerDuration]);
 
   const finish = useCallback(() => {
     setFinished(true);
@@ -34,7 +39,7 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
     if (stepFeedback) return;
     setStepFeedback(ok ? 'ok' : 'bad');
     if (ok) {
-      const gain = 10 + Math.floor(timeLeft / 4);
+      const gain = 10 + Math.floor((timerDuration ? timeLeft : 30) / 4);
       setXp(x => x + gain);
       setCorrect(c => c + 1);
       const rect = containerRef.current?.getBoundingClientRect();
@@ -43,17 +48,25 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
     } else {
       setWrong(w => w + 1);
     }
+    // Longer dwell on wrong answers so the player has time to read the
+    // correct option + explanation. Also extended on correct so they can see
+    // confirmation without feeling rushed.
+    const currentStep = lesson?.steps?.[stepIdx];
+    const hasExplain = currentStep?.kind === 'choice' && !!currentStep?.explain;
+    const okDelay = hasExplain ? 1800 : 1100;
+    const badDelay = hasExplain ? 3200 : 1400;
     setTimeout(() => {
       setStepFeedback(null);
       if (stepIdx + 1 >= lesson.steps.length) finish();
       else setStepIdx(i => i + 1);
-    }, ok ? 900 : 1100);
+    }, ok ? okDelay : badDelay);
   };
 
   const skipIntro = () => setStepIdx(i => i + 1);
 
   if (finished) {
-    return <LessonResults lesson={lesson} xp={xp} correct={correct} wrong={wrong} timeUsed={60 - timeLeft} onExit={onExit} onFinish={() => onFinish({ xp, correct, wrong })} />;
+    const timeUsed = timerDuration ? Math.max(0, timerDuration - timeLeft) : 0;
+    return <LessonResults lesson={lesson} xp={xp} correct={correct} wrong={wrong} timeUsed={timeUsed} onExit={onExit} onFinish={() => onFinish({ xp, correct, wrong })} />;
   }
 
   // Guard: lesson missing steps or stepIdx past end. Render a friendly exit
@@ -119,19 +132,21 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
           </div>
         </div>
 
-        <div style={{
-          display: 'flex', alignItems: 'center', gap: 6,
-          padding: '6px 12px',
-          borderRadius: 99,
-          background: timeLeft < 15 ? 'oklch(0.65 0.18 25 / 0.2)' : 'var(--bg-2)',
-          border: '1px solid var(--line-soft)',
-          fontFamily: 'var(--f-mono)', fontWeight: 600,
-          color: timeLeft < 15 ? 'var(--bad)' : 'var(--ink-1)',
-          animation: timeLeft < 10 ? 'flicker 1s infinite' : 'none',
-        }}>
-          <Icon name="clock" size={14} />
-          {String(timeLeft).padStart(2, '0')}s
-        </div>
+        {timerDuration && (
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 6,
+            padding: '6px 12px',
+            borderRadius: 99,
+            background: timeLeft < 15 ? 'oklch(0.65 0.18 25 / 0.2)' : 'var(--bg-2)',
+            border: '1px solid var(--line-soft)',
+            fontFamily: 'var(--f-mono)', fontWeight: 600,
+            color: timeLeft < 15 ? 'var(--bad)' : 'var(--ink-1)',
+            animation: timeLeft < 10 ? 'flicker 1s infinite' : 'none',
+          }}>
+            <Icon name="clock" size={14} />
+            {String(timeLeft).padStart(2, '0')}s
+          </div>
+        )}
       </div>
 
       {/* body */}
@@ -206,7 +221,7 @@ const IntroStep = ({ step, lesson, onContinue }) => (
   <div style={{ textAlign: 'center' }}>
     <div style={{ fontSize: 64, marginBottom: 16, filter: 'drop-shadow(0 8px 20px var(--amber-glow))' }}>{lesson.emoji}</div>
     <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
-      {lesson.category} · 60s lesson
+      {lesson.category}{Number.isFinite(lesson._timed) ? ` · ${lesson._timed}s` : ''}
     </div>
     <h1 style={{
       fontFamily: 'var(--f-serif)', fontWeight: 400,
@@ -241,38 +256,92 @@ const IntroStep = ({ step, lesson, onContinue }) => (
   </div>
 );
 
-const ChoiceStep = ({ step, onAnswer }) => (
-  <div>
-    <Prompt text={step.prompt} />
-    <div style={{ display: 'grid', gap: 10 }}>
-      {step.options.map((opt, i) => (
-        <button
-          key={i}
-          onClick={(e) => onAnswer(i === step.correct, e)}
-          className="choice-btn"
-          style={{
-            padding: '16px 18px',
-            textAlign: 'left',
-            background: 'var(--bg-2)',
-            border: '1px solid var(--line-soft)',
-            borderRadius: 'var(--r-md)',
-            fontSize: 15,
-            transition: 'all .15s',
-          }}
-        >
-          <span style={{
-            display: 'inline-flex', width: 24, height: 24, marginRight: 12,
-            borderRadius: 6, background: 'var(--bg-3)',
-            placeItems: 'center', justifyContent: 'center',
-            alignItems: 'center',
-            fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-2)',
-          }}>{String.fromCharCode(65 + i)}</span>
-          {opt}
-        </button>
-      ))}
+const ChoiceStep = ({ step, onAnswer }) => {
+  const [selected, setSelected] = useState(null);
+  const pick = (i) => {
+    if (selected !== null) return;
+    setSelected(i);
+    onAnswer(i === step.correct);
+  };
+  return (
+    <div>
+      <Prompt text={step.prompt} />
+      <div style={{ display: 'grid', gap: 10 }}>
+        {step.options.map((opt, i) => {
+          const isSelected = selected === i;
+          const isCorrectAns = selected !== null && i === step.correct;
+          // Reveal after a pick: green on the correct answer, red on a wrong
+          // pick. Untouched options stay neutral so focus goes to the ones
+          // that matter.
+          let bg = 'var(--bg-2)';
+          let borderColor = 'var(--line-soft)';
+          let badgeBg = 'var(--bg-3)';
+          let badgeColor = 'var(--ink-2)';
+          if (selected !== null) {
+            if (isCorrectAns) {
+              bg = 'color-mix(in oklch, var(--ok) 22%, var(--bg-2))';
+              borderColor = 'var(--ok)';
+              badgeBg = 'var(--ok)';
+              badgeColor = 'var(--bg-0)';
+            } else if (isSelected) {
+              bg = 'color-mix(in oklch, var(--bad) 25%, var(--bg-2))';
+              borderColor = 'var(--bad)';
+              badgeBg = 'var(--bad)';
+              badgeColor = 'var(--bg-0)';
+            }
+          }
+          return (
+            <button
+              key={i}
+              onClick={() => pick(i)}
+              disabled={selected !== null}
+              className="choice-btn"
+              style={{
+                padding: '16px 18px',
+                textAlign: 'left',
+                background: bg,
+                border: `1px solid ${borderColor}`,
+                borderRadius: 'var(--r-md)',
+                fontSize: 15,
+                transition: 'all .15s',
+                cursor: selected !== null ? 'default' : 'pointer',
+              }}
+            >
+              <span style={{
+                display: 'inline-flex', width: 24, height: 24, marginRight: 12,
+                borderRadius: 6, background: badgeBg,
+                placeItems: 'center', justifyContent: 'center',
+                alignItems: 'center',
+                fontFamily: 'var(--f-mono)', fontSize: 11, color: badgeColor,
+              }}>
+                {selected === null
+                  ? String.fromCharCode(65 + i)
+                  : isCorrectAns ? '✓' : isSelected ? '✕' : String.fromCharCode(65 + i)}
+              </span>
+              {opt}
+            </button>
+          );
+        })}
+      </div>
+      {selected !== null && step.explain && (
+        <div style={{
+          marginTop: 14,
+          padding: '12px 14px',
+          borderRadius: 'var(--r-md)',
+          background: 'var(--bg-2)',
+          border: '1px dashed var(--line)',
+          fontSize: 13, lineHeight: 1.5, color: 'var(--ink-2)',
+          animation: 'rise .3s ease',
+        }}>
+          <span style={{ color: 'var(--amber)', fontFamily: 'var(--f-mono)', fontSize: 11, marginRight: 6 }}>
+            {(window.stUiT ? window.stUiT('lesson.explain', '// por qué') : '// por qué')}
+          </span>
+          {step.explain}
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 const MultiSelectStep = ({ step, onAnswer }) => {
   const [picks, setPicks] = useState([]);

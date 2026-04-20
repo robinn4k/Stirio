@@ -25,7 +25,7 @@ let cs = null;
 
 export function startConstructor() {
   const questions = buildQuestions();
-  cs = { questions, index: 0, correct: 0, answered: 0 };
+  cs = { questions, index: 0, correct: 0, answered: 0, history: [] };
   return _payload();
 }
 
@@ -39,10 +39,24 @@ export function answerConstructor(selectedIndex) {
   const q = cs.questions[cs.index];
   const ok = selectedIndex === q.correctIndex;
   if (ok) cs.correct++;
+  cs.history.push({
+    name: q.correctName,
+    answers: q.answers,
+    correctIndex: q.correctIndex,
+    selectedIndex,
+    correct: ok,
+  });
   cs.answered++;
   cs.index++;
   const done = cs.index >= cs.questions.length;
-  return { correct: ok, correctIndex: q.correctIndex, selectedIndex, done, result: done ? { correct: cs.correct, total: cs.questions.length } : null, next: done ? null : _payload() };
+  return {
+    correct: ok,
+    correctIndex: q.correctIndex,
+    selectedIndex,
+    done,
+    result: done ? { correct: cs.correct, total: cs.questions.length, history: cs.history.slice() } : null,
+    next: done ? null : _payload(),
+  };
 }
 
 export function abortConstructor() { cs = null; }
