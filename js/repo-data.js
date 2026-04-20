@@ -1901,21 +1901,21 @@ const rounds = [
   },
   {
     id: 15,
-    title: "Tea, Coffee & Sugars",
-    subtitle: "Essential Bar Beverages & Sweeteners",
+    title: "Té, café y azúcares",
+    subtitle: "Bebidas esenciales de barra y endulzantes",
     icon: "☕",
     color: "#6d4c41",
     questions: [
-      { q: "What is a synonym for saccharide?", a: ["Carbohydrate", "Protein", "Lipid", "Mineral"], exp: "Saccharide is a synonym for carbohydrate, the chemical family that includes all sugars." },
-      { q: "What is the most common sugar used in drinks?", a: ["Sucrose", "Fructose", "Glucose", "Lactose"], exp: "Sucrose (table sugar) is the most common sugar used in drink preparation and cocktail making." },
-      { q: "What is the primary use of glucose?", a: ["Providing energy", "Adding flavor", "Preserving food", "Coloring drinks"], exp: "Glucose is primarily used by the body as an energy source and is the simplest form of sugar." },
-      { q: "Where is stevia derived from?", a: ["Stevia plant leaves", "Sugarcane roots", "Corn kernels", "Honey bees"], exp: "Stevia is a natural sweetener derived from the leaves of the Stevia rebaudiana plant, native to South America." },
-      { q: "How is matcha traditionally prepared?", a: ["Whisking powdered tea with hot water", "Steeping tea leaves in boiling water", "Brewing in a coffee machine", "Cold-pressing tea leaves"], exp: "Matcha is traditionally prepared by whisking the fine powdered green tea with hot water using a bamboo whisk (chasen)." },
-      { q: "What is a characteristic of black tea?", a: ["100% oxidized", "0% oxidized", "50% oxidized", "Fermented with bacteria"], exp: "Black tea is fully (100%) oxidized, which gives it its dark color and strong, robust flavor profile." },
-      { q: "Where did coffee originate?", a: ["Ethiopia", "Brazil", "Colombia", "Yemen"], exp: "Coffee originated in Ethiopia, where legend says a goat herder named Kaldi discovered the energizing effects of coffee berries." },
-      { q: "What is the most commercially grown coffee species?", a: ["Arabica", "Robusta", "Liberica", "Excelsa"], exp: "Arabica is the most commercially grown and consumed coffee species, accounting for about 60-70% of world production." },
-      { q: "What is the 'crema' in espresso?", a: ["The layer of golden-brown foam on top", "The coffee grounds residue", "The milk froth added on top", "The sugar dissolved in the cup"], exp: "Crema is the layer of golden-brown foam that forms on top of a properly extracted espresso, indicating freshness and quality." },
-      { q: "What is a ristretto?", a: ["A restricted pour with more concentrated flavor", "A double shot of espresso", "An espresso with extra water", "A cold-brewed espresso"], exp: "A ristretto is a 'restricted' espresso shot using less water, resulting in a more concentrated and intense flavor." }
+      { q: "¿Cuál es un sinónimo de sacárido?", a: ["Carbohidrato", "Proteína", "Lípido", "Mineral"], exp: "Sacárido es sinónimo de carbohidrato, la familia química que incluye todos los azúcares." },
+      { q: "¿Cuál es el azúcar más común en las bebidas?", a: ["Sacarosa", "Fructosa", "Glucosa", "Lactosa"], exp: "La sacarosa (azúcar de mesa) es el azúcar más utilizado en la preparación de bebidas y cócteles." },
+      { q: "¿Cuál es el uso principal de la glucosa?", a: ["Aportar energía", "Dar sabor", "Conservar alimentos", "Colorear bebidas"], exp: "La glucosa la usa principalmente el cuerpo como fuente de energía y es la forma más simple de azúcar." },
+      { q: "¿De dónde se obtiene la stevia?", a: ["De las hojas de la planta de stevia", "De las raíces de la caña", "De los granos de maíz", "De las abejas"], exp: "La stevia es un edulcorante natural extraído de las hojas de la Stevia rebaudiana, originaria de Sudamérica." },
+      { q: "¿Cómo se prepara tradicionalmente el matcha?", a: ["Batiendo el té en polvo con agua caliente", "Infusionando hojas en agua hirviendo", "En una cafetera", "Prensando las hojas en frío"], exp: "El matcha se prepara batiendo el té verde en polvo fino con agua caliente usando un batidor de bambú (chasen)." },
+      { q: "¿Cuál es una característica del té negro?", a: ["Oxidado al 100%", "Oxidado al 0%", "Oxidado al 50%", "Fermentado con bacterias"], exp: "El té negro está completamente oxidado (100%), lo que le da su color oscuro y su sabor intenso." },
+      { q: "¿Dónde tiene su origen el café?", a: ["Etiopía", "Brasil", "Colombia", "Yemen"], exp: "El café nace en Etiopía, donde la leyenda cuenta que un pastor llamado Kaldi descubrió el efecto estimulante de sus bayas." },
+      { q: "¿Cuál es la especie de café más cultivada comercialmente?", a: ["Arábica", "Robusta", "Libérica", "Excelsa"], exp: "La arábica es la especie más cultivada y consumida, representando entre el 60% y el 70% de la producción mundial." },
+      { q: "¿Qué es la 'crema' del espresso?", a: ["La capa de espuma dorada en la superficie", "El poso del café", "La espuma de leche añadida", "El azúcar disuelto en la taza"], exp: "La crema es la capa de espuma dorada que se forma sobre un espresso bien extraído e indica frescura y calidad." },
+      { q: "¿Qué es un ristretto?", a: ["Un espresso restringido, más concentrado", "Un doble de espresso", "Un espresso con agua extra", "Un espresso en frío"], exp: "Un ristretto es un espresso 'restringido' con menos agua, lo que da un sabor más concentrado e intenso." }
     ]
   },
   {
