@@ -1645,11 +1645,28 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
             icon="🗑️"
             label={tr('profile.delete_progress', 'Borrar progreso')}
             value={<button onClick={async () => {
-              if (!confirm(tr('profile.delete_progress_confirm', '¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.'))) return;
-              // Try to also delete cloud data if signed in
-              const signedIn = window.stAuth && window.stAuth.getCurrentUser && window.stAuth.getCurrentUser() && !window.stAuth.getCurrentUser().isGuest;
+              const cu = window.stAuth?.getCurrentUser?.();
+              const who = cu?.email || cu?.name || '';
+              // Show the account identifier in the confirm dialog so the user
+              // never accidentally wipes the wrong one.
+              const msg = window.stLang?.t
+                ? window.stLang.t('profile.delete_progress_confirm_who', { who })
+                : tr('profile.delete_progress_confirm', '¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.');
+              const resolved = (msg && msg !== 'profile.delete_progress_confirm_who')
+                ? msg
+                : `¿Borrar el progreso de ${who}? Esto restablece XP, nivel y estadísticas.`;
+              if (!confirm(resolved)) return;
+              const signedIn = cu && !cu.isGuest;
               if (signedIn && window.stAuth.deleteUserData) {
-                try { await window.stAuth.deleteUserData(); } catch (e) { console.warn('cloud wipe failed:', e); }
+                try {
+                  await window.stAuth.deleteUserData();
+                } catch (e) {
+                  if (e && e.code === 'auth-state-unstable') {
+                    alert(tr('profile.reset_unstable', 'La sesión está cambiando de cuenta. Espera unos segundos y vuelve a intentarlo.'));
+                    return;
+                  }
+                  console.warn('cloud wipe failed:', e);
+                }
               }
               onResetData && onResetData();
             }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>borrar →</button>}

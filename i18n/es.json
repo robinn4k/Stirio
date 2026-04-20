@@ -3154,6 +3154,8 @@
   "profile.language": "Idioma",
   "profile.delete_progress": "Borrar progreso",
   "profile.delete_progress_confirm": "¿Borrar todo tu progreso? Esto restablece XP, nivel y estadísticas.",
+  "profile.delete_progress_confirm_who": "¿Borrar el progreso de {who}? Esto restablece XP, nivel y estadísticas.",
+  "profile.reset_unstable": "La sesión está cambiando de cuenta. Espera unos segundos y vuelve a intentarlo.",
   "profile.sign_out": "Cerrar sesión",
   "profile.sign_out_confirm": "¿Cerrar sesión? Volverás al onboarding.",
   "profile.delete_account": "Borrar cuenta",

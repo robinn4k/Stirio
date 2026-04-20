@@ -1836,6 +1836,8 @@
   "profile.language": "Langue",
   "profile.delete_progress": "Effacer la progression",
   "profile.delete_progress_confirm": "Effacer toute ta progression ? Cela réinitialise l'XP, le niveau et les stats.",
+  "profile.delete_progress_confirm_who": "Effacer la progression de {who} ? Cela réinitialise l'XP, le niveau et les stats.",
+  "profile.reset_unstable": "La session change encore de compte. Attends quelques secondes et réessaie.",
   "profile.sign_out": "Se déconnecter",
   "profile.sign_out_confirm": "Se déconnecter ? Tu reviendras à l'onboarding.",
   "profile.delete_account": "Supprimer le compte",

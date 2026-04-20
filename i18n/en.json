@@ -1879,6 +1879,8 @@
   "profile.language": "Language",
   "profile.delete_progress": "Delete progress",
   "profile.delete_progress_confirm": "Delete all your progress? This resets XP, level and stats.",
+  "profile.delete_progress_confirm_who": "Delete {who}'s progress? This resets XP, level and stats.",
+  "profile.reset_unstable": "The session is still switching accounts. Wait a few seconds and try again.",
   "profile.sign_out": "Sign out",
   "profile.sign_out_confirm": "Sign out? You'll return to onboarding.",
   "profile.delete_account": "Delete account",
