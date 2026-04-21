@@ -24,44 +24,12 @@ const ACHIEVEMENT_DEFS = [
   { id: 'academy_perfect', icon: '💎' },
 ];
 
-// ES fallbacks used when ach.<id> / ach.<id>.desc are not yet in lang.js.
-// Prevents raw keys like "ach.first_game" showing in the Profile UI.
-const ACH_FALLBACKS_ES = {
-  first_game:      { title: 'Primera partida',      desc: 'Completa tu primera ronda.' },
-  perfect_quiz:    { title: 'Quiz perfecto',        desc: 'Contesta una ronda sin fallos.' },
-  daily_first:     { title: 'Reto diario',          desc: 'Completa tu primer reto del día.' },
-  daily_perfect:   { title: 'Diario perfecto',      desc: 'Reto diario sin un solo fallo.' },
-  speed_20:        { title: 'Velocidad +20',        desc: 'Acierta 20+ en Velocidad 60s.' },
-  speed_30:        { title: 'Velocidad +30',        desc: 'Acierta 30+ en Velocidad 60s.' },
-  streak_3:        { title: 'Racha de 3',           desc: 'Juega 3 días seguidos.' },
-  streak_7:        { title: 'Racha de 7',           desc: 'Juega una semana seguida.' },
-  lessons_5:       { title: '5 lecciones',          desc: 'Completa 5 lecciones.' },
-  lessons_10:      { title: '10 lecciones',         desc: 'Completa 10 lecciones.' },
-  xp_500:          { title: '500 XP',               desc: 'Acumula 500 puntos de experiencia.' },
-  perfect_lesson:  { title: 'Lección perfecta',     desc: 'Termina una lección sin fallos.' },
-  all_rounds:      { title: 'Todas las rondas',     desc: 'Prueba todas las rondas de Quiz libre.' },
-  fichas_reader:   { title: 'Lector IBA',           desc: 'Abre al menos 10 fichas IBA.' },
-  academy_first:   { title: 'Academia: primer nivel', desc: 'Completa tu primer nivel de Academia.' },
-  academy_3:       { title: 'Academia: 3 niveles',  desc: 'Completa 3 niveles de Academia.' },
-  academy_all:     { title: 'Academia completa',    desc: 'Completa todos los niveles de Academia.' },
-  academy_perfect: { title: 'Academia perfecta',    desc: 'Todos los niveles de Academia sin fallos.' },
-};
-
-function tOr(key, fallback) {
-  const v = t(key);
-  return (!v || v === key) ? fallback : v;
-}
-
-// Returns localized achievement definitions
 function localizedAll() {
-  return ACHIEVEMENT_DEFS.map(a => {
-    const fb = ACH_FALLBACKS_ES[a.id] || { title: a.id, desc: '' };
-    return {
-      ...a,
-      title: tOr(`ach.${a.id}`,       fb.title),
-      desc:  tOr(`ach.${a.id}.desc`,  fb.desc),
-    };
-  });
+  return ACHIEVEMENT_DEFS.map(a => ({
+    ...a,
+    title: t(`ach.${a.id}`),
+    desc:  t(`ach.${a.id}.desc`),
+  }));
 }
 
 // Backwards-compatible export

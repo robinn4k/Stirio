@@ -437,7 +437,7 @@ function buildFilterPanel(container) {
   toggle.className = 'spirit-map-filter-toggle';
   toggle.innerHTML = `
     <span aria-hidden="true">🎛</span>
-    <span>${tOr('wiki.map.filters', 'Filtros')}</span>
+    <span>${t('wiki.map.filters')}</span>
     <span class="spirit-map-filter-count" data-filter-count></span>
     <span class="spirit-map-filter-toggle-caret" aria-hidden="true">▾</span>
   `;
@@ -453,7 +453,7 @@ function buildFilterPanel(container) {
 
   FILTER_GROUPS.forEach(group => {
     const color = SPIRIT_COLORS[group.spirits[0]] || '#ffffff';
-    const label = tOr(`wiki.map.filter.${group.id}`, FILTER_LABELS_ES[group.id] || titleCase(group.id));
+    const label = tOrTitleCase(`wiki.map.filter.${group.id}`, group.id);
     const count = countsByGroup[group.id] || 0;
     const btn = document.createElement('button');
     btn.type = 'button';
@@ -502,29 +502,15 @@ function buildFilterPanel(container) {
   document.addEventListener('click', _filterOutsideHandler);
 }
 
-// Fallback ES labels used when no i18n value exists for wiki.map.* keys.
-// Avoids showing raw keys like "wiki.map.filter.spirits" in the UI.
-const FILTER_LABELS_ES = {
-  spirits: 'Destilados', wine: 'Vinos', sparkling: 'Espumosos',
-  liqueur: 'Licores', amaro: 'Amaros y aperitivos', beer: 'Cervezas',
-  soda: 'Sodas', coffee: 'Café', tea: 'Té',
-};
-const SPIRIT_LABELS_ES = {
-  whisky: 'Whisky', gin: 'Gin', tequila: 'Tequila', mezcal: 'Mezcal',
-  rum: 'Ron', vodka: 'Vodka', brandy: 'Brandy', pisco: 'Pisco',
-  orujo: 'Orujo', cachaca: 'Cachaça', sake: 'Sake', soju: 'Soju',
-  baijiu: 'Baijiu', aquavit: 'Aquavit', raki: 'Rakı', ouzo: 'Ouzo',
-  eaudevie: 'Eau-de-vie', wine: 'Vino', fortified: 'Vino fortificado',
-  sparkling: 'Espumoso', liqueur: 'Licor', vermouth: 'Vermut',
-  amaro: 'Amaro', aperitivo: 'Aperitivo', bitters: 'Bitters',
-  beer: 'Cerveza', soda: 'Soda', coffee: 'Café', tea: 'Té',
-};
 function titleCase(id) {
   return String(id || '').split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
 }
-function tOr(key, fallback) {
-  const val = t(key);
-  return (!val || val === key) ? fallback : val;
+
+// Defensive helper for region/spirit IDs added without translations yet.
+// `t()` returns the key verbatim when missing — we'd rather show a titleCased id.
+function tOrTitleCase(key, id) {
+  const v = t(key);
+  return (!v || v === key) ? titleCase(id) : v;
 }
 
 /**
@@ -574,9 +560,11 @@ export function initSpiritMap(container) {
   // Add markers for each region
   SPIRIT_REGIONS.forEach(region => {
     const color = SPIRIT_COLORS[region.spirit] || '#ffffff';
-    const name = tOr(`wiki.map.${region.id}`, titleCase(region.id));
-    const desc = tOr(`wiki.map.${region.id}.desc`, '');
-    const spiritName = tOr(`wiki.map.spirit.${region.spirit}`, SPIRIT_LABELS_ES[region.spirit] || titleCase(region.spirit));
+    const name = tOrTitleCase(`wiki.map.${region.id}`, region.id);
+    const descKey = `wiki.map.${region.id}.desc`;
+    const descVal = t(descKey);
+    const desc = (descVal && descVal !== descKey) ? descVal : '';
+    const spiritName = tOrTitleCase(`wiki.map.spirit.${region.spirit}`, region.spirit);
     const groupId = groupIdForSpirit(region.spirit);
     if (!markersByGroup[groupId]) markersByGroup[groupId] = [];
 
@@ -609,7 +597,7 @@ export function initSpiritMap(container) {
 
     // Build date line: "Since XXXX"
     const dateLine = region.dateCreated
-      ? `${tOr('wiki.map.since', 'Desde')} ${region.dateCreated}`
+      ? `${t('wiki.map.since')} ${region.dateCreated}`
       : '';
 
     marker.bindPopup(`

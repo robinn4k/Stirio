@@ -109,8 +109,15 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
 
 const LevelCard = ({ level, index, locked, progress, onOpen }) => {
   const _t = (k, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k) : (f || k);
+  const _tp = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
   const title = _t(level.key);
   const desc = _t(level.descKey);
+  const levelN = String(index).padStart(2, '0');
+  const progressLine = _tp(
+    'academy.level_progress',
+    { n: levelN, done: progress.done, total: progress.total },
+    `Nivel ${levelN} · ${progress.done}/${progress.total} lecciones`,
+  );
   return (
     <button onClick={onOpen} className="card" style={{
       padding: 18, textAlign: 'left', cursor: locked ? 'not-allowed' : 'pointer',
@@ -127,7 +134,7 @@ const LevelCard = ({ level, index, locked, progress, onOpen }) => {
       }}>{level.icon}</div>
       <div>
         <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginBottom: 2 }}>
-          Nivel {String(index).padStart(2, '0')} · {progress.done}/{progress.total} lecciones
+          {progressLine}
         </div>
         <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 3 }}>{title}</div>
         <div style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.3 }}>{desc}</div>

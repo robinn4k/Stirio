@@ -45,7 +45,8 @@ js/rhythm.jsx       RhythmScreen — tap-on-beat shaker rhythm (100 BPM)
 js/app.jsx          App root: router, BottomNav FAB, ErrorBoundary wrapper, theme/density state
 map.html            Standalone Leaflet page (CDN) loading initSpiritMap from wiki-map.js
 wiki.html           Standalone R3F wiki page (iframe from WikiScreen / LibraryScreen)
-js/lang.js          i18n core: t(), getLang(), setLang(), translations for es/en/fr/pt/de
+js/lang.js          i18n runtime: t(), getLang(), setLang(), loader for i18n/*.json
+i18n/{lang}.json    Per-language flat key-value translation stores (es/en/fr/pt/de)
 js/quiz.js          Quiz round engine (state, timer, scoring)
 js/learn.js         Learning XP store (cq_learn_data) — canonical XP + streak; exports addXp()
 js/daily.js         Daily challenge (seeded RNG for consistent questions per day)
@@ -57,7 +58,7 @@ js/rivals.js        Real-time 1v1 multiplayer via Firebase RTDB
 js/bot.js           Bot opponent for Duel
 js/auth.js          Firebase Auth (Google + guest mode)
 js/leaderboard.js   Score persistence (localStorage + Firestore); reads xpTotal from stLearn
-js/achievements.js  Achievement tracking + ES fallback titles/descs
+js/achievements.js  Achievement tracking; strings via `ach.<id>` / `ach.<id>.desc` keys
 js/wiki-map.js      Spirit regions data (100+) + initSpiritMap (Leaflet) used by map.html & wiki.html
 js/wiki-data.js     Wiki article catalog (techniques, spirits, glassware, tools, 3D models…)
 js/i18n/            Per-language question files + fichas translation lookup
@@ -94,25 +95,38 @@ boundary.
 
 ### How it works
 
-The `t()` function in `lang.js` supports two modes:
+Translations live in **`i18n/{es,en,fr,pt,de}.json`** (flat key → string maps).
+`js/lang.js` is the runtime that loads them (`preloadAllTranslations()` fetches
+all five at startup; SW caches them for offline).
+
+The `t()` function supports two modes:
 
 1. **String keys**: `t('login.tagline')` → looks up in `translations[currentLang]`
 2. **Multilingual objects**: `t({es: 'Hola', en: 'Hello'})` → returns value for current language
 
-**Fallback chain**: current lang → English → Spanish → first available → empty string.
+Both modes support interpolation: `t('blind.question', { n: 3, total: 10 })`
+replaces `{n}` / `{total}` placeholders.
 
-If no translation exists for a key, `t()` returns the key itself. To avoid surfacing
-raw keys in the UI, recently added screens use a **`tOr(key, fallback)`** pattern:
+**Fallback chain**: current lang → Spanish (DEFAULT_LANG) → the key itself.
 
-```js
-const tOr = (k, fb) => { const v = t(k); return (!v || v === k) ? fb : v; };
-```
+If no translation exists for a key, `t()` returns the key verbatim. Prefer adding
+the key to all 5 JSON files over relying on the deprecated `tOr(key, 'spanish')`
+pattern — that pattern silently hides missing translations from non-ES users.
 
-See `wiki-map.js`, `achievements.js`, and the `tr(k, f)` aliases across JSX files.
+`tOr()` is still acceptable as a *defensive* safety net when:
+- A screen is mid-refactor and keys are being added incrementally.
+- A value is genuinely dynamic (e.g. titleCasing an ID that has no translation yet).
+
+Other sanctioned i18n "pockets" outside `i18n/*.json`:
+- **Quiz rounds**: `js/i18n/questions_{lang}.js` — one file per language.
+- **Fichas metadata**: `js/i18n/fichas_i18n.js` — inline dictionaries for
+  `CATEGORIES`, `FAMILIES`, `GLASSES`, `METHODS`, `GARNISHES`.
+- **Blind tasting clues**: `js/blind.js` uses inline `{es, en, fr, pt, de}`
+  objects passed to `t()`.
 
 ### Adding translations
 
-- **UI strings**: Add the key to ALL 5 language blocks in `js/lang.js`
+- **UI strings**: Add the key to ALL 5 files in `i18n/{es,en,fr,pt,de}.json`
 - **Quiz questions**: Add the question to ALL 5 files in `js/i18n/questions_{lang}.js`
 - **Cocktail data**: Add Spanish entry to `js/fichas.js`, translations to `js/i18n/fichas_i18n.js`
 - **Blind tasting**: Add multilingual objects directly in `js/blind.js`
@@ -120,7 +134,7 @@ See `wiki-map.js`, `achievements.js`, and the `tr(k, f)` aliases across JSX file
 ### Adding a new language
 
 1. Add lang code to `SUPPORTED_LANGS` in `js/lang.js`
-2. Add a new translation block in `js/lang.js`
+2. Create `i18n/<lang>.json` mirroring the keys from `i18n/es.json`
 3. Create `js/i18n/questions_{lang}.js` with all 24 rounds
 4. Add entries to `js/i18n/fichas_i18n.js` lookup dictionaries
 5. Add entries to `js/blind.js` multilingual objects

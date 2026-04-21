@@ -1,5 +1,6 @@
-// Stirio — GlossaryScreen: searchable bartending glossary (ES only for now)
-// i18n keys reserved as `glossary.term.<id>` / `glossary.def.<id>` for follow-up.
+// Stirio — GlossaryScreen: searchable bartending glossary.
+// Term/def text falls back to Spanish; translations land via `glossary.term.<id>` /
+// `glossary.def.<id>` keys in i18n/*.json (follow-up PRs).
 
 const GLOSSARY_TERMS = [
   { id: 'shake', cat: 'tech', term: 'Shake', def: 'Agitar los ingredientes con hielo en una coctelera para enfriar, diluir y aerear.' },
@@ -54,15 +55,18 @@ const GlossaryScreen = ({ onBack }) => {
 
   const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const q = norm(query.trim());
-  const filtered = GLOSSARY_TERMS.filter(t =>
-    (cat === 'all' || t.cat === cat) &&
-    (!q || norm(t.term).includes(q) || norm(t.def).includes(q))
-  );
+  const localizedTerm = (item) => tr(`glossary.term.${item.id}`, item.term);
+  const localizedDef  = (item) => tr(`glossary.def.${item.id}`,  item.def);
+  const filtered = GLOSSARY_TERMS.filter(item => {
+    if (cat !== 'all' && item.cat !== cat) return false;
+    if (!q) return true;
+    return norm(localizedTerm(item)).includes(q) || norm(localizedDef(item)).includes(q);
+  });
 
   return (
     <div style={{ minHeight: '100dvh', padding: '24px 20px 120px', maxWidth: 640, margin: '0 auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-        <button className="btn" onClick={onBack} aria-label="Volver" style={{ padding: '6px 10px', minWidth: 40 }}>
+        <button className="btn" onClick={onBack} aria-label={tr('ui.back', 'Volver')} style={{ padding: '6px 10px', minWidth: 40 }}>
           <Icon name="arrowL" size={18} />
         </button>
         <div>
@@ -93,7 +97,7 @@ const GlossaryScreen = ({ onBack }) => {
             border: '1px solid ' + (cat === k ? 'var(--amber)' : 'var(--line)'),
             cursor: 'pointer',
           }}>
-            {c.icon} {c.label}
+            {c.icon} {tr(`glossary.cat.${k}`, c.label)}
           </button>
         ))}
       </div>
@@ -104,15 +108,15 @@ const GlossaryScreen = ({ onBack }) => {
         </div>
       ) : (
         <div style={{ display: 'grid', gap: 10 }}>
-          {filtered.map(t => (
-            <div key={t.id} className="card" style={{ padding: 14 }}>
+          {filtered.map(item => (
+            <div key={item.id} className="card" style={{ padding: 14 }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 4 }}>
-                <h3 style={{ fontFamily: 'var(--f-serif)', fontSize: 17, margin: 0 }}>{t.term}</h3>
+                <h3 style={{ fontFamily: 'var(--f-serif)', fontSize: 17, margin: 0 }}>{localizedTerm(item)}</h3>
                 <span className="mono caps" style={{ fontSize: 10, color: 'var(--amber)' }}>
-                  {GLOSSARY_CATS[t.cat].label}
+                  {tr(`glossary.cat.${item.cat}`, GLOSSARY_CATS[item.cat].label)}
                 </span>
               </div>
-              <p style={{ margin: 0, color: 'var(--ink-2)', fontSize: 14, lineHeight: 1.5 }}>{t.def}</p>
+              <p style={{ margin: 0, color: 'var(--ink-2)', fontSize: 14, lineHeight: 1.5 }}>{localizedDef(item)}</p>
             </div>
           ))}
         </div>
