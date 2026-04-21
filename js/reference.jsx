@@ -249,9 +249,16 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
                     <div style={{ fontSize: 22 }}>{locked ? '🔒' : passed ? '🏆' : '⚡'}</div>
                     <div>
                       <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>
-                        {window.stLang && window.stLang.t
-                          ? window.stLang.t('academy.practice_label', { id: item.roundId })
-                          : `Práctica · Ronda ${item.roundId}`}
+                        {(() => {
+                          const rounds = window.stQuestions?.getLocalizedRounds?.(
+                            window.stLang?.getLang?.() || 'es'
+                          ) || window.TRIVIA_ROUNDS || [];
+                          const round = rounds.find(r => r.id === item.roundId);
+                          const title = round?.title || `Ronda ${item.roundId}`;
+                          return window.stLang && window.stLang.t
+                            ? window.stLang.t('academy.practice_label', { title })
+                            : title;
+                        })()}
                       </div>
                       <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
                         {locked
