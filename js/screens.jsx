@@ -11,21 +11,21 @@ const ONBOARDING_LANGS = [
 ];
 
 const ONBOARDING_INTERESTS = [
-  { id: 'iba',           fallback: 'Clásicos IBA',    emoji: '📖' },
-  { id: 'techniques',    fallback: 'Técnicas',        emoji: '🎯' },
-  { id: 'history',       fallback: 'Historia',        emoji: '📜' },
-  { id: 'tiki',          fallback: 'Tiki',            emoji: '🌺' },
-  { id: 'mocktails',     fallback: 'Mocktails',       emoji: '🍋' },
-  { id: 'spirits_world', fallback: 'Mundo destilados',emoji: '🗺️' },
+  { id: 'iba',           emoji: '📖' },
+  { id: 'techniques',    emoji: '🎯' },
+  { id: 'history',       emoji: '📜' },
+  { id: 'tiki',          emoji: '🌺' },
+  { id: 'mocktails',     emoji: '🍋' },
+  { id: 'spirits_world', emoji: '🗺️' },
 ];
 
 const ONBOARDING_SPIRITS = [
-  { id: 'gin',     fallback: 'Gin',     emoji: '🌿' },
-  { id: 'rum',     fallback: 'Ron',     emoji: '🏝️' },
-  { id: 'whisky',  fallback: 'Whisky',  emoji: '🥃' },
-  { id: 'tequila', fallback: 'Tequila', emoji: '🌵' },
-  { id: 'vodka',   fallback: 'Vodka',   emoji: '❄️' },
-  { id: 'brandy',  fallback: 'Brandy',  emoji: '🍇' },
+  { id: 'gin',     emoji: '🌿' },
+  { id: 'rum',     emoji: '🏝️' },
+  { id: 'whisky',  emoji: '🥃' },
+  { id: 'tequila', emoji: '🌵' },
+  { id: 'vodka',   emoji: '❄️' },
+  { id: 'brandy',  emoji: '🍇' },
 ];
 
 const Onboarding = ({ onDone }) => {
@@ -566,7 +566,7 @@ const Onboarding = ({ onDone }) => {
                     }}>
                       <div style={{ fontSize: 22 }}>{it.emoji}</div>
                       <div style={{ fontWeight: 500, fontSize: 13 }}>
-                        {tr(`onboarding.interest.${it.id}`, it.fallback)}
+                        {tr(`onboarding.interest.${it.id}`)}
                       </div>
                     </button>
                   );
@@ -580,8 +580,8 @@ const Onboarding = ({ onDone }) => {
               <StepTitle eyebrow={tr('onboarding.alcohol_eyebrow', 'preferencia')} title={tr('onboarding.alcohol_title', '¿Bebes alcohol?')} subtitle={tr('onboarding.alcohol_subtitle', 'Adaptamos las recetas que te sugerimos.')} />
               <div style={{ display: 'grid', gap: 10 }}>
                 {[
-                  { id: 'regular',   fallback: 'Sí, lo normal',  caption: 'Todas las recetas', emoji: '🍸' },
-                  { id: 'mocktails', fallback: 'Solo mocktails', caption: 'Sin alcohol',       emoji: '🍹' },
+                  { id: 'regular',   emoji: '🍸' },
+                  { id: 'mocktails', emoji: '🍹' },
                 ].map(a => {
                   const picked = alcohol === a.id;
                   return (
@@ -597,10 +597,10 @@ const Onboarding = ({ onDone }) => {
                       <div style={{ fontSize: 28 }}>{a.emoji}</div>
                       <div style={{ flex: 1 }}>
                         <div style={{ fontWeight: 500, fontSize: 15 }}>
-                          {tr(`onboarding.alcohol_${a.id}`, a.fallback)}
+                          {tr(`onboarding.alcohol_${a.id}`)}
                         </div>
                         <div style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
-                          {tr(`onboarding.alcohol_${a.id}_cap`, a.caption)}
+                          {tr(`onboarding.alcohol_${a.id}_cap`)}
                         </div>
                       </div>
                       <div style={{
@@ -635,7 +635,7 @@ const Onboarding = ({ onDone }) => {
                     }}>
                       <div style={{ fontSize: 28 }}>{s.emoji}</div>
                       <div style={{ fontWeight: 500, fontSize: 13 }}>
-                        {tr(`onboarding.spirit.${s.id}`, s.fallback)}
+                        {tr(`onboarding.spirit.${s.id}`)}
                       </div>
                     </button>
                   );
@@ -1562,7 +1562,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
                 }}
               >
                 {(playShortcuts || []).map(s => (
-                  <option key={s.id} value={s.id}>{s.icon} {s.label}</option>
+                  <option key={s.id} value={s.id}>{s.icon} {tr(`app.shortcut.${s.id}`, s.id)}</option>
                 ))}
               </select>
             }

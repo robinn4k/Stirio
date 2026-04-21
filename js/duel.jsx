@@ -690,7 +690,7 @@ const BotDuel = ({ onBack, selection }) => {
 
   if (!started) {
     return (
-      <DuelShell title="Contra bot" subtitle="Elige dificultad" onBack={onBack}>
+      <DuelShell title={dTr('duel.bot_mode', 'Contra bot')} subtitle={dTr('duel.pick_difficulty', 'Elige dificultad')} onBack={onBack}>
         <div style={{ display: 'grid', gap: 10, marginBottom: 14 }}>
           {Object.keys(DIFFS).map(d => (
             <button key={d} className="btn" onClick={() => setDiff(d)}
@@ -701,21 +701,29 @@ const BotDuel = ({ onBack, selection }) => {
               }}>
               <div style={{ fontWeight: 700, textTransform: 'capitalize' }}>{d === 'easy' ? dTr('duel.diff_easy', '🌱 Fácil') : d === 'medium' ? dTr('duel.diff_medium', '⚡ Medio') : dTr('duel.diff_hard', '🔥 Difícil')}</div>
               <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 2 }}>
-                Precisión {Math.round(DIFFS[d].accuracy * 100)}% · Respuesta {(DIFFS[d].minMs / 1000).toFixed(1)}–{(DIFFS[d].maxMs / 1000).toFixed(1)}s
+                {dTrParams('duel.bot_diff_desc', {
+                  acc: Math.round(DIFFS[d].accuracy * 100),
+                  min: (DIFFS[d].minMs / 1000).toFixed(1),
+                  max: (DIFFS[d].maxMs / 1000).toFixed(1),
+                }, `Precisión ${Math.round(DIFFS[d].accuracy * 100)}% · Respuesta ${(DIFFS[d].minMs / 1000).toFixed(1)}–${(DIFFS[d].maxMs / 1000).toFixed(1)}s`)}
               </div>
             </button>
           ))}
         </div>
-        <button className="btn primary" onClick={() => setStarted(true)} style={{ width: '100%' }}>▶ Empezar</button>
+        <button className="btn primary" onClick={() => setStarted(true)} style={{ width: '100%' }}>{dTr('duel.start_bot', '▶ Empezar')}</button>
       </DuelShell>
     );
   }
 
-  if (!currentQ) return <DuelShell title="Duelo" subtitle="Error" onBack={onBack}><div className="card" style={{ padding: 20 }}>Sin preguntas.</div></DuelShell>;
+  if (!currentQ) return (
+    <DuelShell title={dTr('duel.title', 'Duelo')} subtitle={dTr('duel.error_sub', 'Error')} onBack={onBack}>
+      <div className="card" style={{ padding: 20 }}>{dTr('duel.err_no_questions', 'Sin preguntas.')}</div>
+    </DuelShell>
+  );
 
   if (phase === 'done') {
     return (
-      <DuelShell title="Contra bot" subtitle="Resultado" onBack={onBack}>
+      <DuelShell title={dTr('duel.bot_mode', 'Contra bot')} subtitle={dTr('duel.result_title', 'Resultado')} onBack={onBack}>
         <DuelResults
           players={{ p1: { name: dTr('duel.you', 'Tú'), score: userScore }, p2: { name: botName.current, score: botScore } }}
           mySlot="p1"
@@ -979,7 +987,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
 
   if (phase === 'menu') {
     return (
-      <DuelShell title="Duelo" subtitle="Reta a otros jugadores" onBack={onBack}>
+      <DuelShell title={dTr('duel.title', 'Duelo')} subtitle={dTr('duel.menu_subtitle', 'Reta a otros jugadores')} onBack={onBack}>
         <DuelMenu
           rtdbReady={rtdbReady}
           quizLang={quizLang}
@@ -1011,7 +1019,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
 
   if (phase === 'random') {
     return (
-      <DuelShell title="Duelo" subtitle="Rival aleatorio" onBack={returnToMenu}>
+      <DuelShell title={dTr('duel.title', 'Duelo')} subtitle={dTr('duel.random_subtitle', 'Rival aleatorio')} onBack={returnToMenu}>
         <LobbySearching seconds={searchSeconds} onCancel={returnToMenu} />
         <Toast msg={toast?.msg} type={toast?.type} onClose={() => setToast(null)} />
       </DuelShell>
@@ -1048,7 +1056,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
       return null;
     };
     return (
-      <DuelShell title="Sala de duelo" subtitle={`${maxPlayers} jugadores`} onBack={returnToMenu}>
+      <DuelShell title={dTr('duel.host_room_title', 'Sala de duelo')} subtitle={dTrParams('duel.host_room_players', { n: maxPlayers }, `${maxPlayers} jugadores`)} onBack={returnToMenu}>
         <LobbyHost
           code={code}
           maxPlayers={maxPlayers}
@@ -1070,7 +1078,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     // Fall back to `useTimer: true` for rooms created before this flag existed.
     const roomUseTimer = room?.setup?.useTimer !== false;
     return (
-      <DuelShell title="Duelo" subtitle="En juego" onBack={returnToMenu}>
+      <DuelShell title={dTr('duel.title', 'Duelo')} subtitle={dTr('duel.playing_subtitle', 'En juego')} onBack={returnToMenu}>
         <DuelGame
           roomId={roomId}
           slot={slot}
@@ -1088,7 +1096,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
 
   if (phase === 'results') {
     return (
-      <DuelShell title="Resultado" subtitle="Duelo terminado" onBack={returnToMenu}>
+      <DuelShell title={dTr('duel.result_title', 'Resultado')} subtitle={dTr('duel.result_subtitle', 'Duelo terminado')} onBack={returnToMenu}>
         <DuelResults
           players={room?.players || {}}
           mySlot={slot}

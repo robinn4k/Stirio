@@ -2,13 +2,14 @@
 // Depends on: ui.jsx, screens.jsx, lesson.jsx, reference.jsx, data.js, repo-data.js
 // React hooks come from ui.jsx's top-level destructuring (shared script scope).
 
+// Labels come from `app.shortcut.<id>` keys in i18n/*.json at render time.
 const PLAY_SHORTCUTS = [
-  { id: 'daily',     label: 'Reto diario',    icon: '📅', desc: '10 preguntas frescas' },
-  { id: 'speed',     label: 'Velocidad 60s',  icon: '⚡',  desc: 'Ronda rápida de un minuto' },
-  { id: 'academy',   label: 'Academia',       icon: '🎓', desc: 'Familias y rondas IBA' },
-  { id: 'iba',       label: 'Recetas',        icon: '📇', desc: 'Recetario oficial' },
-  { id: 'freequiz',  label: 'Quiz libre',     icon: '🎲', desc: 'Elige la ronda' },
-  { id: 'mode-menu', label: 'Menú de modos',  icon: '⋯',  desc: 'Mostrar todo' },
+  { id: 'daily',     icon: '📅' },
+  { id: 'speed',     icon: '⚡' },
+  { id: 'academy',   icon: '🎓' },
+  { id: 'iba',       icon: '📇' },
+  { id: 'freequiz',  icon: '🎲' },
+  { id: 'mode-menu', icon: '⋯' },
 ];
 
 const TWEAK_DEFAULTS = {
@@ -659,7 +660,12 @@ const App = () => {
 };
 
 // ── Bottom nav ──────────────────────────────────────────────────
-const BottomNav = ({ current, onNav, onPlay, shortcut }) => (
+const BottomNav = ({ current, onNav, onPlay, shortcut }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const shortcutLabel = shortcut?.id
+    ? tr(`app.shortcut.${shortcut.id}`, tr('app.shortcut.default', 'Jugar'))
+    : tr('app.shortcut.default', 'Jugar');
+  return (
   <nav style={{
     position: 'fixed', bottom: 18, left: 0, right: 0, zIndex: 30,
     display: 'flex', justifyContent: 'center', pointerEvents: 'none',
@@ -688,15 +694,16 @@ const BottomNav = ({ current, onNav, onPlay, shortcut }) => (
       }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.08)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-        aria-label={shortcut?.label || 'Jugar'}
-        title={shortcut?.label || 'Jugar'}
+        aria-label={shortcutLabel}
+        title={shortcutLabel}
       >
         {shortcut?.icon || <Icon name="play" size={22} />}
       </button>
       <NavBtn icon="user" label="You" active={current === 'profile'} onClick={() => onNav('profile')} />
     </div>
   </nav>
-);
+  );
+};
 
 const NavBtn = ({ icon, label, active, onClick }) => (
   <button className={`nav-btn ${active ? 'active' : ''}`} onClick={onClick} style={{
