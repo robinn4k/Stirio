@@ -473,5 +473,24 @@ export const rounds = [
       { q: "Quelle est la formule officielle IBA du Spritz vénitien ?", a: ["3 parts prosecco, 2 parts Aperol, 1 trait de soda", "1:1:1 prosecco, Aperol, eau", "2:1:0 prosecco, Aperol", "Aperol sur glace avec une tranche d'orange"], exp: "La formule IBA du Spritz vénitien est 3 prosecco, 2 Aperol et un trait de soda, servi avec une tranche d'orange." },
       { q: "Quel gin japonais est distillé à Kyoto à partir d'une base de riz ?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi, de la Kyoto Distillery, utilise un distillat neutre de riz comme base, avec des botaniques de la région de Kyoto." }
     ]
+  },
+  {
+    id: 26,
+    title: "Ingrédients maison",
+    subtitle: "Sirops, cordiaux et techniques de garde",
+    icon: "🧪",
+    color: "#27ae60",
+    questions: [
+      { q: "Quelle est la proportion du sirop simple 1:1 ?", a: ["1 part de sucre pour 1 part d'eau", "2 parts de sucre pour 1 d'eau", "1 part de sucre pour 2 d'eau", "1 part de sucre pour 3 d'eau"], exp: "Le sirop simple 1:1 combine sucre et eau à parts égales ; le 'rich syrup' utilise 2:1 et se conserve plus longtemps au frais." },
+      { q: "Qu'est-ce que l'oleo saccharum ?", a: ["Du sucre macéré avec des zestes d'agrumes qui en extrait les huiles essentielles", "Une huile de sésame grillée", "Un sirop à l'huile d'olive", "Une méthode de fat-wash"], exp: "L'oleo saccharum (latin 'huile-sucre') se prépare en macérant du zeste de citron ou d'orange avec du sucre pour extraire les huiles essentielles aromatiques." },
+      { q: "Avec quoi élabore-t-on l'orgeat traditionnel ?", a: ["Amandes, sucre et eau de fleur d'oranger", "Noix de muscade et miel", "Noisette et anis", "Noix de coco et citron"], exp: "L'orgeat classique est un sirop d'amandes à l'eau de fleur d'oranger ; on l'utilise dans le Mai Tai et le Japanese Cocktail." },
+      { q: "Qu'est-ce qu'un shrub ?", a: ["Un sirop de fruit conservé au vinaigre", "Un cocktail d'herbes fraîches", "Un type de bitter anglais", "Un arbuste aromatique"], exp: "Le shrub est un sirop historique de fruit, sucre et vinaigre ; il apporte une acidité vive et se conserve plusieurs semaines au frais." },
+      { q: "En quoi consiste la véritable grenadine ?", a: ["Jus de grenade concentré et sucre", "Sirop rouge industriel au cassis", "Eau de rose et sucre", "Pomme rouge et colorant"], exp: "La grenadine originale se prépare avec du jus de grenade réduit et du sucre ; la plupart des versions commerciales utilisent colorant et sirop de glucose." },
+      { q: "Quels arômes définissent le falernum ?", a: ["Gingembre, clou de girofle, citron vert et amande", "Miel et cannelle", "Café et vanille", "Ananas et cardamome"], exp: "Le falernum est une liqueur ou sirop antillais au gingembre, clou de girofle, citron vert et amande ; essentiel dans de nombreux cocktails tiki." },
+      { q: "Que permet la clarification au lait (milk-wash) ?", a: ["Faire cailler un cocktail acide avec du lait pour que la caséine capture solides et couleur", "Adoucir un cocktail avec du lait chaud", "Faire mousser le lait pour floater", "Fabriquer de la glace laiteuse"], exp: "La clarification au lait, du XVIIIe siècle, utilise des acides pour faire cailler la caséine, qui est filtrée en emportant sédiments et couleur." },
+      { q: "Que fait le fat-washing ?", a: ["Infuse un goût gras dans un spiritueux en congelant le mélange et en filtrant la graisse", "Nettoie le verre à l'huile", "Réduit les calories du cocktail", "Ajoute du lait entier au drink"], exp: "Le fat-washing, popularisé par Don Lee avec le Benton's Old Fashioned, infuse des graisses comme le bacon ou le beurre dans un spiritueux ; la congélation solidifie la graisse pour la filtrer." },
+      { q: "À quoi sert l'acide malique en mixologie moderne ?", a: ["Rétablir l'acidité d'un cocktail clarifié sans ajouter de pulpe", "Conserver les cocktails embouteillés", "Émulsionner les blancs d'œuf", "Augmenter l'ABV"], exp: "L'acide malique (pomme) ou citrique 'corrige' les liquides clarifiés : il apporte un pH bas sans la turbidité du jus frais." },
+      { q: "Combien de temps un sirop rich 2:1 se conserve-t-il au réfrigérateur ?", a: ["Environ un mois", "Un jour", "Six heures", "Un an à température ambiante"], exp: "Le sirop rich 2:1 se conserve environ un mois au frais grâce à sa forte concentration en sucre ; le 1:1 tient environ 2 semaines." }
+    ]
   }
 ];

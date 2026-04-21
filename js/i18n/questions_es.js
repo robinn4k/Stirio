@@ -473,5 +473,24 @@ export const rounds = [
       { q: "¿Cuál es la fórmula oficial IBA del Spritz veneciano?", a: ["3 partes prosecco, 2 partes Aperol, 1 toque de soda", "1:1:1 prosecco, Aperol, agua", "2:1:0 prosecco, Aperol", "Aperol con hielo y rodaja de naranja"], exp: "La fórmula IBA del Spritz veneciano es 3 prosecco, 2 Aperol y un toque de soda, servido con rodaja de naranja." },
       { q: "¿Qué ginebra japonesa se destila en Kioto usando una base de arroz?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi, de la Kyoto Distillery, utiliza un destilado neutro de arroz como base y botánicos de la región de Kioto." }
     ]
+  },
+  {
+    id: 26,
+    title: "Ingredientes de la casa",
+    subtitle: "Siropes, cordiales y técnicas de despensa",
+    icon: "🧪",
+    color: "#27ae60",
+    questions: [
+      { q: "¿Cuál es la proporción del sirope simple 1:1?", a: ["1 parte de azúcar por 1 parte de agua", "2 partes de azúcar por 1 de agua", "1 parte de azúcar por 2 de agua", "1 parte de azúcar por 3 de agua"], exp: "El sirope simple 1:1 combina azúcar y agua a partes iguales; el 'rich syrup' usa 2:1 y dura más en la nevera." },
+      { q: "¿Qué es el oleo saccharum?", a: ["Azúcar macerado con piel de cítrico que extrae los aceites esenciales", "Un aceite de sésamo tostado", "Un sirope con aceite de oliva", "Un método de fat-wash"], exp: "Oleo saccharum (latín 'aceite-azúcar') se prepara macerando piel de limón o naranja con azúcar para extraer aceites esenciales aromáticos." },
+      { q: "¿Con qué se elabora el orgeat tradicional?", a: ["Almendras, azúcar y agua de azahar", "Nuez moscada y miel", "Avellana y anís", "Coco y limón"], exp: "El orgeat clásico es un sirope de almendras con agua de azahar; se usa en el Mai Tai y el Japanese Cocktail." },
+      { q: "¿Qué es un shrub?", a: ["Un sirope de fruta conservado con vinagre", "Un cóctel de hierbas frescas", "Un tipo de bitter inglés", "Un arbusto aromático"], exp: "El shrub es un sirope antiguo de fruta, azúcar y vinagre; aporta acidez punzante y se conserva semanas refrigerado." },
+      { q: "¿De qué se hace la granadina auténtica?", a: ["Zumo de granada concentrado y azúcar", "Jarabe rojo industrial con grosella", "Agua de rosas y azúcar", "Manzana roja y colorante"], exp: "La granadina original se hace con zumo de granada reducido y azúcar; la mayoría de las versiones comerciales usan colorante y jarabe de maíz." },
+      { q: "¿Qué aromas definen al falernum?", a: ["Jengibre, clavo, lima y almendra", "Miel y canela", "Café y vainilla", "Piña y cardamomo"], exp: "El falernum es un licor o sirope antillano de jengibre, clavo, lima y almendra; esencial en muchos cócteles tiki." },
+      { q: "¿Qué consigue la clarificación con leche (milk-wash)?", a: ["Curar un cóctel ácido con leche para que la caseína atrape sólidos y color", "Suavizar un cóctel con leche caliente", "Espumar la leche para flotar", "Una forma de hacer hielo lechoso"], exp: "La clarificación con leche, del siglo XVIII, usa ácidos para coagular la caseína, que se filtra y arrastra sedimentos y color." },
+      { q: "¿Qué hace el fat-washing?", a: ["Infusiona sabor graso en un destilado congelando la mezcla y filtrando la grasa", "Limpia el vaso con aceite", "Quita calorías al cóctel", "Añade leche entera al trago"], exp: "El fat-washing, popularizado por Don Lee con el Benton's Old Fashioned, infunde grasas como bacon o mantequilla en un destilado; al congelar, la grasa se solidifica y se filtra." },
+      { q: "¿Para qué se usa el ácido málico en coctelería moderna?", a: ["Devolver acidez a un cóctel clarificado sin añadir pulpa", "Conservar cócteles embotellados", "Emulsionar claras de huevo", "Aumentar el ABV"], exp: "El ácido málico (manzana) o cítrico corrige la acidez en líquidos clarificados, aportando pH bajo sin la turbidez del zumo fresco." },
+      { q: "¿Cuánto dura un sirope rich 2:1 refrigerado?", a: ["Aproximadamente un mes", "Un día", "Seis horas", "Un año a temperatura ambiente"], exp: "El sirope rich 2:1 se conserva cerca de un mes refrigerado gracias a su alta concentración de azúcar; el 1:1 dura unas 2 semanas." }
+    ]
   }
 ];

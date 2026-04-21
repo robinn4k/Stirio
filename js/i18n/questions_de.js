@@ -473,5 +473,24 @@ export const rounds = [
       { q: "Wie lautet die offizielle IBA-Formel für den venezianischen Spritz?", a: ["3 Teile Prosecco, 2 Teile Aperol, 1 Schuss Soda", "1:1:1 Prosecco, Aperol, Wasser", "2:1:0 Prosecco, Aperol", "Aperol auf Eis mit Orangenscheibe"], exp: "Die IBA-Formel für den venezianischen Spritz lautet 3 Prosecco, 2 Aperol und ein Schuss Soda, serviert mit einer Orangenscheibe." },
       { q: "Welcher japanische Gin wird in Kyoto auf Reisbasis destilliert?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi aus der Kyoto Distillery verwendet einen neutralen Reisbranntwein als Basis und Botanicals aus der Region Kyoto." }
     ]
+  },
+  {
+    id: 26,
+    title: "Hausgemachte Zutaten",
+    subtitle: "Sirupe, Cordials und Vorratstechniken",
+    icon: "🧪",
+    color: "#27ae60",
+    questions: [
+      { q: "Wie lautet das Verhältnis für 1:1-Zuckersirup?", a: ["1 Teil Zucker auf 1 Teil Wasser", "2 Teile Zucker auf 1 Wasser", "1 Teil Zucker auf 2 Wasser", "1 Teil Zucker auf 3 Wasser"], exp: "1:1-Zuckersirup mischt Zucker und Wasser zu gleichen Teilen; 'Rich Syrup' (2:1) ist länger haltbar im Kühlschrank." },
+      { q: "Was ist Oleo Saccharum?", a: ["Zucker, mazeriert mit Zitrusschalen, um die ätherischen Öle herauszuziehen", "Ein geröstetes Sesamöl", "Ein Sirup mit Olivenöl", "Eine Fat-Wash-Methode"], exp: "Oleo Saccharum (lat. 'Öl-Zucker') entsteht durch Mazerieren von Zitronen- oder Orangenschale mit Zucker, um die aromatischen Öle zu extrahieren." },
+      { q: "Woraus wird traditioneller Orgeat hergestellt?", a: ["Mandeln, Zucker und Orangenblütenwasser", "Muskatnuss und Honig", "Haselnuss und Anis", "Kokos und Zitrone"], exp: "Klassischer Orgeat ist ein Mandelsirup mit Orangenblütenwasser; wird im Mai Tai und im Japanese Cocktail verwendet." },
+      { q: "Was ist ein Shrub?", a: ["Ein Fruchtsirup, der mit Essig konserviert wird", "Ein Cocktail mit frischen Kräutern", "Ein englischer Bitter", "Ein aromatischer Strauch"], exp: "Ein Shrub ist ein historischer Sirup aus Frucht, Zucker und Essig; bringt kräftige Säure und hält im Kühlschrank mehrere Wochen." },
+      { q: "Woraus besteht echte Grenadine?", a: ["Reduzierter Granatapfelsaft und Zucker", "Industrieller roter Sirup mit Johannisbeere", "Rosenwasser und Zucker", "Roter Apfel und Farbstoff"], exp: "Echte Grenadine besteht aus reduziertem Granatapfelsaft und Zucker; die meisten kommerziellen Versionen nutzen Farbstoff und Maissirup." },
+      { q: "Welche Aromen prägen Falernum?", a: ["Ingwer, Nelke, Limette und Mandel", "Honig und Zimt", "Kaffee und Vanille", "Ananas und Kardamom"], exp: "Falernum ist ein westindischer Likör oder Sirup aus Ingwer, Nelke, Limette und Mandel; unverzichtbar in vielen Tiki-Cocktails." },
+      { q: "Was erreicht die Milch-Klärung (Milk-Wash)?", a: ["Einen sauren Drink mit Milch ausflocken, damit Kasein Schwebstoffe und Farbe bindet", "Einen Cocktail mit heißer Milch abrunden", "Milch für einen Float aufschäumen", "Milchiges Eis herstellen"], exp: "Die Milch-Klärung (18. Jahrhundert) nutzt Säuren, um Kasein auszuflocken; beim Filtrieren werden Sedimente und Farbe mitgenommen." },
+      { q: "Was bewirkt Fat-Washing?", a: ["Fettiges Aroma in eine Spirituose einfügen, durch Einfrieren und Abfiltern des Fetts", "Das Glas mit Öl reinigen", "Kalorien aus dem Drink entfernen", "Vollmilch in den Drink geben"], exp: "Fat-Washing, populär gemacht von Don Lee mit dem Benton's Old Fashioned, infundiert Fette wie Speck oder Butter in eine Spirituose; beim Einfrieren erstarrt das Fett und wird abgefiltert." },
+      { q: "Wofür wird Apfelsäure (Malic Acid) in der modernen Mixologie genutzt?", a: ["Um geklärten Drinks Säure zurückzugeben, ohne Trübstoffe hinzuzufügen", "Um Flaschencocktails zu konservieren", "Um Eiweiß zu emulgieren", "Um den ABV zu erhöhen"], exp: "Apfelsäure (Malic) oder Zitronensäure 'korrigiert' geklärte Flüssigkeiten: niedriger pH-Wert ohne die Trübung frischer Säfte." },
+      { q: "Wie lange hält sich 2:1 Rich Syrup im Kühlschrank?", a: ["Etwa einen Monat", "Einen Tag", "Sechs Stunden", "Ein Jahr bei Raumtemperatur"], exp: "Rich Syrup (2:1) hält dank höherer Zuckerkonzentration etwa einen Monat im Kühlschrank; 1:1-Sirup hält rund 2 Wochen." }
+    ]
   }
 ];

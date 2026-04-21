@@ -473,5 +473,24 @@ export const rounds = [
       { q: "What is the official IBA formula for the Venetian Spritz?", a: ["3 parts prosecco, 2 parts Aperol, 1 splash of soda", "1:1:1 prosecco, Aperol, water", "2:1:0 prosecco, Aperol", "Aperol on the rocks with an orange slice"], exp: "The IBA Venetian Spritz is 3 prosecco, 2 Aperol and a splash of soda, served with an orange slice." },
       { q: "Which Japanese gin is distilled in Kyoto using a rice base?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi, from Kyoto Distillery, uses a neutral rice spirit as its base with botanicals sourced in the Kyoto region." }
     ]
+  },
+  {
+    id: 26,
+    title: "House-made ingredients",
+    subtitle: "Syrups, cordials & pantry techniques",
+    icon: "🧪",
+    color: "#27ae60",
+    questions: [
+      { q: "What is the ratio for 1:1 simple syrup?", a: ["1 part sugar to 1 part water", "2 parts sugar to 1 water", "1 part sugar to 2 water", "1 part sugar to 3 water"], exp: "1:1 simple syrup mixes sugar and water in equal parts; 'rich syrup' uses 2:1 and keeps longer in the fridge." },
+      { q: "What is oleo saccharum?", a: ["Sugar macerated with citrus peels to draw out their essential oils", "A toasted sesame oil", "A syrup made with olive oil", "A fat-washing method"], exp: "Oleo saccharum (Latin for 'oil-sugar') is made by macerating lemon or orange peel with sugar to extract aromatic citrus oils." },
+      { q: "What is traditional orgeat made from?", a: ["Almonds, sugar, and orange flower water", "Nutmeg and honey", "Hazelnut and anise", "Coconut and lemon"], exp: "Classic orgeat is an almond syrup with orange flower water; it's used in the Mai Tai and the Japanese Cocktail." },
+      { q: "What is a shrub?", a: ["A fruit syrup preserved with vinegar", "A cocktail made with fresh herbs", "A type of English bitters", "An aromatic bush"], exp: "A shrub is a historic syrup of fruit, sugar, and vinegar; it adds bright acidity and keeps for weeks refrigerated." },
+      { q: "What is real grenadine made from?", a: ["Reduced pomegranate juice and sugar", "Industrial red syrup with currant", "Rose water and sugar", "Red apple and coloring"], exp: "Real grenadine is made from reduced pomegranate juice and sugar; most commercial versions rely on coloring and corn syrup." },
+      { q: "What flavours define falernum?", a: ["Ginger, clove, lime, and almond", "Honey and cinnamon", "Coffee and vanilla", "Pineapple and cardamom"], exp: "Falernum is a West Indian liqueur or syrup of ginger, clove, lime, and almond; essential to many tiki cocktails." },
+      { q: "What does milk-wash clarification achieve?", a: ["Curdling an acidic cocktail with milk so casein traps solids and color", "Softening a cocktail with warm milk", "Frothing milk to float", "Making milky ice"], exp: "Milk-washing, an 18th-century technique, uses acids to curdle casein, which is then filtered out, carrying sediment and color with it." },
+      { q: "What does fat-washing do?", a: ["Infuses a fatty flavor into a spirit by freezing and filtering out the fat", "Cleans the glass with oil", "Removes calories from the drink", "Adds whole milk to the cocktail"], exp: "Fat-washing, popularized by Don Lee with the Benton's Old Fashioned, infuses fats like bacon or butter into a spirit; freezing solidifies the fat so it can be filtered off." },
+      { q: "Why use malic acid in modern bartending?", a: ["To restore acidity to a clarified drink without adding pulp", "To preserve bottled cocktails", "To emulsify egg whites", "To boost the ABV"], exp: "Malic (apple) or citric acid 'corrects' clarified liquids — adding low pH without the cloudiness of fresh juice." },
+      { q: "How long does 2:1 rich syrup keep refrigerated?", a: ["About a month", "One day", "Six hours", "One year at room temperature"], exp: "Rich 2:1 syrup keeps for roughly a month refrigerated thanks to its higher sugar concentration; 1:1 lasts about 2 weeks." }
+    ]
   }
 ];
