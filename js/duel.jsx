@@ -480,24 +480,64 @@ const Scoreboard = ({ players, slots, mySlot }) => (
   </div>
 );
 
+// Rendered after a player has finished their 10 questions but the room is
+// still 'playing' — i.e. one or more opponents haven't finished yet. Shows
+// live per-opponent progress so the waiting player knows the match is alive.
+const DuelWaitingRoom = ({ players, slots, mySlot }) => {
+  const opponents = slots.filter(s => s !== mySlot);
+  return (
+    <div>
+      <Scoreboard players={players} slots={slots} mySlot={mySlot} />
+      <div className="card" style={{ padding: 20, textAlign: 'center' }}>
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--amber)', marginBottom: 10 }}>
+          {dTr('duel.waiting_title', 'Esperando a los demás…')}
+        </div>
+        <div className="spinner" style={{ margin: '0 auto 14px' }} />
+        <div style={{ display: 'grid', gap: 6 }}>
+          {opponents.map(s => {
+            const p = players[s];
+            if (!p) return null;
+            if (p.disconnected) {
+              return (
+                <div key={s} style={{ fontSize: 13, color: 'var(--ink-3)' }}>
+                  {dTrParams('duel.player_disconnected', { name: p.name || '?' }, `${p.name || '?'} · desconectado`)}
+                </div>
+              );
+            }
+            const done = Math.min(p.currentQ || 0, QUESTIONS_PER_DUEL);
+            return (
+              <div key={s} style={{ fontSize: 13, color: 'var(--ink-2)' }}>
+                {dTrParams('duel.player_progress', { name: p.name || '?', n: done, total: QUESTIONS_PER_DUEL }, `${p.name || '?'} · ${done}/${QUESTIONS_PER_DUEL}`)}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHost, useTimer }) => {
   const [qIdx, setQIdx] = useState(() => players[slot]?.currentQ || 0);
   const [timeLeft, setTimeLeft] = useState(useTimer ? TIME_PER_QUESTION : 0);
   const [picked, setPicked] = useState(null);
   const [revealAt, setRevealAt] = useState(null);
+  // Local "I'm done, waiting for others" flag. Set after submitting the
+  // final question; cleared when the component unmounts (rematch/leave).
+  const [waiting, setWaiting] = useState(false);
 
   const slots = ALL_SLOTS.slice(0, maxPlayers);
   const currentQ = questions[qIdx];
 
   useEffect(() => {
-    if (!useTimer || revealAt) return;
+    if (!useTimer || revealAt || waiting) return;
     if (timeLeft <= 0) { submit(null); return; }
     const t = setTimeout(() => setTimeLeft(s => s - 1), 1000);
     return () => clearTimeout(t);
-  }, [timeLeft, revealAt, useTimer]);
+  }, [timeLeft, revealAt, useTimer, waiting]);
 
   const submit = async (pickIdx) => {
-    if (picked !== null) return;
+    if (picked !== null || waiting) return;
     setPicked(pickIdx);
     const correct = pickIdx !== null && pickIdx === currentQ.correctIndex;
     if (window.stRivals && window.stRivals.submitAnswer) {
@@ -507,20 +547,25 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
       try { await window.stRivals.submitAnswer(roomId, slot, qIdx, correct, reportedTime); } catch {}
     }
     setRevealAt(Date.now());
+    // Longer dwell when there's an explanation so the player can read it.
+    const revealMs = currentQ.explanation ? 2500 : 2000;
     setTimeout(() => {
       if (qIdx + 1 >= QUESTIONS_PER_DUEL) {
-        if (isHost && window.stRivals && window.stRivals.finishGame) {
-          window.stRivals.finishGame(roomId).catch(() => {});
-        }
-        onFinish();
+        // Don't end the match here — the room listener in DuelScreen decides
+        // when all players have finished. Show a local waiting state instead.
+        setWaiting(true);
+        setPicked(null);
+        setRevealAt(null);
         return;
       }
       setQIdx(qIdx + 1);
       setPicked(null);
       setRevealAt(null);
       setTimeLeft(useTimer ? TIME_PER_QUESTION : 0);
-    }, 2000);
+    }, revealMs);
   };
+
+  if (waiting) return <DuelWaitingRoom players={players} slots={slots} mySlot={slot} />;
 
   if (!currentQ) return <div className="card" style={{ padding: 20 }}>Cargando preguntas…</div>;
 
@@ -546,19 +591,52 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
         </div>
         <div style={{ fontSize: 16, lineHeight: 1.4 }}>{currentQ.question}</div>
       </div>
+      {revealAt && (() => {
+        const pickedCorrect = picked !== null && picked === currentQ.correctIndex;
+        const isTimeout = picked === null;
+        const bg = isTimeout ? 'oklch(0.78 0.14 75 / 0.18)'
+          : pickedCorrect ? 'oklch(0.8 0.16 145 / 0.2)'
+          : 'oklch(0.68 0.19 25 / 0.2)';
+        const fg = isTimeout ? 'var(--amber)' : pickedCorrect ? 'var(--ok)' : 'var(--bad)';
+        const label = isTimeout
+          ? dTr('duel.fb_timeout', '⏱ Tiempo agotado')
+          : pickedCorrect
+            ? dTr('duel.fb_correct', '✓ Correcto')
+            : dTr('duel.fb_wrong', '✕ Incorrecto');
+        return (
+          <div style={{
+            marginBottom: 14, padding: '10px 16px', borderRadius: 12,
+            background: bg, color: fg,
+            border: `1px solid ${fg}`,
+            animation: 'pop .3s cubic-bezier(.2,1.4,.3,1) both',
+          }}>
+            <div style={{ fontSize: 15, fontWeight: 600 }}>{label}</div>
+            {currentQ.explanation && (
+              <div style={{ fontSize: 13, marginTop: 4, color: 'var(--ink-2)', fontWeight: 400 }}>
+                {currentQ.explanation}
+              </div>
+            )}
+          </div>
+        );
+      })()}
       <div style={{ display: 'grid', gap: 10 }}>
         {currentQ.answers.map((ans, i) => {
           const isPicked = picked === i;
           const isCorrect = revealAt && i === currentQ.correctIndex;
           const bg = !revealAt
             ? (isPicked ? 'color-mix(in oklch, var(--amber) 20%, var(--bg-2))' : undefined)
-            : isCorrect ? 'color-mix(in oklch, var(--green) 35%, var(--bg-2))'
-            : isPicked ? 'color-mix(in oklch, var(--red) 35%, var(--bg-2))'
+            : isCorrect ? 'color-mix(in oklch, var(--ok) 50%, var(--bg-2))'
+            : isPicked ? 'color-mix(in oklch, var(--bad) 50%, var(--bg-2))'
+            : undefined;
+          const borderColor = !revealAt
+            ? undefined
+            : isCorrect ? 'var(--ok)'
+            : isPicked ? 'var(--bad)'
             : undefined;
           return (
-            <button key={i} className="choice-btn" disabled={picked !== null}
+            <button key={i} className="choice-btn" disabled={picked !== null || !!revealAt}
               onClick={(ev) => { if (ev.currentTarget.blur) ev.currentTarget.blur(); submit(i); }}
-              style={{ background: bg, textAlign: 'left' }}>
+              style={{ background: bg, textAlign: 'left', borderColor }}>
               {ans}
             </button>
           );
@@ -816,6 +894,9 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
   const unsubMatchRef = useRef(null);
   const searchTimerRef = useRef(null);
   const autoJoinedRef = useRef(false);
+  // Idempotency guard: ensures finishGame() is written exactly once per match
+  // even though the listener fires on every RTDB snapshot.
+  const finishedTriggeredRef = useRef(false);
 
   const showToast = (msg, type) => setToast({ msg, type });
 
@@ -858,6 +939,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     }
     if (uid && window.stRivals) { try { await window.stRivals.leaveQueue(uid); } catch {} }
     setRoomId(null); setCode(''); setSlot('p1'); setRoom(null); setQuestions(null);
+    finishedTriggeredRef.current = false;
     setPhase('menu');
   };
 
@@ -867,6 +949,22 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
       if (!r) return;
       setRoom(r);
       if (r.maxPlayers) setMaxPlayers(r.maxPlayers);
+      // Match-end trigger: the host marks the room 'finished' only once all
+      // non-disconnected players have answered every question. This replaces
+      // the previous behaviour where whoever finished first (usually the
+      // host) ended the match for everyone.
+      // Check host identity via room data (r.players.p1.uid) rather than the
+      // local `slot` state — for joiners, `slot` hasn't propagated into this
+      // closure yet when subscribeRoom was called.
+      if (r.status === 'playing' && r.players && r.players.p1?.uid === uid && !finishedTriggeredRef.current) {
+        const active = Object.values(r.players).filter(p => p && !p.disconnected);
+        const allDone = active.length > 0
+          && active.every(p => (p.currentQ || 0) >= QUESTIONS_PER_DUEL);
+        if (allDone && window.stRivals?.finishGame) {
+          finishedTriggeredRef.current = true;
+          window.stRivals.finishGame(rid).catch(() => { finishedTriggeredRef.current = false; });
+        }
+      }
       if (r.status === 'playing' && !questions) {
         // Prefer the language-agnostic path (setup carries indices + shared
         // `lang`), so host and joiner see the same question text. Fall back
@@ -1116,7 +1214,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
           players={room?.players || {}}
           mySlot={slot}
           maxPlayers={maxPlayers}
-          onRematch={() => { cleanupListeners(); setRoomId(null); setRoom(null); setQuestions(null); setPhase('menu'); }}
+          onRematch={() => { cleanupListeners(); setRoomId(null); setRoom(null); setQuestions(null); finishedTriggeredRef.current = false; setPhase('menu'); }}
           onExit={returnToMenu}
         />
         <Toast msg={toast?.msg} type={toast?.type} onClose={() => setToast(null)} />
