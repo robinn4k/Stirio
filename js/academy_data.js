@@ -61,16 +61,17 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    // Tools → techniques → 6 base spirits. Practices follow their matching lesson.
     sequence: [
       { type: 'lesson', index: 0 },
-      { type: 'practice', roundId: 3 },
       { type: 'practice', roundId: 4 },
-      { type: 'lesson', index: 1 },
-      { type: 'practice', roundId: 8 },
-      { type: 'practice', roundId: 9 },
-      { type: 'lesson', index: 2 },
-      { type: 'practice', roundId: 13 },
       { type: 'practice', roundId: 14 },
+      { type: 'lesson', index: 1 },
+      { type: 'practice', roundId: 3 },
+      { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 8 },
+      { type: 'practice', roundId: 20 },
+      { type: 'practice', roundId: 21 },
     ],
     questions: [
       { q: 'academy.l0.q1',  a: ['academy.l0.q1a1','academy.l0.q1a2','academy.l0.q1a3','academy.l0.q1a4'], exp: 'academy.l0.q1exp' },
@@ -332,13 +333,16 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    // Spirit-forward classics pair with vermouth/fortified wine theory.
     sequence: [
       { type: 'lesson', index: 0 },
       { type: 'practice', roundId: 2 },
       { type: 'lesson', index: 1 },
       { type: 'practice', roundId: 7 },
+      { type: 'practice', roundId: 19 },
       { type: 'lesson', index: 2 },
       { type: 'practice', roundId: 12 },
+      { type: 'practice', roundId: 18 },
       { type: 'lesson', index: 3 },
     ],
     questions: [
@@ -412,13 +416,12 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    // Rum-heavy tiki arc. Round 25 (regional precision) is wired in when added.
     sequence: [
       { type: 'lesson', index: 0 },
-      { type: 'practice', roundId: 18 },
-      { type: 'practice', roundId: 19 },
+      { type: 'practice', roundId: 6 },
       { type: 'lesson', index: 1 },
       { type: 'practice', roundId: 20 },
-      { type: 'practice', roundId: 21 },
       { type: 'lesson', index: 2 },
     ],
     questions: [
@@ -507,6 +510,7 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
+    // Modern mixology pioneers (9, 13) land here before the capstone IBA deep-dive.
     sequence: [
       { type: 'lesson', index: 0 },
       { type: 'practice', roundId: 5 },
@@ -515,6 +519,8 @@ export const ACADEMY_LEVELS = [
       { type: 'practice', roundId: 15 },
       { type: 'practice', roundId: 22 },
       { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 9 },
+      { type: 'practice', roundId: 13 },
       { type: 'practice', roundId: 23 },
       { type: 'practice', roundId: 24 },
       { type: 'lesson', index: 3 },
