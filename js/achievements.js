@@ -24,11 +24,19 @@ const ACHIEVEMENT_DEFS = [
   { id: 'academy_perfect', icon: '💎' },
 ];
 
+// `t()` returns the key itself when translations haven't loaded yet.
+// Guard against that so the Profile UI never renders strings like
+// "ach.first_game" / "ach.first_game.desc" before i18n finishes preloading.
+function safeT(key) {
+  const v = t(key);
+  return (!v || v === key) ? '' : v;
+}
+
 function localizedAll() {
   return ACHIEVEMENT_DEFS.map(a => ({
     ...a,
-    title: t(`ach.${a.id}`),
-    desc:  t(`ach.${a.id}.desc`),
+    title: safeT(`ach.${a.id}`),
+    desc:  safeT(`ach.${a.id}.desc`),
   }));
 }
 
