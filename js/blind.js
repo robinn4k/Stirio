@@ -295,14 +295,21 @@ export const SPIRITS = [
 let bs = null;
 
 export function startBlind() {
-  const questions = shuffle(SPIRITS);
+  // Shuffle both the question order and each question's answers so the
+  // correct spirit isn't always at index 0 (the raw SPIRITS data always
+  // places it first).
+  const questions = shuffle(SPIRITS).map(q => {
+    const correct = q.answers[0];
+    const answers = shuffle(q.answers);
+    return { ...q, answers, correctIndex: answers.indexOf(correct) };
+  });
   bs = { questions, index: 0, correct: 0, answered: 0, revealed: 1, history: [] };
   return _payload();
 }
 
 function _payload() {
   const q = bs.questions[bs.index];
-  return { clues: q.clues, revealedClues: bs.revealed, answers: q.answers, correctIndex: 0, index: bs.index, total: bs.questions.length, correct: bs.correct };
+  return { clues: q.clues, revealedClues: bs.revealed, answers: q.answers, correctIndex: q.correctIndex, index: bs.index, total: bs.questions.length, correct: bs.correct };
 }
 
 export function revealNextClue() {
@@ -315,14 +322,14 @@ export function revealNextClue() {
 export function answerBlind(selectedIndex) {
   if (!bs) return null;
   const q = bs.questions[bs.index];
-  const ok = selectedIndex === 0;
+  const ok = selectedIndex === q.correctIndex;
   if (ok) bs.correct++;
   // Capture the per-question outcome so the finish screen can show a
   // breakdown of what the player got right / wrong.
   bs.history.push({
     name: q.name,
     answers: q.answers,
-    correctIndex: 0,
+    correctIndex: q.correctIndex,
     selectedIndex,
     correct: ok,
   });
@@ -332,7 +339,7 @@ export function answerBlind(selectedIndex) {
   const done = bs.index >= bs.questions.length;
   return {
     correct: ok,
-    correctIndex: 0,
+    correctIndex: q.correctIndex,
     selectedIndex,
     done,
     result: done ? { correct: bs.correct, total: bs.questions.length, history: bs.history.slice() } : null,

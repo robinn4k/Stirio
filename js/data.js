@@ -1,6 +1,16 @@
 // Stirio data + helpers
 // Shared via window to be accessible across Babel script files
 
+// Fisher-Yates shuffle — uniform, unlike `Array.sort(() => Math.random() - 0.5)`.
+const _dataShuffle = (arr) => {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
 const LESSONS = [
   {
     id: 'negroni',
@@ -437,7 +447,7 @@ const normalizeQ = (raw) => {
   const opts = raw.a.slice();
   const correct = opts[0];
   // barajar
-  const shuffled = opts.slice().sort(() => Math.random() - 0.5);
+  const shuffled = _dataShuffle(opts);
   return {
     kind: 'choice',
     prompt: raw.q,
@@ -540,7 +550,7 @@ const DAILY_LESSON = () => {
 // Velocidad 60s: preguntas aleatorias infinitas
 const SPEED_LESSON = () => {
   const allQ = _localizedRounds().flatMap(r => r.questions);
-  const shuffled = allQ.sort(() => Math.random() - 0.5).slice(0, 30);
+  const shuffled = _dataShuffle(allQ).slice(0, 30);
   return {
     id: 'speed-' + Date.now(),
     category: 'Speed',
@@ -596,7 +606,7 @@ const buildAcademyLesson = (level, lessonIdx) => {
   });
   const questionSteps = (lesson.questions || []).map(q => {
     const correctText = _t(q.a[0]);
-    const shuffled = q.a.map(k => _t(k)).sort(() => Math.random() - 0.5);
+    const shuffled = _dataShuffle(q.a.map(k => _t(k)));
     return {
       kind: 'choice',
       prompt: _t(q.q),

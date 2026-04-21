@@ -13,6 +13,7 @@ const CACHE_PATHS = [
   'logo.svg',
   'manifest.json',
   'css/style.css',
+  'fonts/fonts.css',
   'trivias/all.json',
   'trivias/general.json',
   'trivias/historia_cocteles.json',
@@ -51,7 +52,7 @@ const CACHE_PATHS = [
   // The SPA navigates there directly (no iframe). We cache the entry file
   // and its hashed bundle so the games work offline.
   'games-r3f-demo/index.html',
-  'games-r3f-demo/assets/index-B3AN0ER5.js',
+  'games-r3f-demo/assets/index-BbVrAgTV.js',
   'games-r3f-demo/assets/open-sans-DRMBTUIL.ttf',
   // Wiki 3D modules
   'js/wiki.js',
@@ -98,7 +99,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.47`;
+const STATIC_CACHE_VERSION = `Stirio-v10.48`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
