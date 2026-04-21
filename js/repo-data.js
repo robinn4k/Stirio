@@ -2088,6 +2088,25 @@ const rounds = [
       { q: "¿Qué destilado se usa en un Tipperary?", a: ["Irish Whiskey", "Scotch Whisky", "Bourbon", "Rye Whiskey"], exp: "El Tipperary usa Irish Whiskey (toma el nombre del condado irlandés) combinado con vermut rojo y Chartreuse verde." },
       { q: "¿Qué ingrediente es opcional en un Southside?", a: ["Clara de huevo", "Soda", "Bitters", "Sirope"], exp: "La clara de huevo es opcional en el Southside; aporta una textura sedosa cuando se incluye." }
     ]
+  },
+  {
+    id: 25,
+    title: "Precisión japonesa & aperitivo italiano",
+    subtitle: "Maestría regional: de Ginza a Milán",
+    icon: "🗾",
+    color: "#e74c3c",
+    questions: [
+      { q: "¿Quién codificó la 'hard shake' japonesa en su libro Cocktail Techniques?", a: ["Kazuo Uyeda", "Hidetsugu Ueno", "Ryu Fujii", "Stanislav Vadrna"], exp: "Kazuo Uyeda, del Tender Bar de Ginza, formalizó el shake rígido de tres tiempos en su libro Cocktail Techniques (2008)." },
+      { q: "¿Qué distingue al hard shake japonés del estilo occidental?", a: ["Tres movimientos controlados que generan cristales de hielo microscópicos", "Agitación horizontal doble", "Vibración en vez de sacudida", "Se realiza sin hielo"], exp: "El hard shake produce pequeños cristales de hielo dentro del trago, dando textura sedosa y un pico de frío característico." },
+      { q: "¿Cómo nació el Negroni?", a: ["Un Americano al que sustituyeron la soda por ginebra", "Un Manhattan con Campari", "Un Aperol Spritz sin prosecco", "Un Dry Martini con bitter"], exp: "El Conde Camillo Negroni pidió en Florencia hacia 1919 un Americano más fuerte, y Fosco Scarselli cambió la soda por ginebra." },
+      { q: "¿Cuál es la proporción clásica del Negroni?", a: ["1:1:1 ginebra, Campari, vermut rojo", "2:1:1 ginebra, Campari, vermut rojo", "3:1:1 ginebra, Campari, vermut rojo", "1:2:1 ginebra, Campari, vermut rojo"], exp: "El Negroni se construye en partes iguales (1:1:1) de ginebra London dry, Campari y vermut rojo italiano." },
+      { q: "¿Qué es un Negroni Sbagliato?", a: ["Un Negroni con prosecco en lugar de ginebra", "Un Negroni doble", "Un Negroni sin hielo", "Un Negroni con tequila"], exp: "Sbagliato significa 'equivocado' en italiano: nació cuando Mirko Stocchetto, en el Bar Basso de Milán, tomó por error prosecco en vez de ginebra." },
+      { q: "En la coctelería japonesa, ¿qué expresa la filosofía ichi-go ichi-e?", a: ["Cada encuentro con el cliente es único e irrepetible", "Un tipo de corte de cáscara", "Una técnica de agitación", "Una medida del jigger"], exp: "Ichi-go ichi-e es un principio del té japonés: servir cada trago como si fuera la única oportunidad con ese cliente." },
+      { q: "¿Qué hielo prefiere la escuela japonesa para un Highball perfecto?", a: ["Hielo tallado a mano, denso y transparente", "Hielo picado fino", "Cubitos de congelador doméstico", "Hielo seco"], exp: "Los bartenders japoneses tallan el hielo a mano (aisukogori) para obtener densidad, claridad y dilución mínima." },
+      { q: "¿Qué amaro italiano se elabora tradicionalmente con alcachofa?", a: ["Cynar", "Fernet Branca", "Averna", "Ramazzotti"], exp: "Cynar, creado en Padua en 1952, obtiene su amargor principalmente de las hojas de alcachofa (Cynara scolymus)." },
+      { q: "¿Cuál es la fórmula oficial IBA del Spritz veneciano?", a: ["3 partes prosecco, 2 partes Aperol, 1 toque de soda", "1:1:1 prosecco, Aperol, agua", "2:1:0 prosecco, Aperol", "Aperol con hielo y rodaja de naranja"], exp: "La fórmula IBA del Spritz veneciano es 3 prosecco, 2 Aperol y un toque de soda, servido con rodaja de naranja." },
+      { q: "¿Qué ginebra japonesa se destila en Kioto usando una base de arroz?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi, de la Kyoto Distillery, utiliza un destilado neutro de arroz como base y botánicos de la región de Kioto." }
+    ]
   }
 ];
 

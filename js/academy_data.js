@@ -416,13 +416,14 @@ export const ACADEMY_LEVELS = [
         ]
       },
     ],
-    // Rum-heavy tiki arc. Round 25 (regional precision) is wired in when added.
+    // Rum-heavy tiki arc, closed with the regional-precision round.
     sequence: [
       { type: 'lesson', index: 0 },
       { type: 'practice', roundId: 6 },
       { type: 'lesson', index: 1 },
       { type: 'practice', roundId: 20 },
       { type: 'lesson', index: 2 },
+      { type: 'practice', roundId: 25 },
     ],
     questions: [
       { q: 'academy.l4.q1',  a: ['academy.l4.q1a1','academy.l4.q1a2','academy.l4.q1a3','academy.l4.q1a4'], exp: 'academy.l4.q1exp' },

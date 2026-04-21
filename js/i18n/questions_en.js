@@ -454,5 +454,24 @@ export const rounds = [
       { q: "What spirit is used in a Tipperary?", a: ["Irish Whiskey", "Scotch Whisky", "Bourbon", "Rye Whiskey"], exp: "The Tipperary cocktail uses Irish Whiskey, named after the Irish county, combined with sweet vermouth and green Chartreuse." },
       { q: "What ingredient is optional in a Southside?", a: ["Egg White", "Soda water", "Bitters", "Sugar syrup"], exp: "Egg white is an optional ingredient in the Southside cocktail, adding a silky texture when included." }
     ]
+  },
+  {
+    id: 25,
+    title: "Japanese precision & Italian aperitivo",
+    subtitle: "Regional mastery: from Ginza to Milan",
+    icon: "🗾",
+    color: "#e74c3c",
+    questions: [
+      { q: "Who codified the Japanese 'hard shake' in his book Cocktail Techniques?", a: ["Kazuo Uyeda", "Hidetsugu Ueno", "Ryu Fujii", "Stanislav Vadrna"], exp: "Kazuo Uyeda, of Tender Bar in Ginza, formalized the three-stage hard shake in his 2008 book Cocktail Techniques." },
+      { q: "What sets the Japanese hard shake apart from the Western style?", a: ["Three controlled motions that create microscopic ice crystals", "A double horizontal shake", "Vibration instead of shaking", "It's done without ice"], exp: "The hard shake produces tiny ice crystals inside the drink, giving a silky texture and a sharp, distinctive chill." },
+      { q: "How was the Negroni born?", a: ["An Americano with gin swapped in for the soda", "A Manhattan with Campari", "An Aperol Spritz without prosecco", "A Dry Martini with bitters"], exp: "Count Camillo Negroni asked in Florence around 1919 for a stronger Americano, and bartender Fosco Scarselli replaced the soda with gin." },
+      { q: "What is the classic Negroni ratio?", a: ["1:1:1 gin, Campari, red vermouth", "2:1:1 gin, Campari, red vermouth", "3:1:1 gin, Campari, red vermouth", "1:2:1 gin, Campari, red vermouth"], exp: "The Negroni is built in equal parts (1:1:1) London dry gin, Campari, and Italian red vermouth." },
+      { q: "What is a Negroni Sbagliato?", a: ["A Negroni with prosecco instead of gin", "A double Negroni", "A Negroni served without ice", "A Negroni with tequila"], exp: "Sbagliato means 'wrong' in Italian: it was born when Mirko Stocchetto at Bar Basso in Milan grabbed prosecco by mistake instead of gin." },
+      { q: "In Japanese bartending, what does the philosophy ichi-go ichi-e express?", a: ["Each encounter with a guest is unique and unrepeatable", "A type of peel cut", "A shaking technique", "A jigger measurement"], exp: "Ichi-go ichi-e is a principle from Japanese tea ceremony: serve every drink as if it's the only chance you'll ever have with that guest." },
+      { q: "Which ice does the Japanese school prefer for a perfect Highball?", a: ["Hand-carved ice: dense and transparent", "Finely crushed ice", "Home-freezer cubes", "Dry ice"], exp: "Japanese bartenders hand-carve ice (aisukogori) to achieve density, clarity, and minimal dilution." },
+      { q: "Which Italian amaro is traditionally made with artichoke?", a: ["Cynar", "Fernet Branca", "Averna", "Ramazzotti"], exp: "Cynar, created in Padua in 1952, gets its bitterness primarily from artichoke leaves (Cynara scolymus)." },
+      { q: "What is the official IBA formula for the Venetian Spritz?", a: ["3 parts prosecco, 2 parts Aperol, 1 splash of soda", "1:1:1 prosecco, Aperol, water", "2:1:0 prosecco, Aperol", "Aperol on the rocks with an orange slice"], exp: "The IBA Venetian Spritz is 3 prosecco, 2 Aperol and a splash of soda, served with an orange slice." },
+      { q: "Which Japanese gin is distilled in Kyoto using a rice base?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi, from Kyoto Distillery, uses a neutral rice spirit as its base with botanicals sourced in the Kyoto region." }
+    ]
   }
 ];

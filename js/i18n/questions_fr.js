@@ -454,5 +454,24 @@ export const rounds = [
       { q: "Quel spiritueux est utilisé dans un Tipperary ?", a: ["Whiskey irlandais", "Scotch Whisky", "Bourbon", "Rye Whiskey"], exp: "Le cocktail Tipperary utilise du Whiskey irlandais, nommé d'après le comté du même nom, associé à du vermouth doux et de la Chartreuse verte." },
       { q: "Quel ingrédient est facultatif dans un Southside ?", a: ["Le blanc d'œuf", "L'eau gazeuse", "L'amer (Bitters)", "Le sirop de sucre"], exp: "Le blanc d'œuf est un ingrédient facultatif dans le cocktail Southside, ajoutant une texture soyeuse lorsqu'il est inclus." }
     ]
+  },
+  {
+    id: 25,
+    title: "Précision japonaise & apéritif italien",
+    subtitle: "Maîtrise régionale : de Ginza à Milan",
+    icon: "🗾",
+    color: "#e74c3c",
+    questions: [
+      { q: "Qui a codifié le 'hard shake' japonais dans son livre Cocktail Techniques ?", a: ["Kazuo Uyeda", "Hidetsugu Ueno", "Ryu Fujii", "Stanislav Vadrna"], exp: "Kazuo Uyeda, du Tender Bar à Ginza, a formalisé le hard shake en trois temps dans son livre Cocktail Techniques (2008)." },
+      { q: "Qu'est-ce qui distingue le hard shake japonais du style occidental ?", a: ["Trois mouvements contrôlés qui créent des cristaux de glace microscopiques", "Un double shake horizontal", "Une vibration au lieu d'un shake", "Il se fait sans glace"], exp: "Le hard shake produit de minuscules cristaux de glace dans le cocktail, offrant une texture soyeuse et un froid intense caractéristique." },
+      { q: "Comment est né le Negroni ?", a: ["Un Americano dont on a remplacé le soda par du gin", "Un Manhattan avec du Campari", "Un Aperol Spritz sans prosecco", "Un Dry Martini avec des amers"], exp: "Le Comte Camillo Negroni a demandé à Florence vers 1919 un Americano plus fort, et le barman Fosco Scarselli a remplacé le soda par du gin." },
+      { q: "Quelle est la proportion classique d'un Negroni ?", a: ["1:1:1 gin, Campari, vermouth rouge", "2:1:1 gin, Campari, vermouth rouge", "3:1:1 gin, Campari, vermouth rouge", "1:2:1 gin, Campari, vermouth rouge"], exp: "Le Negroni se prépare à parts égales (1:1:1) de gin London dry, de Campari et de vermouth rouge italien." },
+      { q: "Qu'est-ce qu'un Negroni Sbagliato ?", a: ["Un Negroni avec du prosecco à la place du gin", "Un Negroni double", "Un Negroni servi sans glace", "Un Negroni à la tequila"], exp: "Sbagliato signifie 'faux' en italien : il est né quand Mirko Stocchetto, au Bar Basso de Milan, a pris par erreur du prosecco au lieu du gin." },
+      { q: "Dans la mixologie japonaise, que signifie la philosophie ichi-go ichi-e ?", a: ["Chaque rencontre avec le client est unique et irremplaçable", "Un type de découpe de zeste", "Une technique de shake", "Une mesure de jigger"], exp: "Ichi-go ichi-e est un principe de la cérémonie du thé japonaise : servir chaque verre comme s'il s'agissait de la seule occasion avec ce client." },
+      { q: "Quelle glace l'école japonaise privilégie-t-elle pour un Highball parfait ?", a: ["Glace taillée à la main, dense et transparente", "Glace finement pilée", "Glaçons de congélateur domestique", "Glace sèche"], exp: "Les bartenders japonais taillent la glace à la main (aisukogori) pour obtenir densité, clarté et dilution minimale." },
+      { q: "Quel amaro italien est traditionnellement élaboré avec de l'artichaut ?", a: ["Cynar", "Fernet Branca", "Averna", "Ramazzotti"], exp: "Le Cynar, créé à Padoue en 1952, tire son amertume principalement des feuilles d'artichaut (Cynara scolymus)." },
+      { q: "Quelle est la formule officielle IBA du Spritz vénitien ?", a: ["3 parts prosecco, 2 parts Aperol, 1 trait de soda", "1:1:1 prosecco, Aperol, eau", "2:1:0 prosecco, Aperol", "Aperol sur glace avec une tranche d'orange"], exp: "La formule IBA du Spritz vénitien est 3 prosecco, 2 Aperol et un trait de soda, servi avec une tranche d'orange." },
+      { q: "Quel gin japonais est distillé à Kyoto à partir d'une base de riz ?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi, de la Kyoto Distillery, utilise un distillat neutre de riz comme base, avec des botaniques de la région de Kyoto." }
+    ]
   }
 ];

@@ -454,5 +454,24 @@ export const rounds = [
       { q: "Welche Spirituose nutzt ein Tipperary?", a: ["Irish Whiskey", "Scotch", "Bourbon", "Rye"], exp: "Benannt nach dem irischen County, nutzt er Irish Whiskey, grünen Chartreuse und Wermut." },
       { q: "Optionale Zutat im Southside?", a: ["Eiweiß", "Soda", "Bitters", "Zuckersirup"], exp: "Eiweiß kann für eine seidige Textur hinzugefügt werden." }
     ]
+  },
+  {
+    id: 25,
+    title: "Japanische Präzision & italienischer Aperitivo",
+    subtitle: "Regionale Meisterschaft: von Ginza bis Mailand",
+    icon: "🗾",
+    color: "#e74c3c",
+    questions: [
+      { q: "Wer kodifizierte den japanischen 'Hard Shake' in seinem Buch Cocktail Techniques?", a: ["Kazuo Uyeda", "Hidetsugu Ueno", "Ryu Fujii", "Stanislav Vadrna"], exp: "Kazuo Uyeda vom Tender Bar in Ginza formalisierte den dreistufigen Hard Shake in seinem Buch Cocktail Techniques (2008)." },
+      { q: "Was unterscheidet den japanischen Hard Shake vom westlichen Stil?", a: ["Drei kontrollierte Bewegungen, die mikroskopische Eiskristalle erzeugen", "Doppeltes horizontales Schütteln", "Vibration statt Schütteln", "Er wird ohne Eis ausgeführt"], exp: "Der Hard Shake erzeugt winzige Eiskristalle im Drink, die für seidige Textur und ein charakteristisches scharfes Kältegefühl sorgen." },
+      { q: "Wie entstand der Negroni?", a: ["Ein Americano, bei dem Soda durch Gin ersetzt wurde", "Ein Manhattan mit Campari", "Ein Aperol Spritz ohne Prosecco", "Ein Dry Martini mit Bitter"], exp: "Graf Camillo Negroni bestellte um 1919 in Florenz einen stärkeren Americano, und der Barkeeper Fosco Scarselli ersetzte das Soda durch Gin." },
+      { q: "Was ist das klassische Negroni-Verhältnis?", a: ["1:1:1 Gin, Campari, roter Wermut", "2:1:1 Gin, Campari, roter Wermut", "3:1:1 Gin, Campari, roter Wermut", "1:2:1 Gin, Campari, roter Wermut"], exp: "Der Negroni wird zu gleichen Teilen (1:1:1) aus London Dry Gin, Campari und italienischem rotem Wermut zubereitet." },
+      { q: "Was ist ein Negroni Sbagliato?", a: ["Ein Negroni mit Prosecco statt Gin", "Ein doppelter Negroni", "Ein Negroni ohne Eis", "Ein Negroni mit Tequila"], exp: "Sbagliato bedeutet auf Italienisch 'falsch': Er entstand, als Mirko Stocchetto in der Bar Basso in Mailand versehentlich Prosecco statt Gin griff." },
+      { q: "Was drückt im japanischen Bartending die Philosophie ichi-go ichi-e aus?", a: ["Jede Begegnung mit dem Gast ist einzigartig und unwiederholbar", "Eine Art Zestenschnitt", "Eine Schütteltechnik", "Eine Jigger-Größe"], exp: "Ichi-go ichi-e ist ein Prinzip der japanischen Teezeremonie: Serviere jeden Drink, als wäre es die einzige Gelegenheit mit diesem Gast." },
+      { q: "Welches Eis bevorzugt die japanische Schule für einen perfekten Highball?", a: ["Von Hand geschnitztes, dichtes und transparentes Eis", "Fein zerstoßenes Eis", "Eiswürfel aus dem Hausgefrierfach", "Trockeneis"], exp: "Japanische Bartender schnitzen das Eis von Hand (aisukogori), um Dichte, Klarheit und minimale Verdünnung zu erreichen." },
+      { q: "Welcher italienische Amaro wird traditionell mit Artischocke hergestellt?", a: ["Cynar", "Fernet Branca", "Averna", "Ramazzotti"], exp: "Cynar, 1952 in Padua entwickelt, bezieht seine Bitternote hauptsächlich aus Artischockenblättern (Cynara scolymus)." },
+      { q: "Wie lautet die offizielle IBA-Formel für den venezianischen Spritz?", a: ["3 Teile Prosecco, 2 Teile Aperol, 1 Schuss Soda", "1:1:1 Prosecco, Aperol, Wasser", "2:1:0 Prosecco, Aperol", "Aperol auf Eis mit Orangenscheibe"], exp: "Die IBA-Formel für den venezianischen Spritz lautet 3 Prosecco, 2 Aperol und ein Schuss Soda, serviert mit einer Orangenscheibe." },
+      { q: "Welcher japanische Gin wird in Kyoto auf Reisbasis destilliert?", a: ["Ki No Bi", "Roku", "Nikka Coffey Gin", "Suntory Haku"], exp: "Ki No Bi aus der Kyoto Distillery verwendet einen neutralen Reisbranntwein als Basis und Botanicals aus der Region Kyoto." }
+    ]
   }
 ];
