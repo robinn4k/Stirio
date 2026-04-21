@@ -258,8 +258,9 @@ const IntroStep = ({ step, lesson, onContinue }) => (
 
 const ChoiceStep = ({ step, onAnswer }) => {
   const [selected, setSelected] = useState(null);
-  const pick = (i) => {
+  const pick = (i, ev) => {
     if (selected !== null) return;
+    if (ev && ev.currentTarget && ev.currentTarget.blur) ev.currentTarget.blur();
     setSelected(i);
     onAnswer(i === step.correct);
   };
@@ -293,7 +294,7 @@ const ChoiceStep = ({ step, onAnswer }) => {
           return (
             <button
               key={i}
-              onClick={() => pick(i)}
+              onClick={(ev) => pick(i, ev)}
               disabled={selected !== null}
               className="choice-btn"
               style={{
@@ -360,7 +361,7 @@ const MultiSelectStep = ({ step, onAnswer }) => {
           return (
             <button
               key={i}
-              onClick={() => toggle(opt)}
+              onClick={(ev) => { if (ev.currentTarget.blur) ev.currentTarget.blur(); toggle(opt); }}
               style={{
                 padding: '14px 12px',
                 borderRadius: 'var(--r-md)',

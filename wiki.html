@@ -286,6 +286,58 @@
       overflow: hidden;
       position: relative;
     }
+    /* Hotspot dots projected from 3D positions onto the 2D overlay layer */
+    .hotspot-dot {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--amber);
+      border: 2px solid rgba(255,255,255,0.92);
+      box-shadow: 0 0 0 2px rgba(0,0,0,0.35), 0 0 12px var(--amber-glow, rgba(255,180,60,0.6));
+      cursor: pointer;
+      padding: 0;
+      transition: transform .12s ease, box-shadow .15s;
+      animation: hotspotPulse 2.2s ease-in-out infinite;
+    }
+    .hotspot-dot:hover,
+    .hotspot-dot:focus-visible {
+      transform: translate(-50%, -50%) scale(1.25);
+      outline: none;
+    }
+    @keyframes hotspotPulse {
+      0%, 100% { box-shadow: 0 0 0 2px rgba(0,0,0,0.35), 0 0 10px rgba(255,180,60,0.55); }
+      50%      { box-shadow: 0 0 0 2px rgba(0,0,0,0.35), 0 0 18px rgba(255,180,60,0.95); }
+    }
+    /* Hotspot detail panel (opens when a dot is clicked) */
+    .hotspot-panel {
+      position: absolute;
+      left: 12px; right: 12px; bottom: 12px;
+      background: var(--bg-1);
+      border: 1px solid var(--amber);
+      border-radius: var(--r-md);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+      padding: 12px 14px;
+      color: var(--ink-0);
+      font-size: 13px;
+      line-height: 1.4;
+      z-index: 3;
+      pointer-events: auto;
+      animation: rise .22s cubic-bezier(.2,.9,.3,1) both;
+    }
+    .hotspot-panel .hotspot-panel-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 8px; margin-bottom: 4px;
+    }
+    .hotspot-panel .hotspot-panel-title {
+      font-family: var(--f-serif);
+      font-size: 15px;
+      color: var(--amber);
+    }
+    .hotspot-panel .hotspot-panel-close {
+      background: transparent; border: none; color: var(--ink-2);
+      font-size: 18px; line-height: 1; cursor: pointer; padding: 2px 4px;
+    }
+    .hotspot-panel .hotspot-panel-close:hover { color: var(--ink-0); }
+    .hotspot-panel .hotspot-panel-body { color: var(--ink-1); }
     .wiki-article-content {
       max-width: 760px;
       margin: 0 auto;
@@ -626,10 +678,41 @@ function openArticle(catId, artId) {
       mountScene(host, (scene, camera, ctx) => {
         SCENE_BUILDERS[art.scene](scene, camera, ctx, art.sceneParams);
       });
+      attachHotspotPanel(host);
     } catch (e) {
       console.warn('[wiki] 3D scene failed:', e);
     }
   }
+}
+
+// Render a panel when any hotspot dot is clicked. Uses a single global
+// listener (installed once) and appends the panel to the currently-active
+// 3D container. Navigating between articles re-mounts the scene, which
+// removes the old host DOM and any panel inside it.
+let _wikiHotspotListenerInstalled = false;
+function attachHotspotPanel(host) {
+  if (_wikiHotspotListenerInstalled) return;
+  _wikiHotspotListenerInstalled = true;
+  window.addEventListener('wiki-hotspot-click', (ev) => {
+    const d = ev.detail || {};
+    const current = document.getElementById('article-3d');
+    if (!current) return;
+    const prev = current.querySelector('.hotspot-panel');
+    if (prev) prev.remove();
+    const panel = document.createElement('div');
+    panel.className = 'hotspot-panel';
+    panel.innerHTML = `
+      <div class="hotspot-panel-head">
+        <span class="hotspot-panel-title"></span>
+        <button class="hotspot-panel-close" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="hotspot-panel-body"></div>
+    `;
+    panel.querySelector('.hotspot-panel-title').textContent = d.label || '';
+    panel.querySelector('.hotspot-panel-body').textContent = d.detail || '';
+    panel.querySelector('.hotspot-panel-close').addEventListener('click', () => panel.remove());
+    current.appendChild(panel);
+  });
 }
 
 function renderArticleSections(catId, artId, art) {

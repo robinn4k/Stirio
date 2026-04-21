@@ -274,6 +274,12 @@ async function updateUserProfile({ name, photoURL }) {
   if (photoURL !== undefined) currentUser.photo = photoURL;
   saveUserLocal(currentUser);
 
+  try {
+    window.dispatchEvent(new CustomEvent('stirio:namechange', {
+      detail: { name: currentUser.name, photo: currentUser.photo },
+    }));
+  } catch {}
+
   // Sync to Firestore user doc
   if (db) {
     try {

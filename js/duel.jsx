@@ -24,6 +24,29 @@ const dTrParams = (k, params, f) => {
   return (!v || v === k) ? fb : v;
 };
 
+// Resolve the user's round-selection choice into a ready-to-send RTDB setup.
+// Returns null if the selection can't be satisfied (e.g. specific/mix refers
+// to round IDs that no longer exist locally). "Mix" needs at least 2 rounds
+// to be meaningful.
+function buildDuelSetup(selection, rounds) {
+  if (!window.stRivals) return null;
+  const mode = (selection && selection.mode) || 'random';
+  if (mode === 'specific') {
+    const r = rounds.find(x => x.id === selection.roundId) || rounds[Math.floor(Math.random() * rounds.length)];
+    return r ? window.stRivals.prepareDuelSetup(r) : null;
+  }
+  if (mode === 'mix') {
+    const ids = Array.isArray(selection.roundIds) ? selection.roundIds : [];
+    const chosen = ids.map(id => rounds.find(r => r.id === id)).filter(Boolean);
+    if (chosen.length >= 2 && window.stRivals.prepareDuelSetupMixed) {
+      return window.stRivals.prepareDuelSetupMixed(chosen);
+    }
+    // Fallback to random single round if mix prep is unavailable
+  }
+  const r = rounds[Math.floor(Math.random() * rounds.length)];
+  return r ? window.stRivals.prepareDuelSetup(r) : null;
+}
+
 const DuelShell = ({ title, subtitle, onBack, children }) => (
   <div style={{ minHeight: '100dvh', padding: '24px 20px 120px', maxWidth: 560, margin: '0 auto' }}>
     <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
@@ -78,8 +101,28 @@ const DuelModeCard = ({ icon, title, subtitle, onClick, disabled, children }) =>
   </div>
 );
 
-const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang, useTimer, onChangeTimer }) => {
+const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang, useTimer, onChangeTimer, selection, onChangeSelection }) => {
   const [maxPlayers, setMaxPlayers] = useState(2);
+  const rounds = window.TRIVIA_ROUNDS || [];
+  const mode = (selection && selection.mode) || 'random';
+  const chosenRoundId = selection && selection.roundId;
+  const mixIds = (selection && Array.isArray(selection.roundIds)) ? selection.roundIds : [];
+  const setMode = (m) => {
+    if (m === 'specific') {
+      onChangeSelection({ mode: 'specific', roundId: chosenRoundId || (rounds[0] && rounds[0].id) });
+    } else if (m === 'mix') {
+      const ids = mixIds.length >= 2 ? mixIds : rounds.slice(0, Math.min(3, rounds.length)).map(r => r.id);
+      onChangeSelection({ mode: 'mix', roundIds: ids });
+    } else {
+      onChangeSelection({ mode: 'random' });
+    }
+  };
+  const toggleMixRound = (id) => {
+    const has = mixIds.includes(id);
+    const next = has ? mixIds.filter(x => x !== id) : [...mixIds, id];
+    if (next.length < 2) return; // enforce at least 2 rounds for "mix"
+    onChangeSelection({ mode: 'mix', roundIds: next });
+  };
   return (
     <div style={{ display: 'grid', gap: 12 }}>
       <div className="card" style={{ padding: 14 }}>
@@ -127,6 +170,69 @@ const DuelMenu = ({ onPick, rtdbReady, quizLang, onChangeLang, useTimer, onChang
             {dTr('duel.timer_off', '∞ Sin tiempo')}
           </button>
         </div>
+      </div>
+      <div className="card" style={{ padding: 14 }}>
+        <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 8 }}>
+          {dTr('duel.round_mode_label', 'Preguntas')}
+        </div>
+        <div style={{ display: 'flex', gap: 6 }}>
+          {[
+            { id: 'random',   label: dTr('duel.mode_random',   'Aleatoria') },
+            { id: 'specific', label: dTr('duel.mode_specific', 'Específica') },
+            { id: 'mix',      label: dTr('duel.mode_mix',      'Mezcla') },
+          ].map(opt => {
+            const active = mode === opt.id;
+            return (
+              <button key={opt.id} className="btn" onClick={() => setMode(opt.id)}
+                style={{
+                  flex: 1, padding: '8px 10px', fontSize: 12,
+                  background: active ? 'color-mix(in oklch, var(--amber) 22%, var(--bg-2))' : undefined,
+                  borderColor: active ? 'var(--amber)' : undefined,
+                  fontWeight: active ? 600 : 400,
+                }}>{opt.label}</button>
+            );
+          })}
+        </div>
+        {mode === 'specific' && rounds.length > 0 && (
+          <div style={{ marginTop: 12 }}>
+            <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 6 }}>
+              {dTr('duel.pick_round', 'Elige una ronda')}
+            </div>
+            <select value={chosenRoundId || rounds[0].id}
+              onChange={e => onChangeSelection({ mode: 'specific', roundId: Number(e.target.value) })}
+              style={{
+                width: '100%', padding: '10px 12px',
+                background: 'var(--bg-2)', color: 'var(--ink-1)',
+                border: '1px solid var(--border)', borderRadius: 'var(--r-md)',
+                fontSize: 13,
+              }}>
+              {rounds.map(r => (
+                <option key={r.id} value={r.id}>{r.title || `Ronda ${r.id}`}</option>
+              ))}
+            </select>
+          </div>
+        )}
+        {mode === 'mix' && rounds.length > 0 && (
+          <div style={{ marginTop: 12 }}>
+            <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 6 }}>
+              {dTr('duel.pick_mix', 'Rondas a mezclar (mín. 2)')}
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {rounds.map(r => {
+                const on = mixIds.includes(r.id);
+                return (
+                  <button key={r.id} className="btn" onClick={() => toggleMixRound(r.id)}
+                    style={{
+                      padding: '6px 10px', fontSize: 12,
+                      background: on ? 'color-mix(in oklch, var(--amber) 22%, var(--bg-2))' : undefined,
+                      borderColor: on ? 'var(--amber)' : undefined,
+                      fontWeight: on ? 600 : 400,
+                    }}>{r.title || `R${r.id}`}</button>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
       <DuelModeCard
         icon="🏠"
@@ -442,7 +548,7 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
             : undefined;
           return (
             <button key={i} className="choice-btn" disabled={picked !== null}
-              onClick={() => submit(i)}
+              onClick={(ev) => { if (ev.currentTarget.blur) ev.currentTarget.blur(); submit(i); }}
               style={{ background: bg, textAlign: 'left' }}>
               {ans}
             </button>
@@ -508,7 +614,29 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematch, onExit }) => {
 };
 
 // ─────────────────────── BOT DUEL (offline) ───────────────────────
-const BotDuel = ({ onBack }) => {
+// Picks questions locally according to the user's selection (random / specific
+// / mix). Returns an array of at most `total` question objects that keep the
+// same shape the rest of BotDuel already consumes ({ q, a, exp }).
+function pickBotQuestions(selection, rounds, total) {
+  const mode = (selection && selection.mode) || 'random';
+  if (mode === 'specific') {
+    const r = rounds.find(x => x.id === selection.roundId) || rounds[Math.floor(Math.random() * rounds.length)];
+    return r ? (r.questions || []).slice(0, total).map(q => ({ ...q })) : [];
+  }
+  if (mode === 'mix') {
+    const ids = Array.isArray(selection.roundIds) ? selection.roundIds : [];
+    const chosen = ids.map(id => rounds.find(r => r.id === id)).filter(Boolean);
+    if (chosen.length >= 2) {
+      const pool = [];
+      chosen.forEach(r => (r.questions || []).forEach(q => pool.push({ ...q })));
+      return pool.sort(() => Math.random() - 0.5).slice(0, total);
+    }
+  }
+  const r = rounds[Math.floor(Math.random() * rounds.length)];
+  return r ? (r.questions || []).slice(0, total).map(q => ({ ...q })) : [];
+}
+
+const BotDuel = ({ onBack, selection }) => {
   const botApi = window.stBot;
   const DIFFS = (botApi && botApi.DIFFICULTIES) || {
     easy: { accuracy: 0.45, minMs: 2500, maxMs: 5500 },
@@ -528,7 +656,7 @@ const BotDuel = ({ onBack }) => {
   const botTimer = useRef(null);
   const total = QUESTIONS_PER_DUEL;
   const botName = useRef((botApi && botApi.getBotName && botApi.getBotName()) || 'Barbot 🤖');
-  const questions = useRef(round.current ? (round.current.questions || []).slice(0, total) : []);
+  const questions = useRef(pickBotQuestions(selection, rounds, total));
   const currentQ = questions.current[qIdx];
 
   if (currentQ && !currentQ._shuffled) currentQ._shuffled = [...currentQ.a].sort(() => Math.random() - 0.5);
@@ -583,7 +711,7 @@ const BotDuel = ({ onBack }) => {
     );
   }
 
-  if (!round.current || !currentQ) return <DuelShell title="Duelo" subtitle="Error" onBack={onBack}><div className="card" style={{ padding: 20 }}>Sin preguntas.</div></DuelShell>;
+  if (!currentQ) return <DuelShell title="Duelo" subtitle="Error" onBack={onBack}><div className="card" style={{ padding: 20 }}>Sin preguntas.</div></DuelShell>;
 
   if (phase === 'done') {
     return (
@@ -592,7 +720,7 @@ const BotDuel = ({ onBack }) => {
           players={{ p1: { name: dTr('duel.you', 'Tú'), score: userScore }, p2: { name: botName.current, score: botScore } }}
           mySlot="p1"
           maxPlayers={2}
-          onRematch={() => { setStarted(false); setQIdx(0); setUserScore(0); setBotScore(0); setPhase('playing'); round.current = rounds[Math.floor(Math.random() * rounds.length)]; questions.current = round.current.questions.slice(0, total).map(q => ({ ...q })); }}
+          onRematch={() => { setStarted(false); setQIdx(0); setUserScore(0); setBotScore(0); setPhase('playing'); questions.current = pickBotQuestions(selection, rounds, total); }}
           onExit={onBack}
         />
       </DuelShell>
@@ -622,7 +750,7 @@ const BotDuel = ({ onBack }) => {
             : undefined;
           return (
             <button key={i} className="choice-btn" disabled={phase !== 'playing' || userPick !== null}
-              onClick={() => setUserPick(i)}
+              onClick={(ev) => { if (ev.currentTarget.blur) ev.currentTarget.blur(); setUserPick(i); }}
               style={{ background: bg, textAlign: 'left', position: 'relative' }}>
               <span>{ans}</span>
               {isBotPick && <span style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', fontSize: 12, color: 'var(--ink-3)' }}>🤖</span>}
@@ -651,6 +779,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     try { return window.stLang?.getLang?.() || 'es'; } catch { return 'es'; }
   });
   const [useTimer, setUseTimer] = useState(true);
+  const [selection, setSelection] = useState({ mode: 'random' });
 
   const [roomId, setRoomId] = useState(null);
   const [code, setCode] = useState('');
@@ -720,7 +849,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
         // `lang`), so host and joiner see the same question text. Fall back
         // to the pre-rendered array for older rooms that don't include lang.
         let qs = null;
-        if (r.setup?.roundId && window.stRivals?.loadDuelQuestionsFromSetup) {
+        if ((r.setup?.roundId || r.setup?.mixed) && window.stRivals?.loadDuelQuestionsFromSetup) {
           try {
             qs = window.stRivals.loadDuelQuestionsFromSetup(r.setup, r.setup.lang);
           } catch {}
@@ -744,16 +873,11 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     setMaxPlayers(opts.maxPlayers);
     try {
       const rounds = window.TRIVIA_ROUNDS || [];
-      const r = rounds[Math.floor(Math.random() * rounds.length)];
-      if (!r) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
-      // Language-agnostic setup — host's chosen language is attached so all
-      // players render the same text from their local question data. The
-      // useTimer flag travels with the room so joiners also see the same
-      // per-question countdown behaviour. Guard against an empty quizLang
-      // slipping into Firebase (which would make joiners fall back to their
-      // local lang and break the shared view).
+      if (rounds.length === 0) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
+      const baseSetup = buildDuelSetup(selection, rounds);
+      if (!baseSetup) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
       const lang = ['es','en','fr','pt','de'].includes(quizLang) ? quizLang : 'es';
-      const setup = { ...window.stRivals.prepareDuelSetup(r), lang, useTimer };
+      const setup = { ...baseSetup, lang, useTimer };
       const res = await window.stRivals.createFriendRoom(uid, myName, setup, opts.maxPlayers);
       setRoomId(res.roomId); setCode(res.code); setSlot('p1');
       await window.stRivals.registerPlayerDisconnect(res.roomId, 'p1');
@@ -790,9 +914,11 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     if (!rtdbReady) return;
     try {
       const rounds = window.TRIVIA_ROUNDS || [];
-      const r = rounds[Math.floor(Math.random() * rounds.length)];
+      if (rounds.length === 0) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
+      const baseSetup = buildDuelSetup(selection, rounds);
+      if (!baseSetup) { showToast(dTr('duel.err_no_questions', 'No hay preguntas'), 'error'); return; }
       const lang = ['es','en','fr','pt','de'].includes(quizLang) ? quizLang : 'es';
-      const setup = { ...window.stRivals.prepareDuelSetup(r), lang, useTimer };
+      const setup = { ...baseSetup, lang, useTimer };
       const result = await window.stRivals.joinQueue(uid, myName, setup);
       setMaxPlayers(2);
       if (!result.waiting) {
@@ -849,7 +975,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
   }, [rtdbReady, initialInviteCode]);
 
   // Render
-  if (phase === 'bot') return <BotDuel onBack={returnToMenu} />;
+  if (phase === 'bot') return <BotDuel onBack={returnToMenu} selection={selection} />;
 
   if (phase === 'menu') {
     return (
@@ -860,6 +986,8 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
           onChangeLang={setQuizLang}
           useTimer={useTimer}
           onChangeTimer={setUseTimer}
+          selection={selection}
+          onChangeSelection={setSelection}
           onPick={(mode, opts) => {
             if (mode === 'bot') setPhase('bot');
             else if (mode === 'host') startHost(opts);

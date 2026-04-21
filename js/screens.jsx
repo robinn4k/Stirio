@@ -1277,11 +1277,12 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
     };
   }, []);
 
-  // Real leaderboard (Firestore query)
+  // Real leaderboard (Firestore query) — refetch on XP change & window focus
+  // so rankings stay live without requiring a full screen remount.
   const [leaderboard, setLeaderboard] = React.useState([]);
   React.useEffect(() => {
     let cancelled = false;
-    (async () => {
+    const load = async () => {
       if (!window.stLeaderboard) return;
       try {
         const fn = window.stLeaderboard.fetchLeaderboard || window.stLeaderboard.getLeaderboard;
@@ -1299,8 +1300,16 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           setLeaderboard(mapped);
         }
       } catch {}
-    })();
-    return () => { cancelled = true; };
+    };
+    load();
+    const onRefresh = () => load();
+    window.addEventListener('stirio:xpchange', onRefresh);
+    window.addEventListener('focus', onRefresh);
+    return () => {
+      cancelled = true;
+      window.removeEventListener('stirio:xpchange', onRefresh);
+      window.removeEventListener('focus', onRefresh);
+    };
   }, []);
 
   const saveName = () => {

@@ -150,8 +150,20 @@ const App = () => {
       syncFromLearn();
     })();
     const onFocus = () => syncFromLearn();
+    const onXpChange = () => syncFromLearn();
+    const onNameChange = () => {
+      const u = window.stAuth?.getCurrentUser?.();
+      if (u) setProfile(p => ({ ...p, name: u.name || p.name, avatar: u.photo || p.avatar }));
+    };
     window.addEventListener('focus', onFocus);
-    return () => { cancelled = true; window.removeEventListener('focus', onFocus); };
+    window.addEventListener('stirio:xpchange', onXpChange);
+    window.addEventListener('stirio:namechange', onNameChange);
+    return () => {
+      cancelled = true;
+      window.removeEventListener('focus', onFocus);
+      window.removeEventListener('stirio:xpchange', onXpChange);
+      window.removeEventListener('stirio:namechange', onNameChange);
+    };
   }, [syncFromLearn]);
 
   // Listen for account switches and rehydrate user data from Firestore.
@@ -639,6 +651,9 @@ const App = () => {
 
       {/* Cookie consent banner (GDPR) — hides once accepted */}
       <CookieBanner />
+
+      {/* Global toast host for XP / level-up / achievements / name changes */}
+      <ToastHost />
     </>
   );
 };

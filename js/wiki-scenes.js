@@ -700,9 +700,11 @@ export function buildGlasswareScene(scene, camera, ctx) {
 // ═══════════════════════════════════════════════════════════════════════
 
 export async function buildAlambiqueScene(scene, camera, ctx) {
-  // Try to load the GLB model
+  // Try to load the GLB model. The file is served from the `models/` folder
+  // at the site root, which is resolvable from both `wiki.html` and any
+  // iframe wrapper that loads it.
   try {
-    const gltf = await ctx.loadGLTF('alambique.glb');
+    const gltf = await ctx.loadGLTF('models/alambique.glb');
     const model = gltf.scene;
     model.scale.set(1.5, 1.5, 1.5);
     model.position.y = -1;
@@ -776,6 +778,53 @@ export async function buildAlambiqueScene(scene, camera, ctx) {
 
   camera.position.set(0, 1.5, 4.5);
   ctx.controls.target.set(0.5, 0.5, 0);
+
+  // Labelled parts of the alambique. Positions are in world space and track
+  // the programmatic fallback geometry above; if the GLB renders in a slightly
+  // different pose the dots may need a small tweak but will still be in the
+  // right region of each part. Labels are provided in Spanish with `tOr`
+  // fallback so translations can land in a follow-up PR.
+  const tOr = (k, fb) => {
+    if (window.stLang && window.stLang.t) {
+      const v = window.stLang.t(k);
+      if (v && v !== k) return v;
+    }
+    return fb;
+  };
+  if (ctx.setHotspots) {
+    ctx.setHotspots([
+      {
+        key: 'boiler',
+        pos: [0, 0.3, 0],
+        label: tOr('alambique.part.boiler.label', 'Caldera'),
+        detail: tOr('alambique.part.boiler.detail', 'Olla de cobre donde se calienta el mosto fermentado. El cobre reacciona con los compuestos sulfurados para un destilado más limpio.'),
+      },
+      {
+        key: 'dome',
+        pos: [0, 0.9, 0],
+        label: tOr('alambique.part.dome.label', 'Capitel'),
+        detail: tOr('alambique.part.dome.detail', 'Cúpula que recoge los vapores alcohólicos. Su forma y altura controlan el reflujo y la pureza del destilado.'),
+      },
+      {
+        key: 'swan-neck',
+        pos: [0.9, 1.75, 0],
+        label: tOr('alambique.part.swan_neck.label', 'Cuello de cisne'),
+        detail: tOr('alambique.part.swan_neck.detail', 'Tubo curvo que conduce los vapores hacia el condensador. El ángulo y longitud definen el carácter aromático del destilado.'),
+      },
+      {
+        key: 'condenser',
+        pos: [1.5, 0.6, 0],
+        label: tOr('alambique.part.condenser.label', 'Condensador'),
+        detail: tOr('alambique.part.condenser.detail', 'Envuelve el serpentín con agua fría para condensar los vapores de alcohol de vuelta a líquido.'),
+      },
+      {
+        key: 'firebox',
+        pos: [0, -0.65, 0],
+        label: tOr('alambique.part.firebox.label', 'Hogar'),
+        detail: tOr('alambique.part.firebox.detail', 'Fuente de calor debajo de la caldera. El fuego directo aporta notas ahumadas; el vapor indirecto es más suave y controlable.'),
+      },
+    ]);
+  }
 }
 
 // ═══════════════════════════════════════════════════════════════════════

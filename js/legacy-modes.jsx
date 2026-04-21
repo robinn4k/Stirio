@@ -187,7 +187,7 @@ const BlindScreen = ({ onBack }) => {
             : undefined;
           return (
             <button key={i} className="choice-btn" disabled={!!feedback}
-              onClick={() => pick(i)} style={{ background: bg, textAlign: 'left' }}>
+              onClick={(ev) => { if (ev.currentTarget.blur) ev.currentTarget.blur(); pick(i); }} style={{ background: bg, textAlign: 'left' }}>
               {ml(ans)}
             </button>
           );
@@ -271,7 +271,7 @@ const ConstructorScreen = ({ onBack }) => {
             : undefined;
           return (
             <button key={i} className="choice-btn" disabled={!!feedback}
-              onClick={() => pick(i)} style={{ background: bg, textAlign: 'left' }}>
+              onClick={(ev) => { if (ev.currentTarget.blur) ev.currentTarget.blur(); pick(i); }} style={{ background: bg, textAlign: 'left' }}>
               {ml(ans)}
             </button>
           );

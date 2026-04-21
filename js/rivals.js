@@ -132,6 +132,27 @@ export function prepareDuelSetup(roundData) {
 }
 
 /**
+ * Mixed-mode duel setup: pulls questions from multiple rounds so players
+ * face a diverse blend. Each question carries its own `roundId` so the
+ * loader can look up the correct source round regardless of the caller's
+ * language. Pool is shuffled once, then sliced to QUESTIONS_PER_DUEL.
+ */
+export function prepareDuelSetupMixed(roundsArr) {
+  const rounds = (roundsArr || []).filter(r => r && Array.isArray(r.questions) && r.questions.length > 0);
+  if (rounds.length === 0) throw new Error('prepareDuelSetupMixed: no valid rounds');
+  const pool = [];
+  rounds.forEach(r => r.questions.forEach((_, qi) => pool.push({ roundId: r.id, idx: qi })));
+  const picked = shuffle(pool).slice(0, QUESTIONS_PER_DUEL);
+  const questions = picked.map(({ roundId, idx }) => {
+    const round = rounds.find(r => r.id === roundId);
+    const qLen = round.questions[idx].a.length;
+    const answerPerm = shuffle([0, 1, 2, 3].slice(0, qLen));
+    return { roundId, idx, answerPerm, correctIndex: answerPerm.indexOf(0) };
+  });
+  return { mixed: true, roundIds: rounds.map(r => r.id), questions };
+}
+
+/**
  * Reconstruct localized question objects from a language-agnostic room setup.
  * Each player calls this independently using their own language setting.
  * Handles Firebase serialization: arrays stored as {0:…,1:…} objects.
@@ -148,11 +169,27 @@ export function loadDuelQuestionsFromSetup(setup, lang) {
   }
   const l = effective || getLang();
   const rounds = getLocalizedRounds(l);
-  const round = rounds.find(r => r.id === setup.roundId);
-  if (!round) return [];
   const setupQs = Array.isArray(setup.questions)
     ? setup.questions
     : Object.values(setup.questions);
+  // Mixed setup: each question carries its own roundId. Legacy setup: single
+  // top-level roundId covers every question.
+  if (setup.mixed) {
+    return setupQs.map(({ roundId, idx, answerPerm, correctIndex }) => {
+      const round = rounds.find(r => r.id === roundId);
+      if (!round) return null;
+      const q = round.questions[idx];
+      const perm = Array.isArray(answerPerm) ? answerPerm : Object.values(answerPerm);
+      return {
+        question: q.q,
+        answers: perm.map(ai => q.a[ai]),
+        correctIndex,
+        explanation: q.exp
+      };
+    }).filter(Boolean);
+  }
+  const round = rounds.find(r => r.id === setup.roundId);
+  if (!round) return [];
   return setupQs.map(({ idx, answerPerm, correctIndex }) => {
     const q = round.questions[idx];
     const perm = Array.isArray(answerPerm) ? answerPerm : Object.values(answerPerm);

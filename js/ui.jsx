@@ -269,6 +269,110 @@ const LegalFooter = () => {
   );
 };
 
+// ── Toast host (global notifications) ────────────────────────
+// Listens for `stirio:toast` CustomEvents and displays stacked toasts at
+// bottom-center. Also auto-converts domain events (xp/level/achievement/name)
+// into toasts. Use `window.stToast.show({kind,title,body,ttl})` or dispatch:
+//   window.dispatchEvent(new CustomEvent('stirio:toast', { detail: {...} }));
+const showToast = (detail) => {
+  try {
+    window.dispatchEvent(new CustomEvent('stirio:toast', { detail: detail || {} }));
+  } catch {}
+};
+
+const ToastHost = () => {
+  const [toasts, setToasts] = useState([]);
+  const idRef = useRef(0);
+
+  const push = useCallback((toast) => {
+    const id = ++idRef.current;
+    const full = { id, kind: 'info', ttl: 2500, ...toast };
+    setToasts(list => {
+      const next = [...list, full];
+      return next.slice(-3); // keep max 3
+    });
+    window.setTimeout(() => {
+      setToasts(list => list.filter(x => x.id !== id));
+    }, full.ttl);
+  }, []);
+
+  useEffect(() => {
+    const onToast = (ev) => push(ev.detail || {});
+    const onXp = (ev) => {
+      const d = ev.detail || {};
+      if (d.leveledUp) {
+        push({ kind: 'level', title: t('toast.level_up', `¡Nivel ${d.level}!`), body: t('toast.level_up_body', 'Has subido de nivel'), ttl: 3200 });
+      } else if (d.delta > 0) {
+        push({ kind: 'xp', title: `+${d.delta} XP`, ttl: 1800 });
+      }
+    };
+    const onAchievement = (ev) => {
+      const d = ev.detail || {};
+      const list = Array.isArray(d.unlocked) ? d.unlocked : [];
+      list.forEach(a => push({
+        kind: 'achievement',
+        title: t('toast.achievement_unlocked', 'Nuevo logro'),
+        body: (a && (a.title || a.name || a.id)) || '',
+        ttl: 3500,
+      }));
+    };
+    const onName = () => push({ kind: 'info', title: t('toast.name_saved', 'Nombre actualizado'), ttl: 2000 });
+    window.addEventListener('stirio:toast', onToast);
+    window.addEventListener('stirio:xpchange', onXp);
+    window.addEventListener('stirio:achievement', onAchievement);
+    window.addEventListener('stirio:namechange', onName);
+    return () => {
+      window.removeEventListener('stirio:toast', onToast);
+      window.removeEventListener('stirio:xpchange', onXp);
+      window.removeEventListener('stirio:achievement', onAchievement);
+      window.removeEventListener('stirio:namechange', onName);
+    };
+  }, [push]);
+
+  if (toasts.length === 0) return null;
+  const kindColor = {
+    xp: 'var(--amber)',
+    level: 'var(--lime)',
+    achievement: 'var(--violet)',
+    info: 'var(--cyan)',
+    error: 'var(--bad)',
+  };
+  const kindIcon = { xp: 'bolt', level: 'sparkle', achievement: 'trophy', info: 'check', error: 'close' };
+  return (
+    <div style={{
+      position: 'fixed', left: '50%', bottom: 'calc(80px + env(safe-area-inset-bottom, 0))',
+      transform: 'translateX(-50%)',
+      zIndex: 1000, display: 'flex', flexDirection: 'column-reverse', gap: 8,
+      pointerEvents: 'none', width: 'min(92vw, 360px)',
+    }}>
+      {toasts.map(ts => {
+        const color = kindColor[ts.kind] || kindColor.info;
+        return (
+          <div key={ts.id} style={{
+            pointerEvents: 'auto',
+            background: 'var(--bg-1)',
+            border: `1px solid ${color}`,
+            borderRadius: 'var(--r-md)',
+            boxShadow: `0 12px 28px rgba(0,0,0,0.45), 0 0 0 2px color-mix(in oklch, ${color} 20%, transparent)`,
+            padding: '10px 14px',
+            display: 'flex', alignItems: 'center', gap: 10,
+            animation: 'toastIn .22s cubic-bezier(.2,.9,.3,1) both',
+            color: 'var(--ink-0)',
+          }}>
+            <div style={{ color, display: 'grid', placeItems: 'center' }}>
+              <Icon name={kindIcon[ts.kind] || 'check'} size={18} />
+            </div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.2 }}>{ts.title}</div>
+              {ts.body && <div style={{ fontSize: 11, color: 'var(--ink-2)', marginTop: 2 }}>{ts.body}</div>}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
 // ── Export to window (referenced by other JSX files) ─────────
 Object.assign(window, {
   stUiT: t,
@@ -276,4 +380,5 @@ Object.assign(window, {
   Prompt, StepTitle,
   playChord, confettiBurst,
   CookieBanner, LegalFooter,
+  ToastHost, stToast: { show: showToast },
 });
