@@ -24,21 +24,12 @@ const PARITY_EXCLUDE_PREFIXES = [
 // handled in follow-ups. Trim this list as fixes land.
 const KNOWN_MISSING_KEYS = new Set([
   'academy.example',
-  'arcade.again', 'arcade.done_title', 'arcade.eyebrow', 'arcade.header',
-  'arcade.menu_body', 'arcade.menu_title', 'arcade.score', 'arcade.start',
-  'arcade.target', 'arcade.time',
   'duel.guest', 'duel.mode_mix', 'duel.mode_random', 'duel.mode_specific',
   'duel.pick_mix', 'duel.pick_round', 'duel.round_mode_label',
   'home.queue_shuffle', 'home.ref_academy', 'home.ref_academy_badge',
   'home.ref_academy_levels', 'home.ref_cocktails',
   'lesson.explain', 'lesson.unavailable_body', 'lesson.unavailable_title',
-  'map.header',
-  'memory.again', 'memory.eyebrow', 'memory.header', 'memory.moves',
-  'memory.time', 'memory.won_title',
   'profile.account', 'profile.guest',
-  'rhythm.again', 'rhythm.done_title', 'rhythm.eyebrow', 'rhythm.good',
-  'rhythm.header', 'rhythm.hint', 'rhythm.menu_body', 'rhythm.menu_title',
-  'rhythm.miss', 'rhythm.perfect', 'rhythm.progress', 'rhythm.start',
   'toast.achievement_unlocked', 'toast.level_up', 'toast.level_up_body',
   'toast.name_saved',
 ]);

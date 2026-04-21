@@ -245,7 +245,13 @@ const App = () => {
       let tries = 0;
       while (!window.stLang && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
       if (!cancelled && window.stLang?.preloadAllTranslations) {
-        try { await window.stLang.preloadAllTranslations(); setLangVersion(v => v + 1); } catch {}
+        try {
+          await window.stLang.preloadAllTranslations();
+          setLangVersion(v => v + 1);
+          // Notify subscribers (Profile achievements list, etc.) so they can
+          // re-resolve strings that were fetched with empty translation dicts.
+          window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: window.stLang.getLang?.() } }));
+        } catch {}
       }
 
       // Poll for auth module
@@ -445,9 +451,24 @@ const App = () => {
         window.stAchievements.checkAchievements(patch);
       } catch (e) { console.warn('achievements check failed:', e); }
     }
-    // Update leaderboard score if logged in
+    // Update leaderboard score if logged in. `saveScore` signature is
+    // { roundId, roundTitle, score, corrects, wrongs } — we derive roundId
+    // from the active lesson so Firestore keeps one doc per round per user
+    // (the path is scores/{uid}_{roundId}). Without it every finish
+    // overwrites the same scores/{uid}_undefined doc.
     if (window.stLeaderboard && window.stLeaderboard.saveScore && typeof xp === 'number') {
-      try { window.stLeaderboard.saveScore({ score: xp, mode: activeLesson?.category || 'lesson' }); } catch {}
+      try {
+        const lesson = activeLesson;
+        const roundId = lesson?.id || `lesson-${Date.now()}`;
+        const roundTitle = lesson?.title || lesson?.category || 'lesson';
+        window.stLeaderboard.saveScore({
+          roundId,
+          roundTitle,
+          score: xp,
+          corrects: correct || 0,
+          wrongs: wrong || 0,
+        });
+      } catch (e) { console.warn('saveScore failed:', e); }
     }
 
     setActiveLesson(null);

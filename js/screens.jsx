@@ -707,12 +707,14 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
     window.addEventListener('stirio:mapregionsready', onReady);
     return () => window.removeEventListener('stirio:mapregionsready', onReady);
   }, []);
-  // Real leaderboard preview
+  // Real leaderboard preview. Retries once after mount because Firebase
+  // auth + stLeaderboard may not be ready on the first render, which would
+  // otherwise leave the home preview empty until the user navigates away.
   const [leaderboardPreview, setLeaderboardPreview] = React.useState([]);
   React.useEffect(() => {
     let cancelled = false;
-    (async () => {
-      if (!window.stLeaderboard) return;
+    const load = async () => {
+      if (cancelled || !window.stLeaderboard) return;
       try {
         const fn = window.stLeaderboard.fetchLeaderboard || window.stLeaderboard.getLeaderboard;
         if (!fn) return;
@@ -727,8 +729,18 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           })));
         }
       } catch {}
-    })();
-    return () => { cancelled = true; };
+    };
+    load();
+    const retryTimer = setTimeout(load, 1500);
+    const onRefresh = () => load();
+    window.addEventListener('stirio:xpchange', onRefresh);
+    window.addEventListener('stirio:authchange', onRefresh);
+    return () => {
+      cancelled = true;
+      clearTimeout(retryTimer);
+      window.removeEventListener('stirio:xpchange', onRefresh);
+      window.removeEventListener('stirio:authchange', onRefresh);
+    };
   }, []);
   // Featured cocktail rotates daily: different lesson each calendar day,
   // cycling through LESSONS. Uses UTC day-of-epoch so everyone sees the
@@ -786,7 +798,13 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)',
           marginBottom: 6,
         }}>
-          <span>{(window.stLang && window.stLang.t) ? window.stLang.t('profile.level_line', { level: profile.level, title: profile.title }) : `Nivel ${profile.level} · ${profile.title}`}</span>
+          <span>{(() => {
+            if (!(window.stLang && window.stLang.t)) return `Nivel ${profile.level} · ${profile.title}`;
+            const titleKey = `profile.level.${profile.level}.title`;
+            const titleVal = window.stLang.t(titleKey);
+            const title = (titleVal && titleVal !== titleKey) ? titleVal : (profile.title || '');
+            return window.stLang.t('profile.level_line', { level: profile.level, title });
+          })()}</span>
           <span>{profile.xp} / {profile.xpNext} xp</span>
         </div>
         <div style={{ height: 8, background: 'var(--bg-2)', borderRadius: 99, overflow: 'hidden', border: '1px solid var(--line-soft)' }}>
@@ -1270,10 +1288,14 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
     else setTimeout(loadAch, 300);
     window.addEventListener('stirio:achievement', readLocal);
     window.addEventListener('focus', readLocal);
+    // Re-resolve titles/descs when translations arrive or language changes.
+    // Without this, achievements cached pre-i18n-load would show raw keys.
+    window.addEventListener('stirio:langchange', readLocal);
     return () => {
       cancelled = true;
       window.removeEventListener('stirio:achievement', readLocal);
       window.removeEventListener('focus', readLocal);
+      window.removeEventListener('stirio:langchange', readLocal);
     };
   }, []);
 
@@ -1302,13 +1324,20 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
       } catch {}
     };
     load();
+    // Retry shortly after mount in case Firebase auth / stLeaderboard init
+    // hadn't finished yet (the Profile can open before fetchLeaderboard has
+    // a live Firestore connection, which would silently return empty).
+    const retryTimer = setTimeout(load, 1500);
     const onRefresh = () => load();
     window.addEventListener('stirio:xpchange', onRefresh);
     window.addEventListener('focus', onRefresh);
+    window.addEventListener('stirio:authchange', onRefresh);
     return () => {
       cancelled = true;
+      clearTimeout(retryTimer);
       window.removeEventListener('stirio:xpchange', onRefresh);
       window.removeEventListener('focus', onRefresh);
+      window.removeEventListener('stirio:authchange', onRefresh);
     };
   }, []);
 
@@ -1388,7 +1417,13 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
         </label>
         <div style={{ flex: 1 }}>
           <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>
-            {(window.stLang && window.stLang.t) ? window.stLang.t('profile.level_line', { level: profile.level, title: profile.title }) : `level ${profile.level} · ${profile.title}`}
+            {(() => {
+              if (!(window.stLang && window.stLang.t)) return `level ${profile.level} · ${profile.title}`;
+              const titleKey = `profile.level.${profile.level}.title`;
+              const titleVal = window.stLang.t(titleKey);
+              const title = (titleVal && titleVal !== titleKey) ? titleVal : (profile.title || '');
+              return window.stLang.t('profile.level_line', { level: profile.level, title });
+            })()}
           </div>
           <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
             {profile.name || tr('profile.stranger', 'stranger')}
@@ -1598,7 +1633,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           />
           <SettingsRow
             icon="🥃"
-            label="Unidades"
+            label={tr('profile.units', 'Unidades')}
             value={
               <div style={{ display: 'flex', gap: 4, background: 'var(--bg-2)', padding: 3, borderRadius: 8 }}>
                 {['ml', 'oz'].map(u => (
@@ -1617,7 +1652,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
 
           <SettingsRow
             icon="🎬"
-            label="Reducir animaciones"
+            label={tr('profile.reduce_motion', 'Reducir animaciones')}
             value={<Toggle on={reduce} onChange={setReduce} />}
           />
           <SettingsRow
@@ -1648,7 +1683,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
               const url = URL.createObjectURL(blob);
               const a = document.createElement('a');
               a.href = url; a.download = 'stirio-datos.json'; a.click();
-            }} style={{ color: 'var(--cyan)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>descargar ↓</button>}
+            }} style={{ color: 'var(--cyan)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{tr('profile.export_cta', 'descargar ↓')}</button>}
           />
           <SettingsRow
             icon="🗑️"
@@ -1678,7 +1713,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
                 }
               }
               onResetData && onResetData();
-            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>borrar →</button>}
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{tr('profile.delete_progress_cta', 'borrar →')}</button>}
           />
           <SettingsRow
             icon="🚪"
@@ -1687,7 +1722,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
               if (confirm(tr('profile.sign_out_confirm', '¿Cerrar sesión? Volverás al onboarding.'))) {
                 onLogout && onLogout();
               }
-            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>logout →</button>}
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{tr('profile.sign_out_cta', 'logout →')}</button>}
           />
           <SettingsRow
             icon="⚠️"
@@ -1707,7 +1742,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
                 alert(tr('profile.delete_account_error', 'No se pudo borrar la cuenta. Reinicia sesión y vuelve a intentarlo.'));
                 console.warn('delete account failed:', e);
               }
-            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>eliminar →</button>}
+            }} style={{ color: 'var(--bad)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{tr('profile.delete_account_cta', 'eliminar →')}</button>}
           />
         </div>
 
@@ -1716,7 +1751,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
           fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-4)',
           letterSpacing: '0.1em', textTransform: 'uppercase',
         }}>
-          Stirio v{typeof window !== 'undefined' && window.STIRIO_VERSION ? window.STIRIO_VERSION : '0.0.0'} · Hecho con ❤️ en Málaga
+          Stirio v{typeof window !== 'undefined' && window.STIRIO_VERSION ? window.STIRIO_VERSION : '0.0.0'} · {tr('profile.made_with_love', 'Hecho con ❤️ en Málaga')}
         </div>
       </section>
     </div>
