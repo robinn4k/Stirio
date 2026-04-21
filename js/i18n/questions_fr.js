@@ -492,5 +492,24 @@ export const rounds = [
       { q: "À quoi sert l'acide malique en mixologie moderne ?", a: ["Rétablir l'acidité d'un cocktail clarifié sans ajouter de pulpe", "Conserver les cocktails embouteillés", "Émulsionner les blancs d'œuf", "Augmenter l'ABV"], exp: "L'acide malique (pomme) ou citrique 'corrige' les liquides clarifiés : il apporte un pH bas sans la turbidité du jus frais." },
       { q: "Combien de temps un sirop rich 2:1 se conserve-t-il au réfrigérateur ?", a: ["Environ un mois", "Un jour", "Six heures", "Un an à température ambiante"], exp: "Le sirop rich 2:1 se conserve environ un mois au frais grâce à sa forte concentration en sucre ; le 1:1 tient environ 2 semaines." }
     ]
+  },
+  {
+    id: 27,
+    title: "Sans alcool & accords sensoriels",
+    subtitle: "Carte zero-proof et entraînement du palais",
+    icon: "🌿",
+    color: "#16a085",
+    questions: [
+      { q: "Quelle marque a popularisé le 'distillat sans alcool' aux botaniques ?", a: ["Seedlip", "Lyre's", "Martini Non-Alcoholic", "Gordon's 0.0"], exp: "Seedlip, fondée en 2015 par Ben Branson, a été la première marque de distillats sans alcool commercialisée mondialement." },
+      { q: "Qu'est-ce que le verjus ?", a: ["Jus acide de raisin non mûri", "Un type de vermouth doux", "Un vin fortifié espagnol", "Une liqueur française aux herbes"], exp: "Le verjus (du français 'jus vert') est un jus acide de raisins non mûrs ; un substitut doux au citron ou au vinaigre." },
+      { q: "Quelle boisson mexicaine fermentée est élaborée avec de l'ananas et du piloncillo ?", a: ["Tepache", "Pulque", "Mezcal Pechuga", "Tejate"], exp: "Le tepache est une boisson mexicaine traditionnelle fermentée d'ananas, de piloncillo et d'épices ; très peu alcoolisée (~0,5-2% ABV)." },
+      { q: "Combien de saveurs de base la science sensorielle reconnaît-elle aujourd'hui ?", a: ["Cinq : sucré, salé, acide, amer et umami", "Quatre : sucré, salé, acide et amer", "Six, y compris le gras", "Trois : sucré, acide et amer"], exp: "On reconnaît cinq saveurs de base ; l'umami (savoureux) a été identifié officiellement par Kikunae Ikeda en 1908." },
+      { q: "Quel livre systématise les accords par affinités aromatiques ?", a: ["The Flavor Bible", "Liquid Intelligence", "The Joy of Mixology", "On Food and Cooking"], exp: "The Flavor Bible, de Page et Dornenburg (2008), est une référence pour associer les ingrédients par arômes." },
+      { q: "En quoi consiste un 'herb slap' ?", a: ["Taper une feuille entre les mains pour libérer ses huiles essentielles", "Ajouter des herbes dans le shaker", "Mélanger les herbes à l'alcool", "Décorer avec des brins frais"], exp: "Le herb slap rompt les trichomes d'une feuille (menthe, basilic) et libère ses huiles aromatiques sans la piler." },
+      { q: "Quelle méthode produit de la glace transparente (clear ice) ?", a: ["Congeler l'eau de manière directionnelle du haut vers le bas", "Utiliser de l'eau distillée dans un bac à glaçons ordinaire", "Congeler très rapidement à -30 °C", "Ajouter du sucre à l'eau avant de congeler"], exp: "La congélation directionnelle (par ex. dans une Lewis bag ou une glacière ouverte) pousse air et minéraux vers le fond, laissant la glace transparente au-dessus." },
+      { q: "Quel est l'ordre sensoriel classique pour déguster un cocktail ?", a: ["Vue, odorat, gorgée, déglutition, persistance", "Odorat, vue, déglutition, finale", "Gorgée, déglutition, vue, finale", "Vue, gorgée, odorat, finale"], exp: "D'abord le visuel, puis l'olfactif, ensuite le goût en bouche, la déglutition et enfin la persistance aromatique." },
+      { q: "Quel mets s'accorde le mieux avec un Negroni ?", a: ["Des amuse-bouches salés et intenses (olives, jambon sec, fruits secs)", "Des desserts très sucrés", "Des soupes crémeuses chaudes", "Un poisson blanc grillé"], exp: "L'amertume et le degré du Negroni s'équilibrent avec des bouchées salées ; c'est par définition un cocktail d'apéritif." },
+      { q: "Quel bois est le plus courant pour fumer un cocktail au smoke gun ?", a: ["Cerisier", "Eucalyptus", "Pin", "Saule"], exp: "Le bois de cerisier donne une fumée douce et sucrée idéale pour les cocktails ; mesquite, hickory et chêne toasté sont aussi utilisés." }
+    ]
   }
 ];

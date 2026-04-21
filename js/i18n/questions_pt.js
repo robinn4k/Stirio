@@ -492,5 +492,24 @@ export const rounds = [
       { q: "Para que se utiliza o ácido málico na coqueteleria moderna?", a: ["Restaurar a acidez de um coquetel clarificado sem adicionar polpa", "Conservar coqueteis engarrafados", "Emulsionar claras de ovo", "Aumentar o ABV"], exp: "O ácido málico (maçã) ou cítrico 'corrige' líquidos clarificados — confere pH baixo sem a turvação do sumo fresco." },
       { q: "Quanto tempo dura um xarope rich 2:1 refrigerado?", a: ["Cerca de um mês", "Um dia", "Seis horas", "Um ano à temperatura ambiente"], exp: "O xarope rich 2:1 conserva-se cerca de um mês refrigerado graças à alta concentração de açúcar; o 1:1 dura umas 2 semanas." }
     ]
+  },
+  {
+    id: 27,
+    title: "Sem álcool & harmonização sensorial",
+    subtitle: "Programa zero-proof e treino do paladar",
+    icon: "🌿",
+    color: "#16a085",
+    questions: [
+      { q: "Que marca popularizou o 'destilado sem álcool' com botânicos?", a: ["Seedlip", "Lyre's", "Martini Non-Alcoholic", "Gordon's 0.0"], exp: "Seedlip, fundada em 2015 por Ben Branson, foi a primeira marca de destilados sem álcool a ser comercializada globalmente." },
+      { q: "O que é o verjus?", a: ["Sumo ácido de uva verde", "Um tipo de vermute doce", "Um vinho generoso espanhol", "Um licor francês de ervas"], exp: "O verjus (do francês 'jus vert') é sumo ácido de uvas verdes; substitui suavemente o limão ou o vinagre." },
+      { q: "Que bebida fermentada mexicana é elaborada com ananás e piloncillo?", a: ["Tepache", "Pulque", "Mezcal Pechuga", "Tejate"], exp: "O tepache é uma bebida fermentada tradicional mexicana de ananás, piloncillo e especiarias; tem baixíssimo teor alcoólico (~0,5-2% ABV)." },
+      { q: "Quantos sabores básicos a ciência sensorial atual reconhece?", a: ["Cinco: doce, salgado, ácido, amargo e umami", "Quatro: doce, salgado, ácido e amargo", "Seis, incluindo o sabor gorduroso", "Três: doce, ácido e amargo"], exp: "Aceitam-se cinco sabores básicos; o umami foi identificado oficialmente por Kikunae Ikeda em 1908." },
+      { q: "Que livro sistematiza a harmonização por afinidades aromáticas?", a: ["The Flavor Bible", "Liquid Intelligence", "The Joy of Mixology", "On Food and Cooking"], exp: "The Flavor Bible, de Page e Dornenburg (2008), é uma referência padrão para combinar ingredientes pelos aromas." },
+      { q: "Em que consiste um 'herb slap' na decoração?", a: ["Bater suavemente uma folha na mão para libertar os óleos essenciais", "Adicionar ervas ao shaker", "Misturar ervas com álcool", "Decorar com ramos frescos"], exp: "O herb slap rompe os tricomas de uma folha (hortelã, manjericão) e liberta os seus óleos aromáticos sem a macerar." },
+      { q: "Que método produz gelo transparente (clear ice)?", a: ["Congelar a água de cima para baixo para expulsar ar e impurezas", "Usar água destilada numa forma normal", "Congelar muito rápido a -30 °C", "Adicionar açúcar à água antes de congelar"], exp: "A congelação direcional (por exemplo numa Lewis bag ou geladeira aberta) empurra ar e minerais para o fundo, deixando o gelo claro em cima." },
+      { q: "Qual é a ordem sensorial clássica ao degustar um coquetel?", a: ["Visão, olfato, gole, deglutição, persistência", "Olfato, visão, deglutição, final", "Gole, deglutição, visão, final", "Visão, gole, olfato, final"], exp: "Primeiro o visual, depois o olfativo, a seguir o sabor em boca, a deglutição e por fim a persistência no retrogosto." },
+      { q: "Que tipo de comida harmoniza melhor com um Negroni?", a: ["Aperitivos salgados e intensos (azeitonas, presunto, frutos secos)", "Sobremesas muito doces", "Sopas cremosas quentes", "Peixe branco grelhado"], exp: "O amargor e graduação do Negroni equilibram-se com petiscos salgados; é por definição um coquetel de aperitivo." },
+      { q: "Que madeira é mais comum para defumar coquetéis com pistola de fumo?", a: ["Cerejeira", "Eucalipto", "Pinho", "Salgueiro"], exp: "A madeira de cerejeira dá um fumo suave e doce ideal para coquetéis; também se usam mesquite, hickory e carvalho tostado." }
+    ]
   }
 ];

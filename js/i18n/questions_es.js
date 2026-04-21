@@ -492,5 +492,24 @@ export const rounds = [
       { q: "¿Para qué se usa el ácido málico en coctelería moderna?", a: ["Devolver acidez a un cóctel clarificado sin añadir pulpa", "Conservar cócteles embotellados", "Emulsionar claras de huevo", "Aumentar el ABV"], exp: "El ácido málico (manzana) o cítrico corrige la acidez en líquidos clarificados, aportando pH bajo sin la turbidez del zumo fresco." },
       { q: "¿Cuánto dura un sirope rich 2:1 refrigerado?", a: ["Aproximadamente un mes", "Un día", "Seis horas", "Un año a temperatura ambiente"], exp: "El sirope rich 2:1 se conserva cerca de un mes refrigerado gracias a su alta concentración de azúcar; el 1:1 dura unas 2 semanas." }
     ]
+  },
+  {
+    id: 27,
+    title: "Sin alcohol & maridaje sensorial",
+    subtitle: "Programa zero-proof y entrenamiento del paladar",
+    icon: "🌿",
+    color: "#16a085",
+    questions: [
+      { q: "¿Qué marca popularizó el 'destilado sin alcohol' con botánicos?", a: ["Seedlip", "Lyre's", "Martini Non-Alcoholic", "Gordon's 0.0"], exp: "Seedlip, fundada en 2015 por Ben Branson, fue la primera marca de destilados sin alcohol en comercializarse globalmente." },
+      { q: "¿Qué es el verjus?", a: ["Zumo ácido de uva sin madurar", "Un tipo de vermut dulce", "Un vino generoso español", "Un licor francés de hierbas"], exp: "El verjus (del francés 'jus vert') es zumo ácido de uvas no maduras; sustituye suavemente al limón o al vinagre." },
+      { q: "¿Qué bebida fermentada mexicana se elabora con piña y piloncillo?", a: ["Tepache", "Pulque", "Mezcal Pechuga", "Tejate"], exp: "El tepache es una bebida fermentada tradicional mexicana de piña, piloncillo y especias; tiene un grado alcohólico muy bajo (~0,5-2% ABV)." },
+      { q: "¿Cuántos sabores básicos reconoce la ciencia sensorial actual?", a: ["Cinco: dulce, salado, ácido, amargo y umami", "Cuatro: dulce, salado, ácido y amargo", "Seis, incluido el sabor graso", "Tres: dulce, ácido y amargo"], exp: "Se aceptan cinco sabores básicos; el umami (sabroso) lo identificó oficialmente Kikunae Ikeda en 1908." },
+      { q: "¿Qué libro sistematiza el maridaje de ingredientes por afinidades aromáticas?", a: ["The Flavor Bible", "Liquid Intelligence", "The Joy of Mixology", "On Food and Cooking"], exp: "The Flavor Bible, de Page y Dornenburg (2008), es una referencia estándar para combinar ingredientes por aromas." },
+      { q: "¿En qué consiste un 'herb slap' al decorar?", a: ["Golpear suavemente una hoja contra la mano para liberar aceites esenciales", "Añadir hierbas al shaker", "Mezclar hierbas con alcohol", "Decorar con ramas frescas"], exp: "El herb slap rompe los tricomas de una hoja (menta, albahaca) y libera sus aceites aromáticos sin macerarla." },
+      { q: "¿Qué método produce hielo transparente (clear ice)?", a: ["Congelar el agua de arriba hacia abajo para expulsar aire e impurezas", "Usar agua destilada en una cubitera normal", "Congelar muy rápido a -30 °C", "Añadir azúcar al agua antes de congelar"], exp: "La congelación direccional (por ejemplo en una Lewis bag o nevera abierta) empuja aire y minerales al fondo, dejando el hielo claro arriba." },
+      { q: "¿Cuál es el orden sensorial clásico al degustar un cóctel?", a: ["Vista, olfato, sorbo, traguéo, persistencia", "Olfato, vista, traguéo, acabado", "Sorbo, traguéo, vista, acabado", "Vista, sorbo, olfato, acabado"], exp: "Primero lo visual, luego lo olfativo, después el sorbo en boca, el traguéo y finalmente la persistencia en el retrogusto." },
+      { q: "¿Qué tipo de comida marida mejor con un Negroni?", a: ["Aperitivos salados e intensos (aceitunas, jamón, frutos secos)", "Postres muy dulces", "Sopas cremosas calientes", "Pescado blanco a la plancha"], exp: "El amargor y graduación del Negroni se equilibran con bocados salados; es por definición un cóctel de aperitivo." },
+      { q: "¿Qué madera es más habitual para ahumar cócteles con pistola ahumadora?", a: ["Cerezo", "Eucalipto", "Pino", "Sauce"], exp: "La madera de cerezo da un humo suave y dulce ideal para cócteles; también se usan mesquite, hickory o roble tostado." }
+    ]
   }
 ];

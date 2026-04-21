@@ -492,5 +492,24 @@ export const rounds = [
       { q: "Why use malic acid in modern bartending?", a: ["To restore acidity to a clarified drink without adding pulp", "To preserve bottled cocktails", "To emulsify egg whites", "To boost the ABV"], exp: "Malic (apple) or citric acid 'corrects' clarified liquids — adding low pH without the cloudiness of fresh juice." },
       { q: "How long does 2:1 rich syrup keep refrigerated?", a: ["About a month", "One day", "Six hours", "One year at room temperature"], exp: "Rich 2:1 syrup keeps for roughly a month refrigerated thanks to its higher sugar concentration; 1:1 lasts about 2 weeks." }
     ]
+  },
+  {
+    id: 27,
+    title: "Zero-proof & sensory pairing",
+    subtitle: "Non-alcoholic program & palate training",
+    icon: "🌿",
+    color: "#16a085",
+    questions: [
+      { q: "Which brand popularized the 'non-alcoholic distillate' with botanicals?", a: ["Seedlip", "Lyre's", "Martini Non-Alcoholic", "Gordon's 0.0"], exp: "Seedlip, founded in 2015 by Ben Branson, was the first non-alcoholic distillate brand to reach the global market." },
+      { q: "What is verjus?", a: ["Acidic juice from unripe grapes", "A type of sweet vermouth", "A Spanish fortified wine", "A French herbal liqueur"], exp: "Verjus (French for 'green juice') is acidic juice from unripe grapes; a mellower stand-in for lemon or vinegar." },
+      { q: "Which Mexican fermented drink is made from pineapple and piloncillo?", a: ["Tepache", "Pulque", "Mezcal Pechuga", "Tejate"], exp: "Tepache is a traditional Mexican fermented drink of pineapple, piloncillo, and spices; very low alcohol (~0.5-2% ABV)." },
+      { q: "How many basic tastes does current sensory science recognize?", a: ["Five: sweet, salty, sour, bitter, and umami", "Four: sweet, salty, sour, and bitter", "Six, including fat taste", "Three: sweet, sour, and bitter"], exp: "Five basic tastes are accepted; umami (savory) was officially identified by Kikunae Ikeda in 1908." },
+      { q: "Which book systematizes ingredient pairing by aromatic affinities?", a: ["The Flavor Bible", "Liquid Intelligence", "The Joy of Mixology", "On Food and Cooking"], exp: "The Flavor Bible, by Page and Dornenburg (2008), is a standard reference for pairing ingredients by aroma." },
+      { q: "What is a 'herb slap' in garnishing?", a: ["Lightly clapping a leaf between the hands to release its essential oils", "Adding herbs to the shaker", "Mixing herbs into the spirit", "Garnishing with fresh sprigs"], exp: "The herb slap ruptures the trichomes on a leaf (mint, basil) to release aromatic oils without muddling it." },
+      { q: "Which method produces clear ice?", a: ["Freezing water directionally from top down so impurities settle to the bottom", "Using distilled water in a regular ice tray", "Flash-freezing at -30 °C", "Adding sugar to the water before freezing"], exp: "Directional freezing (e.g. in a Lewis bag or open cooler) pushes air and minerals down, leaving clear ice at the top." },
+      { q: "What is the classic sensory order when tasting a cocktail?", a: ["Sight, smell, sip, swallow, finish", "Smell, sight, swallow, finish", "Sip, swallow, sight, finish", "Sight, sip, smell, finish"], exp: "First visual, then olfactory, then taste in the mouth, swallow, and finally the finish or lingering aftertaste." },
+      { q: "Which food pairs best with a Negroni?", a: ["Salty, intense nibbles (olives, cured ham, nuts)", "Very sweet desserts", "Hot creamy soups", "Grilled white fish"], exp: "The Negroni's bitterness and ABV balance against salty, intense bites; it's by definition an aperitivo cocktail." },
+      { q: "Which wood is most common for smoking cocktails with a smoke gun?", a: ["Cherry", "Eucalyptus", "Pine", "Willow"], exp: "Cherry wood gives a mild, sweet smoke well suited to cocktails; mesquite, hickory, and toasted oak are also used." }
+    ]
   }
 ];

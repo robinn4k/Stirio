@@ -492,5 +492,24 @@ export const rounds = [
       { q: "Wofür wird Apfelsäure (Malic Acid) in der modernen Mixologie genutzt?", a: ["Um geklärten Drinks Säure zurückzugeben, ohne Trübstoffe hinzuzufügen", "Um Flaschencocktails zu konservieren", "Um Eiweiß zu emulgieren", "Um den ABV zu erhöhen"], exp: "Apfelsäure (Malic) oder Zitronensäure 'korrigiert' geklärte Flüssigkeiten: niedriger pH-Wert ohne die Trübung frischer Säfte." },
       { q: "Wie lange hält sich 2:1 Rich Syrup im Kühlschrank?", a: ["Etwa einen Monat", "Einen Tag", "Sechs Stunden", "Ein Jahr bei Raumtemperatur"], exp: "Rich Syrup (2:1) hält dank höherer Zuckerkonzentration etwa einen Monat im Kühlschrank; 1:1-Sirup hält rund 2 Wochen." }
     ]
+  },
+  {
+    id: 27,
+    title: "Alkoholfrei & sensorisches Pairing",
+    subtitle: "Zero-Proof-Programm und Palette-Training",
+    icon: "🌿",
+    color: "#16a085",
+    questions: [
+      { q: "Welche Marke machte 'alkoholfreie Destillate' mit Botanicals bekannt?", a: ["Seedlip", "Lyre's", "Martini Non-Alcoholic", "Gordon's 0.0"], exp: "Seedlip, 2015 von Ben Branson gegründet, war die erste global vermarktete Marke für alkoholfreie Destillate." },
+      { q: "Was ist Verjus?", a: ["Saurer Saft aus unreifen Trauben", "Eine Art süßer Wermut", "Ein spanischer Likörwein", "Ein französischer Kräuterlikör"], exp: "Verjus (französisch 'grüner Saft') ist saurer Saft unreifer Trauben; ein milderer Ersatz für Zitrone oder Essig." },
+      { q: "Welches mexikanische Fermentgetränk wird aus Ananas und Piloncillo gemacht?", a: ["Tepache", "Pulque", "Mezcal Pechuga", "Tejate"], exp: "Tepache ist ein traditionelles mexikanisches Fermentgetränk aus Ananas, Piloncillo und Gewürzen; sehr niedriger Alkoholgehalt (~0,5-2% ABV)." },
+      { q: "Wie viele Grundgeschmäcker erkennt die heutige Sensorikwissenschaft an?", a: ["Fünf: süß, salzig, sauer, bitter und Umami", "Vier: süß, salzig, sauer und bitter", "Sechs, inkl. Fett-Geschmack", "Drei: süß, sauer und bitter"], exp: "Fünf Grundgeschmäcker sind anerkannt; Umami (herzhaft) wurde 1908 offiziell von Kikunae Ikeda identifiziert." },
+      { q: "Welches Buch systematisiert Zutatenpaarung nach aromatischen Verwandtschaften?", a: ["The Flavor Bible", "Liquid Intelligence", "The Joy of Mixology", "On Food and Cooking"], exp: "The Flavor Bible von Page und Dornenburg (2008) ist eine Standardreferenz für die Paarung von Zutaten nach Aroma." },
+      { q: "Was ist ein 'Herb Slap' beim Garnieren?", a: ["Ein Blatt leicht in der Hand klatschen, um die ätherischen Öle freizusetzen", "Kräuter in den Shaker geben", "Kräuter in die Spirituose einrühren", "Mit frischen Zweigen garnieren"], exp: "Der Herb Slap zerreißt die Trichome eines Blatts (Minze, Basilikum) und setzt die aromatischen Öle frei, ohne es zu muddeln." },
+      { q: "Welche Methode erzeugt klares Eis (Clear Ice)?", a: ["Wasser gerichtet von oben nach unten einfrieren, damit Verunreinigungen nach unten absinken", "Destilliertes Wasser in einer normalen Eiswürfelform verwenden", "Sehr schnell bei -30 °C einfrieren", "Zucker vor dem Einfrieren ins Wasser geben"], exp: "Gerichtetes Gefrieren (z. B. in einem Lewis Bag oder offenen Cooler) drückt Luft und Mineralien nach unten, oben bleibt klares Eis." },
+      { q: "Wie lautet die klassische sensorische Reihenfolge beim Cocktail-Verkosten?", a: ["Sehen, Riechen, Schluck, Schlucken, Abgang", "Riechen, Sehen, Schlucken, Finish", "Schluck, Schlucken, Sehen, Finish", "Sehen, Schluck, Riechen, Finish"], exp: "Zuerst visuell, dann olfaktorisch, dann Geschmack im Mund, Schlucken und schließlich der Nachhall im Abgang." },
+      { q: "Welches Food-Pairing passt am besten zum Negroni?", a: ["Salzige, intensive Häppchen (Oliven, Luftgetrockneter Schinken, Nüsse)", "Sehr süße Desserts", "Heiße cremige Suppen", "Gegrillter Weißfisch"], exp: "Die Bitternote und der Alkoholgehalt des Negroni balancieren mit salzigen, intensiven Bissen; er ist per Definition ein Aperitivo-Cocktail." },
+      { q: "Welches Holz wird am häufigsten zum Räuchern von Cocktails mit Smoke Gun verwendet?", a: ["Kirsche", "Eukalyptus", "Kiefer", "Weide"], exp: "Kirschholz gibt einen sanften, süßlichen Rauch, ideal für Cocktails; Mesquite, Hickory und getoastete Eiche sind ebenfalls verbreitet." }
+    ]
   }
 ];
