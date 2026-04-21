@@ -217,17 +217,32 @@ const App = () => {
           // `onLogout` forces screen='onboarding' and without this jump
           // back the user gets prompted to redo onboarding even though
           // their answers are saved in Firestore.
+          //
+          // Fallback chain when cloud is empty/missing:
+          //   1. cloud onboarding (if valid) → save local + skip
+          //   2. local onboarding (if valid) → push to cloud + skip
+          //   3. otherwise → user genuinely needs to onboard
           try {
             const cloudOnboarding = await window.stAuth?.loadOnboarding?.();
-            if (cloudOnboarding) {
+            if (cloudOnboarding && !needsOnboarding(cloudOnboarding)) {
               saveOnboardingLocal(cloudOnboarding);
               setProfile(p => ({ ...p, onboarding: cloudOnboarding }));
-              if (!needsOnboarding(cloudOnboarding)) {
-                setScreen('home');
-              }
+              setScreen('home');
               if (cloudOnboarding.language) {
                 try { window.stLang?.setLang?.(cloudOnboarding.language); } catch {}
                 window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: cloudOnboarding.language } }));
+              }
+            } else {
+              // Cloud empty for this account — try local fallback so users
+              // who completed onboarding as guest (or before linking accounts)
+              // don't get prompted again.
+              const localOnb = loadOnboardingLocal();
+              if (!needsOnboarding(localOnb)) {
+                setProfile(p => ({ ...p, onboarding: localOnb }));
+                setScreen('home');
+                // Push local up to cloud so future sessions on other devices
+                // also skip the flow.
+                try { await window.stAuth?.saveOnboarding?.(localOnb); } catch {}
               }
             }
           } catch {}
@@ -645,7 +660,12 @@ const App = () => {
             try { if (window.stAuth) await window.stAuth.signOutUser(); } catch {}
             localStorage.removeItem(LS_STATE);
             setProfile({ name: '', authMode: null, xp: 0, xpNext: 300, level: 1, streak: 0, title: 'Curious Novice', avatar: null });
-            setScreen('onboarding');
+            // Only force back to onboarding if the user has no persisted
+            // answers. Otherwise they'd be prompted to redo the flow every
+            // time they log out, even though their prefs are still on disk
+            // (and likely also in Firestore under the previous account).
+            const localOnb = loadOnboardingLocal();
+            setScreen(needsOnboarding(localOnb) ? 'onboarding' : 'home');
           }}
         />
       )}
