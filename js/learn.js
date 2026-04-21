@@ -350,5 +350,14 @@ export function addXp(amount) {
   const streak = d.lastDate === today ? (d.streak || 1)
     : d.lastDate === yesterday ? (d.streak || 0) + 1
     : 1;
-  setData({ ...d, xp: (d.xp || 0) + xp, streak, lastDate: today });
+  const prevTotal = d.xp || 0;
+  const nextTotal = prevTotal + xp;
+  const prevLevel = getLevelInfo(prevTotal).level;
+  const nextLevel = getLevelInfo(nextTotal).level;
+  setData({ ...d, xp: nextTotal, streak, lastDate: today });
+  try {
+    window.dispatchEvent(new CustomEvent('stirio:xpchange', {
+      detail: { delta: xp, total: nextTotal, level: nextLevel, leveledUp: nextLevel > prevLevel, streak },
+    }));
+  } catch {}
 }

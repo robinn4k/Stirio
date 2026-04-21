@@ -159,11 +159,14 @@ input[type=range]::-moz-range-thumb {
   transition: background .15s, border-color .15s, transform .1s;
 }
 .choice-btn:disabled { cursor: default; }
-.choice-btn:hover:not(:disabled) {
-  background: var(--bg-3) !important;
-  border-color: var(--amber) !important;
-  transform: translateX(2px);
+@media (hover: hover) {
+  .choice-btn:hover:not(:disabled) {
+    background: var(--bg-3) !important;
+    border-color: var(--amber) !important;
+    transform: translateX(2px);
+  }
 }
+.choice-btn:focus:not(:focus-visible) { outline: none; }
 
 /* ── Horizontal lesson carousel (Home → 60s queue) ── */
 .lesson-carousel::-webkit-scrollbar { display: none; }
@@ -189,6 +192,8 @@ input[type=range]::-moz-range-thumb {
 @keyframes slideUp { from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1} }
 @keyframes fadeIn { from{opacity:0}to{opacity:1} }
 @keyframes flicker { 0%,19%,21%,23%,25%,54%,56%,100%{opacity:1}20%,24%,55%{opacity:0.4} }
+@keyframes toastIn { from{transform:translate(-50%, 24px);opacity:0}to{transform:translate(-50%, 0);opacity:1} }
+@keyframes toastOut { from{transform:translate(-50%, 0);opacity:1}to{transform:translate(-50%, 24px);opacity:0} }
 
 .pop-in { animation: pop .35s cubic-bezier(.2,1.4,.3,1) both; }
 .rise-in { animation: rise .4s ease both; }

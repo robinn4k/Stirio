@@ -183,55 +183,82 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
           {tr('academy.level_route', 'Ruta del nivel')}
         </div>
         <div style={{ display: 'grid', gap: 8 }}>
-          {sequence.map((item, i) => {
-            if (item.type === 'lesson') {
-              const lesson = level.lessons[item.index];
-              if (!lesson) return null;
-              const passed = progress.lessons?.[item.index]?.passed;
-              return (
-                <button key={`${i}-lesson-${item.index}`} onClick={() => onStartLesson(item.index)} className="card" style={{
-                  padding: 14, textAlign: 'left', cursor: 'pointer',
-                  display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
-                  background: 'var(--bg-2)',
-                }}>
-                  <div style={{ fontSize: 22 }}>{passed ? '✅' : '📚'}</div>
-                  <div>
-                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>{_t(lesson.key)}</div>
-                    <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
-                      {window.stLang && window.stLang.t
-                        ? window.stLang.t('academy.lesson_label', { cards: lesson.cards?.length || 0, questions: lesson.questions?.length || 0 })
-                        : `Lección · ${lesson.cards?.length || 0} tarjetas · ${lesson.questions?.length || 0} preguntas`}
+          {(() => {
+            // Progressive unlock: a sequence item is locked until every prior
+            // lesson AND practice in the same sequence has been passed. The
+            // very first step is always open; completing it reveals the next.
+            const isItemLocked = (seqIdx) => {
+              for (let k = 0; k < seqIdx; k++) {
+                const prev = sequence[k];
+                if (!prev) continue;
+                if (prev.type === 'lesson' && !progress.lessons?.[prev.index]?.passed) return true;
+                if (prev.type === 'practice' && !progress.practices?.[prev.roundId]) return true;
+              }
+              return false;
+            };
+            const lockedLabel = tr('academy.locked', 'Completa el paso anterior');
+            return sequence.map((item, i) => {
+              const locked = isItemLocked(i);
+              if (item.type === 'lesson') {
+                const lesson = level.lessons[item.index];
+                if (!lesson) return null;
+                const passed = progress.lessons?.[item.index]?.passed;
+                return (
+                  <button key={`${i}-lesson-${item.index}`}
+                    onClick={() => !locked && onStartLesson(item.index)}
+                    disabled={locked}
+                    className="card" style={{
+                    padding: 14, textAlign: 'left', cursor: locked ? 'not-allowed' : 'pointer',
+                    display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
+                    background: 'var(--bg-2)', opacity: locked ? 0.55 : 1,
+                  }}>
+                    <div style={{ fontSize: 22 }}>{locked ? '🔒' : passed ? '✅' : '📚'}</div>
+                    <div>
+                      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>{_t(lesson.key)}</div>
+                      <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
+                        {locked
+                          ? lockedLabel
+                          : (window.stLang && window.stLang.t
+                              ? window.stLang.t('academy.lesson_label', { cards: lesson.cards?.length || 0, questions: lesson.questions?.length || 0 })
+                              : `Lección · ${lesson.cards?.length || 0} tarjetas · ${lesson.questions?.length || 0} preguntas`)}
+                      </div>
                     </div>
-                  </div>
-                  <Icon name="arrowR" size={14} />
-                </button>
-              );
-            }
-            if (item.type === 'practice') {
-              const passed = progress.practices?.[item.roundId];
-              return (
-                <button key={`${i}-practice-${item.roundId}`} onClick={() => onStartPractice(item.roundId)} className="card" style={{
-                  padding: 14, textAlign: 'left', cursor: 'pointer',
-                  display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
-                  background: 'var(--bg-2)', borderLeft: `3px solid ${level.color}`,
-                }}>
-                  <div style={{ fontSize: 22 }}>{passed ? '🏆' : '⚡'}</div>
-                  <div>
-                    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>
-                      {window.stLang && window.stLang.t
-                        ? window.stLang.t('academy.practice_label', { id: item.roundId })
-                        : `Práctica · Ronda ${item.roundId}`}
+                    <Icon name={locked ? 'lock' : 'arrowR'} size={14} />
+                  </button>
+                );
+              }
+              if (item.type === 'practice') {
+                const passed = progress.practices?.[item.roundId];
+                return (
+                  <button key={`${i}-practice-${item.roundId}`}
+                    onClick={() => !locked && onStartPractice(item.roundId)}
+                    disabled={locked}
+                    className="card" style={{
+                    padding: 14, textAlign: 'left', cursor: locked ? 'not-allowed' : 'pointer',
+                    display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
+                    background: 'var(--bg-2)', borderLeft: `3px solid ${level.color}`,
+                    opacity: locked ? 0.55 : 1,
+                  }}>
+                    <div style={{ fontSize: 22 }}>{locked ? '🔒' : passed ? '🏆' : '⚡'}</div>
+                    <div>
+                      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>
+                        {window.stLang && window.stLang.t
+                          ? window.stLang.t('academy.practice_label', { id: item.roundId })
+                          : `Práctica · Ronda ${item.roundId}`}
+                      </div>
+                      <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
+                        {locked
+                          ? lockedLabel
+                          : (window.stLang && window.stLang.t ? window.stLang.t('academy.practice_sublabel') : 'Quiz de refuerzo')}
+                      </div>
                     </div>
-                    <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
-                      {window.stLang && window.stLang.t ? window.stLang.t('academy.practice_sublabel') : 'Quiz de refuerzo'}
-                    </div>
-                  </div>
-                  <Icon name="arrowR" size={14} />
-                </button>
-              );
-            }
-            return null;
-          })}
+                    <Icon name={locked ? 'lock' : 'arrowR'} size={14} />
+                  </button>
+                );
+              }
+              return null;
+            });
+          })()}
         </div>
       </div>
     </div>

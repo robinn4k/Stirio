@@ -116,17 +116,19 @@ function sortByRank(users) {
 }
 
 async function fetchLeaderboard() {
-  // Try Firestore first — query users collection sorted by level
+  // Try Firestore first — query users collection sorted by xpTotal
+  // (single-field order avoids composite-index requirement; level/streak sort
+  // is applied client-side in sortByRank below).
   if (isFirebaseReady()) {
     try {
       const db = getDb();
       const { collection, query, orderBy, limit, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
-      const q = query(collection(db, 'users'), orderBy('level', 'desc'), limit(50));
+      const q = query(collection(db, 'users'), orderBy('xpTotal', 'desc'), limit(50));
       const snap = await getDocs(q);
-      const users = snap.docs.map(d => d.data()).filter(u => u.level > 0);
-      return sortByRank(users);
+      const users = snap.docs.map(d => ({ uid: d.id, ...d.data() })).filter(u => u && u.name);
+      if (users.length > 0) return sortByRank(users);
     } catch (e) {
-      console.warn('Error al leer Firestore, usando local:', e);
+      console.error('Leaderboard Firestore query failed:', e && e.code, e && e.message);
     }
   }
 

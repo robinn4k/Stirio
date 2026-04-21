@@ -14,6 +14,87 @@ let clock = new THREE.Clock();
 let mixers = [];
 let activeAnimations = [];
 
+// ─── Hotspot overlay (2D DOM labels projected from 3D positions) ─────
+// Scenes call `ctx.setHotspots([{ key, pos:[x,y,z], label, detail }])` to
+// register clickable dots rendered above the WebGL canvas. Clicking a dot
+// dispatches `wiki-hotspot-click` with the same item as the event detail.
+let hotspotLayer = null;
+let hotspotData = [];
+const _hsVec = new THREE.Vector3();
+
+function ensureHotspotLayer(container) {
+  if (!container) return null;
+  if (hotspotLayer && hotspotLayer.parentElement === container) return hotspotLayer;
+  const existing = container.querySelector('.hotspot-layer');
+  if (existing) { hotspotLayer = existing; return existing; }
+  const layer = document.createElement('div');
+  layer.className = 'hotspot-layer';
+  Object.assign(layer.style, {
+    position: 'absolute', top: '0', left: '0',
+    width: '100%', height: '100%',
+    pointerEvents: 'none', zIndex: '2',
+  });
+  if (!container.style.position) container.style.position = 'relative';
+  container.appendChild(layer);
+  hotspotLayer = layer;
+  return layer;
+}
+
+function clearHotspots() {
+  hotspotData.forEach(h => { if (h.dotEl) h.dotEl.remove(); });
+  hotspotData = [];
+}
+
+function setHotspotsList(list) {
+  clearHotspots();
+  if (!currentContainer) return;
+  const layer = ensureHotspotLayer(currentContainer);
+  if (!layer) return;
+  hotspotData = (list || []).map(item => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'hotspot-dot';
+    if (item.key) btn.setAttribute('data-key', item.key);
+    if (item.label) btn.setAttribute('aria-label', item.label);
+    btn.title = item.label || '';
+    btn.style.position = 'absolute';
+    btn.style.transform = 'translate(-50%, -50%)';
+    btn.style.pointerEvents = 'auto';
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      try {
+        window.dispatchEvent(new CustomEvent('wiki-hotspot-click', { detail: item }));
+      } catch {}
+    });
+    layer.appendChild(btn);
+    return { ...item, dotEl: btn };
+  });
+}
+
+function updateHotspots() {
+  if (!hotspotData.length || !currentCamera || !currentContainer) return;
+  const rect = currentContainer.getBoundingClientRect();
+  const w = rect.width, h = rect.height;
+  if (!w || !h) return;
+  hotspotData.forEach(ht => {
+    if (!ht.dotEl) return;
+    _hsVec.set(ht.pos[0] || 0, ht.pos[1] || 0, ht.pos[2] || 0);
+    _hsVec.project(currentCamera);
+    const behind = _hsVec.z > 1 || _hsVec.z < -1;
+    if (behind) {
+      ht.dotEl.style.opacity = '0';
+      ht.dotEl.style.pointerEvents = 'none';
+      return;
+    }
+    const x = (_hsVec.x * 0.5 + 0.5) * w;
+    const y = (-_hsVec.y * 0.5 + 0.5) * h;
+    ht.dotEl.style.left = x + 'px';
+    ht.dotEl.style.top = y + 'px';
+    ht.dotEl.style.opacity = '1';
+    ht.dotEl.style.pointerEvents = 'auto';
+  });
+}
+
 // ─── Initialize renderer ─────────────────────────────────────────────
 function initRenderer(container) {
   if (renderer && currentContainer === container) return;
@@ -95,8 +176,8 @@ function createControls(camera, domElement) {
   ctrl.dampingFactor = 0.08;
   ctrl.autoRotate = autoRotate;
   ctrl.autoRotateSpeed = 1.5;
-  ctrl.minDistance = 2;
-  ctrl.maxDistance = 15;
+  ctrl.enableZoom = false;
+  ctrl.enablePan = false;
   ctrl.maxPolarAngle = Math.PI / 1.8;
   ctrl.target.set(0, 0.5, 0);
   return ctrl;
@@ -120,6 +201,7 @@ function animate() {
   if (renderer && currentScene && currentCamera) {
     renderer.render(currentScene, currentCamera);
   }
+  updateHotspots();
 }
 
 // ─── Public API ──────────────────────────────────────────────────────
@@ -135,12 +217,14 @@ export function mountScene(container, buildFn) {
   clock = new THREE.Clock();
 
   // Let the build function populate the scene
+  clearHotspots();
   buildFn(currentScene, currentCamera, {
     addMixer: m => mixers.push(m),
     addAnimation: fn => activeAnimations.push(fn),
     renderer,
     controls,
     loadGLTF,
+    setHotspots: setHotspotsList,
   });
 
   animate();
@@ -153,6 +237,7 @@ export function dispose() {
   mixers.forEach(m => m.stopAllAction());
   mixers = [];
   activeAnimations = [];
+  clearHotspots();
   if (controls) { controls.dispose(); controls = null; }
   if (currentScene) {
     currentScene.traverse(obj => {
