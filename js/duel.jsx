@@ -6,6 +6,15 @@
 const ALL_SLOTS = ['p1', 'p2', 'p3', 'p4'];
 const QUESTIONS_PER_DUEL = 10;
 const TIME_PER_QUESTION = 15;
+// Fisher-Yates shuffle — uniform, unlike `Array.sort(() => Math.random() - 0.5)`.
+const _duelShuffle = (arr) => {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
 const DUEL_LANGS = [
   { id: 'es', flag: '🇪🇸', label: 'ES' },
   { id: 'en', flag: '🇬🇧', label: 'EN' },
@@ -629,7 +638,7 @@ function pickBotQuestions(selection, rounds, total) {
     if (chosen.length >= 2) {
       const pool = [];
       chosen.forEach(r => (r.questions || []).forEach(q => pool.push({ ...q })));
-      return pool.sort(() => Math.random() - 0.5).slice(0, total);
+      return _duelShuffle(pool).slice(0, total);
     }
   }
   const r = rounds[Math.floor(Math.random() * rounds.length)];
@@ -645,7 +654,13 @@ const BotDuel = ({ onBack, selection }) => {
   };
   const [diff, setDiff] = useState('medium');
   const [started, setStarted] = useState(false);
-  const rounds = (window.TRIVIA_ROUNDS || []);
+  // BotDuel consumes question text directly (no setup encoding), so honour the
+  // current UI language instead of falling back to the Spanish-only rounds.
+  const rounds = (
+    (window.stQuestions && window.stQuestions.getLocalizedRounds && window.stQuestions.getLocalizedRounds((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es'))
+    || window.TRIVIA_ROUNDS
+    || []
+  );
   const round = useRef(rounds[Math.floor(Math.random() * Math.max(1, rounds.length))] || null);
   const [qIdx, setQIdx] = useState(0);
   const [userScore, setUserScore] = useState(0);
@@ -659,7 +674,7 @@ const BotDuel = ({ onBack, selection }) => {
   const questions = useRef(pickBotQuestions(selection, rounds, total));
   const currentQ = questions.current[qIdx];
 
-  if (currentQ && !currentQ._shuffled) currentQ._shuffled = [...currentQ.a].sort(() => Math.random() - 0.5);
+  if (currentQ && !currentQ._shuffled) currentQ._shuffled = _duelShuffle(currentQ.a);
 
   useEffect(() => {
     if (!started || phase !== 'playing' || !currentQ) return;
