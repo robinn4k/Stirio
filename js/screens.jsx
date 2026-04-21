@@ -934,6 +934,10 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         <div className="lesson-carousel" style={{
           display: 'flex', gap: 12,
           overflowX: 'auto',
+          // Stop the carousel's swipe from chaining to the body when it
+          // reaches either end — otherwise iOS can rubber-band the whole
+          // page a few pixels despite the root's overflow-x: clip.
+          overscrollBehaviorX: 'contain',
           scrollSnapType: 'x mandatory',
           WebkitOverflowScrolling: 'touch',
           // Breathing room at both edges so the first/last card doesn't kiss
