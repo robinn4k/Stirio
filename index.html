@@ -31,6 +31,19 @@
 <body>
   <div id="root"></div>
 
+  <!-- Importmap for three.js — required by js/wiki-3d.js (lazy-loaded by
+       js/three-scene.jsx when an article has a 3D scene). Mirrors wiki.html
+       so both entry points share one CDN bundle. MUST come before any
+       <script type="module"> that uses these specifiers. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+
   <!-- React 18 + Babel Standalone (CDN, no build step) -->
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
@@ -85,6 +98,7 @@
   <script type="text/babel" data-presets="react" src="js/rhythm.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/comanda.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/article.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/three-scene.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/knowledge.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/app.jsx"></script>
 
