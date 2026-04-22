@@ -905,7 +905,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           const dayIdx = Math.floor(Date.now() / 86400000);
           const fichas = (window.ALL_FICHAS || []);
           const fichaPreview = fichas.length ? fichas[dayIdx % fichas.length].name : 'Negroni, Daiquiri…';
-          const wikiCats = ['Técnicas', 'Destilados', 'Cristalería', 'Herramientas', 'Cócteles', 'Modelos 3D', 'Glosario'];
+          const wikiCats = ['Historia', 'Técnicas', 'Destilados', 'Prohibición', 'Tiki', 'Jerry Thomas', 'Modelos 3D', 'Bares legendarios'];
           const wikiPreview = wikiCats[dayIdx % wikiCats.length];
           const regions = (window.MAP_REGIONS || []);
           const mapPreview = regions.length ? regions[dayIdx % regions.length].origin : 'Escocia, México…';
@@ -1974,7 +1974,7 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
     rhythm: { icon: '🥁', title: tr('mode.rhythm.title', 'Ritmo de Shaker'), subtitle: tr('mode.rhythm.sub', 'Agita al compás'), body: tr('mode.rhythm.body', 'Sigue el ritmo. Cuanto mejor tu tempo, más perfecta la emulsión.'), cta: tr('mode.rhythm.cta', 'Jugar') },
     comanda: { icon: '🎟️', title: tr('mode.comanda.title', 'Comanda Chase'), subtitle: tr('mode.comanda.sub', 'Sirve cócteles contrarreloj'), body: tr('mode.comanda.body', 'Entran tickets, tú tienes la estación. Pone ingredientes, agita o remueve, guarnece y sirve. Landscape · 90 s.'), cta: tr('mode.comanda.cta', 'Jugar') },
     iba: { icon: '📖', title: tr('mode.iba.title', 'Recetas'), subtitle: tr('mode.iba.sub', '90 recetas oficiales'), body: tr('mode.iba.body', 'Las recetas reconocidas por la International Bartenders Association, con historia y técnica.'), cta: tr('mode.iba.cta', 'Abrir') },
-    wiki: { icon: '🌐', title: tr('mode.wiki.title', 'Enciclopedia'), subtitle: tr('mode.wiki.sub', 'Todo el conocimiento'), body: tr('mode.wiki.body', 'Bebidas, técnicas, cristalería, herramientas y personajes.'), cta: tr('mode.wiki.cta', 'Abrir') },
+    wiki: { icon: '📜', title: tr('mode.wiki.title', 'Enciclopedia · Historia'), subtitle: tr('mode.wiki.sub', 'Historia · Técnicas · Destilados · 3D'), body: tr('mode.wiki.body', 'Línea del tiempo, eras, personajes y bares legendarios. Además técnicas, destilados, herramientas y modelos 3D.'), cta: tr('mode.wiki.cta', 'Abrir') },
     glossary: { icon: '📝', title: tr('mode.glossary.title', 'Glosario'), subtitle: tr('mode.glossary.sub', '70+ términos'), body: tr('mode.glossary.body', 'Del muddle al dry shake. Todos los términos del oficio.'), cta: tr('mode.glossary.cta', 'Abrir') },
     map: { icon: '🗺️', title: tr('mode.map.title', 'Mapa de Destilados'), subtitle: tr('mode.map.sub', '12 regiones'), body: tr('mode.map.body', 'Whisky escocés, mezcal oaxaqueño, pisco peruano… mapa interactivo.'), cta: tr('mode.map.cta', 'Explorar') },
     library: { icon: '📚', title: tr('mode.library.title', 'Biblioteca 3D'), subtitle: tr('mode.library.sub', 'Modelos interactivos'), body: tr('mode.library.body', 'Vasos, herramientas y botellas en 3D. Gíralos, inspecciónalos.'), cta: tr('mode.library.cta', 'Abrir') },

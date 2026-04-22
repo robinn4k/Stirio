@@ -575,7 +575,11 @@ const App = () => {
       )}
 
       {subScreen === 'wiki' && !activeLesson && (
-        <WikiScreen onBack={() => setSubScreen(null)} />
+        <KnowledgeScreen
+          onBack={() => setSubScreen(null)}
+          onOpenArticle={(entry) => { window.__articleOverride = entry; setSubScreen('article'); }}
+          onOpenFicha={(f) => setFichaOpen(f)}
+        />
       )}
 
       {subScreen === 'blind' && !activeLesson && (
@@ -623,9 +627,9 @@ const App = () => {
 
       {subScreen === 'article' && !activeLesson && (
         <ArticleScreen
-          article={window.stArticles && window.stArticles.getArticleOfTheDay()}
-          onBack={() => setSubScreen(null)}
-          onOpenWiki={() => setSubScreen('wiki')}
+          article={(window.stArticles && window.stArticles.resolveArticle(window.__articleOverride)) || (window.stArticles && window.stArticles.getArticleOfTheDay())}
+          onBack={() => { window.__articleOverride = null; setSubScreen(null); }}
+          onOpenWiki={() => { window.__articleOverride = null; setSubScreen('wiki'); }}
         />
       )}
 
@@ -777,33 +781,8 @@ const NavBtn = ({ icon, label, active, onClick }) => (
   </button>
 );
 
-// ── Wiki screen (iframe wrapper for the standalone wiki.html) ──
-// wiki.html renders its own header (back button, title, search). Don't stack
-// a second header on top — instead, listen for the `wiki-close` postMessage
-// the iframe emits when its internal back button is at the root view.
-const WikiScreen = ({ onBack }) => {
-  useEffect(() => {
-    const onMsg = (e) => {
-      if (e && e.data && e.data.type === 'wiki-close') onBack && onBack();
-    };
-    window.addEventListener('message', onMsg);
-    return () => window.removeEventListener('message', onMsg);
-  }, [onBack]);
-  return (
-    <div style={{
-      position: 'fixed', inset: 0, zIndex: 50,
-      background: 'var(--bg-0)',
-      display: 'flex', flexDirection: 'column',
-      animation: 'fadeIn .3s ease',
-    }}>
-      <iframe
-        src="wiki.html"
-        style={{ flex: 1, border: 'none', width: '100%' }}
-        title="Enciclopedia"
-      />
-    </div>
-  );
-};
+// WikiScreen was removed — the unified KnowledgeScreen (js/knowledge.jsx)
+// now owns the encyclopedia UI and embeds wiki.html only for 3D categories.
 
 // ── Error boundary ─────────────────────────────────────────────
 // Catches uncaught exceptions in any descendant (e.g. a blank-screen crash
