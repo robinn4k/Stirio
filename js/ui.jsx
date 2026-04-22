@@ -48,6 +48,7 @@ const Icon = ({ name, size = 20, style: extraStyle }) => {
     cube: <><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></>,
     camera: <><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" /><circle cx="12" cy="13" r="4" /></>,
     edit: <><path d="M4 20h4l10-10-4-4L4 16z" /><path d="M14 6l4 4" /></>,
+    share: <><circle cx="6" cy="12" r="3" /><circle cx="18" cy="6" r="3" /><circle cx="18" cy="18" r="3" /><path d="M8.6 10.5l6.8-3" /><path d="M8.6 13.5l6.8 3" /></>,
   };
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"
@@ -178,6 +179,37 @@ const playChord = (type = 'major') => {
     });
     setTimeout(() => ctx.close(), 1400);
   } catch (e) {}
+};
+
+// ── Share the app (Web Share API + clipboard fallback) ───────
+// Called from Home and Profile. Respects the user's current language by
+// reading from `window.stLang` at invocation time. Returns 'shared' |
+// 'copied' | null for the caller to surface UI feedback.
+const shareApp = async () => {
+  try {
+    if (window.stLang && typeof window.stLang.preloadAllTranslations === 'function') {
+      await window.stLang.preloadAllTranslations();
+    }
+  } catch {}
+  const trLocal = (k, f) => (window.stLang?.t ? (window.stLang.t(k) === k ? f : window.stLang.t(k)) : f);
+  const title = trLocal('home.share_app', 'Compartir Stirio');
+  const text = trLocal('home.share_text', '¡Estoy aprendiendo coctelería en Stirio! Te reto a superarme 🍸');
+  const url = 'https://robinn4k.github.io/Stirio/';
+  try {
+    if (navigator.share) {
+      await navigator.share({ title, text, url });
+      return 'shared';
+    }
+  } catch (e) {
+    if (e && e.name === 'AbortError') return null;
+  }
+  try {
+    if (navigator.clipboard) {
+      await navigator.clipboard.writeText(`${text} ${url}`);
+      return 'copied';
+    }
+  } catch {}
+  return null;
 };
 
 // ── Haptic feedback ───────────────────────────────────────────
@@ -398,7 +430,7 @@ Object.assign(window, {
   stUiT: t,
   Icon, Placeholder, Skeleton, XPPop, GlowRing, StreakBadge,
   Prompt, StepTitle,
-  playChord, confettiBurst, hapticTap,
+  playChord, confettiBurst, hapticTap, shareApp,
   CookieBanner, LegalFooter,
   ToastHost, stToast: { show: showToast },
 });

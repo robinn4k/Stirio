@@ -773,6 +773,20 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <StreakBadge count={profile.streak} />
+          <button
+            className="btn ghost"
+            onClick={async () => {
+              const result = window.shareApp ? await window.shareApp() : null;
+              if (result === 'copied') {
+                window.stToast?.show({ kind: 'info', title: tr('home.share_copied', 'Enlace copiado'), ttl: 2000 });
+              }
+            }}
+            style={{ padding: 8, width: 38, height: 38, borderRadius: '50%' }}
+            aria-label={tr('home.share_app', 'Compartir Stirio')}
+            title={tr('home.share_app', 'Compartir Stirio')}
+          >
+            <Icon name="share" size={16} />
+          </button>
           <button className="btn ghost" onClick={onOpenProfile} style={{ padding: 6, borderRadius: '50%' }} aria-label="Profile">
             {(() => {
               const photo = profile.avatar || profile.photoURL;
@@ -1310,8 +1324,11 @@ const RefTileLarge = ({ icon, label, preview, badge, onClick, accent = 'amber' }
     padding: 16, textAlign: 'left', cursor: 'pointer',
     display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 10,
     minHeight: 130,
-    background: `linear-gradient(160deg, oklch(from var(--${accent}) l c h / 0.12), var(--bg-2) 70%)`,
-    borderColor: `oklch(from var(--${accent}) l c h / 0.25)`,
+    // --<accent>-soft + --<accent>-glow are defined per-theme in tokens.css and
+    // work on every browser. Previously used oklch(from …) relative syntax
+    // which silently failed on older Chromium/Safari → blank card fallback.
+    background: `linear-gradient(160deg, var(--${accent}-soft, var(--amber-soft)), var(--bg-2) 70%)`,
+    borderColor: `var(--${accent}-glow, var(--amber-glow))`,
     transition: 'transform .15s, border-color .2s',
   }}
     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = `var(--${accent})`; }}

@@ -19,12 +19,13 @@
   <rect width="1200" height="630" fill="url(#ogAmber)"/>
   <rect width="1200" height="630" fill="url(#ogCyan)"/>
 
-  <!-- Wordmark: Stirio. -->
+  <!-- Wordmark: Stirio. (italic serif — matches Home wordmark in js/screens.jsx) -->
   <g transform="translate(80 0)">
     <!-- Dot halo -->
-    <circle cx="666" cy="310" r="38" fill="#c9971c" opacity="0.40" filter="url(#ogDotGlow)"/>
+    <circle cx="690" cy="310" r="38" fill="#c9971c" opacity="0.40" filter="url(#ogDotGlow)"/>
     <text x="0" y="340"
-          font-family="'Fraunces','Instrument Serif','DejaVu Serif','Liberation Serif','Times New Roman',serif"
+          font-family="'Fraunces','Instrument Serif','Liberation Serif','DejaVu Serif','Times New Roman',serif"
+          font-style="italic"
           font-weight="700"
           font-size="260"
           letter-spacing="-8"
@@ -43,15 +44,5 @@
           font-size="34"
           fill="#cfc9bd"
           opacity="0.88">Quizzes, duelos, flashcards y una enciclopedia 3D.</text>
-  </g>
-
-  <!-- Decorative martini silhouette bottom-right -->
-  <g transform="translate(920 120)" opacity="0.28" fill="none" stroke="#c9971c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M 20 40 L 220 40 L 120 190 Z" fill="#c9971c" fill-opacity="0.10"/>
-    <line x1="120" y1="190" x2="120" y2="290"/>
-    <line x1="60"  y1="298" x2="180" y2="298" stroke-width="14"/>
-    <!-- Olive pick + olive -->
-    <line x1="180" y1="40" x2="160" y2="82" stroke-width="5"/>
-    <circle cx="156" cy="92" r="13" fill="#c9971c" stroke="none"/>
   </g>
 </svg>
