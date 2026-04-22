@@ -71,9 +71,13 @@ export const WIKI_CATEGORIES = [
     articles: [
       { id: 'timeline', icon: '📅', has3d: false },
       { id: 'origins', icon: '🏛️', has3d: false },
+      { id: 'golden-age', icon: '🎩', has3d: false },
       { id: 'prohibition', icon: '🚫', has3d: false },
       { id: 'iba', icon: '🏅', has3d: false },
       { id: 'tiki-culture', icon: '🗿', has3d: false },
+      { id: 'cocktail-renaissance', icon: '✨', has3d: false },
+      { id: 'molecular-mixology', icon: '🧪', has3d: false },
+      { id: 'legendary-bars', icon: '🍹', has3d: false },
     ]
   },
   {
@@ -778,3 +782,13 @@ export const GLOSSARY_DATA = {
     'happy_hour', 'service_bar', 'garnish_tray', 'ice_well', 'pour_test',
   ],
 };
+
+// ─── Window bridge ──────────────────────────────────────────────────────
+// Expose the catalog for Babel-in-browser consumers (KnowledgeScreen) that
+// can't use ES-module imports. wiki.html keeps importing these as ESM exports.
+if (typeof window !== 'undefined') {
+  window.WIKI_CATEGORIES = WIKI_CATEGORIES;
+  window.WIKI_ARTICLES = WIKI_ARTICLES;
+  window.TIMELINE_DATA = TIMELINE_DATA;
+  window.GLOSSARY_DATA = GLOSSARY_DATA;
+}
