@@ -22,12 +22,13 @@ const KnowledgeScreen = ({ onBack, onOpenArticle, onOpenFicha }) => {
   const [view, setView]             = React.useState('hub'); // 'hub' | 'category' | '3d'
   const [selectedCat, setSelectedCat] = React.useState(null);
 
-  // If the ESM bridge hasn't landed yet, dynamic-import the catalog the way
-  // the rest of Stirio imports ES modules (stAuth, stLearn, etc.).
+  // If the ESM bridge hasn't landed yet, dynamic-import the catalog. This file
+  // is loaded via <script type="text/babel">, so `import()` resolves relative
+  // to the HTML document (not this file) — the path must include the js/ dir.
   React.useEffect(() => {
     if (categories) return;
     let alive = true;
-    import('./wiki-data.js')
+    import('./js/wiki-data.js')
       .then((mod) => { if (alive) setCategories(mod.WIKI_CATEGORIES || []); })
       .catch((err) => { console.warn('[knowledge] import failed', err); if (alive) setCategories([]); });
     return () => { alive = false; };
