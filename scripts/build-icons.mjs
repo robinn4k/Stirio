@@ -22,7 +22,11 @@ const rasterize = (svgPath, outPath, { width, stripRoundedCorners = false } = {}
     svg = svg.replace(/rx="\d+"\s+ry="\d+"/g, 'rx="0" ry="0"');
   }
   const resvg = new Resvg(svg, {
-    font: { loadSystemFonts: true, defaultFontFamily: 'DejaVu Serif' },
+    // Liberation Serif has italic variants installed on most Linux distros;
+    // DejaVu Serif does not ship italics, so font-style:italic would fall
+    // back to upright. Prefer Liberation first so the OG wordmark italics
+    // render as intended.
+    font: { loadSystemFonts: true, defaultFontFamily: 'Liberation Serif' },
     fitTo: width ? { mode: 'width', value: width } : undefined,
   });
   const png = resvg.render().asPng();

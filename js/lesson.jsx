@@ -128,7 +128,7 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
             fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)',
             marginTop: 10,
           }}>
-            <span>{lesson.category} · {lesson.title}</span>
+            <span>{(window.stUiT ? window.stUiT(`lesson.category.${(lesson.category || '').toLowerCase()}`, lesson.category) : lesson.category)} · {lesson.title}</span>
             <span>{stepIdx + 1} / {lesson.steps.length}</span>
           </div>
         </div>
@@ -210,7 +210,7 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
           <span style={{ color: 'var(--ok)' }}>✓ {correct}</span>
           <span style={{ color: 'var(--ink-3)' }}>✕ {wrong}</span>
         </div>
-        <div style={{ color: 'var(--ink-3)' }}>{lesson.difficulty}</div>
+        <div style={{ color: 'var(--ink-3)' }}>{(window.stUiT ? window.stUiT(`lesson.difficulty.${(lesson.difficulty || '').toLowerCase()}`, lesson.difficulty) : lesson.difficulty)}</div>
       </div>
     </div>
   );
@@ -218,11 +218,14 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
 
 // ————— step components —————
 
-const IntroStep = ({ step, lesson, onContinue }) => (
+const IntroStep = ({ step, lesson, onContinue }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const categoryLabel = tr(`lesson.category.${(lesson.category || '').toLowerCase()}`, lesson.category);
+  return (
   <div style={{ textAlign: 'center' }}>
     <div style={{ fontSize: 64, marginBottom: 16, filter: 'drop-shadow(0 8px 20px var(--amber-glow))' }}>{lesson.emoji}</div>
     <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
-      {lesson.category}{Number.isFinite(lesson._timed) ? ` · ${lesson._timed}s` : ''}
+      {categoryLabel}{Number.isFinite(lesson._timed) ? ` · ${lesson._timed}s` : ''}
     </div>
     <h1 style={{
       fontFamily: 'var(--f-serif)', fontWeight: 400,
@@ -245,17 +248,18 @@ const IntroStep = ({ step, lesson, onContinue }) => (
         color: 'var(--ink-2)',
         maxWidth: 480, textAlign: 'left',
       }}>
-        <span style={{ color: 'var(--amber)' }}>// did you know</span><br />
+        <span style={{ color: 'var(--amber)' }}>{tr('lesson.did_you_know', '// did you know')}</span><br />
         {step.fact}
       </div>
     )}
     <div style={{ marginTop: 32 }}>
       <button className="btn primary" onClick={onContinue} style={{ padding: '14px 28px', fontSize: 15 }}>
-        Let's go <Icon name="arrowR" size={16} />
+        {tr('lesson.lets_go', 'Let’s go')} <Icon name="arrowR" size={16} />
       </button>
     </div>
   </div>
-);
+  );
+};
 
 const ChoiceStep = ({ step, onAnswer }) => {
   const [selected, setSelected] = useState(null);
@@ -392,7 +396,7 @@ const MultiSelectStep = ({ step, onAnswer }) => {
             padding: '12px 24px',
           }}
         >
-          Lock it in ({picks.length}/{need})
+          {(window.stUiT ? window.stUiT('lesson.lock_in', 'Lock it in') : 'Lock it in')} ({picks.length}/{need})
         </button>
       </div>
     </div>
@@ -604,18 +608,18 @@ const TimingStep = ({ step, onAnswer }) => {
       </div>
       {!started ? (
         <button className="btn primary" onClick={() => setStarted(true)} style={{ padding: '14px 30px' }}>
-          Start shaking
+          {(window.stUiT ? window.stUiT('lesson.start_shaking', 'Start shaking') : 'Start shaking')}
         </button>
       ) : (
         <button className="btn primary" onClick={() => {
           const ok = Math.abs(elapsed - step.target) <= step.tolerance;
           onAnswer(ok);
         }} style={{ padding: '14px 30px' }}>
-          Pour now
+          {(window.stUiT ? window.stUiT('lesson.pour_now', 'Pour now') : 'Pour now')}
         </button>
       )}
       <div style={{ marginTop: 16, fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
-        shake hard · aim for peak foam
+        {(window.stUiT ? window.stUiT('lesson.shake_hint', 'shake hard · aim for peak foam') : 'shake hard · aim for peak foam')}
       </div>
     </div>
   );

@@ -737,7 +737,7 @@ const BottomNav = ({ current, onNav, onPlay, shortcut }) => {
       boxShadow: '0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px var(--line-soft)',
       pointerEvents: 'auto',
     }}>
-      <NavBtn icon="home" label="Home" active={current === 'home'} onClick={() => onNav('home')} />
+      <NavBtn icon="home" label={tr('app.nav.home', 'Home')} active={current === 'home'} onClick={() => onNav('home')} />
       <button onClick={onPlay} style={{
         width: 52, height: 52, borderRadius: '50%',
         background: 'var(--amber)',
@@ -755,7 +755,7 @@ const BottomNav = ({ current, onNav, onPlay, shortcut }) => {
       >
         {shortcut?.icon || <Icon name="play" size={22} />}
       </button>
-      <NavBtn icon="user" label="You" active={current === 'profile'} onClick={() => onNav('profile')} />
+      <NavBtn icon="user" label={tr('app.nav.you', 'You')} active={current === 'profile'} onClick={() => onNav('profile')} />
     </div>
   </nav>
   );
