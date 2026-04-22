@@ -38,6 +38,7 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
   const handleAnswer = (ok, evt) => {
     if (stepFeedback) return;
     setStepFeedback(ok ? 'ok' : 'bad');
+    window.hapticTap?.(ok ? 'ok' : 'bad');
     if (ok) {
       const gain = 10 + Math.floor((timerDuration ? timeLeft : 30) / 4);
       setXp(x => x + gain);
@@ -626,12 +627,29 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
   const acc = total ? Math.round((correct / total) * 100) : 0;
   const perfect = wrong === 0 && correct > 0;
 
+  const celebratedRef = useRef(false);
   useEffect(() => {
+    if (celebratedRef.current) return;
+    if (correct <= 0) return;
+    celebratedRef.current = true;
+    const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
     if (perfect) {
-      const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
       [0, 200, 400].forEach(d => setTimeout(() => confettiBurst(cx, cy), d));
+    } else {
+      confettiBurst(cx, cy);
     }
-  }, [perfect]);
+    try { playChord('major'); } catch {}
+    window.hapticTap?.(perfect ? 'win' : 'ok');
+    const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+    window.stToast?.show({
+      kind: perfect ? 'achievement' : 'xp',
+      title: perfect
+        ? tr('results.toast_perfect', '¡Ronda perfecta!')
+        : tr('results.toast_done', '¡Lección completada!'),
+      body: `+${xp} XP`,
+      ttl: 2800,
+    });
+  }, [perfect, correct, xp]);
 
   return (
     <div style={{

@@ -33,6 +33,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
       return () => clearTimeout(t);
     }
   }, [levels.length, retries]);
+  const loadFailed = levels.length === 0 && retries >= 20;
 
   const completed = levels.filter(l => levelCompleted(progress, l)).length;
 
@@ -72,9 +73,29 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
 
       {/* Niveles */}
       <div style={{ padding: '0 24px', display: 'grid', gap: 12 }}>
-        {levels.length === 0 && (
-          <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)' }}>
-            {tr('academy.loading', 'Cargando Academia…')}
+        {levels.length === 0 && !loadFailed && (
+          Array.from({ length: 4 }).map((_, i) => (
+            <div key={`sk-${i}`} className="card"
+              role="status"
+              aria-label={tr('academy.loading', 'Cargando Academia…')}
+              style={{ padding: 16, display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center' }}>
+              <window.Skeleton h={48} w={48} radius={12} />
+              <div style={{ display: 'grid', gap: 8 }}>
+                <window.Skeleton h={10} w="40%" />
+                <window.Skeleton h={16} w="75%" />
+                <window.Skeleton h={10} w="55%" />
+              </div>
+              <window.Skeleton h={24} w={24} radius={999} />
+            </div>
+          ))
+        )}
+        {loadFailed && (
+          <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)', display: 'grid', gap: 10, justifyItems: 'center' }}>
+            <div style={{ fontSize: 32 }}>📡</div>
+            <div style={{ fontSize: 13 }}>{tr('academy.load_failed', 'No pudimos cargar la Academia.')}</div>
+            <button className="btn primary" onClick={() => setRetries(0)} style={{ padding: '8px 16px', fontSize: 13 }}>
+              {tr('academy.retry', 'Reintentar')}
+            </button>
           </div>
         )}
         {levels.map((level, i) => {
@@ -354,6 +375,16 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
 
       {/* Grid */}
       <div style={{ padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 10 }}>
+        {fichas.length === 0 && Array.from({ length: 8 }).map((_, i) => (
+          <div key={`sk-${i}`} className="card"
+            role="status"
+            aria-label={tr('fichas.loading', 'Cargando recetas…')}
+            style={{ padding: 12, display: 'grid', gap: 8, aspectRatio: '1' }}>
+            <window.Skeleton h="auto" radius={10} style={{ aspectRatio: '1.2' }} />
+            <window.Skeleton h={12} w="80%" />
+            <window.Skeleton h={9} w="50%" />
+          </div>
+        ))}
         {filtered.map(f => {
           const img = window.getFichaImage ? window.getFichaImage(f.name) : null;
           return (
@@ -560,6 +591,20 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
       </div>
 
       <div style={{ padding: '14px 24px', display: 'grid', gap: 10 }}>
+        {rounds.length === 0 && Array.from({ length: 6 }).map((_, i) => (
+          <div key={`sk-${i}`} className="card"
+            role="status"
+            aria-label={tr('freequiz.loading', 'Cargando rondas…')}
+            style={{ padding: 16, display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center' }}>
+            <window.Skeleton h={48} w={48} radius={12} />
+            <div style={{ display: 'grid', gap: 8 }}>
+              <window.Skeleton h={9} w="50%" />
+              <window.Skeleton h={16} w="80%" />
+              <window.Skeleton h={10} w="60%" />
+            </div>
+            <window.Skeleton h={30} w={30} radius={999} />
+          </div>
+        ))}
         {rounds.map(r => (
           <button key={r.id} onClick={() => onStartRound(r)} className="card" style={{
             padding: 16, textAlign: 'left', cursor: 'pointer',
