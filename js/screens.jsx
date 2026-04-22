@@ -1131,12 +1131,29 @@ const ArticleOfDayCard = ({ article, onOpen }) => {
       onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
       onMouseLeave={e => e.currentTarget.style.transform = ''}
     >
-      <div style={{
-        flexShrink: 0, width: 64, height: 64, borderRadius: 14,
-        background: `linear-gradient(135deg, ${article.color || 'var(--violet)'}, oklch(0.22 0.03 60))`,
-        display: 'grid', placeItems: 'center', fontSize: 32,
-        boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12)',
-      }}>{article.emoji || '📰'}</div>
+      <div style={{ flexShrink: 0, position: 'relative', width: 64, height: 64 }}>
+        {article.image && (
+          <img
+            src={article.image}
+            alt=""
+            loading="lazy"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              if (e.currentTarget.nextSibling) e.currentTarget.nextSibling.style.display = 'grid';
+            }}
+            style={{
+              width: 64, height: 64, borderRadius: 14, objectFit: 'cover',
+              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12)',
+            }}
+          />
+        )}
+        <div style={{
+          width: 64, height: 64, borderRadius: 14,
+          background: `linear-gradient(135deg, ${article.color || 'var(--violet)'}, oklch(0.22 0.03 60))`,
+          display: article.image ? 'none' : 'grid', placeItems: 'center', fontSize: 32,
+          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12)',
+        }}>{article.emoji || '📰'}</div>
+      </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div className="mono caps" style={{
           color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em', marginBottom: 4,
