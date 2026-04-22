@@ -257,6 +257,20 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
               }
               if (item.type === 'practice') {
                 const passed = progress.practices?.[item.roundId];
+                // Prefer the actual round title (e.g. "Técnicas de Bar") over the
+                // generic "Práctica · Ronda N". stQuestions holds the localized
+                // round list; TRIVIA_ROUNDS is the ES fallback from data.js.
+                let roundTitle = null;
+                try {
+                  const lang = (window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es';
+                  const rounds = (window.stQuestions && window.stQuestions.getLocalizedRounds && window.stQuestions.getLocalizedRounds(lang))
+                    || window.TRIVIA_ROUNDS || [];
+                  const r = rounds.find(x => x && x.id === item.roundId);
+                  if (r && r.title) roundTitle = r.title;
+                } catch {}
+                const fallbackTitle = window.stLang && window.stLang.t
+                  ? window.stLang.t('academy.practice_label', { id: item.roundId })
+                  : `Práctica · Ronda ${item.roundId}`;
                 return (
                   <button key={`${i}-practice-${item.roundId}`}
                     onClick={() => !locked && onStartPractice(item.roundId)}
@@ -270,9 +284,7 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
                     <div style={{ fontSize: 22 }}>{locked ? '🔒' : passed ? '🏆' : '⚡'}</div>
                     <div>
                       <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, lineHeight: 1.1 }}>
-                        {window.stLang && window.stLang.t
-                          ? window.stLang.t('academy.practice_label', { id: item.roundId })
-                          : `Práctica · Ronda ${item.roundId}`}
+                        {roundTitle || fallbackTitle}
                       </div>
                       <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginTop: 3 }}>
                         {locked
