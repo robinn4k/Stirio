@@ -92,7 +92,7 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
 
   return (
     <div style={{
-      position: 'fixed', inset: 0, zIndex: 50,
+      position: 'fixed', inset: 0, zIndex: 60,
       background: 'var(--bg-0)',
       display: 'flex', flexDirection: 'column',
       animation: 'fadeIn .3s ease',
