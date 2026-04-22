@@ -38,8 +38,10 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
       <div style={{
         position: 'relative',
         padding: '24px 24px 32px',
-        background: `linear-gradient(160deg, ${current.color || 'var(--bg-2)'} 0%, oklch(0.2 0.03 60) 100%)`,
-        minHeight: 260,
+        background: current.image
+          ? `linear-gradient(180deg, rgba(0,0,0,0.25) 0%, oklch(0.18 0.03 60 / 0.88) 85%), url(${current.image}) center/cover`
+          : `linear-gradient(160deg, ${current.color || 'var(--bg-2)'} 0%, oklch(0.2 0.03 60) 100%)`,
+        minHeight: 300,
       }}>
         <button onClick={onBack}
           aria-label={tr('article.close', 'Cerrar')}
@@ -50,21 +52,26 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
           }}>
           <Icon name="arrowL" size={16} />
         </button>
-        <div style={{ marginTop: 28, display: 'flex', alignItems: 'center', gap: 16 }}>
-          <div style={{
-            fontSize: 64,
-            filter: 'drop-shadow(0 4px 18px rgba(0,0,0,0.35))',
-          }}>{current.emoji}</div>
+        <div style={{ marginTop: 40, display: 'flex', alignItems: 'center', gap: 16 }}>
+          {!current.image && (
+            <div style={{
+              fontSize: 64,
+              filter: 'drop-shadow(0 4px 18px rgba(0,0,0,0.35))',
+            }}>{current.emoji}</div>
+          )}
           <div style={{ flex: 1, minWidth: 0 }}>
             <div className="mono caps" style={{
               fontSize: 10, color: 'var(--amber)', letterSpacing: '0.12em', marginBottom: 4,
+              textShadow: current.image ? '0 2px 8px rgba(0,0,0,0.8)' : 'none',
             }}>
+              {current.image && <span style={{ marginRight: 6 }}>{current.emoji}</span>}
               {tr('home.article_eyebrow', 'Artículo del día')} · {tr(typeLabelKey, typeFallback)}
             </div>
             <h1 style={{
               fontFamily: 'var(--f-serif)', fontWeight: 400,
               fontSize: 'clamp(28px, 6vw, 40px)',
               lineHeight: 1.05, margin: 0,
+              textShadow: current.image ? '0 2px 12px rgba(0,0,0,0.7)' : 'none',
             }}>{current.title}</h1>
           </div>
         </div>
@@ -72,6 +79,7 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
           <p style={{
             marginTop: 18, color: 'var(--ink-1)',
             fontSize: 15, lineHeight: 1.5, fontStyle: 'italic',
+            textShadow: current.image ? '0 1px 8px rgba(0,0,0,0.7)' : 'none',
           }}>{current.excerpt}</p>
         )}
       </div>
