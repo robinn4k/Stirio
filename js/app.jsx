@@ -357,6 +357,7 @@ const App = () => {
     if (m === 'arcade')   { setSubScreen('arcade');    return; }
     if (m === 'memory')   { setSubScreen('memory');    return; }
     if (m === 'rhythm')   { setSubScreen('rhythm');    return; }
+    if (m === 'comanda')  { setSubScreen('comanda');   return; }
     if (m === 'glossary') { setSubScreen('glossary');  return; }
     if (m === 'map')      { setSubScreen('map');       return; }
     if (m === 'library')  { setSubScreen('library');   return; }
@@ -614,6 +615,10 @@ const App = () => {
 
       {subScreen === 'rhythm' && !activeLesson && (
         <RhythmScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'comanda' && !activeLesson && (
+        <ComandaScreen onBack={() => setSubScreen(null)} />
       )}
 
       {subScreen === 'article' && !activeLesson && (
