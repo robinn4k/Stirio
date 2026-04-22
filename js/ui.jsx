@@ -180,6 +180,26 @@ const playChord = (type = 'major') => {
   } catch (e) {}
 };
 
+// ── Haptic feedback ───────────────────────────────────────────
+// No-op silently on iOS Safari and any browser without Vibration API.
+const hapticTap = (kind = 'tap') => {
+  try {
+    const patterns = { tap: 12, ok: 18, bad: [12, 40, 12], win: [30, 60, 30, 60, 80] };
+    navigator.vibrate?.(patterns[kind] || patterns.tap);
+  } catch {}
+};
+
+// ── Skeleton placeholder ──────────────────────────────────────
+const Skeleton = ({ h = 16, w = '100%', radius = 8, style }) => (
+  <div className="sk-shimmer" style={{
+    height: h, width: w, borderRadius: radius,
+    background: 'linear-gradient(90deg, var(--bg-2) 0%, var(--bg-3) 50%, var(--bg-2) 100%)',
+    backgroundSize: '200% 100%',
+    animation: 'skShimmer 1.4s ease-in-out infinite',
+    ...style,
+  }} />
+);
+
 // ── Confetti burst ────────────────────────────────────────────
 const confettiBurst = (x, y, colors = ['var(--amber)', 'var(--cyan)', 'var(--lime)', 'var(--berry)', 'var(--violet)']) => {
   const root = document.body;
@@ -376,9 +396,9 @@ const ToastHost = () => {
 // ── Export to window (referenced by other JSX files) ─────────
 Object.assign(window, {
   stUiT: t,
-  Icon, Placeholder, XPPop, GlowRing, StreakBadge,
+  Icon, Placeholder, Skeleton, XPPop, GlowRing, StreakBadge,
   Prompt, StepTitle,
-  playChord, confettiBurst,
+  playChord, confettiBurst, hapticTap,
   CookieBanner, LegalFooter,
   ToastHost, stToast: { show: showToast },
 });

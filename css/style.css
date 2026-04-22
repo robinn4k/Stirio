@@ -196,6 +196,7 @@ input[type=range]::-moz-range-thumb {
 @keyframes flicker { 0%,19%,21%,23%,25%,54%,56%,100%{opacity:1}20%,24%,55%{opacity:0.4} }
 @keyframes toastIn { from{transform:translate(-50%, 24px);opacity:0}to{transform:translate(-50%, 0);opacity:1} }
 @keyframes toastOut { from{transform:translate(-50%, 0);opacity:1}to{transform:translate(-50%, 24px);opacity:0} }
+@keyframes skShimmer { 0%{background-position:200% 0}100%{background-position:-200% 0} }
 
 .pop-in { animation: pop .35s cubic-bezier(.2,1.4,.3,1) both; }
 .rise-in { animation: rise .4s ease both; }

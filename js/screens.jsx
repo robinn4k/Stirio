@@ -985,8 +985,20 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
             </div>
           ))}
           {leaderboardPreview.length === 0 && (
-            <div style={{ padding: '14px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 12 }}>
-              {tr('home.no_ranking', 'Juega una ronda para aparecer en el ranking')}
+            <div style={{ padding: '20px 16px', display: 'grid', gap: 12, justifyItems: 'center', textAlign: 'center' }}>
+              <div style={{
+                width: 44, height: 44, borderRadius: '50%',
+                background: 'var(--amber-soft)',
+                display: 'grid', placeItems: 'center', color: 'var(--amber)',
+              }}>
+                <Icon name="trophy" size={22} />
+              </div>
+              <div style={{ color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.4, maxWidth: 280 }}>
+                {tr('home.no_ranking', 'Juega una ronda para aparecer en el ranking')}
+              </div>
+              <button className="btn primary" onClick={() => onOpenMode('daily')} style={{ padding: '8px 16px', fontSize: 13 }}>
+                {tr('home.leaderboard_cta', 'Empezar ahora')} <Icon name="arrowR" size={14} />
+              </button>
             </div>
           )}
         </div>
