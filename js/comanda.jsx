@@ -8,12 +8,19 @@ const CC_BOTTLE_LIMIT = 12;
 const CC_TICKET_BASE_XP = 12;
 const CC_STREAK_CAP = 5;
 
-// Parse "30ml Ginebra" -> { amount: "30ml", name: "Ginebra", key: "ginebra" }
+// Parse "30ml Ginebra" / "1/2 barspoon Marrasquino" / "1 terrón de azúcar"
+// into { amount, name, key }.
 const ccParseIng = (s) => {
   if (!s) return { amount: '', name: '', key: '' };
   const str = String(s).trim();
-  const m = /^([\d.,]+\s*(?:ml|cl|oz|dashes?|dash|barspoons?|barspoon|gotas?|gota|splashes?|splash)?\b)\s+(.+)$/i.exec(str);
-  if (m) return { amount: m[1].trim(), name: m[2].trim(), key: m[2].trim().toLowerCase() };
+  // Leading number (integer, decimal, or fraction) + optional unit word,
+  // then optional "de " separator before the ingredient name.
+  const m = /^(\d+(?:[./,]\d+)?\s*[^\s\d]*?)\s+(?:de\s+)?(.+)$/i.exec(str);
+  if (m && /\d/.test(m[1])) {
+    const amount = m[1].trim();
+    const name = m[2].trim();
+    return { amount, name, key: name.toLowerCase() };
+  }
   return { amount: '', name: str, key: str.toLowerCase() };
 };
 
@@ -157,10 +164,8 @@ const ComandaScreen = ({ onBack }) => {
       setFb({ kind: 'bad', text: tr('comanda.fb.no_data', 'Datos no listos — reintenta.'), at: Date.now() });
       return;
     }
-    const bottles = ccBuildShelf(pool);
     setRound({
       pool,
-      bottles,
       idx: 0,
       timeLeft: CC_DURATION,
       served: 0,
@@ -210,6 +215,36 @@ const ComandaScreen = ({ onBack }) => {
     ? (currentTicket.ingredients || []).map(raw => ccParseIng(raw).key)
     : [];
   const expectedGarnish = currentTicket ? ccExpectedGarnish(currentTicket) : null;
+
+  // Per-ticket shelf: always include all ingredients of the current ticket +
+  // distractors from other pool cocktails. Rebuilds when the ticket changes.
+  const visibleBottles = useMemo(() => {
+    if (!round || !currentTicket) return [];
+    const need = (currentTicket.ingredients || []).map(raw => ccParseIng(raw))
+      .filter(p => p.key);
+    const needKeys = new Set(need.map(p => p.key));
+    const distractors = [];
+    const seen = new Set(needKeys);
+    for (const c of round.pool) {
+      if (c === currentTicket) continue;
+      for (const raw of (c.ingredients || [])) {
+        const p = ccParseIng(raw);
+        if (p.key && !seen.has(p.key)) { seen.add(p.key); distractors.push(p); }
+      }
+    }
+    const shuffle = (arr) => {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    };
+    const needShuffled = shuffle(need.slice());
+    const distShuffled = shuffle(distractors);
+    const distractorSlots = Math.max(CC_BOTTLE_LIMIT - needShuffled.length, 4);
+    const final = shuffle([...needShuffled, ...distShuffled.slice(0, distractorSlots)]);
+    return final.slice(0, CC_BOTTLE_LIMIT);
+  }, [round && round.idx, round && round.pool]);
 
   const pourBottle = (bottle) => {
     if (phase !== 'playing' || !round) return;
@@ -488,7 +523,10 @@ const ComandaScreen = ({ onBack }) => {
                 <button className="cc-act ghost" onClick={clearVessel}>
                   ↺ {tr('comanda.clear', 'Limpiar')}
                 </button>
-                <button className="cc-act primary" onClick={serve}>
+                <button
+                  className={`cc-act primary${round.vessel.length > 0 && round.vessel.length === expectedKeys.length ? ' ready' : ''}`}
+                  onClick={serve}
+                >
                   ✓ {tr('comanda.serve', 'Servir')}
                 </button>
               </div>
@@ -498,12 +536,19 @@ const ComandaScreen = ({ onBack }) => {
             <div className="cc-panel cc-shelf">
               <div className="mono caps cc-panel-eyebrow">{tr('comanda.bottles', 'Botellas')}</div>
               <div className="cc-bottles">
-                {round.bottles.map((b) => (
-                  <button key={b.key} className="cc-bottle" onClick={() => pourBottle(b)}>
-                    <span className="cc-bottle-cap" style={{ background: `oklch(0.6 0.18 ${ccHue(b.key)})` }} />
-                    <span className="cc-bottle-label">{b.name}</span>
-                  </button>
-                ))}
+                {visibleBottles.map((b) => {
+                  const poured = round.vessel.includes(b.key);
+                  return (
+                    <button
+                      key={b.key}
+                      className={`cc-bottle${poured ? ' poured' : ''}`}
+                      onClick={() => pourBottle(b)}
+                    >
+                      <span className="cc-bottle-cap" style={{ background: `oklch(0.6 0.18 ${ccHue(b.key)})` }} />
+                      <span className="cc-bottle-label">{b.name}</span>
+                    </button>
+                  );
+                })}
               </div>
               <div className="mono caps cc-panel-eyebrow" style={{ marginTop: 10 }}>
                 {tr('comanda.garnish', 'Guarnición')}
@@ -635,10 +680,13 @@ const CC_CSS = `
 
 .cc-center { display: flex; flex-direction: column; gap: 10px; min-height: 0; }
 .cc-vessel-wrap { position: relative; flex: 1; display: grid; place-items: center; min-height: 0; }
-.cc-vessel { position: relative; width: 140px; height: 200px; border-radius: 10px 10px 60px 60px; background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); border: 2px solid rgba(255,255,255,0.15); box-shadow: inset 0 -20px 40px rgba(0,0,0,0.3), 0 20px 40px rgba(0,0,0,0.4); overflow: hidden; transition: transform 0.2s; }
-.cc-vessel-inner { position: absolute; inset: 8px; display: flex; flex-direction: column-reverse; border-radius: 4px 4px 50px 50px; overflow: hidden; }
-.cc-layer { flex: 1; min-height: 14px; box-shadow: inset 0 -2px 3px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.1); animation: ccPour 0.35s ease; }
-.cc-vessel-empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-3); font-size: 12px; font-family: var(--f-mono, monospace); letter-spacing: 0.1em; text-transform: uppercase; }
+.cc-vessel { position: relative; width: 140px; height: 200px; border-radius: 8px 8px 52px 52px; background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03)); border: 2px solid rgba(255,255,255,0.18); box-shadow: inset 0 -24px 40px rgba(0,0,0,0.38), inset 4px 0 10px rgba(255,255,255,0.05), inset -4px 0 10px rgba(255,255,255,0.02), 0 24px 50px rgba(0,0,0,0.5); overflow: hidden; transition: transform 0.2s; }
+.cc-vessel::before { content: ''; position: absolute; left: 10px; top: 14px; bottom: 34px; width: 5px; background: linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0)); border-radius: 3px; pointer-events: none; z-index: 2; }
+.cc-vessel::after { content: ''; position: absolute; right: 14px; top: 20px; width: 3px; height: 40px; background: linear-gradient(180deg, rgba(255,255,255,0.2), rgba(255,255,255,0)); border-radius: 2px; pointer-events: none; z-index: 2; }
+.cc-vessel-inner { position: absolute; inset: 8px; display: flex; flex-direction: column-reverse; border-radius: 4px 4px 44px 44px; overflow: hidden; }
+.cc-layer { flex: 1; min-height: 14px; box-shadow: inset 0 -2px 3px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.12); animation: ccPour 0.35s ease; position: relative; }
+.cc-layer:last-child::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0)); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+.cc-vessel-empty { position: absolute; inset: 8px; display: grid; place-items: center; color: var(--ink-3); font-size: 12px; font-family: var(--f-mono, monospace); letter-spacing: 0.1em; text-transform: uppercase; border: 2px dashed rgba(255,255,255,0.08); border-radius: 4px 4px 44px 44px; }
 .cc-vessel.shake { animation: ccShake 0.6s infinite; }
 .cc-garnish-float { position: absolute; top: -16px; right: -8px; font-size: 28px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); animation: ccPop 0.3s ease; }
 .cc-fb { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 13px; pointer-events: none; animation: ccFb 1.1s ease; white-space: nowrap; }
@@ -651,12 +699,17 @@ const CC_CSS = `
 .cc-act:active { transform: translateY(0); }
 .cc-act.on { background: oklch(0.45 0.13 250 / 0.4); border-color: oklch(0.7 0.16 250); color: oklch(0.9 0.14 250); }
 .cc-act.ghost { color: var(--ink-3); }
-.cc-act.primary { background: linear-gradient(180deg, var(--amber, #ffb347), oklch(0.6 0.18 60)); color: #1a1208; border-color: transparent; box-shadow: 0 6px 18px var(--amber-glow, rgba(255,170,60,0.35)); }
+.cc-act.primary { background: linear-gradient(180deg, oklch(0.78 0.17 85), oklch(0.62 0.18 70)); color: oklch(0.18 0.05 55); border-color: transparent; box-shadow: 0 6px 18px oklch(0.7 0.15 80 / 0.35); }
+.cc-act.primary.ready { background: linear-gradient(180deg, oklch(0.78 0.18 150), oklch(0.55 0.18 145)); color: oklch(0.14 0.05 145); box-shadow: 0 6px 22px oklch(0.65 0.2 150 / 0.5); animation: ccReadyPulse 1.6s infinite; }
+@keyframes ccReadyPulse { 0%,100% { box-shadow: 0 6px 22px oklch(0.65 0.2 150 / 0.5); } 50% { box-shadow: 0 6px 30px oklch(0.7 0.22 150 / 0.75); } }
 
 .cc-bottles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .cc-bottle { padding: 10px 6px 8px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(0,0,0,0.1)); cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 6px; transition: all 0.15s; min-height: 64px; }
 .cc-bottle:hover { transform: translateY(-2px); background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(0,0,0,0.05)); border-color: rgba(255,255,255,0.15); }
 .cc-bottle:active { transform: translateY(0); }
+.cc-bottle.poured { opacity: 0.48; background: linear-gradient(180deg, oklch(0.45 0.15 145 / 0.18), rgba(0,0,0,0.1)); border-color: oklch(0.55 0.18 145 / 0.35); }
+.cc-bottle.poured .cc-bottle-label { text-decoration: line-through; color: var(--ink-3); }
+.cc-bottle.poured .cc-bottle-cap { filter: grayscale(0.3); }
 .cc-bottle-cap { width: 18px; height: 22px; border-radius: 4px 4px 2px 2px; box-shadow: 0 0 8px currentColor, inset 0 -2px 3px rgba(0,0,0,0.35); }
 .cc-bottle-label { font-size: 11px; text-align: center; color: var(--ink-2); line-height: 1.15; }
 
