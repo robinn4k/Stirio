@@ -897,8 +897,16 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-// Boot
-renderHub();
+// Boot — respect ?cat=<id> deep-link from the parent SPA (KnowledgeScreen)
+{
+  const params = new URLSearchParams(window.location.search);
+  const initialCat = params.get('cat');
+  if (initialCat && WIKI_CATEGORIES.some((c) => c.id === initialCat)) {
+    openCategory(initialCat);
+  } else {
+    renderHub();
+  }
+}
 </script>
 </body>
 </html>
