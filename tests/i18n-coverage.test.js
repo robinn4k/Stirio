@@ -25,6 +25,7 @@ const PARITY_EXCLUDE_PREFIXES = [
   'wiki.art.history.cocktail-renaissance',
   'wiki.art.history.legendary-bars',
   'wiki.art.history.molecular-mixology',
+  'article.section.3d', // ES-only label for the inline ThreeDSection
 ];
 
 // Keys referenced from code that are known to be missing from i18n/*.json.
@@ -45,6 +46,10 @@ const KNOWN_MISSING_KEYS = new Set([
   'knowledge.hub_subtitle', 'knowledge.articles', 'knowledge.view_3d',
   'knowledge.section_timeline', 'knowledge.section_people',
   'knowledge.section_bars', 'knowledge.section_cocktails',
+  // Knowledge Academy-style redesign — ES-only, translations to follow.
+  'knowledge.eyebrow', 'knowledge.progress',
+  'knowledge.3d_loading', 'knowledge.3d_unavailable',
+  'article.section.3d',
 ]);
 
 function loadLang(lang) {
