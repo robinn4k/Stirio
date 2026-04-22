@@ -360,6 +360,7 @@ const App = () => {
     if (m === 'glossary') { setSubScreen('glossary');  return; }
     if (m === 'map')      { setSubScreen('map');       return; }
     if (m === 'library')  { setSubScreen('library');   return; }
+    if (m === 'article')  { setSubScreen('article');   return; }
     if (m === 'daily') {
       const l = typeof window.DAILY_LESSON === 'function' ? window.DAILY_LESSON() : null;
       if (l) pickLesson(l);
@@ -613,6 +614,14 @@ const App = () => {
 
       {subScreen === 'rhythm' && !activeLesson && (
         <RhythmScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'article' && !activeLesson && (
+        <ArticleScreen
+          article={window.stArticles && window.stArticles.getArticleOfTheDay()}
+          onBack={() => setSubScreen(null)}
+          onOpenWiki={() => setSubScreen('wiki')}
+        />
       )}
 
       {fichaOpen && (
