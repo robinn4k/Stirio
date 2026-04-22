@@ -67,7 +67,11 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
 
   if (finished) {
     const timeUsed = timerDuration ? Math.max(0, timerDuration - timeLeft) : 0;
-    return <LessonResults lesson={lesson} xp={xp} correct={correct} wrong={wrong} timeUsed={timeUsed} onExit={onExit} onFinish={() => onFinish({ xp, correct, wrong })} />;
+    return <LessonResults
+      lesson={lesson} xp={xp} correct={correct} wrong={wrong} timeUsed={timeUsed}
+      onExit={onExit}
+      onFinish={(opts) => onFinish({ xp, correct, wrong, ...(opts || {}) })}
+    />;
   }
 
   // Guard: lesson missing steps or stepIdx past end. Render a friendly exit
@@ -657,9 +661,10 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
 
   return (
     <div style={{
-      position: 'fixed', inset: 0, zIndex: 50,
+      position: 'fixed', inset: 0, zIndex: 60,
       background: 'var(--bg-0)',
-      display: 'grid', placeItems: 'center', padding: 20,
+      display: 'grid', placeItems: 'center',
+      padding: '20px 20px calc(40px + env(safe-area-inset-bottom, 0))',
       animation: 'fadeIn .3s ease',
       overflow: 'auto',
     }}>
@@ -714,10 +719,10 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
         )}
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 8 }}>
-          <button className="btn" onClick={onFinish}>
+          <button className="btn" onClick={() => onFinish()}>
             <Icon name="home" size={16} /> {(window.stUiT ? window.stUiT('results.home', 'Home') : 'Home')}
           </button>
-          <button className="btn primary" onClick={onFinish}>
+          <button className="btn primary" onClick={() => onFinish({ next: true })}>
             {(window.stUiT ? window.stUiT('results.next_lesson', 'Next lesson') : 'Next lesson')} <Icon name="arrowR" size={16} />
           </button>
         </div>

@@ -380,7 +380,7 @@ const App = () => {
   const lessonStartAtRef = useRef(0);
   const pickLesson   = (l) => { if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); } };
   const exitLesson   = ()  => { lessonStartAtRef.current = 0; setActiveLesson(null); };
-  const finishLesson = ({ xp, correct, wrong }) => {
+  const finishLesson = ({ xp, correct, wrong, next } = {}) => {
     const total = (correct || 0) + (wrong || 0);
     // Write XP to the canonical stLearn store (cq_learn_data) so Profile and
     // the Firestore leaderboard read the same number. Then re-sync the React
@@ -473,6 +473,38 @@ const App = () => {
       } catch (e) { console.warn('saveScore failed:', e); }
     }
 
+    // If the user tapped "Siguiente lección" from the results screen AND the
+    // current lesson belongs to an Academy level, resolve the next unfinished
+    // item in the level's sequence and launch it. Fall back to clearing the
+    // lesson (returning to Academy hub) if nothing comes next.
+    if (next && (aMatch || pMatch)) {
+      const levelId = Number((aMatch || pMatch)[1]);
+      const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
+      const level  = levels.find(l => l.id === levelId);
+      const seq    = (level && level.sequence) || [];
+      // Index of the item we just finished.
+      let curIdx = -1;
+      if (aMatch) {
+        const lessonIdx = Number(aMatch[2]);
+        curIdx = seq.findIndex(s => s.type === 'lesson' && s.index === lessonIdx);
+      } else {
+        const roundId = Number(pMatch[2]);
+        curIdx = seq.findIndex(s => s.type === 'practice' && s.roundId === roundId);
+      }
+      const nextItem = curIdx >= 0 ? seq[curIdx + 1] : null;
+      if (level && nextItem) {
+        const nextLesson = nextItem.type === 'lesson'
+          ? (window.buildAcademyLesson && window.buildAcademyLesson(level, nextItem.index))
+          : (window.buildAcademyPractice && window.buildAcademyPractice(level, nextItem.roundId));
+        if (nextLesson) {
+          setActiveLesson(null);
+          // Defer so React unmounts the results screen before we push the next
+          // lesson in — avoids a flash of the old LessonResults contents.
+          setTimeout(() => pickLesson(nextLesson), 0);
+          return;
+        }
+      }
+    }
     setActiveLesson(null);
   };
 
