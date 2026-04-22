@@ -140,7 +140,6 @@ const ComandaScreen = ({ onBack }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const closeGame = () => { ccExitFullscreen(); onBack && onBack(); };
   const [phase, setPhase] = useState('menu'); // menu | playing | done
-  const [landscape, setLandscape] = useState(ccIsLandscape());
   const [round, setRound] = useState(null);
   const [fb, setFb] = useState(null); // { kind: 'ok'|'bad', text, at }
   const [shakeFx, setShakeFx] = useState(0); // timestamp to trigger shake animation
@@ -150,25 +149,6 @@ const ComandaScreen = ({ onBack }) => {
 
   // Ensure we exit fullscreen if the component unmounts (route change, etc.)
   useEffect(() => () => ccExitFullscreen(), []);
-
-  // Orientation listener (landscape required to play)
-  useEffect(() => {
-    let mq;
-    const update = () => setLandscape(ccIsLandscape());
-    try {
-      mq = window.matchMedia('(orientation: landscape)');
-      if (mq.addEventListener) mq.addEventListener('change', update);
-      else if (mq.addListener) mq.addListener(update);
-    } catch {}
-    window.addEventListener('resize', update);
-    return () => {
-      try {
-        if (mq && mq.removeEventListener) mq.removeEventListener('change', update);
-        else if (mq && mq.removeListener) mq.removeListener(update);
-      } catch {}
-      window.removeEventListener('resize', update);
-    };
-  }, []);
 
   // Build initial round state
   const start = () => {
@@ -362,21 +342,7 @@ const ComandaScreen = ({ onBack }) => {
     <div className="cc-root">
       <style>{CC_CSS}</style>
 
-      {/* Portrait overlay — overrides every phase */}
-      {!landscape && (
-        <div className="cc-rotate">
-          <div style={{ fontSize: 64, marginBottom: 12 }}>📱↻</div>
-          <h2 style={{ fontFamily: 'var(--f-serif)', margin: '0 0 8px' }}>
-            {tr('comanda.rotate_title', 'Rota el móvil')}
-          </h2>
-          <p style={{ color: 'var(--ink-2)', maxWidth: 320, margin: '0 auto 20px' }}>
-            {tr('comanda.rotate_body', 'Comanda Chase se juega en horizontal.')}
-          </p>
-          <button className="btn" onClick={closeGame}>{tr('ui.back', 'Salir')}</button>
-        </div>
-      )}
-
-      {landscape && phase === 'menu' && (
+      {phase === 'menu' && (
         <div className="cc-menu">
           <button className="btn cc-back" onClick={closeGame} aria-label="Volver">
             <Icon name="arrowL" size={18} />
@@ -384,7 +350,7 @@ const ComandaScreen = ({ onBack }) => {
           <div className="cc-menu-card">
             <div style={{ fontSize: 56, marginBottom: 6 }}>🎟️</div>
             <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11 }}>
-              {tr('comanda.eyebrow', 'arcade · landscape')}
+              {tr('comanda.eyebrow', 'comanda chase')}
             </div>
             <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: '4px 0 10px' }}>
               {tr('comanda.header', 'Comanda Chase')}
@@ -407,7 +373,7 @@ const ComandaScreen = ({ onBack }) => {
         </div>
       )}
 
-      {landscape && phase === 'playing' && round && currentTicket && (
+      {phase === 'playing' && round && currentTicket && (
         <div className="cc-play">
           {/* HUD */}
           <div className="cc-hud">
@@ -557,7 +523,7 @@ const ComandaScreen = ({ onBack }) => {
         </div>
       )}
 
-      {landscape && phase === 'done' && round && (
+      {phase === 'done' && round && (
         <div className="cc-menu">
           <div className="cc-menu-card">
             <div style={{ fontSize: 56, marginBottom: 6 }}>
@@ -600,11 +566,6 @@ const CC_CSS = `
     var(--bg-1);
   color: var(--ink-1);
   font-family: var(--f-sans, system-ui);
-}
-.cc-rotate {
-  position: absolute; inset: 0;
-  display: grid; place-content: center; text-align: center;
-  padding: 24px;
 }
 .cc-menu {
   position: absolute; inset: 0;
@@ -767,6 +728,63 @@ const CC_CSS = `
 :fullscreen .cc-root,
 :-webkit-full-screen .cc-root {
   background: var(--bg-1);
+}
+
+/* Portrait / narrow viewports — stack panels vertically.
+   Triggers on phone portrait, narrow browser windows, and iPad portrait. */
+@media (orientation: portrait), (max-width: 720px) {
+  .cc-hud { height: 52px; gap: 10px; padding: 6px 10px; }
+  .cc-hud-title { display: none; }
+  .cc-hud-stats { gap: 10px; flex: 1; justify-content: flex-end; }
+  .cc-stat { min-width: 44px; }
+  .cc-stat-label { font-size: 8px; }
+  .cc-stat-val { font-size: 15px; }
+
+  .cc-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 8px;
+    overflow-y: auto;
+  }
+  .cc-panel { padding: 10px 12px; }
+  .cc-ticket { order: 1; }
+  .cc-center { order: 2; }
+  .cc-shelf { order: 3; }
+
+  .cc-ticket-head { margin-bottom: 8px; }
+  .cc-ticket-icon { font-size: 26px; }
+  .cc-ticket-name { font-size: 18px; }
+  .cc-ticket-list { flex: initial; }
+  .cc-line { padding: 5px 8px; font-size: 12px; }
+
+  .cc-vessel-wrap { min-height: 170px; }
+  .cc-vessel { width: 100px; height: 140px; }
+  .cc-actions { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .cc-act { padding: 10px 6px; font-size: 12px; }
+
+  .cc-bottles { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .cc-bottle { min-height: 56px; padding: 8px 4px 6px; }
+  .cc-bottle-label { font-size: 10px; }
+  .cc-bottle-cap { width: 16px; height: 18px; }
+  .cc-garnish-row { grid-template-columns: repeat(6, 1fr); gap: 5px; }
+  .cc-gchip { padding: 6px 3px; font-size: 20px; }
+}
+
+/* Very narrow (small phones portrait) — tighten further. */
+@media (orientation: portrait) and (max-width: 380px) {
+  .cc-panel { padding: 8px 10px; }
+  .cc-ticket-name { font-size: 16px; }
+  .cc-vessel { width: 88px; height: 124px; }
+  .cc-bottles { grid-template-columns: repeat(3, 1fr); }
+  .cc-act { padding: 9px 4px; font-size: 11px; }
+  .cc-garnish-row { grid-template-columns: repeat(6, 1fr); gap: 4px; }
+  .cc-gchip { font-size: 18px; }
+}
+
+/* Result screen should still fit in portrait */
+@media (orientation: portrait) {
+  .cc-menu-card { max-width: 420px; }
+  .cc-result-grid { grid-template-columns: repeat(2, 1fr); }
 }
 `;
 
