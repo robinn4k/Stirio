@@ -91,8 +91,54 @@ const ccIsLandscape = () => {
   catch { return window.innerWidth > window.innerHeight; }
 };
 
+// Fullscreen helpers — no-op on iOS Safari (which doesn't support the API
+// for arbitrary elements). Safe to call everywhere.
+const ccCanFullscreen = () => {
+  const el = typeof document !== 'undefined' ? document.documentElement : null;
+  return !!(el && (el.requestFullscreen || el.webkitRequestFullscreen));
+};
+const ccEnterFullscreen = () => {
+  try {
+    const el = document.documentElement;
+    const req = el.requestFullscreen || el.webkitRequestFullscreen;
+    if (!req) return false;
+    const p = req.call(el);
+    if (p && typeof p.then === 'function') {
+      p.then(() => {
+        try {
+          if (screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock('landscape').catch(() => {});
+          }
+        } catch {}
+      }).catch(() => {});
+    }
+    return true;
+  } catch { return false; }
+};
+const ccExitFullscreen = () => {
+  try {
+    const exit = document.exitFullscreen || document.webkitExitFullscreen;
+    if (exit && (document.fullscreenElement || document.webkitFullscreenElement)) {
+      exit.call(document);
+    }
+  } catch {}
+};
+
+const ccIsIOS = () => {
+  try {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  } catch { return false; }
+};
+const ccIsStandalone = () => {
+  try {
+    return window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true;
+  } catch { return false; }
+};
+
 const ComandaScreen = ({ onBack }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const closeGame = () => { ccExitFullscreen(); onBack && onBack(); };
   const [phase, setPhase] = useState('menu'); // menu | playing | done
   const [landscape, setLandscape] = useState(ccIsLandscape());
   const [round, setRound] = useState(null);
@@ -101,6 +147,9 @@ const ComandaScreen = ({ onBack }) => {
   const rafRef = useRef(0);
   const startAtRef = useRef(0);
   const lastFinishRef = useRef(null); // cached final stats for done screen
+
+  // Ensure we exit fullscreen if the component unmounts (route change, etc.)
+  useEffect(() => () => ccExitFullscreen(), []);
 
   // Orientation listener (landscape required to play)
   useEffect(() => {
@@ -146,6 +195,7 @@ const ComandaScreen = ({ onBack }) => {
     });
     setFb(null);
     startAtRef.current = performance.now();
+    ccEnterFullscreen();
     setPhase('playing');
   };
 
@@ -322,13 +372,13 @@ const ComandaScreen = ({ onBack }) => {
           <p style={{ color: 'var(--ink-2)', maxWidth: 320, margin: '0 auto 20px' }}>
             {tr('comanda.rotate_body', 'Comanda Chase se juega en horizontal.')}
           </p>
-          <button className="btn" onClick={onBack}>{tr('ui.back', 'Salir')}</button>
+          <button className="btn" onClick={closeGame}>{tr('ui.back', 'Salir')}</button>
         </div>
       )}
 
       {landscape && phase === 'menu' && (
         <div className="cc-menu">
-          <button className="btn cc-back" onClick={onBack} aria-label="Volver">
+          <button className="btn cc-back" onClick={closeGame} aria-label="Volver">
             <Icon name="arrowL" size={18} />
           </button>
           <div className="cc-menu-card">
@@ -343,11 +393,16 @@ const ComandaScreen = ({ onBack }) => {
               {tr('comanda.menu_body', 'Entran tickets. Toca las botellas, elige shake o stir, añade guarnición y sirve. 90 segundos.')}
             </p>
             <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
-              <button className="btn" onClick={onBack}>{tr('ui.back', 'Salir')}</button>
+              <button className="btn" onClick={closeGame}>{tr('ui.back', 'Salir')}</button>
               <button className="btn primary" onClick={start}>
                 <Icon name="play" size={14} /> {tr('comanda.start', 'Empezar')}
               </button>
             </div>
+            {ccIsIOS() && !ccIsStandalone() && !ccCanFullscreen() && (
+              <p className="cc-fs-hint">
+                {tr('comanda.fs_hint', '💡 Instala Stirio en tu pantalla de inicio para jugar a pantalla completa.')}
+              </p>
+            )}
           </div>
         </div>
       )}
@@ -356,7 +411,7 @@ const ComandaScreen = ({ onBack }) => {
         <div className="cc-play">
           {/* HUD */}
           <div className="cc-hud">
-            <button className="btn cc-back-hud" onClick={onBack} aria-label="Volver">
+            <button className="btn cc-back-hud" onClick={closeGame} aria-label="Volver">
               <Icon name="arrowL" size={16} />
             </button>
             <div className="cc-hud-title">
@@ -524,7 +579,7 @@ const ComandaScreen = ({ onBack }) => {
               +{Math.max(0, Math.round(round.score))} XP
             </div>
             <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
-              <button className="btn" onClick={onBack}>{tr('ui.back', 'Salir')}</button>
+              <button className="btn" onClick={closeGame}>{tr('ui.back', 'Salir')}</button>
               <button className="btn primary" onClick={start}>{tr('comanda.again', 'Otra ronda')}</button>
             </div>
           </div>
@@ -663,6 +718,55 @@ const CC_CSS = `
   .cc-vessel { width: 120px; height: 170px; }
   .cc-bottles { grid-template-columns: repeat(2, 1fr); }
   .cc-ticket-name { font-size: 18px; }
+}
+
+/* PWA hint under the Empezar button — shown only on iOS Safari browser */
+.cc-fs-hint {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--ink-2);
+  background: oklch(0.82 0.17 75 / 0.08);
+  border: 1px solid oklch(0.82 0.17 75 / 0.18);
+  border-radius: 10px;
+}
+
+/* Short-viewport tuning: iOS Safari in landscape leaves ~300-360px of
+   usable height because of the URL + tab bar. Keep the menu + playing
+   layout legible without fullscreen. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .cc-menu-card { padding: 14px 20px; max-width: 520px; }
+  .cc-menu-card > div:first-child { font-size: 32px !important; margin-bottom: 2px !important; }
+  .cc-menu-card h1 { font-size: 22px; margin: 2px 0 6px; }
+  .cc-menu-card p { font-size: 12px; margin-bottom: 10px; }
+  .cc-fs-hint { margin-top: 8px; padding: 6px 10px; font-size: 11px; }
+  .cc-hud { height: 48px; padding: 6px 12px; }
+  .cc-stat-val { font-size: 16px; }
+  .cc-grid { gap: 8px; }
+  .cc-panel { padding: 10px; }
+  .cc-vessel { width: 110px; height: 150px; }
+  .cc-ticket-name { font-size: 17px; }
+  .cc-ticket-icon { font-size: 26px; }
+  .cc-line { padding: 4px 7px; font-size: 12px; }
+  .cc-actions { gap: 6px; }
+  .cc-act { padding: 9px 8px; font-size: 12px; }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .cc-hud { height: 40px; padding: 4px 10px; }
+  .cc-hud-title { display: none; }
+  .cc-vessel { width: 92px; height: 126px; }
+  .cc-bottles { gap: 5px; }
+  .cc-bottle { padding: 6px 4px 5px; min-height: 52px; }
+  .cc-bottle-label { font-size: 10px; }
+  .cc-garnish-row { gap: 4px; }
+  .cc-gchip { padding: 5px 2px; font-size: 18px; }
+}
+
+/* Native fullscreen polish */
+:fullscreen .cc-root,
+:-webkit-full-screen .cc-root {
+  background: var(--bg-1);
 }
 `;
 
