@@ -116,6 +116,12 @@
       color: entry.color,
       image: entry.image,
       sections,
+      // Propagate 3D hints so ArticleScreen can render <ThreeDSection> inline.
+      // KnowledgeScreen's CategoryView already passes these through when the
+      // entry is built from WIKI_CATEGORIES (which is the only place has3d /
+      // scene are declared).
+      scene: entry.scene || null,
+      has3d: !!entry.has3d,
     };
   }
 

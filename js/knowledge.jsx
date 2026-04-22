@@ -1,8 +1,12 @@
 // ─── Stirio — KnowledgeScreen (Enciclopedia · Historia y Conocimiento) ───
-// Unified React-native replacement for the old iframe-based WikiScreen.
+// Unified React-native Encyclopedia. Two views: a Hub (Academy-style hero +
+// LevelCard category list) and a CategoryView (article list with optional
+// curated sections for `history`).
+//
+// 3D models are NOT a category. When an article declares a `scene` (see
+// WIKI_CATEGORIES), ArticleScreen renders <ThreeDSection> inline between
+// sections — the iframe to wiki.html is no longer used.
 // Reads the catalog from window.WIKI_CATEGORIES (bridged by wiki-data.js).
-// For categories with `has3d: true`, opens wiki.html?cat=<id> in an embedded
-// iframe so the existing R3F experience is preserved untouched.
 //
 // Dependencies (globals from earlier scripts):
 //   - Icon, SectionHeader from ui.jsx / screens.jsx
@@ -19,7 +23,7 @@ const KnowledgeScreen = ({ onBack, onOpenArticle, onOpenFicha }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
 
   const [categories, setCategories] = React.useState(window.WIKI_CATEGORIES || null);
-  const [view, setView]             = React.useState('hub'); // 'hub' | 'category' | '3d'
+  const [view, setView]             = React.useState('hub'); // 'hub' | 'category'
   const [selectedCat, setSelectedCat] = React.useState(null);
 
   // If the ESM bridge hasn't landed yet, dynamic-import the catalog. This file
@@ -33,17 +37,6 @@ const KnowledgeScreen = ({ onBack, onOpenArticle, onOpenFicha }) => {
       .catch((err) => { console.warn('[knowledge] import failed', err); if (alive) setCategories([]); });
     return () => { alive = false; };
   }, [categories]);
-
-  // postMessage listener: wiki.html emits {type:'wiki-close'} when the user
-  // taps back at its root view. Only active while we're showing the iframe.
-  React.useEffect(() => {
-    if (view !== '3d') return;
-    const onMsg = (e) => {
-      if (e && e.data && e.data.type === 'wiki-close') setView('category');
-    };
-    window.addEventListener('message', onMsg);
-    return () => window.removeEventListener('message', onMsg);
-  }, [view]);
 
   const openCategory = (cat) => { setSelectedCat(cat); setView('category'); };
   const backToHub    = () => { setSelectedCat(null); setView('hub'); };
@@ -63,8 +56,6 @@ const KnowledgeScreen = ({ onBack, onOpenArticle, onOpenFicha }) => {
   );
 };
 
-// Placeholders — filled in steps D2 (Hub), D3 (Category generic + 3D button),
-// D4 (ThreeDView), D5 (history curated sections), D6 (cocktails with story).
 // Per-category accent token (maps to --<token>-soft / --<token>-glow / --<token>).
 // Keeps the palette aligned with the rest of the app (amber/cyan/berry/violet/lime).
 const CAT_ACCENT = {
@@ -285,35 +276,9 @@ const CategoryView = ({ tr, cat, onBack, onOpenArticle, onOpenFicha }) => {
     </div>
   );
 };
-const ThreeDView = ({ tr, cat, onBack }) => (
-  <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-    <div style={{
-      display: 'flex', alignItems: 'center', gap: 10,
-      padding: '10px 14px',
-      background: 'var(--bg-1)', borderBottom: '1px solid var(--border-1)',
-    }}>
-      <button onClick={onBack}
-        aria-label={tr('knowledge.back', 'Volver')}
-        className="btn"
-        style={{ padding: 6, width: 36, height: 36, borderRadius: '50%' }}>
-        <Icon name="arrowL" size={14} />
-      </button>
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15 }}>
-          {cat ? (cat.icon + ' ' + tr('wiki.cat.' + cat.id, cat.id)) : tr('knowledge.view_3d', 'Ver modelos 3D')}
-        </div>
-        <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-2)', letterSpacing: '0.08em' }}>
-          {tr('knowledge.view_3d', 'Ver modelos 3D')}
-        </div>
-      </div>
-    </div>
-    <iframe
-      src={cat ? ('wiki.html?cat=' + encodeURIComponent(cat.id)) : 'wiki.html'}
-      style={{ flex: 1, border: 'none', width: '100%' }}
-      title={tr('knowledge.view_3d', 'Ver modelos 3D')}
-    />
-  </div>
-);
+// (The old iframe-based ThreeDView was retired. 3D models are now rendered
+// inline inside ArticleScreen via <ThreeDSection> for articles that declare
+// a `scene` in wiki-data.js. The iframe to wiki.html is no longer used.)
 
 // ─── History curated sections ───────────────────────────────────────────
 
