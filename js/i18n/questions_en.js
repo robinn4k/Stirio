@@ -454,5 +454,25 @@ export const rounds = [
       { q: "What spirit is used in a Tipperary?", a: ["Irish Whiskey", "Scotch Whisky", "Bourbon", "Rye Whiskey"], exp: "The Tipperary cocktail uses Irish Whiskey, named after the Irish county, combined with sweet vermouth and green Chartreuse." },
       { q: "What ingredient is optional in a Southside?", a: ["Egg White", "Soda water", "Bitters", "Sugar syrup"], exp: "Egg white is an optional ingredient in the Southside cocktail, adding a silky texture when included." }
     ]
+  },
+  // TODO localize — round 25 ships in Spanish until translations land.
+  {
+    id: 25,
+    title: "Historia & Cultura",
+    subtitle: "Orígenes, personajes y bares legendarios",
+    icon: "📜",
+    color: "#8e44ad",
+    questions: [
+      { q: "¿En qué año apareció por primera vez en letra impresa la palabra 'cocktail'?", a: ["1806", "1862", "1920", "1776"], exp: "La palabra 'cocktail' apareció en 1806 en The Balance and Columbian Repository, definida como un licor estimulante de azúcar, agua y amargos." },
+      { q: "¿Qué libro publicó Jerry Thomas en 1862?", a: ["How to Mix Drinks (The Bartender's Guide)", "The Savoy Cocktail Book", "The Fine Art of Mixing Drinks", "The Joy of Mixology"], exp: "How to Mix Drinks or The Bon-Vivant's Companion (1862) de Jerry Thomas es el primer manual serio de coctelería publicado en EE.UU." },
+      { q: "¿Entre qué años estuvo vigente la Prohibición en EE.UU.?", a: ["1920-1933", "1918-1930", "1929-1941", "1900-1920"], exp: "La 18ª Enmienda entró en vigor el 17 de enero de 1920 y fue derogada por la 21ª Enmienda el 5 de diciembre de 1933." },
+      { q: "¿Dónde y en qué año se fundó la IBA (International Bartenders Association)?", a: ["Torquay, 1951", "Londres, 1945", "Nueva York, 1960", "París, 1938"], exp: "La IBA se fundó en 1951 en el Grand Hotel de Torquay, Inglaterra, por representantes de siete países." },
+      { q: "¿Cuál era el nombre real de Don the Beachcomber?", a: ["Ernest Raymond Beaumont Gantt", "Victor Bergeron", "Harry Craddock", "Trader Vic"], exp: "Ernest Raymond Beaumont Gantt (1907-1989) adoptó el personaje de Don the Beachcomber en 1933 al abrir el primer bar Tiki en Hollywood." },
+      { q: "¿Qué cóctel creó Ada Coleman en el American Bar del Savoy?", a: ["Hanky Panky", "White Lady", "Sidecar", "Bloody Mary"], exp: "Ada 'Coley' Coleman creó el Hanky Panky para el actor Charles Hawtrey alrededor de 1903, con ginebra, vermut rojo y Fernet Branca." },
+      { q: "¿Quién escribió The Savoy Cocktail Book en 1930?", a: ["Harry Craddock", "Jerry Thomas", "Dale DeGroff", "Ada Coleman"], exp: "Harry Craddock, bartender americano que huyó a Londres durante la Prohibición, recopiló 750 recetas en The Savoy Cocktail Book (1930)." },
+      { q: "¿De qué tradición cultural toman inspiración las tazas tiki?", a: ["Cultura polinesia", "Cultura azteca", "Cultura griega", "Cultura vikinga"], exp: "Las tazas tiki se inspiran en la iconografía polinesia (dioses maoríes, tótems) mezclada con fantasía americana mid-century." },
+      { q: "¿Qué licor se usa para enjuagar el vaso en un Sazerac?", a: ["Absenta", "Chartreuse verde", "Pastis", "Ouzo"], exp: "El Sazerac se sirve en un vaso previamente enjuagado con absenta (o Herbsaint tras la Prohibición), que deja sólo el aroma anisado." },
+      { q: "¿Quién lideró el renacimiento del cóctel clásico desde el Rainbow Room en los 80?", a: ["Dale DeGroff", "Audrey Saunders", "Sasha Petraske", "Dick Bradsell"], exp: "Dale DeGroff, conocido como 'King Cocktail', asumió en 1987 la barra del Rainbow Room e inició el renacimiento del classic cocktail." }
+    ]
   }
 ];
