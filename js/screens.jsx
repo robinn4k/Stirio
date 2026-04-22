@@ -747,6 +747,9 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
   // same featured on a given day.
   const _dayIdx = Math.floor(Date.now() / 86400000);
   const featured = LESSONS[_dayIdx % LESSONS.length] || LESSONS[0];
+  // Article of the day — re-resolved on every render so language changes pick
+  // up immediately. Returns null if stArticles hasn't loaded yet.
+  const articleOfDay = (window.stArticles && window.stArticles.getArticleOfTheDay()) || null;
   const dailyChallenge = { id: 'daily', title: 'Reto Diario', questions: 10, xp: 120 };
   const time = new Date().getHours();
   const greetingKey = time < 12 ? 'home.greet_morning' : time < 19 ? 'home.greet_afternoon' : 'home.greet_evening';
@@ -816,6 +819,13 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           }} />
         </div>
       </div>
+
+      {/* article of the day */}
+      {articleOfDay && (
+        <section style={{ marginBottom: 24 }}>
+          <ArticleOfDayCard article={articleOfDay} onOpen={() => onOpenMode('article')} />
+        </section>
+      )}
 
       {/* hero: featured + daily challenge + duel */}
       <section style={{ marginBottom: 32 }}>
@@ -1104,6 +1114,56 @@ const FeaturedCard = ({ lesson, onPlay }) => {
         }} />
       </div>
     </div>
+  );
+};
+
+const ArticleOfDayCard = ({ article, onOpen }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const typeLabels = { technique: 'Técnica', spirit: 'Destilado', history: 'Historia', trend: 'Tendencia', cocktail: 'Cóctel' };
+  return (
+    <button onClick={onOpen} className="card" style={{
+      padding: 18, textAlign: 'left', cursor: 'pointer',
+      display: 'flex', alignItems: 'center', gap: 16,
+      background: `linear-gradient(135deg, color-mix(in oklch, ${article.color || 'var(--violet)'} 22%, var(--bg-2)), var(--bg-2))`,
+      borderColor: `color-mix(in oklch, ${article.color || 'var(--violet)'} 35%, transparent)`,
+      transition: 'transform .15s',
+    }}
+      onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+      onMouseLeave={e => e.currentTarget.style.transform = ''}
+    >
+      <div style={{
+        flexShrink: 0, width: 64, height: 64, borderRadius: 14,
+        background: `linear-gradient(135deg, ${article.color || 'var(--violet)'}, oklch(0.22 0.03 60))`,
+        display: 'grid', placeItems: 'center', fontSize: 32,
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12)',
+      }}>{article.emoji || '📰'}</div>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div className="mono caps" style={{
+          color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em', marginBottom: 4,
+        }}>
+          {tr('home.article_eyebrow', 'Artículo del día')} · {tr('article.type.' + article.type, typeLabels[article.type] || 'Artículo')}
+        </div>
+        <div style={{
+          fontFamily: 'var(--f-serif)', fontSize: 20, lineHeight: 1.15,
+          marginBottom: 4, overflow: 'hidden', textOverflow: 'ellipsis',
+          display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+        }}>{article.title}</div>
+        {article.excerpt && (
+          <div style={{
+            color: 'var(--ink-2)', fontSize: 12, lineHeight: 1.4,
+            overflow: 'hidden', textOverflow: 'ellipsis',
+            display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+          }}>{article.excerpt}</div>
+        )}
+      </div>
+      <div style={{
+        flexShrink: 0, width: 36, height: 36, borderRadius: '50%',
+        background: 'var(--amber)', display: 'grid', placeItems: 'center',
+        color: 'var(--bg-0)',
+      }}>
+        <Icon name="arrowR" size={14} />
+      </div>
+    </button>
   );
 };
 
