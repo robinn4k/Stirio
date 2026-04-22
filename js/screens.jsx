@@ -894,6 +894,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           <ArcadeCard title={tr('home.arcade_coctelero', 'Arcade Coctelero')} subtitle={tr('home.arcade_coctelero_sub', 'Aprende recetas jugando')} icon="🕹️" onClick={() => onOpenMode('arcade')} />
           <ArcadeCard title={tr('home.memory_title', 'Memoria de Garnish')} subtitle={tr('home.memory_sub', 'Empareja guarniciones')} icon="🧠" onClick={() => onOpenMode('memory')} />
           <ArcadeCard title={tr('home.rhythm_title', 'Ritmo de Shaker')} subtitle={tr('home.rhythm_sub', 'Agita al compás')} icon="🥁" onClick={() => onOpenMode('rhythm')} />
+          <ArcadeCard title={tr('home.comanda_title', 'Comanda Chase')} subtitle={tr('home.comanda_sub', 'Sirve cócteles contrarreloj')} icon="🎟️" onClick={() => onOpenMode('comanda')} />
         </div>
       </section>
 
@@ -1971,6 +1972,7 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
     arcade: { icon: '🕹️', title: tr('mode.arcade.title', 'Arcade Coctelero'), subtitle: tr('mode.arcade.sub', 'Aprende recetas jugando'), body: tr('mode.arcade.body', 'Mini-juegos con físicas: shake-o-meter, garnish catcher, pour target.'), cta: tr('mode.arcade.cta', 'Jugar') },
     memory: { icon: '🧠', title: tr('mode.memory.title', 'Memoria de Garnish'), subtitle: tr('mode.memory.sub', 'Empareja guarniciones'), body: tr('mode.memory.body', 'Memory clásico con ingredientes, vasos y herramientas.'), cta: tr('mode.memory.cta', 'Jugar') },
     rhythm: { icon: '🥁', title: tr('mode.rhythm.title', 'Ritmo de Shaker'), subtitle: tr('mode.rhythm.sub', 'Agita al compás'), body: tr('mode.rhythm.body', 'Sigue el ritmo. Cuanto mejor tu tempo, más perfecta la emulsión.'), cta: tr('mode.rhythm.cta', 'Jugar') },
+    comanda: { icon: '🎟️', title: tr('mode.comanda.title', 'Comanda Chase'), subtitle: tr('mode.comanda.sub', 'Sirve cócteles contrarreloj'), body: tr('mode.comanda.body', 'Entran tickets, tú tienes la estación. Pone ingredientes, agita o remueve, guarnece y sirve. Landscape · 90 s.'), cta: tr('mode.comanda.cta', 'Jugar') },
     iba: { icon: '📖', title: tr('mode.iba.title', 'Recetas'), subtitle: tr('mode.iba.sub', '90 recetas oficiales'), body: tr('mode.iba.body', 'Las recetas reconocidas por la International Bartenders Association, con historia y técnica.'), cta: tr('mode.iba.cta', 'Abrir') },
     wiki: { icon: '🌐', title: tr('mode.wiki.title', 'Enciclopedia'), subtitle: tr('mode.wiki.sub', 'Todo el conocimiento'), body: tr('mode.wiki.body', 'Bebidas, técnicas, cristalería, herramientas y personajes.'), cta: tr('mode.wiki.cta', 'Abrir') },
     glossary: { icon: '📝', title: tr('mode.glossary.title', 'Glosario'), subtitle: tr('mode.glossary.sub', '70+ términos'), body: tr('mode.glossary.body', 'Del muddle al dry shake. Todos los términos del oficio.'), cta: tr('mode.glossary.cta', 'Abrir') },
