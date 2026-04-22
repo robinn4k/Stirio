@@ -181,93 +181,98 @@ const HubView = ({ tr, categories, onBack, onOpen }) => {
     </div>
   );
 };
-const CategoryView = ({ tr, cat, onBack, onOpenArticle, onOpenFicha, onOpen3D }) => {
+const CategoryView = ({ tr, cat, onBack, onOpenArticle, onOpenFicha }) => {
   if (!cat) return null;
 
-  const title = tr('wiki.cat.' + cat.id, cat.id);
-  const desc  = tr('wiki.cat.' + cat.id + '.desc', '');
+  const title  = tr('wiki.cat.' + cat.id, cat.id);
+  const desc   = tr('wiki.cat.' + cat.id + '.desc', '');
+  const accent = accentOf(cat.id);
 
-  // Resolve an article click: prefer the POOL entry (has image + color),
-  // otherwise build an ad-hoc entry so resolveArticle() can still read keys.
-  const openArticle = (artId) => {
+  // Resolve an article click: prefer the POOL entry (has image + color), else
+  // build an ad-hoc entry. Propagate scene/has3d so ArticleScreen can render
+  // the inline 3D section for articles like Destilación → alambique.
+  const openArticle = (art) => {
     const pool = (window.stArticles && window.stArticles.POOL) || [];
-    const entry = pool.find((e) => e.cat === cat.id && e.art === artId) || {
-      id: cat.id + '-' + artId,
+    const entry = pool.find((e) => e.cat === cat.id && e.art === art.id) || {
+      id: cat.id + '-' + art.id,
       type: cat.id === 'history' ? 'history' : (cat.id === 'techniques' ? 'technique' : 'spirit'),
-      cat: cat.id, art: artId,
-      emoji: (cat.articles.find((a) => a.id === artId) || {}).icon || cat.icon,
-      color: '#8e44ad',
+      cat: cat.id, art: art.id,
+      emoji: art.icon || cat.icon,
+      color: `var(--${accent})`,
     };
-    onOpenArticle && onOpenArticle(entry);
+    const enriched = { ...entry, scene: art.scene || entry.scene || null, has3d: !!(art.has3d || entry.has3d) };
+    // Mark as read so the Hub progress bar updates on next mount.
+    try {
+      const map = JSON.parse(localStorage.getItem('stirio.knowledge.read') || '{}');
+      map[cat.id + '/' + art.id] = Date.now();
+      localStorage.setItem('stirio.knowledge.read', JSON.stringify(map));
+    } catch {}
+    onOpenArticle && onOpenArticle(enriched);
   };
 
   return (
     <div>
-      {/* Header */}
-      <div style={{
-        padding: '20px 20px 18px',
-        background: cat.gradient || 'linear-gradient(160deg, var(--bg-2), var(--bg-1))',
-        color: '#fff',
-      }}>
-        <button onClick={onBack}
-          aria-label={tr('knowledge.back', 'Volver')}
-          className="btn"
-          style={{
-            padding: 8, width: 40, height: 40, borderRadius: '50%',
-            background: 'rgba(0,0,0,0.35)', borderColor: 'rgba(255,255,255,0.15)',
-          }}>
+      {/* Header — sobrio, misma gramática visual que el Hub */}
+      <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
+        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}
+          aria-label={tr('knowledge.back', 'Volver')}>
           <Icon name="arrowL" size={16} />
         </button>
-        <div style={{ marginTop: 18, display: 'flex', alignItems: 'center', gap: 14 }}>
-          <div style={{ fontSize: 44, lineHeight: 1, filter: 'drop-shadow(0 3px 8px rgba(0,0,0,0.4))' }}>{cat.icon}</div>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <h1 style={{
-              fontFamily: 'var(--f-serif)', fontWeight: 400,
-              fontSize: 'clamp(22px, 5vw, 30px)',
-              lineHeight: 1.1, margin: 0,
-              textShadow: '0 2px 10px rgba(0,0,0,0.55)',
-            }}>{title}</h1>
-            {desc && (
-              <p style={{
-                margin: '6px 0 0', fontSize: 13, lineHeight: 1.45,
-                color: 'rgba(255,255,255,0.88)',
-                textShadow: '0 1px 6px rgba(0,0,0,0.5)',
-              }}>{desc}</p>
-            )}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div className="mono caps" style={{ color: `var(--${accent})`, fontSize: 10 }}>
+            {tr('knowledge.eyebrow', 'Enciclopedia')}
           </div>
+          <h1 style={{
+            fontFamily: 'var(--f-serif)', fontSize: 'clamp(22px, 5vw, 30px)',
+            margin: 0, lineHeight: 1.05,
+          }}>
+            <span style={{ marginRight: 8 }}>{cat.icon}</span>
+            {title}
+          </h1>
         </div>
-        {cat.has3d && (
-          <button
-            onClick={onOpen3D}
-            className="btn"
-            style={{
-              marginTop: 14, padding: '8px 14px',
-              background: 'rgba(0,0,0,0.35)', borderColor: 'rgba(255,255,255,0.2)',
-              color: '#fff', fontFamily: 'var(--f-mono)', fontSize: 12, letterSpacing: '0.08em',
-            }}>
-            ⚙ {tr('knowledge.view_3d', 'Ver modelos 3D')}
-          </button>
-        )}
       </div>
 
-      {/* Articles list */}
-      <div style={{ padding: '20px 20px 32px', maxWidth: 720, margin: '0 auto', display: 'grid', gap: 10 }}>
+      {desc && (
+        <div style={{ padding: '4px 24px 16px', maxWidth: 720, margin: '0 auto' }}>
+          <p style={{ margin: 0, fontSize: 13, lineHeight: 1.5, color: 'var(--ink-2)' }}>{desc}</p>
+        </div>
+      )}
+
+      {/* Articles list — LevelCard style */}
+      <div style={{ padding: '0 24px', maxWidth: 720, margin: '0 auto', display: 'grid', gap: 10 }}>
         {(cat.articles || []).map((art) => {
           const artTitle = tr('wiki.art.' + cat.id + '.' + art.id, art.id);
           const artSub   = tr('wiki.art.' + cat.id + '.' + art.id + '.sub', '');
           return (
             <button key={art.id}
-              onClick={() => openArticle(art.id)}
+              onClick={() => openArticle(art)}
               className="card"
               style={{
-                padding: 14, display: 'flex', alignItems: 'center', gap: 12,
-                cursor: 'pointer', textAlign: 'left', border: '1px solid var(--border-1)',
-                background: 'var(--bg-1)',
+                padding: 14, textAlign: 'left', cursor: 'pointer',
+                display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 12, alignItems: 'center',
               }}>
-              <div style={{ fontSize: 28, lineHeight: 1 }}>{art.icon}</div>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontFamily: 'var(--f-serif)', fontWeight: 500, fontSize: 15, color: 'var(--ink-0)' }}>{artTitle}</div>
-                {artSub && <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 2 }}>{artSub}</div>}
+              <div style={{
+                width: 44, height: 44, borderRadius: 12,
+                background: `linear-gradient(135deg, var(--${accent}-soft), var(--bg-2))`,
+                border: `1px solid var(--${accent}-glow)`,
+                display: 'grid', placeItems: 'center', fontSize: 22,
+              }}>{art.icon}</div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{
+                  fontFamily: 'var(--f-serif)', fontWeight: 500, fontSize: 17,
+                  color: 'var(--ink-0)', lineHeight: 1.15,
+                  display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap',
+                }}>
+                  {artTitle}
+                  {art.has3d && (
+                    <span className="mono caps" style={{
+                      fontSize: 9, padding: '2px 6px', borderRadius: 6,
+                      border: '1px solid var(--amber-glow)', color: 'var(--amber)',
+                      letterSpacing: '0.08em',
+                    }}>3D</span>
+                  )}
+                </div>
+                {artSub && <div style={{ fontSize: 12, color: 'var(--ink-2)', marginTop: 2, lineHeight: 1.35 }}>{artSub}</div>}
               </div>
               <Icon name="arrowR" size={14} />
             </button>
@@ -275,7 +280,7 @@ const CategoryView = ({ tr, cat, onBack, onOpenArticle, onOpenFicha, onOpen3D })
         })}
       </div>
 
-      {/* History-specific curated sections — wired in D5/D6 */}
+      {/* History-only curated sections at the end (timeline + people + bars + cocktails) */}
       {cat.id === 'history' && <HistoryCurated tr={tr} onOpenFicha={onOpenFicha} />}
     </div>
   );
@@ -376,7 +381,7 @@ const AccordionCard = ({ emoji, title, body }) => {
 };
 
 const HistoryCurated = ({ tr, onOpenFicha }) => (
-  <div style={{ padding: '8px 20px 40px', maxWidth: 720, margin: '0 auto' }}>
+  <div style={{ padding: '8px 24px 40px', maxWidth: 720, margin: '0 auto' }}>
     {/* Timeline */}
     <CuratedSection tr={tr}
       eyebrow={'📅 ' + tr('knowledge.section_timeline', 'Línea del tiempo')}
