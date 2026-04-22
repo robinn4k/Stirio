@@ -51,89 +51,136 @@ const KnowledgeScreen = ({ onBack, onOpenArticle, onOpenFicha }) => {
   // Render switchboard — concrete views live in D2-D6.
   return (
     <div style={{
-      position: 'fixed', inset: 0, zIndex: 50,
+      minHeight: '100dvh',
       background: 'var(--bg-0)',
-      overflowY: 'auto',
       animation: 'fadeIn .3s ease',
-      paddingBottom: 'calc(40px + env(safe-area-inset-bottom, 0))',
+      paddingBottom: 'calc(120px + env(safe-area-inset-bottom, 0))',
     }}>
       {view === 'hub'      && <HubView tr={tr} categories={categories || []} onBack={onBack} onOpen={openCategory} />}
       {view === 'category' && <CategoryView tr={tr} cat={selectedCat} onBack={backToHub}
-                                            onOpenArticle={onOpenArticle} onOpenFicha={onOpenFicha}
-                                            onOpen3D={() => setView('3d')} />}
-      {view === '3d'       && <ThreeDView tr={tr} cat={selectedCat} onBack={() => setView('category')} />}
+                                            onOpenArticle={onOpenArticle} onOpenFicha={onOpenFicha} />}
     </div>
   );
 };
 
 // Placeholders — filled in steps D2 (Hub), D3 (Category generic + 3D button),
 // D4 (ThreeDView), D5 (history curated sections), D6 (cocktails with story).
-const HubView = ({ tr, categories, onBack, onOpen }) => (
-  <div>
-    {/* Hero */}
-    <div style={{
-      position: 'relative',
-      padding: '24px 24px 28px',
-      background: 'linear-gradient(160deg, #8e44ad 0%, oklch(0.2 0.05 320) 100%)',
-      minHeight: 220,
-    }}>
-      <button onClick={onBack}
-        aria-label={tr('knowledge.back', 'Volver')}
-        className="btn"
-        style={{
-          padding: 8, width: 40, height: 40, borderRadius: '50%',
-          background: 'rgba(0,0,0,0.35)', borderColor: 'rgba(255,255,255,0.15)',
-        }}>
-        <Icon name="arrowL" size={16} />
-      </button>
-      <div style={{ marginTop: 32 }}>
-        <div className="mono caps" style={{
-          fontSize: 10, color: 'var(--amber)', letterSpacing: '0.12em', marginBottom: 6,
-          textShadow: '0 2px 8px rgba(0,0,0,0.6)',
-        }}>📜 {tr('knowledge.section_categories', 'Explora por categoría')}</div>
-        <h1 style={{
-          fontFamily: 'var(--f-serif)', fontWeight: 400,
-          fontSize: 'clamp(26px, 6vw, 36px)',
-          lineHeight: 1.05, margin: 0,
-          textShadow: '0 2px 12px rgba(0,0,0,0.55)',
-        }}>{tr('knowledge.hub_title', 'Historia y Conocimiento')}</h1>
-        <p style={{
-          marginTop: 10, color: 'var(--ink-1)',
-          fontSize: 14, lineHeight: 1.5, fontStyle: 'italic',
-          textShadow: '0 1px 6px rgba(0,0,0,0.55)',
-        }}>{tr('knowledge.hub_subtitle', 'Enciclopedia de la coctelería: técnicas, destilados, historia y cultura')}</p>
-      </div>
-    </div>
+// Per-category accent token (maps to --<token>-soft / --<token>-glow / --<token>).
+// Keeps the palette aligned with the rest of the app (amber/cyan/berry/violet/lime).
+const CAT_ACCENT = {
+  techniques: 'cyan',
+  spirits:    'amber',
+  history:    'berry',
+  tools:      'lime',
+  wines:      'berry',
+  liqueurs:   'amber',
+};
+const accentOf = (id) => CAT_ACCENT[id] || 'amber';
 
-    {/* Category grid 2-col */}
-    <div style={{ padding: '20px 20px 40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, maxWidth: 720, margin: '0 auto' }}>
-      {categories.map((cat) => {
-        const title = tr('wiki.cat.' + cat.id, cat.id);
-        const count = (cat.articles || []).length;
-        return (
-          <button key={cat.id}
-            onClick={() => onOpen(cat)}
-            className="card"
-            style={{
-              padding: 16, textAlign: 'left', cursor: 'pointer',
-              background: cat.gradient || 'var(--bg-2)',
-              border: 'none', color: '#fff',
-              minHeight: 120, display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-              gap: 8,
-            }}>
-            <div style={{ fontSize: 32, lineHeight: 1 }}>{cat.icon}</div>
+// Progress tracker: counts how many articles the user has opened.
+// Reads a plain map from localStorage['stirio.knowledge.read'].
+const loadReadMap = () => {
+  try { return JSON.parse(localStorage.getItem('stirio.knowledge.read') || '{}') || {}; }
+  catch { return {}; }
+};
+const totalArticleCount = (categories) => categories.reduce((n, c) => n + (c.articles || []).length, 0);
+const readCountFor = (categories, readMap) => {
+  let n = 0;
+  for (const c of categories) for (const a of (c.articles || [])) if (readMap[c.id + '/' + a.id]) n++;
+  return n;
+};
+
+const HubView = ({ tr, categories, onBack, onOpen }) => {
+  const readMap = loadReadMap();
+  const total = totalArticleCount(categories);
+  const read  = readCountFor(categories, readMap);
+  const pct   = total ? Math.min(100, Math.round((read / total) * 100)) : 0;
+
+  return (
+    <div>
+      {/* Header — sobrio, sin hero de color */}
+      <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
+        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}
+          aria-label={tr('knowledge.back', 'Volver')}>
+          <Icon name="arrowL" size={16} />
+        </button>
+        <div>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>
+            {tr('knowledge.eyebrow', 'Enciclopedia')}
+          </div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 32, margin: 0, lineHeight: 1 }}>
+            {tr('knowledge.hub_title', 'Historia y Conocimiento')}
+          </h1>
+        </div>
+      </div>
+
+      {/* Hero card con progreso */}
+      <div style={{ padding: '16px 24px 20px' }}>
+        <div className="card" style={{
+          padding: 18,
+          background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))',
+          borderColor: 'oklch(0.82 0.17 75 / 0.3)',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: 10 }}>
             <div>
-              <div style={{ fontFamily: 'var(--f-serif)', fontWeight: 500, fontSize: 16, lineHeight: 1.2 }}>{title}</div>
-              <div className="mono caps" style={{ fontSize: 10, opacity: 0.85, marginTop: 4, letterSpacing: '0.08em' }}>
-                {count} {tr('knowledge.articles', 'artículos')}{cat.has3d ? ' · 3D' : ''}
+              <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>
+                {tr('knowledge.progress', 'Progreso')}
+              </div>
+              <div style={{ fontFamily: 'var(--f-serif)', fontSize: 28, lineHeight: 1 }}>
+                {read} <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ {total} {tr('knowledge.articles', 'artículos')}</span>
               </div>
             </div>
-          </button>
-        );
-      })}
+            <div style={{ fontSize: 42 }}>📚</div>
+          </div>
+          <div style={{ height: 6, borderRadius: 99, background: 'var(--bg-3)', overflow: 'hidden' }}>
+            <div style={{ width: pct + '%', height: '100%', background: 'var(--amber)', transition: 'width .3s' }} />
+          </div>
+          <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 10, lineHeight: 1.4 }}>
+            {tr('knowledge.hub_subtitle', 'Enciclopedia de la coctelería: técnicas, destilados, historia y cultura.')}
+          </div>
+        </div>
+      </div>
+
+      {/* Category list — LevelCard style, 1 columna */}
+      <div style={{ padding: '0 24px', display: 'grid', gap: 12, maxWidth: 720, margin: '0 auto' }}>
+        {categories.map((cat) => {
+          const title = tr('wiki.cat.' + cat.id, cat.id);
+          const desc  = tr('wiki.cat.' + cat.id + '.desc', '');
+          const count = (cat.articles || []).length;
+          const accent = accentOf(cat.id);
+          return (
+            <button key={cat.id}
+              onClick={() => onOpen(cat)}
+              className="card"
+              style={{
+                padding: 18, textAlign: 'left', cursor: 'pointer',
+                display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center',
+                borderLeft: `4px solid var(--${accent})`,
+              }}>
+              <div style={{
+                width: 52, height: 52, borderRadius: 14,
+                background: `linear-gradient(135deg, var(--${accent}), oklch(0.3 0.05 60))`,
+                display: 'grid', placeItems: 'center',
+                fontSize: 26,
+                boxShadow: `0 8px 20px var(--${accent}-glow)`,
+              }}>{cat.icon}</div>
+              <div>
+                <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginBottom: 2 }}>
+                  {count} {tr('knowledge.articles', 'artículos')}
+                </div>
+                <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 3 }}>{title}</div>
+                {desc && (
+                  <div style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.3 }}>{desc}</div>
+                )}
+              </div>
+              <Icon name="arrowR" size={16} />
+            </button>
+          );
+        })}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 const CategoryView = ({ tr, cat, onBack, onOpenArticle, onOpenFicha, onOpen3D }) => {
   if (!cat) return null;
 
