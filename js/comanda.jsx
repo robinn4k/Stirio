@@ -147,6 +147,7 @@ const ComandaScreen = ({ onBack }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const closeGame = () => { ccExitFullscreen(); onBack && onBack(); };
   const [phase, setPhase] = useState('menu'); // menu | playing | done
+  const [timed, setTimed] = useState(true);   // 90s countdown vs free-play
   const [round, setRound] = useState(null);
   const [fb, setFb] = useState(null); // { kind: 'ok'|'bad', text, at }
   const [shakeFx, setShakeFx] = useState(0); // timestamp to trigger shake animation
@@ -167,7 +168,9 @@ const ComandaScreen = ({ onBack }) => {
     setRound({
       pool,
       idx: 0,
+      timed,
       timeLeft: CC_DURATION,
+      elapsed: 0,
       served: 0,
       perfect: 0,
       wrong: 0,
@@ -184,13 +187,17 @@ const ComandaScreen = ({ onBack }) => {
     setPhase('playing');
   };
 
-  // Game loop — just the countdown; all state changes happen in handlers
+  // Game loop — countdown or elapsed tracker depending on mode
   useEffect(() => {
     if (phase !== 'playing') return;
     const loop = (now) => {
       const elapsed = (now - startAtRef.current) / 1000;
       const remaining = Math.max(0, CC_DURATION - elapsed);
-      setRound(r => (r ? { ...r, timeLeft: remaining } : r));
+      setRound(r => (r ? { ...r, timeLeft: remaining, elapsed } : r));
+      if (!timed) {
+        rafRef.current = requestAnimationFrame(loop);
+        return;
+      }
       if (remaining <= 0) {
         try { window.hapticTap && window.hapticTap('win'); } catch {}
         setPhase('done');
@@ -371,7 +378,9 @@ const ComandaScreen = ({ onBack }) => {
   }, [phase, round]);
 
   // ---------- Render ----------
-  const timeStr = round ? `${Math.max(0, Math.ceil(round.timeLeft))}s` : `${CC_DURATION}s`;
+  const timeStr = round
+    ? (round.timed === false ? `${Math.floor(round.elapsed || 0)}s` : `${Math.max(0, Math.ceil(round.timeLeft))}s`)
+    : `${CC_DURATION}s`;
 
   return (
     <div className="cc-root">
@@ -391,8 +400,24 @@ const ComandaScreen = ({ onBack }) => {
               {tr('comanda.header', 'Comanda Chase')}
             </h1>
             <p style={{ color: 'var(--ink-2)', lineHeight: 1.5, marginBottom: 18 }}>
-              {tr('comanda.menu_body', 'Entran tickets. Toca las botellas, elige shake o stir, añade guarnición y sirve. 90 segundos.')}
+              {tr('comanda.menu_body', 'Entran tickets. Toca las botellas, elige shake o stir, añade guarnición y sirve.')}
             </p>
+            <div className="cc-mode-toggle" role="group" aria-label="Modo">
+              <button
+                type="button"
+                className={`cc-mode-opt ${timed ? 'on' : ''}`}
+                onClick={() => setTimed(true)}
+              >
+                ⏱ {tr('comanda.mode_timed', 'Con tiempo · 90s')}
+              </button>
+              <button
+                type="button"
+                className={`cc-mode-opt ${!timed ? 'on' : ''}`}
+                onClick={() => setTimed(false)}
+              >
+                ∞ {tr('comanda.mode_free', 'Sin tiempo')}
+              </button>
+            </div>
             <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
               <button className="btn" onClick={closeGame}>{tr('ui.back', 'Salir')}</button>
               <button className="btn primary" onClick={start}>
@@ -425,8 +450,8 @@ const ComandaScreen = ({ onBack }) => {
             </div>
             <div className="cc-hud-stats">
               <div className="cc-stat">
-                <div className="cc-stat-label">{tr('comanda.timer', 'Tiempo')}</div>
-                <div className={`cc-stat-val ${round.timeLeft < 15 ? 'cc-urgent' : ''}`}>{timeStr}</div>
+                <div className="cc-stat-label">{round.timed === false ? tr('comanda.mode_free', 'Sin tiempo') : tr('comanda.timer', 'Tiempo')}</div>
+                <div className={`cc-stat-val ${round.timed !== false && round.timeLeft < 15 ? 'cc-urgent' : ''}`}>{timeStr}</div>
               </div>
               <div className="cc-stat">
                 <div className="cc-stat-label">{tr('comanda.served', 'Servidos')}</div>
@@ -530,6 +555,17 @@ const ComandaScreen = ({ onBack }) => {
                   ✓ {tr('comanda.serve', 'Servir')}
                 </button>
               </div>
+              {round.timed === false && (
+                <button
+                  className="cc-end-shift"
+                  onClick={() => {
+                    try { window.hapticTap && window.hapticTap('win'); } catch {}
+                    setPhase('done');
+                  }}
+                >
+                  {tr('comanda.end_shift', 'Terminar turno')}
+                </button>
+              )}
             </div>
 
             {/* Right: bottles + garnish */}
@@ -616,6 +652,11 @@ const CC_CSS = `
   position: absolute; inset: 0;
   display: grid; place-items: center;
   padding: 24px;
+  background: var(--bg-1);
+  background-image:
+    radial-gradient(circle at 20% 10%, oklch(0.28 0.08 290 / 0.55), transparent 50%),
+    radial-gradient(circle at 80% 90%, oklch(0.28 0.12 35 / 0.4), transparent 55%);
+  overflow: hidden;
 }
 .cc-menu-card {
   max-width: 560px; width: 100%;
@@ -744,6 +785,56 @@ const CC_CSS = `
   background: oklch(0.82 0.17 75 / 0.08);
   border: 1px solid oklch(0.82 0.17 75 / 0.18);
   border-radius: 10px;
+}
+
+/* Mode toggle on the menu card (Con tiempo / Sin tiempo) */
+.cc-mode-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 4px;
+  margin: 0 0 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+}
+.cc-mode-opt {
+  padding: 10px 8px;
+  border: none;
+  background: transparent;
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.cc-mode-opt:hover { color: var(--ink-1); }
+.cc-mode-opt.on {
+  background: linear-gradient(180deg, oklch(0.78 0.17 85 / 0.35), oklch(0.55 0.18 70 / 0.25));
+  color: oklch(0.92 0.1 85);
+  box-shadow: 0 2px 8px oklch(0.7 0.15 80 / 0.25), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* Terminar turno button — shown only in free mode */
+.cc-end-shift {
+  margin-top: 10px;
+  padding: 10px 14px;
+  width: 100%;
+  background: transparent;
+  border: 1px dashed rgba(255,255,255,0.18);
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.cc-end-shift:hover {
+  background: rgba(255,255,255,0.04);
+  color: var(--ink-1);
+  border-style: solid;
+  border-color: rgba(255,255,255,0.3);
 }
 
 /* Short-viewport tuning: iOS Safari in landscape leaves ~300-360px of
