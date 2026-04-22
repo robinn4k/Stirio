@@ -497,10 +497,11 @@ const App = () => {
           ? (window.buildAcademyLesson && window.buildAcademyLesson(level, nextItem.index))
           : (window.buildAcademyPractice && window.buildAcademyPractice(level, nextItem.roundId));
         if (nextLesson) {
-          setActiveLesson(null);
-          // Defer so React unmounts the results screen before we push the next
-          // lesson in — avoids a flash of the old LessonResults contents.
-          setTimeout(() => pickLesson(nextLesson), 0);
+          // Replace activeLesson directly (not via null + setTimeout) so React
+          // swaps LessonPlayer in a single commit. The LessonPlayer's
+          // `key={lesson.id}` forces a clean remount, and the old
+          // LessonResults can't linger above the new intro as a ghost overlay.
+          pickLesson(nextLesson);
           return;
         }
       }
