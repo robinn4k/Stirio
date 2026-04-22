@@ -47,4 +47,4 @@ rules, how to add new content, and the git workflow.
 
 ## License
 
-See [COPYING](COPYING).
+All Rights Reserved. See [LICENSE](LICENSE).
