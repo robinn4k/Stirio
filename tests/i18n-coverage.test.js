@@ -17,6 +17,14 @@ const LANGS = ['es', 'en', 'fr', 'pt', 'de'];
 // matching any of these are skipped by the parity checks.
 const PARITY_EXCLUDE_PREFIXES = [
   'wiki.art.liqueurs.', // tracked for follow-up PR
+  // Historia y Conocimiento hub (PR #135) ships ES-only with t(key, fb).
+  // Translations to en/fr/pt/de are tracked for a follow-up PR.
+  'knowledge.',
+  'wiki.art.history.timeline.description',
+  'wiki.art.history.golden-age',
+  'wiki.art.history.cocktail-renaissance',
+  'wiki.art.history.legendary-bars',
+  'wiki.art.history.molecular-mixology',
 ];
 
 // Keys referenced from code that are known to be missing from i18n/*.json.
@@ -32,6 +40,11 @@ const KNOWN_MISSING_KEYS = new Set([
   'profile.account', 'profile.guest',
   'toast.achievement_unlocked', 'toast.level_up', 'toast.level_up_body',
   'toast.name_saved',
+  // Historia y Conocimiento hub (PR #135) — ES-only, translations to follow.
+  'knowledge.back', 'knowledge.section_categories', 'knowledge.hub_title',
+  'knowledge.hub_subtitle', 'knowledge.articles', 'knowledge.view_3d',
+  'knowledge.section_timeline', 'knowledge.section_people',
+  'knowledge.section_bars', 'knowledge.section_cocktails',
 ]);
 
 function loadLang(lang) {
