@@ -1,21 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Dark app background -->
-  <rect width="512" height="512" rx="80" ry="80" fill="#0d0508"/>
-  <!-- Glass bowl (filled, semi-transparent) -->
-  <path d="M 120 130 L 392 130 L 256 308 Z" fill="#c9971c" opacity="0.18"/>
-  <!-- Glass rim (top line) -->
-  <line x1="120" y1="130" x2="392" y2="130" stroke="#c9971c" stroke-width="18" stroke-linecap="round"/>
-  <!-- Left edge -->
-  <line x1="120" y1="130" x2="256" y2="308" stroke="#c9971c" stroke-width="18" stroke-linecap="round"/>
-  <!-- Right edge -->
-  <line x1="392" y1="130" x2="256" y2="308" stroke="#c9971c" stroke-width="18" stroke-linecap="round"/>
-  <!-- Stem -->
-  <line x1="256" y1="308" x2="256" y2="390" stroke="#c9971c" stroke-width="18" stroke-linecap="round"/>
-  <!-- Base -->
-  <line x1="188" y1="398" x2="324" y2="398" stroke="#c9971c" stroke-width="20" stroke-linecap="round"/>
-  <!-- Olive pick -->
-  <line x1="330" y1="130" x2="302" y2="182" stroke="#c9971c" stroke-width="8" stroke-linecap="round"/>
-  <!-- Olive -->
-  <circle cx="296" cy="192" r="17" fill="#c9971c"/>
-  <circle cx="296" cy="192" r="7" fill="#0d0508"/>
+  <title>Stirio — app icon</title>
+  <defs>
+    <!-- Amber glow in the upper-right corner (mirrors the body background in css/style.css) -->
+    <radialGradient id="amberGlow" cx="80%" cy="0%" r="80%">
+      <stop offset="0%"   stop-color="#c9971c" stop-opacity="0.26"/>
+      <stop offset="55%"  stop-color="#c9971c" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0d0508" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Cyan counter-glow in the lower-left for subtle depth -->
+    <radialGradient id="cyanGlow" cx="15%" cy="100%" r="70%">
+      <stop offset="0%"   stop-color="#59a9c0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0d0508" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dotGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+  <!-- Dark rounded background (matches manifest.json theme_color #0d0508) -->
+  <rect width="512" height="512" rx="96" ry="96" fill="#0d0508"/>
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#amberGlow)"/>
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#cyanGlow)"/>
+  <!-- Wordmark: serif "S." echoing the Home wordmark (js/screens.jsx) -->
+  <g transform="translate(0 4)">
+    <!-- Soft halo behind the amber dot -->
+    <circle cx="395" cy="330" r="28" fill="#c9971c" opacity="0.35" filter="url(#dotGlow)"/>
+    <text x="256" y="360"
+          text-anchor="middle"
+          font-family="'Fraunces','Instrument Serif','DejaVu Serif','Liberation Serif','Times New Roman',serif"
+          font-weight="700"
+          font-size="340"
+          letter-spacing="-12"
+          fill="#f6f3ea">S<tspan fill="#c9971c">.</tspan></text>
+  </g>
 </svg>

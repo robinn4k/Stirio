@@ -1146,6 +1146,14 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     const isHost = slot === 'p1';
     const shareInvite = async () => {
       if (!code) return null;
+      // Defensive: wait for translations to finish loading so the shared text
+      // never leaks a raw i18n key (e.g. "duel.invite_text") into the OS
+      // share sheet when the user taps Share right after page load.
+      try {
+        if (window.stLang && typeof window.stLang.preloadAllTranslations === 'function') {
+          await window.stLang.preloadAllTranslations();
+        }
+      } catch {}
       const url = `${window.location.origin}${window.location.pathname}?invite=${encodeURIComponent(code)}`;
       const text = dTrParams('duel.invite_text', { code }, `¡Reto en Stirio! Únete con el código ${code}`);
       const title = dTr('duel.invite_title', 'Te invito a un duelo en Stirio');
