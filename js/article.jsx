@@ -86,6 +86,20 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
 
       {/* Sections */}
       <div style={{ padding: '24px 24px 40px', display: 'grid', gap: 20, maxWidth: 720, margin: '0 auto' }}>
+        {/* Inline 3D model (lazy-loaded). Rendered between the hero and the
+            text sections so it reads like a visual introduction — e.g. the
+            alambique for the Destilación article. */}
+        {current.scene && window.ThreeDSection && (
+          <section>
+            <h2 className="mono caps" style={{
+              color: 'var(--amber)', fontSize: 11, letterSpacing: '0.12em',
+              margin: '0 0 8px',
+            }}>
+              {tr('article.section.3d', 'Modelo 3D')}
+            </h2>
+            <window.ThreeDSection sceneId={current.scene} />
+          </section>
+        )}
         {current.sections.map((s, i) => (
           <section key={i}>
             <h2 className="mono caps" style={{
@@ -100,7 +114,7 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
             }}>{s.text}</p>
           </section>
         ))}
-        {current.sections.length === 0 && (
+        {current.sections.length === 0 && !current.scene && (
           <div className="card" style={{ padding: 20, color: 'var(--ink-2)', textAlign: 'center' }}>
             {tr('wiki.article.empty', 'Pronto añadiremos más contenido para este artículo.')}
           </div>
