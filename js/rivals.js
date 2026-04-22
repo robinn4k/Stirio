@@ -244,9 +244,10 @@ export async function createFriendRoom(uid, name, setup, maxPlayers = 2) {
     status: 'waiting',
     setup,
     maxPlayers,
+    currentRound: 1,
     createdAt: Date.now(),
     players: {
-      p1: { uid, name, score: 0, currentQ: 0, answers: {}, ready: false }
+      p1: { uid, name, score: 0, currentQ: 0, answers: {}, ready: false, rematch: null }
     }
   });
   // Store code → roomId mapping for lookup
@@ -287,7 +288,7 @@ export async function joinByCode(uid, name, code) {
   // Atomic multi-path write (same pattern as submitAnswer)
   const joinedCount = ALL_SLOTS.slice(0, max).filter(s => s === assignedSlot || room.players?.[s]).length;
   const updates = {
-    [`rooms/${roomId}/players/${assignedSlot}`]: { uid, name, score: 0, currentQ: 0, answers: {}, ready: true },
+    [`rooms/${roomId}/players/${assignedSlot}`]: { uid, name, score: 0, currentQ: 0, answers: {}, ready: true, rematch: null },
   };
   if (joinedCount >= max) {
     updates[`rooms/${roomId}/status`] = 'ready';
@@ -319,10 +320,11 @@ export async function joinQueue(uid, name, setup) {
         code: null,
         status: 'playing',
         setup,
+        currentRound: 1,
         createdAt: Date.now(),
         players: {
-          p1: { uid: oppUid, name: opp.name, score: 0, currentQ: 0, answers: {}, ready: true },
-          p2: { uid, name, score: 0, currentQ: 0, answers: {}, ready: true }
+          p1: { uid: oppUid, name: opp.name, score: 0, currentQ: 0, answers: {}, ready: true, rematch: null },
+          p2: { uid, name, score: 0, currentQ: 0, answers: {}, ready: true, rematch: null }
         }
       });
       onDisconnect(p2Ref).update({ disconnected: true });
@@ -426,4 +428,50 @@ export async function leaveRoom(roomId, slot) {
   if (!db) return;
   const { ref, update } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
   await update(ref(db, `rooms/${roomId}/players/${slot}`), { disconnected: true });
+}
+
+// ─── Rematch: per-player vote, host resets when everyone non-disconnected accepts ──
+
+export async function acceptRematch(roomId, slot) {
+  if (!db) return;
+  const { ref, update } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+  await update(ref(db, `rooms/${roomId}/players/${slot}`), { rematch: 'accept' });
+}
+
+export async function declineRematch(roomId, slot) {
+  if (!db) return;
+  const { ref, update, onDisconnect } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+  // Cancel the onDisconnect handler so the slot isn't re-marked after this
+  try { onDisconnect(ref(db, `rooms/${roomId}/players/${slot}`)).cancel(); } catch {}
+  await update(ref(db, `rooms/${roomId}/players/${slot}`), { rematch: 'leave', disconnected: true });
+}
+
+// Host-only: when all active (non-disconnected) players have accepted, reset
+// room state and kick off a new round with a fresh setup (same selection,
+// newly drawn questions). Returns true if the reset happened.
+export async function resetForRematch(roomId, freshSetup) {
+  if (!db) return false;
+  const { ref, get, update } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
+  const snap = await get(ref(db, `rooms/${roomId}`));
+  if (!snap.exists()) return false;
+  const room = snap.val();
+  const players = room.players || {};
+  const slots = Object.keys(players);
+  const active = slots.filter(s => !players[s].disconnected);
+  if (active.length < 2) return false;
+  if (!active.every(s => players[s].rematch === 'accept')) return false;
+
+  const updates = {
+    [`rooms/${roomId}/status`]: 'playing',
+    [`rooms/${roomId}/currentRound`]: (room.currentRound || 1) + 1,
+  };
+  if (freshSetup) updates[`rooms/${roomId}/setup`] = freshSetup;
+  for (const s of active) {
+    updates[`rooms/${roomId}/players/${s}/score`] = 0;
+    updates[`rooms/${roomId}/players/${s}/currentQ`] = 0;
+    updates[`rooms/${roomId}/players/${s}/answers`] = {};
+    updates[`rooms/${roomId}/players/${s}/rematch`] = null;
+  }
+  await update(ref(db), updates);
+  return true;
 }

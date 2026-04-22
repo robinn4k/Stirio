@@ -649,13 +649,33 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
 // ─────────────────────── RESULTS ───────────────────────
 const MEDALS = ['🥇', '🥈', '🥉'];
 
-const DuelResults = ({ players, mySlot, maxPlayers, onRematch, onExit }) => {
+const DuelResults = ({ players, mySlot, maxPlayers, onRematchAccept, onLeave }) => {
   const slots = ALL_SLOTS.slice(0, maxPlayers);
   const ranked = slots
     .map(s => ({ slot: s, ...(players[s] || { score: 0, name: '?' }) }))
     .sort((a, b) => (b.score || 0) - (a.score || 0));
   const myRank = ranked.findIndex(r => r.slot === mySlot);
   const won = myRank === 0 && (ranked[0]?.score || 0) > 0;
+
+  const me = players[mySlot] || {};
+  const active = slots.filter(s => players[s] && !players[s].disconnected);
+  const iAccepted = me.rematch === 'accept';
+  const iLeft = me.rematch === 'leave';
+  const alone = active.length < 2;
+  const acceptedCount = active.filter(s => players[s].rematch === 'accept').length;
+  const waitingCount = active.length - acceptedCount;
+
+  const rematchLabel = (r) => {
+    if (r.disconnected) return dTr('duel.rematch_state.left', 'Salió');
+    if (r.rematch === 'accept') return dTr('duel.rematch_state.accepted', 'Aceptado ✓');
+    if (r.rematch === 'leave') return dTr('duel.rematch_state.left', 'Salió');
+    return dTr('duel.rematch_state.pending', 'En espera');
+  };
+  const rematchColor = (r) => {
+    if (r.disconnected || r.rematch === 'leave') return 'var(--ink-3)';
+    if (r.rematch === 'accept') return 'oklch(0.7 0.18 145)';
+    return 'var(--ink-2)';
+  };
 
   useEffect(() => {
     if (won) setTimeout(() => confettiBurst(window.innerWidth / 2, window.innerHeight / 3), 200);
@@ -686,15 +706,33 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematch, onExit }) => {
             <div style={{ fontSize: 24, width: 32, textAlign: 'center' }}>{MEDALS[i] || `#${i + 1}`}</div>
             <div style={{ flex: 1 }}>
               <div style={{ fontWeight: 600 }}>{r.name} {r.slot === mySlot && '· Tú'}</div>
-              {r.disconnected && <div className="mono caps" style={{ fontSize: 10, color: 'var(--red)' }}>Desconectado</div>}
+              <div className="mono caps" style={{ fontSize: 10, color: rematchColor(r) }}>{rematchLabel(r)}</div>
             </div>
             <div style={{ fontFamily: 'var(--f-serif)', fontSize: 24, color: 'var(--amber)' }}>{r.score || 0}</div>
           </div>
         ))}
       </div>
+      {alone ? (
+        <div className="card" style={{ padding: 14, textAlign: 'center', marginBottom: 12, color: 'var(--ink-2)', fontSize: 13 }}>
+          {dTr('duel.rematch_alone', 'Todos los demás jugadores salieron.')}
+        </div>
+      ) : iAccepted ? (
+        <div className="card" style={{ padding: 14, textAlign: 'center', marginBottom: 12, color: 'var(--ink-2)', fontSize: 13 }}>
+          {dTrParams('duel.rematch_waiting', { n: waitingCount }, `Esperando a ${waitingCount} jugador(es)…`)}
+        </div>
+      ) : null}
       <div style={{ display: 'flex', gap: 10 }}>
-        <button className="btn" onClick={onExit} style={{ flex: 1 }}>{(window.stUiT ? window.stUiT('ui.back', 'Volver') : 'Volver')}</button>
-        <button className="btn primary" onClick={onRematch} style={{ flex: 2 }}>{dTr('duel.rematch', 'Revancha')}</button>
+        <button className="btn" onClick={onLeave} style={{ flex: 1 }}>{dTr('duel.rematch_leave', 'Salir')}</button>
+        {!alone && (
+          <button
+            className="btn primary"
+            onClick={onRematchAccept}
+            disabled={iAccepted || iLeft}
+            style={{ flex: 2, opacity: iAccepted || iLeft ? 0.6 : 1 }}
+          >
+            {iAccepted ? dTr('duel.rematch_state.accepted', 'Aceptado ✓') : dTr('duel.rematch_accept', 'Aceptar revancha')}
+          </button>
+        )}
       </div>
     </div>
   );
@@ -897,6 +935,8 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
   // Idempotency guard: ensures finishGame() is written exactly once per match
   // even though the listener fires on every RTDB snapshot.
   const finishedTriggeredRef = useRef(false);
+  const rematchTriggeredRef = useRef(false);
+  const lastRoundRef = useRef(1);
 
   const showToast = (msg, type) => setToast({ msg, type });
 
@@ -940,6 +980,8 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     if (uid && window.stRivals) { try { await window.stRivals.leaveQueue(uid); } catch {} }
     setRoomId(null); setCode(''); setSlot('p1'); setRoom(null); setQuestions(null);
     finishedTriggeredRef.current = false;
+    rematchTriggeredRef.current = false;
+    lastRoundRef.current = 1;
     setPhase('menu');
   };
 
@@ -983,7 +1025,34 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
         setQuestions(qs);
         setPhase('playing');
       }
-      if (r.status === 'finished') setPhase('results');
+      if (r.status === 'finished') {
+        setPhase('results');
+        // Host: when all active players have accepted the rematch, reset the
+        // room with a fresh setup. Guard with a ref so we only fire once.
+        const isHost = r.players && r.players.p1?.uid === uid;
+        if (isHost && !rematchTriggeredRef.current) {
+          const active = Object.entries(r.players).filter(([, p]) => p && !p.disconnected);
+          if (active.length >= 2 && active.every(([, p]) => p.rematch === 'accept')) {
+            rematchTriggeredRef.current = true;
+            try {
+              const rounds = window.TRIVIA_ROUNDS || [];
+              const freshSetup = buildDuelSetup(selection, rounds) || r.setup;
+              window.stRivals.resetForRematch(rid, freshSetup)
+                .catch(() => { rematchTriggeredRef.current = false; });
+            } catch { rematchTriggeredRef.current = false; }
+          }
+        }
+      }
+
+      // Rematch round-change: when currentRound advances past what we've
+      // processed, clear local state so questions reload and playing starts.
+      const rnd = r.currentRound || 1;
+      if (rnd > lastRoundRef.current) {
+        lastRoundRef.current = rnd;
+        finishedTriggeredRef.current = false;
+        rematchTriggeredRef.current = false;
+        setQuestions(null);
+      }
     });
     unsubRoomRef.current = unsub;
   };
@@ -1222,8 +1291,13 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
           players={room?.players || {}}
           mySlot={slot}
           maxPlayers={maxPlayers}
-          onRematch={() => { cleanupListeners(); setRoomId(null); setRoom(null); setQuestions(null); finishedTriggeredRef.current = false; setPhase('menu'); }}
-          onExit={returnToMenu}
+          onRematchAccept={() => {
+            try { window.stRivals?.acceptRematch?.(roomId, slot); } catch {}
+          }}
+          onLeave={() => {
+            try { window.stRivals?.declineRematch?.(roomId, slot); } catch {}
+            returnToMenu();
+          }}
         />
         <Toast msg={toast?.msg} type={toast?.type} onClose={() => setToast(null)} />
       </DuelShell>
