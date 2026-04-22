@@ -45,7 +45,7 @@ const IBA_UNFORGETTABLES = [
     color: "#9B8EC4",
     icon: "✈️",
     ingredients: ["45ml Ginebra","15ml Marrasquino","15ml Zumo de Limón","1 barspoon Crème de Violette"],
-    story: 'Creado ca. 1916, su color lila evoca el cielo. La Crème de Violette le da ese tono etéreo que recuerda a las alturas.',
+    story: 'Creado ca. 1916 por Hugo Ensslin, jefe de barra del Hotel Wallick de Nueva York, y publicado en su libro Recipes for Mixed Drinks (1917) con Crème de Violette que le da el tono lila del cielo. Cuando Harry Craddock lo recogió en el Savoy Cocktail Book (1930), omitió la violeta —probablemente porque ya no se encontraba en Londres— y durante décadas se sirvió como un simple gin-marrasquino-limón sin color. El licor de violeta volvió al mercado americano en 2007 (Rothman & Winter) y Aviation recuperó su azul pálido original, convirtiéndose en un emblema del renacimiento del classic cocktail.',
   },
   {
     name: "Between the Sheets",
@@ -111,7 +111,7 @@ const IBA_UNFORGETTABLES = [
     color: "#F5E6CA",
     icon: "🍹",
     ingredients: ["60ml Ron Blanco","20ml Zumo de Lima","2 barspoons Azúcar"],
-    story: 'Nacido en las minas de Daiquirí, Cuba, en 1898. Su perfección reside en el equilibrio entre ron, ácido y dulce.',
+    story: 'Nacido en las minas de Daiquirí (Cuba) en 1898, cuando el ingeniero americano Jennings Cox mezcló el ron local con lima y azúcar para sobrellevar el calor. Llegó a Estados Unidos vía la Marina y se popularizó en los años 20 como antídoto a la Prohibición. En El Floridita de La Habana, Constantino Ribalaigua Vert creó las cuatro variantes oficiales y el Daiquiri nº 3 al estilo frozen; Hemingway hizo suyo el "Papa Doble", doble ron sin azúcar y zumo de pomelo. Su perfección reside en el equilibrio exacto entre ron blanco, lima recién exprimida y sirope simple.',
   },
   {
     name: "Dry Martini",
@@ -122,7 +122,7 @@ const IBA_UNFORGETTABLES = [
     color: "#D5E8D4",
     icon: "🫒",
     ingredients: ["60ml Ginebra","10ml Vermut Seco"],
-    story: 'El rey de los cócteles. La proporción gin/vermut ha variado con cada era: de 2:1 en los 20s a casi solo ginebra hoy.',
+    story: 'El rey de los cócteles, heredero del Martinez de Jerry Thomas (1862) que usaba Old Tom Gin, vermut dulce y maraschino. Alrededor de 1900 la proporción se fue secando: 2:1 gin-vermut en los años 20 (Craddock), 5:1 en los 60, y llegaron a servirse "Montgomerys" con sólo un susurro de vermut. Harry Craddock lo codificó en el Savoy Cocktail Book (1930), Hemingway le pidió al Ritz parisino su Montgomery 15:1, y la Dirty Martini (con salmuera de aceituna) se hizo popular en los 80. Stirred, not shaken — aunque James Bond diría lo contrario.',
   },
   {
     name: "Gin Fizz",
@@ -166,7 +166,7 @@ const IBA_UNFORGETTABLES = [
     color: "#7CB342",
     icon: "🌿",
     ingredients: ["22.5ml Ginebra","22.5ml Chartreuse Verde","22.5ml Marrasquino","22.5ml Zumo de Lima"],
-    story: 'Creado durante la Prohibición en el Detroit Athletic Club. Redescubierto en 2004 por Murray Stenson en Seattle.',
+    story: 'Creado durante la Prohibición en el Detroit Athletic Club y publicado en Bottoms Up (1951) de Ted Saucier. Fue un cóctel olvidado durante décadas hasta que Murray Stenson lo redescubrió en 2004 en el Zig Zag Café de Seattle y lo puso en la carta: el boca a boca entre bartenders lo convirtió en uno de los cócteles-firma del renacimiento craft. Su fórmula 1:1:1:1 (gin, Chartreuse verde, marrasquino, lima) es matemáticamente perfecta y demuestra que un cóctel a partes iguales puede ser complejo sin ser dulzón.',
   },
   {
     name: "Manhattan",
@@ -177,7 +177,7 @@ const IBA_UNFORGETTABLES = [
     color: "#8E44AD",
     icon: "🍒",
     ingredients: ["50ml Rye Whiskey","20ml Vermut Rojo Dulce","1 dash Angostura Bitters"],
-    story: 'Creado en el Manhattan Club de Nueva York ca. 1880. Una de las bases de la coctelería clásica americana.',
+    story: 'Creado en el Manhattan Club de Nueva York ca. 1880, supuestamente para un banquete en honor a Samuel Tilden organizado por Lady Randolph Churchill (madre de Winston). La fórmula original pedía rye whiskey, vermut italiano a partes iguales y Angostura; durante la Prohibición se sustituyó a menudo por bourbon canadiense. Es, junto con el Old Fashioned, la piedra angular de la coctelería clásica americana y el arquetipo del "whiskey + vermut + bitters" que engendraría luego el Rob Roy y el Brooklyn.',
   },
   {
     name: "Martinez",
@@ -221,7 +221,7 @@ const IBA_UNFORGETTABLES = [
     color: "#C0392B",
     icon: "🍊",
     ingredients: ["30ml Ginebra","30ml Campari","30ml Vermut Rojo Dulce"],
-    story: 'Creado en Florencia en 1919. El Conde Negroni pidió que sustituyeran la soda de su Americano por ginebra.',
+    story: 'Creado en el Caffè Casoni de Florencia en 1919, cuando el Conde Camillo Negroni pidió a Fosco Scarselli que reforzara su Americano reemplazando la soda por ginebra. La proporción 1:1:1 (gin, Campari, vermut rojo) y la rodaja de naranja se volvieron canónicas. Durante décadas fue un secreto italiano hasta que Gary Regan lo rescató en su columna del San Francisco Chronicle a finales de los 90. Desde 2013 es el cóctel clásico más pedido del mundo y protagoniza la Negroni Week, una iniciativa benéfica global.',
   },
   {
     name: "Old Fashioned",
@@ -232,7 +232,7 @@ const IBA_UNFORGETTABLES = [
     color: "#D4680A",
     icon: "🥃",
     ingredients: ["45ml Bourbon o Rye Whiskey","1 terrón de azúcar","Angostura Bitters","Splash de agua"],
-    story: 'El cóctel más antiguo conocido. La receta original era simplemente "espíritu, azúcar, agua y bitters".',
+    story: 'El cóctel más antiguo conocido y la definición misma de la palabra: cuando en 1806 The Balance and Columbian Repository definió "cocktail" lo hizo como "un licor estimulante de espíritu, azúcar, agua y bitters", literalmente un Old Fashioned. Popular desde la Edad Dorada con el Pendennis Club de Louisville (1881) reclamando su creación, el cóctel resistió la Prohibición y volvió en 1934 al escritorio de los bartenders hoteleros. En los 50 se le añadió fruta macerada (cereza, naranja) al estilo \"Wisconsin\"; Dale DeGroff lo devolvió a su forma clásica en los 80 con sólo piel de cítrico.',
   },
   {
     name: "Paradise",
@@ -298,7 +298,7 @@ const IBA_UNFORGETTABLES = [
     color: "#DAA520",
     icon: "⚜️",
     ingredients: ["50ml Cognac o Rye Whiskey","10ml Absenta","1 terrón de azúcar","4 dash Peychaud's Bitters"],
-    story: 'Cóctel oficial de Nueva Orleans. Nació ca. 1850 en el Sazerac Coffee House con cognac Sazerac-de-Forge et Fils.',
+    story: 'Cóctel oficial de Nueva Orleans. Nació ca. 1850 en el Sazerac Coffee House con cognac Sazerac-de-Forge et Fils y los bitters Peychaud creados por Antoine Amédée Peychaud, un boticario criollo. Tras la plaga de filoxera que devastó los viñedos franceses, la base pasó de cognac a rye whiskey americano. Su firma es el enjuague de absenta que impregna el vaso y desaparece antes de servir, dejando sólo un aroma anisado que abraza al whiskey.',
   },
   {
     name: "Sidecar",
@@ -699,7 +699,7 @@ const IBA_CONTEMPORARY = [
     color: "#D5D5C0",
     icon: "🕵️",
     ingredients: ["45ml Ginebra","15ml Vodka","7.5ml Lillet Blanc"],
-    story: 'Creado por Ian Fleming para James Bond en "Casino Royale" (1953). Nombrado por Vesper Lynd, la chica Bond.',
+    story: 'Inventado por Ian Fleming para la primera novela de James Bond, Casino Royale (1953), en la escena en la que 007 lo pide "three measures of Gordon\'s, one of vodka, half a measure of Kina Lillet, shake it very well until it\'s ice-cold" y lo bautiza en honor a Vesper Lynd, la agente doble que rompería su corazón. El Kina Lillet original (con quinina) dejó de producirse en 1986; hoy se sustituye por Lillet Blanc o Cocchi Americano para aproximar el amargor cinchona. Es el único cóctel Martini canónicamente agitado, no removido, un guiño deliberado a la falta de etiqueta de Bond.',
   },
   {
     name: "Zombie",
@@ -891,7 +891,7 @@ const IBA_NEW_ERA = [
     color: "#C4A35A",
     icon: "💊",
     ingredients: ["60ml Scotch Blended","7.5ml Lagavulin 16","22.5ml Zumo de Limón","22.5ml Jarabe de Miel","Jengibre fresco"],
-    story: 'Creado por Sam Ross en el Milk & Honey de Nueva York en 2005. El float de Lagavulin ahumado es su firma. Un clásico moderno.',
+    story: 'Creado por Sam Ross en el Milk & Honey de Sasha Petraske (Nueva York) en 2005, cuando el speakeasy de la Lower East Side definía la ortodoxia del craft cocktail. Ross combinó blended Scotch, zumo de limón, sirope de jengibre y miel, y coronó con un float de Islay ahumado (Lagavulin 16 o similar) que se bebe antes que el resto. Es el primer cóctel del renacimiento que ha entrado en el canon: considerado un clásico moderno por la IBA, ha inspirado una familia entera de variantes (Paper Plane, Gold Rush, Kentucky Penicillin).',
   },
   {
     name: "Russian Spring Punch",
