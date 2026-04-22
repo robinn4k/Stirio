@@ -904,7 +904,11 @@ const CC_CSS = `
   .cc-line { padding: 8px 12px; font-size: 13px; border-radius: 10px; }
   .cc-ticket-garnish { margin-top: 14px; padding-top: 12px; font-size: 13px; }
 
-  .cc-vessel-wrap { min-height: 200px; padding: 10px 0; }
+  /* In the mobile single-column layout the parent .cc-grid drives scroll.
+     Reset the desktop `flex: 1` on .cc-vessel-wrap so it sizes to its content
+     and the action buttons (Shake/Stir/Clear/Serve) stay immediately below
+     the vessel instead of being pushed out of view. */
+  .cc-vessel-wrap { flex: 0 0 auto; min-height: 200px; padding: 10px 0; }
   .cc-vessel { width: 120px; height: 168px; }
 
   .cc-actions { grid-template-columns: repeat(4, 1fr); gap: 10px; }
