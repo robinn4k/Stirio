@@ -312,7 +312,14 @@ const App = () => {
         const currentAuthUser = window.stAuth.getCurrentUser?.();
         const fallbackUser = !redirectUser && pendingStash && currentAuthUser && !currentAuthUser.isGuest && currentAuthUser.provider !== 'guest'
           ? currentAuthUser : null;
-        const userForOnboarding = redirectUser || fallbackUser;
+        // Last-resort safety net: wait up to 10s for Firebase's auth state
+        // to emit a real (non-anonymous) user. Covers browsers / PWAs where
+        // getRedirectResult returns null but the redirect round-trip DID
+        // persist a Google session that onAuthStateChanged surfaces async.
+        const resilientUser = (redirectUser || fallbackUser) ? null : (
+          pendingStash ? await window.stAuth.waitForRealAuthUser?.(10000) : null
+        );
+        const userForOnboarding = redirectUser || fallbackUser || resilientUser;
         if (userForOnboarding && pendingStash) {
           try {
             await finishOnboarding({

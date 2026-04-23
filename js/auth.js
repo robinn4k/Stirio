@@ -50,33 +50,39 @@ async function initFirebase() {
     auth = getAuth(app);
     db = getFirestore(app);
 
-    // Wait for onAuthStateChanged to detect persisted sessions (with timeout so UI never hangs)
-    if (!currentUser) {
-      await new Promise(resolve => {
-        let settled = false;
-        const settle = () => { if (!settled) { settled = true; resolve(); } };
-        const timeoutId = setTimeout(() => {
-          console.warn(`initFirebase: onAuthStateChanged timed out after ${AUTH_INIT_TIMEOUT_MS}ms`);
-          settle();
-        }, AUTH_INIT_TIMEOUT_MS);
-        const unsub = onAuthStateChanged(auth, (firebaseUser) => {
-          clearTimeout(timeoutId);
-          unsub();
-          if (firebaseUser && !currentUser) {
-            currentUser = {
-              uid: firebaseUser.uid,
-              name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || t('auth.google_player'),
-              email: firebaseUser.email,
-              photo: firebaseUser.photoURL,
-              provider: 'google',
-              isGuest: false
-            };
-            saveUserLocal(currentUser);
-          }
-          settle();
-        });
+    // Always wait for onAuthStateChanged to give Firebase the authoritative
+    // read on the persisted session — even when restoreSession() already
+    // hydrated `currentUser` from localStorage. A stale guest (or email)
+    // entry must not shadow a real Firebase user, otherwise the
+    // post-signInWithGoogleRedirect bootstrap picks up the guest and skips
+    // onboarding completion, trapping the user at the onboarding start.
+    await new Promise(resolve => {
+      let settled = false;
+      const settle = () => { if (!settled) { settled = true; resolve(); } };
+      const timeoutId = setTimeout(() => {
+        console.warn(`initFirebase: onAuthStateChanged timed out after ${AUTH_INIT_TIMEOUT_MS}ms`);
+        settle();
+      }, AUTH_INIT_TIMEOUT_MS);
+      const unsub = onAuthStateChanged(auth, (firebaseUser) => {
+        clearTimeout(timeoutId);
+        unsub();
+        if (firebaseUser && !firebaseUser.isAnonymous) {
+          // Firebase says this tab is signed in as a real user (Google / email).
+          // Overwrite any stale guest/email snapshot from localStorage so the
+          // rest of the app reads the authoritative uid + provider.
+          currentUser = {
+            uid: firebaseUser.uid,
+            name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || t('auth.google_player'),
+            email: firebaseUser.email,
+            photo: firebaseUser.photoURL,
+            provider: firebaseUser.providerData?.[0]?.providerId === 'password' ? 'email' : 'google',
+            isGuest: false
+          };
+          saveUserLocal(currentUser);
+        }
+        settle();
       });
-    }
+    });
 
     // Pick up any signed-in user returning from signInWithGoogleRedirect.
     // getRedirectResult resolves to null when this boot wasn't triggered by
@@ -229,6 +235,41 @@ function consumePendingRedirectUser() {
   const u = pendingRedirectUser;
   pendingRedirectUser = null;
   return u;
+}
+
+/**
+ * Wait for Firebase's onAuthStateChanged to confirm a non-anonymous user
+ * (Google / email). Resolves with the snapshot normalized to our shape, or
+ * null on timeout. Used as a post-redirect safety net: getRedirectResult
+ * can return null on some browsers (iOS PWA, cross-origin auth handler),
+ * but the persisted auth state still eventually fires the real user.
+ */
+function waitForRealAuthUser(maxMs = 10000) {
+  return new Promise(resolve => {
+    if (!auth || !authMod) return resolve(null);
+    const { onAuthStateChanged } = authMod;
+    let settled = false;
+    const finish = (u) => { if (!settled) { settled = true; resolve(u); } };
+    const timeoutId = setTimeout(() => finish(null), maxMs);
+    const unsub = onAuthStateChanged(auth, (firebaseUser) => {
+      if (!firebaseUser || firebaseUser.isAnonymous) return; // keep waiting
+      clearTimeout(timeoutId);
+      unsub();
+      const snapshot = {
+        uid: firebaseUser.uid,
+        name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || t('auth.google_player'),
+        email: firebaseUser.email,
+        photo: firebaseUser.photoURL,
+        provider: firebaseUser.providerData?.[0]?.providerId === 'password' ? 'email' : 'google',
+        isGuest: false,
+      };
+      // Reconcile module-level currentUser so later getCurrentUser() reads
+      // the authoritative snapshot instead of a stale restored session.
+      currentUser = snapshot;
+      saveUserLocal(snapshot);
+      finish(snapshot);
+    });
+  });
 }
 
 // ─── Registro con email + contraseña ─────────────────────────
@@ -500,6 +541,7 @@ export {
   signInWithGoogle,
   signInWithGoogleRedirect,
   consumePendingRedirectUser,
+  waitForRealAuthUser,
   signUpWithEmail,
   signInWithEmail,
   sendPasswordReset,
