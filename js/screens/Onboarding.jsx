@@ -348,17 +348,17 @@ const Onboarding = ({ onDone }) => {
     return hint ? `${base} (${hint})` : base;
   };
 
-  // Popup-first, redirect-fallback. Popup keeps the Onboarding component
-  // mounted and returns the user synchronously via postMessage — no redirect
-  // round-trip, no reliance on getRedirectResult, no localStorage stash
-  // recovery. It's the most reliable path on desktop browsers, and the SW
-  // fix in v10.79+ means signInWithPopup no longer hits auth/internal-error.
+  // Three-tier Google sign-in strategy:
+  //   1. GIS (Google Identity Services) — modern flow, works with third-party
+  //      cookies blocked. Returns an ID token via callback; we exchange it
+  //      for a Firebase session via signInWithCredential. No popup/redirect.
+  //   2. signInWithPopup — fallback when GIS isn't configured / script not
+  //      loaded. Works on desktop with popups allowed.
+  //   3. signInWithRedirect — last-resort fallback when popup is blocked
+  //      (installed iOS PWA, popup-blocker envs).
   //
-  // We still stash the onboarding answers before trying popup: if the
-  // browser blocks popups (or we're in an environment where popup isn't
-  // supported, e.g. installed iOS PWA), we fall through to
-  // signInWithGoogleRedirect and app.jsx picks up the pending stash on
-  // return via getRedirectResult.
+  // The pending-onboarding stash is written once up-front; popup/redirect
+  // paths need it on return, GIS path removes it after successful sign-in.
   const handleGoogle = () => {
     setAuthError(null);
     if (!window.stAuth || !window.stAuth.isFirebaseReady?.()) {
@@ -372,40 +372,55 @@ const Onboarding = ({ onDone }) => {
       }));
     } catch {}
 
-    // Sync call inside the user-gesture tick so browsers don't block the popup.
-    window.stAuth.signInWithGoogle()
-      .then((user) => {
-        try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
-        setAuthMode('google');
-        setGoogleUser(user);
-        setName(user.name || name);
-        submit({ authMode: 'google', googleUser: user, name: user.name || name });
-      })
-      .catch((e) => {
-        const code = e?.code || '';
-        const fallbackCodes = new Set([
-          'auth/popup-blocked',
-          'auth/popup-closed-by-user',
-          'auth/cancelled-popup-request',
-          'auth/operation-not-supported-in-this-environment',
-          'auth/internal-error',
-        ]);
-        if (fallbackCodes.has(code)) {
-          // Popup not viable — fall back to redirect. The stash in
-          // localStorage lets app.jsx complete onboarding on return.
-          window.stAuth.signInWithGoogleRedirect().catch((redirectErr) => {
-            console.warn('[auth] google redirect fallback', redirectErr);
-            try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
-            setAuthError(googleErrorMessage(redirectErr));
-            setAuthLoading(false);
-          });
-          return;
-        }
-        console.warn('[auth] google popup', e);
-        try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
-        setAuthError(googleErrorMessage(e));
-        setAuthLoading(false);
-      });
+    const completeWithUser = (user) => {
+      try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+      setAuthMode('google');
+      setGoogleUser(user);
+      setName(user.name || name);
+      submit({ authMode: 'google', googleUser: user, name: user.name || name });
+    };
+
+    const fallbackToPopup = () => {
+      // Sync call inside the user-gesture tick so browsers don't block the popup.
+      window.stAuth.signInWithGoogle()
+        .then(completeWithUser)
+        .catch((e) => {
+          const code = e?.code || '';
+          const redirectCodes = new Set([
+            'auth/popup-blocked',
+            'auth/popup-closed-by-user',
+            'auth/cancelled-popup-request',
+            'auth/operation-not-supported-in-this-environment',
+            'auth/internal-error',
+          ]);
+          if (redirectCodes.has(code)) {
+            window.stAuth.signInWithGoogleRedirect().catch((redirectErr) => {
+              console.warn('[auth] google redirect fallback', redirectErr);
+              try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+              setAuthError(googleErrorMessage(redirectErr));
+              setAuthLoading(false);
+            });
+            return;
+          }
+          console.warn('[auth] google popup', e);
+          try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+          setAuthError(googleErrorMessage(e));
+          setAuthLoading(false);
+        });
+    };
+
+    // Try GIS first when configured + script available. Otherwise skip
+    // straight to popup/redirect.
+    if (window.stAuth.isGISReady?.()) {
+      window.stAuth.signInWithGoogleGIS()
+        .then(completeWithUser)
+        .catch((e) => {
+          console.warn('[auth] GIS failed, falling back to popup', e?.code || e);
+          fallbackToPopup();
+        });
+    } else {
+      fallbackToPopup();
+    }
   };
 
   const handleGuest = () => {
