@@ -290,26 +290,48 @@ const App = () => {
         // Onboarding.handleGoogle and complete onboarding here — the
         // Onboarding component unmounted during the redirect, so we skip
         // back to it by driving finishOnboarding directly.
+        //
+        // Fallback path: a SW `controllerchange` reload (triggered when a new
+        // STATIC_CACHE_VERSION claims the page) can preempt the bootstrap
+        // before finishOnboarding resolves. On the reload, getRedirectResult
+        // already consumed the round-trip so `redirectUser` is null — but the
+        // Firebase session is persisted and currentUser is signed-in Google.
+        // When the pending stash still exists we can complete onboarding from
+        // that state. The stash is kept until finishOnboarding actually
+        // resolves so an interrupted attempt can retry on the next boot.
         const redirectUser = window.stAuth.consumePendingRedirectUser?.();
-        if (redirectUser) {
-          let pending = null;
-          try { pending = JSON.parse(localStorage.getItem('stirio::onboarding::pending') || 'null'); } catch {}
+        let pendingStash = null;
+        try { pendingStash = JSON.parse(localStorage.getItem('stirio::onboarding::pending') || 'null'); } catch {}
+        // Stale stashes (older than 30 min) are ignored: the user likely
+        // abandoned that flow and a fresh click would have overwritten it.
+        const STASH_TTL_MS = 30 * 60 * 1000;
+        if (pendingStash && (Date.now() - (pendingStash.at || 0) > STASH_TTL_MS)) {
           try { localStorage.removeItem('stirio::onboarding::pending'); } catch {}
-          if (pending) {
+          pendingStash = null;
+        }
+        const currentAuthUser = window.stAuth.getCurrentUser?.();
+        const fallbackUser = !redirectUser && pendingStash && currentAuthUser && !currentAuthUser.isGuest && currentAuthUser.provider !== 'guest'
+          ? currentAuthUser : null;
+        const userForOnboarding = redirectUser || fallbackUser;
+        if (userForOnboarding && pendingStash) {
+          try {
             await finishOnboarding({
-              name: redirectUser.name || pending.name || '',
-              email: redirectUser.email || null,
-              photoURL: redirectUser.photo || null,
-              uid: redirectUser.uid,
+              name: userForOnboarding.name || pendingStash.name || '',
+              email: userForOnboarding.email || null,
+              photoURL: userForOnboarding.photo || null,
+              uid: userForOnboarding.uid,
               authMode: 'google',
               onboarding: {
-                difficulty: pending.level || 'skip',
-                language: pending.language,
-                alcohol: pending.alcohol || 'regular',
-                favSpirit: pending.favSpirit || null,
+                difficulty: pendingStash.level || 'skip',
+                language: pendingStash.language,
+                alcohol: pendingStash.alcohol || 'regular',
+                favSpirit: pendingStash.favSpirit || null,
               },
             });
-          }
+            // Only clear the stash after a successful completion so an
+            // interrupted attempt (SW reload, crash) can retry.
+            try { localStorage.removeItem('stirio::onboarding::pending'); } catch {}
+          } catch (e) { console.warn('[auth] finishOnboarding post-redirect:', e); }
         }
         const user = window.stAuth.getCurrentUser() || local;
         if (cancelled || !user) return;
