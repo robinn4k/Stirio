@@ -65,7 +65,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.73';</script>
+  <script>window.STIRIO_VERSION = '10.82';</script>
 
   <!-- Data layer (plain scripts — sets window.StirioRepo and game globals) -->
   <script src="js/repo-data.js"></script>
@@ -133,13 +133,24 @@
       let reloaded = false;
       navigator.serviceWorker.addEventListener('controllerchange', () => {
         if (reloaded) return;
-        // Only reload if there was already a controller — skips the very
-        // first SW install on a fresh visit.
         reloaded = true;
         window.location.reload();
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(() => {});
+        navigator.serviceWorker.register('sw.js').then((reg) => {
+          // Force an immediate script re-fetch so browsers don't serve the
+          // cached sw.js for up to 24h. Without this, a user with an old SW
+          // stays stuck on old assets until the browser decides to check.
+          try { reg.update(); } catch {}
+        }).catch(() => {});
+      });
+      // Re-check on tab focus too — picks up new SW versions quickly when
+      // the user returns to the app after a deploy.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState !== 'visible') return;
+        navigator.serviceWorker.getRegistration().then((reg) => {
+          if (reg) { try { reg.update(); } catch {} }
+        }).catch(() => {});
       });
     }
   </script>
