@@ -16,16 +16,19 @@ const LANGS = ['es', 'en', 'fr', 'pt', 'de'];
 // Prefixes that live only in es.json while translations are in progress. Entries
 // matching any of these are skipped by the parity checks.
 const PARITY_EXCLUDE_PREFIXES = [
-  'wiki.art.liqueurs.', // tracked for follow-up PR
-  // Historia y Conocimiento hub (PR #135) ships ES-only with t(key, fb).
-  // Translations to en/fr/pt/de are tracked for a follow-up PR.
-  'knowledge.',
+  'wiki.art.liqueurs.', // tracked for follow-up PR (pre-existing debt)
+  // Knowledge hub narrative content — long-form bios/descriptions/timeline
+  // still ES-only. The short UI labels (section_*, hub_title, progress,
+  // back, 3d_*, articles, eyebrow, tap_hint, view_3d) are now translated.
+  'knowledge.timeline.',
+  'knowledge.person.',
+  'knowledge.bar.',
+  // New history articles — long-form descriptions still ES-only.
   'wiki.art.history.timeline.description',
   'wiki.art.history.golden-age',
   'wiki.art.history.cocktail-renaissance',
   'wiki.art.history.legendary-bars',
   'wiki.art.history.molecular-mixology',
-  'article.section.3d', // ES-only label for the inline ThreeDSection
 ];
 
 // Keys referenced from code that are known to be missing from i18n/*.json.
@@ -41,15 +44,6 @@ const KNOWN_MISSING_KEYS = new Set([
   'profile.account', 'profile.guest',
   'toast.achievement_unlocked', 'toast.level_up', 'toast.level_up_body',
   'toast.name_saved',
-  // Historia y Conocimiento hub (PR #135) — ES-only, translations to follow.
-  'knowledge.back', 'knowledge.section_categories', 'knowledge.hub_title',
-  'knowledge.hub_subtitle', 'knowledge.articles', 'knowledge.view_3d',
-  'knowledge.section_timeline', 'knowledge.section_people',
-  'knowledge.section_bars', 'knowledge.section_cocktails',
-  // Knowledge Academy-style redesign — ES-only, translations to follow.
-  'knowledge.eyebrow', 'knowledge.progress',
-  'knowledge.3d_loading', 'knowledge.3d_unavailable',
-  'article.section.3d',
 ]);
 
 function loadLang(lang) {
