@@ -25,6 +25,11 @@ const ONBOARDING_SPIRITS = [
   { id: 'brandy',  emoji: '🍇' },
 ];
 
+// Stashed in handleGoogle right before signInWithGoogleRedirect navigates
+// the tab away. App.jsx consumes it after getRedirectResult returns a user
+// so the onboarding answers survive the redirect round-trip.
+const PENDING_ONBOARDING_KEY = 'stirio::onboarding::pending';
+
 // ── Aha-moment step: muestra valor antes de pedir nada.
 // Paso inicial del onboarding (antes del selector de idioma + auth). En 15s
 // el usuario ya ha interactuado con una ficha IBA y ha visto XP sumar,
@@ -341,11 +346,13 @@ const Onboarding = ({ onDone }) => {
     return hint ? `${base} (${hint})` : base;
   };
 
-  // NOT async: signInWithPopup must run inside the click's user-gesture tick,
-  // so we call it synchronously (no `await` before the popup opens) and attach
-  // .then/.catch/.finally for the post-popup work. Firebase is initialised
-  // eagerly at app mount (js/app.jsx) — if it isn't ready by the time the user
-  // clicks Google, show auth_unavailable and let them retry.
+  // Uses signInWithGoogleRedirect instead of signInWithPopup: the popup +
+  // hidden-iframe + postMessage dance breaks in Chrome with third-party
+  // cookies blocked (default on iOS/PWA/Brave), returning auth/internal-error.
+  // Redirect navigates the whole page to Google, then back via
+  // {authDomain}/__/auth/handler — app.jsx picks up the user via
+  // getRedirectResult on mount and completes onboarding with the pending
+  // answers we stash below.
   const handleGoogle = () => {
     setAuthError(null);
     if (!window.stAuth || !window.stAuth.isFirebaseReady?.()) {
@@ -353,20 +360,20 @@ const Onboarding = ({ onDone }) => {
       return;
     }
     setAuthLoading(true);
-    window.stAuth.signInWithGoogle()
-      .then((user) => {
-        setGoogleUser(user);
-        setAuthMode('google');
-        setName(user.name || name);
-        // Auth es el paso final: completamos el onboarding sin esperar a que
-        // React flushe los setState previos.
-        submit({ authMode: 'google', googleUser: user, name: user.name || name });
-      })
-      .catch((e) => {
-        console.warn('[auth] google', e);
-        setAuthError(googleErrorMessage(e));
-      })
-      .finally(() => setAuthLoading(false));
+    try {
+      localStorage.setItem(PENDING_ONBOARDING_KEY, JSON.stringify({
+        name, level, favSpirit, language, alcohol, at: Date.now(),
+      }));
+    } catch {}
+    window.stAuth.signInWithGoogleRedirect().catch((e) => {
+      // Only reached when the SDK rejects before navigating (init missing,
+      // CSP blocks the form submit, etc.). On success the page is already
+      // gone so the promise never settles here.
+      console.warn('[auth] google', e);
+      try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+      setAuthError(googleErrorMessage(e));
+      setAuthLoading(false);
+    });
   };
 
   const handleGuest = () => {

@@ -285,6 +285,32 @@ const App = () => {
       try {
         const local = window.stAuth.restoreSession();
         await window.stAuth.initFirebase(); // also detects persisted Google session
+        // If this boot came from a signInWithGoogleRedirect round-trip,
+        // consume the result + the pending onboarding answers stashed by
+        // Onboarding.handleGoogle and complete onboarding here — the
+        // Onboarding component unmounted during the redirect, so we skip
+        // back to it by driving finishOnboarding directly.
+        const redirectUser = window.stAuth.consumePendingRedirectUser?.();
+        if (redirectUser) {
+          let pending = null;
+          try { pending = JSON.parse(localStorage.getItem('stirio::onboarding::pending') || 'null'); } catch {}
+          try { localStorage.removeItem('stirio::onboarding::pending'); } catch {}
+          if (pending) {
+            await finishOnboarding({
+              name: redirectUser.name || pending.name || '',
+              email: redirectUser.email || null,
+              photoURL: redirectUser.photo || null,
+              uid: redirectUser.uid,
+              authMode: 'google',
+              onboarding: {
+                difficulty: pending.level || 'skip',
+                language: pending.language,
+                alcohol: pending.alcohol || 'regular',
+                favSpirit: pending.favSpirit || null,
+              },
+            });
+          }
+        }
         const user = window.stAuth.getCurrentUser() || local;
         if (cancelled || !user) return;
         setProfile(p => ({
