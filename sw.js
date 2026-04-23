@@ -112,7 +112,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.78`;
+const STATIC_CACHE_VERSION = `Stirio-v10.79`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
@@ -174,36 +174,83 @@ self.addEventListener('message', (event) => {
   if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
 })
 
+// Hosts that MUST never be touched by the service worker. Firebase Auth POSTs
+// JSON to identitytoolkit / securetoken and loads the auth iframe from
+// {authDomain}/__/auth/iframe.js during signInWithRedirect. Any caching or
+// fallback on those requests corrupts the auth handshake — the SDK ends up
+// reading HTML (our index.html fallback) instead of JSON and rejects with
+// auth/internal-error. Same rationale for Firestore/RTDB live traffic.
+const AUTH_HOST_BYPASS = [
+  'accounts.google.com',
+  'apis.google.com',
+  'identitytoolkit.googleapis.com',
+  'securetoken.googleapis.com',
+  'firestore.googleapis.com',
+  'firebaseinstallations.googleapis.com',
+];
+const AUTH_HOST_SUFFIXES = [
+  '.firebaseapp.com',     // authDomain (covers /__/auth/handler + iframe)
+  '.firebaseio.com',
+  '.firebasedatabase.app',
+  '.firebasestorage.app',
+];
+
+function shouldBypass(url) {
+  if (AUTH_HOST_BYPASS.includes(url.hostname)) return true;
+  return AUTH_HOST_SUFFIXES.some(suffix => url.hostname.endsWith(suffix));
+}
+
 self.addEventListener('fetch', (event) => {
   const FALLBACK_URL = CACHE_LIST[0];
   if (DEBUG) console.log("SW Fetch Event: Is in the process");
 
-  const onSuccessFetch = response => {
-    if (CACHE_LIST.includes(new URL(event.request.url).pathname)) return response
+  // Non-GETs (POST/PUT/DELETE) aren't storable in the Cache API — trying to
+  // cache them throws TypeError, which previously caused our catch() to swap
+  // the real response for index.html. Let the browser handle them directly.
+  if (event.request.method !== 'GET') return;
 
-    const onSuccessDynamicCacheOpen = cache => {
-      cache.put(event.request.url, response.clone())
-      return response
+  const url = new URL(event.request.url);
+
+  // Never intercept auth / Firebase live traffic.
+  if (shouldBypass(url)) return;
+
+  const sameOrigin = url.origin === self.location.origin;
+  const isNavigation = event.request.mode === 'navigate';
+
+  // Cross-origin GETs (CDNs, etc.) go straight to network — we don't cache
+  // opaque responses dynamically because put() can fail and our old catch
+  // would swap them for index.html.
+  if (!sameOrigin) return;
+
+  const isPrecached = CACHE_LIST.includes(url.pathname);
+
+  const networkFirst = () => fetch(event.request).then(response => {
+    // Only cache successful, non-opaque, same-origin responses.
+    if (response && response.ok && response.type === 'basic') {
+      const clone = response.clone();
+      caches.open(STATIC_CACHE_VERSION)
+        .then(cache => cache.put(event.request, clone))
+        .catch(() => {});
     }
+    return response;
+  }).catch(async () => {
+    const cached = await caches.match(event.request);
+    if (cached) return cached;
+    // Only navigation requests get the index.html SPA fallback — returning
+    // HTML to a failed JS/CSS/JSON fetch would corrupt the caller.
+    if (isNavigation) {
+      const fallback = await caches.match(FALLBACK_URL);
+      if (fallback) return fallback;
+    }
+    return Response.error();
+  });
 
-    return caches
-      .open(STATIC_CACHE_VERSION)
-      .then(onSuccessDynamicCacheOpen)
-      .catch(() => caches.match(FALLBACK_URL))
+  if (isPrecached) {
+    event.respondWith(
+      caches.match(event.request).then(cached => cached || networkFirst())
+    );
+    return;
   }
 
-  const onErrorFetch = () => {
-    const onSuccessCacheMatch = response => {
-      if (response) return response
-      else return caches.match(FALLBACK_URL)
-    }
-
-    return caches.match(event.request).then(onSuccessCacheMatch)
-  }
-
-  event.respondWith(
-      fetch(event.request)
-      .then(onSuccessFetch)
-      .catch(onErrorFetch)
-  )
+  event.respondWith(networkFirst());
 })

@@ -1995,6 +1995,7 @@
   "onboarding.auth_popup_blocked": "Your browser blocked the popup. Allow popups and try again.",
   "onboarding.auth_network": "No connection. Check your internet and try again.",
   "onboarding.auth_unauthorized_domain": "Unauthorized domain in Firebase.",
+  "onboarding.auth_internal_error": "Something went wrong with sign-in. Reload the page and try again.",
   "onboarding.auth_provider_disabled": "Google sign-in is not enabled.",
   "onboarding.auth_account_conflict": "An account already exists with that email using another method.",
   "onboarding.skip": "Skip — decide later",
