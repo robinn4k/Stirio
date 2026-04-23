@@ -334,7 +334,11 @@ const Onboarding = ({ onDone }) => {
       return tr('onboarding.auth_account_conflict', 'Ya existe una cuenta con ese email usando otro método.');
     if (code === 'auth/too-many-requests')
       return tr('onboarding.email_rate_limit', 'Demasiados intentos — prueba más tarde.');
-    return tr('onboarding.auth_error', 'Error al iniciar con Google');
+    // Surface the raw Firebase code (or a short excerpt of the message) so
+    // reports we can't map yet still carry a diagnostic hint the user can copy.
+    const hint = code || String(e?.message || '').slice(0, 80);
+    const base = tr('onboarding.auth_error', 'Error al iniciar con Google');
+    return hint ? `${base} (${hint})` : base;
   };
 
   const handleGoogle = async () => {
