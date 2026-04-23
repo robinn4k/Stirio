@@ -497,6 +497,18 @@ const todaySeed = () => {
   const d = new Date();
   return d.getUTCFullYear() * 10000 + (d.getUTCMonth() + 1) * 100 + d.getUTCDate();
 };
+// Convierte 'YYYY-MM-DD' → seed int. Devuelve null si el string es inválido
+// o la fecha cae a más de 60 días en el pasado / algún día en el futuro
+// (límites anti-abuso para los links ?daily=... del viral loop).
+const seedForDate = (dateStr) => {
+  if (typeof dateStr !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return null;
+  const d = new Date(dateStr + 'T00:00:00Z');
+  if (isNaN(d.getTime())) return null;
+  const now = new Date();
+  const diffDays = (now.getTime() - d.getTime()) / 86400000;
+  if (diffDays < -1 || diffDays > 60) return null;
+  return d.getUTCFullYear() * 10000 + (d.getUTCMonth() + 1) * 100 + d.getUTCDate();
+};
 const seededRng = (seed) => {
   let s = seed >>> 0;
   return () => {
@@ -504,14 +516,14 @@ const seededRng = (seed) => {
     return (s >>> 0) / 0x100000000;
   };
 };
-const pickDailyQuestions = (n = 10) => {
+const pickDailyQuestions = (n = 10, seedOverride = null) => {
   // Prefer localized rounds (language-aware) when js/questions.js está cargado
   const rounds = (window.stQuestions && window.stQuestions.getLocalizedRounds)
     ? window.stQuestions.getLocalizedRounds((window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es')
     : TRIVIA_ROUNDS;
   const allQ = rounds.flatMap(r => r.questions.map(q => ({ ...q, _round: r.title, _color: r.color })));
   if (!allQ.length) return [];
-  const rng = seededRng(todaySeed());
+  const rng = seededRng(seedOverride != null ? seedOverride : todaySeed());
   const pool = allQ.slice();
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
@@ -519,17 +531,24 @@ const pickDailyQuestions = (n = 10) => {
   }
   return pool.slice(0, n);
 };
-const DAILY_LESSON = () => {
-  const qs = pickDailyQuestions(10);
+const DAILY_LESSON = (opts = {}) => {
+  const { dateStr = null, challengedBy = null } = opts || {};
+  const overrideSeed = dateStr ? seedForDate(dateStr) : null;
+  const seed = overrideSeed != null ? overrideSeed : todaySeed();
+  const qs = pickDailyQuestions(10, seed);
   const lang = (window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es';
   const localeMap = { es: 'es-ES', en: 'en-US', fr: 'fr-FR', pt: 'pt-PT', de: 'de-DE' };
-  const dateStr = new Date().toLocaleDateString(localeMap[lang] || 'es-ES', { day: 'numeric', month: 'long' });
+  const displayDate = (dateStr && overrideSeed != null)
+    ? new Date(dateStr + 'T00:00:00Z').toLocaleDateString(localeMap[lang] || 'es-ES', { day: 'numeric', month: 'long' })
+    : new Date().toLocaleDateString(localeMap[lang] || 'es-ES', { day: 'numeric', month: 'long' });
   const title = _tp('daily.card_title', {}, 'Reto Diario');
   return {
-    id: 'daily-' + todaySeed(),
+    id: 'daily-' + seed,
     category: 'Daily',
+    dailyDate: dateStr || null,
+    challengedBy: challengedBy || null,
     title,
-    subtitle: _tp('daily.card_subtitle', { date: dateStr }, `10 preguntas · ${dateStr}`),
+    subtitle: _tp('daily.card_subtitle', { date: displayDate }, `10 preguntas · ${displayDate}`),
     emoji: '📅',
     accent: 'amber',
     xp: 150,
