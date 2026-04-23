@@ -23,9 +23,35 @@ export async function preloadAllTranslations() {
   await Promise.all(SUPPORTED_LANGS.map(loadTranslations));
 }
 
-/** Get current language */
+/** Detect a supported language from the browser, or null if none match. */
+function detectBrowserLang() {
+  try {
+    const candidates = [];
+    if (typeof navigator !== 'undefined') {
+      if (navigator.language) candidates.push(navigator.language);
+      if (Array.isArray(navigator.languages)) candidates.push(...navigator.languages);
+    }
+    for (const raw of candidates) {
+      if (!raw) continue;
+      const short = String(raw).toLowerCase().split('-')[0];
+      if (SUPPORTED_LANGS.includes(short)) return short;
+    }
+  } catch {}
+  return null;
+}
+
+/** Get current language — respects stored preference, else auto-detects from
+ *  the browser, else falls back to Spanish. The detected language is persisted
+ *  so subsequent calls are stable (no flicker if navigator.languages changes). */
 export function getLang() {
-  return localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored && SUPPORTED_LANGS.includes(stored)) return stored;
+  const detected = detectBrowserLang();
+  if (detected) {
+    try { localStorage.setItem(STORAGE_KEY, detected); } catch {}
+    return detected;
+  }
+  return DEFAULT_LANG;
 }
 
 /** Set language and persist */

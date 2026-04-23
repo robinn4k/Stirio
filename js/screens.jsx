@@ -28,6 +28,251 @@ const ONBOARDING_SPIRITS = [
   { id: 'brandy',  emoji: '🍇' },
 ];
 
+// ── Aha-moment step: muestra valor antes de pedir nada.
+// Paso inicial del onboarding (antes del selector de idioma + auth). En 15s
+// el usuario ya ha interactuado con una ficha IBA y ha visto XP sumar,
+// convirtiendo "prueba de esfuerzo" en "prueba de juego".
+// Las 4 imágenes deben existir en ficha-images.js (ver verificación allí).
+const ONBOARDING_HOOK_POOL = [
+  { id: 'negroni',   name: 'Negroni' },
+  { id: 'margarita', name: 'Margarita' },
+  { id: 'mojito',    name: 'Mojito' },
+  { id: 'daiquiri',  name: 'Daiquiri' },
+];
+
+const HOOK_FACTS = {
+  negroni: {
+    es: 'Tres partes iguales: gin, Campari y vermut rojo. Nació en Florencia en 1919.',
+    en: 'Equal parts gin, Campari and sweet vermouth. Born in Florence, 1919.',
+    fr: 'Parts égales de gin, Campari et vermouth rouge. Né à Florence en 1919.',
+    pt: 'Partes iguais de gin, Campari e vermute doce. Nasceu em Florença em 1919.',
+    de: 'Gleiche Teile Gin, Campari und roter Wermut. Entstand 1919 in Florenz.',
+  },
+  margarita: {
+    es: 'Tequila, triple seco y zumo de lima. El clásico mexicano por excelencia.',
+    en: 'Tequila, triple sec and lime juice. The Mexican classic.',
+    fr: 'Tequila, triple sec et jus de citron vert. Le classique mexicain.',
+    pt: 'Tequila, triple sec e suco de limão. O clássico mexicano.',
+    de: 'Tequila, Triple Sec und Limettensaft. Der mexikanische Klassiker.',
+  },
+  mojito: {
+    es: 'Ron blanco, menta fresca, azúcar, lima y soda. Cuba en un vaso.',
+    en: 'White rum, fresh mint, sugar, lime and soda. Cuba in a glass.',
+    fr: 'Rhum blanc, menthe fraîche, sucre, citron vert et soda. Cuba dans un verre.',
+    pt: 'Rum branco, hortelã, açúcar, limão e soda. Cuba num copo.',
+    de: 'Weißer Rum, frische Minze, Zucker, Limette und Soda. Kuba im Glas.',
+  },
+  daiquiri: {
+    es: 'Ron blanco, lima y azúcar. El favorito de Hemingway en La Floridita.',
+    en: 'White rum, lime and sugar. Hemingway\'s favourite at La Floridita.',
+    fr: 'Rhum blanc, citron vert et sucre. Le préféré d\'Hemingway au Floridita.',
+    pt: 'Rum branco, limão e açúcar. O preferido de Hemingway no Floridita.',
+    de: 'Weißer Rum, Limette und Zucker. Hemingways Favorit im Floridita.',
+  },
+};
+
+const HOOK_DONE_KEY = 'cq_onboarding_hook_v1';
+
+const OnboardingHookStep = ({ language, onContinue }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const [shuffled] = useState(() => [...ONBOARDING_HOOK_POOL].sort(() => Math.random() - 0.5));
+  const [target] = useState(() => ONBOARDING_HOOK_POOL[Math.floor(Math.random() * ONBOARDING_HOOK_POOL.length)]);
+  const [phase, setPhase] = useState('idle'); // 'idle' | 'correct' | 'wrong' | 'timeup'
+  const [pick, setPick] = useState(null);
+  const [timeLeft, setTimeLeft] = useState(15);
+
+  useEffect(() => {
+    if (phase !== 'idle') return;
+    if (timeLeft <= 0) { setPhase('timeup'); return; }
+    const id = setTimeout(() => setTimeLeft(x => x - 1), 1000);
+    return () => clearTimeout(id);
+  }, [phase, timeLeft]);
+
+  const grantXp = (amount, reason) => {
+    try { window.stLearn?.addXp?.(amount, { reason }); } catch {}
+  };
+
+  const persistDone = () => {
+    try { localStorage.setItem(HOOK_DONE_KEY, '1'); } catch {}
+  };
+
+  const handlePick = (opt, e) => {
+    if (phase !== 'idle') return;
+    setPick(opt.id);
+    const rect = e?.currentTarget?.getBoundingClientRect?.();
+    const cx = rect ? rect.left + rect.width / 2 : window.innerWidth / 2;
+    const cy = rect ? rect.top + rect.height / 2 : window.innerHeight / 2;
+    if (opt.id === target.id) {
+      setPhase('correct');
+      try { hapticTap('win'); } catch {}
+      try { confettiBurst(cx, cy); } catch {}
+      try { playChord('major'); } catch {}
+      grantXp(20, 'onboarding_hook_correct');
+    } else {
+      setPhase('wrong');
+      try { hapticTap('bad'); } catch {}
+      try { playChord('minor'); } catch {}
+      grantXp(5, 'onboarding_hook_participation');
+    }
+  };
+
+  const handleContinue = () => {
+    if (phase === 'idle') grantXp(5, 'onboarding_hook_skip');
+    persistDone();
+    onContinue();
+  };
+
+  const targetFact = HOOK_FACTS[target.id]?.[language] || HOOK_FACTS[target.id]?.es || '';
+  const revealed = phase !== 'idle';
+
+  return (
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: 40,
+      display: 'grid', placeItems: 'center',
+      padding: '24px 20px', overflow: 'auto',
+    }}>
+      <div style={{ maxWidth: 480, width: '100%' }}>
+        <div style={{ textAlign: 'center', marginBottom: 18 }}>
+          <div style={{
+            fontSize: 48, marginBottom: 6,
+            filter: 'drop-shadow(0 6px 20px var(--amber-glow))',
+          }}>🍸</div>
+          <h1 style={{
+            fontFamily: 'var(--f-serif)', fontWeight: 400,
+            fontSize: 'clamp(28px, 5.5vw, 36px)',
+            margin: '0 0 4px', lineHeight: 1.1,
+            letterSpacing: '-0.02em',
+          }}>
+            {tr('onboarding.hook.prompt', '¿Cuál es un')}{' '}
+            <span style={{ color: 'var(--amber)' }}>{target.name}</span>?
+          </h1>
+          <p style={{ color: 'var(--ink-3)', fontSize: 13, margin: '6px 0 12px' }}>
+            {tr('onboarding.hook.subtitle', 'Toca la imagen. Tienes 15 segundos.')}
+          </p>
+          {!revealed && (
+            <div style={{
+              display: 'inline-block',
+              fontFamily: 'var(--f-mono)',
+              fontWeight: 600, fontSize: 22,
+              color: timeLeft <= 5 ? 'var(--amber)' : 'var(--ink-2)',
+              padding: '4px 14px',
+              borderRadius: 'var(--r-pill)',
+              background: 'var(--bg-1)',
+              border: '1px solid var(--line-soft)',
+            }}>{timeLeft}s</div>
+          )}
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          {shuffled.map(opt => {
+            const img = window.getFichaImage?.(opt.name);
+            const isTarget = opt.id === target.id;
+            const isPicked = opt.id === pick;
+            const border = revealed
+              ? (isTarget ? '2px solid var(--amber)' : (isPicked ? '2px solid #e5484d' : '1px solid var(--line-soft)'))
+              : '1px solid var(--line-soft)';
+            return (
+              <button key={opt.id} onClick={(e) => handlePick(opt, e)} disabled={revealed} style={{
+                aspectRatio: '1 / 1',
+                borderRadius: 'var(--r-md)',
+                overflow: 'hidden',
+                position: 'relative',
+                border, background: 'var(--bg-1)', padding: 0,
+                cursor: revealed ? 'default' : 'pointer',
+                transition: 'border-color .2s, transform .15s',
+                transform: revealed && isTarget ? 'scale(1.02)' : 'none',
+              }}>
+                {img ? (
+                  <img src={img} alt="" style={{
+                    width: '100%', height: '100%', objectFit: 'cover',
+                    opacity: revealed && !isTarget ? 0.35 : 1,
+                    transition: 'opacity .3s',
+                  }} />
+                ) : (
+                  <div style={{
+                    width: '100%', height: '100%',
+                    display: 'grid', placeItems: 'center',
+                    fontSize: 48,
+                  }}>🍸</div>
+                )}
+                {revealed && (
+                  <div style={{
+                    position: 'absolute', bottom: 0, left: 0, right: 0,
+                    padding: '8px 10px',
+                    background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)',
+                    color: '#fff', fontWeight: 600, fontSize: 12,
+                    textAlign: 'left',
+                  }}>{opt.name}</div>
+                )}
+                {revealed && isTarget && (
+                  <div style={{
+                    position: 'absolute', top: 8, right: 8,
+                    width: 26, height: 26, borderRadius: '50%',
+                    background: 'var(--amber)', color: '#1a0d05',
+                    display: 'grid', placeItems: 'center',
+                    fontWeight: 800, fontSize: 14,
+                  }}>✓</div>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {revealed && (
+          <div style={{
+            marginTop: 16, padding: 14,
+            background: 'var(--bg-1)', border: '1px solid var(--line-soft)',
+            borderRadius: 'var(--r-md)',
+            animation: 'rise .4s ease',
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+              <span style={{
+                fontWeight: 700, fontSize: 14, color: 'var(--amber)',
+                fontFamily: 'var(--f-mono)', letterSpacing: '.02em',
+              }}>
+                {phase === 'correct' ? '+20 XP' : '+5 XP'}
+              </span>
+              <span style={{ fontSize: 13, color: 'var(--ink-2)' }}>
+                {phase === 'correct' && tr('onboarding.hook.correct', '¡Bien visto!')}
+                {phase === 'wrong'   && tr('onboarding.hook.wrong',   'Este era el de verdad.')}
+                {phase === 'timeup'  && tr('onboarding.hook.timeup',  'El tiempo vuela.')}
+              </span>
+            </div>
+            <div style={{ fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.55 }}>{targetFact}</div>
+          </div>
+        )}
+
+        <div style={{
+          marginTop: 18,
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          minHeight: 44,
+        }}>
+          {!revealed ? (
+            <button onClick={handleContinue} style={{
+              background: 'transparent', border: 0,
+              color: 'var(--ink-3)', fontSize: 12,
+              padding: '6px 4px', cursor: 'pointer',
+            }}>{tr('onboarding.hook.skip', 'Saltar')}</button>
+          ) : <span />}
+          {revealed && (
+            <button onClick={handleContinue} style={{
+              padding: '12px 22px',
+              background: 'var(--amber)', color: '#1a0d05',
+              borderRadius: 'var(--r-pill)', border: 0,
+              fontWeight: 600, fontSize: 14,
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              cursor: 'pointer',
+              boxShadow: '0 6px 18px var(--amber-glow)',
+            }}>
+              {tr('onboarding.hook.continue', 'Continuar')} <Icon name="arrowR" size={14} />
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Onboarding = ({ onDone }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [step, setStep] = useState(0);
@@ -49,6 +294,9 @@ const Onboarding = ({ onDone }) => {
   const [emailAddr, setEmailAddr] = useState('');
   const [emailPass, setEmailPass] = useState('');
   const [emailName, setEmailName] = useState('');
+  const [hookDone, setHookDone] = useState(() => {
+    try { return localStorage.getItem(HOOK_DONE_KEY) === '1'; } catch { return false; }
+  });
 
   const handleGoogle = async () => {
     setAuthError(null);
@@ -167,6 +415,13 @@ const Onboarding = ({ onDone }) => {
       favSpirit: favSpirit || null,
     },
   });
+
+  // Aha-moment primero: valida la propuesta antes de pedir idioma/auth.
+  // Una vez visto se persiste en localStorage para no repetirlo si el
+  // usuario abandona a mitad de flujo y vuelve.
+  if (!hookDone) {
+    return <OnboardingHookStep language={language} onContinue={() => setHookDone(true)} />;
+  }
 
   return (
     <div style={{
