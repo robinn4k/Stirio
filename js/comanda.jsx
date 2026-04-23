@@ -151,8 +151,12 @@ const ComandaScreen = ({ onBack }) => {
   const [round, setRound] = useState(null);
   const [fb, setFb] = useState(null); // { kind: 'ok'|'bad', text, at }
   const [shakeFx, setShakeFx] = useState(0); // timestamp to trigger shake animation
+  const [paused, setPaused] = useState(false);
+  const [hintAt, setHintAt] = useState(0);    // timestamp to trigger hint glow
   const rafRef = useRef(0);
   const startAtRef = useRef(0);
+  const pauseAtRef = useRef(0);               // when pause started (perf.now)
+  const lastHintAtRef = useRef(0);            // Date.now of last hint (cooldown)
   const lastFinishRef = useRef(null); // cached final stats for done screen
 
   // Ensure we exit fullscreen if the component unmounts (route change, etc.)
@@ -182,6 +186,10 @@ const ComandaScreen = ({ onBack }) => {
       garnish: null,   // garnish key or null
     });
     setFb(null);
+    setPaused(false);
+    setHintAt(0);
+    lastHintAtRef.current = 0;
+    pauseAtRef.current = 0;
     startAtRef.current = performance.now();
     ccEnterFullscreen();
     setPhase('playing');
@@ -190,6 +198,7 @@ const ComandaScreen = ({ onBack }) => {
   // Game loop — countdown or elapsed tracker depending on mode
   useEffect(() => {
     if (phase !== 'playing') return;
+    if (paused) return; // freeze loop while paused
     const loop = (now) => {
       const elapsed = (now - startAtRef.current) / 1000;
       const remaining = Math.max(0, CC_DURATION - elapsed);
@@ -207,7 +216,41 @@ const ComandaScreen = ({ onBack }) => {
     };
     rafRef.current = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [phase]);
+  }, [phase, paused]);
+
+  // Pause control — freezes elapsed time so timed mode stays fair
+  const togglePause = () => {
+    if (phase !== 'playing') return;
+    try { window.hapticTap && window.hapticTap('tap'); } catch {}
+    setPaused(p => {
+      if (!p) {
+        pauseAtRef.current = performance.now();
+        return true;
+      }
+      if (pauseAtRef.current) {
+        startAtRef.current += (performance.now() - pauseAtRef.current);
+        pauseAtRef.current = 0;
+      }
+      return false;
+    });
+  };
+
+  // Hint — briefly glow expected bottles. 8s cooldown, silent if on cooldown.
+  const HINT_COOLDOWN_MS = 8000;
+  const HINT_DURATION_MS = 1200;
+  const showHint = () => {
+    if (phase !== 'playing' || !round || paused) return;
+    const now = Date.now();
+    if (now - lastHintAtRef.current < HINT_COOLDOWN_MS) return;
+    lastHintAtRef.current = now;
+    try { window.hapticTap && window.hapticTap('tap'); } catch {}
+    setHintAt(now);
+  };
+  useEffect(() => {
+    if (!hintAt) return;
+    const t = setTimeout(() => setHintAt(0), HINT_DURATION_MS);
+    return () => clearTimeout(t);
+  }, [hintAt]);
 
   // Auto-clear transient feedback after 1.1s
   useEffect(() => {
@@ -448,9 +491,19 @@ const ComandaScreen = ({ onBack }) => {
                 {tr('comanda.header', 'Comanda Chase')}
               </div>
             </div>
+            {round.timed !== false && (
+              <button
+                type="button"
+                className="btn cc-pause-btn"
+                onClick={togglePause}
+                aria-label={paused ? tr('comanda.resume', 'Reanudar') : tr('comanda.pause', 'Pausa')}
+              >
+                {paused ? '▶' : '⏸'}
+              </button>
+            )}
             <div className="cc-hud-stats">
               <div className="cc-stat">
-                <div className="cc-stat-label">{round.timed === false ? tr('comanda.mode_free', 'Sin tiempo') : tr('comanda.timer', 'Tiempo')}</div>
+                <div className="cc-stat-label">{round.timed === false ? tr('comanda.elapsed', 'Turno') : tr('comanda.timer', 'Tiempo')}</div>
                 <div className={`cc-stat-val ${round.timed !== false && round.timeLeft < 15 ? 'cc-urgent' : ''}`}>{timeStr}</div>
               </div>
               <div className="cc-stat">
@@ -545,6 +598,11 @@ const ComandaScreen = ({ onBack }) => {
                   className={`cc-act ${round.method === 'stir' ? 'on' : ''}`}
                   onClick={() => pickMethod('stir')}
                 >🥄 {tr('comanda.stir', 'Stir')}</button>
+                <button
+                  className="cc-act hint"
+                  onClick={showHint}
+                  aria-label={tr('comanda.hint', 'Pista')}
+                >💡 {tr('comanda.hint', 'Pista')}</button>
                 <button className="cc-act ghost" onClick={clearVessel}>
                   ↺ {tr('comanda.clear', 'Limpiar')}
                 </button>
@@ -574,10 +632,11 @@ const ComandaScreen = ({ onBack }) => {
               <div className="cc-bottles">
                 {visibleBottles.map((b) => {
                   const poured = round.vessel.includes(b.key);
+                  const hinted = !!hintAt && !poured && expectedKeys.includes(b.key);
                   return (
                     <button
                       key={b.key}
-                      className={`cc-bottle${poured ? ' poured' : ''}`}
+                      className={`cc-bottle${poured ? ' poured' : ''}${hinted ? ' hinted' : ''}`}
                       onClick={() => pourBottle(b)}
                     >
                       <span className="cc-bottle-cap" style={{ background: `oklch(0.6 0.18 ${ccHue(b.key)})` }} />
@@ -601,6 +660,19 @@ const ComandaScreen = ({ onBack }) => {
               </div>
             </div>
           </div>
+          {paused && (
+            <div className="cc-pause-veil" onClick={togglePause} role="button" aria-label={tr('comanda.resume', 'Reanudar')}>
+              <div className="cc-pause-card">
+                <div style={{ fontSize: 40, lineHeight: 1 }}>⏸</div>
+                <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginTop: 10 }}>
+                  {tr('comanda.pause', 'Pausa')}
+                </div>
+                <div style={{ marginTop: 6, color: 'var(--ink-2)', fontSize: 13 }}>
+                  {tr('comanda.paused', 'Pausado · Toca para continuar')}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
@@ -670,6 +742,25 @@ const CC_CSS = `
 }
 .cc-back { position: absolute; top: 16px; left: 16px; padding: 6px 10px; min-width: 40px; }
 .cc-back-hud { padding: 4px 8px; min-width: 36px; }
+.cc-pause-btn { padding: 4px 10px; min-width: 40px; font-size: 16px; line-height: 1; }
+.cc-pause-veil {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  background: oklch(0.08 0.02 270 / 0.55);
+  backdrop-filter: blur(10px);
+  z-index: 20;
+  cursor: pointer;
+  animation: ccFadeIn 0.2s ease;
+}
+.cc-pause-card {
+  text-align: center;
+  padding: 24px 32px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, oklch(0.22 0.04 280 / 0.9), oklch(0.14 0.03 270 / 0.85));
+  border: 1px solid oklch(0.82 0.17 75 / 0.22);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}
+@keyframes ccFadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 .cc-play { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 14px; gap: 14px; }
 .cc-hud {
@@ -727,19 +818,21 @@ const CC_CSS = `
 .cc-vessel-inner { position: absolute; inset: 8px; display: flex; flex-direction: column-reverse; border-radius: 4px 4px 44px 44px; overflow: hidden; }
 .cc-layer { flex: 1; min-height: 14px; box-shadow: inset 0 -2px 3px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.12); animation: ccPour 0.35s ease; position: relative; }
 .cc-layer:last-child::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0)); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
-.cc-vessel-empty { position: absolute; inset: 8px; display: grid; place-items: center; color: var(--ink-3); font-size: 12px; font-family: var(--f-mono, monospace); letter-spacing: 0.1em; text-transform: uppercase; border: 2px dashed rgba(255,255,255,0.08); border-radius: 4px 4px 44px 44px; }
+.cc-vessel-empty { position: absolute; inset: 8px; display: grid; place-items: center; color: var(--ink-3); font-size: 12px; font-family: var(--f-mono, monospace); letter-spacing: 0.1em; text-transform: uppercase; border: 2px dashed rgba(255,255,255,0.14); border-radius: 4px 4px 44px 44px; opacity: 0.85; }
 .cc-vessel.shake { animation: ccShake 0.6s infinite; }
 .cc-garnish-float { position: absolute; top: -16px; right: -8px; font-size: 28px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); animation: ccPop 0.3s ease; }
 .cc-fb { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 13px; pointer-events: none; animation: ccFb 1.1s ease; white-space: nowrap; }
 .cc-fb.ok { background: oklch(0.45 0.18 145 / 0.4); color: oklch(0.9 0.18 145); border: 1px solid oklch(0.55 0.18 145 / 0.5); }
 .cc-fb.bad { background: oklch(0.45 0.2 25 / 0.4); color: oklch(0.9 0.15 25); border: 1px solid oklch(0.55 0.2 25 / 0.5); }
 
-.cc-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; flex-shrink: 0; }
-.cc-act { padding: 14px 12px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04); color: var(--ink-1); font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.15s; min-height: 50px; }
+.cc-actions { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; flex-shrink: 0; }
+.cc-act { padding: 14px 10px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04); color: var(--ink-1); font-weight: 600; font-size: 13px; cursor: pointer; transition: all 0.15s; min-height: 50px; }
 .cc-act:hover { background: rgba(255,255,255,0.08); transform: translateY(-1px); }
 .cc-act:active { transform: translateY(0); }
 .cc-act.on { background: oklch(0.45 0.13 250 / 0.4); border-color: oklch(0.7 0.16 250); color: oklch(0.9 0.14 250); }
 .cc-act.ghost { color: var(--ink-3); }
+.cc-act.hint { background: oklch(0.45 0.13 85 / 0.2); border-color: oklch(0.7 0.16 85 / 0.45); color: oklch(0.9 0.14 85); }
+.cc-act.hint:hover { background: oklch(0.5 0.15 85 / 0.3); }
 .cc-act.primary { background: linear-gradient(180deg, oklch(0.78 0.17 85), oklch(0.62 0.18 70)); color: oklch(0.18 0.05 55); border-color: transparent; box-shadow: 0 6px 18px oklch(0.7 0.15 80 / 0.35); }
 .cc-act.primary.ready { background: linear-gradient(180deg, oklch(0.78 0.18 150), oklch(0.55 0.18 145)); color: oklch(0.14 0.05 145); box-shadow: 0 6px 22px oklch(0.65 0.2 150 / 0.5); animation: ccReadyPulse 1.6s infinite; }
 @keyframes ccReadyPulse { 0%,100% { box-shadow: 0 6px 22px oklch(0.65 0.2 150 / 0.5); } 50% { box-shadow: 0 6px 30px oklch(0.7 0.22 150 / 0.75); } }
@@ -751,6 +844,8 @@ const CC_CSS = `
 .cc-bottle.poured { opacity: 0.48; background: linear-gradient(180deg, oklch(0.45 0.15 145 / 0.18), rgba(0,0,0,0.1)); border-color: oklch(0.55 0.18 145 / 0.35); }
 .cc-bottle.poured .cc-bottle-label { text-decoration: line-through; color: var(--ink-3); }
 .cc-bottle.poured .cc-bottle-cap { filter: grayscale(0.3); }
+.cc-bottle.hinted { animation: ccHint 0.6s ease 2; border-color: oklch(0.82 0.17 75 / 0.7); }
+@keyframes ccHint { 0%,100% { box-shadow: 0 0 0 0 oklch(0.82 0.17 75 / 0); } 50% { box-shadow: 0 0 0 3px oklch(0.82 0.17 75 / 0.85), 0 0 24px oklch(0.82 0.17 75 / 0.5); transform: translateY(-2px) scale(1.03); } }
 .cc-bottle-cap { width: 18px; height: 22px; border-radius: 4px 4px 2px 2px; box-shadow: 0 0 8px currentColor, inset 0 -2px 3px rgba(0,0,0,0.35); }
 .cc-bottle-label { font-size: 11px; text-align: center; color: var(--ink-2); line-height: 1.15; }
 
@@ -877,41 +972,55 @@ const CC_CSS = `
 /* Portrait / narrow viewports — stack panels vertically.
    Triggers on phone portrait, narrow browser windows, and iPad portrait. */
 @media (orientation: portrait), (max-width: 720px) {
-  .cc-hud { height: 60px; gap: 12px; padding: 8px 14px; border-radius: 16px; }
+  .cc-play { padding: 12px 12px 0; gap: 12px; }
+  .cc-hud { height: 52px; gap: 10px; padding: 6px 12px; border-radius: 14px; }
   .cc-hud-title { display: none; }
-  .cc-hud-stats { gap: 14px; flex: 1; justify-content: flex-end; }
-  .cc-stat { min-width: 50px; }
+  .cc-hud-stats { gap: 12px; flex: 1; justify-content: flex-end; }
+  .cc-stat { min-width: 46px; }
   .cc-stat-label { font-size: 9px; }
-  .cc-stat-val { font-size: 17px; }
+  .cc-stat-val { font-size: 16px; }
 
   .cc-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    gap: 14px;
+    gap: 12px;
     overflow-y: auto;
-    padding-bottom: 8px;
+    padding-bottom: 92px;              /* reserve room for the fixed action bar */
   }
-  .cc-panel { padding: 16px 18px; border-radius: 18px; }
+  .cc-panel { padding: 14px 16px; border-radius: 16px; }
   .cc-ticket { order: 1; }
-  .cc-center { order: 2; gap: 14px; }
+  .cc-center { order: 2; gap: 10px; }
   .cc-shelf { order: 3; }
-  .cc-panel-eyebrow { margin-bottom: 12px; }
+  .cc-panel-eyebrow { margin-bottom: 10px; }
 
-  .cc-ticket-head { margin-bottom: 14px; gap: 12px; }
-  .cc-ticket-icon { font-size: 30px; }
-  .cc-ticket-name { font-size: 20px; }
-  .cc-ticket-list { flex: initial; gap: 8px; }
-  .cc-line { padding: 8px 12px; font-size: 13px; border-radius: 10px; }
-  .cc-ticket-garnish { margin-top: 14px; padding-top: 12px; font-size: 13px; }
+  .cc-ticket-head { margin-bottom: 12px; gap: 12px; }
+  .cc-ticket-icon { font-size: 28px; }
+  .cc-ticket-name { font-size: 19px; }
+  .cc-ticket-list { flex: initial; gap: 6px; }
+  .cc-line { padding: 7px 11px; font-size: 13px; border-radius: 10px; }
+  .cc-ticket-garnish { margin-top: 10px; padding-top: 10px; font-size: 13px; }
 
-  /* Mobile single-column layout: the parent .cc-grid drives scroll. Reset the
-     desktop flex:1 on .cc-vessel-wrap so it sizes to its content and the
-     Shake/Stir/Clear/Serve buttons stay visible right below the vessel. */
-  .cc-vessel-wrap { flex: 0 0 auto; min-height: 200px; padding: 10px 0; }
-  .cc-vessel { width: 120px; height: 168px; }
+  /* Vessel sizes to content; action bar becomes fixed below so it's always
+     reachable regardless of scroll position. */
+  .cc-vessel-wrap { flex: 0 0 auto; min-height: 170px; padding: 6px 0; }
+  .cc-vessel { width: 104px; height: 148px; }
 
-  .cc-actions { grid-template-columns: repeat(4, 1fr); gap: 10px; }
-  .cc-act { padding: 16px 8px; font-size: 14px; border-radius: 14px; min-height: 52px; }
+  .cc-actions {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    background: linear-gradient(180deg, oklch(0.14 0.02 270 / 0.88), oklch(0.1 0.02 270 / 0.96));
+    backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 -10px 28px rgba(0,0,0,0.45);
+    z-index: 5;
+  }
+  .cc-act { padding: 10px 4px; font-size: 11px; border-radius: 12px; min-height: 48px; line-height: 1.15; }
+
+  .cc-end-shift { margin-top: 6px; margin-bottom: 76px; }
 
   .cc-bottles { grid-template-columns: repeat(3, 1fr); gap: 10px; }
   .cc-bottle { min-height: 80px; padding: 14px 8px 12px; border-radius: 14px; gap: 8px; }
@@ -925,11 +1034,11 @@ const CC_CSS = `
 @media (orientation: portrait) and (max-width: 380px) {
   .cc-panel { padding: 12px 14px; }
   .cc-ticket-name { font-size: 18px; }
-  .cc-vessel { width: 104px; height: 146px; }
+  .cc-vessel { width: 96px; height: 136px; }
   .cc-bottles { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .cc-bottle { min-height: 72px; padding: 12px 6px 10px; }
   .cc-bottle-label { font-size: 11px; }
-  .cc-act { padding: 14px 6px; font-size: 13px; min-height: 48px; }
+  .cc-act { padding: 8px 2px; font-size: 10px; min-height: 46px; }
   .cc-garnish-row { gap: 6px; }
   .cc-gchip { font-size: 22px; padding: 9px 3px; }
 }
