@@ -65,7 +65,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.68';</script>
+  <script>window.STIRIO_VERSION = '10.71';</script>
 
   <!-- Data layer (plain scripts — sets window.StirioRepo and game globals) -->
   <script src="js/repo-data.js"></script>
@@ -101,7 +101,14 @@
   <!-- React UI components (Babel transpiles JSX in-browser as classic scripts — shared top-level scope) -->
   <script type="text/babel" data-presets="react" src="js/ui.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/lesson.jsx"></script>
-  <script type="text/babel" data-presets="react" src="js/screens.jsx"></script>
+  <!-- screens/ — the former monolithic js/screens.jsx, split per-screen.
+       shared.jsx MUST load first: it provides SectionHeader used by Home
+       and Profile. The per-screen files are independent of each other. -->
+  <script type="text/babel" data-presets="react" src="js/screens/shared.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens/Onboarding.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens/Home.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens/Profile.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens/ModeSheet.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/reference.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/legacy-modes.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/duel.jsx"></script>
