@@ -854,7 +854,27 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 
       {/* Academy */}
       <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow={tr('home.academy_eyebrow', 'aprende')} title={tr('academy.title_ui', 'Cocktail Academy')} action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>0 / 6</span>} />
+        {(() => {
+          // Derive the real level-complete counter from localStorage so the
+          // Home academy header matches the Academy screen. A level is
+          // considered complete when at least one of its lessons passed —
+          // same heuristic as the Reference tile a few sections below.
+          let academyHomeDone = 0;
+          let academyHomeTotal = 6;
+          try {
+            const prog = JSON.parse(localStorage.getItem('cq_academy_progress') || '{}');
+            academyHomeDone = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
+            const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
+            if (levels.length) academyHomeTotal = levels.length;
+          } catch {}
+          return (
+            <SectionHeader
+              eyebrow={tr('home.academy_eyebrow', 'aprende')}
+              title={tr('academy.title_ui', 'Cocktail Academy')}
+              action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>{academyHomeDone} / {academyHomeTotal}</span>}
+            />
+          );
+        })()}
         <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}>
           <div style={{ fontSize: 54, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>🎓</div>
           <div style={{ flex: 1 }}>
