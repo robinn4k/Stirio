@@ -92,11 +92,34 @@ const readInviteFromUrl = () => {
   } catch { return null; }
 };
 
+// Viral loop del Daily Challenge: cuando alguien comparte su reto, la URL
+// lleva `?daily=YYYY-MM-DD&by=<handle>`. Parseamos, validamos, y limpiamos
+// los params de la URL para no re-disparar el auto-open al refrescar.
+// La fecha se valida de nuevo en DAILY_LESSON(seedForDate) — fechas fuera
+// del rango [hoy-60d, hoy+1d] se ignoran y el usuario ve el Daily normal.
+const readDailyChallengeFromUrl = () => {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const date = params.get('daily');
+    const by = (params.get('by') || '').slice(0, 40);
+    if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
+    try {
+      params.delete('daily');
+      params.delete('by');
+      const qs = params.toString();
+      const newUrl = window.location.pathname + (qs ? `?${qs}` : '') + window.location.hash;
+      window.history.replaceState({}, '', newUrl);
+    } catch {}
+    return { date, by };
+  } catch { return null; }
+};
+
 const App = () => {
   const saved = loadState();
   const savedOnboarding = loadOnboardingLocal();
   const mustOnboard = needsOnboarding(savedOnboarding);
   const initialInvite = readInviteFromUrl();
+  const initialDailyChallenge = readDailyChallengeFromUrl();
   const [screen, setScreen]           = useState(mustOnboard ? 'onboarding' : (saved?.screen || 'home'));
   const [profile, setProfile]         = useState(saved?.profile || {
     name: '', authMode: null, xp: 340, xpNext: 500,
@@ -109,6 +132,7 @@ const App = () => {
   const [fichaOpen, setFichaOpen]     = useState(null);
   const [activeMode, setActiveMode]   = useState(null);
   const [inviteCode, setInviteCode]   = useState(initialInvite);
+  const [pendingDailyChallenge, setPendingDailyChallenge] = useState(initialDailyChallenge);
 
   // Persist state
   useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
@@ -331,6 +355,17 @@ const App = () => {
     return () => window.removeEventListener('message', h);
   }, []);
 
+  // Viral loop: si el usuario aterrizó con `?daily=YYYY-MM-DD&by=X`, auto-lanza
+  // el Daily de esa fecha una vez se alcanza Home (tras el onboarding si era
+  // necesario). La lógica real vive en openMode('daily') que respeta el
+  // pendingDailyChallenge y lo consume.
+  useEffect(() => {
+    if (!pendingDailyChallenge) return;
+    if (screen !== 'home') return;
+    if (activeLesson || subScreen) return;
+    openMode('daily');
+  }, [pendingDailyChallenge, screen, activeLesson, subScreen]);
+
   const updateTweak = (key, val) => {
     let next = { ...tweaks, [key]: val };
     if (key === 'device') {
@@ -363,8 +398,11 @@ const App = () => {
     if (m === 'library')  { setSubScreen('library');   return; }
     if (m === 'article')  { setSubScreen('article');   return; }
     if (m === 'daily') {
-      const l = typeof window.DAILY_LESSON === 'function' ? window.DAILY_LESSON() : null;
-      if (l) pickLesson(l);
+      const opts = pendingDailyChallenge
+        ? { dateStr: pendingDailyChallenge.date, challengedBy: pendingDailyChallenge.by }
+        : {};
+      const l = typeof window.DAILY_LESSON === 'function' ? window.DAILY_LESSON(opts) : null;
+      if (l) { pickLesson(l); if (pendingDailyChallenge) setPendingDailyChallenge(null); }
       else setActiveMode('any'); // data not ready yet — show the menu instead of doing nothing
       return;
     }

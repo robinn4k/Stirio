@@ -223,11 +223,27 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
 // ————— step components —————
 
 const IntroStep = ({ step, lesson, onContinue }) => {
-  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const tr = (k, f, p) => (window.stUiT ? window.stUiT(k, f, p) : (f || k));
   const categoryLabel = tr(`lesson.category.${(lesson.category || '').toLowerCase()}`, lesson.category);
   return (
   <div style={{ textAlign: 'center' }}>
     <div style={{ fontSize: 64, marginBottom: 16, filter: 'drop-shadow(0 8px 20px var(--amber-glow))' }}>{lesson.emoji}</div>
+    {lesson.challengedBy && (
+      <div style={{
+        display: 'inline-block',
+        padding: '6px 14px',
+        marginBottom: 12,
+        borderRadius: 'var(--r-pill)',
+        background: 'var(--amber-soft)',
+        border: '1px solid var(--amber)',
+        color: 'var(--amber)',
+        fontFamily: 'var(--f-mono)', fontSize: 11, letterSpacing: '0.04em',
+      }}>
+        ⚔ {window.stLang && window.stLang.t
+          ? window.stLang.t('daily.challenged_by', { name: lesson.challengedBy })
+          : `Retado por ${lesson.challengedBy}`}
+      </div>
+    )}
     <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
       {categoryLabel}{Number.isFinite(lesson._timed) ? ` · ${lesson._timed}s` : ''}
     </div>
@@ -630,10 +646,30 @@ const TimingStep = ({ step, onAnswer }) => {
 };
 
 // ————— results screen —————
+const shareDailyChallenge = async ({ correct, total, dateStr }) => {
+  const trLocal = (k, f, p) => (window.stLang?.t ? window.stLang.t(k, p) : (f || k));
+  const effectiveDate = dateStr || new Date().toISOString().slice(0, 10);
+  const handle = (window.stAuth?.getCurrentUser?.()?.name || '').slice(0, 40);
+  const by = handle ? `&by=${encodeURIComponent(handle)}` : '';
+  const url = `https://robinn4k.github.io/Stirio/?daily=${effectiveDate}${by}`;
+  const text = trLocal('daily.share_text', `Mi Daily de Stirio: ${correct}/${total}. ¿Puedes superarme?`, { score: correct, total });
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: 'Stirio Daily', text, url });
+    } else if (navigator.clipboard) {
+      await navigator.clipboard.writeText(`${text} ${url}`);
+      window.stToast?.show({ kind: 'info', title: trLocal('share.copied', 'Copiado al portapapeles'), ttl: 2000 });
+    }
+  } catch (e) {
+    if (e?.name !== 'AbortError') console.warn('[daily share]', e);
+  }
+};
+
 const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish }) => {
   const total = correct + wrong;
   const acc = total ? Math.round((correct / total) * 100) : 0;
   const perfect = wrong === 0 && correct > 0;
+  const isDaily = lesson.category === 'Daily';
 
   const celebratedRef = useRef(false);
   useEffect(() => {
@@ -726,6 +762,23 @@ const LessonResults = ({ lesson, xp, correct, wrong, timeUsed, onExit, onFinish 
             {(window.stUiT ? window.stUiT('results.next_lesson', 'Next lesson') : 'Next lesson')} <Icon name="arrowR" size={16} />
           </button>
         </div>
+        {isDaily && (
+          <button
+            onClick={() => shareDailyChallenge({ correct, total, dateStr: lesson.dailyDate })}
+            style={{
+              marginTop: 12, width: '100%', padding: '12px 16px',
+              background: 'transparent',
+              border: '1px solid var(--amber)',
+              color: 'var(--amber)',
+              borderRadius: 'var(--r-pill)',
+              fontWeight: 600, fontSize: 13,
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+              cursor: 'pointer',
+            }}
+          >
+            ⚔ {(window.stUiT ? window.stUiT('daily.share_cta', 'Desafía a alguien') : 'Desafía a alguien')}
+          </button>
+        )}
       </div>
     </div>
   );
