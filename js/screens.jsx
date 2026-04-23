@@ -275,7 +275,14 @@ const OnboardingHookStep = ({ language, onContinue }) => {
 
 const Onboarding = ({ onDone }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
-  const [step, setStep] = useState(0);
+  // Si el navegador ya tiene un idioma reconocido (lo persiste lang.js tras
+  // auto-detectar), saltamos el step 0 (selector de idioma). El usuario puede
+  // cambiarlo igualmente desde Perfil → Idioma sin volver al onboarding.
+  const LANG_STORED = (() => {
+    try { return !!localStorage.getItem('stirio_lang'); } catch { return false; }
+  })();
+  const STEP_OFFSET = LANG_STORED ? 1 : 0;
+  const [step, setStep] = useState(STEP_OFFSET);
   const [authMode, setAuthMode] = useState(null); // 'google' | 'guest'
   const [name, setName] = useState('');
   const [level, setLevel] = useState(null);
@@ -387,9 +394,13 @@ const Onboarding = ({ onDone }) => {
   };
 
   const next = () => setStep(s => s + 1);
-  const back = () => setStep(s => Math.max(0, s - 1));
+  const back = () => setStep(s => Math.max(STEP_OFFSET, s - 1));
 
+  // Número máximo de pasos lógicos (índice máximo + 1). Visualmente el
+  // progress bar muestra (totalSteps - STEP_OFFSET) puntos cuando se saltó
+  // el step 0 para que "x de 6" sea coherente con lo que el usuario ve.
   const totalSteps = 7;
+  const visibleSteps = totalSteps - STEP_OFFSET;
   const toggleInterest = (id) => setInterests(xs => xs.includes(id) ? xs.filter(x => x !== id) : [...xs, id]);
   const canNext = {
     0: !!language,           // language picker (now the first step)
@@ -433,14 +444,17 @@ const Onboarding = ({ onDone }) => {
       <div style={{ maxWidth: 480, width: '100%', position: 'relative', zIndex: 2 }}>
         {step !== 1 && (
           <div style={{ display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 32 }}>
-            {Array.from({ length: totalSteps }).map((_, i) => (
-              <div key={i} style={{
-                width: step === i ? 28 : 8, height: 8, borderRadius: 99,
-                background: i <= step ? 'var(--amber)' : 'var(--bg-3)',
-                transition: 'all .3s',
-                boxShadow: step === i ? '0 0 10px var(--amber-glow)' : 'none',
-              }} />
-            ))}
+            {Array.from({ length: visibleSteps }).map((_, i) => {
+              const displayed = step - STEP_OFFSET;
+              return (
+                <div key={i} style={{
+                  width: displayed === i ? 28 : 8, height: 8, borderRadius: 99,
+                  background: i <= displayed ? 'var(--amber)' : 'var(--bg-3)',
+                  transition: 'all .3s',
+                  boxShadow: displayed === i ? '0 0 10px var(--amber-glow)' : 'none',
+                }} />
+              );
+            })}
           </div>
         )}
 
