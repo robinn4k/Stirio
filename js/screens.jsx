@@ -10,15 +10,6 @@ const ONBOARDING_LANGS = [
   { id: 'de', label: 'Deutsch',  flag: '🇩🇪' },
 ];
 
-const ONBOARDING_INTERESTS = [
-  { id: 'iba',           emoji: '📖' },
-  { id: 'techniques',    emoji: '🎯' },
-  { id: 'history',       emoji: '📜' },
-  { id: 'tiki',          emoji: '🌺' },
-  { id: 'mocktails',     emoji: '🍋' },
-  { id: 'spirits_world', emoji: '🗺️' },
-];
-
 const ONBOARDING_SPIRITS = [
   { id: 'gin',     emoji: '🌿' },
   { id: 'rum',     emoji: '🏝️' },
@@ -289,7 +280,6 @@ const Onboarding = ({ onDone }) => {
   const [language, setLanguage] = useState(() => {
     try { return (window.stLang?.getLang?.()) || 'es'; } catch { return 'es'; }
   });
-  const [interests, setInterests] = useState([]);
   const [alcohol, setAlcohol] = useState(null);    // 'regular' | 'mocktails'
   const [favSpirit, setFavSpirit] = useState(null);
   const [googleUser, setGoogleUser] = useState(null); // {uid,name,email,photo} from Firebase
@@ -399,17 +389,15 @@ const Onboarding = ({ onDone }) => {
   // Número máximo de pasos lógicos (índice máximo + 1). Visualmente el
   // progress bar muestra (totalSteps - STEP_OFFSET) puntos cuando se saltó
   // el step 0 para que "x de 6" sea coherente con lo que el usuario ve.
-  const totalSteps = 7;
+  const totalSteps = 6;
   const visibleSteps = totalSteps - STEP_OFFSET;
-  const toggleInterest = (id) => setInterests(xs => xs.includes(id) ? xs.filter(x => x !== id) : [...xs, id]);
   const canNext = {
     0: !!language,           // language picker (now the first step)
     1: true,                 // auth step advances via its own buttons
     2: authMode === 'google' || authMode === 'email' || (authMode === 'guest' && name.trim().length > 0),
     3: level !== null,
-    4: true,                 // interests can be empty (skip-friendly)
-    5: alcohol !== null,
-    6: true,                 // favSpirit optional
+    4: alcohol !== null,     // regular vs mocktails
+    5: true,                 // favSpirit optional
   }[step];
 
   const submit = () => onDone({
@@ -421,7 +409,6 @@ const Onboarding = ({ onDone }) => {
     onboarding: {
       difficulty: level || 'skip',
       language,
-      interests,
       alcohol: alcohol || 'regular',
       favSpirit: favSpirit || null,
     },
@@ -818,34 +805,6 @@ const Onboarding = ({ onDone }) => {
 
           {step === 4 && (
             <div>
-              <StepTitle eyebrow={tr('onboarding.interests_eyebrow', 'intereses')} title={tr('onboarding.interests_title', '¿Qué te gustaría aprender?')} subtitle={tr('onboarding.interests_subtitle', 'Elige tantas como quieras.')} />
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
-                {ONBOARDING_INTERESTS.map(it => {
-                  const picked = interests.includes(it.id);
-                  return (
-                    <button key={it.id} onClick={() => toggleInterest(it.id)} style={{
-                      padding: 14,
-                      display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 6,
-                      textAlign: 'left',
-                      borderRadius: 'var(--r-md)',
-                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
-                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
-                      transition: 'all .15s',
-                      minHeight: 76,
-                    }}>
-                      <div style={{ fontSize: 22 }}>{it.emoji}</div>
-                      <div style={{ fontWeight: 500, fontSize: 13 }}>
-                        {tr(`onboarding.interest.${it.id}`)}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {step === 5 && (
-            <div>
               <StepTitle eyebrow={tr('onboarding.alcohol_eyebrow', 'preferencia')} title={tr('onboarding.alcohol_title', '¿Bebes alcohol?')} subtitle={tr('onboarding.alcohol_subtitle', 'Adaptamos las recetas que te sugerimos.')} />
               <div style={{ display: 'grid', gap: 10 }}>
                 {[
@@ -886,7 +845,7 @@ const Onboarding = ({ onDone }) => {
             </div>
           )}
 
-          {step === 6 && (
+          {step === 5 && (
             <div>
               <StepTitle eyebrow={tr('onboarding.spirit_eyebrow', 'destilado')} title={tr('onboarding.spirit_title', '¿Tu destilado favorito?')} subtitle={tr('onboarding.spirit_subtitle', 'Lo usaremos para sugerirte recetas.')} />
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
