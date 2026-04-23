@@ -348,13 +348,17 @@ const Onboarding = ({ onDone }) => {
     return hint ? `${base} (${hint})` : base;
   };
 
-  // Uses signInWithGoogleRedirect instead of signInWithPopup: the popup +
-  // hidden-iframe + postMessage dance breaks in Chrome with third-party
-  // cookies blocked (default on iOS/PWA/Brave), returning auth/internal-error.
-  // Redirect navigates the whole page to Google, then back via
-  // {authDomain}/__/auth/handler — app.jsx picks up the user via
-  // getRedirectResult on mount and completes onboarding with the pending
-  // answers we stash below.
+  // Popup-first, redirect-fallback. Popup keeps the Onboarding component
+  // mounted and returns the user synchronously via postMessage — no redirect
+  // round-trip, no reliance on getRedirectResult, no localStorage stash
+  // recovery. It's the most reliable path on desktop browsers, and the SW
+  // fix in v10.79+ means signInWithPopup no longer hits auth/internal-error.
+  //
+  // We still stash the onboarding answers before trying popup: if the
+  // browser blocks popups (or we're in an environment where popup isn't
+  // supported, e.g. installed iOS PWA), we fall through to
+  // signInWithGoogleRedirect and app.jsx picks up the pending stash on
+  // return via getRedirectResult.
   const handleGoogle = () => {
     setAuthError(null);
     if (!window.stAuth || !window.stAuth.isFirebaseReady?.()) {
@@ -367,15 +371,41 @@ const Onboarding = ({ onDone }) => {
         name, level, favSpirit, language, alcohol, at: Date.now(),
       }));
     } catch {}
-    window.stAuth.signInWithGoogleRedirect().catch((e) => {
-      // Only reached when the SDK rejects before navigating (init missing,
-      // CSP blocks the form submit, etc.). On success the page is already
-      // gone so the promise never settles here.
-      console.warn('[auth] google', e);
-      try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
-      setAuthError(googleErrorMessage(e));
-      setAuthLoading(false);
-    });
+
+    // Sync call inside the user-gesture tick so browsers don't block the popup.
+    window.stAuth.signInWithGoogle()
+      .then((user) => {
+        try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+        setAuthMode('google');
+        setGoogleUser(user);
+        setName(user.name || name);
+        submit({ authMode: 'google', googleUser: user, name: user.name || name });
+      })
+      .catch((e) => {
+        const code = e?.code || '';
+        const fallbackCodes = new Set([
+          'auth/popup-blocked',
+          'auth/popup-closed-by-user',
+          'auth/cancelled-popup-request',
+          'auth/operation-not-supported-in-this-environment',
+          'auth/internal-error',
+        ]);
+        if (fallbackCodes.has(code)) {
+          // Popup not viable — fall back to redirect. The stash in
+          // localStorage lets app.jsx complete onboarding on return.
+          window.stAuth.signInWithGoogleRedirect().catch((redirectErr) => {
+            console.warn('[auth] google redirect fallback', redirectErr);
+            try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+            setAuthError(googleErrorMessage(redirectErr));
+            setAuthLoading(false);
+          });
+          return;
+        }
+        console.warn('[auth] google popup', e);
+        try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+        setAuthError(googleErrorMessage(e));
+        setAuthLoading(false);
+      });
   };
 
   const handleGuest = () => {
