@@ -1,4 +1,4 @@
-import { firebaseConfig, FIREBASE_ENABLED } from './firebase-config.js';
+import { firebaseConfig, FIREBASE_ENABLED, GOOGLE_OAUTH_CLIENT_ID } from './firebase-config.js';
 import { t } from './lang.js';
 
 const FIREBASE_CDN = 'https://www.gstatic.com/firebasejs/10.7.1';
@@ -226,6 +226,121 @@ function signInWithGoogleRedirect() {
   provider.addScope('profile');
   provider.addScope('email');
   return signInWithRedirect(auth, provider);
+}
+
+// ─── Login con Google (GIS / One Tap) ────────────────────────
+// Modern Google sign-in via Google Identity Services. Works in browsers
+// with third-party cookies blocked (Chrome 115+, Safari, Firefox strict)
+// because it doesn't rely on cross-origin cookies for the authDomain.
+// Requires GOOGLE_OAUTH_CLIENT_ID to be set in firebase-config.js and the
+// app origin to be listed in the OAuth client's Authorized JavaScript
+// origins in Google Cloud Console.
+let gisInitialized = false;
+let gisTokenResolver = null;
+
+function isGISReady() {
+  return typeof window !== 'undefined'
+    && !!window.google?.accounts?.id
+    && !!GOOGLE_OAUTH_CLIENT_ID;
+}
+
+function initGISIfNeeded() {
+  if (gisInitialized) return true;
+  if (!isGISReady()) return false;
+  window.google.accounts.id.initialize({
+    client_id: GOOGLE_OAUTH_CLIENT_ID,
+    callback: (response) => {
+      const resolve = gisTokenResolver?.resolve;
+      gisTokenResolver = null;
+      if (resolve) resolve(response?.credential || null);
+    },
+    // Keep the prompt lightweight; user can dismiss freely.
+    auto_select: false,
+    cancel_on_tap_outside: true,
+  });
+  gisInitialized = true;
+  return true;
+}
+
+async function signInWithGoogleGIS() {
+  if (!auth || !authMod) {
+    const err = new Error('Firebase no configurado.');
+    err.code = 'auth/not-initialized';
+    throw err;
+  }
+  if (!isGISReady()) {
+    const err = new Error('GIS no disponible (cliente ID o script de Google no listo).');
+    err.code = 'auth/gis-unavailable';
+    throw err;
+  }
+  initGISIfNeeded();
+
+  // Wait for the One Tap / account chooser to return an ID token. Times
+  // out after 60s so a user that dismisses the prompt doesn't hang.
+  const idToken = await new Promise((resolve, reject) => {
+    let settled = false;
+    const timeoutId = setTimeout(() => {
+      if (!settled) {
+        settled = true;
+        gisTokenResolver = null;
+        const err = new Error('Timeout esperando credencial de Google.');
+        err.code = 'auth/gis-timeout';
+        reject(err);
+      }
+    }, 60000);
+    gisTokenResolver = {
+      resolve: (token) => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeoutId);
+        if (token) resolve(token);
+        else {
+          const err = new Error('Google no devolvió credencial.');
+          err.code = 'auth/gis-no-credential';
+          reject(err);
+        }
+      },
+    };
+    try {
+      window.google.accounts.id.prompt((notification) => {
+        // Handle One Tap not being displayed (e.g. user previously
+        // dismissed it, or FedCM disabled). Surface as an error so the
+        // caller can fall back to popup/redirect.
+        if (notification?.isNotDisplayed?.() || notification?.isSkippedMoment?.()) {
+          if (settled) return;
+          settled = true;
+          clearTimeout(timeoutId);
+          gisTokenResolver = null;
+          const reason = notification.getNotDisplayedReason?.() || notification.getSkippedReason?.() || 'unknown';
+          const err = new Error(`GIS prompt no mostrado (${reason}).`);
+          err.code = 'auth/gis-not-displayed';
+          reject(err);
+        }
+      });
+    } catch (e) {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeoutId);
+      gisTokenResolver = null;
+      reject(e);
+    }
+  });
+
+  const { GoogleAuthProvider, signInWithCredential } = authMod;
+  const credential = GoogleAuthProvider.credential(idToken);
+  const result = await signInWithCredential(auth, credential);
+  const u = result.user;
+  currentUser = {
+    uid: u.uid,
+    name: u.displayName || u.email?.split('@')[0] || t('auth.google_player'),
+    email: u.email,
+    photo: u.photoURL,
+    provider: 'google',
+    isGuest: false,
+  };
+  saveUserLocal(currentUser);
+  seedUserDoc(currentUser);
+  return currentUser;
 }
 
 // Returns the user detected by getRedirectResult during the most recent
@@ -540,6 +655,8 @@ export {
   initFirebase,
   signInWithGoogle,
   signInWithGoogleRedirect,
+  signInWithGoogleGIS,
+  isGISReady,
   consumePendingRedirectUser,
   waitForRealAuthUser,
   signUpWithEmail,

@@ -38,3 +38,22 @@ export const firebaseConfig = {
 };
 
 export const FIREBASE_ENABLED = true;
+
+/**
+ * Google Identity Services (GIS) OAuth 2.0 Web Client ID.
+ *
+ * Cómo obtenerlo:
+ * 1. https://console.cloud.google.com/apis/credentials?project=dblearn-45fcc
+ * 2. Bajo "OAuth 2.0 Client IDs" busca "Web client (auto-created by
+ *    Google Service)" o el cliente que creó Firebase al habilitar Google
+ *    sign-in. Tiene formato `111717730902-XXXXXXXX.apps.googleusercontent.com`.
+ * 3. Copia el Client ID y pégalo abajo.
+ * 4. En ese mismo cliente, añade el origen de la app a "Authorized
+ *    JavaScript origins" (p.ej. `https://robinn4k.github.io`) y guarda.
+ *
+ * Con esto configurado, el login de Google usa el flujo GIS moderno que
+ * funciona sin cookies de terceros. Si lo dejas vacío, la app cae al
+ * flujo clásico signInWithPopup / signInWithRedirect (que puede fallar en
+ * navegadores con 3P cookies bloqueadas).
+ */
+export const GOOGLE_OAUTH_CLIENT_ID = "";
