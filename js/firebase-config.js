@@ -56,4 +56,4 @@ export const FIREBASE_ENABLED = true;
  * flujo clásico signInWithPopup / signInWithRedirect (que puede fallar en
  * navegadores con 3P cookies bloqueadas).
  */
-export const GOOGLE_OAUTH_CLIENT_ID = "";
+export const GOOGLE_OAUTH_CLIENT_ID = "111717730902-di8jmo881plbuveabpqrrgs5ku83db4k.apps.googleusercontent.com";
