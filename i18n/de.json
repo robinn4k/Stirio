@@ -1952,6 +1952,7 @@
   "onboarding.auth_popup_blocked": "Dein Browser hat das Popup blockiert. Erlaube Popups und versuche es erneut.",
   "onboarding.auth_network": "Keine Verbindung. Prüfe dein Internet und versuche es erneut.",
   "onboarding.auth_unauthorized_domain": "Nicht autorisierte Domain in Firebase.",
+  "onboarding.auth_internal_error": "Beim Anmelden ist ein Problem aufgetreten. Lade die Seite neu und versuche es erneut.",
   "onboarding.auth_provider_disabled": "Google-Anmeldung ist nicht aktiviert.",
   "onboarding.auth_account_conflict": "Es gibt bereits ein Konto mit dieser E-Mail über eine andere Methode.",
   "mode.close": "Schließen",
