@@ -300,6 +300,23 @@ const Onboarding = ({ onDone }) => {
   const [hookDone, setHookDone] = useState(() => {
     try { return localStorage.getItem(HOOK_DONE_KEY) === '1'; } catch { return false; }
   });
+  // "Sorpréndeme" en el step Perfil express: si el usuario lo usa, rellenamos
+  // level+spirit al azar y habilitamos el botón Continuar aunque no haya
+  // escrito un handle (el path guest auto-genera "Invitado-XXXX" más tarde).
+  const [surpriseMeUsed, setSurpriseMeUsed] = useState(false);
+
+  const autoGuestHandle = () => {
+    const suffix = Math.random().toString(36).slice(2, 6).toUpperCase();
+    return `Invitado-${suffix}`;
+  };
+
+  const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const handleSurprise = () => {
+    const LEVELS = ['rookie', 'home', 'pro'];
+    if (!level) setLevel(pickRandom(LEVELS));
+    if (!favSpirit) setFavSpirit(pickRandom(ONBOARDING_SPIRITS).id);
+    setSurpriseMeUsed(true);
+  };
 
   const handleGoogle = async () => {
     setAuthError(null);
@@ -310,8 +327,10 @@ const Onboarding = ({ onDone }) => {
       const user = await window.stAuth.signInWithGoogle();
       setGoogleUser(user);
       setAuthMode('google');
-      setName(user.name || '');
-      setStep(2);
+      setName(user.name || name);
+      // Auth es el paso final: completamos el onboarding sin esperar a que
+      // React flushe los setState previos.
+      submit({ authMode: 'google', googleUser: user, name: user.name || name });
     } catch (e) {
       console.warn('[auth] google', e);
       setAuthError(e.code === 'auth/popup-closed-by-user' ? tr('onboarding.auth_cancel', 'Cancelaste el login') : tr('onboarding.auth_error', 'Error al iniciar con Google'));
@@ -323,8 +342,10 @@ const Onboarding = ({ onDone }) => {
   const handleGuest = () => {
     setAuthError(null);
     if (window.stAuth) { try { window.stAuth.signInAsGuest(); } catch {} }
+    const effName = name.trim() || autoGuestHandle();
     setAuthMode('guest');
-    setStep(2);
+    setName(effName);
+    submit({ authMode: 'guest', name: effName });
   };
 
   const applyLanguage = (code) => {
@@ -361,11 +382,12 @@ const Onboarding = ({ onDone }) => {
       const user = emailMode === 'signup'
         ? await window.stAuth.signUpWithEmail(emailAddr, emailPass, emailName)
         : await window.stAuth.signInWithEmail(emailAddr, emailPass);
+      const effName = user.name || emailName || name;
       setAuthMode('email');
-      setName(user.name || emailName || '');
+      setName(effName);
       setEmailMode('idle');
       setEmailPass('');
-      setStep(2);
+      submit({ authMode: 'email', name: effName, email: emailAddr });
     } catch (e) {
       console.warn('[auth] email', e);
       setAuthError(emailErrorMessage(e));
@@ -394,31 +416,45 @@ const Onboarding = ({ onDone }) => {
 
   // Número máximo de pasos lógicos (índice máximo + 1). Visualmente el
   // progress bar muestra (totalSteps - STEP_OFFSET) puntos cuando se saltó
-  // el step 0 para que "x de 6" sea coherente con lo que el usuario ve.
-  const totalSteps = 6;
+  // el step 0 para que "x de 4" sea coherente con lo que el usuario ve.
+  //
+  //   0 → Idioma (solo si !LANG_STORED)
+  //   1 → Perfil express (handle + level + spirit con Sorpréndeme)
+  //   2 → Mocktails (¿alcohol?)
+  //   3 → Auth gate (soft): Google / email / guest — handlers llaman a submit() directamente.
+  const totalSteps = 4;
   const visibleSteps = totalSteps - STEP_OFFSET;
   const canNext = {
-    0: !!language,           // language picker (now the first step)
-    1: true,                 // auth step advances via its own buttons
-    2: authMode === 'google' || authMode === 'email' || (authMode === 'guest' && name.trim().length > 0),
-    3: level !== null,
-    4: alcohol !== null,     // regular vs mocktails
-    5: true,                 // favSpirit optional
+    0: !!language,
+    1: (name.trim().length > 0) || surpriseMeUsed,
+    2: alcohol !== null,
+    3: true, // auth step se maneja con sus propios botones; no usa el bottom nav.
   }[step];
 
-  const submit = () => onDone({
-    name: authMode === 'google' ? (googleUser?.name || name) : name,
-    email: googleUser?.email || null,
-    photoURL: googleUser?.photo || null,
-    uid: googleUser?.uid || null,
-    authMode,
-    onboarding: {
-      difficulty: level || 'skip',
-      language,
-      alcohol: alcohol || 'regular',
-      favSpirit: favSpirit || null,
-    },
-  });
+  // `submit` puede llamarse desde el bottom nav (Continuar→Entrar) o desde un
+  // handler de auth que acaba de resolver. En el segundo caso React todavía no
+  // ha flushado el setState del authMode/googleUser, por lo que aceptamos un
+  // override explícito que evita la dependencia temporal con state flush.
+  const submit = (override = null) => {
+    const effMode = override?.authMode || authMode;
+    const effUser = override?.googleUser || googleUser;
+    const effName = override?.name
+      || (effMode === 'google' ? (effUser?.name || name) : name)
+      || (effMode === 'guest' ? autoGuestHandle() : '');
+    return onDone({
+      name: effName,
+      email: effUser?.email || override?.email || null,
+      photoURL: effUser?.photo || null,
+      uid: effUser?.uid || null,
+      authMode: effMode,
+      onboarding: {
+        difficulty: level || 'skip',
+        language,
+        alcohol: alcohol || 'regular',
+        favSpirit: favSpirit || null,
+      },
+    });
+  };
 
   // Aha-moment primero: valida la propuesta antes de pedir idioma/auth.
   // Una vez visto se persiste en localStorage para no repetirlo si el
@@ -435,7 +471,7 @@ const Onboarding = ({ onDone }) => {
       overflow: 'auto',
     }}>
       <div style={{ maxWidth: 480, width: '100%', position: 'relative', zIndex: 2 }}>
-        {step !== 1 && (
+        {step !== totalSteps - 1 && (
           <div style={{ display: 'flex', gap: 6, justifyContent: 'center', marginBottom: 32 }}>
             {Array.from({ length: visibleSteps }).map((_, i) => {
               const displayed = step - STEP_OFFSET;
@@ -503,6 +539,157 @@ const Onboarding = ({ onDone }) => {
           )}
 
           {step === 1 && (
+            <div>
+              <StepTitle
+                eyebrow={tr('onboarding.express.eyebrow', 'perfil')}
+                title={tr('onboarding.express.title', 'Cuéntanos un poco')}
+                subtitle={tr('onboarding.express.subtitle', 'Tres toques y listo.')}
+              />
+
+              {/* Handle */}
+              <input
+                placeholder={tr('onboarding.alias_placeholder', 'tu alias')}
+                value={name}
+                onChange={e => setName(e.target.value)}
+                maxLength={40}
+                style={{
+                  width: '100%',
+                  padding: '14px 18px',
+                  fontSize: 18,
+                  fontFamily: 'var(--f-serif)',
+                  background: 'var(--bg-1)',
+                  border: '1px solid var(--line)',
+                  borderRadius: 'var(--r-md)',
+                  outline: 'none',
+                  transition: 'border .2s, box-shadow .2s',
+                  marginBottom: 18,
+                }}
+                onFocus={e => { e.target.style.borderColor = 'var(--amber)'; e.target.style.boxShadow = '0 0 0 4px var(--amber-soft)'; }}
+                onBlur={e => { e.target.style.borderColor = 'var(--line)'; e.target.style.boxShadow = 'none'; }}
+              />
+
+              {/* Nivel */}
+              <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 8 }}>
+                {tr('onboarding.level_eyebrow', 'nivel')}
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8, marginBottom: 18 }}>
+                {[
+                  { id: 'rookie', emoji: '🌱', key: 'onboarding.level_rookie', fallback: 'Nuevo' },
+                  { id: 'home',   emoji: '🏠', key: 'onboarding.level_home',   fallback: 'Casero' },
+                  { id: 'pro',    emoji: '🥃', key: 'onboarding.level_pro',    fallback: 'Pro' },
+                ].map(lv => {
+                  const picked = level === lv.id;
+                  return (
+                    <button key={lv.id} onClick={() => setLevel(lv.id)} style={{
+                      padding: 10,
+                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
+                      textAlign: 'center',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                      minHeight: 76,
+                    }}>
+                      <div style={{ fontSize: 22 }}>{lv.emoji}</div>
+                      <div style={{ fontSize: 11, fontWeight: 500 }}>
+                        {tr(lv.key, lv.fallback)}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Destilado favorito */}
+              <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 8 }}>
+                {tr('onboarding.spirit_eyebrow', 'destilado')}
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
+                {ONBOARDING_SPIRITS.map(s => {
+                  const picked = favSpirit === s.id;
+                  return (
+                    <button key={s.id} onClick={() => setFavSpirit(picked ? null : s.id)} style={{
+                      padding: 12,
+                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
+                      textAlign: 'center',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 22 }}>{s.emoji}</div>
+                      <div style={{ fontSize: 11, fontWeight: 500 }}>
+                        {tr(`onboarding.spirit.${s.id}`)}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              <button
+                onClick={handleSurprise}
+                style={{
+                  marginTop: 18, width: '100%', padding: 10,
+                  background: 'transparent', border: 0,
+                  color: 'var(--amber)', fontFamily: 'var(--f-mono)', fontSize: 12,
+                  textDecoration: 'underline', textUnderlineOffset: 3,
+                  cursor: 'pointer',
+                }}
+              >
+                ✨ {tr('onboarding.express.surprise', 'Sorpréndeme')}
+              </button>
+              {surpriseMeUsed && !name.trim() && (
+                <div className="mono" style={{
+                  marginTop: 8, fontSize: 10, color: 'var(--ink-3)', textAlign: 'center',
+                }}>
+                  {tr('onboarding.guest_handle_auto', 'Elegimos un alias para ti (editable en Perfil)')}
+                </div>
+              )}
+            </div>
+          )}
+
+          {step === 2 && (
+            <div>
+              <StepTitle eyebrow={tr('onboarding.alcohol_eyebrow', 'preferencia')} title={tr('onboarding.alcohol_title', '¿Bebes alcohol?')} subtitle={tr('onboarding.alcohol_subtitle', 'Adaptamos las recetas que te sugerimos.')} />
+              <div style={{ display: 'grid', gap: 10 }}>
+                {[
+                  { id: 'regular',   emoji: '🍸' },
+                  { id: 'mocktails', emoji: '🍹' },
+                ].map(a => {
+                  const picked = alcohol === a.id;
+                  return (
+                    <button key={a.id} onClick={() => setAlcohol(a.id)} style={{
+                      padding: 16,
+                      display: 'flex', alignItems: 'center', gap: 14,
+                      textAlign: 'left',
+                      borderRadius: 'var(--r-md)',
+                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
+                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
+                      transition: 'all .15s',
+                    }}>
+                      <div style={{ fontSize: 28 }}>{a.emoji}</div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 500, fontSize: 15 }}>
+                          {tr(`onboarding.alcohol_${a.id}`)}
+                        </div>
+                        <div style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
+                          {tr(`onboarding.alcohol_${a.id}_cap`)}
+                        </div>
+                      </div>
+                      <div style={{
+                        width: 22, height: 22, borderRadius: '50%',
+                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
+                        display: 'grid', placeItems: 'center',
+                      }}>
+                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {step === 3 && (
             <div style={{ textAlign: 'center' }}>
               <div style={{
                 fontSize: 88, margin: '0 auto 14px',
@@ -511,20 +698,20 @@ const Onboarding = ({ onDone }) => {
               }}>🍸</div>
               <h1 style={{
                 fontFamily: 'var(--f-serif)', fontWeight: 400,
-                fontSize: 'clamp(56px, 9vw, 84px)',
-                margin: '0 0 6px', lineHeight: 0.95,
+                fontSize: 'clamp(34px, 6vw, 44px)',
+                margin: '0 0 6px', lineHeight: 1.05,
                 letterSpacing: '-0.02em',
               }}>
-                Stirio<span style={{ color: 'var(--amber)' }}>.</span>
+                {tr('onboarding.soft_gate.title', 'Guarda tu progreso')}
               </h1>
               <p style={{
                 fontFamily: 'var(--f-serif)', fontStyle: 'italic',
-                fontSize: 20, color: 'var(--ink-2)',
+                fontSize: 16, color: 'var(--ink-2)',
                 margin: '0 0 4px',
               }}>
-                {tr('login.tagline', 'Domina el arte del cóctel.')}
+                {tr('onboarding.soft_gate.subtitle', 'Así no pierdes tu racha del día 1.')}
               </p>
-              <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, letterSpacing: '0.14em', marginBottom: 36 }}>
+              <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, letterSpacing: '0.14em', marginBottom: 28 }}>
                 {tr('login.sub', 'Aprende · Juega · Compite')}
               </div>
 
@@ -697,200 +884,9 @@ const Onboarding = ({ onDone }) => {
               </div>
             </div>
           )}
-
-          {step === 2 && authMode === 'guest' && (
-            <div>
-              <StepTitle eyebrow={tr('onboarding.handle_eyebrow', 'tu handle')} title={tr('onboarding.handle_title', '¿Cómo te llamamos?')} subtitle={tr('onboarding.handle_subtitle', 'Aparecerá en duelos y en la tabla global.')} />
-              <input
-                autoFocus
-                placeholder={tr('onboarding.alias_placeholder', 'tu alias')}
-                value={name}
-                onChange={e => setName(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '18px 22px',
-                  fontSize: 24,
-                  fontFamily: 'var(--f-serif)',
-                  background: 'var(--bg-1)',
-                  border: '1px solid var(--line)',
-                  borderRadius: 'var(--r-md)',
-                  outline: 'none',
-                  transition: 'border .2s, box-shadow .2s',
-                }}
-                onFocus={e => { e.target.style.borderColor = 'var(--amber)'; e.target.style.boxShadow = '0 0 0 4px var(--amber-soft)'; }}
-                onBlur={e => { e.target.style.borderColor = 'var(--line)'; e.target.style.boxShadow = 'none'; }}
-              />
-            </div>
-          )}
-
-          {step === 2 && (authMode === 'google' || authMode === 'email') && (
-            <div style={{ textAlign: 'center' }}>
-              {googleUser?.photo ? (
-                <img src={googleUser.photo} alt=""
-                  referrerPolicy="no-referrer"
-                  style={{
-                    width: 80, height: 80, borderRadius: '50%',
-                    margin: '0 auto 14px', objectFit: 'cover',
-                    boxShadow: '0 0 30px var(--amber-glow)',
-                  }}/>
-              ) : (
-                <div style={{
-                  width: 80, height: 80, borderRadius: '50%',
-                  margin: '0 auto 14px',
-                  background: 'linear-gradient(135deg, var(--amber), var(--berry))',
-                  display: 'grid', placeItems: 'center',
-                  fontSize: 32, fontWeight: 600, color: 'var(--bg-0)',
-                  boxShadow: '0 0 30px var(--amber-glow)',
-                }}>{(googleUser?.name || '?').charAt(0).toUpperCase()}</div>
-              )}
-              <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, marginBottom: 4 }}>
-                {window.stLang && window.stLang.t
-                  ? window.stLang.t('onboarding.google_hello', { name: googleUser?.name || tr('home.guest', 'invitado') })
-                  : `¡Hola, ${googleUser?.name || tr('home.guest', 'invitado')}!`}
-              </div>
-              {googleUser?.email && (
-                <div style={{ color: 'var(--ink-2)', marginBottom: 6 }}>{googleUser.email}</div>
-              )}
-              <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em' }}>
-                {tr('onboarding.google_session', '· sesión iniciada con google ·')}
-              </div>
-            </div>
-          )}
-
-          {step === 3 && (
-            <div>
-              <StepTitle eyebrow={tr('onboarding.level_eyebrow', 'nivel')} title={tr('onboarding.level_title', '¿Qué tal te llevas con la coctelería?')} subtitle={tr('onboarding.level_subtitle', 'Ajustamos la dificultad. Puedes cambiarlo cuando quieras.')} />
-              <div style={{ display: 'grid', gap: 10 }}>
-                {[
-                  { id: 'rookie', label: tr('onboarding.level_rookie', 'Soy nuevo'), caption: tr('onboarding.level_rookie_cap', 'Empezamos por lo clásico'), emoji: '🌱' },
-                  { id: 'home', label: tr('onboarding.level_home', 'Bartender casero'), caption: tr('onboarding.level_home_cap', 'Conozco lo básico, quiero más'), emoji: '🏠' },
-                  { id: 'pro', label: tr('onboarding.level_pro', 'Pro / curioso serio'), caption: tr('onboarding.level_pro_cap', 'Dame historia, técnica y retos'), emoji: '🥃' },
-                ].map(g => {
-                  const picked = level === g.id;
-                  return (
-                    <button key={g.id} onClick={() => setLevel(g.id)} style={{
-                      padding: 16,
-                      display: 'flex', alignItems: 'center', gap: 14,
-                      textAlign: 'left',
-                      borderRadius: 'var(--r-md)',
-                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
-                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
-                      transition: 'all .15s',
-                    }}>
-                      <div style={{ fontSize: 28 }}>{g.emoji}</div>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 500, fontSize: 15 }}>{g.label}</div>
-                        <div style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
-                          {g.caption}
-                        </div>
-                      </div>
-                      <div style={{
-                        width: 22, height: 22, borderRadius: '50%',
-                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
-                        display: 'grid', placeItems: 'center',
-                      }}>
-                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-              <button
-                onClick={() => { setLevel('skip'); }}
-                style={{
-                  marginTop: 14, width: '100%', padding: 10,
-                  background: 'transparent', border: 0,
-                  color: 'var(--ink-3)', fontFamily: 'var(--f-mono)', fontSize: 12,
-                  textDecoration: 'underline', textUnderlineOffset: 3,
-                }}
-              >
-                {tr('onboarding.skip', 'Saltar — decidir luego')}
-              </button>
-            </div>
-          )}
-
-          {step === 4 && (
-            <div>
-              <StepTitle eyebrow={tr('onboarding.alcohol_eyebrow', 'preferencia')} title={tr('onboarding.alcohol_title', '¿Bebes alcohol?')} subtitle={tr('onboarding.alcohol_subtitle', 'Adaptamos las recetas que te sugerimos.')} />
-              <div style={{ display: 'grid', gap: 10 }}>
-                {[
-                  { id: 'regular',   emoji: '🍸' },
-                  { id: 'mocktails', emoji: '🍹' },
-                ].map(a => {
-                  const picked = alcohol === a.id;
-                  return (
-                    <button key={a.id} onClick={() => setAlcohol(a.id)} style={{
-                      padding: 16,
-                      display: 'flex', alignItems: 'center', gap: 14,
-                      textAlign: 'left',
-                      borderRadius: 'var(--r-md)',
-                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
-                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
-                      transition: 'all .15s',
-                    }}>
-                      <div style={{ fontSize: 28 }}>{a.emoji}</div>
-                      <div style={{ flex: 1 }}>
-                        <div style={{ fontWeight: 500, fontSize: 15 }}>
-                          {tr(`onboarding.alcohol_${a.id}`)}
-                        </div>
-                        <div style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-3)' }}>
-                          {tr(`onboarding.alcohol_${a.id}_cap`)}
-                        </div>
-                      </div>
-                      <div style={{
-                        width: 22, height: 22, borderRadius: '50%',
-                        border: `2px solid ${picked ? 'var(--amber)' : 'var(--ink-3)'}`,
-                        display: 'grid', placeItems: 'center',
-                      }}>
-                        {picked && <div style={{ width: 10, height: 10, borderRadius: '50%', background: 'var(--amber)' }} />}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {step === 5 && (
-            <div>
-              <StepTitle eyebrow={tr('onboarding.spirit_eyebrow', 'destilado')} title={tr('onboarding.spirit_title', '¿Tu destilado favorito?')} subtitle={tr('onboarding.spirit_subtitle', 'Lo usaremos para sugerirte recetas.')} />
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
-                {ONBOARDING_SPIRITS.map(s => {
-                  const picked = favSpirit === s.id;
-                  return (
-                    <button key={s.id} onClick={() => setFavSpirit(picked ? null : s.id)} style={{
-                      padding: 14,
-                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
-                      textAlign: 'center',
-                      borderRadius: 'var(--r-md)',
-                      background: picked ? 'var(--amber-soft)' : 'var(--bg-1)',
-                      border: `1px solid ${picked ? 'var(--amber)' : 'var(--line-soft)'}`,
-                      transition: 'all .15s',
-                    }}>
-                      <div style={{ fontSize: 28 }}>{s.emoji}</div>
-                      <div style={{ fontWeight: 500, fontSize: 13 }}>
-                        {tr(`onboarding.spirit.${s.id}`)}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-              <button
-                onClick={() => setFavSpirit(null)}
-                style={{
-                  marginTop: 14, width: '100%', padding: 10,
-                  background: 'transparent', border: 0,
-                  color: 'var(--ink-3)', fontFamily: 'var(--f-mono)', fontSize: 12,
-                  textDecoration: 'underline', textUnderlineOffset: 3,
-                }}
-              >
-                {tr('onboarding.spirit_none', 'Prefiero no decir')}
-              </button>
-            </div>
-          )}
         </div>
 
-        {step !== 1 && (
+        {step !== totalSteps - 1 && (
           <div style={{ display: 'flex', gap: 10, marginTop: 28 }}>
             {step > 0 && (
               <button className="btn" onClick={back} style={{ padding: '12px 18px' }}>
@@ -899,7 +895,7 @@ const Onboarding = ({ onDone }) => {
             )}
             <button
               className="btn primary"
-              onClick={step === totalSteps - 1 ? submit : next}
+              onClick={next}
               disabled={!canNext}
               style={{
                 flex: 1, padding: '12px 24px',
@@ -907,7 +903,7 @@ const Onboarding = ({ onDone }) => {
                 pointerEvents: canNext ? 'auto' : 'none',
               }}
             >
-              {step === totalSteps - 1 ? tr('onboarding.enter', 'Entrar a Stirio') : tr('ui.continue', 'Continuar')} <Icon name="arrowR" size={16} />
+              {tr('ui.continue', 'Continuar')} <Icon name="arrowR" size={16} />
             </button>
           </div>
         )}
