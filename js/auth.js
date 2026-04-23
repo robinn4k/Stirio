@@ -8,12 +8,16 @@ let app = null;
 let auth = null;
 let db = null;
 let currentUser = null;
-// Cached firebase-auth module. signInWithPopup must run inside the user-gesture
-// tick that triggered the click; any `await import(...)` before it pushes the
-// call past that tick and the browser blocks the popup silently. Stashing the
-// module here during init lets signInWithGoogle hit signInWithPopup with zero
-// awaits in between.
+// Cached firebase-auth module. signInWithPopup/Redirect must run inside the
+// user-gesture tick that triggered the click; any `await import(...)` before
+// it pushes the call past that tick and the browser blocks the popup or
+// swallows the redirect silently. Stashing the module here during init lets
+// signInWithGoogle(Redirect) fire with zero awaits in between.
 let authMod = null;
+// Redirect result consumed on the next boot after signInWithGoogleRedirect.
+// app.jsx reads this synchronously after `await initFirebase()` resolves to
+// decide whether to complete a pending onboarding.
+let pendingRedirectUser = null;
 
 // Local storage keys that hold user-scoped gameplay data. Cleared on sign-out
 // and after an account switch so a fresh uid always hydrates from Firestore.
@@ -72,6 +76,32 @@ async function initFirebase() {
           settle();
         });
       });
+    }
+
+    // Pick up any signed-in user returning from signInWithGoogleRedirect.
+    // getRedirectResult resolves to null when this boot wasn't triggered by
+    // a redirect, or to the signed-in user exactly once per redirect round-
+    // trip. Failures here are non-fatal: the user just doesn't get auto-
+    // completed; they can retry sign-in.
+    try {
+      const { getRedirectResult } = authMod;
+      const result = await getRedirectResult(auth);
+      if (result?.user) {
+        const u = result.user;
+        currentUser = {
+          uid: u.uid,
+          name: u.displayName || u.email?.split('@')[0] || t('auth.google_player'),
+          email: u.email,
+          photo: u.photoURL,
+          provider: 'google',
+          isGuest: false,
+        };
+        saveUserLocal(currentUser);
+        seedUserDoc(currentUser);
+        pendingRedirectUser = currentUser;
+      }
+    } catch (e) {
+      console.warn('[auth] getRedirectResult failed:', e);
     }
 
     // Persistent listener: fires whenever the Firebase session changes after
@@ -170,6 +200,35 @@ function signInWithGoogle() {
     seedUserDoc(currentUser);
     return currentUser;
   });
+}
+
+// ─── Login con Google (redirect) ─────────────────────────────
+// Preferred over signInWithPopup: works on iOS Safari, installed PWAs, Brave,
+// and Chrome configs with third-party cookies blocked (the popup flow fails
+// with auth/internal-error in those envs because the postMessage iframe
+// channel is broken). The page navigates to accounts.google.com; the returned
+// promise never resolves in this tab. getRedirectResult in initFirebase picks
+// up the signed-in user when the redirect brings us back.
+function signInWithGoogleRedirect() {
+  if (!auth || !authMod) {
+    const err = new Error('Firebase no configurado. Configura firebase-config.js primero.');
+    err.code = 'auth/not-initialized';
+    return Promise.reject(err);
+  }
+  const { GoogleAuthProvider, signInWithRedirect } = authMod;
+  const provider = new GoogleAuthProvider();
+  provider.addScope('profile');
+  provider.addScope('email');
+  return signInWithRedirect(auth, provider);
+}
+
+// Returns the user detected by getRedirectResult during the most recent
+// initFirebase, then clears it so subsequent boots don't re-consume. Null
+// when this boot wasn't a redirect return.
+function consumePendingRedirectUser() {
+  const u = pendingRedirectUser;
+  pendingRedirectUser = null;
+  return u;
 }
 
 // ─── Registro con email + contraseña ─────────────────────────
@@ -439,6 +498,8 @@ function getFirebaseAuth() { return auth; }
 export {
   initFirebase,
   signInWithGoogle,
+  signInWithGoogleRedirect,
+  consumePendingRedirectUser,
   signUpWithEmail,
   signInWithEmail,
   sendPasswordReset,
