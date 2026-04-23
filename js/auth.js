@@ -8,6 +8,12 @@ let app = null;
 let auth = null;
 let db = null;
 let currentUser = null;
+// Cached firebase-auth module. signInWithPopup must run inside the user-gesture
+// tick that triggered the click; any `await import(...)` before it pushes the
+// call past that tick and the browser blocks the popup silently. Stashing the
+// module here during init lets signInWithGoogle hit signInWithPopup with zero
+// awaits in between.
+let authMod = null;
 
 // Local storage keys that hold user-scoped gameplay data. Cleared on sign-out
 // and after an account switch so a fresh uid always hydrates from Firestore.
@@ -33,7 +39,8 @@ async function initFirebase() {
   if (!FIREBASE_ENABLED) return false;
   try {
     const { initializeApp } = await import(`${FIREBASE_CDN}/firebase-app.js`);
-    const { getAuth, onAuthStateChanged } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+    authMod = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+    const { getAuth, onAuthStateChanged } = authMod;
     const { getFirestore } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
     app = initializeApp(firebaseConfig);
     auth = getAuth(app);
@@ -137,25 +144,32 @@ async function seedUserDoc(user) {
 }
 
 // ─── Login con Google ────────────────────────────────────────
-async function signInWithGoogle() {
-  if (!auth) throw new Error('Firebase no configurado. Configura firebase-config.js primero.');
-  const { GoogleAuthProvider, signInWithPopup } = await import(`${FIREBASE_CDN}/firebase-auth.js`);
+// NOT declared `async` so the synchronous call to signInWithPopup stays within
+// the user-gesture tick. Returns a Promise via signInWithPopup's own promise.
+function signInWithGoogle() {
+  if (!auth || !authMod) {
+    const err = new Error('Firebase no configurado. Configura firebase-config.js primero.');
+    err.code = 'auth/not-initialized';
+    return Promise.reject(err);
+  }
+  const { GoogleAuthProvider, signInWithPopup } = authMod;
   const provider = new GoogleAuthProvider();
   provider.addScope('profile');
   provider.addScope('email');
-  const result = await signInWithPopup(auth, provider);
-  const user = result.user;
-  currentUser = {
-    uid: user.uid,
-    name: user.displayName || user.email?.split('@')[0] || t('auth.google_player'),
-    email: user.email,
-    photo: user.photoURL,
-    provider: 'google',
-    isGuest: false
-  };
-  saveUserLocal(currentUser);
-  seedUserDoc(currentUser);
-  return currentUser;
+  return signInWithPopup(auth, provider).then((result) => {
+    const user = result.user;
+    currentUser = {
+      uid: user.uid,
+      name: user.displayName || user.email?.split('@')[0] || t('auth.google_player'),
+      email: user.email,
+      photo: user.photoURL,
+      provider: 'google',
+      isGuest: false,
+    };
+    saveUserLocal(currentUser);
+    seedUserDoc(currentUser);
+    return currentUser;
+  });
 }
 
 // ─── Registro con email + contraseña ─────────────────────────

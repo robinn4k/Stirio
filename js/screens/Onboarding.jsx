@@ -341,29 +341,32 @@ const Onboarding = ({ onDone }) => {
     return hint ? `${base} (${hint})` : base;
   };
 
-  const handleGoogle = async () => {
+  // NOT async: signInWithPopup must run inside the click's user-gesture tick,
+  // so we call it synchronously (no `await` before the popup opens) and attach
+  // .then/.catch/.finally for the post-popup work. Firebase is initialised
+  // eagerly at app mount (js/app.jsx) — if it isn't ready by the time the user
+  // clicks Google, show auth_unavailable and let them retry.
+  const handleGoogle = () => {
     setAuthError(null);
-    if (!window.stAuth) { setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible')); return; }
-    setAuthLoading(true);
-    try {
-      const ready = await window.stAuth.initFirebase();
-      if (!ready) {
-        setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible'));
-        return;
-      }
-      const user = await window.stAuth.signInWithGoogle();
-      setGoogleUser(user);
-      setAuthMode('google');
-      setName(user.name || name);
-      // Auth es el paso final: completamos el onboarding sin esperar a que
-      // React flushe los setState previos.
-      submit({ authMode: 'google', googleUser: user, name: user.name || name });
-    } catch (e) {
-      console.warn('[auth] google', e);
-      setAuthError(googleErrorMessage(e));
-    } finally {
-      setAuthLoading(false);
+    if (!window.stAuth || !window.stAuth.isFirebaseReady?.()) {
+      setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible'));
+      return;
     }
+    setAuthLoading(true);
+    window.stAuth.signInWithGoogle()
+      .then((user) => {
+        setGoogleUser(user);
+        setAuthMode('google');
+        setName(user.name || name);
+        // Auth es el paso final: completamos el onboarding sin esperar a que
+        // React flushe los setState previos.
+        submit({ authMode: 'google', googleUser: user, name: user.name || name });
+      })
+      .catch((e) => {
+        console.warn('[auth] google', e);
+        setAuthError(googleErrorMessage(e));
+      })
+      .finally(() => setAuthLoading(false));
   };
 
   const handleGuest = () => {
