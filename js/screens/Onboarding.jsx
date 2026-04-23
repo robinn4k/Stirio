@@ -318,12 +318,35 @@ const Onboarding = ({ onDone }) => {
     setSurpriseMeUsed(true);
   };
 
+  const googleErrorMessage = (e) => {
+    const code = e?.code || '';
+    if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request')
+      return tr('onboarding.auth_cancel', 'Cancelaste el login');
+    if (code === 'auth/popup-blocked')
+      return tr('onboarding.auth_popup_blocked', 'Tu navegador bloqueó el popup. Permite popups e inténtalo de nuevo.');
+    if (code === 'auth/network-request-failed')
+      return tr('onboarding.auth_network', 'Sin conexión. Revisa tu internet e inténtalo de nuevo.');
+    if (code === 'auth/unauthorized-domain')
+      return tr('onboarding.auth_unauthorized_domain', 'Dominio no autorizado en Firebase.');
+    if (code === 'auth/operation-not-allowed')
+      return tr('onboarding.auth_provider_disabled', 'El login con Google no está habilitado.');
+    if (code === 'auth/account-exists-with-different-credential')
+      return tr('onboarding.auth_account_conflict', 'Ya existe una cuenta con ese email usando otro método.');
+    if (code === 'auth/too-many-requests')
+      return tr('onboarding.email_rate_limit', 'Demasiados intentos — prueba más tarde.');
+    return tr('onboarding.auth_error', 'Error al iniciar con Google');
+  };
+
   const handleGoogle = async () => {
     setAuthError(null);
     if (!window.stAuth) { setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible')); return; }
     setAuthLoading(true);
     try {
-      await window.stAuth.initFirebase();
+      const ready = await window.stAuth.initFirebase();
+      if (!ready) {
+        setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible'));
+        return;
+      }
       const user = await window.stAuth.signInWithGoogle();
       setGoogleUser(user);
       setAuthMode('google');
@@ -333,7 +356,7 @@ const Onboarding = ({ onDone }) => {
       submit({ authMode: 'google', googleUser: user, name: user.name || name });
     } catch (e) {
       console.warn('[auth] google', e);
-      setAuthError(e.code === 'auth/popup-closed-by-user' ? tr('onboarding.auth_cancel', 'Cancelaste el login') : tr('onboarding.auth_error', 'Error al iniciar con Google'));
+      setAuthError(googleErrorMessage(e));
     } finally {
       setAuthLoading(false);
     }
