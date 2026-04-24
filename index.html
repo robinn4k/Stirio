@@ -65,7 +65,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.85';</script>
+  <script>window.STIRIO_VERSION = '10.86';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -91,6 +91,8 @@
     import('./js/daily.js').then(m => { window.stDaily = m; }).catch(()=>{});
     import('./js/learn.js').then(m => { window.stLearn = m; }).catch(()=>{});
     import('./js/academy_data.js').then(m => { window.stAcademyData = m; }).catch(()=>{});
+    import('./js/academy_wine_data.js').then(m => { window.stAcademyWineData = m; }).catch(()=>{});
+    import('./js/academy_coffee_data.js').then(m => { window.stAcademyCoffeeData = m; }).catch(()=>{});
     import('./js/academy.js').then(m => { window.stAcademy = m; }).catch(()=>{});
     // Seed window.MAP_REGIONS so Home → Referencia rápida can show the real
     // count + preview. wiki-map.js is otherwise only loaded inside map.html.

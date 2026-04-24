@@ -28,6 +28,9 @@ const USER_SCOPED_KEYS = [
   'cq_daily',
   'cq_leaderboard',
   'cq_academy_progress',
+  'cq_academy_cocktail',
+  'cq_academy_wine',
+  'cq_academy_coffee',
   'stirio::state::v2',
   'stirio::activity::v1',
 ];
@@ -613,7 +616,7 @@ async function deleteUserData() {
   } catch (e) { console.warn('delete rtdb presence:', e); }
 
   // Clear all local storage keys
-  ['cq_learn_data', 'cq_user_stats', 'cq_achievements', 'cq_daily', 'cq_leaderboard', 'cq_academy_data'].forEach(k => localStorage.removeItem(k));
+  ['cq_learn_data', 'cq_user_stats', 'cq_achievements', 'cq_daily', 'cq_leaderboard', 'cq_academy_data', 'cq_academy_progress', 'cq_academy_cocktail', 'cq_academy_wine', 'cq_academy_coffee'].forEach(k => localStorage.removeItem(k));
 }
 
 // ─── Borrar cuenta completa ──────────────────────────────────

@@ -7,11 +7,33 @@ const { useState: useStateRef, useMemo: useMemoRef } = React;
 
 // ═══════════════ ACADEMIA ═══════════════
 
-// ── Progreso de Academia (localStorage) ──
-const ACADEMY_PROGRESS_KEY = 'cq_academy_progress';
-const loadAcademyProgress = () => {
-  try { return JSON.parse(localStorage.getItem(ACADEMY_PROGRESS_KEY)) || {}; }
-  catch { return {}; }
+// ── Track registry ──
+// Cada academia (cocktail / wine / coffee) persiste su progreso en un key
+// independiente y se muestra con su propia identidad (icono, color, copy).
+const PROGRESS_KEY_BY_TRACK = {
+  cocktail: 'cq_academy_cocktail',
+  wine:     'cq_academy_wine',
+  coffee:   'cq_academy_coffee',
+};
+const TRACK_META = {
+  cocktail: { icon: '🍸', color: 'var(--amber)', titleKey: 'academy.cocktail.title',  eyebrowKey: 'academy.cocktail.eyebrow', descKey: 'academy.cocktail.desc',
+              titleFallback: 'Cocktail Academy', eyebrowFallback: 'Mixology',     descFallback: 'Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…' },
+  wine:     { icon: '🍷', color: '#8e1b3d',      titleKey: 'academy.wine.title',      eyebrowKey: 'academy.wine.eyebrow',     descKey: 'academy.wine.desc',
+              titleFallback: 'Sommelier Academy', eyebrowFallback: 'Vinos',         descFallback: 'Uvas, regiones, cata y servicio — el mundo del vino paso a paso.' },
+  coffee:   { icon: '☕', color: '#6b3a17',      titleKey: 'academy.coffee.title',    eyebrowKey: 'academy.coffee.eyebrow',   descKey: 'academy.coffee.desc',
+              titleFallback: 'Barista Academy',  eyebrowFallback: 'Café',          descFallback: 'Granos, espresso y leche — el oficio del café de especialidad.' },
+};
+
+// ── Progreso de Academia (localStorage, por track) ──
+// Retrocompatible: si aún existe el key legacy `cq_academy_progress`, se usa
+// como fallback cuando el track cocktail no tiene datos nuevos.
+const loadAcademyProgress = (track = 'cocktail') => {
+  const key = PROGRESS_KEY_BY_TRACK[track] || PROGRESS_KEY_BY_TRACK.cocktail;
+  try {
+    const raw = localStorage.getItem(key)
+      || (track === 'cocktail' ? localStorage.getItem('cq_academy_progress') : null);
+    return JSON.parse(raw) || {};
+  } catch { return {}; }
 };
 const levelCompleted = (progress, level) => {
   const lp = progress[level.id];
@@ -19,13 +41,103 @@ const levelCompleted = (progress, level) => {
   return (level.lessons || []).every((_, i) => lp.lessons && lp.lessons[i]?.passed);
 };
 
-const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
-  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
-  const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
-  const [openLevel, setOpenLevel] = useStateRef(null);
-  const progress = loadAcademyProgress();
+// Cuenta niveles completados del track dado (lectura barata para el hub).
+const countCompletedLevels = (track) => {
+  const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+  const progress = loadAcademyProgress(track);
+  return {
+    done: levels.filter(l => levelCompleted(progress, l)).length,
+    total: levels.length,
+  };
+};
 
-  // Si academy_data.js aún no está cargado, mostramos loader + polling
+const AcademyHub = ({ onBack, onPickTrack }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // Re-render cuando los módulos de datos async terminan de cargar, para que
+  // los contadores del hub pasen de 0/0 a su valor real sin navegar fuera.
+  const [tick, setTick] = useStateRef(0);
+  React.useEffect(() => {
+    let retries = 0;
+    const iv = setInterval(() => {
+      retries += 1;
+      setTick(t => t + 1);
+      if (retries >= 20) clearInterval(iv);
+    }, 200);
+    return () => clearInterval(iv);
+  }, []);
+
+  const tracks = ['cocktail', 'wine', 'coffee'];
+
+  return (
+    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
+      <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
+        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
+          <Icon name="arrowL" size={16} />
+        </button>
+        <div>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('academy.hub.eyebrow', 'Aprende')}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr('academy.hub.title', 'Academia')}</h1>
+        </div>
+      </div>
+      <div style={{ padding: '0 24px 16px', fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.4 }}>
+        {tr('academy.hub.subtitle', 'Tres disciplinas, un solo camino: elige la que quieras dominar.')}
+      </div>
+      <div style={{ padding: '8px 24px 0', display: 'grid', gap: 14 }}>
+        {tracks.map(track => {
+          const meta = TRACK_META[track];
+          const { done, total } = countCompletedLevels(track);
+          const pct = total ? Math.round((done / total) * 100) : 0;
+          return (
+            <button
+              key={track}
+              onClick={() => onPickTrack(track)}
+              className="card"
+              style={{
+                padding: 18, textAlign: 'left', cursor: 'pointer',
+                display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center',
+                borderLeft: `4px solid ${meta.color}`,
+              }}
+            >
+              <div style={{
+                width: 60, height: 60, borderRadius: 16,
+                background: `linear-gradient(135deg, ${meta.color}, oklch(0.3 0.05 60))`,
+                display: 'grid', placeItems: 'center', fontSize: 30,
+                boxShadow: `0 8px 20px ${meta.color}33`,
+              }}>{meta.icon}</div>
+              <div>
+                <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginBottom: 2 }}>
+                  {tr(meta.eyebrowKey, meta.eyebrowFallback)}
+                </div>
+                <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>
+                  {tr(meta.titleKey, meta.titleFallback)}
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.3, marginBottom: 8 }}>
+                  {tr(meta.descKey, meta.descFallback)}
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <div style={{ flex: 1, height: 5, borderRadius: 99, background: 'var(--bg-3)', overflow: 'hidden' }}>
+                    <div style={{ width: `${pct}%`, height: '100%', background: meta.color, transition: 'width .3s' }} />
+                  </div>
+                  <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)' }}>{done}/{total || '–'}</div>
+                </div>
+              </div>
+              <Icon name="arrowR" size={16} />
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onStartRound }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const meta = TRACK_META[track] || TRACK_META.cocktail;
+  const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+  const [openLevel, setOpenLevel] = useStateRef(null);
+  const progress = loadAcademyProgress(track);
+
+  // Si el módulo de datos aún no está cargado, mostramos loader + polling
   const [retries, setRetries] = useStateRef(0);
   React.useEffect(() => {
     if (levels.length === 0 && retries < 20) {
@@ -45,8 +157,8 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
           <Icon name="arrowL" size={16} />
         </button>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('academy.eyebrow', 'Aprende')}</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr('academy.title_ui', 'Cocktail Academy')}</h1>
+          <div className="mono caps" style={{ color: meta.color, fontSize: 10 }}>{tr(meta.eyebrowKey, meta.eyebrowFallback)}</div>
+          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr(meta.titleKey, meta.titleFallback)}</h1>
         </div>
       </div>
 
@@ -57,16 +169,16 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound }) => {
             <div>
               <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)' }}>{tr('academy.progress', 'Progreso')}</div>
               <div style={{ fontFamily: 'var(--f-serif)', fontSize: 28, lineHeight: 1 }}>
-                {completed} <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ {levels.length || 6} niveles</span>
+                {completed} <span style={{ color: 'var(--ink-3)', fontSize: 18 }}>/ {levels.length || '–'} {tr('academy.levels_word', 'niveles')}</span>
               </div>
             </div>
-            <div style={{ fontSize: 42 }}>🎓</div>
+            <div style={{ fontSize: 42 }}>{meta.icon}</div>
           </div>
           <div style={{ height: 6, borderRadius: 99, background: 'var(--bg-3)', overflow: 'hidden' }}>
-            <div style={{ width: `${levels.length ? (completed / levels.length) * 100 : 0}%`, height: '100%', background: 'var(--amber)', transition: 'width .3s' }} />
+            <div style={{ width: `${levels.length ? (completed / levels.length) * 100 : 0}%`, height: '100%', background: meta.color, transition: 'width .3s' }} />
           </div>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 10, lineHeight: 1.4 }}>
-            {tr('academy.intro', '6 niveles con teoría, consejos y prácticas reales. Completa las lecciones de un nivel para desbloquear el siguiente.')}
+            {tr(meta.descKey, meta.descFallback)}
           </div>
         </div>
       </div>
@@ -645,4 +757,4 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
   );
 };
 
-Object.assign(window, { AcademyScreen, FichasScreen, FichaDetail, FreeQuizScreen });
+Object.assign(window, { AcademyHub, AcademyScreen, FichasScreen, FichaDetail, FreeQuizScreen });

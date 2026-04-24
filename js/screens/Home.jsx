@@ -182,9 +182,9 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           let academyHomeDone = 0;
           let academyHomeTotal = 6;
           try {
-            const prog = JSON.parse(localStorage.getItem('cq_academy_progress') || '{}');
+            const prog = JSON.parse(localStorage.getItem('cq_academy_cocktail') || localStorage.getItem('cq_academy_progress') || '{}');
             academyHomeDone = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
-            const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
+            const levels = (window.getAcademyLevels && window.getAcademyLevels('cocktail')) || [];
             if (levels.length) academyHomeTotal = levels.length;
           } catch {}
           return (
@@ -251,7 +251,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
           const mapPreview = regions.length ? regions[dayIdx % regions.length].origin : 'Escocia, México…';
           let academyDone = 0;
           try {
-            const prog = JSON.parse(localStorage.getItem('cq_academy_progress') || '{}');
+            const prog = JSON.parse(localStorage.getItem('cq_academy_cocktail') || localStorage.getItem('cq_academy_progress') || '{}');
             academyDone = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
           } catch {}
           return (
