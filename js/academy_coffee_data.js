@@ -135,4 +135,134 @@ export const ACADEMY_COFFEE_LEVELS = [
     ],
     questions: [],
   },
+
+  // ═══════════════════════════════════════════════════════════
+  // LEVEL 2 — Orígenes y procesado
+  // ═══════════════════════════════════════════════════════════
+  {
+    id: 2,
+    key: 'academy.coffee.l2.title',
+    descKey: 'academy.coffee.l2.desc',
+    icon: '🌍',
+    color: '#4a2612',
+    passThreshold: 70,
+    lessons: [
+      {
+        key: 'academy.coffee.l2.les0',
+        cards: [
+          { type: 'theory', key: 'academy.coffee.l2.t1' },
+          { type: 'tip',    key: 'academy.coffee.l2.tip1' },
+          { type: 'theory', key: 'academy.coffee.l2.t2' },
+          { type: 'note',   key: 'academy.coffee.l2.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.coffee.l2.les0.q1', a: ['academy.coffee.l2.les0.q1a1','academy.coffee.l2.les0.q1a2','academy.coffee.l2.les0.q1a3','academy.coffee.l2.les0.q1a4'], exp: 'academy.coffee.l2.les0.q1exp' },
+          { q: 'academy.coffee.l2.les0.q2', a: ['academy.coffee.l2.les0.q2a1','academy.coffee.l2.les0.q2a2','academy.coffee.l2.les0.q2a3','academy.coffee.l2.les0.q2a4'], exp: 'academy.coffee.l2.les0.q2exp' },
+          { q: 'academy.coffee.l2.les0.q3', a: ['academy.coffee.l2.les0.q3a1','academy.coffee.l2.les0.q3a2','academy.coffee.l2.les0.q3a3','academy.coffee.l2.les0.q3a4'], exp: 'academy.coffee.l2.les0.q3exp' },
+        ],
+      },
+      {
+        key: 'academy.coffee.l2.les1',
+        cards: [
+          { type: 'theory', key: 'academy.coffee.l2.t3' },
+          { type: 'tip',    key: 'academy.coffee.l2.tip2' },
+          { type: 'theory', key: 'academy.coffee.l2.t4' },
+          { type: 'note',   key: 'academy.coffee.l2.note2' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.coffee.l2.les1.q1', a: ['academy.coffee.l2.les1.q1a1','academy.coffee.l2.les1.q1a2','academy.coffee.l2.les1.q1a3','academy.coffee.l2.les1.q1a4'], exp: 'academy.coffee.l2.les1.q1exp' },
+          { q: 'academy.coffee.l2.les1.q2', a: ['academy.coffee.l2.les1.q2a1','academy.coffee.l2.les1.q2a2','academy.coffee.l2.les1.q2a3','academy.coffee.l2.les1.q2a4'], exp: 'academy.coffee.l2.les1.q2exp' },
+          { q: 'academy.coffee.l2.les1.q3', a: ['academy.coffee.l2.les1.q3a1','academy.coffee.l2.les1.q3a2','academy.coffee.l2.les1.q3a3','academy.coffee.l2.les1.q3a4'], exp: 'academy.coffee.l2.les1.q3exp' },
+        ],
+      },
+      {
+        key: 'academy.coffee.l2.les2',
+        cards: [
+          { type: 'theory', key: 'academy.coffee.l2.t5' },
+          { type: 'tip',    key: 'academy.coffee.l2.tip3' },
+          { type: 'theory', key: 'academy.coffee.l2.t6' },
+          { type: 'note',   key: 'academy.coffee.l2.note3' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.coffee.l2.les2.q1', a: ['academy.coffee.l2.les2.q1a1','academy.coffee.l2.les2.q1a2','academy.coffee.l2.les2.q1a3','academy.coffee.l2.les2.q1a4'], exp: 'academy.coffee.l2.les2.q1exp' },
+          { q: 'academy.coffee.l2.les2.q2', a: ['academy.coffee.l2.les2.q2a1','academy.coffee.l2.les2.q2a2','academy.coffee.l2.les2.q2a3','academy.coffee.l2.les2.q2a4'], exp: 'academy.coffee.l2.les2.q2exp' },
+          { q: 'academy.coffee.l2.les2.q3', a: ['academy.coffee.l2.les2.q3a1','academy.coffee.l2.les2.q3a2','academy.coffee.l2.les2.q3a3','academy.coffee.l2.les2.q3a4'], exp: 'academy.coffee.l2.les2.q3exp' },
+        ],
+      },
+    ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'lesson', index: 1 },
+      { type: 'lesson', index: 2 },
+    ],
+    questions: [],
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // LEVEL 3 — Métodos de filtrado y cata
+  // ═══════════════════════════════════════════════════════════
+  {
+    id: 3,
+    key: 'academy.coffee.l3.title',
+    descKey: 'academy.coffee.l3.desc',
+    icon: '🫘',
+    color: '#2f1a0b',
+    passThreshold: 70,
+    lessons: [
+      {
+        key: 'academy.coffee.l3.les0',
+        cards: [
+          { type: 'theory', key: 'academy.coffee.l3.t1' },
+          { type: 'tip',    key: 'academy.coffee.l3.tip1' },
+          { type: 'theory', key: 'academy.coffee.l3.t2' },
+          { type: 'note',   key: 'academy.coffee.l3.note1' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.coffee.l3.les0.q1', a: ['academy.coffee.l3.les0.q1a1','academy.coffee.l3.les0.q1a2','academy.coffee.l3.les0.q1a3','academy.coffee.l3.les0.q1a4'], exp: 'academy.coffee.l3.les0.q1exp' },
+          { q: 'academy.coffee.l3.les0.q2', a: ['academy.coffee.l3.les0.q2a1','academy.coffee.l3.les0.q2a2','academy.coffee.l3.les0.q2a3','academy.coffee.l3.les0.q2a4'], exp: 'academy.coffee.l3.les0.q2exp' },
+          { q: 'academy.coffee.l3.les0.q3', a: ['academy.coffee.l3.les0.q3a1','academy.coffee.l3.les0.q3a2','academy.coffee.l3.les0.q3a3','academy.coffee.l3.les0.q3a4'], exp: 'academy.coffee.l3.les0.q3exp' },
+        ],
+      },
+      {
+        key: 'academy.coffee.l3.les1',
+        cards: [
+          { type: 'theory', key: 'academy.coffee.l3.t3' },
+          { type: 'tip',    key: 'academy.coffee.l3.tip2' },
+          { type: 'theory', key: 'academy.coffee.l3.t4' },
+          { type: 'note',   key: 'academy.coffee.l3.note2' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.coffee.l3.les1.q1', a: ['academy.coffee.l3.les1.q1a1','academy.coffee.l3.les1.q1a2','academy.coffee.l3.les1.q1a3','academy.coffee.l3.les1.q1a4'], exp: 'academy.coffee.l3.les1.q1exp' },
+          { q: 'academy.coffee.l3.les1.q2', a: ['academy.coffee.l3.les1.q2a1','academy.coffee.l3.les1.q2a2','academy.coffee.l3.les1.q2a3','academy.coffee.l3.les1.q2a4'], exp: 'academy.coffee.l3.les1.q2exp' },
+          { q: 'academy.coffee.l3.les1.q3', a: ['academy.coffee.l3.les1.q3a1','academy.coffee.l3.les1.q3a2','academy.coffee.l3.les1.q3a3','academy.coffee.l3.les1.q3a4'], exp: 'academy.coffee.l3.les1.q3exp' },
+        ],
+      },
+      {
+        key: 'academy.coffee.l3.les2',
+        cards: [
+          { type: 'theory', key: 'academy.coffee.l3.t5' },
+          { type: 'tip',    key: 'academy.coffee.l3.tip3' },
+          { type: 'theory', key: 'academy.coffee.l3.t6' },
+          { type: 'note',   key: 'academy.coffee.l3.note3' },
+        ],
+        passThreshold: 70,
+        questions: [
+          { q: 'academy.coffee.l3.les2.q1', a: ['academy.coffee.l3.les2.q1a1','academy.coffee.l3.les2.q1a2','academy.coffee.l3.les2.q1a3','academy.coffee.l3.les2.q1a4'], exp: 'academy.coffee.l3.les2.q1exp' },
+          { q: 'academy.coffee.l3.les2.q2', a: ['academy.coffee.l3.les2.q2a1','academy.coffee.l3.les2.q2a2','academy.coffee.l3.les2.q2a3','academy.coffee.l3.les2.q2a4'], exp: 'academy.coffee.l3.les2.q2exp' },
+          { q: 'academy.coffee.l3.les2.q3', a: ['academy.coffee.l3.les2.q3a1','academy.coffee.l3.les2.q3a2','academy.coffee.l3.les2.q3a3','academy.coffee.l3.les2.q3a4'], exp: 'academy.coffee.l3.les2.q3exp' },
+        ],
+      },
+    ],
+    sequence: [
+      { type: 'lesson', index: 0 },
+      { type: 'lesson', index: 1 },
+      { type: 'lesson', index: 2 },
+    ],
+    questions: [],
+  },
 ];
