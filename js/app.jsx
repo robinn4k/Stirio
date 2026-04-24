@@ -149,6 +149,19 @@ const App = () => {
   // Persist state
   useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
 
+  // One-shot migration: pre-multitrack builds wrote cocktail academy progress
+  // to `cq_academy_progress`. Copy it to the new per-track key on first mount
+  // if the new key is empty, so returning users keep their unlocks.
+  useEffect(() => {
+    try {
+      const legacy = localStorage.getItem('cq_academy_progress');
+      const current = localStorage.getItem('cq_academy_cocktail');
+      if (legacy && !current) {
+        localStorage.setItem('cq_academy_cocktail', legacy);
+      }
+    } catch {}
+  }, []);
+
   // Bump counter used to force re-renders when the current language changes
   const [langVersion, setLangVersion] = useState(0);
 
@@ -477,7 +490,7 @@ const App = () => {
 
   const openMode = (m) => {
     if (m === 'mode-menu') { setActiveMode('any'); return; }
-    if (m === 'academy')  { setSubScreen('academy');  return; }
+    if (m === 'academy')  { setSubScreen('academy-hub');  return; }
     if (m === 'iba')      { setSubScreen('iba');       return; }
     if (m === 'freequiz') { setSubScreen('freequiz');  return; }
     if (m === 'wiki')     { setSubScreen('wiki');      return; }
@@ -536,20 +549,25 @@ const App = () => {
     lessonStartAtRef.current = 0;
     recordActivity({ xp, correct, total, durationMs });
 
-    // Persist Academy progress if this was an academy lesson
+    // Persist Academy progress if this was an academy lesson. IDs include the
+    // track namespace so each academia (cocktail / wine / coffee) writes to
+    // its own localStorage key.
     const id = activeLesson?.id || '';
-    const aMatch = id.match(/^academy-l(\d+)-les(\d+)$/);
-    const pMatch = id.match(/^academy-practice-l(\d+)-r(\d+)$/);
+    const aMatch = id.match(/^academy-(cocktail|wine|coffee)-l(\d+)-les(\d+)$/);
+    const pMatch = id.match(/^academy-(cocktail|wine|coffee)-practice-l(\d+)-r(\d+)$/);
     if (aMatch || pMatch) {
       try {
-        const key = 'cq_academy_progress';
+        const track = (aMatch || pMatch)[1];
+        const key = `cq_academy_${track}`;
         const prog = JSON.parse(localStorage.getItem(key)) || {};
         if (aMatch) {
-          const [, levelId, lessonIdx] = aMatch.map(Number);
+          const levelId = Number(aMatch[2]);
+          const lessonIdx = Number(aMatch[3]);
           prog[levelId] = prog[levelId] || { lessons: [], practices: {} };
           prog[levelId].lessons[lessonIdx] = { passed: true, xp, at: Date.now() };
         } else {
-          const [, levelId, roundId] = pMatch.map(Number);
+          const levelId = Number(pMatch[2]);
+          const roundId = Number(pMatch[3]);
           prog[levelId] = prog[levelId] || { lessons: [], practices: {} };
           prog[levelId].practices[roundId] = { passed: true, xp, at: Date.now() };
         }
@@ -701,30 +719,41 @@ const App = () => {
         />
       )}
 
-      {subScreen === 'academy' && !activeLesson && (
-        <AcademyScreen
+      {subScreen === 'academy-hub' && !activeLesson && window.AcademyHub && (
+        <AcademyHub
           onBack={() => setSubScreen(null)}
-          onStartAcademyLesson={(levelId, lessonIdx) => {
-            const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
-            const level = levels.find(l => l.id === levelId);
-            if (!level) return;
-            const lesson = window.buildAcademyLesson && window.buildAcademyLesson(level, lessonIdx);
-            if (lesson) pickLesson(lesson);
-          }}
-          onStartRound={({ roundId, levelId }) => {
-            const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
-            const level = levels.find(l => l.id === levelId);
-            const practice = level && window.buildAcademyPractice
-              ? window.buildAcademyPractice(level, roundId)
-              : null;
-            if (practice) { pickLesson(practice); return; }
-            // Fallback: sólo por roundId
-            const round = (window.TRIVIA_ROUNDS || []).find(r => r.id === roundId);
-            if (round) pickLesson(window.buildLessonFromRound && window.buildLessonFromRound(round));
-          }}
-          onOpenFicha={(f) => setFichaOpen(f)}
+          onPickTrack={(track) => setSubScreen(`academy-${track}`)}
         />
       )}
+
+      {(subScreen === 'academy-cocktail' || subScreen === 'academy-wine' || subScreen === 'academy-coffee') && !activeLesson && (() => {
+        const track = subScreen.slice('academy-'.length);
+        return (
+          <AcademyScreen
+            track={track}
+            onBack={() => setSubScreen('academy-hub')}
+            onStartAcademyLesson={(levelId, lessonIdx) => {
+              const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+              const level = levels.find(l => l.id === levelId);
+              if (!level) return;
+              const lesson = window.buildAcademyLesson && window.buildAcademyLesson(level, lessonIdx, track);
+              if (lesson) pickLesson(lesson);
+            }}
+            onStartRound={({ roundId, levelId }) => {
+              const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+              const level = levels.find(l => l.id === levelId);
+              const practice = level && window.buildAcademyPractice
+                ? window.buildAcademyPractice(level, roundId, track)
+                : null;
+              if (practice) { pickLesson(practice); return; }
+              // Fallback: sólo por roundId
+              const round = (window.TRIVIA_ROUNDS || []).find(r => r.id === roundId);
+              if (round) pickLesson(window.buildLessonFromRound && window.buildLessonFromRound(round));
+            }}
+            onOpenFicha={(f) => setFichaOpen(f)}
+          />
+        );
+      })()}
 
       {subScreen === 'iba' && !activeLesson && (
         <FichasScreen

@@ -592,11 +592,17 @@ const SPEED_LESSON = () => {
   };
 };
 
-// ── Academy: puente a js/academy_data.js (6 niveles con lecciones reales) ──
-// window.stAcademyData se carga de forma asíncrona via import dinámico en index.html.
-// Exponemos getter dinámico para que, cuando esté disponible, la UI ya use los
-// niveles reales (6 niveles × 3-4 lecciones × 3 preguntas cada una + practice rondas).
-const getAcademyLevels = () => (window.stAcademyData && window.stAcademyData.ACADEMY_LEVELS) || [];
+// ── Academy: puente multi-track a data modules cargados async via index.html ──
+// Hay tres academias paralelas (cocktail / wine / coffee), cada una con su
+// propio módulo de datos expuesto en window.st*Data. getAcademyLevels(track)
+// devuelve los niveles del track pedido; sin argumento mantiene el default
+// cocktail para no romper llamadas legacy.
+const ACADEMY_TRACKS = {
+  cocktail: () => (window.stAcademyData && window.stAcademyData.ACADEMY_LEVELS) || [],
+  wine:     () => (window.stAcademyWineData && window.stAcademyWineData.ACADEMY_WINE_LEVELS) || [],
+  coffee:   () => (window.stAcademyCoffeeData && window.stAcademyCoffeeData.ACADEMY_COFFEE_LEVELS) || [],
+};
+const getAcademyLevels = (track = 'cocktail') => (ACADEMY_TRACKS[track] || ACADEMY_TRACKS.cocktail)();
 
 // Traduce una key i18n usando lang.js si está cargado; si no, devuelve la key.
 const _t = (key, fallback) => {
@@ -608,7 +614,7 @@ const _t = (key, fallback) => {
 // Construye el payload de LessonPlayer para una lección de Academia.
 // Convierte las "cards" (theory/tip/note/example) en steps 'intro' y las
 // preguntas i18n en steps 'choice'.
-const buildAcademyLesson = (level, lessonIdx) => {
+const buildAcademyLesson = (level, lessonIdx, track = 'cocktail') => {
   const lesson = level.lessons[lessonIdx];
   if (!lesson) return null;
   const cardTitle = {
@@ -635,7 +641,7 @@ const buildAcademyLesson = (level, lessonIdx) => {
     };
   });
   return {
-    id: `academy-l${level.id}-les${lessonIdx}`,
+    id: `academy-${track}-l${level.id}-les${lessonIdx}`,
     category: 'Academy',
     title: _t(level.key),
     subtitle: _t(lesson.key),
@@ -654,11 +660,11 @@ const buildAcademyLesson = (level, lessonIdx) => {
 };
 
 // Construye un "practice" desde una ronda de TRIVIA_ROUNDS referenciada por la sequence.
-const buildAcademyPractice = (level, roundId) => {
+const buildAcademyPractice = (level, roundId, track = 'cocktail') => {
   const round = _localizedRounds().find(r => r.id === roundId);
   if (!round) return null;
   const lesson = buildLessonFromRound(round);
-  return { ...lesson, id: `academy-practice-l${level.id}-r${roundId}`, emoji: level.icon, _roundColor: level.color };
+  return { ...lesson, id: `academy-${track}-practice-l${level.id}-r${roundId}`, emoji: level.icon, _roundColor: level.color };
 };
 
 Object.assign(window, {
