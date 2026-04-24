@@ -133,6 +133,18 @@ const App = () => {
   const [activeMode, setActiveMode]   = useState(null);
   const [inviteCode, setInviteCode]   = useState(initialInvite);
   const [pendingDailyChallenge, setPendingDailyChallenge] = useState(initialDailyChallenge);
+  // Covers the post-redirect window: onboarding is the initial screen because
+  // `cq_onboarding` hasn't been written yet, but a pending stash OR a persisted
+  // Firebase session tells us the bootstrap is about to complete onboarding.
+  // Without this flag the user would see the blank step 0 form for ~2–10s
+  // before `finishOnboarding` lands — they perceive it as "returned to start".
+  const [authBootstrapping, setAuthBootstrapping] = useState(() => {
+    try {
+      const pending = !!localStorage.getItem('stirio::onboarding::pending');
+      const savedUser = !!localStorage.getItem('cq_current_user');
+      return mustOnboard && (pending || savedUser);
+    } catch { return false; }
+  });
 
   // Persist state
   useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
@@ -302,37 +314,43 @@ const App = () => {
         const redirectUser = window.stAuth.consumePendingRedirectUser?.();
         let pendingStash = null;
         try { pendingStash = JSON.parse(localStorage.getItem('stirio::onboarding::pending') || 'null'); } catch {}
-        // Stale stashes (older than 30 min) are ignored: the user likely
-        // abandoned that flow and a fresh click would have overwritten it.
-        const STASH_TTL_MS = 30 * 60 * 1000;
+        // Stale stashes (older than 24 h) are ignored: the user likely
+        // abandoned that flow. 24 h covers 2FA / password-reset detours that
+        // the previous 30 min TTL clipped off, leaving signed-in users stuck.
+        const STASH_TTL_MS = 24 * 60 * 60 * 1000;
         if (pendingStash && (Date.now() - (pendingStash.at || 0) > STASH_TTL_MS)) {
           try { localStorage.removeItem('stirio::onboarding::pending'); } catch {}
           pendingStash = null;
         }
         const currentAuthUser = window.stAuth.getCurrentUser?.();
-        const fallbackUser = !redirectUser && pendingStash && currentAuthUser && !currentAuthUser.isGuest && currentAuthUser.provider !== 'guest'
+        const fallbackUser = !redirectUser && currentAuthUser && !currentAuthUser.isGuest && currentAuthUser.provider !== 'guest'
           ? currentAuthUser : null;
         // Last-resort safety net: wait up to 10s for Firebase's auth state
         // to emit a real (non-anonymous) user. Covers browsers / PWAs where
         // getRedirectResult returns null but the redirect round-trip DID
         // persist a Google session that onAuthStateChanged surfaces async.
-        const resilientUser = (redirectUser || fallbackUser) ? null : (
-          pendingStash ? await window.stAuth.waitForRealAuthUser?.(10000) : null
-        );
+        // Runs whenever we don't yet have a user — independent of the stash,
+        // so a user whose stash was purged still gets rescued from step 0.
+        const resilientUser = (redirectUser || fallbackUser)
+          ? null
+          : await window.stAuth.waitForRealAuthUser?.(10000);
         const userForOnboarding = redirectUser || fallbackUser || resilientUser;
-        if (userForOnboarding && pendingStash) {
+        if (userForOnboarding) {
+          // Merge whatever we have: pending answers win, else derive minimal
+          // defaults from the Google profile + stored/browser language.
+          const storedLang = (() => { try { return localStorage.getItem('stirio_lang'); } catch { return null; } })();
           try {
             await finishOnboarding({
-              name: userForOnboarding.name || pendingStash.name || '',
+              name: userForOnboarding.name || pendingStash?.name || '',
               email: userForOnboarding.email || null,
               photoURL: userForOnboarding.photo || null,
               uid: userForOnboarding.uid,
-              authMode: 'google',
+              authMode: userForOnboarding.provider === 'email' ? 'email' : 'google',
               onboarding: {
-                difficulty: pendingStash.level || 'skip',
-                language: pendingStash.language,
-                alcohol: pendingStash.alcohol || 'regular',
-                favSpirit: pendingStash.favSpirit || null,
+                difficulty: pendingStash?.level || 'skip',
+                language: pendingStash?.language || storedLang || window.stLang?.getLang?.() || 'es',
+                alcohol: pendingStash?.alcohol || 'regular',
+                favSpirit: pendingStash?.favSpirit || null,
               },
             });
             // Only clear the stash after a successful completion so an
@@ -380,9 +398,31 @@ const App = () => {
             if (screen === 'onboarding') setScreen('home');
           } else if (!mustOnboard && screen === 'onboarding') {
             setScreen('home');
+          } else if (user.provider !== 'guest' && screen === 'onboarding' && needsOnboarding(localOnb)) {
+            // Safety net: authenticated real user but neither cloud nor local
+            // onboarding landed (e.g. finishOnboarding call above raced and
+            // lost). Complete with derived defaults so the user reaches Home
+            // instead of step 0. They can refine picks from Profile later.
+            const storedLang = (() => { try { return localStorage.getItem('stirio_lang'); } catch { return null; } })();
+            try {
+              await finishOnboarding({
+                name: user.name || '',
+                email: user.email || null,
+                photoURL: user.photo || null,
+                uid: user.uid,
+                authMode: user.provider === 'email' ? 'email' : 'google',
+                onboarding: {
+                  difficulty: 'skip',
+                  language: storedLang || window.stLang?.getLang?.() || 'es',
+                  alcohol: 'regular',
+                  favSpirit: null,
+                },
+              });
+            } catch (e) { console.warn('[auth] onboarding safety-net:', e); }
           }
         }
       } catch (e) { console.warn('[auth] bootstrap', e); }
+      finally { if (!cancelled) setAuthBootstrapping(false); }
     })();
     return () => { cancelled = true; };
   }, []);
@@ -649,7 +689,7 @@ const App = () => {
     }}>
 
       {screen === 'onboarding' && !activeLesson && (
-        <Onboarding onDone={finishOnboarding} />
+        <Onboarding onDone={finishOnboarding} bootstrapping={authBootstrapping} />
       )}
 
       {screen === 'home' && !activeLesson && !subScreen && (

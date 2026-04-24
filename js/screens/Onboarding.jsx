@@ -275,8 +275,35 @@ const OnboardingHookStep = ({ language, onContinue }) => {
   );
 };
 
-const Onboarding = ({ onDone }) => {
+const Onboarding = ({ onDone, bootstrapping }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // Post-redirect bootstrap window: App has already determined a Google
+  // session is pending completion; showing step 0 here would look like we
+  // forgot the user. Render a lightweight "finalizando" overlay instead —
+  // App flips `bootstrapping` to false once finishOnboarding resolves or the
+  // auth state settles.
+  if (bootstrapping) {
+    return (
+      <div style={{
+        position: 'fixed', inset: 0, zIndex: 40,
+        display: 'grid', placeItems: 'center',
+        background: 'var(--bg-0)',
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            fontSize: 40, marginBottom: 12,
+            animation: 'pop .6s cubic-bezier(.2,1.4,.3,1)',
+          }}>🍸</div>
+          <div style={{
+            fontFamily: 'var(--f-serif)', fontStyle: 'italic',
+            color: 'var(--ink-2)',
+          }}>
+            {tr('onboarding.finishing_signin', 'Finalizando inicio de sesión…')}
+          </div>
+        </div>
+      </div>
+    );
+  }
   // Si el navegador ya tiene un idioma reconocido (lo persiste lang.js tras
   // auto-detectar), saltamos el step 0 (selector de idioma). El usuario puede
   // cambiarlo igualmente desde Perfil → Idioma sin volver al onboarding.
