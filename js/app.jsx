@@ -911,6 +911,35 @@ const App = () => {
     return () => offs.forEach(off => off());
   }, [pickLesson, closeLessonOverlay]);
 
+  // Window-event ↔ store bridge. Module-level emitters (stLearn, stAuth,
+  // stAchievements, stLang, etc.) still fire `window.dispatchEvent(new
+  // CustomEvent('stirio:...'))` — touching all of them to use the store
+  // would be a much larger refactor. Instead, this listener fans those
+  // events out to typed store actions so consumers can either:
+  //   • addEventListener('stirio:xpchange', ...)               (legacy)
+  //   • stStore.registerEffect('XP_CHANGED', ...)              (new)
+  // and stay out of each other's way. The window events keep firing so
+  // existing listeners aren't disturbed.
+  useEffect(() => {
+    if (!window.stStore) return undefined;
+    const map = [
+      ['stirio:xpchange',        'XP_CHANGED'],
+      ['stirio:langchange',      'LANG_CHANGED'],
+      ['stirio:achievement',     'ACHIEVEMENT_UNLOCKED'],
+      ['stirio:namechange',      'NAME_CHANGED'],
+      ['stirio:authchange',      'AUTH_CHANGED'],
+      ['stirio:mapregionsready', 'MAP_REGIONS_READY'],
+    ];
+    const handlers = map.map(([eventName, actionType]) => {
+      const fn = (e) => {
+        try { window.stStore.dispatch({ type: actionType, payload: e?.detail || {} }); } catch {}
+      };
+      window.addEventListener(eventName, fn);
+      return [eventName, fn];
+    });
+    return () => handlers.forEach(([name, fn]) => window.removeEventListener(name, fn));
+  }, []);
+
   const finishOnboarding = async (o) => {
     const payload = {
       version: ONBOARDING_VERSION,
