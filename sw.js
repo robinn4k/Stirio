@@ -60,6 +60,16 @@ const CACHE_PATHS = [
   'js/services.js',
   'js/store.js',
   'js/lesson-steps.js',
+  // Phase 4: LessonPlayer step plugins. Each file self-registers in
+  // window.stLessonSteps. Adding a new step kind = add a file here.
+  'js/lesson-steps/intro.jsx',
+  'js/lesson-steps/choice.jsx',
+  'js/lesson-steps/multi.jsx',
+  'js/lesson-steps/ratio.jsx',
+  'js/lesson-steps/earTrain.jsx',
+  'js/lesson-steps/cutWords.jsx',
+  'js/lesson-steps/colorMatch.jsx',
+  'js/lesson-steps/timing.jsx',
   // Mini-games are a separate React + Three.js build under games-r3f-demo/.
   // The SPA navigates there directly (no iframe). We cache the entry file
   // and its hashed bundle so the games work offline.
@@ -120,7 +130,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.91`;
+const STATIC_CACHE_VERSION = `Stirio-v10.92`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
