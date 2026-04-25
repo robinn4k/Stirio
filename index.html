@@ -65,7 +65,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.90';</script>
+  <script>window.STIRIO_VERSION = '10.91';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -91,23 +91,32 @@
     window.stLessonSteps = stLessonSteps;
   </script>
 
-  <!-- Legacy ES modules (loaded asynchronously, exposed on window.st*) -->
+  <!-- Legacy ES modules (loaded asynchronously, exposed on window.st* AND in
+       the Phase 0 service registry so consumers can `await ready('stX')`
+       instead of polling with setTimeout). The window.st* assignment is kept
+       for compatibility with code that hasn't migrated yet. -->
   <script type="module">
-    import('./js/auth.js').then(m => { window.stAuth = m; }).catch(()=>{});
-    import('./js/leaderboard.js').then(m => { window.stLeaderboard = m; }).catch(()=>{});
-    import('./js/lang.js').then(m => { window.stLang = m; }).catch(()=>{});
-    import('./js/blind.js').then(m => { window.stBlind = m; }).catch(()=>{});
-    import('./js/constructor.js').then(m => { window.stConstructor = m; }).catch(()=>{});
-    import('./js/bot.js').then(m => { window.stBot = m; }).catch(()=>{});
-    import('./js/rivals.js').then(m => { window.stRivals = m; }).catch(()=>{});
-    import('./js/achievements.js').then(m => { window.stAchievements = m; }).catch(()=>{});
-    import('./js/questions.js').then(m => { window.stQuestions = m; }).catch(()=>{});
-    import('./js/daily.js').then(m => { window.stDaily = m; }).catch(()=>{});
-    import('./js/learn.js').then(m => { window.stLearn = m; }).catch(()=>{});
-    import('./js/academy_data.js').then(m => { window.stAcademyData = m; }).catch(()=>{});
-    import('./js/academy_wine_data.js').then(m => { window.stAcademyWineData = m; }).catch(()=>{});
-    import('./js/academy_coffee_data.js').then(m => { window.stAcademyCoffeeData = m; }).catch(()=>{});
-    import('./js/academy.js').then(m => { window.stAcademy = m; }).catch(()=>{});
+    const reg = (name, mod) => {
+      window[name] = mod;
+      if (window.stServices && window.stServices.register) {
+        window.stServices.register(name, mod);
+      }
+    };
+    import('./js/auth.js').then(m => reg('stAuth', m)).catch(()=>{});
+    import('./js/leaderboard.js').then(m => reg('stLeaderboard', m)).catch(()=>{});
+    import('./js/lang.js').then(m => reg('stLang', m)).catch(()=>{});
+    import('./js/blind.js').then(m => reg('stBlind', m)).catch(()=>{});
+    import('./js/constructor.js').then(m => reg('stConstructor', m)).catch(()=>{});
+    import('./js/bot.js').then(m => reg('stBot', m)).catch(()=>{});
+    import('./js/rivals.js').then(m => reg('stRivals', m)).catch(()=>{});
+    import('./js/achievements.js').then(m => reg('stAchievements', m)).catch(()=>{});
+    import('./js/questions.js').then(m => reg('stQuestions', m)).catch(()=>{});
+    import('./js/daily.js').then(m => reg('stDaily', m)).catch(()=>{});
+    import('./js/learn.js').then(m => reg('stLearn', m)).catch(()=>{});
+    import('./js/academy_data.js').then(m => reg('stAcademyData', m)).catch(()=>{});
+    import('./js/academy_wine_data.js').then(m => reg('stAcademyWineData', m)).catch(()=>{});
+    import('./js/academy_coffee_data.js').then(m => reg('stAcademyCoffeeData', m)).catch(()=>{});
+    import('./js/academy.js').then(m => reg('stAcademy', m)).catch(()=>{});
     // Seed window.MAP_REGIONS so Home → Referencia rápida can show the real
     // count + preview. wiki-map.js is otherwise only loaded inside map.html.
     import('./js/wiki-map.js').then(m => {
