@@ -453,6 +453,24 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
             }} style={{ color: 'var(--cyan)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{tr('profile.export_cta', 'descargar ↓')}</button>}
           />
           <SettingsRow
+            icon="🔄"
+            label={tr('profile.force_update', 'Forzar actualización')}
+            value={<button onClick={async () => {
+              if (!confirm(tr('profile.force_update_confirm', '¿Limpiar la caché y recargar? Tu progreso (XP, racha) se queda intacto en la nube; se borra solo la copia offline para forzar la nueva versión.'))) return;
+              try {
+                if ('serviceWorker' in navigator) {
+                  const regs = await navigator.serviceWorker.getRegistrations();
+                  await Promise.all(regs.map(r => r.unregister().catch(() => {})));
+                }
+                if (typeof caches !== 'undefined') {
+                  const keys = await caches.keys();
+                  await Promise.all(keys.map(k => caches.delete(k).catch(() => {})));
+                }
+              } catch (e) { console.warn('force update cleanup failed:', e); }
+              try { window.location.reload(); } catch { window.location.href = window.location.href; }
+            }} style={{ color: 'var(--amber)', fontSize: 13, fontFamily: 'var(--f-mono)' }}>{tr('profile.force_update_cta', 'recargar →')}</button>}
+          />
+          <SettingsRow
             icon="🗑️"
             label={tr('profile.delete_progress', 'Borrar progreso')}
             value={<button onClick={async () => {
