@@ -82,6 +82,11 @@ async function initFirebase() {
             isGuest: false
           };
           saveUserLocal(currentUser);
+          // Backfill ranking fields on every boot so users whose docs were
+          // created before seedUserDoc existed (or via saveOnboarding only)
+          // get xpTotal/level/streakDays merged in and become visible to the
+          // leaderboard's orderBy('xpTotal') query. Idempotent + non-blocking.
+          seedUserDoc(currentUser);
         }
         settle();
       });
@@ -546,6 +551,10 @@ async function saveOnboarding(payload) {
   try {
     const { doc, setDoc } = await import(`${FIREBASE_CDN}/firebase-firestore.js`);
     await setDoc(doc(db, 'users', uid), { onboarding: payload }, { merge: true });
+    // Make sure the doc also carries ranking fields — without this an upgraded
+    // guest who finishes onboarding but hasn't earned XP yet stays invisible
+    // in the leaderboard (orderBy filters out docs with no xpTotal).
+    seedUserDoc({ ...currentUser, uid });
     return uid;
   } catch (e) {
     console.warn('saveOnboarding cloud write failed:', e);
