@@ -510,3 +510,33 @@ input, textarea { font: inherit; color: inherit; }
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+
+/* ─────────────────────────────────────────────────────────── */
+/* DESKTOP MODE on a NARROW viewport (< 1024px) — e.g. iPhone  */
+/* landscape, iPad portrait, narrow desktop window. The user   */
+/* set device="desktop" so the [data-device="mobile"] rules    */
+/* don't fire, but the desktop hero/featured layouts assume a  */
+/* wide canvas and look cramped here. Stack them like the      */
+/* phone layout would.                                         */
+/* ─────────────────────────────────────────────────────────── */
+@media (max-width: 1023px) {
+  [data-device="desktop"] .mobile-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  [data-device="desktop"] .mobile-featured {
+    grid-template-columns: 1fr !important;
+  }
+  [data-device="desktop"] .mobile-featured-art {
+    order: -1 !important;
+    min-height: 180px !important;
+  }
+  [data-device="desktop"] .mobile-featured-fade {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 35%,
+      oklch(from var(--bg-1) l c h / 0.55) 75%,
+      var(--bg-1) 100%
+    ) !important;
+  }
+}
