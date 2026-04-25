@@ -216,70 +216,40 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         </div>
       </section>
 
-      {/* Quick modes */}
-      <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow={tr('home.quick_eyebrow', 'jugar')} title={tr('home.quick_title', 'Modos rápidos')} />
-        <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 10 }}>
-          <ModeCard icon="⚡" title={tr('home.speed_title', 'Velocidad')} caption={tr('home.speed_caption', '60 segundos')} accent="amber" onClick={() => onOpenMode('speed')} />
-          <ModeCard icon="🍹" title={tr('home.builder_title', 'Constructor')} caption={tr('home.builder_caption', 'Adivina por ingredientes')} accent="cyan" onClick={() => onOpenMode('builder')} />
-          <ModeCard icon="👃" title={tr('home.blind_title', 'Cata a ciegas')} caption={tr('home.blind_caption', '35+ destilados')} accent="violet" onClick={() => onOpenMode('blind')} />
-          <ModeCard icon="🎲" title={tr('home.freequiz_title', 'Quiz libre')} caption={tr('home.freequiz_caption', '24 rondas')} accent="berry" onClick={() => onOpenMode('freequiz')} />
-        </div>
-      </section>
-
-      {/* Mini games + Arcade */}
-      <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow={tr('home.arcade_eyebrow', 'arcade')} title={tr('home.arcade_title', 'Mini juegos')} />
-        <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
-          <ArcadeCard title={tr('home.arcade_coctelero', 'Arcade Coctelero')} subtitle={tr('home.arcade_coctelero_sub', 'Aprende recetas jugando')} icon="🕹️" onClick={() => onOpenMode('arcade')} />
-          <ArcadeCard title={tr('home.memory_title', 'Memoria de Garnish')} subtitle={tr('home.memory_sub', 'Empareja guarniciones')} icon="🧠" onClick={() => onOpenMode('memory')} />
-          <ArcadeCard title={tr('home.rhythm_title', 'Ritmo de Shaker')} subtitle={tr('home.rhythm_sub', 'Agita al compás')} icon="🥁" onClick={() => onOpenMode('rhythm')} />
-          <ArcadeCard title={tr('home.comanda_title', 'Comanda Chase')} subtitle={tr('home.comanda_sub', 'Sirve cócteles contrarreloj')} icon="🎟️" onClick={() => onOpenMode('comanda')} />
-        </div>
-      </section>
-
-      {/* Reference — 2×2 with dynamic previews */}
-      <section style={{ marginBottom: 32 }}>
-        <SectionHeader eyebrow={tr('home.ref_eyebrow', 'referencia')} title={tr('home.ref_title', 'Referencia rápida')} />
-        {(() => {
-          const dayIdx = Math.floor(Date.now() / 86400000);
-          const fichas = (window.ALL_FICHAS || []);
-          const fichaPreview = fichas.length ? fichas[dayIdx % fichas.length].name : 'Negroni, Daiquiri…';
-          const wikiCats = ['Historia', 'Técnicas', 'Destilados', 'Prohibición', 'Tiki', 'Jerry Thomas', 'Modelos 3D', 'Bares legendarios'];
-          const wikiPreview = wikiCats[dayIdx % wikiCats.length];
-          const regions = (window.MAP_REGIONS || []);
-          const mapPreview = regions.length ? regions[dayIdx % regions.length].origin : 'Escocia, México…';
-          let academyDone = 0;
-          try {
-            const prog = JSON.parse(localStorage.getItem('cq_academy_cocktail') || localStorage.getItem('cq_academy_progress') || '{}');
-            academyDone = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
-          } catch {}
-          return (
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-              <RefTileLarge icon="📖" label={tr('home.ref_iba', 'Recetas')}
-                preview={fichaPreview}
-                badge={`${fichas.length || 0} ${tr('home.ref_cocktails', 'cócteles')}`}
-                accent="amber"
-                onClick={() => onOpenMode('iba')} />
-              <RefTileLarge icon="🌐" label={tr('home.ref_wiki', 'Enciclopedia')}
-                preview={wikiPreview}
-                badge="∞"
-                accent="cyan"
-                onClick={() => onOpenMode('wiki')} />
-              <RefTileLarge icon="🗺️" label={tr('home.ref_map', 'Mapa de bebidas')}
-                preview={mapPreview}
-                badge={`${regions.length || 0} ${tr('home.ref_drinks', 'bebidas')}`}
-                accent="violet"
-                onClick={() => onOpenMode('map')} />
-              <RefTileLarge icon="🎓" label={tr('home.ref_academy', 'Academia')}
-                preview={`${academyDone}/6 ${tr('home.ref_academy_levels', 'niveles')}`}
-                badge={tr('home.ref_academy_badge', 'curso')}
-                accent="berry"
-                onClick={() => onOpenMode('academy')} />
+      {/* Phase 5b: modes grouped by intention from the js/modes.js registry.
+          Replaces the former "Modos rápidos" / "Mini juegos" / "Referencia
+          rápida" sections — same modes (plus Glossary + Library, previously
+          orphaned), reorganized so the user can scan by what they want to do
+          rather than by tile shape. */}
+      {(window.stModes?.MODE_GROUPS || []).map(group => {
+        const modes = window.stModes?.getModesByGroup?.(group) || [];
+        if (!modes.length) return null;
+        return (
+          <section key={group} style={{ marginBottom: 32 }}>
+            <SectionHeader
+              eyebrow={tr(`home.section.${group}.eyebrow`, group)}
+              title={tr(`mode.group.${group}`, group)}
+            />
+            <div className="mobile-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 10 }}>
+              {modes.map(m => {
+                // m.color is "var(--amber)" — strip wrapper for the legacy
+                // ModeCard accent prop which composes "var(--<accent>)".
+                const accent = (m.color || '').replace(/^var\(--/, '').replace(/\)$/, '') || 'amber';
+                return (
+                  <ModeCard
+                    key={m.id}
+                    icon={m.icon}
+                    title={tr(`mode.${m.id}.title`, m.id)}
+                    caption={tr(`mode.${m.id}.sub`, '')}
+                    accent={accent}
+                    onClick={() => onOpenMode(m.id)}
+                  />
+                );
+              })}
             </div>
-          );
-        })()}
-      </section>
+          </section>
+        );
+      })}
 
       {/* Up next (60s) */}
       <section style={{ marginBottom: 32 }}>
