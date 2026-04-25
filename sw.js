@@ -104,6 +104,7 @@ const CACHE_PATHS = [
   'js/data.js',
   'js/ficha-images.js',
   'js/articles.js',
+  'js/spirit-brands-data.js',
   'js/ui.jsx',
   'js/lesson.jsx',
   'js/screens/shared.jsx',
@@ -131,7 +132,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v11.05`;
+const STATIC_CACHE_VERSION = `Stirio-v11.06`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
