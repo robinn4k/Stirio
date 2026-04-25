@@ -20,7 +20,13 @@
 //   aprender  — flows that teach (Daily, Speed, Academy, Free Quiz)
 //   jugar     — head-to-head & mini-games (Duel, Builder, Blind, Arcade,
 //               Memory, Rhythm, Comanda)
-//   consultar — reference / reading (Recetas, Wiki, Glosario, Mapa, Library)
+//   consultar — reference / reading (Recetas, Encyclopedia, Glossary, Map).
+//
+//               Library was a 3D-only iframe over wiki.html that became
+//               redundant once Knowledge/Encyclopedia started rendering
+//               <ThreeDSection> inline for any article with a `scene`.
+//               Removed from the picker so users have one entry point to
+//               the same content instead of two doors to the same room.
 
 export const MODES = [
   // ───── Aprender ─────────────────────────────────────────────────────────
@@ -43,7 +49,6 @@ export const MODES = [
   { id: 'wiki',     group: 'consultar', icon: '📜',  color: 'var(--cyan)',   route: 'wiki' },
   { id: 'glossary', group: 'consultar', icon: '📝',  color: 'var(--berry)',  route: 'glossary' },
   { id: 'map',      group: 'consultar', icon: '🗺️',  color: 'var(--violet)', route: 'map' },
-  { id: 'library',  group: 'consultar', icon: '📚',  color: 'var(--cyan)',   route: 'library' },
 ];
 
 export const MODE_GROUPS = ['aprender', 'jugar', 'consultar'];
