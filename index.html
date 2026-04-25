@@ -65,7 +65,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.86';</script>
+  <script>window.STIRIO_VERSION = '10.88';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -76,6 +76,20 @@
   <script src="js/data.js"></script>
   <script src="js/ficha-images.js"></script>
   <script src="js/articles.js"></script>
+
+  <!-- Phase 0 foundations (router, services, store, lesson-steps).
+       Loaded synchronously and exposed on window so the Babel-compiled JSX
+       files (which can't `import`) can reach them. Phase 1+ wires consumers. -->
+  <script type="module">
+    import * as stRouter from './js/router.js';
+    import * as stServices from './js/services.js';
+    import * as stStore from './js/store.js';
+    import * as stLessonSteps from './js/lesson-steps.js';
+    window.stRouter = stRouter;
+    window.stServices = stServices;
+    window.stStore = stStore;
+    window.stLessonSteps = stLessonSteps;
+  </script>
 
   <!-- Legacy ES modules (loaded asynchronously, exposed on window.st*) -->
   <script type="module">

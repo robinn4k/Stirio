@@ -54,6 +54,12 @@ const CACHE_PATHS = [
   'js/cookies.js',
   'js/constructor.js',
   'js/firebase-config.js',
+  // Phase 0 foundations: router, service registry, action store, lesson step
+  // plugin registry. Created without consumers; future phases migrate app.jsx.
+  'js/router.js',
+  'js/services.js',
+  'js/store.js',
+  'js/lesson-steps.js',
   // Mini-games are a separate React + Three.js build under games-r3f-demo/.
   // The SPA navigates there directly (no iframe). We cache the entry file
   // and its hashed bundle so the games work offline.
@@ -114,7 +120,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.87`;
+const STATIC_CACHE_VERSION = `Stirio-v10.88`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
