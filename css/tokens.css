@@ -294,10 +294,14 @@ input, textarea { font: inherit; color: inherit; }
   padding: 60px 20px 60px !important;
 }
 
-/* Hero: stack featured + side cards vertically */
-[data-device="mobile"] .mobile-hero-grid {
-  grid-template-columns: 1fr !important;
-  gap: 10px !important;
+/* Hero: stack featured + side cards vertically on phone-preview / narrow
+   windows. The wide-desktop block (≥ 1280px) further down releases this
+   so the inline 2×2 grid in Home.jsx can take over on real wide monitors. */
+@media (max-width: 1279px) {
+  [data-device="mobile"] .mobile-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
 }
 
 /* Featured card: flexible — let [data-featured] rules decide columns */
@@ -436,43 +440,39 @@ input, textarea { font: inherit; color: inherit; }
 }
 
 /* ─────────────────────────────────────────────────────────── */
-/* DESKTOP VIEWPORT (≥ 1024px) — keep cards from stretching to */
-/* full window width even when device="mobile". Tightens grids,*/
-/* shrinks hero typography, and frames Home as a centered      */
-/* column so the layout stays readable on a wide monitor.      */
+/* DESKTOP VIEWPORT (1024–1279px) — narrow desktop / iPad      */
+/* portrait. We center Home in a phone-width column when the   */
+/* user explicitly chose device="mobile" preview, but we DO    */
+/* NOT force a 2-col hero override — Home.jsx ships its own    */
+/* 2×2 grid that we want to keep at every width above 1024.    */
 /* ─────────────────────────────────────────────────────────── */
 @media (min-width: 1024px) {
-  /* Home is already capped at 1040 inline; pull it tighter so cards
-     don't span half the screen each in the 2-col grids. */
+  /* device="mobile" means "show me the phone preview" — keep the
+     centered phone-width column at this range. Above 1280px the
+     wide-desktop block below lifts this cap so users on a real
+     wide monitor still get screen real estate. */
   [data-device="mobile"] .mobile-safe {
     max-width: 720px !important;
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
 
-  /* Modes / Mini-juegos / Reference grids → 2 columns at this width.
-     The mobile-mode rule already forces 1fr 1fr, so we don't need to
-     override grid-template-columns here. We just keep the gap reasonable. */
-  [data-device="mobile"] .mobile-grid-2 {
+  /* Modes / Mini-juegos / Reference grids — keep the gap reasonable
+     at this width regardless of device mode. */
+  .mobile-grid-2 {
     gap: 12px !important;
   }
 
-  /* Featured + Daily/Duel hero: stay 2-col instead of stacking, so the
-     hero block matches the centered column nicely. */
-  [data-device="mobile"] .mobile-hero-grid {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) !important;
-  }
-
-  /* Featured card: split layout (art beside copy) reads better than a
-     tall stacked hero on desktop, even in mobile-device mode. */
-  [data-device="mobile"] .mobile-featured {
+  /* Featured card body: split layout (art beside copy) reads better
+     than a tall stacked hero once we have any horizontal room. */
+  .mobile-featured {
     grid-template-columns: 1fr 1fr !important;
   }
-  [data-device="mobile"] .mobile-featured-art {
+  .mobile-featured-art {
     min-height: 100% !important;
     order: 0 !important;
   }
-  [data-device="mobile"] .mobile-featured-fade {
+  .mobile-featured-fade {
     background: linear-gradient(
       90deg,
       var(--bg-1) 0%,
@@ -542,47 +542,44 @@ input, textarea { font: inherit; color: inherit; }
 }
 
 /* ─────────────────────────────────────────────────────────── */
-/* WIDE DESKTOP (≥ 1280px) — let Home break out of the         */
-/* phone-style 1040px column and use the screen as a real      */
-/* dashboard: hero row spans the width, mode tiles flow as a   */
-/* 4-up grid, the 60s queue stops being a horizontal carousel  */
-/* and renders as a wrapping grid instead.                     */
+/* WIDE DESKTOP (≥ 1280px) — Home stretches to fill the screen */
+/* on a real desktop window regardless of the user's device    */
+/* preference. The 2×2 hero grid keeps Article/Featured/Daily/ */
+/* Duel balanced; modes flow as a 4-up auto-fit grid; the 60s  */
+/* queue stops being a swipe carousel and wraps as a real grid.*/
 /* ─────────────────────────────────────────────────────────── */
 @media (min-width: 1280px) {
-  [data-device="desktop"] .mobile-safe {
+  /* Lift the 720px phone-preview cap at this width — even
+     device="mobile" users on a 1920px screen want breathing room. */
+  .mobile-safe {
     max-width: 1400px !important;
     padding-left: 32px !important;
     padding-right: 32px !important;
   }
-  /* Hero row: Article + Featured + Daily/Duel stack */
-  [data-device="desktop"] .mobile-hero-grid {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1fr) !important;
-    gap: 16px !important;
-  }
   /* Mode tiles: more columns at this width */
-  [data-device="desktop"] .mobile-grid-2 {
+  .mobile-grid-2 {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
     gap: 14px !important;
   }
   /* 60s queue: render as a wrapping grid instead of a swipe carousel */
-  [data-device="desktop"] .lesson-carousel {
+  .lesson-carousel {
     overflow-x: visible !important;
     margin: 0 !important;
     padding: 4px 0 12px !important;
     flex-wrap: wrap !important;
   }
-  [data-device="desktop"] .lesson-carousel > div {
+  .lesson-carousel > div {
     flex: 1 1 240px !important;
     max-width: none !important;
   }
   /* Academy tracks on Home: render the 3 mini cards as columns */
-  [data-device="desktop"] .home-academy-tracks {
+  .home-academy-tracks {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
 @media (min-width: 1600px) {
-  [data-device="desktop"] .mobile-safe {
+  .mobile-safe {
     max-width: 1560px !important;
   }
 }
