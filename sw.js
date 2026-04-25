@@ -132,7 +132,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.95`;
+const STATIC_CACHE_VERSION = `Stirio-v10.96`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
@@ -264,6 +264,18 @@ self.addEventListener('fetch', (event) => {
     }
     return Response.error();
   });
+
+  // Navigation requests (the HTML shell) use network-first even when
+  // precached. Without this, a user on iOS Safari can boot stale index.html
+  // from cache forever — even after a SW update — because the old shell
+  // pulls old <script src=...> URLs that the SW happily serves from the
+  // (now updated, but still pinned to the old asset hashes implicitly via
+  // path) cache. Network-first means: when online, you always get the
+  // freshest HTML; when offline, the cached fallback still works.
+  if (isNavigation) {
+    event.respondWith(networkFirst());
+    return;
+  }
 
   if (isPrecached) {
     event.respondWith(
