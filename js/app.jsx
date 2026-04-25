@@ -376,8 +376,10 @@ const App = () => {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      let tries = 0;
-      while (!window.stLearn && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      // Wait via the service registry instead of polling. Resolves immediately
+      // if stLearn is already registered; otherwise resumes when index.html's
+      // import('./js/learn.js') chain completes.
+      try { if (window.stServices?.ready) await window.stServices.ready('stLearn'); } catch {}
       if (cancelled) return;
       syncFromLearn();
     })();
@@ -408,8 +410,7 @@ const App = () => {
     let cancelled = false;
     let unsub = null;
     (async () => {
-      let tries = 0;
-      while (!window.stAuth?.subscribeAuthChange && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      try { if (window.stServices?.ready) await window.stServices.ready('stAuth'); } catch {}
       if (cancelled || !window.stAuth?.subscribeAuthChange) return;
       unsub = window.stAuth.subscribeAuthChange(async ({ uid, prev }) => {
         try {
@@ -472,9 +473,8 @@ const App = () => {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      // Poll for lang module (loaded async) and preload all translation JSONs
-      let tries = 0;
-      while (!window.stLang && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      // Wait for lang module via the service registry, then preload translations.
+      try { if (window.stServices?.ready) await window.stServices.ready('stLang'); } catch {}
       if (!cancelled && window.stLang?.preloadAllTranslations) {
         try {
           await window.stLang.preloadAllTranslations();
@@ -485,9 +485,8 @@ const App = () => {
         } catch {}
       }
 
-      // Poll for auth module
-      tries = 0;
-      while (!window.stAuth && tries < 40) { await new Promise(r => setTimeout(r, 100)); tries++; }
+      // Wait for auth module via the service registry.
+      try { if (window.stServices?.ready) await window.stServices.ready('stAuth'); } catch {}
       if (cancelled || !window.stAuth) return;
       try {
         const local = window.stAuth.restoreSession();
