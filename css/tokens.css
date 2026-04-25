@@ -540,3 +540,49 @@ input, textarea { font: inherit; color: inherit; }
     ) !important;
   }
 }
+
+/* ─────────────────────────────────────────────────────────── */
+/* WIDE DESKTOP (≥ 1280px) — let Home break out of the         */
+/* phone-style 1040px column and use the screen as a real      */
+/* dashboard: hero row spans the width, mode tiles flow as a   */
+/* 4-up grid, the 60s queue stops being a horizontal carousel  */
+/* and renders as a wrapping grid instead.                     */
+/* ─────────────────────────────────────────────────────────── */
+@media (min-width: 1280px) {
+  [data-device="desktop"] .mobile-safe {
+    max-width: 1400px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+  /* Hero row: Article + Featured + Daily/Duel stack */
+  [data-device="desktop"] .mobile-hero-grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1fr) !important;
+    gap: 16px !important;
+  }
+  /* Mode tiles: more columns at this width */
+  [data-device="desktop"] .mobile-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 14px !important;
+  }
+  /* 60s queue: render as a wrapping grid instead of a swipe carousel */
+  [data-device="desktop"] .lesson-carousel {
+    overflow-x: visible !important;
+    margin: 0 !important;
+    padding: 4px 0 12px !important;
+    flex-wrap: wrap !important;
+  }
+  [data-device="desktop"] .lesson-carousel > div {
+    flex: 1 1 240px !important;
+    max-width: none !important;
+  }
+  /* Academy tracks on Home: render the 3 mini cards as columns */
+  [data-device="desktop"] .home-academy-tracks {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  [data-device="desktop"] .mobile-safe {
+    max-width: 1560px !important;
+  }
+}

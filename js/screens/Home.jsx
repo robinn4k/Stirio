@@ -154,16 +154,23 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         </div>
       </div>
 
-      {/* article of the day */}
-      {articleOfDay && (
-        <section style={{ marginBottom: 24 }}>
-          <ArticleOfDayCard article={articleOfDay} onOpen={() => onOpenMode('article')} />
-        </section>
-      )}
-
-      {/* hero: featured + daily challenge + duel */}
+      {/* hero row: article of the day + featured 60s + daily/duel stack.
+          When the article catalog hasn't loaded we collapse to the old
+          2-column layout (Featured + Daily/Duel) so we don't render an
+          empty grid cell. On narrow viewports the CSS rules in
+          tokens.css collapse this to a single stacked column. */}
       <section style={{ marginBottom: 32 }}>
-        <div className="mobile-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,2fr) minmax(0,1fr)', gap: 14 }}>
+        <div
+          className="mobile-hero-grid"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: articleOfDay
+              ? 'minmax(0,1.1fr) minmax(0,1.6fr) minmax(0,1fr)'
+              : 'minmax(0,2fr) minmax(0,1fr)',
+            gap: 14,
+          }}
+        >
+          {articleOfDay && <ArticleOfDayCard article={articleOfDay} onOpen={() => onOpenMode('article')} />}
           <FeaturedCard lesson={featured} onPlay={() => onPickLesson(featured)} />
           <div style={{ display: 'grid', gap: 14 }}>
             <DailyCard onPlay={() => onOpenMode('daily')} />
@@ -172,55 +179,44 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         </div>
       </section>
 
-      {/* Academy */}
+      {/* Academy — three parallel tracks (Cocktails / Wine / Coffee).
+          Each track gets its own mini card with real progress so the Home
+          preview matches the AcademyHub instead of pretending Cocktails is
+          the only path. Tapping a card jumps straight into that track. */}
       <section style={{ marginBottom: 32 }}>
-        {(() => {
-          // Derive the real level-complete counter from localStorage so the
-          // Home academy header matches the Academy screen. A level is
-          // considered complete when at least one of its lessons passed —
-          // same heuristic as the Reference tile a few sections below.
-          let academyHomeDone = 0;
-          let academyHomeTotal = 6;
-          try {
-            const prog = JSON.parse(localStorage.getItem('cq_academy_cocktail') || localStorage.getItem('cq_academy_progress') || '{}');
-            academyHomeDone = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
-            const levels = (window.getAcademyLevels && window.getAcademyLevels('cocktail')) || [];
-            if (levels.length) academyHomeTotal = levels.length;
-          } catch {}
-          return (
-            <SectionHeader
-              eyebrow={tr('home.academy_eyebrow', 'aprende')}
-              title={tr('academy.title_ui', 'Cocktail Academy')}
-              action={<span className="mono" style={{ fontSize: 11, color: 'var(--ink-3)' }}>{academyHomeDone} / {academyHomeTotal}</span>}
-            />
-          );
-        })()}
-        <div className="card mobile-academy-hero" style={{ padding: 18, display: 'flex', gap: 16, alignItems: 'center', background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2))', borderColor: 'oklch(0.82 0.17 75 / 0.3)' }}>
-          <div style={{ fontSize: 54, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>🎓</div>
-          <div style={{ flex: 1 }}>
-            <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>{tr('home.academy_title', 'Aprende paso a paso')}</div>
-            <div style={{ color: 'var(--ink-2)', fontSize: 13, marginBottom: 10 }}>{tr('home.academy_sub', 'Domina las familias de cócteles — Sours, Highballs, Martinis, Tiki…')}</div>
-            <div style={{ display: 'flex', gap: 6 }}>
-              {['Sours', 'Highballs', 'Martinis', 'Old-school', 'Tiki', 'Modernos'].map((n, i) => (
-                <div key={n} style={{
-                  flex: 1, height: 6, borderRadius: 99,
-                  background: i === 0 ? 'var(--amber)' : 'var(--bg-3)',
-                  boxShadow: i === 0 ? '0 0 8px var(--amber-glow)' : 'none',
-                }} />
-              ))}
-            </div>
-          </div>
-          <button className="btn primary" onClick={() => onOpenMode('academy')} style={{ padding: '12px 18px' }}>
-            {tr('home.academy_cta', 'Abrir')} <Icon name="arrowR" size={14} />
-          </button>
+        <SectionHeader
+          eyebrow={tr('home.academy_eyebrow', 'aprende')}
+          title={tr('home.academy_title', 'Aprende paso a paso')}
+          action={(
+            <button
+              className="btn ghost"
+              onClick={() => onOpenMode('academy')}
+              style={{ padding: '6px 10px', fontFamily: 'var(--f-mono)', fontSize: 11 }}
+            >
+              {tr('home.academy_cta', 'Abrir')} <Icon name="arrowR" size={12} />
+            </button>
+          )}
+        />
+        <div className="home-academy-tracks" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
+          <AcademyTrackCard track="cocktail" icon="🍸" color="var(--amber)"
+            titleKey="academy.cocktail.title" titleFallback="Cocktail Academy"
+            descKey="academy.cocktail.desc"   descFallback="Familias, técnicas y clásicos"
+            onOpen={() => onOpenMode('academy')} />
+          <AcademyTrackCard track="wine" icon="🍷" color="oklch(0.45 0.16 10)"
+            titleKey="academy.wine.title" titleFallback="Sommelier Academy"
+            descKey="academy.wine.desc"   descFallback="Uvas, regiones y cata"
+            onOpen={() => onOpenMode('academy')} />
+          <AcademyTrackCard track="coffee" icon="☕" color="oklch(0.42 0.08 50)"
+            titleKey="academy.coffee.title" titleFallback="Barista Academy"
+            descKey="academy.coffee.desc"   descFallback="Granos, espresso y leche"
+            onOpen={() => onOpenMode('academy')} />
         </div>
       </section>
 
       {/* Phase 5b: modes grouped by intention from the js/modes.js registry.
           Replaces the former "Modos rápidos" / "Mini juegos" / "Referencia
-          rápida" sections — same modes (plus Glossary + Library, previously
-          orphaned), reorganized so the user can scan by what they want to do
-          rather than by tile shape. */}
+          rápida" sections, reorganized so the user can scan by what they
+          want to do rather than by tile shape. */}
       {(window.stModes?.MODE_GROUPS || []).map(group => {
         const modes = window.stModes?.getModesByGroup?.(group) || [];
         if (!modes.length) return null;
@@ -345,25 +341,41 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
 // SectionHeader vive en js/screens/shared.jsx porque Profile.jsx también
 // lo consume — evitamos un acoplamiento implícito por orden de scripts.
 
-// Fotos cinemáticas de Unsplash (source URL estable, recortes verticales)
-const LESSON_IMAGES = {
-  negroni:      'https://images.unsplash.com/photo-1556855810-ac404aa91e85?w=900&q=85&auto=format&fit=crop',
-  espresso:     'https://images.unsplash.com/photo-1545438102-799c3991ffb2?w=900&q=85&auto=format&fit=crop',
-  daiquiri:     'https://images.unsplash.com/photo-1514362453360-8cb44e31dabf?w=900&q=85&auto=format&fit=crop',
-  oldfashioned: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=900&q=85&auto=format&fit=crop',
-  mojito:       'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=900&q=85&auto=format&fit=crop',
-  margarita:    'https://images.unsplash.com/photo-1541546006121-5c3bc5e8c7b9?w=900&q=85&auto=format&fit=crop',
-  manhattan:    'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=900&q=85&auto=format&fit=crop',
-  whiskeysour:  'https://images.unsplash.com/photo-1599098915050-28f5f5ffdf73?w=900&q=85&auto=format&fit=crop',
-  cosmo:        'https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=900&q=85&auto=format&fit=crop',
-  martini:      'https://images.unsplash.com/photo-1575023782549-62ca0d244b39?w=900&q=85&auto=format&fit=crop',
-  daily:        'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=900&q=85&auto=format&fit=crop',
-};
+// Hero art panel shared by FeaturedCard and ArticleOfDayCard. We render a
+// gradient + emoji centerpiece instead of stock photos because the curated
+// Unsplash IDs we used to map per-cocktail were unreliable (showing wrong
+// drinks). Emoji-on-gradient is honest about what the card represents and
+// matches across both hero variants.
+const HeroArt = ({ emoji, accentVar }) => (
+  <div className="mobile-featured-art" style={{
+    position: 'relative', overflow: 'hidden',
+    background: `radial-gradient(120% 90% at 70% 30%, ${accentVar}, oklch(0.18 0.04 50) 75%)`,
+    display: 'grid', placeItems: 'center',
+  }}>
+    <div style={{
+      fontSize: 'clamp(64px, 9vw, 110px)', lineHeight: 1,
+      filter: `drop-shadow(0 10px 30px ${accentVar})`,
+      opacity: 0.95,
+    }}>{emoji}</div>
+    {/* Subtle grain */}
+    <div style={{
+      position: 'absolute', inset: 0,
+      background: 'repeating-radial-gradient(circle at 20% 30%, transparent 0 2px, rgba(0,0,0,0.05) 2px 3px)',
+      mixBlendMode: 'overlay',
+      opacity: 0.6,
+      pointerEvents: 'none',
+    }} />
+    <div className="mobile-featured-fade" style={{
+      position: 'absolute', inset: 0,
+      pointerEvents: 'none',
+    }} />
+  </div>
+);
 
 const FeaturedCard = ({ lesson, onPlay }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const trP = (k, params, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, params) : (f || k);
-  const img = LESSON_IMAGES[lesson.id] || LESSON_IMAGES.negroni;
+  const accent = lesson.accent || 'amber';
   return (
     <div className="card mobile-featured" style={{
       padding: 0, overflow: 'hidden',
@@ -375,7 +387,7 @@ const FeaturedCard = ({ lesson, onPlay }) => {
     }}>
       <div className="mobile-featured-copy" style={{ padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
         <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8 }}>
+          <div className="mono caps" style={{ color: `var(--${accent})`, fontSize: 11, marginBottom: 8 }}>
             {trP('home.today_label', { difficulty: lesson.difficulty }, `hoy · ${lesson.difficulty}`)}
           </div>
           <h3 style={{
@@ -394,43 +406,7 @@ const FeaturedCard = ({ lesson, onPlay }) => {
           <div className="chip amber"><Icon name="bolt" size={12} /> +{lesson.xp} xp</div>
         </div>
       </div>
-
-      {/* Foto cinemática */}
-      <div className="mobile-featured-art" style={{ position: 'relative', overflow: 'hidden' }}>
-        <img
-          src={img}
-          alt={lesson.title}
-          onError={(e) => { e.currentTarget.style.display = 'none'; }}
-          style={{
-            position: 'absolute', inset: 0,
-            width: '100%', height: '100%',
-            objectFit: 'cover',
-            filter: 'contrast(1.08) saturate(1.1)',
-          }}
-        />
-        {/* Viñeta que funde la imagen hacia el panel de texto.
-            En split (desktop) → fade a la izquierda.
-            En stacked (mobile) → fade hacia abajo.
-            Mantenemos ambos con pesos distintos. */}
-        <div className="mobile-featured-fade" style={{
-          position: 'absolute', inset: 0,
-          pointerEvents: 'none',
-        }} />
-        {/* Tinte cálido sutil */}
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'radial-gradient(120% 80% at 80% 30%, var(--amber-glow) 0%, transparent 50%)',
-          mixBlendMode: 'overlay',
-          opacity: 0.5,
-        }} />
-        {/* Grano */}
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'repeating-radial-gradient(circle at 20% 30%, transparent 0 2px, rgba(0,0,0,0.04) 2px 3px)',
-          mixBlendMode: 'overlay',
-          opacity: 0.7,
-        }} />
-      </div>
+      <HeroArt emoji={lesson.emoji || '🍸'} accentVar={`var(--${accent}-glow, var(--amber-glow))`} />
     </div>
   );
 };
@@ -438,65 +414,91 @@ const FeaturedCard = ({ lesson, onPlay }) => {
 const ArticleOfDayCard = ({ article, onOpen }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const typeLabels = { technique: 'Técnica', spirit: 'Destilado', history: 'Historia', trend: 'Tendencia', cocktail: 'Cóctel' };
+  const color = article.color || 'oklch(0.55 0.22 290)';
   return (
-    <button onClick={onOpen} className="card" style={{
-      padding: 18, textAlign: 'left', cursor: 'pointer',
-      display: 'flex', alignItems: 'center', gap: 16,
-      background: `linear-gradient(135deg, color-mix(in oklch, ${article.color || 'var(--violet)'} 22%, var(--bg-2)), var(--bg-2))`,
-      borderColor: `color-mix(in oklch, ${article.color || 'var(--violet)'} 35%, transparent)`,
-      transition: 'transform .15s',
+    <button onClick={onOpen} className="card mobile-featured" style={{
+      padding: 0, overflow: 'hidden', textAlign: 'left', cursor: 'pointer',
+      display: 'grid', gridTemplateColumns: '1fr 1fr',
+      minHeight: 260,
+      border: `1px solid color-mix(in oklch, ${color} 35%, transparent)`,
+      background: 'var(--bg-1)',
+      position: 'relative', transition: 'transform .15s',
     }}
       onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
       onMouseLeave={e => e.currentTarget.style.transform = ''}
     >
-      <div style={{ flexShrink: 0, position: 'relative', width: 64, height: 64 }}>
-        {article.image && (
-          <img
-            src={article.image}
-            alt=""
-            loading="lazy"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              if (e.currentTarget.nextSibling) e.currentTarget.nextSibling.style.display = 'grid';
-            }}
-            style={{
-              width: 64, height: 64, borderRadius: 14, objectFit: 'cover',
-              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12)',
-            }}
-          />
-        )}
-        <div style={{
-          width: 64, height: 64, borderRadius: 14,
-          background: `linear-gradient(135deg, ${article.color || 'var(--violet)'}, oklch(0.22 0.03 60))`,
-          display: article.image ? 'none' : 'grid', placeItems: 'center', fontSize: 32,
-          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12)',
-        }}>{article.emoji || '📰'}</div>
-      </div>
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div className="mono caps" style={{
-          color: 'var(--amber)', fontSize: 10, letterSpacing: '0.12em', marginBottom: 4,
-        }}>
-          {tr('home.article_eyebrow', 'Artículo del día')} · {tr('article.type.' + article.type, typeLabels[article.type] || 'Artículo')}
+      <div className="mobile-featured-copy" style={{ padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
+        <div>
+          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 11, marginBottom: 8, letterSpacing: '0.12em' }}>
+            {tr('home.article_eyebrow', 'Artículo del día')} · {tr('article.type.' + article.type, typeLabels[article.type] || 'Artículo')}
+          </div>
+          <h3 style={{
+            fontFamily: 'var(--f-serif)', fontWeight: 400,
+            fontSize: 'clamp(22px, 2.6vw, 30px)',
+            margin: '0 0 8px', lineHeight: 1.1, letterSpacing: '-0.01em',
+            display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden',
+          }}>{article.title}</h3>
+          {article.excerpt && (
+            <div style={{
+              color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.4,
+              display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden',
+            }}>{article.excerpt}</div>
+          )}
         </div>
-        <div style={{
-          fontFamily: 'var(--f-serif)', fontSize: 20, lineHeight: 1.15,
-          marginBottom: 4, overflow: 'hidden', textOverflow: 'ellipsis',
-          display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-        }}>{article.title}</div>
-        {article.excerpt && (
-          <div style={{
-            color: 'var(--ink-2)', fontSize: 12, lineHeight: 1.4,
-            overflow: 'hidden', textOverflow: 'ellipsis',
-            display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-          }}>{article.excerpt}</div>
-        )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 16 }}>
+          <span className="btn primary" style={{ padding: '12px 22px' }}>
+            {tr('home.article_cta', 'Leer')} <Icon name="arrowR" size={14} />
+          </span>
+        </div>
       </div>
-      <div style={{
-        flexShrink: 0, width: 36, height: 36, borderRadius: '50%',
-        background: 'var(--amber)', display: 'grid', placeItems: 'center',
-        color: 'var(--bg-0)',
-      }}>
+      <HeroArt emoji={article.emoji || '📰'} accentVar={color} />
+    </button>
+  );
+};
+
+const AcademyTrackCard = ({ track, icon, color, titleKey, titleFallback, descKey, descFallback, onOpen }) => {
+  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // Same progress heuristic as the AcademyHub: a level counts as "done"
+  // when at least one of its lessons passed. We read the per-track key
+  // and fall back to the legacy `cq_academy_progress` key for cocktail.
+  const KEYS = { cocktail: 'cq_academy_cocktail', wine: 'cq_academy_wine', coffee: 'cq_academy_coffee' };
+  let done = 0, total = 0;
+  try {
+    const raw = localStorage.getItem(KEYS[track])
+      || (track === 'cocktail' ? localStorage.getItem('cq_academy_progress') : null);
+    const prog = JSON.parse(raw || '{}');
+    done = Object.values(prog).filter(l => (l.lessons || []).some(x => x?.passed)).length;
+    const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+    total = levels.length;
+  } catch {}
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  return (
+    <button onClick={onOpen} className="card" style={{
+      padding: 16, textAlign: 'left', cursor: 'pointer',
+      display: 'grid', gap: 10,
+      borderLeft: `4px solid ${color}`,
+      transition: 'transform .15s, border-color .2s',
+    }}
+      onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+      onMouseLeave={e => e.currentTarget.style.transform = ''}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{
+          width: 44, height: 44, borderRadius: 12,
+          background: `linear-gradient(135deg, ${color}, oklch(0.22 0.04 60))`,
+          display: 'grid', placeItems: 'center', fontSize: 22,
+        }}>{icon}</div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontFamily: 'var(--f-serif)', fontSize: 18, lineHeight: 1.1 }}>{tr(titleKey, titleFallback)}</div>
+          <div style={{ color: 'var(--ink-3)', fontSize: 11, fontFamily: 'var(--f-mono)', marginTop: 2 }}>
+            {total ? `${done} / ${total}` : '–'}
+          </div>
+        </div>
         <Icon name="arrowR" size={14} />
+      </div>
+      <div style={{ color: 'var(--ink-2)', fontSize: 12, lineHeight: 1.35 }}>{tr(descKey, descFallback)}</div>
+      <div style={{ height: 5, borderRadius: 99, background: 'var(--bg-3)', overflow: 'hidden' }}>
+        <div style={{ width: `${pct}%`, height: '100%', background: color, transition: 'width .3s' }} />
       </div>
     </button>
   );
