@@ -714,45 +714,82 @@ const App = () => {
   };
 
   const lessonStartAtRef = useRef(0);
-  const pickLesson   = (l) => { if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); } };
-  const exitLesson   = ()  => { lessonStartAtRef.current = 0; setActiveLesson(null); };
+  // useCallback with [] deps so the LESSON_FINISHED effect closures (registered
+  // once on mount) capture stable references instead of re-render churn.
+  const pickLesson   = useCallback((l) => {
+    if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); }
+  }, [setActiveLesson]);
+  const exitLesson   = useCallback(()  => {
+    lessonStartAtRef.current = 0; setActiveLesson(null);
+  }, [setActiveLesson]);
   // Used by finishLesson when there's no "next" academy item — closes the
   // lesson overlay if it's still on top.
-  const closeLessonOverlay = () => {
+  const closeLessonOverlay = useCallback(() => {
     if (typeof window === 'undefined' || !window.stRouter) return;
     const top = window.stRouter.getCurrent();
     if (top?.name === 'lesson') window.stRouter.back();
-  };
-  const finishLesson = ({ xp, correct, wrong, next } = {}) => {
-    const total = (correct || 0) + (wrong || 0);
-    // Write XP to the canonical stLearn store (cq_learn_data) so Profile and
-    // the Firestore leaderboard read the same number. Then re-sync the React
-    // profile state from stLearn so the UI matches.
-    try { if (window.stLearn && window.stLearn.addXp) window.stLearn.addXp(xp); } catch {}
-    try {
-      if (window.stLearn && window.stLearn.getLearnStats) {
-        const stats = window.stLearn.getLearnStats();
-        const lvl = window.stLearn.getLevelInfo(stats.xp);
-        const nextTotal = lvl.maxLevel ? stats.xp : (stats.xp + (lvl.need - lvl.cur));
-        setProfile(p => ({ ...p, xp: stats.xp, xpNext: nextTotal || p.xpNext, level: lvl.level, streak: stats.streak }));
-      } else {
-        setProfile(p => ({ ...p, xp: p.xp + xp }));
-      }
-    } catch { setProfile(p => ({ ...p, xp: p.xp + xp })); }
+  }, []);
+  // finishLesson is invoked by LessonPlayer with { xp, correct, wrong, next }.
+  // The body is now a single dispatch — the seven side-effects (XP write,
+  // profile sync, activity log, academy progress, achievements, leaderboard,
+  // resolve-next-or-close) are registered once on mount and executed in order
+  // by window.stStore. See the LESSON_FINISHED effect registration block below.
+  const finishLesson = useCallback((result = {}) => {
+    if (!window.stStore || !window.stRouter) return null;
+    const top = window.stRouter.getCurrent();
+    const lesson = top?.name === 'lesson' ? top.params?.lesson : null;
+    return window.stStore.dispatch({
+      type: 'LESSON_FINISHED',
+      payload: {
+        xp: result.xp,
+        correct: result.correct,
+        wrong: result.wrong,
+        next: result.next,
+        lesson,
+        startedAt: lessonStartAtRef.current,
+      },
+    });
+  }, []);
 
-    // Record today's activity (used by Profile heatmap + stats)
-    const startedAt = lessonStartAtRef.current;
-    const durationMs = startedAt ? Math.max(0, Date.now() - startedAt) : 0;
-    lessonStartAtRef.current = 0;
-    recordActivity({ xp, correct, total, durationMs });
+  // Register the LESSON_FINISHED effect chain ONCE on mount. Each effect runs
+  // in order; failures are isolated by the store. Closures here capture stable
+  // references (setProfile setter, useCallback'd helpers, refs).
+  useEffect(() => {
+    if (!window.stStore) return undefined;
 
-    // Persist Academy progress if this was an academy lesson. IDs include the
-    // track namespace so each academia (cocktail / wine / coffee) writes to
-    // its own localStorage key.
-    const id = activeLesson?.id || '';
-    const aMatch = id.match(/^academy-(cocktail|wine|coffee)-l(\d+)-les(\d+)$/);
-    const pMatch = id.match(/^academy-(cocktail|wine|coffee)-practice-l(\d+)-r(\d+)$/);
-    if (aMatch || pMatch) {
+    const writeXp = (action) => {
+      const { xp } = action.payload;
+      try { if (window.stLearn?.addXp) window.stLearn.addXp(xp); } catch {}
+    };
+
+    const syncProfile = (action) => {
+      const { xp } = action.payload;
+      try {
+        if (window.stLearn?.getLearnStats) {
+          const stats = window.stLearn.getLearnStats();
+          const lvl = window.stLearn.getLevelInfo(stats.xp);
+          const nextTotal = lvl.maxLevel ? stats.xp : (stats.xp + (lvl.need - lvl.cur));
+          setProfile(p => ({ ...p, xp: stats.xp, xpNext: nextTotal || p.xpNext, level: lvl.level, streak: stats.streak }));
+        } else {
+          setProfile(p => ({ ...p, xp: p.xp + xp }));
+        }
+      } catch { setProfile(p => ({ ...p, xp: p.xp + xp })); }
+    };
+
+    const recordActivityEffect = (action) => {
+      const { xp, correct, wrong, startedAt } = action.payload;
+      const total = (correct || 0) + (wrong || 0);
+      const durationMs = startedAt ? Math.max(0, Date.now() - startedAt) : 0;
+      lessonStartAtRef.current = 0;
+      recordActivity({ xp, correct, total, durationMs });
+    };
+
+    const persistAcademy = (action) => {
+      const { lesson, xp } = action.payload;
+      const id = lesson?.id || '';
+      const aMatch = id.match(/^academy-(cocktail|wine|coffee)-l(\d+)-les(\d+)$/);
+      const pMatch = id.match(/^academy-(cocktail|wine|coffee)-practice-l(\d+)-r(\d+)$/);
+      if (!aMatch && !pMatch) return;
       try {
         const track = (aMatch || pMatch)[1];
         const key = `cq_academy_${track}`;
@@ -770,16 +807,14 @@ const App = () => {
         }
         localStorage.setItem(key, JSON.stringify(prog));
       } catch {}
-    }
+    };
 
-    // Trigger achievement checks with CUMULATIVE stats. Previously we passed
-    // per-session values, so thresholds like xp_500, lessons_5, streak_3 and
-    // perfect_lesson could never cross. Now we read prev counters from
-    // stAchievements + xp/streak from stLearn and increment from there.
-    if (window.stAchievements && window.stAchievements.checkAchievements && typeof correct === 'number') {
+    const checkAchievementsEffect = (action) => {
+      const { lesson, correct, wrong } = action.payload;
+      if (!window.stAchievements?.checkAchievements || typeof correct !== 'number') return;
       try {
         const prev = (window.stAchievements.getStats && window.stAchievements.getStats()) || {};
-        const learn = (window.stLearn && window.stLearn.getLearnStats) ? window.stLearn.getLearnStats() : { xp: 0, streak: 0 };
+        const learn = window.stLearn?.getLearnStats ? window.stLearn.getLearnStats() : { xp: 0, streak: 0 };
         const perfect = (wrong === 0) && (correct > 0);
         const patch = {
           totalGames: (prev.totalGames || 0) + 1,
@@ -788,9 +823,7 @@ const App = () => {
           streak: learn.streak || 0,
         };
         if (perfect) patch.perfectLesson = true;
-        // Track distinct round IDs so `all_rounds` unlocks after 10 different
-        // rounds played, not 10 replays of the same one.
-        const activeId = activeLesson?.id || '';
+        const activeId = lesson?.id || '';
         const roundMatch = activeId.match(/^round-(\d+)$/);
         if (roundMatch) {
           const roundsSet = new Set(prev.roundsPlayedIds || []);
@@ -800,37 +833,39 @@ const App = () => {
         }
         window.stAchievements.checkAchievements(patch);
       } catch (e) { console.warn('achievements check failed:', e); }
-    }
-    // Update leaderboard score if logged in. `saveScore` signature is
-    // { roundId, roundTitle, score, corrects, wrongs } — we derive roundId
-    // from the active lesson so Firestore keeps one doc per round per user
-    // (the path is scores/{uid}_{roundId}). Without it every finish
-    // overwrites the same scores/{uid}_undefined doc.
-    if (window.stLeaderboard && window.stLeaderboard.saveScore && typeof xp === 'number') {
+    };
+
+    const saveLeaderboardEffect = (action) => {
+      const { lesson, xp, correct, wrong } = action.payload;
+      if (!window.stLeaderboard?.saveScore || typeof xp !== 'number') return;
       try {
-        const lesson = activeLesson;
         const roundId = lesson?.id || `lesson-${Date.now()}`;
         const roundTitle = lesson?.title || lesson?.category || 'lesson';
         window.stLeaderboard.saveScore({
-          roundId,
-          roundTitle,
-          score: xp,
-          corrects: correct || 0,
-          wrongs: wrong || 0,
+          roundId, roundTitle, score: xp,
+          corrects: correct || 0, wrongs: wrong || 0,
         });
       } catch (e) { console.warn('saveScore failed:', e); }
-    }
+    };
 
-    // If the user tapped "Siguiente lección" from the results screen AND the
-    // current lesson belongs to an Academy level, resolve the next unfinished
-    // item in the level's sequence and launch it. Fall back to clearing the
-    // lesson (returning to Academy hub) if nothing comes next.
-    if (next && (aMatch || pMatch)) {
+    // resolveNext: if the user tapped "Siguiente lección" on an academy item,
+    // try to navigate to the next item in the level sequence. On success, mark
+    // action.payload.advanced so the closeIfNotAdvanced effect skips closing.
+    //
+    // NOTE: preserves the existing (buggy) behavior where (aMatch||pMatch)[1]
+    // is used as a numeric levelId — `Number('cocktail')` = NaN means no level
+    // is found and the chain falls through to closeIfNotAdvanced. Fix tracked
+    // separately to keep this PR a pure refactor.
+    const resolveNext = (action) => {
+      const { lesson, next } = action.payload;
+      if (!next || !lesson?.id) return;
+      const aMatch = lesson.id.match(/^academy-(cocktail|wine|coffee)-l(\d+)-les(\d+)$/);
+      const pMatch = lesson.id.match(/^academy-(cocktail|wine|coffee)-practice-l(\d+)-r(\d+)$/);
+      if (!aMatch && !pMatch) return;
       const levelId = Number((aMatch || pMatch)[1]);
       const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
       const level  = levels.find(l => l.id === levelId);
       const seq    = (level && level.sequence) || [];
-      // Index of the item we just finished.
       let curIdx = -1;
       if (aMatch) {
         const lessonIdx = Number(aMatch[2]);
@@ -845,16 +880,31 @@ const App = () => {
           ? (window.buildAcademyLesson && window.buildAcademyLesson(level, nextItem.index))
           : (window.buildAcademyPractice && window.buildAcademyPractice(level, nextItem.roundId));
         if (nextLesson) {
-          // Router replaces the lesson overlay in a single commit. The
-          // LessonPlayer's `key={lesson.id}` forces a clean remount, and the
-          // old LessonResults can't linger above the new intro as a ghost.
+          // Router replaces the lesson overlay in a single commit; LessonPlayer's
+          // key={lesson.id} forces a clean remount.
           pickLesson(nextLesson);
-          return;
+          action.payload.advanced = true;
         }
       }
-    }
-    closeLessonOverlay();
-  };
+    };
+
+    const closeIfNotAdvanced = (action) => {
+      if (action.payload.advanced) return;
+      closeLessonOverlay();
+    };
+
+    const offs = [
+      window.stStore.registerEffect('LESSON_FINISHED', writeXp),
+      window.stStore.registerEffect('LESSON_FINISHED', syncProfile),
+      window.stStore.registerEffect('LESSON_FINISHED', recordActivityEffect),
+      window.stStore.registerEffect('LESSON_FINISHED', persistAcademy),
+      window.stStore.registerEffect('LESSON_FINISHED', checkAchievementsEffect),
+      window.stStore.registerEffect('LESSON_FINISHED', saveLeaderboardEffect),
+      window.stStore.registerEffect('LESSON_FINISHED', resolveNext),
+      window.stStore.registerEffect('LESSON_FINISHED', closeIfNotAdvanced),
+    ];
+    return () => offs.forEach(off => off());
+  }, [pickLesson, closeLessonOverlay]);
 
   const finishOnboarding = async (o) => {
     const payload = {
