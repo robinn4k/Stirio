@@ -565,23 +565,6 @@ const ModeCard = ({ icon, title, caption, accent, onClick }) => (
   </button>
 );
 
-const ArcadeCard = ({ icon, title, subtitle, onClick }) => (
-  <button onClick={onClick} className="card mobile-mode-card" style={{
-    padding: 18, textAlign: 'left', cursor: 'pointer',
-    display: 'flex', flexDirection: 'column', gap: 10,
-    transition: 'transform .15s, border-color .2s', minHeight: 132,
-  }}
-    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = 'var(--amber)'; }}
-    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.borderColor = ''; }}
-  >
-    <div style={{ fontSize: 40, filter: 'drop-shadow(0 6px 14px var(--amber-glow))' }}>{icon}</div>
-    <div>
-      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 20, lineHeight: 1.1, marginBottom: 3 }}>{title}</div>
-      <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{subtitle}</div>
-    </div>
-  </button>
-);
-
 const LessonCard = ({ lesson, onPlay }) => (
   <button onClick={onPlay} className="card" style={{
     padding: 16, textAlign: 'left',
@@ -619,32 +602,6 @@ const RefTile = ({ icon, label, count, onClick }) => (
     <div>
       <div style={{ fontSize: 13, fontWeight: 500 }}>{label}</div>
       <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--amber)' }}>{count}</div>
-    </div>
-  </button>
-);
-
-const RefTileLarge = ({ icon, label, preview, badge, onClick, accent = 'amber' }) => (
-  <button onClick={onClick} className="card" style={{
-    padding: 16, textAlign: 'left', cursor: 'pointer',
-    display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 10,
-    minHeight: 130,
-    // --<accent>-soft + --<accent>-glow are defined per-theme in tokens.css and
-    // work on every browser. Previously used oklch(from …) relative syntax
-    // which silently failed on older Chromium/Safari → blank card fallback.
-    background: `linear-gradient(160deg, var(--${accent}-soft, var(--amber-soft)), var(--bg-2) 70%)`,
-    borderColor: `var(--${accent}-glow, var(--amber-glow))`,
-    transition: 'transform .15s, border-color .2s',
-  }}
-    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = `var(--${accent})`; }}
-    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.borderColor = ''; }}
-  >
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-      <div style={{ fontSize: 30, filter: `drop-shadow(0 4px 10px var(--${accent}-glow, var(--amber-glow)))` }}>{icon}</div>
-      {badge && <div className="mono caps" style={{ fontSize: 9, color: `var(--${accent})`, padding: '2px 8px', border: `1px solid var(--${accent})`, borderRadius: 99, opacity: 0.85 }}>{badge}</div>}
-    </div>
-    <div>
-      <div style={{ fontFamily: 'var(--f-serif)', fontSize: 17, lineHeight: 1.1, marginBottom: 4 }}>{label}</div>
-      {preview && <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{preview}</div>}
     </div>
   </button>
 );
