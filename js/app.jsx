@@ -940,6 +940,32 @@ const App = () => {
     return () => handlers.forEach(([name, fn]) => window.removeEventListener(name, fn));
   }, []);
 
+  // Version-mismatch detector. Fetches /version.json (no-store) on mount and
+  // every 5 minutes. If the server's version differs from the booted one, it
+  // means the user's tab is running stale code — show a banner with a one-tap
+  // "Recargar" that nukes SW + caches and reloads. Complements PR #171's
+  // network-first + updateViaCache fixes: those handle the 80% case
+  // automatically; this banner is the visible safety net for the rest.
+  const [updateAvailable, setUpdateAvailable] = useState(false);
+  useEffect(() => {
+    let cancelled = false;
+    const check = async () => {
+      try {
+        // ?_= timestamp dodges any HTTP cache. cache:'no-store' belt + braces.
+        const res = await fetch(`version.json?_=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        const { version } = await res.json();
+        if (cancelled) return;
+        if (version && window.STIRIO_VERSION && version !== window.STIRIO_VERSION) {
+          setUpdateAvailable(true);
+        }
+      } catch {}
+    };
+    check();
+    const id = window.setInterval(check, 5 * 60 * 1000);
+    return () => { cancelled = true; clearInterval(id); };
+  }, []);
+
   const finishOnboarding = async (o) => {
     const payload = {
       version: ONBOARDING_VERSION,
@@ -986,6 +1012,46 @@ const App = () => {
       WebkitOverflowScrolling: 'touch',
       background: 'var(--bg-0)',
     }}>
+
+      {updateAvailable && (
+        <div
+          role="status"
+          style={{
+            position: 'sticky', top: 0, zIndex: 60,
+            background: 'var(--amber)', color: 'var(--bg-0)',
+            padding: '10px 16px',
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            gap: 12,
+            fontSize: 13, fontWeight: 500,
+            borderBottom: '1px solid color-mix(in oklch, var(--amber) 60%, black)',
+          }}
+        >
+          <span>{(window.stUiT ? window.stUiT('app.update_banner.text', 'Nueva versión disponible') : 'Nueva versión disponible')}</span>
+          <button
+            onClick={async () => {
+              try {
+                if ('serviceWorker' in navigator) {
+                  const regs = await navigator.serviceWorker.getRegistrations();
+                  await Promise.all(regs.map(r => r.unregister().catch(() => {})));
+                }
+                if (typeof caches !== 'undefined') {
+                  const keys = await caches.keys();
+                  await Promise.all(keys.map(k => caches.delete(k).catch(() => {})));
+                }
+              } catch (e) { console.warn('update reload cleanup failed:', e); }
+              try { window.location.reload(); } catch { window.location.href = window.location.href; }
+            }}
+            style={{
+              background: 'var(--bg-0)', color: 'var(--amber)',
+              padding: '6px 14px', borderRadius: 'var(--r-sm, 6px)',
+              fontFamily: 'var(--f-mono)', fontSize: 12,
+              border: 'none', cursor: 'pointer',
+            }}
+          >
+            {(window.stUiT ? window.stUiT('app.update_banner.cta', 'Recargar') : 'Recargar')}
+          </button>
+        </div>
+      )}
 
       {screen === 'onboarding' && !activeLesson && (
         <Onboarding onDone={finishOnboarding} bootstrapping={authBootstrapping} />

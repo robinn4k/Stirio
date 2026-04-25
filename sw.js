@@ -131,7 +131,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v11.03`;
+const STATIC_CACHE_VERSION = `Stirio-v11.04`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
@@ -232,6 +232,13 @@ self.addEventListener('fetch', (event) => {
 
   // Never intercept auth / Firebase live traffic.
   if (shouldBypass(url)) return;
+
+  // Never cache the version manifest. The boot-time mismatch detector hits
+  // /version.json with ?_=<timestamp> on each call to dodge HTTP cache;
+  // letting the SW process it would (a) pollute STATIC_CACHE_VERSION with
+  // one entry per call and (b) potentially serve a stale value when the
+  // network briefly stutters. Pass it through to the browser cleanly.
+  if (url.pathname === BASE + 'version.json') return;
 
   const sameOrigin = url.origin === self.location.origin;
   const isNavigation = event.request.mode === 'navigate';
