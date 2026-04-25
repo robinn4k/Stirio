@@ -10,10 +10,15 @@
 // underlying base screen instead of replacing it.
 
 const ROUTES = {
-  // Top-level screens
+  // Top-level screens (no parent — they're peers, not nested).
+  // Profile being a peer is critical: with parent='home' the screen-derivation
+  // walks up to 'home', which makes `screen === 'profile'` always false and
+  // hides the Profile component entirely. Back-navigation from Profile is
+  // handled by `onBack={() => setScreen('home')}` (router.reset under the
+  // hood), which doesn't depend on the parent declaration.
   onboarding:  { hidesNav: true,  hidesLegal: true },
   home:        {},
-  profile:     { parent: 'home' },
+  profile:     {},
 
   // Subscreens (parent: home unless noted)
   'academy-hub':      { parent: 'home',         hidesNav: true },
