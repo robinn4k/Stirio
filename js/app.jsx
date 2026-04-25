@@ -1129,15 +1129,37 @@ const App = () => {
       )}
 
       {/* BottomNav hidden on routes that declare hidesNav (subscreens, lesson,
-          onboarding). setScreen calls router.reset() which clears the stack. */}
-      {!topMeta.hidesNav && (
-        <BottomNav
-          current={screen}
-          onNav={setScreen}
-          shortcut={PLAY_SHORTCUTS.find(s => s.id === (tweaks.playShortcut || 'daily')) || PLAY_SHORTCUTS[0]}
-          onPlay={() => openMode(tweaks.playShortcut || 'daily')}
-        />
-      )}
+          onboarding). setScreen calls router.reset() which clears the stack.
+          The FAB shortcut is "smart": if any Academy track has progress, the
+          FAB becomes "Continuar" → academy hub. Otherwise it falls back to
+          the user's configured playShortcut from Profile → Settings. */}
+      {!topMeta.hidesNav && (() => {
+        const userShortcut = PLAY_SHORTCUTS.find(s => s.id === (tweaks.playShortcut || 'daily')) || PLAY_SHORTCUTS[0];
+        let hasAcademyProgress = false;
+        try {
+          for (const track of ['cocktail', 'wine', 'coffee']) {
+            const raw = localStorage.getItem(`cq_academy_${track}`);
+            if (!raw) continue;
+            const prog = JSON.parse(raw);
+            for (const level of Object.values(prog || {})) {
+              if ((level?.lessons || []).some(l => l?.passed)) { hasAcademyProgress = true; break; }
+              if (Object.values(level?.practices || {}).some(p => p?.passed)) { hasAcademyProgress = true; break; }
+            }
+            if (hasAcademyProgress) break;
+          }
+        } catch {}
+        const shortcut = hasAcademyProgress
+          ? { id: 'continue', target: 'academy', icon: '🎓', labelKey: 'app.shortcut.continue' }
+          : { ...userShortcut, target: userShortcut.id, labelKey: `app.shortcut.${userShortcut.id}` };
+        return (
+          <BottomNav
+            current={screen}
+            onNav={setScreen}
+            shortcut={shortcut}
+            onPlay={() => openMode(shortcut.target)}
+          />
+        );
+      })()}
     </div>
   );
 
