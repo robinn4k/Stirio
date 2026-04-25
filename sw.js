@@ -60,6 +60,8 @@ const CACHE_PATHS = [
   'js/services.js',
   'js/store.js',
   'js/lesson-steps.js',
+  // Phase 5a: mode registry (single source of truth for the 16 play modes).
+  'js/modes.js',
   // Phase 4: LessonPlayer step plugins. Each file self-registers in
   // window.stLessonSteps. Adding a new step kind = add a file here.
   'js/lesson-steps/intro.jsx',
@@ -130,7 +132,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v10.92`;
+const STATIC_CACHE_VERSION = `Stirio-v10.93`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

@@ -1082,9 +1082,11 @@ const App = () => {
         <ModeSheet
           mode={activeMode}
           onClose={() => setActiveMode(null)}
-          onStart={() => {
+          onStart={(pickedId) => {
+            // Picker fires with the picked mode; single-card fires with the
+            // same mode it was rendering. Either way, dispatch via openMode.
             setActiveMode(null);
-            openMode(activeMode);
+            openMode(pickedId || activeMode);
           }}
         />
       )}
