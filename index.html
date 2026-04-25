@@ -65,7 +65,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.91';</script>
+  <script>window.STIRIO_VERSION = '10.92';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -130,6 +130,17 @@
   <!-- React UI components (Babel transpiles JSX in-browser as classic scripts — shared top-level scope) -->
   <script type="text/babel" data-presets="react" src="js/ui.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/lesson.jsx"></script>
+  <!-- LessonPlayer step plugins (Phase 4). Order doesn't matter — each file
+       self-registers via window.stLessonSteps.register(kind, Component). The
+       renderer in lesson.jsx looks up by step.kind at render time. -->
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/intro.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/choice.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/multi.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/ratio.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/earTrain.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/cutWords.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/colorMatch.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/lesson-steps/timing.jsx"></script>
   <!-- screens/ — the former monolithic js/screens.jsx, split per-screen.
        shared.jsx MUST load first: it provides SectionHeader used by Home
        and Profile. The per-screen files are independent of each other. -->
