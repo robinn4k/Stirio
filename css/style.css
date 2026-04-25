@@ -35,9 +35,17 @@ html[data-reduce-motion="1"] *::after {
 
 body {
   min-height: 100dvh;
+  /* Three layered radials so the page reads warm instead of flat black:
+     • Amber bloom anchored top-right (the dominant brand glow).
+     • Cyan accent anchored bottom-left (counter-balance).
+     • A subtle warm wash centred under the hero so the dashboard doesn't
+       feel hollow once the hero photos are gone.
+     All layers are large + low-opacity; tokens stay theme-driven so any
+     theme override (lounge / midnight / tiki / etc.) flows through. */
   background:
-    radial-gradient(ellipse 800px 600px at 80% -10%, var(--amber-soft), transparent 60%),
-    radial-gradient(ellipse 600px 500px at -10% 100%, var(--cyan-soft), transparent 60%),
+    radial-gradient(ellipse 1200px 900px at 80% -10%, var(--amber-soft), transparent 65%),
+    radial-gradient(ellipse 1000px 800px at -10% 100%, var(--cyan-soft), transparent 65%),
+    radial-gradient(ellipse 900px 500px at 50% 25%, oklch(from var(--amber) l c h / 0.08), transparent 70%),
     var(--bg-0);
   background-attachment: fixed;
   color: var(--ink-0);

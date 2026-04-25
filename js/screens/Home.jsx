@@ -154,28 +154,27 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
         </div>
       </div>
 
-      {/* hero row: article of the day + featured 60s + daily/duel stack.
-          When the article catalog hasn't loaded we collapse to the old
-          2-column layout (Featured + Daily/Duel) so we don't render an
-          empty grid cell. On narrow viewports the CSS rules in
-          tokens.css collapse this to a single stacked column. */}
+      {/* hero 2×2: Article + Featured up top (equal hero tiles), Daily +
+          Duel below (equal secondary tiles). Each tile sized by its
+          importance class instead of by content length. When there's no
+          article we fall back to a single hero row so the grid doesn't
+          render an empty cell. tokens.css collapses this to one column on
+          narrow viewports. */}
       <section style={{ marginBottom: 32 }}>
         <div
           className="mobile-hero-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: articleOfDay
-              ? 'minmax(0,1.1fr) minmax(0,1.6fr) minmax(0,1fr)'
-              : 'minmax(0,2fr) minmax(0,1fr)',
+            gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)',
             gap: 14,
           }}
         >
-          {articleOfDay && <ArticleOfDayCard article={articleOfDay} onOpen={() => onOpenMode('article')} />}
+          {articleOfDay
+            ? <ArticleOfDayCard article={articleOfDay} onOpen={() => onOpenMode('article')} />
+            : null}
           <FeaturedCard lesson={featured} onPlay={() => onPickLesson(featured)} />
-          <div style={{ display: 'grid', gap: 14 }}>
-            <DailyCard onPlay={() => onOpenMode('daily')} />
-            <DuelCard onPlay={() => onOpenMode('duel')} />
-          </div>
+          <DailyCard onPlay={() => onOpenMode('daily')} />
+          <DuelCard onPlay={() => onOpenMode('duel')} />
         </div>
       </section>
 

@@ -101,11 +101,25 @@ const PLAY_SHORTCUTS = [
   { id: 'mode-menu', icon: '⋯' },
 ];
 
+// Auto-pick a sensible device default based on the actual viewport, but only
+// when the user hasn't stored an explicit preference. Mouse-driven wide
+// windows get the desktop layout; phones / tablets / coarse pointers get the
+// mobile preview. Returns 'mobile' on SSR or any environment without
+// matchMedia (defensive — the app is browser-only but keep it cheap).
+const detectDeviceDefault = () => {
+  try {
+    if (typeof window === 'undefined' || !window.matchMedia) return 'mobile';
+    return window.matchMedia('(min-width: 1024px) and (pointer: fine)').matches
+      ? 'desktop'
+      : 'mobile';
+  } catch { return 'mobile'; }
+};
+
 const TWEAK_DEFAULTS = {
   theme: 'lounge',
   density: 'comfortable',
   featuredLayout: 'stacked',
-  device: 'mobile',
+  device: detectDeviceDefault(),
   playShortcut: 'daily',
   units: 'ml',
 };
