@@ -853,36 +853,37 @@ const App = () => {
     };
 
     // resolveNext: if the user tapped "Siguiente lección" on an academy item,
-    // try to navigate to the next item in the level sequence. On success, mark
+    // navigate to the next item in the level sequence. On success, mark
     // action.payload.advanced so the closeIfNotAdvanced effect skips closing.
     //
-    // NOTE: preserves the existing (buggy) behavior where (aMatch||pMatch)[1]
-    // is used as a numeric levelId — `Number('cocktail')` = NaN means no level
-    // is found and the chain falls through to closeIfNotAdvanced. Fix tracked
-    // separately to keep this PR a pure refactor.
+    // Regex capture groups (per the IDs minted by buildAcademyLesson /
+    // buildAcademyPractice in js/data.js):
+    //   academy-<track>-l<levelId>-les<lessonIdx>      → [1]=track [2]=levelId [3]=lessonIdx
+    //   academy-<track>-practice-l<levelId>-r<roundId> → [1]=track [2]=levelId [3]=roundId
     const resolveNext = (action) => {
       const { lesson, next } = action.payload;
       if (!next || !lesson?.id) return;
       const aMatch = lesson.id.match(/^academy-(cocktail|wine|coffee)-l(\d+)-les(\d+)$/);
       const pMatch = lesson.id.match(/^academy-(cocktail|wine|coffee)-practice-l(\d+)-r(\d+)$/);
       if (!aMatch && !pMatch) return;
-      const levelId = Number((aMatch || pMatch)[1]);
-      const levels = (window.getAcademyLevels && window.getAcademyLevels()) || [];
-      const level  = levels.find(l => l.id === levelId);
-      const seq    = (level && level.sequence) || [];
+      const track   = (aMatch || pMatch)[1];
+      const levelId = Number((aMatch || pMatch)[2]);
+      const levels  = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+      const level   = levels.find(l => l.id === levelId);
+      const seq     = (level && level.sequence) || [];
       let curIdx = -1;
       if (aMatch) {
-        const lessonIdx = Number(aMatch[2]);
+        const lessonIdx = Number(aMatch[3]);
         curIdx = seq.findIndex(s => s.type === 'lesson' && s.index === lessonIdx);
       } else {
-        const roundId = Number(pMatch[2]);
+        const roundId = Number(pMatch[3]);
         curIdx = seq.findIndex(s => s.type === 'practice' && s.roundId === roundId);
       }
       const nextItem = curIdx >= 0 ? seq[curIdx + 1] : null;
       if (level && nextItem) {
         const nextLesson = nextItem.type === 'lesson'
-          ? (window.buildAcademyLesson && window.buildAcademyLesson(level, nextItem.index))
-          : (window.buildAcademyPractice && window.buildAcademyPractice(level, nextItem.roundId));
+          ? (window.buildAcademyLesson && window.buildAcademyLesson(level, nextItem.index, track))
+          : (window.buildAcademyPractice && window.buildAcademyPractice(level, nextItem.roundId, track));
         if (nextLesson) {
           // Router replaces the lesson overlay in a single commit; LessonPlayer's
           // key={lesson.id} forces a clean remount.
