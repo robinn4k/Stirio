@@ -116,23 +116,48 @@ function sortByRank(users) {
 }
 
 async function fetchLeaderboard() {
-  // Try Firestore first — query users collection sorted by xpTotal
-  // (single-field order avoids composite-index requirement; level/streak sort
-  // is applied client-side in sortByRank below).
+  // Try Firestore first — query users collection sorted by xpTotal. The
+  // orderBy filters out docs missing the field, so we follow up with an
+  // unordered query to backfill those rows (counted as xpTotal:0). Both
+  // queries use a single-field index — no composite index required.
   if (isFirebaseReady()) {
     try {
       const db = getDb();
       const { collection, query, orderBy, limit, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
-      const q = query(collection(db, 'users'), orderBy('xpTotal', 'desc'), limit(50));
-      const snap = await getDocs(q);
-      const users = snap.docs.map(d => ({ uid: d.id, ...d.data() })).filter(u => u && u.name);
-      if (users.length > 0) return sortByRank(users);
+      const orderedQ = query(collection(db, 'users'), orderBy('xpTotal', 'desc'), limit(50));
+      const orderedSnap = await getDocs(orderedQ);
+      const rows = orderedSnap.docs
+        .map(d => ({ uid: d.id, ...d.data() }))
+        .filter(u => u && u.name);
+
+      if (rows.length < 50) {
+        // Backstop: pick up users whose docs lack `xpTotal` (created before
+        // seedUserDoc existed, or via saveOnboarding only). The orderBy query
+        // above silently excluded them.
+        try {
+          const fallbackQ = query(collection(db, 'users'), limit(50));
+          const fallbackSnap = await getDocs(fallbackQ);
+          const seen = new Set(rows.map(r => r.uid));
+          for (const d of fallbackSnap.docs) {
+            if (seen.has(d.id)) continue;
+            const data = d.data();
+            if (!data || !data.name) continue;
+            rows.push({ uid: d.id, xpTotal: 0, level: 1, streakDays: 0, ...data });
+          }
+        } catch (e) { console.warn('leaderboard backstop query failed:', e); }
+      }
+
+      // Firestore reachable — return whatever it had (possibly empty), NOT
+      // the single-user local fallback. The local fallback is only correct
+      // when Firestore is unavailable.
+      return sortByRank(rows);
     } catch (e) {
       console.error('Leaderboard Firestore query failed:', e && e.code, e && e.message);
     }
   }
 
-  // Fallback: local user only
+  // Firestore unavailable: synthesize a single-user row so the user still
+  // sees themselves on the offline/initial-boot ranking.
   const user = getCurrentUser();
   if (!user) return [];
   const local = getLocalUserStats();

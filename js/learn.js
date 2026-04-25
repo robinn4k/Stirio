@@ -51,6 +51,39 @@ export async function loadLearnFromCloud() {
   } catch (e) { console.warn('learn cloud load failed:', e); }
 }
 
+// ─── Activity log cloud sync ─────────────────────────────────
+// Mirrors the localStorage `stirio::activity::v1` rollup into the user's
+// Firestore doc so the Profile heatmap survives sign-out, account switch and
+// fresh-device installs (XP rehydrates from `learnData` but the activity log
+// would otherwise stay empty forever).
+const ACTIVITY_KEY = 'stirio::activity::v1';
+
+export async function syncActivityToCloud(log) {
+  const user = getCurrentUser();
+  if (!isFirebaseReady() || !user || user.isGuest) return;
+  try {
+    const db = getDb();
+    const { doc, setDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+    await setDoc(doc(db, 'users', user.uid), {
+      activityLog: log || {},
+      lastSeen: Date.now(),
+    }, { merge: true });
+  } catch (e) { console.warn('activity cloud sync failed:', e); }
+}
+
+export async function loadActivityFromCloud() {
+  const user = getCurrentUser();
+  if (!isFirebaseReady() || !user || user.isGuest) return;
+  try {
+    const db = getDb();
+    const { doc, getDoc } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
+    const snap = await getDoc(doc(db, 'users', user.uid));
+    if (snap.exists() && snap.data().activityLog) {
+      localStorage.setItem(ACTIVITY_KEY, JSON.stringify(snap.data().activityLog));
+    }
+  } catch (e) { console.warn('activity cloud load failed:', e); }
+}
+
 // ─── Mastery System ───────────────────────────────────────────
 
 export const MASTERY_LEVELS = [

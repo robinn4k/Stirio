@@ -137,6 +137,9 @@ const activityDayKey = (d = new Date()) => {
 const loadActivityLog = () => {
   try { return JSON.parse(localStorage.getItem(LS_ACTIVITY)) || {}; } catch { return {}; }
 };
+// Debounce cloud activity writes so a burst of recordActivity calls (e.g. a
+// user blowing through several lessons) coalesces into one Firestore round-trip.
+let _activitySyncTimer = 0;
 const recordActivity = ({ xp = 0, correct = 0, total = 0, durationMs = 0 } = {}) => {
   try {
     const log = loadActivityLog();
@@ -148,6 +151,11 @@ const recordActivity = ({ xp = 0, correct = 0, total = 0, durationMs = 0 } = {})
     day.durationMs += Math.max(0, durationMs | 0);
     log[key] = day;
     localStorage.setItem(LS_ACTIVITY, JSON.stringify(log));
+    if (_activitySyncTimer) clearTimeout(_activitySyncTimer);
+    _activitySyncTimer = setTimeout(() => {
+      _activitySyncTimer = 0;
+      try { window.stLearn?.syncActivityToCloud?.(loadActivityLog()); } catch {}
+    }, 1500);
   } catch {}
 };
 if (typeof window !== 'undefined') {
@@ -434,6 +442,13 @@ const App = () => {
           }
           try { await window.stLearn?.loadLearnFromCloud?.(); } catch {}
           try { await window.stAchievements?.loadAchievementsFromCloud?.(); } catch {}
+          // Rehydrate the activity heatmap from Firestore when the local
+          // rollup is empty (e.g. just after an account switch wiped it).
+          try {
+            if (Object.keys(loadActivityLog()).length === 0) {
+              await window.stLearn?.loadActivityFromCloud?.();
+            }
+          } catch {}
 
           const user = window.stAuth?.getCurrentUser?.();
           if (user) {
@@ -573,6 +588,13 @@ const App = () => {
         // for this uid, even on a freshly-installed device.
         try { await window.stLearn?.loadLearnFromCloud?.(); } catch {}
         try { await window.stAchievements?.loadAchievementsFromCloud?.(); } catch {}
+        // Same activity rehydrate as in the auth-change effect — this path
+        // covers the initial post-login bootstrap.
+        try {
+          if (Object.keys(loadActivityLog()).length === 0) {
+            await window.stLearn?.loadActivityFromCloud?.();
+          }
+        } catch {}
         syncFromLearn();
 
         // Firestore-backed onboarding sync: if the cloud copy is up-to-date
@@ -742,6 +764,16 @@ const App = () => {
     if (!window.stStore || !window.stRouter) return null;
     const top = window.stRouter.getCurrent();
     const lesson = top?.name === 'lesson' ? top.params?.lesson : null;
+    const startedAt = lessonStartAtRef.current;
+    // Log activity inline — must run for every finished lesson regardless of
+    // whether the LESSON_FINISHED effect chain registered in time. The effect
+    // version was removed to avoid double-counting (see effects block below).
+    try {
+      const total = (result.correct || 0) + (result.wrong || 0);
+      const durationMs = startedAt ? Math.max(0, Date.now() - startedAt) : 0;
+      recordActivity({ xp: result.xp, correct: result.correct, total, durationMs });
+    } catch {}
+    lessonStartAtRef.current = 0;
     return window.stStore.dispatch({
       type: 'LESSON_FINISHED',
       payload: {
@@ -750,7 +782,7 @@ const App = () => {
         wrong: result.wrong,
         next: result.next,
         lesson,
-        startedAt: lessonStartAtRef.current,
+        startedAt,
       },
     });
   }, []);
@@ -780,13 +812,9 @@ const App = () => {
       } catch { setProfile(p => ({ ...p, xp: p.xp + xp })); }
     };
 
-    const recordActivityEffect = (action) => {
-      const { xp, correct, wrong, startedAt } = action.payload;
-      const total = (correct || 0) + (wrong || 0);
-      const durationMs = startedAt ? Math.max(0, Date.now() - startedAt) : 0;
-      lessonStartAtRef.current = 0;
-      recordActivity({ xp, correct, total, durationMs });
-    };
+    // Activity recording moved inline to finishLesson() above so it runs even
+    // when the effect chain isn't wired in time. Don't add it back here — would
+    // double-count.
 
     const persistAcademy = (action) => {
       const { lesson, xp } = action.payload;
@@ -901,7 +929,6 @@ const App = () => {
     const offs = [
       window.stStore.registerEffect('LESSON_FINISHED', writeXp),
       window.stStore.registerEffect('LESSON_FINISHED', syncProfile),
-      window.stStore.registerEffect('LESSON_FINISHED', recordActivityEffect),
       window.stStore.registerEffect('LESSON_FINISHED', persistAcademy),
       window.stStore.registerEffect('LESSON_FINISHED', checkAchievementsEffect),
       window.stStore.registerEffect('LESSON_FINISHED', saveLeaderboardEffect),
