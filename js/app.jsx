@@ -1,6 +1,90 @@
 // Stirio — App Shell
 // Depends on: ui.jsx, screens.jsx, lesson.jsx, reference.jsx, data.js, repo-data.js
 // React hooks come from ui.jsx's top-level destructuring (shared script scope).
+//
+// Phase 1 (router migration): screen/subScreen/activeMode/activeLesson/fichaOpen
+// have been replaced by a stack-based router (window.stRouter). The ROUTES table
+// below is the single source of truth — adding a new screen means adding a route
+// here and a render branch in renderRoute(). All `onBack` callbacks call
+// router.back(), and overlays (lesson, mode-sheet, ficha) render on top of the
+// underlying base screen instead of replacing it.
+
+const ROUTES = {
+  // Top-level screens
+  onboarding:  { hidesNav: true,  hidesLegal: true },
+  home:        {},
+  profile:     { parent: 'home' },
+
+  // Subscreens (parent: home unless noted)
+  'academy-hub':      { parent: 'home',         hidesNav: true },
+  'academy-cocktail': { parent: 'academy-hub',  hidesNav: true },
+  'academy-wine':     { parent: 'academy-hub',  hidesNav: true },
+  'academy-coffee':   { parent: 'academy-hub',  hidesNav: true },
+  iba:                { parent: 'home',         hidesNav: true },
+  freequiz:        { parent: 'home',         hidesNav: true },
+  wiki:            { parent: 'home',         hidesNav: true },
+  blind:           { parent: 'home',         hidesNav: true },
+  builder:         { parent: 'home',         hidesNav: true },
+  duel:            { parent: 'home',         hidesNav: true },
+  glossary:        { parent: 'home',         hidesNav: true },
+  map:             { parent: 'home',         hidesNav: true },
+  library:         { parent: 'home',         hidesNav: true },
+  arcade:          { parent: 'home',         hidesNav: true },
+  memory:          { parent: 'home',         hidesNav: true },
+  rhythm:          { parent: 'home',         hidesNav: true },
+  comanda:         { parent: 'home',         hidesNav: true },
+  article:         { parent: 'wiki',         hidesNav: true },
+
+  // Overlays — render on top of the base screen rather than replacing it.
+  lesson:      { overlay: true, hidesNav: true, hidesLegal: true },
+  'mode-sheet':{ overlay: true },
+  ficha:       { overlay: true },
+};
+
+// Compute the base screen index (last non-overlay) and the overlay tail.
+const splitStack = (stack) => {
+  let baseIdx = stack.length - 1;
+  while (baseIdx >= 0 && ROUTES[stack[baseIdx].name]?.overlay) baseIdx--;
+  return {
+    base: baseIdx >= 0 ? stack[baseIdx] : null,
+    overlays: baseIdx >= 0 ? stack.slice(baseIdx + 1) : stack.slice(),
+    top: stack[stack.length - 1] || null,
+  };
+};
+
+// Subscribe to router updates and force a re-render. Returns the live router
+// API alongside the current entry + decomposed stack.
+const useRouter = () => {
+  const router = (typeof window !== 'undefined' ? window.stRouter : null);
+  const [, force] = useState(0);
+  useEffect(() => {
+    if (!router) return undefined;
+    return router.subscribe(() => force(n => (n + 1) | 0));
+  }, [router]);
+  if (!router) {
+    return { ready: false, current: null, stack: [], base: null, overlays: [], top: null,
+             navigate: () => false, back: () => false, replace: () => false, reset: () => false };
+  }
+  const stack = router.getStack();
+  const { base, overlays, top } = splitStack(stack);
+  return {
+    ready: true,
+    current: router.getCurrent(),
+    stack, base, overlays, top,
+    navigate: router.navigate,
+    back: router.back,
+    replace: router.replace,
+    reset: router.reset,
+  };
+};
+
+// One-shot route registration (idempotent — defineRoutes merges).
+const ensureRoutesDefined = () => {
+  if (typeof window === 'undefined' || !window.stRouter) return;
+  if (window.__stRoutesDefined) return;
+  window.stRouter.defineRoutes(ROUTES);
+  window.__stRoutesDefined = true;
+};
 
 // Labels come from `app.shortcut.<id>` keys in i18n/*.json at render time.
 const PLAY_SHORTCUTS = [
@@ -115,24 +199,118 @@ const readDailyChallengeFromUrl = () => {
 };
 
 const App = () => {
+  ensureRoutesDefined();
   const saved = loadState();
   const savedOnboarding = loadOnboardingLocal();
   const mustOnboard = needsOnboarding(savedOnboarding);
   const initialInvite = readInviteFromUrl();
   const initialDailyChallenge = readDailyChallengeFromUrl();
-  const [screen, setScreen]           = useState(mustOnboard ? 'onboarding' : (saved?.screen || 'home'));
+
+  // Seed the router stack ONCE, before the first React render. We can't do this
+  // in useEffect because the first paint would flash an empty stack.
+  if (typeof window !== 'undefined' && window.stRouter && !window.__stRouteSeeded) {
+    window.__stRouteSeeded = true;
+    if (mustOnboard) {
+      window.stRouter.reset('onboarding');
+    } else {
+      const baseScreen = saved?.screen === 'profile' ? 'profile' : 'home';
+      window.stRouter.reset(baseScreen);
+      if (initialInvite) {
+        window.stRouter.navigate('duel', { inviteCode: initialInvite });
+      }
+    }
+  }
+
+  const router = useRouter();
+  // Walk parent chain to find the top-level tab (home / profile / onboarding).
+  const baseName = router.base?.name || 'home';
+  const getTopLevel = (name) => {
+    let cur = name;
+    let safety = 10;
+    while (cur && ROUTES[cur]?.parent && safety-- > 0) cur = ROUTES[cur].parent;
+    return cur || 'home';
+  };
+  const screen       = baseName === 'onboarding' ? 'onboarding' : getTopLevel(baseName);
+  const subScreen    = (baseName === 'home' || baseName === 'profile' || baseName === 'onboarding') ? null : baseName;
+  const activeLesson = router.overlays.find(o => o.name === 'lesson')?.params?.lesson || null;
+  const fichaOverlay = router.overlays.find(o => o.name === 'ficha');
+  const fichaOpen    = fichaOverlay?.params?.ficha || null;
+  const modeOverlay  = router.overlays.find(o => o.name === 'mode-sheet');
+  const activeMode   = modeOverlay?.params?.mode || null;
+  // Topmost route metadata controls chrome (BottomNav / LegalFooter visibility).
+  const topMeta      = router.top ? (ROUTES[router.top.name] || {}) : {};
+  // Article entry for ArticleScreen: passed via route params instead of the
+  // legacy window.__articleOverride side-channel (Phase 1 cleanup).
+  const articleEntry = baseName === 'article' ? router.base?.params?.entry : null;
+
   const [profile, setProfile]         = useState(saved?.profile || {
     name: '', authMode: null, xp: 340, xpNext: 500,
     level: 4, title: 'Apprentice', streak: 3, avatar: null,
     onboarding: savedOnboarding || null,
   });
   const [tweaks, setTweaks]           = useState(loadTweaks());
-  const [activeLesson, setActiveLesson] = useState(null);
-  const [subScreen, setSubScreen]     = useState(initialInvite && !mustOnboard ? 'duel' : null);
-  const [fichaOpen, setFichaOpen]     = useState(null);
-  const [activeMode, setActiveMode]   = useState(null);
   const [inviteCode, setInviteCode]   = useState(initialInvite);
   const [pendingDailyChallenge, setPendingDailyChallenge] = useState(initialDailyChallenge);
+
+  // ── Router shortcuts (stable across renders) ────────────────────────────
+  // setScreen used to switch the top-level screen AND clear any subscreen.
+  // The router equivalent is reset(name) which clears the stack first.
+  const setScreen = useCallback((name) => {
+    if (!window.stRouter) return;
+    window.stRouter.reset(name);
+  }, []);
+  // setSubScreen(null) used to mean "back to home" (clears subscreen overlay).
+  // setSubScreen('something') used to push a subscreen.
+  const setSubScreen = useCallback((name) => {
+    if (!window.stRouter) return;
+    if (name == null) {
+      window.stRouter.reset(screen);
+    } else {
+      // If a subscreen is already on top, replace it; otherwise push.
+      const top = window.stRouter.getCurrent();
+      if (top && ROUTES[top.name] && !ROUTES[top.name].overlay && top.name !== 'home' && top.name !== 'profile' && top.name !== 'onboarding') {
+        window.stRouter.replace(name);
+      } else {
+        window.stRouter.navigate(name);
+      }
+    }
+  }, [screen]);
+  const setActiveLesson = useCallback((lesson) => {
+    if (!window.stRouter) return;
+    if (lesson) {
+      // If there's already a lesson on top, replace it so React swaps cleanly
+      // (matches the original "set activeLesson directly" behavior).
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'lesson') window.stRouter.replace('lesson', { lesson });
+      else window.stRouter.navigate('lesson', { lesson });
+    } else {
+      // Pop the lesson overlay if it's on top.
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'lesson') window.stRouter.back();
+    }
+  }, []);
+  const setFichaOpen = useCallback((ficha) => {
+    if (!window.stRouter) return;
+    if (ficha) {
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'ficha') window.stRouter.replace('ficha', { ficha });
+      else window.stRouter.navigate('ficha', { ficha });
+    } else {
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'ficha') window.stRouter.back();
+    }
+  }, []);
+  const setActiveMode = useCallback((mode) => {
+    if (!window.stRouter) return;
+    if (mode) {
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'mode-sheet') window.stRouter.replace('mode-sheet', { mode });
+      else window.stRouter.navigate('mode-sheet', { mode });
+    } else {
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'mode-sheet') window.stRouter.back();
+    }
+  }, []);
   // Covers the post-redirect window: onboarding is the initial screen because
   // `cq_onboarding` hasn't been written yet, but a pending stash OR a persisted
   // Firebase session tells us the bootstrap is about to complete onboarding.
@@ -146,8 +324,12 @@ const App = () => {
     } catch { return false; }
   });
 
-  // Persist state
-  useEffect(() => { saveState({ screen, profile }); }, [screen, profile]);
+  // Persist top-level screen + profile so a reload restores Profile vs Home.
+  // Only 'home' / 'profile' are restored (subscreens / overlays don't persist).
+  useEffect(() => {
+    const persistedScreen = (screen === 'profile') ? 'profile' : 'home';
+    saveState({ screen: persistedScreen, profile });
+  }, [screen, profile]);
 
   // One-shot migration: pre-multitrack builds wrote cocktail academy progress
   // to `cq_academy_progress`. Copy it to the new per-track key on first mount
@@ -488,23 +670,28 @@ const App = () => {
     }, '*');
   };
 
+  // Maps "openMode" intents to router routes. Modes that resolve to a lesson
+  // (daily, speed) build the lesson eagerly and push a 'lesson' overlay; the
+  // rest map directly to a subscreen route.
+  const MODE_ROUTES = {
+    academy:  'academy-hub',
+    iba:      'iba',
+    freequiz: 'freequiz',
+    wiki:     'wiki',
+    blind:    'blind',
+    builder:  'builder',
+    duel:     'duel',
+    arcade:   'arcade',
+    memory:   'memory',
+    rhythm:   'rhythm',
+    comanda:  'comanda',
+    glossary: 'glossary',
+    map:      'map',
+    library:  'library',
+    article:  'article',
+  };
   const openMode = (m) => {
     if (m === 'mode-menu') { setActiveMode('any'); return; }
-    if (m === 'academy')  { setSubScreen('academy-hub');  return; }
-    if (m === 'iba')      { setSubScreen('iba');       return; }
-    if (m === 'freequiz') { setSubScreen('freequiz');  return; }
-    if (m === 'wiki')     { setSubScreen('wiki');      return; }
-    if (m === 'blind')    { setSubScreen('blind');     return; }
-    if (m === 'builder')  { setSubScreen('builder');   return; }
-    if (m === 'duel')     { setSubScreen('duel');      return; }
-    if (m === 'arcade')   { setSubScreen('arcade');    return; }
-    if (m === 'memory')   { setSubScreen('memory');    return; }
-    if (m === 'rhythm')   { setSubScreen('rhythm');    return; }
-    if (m === 'comanda')  { setSubScreen('comanda');   return; }
-    if (m === 'glossary') { setSubScreen('glossary');  return; }
-    if (m === 'map')      { setSubScreen('map');       return; }
-    if (m === 'library')  { setSubScreen('library');   return; }
-    if (m === 'article')  { setSubScreen('article');   return; }
     if (m === 'daily') {
       const opts = pendingDailyChallenge
         ? { dateStr: pendingDailyChallenge.date, challengedBy: pendingDailyChallenge.by }
@@ -520,12 +707,22 @@ const App = () => {
       else setActiveMode('any');
       return;
     }
+    const route = MODE_ROUTES[m];
+    if (route) { setSubScreen(route); return; }
+    // Unknown mode → fall back to ModeSheet (preserves legacy behavior).
     setActiveMode(m);
   };
 
   const lessonStartAtRef = useRef(0);
   const pickLesson   = (l) => { if (l) { lessonStartAtRef.current = Date.now(); setActiveLesson(l); } };
   const exitLesson   = ()  => { lessonStartAtRef.current = 0; setActiveLesson(null); };
+  // Used by finishLesson when there's no "next" academy item — closes the
+  // lesson overlay if it's still on top.
+  const closeLessonOverlay = () => {
+    if (typeof window === 'undefined' || !window.stRouter) return;
+    const top = window.stRouter.getCurrent();
+    if (top?.name === 'lesson') window.stRouter.back();
+  };
   const finishLesson = ({ xp, correct, wrong, next } = {}) => {
     const total = (correct || 0) + (wrong || 0);
     // Write XP to the canonical stLearn store (cq_learn_data) so Profile and
@@ -648,16 +845,15 @@ const App = () => {
           ? (window.buildAcademyLesson && window.buildAcademyLesson(level, nextItem.index))
           : (window.buildAcademyPractice && window.buildAcademyPractice(level, nextItem.roundId));
         if (nextLesson) {
-          // Replace activeLesson directly (not via null + setTimeout) so React
-          // swaps LessonPlayer in a single commit. The LessonPlayer's
-          // `key={lesson.id}` forces a clean remount, and the old
-          // LessonResults can't linger above the new intro as a ghost overlay.
+          // Router replaces the lesson overlay in a single commit. The
+          // LessonPlayer's `key={lesson.id}` forces a clean remount, and the
+          // old LessonResults can't linger above the new intro as a ghost.
           pickLesson(nextLesson);
           return;
         }
       }
     }
-    setActiveLesson(null);
+    closeLessonOverlay();
   };
 
   const finishOnboarding = async (o) => {
@@ -686,10 +882,11 @@ const App = () => {
       try { window.stLang?.setLang(payload.language); } catch {}
       window.dispatchEvent(new CustomEvent('stirio:langchange', { detail: { lang: payload.language } }));
     }
-    setScreen('home');
-    // If the user arrived via an invite link, drop them straight into the
-    // Duel lobby once onboarding is done.
-    if (inviteCode) setSubScreen('duel');
+    // Reset stack to home, then push duel if this came from an invite link.
+    if (window.stRouter) {
+      window.stRouter.reset('home');
+      if (inviteCode) window.stRouter.navigate('duel', { inviteCode });
+    }
     // Fire-and-forget cloud write so Home paints immediately
     try { await window.stAuth?.saveOnboarding?.(payload); } catch {}
   };
@@ -772,7 +969,7 @@ const App = () => {
       {subScreen === 'wiki' && !activeLesson && (
         <KnowledgeScreen
           onBack={() => setSubScreen(null)}
-          onOpenArticle={(entry) => { window.__articleOverride = entry; setSubScreen('article'); }}
+          onOpenArticle={(entry) => window.stRouter && window.stRouter.navigate('article', { entry })}
           onOpenFicha={(f) => setFichaOpen(f)}
         />
       )}
@@ -787,8 +984,8 @@ const App = () => {
 
       {subScreen === 'duel' && !activeLesson && (
         <DuelScreen
-          onBack={() => { setSubScreen(null); setInviteCode(null); }}
-          initialInviteCode={inviteCode}
+          onBack={() => { setInviteCode(null); setSubScreen(null); }}
+          initialInviteCode={router.base?.params?.inviteCode || inviteCode}
         />
       )}
 
@@ -822,9 +1019,9 @@ const App = () => {
 
       {subScreen === 'article' && !activeLesson && (
         <ArticleScreen
-          article={(window.stArticles && window.stArticles.resolveArticle(window.__articleOverride)) || (window.stArticles && window.stArticles.getArticleOfTheDay())}
-          onBack={() => { window.__articleOverride = null; setSubScreen(null); }}
-          onOpenWiki={() => { window.__articleOverride = null; setSubScreen('wiki'); }}
+          article={(window.stArticles && window.stArticles.resolveArticle(articleEntry)) || (window.stArticles && window.stArticles.getArticleOfTheDay())}
+          onBack={() => setSubScreen(null)}
+          onOpenWiki={() => setSubScreen('wiki')}
         />
       )}
 
@@ -872,17 +1069,20 @@ const App = () => {
         />
       )}
 
-      {/* Legal footer — inside scroll area so it rides above the fixed BottomNav */}
-      {screen !== 'onboarding' && screen !== 'auth' && !activeLesson && (
+      {/* Legal footer — inside scroll area so it rides above the fixed BottomNav.
+          Hidden on routes that declare hidesLegal (onboarding, lesson). */}
+      {!topMeta.hidesLegal && (
         <div style={{ paddingBottom: 'calc(100px + env(safe-area-inset-bottom, 0px))' }}>
           <LegalFooter />
         </div>
       )}
 
-      {!activeLesson && screen !== 'onboarding' && !subScreen && (
+      {/* BottomNav hidden on routes that declare hidesNav (subscreens, lesson,
+          onboarding). setScreen calls router.reset() which clears the stack. */}
+      {!topMeta.hidesNav && (
         <BottomNav
           current={screen}
-          onNav={(s) => { setScreen(s); setSubScreen(null); }}
+          onNav={setScreen}
           shortcut={PLAY_SHORTCUTS.find(s => s.id === (tweaks.playShortcut || 'daily')) || PLAY_SHORTCUTS[0]}
           onPlay={() => openMode(tweaks.playShortcut || 'daily')}
         />
