@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#0d0508">
   <meta name="description" content="Stirio – Aprende coctelería, pon a prueba tus conocimientos y escala el ranking global">
+  <!-- iOS PWA standalone mode. Without these tags the home-screen icon may
+       open inside Safari's chrome, and update propagation (controllerchange
+       reload) becomes flaky. -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Stirio">
 
   <!-- Content-Security-Policy: 'unsafe-eval' y 'unsafe-inline' son necesarios
        mientras Babel Standalone transpile JSX en el navegador. Restringen los
@@ -65,7 +71,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '10.95';</script>
+  <script>window.STIRIO_VERSION = '10.96';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -179,10 +185,12 @@
         window.location.reload();
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').then((reg) => {
-          // Force an immediate script re-fetch so browsers don't serve the
-          // cached sw.js for up to 24h. Without this, a user with an old SW
-          // stays stuck on old assets until the browser decides to check.
+        // updateViaCache: 'none' tells the browser to bypass HTTP cache when
+        // fetching sw.js itself. Critical for iOS Safari, which previously
+        // could cache sw.js for up to 24h and miss new deploys entirely.
+        navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((reg) => {
+          // Force an immediate script re-fetch on top of the registration so
+          // the new worker is detected within the same page load.
           try { reg.update(); } catch {}
         }).catch(() => {});
       });
