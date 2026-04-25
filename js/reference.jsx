@@ -69,7 +69,8 @@ const AcademyHub = ({ onBack, onPickTrack }) => {
   const tracks = ['cocktail', 'wine', 'coffee'];
 
   return (
-    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
+    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
+      <div className="screen-frame" style={{ maxWidth: 980, margin: '0 auto', paddingBottom: 120 }}>
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
         <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
           <Icon name="arrowL" size={16} />
@@ -82,7 +83,7 @@ const AcademyHub = ({ onBack, onPickTrack }) => {
       <div style={{ padding: '0 24px 16px', fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.4 }}>
         {tr('academy.hub.subtitle', 'Tres disciplinas, un solo camino: elige la que quieras dominar.')}
       </div>
-      <div style={{ padding: '8px 24px 0', display: 'grid', gap: 14 }}>
+      <div className="academy-tracks-grid" style={{ padding: '8px 24px 0', display: 'grid', gap: 14 }}>
         {tracks.map(track => {
           const meta = TRACK_META[track];
           const { done, total } = countCompletedLevels(track);
@@ -126,6 +127,7 @@ const AcademyHub = ({ onBack, onPickTrack }) => {
           );
         })}
       </div>
+      </div>
     </div>
   );
 };
@@ -150,7 +152,8 @@ const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onSta
   const completed = levels.filter(l => levelCompleted(progress, l)).length;
 
   return (
-    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
+    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
+      <div className="screen-frame" style={{ maxWidth: 760, margin: '0 auto', paddingBottom: 120 }}>
       {/* Header */}
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
         <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
@@ -225,6 +228,7 @@ const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onSta
             />
           );
         })}
+      </div>
       </div>
 
       {openLevel && (
@@ -443,7 +447,8 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
   }, [fichas, q, cat]);
 
   return (
-    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
+    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
+      <div className="screen-frame" style={{ maxWidth: 1080, margin: '0 auto', paddingBottom: 120 }}>
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
         <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
           <Icon name="arrowL" size={16} />
@@ -551,6 +556,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
             <div style={{ fontSize: 13 }}>{tr('fichas.no_results', 'Sin resultados')}</div>
           </div>
         )}
+      </div>
       </div>
     </div>
   );
@@ -702,7 +708,8 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
     [lang]
   );
   return (
-    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)', paddingBottom: 120 }}>
+    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
+      <div className="screen-frame" style={{ maxWidth: 760, margin: '0 auto', paddingBottom: 120 }}>
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
         <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
           <Icon name="arrowL" size={16} />
@@ -752,6 +759,7 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
             </div>
           </button>
         ))}
+      </div>
       </div>
     </div>
   );

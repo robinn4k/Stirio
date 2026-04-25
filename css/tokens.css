@@ -434,3 +434,79 @@ input, textarea { font: inherit; color: inherit; }
     var(--bg-1) 100%
   );
 }
+
+/* ─────────────────────────────────────────────────────────── */
+/* DESKTOP VIEWPORT (≥ 1024px) — keep cards from stretching to */
+/* full window width even when device="mobile". Tightens grids,*/
+/* shrinks hero typography, and frames Home as a centered      */
+/* column so the layout stays readable on a wide monitor.      */
+/* ─────────────────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  /* Home is already capped at 1040 inline; pull it tighter so cards
+     don't span half the screen each in the 2-col grids. */
+  [data-device="mobile"] .mobile-safe {
+    max-width: 720px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* Modes / Mini-juegos / Reference grids → 2 columns at this width.
+     The mobile-mode rule already forces 1fr 1fr, so we don't need to
+     override grid-template-columns here. We just keep the gap reasonable. */
+  [data-device="mobile"] .mobile-grid-2 {
+    gap: 12px !important;
+  }
+
+  /* Featured + Daily/Duel hero: stay 2-col instead of stacking, so the
+     hero block matches the centered column nicely. */
+  [data-device="mobile"] .mobile-hero-grid {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) !important;
+  }
+
+  /* Featured card: split layout (art beside copy) reads better than a
+     tall stacked hero on desktop, even in mobile-device mode. */
+  [data-device="mobile"] .mobile-featured {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  [data-device="mobile"] .mobile-featured-art {
+    min-height: 100% !important;
+    order: 0 !important;
+  }
+  [data-device="mobile"] .mobile-featured-fade {
+    background: linear-gradient(
+      90deg,
+      var(--bg-1) 0%,
+      oklch(from var(--bg-1) l c h / 0.65) 18%,
+      transparent 55%,
+      oklch(0.08 0.02 40 / 0.35) 100%
+    ) !important;
+  }
+  [data-device="mobile"] .mobile-featured-copy h2 {
+    font-size: 24px !important;
+  }
+
+  /* Academy hero on Home: tighter padding so it doesn't tower. */
+  [data-device="mobile"] .mobile-academy-hero {
+    padding: 16px !important;
+  }
+  [data-device="mobile"] .mobile-academy-hero > div:first-child {
+    font-size: 44px !important;
+  }
+  [data-device="mobile"] .mobile-academy-hero h3 {
+    font-size: 20px !important;
+  }
+
+  /* Sub-screens (AcademyHub, AcademyScreen, FichasScreen, FreeQuizScreen)
+     each set their own maxWidth inline; this just trims internal padding so
+     the centered column doesn't waste horizontal space. */
+  .screen-frame {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* AcademyHub track cards — 3 tracks side-by-side reads better than a
+     tall stack at this width. */
+  .academy-tracks-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
