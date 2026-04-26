@@ -16,10 +16,32 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
   const [pops, setPops] = useState([]);
   const [finished, setFinished] = useState(false);
   const containerRef = useRef(null);
+  // Synchronous lock: setStepFeedback is async, so two clicks in the same
+  // React frame both see `stepFeedback === null` and double-fire (XP doubled,
+  // step skipped). A ref flips before any setState and is checked first.
+  const answerLockRef = useRef(false);
+  // Track the "advance to next step" timeout so we can cancel it if the user
+  // exits the lesson during the feedback dwell — otherwise React fires
+  // setStepIdx/finish on an unmounted component (warning + possible double
+  // finish if the timer also expires).
+  const advanceTimeoutRef = useRef(null);
 
   const step = lesson?.steps?.[stepIdx];
   const totalSteps = lesson?.steps?.length || 0;
   const progress = totalSteps ? stepIdx / totalSteps : 0;
+
+  // Reset the per-step lock whenever we move to a new step so the user can
+  // answer the next question.
+  useEffect(() => { answerLockRef.current = false; }, [stepIdx]);
+
+  // Cancel any pending advance timeout on unmount (covers Exit during
+  // feedback dwell + StrictMode double-mount in dev).
+  useEffect(() => () => {
+    if (advanceTimeoutRef.current) {
+      clearTimeout(advanceTimeoutRef.current);
+      advanceTimeoutRef.current = null;
+    }
+  }, []);
 
   // timer (only when the lesson opts in)
   useEffect(() => {
@@ -36,7 +58,8 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
   }, []);
 
   const handleAnswer = (ok, evt) => {
-    if (stepFeedback) return;
+    if (answerLockRef.current || stepFeedback) return;
+    answerLockRef.current = true;
     setStepFeedback(ok ? 'ok' : 'bad');
     window.hapticTap?.(ok ? 'ok' : 'bad');
     if (ok) {
@@ -56,7 +79,9 @@ const LessonPlayer = ({ lesson, onExit, onFinish }) => {
     const hasExplain = currentStep?.kind === 'choice' && !!currentStep?.explain;
     const okDelay = hasExplain ? 1800 : 1100;
     const badDelay = hasExplain ? 3200 : 1400;
-    setTimeout(() => {
+    if (advanceTimeoutRef.current) clearTimeout(advanceTimeoutRef.current);
+    advanceTimeoutRef.current = setTimeout(() => {
+      advanceTimeoutRef.current = null;
       setStepFeedback(null);
       if (stepIdx + 1 >= lesson.steps.length) finish();
       else setStepIdx(i => i + 1);

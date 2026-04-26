@@ -45,6 +45,8 @@ const {
   loadDuelQuestionsFromSetup,
   prepareDuelQuestions,
   calcScore,
+  clampedAnswerPoints,
+  MAX_POINTS_PER_ANSWER,
   QUESTIONS_PER_DUEL,
 } = await import('../js/rivals.js');
 
@@ -105,6 +107,55 @@ describe('calcScore', () => {
 
   it('minimum correct score is 100 (no negative time)', () => {
     expect(calcScore(true, 0)).toBe(100);
+  });
+});
+
+// ─── clampedAnswerPoints — F4 manipulation guard ─────────────
+// submitAnswer used to trust whatever timeLeft / correct the client sent.
+// clampedAnswerPoints centralizes the defense so any future caller benefits.
+describe('clampedAnswerPoints', () => {
+  it('clamps timeLeft above 60 down to 60', () => {
+    const { clampedTime, earnedPoints } = clampedAnswerPoints(true, 9999);
+    expect(clampedTime).toBe(60);
+    expect(earnedPoints).toBe(MAX_POINTS_PER_ANSWER);
+  });
+
+  it('clamps negative timeLeft up to 0', () => {
+    const { clampedTime, earnedPoints } = clampedAnswerPoints(true, -50);
+    expect(clampedTime).toBe(0);
+    expect(earnedPoints).toBe(100);
+  });
+
+  it('coerces non-numeric timeLeft to 0', () => {
+    const { clampedTime, earnedPoints } = clampedAnswerPoints(true, 'forever');
+    expect(clampedTime).toBe(0);
+    expect(earnedPoints).toBe(100);
+  });
+
+  it('coerces NaN timeLeft to 0', () => {
+    const { clampedTime, earnedPoints } = clampedAnswerPoints(true, NaN);
+    expect(clampedTime).toBe(0);
+    expect(earnedPoints).toBe(100);
+  });
+
+  it('coerces non-boolean correct truthily', () => {
+    expect(clampedAnswerPoints('yes', 10).earnedPoints).toBe(150);
+    expect(clampedAnswerPoints(0, 10).earnedPoints).toBe(0);
+    expect(clampedAnswerPoints(null, 10).earnedPoints).toBe(0);
+  });
+
+  it('caps earnedPoints at MAX_POINTS_PER_ANSWER even if calcScore inflates', () => {
+    const { earnedPoints } = clampedAnswerPoints(true, 60);
+    expect(earnedPoints).toBeLessThanOrEqual(MAX_POINTS_PER_ANSWER);
+  });
+
+  it('returns 0 points for wrong answer regardless of timeLeft', () => {
+    expect(clampedAnswerPoints(false, 60).earnedPoints).toBe(0);
+    expect(clampedAnswerPoints(false, 0).earnedPoints).toBe(0);
+  });
+
+  it('MAX_POINTS_PER_ANSWER is bounded by the natural ceiling (100 + 60*5 = 400)', () => {
+    expect(MAX_POINTS_PER_ANSWER).toBe(400);
   });
 });
 

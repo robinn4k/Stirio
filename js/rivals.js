@@ -10,6 +10,14 @@ const POINTS_PER_CORRECT = 100;
 const TIME_BONUS_PER_SECOND = 5;
 export const QUESTIONS_PER_DUEL = 10;
 
+// Hard cap on what one answer can contribute to a player's total. Worst-case
+// legitimate value is `POINTS_PER_CORRECT + 60 * TIME_BONUS_PER_SECOND = 400`,
+// so 400 is the natural ceiling. We add a safety margin just in case the
+// constants change. Used in `submitAnswer` to clamp the server-side write so
+// a manipulated client cannot ratchet up an absurd score even if the answer
+// truthiness check is bypassed somewhere up the call chain.
+export const MAX_POINTS_PER_ANSWER = POINTS_PER_CORRECT + 60 * TIME_BONUS_PER_SECOND;
+
 let db = null;
 
 // ─── Init ─────────────────────────────────────────────────────
@@ -390,6 +398,27 @@ export async function registerPlayerDisconnect(roomId, slot) {
 }
 
 /**
+ * Compute the clamped points awarded for a single answer. Pulled out of
+ * `submitAnswer` so it can be unit-tested without mocking Firebase. The
+ * `Math.min(MAX_POINTS_PER_ANSWER, …)` is defense-in-depth: even if the
+ * constants in `calcScore` are bumped accidentally, no single answer can
+ * ratchet up a player's score beyond the documented ceiling.
+ *
+ * NOTE: `correct` is currently the client-supplied truthiness — the real
+ * fix requires server-side validation (Cloud Function) checking the chosen
+ * answer index against the question's known correct answer. Tracked in
+ * `docs/SECURITY_QA_AUDIT.md` (F4) as deferred work.
+ */
+export function clampedAnswerPoints(correct, timeLeft) {
+  const clampedTime = Math.max(0, Math.min(Number(timeLeft) || 0, 60));
+  const earnedPoints = calcScore(!!correct, clampedTime);
+  return {
+    clampedTime,
+    earnedPoints: Math.max(0, Math.min(MAX_POINTS_PER_ANSWER, earnedPoints | 0)),
+  };
+}
+
+/**
  * Submit an answer for a player.
  * Score is computed from the answer data rather than trusting the client value.
  * @param {string} roomId
@@ -402,16 +431,30 @@ export async function submitAnswer(roomId, slot, qIndex, correct, timeLeft) {
   if (!db) return;
   const { ref, update, get } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js');
 
-  // Clamp timeLeft to valid range to prevent score inflation
-  const clampedTime = Math.max(0, Math.min(timeLeft, 60));
-  const earnedPoints = calcScore(correct, clampedTime);
+  // Clamp timeLeft and cap earnedPoints to defend against client manipulation
+  const { clampedTime, earnedPoints } = clampedAnswerPoints(correct, timeLeft);
+
+  // Defense-in-depth: only allow the authenticated user to write to a slot
+  // they actually occupy. Without this, a tampered client could call
+  // `submitAnswer(roomId, 'p2', …)` from p1's session and inflate the rival.
+  // The RTDB rule is the authoritative gate; this just fails fast client-side.
+  try {
+    const { getApp } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js');
+    const { getAuth } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js');
+    const myUid = getAuth(getApp())?.currentUser?.uid;
+    const slotUidSnap = await get(ref(db, `rooms/${roomId}/players/${slot}/uid`));
+    if (myUid && slotUidSnap.exists() && slotUidSnap.val() !== myUid) {
+      console.warn('[rivals] submitAnswer blocked — slot does not belong to current user');
+      return;
+    }
+  } catch {}
 
   // Read current score and add earned points (prevents client-side score manipulation)
   const scoreSnap = await get(ref(db, `rooms/${roomId}/players/${slot}/score`));
-  const currentScore = scoreSnap.val() || 0;
+  const currentScore = Number(scoreSnap.val()) || 0;
 
   const updates = {
-    [`rooms/${roomId}/players/${slot}/answers/${qIndex}`]: { correct, timeLeft: clampedTime },
+    [`rooms/${roomId}/players/${slot}/answers/${qIndex}`]: { correct: !!correct, timeLeft: clampedTime },
     [`rooms/${roomId}/players/${slot}/currentQ`]: qIndex + 1,
     [`rooms/${roomId}/players/${slot}/score`]: currentScore + earnedPoints
   };

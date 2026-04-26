@@ -31,7 +31,7 @@
           }}>
             {keys.map((k, i) => (
               <div key={k} style={{
-                height: `${(vals[k] / total) * 100}%`,
+                height: `${total > 0 ? (vals[k] / total) * 100 : 0}%`,
                 background: `linear-gradient(90deg, ${colors[i]}, ${colors[i]})`,
                 opacity: 0.85,
                 boxShadow: 'inset 0 6px 10px rgba(255,255,255,0.1)',

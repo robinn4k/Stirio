@@ -125,6 +125,35 @@ describe('i18n — lang.js', () => {
       const result = t('quiz.result', { score: '100', total: '10' });
       expect(typeof result).toBe('string');
     });
+
+    // ─── Regression guards for F10 (params injection) ──────────
+    // Before the fix, params[k] was passed as the replacement string to
+    // String.prototype.replace, which interprets `$&`, `$1`, `$$`. A user
+    // name containing `$&` would expand to the full match instead of being
+    // inserted literally. We use a multilingual object to bypass missing
+    // translation keys.
+    it('treats $& in param values literally (no replacement-pattern expansion)', () => {
+      const result = t({ es: 'Hola {name}' }, { name: '$&' });
+      expect(result).toBe('Hola $&');
+    });
+
+    it('treats $1, $$, $` in param values literally', () => {
+      const result = t({ es: '[{val}]' }, { val: '$1$$$`' });
+      expect(result).toBe('[$1$$$`]');
+    });
+
+    it('escapes regex metacharacters in param keys (no over-permissive matching)', () => {
+      // A key like `key.with.dots` would, before escaping, build the regex
+      // /\{key.with.dots\}/g where each `.` matches any char. Verify that
+      // a literal `{key.with.dots}` is replaced and `{keyXwithXdots}` is NOT.
+      const result = t({ es: '{key.with.dots} vs {keyXwithXdots}' }, { 'key.with.dots': 'OK' });
+      expect(result).toBe('OK vs {keyXwithXdots}');
+    });
+
+    it('coerces null/undefined param values to empty string (no "undefined" leak)', () => {
+      const result = t({ es: 'before-{a}-after' }, { a: null });
+      expect(result).toBe('before--after');
+    });
   });
 
   describe('t() — object mode (multilingual objects)', () => {

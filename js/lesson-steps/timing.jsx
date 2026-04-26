@@ -9,8 +9,10 @@
     const [elapsed, setElapsed] = useState(0);
     useEffect(() => {
       if (!started) return;
-      const t0 = Date.now();
-      const r = setInterval(() => setElapsed(((Date.now() - t0) / 1000)), 50);
+      // performance.now() is monotonic — Date.now() can jump backwards if NTP
+      // adjusts the system clock mid-step, producing negative elapsed values.
+      const t0 = performance.now();
+      const r = setInterval(() => setElapsed(((performance.now() - t0) / 1000)), 50);
       return () => clearInterval(r);
     }, [started]);
     return (

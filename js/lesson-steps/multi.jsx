@@ -7,8 +7,26 @@
   const MultiSelectStep = ({ step, onAnswer }) => {
     const [picks, setPicks] = useState([]);
     const toggle = (opt) => setPicks(p => p.includes(opt) ? p.filter(x => x !== opt) : [...p, opt]);
-    const need = step.correct.length;
-    const ready = picks.length === need;
+    // Defensive: malformed lesson data (missing/empty `correct`) used to crash
+    // with "Cannot read properties of undefined (reading 'length')". Treat as
+    // unanswerable and surface the problem instead of blanking the player.
+    const correctList = Array.isArray(step?.correct) ? step.correct : [];
+    const need = correctList.length;
+    const ready = need > 0 && picks.length === need;
+    if (need === 0) {
+      const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+      return (
+        <div style={{ textAlign: 'center', padding: 24 }}>
+          <Prompt text={step?.prompt || tr('lesson.step_broken', 'Paso no disponible')} />
+          <p style={{ color: 'var(--ink-3)', fontSize: 13 }}>
+            {tr('lesson.step_broken_body', 'Esta pregunta tiene un problema de datos. Salta a la siguiente.')}
+          </p>
+          <button className="btn" onClick={() => onAnswer(false)} style={{ marginTop: 12 }}>
+            {tr('ui.skip', 'Saltar')}
+          </button>
+        </div>
+      );
+    }
     return (
       <div>
         <Prompt text={step.prompt} subtitle={step.hint && `hint · ${step.hint}`} />
@@ -42,7 +60,7 @@
             className="btn primary"
             disabled={!ready}
             onClick={() => {
-              const ok = step.correct.every(c => picks.includes(c)) && picks.length === step.correct.length;
+              const ok = correctList.every(c => picks.includes(c)) && picks.length === correctList.length;
               onAnswer(ok);
             }}
             style={{
