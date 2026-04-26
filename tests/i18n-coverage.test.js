@@ -29,6 +29,19 @@ const PARITY_EXCLUDE_PREFIXES = [
   'wiki.art.history.cocktail-renaissance',
   'wiki.art.history.legendary-bars',
   'wiki.art.history.molecular-mixology',
+  // New spirit brand bios (tasting / story) ship ES-only; translations land
+  // in follow-up PRs. Existing barcelo-anejo entries remain translated.
+  'wiki.brand.bacardi-carta-blanca.',
+  'wiki.brand.havana-club-7.',
+  'wiki.brand.diplomatico-reserva-exclusiva.',
+  'wiki.brand.zacapa-23.',
+  'wiki.brand.mount-gay-xo.',
+  'wiki.brand.appleton-estate-8.',
+  'wiki.brand.macallan-12-sherry.',
+  'wiki.brand.glenfiddich-12.',
+  'wiki.brand.lagavulin-16.',
+  'wiki.brand.yamazaki-12.',
+  'wiki.brand.buffalo-trace.',
 ];
 
 // Keys referenced from code that are known to be missing from i18n/*.json.
