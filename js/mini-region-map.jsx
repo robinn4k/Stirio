@@ -2,40 +2,70 @@
 // mini-region-map.jsx — Mini-mapa de origen embebido en artículo
 //
 // Renders a small Leaflet iframe (map.html?mini=1&spirit=…&focus=…) inside
-// a spirit article so the user can see where this drink comes from. Tapping
-// the "Ver mapa completo" CTA opens the full map page focused on the same
-// region.
+// a spirit article so the user can see where this drink comes from. The
+// iframe is lazy-mounted via IntersectionObserver so the heavy Leaflet +
+// tiles payload only loads when the user scrolls the section into view.
+// Tapping the "Ver mapa →" CTA dispatches a 'stirio:open-map' event that
+// app.jsx routes to the in-app MapScreen with the same focus/spirit params
+// (stays inside the PWA instead of opening a new browser tab).
 // ═══════════════════════════════════════════════════════════
 
-const MiniRegionMap = ({ articleId, onOpenFullMap }) => {
+const MiniRegionMap = ({ articleId }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const [visible, setVisible] = React.useState(false);
+  const wrapRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (visible) return;
+    const el = wrapRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') {
+      // No IO support → render eagerly.
+      setVisible(true);
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          io.disconnect();
+          return;
+        }
+      }
+    }, { rootMargin: '200px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [visible]);
+
   if (!articleId) return null;
   const regions = (window.MAP_REGIONS || []);
   // Articles can map to either a specific region (e.g. 'cognac', 'scotch',
-  // 'rhum-agricole') or a top-level spirit type (e.g. 'rum', 'whisky'). Pick
-  // the right query params accordingly.
+  // 'rhum-agricole') or a top-level spirit type (e.g. 'rum', 'whisky').
   const region = regions.find(r => r.id === articleId);
   const spirits = new Set(regions.map(r => r.spirit));
   const params = new URLSearchParams({ mini: '1' });
-  let target = null;
+  let focus = null;
+  let spirit = null;
   if (region) {
-    params.set('focus', region.id);
-    params.set('spirit', region.spirit);
-    target = region.id;
+    focus = region.id;
+    spirit = region.spirit;
+    params.set('focus', focus);
+    params.set('spirit', spirit);
   } else if (spirits.has(articleId)) {
-    params.set('spirit', articleId);
-    target = articleId;
+    spirit = articleId;
+    params.set('spirit', spirit);
   } else {
-    return null; // Nothing meaningful to show.
+    return null;
   }
   const src = `map.html?${params.toString()}`;
-  const fullSrc = `map.html?${new URLSearchParams({
-    ...(region ? { focus: region.id } : {}),
-    ...(region ? { spirit: region.spirit } : { spirit: articleId }),
-  }).toString()}`;
+
+  const openFullMap = () => {
+    try {
+      window.dispatchEvent(new CustomEvent('stirio:open-map', { detail: { focus, spirit } }));
+    } catch {}
+  };
 
   return (
-    <div style={{
+    <div ref={wrapRef} style={{
       marginTop: 16, borderRadius: 'var(--r-lg)', overflow: 'hidden',
       border: '1px solid var(--line-soft)', background: 'var(--bg-1)',
     }}>
@@ -48,13 +78,7 @@ const MiniRegionMap = ({ articleId, onOpenFullMap }) => {
         </div>
         <button
           type="button"
-          onClick={() => {
-            if (typeof onOpenFullMap === 'function') {
-              onOpenFullMap(target);
-            } else {
-              window.open(fullSrc, '_blank', 'noopener');
-            }
-          }}
+          onClick={openFullMap}
           className="mono"
           style={{
             background: 'transparent', border: 'none', color: 'var(--ink-2)',
@@ -64,12 +88,22 @@ const MiniRegionMap = ({ articleId, onOpenFullMap }) => {
           {tr('wiki.label.open_full_map', 'Ver mapa →')}
         </button>
       </div>
-      <iframe
-        src={src}
-        title={tr('wiki.label.origin_map', 'Región de origen')}
-        loading="lazy"
-        style={{ display: 'block', width: '100%', height: 260, border: 'none', background: 'var(--bg-0)' }}
-      />
+      {visible ? (
+        <iframe
+          src={src}
+          title={tr('wiki.label.origin_map', 'Región de origen')}
+          loading="lazy"
+          style={{ display: 'block', width: '100%', height: 260, border: 'none', background: 'var(--bg-0)' }}
+        />
+      ) : (
+        <div style={{
+          width: '100%', height: 260, display: 'grid', placeItems: 'center',
+          color: 'var(--ink-3)', fontSize: 12, fontFamily: 'var(--f-mono)',
+          background: 'var(--bg-0)',
+        }}>
+          {tr('wiki.label.map_loading', 'Cargando mapa…')}
+        </div>
+      )}
     </div>
   );
 };
