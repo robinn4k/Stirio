@@ -15,19 +15,33 @@
     "rooms": {
       "$roomId": {
         ".read": "auth != null",
-        ".write": "auth != null && (!data.exists() || data.child('players/p1/uid').val() === auth.uid || data.child('players/p2/uid').val() === auth.uid || data.child('players/p3/uid').val() === auth.uid || data.child('players/p4/uid').val() === auth.uid || data.child('status').val() === 'waiting')"
+        ".write": "auth != null && (!data.exists() || data.child('players/p1/uid').val() === auth.uid || data.child('players/p2/uid').val() === auth.uid || data.child('players/p3/uid').val() === auth.uid || data.child('players/p4/uid').val() === auth.uid || (data.child('status').val() === 'waiting' && (newData.child('players/p2/uid').val() === auth.uid || newData.child('players/p3/uid').val() === auth.uid || newData.child('players/p4/uid').val() === auth.uid)))",
+        "players": {
+          "$slot": {
+            "score": {
+              ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 5000"
+            },
+            "uid": {
+              ".validate": "newData.isString() && newData.val().length <= 128"
+            },
+            "name": {
+              ".validate": "newData.isString() && newData.val().length <= 80"
+            }
+          }
+        }
       }
     },
     "codes": {
       "$code": {
         ".read": "auth != null",
-        ".write": "auth != null && (!data.exists() || !newData.exists())"
+        ".write": "auth != null && ((!data.exists() && newData.exists()) || (data.exists() && !newData.exists() && root.child('rooms').child(data.val()).child('players/p1/uid').val() === auth.uid))"
       }
     },
     "matched": {
       "$uid": {
         ".read": "auth != null && auth.uid === $uid",
-        ".write": "auth != null && (!data.exists() || auth.uid === $uid)"
+        ".write": "auth != null && (!data.exists() || auth.uid === $uid)",
+        ".validate": "newData.hasChild('roomId') && newData.child('roomId').isString() && newData.child('roomId').val().length <= 64"
       }
     }
   }

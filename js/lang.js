@@ -92,7 +92,13 @@ export function t(keyOrObj, params) {
 
   if (params) {
     Object.keys(params).forEach(k => {
-      str = str.replace(new RegExp(`\\{${k}\\}`, 'g'), params[k]);
+      // Escape regex metacharacters in the key (a key like `key.with.dots`
+      // would otherwise build an over-permissive pattern).
+      const escapedKey = k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // Use a function replacement so `$&`, `$1`, `$$` in the param VALUE are
+      // treated as literal characters instead of replacement-string patterns.
+      const value = params[k];
+      str = str.replace(new RegExp(`\\{${escapedKey}\\}`, 'g'), () => String(value ?? ''));
     });
   }
   return str;

@@ -2,7 +2,8 @@
 
 Documento operativo de los controles de seguridad que hoy están en el repo y
 los que requieren acción en consola de Firebase. Complementa el análisis
-estratégico en [`strategy.md`](./strategy.md).
+estratégico en [`strategy.md`](./strategy.md) y la auditoría táctica en
+[`SECURITY_QA_AUDIT.md`](./SECURITY_QA_AUDIT.md).
 
 ## 1. Aplicado en este repo (Sprint 1)
 
@@ -95,17 +96,20 @@ Considerar usar una segunda site key para `localhost` / dev.
 
 ### 2.2 Debilidades detectadas en `database.rules.json` (RTDB multiplayer)
 
-**NO parcheadas en este PR** — cambiar RTDB rules sin pruebas de extremo a
-extremo puede romper matchmaking en producción. Propuesta de revisión para
-un sprint dedicado:
+**Estado:** F3 y F11 (de [`SECURITY_QA_AUDIT.md`](./SECURITY_QA_AUDIT.md))
+**SÍ están parcheados** en la rama `claude/qa-security-analysis-Noiwg`. Pendiente
+desplegar con `firebase deploy --only database` y probar matchmaking E2E antes
+del merge a main. Las debilidades restantes (matched fan-out, queue read fan-out,
+falta de validate exhaustivo) siguen vigentes según se describe abajo.
 
 1. **`rooms/$roomId`** (línea 18): la condición
    `data.child('status').val() === 'waiting'` permite a cualquier usuario
    autenticado sobrescribir la sala entera mientras esté en espera. Intent era
    "permitir unirse"; en realidad permite corrupción.
-   - **Fix propuesto**: separar `.write` en `.validate` + restringir a
-     `newData.child('players/p2/uid').val() === auth.uid` (o p3/p4) cuando se
-     une, es decir, solo puedes escribir tu propio slot.
+   - **Estado:** PARCHEADO en esta rama. Ahora la cláusula waiting exige que
+     el escritor sea quien se está añadiendo a un slot vacío
+     (`newData.child('players/{p2|p3|p4}/uid').val() === auth.uid`). Validates
+     por slot: `score` numérico ≤ 5000, `uid`/`name` con tamaño máximo.
 
 2. **`matched/$uid`** (línea 28): el OR `!data.exists()` permite que cualquier
    usuario cree el registro `matched/{otro_uid}`. Es intencional (rendez-vous,

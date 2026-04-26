@@ -35,7 +35,8 @@ vi.mock('../js/lang.js', () => ({
 const {
   getLevelInfo, getLearnStats,
   startLesson, answerLesson, advanceLesson, advanceFromTheory, abortLesson,
-  getRoundMasteryScore, getMasteryLevel, MASTERY_LEVELS
+  getRoundMasteryScore, getMasteryLevel, MASTERY_LEVELS,
+  addXp, MAX_XP_PER_CALL, MAX_XP_TOTAL,
 } = await import('../js/learn.js');
 
 // ─── Helpers ──────────────────────────────────────────────────
@@ -289,5 +290,90 @@ describe('getLearnStats', () => {
     expect(stats.xp).toBe(0);
     expect(stats.streak).toBe(0);
     expect(stats.rounds).toEqual({});
+  });
+});
+
+// ─── addXp — manipulation guards ──────────────────────────────
+// Defends the canonical XP store from the obvious devtools attacks:
+// `addXp(Infinity)`, `addXp(NaN)`, `addXp(-1)`, `addXp(1e15)`. Without the
+// guards, any of those would propagate into Firestore via syncLearnToCloud
+// and pollute the leaderboard.
+describe('addXp — input validation', () => {
+  beforeEach(() => clearStorage());
+
+  it('ignores NaN', () => {
+    addXp(NaN);
+    expect(getLearnStats().xp).toBe(0);
+  });
+
+  it('ignores Infinity', () => {
+    addXp(Infinity);
+    expect(getLearnStats().xp).toBe(0);
+  });
+
+  it('ignores negative amounts', () => {
+    addXp(-50);
+    expect(getLearnStats().xp).toBe(0);
+  });
+
+  it('ignores zero', () => {
+    addXp(0);
+    expect(getLearnStats().xp).toBe(0);
+  });
+
+  it('ignores non-numeric input', () => {
+    addXp('999');
+    addXp(null);
+    addXp(undefined);
+    addXp({ valueOf: () => 1e9 });
+    expect(getLearnStats().xp).toBe(0);
+  });
+
+  it('caps a single call at MAX_XP_PER_CALL', () => {
+    addXp(Number.MAX_SAFE_INTEGER);
+    expect(getLearnStats().xp).toBe(MAX_XP_PER_CALL);
+  });
+
+  it('caps absurdly large values at MAX_XP_PER_CALL', () => {
+    addXp(1e15);
+    expect(getLearnStats().xp).toBe(MAX_XP_PER_CALL);
+  });
+
+  it('truncates fractional amounts via Math.floor', () => {
+    addXp(10.9);
+    expect(getLearnStats().xp).toBe(10);
+  });
+
+  it('accumulates legitimate amounts normally', () => {
+    addXp(15);
+    addXp(20);
+    expect(getLearnStats().xp).toBe(35);
+  });
+
+  it('clamps a tampered local total back under MAX_XP_TOTAL on next write', () => {
+    // Simulate a manipulated localStorage with a poisoned total
+    localStorage.setItem('cq_learn_data', JSON.stringify({ xp: 1e18, streak: 0 }));
+    addXp(10);
+    const { xp } = getLearnStats();
+    expect(xp).toBeLessThanOrEqual(MAX_XP_TOTAL);
+    expect(Number.isFinite(xp)).toBe(true);
+  });
+});
+
+// ─── safeSetItem — quota / SecurityError resilience ──────────
+// addXp must not throw even when localStorage is unwritable (private mode,
+// quota exceeded). Without safeSetItem, the QuotaExceededError bubbles up
+// and breaks the lesson finish flow.
+describe('addXp — storage failure resilience', () => {
+  beforeEach(() => clearStorage());
+
+  it('does not throw when localStorage.setItem throws QuotaExceededError', () => {
+    const orig = localStorage.setItem;
+    localStorage.setItem = () => { const e = new Error('quota'); e.name = 'QuotaExceededError'; throw e; };
+    try {
+      expect(() => addXp(10)).not.toThrow();
+    } finally {
+      localStorage.setItem = orig;
+    }
   });
 });

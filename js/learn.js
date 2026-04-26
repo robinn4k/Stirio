@@ -6,14 +6,53 @@ import { shuffle } from './utils.js';
 // ─── Storage ──────────────────────────────────────────────────
 const KEY = 'cq_learn_data';
 
+// Hard ceiling for the canonical XP store. The game's XP curve tops out at
+// 8000 (see `getLevelInfo`), so 10M is generous head-room for distant future
+// content while keeping a corrupted/manipulated localStorage from inflating
+// the leaderboard. Combined with `firestore.rules` validation on
+// `users/{uid}.xpTotal`, this is defense-in-depth.
+export const MAX_XP_TOTAL = 10_000_000;
+export const MAX_STREAK_DAYS = 3650;
+
 function getData() {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
   catch { return {}; }
 }
 
+/** Wrap localStorage.setItem so QuotaExceededError / SecurityError (private
+ *  mode) doesn't bubble up and crash the caller mid-XP-update. */
+function safeSetItem(key, value) {
+  try {
+    localStorage.setItem(key, value);
+    return true;
+  } catch (e) {
+    console.warn(`[learn] localStorage write failed for ${key}:`, e?.name || e);
+    try {
+      window.stToast?.show?.({
+        kind: 'warn',
+        title: 'Almacenamiento lleno',
+        body: 'Tu progreso no se guardó localmente. Libera espacio o cierra otras pestañas.',
+        ttl: 4000,
+      });
+    } catch {}
+    return false;
+  }
+}
+
 function setData(data) {
-  localStorage.setItem(KEY, JSON.stringify(data));
-  syncLearnToCloud(data);
+  // Sanitize numeric fields before persisting so a corrupted in-memory copy
+  // can't poison either the local store or the cloud sync.
+  const safe = { ...data };
+  if (typeof safe.xp === 'number') {
+    safe.xp = Number.isFinite(safe.xp) ? Math.max(0, Math.min(MAX_XP_TOTAL, Math.floor(safe.xp))) : 0;
+  } else if (safe.xp !== undefined) {
+    safe.xp = 0;
+  }
+  if (typeof safe.streak === 'number') {
+    safe.streak = Number.isFinite(safe.streak) ? Math.max(0, Math.min(MAX_STREAK_DAYS, Math.floor(safe.streak))) : 0;
+  }
+  safeSetItem(KEY, JSON.stringify(safe));
+  syncLearnToCloud(safe);
 }
 
 async function syncLearnToCloud(data) {
@@ -371,11 +410,20 @@ function _finishSession() {
 
 export function abortLesson() { ls = null; }
 
+// Per-call ceiling. The most generous legitimate path (60s perfect speed
+// round, ~10 questions × ~25 XP each + bonus) tops out around ~300. 1000 is
+// a comfortable cap that still rejects obvious injection attempts like
+// addXp(Number.MAX_SAFE_INTEGER) from a tampered client.
+export const MAX_XP_PER_CALL = 1000;
+
 // Add XP and refresh streak. Used by the React LessonPlayer so that non-learn
 // modes (speed, daily, blind, academy…) also accrue XP into the canonical
 // cq_learn_data store that the leaderboard reads from.
 export function addXp(amount) {
-  const xp = Math.max(0, amount | 0);
+  // Reject NaN / Infinity / negatives BEFORE the `| 0` truncation, which
+  // would otherwise silently coerce them to 0 and hide bugs / manipulation.
+  if (!Number.isFinite(amount) || amount <= 0) return;
+  const xp = Math.min(MAX_XP_PER_CALL, Math.floor(amount));
   if (!xp) return;
   const d = getData();
   const today = new Date().toDateString();
@@ -383,8 +431,9 @@ export function addXp(amount) {
   const streak = d.lastDate === today ? (d.streak || 1)
     : d.lastDate === yesterday ? (d.streak || 0) + 1
     : 1;
-  const prevTotal = d.xp || 0;
-  const nextTotal = prevTotal + xp;
+  // Sanitize the previous total in case localStorage was tampered with.
+  const prevTotal = Number.isFinite(d.xp) ? Math.max(0, Math.min(MAX_XP_TOTAL, d.xp)) : 0;
+  const nextTotal = Math.min(MAX_XP_TOTAL, prevTotal + xp);
   const prevLevel = getLevelInfo(prevTotal).level;
   const nextLevel = getLevelInfo(nextTotal).level;
   setData({ ...d, xp: nextTotal, streak, lastDate: today });
