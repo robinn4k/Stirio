@@ -114,8 +114,31 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
     setEditingName(false);
   };
 
-  // Real activity totals (computed from the on-device activity log)
-  const activityLog = (window.stActivity && window.stActivity.loadActivityLog && window.stActivity.loadActivityLog()) || {};
+  // Real activity totals (computed from the on-device activity log).
+  // Re-read on every XP change so a lesson finished while Profile is mounted
+  // shows up in the heatmap immediately — without this the heatmap is stale
+  // until the user navigates away and back. Also refresh on window focus and
+  // after activity-log cloud rehydration finishes.
+  const [activityLog, setActivityLog] = React.useState(() =>
+    (window.stActivity && window.stActivity.loadActivityLog && window.stActivity.loadActivityLog()) || {}
+  );
+  React.useEffect(() => {
+    const reread = () => {
+      try {
+        if (window.stActivity?.loadActivityLog) {
+          setActivityLog(window.stActivity.loadActivityLog());
+        }
+      } catch {}
+    };
+    window.addEventListener('stirio:xpchange', reread);
+    window.addEventListener('stirio:activitychange', reread);
+    window.addEventListener('focus', reread);
+    return () => {
+      window.removeEventListener('stirio:xpchange', reread);
+      window.removeEventListener('stirio:activitychange', reread);
+      window.removeEventListener('focus', reread);
+    };
+  }, []);
   let lessons = 0, perfect = 0, durationMs = 0;
   for (const k in activityLog) {
     const d = activityLog[k] || {};
