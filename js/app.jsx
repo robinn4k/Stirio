@@ -435,14 +435,27 @@ const App = () => {
       const u = window.stAuth?.getCurrentUser?.();
       if (u) setProfile(p => ({ ...p, name: u.name || p.name, avatar: u.photo || p.avatar }));
     };
+    // Open MapScreen with deep-link params (focus / spirit). Dispatched by
+    // MiniRegionMap when the user taps "Ver mapa →" inside an article so the
+    // navigation stays inside the SPA instead of opening map.html in a new
+    // browser tab.
+    const onOpenMap = (e) => {
+      const detail = e?.detail || {};
+      if (!window.stRouter) return;
+      const top = window.stRouter.getCurrent();
+      if (top?.name === 'map') window.stRouter.replace('map', detail);
+      else window.stRouter.navigate('map', detail);
+    };
     window.addEventListener('focus', onFocus);
     window.addEventListener('stirio:xpchange', onXpChange);
     window.addEventListener('stirio:namechange', onNameChange);
+    window.addEventListener('stirio:open-map', onOpenMap);
     return () => {
       cancelled = true;
       window.removeEventListener('focus', onFocus);
       window.removeEventListener('stirio:xpchange', onXpChange);
       window.removeEventListener('stirio:namechange', onNameChange);
+      window.removeEventListener('stirio:open-map', onOpenMap);
     };
   }, [syncFromLearn]);
 
@@ -1241,7 +1254,11 @@ const App = () => {
       )}
 
       {subScreen === 'map' && !activeLesson && (
-        <MapScreen onBack={() => setSubScreen(null)} />
+        <MapScreen
+          onBack={() => setSubScreen(null)}
+          focus={router.base?.params?.focus || null}
+          spirit={router.base?.params?.spirit || null}
+        />
       )}
 
       {subScreen === 'library' && !activeLesson && (

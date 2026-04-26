@@ -4,8 +4,15 @@
 // window.MAP_REGIONS is seeded from index.html's ES-module boot block so the
 // Home preview has it available on first paint.
 
-const MapScreen = ({ onBack }) => {
+const MapScreen = ({ onBack, focus = null, spirit = null }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // Forward optional focus/spirit deep-link params to the iframe so the
+  // Leaflet inside flies to that region and filters to its spirit group.
+  const params = new URLSearchParams();
+  if (focus) params.set('focus', focus);
+  if (spirit) params.set('spirit', spirit);
+  const qs = params.toString();
+  const src = qs ? `map.html?${qs}` : 'map.html';
   return (
     <div style={{
       position: 'fixed', inset: 0, zIndex: 50,
@@ -27,7 +34,7 @@ const MapScreen = ({ onBack }) => {
         </div>
       </div>
       <iframe
-        src="map.html"
+        src={src}
         style={{ flex: 1, border: 'none', width: '100%' }}
         title="Mapa de destilados"
       />
