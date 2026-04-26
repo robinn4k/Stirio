@@ -29,6 +29,18 @@ const PARITY_EXCLUDE_PREFIXES = [
   'wiki.art.history.cocktail-renaissance',
   'wiki.art.history.legendary-bars',
   'wiki.art.history.molecular-mixology',
+  // New map regions (Lote D) ship with ES copy; non-ES localization lands
+  // in follow-up PRs. The map UI falls back to titleCase via tOrTitleCase.
+  'wiki.map.tennessee-whisky',
+  'wiki.map.highland-park-orkney',
+  'wiki.map.speyside',
+  'wiki.map.ron-filipinas',
+  'wiki.map.rum-australia',
+  'wiki.map.rum-mauritius',
+  'wiki.map.sake-niigata',
+  'wiki.map.sake-hiroshima',
+  'wiki.map.plymouth-gin',
+  'wiki.map.cerveza-trappist',
   // New spirit brand bios (tasting / story) ship ES-only; translations land
   // in follow-up PRs. Existing barcelo-anejo entries remain translated.
   'wiki.brand.bacardi-carta-blanca.',

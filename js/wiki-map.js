@@ -345,6 +345,28 @@ const SPIRIT_REGIONS = [
     region: { polygon: [[41.20,40.20],[41.20,41.00],[40.85,41.15],[40.75,40.60],[40.85,40.15]] } },
   { id: 'rooibos', spirit: 'tea', lat: -32.49, lng: 19.01, icon: '🍂', origin: 'South Africa', place: 'Cederberg', dateCreated: 's. XVIII',
     region: { polygon: [[-32.00,18.70],[-32.10,19.35],[-32.80,19.40],[-33.00,18.85],[-32.70,18.55]] } },
+
+  // ══ LOTE D — SUBREGIONES Y BRANDS ICÓNICOS ══
+  // Whisky sub-regions
+  { id: 'tennessee-whisky', spirit: 'whisky', lat: 35.28, lng: -86.37, icon: '🌽', origin: 'USA', place: 'Lynchburg, Tennessee (Jack Daniel’s)', dateCreated: '1866' },
+  { id: 'highland-park-orkney', spirit: 'whisky', lat: 58.97, lng: -2.95, icon: '🏝️', origin: 'Scotland', place: 'Kirkwall, Orkney Islands', dateCreated: '1798' },
+  { id: 'speyside', spirit: 'whisky', lat: 57.46, lng: -3.21, icon: '🏞️', origin: 'Scotland', place: 'Speyside (Macallan / Glenfiddich / Glenlivet)', dateCreated: 's. XVIII',
+    region: { polygon: [[57.70,-3.65],[57.65,-2.85],[57.45,-2.80],[57.20,-2.95],[57.10,-3.45],[57.30,-3.80],[57.55,-3.85]] } },
+
+  // Rum extensions
+  { id: 'ron-filipinas', spirit: 'rum', lat: 14.60, lng: 120.98, icon: '🇵🇭', origin: 'Philippines', place: 'Manila (Tanduay)', dateCreated: '1854' },
+  { id: 'rum-australia', spirit: 'rum', lat: -24.86, lng: 152.35, icon: '🇦🇺', origin: 'Australia', place: 'Bundaberg, Queensland', dateCreated: '1888' },
+  { id: 'rum-mauritius', spirit: 'rum', lat: -20.42, lng: 57.59, icon: '🏝️', origin: 'Mauritius', place: 'Chamarel', dateCreated: 's. XVIII' },
+
+  // Sake sub-regions
+  { id: 'sake-niigata', spirit: 'sake', lat: 37.90, lng: 139.02, icon: '❄️', origin: 'Japan', place: 'Niigata Prefecture', dateCreated: 's. XVII' },
+  { id: 'sake-hiroshima', spirit: 'sake', lat: 34.41, lng: 132.74, icon: '🌸', origin: 'Japan', place: 'Saijo, Hiroshima', dateCreated: 's. XIX' },
+
+  // Gin sub-region
+  { id: 'plymouth-gin', spirit: 'gin', lat: 50.37, lng: -4.14, icon: '⚓', origin: 'England', place: 'Plymouth, Devon', dateCreated: '1793' },
+
+  // Belgian Trappist beer
+  { id: 'cerveza-trappist', spirit: 'beer', lat: 51.30, lng: 4.65, icon: '⛪', origin: 'Belgium', place: 'Westmalle / Westvleteren / Chimay', dateCreated: 's. XIX' },
 ];
 
 // Spirit color mapping for markers
