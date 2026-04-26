@@ -535,9 +535,14 @@ function tOrTitleCase(key, id) {
 /**
  * Initialize or update the spirit regions map.
  * @param {HTMLElement} container — the DOM element to mount the map into
+ * @param {object} [opts] — optional configuration
+ * @param {string} [opts.focus] — region id to fly to and open popup after load
+ * @param {string|string[]} [opts.spirit] — spirit type(s) to filter to (others hidden)
+ * @param {boolean} [opts.mini] — minimal chrome (no filter panel, no zoom UI)
  */
-export function initSpiritMap(container) {
+export function initSpiritMap(container, opts = {}) {
   if (!container) return;
+  const { focus = null, spirit = null, mini = false } = opts || {};
   // Ensure Leaflet is loaded
   if (typeof L === 'undefined') {
     container.innerHTML = '<p style="text-align:center;padding:2rem;color:#aaa;">Map loading...</p>';
@@ -555,7 +560,9 @@ export function initSpiritMap(container) {
   // Reset container and build layout: filter panel + map body
   container.innerHTML = '';
   container.classList.add('spirit-map-root');
-  buildFilterPanel(container);
+  if (!mini) {
+    buildFilterPanel(container);
+  }
   const mapBody = document.createElement('div');
   mapBody.className = 'spirit-map-body';
   container.appendChild(mapBody);
@@ -566,8 +573,15 @@ export function initSpiritMap(container) {
     zoom: 2,
     minZoom: 2,
     maxZoom: 8,
-    zoomControl: true,
+    zoomControl: !mini,
     attributionControl: false,
+    dragging: !mini,
+    touchZoom: !mini,
+    doubleClickZoom: !mini,
+    scrollWheelZoom: !mini,
+    boxZoom: !mini,
+    keyboard: !mini,
+    tap: !mini,
   });
 
   // Dark-themed tile layer (CartoDB Dark Matter)
@@ -638,6 +652,40 @@ export function initSpiritMap(container) {
 
   // Force map to resize correctly
   setTimeout(() => mapInstance.invalidateSize(), 100);
+
+  // Apply optional spirit filter: hide all groups except those whose spirits
+  // include the requested type. Accepts a single spirit string or an array.
+  if (spirit) {
+    const spirits = Array.isArray(spirit) ? spirit : [spirit];
+    const allowedGroups = new Set(
+      FILTER_GROUPS.filter(g => spirits.some(s => g.spirits.includes(s))).map(g => g.id)
+    );
+    activeGroups = allowedGroups;
+    applyFilter();
+
+    // Auto-fit bounds to the filtered regions
+    const focusedRegions = SPIRIT_REGIONS.filter(r => spirits.includes(r.spirit));
+    if (focusedRegions.length > 0) {
+      const bounds = L.latLngBounds(focusedRegions.map(r => [r.lat, r.lng]));
+      setTimeout(() => mapInstance.fitBounds(bounds.pad(0.3), { maxZoom: 5, animate: false }), 150);
+    }
+  }
+
+  // Apply optional focus: fly to a specific region and open its popup.
+  if (focus) {
+    const region = SPIRIT_REGIONS.find(r => r.id === focus);
+    if (region) {
+      setTimeout(() => {
+        mapInstance.flyTo([region.lat, region.lng], 6, { duration: 0.6 });
+        // Find the marker by matching coords (markers are kept in markersByGroup)
+        Object.values(markersByGroup).forEach(arr => arr.forEach(m => {
+          if (m.getLatLng && m.getLatLng().lat === region.lat && m.getLatLng().lng === region.lng) {
+            m.openPopup();
+          }
+        }));
+      }, 250);
+    }
+  }
 }
 
 /**

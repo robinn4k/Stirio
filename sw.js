@@ -113,6 +113,7 @@ const CACHE_PATHS = [
   'js/screens/Profile.jsx',
   'js/screens/ModeSheet.jsx',
   'js/reference.jsx',
+  'js/mini-region-map.jsx',
   'js/article.jsx',
   'js/knowledge.jsx',
   'js/three-scene.jsx',
@@ -132,7 +133,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v11.15`;
+const STATIC_CACHE_VERSION = `Stirio-v11.16`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

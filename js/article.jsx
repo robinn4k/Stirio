@@ -361,6 +361,11 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
           <BrandsSection spiritId={current.art} tr={tr} />
         )}
 
+        {/* Embedded mini Leaflet of the spirit's origin region(s). */}
+        {current.cat === 'spirits' && window.MiniRegionMap && (
+          <window.MiniRegionMap articleId={current.art} />
+        )}
+
         {/* CTA — open the full encyclopedia for more depth */}
         {onOpenWiki && (
           <button className="btn primary" onClick={onOpenWiki} style={{ justifySelf: 'start', padding: '10px 16px' }}>
