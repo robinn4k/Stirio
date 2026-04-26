@@ -504,24 +504,40 @@ const AcademyTrackCard = ({ track, icon, color, titleKey, titleFallback, descKey
 };
 
 const DailyCard = ({ onPlay }) => {
-  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  const tr = (k, f, p) => {
+    if (window.stLang && window.stLang.t) return window.stLang.t(k, p || {}, f);
+    if (window.stUiT) return window.stUiT(k, f);
+    return f || k;
+  };
+  // Reflect today's daily format (rotates by seed parity in DAILY_LESSON):
+  // even days → 10-question quiz, odd days → 60s focus on one cocktail.
+  const fmt = (window.getDailyFormat && window.getDailyFormat()) || { format: 'quiz' };
+  const isSpeed = fmt.format === 'speed-focus';
+  const title = isSpeed
+    ? tr('home.daily_title_speed', `Coctel del día: ${fmt.cocktailName}`, { name: fmt.cocktailName })
+    : tr('home.daily_title', '10 preguntas frescas');
+  const subtitle = isSpeed
+    ? tr('home.daily_sub_speed', '60 segundos · +200 XP')
+    : tr('home.daily_sub', 'Nuevas cada día · +120 XP');
   return (
   <button onClick={onPlay} className="card" style={{
     padding: 18, textAlign: 'left', cursor: 'pointer',
     display: 'flex', flexDirection: 'column', gap: 8,
-    background: 'linear-gradient(135deg, oklch(0.78 0.13 200 / 0.18), var(--bg-2))',
-    borderColor: 'oklch(0.78 0.13 200 / 0.3)',
+    background: isSpeed
+      ? 'linear-gradient(135deg, oklch(0.78 0.18 80 / 0.18), var(--bg-2))'
+      : 'linear-gradient(135deg, oklch(0.78 0.13 200 / 0.18), var(--bg-2))',
+    borderColor: isSpeed ? 'oklch(0.78 0.18 80 / 0.3)' : 'oklch(0.78 0.13 200 / 0.3)',
     minHeight: 112, transition: 'transform .15s',
   }}
     onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
     onMouseLeave={e => e.currentTarget.style.transform = ''}
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-      <div className="mono caps" style={{ color: 'var(--cyan)', fontSize: 10 }}>{tr('home.daily_eyebrow', 'reto diario')}</div>
-      <div style={{ fontSize: 22 }}>📅</div>
+      <div className="mono caps" style={{ color: isSpeed ? 'var(--amber)' : 'var(--cyan)', fontSize: 10 }}>{tr('home.daily_eyebrow', 'reto diario')}</div>
+      <div style={{ fontSize: 22 }}>{isSpeed ? '⚡' : '📅'}</div>
     </div>
-    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{tr('home.daily_title', '10 preguntas frescas')}</div>
-    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{tr('home.daily_sub', 'Nuevas cada día · +120 XP')}</div>
+    <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.05 }}>{title}</div>
+    <div style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)' }}>{subtitle}</div>
   </button>
   );
 };

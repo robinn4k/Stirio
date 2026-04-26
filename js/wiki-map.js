@@ -362,9 +362,6 @@ const SPIRIT_REGIONS = [
   { id: 'sake-niigata', spirit: 'sake', lat: 37.90, lng: 139.02, icon: '❄️', origin: 'Japan', place: 'Niigata Prefecture', dateCreated: 's. XVII' },
   { id: 'sake-hiroshima', spirit: 'sake', lat: 34.41, lng: 132.74, icon: '🌸', origin: 'Japan', place: 'Saijo, Hiroshima', dateCreated: 's. XIX' },
 
-  // Gin sub-region
-  { id: 'plymouth-gin', spirit: 'gin', lat: 50.37, lng: -4.14, icon: '⚓', origin: 'England', place: 'Plymouth, Devon', dateCreated: '1793' },
-
   // Belgian Trappist beer
   { id: 'cerveza-trappist', spirit: 'beer', lat: 51.30, lng: 4.65, icon: '⛪', origin: 'Belgium', place: 'Westmalle / Westvleteren / Chimay', dateCreated: 's. XIX' },
 ];
