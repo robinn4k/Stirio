@@ -132,6 +132,123 @@ const AcademyHub = ({ onBack, onPickTrack }) => {
   );
 };
 
+// ── LevelPath: SVG sendero estilo Duolingo ──
+// Renders the academy levels as an illustrated path with nodes in a gentle
+// sine-wave layout. Locked nodes show a padlock; the next playable level
+// gets a pulsing halo. Tap an unlocked node → opens its LevelDetail modal.
+const LevelPath = ({ levels, progress, onSelect }) => {
+  const NODE_R = 38;
+  const ROW_H = 138;
+  const W = 280;
+  const CENTER_X = W / 2;
+  const AMP = 80;
+  const H = levels.length * ROW_H + 60;
+  const positionFor = (i) => ({
+    x: CENTER_X + Math.sin(i * 0.95) * AMP,
+    y: i * ROW_H + 70,
+  });
+
+  // Find the first unlocked-but-not-completed level → "current".
+  let currentIdx = -1;
+  for (let i = 0; i < levels.length; i++) {
+    const prevDone = i === 0 || levelCompleted(progress, levels[i - 1]);
+    if (prevDone && !levelCompleted(progress, levels[i])) { currentIdx = i; break; }
+  }
+
+  const segments = [];
+  for (let i = 0; i < levels.length - 1; i++) {
+    const a = positionFor(i);
+    const b = positionFor(i + 1);
+    const midY = (a.y + b.y) / 2;
+    segments.push(`M ${a.x} ${a.y} C ${a.x} ${midY} ${b.x} ${midY} ${b.x} ${b.y}`);
+  }
+
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      width="100%"
+      style={{ display: 'block', maxWidth: W + 'px', margin: '0 auto', height: 'auto' }}
+      role="list"
+    >
+      <defs>
+        {levels.map((level, i) => (
+          <linearGradient key={`grad-${level.id}`} id={`level-node-grad-${level.id}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={level.color} stopOpacity="0.95" />
+            <stop offset="100%" stopColor="oklch(0.28 0.04 60)" stopOpacity="1" />
+          </linearGradient>
+        ))}
+      </defs>
+      <path
+        d={segments.join(' ')}
+        stroke="var(--bg-3)"
+        strokeWidth="6"
+        fill="none"
+        strokeLinecap="round"
+        strokeDasharray="3 12"
+      />
+      {levels.map((level, i) => {
+        const { x, y } = positionFor(i);
+        const prevDone = i === 0 || levelCompleted(progress, levels[i - 1]);
+        const locked = !prevDone;
+        const isCurrent = i === currentIdx;
+        const lessonCount = (level.lessons || []).length;
+        const doneCount = (progress[level.id]?.lessons || []).filter(l => l?.passed).length;
+        const labelTitle = (window.stLang && window.stLang.t) ? window.stLang.t(level.key) : level.key;
+        return (
+          <g
+            key={level.id}
+            onClick={() => !locked && onSelect(level)}
+            role="listitem"
+            aria-label={`${labelTitle} ${doneCount}/${lessonCount}`}
+            style={{ cursor: locked ? 'not-allowed' : 'pointer', opacity: locked ? 0.55 : 1 }}
+          >
+            {isCurrent && (
+              <circle
+                cx={x} cy={y} r={NODE_R + 8}
+                fill="none"
+                stroke={level.color}
+                strokeWidth="3"
+                className="level-node-pulse"
+              />
+            )}
+            <circle
+              cx={x} cy={y} r={NODE_R + 4}
+              fill="oklch(0.18 0.02 60)"
+              opacity="0.85"
+            />
+            <circle
+              cx={x} cy={y} r={NODE_R}
+              fill={`url(#level-node-grad-${level.id})`}
+              stroke={level.color}
+              strokeWidth="2"
+            />
+            <text
+              x={x} y={y + 12}
+              textAnchor="middle"
+              fontSize="32"
+              style={{ pointerEvents: 'none', userSelect: 'none' }}
+            >
+              {locked ? '🔒' : level.icon}
+            </text>
+            {/* Level number badge */}
+            <circle cx={x + NODE_R - 6} cy={y - NODE_R + 6} r="13" fill="var(--bg-1)" stroke={level.color} strokeWidth="1.5" />
+            <text
+              x={x + NODE_R - 6} y={y - NODE_R + 10}
+              textAnchor="middle"
+              fontSize="11"
+              fontFamily="var(--f-mono)"
+              fill="var(--ink-1)"
+              style={{ pointerEvents: 'none', userSelect: 'none' }}
+            >
+              {String(i).padStart(2, '0')}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
 const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onStartRound }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const meta = TRACK_META[track] || TRACK_META.cocktail;
@@ -213,21 +330,13 @@ const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onSta
             </button>
           </div>
         )}
-        {levels.map((level, i) => {
-          const prevDone = i === 0 || levelCompleted(progress, levels[i - 1]);
-          const locked = !prevDone;
-          const lessonCount = (level.lessons || []).length;
-          const doneCount = (progress[level.id]?.lessons || []).filter(l => l?.passed).length;
-          return (
-            <LevelCard key={level.id}
-              level={level}
-              index={i}
-              locked={locked}
-              progress={{ done: doneCount, total: lessonCount }}
-              onOpen={() => !locked && setOpenLevel(level)}
-            />
-          );
-        })}
+        {levels.length > 0 && (
+          <LevelPath
+            levels={levels}
+            progress={progress}
+            onSelect={(level) => setOpenLevel(level)}
+          />
+        )}
       </div>
       </div>
 
