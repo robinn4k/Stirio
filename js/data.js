@@ -531,17 +531,134 @@ const pickDailyQuestions = (n = 10, seedOverride = null) => {
   }
   return pool.slice(0, n);
 };
+// Pick one ficha by daily seed — same RNG family used by pickDailyQuestions.
+const pickDailyCocktail = (seed) => {
+  const fichas = ALL_FICHAS;
+  if (!fichas.length) return null;
+  const rng = seededRng(seed);
+  // Burn one number so the cocktail seed is decorrelated from question shuffles.
+  rng();
+  const idx = Math.floor(rng() * fichas.length);
+  return fichas[idx];
+};
+
+// Build template-based questions about a single cocktail. Uses the ficha's
+// glass/method/garnish/family/ingredients with distractors pulled from the
+// rest of ALL_FICHAS. Returns ~8–12 raw {q, a, exp} entries (pre-normalize).
+const buildCocktailQuiz = (cocktail) => {
+  if (!cocktail) return [];
+  const others = ALL_FICHAS.filter(f => f.name !== cocktail.name);
+  const sampleN = (arr, n) => _dataShuffle(arr).slice(0, n);
+  const uniq = (arr) => [...new Set(arr.filter(Boolean))];
+
+  const glassOpts   = uniq(others.map(f => f.glass));
+  const methodOpts  = uniq(others.map(f => f.method));
+  const garnishOpts = uniq(others.map(f => f.garnish));
+  const familyOpts  = uniq(others.map(f => f._family));
+  const name = cocktail.name;
+
+  const qs = [];
+  if (cocktail.glass && glassOpts.length >= 3) {
+    const wrong = sampleN(glassOpts.filter(g => g !== cocktail.glass), 3);
+    qs.push({
+      q: _tp('daily.q.glass', { name }, `¿En qué vaso se sirve un ${name}?`),
+      a: [cocktail.glass, ...wrong],
+      exp: _tp('daily.q.glass_exp', { name, glass: cocktail.glass }, `Un ${name} se sirve tradicionalmente en ${cocktail.glass}.`),
+    });
+  }
+  if (cocktail.method && methodOpts.length >= 3) {
+    const wrong = sampleN(methodOpts.filter(m => m !== cocktail.method), 3);
+    qs.push({
+      q: _tp('daily.q.method', { name }, `¿Cuál es el método de preparación del ${name}?`),
+      a: [cocktail.method, ...wrong],
+      exp: _tp('daily.q.method_exp', { name, method: cocktail.method }, `El ${name} se prepara con la técnica de ${cocktail.method}.`),
+    });
+  }
+  if (cocktail.garnish && garnishOpts.length >= 3) {
+    const wrong = sampleN(garnishOpts.filter(g => g !== cocktail.garnish), 3);
+    qs.push({
+      q: _tp('daily.q.garnish', { name }, `¿Qué decoración lleva un ${name}?`),
+      a: [cocktail.garnish, ...wrong],
+      exp: _tp('daily.q.garnish_exp', { name, garnish: cocktail.garnish }, `Su decoración clásica es ${cocktail.garnish}.`),
+    });
+  }
+  if (cocktail._family && familyOpts.length >= 3) {
+    const wrong = sampleN(familyOpts.filter(f => f !== cocktail._family), 3);
+    qs.push({
+      q: _tp('daily.q.family', { name }, `¿A qué familia de cocteles pertenece el ${name}?`),
+      a: [cocktail._family, ...wrong],
+      exp: _tp('daily.q.family_exp', { name, family: cocktail._family }, `El ${name} pertenece a la familia ${cocktail._family}.`),
+    });
+  }
+  const ingredients = cocktail.ingredients || [];
+  if (ingredients.length >= 1) {
+    const ingNorm = ingredients.map(i => (i || '').toLowerCase());
+    const otherIngredients = uniq(others.flatMap(f => f.ingredients || []))
+      .filter(i => !ingNorm.includes((i || '').toLowerCase()));
+    ingredients.slice(0, 5).forEach(ing => {
+      const wrong = sampleN(otherIngredients, 3);
+      if (wrong.length === 3) {
+        qs.push({
+          q: _tp('daily.q.has_ingredient', { name }, `¿Cuál de estos ingredientes lleva el ${name}?`),
+          a: [ing, ...wrong],
+          exp: _tp('daily.q.has_ingredient_exp', { name, ingredient: ing }, `${ing} es uno de los ingredientes del ${name}.`),
+        });
+      }
+    });
+  }
+  return qs;
+};
+
 const DAILY_LESSON = (opts = {}) => {
   const { dateStr = null, challengedBy = null } = opts || {};
   const overrideSeed = dateStr ? seedForDate(dateStr) : null;
   const seed = overrideSeed != null ? overrideSeed : todaySeed();
-  const qs = pickDailyQuestions(10, seed);
   const lang = (window.stLang && window.stLang.getLang && window.stLang.getLang()) || 'es';
   const localeMap = { es: 'es-ES', en: 'en-US', fr: 'fr-FR', pt: 'pt-PT', de: 'de-DE' };
   const displayDate = (dateStr && overrideSeed != null)
     ? new Date(dateStr + 'T00:00:00Z').toLocaleDateString(localeMap[lang] || 'es-ES', { day: 'numeric', month: 'long' })
     : new Date().toLocaleDateString(localeMap[lang] || 'es-ES', { day: 'numeric', month: 'long' });
   const title = _tp('daily.card_title', {}, 'Reto Diario');
+
+  // Alternate format by seed parity: even days = 10-question quiz (no timer),
+  // odd days = 60s speed focused on one seeded cocktail. The speed branch
+  // requires ≥5 generated questions; otherwise fall back to the quiz format.
+  const isSpeedDay = (seed % 2) === 1;
+  if (isSpeedDay) {
+    const cocktail = pickDailyCocktail(seed);
+    const cocktailQs = buildCocktailQuiz(cocktail);
+    if (cocktail && cocktailQs.length >= 5) {
+      const speedTitle = _tp('daily.format.speed_focus_title', { name: cocktail.name }, `Reto del día: ${cocktail.name}`);
+      return {
+        id: 'daily-' + seed,
+        category: 'Daily',
+        dailyDate: dateStr || null,
+        challengedBy: challengedBy || null,
+        title,
+        subtitle: _tp('daily.format.speed_focus_subtitle', { name: cocktail.name, date: displayDate }, `60s · ${cocktail.name} · ${displayDate}`),
+        emoji: '⚡',
+        accent: 'amber',
+        xp: 200,
+        difficulty: 'Fast',
+        game: 'quiz',
+        _timed: 60,
+        _format: 'speed-focus',
+        _focusCocktail: cocktail.name,
+        steps: [
+          {
+            kind: 'intro',
+            title: speedTitle,
+            body: _tp('daily.format.speed_focus_body', { name: cocktail.name }, `Tienes 60 segundos para responder todas las que puedas sobre el ${cocktail.name}. Cada acierto suma; los fallos no restan pero queman tiempo.`),
+            fact: _tp('daily.card_fact', {}, 'Mismo reto para todos los jugadores del día.'),
+          },
+          ...cocktailQs.map(normalizeQ),
+        ],
+      };
+    }
+    // Fall through to quiz format if not enough questions.
+  }
+
+  const qs = pickDailyQuestions(10, seed);
   return {
     id: 'daily-' + seed,
     category: 'Daily',
@@ -554,6 +671,7 @@ const DAILY_LESSON = (opts = {}) => {
     xp: 150,
     difficulty: 'Mix',
     game: 'quiz',
+    _format: 'quiz',
     steps: [
       {
         kind: 'intro',
@@ -667,9 +785,25 @@ const buildAcademyPractice = (level, roundId, track = 'cocktail') => {
   return { ...lesson, id: `academy-${track}-practice-l${level.id}-r${roundId}`, emoji: level.icon, _roundColor: level.color };
 };
 
+// Lightweight metadata for today's daily reto (used by Home card to choose
+// subtitle copy without building the full lesson).
+const getDailyFormat = (opts = {}) => {
+  const { dateStr = null } = opts || {};
+  const overrideSeed = dateStr ? seedForDate(dateStr) : null;
+  const seed = overrideSeed != null ? overrideSeed : todaySeed();
+  const isSpeedDay = (seed % 2) === 1;
+  if (isSpeedDay) {
+    const cocktail = pickDailyCocktail(seed);
+    if (cocktail && buildCocktailQuiz(cocktail).length >= 5) {
+      return { format: 'speed-focus', cocktailName: cocktail.name, seed };
+    }
+  }
+  return { format: 'quiz', seed };
+};
+
 Object.assign(window, {
   LESSONS, ACHIEVEMENTS, CATEGORIES,
   ALL_FICHAS, TRIVIA_ROUNDS,
-  buildLessonFromRound, DAILY_LESSON, SPEED_LESSON,
+  buildLessonFromRound, DAILY_LESSON, SPEED_LESSON, getDailyFormat,
   getAcademyLevels, buildAcademyLesson, buildAcademyPractice,
 });

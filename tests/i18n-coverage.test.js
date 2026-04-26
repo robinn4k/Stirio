@@ -39,7 +39,6 @@ const PARITY_EXCLUDE_PREFIXES = [
   'wiki.map.rum-mauritius',
   'wiki.map.sake-niigata',
   'wiki.map.sake-hiroshima',
-  'wiki.map.plymouth-gin',
   'wiki.map.cerveza-trappist',
   // New spirit brand bios (tasting / story) ship ES-only; translations land
   // in follow-up PRs. Existing barcelo-anejo entries remain translated.
