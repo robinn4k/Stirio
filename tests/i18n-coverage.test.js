@@ -42,6 +42,14 @@ const PARITY_EXCLUDE_PREFIXES = [
   'wiki.brand.lagavulin-16.',
   'wiki.brand.yamazaki-12.',
   'wiki.brand.buffalo-trace.',
+  'wiki.brand.tanqueray-london-dry.',
+  'wiki.brand.bombay-sapphire.',
+  'wiki.brand.hendricks.',
+  'wiki.brand.beefeater.',
+  'wiki.brand.patron-silver.',
+  'wiki.brand.don-julio-reposado.',
+  'wiki.brand.casamigos-blanco.',
+  'wiki.brand.herradura-reposado.',
 ];
 
 // Keys referenced from code that are known to be missing from i18n/*.json.
