@@ -54,6 +54,7 @@ function answerWrongly(qPayload) {
 }
 
 // ─── Level info ───────────────────────────────────────────────
+// Curve: [0, 80, 200, 360, 560, 800, 1100, 1450, 1850, 2300, 2800, 3400, 4100, 5000, 6200, 8000]
 describe('getLevelInfo', () => {
   it('returns level 1 at 0 xp', () => {
     expect(getLevelInfo(0).level).toBe(1);
@@ -71,39 +72,47 @@ describe('getLevelInfo', () => {
     expect(getLevelInfo(500).level).toBe(4);
   });
 
+  it('returns level 9 at 1850 xp', () => {
+    expect(getLevelInfo(1850).level).toBe(9);
+  });
+
+  it('returns level 13 at 4100 xp', () => {
+    expect(getLevelInfo(4100).level).toBe(13);
+  });
+
   it('pct is 0 at level start', () => {
     expect(getLevelInfo(0).pct).toBe(0);
   });
 
-  it('pct is 99 just before level 2', () => {
-    expect(getLevelInfo(99).pct).toBe(99);
+  it('pct is 99 just before level 3', () => {
+    expect(getLevelInfo(199).pct).toBe(99);
   });
 
   it('pct is ~50 at midpoint of level 1', () => {
-    const info = getLevelInfo(50);
+    const info = getLevelInfo(40);
     expect(info.pct).toBeCloseTo(50, 0);
   });
 
-  it('returns level 8 at 4000 xp (max level)', () => {
-    expect(getLevelInfo(4000).level).toBe(8);
+  it('returns level 16 at 8000 xp (max level)', () => {
+    expect(getLevelInfo(8000).level).toBe(16);
   });
 
-  it('sets maxLevel:true at 4000 xp', () => {
-    expect(getLevelInfo(4000).maxLevel).toBe(true);
+  it('sets maxLevel:true at 8000 xp', () => {
+    expect(getLevelInfo(8000).maxLevel).toBe(true);
   });
 
   it('pct is 100 at max level', () => {
-    expect(getLevelInfo(4000).pct).toBe(100);
+    expect(getLevelInfo(8000).pct).toBe(100);
   });
 
-  it('maxLevel:true for xp beyond 4000', () => {
+  it('maxLevel:true for xp beyond 8000', () => {
     expect(getLevelInfo(9999).maxLevel).toBe(true);
-    expect(getLevelInfo(9999).level).toBe(8);
+    expect(getLevelInfo(9999).level).toBe(16);
   });
 
   it('maxLevel:false below max level', () => {
     expect(getLevelInfo(0).maxLevel).toBe(false);
-    expect(getLevelInfo(3999).maxLevel).toBe(false);
+    expect(getLevelInfo(7999).maxLevel).toBe(false);
   });
 });
 

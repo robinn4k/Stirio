@@ -128,7 +128,7 @@ export function getLearnStats() {
 }
 
 export function getLevelInfo(xp) {
-  const steps = [0, 100, 250, 500, 900, 1500, 2500, 4000];
+  const steps = [0, 80, 200, 360, 560, 800, 1100, 1450, 1850, 2300, 2800, 3400, 4100, 5000, 6200, 8000];
   const maxLevel = steps.length;
   let level = 1;
   for (let i = 1; i < steps.length; i++) {
