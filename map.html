@@ -143,10 +143,21 @@
       if (v && v !== 'wiki.map.loading') loadingEl.textContent = v;
     }
     const root = document.getElementById('map-root');
+    // Read optional URL params: ?focus=<id>, ?spirit=<type>, ?mini=1
+    const params = new URLSearchParams(location.search);
+    const opts = {
+      focus: params.get('focus') || null,
+      spirit: params.get('spirit') || null,
+      mini: params.get('mini') === '1',
+    };
+    if (opts.mini) {
+      // Hide loading overlay quicker for mini embeds; iframe doesn't show it long.
+      document.body.classList.add('mini-mode');
+    }
     // Wait for Leaflet
     const start = () => {
       if (typeof L === 'undefined') { setTimeout(start, 50); return; }
-      initSpiritMap(root);
+      initSpiritMap(root, opts);
     };
     start();
   </script>
