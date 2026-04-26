@@ -165,6 +165,9 @@ const recordActivity = ({ xp = 0, correct = 0, total = 0, durationMs = 0 } = {})
     day.durationMs += Math.max(0, durationMs | 0);
     log[key] = day;
     localStorage.setItem(LS_ACTIVITY, JSON.stringify(log));
+    // Notify listeners (Profile heatmap, future widgets) so they re-read the
+    // log without waiting for a remount or window-focus event.
+    try { window.dispatchEvent(new CustomEvent('stirio:activitychange', { detail: { day: key, ...day } })); } catch {}
     if (_activitySyncTimer) clearTimeout(_activitySyncTimer);
     _activitySyncTimer = setTimeout(() => {
       _activitySyncTimer = 0;
@@ -319,6 +322,22 @@ const App = () => {
   const setFichaOpen = useCallback((ficha) => {
     if (!window.stRouter) return;
     if (ficha) {
+      // Track distinct fichas opened so the `fichas_reader` achievement
+      // (read 5+ recipes) actually unlocks. Each unique cocktail name
+      // counts once; reopening the same recipe doesn't double-count.
+      try {
+        if (window.stAchievements?.checkAchievements && window.stAchievements?.getStats) {
+          const prev = window.stAchievements.getStats() || {};
+          const seen = new Set(prev.fichasOpenedIds || []);
+          if (ficha.name && !seen.has(ficha.name)) {
+            seen.add(ficha.name);
+            window.stAchievements.checkAchievements({
+              fichasOpenedIds: Array.from(seen),
+              fichasOpened: seen.size,
+            });
+          }
+        }
+      } catch {}
       const top = window.stRouter.getCurrent();
       if (top?.name === 'ficha') window.stRouter.replace('ficha', { ficha });
       else window.stRouter.navigate('ficha', { ficha });
@@ -861,6 +880,7 @@ const App = () => {
       try {
         const prev = (window.stAchievements.getStats && window.stAchievements.getStats()) || {};
         const learn = window.stLearn?.getLearnStats ? window.stLearn.getLearnStats() : { xp: 0, streak: 0 };
+        const total = (correct || 0) + (wrong || 0);
         const perfect = (wrong === 0) && (correct > 0);
         const patch = {
           totalGames: (prev.totalGames || 0) + 1,
@@ -870,13 +890,49 @@ const App = () => {
         };
         if (perfect) patch.perfectLesson = true;
         const activeId = lesson?.id || '';
+
+        // Free-quiz round (`round-N`) — track distinct rounds played and
+        // flag perfectQuiz when the user 10/10s a round.
         const roundMatch = activeId.match(/^round-(\d+)$/);
         if (roundMatch) {
           const roundsSet = new Set(prev.roundsPlayedIds || []);
           roundsSet.add(roundMatch[1]);
           patch.roundsPlayedIds = Array.from(roundsSet);
           patch.roundsPlayed = roundsSet.size;
+          if (perfect && total >= 10) patch.perfectQuiz = true;
         }
+
+        // Daily challenge (`daily-<seed>`) — first play unlocks daily_first;
+        // a 10/10 unlocks daily_perfect.
+        if (/^daily-/.test(activeId)) {
+          patch.dailyPlayed = (prev.dailyPlayed || 0) + 1;
+          if (perfect && total >= 10) patch.dailyPerfect = true;
+        }
+
+        // Speed mode (`speed-<ts>`) — track best run by # of correct answers.
+        if (/^speed-/.test(activeId)) {
+          patch.speedMax = Math.max(prev.speedMax || 0, correct);
+        }
+
+        // Academy — count distinct levels passed and flag academy_perfect.
+        const acadMatch = activeId.match(/^academy-(cocktail|wine|coffee)-l(\d+)/);
+        if (acadMatch && perfect) patch.academyPerfect = true;
+        if (acadMatch) {
+          // Recompute completed-level count across all 3 tracks so the
+          // total matches what AcademyHub shows on Home. A level is
+          // "complete" when at least one of its lessons was passed.
+          let completed = 0;
+          for (const track of ['cocktail', 'wine', 'coffee']) {
+            try {
+              const prog = JSON.parse(localStorage.getItem(`cq_academy_${track}`) || '{}');
+              completed += Object.values(prog)
+                .filter(l => (l.lessons || []).some(x => x?.passed))
+                .length;
+            } catch {}
+          }
+          patch.academyLevels = completed;
+        }
+
         window.stAchievements.checkAchievements(patch);
       } catch (e) { console.warn('achievements check failed:', e); }
     };
