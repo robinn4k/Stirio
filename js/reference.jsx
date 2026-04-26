@@ -135,13 +135,15 @@ const AcademyHub = ({ onBack, onPickTrack }) => {
 // ── LevelPath: SVG sendero estilo Duolingo ──
 // Renders the academy levels as an illustrated path with nodes in a gentle
 // sine-wave layout. Locked nodes show a padlock; the next playable level
-// gets a pulsing halo. Tap an unlocked node → opens its LevelDetail modal.
+// gets a pulsing halo. Each node carries a side label with the level title
+// and lesson progress so users can scan the track without tapping.
 const LevelPath = ({ levels, progress, onSelect }) => {
-  const NODE_R = 38;
-  const ROW_H = 138;
-  const W = 280;
+  const NODE_R = 36;
+  const ROW_H = 128;
+  const W = 320;
   const CENTER_X = W / 2;
-  const AMP = 80;
+  const AMP = 70;
+  const LABEL_W = 120;
   const H = levels.length * ROW_H + 60;
   const positionFor = (i) => ({
     x: CENTER_X + Math.sin(i * 0.95) * AMP,
@@ -163,6 +165,9 @@ const LevelPath = ({ levels, progress, onSelect }) => {
     segments.push(`M ${a.x} ${a.y} C ${a.x} ${midY} ${b.x} ${midY} ${b.x} ${b.y}`);
   }
 
+  const _t = (k, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k) : (f || k);
+  const _tp = (k, p, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k, p) : (f || k);
+
   return (
     <svg
       viewBox={`0 0 ${W} ${H}`}
@@ -171,7 +176,7 @@ const LevelPath = ({ levels, progress, onSelect }) => {
       role="list"
     >
       <defs>
-        {levels.map((level, i) => (
+        {levels.map((level) => (
           <linearGradient key={`grad-${level.id}`} id={`level-node-grad-${level.id}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor={level.color} stopOpacity="0.95" />
             <stop offset="100%" stopColor="oklch(0.28 0.04 60)" stopOpacity="1" />
@@ -193,14 +198,22 @@ const LevelPath = ({ levels, progress, onSelect }) => {
         const isCurrent = i === currentIdx;
         const lessonCount = (level.lessons || []).length;
         const doneCount = (progress[level.id]?.lessons || []).filter(l => l?.passed).length;
-        const labelTitle = (window.stLang && window.stLang.t) ? window.stLang.t(level.key) : level.key;
+        const title = _t(level.key, level.key);
+        const desc = _t(level.descKey, '');
+        const progressLine = _tp('academy.level_progress_short', { done: doneCount, total: lessonCount }, `${doneCount}/${lessonCount}`);
+        // Label sits on the side opposite the node's wave displacement so it
+        // doesn't overlap the path. When the node is left-of-center we draw
+        // the label to the right, and vice versa.
+        const labelOnRight = x < CENTER_X;
+        const labelX = labelOnRight ? x + NODE_R + 12 : x - NODE_R - 12 - LABEL_W;
+        const labelAlign = labelOnRight ? 'left' : 'right';
         return (
           <g
             key={level.id}
             onClick={() => !locked && onSelect(level)}
             role="listitem"
-            aria-label={`${labelTitle} ${doneCount}/${lessonCount}`}
-            style={{ cursor: locked ? 'not-allowed' : 'pointer', opacity: locked ? 0.55 : 1 }}
+            aria-label={`${title} — ${doneCount}/${lessonCount}`}
+            style={{ cursor: locked ? 'not-allowed' : 'pointer' }}
           >
             {isCurrent && (
               <circle
@@ -214,34 +227,52 @@ const LevelPath = ({ levels, progress, onSelect }) => {
             <circle
               cx={x} cy={y} r={NODE_R + 4}
               fill="oklch(0.18 0.02 60)"
-              opacity="0.85"
+              opacity={locked ? 0.55 : 0.85}
             />
             <circle
               cx={x} cy={y} r={NODE_R}
               fill={`url(#level-node-grad-${level.id})`}
               stroke={level.color}
               strokeWidth="2"
+              opacity={locked ? 0.55 : 1}
             />
             <text
               x={x} y={y + 12}
               textAnchor="middle"
               fontSize="32"
+              opacity={locked ? 0.55 : 1}
               style={{ pointerEvents: 'none', userSelect: 'none' }}
             >
               {locked ? '🔒' : level.icon}
             </text>
-            {/* Level number badge */}
-            <circle cx={x + NODE_R - 6} cy={y - NODE_R + 6} r="13" fill="var(--bg-1)" stroke={level.color} strokeWidth="1.5" />
+            <circle cx={x + NODE_R - 6} cy={y - NODE_R + 6} r="13" fill="var(--bg-1)" stroke={level.color} strokeWidth="1.5" opacity={locked ? 0.6 : 1} />
             <text
               x={x + NODE_R - 6} y={y - NODE_R + 10}
               textAnchor="middle"
               fontSize="11"
               fontFamily="var(--f-mono)"
               fill="var(--ink-1)"
+              opacity={locked ? 0.6 : 1}
               style={{ pointerEvents: 'none', userSelect: 'none' }}
             >
               {String(i).padStart(2, '0')}
             </text>
+            {/* Side label: title + progress. Uses foreignObject for HTML wrap */}
+            <foreignObject x={labelX} y={y - 32} width={LABEL_W} height={70} style={{ pointerEvents: 'none' }}>
+              <div xmlns="http://www.w3.org/1999/xhtml" style={{
+                fontFamily: 'var(--f-sans)',
+                color: 'var(--ink-1)',
+                opacity: locked ? 0.55 : 1,
+                textAlign: labelAlign,
+                lineHeight: 1.15,
+              }}>
+                <div style={{ fontFamily: 'var(--f-serif)', fontSize: 14, color: locked ? 'var(--ink-2)' : 'var(--ink-1)' }}>{title}</div>
+                {desc && (
+                  <div style={{ fontSize: 10, color: 'var(--ink-3)', marginTop: 3, lineHeight: 1.25, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{desc}</div>
+                )}
+                <div style={{ fontFamily: 'var(--f-mono)', fontSize: 9, color: level.color, marginTop: 4, letterSpacing: '0.1em' }}>{progressLine}</div>
+              </div>
+            </foreignObject>
           </g>
         );
       })}
