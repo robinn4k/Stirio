@@ -446,16 +446,25 @@ const App = () => {
       if (top?.name === 'map') window.stRouter.replace('map', detail);
       else window.stRouter.navigate('map', detail);
     };
+    // Open a FichaDetail overlay from anywhere via custom event. Used by
+    // BrandsSection pairing chips so they can navigate to the recipe without
+    // having to plumb onOpenFicha all the way down through ArticleScreen.
+    const onOpenFichaEvt = (e) => {
+      const ficha = e?.detail?.ficha;
+      if (ficha) setFichaOpen(ficha);
+    };
     window.addEventListener('focus', onFocus);
     window.addEventListener('stirio:xpchange', onXpChange);
     window.addEventListener('stirio:namechange', onNameChange);
     window.addEventListener('stirio:open-map', onOpenMap);
+    window.addEventListener('stirio:open-ficha', onOpenFichaEvt);
     return () => {
       cancelled = true;
       window.removeEventListener('focus', onFocus);
       window.removeEventListener('stirio:xpchange', onXpChange);
       window.removeEventListener('stirio:namechange', onNameChange);
       window.removeEventListener('stirio:open-map', onOpenMap);
+      window.removeEventListener('stirio:open-ficha', onOpenFichaEvt);
     };
   }, [syncFromLearn]);
 

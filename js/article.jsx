@@ -20,6 +20,23 @@ const titleCase = (id) => String(id || '')
   .map(w => w.charAt(0).toUpperCase() + w.slice(1))
   .join(' ');
 
+// Convert a ficha name to a normalized kebab-case ID for pairing lookups.
+// "Cuba Libre" → "cuba-libre", "Whisky Sour" → "whisky-sour", "B-52" → "b-52".
+const slugifyName = (s) => String(s || '')
+  .toLowerCase()
+  .normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-+|-+$/g, '');
+
+// Find a ficha that matches a brand pairing ID. Brand entries reference
+// cocktails by kebab-case ID (e.g. 'cuba-libre'); fichas store the human name
+// ('Cuba Libre'). Match by slug equality.
+const findFichaByPairingId = (id) => {
+  if (!id || !window.ALL_FICHAS) return null;
+  const slug = String(id).toLowerCase();
+  return window.ALL_FICHAS.find(f => slugifyName(f.name) === slug) || null;
+};
+
 const Radar = ({ values, labels, color, size = 320 }) => {
   const N = values.length;
   const cx = size / 2, cy = size / 2, rMax = size * 0.34;
@@ -159,15 +176,31 @@ const BrandFicha = ({ brand, tr }) => {
             {tr('wiki.label.pairing', 'Maridaje')}
           </h4>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {pairing.map(id => (
-              <span key={id} className="mono" style={{
-                background: 'var(--bg-2)', border: '1px solid var(--line-soft)',
-                borderRadius: 'var(--r-pill)', padding: '4px 10px',
-                fontSize: 12, color: 'var(--ink-1)',
-              }}>
-                {tr('wiki.cocktail.' + id, titleCase(id))}
-              </span>
-            ))}
+            {pairing.map(id => {
+              const label = tr('wiki.cocktail.' + id, titleCase(id));
+              const ficha = findFichaByPairingId(id);
+              const tag = ficha ? 'button' : 'span';
+              const interactive = !!ficha;
+              return React.createElement(tag, {
+                key: id,
+                type: ficha ? 'button' : undefined,
+                onClick: ficha ? () => {
+                  try { window.dispatchEvent(new CustomEvent('stirio:open-ficha', { detail: { ficha } })); } catch {}
+                } : undefined,
+                className: 'mono',
+                style: {
+                  background: 'var(--bg-2)',
+                  border: '1px solid var(--line-soft)',
+                  borderRadius: 'var(--r-pill)',
+                  padding: '4px 10px',
+                  fontSize: 12,
+                  color: interactive ? 'var(--ink-1)' : 'var(--ink-2)',
+                  cursor: interactive ? 'pointer' : 'default',
+                  fontFamily: 'var(--f-mono)',
+                  ...(interactive ? { transition: 'background 0.15s' } : {}),
+                },
+              }, label);
+            })}
           </div>
         </div>
       )}
