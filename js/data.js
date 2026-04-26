@@ -531,9 +531,28 @@ const pickDailyQuestions = (n = 10, seedOverride = null) => {
   }
   return pool.slice(0, n);
 };
-// Pick one ficha by daily seed — same RNG family used by pickDailyQuestions.
+// Generic family bucket assigned by familyFromFicha when no specific family
+// pattern matches. We exclude it from family questions because "Mixed" as
+// either correct answer or distractor is non-discriminating noise.
+const DAILY_FAMILY_BLACKLIST = new Set(['Mixed']);
+
+// A ficha qualifies for the speed-focus daily only if it can produce at least
+// ~6 distinct, non-trivial questions: needs glass + method + ≥3 ingredients
+// and a meaningful family bucket.
+const isFichaQualifyingForDailyFocus = (f) => {
+  if (!f || !f.name) return false;
+  if (!f.glass || !f.method) return false;
+  if (!f._family || DAILY_FAMILY_BLACKLIST.has(f._family)) return false;
+  if (!Array.isArray(f.ingredients) || f.ingredients.length < 3) return false;
+  return true;
+};
+
+// Pick one quality ficha by daily seed — same RNG family used by
+// pickDailyQuestions. Filters to fichas with enough data to generate a varied
+// 60s quiz; this guarantees DAILY_LESSON's speed branch never silently falls
+// back to the regular quiz format due to insufficient questions.
 const pickDailyCocktail = (seed) => {
-  const fichas = ALL_FICHAS;
+  const fichas = ALL_FICHAS.filter(isFichaQualifyingForDailyFocus);
   if (!fichas.length) return null;
   const rng = seededRng(seed);
   // Burn one number so the cocktail seed is decorrelated from question shuffles.
@@ -554,7 +573,8 @@ const buildCocktailQuiz = (cocktail) => {
   const glassOpts   = uniq(others.map(f => f.glass));
   const methodOpts  = uniq(others.map(f => f.method));
   const garnishOpts = uniq(others.map(f => f.garnish));
-  const familyOpts  = uniq(others.map(f => f._family));
+  // Family distractors must exclude the catch-all "Mixed" bucket.
+  const familyOpts  = uniq(others.map(f => f._family)).filter(f => !DAILY_FAMILY_BLACKLIST.has(f));
   const name = cocktail.name;
 
   const qs = [];
@@ -582,7 +602,7 @@ const buildCocktailQuiz = (cocktail) => {
       exp: _tp('daily.q.garnish_exp', { name, garnish: cocktail.garnish }, `Su decoración clásica es ${cocktail.garnish}.`),
     });
   }
-  if (cocktail._family && familyOpts.length >= 3) {
+  if (cocktail._family && !DAILY_FAMILY_BLACKLIST.has(cocktail._family) && familyOpts.length >= 3) {
     const wrong = sampleN(familyOpts.filter(f => f !== cocktail._family), 3);
     qs.push({
       q: _tp('daily.q.family', { name }, `¿A qué familia de cocteles pertenece el ${name}?`),
@@ -595,8 +615,13 @@ const buildCocktailQuiz = (cocktail) => {
     const ingNorm = ingredients.map(i => (i || '').toLowerCase());
     const otherIngredients = uniq(others.flatMap(f => f.ingredients || []))
       .filter(i => !ingNorm.includes((i || '').toLowerCase()));
-    ingredients.slice(0, 5).forEach(ing => {
-      const wrong = sampleN(otherIngredients, 3);
+    // Shuffle the distractor pool once and assign disjoint slices to each
+    // ingredient question so consecutive questions don't reuse the same wrong
+    // options (otherwise the user can answer them all by elimination).
+    const distractorPool = _dataShuffle(otherIngredients);
+    ingredients.slice(0, 4).forEach((ing, idx) => {
+      const start = idx * 3;
+      const wrong = distractorPool.slice(start, start + 3);
       if (wrong.length === 3) {
         qs.push({
           q: _tp('daily.q.has_ingredient', { name }, `¿Cuál de estos ingredientes lleva el ${name}?`),
