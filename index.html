@@ -16,7 +16,7 @@
        mientras Babel Standalone transpile JSX en el navegador. Restringen los
        destinos permitidos a las CDNs y endpoints de Firebase que la app usa
        realmente, limitando el blast-radius ante un XSS en datos de usuario. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://cdn.jsdelivr.net https://www.gstatic.com https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; img-src 'self' data: blob: https://images.unsplash.com https://*.googleusercontent.com https://www.gstatic.com; font-src 'self' data:; connect-src 'self' https://*.firebaseio.com wss://*.firebaseio.com https://*.firebasedatabase.app https://firestore.googleapis.com https://firebase.googleapis.com https://firebaseinstallations.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://accounts.google.com https://*.firebasestorage.app https://firebaseapp.com https://*.firebaseapp.com; frame-src 'self' https://*.firebaseapp.com https://accounts.google.com https://apis.google.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://accounts.google.com">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://cdn.jsdelivr.net https://www.gstatic.com https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; img-src 'self' data: blob: https://images.unsplash.com https://*.googleusercontent.com https://www.gstatic.com https://iba-world.com; font-src 'self' data:; connect-src 'self' https://*.firebaseio.com wss://*.firebaseio.com https://*.firebasedatabase.app https://firestore.googleapis.com https://firebase.googleapis.com https://firebaseinstallations.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://accounts.google.com https://*.firebasestorage.app https://firebaseapp.com https://*.firebaseapp.com; frame-src 'self' https://*.firebaseapp.com https://accounts.google.com https://apis.google.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://accounts.google.com">
   <title>Stirio 🍸</title>
   <link rel="icon" href="favicon.svg">
   <link rel="apple-touch-icon" href="icon_ios.png">
@@ -71,7 +71,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '11.06';</script>
+  <script>window.STIRIO_VERSION = '11.23';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
