@@ -62,7 +62,7 @@ js/achievements.js  Achievement tracking; strings via `ach.<id>` / `ach.<id>.des
 js/wiki-map.js      Spirit regions data (100+) + initSpiritMap (Leaflet) used by map.html & wiki.html
 js/wiki-data.js     Wiki article catalog (techniques, spirits, glassware, tools, 3D models…)
 js/i18n/            Per-language question files + fichas translation lookup
-sw.js               Service Worker (bump STATIC_CACHE_VERSION on asset changes)
+sw.js               Service Worker (bump STATIC_CACHE_VERSION + version.json + window.STIRIO_VERSION on asset changes)
 ```
 
 ### Cross-module globals (shared via `window`)
@@ -182,7 +182,9 @@ Other sanctioned i18n "pockets" outside `i18n/*.json`:
 3. In `js/app.jsx` `openMode()`: add `if (m === '<mode>') { setSubScreen('<mode>'); return; }`
 4. Add a conditional renderer: `{subScreen === '<mode>' && <XScreen onBack={() => setSubScreen(null)} />}`
 5. Add the mode metadata to the `modes` object inside `ModeSheet` (`js/screens.jsx`)
-6. Cache the new script in `sw.js` `CACHE_PATHS` and bump `STATIC_CACHE_VERSION`
+6. Cache the new script in `sw.js` `CACHE_PATHS` and bump the app version in
+   `sw.js` (`STATIC_CACHE_VERSION`), `version.json`, and `index.html`
+   (`window.STIRIO_VERSION`) — see [Service Worker](#service-worker)
 
 ⚠️ **Naming collisions**: classic Babel scripts share top-level scope, so a
 `const Foo = …` declared in two files throws `SyntaxError` at load time. Prefix
@@ -192,7 +194,11 @@ internal helpers (`DuelModeCard`, not `ModeCard`) when unsure.
 
 Any time you add, rename, or remove a JS/CSS/asset file:
 1. Add/update the path in `CACHE_PATHS` in `sw.js`
-2. Bump `STATIC_CACHE_VERSION` (e.g., `Stirio-v3.4` → `Stirio-v3.5`)
+2. Bump the app version **in all three places at once** — they must always match,
+   otherwise the boot-time mismatch detector won't trigger an update reload:
+   - `STATIC_CACHE_VERSION` in `sw.js` (e.g., `Stirio-v11.23` → `Stirio-v11.24`)
+   - `"version"` in `version.json` (e.g., `"11.23"` → `"11.24"`)
+   - `window.STIRIO_VERSION` in `index.html` (e.g., `'11.23'` → `'11.24'`)
 
 ## Git Workflow
 
