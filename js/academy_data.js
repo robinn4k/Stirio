@@ -539,4 +539,83 @@ export const ACADEMY_LEVELS = [
       { q: 'academy.l5.q10', a: ['academy.l5.q10a1','academy.l5.q10a2','academy.l5.q10a3','academy.l5.q10a4'], exp: 'academy.l5.q10exp' },
     ]
   },
+
+  // ═══════════════════════════════════════════════════════════
+  // LEVEL 6 — Maestro
+  // ═══════════════════════════════════════════════════════════
+  {
+    id: 6,
+    key: 'academy.l6.title',
+    descKey: 'academy.l6.desc',
+    icon: '👑',
+    color: '#9b59b6',
+    passThreshold: 75,
+    lessons: [
+      {
+        key: 'academy.l6.les0',
+        cards: [
+          { type: 'theory', key: 'academy.l6.t1' },
+          { type: 'tip',    key: 'academy.l6.tip1' },
+          { type: 'example', cocktail: 'Negroni' },
+          { type: 'note',   key: 'academy.l6.note1' },
+        ],
+        passThreshold: 75,
+        questions: [
+          { q: 'academy.l6.les0.q1', a: ['academy.l6.les0.q1a1','academy.l6.les0.q1a2','academy.l6.les0.q1a3','academy.l6.les0.q1a4'], exp: 'academy.l6.les0.q1exp' },
+          { q: 'academy.l6.les0.q2', a: ['academy.l6.les0.q2a1','academy.l6.les0.q2a2','academy.l6.les0.q2a3','academy.l6.les0.q2a4'], exp: 'academy.l6.les0.q2exp' },
+          { q: 'academy.l6.les0.q3', a: ['academy.l6.les0.q3a1','academy.l6.les0.q3a2','academy.l6.les0.q3a3','academy.l6.les0.q3a4'], exp: 'academy.l6.les0.q3exp' },
+        ]
+      },
+      {
+        key: 'academy.l6.les1',
+        cards: [
+          { type: 'theory', key: 'academy.l6.t2' },
+          { type: 'tip',    key: 'academy.l6.tip2' },
+          { type: 'example', cocktail: 'Penicillin' },
+          { type: 'note',   key: 'academy.l6.note2' },
+        ],
+        passThreshold: 75,
+        questions: [
+          { q: 'academy.l6.les1.q1', a: ['academy.l6.les1.q1a1','academy.l6.les1.q1a2','academy.l6.les1.q1a3','academy.l6.les1.q1a4'], exp: 'academy.l6.les1.q1exp' },
+          { q: 'academy.l6.les1.q2', a: ['academy.l6.les1.q2a1','academy.l6.les1.q2a2','academy.l6.les1.q2a3','academy.l6.les1.q2a4'], exp: 'academy.l6.les1.q2exp' },
+          { q: 'academy.l6.les1.q3', a: ['academy.l6.les1.q3a1','academy.l6.les1.q3a2','academy.l6.les1.q3a3','academy.l6.les1.q3a4'], exp: 'academy.l6.les1.q3exp' },
+        ]
+      },
+      {
+        key: 'academy.l6.les2',
+        cards: [
+          { type: 'theory', key: 'academy.l6.t3' },
+          { type: 'tip',    key: 'academy.l6.tip3' },
+          { type: 'example', cocktail: 'Americano' },
+          { type: 'note',   key: 'academy.l6.note3' },
+        ],
+        passThreshold: 75,
+        questions: [
+          { q: 'academy.l6.les2.q1', a: ['academy.l6.les2.q1a1','academy.l6.les2.q1a2','academy.l6.les2.q1a3','academy.l6.les2.q1a4'], exp: 'academy.l6.les2.q1exp' },
+          { q: 'academy.l6.les2.q2', a: ['academy.l6.les2.q2a1','academy.l6.les2.q2a2','academy.l6.les2.q2a3','academy.l6.les2.q2a4'], exp: 'academy.l6.les2.q2exp' },
+          { q: 'academy.l6.les2.q3', a: ['academy.l6.les2.q3a1','academy.l6.les2.q3a2','academy.l6.les2.q3a3','academy.l6.les2.q3a4'], exp: 'academy.l6.les2.q3exp' },
+        ]
+      },
+    ],
+    sequence: [
+      { type: 'lesson',   index: 0 },
+      { type: 'practice', roundId: 25 },
+      { type: 'lesson',   index: 1 },
+      { type: 'practice', roundId: 26 },
+      { type: 'lesson',   index: 2 },
+      { type: 'practice', roundId: 27 },
+    ],
+    questions: [
+      { q: 'academy.l6.q1',  a: ['academy.l6.q1a1','academy.l6.q1a2','academy.l6.q1a3','academy.l6.q1a4'], exp: 'academy.l6.q1exp' },
+      { q: 'academy.l6.q2',  a: ['academy.l6.q2a1','academy.l6.q2a2','academy.l6.q2a3','academy.l6.q2a4'], exp: 'academy.l6.q2exp' },
+      { q: 'academy.l6.q3',  a: ['academy.l6.q3a1','academy.l6.q3a2','academy.l6.q3a3','academy.l6.q3a4'], exp: 'academy.l6.q3exp' },
+      { q: 'academy.l6.q4',  a: ['academy.l6.q4a1','academy.l6.q4a2','academy.l6.q4a3','academy.l6.q4a4'], exp: 'academy.l6.q4exp' },
+      { q: 'academy.l6.q5',  a: ['academy.l6.q5a1','academy.l6.q5a2','academy.l6.q5a3','academy.l6.q5a4'], exp: 'academy.l6.q5exp' },
+      { q: 'academy.l6.q6',  a: ['academy.l6.q6a1','academy.l6.q6a2','academy.l6.q6a3','academy.l6.q6a4'], exp: 'academy.l6.q6exp' },
+      { q: 'academy.l6.q7',  a: ['academy.l6.q7a1','academy.l6.q7a2','academy.l6.q7a3','academy.l6.q7a4'], exp: 'academy.l6.q7exp' },
+      { q: 'academy.l6.q8',  a: ['academy.l6.q8a1','academy.l6.q8a2','academy.l6.q8a3','academy.l6.q8a4'], exp: 'academy.l6.q8exp' },
+      { q: 'academy.l6.q9',  a: ['academy.l6.q9a1','academy.l6.q9a2','academy.l6.q9a3','academy.l6.q9a4'], exp: 'academy.l6.q9exp' },
+      { q: 'academy.l6.q10', a: ['academy.l6.q10a1','academy.l6.q10a2','academy.l6.q10a3','academy.l6.q10a4'], exp: 'academy.l6.q10exp' },
+    ]
+  },
 ];
