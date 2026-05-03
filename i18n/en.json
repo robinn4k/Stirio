@@ -4029,5 +4029,6 @@
   "euvs.empty": "No results.",
   "euvs.book.unknown_author": "Unknown author",
   "euvs.book.pages": "pp",
-  "euvs.book.archive_link": "View on archive.org"
+  "euvs.book.archive_link": "View on archive.org",
+  "euvs.unpopulated": "Catalog not generated yet. Run tools/euvs-archive/build_catalog.py to populate it from the Internet Archive."
 }

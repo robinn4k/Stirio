@@ -64,6 +64,13 @@ cuyo tamaño en disco coincide con el tamaño remoto.
 
 ### 2. (Re)generar el catálogo
 
+> **Importante**: el repo se distribuye con `data/euvs-catalog.json` **vacío**
+> (`[]`). Es responsabilidad del mantenedor regenerarlo desde Internet
+> Archive — el script de abajo es la única fuente de verdad. No se
+> incluye un seed manual porque verificar a mano centenares de identifiers
+> de archive.org es propenso a errores y producir enlaces rotos en la app
+> es peor que una pantalla vacía.
+
 ```bash
 python build_catalog.py
 ```
