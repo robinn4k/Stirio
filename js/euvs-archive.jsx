@@ -109,7 +109,12 @@ const EuvsArchiveScreen = ({ onBack }) => {
           {tr('euvs.error', 'No se pudo cargar el catálogo.')}
         </div>
       )}
-      {status === 'ready' && filtered.length === 0 && (
+      {status === 'ready' && filtered.length === 0 && entries.length === 0 && (
+        <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.5 }}>
+          {tr('euvs.unpopulated', 'El catálogo aún no ha sido generado. Ejecuta tools/euvs-archive/build_catalog.py para poblarlo desde Internet Archive.')}
+        </div>
+      )}
+      {status === 'ready' && filtered.length === 0 && entries.length > 0 && (
         <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-3)' }}>
           {tr('euvs.empty', 'Sin resultados.')}
         </div>
