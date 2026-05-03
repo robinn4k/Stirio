@@ -71,12 +71,20 @@ cuyo tamaño en disco coincide con el tamaño remoto.
 > los slugs del mirror EUVS — son scans públicos de archive.org del mismo
 > material, suficientes para que la pantalla *Archivo EUVS* tenga contenido
 > funcional desde el primer arranque.
->
-> Para reemplazar el seed con la **colección EUVS completa** (~150 libros),
-> ejecuta este script en una máquina con acceso a archive.org. El JSON
-> resultante reemplaza el seed; el screen leerá lo que haya. Se ignora el
-> autofetch de runtime cuando el JSON tiene entradas — solo cae al fetch
-> cuando está vacío.
+
+#### Opción A: GitHub Actions (sin setup local — funciona desde iPhone)
+
+`Actions` → **Build EUVS catalog** → **Run workflow**. El runner de GitHub
+sí alcanza archive.org, ejecuta `build_catalog.py`, y abre un PR draft con
+el `data/euvs-catalog.json` regenerado (~150 libros). Reviewa, mergea, listo.
+
+> Pre-requisito una sola vez: en `Settings → Actions → General → Workflow
+> permissions`, marcar **"Allow GitHub Actions to create and approve pull
+> requests"**. Sin esto, el step que abre el PR falla con 403.
+
+#### Opción B: ejecutar localmente
+
+Si prefieres correrlo en tu máquina (Mac, PC, o iSH/a-Shell en iPhone):
 
 ```bash
 python build_catalog.py
