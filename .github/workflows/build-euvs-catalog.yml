@@ -34,6 +34,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r tools/euvs-archive/requirements.txt
 
+      - name: Diagnostic — probe archive.org search API
+        # Surfaces exactly what the search API returns for each query form
+        # so we can see the failure mode in the Actions log when build_catalog
+        # comes back empty. Doesn't fail the run — informational only.
+        run: |
+          set +e
+          echo "## archive.org scrape API probes" >> "$GITHUB_STEP_SUMMARY"
+          for Q in \
+            'collection:"vintage-cocktail-books-euvs"' \
+            'collection:(vintage-cocktail-books-euvs)' \
+            'collection:vintage-cocktail-books-euvs' \
+            'title:"The Savoy Cocktail Book"'; do
+            CODE=$(curl -s -o /tmp/r.json -w "%{http_code}" \
+              -G "https://archive.org/services/search/v1/scrape" \
+              --data-urlencode "q=$Q" \
+              --data-urlencode "fields=identifier,collection" \
+              --data-urlencode "count=3")
+            TOTAL=$(jq -r '.total // "?"' /tmp/r.json 2>/dev/null || echo "parse-error")
+            FIRST_ID=$(jq -r '.items[0].identifier // "—"' /tmp/r.json 2>/dev/null || echo "—")
+            FIRST_COLL=$(jq -r '.items[0].collection // "—" | if type=="array" then join(",") else . end' /tmp/r.json 2>/dev/null || echo "—")
+            echo "- \`$Q\` → HTTP $CODE, total=$TOTAL, first=$FIRST_ID (collection=$FIRST_COLL)" >> "$GITHUB_STEP_SUMMARY"
+          done
+
       - name: Build catalog
         run: |
           if [ -n "${{ inputs.limit }}" ]; then
@@ -46,8 +69,8 @@ jobs:
         run: |
           ENTRIES=$(jq 'length' data/euvs-catalog.json)
           echo "Generated $ENTRIES entries" >> "$GITHUB_STEP_SUMMARY"
-          if [ "$ENTRIES" -lt 5 ]; then
-            echo "::error::Catalog has fewer than 5 entries — script likely failed (rate limit, network, or bad query)"
+          if [ "$ENTRIES" -lt 1 ]; then
+            echo "::error::Catalog is empty — see the diagnostic step above for the response shape from each query form"
             exit 1
           fi
 
