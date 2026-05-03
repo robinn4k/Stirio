@@ -62,22 +62,21 @@ Salida:
 La descarga es **reanudable**: si vuelves a correr el script, omite los PDFs
 cuyo tamaño en disco coincide con el tamaño remoto.
 
-### 2. (Re)generar el catálogo (opcional)
+### 2. (Re)generar el catálogo (recomendado para cobertura completa)
 
-> **Importante**: el repo se distribuye con `data/euvs-catalog.json` **vacío**
-> (`[]`). La pantalla `EuvsArchiveScreen` ya autopobla en runtime
-> consultando directamente la Search API pública de Internet Archive
-> cuando el JSON local está vacío, así que **no es necesario** correr
-> este script para que la app funcione.
+> **Estado actual**: el repo incluye un seed **curado a mano** en
+> `data/euvs-catalog.json` con un puñado de libros vintage de coctelería
+> verificados manualmente en archive.org (Jerry Thomas 1862, Harry Johnson
+> 1882, Savoy 1930, Mr. Boston 1935, Trader Vic 1947). No son necesariamente
+> los slugs del mirror EUVS — son scans públicos de archive.org del mismo
+> material, suficientes para que la pantalla *Archivo EUVS* tenga contenido
+> funcional desde el primer arranque.
 >
-> Úsalo solo cuando quieras:
-> - **Congelar un snapshot** del catálogo committeado (útil si IA cae o
->   si no quieres dependencia runtime de archive.org).
-> - **Rellenar `localPath`** para entradas cuyos PDFs sí están descargados
->   localmente vía `download_euvs.py`.
->
-> Si hay entradas en el JSON committeado, la pantalla las usa y omite el
-> autofetch.
+> Para reemplazar el seed con la **colección EUVS completa** (~150 libros),
+> ejecuta este script en una máquina con acceso a archive.org. El JSON
+> resultante reemplaza el seed; el screen leerá lo que haya. Se ignora el
+> autofetch de runtime cuando el JSON tiene entradas — solo cae al fetch
+> cuando está vacío.
 
 ```bash
 python build_catalog.py
