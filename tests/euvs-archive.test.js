@@ -7,6 +7,7 @@ import {
   filterByLanguage,
   uniqueDecades,
   uniqueLanguages,
+  archiveDocToEntry,
 } from '../js/euvs-archive-utils.js';
 
 const fixture = [
@@ -136,5 +137,74 @@ describe('unique helpers', () => {
 
   it('uniqueLanguages returns sorted unique languages', () => {
     expect(uniqueLanguages(parsed)).toEqual(['eng', 'fra', 'spa']);
+  });
+});
+
+describe('archiveDocToEntry', () => {
+  it('maps a typical Internet Archive doc to a CatalogEntry', () => {
+    const doc = {
+      identifier: 'savoycocktailbook',
+      title: 'The Savoy Cocktail Book',
+      date: '1930-01-01T00:00:00Z',
+      creator: 'Harry Craddock',
+      language: 'eng',
+      imagecount: 288,
+      item_size: 26214400, // 25 MB
+    };
+    expect(archiveDocToEntry(doc)).toEqual({
+      id: 'savoycocktailbook',
+      year: 1930,
+      decade: '1930s',
+      title: 'The Savoy Cocktail Book',
+      author: 'Harry Craddock',
+      language: 'eng',
+      pages: 288,
+      sizeMb: 25,
+      archiveUrl: 'https://archive.org/details/savoycocktailbook',
+      localPath: null,
+    });
+  });
+
+  it('accepts creator as an array (uses the first element)', () => {
+    const out = archiveDocToEntry({
+      identifier: 'x', title: 'T', date: '1900', creator: ['Author A', 'Author B'],
+    });
+    expect(out.author).toBe('Author A');
+  });
+
+  it('accepts language as an array and lowercases + truncates to 3 chars', () => {
+    const out = archiveDocToEntry({
+      identifier: 'x', title: 'T', date: '1900', language: ['ENGLISH'],
+    });
+    expect(out.language).toBe('eng');
+  });
+
+  it('uses the year field if date is missing', () => {
+    const out = archiveDocToEntry({ identifier: 'x', title: 'T', year: 1862 });
+    expect(out.year).toBe(1862);
+    expect(out.decade).toBe('1860s');
+  });
+
+  it('returns null when identifier, title, or year is missing/unparseable', () => {
+    expect(archiveDocToEntry(null)).toBeNull();
+    expect(archiveDocToEntry({})).toBeNull();
+    expect(archiveDocToEntry({ identifier: 'x', title: 'T' })).toBeNull();
+    expect(archiveDocToEntry({ identifier: '', title: 'T', date: '1900' })).toBeNull();
+    expect(archiveDocToEntry({ identifier: 'x', title: '', date: '1900' })).toBeNull();
+    expect(archiveDocToEntry({ identifier: 'x', title: 'T', date: 'no-year-here' })).toBeNull();
+  });
+
+  it('parses item_size as a string (the API sometimes returns strings)', () => {
+    const out = archiveDocToEntry({
+      identifier: 'x', title: 'T', date: '1900', item_size: '10485760',
+    });
+    expect(out.sizeMb).toBe(10);
+  });
+
+  it('leaves optional fields as null when absent', () => {
+    const out = archiveDocToEntry({ identifier: 'x', title: 'T', date: '1900' });
+    expect(out).toMatchObject({
+      author: null, language: null, pages: null, sizeMb: null, localPath: null,
+    });
   });
 });

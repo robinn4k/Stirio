@@ -68,6 +68,63 @@ export function filterByLanguage(entries, lang) {
   return entries.filter(e => (e.language || '').toLowerCase() === target);
 }
 
+function firstString(v) {
+  if (Array.isArray(v)) v = v.length > 0 ? v[0] : null;
+  if (typeof v !== 'string') return null;
+  const s = v.trim();
+  return s ? s : null;
+}
+
+function parseYearFromString(raw) {
+  if (raw == null) return null;
+  const m = String(raw).match(/(\d{4})/);
+  if (!m) return null;
+  const n = parseInt(m[1], 10);
+  return Number.isFinite(n) ? n : null;
+}
+
+// Convert one document from the Internet Archive Search API
+// (https://archive.org/advancedsearch.php) into a CatalogEntry.
+// Returns null if the doc is missing identifier, title, or a parseable year.
+export function archiveDocToEntry(doc) {
+  if (!doc || typeof doc !== 'object') return null;
+  const id = firstString(doc.identifier);
+  const title = firstString(doc.title);
+  if (!id || !title) return null;
+
+  const year = parseYearFromString(doc.year) ?? parseYearFromString(doc.date);
+  if (year == null) return null;
+
+  const author = firstString(doc.creator);
+  const langRaw = firstString(doc.language);
+  const language = langRaw ? langRaw.toLowerCase().slice(0, 3) : null;
+
+  let pages = null;
+  const ic = doc.imagecount;
+  if (typeof ic === 'number' && Number.isFinite(ic) && ic >= 0) pages = ic;
+  else if (typeof ic === 'string' && /^\d+$/.test(ic)) pages = parseInt(ic, 10);
+
+  let sizeMb = null;
+  const sz = doc.item_size;
+  let bytes = null;
+  if (typeof sz === 'number' && Number.isFinite(sz) && sz >= 0) bytes = sz;
+  else if (typeof sz === 'string' && /^\d+$/.test(sz)) bytes = parseInt(sz, 10);
+  if (bytes != null) sizeMb = Math.round((bytes / 1024 / 1024) * 10) / 10;
+
+  return {
+    id,
+    year,
+    decade: decadeOf(year),
+    title,
+    author,
+    language,
+    pages,
+    sizeMb,
+    archiveUrl: `https://archive.org/details/${encodeURIComponent(id)}`,
+    localPath: null,
+  };
+}
+
 export function uniqueDecades(entries) {
   const set = new Set();
   for (const e of entries) if (e.decade) set.add(e.decade);
