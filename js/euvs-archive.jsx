@@ -59,12 +59,16 @@ const EuvsArchiveScreen = ({ onBack }) => {
     };
 
     const fetchFromArchive = () => {
+      // Quote the collection identifier — Solr (archive.org's search
+      // backend) treats hyphens as boolean NOT, so an unquoted
+      // collection:vintage-cocktail-books-euvs is parsed as
+      // "vintage NOT cocktail NOT books NOT euvs" and returns nothing.
       const url =
         'https://archive.org/advancedsearch.php' +
-        '?q=collection%3Avintage-cocktail-books-euvs' +
+        '?q=collection%3A%22vintage-cocktail-books-euvs%22' +
         '&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=year' +
         '&fl%5B%5D=creator&fl%5B%5D=language&fl%5B%5D=imagecount&fl%5B%5D=item_size' +
-        '&rows=200&output=json';
+        '&rows=500&output=json';
       return fetch(url)
         .then(r => {
           if (!r.ok) throw new Error(`archive.org HTTP ${r.status}`);
