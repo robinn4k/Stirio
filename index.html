@@ -71,7 +71,7 @@
           crossorigin="anonymous"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '11.23';</script>
+  <script>window.STIRIO_VERSION = '11.24';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -93,11 +93,13 @@
     import * as stStore from './js/store.js';
     import * as stLessonSteps from './js/lesson-steps.js';
     import * as stModes from './js/modes.js';
+    import * as stEuvsUtils from './js/euvs-archive-utils.js';
     window.stRouter = stRouter;
     window.stServices = stServices;
     window.stStore = stStore;
     window.stLessonSteps = stLessonSteps;
     window.stModes = stModes;
+    window.stEuvsUtils = stEuvsUtils;
   </script>
 
   <!-- Legacy ES modules (loaded asynchronously, exposed on window.st* AND in
@@ -162,6 +164,8 @@
   <script type="text/babel" data-presets="react" src="js/legacy-modes.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/duel.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/glossary.jsx"></script>
+  <!-- EUVS Archive: utils ES module loaded first via the loader block below. -->
+  <script type="text/babel" data-presets="react" src="js/euvs-archive.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/map.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/library.jsx"></script>
   <script type="text/babel" data-presets="react" src="js/arcade.jsx"></script>

@@ -121,6 +121,12 @@ const CACHE_PATHS = [
   'js/legacy-modes.jsx',
   'js/duel.jsx',
   'js/glossary.jsx',
+  // EUVS Archive: precache the JS only. The catalog (data/euvs-catalog.json)
+  // intentionally stays out of CACHE_PATHS — it grows over time and we don't
+  // want every release to force-redownload it. The runtime cache below
+  // (network-first for non-precached same-origin GETs) handles offline use.
+  'js/euvs-archive-utils.js',
+  'js/euvs-archive.jsx',
   'js/map.jsx',
   'js/library.jsx',
   'js/arcade.jsx',
@@ -133,7 +139,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v11.23`;
+const STATIC_CACHE_VERSION = `Stirio-v11.24`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {

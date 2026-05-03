@@ -45,6 +45,16 @@ npm test
 See [CLAUDE.md](CLAUDE.md) for the complete project guide, architecture, i18n
 rules, how to add new content, and the git workflow.
 
+## EUVS Archive (vintage cocktail books)
+
+Optional dev tooling lives under `tools/euvs-archive/` — Python scripts that
+download books from the **EUVS Vintage Cocktail Books** collection on Internet
+Archive and (re)build `data/euvs-catalog.json`. The catalog metadata is the
+only thing committed; PDFs stay local. The catalog is consumed by the
+in-app *Archivo EUVS* screen (under *Modos → Consultar*). See
+[tools/euvs-archive/README.md](tools/euvs-archive/README.md) for setup and
+the legal notice.
+
 ## License
 
 All Rights Reserved. See [LICENSE](LICENSE).
