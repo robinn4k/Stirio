@@ -10,12 +10,36 @@ const EuvsArchiveScreen = ({ onBack }) => {
 
   const [status, setStatus]     = useState('loading'); // 'loading' | 'ready' | 'error'
   const [entries, setEntries]   = useState([]);
+  const [debug, setDebug]       = useState(null); // last failure reason for the empty-state card
   const [query, setQuery]       = useState('');
   const [decade, setDecade]     = useState('all');
   const [language, setLanguage] = useState('all');
 
   useEffect(() => {
     let cancelled = false;
+
+    // window.stEuvsUtils is populated by an async <script type="module">
+    // import; on slow connections the React tree can mount before the module
+    // resolves. Read it lazily inside callbacks so the closure picks up the
+    // current value rather than the stale undefined captured at render time.
+    const getUtils = () => window.stEuvsUtils;
+
+    // Wait briefly for the ES module to land before we touch any of its
+    // exports. Polls every 50ms up to 5s. Resolves to the utils object or
+    // null if it never appeared (in which case we fail loud rather than
+    // silently rendering an empty grid).
+    const waitForUtils = () => new Promise((resolve) => {
+      const start = Date.now();
+      const tick = () => {
+        if (cancelled) return resolve(null);
+        const u = getUtils();
+        if (u) return resolve(u);
+        if (Date.now() - start > 5000) return resolve(null);
+        setTimeout(tick, 50);
+      };
+      tick();
+    });
+
     const finish = (parsed) => {
       if (cancelled) return;
       parsed.sort((a, b) => {
@@ -24,7 +48,14 @@ const EuvsArchiveScreen = ({ onBack }) => {
         return ay - by;
       });
       setEntries(parsed);
+      setDebug(null);
       setStatus('ready');
+    };
+
+    const fail = (reason) => {
+      if (cancelled) return;
+      setDebug(reason);
+      setStatus('error');
     };
 
     const fetchFromArchive = () => {
@@ -36,40 +67,61 @@ const EuvsArchiveScreen = ({ onBack }) => {
         '&rows=200&output=json';
       return fetch(url)
         .then(r => {
-          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          if (!r.ok) throw new Error(`archive.org HTTP ${r.status}`);
           return r.json();
         })
         .then(json => {
+          const u = getUtils();
           const docs = (json && json.response && json.response.docs) || [];
-          const parsed = utils
-            ? docs.map(d => utils.archiveDocToEntry(d)).filter(Boolean)
-            : [];
+          if (!u) {
+            fail(`utils missing after fetch (got ${docs.length} docs)`);
+            return;
+          }
+          const parsed = docs.map(d => u.archiveDocToEntry(d)).filter(Boolean);
+          if (parsed.length === 0 && docs.length > 0) {
+            // archive.org responded but every doc was rejected — surface
+            // the first identifier so we can see what's malformed.
+            const sample = docs[0] && docs[0].identifier;
+            fail(`archive.org returned ${docs.length} docs, all unparseable (e.g. "${sample}")`);
+            return;
+          }
+          if (parsed.length === 0) {
+            fail('archive.org returned 0 results for collection:vintage-cocktail-books-euvs');
+            return;
+          }
           finish(parsed);
         });
     };
 
-    fetch('data/euvs-catalog.json', { cache: 'default' })
-      .then(r => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then(json => {
-        if (cancelled) return;
-        const parsed = utils ? utils.parseCatalog(json) : [];
-        if (parsed.length > 0) {
-          finish(parsed);
-        } else {
-          fetchFromArchive().catch(() => {
-            if (!cancelled) setStatus('error');
+    waitForUtils().then((u) => {
+      if (cancelled) return;
+      if (!u) {
+        fail('euvs-archive-utils.js failed to load (window.stEuvsUtils undefined)');
+        return;
+      }
+      fetch('data/euvs-catalog.json', { cache: 'default' })
+        .then(r => {
+          if (!r.ok) throw new Error(`local catalog HTTP ${r.status}`);
+          return r.json();
+        })
+        .then(json => {
+          if (cancelled) return;
+          const parsed = u.parseCatalog(json);
+          if (parsed.length > 0) {
+            finish(parsed);
+          } else {
+            fetchFromArchive().catch((err) => {
+              fail(String(err && err.message || err));
+            });
+          }
+        })
+        .catch(() => {
+          // Local catalog missing / unreadable — try archive.org directly.
+          fetchFromArchive().catch((err) => {
+            fail(String(err && err.message || err));
           });
-        }
-      })
-      .catch(() => {
-        // Local catalog missing / unreadable — try archive.org directly.
-        fetchFromArchive().catch(() => {
-          if (!cancelled) setStatus('error');
         });
-      });
+    });
     return () => { cancelled = true; };
   }, []);
 
@@ -146,6 +198,11 @@ const EuvsArchiveScreen = ({ onBack }) => {
       {status === 'error' && (
         <div className="card" style={{ padding: 20, textAlign: 'center', color: 'var(--ink-3)' }}>
           {tr('euvs.error', 'No se pudo cargar el catálogo.')}
+          {debug && (
+            <div className="mono" style={{ marginTop: 10, fontSize: 11, color: 'var(--ink-2)', wordBreak: 'break-word', opacity: 0.7 }}>
+              {debug}
+            </div>
+          )}
         </div>
       )}
       {status === 'ready' && filtered.length === 0 && entries.length === 0 && (
