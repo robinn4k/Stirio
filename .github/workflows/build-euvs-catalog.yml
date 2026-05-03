@@ -34,28 +34,51 @@ jobs:
       - name: Install dependencies
         run: pip install -r tools/euvs-archive/requirements.txt
 
-      - name: Diagnostic — probe archive.org search API
-        # Surfaces exactly what the search API returns for each query form
-        # so we can see the failure mode in the Actions log when build_catalog
-        # comes back empty. Doesn't fail the run — informational only.
+      - name: Diagnostic — discover the indexed collection field
+        # Goal: figure out what value items in the EUVS mirror have in their
+        # `collection` Solr field. Search by title (works without knowing the
+        # collection slug), then inspect the items' actual collection field.
+        # Also dump the collection's own metadata to see if the slug is even
+        # an indexed item. Output goes to the job summary view.
         run: |
           set +e
-          echo "## archive.org scrape API probes" >> "$GITHUB_STEP_SUMMARY"
-          for Q in \
-            'collection:"vintage-cocktail-books-euvs"' \
-            'collection:(vintage-cocktail-books-euvs)' \
-            'collection:vintage-cocktail-books-euvs' \
-            'title:"The Savoy Cocktail Book"'; do
-            CODE=$(curl -s -o /tmp/r.json -w "%{http_code}" \
-              -G "https://archive.org/services/search/v1/scrape" \
-              --data-urlencode "q=$Q" \
-              --data-urlencode "fields=identifier,collection" \
-              --data-urlencode "count=3")
-            TOTAL=$(jq -r '.total // "?"' /tmp/r.json 2>/dev/null || echo "parse-error")
-            FIRST_ID=$(jq -r '.items[0].identifier // "—"' /tmp/r.json 2>/dev/null || echo "—")
-            FIRST_COLL=$(jq -r '.items[0].collection // "—" | if type=="array" then join(",") else . end' /tmp/r.json 2>/dev/null || echo "—")
-            echo "- \`$Q\` → HTTP $CODE, total=$TOTAL, first=$FIRST_ID (collection=$FIRST_COLL)" >> "$GITHUB_STEP_SUMMARY"
-          done
+          {
+            echo "## EUVS collection discovery"
+            echo
+            echo "### 1. \`/metadata/vintage-cocktail-books-euvs\` (collection's own metadata)"
+            echo '```json'
+            curl -s "https://archive.org/metadata/vintage-cocktail-books-euvs" \
+              | jq '{identifier: .metadata.identifier, mediatype: .metadata.mediatype, title: .metadata.title, collection: .metadata.collection, error: .error}' \
+              || echo "metadata fetch failed"
+            echo '```'
+            echo
+            echo "### 2. Search by known EUVS title — what's in items' \`collection\` field?"
+            for TITLE in "Bariana" "Cafe Royal Cocktail Book" "Savoy Cocktail Book" "Harry Johnson"; do
+              echo "**\`title:\"$TITLE\"\`**:"
+              echo '```json'
+              curl -s -G "https://archive.org/services/search/v1/scrape" \
+                --data-urlencode "q=title:\"$TITLE\"" \
+                --data-urlencode "fields=identifier,collection,year,creator" \
+                --data-urlencode "count=3" \
+                | jq '.items // .'
+              echo '```'
+            done
+            echo
+            echo "### 3. Each query form build_catalog.py tries"
+            for Q in \
+              'collection:"vintage-cocktail-books-euvs"' \
+              'collection:(vintage-cocktail-books-euvs)' \
+              'collection:vintage-cocktail-books-euvs' \
+              'collection:vintagecocktailbooks' \
+              'subject:"vintage cocktail"'; do
+              TOTAL=$(curl -s -G "https://archive.org/services/search/v1/scrape" \
+                --data-urlencode "q=$Q" \
+                --data-urlencode "fields=identifier" \
+                --data-urlencode "count=1" \
+                | jq -r '.total // "?"')
+              echo "- \`$Q\` → total=$TOTAL"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build catalog
         run: |
