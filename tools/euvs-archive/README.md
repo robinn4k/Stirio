@@ -62,14 +62,22 @@ Salida:
 La descarga es **reanudable**: si vuelves a correr el script, omite los PDFs
 cuyo tamaño en disco coincide con el tamaño remoto.
 
-### 2. (Re)generar el catálogo
+### 2. (Re)generar el catálogo (opcional)
 
 > **Importante**: el repo se distribuye con `data/euvs-catalog.json` **vacío**
-> (`[]`). Es responsabilidad del mantenedor regenerarlo desde Internet
-> Archive — el script de abajo es la única fuente de verdad. No se
-> incluye un seed manual porque verificar a mano centenares de identifiers
-> de archive.org es propenso a errores y producir enlaces rotos en la app
-> es peor que una pantalla vacía.
+> (`[]`). La pantalla `EuvsArchiveScreen` ya autopobla en runtime
+> consultando directamente la Search API pública de Internet Archive
+> cuando el JSON local está vacío, así que **no es necesario** correr
+> este script para que la app funcione.
+>
+> Úsalo solo cuando quieras:
+> - **Congelar un snapshot** del catálogo committeado (útil si IA cae o
+>   si no quieres dependencia runtime de archive.org).
+> - **Rellenar `localPath`** para entradas cuyos PDFs sí están descargados
+>   localmente vía `download_euvs.py`.
+>
+> Si hay entradas en el JSON committeado, la pantalla las usa y omite el
+> autofetch.
 
 ```bash
 python build_catalog.py

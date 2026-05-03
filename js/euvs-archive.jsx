@@ -16,6 +16,34 @@ const EuvsArchiveScreen = ({ onBack }) => {
 
   useEffect(() => {
     let cancelled = false;
+    const finish = (parsed) => {
+      if (cancelled) return;
+      parsed.sort((a, b) => a.year - b.year);
+      setEntries(parsed);
+      setStatus('ready');
+    };
+
+    const fetchFromArchive = () => {
+      const url =
+        'https://archive.org/advancedsearch.php' +
+        '?q=collection%3Avintage-cocktail-books-euvs' +
+        '&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=year' +
+        '&fl%5B%5D=creator&fl%5B%5D=language&fl%5B%5D=imagecount&fl%5B%5D=item_size' +
+        '&rows=200&output=json';
+      return fetch(url)
+        .then(r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          return r.json();
+        })
+        .then(json => {
+          const docs = (json && json.response && json.response.docs) || [];
+          const parsed = utils
+            ? docs.map(d => utils.archiveDocToEntry(d)).filter(Boolean)
+            : [];
+          finish(parsed);
+        });
+    };
+
     fetch('data/euvs-catalog.json', { cache: 'default' })
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -24,12 +52,19 @@ const EuvsArchiveScreen = ({ onBack }) => {
       .then(json => {
         if (cancelled) return;
         const parsed = utils ? utils.parseCatalog(json) : [];
-        parsed.sort((a, b) => a.year - b.year);
-        setEntries(parsed);
-        setStatus('ready');
+        if (parsed.length > 0) {
+          finish(parsed);
+        } else {
+          fetchFromArchive().catch(() => {
+            if (!cancelled) setStatus('error');
+          });
+        }
       })
       .catch(() => {
-        if (!cancelled) setStatus('error');
+        // Local catalog missing / unreadable — try archive.org directly.
+        fetchFromArchive().catch(() => {
+          if (!cancelled) setStatus('error');
+        });
       });
     return () => { cancelled = true; };
   }, []);
