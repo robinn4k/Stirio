@@ -185,13 +185,26 @@ describe('archiveDocToEntry', () => {
     expect(out.decade).toBe('1860s');
   });
 
-  it('returns null when identifier, title, or year is missing/unparseable', () => {
+  it('falls back to publicdate when both year and date are absent', () => {
+    const out = archiveDocToEntry({
+      identifier: 'x', title: 'T', publicdate: '2014-03-15T00:00:00Z',
+    });
+    expect(out.year).toBe(2014);
+    expect(out.decade).toBe('2010s');
+  });
+
+  it('accepts items without any parseable year (year and decade null)', () => {
+    const out = archiveDocToEntry({ identifier: 'x', title: 'T' });
+    expect(out).not.toBeNull();
+    expect(out.year).toBeNull();
+    expect(out.decade).toBeNull();
+  });
+
+  it('returns null only when identifier or title is missing', () => {
     expect(archiveDocToEntry(null)).toBeNull();
     expect(archiveDocToEntry({})).toBeNull();
-    expect(archiveDocToEntry({ identifier: 'x', title: 'T' })).toBeNull();
     expect(archiveDocToEntry({ identifier: '', title: 'T', date: '1900' })).toBeNull();
     expect(archiveDocToEntry({ identifier: 'x', title: '', date: '1900' })).toBeNull();
-    expect(archiveDocToEntry({ identifier: 'x', title: 'T', date: 'no-year-here' })).toBeNull();
   });
 
   it('parses item_size as a string (the API sometimes returns strings)', () => {

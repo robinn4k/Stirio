@@ -85,15 +85,20 @@ function parseYearFromString(raw) {
 
 // Convert one document from the Internet Archive Search API
 // (https://archive.org/advancedsearch.php) into a CatalogEntry.
-// Returns null if the doc is missing identifier, title, or a parseable year.
+// Returns null only when identifier or title is missing — we accept
+// items without a parseable year because the search API often omits
+// `year`/`date` for older items even when fl[] requests them.
 export function archiveDocToEntry(doc) {
   if (!doc || typeof doc !== 'object') return null;
   const id = firstString(doc.identifier);
   const title = firstString(doc.title);
   if (!id || !title) return null;
 
-  const year = parseYearFromString(doc.year) ?? parseYearFromString(doc.date);
-  if (year == null) return null;
+  const year =
+    parseYearFromString(doc.year) ??
+    parseYearFromString(doc.date) ??
+    parseYearFromString(doc.publicdate);
+  const decade = year != null ? decadeOf(year) : null;
 
   const author = firstString(doc.creator);
   const langRaw = firstString(doc.language);
