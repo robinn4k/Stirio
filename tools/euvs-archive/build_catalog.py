@@ -22,16 +22,34 @@ from pathlib import Path
 from typing import Optional
 
 try:
-    import internetarchive as ia
+    import requests
 except ImportError:
     sys.stderr.write(
-        "ERROR: internetarchive library not installed. Run "
+        "ERROR: requests library not installed. Run "
         "`pip install -r requirements.txt` first.\n"
     )
     sys.exit(1)
 
 
 COLLECTION_ID = "vintage-cocktail-books-euvs"
+SCRAPE_URL = "https://archive.org/services/search/v1/scrape"
+
+# Solr (archive.org's search backend) treats hyphens as boolean NOT inside
+# a bare term. We try multiple escape forms in order until one returns hits;
+# the first form that works wins. Logged so failure modes are diagnosable
+# from the workflow output.
+_ESCAPED_ID = COLLECTION_ID.replace("-", r"\-")
+QUERY_FORMS: list[str] = [
+    f'collection:"{COLLECTION_ID}"',          # quoted phrase
+    f"collection:({COLLECTION_ID})",           # parens (legacy)
+    f"collection:{_ESCAPED_ID}",               # escaped hyphens
+    f"collection:{COLLECTION_ID}",             # bare (rarely works)
+]
+
+SCRAPE_FIELDS = [
+    "identifier", "title", "date", "year",
+    "creator", "language", "imagecount", "item_size",
+]
 
 ROOT = Path(__file__).resolve().parent
 REPO_ROOT = ROOT.parent.parent
@@ -73,12 +91,14 @@ def find_local_path(identifier: str, year: int, title: str) -> Optional[str]:
     return None
 
 
-def first_pdf_size_mb(item: ia.item.Item) -> Optional[float]:
-    pdfs = [f for f in item.files if str(f.get("name", "")).lower().endswith(".pdf")]
-    if not pdfs:
+def parse_size_mb(raw) -> Optional[float]:
+    """item_size is bytes; round to MB."""
+    if raw is None:
         return None
-    pdfs.sort(key=lambda f: int(f.get("size", 0) or 0), reverse=True)
-    size = int(pdfs[0].get("size", 0) or 0)
+    try:
+        size = int(raw)
+    except (TypeError, ValueError):
+        return None
     if size <= 0:
         return None
     return round(size / 1024 / 1024, 1)
@@ -114,25 +134,76 @@ def normalize_author(raw) -> Optional[str]:
     return str(raw).strip() or None
 
 
-def build_entry(item: ia.item.Item) -> Optional[dict]:
-    md = item.metadata
-    year = parse_year(md)
-    title = md.get("title")
-    if not year or not title:
+def build_entry(doc: dict) -> Optional[dict]:
+    """Convert a scrape-API doc to our CatalogEntry shape.
+
+    Returns None only when the doc lacks an identifier or a parseable title.
+    Year/decade default to None for items archive.org doesn't fully describe;
+    we'd rather render an undated book than drop it entirely.
+    """
+    identifier = doc.get("identifier")
+    title = doc.get("title")
+    if isinstance(title, list):
+        title = title[0] if title else None
+    if not identifier or not title:
         return None
     title = str(title).strip()
+    if not title:
+        return None
+    year = parse_year(doc)
+    decade = decade_of(year) if year is not None else None
     return {
-        "id": item.identifier,
+        "id": identifier,
         "year": year,
-        "decade": decade_of(year),
+        "decade": decade,
         "title": title,
-        "author": normalize_author(md.get("creator")),
-        "language": normalize_language(md.get("language")),
-        "pages": parse_pages(md),
-        "sizeMb": first_pdf_size_mb(item),
-        "archiveUrl": f"https://archive.org/details/{item.identifier}",
-        "localPath": find_local_path(item.identifier, year, title),
+        "author": normalize_author(doc.get("creator")),
+        "language": normalize_language(doc.get("language")),
+        "pages": parse_pages(doc),
+        "sizeMb": parse_size_mb(doc.get("item_size")),
+        "archiveUrl": f"https://archive.org/details/{identifier}",
+        "localPath": find_local_path(identifier, year, title) if year else None,
     }
+
+
+def fetch_scrape(query: str, count: int = 500) -> dict:
+    """One round-trip to archive.org's scrape API."""
+    params = {
+        "q": query,
+        "fields": ",".join(SCRAPE_FIELDS),
+        "count": count,
+    }
+    r = requests.get(SCRAPE_URL, params=params, timeout=60)
+    r.raise_for_status()
+    return r.json()
+
+
+def search_with_fallback() -> list[dict]:
+    """Try each query form in order; return docs from the first one with hits."""
+    last_response: Optional[dict] = None
+    for q in QUERY_FORMS:
+        logger.info("Trying query: q=%s", q)
+        try:
+            data = fetch_scrape(q)
+        except Exception as exc:
+            logger.warning("  → request failed: %s", exc)
+            continue
+        items = data.get("items") or []
+        total = data.get("total")
+        logger.info("  → items=%d, total=%s", len(items), total)
+        last_response = data
+        if items:
+            logger.info("✓ using this query form")
+            return items
+    # All forms returned 0. Surface the last response shape so the workflow
+    # log shows whether archive.org is responding at all (vs. blocked / 5xx).
+    if last_response is not None:
+        logger.error("All query forms returned 0 items. Last response keys: %s",
+                     list(last_response.keys()))
+    raise RuntimeError(
+        f"No query form returned hits for collection {COLLECTION_ID}. "
+        "The Solr-indexed collection field may have changed shape."
+    )
 
 
 def main(argv: Optional[list[str]] = None) -> int:
@@ -143,27 +214,20 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-    query = f"collection:({COLLECTION_ID})"
-    logger.info("Querying Internet Archive: %s", query)
+    docs = search_with_fallback()
+    if args.limit is not None:
+        docs = docs[: args.limit]
 
     entries: list[dict] = []
-    search = ia.search_items(query)
-    for i, hit in enumerate(search):
-        if args.limit is not None and len(entries) >= args.limit:
-            break
-        identifier = hit.get("identifier")
-        if not identifier:
-            continue
-        try:
-            item = ia.get_item(identifier)
-        except Exception as exc:
-            logger.warning("Skipping %s: %s", identifier, exc)
-            continue
-        entry = build_entry(item)
+    for doc in docs:
+        entry = build_entry(doc)
         if entry:
             entries.append(entry)
+        else:
+            logger.debug("Dropping malformed doc: %s", doc.get("identifier"))
 
-    entries.sort(key=lambda e: (e["year"], e["title"]))
+    # Sort by year (None → end), then title for stability.
+    entries.sort(key=lambda e: (e["year"] is None, e["year"] or 0, e["title"]))
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=2)
