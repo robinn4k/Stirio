@@ -18,7 +18,11 @@ const EuvsArchiveScreen = ({ onBack }) => {
     let cancelled = false;
     const finish = (parsed) => {
       if (cancelled) return;
-      parsed.sort((a, b) => a.year - b.year);
+      parsed.sort((a, b) => {
+        const ay = a.year ?? Infinity;
+        const by = b.year ?? Infinity;
+        return ay - by;
+      });
       setEntries(parsed);
       setStatus('ready');
     };

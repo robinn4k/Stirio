@@ -4030,5 +4030,5 @@
   "euvs.book.unknown_author": "Unbekannter Autor",
   "euvs.book.pages": "S.",
   "euvs.book.archive_link": "Auf archive.org ansehen",
-  "euvs.unpopulated": "Katalog noch nicht generiert. Führe tools/euvs-archive/build_catalog.py aus, um ihn vom Internet Archive zu befüllen."
+  "euvs.unpopulated": "Bücher konnten nicht vom Internet Archive geladen werden. Prüfe deine Verbindung und versuche es erneut."
 }
