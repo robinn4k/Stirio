@@ -37,6 +37,10 @@ js/reference.jsx    AcademyScreen, LevelDetail, FichasScreen (aka Recetas), Fich
 js/legacy-modes.jsx BlindScreen, ConstructorScreen (wrap stBlind / stConstructor ES modules)
 js/duel.jsx         DuelScreen (1v1 multiplayer + bot via stRivals / stBot)
 js/glossary.jsx     GlossaryScreen — 32 bartending terms (ES), searchable list
+js/euvs-archive.jsx EuvsArchiveScreen — catalog viewer for EUVS Vintage Cocktail Books
+js/euvs-archive-utils.js  Pure helpers for the EUVS catalog (ES module, also testable from Vitest)
+data/euvs-catalog.json    EUVS catalog metadata (network-first via runtime cache; not precached)
+tools/euvs-archive/ Python CLI scripts to download EUVS PDFs and (re)build the catalog (dev-only)
 js/map.jsx          MapScreen — iframe wrapper to map.html (interactive Leaflet spirit map)
 js/library.jsx      LibraryScreen — iframe wrapper to wiki.html?filter=3d
 js/arcade.jsx       ArcadeScreen — Garnish Catcher mini-game (60s rAF)
@@ -78,10 +82,12 @@ Data/module modules expose APIs through `window.X` to avoid ES-module scoping:
 - `window.stLang`, `window.stAuth`, `window.stAcademy`, `window.stLearn`, `window.stRivals`,
   `window.stBot`, `window.stBlind`, `window.stConstructor`, `window.stAchievements`,
   `window.stLeaderboard`, `window.stDaily`, `window.stActivity` — from async-imported ES modules
+- `window.stEuvsUtils` — from `euvs-archive-utils.js` (ES module: `parseCatalog`,
+  `filterByDecade`, `filterByLanguage`, `decadeOf`, `uniqueDecades`, `uniqueLanguages`)
 - Screen components: `window.AcademyScreen`, `window.FichasScreen`, `window.FichaDetail`,
   `window.FreeQuizScreen`, `window.BlindScreen`, `window.ConstructorScreen`, `window.DuelScreen`,
   `window.GlossaryScreen`, `window.MapScreen`, `window.LibraryScreen`, `window.ArcadeScreen`,
-  `window.MemoryScreen`, `window.RhythmScreen` — from respective `.jsx` files
+  `window.MemoryScreen`, `window.RhythmScreen`, `window.EuvsArchiveScreen` — from respective `.jsx` files
 
 ### Error handling
 
@@ -189,6 +195,24 @@ Other sanctioned i18n "pockets" outside `i18n/*.json`:
 ⚠️ **Naming collisions**: classic Babel scripts share top-level scope, so a
 `const Foo = …` declared in two files throws `SyntaxError` at load time. Prefix
 internal helpers (`DuelModeCard`, not `ModeCard`) when unsure.
+
+### Regenerating the EUVS catalog
+
+`data/euvs-catalog.json` is the metadata catalog consumed by `EuvsArchiveScreen`.
+Initial seed is hand-curated; to (re)generate it from Internet Archive:
+
+```bash
+cd tools/euvs-archive
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python build_catalog.py            # rewrites <repo>/data/euvs-catalog.json
+```
+
+The catalog is committed to the repo (it's just public metadata, KB-sized).
+The actual PDFs are downloaded by `download_euvs.py` to a gitignored folder
+under `tools/euvs-archive/data/downloads/` and **never committed or cached
+by the SW** (they're up to tens of GB). The screen only links out to
+`archive.org/details/<id>` — it never embeds PDFs.
 
 ## Service Worker
 

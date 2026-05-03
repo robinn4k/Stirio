@@ -1,0 +1,13 @@
+[project]
+name = "stirio-euvs-archive"
+version = "0.1.0"
+description = "Download and catalog the EUVS Vintage Cocktail Books from Internet Archive."
+requires-python = ">=3.9"
+authors = [{ name = "Stirio" }]
+license = { text = "All Rights Reserved" }
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+py-modules = ["download_euvs", "build_catalog"]

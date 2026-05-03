@@ -38,6 +38,7 @@ const ROUTES = {
   memory:          { parent: 'home',         hidesNav: true },
   rhythm:          { parent: 'home',         hidesNav: true },
   comanda:         { parent: 'home',         hidesNav: true },
+  euvs:            { parent: 'home',         hidesNav: true },
   article:         { parent: 'wiki',         hidesNav: true },
 
   // Overlays — render on top of the base screen rather than replacing it.
@@ -770,6 +771,7 @@ const App = () => {
     map:      'map',
     library:  'library',
     article:  'article',
+    euvs:     'euvs',
   };
   const openMode = (m) => {
     if (m === 'mode-menu') { setActiveMode('any'); return; }
@@ -1260,6 +1262,10 @@ const App = () => {
 
       {subScreen === 'glossary' && !activeLesson && (
         <GlossaryScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'euvs' && !activeLesson && window.EuvsArchiveScreen && (
+        <window.EuvsArchiveScreen onBack={() => setSubScreen(null)} />
       )}
 
       {subScreen === 'map' && !activeLesson && (
