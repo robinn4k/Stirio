@@ -178,6 +178,47 @@ def fetch_scrape(query: str, count: int = 500) -> dict:
     return r.json()
 
 
+def discovery_probe() -> None:
+    """Run when every collection query form returns 0. Search by known EUVS
+    titles and log the items' actual `collection` field — that's the value
+    we should be querying for. Embedded into the failing step's stdout so
+    it's right next to the RuntimeError, no need to hunt for the diagnostic
+    step's output separately.
+    """
+    titles = [
+        "Bariana",
+        "Cafe Royal Cocktail Book",
+        "Savoy Cocktail Book",
+        "Harry Johnson's New",
+    ]
+    logger.error("=" * 60)
+    logger.error("DISCOVERY PROBES — looking up known EUVS titles to find")
+    logger.error("the actual indexed `collection` value:")
+    logger.error("=" * 60)
+    for title in titles:
+        params = {
+            "q": f'title:"{title}"',
+            "fields": "identifier,title,year,collection",
+            "count": 3,
+        }
+        try:
+            r = requests.get(SCRAPE_URL, params=params, timeout=60)
+            r.raise_for_status()
+            items = r.json().get("items") or []
+        except Exception as exc:
+            logger.error('  title:"%s" probe failed: %s', title, exc)
+            continue
+        logger.error('  title:"%s" → %d hits', title, len(items))
+        for item in items[:3]:
+            logger.error("    - identifier=%s", item.get("identifier"))
+            logger.error("      collection=%s", item.get("collection"))
+    logger.error("=" * 60)
+    logger.error("Look for a `collection` value above that contains 'euvs',")
+    logger.error("'vintage', or 'cocktail' — that's what build_catalog.py")
+    logger.error("should query for instead.")
+    logger.error("=" * 60)
+
+
 def search_with_fallback() -> list[dict]:
     """Try each query form in order; return docs from the first one with hits."""
     last_response: Optional[dict] = None
@@ -195,14 +236,16 @@ def search_with_fallback() -> list[dict]:
         if items:
             logger.info("✓ using this query form")
             return items
-    # All forms returned 0. Surface the last response shape so the workflow
-    # log shows whether archive.org is responding at all (vs. blocked / 5xx).
+    # All forms returned 0. Run discovery probes BEFORE raising so the actual
+    # indexed `collection` value appears in the build step's log next to the
+    # error — the user shouldn't have to navigate to a different step's output.
     if last_response is not None:
         logger.error("All query forms returned 0 items. Last response keys: %s",
                      list(last_response.keys()))
+    discovery_probe()
     raise RuntimeError(
         f"No query form returned hits for collection {COLLECTION_ID}. "
-        "The Solr-indexed collection field may have changed shape."
+        "See discovery probes above for the actual indexed `collection` value."
     )
 
 
