@@ -196,15 +196,29 @@ def discovery_probe() -> None:
     logger.error("the actual indexed `collection` value:")
     logger.error("=" * 60)
     for title in titles:
-        params = {
-            "q": f'title:"{title}"',
-            "fields": "identifier,title,year,collection",
-            "count": 3,
-        }
+        # advancedsearch.php (legacy API) instead of /services/search/v1/scrape
+        # because the scrape API returns 400 if `fields` includes `collection`
+        # (it's a multi-value field that scrape's whitelist forbids). The legacy
+        # endpoint has no such restriction. Same Solr backend, different
+        # parameter handling. requests accepts a list of tuples so we can
+        # repeat `fl[]` cleanly.
+        params = [
+            ("q", f'title:"{title}"'),
+            ("fl[]", "identifier"),
+            ("fl[]", "title"),
+            ("fl[]", "year"),
+            ("fl[]", "collection"),
+            ("rows", 3),
+            ("output", "json"),
+        ]
         try:
-            r = requests.get(SCRAPE_URL, params=params, timeout=60)
+            r = requests.get(
+                "https://archive.org/advancedsearch.php",
+                params=params,
+                timeout=60,
+            )
             r.raise_for_status()
-            items = r.json().get("items") or []
+            items = r.json().get("response", {}).get("docs") or []
         except Exception as exc:
             logger.error('  title:"%s" probe failed: %s', title, exc)
             continue
