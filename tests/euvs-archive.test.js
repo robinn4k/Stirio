@@ -195,3 +195,4 @@ describe('committed catalog matches data/euvs-books/', () => {
     expect(parsed.length).toBe(catalog.length);
   });
 });
+
