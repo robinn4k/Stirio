@@ -1,19 +1,38 @@
-# EUVS Archive — descarga y catálogo
+# EUVS Archive — herramientas dev
 
-Herramientas dev-only para descargar y catalogar la colección **EUVS Vintage
-Cocktail Books** alojada en Internet Archive
-(https://archive.org/details/vintage-cocktail-books-euvs).
+Herramientas dev-only para mantener la biblioteca **EUVS Vintage Cocktail
+Books** que la app sirve desde `data/euvs-books/`.
 
 Estos scripts **no forman parte del bundle de la app** ni del Service Worker.
-Se ejecutan manualmente en local; los PDFs descargados nunca se commitean al
-repositorio.
+Se ejecutan manualmente; los PDFs originales nunca se commitean al repo.
+
+## Estructura
+
+```
+tools/euvs-archive/
+├── README.md             # este archivo
+├── _SCHEMA.md            # schema de los ficheros data/euvs-books/<id>.json
+├── requirements.txt
+├── pyproject.toml
+├── download_euvs.py      # baja PDFs originales desde Internet Archive (opcional)
+├── build_catalog.py      # genera data/euvs-catalog.json desde data/euvs-books/
+└── data/                 # gitignored
+    ├── downloads/        # PDFs descargados (decenas de GB, no commitear)
+    └── logs/
+        └── download.log
+```
+
+Los **datos de los libros** (clasificados, traducidos al español, schema en
+`_SCHEMA.md`) viven en `data/euvs-books/<book_id>.json` y sí se commitean.
+Los PDFs originales **no**.
 
 ## Aviso legal
 
 Este módulo proporciona herramientas para descargar libros de la colección
-EUVS desde Internet Archive. **No redistribuye contenido** — los PDFs no se
-incluyen en el repositorio. El catálogo (`data/euvs-catalog.json`) contiene
-únicamente metadatos públicos.
+EUVS desde Internet Archive. **No redistribuye PDFs** — los PDFs no se
+incluyen en el repositorio. El catálogo (`data/euvs-catalog.json`) y los
+ficheros de libros (`data/euvs-books/*.json`) contienen únicamente texto
+extraído y metadatos.
 
 El estatus de derechos de autor varía por país: la mayoría de obras anteriores
 a 1929 están en dominio público en EE. UU., pero en la UE la regla general es
@@ -23,7 +42,7 @@ antes de cualquier uso comercial.
 ## Requisitos
 
 - Python ≥ 3.9
-- Conexión a Internet (los scripts hacen `archive.org`)
+- (Solo para `download_euvs.py`) Conexión a Internet
 
 ## Instalación
 
@@ -37,13 +56,44 @@ pip install -r requirements.txt
 
 ## Uso
 
-### 1. Descargar PDFs
+### Regenerar el catálogo
+
+`data/euvs-catalog.json` es un índice ligero derivado de los ficheros en
+`data/euvs-books/`. Se regenera con:
+
+```bash
+python build_catalog.py
+```
+
+Esto sobrescribe `data/euvs-catalog.json` con una entrada por cada libro,
+ordenada por año. Hazlo cada vez que añadas, borres o cambies un libro.
+
+| Flag | Default | Descripción |
+|---|---|---|
+| `--out PATH`        | `../../data/euvs-catalog.json` | ruta del catálogo de salida |
+| `--books-dir PATH`  | `../../data/euvs-books`        | carpeta con los libros |
+
+El test `tests/euvs-archive.test.js` verifica que el catálogo committeado
+coincida con los ficheros de libros (drift detector).
+
+### Añadir un libro nuevo
+
+1. Crea `data/euvs-books/<year>-<slug>.json` siguiendo el schema en
+   `_SCHEMA.md`. El `book_id` interno **debe coincidir** con el nombre
+   del fichero (sin `.json`).
+2. Ejecuta `python build_catalog.py` para regenerar el catálogo.
+3. Ejecuta `npm test -- euvs-archive` para verificar.
+4. Bump `STATIC_CACHE_VERSION` en `sw.js` + `version.json` + `index.html`
+   (mismo patch number en los tres) para que los clientes recojan el cambio.
+
+### (Opcional) Descargar PDFs originales
+
+Útil si necesitas el PDF de un libro para extraer texto manualmente o para
+auditar contra el original.
 
 ```bash
 python download_euvs.py --year-from 1860 --year-to 1929 --max-items 20
 ```
-
-Argumentos:
 
 | Flag | Default | Descripción |
 |---|---|---|
@@ -56,69 +106,19 @@ Argumentos:
 
 Salida:
 
-- PDFs en `data/downloads/{decade}/{year}_{slug}/<file>.pdf`
+- PDFs en `data/downloads/{decade}/{year}_{slug}/<file>.pdf` (gitignored)
 - Log en `data/logs/download.log`
 
 La descarga es **reanudable**: si vuelves a correr el script, omite los PDFs
 cuyo tamaño en disco coincide con el tamaño remoto.
 
-### 2. (Re)generar el catálogo (opcional)
-
-> **Importante**: el repo se distribuye con `data/euvs-catalog.json` **vacío**
-> (`[]`). La pantalla `EuvsArchiveScreen` ya autopobla en runtime
-> consultando directamente la Search API pública de Internet Archive
-> cuando el JSON local está vacío, así que **no es necesario** correr
-> este script para que la app funcione.
->
-> Úsalo solo cuando quieras:
-> - **Congelar un snapshot** del catálogo committeado (útil si IA cae o
->   si no quieres dependencia runtime de archive.org).
-> - **Rellenar `localPath`** para entradas cuyos PDFs sí están descargados
->   localmente vía `download_euvs.py`.
->
-> Si hay entradas en el JSON committeado, la pantalla las usa y omite el
-> autofetch.
-
-```bash
-python build_catalog.py
-```
-
-Esto sobrescribe `<repo>/data/euvs-catalog.json` con el catálogo completo
-ordenado por año. Ese fichero **sí se commitea** (es metadata pública,
-ligera, y la app web lo lee directamente).
-
-Argumentos:
-
-| Flag | Default | Descripción |
-|---|---|---|
-| `--out PATH` | `../../data/euvs-catalog.json` | ruta del JSON de salida |
-| `--limit N`  | none                            | corta tras N items (útil para pruebas) |
-
-Para cada item, el script consulta los metadatos públicos de Internet
-Archive (`internetarchive.search_items`) y rellena `localPath` solo si el
-PDF correspondiente ya existe en `data/downloads/`.
-
-## Estructura del módulo
-
-```
-tools/euvs-archive/
-├── README.md             # este archivo
-├── requirements.txt
-├── pyproject.toml
-├── download_euvs.py
-├── build_catalog.py
-└── data/                 # gitignored
-    ├── downloads/        # PDFs descargados (decenas de GB, no commitear)
-    └── logs/
-        └── download.log
-```
-
 ## Integración con la app
 
-La pantalla `EuvsArchiveScreen` (en `js/euvs-archive.jsx`) hace `fetch` a
-`data/euvs-catalog.json` al abrirse. Como ese JSON está en el origen del
-sitio, el Service Worker lo sirve offline tras la primera visita (estrategia
-runtime cache, no precache — ver comentarios en `sw.js`).
+`js/euvs-archive.jsx` hace `fetch('data/euvs-catalog.json')` al abrirse y
+muestra una grid de libros. Tap en un libro abre `BookDetailScreen`, que
+hace `fetch(entry.bookFile)` para cargar el contenido completo (sections
+con `content_es` / `content_original` y un toggle ES/Original).
 
-La pantalla **nunca embebe los PDFs**: solo muestra metadatos y un enlace
-saliente a `archive.org/details/<id>`.
+El Service Worker precachea solo el JS (`euvs-archive.jsx`,
+`euvs-archive-utils.js`); el catálogo y los libros se cachean al vuelo
+(estrategia runtime cache, no precache — ver `sw.js` comentarios).

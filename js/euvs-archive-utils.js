@@ -11,39 +11,41 @@ export function decadeOf(year) {
   return `${start}s`;
 }
 
-function isPositiveNumberOrNull(v) {
-  return v === null || (typeof v === 'number' && Number.isFinite(v) && v >= 0);
+function nonEmptyString(v) {
+  return typeof v === 'string' && v.length > 0 ? v : null;
+}
+
+function nonNegativeInt(v) {
+  return typeof v === 'number' && Number.isFinite(v) && v >= 0 && Number.isInteger(v) ? v : null;
 }
 
 export function parseEntry(raw) {
   if (!raw || typeof raw !== 'object') return null;
   if (typeof raw.id !== 'string' || !raw.id) return null;
   if (typeof raw.title !== 'string' || !raw.title) return null;
-  if (typeof raw.year !== 'number' || !Number.isFinite(raw.year)) return null;
 
-  const author    = typeof raw.author === 'string' && raw.author ? raw.author : null;
-  const language  = typeof raw.language === 'string' && raw.language ? raw.language : null;
-  const pages     = isPositiveNumberOrNull(raw.pages)  ? raw.pages  : null;
-  const sizeMb    = isPositiveNumberOrNull(raw.sizeMb) ? raw.sizeMb : null;
-  const archiveUrl = typeof raw.archiveUrl === 'string' && raw.archiveUrl
-    ? raw.archiveUrl
-    : `https://archive.org/details/${encodeURIComponent(raw.id)}`;
-  const localPath = typeof raw.localPath === 'string' && raw.localPath ? raw.localPath : null;
-  const decade    = typeof raw.decade === 'string' && /^\d{3,4}s$/.test(raw.decade)
-    ? raw.decade
-    : decadeOf(raw.year);
+  const year =
+    typeof raw.year === 'number' && Number.isFinite(raw.year) ? raw.year : null;
+  const decade =
+    typeof raw.decade === 'string' && /^\d{3,4}s$/.test(raw.decade)
+      ? raw.decade
+      : decadeOf(year);
 
   return {
     id: raw.id,
-    year: raw.year,
+    year,
     decade,
     title: raw.title,
-    author,
-    language,
-    pages,
-    sizeMb,
-    archiveUrl,
-    localPath,
+    author: nonEmptyString(raw.author),
+    language: nonEmptyString(raw.language),
+    languageName: nonEmptyString(raw.languageName),
+    publisher: nonEmptyString(raw.publisher),
+    city: nonEmptyString(raw.city),
+    edition: nonEmptyString(raw.edition),
+    notes: nonEmptyString(raw.notes),
+    sectionCount: nonNegativeInt(raw.sectionCount) ?? 0,
+    recipeCount: nonNegativeInt(raw.recipeCount) ?? 0,
+    bookFile: nonEmptyString(raw.bookFile),
   };
 }
 
@@ -66,63 +68,6 @@ export function filterByLanguage(entries, lang) {
   if (!lang || lang === 'all') return entries.slice();
   const target = lang.toLowerCase();
   return entries.filter(e => (e.language || '').toLowerCase() === target);
-}
-
-function firstString(v) {
-  if (Array.isArray(v)) v = v.length > 0 ? v[0] : null;
-  if (typeof v !== 'string') return null;
-  const s = v.trim();
-  return s ? s : null;
-}
-
-function parseYearFromString(raw) {
-  if (raw == null) return null;
-  const m = String(raw).match(/(\d{4})/);
-  if (!m) return null;
-  const n = parseInt(m[1], 10);
-  return Number.isFinite(n) ? n : null;
-}
-
-// Convert one document from the Internet Archive Search API
-// (https://archive.org/advancedsearch.php) into a CatalogEntry.
-// Returns null if the doc is missing identifier, title, or a parseable year.
-export function archiveDocToEntry(doc) {
-  if (!doc || typeof doc !== 'object') return null;
-  const id = firstString(doc.identifier);
-  const title = firstString(doc.title);
-  if (!id || !title) return null;
-
-  const year = parseYearFromString(doc.year) ?? parseYearFromString(doc.date);
-  if (year == null) return null;
-
-  const author = firstString(doc.creator);
-  const langRaw = firstString(doc.language);
-  const language = langRaw ? langRaw.toLowerCase().slice(0, 3) : null;
-
-  let pages = null;
-  const ic = doc.imagecount;
-  if (typeof ic === 'number' && Number.isFinite(ic) && ic >= 0) pages = ic;
-  else if (typeof ic === 'string' && /^\d+$/.test(ic)) pages = parseInt(ic, 10);
-
-  let sizeMb = null;
-  const sz = doc.item_size;
-  let bytes = null;
-  if (typeof sz === 'number' && Number.isFinite(sz) && sz >= 0) bytes = sz;
-  else if (typeof sz === 'string' && /^\d+$/.test(sz)) bytes = parseInt(sz, 10);
-  if (bytes != null) sizeMb = Math.round((bytes / 1024 / 1024) * 10) / 10;
-
-  return {
-    id,
-    year,
-    decade: decadeOf(year),
-    title,
-    author,
-    language,
-    pages,
-    sizeMb,
-    archiveUrl: `https://archive.org/details/${encodeURIComponent(id)}`,
-    localPath: null,
-  };
 }
 
 export function uniqueDecades(entries) {
