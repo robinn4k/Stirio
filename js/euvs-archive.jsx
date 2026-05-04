@@ -265,6 +265,13 @@ const BookDetailScreen = ({ entry, onBack }) => {
   }, [entry]);
 
   const sections = (book && Array.isArray(book.sections)) ? book.sections : [];
+  const allRecipes = (book && Array.isArray(book.recipes)) ? book.recipes : [];
+  const sectionTitles = new Set(sections.map(s => s.title));
+  const recipesBySection = allRecipes.reduce((acc, r) => {
+    (acc[r.section_title] = acc[r.section_title] || []).push(r);
+    return acc;
+  }, {});
+  const orphanRecipes = allRecipes.filter(r => !sectionTitles.has(r.section_title));
 
   return (
     <div style={{ minHeight: '100dvh', padding: '24px 20px 120px', maxWidth: 720, margin: '0 auto' }}>
@@ -345,20 +352,33 @@ const BookDetailScreen = ({ entry, onBack }) => {
               key={s.order ?? i}
               section={s}
               showOriginal={showOriginal}
-              recipeCount={(book.recipes || []).filter(r => r.section_title === s.title).length}
+              recipes={recipesBySection[s.title] || []}
               tr={tr}
             />
           ))}
+          {orphanRecipes.length > 0 && (
+            <SectionCard
+              key="__orphans__"
+              section={{
+                type: 'recipes_section',
+                title: tr('euvs.recipe.other_section', 'Otras recetas'),
+                title_es: tr('euvs.recipe.other_section', 'Otras recetas'),
+              }}
+              showOriginal={showOriginal}
+              recipes={orphanRecipes}
+              tr={tr}
+            />
+          )}
         </div>
       )}
     </div>
   );
 };
 
-const SectionCard = ({ section, showOriginal, recipeCount, tr }) => {
+const SectionCard = ({ section, showOriginal, recipes, tr }) => {
   const title = showOriginal ? (section.title || section.title_es) : (section.title_es || section.title);
   const content = showOriginal ? section.content_original : section.content_es;
-  const isRecipesSection = section.type === 'recipes_section' && !content;
+  const list = Array.isArray(recipes) ? recipes : [];
 
   return (
     <article className="card" style={{ padding: 14 }}>
@@ -367,16 +387,90 @@ const SectionCard = ({ section, showOriginal, recipeCount, tr }) => {
       </div>
       <h3 style={{ fontFamily: 'var(--f-serif)', fontSize: 16, margin: '0 0 8px' }}>{title}</h3>
       {content && (
-        <p style={{ margin: 0, color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>
+        <p style={{ margin: '0 0 8px', color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>
           {content}
         </p>
       )}
-      {isRecipesSection && (
-        <p style={{ margin: 0, color: 'var(--ink-3)', fontSize: 12, fontStyle: 'italic' }}>
-          {tr('euvs.detail.recipes_placeholder', 'Sección de recetas — {n} recetas').replace('{n}', recipeCount)}
-        </p>
+      {list.length > 0 && (
+        <div style={{ display: 'grid', gap: 0, marginTop: content ? 12 : 0 }}>
+          {list.map((r, i) => (
+            <RecipeBlock key={r.id || i} recipe={r} showOriginal={showOriginal} isFirst={i === 0} tr={tr} />
+          ))}
+        </div>
       )}
     </article>
+  );
+};
+
+// Spanish labels for the verbose units. Short universal units (ml, oz, dash)
+// stay as-is in both languages.
+const UNITS_ES = {
+  'wine-glass': 'copa de vino',
+  tablespoon: 'cucharada',
+  teaspoon: 'cucharadita',
+  piece: 'unidad',
+  slice: 'rodaja',
+  gallon: 'galón',
+  quart: 'cuarto',
+};
+
+const formatIngredient = (ing, showOriginal) => {
+  const item = showOriginal ? (ing.item_original || ing.item_es) : (ing.item_es || ing.item_original);
+  const unitRaw = ing.unit;
+  const unitLabel = !unitRaw ? '' : (showOriginal ? unitRaw : (UNITS_ES[unitRaw] || unitRaw));
+  const amount = ing.amount == null ? '' : String(ing.amount);
+  const head = [amount, unitLabel].filter(Boolean).join(' ');
+  const main = head ? `${head} ${item}` : item;
+  return ing.notes ? `${main} (${ing.notes})` : main;
+};
+
+const RecipeBlock = ({ recipe, showOriginal, isFirst, tr }) => {
+  const name = showOriginal ? (recipe.name_original || recipe.name_es) : (recipe.name_es || recipe.name_original);
+  const method = showOriginal ? recipe.method_original : recipe.method_es;
+  const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+  const meta = [];
+  if (recipe.yield)     meta.push(`${tr('euvs.recipe.yield', 'Rinde')}: ${recipe.yield}`);
+  if (recipe.glassware) meta.push(`${tr('euvs.recipe.glass', 'Vaso')}: ${recipe.glassware}`);
+  if (recipe.garnish)   meta.push(`${tr('euvs.recipe.garnish', 'Decoración')}: ${recipe.garnish}`);
+
+  return (
+    <div style={{ paddingTop: isFirst ? 0 : 12, marginTop: isFirst ? 0 : 12, borderTop: isFirst ? 'none' : '1px solid var(--line)' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+        <h4 style={{ fontFamily: 'var(--f-serif)', fontSize: 15, margin: 0, flex: 1, minWidth: 0 }}>{name}</h4>
+        {recipe.category && (
+          <span className="mono caps" style={{ fontSize: 10, color: 'var(--cyan)', letterSpacing: '0.06em' }}>
+            {recipe.category}
+          </span>
+        )}
+      </div>
+      {meta.length > 0 && (
+        <div className="mono" style={{ fontSize: 11, color: 'var(--ink-3)', marginBottom: 8 }}>
+          {meta.join(' · ')}
+        </div>
+      )}
+      {ingredients.length > 0 && (
+        <>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 4, letterSpacing: '0.08em' }}>
+            {tr('euvs.recipe.ingredients', 'Ingredientes')}
+          </div>
+          <ul style={{ margin: '0 0 8px', padding: '0 0 0 18px', color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.5 }}>
+            {ingredients.map((ing, j) => (
+              <li key={j}>{formatIngredient(ing, showOriginal)}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {method && (
+        <>
+          <div className="mono caps" style={{ fontSize: 10, color: 'var(--ink-3)', marginBottom: 4, letterSpacing: '0.08em' }}>
+            {tr('euvs.recipe.method', 'Preparación')}
+          </div>
+          <p style={{ margin: 0, color: 'var(--ink-2)', fontSize: 13, lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>
+            {method}
+          </p>
+        </>
+      )}
+    </div>
   );
 };
 
