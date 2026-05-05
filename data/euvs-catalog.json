@@ -112,6 +112,22 @@
     "bookFile": "data/euvs-books/1917-seventy-recipes-for-cocktails-cups-and-punches-by-ggd-and-eefp.json"
   },
   {
+    "id": "1919-julians-recipes-by-julian-anderson",
+    "year": 1919,
+    "decade": "1910s",
+    "title": "Julian's Recipes",
+    "author": "Julian Anderson",
+    "language": "en",
+    "languageName": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "Coleccion de cocteles, ponches, copas, fizzes, juleps, cobblers y bebidas calientes recopilada por el barman estadounidense Julian Anderson en 1919, justo en visperas de la Ley Seca. Incluye clasicos (Manhattan, Martini, Bronx, Old Fashioned, Mint Julep, Sazerac, Whiskey Sour, Tom and Jerry), preparaciones de absenta, y formulas para ponches y copas para fiestas (Champagne Punch, Claret Cup for a Party). El OCR introduce algunas erratas tipograficas habituales de la epoca (e.g. 'IVLABTINI' por 'MARTINI', 'Mint Jullp' por 'Mint Julep'). Saltadas (no son recetas reales): Jigger Italian Vermouth; (Linea fragmentada (1 jigger de vermut italiano)); Jigger of Eye Whiskey. (Linea fragmentada (1 jigger de whisky de centeno)); Vi Old Tom Gin; (Linea fragmentada (1/2 ginebra Old Tom)); How to Mix Absinthe (Instrucciones generales sobre como mezclar absenta, no es receta); Bash of Anisette; (Linea fragmentada (1 dash de anisete))",
+    "sectionCount": 10,
+    "recipeCount": 51,
+    "bookFile": "data/euvs-books/1919-julians-recipes-by-julian-anderson.json"
+  },
+  {
     "id": "1920-cocktails-metropolitan-club-washington-dc",
     "year": 1920,
     "decade": "1920s",

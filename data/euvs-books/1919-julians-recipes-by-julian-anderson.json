@@ -1,0 +1,2683 @@
+{
+  "book_id": "1919-julians-recipes-by-julian-anderson",
+  "metadata": {
+    "title": "Julian's Recipes",
+    "author": "Julian Anderson",
+    "year": 1919,
+    "language": "en",
+    "language_name": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "source_file": "1919 Julian's Recipes by Julian Anderson.txt",
+    "notes": "Coleccion de cocteles, ponches, copas, fizzes, juleps, cobblers y bebidas calientes recopilada por el barman estadounidense Julian Anderson en 1919, justo en visperas de la Ley Seca. Incluye clasicos (Manhattan, Martini, Bronx, Old Fashioned, Mint Julep, Sazerac, Whiskey Sour, Tom and Jerry), preparaciones de absenta, y formulas para ponches y copas para fiestas (Champagne Punch, Claret Cup for a Party). El OCR introduce algunas erratas tipograficas habituales de la epoca (e.g. 'IVLABTINI' por 'MARTINI', 'Mint Jullp' por 'Mint Julep'). Saltadas (no son recetas reales): Jigger Italian Vermouth; (Linea fragmentada (1 jigger de vermut italiano)); Jigger of Eye Whiskey. (Linea fragmentada (1 jigger de whisky de centeno)); Vi Old Tom Gin; (Linea fragmentada (1/2 ginebra Old Tom)); How to Mix Absinthe (Instrucciones generales sobre como mezclar absenta, no es receta); Bash of Anisette; (Linea fragmentada (1 dash de anisete))"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": null,
+      "title_es": null,
+      "content_original": "I\n                ^uUan'g\n                ^                                  jRecipeS                                   , ■('\n                                                                                        ' ' ■ ■¥,\n                                                                                        • 'v^i\n                                                                                         , '< V'\n\n                                                                                      V'f\n                                                                                      j**\"' j'*'i\n          ^                                   ..V            .\n      •■» •'•'- ..*             *         .             -»   -       ^ '\n\n                                                    '            V\\\n                                                                                      1\n                                                                               'i!.\n                       ' •. ,       •</       \"1\n                                    i' ' '\n                          •V^;!\n                                                                 r; ..\n\n                                                         ' Y/'a-\n                      tf ompUfflintf (I                          I         ^\n                      ^uUan ^nfieri^on\n                      <n Btititmbtnncr\n                      'n( <(>lbtn 9:intf«                        !>\nBf ,»I !'■' '         #H«. !«*»\n\nI   :\n\n\n\n\n        n.\n         ■■\n               T''\n              J, ■\n\n\n\n\np- .':■\n        i            ». .N»« r'    ■ 'M- .; va..\n\n\n\n\n              ., ■ ■'' ' '^'' ^^                   y' ^ '\n\nm\n\n    '•i'P..A:',\n         >'i/jV,",
+      "content_es": null
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Tom Collins",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 3,
+      "type": "recipes_section",
+      "title": "Santinas Pousse Cafe",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 4,
+      "type": "recipes_section",
+      "title": "Pousse Cafe",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 5,
+      "type": "recipes_section",
+      "title": "How to Serve Oyster Cocktails",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 6,
+      "type": "recipes_section",
+      "title": "Old Fashion Cocktail",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 7,
+      "type": "recipes_section",
+      "title": "John Collins",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 8,
+      "type": "recipes_section",
+      "title": "Bowl of Egg Nogg",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 9,
+      "type": "recipes_section",
+      "title": "Champagne Velvet",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 10,
+      "type": "recipes_section",
+      "title": "Champagne Punch for a Party of Fifty",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-001",
+      "order": 1,
+      "section_title": null,
+      "category": "sour",
+      "name_original": "Whiskey Sour",
+      "name_es": "Whiskey Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Bourbon whiskey",
+          "item_es": "Whisky Bourbon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        }
+      ],
+      "method_original": "Shake well and strain it into a tall, thin glass, drop a cherry in it and serve.",
+      "method_es": "Agitar bien y colar en un vaso alto y delgado; agregar una cereza y servir.",
+      "glassware": "Vaso alto y delgado",
+      "garnish": "Cereza",
+      "page_reference": null,
+      "raw_text": "Whiskey Sour\n(Use Shaker Glass)\n      Glass of shaved ice;\nVj Jigger lemon juice;\n 1 Tablespoonful of sugar;\n 1 Jigger Bourbon whiskey;\n  Shake well and strain it into- a tall, thin glass, rdoir\na cherry in it and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-002",
+      "order": 2,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "Whiskey Cocktail",
+      "name_es": "Coctel de Whisky",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Syrup",
+          "item_es": "Jarabe",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Orange bitters; or 1 dash of Angostura bitters",
+          "item_es": "Amargo de naranja; o 1 golpe de amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Bourbon whiskey",
+          "item_es": "Whisky Bourbon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        }
+      ],
+      "method_original": "Stir with a spoon, strain it into a cocktail glass, twist a piece of lemon peel on top and serve.",
+      "method_es": "Revolver con una cuchara, colar en una copa de coctel, retorcer un trozo de cascara de limon por encima y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cascara de limon",
+      "page_reference": null,
+      "raw_text": "Whiskey Cocktail\n(Use a Large Bar Glass)\nVj    Glass shaved ice;\n 2 Teaspoons full of syrup;\n 2 Dashes orange bitters; or 1 .dash of Angostura\nbitters;\n 1    Jigger Bourbon whiskey.                       \\v\n  Stir with a spoon, strain it into a cocktail glass,\ntwist a piece of lemon peel on top and serve.\n\n        •         Vermouth Cocktail\n                 (Use a Large Bar Glass)\n     ■ Glass of shaved ice;\n       Dashes of syrup;\n       Dashes of orange bitters;",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-003",
+      "order": 3,
+      "section_title": null,
+      "category": "other",
+      "name_original": "Tom and Jerry",
+      "name_es": "Tom and Jerry (Mezcla Base)",
+      "yield": "1 ponchera",
+      "ingredients": [
+        {
+          "item_original": "Eggs (whites and yolks separated)",
+          "item_es": "Huevos (claras y yemas separadas)",
+          "amount": null,
+          "unit": null,
+          "notes": "cantidad segun ponchera"
+        }
+      ],
+      "method_original": "Take two bowls; break your eggs, put the whites in one bowl and the yolks in the other; take an egg-beater and beat the whites of the eggs to a stiff froth; add (texto truncado en el original).",
+      "method_es": "Tomar dos tazones; romper los huevos, colocar las claras en uno y las yemas en el otro; con un batidor de huevos, batir las claras a punto de nieve firme; anadir... (texto truncado en el original; preparacion de la base de Tom and Jerry).",
+      "glassware": "Ponchera",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Tom and Jerry\n(Use a Punch Bowl)\n  Take two bowls; break your eggs, put the whites in\none bowl and the yolks in the other; take an egg-beater\nand beat the whites of the eggs to a stiff froth; add",
+      "notes": "Receta truncada en el OCR; describe la base preparatoria para servir Tom and Jerry caliente."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-004",
+      "order": 4,
+      "section_title": null,
+      "category": "other",
+      "name_original": "How to Deal Out Tom and Jerry",
+      "name_es": "Como servir el Tom and Jerry",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Above mixture (Tom and Jerry base)",
+          "item_es": "Mezcla anterior (base de Tom and Jerry)",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Jamaica rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el mug"
+        }
+      ],
+      "method_original": "Fill the mug up with boiling water and stir up with a spoon, then pour the mixture from one mug to the other three or four times until thoroughly mixed, grate a little nutmeg on top and serve.",
+      "method_es": "Llenar el mug con agua hirviendo y revolver con una cuchara; luego trasvasar la mezcla de un mug al otro tres o cuatro veces hasta que este bien mezclado; rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Mug",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "How to Deal Out Tom and Jerry\n(Use a Mug)\n     2 Tablespoonfuls of the above mixture;\n     1 Jigger of brandy;\n     1 Pony of Jamaica rum;\n    Pill the mug up with boiling water and stir up with\n  a spoon, then pour the mixture from one mug to the\n  other three or four times until thoroughly mixed, grate\n  a little nutmeg on top and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-005",
+      "order": 5,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "Texas Lillie Cocktail",
+      "name_es": "Coctel Texas Lillie",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "1/3",
+          "unit": null,
+          "notes": "1/3 del vaso"
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curazao",
+          "amount": "1/3",
+          "unit": null,
+          "notes": "1/3 del vaso"
+        },
+        {
+          "item_original": "Cream",
+          "item_es": "Crema",
+          "amount": "1/3",
+          "unit": null,
+          "notes": "1/3 del vaso"
+        }
+      ],
+      "method_original": "Shake and strain it into a cocktail glass.",
+      "method_es": "Agitar y colar en una copa de coctel.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Texas Lillie Cocktail\n(Use a Large Bar Glass)\n  1-3             Gordon Gin;\n  1-3             Curacao;                         ^\n'\"*1-3            Cream.\n         Shake and strain it into a cocktail glass.'",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-006",
+      "order": 6,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "other",
+      "name_original": "Soda Cocktail",
+      "name_es": "Coctel de Soda",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Cubos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Pieces of twisted lemon peel",
+          "item_es": "Trozos de cascara de limon retorcida",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bottle of lemon soda",
+          "item_es": "Botella de soda de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Put a tablespoonful of powdered sugar in and drink it while foaming.",
+      "method_es": "Anadir una cucharada de azucar en polvo y beber mientras hace espuma.",
+      "glassware": "Vaso alto de limonada",
+      "garnish": "Cascara de limon retorcida",
+      "page_reference": null,
+      "raw_text": "Soda Cocktail\n(Use a Tall Iiemonade Glass)\n   2 Lumps of ice;\n   3 Dashes of Angostura Bitters;\n   2 Pieces of twisted lemon peel;\n   1          Bottle of lemon soda.\n  Put a tablespoonful of powdered sugar in and drink it\nwhile foaming.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-007",
+      "order": 7,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "cocktail",
+      "name_original": "Sazerac Cocktail",
+      "name_es": "Coctel Sazerac",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Lump of Peychaud Bitters (lump of sugar saturated with Peychaud Bitters)",
+          "item_es": "Terron de azucar empapado en amargo de Peychaud",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "OCR original: 'Lump of Peychand Bitters'"
+        },
+        {
+          "item_original": "Drops of Angostura Bitters",
+          "item_es": "Gotas de amargo de Angostura",
+          "amount": null,
+          "unit": "dash",
+          "notes": "varias gotas"
+        }
+      ],
+      "method_original": "(Use a Strong Mixing Glass) Jigger water; Lump of Peychaud Bitters; Drops of Angostura Bitters; (texto truncado en el original).",
+      "method_es": "Usar un vaso mezclador resistente. Combinar agua, un terron de azucar saturado con amargo de Peychaud y unas gotas de amargo de Angostura. (Receta truncada en el OCR; tradicionalmente se completa con whisky de centeno y un enjuague de absenta, colando en una copa fria con cascara de limon.)",
+      "glassware": "Copa antigua (old-fashioned) enjuagada con absenta",
+      "garnish": "Cascara de limon",
+      "page_reference": null,
+      "raw_text": "Sazerac Cocktail\n(Use a Strong Mixing Glass)\n             Jigger water;                                                                                                                     ^\n             Lump of Peychand Bitters;\n             Drops of Angostura Bitters;",
+      "notes": "Receta truncada en el OCR original; faltan el whisky/cognac base y el enjuague de absenta tipicos del Sazerac."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-008",
+      "order": 8,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "other",
+      "name_original": "Shandy Gaff",
+      "name_es": "Shandy Gaff",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Bass ale",
+          "item_es": "Cerveza Bass ale",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "media medida del vaso"
+        },
+        {
+          "item_original": "Belfast ginger ale",
+          "item_es": "Ginger ale de Belfast",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "la otra mitad del vaso"
+        }
+      ],
+      "method_original": "Fill the glass half full of Bass ale, and the other half with Belfast ginger ale. Stir with a spoon and serve.",
+      "method_es": "Llenar el vaso hasta la mitad con cerveza Bass ale y la otra mitad con ginger ale de Belfast. Revolver con una cuchara y servir.",
+      "glassware": "Vaso grande o mug",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Shandy Gaff\n(Use a Large Glass or Mug)\n      Fill the glass half full of Bass ale, and the other y-<\nwith Belfast ginger ale. Stir with a spoon and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-009",
+      "order": 9,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "flip",
+      "name_original": "Sherry Flip",
+      "name_es": "Sherry Flip",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fresh egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Sherry wine",
+          "item_es": "Vino de Jerez",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "Cantidad estandar de un flip; complementar con hielo picado al gusto"
+        }
+      ],
+      "method_original": "Use a large bar glass. Combine fresh egg, sugar and sherry wine with shaved ice. Shake well, strain into a glass and serve with a little nutmeg grated on top.",
+      "method_es": "Usar un vaso grande de bar. Combinar el huevo fresco, el azucar y el vino de Jerez con hielo picado. Agitar bien, colar en una copa y servir con un poco de nuez moscada rallada por encima.",
+      "glassware": "Copa de flip o copa pequena de vino",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "Sherry Flip\n(Use a Large Bar Glass)\n   1 Fresh egg;\n   1 Tablespoonful of sugar;",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-010",
+      "order": 10,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "cobbler",
+      "name_original": "Sherry Cobler",
+      "name_es": "Cobbler de Jerez",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Mineral water",
+          "item_es": "Agua mineral",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "Para disolver el azucar"
+        },
+        {
+          "item_original": "Sherry wine",
+          "item_es": "Vino de Jerez",
+          "amount": null,
+          "unit": "wine-glass",
+          "notes": "Llenar el vaso despues del hielo"
+        },
+        {
+          "item_original": "Fine shaved ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Llenar el vaso"
+        }
+      ],
+      "method_original": "Use a large bar glass. Dissolve the sugar in the mineral water with a spoon. Fill the glass up with fine shaved ice; then fill the glass up with sherry wine; stir well with a spoon and ornament with grapes, oranges, pineapple and berries. Serve with a straw.",
+      "method_es": "Usar un vaso grande de bar. Disolver el azucar en el agua mineral con una cuchara. Llenar el vaso con hielo finamente picado y completar con vino de Jerez; revolver bien con la cuchara y adornar con uvas, naranjas, pina y bayas. Servir con una pajita.",
+      "glassware": "Vaso grande de bar",
+      "garnish": "Uvas, naranjas, pina y bayas de temporada",
+      "page_reference": null,
+      "raw_text": "Sherry Cobler\n(Use a Large Bar Glass)\n      1         Tablespoonful of sugar;\n      1         Wine glass of mineral water;\n                Dissolve with a spoon.\n      Fill the glass up with fine shaved ice; then fill the\nglass up with Sherry wine; stir well with a spoon, and\nornament with grapes, oranges, pineapple and berries.\nServe with a straw.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-011",
+      "order": 11,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "julep",
+      "name_original": "Southern Mint Julip",
+      "name_es": "Mint Julep del Sur",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sprigs of fresh mint",
+          "item_es": "Ramitas de menta fresca",
+          "amount": 4,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar syrup",
+          "item_es": "Jarabe de azucar",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 cordial glass"
+        },
+        {
+          "item_original": "Bourbon whiskey",
+          "item_es": "Whisky Bourbon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Jamaica rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "1/2 jigger"
+        }
+      ],
+      "method_original": "Use a tall glass. Stir the mint, sugar syrup, Bourbon whiskey, Jamaica rum and brandy with a spoon. Then fill another glass with fine ice and strain the mixture into it. Stick a few sprigs of mint in the center and serve.",
+      "method_es": "Usar un vaso alto. Revolver con cuchara la menta, el jarabe, el whisky Bourbon, el ron de Jamaica y el brandy. Llenar otro vaso con hielo fino y colar la mezcla dentro. Clavar unas ramitas de menta en el centro y servir.",
+      "glassware": "Vaso alto",
+      "garnish": "Ramitas de menta fresca",
+      "page_reference": null,
+      "raw_text": "Southern Mint Julip\n(Use TaU Glass)\n      4 Sprigs of fresh mint;\n      1          Cordial glass of sugar syrup\n   1 Jigger of Bourbon whiskey;\n y, Teaspoonful of Jamaica rum;\n_ % Jigger brandy.\n  Stir with a spoon, then fill another glass with fine\nice; and strain the mixture into it, a few sprigs of\n mint stuck in the center and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-012",
+      "order": 12,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "cobbler",
+      "name_original": "Rhine Wine Cobler",
+      "name_es": "Cobbler de Vino del Rin",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Mineral water",
+          "item_es": "Agua mineral",
+          "amount": 2,
+          "unit": "wine-glass",
+          "notes": "Para disolver el azucar"
+        },
+        {
+          "item_original": "Rhine wine",
+          "item_es": "Vino del Rin",
+          "amount": 2,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Llenar el vaso"
+        }
+      ],
+      "method_original": "Use a large bar glass. Dissolve the sugar well in the mineral water with a spoon. Add the Rhine wine. Fill the glass with shaved ice. Stir up well with a spoon and ornament with seasonal fruit. Serve with a straw.",
+      "method_es": "Usar un vaso grande de bar. Disolver bien el azucar en el agua mineral con una cuchara. Anadir el vino del Rin. Llenar el vaso con hielo picado, revolver bien con la cuchara y adornar con frutas de temporada. Servir con una pajita.",
+      "glassware": "Vaso grande de bar",
+      "garnish": "Frutas de temporada (naranja, pina, bayas)",
+      "page_reference": null,
+      "raw_text": "Rhine Wine Cobler\n(Use a Large Bar Glass)\n       2 Tablespoons of sugar;\n       2 Wine glasses of mineral water;\n                 Dissolve well with a spoon;\n       2 Wine glasses of Ehine wine.\n       Fill the glass with shaved ice. Stir up well with a",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-013",
+      "order": 13,
+      "section_title": "Santinas Pousse Cafe",
+      "category": "cup",
+      "name_original": "Royal Cup",
+      "name_es": "Royal Cup",
+      "yield": "Bowl para fiesta",
+      "ingredients": [
+        {
+          "item_original": "Fine sugar dissolved in a little water",
+          "item_es": "Azucar fina disuelta en un poco de agua",
+          "amount": 3,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of one orange",
+          "item_es": "Jugo de una naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of half a lemon",
+          "item_es": "Jugo de medio limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curacao",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Slices of orange, lemon and pineapple",
+          "item_es": "Rodajas de naranja, limon y pina",
+          "amount": null,
+          "unit": "slice",
+          "notes": "Unas pocas"
+        },
+        {
+          "item_original": "Bottle of Claret",
+          "item_es": "Botella de vino tinto Claret",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Good-sized lumps of clear ice",
+          "item_es": "Trozos grandes de hielo transparente",
+          "amount": 4,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bottle of plain Soda",
+          "item_es": "Botella de agua de soda",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bottle of ice cold Champagne",
+          "item_es": "Botella de Champagne bien frio",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a punch bowl. Dissolve the sugar in a little water; add the juice of one orange and half a lemon. Add the brandy, Curacao, Maraschino and slices of orange, lemon and pineapple. Pour on this one bottle of Claret, then add 4 good-sized lumps of clear ice. Mix well; when cold add one bottle of plain soda and one bottle of ice-cold Champagne. Mix and serve.",
+      "method_es": "Usar un bowl de ponche. Disolver el azucar en un poco de agua y anadir el jugo de una naranja y de medio limon. Incorporar el brandy, el Curacao, el Maraschino y las rodajas de naranja, limon y pina. Verter una botella de vino tinto Claret y agregar 4 trozos grandes de hielo transparente. Mezclar bien; cuando este frio anadir una botella de soda y una botella de Champagne bien frio. Mezclar y servir.",
+      "glassware": "Bowl de ponche; servir en copas de ponche o vino",
+      "garnish": "Rodajas de naranja, limon y pina",
+      "page_reference": null,
+      "raw_text": "Royal Cup\n(Use a Punch. Bowl)\n       3          Tablespoonsful of fine sugar dissolved in a little\n                                water;\n                  Add the juice of one orange, the juice of a half\n                                of a lemon;\n       1 Jigger of brandy;\n       1         Pony of Curacao;\n       1         Pony of Maraschino;\n        A few slices of oranges, lemon and pineapple; pour\non this one bottle of Claret, then add 4 good-sized\nlumps of clear ice, mix well, when cold add one bottle\nof plain Soda and one bottle of ice cold Champagne,\nmix and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-014",
+      "order": 14,
+      "section_title": "Pousse Cafe",
+      "category": "cocktail",
+      "name_original": "Pick Me Up",
+      "name_es": "Pick Me Up",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Orange (the juice only)",
+          "item_es": "Naranja (solo el jugo)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger; espirituoso reanimante tipico"
+        },
+        {
+          "item_original": "Dashes of Angostura bitters",
+          "item_es": "Golpes de amargo Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large glass. Combine shaved ice, the juice of one orange, brandy and a couple of dashes of Angostura bitters. Shake well, strain into a cocktail glass and serve.",
+      "method_es": "Usar un vaso grande. Combinar el hielo picado, el jugo de una naranja, el brandy y un par de golpes de amargo Angostura. Agitar bien, colar en una copa de coctel y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pick Me Up\n(Use a Large Glass)\n i/i           Glass of shaved ice;\n   1 Orange (the juice only);",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-015",
+      "order": 15,
+      "section_title": "Pousse Cafe",
+      "category": "cocktail",
+      "name_original": "Perfect Cocktail",
+      "name_es": "Coctel Perfecto",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (rojo dulce)",
+          "amount": null,
+          "unit": "piece",
+          "notes": "1/6 del total"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut frances (seco)",
+          "amount": null,
+          "unit": "piece",
+          "notes": "1/6 del total"
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": null,
+          "unit": "piece",
+          "notes": "2/3 del total"
+        },
+        {
+          "item_original": "Piece of orange peel",
+          "item_es": "Trozo de cascara de naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large glass. Combine shaved ice, Italian Vermouth, French Vermouth, Gordon Gin and a piece of orange peel. Shake up well and strain into a cocktail glass. Serve.",
+      "method_es": "Usar un vaso grande. Combinar el hielo picado, el vermut italiano, el vermut frances, la ginebra Gordon y un trozo de cascara de naranja. Agitar bien y colar en una copa de coctel. Servir.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cascara de naranja",
+      "page_reference": null,
+      "raw_text": "Perfect Cocktail\n(Use a Large Glass)\n 1-2            Glass shaved ice;\n                                                                                                                                                                                            in\n 1-6            Italian Vermouth;\n 1-6 French Vermouth;                                                                                                                                                                ^1^^\n 2-3             Gordon Gin;\n    1 Piece of orange peel.\n     Shake up well and strain it into a cocktail glass\n and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-016",
+      "order": 16,
+      "section_title": "Pousse Cafe",
+      "category": "cocktail",
+      "name_original": "Pink Garter Cocktail",
+      "name_es": "Coctel Pink Garter",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Dashes of lemon juice",
+          "item_es": "Golpes de jugo de limon",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": null,
+          "unit": "piece",
+          "notes": "1/3 del total"
+        },
+        {
+          "item_original": "Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": null,
+          "unit": "piece",
+          "notes": "2/3 del total"
+        }
+      ],
+      "method_original": "Use a large bar glass. Combine shaved ice, dashes of lemon juice, grenadine and Tom Gin. Shake well and strain into a cocktail glass.",
+      "method_es": "Usar un vaso grande de bar. Combinar el hielo picado, los golpes de jugo de limon, la granadina y la ginebra Old Tom. Agitar bien y colar en una copa de coctel.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pink Garter Cocktail\n(Use a Large Bar Glass)\n 1-2            Glass of shaved ice;\n   2            Dashes of lemon .iuice;\n 1-3            Grenadine;\n 2-3             Tom Gin.\n        Shake well and strain it into a cocktail glass.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-017",
+      "order": 17,
+      "section_title": "How to Serve Oyster Cocktails",
+      "category": "other",
+      "name_original": "Oyster Cocktail Sauce",
+      "name_es": "Salsa de Coctel de Ostras",
+      "yield": "Para varias porciones",
+      "ingredients": [
+        {
+          "item_original": "Tomato ketchup",
+          "item_es": "Ketchup de tomate",
+          "amount": 1,
+          "unit": "quart",
+          "notes": "1 pinta vertida en una taza de un cuarto"
+        },
+        {
+          "item_original": "Salt",
+          "item_es": "Sal",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": "Disuelta en el vinagre"
+        },
+        {
+          "item_original": "Vinegar",
+          "item_es": "Vinagre",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Lea and Perrin's Worcestershire sauce",
+          "item_es": "Salsa Worcestershire Lea and Perrin's",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "2 jiggers"
+        },
+        {
+          "item_original": "Drops of Tabasco",
+          "item_es": "Gotas de Tabasco",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use two quart cups. Pour 1 pint of tomato ketchup into one quart cup; in the other quart cup dissolve 1 tablespoonful of salt in 1 jigger of vinegar; add 2 jiggers of Lea and Perrin's Worcestershire sauce and 2 drops of Tabasco. Combine both cups and mix well. Serve with raw oysters.",
+      "method_es": "Usar dos tazas de un cuarto. Verter 1 pinta de ketchup de tomate en una taza; en la otra taza disolver 1 cucharada de sal en 1 jigger de vinagre y anadir 2 jiggers de salsa Worcestershire Lea and Perrin's y 2 gotas de Tabasco. Combinar ambas tazas y mezclar bien. Servir con ostras crudas.",
+      "glassware": "Copa de coctel de ostras o copa de servicio",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Oyster Cocktail Sauce\n(Use Two Quart Cups)\n   1 pint of tomato ketchup poured into one quart cup,\n and in the other quart cup 1 table spoonful of salt dis\n solved in one jigger of vinegar; add 2 jiggers of Lea\n and Perrin's Worcestershire sauce, 2 drops of tobasco",
+      "notes": "Condimento clasico para acompanar ostras crudas; no es una bebida."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-018",
+      "order": 18,
+      "section_title": "Old Fashion Cocktail",
+      "category": "other",
+      "name_original": "Orange Lemonade",
+      "name_es": "Limonada de Naranja",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 2 oranges",
+          "item_es": "Jugo de 2 naranjas",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": null,
+          "unit": null,
+          "notes": "Llenar el vaso"
+        }
+      ],
+      "method_original": "Use a large bar glass. Combine sugar, lemon juice, the juice of 2 oranges and shaved ice. Fill up with water, shake, dress the top with a slice of orange and fruit in season and serve with a straw.",
+      "method_es": "Usar un vaso grande de bar. Combinar el azucar, el jugo de limon, el jugo de 2 naranjas y el hielo picado. Completar con agua, agitar, decorar la parte superior con una rodaja de naranja y frutas de temporada y servir con una pajita.",
+      "glassware": "Vaso grande de bar (vaso de limonada)",
+      "garnish": "Rodaja de naranja y frutas de temporada",
+      "page_reference": null,
+      "raw_text": "Orange Lemonade\n(Use a Large Bar Glass)\n       2 Tablespoons of sugar;\n       2 Tablespoons of lemon juice;\n       The juice of 2 oranges;\n       ¥j glass of shaved ice,                          .\n       Pill up with water, shake, dress the top with a slice\n     of orange and fruit in season and serve with a straw.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-019",
+      "order": 19,
+      "section_title": "Old Fashion Cocktail",
+      "category": "cocktail",
+      "name_original": "Millionaire Cocktail",
+      "name_es": "Coctel Millonario",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Whiskey",
+          "item_es": "Whisky",
+          "amount": 2,
+          "unit": null,
+          "notes": "2 partes"
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 parte"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 parte"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 parte"
+        }
+      ],
+      "method_original": "Shake well and strain into a cocktail glass.",
+      "method_es": "Agitar bien y colar en una copa de coctel.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Millionaire Cocktail\n(Use a Large Bar Glass)\n            ¥>           Glass shaved ice;\n             2           Parts whiskey;\n             1           Part Benedictine;\n             1           Part Grenadine;\n             1           Part lemon juice;",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-020",
+      "order": 20,
+      "section_title": "Old Fashion Cocktail",
+      "category": "fizz",
+      "name_original": "Morning Glory Fizz",
+      "name_es": "Fizz Morning Glory",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fresh egg (the white only)",
+          "item_es": "Huevo fresco (solo la clara)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "1/4 de jigger"
+        },
+        {
+          "item_original": "Lime juice",
+          "item_es": "Jugo de lima",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "1/4 de jigger"
+        },
+        {
+          "item_original": "Absinthe",
+          "item_es": "Absenta",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": "Llenar el vaso a la mitad"
+        },
+        {
+          "item_original": "Scotch whiskey",
+          "item_es": "Whisky escoces",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Apollinaris water",
+          "item_es": "Agua mineral Apollinaris",
+          "amount": null,
+          "unit": null,
+          "notes": "Para completar, fria"
+        }
+      ],
+      "method_original": "Half fill the glass with shaved ice; add 1 jigger of Scotch whiskey. Shake up well with a shaker; strain into a good-sized bar glass; fill up the balance with cold Apollinaris water, and serve.",
+      "method_es": "Llenar el vaso hasta la mitad con hielo picado; agregar 1 jigger de whisky escoces. Agitar bien en una coctelera; colar en un vaso de bar de buen tamano; completar con agua Apollinaris fria y servir.",
+      "glassware": "Vaso de bar grande",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Morning Glory Fizz\n(Use a Large Bar Glass)\n    1 Fresh egg (the white only);\n    1 Tablespoon full of sugar;\n   1/4 Jigger lemon juice;\n   14 Jigger lime juice;\n      4          Dashes of absinthe;\n  % fill the glass with shaved ice; 1 jigger of Scotch\nwhiskey. Shake up well with a shaker; strain it into\na good-sized bar glass; fill up the balance with cold\nApollinaris water, and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-021",
+      "order": 21,
+      "section_title": "Old Fashion Cocktail",
+      "category": "cocktail",
+      "name_original": "IVLABTINI COCKTAIL",
+      "name_es": "Coctel Martini",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Orange bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Para exprimir sobre la copa"
+        }
+      ],
+      "method_original": "Stir with a spoon, strain into a cocktail glass; squeeze a piece of lemon peel over the top and serve.",
+      "method_es": "Mezclar con una cuchara, colar en una copa de coctel; exprimir una cascara de limon sobre la bebida y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cascara de limon",
+      "page_reference": null,
+      "raw_text": "IVLABTINI COCKTAIL\n(Use a Mixing Glass)\n      % A glass of shaved ice;\n          2 Dashes of orange bitters;\n       1 Jigger Old Tom Gin;\n      ^ Jigger Italian Vermouth.\n      Stir with a spoon, strain it into a cocktail\nsqueeze a piece of lemon peel over the top and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-022",
+      "order": 22,
+      "section_title": "Old Fashion Cocktail",
+      "category": "cocktail",
+      "name_original": "Manhattan Cocktail",
+      "name_es": "Coctel Manhattan",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Mixing glass of ice",
+          "item_es": "Vaso mezclador de hielo",
+          "amount": 0.25,
+          "unit": "wine-glass",
+          "notes": "Un cuarto del vaso mezclador"
+        },
+        {
+          "item_original": "Orange bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Bourbon whiskey",
+          "item_es": "Whisky Bourbon",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Syrup",
+          "item_es": "Jarabe",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco si se desea"
+        },
+        {
+          "item_original": "Cherry",
+          "item_es": "Cereza",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Para decorar"
+        }
+      ],
+      "method_original": "Stir, and strain into a cocktail glass; drop a cherry into it and serve.",
+      "method_es": "Mezclar y colar en una copa de coctel; agregar una cereza y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cereza",
+      "page_reference": null,
+      "raw_text": "Manhattan Cocktail\n(Use a Mixing Glass)\n       1,4 Of a mixing glass of ice;\n        2 Dashes of orange bitters;\n      1 Jigger Bourbon whiskey;\n      % Jigger Italian Vermouth.\n      A little syrup if desired.\n      Stir, and strain into a cocktail glass; drop a cherry\ninto it and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-023",
+      "order": 23,
+      "section_title": "Old Fashion Cocktail",
+      "category": "julep",
+      "name_original": "Mint Jullp",
+      "name_es": "Mint Julep",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Cubes of sugar",
+          "item_es": "Cubos de azucar",
+          "amount": 4,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger, para disolver el azucar"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Bourbon whiskey",
+          "item_es": "Whisky Bourbon",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Jamaica rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Sprigs of tender mint",
+          "item_es": "Ramitas de menta tierna",
+          "amount": 5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Fine shaved ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el segundo vaso"
+        },
+        {
+          "item_original": "Cherries, sliced pineapple and orange",
+          "item_es": "Cerezas, pina y naranja en rodajas",
+          "amount": null,
+          "unit": null,
+          "notes": "Para decorar"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para espolvorear sobre la menta"
+        }
+      ],
+      "method_original": "Dissolve 4 cubes of sugar in 1 jigger of water; add 1 jigger of brandy; 1 jigger Bourbon whiskey; 1 teaspoonful of Jamaica rum; 5 sprigs of tender mint; stir with a spoon; then fill another glass with fine shaved ice, and strain the mixture into it; stick a bunch of mint with stems downward in the center of the glass, ornament with cherries, sliced pineapple and orange, sprinkle powdered sugar over top of mint and serve.",
+      "method_es": "Disolver 4 cubos de azucar en 1 jigger de agua; agregar 1 jigger de brandy, 1 jigger de whisky Bourbon, 1 cucharadita de ron de Jamaica y 5 ramitas de menta tierna; mezclar con una cuchara. Llenar otro vaso con hielo finamente picado y colar la mezcla en el. Clavar un manojo de menta con los tallos hacia abajo en el centro del vaso, decorar con cerezas, pina y naranja en rodajas, espolvorear azucar en polvo sobre la menta y servir.",
+      "glassware": "Vaso alto",
+      "garnish": "Manojo de menta, cerezas, pina y naranja en rodajas",
+      "page_reference": null,
+      "raw_text": "Mint Jullp\n(Use a TaU Glass)\n  4 Cubes of sugar dissolved in 1 jigger of water; 1\njigger of brandy; 1 jigger Bourbon whiskey; 1 teaspoon-\nful of Jamaica rum; 5 sprigs of tender mint, stir with\na spoon; then fill another glass with fine shaved ice,\nand strain the mixture into it; stick a bunch of mint\nwith stems downward in the center of this glass, orna\nment with cherries, sliced pineapple and orange,\nsprinkle powdered sugar over top of mint and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-024",
+      "order": 24,
+      "section_title": "Old Fashion Cocktail",
+      "category": "cocktail",
+      "name_original": "Lone Tree Cocktail",
+      "name_es": "Coctel Lone Tree",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass fine ice",
+          "item_es": "Vaso de hielo fino",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": 2,
+          "unit": null,
+          "notes": "2/3 partes"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": 1,
+          "unit": null,
+          "notes": "1/3 parte"
+        }
+      ],
+      "method_original": "Shake, strain and serve.",
+      "method_es": "Agitar, colar y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lone Tree Cocktail\n(Use Large Mixing Glass)\n    1             Glass fine ice;\n  2-3             Old Tom Gin;\n  1-8            Italian Vermouth.\n \" Shake, strain and serve.",
+      "notes": "El Lone Tree clasico tambien suele incluir vermut frances (seco); aqui la receta original solo menciona vermut italiano."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-025",
+      "order": 25,
+      "section_title": "Old Fashion Cocktail",
+      "category": "cup",
+      "name_original": "Lincoln Club Cup",
+      "name_es": "Lincoln Club Cup",
+      "yield": "1 ponchera",
+      "ingredients": [
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Trozos de hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Unos cuantos"
+        },
+        {
+          "item_original": "Fine sugar",
+          "item_es": "Azucar fina",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Sauterne",
+          "item_es": "Sauternes",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Lemon, sliced",
+          "item_es": "Limon en rodajas",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Orange, sliced",
+          "item_es": "Naranja en rodajas",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Pineapple, sliced",
+          "item_es": "Pina en rodajas",
+          "amount": null,
+          "unit": null,
+          "notes": "Unas rodajas"
+        },
+        {
+          "item_original": "Piece of cucumber rind",
+          "item_es": "Cascara de pepino",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Ice-cold bottle of Champagne",
+          "item_es": "Botella de champan muy frio",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bottle of plain soda",
+          "item_es": "Botella de soda",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix in a glass pitcher and serve cold.",
+      "method_es": "Mezclar en una jarra de vidrio y servir frio.",
+      "glassware": "Jarra de vidrio",
+      "garnish": "Rodajas de limon, naranja y pina; cascara de pepino",
+      "page_reference": null,
+      "raw_text": "Lincoln Club Cup\n(Mix in a Glass Pitcher)\n       A few lumps of ice;\n       2 Tablespoons full fine sugar;\n       1 Jigger of Brandy;\n       1         Jigger of Sherry;\n       1         Jigger of Sauterne;\n       1         Lemon sliced;\n       1 Orange sliced;\n       A few slices of pineapple;\n       1         Piece of cucumber rind;\n       1 Ice cold bottle of Champagne;\n      I Bottle of plain soda;\n       Mix, and serve cold.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-026",
+      "order": 26,
+      "section_title": "Old Fashion Cocktail",
+      "category": "other",
+      "name_original": "Kentucky Lemonade",
+      "name_es": "Limonada de Kentucky",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine shaved ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        },
+        {
+          "item_original": "Bourbon whiskey",
+          "item_es": "Whisky Bourbon",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Slice of orange",
+          "item_es": "Rodaja de naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": "Clavada en el costado del vaso"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 3,
+          "unit": "tablespoon",
+          "notes": "2 o 3 cucharadas sobre el hielo"
+        }
+      ],
+      "method_original": "Use an old-fashioned cocktail glass filled with fine shaved ice, pour over the top of the ice 1 jigger of Bourbon whiskey; stick 1 slice of orange in the side of the glass; add a spoon. Then put 2 or 3 tablespoons of sugar on top and serve in the same glass.",
+      "method_es": "Llenar un vaso old-fashioned con hielo finamente picado, verter sobre el hielo 1 jigger de whisky Bourbon, clavar 1 rodaja de naranja en el costado del vaso y agregar una cuchara. Espolvorear 2 o 3 cucharadas de azucar por encima y servir en el mismo vaso.",
+      "glassware": "Vaso old-fashioned",
+      "garnish": "Rodaja de naranja",
+      "page_reference": null,
+      "raw_text": "Kentucky Lemonade\nUse an old-fashioned cocktail glass filled with fine\nshaved ice, pour over the top of the ice; 1 jigger of\nBourbon whiskey; 1 slice of orange stuck in the side of\nthe glass; 1 spoon. Then put 2 or 3 tablespoons of\nsugar on top and serve in the same glass.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-027",
+      "order": 27,
+      "section_title": "John Collins",
+      "category": "cocktail",
+      "name_original": "Jack Rose Cocktail",
+      "name_es": "Coctel Jack Rose",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Apple brandy",
+          "item_es": "Brandy de manzana",
+          "amount": 2,
+          "unit": null,
+          "notes": "2/3 de jigger"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": null,
+          "notes": "1/3 de jigger"
+        }
+      ],
+      "method_original": "Shake well, strain into a cocktail glass and serve.",
+      "method_es": "Agitar bien, colar en una copa de coctel y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Jack Rose Cocktail\n%      Glass of shaved ice;\n   2 Dashes lemon juice;\n2-3 Jigger apirle brandy;\n1-3 Jigger Grenadine.\n  Shake well, strain it into a cocktail glass and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-028",
+      "order": 28,
+      "section_title": "John Collins",
+      "category": "toddy",
+      "name_original": "Hot Toddy",
+      "name_es": "Hot Toddy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lump of sugar",
+          "item_es": "Terron de azucar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Disuelto en un poco de agua caliente"
+        },
+        {
+          "item_original": "Whiskey (or brandy or gin)",
+          "item_es": "Whisky (o brandy o ginebra)",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Piece of lemon peel",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Dissolve 1 lump of sugar in a little hot water; add 1/2 jigger whiskey and a piece of lemon peel; fill the glass up with boiling hot water, stir with a spoon, grate a little nutmeg on top and serve.",
+      "method_es": "Disolver 1 terron de azucar en un poco de agua caliente; agregar 1/2 jigger de whisky y una cascara de limon; llenar el vaso con agua hirviendo, mezclar con una cuchara, rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Vaso para bebidas calientes",
+      "garnish": "Cascara de limon y nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "Hot Toddy\nEither Whiskey, Brandy or Gin\n  l\" Lump of sugar dissolved in a little hot water;\n Vj    Jigger whiskey;\n  A piece of lemon peel, fill the glass up with boiling\nhot water, stir with a spoon, grate a little nutmeg on\ntop and serve.",
+      "notes": "Puede prepararse igualmente con whisky, brandy o ginebra."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-029",
+      "order": 29,
+      "section_title": "John Collins",
+      "category": "other",
+      "name_original": "Horses Neck",
+      "name_es": "Cuello de Caballo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lemon (rind pared whole, leaving the rind whole)",
+          "item_es": "Limon (cascara pelada entera en espiral)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Cascara entera de un limon"
+        },
+        {
+          "item_original": "Round lump of ice",
+          "item_es": "Trozo redondo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Imported ginger ale",
+          "item_es": "Ginger ale importado",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Pare the rind from a lemon, leaving the rind whole; put it in a tall lemonade glass, put a round lump of ice in the center, fill up with imported ginger ale and serve.",
+      "method_es": "Pelar la cascara de un limon dejandola entera en espiral; colocarla en un vaso alto de limonada, poner un trozo redondo de hielo en el centro, llenar con ginger ale importado y servir.",
+      "glassware": "Vaso alto de limonada",
+      "garnish": "Cascara entera de limon en espiral",
+      "page_reference": null,
+      "raw_text": "Horses Neck\nPare the rind from a lemon, leaving the rind whole;\nput it in a tall lemonade glass, put a round lump of ice\nin the center, fill up with imported ginger ale and\nserve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-030",
+      "order": 30,
+      "section_title": "John Collins",
+      "category": "other",
+      "name_original": "Hi Ball",
+      "name_es": "Highball",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Whiskey",
+          "item_es": "Whisky",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Mineral water",
+          "item_es": "Agua mineral",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Fill the glass up with mineral water and serve.",
+      "method_es": "Colocar el hielo y el whisky en el vaso, llenar con agua mineral y servir.",
+      "glassware": "Vaso mediano (highball)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hi Ball\n(Use Medium Size Glass)\n      1 Lump of iee;\n      1 Jigger of whiskey.\n      Fill the glass up with mineral water and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-031",
+      "order": 31,
+      "section_title": "John Collins",
+      "category": "toddy",
+      "name_original": "Hot Scotch",
+      "name_es": "Scotch Caliente",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lump of sugar",
+          "item_es": "Terron de azucar",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Scotch whiskey",
+          "item_es": "Whisky escoces",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Add the sugar and Scotch whiskey; twist a piece of lemon peel over the glass and drop it into the glass; fill up the glass with boiling water; grate a little nutmeg on top and serve.",
+      "method_es": "Colocar el medio terron de azucar y el whisky escoces; retorcer una cascara de limon sobre el vaso y dejarla caer dentro; llenar el vaso con agua hirviendo, rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Vaso para bebidas calientes",
+      "garnish": "Cascara de limon y nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "Hot Scotch\n(Use Hot Water Glass)\n  Yj Lump of sugar;\n   1 Jigger Scotch whiskey; twist a piece of lemon\npeel over the glass and cjrop it into the glass; fill up\nthe glass with boiling water; grate a little nutmeg on\ntop and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-032",
+      "order": 32,
+      "section_title": "John Collins",
+      "category": "other",
+      "name_original": "Hot Lemonade",
+      "name_es": "Limonada Caliente",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": null,
+          "unit": "piece",
+          "notes": "1/8 jigger"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Put a spoon into the glass to prevent the glass from cracking, then fill the glass up with boiling water; stir with the spoon and serve.",
+      "method_es": "Colocar el azucar y el jugo de limon en el vaso; introducir una cuchara dentro para evitar que el vaso se quiebre, llenar con agua hirviendo, mezclar con la cuchara y servir.",
+      "glassware": "Vaso de limonada",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Lemonade\n(Use a Lemonade Glass)\n    2 Tablespoons full of sugar;\n  ■ Vs jigger lemon juice; put a spoon into the glass to\nprevent the glass from cracking, then fill the glass up\nwith boiling water; stir with the spoon and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-033",
+      "order": 33,
+      "section_title": "John Collins",
+      "category": "cocktail",
+      "name_original": "Green Lizard",
+      "name_es": "Lagarto Verde",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Juice of one lime",
+          "item_es": "Jugo de una lima",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Club soda",
+          "item_es": "Soda",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 botella"
+        },
+        {
+          "item_original": "Pieces of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 3,
+          "unit": "piece",
+          "notes": "2 o 3 trozos"
+        },
+        {
+          "item_original": "Green Creme de Menthe",
+          "item_es": "Creme de Menthe verde",
+          "amount": null,
+          "unit": null,
+          "notes": "Cantidad suficiente para dar color"
+        }
+      ],
+      "method_original": "Combine lime juice, gin, club soda and ice in a large glass; add enough Green Creme de Menthe to color, and serve in a large glass.",
+      "method_es": "Combinar el jugo de lima, la ginebra, la soda y el hielo en un vaso grande; agregar Creme de Menthe verde en cantidad suficiente para dar color y servir en un vaso grande.",
+      "glassware": "Vaso grande",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Green Lizard\n(Use a Large Glass)\n       The juice of one lime;\n       1 Jigger of Gin;       >\n       1 Bottle of Club Soda; r.l\n  2 or 3 pieces of ice.  i-:\n  Enough Green Creme de Menthe to color, Serve\na large glass.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-034",
+      "order": 34,
+      "section_title": "John Collins",
+      "category": "other",
+      "name_original": "Gin Rickey",
+      "name_es": "Gin Rickey",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lime",
+          "item_es": "Lima",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "Exprimir el jugo y dejar caer la cascara"
+        },
+        {
+          "item_original": "Pieces of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "1 o 2 trozos"
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Cold seltzer water",
+          "item_es": "Agua de seltz fria",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Squeeze the juice of half a lime into a highball glass, drop the rind in also; add pieces of ice and Old Tom Gin; fill up the glass with cold seltzer water and serve with a spoon in the glass.",
+      "method_es": "Exprimir el jugo de media lima en un vaso highball y dejar caer tambien la cascara; agregar el hielo y la ginebra Old Tom; llenar con agua de seltz fria y servir con una cuchara dentro del vaso.",
+      "glassware": "Vaso highball",
+      "garnish": "Cascara de lima",
+      "page_reference": null,
+      "raw_text": "Gin Rickey\n(Use Hi BaU Glass)\n  Squeeze the juice of a % lime into a hi ball glass,\ndrop the rind in also; 1 or 2 pieces of ice; 1 jigger\nOld Tom Gin; fill up the glass with cold seltzer water\nand serve with a spoon in the glass.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-035",
+      "order": 35,
+      "section_title": "John Collins",
+      "category": "fizz",
+      "name_original": "Golden Fizz",
+      "name_es": "Golden Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Tom Gin",
+          "item_es": "Ginebra Tom",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Egg yolk",
+          "item_es": "Yema de huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Solo la yema"
+        },
+        {
+          "item_original": "Apollinaris water",
+          "item_es": "Agua Apollinaris (agua mineral con gas)",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Shake up well in a shaker; strain it into a good sized fizz glass; fill up the glass with Apollinaris water; mix well and serve.",
+      "method_es": "Agitar bien en una coctelera; colar en un vaso fizz de buen tamano; llenar con agua Apollinaris, mezclar bien y servir.",
+      "glassware": "Vaso fizz",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Golden Fizz\n(Use Large Mixing Glass)\n  % Glass shaved ice;\n  V2 Jigger lemon juice;\n  1 Tablespoonful of sugar;\n  1 Jigger Tom Gin;\n  1 Egg (the yolk only); shake up well in a shaker;\nstrain it into a good sized fizz glass; fill up the glass\nwith Apollinaris water; mix well and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-036",
+      "order": 36,
+      "section_title": "John Collins",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass of shaved ice",
+          "item_es": "Vaso de hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Apollinaris water",
+          "item_es": "Agua Apollinaris (agua mineral con gas)",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Shake, strain into a large-sized glass, fill up the glass with Apollinaris water, mix well and serve.",
+      "method_es": "Agitar, colar en un vaso grande, llenar con agua Apollinaris, mezclar bien y servir.",
+      "glassware": "Vaso grande (fizz)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Fizz\n(Use Large Mixing Glass)\n  ^ Glass shaved ice;\n  V2 Jigger lemon juice;\n  1 Jigger Old Tom Gin;\n  1 Tablespoon of sugar.\n  Shake, strain into a large-sized glass, fill up the\nglass with Apollinaris water, mix well and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-037",
+      "order": 37,
+      "section_title": "John Collins",
+      "category": "sour",
+      "name_original": "Egg Sour",
+      "name_es": "Egg Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curazao",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Egg",
+          "item_es": "Huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para agitar"
+        }
+      ],
+      "method_original": "Add ice and shake well, strain it into a tall, thin glass and serve.",
+      "method_es": "Agregar hielo y agitar bien, colar en un vaso alto y delgado y servir.",
+      "glassware": "Vaso alto y delgado",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Sour\n(Use Large Bar Glass)\n  3 Dashes of lemon juice;\n  1 Pony of Curacao;\n  1 Pony of brandy;\n  1 Teaspoonful of powdered sugar;\n  1 Egg; ice, and shake well, strain it into a tall, thin\nglass and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-038",
+      "order": 38,
+      "section_title": "Bowl of Egg Nogg",
+      "category": "cocktail",
+      "name_original": "Dai-qui-ri Cocktail",
+      "name_es": "Coctel Daiquiri",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of one lime and its rind",
+          "item_es": "Jugo de una lima y su cascara",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Si no hay limas, sustituir por 2 cucharadas de jugo de limon"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": null,
+          "unit": null,
+          "notes": "Endulzar al gusto"
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo en trozos",
+          "amount": null,
+          "unit": null,
+          "notes": "Una pequena cantidad"
+        },
+        {
+          "item_original": "Ron Bacardi",
+          "item_es": "Ron Bacardi",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 jigger"
+        }
+      ],
+      "method_original": "Combine water, juice of one lime and its rind (if no limes, 2 tablespoons of lemon juice), sugar to taste, a little cracked ice and Ron Bacardi; strain it into a cocktail glass and serve.",
+      "method_es": "Combinar el agua, el jugo de una lima con su cascara (si no hay limas, sustituir por 2 cucharadas de jugo de limon), endulzar al gusto, agregar un poco de hielo en trozos y el Ron Bacardi; colar en una copa de coctel y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dai-qui-ri Cocktail\n2 Tablespoons of water; the juice of one lime and\n  its rind, if no limes, 2 tablespoons of lemon juice;\n  sweeten to taste, a little cracked ice; 1 jigger of\n  Ron Bacardi; strain it into a cocktail glass and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-039",
+      "order": 39,
+      "section_title": "Bowl of Egg Nogg",
+      "category": "other",
+      "name_original": "Creme de Menthe",
+      "name_es": "Crema de Menta",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Finely shaved ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Llenar la copa"
+        },
+        {
+          "item_original": "Creme de Menthe",
+          "item_es": "Crema de menta",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar la copa"
+        }
+      ],
+      "method_original": "Have the cocktail glass packed up with finely shaved ice; fill up the glass with Creme de Menthe and serve; if you want a Creme de Menthe Frappe, put the above ingredients in a shaker, fill the shaker with ice, shake well and strain it into a fancy cocktail glass and serve.",
+      "method_es": "Llenar la copa de coctel con hielo finamente picado; rellenar la copa con crema de menta y servir; si se desea un Crema de Menta Frappe, colocar los ingredientes anteriores en una coctelera, llenarla con hielo, agitar bien y colar en una copa de coctel decorativa y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Creme de Menthe\n(Use a Cocktail Glass)\n    Have the cocktail glass packed up with finely shaved\n  ice; fill up the glass with Creme de Menthe and serve;\n  if you want a Creme de Menthe Frappe, put the\n   above ingredients in a shaker, fill the shaker with\n  ice, shake well and strain it into a fancy cocktail glass\n   and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-040",
+      "order": 40,
+      "section_title": "Bowl of Egg Nogg",
+      "category": "cocktail",
+      "name_original": "Chocolate Cocktail",
+      "name_es": "Coctel de Chocolate",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Yolk of an egg",
+          "item_es": "Yema de huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Chartreuse",
+          "item_es": "Chartreuse",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Port wine",
+          "item_es": "Vino de Oporto",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix in a Large Glass.",
+      "method_es": "Mezclar en un vaso grande.",
+      "glassware": "Vaso grande",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chocolate Cocktail\n(Mix in a Large Glass)\n          1         Yolk of an egg;\n          V2 Wine glass full of Chartreuse;\n          V2 Wine glass full of Port wine;",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-041",
+      "order": 41,
+      "section_title": "Bowl of Egg Nogg",
+      "category": "cup",
+      "name_original": "Claret Cup for a Party",
+      "name_es": "Copa de Clarete para una Fiesta",
+      "yield": "Para una fiesta",
+      "ingredients": [
+        {
+          "item_original": "Pieces of lump sugar",
+          "item_es": "Terrones de azucar",
+          "amount": 12,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bottle of Apollinaris water",
+          "item_es": "Botella de agua Apollinaris",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 botella"
+        },
+        {
+          "item_original": "Lemons, cut in slices",
+          "item_es": "Limones, cortados en rodajas",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Oranges cut in slices",
+          "item_es": "Naranjas cortadas en rodajas",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Pineapple cut in slices",
+          "item_es": "Piña cortada en rodajas",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Ponys of Maraschino",
+          "item_es": "Ponys de Maraschino",
+          "amount": 2,
+          "unit": null,
+          "notes": "2 ponys"
+        },
+        {
+          "item_original": "Bottles of fine Claret",
+          "item_es": "Botellas de buen clarete",
+          "amount": 4,
+          "unit": null,
+          "notes": "4 botellas"
+        },
+        {
+          "item_original": "Bottle of Champagne",
+          "item_es": "Botella de champagne",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 botella"
+        },
+        {
+          "item_original": "Berries in season",
+          "item_es": "Bayas de temporada",
+          "amount": null,
+          "unit": null,
+          "notes": "Para decorar"
+        }
+      ],
+      "method_original": "Mix in a Punch Bowl. Mix thoroughly with a ladle, place this into your vessel or tin dish filled with ice, then when the party is ready, call for it, add: 4 bottles of fine Claret; 1 bottle of Champagne; top with berries in season and serve in a fancy glass.",
+      "method_es": "Mezclar en una ponchera. Mezclar bien con un cucharon, colocar en un recipiente o vasija de hojalata llena de hielo, luego cuando la fiesta este lista, agregar: 4 botellas de buen clarete; 1 botella de champagne; coronar con bayas de temporada y servir en una copa decorativa.",
+      "glassware": "Copa decorativa",
+      "garnish": "Bayas de temporada",
+      "page_reference": null,
+      "raw_text": "Claret Cup for a Party\n(Mix in a Punch Bowl)\n     12 Pieces of lump sugar;\n     1 Bottle of Apollinaris water;\n     2 Lemons, cut in slices;\n     2 Oranges cut in slices;\n   Yo Pineapple cut in slices;\n  2 Ponys of Maraschino; mix thoroughly with a\nladle, place this into your vessel or tin dish filled with\nice, then when the party is ready, call for it, add:\n4 bottles of fine Claret; 1 bottle of Champagne; top\nwith berries in season and serve in a fancy glass.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-042",
+      "order": 42,
+      "section_title": "Bowl of Egg Nogg",
+      "category": "toddy",
+      "name_original": "Cold Toddy",
+      "name_es": "Toddy Frio",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lump or cube sugar, or granulated sugar",
+          "item_es": "Terron de azucar o azucar granulada",
+          "amount": 0.5,
+          "unit": "tablespoon",
+          "notes": "1/2 terron o 1/2 cucharada de azucar granulada"
+        },
+        {
+          "item_original": "Cold water",
+          "item_es": "Agua fria",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco, para disolver el azucar"
+        },
+        {
+          "item_original": "Whiskey (or Brandy or Gin)",
+          "item_es": "Whisky (o brandy o ginebra)",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 pony"
+        }
+      ],
+      "method_original": "Either Whiskey, Brandy or Gin. Mix in a Whiskey Glass. Lump or cube, or 1/2 tablespoon full of granulated sugar, dissolve in a little cold water; add 1 pony whiskey, stir with a spoon and serve.",
+      "method_es": "Whisky, brandy o ginebra. Mezclar en un vaso de whisky. Disolver el terron o 1/2 cucharada de azucar granulada en un poco de agua fria; agregar 1 pony de whisky, revolver con una cuchara y servir.",
+      "glassware": "Vaso de whisky",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cold Toddy\nEither Whiskey, Brandy or Gin.\n             (Mix in a Whiskey Glass)\n  % lump or cube, or Yz tablespoon full of granulated\nsugar, dissolve in a little cold water; add 1 pony\nwhiskey, stir with a spoon and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-043",
+      "order": 43,
+      "section_title": "Bowl of Egg Nogg",
+      "category": "cup",
+      "name_original": "Cider Cup",
+      "name_es": "Copa de Sidra",
+      "yield": "1 jarra",
+      "ingredients": [
+        {
+          "item_original": "Tablespoonsful fine sugar",
+          "item_es": "Cucharadas de azucar fina",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco, para disolver el azucar"
+        },
+        {
+          "item_original": "Juice of one lemon",
+          "item_es": "Jugo de un limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Pony white Curacao",
+          "item_es": "Pony de Curacao blanco",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Pony brandy",
+          "item_es": "Pony de brandy",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 pony"
+        },
+        {
+          "item_original": "Pint of cider",
+          "item_es": "Pinta de sidra",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 pinta"
+        }
+      ],
+      "method_original": "Use a Pitcher. Dissolve sugar in a little water; add the juice of one lemon, 1 pony white Curacao, 1/2 pony brandy, 1 pint of cider.",
+      "method_es": "Usar una jarra. Disolver el azucar en un poco de agua; agregar el jugo de un limon, 1 pony de Curacao blanco, 1/2 pony de brandy y 1 pinta de sidra.",
+      "glassware": "Jarra",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cider Cup\n(XJse a Pitcher)\n     2 Tablespoonsful fine sugar;\n     Dissolve in a little water;\n     Add the juice of one lemon;\n     1 Pony white Curacao;\n    72 Pony brandy;\n    1 Pint of cider;",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-044",
+      "order": 44,
+      "section_title": "Champagne Velvet",
+      "category": "cocktail",
+      "name_original": "Clover Leaf Cocktail",
+      "name_es": "Coctel Hoja de Trebol",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Dashes of lemon juice",
+          "item_es": "Golpes de jugo de limon",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Tablespoon raspberry syrup",
+          "item_es": "Cucharada de jarabe de frambuesa",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Egg (the white only)",
+          "item_es": "Huevo (solo la clara)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Solo la clara"
+        },
+        {
+          "item_original": "Tom Gin",
+          "item_es": "Tom Gin",
+          "amount": 0.75,
+          "unit": null,
+          "notes": "3/4 jigger"
+        },
+        {
+          "item_original": "Mint leaf",
+          "item_es": "Hoja de menta",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Para flotar encima"
+        }
+      ],
+      "method_original": "Use a Large Bar Glass. Shake up well and strain it into a cocktail glass, float a leaf of mint on top and serve.",
+      "method_es": "Usar un vaso grande de bar. Agitar bien y colar en una copa de coctel, flotar una hoja de menta encima y servir.",
+      "glassware": "Copa de coctel",
+      "garnish": "Hoja de menta",
+      "page_reference": null,
+      "raw_text": "Clover Leaf Cocktail\n(Use a Large Bar Glass)\n         3 Dashes of lemon juice;\n         1 Tablespoon raspberry syrup;\n         1 Egg (the white only);\n         % Jigger Tom Gin.\n         Shake up well and strain it into a cocktail glass, float\n   a leaf of mint on top and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-045",
+      "order": 45,
+      "section_title": "Champagne Velvet",
+      "category": "cup",
+      "name_original": "Claret Cup",
+      "name_es": "Copa de Clarete",
+      "yield": "1 jarra",
+      "ingredients": [
+        {
+          "item_original": "Bottle Claret",
+          "item_es": "Botella de clarete",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 botella"
+        },
+        {
+          "item_original": "Bottle Apollinaris",
+          "item_es": "Botella de Apollinaris",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 botella"
+        },
+        {
+          "item_original": "Pony of brandy",
+          "item_es": "Pony de brandy",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Pony of Curacao",
+          "item_es": "Pony de Curacao",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Small lemon sliced",
+          "item_es": "Limon pequeño en rodajas",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Pieces cucumber rind (sliced from end to end)",
+          "item_es": "Trozos de cascara de pepino (cortados de extremo a extremo)",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bunch of mint",
+          "item_es": "Manojo de menta",
+          "amount": null,
+          "unit": null,
+          "notes": "Para decorar, con tallos hacia abajo"
+        }
+      ],
+      "method_original": "Use Glass Pitcher. Trim with a bunch of mint, stems down, leaving the tops sticking above the top of the pitcher. Serve in claret glasses.",
+      "method_es": "Usar una jarra de vidrio. Decorar con un manojo de menta, con los tallos hacia abajo, dejando las puntas sobresaliendo por encima de la jarra. Servir en copas de clarete.",
+      "glassware": "Copa de clarete",
+      "garnish": "Manojo de menta",
+      "page_reference": null,
+      "raw_text": "Claret Cup\n(Use Glass Pitcher)\n         1         Bottle Claret;\n         1         Bottle Apollinaris;\n         1        Pony of brandy;\n         1        Pony of Curacao;\n         1         Small lemon sliced;\n         2\n         Pieces cucumber rind (sliced from end to end);\n      Lump of ice. Trim with a bunch of mint, stems down,\n    leaving the tops sticking above the top of the pitcher.\n    Serve in claret glasses.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-046",
+      "order": 46,
+      "section_title": "Champagne Punch for a Party of Fifty",
+      "category": "cocktail",
+      "name_original": "Bronx Cocktail",
+      "name_es": "Coctel Bronx",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Glass fine ice",
+          "item_es": "Vaso de hielo fino",
+          "amount": 0.25,
+          "unit": "wine-glass",
+          "notes": "1/4 vaso"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut frances",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "1/4 parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "1/4 parte"
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "1/4 parte"
+        }
+      ],
+      "method_original": "Use a Large Mixing Glass. Combine ingredients with ice.",
+      "method_es": "Usar un vaso mezclador grande. Combinar los ingredientes con hielo.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bronx Cocktail\n(Use a Large Mixing Glass)\n        14          Glass fine ice;\n        1/4         French Vermouth;\n        %           Italian Vermouth;\n       % Orange Jnice;",
+      "notes": "Receta incompleta en el original (falta la ginebra y el metodo final de colado)."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-047",
+      "order": 47,
+      "section_title": "Champagne Punch for a Party of Fifty",
+      "category": "other",
+      "name_original": "Arf and Arf",
+      "name_es": "Arf and Arf",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Porter",
+          "item_es": "Cerveza Porter",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Medio vaso"
+        },
+        {
+          "item_original": "Old Ale",
+          "item_es": "Cerveza Old Ale",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Medio vaso"
+        }
+      ],
+      "method_original": "Use a Large Bar Glass. Half a glass of Porter and the other half with Old Ale, and serve.",
+      "method_es": "Usar un vaso grande de bar. Medio vaso de Porter y la otra mitad con Old Ale, y servir.",
+      "glassware": "Vaso grande de bar",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Arf and Arf\n(Use a liarge Bar Glass)\n  Half a glass of Porter and the other % with Old Ale,\nand serve.",
+      "notes": "Mezcla inglesa clasica del siglo XIX (Porter + Old Ale)."
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-048",
+      "order": 48,
+      "section_title": "Champagne Punch for a Party of Fifty",
+      "category": "other",
+      "name_original": "Angel's Tit",
+      "name_es": "Tetilla de Ángel",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Crème de cacao",
+          "item_es": "Crema de cacao",
+          "amount": null,
+          "unit": null,
+          "notes": "2/3 del vasito"
+        },
+        {
+          "item_original": "Sweet cream",
+          "item_es": "Crema de leche dulce",
+          "amount": null,
+          "unit": null,
+          "notes": "1/3 del vasito, flotada por encima"
+        },
+        {
+          "item_original": "Maraschino cherry",
+          "item_es": "Cereza al marrasquino",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Coronando la crema"
+        }
+      ],
+      "method_original": "Fill two-thirds of a small glass with crème de cacao, float sweet cream on top and crown with a maraschino cherry.",
+      "method_es": "Llenar dos tercios de un vasito de licor con crema de cacao. Flotar suavemente la crema de leche dulce por encima usando el dorso de una cuchara, sin que se mezcle. Coronar con una cereza al marrasquino.",
+      "glassware": "Vaso de licor (pousse-café)",
+      "garnish": "Cereza al marrasquino",
+      "page_reference": null,
+      "raw_text": "Angel's Tit\nPut a Maraschino cherry in a sherry glass, cover\ncherry with Anisette, float Creme Yvette on the Ani\nsette, and Curacao on the Creme Yvette; float pure\ncream on top and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-049",
+      "order": 49,
+      "section_title": "Champagne Punch for a Party of Fifty",
+      "category": "other",
+      "name_original": "Apollinaris Lemonade",
+      "name_es": "Limonada Apollinaris",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Juice of one lemon",
+          "item_es": "Jugo de un limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Apollinaris water",
+          "item_es": "Agua mineral Apollinaris",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Squeeze the juice of one lemon over sugar and cracked ice, fill the glass with Apollinaris water and stir.",
+      "method_es": "Exprimir el jugo de un limón sobre el azúcar y el hielo picado en un vaso largo. Llenar con agua mineral Apollinaris y revolver bien antes de servir.",
+      "glassware": "Vaso largo",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Apollinaris Lemonade\n(Use Barge Mixing Glass)\n\n  %    Glass shaved ice;\n  % Jigger of lemon juice;\n.. 2 Tablespoonsful powdered sugar; fill up glass\n  with Apollinaris water; stir with a spoon, strain into\n  a fizz glass and sei've.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-050",
+      "order": 50,
+      "section_title": "Champagne Punch for a Party of Fifty",
+      "category": "other",
+      "name_original": "Absinthe Prappe",
+      "name_es": "Absenta Frappé",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Absinthe",
+          "item_es": "Absenta",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Cold water",
+          "item_es": "Agua fría",
+          "amount": 2,
+          "unit": "wine-glass",
+          "notes": "Goteada lentamente"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Fill a glass with shaved ice, pour in absinthe, drip cold water slowly over the top until the mixture turns milky and frosted, then serve with a straw.",
+      "method_es": "Llenar un vaso con hielo finamente picado. Verter la absenta y luego dejar gotear lentamente el agua fría por encima hasta que la mezcla adquiera tono lechoso y el vaso quede escarchado. Servir con pajita.",
+      "glassware": "Vaso bajo o de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe Prappe\n(Use a Large Mixing Glass)\n\n   2 or 3 dashes of Anisette;                    .\n   1 Wine glass of Absinthe;\n   Fill the glass with finely shaved ice; shake up long\n enough, until the outside of the shaker is thoroughly\n covered with ice; strain into a fancy bar glass; fill up\n glass with ice cold Apollinaris water and serve.",
+      "notes": null
+    },
+    {
+      "id": "1919-julians-recipes-by-julian-anderson-051",
+      "order": 51,
+      "section_title": "Champagne Punch for a Party of Fifty",
+      "category": "cocktail",
+      "name_original": "Absinthe Cocktail",
+      "name_es": "Cóctel de Absenta",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Absinthe",
+          "item_es": "Absenta",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Anisette",
+          "item_es": "Anisete",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Cold water",
+          "item_es": "Agua fría",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "Para el vaso mezclador"
+        }
+      ],
+      "method_original": "Fill a mixing glass with cracked ice, add absinthe, anisette, orange bitters and cold water. Shake well and strain into a cocktail glass.",
+      "method_es": "Llenar el vaso mezclador con hielo picado. Añadir la absenta, el anisete, el amargo de naranja y el agua fría. Agitar bien y colar en una copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe Cocktail\n(Use Large G-lass to Mix in)\n              Fill up with ice;\n                      or four dashes of gum syrup;\n                      Bash of bitters (Boker's genuine)",
+      "notes": null
+    }
+  ]
+}
