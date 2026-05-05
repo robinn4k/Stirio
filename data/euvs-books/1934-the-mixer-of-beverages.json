@@ -1,0 +1,2309 @@
+{
+  "book_id": "1934-the-mixer-of-beverages",
+  "metadata": {
+    "title": "The Mixer of Beverages",
+    "author": null,
+    "year": 1934,
+    "language": "en",
+    "language_name": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "source_file": "1934 The Mixer of Beverages.txt",
+    "notes": "Manual estadounidense de mezclas de bebidas publicado en 1934, justo despues del fin de la Ley Seca. Combina indicaciones de protocolo (servicio de vinos espumosos, refrigeracion, cuidado de la cerveza embotellada, maridaje cena-vino) con una seleccion de cocteles, fizzes, juleps, daisies, sours, slings, flips y ponches calientes y frios. Saltadas (no son recetas reales): Foreign and Dome1tic (Encabezado de seccion (Foreign and Domestic Beverages)); BEVERAGES (Banner de seccion 'BEVERAGES'); Soups--Sherry or Madeira. (Recomendacion de maridaje sopas-jerez/madeira, no es receta); Turtle or Terrapin-Sherry or Madeira. (Recomendacion de maridaje tortuga-jerez/madeira, no es receta); Cheese or Frnit-Port Wine. (Recomendacion de maridaje queso/fruta-oporto, no es receta); FOR COLD DRINKS (Encabezado 'FOR COLD DRINKS', no es receta); COOLING SPARKLING WINES (Texto explicativo sobre como enfriar vinos espumosos, no es receta); BOTTLED LIQUOR (Texto sobre el cuidado de licores embotellados, no es receta); SERVING OF SPARKLING WINES (Texto sobre el servicio de vinos espumosos, no es receta); M INERAL WATERS (Texto sobre aguas minerales, no es receta); SYRUPS (Texto sobre siropes, no es receta); POURING OF WINES (Texto sobre como verter vinos, no es receta); CARE OF BOTTLED BEER (Texto sobre el cuidado de la cerveza embotellada, no es receta); Y:j Iemon (Linea fragmentada (1/2 limon) — pertenece a un fizz); U French Vermouth (Linea fragmentada (1/2 vermut frances)); HIGHEST GRADE (Banner publicitario ('Highest Grade Wines, Liquors and...'), no es una receta)"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": null,
+      "title_es": null,
+      "content_original": "The MIXER    -OF-\n\n      BEVERAGES\nWINES                  LIQ U 0 RS\n\n     HOW and WHEN\n To Serve Beverages With Meals\n   Over 100 Reel pet of the Almost\n           Forgotten Art\n\n     \"ON YOUR WAY HOME\"\n        \"Jn the North Statiop\"\n\n   NORTH STATION\n    LIQUOR MART",
+      "content_es": null
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "PREPARING COLD PUNCHES",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 3,
+      "type": "recipes_section",
+      "title": "CARE OF CHAMPAGNE",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 4,
+      "type": "recipes_section",
+      "title": "SERVING ICE CHAMPAGNE",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 5,
+      "type": "recipes_section",
+      "title": "CHAMPAGNE IN OCCASIONAL USE",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 6,
+      "type": "recipes_section",
+      "title": "HOT EGG NOGG",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 7,
+      "type": "recipes_section",
+      "title": "SHERRY EGG NOGG",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 8,
+      "type": "recipes_section",
+      "title": "ALE PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 9,
+      "type": "recipes_section",
+      "title": "CIDER PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 10,
+      "type": "recipes_section",
+      "title": "ORANGE PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 11,
+      "type": "recipes_section",
+      "title": "SOYER'S GIN PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1934-the-mixer-of-beverages-001",
+      "order": 1,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "julep",
+      "name_original": "MINT JULEP",
+      "name_es": "Mint Julep",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White pulverized sugar",
+          "item_es": "Azucar blanca pulverizada",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 2.5,
+          "unit": "tablespoon",
+          "notes": "mezclar bien con cuchara"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh mint sprigs",
+          "item_es": "Ramitas de menta fresca",
+          "amount": "3-4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Fine shaved ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Berries",
+          "item_es": "Bayas",
+          "amount": null,
+          "unit": null,
+          "notes": "para decorar"
+        },
+        {
+          "item_original": "Sliced orange",
+          "item_es": "Rodajas de naranja",
+          "amount": null,
+          "unit": "slice",
+          "notes": "trozos pequenos para decorar"
+        },
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": null,
+          "unit": "dash",
+          "notes": "para rociar por encima"
+        }
+      ],
+      "method_original": "Take three or four sprigs of fresh mint, and press them well in the sugar and water, until the flavor of the mint is extracted; add the brandy and fill the glass with fine shaved ice, then draw out the sprigs of mint and insert them in the ice with the stems downward, so that the leaves will be above, in the shape of a bouquet; arrange berries, and small pieces of sliced orange on top in a tasty manner, dash with Jamaica Rum, and serve with a straw.",
+      "method_es": "Macerar tres o cuatro ramitas de menta fresca en el azucar y el agua hasta extraer su sabor. Anadir el brandy y rellenar el vaso con hielo finamente picado. Retirar las ramitas y volver a insertarlas en el hielo con los tallos hacia abajo y las hojas arriba, formando un ramillete. Decorar por encima con bayas y trocitos de naranja en rodajas, rociar con ron de Jamaica y servir con pajita.",
+      "glassware": "vaso alto",
+      "garnish": "Ramillete de menta, bayas y rodajas de naranja, rociado con ron de Jamaica",
+      "page_reference": null,
+      "raw_text": "MINT JULEP\n1 tab lespoonful of whi te pulve rized s ugar\n    2Yz tablespoonfuls of wate r, mix we ll wit h .a\n         spoon\n    lYz wine glasses full of Brandy\n   T ake three or four sprigs of fresh mint, a nd press\nt hem we ll in t he s uga r a nd wate r, unti l the flavor\nof t he mint is ext racted; add th e brandy and fill\nt he gla ss wit h fin e shaved ice, t hen draw out the\ns prigs of mint a nd in sert t hem in t he ice with the\ns tems dow nward , so that t he leaves will be a bove,\nin t he sha pe of a bouq uet ; a rran ge berries, a nd sma ll\npieces of s liced ora nge on top in a tas ty ma nn er,\nclas h wit h J a maica R um, a nd s en re wit h a straw.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-002",
+      "order": 2,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "julep",
+      "name_original": "THE REAL GEORGIA MINT JULEP",
+      "name_es": "El Autentico Mint Julep de Georgia",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White pulverized sugar",
+          "item_es": "Azucar blanca pulverizada",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "disuelta previamente en un poco de agua"
+        },
+        {
+          "item_original": "Cognac Brandy",
+          "item_es": "Brandy Cognac",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Peach Brandy",
+          "item_es": "Brandy de Durazno",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Tender mint shoots",
+          "item_es": "Brotes tiernos de menta",
+          "amount": 12,
+          "unit": "piece",
+          "notes": "aproximadamente"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        }
+      ],
+      "method_original": "Put the mint in the tumbler, add the sugar, having previously dissolved it in a little water, then the Brandy, and lastly, fill up the glass with shaved ice. Stir with a spoon but do not crush the mint. This is the genuine method of concocting a Southern Mint Julep, but Whiskey may be substituted for Brandy if preferred.",
+      "method_es": "Colocar la menta en el vaso (tumbler) y anadir el azucar previamente disuelta en un poco de agua. Anadir despues el brandy y, por ultimo, rellenar el vaso con hielo picado. Remover con una cuchara pero sin machacar la menta. Este es el metodo autentico para preparar un Mint Julep sureno; puede sustituirse el brandy por whiskey si se prefiere.",
+      "glassware": "tumbler",
+      "garnish": "Brotes tiernos de menta",
+      "page_reference": null,
+      "raw_text": "THE REAL GEORGIA MINT JULEP\n1 teaspoonful of white pulverized s uga r\n   %: win e glass of Cognac Bra ndy\n   %: wine glass of Peach Bra ndy\n   a bout 12 sp rigs of t he tende r shoots of min t\n   P ut t he mint in the tumbler, add t he s uga r,\nha vi ng previously dissolved it in a litt le wat er,\nt hen th e Bra ndy , a nd las tly, fill up t he gla ss with\ns haved ice. Stir wit h a spoon bu t do not crush\nt he min t. T his is t he genuin e met hod of concocting\na South ern M int Julep, bu t \\Vhiskey may be\nsubstit uted fo r Brandy if preferred.",
+      "notes": "Receta sourena tradicional; admite whiskey en sustitucion del brandy."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-003",
+      "order": 3,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "julep",
+      "name_original": "Whiskey Julep or Gin Julep",
+      "name_es": "Julep de Whiskey o de Gin",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White pulverized sugar",
+          "item_es": "Azucar blanca pulverizada",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 2.5,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh mint",
+          "item_es": "Menta fresca",
+          "amount": 4,
+          "unit": "piece",
+          "notes": "three or four sprigs"
+        },
+        {
+          "item_original": "Whiskey or Gin",
+          "item_es": "Whiskey o Gin",
+          "amount": 1.5,
+          "unit": "wine-glass",
+          "notes": "in place of brandy"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Made with the same ingredients as the Mint Julep, omitting the fancy fixings. Dissolve the sugar in the water, press in three or four sprigs of fresh mint until the flavor is extracted, add the whiskey or gin, fill the glass with fine shaved ice, and stir.",
+      "method_es": "Se prepara con los mismos ingredientes que el Mint Julep, omitiendo las decoraciones elaboradas. Disuelva el azucar en el agua, presione tres o cuatro ramitas de menta fresca hasta extraer el sabor, anada el whiskey o el gin, llene el vaso con hielo finamente picado y revuelva.",
+      "glassware": "julep cup",
+      "garnish": "mint sprigs",
+      "page_reference": null,
+      "raw_text": "WHISKEY JELUP OR GIN JELUP\nI s made wit h th e sa me ingredients a s t he M int\nJ ulep, omitti ng t he fa ncy fi xings.\n    PINEAPPLE JULEP (For a party of five)\n   juice of two ora nges\n   1 gi ll of Raspbe rry Syrup\n   1 gill of Maraschino\n   I gill of Old T om G in\n   1 q ua rt bottle of Sparkling Moselle\n   1 ri pe pi neapple, _Peeled, sliced a nd c_u t up\n   Pu t a ll the ma teria ls in a gla ss bowl; ice, a nd serve\nin fla t gla sses, orna mented wi th berries in season.\n                              5\n\n               ~     CRUSTA-DAISY                   ~",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-004",
+      "order": 4,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "crusta",
+      "name_original": "Brandy Crusta",
+      "name_es": "Brandy Crusta",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "3 or 4 dashes"
+        },
+        {
+          "item_original": "Boker's Bitters",
+          "item_es": "Amargo Boker's",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curacao",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Pulverized white sugar",
+          "item_es": "Azucar blanca pulverizada",
+          "amount": null,
+          "unit": null,
+          "notes": "for the rim"
+        },
+        {
+          "item_original": "Lemon",
+          "item_es": "Limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "pared in one continuous peel to line the glass"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Before mixing the ingredients, prepare a cocktail glass: rub a sliced lemon around the rim and dip in pulverized white sugar so the sugar adheres to the edge. Pare half a lemon as you would an apple (all in one piece) so the paring fits inside the wine glass. Put the ingredients into a small whiskey glass filled one-third with shaved ice, shake well and strain into the prepared cocktail glass.",
+      "method_es": "Antes de mezclar los ingredientes, prepare la copa de coctel: pase una rodaja de limon por el borde y luego sumerjalo en azucar blanca pulverizada para que se adhiera al filo. Pele media limon como si fuera una manzana (en una sola tira continua) de modo que la cascara quepa dentro de la copa. Coloque los ingredientes en un vaso pequeno de whiskey lleno hasta un tercio con hielo picado, agite bien y cuele dentro de la copa de coctel preparada.",
+      "glassware": "cocktail glass",
+      "garnish": "sugar-rimmed glass with lemon peel lining the inside",
+      "page_reference": null,
+      "raw_text": "BRANDY CRUSTA\n3 or 4 dashes of Gum Syrup\n       1 dash of Boker's Bitt ers\n       1 wine gla ss of Bra ndy\n       2 dashes of Cu racoa\n       I das h Lemon Juice\n       Before mixing t he a bove ingredients, prepa re a\n    cockta il glass as foll ows:\n       Rub a sliced lemon a round t he rim of th e glass,\n    a nd dip it in pulverized whi te sugar, so tha t the\n    sugar will adhere to the edge of th e glass. Pa re\n    half a lemon the same a s you would a n a pple (a ll\n    in one piece) so that t he pa ring will fit in the wine\n    glass. Put the above ingredients into a sma ll\n    whiskey glass fill ed one-third full of s haved ice,\n    sha ke up we ll a nd stra in t he liquid int o t he cockta il\n    glass prepared a s above directed.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-005",
+      "order": 5,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "crusta",
+      "name_original": "Whiskey or Gin Crusta",
+      "name_es": "Crusta de Whiskey o de Gin",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "3 or 4 dashes"
+        },
+        {
+          "item_original": "Boker's Bitters",
+          "item_es": "Amargo Boker's",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Whiskey or Gin",
+          "item_es": "Whiskey o Gin",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "in place of brandy"
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curacao",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Pulverized white sugar",
+          "item_es": "Azucar blanca pulverizada",
+          "amount": null,
+          "unit": null,
+          "notes": "for the rim"
+        },
+        {
+          "item_original": "Lemon",
+          "item_es": "Limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "pared in one continuous peel to line the glass"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "The Whiskey or Gin Crusta is made like the Brandy Crusta, using Whiskey or Gin instead of Brandy.",
+      "method_es": "El Crusta de Whiskey o de Gin se prepara igual que el Brandy Crusta, sustituyendo el brandy por whiskey o gin.",
+      "glassware": "cocktail glass",
+      "garnish": "sugar-rimmed glass with lemon peel lining the inside",
+      "page_reference": null,
+      "raw_text": "WHISKEY OR GIN CRUSTA\nThe Wh iskey or Gin Crusta is made like th e\n    Brandy Crusta, using Whiskey or Gin instead of\n    Brandy .",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-006",
+      "order": 6,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "other",
+      "name_original": "Brandy Daisy",
+      "name_es": "Brandy Daisy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "3 or 4 dashes"
+        },
+        {
+          "item_original": "Curacao Cordial",
+          "item_es": "Cordial de Curacao",
+          "amount": 3,
+          "unit": "dash",
+          "notes": "2 or 3 dashes"
+        },
+        {
+          "item_original": "Juice of half a small lemon",
+          "item_es": "Jugo de medio limon pequeno",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "small wine glass"
+        },
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Seltzer water",
+          "item_es": "Agua de seltz",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Fill glass one-third full of shaved ice, shake well, strain into a large cocktail glass, and fill up with Seltzer water.",
+      "method_es": "Llene el vaso hasta un tercio con hielo picado, agite bien, cuele en una copa de coctel grande y complete con agua de seltz.",
+      "glassware": "large cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY DAISY\n3 or 4 da shes of Gum Syrup\n       2 or 3 dashes of Curacoa Cordia l\n       juice of ha lf a small lemon\n       1 small wine glass of Brandy\n       2 dashes of J a ma ica Rum                     /    ,         j\n       Fill glass on-third full of shaved ice, sha ke well ,         1~,\n    strain into a la rge cockt ail glass, a nd fill up with\n    Seltzer water.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-007",
+      "order": 7,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "other",
+      "name_original": "Whiskey Daisy",
+      "name_es": "Whiskey Daisy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange syrup",
+          "item_es": "Jarabe de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of half a small lemon",
+          "item_es": "Jugo de medio limon pequeno",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bourbon or Rye Whiskey",
+          "item_es": "Whiskey Bourbon o Rye",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Seltzer or Apollinaris water",
+          "item_es": "Agua de seltz o Apollinaris",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Fill glass one-third full of shaved ice, shake well, strain into a large cocktail glass and fill up with Seltzer or Apollinaris water.",
+      "method_es": "Llene el vaso hasta un tercio con hielo picado, agite bien, cuele en una copa de coctel grande y complete con agua de seltz o Apollinaris.",
+      "glassware": "large cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY DAISY\n3 dashes Gum Sy rup\n       2 da shes Orange Syrup\n       juice of ha lf a sma ll lemon\n       1 wine glass of Bourbon or Rye W hiskey\n       Fill glass one-t hi rd full of s haved ice, s ha ke we ll ,\n    strain into a la rge cockta il glass a nd fill up wit h\n    Seltzer or Appolinoris water.          '",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-008",
+      "order": 8,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "sour",
+      "name_original": "Gin Sour",
+      "name_es": "Gin Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White sugar",
+          "item_es": "Azucar blanca",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "large teaspoonful, dissolved in a little Seltzer or Apollinaris water"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 3,
+          "unit": "dash",
+          "notes": "2 or 3 dashes"
+        },
+        {
+          "item_original": "Holland or Old Tom Gin",
+          "item_es": "Gin Holland u Old Tom",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass full of shaved ice, shake up and strain into a claret glass. Dress the top with orange, or pineapple and berries.",
+      "method_es": "Llene el vaso con hielo picado, agite y cuele en una copa de clarete. Decore por encima con naranja, o pina y bayas.",
+      "glassware": "claret glass",
+      "garnish": "orange or pineapple and berries",
+      "page_reference": null,
+      "raw_text": "GIN SOUR\nla rge teaspoonful of white s uga r dissolved in a\n                li t tle Seltzer or Appollina ris \\'\\ a ter.\n          2 or 3 da shes of lemon ju ice\n          1 win e glass of Holla nd or Old Tom Gin\n         Fill t he glass full of s haved ice, sha ke up a nd st ra in\n       into a cla ret gla ss. Dress the top with ora nge, or\n       pinea pple a nd berries .",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-009",
+      "order": 9,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "sour",
+      "name_original": "Whiskey Sour",
+      "name_es": "Whiskey Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "large teaspoonful, dissolved in a little Seltzer water"
+        },
+        {
+          "item_original": "Juice of half a lemon",
+          "item_es": "Jugo de medio limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "small"
+        },
+        {
+          "item_original": "Bourbon or Rye Whiskey",
+          "item_es": "Whiskey Bourbon o Rye",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass full of shaved ice, shake up and strain into a claret glass. Ornament with berries in season.",
+      "method_es": "Llene el vaso con hielo picado, agite y cuele en una copa de clarete. Decore con bayas de temporada.",
+      "glassware": "claret glass",
+      "garnish": "seasonal berries",
+      "page_reference": null,
+      "raw_text": "WHISKEY SOUR\n1 la rge teaspoonful of powd ered whi te s uga r,\n               di ssolved in a li t tle Seltze r water\n         juice of ha lf a lemon (small )\n          1 wine glass of Bourbon or R ye W hiskey\n         Fill the glass full of shaved ice, s hake up a nd strain\n       into a cla ret glass. Orna ment wit h berries in sea son.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-010",
+      "order": 10,
+      "section_title": "CHAMPAGNE IN OCCASIONAL USE",
+      "category": "sour",
+      "name_original": "Brandy Sour",
+      "name_es": "Brandy Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "large teaspoonful, dissolved in a little Seltzer water"
+        },
+        {
+          "item_original": "Juice of half a lemon",
+          "item_es": "Jugo de medio limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curacao",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with shaved ice, shake, and strain into a claret glass. Ornament with orange and berries.",
+      "method_es": "Llene el vaso con hielo picado, agite y cuele en una copa de clarete. Decore con naranja y bayas.",
+      "glassware": "claret glass",
+      "garnish": "orange and berries",
+      "page_reference": null,
+      "raw_text": "BRANDY SOUR\n1 la rge teaspoonful of powdered whi te suga r\n                d issolved in a little Seltze r water\n           juice of ha lf a lemon\n           1 da sh of Curacoa\n           1 win e glass of Bra ndy\n           Fill t he glass wit h shaved ice, s ha ke, a nd s tra in\n       in to a cla ret glass. Orna ment with ora nge a nd\n       be rries.\n-r-'                       JERSEY SOUR\n          1 large teaspoonful of powdered white sugar\n               di ssolved in a little water\n         2 or 3 das hes of lemon juice\n          1 wine glass of Apple J ack                         .\n         Fill the gla ss with shaved ice, sh a~e up, and stra m\n       into a cla ret glas s. Orn ament with ora nge a nd\n       berries.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-011",
+      "order": 11,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Holland Gin",
+          "item_es": "Gin Holland",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "in place of whiskey"
+        },
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "small"
+        },
+        {
+          "item_original": "Seltzer or Apollinaris water",
+          "item_es": "Agua de seltz o Apollinaris",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Same as Whiskey Fizz only using Holland Gin in place of Whiskey. Fill up the glass with Seltzer or Apollinaris water, stir thoroughly and serve.",
+      "method_es": "Igual que el Whiskey Fizz, sustituyendo el whiskey por Gin Holland. Complete el vaso con agua de seltz o Apollinaris, revuelva bien y sirva.",
+      "glassware": "highball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZ\nSame as Vl hiskey Fiz only us ing H olla nd Gin in         ~.\n place of W hiskey.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-012",
+      "order": 12,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "fizz",
+      "name_original": "Brandy Fizz",
+      "name_es": "Brandy Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "small"
+        },
+        {
+          "item_original": "Seltzer or Apollinaris water",
+          "item_es": "Agua de seltz o Apollinaris",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Fill up the glass with Seltzer or Apollinaris water, stir thoroughly and serve.",
+      "method_es": "Complete el vaso con agua de seltz o Apollinaris, revuelva bien y sirva.",
+      "glassware": "highball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY FIZ\n1 teaspoonful of powdered white sugar\n    3 dashes of lemon juice\n    l wi ne glass of Brandy\n    1 small lum p of ice\n   _Fill up the glass with Seltzer or Apollinaris \\Vate r,\n stir thoroughly and ser ve.\n                            8\n\n                      ~     FIZ     ~\n\n            SILVER FIZ (Use large glass)\n    1 tablespoonful of pulverized white sugar\n    3 dashes of lemon or lime juice\n    The white of one egg\n    I wine glass of Old Tom Gin\n    2 or 3 small lumps of ice\n    Shake up t horoughly, strain into a medium glass\n a nd fill it up with Seltzer \\i\\Tater a nd serve.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-013",
+      "order": 13,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "fizz",
+      "name_original": "GOLDEN FIZ",
+      "name_es": "Golden Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine white sugar",
+          "item_es": "Azucar blanca fina",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon or lime juice",
+          "item_es": "Jugo de limon o lima",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Yolk of one egg",
+          "item_es": "Yema de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Small lumps of ice",
+          "item_es": "Trozos pequenos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "2 o 3 trozos"
+        },
+        {
+          "item_original": "Seltzer water",
+          "item_es": "Agua de Seltz",
+          "amount": null,
+          "unit": null,
+          "notes": "Para completar"
+        }
+      ],
+      "method_original": "Shake up thoroughly, strain into medium bar glass and fill up with Seltzer water.",
+      "method_es": "Agitar bien, colar en un vaso de bar mediano y completar con agua de Seltz.",
+      "glassware": "Medium bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GOLDEN FIZ\n1 tab lespoonful of fine white sugar\n    3 dashes of lemon or lime juice\n   The yolk of one egg\n    1 wine g lass of 01 Tom Gin\n   2 or 3 small lumps of ice\n   Shake up thoroughly , strain into medium bar\n glass a nd fill up with Seltzer water.\n       BRANDY SLING (Use small glass)\n   1 wine glass of Brandy\n   1 small teaspoonful of powdered white suga r\n   1 wine glass of water\n   1 small lump of ice\n   Dissolve the s ugar in water, add the Brandy and\nice, stir well wit h a spoon. Grate a litt le nutmeg\non top a nd serve.\n        WARD EIGHT (Use large Glass)\n  1 teaspoonful Grenadine\n  172 teaspoonfuls powdered s ugar\n  3 oz. glass Rye W his key",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-014",
+      "order": 14,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "sling",
+      "name_original": "HOT BRANDY SLING",
+      "name_es": "Sling Caliente de Brandy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco para disolver el azucar y el resto para completar dos tercios del vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Dissolve the sugar in a little boiling water, add the Brandy and fill the glass two thirds full of boiling water. Grate a little nutmeg on top and serve.",
+      "method_es": "Disolver el azucar en un poco de agua hirviendo, anadir el brandy y llenar el vaso hasta dos tercios con agua hirviendo. Rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Medium glass (caliente)",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT BRANDY SLING\n(Use medium glass, Ho~)\n  4 sma ll teaspoonful of powdered white s ugar\n  1 wine glass full of Brandy         ..\n  Dissolve t he sugar in a little boi ling water, add the\nBra nd y a nd fi ll t he g lass two t hirds full of boiling\nwater. ' Grate a litt le nu t meg on top a nd serve .\n                              9\n\n               ~     SLINGS +",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-015",
+      "order": 15,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "sling",
+      "name_original": "GIN SLING",
+      "name_es": "Sling de Ginebra",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Cucharadita pequena"
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Small lump of ice",
+          "item_es": "Trozo pequeno de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Dissolve the sugar in the water, add the Gin and ice, stir well with a spoon. Grate a little nutmeg on top, and serve.",
+      "method_es": "Disolver el azucar en el agua, anadir la ginebra y el hielo, remover bien con una cuchara. Rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Small glass",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "GIN SLING\n1 sma ll teaspoonful of powdered white suga r\n   1 wine glass of water                                   ij\n   1 wine glass of Gin                                     Jl\n   1 small lump of ice\n   Dissolve the sugar in the water, add the Gi n a nd      ~\nice, stir well with a spoon. Grate a little nutmeg\non top, and serve.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-016",
+      "order": 16,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "sling",
+      "name_original": "HOT GIN SLING",
+      "name_es": "Sling Caliente de Ginebra",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Cucharadita pequena"
+        },
+        {
+          "item_original": "Holland Gin",
+          "item_es": "Ginebra holandesa (Genever)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Hot water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco para disolver el azucar"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar la mitad del vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Dissolve the sugar in a little hot water, add the Gin, and fill it one half full of boiling water. Grate a little nutmeg on top, and serve.",
+      "method_es": "Disolver el azucar en un poco de agua caliente, anadir la ginebra y llenar la mitad del vaso con agua hirviendo. Rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Medium glass (caliente)",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT GIN SLING\n(Use medium glass, Hot)\n  1 small teaspoonful of powdered white sugar\n  1 wine glass of Holland Gin\n  Dissolve the sugar in a little hot water, add the\nGin, a nd fill it one ha lf full of boiling water. Grate\na little nutmeg on top, a nd serve.\n\n\n       WHISKEY SLING (Use small glass)\n   1 small teaspoonful of powdered suga r\n   1 wine gla ss of water\n   1 wine glass of Bourbon or R ye \\ .Yhiskey\n   Dissolve the sugar in the water, add the \\.\\Thiskey\nand ice, stir thoroughly with a spoon. Gfate a\nlittle nutmeg on top, and serve .",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-017",
+      "order": 17,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "sling",
+      "name_original": "HOT WHISKEY SLING",
+      "name_es": "Sling Caliente de Whisky",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Cucharadita pequena"
+        },
+        {
+          "item_original": "Bourbon or Rye Whiskey",
+          "item_es": "Whisky Bourbon o Rye",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Hot water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco para disolver el azucar"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar dos tercios del vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Dissolve the sugar in a little hot water, add the Whiskey, and fill the glass two thirds full of boiling water. Grate a little nutmeg on top, and serve.",
+      "method_es": "Disolver el azucar en un poco de agua caliente, anadir el whisky y llenar el vaso hasta dos tercios con agua hirviendo. Rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Medium glass (caliente)",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT WHISKEY SLING\n(Use medium glass, Hot)\n 1 small teaspoonful of powdered suga r\n l wine glass of Bourbon or Rye Whiskey\n Dissolve the s ugar in a litt le hot water, add the\nWhiskey, and fill t he glass two thirds full of boilin g\nwater. Grate a little nutmeg on top, a nd serve.\n\n                           10\n\n        ~     COLD RUM FLIP                 ~\n\nHOT BRANDY FLIP (Use large glass, Hot)\n  1 teaspoonful of s ugar\n  1 wine glass of Brandy\n  Yolk of one egg\n  Dissolve the sugar in a li tt le hot water, add the\nBrandy a nd egg, shake up thoroughly, pour into\na medi um gla ss, and fill it one ha lf full of boiling\nwater. Grate a li tt le nutmeg on top a nd serve.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-018",
+      "order": 18,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "flip",
+      "name_original": "HOT WHISKEY, GIN OR RUM FLIP",
+      "name_es": "Flip Caliente de Whisky, Ginebra o Ron",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Whiskey, Gin or Rum",
+          "item_es": "Whisky, ginebra o ron",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "Sustituir por el destilado deseado"
+        },
+        {
+          "item_original": "Yolk of one egg",
+          "item_es": "Yema de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Hot water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco para disolver el azucar"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar la mitad del vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Same as Brandy Flip, substituting Whiskey, Gin or Rum, instead of Brandy. Dissolve the sugar in a little hot water, add the spirit and egg, shake up thoroughly, pour into a medium glass, and fill it one half full of boiling water. Grate a little nutmeg on top and serve.",
+      "method_es": "Igual que el Flip de Brandy, sustituyendo por whisky, ginebra o ron en lugar de brandy. Disolver el azucar en un poco de agua caliente, anadir el destilado y el huevo, agitar bien, verter en un vaso mediano y llenar hasta la mitad con agua hirviendo. Rallar un poco de nuez moscada por encima y servir.",
+      "glassware": "Large glass (caliente)",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT WHISKEY, GIN OR RUM FLIP\nSame as Bra ndy F lip, s ubs t it ut ing Whiskey, Gin\nor Rum , instead of Brandy.\n\n\n   COLD BRANDY FLIP (Use large glass)\n  1 teaspoonfu l powdered sugar\n  1 wine glass of Brandy\n  ~ win e glass of water\n  1 fresh egg\n  2 lumps of ice\n  Dissolve th e suga r in the water, add the Brandy,\negg and ice, s ha ke t horoughly, stra in into a small\nbar glass. Serve with a lit t le nutmeg on top .",
+      "notes": "Variante caliente del Brandy Flip; intercambiable entre whisky, ginebra o ron"
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-019",
+      "order": 19,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "flip",
+      "name_original": "COLD RUM FLIP",
+      "name_es": "Flip Frio de Ron",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Disuelta en un poco de agua"
+        },
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "2 o 3 trozos"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Shake up thoroughly, strain in a medium glass, and grate a little nutmeg on top.",
+      "method_es": "Agitar bien, colar en un vaso mediano y rallar un poco de nuez moscada por encima.",
+      "glassware": "Medium glass",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "COLD RUM FLIP\n1 teaspoonful of powdered sugar\n  Dissolved in a little water\n  1 wine glass of J amaica Rum\n  1 fresh egg\n  2 or 3 lumps of ice\n  Shake up thoroughly, strain in a medi um gla ss,\nand grate a li tt le nutmeg on top.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-020",
+      "order": 20,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "flip",
+      "name_original": "COLD GIN OR WHISKEY FLIP",
+      "name_es": "Flip Frio de Ginebra o Whisky",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Disuelta en un poco de agua"
+        },
+        {
+          "item_original": "Gin or Whiskey",
+          "item_es": "Ginebra o whisky",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "Sustituir por el destilado deseado"
+        },
+        {
+          "item_original": "Fresh egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "2 o 3 trozos"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Same as cold Rum Flip, substituting Gin or Whiskey instead of Rum. Shake up thoroughly, strain in a medium glass, and grate a little nutmeg on top.",
+      "method_es": "Igual que el Flip Frio de Ron, sustituyendo por ginebra o whisky en lugar de ron. Agitar bien, colar en un vaso mediano y rallar un poco de nuez moscada por encima.",
+      "glassware": "Medium glass",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "COLD GIN OR WHISKEY FLIP\nSame as cold Rum F lip, substitu ti ng Gin or\nWhiskey instead of Rum .\n                      11\n\n               ~    TODDYS            ~",
+      "notes": "Variante del Cold Rum Flip; intercambiable entre ginebra o whisky"
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-021",
+      "order": 21,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "toddy",
+      "name_original": "COLD BRANDY TODDY",
+      "name_es": "Toddy Frio de Brandy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine white sugar",
+          "item_es": "Azucar blanca fina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": "1/3",
+          "unit": "wine-glass",
+          "notes": "OCR original '31 wine glass'; lectura mas plausible: 1/3 de copa de vino"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Dissolve the sugar in the water, add the Brandy and ice, and stir with a spoon.",
+      "method_es": "Disolver el azucar en el agua, anadir el brandy y el hielo y remover con una cuchara.",
+      "glassware": "Small glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLD BRANDY TODDY\n1 teaspoonful of fine white sugar\n  31 wine glass of water\n  1 wine glass of Brandy\n  1 lump of ice\n  Dissolve the sugar in the water, add the Bra nd y\nand ice, and stir with a spoon.\nHOT BRANDY TODDY (Use small glass, Hot)\n   I tea spoonful of fine white sugar\n   1 wine glass of Brandy\n   Dissolve the sugar in a little boiling wa t er, add\nthe Brandy , and pour boiling water into glass unti 1\nit is two-thirds full. Grate a little nutmeg on top .\nAdd lemon if preferred.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-022",
+      "order": 22,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "toddy",
+      "name_original": "COLD GIN TODDY",
+      "name_es": "Toddy frío de ginebra",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "powdered white sugar",
+          "item_es": "azúcar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": "el original indica '31 wine glass' por error de OCR; se interpreta como 1/2 copa de vino"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un trozo grande"
+        }
+      ],
+      "method_original": "Dissolve the sugar in the water, add the Gin and ice, and stir with a spoon.",
+      "method_es": "Disolver el azúcar en el agua, añadir la ginebra y el hielo, y revolver con cuchara.",
+      "glassware": "vaso pequeño",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLD GIN TODDY\n1 teaspoonful of powdered white sugar\n  31 wine glass of water\n  1 wine glass of Gin\n  1 lump of ice\n  Dissolve the sugar in the water, add the Gin\nand ice, and stir with a spoon .\n  HOT GIN TODDY (Use small glass, Hot)\n  Same as Hot Brandy Toddy , substituting Gin.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-023",
+      "order": 23,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "toddy",
+      "name_original": "COLD WHISKEY TODDY",
+      "name_es": "Toddy frío de whiskey",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "fine white sugar",
+          "item_es": "azúcar blanca fina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": "implícita: necesaria para disolver el azúcar"
+        },
+        {
+          "item_original": "Bourbon, or Rye Whiskey",
+          "item_es": "Whiskey Bourbon o de centeno (Rye)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un trozo grande"
+        }
+      ],
+      "method_original": "Dissolve the sugar in the water, add the Whiskey and ice, and stir with a spoon.",
+      "method_es": "Disolver el azúcar en el agua, añadir el whiskey y el hielo, y revolver con cuchara.",
+      "glassware": "vaso pequeño",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLD WHISKEY TODDY\n1 teaspoonful of fine white sugar\n  1 wine glass of Bourbon, or Rye Whiskey\n  1 lump of ice\n  Dissolve the sugar in the water, add the Whiskey\nand ice, and stir with a spoon.\n  To make Hot \\Vhiskey Toddy, dissolve the sugar\nin boi~ing water, omit . t~e . ice a nd pour boiling\nwater mto the gla ss until 1t 1s two-thirds full.",
+      "notes": "Para preparar Hot Whiskey Toddy: disolver el azúcar en agua hirviendo, omitir el hielo y rellenar el vaso hasta dos tercios con agua hirviendo."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-024",
+      "order": 24,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "other",
+      "name_original": "ROCK AND RYE",
+      "name_es": "Rock and Rye",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "rock candy syrup",
+          "item_es": "jarabe de azúcar cande (rock candy)",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Rye Whiskey",
+          "item_es": "Whiskey de centeno (Rye)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir them together thoroughly and serve. This is often prescribed for a cold.",
+      "method_es": "Revolver bien ambos ingredientes y servir. Suele recetarse como remedio para el resfriado.",
+      "glassware": "vaso pequeño",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROCK AND RYE\n1 ta blespoonful of rock ca ndy syrup\n  1 wine gla ss of Rye 'Whiskey\n   Stir them toget her thoroughl y a nd serve.   T hi s\nis often prescribed for a cold .\n                         12\n\n                   * FIX *",
+      "notes": "Preparación medicinal tradicional: mezcla simple de whiskey de centeno con jarabe de azúcar cande, usada históricamente como remedio casero para resfriados."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-025",
+      "order": 25,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "other",
+      "name_original": "BRANDY FIX",
+      "name_es": "Brandy Fix",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "white sugar dissolved in a little water",
+          "item_es": "azúcar blanca disuelta en un poco de agua",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "una cucharadita grande"
+        },
+        {
+          "item_original": "juice of a quarter of a lemon",
+          "item_es": "jugo de un cuarto de limón",
+          "amount": 0.25,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Curacoa",
+          "item_es": "Curaçao",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "rellenar el vaso hasta dos tercios"
+        }
+      ],
+      "method_original": "Fill the glass two-thirds full of shaved ice. Stir well and ornament the top with slices of lemon or lime.",
+      "method_es": "Llenar el vaso hasta dos tercios con hielo picado. Revolver bien y adornar la superficie con rodajas de limón o lima.",
+      "glassware": "vaso de fix (vaso pequeño)",
+      "garnish": "rodajas de limón o lima",
+      "page_reference": null,
+      "raw_text": "BRANDY FIX\nlarge teaspoonful of white sugar dissolved in a\n        little water\n   juice of a quarter of a lemon\n   3 dashes of Curacoa\n   1 wine glass of brandy\n   Fill the glass two-thirds full of shaved ice. Stir\nwell and ornament the top with slices of lemon or\nlime.",
+      "notes": "El 'fix' es una variante del smash, construida directamente en el vaso con hielo picado."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-026",
+      "order": 26,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "other",
+      "name_original": "GIN FIX",
+      "name_es": "Gin Fix",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "powdered white sugar dissolved in a little water",
+          "item_es": "azúcar blanca en polvo disuelta en un poco de agua",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "una cucharadita grande"
+        },
+        {
+          "item_original": "Raspberry Syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "juice of quarter of a lemon",
+          "item_es": "jugo de un cuarto de limón",
+          "amount": 0.25,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Holland Gin",
+          "item_es": "Ginebra holandesa (Genever)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "puede sustituirse por Old Tom Gin si se prefiere"
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "rellenar el vaso hasta dos tercios"
+        }
+      ],
+      "method_original": "Fill up the glass two-thirds full of shaved ice, stir thoroughly, and ornament the top with berries in season. Old Tom Gin may be used if preferred.",
+      "method_es": "Llenar el vaso hasta dos tercios con hielo picado, revolver bien y adornar la superficie con bayas de temporada. Puede usarse Old Tom Gin si se prefiere.",
+      "glassware": "vaso de fix (vaso pequeño)",
+      "garnish": "bayas de temporada",
+      "page_reference": null,
+      "raw_text": "GIN FIX\nlarge teaspoonful of powdered white sugar dis-\n        solved in a little water\n  2 dashes of Raspberry Syrup\n  juice of quarter of a lemon\n   1 wine glass of Holland Gin\n  Fill up the glass two-thirds full of shaved ice, stir\nthoroughly, and ornament the top with berries in\nseason. Old Tom Gin may be used if preferred.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-027",
+      "order": 27,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "other",
+      "name_original": "WHISKEY",
+      "name_es": "Whiskey Fix",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "white sugar, dissolved in a little water",
+          "item_es": "azúcar blanca disuelta en un poco de agua",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "una cucharadita grande"
+        },
+        {
+          "item_original": "juice of half a lemon",
+          "item_es": "jugo de medio limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Whiskey",
+          "item_es": "Whiskey",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "rellenar el vaso hasta dos tercios"
+        }
+      ],
+      "method_original": "Fill up the glass about two-thirds full of shaved ice, stir well, and ornament the top of the glass as directed in the Brandy recipe.",
+      "method_es": "Llenar el vaso hasta dos tercios con hielo picado, revolver bien y adornar la superficie como se indica en la receta del Brandy Fix (rodajas de limón o lima).",
+      "glassware": "vaso de fix (vaso pequeño)",
+      "garnish": "rodajas de limón o lima",
+      "page_reference": null,
+      "raw_text": "WHISKEY\n1 large teaspoonful of white suga r, dissolved in a\n        little water\n   juice of half a lemon               -\n   1 wine glass of Whiskey\n   Fill up the glass about two-thirds full of shaved\nice, stir well, and ornament the top of the glass as\ndirected in the Brandy recipe.",
+      "notes": "El nombre aparece truncado en el OCR como 'WHISKEY' bajo el encabezado de sección '* FIX *'; corresponde a Whiskey Fix."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-028",
+      "order": 28,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "flip",
+      "name_original": "SHERRY AND EGG",
+      "name_es": "Sherry y huevo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez (Sherry)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "fresh egg",
+          "item_es": "huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "entero"
+        }
+      ],
+      "method_original": "Pour in about one wine glass of Sherry. Then break in the glass one fresh egg.",
+      "method_es": "Verter aproximadamente una copa de vino de jerez. Luego cascar un huevo fresco entero dentro del vaso.",
+      "glassware": "vaso pequeño",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY AND EGG\nPour in about one wine glass of Sherry.       Then\nbreak in the glass one fresh egg.",
+      "notes": "Bebida muy minimalista al estilo de un flip básico: jerez con huevo fresco entero, sin endulzar ni batir."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-029",
+      "order": 29,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "flip",
+      "name_original": "PORT WINE FLIP",
+      "name_es": "Flip de Oporto",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "una cucharadita pequeña"
+        },
+        {
+          "item_original": "Port Wine",
+          "item_es": "Vino de Oporto",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una copa de vino grande"
+        },
+        {
+          "item_original": "fresh egg",
+          "item_es": "huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "entero"
+        },
+        {
+          "item_original": "small lumps of ice",
+          "item_es": "trocitos pequeños de hielo",
+          "amount": 3,
+          "unit": "piece",
+          "notes": "2 o 3 trozos"
+        }
+      ],
+      "method_original": "Break the egg into the glass, add the sugar, and lastly the wine and ice, shake up thoroughly and strain into medium sized goblet.",
+      "method_es": "Cascar el huevo en el vaso, añadir el azúcar y por último el vino y el hielo, agitar enérgicamente y colar en una copa de tamaño mediano.",
+      "glassware": "copa mediana (goblet)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PORT WINE FLIP\n1 small teaspoonful of powdered sugar\n   1 large wine glass of Port Wine\n   1 fresh egg\n   2 or 3 small lumps of ice                ''\n   Brea k the egg into the glass, add the sugar, and\nlastly the wine and ice, shake up thoroughly and\nstrain into medium sized goblet.\n                          13\n\n                ~     BISHOP         ~\n\n            SHERRY AND BITTERS\n  One dash of bitters, twist th e glass a rou nd so that\nthe bitters will cover the whole surface of t he glass\nFill with Sherry Wine, and serve.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-030",
+      "order": 30,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "other",
+      "name_original": "RHINE WINE AND SELTZER-,WATER",
+      "name_es": "Vino del Rin con agua de seltz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Rhine Wine",
+          "item_es": "Vino del Rin (Rhine Wine)",
+          "amount": null,
+          "unit": null,
+          "notes": "rellenar el vaso hasta la mitad"
+        },
+        {
+          "item_original": "small lumps of ice",
+          "item_es": "trocitos pequeños de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua de seltz",
+          "amount": null,
+          "unit": null,
+          "notes": "completar el vaso hasta el borde (implícito; el OCR corta la receta)"
+        }
+      ],
+      "method_original": "Pour in Rhine Wine until the glass is half full. Add two small lumps of ice. Fill the glass with [seltzer water].",
+      "method_es": "Verter vino del Rin hasta llenar el vaso a la mitad. Añadir dos trocitos pequeños de hielo. Completar el vaso con agua de seltz.",
+      "glassware": "vaso largo (highball)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RHINE WINE AND SELTZER-,WATER\nPour in Rhine \\'\\fine un t il t he glass is ha lf full.\nAdd two small lumps of ice. Fill the glass with",
+      "notes": "El OCR del título contiene una coma errónea ('SELTZER-,WATER') y el texto del método queda cortado tras 'Fill the glass with'; se completa con agua de seltz por el título."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-031",
+      "order": 31,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "flip",
+      "name_original": "SHERRY WINE FLIP",
+      "name_es": "Flip de Jerez",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "una cucharadita pequeña"
+        },
+        {
+          "item_original": "Sherry Wine",
+          "item_es": "Vino de Jerez (Sherry)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una copa de vino grande"
+        },
+        {
+          "item_original": "fresh egg",
+          "item_es": "huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "entero"
+        },
+        {
+          "item_original": "small lumps of ice",
+          "item_es": "trocitos pequeños de hielo",
+          "amount": 3,
+          "unit": "piece",
+          "notes": "2 o 3 trozos"
+        }
+      ],
+      "method_original": "This is made precisely as the Port Wine Flip, substituting Sherry Wine instead of Port.",
+      "method_es": "Se prepara exactamente igual que el Flip de Oporto, sustituyendo el vino de Oporto por jerez: cascar el huevo en el vaso, añadir el azúcar y por último el vino y el hielo, agitar enérgicamente y colar en una copa de tamaño mediano.",
+      "glassware": "copa mediana (goblet)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY WINE FLIP\nThis is made precisely as the Port Wi ne F lip,\ns ubstitu t ing Sherry W ine ins tead . of Port.\n            BISHOP (Use large glass)\n   1 teaspoonful of powdered white s uga r\n   Dissolved in wine glass of water\n   2 thin slices of lemon\n   2 da shes of J a maica Rum\n  '2 or 3 small lum ps of ice\n   Fill t he glass wit h Cla ret or Red Burgancly, sha ke\nup well, and remove the ice befo re serving.\n   ENGLISH BISHOP (To make one quart)\n   1 quart of Port W ine\n   1 orange (stuck pretty well wit h cloves, the\n        quantity being a matte r of taste)\n   Roast the orange before a fire, a nd when suf-\nficiently brown, cut it in q ua rters, pour ove r it a\nquart of Port W ine (previously made hot) add\nsuga r to taste, a nd let t he mixture simmer over the\nfire for ha lf an hour.\n    PEACH AND HONEY (Use small glass)\n   1 tablespoonful of honey\n   1 wine glass of Peach Brandy\n   Stir thoroughly wit h a spoon before serving.",
+      "notes": "Variación directa del Port Wine Flip cambiando el oporto por jerez."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-032",
+      "order": 32,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "other",
+      "name_original": "WHITE PLUSH",
+      "name_es": "White Plush",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Bourbon or Rye Whiskey",
+          "item_es": "Whisky bourbon o de centeno",
+          "amount": null,
+          "unit": null,
+          "notes": "al gusto del bebedor"
+        },
+        {
+          "item_original": "Fresh milk",
+          "item_es": "Leche fresca",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar el vaso"
+        }
+      ],
+      "method_original": "Hand a bottle of Bourbon or Rye Whiskey to a friend and let him help himself. Then fill up his glass with fresh milk; serve cold.",
+      "method_es": "Entregue una botella de whisky bourbon o de centeno a un amigo y deje que se sirva a su gusto. Luego complete el vaso con leche fresca y sirva frio.",
+      "glassware": "Vaso largo",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHITE PLUSH\nHand a bottle of Bourbon or Rye W hi skey to a\nfriend and let him help himself. Then fill up nis\nglass with fresh milk, serve cold .\n                        14\n\n         ~     GIN AND PINE                 ~\n\n        GIN AND PINE (Use wine glass)\n   Split a piece of the heart of green pine log into\nfine splints, a bout the size of a cedar lead pencil,\ntake two ounces of the sa me a nd put into a quart\ndecanter, fill the decanter with Gin. Let the pine\nsoak for two hours, and the Gin will be ready to\nserve.\nBURNT BRANDY and PEACH (Use small glass)\n  1 wine gl_a ss of Cognac\n  2 lumps of white sugar\n  2 or 3 slices of dried peaches\n  Burnt in a saucer or plate\n  Place the dried fruit in a glass and pour the liquid\nover them.                                           -\n  This is a popula r drink in the southern sta tes.\n    OLD STONE FENCE (Use large glass)\n  1 wine glass of Bourbon or Rye Whiskey\n  2 or 3 small lumps of ice\n  Fill up the glass with sweet cider.\n  SHANDY GAFF (Use large glass, or mug)\n  Fill the glass half full of Ale, a nd the remaining\nha lf wit h Irish Ginger Ale.\n  In England, where this drink had its origin , it is\nmade with Bass' Ale a nd Ginger Ale, ha lf a nd ha lf.\n                 'ARF AND 'ARF\n  Mix porter or stout with a le in eq ua l q uantities,\nor in proportions to suit taste.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-033",
+      "order": 33,
+      "section_title": "SHERRY EGG NOGG",
+      "category": "toddy",
+      "name_original": "HOT BUTTERED RUM",
+      "name_es": "Ron Caliente con Mantequilla",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azucar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "cucharadita pequena"
+        },
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Sweet butter",
+          "item_es": "Mantequilla sin sal",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "trozo del tamano de media castana"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar dos tercios del vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "rallada por encima"
+        }
+      ],
+      "method_original": "Dissolve the sugar in a little boiling water, add the rum and butter, fill the glass two-thirds full of boiling water, stir, grate a little nutmeg on top, and serve.",
+      "method_es": "Disuelva el azucar en un poco de agua hirviendo, agregue el ron y la mantequilla, complete el vaso hasta dos tercios con agua hirviendo, revuelva, ralle un poco de nuez moscada por encima y sirva.",
+      "glassware": "Vaso mediano (caliente)",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT BUTTERED RUM\n(Use medium glass, Hot)\n  1 sma ll teaspoonful of powdered suga r\n  1 wine glass of J a maica Rum\n  1 piece of sweet butter, a s la rge as half a chestnut\n  Dissolve the suga r in a little boiling water, add\nthe ru m a nd butter, fill t he glass two-thirds full of\nboiling water, stir, grate a little nut meg on top, a nd\nserve.\n                           15\n\n               ~     PUNCHES             '*",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-034",
+      "order": 34,
+      "section_title": "CIDER PUNCH",
+      "category": "toddy",
+      "name_original": "HOT SPICED RUM",
+      "name_es": "Ron Caliente Especiado",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Spices (allspice and cloves, not ground)",
+          "item_es": "Especias (pimienta de Jamaica y clavos enteros)",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "agregadas a la receta del ron caliente con mantequilla"
+        }
+      ],
+      "method_original": "Can be made by adding 1 teaspoonful of spices (allspice and cloves, not ground) to the above recipes.",
+      "method_es": "Se prepara agregando 1 cucharadita de especias enteras (pimienta de Jamaica y clavos, no molidas) a las recetas anteriores de ron caliente.",
+      "glassware": "Vaso mediano (caliente)",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT SPICED RUM\nCan be made by addi ng l teas poonful of spices\n (a llspice a nd cloves, not ground ) to t he a bove\nrecipes.\n                              16\n\n                ~     PUNCHES             ~",
+      "notes": "Variacion del Hot Buttered Rum: las especias se agregan enteras para que infundan el agua hirviendo."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-035",
+      "order": 35,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "other",
+      "name_original": "BRANDY AND GINGER ALE",
+      "name_es": "Brandy con Ginger Ale",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Small lumps of ice",
+          "item_es": "Trozos pequenos de hielo",
+          "amount": 3,
+          "unit": "piece",
+          "notes": "2 o 3"
+        },
+        {
+          "item_original": "Ginger ale",
+          "item_es": "Ginger ale",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar el vaso"
+        }
+      ],
+      "method_original": "Add the brandy and 2 or 3 small lumps of ice to the glass, then fill up with ginger ale.",
+      "method_es": "Agregue el brandy y 2 o 3 trozos pequenos de hielo al vaso, luego complete con ginger ale.",
+      "glassware": "Vaso largo (highball)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY AND GINGER ALE\n1 wine glass of Brandy\n  2 or 3 small lumps of ice\n  Fill up the glass with ginger ale.\n      MANHATTAN COCKTAIL (No. 1)\n  2 dashes of Curacoa or Maraschino\n  I pon y of Whiskey\n  1 wine glass of Vermouth\n  3 dashes of (Angostura) Bitters\n  2 small lu mps of ice\n  Shake well, a nd strain. Put one-quarter slice of\nlemon in glass a nd serve. If preferred sweeter add\n2 dashes of Gum sy rup.\n      MANHATTAN COCKTAIL (No. 2)\n  2 dashes of Gum sy rup\n  3 dashes of (Angostura) Bitters\n  Yz pony.of Whiskey\n  1 pony of Vermouth        .\n  Shake well, and s erve as in Manhattan No. 1\n    FIFTY FIFTY COCKTAIL (Very dry)\n  72 Dry Gin\n  Yz French Vermouth\ncracked ice\n  Stir well.         18\n\n            ~     COCKTAILS            +",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-036",
+      "order": 36,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "BRANDY COCKTAIL",
+      "name_es": "Coctel de Brandy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "3 o 4 dashes"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Curacoa",
+          "item_es": "Curazao",
+          "amount": 2,
+          "unit": "dash",
+          "notes": "1 o 2 dashes"
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "un tercio del vaso"
+        },
+        {
+          "item_original": "Lemon rind",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "trocito retorcido sobre el coctel"
+        }
+      ],
+      "method_original": "Fill glass one-third full of cracked ice, shake well and strain. Twist a small piece of lemon rind in it and serve.",
+      "method_es": "Llene el vaso un tercio con hielo picado, agite bien y cuele. Retuerza un trocito de cascara de limon sobre el coctel y sirva.",
+      "glassware": "Copa de coctel",
+      "garnish": "Twist de cascara de limon",
+      "page_reference": null,
+      "raw_text": "BRANDY COCKTAIL\n3 or 4 dashes of Gum syrup\n   2 dashes of (Angostura) Bitters\n   1 wine glass of Brandy\n   1 or 2 dashes of Curacoa\n   Fill glass one-third full of cracked ice, shake well\nand strain . Twist a small piece of lemon rind in\nit and serve.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-037",
+      "order": 37,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "IMPROVED BRANDY COCKTAIL",
+      "name_es": "Coctel de Brandy Mejorado",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Yellow lemon rind, twisted to express the oil",
+          "item_es": "Cascara amarilla de limon, retorcida para liberar el aceite",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "trocito pequeno"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "copa pequena de vino"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "un tercio del vaso"
+        }
+      ],
+      "method_original": "Fill glass one-third full of shaved ice, shake well and strain, put the lemon peel in the glass and serve. The flavor is improved by moistening the end of the cocktail glass with a piece of lemon.",
+      "method_es": "Llene el vaso un tercio con hielo picado, agite bien y cuele; coloque la cascara de limon en la copa y sirva. El sabor mejora si se humedece el borde de la copa de coctel con un trozo de limon.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cascara de limon",
+      "page_reference": null,
+      "raw_text": "IMPROVED BRANDY COCKTAIL\n2 dashes (Angostura) Bitters\n   3 dashes Gum syrup\n   2 dashes Maraschino\n   1 sma ll piece of the yellow rind of a lemon-\n        twisted to express the oil\n   1 small win e glass of Brandy\n   Fill glass one-third full of shaved ice, shake well\na nd strain, put the lemon peel in the glass and serve.\n   The flavor is improved by moistening the end of\nt he cocktail glass with a piece of lemon.",
+      "notes": "Variacion mas elegante del Brandy Cocktail con maraschino en lugar de curazao."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-038",
+      "order": 38,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "BRONX COCKTAIL",
+      "name_es": "Coctel Bronx",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": null,
+          "unit": null,
+          "notes": "1/2 parte"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut frances (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": "1/4 parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "1/4 parte"
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": "un chorrito"
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with cracked ice, shake well, strain and serve. (1/2 Dry Gin, 1/4 French Vermouth, 1/4 Italian Vermouth, with orange juice.)",
+      "method_es": "Llene el vaso con hielo picado, agite bien, cuele y sirva. (1/2 de ginebra seca, 1/4 de vermut frances y 1/4 de vermut italiano, con jugo de naranja.)",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRONX COCKTAIL\n72 Dry Gin",
+      "notes": "La receta del libro presenta el Bronx repartido entre los bloques 052 y 053 por errores del OCR; el formato es 1/2 Dry Gin + 1/4 French Vermouth + 1/4 Italian Vermouth + jugo de naranja."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-039",
+      "order": 39,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "MARTINI COCKTAIL",
+      "name_es": "Coctel Martini",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": null,
+          "unit": null,
+          "notes": "1/2 parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "1/2 parte"
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with cracked ice, stir, strain and serve.",
+      "method_es": "Llene el vaso con hielo picado, revuelva, cuele y sirva.",
+      "glassware": "Copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MARTINI COCKTAIL\n~Dry Gin\n   ~ Italian Vermouth\n   dash of Orange Bitters\n   Fill glass with cracked ice, stir, strain and serve",
+      "notes": "Version clasica de la era previa al Dry Martini moderno: usa vermut italiano (dulce) en proporciones iguales con la ginebra seca."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-040",
+      "order": 40,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "MARTINEZ COCKTAIL",
+      "name_es": "Coctel Martinez",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Ginebra Old Tom",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 pony"
+        },
+        {
+          "item_original": "Vermouth",
+          "item_es": "Vermut",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon slice",
+          "item_es": "Rodaja de limon",
+          "amount": 1,
+          "unit": "slice",
+          "notes": "un cuarto de rodaja"
+        }
+      ],
+      "method_original": "Shake up thoroughly, and strain, add one-quarter slice of lemon and serve. If the guest prefers it very sweet, add two dashes of gum syrup.",
+      "method_es": "Agite bien, cuele, agregue un cuarto de rodaja de limon y sirva. Si el comensal lo prefiere muy dulce, agregue dos dashes de jarabe de goma.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cuarto de rodaja de limon",
+      "page_reference": null,
+      "raw_text": "MARTINEZ COCKTAIL\n1 dash of (Angostura) Bitters\n   2 dashes of Maraschino\n   1· pony of Old Tom Gin\n   1 wine glass of Vermouth\n   2 lumps of ice\n   Shake up thoroughly, and strain, add one-quarter\nslice of lemon and serve . If the guest prefers it very\nsweet, add two dashes of gum syrup.",
+      "notes": "Precursor historico del Martini moderno: combinaba ginebra Old Tom (semidulce) con vermut y maraschino."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-041",
+      "order": 41,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "JERSEY COCKTAIL",
+      "name_es": "Coctel Jersey",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine white sugar",
+          "item_es": "Azucar blanca fina",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Caroni Bitters",
+          "item_es": "Amargo Caroni",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 4,
+          "unit": "piece",
+          "notes": "3 o 4"
+        },
+        {
+          "item_original": "Cider",
+          "item_es": "Sidra",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with cider, and mix well with a spoon, and remove the ice and serve with lemon peel.",
+      "method_es": "Llene el vaso con sidra, mezcle bien con una cuchara, retire el hielo y sirva con cascara de limon.",
+      "glassware": "Tumbler",
+      "garnish": "Cascara de limon",
+      "page_reference": null,
+      "raw_text": "JERSEY COCKTAIL\n2 teaspoonfuls of sugar (fine white)\n   2 dashes of Caroni Bitters\n   3 or 4. lumps of ice\n   Fill tumbler with cider, and mix well with a spoon,\na nd remove the ice a nd s erve with lemon peel.",
+      "notes": "Coctel a base de sidra, llamado asi en honor al estado de Nueva Jersey, famoso por su produccion de sidra y applejack."
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-042",
+      "order": 42,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "VERMOUTH COCKTAIL",
+      "name_es": "Coctel de Vermut",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth",
+          "item_es": "Vermut",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon slice",
+          "item_es": "Rodaja de limon",
+          "amount": 1,
+          "unit": "slice",
+          "notes": "un cuarto de rodaja"
+        },
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "pequeno"
+        }
+      ],
+      "method_original": "Shake the bitters and vermouth with a small lump of ice, strain in a cocktail glass in which lemon has been placed. If preferred sweet, add two dashes of gum syrup.",
+      "method_es": "Agite el amargo y el vermut con un trozo pequeno de hielo y cuele en una copa de coctel en la que se haya colocado el limon. Si lo prefiere dulce, agregue dos dashes de jarabe de goma.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cuarto de rodaja de limon",
+      "page_reference": null,
+      "raw_text": "VERMOUTH COCKTAIL\n2 dashes of (Angostura) Bitters\n    1 wine glass of Vermouth\n    Y-1 slice of lemon\n   Shake the Bitters and Vermouth wit h a small\nlump of ice, strain in a cock!=ail glass in which lemon\n has been placed . If preferred sweet, add two dashes\nof Gum syrup.",
+      "notes": null
+    },
+    {
+      "id": "1934-the-mixer-of-beverages-043",
+      "order": 43,
+      "section_title": "SOYER'S GIN PUNCH",
+      "category": "cocktail",
+      "name_original": "FANCY VERMOUTH COCKTAIL",
+      "name_es": "Coctel de Vermut Fancy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth",
+          "item_es": "Vermut",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon slice",
+          "item_es": "Rodaja de limon",
+          "amount": 1,
+          "unit": "slice",
+          "notes": "un cuarto de rodaja"
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "un cuarto del vaso"
+        }
+      ],
+      "method_original": "Fill glass one-quarter full shaved ice, shake well and strain into cocktail glass; garnish with the lemon.",
+      "method_es": "Llene el vaso un cuarto con hielo picado, agite bien y cuele en una copa de coctel; decore con el limon.",
+      "glassware": "Copa de coctel",
+      "garnish": "Cuarto de rodaja de limon",
+      "page_reference": null,
+      "raw_text": "FANCY VERMOUTH COCKTAIL\n2 dashes Angostura Bitters\n    1 wine glass of Vermouth\n   2 dashes Maraschino\n    Y-1 slice of lemon\n   Fill glass one-qua rter full shaved ice, shake well\nand strain .into Cocktail glass; garnish with the\nlemon.",
+      "notes": "Variante mas elegante del Vermouth Cocktail con un toque de maraschino."
+    }
+  ]
+}

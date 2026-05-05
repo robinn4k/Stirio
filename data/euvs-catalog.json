@@ -336,6 +336,22 @@
     "bookFile": "data/euvs-books/1934-sloppy-joes-bar.json"
   },
   {
+    "id": "1934-the-mixer-of-beverages",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "The Mixer of Beverages",
+    "author": null,
+    "language": "en",
+    "languageName": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "Manual estadounidense de mezclas de bebidas publicado en 1934, justo despues del fin de la Ley Seca. Combina indicaciones de protocolo (servicio de vinos espumosos, refrigeracion, cuidado de la cerveza embotellada, maridaje cena-vino) con una seleccion de cocteles, fizzes, juleps, daisies, sours, slings, flips y ponches calientes y frios. Saltadas (no son recetas reales): Foreign and Dome1tic (Encabezado de seccion (Foreign and Domestic Beverages)); BEVERAGES (Banner de seccion 'BEVERAGES'); Soups--Sherry or Madeira. (Recomendacion de maridaje sopas-jerez/madeira, no es receta); Turtle or Terrapin-Sherry or Madeira. (Recomendacion de maridaje tortuga-jerez/madeira, no es receta); Cheese or Frnit-Port Wine. (Recomendacion de maridaje queso/fruta-oporto, no es receta); FOR COLD DRINKS (Encabezado 'FOR COLD DRINKS', no es receta); COOLING SPARKLING WINES (Texto explicativo sobre como enfriar vinos espumosos, no es receta); BOTTLED LIQUOR (Texto sobre el cuidado de licores embotellados, no es receta); SERVING OF SPARKLING WINES (Texto sobre el servicio de vinos espumosos, no es receta); M INERAL WATERS (Texto sobre aguas minerales, no es receta); SYRUPS (Texto sobre siropes, no es receta); POURING OF WINES (Texto sobre como verter vinos, no es receta); CARE OF BOTTLED BEER (Texto sobre el cuidado de la cerveza embotellada, no es receta); Y:j Iemon (Linea fragmentada (1/2 limon) — pertenece a un fizz); U French Vermouth (Linea fragmentada (1/2 vermut frances)); HIGHEST GRADE (Banner publicitario ('Highest Grade Wines, Liquors and...'), no es una receta)",
+    "sectionCount": 11,
+    "recipeCount": 43,
+    "bookFile": "data/euvs-books/1934-the-mixer-of-beverages.json"
+  },
+  {
     "id": "1935-clear-heads-cool-off-with-calvert",
     "year": 1935,
     "decade": "1930s",
