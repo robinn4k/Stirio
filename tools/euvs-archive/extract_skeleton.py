@@ -61,8 +61,45 @@ SKELETON_DIR = ROOT / "data" / "skeletons"
 # Regexes.
 YEAR_RE = re.compile(r"\b(1[7-9]\d{2}|20\d{2})\b")
 PAGE_NUM_RE = re.compile(r"^\s*[—-]?\s*\d{1,3}\s*[—-]?\s*$")
-HEADER_RE = re.compile(r"^\s*([A-ZÁÉÍÓÚÑÇ0-9][A-ZÁÉÍÓÚÑÇ0-9 .'’&\-/!,()]{2,58})\s*$")
+# ALL-CAPS line (decorative banners + many Sloppy-Joe-style recipe titles).
+HEADER_RE_UPPER = re.compile(r"^\s*([A-ZÁÉÍÓÚÑÇ0-9][A-ZÁÉÍÓÚÑÇ0-9 .'’&\-/!,()]{2,58})\s*$")
 LOWER_RE = re.compile(r"[a-záéíóúñç]")
+# Joining words that may appear lowercase inside a Title-Case header.
+TITLE_JOINS = {"of", "and", "the", "a", "an", "in", "on", "for", "to",
+               "with", "from", "de", "la", "el", "du", "au", "or"}
+# First-word patterns that mark a candidate as an ingredient continuation
+# rather than a recipe title. OCR commonly mangles ½ → "Yz" / "Y2" / "Y:í"
+# and ¼ → "X" / "Y4". Numeric quantities ("1", "Two") followed by units
+# (Glass, Teaspoonful, Dash, …) are ingredients, not titles.
+INGREDIENT_FIRST_TOKENS = {
+    "yz", "y2", "y:", "y4", "yi", "ys", "y;", "y/2", "y/4",
+    "½", "¼", "¾", "⅓", "⅔", "⅛", "⅜",
+    "x", "x.", "x'",
+}
+INGREDIENT_PREFIX_RE = re.compile(
+    r"^(?:\d+/\d+|\d+(?:[.,]\d+)?\s+|"
+    r"(?:one|two|three|four|five|six|half|quarter|several|few|some)\s+"
+    r")", re.IGNORECASE)
+# Title-Case candidates whose remainder is just a known ingredient noun
+# (sugar, gin, ice, …) are usually fragment lines, not recipe titles.
+INGREDIENT_NOUNS = {
+    "sugar", "ice", "gin", "rum", "whisky", "whiskey", "brandy",
+    "vermouth", "cognac", "absinthe", "champagne", "sherry", "port",
+    "wine", "cointreau", "curacao", "curaçao", "grenadine", "syrup",
+    "maraschino", "mint", "lemon", "lime", "orange", "pineapple",
+    "egg", "milk", "cream", "soda", "water", "ginger",
+    "calvados", "kirsch", "cassis", "anisette", "anissette",
+    "menthe", "amaretto", "cacao", "chartreuse", "benedictine",
+    "dubonnet", "drambuie", "schnapps", "mezcal", "tequila",
+    "vodka", "cider", "ale", "beer", "porter",
+}
+INGREDIENT_UNIT_WORDS = {
+    "glass", "glasses", "teaspoonful", "teaspoon", "tablespoonful",
+    "tablespoon", "dash", "dashes", "drop", "drops", "part", "parts",
+    "wineglass", "wineglassful", "ounce", "ounces", "oz", "gill",
+    "lump", "lumps", "slice", "slices", "piece", "pieces",
+    "cup", "bottle", "quart", "gallon", "pint", "pints",
+}
 
 # Strings that look like recipe headers but are actually structural
 # elements; never promote them to a recipe.
@@ -137,24 +174,83 @@ SECTION_BANNERS = (
 
 
 def is_header_candidate(stripped: str) -> bool:
-    """True if ``stripped`` looks like an ALL-CAPS recipe / section title."""
+    """True if ``stripped`` looks like a recipe / section title.
+
+    Accepts two flavours:
+    1. ALL-CAPS lines (Sloppy Joe's style, "GIN COCKTAIL.").
+    2. Title Case lines (1917 Seventy Recipes / 1898 Before & After style:
+       "West Indian Swizzle.", "The Dream.").
+    """
     if not stripped or len(stripped) < 3 or len(stripped) > 60:
         return False
     if PAGE_NUM_RE.match(stripped):
-        return False
-    if not HEADER_RE.match(stripped):
-        return False
-    if LOWER_RE.search(stripped):
-        # mixed case → not a header
         return False
     upper = stripped.upper()
     for bad in HEADER_BLACKLIST_SUBSTR:
         if bad in upper:
             return False
-    # Must contain at least 2 letters (excludes lone numbers / dashes).
     letter_count = sum(c.isalpha() for c in stripped)
     if letter_count < 2:
         return False
+
+    has_lower = bool(LOWER_RE.search(stripped))
+    if not has_lower:
+        # ALL-CAPS form
+        return bool(HEADER_RE_UPPER.match(stripped))
+
+    # Mixed case → must look Title Case AND not be a sentence.
+    body = stripped.rstrip(" .:")
+    words = body.split()
+    if not (1 <= len(words) <= 8):
+        return False
+    # No commas inside the candidate (those mark prose / lists).
+    if "," in body:
+        return False
+    # Reject "ingredient continuation" lines — first token is an OCR
+    # mangled fraction or a quantity word.
+    first = words[0].lower().strip(".':-—")
+    if first in INGREDIENT_FIRST_TOKENS:
+        return False
+    if INGREDIENT_PREFIX_RE.match(stripped):
+        return False
+    # First word must start with a letter and start uppercase.
+    if not words[0][:1].isalpha() or not words[0][:1].isupper():
+        return False
+    # Every word must either start with uppercase, be a known small
+    # joining word, or be a digit / Roman numeral.
+    for w in words:
+        wclean = w.strip(".':-—")
+        if not wclean:
+            continue
+        if wclean[:1].isupper():
+            continue
+        if wclean.lower() in TITLE_JOINS:
+            continue
+        if wclean.isdigit():
+            continue
+        return False
+    # Reject "<ingredient-adjective> <ingredient-noun>" pairs ("Powdered
+    # Sugar.", "Cracked Ice.", "Yellow Chartreuse."). The adjective set is
+    # small on purpose so cocktail names like "Tigers Milk" or "Sloppy Joe"
+    # survive.
+    INGREDIENT_ADJ = {
+        "powdered", "cracked", "shaved", "broken", "crushed",
+        "yellow", "green", "white", "red", "dark",
+        "half", "quarter", "whole", "double", "single",
+        "several", "few", "some", "fresh", "old",
+    }
+    if len(words) == 2:
+        first_l = words[0].lower().strip(".':-—")
+        last_l = words[-1].lower().strip(".':-—")
+        if first_l in INGREDIENT_ADJ and last_l in INGREDIENT_NOUNS:
+            return False
+        # Pure "<unit-word>" or single ingredient-noun line.
+        if last_l in INGREDIENT_UNIT_WORDS and first_l in INGREDIENT_ADJ:
+            return False
+    if len(words) == 1:
+        only = words[0].lower().strip(".':-—")
+        if only in INGREDIENT_NOUNS or only in INGREDIENT_UNIT_WORDS:
+            return False
     return True
 
 
