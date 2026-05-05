@@ -3,12 +3,16 @@
 # non-empty sibling .txt. Idempotent: skips PDFs whose .txt already
 # has content. Sequential by default; pass --jobs N for parallelism.
 #
-# Languages and the small per-PDF settings live in the table below
-# inside this script — easier than carrying CLI args for every book.
-#
 # Usage:
 #   tools/euvs-archive/ocr_all_pdfs.sh           # serial
 #   tools/euvs-archive/ocr_all_pdfs.sh --jobs 4  # 4 PDFs in parallel
+#
+# Note: ocrmypdf on Ubuntu 24.04 ships with a /usr/bin/python3 shebang
+# that may break if python3-pil's C extensions were built for a
+# different Python version (e.g. 3.12 vs the system 3.11). If you see
+# "ImportError: cannot import name '_imaging' from 'PIL'", patch the
+# shebang to `#!/usr/bin/env python3.12` (or whichever Python has the
+# matching PIL build).
 set -euo pipefail
 
 JOBS=1
@@ -24,27 +28,29 @@ BOOKS="$ROOT/data/euvs-books"
 WORK="/tmp/euvs-ocrmypdf"
 mkdir -p "$WORK"
 
-# stem (without .pdf) → tesseract language code(s) understood by ocrmypdf.
-declare -A LANGS=(
-  ["1862 The Bar Tender's Guide price \$2.50 by Jerry Thomas"]="eng"
-  ["1896 Drinks of All Kinds For All Seasons by Frederick and Seymour Davies"]="eng"
-  ["1900 Harry Johnson's New and Improved Bartenders' Manual"]="eng"
-  ["1902 156 Recettes de Boissons Américaines by N Larsen"]="fra"
-  ["1904 Stuart's Fancy Drinks and How To Mix Them"]="eng"
-  ["1912 156 Recettes de Boissons Américaines by N Larsen"]="fra"
-  ["1917 Recipes for Mixed Drinks by Hugo R Ensslin (second edition)"]="eng"
-  ["1920 156 recettes de boissons américaines by N Larsen"]="fra"
-  ["1930 Cocktails (Art Deco Manuscript Book East Bar Hotel Esplanade Prague) by F Koki"]="deu+fra"
-  ["1935 Le Bar Américan Cocktails by George Pillaert"]="fra"
-  ["1936 Gran Manual de Cocktails by Raymond Porta Mingot"]="spa"
-  ["1950 El Barman Practico de Julio Cesar Clavé"]="spa"
-  ["1954 Anis Esprit de Joie et de Santé by André Montagard"]="fra"
-  ["The Complete Distiller by Ambrose Cooper (1757)"]="eng+lat"
+# stem (without .pdf, no quoting) → tesseract language code(s).
+# Each line: <lang>\t<stem>.
+QUEUE=$(cat <<'EOF'
+eng	1862 The Bar Tender's Guide price $2.50 by Jerry Thomas
+eng	1896 Drinks of All Kinds For All Seasons by Frederick and Seymour Davies
+eng	1900 Harry Johnson's New and Improved Bartenders' Manual
+fra	1902 156 Recettes de Boissons Américaines by N Larsen
+eng	1904 Stuart's Fancy Drinks and How To Mix Them
+fra	1912 156 Recettes de Boissons Américaines by N Larsen
+eng	1917 Recipes for Mixed Drinks by Hugo R Ensslin (second edition)
+fra	1920 156 recettes de boissons américaines by N Larsen
+deu+fra	1930 Cocktails (Art Deco Manuscript Book East Bar Hotel Esplanade Prague) by F Koki
+fra	1935 Le Bar Américan Cocktails by George Pillaert
+spa	1936 Gran Manual de Cocktails by Raymond Porta Mingot
+spa	1950 El Barman Practico de Julio Cesar Clavé
+fra	1954 Anis Esprit de Joie et de Santé by André Montagard
+eng+lat	The Complete Distiller by Ambrose Cooper (1757)
+EOF
 )
 
 run_one() {
-  local stem="$1"
-  local lang="$2"
+  local lang="$1"
+  local stem="$2"
   local pdf="$BOOKS/$stem.pdf"
   local out="$BOOKS/$stem.txt"
   local work="$WORK/$stem.pdf"
@@ -58,32 +64,35 @@ run_one() {
     return 0
   fi
   echo "[ocr] start $stem ($lang)" >&2
-  ocrmypdf \
-    --output-type pdf \
-    --skip-text \
-    --rotate-pages \
-    --deskew \
-    --sidecar "$out" \
-    -l "$lang" \
-    --jobs 4 \
-    "$pdf" "$work" >/dev/null 2>&1 || \
-    { echo "[ocr] FAIL $stem (exit $?)" >&2; return 0; }
-  local size
-  size=$(wc -c < "$out" 2>/dev/null || echo 0)
-  echo "[ocr] done  $stem — $size bytes" >&2
+  if ocrmypdf \
+       --output-type pdf \
+       --skip-text \
+       --rotate-pages \
+       --deskew \
+       --sidecar "$out" \
+       -l "$lang" \
+       --jobs 4 \
+       "$pdf" "$work" >>"$WORK/ocrmypdf.log" 2>&1; then
+    local size
+    size=$(wc -c < "$out" 2>/dev/null || echo 0)
+    echo "[ocr] done  $stem — $size bytes" >&2
+  else
+    local code=$?
+    echo "[ocr] FAIL  $stem (exit $code) — see $WORK/ocrmypdf.log" >&2
+    return 0  # don't abort the whole batch
+  fi
 }
 
 export -f run_one
 export BOOKS WORK
 
-# Build a NUL-separated list of "stem<TAB>lang" pairs and dispatch.
-{
-  for stem in "${!LANGS[@]}"; do
-    printf "%s\t%s\0" "$stem" "${LANGS[$stem]}"
-  done
-} | xargs -0 -I{} -P "$JOBS" bash -c '
-  IFS=$"\t" read -r stem lang <<< "{}"
-  run_one "$stem" "$lang"
-'
+# Dispatch sequentially or in parallel via xargs.
+echo "$QUEUE" | grep -v '^[[:space:]]*$' | \
+  xargs -d '\n' -P "$JOBS" -n 1 -I{} bash -c '
+    line="{}"
+    lang="${line%%	*}"
+    stem="${line#*	}"
+    run_one "$lang" "$stem"
+  '
 
-echo "[ocr] all done"
+echo "[ocr] all done" >&2
