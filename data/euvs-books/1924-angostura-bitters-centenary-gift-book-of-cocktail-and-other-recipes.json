@@ -1,0 +1,997 @@
+{
+  "book_id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes",
+  "metadata": {
+    "title": "Angostura Bitters Centenary Gift Book of Cocktail and other recipes",
+    "author": "Dr. J. G. B. Siegert & Sons, Ltd.",
+    "year": 1924,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Dr. J. G. B. Siegert & Sons, Ltd. (sole consignees: Henderson & Co. London)",
+    "city": "Port of Spain, Trinidad / London",
+    "edition": "Edición Centenaria 1824-1924",
+    "source_file": "1924 Angostura Bitters Centenary Gift Book of Cocktail and other recipes.txt",
+    "notes": "Folleto promocional publicado por Angostura Bitters para conmemorar el centenario de la marca (1824-1924). Combina texto publicitario, una breve historia del producto, ~12 recetas de cócteles clásicos y ~5 recetas culinarias en las que la firma sugería emplear sus amargos. Idioma original: inglés. Saltadas (no son recetas reales): FOREWORD, (Forward prose, not a recipe); A POPULAR FALLACY. (Defense-of-product copy, not a recipe); AND HOW TO MAKE THEM. (Section preamble explaining how to mix cocktails, not a recipe); THE FAR EAST. (Anecdota literaria sin receta estructurada); IN THE 1900 CAMPAIGN IN SOUTH AFRICA. (Anecdota belica sobre Angostura, no es una receta); OUR LABEL (Promotional banner ('Our Label')); INDISPENSABLE FOR (Promotional banner ('Indispensable for…')); SATISFACTION. (Promotional banner ('Satisfaction'))"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": null,
+      "title_es": null,
+      "content_original": "ANGOSTURA\n          BITTERS\n                                              K\n                        CHD\n\n\n                 CENTENARY, 1924.             f\nIi               GIFT    BOOK\n                        OF\n                                                  1\ni                COCKTAIL\nI;                      AND",
+      "content_es": null
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "OTHER RECIPES",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 3,
+      "type": "recipes_section",
+      "title": "COCKTAILS",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 4,
+      "type": "recipes_section",
+      "title": "CHAMPAGNE CUP",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 5,
+      "type": "recipes_section",
+      "title": "CHAMPAGNE PUNCH.",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 6,
+      "type": "recipes_section",
+      "title": "PORT WINE PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 7,
+      "type": "recipes_section",
+      "title": "WHISKY PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 8,
+      "type": "recipes_section",
+      "title": "SOME OTHER DAINTY RECIPES.",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-001",
+      "order": 1,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "GIN COCKTAIL.",
+      "name_es": "Coctel de Ginebra",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Crushed ice",
+          "item_es": "Hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Dr. Siegert's Angostura Bitters",
+          "item_es": "Amargo de Angostura del Dr. Siegert",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lump of sugar",
+          "item_es": "Terron de azucar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Twisted lemon peel",
+          "item_es": "Cascara de limon retorcida",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Beat well and pour into a cocktail glass.",
+      "method_es": "Batir bien y servir en una copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": "Twisted lemon peel",
+      "page_reference": null,
+      "raw_text": "GIN COCKTAIL.\nHalf wineglass crushed ice; half wineglass\ngin ; half teaspoonful Dr. fSiegert's Angostura\nBitters; one lump of sugar; one piece of twisted\nlemon peel ; beat well and pour into a cocktail glass.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-002",
+      "order": 2,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "MANHATTAN COCKTAIL.",
+      "name_es": "Coctel Manhattan",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Whisky",
+          "item_es": "Whisky",
+          "amount": 0.333,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth",
+          "item_es": "Vermut",
+          "amount": 0.333,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Dr. Siegert's Angostura Bitters",
+          "item_es": "Amargo de Angostura del Dr. Siegert",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lump of sugar",
+          "item_es": "Terron de azucar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para servir"
+        }
+      ],
+      "method_original": "Combine the whisky, vermouth, bitters and sugar; serve with ice.",
+      "method_es": "Combinar el whisky, el vermut, el amargo y el azucar; servir con hielo.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MANHATTAN COCKTAIL.\nOne-third wineglass whisky; one-third wine\nglass Veimouth ; three dashes Dr. Siegert's Angos\ntura Bitters; one lump sugar, and serve with ice.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-003",
+      "order": 3,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "MARTINI COCKTAIL.",
+      "name_es": "Coctel Martini",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2/3",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth",
+          "item_es": "vermut",
+          "amount": "1/3",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Dr. Siegert's Angostura Bitters",
+          "item_es": "amargo de Angostura",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Combine gin, vermouth and Angostura bitters; stir or beat with ice and strain into a cocktail glass.",
+      "method_es": "Combinar la ginebra, el vermut y el amargo de Angostura; mezclar con hielo y servir colado en una copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MARTINI COCKTAIL.\nTwo-thirds wineglass gin ; one-third wineglass\nVermouth ; three dashes Dr. Siegert's Angostura\nBitters.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-004",
+      "order": 4,
+      "section_title": "COCKTAILS",
+      "category": "other",
+      "name_original": "WEST INDIAN SWIZZLE.",
+      "name_es": "Swizzle de las Indias Occidentales",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "azucar fina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Dr. Siegert's Angostura Bitters",
+          "item_es": "amargo de Angostura",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "brandy or Jamaica rum",
+          "item_es": "brandy o ron de Jamaica",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "crushed ice",
+          "item_es": "hielo picado",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Place sugar, Angostura bitters, brandy or Jamaica rum and crushed ice in a glass; beat with a swizzle stick until the ice is melted, then pour off into a cocktail glass.",
+      "method_es": "Colocar el azucar, el amargo de Angostura, el brandy o ron de Jamaica y el hielo picado en un vaso; batir con un palillo swizzle hasta que el hielo se derrita y verter en una copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WEST INDIAN SWIZZLE.\nOne teaspoonful fine sugar; one leaspoonful\n Dr. Siegert's Angostura Bitters; half wineglass\n brandy or Jamaica rum ; half wineglass crushed\n ice; beat until the ice is melted and then pour off\n—into a cocktail glass.                       .'",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-005",
+      "order": 5,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "WHISKY COCKTAIL.",
+      "name_es": "Coctel de Whisky",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "crushed ice",
+          "item_es": "hielo picado",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Dr. Siegert's Angostura Bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1/2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lump of sugar",
+          "item_es": "terron de azucar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "cascara de limon retorcida",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Combine crushed ice, whisky, Angostura bitters, sugar lump and twisted lemon peel; beat well and pour into a cocktail glass.",
+      "method_es": "Combinar el hielo picado, el whisky, el amargo de Angostura, el terron de azucar y la cascara de limon retorcida; batir bien y servir en una copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": "twisted lemon peel",
+      "page_reference": null,
+      "raw_text": "WHISKY COCKTAIL.\nPlalf wineglass crushed ice; half wineglass\n whisky; half teaspoonful Dr. Siegert's Angostura\n Bitters; one lump of sugar;, piece of twisted lemon\n peel ; beat well and pour into a cocktail gla.ss.\n        One of the most popular appetisers of to-day is known as a\n                         \"TRINITY.\"\n     Recipe; Three daslies Angostura Bitters; one-\n third each Gin, French Vermouth and Italian Ver\nmouth. A piece of twisted lemon peel is a great\nimprovement.\nGIN AND ANGOSTURA                              A    fow    drops of\nWHISKY AND ANGOSTURA                           -Angostura added to\nSHERRY AND ANGOSTURA                           any of tliese sinrits\nVERMOUTH & ANGOSTURA                           impart a deligiitful\n                                               aroma and improve\nbrandy and ANGOSTURA                           tlie flavour.",
+      "notes": "El bloque OCR incluye tambien una receta secundaria 'Trinity' (gin + vermut frances + vermut italiano + amargo) que en el original aparece en la misma pagina."
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-006",
+      "order": 6,
+      "section_title": "WHISKY PUNCH",
+      "category": "cup",
+      "name_original": "CLARET CUP",
+      "name_es": "Copa de Clarete",
+      "yield": "Para varias personas",
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azucar",
+          "amount": "1/2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon rind",
+          "item_es": "cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "orange slices",
+          "item_es": "rodajas de naranja",
+          "amount": 3,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "lemon slices",
+          "item_es": "rodajas de limon",
+          "amount": 3,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "cucumber peel",
+          "item_es": "cascara de pepino",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "amargo de Angostura",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una copita (pony)"
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una copita (pony)"
+        },
+        {
+          "item_original": "white curacao",
+          "item_es": "curacao blanco",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una copita (pony)"
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "clarete (vino tinto de Burdeos)",
+          "amount": 1,
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "soda",
+          "item_es": "soda",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una botella"
+        },
+        {
+          "item_original": "lumps of ice",
+          "item_es": "trozos de hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "varios"
+        }
+      ],
+      "method_original": "Use a glass jug. Combine sugar, lemon rind, orange and lemon slices, cucumber peel, Angostura bitters, brandy, maraschino, white curacao, sherry, claret, soda and several lumps of ice. Ornament with fresh mint.",
+      "method_es": "En una jarra de vidrio combinar el azucar, la cascara de limon, las rodajas de naranja y limon, la cascara de pepino, el amargo de Angostura, el brandy, el maraschino, el curacao blanco, el jerez, el clarete, la soda y varios trozos de hielo. Decorar con menta fresca.",
+      "glassware": "glass jug",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "CLARET CUP\n(use Glass Jug).\n     Half teaspoonful sugar; one rind of lemon;\n three slices orange; three slices lemon; one slice\n cucumber peel; one teaspoonful Angostura Bitters;\n one pony brandy ; one pony maraschino; one pony\n white curagoa; one wineglass sherry; one quart\n daret; one bottle soda; several lumps of ice.\n Ornament with fresh mint.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-007",
+      "order": 7,
+      "section_title": "WHISKY PUNCH",
+      "category": "punch",
+      "name_original": "CLARET LEMONADE",
+      "name_es": "Limonada de Clarete",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azucar",
+          "amount": "3/4",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "jugo de limon",
+          "amount": "6-8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1/2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "clarete (vino tinto de Burdeos)",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": "media copa larga"
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "opcional, mejora notablemente"
+        }
+      ],
+      "method_original": "Use a large glass. Combine sugar and lemon juice, fill up with water, shake well in a shaker, and ornament with fruits in season. Top with Angostura bitters and half a glass of claret, taking care that the claret floats on top of the lemonade. Serve with a straw. Greatly improved by a little ice and less water.",
+      "method_es": "En un vaso largo combinar el azucar y el jugo de limon, llenar con agua y batir en una coctelera. Decorar con frutas de temporada. Coronar con el amargo de Angostura y media copa de clarete, procurando que el clarete flote sobre la limonada. Servir con pajita. Mejora notablemente con un poco de hielo y menos agua.",
+      "glassware": "large glass",
+      "garnish": "fruits in season",
+      "page_reference": null,
+      "raw_text": "CLARET LEMONADE\n(Use a Large Glass).\n    Three-quarters tablespoonful of sugar; six to\neight dashes of lemon juice. Fill up with water;\nshake up well with a shaker, ornament with fruits\nin season, and top it off with half-teaspoonful An\ngostura Bitters; half-glass of claret.    Be careful\n to have the claret flowing on top of lemonade\nand serve with a straw. Greatly improved by a little\nice and less water.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-008",
+      "order": 8,
+      "section_title": "WHISKY PUNCH",
+      "category": "cocktail",
+      "name_original": "IRISH COCKTAIL.",
+      "name_es": "Coctel Irlandes",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Angostura",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Irish whisky",
+          "item_es": "Whisky irlandes",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth",
+          "item_es": "Vermut",
+          "amount": "1/2",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Three dashes Angostura Bitters; one-half whisky; one-half Vermouth; fill with ice, mix, and strain into a cocktail glass.",
+      "method_es": "Anadir tres golpes de Angostura, una mitad de whisky y una mitad de vermut. Llenar con hielo, mezclar y colar en una copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IRISH COCKTAIL.\nThree dashes Angostura Bitters; one-half\nwhisky; one-half Vermouth; fill with ice, mix,\nand strain into a cocktail glass.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-009",
+      "order": 9,
+      "section_title": "WHISKY PUNCH",
+      "category": "cocktail",
+      "name_original": "LEMON COCKTAIL.",
+      "name_es": "Coctel de Limon",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": null,
+          "unit": null,
+          "notes": "al gusto"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Angostura",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": null,
+          "unit": null,
+          "notes": "endulzar al gusto"
+        }
+      ],
+      "method_original": "Lemon juice; three dashes Angostura Bitters; sweeten to taste; fill with ice, mix, and strain into a cocktail glass.",
+      "method_es": "Combinar jugo de limon, tres golpes de Angostura y endulzar al gusto. Llenar con hielo, mezclar y colar en una copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LEMON COCKTAIL.\nLemon juice; three dashes Angostura Bitters;\nsweeten to taste; fill with ice, mix, and strain into\na cocktail glass.\n                         10",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-010",
+      "order": 10,
+      "section_title": "WHISKY PUNCH",
+      "category": "cup",
+      "name_original": "CIDER CUP",
+      "name_es": "Cup de Sidra",
+      "yield": "Para varias personas (jarra de cristal)",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": "1/2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon rind",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Orange slices",
+          "item_es": "Rodajas de naranja",
+          "amount": 3,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon slices",
+          "item_es": "Rodajas de limon",
+          "amount": 3,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "Cucumber peel",
+          "item_es": "Cascara de pepino",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Angostura",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony (aprox. 30 ml)"
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony (aprox. 30 ml)"
+        },
+        {
+          "item_original": "White curacao",
+          "item_es": "Curasao blanco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony (aprox. 30 ml)"
+        },
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Cider",
+          "item_es": "Sidra",
+          "amount": 1,
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "Soda water",
+          "item_es": "Agua con gas",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una botella"
+        },
+        {
+          "item_original": "Ice lumps",
+          "item_es": "Trozos de hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "varios"
+        }
+      ],
+      "method_original": "Half teaspoonful sugar; one rind of lemon; three slices orange; three slices lemon; one slice cucumber peel; one teaspoonful Angostura Bitters; one pony brandy; one pony maraschino; one pony white curacao; one wineglass sherry; one quart cider; one bottle soda; several lumps of ice. Ornament with fresh mint.",
+      "method_es": "En una jarra de cristal combinar el azucar, la cascara de limon, las rodajas de naranja y limon, la cascara de pepino y la Angostura. Anadir el brandy, el maraschino, el curasao blanco, el jerez, la sidra y la soda. Incorporar varios trozos de hielo y decorar con menta fresca.",
+      "glassware": "Glass jug",
+      "garnish": "Fresh mint",
+      "page_reference": null,
+      "raw_text": "CIDER CUP\n(use Glass Jug).\n    Half teaspoonful sugar; one rind of lemon;\nthree slices orange; three slices lemon; one slice\ncucumber peel; one teaspoonful Angostura Bitters;\none pony brandy; one pony maraschino; one pony\nwhite curaQoa; one wineglass sherry; one quart\ncider; one bottle soda; several lumps of ice.\nOrnament with fresh mint.\n    ANGOSTURA AND MINERAL WATERS.\n    Half-teaspoonful of Angostura added to\nmineral waters of any kind is a vast improvement.\n     Large glass with two or three lumps of ice; a\ndash or two of Angostura Bitters; one or two\nslices of orange. Fill up glass with soda, lemonade,\nor other mineral water, and place a tea spoon filled\nwith sugar on top of the glass for use at discretion.\n     Should a long drink not be desired, a little\npure orange or lemon juice sugared, with a dash or\ntwo of Angostura added to suit taste, makes a very\nrefreshing sip.\n            ANGOSTURA BARLEY WATER.\n     One teaspoonful of Robinson s Patent Barley\nmi.xed wdth a little cold water, the juice of one\nlime, and two tablespoonfuls of granulated sugar.\n     Pour on about two pints of boiling water, and\nleave to cool.\n     Serve with a dash of Angostura and soda w'ater\nto taste.\n                          11\n\nThe original manufacture of a few bottles of Angostura\nBitters for private consumption has developed into\nan industry with an output of nearly a million\n  bottles a year and a world-wide distribution.",
+      "notes": null
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-011",
+      "order": 11,
+      "section_title": "SOME OTHER DAINTY RECIPES.",
+      "category": "other",
+      "name_original": "Fruit Salad",
+      "name_es": "Ensalada de frutas",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Fresh fruits, assorted",
+          "item_es": "Frutas frescas variadas",
+          "amount": null,
+          "unit": null,
+          "notes": "Al gusto"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": null,
+          "unit": "dash",
+          "notes": "Unas pocas gotas"
+        }
+      ],
+      "method_original": "A few drops of Angostura add a subtle and delicate distinction which makes the hostess the envy of all her friends.",
+      "method_es": "Anadir unas pocas gotas de Angostura sobre la ensalada de frutas para aportar un toque sutil y delicado que la hace distintiva.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FRUIT JSALAD.\nA few drops of Angostura add a subtle and\ndelicate distinction which makes the hostess the\nenvy.of all her friends.",
+      "notes": "Receta culinaria (no coctel) incluida en el folleto."
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-012",
+      "order": 12,
+      "section_title": "SOME OTHER DAINTY RECIPES.",
+      "category": "other",
+      "name_original": "Cake Icing",
+      "name_es": "Glaseado de pastel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 libra (pound)"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Una o mas cucharaditas"
+        }
+      ],
+      "method_original": "One or more teaspoonsful of Angostura Bitters to a pound of sugar give an exquisite flavouring.",
+      "method_es": "Anadir una o mas cucharaditas de Angostura por cada libra de azucar para aportar un sabor exquisito al glaseado.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CAKE ICING.\nOne or more teaspoonsful of Angostura Bitters\nto a pound of sugar give an exquisite flavouring.",
+      "notes": "Receta culinaria (no coctel) incluida en el folleto."
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-013",
+      "order": 13,
+      "section_title": "SOME OTHER DAINTY RECIPES.",
+      "category": "other",
+      "name_original": "Grape Ice",
+      "name_es": "Helado de uva",
+      "yield": "Para 4-6 personas",
+      "ingredients": [
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 2,
+          "unit": null,
+          "notes": "2 libras"
+        },
+        {
+          "item_original": "Lemons",
+          "item_es": "Limones",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Orange",
+          "item_es": "Naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Grapes (black preferred)",
+          "item_es": "Uvas (preferentemente negras)",
+          "amount": 2,
+          "unit": null,
+          "notes": "2 libras"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": "Una cucharada de postre"
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 1,
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "Egg whites",
+          "item_es": "Claras de huevo",
+          "amount": 4,
+          "unit": "piece",
+          "notes": "Opcional, para servir en copas"
+        },
+        {
+          "item_original": "Cochineal (a few drops)",
+          "item_es": "Cochinilla (unas gotas)",
+          "amount": null,
+          "unit": "dash",
+          "notes": "Opcional, para color"
+        }
+      ],
+      "method_original": "Two pounds of sugar; two lemons; one orange; two pounds of grapes (black preferred); one dessert spoonful Angostura Bitters; one quart water. Put grapes, sugar, and water in a pan and place over a slow fire, under constant stirring bring it to a boil, then pass it through a sieve, leaving skin and pips behind. Squeeze the lemons and orange and add the juice. When cold, freeze in the usual manner. If this is to be served in glasses, beat up four egg whites quite stiff and mix it into the batch smooth and foamy. A few drops of cochineal should be added to give it a more attractive appearance, and two or three whole grapes placed on each portion.",
+      "method_es": "Colocar las uvas, el azucar y el agua en una cacerola a fuego lento; llevar a ebullicion removiendo constantemente y luego pasar por un tamiz para retirar pieles y pepitas. Exprimir los limones y la naranja y anadir el jugo junto con el Angostura. Cuando este frio, congelar como un sorbete. Para servir en copas, batir cuatro claras a punto de nieve e incorporarlas suavemente; anadir unas gotas de cochinilla para mejorar el color y decorar cada porcion con dos o tres uvas enteras.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CRAPE ICE.\nTwo pounds of sugar; two lemons ; one orange ;\ntwo pounds of grapes(black preferred); one dessert\nspoonful Angostura Bitters; one quart water. Put\ngrapes, sugar, and water in a pan and place over a\nslow fire, under constant stirring bring it to a boil,\nthen pass it through a sieve, leaving skin and pips\nbehind. Squeeze the lemons and orange and add\n                           15\n\n the juice. When cold, freeze in the usual manner.\n If this is to be served in glasses, beat up four egg\n whites quite stiff and mix it into the batch smooth\n and foamy. A few drops of cochineal should be\n added to give it a more attractive appearance, and\n two or three whole grapes placed on each portion.\n             ANGOSTURA BLANC-MANGE.\n        Slake six teaspoonsful of cornflour with a little\n ^ilk. Boil         pints of good, sweet milk, remove\n rom fire and pour the slaked cornflour into it,\nstirring well. Then hoil for fully ten minutes,\nstirring continuously, and, while stirring, add two\nteaspoonsful of Angostura Bitters.         Pour into a\nquart mould and allow to cool. This will, give a\nrefreshing and wholesome sweet of delicate flavour\nond attractive colouring.\n             ANGOSTURA SPONGE CAKE.\n     Beat yolks of four eggs until thick and creamy ;\nadd two-thirds cup sugar (a little at a time), beating\nwith an egg-beater; add 3 teaspoonsful of Angos\ntura Bitters, then the whites of the eggs (beaten\nuntil stiff). When the whites are partly mixed with\nyolks and sugar, add two-thirds cup of flour mixed\nwith 1 teaspoonful salt and sifted.       Bake for one\nhour.\n              ANGOSTURA ICE CREAM.\n    One quart of milk, two eggs, five teaspoonsful\nAngostura Bitters, and Vanilla essence to taste..\nWhen cold, freeze in the usual manner.\n                            16",
+      "notes": "Receta culinaria (no coctel) incluida en el folleto."
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-014",
+      "order": 14,
+      "section_title": "SOME OTHER DAINTY RECIPES.",
+      "category": "other",
+      "name_original": "Hollandaise Cream",
+      "name_es": "Crema holandesa",
+      "yield": "Para 4-6 personas",
+      "ingredients": [
+        {
+          "item_original": "Milk",
+          "item_es": "Leche",
+          "amount": 1.5,
+          "unit": null,
+          "notes": "Una pinta y media"
+        },
+        {
+          "item_original": "Eggs",
+          "item_es": "Huevos",
+          "amount": 6,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Media libra"
+        },
+        {
+          "item_original": "Gelatine",
+          "item_es": "Gelatina",
+          "amount": null,
+          "unit": null,
+          "notes": "Una pizca, para cuajar"
+        },
+        {
+          "item_original": "Fruit syrup",
+          "item_es": "Sirope de fruta",
+          "amount": null,
+          "unit": null,
+          "notes": "Aprovechar el de la fruta en conserva"
+        },
+        {
+          "item_original": "Cochineal (prepared)",
+          "item_es": "Cochinilla (preparada)",
+          "amount": null,
+          "unit": "dash",
+          "notes": "Para colorear de rosa"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Prepare a custard with one-and-a-half pints of milk, six eggs, and half pound sugar; set when cold with a little gelatine; sweeten to taste. Serve with this cream a little fruit sauce made with the syrup from your fruit, coloured pink with prepared cochineal and flavoured with one tablespoonful of Angostura Bitters.",
+      "method_es": "Preparar una crema inglesa con una pinta y media de leche, seis huevos y media libra de azucar; cuajar en frio con un poco de gelatina y endulzar al gusto. Acompanar con una salsa de fruta hecha con el sirope de la fruta, colorearla de rosa con cochinilla preparada y aromatizar con una cucharada de Angostura.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOLLANDAISE CREAM.\nPrepare a custard with one-and-a-half pints of\nmilk, six eggs, and half pound sugar; set when\ncold with a little gelatine ; sweeten to taste. Serve\nwith this cream a little fruit sauce made \\\\ ith the\nsyrup from your fruit, coloured pink with prepared\ncochineal and flavoured with one tablespoonful of\nAngostura Bitters.",
+      "notes": "Receta culinaria (no coctel) incluida en el folleto."
+    },
+    {
+      "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes-015",
+      "order": 15,
+      "section_title": "SOME OTHER DAINTY RECIPES.",
+      "category": "other",
+      "name_original": "Iced Cabinet Pudding",
+      "name_es": "Pudin Cabinet helado",
+      "yield": "Para 4-6 personas",
+      "ingredients": [
+        {
+          "item_original": "Sponge cake (cut into fingers)",
+          "item_es": "Bizcocho cortado en tiras",
+          "amount": null,
+          "unit": null,
+          "notes": "Cantidad suficiente para forrar el molde"
+        },
+        {
+          "item_original": "Preserved cherries",
+          "item_es": "Cerezas en conserva",
+          "amount": null,
+          "unit": null,
+          "notes": "Unas pocas"
+        },
+        {
+          "item_original": "Angelica",
+          "item_es": "Angelica confitada",
+          "amount": null,
+          "unit": null,
+          "notes": "Una pizca"
+        },
+        {
+          "item_original": "Apricots",
+          "item_es": "Albaricoques",
+          "amount": null,
+          "unit": null,
+          "notes": "En capas"
+        },
+        {
+          "item_original": "Peaches",
+          "item_es": "Melocotones",
+          "amount": null,
+          "unit": null,
+          "notes": "En capas"
+        },
+        {
+          "item_original": "Pineapple",
+          "item_es": "Pina",
+          "amount": null,
+          "unit": null,
+          "notes": "Un poco, en capas"
+        },
+        {
+          "item_original": "Milk",
+          "item_es": "Leche",
+          "amount": 1,
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azucar",
+          "amount": 2,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Egg yolks",
+          "item_es": "Yemas de huevo",
+          "amount": 6,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Vanilla essence",
+          "item_es": "Esencia de vainilla",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "Tres o cuatro gotas"
+        },
+        {
+          "item_original": "Gelatine",
+          "item_es": "Gelatina",
+          "amount": 1.5,
+          "unit": "oz",
+          "notes": "Remojada en agua fria"
+        },
+        {
+          "item_original": "Tinned fruit syrup",
+          "item_es": "Sirope de fruta en conserva",
+          "amount": null,
+          "unit": null,
+          "notes": "Para la salsa"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": "Para aromatizar la salsa"
+        }
+      ],
+      "method_original": "Take a clean mould or basin and place into it some sponge cake cut into fingers of a moderate thickness. Add a few preserved cherries, a little angelica, and to improve this, pudding put in alternate layers some apricots, peaches, and a little pineapple. Next take one quart of milk, to which add two ozs. sugar, six yolks of eggs, three or four drops of essence of vanilla and pour this over your cake (custard must be boiled). Soak 1.5 ozs. of gelatine in cold water, then drain off, melt slowly and when cold add to cold custard. Have some broken ice prepared; place mould on this or in ice-box, and let it stand for two hours. Turn out on to a silver dish (which should be kept on the ice also); have ready some syrup from the tinned fruits, to which should be added one tablespoonful of Angostura Bitters to flavour, and pour this round the pudding.",
+      "method_es": "Forrar un molde limpio con tiras de bizcocho de grosor moderado. Anadir cerezas en conserva, un poco de angelica y montar capas alternas de albaricoques, melocotones y pina. Preparar una crema inglesa hervida con un cuarto de leche, dos onzas de azucar, seis yemas y unas gotas de esencia de vainilla; verterla sobre el bizcocho. Hidratar la gelatina en agua fria, escurrir, fundir lentamente y, ya fria, incorporarla a la crema fria. Colocar el molde sobre hielo picado o en la nevera y dejar reposar dos horas. Desmoldar sobre un plato de plata frio; aromatizar el sirope de la fruta en conserva con una cucharada de Angostura y verterlo alrededor del pudin.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ICED CABINET PUDDING.\nTake a clean mould or basin and place into it\nsome sponge cake cut into fingers of a moderate\nthickness. Add a few preserved cherries, a little\nangelica, and to improve this, pudding put in alter\nnate layers some apricots, peaches, and a little\npineapple. Next take one quart of milk, to which\nadd two ozs. sugar, six yolks of eggs, three or four\ndrops of essence of vanilla and pour this over your\ncake (custard must be boiled). Soak li ozs. of\ngelatine in cold water, then drain off, melt slowly\nand when cold add to cold custard. Have some\nbroken ice prepared; place mould on this or in\nice-box, and let it stand for two hours. Turn out\non to a silver dish (which should be kept on the\nice also); have ready some syrup from the tinned\nfruits, to which should be added one tablespoonful\nof Angostura Bitters to flavour, and pour this\nround the pudding-\n               ANGOSTURA JELLY.\n     Take 1 quart water; 3 ozs. of gelatine; i lt>-\n                           17\n\n loaf sugar; rind and juice of three lemons; a small\n piece of cinnamon ; 4 cloves; Ibayleaf; 6 coriander\n seeds. Place altogether in a stewpan; when near\n to the boil add the beaten whites of two eggs, then\n bring to the boil. Take from the fire and let it\n stand for ten minutes; then pass through jelly\n bag or a piece of muslin into a basin or cooler;\n after a few minutes add 1 tablespoonful of An\n gostura. Place your jelly in a cool place to set into\n your glass or mould.\n     This jelly will be found very nice with fresh\nfruits placed in the jelly, or eaten with fresh fruit.\n      MACEDOINE DE fruits AU ANGOSTURA.\n       If using fresh fruits, prepare a syrup.       Take\nI lb. loaf sugar, 1 quart water, place on stove and\nbring to boil. When cold, add 1 tablespoonful\nAngostura. Place fruits in a glass or china dish\nand pour syrup over. This is very nice to eat with\nsponge fingers or Genoese cake cut into fingers\nand sugared over. Tinned fruits should be treated\nin the same way, except use .syrup from fruits in\nplace of prepared .syrup.\n\nmpnt A ''' flavouring for Clinstmas Pudding.? and Miiice-\ntfl                      exquisite and distinctive flavour\nusuahy \"Jfsed)                   .substance is the quantity\nsbarn^nJ the appetite and\nsnaipens               AjPPed in Angostura,\n                          encourages         taken daily,\n                                     good health.\n                  Angostura give an excellent flavour\ning m SOUPS. JUGUEO HARE, and similar dishes.\n                            18\n\nORIGIN         OF      ANGOSTURA              BITTERS.\n\n     Ill 1820, Dr. J. G. B. Siegert, a highly accomplished\nmedical savaiiit, settled in Venezuela and devoted much\ntime to the scientific study of the merits of tropical plants.\nIn 1824 his researches resulted in the making of ai-omatic,\ncarminative bitters, the success of which amongst the\ndoctor's patients and friends caused him to commence\nmanufacture on a commercial scale. From their place of\norigin the Bitters became widely known as \" Angostura,\"\nalthougli, in 1846, the name of the Venezuelan town was\nchanged to Ciudad Bolivar. Ever since those early days\nthe secret formula of the renowned Dr. Siegert has been\ncarefully guarded by his descendants and successors in the\ngreat business which he founded, and even to the present\ntime the work of compounding is done personally by mem\nbers of tlie Siegert family. The well-deserved repute in\nwhich A'Ugostura Bitters are hold throughout the world is\nshown by the facj, of their having received the highest\ndistinction and recognition in all Exhibitions of importance\nheld since 1862, the latest being the Gold Medal, with\ndiploma, at Lucerne, 1923—the highest award obtainable.\nIf further proof of their excellence be needed, it is found\nin the Royal warrants with which the firm is honoured.\n\n\n                                   [®g5.4-.",
+      "notes": "Receta culinaria (no coctel) incluida en el folleto."
+    }
+  ]
+}
