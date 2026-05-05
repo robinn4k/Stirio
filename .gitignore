@@ -4,6 +4,10 @@ package-lock.json
 # EUVS Archive — dev-only artifacts. NUNCA commitear ni cachear los PDFs:
 # son decenas de GB y la app no los sirve (solo enlaza a archive.org).
 tools/euvs-archive/.venv/
+tools/euvs-archive/__pycache__/
 tools/euvs-archive/data/downloads/
 tools/euvs-archive/data/logs/
+tools/euvs-archive/data/skeletons/
+tools/euvs-archive/data/enrichments/
+data/euvs-pending.tsv
 *.pdf
