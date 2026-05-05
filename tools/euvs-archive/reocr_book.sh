@@ -61,22 +61,41 @@ if ! ls "$WORK"/p-*.png >/dev/null 2>&1; then
   pdftoppm -r "$DPI" -gray -png "$PDF" "$WORK/p"
 fi
 
-# 2. OCR each PNG in parallel.
+# 2. OCR each PNG. Tesseract emits a non-fatal warning on some pages
+#    (e.g. "box outside rectangle") and exits non-zero even when it
+#    wrote useful output, so we treat *empty .txt* as the only failure
+#    signal and let the script be fully resumable. Use NUL-separated
+#    paths so spaces in $WORK survive xargs.
 export TESS_LANG="$LANG" TESS_PSM="$PSM"
-ls "$WORK"/p-*.png | xargs -I{} -P "$WORKERS" bash -c '
-  in="$1"
-  out="${in%.png}"
-  [[ -s "$out.txt" ]] && exit 0
-  timeout 120 tesseract "$in" "$out" -l "$TESS_LANG" --psm "$TESS_PSM" >/dev/null 2>&1 || \
-    echo "[reocr] WARN: tesseract failed on $(basename "$in")" >&2
-' _ {}
+find "$WORK" -maxdepth 1 -name 'p-*.png' -print0 | sort -z | \
+  xargs -0 -I{} -P "$WORKERS" bash -c '
+    in="$1"
+    out="${in%.png}.txt"
+    [[ -s "$out" ]] && exit 0
+    timeout 120 tesseract "$in" "${in%.png}" -l "$TESS_LANG" --psm "$TESS_PSM" >/dev/null 2>&1 || true
+    [[ -s "$out" ]] || echo "[reocr] WARN: empty OCR for $(basename "$in")" >&2
+  ' _ {}
 
-# 3. Concatenate page texts in order, separated by blank lines.
+# 3. Retry once, sequentially, any pages that still came up empty.
+#    Parallel tesseract under memory pressure occasionally truncates
+#    output; a serial retry recovers most of those.
+shopt -s nullglob
+for png in "$WORK"/p-*.png; do
+  out="${png%.png}.txt"
+  if [[ ! -s "$out" ]]; then
+    echo "[reocr] retry $(basename "$png") sequentially"
+    timeout 180 tesseract "$png" "${png%.png}" -l "$LANG" --psm "$PSM" >/dev/null 2>&1 || true
+  fi
+done
+
+# 4. Concatenate page texts in order, separated by blank lines.
 : > "$OUT_TXT"
-for f in $(ls "$WORK"/p-*.txt 2>/dev/null | sort); do
+for f in "$WORK"/p-*.txt; do
+  [[ -e "$f" ]] || continue
   cat "$f" >> "$OUT_TXT"
   printf '\n\n' >> "$OUT_TXT"
 done
+shopt -u nullglob
 
 CHARS=$(wc -c < "$OUT_TXT")
 echo "[reocr] done — $CHARS chars in $OUT_TXT"
