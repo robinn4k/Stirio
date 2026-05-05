@@ -64,6 +64,22 @@
     "bookFile": "data/euvs-books/1900-modern-american-drinks-by-j-kappeler.json"
   },
   {
+    "id": "1910-ca-101-drinks-and-how-to-mix-them",
+    "year": 1910,
+    "decade": "1910s",
+    "title": "101 Drinks and How to Mix Them",
+    "author": null,
+    "language": "en",
+    "languageName": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "Folleto estadounidense circa 1910 con un centenar de recetas de cocteles clasicos de la edad de oro previa a la Ley Seca. Incluye versiones canonicas de Manhattan, Martini, Old Fashioned, Sazerac, Side Car, Whiskey Sour, Gin Fizz, Stinger, Pink Lady, Knickerbocker, Bronx, Daiquiri, Sherry Cobbler, Mint Julep y Tom and Jerry, junto con preparaciones menos conocidas (Cape Cod Rainbow, Charlie Horse, Chattanooga Dew, Cherry Blossom, Hell-Raiser, Hiawatha, Snag-Tooth Nell, Pom Pom, Top Side Up). El OCR contiene erratas tipograficas habituales (DAQUIRI por Daiquiri, SAZARAC por Sazerac, SHALUTA por Saluta, SHANDYGAFF por Shandy Gaff). Saltadas (no son recetas reales): WORDS (Fragmento OCR del titulo 'FOREWORDS'); Simple: (Linea fragmentada (encabezado de variante 'Simple')); Maraschino Menthe (Linea fragmentada (Maraschino y crema de menta como ingredientes de un Pousse-Cafe)); Bourbon Whiskey Dash of Benedictine (Linea fragmentada (bourbon con un dash de Benedictine))",
+    "sectionCount": 9,
+    "recipeCount": 76,
+    "bookFile": "data/euvs-books/1910-ca-101-drinks-and-how-to-mix-them.json"
+  },
+  {
     "id": "1912-the-squires-recipe",
     "year": 1912,
     "decade": "1910s",

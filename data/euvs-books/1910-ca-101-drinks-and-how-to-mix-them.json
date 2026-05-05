@@ -1,0 +1,3881 @@
+{
+  "book_id": "1910-ca-101-drinks-and-how-to-mix-them",
+  "metadata": {
+    "title": "101 Drinks and How to Mix Them",
+    "author": null,
+    "year": 1910,
+    "language": "en",
+    "language_name": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "source_file": "1910 ca 101 Drinks and How to Mix them.txt",
+    "notes": "Folleto estadounidense circa 1910 con un centenar de recetas de cocteles clasicos de la edad de oro previa a la Ley Seca. Incluye versiones canonicas de Manhattan, Martini, Old Fashioned, Sazerac, Side Car, Whiskey Sour, Gin Fizz, Stinger, Pink Lady, Knickerbocker, Bronx, Daiquiri, Sherry Cobbler, Mint Julep y Tom and Jerry, junto con preparaciones menos conocidas (Cape Cod Rainbow, Charlie Horse, Chattanooga Dew, Cherry Blossom, Hell-Raiser, Hiawatha, Snag-Tooth Nell, Pom Pom, Top Side Up). El OCR contiene erratas tipograficas habituales (DAQUIRI por Daiquiri, SAZARAC por Sazerac, SHALUTA por Saluta, SHANDYGAFF por Shandy Gaff). Saltadas (no son recetas reales): WORDS (Fragmento OCR del titulo 'FOREWORDS'); Simple: (Linea fragmentada (encabezado de variante 'Simple')); Maraschino Menthe (Linea fragmentada (Maraschino y crema de menta como ingredientes de un Pousse-Cafe)); Bourbon Whiskey Dash of Benedictine (Linea fragmentada (bourbon con un dash de Benedictine))"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": null,
+      "title_es": null,
+      "content_original": ".fi.\n\n       ►\n\n\n\n\nh. '\n\n  A FEW WELL-CHOSEN",
+      "content_es": null
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "CHAMPAGNE COCKTAIL",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 3,
+      "type": "recipes_section",
+      "title": "CHAMPAGNE JULEP",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 4,
+      "type": "recipes_section",
+      "title": "Pour in Champagne",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 5,
+      "type": "recipes_section",
+      "title": "CHAMPAGNE PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 6,
+      "type": "recipes_section",
+      "title": "COLLINS (TOM)",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 7,
+      "type": "recipes_section",
+      "title": "FISH CLUB PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 8,
+      "type": "recipes_section",
+      "title": "PARISIAN POUSSE CAFE",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 9,
+      "type": "recipes_section",
+      "title": "RYE WHISKEY PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-001",
+      "order": 1,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "BIJOU",
+      "name_es": "Bijou",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "dry Gin",
+          "item_es": "ginebra seca",
+          "amount": 2,
+          "unit": null,
+          "notes": "Dos partes"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Chartreuse",
+          "item_es": "Chartreuse (verde)",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        }
+      ],
+      "method_original": "Shake vigorously with fine ice.",
+      "method_es": "Agitar vigorosamente con hielo fino y servir colado en una copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BIJOU\nThat's the French word for jewel, Hortense.\nYou'll think it's a sharp-cut diamond. Boy,\nhow it scratches!\nTwo part* dry Gin              One part Chartreuse\nOne part Italian               Shake vigorously with\n  Vermouth                       fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-002",
+      "order": 2,
+      "section_title": null,
+      "category": "punch",
+      "name_original": "BISHOP",
+      "name_es": "Bishop",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Chartreuse",
+          "item_es": "Chartreuse",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escoces",
+          "amount": 2,
+          "unit": null,
+          "notes": "Dos partes"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "jugo de naranja",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        }
+      ],
+      "method_original": "Shake with fine ice.",
+      "method_es": "Agitar con hielo fino y servir.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BISHOP\nA drink with truly revivalistic fervor!\nDash of Chartreuse            One part Italian\nTwo parts Scotch                Vermouth\nOne part orange juice         Shake with fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-003",
+      "order": 3,
+      "section_title": null,
+      "category": "toddy",
+      "name_original": "BLACK STRIPE",
+      "name_es": "Black Stripe",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "St. Croix Rum",
+          "item_es": "ron de Santa Cruz",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "molasses",
+          "item_es": "melaza",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo en escarcha",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        },
+        {
+          "item_original": "nutmeg",
+          "item_es": "nuez moscada",
+          "amount": 1,
+          "unit": "dash",
+          "notes": "Espolvorear por encima"
+        }
+      ],
+      "method_original": "Stir in small bar glass. Fill with shaved ice. Add dash of nutmeg.",
+      "method_es": "Revolver en un vaso de bar pequeno. Llenar con hielo en escarcha. Espolvorear nuez moscada por encima.",
+      "glassware": "Small bar glass",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "BLACK STRIPE\nYou're just too hard to please if this one\ndoesn't have you writing letters to the news\npapers. The molasses provides a truly unique\nflavor.\nOne wine glass of              Stir in small bar glass\n  St. Croix Rum                Fill with shaved ice\nOne tablespoonful of           Add dash of nutmeg\n  molasses",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-004",
+      "order": 4,
+      "section_title": null,
+      "category": "other",
+      "name_original": "BLUE BLAZER",
+      "name_es": "Blue Blazer",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azucar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "Pequena cucharadita"
+        },
+        {
+          "item_original": "boiling water",
+          "item_es": "agua hirviendo",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "Disolver el azucar"
+        },
+        {
+          "item_original": "Scotch Whiskey",
+          "item_es": "whisky escoces",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Dissolve sugar in a wine glass of boiling water; pour into silver-plated mug. Fill another wine glass with Scotch Whiskey. Ignite the whiskey and, while it is blazing, mix it with the syrup by pouring back and forth four or five times from one mug into the other. The effect will be one of liquid fire, both to the eye and to the palate.",
+      "method_es": "Disolver el azucar en una copa de agua hirviendo y verter en una jarra de plata. Llenar otra copa con whisky escoces. Encender el whisky y, mientras arde, mezclarlo con el jarabe vertiendolo cuatro o cinco veces de una jarra a la otra. El efecto sera de fuego liquido, tanto para la vista como para el paladar.",
+      "glassware": "Silver-plated mug",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLUE BLAZER\nHere's a very, very swell winter drink—if your\nMother let's you play with matches. Better\nput this drink first on the program, or you\nmay have to replace your house.\nSmall teaspoonful pow-           blazing, mix it and the\n  dered sugar. Dissolve          syrup by pouring them\n  in wine glass of boiling       four or five times from\n  water                          one mug into the other.\nPour in silver-plated mug.       The effect will be one of\n  Fill another wine glass        liquid fire—both to the\n  with Scotch Whiskey            eye and the palate\nIgnite whiskey. While it is",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-005",
+      "order": 5,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "BOSTON",
+      "name_es": "Boston",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "dry Gin",
+          "item_es": "ginebra seca",
+          "amount": 4,
+          "unit": null,
+          "notes": "Cuatro partes"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "juice of one-quarter orange",
+          "item_es": "jugo de un cuarto de naranja",
+          "amount": 0.25,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "juice of one lime",
+          "item_es": "jugo de una lima",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fresh mint",
+          "item_es": "hojas de menta fresca",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "Dos ramitas"
+        }
+      ],
+      "method_original": "Shake well the gin, Italian vermouth and orange juice with ice; add the lime juice and mint sprigs and shake again with ice. Serve.",
+      "method_es": "Agitar bien la ginebra, el vermut italiano y el jugo de naranja con hielo; anadir el jugo de lima y la menta y volver a agitar con hielo. Servir.",
+      "glassware": "Cocktail glass",
+      "garnish": "Ramita de menta fresca",
+      "page_reference": null,
+      "raw_text": "BOSTON\nAre we ever surprised at Boston? And we al\nways thought it was such a nice, well-behaved\ntown! This one is bad—if you want to stay\nsober.\nFour parts dry Gin             Juice of one lime\nOne part Italian Ver-          Two sprigs of fresh mint\n  mouth well shaken with       Shake with ice and serve\n  juice of one-quarter\n  orange",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-006",
+      "order": 6,
+      "section_title": null,
+      "category": "other",
+      "name_original": "BRANDY AND SODA",
+      "name_es": "Brandy con Soda",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Unos trozos"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Un pony (aprox. 30 ml)"
+        },
+        {
+          "item_original": "plain soda",
+          "item_es": "soda",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        }
+      ],
+      "method_original": "Into a tall tumbler place a few pieces of ice and one pony of brandy. Fill with plain soda.",
+      "method_es": "Colocar unos trozos de hielo en un vaso alto, anadir un pony de brandy y completar con soda.",
+      "glassware": "Tall tumbler (highball)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY AND SODA\nFor them as likes their likker and likes it clear.\nInto a tall tumbler place A few pieces of ice\nOne pony of Brandy            Fill with plain soda",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-007",
+      "order": 7,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "BRANDY COCKTAIL",
+      "name_es": "Coctel de Brandy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "fine ice",
+          "item_es": "hielo fino",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Llenar el vaso mezclador hasta la mitad"
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Peyschaud or Boker's Bitters",
+          "item_es": "amargo Peychaud o Boker's",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Un jigger (aprox. 60 ml)"
+        },
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "cascara de limon retorcida",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Half-fill a mixing glass with fine ice; add gum syrup, bitters and brandy. Mix and strain into a cocktail glass. Add a piece of twisted lemon peel.",
+      "method_es": "Llenar un vaso mezclador hasta la mitad con hielo fino; anadir el jarabe de goma, el amargo y el brandy. Mezclar, colar en una copa de coctel y anadir una cascara de limon retorcida.",
+      "glassware": "Cocktail glass",
+      "garnish": "Cascara de limon retorcida",
+      "page_reference": null,
+      "raw_text": "BRANDY COCKTAIL\nGreat stuff for reviving any dead horses you\nmay have about the place. The undertakers'\nlobby at Washington is trying to have a ban\nplaced on it.\nA mixing glass half-full       One jigger of Brandy\n  of fine ice                  Mix and strain into cock-\nTwo dashes of gum syrup          tail glass\nTwo dashes Peyschaud or        Add a piece of twisted\n  Boker's Bitters                lemon peel",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-008",
+      "order": 8,
+      "section_title": null,
+      "category": "sangaree",
+      "name_original": "BRANDY SANGAREE",
+      "name_es": "Sangaree de Brandy",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "Dos cubos"
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azucar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "nutmeg",
+          "item_es": "nuez moscada",
+          "amount": 1,
+          "unit": "dash",
+          "notes": "Espolvorear por encima"
+        }
+      ],
+      "method_original": "Use a small bar glass. Add two lumps of ice, half a wine glass of water, one teaspoonful of sugar and one wine glass of brandy. Stir well and add a dash of nutmeg on top.",
+      "method_es": "En un vaso de bar pequeno, anadir dos cubos de hielo, media copa de agua, una cucharadita de azucar y una copa de brandy. Revolver bien y espolvorear nuez moscada por encima.",
+      "glassware": "Small bar glass",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "BRANDY SANGAREE\nYou could use ale, sherry or port, of course,\nas you probably will.\nUse a small bar glass        One teaspoonful of sugar\nTwo lumps of ice             One wine glass of Brandy\nOne-half wine glass of       Stir well and add a dash\n  water                        of nutmeg on top",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-009",
+      "order": 9,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "BRONX",
+      "name_es": "Bronx",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "French Vermouth",
+          "item_es": "vermut frances (seco)",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Media parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Media parte"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "ginebra",
+          "amount": 2,
+          "unit": null,
+          "notes": "Dos partes"
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "jugo de naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Un jigger (aprox. 60 ml)"
+        },
+        {
+          "item_original": "slice of orange",
+          "item_es": "rodaja de naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": "Para decorar"
+        }
+      ],
+      "method_original": "Combine French vermouth, Italian vermouth, gin and orange juice with ice; shake and strain into a cocktail glass. Garnish with a slice of orange.",
+      "method_es": "Combinar el vermut frances, el vermut italiano, la ginebra y el jugo de naranja con hielo; agitar y colar en una copa de coctel. Decorar con una rodaja de naranja.",
+      "glassware": "Cocktail glass",
+      "garnish": "Rodaja de naranja",
+      "page_reference": null,
+      "raw_text": "BRONX\nYou'll care less and less and less as you sip\nthis. It's a favorite in New York.\nOne-half part French      Jigger of orange juice\n  Vermouth                Ice, shake and strain into\nOne-half part Italian       a cocktail glass\n  Vermouth                   Garnish with slice of\nTwo parts Gin                  orange",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-010",
+      "order": 10,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "BROOKLYN BRIDGE",
+      "name_es": "Puente de Brooklyn",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "White of egg",
+          "item_es": "Clara de huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Shake well with ice.",
+      "method_es": "Agitar bien con hielo.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BROOKLYN BRIDGE\nThis is how Steve Brodie got his start.\nOne part Italian            One part white of egg\n  Vermouth                  Two dashes orange juice\nOne part dry Gin            Shake well with ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-011",
+      "order": 11,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "CAPE COD RAINBOW",
+      "name_es": "Arcoiris de Cape Cod",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Split Spirit or Gin",
+          "item_es": "Aguardiente o ginebra",
+          "amount": 2,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo en trozos",
+          "amount": null,
+          "unit": null,
+          "notes": "Para llenar el vaso"
+        },
+        {
+          "item_original": "Sweetened lemon, orange or grapefruit juice",
+          "item_es": "Jugo endulzado de limon, naranja o pomelo",
+          "amount": null,
+          "unit": null,
+          "notes": "Verter sobre el hielo"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": "Se hundira al fondo del vaso"
+        },
+        {
+          "item_original": "Creme de Menthe",
+          "item_es": "Crema de menta",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": "Colocar con cuidado por encima"
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cascara de limon",
+          "amount": 1,
+          "unit": "slice",
+          "notes": "Retorcida y colgada del borde del vaso"
+        }
+      ],
+      "method_original": "Pour the spirit into a glass filled with cracked ice; add sweetened citrus juice; add a dash of grenadine which will sink to the bottom; lay a tablespoonful of creme de menthe carefully on top; twist a slice of lemon peel and hang it over the edge of the glass.",
+      "method_es": "Verter el aguardiente en un vaso lleno de hielo en trozos; anadir el jugo citrico endulzado; agregar un golpe de granadina que se hundira hasta el fondo; colocar con cuidado una cucharada de crema de menta por encima; retorcer una rodaja de cascara de limon y colgarla del borde del vaso.",
+      "glassware": "Highball glass",
+      "garnish": "Twisted lemon peel",
+      "page_reference": null,
+      "raw_text": "CAPE COD RAINBOW\nYou'll see a generous assortment of rainbows\nif you take on too many of these. A beautiful\ndrink to look at . . . but rattlesnakes have\ncharming colors!\nTwo oz. Split Spirit          will sink to bottom of\n  or Gin                      glass\nFill glass with cracked      One tablespoonful Creme\n ice                           de Menthe laid care-\nPour in sweetened lemon        fully on top\n  juice, orange or grape-    Twist a slice of lemon peel\n  fruit juice                  and hang over edge of\nDash of Grenadine, which       glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-012",
+      "order": 12,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "CARELESS LOVE",
+      "name_es": "Amor Descuidado",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White of one egg",
+          "item_es": "Clara de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Simple syrup",
+          "item_es": "Jarabe simple",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Absinthe",
+          "item_es": "Absenta",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Add ice, shake and strain into a cocktail glass.",
+      "method_es": "Anadir hielo, agitar y servir colado en una copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CARELESS LOVE\nIt's easy to make and easy to take. But don't\nlet that fool you. Thar's dynamite in them in\ngredients, pardner.\nWhite of one egg             One part Gin\nTeaspoonful simple syrup     Ice, shake and strain into\nOne part Absinthe              cocktail glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-013",
+      "order": 13,
+      "section_title": "CHAMPAGNE PUNCH",
+      "category": "cocktail",
+      "name_original": "CHARLIE HORSE",
+      "name_es": "Charlie Horse",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Shake well with fine ice.",
+      "method_es": "Agitar bien con hielo fino.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHARLIE HORSE\nThe athlete's delight. It either cures or causes\nCharlie Horse—we forget which.\nOne part Gin               One part Sherry\nOne part lemon Juice       Shake well with fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-014",
+      "order": 14,
+      "section_title": "CHAMPAGNE PUNCH",
+      "category": "cocktail",
+      "name_original": "CHATTANOOGA DEW",
+      "name_es": "Rocio de Chattanooga",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Corn whiskey",
+          "item_es": "Whiskey de maiz",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limon",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Cherry",
+          "item_es": "Cereza",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "Para decorar"
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Drop in cherry; shake well with fine ice.",
+      "method_es": "Anadir la cereza; agitar bien con hielo fino.",
+      "glassware": "Cocktail glass",
+      "garnish": "Cherry",
+      "page_reference": null,
+      "raw_text": "CHATTANOOGA DEW\nDirect from the mountains of old Tennessee.\nWhen properly aged, good Corn runs Bour\nbon a close second.\nOne part Corn              Drop in cherry\nOne part Maraschino        Shake well with fine ice\nOne part lemon juice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-015",
+      "order": 15,
+      "section_title": "CHAMPAGNE PUNCH",
+      "category": "cocktail",
+      "name_original": "CHERRY BLOSSOM",
+      "name_es": "Flor de Cerezo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White of one egg",
+          "item_es": "Clara de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": null,
+          "unit": null,
+          "notes": "Misma cantidad que la clara"
+        },
+        {
+          "item_original": "Raspberry syrup",
+          "item_es": "Jarabe de frambuesa",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Shake well with fine ice.",
+      "method_es": "Agitar bien con hielo fino.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHERRY BLOSSOM\nDon't neglect to serve at least one round of\nCherry Blossoms. There's a reason.\nWhite of one egg              raspberry syrup and\nSame quantity of dry Gin      orange juice\nThree dashes each of        Shake well with fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-016",
+      "order": 16,
+      "section_title": "CHAMPAGNE PUNCH",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB",
+      "name_es": "Clover Club",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Media parte"
+        },
+        {
+          "item_original": "Juice of half a lime",
+          "item_es": "Jugo de media lima",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "White of one egg",
+          "item_es": "Clara de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino cherry",
+          "item_es": "Cereza al maraschino",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "En la copa"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para frappe"
+        }
+      ],
+      "method_original": "Frappe and strain into a cocktail glass into which has been dropped a maraschino cherry.",
+      "method_es": "Frapear y servir colado en una copa de coctel en la que se ha colocado una cereza al maraschino.",
+      "glassware": "Cocktail glass",
+      "garnish": "Maraschino cherry",
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB\nWe recommend this the next time you enter\ntain the Friday Afternoon Sewing Guild. The\nlady who can still thread a needle after two\ndrinks wins the Grand Prix. Also good for\ncorn-husking bees.\nOne part Gin                 Frappe and strain into\nOne-half part Grenadine       cocktail glass into which\nJuice of half a lime           has been dropped a\nWhite of one egg               maraschino cherry",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-017",
+      "order": 17,
+      "section_title": "CHAMPAGNE PUNCH",
+      "category": "cocktail",
+      "name_original": "COFFEE COCKTAIL",
+      "name_es": "Coctel de Cafe",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "Llenar medio vaso mezclador"
+        },
+        {
+          "item_original": "Powdered white sugar",
+          "item_es": "Azucar blanca en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Port Wine",
+          "item_es": "Vino de Oporto",
+          "amount": 1,
+          "unit": null,
+          "notes": "Un pony"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": null,
+          "notes": "Un pony"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "Rallada por encima"
+        }
+      ],
+      "method_original": "Fill mixing glass half-full of fine ice; add one teaspoonful of powdered white sugar, one fresh egg, one pony of Port Wine and one pony of Brandy; shake thoroughly and strain into a large cocktail glass; grate a little nutmeg on top.",
+      "method_es": "Llenar el vaso mezclador hasta la mitad con hielo fino; anadir una cucharadita de azucar blanca en polvo, un huevo fresco, un pony de vino de Oporto y un pony de brandy; agitar bien y servir colado en una copa de coctel grande; rallar un poco de nuez moscada por encima.",
+      "glassware": "Large cocktail glass",
+      "garnish": "Grated nutmeg",
+      "page_reference": null,
+      "raw_text": "COFFEE COCKTAIL\nThe trick about this mixture is to try to find\nthe coffee. We looked for one whole week-end,\nand then it dawned on us that the name is\njust smart sales promotion on the part of the\ncoffee trust. Clever, these Brazilians!\nFill mixing glass half-      One pony of Brandy\n  full of fine ice           Shake thoroughly and\nAdd one teaspoanful of         strain into a large\n powdered white sugar          cocktail glass\nOne fresh egg                Grate a little nutmeg on\nOne pony of Port Wine          top",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-018",
+      "order": 18,
+      "section_title": "COLLINS (TOM)",
+      "category": "cocktail",
+      "name_original": "COLONIAL COCKTAIL",
+      "name_es": "Coctel Colonial",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": null,
+          "notes": "Dos partes"
+        },
+        {
+          "item_original": "Grapefruit juice",
+          "item_es": "Jugo de pomelo",
+          "amount": 1,
+          "unit": null,
+          "notes": "Una parte"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Add ice, shake and serve in a cocktail glass.",
+      "method_es": "Anadir hielo, agitar y servir en una copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLONIAL COCKTAIL\nNothing used to please George Washington\nbetter than a good ole Colonial—unless it was\na good new one. Spill two drops on the kitchen\nfloor before drinking. If it does not burn,\ndrink quickly and exhale the smoke.\nTwo parts Gin                Ice, shake and serve in\nOne part grapefruit juice      cocktail glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-019",
+      "order": 19,
+      "section_title": "COLLINS (TOM)",
+      "category": "fizz",
+      "name_original": "CREAM FIZZ",
+      "name_es": "Cream Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": null,
+          "notes": "Un pony"
+        },
+        {
+          "item_original": "Juice of one lemon",
+          "item_es": "Jugo de un limon",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Simple syrup",
+          "item_es": "Jarabe simple",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh cream",
+          "item_es": "Crema fresca",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Plain soda",
+          "item_es": "Soda",
+          "amount": 1,
+          "unit": "dash",
+          "notes": "Para terminar"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "Para batir"
+        }
+      ],
+      "method_original": "Add ice, shake and strain into a small bar glass; add a dash of plain soda.",
+      "method_es": "Anadir hielo, agitar y servir colado en un vaso de bar pequeno; anadir un golpe de soda.",
+      "glassware": "Small bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CREAM FIZZ\nHere's an old-timer whose long popularity is\nrichly deserved. Try it—when the party wear\nies of cocktails.\nPony of Gin                  Ice, shake and strain into\nJuice of one lemon            small bar glass\nTeaspoonful simple syrup     Add a dash of plain soda\nTeaspoonful fresh cream",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-020",
+      "order": 20,
+      "section_title": "COLLINS (TOM)",
+      "category": "cocktail",
+      "name_original": "DAQUIRI",
+      "name_es": "Daiquiri",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Bacardi Rum",
+          "item_es": "Ron Bacardí",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales con jugo de lima"
+        },
+        {
+          "item_original": "Lime juice",
+          "item_es": "Jugo de lima",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales con el ron"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Equal parts Bacardi Rum and lime juice, one teaspoonful powdered sugar. Shake well with fine ice.",
+      "method_es": "Combinar partes iguales de ron Bacardí y jugo de lima con una cucharadita de azúcar en polvo. Agitar bien con hielo fino y colar.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DAQUIRI\nAnother one that works on mice.In fact, this\nis celebrated in the Mother Goose Rhyme,\n          Daquiri, Daquiri, Dock\n         The Mouse ran up the Clock\nEqual parts Bacardi Rum      One teaspoonful pow-\n  and lime juice              dered sugar\n                             Shake well with fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-021",
+      "order": 21,
+      "section_title": "COLLINS (TOM)",
+      "category": "cocktail",
+      "name_original": "DIDI COCKTAIL",
+      "name_es": "Coctel Didi",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "dos tercios del trago"
+        },
+        {
+          "item_original": "Rhubarb juice",
+          "item_es": "Jugo de ruibarbo",
+          "amount": null,
+          "unit": null,
+          "notes": "un tercio del trago"
+        }
+      ],
+      "method_original": "Two-thirds Gin, one-third rhubarb juice. Garnish with sprig of crushed mint.",
+      "method_es": "Combinar dos tercios de ginebra y un tercio de jugo de ruibarbo. Agitar con hielo, colar en copa y guarnecer con una ramita de menta machacada.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Ramita de menta machacada",
+      "page_reference": null,
+      "raw_text": "DIDI COCKTAIL\nDi-Di, as everyone but you knows, is baby\ntalk for dear, dear. Drink a few of these with\nthe boys some night and the one thing your\nwife will not say is Di-Di.\nTwo-thirds Gin               Garnish with sprig of\nOne-third rhuharh juice        crushed mint",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-022",
+      "order": 22,
+      "section_title": "COLLINS (TOM)",
+      "category": "other",
+      "name_original": "EGG NOG",
+      "name_es": "Ponche de Huevo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Milk",
+          "item_es": "Leche",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": "medio vaso"
+        },
+        {
+          "item_original": "Raw egg",
+          "item_es": "Huevo crudo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Grated nutmeg",
+          "item_es": "Nuez moscada rallada",
+          "amount": null,
+          "unit": null,
+          "notes": "para servir por encima"
+        }
+      ],
+      "method_original": "Use shaker. One-half glass of milk, one raw egg, two teaspoonfuls of powdered sugar, one pony of Brandy. Ice, shake vigorously and strain into tumbler. Serve with grated nutmeg on top.",
+      "method_es": "En la coctelera, combinar medio vaso de leche, un huevo crudo, dos cucharaditas de azúcar en polvo y un pony de brandy. Añadir hielo, agitar vigorosamente y colar en un vaso tumbler. Servir con nuez moscada rallada por encima.",
+      "glassware": "Vaso tumbler",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "EGG NOG\nPositively good for what ails you. The best\nmedicine we've ever taken, bar none. Some\nlike this hot.\nUse shaker                   One pony of Brandy\nOne-half glass of milk       Ice, shake vigorously and\nOne raw egg                   strain into tumbler.\nTwo teaspoonfuls of           Serve with grated nut-\n powdered sugar               meg on top",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-023",
+      "order": 23,
+      "section_title": "COLLINS (TOM)",
+      "category": "cocktail",
+      "name_original": "ELECTRIC EEL",
+      "name_es": "Anguila Eléctrica",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "vaso mezclador hasta la mitad"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": null,
+          "unit": null,
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill mixing glass half-full of fine ice. One part Gin, two parts Jamaica Rum, dash lemon juice. Mix and strain.",
+      "method_es": "Llenar el vaso mezclador hasta la mitad con hielo fino. Añadir una parte de ginebra, dos partes de ron de Jamaica y un dash de jugo de limón. Mezclar y colar.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ELECTRIC EEL\nSo named because of the shock it gives you.\nFill mixing glass half-     Two parts Jamaica Rum\n  full of fine ice          Dash lemon juice. Mix\nOne part Gin                   and strain",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-024",
+      "order": 24,
+      "section_title": "COLLINS (TOM)",
+      "category": "cocktail",
+      "name_original": "EUREKA",
+      "name_es": "Eureka",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": null,
+          "unit": null,
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        }
+      ],
+      "method_original": "Two dashes of lemon juice, one dash of orange juice, two parts of dry Gin, one part Grenadine. Shake with ice and serve.",
+      "method_es": "Combinar dos dashes de jugo de limón, un dash de jugo de naranja, dos partes de ginebra seca y una parte de granadina. Agitar con hielo y servir.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EUREKA\nScience now believes that after all it was not\nreally the principle of the lever, or the law of\ngravity, or the something, which Archimedes\ndiscovered. It was this drink that made the\ngrand old Grecian chortle: \"I have found it!\"\nTwo dashes of lemon juice    One part Grenadine\nOne dash of orange juice     Shake with ice and serve\nTwo parts of dry Gin",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-025",
+      "order": 25,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "FIVE FRUITS COCKTAIL",
+      "name_es": "Coctel Cinco Frutas",
+      "yield": "6 tragos",
+      "ingredients": [
+        {
+          "item_original": "Five Fruits",
+          "item_es": "Licor Cinco Frutas",
+          "amount": 2,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Rye",
+          "item_es": "Whisky de centeno",
+          "amount": 9,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of three oranges",
+          "item_es": "Jugo de tres naranjas",
+          "amount": 3,
+          "unit": "piece",
+          "notes": "el jugo de tres naranjas"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": null,
+          "unit": "dash",
+          "notes": "unos pocos dashes"
+        }
+      ],
+      "method_original": "Two ounces Five Fruits, nine ounces Rye, juice of three oranges, a few dashes of Angostura Bitters. Put into cocktail shaker with ice, shake well and strain into cocktail glass.",
+      "method_es": "En la coctelera, combinar dos onzas de licor Cinco Frutas, nueve onzas de whisky de centeno, el jugo de tres naranjas y unos pocos dashes de amargo de Angostura. Añadir hielo, agitar bien y colar en copas de cóctel. La receta rinde seis cócteles.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FIVE FRUITS COCKTAIL\nIf you don't happen to have Five Fruits,\ntry Four Fruits, or Three Fruits, or no Fruits.\nIt's equally good.(The recipe below makes six\ncocktails.)\nTwo ounces Five Fruits       Put into cocktail shaker\nNine ounces Rye               with ice—shake well and\nJuice of three oranges        strain into cocktail\nA few dashes of Angos-        glass\n tura Bitters",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-026",
+      "order": 26,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "other",
+      "name_original": "GIN BUCK",
+      "name_es": "Gin Buck",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un jigger"
+        },
+        {
+          "item_original": "Juice of one-half lemon",
+          "item_es": "Jugo de medio limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "el jugo de medio limón"
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "vaso hasta la mitad"
+        },
+        {
+          "item_original": "Ginger ale",
+          "item_es": "Ginger ale",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar"
+        }
+      ],
+      "method_original": "One jigger of Gin, juice of one-half lemon. Stir in glass half-full of fine ice and fill with ginger ale.",
+      "method_es": "Verter un jigger de ginebra y el jugo de medio limón en un vaso lleno hasta la mitad con hielo fino. Remover y completar con ginger ale.",
+      "glassware": "Vaso highball",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN BUCK\nSimple, yes, but oh, how potent!\nOne jigger of Gin            Stir in glass half-full of\nJuice of one-hidf lemon        fine ice and fill with\n                         ginger ale",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-027",
+      "order": 27,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "GIN MARASCHINO",
+      "name_es": "Ginebra con Marrasquino",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Simple syrup",
+          "item_es": "Jarabe simple",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of half a lemon",
+          "item_es": "Jugo de medio limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "el jugo de medio limón"
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "vaso hasta la mitad"
+        },
+        {
+          "item_original": "Charged water",
+          "item_es": "Agua carbonatada",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar"
+        }
+      ],
+      "method_original": "One part Gin, three dashes simple syrup, four dashes Maraschino, juice of half a lemon. Fill glass half-full of cracked ice. Shake and strain into large cocktail glass and fill with charged water.",
+      "method_es": "Combinar una parte de ginebra, tres dashes de jarabe simple, cuatro dashes de marrasquino y el jugo de medio limón. Llenar la coctelera hasta la mitad con hielo picado, agitar y colar en una copa de cóctel grande. Completar con agua carbonatada.",
+      "glassware": "Copa de cóctel grande",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN MARASCHINO\nHere is a great favorite with the ladies. And\nwhy not!\n One part Gin               Fill glass half-full of\nThree dashes simple          cracked ice\n syrup                      Shake and strain into\nFour dashes Maraschino  large cocktail glass and\nJuice of half a lemon    fill with charged water",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-028",
+      "order": 28,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "sour",
+      "name_original": "GIN SOUR",
+      "name_es": "Gin Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Juice of half full-bodied lemon",
+          "item_es": "Jugo de medio limón de cuerpo",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "el jugo de medio limón de buen cuerpo"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "porción generosa"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "cucharadita colmada"
+        },
+        {
+          "item_original": "Finely cracked ice",
+          "item_es": "Hielo finamente picado",
+          "amount": null,
+          "unit": null,
+          "notes": "llenar el vaso"
+        }
+      ],
+      "method_original": "Juice of half full-bodied lemon, generous portion of Gin, heaping teaspoonful powdered sugar. Fill glass with finely cracked ice, stir and serve.",
+      "method_es": "Combinar el jugo de medio limón de buen cuerpo, una porción generosa de ginebra y una cucharadita colmada de azúcar en polvo. Llenar el vaso con hielo finamente picado, remover y servir.",
+      "glassware": "Copa sour",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN SOUR\nIf you want to drown the taste of the Gin put\nin a whole lemon. Or if it's the lemon taste\nyou don't like . . . .\nJuice of half full-bodied    Fill glass with finely\n lemon                         cracked ice, stir and\nGenerous portion of Gin       -serve\nHeaping teaspoonful\n  powdered sugar",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-029",
+      "order": 29,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "fizz",
+      "name_original": "GOLDEN FIZZ",
+      "name_es": "Golden Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Yolk of one egg",
+          "item_es": "Yema de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "solo la yema"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lime juice",
+          "item_es": "Jugo de lima",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Charged water",
+          "item_es": "Agua carbonatada",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar el vaso"
+        }
+      ],
+      "method_original": "One wine glass Gin, yolk of one egg, teaspoonful powdered sugar, three dashes lemon juice, one dash lime juice. Ice and fill glass with charged water.",
+      "method_es": "Combinar una copa de vino de ginebra, la yema de un huevo, una cucharadita de azúcar en polvo, tres dashes de jugo de limón y un dash de jugo de lima. Agitar bien con hielo, colar y completar el vaso con agua carbonatada.",
+      "glassware": "Vaso fizz",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GOLDEN FIZZ\nAsk any old-timer about the refreshing good\nness of this fine old drink. Silver Fizz is made\nby taking the white, instead of the yolk of the\negg-\nOne wine glass Gin           Three dashes lemon juice\nYolk of one egg              One dash lime juice\nTeaspoonful powdered         Ice and fill glass with\n  sugar                        charged water",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-030",
+      "order": 30,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "other",
+      "name_original": "GRAPEFRUIT HIGHBALL",
+      "name_es": "Highball de Pomelo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Split Spirits or Gin",
+          "item_es": "Split Spirits o Ginebra",
+          "amount": 2,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit juice",
+          "item_es": "Jugo de pomelo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una lata entera"
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo en trozos",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Crushed mint",
+          "item_es": "Hojas de menta machacadas",
+          "amount": null,
+          "unit": null,
+          "notes": "para decorar"
+        }
+      ],
+      "method_original": "Use large bar glass. Two ounces Split Spirits or Gin. One full can grapefruit juice. Fill glass with cracked ice and garnish with crushed mint.",
+      "method_es": "En un vaso grande de bar, vierta dos onzas de Split Spirits o ginebra y una lata entera de jugo de pomelo. Llene el vaso con hielo en trozos y decore con menta machacada.",
+      "glassware": "Vaso highball",
+      "garnish": "Menta machacada",
+      "page_reference": null,
+      "raw_text": "GRAPEFRUIT HIGHBALL\nSure, this is a little different. But don't try to\ntell us it's the grapefruit juice which makes\nthe party successful.\nUse large bar glass          Fill glass with cracked\nTwo ounces Split Spirits       ice and garnish with\n  or Gin                       crushed mint\nOne full can grapefruit\n  juice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-031",
+      "order": 31,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "HARVARD COCKTAIL",
+      "name_es": "Coctel Harvard",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curaçao",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar la copa"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "One part Gin, dash of Curacao. Ice, shake and strain into a wine glass. Fill glass with Grenadine.",
+      "method_es": "Combine una parte de ginebra con un golpe de curaçao y hielo. Agite y cuele en una copa de vino. Termine de llenar la copa con granadina.",
+      "glassware": "Copa de vino",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HARVARD COCKTAIL\nOne of many recipes for this famous drink.\nWay down East they used to make a Fresh\nman take four of these without drawing a\nbreath. A college diploma meant something in\nthose days.\nOne part Gin                  Ice, shake and strain into\nDash of Curacao                 a wine glass\n                              Fill glass with Grenadine",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-032",
+      "order": 32,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "HAWAIIAN",
+      "name_es": "Hawaiano",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Apple Brandy",
+          "item_es": "Brandy de manzana",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Pineapple juice",
+          "item_es": "Jugo de piña",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jugo de medio limón"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": "una cucharada de bar"
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Two parts Apple Brandy, one part pineapple juice, juice of one-half lemon, a bar spoon of sugar and dash of Maraschino. Shake well with fine ice.",
+      "method_es": "Combine dos partes de brandy de manzana, una parte de jugo de piña, el jugo de medio limón, una cucharada de azúcar y un golpe de maraschino. Agite bien con hielo fino y cuele.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HAWAIIAN\nBe very, very careful with this one. It induces\nin your guests an uncontrollable desire to\njoin the marines or open a chop-suey joint.\nTwo parts Apple Brandy        A bar spoon of sugar and\nOne part pineapple juice       dash of Maraschino\nJuice of one-half lemon       Shake well with fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-033",
+      "order": 33,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "HELL-RAISER",
+      "name_es": "Alborotador",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Scotch Whiskey",
+          "item_es": "Whisky escocés",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Egg",
+          "item_es": "Huevo",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "medio huevo"
+        },
+        {
+          "item_original": "Lime juice",
+          "item_es": "Jugo de lima",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "One pony Gin, one pony Scotch Whiskey, one-half egg, one pony of lime juice, one-half teaspoonful of powdered sugar. Ice, shake and strain into small bar glass.",
+      "method_es": "Combine un pony de ginebra, un pony de whisky escocés, medio huevo, un pony de jugo de lima y media cucharadita de azúcar en polvo. Agregue hielo, agite y cuele en un vaso de bar pequeño.",
+      "glassware": "Vaso de bar pequeño",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HELL-RAISER\nWe're talking to you like a father: drink this\nin small sips. Otherwise you can expect to\nwind up in the station-house. At that, you'd\nprobably sing yourself out, you little rascal.\nOne pony Gin                  One-half teaspoonful of\nOne pony Scotch                 powdered sugar\n  Whiskey                     Ice, shake and strain into\nOne-half egg                    small bar glass\nOne pony of lime juice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-034",
+      "order": 34,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "HIAWATHA",
+      "name_es": "Hiawatha",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Scotch",
+          "item_es": "Whisky escocés",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "llenar la mitad del vaso mezclador"
+        },
+        {
+          "item_original": "Olive",
+          "item_es": "Aceituna",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "para decorar"
+        }
+      ],
+      "method_original": "Fill mixing glass half-full of fine ice. Two parts Scotch, one part French Vermouth, dash of Bitters. Add olive for luck.",
+      "method_es": "Llene el vaso mezclador hasta la mitad con hielo fino. Agregue dos partes de whisky escocés, una parte de vermut francés y un golpe de bíter. Mezcle, cuele y decore con una aceituna para la buena suerte.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Aceituna",
+      "page_reference": null,
+      "raw_text": "HIAWATHA\nThe Indian word for \"Let's have another.\"\nFill mixing glass half- Dash of Bitters\n full of fine ice            Add olive for luck\nTwo parts Scotch              (you'll need it)\nOne part French\n  Vermouth",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-035",
+      "order": 35,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "HIBERNIAN",
+      "name_es": "Hiberniano",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Creme de Menthe",
+          "item_es": "Crema de menta",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Green cherry",
+          "item_es": "Cereza verde",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "para decorar la copa"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Two parts Gin, one part Creme de Menthe. Ice, shake and strain into cocktail glass into which has been dropped a green cherry.",
+      "method_es": "Combine dos partes de ginebra y una parte de crema de menta con hielo. Agite y cuele en una copa de cóctel donde previamente haya colocado una cereza verde.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Cereza verde",
+      "page_reference": null,
+      "raw_text": "HIBERNIAN\nReserve this one for St. Patrick's Day. It'll\nshow you where all the snakes went when the\ngood Saint drove them out of Ireland.\nTwo parts Gin                  cocktail glass into which\nOne part Creme de              has been dropped a\n  Menthe                       green cherry\nIce, shake and strain into",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-036",
+      "order": 36,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "HIGHLAND FLING",
+      "name_es": "Highland Fling",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Scotch",
+          "item_es": "Whisky escocés",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "dos tercios"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un tercio"
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Bíter de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Olive",
+          "item_es": "Aceituna",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "para decorar"
+        }
+      ],
+      "method_original": "Two dashes Orange Bitters, two-thirds Scotch, one-third Italian Vermouth. Fill with ice, mix and strain into a cocktail glass. Serve with olive.",
+      "method_es": "Combine dos golpes de bíter de naranja, dos tercios de whisky escocés y un tercio de vermut italiano. Llene con hielo, mezcle y cuele en una copa de cóctel. Sirva con una aceituna.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Aceituna",
+      "page_reference": null,
+      "raw_text": "HIGHLAND FLING\nHo-hum. Have you read any good books late\nly? (Oh, yeah?)\nTwo dashes Orange             Fill with ice, mix and\n  Bitters                       strain into a cocktail\nTwo-thirds Scotch               glass\nOne-third Italian             Serve with olive\n  Vermouth",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-037",
+      "order": 37,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "toddy",
+      "name_original": "HOT SCOTCH",
+      "name_es": "Hot Scotch (Toddy de Whisky Escocés)",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sugar lumps",
+          "item_es": "Terrones de azúcar",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Hot water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "un poco para disolver el azúcar; el resto para llenar el vaso"
+        },
+        {
+          "item_original": "Cloves",
+          "item_es": "Clavos de olor",
+          "amount": null,
+          "unit": null,
+          "notes": "varios"
+        },
+        {
+          "item_original": "Scotch",
+          "item_es": "Whisky escocés",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "exprimir y dejar caer"
+        }
+      ],
+      "method_original": "Two lumps of sugar in a little hot water, several cloves, one wine glass of Scotch. Add hot water to fill glass. Squeeze and drop in lemon peel.",
+      "method_es": "Disuelva dos terrones de azúcar en un poco de agua caliente. Añada varios clavos de olor y una copa de whisky escocés. Complete con agua caliente para llenar el vaso. Exprima una cáscara de limón sobre la bebida y déjela caer dentro.",
+      "glassware": "Vaso para bebidas calientes",
+      "garnish": "Cáscara de limón",
+      "page_reference": null,
+      "raw_text": "HOT SCOTCH\nA variant of Hot Toddy. It's a fine cure for\ncolds; even if you haven't got a cold, you feel\nbetter after drinking this.\nTwo lumps of sugar in a       Add hot water to fill glass\n  little hot water            Squeeze and drop in\nSeveral cloves                  lemon peel\nOne wine glass of Scotch",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-038",
+      "order": 38,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "other",
+      "name_original": "HORSE'S NECK",
+      "name_es": "Cuello de Caballo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "pelada en una sola tira continua, en espiral dentro del vaso"
+        },
+        {
+          "item_original": "Ice lumps",
+          "item_es": "Cubos de hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "unos cuantos"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony (la receta original usa ginebra; la versión moderna sustituye por brandy)"
+        },
+        {
+          "item_original": "Ginger ale",
+          "item_es": "Ginger ale",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        }
+      ],
+      "method_original": "Use large bar glass. Peel lemon in one continuous piece. Place in glass with one end hanging over the rim and the balance spiraling to bottom. Add a few lumps of ice, one teaspoonful powdered sugar, one pony Gin. Fill glass with ginger ale.",
+      "method_es": "Use un vaso grande de bar. Pele un limón en una sola tira continua y colóquela en el vaso con un extremo colgando del borde y el resto formando una espiral hasta el fondo. Añada unos cubos de hielo, una cucharadita de azúcar en polvo y un pony de ginebra. Termine de llenar el vaso con ginger ale.",
+      "glassware": "Vaso highball",
+      "garnish": "Cáscara de limón en espiral",
+      "page_reference": null,
+      "raw_text": "HORSE'S NECK\nThis just goes to show that the Early Bar\ntenders never studied physiology. What better\nname can you suggest? Or you? Or you?\nUse large bar glass         Add! a few lumps of ice\nPeel lemon in one con-      One teaspoonful pow-\n  tinuous piece              dered sugar\nPlace in glass with one     One pony Gin\n end hanging over the       Fill glass with ginger ale\n  rim and the balance\n spiraling to bottom",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-039",
+      "order": 39,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "toddy",
+      "name_original": "HOT SPICED RUM",
+      "name_es": "Ron Caliente Especiado",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 2,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Mixed spices",
+          "item_es": "Mezcla de especias",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Butter",
+          "item_es": "Mantequilla",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un trocito pequeño"
+        },
+        {
+          "item_original": "Very hot water",
+          "item_es": "Agua muy caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        }
+      ],
+      "method_original": "Use tumbler. Two ounces Jamaica Rum, one teaspoonful powdered sugar, one teaspoonful mixed spices, one small lump of butter. Fill tumbler with very hot water.",
+      "method_es": "En un vaso tipo tumbler, vierta dos onzas de ron de Jamaica, una cucharadita de azúcar en polvo, una cucharadita de mezcla de especias y un trocito pequeño de mantequilla. Termine de llenar el vaso con agua muy caliente y revuelva.",
+      "glassware": "Vaso tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOT SPICED RUM\nHere's the drink that's brought many a good\nship around the Horn, back in the old days of\ncanvas. But you don't have to be a sailor to\nlike Hot Spiced Rum.\nUse tumbler                 One teaspoonful mixed\nTwo ounces Jamaica Rum       spices\nOne teaspoonful pow-        One small lump of butter\n  dered sugar               Fill tumbler with very\n                              hot water",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-040",
+      "order": 40,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "toddy",
+      "name_original": "HOT TODDY",
+      "name_es": "Toddy Caliente",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Brandy, Whiskey or Gin",
+          "item_es": "Brandy, whisky o ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Boiling water",
+          "item_es": "Agua hirviendo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Grated nutmeg",
+          "item_es": "Nuez moscada rallada",
+          "amount": null,
+          "unit": null,
+          "notes": "espolvorear por encima"
+        }
+      ],
+      "method_original": "One part Brandy, Whiskey or Gin. One part boiling water. Add Brandy to boiling water, stir thoroughly and serve in medium bar glass with nutmeg grated on top.",
+      "method_es": "Vierta una parte de brandy, whisky o ginebra y una parte de agua hirviendo. Añada el brandy al agua hirviendo, revuelva bien y sirva en un vaso de bar mediano con nuez moscada rallada por encima.",
+      "glassware": "Vaso de bar mediano",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "HOT TODDY\nRecommended for those who can't sleep\nnights. We imbibed a few one Thursday eve\nning and didn't arrive at the office until the\nfollowing Tuesday afternoon.\nOne part Brandy, Whis-        water, stir thoroughly\n  key or Gin                  and serve in medium\nOne part boiling water       bar glass with\nAdd Brandy to boiling       Nutmeg grated on top",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-041",
+      "order": 41,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "IRISH GUARD",
+      "name_es": "Guardia Irlandés",
+      "yield": "4 tragos",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un vaso (tumbler)"
+        },
+        {
+          "item_original": "Creme de Menthe",
+          "item_es": "Crema de menta",
+          "amount": null,
+          "unit": "piece",
+          "notes": "medio vaso (tumbler)"
+        },
+        {
+          "item_original": "Whites of four eggs",
+          "item_es": "Claras de cuatro huevos",
+          "amount": 4,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of two oranges",
+          "item_es": "Jugo de dos naranjas",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of one lemon",
+          "item_es": "Jugo de un limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "para batir"
+        }
+      ],
+      "method_original": "(For Four) One tumbler of Gin. One-half tumbler Creme de Menthe. Whites of four eggs. Juice two oranges. Juice one lemon. Shake with fine ice.",
+      "method_es": "(Para cuatro) Combine un vaso de ginebra, medio vaso de crema de menta, las claras de cuatro huevos, el jugo de dos naranjas y el jugo de un limón. Bata con hielo fino.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IRISH GUARD\nNotice the prescription below is for four only.\nThat's all right. After a round or two you'll\nthink you're a whole regiment of guards.\nYou'll make enough noise to prove it, too.\nJust ask the neighbors the following morning.\nOr better make it the second morning after\nwards.\n (For Four)                 Whites of four eggs\nOne tumbler of Gin          Juice two oranges\nOne-half tumbler Creme      Juice one lemon\n  de Menthe                 Shake with fine ice",
+      "notes": "Receta para cuatro porciones."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-042",
+      "order": 42,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "JACK ROSE",
+      "name_es": "Jack Rose",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Apple jack",
+          "item_es": "Apple jack (aguardiente de manzana)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "porción igual"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "porción igual"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo en trozos",
+          "amount": null,
+          "unit": null,
+          "notes": "para la coctelera"
+        }
+      ],
+      "method_original": "Place cracked ice into shaker. Equal portions of Apple jack and Gin. Add dash Grenadine. Serve in cocktail glasses.",
+      "method_es": "Coloque hielo en trozos en la coctelera. Añada porciones iguales de apple jack y ginebra, y un golpe de granadina. Sirva en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK ROSE\nAsk any old-time New Yorker about this one.\nPlace cracked ice into     Add dash Grenadine\n  shaker                   Serve in cocktail glasses\nEqual portions of Apple\n  jack and Gin",
+      "notes": "Pregunte a cualquier neoyorquino antiguo por este trago."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-043",
+      "order": 43,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "KNICKERBOCKER",
+      "name_es": "Knickerbocker",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "St. Croix Rum",
+          "item_es": "Ron de St. Croix",
+          "amount": 4,
+          "unit": "piece",
+          "notes": "cuatro partes"
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Raspberry syrup",
+          "item_es": "Sirope de frambuesa",
+          "amount": null,
+          "unit": null,
+          "notes": "para dar sabor"
+        },
+        {
+          "item_original": "Pineapple syrup",
+          "item_es": "Sirope de piña",
+          "amount": null,
+          "unit": null,
+          "notes": "para dar sabor"
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "para batir"
+        }
+      ],
+      "method_original": "Four parts St. Croix Rum. One part each of orange and lemon juice. Flavor with raspberry and pineapple syrup. Shake with fine ice.",
+      "method_es": "Combine cuatro partes de ron de St. Croix con una parte de jugo de naranja y una parte de jugo de limón. Aromatice con sirope de frambuesa y de piña. Bata con hielo fino.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "KNICKERBOCKER\nAn old favorite with habitues (look up under\n\"H\") of the Knickerbocker bar. Need we say\nmore ?\nFour parts St. Croix Rum    Flavor with raspberry and\nOne part each of orange       and pineapple syrup\n  and lemon juice           Shake with fine ice",
+      "notes": "Antiguo favorito de los habitués del bar Knickerbocker."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-044",
+      "order": 44,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "MARTINI COCKTAIL",
+      "name_es": "Cóctel Martini",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "media copa de mezcla"
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Tom Gin",
+          "item_es": "Tom Gin (ginebra)",
+          "amount": null,
+          "unit": "piece",
+          "notes": "media medida (jigger)"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": null,
+          "unit": "piece",
+          "notes": "media medida (jigger)"
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Half a mixing glass full of fine ice. Three dashes of Orange Bitters. One-half jigger of Tom Gin. One-half jigger of Italian Vermouth. A piece of lemon peel. Mix, strain into cocktail glass.",
+      "method_es": "Llene la mitad de una copa de mezcla con hielo fino. Añada tres golpes de amargo de naranja, media medida de Tom Gin, media medida de vermut italiano y un trozo de cáscara de limón. Mezcle y cuele en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Cáscara de limón",
+      "page_reference": null,
+      "raw_text": "MARTINI COCKTAIL\nThis ranks well to the fore as an appetizer—\nand has for nearly a half-century. If you pre\nfer it dry, use French instead of Italian Ver\nmouth.\nHalf a mixing glass full    One-half jigger of Italian\n of fine ice                  Vermouth\nThree dashes of Orange      A piece of lemon peel\n Bitters                    Mix, strain into cocktail\nOne-half jigger of Tom        glass\n  Gin",
+      "notes": "Si lo prefiere seco, use vermut francés en lugar de italiano."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-045",
+      "order": 45,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "METROPOLITAN",
+      "name_es": "Metropolitan",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lumps of ice",
+          "item_es": "Trozos de hielo",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "en una copa de vino pequeña"
+        },
+        {
+          "item_original": "Gum syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Boker's Bitters",
+          "item_es": "Amargo Boker's",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Small piece of lemon",
+          "item_es": "Trozo pequeño de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Two lumps of ice in a small wine glass. Three dashes of gum syrup. Two dashes of Boker's Bitters. One pony of Brandy. One pony of French Vermouth. Mix, take out the ice. Add a small piece of lemon.",
+      "method_es": "Coloque dos trozos de hielo en una copa de vino pequeña. Añada tres golpes de jarabe de goma, dos golpes de amargo Boker's, un pony de brandy y un pony de vermut francés. Mezcle, retire el hielo y añada un trozo pequeño de limón.",
+      "glassware": "Copa de vino pequeña",
+      "garnish": "Trozo pequeño de limón",
+      "page_reference": null,
+      "raw_text": "METROPOLITAN\nThis, we submit, is the real explanation of the\nmigration from the country to the city. Try\nto take a jug of moonshine out of the hay\nstack and tie this one.\nTwo lumps of ice in a   One pony of Brandy\n  small wine glass      One pony of French\nThree dashes of gum       Vermouth\n  syrup                 Mix, take out the ice\nTwo dashes of Boker's   Add a small piece of\n  Bitters                     lemon",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-046",
+      "order": 46,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "julep",
+      "name_original": "MINT JULEP",
+      "name_es": "Mint Julep",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": null,
+          "unit": "wine-glass",
+          "notes": "media copa de vino"
+        },
+        {
+          "item_original": "Fresh mint sprigs",
+          "item_es": "Ramitas de menta fresca",
+          "amount": 4,
+          "unit": "piece",
+          "notes": "tres o cuatro ramitas"
+        },
+        {
+          "item_original": "Bourbon",
+          "item_es": "Bourbon",
+          "amount": null,
+          "unit": "wine-glass",
+          "notes": "una y media copas de vino"
+        },
+        {
+          "item_original": "Jamaica Rum",
+          "item_es": "Ron de Jamaica",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fruit",
+          "item_es": "Fruta",
+          "amount": null,
+          "unit": null,
+          "notes": "para decorar"
+        }
+      ],
+      "method_original": "Into a large glass filled with shaved ice: One tablespoonful of sugar. One-half wine glass of water. Three or four sprigs of fresh mint. Crush till mint flavor is extracted. Add one and one-half wine glasses Bourbon. Stir well. Dash with Jamaica Rum. Decorate with a few sprigs of mint by planting the sprigs, stem downward, in the ice around the rim of glass. Dress with fruit and serve.",
+      "method_es": "En un vaso grande lleno de hielo picado, agregue una cucharada de azúcar, media copa de vino de agua y tres o cuatro ramitas de menta fresca. Macere hasta extraer el sabor de la menta. Añada una y media copas de vino de bourbon. Revuelva bien. Termine con un golpe de ron de Jamaica. Decore con ramitas de menta plantadas con el tallo hacia abajo en el hielo alrededor del borde del vaso. Adorne con fruta y sirva.",
+      "glassware": "Vaso grande (vaso de julep)",
+      "garnish": "Ramitas de menta y fruta",
+      "page_reference": null,
+      "raw_text": "MINT JULEP\nHyah, suh, is a beverage! Yo' ha'd-drinkin,'\nha'd-ridin' forbeahs, suh, drank this. The lucky\ndawgs.\nInto a large glass filled   Add one and one-half\n  with shaved ice:            wine glasses Bourbon\nOne tablespoonful of        Stir well. Dash with\n  sugar                       Jamaica Rum\nOne-half wine glass of      Decorate with a few\n  water            ''         sprigs of mint by plant-\nThree or four sprigs of       ing the sprigs, stem\n  fresh mint                  downward, in the ice\nCrush till mint flavor is     around the rim of glass\n  extracted                 Dress with fruit and serve",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-047",
+      "order": 47,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "OPALESCENT",
+      "name_es": "Opalescente",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Juice of one-half lemon",
+          "item_es": "Jugo de medio limón",
+          "amount": null,
+          "unit": "piece",
+          "notes": "medio limón"
+        },
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": null,
+          "unit": null,
+          "notes": "el doble del jugo de limón"
+        },
+        {
+          "item_original": "Cream",
+          "item_es": "Crema",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh mint sprig",
+          "item_es": "Ramita de menta fresca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "para decorar"
+        }
+      ],
+      "method_original": "Juice of one-half lemon. Add twice as much dry Gin. Dash of cream. Dash of Grenadine. Ice, shake and strain. Put sprig of fresh mint in glass.",
+      "method_es": "Vierta el jugo de medio limón y el doble de ginebra seca. Añada un golpe de crema y un golpe de granadina. Agregue hielo, bata y cuele. Coloque una ramita de menta fresca en el vaso.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Ramita de menta fresca",
+      "page_reference": null,
+      "raw_text": "OPALESCENT\nYou won't be able to pronounce the name\nwhen calling for the third round. But just\nsay; \"Fill 'er up again.\" Thereafter, bang your\nmug lustily on the table. If your host is a\ngentleman, he'll know what you mean. If\nyou're the host, you'll just be out of luck.\nJuice of one-half lemon     Dash of Grenadine\nAdd twice as much dry       Ice, shake and strain\n  Gin                       Put sprig of fresh mint\nDash of cream                 in glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-048",
+      "order": 48,
+      "section_title": "FISH CLUB PUNCH",
+      "category": "cocktail",
+      "name_original": "OLD-FASHIONED COCKTAIL",
+      "name_es": "Cóctel Old-Fashioned",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lump of sugar",
+          "item_es": "Terrón de azúcar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": null,
+          "unit": null,
+          "notes": "un cuarto de vaso, para disolver el azúcar"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Rye",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una medida (jigger)"
+        },
+        {
+          "item_original": "Piece of ice",
+          "item_es": "Trozo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "One lump sugar dissolved in one-fourth glass water. Two dashes Angostura Bitters. One jigger Rye. One piece of ice. One piece of lemon peel.",
+      "method_es": "Disuelva un terrón de azúcar en un cuarto de vaso de agua. Añada dos golpes de amargo Angostura, una medida de whisky de centeno, un trozo de hielo y un trozo de cáscara de limón.",
+      "glassware": "Vaso old-fashioned",
+      "garnish": "Cáscara de limón",
+      "page_reference": null,
+      "raw_text": "OLD-FASHIONED COCKTAIL\nAdd up another, Charlie, to the list of good\nold things: Old violins, old cheeses, old friends,\nold-fashioned cocktails, et cetera.\nOne lump sugar dissolved     One jigger Rye\nIn one-fourth glass water    One piece of ice\nTwo dashes Angostura         One piece of lemon peel\n  Bitters",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-049",
+      "order": 49,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "PINEAPPLE BRONX",
+      "name_es": "Bronx de Piña",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": null,
+          "unit": null,
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Pineapple slices",
+          "item_es": "Rodajas de piña",
+          "amount": null,
+          "unit": null,
+          "notes": "en el vaso"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Two parts dry Gin, one part Italian Vermouth. Slices of pineapple in glass. Ice, shake well and strain.",
+      "method_es": "Colocar rodajas de piña en el vaso mezclador, añadir dos partes de ginebra seca y una de vermut italiano, agitar bien con hielo y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PINEAPPLE BRONX\nYou'd be surprised to know how many people\nlike pineapple when served in this way.\nTwo parts dry Gin            Slices of pineapple in\nOne part Italian               glass\n Vermouth                    Ice, shake well and strain",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-050",
+      "order": 50,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "PINK LADY",
+      "name_es": "Pink Lady (Dama Rosa)",
+      "yield": "4 tragos",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "un vaso largo"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": null,
+          "unit": null,
+          "notes": "un cuarto de vaso"
+        },
+        {
+          "item_original": "Egg whites",
+          "item_es": "Claras de huevo",
+          "amount": 4,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "jugo de dos naranjas"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "jugo de un limón"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": null,
+          "unit": "dash",
+          "notes": "una pizca"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "(For Four) One tumbler of Gin, one-fourth tumbler Grenadine, whites of four eggs, juice of two oranges, juice of one lemon, dash of sugar. Mix with ice in shaker; drink before it settles.",
+      "method_es": "(Para cuatro) Combinar un vaso de ginebra, un cuarto de vaso de granadina, las claras de cuatro huevos, el jugo de dos naranjas, el jugo de un limón y una pizca de azúcar. Mezclar con hielo en la coctelera y servir de inmediato, antes de que se asiente.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PINK LADY\nAll right, go ahead and drink this. But don't\nsay we didn't caution you. It's a mighty\nsmooth drink, y'understand, but\n (For Four)                  Juice of two oranges\nOne tumbler of Gin           Juice of one lemon\nOne-fourth tumbler           Dash of sugar\n  Grenadine                  Mix with ice in shaker;\nWhites of four eggs            drink before it settles",
+      "notes": "Esta versión de 1910 es para cuatro porciones, sin el componente de crema que añadirían recetarios posteriores."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-051",
+      "order": 51,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "PLAZA",
+      "name_es": "Plaza",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Fresh pineapple",
+          "item_es": "Piña fresca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un trozo"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "One part each of Gin, French and Italian Vermouth. One piece of fresh pineapple. Ice, shake and strain into cocktail glass.",
+      "method_es": "Combinar partes iguales de ginebra, vermut francés y vermut italiano con un trozo de piña fresca. Agitar con hielo y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PLAZA\nStay close to a lamp post after imbibing.\nOne part each of Gin,       One piece of fresh\n  French and Italian          pineapple\n  Vermouth                  Ice, shake and strain\n                              into cocktail glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-052",
+      "order": 52,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "POM POM",
+      "name_es": "Pom Pom",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter aromático",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "One part Gin, two parts Italian Vermouth, two dashes Bitters. Ice, shake and strain into cocktail glass.",
+      "method_es": "Combinar una parte de ginebra, dos partes de vermut italiano y dos golpes de bíter. Agitar con hielo y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "POM POM\nSo called because your guests will forthwith\nstart playing the childhood pastime of the\nsame name. You'll find difficulty in pulling\nthem away from this drink.\nOne part Gin                Two dashes Bitters\nTwo parts Italian           Ice, shake and strain\n  Vermouth                    into cocktail glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-053",
+      "order": 53,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "PRESIDENT",
+      "name_es": "President",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Bacardi Rum",
+          "item_es": "Ron Bacardí",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales con el vermut"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales con el ron"
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curaçao",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Equal parts of Bacardi Rum and Italian Vermouth, dash of Curacao. Ice and stir very gently.",
+      "method_es": "Combinar partes iguales de ron Bacardí y vermut italiano con un golpe de curaçao. Agregar hielo y remover con suavidad antes de colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PRESIDENT\nIt requires a great man to drink this down\nwith grace and savior faire. We once served\nit to a Vice-President, but he couldn't take it.\nSince then, he's been trying very hard to be\ncome a President because he wants to try this\ndrink again.\nEqual parts of Bacardi       Dash of Curacao\n  Rum and Italian            Ice and stir very gently\n Vermouth",
+      "notes": "Versión temprana del President: emplea vermut italiano dulce y curaçao en lugar de la combinación posterior con vermut seco y granadina."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-054",
+      "order": 54,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "RIDING CLUB COCKTAIL",
+      "name_es": "Riding Club Cocktail",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "vaso mezclador hasta la mitad"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Bíter Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Acid phosphate",
+          "item_es": "Fosfato ácido",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "cucharadita pequeña de barra"
+        },
+        {
+          "item_original": "Calisaya",
+          "item_es": "Calisaya (licor amargo de quina)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una medida (jigger)"
+        }
+      ],
+      "method_original": "Mixing glass half-full of fine ice, one dash of Angostura Bitters, a small barspoonful of acid phosphate, one jigger of Calisaya. Mix and strain into cocktail glass.",
+      "method_es": "Llenar el vaso mezclador hasta la mitad con hielo fino, agregar un golpe de bíter Angostura, una cucharadita pequeña de fosfato ácido y una medida de Calisaya. Mezclar y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RIDING CLUB COCKTAIL\nYou've heard the saying \"He's riding for a\nfall.\" Well then! This is the recipe that made\nthe saying. A good polo player can drink a\nhelmet full of this. But maybe you aren't a\ngood polo player.\nMixing glass half-full of     A small barspoonful of\n  fine ice                      acid phosphate\nOne dash of Angostura         One jigger of Calisaya\n  Bitters                     Mix and strain into\n                                cocktail glass",
+      "notes": "El fosfato ácido era un agente acidulante común en barras de la época prohibicionista; aporta acidez sin sabor cítrico."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-055",
+      "order": 55,
+      "section_title": "PARISIAN POUSSE CAFE",
+      "category": "cocktail",
+      "name_original": "ROCKING HORSE",
+      "name_es": "Rocking Horse",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "vaso mezclador hasta la mitad"
+        },
+        {
+          "item_original": "Rye Whiskey",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Bíter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Curacao",
+          "item_es": "Curaçao",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill mixing glass half-full of fine ice. Add one pony Rye, one pony Gin, dash of Orange Bitters, dash of Curacao. Mix and strain.",
+      "method_es": "Llenar el vaso mezclador hasta la mitad con hielo fino, añadir un pony de whisky de centeno, un pony de ginebra, un golpe de bíter de naranja y un golpe de curaçao. Mezclar y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROCKING HORSE\nSo named because of the gentle swaying\nmotion it imparts to the body after three\nrounds.\nFill mixing glass half-full   Dash of Orange Bitters\n  of fine ice                 Dash of Curacao\nAdd one pony Rye              Mix and strain\nOne pony Gin",
+      "notes": "Un pony equivale aproximadamente a 30 ml (1 oz)."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-056",
+      "order": 56,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "SARATOGA COCKTAIL",
+      "name_es": "Saratoga Cocktail",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Apple Brandy",
+          "item_es": "Brandy de manzana (Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales"
+        },
+        {
+          "item_original": "Dubonnet",
+          "item_es": "Dubonnet",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales"
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": null,
+          "unit": "dash",
+          "notes": "para aromatizar"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Equal quantities of Apple Brandy, Italian Vermouth and Dubonnet. Flavor with orange juice. Ice, shake and strain.",
+      "method_es": "Combinar partes iguales de brandy de manzana, vermut italiano y Dubonnet. Aromatizar con jugo de naranja, agitar con hielo y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SARATOGA COCKTAIL\nHere's a favorite of 40 years' standing. Or\nmaybe \"standing\" is not quite the exact word.\nEqual quantities of Apple     Flavor with orange juice\n  Brandy, Italian Ver-        Ice, shake and strain\n  mouth and Dubonnet",
+      "notes": "Variante del Saratoga: a diferencia de la receta clásica con brandy, marrasquino y bíter, esta versión utiliza brandy de manzana, vermut italiano y Dubonnet."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-057",
+      "order": 57,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "SAZARAC COCKTAIL",
+      "name_es": "Sazerac",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Rye Whiskey",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "un pony"
+        },
+        {
+          "item_original": "Absinthe",
+          "item_es": "Absenta",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Simple syrup",
+          "item_es": "Jarabe simple",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter aromático",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Crushed mint",
+          "item_es": "Menta machacada",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "una ramita en la copa"
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "One pony Rye Whiskey, three dashes Absinthe, one tablespoonful simple syrup, three dashes Bitters. Ice, shake and strain into cocktail glass into which has been dropped a sprig of crushed mint.",
+      "method_es": "Combinar un pony de whisky de centeno, tres golpes de absenta, una cucharada de jarabe simple y tres golpes de bíter. Agitar con hielo y colar en una copa de cóctel en la que previamente se ha colocado una ramita de menta machacada.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Ramita de menta machacada",
+      "page_reference": null,
+      "raw_text": "SAZARAC COCKTAIL\nWe personally recommend this one when\ntraveling, before traveling and after travel\ning—or when no traveling is contemplated.\nOne pony Rye Whiskey          Ice, shake and strain into\nThree dashes Absinthe           cocktail glass into which\nTablespoonful simple            has been dropped a\n  syrup                         sprig of crushed mint\nThree dashes Bitters",
+      "notes": "Variante peculiar del Sazerac: la receta clásica de Nueva Orleans usa Peychaud's Bitters y no incluye menta; esta versión de 1910 sustituye Peychaud por bíter genérico y añade menta machacada."
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-058",
+      "order": 58,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "other",
+      "name_original": "SCOTCH HIGHBALL",
+      "name_es": "Highball de Whisky Escocés",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Scotch",
+          "item_es": "Whisky escocés",
+          "amount": null,
+          "unit": null,
+          "notes": "cantidad limitada"
+        },
+        {
+          "item_original": "Seltzer (or ginger-ale)",
+          "item_es": "Soda (o ginger ale)",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar; las generaciones jóvenes prefieren ginger ale"
+        },
+        {
+          "item_original": "Lump of ice",
+          "item_es": "Cubo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Drop a lump of ice in a highball glass, then fill up with seltzer. Add a limited quantity of Scotch.",
+      "method_es": "Colocar un cubo de hielo en un vaso highball y llenar con soda. Agregar una cantidad limitada de whisky escocés. La generación más joven suele pedir ginger ale en lugar de soda.",
+      "glassware": "Vaso highball",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SCOTCH HIGHBALL\nThe younger generation are likely to specify\nginger-ale instead of seltzer.\nDrop a lump of ice in a   Scotch, then fill up\n highball glass                 with seltzer\nAdd a limited quantity of",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-059",
+      "order": 59,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "SHALUTA",
+      "name_es": "Saluta",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "\"Dago Red\" (red wine)",
+          "item_es": "Vino tinto italiano",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        }
+      ],
+      "method_original": "One part \"Dago Red\", one part lemon juice, one part Gin. Shake with ice and strain into a cocktail glass.",
+      "method_es": "Combinar a partes iguales vino tinto italiano, jugo de limón y ginebra. Agitar con hielo y colar en copa de cóctel. Pronunciado \"Saluta\" hasta la quinta ronda.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHALUTA\nPronounced \"Saluta\" until the fifth round.\nOne part \"Dago Red\"  One part lemon juice\nOne part Gin",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-060",
+      "order": 60,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "other",
+      "name_original": "SHANDYGAFF",
+      "name_es": "Shandy Gaff",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Ginger ale",
+          "item_es": "Ginger ale",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Beer",
+          "item_es": "Cerveza",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        }
+      ],
+      "method_original": "One part ginger ale, one part beer. Combine in a tall glass.",
+      "method_es": "Combinar a partes iguales ginger ale y cerveza en un vaso alto. Servir frío.",
+      "glassware": "Vaso alto (pinta)",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHANDYGAFF\nWe wouldn't drink this, personally—but if\nyou think you're so good, try it for a chaser.\nOne part ginger ale        One part beer",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-061",
+      "order": 61,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "SIDE CAR COCKTAIL",
+      "name_es": "Coctel Side Car",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "French Brandy",
+          "item_es": "Coñac (brandy francés)",
+          "amount": null,
+          "unit": null,
+          "notes": "tres partes"
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": null,
+          "unit": null,
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        }
+      ],
+      "method_original": "Three parts French Brandy, two parts Cointreau, one part lemon juice. Shake with plenty of fine ice and strain into a cocktail glass.",
+      "method_es": "Combinar tres partes de coñac, dos partes de Cointreau y una parte de jugo de limón. Agitar con abundante hielo fino y colar en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SIDE CAR COCKTAIL\nConcentrated French nitro-glycerine. Look\naround for a lamp-post before swallowing.\nThree parts French         One part lemon juice\n  Brandy                   Shake with plenty of\nTwo parts Cointreau          fine ice",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-062",
+      "order": 62,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "KIDDY-CAR COCKTAIL",
+      "name_es": "Coctel Kiddy-Car",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack (aguardiente de manzana)",
+          "amount": null,
+          "unit": null,
+          "notes": "tres partes"
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": null,
+          "unit": null,
+          "notes": "dos partes"
+        },
+        {
+          "item_original": "Lemon juice",
+          "item_es": "Jugo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        }
+      ],
+      "method_original": "Three parts Applejack, two parts Cointreau, one part lemon juice. Shake with plenty of fine ice and strain into a cocktail glass.",
+      "method_es": "Combinar tres partes de applejack, dos partes de Cointreau y una parte de jugo de limón. Agitar con abundante hielo fino y colar en copa de cóctel. Variante con applejack del Side Car.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "KIDDY-CAR COCKTAIL\nSo called because it makes you feel childish.\nThree parts Applejack      Shake with plenty of\nTwo parts Cointreau          fine ice\nOne part lemon juice\n\nSMASHES—WHISKEY, BRANDY & GIN\nSmashes are to the North what juleps are to\nthe South. A great drink in the good old\nspringtime, or good old summer time, or even\ngood old winter time.\nOne teaspoonful              tract the flavor. Add\n powdered sugar              cracked ice, one wine\nOne ounce water              glass full Brandy,\nPew sprigs freshly           Whiskey or Gin. Stir\n picked mint                 thoroughly and garnish\nPress the mint into the      with fruit. Serve with a\n  sugar and water to ex-     straw",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-063",
+      "order": 63,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "SNAG-TOOTH NELL",
+      "name_es": "Snag-Tooth Nell",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (rojo)",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Juice of one-quarter orange",
+          "item_es": "Jugo de un cuarto de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cube of ice",
+          "item_es": "Cubo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "One part Gin, one part French Vermouth, one part Italian Vermouth, juice of one-quarter orange, one cube of ice. Stir and serve in bar glass with slice of orange.",
+      "method_es": "Combinar a partes iguales ginebra, vermut francés y vermut italiano con el jugo de un cuarto de naranja sobre un cubo de hielo. Revolver y servir en vaso de bar con una rodaja de naranja.",
+      "glassware": "Vaso de bar",
+      "garnish": "Rodaja de naranja",
+      "page_reference": null,
+      "raw_text": "SNAG-TOOTH NELL\nAh, these advertising dentists!\nOne part Gin               Juice of one-quarter\nOne part Prench              orange\n  Yermouth                 One cube of ice\nOne part Italian           Stir and serve in bar glass\n  Vermouth                   with slice of orange",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-064",
+      "order": 64,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "STINGER",
+      "name_es": "Stinger",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "White Mint (crème de menthe)",
+          "item_es": "Crema de menta blanca",
+          "amount": 1,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "Cognac Brandy",
+          "item_es": "Coñac",
+          "amount": 1,
+          "unit": "oz",
+          "notes": null
+        }
+      ],
+      "method_original": "One ounce White Mint, one ounce Cognac Brandy. Mix with ice and serve in cocktail glass.",
+      "method_es": "Combinar una onza de crema de menta blanca y una onza de coñac. Mezclar con hielo y servir en copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "STINGER\nOur pet bee took a sip of this once and threw\na jealous fit.\nOne ounce White Mint       Mix with ice and serve\nOne oz. Cognac Brandy        in cocktail glass",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-065",
+      "order": 65,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "other",
+      "name_original": "STONE FENCE",
+      "name_es": "Stone Fence",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Bourbon or Applejack",
+          "item_es": "Bourbon o applejack",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Lumps of sugar",
+          "item_es": "Terrones de azúcar",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "dos o tres"
+        },
+        {
+          "item_original": "Cider",
+          "item_es": "Sidra",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar el vaso"
+        }
+      ],
+      "method_original": "One wine glass of Bourbon or Applejack, two or three lumps of sugar. Fill up glass with Cider.",
+      "method_es": "Verter una copa de vino de bourbon o applejack sobre dos o tres terrones de azúcar y completar el vaso con sidra.",
+      "glassware": "Vaso largo",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "STONE FENCE\nGuaranteed to make a rabbit spit in your bull\ndog's eye.\n One wine glass of Bour- Two or three lumps of\n  bon or Applejack         sugar\n                         Pill up glass with Cider",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-066",
+      "order": 66,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "TARTAR",
+      "name_es": "Tartar",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Vodka",
+          "item_es": "Vodka",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": "una parte"
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "vaso mezclador a la mitad"
+        }
+      ],
+      "method_original": "Use mixing glass half-full of fine ice. One part Vodka, one part Sherry, one part French Vermouth. Shake carefully and strain.",
+      "method_es": "Llenar el vaso mezclador hasta la mitad con hielo fino. Añadir a partes iguales vodka, jerez y vermut francés. Agitar con cuidado y colar en copa de cóctel. Se recomienda beberlo con sorbete o tubo metálico.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TARTAR\nThe direct cause of the Bolshevik Revolution.\nWe recommend that you drink this through a\nstraw—better still, a metal tube—in order to\nkeep as far away from it as possible.\nUse mixing glass half-      One part French\n full of fine ice             Vermouth\nOne part Vodka              Shake carefully and strain\nOne part Sherry",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-067",
+      "order": 67,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "toddy",
+      "name_original": "TEA OR COFFEE ROYAL",
+      "name_es": "Té o café real",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Cup of tea or coffee",
+          "item_es": "Taza de té o café",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "caliente"
+        },
+        {
+          "item_original": "Rum, Brandy, Whiskey, Gin or similar",
+          "item_es": "Ron, brandy, whiskey, ginebra u otra bebida espirituosa",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una medida (pony)"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": "al gusto, opcional"
+        }
+      ],
+      "method_original": "Into a cup of tea or coffee stir a pony of Rum, Brandy, Whiskey, Gin or whatever you have in that line. Sweeten if preferable. Serve as hot as you wish.",
+      "method_es": "En una taza de té o café caliente, incorpore una medida (pony) del licor de su preferencia: ron, brandy, whiskey o ginebra. Endulce al gusto si lo desea y sirva bien caliente.",
+      "glassware": "Taza",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TEA OR COFFEE ROYAL\nTo bring out the real flavor of coffee, tea or\nwhat-have-you, merely dunk in one of the in\ngredients you favor. Serve as hot as you wish\n—it will seem even hotter.\nInto a cup of tea or     Gin or whatever you\n  coffee stir a pony of     have in that line\n  Rum, Brandy, Whiskey,   Sweeten if preferable",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-068",
+      "order": 68,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "other",
+      "name_original": "TOM AND JERRY",
+      "name_es": "Tom and Jerry",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Brandy, Rum or Whiskey",
+          "item_es": "Brandy, ron o whiskey",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una medida (pony)"
+        },
+        {
+          "item_original": "Raw egg, well-beaten",
+          "item_es": "Huevo crudo, bien batido",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Boiling milk",
+          "item_es": "Leche hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "rallada por encima"
+        }
+      ],
+      "method_original": "Use small bar glass. Pony of Brandy, Rum or Whiskey. Add one well-beaten raw egg and two teaspoonfuls of powdered sugar. Stir thoroughly and fill up with boiling milk. Grate nutmeg on top.",
+      "method_es": "En un vaso de bar pequeño, vierta una medida (pony) de brandy, ron o whiskey. Agregue un huevo crudo bien batido y dos cucharaditas de azúcar en polvo. Revuelva bien y termine de llenar con leche hirviendo. Espolvoree nuez moscada rallada por encima.",
+      "glassware": "Vaso de bar pequeño",
+      "garnish": "Nuez moscada rallada",
+      "page_reference": null,
+      "raw_text": "TOM AND JERRY\nWe'll bet you peeked at this one before per\nusing (reading, to you) the preceding pages.\nThis will pull you through anything—from\nrickets, through homesickness, to knot-holes.\nUse small bar glass         Two teaspoonful\nPony of Brandy, Rum or        powdered sugar\n  Whiskey                   Stir thoroughly and fill\nAdd one well-beaten           up with boiling milk\n  raw egg                   Grate nutmeg on top",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-069",
+      "order": 69,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "TOP SIDE UP",
+      "name_es": "Top Side Up",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Kummel",
+          "item_es": "Kümmel",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una medida (pony)"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "una medida (pony)"
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso mezclador"
+        }
+      ],
+      "method_original": "Fill mixing glass with fine ice. Add one pony of Kummel, one pony of Gin and two dashes of French Vermouth. Shake well and strain.",
+      "method_es": "Llene el vaso mezclador con hielo fino. Añada una medida de kümmel, una medida de ginebra y dos golpes de vermut francés. Agite bien y cuele en la copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOP SIDE UP\nAn old German tradition is associated with\nthis explosive. If you wanted more, you re\nturned the empty glass to the table. If not,\nyou threw it over your left shoulder into the\nfire-place.\nFill mixing glass with      Two dashes of French\n fine ice                     Vermouth\nOne pony of Kummel          Shake well and strain\nOne pony of Gin",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-070",
+      "order": 70,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "VERMOUTH COCKTAIL",
+      "name_es": "Coctel de vermut",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "un jigger"
+        },
+        {
+          "item_original": "Boker's Bitters",
+          "item_es": "Bitter Boker's",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "media copa mezcladora"
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Mixing glass half-full of fine ice. Two dashes of Boker's Bitters, one jigger of Italian Vermouth. Mix well and strain into cocktail glass. Add piece of lemon peel.",
+      "method_es": "Llene media copa mezcladora con hielo fino. Añada dos golpes de bitter Boker's y un jigger de vermut italiano. Mezcle bien y cuele en una copa de cóctel. Termine con un trozo de cáscara de limón. Para una versión seca, sustituya el vermut italiano por vermut francés.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Cáscara de limón",
+      "page_reference": null,
+      "raw_text": "VERMOUTH COCKTAIL\nThere are a half-dozen variants of this fam\nous drink. The recipe below is one of the best,\nwe think. Substitute French for Italian Ver\nmouth unless you like 'em sweet.\nMixing glass half-full of   One jigger of Italian\n fine ice                     Vermouth\nTwo dashes of Boker's       Mix well and strain into\n  Bitters                    cocktail glass\n                            Add piece of lemon peel",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-071",
+      "order": 71,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "WHISKEY COCKTAIL",
+      "name_es": "Coctel de whiskey",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Whiskey",
+          "item_es": "Whiskey",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "un jigger"
+        },
+        {
+          "item_original": "Simple syrup",
+          "item_es": "Jarabe simple",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Peychaud's Bitters",
+          "item_es": "Bitter Peychaud's",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "media copa mezcladora"
+        },
+        {
+          "item_original": "Twisted lemon peel",
+          "item_es": "Cáscara de limón retorcida",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "trozo pequeño"
+        }
+      ],
+      "method_original": "Mixing glass half-full of fine ice. Two dashes of simple syrup, two dashes of Peychaud's Bitters, one jigger of Whiskey. Mix, strain into a cocktail glass. Add a small piece of twisted lemon peel.",
+      "method_es": "Llene media copa mezcladora con hielo fino. Añada dos golpes de jarabe simple, dos golpes de bitter Peychaud's y un jigger de whiskey. Mezcle y cuele en una copa de cóctel. Termine con un pequeño trozo de cáscara de limón retorcida.",
+      "glassware": "Copa de cóctel",
+      "garnish": "Cáscara de limón retorcida",
+      "page_reference": null,
+      "raw_text": "WHISKEY COCKTAIL\nBe extremely careful not to drop this one.\nEven if it doesn't explode, you'd have a new\nrug to buy, and you know how times are.\nMixing glass half-full      One jigger of Whiskey\n  of fine ice               Mix, strain into a cock-\nTwo dashes of simple         tail glass\n syrup                      Add a small piece of\nTwo dashes of Peyschaud      twisted lemon peel\n  Bitters\n\n              WHISKEY BLOSSOM                            ii\nSomebody told us \"Whiskey\" is from the\nGaelic, and means \"water-of-life.\" We just\nthought we'd mention it.\n         Italian            Two dashes pineapple\n  vornioutK                   juic0\nTwo parts Scotch           Shake well with fine ice\nTwo dashes lemon Juice       before serving",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-072",
+      "order": 72,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cobbler",
+      "name_original": "WHISKEY COBBLER",
+      "name_es": "Cobbler de whiskey",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Scotch Whiskey",
+          "item_es": "Whiskey escocés",
+          "amount": null,
+          "unit": "wine-glass",
+          "notes": "una y media copa de vino"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Pineapple syrup",
+          "item_es": "Jarabe de piña",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Fruit",
+          "item_es": "Fruta de temporada",
+          "amount": null,
+          "unit": null,
+          "notes": "para decorar"
+        }
+      ],
+      "method_original": "Into a large glass pour one and one-half wine glasses Scotch, one teaspoonful powdered sugar, two teaspoonsful pineapple syrup. Fill with shaved ice. Stir well; dress with fruit and serve with straws.",
+      "method_es": "En un vaso grande, vierta una copa y media de whiskey escocés, una cucharadita de azúcar en polvo y dos cucharaditas de jarabe de piña. Llene con hielo picado y revuelva bien. Decore con fruta y sirva con pajitas.",
+      "glassware": "Vaso grande",
+      "garnish": "Fruta de temporada",
+      "page_reference": null,
+      "raw_text": "WHISKEY COBBLER\nAnother great favorite of the good old days.\nIn fact, this drink is why they were called\n\"good old days.\"\nInto a large glass pour     Two teaspoonsful pine-\nOne and one-half wine        apple syrup\n  glasses Scotch            Fill with shaved ice. Stir\nOne teaspoonful             well; dress with fruit and\n powdered sugar               serve with straws",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-073",
+      "order": 73,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "sour",
+      "name_original": "WHISKEY SOUR",
+      "name_es": "Whiskey Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Scotch Whiskey",
+          "item_es": "Whiskey escocés",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon",
+          "item_es": "Limón",
+          "amount": null,
+          "unit": "piece",
+          "notes": "medio limón (jugo)"
+        },
+        {
+          "item_original": "Orange slice",
+          "item_es": "Rodaja de naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "Shaved ice",
+          "item_es": "Hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "dos tercios de la coctelera"
+        },
+        {
+          "item_original": "Charged water",
+          "item_es": "Agua carbonatada",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        }
+      ],
+      "method_original": "Shaker two-thirds filled with shaved ice. One tablespoonful sugar, juice of one-half lemon, one slice orange, one wine glass Scotch Whiskey. Shake well, strain into glass, fill with charged water.",
+      "method_es": "Llene dos tercios de la coctelera con hielo picado. Añada una cucharada de azúcar, el jugo de medio limón, una rodaja de naranja y una copa de whiskey escocés. Agite bien, cuele en el vaso y termine de llenar con agua carbonatada.",
+      "glassware": "Vaso sour",
+      "garnish": "Rodaja de naranja",
+      "page_reference": null,
+      "raw_text": "WHISKEY SOUR\nYou can't go wrong with this one. Figuratively\nspeaking, that is. The Whiskey Sour has been\nthe favorite of many a generation.\nShaker two-thirds filled One wine glass Scotch\n  with shaved ice          Whiskey\nOne tahlespoonful sugar Shake well, strain into\nOne-half lemon             glass, fill with charged\nOne slice orange            water",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-074",
+      "order": 74,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "cocktail",
+      "name_original": "CHOCOLATE COCKTAIL",
+      "name_es": "Coctel de chocolate",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Fresh egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bitter angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Port Wine",
+          "item_es": "Vino de Oporto",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "un jigger"
+        },
+        {
+          "item_original": "Fine sugar",
+          "item_es": "Azúcar fina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "media copa mezcladora"
+        }
+      ],
+      "method_original": "Break a fresh egg into a mixing glass half-full of fine ice. Add one dash of Bitters, one jigger Port Wine, one teaspoonful of fine sugar. Shake well and strain into a cocktail glass.",
+      "method_es": "Cascar un huevo fresco en una copa mezcladora medio llena de hielo fino. Añadir un golpe de bitter, un jigger de vino de Oporto y una cucharadita de azúcar fina. Agitar bien y colar en una copa de cóctel.",
+      "glassware": "Copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHOCOLATE COCKTAIL\nWe'll gladly issue you a rain check if this\ndoesn't help greatly.\nBreak a fresh egg into    One teaspoonful of fine\n a mixing glass half-       sugar\n full of fine ice         Shake well and strain\nAdd one dash of Bitters     into a cocktail glass\nOne jigger Port Wine",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-075",
+      "order": 75,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "flip",
+      "name_original": "SHERRY AND EGG",
+      "name_es": "Jerez con huevo",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "Raw egg, well beaten",
+          "item_es": "Huevo crudo, bien batido",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use medium bar glass. One raw egg well beaten, one wine glass Sherry.",
+      "method_es": "En un vaso de bar mediano, bata bien un huevo crudo y vierta una copa de jerez. Sirva inmediatamente.",
+      "glassware": "Vaso de bar mediano",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY AND EGG\nThe original eye-opener. So necessary to Eng\nlishmen that the Magna Charta required it be\nserved in the jails.\nUse medium bar glass      One wine glass Sherry\nOne raw egg well beaten",
+      "notes": null
+    },
+    {
+      "id": "1910-ca-101-drinks-and-how-to-mix-them-076",
+      "order": 76,
+      "section_title": "RYE WHISKEY PUNCH",
+      "category": "fizz",
+      "name_original": "GIN FIZZ",
+      "name_es": "Gin Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Lemon",
+          "item_es": "Limón",
+          "amount": null,
+          "unit": "piece",
+          "notes": "jugo de medio limón"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": null,
+          "unit": "teaspoon",
+          "notes": "media cucharadita"
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "un jigger"
+        },
+        {
+          "item_original": "Fine ice",
+          "item_es": "Hielo fino",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso"
+        },
+        {
+          "item_original": "Carbonated water",
+          "item_es": "Agua carbonatada",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar"
+        }
+      ],
+      "method_original": "Juice of one-half lemon, one-half spoonful sugar, jigger of Gin. Strain into glass with fine ice, fill with carbonated water.",
+      "method_es": "Combine el jugo de medio limón, media cucharadita de azúcar y un jigger de ginebra en la coctelera. Agite y cuele en un vaso con hielo fino; termine de llenar con agua carbonatada.",
+      "glassware": "Vaso fizz",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZZ\nHere, to make a long story s., is indeed a\npick-up!\nJuice of one-half lemon   Strain into glass with\nOne-half spoonful sugar     fine ice, fill with car-\nJigger of Gin               bonated water\nWhile Whiskey Sour is not necessarily a morn\ning-after drink, you'll find it a great comfort\non such an occasion. So, too, is the Old-Fash-\nioned a goodly pick-up drink. Recipes for both\nare given elsewhere in this book.\nAuf wiedersehn. Turn down a glass for us!\n\n                                                                                                    Qt",
+      "notes": null
+    }
+  ]
+}
