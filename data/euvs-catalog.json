@@ -430,5 +430,21 @@
     "sectionCount": 5,
     "recipeCount": 16,
     "bookFile": "data/euvs-books/1950-cinzano-en-el-cocktail.json"
+  },
+  {
+    "id": "1954-anis-esprit-de-joie-et-de-sante-by-andre-montagard",
+    "year": 1954,
+    "decade": "1950s",
+    "title": "Anis: Esprit de Joie et de Santé",
+    "author": "André Montagard (poemas) y Roger Courteville (investigación científica)",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Distilleries Ricard / Éditions Bendor",
+    "city": "Sainte-Marthe, Marsella",
+    "edition": "Edición ilustrada",
+    "notes": "Folleto poético-publicitario encargado por las Distilleries Ricard para celebrar el anís. No contiene recetas estructuradas: alterna poemas de André Montagard sobre la planta del anís (Illicium anisatum) y el regaliz (Glycyrrhiza glabra), referencias a Madame de Sévigné, Luis XV y la marquesa de Pompadour, e ilustraciones del Bureau d'Études et de Dessin de la Société Ricard (dibujos de Yermel y H. Couve, litografía de L. Dechaume, H. Couve y G. Potier). Impreso el 30 de diciembre de 1954 en las Presses des Distilleries Ricard, Sainte-Marthe, Marsella. Texto extraído por OCR Tesseract (fra).",
+    "sectionCount": 3,
+    "recipeCount": 0,
+    "bookFile": "data/euvs-books/1954-anis-esprit-de-joie-et-de-sante-by-andre-montagard.json"
   }
 ]
