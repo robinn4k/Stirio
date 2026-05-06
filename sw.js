@@ -128,7 +128,6 @@ const CACHE_PATHS = [
   'js/euvs-archive-utils.js',
   'js/euvs-archive.jsx',
   'js/map.jsx',
-  'js/library.jsx',
   'js/arcade.jsx',
   'js/memory.jsx',
   'js/rhythm.jsx',

@@ -33,7 +33,6 @@ const ROUTES = {
   duel:            { parent: 'home',         hidesNav: true },
   glossary:        { parent: 'home',         hidesNav: true },
   map:             { parent: 'home',         hidesNav: true },
-  library:         { parent: 'home',         hidesNav: true },
   arcade:          { parent: 'home',         hidesNav: true },
   memory:          { parent: 'home',         hidesNav: true },
   rhythm:          { parent: 'home',         hidesNav: true },
@@ -769,7 +768,6 @@ const App = () => {
     comanda:  'comanda',
     glossary: 'glossary',
     map:      'map',
-    library:  'library',
     article:  'article',
     euvs:     'euvs',
   };
@@ -1287,10 +1285,6 @@ const App = () => {
           focus={router.base?.params?.focus || null}
           spirit={router.base?.params?.spirit || null}
         />
-      )}
-
-      {subScreen === 'library' && !activeLesson && (
-        <LibraryScreen onBack={() => setSubScreen(null)} />
       )}
 
       {subScreen === 'arcade' && !activeLesson && (
