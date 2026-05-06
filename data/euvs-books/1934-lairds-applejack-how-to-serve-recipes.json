@@ -1,0 +1,1433 @@
+{
+  "book_id": "1934-lairds-applejack-how-to-serve-recipes",
+  "metadata": {
+    "title": "Laird's Applejack: How to Serve, Recipes",
+    "author": null,
+    "year": 1934,
+    "language": "en",
+    "language_name": "Ingles",
+    "publisher": "Laird & Company",
+    "city": "Scobeyville, NJ / New York",
+    "edition": "1934",
+    "source_file": "1934 Lairds Applejack How To Serve Recipes.txt",
+    "notes": "Folleto promocional publicado en 1934 por Laird & Company (la mas antigua destileria estadounidense, fundada en 1780 en Nueva Jersey) tras el fin de la Ley Seca. Incluye cocteles tradicionales con apple jack/applejack: Apple Jack solo, Favorite Apple Jack Cocktail, Old-Fashioned, Star, Jack Rose, Pink Lady, Apple Blossom, Apple Car (Sidecar variant), Apple Jack Flip, Apple Sip, Apple Sour, Bee's Knees, B.V.D., Colt's Neck, Coronation, Distingue, Dude, Elite, Golden Dawn, Laird's Special, Louisa, Perfect, Town Topic, Utah, Algonquin (Iris), Ambassador, Colony (Aviator), Hollywood, La Rue (Sweet), Paradise, Ritz-Carlton, Savoy-Plaza, St. Moritz. La seccion II recopila cocteles firmados por barmen famosos de hoteles de Nueva York: Billy the Oysterman, Dan Donnelly del Biltmore, Allison Ferris del Brevoort, Bill Darcey del Madison Hotel, Eddie Holmgren del Pierre Hotel, Tom del Plaza Hotel, William Bruns del Vanderbilt Hotel y John O'Connor del Waldorf-Astoria. Formato y publicidad cuidados con secciones 'Morning', 'Afternoon and Evening' y 'Night Caps'. Saltadas (no son recetas reales): APPLE JACK (Encabezado del licor Apple Jack en la lista de productos); REC!UISITES (Cabecera de seccion 'Requisites' OCR-mangled); FLAVORING (Cabecera de seccion 'Flavoring'); Triple See (Linea fragmentada (Triple Sec OCR-mangled)); SWEETENING (Cabecera de seccion 'Sweetening'); DINTS (Cabecera 'Hints' OCR-mangled); Serving (Cabecera de seccion 'Serving'); SECTION II (Cabecera de seccion 'Section II'); UGin (Linea fragmentada (1/2 Gin OCR-mangled)); By Billy the Oysttrman (Atribucion del coctel anterior a Billy the Oysterman, no es receta); By Billy the Oystermon (Atribucion duplicada (OCR variations)); By Dan Donnelly of the Biltmore (Atribucion del coctel anterior a Dan Donnelly del Biltmore Hotel); By Allison Ferris of the Breooort (Atribucion del coctel anterior a Allison Ferris del Brevoort Hotel); U Laird's Apple Jack (Linea fragmentada (1/2 Laird's Apple Jack)); By Bill Darcey of the Madison Hotel (Atribucion del coctel anterior a Bill Darcey del Madison Hotel); By Eddie Holmgren of the Pierre Hotel (Atribucion al barman del Pierre Hotel); By Tom of the Plaza Hotel (Atribucion al barman Tom del Plaza Hotel); Laird's. (Linea fragmentada / encabezado de la marca Laird's); By William Bruns of the Vanderbilt Hotel (Atribucion al barman del Vanderbilt Hotel); By John O'Connor of the Waldorf-Astoria Hotel (Atribucion al barman del Waldorf-Astoria Hotel); U Benedictine (Linea fragmentada (1/2 Benedictine)); U Creme de Cacao (Linea fragmentada (1/2 Creme de Cacao)); UGin (Linea fragmentada (1/2 Gin OCR-mangled)); Savoy. (Linea fragmentada (atribucion al Savoy)); MORNING (Cabecera de seccion 'Morning'); AFTEllNOON AND EVENING (Cabecera de seccion 'Afternoon and Evening' OCR-mangled); NIGHT CAPS (Cabecera de seccion 'Night Caps')"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": null,
+      "title_es": null,
+      "content_original": "APPLE\n                              Dow to Serve\n\n\n\n\nLet ~s sip tlie Apple Brandy~\n                                                  I\nTill our liearts beat gay within.\n                                     -ANONYMOUS   l\n                Copyright, 1934 by\n                 Stafford Brothers\n                        and\n                Laird & Company                   f\n        FIRST PRINTING, FEBRUARY, 1934.\n\n\n                                                  I\n\n     JACK\nand a Colleetion of Celebrated\n            Reeipes\n                      by\n    The Authors of rrOne Hundred Ways\"\n     A llITUAJ, OF DOW AND 'VHEN TO EN.JOY\n     ONE OF NATURE'S GIFTS TO MANKIND\n\n\n\n\n  To all who really wish to beeome expert\n  and enjoy an enviable reputation, read\n  thoughtfully pages 5-8 before attempt-\n  ing to prepare or serve any mixtures •\n\n\n\n                      •",
+      "content_es": null
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 3,
+      "type": "recipes_section",
+      "title": "Laird's Recipes",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 4,
+      "type": "recipes_section",
+      "title": "PILGRIM PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 5,
+      "type": "recipes_section",
+      "title": "SPECIAL APPLE JACK PUNCH",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-001",
+      "order": 1,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "FAVORITE APPLE JACK COCKTAIL",
+      "name_es": "Cóctel Favorito de Apple Jack",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Apple Jack",
+          "item_es": "Apple Jack (brandy de manzana)",
+          "amount": "1/2",
+          "unit": null,
+          "notes": "media parte"
+        },
+        {
+          "item_original": "lemon juice and strained honey",
+          "item_es": "jugo de limón y miel colada",
+          "amount": "1/2",
+          "unit": null,
+          "notes": "media parte, mezcla a partes iguales de jugo de limón y miel colada"
+        },
+        {
+          "item_original": "White of egg",
+          "item_es": "clara de huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Half part of Apple Jack, half part of lemon juice and strained honey, white of egg. Shake thoroughly with ice and strain.",
+      "method_es": "Combinar Apple Jack, jugo de limón con miel colada y la clara de huevo. Agitar enérgicamente con hielo, colar y servir.",
+      "glassware": "copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FAVORITE APPLE JACK COCKTAIL\nHalf part of Apple Jack\n     Half part of lemon juice and strained honey\n     White of egg",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-002",
+      "order": 2,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "OLD-FASHIONED",
+      "name_es": "Old-Fashioned (con Apple Jack)",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "amargo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1/3",
+          "unit": null,
+          "notes": "un tercio del vaso"
+        },
+        {
+          "item_original": "Laird's Apple Jack",
+          "item_es": "Apple Jack Laird's",
+          "amount": "2/3",
+          "unit": null,
+          "notes": "dos tercios del vaso"
+        },
+        {
+          "item_original": "slice of orange",
+          "item_es": "rodaja de naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "sprig of fresh mint",
+          "item_es": "ramita de menta fresca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour ingredients into glass in order given with one large piece of ice. Stir, insert mint and orange and serve with small stirring spoon in glass No. 6.",
+      "method_es": "Verter los ingredientes en el vaso en el orden indicado con un cubo grande de hielo. Remover, añadir la menta y la naranja, y servir con una cucharilla en vaso old-fashioned.",
+      "glassware": "vaso old-fashioned",
+      "garnish": "rodaja de naranja y ramita de menta",
+      "page_reference": null,
+      "raw_text": "OLD-FASHIONED\nI teaspoonful of sugar\n                   I dash of Orange Bitters\n                  73 French Vermouth\n                  % Laird's Apple Jack\n                   I slice of orange\n                   I sprig of fresh mint\nPour ingredients into glass in order given with one large piece of\nice. Stir, insert mint and orange and serve with small stirring\nspoon in glass No. 6. and",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-003",
+      "order": 3,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "STAR",
+      "name_es": "Star Cocktail",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "amargo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1/2",
+          "unit": null,
+          "notes": "media parte"
+        },
+        {
+          "item_original": "Laird's Apple Jack",
+          "item_es": "Apple Jack Laird's",
+          "amount": "1/2",
+          "unit": null,
+          "notes": "media parte"
+        },
+        {
+          "item_original": "piece of lemon peel",
+          "item_es": "trozo de cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, strain, twist and insert lemon peel and serve in glass No. 1.",
+      "method_es": "Remover bien con hielo, colar, torcer la cáscara de limón sobre la copa y dejarla dentro. Servir en copa de cóctel.",
+      "glassware": "copa de cóctel",
+      "garnish": "twist de cáscara de limón",
+      "page_reference": null,
+      "raw_text": "STAR\nI dash of Orange Bitters\n                  Yz Italian Vermouth\n                  Yz Laird's Apple Jack\n                   I piece of lemon peel\nStir thoroughly with ice, strain, twist and insert lemon peel and\nserve in glass No. I. and",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-004",
+      "order": 4,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "JACK. ROSE",
+      "name_es": "Jack Rose",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Grenadine",
+          "item_es": "granadina",
+          "amount": "1/8",
+          "unit": null,
+          "notes": "una octava parte"
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "jugo de limón",
+          "amount": "1/8",
+          "unit": null,
+          "notes": "una octava parte"
+        },
+        {
+          "item_original": "Laird's Apple Jack",
+          "item_es": "Apple Jack Laird's",
+          "amount": "3/4",
+          "unit": null,
+          "notes": "tres cuartas partes"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar enérgicamente con hielo, colar y servir en copa de cóctel.",
+      "glassware": "copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK. ROSE\nYs Grenadine\n                  Ys lemon juice\n                  % Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. l. and",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-005",
+      "order": 5,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "PINK. LADY",
+      "name_es": "Pink Lady",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Gin",
+          "item_es": "ginebra",
+          "amount": "1/2",
+          "unit": null,
+          "notes": "media parte"
+        },
+        {
+          "item_original": "Laird's Apple Jack",
+          "item_es": "Apple Jack Laird's",
+          "amount": "1/2",
+          "unit": null,
+          "notes": "media parte"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "jugo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar enérgicamente con hielo, colar y servir en copa de cóctel.",
+      "glassware": "copa de cóctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PINK. LADY\nYz Gin\n                     Yz Laird's Apple Jack\n                      1 dash of Grenadine\n                      1 dash of lemon juice\nShake thoroughly with ice, strain and serve in glass No. I.\n                              Kn    n",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-006",
+      "order": 6,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "ALGONQUIN (IRIS)",
+      "name_es": "Algonquin (Iris)",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 jigger Laird's Apple Jack",
+          "item_es": "1 jigger de Laird's Apple Jack",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "jigger"
+        },
+        {
+          "item_original": "1/2 jigger of white Creme de Menthe",
+          "item_es": "1/2 jigger de Crema de Menta blanca",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jigger"
+        },
+        {
+          "item_original": "1 1/2 jiggers of heavy cream",
+          "item_es": "1 1/2 jiggers de crema espesa",
+          "amount": 1.5,
+          "unit": "piece",
+          "notes": "jiggers"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, pour into glass and float Creme de Menthe on top. This gives three separate equally delicious flavors in one cocktail. Serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar, verter en la copa y flotar la Crema de Menta encima. Esto da tres sabores distintos igualmente deliciosos en un solo coctel. Servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALGONQUIN (IRIS)\nBy dlbert L. Scoff of the Hotel dlgonquin\n                  1 jigger Laird's Apple Jack\n                % jigger of white Creme de Menthe\n               1% jiggers of heavy cream\nShake thoroughly with ice, strain, pour into glas11 and lloat\nCreme de Menthe on top. This gives three separate equally de-\nlicious flavors in one cocktail. Serve in glass No. 1.\n   Mr. Scott feels that Apple Jack is thoroughly \"t.akeable\" and\n furthermore eliminates all anxiety about the size of next morn-\ning's head.\n                                •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-007",
+      "order": 7,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "AMBASSADOR",
+      "name_es": "Ambassador",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 teaspoonful of Maple Syrup",
+          "item_es": "1 cucharadita de jarabe de arce",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1 dash of Orange Bitters",
+          "item_es": "1 golpe de amargo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "equal parts of Gin and Laird's Apple Jack",
+          "item_es": "partes iguales de ginebra y Laird's Apple Jack",
+          "amount": null,
+          "unit": null,
+          "notes": "partes iguales"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "AMBASSADOR\nBy Johnny f!luigley of the Hot1/ dmbo.wNior\n                1 teaspoonful of Maple Syrup\n                1 dash of Orange Bitters\n                  equal parts of Gin and Laird'a Apple Jack\nShake thoroughly with ice, strain and serve in glass No. I.\n\n                                •\n                    ASTOR (No. I)\n               By John (,Reynolds) of the dstor Holli",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-008",
+      "order": 8,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "COLONY (AVIATOR)",
+      "name_es": "Colony (Aviator)",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 teaspoonful of Grenadine",
+          "item_es": "1 cucharadita de granadina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 lime (juice and also place skin in glass)",
+          "item_es": "1/2 lima (jugo y colocar tambien la cascara en la copa)",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jugo y cascara"
+        },
+        {
+          "item_original": "1/2 jigger of Jamaica Rum",
+          "item_es": "1/2 jigger de ron de Jamaica",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jigger"
+        },
+        {
+          "item_original": "1/2 jigger Laird's Apple Jack",
+          "item_es": "1/2 jigger de Laird's Apple Jack",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jigger"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": "cascara de lima en la copa",
+      "page_reference": null,
+      "raw_text": "COLONY (AVIATOR)\nBy Marco (Hatten) of the Colony Restaurant\n                 1 teaspoonful of Grenadine\n                Yz lime (juice and also place skin in glass)\n                Yz jigger of Jamaica Rum\n                72 jigger Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.\n  Here Jean and Ernest have never ceased serving New York's\nmost fastidious gourmets. Marco, as head barman, _continues to\nuphold his end of a noble tradition. The Aviator is one of the",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-009",
+      "order": 9,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "HOLLYWOOD",
+      "name_es": "Hollywood",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/4 lemon juice",
+          "item_es": "1/4 de jugo de limon",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "proporcion"
+        },
+        {
+          "item_original": "3/4 Laird's Apple Jack",
+          "item_es": "3/4 de Laird's Apple Jack",
+          "amount": 0.75,
+          "unit": null,
+          "notes": "proporcion"
+        },
+        {
+          "item_original": "1 egg (white only)",
+          "item_es": "1 huevo (solo la clara)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "solo clara"
+        },
+        {
+          "item_original": "1 dash of Grenadine",
+          "item_es": "1 golpe de granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOLLYWOOD\nBy Franlc (McKenna) of tM Hollywood\n\n                   U lemon juice\n                  % Laird's Apple Jack\n                    1 egg (white only)\n                    1 dash of Grenadine\nShake thoroughly with ice, strain and serve in glass No. 1.\n   Frank doesn't do much drinking himself, but the customers\nlike it and he respects their judgment .\n\n\n                                  •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-010",
+      "order": 10,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "LA RUE (SWEET)",
+      "name_es": "La Rue (Dulce)",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "2 dashes of Angostura Bitters",
+          "item_es": "2 golpes de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Grenadine",
+          "item_es": "1/4 de granadina",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "proporcion"
+        },
+        {
+          "item_original": "1/4 orange juice",
+          "item_es": "1/4 de jugo de naranja",
+          "amount": 0.25,
+          "unit": null,
+          "notes": "proporcion"
+        },
+        {
+          "item_original": "1/2 Laird's Apple Jack",
+          "item_es": "1/2 de Laird's Apple Jack",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "proporcion"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LA RUE (SWEET)\nBy Pedro (Diaz) of the La Rue Restaurant\n\n                    2 dashes of Angostura Bitters\n                   ~Grenadine\n                   ~ orange juice\n                   Yz Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.\n\n\nNOTE:-Unless otherwise stated, these recipes are for ONE\nPERSON. The quantity should be multiplied by the number of\npersons to be served. (See pages 5-6 for descriptions of ingredient:>\nand page 7 on how to serve. Glass is described on page 8.)\n                               l is n\n\n             LA RUE (SWEET and LOVELY)\n             By Pedro (Diaz) of the La Rue Restaurant\n                      I dash of Maraschino\n                      I dash of Grenadine\n                     74 pineapple juice\n                     74 Gin\n                     72 Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. I.\n\n\n                                 •\n       LA RUE (SWEET and LOWDOWN)\n             By Pedro (Diaz) of the La Rue Restaurant\n                       I dash of Absinthe\n                       1 egg (white only)\n                      74 Curacao\n                    · ~French Vermouth\n                      72 Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. I.\n  Pedro would have you know that Apple Jack is the \"barfly's\ndelight\" ... palatability and purity being its two major assets.\nWhat more, we inquire, need be said .\n\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-011",
+      "order": 11,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "PARADISE",
+      "name_es": "Paradise",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 dash of pineapple juice",
+          "item_es": "1 golpe de jugo de piña",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "1 dash of Grenadine",
+          "item_es": "1 golpe de granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 lime (juice only)",
+          "item_es": "1/2 lima (solo el jugo)",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "solo el jugo"
+        },
+        {
+          "item_original": "3/4 Laird's Apple Jack",
+          "item_es": "3/4 de Laird's Apple Jack",
+          "amount": 0.75,
+          "unit": null,
+          "notes": "tres cuartas partes"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PARADISE\nBy Joe (Daois) of the Paradise Restaurant\n                    I dash of pineapple juice\n                    1 dash of Grenadine\n                   72 lime (juice only)\n                   % Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.\n  \"Apple Jack?\" says Joe. \"Okay, definitely!\"\n\n\nNOTE:-Unless otherwise stated, these recipes are for ONE\nPERSON. The quantity should be multiplied by the number of\npersons to be served. (See pages 5=6° for descriptions of ingredients\nand page 7 on how to serve. Glass is described on page 8.)\n                               [ 16 ]\n\n            PARK LANE (The Penthouse)\n                 By John (Navis) of the Parle Lant\n                    1 dash of Orange Bitters\n                    2 dashes oflemon juice\n                   % Yellow Chartreusse\n                   % Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.\n   John says that this is a real knockout and his favorite of all\ncocktails. Bill Flynn also of the Park Lane, recommends-before\nretiring-a little Apple Jack and a dash of Orange Bitters. He\nsays that this will put anyone to sleep and bring beautiful dreams\naplenty. What is more, no aspirins needed in the morning. He\nlikes Apple Jack in any concoction-believes it is bound to be\ngood no matter how it is served because it is, after all, a Brandy .\n\n                                 •\n                 PIERRE (The Serpent)",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-012",
+      "order": 12,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "RITZ-CARL TON",
+      "name_es": "Ritz-Carlton",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "2 large fresh strawberries",
+          "item_es": "2 fresas frescas grandes",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "1/3 Italian Vermouth",
+          "item_es": "1/3 de vermut italiano",
+          "amount": 0.333,
+          "unit": null,
+          "notes": "una tercera parte"
+        },
+        {
+          "item_original": "2/3 Laird's Apple Jack",
+          "item_es": "2/3 de Laird's Apple Jack",
+          "amount": 0.667,
+          "unit": null,
+          "notes": "dos terceras partes"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RITZ-CARL TON\nBy George of tlze Ritz-Carlton Hotel\n\n                    2 large fresh strawberries\n                   ~Italian Vermouth\n                   % Laird's Apple Jack\n\nShake thoroughly with ice, strain and serve in glass No. 1.\n  George believes that this is a nice looking, nice tasting drink.\nThe strawberries are a pet notion of his .",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-013",
+      "order": 13,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "SAVOY.PLAZA",
+      "name_es": "Savoy-Plaza",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 ounce of Raspberry Syrup",
+          "item_es": "1/2 onza de jarabe de frambuesa",
+          "amount": 0.5,
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 lime (juice only) and place skin in glass",
+          "item_es": "1/2 lima (solo el jugo) y colocar la cascara en el vaso",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "solo el jugo; colocar la cascara en el vaso"
+        },
+        {
+          "item_original": "1 1/2 ounces Laird's Apple Jack",
+          "item_es": "1 1/2 onzas de Laird's Apple Jack",
+          "amount": 1.5,
+          "unit": "oz",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": "cascara de lima",
+      "page_reference": null,
+      "raw_text": "SAVOY.PLAZA\nBy 'Jolzn Teitelbaum of tlze Savoy-Plaza Hotel\n\n          Y2 ounce of Raspberry Syrup\n          Y2 lime (juice only) and place skin in glass\n         1% ounces Laird's Apple Jack\n\nShake thoroughly with ice, strain and serve in glass No. 1.\n  John was bar manager for many years of the Hotel Knicker-\nbocker at 42nd Street and Broadway. He has written many books\non what to drink and how to make it. The most famous one is\ncalled \"Happy Days.\" He says that there is a large demand for\nApple Jack because it is the purest drink you can obtain. In his\nown words \"It's a very pure, good tasting article.\"\n\n\nNOTE:-Unless otherwise stated, these recipes are for ONE\nPERSON. The quantity should be multiplied by the number of\npersons to be served. (See pages 5-6 for descriptions of ingredients\nand page 7 on how to serve. Glass is described on page 8.)\n                               { 18 1",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-014",
+      "order": 14,
+      "section_title": "BILTMORE INDIVIDUAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "ST. MORITZ",
+      "name_es": "St. Moritz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 jigger Laird's Apple Jack",
+          "item_es": "1 jigger de Laird's Apple Jack",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "jigger"
+        },
+        {
+          "item_original": "1/2 jigger of French Vermouth",
+          "item_es": "1/2 jigger de vermut frances",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jigger"
+        },
+        {
+          "item_original": "1 drop of Prunell",
+          "item_es": "1 gota de Prunell",
+          "amount": 1,
+          "unit": "dash",
+          "notes": "1 gota"
+        },
+        {
+          "item_original": "a few drops of Creme de Mole",
+          "item_es": "unas gotas de Crema de Mora",
+          "amount": null,
+          "unit": "dash",
+          "notes": "unas gotas (Creme de Mure, brandy frances de zarzamora)"
+        },
+        {
+          "item_original": "a few drops of Angostura Bitters",
+          "item_es": "unas gotas de amargo de Angostura",
+          "amount": null,
+          "unit": "dash",
+          "notes": "unas gotas"
+        },
+        {
+          "item_original": "a few dashes of Gum Syrup",
+          "item_es": "unos golpes de jarabe de goma",
+          "amount": null,
+          "unit": "dash",
+          "notes": "unos golpes"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ST. MORITZ\nBy Victor (Ferasin) of the St. Moritz Hotel\n                  1 jigger Laird's Apple Jack\n                Y2 jigger of French Vermouth\n                  1 drop of Prunell\n                    a few drops of Creme de Moie\n                    a few drops of Angostura Bitters\n                    a few dashes of Gum Syrup\nShake thoroughly with ice, strain and serve in glass No. 1.\n   Victor has been head barman at the Ritz in Pari~, the Savoy\nin Cairo, the Stephanie at Baden-Baden, the Princess Restaurant\nin London, the Excelsior Hotels in Rome, Naples, Venice and\nother famous spots. He knows just about all there is to know about\nmixing drinks and says that ever since his days at the Ritz in\nParis he has considered Apple Jack to be one of the finest beverages\nhe has ever known.\n                                  •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-015",
+      "order": 15,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "APPLE BLOSSOM",
+      "name_es": "Apple Blossom",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 dash of Raspberry Syrup",
+          "item_es": "1 golpe de jarabe de frambuesa",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "1 dash of Orange Bitters",
+          "item_es": "1 golpe de amargo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 sweet Cider",
+          "item_es": "1/2 de sidra dulce",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "media parte"
+        },
+        {
+          "item_original": "1/2 Laird's Apple Jack",
+          "item_es": "1/2 de Laird's Apple Jack",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "media parte"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLE BLOSSOM\n1 dash of Raspberry Syrup\n                 1 dash of Orange Bitters\n                Yz sweet Cider\n                Yz Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.\n\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-016",
+      "order": 16,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "APPLE CAR COCKTAIL",
+      "name_es": "Apple Car Cocktail",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/3 lemon juice",
+          "item_es": "1/3 de jugo de limon",
+          "amount": 0.333,
+          "unit": null,
+          "notes": "una tercera parte"
+        },
+        {
+          "item_original": "1/3 Triple Sec Cointreau",
+          "item_es": "1/3 de Triple Sec Cointreau",
+          "amount": 0.333,
+          "unit": null,
+          "notes": "una tercera parte"
+        },
+        {
+          "item_original": "1/3 Laird's Apple Jack",
+          "item_es": "1/3 de Laird's Apple Jack",
+          "amount": 0.333,
+          "unit": null,
+          "notes": "una tercera parte"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLE CAR COCKTAIL\n% lemon juice\n                ~ Triple Sec Cointreau\n                ~Laird's Apple Jack\n\nShake thoroughly with ice, strain and serve in glass No. I.\n\n\n                                 •\n                Apple ••Jaek High''\n                 1 teaspoonful of sugar\n                Yz jigger of lemon juice\n                Yz wineglass Laird' s Apple Jack\nIce and fill with charged water. Serve in glass No. 3 .\n\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-017",
+      "order": 17,
+      "section_title": "Laird's Recipes",
+      "category": "flip",
+      "name_original": "APPLE JACK FLIP",
+      "name_es": "Apple Jack Flip",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 teaspoonful of sugar",
+          "item_es": "1 cucharadita de azucar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1 fresh egg",
+          "item_es": "1 huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 wineglass Laird's Apple Jack",
+          "item_es": "1/2 copa de vino de Laird's Apple Jack",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Beat egg thoroughly previous to mixing. Shake thoroughly with ice, strain and sprinkle with nutmeg. Serve in glass No. 4.",
+      "method_es": "Batir bien el huevo antes de mezclar. Agitar enérgicamente con hielo, colar y espolvorear con nuez moscada. Servir en copa flip.",
+      "glassware": "copa flip",
+      "garnish": "nuez moscada espolvoreada",
+      "page_reference": null,
+      "raw_text": "APPLE JACK FLIP\n1 teaspoonful of sugar\n                 1 fresh egg\n                Yz wineglass Laird's Apple Jack\nBeat egg thoroughly previous to mixing. Shake thoroughly with\nice, strain and sprinkle with nutmeg. Serve in glass No. 4.\n\n\nNOTE:-Unless otherwise stated, these recipes are for ONE\nPERSON. The quantity should be multiplied by the number of\npersons to be served. (See pages 5::{5 for descriptions of ingredients\nand page 7 on how to serve. Glass is described on page 8.)\n                               i ~o i",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-018",
+      "order": 18,
+      "section_title": "Laird's Recipes",
+      "category": "other",
+      "name_original": "APPLE SIP",
+      "name_es": "Apple Sip",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 jigger of lemon juice",
+          "item_es": "1/2 jigger de jugo de limon",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "jigger"
+        },
+        {
+          "item_original": "1/2 wineglass of Laird's Apple Jack",
+          "item_es": "1/2 copa de vino de Laird's Apple Jack",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "1 split of Ginger Ale",
+          "item_es": "1 botellin (split) de ginger ale",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "split (botellin pequeño)"
+        }
+      ],
+      "method_original": "Ice and fill glass with Ginger Ale. Serve in glass No. 3.",
+      "method_es": "Añadir hielo y rellenar el vaso con ginger ale. Servir en vaso highball.",
+      "glassware": "vaso highball",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLE SIP\n72 jigger of lemon juice\n                72 wineglass of Laird's Apple Jack\n                 1 split of Ginger Ale\nIce and fill glass with Ginger Ale. Serve in glass No. 3.\n\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-019",
+      "order": 19,
+      "section_title": "Laird's Recipes",
+      "category": "sour",
+      "name_original": "APPLE SOUR",
+      "name_es": "Apple Sour",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 teaspoonful of sugar",
+          "item_es": "1 cucharadita de azucar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1/3 lemon juice",
+          "item_es": "1/3 de jugo de limon",
+          "amount": 0.333,
+          "unit": null,
+          "notes": "una tercera parte"
+        },
+        {
+          "item_original": "2/3 Laird's Apple Jack",
+          "item_es": "2/3 de Laird's Apple Jack",
+          "amount": 0.667,
+          "unit": null,
+          "notes": "dos terceras partes"
+        },
+        {
+          "item_original": "1 thin slice of orange",
+          "item_es": "1 rodaja fina de naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and squirt with charged water. Insert slice of orange and serve in glass No. 7.",
+      "method_es": "Agitar bien con hielo, colar y rociar con agua carbonatada. Insertar la rodaja de naranja y servir en copa sour.",
+      "glassware": "copa sour",
+      "garnish": "rodaja fina de naranja",
+      "page_reference": null,
+      "raw_text": "APPLE SOUR\n1 teaspoonful of sugar\n                73 lemon juice\n                % Laird's Apple Jack\n                  1 thin slice of orange\nShake thoroughly with ice, strain and squirt with charged water.\nInsert slice of orange and serve in glass No. 7.\n\n\n                                 •\n                APPLE TODDY (hot)\n                  1 teaspoonful of sugar\n                72 of a baked apple\n                72 wineglass Laird's Apple Jack\nPlace half of baked apple in glass with a spoon, fill two thirds full\nof boiling water, add ingredients and stir. Serve in glass No. 2.\nBefore using rinse glass rapidly with hot water, this and the\nspoon will prevent breaking.\n\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-020",
+      "order": 20,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "BEE'S KNEES",
+      "name_es": "Bee's Knees",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 teaspoonful of honey",
+          "item_es": "1 cucharadita de miel",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1/3 lemon juice",
+          "item_es": "1/3 de jugo de limon",
+          "amount": 0.333,
+          "unit": null,
+          "notes": "una tercera parte"
+        },
+        {
+          "item_original": "2/3 Laird's Apple Jack",
+          "item_es": "2/3 de Laird's Apple Jack",
+          "amount": 0.667,
+          "unit": null,
+          "notes": "dos terceras partes"
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1. This is a renowned cocktail.",
+      "method_es": "Agitar bien con hielo, colar y servir en copa de coctel. Es un coctel afamado.",
+      "glassware": "copa de coctel",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BEE'S KNEES\n1 teaspoonful of honey\n              73 lemon juice\n              % Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1. This\nis a renowned cocktail.\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-021",
+      "order": 21,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "B.V.D.",
+      "name_es": "Coctel B.V.D.",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/3 Bacardi Rum",
+          "item_es": "1/3 ron Bacardi",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/3 French Vermouth",
+          "item_es": "1/3 vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/3 Dubonnet",
+          "item_es": "1/3 Dubonnet",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "B.V.D.\n1 teaspoonful of Grenadine\n               ~lemon juice\n               ~Gin\n               73 Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1. Orig-\ninated in 1916 at the Chateau Laurier, Staten Island, N. Y.\n\n\nNOTE:-Unless otherwise stated, these recipes are for ONE\nPERSON. The quantity should be multiplied by the number of\npersons to be served. (See pages 5-6 for descriptions of ingredients\nand page 7 on how to serve. Glass is described on page 8.)\n                               [ !ll J\n\n              C:OMPABEE\n              2 heaping tablespoons full of ice cream\n              1 jigger of Curacao\n             Yz wineglass Laird's Apple Jack\nMix thoroughly uniced and fill remaining part with charged\nwater, sprinkle with nutmeg and serve in glass No. 3.\n\n\n                                •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-022",
+      "order": 22,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "COLT'S NECK",
+      "name_es": "Coctel Colt's Neck",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 Rye Whiskey",
+          "item_es": "1/2 whisky de centeno (Rye)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLT'S NECK\nYz jigger of Grenadine\n             Yz jigger of lemon juice\n             Yz wineglass Laird's Apple Jack\nFill glass with finely chopped ice and remaining part with charged\nwater. Serve in glass No. 3.\n  This drink is given the name of Colt's Neck a small town about\ntwo miles from Laird's present Distillery. J. T. Laird sold cider\nspirits there as early as 1784.\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-023",
+      "order": 23,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "CORONATION COCKTAIL",
+      "name_es": "Coctel Coronation",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 Dubonnet",
+          "item_es": "1/2 Dubonnet",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CORONATION COCKTAIL\n2 dashes of Angostura Bitters\n              Yz French Vermouth\n              Yz Laird's Apple Jack\nStir thoroughly with ice, strain and serve in glass No. 1.\n\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-024",
+      "order": 24,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "DISTINGUE COCKTAIL",
+      "name_es": "Coctel Distingué",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Italian Vermouth",
+          "item_es": "1/4 vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 French Vermouth",
+          "item_es": "1/4 vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DISTINGUE COCKTAIL\n1 dash of Grenadine\n               1 dash of Orange Bitters\n              Yz French Vermouth\n              Yz Laird's Apple Jack\n               1 thinly sliced piece of orange peel\nStir thoroughly with ice, strain, twist and insert orange peel.\nServe in glass No. 1.\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-025",
+      "order": 25,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "DUDE COCKTAIL",
+      "name_es": "Coctel Dude",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 Italian Vermouth",
+          "item_es": "1/2 vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DUDE COCKTAIL\n2 dashes of Angostura Bitters\n              78 grapefruit juice\n              % Laird's Apple Jack\n Shake thoroughly with ice, strain and serve in glass No. 1.\n\n\n NOTE:-Unless otherwise stated, these recipes are for ONE\n PERSON. The quantity should be multiplied by the number of\n persons to be served. (See pages 5-6 for descriptions of ingredients\n and page 7 on how to serve. Glass is described on page 8.)\n                               [ 2q",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-026",
+      "order": 26,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "ELITE COCKTAIL",
+      "name_es": "Coctel Elite",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 Benedictine",
+          "item_es": "1/2 Bénédictine",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ELITE COCKTAIL\nU lemon juice",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-027",
+      "order": 27,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "GOLDEN DAWN COCKTAIL",
+      "name_es": "Coctel Golden Dawn",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/4 Apple Brandy",
+          "item_es": "1/4 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Gin",
+          "item_es": "1/4 ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Apricot Brandy",
+          "item_es": "1/4 brandy de albaricoque",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Orange Juice",
+          "item_es": "1/4 jugo de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GOLDEN DAWN COCKTAIL\nU orange juice",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-028",
+      "order": 28,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "LAIRD'S SPECIAL COCKTAIL",
+      "name_es": "Coctel Especial Laird's",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Italian Vermouth",
+          "item_es": "1/4 vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 French Vermouth",
+          "item_es": "1/4 vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LAIRD'S SPECIAL COCKTAIL\n1 dash of Angostura Bitters\n                 3 dashes of Gum Syrup\n                %; lemon or lime juice\n                %; French Vermouth\n                72 Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-029",
+      "order": 29,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "LOUISA COCKTAIL",
+      "name_es": "Coctel Louisa",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Lemon Juice",
+          "item_es": "1/4 jugo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Grenadine",
+          "item_es": "1/4 granadina",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LOUISA COCKTAIL\n%; Apricot Brandy\n                %; pineapple juice\n                72 Laird's Apple Jack\n                 1 Maraschino Che.rry\n                 1 thin slice of pineapple\nShake thoroughly with ice, strain, insert cherry, slice of orange\nand pineapple. Serve in glass No. 1.",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-030",
+      "order": 30,
+      "section_title": "Laird's Recipes",
+      "category": "cocktail",
+      "name_original": "PERFECT COCK.TAIL",
+      "name_es": "Coctel Perfect",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Gin",
+          "item_es": "1/2 ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Italian Vermouth",
+          "item_es": "1/4 vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 French Vermouth",
+          "item_es": "1/4 vermut francés (seco)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PERFECT COCK.TAIL\n72 pineapple juice\n              72 Laird's Apple Jack\n               1 dash of Angostura Bitters\nShake thoroughly with ice, strain and serve in glass No. 1.",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-031",
+      "order": 31,
+      "section_title": "SPECIAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "TOWN TOPIC COCKTAIL",
+      "name_es": "Coctel Town Topic",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Lemon Juice",
+          "item_es": "1/4 jugo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 Grenadine",
+          "item_es": "1/4 granadina",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Orange Bitters",
+          "item_es": "Un dash de bitter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOWN TOPIC COCKTAIL\n1 teaspoonful of Maple Syrup\n              74 lemon juice\n              74 orange juice\n              Yz Laird's Apple Jack\nShake thoroughly with ice, strain and serve in glass No. 1.\n\n                                 •",
+      "notes": null
+    },
+    {
+      "id": "1934-lairds-applejack-how-to-serve-recipes-032",
+      "order": 32,
+      "section_title": "SPECIAL APPLE JACK PUNCH",
+      "category": "cocktail",
+      "name_original": "UTAH COCKTAIL",
+      "name_es": "Coctel Utah",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 Apple Brandy",
+          "item_es": "1/2 brandy de manzana (Apple Brandy / Applejack)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 Italian Vermouth",
+          "item_es": "1/2 vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dash of Angostura Bitters",
+          "item_es": "Un dash de Angostura bitters",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice and strain into a cocktail glass.",
+      "method_es": "Revolver bien con hielo y colar en copa de coctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "UTAH COCKTAIL\n1 dash of Grenadine\n              Yz lemon (juice only)\n              ~ Apricot Brandy\n              % Laird's Apple Jaclc\nShake thoroughly with ice, strain and serve m glass No. 1.\n\n\nNOTE:-Unless otherwise stated, these recipes are for ONE\nPERSON. The quantity should be multiplied by the number of\npersons to be served. (See pages 5-6 for descriptions of ingredients\nand page 7 on how to serve. Glass is described on page 8.)\n                              l 25 J",
+      "notes": null
+    }
+  ]
+}
