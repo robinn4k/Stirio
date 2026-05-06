@@ -21,10 +21,7 @@ const ROUTES = {
   profile:     {},
 
   // Subscreens (parent: home unless noted)
-  'academy-hub':      { parent: 'home',         hidesNav: true },
-  'academy-cocktail': { parent: 'academy-hub',  hidesNav: true },
-  'academy-wine':     { parent: 'academy-hub',  hidesNav: true },
-  'academy-coffee':   { parent: 'academy-hub',  hidesNav: true },
+  academy:            { parent: 'home',         hidesNav: true },
   iba:                { parent: 'home',         hidesNav: true },
   freequiz:        { parent: 'home',         hidesNav: true },
   wiki:            { parent: 'home',         hidesNav: true },
@@ -755,7 +752,7 @@ const App = () => {
   // (daily, speed) build the lesson eagerly and push a 'lesson' overlay; the
   // rest map directly to a subscreen route.
   const MODE_ROUTES = {
-    academy:  'academy-hub',
+    academy:  'academy',
     iba:      'iba',
     freequiz: 'freequiz',
     wiki:     'wiki',
@@ -954,7 +951,7 @@ const App = () => {
         if (acadMatch && perfect) patch.academyPerfect = true;
         if (acadMatch) {
           // Recompute completed-level count across all 3 tracks so the
-          // total matches what AcademyHub shows on Home. A level is
+          // total matches what AcademyScreen tab counts show. A level is
           // "complete" when at least one of its lessons was passed.
           let completed = 0;
           for (const track of ['cocktail', 'wine', 'coffee']) {
@@ -1198,41 +1195,30 @@ const App = () => {
         />
       )}
 
-      {subScreen === 'academy-hub' && !activeLesson && window.AcademyHub && (
-        <AcademyHub
+      {subScreen === 'academy' && !activeLesson && (
+        <AcademyScreen
           onBack={() => setSubScreen(null)}
-          onPickTrack={(track) => setSubScreen(`academy-${track}`)}
+          onStartAcademyLesson={(track, levelId, lessonIdx) => {
+            const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+            const level = levels.find(l => l.id === levelId);
+            if (!level) return;
+            const lesson = window.buildAcademyLesson && window.buildAcademyLesson(level, lessonIdx, track);
+            if (lesson) pickLesson(lesson);
+          }}
+          onStartRound={(track, { roundId, levelId }) => {
+            const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
+            const level = levels.find(l => l.id === levelId);
+            const practice = level && window.buildAcademyPractice
+              ? window.buildAcademyPractice(level, roundId, track)
+              : null;
+            if (practice) { pickLesson(practice); return; }
+            // Fallback: sólo por roundId
+            const round = (window.TRIVIA_ROUNDS || []).find(r => r.id === roundId);
+            if (round) pickLesson(window.buildLessonFromRound && window.buildLessonFromRound(round));
+          }}
+          onOpenFicha={(f) => setFichaOpen(f)}
         />
       )}
-
-      {(subScreen === 'academy-cocktail' || subScreen === 'academy-wine' || subScreen === 'academy-coffee') && !activeLesson && (() => {
-        const track = subScreen.slice('academy-'.length);
-        return (
-          <AcademyScreen
-            track={track}
-            onBack={() => setSubScreen('academy-hub')}
-            onStartAcademyLesson={(levelId, lessonIdx) => {
-              const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
-              const level = levels.find(l => l.id === levelId);
-              if (!level) return;
-              const lesson = window.buildAcademyLesson && window.buildAcademyLesson(level, lessonIdx, track);
-              if (lesson) pickLesson(lesson);
-            }}
-            onStartRound={({ roundId, levelId }) => {
-              const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
-              const level = levels.find(l => l.id === levelId);
-              const practice = level && window.buildAcademyPractice
-                ? window.buildAcademyPractice(level, roundId, track)
-                : null;
-              if (practice) { pickLesson(practice); return; }
-              // Fallback: sólo por roundId
-              const round = (window.TRIVIA_ROUNDS || []).find(r => r.id === roundId);
-              if (round) pickLesson(window.buildLessonFromRound && window.buildLessonFromRound(round));
-            }}
-            onOpenFicha={(f) => setFichaOpen(f)}
-          />
-        );
-      })()}
 
       {subScreen === 'iba' && !activeLesson && (
         <FichasScreen
