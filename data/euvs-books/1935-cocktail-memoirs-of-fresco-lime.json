@@ -1,0 +1,919 @@
+{
+  "book_id": "1935-cocktail-memoirs-of-fresco-lime",
+  "metadata": {
+    "title": "Cocktail Memoirs of Fresco Lime",
+    "author": null,
+    "year": 1935,
+    "language": "en",
+    "language_name": "Ingles",
+    "publisher": "American Lime Corp.",
+    "city": "United States",
+    "edition": null,
+    "source_file": "1935 Cocktail Memoirs of Fresco Lime.txt",
+    "notes": "Folleto promocional publicado en 1935 por la American Lime Corp. para promover el uso de la lima americana 'Fresco' en cocteleria, junto con otros productos publicitados (Cora Vermouth, Benedictine, Cointreau, Remy Martin, Burnett's White Satin Gin, Schenley Rye, Nuyens Grenadine). Incluye el Fresco Cocktail (receta titular), variantes europeas con Benedictine y otros licores premium, una seleccion de cocteles clasicos (White Lady, Clover Club Royale, Palm Beach, Westchester, Royal Hawaiian, Whiskey Fizz, Volga, Cossack), y un apartado de postres y bebidas refrescantes con lima (Lime Cream Sherbet, Waldorf Lime Ice, Lime Chiffon Pie). Cierra con un articulo sobre los 'Limeys' britanicos y la vitamina C. Saltadas (no son recetas reales): Those Cora Vermouth Twins—Ah! 8- 9 (Banner promocional Cora Vermouth con paginas, no es receta); Limeys and Vitamin C 21 (Entrada del indice); BENEDICTINE LIOUEUR-There U (Encabezado promocional Benedictine OCR-mangled); FecAMP (Nombre de la ciudad de Fecamp (origen del Benedictine), no es receta); TRY THE CORA CONTINENTAL (Llamada publicitaria a probar el Cora Continental, no es receta); Those Vermouth (Fragmento del banner Cora Vermouth, no es receta); Part White Curacao 2 Dashes Nuyens Grenadine (Linea fragmentada de ingredientes (parte de white curaçao y 2 dashes de granadina)); Westchester Special Royal Hawaiian Special Cocktail (Cabeceras de dos recetas (Westchester Special y Royal Hawaiian Special) capturadas en una sola linea por OCR); REMY (Banner de la marca Remy Martin, no es receta); CeiHTREAU V. O (Banner de Cointreau V.O. con OCR mangled, no es receta); Ya Remy Martin Cognac (Linea fragmentada de ingrediente (1/2 Remy Martin Cognac)); Y Dubonnet Ya Carioca Rum (Linea fragmentada de ingredientes); V2 Jigger Burnetts White Satin Gin (Linea fragmentada de ingrediente (1/2 jigger de Burnett's White Satin Gin)); Meet Sehenley Rye! — He's (Slogan promocional de Schenley Rye, no es receta); Nuyens Grenadine (Banner de la marca Nuyens Grenadine, no es receta); Dashes Applejack (Linea fragmentada de ingrediente (dashes de applejack)); VO DKA (Encabezado de seccion 'VODKA' OCR-mangled, no es receta); Refreshing Summer Drinks (Encabezado de seccion 'Refreshing Summer Drinks', no es receta); LIMEYS and VITAMIN C (Articulo sobre los 'Limeys' britanicos y la vitamina C, no es receta); AMERICAN LIME CORP. (Pie editorial de la American Lime Corp., no es receta)"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": null,
+      "title_es": null,
+      "content_original": "COCKTAIL MEMOIRS\n   FRESCiTlME\n\n\n\n           1\n\n              Index\nI Learn the Carioea                 2- 3\nThe Monks Teach Me New Things. 4- 5\n  Benedictine                       4- 5\nGin Is No Sin                       6- 7",
+      "content_es": null
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "OF TREASURED RECIPES",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 3,
+      "type": "recipes_section",
+      "title": "Planters Punch",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 4,
+      "type": "recipes_section",
+      "title": "Hot Rum Punch",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 5,
+      "type": "recipes_section",
+      "title": "Biltmore Whiskey Punch",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    },
+    {
+      "order": 6,
+      "type": "recipes_section",
+      "title": "Vodka Collins",
+      "title_es": null,
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-001",
+      "order": 1,
+      "section_title": "Planters Punch",
+      "category": "cocktail",
+      "name_original": "The Fresco Cocktail",
+      "name_es": "El Coctel Fresco",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Juice of Fresco lime",
+          "item_es": "Jugo de lima Fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "jugo de una lima"
+        },
+        {
+          "item_original": "1 Teaspoonful sugar",
+          "item_es": "Azucar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1 Jigger of Carioca Rum",
+          "item_es": "Ron Carioca",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Small piece of fresh pineapple, muddled",
+          "item_es": "Trozo pequeno de pina fresca, macerado",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "macerar"
+        }
+      ],
+      "method_original": "Cracked ice, shake ice cold, strain.",
+      "method_es": "Macerar la pina con el azucar y el jugo de lima. Anadir el ron y hielo picado, agitar bien hasta enfriar y colar.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Fresco Cocktail\n(World's Champion Cocktail\n by Dan Donnelly, Hotel Biltmore)                 Carioca Collins\n  Juice of Fresco lime                    Juice of 1 Fresco lime\n1 Teaspoonful sugar                     1 Teaspoonful sugar\n1 Jigger of Carioca Rum                 1 Jigger White Seal Carioca\n  Small piece of fresh pineapple,         Shake well with ice and strain into\n    muddled                                 Collins glass\n  Cracked ice, shake ice cold, strain     Add lump ice. Soda and stir\n                  •                                      •",
+      "notes": "Atribuido a Dan Donnelly, Hotel Biltmore. Promocionado como 'World's Champion Cocktail'."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-002",
+      "order": 2,
+      "section_title": "Hot Rum Punch",
+      "category": "other",
+      "name_original": "BENEDICTINE FRAPPE-Pack a",
+      "name_es": "Benedictine Frappe",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": null,
+          "unit": null,
+          "notes": "rellenar el vaso"
+        }
+      ],
+      "method_original": "Pack a cocktail glass with finely-shaved ice. Fill with Benedictine. Sip through a straw.",
+      "method_es": "Llenar una copa de coctel con hielo finamente raspado. Cubrir con Benedictine. Beber con popote.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BENEDICTINE FRAPPE-Pack a\nREXKWCTINE                 cocktail glass with finely-\n                                   shaved ice. .Fill with Benedictine.",
+      "notes": "Servir con popote (sip through a straw)."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-003",
+      "order": 3,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "The Benedictine Cocktail Gordon Special",
+      "name_es": "El Coctel Benedictine Gordon Especial",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "2 Parts Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": null,
+          "notes": "partes"
+        },
+        {
+          "item_original": "1 Part D.O.M. Benedictine",
+          "item_es": "Benedictine D.O.M.",
+          "amount": 1,
+          "unit": null,
+          "notes": "parte"
+        },
+        {
+          "item_original": "2 Parts Cognac",
+          "item_es": "Cognac",
+          "amount": 2,
+          "unit": null,
+          "notes": "partes"
+        },
+        {
+          "item_original": "Juice of 1/2 Fresco lime",
+          "item_es": "Jugo de media lima Fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Cracked ice and shake well.",
+      "method_es": "Combinar todos los ingredientes con hielo picado y agitar bien.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Benedictine Cocktail Gordon Special\n2 Parts Gin\n1 Part D.O.M. Benedictine         1 Part D.O.M. Benedictine\n2 Parts Cognac                    2 Dashes Gamier Orange Curacao\n  Juice of 1/2 Fresco lime          Juice of 1/4 Fresco lime\n  Cracked ice and shake well        Shake well with ice and strain into\n                                      a cocktail glass containing a\n                                      piece of fresh pineapple.\n                                                   •",
+      "notes": "Receta presentada en formato de partes."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-004",
+      "order": 4,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "The Louisville",
+      "name_es": "El Louisville",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1/2 D.O.M. Benedictine",
+          "item_es": "Benedictine D.O.M.",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "mitad"
+        },
+        {
+          "item_original": "1/2 Burnetts White Satin Gin",
+          "item_es": "Ginebra Burnetts White Satin",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "mitad"
+        },
+        {
+          "item_original": "1/2 Fresco lime juice",
+          "item_es": "Jugo de lima Fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "media lima"
+        }
+      ],
+      "method_original": "Cracked ice—shake thoroughly.",
+      "method_es": "Combinar los ingredientes con hielo picado y agitar enerigicamente.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Louisville\n% D.O.M. Benedictine\nVs Burnetts White Satin Gin       I Part Cognac (Remy Martin)\nVi Fresco lime juice              1 Dash Nuyens Grenadine\n   Cracked ice—shake thoroughly   2 Parts D.O.M. Benedictine\n                                    Juice of 1/4 Fresco lime\n                                    Add lump of ice and stii\n                                                   •",
+      "notes": "Proporciones expresadas como fracciones del volumen total."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-005",
+      "order": 5,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "Queen Elizabeth",
+      "name_es": "Reina Isabel",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "1 Part D.O.M. Benedictine",
+          "item_es": "Benedictine D.O.M.",
+          "amount": 1,
+          "unit": null,
+          "notes": "parte"
+        },
+        {
+          "item_original": "1 Part Cora French Vermouth",
+          "item_es": "Vermut frances Cora",
+          "amount": 1,
+          "unit": null,
+          "notes": "parte"
+        },
+        {
+          "item_original": "1 Part Burnetts White Satin Gin",
+          "item_es": "Ginebra Burnetts White Satin",
+          "amount": 1,
+          "unit": null,
+          "notes": "parte"
+        },
+        {
+          "item_original": "Juice of Fresco lime",
+          "item_es": "Jugo de lima Fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "jugo de una lima"
+        }
+      ],
+      "method_original": "Cracked ice—shake well.",
+      "method_es": "Combinar los ingredientes con hielo picado y agitar bien.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Queen Elizabeth\n1 Part D.O.M. Benedictine         2 Parts French Vermouth\n1 Part Cora French Vermouth       1 part D.O.M. Benedictine\n1 Pan Burnetts White Satin Gin    1 Part Fresco Lime Juice\n  Juice of  Fresco lime            Add ice, shake, and strain into\n  Cracked ice—shake well           cocktail glass\n\n                                         ;Cr3\n                                                                   f1 €INS\nBURNETT'S                                                          L\n\n                                         m t",
+      "notes": "Receta ganadora de un concurso nacional de cocteles segun el libro."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-006",
+      "order": 6,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "Palm Beach Cocktail",
+      "name_es": "Coctel Palm Beach",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Burnetts White Satin Gin",
+          "item_es": "Ginebra Burnett's White Satin",
+          "amount": 2,
+          "unit": null,
+          "notes": "partes"
+        },
+        {
+          "item_original": "Cora Italian Vermouth",
+          "item_es": "Vermouth italiano Cora",
+          "amount": 1,
+          "unit": null,
+          "notes": "parte"
+        },
+        {
+          "item_original": "Fresco lime juice",
+          "item_es": "Jugo de lima Fresco",
+          "amount": 1,
+          "unit": null,
+          "notes": "parte"
+        }
+      ],
+      "method_original": "Crushed ice—shake very cold.",
+      "method_es": "Hielo picado: agitar muy frio.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Palm Beach Co-ktail Madison\n2 Parts Burnetts White Satin Gin    1 Part Cora French Vermouth\n1 Part Cora Italian Vermouth        2 Parts Applejack\n1 Part Fresco lime juice           Yz Fresco lime\n  Crushed ice—shake very cold           Cracked ice—shake well",
+      "notes": "El OCR fusiono el encabezado del Palm Beach Cocktail con el del coctel Madison (a la derecha en la pagina, con Cora French Vermouth, Applejack y 1/2 lima Fresco). Solo se enriquece la receta dominante (Palm Beach)."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-007",
+      "order": 7,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "Frank Sullivan Cocktail",
+      "name_es": "Coctel Frank Sullivan",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 parte (OCR 'Ya' = 1/2)"
+        },
+        {
+          "item_original": "Remy Martin Cognac",
+          "item_es": "Cognac Remy Martin",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 parte"
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo en trozos y colar en copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Frank Sullivan Cocktail Ya Cointreau\nCointreau",
+      "notes": "El OCR adjunto 'Ya Cointreau' al titulo; corresponde a '1/2 Cointreau' como ingrediente. La receta combina Cointreau y Remy Martin Cognac."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-008",
+      "order": 8,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "The White Lady Cocktail",
+      "name_es": "Coctel White Lady",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 parte (OCR 'Ya' = 1/2)"
+        },
+        {
+          "item_original": "Burnetts White Satin Gin",
+          "item_es": "Ginebra Burnett's White Satin",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 parte (OCR 'Y' = 1/2)"
+        },
+        {
+          "item_original": "Fresh Cream",
+          "item_es": "Crema fresca",
+          "amount": 0.166,
+          "unit": null,
+          "notes": "1/6 parte"
+        },
+        {
+          "item_original": "Juice of 1/2 Fresco lime",
+          "item_es": "Jugo de 1/2 lima Fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo en trozos y colar en copa de coctel.",
+      "glassware": "Cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The White Lady Cocktail\nJuice of 1 Fresco lime         Ya Cointreau\nY2 Teaspoon sugar                Y Burnetts White Satin Gin\n 1 Jigger Remy Martin Cognac     1/6 Fresh Cream\n  Cracked ice—shake well             Juice of Ya Fresco lime\n               •                     Shake well with cracked ice\n                                                  •",
+      "notes": "La columna izquierda del raw_text mezcla un Side Car (Remy Martin Cognac, Cointreau, jugo de lima, azucar) con notas marginales; aqui se enriquece la receta del White Lady de la columna derecha (gin/Cointreau/crema/lima)."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-009",
+      "order": 9,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "Clover Club Royale",
+      "name_es": "Clover Club Royale",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Burnetts White Satin Gin",
+          "item_es": "ginebra Burnett's White Satin",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Nuyens Grenadine",
+          "item_es": "granadina Nuyens",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": "1/2 jigger"
+        },
+        {
+          "item_original": "Juice of 1/2 Fresco lime",
+          "item_es": "jugo de 1/2 lima Fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Half the white of a fresh egg",
+          "item_es": "media clara de huevo fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sprig of mint",
+          "item_es": "ramita de menta",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Cracked ice — shake well — add sprig of mint.",
+      "method_es": "Con hielo picado, agitar bien y añadir una ramita de menta.",
+      "glassware": "cocktail glass",
+      "garnish": "ramita de menta",
+      "page_reference": null,
+      "raw_text": "Clover Club Royale\n1 Jigger Burnetts White Satin Gin                Millionaire Sour\n72 Jigger Nuyens Grenadine ''          .Juice of Yz Fresco lime\n   Juice of Y2 Fresco lime            1 Teaspoonful Nuyens Grenadine\n   Half the white of a fresh egg      1 Jigger Bourbon Whiskey\n   Cracked ice — shake well — add          Cracked ice—shake well\n     sprig of mint                         Serve in cocktail glass with piece\n                 •\n                                             of pineapple",
+      "notes": null
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-010",
+      "order": 10,
+      "section_title": "Hot Rum Punch",
+      "category": "cocktail",
+      "name_original": "The Demi Virgin",
+      "name_es": "The Demi Virgin",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Burnetts White Satin Gin",
+          "item_es": "ginebra Burnett's White Satin",
+          "amount": 4,
+          "unit": null,
+          "notes": "4 partes"
+        },
+        {
+          "item_original": "Nuyens Grenadine",
+          "item_es": "granadina Nuyens",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 parte"
+        },
+        {
+          "item_original": "Juice of 1/2 Fresco lime",
+          "item_es": "jugo de 1/2 lima Fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo picado y colar en copa de cóctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Demi Virgin\n4 Parts Burnetts White Satin, Gin                 Orgeat Delight\n1 Part Nuyens Grenadine\n  Juice of 1/2 Fresco lime\n                                      V2 J'66^' iVuyens Sirop d'Orgeat",
+      "notes": null
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-011",
+      "order": 11,
+      "section_title": "Hot Rum Punch",
+      "category": "fizz",
+      "name_original": "Whiskey Fizz",
+      "name_es": "Whiskey Fizz",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Schenley's Rye Whiskey",
+          "item_es": "whisky de centeno Schenley's",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 jigger"
+        },
+        {
+          "item_original": "Powdered sugar",
+          "item_es": "azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "White of fresh egg",
+          "item_es": "clara de huevo fresca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Fresco lime",
+          "item_es": "jugo de 1 lima Fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "White Rock",
+          "item_es": "agua mineral White Rock",
+          "amount": null,
+          "unit": null,
+          "notes": "para rellenar"
+        }
+      ],
+      "method_original": "Add ice cubes and shake well. Strain into tall glass — fill with White Rock.",
+      "method_es": "Añadir cubos de hielo y agitar bien. Colar en vaso alto y rellenar con agua White Rock.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Fizz\nJigger Schenley's Rye Whiskey         Fresco Whiskey Sour (tall glass}\n  Teaspoonful powdered sugar            1 Jigger Schenley's Cream Whiskey\n   White of fresh egg                   1 Teaspoon powdered sugar\n  Juice of 1 Fresco lime                    Juice of 1 Fresco lime\n  Add ice cubes and shake well              Cracked ice — shake well — add\n  Strain into tall glass — fill with         seltzer\n     White Rock                                           •\n                  a",
+      "notes": null
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-012",
+      "order": 12,
+      "section_title": "Biltmore Whiskey Punch",
+      "category": "cocktail",
+      "name_original": "Volga Cocktail Grand Duchess Cocktail",
+      "name_es": "Volga Cocktail",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Smirnoff Vodka",
+          "item_es": "vodka Smirnoff",
+          "amount": 2,
+          "unit": null,
+          "notes": "2 partes"
+        },
+        {
+          "item_original": "Orange juice",
+          "item_es": "jugo de naranja",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 parte"
+        },
+        {
+          "item_original": "Fresco lime juice",
+          "item_es": "jugo de lima Fresco",
+          "amount": 1,
+          "unit": null,
+          "notes": "1 parte"
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "amargo",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "granadina",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain into a cocktail glass.",
+      "method_es": "Agitar bien con hielo picado y colar en copa de cóctel.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Volga Cocktail Grand Duchess Cocktail\n2 Parts Smirnoff Vodka               2 Parts Smirnoff Vodka\n1 Part Orange juice                  1 Part Rum\n1 Part Fresco lime juice                  Juice of 1/2 Fresco lime\n  Dash of Bitters                          to ^ Part Grenadine\n2 Dashes Grenadine",
+      "notes": null
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-013",
+      "order": 13,
+      "section_title": "Vodka Collins",
+      "category": "cocktail",
+      "name_original": "Cossack Cocktail",
+      "name_es": "Cossack Cocktail",
+      "yield": "1 trago",
+      "ingredients": [
+        {
+          "item_original": "Smirnoff Vodka",
+          "item_es": "vodka Smirnoff",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 parte"
+        },
+        {
+          "item_original": "Cognac",
+          "item_es": "coñac",
+          "amount": 0.5,
+          "unit": null,
+          "notes": "1/2 parte"
+        },
+        {
+          "item_original": "Juice of 1/2 Fresco lime",
+          "item_es": "jugo de 1/2 lima Fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar syrup",
+          "item_es": "jarabe simple",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Frappe well. Strain.",
+      "method_es": "Frapear bien. Colar.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cossack Cocktail\nVz Smirnoff Vodka                         Vodka Bee's Knees Cocktail\nV2 Cognac                            Dissolve 1 part honey by thoroughly\n   Juice of 1/2 Fresco lime          stirring in 1 part Fresco lime juice,\n  Teaspoonful sugar syrup, frappe    Then add 4 to 5 parts Smirnoff\n     welj. Strain.                   Vodka. Shake.\n                                    12",
+      "notes": null
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-014",
+      "order": 14,
+      "section_title": "Vodka Collins",
+      "category": "other",
+      "name_original": "Lime Cream Sherbet Waldorf Lime Ice",
+      "name_es": "Sorbete de crema de lima",
+      "yield": "Para 6 personas",
+      "ingredients": [
+        {
+          "item_original": "1 1/4 cups sugar",
+          "item_es": "1 1/4 tazas de azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Few grains salt",
+          "item_es": "Unos granos de sal",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "3 cups milk",
+          "item_es": "3 tazas de leche",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/4 pint cream",
+          "item_es": "1/4 pinta de nata",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 cup fresh Fresco lime juice or Rose's lime juice",
+          "item_es": "1/2 taza de zumo de lima Fresco fresco o de zumo de lima Rose's",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Mix sugar and lime juice and add gradually milk and cream; then salt. Freeze and serve.",
+      "method_es": "Mezclar el azúcar con el zumo de lima e ir incorporando gradualmente la leche y la nata; añadir luego la sal. Congelar y servir.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lime Cream Sherbet Waldorf Lime Ice\n114 Cups sugar                                     {For Six People)\n     Few grains salt                    1% Tablespoons gelatin\n  3 Cups milk                                 Juice of 3 oranges\n 1/4 Pint cream                           2 Egg whites\n% Cup fresh Fresco lime juice or          8 Cups of water\n      Rose's lime juice                 31/2 Cups of sugar\n  Mix sugar and lime juice and add            Juice of 7 Fresco limes\ngradually milk and cream; then salt.      Dissolve gelatin in 2 cups of water.\nFreeze and serve.                       Add sugar; when dissolved mix to\n                                        gether with 6 cups of cold water and\n                                        fruit juice. Turn into refrigerator\n         Lime Concord Cream             pan to freeze. Beat egg whites and\n  1 Ft. cream\n                                         whip into the ice after it has frozen\n                                        for Yi of 00 hour.\nIVi Cups grapejuice                                       •\n Ya Cup sugar\n    Pistachio nuts finely chopped                     Icebergs\n    Fresco lime juice                      Dissolve 2 cups sugar in 3 cups\n 14 Cup heavy cream                      boiling water; cool; add % cup\n  Mix cream, grapejuice and sugar.       fresh Fresco lime juice or Rose's\nAdd lime juice to taste; freeze and      lime juice and color with leaf green\nserve.                                   and freeze.    Serve in glasses and\n                                         sprinkle with finely chopped nuts.",
+      "notes": "Receta culinaria (postre helado de lima), no es coctel. El OCR fusionó los títulos de dos postres distintos: 'Lime Cream Sherbet' (enriquecido aquí) y 'Waldorf Lime Ice' (no enriquecido por separado, también descrito en el bloque)."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-015",
+      "order": 15,
+      "section_title": "Vodka Collins",
+      "category": "other",
+      "name_original": "Lime Cream Rice",
+      "name_es": "Arroz con crema de lima",
+      "yield": "Para 4-6 personas",
+      "ingredients": [
+        {
+          "item_original": "1/4 cup rice",
+          "item_es": "1/4 taza de arroz",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 cup sugar",
+          "item_es": "1/2 taza de azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Whites of 2 eggs",
+          "item_es": "Claras de 2 huevos",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "3 cups milk",
+          "item_es": "3 tazas de leche",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Yolks of 2 eggs",
+          "item_es": "Yemas de 2 huevos",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "1 1/4 tablespoons Fresco lime juice or Rose's lime juice",
+          "item_es": "1 1/4 cucharadas de zumo de lima Fresco o de zumo de lima Rose's",
+          "amount": null,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Grated rind of 1 Fresco lime",
+          "item_es": "Ralladura de 1 lima Fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "2 tablespoons powdered sugar",
+          "item_es": "2 cucharadas de azúcar glas",
+          "amount": 2,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "1/4 teaspoon salt",
+          "item_es": "1/4 cucharadita de sal",
+          "amount": null,
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Pick over rice; cover with cold water; let soak overnight. Drain; put in double boiler; add milk and cook until soft. Add sugar, lime rind, lime juice, salt and egg yolks, slightly beaten. Cook until thick, turn into buttered pudding dish and cool. Beat whites of eggs until stiff; gradually add powdered sugar and lime extract. Cover top of pudding with meringue. Bake at 300°F for 8 minutes, 275°F for 15 minutes.",
+      "method_es": "Limpiar el arroz; cubrir con agua fría y dejar en remojo toda la noche. Escurrir; pasar a un baño maría; añadir la leche y cocer hasta que el arroz esté blando. Incorporar el azúcar, la ralladura y el zumo de lima, la sal y las yemas ligeramente batidas. Cocinar hasta que espese, verter en un molde para pudin enmantequillado y dejar enfriar. Batir las claras a punto de nieve; añadir gradualmente el azúcar glas y el extracto de lima. Cubrir el pudin con el merengue. Hornear a 150°C (300°F) durante 8 minutos y luego a 135°C (275°F) durante 15 minutos.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lime Cream Rice\n/4 Cup rice         11/4 Tablespoons Fresco lime juice^^\nV2 Cup sugar           or Rose's Lime Juice\n Whites 2 eggs      Grated rind of 1 Fresco lime\n 3 Cups milk         2 Tablespoons powdered sugar\n Yolks 2 eggs        % Teaspoon salt\n  Pick over rice; cover with cold water; let soak over\nnight. Drain; put in double boiler; add milk and\ncook until soft. Add sugar, lime rind, lime juice,\nsalt and egg yolks, slightly beaten. Cook until thick,\nturn into buttered pudding dish and aool. Beat whites\nof eggs until stiff; gradually add powdered sugar and\nlime extract. Cover top of pudding with meringue.\nBake \"t 300°F. for 8 minutes., 275°F, for 15 minutes.",
+      "notes": "Receta culinaria (postre con lima), no es coctel."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-016",
+      "order": 16,
+      "section_title": "Vodka Collins",
+      "category": "other",
+      "name_original": "Lime Chiffon Pie",
+      "name_es": "Tarta de chiffon de lima",
+      "yield": "Para una tarta (6-8 porciones)",
+      "ingredients": [
+        {
+          "item_original": "1 cup sugar",
+          "item_es": "1 taza de azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": "dividida en dos mitades"
+        },
+        {
+          "item_original": "1/2 teaspoon salt",
+          "item_es": "1/2 cucharadita de sal",
+          "amount": null,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1 level tablespoon gelatin",
+          "item_es": "1 cucharada rasa de gelatina",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "1 teaspoon grated lime rind",
+          "item_es": "1 cucharadita de ralladura de lima",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 cup Fresco lime juice",
+          "item_es": "1/2 taza de zumo de lima Fresco",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1/2 cup cold water",
+          "item_es": "1/2 taza de agua fría",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "4 eggs",
+          "item_es": "4 huevos",
+          "amount": 4,
+          "unit": "piece",
+          "notes": "separados"
+        },
+        {
+          "item_original": "Whipped cream",
+          "item_es": "Nata montada",
+          "amount": null,
+          "unit": null,
+          "notes": "para cubrir antes de servir"
+        },
+        {
+          "item_original": "1 baked pie shell",
+          "item_es": "1 base de tarta horneada",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Soak gelatin in cold water for 5 minutes; add 1/2 cup of sugar, lime juice and salt to beaten egg yolks and cook over boiling water until of custard consistency; to this mixture add grated lime rind. Put in softened gelatin and stir thoroughly. Cool. When mixture begins to thicken, fold in stiffly beaten egg whites to which the other 1/2 cup of sugar has been added. Fill baked pie shell till filled. Just before serving, spread over pie thin layer whipped cream.",
+      "method_es": "Hidratar la gelatina en agua fría durante 5 minutos. Añadir 1/2 taza de azúcar, el zumo de lima y la sal a las yemas batidas y cocer al baño maría hasta obtener consistencia de natilla; incorporar la ralladura de lima. Añadir la gelatina hidratada y remover bien. Dejar enfriar. Cuando la mezcla empiece a espesar, incorporar con movimientos envolventes las claras montadas a punto de nieve a las que se ha añadido la otra 1/2 taza de azúcar. Rellenar la base de tarta horneada. Justo antes de servir, cubrir con una capa fina de nata montada.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lime Chiffon Pie\n1 Cup sugar                 % Cup Fresco lime juice\n                       ^ Teaspoon salt                      % Cup cold water\n                        1 Level tablespoon gelatin                    4 Eggs\n                        1 Teaspoon grated lime rind\n                         Soak gelatin in cold water for 5 minutes; add Yz cup\n                       of sugar, lime juice and salt to beaten egg yolks and\n                       cook over boiling water until of custard consistency;\n                       to this mixture add grated lime rind. Put in softened\n                       gelatin and stir thoroughly.        Cool.     When mixture\n                       begins to thicken, fold in stiffly heaten egg white\n                       to which the other Yz cup of sugar has heen added\n                       Fill baked pie shell till filled. Just before serving,\n                       spread over pie thin layer whipped cream.\n                                                              •",
+      "notes": "Receta culinaria (postre con lima), no es coctel."
+    },
+    {
+      "id": "1935-cocktail-memoirs-of-fresco-lime-017",
+      "order": 17,
+      "section_title": "Vodka Collins",
+      "category": "other",
+      "name_original": "Delicious Lime Pie",
+      "name_es": "Tarta deliciosa de lima",
+      "yield": "Para una tarta (6-8 porciones)",
+      "ingredients": [
+        {
+          "item_original": "1 cup boiling water",
+          "item_es": "1 taza de agua hirviendo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1 cup cold water",
+          "item_es": "1 taza de agua fría",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "2 eggs",
+          "item_es": "2 huevos",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "separados"
+        },
+        {
+          "item_original": "1 package lime gelatin",
+          "item_es": "1 sobre de gelatina de lima",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "1/2 cup sugar",
+          "item_es": "1/2 taza de azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1 fresh Fresco lime",
+          "item_es": "1 lima Fresco fresca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "para zumo y ralladura"
+        },
+        {
+          "item_original": "Pinch of salt",
+          "item_es": "Una pizca de sal",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1 baked pie shell",
+          "item_es": "1 base de tarta horneada",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Dissolve gelatin in boiling water, add lime juice and grated rind. Slightly beat yolks of eggs, add sugar, cold water and pinch of salt; cook in double boiler only long enough to thicken. Remove from fire and add to gelatin. When slightly set, beat in stiffly beaten egg whites. Add to baked pie shell. Put in ice box to set.",
+      "method_es": "Disolver la gelatina en el agua hirviendo, añadir el zumo y la ralladura de lima. Batir ligeramente las yemas, añadir el azúcar, el agua fría y la pizca de sal; cocer al baño maría sólo el tiempo necesario para que espese. Retirar del fuego y mezclar con la gelatina. Cuando esté ligeramente cuajada, incorporar las claras montadas a punto de nieve. Verter en la base de tarta horneada. Llevar a la nevera para que cuaje.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Delicious Lime Pie\nLime Prune Whip                    1 Cup hoiling water\ny3 Lb. prunes                               1 Cup cold water\n    Whites 5 eggs                           2 Eggs\n1/2 Cup sugar                               1 Package lime gelatin\n1/4 Tablespoon fresh Fresco lime            Y Cup sugar\n     juice or Rose's lime juice              1 Fresh Fresco lime\n  Rub cooked prunes through                   Dissolve gelatin in boiling water,\nstrainer, add sugar and cook 5 min          add lime juice and graded rind.\nutes. Beat whites of eggs stiff and         Slightly beat yolks of eggs, add\ngradually add cold prune mixture;           sugar, cold water and pinch of salt;\nadd lime juice. Pile lightly in bak         cook in double boiler only long\ning dish which has been buttered,           enough to thicken. Remove from\nhake 20 minutes in slow oven; serve         fire and    add to     gelatin.   When\nwith custard sauce or whipped cream.        slightly set, beat in stiffly _ beaten\n                 •                          egg whites. Add to haked pie shell.\n  Lime Cocoanut Cream Filling               Put in ice box to set.\n\n  Juice and grated rind of 1 lime\n1 Cup shredded cocoanut                                Lime Cake Icing\n2 Egg yolks                                 1 Cup confectioners' sugar\n1 Cup powdered sugar                        1 Tablespoon warm cream\n  Mix lime juice and rind with sugar        1 Tablespoon fresh Fresco lime\nand yolks of eggs slightly beaten;              juice or Rose's lime juice\ncook ten minutes in double boiler,            Blend well until thick enough not\nstirring constantly; then add cocoa-        to run (adding either sugar or milk\nnut. Cool, and use as filling.              as needed); spread on cake.\n                                       20\n\nFRESCO LIMES —",
+      "notes": "Receta culinaria (postre con lima), no es coctel. En el bloque también aparecen otras recetas dulces ('Lime Prune Whip', 'Lime Cocoanut Cream Filling', 'Lime Cake Icing') que no se enriquecen por separado."
+    }
+  ]
+}
