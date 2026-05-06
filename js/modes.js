@@ -16,26 +16,21 @@
 //   special   optional — 'daily' | 'speed' for modes that build a lesson
 //                        eagerly instead of navigating to a subscreen
 //
-// Group rationale (decided in Phase 5 planning):
-//   aprender  — flows that teach (Daily, Speed, Academy, Free Quiz)
-//   jugar     — head-to-head & mini-games (Duel, Builder, Blind, Arcade,
-//               Memory, Rhythm, Comanda)
-//   consultar — reference / reading (Recetas, Encyclopedia, Glossary, Map).
-//
-//               Library was a 3D-only iframe over wiki.html that became
-//               redundant once Knowledge/Encyclopedia started rendering
-//               <ThreeDSection> inline for any article with a `scene`.
-//               Removed from the picker so users have one entry point to
-//               the same content instead of two doors to the same room.
+// Group rationale:
+//   aprender  — flows that teach (Daily, Academy, Free Quiz).
+//   jugar     — timed challenges, head-to-head & mini-games (Speed,
+//               Duel, Builder, Blind, Arcade, Memory, Rhythm, Comanda).
+//   consultar — reference / reading (Recetas, Encyclopedia, Glossary,
+//               Map, EUVS).
 
 export const MODES = [
   // ───── Aprender ─────────────────────────────────────────────────────────
   { id: 'daily',    group: 'aprender',  icon: '📅',  color: 'var(--amber)',  special: 'daily' },
-  { id: 'speed',    group: 'aprender',  icon: '⚡',  color: 'var(--amber)',  special: 'speed' },
   { id: 'academy',  group: 'aprender',  icon: '🎓',  color: 'var(--cyan)',   route: 'academy-hub' },
   { id: 'freequiz', group: 'aprender',  icon: '🎲',  color: 'var(--violet)', route: 'freequiz' },
 
   // ───── Jugar ────────────────────────────────────────────────────────────
+  { id: 'speed',    group: 'jugar',     icon: '⚡',  color: 'var(--amber)',  special: 'speed' },
   { id: 'duel',     group: 'jugar',     icon: '⚔️',  color: 'var(--berry)',  route: 'duel' },
   { id: 'builder',  group: 'jugar',     icon: '🍹',  color: 'var(--amber)',  route: 'builder' },
   { id: 'blind',    group: 'jugar',     icon: '👃',  color: 'var(--violet)', route: 'blind' },
