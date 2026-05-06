@@ -649,7 +649,7 @@ const DuelGame = ({ roomId, slot, questions, players, maxPlayers, onFinish, isHo
 // ─────────────────────── RESULTS ───────────────────────
 const MEDALS = ['🥇', '🥈', '🥉'];
 
-const DuelResults = ({ players, mySlot, maxPlayers, onRematchAccept, onLeave }) => {
+const DuelResults = ({ players, mySlot, maxPlayers, onRematchAccept, onLeave, onShareInvite }) => {
   const slots = ALL_SLOTS.slice(0, maxPlayers);
   const ranked = slots
     .map(s => ({ slot: s, ...(players[s] || { score: 0, name: '?' }) }))
@@ -664,6 +664,16 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematchAccept, onLeave }) 
   const alone = active.length < 2;
   const acceptedCount = active.filter(s => players[s].rematch === 'accept').length;
   const waitingCount = active.length - acceptedCount;
+
+  const [shared, setShared] = useState(false);
+  const handleShare = async () => {
+    if (!onShareInvite) return;
+    const r = await onShareInvite();
+    if (r === 'shared' || r === 'copied') {
+      setShared(true);
+      setTimeout(() => setShared(false), 2200);
+    }
+  };
 
   const rematchLabel = (r) => {
     if (r.disconnected) return dTr('duel.rematch_state.left', 'Salió');
@@ -734,6 +744,16 @@ const DuelResults = ({ players, mySlot, maxPlayers, onRematchAccept, onLeave }) 
           </button>
         )}
       </div>
+      {onShareInvite && (
+        <button
+          className="btn"
+          onClick={handleShare}
+          style={{ width: '100%', marginTop: 10, padding: '10px 14px', fontSize: 13 }}
+          aria-label={dTr('duel.results.share_button', 'Comparte este duelo')}
+        >
+          {shared ? `✓ ${dTr('duel.shared', 'Enviado')}` : `🔗 ${dTr('duel.results.share_button', 'Comparte este duelo')}`}
+        </button>
+      )}
     </div>
   );
 };
@@ -939,6 +959,42 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
   const lastRoundRef = useRef(1);
 
   const showToast = (msg, type) => setToast({ msg, type });
+
+  // Compose `?invite=CODE` URL and offer it via the OS share sheet, falling
+  // back to clipboard. Lives in the outer scope so both the host lobby and
+  // the post-match results screen can share the same room. Returns
+  // 'shared'|'copied'|null. Defined once per render but stable enough for
+  // call sites that don't memoise.
+  const shareInvite = async () => {
+    if (!code) return null;
+    // Defensive: wait for translations so the share text never leaks a raw
+    // i18n key into the OS share sheet on cold-start.
+    try {
+      if (window.stLang && typeof window.stLang.preloadAllTranslations === 'function') {
+        await window.stLang.preloadAllTranslations();
+      }
+    } catch {}
+    const url = `${window.location.origin}${window.location.pathname}?invite=${encodeURIComponent(code)}`;
+    const text = dTrParams('duel.invite_text', { code }, `¡Reto en Stirio! Únete con el código ${code}`);
+    const title = dTr('duel.invite_title', 'Te invito a un duelo en Stirio');
+    try {
+      if (navigator.share) {
+        await navigator.share({ title, text, url });
+        return 'shared';
+      }
+    } catch (e) {
+      if (e && e.name === 'AbortError') return null;
+    }
+    try {
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(url);
+        showToast(dTr('duel.invite_copied', 'Enlace copiado al portapapeles'), 'success');
+        return 'copied';
+      }
+    } catch {}
+    showToast(dTr('duel.invite_fail', 'No se pudo compartir el enlace'), 'error');
+    return null;
+  };
 
   // Init Firebase + RTDB + anonymous auth
   useEffect(() => {
@@ -1213,38 +1269,6 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
     const joinedCount = ALL_SLOTS.slice(0, maxPlayers).filter(s => players[s] && !players[s].disconnected).length;
     const canStart = joinedCount >= maxPlayers;
     const isHost = slot === 'p1';
-    const shareInvite = async () => {
-      if (!code) return null;
-      // Defensive: wait for translations to finish loading so the shared text
-      // never leaks a raw i18n key (e.g. "duel.invite_text") into the OS
-      // share sheet when the user taps Share right after page load.
-      try {
-        if (window.stLang && typeof window.stLang.preloadAllTranslations === 'function') {
-          await window.stLang.preloadAllTranslations();
-        }
-      } catch {}
-      const url = `${window.location.origin}${window.location.pathname}?invite=${encodeURIComponent(code)}`;
-      const text = dTrParams('duel.invite_text', { code }, `¡Reto en Stirio! Únete con el código ${code}`);
-      const title = dTr('duel.invite_title', 'Te invito a un duelo en Stirio');
-      try {
-        if (navigator.share) {
-          await navigator.share({ title, text, url });
-          return 'shared';
-        }
-      } catch (e) {
-        // User cancelled the share sheet — treat as not-shared, not an error
-        if (e && e.name === 'AbortError') return null;
-      }
-      try {
-        if (navigator.clipboard) {
-          await navigator.clipboard.writeText(url);
-          showToast(dTr('duel.invite_copied', 'Enlace copiado al portapapeles'), 'success');
-          return 'copied';
-        }
-      } catch {}
-      showToast(dTr('duel.invite_fail', 'No se pudo compartir el enlace'), 'error');
-      return null;
-    };
     return (
       <DuelShell title={dTr('duel.host_room_title', 'Sala de duelo')} subtitle={dTrParams('duel.host_room_players', { n: maxPlayers }, `${maxPlayers} jugadores`)} onBack={returnToMenu}>
         <LobbyHost
@@ -1291,6 +1315,7 @@ const DuelScreen = ({ onBack, initialInviteCode }) => {
           players={room?.players || {}}
           mySlot={slot}
           maxPlayers={maxPlayers}
+          onShareInvite={code ? shareInvite : null}
           onRematchAccept={() => {
             try { window.stRivals?.acceptRematch?.(roomId, slot); } catch {}
           }}
