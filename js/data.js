@@ -457,9 +457,18 @@ const normalizeQ = (raw) => {
   };
 };
 
-// Helper para traducir con interpolación dentro de data.js
+// Helper para traducir con interpolación dentro de data.js. stLang.t() devuelve
+// la clave literal cuando translations[lang][k] aún no existe (típicamente
+// cuando preloadAllTranslations() todavía no ha resuelto durante el primer
+// segundo del boot). Si el fallback es una cadena Spanish hardcoded en el
+// call site, preferirla a la clave en bruto para que la UI nunca enseñe
+// "daily.card_title" o similares al usuario.
 const _tp = (k, params, fallback) => {
-  if (window.stLang && window.stLang.t) return window.stLang.t(k, params);
+  if (window.stLang && window.stLang.t) {
+    const v = window.stLang.t(k, params);
+    if (v === k && fallback != null) return fallback;
+    return v;
+  }
   return fallback;
 };
 

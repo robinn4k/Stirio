@@ -779,15 +779,28 @@ const App = () => {
       const opts = pendingDailyChallenge
         ? { dateStr: pendingDailyChallenge.date, challengedBy: pendingDailyChallenge.by }
         : {};
-      const l = typeof window.DAILY_LESSON === 'function' ? window.DAILY_LESSON(opts) : null;
-      if (l) { pickLesson(l); if (pendingDailyChallenge) setPendingDailyChallenge(null); }
-      else setActiveMode('any'); // data not ready yet — show the menu instead of doing nothing
+      // Wait for translations before building the lesson — DAILY_LESSON() runs
+      // _tp('daily.card_*', ...) and would otherwise emit literal i18n keys
+      // when the user taps Daily during the first ~1 s of boot. Awaiting the
+      // (memoised) preload also guarantees the stirio:langchange event has
+      // already fired by the time we mount the lesson overlay, so the
+      // langVersion bump can't pop the freshly-mounted overlay.
+      (async () => {
+        try { await window.stLang?.preloadAllTranslations?.(); } catch {}
+        const l = typeof window.DAILY_LESSON === 'function' ? window.DAILY_LESSON(opts) : null;
+        if (l) { pickLesson(l); if (pendingDailyChallenge) setPendingDailyChallenge(null); }
+        else setActiveMode('any'); // data not ready yet — show the menu instead of doing nothing
+      })();
       return;
     }
     if (m === 'speed') {
-      const l = typeof window.SPEED_LESSON === 'function' ? window.SPEED_LESSON() : null;
-      if (l) pickLesson(l);
-      else setActiveMode('any');
+      // Same reasoning as 'daily': SPEED_LESSON also goes through _tp().
+      (async () => {
+        try { await window.stLang?.preloadAllTranslations?.(); } catch {}
+        const l = typeof window.SPEED_LESSON === 'function' ? window.SPEED_LESSON() : null;
+        if (l) pickLesson(l);
+        else setActiveMode('any');
+      })();
       return;
     }
     const route = MODE_ROUTES[m];
