@@ -51,85 +51,18 @@ const countCompletedLevels = (track) => {
   };
 };
 
-const AcademyHub = ({ onBack, onPickTrack }) => {
-  const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
-  // Re-render cuando los módulos de datos async terminan de cargar, para que
-  // los contadores del hub pasen de 0/0 a su valor real sin navegar fuera.
-  const [tick, setTick] = useStateRef(0);
-  React.useEffect(() => {
-    let retries = 0;
-    const iv = setInterval(() => {
-      retries += 1;
-      setTick(t => t + 1);
-      if (retries >= 20) clearInterval(iv);
-    }, 200);
-    return () => clearInterval(iv);
-  }, []);
-
-  const tracks = ['cocktail', 'wine', 'coffee'];
-
-  return (
-    <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
-      <div className="screen-frame" style={{ maxWidth: 980, margin: '0 auto', paddingBottom: 120 }}>
-      <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
-        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
-          <Icon name="arrowL" size={16} />
-        </button>
-        <div>
-          <div className="mono caps" style={{ color: 'var(--amber)', fontSize: 10 }}>{tr('academy.hub.eyebrow', 'Aprende')}</div>
-          <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr('academy.hub.title', 'Academia')}</h1>
-        </div>
-      </div>
-      <div style={{ padding: '0 24px 16px', fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.4 }}>
-        {tr('academy.hub.subtitle', 'Tres disciplinas, un solo camino: elige la que quieras dominar.')}
-      </div>
-      <div className="academy-tracks-grid" style={{ padding: '8px 24px 0', display: 'grid', gap: 14 }}>
-        {tracks.map(track => {
-          const meta = TRACK_META[track];
-          const { done, total } = countCompletedLevels(track);
-          const pct = total ? Math.round((done / total) * 100) : 0;
-          return (
-            <button
-              key={track}
-              onClick={() => onPickTrack(track)}
-              className="card"
-              style={{
-                padding: 18, textAlign: 'left', cursor: 'pointer',
-                display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 14, alignItems: 'center',
-                borderLeft: `4px solid ${meta.color}`,
-              }}
-            >
-              <div style={{
-                width: 60, height: 60, borderRadius: 16,
-                background: `linear-gradient(135deg, ${meta.color}, oklch(0.3 0.05 60))`,
-                display: 'grid', placeItems: 'center', fontSize: 30,
-                boxShadow: `0 8px 20px ${meta.color}33`,
-              }}>{meta.icon}</div>
-              <div>
-                <div className="mono caps" style={{ fontSize: 9, color: 'var(--ink-3)', marginBottom: 2 }}>
-                  {tr(meta.eyebrowKey, meta.eyebrowFallback)}
-                </div>
-                <div style={{ fontFamily: 'var(--f-serif)', fontSize: 22, lineHeight: 1.1, marginBottom: 4 }}>
-                  {tr(meta.titleKey, meta.titleFallback)}
-                </div>
-                <div style={{ fontSize: 12, color: 'var(--ink-2)', lineHeight: 1.3, marginBottom: 8 }}>
-                  {tr(meta.descKey, meta.descFallback)}
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <div style={{ flex: 1, height: 5, borderRadius: 99, background: 'var(--bg-3)', overflow: 'hidden' }}>
-                    <div style={{ width: `${pct}%`, height: '100%', background: meta.color, transition: 'width .3s' }} />
-                  </div>
-                  <div className="mono" style={{ fontSize: 10, color: 'var(--ink-3)' }}>{done}/{total || '–'}</div>
-                </div>
-              </div>
-              <Icon name="arrowR" size={16} />
-            </button>
-          );
-        })}
-      </div>
-      </div>
-    </div>
-  );
+// Persisted active track — restored when the user re-opens Academy. Defaults
+// to 'cocktail' on first run or if the stored value isn't in TRACK_META.
+const ACTIVE_TRACK_KEY = 'cq_academy_active_track';
+const TRACKS = ['cocktail', 'wine', 'coffee'];
+const loadActiveTrack = () => {
+  try {
+    const t = localStorage.getItem(ACTIVE_TRACK_KEY);
+    return TRACKS.includes(t) ? t : 'cocktail';
+  } catch { return 'cocktail'; }
+};
+const saveActiveTrack = (t) => {
+  try { localStorage.setItem(ACTIVE_TRACK_KEY, t); } catch {}
 };
 
 // ── LevelPath: SVG sendero estilo Duolingo ──
@@ -280,12 +213,20 @@ const LevelPath = ({ levels, progress, onSelect }) => {
   );
 };
 
-const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onStartRound }) => {
+const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound, onOpenFicha }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
+  // Active track is local state, persisted across opens.
+  const [track, setTrack] = useStateRef(loadActiveTrack);
   const meta = TRACK_META[track] || TRACK_META.cocktail;
   const levels = (window.getAcademyLevels && window.getAcademyLevels(track)) || [];
   const [openLevel, setOpenLevel] = useStateRef(null);
   const progress = loadAcademyProgress(track);
+  const pickTrack = (t) => {
+    if (t === track) return;
+    saveActiveTrack(t);
+    setTrack(t);
+    setOpenLevel(null);
+  };
 
   // Si el módulo de datos aún no está cargado, mostramos loader + polling
   const [retries, setRetries] = useStateRef(0);
@@ -311,6 +252,45 @@ const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onSta
           <div className="mono caps" style={{ color: meta.color, fontSize: 10 }}>{tr(meta.eyebrowKey, meta.eyebrowFallback)}</div>
           <h1 style={{ fontFamily: 'var(--f-serif)', fontSize: 34, margin: 0, lineHeight: 1 }}>{tr(meta.titleKey, meta.titleFallback)}</h1>
         </div>
+      </div>
+
+      {/* Track tabs (Cocktails / Wine / Coffee) */}
+      <div style={{
+        padding: '4px 24px 8px',
+        display: 'flex', gap: 8, overflowX: 'auto', WebkitOverflowScrolling: 'touch',
+      }}>
+        {TRACKS.map(t => {
+          const m = TRACK_META[t];
+          const active = t === track;
+          const { done, total } = countCompletedLevels(t);
+          return (
+            <button
+              key={t}
+              onClick={() => pickTrack(t)}
+              className="chip"
+              style={{
+                padding: '8px 14px', borderRadius: 'var(--r-pill)',
+                display: 'flex', alignItems: 'center', gap: 8,
+                background: active ? `linear-gradient(135deg, ${m.color}, oklch(0.3 0.05 60))` : 'var(--bg-2)',
+                color: active ? 'var(--bg-0)' : 'var(--ink-1)',
+                border: `1px solid ${active ? m.color : 'var(--line)'}`,
+                fontSize: 13, fontWeight: active ? 600 : 400,
+                cursor: 'pointer', flex: '0 0 auto', whiteSpace: 'nowrap',
+              }}
+              aria-pressed={active}
+            >
+              <span style={{ fontSize: 16 }}>{m.icon}</span>
+              <span>{tr(m.titleKey, m.titleFallback)}</span>
+              {total > 0 && (
+                <span className="mono" style={{
+                  fontSize: 10, opacity: 0.85,
+                  padding: '1px 6px', borderRadius: 99,
+                  background: active ? 'rgba(0,0,0,0.18)' : 'var(--bg-3)',
+                }}>{done}/{total}</span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {/* Hero con progreso real */}
@@ -376,8 +356,8 @@ const AcademyScreen = ({ track = 'cocktail', onBack, onStartAcademyLesson, onSta
           level={openLevel}
           progress={progress[openLevel.id] || { lessons: [], practices: {} }}
           onClose={() => setOpenLevel(null)}
-          onStartLesson={(idx) => { setOpenLevel(null); onStartAcademyLesson(openLevel.id, idx); }}
-          onStartPractice={(roundId) => { setOpenLevel(null); onStartRound({ roundId, levelId: openLevel.id }); }}
+          onStartLesson={(idx) => { setOpenLevel(null); onStartAcademyLesson(track, openLevel.id, idx); }}
+          onStartPractice={(roundId) => { setOpenLevel(null); onStartRound(track, { roundId, levelId: openLevel.id }); }}
         />
       )}
     </div>
@@ -905,4 +885,4 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
   );
 };
 
-Object.assign(window, { AcademyHub, AcademyScreen, FichasScreen, FichaDetail, FreeQuizScreen });
+Object.assign(window, { AcademyScreen, FichasScreen, FichaDetail, FreeQuizScreen });

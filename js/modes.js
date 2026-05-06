@@ -26,7 +26,7 @@
 export const MODES = [
   // ───── Aprender ─────────────────────────────────────────────────────────
   { id: 'daily',    group: 'aprender',  icon: '📅',  color: 'var(--amber)',  special: 'daily' },
-  { id: 'academy',  group: 'aprender',  icon: '🎓',  color: 'var(--cyan)',   route: 'academy-hub' },
+  { id: 'academy',  group: 'aprender',  icon: '🎓',  color: 'var(--cyan)',   route: 'academy' },
   { id: 'freequiz', group: 'aprender',  icon: '🎲',  color: 'var(--violet)', route: 'freequiz' },
 
   // ───── Jugar ────────────────────────────────────────────────────────────
