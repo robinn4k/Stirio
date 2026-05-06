@@ -176,6 +176,22 @@
     "bookFile": "data/euvs-books/1920-cocktails-metropolitan-club-washington-dc.json"
   },
   {
+    "id": "1920-down-the-hatch",
+    "year": 1920,
+    "decade": "1920s",
+    "title": "Down the Hatch",
+    "author": null,
+    "language": "en",
+    "languageName": "Ingles",
+    "publisher": null,
+    "city": null,
+    "edition": "Edicion 1920 (justo antes / al inicio de la Ley Seca estadounidense)",
+    "notes": "Manual estadounidense de cocteleria publicado en 1920 (justo cuando entra en vigor la Volstead Act). Recopila aproximadamente 90 recetas de la edad de oro previa a la Ley Seca con un orden alfabetico estricto: Absinthe Anisette, Bacardi Rum Cocktail/Fizz/Flip/Highball/Rickey/Squirt, Bronx, Clover Club, French/Italian Vermouth Cocktail, Gibson, Gin (Buck/Cocktail/Daisy/Fizz/Flip/Rickey/Saratoga/Smash/Sour/Toddy), Highball, Hoffman House, Horse's Neck, Jack Rose, Manhattan, Martini, Mint Julep, Old Hickory, Orgeat Lemonade, Ramos / Ramos Creole, Rob Roy, Sazerac, Sherry Cobbler/Fizz/Flip, Whiskey Cobbler/Cocktail/Fizz/Flip/Smash/Toddy. La OCR contiene erratas (DUCHl!:SS, MlNT, MORRIS COCJCTAIL, MURRAY COCIITAIL, O'JEN/0 1 JEN, P. D. Q.., PlJNCH, SULSSESSE, WBISKEY, WH ISKEY). Saltadas (no son recetas reales): R E M0 S (OCR mangled de cabecera (probablemente 'REMARKS' o 'TERMS'), no es receta); JIGGER--Average Whi~key Glass (Pieza del prefacio explicando la medida del jigger, no es receta); Vennouth Rossi (Linea fragmentada de ingrediente (Vermut Rossi)); French Vermouth Dry Italian Vermouth (Linea fragmentada de ingredientes (vermut frances seco e italiano))",
+    "sectionCount": 17,
+    "recipeCount": 89,
+    "bookFile": "data/euvs-books/1920-down-the-hatch.json"
+  },
+  {
     "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes",
     "year": 1924,
     "decade": "1920s",
