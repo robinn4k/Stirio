@@ -784,6 +784,22 @@
     "bookFile": "data/euvs-books/1950-cinzano-en-el-cocktail.json"
   },
   {
+    "id": "1950-el-barman-practico-de-julio-cesar-clave",
+    "year": 1950,
+    "decade": "1950s",
+    "title": "El Barman Práctico",
+    "author": "Julio César Clavé",
+    "language": "es",
+    "languageName": "Español",
+    "publisher": null,
+    "city": "Buenos Aires",
+    "edition": "1950",
+    "notes": "Manual del barman publicado por Julio César Clavé en Buenos Aires (1950). 200 recetas extraídas mediante un heurístico Spanish-aware que detecta cabeceras del tipo 'NOMBRE:' (las recetas anteriores con el extractor inglés capturaron sólo 60 fragmentos, mayoritariamente artefactos del OCR). Las recetas siguen el patrón 'NOMBRE: ingrediente - ingrediente - ... - método - copa'. Algunos ingredientes pueden tener saltos de palabra por OCR (e.g., 'Ba- tido' → Batido). Recetas con OCR muy degradado conservan raw_text y un campo notes.",
+    "sectionCount": 2,
+    "recipeCount": 200,
+    "bookFile": "data/euvs-books/1950-el-barman-practico-de-julio-cesar-clave.json"
+  },
+  {
     "id": "1954-anis-esprit-de-joie-et-de-sante-by-andre-montagard",
     "year": 1954,
     "decade": "1950s",
