@@ -112,6 +112,22 @@
     "bookFile": "data/euvs-books/1880-american-other-drinks-by-leo-engel-second-edition.json"
   },
   {
+    "id": "1881-american-and-other-drinks-second-edition-hard-cover-by-leo-engel",
+    "year": 1881,
+    "decade": "1880s",
+    "title": "American & Other Drinks (Hardcover, 2nd Ed.)",
+    "author": "Leo Engel",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "London",
+    "edition": "Hardcover 2nd Edition (1881)",
+    "notes": "Hardcover de la 2ª edición de Leo Engel.",
+    "sectionCount": 2,
+    "recipeCount": 36,
+    "bookFile": "data/euvs-books/1881-american-and-other-drinks-second-edition-hard-cover-by-leo-engel.json"
+  },
+  {
     "id": "1883-mcdonoughs-bar-keepers-guide-and-gentlemens-sideboard-companion-1883",
     "year": 1883,
     "decade": "1880s",
@@ -830,6 +846,22 @@
     "sectionCount": 13,
     "recipeCount": 10,
     "bookFile": "data/euvs-books/1929-rubaiyat-of-canada-or-omar-up-to-date-by-wisdom-stanley.json"
+  },
+  {
+    "id": "1930-abc-of-mixing-cocktails-ninth-impression",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "ABC of Mixing Cocktails (9th Impression)",
+    "author": "Harry McElhone",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "London/Paris",
+    "edition": "Ninth Impression (1930)",
+    "notes": "9ª impresión del Harry McElhone — sequel del 1923.",
+    "sectionCount": 2,
+    "recipeCount": 128,
+    "bookFile": "data/euvs-books/1930-abc-of-mixing-cocktails-ninth-impression.json"
   },
   {
     "id": "1930-cocktails-art-deco-manuscript-book-east-bar-hotel-esplanade-prague-by-f-koki",
@@ -1568,6 +1600,22 @@
     "bookFile": "data/euvs-books/1935-cocktail-memoirs-of-fresco-lime.json"
   },
   {
+    "id": "1935-cocktails-bar-la-florida-by-constante-ribalaigua-vert",
+    "year": 1935,
+    "decade": "1930s",
+    "title": "Cocktails Bar La Florida (1935 ed.)",
+    "author": "Constante Ribalaigua",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "La Habana",
+    "edition": "Edition (1935)",
+    "notes": "1935 La Florida edition.",
+    "sectionCount": 2,
+    "recipeCount": 80,
+    "bookFile": "data/euvs-books/1935-cocktails-bar-la-florida-by-constante-ribalaigua-vert.json"
+  },
+  {
     "id": "1935-cocktails-recommended-by-calvert",
     "year": 1935,
     "decade": "1930s",
@@ -1728,6 +1776,22 @@
     "bookFile": "data/euvs-books/1936-sloppy-joes-bar.json"
   },
   {
+    "id": "1937-cocktails-bar-la-florida-by-constante-ribalaigua-vert",
+    "year": 1937,
+    "decade": "1930s",
+    "title": "Cocktails Bar La Florida (1937 ed.)",
+    "author": "Constante Ribalaigua",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "La Habana",
+    "edition": "Edition (1937)",
+    "notes": "Sister edition de 1934 La Florida (ya en catálogo).",
+    "sectionCount": 2,
+    "recipeCount": 91,
+    "bookFile": "data/euvs-books/1937-cocktails-bar-la-florida-by-constante-ribalaigua-vert.json"
+  },
+  {
     "id": "1937-here-is-something-that-will-interest-you-3-rd-edition",
     "year": 1937,
     "decade": "1930s",
@@ -1854,6 +1918,38 @@
     "sectionCount": 2,
     "recipeCount": 83,
     "bookFile": "data/euvs-books/1939-bar-la-florida-cuna-del-daiquiri-cocktail.json"
+  },
+  {
+    "id": "1939-cocktails-bar-la-florida-by-constante-ribalaigua-vert",
+    "year": 1939,
+    "decade": "1930s",
+    "title": "Cocktails Bar La Florida (1939 ed.)",
+    "author": "Constante Ribalaigua",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "La Habana",
+    "edition": "Edition (1939)",
+    "notes": "1939 La Florida edition.",
+    "sectionCount": 2,
+    "recipeCount": 90,
+    "bookFile": "data/euvs-books/1939-cocktails-bar-la-florida-by-constante-ribalaigua-vert.json"
+  },
+  {
+    "id": "1939-floridita-cocktails-by-constante-ribalaigua-vert",
+    "year": 1939,
+    "decade": "1930s",
+    "title": "Floridita Cocktails",
+    "author": "Constante Ribalaigua",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "La Habana",
+    "edition": "Edition (1939)",
+    "notes": "Floridita Cocktails (1939).",
+    "sectionCount": 2,
+    "recipeCount": 93,
+    "bookFile": "data/euvs-books/1939-floridita-cocktails-by-constante-ribalaigua-vert.json"
   },
   {
     "id": "1939-sloppy-joes-bar",
