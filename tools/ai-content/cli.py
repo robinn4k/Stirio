@@ -58,14 +58,23 @@ def _build_parser() -> argparse.ArgumentParser:
     p_translate.add_argument(
         "--batch-size",
         type=int,
-        default=25,
-        help="Keys per Groq request (default 25).",
+        default=15,
+        help="Keys per Groq request (default 15).",
     )
     p_translate.add_argument(
         "--limit",
         type=int,
         default=None,
         help="Cap keys per language — useful for smoke tests.",
+    )
+    p_translate.add_argument(
+        "--model",
+        default=None,
+        help=(
+            "Override Groq model (default: llama-3.1-8b-instant; high TPM "
+            "headroom). Use llama-3.3-70b-versatile if you've upgraded the "
+            "Groq tier or are running review/complete-style workloads."
+        ),
     )
     p_translate.add_argument(
         "--dry-run",
@@ -89,6 +98,7 @@ def main(argv: list[str] | None = None) -> int:
             batch_size=args.batch_size,
             dry_run=args.dry_run,
             limit=args.limit,
+            model=args.model,
         )
         return translate_run(opts)
 

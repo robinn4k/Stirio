@@ -93,9 +93,18 @@ i18n diff so you can review before merging.
 
 Groq's free tier covers a full corpus translation comfortably:
 
-- Llama 3.3 70B versatile: ~30 req/min, ~14k req/day, ~6k tok/min.
-- A full pass on `wiki.art.liqueurs.*` (~310 keys × 4 langs ÷ 25 batch ≈ 50 reqs)
-  finishes in well under a minute and consumes <2% of the daily bucket.
+- **Default model**: `llama-3.1-8b-instant` — 30k TPM (vs 6k on 70b), 30 RPM,
+  14k RPD. Great for short-string translation; the 70b advantage doesn't show
+  up on this task.
+- Pass `--model llama-3.3-70b-versatile` for review/complete-style workloads
+  where reasoning matters more than throughput.
+- A full pass on `wiki.art.liqueurs.*` (~310 keys × 4 langs ÷ 15 batch ≈ 84 reqs)
+  finishes in ≈3 minutes with the default 1.5s spacing and consumes <2% of the
+  daily bucket.
 
-If you ever hit a 429, the client backs off exponentially and retries up to 4
-times. Rerun the same command — already-translated keys are skipped.
+The client paces requests at `min_request_spacing_s = 1.5s` by default, which
+keeps us well under both the RPM cap and the TPM bucket so 429 retries become
+rare. Override with `GROQ_REQUEST_SPACING_S=0.5` env var if your tier was
+upgraded. If you still hit a 429, tenacity backs off exponentially up to 60s
+across 4 attempts. Rerun the same command — already-translated keys are
+skipped on the second pass.

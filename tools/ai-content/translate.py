@@ -36,7 +36,7 @@ from i18n_io import (
     write_i18n,
 )
 
-DEFAULT_BATCH_SIZE = 25
+DEFAULT_BATCH_SIZE = 15
 PROMPT_TEMPLATE = (Path(__file__).resolve().parent / "prompts" / "translate.txt").read_text()
 
 LANG_NAMES = {
@@ -57,6 +57,7 @@ class TranslateOptions:
     batch_size: int = DEFAULT_BATCH_SIZE
     dry_run: bool = False
     limit: int | None = None  # cap keys per language, useful for smoke tests
+    model: str | None = None  # passthrough; None => groq_client.DEFAULT_MODEL
 
 
 def _batched(items: list[str], size: int) -> Iterable[list[str]]:
@@ -141,7 +142,8 @@ def run(opts: TranslateOptions) -> int:
         console.print("[green]Nothing to translate — every target lang is up to date.[/green]")
         return 0
 
-    client = GroqClient()
+    client = GroqClient(model=opts.model) if opts.model else GroqClient()
+    console.log(f"[dim]Using model {client.model}[/dim]")
     failed_batches: list[tuple[str, int]] = []
 
     for lang, keys in plan.items():
@@ -167,7 +169,8 @@ def run(opts: TranslateOptions) -> int:
 
     console.print(
         f"\n[bold]Done.[/bold] Requests: {client.usage.requests} "
-        f"Tokens in/out: {client.usage.prompt_tokens}/{client.usage.completion_tokens}"
+        f"Tokens in/out: {client.usage.prompt_tokens}/{client.usage.completion_tokens} "
+        f"429 retries: {client.usage.rate_limit_retries}"
     )
     if failed_batches:
         console.print(
