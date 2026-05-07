@@ -11,3 +11,12 @@ tools/euvs-archive/data/skeletons/
 tools/euvs-archive/data/enrichments/
 data/euvs-pending.tsv
 *.pdf
+
+# AI content tooling — local venv, env file with secrets, and per-run reports.
+# Reports are useful as artefactos de PR (the workflow uploads them as
+# artifacts) but we never commit them to keep the repo clean.
+tools/ai-content/.venv/
+tools/ai-content/__pycache__/
+tools/ai-content/.env
+tools/ai-content/reports/*
+!tools/ai-content/reports/.gitkeep
