@@ -32,6 +32,22 @@
     "bookFile": "data/euvs-books/1835-oxford-night-caps-by-richard-cook.json"
   },
   {
+    "id": "1859-the-book-of-one-hundred-beverages-by-william-bernhard",
+    "year": 1859,
+    "decade": "1850s",
+    "title": "The Book of One Hundred Beverages",
+    "author": "William Bernhard",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1859, pre-Civil War)",
+    "notes": "⭐ Manual histórico pre-Civil War (1859) — uno de los más antiguos en el catálogo.",
+    "sectionCount": 2,
+    "recipeCount": 21,
+    "bookFile": "data/euvs-books/1859-the-book-of-one-hundred-beverages-by-william-bernhard.json"
+  },
+  {
     "id": "1862-jerry-thomas-bartenders-guide",
     "year": 1862,
     "decade": "1860s",
@@ -382,6 +398,22 @@
     "sectionCount": 2,
     "recipeCount": 29,
     "bookFile": "data/euvs-books/1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose.json"
+  },
+  {
+    "id": "1912-the-buffet-blue-book-bu-john-h-considine",
+    "year": 1912,
+    "decade": "1910s",
+    "title": "The Buffet Blue Book",
+    "author": "John H. Considine",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1912, pre-Prohibición)",
+    "notes": "Manual pre-Prohibición de John H. Considine — Buffet Blue Book.",
+    "sectionCount": 2,
+    "recipeCount": 245,
+    "bookFile": "data/euvs-books/1912-the-buffet-blue-book-bu-john-h-considine.json"
   },
   {
     "id": "1912-the-squires-recipe",
@@ -816,6 +848,22 @@
     "bookFile": "data/euvs-books/1930-shakeem-up-by-virginia-elliott-and-phil-d-stong.json"
   },
   {
+    "id": "1930-the-saloon-in-the-home",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "The Saloon in the Home",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1930, mid-Prohibición)",
+    "notes": "Manual de Prohibición — saloon casero. Era seca.",
+    "sectionCount": 2,
+    "recipeCount": 75,
+    "bookFile": "data/euvs-books/1930-the-saloon-in-the-home.json"
+  },
+  {
     "id": "1930-two-hundred-selected-drinks-by-k-w-sundin",
     "year": 1930,
     "decade": "1930s",
@@ -958,6 +1006,22 @@
     "sectionCount": 2,
     "recipeCount": 237,
     "bookFile": "data/euvs-books/1933-300-drinks-and-how-to-mixem.json"
+  },
+  {
+    "id": "1933-american-bar-guide-by-r-c-miller",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "American Bar Guide",
+    "author": "R. C. Miller",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933, post-Repeal)",
+    "notes": "Manual post-Repeal de R.C. Miller — American Bar Guide.",
+    "sectionCount": 2,
+    "recipeCount": 86,
+    "bookFile": "data/euvs-books/1933-american-bar-guide-by-r-c-miller.json"
   },
   {
     "id": "1933-cocktail-parade",
@@ -1150,6 +1214,22 @@
     "sectionCount": 2,
     "recipeCount": 29,
     "bookFile": "data/euvs-books/1934-angostura-recipes.json"
+  },
+  {
+    "id": "1934-bottoms-up",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Bottoms Up (1934)",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1934, post-Repeal)",
+    "notes": "Manual post-Repeal — Bottoms Up (no confundir con 1949 Bottoms Up).",
+    "sectionCount": 2,
+    "recipeCount": 126,
+    "bookFile": "data/euvs-books/1934-bottoms-up.json"
   },
   {
     "id": "1934-charles-book-of-punches-and-cocktails",
