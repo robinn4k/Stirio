@@ -608,6 +608,22 @@
     "bookFile": "data/euvs-books/1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose.json"
   },
   {
+    "id": "1912-holtz-freystedt",
+    "year": 1912,
+    "decade": "1910s",
+    "title": "Holtz & Freystedt",
+    "author": "Holtz & Freystedt",
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": "Self-published",
+    "city": "Alemania",
+    "edition": "First Edition (1912)",
+    "notes": "Folleto alemán Holtz & Freystedt.",
+    "sectionCount": 2,
+    "recipeCount": 99,
+    "bookFile": "data/euvs-books/1912-holtz-freystedt.json"
+  },
+  {
     "id": "1912-recipes-of-american-and-other-iced-drinks-by-charlie-paul",
     "year": 1912,
     "decade": "1910s",
@@ -1022,6 +1038,22 @@
     "sectionCount": 5,
     "recipeCount": 54,
     "bookFile": "data/euvs-books/1927-heres-how-by-judge-jr-2nd-impression.json"
+  },
+  {
+    "id": "1927-petits-et-grands-verres-choix-des-meilleures-recettes-de-cocktails",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "Petits et Grands Verres",
+    "author": "Anonymous",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1927)",
+    "notes": "Manual francés.",
+    "sectionCount": 2,
+    "recipeCount": 91,
+    "bookFile": "data/euvs-books/1927-petits-et-grands-verres-choix-des-meilleures-recettes-de-cocktails.json"
   },
   {
     "id": "1928-a-few-beverage-recipes",
