@@ -64,6 +64,22 @@
     "bookFile": "data/euvs-books/1862-jerry-thomas-bartenders-guide.json"
   },
   {
+    "id": "1878-american-and-other-drinks",
+    "year": 1878,
+    "decade": "1870s",
+    "title": "American and Other Drinks (1878)",
+    "author": "Leo Engel",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "London",
+    "edition": "First Edition (1878)",
+    "notes": "⭐ Primera edición del Leo Engel — anterior a la 1880 que ya tenemos.",
+    "sectionCount": 2,
+    "recipeCount": 30,
+    "bookFile": "data/euvs-books/1878-american-and-other-drinks.json"
+  },
+  {
     "id": "1879-drinks-and-how-to-make-them-by-yeatman-co",
     "year": 1879,
     "decade": "1870s",
@@ -702,6 +718,22 @@
     "sectionCount": 2,
     "recipeCount": 81,
     "bookFile": "data/euvs-books/1925-summer-drinks-and-winter-codials-by-c-f-leyel.json"
+  },
+  {
+    "id": "1926-the-cocktail-book-a-sideboard-manual-for-gentlemen",
+    "year": 1926,
+    "decade": "1920s",
+    "title": "The Cocktail Book — A Sideboard Manual for Gentlemen (1926)",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Edition (1926)",
+    "notes": "Manual de coctelería 'sideboard for gentlemen', edición 1926.",
+    "sectionCount": 2,
+    "recipeCount": 146,
+    "bookFile": "data/euvs-books/1926-the-cocktail-book-a-sideboard-manual-for-gentlemen.json"
   },
   {
     "id": "1927-heres-how-by-judge-jr-2nd-impression",
@@ -1568,6 +1600,22 @@
     "bookFile": "data/euvs-books/1935-fancy-drinks-how-to-mix-them.json"
   },
   {
+    "id": "1935-for-home-use-angostura-bitters-recipe-book-3rd-edition",
+    "year": 1935,
+    "decade": "1930s",
+    "title": "For Home Use — Angostura Bitters Recipe Book (3rd Ed.)",
+    "author": "Angostura Bitters",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "Trinidad",
+    "edition": "Third Edition (1935)",
+    "notes": "Folleto promocional de Angostura.",
+    "sectionCount": 2,
+    "recipeCount": 44,
+    "bookFile": "data/euvs-books/1935-for-home-use-angostura-bitters-recipe-book-3rd-edition.json"
+  },
+  {
     "id": "1935-le-bar-american-cocktails-by-george-pillaert",
     "year": 1935,
     "decade": "1930s",
@@ -1792,6 +1840,22 @@
     "bookFile": "data/euvs-books/1938-the-merry-mixer-from-the-house-of-schenley.json"
   },
   {
+    "id": "1939-bar-la-florida-cuna-del-daiquiri-cocktail",
+    "year": 1939,
+    "decade": "1930s",
+    "title": "Bar La Florida — Cuña del Daiquirí Cocktail",
+    "author": "Constante Ribalaigua",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "La Habana",
+    "edition": "Edition (1939)",
+    "notes": "Sister edition de 1934 La Florida (ya en catálogo).",
+    "sectionCount": 2,
+    "recipeCount": 83,
+    "bookFile": "data/euvs-books/1939-bar-la-florida-cuna-del-daiquiri-cocktail.json"
+  },
+  {
     "id": "1939-sloppy-joes-bar",
     "year": 1939,
     "decade": "1930s",
@@ -1870,6 +1934,22 @@
     "sectionCount": 30,
     "recipeCount": 52,
     "bookFile": "data/euvs-books/1948-ron-daiquiri-coctelera-cocktail-book-habana-cuba.json"
+  },
+  {
+    "id": "1948-the-bon-vivants-companion-by-george-a-zabriskie-2nd-edition",
+    "year": 1948,
+    "decade": "1940s",
+    "title": "The Bon Vivant's Companion (2nd Ed.)",
+    "author": "George A. Zabriskie",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "2nd Ed (1948)",
+    "notes": "Sequel post-WWII de la 1933 Bon Vivant's Companion.",
+    "sectionCount": 2,
+    "recipeCount": 406,
+    "bookFile": "data/euvs-books/1948-the-bon-vivants-companion-by-george-a-zabriskie-2nd-edition.json"
   },
   {
     "id": "1949-bottoms-up-guide-to-pleasant-drinking",
