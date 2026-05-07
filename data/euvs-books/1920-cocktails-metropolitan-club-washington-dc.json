@@ -48,9 +48,27 @@
       "name_es": "Núm. 3",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Greenall's Gin", "item_es": "Ginebra Greenall's", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange slices", "item_es": "rodajas de naranja", "amount": 2, "unit": "slice", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Greenall's Gin",
+          "item_es": "Ginebra Greenall's",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange slices",
+          "item_es": "rodajas de naranja",
+          "amount": 2,
+          "unit": "slice",
+          "notes": null
+        }
       ],
       "method_original": "One third French Vermouth, two-thirds Greenall's Gin, two slices orange. Frappe.",
       "method_es": "Un tercio de vermut francés, dos tercios de ginebra Greenall's, dos rodajas de naranja. Frappé.",
@@ -68,8 +86,20 @@
       "name_es": "Núm. 4",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Greenall's Gin", "item_es": "Ginebra Greenall's", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Greenall's Gin",
+          "item_es": "Ginebra Greenall's",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One third Italian Vermouth, two-thirds Greenall's Gin, stir with spoon.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Greenall's, remover con cuchara.",
@@ -87,9 +117,27 @@
       "name_es": "Núm. 5",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Metropolitan Club Dry Gin", "item_es": "Ginebra seca Metropolitan Club", "amount": "1/2", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Metropolitan Club Dry Gin",
+          "item_es": "Ginebra seca Metropolitan Club",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-quarter French Vermouth, one-quarter Italian Vermouth, one-half Metropolitan Club Dry Gin, Frappe. Rub orange peel on edge of glass.",
       "method_es": "Un cuarto de vermut francés, un cuarto de vermut italiano, una mitad de ginebra seca Metropolitan Club, frappé. Frotar piel de naranja en el borde del vaso.",
@@ -107,8 +155,20 @@
       "name_es": "Núm. 7",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Club Gin", "item_es": "Club Gin", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Club Gin",
+          "item_es": "Club Gin",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Club Gin, stir with spoon.",
       "method_es": "Un tercio de vermut italiano, dos tercios de Club Gin, remover con cuchara.",
@@ -126,9 +186,27 @@
       "name_es": "Núm. 10",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whiskey", "item_es": "Whisky escocés", "amount": "3/4", "unit": null, "notes": null},
-        {"item_original": "Yellow Chartreuse", "item_es": "Chartreuse amarillo", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 3, "unit": "dash", "notes": null}
+        {
+          "item_original": "Scotch Whiskey",
+          "item_es": "Whisky escocés",
+          "amount": "3/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Yellow Chartreuse",
+          "item_es": "Chartreuse amarillo",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Three-fourths Scotch Whiskey, one-fourth Yellow Chartreuse, three dashes of Orange Bitters, stir well.",
       "method_es": "Tres cuartos de whisky escocés, un cuarto de Chartreuse amarillo, tres golpes de amargo de naranja, remover bien.",
@@ -146,8 +224,20 @@
       "name_es": "Núm. 12",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi Rum", "item_es": "Ron Bacardí", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Lime", "item_es": "Lima", "amount": "1/2", "unit": "piece", "notes": "juice of half a lime"}
+        {
+          "item_original": "Bacardi Rum",
+          "item_es": "Ron Bacardí",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Lime",
+          "item_es": "Lima",
+          "amount": "1/2",
+          "unit": "piece",
+          "notes": "juice of half a lime"
+        }
       ],
       "method_original": "One jigger of Bacardi Rum, juice of one half Lime, Frappe.",
       "method_es": "Una medida (jigger) de ron Bacardí, jugo de media lima, frappé.",
@@ -165,9 +255,27 @@
       "name_es": "Núm. 13",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds Gordon Gin, Frappe.",
       "method_es": "Un sexto de vermut francés, un sexto de vermut italiano, dos tercios de ginebra Gordon, frappé.",
@@ -185,10 +293,34 @@
       "name_es": "Núm. 13 1/2",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange juice", "item_es": "jugo de naranja", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "jugo de naranja",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "Same as 13, only adding teaspoonful of orange juice.",
       "method_es": "Igual que el núm. 13, solo añadiendo una cucharadita de jugo de naranja.",
@@ -206,9 +338,27 @@
       "name_es": "Núm. 15",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Booth's Tom Gin", "item_es": "Ginebra Booth's Tom", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "sherry", "item_es": "jerez", "amount": null, "unit": null, "notes": "served with"}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Booth's Tom Gin",
+          "item_es": "Ginebra Booth's Tom",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": null,
+          "unit": null,
+          "notes": "served with"
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds of Booth's Tom Gin, stir well and serve with sherry.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Booth's Tom, remover bien y servir con jerez.",
@@ -226,8 +376,20 @@
       "name_es": "Núm. 16",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Nicholson Gin", "item_es": "Ginebra Nicholson", "amount": "3/4", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Nicholson Gin",
+          "item_es": "Ginebra Nicholson",
+          "amount": "3/4",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-fourth Italian Vermouth, three-fourths Nicholson Gin, Frappe.",
       "method_es": "Un cuarto de vermut italiano, tres cuartos de ginebra Nicholson, frappé.",
@@ -245,8 +407,20 @@
       "name_es": "Núm. 19",
       "yield": null,
       "ingredients": [
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "1/2", "unit": null, "notes": null}
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-half Orange Juice, one-half Gordon Gin, Frappe.",
       "method_es": "Una mitad de jugo de naranja, una mitad de ginebra Gordon, frappé.",
@@ -264,9 +438,27 @@
       "name_es": "Núm. 21",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange juice", "item_es": "jugo de naranja", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "jugo de naranja",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Gordon Gin, teaspoonful of orange juice, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Gordon, una cucharadita de jugo de naranja, frappé.",
@@ -284,8 +476,20 @@
       "name_es": "Núm. 22",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Old Tom Gin", "item_es": "Old Tom Gin", "amount": "1/3", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Old Tom Gin",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third French Vermouth, one-third Old Tom Gin, Frappe.",
       "method_es": "Un tercio de vermut francés, un tercio de Old Tom Gin, frappé.",
@@ -303,8 +507,20 @@
       "name_es": "Núm. 23",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Booth's Tom Gin", "item_es": "Ginebra Booth's Tom", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Booth's Tom Gin",
+          "item_es": "Ginebra Booth's Tom",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Booth's Tom Gin, Frappe, and serve with orange peel.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Booth's Tom, frappé, y servir con piel de naranja.",
@@ -322,9 +538,27 @@
       "name_es": "Núm. 24",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": 1, "unit": "tablespoon", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        }
       ],
       "method_original": "One-third French Vermouth, two-thirds Gordon Gin, one spoonful Italian Vermouth, Frappe.",
       "method_es": "Un tercio de vermut francés, dos tercios de ginebra Gordon, una cucharada de vermut italiano, frappé.",
@@ -342,10 +576,34 @@
       "name_es": "Núm. 27",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Old Tom Gin", "item_es": "Old Tom Gin", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": null, "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Old Tom Gin",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-quarter Italian, one-quarter French Vermouth, one-half Old Tom Gin with lemon peel, Frappe.",
       "method_es": "Un cuarto de vermut italiano, un cuarto de vermut francés, una mitad de Old Tom Gin con piel de limón, frappé.",
@@ -363,9 +621,27 @@
       "name_es": "Núm. 30",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Maraschino", "item_es": "Maraschino", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Maraschino",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Gordon Gin, teaspoonful of Maraschino, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Gordon, una cucharadita de maraschino, frappé.",
@@ -383,9 +659,27 @@
       "name_es": "Núm. 33",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Old Prentice Whiskey", "item_es": "Whisky Old Prentice", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Apricot Brandy", "item_es": "Brandy de albaricoque", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Old Prentice Whiskey",
+          "item_es": "Whisky Old Prentice",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Apricot Brandy",
+          "item_es": "Brandy de albaricoque",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Old Prentice Whiskey, one teaspoonful Apricot Brandy.",
       "method_es": "Un tercio de vermut italiano, dos tercios de whisky Old Prentice, una cucharadita de brandy de albaricoque.",
@@ -403,8 +697,20 @@
       "name_es": "Núm. 40",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/2", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-half French Vermouth, one-half Italian Vermouth, Frappe well.",
       "method_es": "Una mitad de vermut francés, una mitad de vermut italiano, frappé bien.",
@@ -422,10 +728,34 @@
       "name_es": "Núm. 50",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Apple Brandy", "item_es": "Brandy de manzana", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Triple-sec Curacao", "item_es": "Curaçao triple seco", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Apple Brandy",
+          "item_es": "Brandy de manzana",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Triple-sec Curacao",
+          "item_es": "Curaçao triple seco",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds Apple Brandy, one teaspoonful Triple-sec Curacao.",
       "method_es": "Un sexto de vermut francés, un sexto de vermut italiano, dos tercios de brandy de manzana, una cucharadita de curaçao triple seco.",
@@ -443,9 +773,27 @@
       "name_es": "Núm. 75",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "Old Tom Gin", "item_es": "Old Tom Gin", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 3, "unit": "dash", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Old Tom Gin",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One-half French Vermouth, one-half Old Tom Gin, three dashes Orange Bitters, stir with spoon.",
       "method_es": "Una mitad de vermut francés, una mitad de Old Tom Gin, tres golpes de amargo de naranja, remover con cuchara.",
@@ -463,9 +811,27 @@
       "name_es": "Núm. 99",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Geneva Gin", "item_es": "Ginebra Geneva", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Olive", "item_es": "Aceituna", "amount": 1, "unit": "piece", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Geneva Gin",
+          "item_es": "Ginebra Geneva",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Olive",
+          "item_es": "Aceituna",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Geneva Gin with Olive, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Geneva con aceituna, frappé.",
@@ -483,9 +849,27 @@
       "name_es": "Ajenjo",
       "yield": null,
       "ingredients": [
-        {"item_original": "Water", "item_es": "Agua", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Absinthe", "item_es": "Ajenjo", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 4, "unit": "dash", "notes": null}
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Absinthe",
+          "item_es": "Ajenjo",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One-third Water, two-thirds Absinthe, four dashes of Orange Bitters, stir well or Frappe.",
       "method_es": "Un tercio de agua, dos tercios de ajenjo, cuatro golpes de amargo de naranja, remover bien o frappé.",
@@ -503,8 +887,20 @@
       "name_es": "Bingham",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third French Vermouth, two-thirds Gordon Gin, stir well.",
       "method_es": "Un tercio de vermut francés, dos tercios de ginebra Gordon, remover bien.",
@@ -522,8 +918,20 @@
       "name_es": "Brandy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 4, "unit": "dash", "notes": "or two dashes Angostura Bitters if preferred"}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "or two dashes Angostura Bitters if preferred"
+        }
       ],
       "method_original": "One jigger of Brandy, four dashes of Orange Bitters or two dashes of Angostura Bitters, if preferred, stir well.",
       "method_es": "Una medida (jigger) de brandy, cuatro golpes de amargo de naranja o dos golpes de amargo de Angostura si se prefiere, remover bien.",
@@ -541,9 +949,27 @@
       "name_es": "Bronx",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange slice", "item_es": "rodaja de naranja", "amount": 1, "unit": "slice", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange slice",
+          "item_es": "rodaja de naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        }
       ],
       "method_original": "One-third French Vermouth, two-thirds Gordon Gin, slice of orange, Frappe well.",
       "method_es": "Un tercio de vermut francés, dos tercios de ginebra Gordon, rodaja de naranja, frappé bien.",
@@ -561,10 +987,34 @@
       "name_es": "Brooklyn",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Whiskey", "item_es": "Whisky", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": 1, "unit": "piece", "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Whiskey",
+          "item_es": "Whisky",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": "One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds of Whiskey, piece of lemon peel, Frappe.",
       "method_es": "Un sexto de vermut francés, un sexto de vermut italiano, dos tercios de whisky, un trozo de piel de limón, frappé.",
@@ -582,8 +1032,20 @@
       "name_es": "Calisaya",
       "yield": null,
       "ingredients": [
-        {"item_original": "Calisaya", "item_es": "Calisaya", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 5, "unit": "dash", "notes": null}
+        {
+          "item_original": "Calisaya",
+          "item_es": "Calisaya",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 5,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One jigger of Calisaya, five dashes of Orange Bitters, stir well.",
       "method_es": "Una medida (jigger) de Calisaya, cinco golpes de amargo de naranja, remover bien.",
@@ -601,10 +1063,34 @@
       "name_es": "Clover Club",
       "yield": null,
       "ingredients": [
-        {"item_original": "white of one egg", "item_es": "clara de un huevo", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "lemon or lime juice", "item_es": "jugo de limón o lima", "amount": "1.5", "unit": "piece", "notes": "juice of one and a half lemons"},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": "1/2", "unit": null, "notes": null}
+        {
+          "item_original": "white of one egg",
+          "item_es": "clara de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon or lime juice",
+          "item_es": "jugo de limón o lima",
+          "amount": "1.5",
+          "unit": "piece",
+          "notes": "juice of one and a half lemons"
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "White of one egg, lemon or lime juice (one and a half lemons), 1/2 Gordon Gin, 1/2 Grenadine, Frappe.",
       "method_es": "Clara de un huevo, jugo de limón o lima (uno y medio limones), 1/2 ginebra Gordon, 1/2 granadina, frappé.",
@@ -622,9 +1108,27 @@
       "name_es": "Club",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Holland Gin", "item_es": "Ginebra holandesa", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Holland Gin",
+          "item_es": "Ginebra holandesa",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Holland Gin, two dashes of Angostura Bitters, stir well.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra holandesa, dos golpes de amargo de Angostura, remover bien.",
@@ -642,10 +1146,34 @@
       "name_es": "Coffee",
       "yield": null,
       "ingredients": [
-        {"item_original": "egg", "item_es": "huevo", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Port", "item_es": "Oporto", "amount": 1, "unit": "wine-glass", "notes": "one drink"},
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "wine-glass", "notes": "one Pony"},
-        {"item_original": "nutmeg", "item_es": "nuez moscada", "amount": null, "unit": null, "notes": "a little"}
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Port",
+          "item_es": "Oporto",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "one drink"
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "one Pony"
+        },
+        {
+          "item_original": "nutmeg",
+          "item_es": "nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "a little"
+        }
       ],
       "method_original": "One egg, one drink of Port, one Pony Brandy, with a little nutmeg, Frappe.",
       "method_es": "Un huevo, una copa de oporto, una pony de brandy, con un poco de nuez moscada, frappé.",
@@ -663,8 +1191,20 @@
       "name_es": "Dubonnet",
       "yield": null,
       "ingredients": [
-        {"item_original": "Dubonnet", "item_es": "Dubonnet", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 4, "unit": "dash", "notes": null}
+        {
+          "item_original": "Dubonnet",
+          "item_es": "Dubonnet",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One jigger Dubonnet, four dashes of Orange Bitters, Frappe.",
       "method_es": "Una medida (jigger) de Dubonnet, cuatro golpes de amargo de naranja, frappé.",
@@ -678,32 +1218,24 @@
       "order": 33,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
-      "name_original": "Gin",
-      "name_es": "Gin",
-      "yield": null,
-      "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 5, "unit": "dash", "notes": "or two dashes Angostura Bitters if preferred"},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": null, "unit": null, "notes": null}
-      ],
-      "method_original": "Same as the Whiskey cocktail, only use Gin in place of whiskey.",
-      "method_es": "Igual que el cóctel de whisky, solo se usa ginebra en lugar de whisky.",
-      "glassware": null,
-      "garnish": "lemon peel",
-      "page_reference": null,
-      "raw_text": "Gin: Same as above only use Gin in place of whiskey."
-    },
-    {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-034",
-      "order": 34,
-      "section_title": "Standard Cocktails",
-      "category": "cocktail",
       "name_original": "Half and Half",
       "name_es": "Half and Half",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/2", "unit": null, "notes": null},
-        {"item_original": "Nicholson Gin", "item_es": "Ginebra Nicholson", "amount": "1/2", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Nicholson Gin",
+          "item_es": "Ginebra Nicholson",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-half Italian Vermouth, one-half Nicholson Gin, Frappe.",
       "method_es": "Una mitad de vermut italiano, una mitad de ginebra Nicholson, frappé.",
@@ -713,17 +1245,35 @@
       "raw_text": "Half and Half: one-half Italian Vermouth, one-half Nicholson Gin, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-035",
-      "order": 35,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-034",
+      "order": 34,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Hibbs",
       "name_es": "Hibbs",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Booth's Tom Gin", "item_es": "Ginebra Booth's Tom", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange peel", "item_es": "piel de naranja", "amount": null, "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Booth's Tom Gin",
+          "item_es": "Ginebra Booth's Tom",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange peel",
+          "item_es": "piel de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds of Booth's Tom Gin, orange peel, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Booth's Tom, piel de naranja, frappé.",
@@ -733,16 +1283,28 @@
       "raw_text": "Hibbs: One-third Italian Vermouth, two-thirds of Booth's Tom Gin, orange peel, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-036",
-      "order": 36,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-035",
+      "order": 35,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Hitt",
       "name_es": "Hitt",
       "yield": null,
       "ingredients": [
-        {"item_original": "Orange juice", "item_es": "Jugo de naranja", "amount": null, "unit": null, "notes": null},
-        {"item_original": "orange bitters", "item_es": "amargo de naranja", "amount": 4, "unit": "dash", "notes": null}
+        {
+          "item_original": "Orange juice",
+          "item_es": "Jugo de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Orange juice with four dashes of orange bitters, Frappe.",
       "method_es": "Jugo de naranja con cuatro golpes de amargo de naranja, frappé.",
@@ -752,16 +1314,28 @@
       "raw_text": "Hitt: Orange juice with four dashes of orange bitters, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-037",
-      "order": 37,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-036",
+      "order": 36,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Lone Tree",
       "name_es": "Lone Tree",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Gordon Gin, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Gordon, frappé.",
@@ -771,17 +1345,35 @@
       "raw_text": "Lone Tree: One-third Italian Vermouth, two-thirds Gordon Gin, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-038",
-      "order": 38,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-037",
+      "order": 37,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Manhattan",
       "name_es": "Manhattan",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "whiskey", "item_es": "whisky", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 4, "unit": "dash", "notes": "or two dashes Angostura Bitters if preferred"}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 4,
+          "unit": "dash",
+          "notes": "or two dashes Angostura Bitters if preferred"
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds whiskey, four dashes of Orange or two dashes of Angostura Bitters, if preferred.",
       "method_es": "Un tercio de vermut italiano, dos tercios de whisky, cuatro golpes de amargo de naranja o dos golpes de amargo de Angostura, si se prefiere.",
@@ -791,17 +1383,35 @@
       "raw_text": "Manhattan: One-third Italian Vermouth, two-thirds whiskey, four dashes of Orange or two dashes of Angostura Bitters, if preferred."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-039",
-      "order": 39,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-038",
+      "order": 38,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Martini",
       "name_es": "Martini",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange bitters", "item_es": "amargo de naranja", "amount": 4, "unit": "dash", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Gordon gin, four dashes of orange bitters, stir well, serve with olive or cherry.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Gordon, cuatro golpes de amargo de naranja, remover bien, servir con aceituna o cereza.",
@@ -811,16 +1421,28 @@
       "raw_text": "Martini: One-third Italian Vermouth, two-thirds Gordon gin, four dashes of orange bitters, stir well, serve with olive or cherry."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-040",
-      "order": 40,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-039",
+      "order": 39,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Munn",
       "name_es": "Munn",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Plymouth Gin", "item_es": "Ginebra Plymouth", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Plymouth Gin",
+          "item_es": "Ginebra Plymouth",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Plymouth Gin, Frappe until white.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Plymouth, frappé hasta que esté blanco.",
@@ -830,16 +1452,28 @@
       "raw_text": "Munn: One-third Italian Vermouth, two-thirds Plymouth Gin, Frappe until white."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-041",
-      "order": 41,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-040",
+      "order": 40,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Navy",
       "name_es": "Navy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Bols Gin", "item_es": "Ginebra Bols", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Bols Gin",
+          "item_es": "Ginebra Bols",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Bols Gin, stir well.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Bols, remover bien.",
@@ -849,39 +1483,56 @@
       "raw_text": "Navy: One-third Italian Vermouth, two-thirds Bols Gin, stir well."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-042",
-      "order": 42,
-      "section_title": "Standard Cocktails",
-      "category": "cocktail",
-      "name_original": "Oko",
-      "name_es": "Oko",
-      "yield": null,
-      "ingredients": [
-        {"item_original": "Oko", "item_es": "Oko", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 4, "unit": "dash", "notes": null}
-      ],
-      "method_original": "One jigger Oko, four dashes Orange Bitters, stir well or Frappe.",
-      "method_es": "Una medida (jigger) de Oko, cuatro golpes de amargo de naranja, remover bien o frappé.",
-      "glassware": null,
-      "garnish": null,
-      "page_reference": null,
-      "raw_text": "Oko: One jigger Oko, four dashes Orange Bitters, stir well or Frappe."
-    },
-    {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-043",
-      "order": 43,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-041",
+      "order": 41,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Old Fashioned Gin",
       "name_es": "Old Fashioned de ginebra",
       "yield": null,
       "ingredients": [
-        {"item_original": "water", "item_es": "agua", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": "3/4", "unit": null, "notes": null},
-        {"item_original": "pulverized sugar", "item_es": "azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": "small"},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 3, "unit": "dash", "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": 1, "unit": "piece", "notes": "small"},
-        {"item_original": "cracked ice", "item_es": "hielo picado", "amount": null, "unit": null, "notes": "fill glass"}
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": "3/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pulverized sugar",
+          "item_es": "azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "small"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "small"
+        },
+        {
+          "item_original": "cracked ice",
+          "item_es": "hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "fill glass"
+        }
       ],
       "method_original": "Use smash glass, one-fourth water, three-fourths gin, small teaspoonful of pulverized sugar, three dashes of Angostura Bitters, small piece of lemon peel, fill with cracked ice and serve.",
       "method_es": "Usar vaso smash, un cuarto de agua, tres cuartos de ginebra, una cucharadita pequeña de azúcar en polvo, tres golpes de amargo de Angostura, un trozo pequeño de piel de limón, llenar con hielo picado y servir.",
@@ -891,20 +1542,56 @@
       "raw_text": "Old Fashioned Gin: Same as above using Gin in place of Whiskey."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-044",
-      "order": 44,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-042",
+      "order": 42,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Old Fashioned Whiskey",
       "name_es": "Old Fashioned de whisky",
       "yield": null,
       "ingredients": [
-        {"item_original": "water", "item_es": "agua", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "whiskey", "item_es": "whisky", "amount": "3/4", "unit": null, "notes": null},
-        {"item_original": "pulverized sugar", "item_es": "azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": "small"},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 3, "unit": "dash", "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": 1, "unit": "piece", "notes": "small"},
-        {"item_original": "cracked ice", "item_es": "hielo picado", "amount": null, "unit": null, "notes": "fill glass"}
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "3/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pulverized sugar",
+          "item_es": "azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": "small"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "small"
+        },
+        {
+          "item_original": "cracked ice",
+          "item_es": "hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "fill glass"
+        }
       ],
       "method_original": "Use smash glass, one-fourth water, three-fourths whiskey, small teaspoonful of pulverized sugar, three dashes of Angostura Bitters, small piece of lemon peel, fill with cracked ice and serve.",
       "method_es": "Usar vaso smash, un cuarto de agua, tres cuartos de whisky, una cucharadita pequeña de azúcar en polvo, tres golpes de amargo de Angostura, un trozo pequeño de piel de limón, llenar con hielo picado y servir.",
@@ -914,18 +1601,42 @@
       "raw_text": "Old Fashioned Whiskey: Use smash glass, one-fourth water, three-fourths whiskey, small teaspoonful of Pulverised sugar, three dashes of Angostura Bitters, small piece of lemon peel, fill with cracked ice and serve."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-045",
-      "order": 45,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-043",
+      "order": 43,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Pilgrim",
       "name_es": "Pilgrim",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Old Tom Gin", "item_es": "Old Tom Gin", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "orange peel", "item_es": "piel de naranja", "amount": null, "unit": null, "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": null, "unit": null, "notes": "squeezed on top"}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom Gin",
+          "item_es": "Old Tom Gin",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange peel",
+          "item_es": "piel de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "squeezed on top"
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Old Tom Gin, Orange peel and squeeze Lemon peel on top, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de Old Tom Gin, piel de naranja y exprimir piel de limón por encima, frappé.",
@@ -935,18 +1646,42 @@
       "raw_text": "Pilgrim: One-third Italian Vermouth, two-thirds Old Tom Gin, Orange peel and squeeze Lemon peel on top, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-046",
-      "order": 46,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-044",
+      "order": 44,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Perfect",
       "name_es": "Perfect",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Orange Peel", "item_es": "Piel de naranja", "amount": null, "unit": null, "notes": "squeezed over glass"}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Orange Peel",
+          "item_es": "Piel de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": "squeezed over glass"
+        }
       ],
       "method_original": "One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds Gordon Gin with Orange Peel squeezed over glass, Frappe.",
       "method_es": "Un sexto de vermut francés, un sexto de vermut italiano, dos tercios de ginebra Gordon con piel de naranja exprimida sobre el vaso, frappé.",
@@ -956,18 +1691,42 @@
       "raw_text": "Perfect: One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds Gordon Gin with Orange Peel squeezed over glass, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-047",
-      "order": 47,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-045",
+      "order": 45,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Rain Bow",
       "name_es": "Rain Bow",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/6", "unit": null, "notes": null},
-        {"item_original": "pure Rye Whiskey", "item_es": "Whisky de centeno puro", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": null, "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/6",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pure Rye Whiskey",
+          "item_es": "Whisky de centeno puro",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds pure Rye Whiskey with lemon peel.",
       "method_es": "Un sexto de vermut francés, un sexto de vermut italiano, dos tercios de whisky de centeno puro con piel de limón.",
@@ -977,17 +1736,35 @@
       "raw_text": "Rain Bow: One-sixth French Vermouth, one-sixth Italian Vermouth, two-thirds pure Rye Whiskey with lemon peel."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-048",
-      "order": 48,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-046",
+      "order": 46,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Rob Roy",
       "name_es": "Rob Roy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Sherry", "item_es": "Jerez", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Scotch Whiskey", "item_es": "Whisky escocés", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": null, "unit": null, "notes": null}
+        {
+          "item_original": "Sherry",
+          "item_es": "Jerez",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Scotch Whiskey",
+          "item_es": "Whisky escocés",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third Sherry and two-thirds Scotch Whiskey with lemon peel.",
       "method_es": "Un tercio de jerez y dos tercios de whisky escocés con piel de limón.",
@@ -997,17 +1774,35 @@
       "raw_text": "Rob Roy: One-third Sherry and two-thirds Scotch Whiskey with lemon peel."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-049",
-      "order": 49,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-047",
+      "order": 47,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "S. S.",
       "name_es": "S. S.",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/4", "unit": null, "notes": null},
-        {"item_original": "Absinthe", "item_es": "Ajenjo", "amount": "1/2", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Absinthe",
+          "item_es": "Ajenjo",
+          "amount": "1/2",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-fourth French Vermouth, one-fourth Italian Vermouth, one-half Absinthe, Frappe.",
       "method_es": "Un cuarto de vermut francés, un cuarto de vermut italiano, una mitad de ajenjo, frappé.",
@@ -1017,17 +1812,35 @@
       "raw_text": "S. S.: One-fourth French Vermouth, one-fourth Italian Vermouth, one-half Absinthe, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-050",
-      "order": 50,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-048",
+      "order": 48,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Star",
       "name_es": "Star",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Apple Brandy", "item_es": "Brandy de manzana", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "cherry", "item_es": "cereza", "amount": 1, "unit": "piece", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Apple Brandy",
+          "item_es": "Brandy de manzana",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cherry",
+          "item_es": "cereza",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Apple Brandy, stir well and serve with cherry.",
       "method_es": "Un tercio de vermut italiano, dos tercios de brandy de manzana, remover bien y servir con cereza.",
@@ -1037,18 +1850,42 @@
       "raw_text": "Star: One-third Italian Vermouth, two-thirds Apple Brandy, stir well and serve with cherry."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-051",
-      "order": 51,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-049",
+      "order": 49,
       "section_title": "Standard Cocktails",
       "category": "other",
       "name_original": "Suissette",
       "name_es": "Suissette",
       "yield": null,
       "ingredients": [
-        {"item_original": "white of one egg", "item_es": "clara de un huevo", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Absinthe", "item_es": "Ajenjo", "amount": 1, "unit": "wine-glass", "notes": "one drink"},
-        {"item_original": "Anisette", "item_es": "Anisete", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "syphon water", "item_es": "agua de sifón", "amount": null, "unit": null, "notes": "served with"}
+        {
+          "item_original": "white of one egg",
+          "item_es": "clara de un huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Absinthe",
+          "item_es": "Ajenjo",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "one drink"
+        },
+        {
+          "item_original": "Anisette",
+          "item_es": "Anisete",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "syphon water",
+          "item_es": "agua de sifón",
+          "amount": null,
+          "unit": null,
+          "notes": "served with"
+        }
       ],
       "method_original": "White of one egg, drink of Absinthe with a dash of Anisette, Frappe, serve with syphon.",
       "method_es": "Clara de un huevo, una copa de ajenjo con un golpe de anisete, frappé, servir con sifón.",
@@ -1058,17 +1895,35 @@
       "raw_text": "Suissette: White of one egg, drink of Absinthe with a dash of Anisette, Frappe, serve with syphon."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-052",
-      "order": 52,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-050",
+      "order": 50,
       "section_title": "Standard Cocktails",
       "category": "other",
       "name_original": "Swizzle",
       "name_es": "Swizzle",
       "yield": null,
       "ingredients": [
-        {"item_original": "Carypton", "item_es": "Carypton", "amount": "3/4", "unit": "gill", "notes": null},
-        {"item_original": "lemon juice", "item_es": "jugo de limón", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Carypton",
+          "item_es": "Carypton",
+          "amount": "3/4",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "jugo de limón",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Three-fourths Gill of Carypton, teaspoonful of lemon juice, two dashes of Angostura Bitters, Frappe.",
       "method_es": "Tres cuartos de gill de Carypton, una cucharadita de jugo de limón, dos golpes de amargo de Angostura, frappé.",
@@ -1078,16 +1933,28 @@
       "raw_text": "Swizzle: Three-fourths Gill of Carypton, teaspoonful of lemon juice, two dashes of Angostura Bitters, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-053",
-      "order": 53,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-051",
+      "order": 51,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Vermouth",
       "name_es": "Vermut",
       "yield": null,
       "ingredients": [
-        {"item_original": "French or Italian Vermouth", "item_es": "Vermut francés o italiano", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 5, "unit": "dash", "notes": null}
+        {
+          "item_original": "French or Italian Vermouth",
+          "item_es": "Vermut francés o italiano",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 5,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "One jigger of French or Italian Vermouth, five dashes of Orange Bitters, stir well.",
       "method_es": "Una medida (jigger) de vermut francés o italiano, cinco golpes de amargo de naranja, remover bien.",
@@ -1097,16 +1964,28 @@
       "raw_text": "Vermouth: One jigger of French or Italian Vermouth, five dashes of Orange Bitters, stir well."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-054",
-      "order": 54,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-052",
+      "order": 52,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Virgin",
       "name_es": "Virgin",
       "yield": null,
       "ingredients": [
-        {"item_original": "French Vermouth", "item_es": "Vermut francés", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Plymouth Gin", "item_es": "Ginebra Plymouth", "amount": "2/3", "unit": null, "notes": null}
+        {
+          "item_original": "French Vermouth",
+          "item_es": "Vermut francés",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Plymouth Gin",
+          "item_es": "Ginebra Plymouth",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One-third of French Vermouth, two-thirds of Plymouth Gin, Frappe.",
       "method_es": "Un tercio de vermut francés, dos tercios de ginebra Plymouth, frappé.",
@@ -1116,17 +1995,35 @@
       "raw_text": "Virgin: One-third of French Vermouth, two-thirds of Plymouth Gin, Frappe."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-055",
-      "order": 55,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-053",
+      "order": 53,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Whiskey",
       "name_es": "Whiskey",
       "yield": null,
       "ingredients": [
-        {"item_original": "whiskey", "item_es": "whisky", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Amargo de naranja", "amount": 5, "unit": "dash", "notes": "or two dashes Angostura Bitters if preferred"},
-        {"item_original": "lemon peel", "item_es": "piel de limón", "amount": null, "unit": null, "notes": null}
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Amargo de naranja",
+          "amount": 5,
+          "unit": "dash",
+          "notes": "or two dashes Angostura Bitters if preferred"
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
       ],
       "method_original": "One jigger of whiskey, five dashes of Orange Bitters or two dashes of Angostura Bitters if preferred, serve with lemon peel.",
       "method_es": "Una medida (jigger) de whisky, cinco golpes de amargo de naranja o dos golpes de amargo de Angostura si se prefiere, servir con piel de limón.",
@@ -1136,17 +2033,35 @@
       "raw_text": "Whiskey: One jigger of whiskey, five dashes of Orange Bitters or two dashes of Angostura Bitters if preferred, serve with lemon peel."
     },
     {
-      "id": "1920-cocktails-metropolitan-club-washington-dc-056",
-      "order": 56,
+      "id": "1920-cocktails-metropolitan-club-washington-dc-054",
+      "order": 54,
       "section_title": "Standard Cocktails",
       "category": "cocktail",
       "name_original": "Zero",
       "name_es": "Zero",
       "yield": null,
       "ingredients": [
-        {"item_original": "Italian Vermouth", "item_es": "Vermut italiano", "amount": "1/3", "unit": null, "notes": null},
-        {"item_original": "Gordon Gin", "item_es": "Ginebra Gordon", "amount": "2/3", "unit": null, "notes": null},
-        {"item_original": "Orange slices", "item_es": "rodajas de naranja", "amount": 2, "unit": "slice", "notes": null}
+        {
+          "item_original": "Italian Vermouth",
+          "item_es": "Vermut italiano",
+          "amount": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "Ginebra Gordon",
+          "amount": "2/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Orange slices",
+          "item_es": "rodajas de naranja",
+          "amount": 2,
+          "unit": "slice",
+          "notes": null
+        }
       ],
       "method_original": "One-third Italian Vermouth, two-thirds Gordon Gin, two slices Orange, Frappe.",
       "method_es": "Un tercio de vermut italiano, dos tercios de ginebra Gordon, dos rodajas de naranja, frappé.",

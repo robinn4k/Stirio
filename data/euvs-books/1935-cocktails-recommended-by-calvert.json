@@ -72,10 +72,34 @@
       "name_es": "Cóctel Old Fashioned (Antiguo)",
       "yield": "1 vaso Old Fashioned",
       "ingredients": [
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 0.5, "unit": "piece", "notes": "medio terrón"},
-        {"item_original": "Water", "item_es": "Agua", "amount": 2, "unit": "teaspoon", "notes": null},
-        {"item_original": "Bitters", "item_es": "Bíter (amargo)", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null}
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "medio terrón"
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter (amargo)",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "In a thick-bottomed Old Fashioned glass, crush the Sugar in Water and Bitters, add the Whiskey and a cube of ice, stir, and gay up with a Cherry and half-slices of Lemon and Orange (and a sliver of fresh pineapple, if it's handy). This is the cocktail that Prohibition made famous — it puts a broader smile on the schnapps without diluting it.",
       "method_es": "En un vaso Old Fashioned de fondo grueso, machaque el azúcar con el agua y el bíter, añada el whisky y un cubo de hielo, remueva y decore con una cereza y medias rodajas de limón y naranja (y una astilla de piña fresca, si la tiene a mano). Este es el cóctel que la Prohibición hizo famoso — pone una sonrisa más amplia en el aguardiente sin diluirlo.",
@@ -93,9 +117,27 @@
       "name_es": "Cóctel Manhattan",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Bitters", "item_es": "Bíter (amargo)", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter (amargo)",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Stir with cracked ice, strain, and serve with Cherry. This one, too, to put it mildly, has Authority.",
       "method_es": "Remueva con hielo picado, cuele y sirva con una cereza. Este también, por decirlo suavemente, tiene Autoridad.",
@@ -113,9 +155,27 @@
       "name_es": "Cóctel de Whisky",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Bitters", "item_es": "Bíter (amargo)", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Sugar Syrup", "item_es": "Sirope de azúcar", "amount": 0.5, "unit": "jigger", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter (amargo)",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar Syrup",
+          "item_es": "Sirope de azúcar",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Stir with cracked ice, strain, and serve with Cherry. Recommended for those who like their lightning almost as is.",
       "method_es": "Remueva con hielo picado, cuele y sirva con una cereza. Recomendado para quienes les gusta su 'rayo' casi tal cual.",
@@ -133,11 +193,41 @@
       "name_es": "Cóctel Mountain (Montaña)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "White of Fresh Egg", "item_es": "Clara de huevo fresco", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "White of Fresh Egg",
+          "item_es": "Clara de huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "French (dry) Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Shake well with ice cubes, and strain into glass.",
       "method_es": "Agite bien con cubos de hielo y cuele en la copa.",
@@ -155,11 +245,41 @@
       "name_es": "Whiskey Sling",
       "yield": "1 vaso highball pequeño",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Water", "item_es": "Agua", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": 5, "unit": "dash", "notes": "5 gotas"},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 0.5, "unit": "piece", "notes": "medio terrón"},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "para llenar"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": 5,
+          "unit": "dash",
+          "notes": "5 gotas"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "medio terrón"
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        }
       ],
       "method_original": "Crush the Sugar in Water, add the Whiskey and Lemon Juice, pour into a small highball glass containing a cube of ice, fill with Fizz Water, and garnish with a twist of Lemon Peel.",
       "method_es": "Machaque el azúcar en el agua, añada el whisky y el zumo de limón, vierta en un vaso highball pequeño con un cubo de hielo, llene con agua con gas y decore con una cáscara de limón.",
@@ -177,8 +297,20 @@
       "name_es": "Whiskey Cobbler",
       "yield": "1 vaso highball pequeño",
       "ingredients": [
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 0.5, "unit": "teaspoon", "notes": null},
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null}
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Into a small highball glass, half full of cracked ice, put ½ teaspoonful Powdered Sugar and a jigger of CALVERT Whiskey. Stir thoroughly and garnish with fruit.",
       "method_es": "En un vaso highball pequeño, lleno hasta la mitad de hielo picado, ponga ½ cucharadita de azúcar en polvo y un jigger de whisky CALVERT. Remueva bien y decore con fruta.",
@@ -196,9 +328,27 @@
       "name_es": "Cóctel Honey Do (Miel)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Grapefruit Juice", "item_es": "Zumo de pomelo", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Honey", "item_es": "Miel", "amount": 0.5, "unit": "jigger", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit Juice",
+          "item_es": "Zumo de pomelo",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Honey",
+          "item_es": "Miel",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Shake well with cracked ice, and strain into glass. Mellowish bee-cause of the honey.",
       "method_es": "Agite bien con hielo picado y cuele en la copa. Suave 'a-causa' (de las abejas) de la miel.",
@@ -216,9 +366,27 @@
       "name_es": "Rock and Rye",
       "yield": "1 vaso",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Rock Candy", "item_es": "Azúcar candy (caramelo de roca)", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "opcional, al gusto"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Rock Candy",
+          "item_es": "Azúcar candy (caramelo de roca)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "opcional, al gusto"
+        }
       ],
       "method_original": "Dissolve the Rock Candy in the Whiskey — and, if your tastes are tart, add a little Lemon Juice.",
       "method_es": "Disuelva el azúcar candy en el whisky — y, si su gusto es ácido, añada un poco de zumo de limón.",
@@ -236,14 +404,62 @@
       "name_es": "Hot Whiskey Toddy (Toddy caliente de whisky)",
       "yield": "1 vaso",
       "ingredients": [
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 1, "unit": "piece", "notes": "1 terrón"},
-        {"item_original": "Hot Water", "item_es": "Agua caliente", "amount": null, "unit": null, "notes": "una pequeña cantidad para machacar"},
-        {"item_original": "Cloves", "item_es": "Clavos de olor", "amount": null, "unit": "piece", "notes": "unos pocos"},
-        {"item_original": "Cinnamon Bark", "item_es": "Corteza de canela", "amount": null, "unit": "piece", "notes": "trozos"},
-        {"item_original": "Lemon Peel", "item_es": "Cáscara de limón", "amount": null, "unit": "piece", "notes": null},
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Hot Water", "item_es": "Agua caliente", "amount": null, "unit": null, "notes": "para diluir, servida aparte"},
-        {"item_original": "Butter", "item_es": "Mantequilla", "amount": null, "unit": "piece", "notes": "opcional, un trocito pequeño"}
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 terrón"
+        },
+        {
+          "item_original": "Hot Water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "una pequeña cantidad para machacar"
+        },
+        {
+          "item_original": "Cloves",
+          "item_es": "Clavos de olor",
+          "amount": null,
+          "unit": "piece",
+          "notes": "unos pocos"
+        },
+        {
+          "item_original": "Cinnamon Bark",
+          "item_es": "Corteza de canela",
+          "amount": null,
+          "unit": "piece",
+          "notes": "trozos"
+        },
+        {
+          "item_original": "Lemon Peel",
+          "item_es": "Cáscara de limón",
+          "amount": null,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Hot Water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "para diluir, servida aparte"
+        },
+        {
+          "item_original": "Butter",
+          "item_es": "Mantequilla",
+          "amount": null,
+          "unit": "piece",
+          "notes": "opcional, un trocito pequeño"
+        }
       ],
       "method_original": "Crush a lump of Sugar in a little Hot Water; add a few Cloves, pieces of Cinnamon Bark and Lemon Peel, and 1 glass of CALVERT Whiskey. Dilute to taste with Hot Water, served separately. If the idea appeals to you, add a small piece of Butter to smooth the toddy.",
       "method_es": "Machaque un terrón de azúcar en un poco de agua caliente; añada unos clavos de olor, trozos de corteza de canela y cáscara de limón, y 1 vaso de whisky CALVERT. Diluya al gusto con agua caliente, servida aparte. Si le apetece, añada un trocito de mantequilla para suavizar el toddy.",
@@ -261,10 +477,34 @@
       "name_es": "Cóctel New York (Nueva York)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 0.5, "unit": "teaspoon", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón (o 1 lima)"},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón (o 1 lima)"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Shake with cracked ice, strain, and serve with a twist of Orange Peel in the glass.",
       "method_es": "Agite con hielo picado, cuele y sirva con un twist de cáscara de naranja en la copa.",
@@ -282,10 +522,34 @@
       "name_es": "Cóctel Commodore (Comodoro)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Sugar Syrup", "item_es": "Sirope de azúcar", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Lime Juice", "item_es": "Zumo de lima", "amount": null, "unit": null, "notes": "zumo de media lima (o medio limón)"},
-        {"item_original": "Orange Bitters", "item_es": "Bíter de naranja", "amount": 2, "unit": "dash", "notes": "2 gotas"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar Syrup",
+          "item_es": "Sirope de azúcar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lime Juice",
+          "item_es": "Zumo de lima",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de media lima (o medio limón)"
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Bíter de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": "2 gotas"
+        }
       ],
       "method_original": "Shake with cracked ice, and strain into glass. Nautical but nice.",
       "method_es": "Agite con hielo picado y cuele en la copa. Náutico pero agradable.",
@@ -303,11 +567,41 @@
       "name_es": "Egg Nogg (Ponche de huevo)",
       "yield": "1 vaso Tom Collins",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Fresh Egg", "item_es": "Huevo fresco", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "tablespoon", "notes": null},
-        {"item_original": "Milk", "item_es": "Leche", "amount": null, "unit": null, "notes": "para llenar el vaso Tom Collins"},
-        {"item_original": "Nutmeg", "item_es": "Nuez moscada", "amount": null, "unit": null, "notes": "espolvoreada por encima"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh Egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Milk",
+          "item_es": "Leche",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar el vaso Tom Collins"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "espolvoreada por encima"
+        }
       ],
       "method_original": "Shake thoroughly with ice cubes, strain into glass, and sprinkle nutmeg on top.",
       "method_es": "Agite enérgicamente con cubos de hielo, cuele en el vaso y espolvoree nuez moscada por encima.",
@@ -325,10 +619,34 @@
       "name_es": "Whiskey Flip",
       "yield": "1 copa grande de vino",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Fresh Egg", "item_es": "Huevo fresco", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Nutmeg", "item_es": "Nuez moscada", "amount": null, "unit": null, "notes": "espolvoreada por encima"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Fresh Egg",
+          "item_es": "Huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "espolvoreada por encima"
+        }
       ],
       "method_original": "Shake thoroughly with ice cubes, strain into large wine-glass, sprinkle nutmeg on top.",
       "method_es": "Agite enérgicamente con cubos de hielo, cuele en una copa grande de vino, espolvoree nuez moscada por encima.",
@@ -346,10 +664,34 @@
       "name_es": "Whiskey Daisy",
       "yield": "1 copa grande de vino",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón"},
-        {"item_original": "Sugar Syrup", "item_es": "Sirope de azúcar", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "un chorrito"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón"
+        },
+        {
+          "item_original": "Sugar Syrup",
+          "item_es": "Sirope de azúcar",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "un chorrito"
+        }
       ],
       "method_original": "Shake with cracked ice, strain into large wine-glass, and add a splash of Fizz Water.",
       "method_es": "Agite con hielo picado, cuele en una copa grande de vino y añada un chorrito de agua con gas.",
@@ -363,34 +705,31 @@
       "order": 15,
       "section_title": "Whiskey Cocktails",
       "category": "cocktail",
-      "name_original": "Next Year Cocktail",
-      "name_es": "Cóctel Next Year (Año Próximo)",
-      "yield": "1 copa de cóctel",
-      "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Bíter de naranja", "amount": 2, "unit": "dash", "notes": "2 gotas"}
-      ],
-      "method_original": "Stir well with cracked ice, strain, and serve with a twist of lemon peel in the glass. And Next Year is always unpredictable, of course.",
-      "method_es": "Remueva bien con hielo picado, cuele y sirva con un twist de cáscara de limón en la copa. Y el Año Próximo siempre es impredecible, por supuesto.",
-      "glassware": "copa de cóctel",
-      "garnish": "twist de cáscara de limón",
-      "page_reference": null,
-      "raw_text": "NEXT YEAR COCKTAIL\n  1 jigger CALVERT Whiskey\n  ½ jigger French (dry) Vermouth\n  ½ jigger Italian (sweet) Vermouth\n  2 drops Orange Bitters\nStir well with cracked ice, strain, and serve with a twist of lemon peel in the glass. And Next Year is always unpredictable, of course."
-    },
-    {
-      "id": "1935-cocktails-recommended-by-calvert-016",
-      "order": 16,
-      "section_title": "Whiskey Cocktails",
-      "category": "cocktail",
       "name_original": "Whisper Cocktail",
       "name_es": "Cóctel Whisper (Susurro)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "French (dry) Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Stir well with cracked ice, and strain into glass. This reminds your Connoisseur of certain alarm clocks — the 'first it Whispers, then it Shouts' kind, you know.",
       "method_es": "Remueva bien con hielo picado y cuele en la copa. Esto recuerda a su Conocedor de ciertos despertadores — del tipo 'primero Susurra, luego Grita', ya sabe.",
@@ -400,17 +739,35 @@
       "raw_text": "WHISPER COCKTAIL\n  ½ jigger CALVERT Whiskey\n  ½ jigger French (dry) Vermouth\n  ½ jigger Italian (sweet) Vermouth\nStir well with cracked ice, and strain into glass. This reminds your Connoisseur of certain alarm clocks — the 'first it Whispers, then it Shouts' kind, you know."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-017",
-      "order": 17,
+      "id": "1935-cocktails-recommended-by-calvert-016",
+      "order": 16,
       "section_title": "Whiskey Cocktails",
       "category": "cocktail",
       "name_original": "Palmer Cocktail",
       "name_es": "Cóctel Palmer",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Bitters", "item_es": "Bíter (amargo)", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter (amargo)",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Stir with cracked ice, and strain into glass. This keeps on the tart, even though not alkaline, side.",
       "method_es": "Remueva con hielo picado y cuele en la copa. Se mantiene del lado ácido, aunque no alcalino.",
@@ -420,17 +777,35 @@
       "raw_text": "PALMER COCKTAIL\n  1 jigger CALVERT Whiskey\n  1 dash Bitters\n  1 dash Lemon Juice\nStir with cracked ice, and strain into glass. This keeps on the tart, even though not alkaline, side."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-018",
-      "order": 18,
+      "id": "1935-cocktails-recommended-by-calvert-017",
+      "order": 17,
       "section_title": "Whiskey Cocktails",
       "category": "sour",
       "name_original": "Whiskey Sour",
       "name_es": "Whiskey Sour",
       "yield": "1 vaso pequeño",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "Shake with cracked ice, and strain into small glass garnished with fruit and cherry.",
       "method_es": "Agite con hielo picado y cuele en un vaso pequeño decorado con fruta y cereza.",
@@ -440,18 +815,42 @@
       "raw_text": "WHISKEY SOUR\n  1 glass CALVERT Whiskey\n  Juice of ½ Lemon\n  ½ teaspoonful Powdered Sugar\nShake with cracked ice, and strain into small glass garnished with fruit and cherry."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-019",
-      "order": 19,
+      "id": "1935-cocktails-recommended-by-calvert-018",
+      "order": 18,
       "section_title": "Whiskey Cocktails",
       "category": "other",
       "name_original": "Whiskey Highball",
       "name_es": "Whiskey Highball",
       "yield": "1 vaso highball",
       "ingredients": [
-        {"item_original": "Ice cube", "item_es": "Cubo de hielo", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Fizz Water or Ginger Ale", "item_es": "Agua con gas o ginger ale", "amount": null, "unit": null, "notes": "para completar"},
-        {"item_original": "Lemon Peel", "item_es": "Cáscara de limón", "amount": null, "unit": "piece", "notes": "twist, opcional"}
+        {
+          "item_original": "Ice cube",
+          "item_es": "Cubo de hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Fizz Water or Ginger Ale",
+          "item_es": "Agua con gas o ginger ale",
+          "amount": null,
+          "unit": null,
+          "notes": "para completar"
+        },
+        {
+          "item_original": "Lemon Peel",
+          "item_es": "Cáscara de limón",
+          "amount": null,
+          "unit": "piece",
+          "notes": "twist, opcional"
+        }
       ],
       "method_original": "Take a cube of Ice, a glass of CALVERT Whiskey, some Fizz Water or Ginger Ale, and — but you know what to do. Try including a twist of Lemon Peel next time. Gives the drink a bit of tang, you know.",
       "method_es": "Tome un cubo de hielo, un vaso de whisky CALVERT, algo de agua con gas o ginger ale, y — pero usted ya sabe qué hacer. Pruebe a incluir un twist de cáscara de limón la próxima vez. Le da un toquecito al trago.",
@@ -461,18 +860,42 @@
       "raw_text": "WHISKEY HIGHBALL\nTake a cube of Ice, a glass of CALVERT Whiskey, some Fizz Water or Ginger Ale, and — but you know what to do. Try including a twist of Lemon Peel next time. Gives the drink a bit of tang, you know."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-020",
-      "order": 20,
+      "id": "1935-cocktails-recommended-by-calvert-019",
+      "order": 19,
       "section_title": "Whiskey Cocktails",
       "category": "julep",
       "name_original": "Mint Julep",
       "name_es": "Mint Julep (Julep de menta)",
       "yield": "1 vaso alto",
       "ingredients": [
-        {"item_original": "Fresh Mint sprigs", "item_es": "Ramitas de menta fresca", "amount": "3-4", "unit": "piece", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "tablespoon", "notes": null},
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 2, "unit": "wine-glass", "notes": "2 'glasses' (~4 oz)"},
-        {"item_original": "Water", "item_es": "Agua", "amount": null, "unit": null, "notes": "una pequeña cantidad para machacar"}
+        {
+          "item_original": "Fresh Mint sprigs",
+          "item_es": "Ramitas de menta fresca",
+          "amount": "3-4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 2,
+          "unit": "wine-glass",
+          "notes": "2 'glasses' (~4 oz)"
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": null,
+          "unit": null,
+          "notes": "una pequeña cantidad para machacar"
+        }
       ],
       "method_original": "Lightly but thoroughly crush Mint Leaves and Sugar in a little Water, and add the Whiskey; strain into a tall glass nearly full of finely cracked ice; stir until glass is frosted, then garnish with sprigs of Mint dusted with Powdered Sugar. A capital potion, suh!",
       "method_es": "Machaque ligera pero a fondo las hojas de menta y el azúcar en un poco de agua, y añada el whisky; cuele en un vaso alto casi lleno de hielo finamente picado; remueva hasta que el vaso esté escarchado, luego decore con ramitas de menta espolvoreadas con azúcar en polvo. ¡Una pócima magnífica, señor!",
@@ -482,19 +905,49 @@
       "raw_text": "MINT JULEP\n  3 or 4 sprigs Fresh Mint\n  1 tablespoonful Powdered Sugar\n  2 glasses CALVERT Whiskey\nLightly but thoroughly crush Mint Leaves and Sugar in a little Water, and add the Whiskey; strain into a tall glass nearly full of finely cracked ice; stir until glass is frosted, then garnish with sprigs of Mint dusted with Powdered Sugar. A capital potion, suh!"
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-021",
-      "order": 21,
+      "id": "1935-cocktails-recommended-by-calvert-020",
+      "order": 20,
       "section_title": "Whiskey Cocktails",
       "category": "fizz",
       "name_original": "Whiskey Fizz",
       "name_es": "Whiskey Fizz",
       "yield": "1 copa grande de vino",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "White of fresh Egg", "item_es": "Clara de huevo fresco", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón"},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "para llenar"}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "White of fresh Egg",
+          "item_es": "Clara de huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón"
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        }
       ],
       "method_original": "Shake thoroughly with ice cubes, strain into large wine-glass, and fill with Fizz Water.",
       "method_es": "Agite enérgicamente con cubos de hielo, cuele en una copa grande de vino y llene con agua con gas.",
@@ -504,17 +957,35 @@
       "raw_text": "WHISKEY FIZZ\n  1 glass CALVERT Whiskey\n  1 teaspoonful Powdered Sugar\n  White of 1 fresh Egg\n  Juice of ½ Lemon\nShake thoroughly with ice cubes, strain into large wine-glass, and fill with Fizz Water."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-022",
-      "order": 22,
+      "id": "1935-cocktails-recommended-by-calvert-021",
+      "order": 21,
       "section_title": "Whiskey Cocktails",
       "category": "cocktail",
       "name_original": "Blinker Cocktail",
       "name_es": "Cóctel Blinker",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Grapefruit Juice", "item_es": "Zumo de pomelo", "amount": 1.5, "unit": "jigger", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 0.5, "unit": "jigger", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit Juice",
+          "item_es": "Zumo de pomelo",
+          "amount": 1.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Shake well with cracked ice, and strain into glass. Well named.",
       "method_es": "Agite bien con hielo picado y cuele en la copa. Bien llamado.",
@@ -524,17 +995,35 @@
       "raw_text": "BLINKER COCKTAIL\n  1 jigger CALVERT Whiskey\n  1½ jiggers Grapefruit Juice\n  ½ jigger Grenadine\nShake well with cracked ice, and strain into glass. Well named."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-023",
-      "order": 23,
+      "id": "1935-cocktails-recommended-by-calvert-022",
+      "order": 22,
       "section_title": "Whiskey Cocktails",
       "category": "cocktail",
       "name_original": "Crow Cocktail",
       "name_es": "Cóctel Crow (Cuervo)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "CALVERT Whiskey", "item_es": "Whisky CALVERT", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "CALVERT Whiskey",
+          "item_es": "Whisky CALVERT",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Stir with cracked ice, and strain into glass. And remember, as they say, that even a Crow can't fly on only one wing.",
       "method_es": "Remueva con hielo picado y cuele en la copa. Y recuerde, como dicen, que ni siquiera un Cuervo puede volar con un ala sola.",
@@ -544,18 +1033,42 @@
       "raw_text": "CROW COCKTAIL\n  1 jigger CALVERT Whiskey\n  ½ jigger Lemon Juice\n  1 dash Grenadine\nStir with cracked ice, and strain into glass. And remember, as they say, that even a Crow can't fly on only one wing."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-024",
-      "order": 24,
+      "id": "1935-cocktails-recommended-by-calvert-023",
+      "order": 23,
       "section_title": "Gin Cocktails",
       "category": "other",
       "name_original": "Gin Rickey",
       "name_es": "Gin Rickey",
       "yield": "1 vaso highball pequeño",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lime", "item_es": "Lima", "amount": 1, "unit": "piece", "notes": "zumo y cáscara"},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "para llenar"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": null, "unit": null, "notes": "opcional, al gusto"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lime",
+          "item_es": "Lima",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "zumo y cáscara"
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": null,
+          "unit": null,
+          "notes": "opcional, al gusto"
+        }
       ],
       "method_original": "To a cube of ice in a small highball glass, add 1 glass of Gin and the juice and rind of 1 Lime. Fill with Fizz Water. (If you've sweetish tastes, better add a bit of Powdered Sugar.)",
       "method_es": "A un cubo de hielo en un vaso highball pequeño, añada 1 vaso de ginebra y el zumo y cáscara de 1 lima. Llene con agua con gas. (Si tiene gustos algo dulces, mejor añada un poco de azúcar en polvo.)",
@@ -565,18 +1078,42 @@
       "raw_text": "GIN RICKEY\nTo a cube of ice in a small highball glass, add 1 glass of Gin and the juice and rind of 1 Lime. Fill with Fizz Water. (If you've sweetish tastes, better add a bit of Powdered Sugar.)"
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-025",
-      "order": 25,
+      "id": "1935-cocktails-recommended-by-calvert-024",
+      "order": 24,
       "section_title": "Gin Cocktails",
       "category": "other",
       "name_original": "Tom Collins",
       "name_es": "Tom Collins",
       "yield": "1 vaso alto (Tom Collins)",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de 1 limón"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "tablespoon", "notes": null},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "para llenar"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de 1 limón"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        }
       ],
       "method_original": "Shake with cracked ice, strain into tall glass, add a cube of ice, and fill with Fizz Water. Grand to linger over.",
       "method_es": "Agite con hielo picado, cuele en un vaso alto, añada un cubo de hielo y llene con agua con gas. Grandioso para saborearlo despacio.",
@@ -586,17 +1123,35 @@
       "raw_text": "TOM COLLINS\n  1 glass Gin\n  Juice of 1 Lemon\n  1 tablespoonful Powdered Sugar\nShake with cracked ice, strain into tall glass, add a cube of ice, and fill with Fizz Water. Grand to linger over."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-026",
-      "order": 26,
+      "id": "1935-cocktails-recommended-by-calvert-025",
+      "order": 25,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Orange Blossom Cocktail",
       "name_es": "Cóctel Orange Blossom (Flor de Naranjo)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Zumo de naranja", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Zumo de naranja",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        }
       ],
       "method_original": "Stir with cracked ice, and strain into glass.",
       "method_es": "Remueva con hielo picado y cuele en la copa.",
@@ -606,18 +1161,42 @@
       "raw_text": "ORANGE BLOSSOM COCKTAIL\n  ½ jigger Gin\n  ½ jigger Orange Juice\n  ½ jigger Italian (sweet) Vermouth\nStir with cracked ice, and strain into glass."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-027",
-      "order": 27,
+      "id": "1935-cocktails-recommended-by-calvert-026",
+      "order": 26,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Perfect Cocktail",
       "name_es": "Cóctel Perfect (Perfecto)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Peel", "item_es": "Cáscara de naranja", "amount": null, "unit": "piece", "notes": "twist al remover"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "French (dry) Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Peel",
+          "item_es": "Cáscara de naranja",
+          "amount": null,
+          "unit": "piece",
+          "notes": "twist al remover"
+        }
       ],
       "method_original": "Stir thoroughly with cracked ice and a twist of Orange Peel, and strain into glass. Whoever named this, says the Connoisseur, knew his jolly jiggers.",
       "method_es": "Remueva a fondo con hielo picado y un twist de cáscara de naranja, y cuele en la copa. Quien lo bautizó, dice el Conocedor, conocía bien sus alegres jiggers.",
@@ -627,17 +1206,35 @@
       "raw_text": "PERFECT COCKTAIL\n  1 jigger Gin\n  ½ jigger Italian (sweet) Vermouth\n  ½ jigger French (dry) Vermouth\nStir thoroughly with cracked ice and a twist of Orange Peel, and strain into glass. Whoever named this, says the Connoisseur, knew his jolly jiggers."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-028",
-      "order": 28,
+      "id": "1935-cocktails-recommended-by-calvert-027",
+      "order": 27,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Dry Martini Cocktail",
       "name_es": "Cóctel Dry Martini (Martini Seco)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca (Dry Gin)", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Bitters", "item_es": "Bíter de naranja", "amount": 1, "unit": "dash", "notes": "1 gota"}
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca (Dry Gin)",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "French (dry) Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Bitters",
+          "item_es": "Bíter de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": "1 gota"
+        }
       ],
       "method_original": "Stir well with cracked ice, strain, and serve with an Olive or a twist of Lemon Peel in the glass. Note: For a Sweet Martini, substitute Italian (sweet) Vermouth for the French, and a Cherry for the Olive or Lemon Peel.",
       "method_es": "Remueva bien con hielo picado, cuele y sirva con una aceituna o un twist de cáscara de limón en la copa. Nota: para un Martini Dulce, sustituya el vermut francés por italiano (dulce), y la aceituna o la cáscara de limón por una cereza.",
@@ -647,18 +1244,42 @@
       "raw_text": "DRY MARTINI COCKTAIL\n  1 jigger Dry Gin\n  ½ jigger French (dry) Vermouth\n  1 drop Orange Bitters\nStir well with cracked ice, strain, and serve with an Olive or a twist of Lemon Peel in the glass. Note: For a Sweet Martini, substitute Italian (sweet) Vermouth for the French, and a Cherry for the Olive or Lemon Peel."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-029",
-      "order": 29,
+      "id": "1935-cocktails-recommended-by-calvert-028",
+      "order": 28,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Clover Club Cocktail",
       "name_es": "Cóctel Clover Club",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón"},
-        {"item_original": "White of fresh Egg", "item_es": "Clara de huevo fresco", "amount": 0.5, "unit": "piece", "notes": "media clara"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón"
+        },
+        {
+          "item_original": "White of fresh Egg",
+          "item_es": "Clara de huevo fresco",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "media clara"
+        }
       ],
       "method_original": "Shake thoroughly with ice cubes, strain, and serve with a small sprig of fresh Mint.",
       "method_es": "Agite enérgicamente con cubos de hielo, cuele y sirva con una pequeña ramita de menta fresca.",
@@ -668,18 +1289,42 @@
       "raw_text": "CLOVER CLUB COCKTAIL\n  1 jigger Gin\n  ½ jigger Grenadine\n  Juice of ½ Lemon\n  Half the white of a fresh Egg\nShake thoroughly with ice cubes, strain, and serve with a small sprig of fresh Mint."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-030",
-      "order": 30,
+      "id": "1935-cocktails-recommended-by-calvert-029",
+      "order": 29,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Bronx Cocktail",
       "name_es": "Cóctel Bronx",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca (Dry Gin)", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Zumo de naranja", "amount": null, "unit": null, "notes": "zumo de media naranja"}
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca (Dry Gin)",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "French (dry) Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Zumo de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de media naranja"
+        }
       ],
       "method_original": "Stir with cracked ice, and strain into glass.",
       "method_es": "Remueva con hielo picado y cuele en la copa.",
@@ -689,17 +1334,35 @@
       "raw_text": "BRONX COCKTAIL\n  1 jigger Dry Gin\n  ½ jigger French (dry) Vermouth\n  ½ jigger Italian (sweet) Vermouth\n  Juice of ½ Orange\nStir with cracked ice, and strain into glass."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-031",
-      "order": 31,
+      "id": "1935-cocktails-recommended-by-calvert-030",
+      "order": 30,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Pink Lady Cocktail",
       "name_es": "Cóctel Pink Lady (Dama Rosa)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "tablespoon", "notes": null},
-        {"item_original": "White of fresh Egg", "item_es": "Clara de huevo fresco", "amount": 1, "unit": "piece", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "White of fresh Egg",
+          "item_es": "Clara de huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": "Shake thoroughly with ice cubes, and strain into glass. And don't say the Connoisseur didn't warn you — it's dynamite.",
       "method_es": "Agite enérgicamente con cubos de hielo y cuele en la copa. Y no diga que el Conocedor no le advirtió — es dinamita.",
@@ -709,19 +1372,49 @@
       "raw_text": "PINK LADY COCKTAIL\n  1 glass Gin\n  1 tablespoonful Grenadine\n  White of 1 fresh Egg\nShake thoroughly with ice cubes, and strain into glass. And don't say the Connoisseur didn't warn you — it's dynamite."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-032",
-      "order": 32,
+      "id": "1935-cocktails-recommended-by-calvert-031",
+      "order": 31,
       "section_title": "Gin Cocktails",
       "category": "fizz",
       "name_original": "Gin Fizz",
       "name_es": "Gin Fizz",
       "yield": "1 vaso highball pequeño",
       "ingredients": [
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca (Dry Gin)", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lime Juice", "item_es": "Zumo de lima", "amount": null, "unit": null, "notes": "zumo de media lima"},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "tablespoon", "notes": null},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "para llenar"}
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca (Dry Gin)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lime Juice",
+          "item_es": "Zumo de lima",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de media lima"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        }
       ],
       "method_original": "Shake with cracked ice, strain into small highball glass, and fill with Fizz Water.",
       "method_es": "Agite con hielo picado, cuele en un vaso highball pequeño y llene con agua con gas.",
@@ -731,19 +1424,49 @@
       "raw_text": "GIN FIZZ\n  1 glass Dry Gin\n  Juice of ½ Lime\n  Juice of ½ Lemon\n  1 tablespoonful Powdered Sugar\nShake with cracked ice, strain into small highball glass, and fill with Fizz Water."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-033",
-      "order": 33,
+      "id": "1935-cocktails-recommended-by-calvert-032",
+      "order": 32,
       "section_title": "Gin Cocktails",
       "category": "other",
       "name_original": "Gin Daisy",
       "name_es": "Gin Daisy",
       "yield": "1 vaso Tom Collins (alto)",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lime Juice (or Lemon)", "item_es": "Zumo de lima (o de limón)", "amount": null, "unit": null, "notes": "zumo de 1 lima o ½ limón"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "un chorrito"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lime Juice (or Lemon)",
+          "item_es": "Zumo de lima (o de limón)",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de 1 lima o ½ limón"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "un chorrito"
+        }
       ],
       "method_original": "Put the makings in a tall Tom Collins glass and fill with finely cracked ice; add a splash of Fizz Water, and stir until the glass is frosted; garnish with Fruit and sprigs of fresh Mint, and serve with a straw.",
       "method_es": "Ponga los ingredientes en un vaso alto Tom Collins y llene con hielo finamente picado; añada un chorrito de agua con gas y remueva hasta que el vaso esté escarchado; decore con fruta y ramitas de menta fresca, y sirva con una pajita.",
@@ -753,18 +1476,42 @@
       "raw_text": "GIN DAISY\n  1 glass Gin\n  Juice of 1 Lime or ½ Lemon\n  1 teaspoonful Powdered Sugar\n  1 teaspoonful Grenadine\nPut the makings in a tall Tom Collins glass and fill with finely cracked ice; add a splash of Fizz Water, and stir until the glass is frosted; garnish with Fruit and sprigs of fresh Mint, and serve with a straw."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-034",
-      "order": 34,
+      "id": "1935-cocktails-recommended-by-calvert-033",
+      "order": 33,
       "section_title": "Gin Cocktails",
       "category": "other",
       "name_original": "Hot Gin",
       "name_es": "Hot Gin (Ginebra caliente)",
       "yield": "1 vaso highball pequeño",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de 1 limón"},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 2, "unit": "piece", "notes": "2 terrones"},
-        {"item_original": "Hot Water", "item_es": "Agua caliente", "amount": null, "unit": null, "notes": "para llenar"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de 1 limón"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "2 terrones"
+        },
+        {
+          "item_original": "Hot Water",
+          "item_es": "Agua caliente",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        }
       ],
       "method_original": "Put these in a small highball glass, fill with hot water, stir, and serve.",
       "method_es": "Ponga estos ingredientes en un vaso highball pequeño, llene con agua caliente, remueva y sirva.",
@@ -774,17 +1521,35 @@
       "raw_text": "HOT GIN\n  1 glass Gin\n  Juice of 1 Lemon\n  2 lumps of Sugar\nPut these in a small highball glass, fill with hot water, stir, and serve."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-035",
-      "order": 35,
+      "id": "1935-cocktails-recommended-by-calvert-034",
+      "order": 34,
       "section_title": "Gin Cocktails",
       "category": "other",
       "name_original": "Remsen Cooler",
       "name_es": "Remsen Cooler",
       "yield": "1 vaso Tom Collins (alto)",
       "ingredients": [
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca (Dry Gin)", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Lemon", "item_es": "Limón", "amount": 1, "unit": "piece", "notes": "cáscara entera en espiral"},
-        {"item_original": "Fizz Water (soda)", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "para llenar"}
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca (Dry Gin)",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Lemon",
+          "item_es": "Limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "cáscara entera en espiral"
+        },
+        {
+          "item_original": "Fizz Water (soda)",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "para llenar"
+        }
       ],
       "method_original": "Peel rind off the Lemon in one continuous spiral and put this in a tall Tom Collins glass with a cube of ice; add the Gin, and fill with Fizz Water.",
       "method_es": "Pele la cáscara del limón en una sola espiral continua y póngala en un vaso alto Tom Collins con un cubo de hielo; añada la ginebra y llene con agua con gas.",
@@ -794,18 +1559,42 @@
       "raw_text": "REMSEN COOLER\n  1 glass Dry Gin\n  1 Lemon\nPeel rind off the Lemon in one continuous spiral and put this in a tall Tom Collins glass with a cube of ice; add the Gin, and fill with Fizz Water."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-036",
-      "order": 36,
+      "id": "1935-cocktails-recommended-by-calvert-035",
+      "order": 35,
       "section_title": "Gin Cocktails",
       "category": "other",
       "name_original": "Gin Fix",
       "name_es": "Gin Fix",
       "yield": "1 vaso highball pequeño",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Water", "item_es": "Agua", "amount": 1, "unit": "wine-glass", "notes": "mismo tamaño que el vaso de ginebra"},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": null, "unit": null, "notes": "zumo de medio limón"},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "tablespoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "mismo tamaño que el vaso de ginebra"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de medio limón"
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": null
+        }
       ],
       "method_original": "Fill a small highball glass two-thirds full of finely cracked ice, pour in the makings you've mixed, and decorate the top with assorted fruits. A pretty Fix indeed!",
       "method_es": "Llene un vaso highball pequeño dos tercios con hielo finamente picado, vierta los ingredientes ya mezclados y decore la parte superior con frutas variadas. ¡Un bonito Fix!",
@@ -815,18 +1604,42 @@
       "raw_text": "GIN FIX\n  1 glass Gin\n  1 glass (same size) Water\n  Juice of ½ Lemon\n  1 tablespoonful Powdered Sugar\nFill a small highball glass two-thirds full of finely cracked ice, pour in the makings you've mixed, and decorate the top with assorted fruits. A pretty Fix indeed!"
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-037",
-      "order": 37,
+      "id": "1935-cocktails-recommended-by-calvert-036",
+      "order": 36,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Bright Lights Cocktail",
       "name_es": "Cóctel Bright Lights (Luces Brillantes)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Italian (sweet) Vermouth", "item_es": "Vermut italiano (dulce)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "French (dry) Vermouth", "item_es": "Vermut francés (seco)", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Zumo de naranja", "amount": null, "unit": null, "notes": "zumo de ¼ de naranja"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Italian (sweet) Vermouth",
+          "item_es": "Vermut italiano (dulce)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "French (dry) Vermouth",
+          "item_es": "Vermut francés (seco)",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Zumo de naranja",
+          "amount": null,
+          "unit": null,
+          "notes": "zumo de ¼ de naranja"
+        }
       ],
       "method_original": "Stir with cracked ice and strain into glass. Add a Cherry and a slender slice of Orange. These Bright Lights shouldn't dazzle you.",
       "method_es": "Remueva con hielo picado y cuele en la copa. Añada una cereza y una rodaja fina de naranja. Estas Luces Brillantes no deberían deslumbrarle.",
@@ -836,18 +1649,42 @@
       "raw_text": "BRIGHT LIGHTS COCKTAIL\n  1 jigger Gin\n  ½ jigger Italian (sweet) Vermouth\n  ½ jigger French (dry) Vermouth\n  Juice of ¼ Orange\nStir with cracked ice and strain into glass. Add a Cherry and a slender slice of Orange. These Bright Lights shouldn't dazzle you."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-038",
-      "order": 38,
+      "id": "1935-cocktails-recommended-by-calvert-037",
+      "order": 37,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Trinidad Cocktail",
       "name_es": "Cóctel Trinidad",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "jigger", "notes": null},
-        {"item_original": "Lime Juice", "item_es": "Zumo de lima", "amount": 0.5, "unit": "jigger", "notes": null},
-        {"item_original": "Bitters", "item_es": "Bíter (amargo)", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Lime Juice",
+          "item_es": "Zumo de lima",
+          "amount": 0.5,
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Bíter (amargo)",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "Shake with cracked ice and strain into glass. And watch out for tropical hurricanes.",
       "method_es": "Agite con hielo picado y cuele en la copa. Y cuidado con los huracanes tropicales.",
@@ -857,20 +1694,56 @@
       "raw_text": "TRINIDAD COCKTAIL\n  1 jigger Gin\n  ½ jigger Lime Juice\n  2 dashes Bitters\n  ½ teaspoonful Powdered Sugar\nShake with cracked ice and strain into glass. And watch out for tropical hurricanes."
     },
     {
-      "id": "1935-cocktails-recommended-by-calvert-039",
-      "order": 39,
+      "id": "1935-cocktails-recommended-by-calvert-038",
+      "order": 38,
       "section_title": "Gin Cocktails",
       "category": "cocktail",
       "name_original": "Mr. Manhattan Cocktail",
       "name_es": "Cóctel Mr. Manhattan (Sr. Manhattan)",
       "yield": "1 copa de cóctel",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "wine-glass", "notes": "1 'glass' (~2 oz)"},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 1, "unit": "piece", "notes": "1 terrón"},
-        {"item_original": "Fresh Mint leaves", "item_es": "Hojas de menta fresca", "amount": 5, "unit": "piece", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Zumo de limón", "amount": 0.5, "unit": "teaspoon", "notes": "interpretado: probable error de OCR de 'Fresh Mint' por 'Lemon Juice'"},
-        {"item_original": "Orange Juice", "item_es": "Zumo de naranja", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Water", "item_es": "Agua", "amount": null, "unit": null, "notes": "una pequeña cantidad para machacar"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "1 'glass' (~2 oz)"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1 terrón"
+        },
+        {
+          "item_original": "Fresh Mint leaves",
+          "item_es": "Hojas de menta fresca",
+          "amount": 5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Zumo de limón",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": "interpretado: probable error de OCR de 'Fresh Mint' por 'Lemon Juice'"
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Zumo de naranja",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Water",
+          "item_es": "Agua",
+          "amount": null,
+          "unit": null,
+          "notes": "una pequeña cantidad para machacar"
+        }
       ],
       "method_original": "Crush Mint and Sugar in a little Water, add the rest of the makings, shake with cracked ice, and strain into glass. A jovial gent is Mr. Manhattan, though no relation to the whiskeyish Manhattan Cocktail.",
       "method_es": "Machaque la menta y el azúcar en un poco de agua, añada el resto de los ingredientes, agite con hielo picado y cuele en la copa. Un caballero jovial es el Sr. Manhattan, aunque no tiene relación con el más whiskyzado Cóctel Manhattan.",

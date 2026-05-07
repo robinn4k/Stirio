@@ -120,9 +120,27 @@
       "name_es": "Dry Martini",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2.5, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "This is often called the most sophisticated cocktail in the world.",
       "method_es": "A menudo llamado el cóctel más sofisticado del mundo.",
@@ -140,9 +158,27 @@
       "name_es": "Martini Dulce",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "Serve with a Cherry.",
       "method_es": "Servir con una cereza.",
@@ -160,9 +196,27 @@
       "name_es": "Bronx",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2.5, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 0.5, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -180,11 +234,41 @@
       "name_es": "Silver Bronx",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "White of 1 Egg", "item_es": "Clara de 1 huevo", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Juice of 1/2 Orange", "item_es": "Jugo de 1/2 naranja", "amount": 0.5, "unit": "piece", "notes": "media naranja"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "White of 1 Egg",
+          "item_es": "Clara de 1 huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1/2 Orange",
+          "item_es": "Jugo de 1/2 naranja",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "media naranja"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -202,11 +286,41 @@
       "name_es": "The Clover Club",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "White of 1/2 Egg", "item_es": "Clara de 1/2 huevo", "amount": 0.5, "unit": "piece", "notes": null},
-        {"item_original": "Juice of small lime (or 1/2 lemon)", "item_es": "Jugo de una lima pequeña (o 1/2 limón)", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "White of 1/2 Egg",
+          "item_es": "Clara de 1/2 huevo",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of small lime (or 1/2 lemon)",
+          "item_es": "Jugo de una lima pequeña (o 1/2 limón)",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -224,10 +338,34 @@
       "name_es": "Damn the Weather",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 3, "unit": "dash", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -245,10 +383,34 @@
       "name_es": "Cornell Special",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sparkling Water", "item_es": "Agua mineral con gas", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sparkling Water",
+          "item_es": "Agua mineral con gas",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -266,11 +428,41 @@
       "name_es": "The W. D. Wilson",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Angostura", "item_es": "Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura",
+          "item_es": "Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -288,9 +480,27 @@
       "name_es": "Cóctel Hawaiano",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -308,12 +518,48 @@
       "name_es": "The Honolulu",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Pineapple Juice", "item_es": "Jugo de piña", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": null, "unit": null, "notes": "A little"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Pineapple Juice",
+          "item_es": "Jugo de piña",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": null,
+          "unit": null,
+          "notes": "A little"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -331,9 +577,27 @@
       "name_es": "General Lee",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -351,9 +615,27 @@
       "name_es": "Danny Boy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -371,12 +653,48 @@
       "name_es": "Bigotes de Satán",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Angostura", "item_es": "Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura",
+          "item_es": "Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Not at all devilish, really.",
       "method_es": "Para nada diabólico, en realidad.",
@@ -394,10 +712,34 @@
       "name_es": "La Rosa Rosada",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Sweet Cream", "item_es": "Crema dulce", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Sweet Cream",
+          "item_es": "Crema dulce",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "This is women's work.",
       "method_es": "Esto es trabajo de mujeres.",
@@ -415,9 +757,27 @@
       "name_es": "Reina Ana",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -435,10 +795,34 @@
       "name_es": "The Rolls Royce",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -456,9 +840,27 @@
       "name_es": "The Horse Guards",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1.5, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -476,9 +878,27 @@
       "name_es": "Gin Daisy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 0.5, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -496,9 +916,27 @@
       "name_es": "The Burgomeister",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Grapefruit Juice", "item_es": "Jugo de toronja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit Juice",
+          "item_es": "Jugo de toronja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -516,10 +954,34 @@
       "name_es": "The Calvin",
       "yield": null,
       "ingredients": [
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -537,10 +999,34 @@
       "name_es": "Lambs Club",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -558,11 +1044,41 @@
       "name_es": "The Pleasure Builder",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 3, "unit": "dash", "notes": null},
-        {"item_original": "Angostura", "item_es": "Angostura", "amount": 4, "unit": "dash", "notes": null},
-        {"item_original": "Juice of 1/2 Lemon", "item_es": "Jugo de 1/2 limón", "amount": 0.5, "unit": "piece", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura",
+          "item_es": "Angostura",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1/2 Lemon",
+          "item_es": "Jugo de 1/2 limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -580,10 +1096,34 @@
       "name_es": "Palm Beach Special",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Grapefruit Juice", "item_es": "Jugo de toronja", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit Juice",
+          "item_es": "Jugo de toronja",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -601,10 +1141,34 @@
       "name_es": "El Cóctel Perfecto",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 6, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Twist of Orange peel", "item_es": "Cáscara de naranja en espiral", "amount": 1, "unit": "piece", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 6,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Twist of Orange peel",
+          "item_es": "Cáscara de naranja en espiral",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -622,10 +1186,34 @@
       "name_es": "The Racquet Club",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -643,9 +1231,27 @@
       "name_es": "The Melon",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 3, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -663,10 +1269,34 @@
       "name_es": "The Opal",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": null, "unit": null, "notes": "A little"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": "A little"
+        }
       ],
       "method_original": "Serve instead of candy.",
       "method_es": "Servir en lugar de dulces.",
@@ -684,11 +1314,41 @@
       "name_es": "The Cleveland",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Vanilla Extract", "item_es": "Extracto de vainilla", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Maple Syrup", "item_es": "Jarabe de arce", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Vanilla Extract",
+          "item_es": "Extracto de vainilla",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Maple Syrup",
+          "item_es": "Jarabe de arce",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -706,10 +1366,34 @@
       "name_es": "El Tango",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 5, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 2, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": "Squeeze orange peel on top.",
       "method_es": "Exprimir cáscara de naranja por encima.",
@@ -727,10 +1411,34 @@
       "name_es": "The Coral",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -748,10 +1456,34 @@
       "name_es": "The Bobby",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 2, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -769,9 +1501,27 @@
       "name_es": "The Summer Time",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Soda Water", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "fill up"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Soda Water",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "fill up"
+        }
       ],
       "method_original": "Shake well and strain into medium size glass; fill up with soda water.",
       "method_es": "Agitar bien y colar en un vaso de tamaño mediano; llenar con agua con gas.",
@@ -789,9 +1539,27 @@
       "name_es": "The Colonial",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Grapefruit Juice", "item_es": "Jugo de toronja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 3, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit Juice",
+          "item_es": "Jugo de toronja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -809,10 +1577,34 @@
       "name_es": "The Great Neck",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lime Juice (or Lemon Juice)", "item_es": "Jugo de lima (o jugo de limón)", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Mint Leaves", "item_es": "Hojas de menta", "amount": null, "unit": null, "notes": "Add Mint Leaves"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lime Juice (or Lemon Juice)",
+          "item_es": "Jugo de lima (o jugo de limón)",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Mint Leaves",
+          "item_es": "Hojas de menta",
+          "amount": null,
+          "unit": null,
+          "notes": "Add Mint Leaves"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -830,10 +1622,34 @@
       "name_es": "The Yaffinopp",
       "yield": "8 portions",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Pineapple Juice", "item_es": "Jugo de piña", "amount": 1.5, "unit": "part", "notes": null},
-        {"item_original": "Egg", "item_es": "Huevo", "amount": 1, "unit": "piece", "notes": "for 8 portions"},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Pineapple Juice",
+          "item_es": "Jugo de piña",
+          "amount": 1.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Egg",
+          "item_es": "Huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "for 8 portions"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -851,9 +1667,27 @@
       "name_es": "La Mordedura de Serpiente de Cascabel",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 5, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon peel", "item_es": "Cáscara de limón", "amount": 0.5, "unit": "piece", "notes": "in bottom of shaker"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": "in bottom of shaker"
+        }
       ],
       "method_original": "Will cure rattlesnake bite by killing the snake.",
       "method_es": "Curará la mordedura de serpiente de cascabel matando a la serpiente.",
@@ -871,9 +1705,27 @@
       "name_es": "El Alexander",
       "yield": null,
       "ingredients": [
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sweet Cream", "item_es": "Crema dulce", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sweet Cream",
+          "item_es": "Crema dulce",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -891,10 +1743,34 @@
       "name_es": "Lord Suffolk",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 5, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -912,10 +1788,34 @@
       "name_es": "The Imperial",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Stir and serve with olive.",
       "method_es": "Remover y servir con aceituna.",
@@ -933,10 +1833,34 @@
       "name_es": "La Oración de la Doncella",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -954,12 +1878,48 @@
       "name_es": "El Periodista",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -977,11 +1937,41 @@
       "name_es": "The Donshaw",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 5, "unit": "wine-glass", "notes": "cocktail glasses"},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "wine-glass", "notes": "cocktail glass"},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "wine-glass", "notes": "cocktail glass"},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 2, "unit": "teaspoon", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 2, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 5,
+          "unit": "wine-glass",
+          "notes": "cocktail glasses"
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "cocktail glass"
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "cocktail glass"
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "This has disrupted many dinner parties.",
       "method_es": "Esto ha arruinado muchas cenas.",
@@ -999,10 +1989,34 @@
       "name_es": "Sir Gilbert",
       "yield": "6 or more portions",
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Grapefruit Juice", "item_es": "Jugo de toronja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Essence of Mint", "item_es": "Esencia de menta", "amount": 6, "unit": "dash", "notes": "drops"},
-        {"item_original": "White of 1 egg", "item_es": "Clara de 1 huevo", "amount": 1, "unit": "piece", "notes": "to 6 or more portions"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grapefruit Juice",
+          "item_es": "Jugo de toronja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Essence of Mint",
+          "item_es": "Esencia de menta",
+          "amount": 6,
+          "unit": "dash",
+          "notes": "drops"
+        },
+        {
+          "item_original": "White of 1 egg",
+          "item_es": "Clara de 1 huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "to 6 or more portions"
+        }
       ],
       "method_original": "Sometimes called the Artillery Club.",
       "method_es": "A veces llamado el Artillery Club.",
@@ -1020,11 +2034,41 @@
       "name_es": "The Royal Mail",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Juice of 2 Limes", "item_es": "Jugo de 2 limas", "amount": 2, "unit": "piece", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 2 Limes",
+          "item_es": "Jugo de 2 limas",
+          "amount": 2,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1042,10 +2086,34 @@
       "name_es": "Fine and Dandy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1063,8 +2131,20 @@
       "name_es": "The Poppy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1082,10 +2162,34 @@
       "name_es": "The Schmeichler",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 3, "unit": "dash", "notes": null},
-        {"item_original": "Fresh Mint", "item_es": "Menta fresca", "amount": 3, "unit": "piece", "notes": "sprigs"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh Mint",
+          "item_es": "Menta fresca",
+          "amount": 3,
+          "unit": "piece",
+          "notes": "sprigs"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1103,9 +2207,27 @@
       "name_es": "White Cargo",
       "yield": null,
       "ingredients": [
-        {"item_original": "Vanilla Ice Cream", "item_es": "Helado de vainilla", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Water or White Wine", "item_es": "Agua o vino blanco", "amount": null, "unit": null, "notes": "if too thick"}
+        {
+          "item_original": "Vanilla Ice Cream",
+          "item_es": "Helado de vainilla",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Water or White Wine",
+          "item_es": "Agua o vino blanco",
+          "amount": null,
+          "unit": null,
+          "notes": "if too thick"
+        }
       ],
       "method_original": "This is pretty silly but there are those who like it. No ice is necessary; just shake until thoroughly mixed, and add water or white wine if the concoction is too thick.",
       "method_es": "Esto es bastante tonto pero hay quien le gusta. No se necesita hielo; simplemente agite hasta que esté bien mezclado, y añada agua o vino blanco si la mezcla está demasiado espesa.",
@@ -1123,10 +2245,34 @@
       "name_es": "The Cameo",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Raspberry Syrup", "item_es": "Jarabe de frambuesa", "amount": 2, "unit": "teaspoon", "notes": null},
-        {"item_original": "Lime Juice", "item_es": "Jugo de lima", "amount": 5, "unit": "dash", "notes": "Five drops"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Raspberry Syrup",
+          "item_es": "Jarabe de frambuesa",
+          "amount": 2,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Lime Juice",
+          "item_es": "Jugo de lima",
+          "amount": 5,
+          "unit": "dash",
+          "notes": "Five drops"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1144,10 +2290,34 @@
       "name_es": "El Manhattan",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": "Serve with a Cherry.",
       "method_es": "Servir con una cereza.",
@@ -1165,13 +2335,55 @@
       "name_es": "El Old-Fashioned",
       "yield": null,
       "ingredients": [
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 1, "unit": "piece", "notes": "lump"},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 4, "unit": "dash", "notes": null},
-        {"item_original": "Ice", "item_es": "Hielo", "amount": 1, "unit": "piece", "notes": "lump"},
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "wine-glass", "notes": "glass"},
-        {"item_original": "Orange", "item_es": "Naranja", "amount": 1, "unit": "slice", "notes": null},
-        {"item_original": "Cherry", "item_es": "Cereza", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Lemon peel", "item_es": "Cáscara de limón", "amount": 1, "unit": "piece", "notes": "squeezed on top"}
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "lump"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Ice",
+          "item_es": "Hielo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "lump"
+        },
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "glass"
+        },
+        {
+          "item_original": "Orange",
+          "item_es": "Naranja",
+          "amount": 1,
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "Cherry",
+          "item_es": "Cereza",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon peel",
+          "item_es": "Cáscara de limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "squeezed on top"
+        }
       ],
       "method_original": "Take a small tumbler and put into it 1 lump of sugar, 4 dashes of Angostura Bitters, 1 lump of ice, 1 glass Rye Whisky, 1 slice of orange and a cherry. Stir well until sugar is dissolved, then squeeze lemon peel on top and serve in same glass as used for mixing.",
       "method_es": "Tome un vaso pequeño y ponga en él 1 terrón de azúcar, 4 chorritos de Amargo de Angostura, 1 trozo de hielo, 1 vaso de whisky de centeno, 1 rebanada de naranja y una cereza. Remueva bien hasta que el azúcar se disuelva, luego exprima cáscara de limón por encima y sirva en el mismo vaso usado para mezclar.",
@@ -1189,10 +2401,34 @@
       "name_es": "Whisky Sour",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Juice of 1/2 Lime", "item_es": "Jugo de 1/2 lima", "amount": 0.5, "unit": "piece", "notes": null},
-        {"item_original": "Juice of 1/2 Lemon", "item_es": "Jugo de 1/2 limón", "amount": 0.5, "unit": "piece", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1/2 Lime",
+          "item_es": "Jugo de 1/2 lima",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1/2 Lemon",
+          "item_es": "Jugo de 1/2 limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1210,9 +2446,27 @@
       "name_es": "The Brainstorm",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Squeeze orange peel on top. Stir well and strain into cocktail glass.",
       "method_es": "Exprimir cáscara de naranja por encima. Remover bien y colar en copa de cóctel.",
@@ -1230,10 +2484,34 @@
       "name_es": "The Millionaire",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "White of a Fresh Egg", "item_es": "Clara de un huevo fresco", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "White of a Fresh Egg",
+          "item_es": "Clara de un huevo fresco",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1251,9 +2529,27 @@
       "name_es": "Rob Roy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1271,8 +2567,20 @@
       "name_es": "Ride 'Em Cowboy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Fresh Cream", "item_es": "Crema fresca", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh Cream",
+          "item_es": "Crema fresca",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1290,9 +2598,27 @@
       "name_es": "The Highland Fling",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Serve with olive.",
       "method_es": "Servir con aceituna.",
@@ -1310,9 +2636,27 @@
       "name_es": "Cóctel Bobby Burns",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 3, "unit": "dash", "notes": null}
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Squeeze lemon peel on top.",
       "method_es": "Exprimir cáscara de limón por encima.",
@@ -1330,11 +2674,41 @@
       "name_es": "The Quogue",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1352,9 +2726,27 @@
       "name_es": "Beautiful Places",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Bitters", "item_es": "Amargo", "amount": 4, "unit": "dash", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Amargo",
+          "amount": 4,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Squeeze lemon peel on top.",
       "method_es": "Exprimir cáscara de limón por encima.",
@@ -1372,9 +2764,27 @@
       "name_es": "The Rock and Rye",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "wine-glass", "notes": "glass"},
-        {"item_original": "Rock Candy", "item_es": "Caramelo de roca", "amount": 1, "unit": "piece", "notes": "dissolved in it"},
-        {"item_original": "Juice of 1 Lemon", "item_es": "Jugo de 1 limón", "amount": 1, "unit": "piece", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "glass"
+        },
+        {
+          "item_original": "Rock Candy",
+          "item_es": "Caramelo de roca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "dissolved in it"
+        },
+        {
+          "item_original": "Juice of 1 Lemon",
+          "item_es": "Jugo de 1 limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1392,9 +2802,27 @@
       "name_es": "Ol' Doc Perkins",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Ginger Ale", "item_es": "Ginger ale", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Ginger Ale",
+          "item_es": "Ginger ale",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1412,11 +2840,41 @@
       "name_es": "Manhattan Mejorado",
       "yield": null,
       "ingredients": [
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Bitters", "item_es": "Amargo", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Cracked ice", "item_es": "Hielo picado", "amount": 0.5, "unit": "wine-glass", "notes": "1/2 glass"}
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bitters",
+          "item_es": "Amargo",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Cracked ice",
+          "item_es": "Hielo picado",
+          "amount": 0.5,
+          "unit": "wine-glass",
+          "notes": "1/2 glass"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1434,9 +2892,27 @@
       "name_es": "Cóctel Daiquiri",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 6, "unit": "part", "notes": null},
-        {"item_original": "Juice of a Fresh Lime", "item_es": "Jugo de una lima fresca", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 6,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of a Fresh Lime",
+          "item_es": "Jugo de una lima fresca",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1454,9 +2930,27 @@
       "name_es": "The Rum-Hound",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1474,10 +2968,34 @@
       "name_es": "The Bacardi Blossom",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Juice of 1 Orange", "item_es": "Jugo de 1 naranja", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Juice of 1 Lemon", "item_es": "Jugo de 1 limón", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Nutmeg", "item_es": "Nuez moscada", "amount": null, "unit": null, "notes": "sprinkle"}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Orange",
+          "item_es": "Jugo de 1 naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Lemon",
+          "item_es": "Jugo de 1 limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "sprinkle"
+        }
       ],
       "method_original": "Sprinkle with Nutmeg.",
       "method_es": "Espolvorear con nuez moscada.",
@@ -1495,10 +3013,34 @@
       "name_es": "Queen Elizabeth",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 1.5, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Syrup from a can of pineapple", "item_es": "Almíbar de lata de piña", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 1.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Syrup from a can of pineapple",
+          "item_es": "Almíbar de lata de piña",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1516,9 +3058,27 @@
       "name_es": "Cherry Ripe",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maraschino", "item_es": "Marrasquino", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maraschino",
+          "item_es": "Marrasquino",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1536,9 +3096,27 @@
       "name_es": "The Murphy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": null, "unit": null, "notes": "Sugar to taste"}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": null,
+          "unit": null,
+          "notes": "Sugar to taste"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1556,9 +3134,27 @@
       "name_es": "Cuba Hermosa",
       "yield": null,
       "ingredients": [
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1576,9 +3172,27 @@
       "name_es": "El Cóctel de Brandy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "wine-glass", "notes": "glass"},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "glass"
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1596,9 +3210,27 @@
       "name_es": "El Sidecar",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1616,10 +3248,34 @@
       "name_es": "Brandy Sour",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "wine-glass", "notes": "glass"},
-        {"item_original": "Sugar", "item_es": "Azúcar", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Juice of 1 Lemon", "item_es": "Jugo de 1 limón", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Soda water", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "a little, on top"}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "wine-glass",
+          "notes": "glass"
+        },
+        {
+          "item_original": "Sugar",
+          "item_es": "Azúcar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Lemon",
+          "item_es": "Jugo de 1 limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Soda water",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "a little, on top"
+        }
       ],
       "method_original": "Shake well, strain into wineglass, pour a little soda water on top, decorate with fruit.",
       "method_es": "Agitar bien, colar en copa de vino, verter un poco de agua con gas por encima, decorar con fruta.",
@@ -1637,10 +3293,34 @@
       "name_es": "Brandy Daisy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Syrup of Grenadine", "item_es": "Jarabe de granadina", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Juice of 1 Lemon", "item_es": "Jugo de 1 limón", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Soda water", "item_es": "Agua con gas", "amount": null, "unit": null, "notes": "a squirt"}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Syrup of Grenadine",
+          "item_es": "Jarabe de granadina",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Lemon",
+          "item_es": "Jugo de 1 limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Soda water",
+          "item_es": "Agua con gas",
+          "amount": null,
+          "unit": null,
+          "notes": "a squirt"
+        }
       ],
       "method_original": "Shake well, strain, pour into double-sized cocktail glass, add cherry and other fruit in season and a squirt of soda water.",
       "method_es": "Agitar bien, colar, verter en una copa de cóctel doble, añadir cereza y otra fruta de temporada y un chorrito de agua con gas.",
@@ -1658,9 +3338,27 @@
       "name_es": "The Savoy",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": "Very fussy and very sweet. Use Liqueur glass and pour ingredients carefully, so that they do not mix.",
       "method_es": "Muy delicado y muy dulce. Usar copa de licor y verter los ingredientes cuidadosamente, para que no se mezclen.",
@@ -1678,10 +3376,34 @@
       "name_es": "The Harvard Club",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Gomme Syrup", "item_es": "Jarabe de goma", "amount": 1, "unit": "dash", "notes": null},
-        {"item_original": "Angostura", "item_es": "Angostura", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Gomme Syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura",
+          "item_es": "Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1699,9 +3421,27 @@
       "name_es": "Aunt Johanna",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1719,8 +3459,20 @@
       "name_es": "Joyce Undefined",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1738,9 +3490,27 @@
       "name_es": "The Cavanagh",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1754,32 +3524,24 @@
       "order": 80,
       "section_title": "Cocktails Made with Brandy",
       "category": "cocktail",
-      "name_original": "After Supper",
-      "name_es": "After Supper",
-      "yield": null,
-      "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 4, "unit": "dash", "notes": null}
-      ],
-      "method_original": null,
-      "method_es": null,
-      "glassware": null,
-      "garnish": null,
-      "page_reference": null,
-      "raw_text": "AFTER SUPPER 1 part Brandy, 1 part Cointreau, 4 dashes Lemon Juice"
-    },
-    {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-081",
-      "order": 81,
-      "section_title": "Cocktails Made with Brandy",
-      "category": "cocktail",
       "name_original": "The Captain",
       "name_es": "The Captain",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1789,17 +3551,35 @@
       "raw_text": "THE CAPTAIN 1 part Brandy, 1 part Regular Vermouth"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-082",
-      "order": 82,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-081",
+      "order": 81,
       "section_title": "Cocktails Made with Brandy",
       "category": "cocktail",
       "name_original": "Jersey Cocktail",
       "name_es": "Jersey Cocktail",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": "Twist lemon peel on top.",
       "method_es": "Retorcer cáscara de limón por encima.",
@@ -1809,17 +3589,35 @@
       "raw_text": "JERSEY COCKTAIL 1 part Brandy, 1 part Regular Vermouth, 1 dash Angostura Bitters. Twist lemon peel on top"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-083",
-      "order": 83,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-082",
+      "order": 82,
       "section_title": "Cocktails Made with Brandy",
       "category": "cocktail",
       "name_original": "Spanish Town",
       "name_es": "Spanish Town",
       "yield": "6 personas",
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 5, "unit": "wine-glass", "notes": "glasses"},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "tablespoon", "notes": "Dessertspoonful"},
-        {"item_original": "Nutmeg", "item_es": "Nuez moscada", "amount": null, "unit": null, "notes": "grated over each glass"}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 5,
+          "unit": "wine-glass",
+          "notes": "glasses"
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "tablespoon",
+          "notes": "Dessertspoonful"
+        },
+        {
+          "item_original": "Nutmeg",
+          "item_es": "Nuez moscada",
+          "amount": null,
+          "unit": null,
+          "notes": "grated over each glass"
+        }
       ],
       "method_original": "For 6 People. Pour into shaker, add a large quantity of Ice, and shake thoroughly. Grate a little nutmeg over each glass and serve.",
       "method_es": "Para 6 personas. Verter en coctelera, añadir una gran cantidad de hielo y agitar bien. Rallar un poco de nuez moscada sobre cada copa y servir.",
@@ -1829,17 +3627,35 @@
       "raw_text": "SPANISH TOWN (For 6 People) 5 glasses Brandy, 1 Dessertspoonful Cointreau. Pour into shaker, add a large quantity of Ice, and shake thoroughly. Grate a little nutmeg over each glass and serve"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-084",
-      "order": 84,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-083",
+      "order": 83,
       "section_title": "Cocktails Made with Brandy",
       "category": "cocktail",
       "name_original": "The Alexander (No. 2)",
       "name_es": "El Alexander (No. 2)",
       "yield": null,
       "ingredients": [
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Fresh Cream", "item_es": "Crema fresca", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Fresh Cream",
+          "item_es": "Crema fresca",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1849,17 +3665,35 @@
       "raw_text": "THE ALEXANDER (No. 2) 1 part Brandy, 1 part Creme de Cacao, 1 part Fresh Cream"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-085",
-      "order": 85,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-084",
+      "order": 84,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "The Applejack Cocktail",
       "name_es": "El Cóctel de Applejack",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1869,18 +3703,42 @@
       "raw_text": "THE APPLEJACK COCKTAIL 4 parts Applejack, 1 part Grenadine, 1 part Lemon Juice"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-086",
-      "order": 86,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-085",
+      "order": 85,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "The Apple-Jack-Rabbit",
       "name_es": "The Apple-Jack-Rabbit",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Juice of 1 Orange", "item_es": "Jugo de 1 naranja", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Juice of 1 Lemon", "item_es": "Jugo de 1 limón", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Maple Syrup", "item_es": "Jarabe de arce", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Orange",
+          "item_es": "Jugo de 1 naranja",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Lemon",
+          "item_es": "Jugo de 1 limón",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Maple Syrup",
+          "item_es": "Jarabe de arce",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1890,18 +3748,42 @@
       "raw_text": "THE APPLE-JACK-RABBIT 1 part Applejack, Juice of 1 Orange, Juice of 1 Lemon, 1 part Maple Syrup"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-087",
-      "order": 87,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-086",
+      "order": 86,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "The Short Hills",
       "name_es": "The Short Hills",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null},
-        {"item_original": "Gomme Syrup", "item_es": "Jarabe de goma", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Gomme Syrup",
+          "item_es": "Jarabe de goma",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1911,17 +3793,35 @@
       "raw_text": "THE SHORT HILLS 2 parts Applejack, 1 part Dry Vermouth, 2 dashes Angostura Bitters, 1/2 teaspoon Gomme Syrup"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-088",
-      "order": 88,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-087",
+      "order": 87,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "The Klondike",
       "name_es": "The Klondike",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 2, "unit": "dash", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 2,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1931,18 +3831,42 @@
       "raw_text": "THE KLONDIKE 1 part Applejack, 1 part Dry Vermouth, 2 dashes Angostura Bitters"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-089",
-      "order": 89,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-088",
+      "order": 88,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "Honeymoon Cocktail",
       "name_es": "Cóctel de Luna de Miel",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Juice of 1/2 Lemon", "item_es": "Jugo de 1/2 limón", "amount": 0.5, "unit": "piece", "notes": null},
-        {"item_original": "Curasao", "item_es": "Curaçao", "amount": 3, "unit": "dash", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1/2 Lemon",
+          "item_es": "Jugo de 1/2 limón",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Curasao",
+          "item_es": "Curaçao",
+          "amount": 3,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1952,17 +3876,35 @@
       "raw_text": "HONEYMOON COCKTAIL 1 part Applejack, 1 part Benedictine, Juice of 1/2 Lemon, 3 dashes Curasao"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-090",
-      "order": 90,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-089",
+      "order": 89,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "The Kiddy Car",
       "name_es": "The Kiddy Car",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1972,17 +3914,35 @@
       "raw_text": "THE KIDDY CAR 3 parts Applejack, 2 parts Cointreau, 1 part Lemon Juice"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-091",
-      "order": 91,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-090",
+      "order": 90,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "The Ante",
       "name_es": "The Ante",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 8, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Angostura Bitters", "item_es": "Amargo de Angostura", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 8,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Angostura Bitters",
+          "item_es": "Amargo de Angostura",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -1992,17 +3952,35 @@
       "raw_text": "THE ANTE 8 parts Applejack, 1 part Cointreau, 1 dash Angostura Bitters"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-092",
-      "order": 92,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-091",
+      "order": 91,
       "section_title": "Cocktails Made with Applejack",
       "category": "cocktail",
       "name_original": "Fifth Avenue",
       "name_es": "Quinta Avenida",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sweet Cream", "item_es": "Crema dulce", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sweet Cream",
+          "item_es": "Crema dulce",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2012,18 +3990,42 @@
       "raw_text": "FIFTH AVENUE 2 parts Applejack, 1 part Creme de Cacao, 1 part Sweet Cream"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-093",
-      "order": 93,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-092",
+      "order": 92,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Coup de Grace",
       "name_es": "El Coup de Grâce (Golpe de Gracia)",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 0.5, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": "To be served with a wheel-chair.",
       "method_es": "Para servirse con una silla de ruedas.",
@@ -2033,19 +4035,49 @@
       "raw_text": "THE COUP de GRACE (To be served with a wheel-chair) 1 part Gin, 1 part Scotch Whisky, 1/2 part Dry Vermouth, 1/2 part Regular Vermouth"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-094",
-      "order": 94,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-093",
+      "order": 93,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "Old Man Trouble",
       "name_es": "Old Man Trouble",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Juice of 1/2 Lime", "item_es": "Jugo de 1/2 lima", "amount": 0.5, "unit": "piece", "notes": null},
-        {"item_original": "Powdered Sugar", "item_es": "Azúcar en polvo", "amount": 1, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1/2 Lime",
+          "item_es": "Jugo de 1/2 lima",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Powdered Sugar",
+          "item_es": "Azúcar en polvo",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2055,18 +4087,42 @@
       "raw_text": "OLD MAN TROUBLE 2 parts Scotch Whisky, 1 part Gin, 1 teaspoon Bacardi, Juice of 1/2 Lime, 1 teaspoon powdered Sugar"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-095",
-      "order": 95,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-094",
+      "order": 94,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Lefthanded Bacardi",
       "name_es": "The Lefthanded Bacardi",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Bacardi Rum", "item_es": "Ron Bacardi", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "teaspoon", "notes": null},
-        {"item_original": "Juice of half a Lime", "item_es": "Jugo de media lima", "amount": 0.5, "unit": "piece", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bacardi Rum",
+          "item_es": "Ron Bacardi",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of half a Lime",
+          "item_es": "Jugo de media lima",
+          "amount": 0.5,
+          "unit": "piece",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2076,17 +4132,35 @@
       "raw_text": "THE LEFTHANDED BACARDI 1 part Gin, 2 parts Bacardi Rum, 1 teaspoonful Grenadine, Juice of half a Lime"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-096",
-      "order": 96,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-095",
+      "order": 95,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Thunderbolt",
       "name_es": "El Rayo",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Whisky", "item_es": "Whisky", "amount": 2.5, "unit": "part", "notes": null},
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 2, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Whisky",
+          "item_es": "Whisky",
+          "amount": 2.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": "Drink it sitting down.",
       "method_es": "Béberlo sentado.",
@@ -2096,18 +4170,42 @@
       "raw_text": "THE THUNDERBOLT (Drink it sitting down) 2 parts Gin, 2 1/2 parts Whisky, 2 parts Bacardi"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-097",
-      "order": 97,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-096",
+      "order": 96,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Grand Prix",
       "name_es": "El Grand Prix",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 0.5, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 0.5, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 0.5,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2117,17 +4215,35 @@
       "raw_text": "THE GRAND PRIX 1 part Gin, 3 parts Brandy, 1/2 part Lemon Juice, 1/2 part Orange Juice"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-098",
-      "order": 98,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-097",
+      "order": 97,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Bar Sinister",
       "name_es": "The Bar Sinister",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 4, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": "second listing — posible erratum del original"}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 4,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": "second listing — posible erratum del original"
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2137,18 +4253,42 @@
       "raw_text": "THE BAR SINISTER 4 parts Gin, 1 part Cointreau, 1 part Gin"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-099",
-      "order": 99,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-098",
+      "order": 98,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Loud Speaker",
       "name_es": "The Loud Speaker",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 3, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 3,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2158,18 +4298,42 @@
       "raw_text": "THE LOUD SPEAKER 3 parts Gin, 3 parts Brandy, 1 part Lemon Juice, 1 part Cointreau"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-100",
-      "order": 100,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-099",
+      "order": 99,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Mule's Hind Leg",
       "name_es": "The Mule's Hind Leg",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Benedictine", "item_es": "Benedictine", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Maple Syrup", "item_es": "Jarabe de arce", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Benedictine",
+          "item_es": "Benedictine",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Maple Syrup",
+          "item_es": "Jarabe de arce",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2179,18 +4343,42 @@
       "raw_text": "THE MULE'S HIND LEG 1 part Gin, 1 part Benedictine, 1 part Applejack, 1 part Maple Syrup"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-101",
-      "order": 101,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-100",
+      "order": 100,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "Jersey Favorite",
       "name_es": "Jersey Favorite",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Gin", "item_es": "Ginebra seca", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Dry Vermouth", "item_es": "Vermut seco", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gin",
+          "item_es": "Ginebra seca",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Dry Vermouth",
+          "item_es": "Vermut seco",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2200,18 +4388,42 @@
       "raw_text": "JERSEY FAVORITE 1 part Applejack, 1 part Dry Vermouth, 1 part Dry Gin, 1 dash Lemon Juice"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-102",
-      "order": 102,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-101",
+      "order": 101,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Fatherless Child",
       "name_es": "El Hijo Sin Padre",
       "yield": null,
       "ingredients": [
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Brandy", "item_es": "Brandy", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "White of 1 Egg", "item_es": "Clara de 1 huevo", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 0.5, "unit": "teaspoon", "notes": null}
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "Brandy",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "White of 1 Egg",
+          "item_es": "Clara de 1 huevo",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2221,18 +4433,42 @@
       "raw_text": "THE FATHERLESS CHILD 1 part Applejack, 1 part Brandy, White of 1 Egg, 1/2 teaspoon Cointreau"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-103",
-      "order": 103,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-102",
+      "order": 102,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "Paradise",
       "name_es": "Paraíso",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Applejack", "item_es": "Applejack", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Orange Juice", "item_es": "Jugo de naranja", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Lemon Juice", "item_es": "Jugo de limón", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Applejack",
+          "item_es": "Applejack",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Orange Juice",
+          "item_es": "Jugo de naranja",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Lemon Juice",
+          "item_es": "Jugo de limón",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2242,17 +4478,35 @@
       "raw_text": "PARADISE 2 parts Gin, 1 part Applejack, 1 part Orange Juice, 1 dash Lemon Juice"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-104",
-      "order": 104,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-103",
+      "order": 103,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Builder-Upper",
       "name_es": "The Builder-Upper",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Cointreau", "item_es": "Cointreau", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2262,19 +4516,49 @@
       "raw_text": "THE BUILDER-UPPER 1 part Gin, 1 part Bacardi, 1 part Cointreau"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-105",
-      "order": 105,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-104",
+      "order": 104,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Eye Opener",
       "name_es": "The Eye Opener",
       "yield": null,
       "ingredients": [
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Rye Whisky", "item_es": "Whisky de centeno", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Bacardi", "item_es": "Bacardi", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Juice of 1 Lime", "item_es": "Jugo de 1 lima", "amount": 1, "unit": "piece", "notes": null},
-        {"item_original": "Grenadine", "item_es": "Granadina", "amount": 1, "unit": "dash", "notes": null}
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Rye Whisky",
+          "item_es": "Whisky de centeno",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Bacardi",
+          "item_es": "Bacardi",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Juice of 1 Lime",
+          "item_es": "Jugo de 1 lima",
+          "amount": 1,
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Grenadine",
+          "item_es": "Granadina",
+          "amount": 1,
+          "unit": "dash",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2284,18 +4568,42 @@
       "raw_text": "THE EYE OPENER 1 part Gin, 1 part Rye Whisky, 1 part Bacardi, Juice of 1 Lime, Dash of Grenadine"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-106",
-      "order": 106,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-105",
+      "order": 105,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Carrousel",
       "name_es": "El Carrusel",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch Whisky", "item_es": "Whisky escocés", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Sweet Cream", "item_es": "Crema dulce", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Creme de Cacao", "item_es": "Crema de cacao", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Scotch Whisky",
+          "item_es": "Whisky escocés",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Sweet Cream",
+          "item_es": "Crema dulce",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Creme de Cacao",
+          "item_es": "Crema de cacao",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
@@ -2305,17 +4613,35 @@
       "raw_text": "THE CARROUSEL 1 part Scotch Whisky, 1 part Gin, 1 part Sweet Cream, 1 part Creme de Cacao"
     },
     {
-      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-107",
-      "order": 107,
+      "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them-106",
+      "order": 106,
       "section_title": "Borderline Cases",
       "category": "cocktail",
       "name_original": "The Butcher",
       "name_es": "El Carnicero",
       "yield": null,
       "ingredients": [
-        {"item_original": "Scotch", "item_es": "Whisky escocés", "amount": 2, "unit": "part", "notes": null},
-        {"item_original": "Gin", "item_es": "Ginebra", "amount": 1, "unit": "part", "notes": null},
-        {"item_original": "Regular Vermouth", "item_es": "Vermut regular", "amount": 1, "unit": "part", "notes": null}
+        {
+          "item_original": "Scotch",
+          "item_es": "Whisky escocés",
+          "amount": 2,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Gin",
+          "item_es": "Ginebra",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "Regular Vermouth",
+          "item_es": "Vermut regular",
+          "amount": 1,
+          "unit": "part",
+          "notes": null
+        }
       ],
       "method_original": null,
       "method_es": null,
