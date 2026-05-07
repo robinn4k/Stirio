@@ -64,6 +64,22 @@
     "bookFile": "data/euvs-books/1893-beverages-and-sandwiches-for-your-husbands-friends-1893.json"
   },
   {
+    "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city",
+    "year": 1895,
+    "decade": "1890s",
+    "title": "Official Hand-Book and Guide of the Bartenders' Association of the City of New York",
+    "author": "Bartenders' Association of the City of New York",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Bartenders' Association of the City of New York",
+    "city": "New York",
+    "edition": "1895",
+    "notes": "Manual oficial publicado por la Bartenders' Association of the City of New York en 1895 — texto fundacional del periodo Golden Age previo a la Prohibición. Recopila 110 recetas clásicas: Brandy/Gin/Whiskey Cocktail, Manhattan, Mint Julep, Tom and Jerry, Knickerbocker, Metropolitan, East India y los formatos canónicos (cobbler, cup, daisy, fizz, fix, julep, smash, sling, sour). Incluye dos variantes nominadas con personalidades: 'Lord Saltoun Style' (claret punch) y 'Gen'l Grant's Style' (cider eggnog). Algunas recetas con líneas de ingredientes coma-separadas no quedan perfectamente parseadas por el auto-extractor; el raw_text se conserva íntegro para auditoría.",
+    "sectionCount": 2,
+    "recipeCount": 110,
+    "bookFile": "data/euvs-books/1895-official-hand-book-and-guide-bartenders-association-of-new-york-city.json"
+  },
+  {
     "id": "1896-bariana-louis-fouquet",
     "year": 1896,
     "decade": "1890s",

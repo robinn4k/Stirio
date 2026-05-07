@@ -1,0 +1,3144 @@
+{
+  "book_id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city",
+  "metadata": {
+    "title": "Official Hand-Book and Guide of the Bartenders' Association of the City of New York",
+    "author": "Bartenders' Association of the City of New York",
+    "year": 1895,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Bartenders' Association of the City of New York",
+    "city": "New York",
+    "edition": "1895",
+    "source_file": "1895 Official Hand-Book and Guide Bartender's Association of New York City.txt",
+    "notes": "Manual oficial publicado por la Bartenders' Association of the City of New York en 1895 — texto fundacional del periodo Golden Age previo a la Prohibición. Recopila 110 recetas clásicas: Brandy/Gin/Whiskey Cocktail, Manhattan, Mint Julep, Tom and Jerry, Knickerbocker, Metropolitan, East India y los formatos canónicos (cobbler, cup, daisy, fizz, fix, julep, smash, sling, sour). Incluye dos variantes nominadas con personalidades: 'Lord Saltoun Style' (claret punch) y 'Gen'l Grant's Style' (cider eggnog). Algunas recetas con líneas de ingredientes coma-separadas no quedan perfectamente parseadas por el auto-extractor; el raw_text se conserva íntegro para auditoría."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Official Hand-Book and Guide",
+      "title_es": "Manual oficial y guía",
+      "content_original": "Manual oficial publicado por la Bartenders' Association of the City of New York en 1895.",
+      "content_es": "Manual oficial publicado por la Bartenders' Association of the City of New York en 1895."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Recipes",
+      "title_es": "Recetas",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-001",
+      "order": 1,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "Bottled Velvet.",
+      "name_es": "Bottled Velvet",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pint of sherry",
+          "item_es": "pint of sherry",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain and ice.",
+      "method_es": "Agitar bien con hielo picado, colar.",
+      "glassware": null,
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Bottled Velvet.\n1 bottle of Moselle.\n 1/2 pint of sherry.\n  The peeling of 1 lemon.\n  2 tablespoonfuls of sugar.\n  A sprig of verbena.\n  Shake well, strain and ice."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-002",
+      "order": 2,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "Bottle of Brandy Cocktail.",
+      "name_es": "Cóctel Bottle of Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "quart of brandy",
+          "item_es": "quart of brandy",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "quart of water",
+          "item_es": "quart of water",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Caroni Bitters",
+          "item_es": "caroni bitters",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curacoa",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bottle of Brandy Cocktail.\n2/3 quart of brandy.\n 1/3 quart of water.\n  1 pony of Caroni Bitters.\n  1 wine glass of gum syrup,\n    1/2 pony of curacoa.\n  Mix and bottle securely well."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-003",
+      "order": 3,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "Bottle of Gin Cocktail.",
+      "name_es": "Cóctel Bottle of Gin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bottle of Gin Cocktail.\nSame as 'brandy with gin substituted for\nbrandy."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-004",
+      "order": 4,
+      "section_title": null,
+      "category": "cocktail",
+      "name_original": "Brandy and Ginger Ale.",
+      "name_es": "Brandy and Ginger Ale",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy and Ginger Ale.\n(Use large bar glass.) ,\n  Several lumps of cracked ice.\n  1 wine glass of brandy.\n  1 bottle of ginger ale.\n  Mix thoroughly, taking care that the ale\ndoes not foam over the top of the glass.\n\n                       5"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-005",
+      "order": 5,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Soda.",
+      "name_es": "Brandy Soda",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of broken ice",
+          "item_es": "glass of broken ice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Soda.\n(Use large bar glass.)\n  A delicious summer drink, and excellent\n\" bracer.\"\n 1/2 glass of broken ice.\n  1 wine glass of brandy.\n  1 bottle of plain soda.\n  See that the soda does not foam out of\nthe glass. Stir well with a spoon."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-006",
+      "order": 6,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Champerelle.",
+      "name_es": "Brandy Champerelle",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "wine glass red curacoa",
+          "item_es": "wine glass red curacoa",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "wine glass yellow chartreuse",
+          "item_es": "wine glass yellow chartreuse",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "wine glass anisette",
+          "item_es": "wine glass anisette",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of brandy",
+          "item_es": "wine glass of brandy",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Champerelle.\n(Use a sherry wine glass.)\n 1/4 wine glass red curacoa.\n 1/4 wine glass yellow chartreuse.\n 1/4 wine glass anisette.\n 1/4 wine glass of brandy.\n  Drops of Caroni Bitters.\n  Or maraschino may be used for the ani­\nsette and kirschwasser for brandy.        In\nmixing see that the different liquors do not\nrun into each other."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-007",
+      "order": 7,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Cocktail.",
+      "name_es": "Cóctel Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Caroni Bitters",
+          "item_es": "caroni bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass half full of fine ice, and stir well. Strain into a cocktail glass, add a twisted piece of lemon peel.",
+      "method_es": "Revolver bien con hielo picado, colar, en copa de cóctel.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Cocktail.\n(Use small bar glass.)\n  3 dashes of gum syrup.\n  3 dashes of Caroni Bitters.\n                                  (See next page.)\n                       6\n\n  i wine glass of brandy\n  i dash of curacoa.\n  Fill glass half full of fine ice, and stir\nwell.\n  Strain into a cocktail glass, add a twisted\npiece of lemon peel."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-008",
+      "order": 8,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "crusta",
+      "name_original": "Brandy Crusta.",
+      "name_es": "Brandy Crusta",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of fine ice",
+          "item_es": "glass of fine ice",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Syrup",
+          "item_es": "syrup",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Caroni Bitters",
+          "item_es": "caroni bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Crusta.\n(Use large bar glass.)\n 3/4 glass of fine ice.\n  4 dashes of Syrup.\n  1 dash of Caroni Bitters.\n  5 drops of lemon juice.\n  2 dashes of maraschino,\n  i wine glass of brandy.\n  Strain in glass, trim with fruit."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-009",
+      "order": 9,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Daisy.",
+      "name_es": "Brandy Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange cordial",
+          "item_es": "orange cordial",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with ice, mix well, strain and fill with mineral water.",
+      "method_es": "colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Daisy.\n(Use small bar glass.)\n   4 dashes of gum syrup.\n    Juice of half a lemon.\n    2 dashes of orange cordial,\nI wine glass of brandy.\n    Fill glass with ice, mix well, strain and\nfill with mineral water."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-010",
+      "order": 10,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Fix.",
+      "name_es": "Brandy Fix",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tablespoonf ul of sugar dissolved in ¾",
+          "item_es": "tablespoonf ul of sugar dissolved in ¾",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "a lemon",
+          "item_es": "a lemon",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pineapple syrup",
+          "item_es": "pineapple syrup",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with shaved ice. •A wine glass of brandy. Mix well, trim with fruits, sip with straws. 7",
+      "method_es": "en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Fix.\n(Use small bar glass.)\n 1/2 tablespoonf ul of sugar dissolved in 3/4\nglass of mineral water.\n 1/4 of a lemon.\n 1/2 pony pineapple syrup.\n  Fill with shaved ice.\n  •A wine glass of brandy.\n   Mix well, trim with fruits, sip with straws.\n\n                        7"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-011",
+      "order": 11,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "fizz",
+      "name_original": "Brandy Fizz.",
+      "name_es": "Fizz Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoonful of powdered sugar",
+          "item_es": "teaspoonful of powdered sugar",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass3/4full of ice. i wine glass of brandy. A dash of white of egg. Shake well, strain into fizz glass, fill with mineral water, serve quick.",
+      "method_es": "Agitar bien con hielo picado, colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Fizz.\n(Use large bar glass.)\n1/2       teaspoonful of powdered sugar.\n        5 dashes of lemon juice.\n       Fill the glass3/4full of ice.\n        i wine glass of brandy.\n       A dash of white of egg.\n       Shake well, strain into fizz glass, fill with\n      mineral water, serve quick."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-012",
+      "order": 12,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy and Gum.",
+      "name_es": "Brandy and Gum",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy and Gum.\n(Use small bar glass.)\n        3 dashes of gum syrup.\n        Small lump of ice.\n        Put a spoon in the glass and set out a\n      bottle of brandy for the customer to fill."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-013",
+      "order": 13,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "julep",
+      "name_original": "Brandy Julep.",
+      "name_es": "Julep Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with ice, put the sprigs of mint in with the stems down, so as to allow the leaves to fringe the top of glass. i dash of Jamaica rum. Sprinkle the sugar on top, trim with fruit, serve with straws.",
+      "method_es": "servir.",
+      "glassware": "wine glass",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Brandy Julep.\n(Use large bar glass.)\n         I tablespoonful powdered sugar dissolved\n      in1/2wine glass of water.\n         4 sprigs of mint, pressed in the sugar and\n      water.\n1     1/2    wine glass of b r a n d .\n         Fill with ice, put the sprigs of mint in\n      with the stems down, so as to allow the\n      leaves to fringe the top of glass.\n         i dash of Jamaica rum.\n         Sprinkle the sugar on top, trim with fruit,\n      serve with straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-014",
+      "order": 14,
+      "section_title": "Brandy and Hum Punch.",
+      "category": "cocktail",
+      "name_original": "Pony Brandy.",
+      "name_es": "Pony Brandy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the pony glass with best brandy and serve. 8",
+      "method_es": "servir.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pony Brandy.\n(Use pony glassy\n        Fill the pony glass with best brandy and\n      serve.\n                             8",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-015",
+      "order": 15,
+      "section_title": "Brandy Punch.",
+      "category": "sangaree",
+      "name_original": "Brandy Sangaree.",
+      "name_es": "Brandy Sangaree",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the glass half full of ice. i teaspoonful of sugar, ½ wine glass of water, i wine glass of brandy. Mix well. i dash of port wine. Grate nutmeg on top.",
+      "method_es": "en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Sangaree.\n(Use small bar glass.)\n       Fill the glass half full of ice.\n       i teaspoonful of sugar,\n      1/2 wine glass of water,\n       i wine glass of brandy.\n       Mix well.\n       i dash of port wine.\n       Grate nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-016",
+      "order": 16,
+      "section_title": "Brandy Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Scaffa.",
+      "name_es": "Brandy Scaffa",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse (green)",
+          "item_es": "Chartreuse verde",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Scaffa.\n(Use sherrj' glass.)\n      1/4 raspberry syrup.\n      1/4 maraschino.\n      1/4 chartreuse (green).\n      1/4 brandy.\n       Keep the liquors from mixing."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-017",
+      "order": 17,
+      "section_title": "Brandy Punch.",
+      "category": "other",
+      "name_original": "Collcnder Cooler.",
+      "name_es": "Cooler Collcnder",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "juice of 1 lemon",
+          "item_es": "zumo de zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well, trim with fruit.",
+      "method_es": "Revolver bien con hielo picado.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Collcnder Cooler.\n2 (Use large ale glass.)\n       2 teaspoonfuls of sugar.\n       Juice of 1 lemon.\n                                          (.See next page.\")\n                             9\n\n  I bottle of ginger ale.\n  Stir well, trim with fruit."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-018",
+      "order": 18,
+      "section_title": "Brandy Punch.",
+      "category": "cocktail",
+      "name_original": "Brandy Straight.",
+      "name_es": "Brandy Straight",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Straight.\n(Use a small whiskey glass.)\n  Put a little ice in a glass, and hand to a\ncustomer with the bottle of brandy, to help\nhimself, with small glass of mineral water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-019",
+      "order": 19,
+      "section_title": "Brandy Punch.",
+      "category": "sling",
+      "name_original": "Brandy Sling.",
+      "name_es": "Brandy Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill glass with hot water, grate nutmeg on top. A cold sling is made by using ice and water for the hot.",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Sling.\n(Use hot water glass.)\n  1 lump of sugar dissolved in hot water.\n  I wine glass of brandy.\n  Fill glass with hot water, grate nutmeg on\ntop.\n  A cold sling is made by using ice and\nwater for the hot.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-020",
+      "order": 20,
+      "section_title": "Brandy Punch.",
+      "category": "smash",
+      "name_original": "Brandy Smash.",
+      "name_es": "Brandy Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill2/3of ice. Mix well, trim with slices of orange and fruit.",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Brandy Smash.\n(Use small bar glass.)\n   2 teaspoonfuls of fine sugar,\n   1 tablespoonful of water.\n   4 sprigs of mint pressed to bring out the\nflavor.\n   i wine glass of brandy.\n   Fill2/3of ice.\n   Mix well, trim with slices of orange and\nfruit."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-021",
+      "order": 21,
+      "section_title": "Brandy Punch.",
+      "category": "sour",
+      "name_original": "Brandy Sour.",
+      "name_es": "Sour de brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with ice. 1wine glass of brandy. Shake well, strain into a sour glass, trim with a slice of lemon.",
+      "method_es": "Agitar bien con hielo picado, colar, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Sour.\n(Use large bar glass.)\n  2 teaspoonfuls of fine sugar.\n  3 dashes of lemon juice.\n                                  (See next page.)\n                       10\n\n  I squirt of mineral water.\n Mix the above well.\n  Fill the glass with ice.\n  1wine glass of brandy.\n Shake well, strain into a sour glass, trim\nwith a slice of lemon."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-022",
+      "order": 22,
+      "section_title": "Brandy Punch.",
+      "category": "toddy",
+      "name_original": "Brandy Toddy.",
+      "name_es": "Toddy Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with a spoon and serve. Hot brandy toddy can be made by leav­ ing out the ice and using hot water.",
+      "method_es": "Revolver bien con hielo picado, servir.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Toddy.\n(Use small bar glass.)\n  1teaspoonful of fine sugar dissolved in\nwater.\n  1 wine glass of brandy.\n  2 lumps of ice.\n  Stir with a spoon and serve.\n  Hot brandy toddy can be made by leav­\ning out the ice and using hot water."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-023",
+      "order": 23,
+      "section_title": "Brandy Punch.",
+      "category": "cocktail",
+      "name_original": "Burnt Brandy and Peach.",
+      "name_es": "Burnt Brandy and Peach",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "dried peaches",
+          "item_es": "dried peaches",
+          "amount": "3",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Burnt Brandy and Peach.\n(Use small bar glass.)\n  An excellent remedy for diarrhoea.\n  2 teaspoonfuls of sugar,\n  1wine glass of brandy.\n  Burn the above together in a dish.\n  3 slices of dried peaches.\n  Put the slices of peach in a glass and pour\nthe burned liquid over, grate a little nutmeg\non top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-024",
+      "order": 24,
+      "section_title": "Brandy Punch.",
+      "category": "flip",
+      "name_original": "Brandy Flip.",
+      "name_es": "Flip Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tablespoonful of sugar",
+          "item_es": "tablespoonful of sugar",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain into a fancy glass, grate nutmeg on top.",
+      "method_es": "Agitar bien con hielo picado, colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Flip.\n(Use large bar gvlass.)\n  Glass half full of fine ice.\n  1fresh egg.\n 1/2 tablespoonful of sugar,\n  1wine glass of brandy.\n                                  (See next fiag-e.'y\n                       II\n\n           Shake well, strain into a fancy glass, grate\n         nutmeg on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-025",
+      "order": 25,
+      "section_title": "Brandy Punch.",
+      "category": "cobbler",
+      "name_original": "California Sherry Cobbler.",
+      "name_es": "Cobbler California Sherry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "3",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with shaved ice. 1 3/8 glass of California sherry wine. Stir well. 1 dash of port wine. Trim with fruit, sip with straws.",
+      "method_es": "Revolver bien con hielo picado.",
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "California Sherry Cobbler.\n(Use large bar glass.)\n           3 tablespoonfuls of fine sugar,\n            1pony of pineapple syrup.\n            Fill the glass with shaved ice.\n    1   3/8      glass of California sherry wine.\n            Stir well.\n            1 dash of port wine.\n            Trim with fruit, sip with straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-026",
+      "order": 26,
+      "section_title": "Brandy Punch.",
+      "category": "cobbler",
+      "name_original": "California Wine Cobbler.",
+      "name_es": "Cobbler California Wine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "3",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with ice. 1 3/8 wine glass of California wine. Stir well, dash with port, trim with fruit, serve with straws.",
+      "method_es": "Revolver bien con hielo picado, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "California Wine Cobbler.\n. (Use large bar glass.)\n            3 teaspoonfuls of fine sugar.\n            Juice of one orange.\n            2 tablespoonfuls of water.\n            Fill glass with ice.\n1       3/8      wine glass of California wine.\n            Stir well, dash with port, trim with fruit,\n          serve with straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-027",
+      "order": 27,
+      "section_title": "Brandy Punch.",
+      "category": "cobbler",
+      "name_original": "Catawba Cobbler.",
+      "name_es": "Cobbler Catawba",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with fine ice. 2 wine glasses of Catawba wine. Shake well, trim with berries, and serve with straws.",
+      "method_es": "Agitar bien con hielo picado, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Catawba Cobbler.\n(Use large bar glass.)\n            1teaspoonful of fine sugar.\n            1 tablespoonful of water.\n           Fill with fine ice.\n            2 wine glasses of Catawba wine.\n           Shake well, trim with berries, and serve\n          with straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-028",
+      "order": 28,
+      "section_title": "Champagne Sour.",
+      "category": "cocktail",
+      "name_original": "Cider Nectar.",
+      "name_es": "Cider Nectar",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cider",
+          "item_es": "cider",
+          "amount": "2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "mineral water",
+          "item_es": "mineral water",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of sherry",
+          "item_es": "wine glass of sherry",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well, trim with fruits, flavor with nut­ meg.",
+      "method_es": "Revolver bien con hielo picado.",
+      "glassware": "wine glass",
+      "garnish": "twist of lemon peel",
+      "page_reference": null,
+      "raw_text": "Cider Nectar.\n(Use large bar glass.)\n  2 wine glasses of cider.\n  1 wine glass of mineral water.\n 1/4 wine glass of sherry.\n  1 dash of brandy.\n  1 dash of lemon juice.\n  1 twist of lemon peel.\n  1 tablespoonful of sugar.\n  Stir well, trim with fruits, flavor with nut­\nmeg."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-029",
+      "order": 29,
+      "section_title": "Cider Punch.",
+      "category": "cobbler",
+      "name_original": "Claret Cobbler.",
+      "name_es": "Cobbler Claret",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar dissolved",
+          "item_es": "powdered sugar dissolved",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with fine ice. 2 wine glasses of claret. Trim with fruits, sip with straws.",
+      "method_es": "en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Cobbler.\n(Use large bar glass.)\n  1 teaspoonful of powdered sugar dissolved\nin1/4wine glass of water.\n  Fill glass with fine ice.\n  2 wine glasses of claret.\n  Trim with fruits, sip with straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-030",
+      "order": 30,
+      "section_title": "Cider Punch.",
+      "category": "cup",
+      "name_original": "Claret Cup.",
+      "name_es": "Cup de claret",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "claret",
+          "item_es": "clarete",
+          "amount": "2",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Cup.\n(Use large bar glass.)\n  2 wine glasses of claret,\n    wine glass of cold water.\n  1teaspoonful of fine sugar,\n    teaspoonful of cinnamon, cloves and all­\nspice. Stir thoroughly,\n  1piece of lemon peel."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-031",
+      "order": 31,
+      "section_title": "Cider Punch.",
+      "category": "cocktail",
+      "name_original": "LORD SALTOUN STYLE.",
+      "name_es": "Lord Saltoun Style",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "clarete",
+          "amount": "2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "mineral water",
+          "item_es": "mineral water",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir and strain well. Claret Punch, (Use large bar glass.) 11/2tablespoonfuls of fine sugar. 2 slices of lemon. (See next page.) 15 2 slices of orange. Fill glass with shaved ice. Pour in claret till gla :s is full. Shake well, trim with fruits, serve with straws. Cold Whiskey Sling, (Use small bar glass.) 1teaspoonful of sugar dissolved in3/8glass of water. 3 pieces of ice. 1wine glass of whiskey. Stir well, grate nutmeg on top.",
+      "method_es": "Agitar bien con hielo picado, colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LORD SALTOUN STYLE.\n1piece of lemon peel.\n 1 teaspoonful of powdered sugar.\n 3 dashes of sherry.\n 2 wine glasses of claret.\n 1 wine glass of mineral water.\n Stir and strain well.\n              Claret Punch,\n             (Use large bar glass.)\n  11/2tablespoonfuls of fine sugar.\n  2 slices of lemon.\n                              (See next page.)\n                     15\n\n   2 slices of orange.\n   Fill glass with shaved ice.\n   Pour in claret till gla :s is full.\n   Shake well, trim with fruits, serve with\nstraws.\n\n          Cold Whiskey Sling,\n             (Use small bar glass.)\n  1teaspoonful of sugar dissolved in3/8glass\nof water.\n  3 pieces of ice.\n  1wine glass of whiskey.\n  Stir well, grate nutmeg on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-032",
+      "order": 32,
+      "section_title": "Cider Punch.",
+      "category": "cocktail",
+      "name_original": "Columbia Skin.",
+      "name_es": "Columbia Skin",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the glass half full of hot water. 1piece of lemon peel. Mix with a spoon.",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Columbia Skin.\n(Use small whiskey glass.)\n  I wine glass of whiskey.\n  Fill the glass half full of hot water.\n  1piece of lemon peel.\n  Mix with a spoon.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-033",
+      "order": 33,
+      "section_title": "Cider Punch.",
+      "category": "cocktail",
+      "name_original": "Dog Days' Drink.",
+      "name_es": "Dog Days' Drink",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill1/3full of lemon sherbet or lemon ice. 1bottle of soda water. Mix and drink.",
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dog Days' Drink.\n(Use large goblet.)\n  Fill1/3full of lemon sherbet or lemon ice.\n  1bottle of soda water.\n  Mix and drink.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-034",
+      "order": 34,
+      "section_title": "Cider Punch.",
+      "category": "sour",
+      "name_original": "Continental Sour.",
+      "name_es": "Sour de continental",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with shaved ice. Shake well, strain into a sour glass, with claret.",
+      "method_es": "Agitar bien con hielo picado, colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Continental Sour.\n(Use large bar glass.)\n 3/8 teaspoonful of fine sugar, dissolve in\nwater.\n  Juice of half a lemon,\n  1wine glass of whiskey.\n                            (See next page.)\n                      16\n\n  Fill with shaved ice.\n  Shake well, strain into a sour glass, with\nclaret."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-035",
+      "order": 35,
+      "section_title": "Cider Punch.",
+      "category": "other",
+      "name_original": "Cordial Lemonade.",
+      "name_es": "Limonada Cordial",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour in slowly half a pony of curacoa or some other cordial.",
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cordial Lemonade.\nA plain lemonade.\n  Ornament with fruit.\n  Pour in slowly half a pony of curacoa or\nsome other cordial.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-036",
+      "order": 36,
+      "section_title": "Curacoa Punch.",
+      "category": "other",
+      "name_original": "Draught Lemonade.",
+      "name_es": "Limonada Draught",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "loaf sugar",
+          "item_es": "azúcar en terrón",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "pint boiling water",
+          "item_es": "pint boiling water",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Draught Lemonade.\n(Use large bar glass.)\n 1 lemon sliced.\n 4 ounce loaf sugar.\n                              (See next page.)\n                     17\n\n 1/2 pint boiling water.\n  Mix well, serve with a little nutmeg."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-037",
+      "order": 37,
+      "section_title": "Curacoa Punch.",
+      "category": "cocktail",
+      "name_original": "East India Cocktail.",
+      "name_es": "Cóctel East India",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the glass3/8full of fine ice. 3 dashes of raspberry syrup 2 dashes of Caron1Bitters. 2 dashes of red curacoa. 2 dashes of maraschino. I wine glass of brandy. Mix well, strain into a cocktail glass, add a bit of twisted lemon peel. A dash of cham­ pagne improves this drink.",
+      "method_es": "colar, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "East India Cocktail.\n(Use large bar glass.)\n  Fill the glass3/8full of fine ice.\n  3 dashes of raspberry syrup\n  2 dashes of Caron1Bitters.\n  2 dashes of red curacoa.\n  2 dashes of maraschino.\n  I wine glass of brandy.\n  Mix well, strain into a cocktail glass, add\na bit of twisted lemon peel. A dash of cham­\npagne improves this drink.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-038",
+      "order": 38,
+      "section_title": "Curacoa Punch.",
+      "category": "other",
+      "name_original": "Egg Lemonade.",
+      "name_es": "Limonada Egg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with water; stir well, strain into a large bar glass.",
+      "method_es": "Revolver bien con hielo picado, colar.",
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Lemonade.\n(Use large bar glass.)\n   I tablespoonful of fine sugar.\n  1         egg        . .\n  5 dashes of lemon juice.\n     glass of shaved ice.\n  Fill with water; stir well, strain into a\nlarge bar glass."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-039",
+      "order": 39,
+      "section_title": "Egg Milk Punch.",
+      "category": "cocktail",
+      "name_original": "Plain Egg Xogg.",
+      "name_es": "Plain Egg Xogg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of shaved ice",
+          "item_es": "glass of shaved ice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with milk. Shake well, strain, grate nutmeg on top.",
+      "method_es": "Agitar bien con hielo picado, colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plain Egg Xogg.\n(Use large bar glass.)\n  1tablespoonful of sugar,\n  1egg.\n  1wine glass of whiskey.\n 1/2 glass of shaved ice.\n  Fill the glass with milk.\n  Shake well, strain, grate nutmeg on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-040",
+      "order": 40,
+      "section_title": "Egg Nogg.",
+      "category": "cocktail",
+      "name_original": "GEN'L GRANT'S STYLE.",
+      "name_es": "Gen'l Grant's Style",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with cider, mix well.",
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GEN'L GRANT'S STYLE.\n(Use large bar glass.)\n  2 teaspoonfuls of powdered sugar,\n  1egg.\n  4 small pieces of ice.\n  Fill the glass with cider, mix well."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-041",
+      "order": 41,
+      "section_title": "Egg Nogg.",
+      "category": "cocktail",
+      "name_original": "Egg Kogg for Party.",
+      "name_es": "Egg Kogg For Party",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Kogg for Party.\n(Use large punch bowl.)\n  Same as the \" Imperial\" egg nogg, multi­\nplying the quantity of each by the number\nof persons to be served.\n\n                      19",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-042",
+      "order": 42,
+      "section_title": "Egg Nogg.",
+      "category": "cocktail",
+      "name_original": "Gin and Calamus.",
+      "name_es": "Gin and Calamus",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin and Calamus.\n(Use whiskey glass.)\n   Cut 3 pieces of calamus up fine, and steep\nin a bottle of gin. Serve same as whiskey\nstraight.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-043",
+      "order": 43,
+      "section_title": "El Dorado Punch.",
+      "category": "smash",
+      "name_original": "Fancy Brandy Smash.",
+      "name_es": "Fancy Brandy Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "mint, rubbed to bring out the",
+          "item_es": "mint, rubbed to bring out the",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fancy Brandy Smash.\n(Use large bar glass.)\n   2 teaspoonfuls of fine sugar.\n   2 tablespoonfuls of water.\n   4 pieces of mint, rubbed to bring out the\nflavor.\n  3/8 glass of shaved ice.\n   1wine glass of brandy.\n   Mix well, strain into a fancy bar glass."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-044",
+      "order": 44,
+      "section_title": "El Dorado Punch.",
+      "category": "cocktail",
+      "name_original": "Fancy Gin Cocktail.",
+      "name_es": "Cóctel Fancy Gin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Caron1Bitters",
+          "item_es": "caron1bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass half full of ice. Mix, strain into a fancy glass, the edge of which is rubbed with lemon, add a piece of lemon peel.",
+      "method_es": "colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fancy Gin Cocktail.\n(Use small bar glass.)\n 3 dashes of gum syrup.\n 3 dashes of Caron1Bitters,\n 1wine glass of gin.\n                           (See next page.)\n                   20\n\n  1dash of curacoa.\n  1piece of orange peel.\n  Fill glass half full of ice.\n  Mix, strain into a fancy glass, the edge of\nwhich is rubbed with lemon, add a piece of\nlemon peel."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-045",
+      "order": 45,
+      "section_title": "El Dorado Punch.",
+      "category": "sour",
+      "name_original": "Egg Sour.",
+      "name_es": "Sour de egg",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well, grate nutmeg on top.",
+      "method_es": "Agitar bien con hielo picado.",
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Sour.\n(Use large bar glass.)\n  1tablespoonful of fine sugar.\n  Several lumps of ice.\n  Juice of 1lemon.\n  1egg-\n  Shake well, grate nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-046",
+      "order": 46,
+      "section_title": "El Dorado Punch.",
+      "category": "smash",
+      "name_original": "Fancy Whiskey Smash.",
+      "name_es": "Fancy Whiskey Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with shaved ice. 1wine glass of whiskey. Stir well, trim with fruit,",
+      "method_es": "Revolver bien con hielo picado, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Fancy Whiskey Smash.\n(Use large bar glass.)\n 2 teaspoonfuls of sugar,\n 1glass of water.\n 3 sprigs of mint, pressed,\n Fill with shaved ice.\n 1wine glass of whiskey.\n Stir well, trim with fruit,"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-047",
+      "order": 47,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin and Milk.;",
+      "name_es": "Gin and Milk.;",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the glass with rich, iced milk and mix. with a spoon.",
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin and Milk.;\n(Use whiskey'glass.)\n         Put out glass and bottle of gin for cus­\n       tomer to help himself.\n         Fill the glass with rich, iced milk and mix.\n       with a spoon.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-048",
+      "order": 48,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin and Molasses.",
+      "name_es": "Gin and Molasses",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin and Molasses.\n(Use whiskey glass.)\n         Cover the bottom of the glass with gin.\n         1tablespoonful of molasses.\n         Let customer help himself to gin.\n         Mix with a spoon. Clean the glass after\n       the drink with hot water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-049",
+      "order": 49,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin and Pine.",
+      "name_es": "Gin and Pine",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin and Pine.\n(Use whiskey glass.)\n         Put 3 ounces of splinters from the heart of\n       a green pine log into a bottle of gin.\n         Steep 2 hours.\n         Put a lump of ice in the glass and hand,\n       out the bottle for the customer to help lum-\n       self.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-050",
+      "order": 50,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin and Tansy.",
+      "name_es": "Gin and Tansy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Serve a glass with ice, and let the gent help himself. 22 Gin and Wormwood, (Use small whiskey glass.) Steep half a dozen sprigs of wormwood in a quart of gin. Serve the same as gin and tansy. Rye Malt and gin.",
+      "method_es": "servir.",
+      "glassware": null,
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Gin and Tansy.\n(Use whiskey glass.),\n\n         A good tonic.\n         Soak a bunch of tansy in a bottle of\ngin.\n       Serve a glass with ice, and let the gent\n       help himself.\n                              22\n\n          Gin and Wormwood,\n           (Use small whiskey glass.)\n   Steep half a dozen sprigs of wormwood in\na quart of gin. Serve the same as gin and\ntansy. Rye Malt and gin."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-051",
+      "order": 51,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin Cocktail.",
+      "name_es": "Cóctel Gin",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill with fine ice. 3 dashes of gum syrup. 2 dashes of Caron1Bitters. 1dash of absinthe or curacoa. 1wine glass of gin. Mix well, strain into a fancy cocktail glass, twist a piece of lemon peel on top.",
+      "method_es": "colar, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Cocktail.\n(Use large bar glass.)\n  Fill with fine ice.\n  3 dashes of gum syrup.\n  2 dashes of Caron1Bitters.\n  1dash of absinthe or curacoa.\n  1wine glass of gin.\n  Mix well, strain into a fancy cocktail glass,\ntwist a piece of lemon peel on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-052",
+      "order": 52,
+      "section_title": "Fish House Punch.",
+      "category": "flip",
+      "name_original": "Gin Flip.",
+      "name_es": "Flip Gin",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill glass with ice, shake well, strain into a fancy glass.",
+      "method_es": "Agitar bien con hielo picado, colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Flip.\n(Use large bar glass.)\n\n  T tablespoonful of sugar.\n  Dissolve in a squirt of mineral water.\n  1wine glass of gin.\n  Fill glass with ice, shake well, strain into\na fancy glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-053",
+      "order": 53,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin Daisy.",
+      "name_es": "Gin Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of ice",
+          "item_es": "glass of ice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange cordial",
+          "item_es": "orange cordial",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with mineral water.",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Daisy.\n(Use large bar glass.)\n    1/2 glass of ice.\n  3 dashes of gum syrup.\n  Juice of half a lemon.\n  2 dashes of orange cordial.\n                                   (See next page.)\n                       23\n\n  1wine glass of gin.\n  Mix well and strain.\n  Fill with mineral water."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-054",
+      "order": 54,
+      "section_title": "Fish House Punch.",
+      "category": "cocktail",
+      "name_original": "Gin Fix.",
+      "name_es": "Gin Fix",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple syrup",
+          "item_es": "pineapple syrup",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "juice of ¼ of a lemon",
+          "item_es": "zumo de 0.25 of a lemon",
+          "amount": "0.25",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with fine ice. 1wine glass of gin. Mix with a spoon, trim with fruit, serve with straws.",
+      "method_es": "servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Fix.\n(Use large bar glass.)\n  2 teaspoonfuls of sugar,\n  1squirt of mineral water.\n 1/2 pony of pineapple syrup.\n  Mix well\n  Juice of 1/4 of a lemon.\n  Fill the glass with fine ice.\n  1wine glass of gin.\n  Mix with a spoon, trim with fruit, serve\nwith straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-055",
+      "order": 55,
+      "section_title": "Fish House Punch.",
+      "category": "fizz",
+      "name_original": "Gin Fizz.",
+      "name_es": "Fizz Gin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass half full of fine ice. 1wine glass of gin. Mix well, strain into a lemonade or fizz glass. Fill with mineral water and serve quick.",
+      "method_es": "colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Fizz.\n(Use large bar glass.)\n  2 teaspoonfuls of sugar.\n  4 dashes of lemon juice.\n  Fill the glass half full of fine ice.\n  1wine glass of gin.\n  Mix well, strain into a lemonade or fizz\nglass. Fill with mineral water and serve\nquick."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-056",
+      "order": 56,
+      "section_title": "Fish House Punch.",
+      "category": "crusta",
+      "name_original": "Gin Crusta.",
+      "name_es": "Gin Crusta",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the large glass3/8full of fine ice, and (See next page.~y ¾ add 3 dashes of gum syrup, 1 d a s h Carom Bitters, 2 dashes of lemon juice. 2 dashes of maraschino, 1 wine glass of gin. Mix well, strain into glass prepared as above. Trim with fruit.",
+      "method_es": "colar, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Crusta.\n(Use large bar glass.)\n  Remove the peeling from half a lemon, all\nin one piece. Fit this piece in a wine glass,\nthe edge of which has been rubbed in lem­\non and dipped in fine sugar.\n   Fill the large glass3/8full of fine ice, and\n                                 (See next page.~y\n                       24\n\nadd 3 dashes of gum syrup, 1 d a s h Carom\nBitters, 2 dashes of lemon juice. 2 dashes of\nmaraschino, 1 wine glass of gin. Mix well,\nstrain into glass prepared as above. Trim\nwith fruit.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-057",
+      "order": 57,
+      "section_title": "Fish House Punch.",
+      "category": "julep",
+      "name_original": "Kin Julep.",
+      "name_es": "Julep Kin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "3",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of water",
+          "item_es": "wine glass of water",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "mint, pressed to draw out fla­",
+          "item_es": "mint, pressed to draw out fla­",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well together. Fill the glass with ice. 13/4wire glasses of gin. Stir well, trim with fruit, serve with straws.",
+      "method_es": "Revolver bien con hielo picado, servir.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Kin Julep.\n(Use large bar glass.)\n  3 teaspoonfuls of sugar.\n 1/2 wine glass of water.\n  4 pieces of mint, pressed to draw out fla­\nvor.\n  Stir well together.\n   Fill the glass with ice.\n   13/4wire glasses of gin.\n  Stir well, trim with fruit, serve with\nstraws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-058",
+      "order": 58,
+      "section_title": "Gin Punch.",
+      "category": "sling",
+      "name_original": "Gin Sling.",
+      "name_es": "Gin Sling",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir, grate nutmeg on top.",
+      "method_es": "Revolver bien con hielo picado.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Sling.\n(Use small bar glass.)\n  1 lump of loaf sugar.\n  Enough water to dissolve the sugar.\n  2 pieces of ice.\n  I wine glass of malt gin.\n  Stir, grate nutmeg on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-059",
+      "order": 59,
+      "section_title": "Gin Punch.",
+      "category": "smash",
+      "name_original": "Gin Smash.",
+      "name_es": "Gin Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "glass of ice",
+          "item_es": "glass of ice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Gin Smash.\n(Use large bar glass.)\n  2 teaspoonfuls of sugar.\n  1tablespoonful of water.\n  3 sprigs of mint, pressed to extract the\nessence.\n 1/2 glass of ice.\n  I wine glass of gin.\n  Mix well, strain into a sour glass, trim\nwith slices of orange and berries."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-060",
+      "order": 60,
+      "section_title": "Gin Punch.",
+      "category": "sour",
+      "name_original": "Gin Sour.",
+      "name_es": "Sour de gin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "3",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "glass of ice",
+          "item_es": "glass of ice",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Sour.\n(Use small bar glass.)\n\n   3 teaspoonfuls of sugar.\n   I squirt of mineral water.\n  4 dashes of lemon juice.\n  2/3 glass of ice.\n   1wine glass of gin.\n  Mix well, strain into a sour glass, add a\nthin slice of lemon.\n                     26"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-061",
+      "order": 61,
+      "section_title": "Gin Punch.",
+      "category": "cocktail",
+      "name_original": "Gin Straight.",
+      "name_es": "Gin Straight",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Straight.\n(Use whiskey glass.)\n  Hand the glass, with a small piece or two\nof ice, to the customer, with the bottle of\ngin-",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-062",
+      "order": 62,
+      "section_title": "Gin Punch.",
+      "category": "toddy",
+      "name_original": "Gin Toddy.",
+      "name_es": "Toddy Gin",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Toddy.\n(Use whiskey glass.)\n     teaspoonful of fine sugar,\n     wine glass of water.\n  2 lumps of ice, 1 w i n e glass of gin, and\nmix.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-063",
+      "order": 63,
+      "section_title": "Gin Punch.",
+      "category": "cocktail",
+      "name_original": "Ginger Daisy.",
+      "name_es": "Ginger Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange cordial",
+          "item_es": "orange cordial",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ginger Daisy.\n(Use small bar glass.)\n  3 dashes of gum syrup.\n  Juice of half a lemon.\n  2 dashes of orange cordial,\n  1wine glass of brandy.\n     glass of gin.\n  Mix well, strain and fill in with ginger\nale."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-064",
+      "order": 64,
+      "section_title": "Gin Punch.",
+      "category": "flip",
+      "name_original": "Glasgow Flip.",
+      "name_es": "Flip Glasgow",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with ginger ale, and mix.",
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Glasgow Flip.\n(Use large bar glass.)\n  1 egg, beaten well.\n  Juice of one lemon.\n  2 tablespoonfuls of sugar.\n  Fill with ginger ale, and mix."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-065",
+      "order": 65,
+      "section_title": "Glasgow Punch.",
+      "category": "fizz",
+      "name_original": "Golden Fizz.",
+      "name_es": "Fizz Golden",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "glass of shaved ice",
+          "item_es": "glass of shaved ice",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain into a large fizz glass, fill up with mineral water, mix with spoon.",
+      "method_es": "Agitar bien con hielo picado, colar.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Golden Fizz.\n(Use large bar glass.)\n   1tablespoonful of sugar.\n   4 dashes of lemon juice,\n   1wine glass of Old Tom gin or whiskey.\n   Yolk of one egg.\n   2/3 glass of shaved ice.\n   Shake well, strain into a large fizz glass,\nfill up with mineral water, mix with spoon."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-066",
+      "order": 66,
+      "section_title": "Glasgow Punch.",
+      "category": "cocktail",
+      "name_original": "Golden Slipper.",
+      "name_es": "Golden Slipper",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Golden Slipper.\n(Use wine glass.)\n    wine glass yellow chartreuse.\n   Yolk of one egg.\n    wine glass of danziger goldwasser.\n   Don't let the yolk of the egg run into the\nliquors.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-067",
+      "order": 67,
+      "section_title": "Grassot Punch.",
+      "category": "cocktail",
+      "name_original": "Hot Rum.",
+      "name_es": "Hot Rum",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill with hot water. Mix fine, nutmeg over.",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Rum.\n(Use small bar glass.)\n  2 lumps of sugar.\n  Hot water enough to dissolve the sugar.\n  1lump of butter.\n  1wine glass of Jamaica rum.\n  Fill with hot water. Mix fine, nutmeg over.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-068",
+      "order": 68,
+      "section_title": "Grassot Punch.",
+      "category": "cocktail",
+      "name_original": "Hot Spiced Rum.",
+      "name_es": "Hot Spiced Rum",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill with hot water and mix.",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": "cherry",
+      "page_reference": null,
+      "raw_text": "Hot Spiced Rum.\n(Use small bar glass.)\n  1teaspoonful of sugar. Hot water to\ndissolve.\n  I wine glass of Jamaica rum.\n  1teaspoonful mixed cloves and allspice,\n  1lump of butter half as big as a cherry.\n  Fill with hot water and mix.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-069",
+      "order": 69,
+      "section_title": "Grassot Punch.",
+      "category": "sling",
+      "name_original": "Hot Scotch Whiskey Sling.",
+      "name_es": "Hot Scotch Whiskey Sling",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lump of sugar",
+          "item_es": "lump of sugar",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "glass of hot water",
+          "item_es": "glass of hot water",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Scotch Whiskey Sling.\n(Use hot water bar glass.)\n1/2 lump of sugar.\n3/4 glass of hot water.\n I piece of lemon peel.\n 1wine glass of Scotch whiskey.\n Mix well, grate nutmeg over."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-070",
+      "order": 70,
+      "section_title": "Hot Whiskey Punch.",
+      "category": "sling",
+      "name_original": "Hot Whiskey Sling.",
+      "name_es": "Hot Whiskey Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill1/3full of boiling water. Grate nutmeg over.",
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Whiskey Sling.\n(Use small bar glass.)\n\n  1 w i n e glass of whiskey.\n  Fill1/3full of boiling water.\n  Grate nutmeg over.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-071",
+      "order": 71,
+      "section_title": "Imperial Punch.",
+      "category": "other",
+      "name_original": "Italian Wine Lemonade.",
+      "name_es": "Limonada Italian Wine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass | full of shaved ice. 1wine glass of sherry. Fill with water, stir well, trim with fruit, serve with straws. 30",
+      "method_es": "Revolver bien con hielo picado, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Italian Wine Lemonade.\n(Use large bar glass)\n\n  2 teaspoonfuls of fine sugar.\n  Water to dissolve.\n  4 squirts of raspberry syrup.\n  2 squirts of orange syrup.\n  5 squirts of lemon juice.\n  Fill glass | full of shaved ice.\n   1wine glass of sherry. Fill with water,\nstir well, trim with fruit, serve with straws.\n\n                      30"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-072",
+      "order": 72,
+      "section_title": "Imperial Punch.",
+      "category": "sour",
+      "name_original": "Jamaica Rum Sour",
+      "name_es": "Sour de jamaica rum",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "fine sugar",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass | full of fine ice. 1 wine glass of Jamaica rum. Mix well, strain into a sour glass, trim with fruit and serve.",
+      "method_es": "colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Jamaica Rum Sour\n(Use large bar glass.)\n   2 tablespoonfuls of fine sugar.\n   Dash of mineral water, 4 dashes of lemon\njuice.\n   Fill the glass | full of fine ice.\n   1 wine glass of Jamaica rum. Mix well,\nstrain into a sour glass, trim with fruit and\nserve."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-073",
+      "order": 73,
+      "section_title": "Imperial Punch.",
+      "category": "cocktail",
+      "name_original": "Mikado Cocktail.",
+      "name_es": "Cóctel Mikado",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orgeat syrup, 1 dash of",
+          "item_es": "orgeat syrup, 1 dash of",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass half full of ice. 1 wine glass of brandy. Mix well, strain into a cocktail glass. Jersey Cocktail, (Use small bar glass.) 2 teaspoonfuls of sugar, 2 dashes of Caron1Bitters. 7 lumps of ice, fill with cider. Mix well, and serve with lemon peel over.",
+      "method_es": "colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mikado Cocktail.\n(Use small bar glass.)\n  1 tablespoonful of orgeat syrup, 1 dash of\nCaron1Bitters.\n  2 pieces of lemon peel.\n  Fill the glass half full of ice.\n  1 wine glass of brandy. Mix well, strain\ninto a cocktail glass.\n\n             Jersey Cocktail,\n            (Use small bar glass.)\n  2 teaspoonfuls of sugar, 2 dashes of Caron1Bitters.\n  7 lumps of ice, fill with cider.\n  Mix well, and serve with lemon peel over."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-074",
+      "order": 74,
+      "section_title": "Kirschwasser Punch.",
+      "category": "cocktail",
+      "name_original": "Nickerbein.",
+      "name_es": "Nickerbein",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of kimmel, 2 drops of Caron1Bitters",
+          "item_es": "glass of kimmel, 2 drops of caron1bitters",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Nickerbein.\n1/2glass of vermillion cordial, yolk of 1 egg,\n     cover the egg with benedictine.\n      1/2 glass of kimmel, 2 drops of Caron1Bitters.\n       See that the different ingredients are not\n     mixed."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-075",
+      "order": 75,
+      "section_title": "Kirschwasser Punch.",
+      "category": "cocktail",
+      "name_original": "Knickerbocker.",
+      "name_es": "Knickerbocker",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Santa Cruz, 4 dashes of",
+          "item_es": "santa cruz, 4 dashes of",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Knickerbocker.\n(Use large bar glass.)\n        I teaspoonful of raspberry syrup, juice of\n     half a lemon. 1 slice pineapple. 1 slice of\n     orange.\n        1 wine glass of Santa Cruz, 4 dashes of\n     curacoa. Fill with fine ice, stir, trim with\n     fruit."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-076",
+      "order": 76,
+      "section_title": "Kirschwasser Punch.",
+      "category": "cocktail",
+      "name_original": "Manhattan Cocktail.",
+      "name_es": "Cóctel Manhattan",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup, 3 dashes of Caron1",
+          "item_es": "gum syrup, 3 dashes of caron1",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey, 1 pony vermouth, mix",
+          "item_es": "whiskey, 1 pony vermouth, mix",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa, 2 dashes of Caron1",
+          "item_es": "curacoa, 2 dashes of caron1",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Manhattan Cocktail.\n(Use small wine glass.)\n2 dashes of gum syrup, 3 dashes of Caron1\nBitters.\n       1/2 pony of whiskey, 1 pony vermouth, mix\n      well.\n                      No. 2, SAME.\n                   (Use small bar glass.)\n2 dashes of curacoa, 2 dashes of Caron1\nBitters.\n       3/8 wine glass of whiskey, 3/8 wine glass of\n                                     (See next page.)\n                           32\n\nItalian vermouth. Fill with fine ice, mix\nwell, strain into a cocktail glass."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-077",
+      "order": 77,
+      "section_title": "Medford Rum Punch.",
+      "category": "smash",
+      "name_original": "Medford Rum Smash.",
+      "name_es": "Medford Rum Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, water to dissolve",
+          "item_es": "sugar, water to dissolve",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Medford rum",
+          "item_es": "medford rum",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Medford Rum Smash.\n(Use large bar glass.)\n\n   2 tablespoonfuls of sugar, water to dissolve\nthe sugar.\n   3 sprigs of mint pressed,1/2glass of shaved\nice.\n   1 wine glass of Medford rum.\n   Mix well, strain into a sour glass, add\nsprig of mint."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-078",
+      "order": 78,
+      "section_title": "Medford Rum Punch.",
+      "category": "sour",
+      "name_original": "Medford Rum Sour.",
+      "name_es": "Sour de medford rum",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 4 dashes of",
+          "item_es": "sugar, 4 dashes of",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo escarchado",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Medford rum. Mix well",
+          "item_es": "medford rum. mix well",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Medford Rum Sour.\n(Use large bar glass.)\n   2 tablespoonfuls of sugar, 4 dashes of\nlemon juice.\n   1 squirt of mineral water, 1/2 glass of\nshaved ice.\n   1 wine glass of Medford rum. Mix well,\nstrain into a sour glass, trim with fruit.\n\n                       33"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-079",
+      "order": 79,
+      "section_title": "Medford Rum Punch.",
+      "category": "cocktail",
+      "name_original": "Metropolitan Cocktail.",
+      "name_es": "Cóctel Metropolitan",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup, 2 dashes of Carom",
+          "item_es": "gum syrup, 2 dashes of carom",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "French vermouth, 3/8 pony of",
+          "item_es": "french vermouth, 3/8 pony of",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Metropolitan Cocktail.\n(Use small wine glass.)\n      3 dashes of gum syrup, 2 dashes of Carom\n    Bitters.\n      1 pony of French vermouth, 3/8 pony of\n    brandy.\n         dozen lumps of ice. Mix well, take out\n    the ice."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-080",
+      "order": 80,
+      "section_title": "Milk Punch.",
+      "category": "julep",
+      "name_original": "Mint Julep.",
+      "name_es": "Julep Mint",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": "fresh mint",
+      "page_reference": null,
+      "raw_text": "Mint Julep.\n(Use large bar glass.)\n        1 tablespoonful of sugar.\n       2 tablespoonfuls of water.\n       4 sprigs of mint, pressed for flavor.\n1   1/2      wine glass of brandy. Take the mint\n     out, fill with ice, mix well, replace the mint,\n     stems downward, dash with Jamaica rum,\n     sprinkle with sugar, serve with a straw."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-081",
+      "order": 81,
+      "section_title": "Mississipp1Punch.",
+      "category": "cocktail",
+      "name_original": "Mulled Claret.",
+      "name_es": "Mulled Claret",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoonful of cinnamon",
+          "item_es": "teaspoonful of cinnamon",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonful of fine cloves",
+          "item_es": "teaspoonful of fine cloves",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "claret. Place in a dish",
+          "item_es": "claret. place in a dish",
+          "amount": "2",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ground cloves, allspice",
+          "item_es": "ground cloves, allspice",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "claret. Heat a poker",
+          "item_es": "claret. heat a poker",
+          "amount": "2",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mulled Claret.\n1 lump of sugar, 4 dashes of lemon juice,\n         teaspoonful of fine allspice.\n      1/4 teaspoonful of cinnamon.\n     1/4 teaspoonful of fine cloves.\n       2 wine glasses of claret. Place in a dish,\n    boil 2 minutes, mixing all the time, strain\n    into a large glass, and serve with nutmeg\n'   on top.\n\n               Mulled Claret, No. 2.\n                 (Use large.bar glass.)\n\n       3 lumps of sugar.\n       2 dashes of lemon juice.\n       1 dash of lime juice.\n       1 teaspoonful of ground cloves, allspice,\n    and cloves.\n                                  -\n       2 wine glasses of claret. Heat a poker\n    red-hot and stick into liquid till it boils,\n    strain and serve."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-082",
+      "order": 82,
+      "section_title": "Mississipp1Punch.",
+      "category": "other",
+      "name_original": "Orgeat Lemonade.",
+      "name_es": "Limonada Orgeat",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 1 wine glass of",
+          "item_es": "sugar, 1 wine glass of",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "stir well, trim with fruit, serve with straws. 35",
+      "method_es": "Revolver bien con hielo picado, servir.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Orgeat Lemonade.\n(Use small bar glass.)\n       2 teaspoonfuls of sugar, 1 wine glass of\n    orgeat syrup, juice of half a lemon.\n         glass of shaved ice. Fill with water,\n    stir well, trim with fruit, serve with straws.\n\n                          35"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-083",
+      "order": 83,
+      "section_title": "Mississipp1Punch.",
+      "category": "cocktail",
+      "name_original": "Mulled Claret and Egg.",
+      "name_es": "Mulled Claret and Egg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoonful of fine allspice, 1teaspoon-",
+          "item_es": "teaspoonful of fine allspice, 1teaspoon-",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Yolk of 2 eggs, beaten up with a little",
+          "item_es": "yema de huevo",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "pour in the liquid slowly, mixing all the time. Serve with nutmeg on top. Don't pour the egg over the wine.",
+      "method_es": "servir.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mulled Claret and Egg.\n(Use large bar glass.)\n         1tablespoonful of powdered sugar.\n         1dash of lemon juice.\n        1/2 teaspoonful of fine allspice, 1teaspoon-\n      ful of fine cinnamon, 3/8 teaspoonful of fine\n      cloves, 1 3/4 wine glass of claret, pour into\n      a dish and boil.\n         Yolk of 2 eggs, beaten up with a little\n      white sugar. Put eggs in a not water glass,\n      pour in the liquid slowly, mixing all the\n      time. Serve with nutmeg on top. Don't\n      pour the egg over the wine."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-084",
+      "order": 84,
+      "section_title": "National GuardJPunch.",
+      "category": "cocktail",
+      "name_original": "Old Tom Gin Cocktail.",
+      "name_es": "Cóctel Old Tom Gin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup, 2 dashes of Caron1",
+          "item_es": "gum syrup, 2 dashes of caron1",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa or absinthe",
+          "item_es": "curacoa or absinthe",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with shaved ice. 1 wine glass of gin. Mix well, strain into a cocktail glass, a piece of lemon peel on top.",
+      "method_es": "colar, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Old Tom Gin Cocktail.\n3 dashes of gum syrup, 2 dashes of Caron1\nBitters.\n          2 dashes of curacoa or absinthe.\n          Fill with shaved ice.\n          1 wine glass of gin.\n          Mix well, strain into a cocktail glass, a\n        piece of lemon peel on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-085",
+      "order": 85,
+      "section_title": "Phil'a Boating Punch.",
+      "category": "cobbler",
+      "name_original": "Port Wine Cobbler.",
+      "name_es": "Cobbler Port Wine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 1 pony orchard",
+          "item_es": "sugar, 1 pony orchard",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with shaved ice. 11/2wine glasses of port wine. Mix well, trim with fruit, and serve with straws.",
+      "method_es": "servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Port Wine Cobbler.\n(Use large bar glass.)\n       2 teaspoonfuls of sugar, 1 pony orchard\n    brandy.\n      Water to dissolve the above.\n       Fill the glass with shaved ice.\n       11/2wine glasses of port wine.\n       Mix well, trim with fruit, and serve with\n    straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-086",
+      "order": 86,
+      "section_title": "Port Wine Punch.",
+      "category": "sangaree",
+      "name_original": "Port Wine Sangaree.",
+      "name_es": "Port Wine Sangaree",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Port Wine Sangaree.\n(Use small bar glass.)\n   1teaspoonful of fine sugar dissolved in a\nlittle water, 3 small lumps of ice, 13/8 glasses\nof port wine.\n   Mix, remove the ice, grate nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-087",
+      "order": 87,
+      "section_title": "Pousse Cafe.",
+      "category": "other",
+      "name_original": "Rhine Wine Lemonade.",
+      "name_es": "Limonada Rhine Wine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Rhine wine",
+          "item_es": "vino del Rin",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rhine Wine Lemonade.\n(Use large bar glass.)\n   1tablespoonful of fine sugar. Juice of\nhalf an orange. 1/2 glass of ice. Fill with\nRhine wine.\n  Mix well, trim with fruits and sip with\nstraws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-088",
+      "order": 88,
+      "section_title": "Pousse Cafe.",
+      "category": "cocktail",
+      "name_original": "Rock and Rye Whiskey.",
+      "name_es": "Rock and Rye Whiskey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "best rock candy syrup",
+          "item_es": "best rock candy syrup",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "good rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rock and Rye Whiskey.\nGood remedy for sore throats and colds.\n  2 teaspoonfuls of best rock candy syrup.\n  1 wine glass of good rye whiskey.\n  Mix well and serve. Or, put the syrup\nand a spoon in the glass, and hand out the\nbottle of rye to the customer."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-089",
+      "order": 89,
+      "section_title": "Roman Punch.",
+      "category": "flip",
+      "name_original": "Hum Flip.",
+      "name_es": "Flip Hum",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pint of ale healed on a fire, I egg beaten",
+          "item_es": "pint of ale healed on a fire, i egg beaten",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hum Flip.\n(Use two large cups.)\n         1/2 pint of ale healed on a fire, I egg beaten\n       up with one ounce of powdered sugar.\n          A dash of fine nutmeg, 2 dashes of rum\n       or brandy. Put the ale in one cup, the other\n       in another, and pour together and back and\n       forth several times."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-090",
+      "order": 90,
+      "section_title": "Roman Punch.",
+      "category": "cocktail",
+      "name_original": "Rum Daisy.",
+      "name_es": "Rum Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup, juice of half a",
+          "item_es": "gum syrup, juice of half a",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange cordial. Fill the glass",
+          "item_es": "orange cordial. fill the glass",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rum Daisy.\n(Use small bar glass.)\n         3 dashes of gum syrup, juice of half a\n       lemon.\n         2 dashes of orange cordial. Fill the glass\n       half full of water.\n         1 wine glass of rum. Mix well, strain, fill\n       up with mineral water."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-091",
+      "order": 91,
+      "section_title": "St. Charles Punch.",
+      "category": "crusta",
+      "name_original": "St. Croix Crusta.",
+      "name_es": "St. Croix Crusta",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup, 1 dash of Caron1",
+          "item_es": "gum syrup, 1 dash of caron1",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice. Fill the glass",
+          "item_es": "lemon juice. fill the glass",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "St. Croix rum. Mix well",
+          "item_es": "st. croix rum. mix well",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "St. Croix Crusta.\n(Use large bar glass.)\n          Remove the peeling from half a lemon\n        whole, and fit into wine glass moistened\n        with lemon juice and dipped in sugar. Make\n        the drink in large bar glass as follows :\n3 dashes of gum syrup, 1 dash of Caron1\nBitters.\n          2 dashes of lemon juice. Fill the glass\n                                      (See next page.)\n                             40\n\nhalf full of water, 2 clashes of maraschino,\n1 wine glass of St. Croix rum. Mix well,\nstrain into the wine glass prepared as above,\ntrim with fruit, serve."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-092",
+      "order": 92,
+      "section_title": "St. Charles Punch.",
+      "category": "cocktail",
+      "name_original": "St. Croix Fix.",
+      "name_es": "St. Croix Fix",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 3 dashes of lemon",
+          "item_es": "sugar, 3 dashes of lemon",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with fine ice. 1 wine glass of St. Croix rum. Mix well, trim-with fruit, serve with straws. St. Croix Rum Punch, (Use large bar glass.) 1 tablespoonful of sugar, 4 dashes of lemon or lime juice, 1 squirt of mineral water, dissolve well. Fill the glass with fine ice. 3 dashes of Jamaica rum, 1 wine glass of St. Croix rum. Mix well, trim with fruit, serve with straws.",
+      "method_es": "servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "St. Croix Fix.\n(Use large bar glass.)\n   2 teaspoonfuls of sugar, 3 dashes of lemon\njuice,1/2pony of pineapple syrup.\n   Water to dissolve the above.\n   Fill the glass with fine ice.\n   1 wine glass of St. Croix rum. Mix well,\ntrim-with fruit, serve with straws.\n\n          St. Croix Rum Punch,\n              (Use large bar glass.)\n  1 tablespoonful of sugar, 4 dashes of lemon\nor lime juice, 1 squirt of mineral water,\ndissolve well.\n  Fill the glass with fine ice.\n  3 dashes of Jamaica rum, 1 wine glass of\nSt. Croix rum. Mix well, trim with fruit,\nserve with straws."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-093",
+      "order": 93,
+      "section_title": "St. Charles Punch.",
+      "category": "fizz",
+      "name_original": "St. Croix Rum Fizz",
+      "name_es": "Fizz St. Croix Rum",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tablespoonful of fine sugar, juice of half",
+          "item_es": "tablespoonful of fine sugar, juice of half",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass3/8full of shaved ice. 1 wine glass of St. Croix rum. Mix well, strain into a fizz glass, fill with mineral water, serve at once.",
+      "method_es": "colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "St. Croix Rum Fizz\n(Use large bar glass.)\n 1/2 tablespoonful of fine sugar, juice of half\na lemon, 1 teaspoonful of white of egg.\n   Fill glass3/8full of shaved ice.\n   1 wine glass of St. Croix rum. Mix well,\nstrain into a fizz glass, fill with mineral\nwater, serve at once."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-094",
+      "order": 94,
+      "section_title": "St. Charles Punch.",
+      "category": "sour",
+      "name_original": "St. Croix Sour.",
+      "name_es": "Sour de st. croix",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, juice of half a",
+          "item_es": "sugar, juice of half a",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass half full of fine ice. 1wine glass of St. Croix rum. Mix well, strain into a sour glass, serve with slice of lemon on top.",
+      "method_es": "colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "St. Croix Sour.\n(Use large bar glass.)\n  2 teaspoonfuls of sugar, juice of half a\nlemon.\n                                  (See next page.)\n                      41\n\n   Dissolve the above in one dash of mineral\nwater.\n   Fill the glass half full of fine ice.\n   1wine glass of St. Croix rum. Mix well,\nstrain into a sour glass, serve with slice of\nlemon on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-095",
+      "order": 95,
+      "section_title": "St. Charles Punch.",
+      "category": "cocktail",
+      "name_original": "Santa Cruz Fix.",
+      "name_es": "Santa Cruz Fix",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill the glass half full of fine ice. I wine glass of Santa Cruz rum. Mix well, trim with fruits.",
+      "method_es": "en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Santa Cruz Fix.\n(Use large bar glass.)\n  1teaspoonful of powdered sugar.\n  Juice and skin of1/4of a lemon,\n  1dash of mineral water.\n  Fill the glass half full of fine ice.\n  I wine glass of Santa Cruz rum.\n  Mix well, trim with fruits.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-096",
+      "order": 96,
+      "section_title": "St. Charles Punch.",
+      "category": "sour",
+      "name_original": "Santa Cruz Sour.",
+      "name_es": "Sour de santa cruz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "wine glass of water, ⅔ glass of ice",
+          "item_es": "wine glass of water, ⅔ glass of ice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Santa Cruz Sour.\n(Use large bar glass.)\n  I tablespoonful of powdered sugar.\n  Juice and skin of1/4of a lemon.\n 1/2 wine glass of water, 2/3 glass of ice.\n  1wine glass of Santa Cruz rum.\n  Mix well, strain into a sour glass, serve\nwith slice of lemon."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-097",
+      "order": 97,
+      "section_title": "St. Charles Punch.",
+      "category": "cobbler",
+      "name_original": "Sauterne Cobbler.",
+      "name_es": "Cobbler Sauterne",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoonful of sugar, ¾ wine glass of",
+          "item_es": "teaspoonful of sugar, ¾ wine glass of",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Stir the above in wine glass of water. Fill the glass with fine ice. 2 wine glasses of sauterne. Shake well, trim with fruits, sip with straws. 42 Sherry and Bitters. (Use sherry glass.) 1dash of Caron1Bitters. Twist the glass until the hitters covers the whole inside. Fill with sherry.",
+      "method_es": "Agitar bien con hielo picado, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sauterne Cobbler.\n(Use large bar glass )\n 3/4 teaspoonful of sugar, 3/4 wine glass of\norchard SYrup.\n   Stir the above in     wine glass of water.\nFill the glass with fine ice.\n   2 wine glasses of sauterne. Shake well,\ntrim with fruits, sip with straws.\n\n                       42\n\n             Sherry and Bitters.\n               (Use sherry glass.)\n  1dash of Caron1Bitters. Twist the glass\nuntil the hitters covers the whole inside.\nFill with sherry."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-098",
+      "order": 98,
+      "section_title": "Sherry Egg Nogg.",
+      "category": "flip",
+      "name_original": "Sherry Flip.",
+      "name_es": "Flip Sherry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 1 egg, fill the",
+          "item_es": "sugar, 1 egg, fill the",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sherry Flip.\n(Use large bar glass.)\n   2 teaspoonfuls of sugar, 1 egg, fill the\n glass half full of fine ice.\n1 1/2 wine glasses of sherry. Mix well,\n strain into bar glass, grate nutmeg on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-099",
+      "order": 99,
+      "section_title": "Sherry Wine Punch.",
+      "category": "cocktail",
+      "name_original": "Silver Fisz.",
+      "name_es": "Silver Fisz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon or lime juice, white of 1egg-",
+          "item_es": "lemon or lime juice, white of 1egg-",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with fine ice, 1wine glass of Old Tom gin. Mix well, strain into a fizz glass, fill with syphon vichy, mix and serve quick.",
+      "method_es": "colar, servir, en copa de vino.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Silver Fisz.\n(Use large bar glass.)\n         2 teaspoonfuls of sugar.\n         4 dashes of lemon or lime juice, white of 1egg-\n          Fill the glass with fine ice, 1wine glass of\n       Old Tom gin. Mix well, strain into a\n       fizz glass, fill with syphon vichy, mix and\n       serve quick."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-100",
+      "order": 100,
+      "section_title": "Bensinger Punch.",
+      "category": "cocktail",
+      "name_original": "Soda Cocktail.",
+      "name_es": "Cóctel Soda",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 3 dashes Caron1",
+          "item_es": "sugar, 3 dashes caron1",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "orange, half dozen pieces of ice",
+          "item_es": "orange, half dozen pieces of ice",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Cocktail.\n1 teaspoonful of sugar, 3 dashes Caron1\nBitters.\n           1 slice of orange, half dozen pieces of ice.\n           1bottle of lemon soda. Mix well, serve\n         quick."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-101",
+      "order": 101,
+      "section_title": "Bensinger Punch.",
+      "category": "other",
+      "name_original": "Soda Lemonade.",
+      "name_es": "Limonada Soda",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar, 4 dashes of",
+          "item_es": "sugar, 4 dashes of",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Lemonade.\n(Use large bar glass.)\n         1 tablespoonful of sugar, 4 dashes of\n       lemon juice. Half dozen lumps of ice.\n         1 bottle plain soda.\n         Mix well, take out the ice, done."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-102",
+      "order": 102,
+      "section_title": "Bensinger Punch.",
+      "category": "cocktail",
+      "name_original": "Stone Wall.",
+      "name_es": "Stone Wall",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Stone Wall.\n(Use large bar glass.)\n        1 teaspoonful of sugar.\n        6 small lumps of ice, 1 wine glass of\n       whiskey.\n                                       (See next page.)\n                           44\n\n   1bottle of plain soda. Mix, remove the\nice and serve quick You can use Cognac\nbrandy in place of whiskey, and the sugar\nleft out."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-103",
+      "order": 103,
+      "section_title": "Tip-Top Punch.",
+      "category": "cocktail",
+      "name_original": "Tom and Jerry.",
+      "name_es": "Tom and Jerry",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir together and beat to a stiff batter. Add as much carbonate of soda as will cover a nickel. Mix frequently, so as the eggs will not separate.",
+      "method_es": "Revolver bien con hielo picado.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Tom and Jerry.\n(Use punch bowl.)\n  Take the whites of any quantity of eggs,\nand beat to a stiff froth.\n  Add 1 1/2 ablespoonfuls of powdered sugar\nfor each egg. Beat the yolk of the eggs\nseparate.\n  Stir together and beat to a stiff batter.\n  Add as much carbonate of soda as will\ncover a nickel. Mix frequently, so as the\neggs will not separate.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-104",
+      "order": 104,
+      "section_title": "Tip-Top Punch.",
+      "category": "cocktail",
+      "name_original": "How to Serve Tom and Jerry.",
+      "name_es": "How To Serve Tom and Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the above mixture",
+          "item_es": "the above mixture",
+          "amount": "2",
+          "unit": "tablespoon",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with hot milk, mix well, pour from one cup to another, grate nutmeg on top. 45",
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "How to Serve Tom and Jerry.\n(Use mug.)\n  2 tablespoonfuls of the above mixture,\n  1wine glass of brandy,\n  1pony of Jamaica rum.\n  Fill with hot milk, mix well, pour from\none cup to another, grate nutmeg on top.\n\n                     45"
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-105",
+      "order": 105,
+      "section_title": "Tip-Top Punch.",
+      "category": "cocktail",
+      "name_original": "Miller's Tom and Jerry.",
+      "name_es": "Miller's Tom and Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of St. Croix rum",
+          "item_es": "glass of st. croix rum",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Stir to a stiff batter.",
+      "method_es": "Revolver bien con hielo picado.",
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Miller's Tom and Jerry.\n(Use large punch bowl.)\n   5 pounds of powdered sugar.\n   Whites of1/2dozen eggs beaten to a stiff\nfroth.\n   Yolks of 12 eggs beaten thin as water.\n   Mix well,3/4wine glass of Jamaica Rum.\n  1/4 glass of St. Croix rum.\n   11/4teaspoonful of fine cinnamon, 1/4 tea-\nspoonful of fine cloves, 1/2 teaspoonful of\nfine allspice.\n   Stir to a stiff batter."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-106",
+      "order": 106,
+      "section_title": "Tip-Top Punch.",
+      "category": "cocktail",
+      "name_original": "How to Serve Tom and Jerry.",
+      "name_es": "How To Serve Tom and Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the mixture, 1 wine",
+          "item_es": "the mixture, 1 wine",
+          "amount": "1",
+          "unit": "tablespoon",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "How to Serve Tom and Jerry.\n(Use small bar glass.)\n  1 tablespoonful of the mixture, 1 wine\nglass of brandy. Fill with boiling milk or\nwater.\n  Mix fine nutmeg on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-107",
+      "order": 107,
+      "section_title": "Tip-Top Punch.",
+      "category": "cocktail",
+      "name_original": "Cold Tom and Jerry.",
+      "name_es": "Cold Tom and Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "3",
+          "unit": "teaspoon",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice,1/2doz. lumps of",
+          "item_es": "lemon juice,1/2doz. lumps of",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Old Tom gin",
+          "item_es": "Old Tom Gin",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup, 2 dashes Caron1Bitters",
+          "item_es": "gum syrup, 2 dashes caron1bitters",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cold Tom and Jerry.\n(Use small bar glass.)\n Prepare and serve as hot, only using cold\nwater or milk.\n\n        No. 1 Tom Collins, Gin.\n            (Use large ale glass.)\n  3 teaspoonfuls of powdered sugar.\n  4 dashes of lemon juice,1/2doz. lumps of\nice.\n  1 wine glass of Old Tom gin.\n   1 bottle plain soda water.\n  Mix with spoon. Take out the ice.\n                      46.\n\n             No. 3, Whiskey.\n             (Use large bar glass.)\n Mix same as brandy Tom Collins ; use\nwhiskey in place of brandy.\n\n               No. 2, Brandy.\n             (Use large bar glass.)\n  5 dashes of gum syrup, 2 dashes Caron1Bitters.\n  Juice of a lemon, 1wine glass of brandy.\n  3 small lumps of ice, fill with plain soda.\n  Mix, remove the ice."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-108",
+      "order": 108,
+      "section_title": "Vanilla Punch.",
+      "category": "cocktail",
+      "name_original": "Vermouth Cocktail.",
+      "name_es": "Cóctel Vermouth",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of fine ice, 4 dashes of gum syrup",
+          "item_es": "glass of fine ice, 4 dashes of gum syrup",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Caron1Bitters, 2 dashes of mara­",
+          "item_es": "caron1bitters, 2 dashes of mara­",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermut",
+          "amount": "1",
+          "unit": "wine-glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Vermouth Cocktail.\n(Use large bar glass.)\n        1/2 glass of fine ice, 4 dashes of gum syrup.\n         1 dash of Caron1Bitters, 2 dashes of mara­\n       schino.\n         1 wine glass of vermouth.\n         Mix well, strain into a fancy cocktail\n       glass and add a piece of lemon peel."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-109",
+      "order": 109,
+      "section_title": "Vanilla Punch.",
+      "category": "cocktail",
+      "name_original": "Plain Vermouth Cocktail.",
+      "name_es": "Cóctel Plain Vermouth",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of shaved ice, 1 ½ pony of ver­",
+          "item_es": "glass of shaved ice, 1 ½ pony of ver­",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Caron1Bitters, 2 dashes of",
+          "item_es": "caron1bitters, 2 dashes of",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plain Vermouth Cocktail.\n(Use small bar glass.)\n         1/2 glass of shaved ice, 1 1/2 pony of ver­\n       mouth.\n         2 dashes of Caron1Bitters, 2 dashes of\n       gum syrup.\n         Mix well, strain into a cocktail glass, put\n       a piece of twisted lemon peel on top."
+    },
+    {
+      "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-110",
+      "order": 110,
+      "section_title": "Vanilla Punch.",
+      "category": "cocktail",
+      "name_original": "Whiskey Cocktail.",
+      "name_es": "Cóctel Whiskey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup, 2 dashes of Caron1",
+          "item_es": "gum syrup, 2 dashes of caron1",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa, ¾ glass of fine ice",
+          "item_es": "curacoa, ¾ glass of fine ice",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Cocktail.\n(Use bar glass.)\n3 dashes of gum syrup, 2 dashes of Caron1\nBitters.\n           2 dashes of curacoa, 3/4 glass of fine ice.\n           1 wine glass of whiskey. Strain into a\n         cocktail glass and add a piece of lemon. The\n         curacoa may be left out."
+    }
+  ]
+}
