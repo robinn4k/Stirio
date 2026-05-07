@@ -1,0 +1,536 @@
+{
+  "book_id": "1934-heres-how-to-be-healthy-by-b-g-hauser",
+  "metadata": {
+    "title": "Here's How to be Healthy",
+    "author": "Bengamin Gayelord Hauser",
+    "year": 1934,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Hauser",
+    "city": "Chicago",
+    "edition": "First Edition (1934)",
+    "source_file": "1934 Here's How to be Healthy by B G Hauser.txt",
+    "notes": "Manual de 'health cocktails' — jugos de verduras y frutas crudas extraídos con la 'Health-Mine' (juicer). NO contiene alcohol — es un libro paralelo en la era de la Prohibición que comparte la palabra 'cocktail'. Recetas pensadas como suplemento dietético: Celery Cocktail (contra indigestión / reumatismo), Iron Cocktail (espinaca + perejil), Carrot Cocktail (complexión), Cabbage Cocktail, Red Cabbage Cocktail, etc. Skeleton custom + parser INGREDIENTS/METHOD blocks. 13 recetas, todas con ingredientes (sin cantidades — el libro promueve 'al gusto'). Categoría 'other' por la naturaleza no-alcohólica."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Whys and Wherefores",
+      "title_es": "Por qué y para qué",
+      "content_original": "Dr. Bengamin Gayelord Hauser presenta los 'Health Cocktails' — jugos de frutas y verduras crudas extraídas con la 'Health-Mine'. Inspirados en la 'La Cure des Fruits' francesa y el 'Gesundheitstag' alemán. Promete pep y vitalidad por las vitaminas y minerales preservados (no destruidos por cocción). Lanzamiento social en el salón de Elizabeth Arden con Mrs. William Mitchell y Mrs. Leslie Wheeler como anfitrionas.",
+      "content_es": "Dr. Bengamin Gayelord Hauser presenta los 'Health Cocktails' — jugos de frutas y verduras crudas extraídas con la 'Health-Mine'. Inspirados en la 'La Cure des Fruits' francesa y el 'Gesundheitstag' alemán. Promete pep y vitalidad por las vitaminas y minerales preservados."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Health Cocktails",
+      "title_es": "Cócteles saludables (jugos crudos)",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-001",
+      "order": 1,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "CELERY COCKTAIL",
+      "name_es": "Celery Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fresh, crisp celery",
+          "item_es": "apio fresco y crujiente",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Wash celery. Cut stalks into two-inch pieces and put through the Health-Mine. Have the juice of half a lemon in the cup into which the celery juice flows. This adds tempting flavor and pre serves the clear, fresh color of this sparkling cocktail. (It is best not to use too many of the celery leaves, as they make the juice too bitter.) One and a half cups of this juice is a good daily ration for one person. This cup and a half is divided into three cocktails—preferably to be taken between meals and before retiring. The Celery Cocktail should be made fresh every day.",
+      "method_es": "Wash celery. Cut stalks into two-inch pieces and put through the Health-Mine. Have the juice of half a lemon in the cup into which the celery juice flows. This adds tempting flavor and pre serves the clear, fresh color of this sparkling cocktail. (It is best not to use too many of the celery leaves, as they make the juice too bitter.) One and a half cups of this juice is a good daily ration for one person. This cup and a half is divided into three cocktails—preferably to be taken between meals and before retiring. The Celery Cocktail should be made fresh every day.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CELERY COCKTAIL\n\nINGREDIENTS\n\n    Fresh, Crisp Celery\n    Lemon Juice\n\nMETHOD\n  Wash celery. Cut stalks into two-inch pieces\nand put through the Health-Mine. Have the juice\nof half a lemon in the cup into which the celery\njuice flows. This adds tempting flavor and pre\nserves the clear, fresh color of this sparkling\ncocktail.\n   (It is best not to use too many of the celery\nleaves, as they make the juice too bitter.)\n   One and a half cups of this juice is a good\ndaily ration for one person. This cup and a half\nis divided into three cocktails—preferably to be\ntaken between meals and before retiring.\n  The Celery Cocktail should be made fresh\nevery day.\n\nThis Celery Cocktail is a specific against:\n     Indigestion\n     Sour Stomach\n\n     All forms of Rheumatism\n\n                                           [31]\n                                  Here's How"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-002",
+      "order": 2,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "IRON COCKTAIL",
+      "name_es": "Iron Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "crisp, dark green spinach",
+          "item_es": "espinaca verde oscura crujiente",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "fresh parsley",
+          "item_es": "perejil fresco",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "orange juice for flavor",
+          "item_es": "orange juice for flavor",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Put well washed spinach and parsley through the Health-Mine. Two large handfuls of spinach, a small handful of parsley, is the best propor. tion. This juice, rich in iron and copper, makes a potent body-huilding tonic but is not pleasant to the taste. For this reason it is mixed with orange juice—about half and half. Three cups a day of this spinach, parsley and orange juice makes a splendid cocktail and is easily taken by those who \"hate spinach.\"",
+      "method_es": "Put well washed spinach and parsley through the Health-Mine. Two large handfuls of spinach, a small handful of parsley, is the best propor. tion. This juice, rich in iron and copper, makes a potent body-huilding tonic but is not pleasant to the taste. For this reason it is mixed with orange juice—about half and half. Three cups a day of this spinach, parsley and orange juice makes a splendid cocktail and is easily taken by those who \"hate spinach.\"",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IRON COCKTAIL\n\nINGREDIENTS\n\n        Crisp, Dark Green Spinach\n        Fresh Parsley\n        Orange Juice for Flavor\n\nMETHOD\n  Put well washed spinach and parsley through\nthe Health-Mine. Two large handfuls of spinach,\na small handful of parsley, is the best propor.\ntion.\n  This juice, rich in iron and copper, makes a\npotent body-huilding tonic but is not pleasant\nto the taste. For this reason it is mixed with\norange juice—about half and half.\n  Three cups a day of this spinach, parsley and\norange juice makes a splendid cocktail and is\neasily taken by those who \"hate spinach.\"\n\nThis Iron Cocktail is a specific in all forms of\n    anemia and is an all-round building tonic.\n\n\n\n\n[32]\nTo Be Healthy"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-003",
+      "order": 3,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "CARROT COCKTAIL",
+      "name_es": "Carrot Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "golden carrots",
+          "item_es": "golden carrots",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "orange juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Scrub carrots until their skin glows and sparkles. Cut into vertical strips about one half inch wide and put through the Health-Mine. (If you prefer you may shred the carrots on a medium sized shredder and then put them through the Health-Mine.) This juice deteriorates very easily and loses its golden color. For this reason you must have some orange juice in the cup into which the juice flows. Since carrots are quite dry and do not give much juice you may put them twice through the Health-Mine. Mix the carrot juice with the orange juice in equal proportions. This Carrot Cocktail, if faithfully imbibed, is warranted to produce that schoolgirl com plexion.",
+      "method_es": "Scrub carrots until their skin glows and sparkles. Cut into vertical strips about one half inch wide and put through the Health-Mine. (If you prefer you may shred the carrots on a medium sized shredder and then put them through the Health-Mine.) This juice deteriorates very easily and loses its golden color. For this reason you must have some orange juice in the cup into which the juice flows. Since carrots are quite dry and do not give much juice you may put them twice through the Health-Mine. Mix the carrot juice with the orange juice in equal proportions. This Carrot Cocktail, if faithfully imbibed, is warranted to produce that schoolgirl com plexion.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CARROT COCKTAIL\n\nINGREDIENTS\n\n     Golden Carrots\n\n     Orange Juice\n\nMETHOD\n  Scrub carrots until their skin glows and\nsparkles. Cut into vertical strips about one half\ninch wide and put through the Health-Mine.\n  (If you prefer you may shred the carrots on\na medium sized shredder and then put them\nthrough the Health-Mine.)\n  This juice deteriorates very easily and loses its\ngolden color. For this reason you must have\nsome orange juice in the cup into which the\njuice flows.\n  Since carrots are quite dry and do not give\nmuch juice you may put them twice through the\nHealth-Mine.\n  Mix the carrot juice with the orange juice in\nequal proportions.\n\nThis Carrot Cocktail, if faithfully imbibed, is\n     warranted to produce that schoolgirl com\n     plexion.\n\n\n\n                                            [33]\n                               Here's How"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-004",
+      "order": 4,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "CABBAGE COCKTAIL",
+      "name_es": "Cabbage Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fresh young cabbage (the younger the",
+          "item_es": "fresh young cabbage (the younger the",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "cabbage, the better the juice!)",
+          "item_es": "cabbage, the better the juice!)",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "grapefruit juice for palatability",
+          "item_es": "grapefruit juice for palatability",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Cut fresh cabbage into slices and put through the Health-Mine. To keep the cocktail crystal clear put a bit of lemon juice in the cup into which the cabbage juice flows. In this form it is a vital reducing drink. To make it more palatable, combine two-thirds cab bage juice and one-third grapefruit juice. Three cups of this cocktail is all that is needed in one day. It can be taken before meals as an appetizer or between meals. This Cabbage Cocktail contains: Chlorine, Iron and Magnesium. It is splendid for reducing the waistline and for correcting faulty elimination.",
+      "method_es": "Cut fresh cabbage into slices and put through the Health-Mine. To keep the cocktail crystal clear put a bit of lemon juice in the cup into which the cabbage juice flows. In this form it is a vital reducing drink. To make it more palatable, combine two-thirds cab bage juice and one-third grapefruit juice. Three cups of this cocktail is all that is needed in one day. It can be taken before meals as an appetizer or between meals. This Cabbage Cocktail contains: Chlorine, Iron and Magnesium. It is splendid for reducing the waistline and for correcting faulty elimination.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CABBAGE COCKTAIL\n\nINGREDIENTS\n\n     Fresh Young Cabbage (The younger the\n       cabbage, the better the juice!)\n     Lemon Juice\n     Grapefruit Juice for Palatability\n\nMETHOD\n  Cut fresh cabbage into slices and put through\nthe Health-Mine.\n  To keep the cocktail crystal clear put a bit of\nlemon juice in the cup into which the cabbage\njuice flows.\n  In this form it is a vital reducing drink. To\nmake it more palatable, combine two-thirds cab\nbage juice and one-third grapefruit juice.\n  Three cups of this cocktail is all that is needed\nin one day. It can be taken before meals as an\nappetizer or between meals.\n\nThis Cabbage Cocktail contains: Chlorine, Iron\n     and Magnesium.\n  It is splendid for reducing the waistline and\nfor correcting faulty elimination.\n\n\n\n[34]\nTo Be Healthy"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-005",
+      "order": 5,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "RED CABBAGE COCKTAIL",
+      "name_es": "Red Cabbage Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fresh red cabbage",
+          "item_es": "fresh red cabbage",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "unsweetened pineapple juice",
+          "item_es": "unsweetened pineapple juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Cut the red cabbage, nicely cleaned, into slices and put tbrougb the Health-Mine. The juice flows easily and the color is an attractive vermilion. To preserve this color and to make a most appe tizing combination, add unsweetened pineapple juice, either fresh or canned. Juice from the red cabbage, like that from the white, is a good reducing drink. But you must not spoil the combination by using more pine apple juice than cabbage juice. Two-thirds of red cabbage juice and one-third of pineapple juice is a most delicious combination.",
+      "method_es": "Cut the red cabbage, nicely cleaned, into slices and put tbrougb the Health-Mine. The juice flows easily and the color is an attractive vermilion. To preserve this color and to make a most appe tizing combination, add unsweetened pineapple juice, either fresh or canned. Juice from the red cabbage, like that from the white, is a good reducing drink. But you must not spoil the combination by using more pine apple juice than cabbage juice. Two-thirds of red cabbage juice and one-third of pineapple juice is a most delicious combination.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RED CABBAGE COCKTAIL\n\nINGREDIENTS\n\n     Fresh Red Cabbage\n     Unsweetened Pineapple Juice\n\nMETHOD\n  Cut the red cabbage, nicely cleaned, into slices\nand put tbrougb the Health-Mine. The juice flows\neasily and the color is an attractive vermilion. To\npreserve this color and to make a most appe\ntizing combination, add unsweetened pineapple\njuice, either fresh or canned.\n  Juice from the red cabbage, like that from the\nwhite, is a good reducing drink. But you must\nnot spoil the combination by using more pine\napple juice than cabbage juice. Two-thirds of\nred cabbage juice and one-third of pineapple\njuice is a most delicious combination.\n\nThis Red Cabbage Cocktail is a specific reducing\n    cocktail. It may be served as an appetizer\n    before meals or at any time between meals.\n\n\n\n\n                                            [35]\n                              Here's How"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-006",
+      "order": 6,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "CUCUMBER COCKTAIL",
+      "name_es": "Cucumber Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "young cucumbers",
+          "item_es": "young cucumbers",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "grapefruit juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Cut unpeeled cucumbers into slices and put them through the Health-Mine. Since cucumbers are about 70^ \"live water\" you will get a lot of juice. Grapefruit juice added to the cucumber juice sets the delicate color and improves the flavor. Equal amounts make the finest taste. Because cucumbers are a natural diuretic kid ney flush, not more than one and one-half cups should he taken daily. Cucumber juice deteriorates very quickly so it should immediately he put into the refrigerator.",
+      "method_es": "Cut unpeeled cucumbers into slices and put them through the Health-Mine. Since cucumbers are about 70^ \"live water\" you will get a lot of juice. Grapefruit juice added to the cucumber juice sets the delicate color and improves the flavor. Equal amounts make the finest taste. Because cucumbers are a natural diuretic kid ney flush, not more than one and one-half cups should he taken daily. Cucumber juice deteriorates very quickly so it should immediately he put into the refrigerator.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CUCUMBER COCKTAIL\n\nINGREDIENTS\n\n    Young Cucumbers\n    Grapefruit Juice\n\nMETHOD\n  Cut unpeeled cucumbers into slices and put\nthem through the Health-Mine. Since cucumbers\nare about 70^ \"live water\" you will get a lot\nof juice.\n  Grapefruit juice added to the cucumber juice\nsets the delicate color and improves the flavor.\nEqual amounts make the finest taste.\n  Because cucumbers are a natural diuretic kid\nney flush, not more than one and one-half cups\nshould he taken daily.\n  Cucumber juice deteriorates very quickly so\nit should immediately he put into the refrigerator.\nThis Cucumber Cocktail is a specific for the sys\n    tem, especially for the kidneys. Puffs under\n    the eyes have been known to disappear after\n     the use of this natural medicine.\n\n\n\n\n[36]\nTo Be Healthy"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-007",
+      "order": 7,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "BEET COCKTAIL",
+      "name_es": "Beet Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "young tender beet roots",
+          "item_es": "young tender beet roots",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "a few young leaves",
+          "item_es": "a few young leaves",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "pineapple juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Cut up the beets and leaves and put them through the Health-Mine. A beautiful ruby-tinted \"vegetable wine\" will flow into your cup. To retain the color and to make the cocktail more tasty, you may add fresh or canned pine apple juice (unsweetened). Half and half makes the right combination. This cocktail is highly alkaline. It has high appetite appeal, because of its flavor and because of its wine-like hue. It makes a splendid change among the health cocktails.",
+      "method_es": "Cut up the beets and leaves and put them through the Health-Mine. A beautiful ruby-tinted \"vegetable wine\" will flow into your cup. To retain the color and to make the cocktail more tasty, you may add fresh or canned pine apple juice (unsweetened). Half and half makes the right combination. This cocktail is highly alkaline. It has high appetite appeal, because of its flavor and because of its wine-like hue. It makes a splendid change among the health cocktails.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BEET COCKTAIL\n\nINGREDIENTS\n\n    Young Tender Beet Roots\n    A Few Young Leaves\n    Pineapple Juice\n\nMETHOD\n  Cut up the beets and leaves and put them\nthrough the Health-Mine. A beautiful ruby-tinted\n\"vegetable wine\" will flow into your cup.\n  To retain the color and to make the cocktail\nmore tasty, you may add fresh or canned pine\napple juice (unsweetened). Half and half makes\nthe right combination.\n  This cocktail is highly alkaline. It has high\nappetite appeal, because of its flavor and because\nof its wine-like hue. It makes a splendid change\namong the health cocktails.\n\nThis Beet Cocktail is a specific for driving out\n    acids and is a general building tonic.\n\n\n\n\n                                           [37]\n                              Here's How"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-008",
+      "order": 8,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "RADISH COCKTAIL",
+      "name_es": "Radish Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "radishes—white, red, or (still better) the",
+          "item_es": "radishes—white, red, or (still better) the",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "large black variety",
+          "item_es": "large black variety",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Cut the radishes into small pieces and put through the Health-Mine. The younger they are the better they are, for the more juice they will yield. So choose them young and fresh. The color of the cocktail depends on the variety of radish you use. The small red ones make a very attractive cocktail. Be sure to have some lemon juice in the cup into which the radish juice flows. This wholesome juice is rich in sulphur and is a rather strong medicine. Therefore not more than one cupful a day two or three times a week should be taken. To tickle the palate with radish juice mix it with grapefruit juice—^half and half. This Radish Cocktail, because of its sulphur, is a potent tonic and a powerful cleanser for the gall bladder.",
+      "method_es": "Cut the radishes into small pieces and put through the Health-Mine. The younger they are the better they are, for the more juice they will yield. So choose them young and fresh. The color of the cocktail depends on the variety of radish you use. The small red ones make a very attractive cocktail. Be sure to have some lemon juice in the cup into which the radish juice flows. This wholesome juice is rich in sulphur and is a rather strong medicine. Therefore not more than one cupful a day two or three times a week should be taken. To tickle the palate with radish juice mix it with grapefruit juice—^half and half. This Radish Cocktail, because of its sulphur, is a potent tonic and a powerful cleanser for the gall bladder.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RADISH COCKTAIL\n\nINGREDIENTS\n\n     Radishes—White, Red, or (still better) the\n       Large black Variety\n     Lemon Juice\n\nMETHOD\n  Cut the radishes into small pieces and put\nthrough the Health-Mine. The younger they are\nthe better they are, for the more juice they will\nyield. So choose them young and fresh.\n  The color of the cocktail depends on the variety\nof radish you use. The small red ones make a\nvery attractive cocktail. Be sure to have some\nlemon juice in the cup into which the radish\njuice flows.\n  This wholesome juice is rich in sulphur and is\na rather strong medicine. Therefore not more\nthan one cupful a day two or three times a week\nshould be taken.\n  To tickle the palate with radish juice mix it\nwith grapefruit juice—^half and half.\n\nThis Radish Cocktail, because of its sulphur, is a\n    potent tonic and a powerful cleanser for the\n    gall bladder.\n\n\n[38]\nTo Be Healthy"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-009",
+      "order": 9,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "WATERCRESS COCKTAIL",
+      "name_es": "Watercress Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "crisp watercress",
+          "item_es": "crisp watercress",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "fresh parsley or spinach",
+          "item_es": "fresh parsley or spinach",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "orange juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Watercress is rich in mustard oil, so it is better to mix it vdth some other milder green, such as parsley or spinach. Put equal parts of the watercress and either parsley or spinach through the Health-Mine. There will be plenty of dark green juice, rich in minerals and vitamins. To give it an appealing taste add some orange juice. Equal amounts are best. This combination is a powerful cleanser and must be taken in small amounts. Two cocktails a day of one-half cup each are all that should be taken.",
+      "method_es": "Watercress is rich in mustard oil, so it is better to mix it vdth some other milder green, such as parsley or spinach. Put equal parts of the watercress and either parsley or spinach through the Health-Mine. There will be plenty of dark green juice, rich in minerals and vitamins. To give it an appealing taste add some orange juice. Equal amounts are best. This combination is a powerful cleanser and must be taken in small amounts. Two cocktails a day of one-half cup each are all that should be taken.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WATERCRESS COCKTAIL\n\nINGREDIENTS\n\n    Crisp Watercress\n    Fresh Parsley or Spinach\n    Orange Juice\n\nMETHOD\n  Watercress is rich in mustard oil, so it is better\nto mix it vdth some other milder green, such as\nparsley or spinach.\n  Put equal parts of the watercress and either\nparsley or spinach through the Health-Mine.\nThere will be plenty of dark green juice, rich\nin minerals and vitamins.\n  To give it an appealing taste add some orange\njuice. Equal amounts are best.\n  This combination is a powerful cleanser and\nmust be taken in small amounts. Two cocktails\na day of one-half cup each are all that should\nbe taken.\n\n\nThis Watercress Cocktail is a specific for blood\n    purification and because of its high alkaline\n    content it helps drive out rheumatic poisons.\n\n\n\n                                             [39]\n                             Here's How\n\n\n            COCKTAIL MIXTE\n\nINGREDIENTS\n\n    Cabbage, Crisp and Fresh\n    Celery, Ditto\n    Green Pepper, Sound and Firm\n    Lemon or Grapefruit Juice\n\nMETHOD\n  Put eqpial parts of cabbage and celery, with a\nbit of green pepper for flavor, through the\nHealth-Mine.\n   This makes a very well balanced mixture which\nis rich in iron, sodium and sulphur.\n   But for a drink that is utterly delicious, as\nwell as wholesome, add a bit of lemon or grape\nfruit juice.\n\nThis Cocktail can be taken three times a day\n    (one-half cup each time), preferably be\n    tween meals.\n\n\n\n\n[40]\n\n\n                        1\n                                                    'm\n\n\n\nTo Be Healthy"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-010",
+      "order": 10,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "SPRING COCKTAIL",
+      "name_es": "Spring Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tender rhubarb",
+          "item_es": "tender rhubarb",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "fresh strawberries",
+          "item_es": "fresas frescas",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "a little honey",
+          "item_es": "a little honey",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "garlic, about three cloves*",
+          "item_es": "garlic, about three cloves*",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "parsley, a large handful",
+          "item_es": "parsley, a large handful",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "green pepper, just a bit",
+          "item_es": "green pepper, just a bit",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "The fresh, tender stalks of rhubarb contain Nature's natural laxative elements. Fresh straw berries are potent in cleansing and beautifying elements. Equal parts of tender rhubarb and fresh straw berries put through the Health-Mine make a rose- colored juice as beautiful as it is wholesome. To prevent stringing, cut rhuharb stalks in two-inch pieces. A little honey to sweeten the cocktail makes this juice even more delicious. Two cupfuls a day is enough. This Cocktail, especially in the springtime, is a powerful drink to purify the system and clean up a muddy complexion. DE-TOXICANT COCKTAIL Garlic is Nature's most powerful gennicidal herb. Unfortunately its odor is so strong that most people never use it. This Health Cocktail offers a new and pleasant way of taking garlic without advertising the fact to the world. Put all the ingredients through the Health- Mine. The parsley juice is rich in copper and iron and helps to destroy the strong odor of garlic. The organic sulphur in garlic is a powerful cleanser for the entire intestinal tract. This De-Toxicant Cocktail can he taken two or three times a week, preferably before retiring. It is especially good for those suffering from excessive gas. *If fresh garlic is unobtainable add one-quarter tea- spoonful of Santay Garlic Powder to the Parsley Juice.",
+      "method_es": "The fresh, tender stalks of rhubarb contain Nature's natural laxative elements. Fresh straw berries are potent in cleansing and beautifying elements. Equal parts of tender rhubarb and fresh straw berries put through the Health-Mine make a rose- colored juice as beautiful as it is wholesome. To prevent stringing, cut rhuharb stalks in two-inch pieces. A little honey to sweeten the cocktail makes this juice even more delicious. Two cupfuls a day is enough. This Cocktail, especially in the springtime, is a powerful drink to purify the system and clean up a muddy complexion. DE-TOXICANT COCKTAIL Garlic is Nature's most powerful gennicidal herb. Unfortunately its odor is so strong that most people never use it. This Health Cocktail offers a new and pleasant way of taking garlic without advertising the fact to the world. Put all the ingredients through the Health- Mine. The parsley juice is rich in copper and iron and helps to destroy the strong odor of garlic. The organic sulphur in garlic is a powerful cleanser for the entire intestinal tract. This De-Toxicant Cocktail can he taken two or three times a week, preferably before retiring. It is especially good for those suffering from excessive gas. *If fresh garlic is unobtainable add one-quarter tea- spoonful of Santay Garlic Powder to the Parsley Juice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SPRING COCKTAIL\n\nINGREDIENTS\n\n    Tender Rhubarb\n\n    Fresh Strawberries\n\n    A Little Honey\n\nMETHOD\n  The fresh, tender stalks of rhubarb contain\nNature's natural laxative elements. Fresh straw\nberries are potent in cleansing and beautifying\nelements.\n  Equal parts of tender rhubarb and fresh straw\nberries put through the Health-Mine make a rose-\ncolored juice as beautiful as it is wholesome.\n  To prevent stringing, cut rhuharb stalks in\ntwo-inch pieces.\n  A little honey to sweeten the cocktail makes\nthis juice even more delicious.\n  Two cupfuls a day is enough.\n\nThis Cocktail, especially in the springtime, is a\n     powerful drink to purify the system and\n    clean up a muddy complexion.\n\n\n\n\n                                          [41]\n                                  Here's How\n\n\n         DE-TOXICANT COCKTAIL\n\nINGREDIENTS\n\n     Garlic, About Three Cloves*\n     Parsley, a Large Handful\n     Green Pepper, Just a Bit\n\nMETHOD\n   Garlic is Nature's most powerful gennicidal\nherb. Unfortunately its odor is so strong that\nmost people never use it. This Health Cocktail\noffers a new and pleasant way of taking garlic\nwithout advertising the fact to the world.\n  Put all the ingredients through the Health-\nMine. The parsley juice is rich in copper and\niron and helps to destroy the strong odor of\ngarlic.\n  The organic sulphur in garlic is a powerful\ncleanser for the entire intestinal tract.\n  This De-Toxicant Cocktail can he taken two\nor three times a week, preferably before retiring.\nIt is especially good for those suffering from\nexcessive gas.\n\n  *If fresh garlic is unobtainable add one-quarter tea-\nspoonful of Santay Garlic Powder to the Parsley Juice.\n\n\n\n[42]\nTo Be Healthy"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-011",
+      "order": 11,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "ENDOCRINE COCKTAIL",
+      "name_es": "Endocrine Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "egg yolks, one tablespoonful",
+          "item_es": "egg yolks, one tablespoonful",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "yellow olive oil, one quarter teaspoonful",
+          "item_es": "yellow olive oil, one quarter teaspoonful",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "sea greens, one quarter teaspoonful",
+          "item_es": "sea greens, one quarter teaspoonful",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "juice of two oranges",
+          "item_es": "juice of two oranges",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Mix the egg yolks, olive oil. Sea Greens and Orange Juice and beat until foamy. A bit of orange peel,shredded very fine,should top this cocktail. The nerve and glandular oils with the Sea Greens supply the proper nourishment for the glands. Orange peel, finely shredded, is a splendid means of providing the sunshine vitamin D. Not more than one of these cocktails should be taken every day. M r' rV 1",
+      "method_es": "Mix the egg yolks, olive oil. Sea Greens and Orange Juice and beat until foamy. A bit of orange peel,shredded very fine,should top this cocktail. The nerve and glandular oils with the Sea Greens supply the proper nourishment for the glands. Orange peel, finely shredded, is a splendid means of providing the sunshine vitamin D. Not more than one of these cocktails should be taken every day. M r' rV 1",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ENDOCRINE COCKTAIL\n\nINGREDIENTS\n\n     Egg Yolks, One Tablespoonful\n     Yellow Olive Oil, One Quarter Teaspoonful\n     Sea Greens, One Quarter Teaspoonful\n     Juice of Two Oranges\n\nMETHOD\n  Mix the egg yolks, olive oil. Sea Greens and\nOrange Juice and beat until foamy.\n  A bit of orange peel,shredded very fine,should\ntop this cocktail.\n  The nerve and glandular oils with the Sea\nGreens supply the proper nourishment for the\nglands.\n  Orange peel, finely shredded, is a splendid\nmeans of providing the sunshine vitamin D.\n  Not more than one of these cocktails should\nbe taken every day.\n\n\n\n\n                                         [43]\n\n\n\n\n                                                   M\n                                       Here's How\n\nr'\nrV 1"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-012",
+      "order": 12,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "DANDELION COCKTAIL",
+      "name_es": "Dandelion Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dandelion leaves",
+          "item_es": "dandelion leaves",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "parsley or green onions",
+          "item_es": "parsley or green onions",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "lemon or grapefruit juice",
+          "item_es": "lemon or grapefruit juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "Dandelions are rich in potassium, iron and other alkaline elements, especially if you get the wild variety. Since these greens are very bitter it is best to mix them with parsley or green onions. Use equal amounts. Put them through the Health-Mine to make a rich dark green juice. Add grapefruit juice or lemon juice to taste, for the sake of palatability. Not more than two cupfuls a day of this potent juice should be taken. This Dandelion Cocktail is beneficial to those who are sluggish and tired. ANTI-COLD COCKTAILS 1. Wash a juicy grapefruit and cut into slices. Put peeling, seeds and all through the Health- Mine. This makes a strong, rather hitter juice which has specific properties for breaking up colds. For flavor, add some honey. Drink a glassful of this juice at least three times a day, preferably in the morning, at noon and before retiring. 2. Cut up two large, juicy oranges, peeling and all, and put through the Health-Mine. This orange juice is rich in Vitamin C and the peeling is saturated with the sunshine Vitamin D, a powerful factor in breaking up colds. For best results this cocktail should be taken about every two hours.",
+      "method_es": "Dandelions are rich in potassium, iron and other alkaline elements, especially if you get the wild variety. Since these greens are very bitter it is best to mix them with parsley or green onions. Use equal amounts. Put them through the Health-Mine to make a rich dark green juice. Add grapefruit juice or lemon juice to taste, for the sake of palatability. Not more than two cupfuls a day of this potent juice should be taken. This Dandelion Cocktail is beneficial to those who are sluggish and tired. ANTI-COLD COCKTAILS 1. Wash a juicy grapefruit and cut into slices. Put peeling, seeds and all through the Health- Mine. This makes a strong, rather hitter juice which has specific properties for breaking up colds. For flavor, add some honey. Drink a glassful of this juice at least three times a day, preferably in the morning, at noon and before retiring. 2. Cut up two large, juicy oranges, peeling and all, and put through the Health-Mine. This orange juice is rich in Vitamin C and the peeling is saturated with the sunshine Vitamin D, a powerful factor in breaking up colds. For best results this cocktail should be taken about every two hours.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DANDELION COCKTAIL\n\n       INGREDIENTS\n\n            Dandelion Leaves\n\n            Parsley or Green Onions\n            Lemon or Grapefruit Juice\n\n       METHOD\n           Dandelions are rich in potassium, iron and\n       other alkaline elements, especially if you get the\n       wild variety. Since these greens are very bitter\n       it is best to mix them with parsley or green onions.\n           Use equal amounts. Put them through the\n       Health-Mine to make a rich dark green juice.\n           Add grapefruit juice or lemon juice to taste,\n       for the sake of palatability.\n           Not more than two cupfuls a day of this potent\n       juice should be taken.\n\n       This Dandelion Cocktail is beneficial to those\n            who are sluggish and tired.\n\n\n\n\n       [44]\nTo Be Healthy\n\n\n        ANTI-COLD COCKTAILS\n\n1. Wash a juicy grapefruit and cut into slices.\nPut peeling, seeds and all through the Health-\nMine.\n  This makes a strong, rather hitter juice which\nhas specific properties for breaking up colds.\n  For flavor, add some honey.\n  Drink a glassful of this juice at least three\ntimes a day, preferably in the morning, at noon\nand before retiring.\n\n2. Cut up two large, juicy oranges, peeling and\nall, and put through the Health-Mine.\n  This orange juice is rich in Vitamin C and the\npeeling is saturated with the sunshine Vitamin D,\na powerful factor in breaking up colds.\n  For best results this cocktail should be taken\nabout every two hours.\n\n\n\n\n                                          [45]\n                                       Here's How"
+    },
+    {
+      "id": "1934-heres-how-to-be-healthy-by-b-g-hauser-013",
+      "order": 13,
+      "section_title": "Health Cocktails",
+      "category": "other",
+      "name_original": "PARTY COCKTAIL",
+      "name_es": "Party Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "grapefruit juice",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "italian celery (also called fenuchi or",
+          "item_es": "italian celery (also called fenuchi or",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        },
+        {
+          "item_original": "anise)",
+          "item_es": "anise)",
+          "amount": null,
+          "unit": null,
+          "notes": "fresh, raw — no quantity (use to taste / press through Health-Mine)"
+        }
+      ],
+      "method_original": "You may use fresh or canned grapefruit juice. To one cupful add one tablespoonful of the fresh juice extracted from the Italian celery. This makes a delicious and interesting drink that will make your guests think you are serving a French ahsinthe. Unsweetened pineapple juice may be used in place of the grapefruit juice. This combination is piquant and tempting. If you must put a \"stick\" in this cocktail, let your conscience be your guide.",
+      "method_es": "You may use fresh or canned grapefruit juice. To one cupful add one tablespoonful of the fresh juice extracted from the Italian celery. This makes a delicious and interesting drink that will make your guests think you are serving a French ahsinthe. Unsweetened pineapple juice may be used in place of the grapefruit juice. This combination is piquant and tempting. If you must put a \"stick\" in this cocktail, let your conscience be your guide.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PARTY COCKTAIL\n\n            INGREDIENTS\n\n               Grapefruit Juice\n               Italian Celery (Also Called Fenuchi or\n                 Anise)\n\n            METHOD\n           You may use fresh or canned grapefruit juice.\n        To one cupful add one tablespoonful of the fresh\n        juice extracted from the Italian celery.\n          This makes a delicious and interesting drink\n        that will make your guests think you are serving\n        a French ahsinthe.\n          Unsweetened pineapple juice may be used in\n        place of the grapefruit juice. This combination\n        is piquant and tempting.\n           If you must put a \"stick\" in this cocktail, let\n        your conscience be your guide.\n\n        This Party Cocktail is a specific against gloom\n            and depression.\n\n\n\n\n       [46]\n\n\n\n\ni'v . I .\nTo Be Healthy\n\n\n   GLORIHED TOMATO COCKTAILS\n  Tomato juice has so many good properties by\nitself that it has become, within a few years,\nAmerica's most popular vegetable drink.\n  A good brand of canned tomato juice is almost\nas good as the fresh juice. It has the big advan\ntage of being inexpensive at all seasons and of\nbeing ever ready to use.\n  You can serve tomato juice in many tempting\nways. Here is a new one: Add celery juice—\nabout equal proportions of the two give the best\ndrink. This makes a remarkable drink with lots\nof tang. Add a dash of Himgarian spice* and\nyour cocktail will be the hit of the party.\n\n           The Lazy Ann Cocktail\n   This cocktail can be made in a jiffy. Fresh\ncabbage juice is added to tomato juice. Two-\nthirds tomato juice to one-third cabbage juice\ngives a tempting result. And here is the Lazy\nAnn way: Mix two-thirds tomato juice and one-\nthird sauerkraut juice. This is a refreshing cock\ntail, mixed in a second, and it helps to reduce\nbulging waistlines.\n  *Nu-Spice (Hungarian style), Nu-Vege-Sal, Santay\nGarlic Powder, Meatless Bouillon and other important\naccessory foods may be obtained at your health food\nstore or direct from the manufacturers. Modern Health\nProducts, Inc., 1428 North 24th Street, Milwaukee, Wis\nconsin.\n\n                                               [47]\n                                Here's Hoiv\n\n\n    GLORIFIED POTASSIUM BROTH\n\nINGREDIENTS\n     Celery, One Bunch\n     Carrots, One Bunch\n     Spinach, a Handful\n     Parsley, a Pinch\n     Vegetable Salt, One Teaspoonful or Meat\n       less Bouillon, One Tablespoonful\nMETHOD\n  Everyone knows and likes my Potassium Broth.\nHere is a way of adding more flavour and savour:\n  Cut the vegetables fine or put them through an\nordinary chopper. When finely shredded or cut\nthere should be about three cups of celery, three\nof carrots and one of spinach. Our pinch of\nparsley should yield about a qpiarter cup. Add two\nquarts of water and cook from twenty to thirty\nminutes—not more. After the flame has been\nturned out add one level teaspoonful of vegetable\nsalt (Nu-Vege-Sal) or, if you like a meat-like\nflavor, add a tablespoonful of Meatless Bouil"
+    }
+  ]
+}

@@ -1,0 +1,3310 @@
+{
+  "book_id": "1932-one-hundred-ways-by-stafford-brothers",
+  "metadata": {
+    "title": "One Hundred Ways",
+    "author": "J.B.S. (Stafford Brothers, with brother George)",
+    "year": 1932,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Stafford Brothers",
+    "city": "New York",
+    "edition": "Second Printing, October 1932",
+    "source_file": "1932 One Hundred Ways by Stafford Brothers.txt",
+    "notes": "Tratado de gin ('Juniperus') durante la Prohibición. 'Read, mark and inwardly digest'. Define Dry Gin, Old Tom, Plymouth, Holland, Sloe Gin. Listas de glasses (10 designs), squeezers, strainers, jigger, muller, ice bag. Cada receta indica el glass No. recomendado. 58 recetas con skeleton custom + parser comma-aware. ~98% (57/58) con ingredientes parseados."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "On Gin (Juniperus) + Requisites + Glasses",
+      "title_es": "Sobre la ginebra (Juniperus) + utensilios + vasos",
+      "content_original": "J.B.S. (Stafford Brothers) y su hermano George publican este tratado de gin durante la Prohibición ('Read, mark and inwardly digest'). Argumentan que la basic ingredient (gin) puede hacerse en casa exitosamente. Describen tipos de gin (Dry, Old Tom, Plymouth, Holland, Sloe & Damson) y secondary ingredients (Absinthe 'interdicted but when obtainable...'). Catálogo de utensilios: shakers, squeezers, strainers, jigger, muller (wooden), ice bag, ice mallet. 10 designs de glasses (cocktail 8 oz, punch 10 oz / 4 oz, sour 5 oz / 4 oz, old fashioned 8 oz, highball 15 oz, pony 2 oz). Cada receta indica el 'glass No.' recomendado.",
+      "content_es": "Stafford Brothers (J.B.S. + George) publican este tratado de gin durante la Prohibición. Describen tipos de gin (Dry, Old Tom, Plymouth, Holland, Sloe & Damson) y catálogo de utensilios y 10 designs de glasses con capacidades específicas. Cada receta indica el 'glass No.' recomendado."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Recipes",
+      "title_es": "Recetas",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-001",
+      "order": 1,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Alexander Cocktail",
+      "name_es": "Alexander Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fresh cream",
+          "item_es": "nata fresca",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacao",
+          "item_es": "crème de cacao",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Alexander Cocktail\n        Vs fresh cream\n        Va Creme de Cacao\n        % gin\n  Shake thoroughly with ice, strain and serve in glass No. 6."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-002",
+      "order": 2,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Amer Picon Cocktail",
+      "name_es": "Amer Picon Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Amer Picon Cocktail\n        Vil Amer Picon\n        Yi grenadine\n        Yl gin\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-003",
+      "order": 3,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Angler's Cocktail",
+      "name_es": "Angler's Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dash of angostura bitters",
+          "item_es": "dash of angostura bitters",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash of grenadine",
+          "item_es": "dash of grenadine",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of orange bitters",
+          "item_es": "dashes of orange bitters",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Stir thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Angler's Cocktail\n         1 dash of Angostura Bitters\n         1 dash of grenadine\n         3 dashes of orange bitters\n        Y^ wineglass gin\n  Stir thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-004",
+      "order": 4,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Angel's Dream",
+      "name_es": "Angel's Dream",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "vanilla cream",
+          "item_es": "nata de vainilla",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "pint of ginger ale",
+          "item_es": "pint of ginger ale",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, fill remaining part with ginger ale",
+      "method_es": "Stir thoroughly with ice, fill remaining part with ginger ale",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Angel's Dream\n         1 tablespoon of vanilla cream\n        Yz wineglass gin\n        Yz pint of ginger ale\n  Stir thoroughly with ice, fill remaining part with ginger ale\nand serve in glass No. 4.\n\nPage Sixteen"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-005",
+      "order": 5,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "B. Barr Punch",
+      "name_es": "B. Barr Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoonfuls of sugar",
+          "item_es": "teaspoonfuls of sugar",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sprigs of fresh mint",
+          "item_es": "sprigs of fresh mint",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "oranges (juice)",
+          "item_es": "oranges (juice)",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint of fresh water",
+          "item_es": "pint of fresh water",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin in each glass",
+          "item_es": "gin in each glass",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "j'gger of orange juice",
+          "item_es": "j'gger of orange juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of orange peel",
+          "item_es": "thinly sliced piece of orange peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Put mint and sugar with one tablespoonful of water in mixing Fill glass with finely chopped ice. Stir thoroughly. Twist",
+      "method_es": "Put mint and sugar with one tablespoonful of water in mixing Fill glass with finely chopped ice. Stir thoroughly. Twist",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "B. Barr Punch\n                       (For six persons)\n\n         4 teaspoonfuls of sugar\n         4 sprigs of fresh mint\n         4 oranges (juice)\n       '1 lemon (juice)\n        1 pint of fresh water\n        1/2 wineglass gin in each glass\n  Put mint and sugar with one tablespoonful of water in mixing\nglass. Mash together to extract mint flavor. Pour all with the\nexception of gin into glass pitcher containing several large lumps\nof ice. Stir thoroughly. Into individual glasses add gin and fill\nwith punch. Serve in glass No. 2.\n\n\n                       B. Ban* Special\n         Y2 teaspoonful of sugar\n         V2 j'gger of orange juice\n         Vi wineglass gin\n          1 thinly sliced piece of orange peel\n          1 thinly sliced piece of lemon peel\n   Fill glass with finely chopped ice. Stir thoroughly. Twist\n orange and lemon peels and insert. Serve in glass No. 5."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-006",
+      "order": 6,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Blood Hound Cocktail",
+      "name_es": "Blood Hound Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fresh strawberries",
+          "item_es": "fresh strawberries",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "o£ sugar",
+          "item_es": "o£ sugar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of raspberry syrup",
+          "item_es": "dashes of raspberry syrup",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1. Shake thoroughly with ice, strain and fill remaining part with Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1. Shake thoroughly with ice, strain and fill remaining part with Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Blood Hound Cocktail\n             French vermouth\n          % Italian vermouth\n          H gin\n           3 fresh strawberries\n\n   Shake thoroughly with ice, strain and serve in glass No. 1.\n                                                   fage Seventeen\n                     Bird of Paradise\n         1 teaspoonful o£ sugar\n        Vi lemon juice\n        Vi gin\n         1 egg (white only)\n         3 dashes of raspberry syrup\n  Shake thoroughly with ice, strain and fill remaining part with\ncharged water. Serve in glass No. 4.\n\n                  Bronx Cocktail (dry)\n        % French vermouth\n        % gin\n        Vz jigger of orange juice\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-007",
+      "order": 7,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Bull Dog Highball",
+      "name_es": "Bull Dog Highball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "pint of ginger ale",
+          "item_es": "pint of ginger ale",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "demi-tasse of black coffee (hot)",
+          "item_es": "demi-tasse of black coffee (hot)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bull Dog Highball\n        Vz jigger of orange juice\n        Vz wineglass gin\n        Vz pint of ginger ale\n  Ice and serve in glass No. 4.\n\n                    Cafe au Genievre\n         1 teaspoonful gin\n         1 demi-tasse of black coffee (hot)\n  Sweeten to taste. Serve in demi-tasse."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-008",
+      "order": 8,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Cafe de Paris Cocktail",
+      "name_es": "Cafe de Paris Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fresh milk",
+          "item_es": "fresh milk",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of anisette",
+          "item_es": "dashes of anisette",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "®gg (white only)",
+          "item_es": "®gg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cafe de Paris Cocktail\n         1 teaspoonful of fresh milk\n         3 dashes of anisette\n         1 ®gg (white only)\n        Vz wineglass gin\n  Shake thoroughly with ice, strain and serve in glass No. 6.\nPage Eighteen"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-009",
+      "order": 9,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Camel Cocktail",
+      "name_es": "Camel Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "coffee with cream",
+          "item_es": "coffee with cream",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Camel Cocktail\n         1 teaspoonful of sugar\n        54 coffee with cream\n        '/z gin\n  Shake thoroughly with ice, strain and serve in glass No. 6."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-010",
+      "order": 10,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Chorus Lady Cocktail",
+      "name_es": "Chorus Lady Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "54",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fresh cream",
+          "item_es": "nata fresca",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dash of french vermouth",
+          "item_es": "dash of french vermouth",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash of grenadine",
+          "item_es": "dash of grenadine",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "54",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of grenadine",
+          "item_es": "dashes of grenadine",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sprig of fresh mint",
+          "item_es": "ramita de menta fresca",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, insert slice of orange and serve in Shake thoroughly with ice, strain and serve in glass No. 6. Shake thoroughly with ice, strain, insert mint leaves and serve in glass No. 6.",
+      "method_es": "Shake thoroughly with ice, insert slice of orange and serve in Shake thoroughly with ice, strain and serve in glass No. 6. Shake thoroughly with ice, strain, insert mint leaves and serve in glass No. 6.",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chorus Lady Cocktail\n        % French vermouth\n        Vs Italian vermouth\n        % gin\n        54 jigger of orange juice\n         1 thin slice of orange\n  Shake thoroughly with ice, insert slice of orange and serve in\nglass No. 1.\n\n                         Clover Club\n         1 teaspoonful of fresh cream\n         1 dash of French vermouth\n         1 dash of grenadine\n        54 jigger of lemon juice\n        54 wineglass gin\n Shake thoroughly with ice, strain and serve in glass No. 6.\n\n                         Clover Leaf\n\n        <4 lemon juice\n        54 Italian vermouth\n        '/z g'l\n         1 egg (white only)\n         2 dashes of grenadine\n       1 sprig of fresh mint\n Shake thoroughly with ice, strain, insert mint leaves and\nserve in glass No. 6.\n\n                                                 Page Nineteen"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-011",
+      "order": 11,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Colonial Cocktail",
+      "name_es": "Colonial Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "grapefruit juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of maraschino with cherry",
+          "item_es": "dashes of maraschino with cherry",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, insert cherry and serve in",
+      "method_es": "Shake thoroughly with ice, strain, insert cherry and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Colonial Cocktail\n            Vz grapefruit juice\n            % gin\n             2 dashes of maraschino with cherry\n      Shake thoroughly with ice, strain, insert cherry and serve in\n    glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-012",
+      "order": 12,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Cream Fizz",
+      "name_es": "Cream Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "fresh cream",
+          "item_es": "nata fresca",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, and squirt with charged",
+      "method_es": "Shake thoroughly with ice, strain, and squirt with charged",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cream Fizz\n             1 teaspoonful of sugar\n             1 teaspoonful of fresh cream\n            Vz jigger of lemon juice\n            ^ wineglass gin\n      Shake thoroughly with ice, strain, and squirt with charged\n    water. Serve in glass No. S."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-013",
+      "order": 13,
+      "section_title": "Recipes",
+      "category": "sour",
+      "name_original": "Curate Sour",
+      "name_es": "Curate Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of pineapple",
+          "item_es": "thin slice of pineapple",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and insert orange and pine",
+      "method_es": "Shake thoroughly with ice, strain and insert orange and pine",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Curate Sour\n             1 teaspoonful of sugar\n            <4 lemon juice\n            i/J red wine\n            'A gin\n             1 thin slice of orange\n             1 thin slice of pineapple\n      Shake thoroughly with ice, strain and insert orange and pine\n    apple. Serve in glass No. 3."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-014",
+      "order": 14,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Diamond Cocktail",
+      "name_es": "Diamond Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Diamond Cocktail\n             1 teaspoonful sugar\n            <4 lemon juice\n            % gin\n           l/i pint of champagne (dry)\n      With the exception of the champagne shake thoroughly with\n    ice, strain and fill remaining part with champagne. Serve in\n    glass No. 4.\n    Page Tu'enty\n\n\nk"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-015",
+      "order": 15,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Dubonnet Cocktail",
+      "name_es": "Dubonnet Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dubonnet",
+          "item_es": "Dubonnet",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, strain, twist lemon peel and insert. Serve in glass No. 1.",
+      "method_es": "Stir thoroughly with ice, strain, twist lemon peel and insert. Serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dubonnet Cocktail\n        Vs gin\n        % Dubonnet\n         1 thinly sliced piece of lemon peel\n  Stir thoroughly with ice, strain, twist lemon peel and insert.\nServe in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-016",
+      "order": 16,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Fancy Gin Cocktail",
+      "name_es": "Fancy Gin Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dashes of angostura bitters",
+          "item_es": "dashes of angostura bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of maraschino",
+          "item_es": "dashes of maraschino",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes gum syrup",
+          "item_es": "dashes gum syrup",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash absinthe",
+          "item_es": "dash absinthe",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of grenadine",
+          "item_es": "dashes of grenadine",
+          "amount": "6",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jiggcf    lemon juice",
+          "item_es": "jiggcf    lemon juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sprig of fresh mint",
+          "item_es": "ramita de menta fresca",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of angostura bitters",
+          "item_es": "dashes of angostura bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, strain, twist lemon peel and insert. Serve in glass No. 1. Note: The flavor will be improved by",
+      "method_es": "Stir thoroughly with ice, strain, twist lemon peel and insert. Serve in glass No. 1. Note: The flavor will be improved by",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fancy Gin Cocktail\n         2 dashes of Angostura Bitters\n         2 dashes of Maraschino\n         3 dashes gum syrup\n         1 dash absinthe\n          1 thinly sliced piece of lemon peel\n         Y2 wineglass gin\n  Stir thoroughly with ice, strain, twist lemon peel and insert.\nServe in glass No. 1. Note: The flavor will be improved by\nmoistening the edge of the glass with a piece of lemon.\n\n\n                         Gin Beauty\n         1 teaspoonful of powdered sugar\n         6 dashes of grenadine\n        V2 jiggcf    lemon juice\n        ■4 wineglass gin\n         1 sprig of fresh mint\n  Ice and fill with charged water. Insert mint and serve in\nglass No. 4.\n\n                        Gin and Bitters\n         2 dashes of Angostura Bitters\n        Yi wineglass gin\n  Ice and fill remaining part with water. Serve in glass No. 5.\n\n                                               Page TweHty-one"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-017",
+      "order": 17,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Gin Daisy",
+      "name_es": "Gin Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dash of maraschino",
+          "item_es": "dash of maraschino",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of orgeat slrop",
+          "item_es": "dashes of orgeat slrop",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "Vl",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and squirt with charged",
+      "method_es": "Shake thoroughly with ice, strain and squirt with charged",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Daisy\n         1 dash of Maraschino\n         4 dashes of Orgeat Slrop\n        Vl jigger of lemon juice\n        Yz wineglass gin\n  Shake thoroughly with ice, strain and squirt with charged\nwater. Serve in glass No. 5."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-018",
+      "order": 18,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Gin Dandy Cocktail",
+      "name_es": "Gin Dandy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dashes of angostura bitters",
+          "item_es": "dashes of angostura bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of curasao",
+          "item_es": "dashes of curasao",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of gum syrup",
+          "item_es": "dashes of gum syrup",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of raspberry syrup",
+          "item_es": "dashes of raspberry syrup",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ji^^cr of lemon juice",
+          "item_es": "ji^^cr of lemon juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, strain, twist lemon peel and insert. Serve in glass No. 1. Shake thoroughly with ice, strain, and sprinkle with nutmeg. Serve in glass No. 5. Shake thoroughly uniced, strain, fill with boiling water and Shake thoroughly with ice, strain, squirt with charged water",
+      "method_es": "Stir thoroughly with ice, strain, twist lemon peel and insert. Serve in glass No. 1. Shake thoroughly with ice, strain, and sprinkle with nutmeg. Serve in glass No. 5. Shake thoroughly uniced, strain, fill with boiling water and Shake thoroughly with ice, strain, squirt with charged water",
+      "glassware": "glass No. 5",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Dandy Cocktail\n         2 dashes of Angostura Bitters\n         2 dashes of Curasao\n         3 dashes of gum syrup\n        Yz wineglass gin\n         1 thinly sliced piece of lemon peel\n  Stir thoroughly with ice, strain, twist lemon peel and insert.\nServe in glass No. 1.\n\n\n                        Gin Flip (cold)\n         1 teaspoonful of powdered sugar\n         1 egg\n        Yi wineglass gin\n  Shake thoroughly with ice, strain, and sprinkle with nutmeg.\nServe in glass No. 5.\n\n\n                        Gin Flip (hot)\n         1 teaspoonful of sugar\n         1 egg (white only)\n        Yi wineglass gin\n  Shake thoroughly uniced, strain, fill with boiling water and\nsprinkle with nutmeg. Serve in glass No. 2.\nPage Twenty-two\n                             Gin Fix\n         1 teaspoonful of sugar\n         2 dashes of raspberry syrup\n         Vi ji^^cr of lemon juice\n         Yi wineglass gin\n         1 thin slice of orange\n  Shake thoroughly with ice, strain, squirt with charged water\nand insert orange. Serve in glass No. 9."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-019",
+      "order": 19,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 2.",
+      "method_es": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 2.",
+      "glassware": "glass No. 2",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Fizz\n         1 teaspoonful of sugar\n         Vz jigger of lemon juice\n         Y2 wineglass gin\n  Shake thoroughly with ice, strain and fill with charged water.\nServe in glass No. 2."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-020",
+      "order": 20,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "Gin Punch",
+      "name_es": "Gin Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dash of maraschino",
+          "item_es": "dash of maraschino",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ji££er of lemon juice",
+          "item_es": "ji££er of lemon juice",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thin sljce of orange",
+          "item_es": "thin sljce of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of fresh pineapple",
+          "item_es": "thin slice of fresh pineapple",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, fill with charged water and",
+      "method_es": "Shake thoroughly with ice, strain, fill with charged water and",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Punch\n         1 teaspoonful of sugar\n         1 teaspoonful of raspberry syrup\n         1 dash of Maraschino\n         Vl ji££er of lemon juice\n         Y2 wineglass gin\n         1 thin sljce of orange\n         1 thin slice of fresh pineapple\n  Shake thoroughly with ice, strain, fill with charged water and\ninsert orange and pineapple. Serve in glass No. 2."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-021",
+      "order": 21,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Gin Rickey",
+      "name_es": "Gin Rickey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "boiling water",
+          "item_es": "boiling water",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly uniced, strain, twist and insert lemon peel. Serve in glass No. 5.",
+      "method_es": "Stir thoroughly uniced, strain, twist and insert lemon peel. Serve in glass No. 5.",
+      "glassware": "glass No. 5",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Rickey\n         Y2 lime (juice and lime)\n         Yi wineglass gin\n  Ice, insert lime and fill with charged water. Serve in glass\nNo. 5.\n\n                                             Page Twenty^three\n                        Gin Skin (hot)\n         1 wineglass of boiling water\n         Vi wineglass gin\n         1 thinly sliced piece of lemon peel\n  Stir thoroughly uniced, strain, twist and insert lemon peel.\nServe in glass No. 5."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-022",
+      "order": 22,
+      "section_title": "Recipes",
+      "category": "smash",
+      "name_original": "Gin Smash",
+      "name_es": "Gin Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonsfuls of fresh water",
+          "item_es": "teaspoonsfuls of fresh water",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sprigs of fresh mint",
+          "item_es": "sprigs of fresh mint",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Put sugar, water and mint in glass. Mash together to extract",
+      "method_es": "Put sugar, water and mint in glass. Mash together to extract",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Smash\n         1 teaspoonful of sugar\n         2 teaspoonsfuls of fresh water\n         1 wineglass gin\n         3 sprigs of fresh mint\n  Put sugar, water and mint in glass. Mash together to extract\nmint flavor. Hill to top with flnely chopped ice and pour'in\ngin. Stir thoroughly. Serve in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-023",
+      "order": 23,
+      "section_title": "Recipes",
+      "category": "sour",
+      "name_original": "Gin Sour",
+      "name_es": "Gin Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, squirt with charged water",
+      "method_es": "Shake thoroughly with ice, strain, squirt with charged water",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Sour\n         1 teaspoonful of sugar\n        % lemon juice\n        % gin\n         1 thin slice of orange\n  Shake thoroughly with ice, strain, squirt with charged water\nand insert orange. Serve in glass No. 9."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-024",
+      "order": 24,
+      "section_title": "Recipes",
+      "category": "sour",
+      "name_original": "Gin Sour Cocktail",
+      "name_es": "Gin Sour Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tcaspoonful of powdered su^ar",
+          "item_es": "tcaspoonful of powdered su^ar",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fresh water",
+          "item_es": "agua fresca",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonfiil of powdered sugar",
+          "item_es": "teaspoonfiil of powdered sugar",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boiling water",
+          "item_es": "boiling water",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "five fruit syrup",
+          "item_es": "five fruit syrup",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "V4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake tlioroughly with ice, strain and serve in glass No. 1. ■ Stir thoroughly with ice, strain and serve in glass No. 5. Stir thoroughly, strain and seiwe in glass No. 5. Stir thoroughly with ice, strain, twist and insert lemon peel. Serve in glass No. 1.",
+      "method_es": "Shake tlioroughly with ice, strain and serve in glass No. 1. ■ Stir thoroughly with ice, strain and serve in glass No. 5. Stir thoroughly, strain and seiwe in glass No. 5. Stir thoroughly with ice, strain, twist and insert lemon peel. Serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Sour Cocktail\n         1 teaspoonful of sugar\n        % lemon juice\n        % gin\n  Shake tlioroughly with ice, strain and serve in glass No. 1. ■\nPage Twenty-four\n                      Gin Toddy (oold)\n         1 tcaspoonful of powdered su^ar\n         % fresh water\n         % gin\n  Stir thoroughly with ice, strain and serve in glass No. 5.\n\n\n                        Gin Toddy (Itot)\n          1 teaspoonfiil of powdered sugar\n         % boiling water\n         % gin\n  Stir thoroughly, strain and seiwe in glass No. 5.\n\n\n                         Gin Twister\n         1 teaspoonful of Five Fruit Syrup\n           lemon juice\n         V4 gin\n         1 thinly sliced piece of lemon peel\n  Stir thoroughly with ice, strain, twist and insert lemon peel.\nServe in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-025",
+      "order": 25,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "Ginger Ale and Gin Punch",
+      "name_es": "Ginger Ale and Gin Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemons (juice)",
+          "item_es": "lemons (juice)",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "oranges (juice)",
+          "item_es": "oranges (juice)",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wineglasses of grenadine",
+          "item_es": "wineglasses of grenadine",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "quart of ginger ale",
+          "item_es": "quart of ginger ale",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint of gin",
+          "item_es": "pint of gin",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of absinthe",
+          "item_es": "dashes of absinthe",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of grenadine",
+          "item_es": "dashes of grenadine",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "1",
+          "item_es": "1",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, and serve in punch bowl with glass Stir thoroughly in mixing glass with ice, strain, twist and",
+      "method_es": "Stir thoroughly with ice, and serve in punch bowl with glass Stir thoroughly in mixing glass with ice, strain, twist and",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ginger Ale and Gin Punch\n                         (for six persons)\n         3 lemons (juice)\n         3 oranges (juice)\n         2 wineglasses of grenadine\n         1 quart of ginger ale\n         1 pint of gin\n  Stir thoroughly with ice, and serve in punch bowl with glass\nNo. 7.\n\n                                               Page Twenty.five\n                        Gloom Chaser\n         2 dashes of absinthe\n         2 dashes of grenadine\n        % French vermouth\n                                                                          1\n                                                                          r\\\n                                                                          V'\n        % gin\n                                                                      »\n                                                                          ?!\n                                                                          1 1\n        1 thinly sliced piece of lemon peel\n  Stir thoroughly in mixing glass with ice, strain, twist and\ninsert lemon peel. Serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-026",
+      "order": 26,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Golden Fizz",
+      "name_es": "Golden Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg (yolk only)",
+          "item_es": "egg (yolk only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.75",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4.",
+      "method_es": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4.",
+      "glassware": "glass No. 4",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Golden Fizz\n         1 teaspoonful of sugar\n         1 egg (yolk only)\n        '4 lemon juice\n        3/4 gin\n  Shake thoroughly with ice, strain and fill with charged water.\nServe in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-027",
+      "order": 27,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Green Fizz",
+      "name_es": "Green Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of creme de menthe",
+          "item_es": "dashes of creme de menthe",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "14",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.75",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4.",
+      "method_es": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4.",
+      "glassware": "glass No. 4",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Green Fizz\n          1 teaspoonful of sugar\n         2 dashes of Creme de Menthe\n          1 egg (white only)\n         14 lemon juice\n         3/4 gin\n  Shake thoroughly with ice, strain and fill with charged water.\nServe in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-028",
+      "order": 28,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Green Meadow Highball",
+      "name_es": "Green Meadow Highball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pint of ginger ale",
+          "item_es": "pint of ginger ale",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sprigs of fresh mint",
+          "item_es": "sprigs of fresh mint",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Green Meadow Highball\n         i/i wineglass gin\n         1/2 pint of ginger ale\n          3 sprigs of fresh mint\n   Mash mint to extract flavor, ice and fill with ginger ale. Serve\nin glass No. 4.\n Page Twenty-six"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-029",
+      "order": 29,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Green Pasture Cocktail",
+      "name_es": "Green Pasture Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "14",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": "14",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Green Pasture Cocktail\n         14 pineapple juice\n         14 Creme de Menthe\n         Vl gin\n  Shake thoroughly with ice, strain and serve in glass No. 6."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-030",
+      "order": 30,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Hard Time Highball",
+      "name_es": "Hard Time Highball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "14",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly, fill glass with finely chopped ice, and remain",
+      "method_es": "Stir thoroughly, fill glass with finely chopped ice, and remain",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hard Time Highball\n         1 teaspoonful of sugar\n         Vi jigger of lemon juice\n         14 wineglass gin\n  Stir thoroughly, fill glass with finely chopped ice, and remain\ning part with fresh water. Serve in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-031",
+      "order": 31,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Havana Cocktail",
+      "name_es": "Havana Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dashes of maraschino",
+          "item_es": "dashes of maraschino",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Havana Cocktail\n         2 dashes of Maraschino\n        % pineapple juice\n        % gin\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-032",
+      "order": 32,
+      "section_title": "Recipes",
+      "category": "sour",
+      "name_original": "High Hat Sour",
+      "name_es": "High Hat Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of amer picon",
+          "item_es": "dashes of amer picon",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "14",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of apricot brandy",
+          "item_es": "dashes of apricot brandy",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whole lemon (peel only)",
+          "item_es": "whole lemon (peel only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint of ginger ale",
+          "item_es": "pint of ginger ale",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 9. Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 9. Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "High Hat Sour\n         1 teaspoonful of sugar\n         2 dashes of Amer Picon\n        14 lemon juice\n        % gin\n  Shake thoroughly with ice, strain and serve in glass No. 9.\n\n                        Highstepper\n        2 dashes of apricot brandy\n        Vs orange juice\n        % gin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\n\n                                              Page Twenty-seven\n                                                                 n\n\n                       Horse's Neck\n         1 whole lemon (peel only)\n        Y2 wineglass gin\n        Yl pint of ginger ale\n  Ice, insert lemon peel and fill up with ginger ale. Serve\nglass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-033",
+      "order": 33,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Ideal Cocktail",
+      "name_es": "Ideal Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly' with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly' with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ideal Cocktail\n         1 teaspoonful of sugar\n        Ya grapefruit juice\n        Ya French vermouth\n        Yt gin\n  Shake thoroughly' with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-034",
+      "order": 34,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "J. H. Highball",
+      "name_es": "J. H. Highball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grape juice",
+          "item_es": "grape juice",
+          "amount": "54",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fresh milk",
+          "item_es": "fresh milk",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and cover top with Creme",
+      "method_es": "Shake thoroughly with ice, strain and cover top with Creme",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "J. H. Highball\n        Yl jigger of lemon juice\n        54 wineglass of grape juice\n        54 wineglass gin\n  Ice and fill with charged water. Serve in glass No. 4.\n\n\n                        Lady Love\n         1 teaspoonful of powdered sugar\n         1 teaspoonful of lemon juice\n         1 egg (white only)\n         1 wineglass of fresh milk\n       54 wineglass gin\n  Shake thoroughly with ice, strain and cover top with Creme\nde Menthe. Serve in glass No. 2.\nPage Twenty-eight"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-035",
+      "order": 35,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Little Honey Cocktail",
+      "name_es": "Little Honey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dash angostura bitters",
+          "item_es": "dash angostura bitters",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "honey",
+          "item_es": "miel",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "green olive",
+          "item_es": "green olive",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced lemon peel",
+          "item_es": "thinly sliced lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "green olive",
+          "item_es": "green olive",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1. Twist and insert lemon peel in mixing glass. Stir thoroughly Twist and insert lemon peel in mixing glass. Stir thoroughly",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1. Twist and insert lemon peel in mixing glass. Stir thoroughly Twist and insert lemon peel in mixing glass. Stir thoroughly",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Little Honey Cocktail\n                1 dash Angostura Bitters\n                1 teaspoonful of honey\n               % lemon juice\n               % gin\n        Sliake thoroughly with ice, strain and serve in glass No. 1.\n\n\n I*\n                             Maiden's Blush\nli)\n                1 teaspoonful of grenadine\n               % absinthe\n               % gin\n        Shake thoroughly with ice, strain and serve in glass No. 1.\n\n\n                              Martini (dry)\n               Mi French vermoutli\n               % gin\n               1' thinly sliced piece of lemon peel\n               1 green olive\n        Twist and insert lemon peel in mixing glass. Stir thoroughly\n      with ice, strain, insert olive and serve in glass No. 1.\n\n\n                            Martini (sweet)\n              % Italian vermouth\n              % gin\n              1 thinly sliced lemon peel\n              1 green olive\n        Twist and insert lemon peel in mixing glass. Stir thoroughly\n      with ice, strain, insert olive and serve in glass No. 1.\n\n                                                      Page Twenty-nine"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-036",
+      "order": 36,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Merry Widow Fizz",
+      "name_es": "Merry Widow Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and fill remaining part with",
+      "method_es": "Shake thoroughly with ice, strain and fill remaining part with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Merry Widow Fizz\n         1 teaspoonful of sugar\n        1 egg (white only)\n        % orange juice\n        '/i lemon juice       ^\n        'A gin\n  Shake thoroughly with ice, strain and fill remaining part with\ncharged water. Serve in glass No. 2."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-037",
+      "order": 37,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Monkey Gland Cocktail",
+      "name_es": "Monkey Gland Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dash of absinthe",
+          "item_es": "dash of absinthe",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Monkey Gland Cocktail\n         1 dash of absinthe\n         1 teaspoonful of grenadine\n        Yz orange juice\n        Vl gin\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-038",
+      "order": 38,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Moth Cocktail",
+      "name_es": "Moth Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dash of absinthe",
+          "item_es": "dash of absinthe",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pickled onions",
+          "item_es": "pickled onions",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of orange bitters",
+          "item_es": "dashes of orange bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lump of sugar",
+          "item_es": "lump of sugar",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of angostura bitters",
+          "item_es": "dashes of angostura bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of orange bitters",
+          "item_es": "dashes of orange bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of maraschino with cherry",
+          "item_es": "dashes of maraschino with cherry",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly with ice, strain, and insert pickled onions. Serve in glass No. 1. Shake thoroughly with ice, strain and serve in glass No. 1. Fill glass with finely chopped ice and remaining part with",
+      "method_es": "Stir thoroughly with ice, strain, and insert pickled onions. Serve in glass No. 1. Shake thoroughly with ice, strain and serve in glass No. 1. Fill glass with finely chopped ice and remaining part with",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Moth Cocktail\n\n         1 dash of absinthe\n        % French vermouth\n        % gin\n         2 pickled onions\n  Stir thoroughly with ice, strain, and insert pickled onions.\nServe in glass No. 1.\n\n\n                     Orange Blossom\n        Yt orange juice\n        Yl gin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\n\nPage Thirty\n                       Orange Mambi\n          1 teaspoonful of sugar\n         Yl jigger of orange juice\n         Yx wineglass gin\n  Fill glass with finely chopped ice and remaining part with\ncharged water. Serve in glass No. 4.\n\n\n\n                 Old Fashioned Gin (dry)\n         2 dashes of orange bitters\n         % French vermouth\n         % gin\n         1 thinly sliced piece of lemon peel\n  Ice with one large lump, twist and insert lemon peel. Serve\nwith small stirring spoon in glass No. 8.\n\n\n\n\n               Old Fashioned Gin (sweet)\n         1 lump of sugar\n         2 dashes of Angostura Bitters\n         2 dashes of orange bitters\n         3 dashes of maraschino with cherry\n         1 teaspoonful of lemon juice\n         Yi wineglass gin\n          1 thinly sliced piece of lemon peel\n         1 thin slice of orange\n  Crush sugar with Angostura Bitters in bottom of glass. Ice\nwith one large lump. Twist and insert lemon peel with slice of\norange and cherry. Serve with small stirring spoon in glass\nNo. 8.\n\n\n                                                Page Thirty-one\n\n\n                                                                  A\n                                                                 l|"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-039",
+      "order": 39,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Orgeat Cocktail",
+      "name_es": "Orgeat Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orgeat",
+          "item_es": "orgeat",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Orgeat Cocktail\n         1 teaspoonful of sugar\n        Vi lemon juice\n        % orgeat\n        Vj gin\n Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-040",
+      "order": 40,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Paradise Cocktail",
+      "name_es": "Paradise Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1. Shake thoroughly with ice, strain and insert peach. Serve in",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1. Shake thoroughly with ice, strain and insert peach. Serve in",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Paradise Cocktail\n        % apricot brandy\n        % gin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\n\n\n                         Peach Blow\n         1 teaspoonful of sugar\n        Vi lemon juice\n        ¥4 gin\n        I/2 of a fresh peach\n  Shake thoroughly with ice, strain and insert peach. Serve in\nglass No. 2."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-041",
+      "order": 41,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "Pineapple Punch",
+      "name_es": "Pineapple Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "oranges (juice)",
+          "item_es": "oranges (juice)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple, peeled, sliced and cut up",
+          "item_es": "pineapple, peeled, sliced and cut up",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint of charged water",
+          "item_es": "pint of charged water",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "quart of red wine",
+          "item_es": "quart of red wine",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "maple syrup",
+          "item_es": "maple syrup",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dash of grenadine",
+          "item_es": "dash of grenadine",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pineapple Punch\n                         (for six persons)\n         2 oranges (juice)\n         1 pineapple, peeled, sliced and cut up\n        '/2 pint of Raspberry Syrup\n         ¥2 pint of Maraschino\n        Vi pint of charged water\n        '/i pint of gin\n          1 quart of red wine\n  Ice and serve in punch bowl with glass No. 7.\n\nPage Thirty-two\n                           Pink Lady\n          1 teaspoonful of maple syrup\n          1 dash of Grenadine\n\n         '/z grape fruit juice\n         '/z gin\n   Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-042",
+      "order": 42,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Plaza Cocktail",
+      "name_es": "Plaza Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plaza Cocktail\n         54 French Vermouth\n         54 Italian Vermouth\n         54 pineapple juice\n         54 gin\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-043",
+      "order": 43,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Polo Cocktail",
+      "name_es": "Polo Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grape fruit juice",
+          "item_es": "grape fruit juice",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Polo Cocktail\n         54 orange juice\n         54 grape fruit juice\n        54 gin\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-044",
+      "order": 44,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Queen's Cocktail",
+      "name_es": "Queen's Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "chunk of pineapple",
+          "item_es": "chunk of pineapple",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "fresh strawberries",
+          "item_es": "fresh strawberries",
+          "amount": "6",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, orange and pineapple and serve Shake thoroughly with ice, strain and serve In glass No. 1.",
+      "method_es": "Shake thoroughly with ice, orange and pineapple and serve Shake thoroughly with ice, strain and serve In glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Queen's Cocktail\n        54 French Vermouth\n        54 Italian Vermouth\n        54 gin\n         1 thin slice of orange\n         1 chunk of pineapple\n  Shake thoroughly with ice, orange and pineapple and serve\nin glass No. I.\n                                              Page Thirly-three\n                           Rain Bow\n          1 teaspoonful of sugar\n         '/4 lemon juice\n         ¥4 gin\n          6 fresh strawberries\n  Shake thoroughly with ice, strain and serve In glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-045",
+      "order": 45,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Remus Fizz",
+      "name_es": "Remus Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dash of grenadine",
+          "item_es": "dash of grenadine",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash of orange bitters",
+          "item_es": "dash of orange bitters",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass gin",
+          "item_es": "wine glass gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of fresh milk",
+          "item_es": "wine glass of fresh milk",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "rock candy syrup",
+          "item_es": "rock candy syrup",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "Vl",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "thin slice of orange",
+          "item_es": "thin slice of orange",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "large fresh strawberry",
+          "item_es": "large fresh strawberry",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4. Stir thoroughly with ice, strain and serve in glass No. 1. Stir (lioroiighly, fill glass with finely chopped ice and remain Shake thoroughly with ice, strain, fill with charged water and serve in glass No. 4.",
+      "method_es": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4. Stir thoroughly with ice, strain and serve in glass No. 1. Stir (lioroiighly, fill glass with finely chopped ice and remain Shake thoroughly with ice, strain, fill with charged water and serve in glass No. 4.",
+      "glassware": "glass No. 4",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Remus Fizz\n          1 teaspoonful of sugar\n          1 dash of grenadine\n          1 dash of orange bitters\n         ¥i jigger of lemon juice\n         Yz wine glass gin\n          1 wine glass of fresh milk\n  Shake thoroughly with ice, strain and fill with charged water.\nServe in glass No. 4.\n\n\n                        Rock and Gin\n         ¥i wine glass gin\n          1 tablespoonful of rock candy syrup\n  Stir thoroughly with ice, strain and serve in glass No. 1.\n\n\n                           Rose Bud\n           1 teaspoonful of sugar\n         Vl jigger of lemon juice\n         '/2 wine glass gin\n          1 thin slice of orange\n           1 large fresh strawberry\n  Stir (lioroiighly, fill glass with finely chopped ice and remain\ning part with fresh water. Insert orange and strawberry. Serve\nin glass No. 4.\n\nPage Thirty-fozir\n                             Royal Fizz                        '\n              1 teaspoonful of sugar\n            '/i lemon juice\n            % gin\n             1 egg\n      Shake thoroughly with ice, strain, fill with charged water and\n    serve in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-046",
+      "order": 46,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Ruby Fizz",
+      "name_es": "Ruby Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of curaqao",
+          "item_es": "wine glass of curaqao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of fresh milk",
+          "item_es": "wine glass of fresh milk",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass gin                                      > i",
+          "item_es": "wine glass gin                                      > i",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir thoroughly. Fill glass with finely chopped ice and remain Shake thoroughly with ice, strain and sprinkle with nutmeg. Serve in glass No. 2.",
+      "method_es": "Stir thoroughly. Fill glass with finely chopped ice and remain Shake thoroughly with ice, strain and sprinkle with nutmeg. Serve in glass No. 2.",
+      "glassware": "glass No. 2",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ruby Fizz\n             1 teaspoonful of sugar\n              Vl          lemon juice\n              Vi          grenadine\n             '/2 wine glass gin\n      Stir thoroughly. Fill glass with finely chopped ice and remain\n    ing part with charged water. Serve in glass No. 4.\nI\n\n\n\n\n                                Salome\n?            1 teaspoonful of sugar\n             1 egg (white only)\n            Yz wine glass of Curaqao\n            Yz wine glass of fresh milk\n            Yz wine glass gin                                      > I\n      Shake thoroughly with ice, strain and sprinkle with nutmeg.\n    Serve in glass No. 2."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-047",
+      "order": 47,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Sangaree Cocktail",
+      "name_es": "Sangaree Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass gin",
+          "item_es": "wine glass gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of port wine",
+          "item_es": "dashes of port wine",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "54",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "54",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass gin",
+          "item_es": "wine glass gin",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint of ginger ale",
+          "item_es": "pint of ginger ale",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "triple sec. cointreau",
+          "item_es": "triple sec. cointreau",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, sprinkle with nutmeg and serve in glass No. 1. Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain, sprinkle with nutmeg and serve in glass No. 1. Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sangaree Cocktail\n             Yz teaspoonful of sugar\n             Yz wine glass gin\n             3 dashes of Port wine\n      Shake thoroughly with ice, strain, sprinkle with nutmeg and\n    serve in glass No. 1.\n\n                                                    Page Thirty-five\n                                                                   '1\n                        Saratoga Gooler\n        54 teaspoonful of sugar\n        54 jigger of lemon juice\n        54 wine glass gin\n        54 pint of ginger ale\n Ice and fill to top with Ginger Ale. Serve in glass No. 4.\n\n\n                           Side Step\n        54 lemon juice\n        54 Triple Sec. Cointreau\n        54 gin\n  Shake thoroughly with ice, strain and serve in glass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-048",
+      "order": 48,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Silver Fizz",
+      "name_es": "Silver Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "54",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vanilla ice cream",
+          "item_es": "vanilla ice cream",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "wine gloss gin",
+          "item_es": "wine gloss gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "fresh cream",
+          "item_es": "nata fresca",
+          "amount": "14",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4. Shake thoroughly with ice, strain and serve in glass No. 6. Shake thoroughly with ice, strain and fill with ginger ale. Serve in glass No. 4. Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "method_es": "Shake thoroughly with ice, strain and fill with charged water. Serve in glass No. 4. Shake thoroughly with ice, strain and serve in glass No. 6. Shake thoroughly with ice, strain and fill with ginger ale. Serve in glass No. 4. Shake thoroughly with ice, strain and serve in glass No. 6.",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Silver Fizz\n         1 teaspoonful of sugar\n         1 egg (white only)\n        54 lemon juice\n        % gin\n  Shake thoroughly with ice, strain and fill with charged water.\nServe in glass No. 4.\n\n\n\n                         Silver Moon\n        54 French vermouth\n        54 Italian vermouth\n        54 gin\n         1 egg (white only)\n  Shake thoroughly with ice, strain and serve in glass No. 6.\n\nPage Thirty-six\n                           Snow Ball\n         1 tablespoonful of vanilla ice cream\n        1/2 wine gloss gin\n        yx pint of ginger ale\n  Shake thoroughly with ice, strain and fill with ginger ale.\nServe in glass No. 4.\n\n\n                           Snow Bird\n\n         1 teaspoonful of sugar\n           lemon juice\n        14 fresh cream\n        \"/t g«n\n  Shake thoroughly with ice, strain and serve in glass No. 6."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-049",
+      "order": 49,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "Soyer's Gin Punch",
+      "name_es": "Soyer's Gin Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemons (juice)",
+          "item_es": "lemons (juice)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon (peel only)",
+          "item_es": "lemon (peel only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "quart of charged water",
+          "item_es": "quart of charged water",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soyer's Gin Punch\n                       (for four persons)\n         2 lemons (juice)\n            wine glass of maraschino\n        '/2 pint gin\n          1 lemon (peel only)\n          1 quart of charged water\n  Ice, serve in punch bowl with glass No. 7.\n\n\n                            Special\n\n          1 teaspoonful of sugar\n         Vi lemon juice\n            orange juice\n         % gin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\n                                                Page Thirty-seven"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-050",
+      "order": 50,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Special Andres Cocktail",
+      "name_es": "Special Andres Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacao",
+          "item_es": "crème de cacao",
+          "amount": "14",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, twist and insert lemon peel",
+      "method_es": "Shake thoroughly with ice, strain, twist and insert lemon peel",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Special Andres Cocktail\n          1 teaspoonful of sugar\n            fresh milk\n         14 Creme de Cacao\n         Vl gin\n          1 thinly sliced piece of lemon peel\n  Shake thoroughly with ice, strain, twist and insert lemon peel\nand squirt with charged water. Serve in glass No. 5."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-051",
+      "order": 51,
+      "section_title": "Recipes",
+      "category": "flip",
+      "name_original": "Special Gin Flip",
+      "name_es": "Special Gin Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vanilla",
+          "item_es": "vanilla",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "fresh milk",
+          "item_es": "fresh milk",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, sprinkle with nutmeg and serve in glass No. 2.",
+      "method_es": "Shake thoroughly with ice, strain, sprinkle with nutmeg and serve in glass No. 2.",
+      "glassware": "glass No. 2",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Special Gin Flip\n          1 teaspoonful of sugar\n         1 egg\n          1 teaspoonful of vanilla\n        '/2 wineglass gin\n         1 wineglass of fresh milk\n  Shake thoroughly with ice, strain, sprinkle with nutmeg and\nserve in glass No. 2."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-052",
+      "order": 52,
+      "section_title": "Recipes",
+      "category": "julep",
+      "name_original": "Special Gin Julep",
+      "name_es": "Special Gin Julep",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "j'gger of lemon juice",
+          "item_es": "j'gger of lemon juice",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sprigs of fresh mint",
+          "item_es": "sprigs of fresh mint",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Special Gin Julep\n          1 teaspoonful of sugar\n         Vl j'gger of lemon juice\n        1/2 wineglass gin\n         3 sprigs of fresh mint\n  Mash mint and sugar with one tablespoonful of fresh water in\nbottom of glass. Fill to top with finely chopped ice, stir thor\noughly and serve in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-053",
+      "order": 53,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Sunldss Cocktail",
+      "name_es": "Sunldss Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sunldss Cocktail\n        ■4 lemon juice\n        <4 grenadine\n        '4 gin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\nPage Thirty-eight",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-054",
+      "order": 54,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Sunshine Highball",
+      "name_es": "Sunshine Highball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of amer picon",
+          "item_es": "dashes of amer picon",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg (white only)",
+          "item_es": "egg (white only)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash of orange bitters",
+          "item_es": "dash of orange bitters",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash of maraschino",
+          "item_es": "dash of maraschino",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dash of angostura bitters",
+          "item_es": "dash of angostura bitters",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with finely chopped ice and remaining part with       'j Shake thoroughly with ice, strain and serve in glass No. 6. Stir thoroughly in mixing glass with ice, strain and serve' in",
+      "method_es": "Fill glass with finely chopped ice and remaining part with       'j Shake thoroughly with ice, strain and serve in glass No. 6. Stir thoroughly in mixing glass with ice, strain and serve' in",
+      "glassware": "glass No. 6",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sunshine Highball\n         1 teaspoonful of sugar\n         3 dashes of Amer Picon\n        '/2 i'figer of orange juice\n        I/2 wineglass gin                                          ^\n  Fill glass with finely chopped ice and remaining part with       'j\nfresh water. Stir thoroughly and serve in glass No. 4.\n\n\n                         Sweetheart\n         1 teaspoonful of sugar\n         1 egg (white only)\n        V3 absinthe\n        ?3 gin\n  Shake thoroughly with ice, strain and serve in glass No. 6.\n\n\n                            Teaser\n         1 dash of orange bitters\n        1 dash of maraschino\n         1 dash of Angostura Bitters\n        Vs Italian vermouth\n        % gin\n  Stir thoroughly in mixing glass with ice, strain and serve' in\nglass No. 1."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-055",
+      "order": 55,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Tipperary Cocktail",
+      "name_es": "Tipperary Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sprigs of fresh mint",
+          "item_es": "sprigs of fresh mint",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice and mint leaves, strain and serve",
+      "method_es": "Shake thoroughly with ice and mint leaves, strain and serve",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Tipperary Cocktail\n         Ve orange juice\n         Ve grenadine\n         V3 French vermouth\n         M gin\n        3 sprigs of fresh mint\n  Shake thoroughly with ice and mint leaves, strain and serve\nin glass No. 6.\n\n                                               Page Thirty.nine"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-056",
+      "order": 56,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Tom Collins",
+      "name_es": "Tom Collins",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoonfol of sugar",
+          "item_es": "teaspoonfol of sugar",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "of lemon juice",
+          "item_es": "of lemon juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Tom Collins\n         1 teaspoonfol of sugar\n        Vz       of lemon juice\n        Yi wineglass gin\n  Ice and fill with charged water. Serve in glass No. 4."
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-057",
+      "order": 57,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Tropical Cocktail",
+      "name_es": "Tropical Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "grapefruit juice",
+          "amount": "Vl",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of angostura bitters",
+          "item_es": "dashes of angostura bitters",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fiin",
+          "item_es": "fiin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain and serve in glass No. 1. Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "method_es": "Shake thoroughly with ice, strain and serve in glass No. 1. Shake thoroughly with ice, strain and serve in glass No. 1.",
+      "glassware": "glass No. 1",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Tropical Cocktail\n\n        Vl grapefruit juice\n        Vt tfin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\n\n\n\n                              Vanity\n         2 dashes of Angostura Bitters\n        Yi pineapple juice\n        Yz fiin\n  Shake thoroughly with ice, strain and serve in glass No. 1.\n\n                                                                   V"
+    },
+    {
+      "id": "1932-one-hundred-ways-by-stafford-brothers-058",
+      "order": 58,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Yale Cocktail",
+      "name_es": "Yale Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dash of angostura bitters",
+          "item_es": "dash of angostura bitters",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dashes of orange bitters",
+          "item_es": "dashes of orange bitters",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "thinly sliced piece of lemon peel",
+          "item_es": "thinly sliced piece of lemon peel",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice, strain, twist and insert lemon peel",
+      "method_es": "Shake thoroughly with ice, strain, twist and insert lemon peel",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Yale Cocktail\n\n         1 dash of Angostura Bitters\n         3 dashes of orange bitters\n        Yz wineglass gin\n         1 thinly sliced piece of lemon peel\n  Shake thoroughly with ice, strain, twist and insert lemon peel\nand squirt with charged water. Serve in glass No. 9.\n\n\n\nPage forty\nTimely Suggestions for Toning the System\n\n                       Before Breakfast\nCafe de Paris Cocktail         Special Gin Flip\nGolden Fizz                    Lady Love Punch\nRoyal Fizz                     Salome Punch\nSilver Fizz                    Gin Sour\n\n\n                            Morning\nRain Bow Cocktail              Gin Fizz\nHard Time Highball             Merry Widow Fizz\nHorse's Neck Highball          Remus Fizz\nOrange Mambi Highball          Gin Flip (cold)\nRose Bud Highball              Gin Rickey\nSaratoga Cooler Highball       Gin Smash\nSunshine Highball              Gin Sour\nGin Daisy                      Peach Blow\nCream Fizz                     Tom Collins\n\n\n                 Before Lunch and Dinner\nAmer Picon Cocktail            Martini Cocktail (dry)\nAngler's Cocktail              Martini Cocktail (sweet)\nBlood Hound Cocktail           Monkey Gland Cocktail\nBird of Paradise Cocktail      Moth Cocktail\nBronx Cocktail (dry)           Orange Blossom Cocktail\nChorus Lady Cocktail           Orgeat Cocktail\nClover Club Cocktail           Paradise Cocktail\nColonial Cocktail              Pink Lady Cocktail\nDubonnet Cocktail              Plaza Cocktail\nGin Dandy Cocktail             Polo Cocktail\nGin Sour Cocktail              Queen's Cocktail\nGin Twister Cocktail           Sangaree Cocktail\nGloom Chaser Cocktail          Sunkiss Cocktail\nHavana Cocktail                Teaser Cocktail\nHigh Hat Sour Cocktail         Tropical Cocktail\nIdeal Cocktail                 Vanity Cocktail\nLittle Honey Cocktail          Yale Cocktail\nMaiden's Blush Cocktail\n\n                                                  Page Forty.one\n                   Afternoon and Evening\nAlexander Cocktail (afternoon   Highstepper Highball\n  only)                         Orange Mambi Highball\nCamel Cocktail                  J. H. Highball\nClover Leaf Cocktail            Snow Ball\nDiamond Cocktail                Sunshine Highball\nFancy Gin Cocktail              Cafe au Genievre\nGin Sour Cocktail               Curate Sour\nGreen Pasture Cocktail          Gin Fix\nHighstepper Cocktail            Gin Fizz\nOld Fashioned Gin Cocktail      Grfeen Fizz\n                                Remus Fizz\nOld Fashioned Gm Cocktail       Ruby Fizz\n  (sweet)                       Gin Flip (hot)\nSide Step Cocktail              B. Barr Punch\nSilver Moon Cocktail            Gin Punch\nSnow Bird Cocktail              Ginger Ale and Gin Punch\nSpecial Cocktail                Pineapple Punch\nSpecial Andres Cocktail         Soyer's Gin Punch\nSweetheart Cocktail             Gin Rickey\nTipperary Cocktail              Gin Skin (hoi)\nAngel's Dream Highball          Gin Smash\n\nB. Barr Special Highball        Gin Sour\n\nBull "
+    }
+  ]
+}
