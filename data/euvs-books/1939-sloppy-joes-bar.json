@@ -1,0 +1,3367 @@
+{
+  "book_id": "1939-sloppy-joes-bar",
+  "metadata": {
+    "title": "Sloppy Joe's Cocktail Manual",
+    "author": "Compilado por Agustín Rios (bar man), bajo José \"Sloppy Joe\" Abeal",
+    "year": 1939,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "F. Diaz",
+    "city": "Havana, Cuba",
+    "edition": "Cocktail Manual",
+    "source_file": "Sloppy Joe’s Bar (1939).txt",
+    "notes": "Manual del icónico Sloppy Joe's Bar de La Habana — punto de encuentro de Hollywood (Hemingway, Sinatra) y políticos pre-Castro. José Abeal ('Sloppy Joe') llegó de España a Cuba en 1904 y, tras barman en La Habana, New Orleans y Miami, en 1918 vuelve y compra una grocery store que se transforma en el famoso bar. El nombre se lo puso un cliente americano viendo el agua que corría por debajo del mostrador ('Why, Joe, this place is certainly sloppy'). 84 recetas compiladas por su bartender principal Agustín Rios. Skeleton custom rebuilt con detector de cabecera centrada-mayúscula + verificación de bloque ingrediente; parser estructural extrae '1 Teaspoonful of X.', '2 oz. of Y.', 'Dash of Z.', 'The juice of a lime.', 'White/Yolk of an egg.', 'Leaves of Mint.', 'Shell of a lime.' (~88% recetas con ingredientes parseados)."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Sloppy Joe's Bar — Short Biography & Lunch Menu",
+      "title_es": "Sloppy Joe's Bar — biografía corta y menú",
+      "content_original": "José Abeal ('Sloppy Joe') llegó de España a Cuba en 1904. Tras trabajar como bartender en Galiano y Zanja Sts. de La Habana, New Orleans y Miami, en 1918 vuelve a La Habana y compra una grocery store que se convierte en el famoso Sloppy Joe's Bar. El bar atrajo a estrellas de Hollywood, Hemingway y políticos durante la era pre-Castro. Manual compilado por su bartender principal Agustín Rios.",
+      "content_es": "José Abeal ('Sloppy Joe') llegó de España a Cuba en 1904. Tras trabajar como bartender en Galiano y Zanja Sts. de La Habana, New Orleans y Miami, en 1918 vuelve a La Habana y compra una grocery store que se convierte en el famoso Sloppy Joe's Bar. El bar atrajo a estrellas de Hollywood, Hemingway y políticos durante la era pre-Castro. Manual compilado por su bartender principal Agustín Rios."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1939-sloppy-joes-bar-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DAIQUIRI",
+      "name_es": "DAIQUIRI",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DAIQUIRI\n1 Teaspoonful of sugar.\n2 oz. of Rum.\nThe juice of a lime.\nDash of Marraschino.\nShake with cracked ice, and serve in\n  manhattan glass.\n\n\n             ---~·\"---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SANTIAGO COCKTAIL",
+      "name_es": "SANTIAGO COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, put in a cherry",
+      "method_es": "Shake with cracked ice, put in a cherry",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SANTIAGO COCKTAIL\n1h of Rum.\n1;2 of French Vermouth.\nDrops of Curacao.\nDrops of Grenadine.\nShake with cracked ice, put in a cherry\n  and serve in Manhattan\n                     .,    glass ."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PRESIDENT",
+      "name_es": "PRESIDENT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir put in cherry, a peel of Orange, and serve in a Manhattan glass.",
+      "method_es": "Stir put in cherry, a peel of Orange, and serve in a Manhattan glass.",
+      "glassware": "manhattan glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PRES!DENT\n1h Erench VermouUL\n1h of Rum.\nThe juice of a lime.\nDrops of Grenadine.\n\nStir put in cherry, a peel of Orange, and\n  serve in a Manhattan glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RUM COLLINS",
+      "name_es": "RUM COLLINS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua mineral con gas (Seltzer)",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "cracked ice",
+          "item_es": "hielo picado",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a 10 oz. glass with",
+      "method_es": "Serve in a 10 oz. glass with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": ", RUM      COLLI NS\nTeaspoonful of sugar.\nThe juice of a lime.\n2 oz. of Rum.\nSeltzer water.\nServe in a 10 oz. glass with\n  cracked ice.\n                 - 9-\n     Sloppy Joe's Ron Drinks"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SLOPPY JOE'S COCKTAIL",
+      "name_es": "SLOPPY JOE'S COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLOPPY JOE'S COCKTAIL\n1h of Rum.\n1/2 of French Vermouth .\n\nThe juice of a lime.\nDrops of Curacao.\nDrops of Grenadine.\nShake with cracked ice, and serve in\n  manhattan glass.\n          - - -·····- - -"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MOJITO",
+      "name_es": "MOJITO",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua mineral con gas (Seltzer)",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "leaves of mint",
+          "item_es": "hojas de menta",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "shell of a lime",
+          "item_es": "cáscara de lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a High Ball glass with Cracked Shake witn cracked ice, and serve in a",
+      "method_es": "Serve in a High Ball glass with Cracked Shake witn cracked ice, and serve in a",
+      "glassware": "high ball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MOJITO\nTeaspoonful of sugar.\nJuice of a lime.\n2 oz. of Rum.\nSeltzer water.\n                                  Q\nLeaves of Mint.\nShell of a lime.\nServe in a High Ball glass with Cracked\n  ice.\n                 -10-  -·\nThe Clory of the Great French Liquors.\n\n               -11-\n          MARY PICKFORD\n\n\n\n\nf:if:~i~~~~~;;~o. l\nShake witn cracked ice, and serve in a\n  tall glass.\n\n            ---··---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CORONEL",
+      "name_es": "CORONEL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/3 of rum",
+          "item_es": "/3 of rum",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 of noilly prat vermouth",
+          "item_es": "/3 of noilly prat vermouth",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 pineaple juice",
+          "item_es": "/3 pineaple juice",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Drops 6f Creme de Menthe. Shake with cracked ice, and serve rn a",
+      "method_es": "Drops 6f Creme de Menthe. Shake with cracked ice, and serve rn a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CORONEL\n1/3 of Rum.\n1/3 of Noilly Prat Vermouth.\n1/3 Pineaple juice.\nDrops 6f Creme de Menthe.\nDrops of Marrasquino.\nShake with cracked ice, and serve rn a\n  tall glass.\n                  -12-,-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "PLANTER'S PUNCH",
+      "name_es": "PLANTER'S PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fruits",
+          "item_es": "fruits",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with chacked ice, and serve in",
+      "method_es": "Shake with chacked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PLANTER'S PUNCH\nDrops of Curacao.\n2 oz. Jamaica Rum.\nJui~e_ of a lime.\nDrops of Grenadine.\nShake with chacked ice, and serve in\n  mint julep glass,        with   ice   and\n  fruits.\n\n             ---+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PARAMOUNT",
+      "name_es": "PARAMOUNT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/3 rum",
+          "item_es": "/3 rum",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 rye wisky",
+          "item_es": "/3 rye wisky",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "a lime juice",
+          "item_es": "a lime juice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with chacked ice, and serve in",
+      "method_es": "Shake with chacked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PARAMOUNT\n2/3 Rum.\n1/3 Rye Wisky.\nDrops of Grenadine.\n1h of a lime juice.\nShake with chacked ice, and serve in\n  Manhattan glass.\n                    -13-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN MOJITO",
+      "name_es": "GIN MOJITO",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the j uice of a lime",
+          "item_es": "the j uice of a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "leaves of mint",
+          "item_es": "hojas de menta",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua mineral con gas (Seltzer)",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "a shell of a lime",
+          "item_es": "a shell of a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a High Ball glass with ice.",
+      "method_es": "Serve in a High Ball glass with ice.",
+      "glassware": "high ball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JIN         MOJITO\nThe j uice of a lime.\nTeaspoonful of sugar.\nLeaves of Mint.\n2 oz. of Gin.\nSeltzer water.\n                                  0\nA shell of a lime.\nServe in a High Ball glass with ice."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN RICKEY",
+      "name_es": "GIN RICKEY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua mineral con gas (Seltzer)",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a High Ball glass with ice.",
+      "method_es": "Serve in a High Ball glass with ice.",
+      "glassware": "high ball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN         RICKEY -\n\nJuice of a lime.\n2 oz. of Gin.\nSeltzer water.\n                                  0\nServe in a High Ball glass with ice.\n                     - 14-\n,,\ni\n    May we kiss those we\n    please and please\n    thQs~ we .kis1?.\n\n\n\n\n               -15-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "TOM COLLINS",
+      "name_es": "TOM COLLINS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "parts of seltzer water",
+          "item_es": "parts of seltzer water",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in a High Ball glass with ice.",
+      "method_es": "Serve in a High Ball glass with ice.",
+      "glassware": "high ball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM      COLLINS\nThe juice of a lime.\nTeaspoonful of sugar.\n2 oz. of Gin.\n2 Parts of Seltzer water.\nServe in a High Ball glass with ice."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SLOE GIN RICKEY",
+      "name_es": "SLOE GIN RICKEY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua mineral con gas (Seltzer)",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a ten oz. glass with ice.",
+      "method_es": "Serve in a ten oz. glass with ice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLOE Cl N RICKEY\nThe juice of a lime.\n2 oz. of Sloe Gin.\nSeltzer water.\nServe in a ten oz. glass with ice.\n           ---··!·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "SLOE GIN FIZZ",
+      "name_es": "SLOE GIN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua mineral con gas (Seltzer)",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with creaked ice and serve in a",
+      "method_es": "Shake with creaked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLOE CIN FIZZ\nThe juice of a lime.\nTeaspoonful of sugar.\n2 oz. of Sloe Gin.\nSeltzer water.\n                                     0\nShake with creaked ice and serve in a\n  High Ball glass with ice.\n                 -16-."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "GIN FIZZ",
+      "name_es": "GIN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bz. of gin",
+          "item_es": "bz. of gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "selt zer water",
+          "item_es": "selt zer water",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with cr eaked ice and serve . in . a",
+      "method_es": "Shake with cr eaked ice and serve . in . a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZZ\nTeaspoonful of sugar.\nThe juice of a lime.\n2 bz. of Gin.\n                                     0\nSelt zer water.\nShake with cr eaked ice and serve . in . a\n  High Ball glass with ice.\n           ---·t·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN COCKTAIL",
+      "name_es": "GIN COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "0z, ·of gordon gin",
+          "item_es": "0z, ·of gordon gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "with peel of iime",
+          "item_es": "with peel of iime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Drop; bf Angostura Bitters. Stir and serve in a Manhattan glass",
+      "method_es": "Drop; bf Angostura Bitters. Stir and serve in a Manhattan glass",
+      "glassware": "manhattan glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN COCKTAIL\n2 0z, ·of Gordon Gin.\nDrop; bf Angostura Bitters.\nDfop{S of Curacao.\n                               ,v. . .··~\n                               ·.Jb'\nStir and serve in a Manhattan glass\n  with peel of Iime.\n  -·-7'\n\n           ---•!•---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "sling",
+      "name_original": "GIN SLING",
+      "name_es": "GIN SLING",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peel of lime",
+          "item_es": "peel of lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": ":·of gordon gin",
+          "item_es": ":·of gordon gin",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": ",4 bottle of ginged ale",
+          "item_es": ",4 bottle of ginged ale",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN SLING\nPeel of lime.\n2 oz:·of Gordon Gin.\n1,4 Bottle of Ginged Ale.\nSer\\ie in a ten oZ. glass.\n                  -17-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DRY MARTINI",
+      "name_es": "DRY MARTINI",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "oran bitters",
+          "item_es": "oran bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir put in an olive and serve in Man-",
+      "method_es": "Stir put in an olive and serve in Man-",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DRY    MARTINI\n112 of French Vermouth.\n112 of Gin.\n                                  S(\nDash of oran bitters.\nStir put in an olive and serve in Man-\n\n\n\n                                  S(\n  hattan glass.\n              ---{•---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SWEET MARTINI",
+      "name_es": "SWEET MARTINI",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cinzano vermouth",
+          "item_es": "cinzano vermouth",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Stir put in a cherry and serve in Man-",
+      "method_es": "Stir put in a cherry and serve in Man-",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SWEET        MARtlNI\n112 of Cinzano vermouth.\nl/2 of Gin.\n\nStir put in a cherry and serve in Man-\n  hattan glass.\n              --~·:·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "GOLDEN FIZZ",
+      "name_es": "GOLDEN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "an egg",
+          "item_es": "an egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "1112",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass.",
+      "method_es": "Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLDEN FIZZ\nThe juice of a lime.\nTeaspoonful of sugar.\nAn Egg.\n1112 oz. of Dry Gin.\nShake with ice, and serve in a tall glass.\n                    - 18- .,\npon't be vague\n      ask for\n\nHaig\n /fO FINlR .WHISKY COlS INTO ANY 80TTU\n\n\n                 -19-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "GREEN FIZZ",
+      "name_es": "GREEN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass.",
+      "method_es": "Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GREEN FIZZ\nThe juice of a lime.                   y\n        :f\nTeaspoonful of sugar.\n\n~1~::: ::;~i:e Menthe.                  \"\n Shake with ice, and serve in a tall glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "ROYAL FIZZ",
+      "name_es": "ROYAL FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "an egg",
+          "item_es": "an egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Drops of Grenadffie. ,",
+      "method_es": "Drops of Grenadffie. ,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROYAL       FIZZ\nThe juice of a lime.\nTeaspoonful of sugar.\nAn Egg.\nl1h oz. of Gin.\nDrops of Grenadffie. ,"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "NEW ORLEANS FIZZ",
+      "name_es": "NEW ORLEANS FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Drops of Orange Blossom whater. '.:..!>",
+      "method_es": "Drops of Orange Blossom whater. '.:..!>",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW ORLEANS FfZZ\n  Teaspoonful of sugar.            X'S.\"\n  White of an egg,                   ':f\n  1h of Cream.\n   1h of Gin.                              •\n   Drops of Orange Blossom whater. '.:..!>\n··--·. -· ----.. - - . -26-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "RAYMOND'S GIN FIZZ",
+      "name_es": "RAYMOND'S GIN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "a lime juice",
+          "item_es": "a lime juice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange blossom water",
+          "item_es": "orange blossom water",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass",
+      "method_es": "Shake with ice, and serve in a tall glass",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RAIMUND'S GIN FIZZ\nTeaspoonful of sugar.\nWhite of an egg,\n1h of Cream.\nI/2 d'f Gin.\n                                      M\nDrops of Grenadine.\n1h of a lime juice.\nDrops of orange blossom water.\n                                    -l\nShake with ice, and serve in a tall glass\n           ---··:·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "SILVER FIZZ ~",
+      "name_es": "SILVER FIZZ ~",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "a lime j uice",
+          "item_es": "a lime j uice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass.",
+      "method_es": "Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SILVER FIZZ              ~\nTeaspoonful of sugar.\n1h of a lime j uice.\nWhite of an egg. -\nIl/2 oz. Gordon Gin.                 ·\nShake with ice, and serve in a tall glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN BLUE",
+      "name_es": "GIN BLUE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "i2 of gin",
+          "item_es": "i2 of gin",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "parfait amour",
+          "item_es": "parfait amour",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass.",
+      "method_es": "Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN BLUE\nTeaspoonful of sugar.\nThe juice of a lime.\n                                 SC\n1i2 of Gin.\n1;2 of Parfait Amour.\nShake with ice, and serve in a tall glass.\n                  -21-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "IDEAL",
+      "name_es": "IDEAL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "grape fruit juice",
+          "item_es": "grape fruit juice",
+          "amount": "14",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "14",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 of dubonet",
+          "item_es": "/3 of dubonet",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 of gordon gin",
+          "item_es": "/3 of gordon gin",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass. Shake with ice, and serve in",
+      "method_es": "Shake with ice, and serve in a tall glass. Shake with ice, and serve in",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IDEAL\nTeaspoonful of sugar.\n14 of Grape Fruit juice.\n¥2 of Gin.\n14 of French Vermouth.\n           ______,..,___\nShake with ice, and serve in a tall glass.\n\n\n       DUBONET COCKTAIL\n\n\n\n\n                                  ~\n2/3 of Dubonet.\n1/3 of Gordon Gin.\nShake with ice, and serve in\n   a Manhattan glass with a\n  .peel of a lime.\n\n           ---·+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ORANGE BLOSSOM",
+      "name_es": "ORANGE BLOSSOM",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the juice of half an orange",
+          "item_es": "the juice of half an orange",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "10.5",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass.",
+      "method_es": "Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORANGE BLOSSOM\nThe juice of half an Orange.\nTeaspoonful of sugar.\n11/2 oz. Gordon Gin.\nShake with ice, and serve in a tall glass.\n                  -22-:-,"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CLOVER LEAF",
+      "name_es": "CLOVER LEAF",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "10.5",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Drops of Curaçao.                  · Shake with ice, put in a leaf of Mint.",
+      "method_es": "Drops of Curaçao.                  · Shake with ice, put in a leaf of Mint.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER LEAF\n112 the juice of a lime.\nWhite of an Egg.\n11/2 oz. of Gin.\nDrops of Grenadine.\n                                     l\nDrops of Curacao.                  ·\nShake with ice, put in a leaf of Mint.\n   and serve in a tall glass.\n            -----...~:~·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-030",
+      "order": 30,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB",
+      "name_es": "CLOVER CLUB",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Drops of Grenadine.- Drops of Curaçao.                     => Shake with ice, and serve in a tall glass.",
+      "method_es": "Drops of Grenadine.- Drops of Curaçao.                     => Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB\n112 the juice of a lime.\nll/2 oz. of Gin.\nWhite of an Egg.\nDrops of Grenadine.-\n                                     l\nDrops of Curacao.                     =>\nShake with ice, and serve in a tall glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-031",
+      "order": 31,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SINGAPORE",
+      "name_es": "SINGAPORE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peel of a lime",
+          "item_es": "peel of a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "cherry brandy",
+          "item_es": "cherry brandy",
+          "amount": "113",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of benedictine",
+          "item_es": "/ 3 of benedictine",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 of gordon gin",
+          "item_es": "/3 of gordon gin",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in a ten oz. glass, with cracked",
+      "method_es": "Serve in a ten oz. glass, with cracked",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SINCAPORE\nPeel of a lime.\n113 of Cherry Brandy.\n1/ 3 of Benedictine.\n1/3 of Gordon Gin.\n                                   []\nServe in a ten oz. glass, with cracked\n   ice, and a bottle mineral water.\n                   -24___:"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-032",
+      "order": 32,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ALEXANDER",
+      "name_es": "ALEXANDER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "14",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cream of cacao",
+          "item_es": "cream of cacao",
+          "amount": "14",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "'-' gordon gin",
+          "item_es": "'-' gordon gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALEXAN DER\n14 Cream.\n14 Cream of Cacao.\n                                         ' ~:.;''\n      •                 ,        •   t\n\n1/2'-' Gordon Gin.\n                 -           , - ·. _<:..:>\nShake with cracked ice and serve in a\n  tan glass.\n             ---·:·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-033",
+      "order": 33,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BROWNS",
+      "name_es": "BROWNS",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BROWNS\nTeaspoonful of sugar.        _             --\nThe ~ uice of half an Orange.      ,, _~   ·,__\n112 Gm.                                _ ·:\n14 of Franch Vermouth.-\n%. of Martini & Rossi                   ·-\n-_ Vermouth.                     ..    -P>\ns'hake with ice, and serve in a tall glass\n            ----{•---\n\n\n                                         --~\n                                         - '·~'_",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-034",
+      "order": 34,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MORNING GLORY",
+      "name_es": "MORNING GLORY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "z\\f a lime juice",
+          "item_es": "z\\f a lime juice",
+          "amount": "11",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "an egg",
+          "item_es": "an egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "creme of menthe",
+          "item_es": "creme of menthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, and serve in a tall glass.",
+      "method_es": "Shake with ice, and serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MORNING GLORY -\n                                             ·• :\n11z\\f a lime juice.\nAn Egg.\n11;2 oz. of Gin.                      <:..!) _:\nDrops of Creme of Menthe.\nShake with ice, and serve in a tall glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-035",
+      "order": 35,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CAPITOLIO",
+      "name_es": "CAPITOLIO",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/3 of gin",
+          "item_es": "/3 of gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of cinzano vermouth",
+          "item_es": "/ 3 of cinzano vermouth",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "tne jmce of a lime",
+          "item_es": "tne jmce of a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "drops grenadine",
+          "item_es": "drops grenadine",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "il gin",
+          "item_es": "il gin",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": ",4 of brocchi vermouth",
+          "item_es": ",4 of brocchi vermouth",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": ",4 benedictine",
+          "item_es": ",4 benedictine",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "drops angostura bitters",
+          "item_es": "drops angostura bitters",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "drops absinthe",
+          "item_es": "drops absinthe",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in Shake with cracked jce and serve in P- Shake with ice, and serve in Manhattan",
+      "method_es": "Shake with cracked ice, and serve in Shake with cracked jce and serve in P- Shake with ice, and serve in Manhattan",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CAPITOLIO\n2/3 of Gin.\n1/ 3 of Cinzano Vermouth.\nWhite of an Egg,\nTne jmce of a lime.\nDrops of Marraschino.\nShake with cracked ice, and serve in\n   a tall glass.\n           -------+---\n       THE FOUR POWERS\n1,4 of Orange juice.             ~\nDrops Grenadine.\n% Apple Jack.\n1IL Gin.\nl/t. Apricot Brandy.              <.:.!>\n\nShake with cracked jce and serve in P-\n    tall glass.\n          ---·+-----\n   UNITED FRUIT CO(:KTAIL\n\n\n\n\n                               2\n1h of Gin.\n1,4 of Brocchi Vermouth.\n1,4 Benedictine.\nDrops Angostura Bitters.\nDrops Absinthe.\nShake with ice, and serve in Manhattan\n   glass.\n                 -2~\n              SLOPPY IOE'S BAR"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-036",
+      "order": 36,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "INTERNATIONAL RENDE% VOUS",
+      "name_es": "INTERNATIONAL RENDE% VOUS",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "INTERNATIONAL RENDE% VOUS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-037",
+      "order": 37,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "FOR GOOD FELLOWS",
+      "name_es": "FOR GOOD FELLOWS",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FOR GOOD FELLOWS\n\n              ---+---",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-038",
+      "order": 38,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Pl N EAPPLE AND 'RON",
+      "name_es": "Pl N EAPPLE AND 'RON",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pianeapple",
+          "item_es": "pianeapple",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice.",
+      "method_es": "Shake with cracked ice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pl N EAPPLE AND 'RON\n1h of Pianeapple.\n1/ 2 or Ron\nShake with cracked ice.\n                                 0\nand serve in a 10 onz. Glass.\n                   -27-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-039",
+      "order": 39,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BLUE MOON",
+      "name_es": "BLUE MOON",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/3 of gordon gin",
+          "item_es": "/3 of gordon gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of parfait amour",
+          "item_es": "/ 3 of parfait amour",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice an serve in",
+      "method_es": "Shake with cracked ice an serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLUE MOON\n2/3 of Gordon Gin.\n1/ 3 of Parfait Amour.\nShake with cracked ice an serve in\n  Manhattan glass.\n\n           ----t+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-040",
+      "order": 40,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "COLONIAL",
+      "name_es": "COLONIAL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 dry jin",
+          "item_es": "/ 3 dry jin",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermut",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "amer picon",
+          "item_es": "Amer Picon",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "angostura bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve with ice, mint leaves and fruits",
+      "method_es": "Serve with ice, mint leaves and fruits",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLONIAL\nTeaspoonful of sugar.\n1/ 3 dry Jin.\n2/3 of Martini & Rossi\n  Vermouth.\nDrops of Amer Picon.\nD-r ops of Curacao.\nDrops of Angostura Bitters.\nServe with ice, mint leaves and fruits\n  in Old Fashioned gl~ss.\n                  -28-\n    AMERICAN VERMOUTH\n\n\n\n                               )("
+    },
+    {
+      "id": "1939-sloppy-joes-bar-041",
+      "order": 41,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "COCKTAIL",
+      "name_es": "COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "amer picon",
+          "item_es": "Amer Picon",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth brocchi",
+          "item_es": "vermouth brocchi",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "amer picon",
+          "item_es": "Amer Picon",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "angostura bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice and serve with a cherry Shake with cracked ice an serve in",
+      "method_es": "Stir with ice and serve with a cherry Shake with cracked ice an serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COCKTAIL\n2 ~z. of Martini & Rossi\nDrops of Amer Picon.\nDrops of Curacao.\nStir with ice and serve with a cherry\n  in a Manhattan glass.\n          -----+---\n    . VERMOUTH COCKTAIL\n                       '\n\n\n                               )(\n2 oz. of Vermouth Brocchi.\nDrops of Amer Picon.\nDrops of Angostura Bitters.\nShake with cracked ice an serve in\n  Manhattan glass.\n          ---+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-042",
+      "order": 42,
+      "section_title": "Cocktails",
+      "category": "flip",
+      "name_original": "SHERRY FLIP",
+      "name_es": "SHERRY FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry sherry",
+          "item_es": "dry sherry",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "an egg",
+          "item_es": "an egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice",
+      "method_es": "Shake well with cracked ice",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY FLIP\n3 oz. Dry Sherry.\nAn Egg.\nTeaspoonful of sugar.\nShake well with cracked ice\n  and serve in 10 oz. glass.\n                 -29-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-043",
+      "order": 43,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PICK ME UP",
+      "name_es": "PICK ME UP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ojen",
+          "item_es": "ojen",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PICK ME UP\n% of Martell Cognac.\n~ of Dubonet.\nDrops of Ojen.\nWhite of an Egg.\nShake with cracked ice and serve in a\n  tall glass.\n          ---+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-044",
+      "order": 44,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SIDE CAR",
+      "name_es": "SIDE CAR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "/3 of martell cognac",
+          "item_es": "/3 of martell cognac",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of cointreau",
+          "item_es": "/ 3 of cointreau",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and ·serve in a",
+      "method_es": "Shake with cracked ice and ·serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SIDE        CAR\nThe juice of a lime.\n2/3 of Martell Cognac.\n1/ 3 of Cointreau.\nShake with cracked ice and ·serve in a\n   Manhattan glass.\n           ---•!•---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-045",
+      "order": 45,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "STINGER",
+      "name_es": "STINGER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "martell cognac",
+          "item_es": "martell cognac",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "white menthe",
+          "item_es": "white menthe",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a Manhattan glass.",
+      "method_es": "Shake with cracked ice and serve in a Manhattan glass.",
+      "glassware": "manhattan glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "STINGER\n1h of Martell Cognac.\n1h of White Menthe.\nShake with cracked ice and\n  serve in a Manhattan glass.\n                -30-      .,\n                         CUBAN RUMS\nSloppy Joe's Gold Label 9 years . . . . . . . .                  1.25\nSloppy Joe's White Label 6 year . . . . . .                      1.10\nSloppy Joe's 40 Years Old . . . . . . . . . . .                  2.00\nBacardi Gold Label . . . . . . . . . . . . . . . . .             1.25\nB;i1ardl White Label . . . . . . . . . . . . . . . . .           1. 10\nBacardi 1873 . . . . . . . . . . . . . . . . . . . . . .         J.95\nBacardi Anejo . . . . . . . . . . . . . . . . . . . . .          2.00\nHavana Club Gold Label . . . . . . . . . . . . . .               1.10\nHavana Cub White Label . . . . . . . . . . . . .                 1.00\nBocoy Gold Label . . . . . . . . . . . . . . . . . . .           1.10\nBocoy Whi-te Label . . . . . . . . . . . . . . . . .             1.00\nElfxir Bacardi . . . . . . . . . . . . . . . . . . . . . .       1.50\nWEST INDIES OLD NICK . . . . . . .                               1.75\n                    DOMESTIC CORDIAL~\nApricot Brandy . . . . . . . . . . . . . . . . . . . .           1.75\nCherry Brandy . . . . . . . . . . . . . . . . . . . . .          1.75\nPeach Brandy . . . . . . . . . . . . . . . . . . . . . .         1.75\nBlackberry Brandy . . . . . . . . . . . . . . . . . .            1.75\nStrawberry Brandy . . . . . . . . . . . . . . . . . .            1.75\nCreme de Cacao . . . . . . . . . . . . . . . . . . . .           1.75\nCreme de Menthe . . . . . . . . . . . . . . . . . .              1.75\nAnis . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   1.75\nBomb6n Cordial .... . .. .. . . . .. .. . Pts.                   1.25\nTriple Sec. . . . . . . . . . . . . . . . . . . . . . .          1.75\n      IMPORTED LIQUEORS AND CORDIALS\nCreme de Cacao M. B. . . . . . . . . . . . . . . .               2 .50\nOrange Brandy P. G. . . . . . . . . . . . . . . . . .            2.50\nApricot Brandy P. G. . . . . . . . . . . . . . . . . .           2.50\nApricot Brandy S. A. . . . . . . . . . . . . . . . .             2.50\n                               -31-\nCherry Brandy P. G. . . . . . . . . . . . . . . . . .          2.50\nCherry Brandy S. A. . . . . . . . . . . . . . . . . .          2.50\nCherry Brandy Bardinet . . . . . . . . . . . . . . .           2.50\nCreme de Cassis . . . . . . . . . . . . . .                    2.50\nCreme de Menthe M. B. . . . . . . . . . . . . . .              2.50\nWhite Creme de Menthe L. F. . . . . . . . .                    2.50\nCreme de Banana . . . . . . . . . . . . . . . . . . .          2.50\nStrawberry P. G. . . . . . . . . . . . . . . . . . . .         2.50\nAmmer Piccon . . . . . . . ... .. .... Qts.                    2.50\nMarrasquin P. 'C.          . . . . . .. ...... Qts.            3.00\nMarrasquin L. F.                 .. . .. . .. . .. . ..        2.00\nAnisette M. B.               .. .. . ... .. . .. ...           2.50\nAnis del "
+    },
+    {
+      "id": "1939-sloppy-joes-bar-046",
+      "order": 46,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "FRFEE DELIVERY ON BOARD",
+      "name_es": "FRFEE DELIVERY ON BOARD",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FRFEE DELIVERY ON BOARD\n                                -33-\nPeter Danwson ... ... .. . . .. ..... ... .               2.50\nKings Randsome . . . . . . . . . . . . . . . . . . .      3.25\nKing of King .... . . .... . ... . .. . ... .             3.00\nKing George ........ .. ...... . .. ...•                  2.50\nBlanck & White .... . . . . . . . . . . . . . . . .       2.50\nPerfection McCollum's . . . . . . . . . . . . . . .       2.50\nVat 69 . . ...... .. .. .... .. . ...... .                2.50\nLong john .. .. . . . . . . . . . . . . . . . . ... .     2.50\nGrant's Liquours ... ... ............ .                   2.50\nThe Kjtty .... . . . ... . ..... . . .... . . .           2.50\nBallantines 10 Years Old .. .... ... ... .                2 .7 0\nAntiquary                                                 3 .25\n   IMPORTED RYE AND BOURBON WHISKIES\nGolden Wedding R. . . . . . . . . . . . . . . . . . .     2.25\nGolden Wedding B. . . . . . . . . . . . . . . . . .       2 .25\nWalkers Bourbon .. . . ... ......... Qts .                3.00\nWalkers de Luxe .. .. .. .. ... . .. .. Qts.              3 .00\nMarylin . . ... . ...... '...... ·..... Qts.              3 .00\nFather Time ....... .. ......... . . Qts.                 3 .00\nCanadian Club . . . . . . . . . . . . . . . . . . . . .   2.40\nCanadian Club ..... . .... ... ·..... Qts.                3.00\nMount Vermont . . . . . . . . . . . . . . . . . . . .     2.50\nOld Crow R . . . . . . . . . . . . . . . . . . . . . .    2.50\nOld Crow B. . . . . . . . . . . . . . . . . . . . . . .   2.50\n       IMPORTED COCNAC AND                   BR~NDY\n\nBisqui·t Dubouche Annee 1811 . . . . . . . . 22.00\nBisqult Dubouche Annee 1868 . . . . . . . . !'3.00\n             HONESTY IS OUR POLICY\n                           -34,..-'-\nDomecq Carlos I ... ... . .......... . 14.00\nDomecq Carlos 111 .. . .•............. 12.00\nDomecq Fundador ..... . . . . .. . .... . . 3.25\nCourvousier 80 Year Old ... . .. . ... . . 13.75\nCouf'ousier 60 Years 91d .... . ... . ... . 1 1.00\nCourvousier 50 Years Old . . ... . .. .... . 7 .00\nCouvousier 20 Years Old .. . . . . ... . .. . 3 .75\nCourvousier XXX .. ...... . . ........ . 2 .75\nOtars 100 Years Old . .. . . .... .. . . . . 10.00\nOtards 30 Years Old . ........ . . . . ... . 3 .25\nOtards 1 5 Years Old ....... . ........ . 3 .25\nOtards XXX ...................... . 2 .75\nMa rtell Extra .... . .. . ..... . .. . .... . 13.00\nMartell 60 Years Old .. . .. . . . . .. . .. . 11 .00\nMartell XXX ... . . .. . . ..... . .. . .. . . 3.00\nMartell 35 Yea rs Old ..... .. . . ... . . . . 5.50\nHennessy Extra . . . . ...... . . .. . .. . . . . 11 .00\nHennessy V. 0 . . ... . . . . . . .. .. . .. . . . 3.50\nHennessy XXX . . . . . . ... . .... ... .. . . 3 .00\nCasti 116n Extra . . ..... . ...... . .. . . . 12.00\nCastillon- XXX ...... . ........... . . . 2 .75\n                 IMPORTED CINS\nGordon's Dry \" London\" .......... .. . . 2.20\nBurkes Dry .. .. ..... .. . •. . . .. . ... . 2 .20\nHiram Walker Dry .... . . .....",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-047",
+      "order": 47,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNES",
+      "name_es": "CHAMPAGNES",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNES\n                        - 35-",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-048",
+      "order": 48,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MADRID COCKTAIL",
+      "name_es": "MADRID COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fundador cognac",
+          "item_es": "fundador cognac",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "oporto wine",
+          "item_es": "oporto wine",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Drops of Curaçao.                  · Shake with cracked ice and serve in a",
+      "method_es": "Drops of Curaçao.                  · Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MADRID COCKTAIL\n112 of Fundador Cognac.\n1h of Oporto Wine.\n                                 )?    .(\nDrops of Curacao.                  ·\n\nShake with cracked ice and serve in a\n  Manhattan glass.\n          ---·•}·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-049",
+      "order": 49,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JACK ROSE",
+      "name_es": "JACK ROSE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "white ofan egg",
+          "item_es": "white ofan egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "the juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Drops Granedine. ,        . Shake with cracked ice and                      .· serve in a tall glass.",
+      "method_es": "Drops Granedine. ,        . Shake with cracked ice and                      .· serve in a tall glass.",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK       ROSE\n2 oz. Apple Jack.\nWhite Ofan Egg.\n                                r:==:l(\n1/2 the juice of a lime.\nDrops Granedine. ,        .\nShake with cracked ice and                      .·\n   serve in a tall glass.\n          ___.,..___"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-050",
+      "order": 50,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ECG NOGC",
+      "name_es": "ECG NOGC",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice                 .",
+      "method_es": "Shake well with cracked ice                 .",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ECG       NOGC\n1h of Brandy.\n\n\n                                  0\n1h of Cream.\nAn Egg,\nTeaspoonful of sugar.                       .\n\nShake well with cracked ice                 .\n  and serve in 10 oz., glass.\n                  _:__36_:_"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-051",
+      "order": 51,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "NIGHT CAP",
+      "name_es": "NIGHT CAP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "a lime juice",
+          "item_es": "a lime juice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3 brandy",
+          "item_es": "/3 brandy",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "!3 cream cacao",
+          "item_es": "!3 cream cacao",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "113",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NIGHT CAP\n1h of a lime juice.\n1/3 Brandy.\n1!3 Cream Cacao.\n113 Dry Gin.\nDrops of Absinthe.\nShake with cracked ice and serve in a\nManhattan glass.\n          ---•!<·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-052",
+      "order": 52,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MINT IULEP",
+      "name_es": "MINT IULEP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "marsh up mint leaves",
+          "item_es": "marsh up mint leaves",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "borbou whisky",
+          "item_es": "borbou whisky",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "with frappe ice and mint leaves",
+          "item_es": "with frappe ice and mint leaves",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "rye whisky",
+          "item_es": "rye whisky",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "slice of lime",
+          "item_es": "slice of lime",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "slice of pineapple",
+          "item_es": "slice of pineapple",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "slice of orange",
+          "item_es": "slice of orange",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake and serve in a mint Julep glass Serve with a cherry in an Old Fashioned",
+      "method_es": "Shake and serve in a mint Julep glass Serve with a cherry in an Old Fashioned",
+      "glassware": "mint julep glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MINT IULEP\nMarsh up mint leaves.\nTeaspoonful of sugar.\n2 oz. Borbou Whisky.\nShake and serve in a mint Julep glass\n   with frappe ice and mint leaves.\n    '             +·---\n          0 LD FASHION\n2 oz. of Rye Whisky.\nTeaspoonful of sugar.\nDrops of Curacao.\n1 Slice of Lime.\n1 Slice of Pineapple.\n1 Slice of Orange.\nServe with a cherry in an Old Fashioned\n  glass.\n                 -37-\nTHE PERFECT SCOTCH\n\n\n\n      -38-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-053",
+      "order": 53,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "MILK PUNCH",
+      "name_es": "MILK PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sloppy joe's ron",
+          "item_es": "sloppy joe's ron",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": ")2 of cream",
+          "item_es": ")2 of cream",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MILK PUNCH\nTeaspoonful of sugar.\n112 Sloppy Joe's Ron.\n1)2 of Cream.\n                               []\nShake with cracked ice and serve in a\n   ten oz. glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-054",
+      "order": 54,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MILLIONAIRE",
+      "name_es": "MILLIONAIRE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye whisky",
+          "item_es": "rye whisky",
+          "amount": "10.5",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MILLIONAIRE\n11/2 oz. of Rye Whisky.\nWhite of an Egg.\nDrops of Grenadine.\nDrops of Curacao.\nShake with cracked ice and serve in a\n  tall glass.\n          ---·~·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-055",
+      "order": 55,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "APPLE JACK",
+      "name_es": "APPLE JACK",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "10.5",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in:.",
+      "method_es": "Shake with cracked ice and serve in:.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLE JACK\n11;2 oz. of Apple Jack.\nTeaspoonful of sugar.\nlf2 of a lime juice.\nDrops of Curacao.\nShake with cracked ice and serve in:.\n   Manhattan glass.\n               -39-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-056",
+      "order": 56,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HORSES NECK",
+      "name_es": "HORSES NECK",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice a lime",
+          "item_es": "juice a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "gordon dry gin",
+          "item_es": "gordon dry gin",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "shape",
+          "item_es": "shape",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "bottle of ginger ale",
+          "item_es": "bottle of ginger ale",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a ten oz. glass, with ice, and a",
+      "method_es": "Serve in a ten oz. glass, with ice, and a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HORSES NECK\nJuice a lime.\n2 oz. of Gordon Dry Gin.\n1 Peel of a lime in spiral\n  shape.\nServe in a ten oz. glass, with ice, and a\n  bottle of Ginger Ale."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-057",
+      "order": 57,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MANHATTAN",
+      "name_es": "MANHATTAN",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "vermouth",
+          "item_es": "vermut",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "drops angostura bitters",
+          "item_es": "drops angostura bitters",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Stir and serve with a -cherry in Manhac",
+      "method_es": "Stir and serve with a -cherry in Manhac",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MANHATTAN\n I/2 of Rye Whisky.\n1/2 of Martini & Rossi\n  Vermouth.\nDrops Angostura bitters.\nStir and serve with a -cherry in Manhac\n  ttan glass.\n          ---··:·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-058",
+      "order": 58,
+      "section_title": "Cocktails",
+      "category": "sour",
+      "name_original": "WHISKY SOUR",
+      "name_es": "WHISKY SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "rye whisk.v",
+          "item_es": "rye whisk.v",
+          "amount": "10.5",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a Manhattan glass.",
+      "method_es": "Shake with cracked ice and serve in a Manhattan glass.",
+      "glassware": "manhattan glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKY SOUR\nTeaspoonful of sugar.\nThe juice of a lime.\n 11/2 oz. of Rye Whisk.v.\nShake with cracked ice and\n  serve in a Manhattan glass.\n                 -40_:__••"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-059",
+      "order": 59,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "FOX MOVI ETON E",
+      "name_es": "FOX MOVI ETON E",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "scotch whisky",
+          "item_es": "scotch whisky",
+          "amount": "113",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "\"'3 italian vermouth",
+          "item_es": "\"'3 italian vermouth",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 .cointreau",
+          "item_es": "/ 3 .cointreau",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Drops of Curaçao.            :2 Shake with cracked ice and serve in",
+      "method_es": "Drops of Curaçao.            :2 Shake with cracked ice and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FOX MOVI ETON E\n 1/ :! of a lime jni r;~\n113 Scotch Whisky.\n1\"'3 Italian Vermouth .\n1/ 3 .Cointreau.\nDrops of Curacao.            :2\nShake with cracked ice and serve in\n    Manhattan glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-060",
+      "order": 60,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ABSINTHE DRIP",
+      "name_es": "ABSINTHE DRIP",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE DRIP\n% of Absinthe.\nl/1; of Anissette.\nSer ve with ice a French\n  · Absinthe glass.\n           -   --··t·---",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-061",
+      "order": 61,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SWEESES",
+      "name_es": "SWEESES",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "white of egg",
+          "item_es": "white of egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "/ 3 of absinthe",
+          "item_es": "/ 3 of absinthe",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of french vermouth",
+          "item_es": "/ 3 of french vermouth",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "covering the menthe",
+          "item_es": "covering the menthe",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SWEESES\nTeaspoonful of sugar.\nWhite of Egg.\n2/ 3 of Absinthe.\n1/ 3 of French Vermouth.\nShake with cracked ice and serve in a\n   Champagne glass with Creme de\n   Menthe in the bottom and a Cherry\n   covering the Menthe.\n                 -41-\n               ~\nGolaen tlfe~aing"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-062",
+      "order": 62,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "FINEST AMERICAN WHISKEY",
+      "name_es": "FINEST AMERICAN WHISKEY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "it was fi rst made",
+          "item_es": "it was fi rst made",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FINEST AMERICAN WHISKEY\n         In Bourbon or Rye\n\nJust taste the rich deep fla vor of this\nnoble whisk ey, straight or in the mixed\nd rink sugg-:::;t ed above. Golden W edding\nhas been famous in Amed ca as a ''Gentle-\nman's D rink\" s ince the year 1875 when\nit was fi rst made.\n\n\n\n\n      -42-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-063",
+      "order": 63,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ABSINTHE FRAPPE",
+      "name_es": "ABSINTHE FRAPPE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE FRAPPE\n% of Anisette.\n% of Absinthe.\nSpake with cracked ice, serve\n  in a tall glass.\n\n\n           ---•!•---",
+      "notes": "Receta con OCR demasiado dañado; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-064",
+      "order": 64,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RAINBOW PLUS",
+      "name_es": "RAINBOW PLUS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/7 of grenadine",
+          "item_es": "/7 of grenadine",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "anisette m. b",
+          "item_es": "anisette m. b",
+          "amount": "117",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "perfect amour",
+          "item_es": "perfect amour",
+          "amount": "177",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "green menthe",
+          "item_es": "green menthe",
+          "amount": "117",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 7 of curaçao",
+          "item_es": "/ 7 of curaçao",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/7 of yellow chartreaux",
+          "item_es": "/7 of yellow chartreaux",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/7 of jamaica rum",
+          "item_es": "/7 of jamaica rum",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "light it",
+          "item_es": "light it",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in a Cordial-glass, carefully pour-",
+      "method_es": "Serve in a Cordial-glass, carefully pour-",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RAINBOW PLUS\nServe in a Cordial-glass, carefully pour-\n  ing each ingredient with a Tea spoon.\n1/7 of Grenadine.\n117 Anisette M. B.\n177 of Perfect Amour.\n117 of Green Menthe.\n1/ 7 of Curacao.\n1/7 of Yellow Chartreaux.\n1/7 of Jamaica Rum.\nLight it.\n                 -43-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-065",
+      "order": 65,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ZAZERAC",
+      "name_es": "ZAZERAC",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peel of lime",
+          "item_es": "peel of lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "rye whisky",
+          "item_es": "rye whisky",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "orange bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "and mineral water",
+          "item_es": "and mineral water",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Serve in old fashioned glass with ice",
+      "method_es": "Serve in old fashioned glass with ice",
+      "glassware": "old fashioned glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ZAZERAC\nTeaspoonful of sugar.\nDrops of Absinthe.\nPeel of lime.\n2 oz. of Rye Whisky.\nDrops of Angostura.\nDrops of orange Bitters.\n                                     u\n                                ·..__ ·\nServe in old fashioned glass with ice\n  and mineral water.\n           ---•lo---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-066",
+      "order": 66,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SLOPPC JOE'S BAR",
+      "name_es": "SLOPPC JOE'S BAR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cross road of the world",
+          "item_es": "cross road of the world",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLOPPC JOE'S BAR\n          Cross road of the world.\n                  ----44~"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-067",
+      "order": 67,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SPECIAL COCKTAILS",
+      "name_es": "SPECIAL COCKTAILS",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SPECIAL COCKTAILS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-068",
+      "order": 68,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "POUSSE CAFE",
+      "name_es": "POUSSE CAFE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "creme cocoa",
+          "item_es": "creme cocoa",
+          "amount": "117",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/7• of benedictine",
+          "item_es": "/7• of benedictine",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "anissette",
+          "item_es": "anissette",
+          "amount": "117",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 7 white menth",
+          "item_es": "/ 7 white menth",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "martell brandy",
+          "item_es": "martell brandy",
+          "amount": "317",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice, and serve in a Cordial",
+      "method_es": "Stir with ice, and serve in a Cordial",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "POUSSE CAFE\n117 Creme Cocoa.\n1/7• of Benedictine.\n117 of Anissette.\n 1/ 7 White Menth.\n                                   2\n317 of Martell Brandy.\nStir with ice, and serve in a Cordial\n  glass."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-069",
+      "order": 69,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "THOMAS COOK",
+      "name_es": "THOMAS COOK",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "!t, of noilly prat",
+          "item_es": "!t, of noilly prat",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "he juice of a lime",
+          "item_es": "he juice of a lime",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and serve in a",
+      "method_es": "Shake with cracked ice and serve in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "THOMAS COOK\n· 1;4. of ~artell Cognac.\n  1!t, of Noilly Prat.\n  1h of Dry Gin.\n  Drops of Grenadine.\n  Drops of Curacao.\n  1 he juice of a lime.\n  Shake with cracked ice and serve in a\n    · Manhattan glass.\n                 -.-45-\n           ~  ( HABANA)\n\n\n\n\n         HAVANA - CIGARS\n\n     You are cordially invited to ,visit\nour FACTORY, where real hand made\n  clear Havana cigars are manufactured\n                 ~6-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-070",
+      "order": 70,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MI AM I",
+      "name_es": "MI AM I",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cointrea u",
+          "item_es": "cointrea u",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "m pineapple juice",
+          "item_es": "m pineapple juice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gordon dry gin",
+          "item_es": "gordon dry gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake, with cracked ice, and serve in a tall glass. Drops of Parfait Amour.           c.:..:> Shake with cracked ice and serve in a",
+      "method_es": "Shake, with cracked ice, and serve in a tall glass. Drops of Parfait Amour.           c.:..:> Shake with cracked ice and serve in a",
+      "glassware": "tall glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MI AM I\nDash of Cointrea u.\n1h of Gin.\n1h M Pineapple Juice.\nShake, with cracked ice, and\n  serve in a tall glass.\n           ---··:·---\n        P. &. 0. COCKTAIL           ~\n1h of Gordon Dry Gin.\n1h of Pineapple Juice.\nDrops of Parfait Amour.           c.:..:>\nShake with cracked ice and serve in a\n  tan glass.\n           ---·{•·---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-071",
+      "order": 71,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DOCTOR SPECIAL",
+      "name_es": "DOCTOR SPECIAL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "drops orange bitters",
+          "item_es": "drops orange bitters",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "/ 3 of gin",
+          "item_es": "/ 3 of gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "113",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "with a peel of time",
+          "item_es": "with a peel of time",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Stir and serve in a Manhattan glass",
+      "method_es": "Stir and serve in a Manhattan glass",
+      "glassware": "manhattan glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DOCTOR SPECIAL\nDrops Orange Bitters.\nDro.p s of Grenadine.\n2/ 3 of Gin.\n113 Apple Jack.\nStir and serve in a Manhattan glass\n   with a peel of Time.\n                 -47-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-072",
+      "order": 72,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CRACE LINE",
+      "name_es": "CRACE LINE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of martell cognac",
+          "item_es": "/ 3 of martell cognac",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/3.of arna vermouth",
+          "item_es": "/3.of arna vermouth",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve m a Shake with cracked ice, (put in one",
+      "method_es": "Shake with cracked ice, and serve m a Shake with cracked ice, (put in one",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CRACE LINE\n1h Dry Gin.\n% of French Ver mouth.\n                                  ~\nWh'ite of an Egg.\nA few drops of Cassis.            .\nShake with cracked ice, and serve m a\n  tall glass.\n\n\n       .   LOS   A~CELES\n1/ 3 of Martell Cognac.\n2/3.of Arna Vermouth.\n                             7\nShake with cracked ice, (put in one\n   cherry and a peel of lime) and serve\n   in a, Manhattan glass.\n           ---+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-073",
+      "order": 73,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "AROUND THE WORLD",
+      "name_es": "AROUND THE WORLD",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "green",
+          "item_es": "green",
+          "amount": "14",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "/ 1 of gin",
+          "item_es": "/ 1 of gin",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "AROUND THE WORLD\n112 of Pineapple Juice.\n14 of Green.\nCreme de Menthe.\n1/ 1 of Gin.\nShake with cracked ice, and serve in\n    .a·tall glass.\n    ' ,.\n                 -49-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-074",
+      "order": 74,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PEDRO DOMECQ",
+      "name_es": "PEDRO DOMECQ",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PEDRO DOMECQ\nCuaranteed pure g•a?e brandy made in a pot still\nfrom wine grow exclusively in JEREZ de la",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-075",
+      "order": 75,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "FRONTERA, Sl>AIN",
+      "name_es": "FRONTERA, Sl>AIN",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FRONTERA, Sl>AIN.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-076",
+      "order": 76,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "KENTUCKY",
+      "name_es": "KENTUCKY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "~f rye whisky",
+          "item_es": "~f rye whisky",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "martell cognac",
+          "item_es": "martell cognac",
+          "amount": "112",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in Shake witb cracked ice, and serve in Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in Shake witb cracked ice, and serve in Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "KENTUCKY\n112 of Pineapple Juice.\n112 ~f Rye Whisky.\n                                l\nShake with cracked ice, and serve in\n  a tall glass.\n\n\n             NEW.:~ORK          ~\n112 of Martell Cognac.\n112 of Pineapple Juice.          <.:..:>\n\nShake witb cracked ice, and serve in\n  a tall glass.\n           ---·}---\n             VALDES\n\n\n~ f::~~::~:~e:::s.              ~\nShake with cracked ice, and serve in\n  a tall glass.\n                 -51 -=-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-077",
+      "order": 77,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WHAT IS COOD",
+      "name_es": "WHAT IS COOD",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "/b of gin",
+          "item_es": "/b of gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 of aprocit brandy",
+          "item_es": "/ 3 of aprocit brandy",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whfte of an egg",
+          "item_es": "whfte of an egg",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHAT IS COOD\nTeaspoonful of sugar.\n\n\n\n                                 x\n2/B of Gin.\n1/ 3 of Aprocit Brandy.\nThe juice of a lime.\nWhfte of an Egg.\nShake with cracked ice, and serve in\n  a tall glass.\n\n          ---+---"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-078",
+      "order": 78,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "CHAMPAGNE PUNCH",
+      "name_es": "CHAMPAGNE PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bottle of champagne",
+          "item_es": "bottle of champagne",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "bottle of mineral water",
+          "item_es": "bottle of mineral water",
+          "amount": "14",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "fruits",
+          "item_es": "fruits",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "the peel of a lime",
+          "item_es": "the peel of a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Add the peel of four limes and also Put a lump of sugar in a",
+      "method_es": "Add the peel of four limes and also Put a lump of sugar in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPACNEPUNCH\n          (For Six Persons)\n1 Glass of Marrasqu4no. .\n2 Glass of Martell Cognac.\n1 Glass of Red Curacao.\n1 Bottle of Champagne.\n14 bottle of Mineral water.\nAdd the peel of four limes and also\n  fruits.\nSweeten to taste and serve in a Cliam-\n  pagne glass.\n                -52_;-\n   CHAMPAGNE COCKTAIL\nPut a lump of sugar in a\n  Champagne glass.          ~\nThe peel of a lime.\nMint1eaves.\nA few drops of Bitters and\n  Curacao.\nFull the glass with Champagne.\n\n        ---·+·---\nIN HAVANA\nNEW      YORK\n                 LONDON\n           AND PARIS\n\n   ZINZANO\n           VERMOUTH\n              - 53-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-079",
+      "order": 79,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CALESERO RHUM",
+      "name_es": "CALESERO RHUM",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CALESERO    RHUM\nTHE OLDEST RUM I N WEST INDIES\n       HAVANA, CUBA\n            -54- ··",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-080",
+      "order": 80,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CIDER COCKTAIL",
+      "name_es": "CIDER COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "the peel of a lime",
+          "item_es": "the peel of a lime",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        },
+        {
+          "item_original": "mint leaves",
+          "item_es": "mint leaves",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Put a lump of sugar in a",
+      "method_es": "Put a lump of sugar in a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CIDER COCKTAIL\nPut a lump of sugar in a\n  Champagne glass .\n •\nThe peel of a lime.\nMint leaves.\nA few drops of Bitters and\n  Curacao.\nFull he glass with Cider.\n           --- ·~~----\n\n\n\n\n                                 5'\n     FANCY            DRINKS"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-081",
+      "order": 81,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "AMERICAN GIRL",
+      "name_es": "AMERICAN GIRL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/3 cognac",
+          "item_es": "/3 cognac",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "amer pican",
+          "item_es": "amer pican",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "a cherry",
+          "item_es": "a cherry",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Drops of Cointreau. ~=~ Shake with cracked ice, and serve in",
+      "method_es": "Drops of Cointreau. ~=~ Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "AMERICAN CIRL\nY2 of a lime juice.\n1/ 3 Italian Vermouth.              M\n2/3 Cognac.\nDrops of Amer Pican.\nDrops of Cointreau. ~=~\nShake with cracked ice, and serve in\n   hollow stemmed glass, the base filled\n   with Parfait Amour and corked with\n   a cherry.\n                 · ~55-\n-56-''"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-082",
+      "order": 82,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SOPHISTICATE",
+      "name_es": "SOPHISTICATE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "/ 2 of a lime juice",
+          "item_es": "/ 2 of a lime juice",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 brandy",
+          "item_es": "/ 3 brandy",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "a cherry",
+          "item_es": "a cherry",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SOPHISTICATE\n1/ 2 of a lime juice.\n2/ 3 Brandy.\nl'/3 Creme de Cacao.\nWhite of an Egg.\nShake with cracked ice, and serve in\n    hollow stemmed glass, the base filled\n    with Parfait Amour and corked with\n    a cherry."
+    },
+    {
+      "id": "1939-sloppy-joes-bar-083",
+      "order": 83,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HAPPY NIGHT",
+      "name_es": "HAPPY NIGHT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "/ 3 gin",
+          "item_es": "/ 3 gin",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "113",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "olive",
+          "item_es": "aceituna",
+          "amount": null,
+          "unit": null,
+          "notes": "to top"
+        }
+      ],
+      "method_original": "Shake with cracked ice, and serve in",
+      "method_es": "Shake with cracked ice, and serve in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HAPPY NIGHT\n Juice of a lime.\n2/ 3 Gin.\n113 Apple Jack.\nWhite of an Egg,\n1 Teaspoonful of sugar.\nDrops of Creme de Menlne.\nShake with cracked ice, and serve in\n   hollow stemmed glass, the base filled\n   with Grenadine and corked wfth- an\n   olive.\n                 - 57-"
+    },
+    {
+      "id": "1939-sloppy-joes-bar-084",
+      "order": 84,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CUBA LIBRE",
+      "name_es": "CUBA LIBRE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "onz. of ron",
+          "item_es": "onz. of ron",
+          "amount": "10.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in 10 onz. Glass.",
+      "method_es": "Serve in 10 onz. Glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CUBA         LIBRE '\n\nJuice of half lime\n11;2 onz. of Ron.\n-1/i. Bottle of Coca~Cola.\nServe in 10 onz. Glass.\n                    ___.:5g_ .,"
+    }
+  ]
+}
