@@ -320,6 +320,22 @@
     "bookFile": "data/euvs-books/1928-goderham-and-worts-abc-of-mixing-cocktails.json"
   },
   {
+    "id": "1928-heres-how-by-judge-jr-3rd-printind",
+    "year": 1928,
+    "decade": "1920s",
+    "title": "Here's How! (3rd Printing)",
+    "author": "Judge, Jr.",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "The John Day Company (for Judge Publishing Co.)",
+    "city": "New York",
+    "edition": "Third Printing, February 1928 (New & Revised Edition)",
+    "notes": "Libro humorístico de Judge, Jr. (humorist del semanario Judge Magazine). Es una sátira de la Prohibición disfrazada de manual de coctelería: 51 recetas con descripciones cómicas, glosario humorístico (Gordon water = ginebra, McCarty = ron cubano, Hooker = jigger), poesías de bebida ('toasts') intercaladas. Skeleton reconstruido a partir del Table of Contents (51 recetas listadas con número de página); el extractor heurístico original solo capturó 13 candidatos por la confusión entre toasts y recetas. Auto-extractor custom Judge Jr-aware traduce los términos jocosos a su equivalente real (Gordon water → Gordon's Gin, etc.). ~28% de recetas con OCR severamente dañado conservan raw_text íntegro y un campo notes.",
+    "sectionCount": 2,
+    "recipeCount": 51,
+    "bookFile": "data/euvs-books/1928-heres-how-by-judge-jr-3rd-printind.json"
+  },
+  {
     "id": "1929-for-home-use-by-e-g-g-smythers-pty-ltd",
     "year": 1929,
     "decade": "1920s",
