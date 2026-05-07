@@ -4,8 +4,8 @@
     "title": "American Drinks",
     "author": "Victor Hugo Himmelreich",
     "year": 1921,
-    "language": "en",
-    "language_name": "Inglés",
+    "language": "de",
+    "language_name": "Alemán",
     "publisher": "Self-published",
     "city": "USA",
     "edition": "First Edition (1921)",
@@ -40,13 +40,28 @@
       "category": "cocktail",
       "name_es": "CALIFORNIAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker und der saft einer halben",
+          "item_es": "zucker und der saft einer halben",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "port",
+          "item_es": "port",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +72,49 @@
       "category": "cocktail",
       "name_es": "MANHATTAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ci-",
+          "item_es": "ci-",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "creme de rose",
+          "item_es": "creme de rose",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "aufgelösten oder 2 tee",
+          "item_es": "aufgelösten oder 2 tee",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vanille",
+          "item_es": "vanille",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +142,21 @@
       "category": "cocktail",
       "name_es": "BRANDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten",
+          "item_es": "aufgelösten",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +167,21 @@
       "category": "cocktail",
       "name_es": "CLARET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten",
+          "item_es": "aufgelösten",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +192,21 @@
       "category": "cocktail",
       "name_es": "SANTA CRUZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten",
+          "item_es": "aufgelösten",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +217,21 @@
       "category": "cocktail",
       "name_es": "VANTOGRIO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten",
+          "item_es": "aufgelösten",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -176,13 +259,21 @@
       "category": "cocktail",
       "name_es": "C R U S T A",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ci-",
+          "item_es": "ci-",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -244,13 +335,35 @@
       "category": "cocktail",
       "name_es": "APFELSINEN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker leicht auf einer orangen-",
+          "item_es": "zucker leicht auf einer orangen-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "miramonte darauf",
+          "item_es": "miramonte darauf",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "kalten sekt hinzu und",
+          "item_es": "kalten sekt hinzu und",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -261,13 +374,98 @@
       "category": "cocktail",
       "name_es": "ANGOSTURA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker leicht auf einer citronen-",
+          "item_es": "zucker leicht auf einer citronen-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "schlösser",
+          "item_es": "schlösser",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kalten sekt hinzu",
+          "item_es": "kalten sekt hinzu",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "vorgekühlten sekt",
+          "item_es": "vorgekühlten sekt",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "neu-",
+          "item_es": "neu-",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "cognac medi-",
+          "item_es": "cognac medi-",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "guten",
+          "item_es": "guten",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ananas extrakt",
+          "item_es": "ananas extrakt",
+          "amount": "5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "weisswein",
+          "item_es": "weisswein",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "arrac",
+          "item_es": "arrac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "apfelwein gebe man in",
+          "item_es": "apfelwein gebe man in",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "weisswein und eine",
+          "item_es": "weisswein und eine",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +476,35 @@
       "category": "cocktail",
       "name_es": "J U L E P S",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten",
+          "item_es": "aufgelösten",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angelösten",
+          "item_es": "angelösten",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "aufgelösten zuk-",
+          "item_es": "aufgelösten zuk-",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "auch July genannt",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +515,21 @@
       "category": "cocktail",
       "name_es": "WHISKY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten zuk-",
+          "item_es": "aufgelösten zuk-",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -312,13 +540,21 @@
       "category": "cocktail",
       "name_es": "STEINACH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "aufgelösten zuk-",
+          "item_es": "aufgelösten zuk-",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -329,13 +565,28 @@
       "category": "cocktail",
       "name_es": "PUNSCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "auf",
+          "item_es": "auf",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ma-",
+          "item_es": "ma-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -346,13 +597,35 @@
       "category": "cocktail",
       "name_es": "ANANAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "auf",
+          "item_es": "auf",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ma-",
+          "item_es": "ma-",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vanille",
+          "item_es": "vanille",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +636,28 @@
       "category": "cocktail",
       "name_es": "VIKTOR HUGO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "auf",
+          "item_es": "auf",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "arrac und",
+          "item_es": "arrac und",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -380,13 +668,35 @@
       "category": "cocktail",
       "name_es": "PUNSCHE UND GROGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker oder würfelzucker werden",
+          "item_es": "zucker oder würfelzucker werden",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "teemischung",
+          "item_es": "teemischung",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ananas",
+          "item_es": "ananas",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -397,13 +707,28 @@
       "category": "cocktail",
       "name_es": "ORANGE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker oder würfelzucker werden",
+          "item_es": "zucker oder würfelzucker werden",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "schlummer",
+          "item_es": "schlummer",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -414,13 +739,42 @@
       "category": "cocktail",
       "name_es": "SCHWEDEN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker oder würfelzucker werden",
+          "item_es": "zucker oder würfelzucker werden",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "schweden",
+          "item_es": "schweden",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "aufgelösten zucker und schütte",
+          "item_es": "aufgelösten zucker und schütte",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "citrone garnieren",
+          "item_es": "citrone garnieren",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -431,13 +785,49 @@
       "category": "cocktail",
       "name_es": "AMERICANO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura und serviere mit",
+          "item_es": "angostura und serviere mit",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "boone-",
+          "item_es": "boone-",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "citronensaft",
+          "item_es": "citronensaft",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "aufgelösten zucker tüchtig",
+          "item_es": "aufgelösten zucker tüchtig",
+          "amount": "4",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "aufgelösten zucker",
+          "item_es": "aufgelösten zucker",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

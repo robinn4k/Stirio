@@ -4,8 +4,8 @@
     "title": "1876 Traité de la Fabrication des liqueurs et de la distillation des alcools",
     "author": null,
     "year": 1876,
-    "language": "en",
-    "language_name": "Inglés",
+    "language": "fr",
+    "language_name": "Francés",
     "publisher": null,
     "city": null,
     "edition": null,
@@ -83,13 +83,21 @@
       "category": "cocktail",
       "name_es": "AMERDE HOLLANDE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "esprit        parfumé",
+          "item_es": "esprit        parfumé",
+          "amount": "38",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "Écorces de curaçao de Hollande. i kilogramme. Citrons frais (zestes) 20 (nombre). Oranges fraîches (zestes). 20 (nombre). Alcoolà 5o degrés. 100 litres. Faire infuser à froid pendant un mois, tircr à clair et filtrer. Les liqueurs hollandaises se mettent dans des C chons de grès rouge de forme carré",
       "method_es": "Écorces de curaçao de Hollande. i kilogramme. Citrons frais (zestes) 20 (nombre). Oranges fraîches (zestes). 20 (nombre). Alcoolà 5o degrés. 100 litres. Faire infuser à froid pendant un mois, tircr à clair et filtrer. Les liqueurs hollandaises se mettent dans des C chons de grès rouge de forme carré",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -117,13 +125,21 @@
       "category": "cocktail",
       "name_es": "DES CONSERVES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "liquide",
+          "item_es": "liquide",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "pour conserves",
       "method_es": "pour conserves",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -134,13 +150,21 @@
       "category": "cocktail",
       "name_es": "ESPRITDEGOUDRON",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pro-",
+          "item_es": "pro-",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "Goudron de Norvége. 5oo grammes. à 85 degrés. Alcool 2 litres. Eau commune. 1 litre. Distiller le tout avec précaution au bain de sable dans une cornue en verre, pour retirer 2 litres de pro- duit. INFUSION DE COQUES D'AMANDES AMÈRES TORRÉFIÉES. Coques d'amandes amères 5 kilog. 5oo gr. Alcoolà 85 de",
       "method_es": "Goudron de Norvége. 5oo grammes. à 85 degrés. Alcool 2 litres. Eau commune. 1 litre. Distiller le tout avec précaution au bain de sable dans une cornue en verre, pour retirer 2 litres de pro- duit. INFUSION DE COQUES D'AMANDES AMÈRES TORRÉFIÉES. Coques d'amandes amères 5 kilog. 5oo gr. Alcoolà 85 de",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
