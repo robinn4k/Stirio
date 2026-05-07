@@ -48,6 +48,22 @@
     "bookFile": "data/euvs-books/1859-the-book-of-one-hundred-beverages-by-william-bernhard.json"
   },
   {
+    "id": "1860-oxford-night-caps",
+    "year": 1860,
+    "decade": "1860s",
+    "title": "Oxford Night Caps (1860 ed.)",
+    "author": "Richard Cook",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "Oxford",
+    "edition": "1860 Edition",
+    "notes": "1860 edition de Oxford Night Caps.",
+    "sectionCount": 2,
+    "recipeCount": 22,
+    "bookFile": "data/euvs-books/1860-oxford-night-caps.json"
+  },
+  {
     "id": "1862-jerry-thomas-bartenders-guide",
     "year": 1862,
     "decade": "1860s",
@@ -270,6 +286,22 @@
     "sectionCount": 25,
     "recipeCount": 38,
     "bookFile": "data/euvs-books/1893-beverages-and-sandwiches-for-your-husbands-friends-1893.json"
+  },
+  {
+    "id": "1895-official-hand-book-and-guide-1895",
+    "year": 1895,
+    "decade": "1890s",
+    "title": "Official Hand-Book and Guide (1895)",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "NY",
+    "edition": "Edition (1895)",
+    "notes": "Sister edition de 1895 Bartenders Association NY (ya en catálogo).",
+    "sectionCount": 2,
+    "recipeCount": 134,
+    "bookFile": "data/euvs-books/1895-official-hand-book-and-guide-1895.json"
   },
   {
     "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city",
