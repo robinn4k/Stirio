@@ -240,6 +240,22 @@
     "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
   },
   {
+    "id": "1906-louis-mixed-drinks-by-muckensturm",
+    "year": 1906,
+    "decade": "1900s",
+    "title": "Louis' Mixed Drinks",
+    "author": "Muckensturm",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1906)",
+    "notes": "Manual pre-Prohibición de Muckensturm — 'Louis' Mixed Drinks'.",
+    "sectionCount": 2,
+    "recipeCount": 60,
+    "bookFile": "data/euvs-books/1906-louis-mixed-drinks-by-muckensturm.json"
+  },
+  {
     "id": "1907-smacks-and-smiles-tenth-edition-by-charles-smith",
     "year": 1907,
     "decade": "1900s",
@@ -270,6 +286,22 @@
     "sectionCount": 2,
     "recipeCount": 115,
     "bookFile": "data/euvs-books/1909-recipes-of-american-and-other-iced-drinks.json"
+  },
+  {
+    "id": "1909-the-reminder-by-jacob-a-didier-3rd-edition",
+    "year": 1909,
+    "decade": "1900s",
+    "title": "The Reminder (3rd Edition)",
+    "author": "Jacob A. Didier",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Third Edition (1909)",
+    "notes": "Manual pre-Prohibición de Jacob A. Didier en su 3ª edición (1909).",
+    "sectionCount": 2,
+    "recipeCount": 187,
+    "bookFile": "data/euvs-books/1909-the-reminder-by-jacob-a-didier-3rd-edition.json"
   },
   {
     "id": "1910-ca-101-drinks-and-how-to-mix-them",
@@ -496,6 +528,22 @@
     "bookFile": "data/euvs-books/1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes.json"
   },
   {
+    "id": "1925-about-town-cocktail-book-by-joe-fitchett",
+    "year": 1925,
+    "decade": "1920s",
+    "title": "About Town Cocktail Book",
+    "author": "Joe Fitchett",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1925)",
+    "notes": "Manual UK de Joe Fitchett — 'About Town' Cocktail Book.",
+    "sectionCount": 2,
+    "recipeCount": 128,
+    "bookFile": "data/euvs-books/1925-about-town-cocktail-book-by-joe-fitchett.json"
+  },
+  {
     "id": "1925-ca-buckstone-book-of-cocktails",
     "year": 1925,
     "decade": "1920s",
@@ -526,6 +574,22 @@
     "sectionCount": 2,
     "recipeCount": 142,
     "bookFile": "data/euvs-books/1925-drinks-long-short-by-nina-toye-and-a-h-adair.json"
+  },
+  {
+    "id": "1925-summer-drinks-and-winter-codials-by-c-f-leyel",
+    "year": 1925,
+    "decade": "1920s",
+    "title": "Summer Drinks and Winter Cordials",
+    "author": "C. F. Leyel",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1925)",
+    "notes": "Manual UK estacional de C.F. Leyel — Summer Drinks + Winter Cordials.",
+    "sectionCount": 2,
+    "recipeCount": 81,
+    "bookFile": "data/euvs-books/1925-summer-drinks-and-winter-codials-by-c-f-leyel.json"
   },
   {
     "id": "1927-heres-how-by-judge-jr-2nd-impression",
@@ -910,6 +974,22 @@
     "sectionCount": 16,
     "recipeCount": 80,
     "bookFile": "data/euvs-books/1933-sloppy-joes-bar.json"
+  },
+  {
+    "id": "1933-the-bon-vivants-companion-by-george-a-zabriskie",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "The Bon Vivant's Companion",
+    "author": "George A. Zabriskie",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933, post-Repeal)",
+    "notes": "Manual post-Repeal de George A. Zabriskie — 'The Bon Vivant's Companion'.",
+    "sectionCount": 2,
+    "recipeCount": 165,
+    "bookFile": "data/euvs-books/1933-the-bon-vivants-companion-by-george-a-zabriskie.json"
   },
   {
     "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition",
