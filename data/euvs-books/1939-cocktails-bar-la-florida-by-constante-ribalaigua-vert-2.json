@@ -132,13 +132,21 @@
       "category": "flip",
       "name_es": "BACARDI FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Shake with cracked ice and",
       "method_es": "Shake with cracked ice and",
       "glassware": "Srta. Bessie Reineke",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -367,13 +375,28 @@
       "category": "cocktail",
       "name_es": "CLAROSCURO BACARDI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "carta   oro   ba",
+          "item_es": "carta   oro   ba",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Sra. Estela Fiallo",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,

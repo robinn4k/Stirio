@@ -542,13 +542,21 @@
       "category": "cocktail",
       "name_es": "EGG LEMONADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cut loaf sugar saturated       3 dashes of angostura bitters",
+          "item_es": "cut loaf sugar saturated       3 dashes of angostura bitters",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use thin tiunbler.           Syrup or Sugar to wste. Fill up with cold Cider, stir with            GREEN OASIS",
       "method_es": "Use thin tiunbler.           Syrup or Sugar to wste. Fill up with cold Cider, stir with            GREEN OASIS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,

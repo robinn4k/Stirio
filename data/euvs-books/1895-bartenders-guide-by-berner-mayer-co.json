@@ -248,13 +248,21 @@
       "category": "cocktail",
       "name_es": "B a by Bur ns",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fu l of bened ictine, teaspoon fu l o f ve rmouth",
+          "item_es": "fu l of bened ictine, teaspoon fu l o f ve rmouth",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -2630,13 +2638,21 @@
       "category": "cocktail",
       "name_es": "FIFTEEN-BALL POOL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": ". 1 qtitirt",
+          "item_es": ". 1 qtitirt",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

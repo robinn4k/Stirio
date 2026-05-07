@@ -5849,13 +5849,21 @@
       "category": "cocktail",
       "name_es": "MARTHA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe over, twist lemon peel over and serve",
+          "item_es": "absinthe over, twist lemon peel over and serve",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Stir well with ice in old-fashioned cocktail glass, add bits of fruit, Stir well with ice, strain into chilled cocktail glass, add green olive, twist lemon peel over and serve. Stir well with ice, strain into chiUed cocktail glass, add pickled onion, twist lemon peel over and serve. Stir well with ice, strain into chilled cocktail glass, add pickled onion, twist lemon peel over and serve. Stir well with ice, strain into chilled cocktail glass, add pickled onion, Stir well with ice, strain into chilled cocktail glass, add stuffed olive, twist Stir well with ice, strain into chilled cocktail glass, add stuffed olive, twist Stir well with ice, strain into chilled cocktail glass, add pickled onion and serve. Stir well with ice, strain into chilled cocktail glass, add pickled onion, twist",
       "method_es": "Stir well with ice in old-fashioned cocktail glass, add bits of fruit, Stir well with ice, strain into chilled cocktail glass, add green olive, twist lemon peel over and serve. Stir well with ice, strain into chiUed cocktail glass, add pickled onion, twist lemon peel over and serve. Stir well with ice, strain into chilled cocktail glass, add pickled onion, twist lemon peel over and serve. Stir well with ice, strain into chilled cocktail glass, add pickled onion, Stir well with ice, strain into chilled cocktail glass, add stuffed olive, twist Stir well with ice, strain into chilled cocktail glass, add stuffed olive, twist Stir well with ice, strain into chilled cocktail glass, add pickled onion and serve. Stir well with ice, strain into chilled cocktail glass, add pickled onion, twist",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 338,

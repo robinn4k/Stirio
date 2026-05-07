@@ -1409,13 +1409,21 @@
       "category": "cocktail",
       "name_es": "DELYS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "creme yvette ....a jigger",
+          "item_es": "creme yvette ....a jigger",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well with ice, strain into chilled cocktail glass and serve. Shake well with ice, strain into chilled cocktail glass and serve. Shake well with ice, strain into chilled cocktail glass and serve.",
       "method_es": "Shake well with ice, strain into chilled cocktail glass and serve. Shake well with ice, strain into chilled cocktail glass and serve. Shake well with ice, strain into chilled cocktail glass and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -2293,13 +2301,21 @@
       "category": "cocktail",
       "name_es": "IRRESISTIBLE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "benedictin",
+          "item_es": "benedictin",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well with ice, strain into chilled cocktail glass and serve. Shake well with ice, strain into chilled cocktail glass, twist lemon peel over",
       "method_es": "Shake well with ice, strain into chilled cocktail glass and serve. Shake well with ice, strain into chilled cocktail glass, twist lemon peel over",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 135,

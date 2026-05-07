@@ -630,13 +630,21 @@
       "category": "cocktail",
       "name_es": "DEVIL'S",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "creme de menthe (green)",
+          "item_es": "creme de menthe (green)",
+          "amount": "0.25",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the shaker half full with broken ice and add: Shake well and strain into a cocktail glass. Add a pinch of red",
       "method_es": "Fill the shaker half full with broken ice and add: Shake well and strain into a cocktail glass. Add a pinch of red",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -702,13 +710,21 @@
       "category": "cocktail",
       "name_es": "DIKI-DIKI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "calvados",
+          "item_es": "calvados",
+          "amount": "0.25",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the shaker half full of broken ice and add: Shake well and strain into a cocktail glass.",
       "method_es": "Fill the shaker half full of broken ice and add: Shake well and strain into a cocktail glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -1879,13 +1895,42 @@
       "category": "punch",
       "name_es": "EMERGENCY PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginger ale in the fridge and a bottle of rum. so this",
+          "item_es": "ginger ale in the fridge and a bottle of rum. so this",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
       "method_original": "Put a good deal of ice in a big pitcher",
       "method_es": "Put a good deal of ice in a big pitcher",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -3095,13 +3140,21 @@
       "category": "cocktail",
       "name_es": "STRAND COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tomato ketchup, 1 tablespoon of mayonnaise, 1",
+          "item_es": "tomato ketchup, 1 tablespoon of mayonnaise, 1",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 115,

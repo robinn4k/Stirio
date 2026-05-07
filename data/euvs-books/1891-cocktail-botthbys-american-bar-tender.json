@@ -74,13 +74,28 @@
       "category": "cobbler",
       "name_es": "BRANDY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orgeat",
+          "item_es": "orgeat",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette and about half a jigger of ab-",
+          "item_es": "anisette and about half a jigger of ab-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "mixing-glass, fill the glass with fine iee, add about a jigger and a half of cognac, shake thoroughly, decorate and serve with straws. Fill a cut-glas.<J goblet with fine ice, and lay some assorted fruits on the top Fill a medium-size mixing-glass with fine ice, and pour over it five drops added. (&e Receipe No. 27.)",
       "method_es": "mixing-glass, fill the glass with fine iee, add about a jigger and a half of cognac, shake thoroughly, decorate and serve with straws. Fill a cut-glas.<J goblet with fine ice, and lay some assorted fruits on the top Fill a medium-size mixing-glass with fine ice, and pour over it five drops added. (&e Receipe No. 27.)",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +106,21 @@
       "category": "cocktail",
       "name_es": "BRANDY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice about the size of an t'gg",
+          "item_es": "ice about the size of an t'gg",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -142,13 +165,21 @@
       "category": "cocktail",
       "name_es": "DUTCH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "beer",
+          "item_es": "beer",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +190,21 @@
       "category": "cocktail",
       "name_es": "FANCY WmSKEY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cura~oa",
+          "item_es": "cura~oa",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "stir thoroughly, strain into a frosted glass and serve with ice water on the side.",
       "method_es": "stir thoroughly, strain into a frosted glass and serve with ice water on the side.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -176,13 +215,28 @@
       "category": "cocktail",
       "name_es": "GIN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "old tom cordial gin",
+          "item_es": "old tom cordial gin",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ital-",
+          "item_es": "ital-",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a large bar glass with cracked ice, and add a spoonful of sugar and a",
       "method_es": "Fill a large bar glass with cracked ice, and add a spoonful of sugar and a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -244,13 +298,21 @@
       "category": "cocktail",
       "name_es": "TURF COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water. add a piece of ice, three drops of angostura bitters",
+          "item_es": "water. add a piece of ice, three drops of angostura bitters",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "drops of Angostura bitters, one dash of gum and a taste of maraschino. Throw",
       "method_es": "drops of Angostura bitters, one dash of gum and a taste of maraschino. Throw",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -346,13 +408,21 @@
       "category": "cocktail",
       "name_es": "APPLE BRANDY, HOT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar. add as much apple brandy as the glass will hold, stir, spice",
+          "item_es": "sugar. add as much apple brandy as the glass will hold, stir, spice",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a hot-water glass three qul!rters full of boiling water and dissolve in it served with this drink.",
       "method_es": "Fill a hot-water glass three qul!rters full of boiling water and dissolve in it served with this drink.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -516,13 +586,21 @@
       "category": "punch",
       "name_es": "ROYAL PUNCH, HOT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cura(joa and the well-beaten whites of three eggs. serve as hot as",
+          "item_es": "cura(joa and the well-beaten whites of three eggs. serve as hot as",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "fresh juice of 1our lemons and six heaping tablespoonfuls of sugar. Set this mix- add a jigger of cognac and a. dash of St. Croix rum, 1111 the glass with hot milk",
       "method_es": "fresh juice of 1our lemons and six heaping tablespoonfuls of sugar. Set this mix- add a jigger of cognac and a. dash of St. Croix rum, 1111 the glass with hot milk",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -805,13 +883,21 @@
       "category": "cocktail",
       "name_es": "HALF AND HALF",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "or mug containing half porter and half ale",
+          "item_es": "or mug containing half porter and half ale",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -873,13 +959,28 @@
       "category": "cocktail",
       "name_es": "LAWN TENNIS COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water. mix well and bottle. this is an excellent summer drink",
+          "item_es": "water. mix well and bottle. this is an excellent summer drink",
+          "amount": "2",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "any liquor is to place a !!mall piece of ice in a small bar glass and",
+          "item_es": "any liquor is to place a !!mall piece of ice in a small bar glass and",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "pour the liquor from the pony glass over it, or place the small bar glass on the",
       "method_es": "pour the liquor from the pony glass over it, or place the small bar glass on the",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -1111,13 +1212,21 @@
       "category": "punch",
       "name_es": "CLARET PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cura9oa and a quart of apollinaris. stir until the sugar is tho-",
+          "item_es": "cura9oa and a quart of apollinaris. stir until the sugar is tho-",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "mixing-glass. Fill the glass with fine ice and pour in as much claret as the shake thoroughly, grate nutmeg over the top and serve with straws.",
       "method_es": "mixing-glass. Fill the glass with fine ice and pour in as much claret as the shake thoroughly, grate nutmeg over the top and serve with straws.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 65,
@@ -1179,13 +1288,21 @@
       "category": "punch",
       "name_es": "MAITRANK OR MAY-WINE PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curat;:oa",
+          "item_es": "curat;:oa",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1451,13 +1568,21 @@
       "category": "cocktail",
       "name_es": "BATAVIA ARRACK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "balsam of tolu, and one ounce of sliced pineapples. digest with",
+          "item_es": "balsam of tolu, and one ounce of sliced pineapples. digest with",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1468,13 +1593,21 @@
       "category": "cocktail",
       "name_es": "CIDER-TO KEEP SWEET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water will be required in making this paste. put all together in a barrel",
+          "item_es": "water will be required in making this paste. put all together in a barrel",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1536,13 +1669,21 @@
       "category": "cocktail",
       "name_es": "IRISH WHISKEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "alcohol, two ounces of acetic acid and one pound of loaf sugar",
+          "item_es": "alcohol, two ounces of acetic acid and one pound of loaf sugar",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Let it stand two or three days before using.",
       "method_es": "Let it stand two or three days before using.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 90,
@@ -1604,13 +1745,21 @@
       "category": "cocktail",
       "name_es": "RYE WHISKEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "acetic acid and one ounce of pelargonic ether. irish whiskey",
+          "item_es": "acetic acid and one ounce of pelargonic ether. irish whiskey",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Add five gallons of Santa Cruz rum, five pounds of crushed BOgat' dissolved pour off the clear tincture; then boil the dregs a fow minutes in 1 quart",
       "method_es": "Add five gallons of Santa Cruz rum, five pounds of crushed BOgat' dissolved pour off the clear tincture; then boil the dregs a fow minutes in 1 quart",
       "glassware": "EQUAL TO HOSTETTER'S.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

@@ -49,13 +49,56 @@
       "category": "cocktail",
       "name_es": "PENDENNIS COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "augostura                    bitters",
+          "item_es": "augostura                    bitters",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "champagne.                                                    fill   mixing glass    with   shaved   ice",
+          "item_es": "champagne.                                                    fill   mixing glass    with   shaved   ice",
+          "amount": "3",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "apollinaris.                                                     juice of one-half lime",
+          "item_es": "apollinaris.                                                     juice of one-half lime",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "cherries.                                               one-third jigger hungarian apricot-",
+          "item_es": "cherries.                                               one-third jigger hungarian apricot-",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "sugar      dissohed",
+          "item_es": "sugar      dissohed",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "kentucky           bourbon                     one teaspoon nutmeg",
+          "item_es": "kentucky           bourbon                     one teaspoon nutmeg",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Put     ail    the    ingrédients              together      in Stir   and strain in cocktail glass. Use       silver       cup. fresh       sweet mint,             insert      them      in    the              nac, and one pint Jamaica Rum, beat",
       "method_es": "Put     ail    the    ingrédients              together      in Stir   and strain in cocktail glass. Use       silver       cup. fresh       sweet mint,             insert      them      in    the              nac, and one pint Jamaica Rum, beat",
       "glassware": "One Gallon",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +109,77 @@
       "category": "toddy",
       "name_es": "OLD FASHIONED TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whisky.                                                                                   superintendent",
+          "item_es": "whisky.                                                                                   superintendent",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange curacoa",
+          "item_es": "orange curacoa",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "frencb brandy",
+          "item_es": "frencb brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "champagne,             cold",
+          "item_es": "champagne,             cold",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "club soda,       cold",
+          "item_es": "club soda,       cold",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "french brandy.                                           sauterne cup, two limes",
+          "item_es": "french brandy.                                           sauterne cup, two limes",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "st.   croix      rum.                      sparkling cider cup four limes",
+          "item_es": "st.   croix      rum.                      sparkling cider cup four limes",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica",
+          "item_es": "jamaica",
+          "amount": "0.5",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Stir   well and serve in                   toddy      glass. fresh mint, strawberries on top.",
       "method_es": "Stir   well and serve in                   toddy      glass. fresh mint, strawberries on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +190,28 @@
       "category": "cocktail",
       "name_es": "DR. BIRCII COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "imported ginger aie.                one-fourth      jigger        of     grape         fruit",
+          "item_es": "imported ginger aie.                one-fourth      jigger        of     grape         fruit",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Serve in cocktail glass.                       enough      to    pass      through             strainer. Strain into cocktail glass and leave the Fill with fine ice and serve.                  Juice.",
       "method_es": "Serve in cocktail glass.                       enough      to    pass      through             strainer. Strain into cocktail glass and leave the Fill with fine ice and serve.                  Juice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -138,13 +260,21 @@
       "category": "cocktail",
       "name_es": "AMERICAN BEA UT Y",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "russian kunnuel",
+          "item_es": "russian kunnuel",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "One-third Italian Vermouth. Two-thirds Gordon Gin. A little lime juice. TDrinks Dash Maraschino. ZEELAND COCKTAIL. As Served at One-third Italian Vermouth. Two-thirds Jamaica Rum. Three dashes Russian Kunnuel. Bl)<rElks' Club",
       "method_es": "One-third Italian Vermouth. Two-thirds Gordon Gin. A little lime juice. TDrinks Dash Maraschino. ZEELAND COCKTAIL. As Served at One-third Italian Vermouth. Two-thirds Jamaica Rum. Three dashes Russian Kunnuel. Bl)<rElks' Club",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -155,13 +285,56 @@
       "category": "cocktail",
       "name_es": "AFTER-DINNER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "apricot brandy",
+          "item_es": "brandy de albaricoque",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "white menthe",
+          "item_es": "white menthe",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "russian kummel.                                        mcgroney punch",
+          "item_es": "russian kummel.                                        mcgroney punch",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bénédictine.                      one tablespoonful of rum",
+          "item_es": "bénédictine.                      one tablespoonful of rum",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy.                                    enongh seltzer to half fill lemon a de",
+          "item_es": "brandy.                                    enongh seltzer to half fill lemon a de",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy.                        glass",
+          "item_es": "apricot brandy.                        glass",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well and serve in a small beer                 Stir well     and   fill   glass with cracked",
       "method_es": "Shake well and serve in a small beer                 Stir well     and   fill   glass with cracked",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -295,13 +468,63 @@
       "category": "cocktail",
       "name_es": "A EEJAH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "wyand      fockink   rum              dinary grapefruit",
+          "item_es": "wyand      fockink   rum              dinary grapefruit",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "old brandy.                               vermouth",
+          "item_es": "old brandy.                               vermouth",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "sugar.                        ful of sugar, one jigger of gin, and",
+          "item_es": "sugar.                        ful of sugar, one jigger of gin, and",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "old brown sherry",
+          "item_es": "old brown sherry",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "old brandy",
+          "item_es": "old brandy",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum.                                           champagne punch",
+          "item_es": "jamaica rum.                                           champagne punch",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "sugar.                                    stir into this one pint of french bran-",
+          "item_es": "sugar.                                    stir into this one pint of french bran-",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Frapped      and    served   in    a   cocktail Frappe and serve in small Burton Strain and fizz with carbonic water. Shaken well with coarse ice.                         rum. Served in small stem punch glasses fresh pineapple and large red and black",
       "method_es": "Frapped      and    served   in    a   cocktail Frappe and serve in small Burton Strain and fizz with carbonic water. Shaken well with coarse ice.                         rum. Served in small stem punch glasses fresh pineapple and large red and black",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -312,13 +535,42 @@
       "category": "cocktail",
       "name_es": "MARTINI COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "seltzer water",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao or absinthe                                 if",
+          "item_es": "curaçao or absinthe                                 if",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill       the glass              up with    ice.                        zer; dissolve with the lemon and lime Stir       up well with               a   spoon; strain         it              up well with a spoon; then take Stir Fill the glass                up with iee. Fill the glass           up with fine crystal ice.",
       "method_es": "Fill       the glass              up with    ice.                        zer; dissolve with the lemon and lime Stir       up well with               a   spoon; strain         it              up well with a spoon; then take Stir Fill the glass                up with iee. Fill the glass           up with fine crystal ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -329,13 +581,42 @@
       "category": "cocktail",
       "name_es": "TOM COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rye whisky.                          one bottle of plain soda water",
+          "item_es": "rye whisky.                          one bottle of plain soda water",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice.                                         stir well with a spoon and strain it",
+          "item_es": "shaved ice.                                         stir well with a spoon and strain it",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "old tom                        gin.               into a cocktail glass. putting in a cher-",
+          "item_es": "old tom                        gin.               into a cocktail glass. putting in a cher-",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Squeeze the juice of one good-sized                                          Three or four pièces of broken ice. Fill       up        the      glass       with    club     soda,           Mix well with a spoon, remove the Stir well    with a spoon, strain                 it    into",
       "method_es": "Squeeze the juice of one good-sized                                          Three or four pièces of broken ice. Fill       up        the      glass       with    club     soda,           Mix well with a spoon, remove the Stir well    with a spoon, strain                 it    into",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -346,13 +627,28 @@
       "category": "cobbler",
       "name_es": "WHISKY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water or selt-",
+          "item_es": "water or selt-",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "tom            or    holland              fill up the glass with line ice",
+          "item_es": "tom            or    holland              fill up the glass with line ice",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Squeeze the juice of one good-sized                                 pineapple syrup. Stir up well with a spoon, and orna- Fill   up    the    glass    with          club        soda, serve with a spoon.                                                     a straw.",
       "method_es": "Squeeze the juice of one good-sized                                 pineapple syrup. Stir up well with a spoon, and orna- Fill   up    the    glass    with          club        soda, serve with a spoon.                                                     a straw.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -380,13 +676,28 @@
       "category": "julep",
       "name_es": "GIN JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glass    of   pineapple          fillup with fine ice",
+          "item_es": "glass    of   pineapple          fillup with fine ice",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "whisky.                      it the same as you would mint julep",
+          "item_es": "whisky.                      it the same as you would mint julep",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Stir up well     witb a spoon, and orna-             and serve.",
       "method_es": "Stir up well     witb a spoon, and orna-             and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -397,13 +708,28 @@
       "category": "smash",
       "name_es": "OLD STYLE WHISKY SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky, rye, scotch or",
+          "item_es": "whisky, rye, scotch or",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the glass        witb small pièces of ice. Put in fruit in season, mix well place Fill    up with syphon, vichy or ginger",
       "method_es": "Fill the glass        witb small pièces of ice. Put in fruit in season, mix well place Fill    up with syphon, vichy or ginger",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

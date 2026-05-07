@@ -806,13 +806,21 @@
       "category": "fizz",
       "name_es": "APPLE BLOW FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use a mL-i{ing glass.",
       "method_es": "Use a mL-i{ing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -1608,13 +1616,21 @@
       "category": "punch",
       "name_es": "KNOX PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use a 1nixing glass.",
       "method_es": "Use a 1nixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 65,
@@ -2552,13 +2568,21 @@
       "category": "cocktail",
       "name_es": "Break an egg in the bottom",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "beef extract~",
+          "item_es": "beef extract~",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 109,
@@ -2689,13 +2713,21 @@
       "category": "cocktail",
       "name_es": "BUFFALO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice; one dash of lemon",
+          "item_es": "ice; one dash of lemon",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Put into a medium size bar glass",
       "method_es": "Put into a medium size bar glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 115,

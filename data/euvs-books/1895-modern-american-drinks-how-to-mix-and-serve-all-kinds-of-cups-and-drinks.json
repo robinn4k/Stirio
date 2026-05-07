@@ -32,13 +32,56 @@
       "category": "cocktail",
       "name_es": "Ammonia and Seltzer",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "spirit,   ammon. aromat.     in a",
+          "item_es": "spirit,   ammon. aromat.     in a",
+          "amount": "20",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pearl barley to two quarts",
+          "item_es": "pearl barley to two quarts",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "molasses, one small lump ice",
+          "item_es": "molasses, one small lump ice",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica, medford, or st. croix rum",
+          "item_es": "jamaica, medford, or st. croix rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved with a little hot",
+          "item_es": "sugar dissolved with a little hot",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy; fill with milk, shake well, and",
+          "item_es": "brandy; fill with milk, shake well, and",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Same as ammonia and seltzer, mixing a small Serve in long thin punch-glass on ice with straws. serve. Mix well in small bar-glass.        Serve. fill   the glass with seltzer, ornament with fruit. Serve straws. pour from one to the other several times, giving Fill    a mixing-glass one-third    full   of fine ice; add a teaspoonful raspberry syrup, one fresh egg, strain.",
       "method_es": "Same as ammonia and seltzer, mixing a small Serve in long thin punch-glass on ice with straws. serve. Mix well in small bar-glass.        Serve. fill   the glass with seltzer, ornament with fruit. Serve straws. pour from one to the other several times, giving Fill    a mixing-glass one-third    full   of fine ice; add a teaspoonful raspberry syrup, one fresh egg, strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -49,13 +92,21 @@
       "category": "cocktail",
       "name_es": "Bracer",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, one-half pony yellow            char-",
+          "item_es": "brandy, one-half pony yellow            char-",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "One pony brandy, one-half pony yellow char- treuse, one-halfpony maraschino, five drops absinthe, the yolk of one egg whipped, one table- spoonful fine sugar. Mix well with ice, strain, and serve in small fancy glasses.",
       "method_es": "One pony brandy, one-half pony yellow char- treuse, one-halfpony maraschino, five drops absinthe, the yolk of one egg whipped, one table- spoonful fine sugar. Mix well with ice, strain, and serve in small fancy glasses.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +117,56 @@
       "category": "cocktail",
       "name_es": "Brain-Duster",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice, a small bar-spoon.   place, with a de-",
+          "item_es": "ice, a small bar-spoon.   place, with a de-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice in long punchglass, one jigger",
+          "item_es": "ice in long punchglass, one jigger",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved with a little water",
+          "item_es": "sugar dissolved with a little water",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "good brandy, and ignite. when suffi-",
+          "item_es": "good brandy, and ignite. when suffi-",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dried peaches in the glass, pour the",
+          "item_es": "dried peaches in the glass, pour the",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "half -full of lemon soda      ;   then fill with",
+          "item_es": "half -full of lemon soda      ;   then fill with",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "add one jigger brandy and a cold bottle of im- Fill    a sherry-glass one-fourth   full   maraschino, Put two lumps of cut-loaf sugar in a dish add Put in a dish four lumps sugar, two jiggers strain into a hot-drink glass, and add a slice of",
       "method_es": "add one jigger brandy and a cold bottle of im- Fill    a sherry-glass one-fourth   full   maraschino, Put two lumps of cut-loaf sugar in a dish add Put in a dish four lumps sugar, two jiggers strain into a hot-drink glass, and add a slice of",
       "glassware": "good in a case of diarrhcea.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +177,28 @@
       "category": "cocktail",
       "name_es": "Absinthe Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange-peel or a maraschino cherry",
+          "item_es": "orange-peel or a maraschino cherry",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters.       mix well and bottle",
+          "item_es": "orange bitters.       mix well and bottle",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing-glass half -full of fine ice, add one twisted lemon -peel. Add a piece of twisted lemon-peel.",
       "method_es": "Fill a mixing-glass half -full of fine ice, add one twisted lemon -peel. Add a piece of twisted lemon-peel.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -117,13 +226,21 @@
       "category": "cocktail",
       "name_es": "Coffee Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy.         shake well.    strain into a large",
+          "item_es": "brandy.         shake well.    strain into a large",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill     a mixing-glass half-full fine       ice,   add two",
       "method_es": "Fill     a mixing-glass half-full fine       ice,   add two",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -134,13 +251,28 @@
       "category": "cocktail",
       "name_es": "Double-Barrel Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tom gin, one-half jigger italian",
+          "item_es": "tom gin, one-half jigger italian",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine, three dashes orange",
+          "item_es": "benedictine, three dashes orange",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Mixing-glass half-full        fine ice,   two dashes An- Mixing-glass half-full fine ice, three dashes pep- Mixing-glass half-full fine ice, two dashes An- Crush a small lump of sugar in a whiskey-glass",
       "method_es": "Mixing-glass half-full        fine ice,   two dashes An- Mixing-glass half-full fine ice, three dashes pep- Mixing-glass half-full fine ice, two dashes An- Crush a small lump of sugar in a whiskey-glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -168,13 +300,49 @@
       "category": "cocktail",
       "name_es": "Brant Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "calasaya, half a jigger whiskey",
+          "item_es": "calasaya, half a jigger whiskey",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar.           shake well and strain",
+          "item_es": "fine sugar.           shake well and strain",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon. peel, in a thin cider-glass",
+          "item_es": "lemon. peel, in a thin cider-glass",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "tobasco sauce, and a very little cayenne",
+          "item_es": "tobasco sauce, and a very little cayenne",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon-peel or a maraschino cherry",
+          "item_es": "lemon-peel or a maraschino cherry",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Mixing-glass half-full fine ice, two dashes An- Put into a long thin glass one lump cut-loaf serve. Put into a large cocktail-glass a half-dozen little- Mixing-glass      half-full   fine   ice,   three   dashes Mix same as Holland Gin Cocktail, using Schie- Mix same as Holland Gin Old-Fashioned Cock- Use Grenadine in place of gum-syrup in any-",
       "method_es": "Mixing-glass half-full fine ice, two dashes An- Put into a long thin glass one lump cut-loaf serve. Put into a large cocktail-glass a half-dozen little- Mixing-glass      half-full   fine   ice,   three   dashes Mix same as Holland Gin Cocktail, using Schie- Mix same as Holland Gin Old-Fashioned Cock- Use Grenadine in place of gum-syrup in any-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -185,13 +353,21 @@
       "category": "cocktail",
       "name_es": "Harvard Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum-syrup, three dashes angostura",
+          "item_es": "gum-syrup, three dashes angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "strain into cocktail-glass, fill up with seltzer.",
       "method_es": "strain into cocktail-glass, fill up with seltzer.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -202,13 +378,35 @@
       "category": "cocktail",
       "name_es": "Hiram Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon-juice, two dashes peyschaud bit-",
+          "item_es": "lemon-juice, two dashes peyschaud bit-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum-syrup, three dashes angostura",
+          "item_es": "gum-syrup, three dashes angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar in a thin cider-",
+          "item_es": "fine sugar in a thin cider-",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Mix, strain into cocktail-glass; add a maraschino Mixing-glass half    -   full   fine   ice,    three dashes twisted lemon-peel. Mixing-glass half-full fine ice, two dashes gum- twisted lemon-peel. Stir well.  Drink while effervescent.",
       "method_es": "Mix, strain into cocktail-glass; add a maraschino Mixing-glass half    -   full   fine   ice,    three dashes twisted lemon-peel. Mixing-glass half-full fine ice, two dashes gum- twisted lemon-peel. Stir well.  Drink while effervescent.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -219,13 +417,21 @@
       "category": "cocktail",
       "name_es": "Liberal Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey.      mix, strain into cocktail-glass",
+          "item_es": "whiskey.      mix, strain into cocktail-glass",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a     mixing-glass half-full fine ice, add one",
       "method_es": "Fill a     mixing-glass half-full fine ice, add one",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -253,13 +459,21 @@
       "category": "cocktail",
       "name_es": "Manhattan Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiske}7         .     mix, strain into cock-",
+          "item_es": "whiske}7         .     mix, strain into cock-",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill    mixing-glass half-full       fine   ice,    add two Mix same as Manhattan              cocktail.       Leave out",
       "method_es": "Fill    mixing-glass half-full       fine   ice,    add two Mix same as Manhattan              cocktail.       Leave out",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -287,13 +501,21 @@
       "category": "cocktail",
       "name_es": "Metropole Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum-syrup, two dashes peyschaud",
+          "item_es": "gum-syrup, two dashes peyschaud",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Two dashes gum-syrup, two dashes Peyschaud bitters, one dash orange bitters, half a jigger brandy, half a jigger French vermouth, a mixing- glass half-full fine ice. Mix, strain into cocktail- glass, add a maraschino cherry.",
       "method_es": "Two dashes gum-syrup, two dashes Peyschaud bitters, one dash orange bitters, half a jigger brandy, half a jigger French vermouth, a mixing- glass half-full fine ice. Mix, strain into cocktail- glass, add a maraschino cherry.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -304,13 +526,21 @@
       "category": "cocktail",
       "name_es": "Metropolitan Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum-syrup, two dashes angostura",
+          "item_es": "gum-syrup, two dashes angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "twisted lemon-peel.",
       "method_es": "twisted lemon-peel.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -355,13 +585,21 @@
       "category": "cocktail",
       "name_es": "Racquet Club Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters, half a jigger tom",
+          "item_es": "orange bitters, half a jigger tom",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Three dashes orange bitters, half a jigger Tom gin, half a jigger French vermouth, in a mixing- glass half -full fine ice. Mix, strain into cocktail- glass, add piece twisted lemon-peel.",
       "method_es": "Three dashes orange bitters, half a jigger Tom gin, half a jigger French vermouth, in a mixing- glass half -full fine ice. Mix, strain into cocktail- glass, add piece twisted lemon-peel.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -389,13 +627,35 @@
       "category": "cocktail",
       "name_es": "Smith Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar in a large barglass",
+          "item_es": "fine sugar in a large barglass",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ice, three dashes angostura bitters",
+          "item_es": "ice, three dashes angostura bitters",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon-peel; add one bottle of plain or",
+          "item_es": "lemon-peel; add one bottle of plain or",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a    mixing-glass half-full     add two",
       "method_es": "Fill a    mixing-glass half-full     add two",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -406,13 +666,56 @@
       "category": "cocktail",
       "name_es": "Turf Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters, three dashes orange",
+          "item_es": "angostura bitters, three dashes orange",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "twisted lemon-peel",
+          "item_es": "twisted lemon-peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice in a whiskey-glass add one dash",
+          "item_es": "ice in a whiskey-glass add one dash",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon-peel, one jigger tom gin.            mix",
+          "item_es": "lemon-peel, one jigger tom gin.            mix",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters in mixing-glass half",
+          "item_es": "orange bitters in mixing-glass half",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey. mix with small bar-spoon",
+          "item_es": "whiskey. mix with small bar-spoon",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Mixing-glass half -full fine        ice,   two dashes An- add a piece lemon-peel or cherry. Mix same as Fancy Brandy Cocktail, substitut- Mix well, strain into cocktail-glass; add a piece twisted lemon-peel on top. Mixing-glass half -full fine ice, two dashes gum- Mix same as Whiskey Cocktail, using Wilson",
       "method_es": "Mixing-glass half -full fine        ice,   two dashes An- add a piece lemon-peel or cherry. Mix same as Fancy Brandy Cocktail, substitut- Mix well, strain into cocktail-glass; add a piece twisted lemon-peel on top. Mixing-glass half -full fine ice, two dashes gum- Mix same as Whiskey Cocktail, using Wilson",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -440,13 +743,35 @@
       "category": "cocktail",
       "name_es": "York Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "catawba wine and a cold",
+          "item_es": "catawba wine and a cold",
+          "amount": "1.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice, put into a collins-glass   ;   add one",
+          "item_es": "ice, put into a collins-glass   ;   add one",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whiskey, one teaspoon ful                       fine",
+          "item_es": "bourbon whiskey, one teaspoon ful                       fine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "squeeze piece of lemon-peel over the top.       Serve. add one tablespoonful fine sugar, crush with mud- strain into a Collins-glass containing a piece of same as for Catawba Cooler, half a tablespoonful Mix and serve same as Ramsay Cooler, substi- Grate nutmeg on top.",
       "method_es": "squeeze piece of lemon-peel over the top.       Serve. add one tablespoonful fine sugar, crush with mud- strain into a Collins-glass containing a piece of same as for Catawba Cooler, half a tablespoonful Mix and serve same as Ramsay Cooler, substi- Grate nutmeg on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -457,13 +782,56 @@
       "category": "cup",
       "name_es": "Cider Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "plain soda, two slices of lemon, two of",
+          "item_es": "plain soda, two slices of lemon, two of",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "orange curagoa, half an orange sliced",
+          "item_es": "orange curagoa, half an orange sliced",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "lemon, one slice cucumber-rind, one",
+          "item_es": "lemon, one slice cucumber-rind, one",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sherry, one pint claret; add a little bor-",
+          "item_es": "sherry, one pint claret; add a little bor-",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, a little water, one",
+          "item_es": "fine sugar, a little water, one",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "madeira mix well in thin punch-glass",
+          "item_es": "madeira mix well in thin punch-glass",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Put   into a glass pitcher one tablespoonful fine Put into a punch-bowl one large piece of clear Stir until cold and serve. Mix same as Champagne Cup, using Heidsieck add a slice cucumber, fill the glass with cold",
       "method_es": "Put   into a glass pitcher one tablespoonful fine Put into a punch-bowl one large piece of clear Stir until cold and serve. Mix same as Champagne Cup, using Heidsieck add a slice cucumber, fill the glass with cold",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -491,13 +859,28 @@
       "category": "cup",
       "name_es": "Marmora Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, half a pony maraschino, half a",
+          "item_es": "brandy, half a pony maraschino, half a",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar, a little grated",
+          "item_es": "powdered sugar, a little grated",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "add one iced bottle champagne, one bottle cold pour strain into fizz-glass,     fill   with siphon    seltzer   or mixed, add a few lumps of ice, one pony Madeira",
       "method_es": "add one iced bottle champagne, one bottle cold pour strain into fizz-glass,     fill   with siphon    seltzer   or mixed, add a few lumps of ice, one pony Madeira",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -508,13 +891,35 @@
       "category": "flip",
       "name_es": "Boston Egg-Nogg",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar, one egg in mix-",
+          "item_es": "fine sugar, one egg in mix-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy, half a jigger st. croix rum, in a",
+          "item_es": "brandy, half a jigger st. croix rum, in a",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "old whiskey.       shake well, strain into a",
+          "item_es": "old whiskey.       shake well, strain into a",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "strain into long thin punch-glass, a little grated strain into long punch-glass, a little grated nutmeg mixing-glass one-fourth full of fine ice     ;   fill   with add half a tablespoonful fine sugar and one tea-",
       "method_es": "strain into long thin punch-glass, a little grated strain into long punch-glass, a little grated nutmeg mixing-glass one-fourth full of fine ice     ;   fill   with add half a tablespoonful fine sugar and one tea-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -525,13 +930,21 @@
       "category": "cocktail",
       "name_es": "Apple Brandy Fix",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar, the juice of half",
+          "item_es": "fine sugar, the juice of half",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "serve in long thin glass with straws, trim with add one jigger St. Croix rum. Fill glass with fine serve it in the half-shell, with a little pepper, salt, strain into a fizz-glass, fill with siphon seltzer or Fill     a mixing-glass half -full fine          ice;   add the strain     into a fizz-glass,     fill   with siphon      seltzer. Serve.",
       "method_es": "serve in long thin glass with straws, trim with add one jigger St. Croix rum. Fill glass with fine serve it in the half-shell, with a little pepper, salt, strain into a fizz-glass, fill with siphon seltzer or Fill     a mixing-glass half -full fine          ice;   add the strain     into a fizz-glass,     fill   with siphon      seltzer. Serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -542,13 +955,42 @@
       "category": "flip",
       "name_es": "Brandy Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino, one pony yellow char-",
+          "item_es": "maraschino, one pony yellow char-",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, two jiggers sherry",
+          "item_es": "fine sugar, two jiggers sherry",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "noyau, a few slices of lemon and orange",
+          "item_es": "noyau, a few slices of lemon and orange",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "plain soda mix.;      put a few sprigs fresh",
+          "item_es": "plain soda mix.;      put a few sprigs fresh",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "shake well, strain into thin glass.       Grate nutmeg shake well, strain into thin glass, grate nutmeg shake well in a mixing-glass half-full fine ice, strain Fill a mixing-glass half -full fine ice, add half   a Fill a pony-glass with brandy,           put a thin whis- Fill a pony-glass half -full   maraschino, then fill",
       "method_es": "shake well, strain into thin glass.       Grate nutmeg shake well, strain into thin glass, grate nutmeg shake well in a mixing-glass half-full fine ice, strain Fill a mixing-glass half -full fine ice, add half   a Fill a pony-glass with brandy,           put a thin whis- Fill a pony-glass half -full   maraschino, then fill",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -559,13 +1001,42 @@
       "category": "punch",
       "name_es": "Hot Milk Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar in a hot-drink glass half-full",
+          "item_es": "sugar in a hot-drink glass half-full",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar dissolved with a",
+          "item_es": "fine sugar dissolved with a",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy        ;   mix well with bar-spoon, trim",
+          "item_es": "brandy        ;   mix well with bar-spoon, trim",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar dissolved in a",
+          "item_es": "fine sugar dissolved in a",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Put into a long thin punch-glass one tablespoon- mix, trim with fruit and sprigs of mint. Serve with straws. mix well, trim with fruit and           sprigs of mint. Serve straws.",
       "method_es": "Put into a long thin punch-glass one tablespoon- mix, trim with fruit and sprigs of mint. Serve with straws. mix well, trim with fruit and           sprigs of mint. Serve straws.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -576,13 +1047,21 @@
       "category": "cocktail",
       "name_es": "Knickerbein",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "one-third full of vanilla cordial",
+          "item_es": "one-third full of vanilla cordial",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "drops of Angostura bitters.      See that the different",
       "method_es": "drops of Angostura bitters.      See that the different",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -593,13 +1072,28 @@
       "category": "cocktail",
       "name_es": "Knickerbocker",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup, half a pony curacoa",
+          "item_es": "raspberry syrup, half a pony curacoa",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "st. croix rum, fill the glass with fine",
+          "item_es": "st. croix rum, fill the glass with fine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Put into a long glass the juice of half a lemon,",
       "method_es": "Put into a long glass the juice of half a lemon,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -610,13 +1104,28 @@
       "category": "cocktail",
       "name_es": "Lalla Rookh",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters, fill up with water",
+          "item_es": "angostura bitters, fill up with water",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, one tablespoonful",
+          "item_es": "fine sugar, one tablespoonful",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "shake well, put in long thin glass, trim with fruits mixing-glass, add one tablespoonful of powdered serve with straws, or strain to suit customer. Mix same as Plain Lemonade, using the juice add half a",
       "method_es": "shake well, put in long thin glass, trim with fruits mixing-glass, add one tablespoonful of powdered serve with straws, or strain to suit customer. Mix same as Plain Lemonade, using the juice add half a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -627,13 +1136,42 @@
       "category": "cocktail",
       "name_es": "Pick Me Up",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cold water, four and one-half pounds",
+          "item_es": "cold water, four and one-half pounds",
+          "amount": "5",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "white wine.         grate the rinds of three",
+          "item_es": "white wine.         grate the rinds of three",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, one jigger brandy, fill",
+          "item_es": "fine sugar, one jigger brandy, fill",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar dissolved in a lit-",
+          "item_es": "fine sugar dissolved in a lit-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing-glass three-fourths full of fine ice, add the juice of half a lemon, one tablespoonful Serve on ice with straws or strain, trim with fruit. Squeeze the juice of half a lemon into a mixing- serve same as Apple Brandy Punch. add one lump of sugar, one jigger Scotch whiskey, fill up with ginger ale, add a piece twisted lemon Put two quarts water, two pounds sugar, and mix until cold, trim with fruit. Serve on ice with strain    into    fancy   glass,   ornament with   fruit. Serve. Serve straws.",
       "method_es": "Fill a mixing-glass three-fourths full of fine ice, add the juice of half a lemon, one tablespoonful Serve on ice with straws or strain, trim with fruit. Squeeze the juice of half a lemon into a mixing- serve same as Apple Brandy Punch. add one lump of sugar, one jigger Scotch whiskey, fill up with ginger ale, add a piece twisted lemon Put two quarts water, two pounds sugar, and mix until cold, trim with fruit. Serve on ice with strain    into    fancy   glass,   ornament with   fruit. Serve. Serve straws.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,
@@ -644,13 +1182,21 @@
       "category": "punch",
       "name_es": "Century Club Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "st. croix rum       ;   shake well.      serve in a",
+          "item_es": "st. croix rum       ;   shake well.      serve in a",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill    a mixing-glass half-fall         fine ice,   add one Put into a glass pitcher or a punch-bowl a few",
       "method_es": "Fill    a mixing-glass half-fall         fine ice,   add one Put into a glass pitcher or a punch-bowl a few",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -678,13 +1224,28 @@
       "category": "punch",
       "name_es": "Club Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar dissolved in a little",
+          "item_es": "fine sugar dissolved in a little",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, the juice of",
+          "item_es": "fine sugar, the juice of",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "add the juice of half a lemon, one-third jigger mix well, strain into a fancy glass, trim with Mix same as Claret Punch, adding a pony brandy fill Put into long thin glass, add a dash of Jamaica",
       "method_es": "add the juice of half a lemon, one-third jigger mix well, strain into a fancy glass, trim with Mix same as Claret Punch, adding a pony brandy fill Put into long thin glass, add a dash of Jamaica",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -712,13 +1273,21 @@
       "category": "punch",
       "name_es": "Fedora Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar dissolved in a mixing-",
+          "item_es": "fine sugar dissolved in a mixing-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Serve in a long thin punch-glass, trim with fruit.",
       "method_es": "Serve in a long thin punch-glass, trim with fruit.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -729,13 +1298,28 @@
       "category": "punch",
       "name_es": "Fish House Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, half a           pony jamaica rum",
+          "item_es": "brandy, half a           pony jamaica rum",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "peach brandy         ;   shake well, strain into",
+          "item_es": "peach brandy         ;   shake well, strain into",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill   a mixing-glass half-full fine         ice,   add the Put into a large mixing-glass one tablespoonful Grate off the yellow part of the rinds of six add while hot to the mixture in the bowl, stir well Put two lumps of sugar into a hot-drink glass, add a little lemon juice, three cloves, one small",
       "method_es": "Fill   a mixing-glass half-full fine         ice,   add the Put into a large mixing-glass one tablespoonful Grate off the yellow part of the rinds of six add while hot to the mixture in the bowl, stir well Put two lumps of sugar into a hot-drink glass, add a little lemon juice, three cloves, one small",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -746,13 +1330,28 @@
       "category": "punch",
       "name_es": "Hancock Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino, a little grated nutmeg",
+          "item_es": "maraschino, a little grated nutmeg",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "cut-loaf sugar dissolved with a little",
+          "item_es": "cut-loaf sugar dissolved with a little",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing-glass half-full of fine ice,   add the shake well, strain into fancy glass, trim with add a squirt of seltzer; mix well, trim with fruit. Serve straws. Fill a mixing-glass half -full of fine ice,   add one serve.     This punch is usually served with cake. Mix two quarts of water with two pounds of fine mixture into a punch-bowl containing a large lump Fill a mixing-glass half-full fine ice, add half a",
       "method_es": "Fill a mixing-glass half-full of fine ice,   add the shake well, strain into fancy glass, trim with add a squirt of seltzer; mix well, trim with fruit. Serve straws. Fill a mixing-glass half -full of fine ice,   add one serve.     This punch is usually served with cake. Mix two quarts of water with two pounds of fine mixture into a punch-bowl containing a large lump Fill a mixing-glass half-full fine ice, add half a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -763,13 +1362,21 @@
       "category": "punch",
       "name_es": "Manhattan Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, half a jigger st. croix rum",
+          "item_es": "brandy, half a jigger st. croix rum",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "add half a tablespoonful fine sugar, two dashes serve straws. Put into a mixing-glass one tablespoonful fine shake well, strain into a fancy bar-glass and orna- Fill a large   mixing-glass one-third        full of fine",
       "method_es": "add half a tablespoonful fine sugar, two dashes serve straws. Put into a mixing-glass one tablespoonful fine shake well, strain into a fancy bar-glass and orna- Fill a large   mixing-glass one-third        full of fine",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -780,13 +1387,28 @@
       "category": "punch",
       "name_es": "Mississippi Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bourbon whiskey, half a jigger ja-",
+          "item_es": "bourbon whiskey, half a jigger ja-",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, one lump ice, one jig-",
+          "item_es": "fine sugar, one lump ice, one jig-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "ornament top with fruit.          Serve straws. Fill a mixing-glass half -full of fine ice,     add the ornament with fruit, float a little Jamaica Put     into   a mixing-glass half a peach, either fresh or canned, one tablespoonful fine sugar, the fill   with fine ice; mix well.           Serve in the ice or strain into a fancy bar-glass. Squeeze the juice of half a lemon into a mixing strain    into a long thin glass,           fill   up with cold Crush half a lemon in a Briggs House glass, add",
       "method_es": "ornament top with fruit.          Serve straws. Fill a mixing-glass half -full of fine ice,     add the ornament with fruit, float a little Jamaica Put     into   a mixing-glass half a peach, either fresh or canned, one tablespoonful fine sugar, the fill   with fine ice; mix well.           Serve in the ice or strain into a fancy bar-glass. Squeeze the juice of half a lemon into a mixing strain    into a long thin glass,           fill   up with cold Crush half a lemon in a Briggs House glass, add",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -797,13 +1419,28 @@
       "category": "punch",
       "name_es": "Siberian Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar, dissolved in a mix-",
+          "item_es": "fine sugar, dissolved in a mix-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar dissolved with a",
+          "item_es": "fine sugar dissolved with a",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "mix well. Put all in a long thin glass, trim with Put four lumps ice in a long thin glass, add one",
       "method_es": "mix well. Put all in a long thin glass, trim with Put four lumps ice in a long thin glass, add one",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -814,13 +1451,35 @@
       "category": "punch",
       "name_es": "Vanilla Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar dissolved in a little water in",
+          "item_es": "sugar dissolved in a little water in",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy, one jigger old madeira, fill the",
+          "item_es": "brandy, one jigger old madeira, fill the",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey          :   mix   well.   serve in long",
+          "item_es": "whiskey          :   mix   well.   serve in long",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Serve in long thin punch-glass, ornament with Fill   a mixing-glass half -full fine     ice,   add one strain into a fancy bar-glass before trimming with ornament with fruit.       Pour champagne in last. Fill a thin glass half full of Rhine-wine, then fill Pour into a whiskey-glass one teaspoonful pure Serve in the same manner as Rum and Gum,",
       "method_es": "Serve in long thin punch-glass, ornament with Fill   a mixing-glass half -full fine     ice,   add one strain into a fancy bar-glass before trimming with ornament with fruit.       Pour champagne in last. Fill a thin glass half full of Rhine-wine, then fill Pour into a whiskey-glass one teaspoonful pure Serve in the same manner as Rum and Gum,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -831,13 +1490,28 @@
       "category": "cocktail",
       "name_es": "Schickler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "imported ginger ale, or        fill   a glass",
+          "item_es": "imported ginger ale, or        fill   a glass",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "peyschaud or angostura bitters",
+          "item_es": "peyschaud or angostura bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Pour into a long thin punch-glass one pony of Pour into a cordial-glass one-third maraschino, Pour a little sherry into a fancy claret or sour- Put a small bar-spoon and a piece of twisted fill   the glass three-fourths full of fine   ice,   add one strain the mixture into the prepared glass.",
       "method_es": "Pour into a long thin punch-glass one pony of Pour into a cordial-glass one-third maraschino, Pour a little sherry into a fancy claret or sour- Put a small bar-spoon and a piece of twisted fill   the glass three-fourths full of fine   ice,   add one strain the mixture into the prepared glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -848,13 +1522,49 @@
       "category": "cocktail",
       "name_es": "Split Turkay",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice in a long thin punch-glass, one",
+          "item_es": "ice in a long thin punch-glass, one",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "cold plain soda   ;   stir   and drink during",
+          "item_es": "cold plain soda   ;   stir   and drink during",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved with a little water",
+          "item_es": "sugar dissolved with a little water",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar, a little water, one jig-",
+          "item_es": "fine sugar, a little water, one jig-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whiskey; mix           with small",
+          "item_es": "bourbon whiskey; mix           with small",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Put the white of one egg into a mixing-glass, add half a tablespoonful fine sugar, the juice of Serve plain whiskey or apple brandy with cider let them stand some hours;            then whip it, adding a Frappe Beef-Tea. Serve. Fill a mixing-glass half -full of fine ice,   add half Mix same as Soft Brandy Toddy, substituting",
       "method_es": "Put the white of one egg into a mixing-glass, add half a tablespoonful fine sugar, the juice of Serve plain whiskey or apple brandy with cider let them stand some hours;            then whip it, adding a Frappe Beef-Tea. Serve. Fill a mixing-glass half -full of fine ice,   add half Mix same as Soft Brandy Toddy, substituting",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,

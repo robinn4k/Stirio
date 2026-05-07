@@ -81,13 +81,21 @@
       "category": "cocktail",
       "name_es": "ABSINTHE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe.    fill the bowl of",
+          "item_es": "absinthe.    fill the bowl of",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill mixing glass 2-3 full -of fine Ice. 1 Pour into a thin bar glass and serve.",
       "method_es": "Fill mixing glass 2-3 full -of fine Ice. 1 Pour into a thin bar glass and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -881,13 +889,21 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE VELVET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "porter (both cold) must be used",
+          "item_es": "porter (both cold) must be used",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the goblet half full of porter and bal-",
       "method_es": "Fill the goblet half full of porter and bal-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -932,13 +948,21 @@
       "category": "cocktail",
       "name_es": "CINCINNATI COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "beer; fill up with soda",
+          "item_es": "beer; fill up with soda",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 52,
@@ -949,13 +973,21 @@
       "category": "cobbler",
       "name_es": "CLARET COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lee in bowl, add 2 quarts",
+          "item_es": "lee in bowl, add 2 quarts",
+          "amount": "large",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass half full of ice; 1 tea- Put in punch bowl for 2-gallon mixture, mixture stand about 4 hours, then put a",
       "method_es": "Use mixing glass half full of ice; 1 tea- Put in punch bowl for 2-gallon mixture, mixture stand about 4 hours, then put a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 53,
@@ -1259,13 +1291,21 @@
       "category": "cocktail",
       "name_es": "FISH HOUSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon juice, %, pound white",
+          "item_es": "lemon juice, %, pound white",
+          "amount": "0.333",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 70,
@@ -2121,13 +2161,21 @@
       "category": "cocktail",
       "name_es": "MULLED CLARET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, % teaspoon cinnamon",
+          "item_es": "sugar, % teaspoon cinnamon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 117,
@@ -2472,13 +2520,21 @@
       "category": "punch",
       "name_es": "PUNCH a la ROMAINE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne, 1 bottle rum, 10",
+          "item_es": "champagne, 1 bottle rum, 10",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 136,
@@ -2697,13 +2753,28 @@
       "category": "flip",
       "name_es": "RUM FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rum or brandy, pour from",
+          "item_es": "rum or brandy, pour from",
+          "amount": "small",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "into another se, eral times until",
+          "item_es": "into another se, eral times until",
+          "amount": "1",
+          "unit": "cup",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 148,
@@ -3058,13 +3129,21 @@
       "category": "cocktail",
       "name_es": "SUYDAM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters, 1 dash boone-",
+          "item_es": "orange bitters, 1 dash boone-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 168,
@@ -3515,13 +3594,21 @@
       "category": "cocktail",
       "name_es": "WHISKEY RICKEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, 1 teaspoonful wa-",
+          "item_es": "sugar, 1 teaspoonful wa-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use hot water glass; 1 lump of loaf sugar",
       "method_es": "Use hot water glass; 1 lump of loaf sugar",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 192,
@@ -3600,13 +3687,21 @@
       "category": "cocktail",
       "name_es": "FORBIDDEN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "''forbidden fruit'' cor-",
+          "item_es": "''forbidden fruit'' cor-",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "stir; strain into tall stem cocktail glass,",
       "method_es": "stir; strain into tall stem cocktail glass,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 197,
@@ -3716,13 +3811,21 @@
       "category": "punch",
       "name_es": "PORTLAND CLUB PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "forbidden fruit, · 1 bottle cog-",
+          "item_es": "forbidden fruit, · 1 bottle cog-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass, 3 lumps rce; 1-3 jigger",
       "method_es": "Use mixing glass, 3 lumps rce; 1-3 jigger",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 203,
@@ -3733,13 +3836,21 @@
       "category": "cocktail",
       "name_es": "MARGUERITE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cut sugar, dissolved in little",
+          "item_es": "cut sugar, dissolved in little",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass, % full lee; 2 dashes serve. Use large mixing _glass, % full ice; 2 add slice pineapple, and serve, with straws Mixing glass, 3 lumps ice; % jigger for- shake until cold; strain into stem glass; serve with straws in glass.",
       "method_es": "Use mixing glass, % full lee; 2 dashes serve. Use large mixing _glass, % full ice; 2 add slice pineapple, and serve, with straws Mixing glass, 3 lumps ice; % jigger for- shake until cold; strain into stem glass; serve with straws in glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 204,
@@ -3784,13 +3895,21 @@
       "category": "cocktail",
       "name_es": "LEMON SHERBET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "and a half .ca~ned, , ·or one jarg~",
+          "item_es": "and a half .ca~ned, , ·or one jarg~",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Use two quarts boiling water, eight lem- squeeze out the juice. Boil all the sugar",
       "method_es": "Use two quarts boiling water, eight lem- squeeze out the juice. Boil all the sugar",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 207,
@@ -3869,13 +3988,21 @@
       "category": "cocktail",
       "name_es": "WALL STREET PEG",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "abbott's bitters, 1 dash or-",
+          "item_es": "abbott's bitters, 1 dash or-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass 1h full ice. Strain Into",
       "method_es": "Use mixing glass 1h full ice. Strain Into",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 212,
@@ -3903,13 +4030,21 @@
       "category": "fizz",
       "name_es": "RAMOS FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar, 1 table-",
+          "item_es": "powdered sugar, 1 table-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "serve.",
       "method_es": "serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 214,
@@ -3988,13 +4123,21 @@
       "category": "cup",
       "name_es": "BURGUNDY CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "burgundy, 1 quart carbonated",
+          "item_es": "burgundy, 1 quart carbonated",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "serve.",
       "method_es": "serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 219,

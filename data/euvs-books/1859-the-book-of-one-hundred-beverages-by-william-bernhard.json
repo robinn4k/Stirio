@@ -159,13 +159,21 @@
       "category": "cocktail",
       "name_es": "LEMONADES, &c'",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "; essence of lemon, dropped on the",
+          "item_es": "; essence of lemon, dropped on the",
+          "amount": "6",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -210,13 +218,21 @@
       "category": "cocktail",
       "name_es": "D'FDVBSCilr& BKVBRAGJllS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "; honey, one quarter of a",
+          "item_es": "; honey, one quarter of a",
+          "amount": "0.25",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "strain, add eight ounces of ye8st, and, aft.er· a· ·",
       "method_es": "strain, add eight ounces of ye8st, and, aft.er· a· ·",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -278,13 +294,21 @@
       "category": "cocktail",
       "name_es": "COMPOUND BARLEY WATER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fresh liquorice root, shied a.nd",
+          "item_es": "fresh liquorice root, shied a.nd",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "useful c!rink either as an ordinary beve~, or",
       "method_es": "useful c!rink either as an ordinary beve~, or",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -346,13 +370,21 @@
       "category": "cocktail",
       "name_es": "BEVERAGES FOR INVALIDS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "molasses ; · mi:r1 and heat in a",
+          "item_es": "molasses ; · mi:r1 and heat in a",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,

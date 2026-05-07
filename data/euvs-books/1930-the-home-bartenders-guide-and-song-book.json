@@ -32,13 +32,21 @@
       "category": "cocktail",
       "name_es": "ABSINTHE BRACER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "a.ngostura bitten",
+          "item_es": "a.ngostura bitten",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill mixing-glass half-full of fine ice",
       "method_es": "Fill mixing-glass half-full of fine ice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -49,13 +57,28 @@
       "category": "cocktail",
       "name_es": "ABSINTHE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "ADDISON Shake wi th ice end serve Stir with Epoon end eerve",
       "method_es": "ADDISON Shake wi th ice end serve Stir with Epoon end eerve",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -83,13 +106,21 @@
       "category": "cocktail",
       "name_es": "ARMOUR COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orente bitten",
+          "item_es": "orente bitten",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "You need armor to withstand this one. Back of * Fine ice in mixing gleH Three dashes of orente bitten the stockyards out in Chicago, they used to drink Helf a jigger of sherry one of these before breakfast, and go out and look Half a jigger of Italian Vermouth for a policeman to beat up. Mix, strain",
       "method_es": "You need armor to withstand this one. Back of * Fine ice in mixing gleH Three dashes of orente bitten the stockyards out in Chicago, they used to drink Helf a jigger of sherry one of these before breakfast, and go out and look Half a jigger of Italian Vermouth for a policeman to beat up. Mix, strain",
       "glassware": "For Six Cocktails",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -182,13 +213,21 @@
       "category": "cocktail",
       "name_es": "BEAU BRUMMELL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oran ge ju ice",
+          "item_es": "oran ge ju ice",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Named after the best dressed man in England, in * Thick-botto med short glass One pony Oran ge Ju ice the days when Lord Nelson said, \"England ex- One pon y Whisk ey wi th bar-spoon of sugar pects every man to do his duty.\" Here's to you, Two dashes of Prunell BEAU BRUMMELL; you added something be-",
       "method_es": "Named after the best dressed man in England, in * Thick-botto med short glass One pony Oran ge Ju ice the days when Lord Nelson said, \"England ex- One pon y Whisk ey wi th bar-spoon of sugar pects every man to do his duty.\" Here's to you, Two dashes of Prunell BEAU BRUMMELL; you added something be-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -199,13 +238,21 @@
       "category": "cocktail",
       "name_es": "BERMUDIANA ROSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well w ith cracked ice 11nd 11en•e",
       "method_es": "Shake well w ith cracked ice 11nd 11en•e",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -250,13 +297,21 @@
       "category": "cocktail",
       "name_es": "BISHOP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "chartreuse",
+          "item_es": "Chartreuse",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Some think this one as potent as a bishop's sermon. We think it really belongs in a good old-fashioned * One dash of Chartreuse Two parts Scotch Whiskey One part orange juice revival meeting. With the emphasis on the RE- One part Italian Vermouth VIVAL. Shake with fine ice and servo ......",
       "method_es": "Some think this one as potent as a bishop's sermon. We think it really belongs in a good old-fashioned * One dash of Chartreuse Two parts Scotch Whiskey One part orange juice revival meeting. With the emphasis on the RE- One part Italian Vermouth VIVAL. Shake with fine ice and servo ......",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -301,13 +356,35 @@
       "category": "cocktail",
       "name_es": "BRANDY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peyschaud or boker's bittets",
+          "item_es": "peyschaud or boker's bittets",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing-glass half-full of fine ice Add three dashes of maraschino Add two dashes of Peyschaud or Boker's Crush lump of sug r in a whiskey-glass, w ith",
       "method_es": "Fill a mixing-glass half-full of fine ice Add three dashes of maraschino Add two dashes of Peyschaud or Boker's Crush lump of sug r in a whiskey-glass, w ith",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -352,13 +429,28 @@
       "category": "cocktail",
       "name_es": "CALISAYA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "calisaya",
+          "item_es": "calisaya",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Mix and strain into a cocktail glass",
       "method_es": "Mix and strain into a cocktail glass",
       "glassware": "A nd no 0 11 e da re say nay",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -369,13 +461,28 @@
       "category": "cocktail",
       "name_es": "CANADIAN -",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "plain syrup",
+          "item_es": "plain syrup",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Shake!' one-half full of broke11 ice Add two dashes Angostura",
       "method_es": "Shake!' one-half full of broke11 ice Add two dashes Angostura",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -539,13 +646,21 @@
       "category": "cocktail",
       "name_es": "COFFEE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing.glass half.full of fi ne ice Add one teaspoonful of powdered white",
       "method_es": "Fill a mixing.glass half.full of fi ne ice Add one teaspoonful of powdered white",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -573,13 +688,21 @@
       "category": "cocktail",
       "name_es": "THE COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "On hot July or August days try this one. Then turn on the electric fan; drop into a big, comfort- able armchair, and settle back to day dream. If you can't day dream, try another. Soon you'll ~ave * Into a tumbler place one tablespoonful of Pow.dered Sugar and a dash of Lemon Juice. F ill the t umbl",
       "method_es": "On hot July or August days try this one. Then turn on the electric fan; drop into a big, comfort- able armchair, and settle back to day dream. If you can't day dream, try another. Soon you'll ~ave * Into a tumbler place one tablespoonful of Pow.dered Sugar and a dash of Lemon Juice. F ill the t umbl",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -624,13 +747,21 @@
       "category": "cocktail",
       "name_es": "ELEGAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bourbon whisk y",
+          "item_es": "bourbon whisk y",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "serve d w h en S un day Parlor \"· r in ' ogue.",
       "method_es": "serve d w h en S un day Parlor \"· r in ' ogue.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -658,13 +789,28 @@
       "category": "cocktail",
       "name_es": "EUREKA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Pour mto cockte'I h             ers Gin",
       "method_es": "Pour mto cockte'I h             ers Gin",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -743,13 +889,21 @@
       "category": "cocktail",
       "name_es": "GIN COCKTAIL, SPECIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "The Curacao mentioned in this recipe is ·generally * One portion of Gin One-half portion Simple Syrup Two dashes Bitters made in Holland from the skin of oranges, flavored One dash Curacao with Jamaica Rum. It gives just the right flavor Fill the glass half full of cracked ice, shake to this marvelo",
       "method_es": "The Curacao mentioned in this recipe is ·generally * One portion of Gin One-half portion Simple Syrup Two dashes Bitters made in Holland from the skin of oranges, flavored One dash Curacao with Jamaica Rum. It gives just the right flavor Fill the glass half full of cracked ice, shake to this marvelo",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -777,13 +931,21 @@
       "category": "cocktail",
       "name_es": "THE HEI J, RAISER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Take in tiny sips so it gets a chance to settle. One pony of Gin * One pony of Scotch Whiskey Take in one great ~Ip, and you'll have to fight the One-half egg whole police fo rce. Keep hand-cuffs handy, in One pony of L ime J uice case any member of the party gets out of control, One-half teaspoonfu",
       "method_es": "Take in tiny sips so it gets a chance to settle. One pony of Gin * One pony of Scotch Whiskey Take in one great ~Ip, and you'll have to fight the One-half egg whole police fo rce. Keep hand-cuffs handy, in One pony of L ime J uice case any member of the party gets out of control, One-half teaspoonfu",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -794,13 +956,21 @@
       "category": "cocktail",
       "name_es": "HIBERNIAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitten",
+          "item_es": "orange bitten",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "The St. Patrick's Day Special. If you want to Two parts Gin * know where St. Patrick drove all the snakes, when One part Creme de Menthe he drove them out of Ireland, take about six of Ice, shake and strain into cocktail glaee into which has been dropped a green cherry these. You'll see plenty. ..•.",
       "method_es": "The St. Patrick's Day Special. If you want to Two parts Gin * know where St. Patrick drove all the snakes, when One part Creme de Menthe he drove them out of Ireland, take about six of Ice, shake and strain into cocktail glaee into which has been dropped a green cherry these. You'll see plenty. ..•.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -828,13 +998,21 @@
       "category": "cocktail",
       "name_es": "HORSE'S NECK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Use Large Bar Glass Add a few lumps of Ice",
       "method_es": "Use Large Bar Glass Add a few lumps of Ice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -845,13 +1023,21 @@
       "category": "cocktail",
       "name_es": "IRISH GUARD",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
       "method_original": "If you've ever seen the IRISH GUARD on dress (For Four) * One tumbler of Gin parade, you can really appreciate this one. While One-half tumbler Creme de Menthe this recipe is for four only, after three rounds Whites of four eggs Juice two Oranges you'll think you're a whole regiment. What's Juice on",
       "method_es": "If you've ever seen the IRISH GUARD on dress (For Four) * One tumbler of Gin parade, you can really appreciate this one. While One-half tumbler Creme de Menthe this recipe is for four only, after three rounds Whites of four eggs Juice two Oranges you'll think you're a whole regiment. What's Juice on",
       "glassware": "For Four",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -862,13 +1048,21 @@
       "category": "cocktail",
       "name_es": "JERSEY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Put one lump of ice in thin cider-glass Add one-half tablespoon fin e 5ugar",
       "method_es": "Put one lump of ice in thin cider-glass Add one-half tablespoon fin e 5ugar",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -1032,13 +1226,28 @@
       "category": "cocktail",
       "name_es": "MEDFORD RUM COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boker's bitters",
+          "item_es": "boker's bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "medford rum",
+          "item_es": "medford rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Add a dash of Gum Syrup",
       "method_es": "Add a dash of Gum Syrup",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1049,13 +1258,28 @@
       "category": "cocktail",
       "name_es": "METROPOLE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "peyscbaud bitters",
+          "item_es": "peyscbaud bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ornnge bitten",
+          "item_es": "ornnge bitten",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Add two dashes of Guin Syrup Add a s mell piece of twisted lemon peel",
       "method_es": "Add two dashes of Guin Syrup Add a s mell piece of twisted lemon peel",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 61,
@@ -1066,13 +1290,35 @@
       "category": "cocktail",
       "name_es": "METROPOLITAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "wat er",
+          "item_es": "wat er",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Add a sma ll piece of lemon letter, or you'll spoil it. \\\\That's more, you'll offend   Ten sprigs freshl y picked and washed !\\lint",
       "method_es": "Add a sma ll piece of lemon letter, or you'll spoil it. \\\\That's more, you'll offend   Ten sprigs freshl y picked and washed !\\lint",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 62,
@@ -1083,13 +1329,21 @@
       "category": "cocktail",
       "name_es": "MONTREAL BLAZER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use two small Pewter or Silver Muga",
       "method_es": "Use two small Pewter or Silver Muga",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 63,
@@ -1141,13 +1395,42 @@
       "category": "cocktail",
       "name_es": "OLD-FASHIONED COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar d issolved in",
+          "item_es": "sugar d issolved in",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved in water",
+          "item_es": "sugar dissolved in water",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Stir-serve Shake well and serve with t\"ist of or1111ie Add twice u much Dry Gin",
       "method_es": "Stir-serve Shake well and serve with t\"ist of or1111ie Add twice u much Dry Gin",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 66,
@@ -1182,13 +1465,28 @@
       "category": "cocktail",
       "name_es": "PARISIAN STAR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "serve to tenderfoots. Start them with beer and            Dash of Bitters",
       "method_es": "serve to tenderfoots. Start them with beer and            Dash of Bitters",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 68,
@@ -1250,13 +1548,21 @@
       "category": "cocktail",
       "name_es": "PINK LADY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
       "method_original": "PINK LADIES should never be taken alone. \\ For Fou r ) * One tumbler of Gin They provide too much atmosphere-too much One-fourth tumbler Grenadine Whites of four eggs charm to the surroundings. Thus we give the Juice of two Oranges recipe for four. And we personally recommend Juice of one Lemon that",
       "method_es": "PINK LADIES should never be taken alone. \\ For Fou r ) * One tumbler of Gin They provide too much atmosphere-too much One-fourth tumbler Grenadine Whites of four eggs charm to the surroundings. Thus we give the Juice of two Oranges recipe for four. And we personally recommend Juice of one Lemon that",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 72,
@@ -1301,13 +1607,21 @@
       "category": "cocktail",
       "name_es": "PRINCETON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Mix, strain into cocktail glass Add hall a pony Port Wine ca refully, and",
       "method_es": "Mix, strain into cocktail glass Add hall a pony Port Wine ca refully, and",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 75,
@@ -1369,13 +1683,21 @@
       "category": "cocktail",
       "name_es": "ROCK AND RYE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Add one wineglass of R ye Add 1 pony Rye Fill mixing glass half full of Fino foe Mix and strain Use tall liqueur glass Fill one-third full of Cura930 Add one-third Maraschino mix with the other ingredients.",
       "method_es": "Add one wineglass of R ye Add 1 pony Rye Fill mixing glass half full of Fino foe Mix and strain Use tall liqueur glass Fill one-third full of Cura930 Add one-third Maraschino mix with the other ingredients.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 79,
@@ -1403,13 +1725,21 @@
       "category": "cocktail",
       "name_es": "RUBY ROYAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "You've all heard that old saying, \"Don't try to * One part each of Sloe Gin and Dry Gin Half a part each of Italian 1111d French paint the Lily.\" Well, here's an attempt at im- Vermouth Two dashes of Benedictine proving the RUBY. As if anybody could! Ice, !hake and strain .·-·.",
       "method_es": "You've all heard that old saying, \"Don't try to * One part each of Sloe Gin and Dry Gin Half a part each of Italian 1111d French paint the Lily.\" Well, here's an attempt at im- Vermouth Two dashes of Benedictine proving the RUBY. As if anybody could! Ice, !hake and strain .·-·.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 81,
@@ -1437,13 +1767,21 @@
       "category": "punch",
       "name_es": "RYE WHISKEY PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rye",
+          "item_es": "centeno",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Shaker threc-quarter5 full Shaved Ice Shake; strain i11to punch glass. Decorate",
       "method_es": "Shaker threc-quarter5 full Shaved Ice Shake; strain i11to punch glass. Decorate",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -1454,13 +1792,28 @@
       "category": "cocktail",
       "name_es": "SANDY MACDONALD COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Puts her false teeth in cold water, corks up her bottle of d.,-e,",
       "method_es": "Puts her false teeth in cold water, corks up her bottle of d.,-e,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 84,
@@ -1471,13 +1824,28 @@
       "category": "cocktail",
       "name_es": "SAZARAC COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "The firs t thing the traveling man did, after he hit * One pony Rye Whiskey Three dashes Absinthe New Orleans, was to drop into the nearest bar. Tablespoonful Simple Syrup Even as he entered the swinging doors, the bar- Three dashes Bitters tender spying his dusty apparel, was weaving Ice, shake and",
       "method_es": "The firs t thing the traveling man did, after he hit * One pony Rye Whiskey Three dashes Absinthe New Orleans, was to drop into the nearest bar. Tablespoonful Simple Syrup Even as he entered the swinging doors, the bar- Three dashes Bitters tender spying his dusty apparel, was weaving Ice, shake and",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1573,13 +1941,21 @@
       "category": "cocktail",
       "name_es": "SNAG-TOOTH NELL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Stir and serve in bar glass w ith slice of",
       "method_es": "Stir and serve in bar glass w ith slice of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 91,
@@ -1607,13 +1983,28 @@
       "category": "cocktail",
       "name_es": "STAR COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boker'• bitten",
+          "item_es": "boker'• bitten",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "white mint",
+          "item_es": "white mint",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing-gla ss half-Cull of fine ice Add t\"o dashes Gum Syrup",
       "method_es": "Fill a mixing-gla ss half-Cull of fine ice Add t\"o dashes Gum Syrup",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 93,
@@ -1675,13 +2066,28 @@
       "category": "cocktail",
       "name_es": "THE BARTENDER'S GUIDE AND SONG BOOK '",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "kiimmel",
+          "item_es": "kiimmel",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill mixing glas s w ith fine ice",
       "method_es": "Fill mixing glas s w ith fine ice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 97,
@@ -1692,13 +2098,21 @@
       "category": "cocktail",
       "name_es": "TRURO PICK-ME-UP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitten ·",
+          "item_es": "angostura bitten ·",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use small tumbler and mix d1oroufb!y Add juice of half Lemon Mix:, strain into cocktail glass",
       "method_es": "Use small tumbler and mix d1oroufb!y Add juice of half Lemon Mix:, strain into cocktail glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 98,
@@ -1709,13 +2123,35 @@
       "category": "cocktail",
       "name_es": "TUXEDO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "o xygennee",
+          "item_es": "o xygennee",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peyschaud bitten",
+          "item_es": "peyschaud bitten",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "This is an old one found in the memoirs of my great-grandmother. She claims she got my grandfather with this one. Anyway, it makes a * Two parts Dry Gin One part French Vermouth Two dashes Maraschino Two dashes O xygennee One dash Peyschaud Bitten .,. good story, if you believe it! Add Ice, shake an",
       "method_es": "This is an old one found in the memoirs of my great-grandmother. She claims she got my grandfather with this one. Anyway, it makes a * Two parts Dry Gin One part French Vermouth Two dashes Maraschino Two dashes O xygennee One dash Peyschaud Bitten .,. good story, if you believe it! Add Ice, shake an",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 99,
@@ -1726,13 +2162,35 @@
       "category": "cocktail",
       "name_es": "TUXEDO SPECIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cura1<ao",
+          "item_es": "cura1<ao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peyschaud bitten",
+          "item_es": "peyschaud bitten",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Add Ice, shake and strain        . Moisten rim with a pi~ce of Lemon Peel",
       "method_es": "Add Ice, shake and strain        . Moisten rim with a pi~ce of Lemon Peel",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 100,
@@ -1743,13 +2201,49 @@
       "category": "cocktail",
       "name_es": "VERMOUTH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boker'a bitten",
+          "item_es": "boker'a bitten",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "boker's bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "i talian ve rmouth",
+          "item_es": "i talian ve rmouth",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "o ran ge bitters",
+          "item_es": "o ran ge bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "addition of Vermouth, however, added both zest Mixing.glass half.foll of fine ice Mix well and strain into cocktail gl11n Add three dashes of Marascb.ino Add one jigger of French Vermouth Add a piece of twisted Lem on Peel on top",
       "method_es": "addition of Vermouth, however, added both zest Mixing.glass half.foll of fine ice Mix well and strain into cocktail gl11n Add three dashes of Marascb.ino Add one jigger of French Vermouth Add a piece of twisted Lem on Peel on top",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 101,
@@ -1760,13 +2254,28 @@
       "category": "cocktail",
       "name_es": "WHISKEY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peyschaud bitters",
+          "item_es": "peyschaud bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Mixing.glass half-full of fine ice",
       "method_es": "Mixing.glass half-full of fine ice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 102,
@@ -1777,13 +2286,35 @@
       "category": "cocktail",
       "name_es": "WHISKEY COCKTAIL-FANCY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Add two dashes of Maraschino Mix until very oold Fill mixing.glass half-full of fin e ice Add two dashes of Boker's Bitters",
       "method_es": "Add two dashes of Maraschino Mix until very oold Fill mixing.glass half-full of fin e ice Add two dashes of Boker's Bitters",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 103,
@@ -1794,13 +2325,28 @@
       "category": "punch",
       "name_es": "WHISKEY PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "0.333",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "old parr'",
+          "item_es": "old parr'",
+          "amount": "0.667",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Crush a piece of Lemon Peel in a t umbler",
       "method_es": "Crush a piece of Lemon Peel in a t umbler",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 104,
@@ -1811,13 +2357,35 @@
       "category": "sour",
       "name_es": "WHISKEY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Shaker two·thirds 6lled with Shaved Ice",
       "method_es": "Shaker two·thirds 6lled with Shaved Ice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 105,
@@ -1845,13 +2413,28 @@
       "category": "cocktail",
       "name_es": "YALE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peyscheud bitters",
+          "item_es": "peyscheud bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a mixing.glass half-full of 6ne ice Add a squirt of siphon seltzer",
       "method_es": "Fill a mixing.glass half-full of 6ne ice Add a squirt of siphon seltzer",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 107,
@@ -1920,13 +2503,21 @@
       "category": "fizz",
       "name_es": "GOLDEN FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lime",
+          "item_es": "lima",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill- large tum bler thr ee-fourths full shaved",
       "method_es": "Fill- large tum bler thr ee-fourths full shaved",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 111,
@@ -2005,13 +2596,21 @@
       "category": "cocktail",
       "name_es": "APPLE-JACK RICKEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Suggested by the Applejack King of Bergen •• Three tc'&Spoonfuls of Lemon Juice One teaspoonful of sugar County, l\\llr. Thomas· Donnelly. Instead of tak- Stir together ing undesirable henchmen for \"a ride\" he feeds One jigger of Applejack. these to the poor, unsuspecting boys. Tom says it Cracked ic",
       "method_es": "Suggested by the Applejack King of Bergen •• Three tc'&Spoonfuls of Lemon Juice One teaspoonful of sugar County, l\\llr. Thomas· Donnelly. Instead of tak- Stir together ing undesirable henchmen for \"a ride\" he feeds One jigger of Applejack. these to the poor, unsuspecting boys. Tom says it Cracked ic",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 116,
@@ -2087,13 +2686,21 @@
       "category": "cocktail",
       "name_es": "GIN HIGHBALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "split spirits or gin",
+          "item_es": "split spirits or gin",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glasa with Soda, add Lemoli Peel and Use large bar glass",
       "method_es": "Fill glasa with Soda, add Lemoli Peel and Use large bar glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 120,
@@ -2104,13 +2711,28 @@
       "category": "cocktail",
       "name_es": "SCOTCH HIGHBAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "2",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "formosa ooloog tea",
+          "item_es": "formosa ooloog tea",
+          "amount": "2",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Drop a lump of ice in a highball gla11 Add an equal amount of very hot water Serve with slices of_ Lemon",
       "method_es": "Drop a lump of ice in a highball gla11 Add an equal amount of very hot water Serve with slices of_ Lemon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 121,
@@ -2162,13 +2784,21 @@
       "category": "flip",
       "name_es": "EGGNOG",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use· Shaker     *",
       "method_es": "Use· Shaker     *",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 124,
@@ -2179,13 +2809,21 @@
       "category": "cocktail",
       "name_es": "HOT SPICED RUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Use Tumbler",
       "method_es": "Use Tumbler",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 125,
@@ -2264,13 +2902,21 @@
       "category": "cocktail",
       "name_es": "TWO BROKEN LEGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pure spirits in a tumbler",
+          "item_es": "pure spirits in a tumbler",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Name your poison, when you try this one. The * One ounce Pure Spirits in a tumbler title ought to warn you. And remember, we said Three or four pieces Diced Ice sweet ciderl Fill tumbler with Sweet Cider ...... WHISKEY COBBLER Just to let you know we haven't forgotten the cobblers, one is given here",
       "method_es": "Name your poison, when you try this one. The * One ounce Pure Spirits in a tumbler title ought to warn you. And remember, we said Three or four pieces Diced Ice sweet ciderl Fill tumbler with Sweet Cider ...... WHISKEY COBBLER Just to let you know we haven't forgotten the cobblers, one is given here",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 130,
@@ -2315,13 +2961,28 @@
       "category": "sangaree",
       "name_es": "BRANDY SANGAREE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use a &mall bar glass",
       "method_es": "Use a &mall bar glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 133,

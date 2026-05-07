@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "OB, THE ABT OF MIXING DKINK&",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water. pour tho acid solution on the soda. dripk",
+          "item_es": "water. pour tho acid solution on the soda. dripk",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
       "method_original": "Mix three      of soda",
       "method_es": "Mix three      of soda",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,

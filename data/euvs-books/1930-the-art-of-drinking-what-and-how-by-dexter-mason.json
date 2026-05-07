@@ -239,13 +239,21 @@
       "category": "cocktail",
       "name_es": "Heap caviare on rounds of",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Serve plenty of olives and Frappe thoroughly and serve at once--a Let this stew slowly until dry. Frappe thoroughly with plenty of ice.",
       "method_es": "Serve plenty of olives and Frappe thoroughly and serve at once--a Let this stew slowly until dry. Frappe thoroughly with plenty of ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -294,13 +302,21 @@
       "category": "cocktail",
       "name_es": "A dash of orange bitters",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Twist a piece of lemon peel into each Mix together some parme-",
       "method_es": "Twist a piece of lemon peel into each Mix together some parme-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,

@@ -296,14 +296,22 @@
       "name_original": "Branqy Float",
       "name_es": "Branqy Float",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy served like a pony of whisky",
+          "item_es": "brandy served like a pony of whisky",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "A pony of brandy served like a pony of whisky, and while the pony is inside the whi sky g lass add a",
       "method_es": "A pony of brandy served like a pony of whisky, and while the pony is inside the whi sky g lass add a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Branqy Float.\n   A pony of brandy served like a pony of whisky,\nand while the pony is inside the whi sky g lass add a",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-013",

@@ -377,13 +377,21 @@
       "category": "cocktail",
       "name_es": "BOWLS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champ",
+          "item_es": "champ",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "466. lBowl a la l?arisienne. (FOR TWELVE.) A large bowl, containing about two gallons; the juice of six peeled lemons, the juice of six peeled oranges, one pound of pulverized sugar, two quarts of champagne, two quarts of Bur- gundy; dissolve this exceedingly well; add a bottle of Jamaica rum, half",
       "method_es": "466. lBowl a la l?arisienne. (FOR TWELVE.) A large bowl, containing about two gallons; the juice of six peeled lemons, the juice of six peeled oranges, one pound of pulverized sugar, two quarts of champagne, two quarts of Bur- gundy; dissolve this exceedingly well; add a bottle of Jamaica rum, half",
       "glassware": "FOR TWELVE.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,

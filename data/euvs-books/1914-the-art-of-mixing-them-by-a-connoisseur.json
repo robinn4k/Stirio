@@ -98,13 +98,21 @@
       "category": "cocktail",
       "name_es": "American Beauty",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar;  jigger good brandy",
+          "item_es": "sugar;  jigger good brandy",
+          "amount": "small",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -231,13 +239,21 @@
       "category": "cocktail",
       "name_es": "Beef Tea",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sherry wine or brandy",
+          "item_es": "sherry wine or brandy",
+          "amount": "small",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Stir up well with a spoon; place pepper, salt,",
       "method_es": "Stir up well with a spoon; place pepper, salt,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -313,13 +329,21 @@
       "category": "cocktail",
       "name_es": "Blue Blazer",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, dissolved in",
+          "item_es": "sugar, dissolved in",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a sherry glass % full of shaved ice, Vi",
       "method_es": "Fill a sherry glass % full of shaved ice, Vi",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -1251,13 +1275,21 @@
       "category": "cocktail",
       "name_es": "Cocktail, Gin",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon peel on top",
+          "item_es": "lemon peel on top",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Stir up well; strain into a cocktail glass, squeeze",
       "method_es": "Stir up well; strain into a cocktail glass, squeeze",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 65,
@@ -1319,13 +1351,21 @@
       "category": "cocktail",
       "name_es": "Cocktail, Lone Tree",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacoa; 3 dashes of angostura",
+          "item_es": "curacoa; 3 dashes of angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Frappe. No bitters.",
       "method_es": "Frappe. No bitters.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1753,13 +1793,21 @@
       "category": "cocktail",
       "name_es": "Cocktail, Yale",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters; 1 dash boker's",
+          "item_es": "orange bitters; 1 dash boker's",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 90,
@@ -1927,13 +1975,21 @@
       "category": "punch",
       "name_es": "Egg Milk Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar; 1 fresh egg;     glass",
+          "item_es": "sugar; 1 fresh egg;     glass",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 99,
@@ -1944,13 +2000,21 @@
       "category": "sour",
       "name_es": "Egg Sour",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar; 8 lumps of",
+          "item_es": "powdered sugar; 8 lumps of",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "serve with straw; nutmeg grated on top.",
       "method_es": "serve with straw; nutmeg grated on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 100,
@@ -2466,13 +2530,21 @@
       "category": "cocktail",
       "name_es": "Hot Rxun",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "butter; 1 wineglass of jamaica",
+          "item_es": "butter; 1 wineglass of jamaica",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "fill the glass % full of boiling water; grate nut",
       "method_es": "fill the glass % full of boiling water; grate nut",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 127,
@@ -2483,13 +2555,21 @@
       "category": "cocktail",
       "name_es": "Hot Spiced Rum",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "butter about the size of a small mar",
+          "item_es": "butter about the size of a small mar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 128,
@@ -2626,13 +2706,21 @@
       "category": "cocktail",
       "name_es": "Kentucky Bunt",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "soteh whiskey. fill up with seltzer or",
+          "item_es": "soteh whiskey. fill up with seltzer or",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill large bar glass with cracked ice; 1 jigger serve.                                      ^ Drop 1 lump of ice into a high ball glass; 4",
       "method_es": "Fill large bar glass with cracked ice; 1 jigger serve.                                      ^ Drop 1 lump of ice into a high ball glass; 4",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 136,
@@ -3038,13 +3126,21 @@
       "category": "cocktail",
       "name_es": "Orgeat Lemonade",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar; 4 or 5 dashes of",
+          "item_es": "sugar; 4 or 5 dashes of",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "dress with fruit and serve with a straw.",
       "method_es": "dress with fruit and serve with a straw.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 159,
@@ -3089,13 +3185,21 @@
       "category": "cocktail",
       "name_es": "Panama Cooler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino;     kir^chwasser",
+          "item_es": "maraschino;     kir^chwasser",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 162,
@@ -3123,13 +3227,28 @@
       "category": "julep",
       "name_es": "Pineapple Julep",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup; 1 gill of maraschino",
+          "item_es": "raspberry syrup; 1 gill of maraschino",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "old tom gin; 1 quart bottle sparkling",
+          "item_es": "old tom gin; 1 quart bottle sparkling",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 164,
@@ -3518,13 +3637,21 @@
       "category": "cocktail",
       "name_es": "Scotch Whisky Skin",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon peel on top",
+          "item_es": "lemon peel on top",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 186,
@@ -3839,13 +3966,21 @@
       "category": "sour",
       "name_es": "Victoria Sour",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar; one tablespoonful of",
+          "item_es": "sugar; one tablespoonful of",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill large bar glass Yi shaved ice; 4 dashes",
       "method_es": "Fill large bar glass Yi shaved ice; 4 dashes",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 202,
@@ -3938,13 +4073,21 @@
       "category": "cocktail",
       "name_es": "Whisky Fi",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar; juice of %",
+          "item_es": "fine sugar; juice of %",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 207,

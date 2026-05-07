@@ -604,14 +604,22 @@
       "name_original": "Brandy Sling.",
       "name_es": "Brandy Sling",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar dissolved in hot water",
+          "item_es": "sugar dissolved in hot water",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with hot water, grate nutmeg on top. A cold sling is made by using ice and water for the hot.",
       "method_es": null,
       "glassware": "wine glass",
       "garnish": null,
       "page_reference": null,
       "raw_text": "Brandy Sling.\n(Use hot water glass.)\n  1 lump of sugar dissolved in hot water.\n  I wine glass of brandy.\n  Fill glass with hot water, grate nutmeg on\ntop.\n  A cold sling is made by using ice and\nwater for the hot.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-020",
@@ -1106,14 +1114,43 @@
       "name_original": "East India Cocktail.",
       "name_es": "Cóctel East India",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "caron1bitters",
+          "item_es": "caron1bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "red curacoa",
+          "item_es": "red curacoa",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the glass3/8full of fine ice. 3 dashes of raspberry syrup 2 dashes of Caron1Bitters. 2 dashes of red curacoa. 2 dashes of maraschino. I wine glass of brandy. Mix well, strain into a cocktail glass, add a bit of twisted lemon peel. A dash of cham­ pagne improves this drink.",
       "method_es": "colar, en copa de vino.",
       "glassware": "wine glass",
       "garnish": null,
       "page_reference": null,
       "raw_text": "East India Cocktail.\n(Use large bar glass.)\n  Fill the glass3/8full of fine ice.\n  3 dashes of raspberry syrup\n  2 dashes of Caron1Bitters.\n  2 dashes of red curacoa.\n  2 dashes of maraschino.\n  I wine glass of brandy.\n  Mix well, strain into a cocktail glass, add\na bit of twisted lemon peel. A dash of cham­\npagne improves this drink.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-038",
@@ -1298,14 +1335,22 @@
       "name_original": "Egg Sour.",
       "name_es": "Sour de egg",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well, grate nutmeg on top.",
       "method_es": "Agitar bien con hielo picado.",
       "glassware": "bar glass",
       "garnish": null,
       "page_reference": null,
       "raw_text": "Egg Sour.\n(Use large bar glass.)\n  1tablespoonful of fine sugar.\n  Several lumps of ice.\n  Juice of 1lemon.\n  1egg-\n  Shake well, grate nutmeg on top.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-046",
@@ -1414,14 +1459,29 @@
       "name_original": "Gin Cocktail.",
       "name_es": "Cóctel Gin",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "caron1bitters",
+          "item_es": "caron1bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with fine ice. 3 dashes of gum syrup. 2 dashes of Caron1Bitters. 1dash of absinthe or curacoa. 1wine glass of gin. Mix well, strain into a fancy cocktail glass, twist a piece of lemon peel on top.",
       "method_es": "colar, en copa de vino.",
       "glassware": "wine glass",
       "garnish": null,
       "page_reference": null,
       "raw_text": "Gin Cocktail.\n(Use large bar glass.)\n  Fill with fine ice.\n  3 dashes of gum syrup.\n  2 dashes of Caron1Bitters.\n  1dash of absinthe or curacoa.\n  1wine glass of gin.\n  Mix well, strain into a fancy cocktail glass,\ntwist a piece of lemon peel on top.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1895-official-hand-book-and-guide-bartenders-association-of-new-york-city-052",

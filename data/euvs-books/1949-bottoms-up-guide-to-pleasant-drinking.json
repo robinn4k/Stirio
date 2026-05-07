@@ -722,13 +722,21 @@
       "category": "cup",
       "name_es": "CUPID COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sherry wine",
+          "item_es": "sherry wine",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Add a Strip of Pineapple Shake Well with cracked Ice, strain Stir well with cracked Ice, strain Shake well with cracked Ice, strain",
       "method_es": "Add a Strip of Pineapple Shake Well with cracked Ice, strain Stir well with cracked Ice, strain Shake well with cracked Ice, strain",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,

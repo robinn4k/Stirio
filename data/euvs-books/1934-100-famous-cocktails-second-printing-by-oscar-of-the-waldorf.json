@@ -322,14 +322,36 @@
       "name_original": "BRANDY",
       "name_es": "Brandy",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "abbott's bitters",
+          "item_es": "abbott's bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "martell's brandy",
+          "item_es": "martell's brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, stir",
       "method_es": "Ice, stir",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "BRANDY\n             One dash Abbott's Bitters\n             One dash Dry Gin\n             One jigger Martell's Brandy\n             Ice, stir",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-010",
@@ -484,14 +506,29 @@
       "name_original": "CLOVER CLUB",
       "name_es": "Clover Club",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "house of lords cin",
+          "item_es": "house of lords cin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake",
       "method_es": "Ice, shake",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "CLOVER CLUB\n          Juice of one-half Lemon\n          White of one egg                                        i I\n          One jigger House of Lords Cin\n          One bar-spoon Grenadine\n          Ice, shake",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-015",
@@ -501,14 +538,29 @@
       "name_original": "CLOVER LEAF",
       "name_es": "Clover Leaf",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "old tom cin",
+          "item_es": "old tom cin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ice,shake well, strain in original Claret glass, place one sprig",
       "method_es": "Ice,shake well, strain in original Claret glass, place one sprig",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "CLOVER LEAF\n          Juice of one-half Lemon\n          White of one egg\n         One jigger Old Tom Cin\n         One bar-spoonful sugar\n         Ice,shake well, strain in original Claret glass, place one sprig\n           of mint on top of drink\n\n                             [25]\n  DRINKS MADE FAMOUS AT THE WALDORF",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-016",
@@ -921,14 +973,29 @@
       "name_original": "MAE WEST",
       "name_es": "Mae West",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "martell brandy",
+          "item_es": "martell brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake, strain",
       "method_es": "Ice, shake, strain",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "MAE WEST\n             One jigger Martell Brandy\n             One dash Grenadine\n             Juice of one-half Lime\n             Ice, shake, strain\n             Two Cherries in cocktail glass",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-030",
@@ -1120,14 +1187,22 @@
       "name_original": "ICK M U",
       "name_es": "Ick M U",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "s acid or l               on hosphat",
+          "item_es": "s acid or l               on hosphat",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "ICK M   U\n\n                                      Two dash s Acid or L               on hosphat\n                                      On -half Italian           r    th\n                                      On -half Absinth\n                                      Ic , sha   , strain\n\n\n                                                                     0\n\n\nf                                                                                     • .     /\n    .. -----        ■                                                            ■ - lniTwr\n                                                  COCKTAILS tV",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-038",
@@ -1268,14 +1343,29 @@
       "name_original": "SEPTEMBER MORN",
       "name_es": "September Morn",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lime",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Frappe well; serve in Claret glass",
       "method_es": "Frappe well; serve in Claret glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "SEPTEMBER MORN\n          Juice of one Lime\n          One jigger of Bacardi Rum\n          White of one egg\n          Color with Grenadine\n          Frappe well; serve in Claret glass",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-043",
@@ -1508,14 +1598,22 @@
       "name_original": "TOM GIN",
       "name_es": "Tom Gin",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "old tom gin",
+          "item_es": "ginebra Old Tom",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, stir, strain",
       "method_es": "Ice, stir, strain",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "TOM GIN\n               Dash of Orange Bitters\n               One jigger Old Tom Gin\n               Ice, stir, strain\n\n                                   [32]\n                                                        COCKTAILS",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-053",
@@ -1684,14 +1782,22 @@
       "name_original": "BRANDY AND GINGER ALE FRAPPE",
       "name_es": "Brandy And Ginger Ale Frappe",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "martell brandy",
+          "item_es": "martell brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with fine ice Shake well, strain, fill with cold ginger ale",
       "method_es": "Fill with fine ice Shake well, strain, fill with cold ginger ale",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "BRANDY AND GINGER ALE FRAPPE\n               Tom Collins glass\n               One jigger Martell Brandy\n               Fill with fine ice\n               Shake well, strain, fill with cold ginger ale",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-058",
@@ -1701,14 +1807,29 @@
       "name_original": "BRANDY FIZZ",
       "name_es": "Brandy Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "martell brandy",
+          "item_es": "martell brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake,strain Fill with syphon",
       "method_es": "Ice, shake,strain Fill with syphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "BRANDY FIZZ\n          (Lemonade glass)\n               One jigger Martell Brandy\n               Juice one-half lemon\n               One teaspoon sugar\n               Ice, shake,strain\n               Fill with syphon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-059",
@@ -1855,14 +1976,43 @@
       "name_original": "CHAMPAGNE CUP",
       "name_es": "Champagne Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "soda",
+          "item_es": "soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "dry monopole champagne",
+          "item_es": "dry monopole champagne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "CHAMPAGNE CUP\n         (Pitcher)\n         One and one-half ponies Martell Brandy\n         One pony Benedictine\n         One pony Maraschino\n         One bottle Soda\n         One bottle Dry Monopole Champagne\n         One stick ice\n         Fruit, decorate with Mint",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-066",
@@ -1872,14 +2022,36 @@
       "name_original": "CHAMPAGNE PUNCH",
       "name_es": "Champagne Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "claret or red burgundy",
+          "item_es": "claret or red burgundy",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "club soda",
+          "item_es": "club soda",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "CHAMPAGNE PUNCH\n         (Pitcher)\n         One pint Champagne\n         One pint Claret or Red Burgundy\n         One pint Club Soda\n         One sliced Orange—^Two lumps sugar—Ice\n         Fruit in season\n\n                           [35]\n         -It drinks made famous at the waldorf                                       ^",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-067",
@@ -2129,14 +2301,22 @@
       "name_original": "PORT",
       "name_es": "Port",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake and strain",
       "method_es": "Ice, shake and strain",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "PORT\n   SHERRY\n             Whole egg\n             One teaspoon sugar\n             Ice, shake and strain\n             Nutmeg on top",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-078",
@@ -2177,14 +2357,36 @@
       "name_original": "GIN BUCK",
       "name_es": "Gin Buck",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "GIN BUCK\n             (Collins)\n             One drink of Old Tom Gin\n             Juice of one Lemon\n             One lump ice\n             One bottle Ginger Ale\n\n                               [37]\n  DRINKS MADE FAMOUS AT THE WALDORF\n\n                                                   (",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-080",
@@ -2218,14 +2420,22 @@
       "name_original": "GOLDEN FIZZ",
       "name_es": "Golden Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake, strain, fill with syphon",
       "method_es": "Ice, shake, strain, fill with syphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "GOLDEN FIZZ\n            (Lemonade glass)\n            Juice one-half Lemon\n            Bar-spoonful sugar\n            Yoke of one egg\n            One jigger Gin\n            Ice, shake, strain, fill with syphon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-082",
@@ -2321,14 +2531,36 @@
       "name_original": "HORSES NECK",
       "name_es": "Horses Neck",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "gin                                                        'j",
+          "item_es": "gin                                                        'j",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar                                           ,!l",
+          "item_es": "powdered sugar                                           ,!l",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake, strain                                                  i- :) Fill with Club Soda                                                  ■' 1",
       "method_es": "Ice, shake, strain                                                  i- :) Fill with Club Soda                                                  ■' 1",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "HORSES NECK\n          (Tom Collins glass)\n                 Rind of one Lemon\n                 One bottle Ginger Ale\nJOHN COLLINS                                                                               1\n                 (Tom Collins glass)\n                 Juice whole lemon\n                 One jigger gin                                                        'j\n                 One teaspoon powdered sugar                                           ,!l\n                 Ice, shake, strain                                                  i- :)\n                 Fill with Club Soda                                                  ■' 1\nLALLA     OOK                                                    ,,\n                  L    onad                                                          . ;\n                 On pon          anilla                                          ,\n                 On -half i        r Mart ll rand                            i             I\n                 On -half a aica\n                 On -half spoon s ar\n                 On tabl spoon whipp d cr a                                                .\n                 Ic , sha     w ll, strain",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-086",
@@ -2355,14 +2587,22 @@
       "name_original": "MINT JULEP",
       "name_es": "Mint Julep",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Add one jigger Bourbon Whiskey Stir, fill glass with fine ice to frost, fruit in season, place",
       "method_es": "Add one jigger Bourbon Whiskey Stir, fill glass with fine ice to frost, fruit in season, place",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "MINT JULEP\n             (Tom Collins glass)\n             One bar-spoonful sugar\n             Four sprigs fresh Mint, one-half pony water, press well\n             Add one jigger Bourbon Whiskey\n             Stir, fill glass with fine ice to frost, fruit in season, place\n                hunch mint on top and serve with straws",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-088",
@@ -2461,14 +2701,29 @@
       "name_original": "REMSEN COOLER",
       "name_es": "Remsen Cooler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin, ice",
+          "item_es": "gin, ice",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "club soda",
+          "item_es": "club soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "REMSEN COOLER\n               (Lemonade)\n               Juice of one-half Lime\n               Lemon rind\n               One jigger Gin, ice\n               One bottle Club Soda",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-093",
@@ -2495,14 +2750,29 @@
       "name_original": "ROOSEVELT PUNCH",
       "name_es": "Roosevelt Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "apple whiskey",
+          "item_es": "apple whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Shake, one dash of Brandy on top",
       "method_es": "Shake, one dash of Brandy on top",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "ROOSEVELT PUNCH\n               (Goblet)\n               Muddle one-half Lemon\n               One spoon sugar\n               One jigger Apple Whiskey\n               Shake, one dash of Brandy on top\n               Fruit in season",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-095",
@@ -2512,14 +2782,29 @@
       "name_original": "ROYAL FIZZ",
       "name_es": "Royal Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Shake, strain, fill with syphon",
       "method_es": "Shake, strain, fill with syphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "ROYAL FIZZ\n               (Lemonade glass)\n               Juice of one-half Lemon\n               One bar-spoonful sugar\n               One whole egg\n               One jigger Gin\n               Shake, strain, fill with syphon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-096",
@@ -2570,14 +2855,29 @@
       "name_original": "SILVER FIZZ",
       "name_es": "Silver Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake, strtiin, fill with syphon",
       "method_es": "Ice, shake, strtiin, fill with syphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "SILVER FIZZ\n              (Fizz glass)\n              Juice of one-half Lemon\n              One bar-spoonful sugar\n              White of one egg\n              One jigger Gin\n              Ice, shake, strtiin, fill with syphon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-099",
@@ -2587,14 +2887,29 @@
       "name_original": "SLOE GIN FIZZ",
       "name_es": "Sloe Gin Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "field's sloe gin",
+          "item_es": "field's sloe gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake, strain, fill with syphon",
       "method_es": "Ice, shake, strain, fill with syphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "SLOE GIN FIZZ\n              (Fizz glass)\n              Juice of one-half Lemon\n              One spoonful sugar\n              One jigger Field's Sloe Gin\n              Ice, shake, strain, fill with syphon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-100",
@@ -2628,14 +2943,43 @@
       "name_original": "STARLIGHT ROOF GARDEN COOLER",
       "name_es": "Starlight Roof Garden Cooler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lime",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bitters on one lump sugar",
+          "item_es": "bitters on one lump sugar",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale,ice",
+          "item_es": "ginger ale,ice",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "STARLIGHT ROOF GARDEN COOLER\n              (Collins glass)\n              Juice of one Lime\n              One dash Bitters on one lump sugar\n              One jigger French Vermouth\n              One bottle of Ginger Ale,ice",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-102",
@@ -2676,14 +3020,71 @@
       "name_original": "TOM COLLINS",
       "name_es": "Tom Collins",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "old tom gin",
+          "item_es": "ginebra Old Tom",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "club soda",
+          "item_es": "club soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "juice of orange",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "high & dry gin",
+          "item_es": "high & dry gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ice, shake, strain, fill glass with syphon",
       "method_es": "Ice, shake, strain, fill glass with syphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "TOM COLLINS\n          (Collins glass)\n          Juice of one Lemon\n          One spoonful powdered sugar\n          One jigger Old Tom Gin\n          Tom Collins glass, with ice\n          Mix well and strain in glass with\n          One bottle of Club Soda\n\n\n\nWALDORF FIZZ\n\n          (Lemonade glass)\n          Juice of one Orange\n          Juice of one Lemon\n          One jigger High & Dry Gin\n          One egg\n          One spoonful sugar\n          Ice, shake, strain, fill glass with syphon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf-104",

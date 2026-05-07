@@ -32,13 +32,28 @@
       "category": "punch",
       "name_es": "Century Club Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water, stir and cover close. \"when",
+          "item_es": "boiling water, stir and cover close. \"when",
+          "amount": "7",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "still catawba; one bottle claret, three",
+          "item_es": "still catawba; one bottle claret, three",
+          "amount": "4",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "mixed, pom it upon the brandy and peels, adding the juice strain through a very fine hau--sieve, into a very clean Put two ounces of cream of tartar, and the juice and Let this mixture stand in a very cold place, or in ice, for Strain the liquor through a fine sieve into a large bowl;",
       "method_es": "mixed, pom it upon the brandy and peels, adding the juice strain through a very fine hau--sieve, into a very clean Put two ounces of cream of tartar, and the juice and Let this mixture stand in a very cold place, or in ice, for Strain the liquor through a fine sieve into a large bowl;",
       "glassware": "From a recipe in the possession of Baynrd Taylor, Esq.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,

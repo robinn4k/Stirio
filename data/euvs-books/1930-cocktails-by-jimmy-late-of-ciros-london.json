@@ -5920,14 +5920,22 @@
       "name_original": "PETO",
       "name_es": "Peto",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "PETO\n    This is the same as a Bronx cocktail, with\na dash of Maraschino.\n\n                     60",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-cocktails-by-jimmy-late-of-ciros-london-154",

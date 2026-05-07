@@ -40,13 +40,49 @@
       "category": "cocktail",
       "name_es": "GIN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar two dashes of bitters one",
+          "item_es": "sugar two dashes of bitters one",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "bottle of wine will make a little over four large",
+          "item_es": "bottle of wine will make a little over four large",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "sugar               ;           two dashes of bitters.    fill",
+          "item_es": "sugar               ;           two dashes of bitters.    fill",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar                 ;       one and a half wineglasses of",
+          "item_es": "sugar                 ;       one and a half wineglasses of",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bitters         ;   one wine glass of sherry",
+          "item_es": "bitters         ;   one wine glass of sherry",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "moisten the rim of a wine glass with lemon, and strain it Fill a pony glass with best sasarac or ambassador brandy. Serve this in precisely t",
       "method_es": "moisten the rim of a wine glass with lemon, and strain it Fill a pony glass with best sasarac or ambassador brandy. Serve this in precisely t",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +93,21 @@
       "category": "cocktail",
       "name_es": "METHEGLIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": ";   cordial syrup, eleven   first dissolve the",
+          "item_es": ";   cordial syrup, eleven   first dissolve the",
+          "amount": "5",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "stir it well for a day or two add yeast, and ferment. Some Add the boiling water to the syrup, and having mixed them let them be added to the jar containing the spirit. If neces-",
       "method_es": "stir it well for a day or two add yeast, and ferment. Some Add the boiling water to the syrup, and having mixed them let them be added to the jar containing the spirit. If neces-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +135,21 @@
       "category": "cocktail",
       "name_es": "NOYEAU",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": ";   rectified spirit, three pints ;               cordial syrup",
+          "item_es": ";   rectified spirit, three pints ;               cordial syrup",
+          "amount": "20",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +160,21 @@
       "category": "cocktail",
       "name_es": "USQUEBAUGH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oil of juniper, thirty drops",
+          "item_es": "oil of juniper, thirty drops",
+          "amount": "20",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +185,28 @@
       "category": "cocktail",
       "name_es": "RUM SHRUB",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered orris root, one ounce ; lemon peel",
+          "item_es": "powdered orris root, one ounce ; lemon peel",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "; spirits (30 u. p,), two gallons     capillaire",
+          "item_es": "; spirits (30 u. p,), two gallons     capillaire",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -193,13 +268,21 @@
       "category": "cocktail",
       "name_es": "QUININE WINE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "syrup of lemons, and then filling them up with",
+          "item_es": "syrup of lemons, and then filling them up with",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,

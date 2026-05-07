@@ -270,13 +270,21 @@
       "category": "smash",
       "name_es": "FANCY WHISKEY SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the glass full of tine shaved ice; stir well with a spoon; strain it into a fancy sour glass, ornamented with fruit and berries, and serve.",
       "method_es": "Fill the glass full of tine shaved ice; stir well with a spoon; strain it into a fancy sour glass, ornamented with fruit and berries, and serve.",
       "glassware": "Use a large bar glass,",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -287,13 +295,21 @@
       "category": "smash",
       "name_es": "OLD STYLE WHISKEY SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the glass with small pieces of ice Put in fruit in season, mix well, and serve.",
       "method_es": "Fill the glass with small pieces of ice Put in fruit in season, mix well, and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -504,13 +520,21 @@
       "category": "toddy",
       "name_es": "WHISKEY TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, little water to dissolve",
+          "item_es": "sugar, little water to dissolve",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "mix well, and serve.",
       "method_es": "mix well, and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -876,13 +900,21 @@
       "category": "julep",
       "name_es": "WHISKEY JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.75",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill up the glass with fine shaved ice stir up well with a spoon and ornament this drink with",
       "method_es": "Fill up the glass with fine shaved ice stir up well with a spoon and ornament this drink with",
       "glassware": "Use a large bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -1137,13 +1169,21 @@
       "category": "toddy",
       "name_es": "GIN TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, dissolved well with a",
+          "item_es": "sugar, dissolved well with a",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "stir up well,and serve.",
       "method_es": "stir up well,and serve.",
       "glassware": "Use a whiskey glass,",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -1437,13 +1477,28 @@
       "category": "flip",
       "name_es": "BRANDY FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.75",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "full of shaved ice",
+          "item_es": "full of shaved ice",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "shake the above ingredients with a shaker, strain it into",
       "method_es": "shake the above ingredients with a shaker, strain it into",
       "glassware": "large, bar glass,",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -1516,13 +1571,28 @@
       "category": "flip",
       "name_es": "PORT WINE FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo picado",
+          "amount": "0.75",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "shake up well with a skaker, strain it into a wine glass, grate a little nutmeg on top, and serve.",
       "method_es": "shake up well with a skaker, strain it into a wine glass, grate a little nutmeg on top, and serve.",
       "glassware": "large bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -1667,13 +1737,35 @@
       "category": "toddy",
       "name_es": "HOT APPLE TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, dissolve well with a",
+          "item_es": "sugar, dissolve well with a",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fine ice",
+          "item_es": "hielo fino",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "strained, you must use a fine strainer, such as used for mix well up, place the fruit into a sour glass, and strain",
       "method_es": "strained, you must use a fine strainer, such as used for mix well up, place the fruit into a sour glass, and strain",
       "glassware": "Use a hot apple toddy            glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 57,
@@ -1701,13 +1793,28 @@
       "category": "cocktail",
       "name_es": "SANTINAS POUSSE CAFE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacao (red)",
+          "item_es": "curacao (red)",
+          "amount": "0.333",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "black coffee, and attention must be paid to",
+          "item_es": "black coffee, and attention must be paid to",
+          "amount": "1",
+          "unit": "cup",
+          "notes": null
+        }
+      ],
       "method_original": "( Use a sherry wine glass. One-third wine glass of Marachino; One-third glass of Curacao (red) One-third wine glass of French brandy and serve. ; This drink is generally indulged in after partaking of a cup of black coffee, and attention must be paid to prevent the different liquors from running int",
       "method_es": "( Use a sherry wine glass. One-third wine glass of Marachino; One-third glass of Curacao (red) One-third wine glass of French brandy and serve. ; This drink is generally indulged in after partaking of a cup of black coffee, and attention must be paid to prevent the different liquors from running int",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 59,
@@ -1718,13 +1825,21 @@
       "category": "sling",
       "name_es": "HOT GIN SLING",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "loaf sugar, dissolved in a little hot",
+          "item_es": "loaf sugar, dissolved in a little hot",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "fillup the balance with hot water, stir with a spoon, grate a little nutmeg on top, and serve.",
       "method_es": "fillup the balance with hot water, stir with a spoon, grate a little nutmeg on top, and serve.",
       "glassware": "Use a hot water glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1931,13 +2046,56 @@
       "category": "smash",
       "name_es": "WHISKEY SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "filled with fine ice",
+          "item_es": "filled with fine ice",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fine shaved ice",
+          "item_es": "fine shaved ice",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "maracbino",
+          "item_es": "maracbino",
+          "amount": "0.25",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse (green)",
+          "item_es": "chartreuse (green)",
+          "amount": "0.25",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "mix up well, strain the ingredients into a sour or fancy serve. mix well, place your fruit in season into a sour glass, serve.",
       "method_es": "mix up well, strain the ingredients into a sour or fancy serve. mix well, place your fruit in season into a sour glass, serve.",
       "glassware": "sherry glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 68,
@@ -2303,13 +2461,21 @@
       "category": "cocktail",
       "name_es": "BLUE BLAZER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "(Use a large mug with a handle to it) One-half table-spoon of sugar; 1 wine glass full of Scotch whiskey; dissolve well with a little hot water, or else put it over the fire and have it boiled up; set the liquid on fire, and take it quick and pour it from one mug to the other, pour it so about three",
       "method_es": "(Use a large mug with a handle to it) One-half table-spoon of sugar; 1 wine glass full of Scotch whiskey; dissolve well with a little hot water, or else put it over the fire and have it boiled up; set the liquid on fire, and take it quick and pour it from one mug to the other, pour it so about three",
       "glassware": "large mug with a handle to it",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 80,
@@ -2492,13 +2658,21 @@
       "category": "cobbler",
       "name_es": "WHISKEY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill up the glass with fine ice; stir up well rath a spoon, and ornament on top with serve with a straw.",
       "method_es": "Fill up the glass with fine ice; stir up well rath a spoon, and ornament on top with serve with a straw.",
       "glassware": "large bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 87,
@@ -3055,13 +3229,21 @@
       "category": "cocktail",
       "name_es": "Balaklava Nectar",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marachino",
+          "item_es": "marachino",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "( Gebrauche eine Punchbowle.J Man reibe die Schale einer Citrone thunlichst fein und gebe diese in die Bowie, fiige 4 Essloftel voll fei- nen Zucker hinzu, presse 2 Citronen gut dariiber aus; 1 Gill Marachino; 2 Flaschen Sodawasser; 2 Flaschen Claret; 1 Flasche Champagner; mische dieses gut auf mit",
       "method_es": "( Gebrauche eine Punchbowle.J Man reibe die Schale einer Citrone thunlichst fein und gebe diese in die Bowie, fiige 4 Essloftel voll fei- nen Zucker hinzu, presse 2 Citronen gut dariiber aus; 1 Gill Marachino; 2 Flaschen Sodawasser; 2 Flaschen Claret; 1 Flasche Champagner; mische dieses gut auf mit",
       "glassware": "Gebrauche ein Mug mit Henkel.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 109,

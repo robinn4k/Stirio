@@ -125,13 +125,21 @@
       "category": "cocktail",
       "name_es": "THE FIRST ROUND",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cla r et a nd ser ve",
+          "item_es": "cla r et a nd ser ve",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Stir w ell ; strain into a sour glass; dress wit h fruit a n d serve. Use mi xing glass. Stir w ell; strain into a sow· g la ss Use large bar glass. Stir well; strain into a sour gla ss ; Use large bar glass. Stir well; strain in to a sour gl,ass; dress with fruit and ser ve. Use mixing glass. Stir well ; strain i nto so ur glass with Use mi xin g glass.",
       "method_es": "Stir w ell ; strain into a sour glass; dress wit h fruit a n d serve. Use mi xing glass. Stir w ell; strain into a sow· g la ss Use large bar glass. Stir well; strain into a sour gla ss ; Use large bar glass. Stir well; strain in to a sour gl,ass; dress with fruit and ser ve. Use mixing glass. Stir well ; strain i nto so ur glass with Use mi xin g glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,

@@ -4363,13 +4363,21 @@
       "category": "cocktail",
       "name_es": "Tomato Wine",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tomato juice",
+          "item_es": "tomato juice",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Use no yeast, as it will ferment without it. This wine",
       "method_es": "Use no yeast, as it will ferment without it. This wine",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 113,

@@ -32,13 +32,21 @@
       "category": "punch",
       "name_es": "Brandy Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "I (Use large bar glass.) table-spoonful raspberry syrup. ^ do. white sugar. I wine-glass water. do. brandy. y z' small-sized lemon. 2 I slices of orange. 1 j piece of pine-apple. F|ill the tumbler with shaved ice, shake well, and drefis the top with berries in season ; sip through a strt'.w. ) 3. Br",
       "method_es": "I (Use large bar glass.) table-spoonful raspberry syrup. ^ do. white sugar. I wine-glass water. do. brandy. y z' small-sized lemon. 2 I slices of orange. 1 j piece of pine-apple. F|ill the tumbler with shaved ice, shake well, and drefis the top with berries in season ; sip through a strt'.w. ) 3. Br",
       "glassware": "For a party of twenty.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -522,13 +530,21 @@
       "category": "punch",
       "name_es": "Royal Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water, stir and cove",
+          "item_es": "boiling water, stir and cove",
+          "amount": "7",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "add more green tea to taste. put to it fifteen pounds of double-refined sugar; and adding the juice of the oranges and of twenty-four Put two ounces of cream of tartar, and the juice and",
       "method_es": "add more green tea to taste. put to it fifteen pounds of double-refined sugar; and adding the juice of the oranges and of twenty-four Put two ounces of cream of tartar, and the juice and",
       "glassware": "Another way.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -556,13 +572,28 @@
       "category": "punch",
       "name_es": "Punch a la Romaine",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "claret; cover, and let it stand six hours",
+          "item_es": "claret; cover, and let it stand six hours",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "mild ale, a glass of white wine, one of",
+          "item_es": "mild ale, a glass of white wine, one of",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "stir in by degrees the whites of ten eggs, beaten put the sugar in a jug, and add to it the thin rind of one",
       "method_es": "stir in by degrees the whites of ten eggs, beaten put the sugar in a jug, and add to it the thin rind of one",
       "glassware": "For'a party of fifteen.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -1086,13 +1117,21 @@
       "category": "crusta",
       "name_es": "Whiskey Crusta",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "good wine, or more—",
+          "item_es": "good wine, or more—",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "stirring it all the time. Be careful not to pour the eggs let the mixture be set upon the fire until it is almost stirring rapidly.   Add a little nutmeg. Let Betsy beat the whites with switch Put half a pint of water, too.",
       "method_es": "stirring it all the time. Be careful not to pour the eggs let the mixture be set upon the fire until it is almost stirring rapidly.   Add a little nutmeg. Let Betsy beat the whites with switch Put half a pint of water, too.",
       "glassware": "In Verse.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -1256,13 +1295,21 @@
       "category": "flip",
       "name_es": "Rum Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "at a time, and when the jug is nearly full",
+          "item_es": "at a time, and when the jug is nearly full",
+          "amount": "0.5",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Put on the fire in a saucepan one quart of ale, and let it boil; have ready the whites of two eggs and the Put a quart of ale in a tinned saucepan on the fire",
       "method_es": "Put on the fire in a saucepan one quart of ale, and let it boil; have ready the whites of two eggs and the Put a quart of ale in a tinned saucepan on the fire",
       "glassware": "Another method.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -2068,13 +2115,21 @@
       "category": "cocktail",
       "name_es": "Lemonade",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water. when the sugar is dissolved",
+          "item_es": "boiling water. when the sugar is dissolved",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the tumbler one-half full with shaved ice, the- put it with the remainder of the sugar into a jug; add strain the lemonade through a piece of muslin, and, s",
       "method_es": "Fill the tumbler one-half full with shaved ice, the- put it with the remainder of the sugar into a jug; add strain the lemonade through a piece of muslin, and, s",
       "glassware": "Fine for parties.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 102,
@@ -2136,13 +2191,21 @@
       "category": "cocktail",
       "name_es": "Soda Nectar",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "carbonate of soda",
+          "item_es": "carbonate of soda",
+          "amount": "small",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Strain the juice of the lemon, and add to it the water.",
       "method_es": "Strain the juice of the lemon, and add to it the water.",
       "glassware": "large tumbler.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 106,
@@ -2153,13 +2216,21 @@
       "category": "cocktail",
       "name_es": "Imperial Drink for Families",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cream of tartar, the juice and peel of",
+          "item_es": "cream of tartar, the juice and peel of",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Put these into a gallon pitcher, and pour on boiling",
       "method_es": "Put these into a gallon pitcher, and pour on boiling",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 107,
@@ -2187,13 +2258,21 @@
       "category": "cocktail",
       "name_es": "Raspberry, Strawberry, Currant",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "carbonate of soda, and a very",
+          "item_es": "carbonate of soda, and a very",
+          "amount": "small",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Put twelve pounds of loaf sugar and six ounces of Use a medium sized bar glass. Half fill the glass",
       "method_es": "Put twelve pounds of loaf sugar and six ounces of Use a medium sized bar glass. Half fill the glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 109,

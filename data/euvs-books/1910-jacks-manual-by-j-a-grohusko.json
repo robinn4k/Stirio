@@ -57,13 +57,21 @@
       "category": "cocktail",
       "name_es": "AMER PICON HIGH-BALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice in glass",
+          "item_es": "ice in glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass   with fizz water, stir with spoon and serve.",
       "method_es": "Fill glass   with fizz water, stir with spoon and serve.",
       "glassware": "large        glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -1261,13 +1269,21 @@
       "category": "cocktail",
       "name_es": "JUNKINS COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Stir, twist piece        lemon      peel on top and serve.",
       "method_es": "Stir, twist piece        lemon      peel on top and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -1620,13 +1636,21 @@
       "category": "cocktail",
       "name_es": "LAWRENCE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "paychard bitters",
+          "item_es": "paychard bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass   with broken ice, shake, strain and serve.",
       "method_es": "Fill glass   with broken ice, shake, strain and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 55,
@@ -3101,13 +3125,21 @@
       "category": "cocktail",
       "name_es": "RAYMOND COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "chartreuse",
+          "item_es": "Chartreuse",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Twist of lemon peel Serve in champagne glass.",
       "method_es": "Twist of lemon peel Serve in champagne glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 117,
@@ -3783,13 +3815,21 @@
       "category": "cobbler",
       "name_es": "SHERRY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Stir with spoon until sugar dissolves. Fill glass with",
       "method_es": "Stir with spoon until sugar dissolves. Fill glass with",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 146,
@@ -3985,13 +4025,21 @@
       "category": "cocktail",
       "name_es": "SLOE GIN HIGH-BALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice in glass",
+          "item_es": "ice in glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with fizz water and serve.",
       "method_es": "Fill glass with fizz water and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 155,
@@ -4133,13 +4181,21 @@
       "category": "cocktail",
       "name_es": "STANTON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass     with   ice,   stir,    strain rind serve.",
       "method_es": "Fill glass     with   ice,   stir,    strain rind serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 160,
@@ -4276,13 +4332,28 @@
       "category": "cocktail",
       "name_es": "SHANDY GAFF",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lager",
+          "item_es": "lager",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 168,
@@ -4752,13 +4823,28 @@
       "category": "cocktail",
       "name_es": "TUCKER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice in glass",
+          "item_es": "ice in glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Stir   and serve.",
       "method_es": "Stir   and serve.",
       "glassware": "whiskey glass, twist of lemon peel                         in    glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 189,
@@ -5744,13 +5830,28 @@
       "category": "cocktail",
       "name_es": "IMPORTER OF PURE OLIVE OIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amer   picon",
+          "item_es": "amer   picon",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "curacao   or  grenadine",
+          "item_es": "curacao   or  grenadine",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Mix as Fill   glass with ice-cold     syphon or plain water.",
       "method_es": "Mix as Fill   glass with ice-cold     syphon or plain water.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }
