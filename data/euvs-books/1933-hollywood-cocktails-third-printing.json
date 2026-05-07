@@ -1,0 +1,2331 @@
+{
+  "book_id": "1933-hollywood-cocktails-third-printing",
+  "metadata": {
+    "title": "Hollywood Cocktails (Third Printing)",
+    "author": "Compiled by George E. Buzza Jr.; food and wine combinations by Buzza-Cardozo",
+    "year": 1933,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Buzza-Cardozo, Hollywood",
+    "city": "Hollywood, California",
+    "edition": "Third Printing (1933, 'Whenever it Becomes Legal to Serve' — anticipating Repeal)",
+    "source_file": "1933 Hollywood Cocktails (third printing).txt",
+    "notes": "Manual de cócteles publicado en Hollywood al final de la Prohibición ('Whenever it Becomes Legal to Serve'). Layout en dos columnas con cocktails interleaved. Skeleton custom + parser oz/dash/word-fraction. 42 recetas (post-cleanup); ~79% (33/42) con ingredientes parseados."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Food and Wine Combinations",
+      "title_es": "Prefacio + maridaje de comida y vino",
+      "content_original": "Hollywood Cocktails — compilado por George E. Buzza Jr. y Buzza-Cardozo de Hollywood, California. Publicado en tercera impresión durante 1933 'whenever it becomes legal to serve' (anticipando el Repeal de la Prohibición). Incluye sección de Food and Wine Combinations.",
+      "content_es": "Hollywood Cocktails — compilado por George E. Buzza Jr. y Buzza-Cardozo de Hollywood, California. Publicado en 1933 anticipando el Repeal."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1933-hollywood-cocktails-third-printing-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "COCONUT COCKTAIL",
+      "name_es": "COCONUT COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "syrup                        ys calvados",
+          "item_es": "syrup                        ys calvados",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters               shake well and strain into",
+          "item_es": "angostura bitters               shake well and strain into",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into Shake well and strain into           cocktail glass.",
+      "method_es": "Shake well and strain into Shake well and strain into           cocktail glass.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COCONUT COCKTAIL\nYs Italian Vermouth\nYs French Vermouth\nYs Dry Gin\n   Slice Pineapple\n   Shake well and strain into\n   cocktail glass.\n\n\n\n\n                                J\nABSINTHE CCKKTAIL                    ANGEL FACE COCKTAIL\nVz Absinthe                          Yz Dry Gin\nVz Water                             Ys Apricot Brandy\n 1 Dash Syrup                        Ys Calvados\n 1 Dash Angostura Bitters               Shake well and strain into\n   Shake well and strain into           cocktail glass.\n   cocktail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ANGEL'S KISS COCKTAIL",
+      "name_es": "ANGEL'S KISS COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "absinthe                           yi prunelle brandy",
+          "item_es": "absinthe                           yi prunelle brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters                  fully, so that ingredients do not",
+          "item_es": "orange bitters                  fully, so that ingredients do not",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters               mix",
+          "item_es": "angostura bitters               mix",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacao",
+          "item_es": "crème de cacao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacao                    yz italian vermouth",
+          "item_es": "creme de cacao                    yz italian vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sweet cream                       yz calvados",
+          "item_es": "sweet cream                       yz calvados",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice                      1 teaspoonful grenadine",
+          "item_es": "lemon juice                      1 teaspoonful grenadine",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice                     ye gin",
+          "item_es": "orange juice                     ye gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                       the juice of ye lime",
+          "item_es": "dry gin                       the juice of ye lime",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                          ye dry gin",
+          "item_es": "dry gin                          ye dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine                 1 teaspoonful fresh cream",
+          "item_es": "grenadine                 1 teaspoonful fresh cream",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice             yi italian vermouth",
+          "item_es": "lemon juice             yi italian vermouth",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly and strain into Shake well and strain into           do not mix. Pour a little sweet Shake well and strain into           Shake well and strain into Shake well and strain into         Shake well and strain into Shake well and strain into me      Cracked Ice Shake well and strain into         cocktail glass. Shake well and strain into         Shake well and strain into",
+      "method_es": "Shake thoroughly and strain into Shake well and strain into           do not mix. Pour a little sweet Shake well and strain into           Shake well and strain into Shake well and strain into         Shake well and strain into Shake well and strain into me      Cracked Ice Shake well and strain into         cocktail glass. Shake well and strain into         Shake well and strain into",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ANGEL'S KISS COCKTAIL\nABSINTHE (Special) COCKTAIL          Y: Creme de Cacao\n% Absinthe                           Yi Prunelle Brandy\nYe Gin                               Yi Creme de Violette\nYe Syrup of Anisette or(Somme        Yi Sweet Cream\n   Syrup                                Use liqueur glass and pour care\n 1 Dash Orange Bitters                  fully, so that ingredients do not\n 1 Dash Angostura Bitters               mix.\n  Shake thoroughly and strain into\n   cocktail glass.                   ANGEL'S WING COCKTAIL\n                                     Yz Creme de Cacao\nALASKA COCKTAIL                      Yz Prunelle Brandy\n% Dry Gin                               Use liqueur glass and pour in\nYi Yellow Chartreuse                    gredients carefully, so that they\n   Shake well and strain into           do not mix. Pour a little sweet\n   cocktail glass.                      cream on top.\n\nALEXANDER COCKTAIL                   APPLEJACK COCKTAIL\nY2 Dry Gin                            1 Dash Angostura Bitters\nYi Creme de Cacao                    Yz Italian Vermouth\nYi Sweet Cream                       Yz Calvados\n   Shake well and strain into           Shake well and strain into\n   cocktail glass.                   ' cocktail glass.\nAPRICOT COCKTAIL                   BACARDI (Special) COCKTAIL\nYi Lemon Juice                      1 Teaspoonful Grenadine\n% Orange Juice                     Ye Gin\n^ Apricot Brandy                   Ye Bacardi Rum\n 1 Dash Dry Gin                       The Juice of Ye Lime\n   Shake well and strain into         Shake well and strain into\n   cocktail glass.                    cocktail glass.\narrowhead cocktail                 THE BARBARY COAST\n   The White of 1 Egg              COCKTAIL\nVe Lemon Juice                     14\" Gin\nYe French Vermouth                 ^ Scotch Whisky\nYe Italian Vermouth                Yi Creme de Cacao\nYe Canadian Club Whisky            Yi Cream\n   Shake well and strain into me      Cracked Ice\n   dium-size glass.                   Serve in a highball glass.\nARTISTS (Special) COCKTAIL         BEL-AIR COCKTAIL\nYe Whisky                          Ye Dry Gin\nYe Lemon Juice                     Ye Italian Vermouth\nYe Sherry                          4 Dashes Curacao\nYe Groseille Syrup                    Shake well and strain into\n   Shake well and strain into         cocktail glass.\n   cocktail glass.                    Squeeze lemon peel on top.\nATTA BOY COCKTAIL                  BELMONT COCKTAIL\nYe French Vermouth                 Ye Grenadine\n% Dry Gin                          Ye Dry Gin\n 4 Dashes Grenadine                 1 Teaspoonful Fresh Cream\n   Shake well and strain into         Shake well and strain into\n   cocktail glass.                    cocktail glass.\nBETWEEN-THE-SHEFTS              BLOODHOUND COCKTAIL\nCOCKTAIL                        Yi French Vermouth\n 1 Dash Lemon Juice             Yi Italian Vermouth\nYs Brandy                       Yz Dry Gin\nYs Cointreau                      "
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BLUE BIRD COCKTAIL",
+      "name_es": "BLUE BIRD COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice                  yi wineglassful of gin",
+          "item_es": "lemon juice                  yi wineglassful of gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "swedish punch                 5 dashes orange curacao",
+          "item_es": "swedish punch                 5 dashes orange curacao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                         shake well and strain into",
+          "item_es": "dry gin                         shake well and strain into",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy                       yi maraschino",
+          "item_es": "brandy                       yi maraschino",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau                     1 dash blue vegetable extract",
+          "item_es": "cointreau                     1 dash blue vegetable extract",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sirop-de-citron                 shake well and strain into",
+          "item_es": "sirop-de-citron                 shake well and strain into",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice                 1 glass of curacao",
+          "item_es": "orange juice                 1 glass of curacao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whisky                   incorporate 1 teaspoonful of",
+          "item_es": "scotch whisky                   incorporate 1 teaspoonful of",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into      cocktail glass. Shake well and strain into      cocktail glass. Shake well and strain into     for longer and more thoroughly",
+      "method_es": "Shake well and strain into      cocktail glass. Shake well and strain into      cocktail glass. Shake well and strain into     for longer and more thoroughly",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLUE BIRD COCKTAIL\nBIFFY COCKTAIL                   4 Dashes Angostura Bitters\nYi Lemon Juice                  Yi Wineglassful of Gin\nYi Swedish Punch                 5 Dashes Orange Curacao\nYi Dry Gin                         Shake well and strain into\n   Shake well and strain into      cocktail glass.\n   cocktail glass.              BLUE DEVIL COCKTAIL\n                                Yz Dry Gin\nBIG BOY COCKTAIL                Yi Lemon Juice or Lime Juice\nYz Brandy                       Yi Maraschino\nYi Cointreau                     1 Dash Blue Vegetable Extract\nYi Sirop-de-Citron                 Shake well and strain into\n   Shake well and strain into      cocktail glass.\n   cocktail glass.\n                                BLUES COCKTAIL (6 people)\nBLOOD AND SAND COCKTAIL            Take 4 glasses of Whisky\nYi Orange Juice                 1 Glass of Curacao\nYi Scotch Whisky                   Incorporate 1 Teaspoonful of\n^ Cherry Brandy                   syrup of Prunes. Pour out over\nYi Italian Vermouth                plenty of cracked ice and shakd\n   Shake well and strain into     for longer and more thoroughly\n   cocktail glass.                • than usual. Serve very cold."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SARDI'S DELIGHT COCKTAIL",
+      "name_es": "SARDI'S DELIGHT COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "passion fruit syrup",
+          "item_es": "jarabe de fruta de la pasión",
+          "amount": "0.5",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice                  2 dashes curacao",
+          "item_es": "lemon juice                  2 dashes curacao",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "east indian punch         % wineglass brandy",
+          "item_es": "east indian punch         % wineglass brandy",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "orange peel",
+          "item_es": "piel de naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice                    3 or 4 dashes gomme syrup",
+          "item_es": "lemon juice                    3 or 4 dashes gomme syrup",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters             2 or 3 dashes bitters",
+          "item_es": "angostura bitters             2 or 3 dashes bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth                      1 wineglass brandy",
+          "item_es": "french vermouth                      1 wineglass brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "canadian club whisky                 1 or 2 dashes curacao",
+          "item_es": "canadian club whisky                 1 or 2 dashes curacao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "yolk of egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine            1 dash angostura bitters",
+          "item_es": "grenadine            1 dash angostura bitters",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy                                 brandy",
+          "item_es": "brandy                                 brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters                  the juice of y orange",
+          "item_es": "angostura bitters                  the juice of y orange",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                        yi french vermouth",
+          "item_es": "absinthe                        yi french vermouth",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth                      yi dry gin",
+          "item_es": "french vermouth                      yi dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine                            yz dry gin",
+          "item_es": "grenadine                            yz dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well Shake well and strain into           Stir well and strain into Use small thick glass Shake well and strain into Light with match, stir with long Shake well and strain into            third full of ice, and stir with Shake well and strain into ,          Stir well and strain into cocktail Stir well and strain into cocktail      cocktail glass.",
+      "method_es": "Shake well Shake well and strain into           Stir well and strain into Use small thick glass Shake well and strain into Light with match, stir with long Shake well and strain into            third full of ice, and stir with Shake well and strain into ,          Stir well and strain into cocktail Stir well and strain into cocktail      cocktail glass.",
+      "glassware": "cocktail      cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SARDI'S DELIGHT COCKTAIL\n    Yi ounce Passion Fruit Syrup\n    Ya ounce Lime Juice\n       A few dashes Absinthe\n       A few dashes Grenadine\n     1 Dash Angostura Bitters\n     1 Good Drink Gin\n       Shake well\n\n>\nBOMBAY COCKTAIL (No. 1)               BRANDY COCKTAIL\n 4 Dashes Lemon Juice                  2 Dashes Curacao\n% Wineglass East Indian Punch         % Wineglass Brandy\n    Shake well and strain into           Stir well and strain into\n    cocktail glass.                      cocktail glass.\nBOMBAY COCKTAIL (No. 2)               BRANDY BLAZER COCKTAIL\n 1 Dash Absinthe\n                                         Use small thick glass\n2 Dashes Curacao\n                                       1 Lump Sugar\n   French Vermouth\n                                       1 Piece of Orange Peel\n                                       1 Piece of Lemon Peel\nVi Italian Vermouth\n                                       1 Glass Brandy\ny^ Brandy\n   Shake well and strain into\n                                         Light with match, stir with long\n                                         spoon for a few seconds and\n   cocktail glass.                       strain into cocktail glass.\nBOOMERANG COCKTAIL                    BRANDY (Special) COCKTAIL\n 1 Dash Lemon Juice                    3 or 4 Dashes Gomme Syrup\n 1 Dash Angostura Bitters             2 or 3 Dashes Bitters\nH French Vermouth                      1 Wineglass Brandy\n% Canadian Club Whisky                 1 or 2 Dashes Curacao\ny% Swedish Punch                         Squeeze lemon peel; fill one-\n   Shake well and strain into            third full of ice, and stir with\n   cocktail glass.                       spoon.\n\nBOSOM CARESSER COCKTAIL               BRANDY VERMOUTH\n  The Yolk of 1 Egg                   COCKTAIL\n 1 Teaspoonful of Grenadine            1 Dash Angostura Bitters\nyz Curacao                            y^ Italian Vermouth\n% Brandy                                 Brandy\n   Shake well and strain into ,          Stir well and strain into cocktail\n   medium size glass.                    glass.\n                                  8\nBRAZIL COCKTAIL                         BRONX COCKTAIL\n 1 Dash Angostura Bitters                  The Juice of Y Orange\n 1 Dash Absinthe                        Yi French Vermouth\n                                        Yi Italian Vermouth\nYz French Vermouth                      Yi Dry Gin\nYz Sherry                                  Shake well and strain into\n   Stir well and strain into cocktail      cocktail glass.\n   glass. Squeeze lemon peel on\n   top.                                 BRONX SILVER COCKTAIL\n                                           The Juice of Yi Orange\n                                           The White of 1 Egg\nBREAKFAST COCKTAIL                      Yi Italian Vermouth\n                                        Yi French Vermouth\nYz Grenadine                            Yz Dry Gin\n% Dry Gin                                  Shake well and strain into lar"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BULL-DOG COCKTAIL",
+      "name_es": "BULL-DOG COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put -2 or 3 lumps of ice into a",
+      "method_es": "Put -2 or 3 lumps of ice into a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BULL-DOG COCKTAIL\n  wine glass.\n                                           Put -2 or 3 lumps of ice into a\n                                           large tumbler, add the juice of\n                                           1 orange, 1 glass of gin. Fill",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BROKEN SPUR COCKTAIL",
+      "name_es": "BROKEN SPUR COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "yolk of egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "anisette marie",
+          "item_es": "anisette marie",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "white port                           yz dry gin",
+          "item_es": "white port                           yz dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                          cocktail",
+          "item_es": "absinthe                          cocktail",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters                 2 dashes angostura bitters",
+          "item_es": "angostura bitters                 2 dashes angostura bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into              Shake well and strain into cock Shake well and strain into cock Shake well and strain into cock",
+      "method_es": "Shake well and strain into              Shake well and strain into cock Shake well and strain into cock Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BROKEN SPUR COCKTAIL\n                                           balance with ginger ale. Stir,\n   The Yolk of 1 Egg                       and serve with a straw.\nYe Gin\nYe Italian Vermouth                     B.V.D. COCKTAIL\n 1 Teaspoonful Anisette Marie\n   Brisard                              Yz Bacardi Rum     '\nYz White Port                           Yz Dry Gin\n                                        Yz French Vermouth\n   Shake well and strain into              Shake well and strain into cock\n   cocktail glass.                         tail glass.\nCABARET COCKTAIL                          CANADIAN WHISKY\n 1 Dash Absinthe                          COCKTAIL\n 1 Dash Angostura Bitters                 2 Dashes Angostura Bitters\nVa Dry Gin                                2 Teaspoonsful Gomme Syrup\ny2 Caperitif                              1 Glass Canadian Club Whisky\n   Shake well and strain into cock\n                                             Shake well and strain into cock\n   tail glass. Add a cherry.                 tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CAFE DE PARIS COCKTAIL",
+      "name_es": "CAFE DE PARIS COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "anisette                        yi brandy",
+          "item_es": "anisette                        yi brandy",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                          yi dry gin",
+          "item_es": "dry gin                          yi dry gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into Shake well and strain into cock",
+      "method_es": "Shake well and strain into Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CAFE DE PARIS COCKTAIL\n   The White of 1 Egg                     CARMEL COCKTAIL\n 3 Dashes Anisette                        Yi Brandy\n I Teaspoonful of Fresh Cream             Yz Italian Vermouth\n 1 Glass Dry Gin                          Yi Dry Gin\n   Shake well and strain into\n                                             Shake well and strain into cock\n   medium size glass.                        tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CALIENTE COCKTAIL",
+      "name_es": "CALIENTE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters               champagne cocktail",
+          "item_es": "angostura bitters               champagne cocktail",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock        Yg Calvados",
+      "method_es": "Shake well and strain into cock        Yg Calvados",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CALIENTE COCKTAIL\n 2 Dashes Angostura Bitters               CHAMPAGNE COCKTAIL\nVi Lime Juice                             Yg Grenadine\n% Dry Gin                                 Yg Cederlund's Swedish Punch\n   Shake well and strain into cock        Yg Calvados\n   tail glass.                            Yg Lemon Juice\n                                          Ys Gin."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CANADIAN COCKTAIL",
+      "name_es": "CANADIAN COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar              angostura bitters. having add",
+          "item_es": "powdered sugar              angostura bitters. having add",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum                        glass with champagne, squeeze",
+          "item_es": "jamaica rum                        glass with champagne, squeeze",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into a wine glass one lump Shake well and strain into cock          on top a piece of lemon peel,",
+      "method_es": "Put into a wine glass one lump Shake well and strain into cock          on top a piece of lemon peel,",
+      "glassware": "a wine glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CANADIAN COCKTAIL\n                                             Put into a wine glass one lump\n   The Juice of    Lemon                     of sugar, and saturate it with\nYi Tablespoonful Powdered Sugar              Angostura Bitters. Having add\n 1 Liqueur Glass Curacao                     ed to this 1 lump of ice, fill the\n 3 Dashes Jamaica Rum                        glass with Champagne, squeeze\n   Shake well and strain into cock          on top a piece of lemon peel,\n   tail glass.                              and serve with a slice of orange.\n                                     10\n                                        o\n\n                               '(LmjolDTn£.\n                                               O"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "THE VENDOME COCKTAIL",
+      "name_es": "THE VENDOME COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dubonnet",
+          "item_es": "Dubonnet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock        Yz French Vermouth Shake well and strain into cock Shake well and strain into             3 Dashes Maraschino Shake well and strain into cock",
+      "method_es": "Shake well and strain into cock        Yz French Vermouth Shake well and strain into cock Shake well and strain into             3 Dashes Maraschino Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "THE VENDOME COCKTAIL\nYz Dubonnet\nVs Gin                                OQ\nYs French Vermouth\n   In measuring, put a little more     ro\n   Dubonnet and a little less Ver      / ''    O\n   mouth.\n\n\n\n\n                                         ^—1\nCARUSO COCKTAIL                           CHINATOWN COCKTAIL\n% Dry Gin                                  1 Dash Orange Bitters\nVs French Vermouth                         1 Dash Lemon or Lime Juice\nYs Green Creme de Menthe                   1 Dash Brandy\n                                          Yz Italian Vermouth\n   Shake well and strain into cock        Yz French Vermouth\n   tail glass.                            Ys Dry Gin\n                                             Shake well and strain into cock\n                                             tail glass. Squeeze lemon peel\nCHANTICLER COCKTAIL                          on top.\n   The Juice of Y2 Lemon\n I Tablespoonful Raspberry Syrup\n   The White of 1 Egg                 CHINESE COCKTAIL\n 1 Glass Dry Gin\n                                          1 Dash Angostura Bitters\n   Shake well and strain into             3 Dashes Maraschino\n   medium size glass.                     3 Dashes Curacao\n                                      Ys Grenadine\n                                      % Jamaica Rum\n                                            Shake well and strain into cock"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CHERRY BLOSSOM COCKTAIL",
+      "name_es": "CHERRY BLOSSOM COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura                     va dry gin",
+          "item_es": "angostura                     va dry gin",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters                ys french vermouth",
+          "item_es": "orange bitters                ys french vermouth",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cinzano vermouth               ^ apricot brandy",
+          "item_es": "cinzano vermouth               ^ apricot brandy",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "serve very cold.                         tail glass. Shake well and strain into cock       Shake well and strain into cock",
+      "method_es": "serve very cold.                         tail glass. Shake well and strain into cock       Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHERRY BLOSSOM COCKTAIL\n                                             tail glass.\n(6 people)\n   To a glass half full of cracked\n   ice add a tablespoonful of dry     CHOKER COCKTAIL (6 people)\n   Curacao, one of Lemon Juice,           4 Glasses Scotch Whisky\n   one of Grenadine, 2V2 glasses          2 Glasses Absinthe\n   of Cherry Brandy and two of            1 Dash Absinthe Bitters\n   Brandy. Shake thoroughly and             Shake well and strain into cock\n   serve very cold.                         tail glass.\n                                     12\nCINZANO COCKTAIL                       CLARIDGE COCKTAIL\n2 Dashes Angostura                     Va Dry Gin\n2 Dashes Orange Bitters                Ys French Vermouth\n1 Glass Cinzano Vermouth               ^ Apricot Brandy\n                                       % Cointreau\n   Shake well and strain into cock       Shake well and strain into cock\n   tail glass, and squeeze orange           tail glass.\n   peel on top."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB COCKTAIL",
+      "name_es": "CLOVER CLUB COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB COCKTAIL\n                                            The Juice of Y2 Lemon or of",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CINZANO SPARKLING",
+      "name_es": "CINZANO SPARKLING",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CINZANO SPARKLING\n                                            1 Lime",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "COCKTAIL",
+      "name_es": "COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacao, 1 teaspoon-            medium size glass",
+          "item_es": "curacao, 1 teaspoon-            medium size glass",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine                           club cocktail",
+          "item_es": "grenadine                           club cocktail",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                              y% italian vermouth",
+          "item_es": "dry gin                              y% italian vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "yolk of egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar or gomme vi apple brandy or calvados",
+          "item_es": "sugar or gomme vi apple brandy or calvados",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao                             tail glass",
+          "item_es": "curacao                             tail glass",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "v/ine glass kina lillet",
+          "item_es": "v/ine glass kina lillet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fresh cream",
+          "item_es": "fresh cream",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "amer picon                         the juice of yi lemon",
+          "item_es": "amer picon                         the juice of yi lemon",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into frappe. Mix in order as stated Shake well and strain into me            1 Dash Yellow Chartreuse Shake well and strain into cock Shake well and strain into a Shake well and strain into cock        THE COWBOY COCKTAIL Shake well and strain into cock Stir well and strain into cock         1 Glass Bacardi Rum",
+      "method_es": "Shake well and strain into frappe. Mix in order as stated Shake well and strain into me            1 Dash Yellow Chartreuse Shake well and strain into cock Shake well and strain into a Shake well and strain into cock        THE COWBOY COCKTAIL Shake well and strain into cock Stir well and strain into cock         1 Glass Bacardi Rum",
+      "glassware": "In a wineglass put 1 lump of     The White of 1 Egg",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COCKTAIL\n                                 Ys Grenadine\n   In a wineglass put 1 lump of     The White of 1 Egg\n   Sugar, 2 dashes of Angostura, % Dry Gin\n                                            Shake well and strain into\n   1 dash of Curacao, 1 teaspoon-            medium size glass.\n   ful Brandy, 1 lump of Ice. Fill\n   up with Cinzano Brut, and stir      COCKTAIL DAIGUIRI\n   slightly, and squeeze lemon peel        1 Jigger of Bacardi\n   on top.                                 1 Teaspoon of granulated sugar\n                                             or sugared syrup\n                                            The Juice of Yi Green Lime\nCLOVER LEAF COCKTAIL                         Cracked Ice. Shake well. Serve\n                                             frappe. Mix in order as stated\n  The Juice of V2 Lemon or of                above.\n   1 Lime\nYa Grenadine                           CLUB COCKTAIL\n   The White of 1 Egg                  % Dry Gin\n% Dry Gin                              Y% Italian Vermouth\n  Shake well and strain into me            1 Dash Yellow Chartreuse\n  dium size glass. Put a sprig of            Shake well and strain into cock\n   fresh Mint on top.                        tail glass.\n                                      13\nCOFFEE COCKTAIL                           CORPSE REVIVER (No. 1)\n    The Yolk of 1 Egg                     Vi Italian Vermouth\n  1 Teaspoonfui Sugar or Gomme Vi Apple Brandy or Calvados\n   Syrup                                  Yz Brandy\nVs Port Wine\n                                             Shake well and strain into cock\nVe Brandy\n  1 Dash Curacao                             tail glass.\n    Shake well and strain into a\n    small wineglass, grate a little CORPSE REVIVER (No. 2)\n    nutmeg on top.                        Yi Wine Glass Lemon Juice\n                                          Yi V/ine Glass Kina Lillet\n                                          Yi Wine Glass Cointreau\nCORDOVA COCKTAIL                          Yi Wine Glass Dry Gin\n                                           1 Dash Absinthe\n% Dry Gin                                    Shake well and strain into cock\n 1 Dash Absinthe\nVs Italian Vermouth\n                                             tail glass.\n 1 Teaspoonfui Fresh Cream\n   Shake well and strain into cock        THE COWBOY COCKTAIL\n   tail glass.                            2/3 Whisky\n                                          Ys Cream\n                                             Shake well and strain into cock\nCREOLE COCKTAIL                              tail glass.\nVi Rye or Canadian Club Whisky\nVz Italian Vermouth                       CUBAN COCKTAIL (No. 1)\n 2 Dashes Benedictine\n 2 Dashes Amer Picon                         The Juice of Yi Lemon\n                                          1 Teaspoonfui Powdered Sugar\n   Stir well and strain into cock         1 Glass Bacardi Rum\n   tail glass. Twist lemon peel on          Shake well and strain into cock\n   top.                    "
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CURACAO COCKTAIL",
+      "name_es": "CURACAO COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CURACAO COCKTAIL\n(6 people)",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DEPTH BOMB COCKTAIL",
+      "name_es": "DEPTH BOMB COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gin                             y2 calvados or apple brandy",
+          "item_es": "gin                             y2 calvados or apple brandy",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "juice of orange",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "curacao                          1 glass dry gin",
+          "item_es": "curacao                          1 glass dry gin",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "port wine                              yz french vermouth",
+          "item_es": "port wine                              yz french vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth                        ys gin",
+          "item_es": "french vermouth                        ys gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice                      1 dash orange bitters",
+          "item_es": "lemon juice                      1 dash orange bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and serve in glasses            Shake well and strain into cock Shake well and strain into cock           tumbler and fill with Ginger Shake well and strain into cock Add plenty of ice and shaTce           Yi Creme Yvette Shake well and strain into",
+      "method_es": "Shake well and serve in glasses            Shake well and strain into cock Shake well and strain into cock           tumbler and fill with Ginger Shake well and strain into cock Add plenty of ice and shaTce           Yi Creme Yvette Shake well and strain into",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DEPTH BOMB COCKTAIL\n Yz Glass Brandy\n                                          1 Dash Lemon Juice\n2Y2 Glasses Dark Curacao                  4 Dashes Grenadine\n2Y2 Glasses Orange Juice\n Yz Glass Gin                             Y2 Calvados or Apple Brandy\n    Broken Ice                            Y2 Brandy\n    Shake well and serve in glasses            Shake well and strain into cock\n    rinsed out with orange bitters.            tail glass.\n\n\nDAMN-THE-WEATHER                          DESERT HEALER COCKTAIL\nCOCKTAIL\n                                             The Juice of 1 Orange\n 3 Dashes Curacao                          1 Glass Dry Gin\nYi Orange Juice                           Yz Liqueur Glass Cherry Brandy\nYi Italian Vermouth\nYz Dry Gin                                   Shake well and strain into long\n   Shake well and strain into cock           tumbler and fill with Ginger\n   tail glass.                                 Beer.\n                                     15\nDEVIL'S COCKTAIL                          DRY MARTINI COCKTAIL\nYz Port Wine                              Yz French Vermouth\nYz French Vermouth                        Ys Gin\n 2 Dashes Lemon Juice                      1 Dash Orange Bitters\n   Shake well and strain into cock\n   tail glass.                            DUBONNET COCKTAIL\n                                          Ys Dubonnet\nDIXIE WHISKY COCKTAIL                     Ys Dry Gin\n(6 people)                                   Stir well and strain into cock\n                                             tail glass.\n   To 2 lumps of sugar, add a small\n   teaspoon of Angostura Bitters,\n   another of Lemon Juice, four           EAGLE'S SCREAM COCKTAIL\n   glasses of Whisky, a small tea-         1 Teaspoonful of Powdered Sugar\n   spoonful of Curacao, and 2 tea-           The White of 1 Egg\n   spoonsful of Creme de Menthe.             The Juice of Yi Lemon\n   Add plenty of ice and shaTce           Yi Creme Yvette\n                                          Yi Dry Gin\n   carefully. Serve.\n                                            Shake well and strain into\n                                             medium size glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DOUGLAS FAIRBANKS",
+      "name_es": "DOUGLAS FAIRBANKS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "plymouth gin                            ys scotch whisky",
+          "item_es": "plymouth gin                            ys scotch whisky",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock        Ys Absinthe",
+      "method_es": "Shake well and strain into cock        Ys Absinthe",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DOUGLAS FAIRBANKS\nCOCKTAIL                                  EARTHQUAKE COCKTAIL\nYs French Vermouth                        Ys Gin\n% Plymouth Gin                            Ys Scotch Whisky\n   Shake well and strain into cock        Ys Absinthe\n   tail glass. Squeeze orange and           Shake well and strain into cock\n   lemon pieel on top.                       tail glass.\n                                     16"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BROWN DERBY COCKTAIL",
+      "name_es": "BROWN DERBY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "grapefruit juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "honey",
+          "item_es": "honey",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cocktail glass. Use Port Wine Glass                       The Juice of Yi Orange Fill with Shaved Ice                   Ys Dry Gin Fill glass % full with White           Ya Italian Vermouth",
+      "method_es": "Shake well and strain into cocktail glass. Use Port Wine Glass                       The Juice of Yi Orange Fill with Shaved Ice                   Ys Dry Gin Fill glass % full with White           Ya Italian Vermouth",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BROWN DERBY COCKTAIL\ny2 Whisky\nYi Grapefruit Juice\nYi Honey\n   Shake well and strain into cocktail glass.\nELISSA LANDI COCKTAIL                     EXTRA GIRL COCKTAIL\n   Use Port Wine Glass                       The Juice of Yi Orange\n   Fill with Shaved Ice                   Ys Dry Gin\n   Fill glass % full with White           Ya Italian Vermouth\n   Creme de Menthe and top with           Ys French Vermouth\n   Brandy.                                   Shake well and strain into me\n                                             dium-size glass. Add slice of\n                                             orange and cherry."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ELK'S COCKTAIL",
+      "name_es": "ELK'S COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whisky                          fallen angel cocktail",
+          "item_es": "scotch whisky                          fallen angel cocktail",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar                            the juice of 1 lemon or yz",
+          "item_es": "sugar                            the juice of 1 lemon or yz",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice                       (for the morning after)",
+          "item_es": "orange juice                       (for the morning after)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy      yi italian vermouth",
+          "item_es": "apricot brandy      yi italian vermouth",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth                    yi orange juice",
+          "item_es": "french vermouth                    yi orange juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whisky",
+          "item_es": "scotch whisky",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitters                gin cocktail",
+          "item_es": "bitters                gin cocktail",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup                4 dashes orange bitters",
+          "item_es": "sugar syrup                4 dashes orange bitters",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine or syrup",
+          "item_es": "grenadine or syrup",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi rum                        ya dry gin",
+          "item_es": "bacardi rum                        ya dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice                        glad eye cocktail",
+          "item_es": "lemon juice                        glad eye cocktail",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin                                    yz plymouth gin",
+          "item_es": "gin                                    yz plymouth gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into wine           Lime Shake well and strain into cock Shake well and strain into cock           Shake well and strain into cock- Shake well and strain into cock    Yi Grenadine Shake well and strain into cock        1 Glass Dry Gin Shake well and strain into cock Shake well and strain into cock    Ya Apricot Brandy Shake well and strain into cock Pour into tall glass containing % Absinthe",
+      "method_es": "Shake well and strain into wine           Lime Shake well and strain into cock Shake well and strain into cock           Shake well and strain into cock- Shake well and strain into cock    Yi Grenadine Shake well and strain into cock        1 Glass Dry Gin Shake well and strain into cock Shake well and strain into cock    Ya Apricot Brandy Shake well and strain into cock Pour into tall glass containing % Absinthe",
+      "glassware": "cock        1 glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ELK'S COCKTAIL\n   The White of 1 Egg\nYz Scotch Whisky                          FALLEN ANGEL COCKTAIL\nYz Port Wine                               1 Dash Angostura Bitters\n   Juice of] Lemon                        2 Dashes Creme de Menthe\n 1 Teaspoon Sugar                            The Juice of 1 Lemon or Yz\n   Shake well and strain into wine           Lime\n                                           1 Glass Dry Gin\n   glass.\n                                             Shake well and strain into cock\n                                             tail glass.\n\"EVERYTHING BUT\" COCKTAIL\nYi Whisky\nYi Gin                                    FERNET BRANCA COCKTAIL\nYi Lemon Juice\nYi Orange Juice                       (for the morning after)\n 1 Egg                                Yi Fernet Branca\n 1 Teaspoonful of Apricot Brandy      Yi Italian Vermouth\n   Powdered Sugar                         Yz Dry Gin\n   Shake well and strain into cock           Shake well and strain into cock-\n   tail glass.                               taiT glass..-\n                                     18\nFIFTY-FIFTY COCKTAIL                  GARBO GARGLE COCKTAIL\n^ Dry Gin                                 1 Dash Creme de Menthe\nYz French Vermouth                    Yi Orange Juice\n   Shake well and strain into cock    Yi Grenadine\n   tail glass.                        Yi French Vermouth\n                                      Yi Brandy\nFLYING SCOTCHMAN                            Shake well and strain into me\nCOCKTAIL (6 people)                         dium-size glass and top with a\n2^2 Glasses Italian Vermouth                little Port Wine.\n  3 Glasses Scotch Whisky\n  1 Tablespoon Bitters                GIN COCKTAIL\n  1 Tablespoon Sugar Syrup                4 Dashes Orange Bitters\n   Shake well and strain into cock        1 Glass Dry Gin\n   tail glass.\n                                            Shake well and strain into cock\nFOURFLUSH COCKTAIL                          tail glass.\n 1 Dash Grenadine or Syrup\nVi French Vermouth                    GINGER ROGERS COCKTAIL\nVi Swedish Punch                      Ys French Vermouth\nYz Bacardi Rum                        Ya Dry Gin\n   Shake well and strain into cock    Ya Apricot Brandy\n   tail glass.                            4 Dashes Lemon Juice\n                                            Shake well and strain into cock\nTHE FRENCH \"75\" COCKTAIL                    tail glass.\n% Gin\nYa Lemon Juice                        GLAD EYE COCKTAIL\n 1 Spoonful Powdered Sugar         Ya Peppermint                   ''\n   Pour into tall glass containing % Absinthe\n   cracked ice and fill up with       Shake well and strain into cock\n   Champagne.                               tail glass.\n                                     19\nTHE GOLDEN GATE COCKTAIL                  GYPSY COCKTAIL\nVi Orange Ice                             Yz Italian Vermouth\nYi Gin                                    Yz Plymouth Gin\n    Place in shaker and shake, no            Shake well an"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HASTY COCKTAIL",
+      "name_es": "HASTY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin                               shake well and strain into cock",
+          "item_es": "gin                               shake well and strain into cock",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Add ice and shake.",
+      "method_es": "Add ice and shake.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HASTY COCKTAIL\nGRAPEFRUIT COCKTAIL                        1 Dash Absinthe\n(6 people)                                 4 Dashes Grenadine\n   The Juice of 1 Yz Lemons               Ys French Vermouth\n 2 Small spoonsful Grapefruit Jelly       Ys Nicholson's Gin\n 4 Glasses Gin                               Shake well and strain into cock\n                                             tail glass.\n   Add ice and shake."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HAVANA COCKTAIL",
+      "name_es": "HAVANA COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "swedish punch",
+          "item_es": "ponche sueco",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau                                ys london dry gin",
+          "item_es": "cointreau                                ys london dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice                       1 dash angostura bitters",
+          "item_es": "lemon juice                       1 dash angostura bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "syrup                             2 dashes creme de noyau",
+          "item_es": "syrup                             2 dashes creme de noyau",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                             % glass dry gin",
+          "item_es": "dry gin                             % glass dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake wel I and strain into cock-           Shake well and strain into cock Shake 3 glasses of Cognac and            Ys Maraschino Shake well and strain into cock Shake well and strain into cock             Shake well and strain into cock Shake well and strain into cock             tail glass. Add Olive, squeeze Shake well and strain into cock           Shake well and strain into cock",
+      "method_es": "Shake wel I and strain into cock-           Shake well and strain into cock Shake 3 glasses of Cognac and            Ys Maraschino Shake well and strain into cock Shake well and strain into cock             Shake well and strain into cock Shake well and strain into cock             tail glass. Add Olive, squeeze Shake well and strain into cock           Shake well and strain into cock",
+      "glassware": "cock             tail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HAVANA COCKTAIL\nVariation;                                 ] Dash Lemon Juice\n   Take 3Yz glasses of Gin and            Yi Dry Gin\n                                          Yi Swedish Punch\n   the juice of 1% good-sized             Yz Apricot Brandy\n   Grapefruit. Sugar to taste,               Shake well and strain into cock\n   plenty of ice. Shake and serve.           tail glass.-\n                                     20\nHAWAIIAN COCKTAIL                      HONEYMOON COCKTAIL\n4 Parts Gin                                    The Juice of Yi Lemon\n2 Parts Orange Juice                        3 Dashes Curacao\n1 Part Curacao (or any other of             Yi Benedictine\n  the Orange Liqueurs)                      Y2 Apple Brandy\n   Shake wel I and strain into cock-           Shake well and strain into cock\n   tail glass.                                 tail glass.\n                                            HONOLULU COCKTAIL (No. 2)\nHELL COCKTAIL (6 people)\n   Shake 3 glasses of Cognac and            Ys Maraschino\n   3 glasses of Green Creme de              Ys Gin\n   Menthe. Serve with a pinch of            Ys Benedictine\n                                               Shake well and strain into cock\n   Red Pepper on each glass.                   tail glass.\nHEY HEY COCKTAIL                            HURRICANE COCKTAIL\nVi Lemon Juice\nVi Kina Lillet                              Ys Johnnie Aggie Scotch Whisky\nYi Cointreau                                Ys London Dry Gin\n^ Brandy                                    Ys Creme de Menthe\n                                               Juice 2 Lemons\n   Shake well and strain into cock             Shake well and strain into cock\n   tail glass.                                 tail glass.\nHONOLULU COCKTAIL (No. 1)                   'R'SH COCKTAIL\n   Dash Angostura Bitters                    2 Dashes Absinthe\n   Dash Orange Juice                         2 Dashes Curacao\n   Dash Pineapple Juice                      1 Dash Maraschino\n   Dash Lemon Juice                          1 Dash Angostura Bitters      ^ 1\n   Glass Dry Gin                            Ys Glass Irish Whisky\n   A little Powdered Sugar                     Shake well and strain into cock\n   Shake well and strain into cock             tail glass. Add Olive, squeeze\n   tail glass.                                 Orange Peel on top.\n                                       21\nJACK DEMPSEY COCKTAIL                     JOCKEY CLUB COCKTAIL\n(No. 1)\n                                          1 Dash Orange Bitters\n 1 Dash Lemon Juice                       1 Dash Angostura Bitters\n 1 Dash Syrup                             2 Dashes Creme de Noyau\n   Bacardi Rum                            4 Dashes Lemon Juice\n% Dry Gin                             % Glass Dry Gin\n   Shake well and strain into cock           Shake well and strain into cock\n   tail glass.                               tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JOHNNIE AGGIE COCKTAIL",
+      "name_es": "JOHNNIE AGGIE COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JOHNNIE AGGIE COCKTAIL",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JACK DEMPSEY COCKTAIL",
+      "name_es": "JACK DEMPSEY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "syrup                                shake well and strain into cock",
+          "item_es": "syrup                                shake well and strain into cock",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock           on top.",
+      "method_es": "Shake well and strain into cock           on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK DEMPSEY COCKTAIL\n(No. 2)                                   Y2 Italian Vermouth\nYi Bacardi Rum                            Y2 Johnnie Aggie Scotch Whisky\n                                          3 Dashes Benedictine\n 1 Dash Lemon Juice\n 1 Dash Syrup                                Shake well and strain into cock\nYi Dry Gin                                   tail glass. Squeeze Lemon Peel\n   Shake well and strain into cock           on top.\n   tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JOHNNY WEISMULLER",
+      "name_es": "JOHNNY WEISMULLER",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JOHNNY WEISMULLER\n                                      COCKTAIL",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JEAN HARLOW COCKTAIL",
+      "name_es": "JEAN HARLOW COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock          Shake well and strain into cock-",
+      "method_es": "Shake well and strain into cock          Shake well and strain into cock-",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JEAN HARLOW COCKTAIL\nY2 Bacardi Rum                            Y3 Gin\n                                          Ya Bacardi Rum\nY2 Italian Vermouth                       Ys Lemon Juice\n   The peel of 1 Lime or piece of            Powdered Sugar\n   Lemon                                   1 Dash of Grenadine\n   Shake well and strain into cock          Shake well and strain into cock-\n   tail glass.                               tall glass.\n                                     22\n                        k:7"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HI HO COCKTAIL",
+      "name_es": "HI HO COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                    (no. 2)",
+          "item_es": "absinthe                    (no. 2)",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette                       1 teaspoonful raspberry syrup",
+          "item_es": "anisette                       1 teaspoonful raspberry syrup",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters              1 teaspoonful lemon juice",
+          "item_es": "angostura bitters              1 teaspoonful lemon juice",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "canadian club whisky         1    dash maraschino",
+          "item_es": "canadian club whisky         1    dash maraschino",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "white of egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "plymouth gin                   liar's cocktail",
+          "item_es": "plymouth gin                   liar's cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                      ys dry.gin",
+          "item_es": "absinthe                      ys dry.gin",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well and strain into cocktail Stir well and put small piece of     Yi Glass Dry Gin Shake well and strain Into cock- Shake well and strain into me Shake well and strain into cock-",
+      "method_es": "Stir well and strain into cocktail Stir well and put small piece of     Yi Glass Dry Gin Shake well and strain Into cock- Shake well and strain into me Shake well and strain into cock-",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HI HO COCKTAIL\n2 Dashes Orange Bitters\n  Port Wine\n% Tom Gin\n   Stir well and strain into cocktail\n   glass. Squeeze lemon peel on\n   top.\nLADIES' COCKTAIL                      LEAVE IT TO ME COCKTAIL\n 2 Dashes Absinthe                    (No. 2)\n 2 Dashes Anisette                       1 Teaspoonful Raspberry Syrup\n 2 Dashes Angostura Bitters              1 Teaspoonful Lemon Juice\n 1 Glass of Canadian Club Whisky         1    Dash Maraschino\n   Stir well and put small piece of     Yi Glass Dry Gin\n   Pineapple In glass.\n                                             Shake well and strain Into cock-\nLANDLADY COCKTAIL                            tall glass.\n   The White of 1 Egg\n 1 Tablespoonful Grenadine\n 1 Glass Plymouth Gin                   LIAR'S COCKTAIL\n   Shake well and strain into me\n   dium-size glass.                     6 Dashes Curacao\n                                        2 Dashes Italian Vermouth\nLEE TRACY COCKTAIL                      Vs French Vermouth\n 3 Dashes Absinthe                      Ys Dry.Gin\nVs Orange Curacao                            Shake well and strain Into cock-\nYs Sloe Gin                                  tall glass.\n   Shake well and strain into cock-\n   tall glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "LINDBERGH COCKTAIL",
+      "name_es": "LINDBERGH COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LINDBERGH COCKTAIL",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "LEAVE IT TO ME COCKTAIL",
+      "name_es": "LEAVE IT TO ME COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice                     2 dashes pricota",
+          "item_es": "lemon juice                     2 dashes pricota",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth                      yz plymouth gin",
+          "item_es": "french vermouth                      yz plymouth gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar                 va lemon juice",
+          "item_es": "sugar                 va lemon juice",
+          "amount": "4",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth              % dry gin",
+          "item_es": "italian vermouth              % dry gin",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                             (no. 2)",
+          "item_es": "dry gin                             (no. 2)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy                              yz kina lillet",
+          "item_es": "brandy                              yz kina lillet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pricota",
+          "item_es": "pricota",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock-          tall glass. Squeeze Lemon Peel Shake well and strain into cock Shake well and strain into cock    Yz Dry Gin",
+      "method_es": "Shake well and strain into cock-          tall glass. Squeeze Lemon Peel Shake well and strain into cock Shake well and strain into cock    Yz Dry Gin",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LEAVE IT TO ME COCKTAIL\n(No. 1)                                 2 Dashes Orange Juice\n 1 Dash Lemon Juice                     2 Dashes Pricota\n   Apricot Brandy                       Yi Kina Lillet\nYi French Vermouth                      Yz Plymouth Gin\n 1 Dash Grenadine\n^ Plymouth Gin                               Shake well and serve In cock-\n   Shake well and strain into cock-          tall glass. Squeeze Lemon Peel\n   tall glass.                               On topt\n                                   24\nLOS ANGELES COCKTAIL                  MAIDEN'S PRAYER COCKTAIL\n   The Juice of 1 L-emon              (No. 1)\n 4 Hookers Whisky                         Va Orange Juice\n 4 Teaspoonsful Sugar                 Va Lemon Juice\n 1 Egg                                % Cointreau\n 1 Dash Italian Vermouth              % Dry Gin\n                                            Shake well and strain into cock\nLOUD SPEAKER COCKTAIL                       tail glass.\nVa Lemon Juice\nVa Cointreau                          MAIDEN'S PRAYER COCKTAIL\n% Dry Gin                             (No. 2)\n% Brandy                              Yz Kina Lillet\n   Shake well and strain into cock    Yz Dry Gin\n   tail glass.                        Yz Calvados\n                                      Yz Pricota\nLURE VELEZ COCKTAIL                         Shake well and strain into cock\n(6 people)                                  tail glass.\n  3 Glasses Jamaica Rum"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MARLENE DIETRICH COCKTAIL",
+      "name_es": "MARLENE DIETRICH COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pimento dram                   whisky",
+          "item_es": "pimento dram                   whisky",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake carefully and serve             2 Dashes Curacao",
+      "method_es": "Shake carefully and serve             2 Dashes Curacao",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MARLENE DIETRICH COCKTAIL\n1 Yz Glasses Kummel\n1 Yz Glasses Orange Juice             % Wineglass Rye or Canadian\n  1 Dash Pimento Dram                   Whisky\n                                      2 Dashes Angostura Bitters\n    Shake carefully and serve             2 Dashes Curacao\n    whilst frothing.                        Shake well and strain into wine\n                                            glass. Squeeze lemon and"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-030",
+      "order": 30,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MAE WEST COCKTAIL",
+      "name_es": "MAE WEST COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "yolk of egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar         martini (dry) cocktail",
+          "item_es": "powdered sugar         martini (dry) cocktail",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy                       yz french vermouth",
+          "item_es": "brandy                       yz french vermouth",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao or maraschino           yi italian vermouth",
+          "item_es": "curacao or maraschino           yi italian vermouth",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth (mixed)                shake well and strain into cock",
+          "item_es": "vermouth (mixed)                shake well and strain into cock",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters                  tail glass",
+          "item_es": "angostura bitters                  tail glass",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters                 mary pickford cocktail",
+          "item_es": "angostura bitters                 mary pickford cocktail",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "canadian club whisky",
+          "item_es": "whisky Canadian Club",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                           put into tumbler dozen sprigs",
+          "item_es": "absinthe                           put into tumbler dozen sprigs",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine                          of tender mint shoots. upon",
+          "item_es": "grenadine                          of tender mint shoots. upon",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                           whisky may be substituted",
+          "item_es": "absinthe                           whisky may be substituted",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into me      Yz Dry Gin Shake well and strain into cock Use small Bar Glass Shake up well, and strain into a       MARTINI (Special) COCKTAIL serve. If preferred very sweet         1 V2 Glasses Italian Vermouth add two dashes of gum syrup.            Yz Glass Orange-Flower Water Shake well and strain into cock        Y2 Pineapple Juice Shake well and strain into cock          Brandy. Fill up tumbler then",
+      "method_es": "Shake well and strain into me      Yz Dry Gin Shake well and strain into cock Use small Bar Glass Shake up well, and strain into a       MARTINI (Special) COCKTAIL serve. If preferred very sweet         1 V2 Glasses Italian Vermouth add two dashes of gum syrup.            Yz Glass Orange-Flower Water Shake well and strain into cock        Y2 Pineapple Juice Shake well and strain into cock          Brandy. Fill up tumbler then",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MAE WEST COCKTAIL\n                                            orange peel on top.\n   The Yolk of 1 Egg\n 1 Teaspoonful Powdered Sugar         MARTINI (Dry) COCKTAIL ,\n 1 Glass Brandy                       Yz French Vermouth\n   Shake well and strain into me      Yz Dry Gin\n   dium-size glass. Dash of Cay             Shake well and strain into cock\n     enne Pepper on top.                    tail glass.\n                                     25\n MALIBU COCKTAIL                          MANHATTAN COCKTAIL DRY\n Ya Cointreau\n Ys Anisette\n                                          Yi French Vermouth\n                                          Yi Italian Vermouth\n Ys White Curacao\n                                          Y2 Rye or Canadian Club Whisky\n    Shake well and strain into cock\n    tail glass.                              Stir well and strain into cock\n                                             tail glass.\n\n MANHATTAN COCKTAIL                       MARTINI (Medium) COCKTAIL\n(No. 1)\n                                          Yi French Vermouth\n    Use small Bar Glass\n 2 Dashes Curacao or Maraschino           Yi Italian Vermouth\n I Poney Rye Whisky                       Yi Dry Gin\n 1 Wineglass Vermouth (mixed)                Shake well and strain into cock\n 3 Dashes Angostura Bitters                  tail glass.\n 2 Small lumps of Ice\n   Shake up well, and strain into a       MARTINI (Special) COCKTAIL\n   claret glass. Put a quarter of a       (6 people)\n   slice of lemon in the glass and          4 Glasses of Gin\n   serve. If preferred very sweet         1 V2 Glasses Italian Vermouth\n   add two dashes of gum syrup.            Yz Glass Orange-Flower Water\n                                              Before shaking, add a dash of\n                                              Absinthe and 1 or 2 dashes of\nMANHATTAN COCKTAIL                            Angostura Bitters.\n(No. 2)\n 1 Dash Angostura Bitters                 MARY PICKFORD COCKTAIL\n% Canadian Club Whisky\nYs Italian Vermouth                       Y2 Bacardi Rum\n   Shake well and strain into cock        Y2 Pineapple Juice\n                                           1, Teaspoonful Grenadine\n   tail glass, with cherry.                6\"Drops Maraschino\n                                     26\nMAX BAER COCKTAIL                     MINT JULEP\n2 Dashes Absinthe                           Put into tumbler dozen sprigs\n2 Dashes Grenadine                          of tender mint shoots. Upon\n^4 Gin                                      them pour one spoonful white\n^4 Calvados                                 sugar. Fill to one-third with\n   Shake well and strain into cock          Brandy. Fill up tumbler then\n   tail glass.\n                                            with fine ice.      Add dash of\n                                            rum of peppermint. As the ice\nMERRY WIDOW COCKTAIL                      \" melts you drink. (Bourbon\n2 Dashes Absinthe                           whisky may be substituted "
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-031",
+      "order": 31,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "NEW ORLEANS FIZZ",
+      "name_es": "NEW ORLEANS FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin                          vs french vermouth",
+          "item_es": "dry gin                          vs french vermouth",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "fleur d'orange                   vs campari",
+          "item_es": "fleur d'orange                   vs campari",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sweet cream                    shake well and strain into cock",
+          "item_es": "sweet cream                    shake well and strain into cock",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar                                 shake well and strain into cock",
+          "item_es": "sugar                                 shake well and strain into cock",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters                   tail glass",
+          "item_es": "angostura bitters                   tail glass",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "rye or canadian club",
+          "item_es": "rye or canadian club",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "strain into glass. Fill with Rosa Crush Sugar and Bitters to",
+      "method_es": "strain into glass. Fill with Rosa Crush Sugar and Bitters to",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW ORLEANS FIZZ\n  Juice of Vz Lemon                    \"OLD PAL\" COCKTAIL\ny2 Tablespoon Powdered Sugar\n   White of 1 Egg                         Vs Canadian Club Whisky\n 1 Glass Dry Gin                          Vs French Vermouth\n3 Dashes Fleur d'Orange                   Vs Campari\n 1 Tablespoon Sweet Cream                    Shake well and strain into cock\n   Long tumbler. Shake well and              tail glass.\n   strain into glass. Fill with Rosa\n   Blanca or Seltzer.                     ORANGE BLOSSOM COCKTAIL\n                                          Yz Orange Juice\nOLD-FASHIONED COCKTAIL                    Yz Dry Gin\n1 Lump Sugar                                 Shake well and strain into cock\n2 Dashes Angostura Bitters                   tail glass.\n1 Glass Rye or Canadian Club\n   Whisky                              PALM SPRINGS COCKTAIL\n   Crush Sugar and Bitters to\n   gether, add lump of ice, deco           1 Dash Angostura Bitters\n   rate with twist of lemon peel           1 Dash Orange Bitters\n   and slice of orange, using me          Ys Creme de Cacao\n   dium-size glass, and stir well.        Ys Maraschino\n   This Cocktail can be made with         Ys French Vermouth\n   Brandy, Gin, Rum, etc., instead           Shake well and strain into cock-\n   of Rye Whisky.                            taif glass.\n                                     28"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-032",
+      "order": 32,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "EMBASSY COCKTAIL",
+      "name_es": "EMBASSY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters                    serve with a small piece of pine",
+          "item_es": "angostura bitters                    serve with a small piece of pine",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters                       apple in the glass. this is a very",
+          "item_es": "orange bitters                       apple in the glass. this is a very",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice                        mild cocktail",
+          "item_es": "lime juice                        mild cocktail",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock shake well and strain into cock Shake well, strain into cocktail",
+      "method_es": "Shake well and strain into cock shake well and strain into cock Shake well, strain into cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EMBASSY COCKTAIL\nVi Brandy\nVi Cointreau\n^ Jamaica Rum\n   Lime\n\n          29\n PANAMA COCKTAIL                           PINEAPPLE COCKTAIL\n Ys Creme de Cacao                         (6 people)\n Ys Sweet Cream                               First take a glass of fresh pine\n Ys Brandy                                    apple juice. Soak the fruit from\n    Shake well and strain into cock\n    tail glass.\n                                              which this juice has been ex\n                                              tracted for two hours in two\nPARADISE COCKTAIL                             glasses of Dry White Wine.\n ] Dash Lemon Juice                           Mix these together, adding as\nY Orange Juice                                well the juice of a quarter of a\nY2 Gin                                        lemon, and pour the whole into\nY Apricot Brandy                              the shaker with 3 glasses of\n   shake well and strain into cock\n   tail glass.                               Sherry. Stand the shaker in ice,\n                                             but do not put any ice into the\nPEGU CLUB COCKTAIL                           mixture. Shake, strain, and\n 1 Dash Angostura Bitters                    serve with a small piece of pine\n 1 Dash Orange Bitters                       apple in the glass. This is a very\n 1 Teaspoon Lime Juice                        mild cocktail.\nYa Curacao\n% Dry Gin\n  Shake well, strain into cocktail\n  glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-033",
+      "order": 33,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PLAZA PICK-ME-UP COCKTAIL",
+      "name_es": "PLAZA PICK-ME-UP COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "absinthe bitters",
+          "item_es": "absinthe bitters",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino                   shake well and strain into me",
+          "item_es": "maraschino                   shake well and strain into me",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake very thoroughly and                dium-size wine glass and fill serve with a cherry.                     balance with Ayala Champagne. Shake well and strain into cock           tail glass.",
+      "method_es": "Shake very thoroughly and                dium-size wine glass and fill serve with a cherry.                     balance with Ayala Champagne. Shake well and strain into cock           tail glass.",
+      "glassware": "cock           tail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PLAZA PICK-ME-UP COCKTAIL\nPLAIN VERMOUTH COCKTAIL                      The Yolk of 1 Egg\n(6 people)                                 1 Glass Brandy\n5Y2 Glasses French Vermouth                1 Teaspoonful Castor Sugar\n  1 Teaspoonful Absinthe Bitters\n  1 Teaspoonful Maraschino                   Shake well and strain into me\n    Shake very thoroughly and                dium-size wine glass and fill\n    serve with a cherry.                     balance with Ayala Champagne.\n                                      30\n MONTMARTRE\n\n\n\n\nMONTMARTRE (Special)\nCOCKTAIL\n\n% Bacardi\nVs Sweet Cream\n   Dash of Grenadine\nPOLO COCKTAIL (No. 1)                     RACQUET CLUB COCKTAIL\n   The Juice of 14 or ^ Lime               1 Dash Orange Bitters\nYs Italian Vermouth                       Ys French Vermouth\nYs French Vermouth                        Ys Plymouth Gin\nYs Dry Gin                                   Shake well and strain into cock\n   Shake well and strain into cock           tail glass.\n   tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-034",
+      "order": 34,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RATTLESNAKE COCKTAIL",
+      "name_es": "RATTLESNAKE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apricot brandy                     1 glass rye whisky or canadian",
+          "item_es": "apricot brandy                     1 glass rye whisky or canadian",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vinegar                          rolls royce cocktail",
+          "item_es": "vinegar                          rolls royce cocktail",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "yolk of egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "worchestershire             yi french vermouth",
+          "item_es": "worchestershire             yi french vermouth",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "tomato catsup               ys dry gin",
+          "item_es": "tomato catsup               ys dry gin",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                             vz french vermouth",
+          "item_es": "dry gin                             vz french vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino                   vz cherry brandy",
+          "item_es": "maraschino                   vz cherry brandy",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock           A few dashes Absinthe Shake well and strain into cock           in it Shake well and strain into cock Shake well and strain into cock",
+      "method_es": "Shake well and strain into cock           A few dashes Absinthe Shake well and strain into cock           in it Shake well and strain into cock Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RATTLESNAKE COCKTAIL\nPOLO COCKTAIL (No. 2)                     (6 people)\nY Grapefruit Juice                         4 Glasses Rye V/hisky\nY Orange Juice                               The Whites of 2 Eggs\n% Plymouth Gin                             1 Glass Sweetened Lemon Juice\n   Shake well and strain into cock           A few dashes Absinthe\n   tail glass.                               Shake very thoroughly; serve\nPOOP-POOP-A-DOOP                             by straining it through a fine\n                                             sieve.\nCOCKTAIL\nYs Bacardi Rum                            ROCK AND RYE COCKTAIL\n 1 Dash Apricot Brandy                     1 Glass Rye Whisky or Canadian\nYs Swedish Punch                             Club\nYs Dry Gin                                   Dissolve 1 piece Rock Candy\n   Shake well and strain into cock           in it\n   tail glass.                               The Juice of 1 Lemon can be\nPRAIRIE OYSTER COCKTAIL                      added if desired.\n2 Dashes Vinegar                          ROLLS ROYCE COCKTAIL\n  The Yolk of 1 Egg                        1 Dash Benedictine\n1 Teaspoonful Worchestershire             Yi French Vermouth\n   Sauce                                  Yi Italian Vermouth\n1 Teaspoonful Tomato Catsup               Ys Dry Gin\n] Dash of Pepper on top                      Shake well and strain into cock\n  Do not break the Yolk of Egg.              tail glass.\n                                     32\nROSCOE TURNER COCKTAIL                ROYAL COCKTAIL (No. 3)\nYs Lemon Juice                        Vz Gin\n% Dry Gin                             Vz French Vermouth\n2 Dashes Maraschino                   Vz Cherry Brandy\n                                          1 Dash Maraschino\n  Shake well and strain into cock\n                                            Shake well and strain into cock\n   tail glass.\n                                             tail glass, with cherry."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-035",
+      "order": 35,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ROULETTE COCKTAIL",
+      "name_es": "ROULETTE COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROULETTE COCKTAIL",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-036",
+      "order": 36,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RUSSIAN COCKTAIL",
+      "name_es": "RUSSIAN COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well and strain into cock       Shake well, strain into cocktail",
+      "method_es": "Shake well and strain into cock       Shake well, strain into cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUSSIAN COCKTAIL\n   Swedish Punch\nVi Bacardi Rum                        Vz Creme de Cacao\nVz Calvados                           Vz Dry Gin\n                                      Vz Vodka\n   Shake well and strain into cock       Shake well, strain into cocktail\n   tail glass.                               glass, and tossitoff quickski.\nROYAL COCKTAIL (No. 1)",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-037",
+      "order": 37,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RYE WHISKY COCKTAIL",
+      "name_es": "RYE WHISKY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters            1 lump of sugar",
+          "item_es": "angostura bitters            1 lump of sugar",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao                    1 dash angostura or peychana",
+          "item_es": "curacao                    1 dash angostura or peychana",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                    shanghai cocktail",
+          "item_es": "dry gin                    shanghai cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into me             Stir well and strain into cock Stir well and strain into cock            Shake well and strain into cock Stir well and strain into cock      Whisky Use long tumbler.                Va Anisette strain into cocktail glass.          Stir well and strain into cock",
+      "method_es": "Shake well and strain into me             Stir well and strain into cock Stir well and strain into cock            Shake well and strain into cock Stir well and strain into cock      Whisky Use long tumbler.                Va Anisette strain into cocktail glass.          Stir well and strain into cock",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RYE WHISKY COCKTAIL\n   The Juice of Vz Lemon                  1 Dash Angostura Bitters\nVz Tablespoonful Powdered Sugar           4 Dashes Syrup\n I1 Glass Dry Gin                         1 Glass Rye or Canadian Club\n                                            Whisky\n   Shake well and strain into me             Stir well and strain into cock\n   dium-size glass.                          tail glass. Add 1 cherry.\nROYAL COCKTAIL (No. 2)                SANTA BARBARA COCKTAIL\nVz French Vermouth                        Vi Fresh Cream\nVs Dry Gin                                Vi Creme de Cacao\nVz Cherry Brandy                          Vz Vodka\n   Stir well and strain into cock            Shake well and strain into cock\n   tail glass.                               tail glass.\n                                     33\nSAN DIEGO COCKTAIL                  SAZERAC COCKTAIL\n 1 Dash Angostura Bitters            1 Lump of Sugar\n 3 Dashes Curacao                    1 Dash Angostura or Peychana\nVz Caperitif                            Bitters\nYz Canadian Club Whisky              1 Glass Rye or Canadian Club\n   Stir well and strain into cock      Whisky\n   tail glass. Lemon peel on top.       Stir well and strain into another\n                                        glass that has been cooled. Add\nSAN FRANCISCO BUCK                      1 dash Absinthe and squeeze\nCOCKTAIL                                lemon peel on top.\n 1 Lump of Ice\n 1 Glass Dry Gin                    SHANGHAI COCKTAIL\n   The Juice of Yz Lemon             2 Dashes Grenadine\n 1 Split of Ginger Ale              % Lemon Juice\n   Use long tumbler.                Va Anisette\n                                    Y2 Jamaica Rum\nSATAN'S WHISKERS COCKTAIL              Shake well and strain into cock\n(Straight)                             tail glass.\n   Of Italian Vermouth, French\n   Vermouth, Gin and Orange         SHERRY COCKTAIL\n   Juice, two parts of each; of      4 Dashes Orange Bitters\n   Grand Marnier 1 part; Orange      4 Dashes French Vermouth\n   Bitters a dash. Shake well and    1 Glass Sherry\n  strain into cocktail glass.          Stir well and strain into cock\n                                       tail glass\nSATAN'S WHISKERS (Curled)\nCOCKTAIL                            SIDECAR COCKTAIL\n  Substitute the same quantity of   Y Lemon Juice\n  Orange Curacao for the Grand      Yi Cointreau\n  Marnier in the preceding. ShakeY2 Brandy\n  well and strain into cocktail     Shake well and strain into cock\n  glass.                            tail glass.\n                               34'"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-038",
+      "order": 38,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PRESIDENT ROOSEVELT",
+      "name_es": "PRESIDENT ROOSEVELT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino                   yi french vermouth",
+          "item_es": "maraschino                   yi french vermouth",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters               yi italian vermouth",
+          "item_es": "orange bitters               yi italian vermouth",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into Shake well and strain into cock",
+      "method_es": "Shake well and strain into Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PRESIDENT ROOSEVELT\nCOCKTAIL\n2 Dashes Grenadine\n  Juice of Yi Orange\n1 Glass Bacardi Rum\n  Shake well and strain into\n  cocktail glass.\nSILVER COCKTAIL                       SLOE GIN COCKTAIL\n2 Dashes Maraschino                   Yi French Vermouth\n2 Dashes Orange Bitters               Yi Italian Vermouth\nVz French Vermouth                    Y2 Sloe Gin\nYz Dry Gin                                Stir well and strain into cock\n   Shake well and strain into cock\n                                          tail glass.\n   tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-039",
+      "order": 39,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SO-AND-SO COCKTAIL",
+      "name_es": "SO-AND-SO COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin                            ya dry gin",
+          "item_es": "dry gin                            ya dry gin",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cherry brandy                    shake well and strain into cock",
+          "item_es": "cherry brandy                    shake well and strain into cock",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica ginger                       1 piece lemon peel",
+          "item_es": "jamaica ginger                       1 piece lemon peel",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "rock candy syrup              2 dashes dubonnet",
+          "item_es": "rock candy syrup              2 dashes dubonnet",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginger brandy                 2 dashes absinthe",
+          "item_es": "ginger brandy                 2 dashes absinthe",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "canadian club whisky               2 dashes curacao",
+          "item_es": "canadian club whisky               2 dashes curacao",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "tequila",
+          "item_es": "tequila",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cassis                y2 canadian club whisky",
+          "item_es": "creme de cassis                y2 canadian club whisky",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice                             y2 absinthe",
+          "item_es": "ice                             y2 absinthe",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into a Add an olive and two dashes of        Shake well and strain into cock Stir well and strain into cock           1 Glass Canadian Club Whisky Shake wel I and strain into cock- Serve in highball glass filled to        Shake well and strain into cock Shake well and strain into cock      Y2 Glass Brandy",
+      "method_es": "Shake well and strain into a Add an olive and two dashes of        Shake well and strain into cock Stir well and strain into cock           1 Glass Canadian Club Whisky Shake wel I and strain into cock- Serve in highball glass filled to        Shake well and strain into cock Shake well and strain into cock      Y2 Glass Brandy",
+      "glassware": "cock           1 glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SO-AND-SO COCKTAIL\n                                      Ye Grenadine\nSINGAPORE GIN SLING                   Ye Calvados\n   Juice Yi Lemon                     Ys Italian Vermouth\nY4 Dry Gin                            Ya Dry Gin\n2 Dashes Cherry Brandy                    Shake well and strain into cock\n                                          tail glass.\n  Shake well and strain into a\n   medium glass. Fill with Roca       SOUL KISS COCKTAIL (No. 1)\n   Blanca water. Add one lump\n                                      Ye Orange Juice\n   ice.\n                                      Ye Dubonnet\n                                      Ya French Vermouth\n                                      Ya Italian Vermouth\nSCHNOZZLE DURANTE                        Shake wel I and strain into cock\nCOCKTAIL (6 people)                       tail glass.\n   In a shaker filled with cracked\n  ice place a spoonful of Curacao. SOUL KISS COCKTAIL (No. 2)\n  2 glasses of Gin, 2 glasses of Ye Orange Juice\n  Sherry,2 glasses of French Ver   Ye Dubonnet\n  mouth. Stir thoroughly with a       Ya French Vermouth\n  spoon, shake, strain, and serve.    Ya Canadian Club Whisky\n                                       1 Slice Orange\n   Add an olive and two dashes of        Shake well and strain into cock\n   Absinthe to each glass.                tail glass.\n                                     36\nSUDDEN DEATH COCKTAIL                   TEMPTATION COCKTAIL\n   Juice of Yi Lemon                        1 Piece Orange Peel\n1 Dash Jamaica Ginger                       1 Piece Lemon Peel\n1 Teaspoonful Rock Candy Syrup              2 Dashes Dubonnet\n1 Teaspoonful Ginger Brandy                 2 Dashes Absinthe\n 1 Glass Canadian Club Whisky               2 Dashes Curacao\n   Stir well and strain into cock           1 Glass Canadian Club Whisky\n   tail glass, but do not ice.\n                                              Shake wel I and strain into cock-\nTHE SUNRISE COCKTAIL                          tail glass.\n 1 Jigger Tequila\nV2 Lime, squeezed, insert peel          T.N.T. COCKTAIL\n6 Dashes Grenadine\n2 Dashes Creme de Cassis                Y2 Canadian Club Whisky\n2 Lumps Ice                             Y2 Absinthe\n  Serve in highball glass filled to        Shake well and strain into cock\n   brim with Roca Blanca water or          tail glass.\n   fizz with seltzer. Stir slightly.\nSYLVIA DEE COCKTAIL                     TOM AND JERRY COCKTAIL\n 1 Dash Absinthe\n                                         1 Egg\nV2 Brandy                               Y2 Glass Jamaica Rum\nYz Dubonnet                              ] Tablespoonful Powdered Sugar\n   Shake well and strain into cock      Y2 Glass Brandy\n   tail glass.\n                                           Beat up yolk and white of egg\nSWEET PATOTIE COCKTAIL                     separately. Then mix the yolk\nYi Orange Juice                            and white together. Use stem\nYi Cointreau\nYi Dry Gin                                 glass or china mug, adding the\n   Sh"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-040",
+      "order": 40,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WELCOME STRANGER",
+      "name_es": "WELCOME STRANGER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange bitters              ye gin •",
+          "item_es": "orange bitters              ye gin •",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe                        dash lemon juice",
+          "item_es": "absinthe                        dash lemon juice",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao                    y4 bacardi rum",
+          "item_es": "curacao                    y4 bacardi rum",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cock Shake well and strain into cock           Shake well and strain into cock Shake well and strain into cock",
+      "method_es": "Shake well and strain into cock Shake well and strain into cock           Shake well and strain into cock Shake well and strain into cock",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WELCOME STRANGER\n   Shake well and strain into cock\n                                      COCKTAIL\n   tail glass.\n                                      Ye Grenadine\n                                      Ye Lemon Juice\nVALENCIA COCKTAIL (No. 1)\n                                      Ye Orange Juice\n 4 Dashes Orange Bitters              Ye Gin •\nYs Orange Juice                       Ye Cederlund's Punch\nYs Apricot Brandy                     Ye Brandy\n   Shake well and strain into cock           Shake well and strain into cock\n   tail glass.                               tail glass.\n                                     38\nWHIP COCKTAIL                        WILD WEST COCKTAIL\n 1 Dash Absinthe                        Dash Lemon Juice\n 3 Dashes Curacao                    y4 Bacardi Rum\ny4 French Vermouth                   % East India Punch\ny4 Italian Vermouth                         Shake well and strain into cock\nya Brandy                                   tail glass.\n   Shake well and strain into cock"
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-041",
+      "order": 41,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WILL ROGERS COCKTAIL",
+      "name_es": "WILL ROGERS COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters             y2 plymouth gin",
+          "item_es": "angostura bitters             y2 plymouth gin",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "syrup                           4 dashes curacao",
+          "item_es": "syrup                           4 dashes curacao",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "canadian club whisky               shake well and strain into cock",
+          "item_es": "canadian club whisky               shake well and strain into cock",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky                     73 creme de cacao",
+          "item_es": "whisky                     73 creme de cacao",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth            ys apricot brandy",
+          "item_es": "french vermouth            ys apricot brandy",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters                 ye anisette",
+          "item_es": "angostura bitters                 ye anisette",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                          ye gomme syrup",
+          "item_es": "dry gin                          ye gomme syrup",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin                            xyz cocktail",
+          "item_es": "dry gin                            xyz cocktail",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well and strain into cock           tail glass. Pour into the shaker and shake,           Use liqueur glass and pour care adding a little nutmeg. Serve             fully. so that ingredients do not Pour into shaker half full of      73 Scotch Whisky serve.                                tail glass. Shake well and strain into a           Ye Canadian Club Whisky Shake well and strain into cock Shake well and strain into cock    Yi Lemon Juice crushed pickled onion.             Ye Bacardi Rum Shake well and strain into cock",
+      "method_es": "Stir well and strain into cock           tail glass. Pour into the shaker and shake,           Use liqueur glass and pour care adding a little nutmeg. Serve             fully. so that ingredients do not Pour into shaker half full of      73 Scotch Whisky serve.                                tail glass. Shake well and strain into a           Ye Canadian Club Whisky Shake well and strain into cock Shake well and strain into cock    Yi Lemon Juice crushed pickled onion.             Ye Bacardi Rum Shake well and strain into cock",
+      "glassware": "cock           tail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WILL ROGERS COCKTAIL\n   tail glass.\n                                      y Orange Juice\nWHISKY COCKTAIL                       Yi French Vermouth\n 1 Dash Angostura Bitters             y2 Plymouth Gin\n 4 Dashes Syrup                           4 Dashes Curacao\n 1 Glass Canadian Club Whisky               Shake well and strain into cock\n   Stir well and strain into cock           tail glass.\n   tail glass. Add a cherry.\nWHISKY SPECIAL COCKTAIL               WILSHIRE BOULEVARD\n                                      COCKTAIL\n(6 people)\n 3 Glasses Whisky                     73 Creme de Cacao\n 2 Glasses French Vermouth            ys Apricot Brandy\n^ Glass Orange Juice                  ys Sweet Cream\n  Pour into the shaker and shake,           Use liqueur glass and pour care\n  adding a little nutmeg. Serve             fully. so that ingredients do not\n  with an olive. This is a very             mix.\n\n  dry cocktail.                       WHIZ-BANG COCKTAIL\nWHISPER COCKTAIL (6 people)               2 Dashes Absinthe\n   Glasses Whisky                         2 Dashes Grenadine\n   Glasses French Vermouth             2 Dashes Orange Bitters\n   Glasses Italian Vermouth           Vs French Vermouth\n   Pour into shaker half full of      73 Scotch Whisky\n   cracked ice.    Shake well and        Shake well and strain into cock\n   serve.                                tail glass.\n                                     39\n\n\n\n\n                                                                                ./it\nYALE COCKTAIL                         ZAZARAC COCKTAIL\n 3 DashesDrange Bitters                   Ye Bacardi Rum\n 1 Dash Angostura Bitters                 Ye Anisette\n 1 Glass Dry Gin                          Ye Gomme Syrup\n   Shake well and strain into a           Ye Canadian Club Whisky\n   small glass. Add a little syphon        I Dash Angostura Bitters\n   and squeeze lemon peel on top.          1 Dash Orange Bitters\n                                          3 Dashes Absinthe\n                                             Shake well and strain into cock\n                                             tail glass. Squeeze lemon peel\nYELLOW RATTLER COCKTAIL                      on top.\n^4 Orange Juice\nYi French Vermouth\nY Italian Vermouth\nYi Dry Gin                            XYZ COCKTAIL\n   Shake well and strain into cock    Yi Lemon Juice\n   tail glass, and serve with small   Yi Cointreau\n   crushed pickled onion.             Ye Bacardi Rum\n                                         Shake well and strain into cock\n                                             tail glass."
+    },
+    {
+      "id": "1933-hollywood-cocktails-third-printing-042",
+      "order": 42,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ZANZIBAR COCKTAIL",
+      "name_es": "ZANZIBAR COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "LIGHT         Graves, and the   1904",
+      "method_es": "LIGHT         Graves, and the   1904",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ZANZIBAR COCKTAIL\n(6 people)\n   The Juice of 1Y2 Lemons\n 1 Glass Gin\n 3 Glasses French Vermouth\n 1 or 2 dessert spoonsful Sugar\n   Syrup\n   If desired, 1 spoonful Orange\n   Bitters. Shake well and serve\n   with a piece of lemon rind.\n                                     40\n     #2)\n     c\nft\n       —\n                          CHART FO R\n                    Types of wine an d . . . .\n           TYPE OF WINE IN   SOME BETTER-       GOOD\n            GASTRONOMIC         KNOWN          RECENT\n              SEQUENCE         VINTAGES         YEARS\n\n\nDRY             DRY              Chablis        1906\n               WHITE              Pouilly       1911\n             BURGUNDY           Meursault       1915\n                                 Charmes        1923\n                                                1926\n                                                1928\n\n             ALSATIAN           Riquewihr      1924\n              WINES             Traminer       1928\n\n\n\nDEMI-SEC      DEMI-SEC         Montrachet      1906\n               WHITE             Puligny       1911\n             BURGUNDY         Goutte d'Or      1916\n                                               1923\n                                               1928\n\n               LIGHT         Graves, and the   1904\n               WHITE          less liquorous   1908\n             BORDEAUX           Sauternes      1914\n                               and Barsac      1919\n                                               1923"
+    }
+  ]
+}

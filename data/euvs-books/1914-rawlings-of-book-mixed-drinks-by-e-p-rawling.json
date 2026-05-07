@@ -1,0 +1,3203 @@
+{
+  "book_id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling",
+  "metadata": {
+    "title": "Rawling's Book of Mixed Drinks",
+    "author": "Ernest P. Rawling",
+    "year": 1914,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Self-published / Guild Press (sales)",
+    "city": "San Francisco, California",
+    "edition": "First Edition (1914)",
+    "source_file": "1914 Rawling's of Book Mixed Drinks by E P Rawling.txt",
+    "notes": "'Up-to-date guide for mixing and serving all kinds of beverages... for the man who entertains at home.' Pre-Prohibición. Open con un foreword sobre la 'wail of the prohibitionists' (anticipándola por 6 años). Define la unidad 'measure' como 'a moderate-sized whiskey glass; but to the discreet or to the indiscreet it may be taken as being any old measure from a thimble to a bathtub.' Numerado 1-N (132 únicas) con name + ingredient block. Skeleton custom + parser measure/drops. ~45% (60/132) parseado por OCR variable."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Service Notes",
+      "title_es": "Prefacio + notas de servicio",
+      "content_original": "Ernest P. Rawling de San Francisco publica este manual pre-Prohibición (1914) 'for the man who entertains at home'. Open con foreword sobre la 'wail of the prohibitionists' que se oye 'all over the land', anticipando la Volstead Act de 1919. Define 'measure' como cualquier vaso desde dedal hasta bañera. Notas detalladas sobre maridaje en cenas: oysters/sopa con Riesling-Chianti blanco, Entrées/Game con Claret-Burgundy-Zinfandel, Roast con tinto cálido, Pastry con vinos dulces, Coffee con Cognac. Define el cocktail como 'most palatable of all beverages... should always be taken before meals, never after eating'.",
+      "content_es": "Ernest P. Rawling de San Francisco publica este manual pre-Prohibición (1914). Define 'measure' como cualquier vaso (de dedal a bañera). Notas detalladas sobre maridaje en cenas. Reglas: el cocktail va antes de la comida, nunca después."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Mixed Drinks (Cocktails, Fizzes, Punches, Hot Drinks, etc.)",
+      "title_es": "Bebidas mezcladas",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-001",
+      "order": 1,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Affinity Cocktail",
+      "name_es": "Affinity Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "amargo Peychaud",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large toddy glass with two or after stirring and removing the ice twist a piece of orange peel on top. Serve in the same glass.",
+      "method_es": "Use a large toddy glass with two or after stirring and removing the ice twist a piece of orange peel on top. Serve in the same glass.",
+      "glassware": "same glass",
+      "garnish": null,
+      "page_reference": "1",
+      "raw_text": "Affinity Cocktail.\n  Use a large toddy glass with two or\nthree lumps of ice. Into this put\n    three drops Peychaud bitters\n    one-third measure whiskey\n    one-third French vermouth\n    one-third Italian vermouth;\nafter stirring and removing the ice\ntwist a piece of orange peel on top.\nServe in the same glass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-002",
+      "order": 2,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Aviation Cocktail",
+      "name_es": "Aviation Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "irish whiskey",
+          "item_es": "whisky irlandés",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "grape juice",
+          "item_es": "zumo de uva",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large mixing glass of cracked shake well and strain into the cocktail",
+      "method_es": "Use a large mixing glass of cracked shake well and strain into the cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "2",
+      "raw_text": "Aviation Cocktail.\n      (St. Francis Hotel style.)\n  Use a large mixing glass of cracked\nice. Into this put\n         rawling'S mixed drinks      15\n\n    one-half measure Irish whiskey\n    one-half measure grape juice;\nshake well and strain into the cocktail\nglass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-003",
+      "order": 3,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Bamboo Cocktail",
+      "name_es": "Bamboo Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "amargo Peychaud",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into the mixing glass contain strain after stirring well; add an olive",
+      "method_es": "Pour into the mixing glass contain strain after stirring well; add an olive",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "3",
+      "raw_text": "Bamboo Cocktail.\n  Pour into the mixing glass contain\ning a few lumps of ice\n    one-half measure French vermouth\n    one-half measure sherry\n     three drops Peychaud bitters;\nstrain after stirring well; add an olive\nand a twist of lemon peel."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-004",
+      "order": 4,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Barkeeper's Brandy Cocktail",
+      "name_es": "Barkeeper's Brandy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "agua de Seltzer",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "french     ver",
+          "item_es": "french     ver",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into an old-fashioned bar glass press this well until the lemon oil has stir well, remove the ice and serve. adding to this a half-spoonful of green",
+      "method_es": "Put into an old-fashioned bar glass press this well until the lemon oil has stir well, remove the ice and serve. adding to this a half-spoonful of green",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "4",
+      "raw_text": "Barkeeper's Brandy Cocktail.\n  Put into an old-fashioned bar glass\n    one-half cube of sugar\n    two spoonsful seltzer water\n    one thick slice of lemon peel;\npress this well until the lemon oil has\nbeen extracted. Then take\n    three drops of Angostura bitters\n    two-thirds measure cognac\n    one or two lumps of ice,\nstir well, remove the ice and serve.\n16        KAVnOING'S MIXED DKINKS\n                                             ]\n              Barry Cocktail.\n     This is made like a Gibson cocktail\n(see No. 19) with\n       one-half   measure   French     ver\n         mouth\n       one-half measure dry gin;\nadding to this a half-spoonful of green\nor white creme de menthe. See that\nit is properly iced before serving.\n     When handling ice for mixed drinks\nnever make the mistake of using the\nsame ice again, unless carefully\nwashed.     Ice will retain considerable\nof the flavor of liquor, and should have\na good washing before using it for\nother mixtures."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-005",
+      "order": 5,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Bianco Cocktail",
+      "name_es": "Bianco Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fligh life ver",
+          "item_es": "fligh life ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "rye or bour",
+          "item_es": "rye or bour",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with ice, and serve in the cocktail glass after a good stirring.",
+      "method_es": "Fill the mixing glass with ice, and serve in the cocktail glass after a good stirring.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": "6",
+      "raw_text": "Bianco Cocktail.\n     Fill the mixing glass with ice, and\ntake\n\n       three drops Angostura bitters\n       one-third measure Fligh Life ver\n         mouth\n       two-thirds measure rye or Bour\n         bon whiskey;\n        BATTL-IIIG'S MIXED DRINKS     17\n\nserve in the cocktail glass after a good\nstirring."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-006",
+      "order": 6,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Black Jack Cocktail",
+      "name_es": "Black Jack Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "creme de",
+          "item_es": "creme de",
+          "amount": "0.25",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "stir until cold, and serve after strain",
+      "method_es": "stir until cold, and serve after strain",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "7",
+      "raw_text": "Black Jack Cocktail.\n  With the mixing glass filled with\ncracked ice take\n\n    one-quarter measure creme de\n       cassis\n    one-quarter kirschwasser\n    one-half measure dry gin ;\nstir until cold, and serve after strain\ning, with a hazel nut added and a piece\nof orange peel twisted over the top."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-007",
+      "order": 7,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Blackthorn Cocktail",
+      "name_es": "Blackthorn Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "kirschwasser",
+          "item_es": "kirsch",
+          "amount": "0.25",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dubonnet",
+          "item_es": "dubonnet",
+          "amount": "0.25",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "pour stir until very cold, and strain into",
+      "method_es": "pour stir until very cold, and strain into",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "8",
+      "raw_text": "Blackthorn Cocktail.\n  Into a mixing glass filled with ice\npour\n\n     one-quarter measure kirschwasser\n     one-quarter measure Dubonnet\n       wine\n     one-half measure sloe gin;\nstir until very cold, and strain into\ncocktail glass.\n 18        RAWLING'S MIXED DRINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-008",
+      "order": 8,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Brandy Cocktail",
+      "name_es": "Brandy Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "9",
+      "raw_text": "Brandy Cocktail.\n      This is made in the same manner as\na Plain Gin Cocktail (see No. 40) ex\ncept that a measure of good cognac\nbrandy is used instead of gin. Angos\ntura bitters may be used in place of\nthe Peychaud if desired.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-009",
+      "order": 9,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Bronx Cocktail",
+      "name_es": "Bronx Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french    ver",
+          "item_es": "french    ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "italian   ver",
+          "item_es": "italian   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "squeeze the juice of one-eighth of an shaker with plenty of cracked ice. Shake well and strain into the cocktail",
+      "method_es": "squeeze the juice of one-eighth of an shaker with plenty of cracked ice. Shake well and strain into the cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "10",
+      "raw_text": "Bronx Cocktail.\n  Into a small mixing glass put\n       one-third   measure   French    ver\n         mouth\n       one-third   measure   Italian   ver\n         mouth\n       one-third measure dry gin;\nsqueeze the juice of one-eighth of an\norange into this, and put all into the\nshaker with plenty of cracked ice.\nShake well and strain into the cocktail\nglass.\n          KAWLING'S MIXED DRINKS     19"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-010",
+      "order": 10,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Bronx High Life Cocktail",
+      "name_es": "Bronx High Life Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "high life ver",
+          "item_es": "high life ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "squeeze into this one-eighth of an or shaker filled with ice and shake well. serve at once.",
+      "method_es": "squeeze into this one-eighth of an or shaker filled with ice and shake well. serve at once.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "11",
+      "raw_text": "Bronx High Life Cocktail.\n  This is one of the latest and most\npleasing of all cocktails, particularly\nsuited for a dinner party.\n\n     Two-thirds measure dry gin\n     one-third measure High Life ver\n         mouth ;\n\nsqueeze into this one-eighth of an or\nange, and drop in the pulp. Have the\nshaker filled with ice and shake well.\nThen strain into the cocktail glass and\nserve at once."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-011",
+      "order": 11,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Brut Cocktail",
+      "name_es": "Brut Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "amer picon",
+          "item_es": "Amer Picon",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "french ver",
+          "item_es": "french ver",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "amargo Peychaud",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "stir until chilled and serve with an",
+      "method_es": "stir until chilled and serve with an",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "12",
+      "raw_text": "Brut Cocktail.\n  Half fill the mixing glass with ice\nand put in\n    one-third measure Amer Picon\n    two-thirds measure French ver\n         mouth\n    two dashes Peychaud bitters;\nstir until chilled and serve with an\nolive.\n20        RAWLING'S MIXED DRINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-012",
+      "order": 12,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Cassis Cocktail",
+      "name_es": "Cassis Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "creme de cassis",
+          "item_es": "crème de cassis",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon",
+          "item_es": "bourbon",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with cracked stir well, strain and serve with a",
+      "method_es": "Fill the mixing glass with cracked stir well, strain and serve with a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "13",
+      "raw_text": "Cassis Cocktail.\n     Fill the mixing glass with cracked\nice, and over this pour\n      one spoonful creme de cassis\n      one-third    measure   French   ver\n         mouth\n      two-thirds     measure     Bourbon\n         whiskey;\nstir well, strain and serve with a\ncherry."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-013",
+      "order": 13,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Champagne Cocktail",
+      "name_es": "Champagne Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "put one cube of sugar, and on this put",
+      "method_es": "put one cube of sugar, and on this put",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "14",
+      "raw_text": "Champagne Cocktail.\n  Into a champagne glass without ice\nput one cube of sugar, and on this put\nabout eight drops Feychaud bitters,\nturning the cube to have it evenly sat\nurated. Add a small piece of twisted\nlemon peel and fill the glass with\nchampagne off the ice. The effer\nvescence of the wine will dissolve the\nsugar and draw the flavor of the bitters.\n        RAWLING'S MIXED DRINKS       21",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-014",
+      "order": 14,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Chauffeur Cocktail",
+      "name_es": "Chauffeur Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whis",
+          "item_es": "bourbon whis",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "put these into a mixing glass with",
+      "method_es": "put these into a mixing glass with",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "15",
+      "raw_text": "Chauffeur Cocktail.\n    Three drops Angostura bitters\n    one dash orange bitters\n    one-third   measure   French   ver\n       mouth\n    one-third measure Bourbon whis\n      key\n    one-third measure dry gin;\nput these into a mixing glass with\ncracked ice. Stir, then strain off the\nice; serve with a hazel nut. Two or\nthree of these will make the chauffeur\nthink he owns the machine."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-015",
+      "order": 15,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Clover Leaf Cocktail",
+      "name_es": "Clover Leaf Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "shake thoroughly and serve in a wine",
+      "method_es": "shake thoroughly and serve in a wine",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "16",
+      "raw_text": "Clover Leaf Cocktail.\n   This is a Gibson cocktail with\n\"fixins.\" After filling the mixer with\ncracked ice take\n    one-third   measure   French   ver\n      mouth\n    two-thirds measure dry gin\n    three teaspoonsful grenadine syrup\n    one teaspoonful lime juice\n    white of one egg;\n22        KAWLING'S MIXED DKINKS\n\n\nshake thoroughly and serve in a wine\nglass. A sprig of young mint dropped\non top will add to the appearance."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-016",
+      "order": 16,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Coffee Cocktail",
+      "name_es": "Coffee Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "put shake well and strain into a punch",
+      "method_es": "put shake well and strain into a punch",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "17",
+      "raw_text": "Coffee Cocktail.\n     The color of this drink is responsible\nfor its name, but it is far more nutri\ntious than its better known namesake,\nthe \"cafe noir.\" Into a mixing glass\ncontaining three or four lumps of ice\nput\n       one teaspoonful bar sugar\n       one fresh egg\n       one glass of port wine\n       one pony glass of brandy;\nshake well and strain into a punch\nglass with a little grated nutmeg on\ntop.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-017",
+      "order": 17,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Dubonnet Cocktail",
+      "name_es": "Dubonnet Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dubonnet",
+          "item_es": "dubonnet",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir until cold and strain into serving",
+      "method_es": "Stir until cold and strain into serving",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "18",
+      "raw_text": "Dubonnet Cocktail.\n     Over the ice in the mixing glass pour\n       one-half measure Dubonnet\n       one-half measure dry gin;\n\n\n\n\n           I * /i I\n         BAWLING'S MIXED DBINKS        23\n\nStir until cold and strain into serving\nglass. A dash of French vermouth\nmay be added to this drink if desired."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-018",
+      "order": 18,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Gibson Cocktail",
+      "name_es": "Gibson Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "stir well, following the directions given",
+      "method_es": "stir well, following the directions given",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "19",
+      "raw_text": "Gibson Cocktail.\n  Known all over the Pacific Coast as\n\"Dry Gibson Cocktail,\" and is one of\nthe most popular of all. Into a mixing\nglass well filled with ice put\n    one-half measure dry gin\n    one-half       measure   French   ver\n         mouth ;\nstir well, following the directions given\non page 13. Then strain and serve. A\nhazel nut is generally added."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-019",
+      "order": 19,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Gibson Cocktail",
+      "name_es": "Gibson Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Use an old-fashioned toddy glass. Put in Stir until chilled, and after removing",
+      "method_es": "Use an old-fashioned toddy glass. Put in Stir until chilled, and after removing",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "20",
+      "raw_text": "Gibson Cocktail.\n          (Old-fashioned Style.)\n  Use an old-fashioned toddy glass.\nPut in\n    three or four lumps of ice\n    one-half measure dry gin\n    one-half       measure   French   ver\n         mouth ;\n24        RAWLING'S MIXED DRINKS\n\n\nStir until chilled, and after removing\nthe ice serve in the same glass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-020",
+      "order": 20,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Gibson Cocktail (Family Style)",
+      "name_es": "Gibson Cocktail (Family Style)",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "italian   ver",
+          "item_es": "italian   ver",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a mixing glass with a few lumps stir until chilled, and serve in cocktail",
+      "method_es": "Use a mixing glass with a few lumps stir until chilled, and serve in cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "21",
+      "raw_text": "Gibson Cocktail (Family Style).\n     Use a mixing glass with a few lumps\nof ice:\n\n       one-half measure dry gin\n       one-half    measure   Italian   ver\n         mouth;\nstir until chilled, and serve in cocktail\nglass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-021",
+      "order": 21,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hongkong Cocktail",
+      "name_es": "Hongkong Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "french    ver",
+          "item_es": "french    ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "kirschwasser",
+          "item_es": "kirsch",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "shake well and serve in cocktail glass",
+      "method_es": "shake well and serve in cocktail glass",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "22",
+      "raw_text": "Hongkong Cocktail.\n     Into a mixer of cracked ice put\n       one toddyspoon bar sugar\n       one toddyspoon lime juice\n       one-third measure dry gin\n       one-third   measure   French    ver\n         mouth\n       one-third measure orange juice\n       five drops kirschwasser;\nshake well and serve in cocktail glass\nafter straining off the ice.\n           RAWIjING'S mixed drinks   25"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-022",
+      "order": 22,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hongkong Cocktail",
+      "name_es": "Hongkong Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "23",
+      "raw_text": "Hongkong Cocktail.\n          (For the Home Party.)\n   Take a sufficient number of firm\noranges or grape fruit, and after cut\nting in half, scoop them nearly clean.\nPlace upright in dishes of cracked ice\nand pour into each a Hongkong cock\ntail as above. Serve with straws,\nwhich should be laid in groves cut in\nthe rim of the fruit.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-023",
+      "order": 23,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Honolulu Cafe Cocktail",
+      "name_es": "Honolulu Cafe Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pine nectar or",
+          "item_es": "pine nectar or",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "shake well and strain into a highball",
+      "method_es": "shake well and strain into a highball",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "24",
+      "raw_text": "Honolulu Cafe Cocktail.\n  Into the mixing glass two-thirds full\nof cracked ice put\n    one-third measure Pine nectar or\n         pineapple juice\n    one-third French vermouth\n    one-third dry gin\n    one measure fresh cream;\nshake well and strain into a highball\nglass.\n20        RAWLING'S MIXED DBINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-024",
+      "order": 24,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Jersey City Cocktail",
+      "name_es": "Jersey City Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into a mixer full of cracked ice stir, strain and serve with a bit of",
+      "method_es": "Put into a mixer full of cracked ice stir, strain and serve with a bit of",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "25",
+      "raw_text": "Jersey City Cocktail.\n     Put into a mixer full of cracked ice\n       one toddyspoon sugar\n       three drops Angostura bitters\n       one toddyspoon of Pine nectar\n       one measure of apple cider;          ■\nstir, strain and serve with a bit of\nlemon peel twisted on top."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-025",
+      "order": 25,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Jones' Cocktail",
+      "name_es": "Jones' Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "amargo Peychaud",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cherry cordial",
+          "item_es": "cherry cordial",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "italian       ver",
+          "item_es": "italian       ver",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Put a few lumps of ice in the mixer stir until cold, strain and serve.",
+      "method_es": "Put a few lumps of ice in the mixer stir until cold, strain and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "26",
+      "raw_text": "Jones' Cocktail.\n     Put a few lumps of ice in the mixer\nand\n\n       three drops Peychaud bitters\n       three drops cherry cordial\n       one-half measure sloe gin\n       one-half measure Italian       ver\n         mouth ;\nstir until cold, strain and serve."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-026",
+      "order": 26,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Manhattan Cocktail",
+      "name_es": "Manhattan Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon or",
+          "item_es": "bourbon or",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with small stir thoroughly, working the spoon as",
+      "method_es": "Fill the mixing glass with small stir thoroughly, working the spoon as",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "27",
+      "raw_text": "Manhattan Cocktail.\n     Fill the mixing glass with small\nlumps of ice. Over this put\n           BAWLr^TG'S MIXED DRINKS       27\n\n\n     one-third      measure   French   ver\n          mouth\n     two-thirds measure Bourbon or\n          rye whiskey\n     three drops Angostura bitters\n     two dashes orange bitters;\n stir thoroughly, working the spoon as\n directed. Strain into a cocktail glass\n and add a cherry in Maraschino.\n   This drink may be served dry or\nsweet, by using either French or\n Italian vermouth, the latter being\nsweet. Great care must be used in the\nhandling of bitters, as only a few drops\nare required to impart the desired\nflavor."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-027",
+      "order": 27,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Mary Jane Cocktail",
+      "name_es": "Mary Jane Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "shake well.       Strain into the cocktail",
+      "method_es": "shake well.       Strain into the cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "28",
+      "raw_text": "Mary Jane Cocktail.\n  Into the mixing glass with ice put\n    one-third measure dry gin\n    one-third French Vermouth\n    one-third Dubonnet\n    juice of one-eighth of an orange;\nthen drop in the piece of orange and\nshake well.       Strain into the cocktail\nglass.\n28        BAWLING'S MIXED DRINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-028",
+      "order": 28,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Martini Cocktail",
+      "name_es": "Martini Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura or pey-",
+          "item_es": "angostura or pey-",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french ver",
+          "item_es": "french ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "adds a delightful aroma to any drink,",
+      "method_es": "adds a delightful aroma to any drink,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "29",
+      "raw_text": "Martini Cocktail.\n\n  When mixing a Martini cocktail al\nways ask if a \"dry\" or \"sweet\" is pre\nferred.     Fill the mixing glass with\nlumps of ice and put on this\n      three drops of Angostura or Pey-\n        chaud bitters\n      two dashes of orange bitters\n      one-third measure French ver\n          mouth\n      two-thirds measure dry gin.\n     Work quickly with the spoon as di\nrected, and after straining into the\nserving glass twist a bit of lemon peel\nover the top. This oil of lemon spray\nadds a delightful aroma to any drink,\neither straight or mixed, and is almost\nimperceptible to the taste. A French\nhazel nut or an olive may be added if\ndesired.\n       BAWLING'S MIXED DRINKS        29"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-029",
+      "order": 29,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Moose Cocktail",
+      "name_es": "Moose Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "abricotine ^",
+          "item_es": "abricotine ^",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with cracked",
+      "method_es": "Fill the mixing glass with cracked",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "30",
+      "raw_text": "Moose Cocktail.\n   Fill the mixing glass with cracked\n ice and take\n\n     one measure Bourbon whiskey\n     three dashes Abricotine ^\n     two dashes Angostura bitters,\n' stir until very cold and strain into the\n  cocktail glass. Then drop in a small\n piece of pineapple."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-030",
+      "order": 30,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Morning Glory CocktaU",
+      "name_es": "Morning Glory CocktaU",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curacoa",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "stir thoroughly and strain into a large",
+      "method_es": "stir thoroughly and strain into a large",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "31",
+      "raw_text": "Morning Glory CocktaU.\n    With plenty of cracked ice in the\n  mixing glass put in\n      three dashes of gum syrup\n      two dashes Curacoa\n      two drops Angostura bitters\n      one dash of Anisette\n      one pony-glass of brandy\n       one pony-glass of whiskey\n       small piece of lemon peel;\n  stir thoroughly and strain into a large\n  fizz glass. Fill up with siphon water.\n 30         RAWLING'S MIXED DRINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-031",
+      "order": 31,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Old-fashioned Honolulu Cocktail",
+      "name_es": "Old-fashioned Honolulu Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curacoa",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "put in Shake, strain and serve in the cocktail",
+      "method_es": "put in Shake, strain and serve in the cocktail",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "32",
+      "raw_text": "Old-fashioned Honolulu Cocktail.\n      With cracked ice in the mixing glass\n put in\n\n       two dashes Angostura bitters\n       two dashes Curacoa\n       one teaspoonful sugar\n       one measure dry gin\n       one teaspoonful lemon juice\n       one teaspoonful orange juice.\nShake, strain and serve in the cocktail\nglass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-032",
+      "order": 32,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Old-fashioned Whiskey Cocktail",
+      "name_es": "Old-fashioned Whiskey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peychaud or angos->",
+          "item_es": "peychaud or angos->",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whis",
+          "item_es": "bourbon whis",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "press this well until the dissolved sugar stir a while and serve without strain",
+      "method_es": "press this well until the dissolved sugar stir a while and serve without strain",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "33",
+      "raw_text": "Old-fashioned Whiskey Cocktail.\n  Into an old-fashioned bar glass put\n      one-quarter of a cube of sugar\n      two teaspoonsful of siphon water\n      two slices of twisted lemon peel;\npress this well until the dissolved sugar\nhas been thoroughly flavored with the\nlemon oil. Then put in\n      three drops Peychaud or Angos->\n         tura bitters\n          BAWLING'S MIXED DRINKS    31\n\n       two-thirds measure Bourbon whis\n         key\n       one piece of ice;\nstir a while and serve without strain\ning."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-033",
+      "order": 33,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Old Tom Gin Cocktail",
+      "name_es": "Old Tom Gin Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "added to this drink, but anisette may",
+      "method_es": "added to this drink, but anisette may",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "34",
+      "raw_text": "Old Tom Gin Cocktail.\n  Made the same as a plain Gin Cock\ntail (No. 40) substituting Old Tom gin\nfor the Plymouth gin.\n  Before the sale of absinthe was pro\nhibited a few drops were generally\nadded to this drink, but anisette may\nnow be used by those who do not like\nthe flavor of bitters.\n\n\n\n                     35\n\n        Old Tom Cordial Cocktail.\n  Made the same as an Old Tom Gin\nCocktail, substituting Old Tom Cordial\nGin and omitting the gum syrup, as this\ngin is sweet enough.\n32      RAWLING'S MIXED DRINKS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-034",
+      "order": 34,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Olivette Cocktail",
+      "name_es": "Olivette Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass filled with Strain into the cocktail glass after stirring and twist a bit of lemon peel",
+      "method_es": "Put into the mixing glass filled with Strain into the cocktail glass after stirring and twist a bit of lemon peel",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "36",
+      "raw_text": "Olivette Cocktail.\n  Put into the mixing glass filled with\nlump ice\n     two dashes of gum syrup\n     three dashes orange bitters\n     two dashes of anisette\n     one measure Plymouth gin.\nStrain into the cocktail glass after\nstirring and twist a bit of lemon peel\non top. Serve with an olive."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-035",
+      "order": 35,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Orange Blossom Cocktail",
+      "name_es": "Orange Blossom Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "strained orange",
+          "item_es": "strained orange",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin;             ^",
+          "item_es": "dry gin;             ^",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "shake until cold and strain into the",
+      "method_es": "shake until cold and strain into the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "37",
+      "raw_text": "Orange Blossom Cocktail.\n  This is a drink much in vogue at\nthe present time and is a splendid in\ntroduction to a good dinner. For the\nhome affair it should be mixed just be\nfore the guests are seated, as it loses\nits flavor if not well chilled. Into the\nmixing glass put\n     one toddyspoonful bar sugar\n     one-half measure strained orange\n      juice                                _\n     one-half measure dry gin;             ^\n        RAWLING'S mixed drinks          33\n\n\nshake until cold and strain into the\ncocktail glass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-036",
+      "order": 36,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Oyster Cocktail",
+      "name_es": "Oyster Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tomato catsup",
+          "item_es": "tomato catsup",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "38",
+      "raw_text": "Oyster Cocktail.\n  Into a large mixing glass put a few\nsmall chips of ice and\n     six to eight small fresh oysters\n   ■ one toddyspoonful lemon juice\n    one toddyspoonful Worcestershire\n      sauce\n\n    one measure oyster juice\n    one-half measure tomato catsup;\n\nsprinkle with a little paprika and stir\nuntil the ice is dissolved. These pro\nportions may be varied to suit indi\nvidual tastes, but will be found satis\nfactory to most palates, as too much\npungency is not favored. Heinz' Man-\ndalay sauce may be substituted for the\nWorcestershire, or a little white wine\nmay be added. Serve in a low punch\nglass and not in a long-stemmed glass,\nas some oyster houses do.\n  A well-made oyster cocktail is an ex\ncellent appetizer and should be served\n34        KAWLING'S MIXED DRINKS\n\nquite cold, immediately following the\nliquor cocktail before dinner. If con\nvenient pack the mixing dish in ice for\na few minutes and omit ice from the\nmixture."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-037",
+      "order": 37,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Pineapple Syrup Cocktail",
+      "name_es": "Pineapple Syrup Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "39",
+      "raw_text": "Pineapple Syrup Cocktail.\n     The flavor of pineapple in a cock\ntail is much in favor, and any whiskey\ncocktail can be so flavored. A small\nslice of the fruit should be added be\nfore serving.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-038",
+      "order": 38,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Plain Gin Cocktail",
+      "name_es": "Plain Gin Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "amargo Peychaud",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put several lumps of ice in the",
+      "method_es": "Put several lumps of ice in the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "40",
+      "raw_text": "Plain Gin Cocktail.\n     Put several lumps of ice in the\nmixer, and\n\n      one toddyspoonful gum syrup\n      three dashes orange bitters\n      three drops Peychaud bitters\n      one measure Plymouth gin\n    small piece of twisted lemon peel;\nafter a thorough stirring strain into the\ncocktail glass. If preferred dry omit\nthe gum syrup.\n          rAWLING'S mixed drinks       35"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-039",
+      "order": 39,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Rob Roy Cocktail",
+      "name_es": "Rob Roy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whis",
+          "item_es": "scotch whis",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with cracked",
+      "method_es": "Fill the mixing glass with cracked",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "41",
+      "raw_text": "Rob Roy Cocktail.\n  Fill the mixing glass with cracked\nice, and take\n\n       one-third   measure   French   ver\n         mouth\n       two-thirds measure Scotch whis\n         key\n       two dashes orange bitters.\nChill well with the spoon and strain\ninto serving g'^ss- Add a French hazel\nnut.\n\n                     42\n\n                Rum Cocktail.\n\n  This is made in the same manner as\na Whiskey Cocktail, substituting Ja\nmaica rum for the whiskey."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-040",
+      "order": 40,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Russian Cocktail",
+      "name_es": "Russian Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass of cognac",
+          "item_es": "glass of cognac",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "glass kummel",
+          "item_es": "glass kummel",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with bar sugar, then turn fill up the glass with champagne that",
+      "method_es": "Fill the glass with bar sugar, then turn fill up the glass with champagne that",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "43",
+      "raw_text": "Russian Cocktail.\n\n  Cut a lemon in quarters lengthways.\nWith one of these pieces on a fruit\nfork rub the inside of a punch glass\nuntil it has been thoroughly moistened.\n36      RAWLING'S MIXED DRINKS\n\nFill the glass with bar sugar, then turn\nupside down, removing the sugar and\nleaving the inside of the glass nicely\nfrosted. Pour into this\n\n     one-half pony glass of cognac\n     one-half pony glass kummel;\nfill up the glass with champagne that\nhas been well chilled. This is the cor\nrect method of making this drink."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-041",
+      "order": 41,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Saratoga Cocktail",
+      "name_es": "Saratoga Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "44",
+      "raw_text": "Saratoga Cocktail.\n  Into the mixing glass containing\nlumps of ice put\n     four drops Angostura bitters\n     one pony of brandy\n     one pony of whiskey\n     one pony of French vermouth;\nafter a good stirring strain into a small\nclaret glass, with a quarter slice of\nlemon added. Italian vermouth may\nbe 'used in place of the French if a\nsweet Saratoga is desired.\n        BAWLING'S MIXED DKINKS        37"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-042",
+      "order": 42,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Scotch Heather Cocktail",
+      "name_es": "Scotch Heather Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french ver",
+          "item_es": "french ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whis",
+          "item_es": "scotch whis",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with cracked Stir until cold and strain into a hollow- Pour grenadine syrup along the edge putting in the grenadine syrup after",
+      "method_es": "Fill the mixing glass with cracked Stir until cold and strain into a hollow- Pour grenadine syrup along the edge putting in the grenadine syrup after",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "45",
+      "raw_text": "Scotch Heather Cocktail.\n  Fill the mixing glass with cracked\nice, then\n    three drops Angostura bitters\n    three dashes orange bitters\n    one-third measure French ver\n       mouth\n    two-thirds measure Scotch whis\n       key\n     piece of twisted orange peel.\nStir until cold and strain into a hollow-\nstemmed champagne glass, which\nshould be about three-quarters full.\nPour grenadine syrup along the edge\nof the glass until the stem is filled. By\nputting in the grenadine syrup after\nthe glass is partly filled the glass will\nbe more easily cleaned."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-043",
+      "order": 43,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Soda Cocktail",
+      "name_es": "Soda Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into an old-fashioned toddy glass",
+      "method_es": "Put into an old-fashioned toddy glass",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "46",
+      "raw_text": "Soda Cocktail.\n  Put into an old-fashioned toddy glass\n     one lump of ice\n     three drops Angostura bitters\n     one-half bottle Napa soda;\n ^        KAWLING'S mixed drinks\n ^fter stirring a while drop in a heap\n ing spoonful of bar sugar, and drink at\n once."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-044",
+      "order": 44,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Sunshine Cocktail",
+      "name_es": "Sunshine Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french    ver",
+          "item_es": "french    ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "italian   ver",
+          "item_es": "italian   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "stir until very cold, and after straining twist a piece of orange peel on top.",
+      "method_es": "stir until very cold, and after straining twist a piece of orange peel on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "47",
+      "raw_text": "Sunshine Cocktail.\n   Into a mixing glass full of cracked\nice put\n     one-third    measure   French    ver\n         mouth\n     one-third measure      Italian   ver\n         mouth\n     one-third measure dry gin;\nstir until very cold, and after straining\ntwist a piece of orange peel on top."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-045",
+      "order": 45,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Swanton Cocktail",
+      "name_es": "Swanton Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french   ver",
+          "item_es": "french   ver",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whis",
+          "item_es": "bourbon whis",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass press the mint leaves with a heavy stir well and strain into a rickey glass",
+      "method_es": "Put into the mixing glass press the mint leaves with a heavy stir well and strain into a rickey glass",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "48",
+      "raw_text": "Swanton Cocktail.\n    (The favorite at Santa Cruz.)\n  Put into the mixing glass\n     two sprigs of young mint\n     one toddyspoonful bar sugar\n     juice of one-quarter lemon\n._ one toddyspoonful siphon water;\npress the mint leaves with a heavy\nspoon, then add\n         RAWLINGr'S MIXED DRINKS     39\n\n    one-third   measure    French   ver\n        mouth\n    two-thirds measure Bourbon whis\n        key;\nstir well and strain into a rickey glass\npj-^YjQugly filled with cracked ice. On\ntop of the ice place a Maraschino\ncherry with a sprig of the mint stuck\ninto it. Serve with straws."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-046",
+      "order": 46,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Vermouth Cocktail",
+      "name_es": "Vermouth Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura or pey-",
+          "item_es": "angostura or pey-",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "stir until cold, and serve with a hazel served instead of a nut.",
+      "method_es": "stir until cold, and serve with a hazel served instead of a nut.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "49",
+      "raw_text": "Vermouth Cocktail.\n\n  Into the mixing glass with ice put\n       three drops Angostura or Pey-\n        chaud bitters\n       one measure French vermouth;\nstir until cold, and serve with a hazel\nnut.\n\n  Vermouth is one of the mildest of\nliquors, containing only about 20 per\ncent alcohol, and may be served to\nthose who like only a very mild stimu\nlant. If preferred sweet, use the\nItalian vermouth, when a cherry is\nserved instead of a nut.\n40        RAWLING'S mixkd drinks"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-047",
+      "order": 47,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Whiskey Cocktail",
+      "name_es": "Whiskey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "amargo Peychaud",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the mixing glass with ice, and pour in stir until chilled, and strain into serv",
+      "method_es": "Fill the mixing glass with ice, and pour in stir until chilled, and strain into serv",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "50",
+      "raw_text": "Whiskey Cocktail.\n     Fill the mixing glass with ice, and\npour in\n       one toddyspoonful gum syrup\n       three dashes orange bitters\n       three drops Peychaud bitters\n       one measure Bourbon or rye whis\n         key\n       piece of twisted lemon peel;\nstir until chilled, and strain into serv\ning glass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-048",
+      "order": 48,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "White Rose Cocktail",
+      "name_es": "White Rose Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "0.25",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "pure cream",
+          "item_es": "pure cream",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "strain into the cocktail glass after a",
+      "method_es": "strain into the cocktail glass after a",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": "51",
+      "raw_text": "White Rose Cocktail.\n  Half fill the     mixing glass      with\ncracked ice, and in the following order\ntake\n\n       one-half measure dry gin\n      one-quarter measure anisette\n       white of one egg\n      one spoonful pure cream;\nstrain into the cocktail glass after a\nthorough shaking.\n          BAWLING'S MIXED DBINK8      41"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-049",
+      "order": 49,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Zaza Cocktail",
+      "name_es": "Zaza Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dubonnet",
+          "item_es": "dubonnet",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "dry sherry",
+          "item_es": "dry sherry",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "stir well, strain and serve with a hazel press the button and order a Gin Fizz",
+      "method_es": "stir well, strain and serve with a hazel press the button and order a Gin Fizz",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "52",
+      "raw_text": "Zaza Cocktail.\n\n  Over the ice in the mixer pour\n       one-half measure Dubonnet\n       one-half measure dry sherry;\nstir well, strain and serve with a hazel\nnut.\n42        KAWLING'S MIXED DKINK8\n\n\n\n\n      fizzes and coolers.\n\n  While the cocktail is unquestionably\nthe most popular drink on the Pacific\nCoast today, the next in favor is surely\nthe Fizz—the long drink par excel\nlence. At any time or in any place\nwhere the tongue and throat are\nparched and dry; when the spirits are\njaded and the body is weary; after a\nlong automobile trip on hot and dusty\ncountry roads; it is then that the Gin\nFizz comes like a cooling breeze from\nthe sea, bringing new life and the zest\nand joy of living.\n     And in the \"morning after the night\nbefore,\" when the whole world seems\ngray and lonesome, and every nerve\nand fibre of the body is throbbing a\ncomplaint against the indiscretion, just\npress the button and order a Gin Fizz\n—\"not too sweet, please!\" It comes.\nOh, shades of the green oasis on the\nsandy desert of life!\n\n\n\n\n                                       i\n       BAWLING'S MIXED DRINKS         43"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-050",
+      "order": 50,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass half filled shake thoroughly until the mixture has",
+      "method_es": "Put into the mixing glass half filled shake thoroughly until the mixture has",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "53",
+      "raw_text": "Gin Fizz.\n\n  Put into the mixing glass half filled\nwith cracked ice\n\n    one spoonful bar sugar\n    juice of one lemon\n    one measure Plymouth gin;\nshake thoroughly until the mixture has\nbeen well chilled, then strain into a\nlong-stemmed punch glass and fill with\nsiphon water off the ice. Serve at once\nwhile effervescing, or the flavor will be\nimpaired. If served at a table the\nsiphon bottle should be brought with\nthe drink. A small piece of orange\npeel dropped in before shaking will add\nto the flavor."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-051",
+      "order": 51,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Cream Fizz",
+      "name_es": "Cream Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pure cream",
+          "item_es": "pure cream",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "shake well and strain into a punch",
+      "method_es": "shake well and strain into a punch",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "54",
+      "raw_text": "Cream Fizz.\n  With plenty of ice in the mixing\nglass put\n    one large spoonful of bar sugar\n    juice of one lemon\n    one measure dry gin\n    one-half measure pure cream;\n^        BAWLING'S MIXED DBINKS\n\nshake well and strain into a punch\nglass. Fill with siphon water from the\nice when ready to serve."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-052",
+      "order": 52,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Fussy Fizz",
+      "name_es": "Fussy Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pure cream",
+          "item_es": "pure cream",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "creme       de",
+          "item_es": "creme       de",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass shake until cold and pour into a long",
+      "method_es": "Put into the mixing glass shake until cold and pour into a long",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "55",
+      "raw_text": "Fussy Fizz.\n    Put into the mixing glass\n      three or four lumps of ice\n      one-third measure pure cream\n      two-thirds measure creme       de\n        menthe, white or green;\nshake until cold and pour into a long\nglass. Fill with siphon."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-053",
+      "order": 53,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Ginger Ale Fizz",
+      "name_es": "Ginger Ale Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "shake thoroughly and strain into a long putting on the cover and cap hold the",
+      "method_es": "shake thoroughly and strain into a long putting on the cover and cap hold the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "56",
+      "raw_text": "Ginger Ale Fizz.\n  Half fill the mixing glass with\ncracked ice. Then\n     one spoonful bar sugar\n     one lemon squeezed and dropped\n       in\n     one measure Bourbon whiskey;\nshake thoroughly and strain into a long\nglass. Have a bottle of ginger ale on\n          RAWLING'S MIXED DRINKS        45\n\n\nthe ice; fill the glass with this. Drink\nwhile eflfervescing.\n  The handiest shaker for the private\nhome is now made of plated metal in\nthree parts: the body of the shaker, the\ncover (with strainer at the neck) and\nthe cap. Put in plenty of ice (not\ncracked too small), and measure the\ningredients directly into this. After\nputting on the cover and cap hold the\ntop firmly while shaking, with one fin\nger over the small vent hole near the\ncap."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-054",
+      "order": 54,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Golden Fizz",
+      "name_es": "Golden Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Add the yolk of an egg to the in",
+      "method_es": "Add the yolk of an egg to the in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "57",
+      "raw_text": "Golden Fizz.\n\n  Add the yolk of an egg to the in\ngredients of a plain Gin Fizz (No. 53)\nbefore shaking. A creamy mixture\nwill not result if the shaking is slighted.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-055",
+      "order": 55,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Morning Bracer Fizz",
+      "name_es": "Morning Bracer Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "shake, strain into punch glass, and fill",
+      "method_es": "shake, strain into punch glass, and fill",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "58",
+      "raw_text": "Morning Bracer Fizz.\n  Into the mixing glass with ice put\n       one toddyspoonful bar sugar\n    juice of one lemon\n        RAWLING'S MIXE0 DRINKS\n\n\n    two dashes anisette\n    white of one egg\n    one measure Plymouth gin;\nshake, strain into punch glass, and fill\nwith siphon water."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-056",
+      "order": 56,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "New Orleans Fizz",
+      "name_es": "New Orleans Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange water",
+          "item_es": "orange water",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass with",
+      "method_es": "Put into the mixing glass with",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "59",
+      "raw_text": "New Orleans Fizz.\n\n  This is a favorite drink in the South,\nand is very nourishing as well as in\nvigorating.\n  Put into the mixing glass with\ncracked ice\n    one toddyspoonful of sugar\n    juice of one lemon\n    one measure dry gin\n    one fresh egg\n    four drops orange water\n    one measure pure cream.\nA thorough shaking is necessary. Pour\ninto the fizz glass, and fill with siphon\nwater, previously cooled.\n       RAWI^ING'S MIXED DRINKS       47\n\n\n\n                  60\n         Old Tom Gin Fizz.\n\n  Those who prefer the flavor of Old\nTom gin may follow the recipe for a\nplain gin fizz (No. 53) substituting\ntheir favorite brand.\n\n\n\n\n                  61\n              Royal Fizz.\n  This is another name for a New\nOrleans fizz, but the orange water and\ncream are omitted."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-057",
+      "order": 57,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Silver Fizz",
+      "name_es": "Silver Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "62",
+      "raw_text": "Silver Fizz.\n\n  Make a plain gin fizz, but before\nshaking drop in the white of an egg.\nThe easiest way to do this is to make\na small hole in one end of the egg, and\nthe yolk will remain in the shell.\n                 -Jfll'\n\n\n\n\n<8        RAWI.IN6'S MIXKD DRIWKS       |",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-058",
+      "order": 58,
+      "section_title": "Mixed Drinks",
+      "category": "fizz",
+      "name_original": "Sloe Gin Fizz",
+      "name_es": "Sloe Gin Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "63",
+      "raw_text": "Sloe Gin Fizz.\n     Sloe gin has come into much favor\nof late, especially with people who do\nnot like the taste of dry gin, or who\nprefer a milder stimulant.       It has a\nfruity flavor, being made from sloe ber\nries (a species of wild plum) and con\ntains only about 28 per cent alcohol.\nFollow the same directions as for a\nplain gin fizz, but use a little less sugar.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-059",
+      "order": 59,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Elks' Delight",
+      "name_es": "Elks' Delight",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "add enough water to fill a long glass",
+      "method_es": "add enough water to fill a long glass",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "64",
+      "raw_text": "Elks' Delight.\n     Into a mixing glass half filled with\ncracked ice put\n      juice of half an orange\n      juice of half a lemon\n      one measure grape juice\n      two teaspoonsful bar sugar;\nadd enough water to fill a long glass\nand shake well before straining. Deco\nrate with slices of fruit.\n       RAWIRING'S MIXED DRINKS         49",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-060",
+      "order": 60,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Lemonade",
+      "name_es": "Lemonade",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass Stir well and pour into a large tum",
+      "method_es": "Put into the mixing glass Stir well and pour into a large tum",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "65",
+      "raw_text": "Lemonade.\n\n  Put into the mixing glass\n    one spoonful bar sugar\n    juice of one lemon\n    two or three lumps of ice.\nStir well and pour into a large tum\nbler; then fill with ice water. The ad\ndition of sliced orange or pineapple will\nmake this drink more inviting."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-061",
+      "order": 61,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Lemonade With a Stick",
+      "name_es": "Lemonade With a Stick",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "66",
+      "raw_text": "Lemonade With a Stick.\n\n  A lemonade with enough whiskey to\njustify the name—anything from a\ntoothpick to a telegraph pole.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-062",
+      "order": 62,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Long Beach Cooler",
+      "name_es": "Long Beach Cooler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use a long-stemmed glass.       Place",
+      "method_es": "Use a long-stemmed glass.       Place",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "67",
+      "raw_text": "Long Beach Cooler.\n  Use a long-stemmed glass.       Place\ntwo or three sprigs of young mint in\nthe bottom and fill glass with cracked\nice. Over this put about four drops\n60       BAWLING'S MIXED DRINKS\n\nAngostura bitters and fill with ginger\nale. Twist a piece of lemon peel on\ntop, and serve with straws.\n\n\n\n\n                  68\n          Napa Soda Lfemonade.\n     Made like a plain lemonade (No.\n65) but the fruit is omitted. This is\na splendid drink in the morning when\nfeeling out of sorts.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-063",
+      "order": 63,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Orangeade",
+      "name_es": "Orangeade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Drop a few pieces of ice into the after stirring pour into a lemonade",
+      "method_es": "Drop a few pieces of ice into the after stirring pour into a lemonade",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "69",
+      "raw_text": "Orangeade.\n     Drop a few pieces of ice into the\nmixing glass, and\n      one measure orange juice\n      one tablespoonful bar sugar\n      juice of one lemon;\nafter stirring pour into a lemonade\nglass and fill with siphon water.\n         RAWLING'S MIXED DRINKS         61",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-064",
+      "order": 64,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Orgeat Lemonade",
+      "name_es": "Orgeat Lemonade",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into the mixing glass stir and pour into the tumbler.      Fill",
+      "method_es": "Put into the mixing glass stir and pour into the tumbler.      Fill",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": "70",
+      "raw_text": "Orgeat Lemonade.\n  Put into the mixing glass\n    two or three lumps of ice\n    juice of one lemon\n    one spoonful bar sugar .\n   . three spoonsful of orgeat syrup;\nstir and pour into the tumbler.      Fill\nwith siphon water."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-065",
+      "order": 65,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Port Wine Lemonade",
+      "name_es": "Port Wine Lemonade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "addition of a half-measure of port wine stirred in just before serving. In the",
+      "method_es": "addition of a half-measure of port wine stirred in just before serving. In the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "71",
+      "raw_text": "Port Wine Lemonade.\n  This is a plain lemonade with the\naddition of a half-measure of port wine\nstirred in just before serving. In the\nsame manner any wine may be used,\nthe dry wines, such as claret, chablis,\nhock or reisling, requiring a little more\nsugar, but are more refreshing.\n52        RAWLING'S MIXED DIITNKS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-066",
+      "order": 66,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Venice Cooler",
+      "name_es": "Venice Cooler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "peach brandy",
+          "item_es": "peach brandy",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "shake well and strain into the prepared Put a few tender sprigs of mint in Fill the glass with fine cracked ice, and stir carefully, taking care not to crush",
+      "method_es": "shake well and strain into the prepared Put a few tender sprigs of mint in Fill the glass with fine cracked ice, and stir carefully, taking care not to crush",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "72",
+      "raw_text": "Venice Cooler.\n     First fill a long-stemmed glass with\ncracked ice.     Then put in a mixing\nglass\n       One-half spoonful bar sugar .\n       juice of one lemon\n       one egg\n       one measure California brandy;\nshake well and strain into the prepared\nglass of ice. Fill with ginger ale; deco\nrate with mint leaves, and serve with\nstraws.\n\n\n                     73\n                 Mint Julep.\n  This celebrated old southern re\nfresher is seldom heard of now except\nin stories of the days \"befoh the war.\nHowever, there still remains some few\nold-fashioned gardens where the pun\ngent mint is kept green as the memory\n of the. julep,; and a gay nose may yet\n be found as testimony to the efficacy\n         BAWLING'S MIXED DBINKS         03\n\nof this famous beverage. The follow\ning recipe is the correct concoction for\na mint julep in the southern style:\n  Put a few tender sprigs of mint in\nthe bottom of a large tumbler, and over\nthis\n\n       one teaspoonful bar sugar\n       one-half measure cognac\n       one-half measure peach brandy.\nFill the glass with fine cracked ice, and\nstir carefully, taking care not to crush\nthe mint. Into the crevices of the ice\nplace two or three shoots of young\nmint. Bring this out on the southern\nporch, find the largest and softest chair\nin the place, close your eyes slowly—\nand drink."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-067",
+      "order": 67,
+      "section_title": "Mixed Drinks",
+      "category": "julep",
+      "name_original": "Mint Julep",
+      "name_es": "Mint Julep",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "siphon water",
+          "item_es": "siphon water",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "press the flavor from the mint with ^ pour in",
+      "method_es": "press the flavor from the mint with ^ pour in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "74",
+      "raw_text": "Mint Julep.\n             (California Style.)\n   Into a large glass put\n       two or three tender sprigs of mint\n       one teaspoonful bar sugar\n       one-half measure siphon water;\n          BAWLING'e MIXED DRINKS\n\npress the flavor from the mint with ^\n                                    a\nspoon while dissolving the sugar. Fill\nthe glass with fine cracked ice, and\npour in\n\n    one measure good brandy\n    one dash Jamaica rum.\nDecorate with mint leaves, slices of\nfruit and cherries. Serve with straws.\n\n\n\n\n                                         i\n           - .... ■■ ->   -   .\n        RAWLING'S MIXED DRINKS        55\n\n\n\n\n              PUNCHES.\n\n\n  From time immemorial the punch\nbowl has been the symbol of good\ncheer. For the evening affair it will\nalways be the most satisfactory method\nof dispensing hospitality. The host is\nrelieved from attendance at the side\nboard, and the ample bowl, either con\nspicuously displayed or in a quiet cor\nner just beyond the scene of the festivi\nties, soon becomes the center of attrac\ntion ; the only duty of the host (if the\npunch is well made) is to see that the\nbowl is not allowed to run dry.\n  The concoction of a good punch re\nquires a strict attention to details. It\nmust not be too sweet, nor too sour.\nIt must not be too strong, nor too weak.\nAlways remember that tastes differ,\nand that a happy medium must be\nfound where many palates are to be\npleased, and an over-indulgence be not\ndisastrous.\n 56\n          Rawling's mixed DEINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-068",
+      "order": 68,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Apple Cider Punch",
+      "name_es": "Apple Cider Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into the punch bowl After stirring well drop in three or four",
+      "method_es": "Put into the punch bowl After stirring well drop in three or four",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "75",
+      "raw_text": "Apple Cider Punch.\n          (For the Punch Bowl.)\n  Put into the punch bowl\n      two quarts good apple cider\n      one-half pint cognac\n      juice of four lemons\n      one teacupful bar sugar\n      teaspoonful cucumber juice\n      two firm apples, cut in dice.\nAfter stirring well drop in three or four\nlarge lumps of ice.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-069",
+      "order": 69,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Arrack Punch",
+      "name_es": "Arrack Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "batavian arrack",
+          "item_es": "batavian arrack",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a long-stemmed punch Stir and pour over the liquor; then stir added.",
+      "method_es": "Pour into a long-stemmed punch Stir and pour over the liquor; then stir added.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "76",
+      "raw_text": "Arrack Punch.\n  Pour into a long-stemmed punch\nglass containing a few lumps of ice\n      one-half measure Batavian arrack\n      one-half measure rum;\nthen put into the mixing glass\n      one tablespoonful bar sugar\n      juice of one lemon\n  _ siphon water enough to fill punch\n        glass.\n         RAWLING'S MIXED DRINKS       57\n\n\nStir and pour over the liquor; then stir\nagain until cold. Sliced fruit may be\nadded."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-070",
+      "order": 70,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Brandy Punch",
+      "name_es": "Brandy Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "77",
+      "raw_text": "Brandy Punch.\n  Made the same as a whiskey punch\n(No. 90) substituting brandy.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-071",
+      "order": 71,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Claret Punch",
+      "name_es": "Claret Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put a few lumps of ice in a large stir well and strain off the ice while pouring. One or two cherries and a added.",
+      "method_es": "Put a few lumps of ice in a large stir well and strain off the ice while pouring. One or two cherries and a added.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "78",
+      "raw_text": "Claret Punch.\n  Put a few lumps of ice in a large\nmixing glass, and\n    one tablespoonful bar sugar\n   juice of one lemon\n    one-half punch glass of claret\n   one-half punch glass siphon water;\nstir well and strain off the ice while\npouring. One or two cherries and a\ndash of French vermouth may be\nadded.\n58\n          RAWLING'S mixed drinks",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-072",
+      "order": 72,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Claret Punch",
+      "name_es": "Claret Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "use a bowl of about two gallon ca Stir after putting in each of the ingredi",
+      "method_es": "use a bowl of about two gallon ca Stir after putting in each of the ingredi",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "79",
+      "raw_text": "Claret Punch.\n\n         (For the Punch Bowl.)\n     This is one of the best and most re\nfreshing punches for the evening at\nhome. For the quantity given here\nuse a bowl of about two gallon ca\npacity.\n\n      Juice of six lemons\n      two teacupsful bar sugar\n      three bottles claret\n      one pint cognac\n      one measure curacoa.\n\nStir after putting in each of the ingredi\nents, to make a thorough mixture. A\nfew minutes before serving put in a\nlarge square of ice, and add a bottle\nof siphon water or of California cham\npagne. Decorate with slices of orange\nand pineapple. A few mint shoots may\nalso be used.\n      ItAWLiING'S MIXED DRINKS     59",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-073",
+      "order": 73,
+      "section_title": "Mixed Drinks",
+      "category": "flip",
+      "name_original": "Egg Nog",
+      "name_es": "Egg Nog",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "shake thoroughly, and strain. Sprinkle",
+      "method_es": "shake thoroughly, and strain. Sprinkle",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "80",
+      "raw_text": "Egg Nog.\n  With three or four lumps of ice in\nthe mixing glass put in\n   one tablespoonful bar sugar\n    one egg\n   one measure cognac\n    one teaspoonful rum\n   enough milk to fill punch glass;\nshake thoroughly, and strain. Sprinkle\nwith nutmeg.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-074",
+      "order": 74,
+      "section_title": "Mixed Drinks",
+      "category": "flip",
+      "name_original": "Egg Nog",
+      "name_es": "Egg Nog",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "81",
+      "raw_text": "Egg Nog.\n       (For the Punch Bowl.)\n  Pack the punch bowl in a pan or\ndeep dish with ice and rock salt, lay\ning a twisted towel over the top of\nthe ice. Into the bowl put, in the\norder named\n\n    one teacupful bar sugar\n    half-gallon of fresh milk\n    yolk of six eggs, well beaten\n    large pinch bicarbonate of soda;\n 60       RAWLING'S mixed drinks\n\n while stirring add\n       half-bottle of cognac\n      one measure Jamaica rum\n      sprinkle of nutmeg.\nThe whites of the eggs should then be\nbeaten until frothy, and floated on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-075",
+      "order": 75,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Imperial Punch",
+      "name_es": "Imperial Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "stir thoroughly, and when well mixed add adding more sugar if desired.",
+      "method_es": "stir thoroughly, and when well mixed add adding more sugar if desired.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "82",
+      "raw_text": "Imperial Punch.\n      (Sufficient for a Large Party.)\n  Into the punch bowl put\n      one pound bar sugar\n      juice of ten lemons\n      one piineapple, cut in large dice\n      one-half pint raspberry syrup\n      two measures curacoa;\n\nstir thoroughly, and when well mixed\nadd\n\n      three quarts cognac\n      one pint Jamaica rum\n      two, bottles siphon water.\nWhen stirred sufficiently put a large\ncube of ice in the bowl. This punch\n        BAWLING'S MIXED DRINKS         61\n\nwill have a fuller flavor if ice and rock\nsalt are packed around the bowl in a\nlarge pan. Stir again before serving,\nadding more sugar if desired.\n  Another method of serving punch\nwhere a punch bowl is not available is\nto make the punch in a large pan\n(omitting all fruit), and put in bottles,\nwhich should then be placed on ice un\ntil required. The fruit can be put in\neach glass when served.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-076",
+      "order": 76,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Milk Punch",
+      "name_es": "Milk Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "shake well, and strain into the punch",
+      "method_es": "shake well, and strain into the punch",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "83",
+      "raw_text": "Milk Punch.\n  Four into a large mixing glass with\ncracked ice\n\n     one tablespoonful bar sugar\n     one measure brandy\n     one dash rum;\n\nshake well, and strain into the punch\nglass. Grate a little nutmeg on top.\n   This is an excellent drink to build\nup on during convalescence, but if not\nacceptable to a weak stomach the rum\nmay be omitted and the quantity of\nbrandy reduced to suit.\n  62\n           RAWLING'S mixed drinks",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-077",
+      "order": 77,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Old Maid's Punch",
+      "name_es": "Old Maid's Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir well, and drop in a few large",
+      "method_es": "Stir well, and drop in a few large",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "84",
+      "raw_text": "Old Maid's Punch.\n   Brew a quart of strong green tea.\n When cold pour into the punch bowl,\n and add\n\n       three tablespoonsful bar sugar\n       juice of three lemons\n       one orange, sliced and quartered\n       one bottle lemon soda.\n\nStir well, and drop in a few large\nlumps of ice. This punch will lose its\nname, but will gain in flavor (as well\nas in favor, perhaps) by the addition\nof one or two measures of good cognac.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-078",
+      "order": 78,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Pumpkin Punch Bowl",
+      "name_es": "Pumpkin Punch Bowl",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "used to coat over any bare spots. Then",
+      "method_es": "used to coat over any bare spots. Then",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "85",
+      "raw_text": "Pumpkin Punch Bowl.\n  An excellent substitute for the regu\nlar punch bowl may be made by using\na large pumpkin—the larger and\nrounder the better. If possible select\none that has a piece of the stem, which\nmay be used as s. handle for the cover.\nCut the pumpkin all around, about one-\n       BAWLING'S MIXED DBINKS        63\n\n\nquarter distance from the top, inclin\ning the knife so it will cut lower on\nthe inside.   Clean and scrape the in\nside as much as possible, and pour in\nabout a pint of parrafine wax. Turn\nthe pumpkin around until the inside has\nbeen completely coated. A long-\nhandled iron spoon (heated) may be\nused to coat over any bare spots. Then\ncut a small \"V\" on the rim to hold\nthe handle of the ladle when the cover\nis on, also to mark the position of the\ncover. Decorate the table around the\npunch bowl with greens or vines. If\ncarefully done this will make a decided\nhit at the holiday season, and the taste\nof pumpkin will not be detected in its\ncontents.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-079",
+      "order": 79,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Roman Punch",
+      "name_es": "Roman Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "add sevei'al pieces of ice and enough Stir thoroughly until chilled, and after straining into the glass of liquor float",
+      "method_es": "add sevei'al pieces of ice and enough Stir thoroughly until chilled, and after straining into the glass of liquor float",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "86",
+      "raw_text": "Roman Punch.\n\n  Into a punch glass put\n    one lump of ice\n    one slice of orange and pineapple\n    one measure brandy;\n 64        RAWLING'S MIXED DRINKS\n\n then in the mixing glass\n       one tablespoonful bar sugar\n       juice of one lemon\n       one teaspoonful curacoa\n       one tablespoonful raspberry syrup;\nadd sevei'al pieces of ice and enough\nsiphon water to fill the punch glass.\nStir thoroughly until chilled, and after\nstraining into the glass of liquor float\na little rum on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-080",
+      "order": 80,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "RomeUi Piuich",
+      "name_es": "RomeUi Piuich",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into the bowl after stirring add",
+      "method_es": "Put into the bowl after stirring add",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "87",
+      "raw_text": "RomeUi Piuich.\n             (Punch Bowl.)\n  These quantities will make about\none-half gallon of punch, and may be\nchanged to suit the requirements, but\ncare should be taken to obtain the cor\nrect proportions.\n\n  Put into the bowl\n      one teacupful bar sugar\n      juice of six lemons\n      iuice of six oranges\n      two measures raspberry syrup\n      one bottle siphon water;\n          RAWLING'S MIXED DRINKS     65\n\nafter stirring add\n    two measures curacoa\n    half-pint Jamaica rum\n    one bottle cognac.\n\nKeep up the stirring while pouring'\nthese in, then place in the bowl a large\ncube of ice.         Decorate with mint\"\nsprigs.\n\n\n\n                     88\n               Rum Punch.\n\n  Made in the same manner as a whis\nkey punch (No. 90) using Jamaica rum\nin place of whiskey.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-081",
+      "order": 81,
+      "section_title": "Mixed Drinks",
+      "category": "flip",
+      "name_original": "Sherry Egg Nog",
+      "name_es": "Sherry Egg Nog",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "89",
+      "raw_text": "Sherry Egg Nog.\n  If a milder flavor is desired in the\negg nog (No. 81) use a bottle of sherry\nwine, and omit the cognac and rum.\n Gfl\n            RAWLING'S mixed dkinks",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-082",
+      "order": 82,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Whiskey Punch",
+      "name_es": "Whiskey Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into a long-stemmed punch or add sufficient water to fill the punch stir again before serving. If desired a",
+      "method_es": "Put into a long-stemmed punch or add sufficient water to fill the punch stir again before serving. If desired a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "90",
+      "raw_text": "Whiskey Punch.\n       Put into a long-stemmed punch or\nfizz glass\n        one piece of ice\n        one slice of orange\n        one Maraschino cherry\n        one measure whiskey.\nThen in the mixing glass\n        one tablespoonful bar sugar\n        juice of one lemon\n        two or three lumps of ice;\nadd sufficient water to fill the punch\nglass, and stir well. Strain oflF the ice\nin the mixing glass when pouring, and\nstir again before serving. If desired a\nlittle Jamaica rum, white wine or cham\npagne may be floated on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-083",
+      "order": 83,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "White Wine Punch",
+      "name_es": "White Wine Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put three or four lumps of ice in the Stir well and after straining add a slice stir while adding each of the above,",
+      "method_es": "Put three or four lumps of ice in the Stir well and after straining add a slice stir while adding each of the above,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "91",
+      "raw_text": "White Wine Punch.\n  Put three or four lumps of ice in the\nmixing glass, and\n       one tablespoonful bar sugar\n       juice of one lemon\n        RAWLING'S MIXED DRINKS         67\n\n    half punch glass of white wine\n    half punch glass siphon water\n    one measure Batavian arrack.\nStir well and after straining add a slice\nof orange or pineapple. For this punch\ndry wine, such as hock, reisling or\nRhine wine, is the best.\n\n                  92\n         White Wine Punch.\n\n        (For the Punch Bowl.)\n  These quantities, with the addition\nof the ice, will require a bowl holding\nat least two gallons. Take, in the fol\nlowing order,\n    juice of ten lemons\n    two teacups sugar\n    small bottle of soda, or pint of\n      champagne\n    three quarts white wine\n    one pint cognac\n    one-half pint Batavian arrack;\nstir while adding each of the above,\nthen lay a large square of ice in the\nbowl, and add a few slices of orange\nand pineapple.\n 68        EAWLING'S MIXED DRINKS\n\n\n\n\n              HOT DRINKS.\n\n\n      When tired, cold, or after exposure\nin wet weather, a hot drink is \"just\nwhat the doctor ordered.\"      It should\nnot be taken just before going out into\nthe cold air; in fact, it has its most\nbeneficial effect if taken just before re\ntiring.\n  When serving hot drinks use a thin\nglass, preferably one of the long-\nstemmed kind made especially for hot\nliquids. To hold the heat it should be\nfirst filled with hot water; if a common\nglass is used put in a spoon before the\nwater to prevent cracking the glass. If\nthe drink is too hot to serve do not im\npair the flavor by using ice, but pour\nthe contents from one glass to another\nseveral times. As sugar is not readily\ndissolved in liquor, mix it with a little\nhot water first.\n       BAWLING'S MIXED DBINKS         69",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-084",
+      "order": 84,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Beef Tea",
+      "name_es": "Beef Tea",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "stir well, then fill with hot water. A",
+      "method_es": "stir well, then fill with hot water. A",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "93",
+      "raw_text": "Beef Tea.\n\n  Into a cup or mug, previously\nwarmed, put\n    one teaspoonful extract of beef\n    one tablespoonful boiling water\n    dash of salt and pepper;\nstir well, then fill with hot water. A\nsprinkle of the new onion salt, now on\nthe market, improves the flavor.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-085",
+      "order": 85,
+      "section_title": "Mixed Drinks",
+      "category": "toddy",
+      "name_original": "Brandy Toddy",
+      "name_es": "Brandy Toddy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into a toddy glass",
+      "method_es": "Put into a toddy glass",
+      "glassware": "toddy glass",
+      "garnish": null,
+      "page_reference": "94",
+      "raw_text": "Brandy Toddy.\n  Put into a toddy glass\n    one teaspoonful bar sugar\n    about one measure hot water;\nwhen sugar is dissolved add\n    one measure brandy\n    one thin slice lemon\n    hot water to fill.\n                                        1\n70        BAWLIXG'S mixed drinks",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-086",
+      "order": 86,
+      "section_title": "Mixed Drinks",
+      "category": "toddy",
+      "name_original": "Gin Toddy",
+      "name_es": "Gin Toddy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "95",
+      "raw_text": "Gin Toddy.\n     Made the same as a Brandy Toddy\n(No. 94), using a measure of the de\nsired brand of gin instead of brandy.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-087",
+      "order": 87,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Black Stripe",
+      "name_es": "Hot Black Stripe",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into a long-stemmed glass Stir while filling the glass with hot",
+      "method_es": "Put into a long-stemmed glass Stir while filling the glass with hot",
+      "glassware": "long-stemmed glass",
+      "garnish": null,
+      "page_reference": "96",
+      "raw_text": "Hot Black Stripe.\n     Put into a long-stemmed glass\n       one measure Santa Cruz rum\n    one tablespoonful molasses.\nStir while filling the glass with hot\nwater, and sprinkle nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-088",
+      "order": 88,
+      "section_title": "Mixed Drinks",
+      "category": "sling",
+      "name_original": "Hot Cognac Sling",
+      "name_es": "Hot Cognac Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "97",
+      "raw_text": "Hot Cognac Sling.\n  Dissolve a lump of sugar in a little\nhot water, and add one measure of cog\nnac.' Thefi fill the glass with hot water,\nand sprinkle lightly with cinnamon or\nnutmeg.\n                                            1\n\n\n\n\n          RAWXiING'S MIXED DRINKS     71",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-089",
+      "order": 89,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Lemonade",
+      "name_es": "Hot Lemonade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use a thick-bottomed glass, warmed press these well with the back of a fill the glass with hot water. If taken",
+      "method_es": "Use a thick-bottomed glass, warmed press these well with the back of a fill the glass with hot water. If taken",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "98",
+      "raw_text": "Hot Lemonade.\n\n Use a thick-bottomed glass, warmed\nwith hot water. Put in\n\n       one slice of lemon\n       one tablespoonful bar sugar;\npress these well with the back of a\nspoon until the oil has been extracted\nfrom the lemon peel. Add the juice of\nthe unused portions of the lemon, and\nfill the glass with hot water. If taken\nfor a cold, substitute a tablespoonful of\npure glycerine for the sugar.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-090",
+      "order": 90,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Hot Rum Punch",
+      "name_es": "Hot Rum Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Serve with a little grated nutmeg. Add",
+      "method_es": "Serve with a little grated nutmeg. Add",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "99",
+      "raw_text": "Hot Rum Punch.\n\n  Prepare as for a Hot Whiskey Punch\n(No. 105) with sugar and water. Then\ntake\n\n       one tablespoonful Batavian arrack\n       one measure Jamaica run\n       one twist of lemon peel.\nServe with a little grated nutmeg. Add\na small lump of butter.\n                                     1\n72       HAWLING'S mixed DRINKS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-091",
+      "order": 91,
+      "section_title": "Mixed Drinks",
+      "category": "sling",
+      "name_original": "Hot Rum Sling",
+      "name_es": "Hot Rum Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "100",
+      "raw_text": "Hot Rum Sling.\n  Made in the same way as a Cognac\nSling (No. 97), substituting Jamaica\nrum. Dash with cinnamon.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-092",
+      "order": 92,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Scotch",
+      "name_es": "Hot Scotch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into a long-stemmed glass after stirring add Fill with hot water. Twist a piece of",
+      "method_es": "Put into a long-stemmed glass after stirring add Fill with hot water. Twist a piece of",
+      "glassware": "long-stemmed glass",
+      "garnish": null,
+      "page_reference": "101",
+      "raw_text": "Hot Scotch.\n  Put into a long-stemmed glass\n     one teaspoonful sugar\n     enough hot water to dissolve;\nafter stirring add\n     one measure Scotch whiskey.\nFill with hot water. Twist a piece of\nlemon peel on top and drop it in. Spice\nif desired.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-093",
+      "order": 93,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Hot Tea Punch",
+      "name_es": "Hot Tea Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "102",
+      "raw_text": "Hot Tea Punch.\n  Brew a quart of strong green tea.\nWhile this is steeping put into a large\nbowl\n         RAWLING'S MIXED DRINKS          73\n\n\n    one-half pint brandy\n    one-half pint rum\n    juice of two lemons\n    three tablespoonfuls bar sugar;\nset a match to this and pour in the hot\ntea, stirring with a long-handled spoon\nwhile burning. This drink may be\nladled into serving glasses while on\nfire, or after the flames have died out.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-094",
+      "order": 94,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Tom and Jerry",
+      "name_es": "Hot Tom and Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.333",
+          "unit": "measure",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a large tumbler and fill with fill the glass with hot milk or water,",
+      "method_es": "Pour into a large tumbler and fill with fill the glass with hot milk or water,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "103",
+      "raw_text": "Hot Tom and Jerry.\n  If made of fresh materials no drink\nis more nourishing, but for convales\ncents or others with weak stomachs the\nquantity of liquor may be considerably\nreduced.\n\n  Thoroughly beat the yolk and the\nwhite of an egg separately, and pour\ntogether in a small bowl with suf\nficient sugar to thicken. Then stir in\n    two-thirds measure cognac\n    one-third measure Jamaica rum.\nPour into a large tumbler and fill with\nhot milk. Sprinkle with nutmeg or cin\nnamon.\n74        RAWLING'S MIXED DRINKS\n\n\n\n                   104\n           Hot Tom and Jerry.\n          (For the punch bowl.)\n     In making drinks containing eggs it\nis always advisable to break each one\nseparately in a glass to test it. A law\nrequiring the date to be marked on the\nshell has not yet been proposed, and\none \"bad egg\" will spoil the company\nit mixes with.\n\n     Into a small bowl put the whites of\nas many eggs as required, and beat to a\nstiff froth. To each egg add a table-\nspoonful of sugar. The yolks should\nbe beaten separately until quite thin,\nthen poured into the bowl. Add a large\npinch of bicarbonate of soda, and stir\nbriskly until a stiff batter is obtained.\nMore sugar may be required if not suf\nficiently thick. Unless it is to be used\nat once, stir occasionally to prevent the\nsugar from settling.\n          BAWLING'S MIXED DKINKS          75\n\n\n  When ready to serve put into each\npunch glass\n    one-third measure rum\n    two-thirds measure cognac\n    one tablespoonful of the batter\n    sprinkle of nutmeg;\nfill the glass with hot milk or water,\nand stir until the batter is dissolved.\n\n  Some first-class bars keep a supply\nof this batter on hand at all times, and\nby adding a spoonful to a gin fizz (be\nfore shaking) have made a reputation."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-095",
+      "order": 95,
+      "section_title": "Mixed Drinks",
+      "category": "punch",
+      "name_original": "Hot Whiskey Punch",
+      "name_es": "Hot Whiskey Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "fill the glass about two-thirds. Stir stir again, and sprinkle a little nutmeg",
+      "method_es": "fill the glass about two-thirds. Stir stir again, and sprinkle a little nutmeg",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "105",
+      "raw_text": "Hot Whiskey Punch.\n  Into a stem hot water glass put one\nlump of sugar, and pour in hot water to\nfill the glass about two-thirds. Stir\nwell and add\n\n    one measure whiskey\n    piece of twisted lemon peel;\nstir again, and sprinkle a little nutmeg\non top.\n76        RAWLING'S MIXED DRINKS\n\n\n\n                   106\n           Hot Whiskey Sling.\n     Make the same as a Cognac Sling\n(No. 97), substituting whiskey.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-096",
+      "order": 96,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Wine",
+      "name_es": "Hot Wine",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "serve. Pour into a large glass, pre add Stir and sprinkle with spice. If white",
+      "method_es": "serve. Pour into a large glass, pre add Stir and sprinkle with spice. If white",
+      "glassware": "large glass",
+      "garnish": null,
+      "page_reference": "107",
+      "raw_text": "Hot Wine.\n\n     Heat a mixture of one-half water and\none-half wine, either claret or white\nwine, until of the right temperature to\nserve. Pour into a large glass, pre\nviously warmed with hot water, and\nadd\n\n       one tablespoonful bar sugar\n       juice of one-half lemon.\nStir and sprinkle with spice. If white\nwine is used the addition of a little Ba-\ntavian arrack is recommended.\n       RAWLING'S MIXED DRINKS         77",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-097",
+      "order": 97,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Port Wine Negus",
+      "name_es": "Port Wine Negus",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "stir, and grate nutmeg on top.",
+      "method_es": "stir, and grate nutmeg on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "108",
+      "raw_text": "Port Wine Negus.\n  Rub a cube of sugar on the skin of a\nlemon until all sides have been satu\nrated. Drop the sugar into a long-\nstemmed glass with a measure of port\nwine. Fill the glass with hot water;\nstir, and grate nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-098",
+      "order": 98,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Locomotive",
+      "name_es": "Locomotive",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacoa",
+          "item_es": "curacoa",
+          "amount": "0.5",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Put into a large mixing glass fill the punch glass in which it is served. Season with cinnamon. Put a heavy iron bar or poker in the added. stir a little and add Fill the glass with hot water, and stir",
+      "method_es": "Put into a large mixing glass fill the punch glass in which it is served. Season with cinnamon. Put a heavy iron bar or poker in the added. stir a little and add Fill the glass with hot water, and stir",
+      "glassware": "large mixing glass",
+      "garnish": null,
+      "page_reference": "109",
+      "raw_text": "Locomotive.\n  Put into a large mixing glass\n    one tablespoonful pure honey\n     one-half measure curacoa\n     yolk of one egg;\n beat until smooth and pour over this\n(while stirring) enough hot claret to\n fill the punch glass in which it is\n served. Season with cinnamon.\n\n                   110\n          Mulled Ale or Beer.\n   This drink is seldom made now, but\n its peculiar flavor is very gratifying to\n  78\n            Rawling's mixed drinks\n\n\n  some tastes, and it is worth the trouble\n  necessary to prepare it. While ale is\n  generally used, porter or beer may be\n  substituted, and mulled in the same\n  way.\n\n    Put a heavy iron bar or poker in the\n fire, and when it reaches a glowing heat\n immerse it in the mug of ale, withdraw\n ing it before the contents froth over.\n A spoonful of sugar is sometimes\n added.\n\n\n\n                    Ill\n              Whiskey Toddy.\n   Into a toddy glass put\n       one lump of sugar\n       enough water to dissolve;\nstir a little and add\n\n       one measure whiskey\n       one slice lemon.\n\nFill the glass with hot water, and stir\nagaifr.\n       RAWI.ING'S MIXED DRINKS       79\n\n\n\n\n   AFTER-DINNER DRINKS."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-099",
+      "order": 99,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Alsace-Lorraine",
+      "name_es": "Alsace-Lorraine",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill a pony glass with",
+      "method_es": "Fill a pony glass with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "112",
+      "raw_text": "Alsace-Lorraine.\n\n Fill a pony glass with\n    one-half kirschwasser\n    one-half anisette.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-100",
+      "order": 100,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Benedictine and Brandy",
+      "name_es": "Benedictine and Brandy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "floated on top. An easy method of do",
+      "method_es": "floated on top. An easy method of do",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "113",
+      "raw_text": "Benedictine and Brandy.\n  Into a pony glass pour\n    one-half Benedictine\n    one-half fine old cognac.\n\nThese should not be mixed, but the\ncognac should be poured carefully and\nfloated on top. An easy method of do\ning this is to let it run slowly over the\nback of a spoon.\n 80\n          RAWLING'S MIXED DRINKS\n                                      1",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-101",
+      "order": 101,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Brown Shake",
+      "name_es": "Brown Shake",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacoa",
+          "item_es": "curacoa",
+          "amount": "0.667",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "french brandy",
+          "item_es": "french brandy",
+          "amount": "0.333",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Put a few lumps of ice in the mixing shake well, and serve in a French ver",
+      "method_es": "Put a few lumps of ice in the mixing shake well, and serve in a French ver",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "114",
+      "raw_text": "Brown Shake.\n\n  Put a few lumps of ice in the mixing\nglass, and pour in\n      two-thirds pony curacoa\n      one-third pony French brandy\n      one toddyspoonful lime juice;\nshake well, and serve in a French ver\nmouth glass."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-102",
+      "order": 102,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Burnt Cognac",
+      "name_es": "Burnt Cognac",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "poured into a small decanter and",
+      "method_es": "poured into a small decanter and",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "115",
+      "raw_text": "Burnt Cognac.\n  Nothing so improves the flavor of\nafter-dinner black coffee as cognac\nbrandy. Some people prefer to float\nabout a teaspoonful on top of the cof\nfee ; but the better way is to burn it\nwith the sugar. Rest a teaspoon con\ntaining one or two lumps of sugar on\nthe rim of the cup, and pour in enough\nbrandy to fill. Set fire to this and stir\ninto the coffee after the flames have\ndied out.\n       RAWLING'S MIXED DRINKS         81\n\n\n  For a dinner party the most satisfac\ntory method is to prepare it before\nhand. Stack about two dozen cubes of\nsugar in a small platter or dish, leav\ning a little space between the cubes.\nOver the stack pour carefully, about a\npint of good cognac brandy, and after\nsetting on fire keep turning it over the\nsugar until burned out. This will\nmake a syrupy liquor which should be-\npoured into a small decanter and\nbrought to the table with the coffee.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-103",
+      "order": 103,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Creme de Menthe Frappe",
+      "name_es": "Creme de Menthe Frappe",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "pressed feeling due to hearty eating.",
+      "method_es": "pressed feeling due to hearty eating.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "116",
+      "raw_text": "Creme de Menthe Frappe.\n  Pack a sherry glass with fine shaved\nice, and   over this pour creme de\nmenthe, either green or white, until it\nshows to the rim. Serve with straws.\nTaken after dinner, this drink has a\nbeneficial effect in relieving any op\npressed feeling due to hearty eating.\n82        RAWIJNO'S mixed drinks",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-104",
+      "order": 104,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "King Alphonse",
+      "name_es": "King Alphonse",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour into a pony glass",
+      "method_es": "Pour into a pony glass",
+      "glassware": "pony glass",
+      "garnish": null,
+      "page_reference": "117",
+      "raw_text": "King Alphonse.\n     Pour into a pony glass\n       two-thirds creine de cacao\n       one-third thick cream.\n\nWhen adding the latter let it run from\nthe side of a spoon so it will not mix.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-105",
+      "order": 105,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Kirschwasser",
+      "name_es": "Kirschwasser",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Served with coffee, to which it gives",
+      "method_es": "Served with coffee, to which it gives",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "118",
+      "raw_text": "Kirschwasser.\n\n  Served with coffee, to which it gives\na pleasing flavor. It may be burned\nlike cognac (No. 115) if desired.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-106",
+      "order": 106,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Lillian Russell",
+      "name_es": "Lillian Russell",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour carefully into a pousse cafe",
+      "method_es": "Pour carefully into a pousse cafe",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "119",
+      "raw_text": "Lillian Russell.\n  Pour carefully into a pousse cafe\nglass in the following order, taking\ncare that they do not mix,\n      one-third creme de rose\n      one-third creme de Yvette\n      one-third sweet cream.\n       EAWLING'S MIXED DRINKS        83",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-107",
+      "order": 107,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Marron Whiskey",
+      "name_es": "Marron Whiskey",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "129",
+      "raw_text": "Marron Whiskey\n  A teaspoonful of syrup of marron\n(Italian chestnuts preserved) gives a\ndelicious flavor to a glass of straight\nwhiskey or cognac brandy. A piece of      _   n\nthe preserved nut may be added.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-108",
+      "order": 108,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Pomponette",
+      "name_es": "Pomponette",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "121",
+      "raw_text": "Pomponette\n\n  In the following order pour carefully\ninto a pousse cafe glass\n    one-quarter French vermouth\n    one-quarter creme de cassis\n    one-quarter kirschwasser\n    one-quarter cognac\n\n\n\n\n                  122\n             Pousse Cafe\n\n  The ingredients must not be allowed\nto mix, but floated one on the other in\n 84      EAWLING'S MIXED DRINKS\n\n a tapering sherry glass in the order\n named, and in equal proportions.\n      one-quarter maraschino\n      one-quarter curacoa\n      one-quarter green chartreuse\n      one-quarter cognac.\n\nHandle carefully when serving.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-109",
+      "order": 109,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Stinger",
+      "name_es": "Stinger",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "glass co'gnac",
+          "item_es": "glass co'gnac",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "glass creme de",
+          "item_es": "glass creme de",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "put Shake well, and strain into a vermouth",
+      "method_es": "put Shake well, and strain into a vermouth",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "123",
+      "raw_text": "Stinger.\n  Into a small mixing glass with ice\nput\n\n      one-half pony glass co'gnac\n      one-half pony glass creme de\n       menthe.\n\nShake well, and strain into a vermouth\nglass.\n                                       85\n          RAWLING'S MIXED DRINKS"
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-110",
+      "order": 110,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Vermouth Frappe",
+      "name_es": "Vermouth Frappe",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into the shaker half-filled with shake until frozen, and serve in sherry",
+      "method_es": "Put into the shaker half-filled with shake until frozen, and serve in sherry",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "124",
+      "raw_text": "Vermouth Frappe.\n\n  Put into the shaker half-filled with\ncracked ice\n\n    one measure Italian vermouth ,\nshake until frozen, and serve in sherry\nglass, previously chilled with fine ice^",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-111",
+      "order": 111,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Watermelon and Port",
+      "name_es": "Watermelon and Port",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "serve.",
+      "method_es": "serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "125",
+      "raw_text": "Watermelon and Port.\n\n   Cut a round hole in a firm water\nmelon, large enough to hold the neck\nof a port wine bottle. It will take about\nan hour for the melon to absorbe the\n wine. Remove the bottle, and press\n the round disk of rind in place, sealing\n it with melted parraffine. Put in the\n ice chest for a few hours with the\n waxed side down. Then slice and\n serve.\n  ®'        KAWLINQ's mixed drinks\n\n\n\n\n       miscellaneous prinks.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-112",
+      "order": 112,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Amer Picon",
+      "name_es": "Amer Picon",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "served very cold.",
+      "method_es": "served very cold.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "126",
+      "raw_text": "Amer Picon.\n\n and\"^ ^                   ^\n       one measure Amer Picon '\n       one teaspoonful grenadine syrup;\nstii well, and fill with siphon water\nw 1 e stirring. This drink must be\nserved very cold.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-113",
+      "order": 113,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Blackberry Brandy",
+      "name_es": "Blackberry Brandy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Squeeze the juice from enough ripe",
+      "method_es": "Squeeze the juice from enough ripe",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "127",
+      "raw_text": "Blackberry Brandy.\n  Squeeze the juice from enough ripe\nblackberries to obtain one pint. Put in\na large jar and stir in\n       one-half pound bar sugar\n       one quart cognac.\n         RAWLING'S MIXED DRINKS        87\n\nAfter standing for a few days, strain\nthrough cloth and bottle. A wineglass-\nful of this taken occasionally will cure\ndiarrhoea.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-114",
+      "order": 114,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Bonanza",
+      "name_es": "Bonanza",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "128",
+      "raw_text": "Bonanza.\n\n  Into a small claret glass put\n      one-third California brandy\n      one-third California sherry\n      one-third California sauterne.\n This has been called a real California\n drink, but it has little to recommend it.\n\n\n\n                      129\n             Cure for Cramps.\n\n     Half fill a whiskey glass with bar\n sugar, and fill up with cognac. Serve\n w   ith a spoon.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-115",
+      "order": 115,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "RAWLING'S mixed drinks",
+      "name_es": "RAWLING'S mixed drinks",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "88",
+      "raw_text": "RAWLING'S mixed drinks",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-116",
+      "order": 116,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Fire Extinguisher",
+      "name_es": "Fire Extinguisher",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "fill with Apollinaris water, stir until",
+      "method_es": "fill with Apollinaris water, stir until",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "130",
+      "raw_text": "Fire Extinguisher.\n          (For the morning after.)\n      Place a lump of ice in a rickey glass\n or flat tumbler, and add\n       juice of one-half lemon\n       six dashes Pej'^chaud bitters\n       two-thirds measure dry gin;\nfill with Apollinaris water, stir until\ncold and take out the ice. Then add a\nspoonful of bar sugar. Stir again\nquickly, and drink while efifervescing."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-117",
+      "order": 117,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Gin Rickey",
+      "name_es": "Gin Rickey",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "press one-half of a lime. Then put in stir thoroughly, and fill with siphon",
+      "method_es": "press one-half of a lime. Then put in stir thoroughly, and fill with siphon",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "131",
+      "raw_text": "Gin Rickey.\n  In a flat-bottomed glass squeeze or\npress one-half of a lime. Then put in\n      one lump of ice\n      one rneasure gin;\nstir thoroughly, and fill with siphon\nwater.\n        RAWa.ING'S MIXED DRINKS         S9",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-118",
+      "order": 118,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Ginger Ale Highball",
+      "name_es": "Ginger Ale Highball",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use a long glass. Into it put fill with ginger ale, and serve after stir",
+      "method_es": "Use a long glass. Into it put fill with ginger ale, and serve after stir",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "132",
+      "raw_text": "Ginger Ale Highball.\n  Use a long glass. Into it put\n    one lump of ice\n    one measure whiskey or cognac ;\nfill with ginger ale, and serve after stir\nring a little.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-119",
+      "order": 119,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Gum Syrup",
+      "name_es": "Gum Syrup",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir into a quart of water four",
+      "method_es": "Stir into a quart of water four",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "133",
+      "raw_text": "Gum Syrup.\n\n  Stir into a quart of water four\npounds of granulated sugar, and boil\nfor about ten minutes. Take from the\nfire, pour in water enough to make two\nquarts, and bottle. This gum syrup\nmay be used in place of sugar in drinks,\nas it mixes more readily. A few drops\nin straight whiskey, brandy, gin, etc.,\nwill make the drink more palatable.\n\n                     134\n                 Half and Half.\n\n   There are two combinations of malt\nliquor which may be used. Half a glass\n 90\n           RAWLING'S mixed drinks\n\n each of porter and ale is the drink\n generally so called; but half porter and\n beer is also served.      If taken with\n meals, pour a bottle of each at the same\n time into a pitcher, thus securing a uni\nform mixture.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-120",
+      "order": 120,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "High Ball",
+      "name_es": "High Ball",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put a measure of any liquor desired",
+      "method_es": "Put a measure of any liquor desired",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "135",
+      "raw_text": "High Ball.\n  Put a measure of any liquor desired\nin a long glass with a lump of ice. Fill\nwith siphon water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-121",
+      "order": 121,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Mamie Taylor",
+      "name_es": "Mamie Taylor",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "pressing it with the back of a spoon. Drop in After stirring, fill the glass with ginger",
+      "method_es": "pressing it with the back of a spoon. Drop in After stirring, fill the glass with ginger",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "136",
+      "raw_text": "Mamie Taylor.\n  In a rickey glass or flat-bottomed\ntumbler squeeze one-half a lime by\npressing it with the back of a spoon.\nDrop in\n       one lump of ice\n       one measure Scotch whiskey.\nAfter stirring, fill the glass with ginger\nale.\n         RAWLING'S MIXED DKINKS      01",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-122",
+      "order": 122,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Milk and Seltzer",
+      "name_es": "Milk and Seltzer",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put a lump of ice into a tumbler, and fill with",
+      "method_es": "Put a lump of ice into a tumbler, and fill with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "137",
+      "raw_text": "Milk and Seltzer.\n\n  Put a lump of ice into a tumbler, and\nfill with\n\n     one-half fresh milk\n    one-half siphon water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-123",
+      "order": 123,
+      "section_title": "Mixed Drinks",
+      "category": "toddy",
+      "name_original": "Old-Fashioned Toddy",
+      "name_es": "Old-Fashioned Toddy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use an old-fashioned toddy glass. Put in Press the peel with the back of a spoon stir and serve without straining.",
+      "method_es": "Use an old-fashioned toddy glass. Put in Press the peel with the back of a spoon stir and serve without straining.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "138",
+      "raw_text": "Old-Fashioned Toddy.\n  Use an old-fashioned toddy glass.\nPut in\n\n     one cube of sugar\n     about a tablespoonful of siphon\n         water\n     two pieces lemon peel.\nPress the peel with the back of a spoon\nto extract the oil. Then add\n     one lump of ice\n     one measure whiskey;\nstir and serve without straining.\n92        RAWLING'S MIXED DRINKS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-124",
+      "order": 124,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Pineapple Cordial",
+      "name_es": "Pineapple Cordial",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Strain thoroughly and bottle. Keep in",
+      "method_es": "Strain thoroughly and bottle. Keep in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "139",
+      "raw_text": "Pineapple Cordial.\n     Into an earthen pot put\n       one pineapple, chopped fine\n       one teacupful bar sugar\n       one teacupful water;\nlet this simmer over a slow fire for\nabout ten minutes; then add\n      one pint cognac\n      one measure Jamaica rum.\nStrain thoroughly and bottle. Keep in\na cool place. A wineglassful of this\nwith ice in a long glass of Apollinaris\nor siphon water is very refreshing.\n\n\n                   140\n              Port and Egg.\n\n  Into a wine glass half-filled with port\nwine break an egg carefully, and serve.\nThis drink has always been considered\nvery nourishing, but some physicians\nclaim that the egg is rendered indi\ngestible by the spirits after drinking.\n         RAWl.ING'S MIXED DRINK8      93\n\n\nhence they do not recommend the mix\nture.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-125",
+      "order": 125,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Raspberry Cordial",
+      "name_es": "Raspberry Cordial",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into an earthen pot put on the fire until it comes to a boil, Shake well and strain into a tumbler;",
+      "method_es": "Put into an earthen pot put on the fire until it comes to a boil, Shake well and strain into a tumbler;",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "141",
+      "raw_text": "Raspberry Cordial.\n  Put into an earthen pot\n    one quart of ripe raspberries\n    two teacupsful bar sugar\n    half teacupful vinegar;\nput on the fire until it comes to a boil,\nthen cool slowly. Strain through a\ncloth bag, and stir in one pint of cog\nnac or rum. Bottle and keep in a cool\nplace.\n  Take one measure of this cordial in\na mixing glass half filled with ice.\nShake well and strain into a tumbler;\nthen fill with siphon water. Excellent\nin fevers.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-126",
+      "order": 126,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Rock and Rye",
+      "name_es": "Rock and Rye",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put a handful of rock candy, broken",
+      "method_es": "Put a handful of rock candy, broken",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "142",
+      "raw_text": "Rock and Rye.\n\n  Put a handful of rock candy, broken\nto small pieces, in a bottle of rye\nwhiskey. Shake occasionally until dis\nsolved. This makes a fine cough syrup.\n94         RAWLING'S MIXED DRINKS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-127",
+      "order": 127,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Rum and Gum",
+      "name_es": "Rum and Gum",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "143",
+      "raw_text": "Rum and Gum.\n\n     Into a whiskey glass put\n       one toddyspoonful gum syrup\n       one measure Jamaica rum.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-128",
+      "order": 128,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Rum Shake",
+      "name_es": "Rum Shake",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica",
+          "item_es": "jamaica",
+          "amount": "0.75",
+          "unit": "measure",
+          "notes": null
+        }
+      ],
+      "method_original": "Put a few lumps of ice in the mixing shake well and strain into a small claret",
+      "method_es": "Put a few lumps of ice in the mixing shake well and strain into a small claret",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "144",
+      "raw_text": "Rum Shake.\n\n     Put a few lumps of ice in the mixing\nglass and add\n       one tablespoonful honey\n       three-quarters measure      Jamaica\n         rum\n\n      juice of one-quarter lemon\n      dash of red pepper;\nshake well and strain into a small claret\nglass. This is a fine drink for a sore\nthroat.\n        RAWLING'S MIXED DRINKS       95\n\n\n                 145\n             Shandy Gaff.\n\n  A bottle of ale and a bottle of ginger\nale mixed as in a Half and Half (No.\n134). This is an old-fashioned drink,\nseldom used on the Pacific Coast.\n\n\n\n                  146\n           Sherry and Egg.\n  Prepared in the same way as Port\nand Egg (No. 140), substituting sherry\nwine."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-129",
+      "order": 129,
+      "section_title": "Mixed Drinks",
+      "category": "toddy",
+      "name_original": "Soft Toddy",
+      "name_es": "Soft Toddy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "147",
+      "raw_text": "Soft Toddy.\n\n  Into a mixing glass put\n    one cube of sugar\n    one large thick slice of lemon peel\n     two tablespoonsful boiling water,\n     one measure Bourbon whiskey.\n  98        BAWLING'S MIXED DEINKS\n\nAfter standing a few moments drop in\nthree or four lumps of ice, and shake\nwell. Strain into a claret glass, and\nsprinkle a little nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-130",
+      "order": 130,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Weak Stomach Drink",
+      "name_es": "Weak Stomach Drink",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put into a fizz glass fill with siphon water while stirring.",
+      "method_es": "Put into a fizz glass fill with siphon water while stirring.",
+      "glassware": "fizz glass",
+      "garnish": null,
+      "page_reference": "148",
+      "raw_text": "Weak Stomach Drink.\n\n  Put into a fizz glass\n       one egg, well beaten\n       juice of one lemon;\nfill with siphon water while stirring.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-131",
+      "order": 131,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "Zambajon",
+      "name_es": "Zambajon",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "stir continuously over a slow fire until",
+      "method_es": "stir continuously over a slow fire until",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "149",
+      "raw_text": "Zambajon.\n  The Italian method of preparing\nsherry and egg, and used extensively\nin the hospitals of Italy. Take the\nyolks of as many eggs as required, and\nbeat until quite thin. Pour into a\nsauce-pan, and add for each egg\n       one-measure good sherry\n       one heaping tablespoon of bar\n        sugar;\nr'\n             RAWLING'S MIXED DRINKS        07\n\n\n     stir continuously over a slow fire until\n     ready to boil over. Then take from\n     the fire and pour into small punch\n     glasses. The whites of two eggs should\n     be well beaten with sufficient sugar to\n     thicken, and a spoonful should be laid\n     on the top of each glass. Put in the\n     cooler for a while before serving. This\n     may also be served warm if desired.\n\n                                                i\n\n\n\n\n                                                j\n98        RAWLING'S MTXED DRINKS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling-132",
+      "order": 132,
+      "section_title": "Mixed Drinks",
+      "category": "cocktail",
+      "name_original": "BOTTLING WINE",
+      "name_es": "BOTTLING WINE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "used many times. Soak them in hot fill the bottle: leave an air space of at",
+      "method_es": "used many times. Soak them in hot fill the bottle: leave an air space of at",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "150",
+      "raw_text": "BOTTLING WINE.\n\n     When buying wine in bulk, either in\ndemijohn or wood, it should be put in\nbottles at once to prevent fermentation.\n   A ten-gallon keg is the most conven\nient quantity of wine to handle. When\nreceiving the keg stand it on end, and\nbore a one-inch hole about one inch\nfrom the rim or chine. This hole\nshould be at the lower side of the keg\nwhen laid on its side, the bunghole on\nthe side of the keg being, of course, on\ntop. While boring the hole keep the\nshavings brushed away as much as pos\nsible.   Have a wooden wine faucet at\nhand, and let it soak for a few mo\nments in water before driving it into\nthe keg. Then throw the keg on its\nside to see that the key has been\nturned off and that there is no leakage.\nWhile in, this position remove the tin\ncap over the bunghole, and with a\nwooden mallet or the flat hammer-end\n         RAWIjING'S mixed drinks        99\n\nof a hatchet strike a few sharp, quick\nblows on the stave each side of the\nbunghole, until the bung is partly up\nbut not altogether loose.       Raise the\nkeg to skids or a strong table, with a\nblock of wood each side to prevent roll\ning. One or two days' rest before bot\ntling is advisable. When ready to bot\ntle, remove the bung as gently as possi\nble.\n\n  Taper corks may be used when the\nwine is not to be kept for any consider\nable length of time; these will not re\nquire a corking machine, and may be\nused many times. Soak them in hot\nwater while bottling the wine, and they\nwill be much easier to handle. Always\nhold the bottle at a slight angle to the\nfaucet; otherwise the outrushing air\nwill give you trouble. Do not quite\nfill the bottle: leave an air space of at\nleast one inch, or the cork will be\nforced out. Practice the trick of filling\none bottle after another without shut\nting off the key; have the empty ones\non the floor all on one side of the stool,\nand while replacing one with another\nunder the faucet put the filled bottles\n100     RAWLING'S MIXED DRINKS\n\n\non the other side until the keg is\ndrained.   This method is the best be\ncause the constant starting and stop\nping has a tendency to draw up some\nof the sediment the wine may contain.\nAfter corking stack the bottles on their\nsides in a cool, dark place.\n          ■\n                      Ki\n                           '\n                               #\n\n\n              ■   ■\n\n\n\n\n          '■|%# •'/ *•■\n\n\n\n\n     4;\n\n\n\n\n                               '■V.\nas\n        4'\n\n\n\n\n        ,'1        ^\n               -•\n\n\n\n\n                         /' v3 I5 .\n                                              r                       '4\n                                                                                       '\n\n\n\n\n                                                                           ■   ■           .f\n                       rj.*-\n                                                                      ,>v^*V r'•\n\n\n                                                                     '' '■\n                                ",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    }
+  ]
+}

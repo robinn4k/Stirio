@@ -240,6 +240,22 @@
     "bookFile": "data/euvs-books/1912-the-squires-recipe.json"
   },
   {
+    "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling",
+    "year": 1914,
+    "decade": "1910s",
+    "title": "Rawling's Book of Mixed Drinks",
+    "author": "Ernest P. Rawling",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published / Guild Press (sales)",
+    "city": "San Francisco, California",
+    "edition": "First Edition (1914)",
+    "notes": "'Up-to-date guide for mixing and serving all kinds of beverages... for the man who entertains at home.' Pre-Prohibición. Open con un foreword sobre la 'wail of the prohibitionists' (anticipándola por 6 años). Define la unidad 'measure' como 'a moderate-sized whiskey glass; but to the discreet or to the indiscreet it may be taken as being any old measure from a thimble to a bathtub.' Numerado 1-N (132 únicas) con name + ingredient block. Skeleton custom + parser measure/drops. ~45% (60/132) parseado por OCR variable.",
+    "sectionCount": 2,
+    "recipeCount": 132,
+    "bookFile": "data/euvs-books/1914-rawlings-of-book-mixed-drinks-by-e-p-rawling.json"
+  },
+  {
     "id": "1916-cocktail-ology-by-count-benvenito-martini",
     "year": 1916,
     "decade": "1910s",
@@ -382,6 +398,22 @@
     "sectionCount": 2,
     "recipeCount": 275,
     "bookFile": "data/euvs-books/1925-ca-buckstone-book-of-cocktails.json"
+  },
+  {
+    "id": "1925-drinks-long-short-by-nina-toye-and-a-h-adair",
+    "year": 1925,
+    "decade": "1920s",
+    "title": "Drinks — Long & Short",
+    "author": "Nina Toye & A. H. Adair (Preface 'In a Glass' by X. Marcel Boulestin)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "William Heinemann, Ltd.",
+    "city": "London",
+    "edition": "First Edition (1925, June book)",
+    "notes": "Manual UK pre-Boulestin/post-WWI. Adair fue el bartender del restaurante Boulestin's en Leicester Square (London). Preface 'In a Glass' por X. Marcel Boulestin (chef y restaurador). Recetas en prosa, 'Take N glasses of X', 'add Y drops of Z'. Skeleton custom + parser prose-aware. 142 recetas (post-cleanup); ~81% (115/142) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 142,
+    "bookFile": "data/euvs-books/1925-drinks-long-short-by-nina-toye-and-a-h-adair.json"
   },
   {
     "id": "1927-heres-how-by-judge-jr-2nd-impression",
@@ -544,6 +576,22 @@
     "bookFile": "data/euvs-books/1930-shakeem-up-by-virginia-elliott-and-phil-d-stong.json"
   },
   {
+    "id": "1930-two-hundred-selected-drinks-by-k-w-sundin",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "Two Hundred Selected Drinks",
+    "author": "Knut W. Sundin (formerly bartender on the Swedish American Line vessels)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Ragnar Örstadius Boktryckeri",
+    "city": "Göteborg (Gothenburg), Sweden",
+    "edition": "First Edition (1930)",
+    "notes": "Manual sueco escrito en inglés por Knut W. Sundin, bartender de la Swedish American Line (M/S Kungsholm, Gripsholm, Drottningholm) durante 7 años. Publicado en Göteborg en 1930. Incluye publicidad de tiendas suecas y del Hotel Stockholm. Sección 'Cocktails' + Fizzes, Punches, Sangarees, Slings, Smashes, Sours, Cups, Toddies. Numerado No.1 → No.N. Skeleton custom + parser glass/dash/oz. 189 recetas; ~72% (136/189) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 189,
+    "bookFile": "data/euvs-books/1930-two-hundred-selected-drinks-by-k-w-sundin.json"
+  },
+  {
     "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them",
     "year": 1931,
     "decade": "1930s",
@@ -686,6 +734,22 @@
     "sectionCount": 2,
     "recipeCount": 68,
     "bookFile": "data/euvs-books/1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner.json"
+  },
+  {
+    "id": "1933-hollywood-cocktails-third-printing",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "Hollywood Cocktails (Third Printing)",
+    "author": "Compiled by George E. Buzza Jr.; food and wine combinations by Buzza-Cardozo",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Buzza-Cardozo, Hollywood",
+    "city": "Hollywood, California",
+    "edition": "Third Printing (1933, 'Whenever it Becomes Legal to Serve' — anticipating Repeal)",
+    "notes": "Manual de cócteles publicado en Hollywood al final de la Prohibición ('Whenever it Becomes Legal to Serve'). Layout en dos columnas con cocktails interleaved. Skeleton custom + parser oz/dash/word-fraction. 42 recetas (post-cleanup); ~79% (33/42) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 42,
+    "bookFile": "data/euvs-books/1933-hollywood-cocktails-third-printing.json"
   },
   {
     "id": "1933-sloppy-joes-bar",
@@ -960,6 +1024,22 @@
     "bookFile": "data/euvs-books/1935-cocktails-recommended-by-calvert.json"
   },
   {
+    "id": "1935-fancy-drinks-how-to-mix-them",
+    "year": 1935,
+    "decade": "1930s",
+    "title": "Fancy Drinks — How To Mix Them",
+    "author": "Anonymous (compiled by Pulsam Co.)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Pulsam Co.",
+    "city": "Buffalo, New York",
+    "edition": "First Edition (1935)",
+    "notes": "Manual post-Repeal de Pulsam Co. de Buffalo, NY. Recetas alfabéticamente ordenadas (Absinthe Cocktail → ...). Skeleton custom + parser jigger/dash/wineglass. 194 recetas; ~82% (160/194) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 194,
+    "bookFile": "data/euvs-books/1935-fancy-drinks-how-to-mix-them.json"
+  },
+  {
     "id": "1935-le-bar-american-cocktails-by-george-pillaert",
     "year": 1935,
     "decade": "1930s",
@@ -1006,6 +1086,22 @@
     "sectionCount": 16,
     "recipeCount": 88,
     "bookFile": "data/euvs-books/1935-sloppy-joes-bar-season-1935.json"
+  },
+  {
+    "id": "1936-cocktails-and-appetizers-by-a-connnoisseur",
+    "year": 1936,
+    "decade": "1930s",
+    "title": "Cocktails and Appetizers by a Connoisseur",
+    "author": "Anonymous ('a Connoisseur')",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "The Keystone Publishing Company",
+    "city": "New York / Saratoga Springs",
+    "edition": "First Edition (1936)",
+    "notes": "Manual de cócteles publicado por Keystone con publicidad cruzada de bares y hoteles de Saratoga Springs (William Sabourin, George Serotta, Jake's Veterans Bar, Adelphi Hotel, University Grill, Joyce's Famous Log Cabin). Sección 'Definition of Quantity' (1 dash = teaspoonful, 1 pony = 1 oz, 1 jigger = 1.5 oz, 1 glass = 2 oz, 1 wineglass = 4 oz). Cócteles agrupados por base spirit. Skeleton custom + parser jigger/dash. 88 recetas; ~77% (68/88) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 88,
+    "bookFile": "data/euvs-books/1936-cocktails-and-appetizers-by-a-connnoisseur.json"
   },
   {
     "id": "1936-exclusive-cocktails-from-the-recipes-of-ushers-hotel-sydney",

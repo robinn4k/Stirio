@@ -1,0 +1,2448 @@
+{
+  "book_id": "1936-cocktails-and-appetizers-by-a-connnoisseur",
+  "metadata": {
+    "title": "Cocktails and Appetizers by a Connoisseur",
+    "author": "Anonymous ('a Connoisseur')",
+    "year": 1936,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "The Keystone Publishing Company",
+    "city": "New York / Saratoga Springs",
+    "edition": "First Edition (1936)",
+    "source_file": "1936 Cocktails and Appetizers by a Connnoisseur.txt",
+    "notes": "Manual de cócteles publicado por Keystone con publicidad cruzada de bares y hoteles de Saratoga Springs (William Sabourin, George Serotta, Jake's Veterans Bar, Adelphi Hotel, University Grill, Joyce's Famous Log Cabin). Sección 'Definition of Quantity' (1 dash = teaspoonful, 1 pony = 1 oz, 1 jigger = 1.5 oz, 1 glass = 2 oz, 1 wineglass = 4 oz). Cócteles agrupados por base spirit. Skeleton custom + parser jigger/dash. 88 recetas; ~77% (68/88) parseado."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Saratoga Springs + Definition of Quantity",
+      "title_es": "Saratoga Springs + definición de cantidades",
+      "content_original": "Manual publicado en 1936 por Keystone Publishing en NY/Saratoga Springs. Contiene publicidad cruzada de bares y hoteles de la era post-Repeal en Saratoga Springs (William Sabourin Wines & Liquors, George Serotta, Jake's Veterans Bar, Adelphi Hotel con Hungarian Cooking, University Grill, Joyce's Famous Log Cabin). Open con descripción del lujoso resort. Define cantidades estándar.",
+      "content_es": "Manual de 1936 con publicidad cruzada de bares y hoteles de Saratoga Springs post-Repeal. Define cantidades estándar."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails and Mixed Drinks (by base spirit)",
+      "title_es": "Cócteles y bebidas mezcladas (por spirit base)",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-001",
+      "order": 1,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "MANHATTAN COCKTAIL",
+      "name_es": "MANHATTAN COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with cracked ice, strain, and serve with Cherry.",
+      "method_es": "Stir with cracked ice, strain, and serve with Cherry.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MANHATTAN COCKTAIL\n         1 jigger Whiskey\n          jigger Italian Vermouth\n         1 dash Bitters\n\nStir with cracked ice, strain, and serve with Cherry."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-002",
+      "order": 2,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "WHISKEY COCKTAIL",
+      "name_es": "WHISKEY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup",
+          "item_es": "jarabe de azúcar",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with cracked ice, strain, and serve with Cherry.",
+      "method_es": "Stir with cracked ice, strain, and serve with Cherry.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY COCKTAIL\n         1 jigger Whiskey\n          jigger Sugar Syrup\n         1 dash Bitters\n\nStir with cracked ice, strain, and serve with Cherry."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-003",
+      "order": 3,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "OLD FASHIONED COCKTAIL",
+      "name_es": "OLD FASHIONED COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "add the W^hiskey and a cube of ice, stir, and decorate with",
+      "method_es": "add the W^hiskey and a cube of ice, stir, and decorate with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OLD FASHIONED COCKTAIL\n         1 jigger Whiskey\n           lump of Sugar\n         2 teaspoonfuls Water\n         2 dashes Bitters\n\nIn Old Fashioned glass, crush the Sugar in Water and Bitters,\nadd the W^hiskey and a cube of ice, stir, and decorate with\nCherry and slices of Lemon and Orange."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-004",
+      "order": 4,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ROCK AND RYE",
+      "name_es": "ROCK AND RYE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rock candy",
+          "item_es": "rock candy",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROCK AND RYE\n         1 jigger Whiskey\n         1 piece Rock Candy\nDissolve the rock candy in the Whiskey and, if your tastes are\ntart, add Lemon Juice.\n\n                                11\n\"W HERE        THE          CROWD          MEETS\"\n\n\n\n\n                CHARLIE'S\n        RESTAURANT and TAP ROOM\n\n\nBroadway         -               0pp. Grand Union Hotel\n             Saratoga Springs, N.Y.\n\n\n\n\n           DANCING EVERY NIGHT\n\n\n                     JACK'S\n   OLD FASHIONED CABARET and GRILL\n\n           2—SHOWS NIGHTLY—2\n                     12 - 2 A. M.\n\n             Our Specialty Is\n     REAL SOUTHERN FRIED CHICKEN\n                No Cover Charge\n72 Congress Street      -        Saratoga Springs, N.Y.\n\n                            12"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-005",
+      "order": 5,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BACARDI COCKTAIL",
+      "name_es": "BACARDI COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "of apricot brandy",
+          "item_es": "of apricot brandy",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "of grenadine",
+          "item_es": "of grenadine",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake Well with Cracked Ice, Strain Into Cocktail Class",
+      "method_es": "Shake Well with Cracked Ice, Strain Into Cocktail Class",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BACARDI COCKTAIL\n           As Mixed at \"CHARLIE'S\"\n\n              Saratoga Springs, N.Y.\n\n              1 jigger Bacardi\n              1 dash of Apricot Brandy\n              3 dashes of Grenadine\n              Juice of % Lime\nShake Well with Cracked Ice, Strain Into Cocktail Class\n\n\n                          13\n       DINE              AND         DANCE\n\n           GREEN LANTERN\nCHICKEN                  STEAK              SEA FOOD\n     Schenectady-Saratoga Rd., 6 Miles from\n                  Schenectady\n         Phone 2-5583—Open All Year\nR. D. No. 1, Route 50                Ballston Lake, N.Y.\n\n\n       THE VALLEY'S FINEST HOTEL\n\n               PALMER HOUSE\nHerkimer             -           -            New York\n                  Excellent Cuisine\n            DINING AND DANCING\n        Magnificent Old English Tap Room\n                   J. P. Hyde, Prop.\n\n\n\n                         Phone 180\n\n\n        THE HAYNER HOUSE\n                   Famous for Its\n        FISH and CHICKEN DINNERS\n               All Modern Conveniences\nBallston Spa           -       -              New Yoi'k\n               P. H. McDonough, Prop'r\n\n                            14"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-006",
+      "order": 6,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "HONEY DO COCKTAIL",
+      "name_es": "HONEY DO COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice, and strain into glass.",
+      "method_es": "Shake well with cracked ice, and strain into glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HONEY DO COCKTAIL\n\n         1 jigger Whiskey\n        Y2 jigger Grapefruit Juice\n        Y2 jigger Honey\nShake well with cracked ice, and strain into glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-007",
+      "order": 7,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SARATOGA COCKTAIL",
+      "name_es": "SARATOGA COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, strain and serve with a twist of Orange",
+      "method_es": "Shake with cracked ice, strain and serve with a twist of Orange",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SARATOGA COCKTAIL\n\n         1 jigger Whiskey\n        Y2 teaspoonful Powdered Sugar\n         Juice of Y^ Lemon (or 1 Lime)\n         2 dashes Grenadine\n\nShake with cracked ice, strain and serve with a twist of Orange\nPeel in the glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-008",
+      "order": 8,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COMMODORE COCKTAIL",
+      "name_es": "COMMODORE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup",
+          "item_es": "jarabe de azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and strain into glass.",
+      "method_es": "Shake with cracked ice, and strain into glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COMMODORE COCKTAIL\n\n         1 jigger Whiskey\n         Juice of Y^ Lime\n         1 teaspoonful Sugar Syrup\n         2 drops Orange Bitters\nShake with cracked ice, and strain into glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-009",
+      "order": 9,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CRUSADER COCKTAIL",
+      "name_es": "CRUSADER COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup",
+          "item_es": "jarabe de azúcar",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, strain into large wine-glass, and add a",
+      "method_es": "Shake with cracked ice, strain into large wine-glass, and add a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CRUSADER COCKTAIL\n\n         1 jigger Whiskey\n       1/3 jigger Sugar Syrup\n         Juice of    Lemon\nShake with cracked ice, strain into large wine-glass, and add a\nsplash of Fizz Water.\n\n\n\n\n                                15\n                              TROY, N.Y.\n\n    Troy is on the line of the Delaware and Hudson Railroad and is one\nof the most interesting places on the Adirondack route. The city is noted\nfor its educational facilities, being the site of the world famous Rensselacr\nPolytechnic Institute, the Emma Wiilard school for women and the Russell\nSage College of practical arts for women,     Troy is well equipped for\namusements, having a vaudeville house and a number of up to date motion\npicture theatres.   Many famous orchestras and artists are heard each\nseason at the Troy Music Hall. There are several beautiful parks in this\ncity.\n\n        Connection is made here with the New York Central Railroad and the\nKoaton and Maine Railroad.\n\n\n\n                               Courtesy of\n        The Delaware and Hudson Railroad Corp.\n\n\n\n\nLADIES'                                                       LADIES'\nCOCKTAIL HOUR                                                 LOUNGE\n\n\n\n\n                            RESTAURANT\n\n\nQUALITY FOOD                                  MEN'S TAP ROOM\n\n                               Phone 5958\n\n211 Broadway                              -                 Troy, N.Y.\nL                                    16"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-010",
+      "order": 10,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "EGG NOGG",
+      "name_es": "EGG NOGG",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice cubes, strain into glass, and sprinkle nut",
+      "method_es": "Shake well with ice cubes, strain into glass, and sprinkle nut",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EGG NOGG\n\n                1 jigger Whiskey\n               1 Egg\n               1 tablespoonful Powdered Sugar\n               Milk to fill Tom Collins glass\n    Shake well with ice cubes, strain into glass, and sprinkle nut\n    meg on top."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-011",
+      "order": 11,
+      "section_title": "Drinks",
+      "category": "toddy",
+      "name_original": "HOT WHISKEY TODDY",
+      "name_es": "HOT WHISKEY TODDY",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOT WHISKEY TODDY\n\n    Crush a lump of Sugar in a little Hot Water; add a few\n    Cloves, pieces of Cinnamon Bark and Lemon Peel, and I glass\n    of Whiskey. Dilute to taste with Hot Water, served sep\n    arately.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-012",
+      "order": 12,
+      "section_title": "Drinks",
+      "category": "julep",
+      "name_original": "MINT JULEP",
+      "name_es": "MINT JULEP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MINT JULEP\n\n                2 or 3 sprigs of Fresh Mint\n               1/2 tablespoonful Powdered Sugar\n                2 jiggers Whiskey\n    Lightly but thoroughly crush Mint Leaves and Sugar in a little\nWater, and add the Whiskey; strain into a tall glass nearly\n    full of finely cracked ice; stir until glass is frosted, then garnish\nwith sprigs of Mint dusted with Powdered Sugar."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-013",
+      "order": 13,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "WHISKEY FIZZ",
+      "name_es": "WHISKEY FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly with ice cubes, strain into large wine-glass,",
+      "method_es": "Shake thoroughly with ice cubes, strain into large wine-glass,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY FIZZ\n\n'              1 jigger Whiskey\n               1 teaspoonful Powdered Sugar\n               White of ^2 fresh Egg\n               Juice of Yz Lemon\nShake thoroughly with ice cubes, strain into large wine-glass,\nand fill with Fizz Water.\n\n                                    17\n               Phone 2-9878 Glens Falls\n\nCOCKTAIL BAR                                   DANCING\n\n\n\n                 BRYAN'S INN\n Famous for Its Southern Fried Chicken Dinners\n\n              Our Specialty is Good Food\n\n           Music by TED BERNIE and His\n                Sensational Entertainers\n\n       We Cater to Overnight and Weekly Guests\n               All Modern Conveniences\n\n          Route 9—North of Saratoga 9 Miles\n              South of Glens Falls 9 Miles"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-014",
+      "order": 14,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "NEW DEAL PUNCH",
+      "name_es": "NEW DEAL PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apple jack",
+          "item_es": "apple jack",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, serve in goblet, add 1 dash of Brandy on",
+      "method_es": "Shake well with ice, serve in goblet, add 1 dash of Brandy on",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW DEAL PUNCH\n\n         1 jigger Apple Jack\n         1 spoon Sugar\n         Juice of Yz Lemon\nShake well with ice, serve in goblet, add 1 dash of Brandy on\ntop.\n\n\n\n\n                               18"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-015",
+      "order": 15,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "MIAMI COCKTAIL",
+      "name_es": "MIAMI COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice, and strain into glass.",
+      "method_es": "Shake well with cracked ice, and strain into glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MIAMI COCKTAIL\n         1 jigger Whiskey\n       1/^ jiggers Grapefruit Juice\n           jigger Grenadine\nShake well with cracked ice, and strain into glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-016",
+      "order": 16,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "DAISY COCKTAIL",
+      "name_es": "DAISY COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir well with cracked ice, and strain into glass.",
+      "method_es": "Stir well with cracked ice, and strain into glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DAISY COCKTAIL\n        Yi jigger Whiskey\n        Yi jigger French Vermouth (dry)\n        Y2 jigger Italian Vermouth (sweet)\nStir well with cracked ice, and strain into glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-017",
+      "order": 17,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "WHISKEY SOUR",
+      "name_es": "WHISKEY SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, and strain into small glass garnished",
+      "method_es": "Shake with cracked ice, and strain into small glass garnished",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY SOUR\n         1 glass Whiskey\n        Yi teaspoonful Powdered Sugar\n         Juice of Yi Lemon\nShake with cracked ice, and strain into small glass garnished\nwith fruit and cherry."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-018",
+      "order": 18,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "WHISKEY HIGHBALL",
+      "name_es": "WHISKEY HIGHBALL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY HIGHBALL\nTake a cube of Ice, a glass of Whiskey, some Fizz Water or\nGinger Ale, and a twist of Lemon Peel.       Stir and serve.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-019",
+      "order": 19,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BROADWAY COCKTAIL",
+      "name_es": "BROADWAY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth (dry)",
+          "item_es": "french vermouth (dry)",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth (sweet)",
+          "item_es": "italian vermouth (sweet)",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice cubes, and strain into glass.",
+      "method_es": "Shake well with ice cubes, and strain into glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BROADWAY COCKTAIL\n         1 jigger Whiskey\n       1/3 jigger Lemon Juice\n       1/3 jigger French Vermouth (dry)\n       1/3 jigger Italian Vermouth (sweet)\n         White of 1 Egg\nShake well with ice cubes, and strain into glass.\n\n                                19\n                     Dial 2-2235\n\n\n\n              F      I O   R   E ' S\n      RETAIL LIQUOR STORE\n                      We Deliver\n\n               All the Best Brands\n        WINES          and     LIQUORS\n\n461/^ Lawrence St.         -       Glens Falls, N.Y.\n\n\n\n\n                     tMt\n\n         THE BROWN DERBY\n\n            RESTAURANT and BAR\n\n291/2 Ridge Street         -       Glens Falls, N.Y.\n                      GLENS FALLS, N.Y.\n\n            Altitude, 350 feet,         61 miles from Albany.\n\n\n    While making no pretensions as a summer resort, the splendid hotels\nand restful homes of Glens Falls attract many visitors. Here near the\nwater level of the Hudson River is the cave where Cooper the Novelist,\nlaid the most thrilling scenes depicted in ''The Last of the Mohicans.\"\nHere, the majestic waters of the Hudson River, in their descent over the\nage-placed rocks, have been utilized to turn the wheels of manufacturing\nplants.\n\n\n    About seven miles north of this city just off the Lake George road,\nwith marked direction to its location, is a marble shaft bearing this in\nscription : \"Erected by the graduates of Williams College in memory of\nCol. Ephraim Williams who nobly fell in the conflict with the French and\nIndians in 1755.\" On the Old Military Road, a short distance south of the\nmonument, is the rude slab which marks the place where he was buried.\n\n                              Courtesy of\n\n    The Delaware and Hudson Railroad Corp.\n\n\n\n\n                              Dial 2-9830\n\n             FINEST LIQUORS and WINES\n          Famous RAM'S HEAD ALE on Draught\n\n                      V. D. SANTIS\n                   RESTAURANT\nMeals a la Carte                         Spaghetti Dinners '\n                           Open All Hours                   '\n82 Lawrence St.                  -        Glens Falls, N.Y. l\n\n                                   21\nWe Deliver                                Phone 2-4022\n\n\n\n\n             JOHN J. BURNS\n\n  Imported and Domestic Wines and Liquors\n                  At Your Service\n\n\n\n\n113 Glen Street          -            Glens Falls, N.Y.\n\n\n\n\n                   Phone 2-4727\n\n\n\n      Adirondack Distributing Co.\n\nDOBLER BREWS            GOOD OLD SCOTCH ALE\n    RHEINGOLD BEER               PIEL'S BEER\nRAM'S HEAD ALE                BUDWEISER BEER\n\n\n         Cor. Basin and Mohican Streets\n\n                  Glens Falls, N.Y.\n\n                         22"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-020",
+      "order": 20,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "PALMER HOUSE COCKTAIL",
+      "name_es": "PALMER HOUSE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with cracked ice, strain and serve with a twist of",
+      "method_es": "Stir well with cracked ice, strain and serve with a twist of",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PALMER HOUSE COCKTAIL\n\n          1 jigger Whiskey\n        Yi jigger French Vermouth (dry)\n        Yi jigger Italian Vermouth (sweet)\n         3 drops Orange Bitters\nStir well with cracked ice, strain and serve with a twist of\nLemon Peel."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-021",
+      "order": 21,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "PARODY CLUB FLIP",
+      "name_es": "PARODY CLUB FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into large wine glass, sprinkle nut",
+      "method_es": "Shake well with ice, strain into large wine glass, sprinkle nut",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PARODY CLUB FLIP\n\n          1 glass Whiskey\n          1 Egg\n          1 teaspoonful Powdered Sugar\nShake well with ice, strain into large wine glass, sprinkle nut\nmeg on top."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-022",
+      "order": 22,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "WHISKEY COBBLER",
+      "name_es": "WHISKEY COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY COBBLER\n          1 jigger Whiskey\n        Yi teaspoonful Powdered Sugar\nA small highball glass half full of cracked ice. Stir and decorate\nwith fruit."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-023",
+      "order": 23,
+      "section_title": "Drinks",
+      "category": "sling",
+      "name_original": "WHISKEY SLING",
+      "name_es": "WHISKEY SLING",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "of lemon juice",
+          "item_es": "of lemon juice",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
+      "method_original": "pour into a small highball glass containing a cube of ice, fill",
+      "method_es": "pour into a small highball glass containing a cube of ice, fill",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY SLING\n\n          1 glass Whiskey\n        )/2 jigger Water\n          6 drops of Lemon Juice\n        Yi lump of Sugar\nCrush the Sugar in Water, add the Whiskey and Lemon Juice,\npour into a small highball glass containing a cube of ice, fill\nwith Vichy or Carbonated Water, and garnish with Lemon\nPeel.\n\n\n                               23\nTake home\n   OUFL                            Phone 2-2878\nFINE YHNES.\nI/ AND /                      Complete Assortment\n iauoRS/j                               of\n                                   IMPORTED\n                                        and\n                                   DOMESTIC\n                                      LIQUORS\n\n                               We      Deliver\n\n\n         NACY'S WINE SHOP\n15 South Street          -          Glens Falls, N.Y.\n\n\n\n            IN GLENS FALLS IT'S\n\n\n                    JOHNNIE'S\n       RESTAU                  RANT\n\n                   Open 24 Hours\n      People come from Near and Far,\n      To Eat and Drink at JOHNNIE'S Bar."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-024",
+      "order": 24,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BENNETT HOTEL",
+      "name_es": "BENNETT HOTEL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BENNETT                  HOTEL\n                  Glens Falls, N.Y.\n\n                         24\n                       Qin Base",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-025",
+      "order": 25,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ORANGE BLOSSOM",
+      "name_es": "ORANGE BLOSSOM",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with cracked ice and strain.",
+      "method_es": "Stir well with cracked ice and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORANGE BLOSSOM\n         1 jigger Gin\n         Juice of Yz Orange\nStir well with cracked ice and strain."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-026",
+      "order": 26,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BON TON",
+      "name_es": "BON TON",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange blossom w^ater",
+          "item_es": "orange blossom w^ater",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice. Serve in cocktail glass. Stir well with ice, strain and serve with olive. Stir well in ice and strain.",
+      "method_es": "Shake well with ice. Serve in cocktail glass. Stir well with ice, strain and serve with olive. Stir well in ice and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BON TON\n\n         3 parts Gin\n           part Lime Juice\n        Yz part dry Orange Curacao\n         2 dashes Orange Blossom W^ater\nShake well with ice. Serve in cocktail glass.\n\n                        MARTINI (DRY)\n       2/3 Gin\n       1/3 French Vermouth\n         1 dash Orange Bitters\nStir well with ice, strain and serve with olive.\n\n                   MARTINI (MEDIUM)\n\n        Ya French Vermouth\n        Ya Italian Vermouth\nStir well in ice and strain.\n\n                                 25\n                 Dial 2-5627\n\n\n\n     FITZGERALD'S HOTEL\n              Glens Falls, N.Y.\n\n         Restaurant and Grill\n\n   SEA    FOOD        A    SPECIALTY\n\n\n     Special Luncheons and Dinners\n         Private Rooms for Banquets\n\n\n\nCASE NOTE         —            EUREKA CIGARS\n     \"The Only Comeback Is for More\"\n\n\n  T. J. Kennedy Tobacco Co., Inc.\n              Glens Falls, N.Y.\n\n     CONFECTIONERY\n\n                Distributors\n    SCHLITZ BEER      —    BURKE'S ALE\n         STANTON BEER and ALE\n\n\n                      26"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-027",
+      "order": 27,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "MISSISSIPPI COCKTAIL",
+      "name_es": "MISSISSIPPI COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well and strain.",
+      "method_es": "Shake well and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MISSISSIPPI COCKTAIL\n      1/3 Gin\n      1/3 Whiskey\n      1/3 Absinthe\nShake well and strain.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-028",
+      "order": 28,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB COCKTAIL",
+      "name_es": "CLOVER CLUB COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well with cracked ice, strain and serve with mint leaf",
+      "method_es": "Shake well with cracked ice, strain and serve with mint leaf",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB COCKTAIL\n      2/3 Gin\n      1/3 Grenadine\n        Juice of Yz Lime\n        White of 1 Egg\nShake well with cracked ice, strain and serve with mint leaf\non top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-029",
+      "order": 29,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "PINK LADY",
+      "name_es": "PINK LADY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice and strain.",
+      "method_es": "Shake well in ice and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PINK LADY\n            1 jigger Gin\n            1 tablespoonful Grenadine\n           White of 1 Egg\nShake well in ice and strain."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-030",
+      "order": 30,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CURACAO COCKTAIL",
+      "name_es": "CURACAO COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain.",
+      "method_es": "Shake well with cracked ice and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CURACAO COCKTAIL\n          1/3 Gin\n          1/3 Cognac\n          1/3 Curacao\n            1 dash Grenadine\nShake well with cracked ice and strain."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-031",
+      "order": 31,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ALEXANDER GIN COCKTAIL",
+      "name_es": "ALEXANDER GIN COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well with crushed ice and strain.",
+      "method_es": "Shake well with crushed ice and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALEXANDER GIN COCKTAIL\n          1/3 Gin\n          1/3 Sweet Cream\n          1/3 Creme de Cacao\nShake well with crushed ice and strain.\n\n                                 27\nADIRONDACK                          DIANA\n      HOTEL                        Restaurant\n  Warrensburg, N.Y.                180 Main St.\n                                Hudson Falls, N.Y.\n   RESTAURANT\n                             LIQUORS - WINES\n COCKTAIL GRILL                       BEER\n\n                                Popular and Special\n       Phone 46              Dinners and Lunches\n\n O'CONNOR BROS.              PouLos Bros., Props.\n                        .4—-\n\n\n\n\n                     Phone 947\n\n\n              ROYAL PINES\n     Northern New York's Most Popular\n                    Rendezvous\n\n            Two Floor Shows Nightly\n\n       Featuring JIMMY SMITH and His",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-032",
+      "order": 32,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "RHYTHM KINGS",
+      "name_es": "RHYTHM KINGS",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RHYTHM KINGS\n\n        Choicest Food, Wine and Liquors\n                   Open All Year\nRoute 9, Opposite Bloody Pond     A. J. (TONY) Reed",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-033",
+      "order": 33,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "GIN BUCK",
+      "name_es": "GIN BUCK",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into glass, add 2 cubes of ice and fill up with Ginger Ale.",
+      "method_es": "Pour into glass, add 2 cubes of ice and fill up with Ginger Ale.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN BUCK\n         1 jigger Gin\n         Juice of Yi Lime\nPour into glass, add 2 cubes of ice and fill up with Ginger Ale."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-034",
+      "order": 34,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRONX COCKTAIL",
+      "name_es": "BRONX COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (dry)",
+          "item_es": "gin (dry)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain into cocktail glass.",
+      "method_es": "Shake well with cracked ice and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRONX COCKTAIL\n         1 jigger Gin (dry)\n        Yi jigger French Vermouth\n        Y2 Jigger Italian Vermouth\n         Juice of Ya Orange.\nShake well with cracked ice and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-035",
+      "order": 35,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "GIN COCKTAIL",
+      "name_es": "GIN COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange curacao",
+          "item_es": "orange curacao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and add slice of fresh pineapple in glass.",
+      "method_es": "Shake well and add slice of fresh pineapple in glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN COCKTAIL\n         2 parts Gin\n         1 part Benedictine\n         Juice of Y2 Lime\n         2 dashes Orange Curacao\n         Ice\n\nShake well and add slice of fresh pineapple in glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-036",
+      "order": 36,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "UNIVERSITY",
+      "name_es": "UNIVERSITY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Add ice, shake, strain, and serve in cocktail glass.",
+      "method_es": "Add ice, shake, strain, and serve in cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "UNIVERSITY\n         1 part French Vermouth\n         I part Dubonnet\n         1 part Gin\n         2 dashes Orange Bitters\nAdd ice, shake, strain, and serve in cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-037",
+      "order": 37,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COLONY COCKTAIL",
+      "name_es": "COLONY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of orange bitters",
+          "item_es": "of orange bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Add ice, shake, strain and serve in cocktail glass.",
+      "method_es": "Add ice, shake, strain and serve in cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLONY COCKTAIL\n         2 parts French Vermouth\n         2 parts Gin\n         1 dash of Orange Bitters\n         2 slices Orange Peel\nAdd ice, shake, strain and serve in cocktail glass.\n\n                                29\n        As Near as Your—Phone 2-4819\n\n\n                   We Deliver\n\n\n\n             L. M. HAWKINS\n     WINES          and     LIQUORS\n\n\nCor. Broad and South Sts.   -    Glens Falls, N.Y.\n\n\n\n\n                  PILSNER\nWURZBURGER              SPARKLING ALE\n\n       THE WEST END BREWING CO.\n\n                   Utica, N.Y.\n\n\n\n                       30\n                           ALBANY, N.Y.\n\n     Albany was first visited by the French fur traders,   ' . 1524\nthe discovery of the mouth of the Hudson River by          . barterinfr\nmade expeditions to the head of naviKation for the purpo      fortified\nwith the Indians. About 1540 they began the              ^      of the\ntrading post on Castle Island, which then stood at               main-\nriver near Rensselaer, though it has since become a p\nland.\n\n        It was well located to secure the traffic of                  in^^ssSJle\nof the Mohawk near its mouth at Cohoes,                   ^     carry from the\nfor the canoes of the Indians, and                                 Albany    Thus\nMohawk at Schenectady ran overland to                    ®j.eat routes of travel\nAlbany, in the earliest times, was the junction of great roures\nto the north and west, as it is today.\n        In 1624, the Dutch West                          'in America? sent Lt\nrated in 1621, for the special purpose                   inland where Albany\nthirty families who built Fort Orange on\nnow stands.\n\n        Finding the sending of                 o|'^g??nting ^mlnorial rights,\nIndia Company in 1629                       ,i,i, system a large part of the\nknown as the Patroon system. Under this system a i t                 p\nregion about Albany was settled.\n        Ki.iean Van Rensselaer              /-f^eTudir/tTe\ni?Lra:S'L''gr?ts^=otnTsa^^n^?^^6?o;^^^                        it Rensselaerwyck.\n                   _         .   o*v,ori fVkP district immediately surrounding\nIn 16B2 Peter Stuyvesant                               Beaver District Village.\nFort Orange, \"PorP                     New Netherlands to the English, the\n^\"an;?^tks\"XntV?rXn°;. ^N^£yoarsJater,^wh^                           D^utch^again\nbufi\"n1he°fol~g ?ea'r 16^4, it pkssed back to the English and was\nagain called Albany.\n        Albany was chartered as «/\"3tl?,tusratd%\\a?e'\"oT?efu\\\"e'\nIndian war, the city was a military        gtockade embraced a large\nmade secure by fort and stockade            The                             present\nsection, reaching                 ''.^'''Lrederick'was built, to the banks of\nCapitol where about 1676, Fort breaencK                        ^               the\nthe river, and from the site of the Union Station\npresent junction of South Pearl and          . i                the greater part\nof defense, completed in "
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-038",
+      "order": 38,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SHOWS TWICE NIGHTLY",
+      "name_es": "SHOWS TWICE NIGHTLY",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHOWS TWICE NIGHTLY\nresulted in the placinp of a number of bronze tablets at the more im\nportant points, on which much historical information is vividly and\nconcisely recorded.\n\n    From the earliest times, the Schuyler family has held a prominent\nplace in the history of the country.\n\n     The Schuyler Mansion, erected in 1760-61, now the property of the\nState, open to the public, and maintained as of the period, stands at\nthe head of Schuyler Street. In this house, Lafayette, Baron Steuben,\nBenjamin Franklin and many other notables were entertained, amoni?\nthem beinp Burgoyne, who came there a prisoner after his surrender at\nSaratoga. It was at this house in the summer of 1761 that Canadians\nand Indians plotted to abduct General Philip Schuyler and carry him\nto Canada for ransom.\n\n    After a lapse of two hundred and fifty-eight years since the build\ning of the northeast gate, \"the road to the Canadas\" still\npoint. The log palisade is gone, the wooden gate has crumbled to dust.\nIn their place is an impressive structure, the northeast gate of old,\nthrough which now pass in a single summer more vacationists bound\nfor the historic country to the north, than the number of ail the armies\nthat fought for its possession.\n\n     Not only its antiquity but its fine public buildiuRS and other at\ntractions make this city especially InterestinK to tourists, who will be\namply rewarded by visitine the Capitol, w.th its famous\nStaircase and LeEislative Chambers; State Education Buildinc New\nState Omce BuildinE, the City Hall, Washineton Park, the Cathedials,\nthe Historical and Art Gallery, etc.\n     As a convention center, Albany is most popular. Its combination\nof hotels control over 3000 rooms. Auditoriums with ample seating\ncapacity may be secured for meetings and conventions,\n     Albany is the terminus of both the Saratoga and the Susquehanna\nDivisions of the D, & H. Here transfer is made from Hudson River\nNight Line and Hudson River Day Line steamers to U, & H. trains\nfor Saratoga Springs, Lake George, Lake Champlam, Adirondack\nMountains, Montreal and all points north. Connection is also made\nhere for Cooperstown, Binghamton and all points on the Susquehanna\nDivision and the West.\n\n    The general officea of The Delaware and Hudson R. R.. located in\nAlbany now, occupy one of the finest buildings in the city, situated\nat the foot of State Street, where the Company maintains a bureau\nof information for the convenience of those who intend to travel or\ntake a summer holiday. All inquiries, whether in person or by letter,\nwill receive prompt and courteous attentibn.\n\n\n\n      Courtesy of The Delaware and Hudson Railroad Corporation.\n\n\n\n\n                                   33\n      McMANUS & RILEY, INC.\n              CORRECT ATTIRE FOR\n\n              GENTLEMEN and BOYS\n\n\n49-51 State Street                     Albany, N.Y.\n\n\n\n\nDial 4-0259                            Free Delivery\n\nSUPER WINE & LIQUOR CO., INC.\n               Imported and Domestic\n      WINE        ",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-039",
+      "order": 39,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "FIORE'S COCKTAIL",
+      "name_es": "FIORE'S COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange peel, twisted",
+          "item_es": "orange peel, twisted",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Add ice, shake, strain, and serve in cocktail glass.",
+      "method_es": "Add ice, shake, strain, and serve in cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FIORE'S COCKTAIL\n         2 parts French Vermouth\n         2 parts Gin\n         1 part Italian Vermouth\n         2 dashes Curacao\n         1 piece Orange Peel, twisted\nAdd ice, shake, strain, and serve in cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-040",
+      "order": 40,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "TOM COLLINS",
+      "name_es": "TOM COLLINS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin                                           ^",
+          "item_es": "gin                                           ^",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "with club soda or vichy water",
+          "item_es": "with club soda or vichy water",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice, strain into a glass, add ice and fill Shake well with cracked ice, strain, decorate with fruit. Fizz",
+      "method_es": "Shake well with cracked ice, strain into a glass, add ice and fill Shake well with cracked ice, strain, decorate with fruit. Fizz",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM COLLINS\n         1 jigger Gin                                           ^\n         Juice of 1 Lime or Lemon\n         1 tahlespoonful Powdered Sugar\nShake well with cracked ice, strain into a glass, add ice and fill\nglass with club soda or vichy water.\n                          gin sour\n         1 jigger Gin\n         Juice of Y^ Lemon\n         Juice of Y^ Lime\n         1 teaspoonful powdered sugar\nShake well with cracked ice, strain, decorate with fruit. Fizz\nwith Carbonated Water."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-041",
+      "order": 41,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "SILVER FIZZ",
+      "name_es": "SILVER FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice, strain into glass, fill with Car",
+      "method_es": "Shake well with cracked ice, strain into glass, fill with Car",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SILVER FIZZ\n         Juice of Y^ Lime\n         Juice of Y^ Lemon\n         1 jigger Gin\n          1 tahlespoonful Powdered Sugar\n         White of one Egg\nShake well with cracked ice, strain into glass, fill with Car\nbonated or any Sparkling Water.\n\n                                35\nFree Delivery                            Phone 4-8578\n\n\n                J. D. KRUEGER\n           ,/    LIQUOR STORE\n\n\n   Exclusive Agency for Bellows & Co. Imports\nChoicest Imported and Domestic Wines and Liquors\n\n     123 So. Ferry Street, Schenectady, N.Y.\n\n\n\n\n   Imported and Domestic Wines and Liquors\n\n\n\nSpecializing\n               11^             ^   ^ A    JOSEPH S.\n STEAKS,                                     RICCI-\n  CLAMS,                                    TELLO,\nLOBSTERS^/Prop\n        1/             \\\n     RESTAURANT and GRILL\n                   Phone 2-7611\n344 Front St.         -             Schenectady, N.Y.\n                          36\n                     Phone 2-9726\n\n\n             LANG'S HOTEL\n\n            PARTIES and BANQUETS\n          CHOICEST FOOD and LIQUORS\n\nStop 33          -          Albany-Schenectady Road\n\n\n\n\n                     Phone 3-0331\n\n\n\n\n            JOHN A. SIGNER\n\n                     Distributor for\n\n\n          HEDRICK BREWING CO., INC.\n\n             ALE—LAGER—PORTER\n\n\n\n9 First Avenue               -         Albany, N.Y.\n\n\n\n                           38"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-042",
+      "order": 42,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "RASPBERRY FIZZ",
+      "name_es": "RASPBERRY FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "raspberry syrup",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain into medium size glass, fill with soda water.",
+      "method_es": "Shake well, strain into medium size glass, fill with soda water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RASPBERRY FIZZ\n\n         The Juice of   Lemon\n           Tablespoonful Powdered Sugar\n         The White of 1 Egg\n         2 Dashes Raspberry Syrup\n          1 Glass Sloe Gin\n\nShake well, strain into medium size glass, fill with soda water."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-043",
+      "order": 43,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "SOUTHERN FIZZ",
+      "name_es": "SOUTHERN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain into medium size glass and fill with soda",
+      "method_es": "Shake well, strain into medium size glass and fill with soda",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SOUTHERN FIZZ\n          The Juice of Yz Lemon\n         Yz Tablespoonful Powdered Sugar\n          1 Glass Gin\n\nShake well, strain into medium size glass and fill with soda\nwater.   Add fresh Mint leaves."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-044",
+      "order": 44,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "ORANGE FIZZ",
+      "name_es": "ORANGE FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain into medium size glass and fill with soda",
+      "method_es": "Shake well, strain into medium size glass and fill with soda",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORANGE FIZZ\n         The Juice of Y^ Orange\n         The Juice of Y^ Lime\n         1 jigger Gin\nShake well, strain into medium size glass and fill with soda\nwater."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-045",
+      "order": 45,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "GIN FIZZ",
+      "name_es": "GIN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice, strain into glass and fill with club",
+      "method_es": "Shake well with cracked ice, strain into glass and fill with club",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZZ\n\n          1 Glass Gin\n          The Juice of Y^ Lemon\n         Y2 Tablespoonful Powdered Sugar\nShake well with cracked ice, strain into glass and fill with club\nsoda.\n\n\n                                39\n                      RILEY'S                 LA\n                                    ON BEAUTIFU\nFamous for Its Lake House Dinners\n\n                               The Show T^lai\n                                     PRESENT NIGHTL\n\n\n       HERB GORDON and his BRUNSV\n                                       12 —   ART\n\nPhone Saratoga-2586                      M. j. )\n\n                 40\n.KE             HOUSE\n    LAKE LONELY\n                         Unexcelled Cuisine\n\n'e of (faratoga\nY   FOR DANCING\n\n\n/ICK RECORDING ORCHESTRA-\nISTS —     12\n\nOUNN                Saratoga Springs, N.Y.\n\n                        41\n       DINE       and      DANCE\n\n\n\n\n CLUB PARODY\n\n\n      FLOOR SHOW TWICE NIGHTLY\n\n           Continuous Entertainment\n\n\n\n\n100 Broadway—Albany                   Troy Road\n     MENANDS—Next to Hawkins Stadium\n\n                 Phone 3-9415\n\nAmos O'Brien, Prop.             J. Green, Mgr.\n\n\n\n\n                      42"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-046",
+      "order": 46,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "SLOE GIN FIZZ",
+      "name_es": "SLOE GIN FIZZ",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice; pour into long glass; and add soda water.",
+      "method_es": "Shake well with ice; pour into long glass; and add soda water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLOE GIN FIZZ\n        1 jigger Sloe Gin\n        2 dashes Lemon Juice\n        1 teaspoon Powdered Sugar\nShake well with ice; pour into long glass; and add soda water."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-047",
+      "order": 47,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "GIN RICKEY",
+      "name_es": "GIN RICKEY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Strain into glass and fill with Carbonated Water.",
+      "method_es": "Strain into glass and fill with Carbonated Water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN RICKEY\n\n         Cube of ice\n         1 jigger Gin\n        Juice of Yi or whole Lime\nStrain into glass and fill with Carbonated Water."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-048",
+      "order": 48,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "FORGET ME NOT",
+      "name_es": "FORGET ME NOT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well in ice and strain into glass. Squeeze Lemon Peel on Mixtures Shake well in cracked ice, strain, and serve.",
+      "method_es": "Stir well in ice and strain into glass. Squeeze Lemon Peel on Mixtures Shake well in cracked ice, strain, and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FORGET ME NOT\n         1 dash Absinthe\n         2 dashes Grenadine\n       1/3 French Vermouth\n       2/3 Gin\nStir well in ice and strain into glass. Squeeze Lemon Peel on\ntop.\n\n\n\n\n                               43\nA   PLACE TO EAT AND A             PLACE TO MEET\n\n            WHEN IN SCHENECTADY VISIT\n\n                 THE TAVERN\nSPECIAL LUNCHEONS and SPECIAL DINNERS\n             CHOICE WINES AND LIQUORS\n              KOOLER-KEG BEER ON TAP\n\n    Private Dining Room for Banquets and Dinner Parties\n                     Also Bridge Parties\n             For Reservations Telephone 2-1971\n916 State Street            -         Schenectady, N.Y.\n\n               E. H. Blase—C. F. Marx\n\n\n\n\n         The Finest in Domestic and Imported\n    WINES, WHISKIES, CORDIALS and GINS\n              At Lowest Prices Obtainable\n\n\n         FIELD'S LIQUOR STORE\n                   6-8 Erie Boulevard\n                 Schenectady, New York\n\n          Prompt Free Delivery\n\n                      Phone 4-6612\n\n\n                            44\n                           Mixtures\n                    BACARDI COCKTAIL\n\n         1 jigger Bacardi Rum\n       Yi teaspoonful Sugar\n        Juice of \"Y Lime\nShake well in cracked ice, strain, and serve."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-049",
+      "order": 49,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BACARDI ORANGE BLOSSOM",
+      "name_es": "BACARDI ORANGE BLOSSOM",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "of maraschino",
+          "item_es": "of maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in cracked ice, strain, and serve.",
+      "method_es": "Shake well in cracked ice, strain, and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BACARDI ORANGE BLOSSOM\n\n          jigger Bacardi Rum\n         1 dash of Maraschino\n         Juice of ^2 Orange\n         Shake well in cracked ice, strain, and serve."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-050",
+      "order": 50,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "RUM SOUR",
+      "name_es": "RUM SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "granulated sugar           ''",
+          "item_es": "granulated sugar           ''",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "of rum",
+          "item_es": "of rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice.         Strain into frappe glass and",
+      "method_es": "Shake well with cracked ice.         Strain into frappe glass and",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM SOUR\n\n         1 teaspoonful Granulated Sugar           ''\n         Juice of Yi Lemon\n         1 jigger of Rum\nShake well with cracked ice.         Strain into frappe glass and\ndecorate with cherry."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-051",
+      "order": 51,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "RUM COCKTAIL '",
+      "name_es": "RUM COCKTAIL '",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cocktail glass.",
+      "method_es": "Shake well and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM COCKTAIL '\n           Jamaica Rum\n        Yi French Vermouth\n         2 dashes Grenadine\n         Juice of    Lemon or 1 Lime\nShake well and strain into cocktail glass.\n\n                                45\n    Phone 2-3942                     Phone 2-1577\n\n\n    PELOP'S                   SILVER GRILL\n   Restaurant                        Restaurant\n\n   \"Food Supreme\"\n                               Famous for Its Food\nImported and Domestic                and Beverages\n     LIQUORS\n\n   488 State Street              220 State Street\n\n  Schenectady, N.Y.           Schenectady, New York\n\n\n\n                   Phone 4-6612\n\n\n\n\n           THE   FAMOUS      UTICA    BEER\n\n\n        PILSNER\nWURZBURGER SPARKLING ALE\n      ON DRAUGHT AND IN BOTTLES\n\n     Schenectady Branch: 2 Crescent Street\n             J. GASSNER, Manager\n\n                        46"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-052",
+      "order": 52,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "RUM COLLINS",
+      "name_es": "RUM COLLINS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice and strain into 10 ounce glass, add ice cubes. Fill up the glass with Carbonated Water and stir.",
+      "method_es": "Shake well with cracked ice and strain into 10 ounce glass, add ice cubes. Fill up the glass with Carbonated Water and stir.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM COLLINS\n\n        1teaspoonfuls Granulated Sugar\n          1 teaspoonful Lime Juice\n          Juice of Yz Lemon\n          1 jigger Rum\nShake well with cracked ice and strain into 10 ounce glass,\nadd ice cubes. Fill up the glass with Carbonated Water and\nstir."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-053",
+      "order": 53,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "JAMAICA COCKTAIL",
+      "name_es": "JAMAICA COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice and strain into cocktail glass.",
+      "method_es": "Shake with cracked ice and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JAMAICA COCKTAIL\n\n          1 jigger Rum\n          Juice of Yz Lime or Lemon\n          2 dashes Grenadine\n\nShake with cracked ice and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-054",
+      "order": 54,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "PLANTER'S PUNCH",
+      "name_es": "PLANTER'S PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice, strain, add 2 cubes of ice, and serve.",
+      "method_es": "Shake well in ice, strain, add 2 cubes of ice, and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PLANTER'S PUNCH\n\n          1 oz. Lime or Lemon Juice\n          2 oz. Sugar Syrup\n          3 oz. Jamaica Rum\n          4 oz. Water\n          1 dash Bitters\n\nShake well in ice, strain, add 2 cubes of ice, and serve."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-055",
+      "order": 55,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "MILK PUNCH",
+      "name_es": "MILK PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into a tumbler. Sprinkle with",
+      "method_es": "Shake well with ice and strain into a tumbler. Sprinkle with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MILK PUNCH\n          j4 jigger Jamaica Rum\n            1 tahlespoonful of Sugar Syrup\n           1 jigger Brandy\n           Balance rich milk\n\nShake well with ice and strain into a tumbler. Sprinkle with\nnutmeg.\n\n\n                                 47\nEstablished 1863                      Telephone 5-9152\n\n\n\n                     KAPPS\n\n                   We Specialize in\n LOBSTER, STEAK and CHICKEN DINNERS\n\n        Clambakes, Banquets and Parties\n\n1006 Sixth Street                     Rensselaer, N.Y\n\n\n\n\n   Most Complete Line of Foreign and Domestic\n               LIQUORS and WINES\n\n\n\nSCOTIA WINE & LIQUOR STORE\n\n\n                42 Mohawk Avenue\n                     Scotia, N.Y.\nPhone 2-1689                            Jerry Jerome\n\n\n                          48\n                      LAKE GEORGE\n   Lake George is undoubtedly the most picturesque resort in\nAmerica. On the lips of admiring thousands the fame of its beauty is\nannually retold in every nook and cranny of the civilized world. It has\na poetic charm and a delicacy of outline that win the love and admira\ntion of every beholder. Queenly in its majesty, • eerless in beauty,\nassociated with a wealth of historic facts and legendary lore; idyllic,\ndreamy, exquisitely lovely, it holds the mind and the senses captive.\n    The islands that seem to float on its glassy blue surface, the\ncrystalline purity of the water itself, the soothing atmosphere, the\nfairy-like nooks, sylvan retreats, sheltered coves and romantic glades,\nthe diversity of its lovely vistas; the harmonious contour of its\nverdure-clad mountains; the charming gradations in color of the gentle\nslopes, all unite to suit the sojourners' mood to his delightful sur\nroundings.\n\n    The lake is 32 miles in length; its width varies from % of a mile\nto 4 miles, and its islands are popularly supposed to correspond in\nnumber with the days of the year. The majestic mountains that en\nclose it are the eastern bastions of the Adirondack system.\n\n    Lake George is the most frequented of all American waters and it\nis generally conceded that it surpasses any of the famed Sc(^ch or\nEnglish lakes in every essential element of lake and mountain b^u y.\nIts rolling mountain shores invite an intimate acquaintance with the\nwoods and forest slopes, and the hotels and summer homes snug y\nnestled in their leafy embrace are exceedingly attractive.\n\n    Herbert Spencer in his autobiography says: \"Lake George is the\nmost pictures(jue thing I saw in the United States. Three of our\nEnglish lakes placed end to end would be something like it in extent\nand scenery.\"\n\n    According to Father Jogues, the devoted missionary and scholar,\nwho was brought up the lake, captive to the Iroquois in 1642, Lake\nGeorge was known to the Red Man as \"Andiatarocte.\" Father Jogues,\nthe first white man to gaze upon the lovelv water, named it Lake St.\nSacrament, which was changed nearly a century after by Gen. Johnson,\nin honor of the reigning sovereign. The title \"Horicon\" bestowed upon\n"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-056",
+      "order": 56,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "AL'S BRANDY COCKTAIL",
+      "name_es": "AL'S BRANDY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cocktail glass.",
+      "method_es": "Shake well and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "AL'S BRANDY COCKTAIL\n         1 dash Angostura Bitters\n         4 dashes Grenadine\n       1/3 French Vermouth\n       2/3 Brandy\nShake well and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-057",
+      "order": 57,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "PICK ME UP",
+      "name_es": "PICK ME UP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well and strain into cocktail glass.",
+      "method_es": "Shake well and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PICK ME UP\n         Yolk of 1 Egg\n         1 teaspoon Grenadine\n       1/3 jigger Curacao\n       2/3 jigger Brandy\nShake well and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-058",
+      "order": 58,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BOSTON EGG NOGG",
+      "name_es": "BOSTON EGG NOGG",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar syrup",
+          "item_es": "jarabe de azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "of madeira",
+          "item_es": "of madeira",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup",
+          "item_es": "jarabe de azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake up with fresh milk and strain into'large tumbler. Shake well with ice and strain into large glass. Sprinkle with",
+      "method_es": "Shake up with fresh milk and strain into'large tumbler. Shake well with ice and strain into large glass. Sprinkle with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BOSTON EGG NOGG\n         1 fresh Egg\n         1 teaspoonful Sugar Syrup\n           jigger of Madeira\n           jigger Jamaica Rum\n                                                                 ,1\nShake up with fresh milk and strain into'large tumbler.\n\n                           EGG NOGG\n        V2 jigger Jamaica Rum\n         1 fresh Egg\n         1 teaspoonful Sugar Syrup\nShake well with ice and strain into large glass. Sprinkle with\nNutmeg.\n\n                                53\n A    GOOD       PLACE       TO       DINE\n\n       DOMINIC PANETTA'S\n             RESTAURANT\n        ITALIAN-FRENCH KITCHEN\n\n     ITALIAN DISHES OUR SPECIALTY\n\n               Famous for Our\n          RAVIOLI and SPAGHETTI\n\nCor. Grand and Hudson Ave.   -      Albany, N.Y.\n\n\n\n\n FITZGERALD BROS. BREWING\n\n               COMPANY\n\n      Troy          -            New York\n\n\n             BURGOMASTER BEER\n\n              ALE and PORTER\n\n\n\n\n                        54\n                                                           -'V -   (V. •"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-059",
+      "order": 59,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY COCKTAIL",
+      "name_es": "BRANDY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and serve.",
+      "method_es": "Shake well with ice and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY COCKTAIL\n         1 jigger Brandy\n        Yi oz. Italian Vermouth\n         1 dash Orange Bitters\nShake well with ice and serve."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-060",
+      "order": 60,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ALEXANDER BRANDY",
+      "name_es": "ALEXANDER BRANDY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "heavy cream",
+          "item_es": "heavy cream",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cocoa",
+          "item_es": "creme de cocoa",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into cocktail glass.",
+      "method_es": "Shake well with ice and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALEXANDER BRANDY\n\n         1 jigger Brandy\n         1 pony Heavy Cream\n         1 pony Creme de Cocoa\nShake well with ice and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-061",
+      "order": 61,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "NEW YORK SPECIAL",
+      "name_es": "NEW YORK SPECIAL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into cocktail glass.",
+      "method_es": "Shake well with ice and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW YORK SPECIAL\n         1 jigger Brandy\n         1 pony Italian Vermouth\n         1 pony French Vermouth\nShake well with ice and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-062",
+      "order": 62,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "APRICOT BRANDY COCKTAIL",
+      "name_es": "APRICOT BRANDY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into cocktail glass.",
+      "method_es": "Shake well with ice and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APRICOT BRANDY COCKTAIL\n         1 pony Apricot Brandy\n         1 pony Curacao\n         3 dashes Lemon Juice\nShake well with ice and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-063",
+      "order": 63,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CINDERELLA COCKTAIL",
+      "name_es": "CINDERELLA COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice, strain into cocktail glass and serve.",
+      "method_es": "Shake well in ice, strain into cocktail glass and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CINDERELLA COCKTAIL\n         1 jigger Brandy\n         2 dashes Curacao\n\nShake well in ice, strain into cocktail glass and serve.\n\n                               55\n           DINE         AND          DANCE\n\n                            AT THE\n\n\n          CRESCENT BEACH CASINO\n          4 Miles North of Latham Traffic Circle\n WE CATER TO BANQUETS AND PARTIES\n                    Consult Us First\n\n\n\n\n            Absolutely the Best Ever Breived\n\n  I   !\n\n\n\n\n                     STANTON\n\n\n          LAGER     —       ALES     —   PORTER\n\n\n\n\n           THE STANTON BREWERY, INC.\n\nTroy, N.Y.              -            -     Since 1817\n\n\n\n\n                              56"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-064",
+      "order": 64,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY DAISY",
+      "name_es": "BRANDY DAISY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "yellow chartreuse",
+          "item_es": "yellow chartreuse",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "of lemon juice",
+          "item_es": "of lemon juice",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with cracked ice, strain into 8 oz. glass, add ice",
+      "method_es": "Shake well with cracked ice, strain into 8 oz. glass, add ice",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY DAISY\n         1 jigger Brandy\n          jigger Yellow Chartreuse\n      \\Y2 teaspoonfuls Sugar\n         2 dashes of Lemon Juice\n\nShake well with cracked ice, strain into 8 oz. glass, add ice\nand fill glass with charged water, garnish with fruit."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-065",
+      "order": 65,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "BRANDY FLIP",
+      "name_es": "BRANDY FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice, strain into cocktail glass and serve.",
+      "method_es": "Shake well in ice, strain into cocktail glass and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY FLIP\n\n         1 jigger Brandy\n       lj/2 teaspoonful Sugar\n          White of 1 Egg\nShake well in ice, strain into cocktail glass and serve.\n\n\n\n\n                                57\n        QUANDT BREWING CO.\n                        TROY, N.Y.\n\n\n\n\nLager               Ale            Stock              Porter\n                 Made with Spring Water"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-066",
+      "order": 66,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BOILED HAM",
+      "name_es": "BOILED HAM",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "flour, and three tablespoons butter or oleomarga",
+          "item_es": "flour, and three tablespoons butter or oleomarga",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve one piece of toast, with creamed ham on it, and one",
+      "method_es": "Serve one piece of toast, with creamed ham on it, and one",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BOILED HAM\n\nCover the shank of a ham with cold water. Bring to boil, then\nsimmer until tender, about 30 minutes to the pound.\nOne hour before ham is done, add one-half dozen potatoes, a\nsmall head of cabbage, cut up in pieces, four carrots, cubed,\nthree small onions and one pint string beans in season.\nPlace the ham in the center of a hot platter, and arrange the\nvegetables around it.\n\n               HAM AND POACHED EGGS\nMake a white sauce, using one and one-half cups milk, three\ntablespoons flour, and three tablespoons butter or oleomarga\nrine. Heat one or two cups finely chopped or ground cooked\nham with the white sauce. Pour it over buttered toast.\nServe one piece of toast, with creamed ham on it, and one\npoached egg to each person.\n\n                              58\n            Wine Mixtures"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-067",
+      "order": 67,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SHERRY COCKTAIL",
+      "name_es": "SHERRY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice, strain, and serve in cocktail glass.",
+      "method_es": "Shake well in ice, strain, and serve in cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY COCKTAIL\n\n         1 jigger Sherry\n         1 dash Orange Bitters\n         1 dash Angostura Bitters\nShake well in ice, strain, and serve in cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-068",
+      "order": 68,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "SHERRY COBBLER",
+      "name_es": "SHERRY COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in goblet filled with ice. Fill the glass with Carbonated",
+      "method_es": "Serve in goblet filled with ice. Fill the glass with Carbonated",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY COBBLER\n\n          1 teaspoonful Sugar\n          1 jigger Sherry\n         Yi Lemon Juice\nServe in goblet filled with ice. Fill the glass with Carbonated\nWater."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-069",
+      "order": 69,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BLACK KNIGHT",
+      "name_es": "BLACK KNIGHT",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour gently into tall glass. Do not stir.",
+      "method_es": "Pour gently into tall glass. Do not stir.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLACK KNIGHT\n\n           5 oz. Champagne\n           5 oz. Guiness Stout\n\nPour gently into tall glass. Do not stir.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-070",
+      "order": 70,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "MOGUL",
+      "name_es": "MOGUL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice; strain into cocktail glass.",
+      "method_es": "Shake well with ice; strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MOGUL\n\n           2 oz. Port Wine\n           2 oz. French Vermouth\n           3 dashes Lemon Juice\n Shake well with ice; strain into cocktail glass.\n\n\n                                 59\n               H E D R I C K\n          ALE, LAGER and PORTER\n\n                     Genesee\n     12-HORSE ALE IN CANS and QUARTS\n\n\n\n\n              J. M. McNEARNEY\n                     Distributor\n\n n\n\n\n\n\n                     Carling's\n  RED CAP ALE and BLACK LABEL LAGER\n\n\n\n\n121 Clinton Street        -        Schenectady, N.Y.\n            4-8431—PHONE—4-4004\n\n\n\n                         60"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-071",
+      "order": 71,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "EVENING GLORY",
+      "name_es": "EVENING GLORY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "yellow chartreuse",
+          "item_es": "yellow chartreuse",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and serve in 6 oz. glass.",
+      "method_es": "Shake well with ice and serve in 6 oz. glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EVENING GLORY\n         2 jiggers Port Wine\n         1 pony Yellow Chartreuse\n         Yolk of 1 Egg\n         2 teaspoons powdered Chocolate\nShake well with ice and serve in 6 oz. glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-072",
+      "order": 72,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "SHERRY FLIP",
+      "name_es": "SHERRY FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain, serve in wine glass.",
+      "method_es": "Shake well with ice and strain, serve in wine glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY FLIP\n\n         1 jigger Sherry\n         1 teaspoonful Sugar\n         1 Egg\nShake well with ice and strain, serve in wine glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-073",
+      "order": 73,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "PORT FLIP",
+      "name_es": "PORT FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice, strain and serve.",
+      "method_es": "Shake well in ice, strain and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PORT FLIP\n\n         4 jiggers Port Wine\n         1 teaspoon Sugar\n         White of 1 Egg\nShake well in ice, strain and serve."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-074",
+      "order": 74,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BARCLAY COCKTAIL",
+      "name_es": "BARCLAY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice and serve.",
+      "method_es": "Stir with ice and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BARCLAY COCKTAIL\n           jigger Sherry\n         1 jigger Whiskey\n         1 dash Orange Bitters\n         2 dashes Angostura Bitters\n         2 dashes Maraschino\n\nStir with ice and serve.\n\n\n\n\n                               61\nH E D R I G K\n\n     Still the Best\n\n\nLAGER            and   ALE\n\n\n\n\nHEDRICK BREWING CO., INC.\n\n       ALBANY, N.Y.\n\n\n\n\n            62\n  <lApple Jack Mixtures"
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-075",
+      "order": 75,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "APPLE JACK COCKTAIL",
+      "name_es": "APPLE JACK COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of lemon juice",
+          "item_es": "of lemon juice",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in ice and strain into cocktail glass.",
+      "method_es": "Shake well in ice and strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLE JACK COCKTAIL\n         2 jiggers of Apple Jack\n         1 pony of Lemon Juice\n         1 pony Grenadine\nShake well in ice and strain into cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-076",
+      "order": 76,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ROBERTA",
+      "name_es": "ROBERTA",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apple jack",
+          "item_es": "apple jack",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "of bitters",
+          "item_es": "of bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice, strain, serve in cocktail glass.",
+      "method_es": "Shake with ice, strain, serve in cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROBERTA\n\n         1 glass Apple Jack\n         1 glass French Vermouth\n         2 dashes of Bitters\n\nShake with ice, strain, serve in cocktail glass."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-077",
+      "order": 77,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "JACK FROST",
+      "name_es": "JACK FROST",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well in ice, strain into cocktail glass.",
+      "method_es": "Shake well in ice, strain into cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK FROST\n\n        yi Grenadine\n           Apple Jack\n         Juice of 1 Lime\n\nShake well in ice, strain into cocktail glass.\n\n\n\n\n                               63\n/TTf\nAPPETIZERS and\nLUNCHEON   RECIPES\n\n\n\n\n      65\n      D O B L E R\n\n                      p. O. N.\n\n\n       BEER and                         ALE",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-078",
+      "order": 78,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BAKED SLICE OF HAM",
+      "name_es": "BAKED SLICE OF HAM",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BAKED SLICE OF HAM\n\n      One slice premium ham, one and one-half inches\n      to two inches thick. One teaspoon dry mustard,\n      one quarter cup brown sugar, three quarters cup\n      milk.\n\nCombine mustard and sugar and rub over the surface of the\nham. Put it in a casserole or baking dish, pour the milk over\nit, cover and bake it in quite a hot oven for 25 minutes.\n\n\n                             66\n                 ^Appetizers",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-079",
+      "order": 79,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "WELSH RAREBIT",
+      "name_es": "WELSH RAREBIT",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir until the cheese is entirely melted; then season with the",
+      "method_es": "Stir until the cheese is entirely melted; then season with the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WELSH RAREBIT\n       1 pound of American Cheese,        cupful of Ale\n       or Beer, dash of Cayenne,   teaspoonful of Dry\n       Mustard, Y2 teaspoonful of Salt, slices of Toast.\nGrate the American Cheese into fine pieces.     Place them in a\nsaucepan or chafing dish with three-quarters of the beer or ale.\nStir until the cheese is entirely melted; then season with the\nMustard, Salt and Pepper. Then pour the mixture over the\nslices of hot toast, cut in triangles or circles. Everything must\nbe very hot and it must be served at once, as the cheese quickly\nhardens.\n\nSome use a teaspoonful of Butter, a few drops of Onion\nJuice, and the beaten Yolks of two Eggs, added just before\nserving.   The Egg makes it a little richer and prevents the\nCheese hardening so quickly.\n\n                WELSH RAREBIT NO. 2\n       Two cups Grated Cheese, Yolks of two Eggs,\n       one-half cup Milk; Salt and Cayenne Pepper to\n       taste.\n\nToast carefully slices of Bread, with the crusts removed. While\nhot, butter them, and then plunge in a bowl of Hot Water.\nPlace on a heated dish and stand in the oven to keep warm\nwhile you make the Rarebit.      Put the Milk in a porcelain-\nlined or granite saucepan; stand it over a moderate fire; when\nboiling hot, add the Cheese; stir continually until the Cheese\nis melted; add the Salt, Cayenne Pepper and Yolks, and pour\nit over the Toasted Bread. If the Rarebit is stringy and tough,\nit is the fault of the Cheese not being rich enough to melt.\n\n                               67\nOld English Dairy Cheese makes the best Welsh Rarebit.\nStale beer may be used in place of Milk.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-080",
+      "order": 80,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHILI CON CARNE",
+      "name_es": "CHILI CON CARNE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour over it a small can of Heinz Cream of Tomato Soup. Serve with boiled or baked potatoes or with boiled rice. served very cold and spread upon Toast or Crackers. mixture. They are served hot. The Bread is cut a quarter",
+      "method_es": "Pour over it a small can of Heinz Cream of Tomato Soup. Serve with boiled or baked potatoes or with boiled rice. served very cold and spread upon Toast or Crackers. mixture. They are served hot. The Bread is cut a quarter",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHILI CON CARNE\n\nBrown 1 pound Ground Beef and a chopped Onion in a skillet\nwith 1 tablespoonful Butter. Add a 21j4 oz. can of Heinz\nOven Baked Red Kidney Beans and stir until well blended.\nPour over it a small can of Heinz Cream of Tomato Soup.\nSeason, using 1 teaspoonful Salt, a dash of Pepper and J4 tea-\nspoonful Chili Powder (if desired).\nServe with boiled or baked potatoes or with boiled rice.\n\n                      CLUB SANDWICH\n\n       3 slices Toast, )4 ineh each.\n       On first slice—Lettuce, thin Mayonnaise, sliced\n           Chicken.\n       On second slice—Lettuce, thin Mayonnaise, strips\n           of Bacon, slice of Tomato.\n\nTrim edges, cut diagonally across, serve both pieces on plate\nwith Radish or Stuffed Olives, strips of Pimento or Green\nPepper.\n\n\n\n\n                               68\n                     (3ANAPES\n             ALMOND AND OLIVE SPREAD\nCombine      lb- finely chopped Salted Almonds with    cup\nminced Stuffed Olives, 2 tablespoons Mayonnaise and 1 tea\nspoon French Dressing.\n\n\n             FATE DE FOiS GRAS SPREAD\nThis Savory Paste made from Goose Liver seasoned with\nWine and Truffles has a distinctly individual flavor and is\nserved very cold and spread upon Toast or Crackers.\n\n\n        CAVIAR AND CREAM CHEESE ROLL\nRoll small ball of Cream Cheese between moistened fingers.\nRoll Cheese Ball gently in Caviar and place on Sauted Toast\nfoundation or   Buttered Cracker.     Garnish with Chopped\nParsley.\n\n                         CANAPES\nCanapes are slices of Bread toasted, dipped in Butter, and\nbrowned in the oven. The slices are then covered with some\nmixture. They are served hot. The Bread is cut a quarter\nof an inch thick.\n\n\n                    ANCHOVY CANAPES\nSpread strips of fried Bread with Anchovy Paste.      Arrange\nin lines, on top, alternate rows of the White and Yolk of Hard\nBoiled Eggs chopped fine.\n\n                             69\n                   SARDINE CANAPES\n\nSpread circles of Fried Bread with a layer of Sardine Paste.\nArrange on top, in circles to resemble a rosette, lines of chopped\nHard Boiled Egg and Chopped Pickle.\n\n\n                       HAM CANAPES\nPound some chopped Ham to a paste; moisten it with Cream\nor Milk. Spread it on the Fried Bread; dust with Cayenne,\nsprinkle with Cheese, and place in oven to brown.\n\n\n                   CAVIAR AND SHRIMP\nSpread Cracker or Toast with Butter and Caviar. Lay slice\nof cooked Shrimp on center of spread and circle it with ring\nof chopped Hard Cooked Egg—keeping the Yolk and White\nseparate.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-081",
+      "order": 81,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ANCHOVY AND CREAM CHEESE SPREAD",
+      "name_es": "ANCHOVY AND CREAM CHEESE SPREAD",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ANCHOVY AND CREAM CHEESE SPREAD\n       One 3 oz. package Cream Cheese, 1 tablespoon\n       Anchovy Paste, 1 teaspoon Minced Onion and mix\n       to a smooth paste.\n\nSpread on foundation of Toast, Crackers, etc.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-082",
+      "order": 82,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHEESE AND GREEN PEPPER SPREAD",
+      "name_es": "CHEESE AND GREEN PEPPER SPREAD",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of cayenne and 1 tablespoon garlic flavored",
+          "item_es": "of cayenne and 1 tablespoon garlic flavored",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHEESE AND GREEN PEPPER SPREAD\n       Y2 lb. Cottage Cheese, 2 tablespoons minced\n       Green Pepper, 1 tablespoon minced Onion, a\n       dash of Cayenne and 1 tablespoon garlic flavored\n       French Dressing.\n\n                                70\n                       CAVIAR OLIVES\nCover Stuffed Olive completely with a mixture of ^ Cream\nCheese and    Anchovy Paste. Roll in Caviar and serve on\nCracker."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-083",
+      "order": 83,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SARDINE AND EGG",
+      "name_es": "SARDINE AND EGG",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "mayonnaise and 1 tablespoon garlic flavored",
+          "item_es": "mayonnaise and 1 tablespoon garlic flavored",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SARDINE AND EGG\nCombine 4 Hard Cooked Egg Yolks minced fine with one\noz. can Sardines mashed. Add 1 tablespoon Lemon Juice, 2\ntablespoons Mayonnaise and 1 tablespoon Garlic flavored\nFrench Dressing."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-084",
+      "order": 84,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CRABMEAT SPREAD",
+      "name_es": "CRABMEAT SPREAD",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Mix one 6 oz. can Flaked Crabmeat with J/a cup Chopped",
+      "method_es": "Mix one 6 oz. can Flaked Crabmeat with J/a cup Chopped",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CRABMEAT SPREAD\nMix one 6 oz. can Flaked Crabmeat with J/a cup Chopped\nCelery,   cup minced canned Pimento,     cup Mayonnaise,\n% teaspoon Salt,  teaspoon Paprika. Spread on foundation.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-085",
+      "order": 85,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "LOBSTER SPREAD",
+      "name_es": "LOBSTER SPREAD",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LOBSTER SPREAD\nCombine one 6 oz. can Lobster, minced, 1 tablespoon Lemon\nJuice, IJ^ teaspoons Mayonnaise, 1 tablespoon garlic flavored\nFrench Dressing. Spread on foundation.\n\n                  SALMON AND TOMATO\nDrain juice from canned Tomatoes and mix pulp with minced\nSalmon (or chopped Ham), add chopped Green Pepper and\nOnion and A-1 Sauce, chill in refrigerator. Spread thickly on\ntoast and garnish with slices of Pimento or sliced Stuffed\nOlives.\n\n\n                 HAM AND OLIVE SPREAD\n          ''/i lb. minced Cooked Ham (2/3 cup),    cup\n          finely chopped Stuffed Olives, 2 tablespoons\n          minced Parsley, and )4 cup Mayonnaise.\n\n                              71",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-086",
+      "order": 86,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ROQUEFORT SPREAD",
+      "name_es": "ROQUEFORT SPREAD",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROQUEFORT SPREAD\nMash on 4 oz. package Roquefort Cheese with one 3 oz. pack\nage of Cream Cheese, 1 tablespoon minced Onion and Ya cup\nof top Milk or Cream.\n\n\n        PINEAPPLE AND CHICKEN SPREAD\nCombine Ya cup canned crushed Pineapple with Y^ cup chopped\ncooked or canned Chicken and 2 tablespoons Mayonnaise.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-087",
+      "order": 87,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ITALIAN SPAGHETTI MEAT BALLS",
+      "name_es": "ITALIAN SPAGHETTI MEAT BALLS",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "pour off all fat except enough to cover bottom of pan. Add strainer to remove seeds.    Add     1 can Tomato Paste.   Put",
+      "method_es": "pour off all fat except enough to cover bottom of pan. Add strainer to remove seeds.    Add     1 can Tomato Paste.   Put",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ITALIAN SPAGHETTI MEAT BALLS\n\n      \\Y^ lbs. Round Steak, Y^ lb- fresh Pork ground\n      together, 1/3 loaf Bread, 3 Eggs, chopped Parsley,\n      handful grated Italian Cheese, Red Pepper to suit\n      taste, >4 teaspoon Salt, pinch of Allspice.\nSoften Bread in Cold Water.         Squeeze dry, mix with meat\nand other ingredients, form into balls. Fry meat balls in hot\nfat until they are done and brown. Remove meat balls and\npour off all fat except enough to cover bottom of pan. Add\ntwo cans Italian Tomatoes, one small piece of Garlic, and boil\nuntil done and quite tbick, remove Garlic, strain through\nstrainer to remove seeds.    Add     1 can Tomato Paste.   Put\nback in pan, bring to a boil, add meat balls and simmer slowly\none and a half hours.\n\nCook Spaghetti immediately, when ready to serve, spread on\nlarge platter one layer of cooked Spaghetti. Spread some\nSauce and Grated Cheese, keep spreading cooked Spaghetti\nand adding Sauce a layer at a time until platter is full.\n\n\n\n\n                               72\n                        c§ALADS\n                     POTATO SALAD\n       Six large Irish Potatoes, two Onions, four Eggs,\n      one teaspoonful Black Pepper, one small cup\n      Vinegar, one teaspoonful Mustard, two table-\n      spoonful Butter and one teaspoonful Celery Seed.\nBoil Potatoes and when cool cut in cubes, add the Onion and\nCelery, chopped fine.   Make a dressing of Yolks of Eggs\nhard boiled and the Vinegar, Mustard, Butter and Pepper and\nSalt to taste; chop Whites of Eggs fine and mix well, then stir\ninto the Potatoes.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1936-cocktails-and-appetizers-by-a-connnoisseur-088",
+      "order": 88,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHICKEN SALAD",
+      "name_es": "CHICKEN SALAD",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Mix with French Dressing and set away for an hour or more. added, roll in more dry crumbs. Allow 15 minutes for coat",
+      "method_es": "Mix with French Dressing and set away for an hour or more. added, roll in more dry crumbs. Allow 15 minutes for coat",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHICKEN SALAD\nCut Cold Roast or Boiled Chicken in small dice, add one-half\nas much Blanched Celery cut fine, season with Salt and Pepper.\nMix with French Dressing and set away for an hour or more.\nJust before serving stir in some Mayonnaise slightly thinned\nwith Lemon Juice, arrange on Lettuce Leaves and cover with\nthick Mayonnaise.\n\n                 SALMON CROQUETTES\nMake a thick white sauce with 54 cup Butter, 1/3 cup\nFlour, 1 cup Milk. Add 1 can flaked Salmon. Season with\nSalt, Pepper and chopped Parsley. Add juice of 54 Lemon.\nChill and form into croquettes, roll in fine, dry crumbs, dip\nin beaten egg to which two tablespoons cold water has been\nadded, roll in more dry crumbs. Allow 15 minutes for coat\ning to harden. Fry in deep fat 300° F., hot enough to brown\nin 40 seconds.\nSalmon may be substituted in all Tuna Fish recipes.\n\n                              73\n         JOYCE'S\n  LOG TAVERN\n\nDancing Nightly Except Mondays\n                    WITH\n\n\nTOMMY RHODES and His HI-HAT KADETS\n\n                     AT\n\n\n\nJOYCE'S FAMOUS LOG CABIN\n\n\n\n\n  THE BEST IN FOODS and BEVERAGES\n\n\n\n\n61 North Main St.          Mechanicville, N.Y.\n                         INDEX\n\n                                                Page\nDefinition of Quantity                             8\n\nCocktails and Mixed Drinks;                            i\n    Apple Jack Mixtures                           63\n    Brandy Mixtures                               53\n    Gin Base                                      25\n    Rum Mixtures                                  45\n    Whiskey Base                                  11\n    Wine Mixtures                                 59\n\nAppetizers and Luncheon Recipes:\n    Appetizers                                    67\n    Canapes                           !_          69\n    Salads                                        73\n\n\n         INDEX TO ADVERTISERS\n\n         BREWERIES AND DISTRIBUTORS\nAdirondack Distributing Co., Glens Falls, N.Y     22\nDobler                                            66\nFitzgerald Bros., Troy, N.Y                      54\nJ. Gassner, Schenectady, N.Y                     46\nHedrick Brewing Co., Inc., Albany, N.Y           62\nJ. M. McNearney, Schenectady, N.Y                60\nQuandt Brewing Co., Troy, N.Y                    58\nJohn A. Signer, Albany, N.Y                      38\nStanton Brewery, Inc., Troy, N.Y                 56\nWest End Brewing Co., Utica, N.Y                 30\n\n                            75\n               GENT'S FURNISHINGS\n                                                       Page\nMcManus & Riley, Albany, N.Y                             34\n\n                        HOTELS\nAdelphi Hotel, Saratoga Springs, N.Y                    10\nAdirondack Hotel, Warrensburg, N.Y                      28\nBennett Hotel, Glens Palls, N.Y                         24\nFitzgerald's Hotel, Glens Falls, N.Y                    26\nHayner House, Ballston Spa, N.Y                         14\nLang's Hotel, Albany-Schenectady Rd           ",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    }
+  ]
+}
