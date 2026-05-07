@@ -304,6 +304,22 @@
     "bookFile": "data/euvs-books/1888-bartenders-manual-by-theodore-proulx-revised-edition.json"
   },
   {
+    "id": "1889-methode-pour-composer-soi-meme-les-boissons-americaines-by-emile-lefeuvre",
+    "year": 1889,
+    "decade": "1880s",
+    "title": "Méthode pour Composer Soi-Même les Boissons Américaines",
+    "author": "Emile Lefeuvre",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1889)",
+    "notes": "Manual francés histórico de Emile Lefeuvre.",
+    "sectionCount": 2,
+    "recipeCount": 88,
+    "bookFile": "data/euvs-books/1889-methode-pour-composer-soi-meme-les-boissons-americaines-by-emile-lefeuvre.json"
+  },
+  {
     "id": "1891-drinks-a-la-mode-by-mrs-de-salis",
     "year": 1891,
     "decade": "1890s",
@@ -800,6 +816,22 @@
     "bookFile": "data/euvs-books/1920-down-the-hatch.json"
   },
   {
+    "id": "1922-quelques-recettes-pour-boissons-americaines",
+    "year": 1922,
+    "decade": "1920s",
+    "title": "Quelques Recettes pour Boissons Américaines",
+    "author": "Anonymous",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1922)",
+    "notes": "Manual francés.",
+    "sectionCount": 2,
+    "recipeCount": 40,
+    "bookFile": "data/euvs-books/1922-quelques-recettes-pour-boissons-americaines.json"
+  },
+  {
     "id": "1923-harry-of-ciros-abc-of-mixing-cocktails-second-impression",
     "year": 1923,
     "decade": "1920s",
@@ -1056,6 +1088,22 @@
     "bookFile": "data/euvs-books/1928-heres-how-by-judge-jr-3rd-printind.json"
   },
   {
+    "id": "1928-recettes-de-cocktails-pour-1929-par-mm-alimbau-et-milhorat",
+    "year": 1928,
+    "decade": "1920s",
+    "title": "Recettes de Cocktails pour 1929",
+    "author": "Alimbau & Milhorat",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1928)",
+    "notes": "Manual francés Alimbau & Milhorat.",
+    "sectionCount": 2,
+    "recipeCount": 41,
+    "bookFile": "data/euvs-books/1928-recettes-de-cocktails-pour-1929-par-mm-alimbau-et-milhorat.json"
+  },
+  {
     "id": "1929-for-home-use-by-e-g-g-smythers-pty-ltd",
     "year": 1929,
     "decade": "1920s",
@@ -1310,6 +1358,22 @@
     "sectionCount": 12,
     "recipeCount": 107,
     "bookFile": "data/euvs-books/1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them.json"
+  },
+  {
+    "id": "1931-cuban-cookery-by-blanche-z-de-baralt",
+    "year": 1931,
+    "decade": "1930s",
+    "title": "Cuban Cookery",
+    "author": "Blanche Z. de Baralt",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "Cuba",
+    "edition": "First Edition (1931)",
+    "notes": "Manual cubano de cocina con sección de bebidas.",
+    "sectionCount": 2,
+    "recipeCount": 26,
+    "bookFile": "data/euvs-books/1931-cuban-cookery-by-blanche-z-de-baralt.json"
   },
   {
     "id": "1931-shakeem-up-a-practical-handbook-of-polite-drinking-3rd-printing",
