@@ -144,6 +144,22 @@
     "bookFile": "data/euvs-books/1884-how-to-mix-drinks-bar-keepers-handbook-1884.json"
   },
   {
+    "id": "1884-the-complete-bartender-art-of-mixing-plain-and-fancy-drinks",
+    "year": 1884,
+    "decade": "1880s",
+    "title": "The Complete Bartender — Art of Mixing Plain and Fancy Drinks",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1884)",
+    "notes": "Manual pre-Prohibición histórico de mixología.",
+    "sectionCount": 2,
+    "recipeCount": 19,
+    "bookFile": "data/euvs-books/1884-the-complete-bartender-art-of-mixing-plain-and-fancy-drinks.json"
+  },
+  {
     "id": "1884-the-modern-bartenders-guide-by-o-h-byron",
     "year": 1884,
     "decade": "1880s",
@@ -286,6 +302,22 @@
     "sectionCount": 2,
     "recipeCount": 185,
     "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
+  },
+  {
+    "id": "1906-how-to-mix-drinks-compiled-selected-and-concocted-by-g-spaulding-and-w-rositer",
+    "year": 1906,
+    "decade": "1900s",
+    "title": "How to Mix Drinks",
+    "author": "G. Spaulding & W. Rositer",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1906)",
+    "notes": "Manual pre-Prohibición de Spaulding & Rositer.",
+    "sectionCount": 2,
+    "recipeCount": 103,
+    "bookFile": "data/euvs-books/1906-how-to-mix-drinks-compiled-selected-and-concocted-by-g-spaulding-and-w-rositer.json"
   },
   {
     "id": "1906-louis-mixed-drinks-by-muckensturm",
@@ -848,6 +880,22 @@
     "bookFile": "data/euvs-books/1930-shakeem-up-by-virginia-elliott-and-phil-d-stong.json"
   },
   {
+    "id": "1930-the-drinks-of-yesteryear-a-mixology",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "The Drinks of Yesteryear: A Mixology",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1930)",
+    "notes": "Manual de Prohibición — recopilación de bebidas pre-Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 160,
+    "bookFile": "data/euvs-books/1930-the-drinks-of-yesteryear-a-mixology.json"
+  },
+  {
     "id": "1930-the-saloon-in-the-home",
     "year": 1930,
     "decade": "1930s",
@@ -1262,6 +1310,22 @@
     "sectionCount": 2,
     "recipeCount": 70,
     "bookFile": "data/euvs-books/1934-charles-book-of-punches-and-cocktails.json"
+  },
+  {
+    "id": "1934-cocktail-parade",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Cocktail Parade",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1934)",
+    "notes": "Manual post-Repeal — Cocktail Parade.",
+    "sectionCount": 2,
+    "recipeCount": 24,
+    "bookFile": "data/euvs-books/1934-cocktail-parade.json"
   },
   {
     "id": "1934-cocktails-bar-la-florida-by-constante-ribalaigua-vert",
