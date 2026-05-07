@@ -4,8 +4,8 @@
     "title": "Cocktails",
     "author": "Piero Grandi",
     "year": 1927,
-    "language": "it",
-    "language_name": "Italiano",
+    "language": "fr",
+    "language_name": "Francés",
     "publisher": "Self-published",
     "city": "Italy",
     "edition": "First Edition (1927)",
@@ -159,13 +159,21 @@
       "category": "cocktail",
       "name_es": "ClNZANO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de gom-",
+          "item_es": "sirop de gom-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -193,13 +201,21 @@
       "category": "cocktail",
       "name_es": "COMMODORE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rye yhisky",
+          "item_es": "rye yhisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +226,35 @@
       "category": "cocktail",
       "name_es": "CORONATION COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bilter",
+          "item_es": "bilter",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "ver",
+          "item_es": "ver",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "gre",
+          "item_es": "gre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Servez dan s un lumbler un verre de Ver",
       "method_es": "Servez dan s un lumbler un verre de Ver",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +265,21 @@
       "category": "cocktail",
       "name_es": "DEMPSEY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "anis de osa",
+          "item_es": "anis de osa",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -261,13 +307,21 @@
       "category": "cocktail",
       "name_es": "EAST INDIA COCKTA lL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cura-",
+          "item_es": "cura-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -346,13 +400,35 @@
       "category": "cocktail",
       "name_es": "GIMLET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de gomme 2",
+          "item_es": "sirop de gomme 2",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angous'tu-",
+          "item_es": "angous'tu-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "grenadi-",
+          "item_es": "grenadi-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -516,13 +592,21 @@
       "category": "cocktail",
       "name_es": "IRISH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angou-",
+          "item_es": "angou-",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -533,13 +617,70 @@
       "category": "cocktail",
       "name_es": "JAPANESE COCKT AIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "campa-",
+          "item_es": "campa-",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "cura-",
+          "item_es": "cura-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaç110",
+          "item_es": "curaç110",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "menthe",
+          "item_es": "menthe",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "si-",
+          "item_es": "si-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pe-",
+          "item_es": "pe-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -584,13 +725,49 @@
       "category": "cocktail",
       "name_es": "MARTINI (Sweet)",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curn-",
+          "item_es": "curn-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "an-",
+          "item_es": "an-",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de gom-",
+          "item_es": "sirop de gom-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "campari bit-",
+          "item_es": "campari bit-",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "marnschi",
+          "item_es": "marnschi",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -601,13 +778,21 @@
       "category": "cocktail",
       "name_es": "MOlJNTAIN COCKTA IL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lime",
+          "item_es": "lime",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -635,13 +820,28 @@
       "category": "cocktail",
       "name_es": "PING-PONG COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus de",
+          "item_es": "jus de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "crêmc frni ch c",
+          "item_es": "crêmc frni ch c",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,
@@ -686,13 +886,21 @@
       "category": "cocktail",
       "name_es": "PORT WINE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oran-",
+          "item_es": "oran-",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -754,13 +962,21 @@
       "category": "cocktail",
       "name_es": "QUELLE VIE CO CKT AIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -771,13 +987,21 @@
       "category": "cocktail",
       "name_es": "SAHATOGA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -805,13 +1029,21 @@
       "category": "cocktail",
       "name_es": "SILVER S'tREAK COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus de",
+          "item_es": "jus de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -890,13 +1122,42 @@
       "category": "cocktail",
       "name_es": "TRILBY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bit-",
+          "item_es": "orange bit-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "mara-",
+          "item_es": "mara-",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "ab-",
+          "item_es": "ab-",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 52,
@@ -992,13 +1253,21 @@
       "category": "cocktail",
       "name_es": "WASH INGTON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de",
+          "item_es": "sirop de",
+          "amount": "2",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 58,
@@ -1026,13 +1295,21 @@
       "category": "cocktail",
       "name_es": "WEST JNDIAN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angoustu r a",
+          "item_es": "angoustu r a",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1094,13 +1371,21 @@
       "category": "cocktail",
       "name_es": "XERES COCKTAIL, OR SPANISH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de gom",
+          "item_es": "sirop de gom",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 64,
@@ -1162,13 +1447,21 @@
       "category": "cobbler",
       "name_es": "PORT WINE COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gla-",
+          "item_es": "gla-",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "LAK E OF GENEVA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 68,
@@ -1281,13 +1574,21 @@
       "category": "cocktail",
       "name_es": "GIN RICKEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace cla ns un lum -",
+          "item_es": "glace cla ns un lum -",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 75,
@@ -1298,13 +1599,28 @@
       "category": "cocktail",
       "name_es": "JOHN COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace dans un",
+          "item_es": "glace dans un",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "citron dans un grand",
+          "item_es": "citron dans un grand",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1332,13 +1648,21 @@
       "category": "cocktail",
       "name_es": "RUBY F lZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 78,
@@ -1366,13 +1690,28 @@
       "category": "cocktail",
       "name_es": "TOM COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "su-",
+          "item_es": "su-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "old tom",
+          "item_es": "old tom",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 80,
@@ -1400,13 +1739,21 @@
       "category": "cocktail",
       "name_es": "BOSOM CARESSER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gre-",
+          "item_es": "gre-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1468,13 +1815,21 @@
       "category": "flip",
       "name_es": "SHERRY FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "su-",
+          "item_es": "su-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1519,13 +1874,35 @@
       "category": "punch",
       "name_es": "ORGEAT PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "or-",
+          "item_es": "or-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "old bourbo n",
+          "item_es": "old bourbo n",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "S. A. T. A.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 89,
@@ -1536,13 +1913,21 @@
       "category": "sour",
       "name_es": "BRAN DY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bran-",
+          "item_es": "bran-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 90,
@@ -1604,13 +1989,21 @@
       "category": "cocktail",
       "name_es": "LEMON SQUASHI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "orange bitters",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "shake r sur le verre et mélangez doucement.",
       "method_es": "shake r sur le verre et mélangez doucement.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 94,
@@ -1655,13 +2048,21 @@
       "category": "cocktail",
       "name_es": "OHGEAT L EMONADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pe-",
+          "item_es": "pe-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 97,
@@ -1706,13 +2107,35 @@
       "category": "cocktail",
       "name_es": "DIFFÉ RENT ES BO ISSONS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grena-",
+          "item_es": "grena-",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sirop",
+          "item_es": "sirop",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "s irop de",
+          "item_es": "s irop de",
+          "amount": "112",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }
