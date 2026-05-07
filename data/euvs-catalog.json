@@ -144,6 +144,22 @@
     "bookFile": "data/euvs-books/1869-drinking-cups-their-custom-by-henry-porter-george-roberts.json"
   },
   {
+    "id": "1869-haneys-steward-barkeepers-manual",
+    "year": 1869,
+    "decade": "1860s",
+    "title": "Haney's Steward & Barkeeper's Manual",
+    "author": "Haney",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "NY",
+    "edition": "First Edition (1869)",
+    "notes": "Manual postbellum.",
+    "sectionCount": 2,
+    "recipeCount": 17,
+    "bookFile": "data/euvs-books/1869-haneys-steward-barkeepers-manual.json"
+  },
+  {
     "id": "1871-barkeepers-ready-reference",
     "year": 1871,
     "decade": "1870s",
@@ -206,6 +222,22 @@
     "sectionCount": 2,
     "recipeCount": 7,
     "bookFile": "data/euvs-books/1872-the-gentlemans-table-guide-2nd-edition.json"
+  },
+  {
+    "id": "1874-the-american-bar-tender-or-the-art-and-mystery-of-mixing-drinks-by-e-a-simmons",
+    "year": 1874,
+    "decade": "1870s",
+    "title": "The American Bar-Tender",
+    "author": "E. A. Simmons",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1874)",
+    "notes": "Manual histórico — 'Art and Mystery of Mixing Drinks'.",
+    "sectionCount": 2,
+    "recipeCount": 15,
+    "bookFile": "data/euvs-books/1874-the-american-bar-tender-or-the-art-and-mystery-of-mixing-drinks-by-e-a-simmons.json"
   },
   {
     "id": "1876-the-bar-tenders-guide-or-how-to-mix-all-kinds-of-plain-and-fancy-drinks-by-jerry-thomas",
@@ -432,6 +464,22 @@
     "bookFile": "data/euvs-books/1890-the-art-of-drinking-by-g-g-gervinus.json"
   },
   {
+    "id": "1891-cocktail-botthbys-american-bar-tender",
+    "year": 1891,
+    "decade": "1890s",
+    "title": "Boothby's American Bar-Tender",
+    "author": "William T. Boothby",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1891)",
+    "notes": "Manual de Cocktail Bill Boothby.",
+    "sectionCount": 2,
+    "recipeCount": 93,
+    "bookFile": "data/euvs-books/1891-cocktail-botthbys-american-bar-tender.json"
+  },
+  {
     "id": "1891-drinks-a-la-mode-by-mrs-de-salis",
     "year": 1891,
     "decade": "1890s",
@@ -560,6 +608,22 @@
     "bookFile": "data/euvs-books/1896-bariana-louis-fouquet.json"
   },
   {
+    "id": "1896-drinks-of-all-kinds-for-all-seasons-by-frederick-and-seymour-davies",
+    "year": 1896,
+    "decade": "1890s",
+    "title": "Drinks of All Kinds For All Seasons",
+    "author": "Frederick & Seymour Davies",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1896)",
+    "notes": "Manual UK Victoriano.",
+    "sectionCount": 2,
+    "recipeCount": 11,
+    "bookFile": "data/euvs-books/1896-drinks-of-all-kinds-for-all-seasons-by-frederick-and-seymour-davies.json"
+  },
+  {
     "id": "1898-cocktails-how-to-make-them-providence-livermore-knight-co",
     "year": 1898,
     "decade": "1890s",
@@ -606,6 +670,22 @@
     "sectionCount": 2,
     "recipeCount": 185,
     "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
+  },
+  {
+    "id": "1904-drinks-as-they-are-mixed-by-paul-e-lowe",
+    "year": 1904,
+    "decade": "1900s",
+    "title": "Drinks as They Are Mixed",
+    "author": "Paul E. Lowe",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1904)",
+    "notes": "Manual pre-Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 7,
+    "bookFile": "data/euvs-books/1904-drinks-as-they-are-mixed-by-paul-e-lowe.json"
   },
   {
     "id": "1904-one-hundred-and-one-beverages",
@@ -686,6 +766,22 @@
     "sectionCount": 2,
     "recipeCount": 60,
     "bookFile": "data/euvs-books/1906-louis-mixed-drinks-by-muckensturm.json"
+  },
+  {
+    "id": "1906-louis-mixed-drinks-with-hints-for-the-care-serving-of-wines-by-louis-muckensturm-2",
+    "year": 1906,
+    "decade": "1900s",
+    "title": "Louis' Mixed Drinks (variante)",
+    "author": "Louis Muckensturm",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Variante (1906-2)",
+    "notes": "Variante del 1906 Muckensturm.",
+    "sectionCount": 2,
+    "recipeCount": 10,
+    "bookFile": "data/euvs-books/1906-louis-mixed-drinks-with-hints-for-the-care-serving-of-wines-by-louis-muckensturm-2.json"
   },
   {
     "id": "1907-smacks-and-smiles-tenth-edition-by-charles-smith",
@@ -816,6 +912,22 @@
     "bookFile": "data/euvs-books/1910-jacks-manual-by-j-a-grohusko.json"
   },
   {
+    "id": "1910-manual-del-cantinero-o-cocktelero-perfecto",
+    "year": 1910,
+    "decade": "1910s",
+    "title": "Manual del Cantinero o Cocktelero Perfecto",
+    "author": "Anonymous",
+    "language": "es",
+    "languageName": "Español",
+    "publisher": "Self-published",
+    "city": "USA/Latinoamérica",
+    "edition": "First Edition (1910)",
+    "notes": "Manual hispanohablante.",
+    "sectionCount": 2,
+    "recipeCount": 19,
+    "bookFile": "data/euvs-books/1910-manual-del-cantinero-o-cocktelero-perfecto.json"
+  },
+  {
     "id": "1910-the-barkeepers-manual-by-raymond-e-sullivan-second-edition",
     "year": 1910,
     "decade": "1910s",
@@ -862,6 +974,22 @@
     "sectionCount": 2,
     "recipeCount": 5,
     "bookFile": "data/euvs-books/1912-156-recettes-de-boissons-americaines-by-n-larsen.json"
+  },
+  {
+    "id": "1912-el-arte-del-cocktelero-eurpoeo-secunda-edicion",
+    "year": 1912,
+    "decade": "1910s",
+    "title": "El Arte del Cocktelero Europeo (2ª ed.)",
+    "author": "Anonymous",
+    "language": "es",
+    "languageName": "Español",
+    "publisher": "Self-published",
+    "city": "USA/Latinoamérica",
+    "edition": "Second Edition (1912)",
+    "notes": "Manual hispanohablante.",
+    "sectionCount": 2,
+    "recipeCount": 88,
+    "bookFile": "data/euvs-books/1912-el-arte-del-cocktelero-eurpoeo-secunda-edicion.json"
   },
   {
     "id": "1912-holtz-freystedt",
@@ -926,6 +1054,22 @@
     "sectionCount": 6,
     "recipeCount": 12,
     "bookFile": "data/euvs-books/1912-the-squires-recipe.json"
+  },
+  {
+    "id": "1912-wehman-bros-bartenders-guide-how-to-mix-drinks",
+    "year": 1912,
+    "decade": "1910s",
+    "title": "Wehman Bros.' Bartenders Guide",
+    "author": "Wehman Bros.",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1912)",
+    "notes": "Manual pre-Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 33,
+    "bookFile": "data/euvs-books/1912-wehman-bros-bartenders-guide-how-to-mix-drinks.json"
   },
   {
     "id": "1914-beverages-de-luxe",
@@ -1152,6 +1296,22 @@
     "bookFile": "data/euvs-books/1920-down-the-hatch.json"
   },
   {
+    "id": "1920-il-barista-guida-del-barman-by-mazzon-ferruccio",
+    "year": 1920,
+    "decade": "1920s",
+    "title": "Il Barista — Guida del Barman",
+    "author": "Mazzon Ferruccio",
+    "language": "it",
+    "languageName": "Italiano",
+    "publisher": "Self-published",
+    "city": "Italy",
+    "edition": "First Edition (1920)",
+    "notes": "Manual italiano.",
+    "sectionCount": 2,
+    "recipeCount": 24,
+    "bookFile": "data/euvs-books/1920-il-barista-guida-del-barman-by-mazzon-ferruccio.json"
+  },
+  {
     "id": "1921-american-drinks-by-victor-hugo-himmelreich",
     "year": 1921,
     "decade": "1920s",
@@ -1182,6 +1342,22 @@
     "sectionCount": 2,
     "recipeCount": 29,
     "bookFile": "data/euvs-books/1922-home-made-beverages-and-american-drinks-by-m-e-steedman.json"
+  },
+  {
+    "id": "1922-old-time-recipes-liquors-shrubs-4th-edition-by-helen-s-wright",
+    "year": 1922,
+    "decade": "1920s",
+    "title": "Old Time Recipes for Home Made Wines, Cordials, Liquors, etc.",
+    "author": "Helen S. Wright",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Fourth Edition (1922)",
+    "notes": "Manual histórico de licores caseros.",
+    "sectionCount": 2,
+    "recipeCount": 79,
+    "bookFile": "data/euvs-books/1922-old-time-recipes-liquors-shrubs-4th-edition-by-helen-s-wright.json"
   },
   {
     "id": "1922-quelques-recettes-pour-boissons-americaines",
@@ -1374,6 +1550,22 @@
     "sectionCount": 2,
     "recipeCount": 146,
     "bookFile": "data/euvs-books/1926-the-cocktail-book-a-sideboard-manual-for-gentlemen.json"
+  },
+  {
+    "id": "1927-cocktails-bebidas-heladas-ponches-de-todas-clases-by-maraya-velez-de-sanchez",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "Cocktails, Bebidas Heladas, Ponches",
+    "author": "Maraya Vélez de Sánchez",
+    "language": "es",
+    "languageName": "Español",
+    "publisher": "Self-published",
+    "city": "USA/Latinoamérica",
+    "edition": "First Edition (1927)",
+    "notes": "Manual hispanohablante.",
+    "sectionCount": 2,
+    "recipeCount": 118,
+    "bookFile": "data/euvs-books/1927-cocktails-bebidas-heladas-ponches-de-todas-clases-by-maraya-velez-de-sanchez.json"
   },
   {
     "id": "1927-cocktails-by-piero-grandi",
@@ -1678,6 +1870,22 @@
     "sectionCount": 2,
     "recipeCount": 114,
     "bookFile": "data/euvs-books/1930-cheerio-a-book-of-punches-and-cocktails-by-charles.json"
+  },
+  {
+    "id": "1930-club-de-cantinero-de-la-republica-de-cuba-manual-oficial-by-gerardo-corrales",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "Manual Oficial Club de Cantineros de Cuba",
+    "author": "Gerardo Corrales",
+    "language": "es",
+    "languageName": "Español",
+    "publisher": "Self-published",
+    "city": "La Habana, Cuba",
+    "edition": "First Edition (1930)",
+    "notes": "⭐ Manual oficial cubano.",
+    "sectionCount": 2,
+    "recipeCount": 6,
+    "bookFile": "data/euvs-books/1930-club-de-cantinero-de-la-republica-de-cuba-manual-oficial-by-gerardo-corrales.json"
   },
   {
     "id": "1930-cocktails-art-deco-manuscript-book-east-bar-hotel-esplanade-prague-by-f-koki",
@@ -3152,6 +3360,22 @@
     "bookFile": "data/euvs-books/1944-bartenders-friend-by-nick-thomas.json"
   },
   {
+    "id": "1944-comment-preparer-chez-soi-250-boissons",
+    "year": 1944,
+    "decade": "1940s",
+    "title": "Comment Préparer Chez Soi 250 Boissons",
+    "author": "Anonymous",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1944)",
+    "notes": "Manual francés.",
+    "sectionCount": 2,
+    "recipeCount": 6,
+    "bookFile": "data/euvs-books/1944-comment-preparer-chez-soi-250-boissons.json"
+  },
+  {
     "id": "1945-300-ways-to-mix-drinks-cartoons-recipes-toasts",
     "year": 1945,
     "decade": "1940s",
@@ -3198,6 +3422,22 @@
     "sectionCount": 2,
     "recipeCount": 20,
     "bookFile": "data/euvs-books/1947-cocktails-choix-de-600-recettes-by-a-vermeys.json"
+  },
+  {
+    "id": "1947-cocktails-choix-de-600-recettes-by-a-vermeys-2",
+    "year": 1947,
+    "decade": "1940s",
+    "title": "Cocktails Vermeys (variante)",
+    "author": "A. Vermeys",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "Edition (1947-2)",
+    "notes": "Variante del 1947 Vermeys.",
+    "sectionCount": 2,
+    "recipeCount": 20,
+    "bookFile": "data/euvs-books/1947-cocktails-choix-de-600-recettes-by-a-vermeys-2.json"
   },
   {
     "id": "1948-cocktails-by-jean-lupoiu",
