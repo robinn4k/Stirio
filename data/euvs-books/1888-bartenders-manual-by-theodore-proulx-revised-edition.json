@@ -1,0 +1,2104 @@
+{
+  "book_id": "1888-bartenders-manual-by-theodore-proulx-revised-edition",
+  "metadata": {
+    "title": "The Bartender's Manual (Revised Edition)",
+    "author": "Theodore Proulx (with Chapin & Gore, Chicago)",
+    "year": 1888,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "J.M.W. Jones Stationery & Printing Co.",
+    "city": "Chicago, Illinois",
+    "edition": "Revised Edition (1888 — Copyright 1888)",
+    "source_file": "1888 Bartender's Manual by Theodore Proulx (Revised Edition).txt",
+    "notes": "'Latest Mode of Mixing Drinks' — manual de Theodore Proulx de Chapin & Gore (Chicago). Ordenado alfabéticamente con prosa detallada por receta (incluye técnica del Blue Blazer con fuego, el Absinthe Frappé con cambio de glass entre dos shakers). Skeleton custom + parser prose-aware. 90 recetas; ~49% (44/90) parseado (algunas recetas son advice/cleaning/no-recipe que conservan raw_text + notes)."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Author's Preface",
+      "title_es": "Prefacio del autor",
+      "content_original": "Theodore Proulx (Chapin & Gore, Chicago) publica esta segunda edición revisada (1888) de su 'Bartenders' Manual', con el objetivo de hacer del oficio una 'science and an art' sin superfluidad de palabras. Direcciona viajeros que pretenden ridiculizar al bartender con nombres exóticos. Estilo prosa con técnicas detalladas (Blue Blazer con fuego, Absinthe Frappé con dual-shaker).",
+      "content_es": "Theodore Proulx (Chapin & Gore, Chicago) publica esta segunda edición revisada (1888) de su 'Bartenders' Manual'. Estilo prosa con técnicas detalladas."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Drinks (alphabetical)",
+      "title_es": "Bebidas (alfabético)",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-001",
+      "order": 1,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Absinthe",
+      "name_es": "Absinthe",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "No. 2. Is made like an Absinthe Suisette, omit- ting the anisette.",
+      "method_es": "No. 2. Is made like an Absinthe Suisette, omit- ting the anisette.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe.\n    No. 2. Is made like an Absinthe Suisette, omit-\nting the anisette.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-002",
+      "order": 2,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Absinthe-Plain",
+      "name_es": "Absinthe-Plain",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer",
+          "item_es": "agua de Seltzer",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "No. 3. A little anisette or syrup, or sometimes not any sweetening at all, with two-thirds of a jigg er of absinthe in a punch or champagne glass; fill up with ice water drippinQ\" throuo-h ~      I:> a I:> a-lass with a hole in its bottom for that purpose. (This is the French way. of preparing it.) Absinthe Fr~ppe. Take a mixing glass and fill it full of bar ice; put in about two teaspoonfuls of anisette and the same quantity of absinthe whi ch you used in the Absinthe 8 Suisette ; then two thirds of a jigger of seltzer ; then take another mixing glass and fill it full of ice, as you did the first ; then very dexterously place it over the other, which brings the tops of the tumblers together, the bottom of one of the glasses remaining on the counter and the other upward. You then place your thumb and forefinger around the glasses where they join, hold the glass tightly with the remainder of your hand, and turn them .over opposite to what they were before. The · liquid will thus run from one to the other. Perform the same operation from three to five t imes ; and if you are making two or more at the time, yot1 ought to use both hands at the same time. You must then strain it into a nother cooled glass which yo u have prepared beforehand ; then, by ap- plying each hand to the bottom of each glass, hold- ing the g lass opposite your glasses, and making a slight opening where the glasses join, the liquid will slowly escape without any of the ice ; or, we some- t imes shake it wit",
+      "method_es": "No. 3. A little anisette or syrup, or sometimes not any sweetening at all, with two-thirds of a jigg er of absinthe in a punch or champagne glass; fill up with ice water drippinQ\" throuo-h ~      I:> a I:> a-lass with a hole in its bottom for that purpose. (This is the French way. of preparing it.) Absinthe Fr~ppe. Take a mixing glass and fill it full of bar ice; put in about two teaspoonfuls of anisette and the same quantity of absinthe whi ch you used in the Absinthe 8 Suisette ; then two thirds of a jigger of seltzer ; then take another mixing glass and fill it full of ice, as you did the first ; then very dexterously place it over the other, which brings the tops of the tumblers together, the bottom of one of the glasses remaining on the counter and the other upward. You then place your thumb and forefinger around the glasses where they join, hold the glass tightly with the remainder of your hand, and turn them .over opposite to what they were before. The · liquid will thus run from one to the other. Perform the same operation from three to five t imes ; and if you are making two or more at the time, yot1 ought to use both hands at the same time. You must then strain it into a nother cooled glass which yo u have prepared beforehand ; then, by ap- plying each hand to the bottom of each glass, hold- ing the g lass opposite your glasses, and making a slight opening where the glasses join, the liquid will slowly escape without any of the ice ; or, we some- t imes shake it wit",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe-Plain.\n\n     No. 3. A little anisette or syrup, or sometimes\nnot any sweetening at all, with two-thirds of a jigg er\nof absinthe in a punch or champagne glass; fill up\nwith ice water drippinQ\" throuo-h\n                       ~      I:>\n                                  a I:>\n                                    a-lass with a hole in\nits bottom for that purpose. (This is the French way.\nof preparing it.)\n                  Absinthe Fr~ppe.\n    Take a mixing glass and fill it full of bar ice; put\nin about two teaspoonfuls of anisette and the same\nquantity of absinthe whi ch you used in the Absinthe\n                           8\n\n Suisette ; then two thirds of a jigger of seltzer ; then\ntake another mixing glass and fill it full of ice, as you\ndid the first ; then very dexterously place it over the\nother, which brings the tops of the tumblers together,\nthe bottom of one of the glasses remaining on the\ncounter and the other upward. You then place your\nthumb and forefinger around the glasses where they\njoin, hold the glass tightly with the remainder of your\nhand, and turn them .over opposite to what they were\nbefore. The · liquid will thus run from one to the\nother. Perform the same operation from three to five\nt imes ; and if you are making two or more at the\ntime, yot1 ought to use both hands at the same time.\nYou must then strain it into a nother cooled glass\nwhich yo u have prepared beforehand ; then, by ap-\nplying each hand to the bottom of each glass, hold-\ning the g lass opposite your glasses, and making a\nslight opening where the glasses join, the liquid will\nslowly escape without any of the ice ; or, we some-\nt imes shake it with a shaker, and strain it."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-003",
+      "order": 3,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Apollinaris Lemonade",
+      "name_es": "Apollinaris Lemonade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "This beverage is much called for, and is made in much the same manner as an ordinary lemonade, merely using the apollinaris water in place of the ordinary water, a nd stir instead of shake.",
+      "method_es": "This beverage is much called for, and is made in much the same manner as an ordinary lemonade, merely using the apollinaris water in place of the ordinary water, a nd stir instead of shake.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Apollinaris Lemonade.\n\n   This beverage is much called for, and is made in\nmuch the same manner as an ordinary lemonade,\nmerely using the apollinaris water in place of the\nordinary water, a nd stir instead of shake.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-004",
+      "order": 4,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Apollo Punch",
+      "name_es": "Apollo Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry _wine",
+          "item_es": "sherry _wine",
+          "amount": "1.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Cool a flat champagne glass. The n take a mixing g lass, put in as much syrup as you would in a cobbler, 9 a lemon peel, fill the glass two-thirds full of ice, one and one-half jigger of sherry _wine, stir with spoon ; strain in the champagne g lass ; add fruits and float some claret on fhe top.",
+      "method_es": "Cool a flat champagne glass. The n take a mixing g lass, put in as much syrup as you would in a cobbler, 9 a lemon peel, fill the glass two-thirds full of ice, one and one-half jigger of sherry _wine, stir with spoon ; strain in the champagne g lass ; add fruits and float some claret on fhe top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Apollo Punch.\n     Cool a flat champagne glass. The n take a mixing\ng lass, put in as much syrup as you would in a cobbler,\n                            9\n\n a lemon peel, fill the glass two-thirds full of ice, one\n and one-half jigger of sherry _wine, stir with spoon ;\n strain in the champagne g lass ; add fruits and float\n some claret on fhe top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-005",
+      "order": 5,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Arrack Punch",
+      "name_es": "Arrack Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Is made like a rum or whisky punch, substituting arrack for the other liquors.",
+      "method_es": "Is made like a rum or whisky punch, substituting arrack for the other liquors.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Arrack Punch.\n     Is made like a rum or whisky punch, substituting\n arrack for the other liquors.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-006",
+      "order": 6,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Absinthe Cocktail",
+      "name_es": "Absinthe Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "In a mixing glass, bitters, syrup as in a regular cocktail, with a lemon peel, fill the glass two-thirds full of ice, two-thirds of a jigger of absinthe, half a jigger of water or seltzer; stir with spoon, and strain in cocktail glass.                ·",
+      "method_es": "In a mixing glass, bitters, syrup as in a regular cocktail, with a lemon peel, fill the glass two-thirds full of ice, two-thirds of a jigger of absinthe, half a jigger of water or seltzer; stir with spoon, and strain in cocktail glass.                ·",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe Cocktail.\n      In a mixing glass, bitters, syrup as in a regular\n cocktail, with a lemon peel, fill the glass two-thirds\n full of ice, two-thirds of a jigger of absinthe, half a\n jigger of water or seltzer; stir with spoon, and strain\n in cocktail glass.                ·"
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-007",
+      "order": 7,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Amaranth Cocktail",
+      "name_es": "Amaranth Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "A regular cocktail; sq~irt some seltzer on the top with a little powdered sugar, to make it fizz.",
+      "method_es": "A regular cocktail; sq~irt some seltzer on the top with a little powdered sugar, to make it fizz.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Amaranth Cocktail.\n    A regular cocktail; sq~irt some seltzer on the top\n with a little powdered sugar, to make it fizz.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-008",
+      "order": 8,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Ale Saugarer",
+      "name_es": "Ale Saugarer",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "One t easpoonful of sugar, one glass of ale, nut- meg on the top.",
+      "method_es": "One t easpoonful of sugar, one glass of ale, nut- meg on the top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ale Saugarer.\n   One t easpoonful of sugar, one glass of ale, nut-\nmeg on the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-009",
+      "order": 9,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Blue Blazer",
+      "name_es": "Blue Blazer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "To make this, you will take a hot whisky glass which is to receive the hot drink, and place it in front of you on the counter. You ill then take a whisky glass not quite half full of hot water, two pieces of sugar, and dissolve the sugar by stirring with a spoon; ·then p ut in a jigger of whisky, strike a match and set . IO fire to the whisky by a touch of the blaze to the spoon. Should it not readily ignite, it will be that the water is not warm enough or the whisky is too light. U o- der such circumstances, you will pour some whisky into a mixing glass already heated and set fire to the pure whisky, which will easily burn. You then pour the contents of the other into the mixing glass, and continue pouring from one to the other. When the blue blaze has heated the glass so that it becomes in- convenient to hold longer, pour it into the whisky glass, then to the hot glass that you had previously prepared, with som~ grated nutmeg and le~on peel.",
+      "method_es": "To make this, you will take a hot whisky glass which is to receive the hot drink, and place it in front of you on the counter. You ill then take a whisky glass not quite half full of hot water, two pieces of sugar, and dissolve the sugar by stirring with a spoon; ·then p ut in a jigger of whisky, strike a match and set . IO fire to the whisky by a touch of the blaze to the spoon. Should it not readily ignite, it will be that the water is not warm enough or the whisky is too light. U o- der such circumstances, you will pour some whisky into a mixing glass already heated and set fire to the pure whisky, which will easily burn. You then pour the contents of the other into the mixing glass, and continue pouring from one to the other. When the blue blaze has heated the glass so that it becomes in- convenient to hold longer, pour it into the whisky glass, then to the hot glass that you had previously prepared, with som~ grated nutmeg and le~on peel.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Blue Blazer.\n     To make this, you will take a hot whisky glass\n which is to receive the hot drink, and place it in front\n of you on the counter. You ill then take a whisky\n glass not quite half full of hot water, two pieces of\n sugar, and dissolve the sugar by stirring with a spoon;\n·then p ut in a jigger of whisky, strike a match and set .\n                          IO\n\nfire to the whisky by a touch of the blaze to the spoon.\nShould it not readily ignite, it will be that the water\nis not warm enough or the whisky is too light. U o-\nder such circumstances, you will pour some whisky\ninto a mixing glass already heated and set fire to the\npure whisky, which will easily burn. You then pour\nthe contents of the other into the mixing glass, and\ncontinue pouring from one to the other. When the\nblue blaze has heated the glass so that it becomes in-\nconvenient to hold longer, pour it into the whisky\nglass, then to the hot glass that you had previously\nprepared, with som~ grated nutmeg and le~on peel."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-010",
+      "order": 10,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Burnt Brandy",
+      "name_es": "Burnt Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar into a sauce r",
+          "item_es": "sugar into a sauce r",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "good brandy",
+          "item_es": "good brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Put one lump of sugar into a sauce r, with one jigger of good brandy, set fire to the liquid, and when burnt sufficiently, smother the flame by covering with another saucer. Then pour into a whisky glass.",
+      "method_es": "Put one lump of sugar into a sauce r, with one jigger of good brandy, set fire to the liquid, and when burnt sufficiently, smother the flame by covering with another saucer. Then pour into a whisky glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Burnt Brandy .\n    Put one lump of sugar into a sauce r, with one\njigger of good brandy, set fire to the liquid, and when\nburnt sufficiently, smother the flame by covering with\nanother saucer. Then pour into a whisky glass."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-011",
+      "order": 11,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Beef Tea",
+      "name_es": "Beef Tea",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "extract of beef",
+          "item_es": "extract of beef",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Put nearly a teaspoonful of extract of beef, some salt and pepper, together with a few drops of ,celery bitters ; and if you have any parsley on hand it makes a great improvement, especially when chopped very fine. Fill the glass with hot water, stir thoroughly and serve with some fin e ice on the side.",
+      "method_es": "Put nearly a teaspoonful of extract of beef, some salt and pepper, together with a few drops of ,celery bitters ; and if you have any parsley on hand it makes a great improvement, especially when chopped very fine. Fill the glass with hot water, stir thoroughly and serve with some fin e ice on the side.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Beef Tea.\n    Put nearly a teaspoonful of extract of beef, some\nsalt and pepper, together with a few drops of ,celery\nbitters ; and if you have any parsley on hand it makes\na great improvement, especially when chopped very\nfine. Fill the glass with hot water, stir thoroughly\nand serve with some fin e ice on the side."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-012",
+      "order": 12,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Branqy Float",
+      "name_es": "Branqy Float",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "A pony of brandy served like a pony of whisky, and while the pony is inside the whi sky g lass add a",
+      "method_es": "A pony of brandy served like a pony of whisky, and while the pony is inside the whi sky g lass add a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Branqy Float.\n   A pony of brandy served like a pony of whisky,\nand while the pony is inside the whi sky g lass add a",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-013",
+      "order": 13,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Banana",
+      "name_es": "Banana",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.667",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Egg and milk, shake up together with ice and strain. Brandy Frappe· One pony of brandy or a jigger of brandy in a mixing glass filled with fine ice, shake up well, then strain in a thin glass with half a bottle of . imported ginger al'e. lfaltimore Egg Nogg. Lemonade glass, one-third of a jigger of Jamaica rum, one-third of a jigger of whisky, one-third of a jigger of sherry, two-thirds of a tablespoonful of sugar, lumps of ice, one egg filled with milk. Shake well, and strain in a large thin glass. With nutmeg, if desired.          ··",
+      "method_es": "Egg and milk, shake up together with ice and strain. Brandy Frappe· One pony of brandy or a jigger of brandy in a mixing glass filled with fine ice, shake up well, then strain in a thin glass with half a bottle of . imported ginger al'e. lfaltimore Egg Nogg. Lemonade glass, one-third of a jigger of Jamaica rum, one-third of a jigger of whisky, one-third of a jigger of sherry, two-thirds of a tablespoonful of sugar, lumps of ice, one egg filled with milk. Shake well, and strain in a large thin glass. With nutmeg, if desired.          ··",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Banana.\n     Egg and milk, shake up together with ice and\n strain.\n                    Brandy Frappe·\n     One pony of brandy or a jigger of brandy in a\n mixing glass filled with fine ice, shake up well, then\n strain in a thin glass with half a bottle of . imported\n ginger al'e.\n                 lfaltimore Egg Nogg.\n    Lemonade glass, one-third of a jigger of Jamaica\nrum, one-third of a jigger of whisky, one-third of a\njigger of sherry, two-thirds of a tablespoonful of\nsugar, lumps of ice, one egg filled with milk. Shake\nwell, and strain in a large thin glass. With nutmeg,\nif desired.          ··"
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-014",
+      "order": 14,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Cocktail-Whisky",
+      "name_es": "Cocktail-Whisky",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "\"Fake a mixing glass, hold it in your left hand, fake fl piece of lemon peel in your right hand, press it, an'd put it in the glass; then add two squirts of bitters, syrup and absinthe; then put in your bar ice and one jigger of whisky; stir it with a spoon; then strain it into a cocktail glass. Some bartenders make th e mistake of adding the fruits of the season. It is wrong, as a cocktail should always be served plain. 12 A whisky sour, on the contrary, demands all the deli- cacies of the time of year, si.Ich as strawberries, pine- apple, orange, etc.",
+      "method_es": "\"Fake a mixing glass, hold it in your left hand, fake fl piece of lemon peel in your right hand, press it, an'd put it in the glass; then add two squirts of bitters, syrup and absinthe; then put in your bar ice and one jigger of whisky; stir it with a spoon; then strain it into a cocktail glass. Some bartenders make th e mistake of adding the fruits of the season. It is wrong, as a cocktail should always be served plain. 12 A whisky sour, on the contrary, demands all the deli- cacies of the time of year, si.Ich as strawberries, pine- apple, orange, etc.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cocktail-Whisky.\n     \"Fake a mixing glass, hold it in your left hand,\nfake fl piece of lemon peel in your right hand, press\nit, an'd put it in the glass; then add two squirts of\nbitters, syrup and absinthe; then put in your bar ice\nand one jigger of whisky; stir it with a spoon; then\nstrain it into a cocktail glass. Some bartenders make\nth e mistake of adding the fruits of the season. It is\nwrong, as a cocktail should always be served plain.\n                           12\n\nA whisky sour, on the contrary, demands all the deli-\ncacies of the time of year, si.Ich as strawberries, pine-\napple, orange, etc."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-015",
+      "order": 15,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Champagne Cocktail",
+      "name_es": "Champagne Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sug ar",
+          "item_es": "sug ar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "a n g os- tu ra bitters",
+          "item_es": "a n g os- tu ra bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "le mon p eel twisted",
+          "item_es": "le mon p eel twisted",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "pow- d ered sugar",
+          "item_es": "pow- d ered sugar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "In a thin glass, put one lump _o f ice nearly the size of an egg, one lemon . peel and two squirts of Ang ostura bitters ; then you take a dry whisky glass, · put in it a very little powdered sug ar, open the bottl e of wine, pour some off in the whisky glass which c_o n- , tain s the sugar, it will produce a beautiful foam, stir with a spoon; then hold the edge over the other glass a lready prepared, pour in more champagn e and hold the g lass in a way s-o that the win e will naturally run into the other glass which conta ins the ice and lemon peel. If the foam has a tende ncy to run over, remove the whisky glass.and when the foam has settled fill the g lass direct from the bottle; if the re is more than one person prepare it in the same manner. No. 2 . Into a champag ne glass put a lump of sug ar, upon it squirt two or three dashes of A n g os- tu ra bitters, one piece of le mon p eel twisted ; th e n p our in your champag ne. No. 3. Into a champag ne g lass put_seve ral drops of A ngostura bitters; then t ak e a teaspoonful of pow- d ered sugar, drop it into the g lass a nd instantly give a jerk to the glass while holding it in y our h a nd, so that t he sug ar will stick all around the g lass where yo u sp read the bitters before receiving the sug ar. Y ou th en take a t Gwel a nd with your thum b w ipe about 13 an inch of the sugar and bitters from the edge, which makes it look very inviting; then pour in the cham- pagne. · Champagne Frappe. Place your bottle of champagn",
+      "method_es": "In a thin glass, put one lump _o f ice nearly the size of an egg, one lemon . peel and two squirts of Ang ostura bitters ; then you take a dry whisky glass, · put in it a very little powdered sug ar, open the bottl e of wine, pour some off in the whisky glass which c_o n- , tain s the sugar, it will produce a beautiful foam, stir with a spoon; then hold the edge over the other glass a lready prepared, pour in more champagn e and hold the g lass in a way s-o that the win e will naturally run into the other glass which conta ins the ice and lemon peel. If the foam has a tende ncy to run over, remove the whisky glass.and when the foam has settled fill the g lass direct from the bottle; if the re is more than one person prepare it in the same manner. No. 2 . Into a champag ne glass put a lump of sug ar, upon it squirt two or three dashes of A n g os- tu ra bitters, one piece of le mon p eel twisted ; th e n p our in your champag ne. No. 3. Into a champag ne g lass put_seve ral drops of A ngostura bitters; then t ak e a teaspoonful of pow- d ered sugar, drop it into the g lass a nd instantly give a jerk to the glass while holding it in y our h a nd, so that t he sug ar will stick all around the g lass where yo u sp read the bitters before receiving the sug ar. Y ou th en take a t Gwel a nd with your thum b w ipe about 13 an inch of the sugar and bitters from the edge, which makes it look very inviting; then pour in the cham- pagne. · Champagne Frappe. Place your bottle of champagn",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Cocktail.\n     In a thin glass, put one lump _o f ice nearly the\nsize of an egg, one lemon . peel and two squirts of\nAng ostura bitters ; then you take a dry whisky glass, ·\nput in it a very little powdered sug ar, open the bottl e\nof wine, pour some off in the whisky glass which c_o n- ,\ntain s the sugar, it will produce a beautiful foam, stir\nwith a spoon; then hold the edge over the other glass\na lready prepared, pour in more champagn e and hold\nthe g lass in a way s-o that the win e will naturally run\ninto the other glass which conta ins the ice and lemon\npeel. If the foam has a tende ncy to run over, remove\nthe whisky glass.and when the foam has settled fill the\ng lass direct from the bottle; if the re is more than one\nperson prepare it in the same manner.\n     No. 2 . Into a champag ne glass put a lump of\nsug ar, upon it squirt two or three dashes of A n g os-\ntu ra bitters, one piece of le mon p eel twisted ; th e n\np our in your champag ne.\n     No. 3. Into a champag ne g lass put_seve ral drops\nof A ngostura bitters; then t ak e a teaspoonful of pow-\nd ered sugar, drop it into the g lass a nd instantly give\na jerk to the glass while holding it in y our h a nd, so\nthat t he sug ar will stick all around the g lass where\nyo u sp read the bitters before receiving the sug ar.\nY ou th en take a t Gwel a nd with your thum b w ipe about\n                             13\n\n an inch of the sugar and bitters from the edge, which\n makes it look very inviting; then pour in the cham-\n pagne.\n                 · Champagne Frappe.\n     Place your bottle of champagne into a pail of\n broken ice and coarse salt, and roll it until it is quite\n thick and almost frozen."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-016",
+      "order": 16,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "Claret Cobbler",
+      "name_es": "Claret Cobbler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "twisted lemon-peel",
+          "item_es": "twisted lemon-peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a cobbler glass, which is a tall thin glass, put in a piece of twisted lemon-peel, one and a half teaspoonfuls of syrup, then fill the glass with bar ice and fill it full of claret; stir it up with a spoon and ornament with fruit of the season. Serve with two straws.",
+      "method_es": "Take a cobbler glass, which is a tall thin glass, put in a piece of twisted lemon-peel, one and a half teaspoonfuls of syrup, then fill the glass with bar ice and fill it full of claret; stir it up with a spoon and ornament with fruit of the season. Serve with two straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Cobbler.\n    Take a cobbler glass, which is a tall thin glass,\nput in a piece of twisted lemon-peel, one and a half\nteaspoonfuls of syrup, then fill the glass with bar ice\nand fill it full of claret; stir it up with a spoon and\nornament with fruit of the season. Serve with two\nstraws."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-017",
+      "order": 17,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Claret Punch",
+      "name_es": "Claret Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "syrup squeezed together",
+          "item_es": "syrup squeezed together",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "One-eighth of a lemon in a cobbler glass, about two teaspoonfuls of syrup squeezed together with the muddler, fill the glass full of fine ice, then fill with claret, stir with spoon, dress with fruits and straws. No. 2. Take a mixing glass, put in about two tea- spoonfuls of lemon-juice. (Some bars keep a bottle of the juice already prepared, in order to save the time squeezing the lemons for each drink. I therefore use the term of teaspoonfuls instead of a half or a quarter of a lemon, etc.)   Put in about two teaspoonfuls of syrup, one and a half jiggers of claret, then fill glass full with bar ice. No~ fill another mixing glass with 14 ice, and place one upon the other (the same as directed in Absinthe Frappe); turn them over three or four times; then strain into a punch prepared with fruit. No. 3. Take a mixing glass; put in the same amount of lemon-syrup and claret ; fill the glass two- thirds full of bar ice; stir with a spoon and strain in a punch glass with fruits.",
+      "method_es": "One-eighth of a lemon in a cobbler glass, about two teaspoonfuls of syrup squeezed together with the muddler, fill the glass full of fine ice, then fill with claret, stir with spoon, dress with fruits and straws. No. 2. Take a mixing glass, put in about two tea- spoonfuls of lemon-juice. (Some bars keep a bottle of the juice already prepared, in order to save the time squeezing the lemons for each drink. I therefore use the term of teaspoonfuls instead of a half or a quarter of a lemon, etc.)   Put in about two teaspoonfuls of syrup, one and a half jiggers of claret, then fill glass full with bar ice. No~ fill another mixing glass with 14 ice, and place one upon the other (the same as directed in Absinthe Frappe); turn them over three or four times; then strain into a punch prepared with fruit. No. 3. Take a mixing glass; put in the same amount of lemon-syrup and claret ; fill the glass two- thirds full of bar ice; stir with a spoon and strain in a punch glass with fruits.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Punch.\n    One-eighth of a lemon in a cobbler glass, about\ntwo teaspoonfuls of syrup squeezed together with the\nmuddler, fill the glass full of fine ice, then fill with\nclaret, stir with spoon, dress with fruits and straws.\n     No. 2. Take a mixing glass, put in about two tea-\nspoonfuls of lemon-juice. (Some bars keep a bottle of\nthe juice already prepared, in order to save the time\nsqueezing the lemons for each drink. I therefore use\nthe term of teaspoonfuls instead of a half or a quarter\nof a lemon, etc.)   Put in about two teaspoonfuls of\nsyrup, one and a half jiggers of claret, then fill glass\nfull with bar ice. No~ fill another mixing glass with\n                           14\n\nice, and place one upon the other (the same as directed\nin Absinthe Frappe); turn them over three or four\ntimes; then strain into a punch prepared with fruit.\n    No. 3. Take a mixing glass; put in the same\namount of lemon-syrup and claret ; fill the glass two-\nthirds full of bar ice; stir with a spoon and strain in\na punch glass with fruits."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-018",
+      "order": 18,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Claret and Ice",
+      "name_es": "Claret and Ice",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a glass that you generally use for strained punch ; put in two or three pieces of ice; fill the glass with claret.    Should your customer call for claret, sug ar and ice, you have only to a g d the sugar.",
+      "method_es": "Take a glass that you generally use for strained punch ; put in two or three pieces of ice; fill the glass with claret.    Should your customer call for claret, sug ar and ice, you have only to a g d the sugar.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret and Ice.\n    Take a glass that you generally use for strained\npunch ; put in two or three pieces of ice; fill the glass\nwith claret.    Should your customer call for claret,\nsug ar and ice, you have only to a g d the sugar."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-019",
+      "order": 19,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Claret Wine",
+      "name_es": "Claret Wine",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Claret wine is served in a stem glass nearly twice the size of a sherry glass.",
+      "method_es": "Claret wine is served in a stem glass nearly twice the size of a sherry glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Wine.\n    Claret wine is served in a stem glass nearly twice\nthe size of a sherry glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-020",
+      "order": 20,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Chocolate Punch",
+      "name_es": "Chocolate Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a soda glass ; put in the yolk of an egg, some lumps of ice-the same as you would for a milk punch or a seltzer lemona_d e; add half a spoonful of sugar, half a jigger of whisky, and the same amount of blackberry brandy; fill it up with milk, shake it well, a nd ~train into a dry glass, with nutmeg if desired.",
+      "method_es": "Use a soda glass ; put in the yolk of an egg, some lumps of ice-the same as you would for a milk punch or a seltzer lemona_d e; add half a spoonful of sugar, half a jigger of whisky, and the same amount of blackberry brandy; fill it up with milk, shake it well, a nd ~train into a dry glass, with nutmeg if desired.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chocolate Punch.\n    Use a soda glass ; put in the yolk of an egg, some\nlumps of ice-the same as you would for a milk punch\nor a seltzer lemona_d e; add half a spoonful of sugar,\nhalf a jigger of whisky, and the same amount of\nblackberry brandy; fill it up with milk, shake it well,\na nd ~train into a dry glass, with nutmeg if desired."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-021",
+      "order": 21,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Chartreuse",
+      "name_es": "Chartreuse",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Chartreuse is a most delicious cordial. There are two or mo; e kinds, viz.: ttie green and the yellow. 15 It should be served delicately in a pony g lass, with a glass of wa ter on th e side, and the pony glass should be set upon the bottom of a whisky glass-that is, a whisky glass turn ed upside down. N. B.-All oth er cordials should be served in th e same manner.",
+      "method_es": "Chartreuse is a most delicious cordial. There are two or mo; e kinds, viz.: ttie green and the yellow. 15 It should be served delicately in a pony g lass, with a glass of wa ter on th e side, and the pony glass should be set upon the bottom of a whisky glass-that is, a whisky glass turn ed upside down. N. B.-All oth er cordials should be served in th e same manner.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chartreuse.\n   Chartreuse is a most delicious cordial. There are\ntwo or mo; e kinds, viz.: ttie green and the yellow.\n                             15\n It should be served delicately in a pony g lass, with a\n glass of wa ter on th e side, and the pony glass should\n be set upon the bottom of a whisky glass-that is, a\n whisky glass turn ed upside down.\n     N. B.-All oth er cordials should be served in th e\n same manner.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-022",
+      "order": 22,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Champagne Bowl Punch",
+      "name_es": "Champagne Bowl Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "For one gallon about one dozen of lumps of sugar, on e jigger of maraschino and one of curacoa, 3 quarts of champagne and one of apollinaris water; the cham- pag ne a nd apollinaris must bf' excessively cold before preparing this as no ice should be used in it; add sliced orang es, pine apple, berries, etc. , floating on top. ( For this excelle nt receipt I am indebted to Mr. Harry Stiles, for r6 years with Chapin & Gore.)",
+      "method_es": "For one gallon about one dozen of lumps of sugar, on e jigger of maraschino and one of curacoa, 3 quarts of champagne and one of apollinaris water; the cham- pag ne a nd apollinaris must bf' excessively cold before preparing this as no ice should be used in it; add sliced orang es, pine apple, berries, etc. , floating on top. ( For this excelle nt receipt I am indebted to Mr. Harry Stiles, for r6 years with Chapin & Gore.)",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Bowl Punch.\n      For one gallon about one dozen of lumps of sugar,\n  on e jigger of maraschino and one of curacoa, 3 quarts\n of champagne and one of apollinaris water; the cham-\n pag ne a nd apollinaris must bf' excessively cold before\n preparing this as no ice should be used in it; add\n sliced orang es, pine apple, berries, etc. , floating on\n top. ( For this excelle nt receipt I am indebted to\n Mr. Harry Stiles, for r6 years with Chapin & Gore.)",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-023",
+      "order": 23,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Ctua coa Punch",
+      "name_es": "Ctua coa Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "In a cobbler glass a little syrup, lemon Juice as in a sour, about half pony of curacoa, one jigg er of brandy, a dash of Jamaica rum, fill with fin e ice, stir well with a spoon, and decorate with fruits and two straws. Cincinnati or Dutch Cocktail. Pop and beer. Chocolate ·Cocktail. In a mixing glass a little curacoa, the yolk of an egg , on e jigg er of brandy, lumps of ice; shake up and strain in a stem champagne g lass. 16",
+      "method_es": "In a cobbler glass a little syrup, lemon Juice as in a sour, about half pony of curacoa, one jigg er of brandy, a dash of Jamaica rum, fill with fin e ice, stir well with a spoon, and decorate with fruits and two straws. Cincinnati or Dutch Cocktail. Pop and beer. Chocolate ·Cocktail. In a mixing glass a little curacoa, the yolk of an egg , on e jigg er of brandy, lumps of ice; shake up and strain in a stem champagne g lass. 16",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ctua coa Punch.\n    In a cobbler glass a little syrup, lemon Juice as in\na sour, about half pony of curacoa, one jigg er of\nbrandy, a dash of Jamaica rum, fill with fin e ice, stir\nwell with a spoon, and decorate with fruits and two\nstraws.\n          Cincinnati or Dutch Cocktail.\n    Pop and beer.\n                 Chocolate ·Cocktail.\n    In a mixing glass a little curacoa, the yolk of an\negg , on e jigg er of brandy, lumps of ice; shake up and\nstrain in a stem champagne g lass.\n                          16",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-024",
+      "order": 24,
+      "section_title": "Drinks",
+      "category": "cup",
+      "name_original": "Claret Cup",
+      "name_es": "Claret Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "For one gallon, the juice of one dozen of lemons, one pound of sugar, one jigger of maraschino, one jigger of curacoa, one gallon of claret wine; stir well until the sugar is all dissolved; put in a punch bowl with one big chunk of ice, with all kinds of fruits sliced and floating on top.",
+      "method_es": "For one gallon, the juice of one dozen of lemons, one pound of sugar, one jigger of maraschino, one jigger of curacoa, one gallon of claret wine; stir well until the sugar is all dissolved; put in a punch bowl with one big chunk of ice, with all kinds of fruits sliced and floating on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Cup.\n\n    For one gallon, the juice of one dozen of lemons,\none pound of sugar, one jigger of maraschino, one\njigger of curacoa, one gallon of claret wine; stir well\nuntil the sugar is all dissolved; put in a punch bowl\nwith one big chunk of ice, with all kinds of fruits\nsliced and floating on top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-025",
+      "order": 25,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "Champagne Flip",
+      "name_es": "Champagne Flip",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "For one gallon of flip it requires eighteen eggs, one pound of sugar, one P.int of Medford rum, one pint of brandy, one quart of milk a-i:id two quarts of champag ne. It is prepared thus: take the white of six eggs and beat it very hard. Then beat the balance of the eggs, the yolk and white together, until they are very light, add the sugar and stir well, then add the liquors, stirring it thoroughly; on the top spread the white of the eggs. Then with the help of a cor- nucopia filled with colored sands and a small opening at the e nd, you can write the motto \"Merry Christ- mas,\" or \"Happy New Year,\" which ever is appropri- ate. For two or more gallons the bartender can guide himself by the estimate of one gallon.",
+      "method_es": "For one gallon of flip it requires eighteen eggs, one pound of sugar, one P.int of Medford rum, one pint of brandy, one quart of milk a-i:id two quarts of champag ne. It is prepared thus: take the white of six eggs and beat it very hard. Then beat the balance of the eggs, the yolk and white together, until they are very light, add the sugar and stir well, then add the liquors, stirring it thoroughly; on the top spread the white of the eggs. Then with the help of a cor- nucopia filled with colored sands and a small opening at the e nd, you can write the motto \"Merry Christ- mas,\" or \"Happy New Year,\" which ever is appropri- ate. For two or more gallons the bartender can guide himself by the estimate of one gallon.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Flip.\n\n    For one gallon of flip it requires eighteen eggs, one\npound of sugar, one P.int of Medford rum, one pint\nof brandy, one quart of milk a-i:id two quarts of\nchampag ne. It is prepared thus: take the white of\nsix eggs and beat it very hard. Then beat the balance\nof the eggs, the yolk and white together, until they\nare very light, add the sugar and stir well, then add\nthe liquors, stirring it thoroughly; on the top spread\nthe white of the eggs. Then with the help of a cor-\nnucopia filled with colored sands and a small opening\nat the e nd, you can write the motto \"Merry Christ-\nmas,\" or \"Happy New Year,\" which ever is appropri-\nate. For two or more gallons the bartender can guide\nhimself by the estimate of one gallon.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-026",
+      "order": 26,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Durkees",
+      "name_es": "Durkees",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sherry wine",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Are made the same as a ] ohn Collins with the ex- ception that you use Jamaica rum instead of Tom g in and a flavor of curacoa is added to a Durke e. Egg· Nog:g. Use a soda glass and break into it an egg; put in two or three lumps of ice (bar ice is too fine and dis- solves too rapidly for this style of drink), add a light tablespoonful of sugar, half a jigger of whisky, and one-half a jigger of rum, and fill up with milk; shake well and strain into a dry glass in the winter and a cooled glas~ in summer. Eg·g Flip or Sherry Flip. .       ' Use for this a mixing glass. Break in an egg, with some lumps of ice; add half a tablespoonful of sugar an~ one jigger of sherry wine; shake well and strain in a stem champagne glass; Aavor with nutmeg if your cu stomer desires it. X. 'L. C.R. or Excelsior. Take a cobbler glass; put in a piece . of twisted lemon-peel; sweeten with syrup as you would a cobbler; then fill the glass with ice; then fill glass half full with Rhine wine, and stir with a spoon.           Now take the spoon and place the outside against the inside of the glass, and pour in slowly some claret wine until full. The claret will remain upon the surface of the Rhine wine, and thus give a very nice effect to the beverage. Decorate with fruit and serve with straws.",
+      "method_es": "Are made the same as a ] ohn Collins with the ex- ception that you use Jamaica rum instead of Tom g in and a flavor of curacoa is added to a Durke e. Egg· Nog:g. Use a soda glass and break into it an egg; put in two or three lumps of ice (bar ice is too fine and dis- solves too rapidly for this style of drink), add a light tablespoonful of sugar, half a jigger of whisky, and one-half a jigger of rum, and fill up with milk; shake well and strain into a dry glass in the winter and a cooled glas~ in summer. Eg·g Flip or Sherry Flip. .       ' Use for this a mixing glass. Break in an egg, with some lumps of ice; add half a tablespoonful of sugar an~ one jigger of sherry wine; shake well and strain in a stem champagne glass; Aavor with nutmeg if your cu stomer desires it. X. 'L. C.R. or Excelsior. Take a cobbler glass; put in a piece . of twisted lemon-peel; sweeten with syrup as you would a cobbler; then fill the glass with ice; then fill glass half full with Rhine wine, and stir with a spoon.           Now take the spoon and place the outside against the inside of the glass, and pour in slowly some claret wine until full. The claret will remain upon the surface of the Rhine wine, and thus give a very nice effect to the beverage. Decorate with fruit and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Durkees.\n\n     Are made the same as a ] ohn Collins with the ex-\nception that you use Jamaica rum instead of Tom\ng in and a flavor of curacoa is added to a Durke e.\n                         Egg· Nog:g.\n     Use a soda glass and break into it an egg; put in\n two or three lumps of ice (bar ice is too fine and dis-\n solves too rapidly for this style of drink), add a light\n tablespoonful of sugar, half a jigger of whisky, and\n one-half a jigger of rum, and fill up with milk; shake\n well and strain into a dry glass in the winter and a\n cooled glas~ in summer.\n                Eg·g Flip or Sherry Flip.\n                               .       '\n     Use for this a mixing glass. Break in an egg, with\n some lumps of ice; add half a tablespoonful of sugar\n an~ one jigger of sherry wine; shake well and strain\n in a stem champagne glass; Aavor with nutmeg if\n your cu stomer desires it.\n               X. 'L. C.R. or Excelsior.\n    Take a cobbler glass; put in a piece . of twisted\nlemon-peel; sweeten with syrup as you would a cobbler;\nthen fill the glass with ice; then fill glass half full with\nRhine wine, and stir with a spoon.           Now take the\nspoon and place the outside against the inside of the\nglass, and pour in slowly some claret wine until full.\nThe claret will remain upon the surface of the Rhine\nwine, and thus give a very nice effect to the beverage.\nDecorate with fruit and serve with straws."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-027",
+      "order": 27,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Egg Nogg-Bowl",
+      "name_es": "Egg Nogg-Bowl",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Is made exactly the same as a Champagne Flip, substituting milk for the champagne. 18",
+      "method_es": "Is made exactly the same as a Champagne Flip, substituting milk for the champagne. 18",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Nogg-Bowl.\n   Is made exactly the same as a Champagne Flip,\nsubstituting milk for the champagne.\n                            18",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-028",
+      "order": 28,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Frozen Punch",
+      "name_es": "Frozen Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use two mixing glasses, and fill both with bar ice; put in one glass. a s much syrup and lemon juice a s you would in m aking a claret punch ; add a jigger of ·whisky ; place one glass over the other as explained in Absinthe Fra ppes; strain similarly into a punch glass and decorate with fruit, etc. ; or you may use one- q uarte r or one-half of a le mon, squeezed, if you are not using lemon juice.",
+      "method_es": "Use two mixing glasses, and fill both with bar ice; put in one glass. a s much syrup and lemon juice a s you would in m aking a claret punch ; add a jigger of ·whisky ; place one glass over the other as explained in Absinthe Fra ppes; strain similarly into a punch glass and decorate with fruit, etc. ; or you may use one- q uarte r or one-half of a le mon, squeezed, if you are not using lemon juice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Frozen Punch.\n     Use two mixing glasses, and fill both with bar ice;\n put in one glass. a s much syrup and lemon juice a s\n you would in m aking a claret punch ; add a jigger of\n·whisky ; place one glass over the other as explained\n in Absinthe Fra ppes; strain similarly into a punch\n glass and decorate with fruit, etc. ; or you may use one-\n q uarte r or one-half of a le mon, squeezed, if you are\n not using lemon juice.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-029",
+      "order": 29,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "Golden Fizz",
+      "name_es": "Golden Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tom",
+          "item_es": "tom",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Take the yolk of an- egg; separate from the white, which is done by breaking it upon the side and hold- ing the two shells togethe r; allow the white to escape, while retaining the yolk in one portion of the shell ; put the yolk into a mixing glass; add one-half tabl e- spoonful of sugar, the amount of le mon JUlce you would for a whisky sour, one jigger of Tom. g in ; fill two-thirds full with bar ice; shake it well, and strain in a nother glass; then fill it up with seltzer. Gin Cocktail. A gin cocktail is made precisely in the s ame mann e r as a whisky cocktail, except that g in is substituted for whisky.",
+      "method_es": "Take the yolk of an- egg; separate from the white, which is done by breaking it upon the side and hold- ing the two shells togethe r; allow the white to escape, while retaining the yolk in one portion of the shell ; put the yolk into a mixing glass; add one-half tabl e- spoonful of sugar, the amount of le mon JUlce you would for a whisky sour, one jigger of Tom. g in ; fill two-thirds full with bar ice; shake it well, and strain in a nother glass; then fill it up with seltzer. Gin Cocktail. A gin cocktail is made precisely in the s ame mann e r as a whisky cocktail, except that g in is substituted for whisky.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Golden Fizz.\n     Take the yolk of an- egg; separate from the white,\nwhich is done by breaking it upon the side and hold-\ning the two shells togethe r; allow the white to escape,\nwhile retaining the yolk in one portion of the shell ;\nput the yolk into a mixing glass; add one-half tabl e-\nspoonful of sugar, the amount of le mon JUlce you\nwould for a whisky sour, one jigger of Tom. g in ;\n fill two-thirds full with bar ice; shake it well, and\n strain in a nother glass; then fill it up with seltzer.\n                      Gin Cocktail.\n   A gin cocktail is made precisely in the s ame mann e r\n as a whisky cocktail, except that g in is substituted\n for whisky."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-030",
+      "order": 30,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Gin Punch",
+      "name_es": "Gin Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Gin punch is made in the same way as. a whisky or claret punch, merely using g in in place of the other liquors. 19",
+      "method_es": "Gin punch is made in the same way as. a whisky or claret punch, merely using g in in place of the other liquors. 19",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Punch.\n     Gin punch is made in the same way as. a whisky\n or claret punch, merely using g in in place of the other\n liquors.\n                            19",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-031",
+      "order": 31,
+      "section_title": "Drinks",
+      "category": "sling",
+      "name_original": "Gin Sling",
+      "name_es": "Gin Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "In making a gin sling use a whisky glass, and put in a little sugar, and some grated nutmeg placed in the bottom of the glass. ·",
+      "method_es": "In making a gin sling use a whisky glass, and put in a little sugar, and some grated nutmeg placed in the bottom of the glass. ·",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Sling.\n     In making a gin sling use a whisky glass, and put\n in a little sugar, and some grated nutmeg placed in\n the bottom of the glass. ·",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-032",
+      "order": 32,
+      "section_title": "Drinks",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "tom g",
+          "item_es": "tom g",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "In a mixing glass. Put in as much lemon as you would in a punch, one-half a tablespoonful of sugar, squeeze well, few lumps of ice, one jigger of Tom g in, .shake well, and strain in a punch glass and fill with seltzer.",
+      "method_es": "In a mixing glass. Put in as much lemon as you would in a punch, one-half a tablespoonful of sugar, squeeze well, few lumps of ice, one jigger of Tom g in, .shake well, and strain in a punch glass and fill with seltzer.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Fizz.\n      In a mixing glass. Put in as much lemon as you\n would in a punch, one-half a tablespoonful of sugar,\n squeeze well, few lumps of ice, one jigger of Tom\n g in, .shake well, and strain in a punch glass and fill\n with seltzer."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-033",
+      "order": 33,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Gin Puff",
+      "name_es": "Gin Puff",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "In a lemonade g lass; the white of an egg, sugar as you use in a milk punch, one jigger of Tom gin , lumps of ice, fill up with milk and shake well ; then strain in a large thin g lass. Golden Slipper. In a bell shaped Pousse Cafe g lass. yellow chart- reuse, the yolk of an egg, filled wit~ Kirsch Wasser. They sometimes burn it like a Pousse Cafe. How to Serve Cham1lagne. Should you have some small napkins about six or eig ht inches square you will place one before each of your customers, neatly folded. Place the champag ne g lasses in front of you upon the counter, as many as the party ma;y require. Now get your bottle of wine an d wipe it dry, as it has been on the ice. Cut the 20 1   wires and strings with tfo.e nippers, and leave no string s around the cork; cut as close as you can in order to make it look neat. Fold an ordinary napkin to about three or four inches wide, leaving it at its full length ; then take your bottle of wine and roll it up in the napkin. You will hold the bottle in your right hand, and with· your left proceed to twist and draw the cork. Having previously provide d yo urself with a small napkin , you will immediately, upon re- moving the cork, wipe the mouth of the bottle to remove any particles of cork that might still adhe re. You will the n pour a little wine into the glass of the customer who ordered th\"e bottle ; the n fill all the other glasses and back to the first unti l they a r e all full set. (But in a place where they do an exte ns ive b",
+      "method_es": "In a lemonade g lass; the white of an egg, sugar as you use in a milk punch, one jigger of Tom gin , lumps of ice, fill up with milk and shake well ; then strain in a large thin g lass. Golden Slipper. In a bell shaped Pousse Cafe g lass. yellow chart- reuse, the yolk of an egg, filled wit~ Kirsch Wasser. They sometimes burn it like a Pousse Cafe. How to Serve Cham1lagne. Should you have some small napkins about six or eig ht inches square you will place one before each of your customers, neatly folded. Place the champag ne g lasses in front of you upon the counter, as many as the party ma;y require. Now get your bottle of wine an d wipe it dry, as it has been on the ice. Cut the 20 1   wires and strings with tfo.e nippers, and leave no string s around the cork; cut as close as you can in order to make it look neat. Fold an ordinary napkin to about three or four inches wide, leaving it at its full length ; then take your bottle of wine and roll it up in the napkin. You will hold the bottle in your right hand, and with· your left proceed to twist and draw the cork. Having previously provide d yo urself with a small napkin , you will immediately, upon re- moving the cork, wipe the mouth of the bottle to remove any particles of cork that might still adhe re. You will the n pour a little wine into the glass of the customer who ordered th\"e bottle ; the n fill all the other glasses and back to the first unti l they a r e all full set. (But in a place where they do an exte ns ive b",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Puff.\n    In a lemonade g lass; the white of an egg, sugar\nas you use in a milk punch, one jigger of Tom gin ,\nlumps of ice, fill up with milk and shake well ; then\nstrain in a large thin g lass.\n                   Golden Slipper.\n    In a bell shaped Pousse Cafe g lass. yellow chart-\nreuse, the yolk of an egg, filled wit~ Kirsch Wasser.\nThey sometimes burn it like a Pousse Cafe.\n\n            How to Serve Cham1lagne.\n     Should you have some small napkins about six or\neig ht inches square you will place one before each of\nyour customers, neatly folded. Place the champag ne\ng lasses in front of you upon the counter, as many as\nthe party ma;y require. Now get your bottle of wine\nan d wipe it dry, as it has been on the ice. Cut the\n                               20\n\n1   wires and strings with tfo.e nippers, and leave no\n    string s around the cork; cut as close as you can in\n    order to make it look neat. Fold an ordinary napkin\n    to about three or four inches wide, leaving it at its\n    full length ; then take your bottle of wine and roll it\n    up in the napkin. You will hold the bottle in your\n    right hand, and with· your left proceed to twist and\n    draw the cork. Having previously provide d yo urself\n    with a small napkin , you will immediately, upon re-\n    moving the cork, wipe the mouth of the bottle to\n    remove any particles of cork that might still adhe re.\n    You will the n pour a little wine into the glass of the\n    customer who ordered th\"e bottle ; the n fill all the\n    other glasses and back to the first unti l they a r e all\n    full set. (But in a place where they do an exte ns ive\n    business, I should only wipe the b ottle and cool the\n    g lasses.)"
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-034",
+      "order": 34,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Half and Half or 'Alf and 'Alf",
+      "name_es": "Half and Half or 'Alf and 'Alf",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "This beverage is composed of one-half ale and the · other half of porter.",
+      "method_es": "This beverage is composed of one-half ale and the · other half of porter.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Half and Half or 'Alf and 'Alf.\n       This beverage is composed of one-half ale and the ·\n    other half of porter.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-035",
+      "order": 35,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Whisky",
+      "name_es": "Hot Whisky",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of -s ugar",
+          "item_es": "of -s ugar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "the syrup",
+          "item_es": "the syrup",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take one lump of -s ugar, dissolve it with a little hot water, add a lemon peel, twisted ; fill your glass one- half full of hot water, and add one jigger of whisky; flavor with nutmeg; if desired. Honey and Whisky. Honey and whisky, or maple syrup, rock candy syrup, molasses with rum or whisky, are all served in 21 the same way, about half a teaspoonful of the syrup to each. Hot Scotch. Hot Scotch, Hot Irish, and all other kinds of hot drinks, are made in the same way as a Blue Blazer, or the plain way, which I explained in the receipt entitled \" Hot Whisky.\" But a Hot Sherry, Claret, Rhine, and all other still wines, must be made the plain way, as they will not burn.",
+      "method_es": "Take one lump of -s ugar, dissolve it with a little hot water, add a lemon peel, twisted ; fill your glass one- half full of hot water, and add one jigger of whisky; flavor with nutmeg; if desired. Honey and Whisky. Honey and whisky, or maple syrup, rock candy syrup, molasses with rum or whisky, are all served in 21 the same way, about half a teaspoonful of the syrup to each. Hot Scotch. Hot Scotch, Hot Irish, and all other kinds of hot drinks, are made in the same way as a Blue Blazer, or the plain way, which I explained in the receipt entitled \" Hot Whisky.\" But a Hot Sherry, Claret, Rhine, and all other still wines, must be made the plain way, as they will not burn.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Whisky.\n        Take one lump of -s ugar, dissolve it with a little hot\n    water, add a lemon peel, twisted ; fill your glass one-\n    half full of hot water, and add one jigger of whisky;\n    flavor with nutmeg; if desired.\n                     Honey and Whisky.\n       Honey and whisky, or maple syrup, rock candy\n    syrup, molasses with rum or whisky, are all served in\n                             21\n\n  the same way, about half a teaspoonful of the syrup\n  to each.\n                       Hot Scotch.\n     Hot Scotch, Hot Irish, and all other kinds of hot\n drinks, are made in the same way as a Blue Blazer, or\n the plain way, which I explained in the receipt entitled\n \" Hot Whisky.\" But a Hot Sherry, Claret, Rhine,\n and all other still wines, must be made the plain way,\n as they will not burn."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-036",
+      "order": 36,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Spiced Rum",
+      "name_es": "Hot Spiced Rum",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "This drink is made in the same way as a Blue Blazer, or any plain hot drink, according to taste, and rum in place of the othe r liquors, and you put three or four cloves upon the top. Some people use a littl~ piece of butter also, but it gives to the drink such a greasy appearance that I cannot consistently recom- mend it.",
+      "method_es": "This drink is made in the same way as a Blue Blazer, or any plain hot drink, according to taste, and rum in place of the othe r liquors, and you put three or four cloves upon the top. Some people use a littl~ piece of butter also, but it gives to the drink such a greasy appearance that I cannot consistently recom- mend it.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Spiced Rum.\n    This drink is made in the same way as a Blue\nBlazer, or any plain hot drink, according to taste, and\nrum in place of the othe r liquors, and you put three\nor four cloves upon the top. Some people use a littl~\npiece of butter also, but it gives to the drink such a\ngreasy appearance that I cannot consistently recom-\nmend it.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-037",
+      "order": 37,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Peppermint",
+      "name_es": "Hot Peppermint",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peppermint",
+          "item_es": "peppermint",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "In a hot drink glass, one to two teaspoonfuls of peppermint and two lumps of sugar. Then fill the glass two-thirds with hot water. Hot Jamaica Gin- ger is served the same way.",
+      "method_es": "In a hot drink glass, one to two teaspoonfuls of peppermint and two lumps of sugar. Then fill the glass two-thirds with hot water. Hot Jamaica Gin- ger is served the same way.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Peppermint.\n    In a hot drink glass, one to two teaspoonfuls of\npeppermint and two lumps of sugar. Then fill the\nglass two-thirds with hot water. Hot Jamaica Gin-\nger is served the same way."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-038",
+      "order": 38,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Hot Menthe",
+      "name_es": "Hot Menthe",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sug ar",
+          "item_es": "sug ar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "One pony of peppe rmint cordial m a hot drink glass, then fill two-thirds full of hot wate r, add one lump of sug ar. 22 Hot Sling. Is like any other hot drink, without the lemon pee l. Gen. Harrison Egg Nogg. One egg in a g lass of .cider.",
+      "method_es": "One pony of peppe rmint cordial m a hot drink glass, then fill two-thirds full of hot wate r, add one lump of sug ar. 22 Hot Sling. Is like any other hot drink, without the lemon pee l. Gen. Harrison Egg Nogg. One egg in a g lass of .cider.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Menthe.\n    One pony of peppe rmint cordial m a hot drink\nglass, then fill two-thirds full of hot wate r, add one\nlump of sug ar.\n                               22\n\n\n                          Hot Sling.\n    Is like any other hot drink, without the lemon pee l.\n\n               Gen. Harrison Egg Nogg.\n\n    One egg in a g lass of .cider."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-039",
+      "order": 39,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Bari-Kari",
+      "name_es": "Bari-Kari",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s ug ar",
+          "item_es": "s ug ar",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "a pple bra ndy",
+          "item_es": "a pple bra ndy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "A whisky sour, strain in a punch g lass, and fill ·with a pollinaris or seltz er water. ~ot   A pple Toddy . In a hot d rink g lass, two lumps of s ug ar, one-third the g lass of hot wate r, half a baked a pple, one Jigger of a pple bra ndy, and nutmeg on th e top.",
+      "method_es": "A whisky sour, strain in a punch g lass, and fill ·with a pollinaris or seltz er water. ~ot   A pple Toddy . In a hot d rink g lass, two lumps of s ug ar, one-third the g lass of hot wate r, half a baked a pple, one Jigger of a pple bra ndy, and nutmeg on th e top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bari-Kari.\n\n    A whisky sour, strain in a punch g lass, and fill ·with\na pollinaris or seltz er water.\n\n                    ~ot   A pple Toddy .\n\n    In a hot d rink g lass, two lumps of s ug ar, one-third\nthe g lass of hot wate r, half a baked a pple, one Jigger\nof a pple bra ndy, and nutmeg on th e top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-040",
+      "order": 40,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Knickerbocker",
+      "name_es": "Knickerbocker",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of st",
+          "item_es": "of st",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "In a cobble r g lass, syrup and lemon JUtce as in a punch , on e slice of o range a nd on e of pin eapple, one- half pony of curacoa, one jigger of St. Croix rum , fill with ice a nd straws.",
+      "method_es": "In a cobble r g lass, syrup and lemon JUtce as in a punch , on e slice of o range a nd on e of pin eapple, one- half pony of curacoa, one jigger of St. Croix rum , fill with ice a nd straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Knickerbocker.\n     In a cobble r g lass, syrup and lemon JUtce as in a\npunch , on e slice of o range a nd on e of pin eapple, one-\nhalf pony of curacoa, one jigger of St. Croix rum ,\nfill with ice a nd straws."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-041",
+      "order": 41,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Kirs ch",
+      "name_es": "Kirs ch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Is som etimes ser ved with a lump of sugar in the pony g lass, as it is a very dry cordial.",
+      "method_es": "Is som etimes ser ved with a lump of sugar in the pony g lass, as it is a very dry cordial.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Kirs ch.\n   Is som etimes ser ved with a lump of sugar in the\npony g lass, as it is a very dry cordial."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-042",
+      "order": 42,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Martini Cocktail",
+      "name_es": "Martini Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Is half Tom g in and half vermouth made like an y oth er cockta il; no absinthe.",
+      "method_es": "Is half Tom g in and half vermouth made like an y oth er cockta il; no absinthe.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Martini Cocktail.\n    Is half Tom g in and half vermouth made like an y\noth er cockta il; no absinthe.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-043",
+      "order": 43,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Olcl-fashionecl Cocktail",
+      "name_es": "Olcl-fashionecl Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "T a ke on e-half lump of s ug ar, a nd dissol ve it with water in a bar or whisky g lass, which have the sam e m eaning ; then pour out the water; add a littl e bitters, sy rup a nd absinthe as y ou would to any other cocktail ; twist a pi e ce of lemon-peel; drop in two or three pie ces of ice, one jigger of whisky ; stir with a spo o n, and stra in into ano ther whisky g lass. No. 2. Prepared like the old-fashion No. 1, with th e exception th at y ou use on e chunk of ice only a nd leave it in the g lass in stead of st rain it. P o1·t F lip. Port Flip is ma de in th e sa me m a nner as an E gg or a S h e rry F lip , using port w ine in place of sh erry, e tc.",
+      "method_es": "T a ke on e-half lump of s ug ar, a nd dissol ve it with water in a bar or whisky g lass, which have the sam e m eaning ; then pour out the water; add a littl e bitters, sy rup a nd absinthe as y ou would to any other cocktail ; twist a pi e ce of lemon-peel; drop in two or three pie ces of ice, one jigger of whisky ; stir with a spo o n, and stra in into ano ther whisky g lass. No. 2. Prepared like the old-fashion No. 1, with th e exception th at y ou use on e chunk of ice only a nd leave it in the g lass in stead of st rain it. P o1·t F lip. Port Flip is ma de in th e sa me m a nner as an E gg or a S h e rry F lip , using port w ine in place of sh erry, e tc.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Olcl-fashionecl Cocktail.\n    T a ke on e-half lump of s ug ar, a nd dissol ve it with\nwater in a bar or whisky g lass, which have the sam e\nm eaning ; then pour out the water; add a littl e bitters,\nsy rup a nd absinthe as y ou would to any other cocktail ;\ntwist a pi e ce of lemon-peel; drop in two or three\npie ces of ice, one jigger of whisky ; stir with a spo o n,\nand stra in into ano ther whisky g lass.\n     No. 2. Prepared like the old-fashion No. 1, with\nth e exception th at y ou use on e chunk of ice only a nd\nleave it in the g lass in stead of st rain it.\n                         P o1·t F lip.\n     Port Flip is ma de in th e sa me m a nner as an E gg or\n a S h e rry F lip , using port w ine in place of sh erry, e tc."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-044",
+      "order": 44,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Pony of Whisky",
+      "name_es": "Pony of Whisky",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill a pony glass of whisky, then place over it a whisky glass upside down;while holding both together, turn the whisky glass on its bottom containing the pony upside down; water on the side. ANOTHER METHOD.-Place your pony glass upon the edge of the counter and fill it; then cover it with a whisky glass turned upside down;_ then, with your fore and index fingers placed upon the top and thumb underneath, turn the g.lasses over and serve. Should you wish to have it cold, while holding as I have said , with the scoop throw in some ice, filling up the glass all around the pony, which contains the liquor ; and after a brief space, or when your customer is re ady to drink, hold it again in the same position ; th e n reve rse it and the ice will fall out, leaving, of course, th e liquor undisturbed.",
+      "method_es": "Fill a pony glass of whisky, then place over it a whisky glass upside down;while holding both together, turn the whisky glass on its bottom containing the pony upside down; water on the side. ANOTHER METHOD.-Place your pony glass upon the edge of the counter and fill it; then cover it with a whisky glass turned upside down;_ then, with your fore and index fingers placed upon the top and thumb underneath, turn the g.lasses over and serve. Should you wish to have it cold, while holding as I have said , with the scoop throw in some ice, filling up the glass all around the pony, which contains the liquor ; and after a brief space, or when your customer is re ady to drink, hold it again in the same position ; th e n reve rse it and the ice will fall out, leaving, of course, th e liquor undisturbed.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pony of Whisky.\n    Fill a pony glass of whisky, then place over it a\nwhisky glass upside down;while holding both together,\nturn the whisky glass on its bottom containing the\npony upside down; water on the side.\n    ANOTHER METHOD.-Place your pony glass upon\nthe edge of the counter and fill it; then cover it with\na whisky glass turned upside down;_ then, with your\nfore and index fingers placed upon the top and thumb\nunderneath, turn the g.lasses over and serve. Should\nyou wish to have it cold, while holding as I have said ,\nwith the scoop throw in some ice, filling up the glass\nall around the pony, which contains the liquor ; and\nafter a brief space, or when your customer is re ady to\ndrink, hold it again in the same position ; th e n reve rse\nit and the ice will fall out, leaving, of course, th e\nliquor undisturbed.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-045",
+      "order": 45,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Pousse Cafe",
+      "name_es": "Pousse Cafe",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "In a Pousse Cafe glass put in one-fourth anise tte, on e -fourth curacoa, one-fourth yellow chartreuse a nd one-fourth brandy. Modern. No. 2. One-fourth maraschino , one-fourth pep- permint cordial, one-fourth abricotin e and on e-fourth brandy. The contrast of th ese colors is beautiful. These Pousse Cafes are all pre pare d as e xplained in Pousse Cafe No . 3. 27 No. 3. This drink must be mixed with great care, in order that e ach cordial may show separately when placed before the customer.. A Pousse Cafe is a drink consisting of · six different cordials, more or less. It is made in a Pousse Cafe glass, or sherry glass of an oval shape. You must first commence with mara- schino, and you will have to use your judg ment as to the quantity you will require to make the stripes of an equa l width. The n comes curacoa; then yellow chartreuse, to be fo llowed successively by g reen cha r- treuse, Be nedictine <1.nd brandy. When you have these cordials, carefull y place one on the top of the other by pouring the m on the e nd of a spoon a nd slidin g it on the side of th e g lass so that it will fall slowly upon the other a nd not mix . You the n sta rt the fire to it, and let it burn about thirty seco nds; then place over it a large g lass and it will smother the Aame. Now, with a small pa ir of silver prongs, t ak e a g ood si zed piece of ice a nd cool the edg e of the g lass. Serve with one napkin undern eath and one on the rig ht-hand side of the custome r.",
+      "method_es": "In a Pousse Cafe glass put in one-fourth anise tte, on e -fourth curacoa, one-fourth yellow chartreuse a nd one-fourth brandy. Modern. No. 2. One-fourth maraschino , one-fourth pep- permint cordial, one-fourth abricotin e and on e-fourth brandy. The contrast of th ese colors is beautiful. These Pousse Cafes are all pre pare d as e xplained in Pousse Cafe No . 3. 27 No. 3. This drink must be mixed with great care, in order that e ach cordial may show separately when placed before the customer.. A Pousse Cafe is a drink consisting of · six different cordials, more or less. It is made in a Pousse Cafe glass, or sherry glass of an oval shape. You must first commence with mara- schino, and you will have to use your judg ment as to the quantity you will require to make the stripes of an equa l width. The n comes curacoa; then yellow chartreuse, to be fo llowed successively by g reen cha r- treuse, Be nedictine <1.nd brandy. When you have these cordials, carefull y place one on the top of the other by pouring the m on the e nd of a spoon a nd slidin g it on the side of th e g lass so that it will fall slowly upon the other a nd not mix . You the n sta rt the fire to it, and let it burn about thirty seco nds; then place over it a large g lass and it will smother the Aame. Now, with a small pa ir of silver prongs, t ak e a g ood si zed piece of ice a nd cool the edg e of the g lass. Serve with one napkin undern eath and one on the rig ht-hand side of the custome r.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pousse Cafe.\n     In a Pousse Cafe glass put in one-fourth anise tte,\non e -fourth curacoa, one-fourth yellow chartreuse a nd\none-fourth brandy.\n                        Modern.\n   No. 2. One-fourth maraschino , one-fourth pep-\npermint cordial, one-fourth abricotin e and on e-fourth\nbrandy. The contrast of th ese colors is beautiful.\nThese Pousse Cafes are all pre pare d as e xplained in\nPousse Cafe No . 3.\n                            27\n      No. 3. This drink must be mixed with great care,\nin order that e ach cordial may show separately when\nplaced before the customer.. A Pousse Cafe is a drink\nconsisting of · six different cordials, more or less. It\nis made in a Pousse Cafe glass, or sherry glass of an\noval shape. You must first commence with mara-\nschino, and you will have to use your judg ment as to\nthe quantity you will require to make the stripes of\nan equa l width. The n comes curacoa; then yellow\nchartreuse, to be fo llowed successively by g reen cha r-\ntreuse, Be nedictine <1.nd brandy. When you have\n these cordials, carefull y place one on the top of the\n other by pouring the m on the e nd of a spoon a nd\n slidin g it on the side of th e g lass so that it will fall\n slowly upon the other a nd not mix . You the n sta rt\n the fire to it, and let it burn about thirty seco nds;\n  then place over it a large g lass and it will smother the\n  Aame. Now, with a small pa ir of silver prongs, t ak e\n  a g ood si zed piece of ice a nd cool the edg e of the\n  g lass. Serve with one napkin undern eath and one on\n  the rig ht-hand side of the custome r.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-046",
+      "order": 46,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Pousse L' A1nour",
+      "name_es": "Pousse L' A1nour",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "T ake a P ousse C afe g lass; p ut in a bout one-third of a maraschino, th e yolk of one eg g , fill up w ith bra ndy, a nd burn lik e a Pousse C afe. Sometimes we do not burn it.",
+      "method_es": "T ake a P ousse C afe g lass; p ut in a bout one-third of a maraschino, th e yolk of one eg g , fill up w ith bra ndy, a nd burn lik e a Pousse C afe. Sometimes we do not burn it.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pousse L' A1nour.\n     T ake a P ousse C afe g lass; p ut in a bout one-third\n of a maraschino, th e yolk of one eg g , fill up w ith\n bra ndy, a nd burn lik e a Pousse C afe. Sometimes we\n do not burn it.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-047",
+      "order": 47,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Plain Leinonade",
+      "name_es": "Plain Leinonade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "On e whole lerrion peeled and cut in two, put in a le monade g lass, one full tablespoon of sugar, squ e eze well with muddler, fill half ·full with fine ice, then fill full with wate r. Shake well and strain it, unless told not t o.",
+      "method_es": "On e whole lerrion peeled and cut in two, put in a le monade g lass, one full tablespoon of sugar, squ e eze well with muddler, fill half ·full with fine ice, then fill full with wate r. Shake well and strain it, unless told not t o.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plain Leinonade.\n     On e whole lerrion peeled and cut in two, put in a\nle monade g lass, one full tablespoon of sugar, squ e eze\nwell with muddler, fill half ·full with fine ice, then fill\nfull with wate r. Shake well and strain it, unless told\nnot t o.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-048",
+      "order": 48,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Puritan Cooler",
+      "name_es": "Puritan Cooler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "In the larg est si ze of thin g lass ; one chunk of ice, o n e jigge r of whisky and a bottl e of importe d g inge r ale, with a little orange juice.",
+      "method_es": "In the larg est si ze of thin g lass ; one chunk of ice, o n e jigge r of whisky and a bottl e of importe d g inge r ale, with a little orange juice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Puritan Cooler.\n     In the larg est si ze of thin g lass ; one chunk of ice,\no n e jigge r of whisky and a bottl e of importe d g inge r\nale, with a little orange juice.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-049",
+      "order": 49,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Perry Oyster",
+      "name_es": "Perry Oyster",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "B reak in a whisky glass one eg g, add salt, p epper an d v inegar, and the n you have an artificial oyster.",
+      "method_es": "B reak in a whisky glass one eg g, add salt, p epper an d v inegar, and the n you have an artificial oyster.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Perry Oyster.\n    B reak in a whisky glass one eg g, add salt, p epper\nan d v inegar, and the n you have an artificial oyster.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-050",
+      "order": 50,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Plymouth Cocktail",
+      "name_es": "Plymouth Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "A regular cocktail mad e out of Plymouth gin.",
+      "method_es": "A regular cocktail mad e out of Plymouth gin.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plymouth Cocktail.\n    A regular cocktail mad e out of Plymouth gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-051",
+      "order": 51,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "The Prohibition",
+      "name_es": "The Prohibition",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "I s made of one egg, a little le mon juice, on e glass of cider; shake up in the ice and stra in ; w ith a little nutmeg, if d esired.",
+      "method_es": "I s made of one egg, a little le mon juice, on e glass of cider; shake up in the ice and stra in ; w ith a little nutmeg, if d esired.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Prohibition.\n   I s made of one egg, a little le mon juice, on e glass\nof cider; shake up in the ice and stra in ; w ith a little\nnutmeg, if d esired.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-052",
+      "order": 52,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Port Wine Sangaree",
+      "name_es": "Port Wine Sangaree",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "port w",
+          "item_es": "port w",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "P ut in a mixing g lass a t easpoonful of s ug ar, fill up two-thirds with fin e ice, one jigger of port w in e, 29 shak~ well, strain in a stem champagne glass with nut- meg on the top.",
+      "method_es": "P ut in a mixing g lass a t easpoonful of s ug ar, fill up two-thirds with fin e ice, one jigger of port w in e, 29 shak~ well, strain in a stem champagne glass with nut- meg on the top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Port Wine Sangaree.\n   P ut in a mixing g lass a t easpoonful of s ug ar, fill\nup two-thirds with fin e ice, one jigger of port w in e,\n                             29\nshak~ well, strain in a stem champagne glass with nut-\nmeg on the top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-053",
+      "order": 53,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Porter Sangaree",
+      "name_es": "Porter Sangaree",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "One big lump of ice, a little sugar, fill with por- te r, nutmeg on the top, then remove the ice. Some- times we omit the ice.",
+      "method_es": "One big lump of ice, a little sugar, fill with por- te r, nutmeg on the top, then remove the ice. Some- times we omit the ice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Porter Sangaree.\n     One big lump of ice, a little sugar, fill with por-\nte r, nutmeg on the top, then remove the ice. Some-\ntimes we omit the ice.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-054",
+      "order": 54,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Roman Punch",
+      "name_es": "Roman Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "j amaica rum",
+          "item_es": "j amaica rum",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a cobbler glass, a nd as much syrup as you would for a cobbler , a little curacoa, some lemo n juice; then fill it up with bar ice, half a jigger of J amaica rum, and a half jigger of whisky; stir wi th a spoon, dress it with fruit, and serve with a straw.",
+      "method_es": "Use a cobbler glass, a nd as much syrup as you would for a cobbler , a little curacoa, some lemo n juice; then fill it up with bar ice, half a jigger of J amaica rum, and a half jigger of whisky; stir wi th a spoon, dress it with fruit, and serve with a straw.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Roman Punch.\n    Use a cobbler glass, a nd as much syrup as you\nwould for a cobbler , a little curacoa, some lemo n juice;\nthen fill it up with bar ice, half a jigger of J amaica rum,\nand a half jigger of whisky; stir wi th a spoon, dress\nit with fruit, and serve with a straw."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-055",
+      "order": 55,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Reed's St01nach Bitters",
+      "name_es": "Reed's St01nach Bitters",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "These bitters are now served in a sherry glass. Ruin Punch. Rum Punch is made in the same way as a whisky punch, except that rum is used instead of whisk y. Rums, Etc. Rums, Brandies, Whiskies, Gins, etc., plain, are all served in the ordinary bar glasses with water on the side. Rock and Rye. Rock candy syrup in a whisky g lass, and let the customer help himself with rye. 30",
+      "method_es": "These bitters are now served in a sherry glass. Ruin Punch. Rum Punch is made in the same way as a whisky punch, except that rum is used instead of whisk y. Rums, Etc. Rums, Brandies, Whiskies, Gins, etc., plain, are all served in the ordinary bar glasses with water on the side. Rock and Rye. Rock candy syrup in a whisky g lass, and let the customer help himself with rye. 30",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Reed's St01nach Bitters.\n    These bitters are now served in a sherry glass.\n\n                      Ruin Punch.\n   Rum Punch is made in the same way as a whisky\npunch, except that rum is used instead of whisk y.\n\n                       Rums, Etc.\n     Rums, Brandies, Whiskies, Gins, etc., plain, are\nall served in the ordinary bar glasses with water on\nthe side.\n                   Rock and Rye.\n   Rock candy syrup in a whisky g lass, and let the\ncustomer help himself with rye.\n                          30",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-056",
+      "order": 56,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Rum Puff",
+      "name_es": "Rum Puff",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "catawba",
+          "item_es": "catawba",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Same as Gin Puff, except to substitute Medford rum for gin. Seventh Regiment Punch. In a cobbler glass, syrup and lemon- as in a whisky punch, one-half a jigger of brandy, fill with ice; one jigger of Catawba, dash of Jamaica rum; stir well ; decorate with fruits and straws.",
+      "method_es": "Same as Gin Puff, except to substitute Medford rum for gin. Seventh Regiment Punch. In a cobbler glass, syrup and lemon- as in a whisky punch, one-half a jigger of brandy, fill with ice; one jigger of Catawba, dash of Jamaica rum; stir well ; decorate with fruits and straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rum Puff.\n   Same as Gin Puff, except to substitute Medford\nrum for gin.\n             Seventh Regiment Punch.\n    In a cobbler glass, syrup and lemon- as in a whisky\npunch, one-half a jigger of brandy, fill with ice; one\njigger of Catawba, dash of Jamaica rum; stir well ;\ndecorate with fruits and straws."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-057",
+      "order": 57,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Rum Puncb-Bowl",
+      "name_es": "Rum Puncb-Bowl",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "For one gallon of punch; two quarts of Medford rum, two quarts ·of water, a wi.ne glass full of mara- schino, one pound of sugar, the juice of one dozen le mons; one-fourth ·pint of pineapple juice; stir until the sug ar is dissolved ; add one big chunk of ice and fruits on the top.",
+      "method_es": "For one gallon of punch; two quarts of Medford rum, two quarts ·of water, a wi.ne glass full of mara- schino, one pound of sugar, the juice of one dozen le mons; one-fourth ·pint of pineapple juice; stir until the sug ar is dissolved ; add one big chunk of ice and fruits on the top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rum Puncb-Bowl.\n    For one gallon of punch; two quarts of Medford\nrum, two quarts ·of water, a wi.ne glass full of mara-\nschino, one pound of sugar, the juice of one dozen\nle mons; one-fourth ·pint of pineapple juice; stir until\nthe sug ar is dissolved ; add one big chunk of ice and\nfruits on the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-058",
+      "order": 58,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Royal Cocktail",
+      "name_es": "Royal Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a bowl champagne glass, put in a few drops of pepsin or peychaud bitters; add about one-half t easpoonful of pulverized sugar, then fill your glass half full with seltzer; then, with the pinchers, take a g ood size lump of ice, hold it above your glass with your left hand, whilst with the rig ht you pour on the top of the ice a jigger of v~ rrnouth which you had previously measured in another glass. This makes a fin e appearing drink, and the making of it is very at- tractive to young thorou g hbreds.",
+      "method_es": "Take a bowl champagne glass, put in a few drops of pepsin or peychaud bitters; add about one-half t easpoonful of pulverized sugar, then fill your glass half full with seltzer; then, with the pinchers, take a g ood size lump of ice, hold it above your glass with your left hand, whilst with the rig ht you pour on the top of the ice a jigger of v~ rrnouth which you had previously measured in another glass. This makes a fin e appearing drink, and the making of it is very at- tractive to young thorou g hbreds.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Royal Cocktail.\n     Take a bowl champagne glass, put in a few drops\nof pepsin or peychaud bitters; add about one-half\nt easpoonful of pulverized sugar, then fill your glass\nhalf full with seltzer; then, with the pinchers, take a\ng ood size lump of ice, hold it above your glass with\nyour left hand, whilst with the rig ht you pour on the\ntop of the ice a jigger of v~ rrnouth which you had\npreviously measured in another glass. This makes a\nfin e appearing drink, and the making of it is very at-\ntractive to young thorou g hbreds.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-059",
+      "order": 59,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Ramson Cooler",
+      "name_es": "Ramson Cooler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a thin glass and cool it, while you are care- fully cutting the rind from a whole lemon into an un- broken string, then empty the glass. With your left hand take the end of the lemon-peel string, then let the other extremity into the g lass, lower the other end until you have about half of it into the glass, then , put in the center one well-shaped lump of ice near the size of an egg , let the balance of the peel fall over it. If you do that d exterously, it will have the appear- a nce of a snake. Add one jigger of Tom gin and half a bottle of Delatour soda. It makes an excel- lent cooling drink.",
+      "method_es": "Take a thin glass and cool it, while you are care- fully cutting the rind from a whole lemon into an un- broken string, then empty the glass. With your left hand take the end of the lemon-peel string, then let the other extremity into the g lass, lower the other end until you have about half of it into the glass, then , put in the center one well-shaped lump of ice near the size of an egg , let the balance of the peel fall over it. If you do that d exterously, it will have the appear- a nce of a snake. Add one jigger of Tom gin and half a bottle of Delatour soda. It makes an excel- lent cooling drink.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ramson Cooler.\n    Take a thin glass and cool it, while you are care-\nfully cutting the rind from a whole lemon into an un-\nbroken string, then empty the glass. With your left\nhand take the end of the lemon-peel string, then let\nthe other extremity into the g lass, lower the other end\nuntil you have about half of it into the glass, then ,\nput in the center one well-shaped lump of ice near the\nsize of an egg , let the balance of the peel fall over it.\nIf you do that d exterously, it will have the appear-\na nce of a snake. Add one jigger of Tom gin and\n half a bottle of Delatour soda. It makes an excel-\n lent cooling drink."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-060",
+      "order": 60,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Seltzer Water",
+      "name_es": "Seltzer Water",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Seltze r, and all other mineral waters, are served in a punch, or modern champag ne glass. Sauterne Sangaree. This is made similar to a Port Wine Sangaree, sauterne being substituted for the Port. St. Croix Rum Punch. The same mode of making as any other punch, substituting St. Croix rum in place of other liquors. Sherry Flip . . This is made in precisely the same way as an Egg Flip. Silver Fizz. The only change in making from Golden Fizz is the using of the white of the egg in place of the yo lk. No. 2.   To substitute rum for Tom gin . . Sbandy Gaff. This drink rs made of half a le a nd half g mger ale. Soda Lemonade. Precisely th e same as plain lemonade, using soda pop in place of water. S om etimes Delatour soda.",
+      "method_es": "Seltze r, and all other mineral waters, are served in a punch, or modern champag ne glass. Sauterne Sangaree. This is made similar to a Port Wine Sangaree, sauterne being substituted for the Port. St. Croix Rum Punch. The same mode of making as any other punch, substituting St. Croix rum in place of other liquors. Sherry Flip . . This is made in precisely the same way as an Egg Flip. Silver Fizz. The only change in making from Golden Fizz is the using of the white of the egg in place of the yo lk. No. 2.   To substitute rum for Tom gin . . Sbandy Gaff. This drink rs made of half a le a nd half g mger ale. Soda Lemonade. Precisely th e same as plain lemonade, using soda pop in place of water. S om etimes Delatour soda.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Seltzer Water.\n   Seltze r, and all other mineral waters, are served in\na punch, or modern champag ne glass.\n\n                 Sauterne Sangaree.\n   This is made similar to a Port Wine Sangaree,\nsauterne being substituted for the Port.\n\n                St. Croix Rum Punch.\n    The same mode of making as any other punch,\n substituting St. Croix rum in place of other liquors.\n                      Sherry Flip .\n   . This is made in precisely the same way as an Egg\n Flip.\n                        Silver Fizz.\n     The only change in making from Golden Fizz is\n the using of the white of the egg in place of the yo lk.\n       No. 2.   To substitute rum for Tom gin .\n\n                      . Sbandy Gaff.\n       This drink rs made of half a le a nd half g mger\nale.\n                     Soda Lemonade.\n   Precisely th e same as plain lemonade, using soda\npop in place of water. S om etimes Delatour soda.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-061",
+      "order": 61,
+      "section_title": "Drinks",
+      "category": "sling",
+      "name_original": "Sling",
+      "name_es": "Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Whisky Sling is : A little sugar a nd nutm eg in a whisky g lass, and allowing your cust o mer to pour o ut the liquor for himself. All other slings, such as bran- dies, g in s, e tc., are served in the same style.",
+      "method_es": "Whisky Sling is : A little sugar a nd nutm eg in a whisky g lass, and allowing your cust o mer to pour o ut the liquor for himself. All other slings, such as bran- dies, g in s, e tc., are served in the same style.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sling.\n    Whisky Sling is : A little sugar a nd nutm eg in a\nwhisky g lass, and allowing your cust o mer to pour o ut\nthe liquor for himself. All other slings, such as bran-\ndies, g in s, e tc., are served in the same style.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-062",
+      "order": 62,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Sherry and Bitters",
+      "name_es": "Sherry and Bitters",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take your sherry g lass and squirt into it so m e bitters; roll the g lass to the rig ht and le ft whil e hold- in g it b et wee n your fingers, thus allowing th e amount of bitte rs that does not adhere to the g lass to fall out, as what remains will be sufficient. Then fill the g lass w ith sh e rry.",
+      "method_es": "Take your sherry g lass and squirt into it so m e bitters; roll the g lass to the rig ht and le ft whil e hold- in g it b et wee n your fingers, thus allowing th e amount of bitte rs that does not adhere to the g lass to fall out, as what remains will be sufficient. Then fill the g lass w ith sh e rry.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sherry and Bitters.\n     Take your sherry g lass and squirt into it so m e\nbitters; roll the g lass to the rig ht and le ft whil e hold-\nin g it b et wee n your fingers, thus allowing th e amount\nof bitte rs that does not adhere to the g lass to fall out,\nas what remains will be sufficient. Then fill the g lass\nw ith sh e rry.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-063",
+      "order": 63,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Sherry and Ice",
+      "name_es": "Sherry and Ice",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put a few lumps of ice in a sour glass and fill it up with sherry wine. 33",
+      "method_es": "Put a few lumps of ice in a sour glass and fill it up with sherry wine. 33",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sherry and Ice.\n   Put a few lumps of ice in a sour glass and fill it up\nwith sherry wine.\n                               33",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-064",
+      "order": 64,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Steinway Punch",
+      "name_es": "Steinway Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "A punch glass with .fruit and water on the side; then take - a mixin bo-. ba-lass' put in the one-quarter of a lemon, two lumps of sugar, about a jigge r and a half of apollinaris water, squeeze the whole together, then fill the glass half full of ice, one jigger of whisky, stir and strain in the pre pared g lass.",
+      "method_es": "A punch glass with .fruit and water on the side; then take - a mixin bo-. ba-lass' put in the one-quarter of a lemon, two lumps of sugar, about a jigge r and a half of apollinaris water, squeeze the whole together, then fill the glass half full of ice, one jigger of whisky, stir and strain in the pre pared g lass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Steinway Punch.\n       A punch glass with .fruit and water on the side;\n then take\n         -\n             a mixin bo-. ba-lass' put in the one-quarter of a\n lemon, two lumps of sugar, about a jigge r and a half\n of apollinaris water, squeeze the whole together, then\n fill the glass half full of ice, one jigger of whisky, stir\n and strain in the pre pared g lass."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-065",
+      "order": 65,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "Sour Whisky",
+      "name_es": "Sour Whisky",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Sour vVhisky is made with a little le mon-juice in a bar glass, and the customer pours out his own liquor. ·Serve with water on the side.",
+      "method_es": "Sour vVhisky is made with a little le mon-juice in a bar glass, and the customer pours out his own liquor. ·Serve with water on the side.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sour Whisky.\n    Sour vVhisky is made with a little le mon-juice in\na bar glass, and the customer pours out his own\nliquor. ·Serve with water on the side.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-066",
+      "order": 66,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Soda Cocktail",
+      "name_es": "Soda Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "This is made in an ale g lass, which is a tall and thin glass. Put in a piece of lemon peel, a little bitters, t easpoonful of sugar, one bottle of soda pop; stir to make a fizz.",
+      "method_es": "This is made in an ale g lass, which is a tall and thin glass. Put in a piece of lemon peel, a little bitters, t easpoonful of sugar, one bottle of soda pop; stir to make a fizz.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Cocktail.\n     This is made in an ale g lass, which is a tall and\nthin glass. Put in a piece of lemon peel, a little\nbitters, t easpoonful of sugar, one bottle of soda pop;\nstir to make a fizz."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-067",
+      "order": 67,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Stew",
+      "name_es": "Stew",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "butter t o it",
+          "item_es": "butter t o it",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Is a hot drink of a ny kind. It is made by adding a piece of butter t o it and some spices. A hot claret made this way makes a very pleasant drink. Silver Sour and Golden Sou:r. I s made like a Silver Fizz or Golden Fizz without the seltzer.",
+      "method_es": "Is a hot drink of a ny kind. It is made by adding a piece of butter t o it and some spices. A hot claret made this way makes a very pleasant drink. Silver Sour and Golden Sou:r. I s made like a Silver Fizz or Golden Fizz without the seltzer.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Stew.\n    Is a hot drink of a ny kind. It is made by adding\na piece of butter t o it and some spices. A hot claret\nmade this way makes a very pleasant drink.\n            Silver Sour and Golden Sou:r.\n    I s made like a Silver Fizz or Golden Fizz without\nthe seltzer."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-068",
+      "order": 68,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Soda Nectar",
+      "name_es": "Soda Nectar",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of 34 bi-carbonate soda",
+          "item_es": "of 34 bi-carbonate soda",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "In a soda g lass the juice of half a lemon, one- half tablespoonful of sugar and a teaspoonful of 34 bi-carbonate soda; filled with Seltzer.         Stir with a spoon.",
+      "method_es": "In a soda g lass the juice of half a lemon, one- half tablespoonful of sugar and a teaspoonful of 34 bi-carbonate soda; filled with Seltzer.         Stir with a spoon.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Nectar.\n    In a soda g lass the juice of half a lemon, one-\nhalf tablespoonful of sugar and a teaspoonful of\n                             34\n\nbi-carbonate soda; filled with Seltzer.         Stir with a\nspoon."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-069",
+      "order": 69,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Split",
+      "name_es": "Split",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Is a pony of fin e whisky or brandy and placed a whisky g lass over as explained in how to serve a pony b randy; while the pony stands upside down inside of t h e whisky g lass, pour in its side so m e seltzer, apollin- aris or plain wat er, whatever is desired, the n care- f ully raise the pony glass and the brandy o r whisky will float on the top.",
+      "method_es": "Is a pony of fin e whisky or brandy and placed a whisky g lass over as explained in how to serve a pony b randy; while the pony stands upside down inside of t h e whisky g lass, pour in its side so m e seltzer, apollin- aris or plain wat er, whatever is desired, the n care- f ully raise the pony glass and the brandy o r whisky will float on the top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Split.\n      Is a pony of fin e whisky or brandy and placed a\nwhisky g lass over as explained in how to serve a pony\nb randy; while the pony stands upside down inside of\nt h e whisky g lass, pour in its side so m e seltzer, apollin-\naris or plain wat er, whatever is desired, the n care-\nf ully raise the pony glass and the brandy o r whisky\nwill float on the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-070",
+      "order": 70,
+      "section_title": "Drinks",
+      "category": "toddy",
+      "name_original": "Soft Toddy",
+      "name_es": "Soft Toddy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "le mon-peel",
+          "item_es": "le mon-peel",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Some sugar crushed with two pieces of le mon-peel, one jigger of whisky and sc:ruirt som e champagne on the top, if kept on draught.",
+      "method_es": "Some sugar crushed with two pieces of le mon-peel, one jigger of whisky and sc:ruirt som e champagne on the top, if kept on draught.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soft Toddy.\n   Some sugar crushed with two pieces of le mon-peel,\none jigger of whisky and sc:ruirt som e champagne on\nthe top, if kept on draught."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-071",
+      "order": 71,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "Swedish Punch",
+      "name_es": "Swedish Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Is a cordial and two-thirds of a sh e rry glass is generally an order.",
+      "method_es": "Is a cordial and two-thirds of a sh e rry glass is generally an order.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Swedish Punch.\n   Is a cordial and two-thirds of a sh e rry glass is\ngenerally an order.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-072",
+      "order": 72,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Sea Foam",
+      "name_es": "Sea Foam",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Half milk and half seltzer.",
+      "method_es": "Half milk and half seltzer.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sea Foam.\n    Half milk and half seltzer.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-073",
+      "order": 73,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Sam Warcl",
+      "name_es": "Sam Warcl",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "A sherry glass full of fine ice, a le mon p eel fitting t he ins ~ de of the rim of the g lass, then fill it with yellow chartreuse.",
+      "method_es": "A sherry glass full of fine ice, a le mon p eel fitting t he ins ~ de of the rim of the g lass, then fill it with yellow chartreuse.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sam Warcl.\n    A sherry glass full of fine ice, a le mon p eel fitting\nt he ins ~ de of the rim of the g lass, then fill it with\nyellow chartreuse.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-074",
+      "order": 74,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Snow Ball",
+      "name_es": "Snow Ball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a thin glass, fill it full of fin e ice to cool it; t hen take a mixing glass put in a little lemon juice, 35 about a teaspoonful of sugar, a ponY.of fine old brandy, the white of an egg, a few lumps of ice, shake well; then strain in the cooled glas's. Add half a bottle of imported ginger ale and stir up with a spoOI: . Torn. and Jerry. T a ke as many eggs as you think your business re- quires, break the whole of them in the egg-beater and b eat until it becomes very lig ht, then add powdered su I::>o-ar to thicke n to a batter. · 2.  \\tVhen serving put in a Tom and Jerry cup a bout on e tablespoonful of the batter, on e-half jigge r of Medford rum and one-ha lf jigg er of whisk) or bra ndy and fill with h ot wa ter; stir well and nut- meg on the top.",
+      "method_es": "Take a thin glass, fill it full of fin e ice to cool it; t hen take a mixing glass put in a little lemon juice, 35 about a teaspoonful of sugar, a ponY.of fine old brandy, the white of an egg, a few lumps of ice, shake well; then strain in the cooled glas's. Add half a bottle of imported ginger ale and stir up with a spoOI: . Torn. and Jerry. T a ke as many eggs as you think your business re- quires, break the whole of them in the egg-beater and b eat until it becomes very lig ht, then add powdered su I::>o-ar to thicke n to a batter. · 2.  \\tVhen serving put in a Tom and Jerry cup a bout on e tablespoonful of the batter, on e-half jigge r of Medford rum and one-ha lf jigg er of whisk) or bra ndy and fill with h ot wa ter; stir well and nut- meg on the top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Snow Ball.\n     Take a thin glass, fill it full of fin e ice to cool it;\n t hen take a mixing glass put in a little lemon juice,\n                             35\nabout a teaspoonful of sugar, a ponY.of fine old brandy,\nthe white of an egg, a few lumps of ice, shake well;\nthen strain in the cooled glas's. Add half a bottle of\nimported ginger ale and stir up with a spoOI: .\n\n                    Torn. and Jerry.\n         T a ke as many eggs as you think your business re-\nquires, break the whole of them in the egg-beater and\nb eat until it becomes very lig ht, then add powdered\nsu I::>o-ar to thicke n to a batter. ·\n   2.  \\tVhen serving put in a Tom and Jerry cup\na bout on e tablespoonful of the batter, on e-half jigge r\nof Medford rum and one-ha lf jigg er of whisk) or\nbra ndy and fill with h ot wa ter; stir well and nut-\nmeg on the top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-075",
+      "order": 75,
+      "section_title": "Drinks",
+      "category": "toddy",
+      "name_original": "Toddy-Old-fashioned",
+      "name_es": "Toddy-Old-fashioned",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar dissolved",
+          "item_es": "sugar dissolved",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": ". ,I One lump of sugar dissolved in a little water in a regular (old fashion ed toddy) glass, which is used very much in the South, especially New Orleans and Louis- ville. It has a thick bottom. Add two-thirds full of lumps of ice, one jigger of whisky, stir up with a spoon and leave the spoon in it.",
+      "method_es": ". ,I One lump of sugar dissolved in a little water in a regular (old fashion ed toddy) glass, which is used very much in the South, especially New Orleans and Louis- ville. It has a thick bottom. Add two-thirds full of lumps of ice, one jigger of whisky, stir up with a spoon and leave the spoon in it.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Toddy-Old-fashioned .\n                                      . ,I\n\n\n     One lump of sugar dissolved in a little water in a\nregular (old fashion ed toddy) glass, which is used very\nmuch in the South, especially New Orleans and Louis-\nville. It has a thick bottom. Add two-thirds full of\nlumps of ice, one jigger of whisky, stir up with a spoon\nand leave the spoon in it."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-076",
+      "order": 76,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Toboggan",
+      "name_es": "Toboggan",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Made in a hot drink glass.   About two teaspoon- ful s of N ew Orleans molasses, one jigger of Jamaica rum, fill up with hot water, serve with a little nutmeg on the top.",
+      "method_es": "Made in a hot drink glass.   About two teaspoon- ful s of N ew Orleans molasses, one jigger of Jamaica rum, fill up with hot water, serve with a little nutmeg on the top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Toboggan.\n     Made in a hot drink glass.   About two teaspoon-\nful s of N ew Orleans molasses, one jigger of Jamaica\nrum, fill up with hot water, serve with a little nutmeg\non the top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-077",
+      "order": 77,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Turf Cocktail",
+      "name_es": "Turf Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "This is made in the same way as a Manhattan Cocktail, except using Old Tom Gin and vermouth, instead of.whisky and vermouth, omitting absinthe.",
+      "method_es": "This is made in the same way as a Manhattan Cocktail, except using Old Tom Gin and vermouth, instead of.whisky and vermouth, omitting absinthe.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Turf Cocktail.\n   This is made in the same way as a Manhattan\nCocktail, except using Old Tom Gin and vermouth,\ninstead of.whisky and vermouth, omitting absinthe.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-078",
+      "order": 78,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Velvet",
+      "name_es": "Velvet",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Velvet is composed of a pint of champagn e and a pint of Dublin Stout . This is th e small est amou nt; but should the party consist o f more tha n five or s ix pe rsons, why yo u should use double the amount of each. Put half of each in g lasses.",
+      "method_es": "Velvet is composed of a pint of champagn e and a pint of Dublin Stout . This is th e small est amou nt; but should the party consist o f more tha n five or s ix pe rsons, why yo u should use double the amount of each. Put half of each in g lasses.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Velvet.\n    Velvet is composed of a pint of champagn e and a\npint of Dublin Stout . This is th e small est amou nt;\nbut should the party consist o f more tha n five or s ix\npe rsons, why yo u should use double the amount of\neach. Put half of each in g lasses.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-079",
+      "order": 79,
+      "section_title": "Drinks",
+      "category": "toddy",
+      "name_original": "Plain _Toddy",
+      "name_es": "Plain _Toddy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "A little cut sugar and water in a bar g lass, a nd the custome r po urs his own liq uor. Wliisky Toddy-Modern Way. Take a mixing g lass and put in syrup as yo u wo uld a cocktail; some bar ice; one jigger of whisky. Str a in it in a stem champag ne g lass and serve with a little nutmeg ori top.",
+      "method_es": "A little cut sugar and water in a bar g lass, a nd the custome r po urs his own liq uor. Wliisky Toddy-Modern Way. Take a mixing g lass and put in syrup as yo u wo uld a cocktail; some bar ice; one jigger of whisky. Str a in it in a stem champag ne g lass and serve with a little nutmeg ori top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plain _Toddy.\n    A little cut sugar and water in a bar g lass, a nd\nthe custome r po urs his own liq uor.\n           Wliisky Toddy-Modern Way.\n    Take a mixing g lass and put in syrup as yo u wo uld\na cocktail; some bar ice; one jigger of whisky. Str a in\nit in a stem champag ne g lass and serve with a little\nnutmeg ori top."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-080",
+      "order": 80,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Whisky S1nash",
+      "name_es": "Whisky S1nash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "mint",
+          "item_es": "menta",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "mint slightly mashed",
+          "item_es": "mint slightly mashed",
+          "amount": "3",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a hollow stem g lass, thru st in its opening a sprig of mint, then fill w ith fine ice all around it. Then in a mixing glass put sy rup as you would in a sour, a _teaspoonful of water, abo~t three sprigs of mint slightly mashed with the muddler, fill two-thirds with fine ice, one jigger of whisky; stir well and strain and add fruits. 37",
+      "method_es": "Take a hollow stem g lass, thru st in its opening a sprig of mint, then fill w ith fine ice all around it. Then in a mixing glass put sy rup as you would in a sour, a _teaspoonful of water, abo~t three sprigs of mint slightly mashed with the muddler, fill two-thirds with fine ice, one jigger of whisky; stir well and strain and add fruits. 37",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whisky S1nash.\n   Take a hollow stem g lass, thru st in its opening a\nsprig of mint, then fill w ith fine ice all around it.\nThen in a mixing glass put sy rup as you would in a\nsour, a _teaspoonful of water, abo~t three sprigs of\nmint slightly mashed with the muddler, fill two-thirds\nwith fine ice, one jigger of whisky; stir well and strain\nand add fruits.\n                                37"
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-081",
+      "order": 81,
+      "section_title": "Drinks",
+      "category": "crusta",
+      "name_original": "Whisky Crusta",
+      "name_es": "Whisky Crusta",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "In a mixing g lass, some syrup as you would use in a cocktail, a flavor of maraschino, on e jigger of whisky ; fill t wo-thirds with bar ice; stir with a spoon. Then take a cooled sour glass, rub a piece of lemon on its e dg e and dip it lig htly in the powdered sugar, thus · it will be. fro s ted. Then put ,in th e g lass the p eel of a half a le mon prepared as in a \" Ramson Cool er. \" Strain and a dd fruits. All other Crustas a re made the same way with the e xception of the ir respective liquors which they call for.",
+      "method_es": "In a mixing g lass, some syrup as you would use in a cocktail, a flavor of maraschino, on e jigger of whisky ; fill t wo-thirds with bar ice; stir with a spoon. Then take a cooled sour glass, rub a piece of lemon on its e dg e and dip it lig htly in the powdered sugar, thus · it will be. fro s ted. Then put ,in th e g lass the p eel of a half a le mon prepared as in a \" Ramson Cool er. \" Strain and a dd fruits. All other Crustas a re made the same way with the e xception of the ir respective liquors which they call for.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whisky Crusta .\n     In a mixing g lass, some syrup as you would use in\na cocktail, a flavor of maraschino, on e jigger of\nwhisky ; fill t wo-thirds with bar ice; stir with a spoon.\nThen take a cooled sour glass, rub a piece of lemon\non its e dg e and dip it lig htly in the powdered sugar,\nthus · it will be. fro s ted. Then put ,in th e g lass the\np eel of a half a le mon prepared as in a \" Ramson\nCool er. \" Strain and a dd fruits.\n     All other Crustas a re made the same way with the\ne xception of the ir respective liquors which they call\nfor."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-082",
+      "order": 82,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "White Lyon",
+      "name_es": "White Lyon",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "In a cobbler g lass, syru p and lemon juice as in a p un ch ; a bout half a p ony of curacoa, on e jigger of St. C ro ix rum, fi ll w ith ice, stravvs and fruits.",
+      "method_es": "In a cobbler g lass, syru p and lemon juice as in a p un ch ; a bout half a p ony of curacoa, on e jigger of St. C ro ix rum, fi ll w ith ice, stravvs and fruits.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "White Lyon.\n     In a cobbler g lass, syru p and lemon juice as in a\np un ch ; a bout half a p ony of curacoa, on e jigger of St.\nC ro ix rum, fi ll w ith ice, stravvs and fruits.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-083",
+      "order": 83,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Whisky Fix",
+      "name_es": "Whisky Fix",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "T o ma ke like a n unstrained whisky punch.",
+      "method_es": "T o ma ke like a n unstrained whisky punch.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whisky Fix.\n    T o ma ke like a n unstrained whisky punch.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-084",
+      "order": 84,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "Whisky Sour",
+      "name_es": "Whisky Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whi",
+          "item_es": "whi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Cool th e sour g lass: with water on the side. In a mix ing g lass one-q u a rte r of a lemon , a teaspoonful of syrup, squee ze th e co nte nts together, fill the glass ·two-thirds with fin e ice, a d d on e jigger of whi sky, sti r w ith cockta il spoo n a nd s t rain in sour g lass with fru it. No. 2 . Prepare yo ur sour g lass with frui t a nd a littl e p in eapple juice. S om e times you mig ht fro st t he edge of the g lass with s ug a r ; it is a little old-fashion ed, still some people are fond of it. Take your nllxmg glass, put in at least two teaspoonfuls of lemon juice; fill glass two-thirds full of bar ice, syrup accordingly. There are some persons who like the flavor of Bene- dictine or -curacoa in it; if so, add a little. Now one jigger of good whisky (no mixing whisky); stir with spoon, and strain into a glass which 'you already had prepared.     This is acknowledged to be the nicest sour on record. Whisky P~1nch-Plain. Prepare your punch glass. . Take a mixing .glass, and put in a_little more lemon than you did in the sour; also a little more syrup, two-thirds full of ice; add a jigger of whisky and about . two-thirds of a jigger of water.    Stir with a spoon and strain into a punch glass; water on the side. Whisky Punch-Unstrained. Take a cobbler glass; put in as much syrup and , lemon as you would in a regular whisky punch ; fill it full of bar ice, one jigger of whi.s ky; stir ·with a spoon. Place some fruits on top and serve with straws.",
+      "method_es": "Cool th e sour g lass: with water on the side. In a mix ing g lass one-q u a rte r of a lemon , a teaspoonful of syrup, squee ze th e co nte nts together, fill the glass ·two-thirds with fin e ice, a d d on e jigger of whi sky, sti r w ith cockta il spoo n a nd s t rain in sour g lass with fru it. No. 2 . Prepare yo ur sour g lass with frui t a nd a littl e p in eapple juice. S om e times you mig ht fro st t he edge of the g lass with s ug a r ; it is a little old-fashion ed, still some people are fond of it. Take your nllxmg glass, put in at least two teaspoonfuls of lemon juice; fill glass two-thirds full of bar ice, syrup accordingly. There are some persons who like the flavor of Bene- dictine or -curacoa in it; if so, add a little. Now one jigger of good whisky (no mixing whisky); stir with spoon, and strain into a glass which 'you already had prepared.     This is acknowledged to be the nicest sour on record. Whisky P~1nch-Plain. Prepare your punch glass. . Take a mixing .glass, and put in a_little more lemon than you did in the sour; also a little more syrup, two-thirds full of ice; add a jigger of whisky and about . two-thirds of a jigger of water.    Stir with a spoon and strain into a punch glass; water on the side. Whisky Punch-Unstrained. Take a cobbler glass; put in as much syrup and , lemon as you would in a regular whisky punch ; fill it full of bar ice, one jigger of whi.s ky; stir ·with a spoon. Place some fruits on top and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whisky Sour.\n       Cool th e sour g lass: with water on the side. In a\n mix ing g lass one-q u a rte r of a lemon , a teaspoonful\n of syrup, squee ze th e co nte nts together, fill the glass\n·two-thirds with fin e ice, a d d on e jigger of whi sky, sti r\n w ith cockta il spoo n a nd s t rain in sour g lass with fru it.\n       No. 2 . Prepare yo ur sour g lass with frui t a nd a\n littl e p in eapple juice. S om e times you mig ht fro st t he\n edge of the g lass with s ug a r ; it is a little old-fashion ed,\nstill some people are fond of it. Take your nllxmg\nglass, put in at least two teaspoonfuls of lemon juice;\nfill glass two-thirds full of bar ice, syrup accordingly.\nThere are some persons who like the flavor of Bene-\ndictine or -curacoa in it; if so, add a little. Now one\njigger of good whisky (no mixing whisky); stir with\nspoon, and strain into a glass which 'you already had\nprepared.     This is acknowledged to be the nicest\nsour on record.\n               Whisky P~1nch-Plain.\n    Prepare your punch glass. . Take a mixing .glass,\nand put in a_little more lemon than you did in the\nsour; also a little more syrup, two-thirds full of ice;\nadd a jigger of whisky and about . two-thirds of a\njigger of water.    Stir with a spoon and strain into a\npunch glass; water on the side.\n            Whisky Punch-Unstrained.\n     Take a cobbler glass; put in as much syrup and ,\nlemon as you would in a regular whisky punch ; fill it\nfull of bar ice, one jigger of whi.s ky; stir ·with a spoon.\n Place some fruits on top and serve with straws."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-085",
+      "order": 85,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "Whisky and Mint",
+      "name_es": "Whisky and Mint",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a few sprigs of mint add a little sugar and wate r, mash them together with the muddler. The customer pours his own liquor. Whisky and Tansy. This is served the same as the preceding , us in g t a nsy in place of the mint. MEDICINAL DRINKS.",
+      "method_es": "Take a few sprigs of mint add a little sugar and wate r, mash them together with the muddler. The customer pours his own liquor. Whisky and Tansy. This is served the same as the preceding , us in g t a nsy in place of the mint. MEDICINAL DRINKS.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whisky and Mint.\n   Take a few sprigs of mint add a little sugar and\nwate r, mash them together with the muddler. The\ncustomer pours his own liquor.\n                   Whisky and Tansy.\n     This is served the same as the preceding , us in g\nt a nsy in place of the mint.\n                    MEDICINAL DRINKS.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-086",
+      "order": 86,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "F'or Headache",
+      "name_es": "F'or Headache",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "An absinthe suisette, or a t easpoonful . of bi-car_ borate of soda an~ seltzer water.    A soda cocktail is also recommended.",
+      "method_es": "An absinthe suisette, or a t easpoonful . of bi-car_ borate of soda an~ seltzer water.    A soda cocktail is also recommended.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "F'or Headache.\n         An absinthe suisette, or a t easpoonful . of bi-car_\n     borate of soda an~ seltzer water.    A soda cocktail\n     is also recommended.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-087",
+      "order": 87,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "For St01naclt-ache",
+      "name_es": "For St01naclt-ache",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Some French brandy, with plenty of J a maica ginger or peppermint.",
+      "method_es": "Some French brandy, with plenty of J a maica ginger or peppermint.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "For St01naclt-ache.\n        Some French brandy, with plenty of J a maica\n     ginger or peppermint.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-088",
+      "order": 88,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "For Diarrhooa",
+      "name_es": "For Diarrhooa",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon-peel twisted",
+          "item_es": "lemon-peel twisted",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a whisky glass; put in a piece of lemon-peel twisted; considerable amount of nutmeg, and also Jamaica g in ger, half jig ger of blackberry bra ndy, half · port wine and half brandy, with good deal of sugar.",
+      "method_es": "Take a whisky glass; put in a piece of lemon-peel twisted; considerable amount of nutmeg, and also Jamaica g in ger, half jig ger of blackberry bra ndy, half · port wine and half brandy, with good deal of sugar.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "For Diarrhooa.\n         Take a whisky glass; put in a piece of lemon-peel\n      twisted; considerable amount of nutmeg, and also\n      Jamaica g in ger, half jig ger of blackberry bra ndy, half\n    · port wine and half brandy, with good deal of sugar."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-089",
+      "order": 89,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "To Sober Up On",
+      "name_es": "To Sober Up On",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "A soda cockta il , or some le mon juice and seltzer ....., water. Morning After Being I nebriate d. A cocktail made w ith a considerable amount of a bsinthe. This is to steady the nerves; or an absinthe, l    or Collins. 40 To Retain the First Morning Drink. A piece of lemon with some salt upon it.",
+      "method_es": "A soda cockta il , or some le mon juice and seltzer ....., water. Morning After Being I nebriate d. A cocktail made w ith a considerable amount of a bsinthe. This is to steady the nerves; or an absinthe, l    or Collins. 40 To Retain the First Morning Drink. A piece of lemon with some salt upon it.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "To Sober Up On.\n        A soda cockta il , or some le mon juice and seltzer\n                                                    .....,\n     water.\n            Morning After Being I nebriate d.\n         A cocktail made w ith a considerable amount of\n     a bsinthe. This is to steady the nerves; or an absinthe,\nl    or Collins.\n                          40\n\n       To Retain the First Morning Drink.\n   A piece of lemon with some salt upon it."
+    },
+    {
+      "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition-090",
+      "order": 90,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "An Appetizer",
+      "name_es": "An Appetizer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of- bi-carbonate of soda",
+          "item_es": "of- bi-carbonate of soda",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Sherry and bitters, or one-third o;ang e bitters and two-thirds of s he~ry, or a vermouth cocktail, or plain vermouth. For a Colcl. Rum and molasses; rock candy syrup and rye whisky; maple or honey syrup with whisky or rum. For a Sour Stomach. - One teaspoonful of- bi-carbonate of soda and seltzer or vichy. Fo1· Hiccough. Press your upper lip with your finger firmly, or half a teaspoonful of powdered sugar, or drink cold water slowly.",
+      "method_es": "Sherry and bitters, or one-third o;ang e bitters and two-thirds of s he~ry, or a vermouth cocktail, or plain vermouth. For a Colcl. Rum and molasses; rock candy syrup and rye whisky; maple or honey syrup with whisky or rum. For a Sour Stomach. - One teaspoonful of- bi-carbonate of soda and seltzer or vichy. Fo1· Hiccough. Press your upper lip with your finger firmly, or half a teaspoonful of powdered sugar, or drink cold water slowly.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "An Appetizer.\n   Sherry and bitters, or one-third o;ang e bitters and\ntwo-thirds of s he~ry, or a vermouth cocktail, or plain\nvermouth.\n                      For a Colcl.\n   Rum and molasses; rock candy syrup and rye\nwhisky; maple or honey syrup with whisky or rum.\n               For a Sour Stomach.\n           -\n    One teaspoonful of- bi-carbonate of soda and\nseltzer or vichy.\n                  Fo1· Hiccough.\n    Press your upper lip with your finger firmly, or\nhalf a teaspoonful of powdered sugar, or drink cold\nwater slowly."
+    }
+  ]
+}
