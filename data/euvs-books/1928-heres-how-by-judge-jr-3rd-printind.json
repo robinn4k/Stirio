@@ -1,0 +1,1616 @@
+{
+  "book_id": "1928-heres-how-by-judge-jr-3rd-printind",
+  "metadata": {
+    "title": "Here's How! (3rd Printing)",
+    "author": "Judge, Jr.",
+    "year": 1928,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "The John Day Company (for Judge Publishing Co.)",
+    "city": "New York",
+    "edition": "Third Printing, February 1928 (New & Revised Edition)",
+    "source_file": "1928 Here's How by Judge Jr (3rd printind).txt",
+    "notes": "Libro humorístico de Judge, Jr. (humorist del semanario Judge Magazine). Es una sátira de la Prohibición disfrazada de manual de coctelería: 51 recetas con descripciones cómicas, glosario humorístico (Gordon water = ginebra, McCarty = ron cubano, Hooker = jigger), poesías de bebida ('toasts') intercaladas. Skeleton reconstruido a partir del Table of Contents (51 recetas listadas con número de página); el extractor heurístico original solo capturó 13 candidatos por la confusión entre toasts y recetas. Auto-extractor custom Judge Jr-aware traduce los términos jocosos a su equivalente real (Gordon water → Gordon's Gin, etc.). ~28% de recetas con OCR severamente dañado conservan raw_text íntegro y un campo notes."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Glossary (Glomary)",
+      "title_es": "Prefacio + Glosario humorístico",
+      "content_original": "Libro humorístico de Judge, Jr. — texto del Judge Magazine reformateado como manual de coctelería de la Prohibición. Foreword satírico ('When I was a mere stripling no taller than a bar...'), glosario humorístico (Gordon Water = ginebra, McCarty = ron de La Habana, Hooker = Jigger), 51 recetas con descripciones cómicas y 'toasts' (poesía de bebida) intercalada.",
+      "content_es": "Libro humorístico de Judge, Jr. — texto del Judge Magazine reformateado como manual de coctelería de la Prohibición. Foreword satírico, glosario humorístico (Gordon Water = ginebra, McCarty = ron de La Habana, Hooker = Jigger), 51 recetas con descripciones cómicas y 'toasts' (poesía de bebida) intercalada."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Recipes",
+      "title_es": "Recetas",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-001",
+      "order": 1,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Apple Jackrabbit",
+      "name_es": "The Apple Jackrabbit",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lemon",
+          "item_es": "zumo de lemon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a orange",
+          "item_es": "zumo de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "11",
+      "raw_text": "The Apple Jackrabbit\n[ 10]\n\fTHIS could really be called the\nRabbit punch because it has the\nsame effect!\n\n     I hooker of Applejack;\n     juice of a lemon;\n     juice of an orange ;\n      I hooker of maple syrup.\n\n\n\n\nTo As T: Here's to the National\nBird-the swallow."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-002",
+      "order": 2,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Everything But-",
+      "name_es": "Everything But-",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Apricot brandy",
+          "item_es": "brandy de albaricoque",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "12",
+      "raw_text": "Everything But-\n[ 11 ]\n\f              QfberptfJing but-\n.................................................................................\n\nTHIS little drink is christened\nthusly beeause it contains every-\nthing but the kitchen stove!.\n\n          ;4 Scotch;\n          ;4 Gordon water;\n          ;4 lemon juice;\n        ' % orange juice;\n           1 egg;\n           1 teaspoonful of Apricot brandy;\n           powdered sugar.\n\n\n\n        HAPPY                     THOUGHT\n\nThe world is so full of this hoot-\n    legger's gin\nI am sure we shall Mon he all hlis-\n    tered within."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-003",
+      "order": 3,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The White Lily",
+      "name_es": "The White Lily",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cuban rum (Bacardi)",
+          "item_es": "cuban rum (bacardi)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "13",
+      "raw_text": "The White Lily\n[ 12]\n\f            lmbite i.ilp\n\nALL that is needed for this ex-\nperiment is a white lily for the\nchest!\n\n      % part Cojntreau;\n      % part McCarty;\n      % part Gordon water;\n      dash of absjnthe.\n\n\n\n\n   ADVI CE       T 0      Jlvf 0 T H E R S\n  'Before spanking youngsters it is\nadvisable to reach inside the left hip\npocket and extract the flask."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-004",
+      "order": 4,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Dodge Special",
+      "name_es": "The Dodge Special",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "14",
+      "raw_text": "The Dodge Special\n[ 13]\n\f                ~be Dobge g;,pcdal\n     .............................................................................\n     ALL   I can say for this baby is\n     ·\"Dodge, Brothers, dodge!\"\n\n                 ~Gordon water;\n                 ~Cointreau or mint;\n                 dash of grape juice.\n\n'I\n\n\n\n\n     TOAST: H ere's to the U.S. No\n     matter how much the population in-\n     creases there's always rum for one\n     more.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-005",
+      "order": 5,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Little Willie",
+      "name_es": "Little Willie",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ittle Dillie",
+          "item_es": "ittle dillie",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "add ginger ale.",
+      "method_es": "add ginger ale.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "15",
+      "raw_text": "Little Willie\n[ 14]\n                                               .\n\f         1ittle Dillie\n\nG. E. T. of Cornell invented\nthis and claims it will make you\nthrow stones at your grand-\nmother.\n\n     I hooker of rye;\n     dash of Apricot brandy;\n     add ginger ale.\n\n\n\n         Ev0Lu:r10N\n   Mother-Now, Willie: I'll give\nyou a nickel if you take your castor\noil like a little man.\n   Willie ( 20 years later )-Blup-\nGr-r-r-r-rk - uh - Pretty smooth\nstuff, Joe."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-006",
+      "order": 6,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Mamie Taylor",
+      "name_es": "The Mamie Taylor",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "fill tall glass with ginger ale.",
+      "method_es": "fill tall glass with ginger ale.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "16",
+      "raw_text": "The Mamie Taylor\n[ 15]\n\f        ~be .:fflamft ~aplor\n........................................................\nW     Ho, in the audience, doesn't\nremember good old Mamie Tay-\nlor? · Well, here she is!.\n\n        1 hooker of Scotch;\n        juice of two limes;\n        fill tall glass with ginger ale.\n\n\n\n\nTo As T :Here's to the bootleggers.\nThey are meeting Prohibition half\nway. They always add water to their\nhooch!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-007",
+      "order": 7,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The White Cargo",
+      "name_es": "The White Cargo",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "17",
+      "raw_text": "The White Cargo\n[ 16]\n\fH ERE's a concoction that's en-\ndorsed by all the ice cream\nmanufacturers. And, take it\nfrom me, it's a rare beverage!,\n\n     ~ vanilla ice cream;\n     ~ Gordon water;\n     no ice is necessary; just sliake until\n     thoroughly mixed, and add water\n     or white wine if the concoction is\n     too thick.\n\n\n\n\nTo As T: Here's to your car and\nmy car-may they never meet~",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-008",
+      "order": 8,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Royal Smile",
+      "name_es": "The Royal Smile",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Applejack",
+          "item_es": "applejack",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "18",
+      "raw_text": "The Royal Smile\n[ 17]\n\f.. ................................. . .\n _.\n\n\nW    Hic~, after two or three,\nbrings a royal flush! .\n\n      % part Gordon water;\n      % parts Applejack;\n      juice of one lime ;\n      2 dashes of grenadine.\n\n\n\n\nSTATISTlcs:         The things a\nman says when he is drunk with\nliquor are never as foolish as those\nhe says when intoxicated with love."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-009",
+      "order": 9,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Nose Dive",
+      "name_es": "The Nose Dive",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "19",
+      "raw_text": "The Nose Dive\n[ 18]\n\fCoNTRIBUTED        by \"Billy\" from\nWheeler field, Hawaii. This is\nthe aviator's favorite-let's go!\n     Take a jigger of Gordon water,\n     place in it an olive, then deposit the\n     glass carefully in the bottom of an\n     ordinary tumbler. Fill the said\n     tumbler with w ater, ginger ale, or\n     what have you, until almost to the\n     top of the small glass, then down\n     the whole thing quickly, that is,\n     everything but the small glass.\n\n         Pooa PAPA\n  Father (to youngster, just put to\nbed)-Now what are you crying\nfor?\n  Son-I wanna drink.\n  \"So do /-go to slee.p.\"",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-010",
+      "order": 10,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Magnolia Blossom",
+      "name_es": "The Magnolia Blossom",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "20",
+      "raw_text": "The Magnolia Blossom\n[ 19]\n\f........ e e e e I   I   I   I   I   .... I   I   I   e e ................ \" ..\n\n\n\n\nORIGINATED by Finley White\nof Dur.ham, N. C., where the\nbull comes from!\n\n         X lemon juice;\n         X cream;\n         ~ Gordon water;\n         dash of grenadine.\n\n\n\n\nTOAST : Here's to love! It is like\ngetting drunk, marriage is the head-\nache the next morning, and divorce\nis the aspirin tablet.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-011",
+      "order": 11,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Judgette",
+      "name_es": "The Judgette",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "peach brandy",
+          "item_es": "peach brandy",
+          "amount": "0",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "French vermouth",
+          "item_es": "french vermouth",
+          "amount": "0",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "21",
+      "raw_text": "The Judgette\n[ 20]\n\fS1sTER invented this herself so\nI disclaim all responsibility as to\nresults!\n\n     0 peach brandy;\n     0 French vermouth;\n     0 Gordon water;\n     dash of lime.\n\n\n\n\n     ACROSS          THE   BAR.\n\n   First Bartender-/ dreamed the\ncops raided the place last night.\n   Second Ditto-Ain't it funny\nthe crazy things a guy will dream!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-012",
+      "order": 12,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Grape Vine",
+      "name_es": "The Grape Vine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grape juice",
+          "item_es": "zumo de uva",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "22",
+      "raw_text": "The Grape Vine\n[ 21 ]\n\f.............................................................................\nTHIS little recipe speaks for it-\nself-=vine not?\n\n            34 grape juice;\n            34 lemon juice;\n            ~ Gordon water;\n            dash of grenadine.\n\n\n\n\n                    f927              MODEL\n\n   G entleman (inviting lady to\n dance )-What do you say, Miss\n Mince-shall we shake up another\n cocktail?"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-013",
+      "order": 13,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Mint Fizz",
+      "name_es": "Mint Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "23",
+      "raw_text": "Mint Fizz\n[ 22]\n\fI  DON'T like to talk about my-\nself, but this is good and I don't\nmean pre-war!\n\n     Put some nice fresh mint in a bowl,\n     also some powdered sugar and crush\n     the mint thoroughly. Take the juice\n     of a lime, the mint, and a hooker of\n     Gordon water and pour into a tall\n     glass filled with ice. Fill up the\n     rest with White Rock.\n\n\n\n\nS'.J'A'.J'.lSTICS: It's a heck of a\nlot more fun viewing the Niagara\nFalls from the Canadian side!",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-014",
+      "order": 14,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Golden Gate",
+      "name_es": "The Golden Gate",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange ice",
+          "item_es": "orange ice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "24",
+      "raw_text": "The Golden Gate\n[ 23]\n\f                 tif)e 8olbtn elate\n•• e I   I   I   I   I   I   I   I   I   ............ I   I   I   1,.. 1 .............\n\n\n\n\nAFTER a few of these you be-\ngin singing \"California, here we\ncome! \"-hence the title.\n\n             % orange ice;\n             34 Gordon water;\n             put in shaker and shake-no ice.\n\n\n\n\nJO KB : \"My dear, I tell you I\nwas setting up with q sick friend!\"\n  \"How many did you set up before\nhe got sick?\""
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-015",
+      "order": 15,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Oh, Henry!",
+      "name_es": "Oh, Henry!",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "benedictine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "ADD TH Is: Then there is the",
+      "method_es": "ADD TH Is: Then there is the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "25",
+      "raw_text": "Oh, Henry!\n[ 24]\n\fORIGINATED by    Henry Oretel\nand believe us Henry knows his\nliquids! _\n\n     1 jigger of benedictine;\n     1 jigger of Scotch;\n     2 jiggers of ginger ale.\n\n\n\n\n ADD TH Is: Then there is the\nbootlegger who walked all the way\nto the drug-store to get some poison\nto kill the cat."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-016",
+      "order": 16,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Judge, Jr.",
+      "name_es": "Judge, Jr.",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tbt .Jubgt, Jr",
+          "item_es": "tbt .jubgt, jr",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "26",
+      "raw_text": "Judge, Jr.\n[ 25]\n\f                1tbt .Jubgt, Jr.\n................................................................................\nTHIS drink, I discovered later,\nwas invented by someone else,\nbut it's good just the same!\n\n            1 part Gordon water;\n            I part McCarty;\n            i part lemon juice;\n            powdered sugar;\n            a dash of grenadine.\n\n\n\n\nT 0 As T : Here's to our sons in col-\nlege; you have to make allowances\nfor them."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-017",
+      "order": 17,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Silver Fizz",
+      "name_es": "Silver Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "fill with White Rock.",
+      "method_es": "fill with White Rock.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "27",
+      "raw_text": "Silver Fizz\n[ 26]\n\fTHIS is a very old drink but\nis printed especially for the\nyounger generation.\n\n      white of an egg;\n      juice of a lime;\n      I jigger of Gordon water;\n      powdered sugar;\n      fill with White Rock.\n\n\n\n\nHEY, HEY! Who said that\nprohibition isn't a success? lust look\nat the enormous amount .of ginger\nale that is sold!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-018",
+      "order": 18,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Silver Stallion",
+      "name_es": "Silver Stallion",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ilber 6tallion",
+          "item_es": "ilber 6tallion",
+          "amount": "6",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "fill with Silver King Fizz.",
+      "method_es": "fill with Silver King Fizz.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "28",
+      "raw_text": "Silver Stallion\n[ 27]\n\f                 6ilber 6tallion\n•e • • I   I I I I I .......... I I I 8 ................... , ...... ,,.\n\n\n\n\nNo, .James Branch Cabell\ndidn't mvent this one but he\nshould have!\n\n             ~ vanilla ice cream;\n             ~ Gordon water;\n             fill with Silver King Fizz.\n\n\n\n\n No TE : She's only a bootlegger's\n daughter, hut she has her good\n p'ints !"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-019",
+      "order": 19,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Los Angeles",
+      "name_es": "The Los Angeles",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a lemon",
+          "item_es": "zumo de lemon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escocés",
+          "amount": "4",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonfuls of sugar",
+          "item_es": "teaspoonfuls of sugar",
+          "amount": "4",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "29",
+      "raw_text": "The Los Angeles\n[ 28]\n\fAFTER trying this you will un-\nderstand why they talk about the\nclimate out there!\n\n     juice of a lemon;\n     4 hookers of Scotch;\n     4 teaspoonfuls of sugar;\n     I egg;\n     dash of Italian vermouth.\n     This is enough for four people.\n\n\n\n\nH o T T J P : You can tell a col-\nlege hoy hy the hrand on his hip."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-020",
+      "order": 20,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Polo Cocktail",
+      "name_es": "Polo Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "30",
+      "raw_text": "Polo Cocktail\n[ 29]\n\f               ~olo CCoddail\n•• \" ............................ e e • ........ e e I   .............\n\n\n\n\nINVENTED by Yours truly after\na polo , , match-in the living\nroom!\n\n           ~grape   juice;\n           ~ Gordon   water;\n           add a dash of white or green mint.\n\n\n\n\nN o TE : .A great many night club\nguests don't wait for a raid to go\nimder the table.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-021",
+      "order": 21,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Corn Popper",
+      "name_es": "The Corn Popper",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "31",
+      "raw_text": "The Corn Popper",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-022",
+      "order": 22,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Mule's Hind Leg",
+      "name_es": "The Mule's Hind Leg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tbe Corn ,t}opper",
+          "item_es": "tbe corn ,t}opper",
+          "amount": "11",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pint of corn (Georgia or Mary-",
+          "item_es": "pint of corn (georgia or mary-",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pint of cream",
+          "item_es": "pint of cream",
+          "amount": "0",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "tablespoonful of grenadine",
+          "item_es": "tablespoonful of grenadine",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "fill highball glasses half full of this mixture and fill up with vichy or",
+      "method_es": "fill highball glasses half full of this mixture and fill up with vichy or",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "32",
+      "raw_text": "The Mule's Hind Leg\n[ 30]\n\f     11tbe Corn ,t}opper\n\nDoN'T get near a fire after\ndrinking one of these!\n\n      1 pint of corn (Georgia or Mary-\n     land);\n     0 pint of cream;\n     the whites of two eggs;\n      1 tablespoonful of grenadine;\n     fill highball glasses half full of this\n     mixture and fill up with vichy or\n     seltzer.\n\n\n\n\nT 0 AS T ·: Here's to the blonde--we\nlove her henna-way.\n                 [ 3l ]\n\f..............................................................................\nTHIS titleis not an exaggera-\ntion-we know-we tried it!\n\n            Ys Gordon water;\n            Ys benedictine;\n            Ys Applejack;\n            Ys Apricot brandy;\n            Ys maple syrup.\n\n\n\n\nWHEE z E :       \"Did you have a\n lot of fun at the convention, dar-\n ling?\"\n    \"Barrels of it, dear.\""
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-023",
+      "order": 23,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Nevada",
+      "name_es": "The Nevada",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Cuban rum (Bacardi)",
+          "item_es": "cuban rum (bacardi)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "33",
+      "raw_text": "The Nevada\n[ 32]\n\fCAN'T vouch for this beverage\nas I Nevada one!\n\n     1 hooker of McCarty;\n     juice of half a grape fruit;\n     juice of a lime ;\n     powdered sugar;\n     dash of bitters.\n\n\n\n\nN 0 T E : Country people used to\nhave old-fashioned boiled dinners;\nnow it's the diners that get boiled."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-024",
+      "order": 24,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Cornell Special",
+      "name_es": "Cornell Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "benedictine",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "lemon",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lithia water",
+          "item_es": "lithia water",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "34",
+      "raw_text": "Cornell Special\n[ 33]\n\f              Cbe Corntll ~pedal\n      ...........\" ............ O   e e e .... e e I   I   I   I   I   ............\n\n\n\n\n       L1TTLE, of Cornell, claims that\n       this beverage is as smooth as the\n     - hair on a si1kworm: ·\n\n                 34 part of benedictine;\n                 34 part of Gordon water;\n                 34 part lemon;\n1.\n                 34 part lithia water.\n\n\n\n\n      TOA ST : Rere's to a red nose; it\n      indicates a horn of plenty these days!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-025",
+      "order": 25,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Philadelphia Scotchman",
+      "name_es": "The Philadelphia Scotchman",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of a orange",
+          "item_es": "zumo de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "add ginger ale.",
+      "method_es": "add ginger ale.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "35",
+      "raw_text": "The Philadelphia Scotchman\n[ 34]\n\f  •bilabelpbia ~tottbman\n\nWE can't understand why this\ndrink is called thusly unless it's\nbecause it gets you tight!.\n\n     I hooker of Applejack;\n     I hooker of port;\n     juice of an orange;\n     add ginger ale.\n\n\n\n\nTo As 'r : Here's to the people· who\nare so dumb they think Prohibition\nis a law."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-026",
+      "order": 26,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The French '75",
+      "name_es": "The French '75",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up the r est of a tall glass with",
+      "method_es": "Fill up the r est of a tall glass with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "36",
+      "raw_text": "The French '75\n[ 35]\n\f                Cfje jfrtncb \"75\"\nI   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I ......\n\n\n\n\nTHIS drink is really what won\nthe War for\n         ,, the Allies:\n\n                2 jiggers Gordon water;\n                I part lemon juice ;\n                a spoonful of powdered sugar;\n                cracked ice.\n                Fill up the r est of a tall glass with\n                champagne!\n                [If you use club soda instead of\n                champagne, you have a Tom Col-\n                lins.]\n\n\n\n\nTO As T : Here's to present day cul-\nture-which doesn't care about your\nEnglish if your Scotch is alt right!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-027",
+      "order": 27,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Cubano",
+      "name_es": "The Cubano",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tbe Cubano",
+          "item_es": "tbe cubano",
+          "amount": "11",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "drops of Kummel",
+          "item_es": "drops of kummel",
+          "amount": "4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "drops of Charbreux",
+          "item_es": "drops of charbreux",
+          "amount": "4",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "drops of pineapple syrup",
+          "item_es": "drops of pineapple syrup",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "37",
+      "raw_text": "The Cubano\n[ 36]\n\f          11tbe Cubano\n\nCoNTRIBUTED by Owen Hutch-\ninson and it explains why Cuba.\nis a free country!\n\n     0 Gordon water;\n     ~vermouth;\n     4 drops of Kummel;\n     4 drops of Charbreux;\n     2 drops of pineapple syrup.\n\n\n\n\nJo KE: Cain-Why did the in-\nsurance people turn down Felix?\n   Abel-Too much of a risk-he\nwears a celluloid collar and drinks\nbootleg liquor."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-028",
+      "order": 28,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "De Riguer",
+      "name_es": "De Riguer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "grapefruit juice",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "honey",
+          "item_es": "honey",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "38",
+      "raw_text": "De Riguer\n[ 37]\n\f     I    I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I   I\n\n\n\n\n     HARK, ye lads! Here's the\n     very latest drink! Three of\n     these will knock you for a row\n     of aspirins:\n\n                      ~scotch;\n                      34 grapefruit juice;\n                      34 honey;\n                      cracked ice •\n\n.'\n\n     T e A 6 T : y OU don't have to look at\n         a clothes line these days to see what\n         the women are wearing!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-029",
+      "order": 29,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Alexander's Sister",
+      "name_es": "Alexander's Sister",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "cream",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "creme de menthe",
+          "item_es": "creme de menthe",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "39",
+      "raw_text": "Alexander's Sister\n[ 38]\n\fL1KE the Alexander, this little\ndrink will give you the ambition\nto conquer more wor Ids.\n\n     % Gordon water;\n     % cream;\n     % creme de menthe.\n\n\n\n\n To As T: Here's to Prohibition!\nIt isn't so bad if it just doesn't get\nany worse."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-030",
+      "order": 30,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "Bacardi Punch",
+      "name_es": "Bacardi Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "40",
+      "raw_text": "Bacardi Punch\n[ 39]\n\f..............................................................................\nTHIS drink was graciously con-\ntributed by Mr. Cadman, to\nwhom we give thanks:\n\n            I jigger of McCarty;\n            I glass of hot milk;\n            I tablespoonful of sugar;\n           a pinch of grated nutmeg;\n           the yolk of an egg.\n           Serve in a highball glass.\n\n\n\n\nTo As 'l' : Here's looking at you-\ndouble!",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-031",
+      "order": 31,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Bacardi Cocktail",
+      "name_es": "Bacardi Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Cuban rum (Bacardi)",
+          "item_es": "cuban rum (bacardi)",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "41",
+      "raw_text": "Bacardi Cocktail\n[ 40]\n\f       }Sacarbi <Gtktail\n\nTHIS recipe is printed in re-\nsponse to 9,865 people who\nasked how to make it:\n\n     2 parts McCarty;\n     juice of a lime;\n     a dash of grenadine;\n     cracked ice.\n\n\n\n\nTo As T : Here's to the tightwad\nwho hides a pair of socks in the\npocket of his pajamas in order t(} cut\ndown his laundry bill!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-032",
+      "order": 32,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Wop",
+      "name_es": "The Wop",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Italian vermouth",
+          "item_es": "italian vermouth",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "sherry",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "42",
+      "raw_text": "The Wop\n[ 41]\n\f.............................................................\nAFTER a few of these you go\n\"wop! \"-hence the title.\n\n         % Italian vermouth;\n          % sherry;\n      , , dash of orange bitters.\n\n\n\n\nTo As T : Here's to bootleg whis-\nkey. It makes even the most casual\nuser come in like a lion and go out\nlike a lamp!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-033",
+      "order": 33,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Barbary Coast",
+      "name_es": "Barbary Coast",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "scotch",
+          "item_es": "whisky escocés",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "creme de cocoa",
+          "item_es": "creme de cocoa",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "cream",
+          "amount": "34",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in a highball glass.",
+      "method_es": "Serve in a highball glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "43",
+      "raw_text": "Barbary Coast\n[ 42]\n\fTHIS drink was originated on\nthe Pacific ' Coast to get people\nused to earthquakes:\n\n     34 Gordon water;\n     34 scotch;\n     34 creme de cocoa;\n     34 cream;\n     cracked ice.\n     Serve in a highball glass.\n\n\n\n\nT QA s T : T' o pedestrians; here's\nhonking at you!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-034",
+      "order": 34,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Brandy Gump",
+      "name_es": "Brandy Gump",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lemon",
+          "item_es": "zumo de lemon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "44",
+      "raw_text": "Brandy Gump\n[ 43]\n\f............................................................_............._...\nCoNTRIBUTED                           by E. L. A. of\nYale collich. No wonder they\ncan \"hold 'em!\"\n\n           1 hooker of brandy;\n           juice of a lemon;\n           2 dashes of grenadine.\n\n\n\n\n TOAST:\nHere's to the flapper, good and kind;\n  Let's drink her health in toddy.\nShe's nothing much upon her mind'\n  And less upon her body."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-035",
+      "order": 35,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Hurricane",
+      "name_es": "The Hurricane",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pint of Johnny Walker",
+          "item_es": "pint of johnny walker",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pint of gin (Gordon's)",
+          "item_es": "pint of gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "pint of creme de menthe",
+          "item_es": "pint of creme de menthe",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "45",
+      "raw_text": "The Hurricane\n[ 44 ]\n\fTHIS concoction is all that the\nname implies and should be\nmixed in a cyclone cellar:\n\n     % pint of Johnny Walker;\n     % pint of Gordon water;\n     % pint of creme de menthe;\n     the juice of two lemons.\n\n\n\n\nTOAST:     Here's to \"Block &\nTackle\" whiskey-take a . drink,\nwalk a block and tackle anything!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-036",
+      "order": 36,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Earthquake",
+      "name_es": "The Earthquake",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "46",
+      "raw_text": "The Earthquake\n[ 45]\n\f....................... _ .......... I   e I   I   I , _........................\n\n\n\n\nTI;IE title of this libation cer-\ntainly explains itself!\n\n            % Gordon water;\n            % Scotch;\n            % absinthe.\n\n\n\n\n                CHRISTENING\n\n   The mother assisted at the hahy's\nchristening hy hreaking a hottle of\nScotch over its father's head."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-037",
+      "order": 37,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Frankenjack",
+      "name_es": "The Frankenjack",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "French vermoutli;·",
+          "item_es": "french vermoutli;·",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "brandy de albaricoque",
+          "amount": "76",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "76",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "47",
+      "raw_text": "The Frankenjack\n[ 46]\n\f      gfje jfranktnjack\n\nINVENTED by the two proprie-\ntors of a very, very well-known\nSpeakeasy in New York City.\n\n     % Gordon water;\n     % French vermoutli;·\n     76 apricot brandy;\n     76 Cointreau.\n\n\n\n\nNo TE : Jn these days of bootleg\nliquor a night cap is opt to put ~\nfell ow to sleep for good."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-038",
+      "order": 38,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Swiss Itch",
+      "name_es": "The Swiss Itch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "48",
+      "raw_text": "The Swiss Itch\n[ 47]\n\f.....................................................................\nINVENTED    by one James Nor-\nton of Princeton and guaranteed\nto go down with the ease of an\nelevator:\n\n           Place a pinch of salt on the back\n           of the right hand and with the\n           same north paw hold half a lemon\n           between thumb and forefinger. Hold\n           a small glass of Gordon water in\n           the left hand and follow this se-\n           quence: lick the salt, drink the\n           Gordon water and suck the lemon!\n\n\n\n\nT O A S T : Here's to the pedestrian;\nevery year is leap year with him!",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-039",
+      "order": 39,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Old Reliables",
+      "name_es": "Old Reliables",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": ";1 part gin (Gordon's)",
+          "item_es": ";1 part gin (gordon's)",
+          "amount": "31",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": ";1 part Italian vermouth",
+          "item_es": ";1 part italian vermouth",
+          "amount": "31",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": ";1 part rye",
+          "item_es": ";1 part rye",
+          "amount": "31",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": ";1 part Italian vermouth",
+          "item_es": ";1 part italian vermouth",
+          "amount": "31",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "49",
+      "raw_text": "Old Reliables\n[ 48]\n\fFOR the benefit of our young\nreaders who never drank before\nProhibition we will give a list of\nthe cocktails of the good old\ndays:\n\n               DRY MARTINI:\n     31;1 part Gordon water;\n     31;1 part Italian vermouth;\n     cracked ice;\n     dash of orange bitters.\n\n                MANHATTAN:\n     31;1 part rye ;\n     31;1 part Italian vermouth;\n     a dash of Peychaud bitters;\n     cracked ice."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-040",
+      "order": 40,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Crow",
+      "name_es": "The Crow",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Scotch",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "51",
+      "raw_text": "The Crow\n[ 50]\n\fTHIS drink is guaranteed to\nmake you fly; like the crow, if\nyou fly too far you will get shot!\n\n     % Scotch;\n     ~ lemon juice;\n     a dash of grenadine.\n\n\n\n\nT 0 As T : Here's to woman-a\nflood of loveliness-dam her!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-041",
+      "order": 41,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "Louisiana Fizz",
+      "name_es": "Louisiana Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cup of white of an egg",
+          "item_es": "cup of white of an egg",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cup of powdered sugar",
+          "item_es": "cup of powdered sugar",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cup of lemon juice",
+          "item_es": "cup of lemon juice",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cups of gin (Gordon's)",
+          "item_es": "cups of gin (gordon's)",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "cream",
+          "amount": "1",
+          "unit": "teaspoon",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "52",
+      "raw_text": "Louisiana Fizz\n[ 51 ]\n\f.............................................\nH   ERE's another drink that\ncomes out of the South and\nmakes you believ~ in Evolution:\n\n      1 cup of white of an egg;\n      1 cup of powdered sugar;\n      1 cup of lemon juice;\n      2 cups of Gordon water;\n      1 teaspoonful of cream;\n      cracked ice.\n\n\n\n\nTO As T: Here's to Chicago-hO'Ue\na shot!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-042",
+      "order": 42,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Champagne Cocktail",
+      "name_es": "Champagne Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "53",
+      "raw_text": "Champagne Cocktail\n[ 52]\n\f    THIS was originated at the\n    Ritz in Paris, and is supposed to\n    be very high hat:\n\n         Saturate a lump of sugar in bitters\n         (Boker's preferred), add a piece of\n         lemon peel and fill the cocktail\n         glass with champagne.\n\n\n\n\nv\n    TO As '.I': Here's to prohihition-\n    drink her down!",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-043",
+      "order": 43,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Lion",
+      "name_es": "The Lion",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "54",
+      "raw_text": "The Lion",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-044",
+      "order": 44,
+      "section_title": "Recipes",
+      "category": "sour",
+      "name_original": "Whiskey Sour",
+      "name_es": "Whiskey Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye",
+          "item_es": "whisky de centeno",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "port",
+          "item_es": "port",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lemon",
+          "item_es": "zumo de lemon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "rye",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "add slice of pineapple.",
+      "method_es": "add slice of pineapple.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "55",
+      "raw_text": "Whiskey Sour\n[ 53]\n\f                           im.>e Iion\n ................... • e   I   I   I   I   I   I   I   I   I   .............. ........... .\n\n\n\n\n. So called ,because it will make -\n you climb a tree!\n\n             % rye;\n             % port;\n             white of an egg;\n             juice of a lemon;\n             teaspoonful of sugar;\n             add slice of pineapple.\n\n\n\n\n No TE : It isn't only the bootlegger\n  who is cashing in on Prohibition, but\n  a lot of his customers as well.\n                                       [ 54- ]\n\fTHIS is really very mid-Victor-\nian, but it ought to be included:\n\n     1 jigger of rye;\n     the juice of half a lemon;\n     a piece of lemon peel;\n     a dash of sweet syrup.\n\n\n\n\nTo As T : Here's to our bootlegger\n-he's never low in spirits!."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-045",
+      "order": 45,
+      "section_title": "Recipes",
+      "category": "toddy",
+      "name_original": "A Hot Toddy",
+      "name_es": "A Hot Toddy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "56",
+      "raw_text": "A Hot Toddy\n[ 55 ]\n\f                     ~ Jlot Gtobbp\n       ................................ e e • I l•e•I I I   I   ..............\n\n\n\n\n       THIS is included for Grandma\n       and Grandpa:\n\n                 I jigger of rye, brandy or rum;\n                 the juice of half a lemon;\n                 I lump of sugar;\n                 fill up the highball glass with hot\nI ''\n                 water.\n\n\n\n\n       To A s-r: H ere's .to the modern\n        grandmother; may she never pass\n        out.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-046",
+      "order": 46,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Cowboy",
+      "name_es": "The Cowboy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "scotch",
+          "item_es": "whisky escocés",
+          "amount": "2",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "57",
+      "raw_text": "The Cowboy\n[ 56]\n\fAFTER two of these you won't\neven need a horse. Ride 'em,\ncowboy!\n\n     2 parts scotch;\n     I part cream;\n     cracked ice.\n\n\n\n\nTo As T : H ere's to the liquor that\nmakes a man see double and feel\nsingle!"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-047",
+      "order": 47,
+      "section_title": "Recipes",
+      "category": "flip",
+      "name_original": "An Egg Nog",
+      "name_es": "An Egg Nog",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "58",
+      "raw_text": "An Egg Nog\n[ 57]\n\f...............................................................................\nTHIS is .only to be j):Ilbibed on\nholiday occasions:\n\n            Thoroughly beat an egg with one-\n            half of a teaspoonful of sugar;\n            add I jigger of brandy or whiskey;\n           ,shake in a shaker and add milk to\n            taste;-\n            pour into a glass and twist a lemon\n            peel over it.\n\n\n\n\nTO As T: Here's to the optimist\nwho takes his crank off the Ford!",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-048",
+      "order": 48,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "The Daiquiri Cocktail",
+      "name_es": "The Daiquiri Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Cuban rum (Bacardi)",
+          "item_es": "cuban rum (bacardi)",
+          "amount": "71",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "juice of a lime",
+          "item_es": "zumo de lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "59",
+      "raw_text": "The Daiquiri Cocktail\n[ 58]\n\f  ~be J9acqueri Cocktail\n\n\nTHIS is a famous drink and has\nbeen reprinted for auld time's\nsake.\n\n     71 McCarty;\n     % grenadine;\n     juice of a lime.\n\n\n\n\n THE     MORNING         AFTER.\n\n  ''Who was that lady I seen you\nwith last night?\"\n  \"That's what's been puzzling me\ntoo!'~"
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-049",
+      "order": 49,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Jack Rose Cocktail",
+      "name_es": "Jack Rose Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "h Applejack",
+          "item_es": "h applejack",
+          "amount": "1",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "lime juice",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "60",
+      "raw_text": "Jack Rose Cocktail\n[ 59]\n\f            Jack l\\ose Cocktail\n•   8   I   I   I   I   I   a I   I   I   I   I   I   I   I   I   I   I   I   I   I   ...........\n\n\n\n\nTHIS is another old timer which\nha,s sto~d up under the years.                                                                 .\n\n                1h Applejack;\n                % Gordon water;\n                lli French vermouth;\n                lli Italian vermouth;\n                % orange juice;\n                % lime juice;\n                dash of grenadine.\n\n\n\n\nNo TE : The bootlegger who hoasts\nthat he is a sel/-made man is not\ngiving due credit to the Anti-Saloon\nLeague."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-050",
+      "order": 50,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "Attaboy Cocktail",
+      "name_es": "Attaboy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin (Gordon's)",
+          "item_es": "gin (gordon's)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Bacardi",
+          "item_es": "bacardi",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "61",
+      "raw_text": "Attaboy Cocktail\n[ 60]\n\f       srutabop Cocktail\n\nTHIS recipe has had several\nnames but this one seems to be\nthe most popular.\n\n      % Gordon water;\n      % Bacardi;\n      % Cointreau;\n      % lemon juice.\n\n\n\n\nSTATISTICS: If all the college\nstudents in this country were laid erld\nto end, it would take a lot of hooch."
+    },
+    {
+      "id": "1928-heres-how-by-judge-jr-3rd-printind-051",
+      "order": 51,
+      "section_title": "Recipes",
+      "category": "julep",
+      "name_original": "The Mint Julep",
+      "name_es": "The Mint Julep",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "62",
+      "raw_text": "The Mint Julep\n[ 61 ]\n\f               ~e ;fllint .Jultp\n.............................._...............................................\nTHIS drink proves conclusively\nthat the ,$outh isn't so solid!.\n\n            Dampen a small bunch of mint,\n            dust with powdered sugar, bruise\n            and pour over it a little boiling\n            water;\n            strain into a tall, thin glass;\n            fill the glass with finely cracked ice ;\n            fill with brandy;\n            add sprigs of mint and serve with\n            straws.\n\n\n\n\n  T o A s T : Here's to our bills-and\n 'Jllay we some day m eet 'em.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    }
+  ]
+}
