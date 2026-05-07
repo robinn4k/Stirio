@@ -126,9 +126,11 @@ async function fetchLeaderboard() {
       const { collection, query, orderBy, limit, getDocs } = await import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js');
       const orderedQ = query(collection(db, 'users'), orderBy('xpTotal', 'desc'), limit(50));
       const orderedSnap = await getDocs(orderedQ);
-      const rows = orderedSnap.docs
-        .map(d => ({ uid: d.id, ...d.data() }))
-        .filter(u => u && u.name);
+      // Don't filter on `name` here — older docs (created via saveOnboarding
+      // before seedUserDoc backfilled name) had only `onboarding` set, so
+      // requiring `name` silently dropped legitimate players from the global
+      // ranking. The renderer falls back to displayName / 'Player' if needed.
+      const rows = orderedSnap.docs.map(d => ({ uid: d.id, ...d.data() }));
 
       if (rows.length < 50) {
         // Backstop: pick up users whose docs lack `xpTotal` (created before
@@ -140,19 +142,22 @@ async function fetchLeaderboard() {
           const seen = new Set(rows.map(r => r.uid));
           for (const d of fallbackSnap.docs) {
             if (seen.has(d.id)) continue;
-            const data = d.data();
-            if (!data || !data.name) continue;
+            const data = d.data() || {};
             rows.push({ uid: d.id, xpTotal: 0, level: 1, streakDays: 0, ...data });
           }
         } catch (e) { console.warn('leaderboard backstop query failed:', e); }
       }
 
       // Firestore reachable — return whatever it had (possibly empty), NOT
-      // the single-user local fallback. The local fallback is only correct
-      // when Firestore is unavailable.
+      // the single-user local fallback. The local fallback only kicks in
+      // when Firestore is genuinely unreachable; a transient query error
+      // shouldn't fake a one-row board that hides real users.
       return sortByRank(rows);
     } catch (e) {
       console.error('Leaderboard Firestore query failed:', e && e.code, e && e.message);
+      // Firestore was reachable but the query failed — return empty so the
+      // UI shows "no ranking yet" instead of a misleading solo board.
+      return [];
     }
   }
 

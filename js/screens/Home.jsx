@@ -77,7 +77,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
   const greeting = tr(greetingKey, greetingFallback);
 
   return (
-    <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 1040, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+    <div className="mobile-safe" style={{ padding: '24px 20px 120px', width: '100%', margin: '0 auto', position: 'relative', zIndex: 2 }}>
       {/* header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 28 }}>
         <div>

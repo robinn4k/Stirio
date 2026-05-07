@@ -537,7 +537,7 @@ input, textarea { font: inherit; color: inherit; }
   /* Lift the 720px phone-preview cap at this width — even
      device="mobile" users on a 1920px screen want breathing room. */
   .mobile-safe {
-    max-width: 1400px !important;
+    max-width: 1500px !important;
     padding-left: 32px !important;
     padding-right: 32px !important;
   }
@@ -565,6 +565,19 @@ input, textarea { font: inherit; color: inherit; }
 
 @media (min-width: 1600px) {
   .mobile-safe {
-    max-width: 1560px !important;
+    max-width: 1800px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
+
+/* On a real wide monitor (≥ 1920px) lift the cap further so the Home
+   layout actually uses the screen the user paid for instead of staring
+   at empty gutters. */
+@media (min-width: 1920px) {
+  .mobile-safe {
+    max-width: 2000px !important;
+    padding-left: 64px !important;
+    padding-right: 64px !important;
   }
 }
