@@ -656,6 +656,22 @@
     "bookFile": "data/euvs-books/1938-sloppy-joes-bar.json"
   },
   {
+    "id": "1938-the-cocktail-hour",
+    "year": 1938,
+    "decade": "1930s",
+    "title": "The Cocktail Hour",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Hiram Walker & Sons (promocional)",
+    "city": "Walkerville, Ontario, Canadá",
+    "edition": "1938",
+    "notes": "Folleto promocional de la destilería Hiram Walker & Sons (creadores de 'Canadian Club' Whisky y Hiram Walker's De Luxe American Rye/Bourbon Whiskey). Contiene 25 recetas reales de cócteles donde el ingrediente protagonista es siempre 'Canadian Club' o el bourbon/rye De Luxe. La extracción heurística rescató 25 recetas reales de 49 candidatas; el resto eran fragmentos de continuación, tagline-jokes y publicidad del producto. Algunas recetas vienen truncadas en el OCR y conservan únicamente los primeros ingredientes. Saltadas (no son recetas reales): OCKTAIL (front_matter); Oe Luxe American Rye Whiskey (ad_fragment); American Bourbon Whiskey (ingredient_fragment); I Orange Curacao (ingredient_fragment); American Rye Whiskey (ingredient_fragment); American Bourbon Whiskey (ingredient_fragment); Walker's De Luxe American (ad_fragment); American Bourbon Whiskey (ingredient_fragment); American Bourbon Whiskey (ingredient_fragment); AMERICAN BOURBON WHISKEY (advertisement); American Rye Whiskey (ingredient_fragment); American Rye Whiskey (ingredient_fragment); Shake. (ingredient_fragment); Rye Whiskey (ingredient_fragment); I/3rd Orange Curacao (ingredient_fragment); TYiRAM WALKER'S DE LUXE American Rye Whiskey (advertisement); Shake. (ingredient_fragment); Whisky and Ginqar (section_divider); I/3rd Triple Sec Curacao (ingredient_fragment); OASTS (section_divider); International Awards (advertisement); Is the OFFICIAL CANADIAN GOVERNMENT (advertisement); American Home of (advertisement); LONGEVITY. (humour_filler)",
+    "sectionCount": 2,
+    "recipeCount": 25,
+    "bookFile": "data/euvs-books/1938-the-cocktail-hour.json"
+  },
+  {
     "id": "1938-the-merry-mixer-from-the-house-of-schenley",
     "year": 1938,
     "decade": "1930s",
