@@ -1,0 +1,937 @@
+{
+  "book_id": "1879-drinks-and-how-to-make-them-by-yeatman-co",
+  "metadata": {
+    "title": "Drinks, & How to Make Them",
+    "author": "Yeatman & Co. (Purveyors to the Queen and the Government)",
+    "year": 1879,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Yeatman & Co., 119 New Bond Street",
+    "city": "London",
+    "edition": "First Edition (1879)",
+    "source_file": "1879 Drinks and how to make them by Yeatman & Co.txt",
+    "notes": "Folleto promocional de Yeatman's Calisayine Cocktail Bitters ('The Prince of Pick-me-ups'). Cada cóctel los lleva como ingrediente. Incluye testimonios de doctores, un poema sobre cruzar el Canal sin marearse, y citas de Shakespeare en cada receta (Twelfth Night, Henry IV, Midsummer Night's Dream, Merry Wives of Windsor). Skeleton custom rebuilt detectando 'No. N—Name.' patterns. 30 recetas con ~90% (27/30) parseado."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Calisayine Bitters",
+      "title_es": "Prefacio + Calisayine Bitters",
+      "content_original": "Yeatman & Co. de 119 New Bond Street, Londres ('Purveyors to the Queen and the Government'), publican este folleto promocional de sus 'Calisayine Cocktail Bitters' — 'The Prince of Pick-me-ups'. Vendido en wine merchants y groceries por 3/6 la botella. Incluye testimonios de doctores que recomiendan los bitters como 'tonic' (Calisaya = corteza peruana) y un poema en verso sobre cruzar el Canal sin marearse. Cada receta lleva una cita de Shakespeare.",
+      "content_es": "Yeatman & Co. de 119 New Bond Street, Londres, publican este folleto promocional de sus 'Calisayine Cocktail Bitters'. Cada receta lleva cita de Shakespeare."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Gin Cocktail",
+      "name_es": "Gin Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Come, gentlemen, I hope we shall drink down all unkindness.’’—ilferr'j/ Wives of JKindsor, i. i. Put a half teaspoonful or more of Calisayine Bitters into a tumbler; add a wineglass of gin, a little water, and, if approved of, some ice. Mix well. This may be varied 5 by adding a small quantity of any liqueur and a little lemon peel. N.B.—If preferred sweeter, a little sugar or syrup may be added ; and syrup of raspberry, or any kind of syrup, for variety, may be used in all kinds of cocktails. The following, and one or two other forms for drinks, we have taken from an excellent little book, named “American and other Drinks,” compiled by Mr. Leo Engel, of the Criterion, published by Tinsley Brothers.",
+      "method_es": "“ Come, gentlemen, I hope we shall drink down all unkindness.’’—ilferr'j/ Wives of JKindsor, i. i. Put a half teaspoonful or more of Calisayine Bitters into a tumbler; add a wineglass of gin, a little water, and, if approved of, some ice. Mix well. This may be varied 5 by adding a small quantity of any liqueur and a little lemon peel. N.B.—If preferred sweeter, a little sugar or syrup may be added ; and syrup of raspberry, or any kind of syrup, for variety, may be used in all kinds of cocktails. The following, and one or two other forms for drinks, we have taken from an excellent little book, named “American and other Drinks,” compiled by Mr. Leo Engel, of the Criterion, published by Tinsley Brothers.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "2",
+      "raw_text": "No. 2.—Gin Cocktail.\n    “ Come, gentlemen, I hope we shall drink down all\n  unkindness.’’—ilferr'j/ Wives of JKindsor, i. i.\n   Put a half teaspoonful or more of Calisayine Bitters into\na tumbler; add a wine-glass of gin, a little water, and, if\napproved of, some ice. Mix well. This may be varied\n\n                             5\nby adding a small quantity of any liqueur and a little\nlemon peel.\n  N.B.—If preferred sweeter, a little sugar or syrup\nmay be added ; and syrup of raspberry, or any kind of\nsyrup, for variety, may be used in all kinds of cocktails.\n  The following, and one or two other forms for drinks,\nwe have taken from an excellent little book, named\n “American and other Drinks,” compiled by Mr. Leo\nEngel, of the Criterion, published by Tinsley Brothers."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Fancy Cocktail",
+      "name_es": "Fancy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon-peel placed",
+          "item_es": "lemon-peel placed",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "{Use a small tumbler.) “ I’ll drink to her as long as there is a passage in my throat.”—Twelfth Night, i. 3. This drink may be made the same way as gin, brandy, or whiskey cocktail, and strained into a fancy wineglass, a piece of lemon-peel placed on the top, and a straw¬ berry ; the edge of glass moistened with lemon juice, and dipped in powdered sugar.",
+      "method_es": "{Use a small tumbler.) “ I’ll drink to her as long as there is a passage in my throat.”—Twelfth Night, i. 3. This drink may be made the same way as gin, brandy, or whiskey cocktail, and strained into a fancy wineglass, a piece of lemon-peel placed on the top, and a straw¬ berry ; the edge of glass moistened with lemon juice, and dipped in powdered sugar.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "3",
+      "raw_text": "No. 3.—Fancy Cocktail.\n                   {Use a small tumbler.)\n     “ I’ll drink to her as long as there is a passage in my\n  throat.”—Twelfth Night, i. 3.\n  This drink may be made the same way as gin, brandy,\nor whiskey cocktail, and strained into a fancy wine-glass,\na piece of lemon-peel placed on the top, and a straw¬\nberry ; the edge of glass moistened with lemon juice,\nand dipped in powdered sugar."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Brandy Cocktail",
+      "name_es": "Brandy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "canary",
+          "item_es": "canary",
+          "amount": "1",
+          "unit": "cup",
+          "notes": null
+        },
+        {
+          "item_original": "squeeze of lemon",
+          "item_es": "un toque de limón",
+          "amount": "1",
+          "unit": "squeeze",
+          "notes": null
+        }
+      ],
+      "method_original": "{Use a small tumbler.) “ O knight thou lack’st a cup of canary ; when did I see thee so put down ?”—Twelfth Night, i. 3. A half teaspoonful or more of Calisayine Bitters, wine¬ glass two-thirds full of brandy (or full, if preferred), a little water, squeeze of lemon, some ice ; mix well, and strain.",
+      "method_es": "{Use a small tumbler.) “ O knight thou lack’st a cup of canary ; when did I see thee so put down ?”—Twelfth Night, i. 3. A half teaspoonful or more of Calisayine Bitters, wine¬ glass two-thirds full of brandy (or full, if preferred), a little water, squeeze of lemon, some ice ; mix well, and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "4",
+      "raw_text": "No. 4_Brandy Cocktail.\n                   {Use a small tumbler.)\n     “ O knight thou lack’st a cup of canary ; when did\n  I see thee so put down ?”—Twelfth Night, i. 3.\n  A half teaspoonful or more of Calisayine Bitters, wine¬\nglass two-thirds full of brandy (or full, if preferred), a little\nwater, squeeze of lemon, some ice ; mix well, and strain."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Japanese Cocktail",
+      "name_es": "Japanese Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orgeat syrup",
+          "item_es": "jarabe de orgeat",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "{Use a tumbler.) “ Drink a health to me; for I must hence, and fare¬ well to you all.”—Taming the Shrew, iii. 2. 6 One tablespoonful of Orgeat syrup, a teaspoonful of Calisayine Bitters, wineglass of brandy, a couple of pieces of lemon-peel; fill tumbler one-third with ice, and stir well with a spoon.",
+      "method_es": "{Use a tumbler.) “ Drink a health to me; for I must hence, and fare¬ well to you all.”—Taming the Shrew, iii. 2. 6 One tablespoonful of Orgeat syrup, a teaspoonful of Calisayine Bitters, wineglass of brandy, a couple of pieces of lemon-peel; fill tumbler one-third with ice, and stir well with a spoon.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "6",
+      "raw_text": "No. 6.—Japanese Cocktail.\n                       {Use a tumbler.)\n      “ Drink a health to me; for I must hence, and fare¬\n well to you all.”—Taming the Shrew, iii. 2.\n\n                                6\n   One tablespoonful of Orgeat syrup, a teaspoonful of\nCalisayine Bitters, wine-glass of brandy, a couple of\npieces of lemon-peel; fill tumbler one-third with ice, and\nstir well with a spoon."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Jersey Cocktail",
+      "name_es": "Jersey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "(Use a tumbler.) “And when she drinks, against her lips I bob.”— Midsummer Night’s Dream, ii. i. One teaspoonful Calisayine Bitters, fill tumbler with ice and cyder, mix well, and place on top lemon peel.",
+      "method_es": "(Use a tumbler.) “And when she drinks, against her lips I bob.”— Midsummer Night’s Dream, ii. i. One teaspoonful Calisayine Bitters, fill tumbler with ice and cyder, mix well, and place on top lemon peel.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "6",
+      "raw_text": "No. 6.—Jersey Cocktail.\n                     (Use a tumbler.)\n     “And when she drinks, against her lips I bob.”—\n  Midsummer Night’s Dream, ii. i.\n   One teaspoonful Calisayine Bitters, fill tumbler with\nice and cyder, mix well, and place on top lemon peel."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "crusta",
+      "name_original": "Brandy Crusta",
+      "name_es": "Brandy Crusta",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "or more calisayine bitters",
+          "item_es": "or more calisayine bitters",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice may be added",
+          "item_es": "lemon juice may be added",
+          "amount": "1",
+          "unit": "squeeze",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Dost thou think because thou art virtuous there shall be no more cakes and ale?”—Twelfth Night, ii. 3. A crusta is made in the same way as a fancy cocktail, and may be formed of gin, whiskey, or any kind of spirit, with a little lemon juice and a small lump of ice added. Mix all in a tumbler, take a fancy coloured wineglass, pare half a lemon in one long narrow strip, fit it into wineglass, and pour crusta in, having previously moist¬ ened edge of glass with lemon juice, and dipped in sugar. . No. 8.—Whiskey Cocktail. (Use a tumbler.) “ Three times they breath’d, and three times did they drink.”—King Henry IV., i. 3. Half a teaspoonful or more Calisayine Bitters, wineglass Irish or Scotch whiskey, a piece of lemon peel, fill one- third full of ice, shake all well together, and strain into a wineglass. A squeeze of lemon juice may be added, and at times, by way of variety, a little of any kind of liqueur. 7",
+      "method_es": "“ Dost thou think because thou art virtuous there shall be no more cakes and ale?”—Twelfth Night, ii. 3. A crusta is made in the same way as a fancy cocktail, and may be formed of gin, whiskey, or any kind of spirit, with a little lemon juice and a small lump of ice added. Mix all in a tumbler, take a fancy coloured wineglass, pare half a lemon in one long narrow strip, fit it into wineglass, and pour crusta in, having previously moist¬ ened edge of glass with lemon juice, and dipped in sugar. . No. 8.—Whiskey Cocktail. (Use a tumbler.) “ Three times they breath’d, and three times did they drink.”—King Henry IV., i. 3. Half a teaspoonful or more Calisayine Bitters, wineglass Irish or Scotch whiskey, a piece of lemon peel, fill one- third full of ice, shake all well together, and strain into a wineglass. A squeeze of lemon juice may be added, and at times, by way of variety, a little of any kind of liqueur. 7",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "7",
+      "raw_text": "No. 7.—Brandy Crusta.\n    “ Dost thou think because thou art virtuous there\n  shall be no more cakes and ale?”—Twelfth Night, ii. 3.\n  A crusta is made in the same way as a fancy cocktail,\nand may be formed of gin, whiskey, or any kind of spirit,\nwith a little lemon juice and a small lump of ice added.\nMix all in a tumbler, take a fancy coloured wine-glass,\npare half a lemon in one long narrow strip, fit it into\nwine-glass, and pour crusta in, having previously moist¬\nened edge of glass with lemon juice, and dipped in sugar.\n\n     . No. 8.—Whiskey Cocktail.\n                     (Use a tumbler.)\n     “ Three times they breath’d, and three times did\n  they drink.”—King Henry IV., i. 3.\n  Half a teaspoonful or more Calisayine Bitters, wine-glass\nIrish or Scotch whiskey, a piece of lemon peel, fill one-\nthird full of ice, shake all well together, and strain into a\nwine-glass. A squeeze of lemon juice may be added, and\nat times, by way of variety, a little of any kind of liqueur.\n\n                             7"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Champagne Cocktail",
+      "name_es": "Champagne Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "“ The red wine must first rise in their fair cheeks, my lord; then we shall have them talk us to silence.” King Henry VIII., I, 4. In making champagne cocktail (to my thinking the king of drinks) the high-priced brands of champagne are not needed—a Saumur, at 24s. per doz., will answer the purpose equally well. I quote from Sam Weller : “ It is the seasoning which makes the pie—mutton, beef, or vealso it is the Calisayine Bitters that make any brand of Champagne a pleasure to the palate. A friend of mine noted for his excellent dinners, and the fact that at the table all were invariably lively and chatty, even before the soup was removed, told me his secret was to have handed to each guest, before dinner commenced, a champagne cocktail! “ This,” said he, “ not only has a happy influence on the brain and tongue, but appetises my guests—and don’t the ladies like it! My dinners were always done justice to, and I had the pleasing knowledge that ‘ good digestion would wait on appetite,’ by means of the Calisayine Bitters.” Put half a teaspoonful of Calisayine Bitters to a glass of champagne and a little ice; or, if for a number, put in a jug two dessert-spoonfuls of Calisayine Bitters for each bottle of champagne, and some ice. In each glass put a piece of lemon peel, or a strawberry. A little Maraschino may be added.",
+      "method_es": "“ The red wine must first rise in their fair cheeks, my lord; then we shall have them talk us to silence.” King Henry VIII., I, 4. In making champagne cocktail (to my thinking the king of drinks) the high-priced brands of champagne are not needed—a Saumur, at 24s. per doz., will answer the purpose equally well. I quote from Sam Weller : “ It is the seasoning which makes the pie—mutton, beef, or vealso it is the Calisayine Bitters that make any brand of Champagne a pleasure to the palate. A friend of mine noted for his excellent dinners, and the fact that at the table all were invariably lively and chatty, even before the soup was removed, told me his secret was to have handed to each guest, before dinner commenced, a champagne cocktail! “ This,” said he, “ not only has a happy influence on the brain and tongue, but appetises my guests—and don’t the ladies like it! My dinners were always done justice to, and I had the pleasing knowledge that ‘ good digestion would wait on appetite,’ by means of the Calisayine Bitters.” Put half a teaspoonful of Calisayine Bitters to a glass of champagne and a little ice; or, if for a number, put in a jug two dessert-spoonfuls of Calisayine Bitters for each bottle of champagne, and some ice. In each glass put a piece of lemon peel, or a strawberry. A little Maraschino may be added.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "9",
+      "raw_text": "No. 9.—Champagne Cocktail.\n    “ The red wine must first rise in their fair cheeks,\n  my lord; then we shall have them talk us to silence.”\n  King Henry VIII., I, 4.\n   In making champagne cocktail (to my thinking the\nking of drinks) the high-priced brands of champagne are\nnot needed—a Saumur, at 24s. per doz., will answer the\npurpose equally well. I quote from Sam Weller : “ It is\nthe seasoning which makes the pie—mutton, beef, or\nvealso it is the Calisayine Bitters that make any brand\nof Champagne a pleasure to the palate.\n   A friend of mine noted for his excellent dinners, and\nthe fact that at the table all were invariably lively and\nchatty, even before the soup was removed, told me his\nsecret was to have handed to each guest, before dinner\ncommenced, a champagne cocktail! “ This,” said he,\n “ not only has a happy influence on the brain and tongue,\nbut appetises my guests—and don’t the ladies like it!\nMy dinners were always done justice to, and I had the\npleasing knowledge that ‘ good digestion would wait on\nappetite,’ by means of the Calisayine Bitters.”\n    Put half a teaspoonful of Calisayine Bitters to a glass\nof champagne and a little ice; or, if for a number, put\nin a jug two dessert-spoonfuls of Calisayine Bitters for\neach bottle of champagne, and some ice. In each glass\nput a piece of lemon peel, or a strawberry. A little\n Maraschino may be added."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Stars and Stripes",
+      "name_es": "Stars and Stripes",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "(For a Pousse Cafe'.) You shall not choose but drink before you go. ’— Taming the Shrew, v. i. Pour gently down the side of a liqueur glass, first one 8 part of Calisayine Bitters ; then, with the glass sloped, carefully down the side a second part Maraschino; lastly, a third part brandy.     Hold up to the light, you’ll see stripes ; drink, and you’ll see stars. No. 11. [After Coffee, the followvng i& charming.) “ Thou art a scholar ; let us therefore eat and drink. Marian, I say !—a stoop of wine.”—Twelfth Night, ii. 3. A liqueur glass, equal parts, all well blended : Cali¬ sayine Bitters, Curacoa, Maraschino, and brandy. De¬ lightfully refreshing to the palate. The above may be varied by using any liqueur, such as Chartreuse, Kummel, Noyeau, Anniseed, Benedictine.",
+      "method_es": "(For a Pousse Cafe'.) You shall not choose but drink before you go. ’— Taming the Shrew, v. i. Pour gently down the side of a liqueur glass, first one 8 part of Calisayine Bitters ; then, with the glass sloped, carefully down the side a second part Maraschino; lastly, a third part brandy.     Hold up to the light, you’ll see stripes ; drink, and you’ll see stars. No. 11. [After Coffee, the followvng i& charming.) “ Thou art a scholar ; let us therefore eat and drink. Marian, I say !—a stoop of wine.”—Twelfth Night, ii. 3. A liqueur glass, equal parts, all well blended : Cali¬ sayine Bitters, Curacoa, Maraschino, and brandy. De¬ lightfully refreshing to the palate. The above may be varied by using any liqueur, such as Chartreuse, Kummel, Noyeau, Anniseed, Benedictine.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "10",
+      "raw_text": "No. 10.—Stars and Stripes.\n                   (For a Pousse Cafe'.)\n     You shall not choose but drink before you go. ’—\n  Taming the Shrew, v. i.\n   Pour gently down the side of a liqueur glass, first one\n\n                             8\npart of Calisayine Bitters ; then, with the glass sloped,\ncarefully down the side a second part Maraschino; lastly,\na third part brandy.     Hold up to the light, you’ll see\nstripes ; drink, and you’ll see stars.\n\n\n                        No. 11.\n        [After Coffee, the followvng i& charming.)\n    “ Thou art a scholar ; let us therefore eat and drink.\n  Marian, I say !—a stoop of wine.”—Twelfth Night, ii. 3.\n   A liqueur glass, equal parts, all well blended : Cali¬\nsayine Bitters, Curacoa, Maraschino, and brandy. De¬\nlightfully refreshing to the palate.\n   The above may be varied by using any liqueur, such as\nChartreuse, Kummel, Noyeau, Anniseed, Benedictine.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Sherry and Bitters",
+      "name_es": "Sherry and Bitters",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "or more",
+          "item_es": "or more",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Faith, sir, we were carousing till the second cock ; and drink, sir, is a great provoker of three things.”— Macbeth, ii. 3. Add a quarter of a teaspoonful or more, according to taste, of Calisayine Bitters to a wineglass of sherry, and put in a piece of ice, if desired.",
+      "method_es": "“ Faith, sir, we were carousing till the second cock ; and drink, sir, is a great provoker of three things.”— Macbeth, ii. 3. Add a quarter of a teaspoonful or more, according to taste, of Calisayine Bitters to a wineglass of sherry, and put in a piece of ice, if desired.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "12",
+      "raw_text": "No. 12.—Sherry and Bitters.\n    “ Faith, sir, we were carousing till the second cock ;\n  and drink, sir, is a great provoker of three things.”—\n  Macbeth, ii. 3.\n   Add a quarter of a teaspoonful or more, according to\ntaste, of Calisayine Bitters to a wine-glass of sherry, and\nput in a piece of ice, if desired."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Bum Punch",
+      "name_es": "Bum Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "or two calisayine bitters",
+          "item_es": "or two calisayine bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Go, brew me a pot of sack, finely.’’—ilferry Wives of Windsor, iii. 5, Equal parts Santa Cruz rum and Jamaica rum (or Jamaica rum alone), add a dash or two Calisayine Bitters, six parts water, lemon and sugar to suit taste. 9",
+      "method_es": "“ Go, brew me a pot of sack, finely.’’—ilferry Wives of Windsor, iii. 5, Equal parts Santa Cruz rum and Jamaica rum (or Jamaica rum alone), add a dash or two Calisayine Bitters, six parts water, lemon and sugar to suit taste. 9",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "13",
+      "raw_text": "No. 13.—Bum Punch.\n    “ Go, brew me a pot of sack, finely.’’—ilferry Wives\n  of Windsor, iii. 5,\n   Equal parts Santa Cruz rum and Jamaica rum (or\nJamaica rum alone), add a dash or two Calisayine Bitters,\nsix parts water, lemon and sugar to suit taste.\n\n\n                            9"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Whiskey Punch",
+      "name_es": "Whiskey Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "either scotch",
+          "item_es": "either scotch",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "hot water",
+          "item_es": "hot water",
+          "amount": "0.5",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
+      "method_original": "“ I think I shall drink in pipe-wine first with him.” —Merry Wives of Windsor, iii. 3. Take a wineglassful either Scotch or Irish whiskey, a few dashes Calisayine Bitters, and add to half a tumbler of hot water, in which a little sugar has been dissolved, and a slice of lemon placed on top. If cold punch is wanted, use cold water. [Gin and brandy punches may be made in the same way, either hot or cold.]",
+      "method_es": "“ I think I shall drink in pipe-wine first with him.” —Merry Wives of Windsor, iii. 3. Take a wineglassful either Scotch or Irish whiskey, a few dashes Calisayine Bitters, and add to half a tumbler of hot water, in which a little sugar has been dissolved, and a slice of lemon placed on top. If cold punch is wanted, use cold water. [Gin and brandy punches may be made in the same way, either hot or cold.]",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "14",
+      "raw_text": "No. 14.—Whiskey Punch.\n   “ I think I shall drink in pipe-wine first with him.”\n  —Merry Wives of Windsor, iii. 3.\n  Take a wineglassful either Scotch or Irish whiskey, a\nfew dashes Calisayine Bitters, and add to half a tumbler\nof hot water, in which a little sugar has been dissolved,\nand a slice of lemon placed on top. If cold punch is\nwanted, use cold water.\n  [Gin and brandy punches may be made in the same\nway, either hot or cold.]"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "cup",
+      "name_original": "Claret Cup",
+      "name_es": "Claret Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "taunus water",
+          "item_es": "taunus water",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
+      "method_original": "“Good faith, this same young sober-blooded boy doth not love me, nor a man cannot make him laugh ; but that’s no marvel—he drinks no wine.”—King Henry IV., iv. 3. A wineglass of brandy, liqueurglass each Calisayine Bitters and either Curacoa or Maraschino, juice of a lemon, a few lumps of sugar rubbed on the rind of the lemon, two or three slices of cucumber, one bottle of claret, one bottle of Taunus water, and ice.",
+      "method_es": "“Good faith, this same young sober-blooded boy doth not love me, nor a man cannot make him laugh ; but that’s no marvel—he drinks no wine.”—King Henry IV., iv. 3. A wineglass of brandy, liqueurglass each Calisayine Bitters and either Curacoa or Maraschino, juice of a lemon, a few lumps of sugar rubbed on the rind of the lemon, two or three slices of cucumber, one bottle of claret, one bottle of Taunus water, and ice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "15",
+      "raw_text": "No. 15—Claret Cup.\n    “Good faith, this same young sober-blooded boy\n  doth not love me, nor a man cannot make him laugh ;\n  but that’s no marvel—he drinks no wine.”—King\n  Henry IV., iv. 3.\n  A wine-glass of brandy, liqueur-glass each Calisayine\nBitters and either Curacoa or Maraschino, juice of a\nlemon, a few lumps of sugar rubbed on the rind of the\nlemon, two or three slices of cucumber, one bottle of\nclaret, one bottle of Taunus water, and ice."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cup",
+      "name_original": "Champagne Cup",
+      "name_es": "Champagne Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "taunus water",
+          "item_es": "taunus water",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Go, fetch me a quart of sack : put toast in it.”— Merry Wives of Windsor, iii. 5. Wineglassful brandy, two tablespoonfuls Maraschino, one tablespoonful Calisayine Bitters, sprig of verbena, one bottle champagne, one bottle Taunus water ; ice. io",
+      "method_es": "“ Go, fetch me a quart of sack : put toast in it.”— Merry Wives of Windsor, iii. 5. Wineglassful brandy, two tablespoonfuls Maraschino, one tablespoonful Calisayine Bitters, sprig of verbena, one bottle champagne, one bottle Taunus water ; ice. io",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "16",
+      "raw_text": "No. 16.—Champagne Cup.\n    “ Go, fetch me a quart of sack : put toast in it.”—\n   Merry Wives of Windsor, iii. 5.\n   Wineglassful brandy, two tablespoonfuls Maraschino,\n one tablespoonful Calisayine Bitters, sprig of verbena,\n one bottle champagne, one bottle Taunus water ; ice.\n\n\n                            io"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "julep",
+      "name_original": "Mint Julep",
+      "name_es": "Mint Julep",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "a dozen",
+          "item_es": "a dozen",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        },
+        {
+          "item_original": "ot brandy",
+          "item_es": "ot brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "or two calisayine bitttes",
+          "item_es": "or two calisayine bitttes",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "{Jule'ps may he maie of any hind of spirit.) Nay, daughter, carry the wine in ; we’ll drink within,”—Merry Wives of Windsor, i. i. Put into a tumbler a dozen or so sprigs of mint, a tea¬ spoonful of powdered sugar, a little water, and some chipped ice. Well bruise mint, and add_ a wineglass ot brandy, with a dash or two Calisayine Bitttes. Reverse the mint, putting stalks downward ; drink through a straw.",
+      "method_es": "{Jule'ps may he maie of any hind of spirit.) Nay, daughter, carry the wine in ; we’ll drink within,”—Merry Wives of Windsor, i. i. Put into a tumbler a dozen or so sprigs of mint, a tea¬ spoonful of powdered sugar, a little water, and some chipped ice. Well bruise mint, and add_ a wineglass ot brandy, with a dash or two Calisayine Bitttes. Reverse the mint, putting stalks downward ; drink through a straw.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "17",
+      "raw_text": "No. 17.—Mint Julep.\n     {Jule'ps may he maie of any hind of spirit.)\n       Nay, daughter, carry the wine in ; we’ll drink\n  within,”—Merry Wives of Windsor, i. i.\n   Put into a tumbler a dozen or so sprigs of mint, a tea¬\nspoonful of powdered sugar, a little water, and some\nchipped ice. Well bruise mint, and add_ a wine-glass ot\nbrandy, with a dash or two Calisayine Bitttes. Reverse\nthe mint, putting stalks downward ; drink through a\nstraw."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "smash",
+      "name_original": "Brandy Smash",
+      "name_es": "Brandy Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "before",
+          "item_es": "before",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "mint",
+          "item_es": "menta",
+          "amount": "4",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "half full of shaved ice",
+          "item_es": "half full of shaved ice",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        },
+        {
+          "item_original": "any spirit",
+          "item_es": "any spirit",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Tell not me ! When the butt is out we will drink water: not a drop before.”—Tempest, iii. 2. Three or four sprigs of mint, two teaspoonfuls of powdered sugar, tablespooniul of water ; put m a tumbler half full of shaved ice, smash well together, and add a wineglassful of any spirit, to which a dash or two ot Calisayine Bitters has been added; drink through a straw. On top of drink any portion of fruit m season may be placed.",
+      "method_es": "“ Tell not me ! When the butt is out we will drink water: not a drop before.”—Tempest, iii. 2. Three or four sprigs of mint, two teaspoonfuls of powdered sugar, tablespooniul of water ; put m a tumbler half full of shaved ice, smash well together, and add a wineglassful of any spirit, to which a dash or two ot Calisayine Bitters has been added; drink through a straw. On top of drink any portion of fruit m season may be placed.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "18",
+      "raw_text": "No. 18.—Brandy Smash.\n    “ Tell not me ! When the butt is out we will drink\n  water: not a drop before.”—Tempest, iii. 2.\n   Three or four sprigs of mint, two teaspoonfuls of\npowdered sugar, tablespooniul of water ; put m a tumbler\nhalf full of shaved ice, smash well together, and add a\nwine-glassful of any spirit, to which a dash or two ot\nCalisayine Bitters has been added; drink through a\nstraw. On top of drink any portion of fruit m season\nmay be placed."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cobbler",
+      "name_original": "Sherry Cobbler",
+      "name_es": "Sherry Cobbler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "filled",
+          "item_es": "filled",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Farewell, my hearts ; I will to my honest knight, Falstaff, and drink canary with him.—Merry Wives of Windsor, iii. 2. Two wineglasses of sherry, dessert-spoonful of pow¬ dered sugar, two slices of orange, in a tumbler filled with shaved ice ; dash of Calisayine Bitters, shake well. Drink through a straw.                            1*4^,+ [Cobblers may be made as above with any kind ot wine or spirks.] II",
+      "method_es": "“ Farewell, my hearts ; I will to my honest knight, Falstaff, and drink canary with him.—Merry Wives of Windsor, iii. 2. Two wineglasses of sherry, dessert-spoonful of pow¬ dered sugar, two slices of orange, in a tumbler filled with shaved ice ; dash of Calisayine Bitters, shake well. Drink through a straw.                            1*4^,+ [Cobblers may be made as above with any kind ot wine or spirks.] II",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "19",
+      "raw_text": "No. 19.—Sherry Cobbler.\n     “ Farewell, my hearts ; I will to my honest knight,\n   Falstaff, and drink canary with him.—Merry Wives of\n   Windsor, iii. 2.\n   Two wine-glasses of sherry, dessert-spoonful of pow¬\n dered sugar, two slices of orange, in a tumbler filled\n with shaved ice ; dash of Calisayine Bitters, shake well.\n Drink through a straw.                            1*4^,+\n   [Cobblers may be made as above with any kind ot\n wine or spirks.]\n\n                             II"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Whiskey, Gin, or Brandy",
+      "name_es": "Whiskey, Gin, or Brandy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "either spirit",
+          "item_es": "either spirit",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "or more of calisayine bitters",
+          "item_es": "or more of calisayine bitters",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemonade",
+          "item_es": "lemonade",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
+      "method_original": "Nectar. “Like lime-twigs set to catch my winged soul!— Give me some drink.”—King Henry VI., 2P., iii. 3. Put in a soda-water tumbler a wineglassful of either spirit, with half a teaspoonful or more of Calisayine Bitters, a slice or two of either orange or lemon; add a bottle of lemonade, and some ice. This is a delicious and refreshing drink. [N.B.—Calisayine Cocktail Bitters added to any kind of aerated or mineral waters is excellent.]",
+      "method_es": "Nectar. “Like lime-twigs set to catch my winged soul!— Give me some drink.”—King Henry VI., 2P., iii. 3. Put in a soda-water tumbler a wineglassful of either spirit, with half a teaspoonful or more of Calisayine Bitters, a slice or two of either orange or lemon; add a bottle of lemonade, and some ice. This is a delicious and refreshing drink. [N.B.—Calisayine Cocktail Bitters added to any kind of aerated or mineral waters is excellent.]",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "20",
+      "raw_text": "No. 20.—Whiskey, Gin, or Brandy\n            Nectar.\n    “Like lime-twigs set to catch my winged soul!—\n  Give me some drink.”—King Henry VI., 2P., iii. 3.\n   Put in a soda-water tumbler a wineglassful of either\nspirit, with half a teaspoonful or more of Calisayine\nBitters, a slice or two of either orange or lemon; add a\nbottle of lemonade, and some ice. This is a delicious\nand refreshing drink.\n   [N.B.—Calisayine Cocktail Bitters added to any kind\nof aerated or mineral waters is excellent.]"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Mr.Mantalini’s “Demnition Delicious.”",
+      "name_es": "Mr.Mantalini’s “Demnition Delicious.”",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "or more of calisayine bitters",
+          "item_es": "or more of calisayine bitters",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Delicious.” “And hath sent your worship a morning’s draught of sack.”—Merry Wives of Windsor, ii. 2. Take a tablespoonfid of lime-juice cordial, add half a teaspoonful or more of Calisayine Bitters, and fill tumbler with seltzer, or any kind of aerated or mineral water; put in a piece of ice. A cooling and refreshing summer beverage.",
+      "method_es": "Delicious.” “And hath sent your worship a morning’s draught of sack.”—Merry Wives of Windsor, ii. 2. Take a tablespoonfid of lime-juice cordial, add half a teaspoonful or more of Calisayine Bitters, and fill tumbler with seltzer, or any kind of aerated or mineral water; put in a piece of ice. A cooling and refreshing summer beverage.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "21",
+      "raw_text": "No. 21.—Mr.Mantalini’s “Demnition\n          Delicious.”\n    “And hath sent your worship a morning’s draught\n  of sack.”—Merry Wives of Windsor, ii. 2.\n  Take a tablespoonfid of lime-juice cordial, add half\na teaspoonful or more of Calisayine Bitters, and fill\ntumbler with seltzer, or any kind of aerated or mineral\nwater; put in a piece of ice. A cooling and refreshing\nsummer beverage."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cup",
+      "name_original": "Ale Cup. —“Mr. Weller’s Weneration.”",
+      "name_es": "Ale Cup. —“Mr. Weller’s Weneration.”",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Weneration.” “ The white sheet bleaching on the hedge— With hey ! the sweet bii'ds—O how they sing !— Doth set my pugging teeth on edge ; For a quart of ale is a dish for a king.” Winter’s Tale, iv. 2. Into a quart po\" grate some ginger, add two teaspoon¬ fuls Calisayine bitters, in a glass of gin, then a pint of ale heated, and two teaspoonfuls of sugar, to be drunk while it is foaming. 12",
+      "method_es": "Weneration.” “ The white sheet bleaching on the hedge— With hey ! the sweet bii'ds—O how they sing !— Doth set my pugging teeth on edge ; For a quart of ale is a dish for a king.” Winter’s Tale, iv. 2. Into a quart po\" grate some ginger, add two teaspoon¬ fuls Calisayine bitters, in a glass of gin, then a pint of ale heated, and two teaspoonfuls of sugar, to be drunk while it is foaming. 12",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "22",
+      "raw_text": "No. 22.— Ale Cup. —“Mr. Weller’s\n           Weneration.”\n   “ The white sheet bleaching on the hedge—\n     With hey ! the sweet bii'ds—O how they sing !—\n   Doth set my pugging teeth on edge ;\n     For a quart of ale is a dish for a king.”\n                                     Winter’s Tale, iv. 2.\n   Into a quart po\" grate some ginger, add two teaspoon¬\nfuls Calisayine bitters, in a glass of gin, then a pint of\nale heated, and two teaspoonfuls of sugar, to be drunk\nwhile it is foaming.\n                            12"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Mr. Micawber’s “ Morning Magnet.’’ “Adversity’s sweet rnilk, philosophy, to comfort",
+      "name_es": "Mr. Micawber’s “ Morning Magnet.’’ “Adversity’s sweet rnilk, philosophy, to comfort",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "put a teaspoonful",
+          "item_es": "put a teaspoonful",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Magnet.’’ “Adversity’s sweet rnilk, philosophy, to comfort thee.”—Borneo and Juliet, iii. 3. Ini o a tumbler put a teaspoonful or more of Calisayine Bitters, a wineglassful of Jamaica rum, and fill up with millc, which may be sweetened, if preferred. An excel lent nourishing drink for early birds, especially W'her going bathing.",
+      "method_es": "Magnet.’’ “Adversity’s sweet rnilk, philosophy, to comfort thee.”—Borneo and Juliet, iii. 3. Ini o a tumbler put a teaspoonful or more of Calisayine Bitters, a wineglassful of Jamaica rum, and fill up with millc, which may be sweetened, if preferred. An excel lent nourishing drink for early birds, especially W'her going bathing.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "23",
+      "raw_text": "No. 23—Mr. Micawber’s “ Morning\n           Magnet.’’\n    “Adversity’s sweet rnilk, philosophy, to comfort\n  thee.”—Borneo and Juliet, iii. 3.\n  Ini o a tumbler put a teaspoonful or more of Calisayine\nBitters, a wineglassful of Jamaica rum, and fill up with\nmillc, which may be sweetened, if preferred. An excel\nlent nourishing drink for early birds, especially W'her\ngoing bathing."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "The Pickwick Club",
+      "name_es": "The Pickwick Club",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Constitutional.” “ Give me an egg, nuncle, and I’ll give thee two crowns.—What two crowns shall they be?—why, after I have cut the egg i’ the middle, and eat up the meat, the two crowns of the egg.”—King Lear, i. 4. Beat the yolk of two eggs well in a basin ; add to this —first, one pint of boiled milk, with a few lumps of sugar dissolved in it, and then one pint of whiskey, with a tablespoonful of Calisayine Bitters in it. Serve in claret glasses. A nourishing stimulant, excellent after a day of fatigne, and just as good after a day of idleness.",
+      "method_es": "Constitutional.” “ Give me an egg, nuncle, and I’ll give thee two crowns.—What two crowns shall they be?—why, after I have cut the egg i’ the middle, and eat up the meat, the two crowns of the egg.”—King Lear, i. 4. Beat the yolk of two eggs well in a basin ; add to this —first, one pint of boiled milk, with a few lumps of sugar dissolved in it, and then one pint of whiskey, with a tablespoonful of Calisayine Bitters in it. Serve in claret glasses. A nourishing stimulant, excellent after a day of fatigne, and just as good after a day of idleness.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "24",
+      "raw_text": "No. 24,—The Pickwick Club\n            Constitutional.”\n     “ Give me an egg, nuncle, and I’ll give thee two\n  crowns.—What two crowns shall they be?—why, after\n  I have cut the egg i’ the middle, and eat up the meat,\n  the two crowns of the egg.”—King Lear, i. 4.\n  Beat the yolk of two eggs well in a basin ; add to this\n—first, one pint of boiled milk, with a few lumps of\nsugar dissolved in it, and then one pint of whiskey, with\na tablespoonful of Calisayine Bitters in it. Serve in\nclaret glasses. A nourishing stimulant, excellent after a\nday of fatigne, and just as good after a day of idleness."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "flip",
+      "name_original": "Egg Nog.—Newman Nogg’s",
+      "name_es": "Egg Nog.—Newman Nogg’s",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "calisayine bitters mixed",
+          "item_es": "calisayine bitters mixed",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "madeira",
+          "item_es": "madeira",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "” Nonpariel.” “That’s meat and drink to me now. ”—Merry Wives of Windsor, i. i. Yolk of three eggs, four ounces of powdered loaf sugar, beat well together ; add a gill of brandy or Jamaica rum, with a tablespoonful Calisayine Bitters mixed in either and a wineglass of Madeira, or brown 13 sherry. Whip the whites of the eggs to a stiff froth, and beat with the mixture ; then stir in three pints of milk. This is a delicious and very nourishing drink—not heating or over stimulating. It forms the Christmas and new year’s bowl of the Southern States of America. Can be iced, if wished, with a little grated nutmeg put on top.",
+      "method_es": "” Nonpariel.” “That’s meat and drink to me now. ”—Merry Wives of Windsor, i. i. Yolk of three eggs, four ounces of powdered loaf sugar, beat well together ; add a gill of brandy or Jamaica rum, with a tablespoonful Calisayine Bitters mixed in either and a wineglass of Madeira, or brown 13 sherry. Whip the whites of the eggs to a stiff froth, and beat with the mixture ; then stir in three pints of milk. This is a delicious and very nourishing drink—not heating or over stimulating. It forms the Christmas and new year’s bowl of the Southern States of America. Can be iced, if wished, with a little grated nutmeg put on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "25",
+      "raw_text": "No. 25.—Egg Nog.—Newman Nogg’s\n          ” Nonpariel.”\n    “That’s meat and drink to me now. ”—Merry Wives\n  of Windsor, i. i.\n  Yolk of three eggs, four ounces of powdered loaf\nsugar, beat well together ; add a gill of brandy or\nJamaica rum, with a tablespoonful Calisayine Bitters\nmixed in either and a wine-glass of Madeira, or brown\n\n                           13\nsherry. Whip the whites of the eggs to a stiff froth, and\nbeat with the mixture ; then stir in three pints of milk.\n  This is a delicious and very nourishing drink—not\nheating or over stimulating. It forms the Christmas and\nnew year’s bowl of the Southern States of America. Can\nbe iced, if wished, with a little grated nutmeg put on top."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Mrs. Nickleby’s “Nerve Nourisher.”",
+      "name_es": "Mrs. Nickleby’s “Nerve Nourisher.”",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "a teaspoonful",
+          "item_es": "a teaspoonful",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        },
+        {
+          "item_original": "one-third of this",
+          "item_es": "one-third of this",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
+      "method_original": "Nourisher.” “And sometimes make a drink to bear no barm.”— Midsummer Wight's Dream, ii. i. Put in a tumbler a teaspoonful or more of Calisayine Bitters, add one third (or one half) milk, and fdl with soda water. Ice can be added, if wished. Most of our physicians recommend this drink.      It forms a nutrient tonic. Mrs. M. E. L., of South Kensington, writes :—“ For debility of the stomach, and other existing troubles in¬ cidental to indigestion, our family physician ordered milk and soda water as a beverage, but it at times troubled digestion.    A friend suggested the addition of Calisayine Bitters, and (after its trial being permitted by my pro¬ fessional atte ndant) it was adopted. The effect was most satisfactory ; the tonic influence of the Bitters not only assisted the easy digestion of the milk, but afforded me a charming beverage and stimulated appetite. My little daughter has also benefited by its use.” No,      27.—Calisayine Cream                      Pearl Syrup. “The pearl that pleased your Empress.”—Titus An- dronicus, i. 2. 14 Loaf sugar half a pound, milk one pint, boil, and when cold strain, and add half a wine glassful of Cali- sayine Bitters. Put in a tumbler one-third of this and fill with soda, or seltzer, or Apollinasis water, or any aerated or mineral water. This delicious tonic syrup should always be kept at hand. It renders a tumbler of water at once a delight¬ ful thirst quencher, and, while fascinating the palate, tones the stomach and system, whic",
+      "method_es": "Nourisher.” “And sometimes make a drink to bear no barm.”— Midsummer Wight's Dream, ii. i. Put in a tumbler a teaspoonful or more of Calisayine Bitters, add one third (or one half) milk, and fdl with soda water. Ice can be added, if wished. Most of our physicians recommend this drink.      It forms a nutrient tonic. Mrs. M. E. L., of South Kensington, writes :—“ For debility of the stomach, and other existing troubles in¬ cidental to indigestion, our family physician ordered milk and soda water as a beverage, but it at times troubled digestion.    A friend suggested the addition of Calisayine Bitters, and (after its trial being permitted by my pro¬ fessional atte ndant) it was adopted. The effect was most satisfactory ; the tonic influence of the Bitters not only assisted the easy digestion of the milk, but afforded me a charming beverage and stimulated appetite. My little daughter has also benefited by its use.” No,      27.—Calisayine Cream                      Pearl Syrup. “The pearl that pleased your Empress.”—Titus An- dronicus, i. 2. 14 Loaf sugar half a pound, milk one pint, boil, and when cold strain, and add half a wine glassful of Cali- sayine Bitters. Put in a tumbler one-third of this and fill with soda, or seltzer, or Apollinasis water, or any aerated or mineral water. This delicious tonic syrup should always be kept at hand. It renders a tumbler of water at once a delight¬ ful thirst quencher, and, while fascinating the palate, tones the stomach and system, whic",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "26",
+      "raw_text": "No.     26.—Mrs. Nickleby’s “Nerve\n             Nourisher.”\n  “And sometimes make a drink to bear no barm.”—\n  Midsummer Wight's Dream, ii. i.\n  Put in a tumbler a teaspoonful or more of Calisayine\nBitters, add one third (or one half) milk, and fdl with\nsoda water. Ice can be added, if wished.\n   Most of our physicians recommend this drink.      It\nforms a nutrient tonic.\n\n   Mrs. M. E. L., of South Kensington, writes :—“ For\ndebility of the stomach, and other existing troubles in¬\ncidental to indigestion, our family physician ordered\nmilk and soda water as a beverage, but it at times troubled\ndigestion.    A friend suggested the addition of Calisayine\nBitters, and (after its trial being permitted by my pro¬\nfessional atte ndant) it was adopted. The effect was most\nsatisfactory ; the tonic influence of the Bitters not only\nassisted the easy digestion of the milk, but afforded me\na charming beverage and stimulated appetite. My little\ndaughter has also benefited by its use.”\n\n\nNo,      27.—Calisayine Cream                      Pearl\n                  Syrup.\n   “The pearl that pleased your Empress.”—Titus An-\n dronicus, i. 2.\n\n                             14\n   Loaf sugar half a pound, milk one pint, boil, and\nwhen cold strain, and add half a wine glassful of Cali-\nsayine Bitters. Put in a tumbler one-third of this and\nfill with soda, or seltzer, or Apollinasis water, or any\naerated or mineral water.\n    This delicious tonic syrup should always be kept at\nhand. It renders a tumbler of water at once a delight¬\nful thirst quencher, and, while fascinating the palate,\ntones the stomach and system, which is always moie oi\nless wearied where thirst exists ; and to the many who\n object to water alone as a beverage will be a boon.\n Ladies and children will obtain a nourishing tonic. All\n our lady friends are charmed with it."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Calisayine Cream Pearl",
+      "name_es": "Calisayine Cream Pearl",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dissolved",
+          "item_es": "dissolved",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "condensed milk dissolved",
+          "item_es": "condensed milk dissolved",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
+      "method_original": "Syrup, made with. Condensed. IVtilk. Special for Yachts, Steamships, ^c. Take condensed milk two tablespoonfuls dissolved in half a pint of water, and add half a wmeglassful of Calisayine Bitters,  Use a iMne lassful ot this m k tumbler of water, or any kind of mrated watei. O take two teaspoonfuls of condensed milk dissolved in a teaspoonful of Calisayine Bitters, and add to a tumbler of water or serated water.",
+      "method_es": "Syrup, made with. Condensed. IVtilk. Special for Yachts, Steamships, ^c. Take condensed milk two tablespoonfuls dissolved in half a pint of water, and add half a wmeglassful of Calisayine Bitters,  Use a iMne lassful ot this m k tumbler of water, or any kind of mrated watei. O take two teaspoonfuls of condensed milk dissolved in a teaspoonful of Calisayine Bitters, and add to a tumbler of water or serated water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "28",
+      "raw_text": "No. 28. — Calisayine Cream Pearl\nSyrup, made with. Condensed. IVtilk.\n           Special for Yachts, Steamships, ^c.\n   Take condensed milk two tablespoonfuls dissolved in\n half a pint of water, and add half a wmeglassful of\n Calisayine Bitters,  Use a iMne lassful ot this m k\n tumbler of water, or any kind of mrated watei. O\n take two teaspoonfuls of condensed milk dissolved in a\n teaspoonful of Calisayine Bitters, and add to a tumbler\n of water or serated water."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Elysium Eong                  Drink",
+      "name_es": "Elysium Eong                  Drink",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "to   a tumble of water",
+          "item_es": "to   a tumble of water",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Lengthened sweetness long drawn out. Cream Pearl        Syrup. — A wineglassful         to   a tumble of water ; ice if desired.",
+      "method_es": "“ Lengthened sweetness long drawn out. Cream Pearl        Syrup. — A wineglassful         to   a tumble of water ; ice if desired.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "29",
+      "raw_text": "No.    29.—Elysium Eong                  Drink\n        “ Lengthened sweetness long drawn out.\n   Cream Pearl        Syrup. — A wineglassful         to   a\n tumble of water ; ice if desired."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "The Templar’s Tea Nectar",
+      "name_es": "The Templar’s Tea Nectar",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cold tea",
+          "item_es": "cold tea",
+          "amount": "1",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
+      "method_original": "“Wil’t please you taste of what is htre.'’—Tempest, iii. 2. Wine glassful of Calisayine Cream Pearl Syrup put in a tumbler of cold tea, slice of lemon, and ice. 15",
+      "method_es": "“Wil’t please you taste of what is htre.'’—Tempest, iii. 2. Wine glassful of Calisayine Cream Pearl Syrup put in a tumbler of cold tea, slice of lemon, and ice. 15",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "30",
+      "raw_text": "No. 30.—The Templar’s Tea Nectar.\n “Wil’t please you taste of what is htre.'’—Tempest, iii. 2.\n   Wine glassful of Calisayine Cream Pearl Syrup put in\n a tumbler of cold tea, slice of lemon, and ice.\n                             15"
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Temperance Tea Punch",
+      "name_es": "Temperance Tea Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "“Caudle, thy morning taste to cure.”—Timon of Athens, iv. 3. A teaspoonful of Calisayine Bitters; tumbler halt full of milk ; fill with cold tea, sweetened if preferred. No. 3S.—Tea Punch. “ Has a taste as sweet as any cordial.”— Winter^s Tale, V. 3. Wineglassful Calisayine Cream Pearl Syrup, table- spoonful brandy, or any kind of spirits, or sherry, or Madeira, tumbler of cold tea, two slices of lemon or orange—ice. Hot punch same way, using hot tea.",
+      "method_es": "“Caudle, thy morning taste to cure.”—Timon of Athens, iv. 3. A teaspoonful of Calisayine Bitters; tumbler halt full of milk ; fill with cold tea, sweetened if preferred. No. 3S.—Tea Punch. “ Has a taste as sweet as any cordial.”— Winter^s Tale, V. 3. Wineglassful Calisayine Cream Pearl Syrup, table- spoonful brandy, or any kind of spirits, or sherry, or Madeira, tumbler of cold tea, two slices of lemon or orange—ice. Hot punch same way, using hot tea.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "31",
+      "raw_text": "No. 31. — Temperance Tea Punch,\n   “Caudle, thy morning taste to cure.”—Timon of\nAthens, iv. 3.\n   A teaspoonful of Calisayine Bitters; tumbler halt\nfull of milk ; fill with cold tea, sweetened if preferred.\n\n\n            No. 3S.—Tea Punch.\n   “ Has a taste as sweet as any cordial.”— Winter^s\nTale, V. 3.\n  Wineglassful Calisayine Cream Pearl Syrup, table-\nspoonful brandy, or any kind of spirits, or sherry, or\nMadeira, tumbler of cold tea, two slices of lemon or\norange—ice. Hot punch same way, using hot tea."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Mississippi Punch",
+      "name_es": "Mississippi Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "“Inventions to delight the taste.”—Pericles, i. 4. Half teaspoonful Calisayine Bitters, wineglass brandy, half wineglass Jamaica rum, half wineglass whiskey, half ditto water, one-and-a-half tablespoonful sugar, quarter of a large lemon ; fill tumbler with shaved ice, put on top small pieces of orange and berries in season; drink through a straw.",
+      "method_es": "“Inventions to delight the taste.”—Pericles, i. 4. Half teaspoonful Calisayine Bitters, wineglass brandy, half wineglass Jamaica rum, half wineglass whiskey, half ditto water, one-and-a-half tablespoonful sugar, quarter of a large lemon ; fill tumbler with shaved ice, put on top small pieces of orange and berries in season; drink through a straw.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "33",
+      "raw_text": "No. 33.—Mississippi Punch.\n   “Inventions to delight the taste.”—Pericles, i. 4.\n   Half teaspoonful Calisayine Bitters, wine-glass brandy,\nhalf wine-glass Jamaica rum, half wine-glass whiskey,\nhalf ditto water, one-and-a-half tablespoonful sugar,\nquarter of a large lemon ; fill tumbler with shaved ice,\nput on top small pieces of orange and berries in season;\ndrink through a straw.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Roman Punch",
+      "name_es": "Roman Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "“ By my troth, most pleasant.”—Love's Labour Lost, iv. I. Tablespoonful of sugar, ditto raspbeny syrup, tea¬ spoonful Calisayine Bitters, wineglass Jamaica mm, half ditto brandy, juice of half a lemon, fill with shaved ice, dash with port wine. 16",
+      "method_es": "“ By my troth, most pleasant.”—Love's Labour Lost, iv. I. Tablespoonful of sugar, ditto raspbeny syrup, tea¬ spoonful Calisayine Bitters, wineglass Jamaica mm, half ditto brandy, juice of half a lemon, fill with shaved ice, dash with port wine. 16",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "34",
+      "raw_text": "No. 34.—Roman Punch.\n   “ By my troth, most pleasant.”—Love's Labour Lost,\niv. I.\n   Tablespoonful of sugar, ditto raspbeny syrup, tea¬\nspoonful Calisayine Bitters, wineglass Jamaica mm,\nhalf ditto brandy, juice of half a lemon, fill with shaved\nice, dash with port wine.\n\n\n                           16",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1879-drinks-and-how-to-make-them-by-yeatman-co-030",
+      "order": 30,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "The Ladies’ Thimbleful",
+      "name_es": "The Ladies’ Thimbleful",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "calisayine bitters",
+          "item_es": "amargo Calisayine (Yeatman)",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "“ Wil’t please you taste of this ?’~Tempest. Ore-third each brandy, Calisayine Bitters, Curacoa. Itns :s a delicious French cafe drink, and so is Brandy bcAFiA; ha.lf brandy, half Maraschino, two dashes Calisayine Bitters. A^ood Sherris sack hath a twofold operation in it. It asceids me into the brain ; dries me there all the foolish, and dull, and crudy vapors which environ it • makes It apprehensive, quick, forgetive, full of nimble’ heiy, anc^ delectable shapes ; which delivered o’er to the voice (the tongue), which is the birth, becomes excellent wit. —Ktig Henry IF., iv. 3. T •                      stimulating influence, &c.), says Liebig, “a a means of refreshment, where the powers of life are exhausted—of' giving animation and energy where man las to struggle with days of depression—as a means of (orrection and compensation where mispro- portion occui^ in nutrition, and the organism is deranged in its operatiins, and as a means of protection against transient orgajic disturbances, wine is surpassed by no product of natire or art,” But even better than wine, ora reason tc be presently stated, spirit and water, or wine with Cali^yine Bitters added, is better than wine or spirits alone, for the reason that it frequently happens aftei the stimiiating influence of wine has subsided depression follove; this is entirely avoided when these itters are added, as from their tonic effect the nervous tone is left strengtiened. As a cordial stomachic and delightful liqueur, and for ",
+      "method_es": "“ Wil’t please you taste of this ?’~Tempest. Ore-third each brandy, Calisayine Bitters, Curacoa. Itns :s a delicious French cafe drink, and so is Brandy bcAFiA; ha.lf brandy, half Maraschino, two dashes Calisayine Bitters. A^ood Sherris sack hath a twofold operation in it. It asceids me into the brain ; dries me there all the foolish, and dull, and crudy vapors which environ it • makes It apprehensive, quick, forgetive, full of nimble’ heiy, anc^ delectable shapes ; which delivered o’er to the voice (the tongue), which is the birth, becomes excellent wit. —Ktig Henry IF., iv. 3. T •                      stimulating influence, &c.), says Liebig, “a a means of refreshment, where the powers of life are exhausted—of' giving animation and energy where man las to struggle with days of depression—as a means of (orrection and compensation where mispro- portion occui^ in nutrition, and the organism is deranged in its operatiins, and as a means of protection against transient orgajic disturbances, wine is surpassed by no product of natire or art,” But even better than wine, ora reason tc be presently stated, spirit and water, or wine with Cali^yine Bitters added, is better than wine or spirits alone, for the reason that it frequently happens aftei the stimiiating influence of wine has subsided depression follove; this is entirely avoided when these itters are added, as from their tonic effect the nervous tone is left strengtiened. As a cordial stomachic and delightful liqueur, and for ",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": "35",
+      "raw_text": "No. 35.—The Ladies’ Thimbleful.\n       “ Wil’t please you taste of this ?’~Tempest.\n   Ore-third each brandy, Calisayine Bitters, Curacoa.\n Itns :s a delicious French cafe drink, and so is Brandy\n bcAFiA; ha.lf brandy, half Maraschino, two dashes\n Calisayine Bitters.\n\n      A^ood Sherris sack hath a twofold operation in it.\n It asceids me into the brain ; dries me there all the\n foolish, and dull, and crudy vapors which environ it •\n makes It apprehensive, quick, forgetive, full of nimble’\n heiy, anc^ delectable shapes ; which delivered o’er to the\n voice (the tongue), which is the birth, becomes excellent\n wit. —Ktig Henry IF., iv. 3.\n\n  T •                      stimulating influence, &c.), says\n  Liebig, “a a means of refreshment, where the powers\n  of life are exhausted—of' giving animation and energy\n where man las to struggle with days of depression—as\n a means of (orrection and compensation where mispro-\n portion occui^ in nutrition, and the organism is deranged\n in its operatiins, and as a means of protection against\n transient orgajic disturbances, wine is surpassed by no\nproduct of natire or art,” But even better than wine,\n  ora reason tc be presently stated, spirit and water, or\nwine with Cali^yine Bitters added, is better than wine\nor spirits alone, for the reason that it frequently happens\naftei the stimiiating influence of wine has subsided\ndepression follove; this is entirely avoided when these\n   itters are added, as from their tonic effect the nervous\ntone is left strengtiened.\n\n   As a cordial stomachic and delightful liqueur, and\nfor oppressiOT a/tei meals, indigestion, or indiscretion\nm eating. Take a liqueur glass of Calisayine Bitters.\n\n                           17\n                   Wim0nials.\n   From ‘‘The Lancet.”—June 14th, 1879.\n  “ Calisayine Cocktail Bitters.         (Yeatman & Co.,\n119, New Bond-street.)—This is a powerfully aromatic\nand agreeable tonic.     It is founded, of course, on the\nwell-known Calisaya bark, but is artfully comaounded.\nMany recipes for its use are given, and those that we\nhave tried certainly yielded pleasant drinks.”\n\n    From “The Times.”—October 1, 1879.\n   Yeatman’s Calisayine Bitters are superior to others\nexhibited at the Agricultural Hall.      Theje delicious\nliqueur bitters were approved of by all who fested them,\nand the syrup made with this and milk, conbined with\nsoda-water, was the sensational drink of the exhibition.\n\n\n  “Morning Advertiser,” October 1, 1879.\n   Passing to the wholesale department of tie Exhibition,\nwhere the tasting stalls are situate, the frst that greets\nthe visitor on entrance is a very suggesive one. Al¬\nthough being at the beginning would se;m to be at the\nvery end of the show, for it is the establsment for what\nis termed the “ Prince of pick-me-ups,’ This produc¬\ntion consists of what is certainly a vey pleasant and,\nas we understand, wholesome productim, known by the\nvery Yankee-sounding title of Yeatnan’s ‘ Cocktail\nBitters.” The priority claimed for t"
+    }
+  ]
+}

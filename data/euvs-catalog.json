@@ -48,6 +48,22 @@
     "bookFile": "data/euvs-books/1862-jerry-thomas-bartenders-guide.json"
   },
   {
+    "id": "1879-drinks-and-how-to-make-them-by-yeatman-co",
+    "year": 1879,
+    "decade": "1870s",
+    "title": "Drinks, & How to Make Them",
+    "author": "Yeatman & Co. (Purveyors to the Queen and the Government)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Yeatman & Co., 119 New Bond Street",
+    "city": "London",
+    "edition": "First Edition (1879)",
+    "notes": "Folleto promocional de Yeatman's Calisayine Cocktail Bitters ('The Prince of Pick-me-ups'). Cada cóctel los lleva como ingrediente. Incluye testimonios de doctores, un poema sobre cruzar el Canal sin marearse, y citas de Shakespeare en cada receta (Twelfth Night, Henry IV, Midsummer Night's Dream, Merry Wives of Windsor). Skeleton custom rebuilt detectando 'No. N—Name.' patterns. 30 recetas con ~90% (27/30) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 30,
+    "bookFile": "data/euvs-books/1879-drinks-and-how-to-make-them-by-yeatman-co.json"
+  },
+  {
     "id": "1884-american-and-other-drinks-1-st-edition-by-charlie-paul",
     "year": 1884,
     "decade": "1880s",
@@ -62,6 +78,22 @@
     "sectionCount": 2,
     "recipeCount": 97,
     "bookFile": "data/euvs-books/1884-american-and-other-drinks-1-st-edition-by-charlie-paul.json"
+  },
+  {
+    "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition",
+    "year": 1888,
+    "decade": "1880s",
+    "title": "The Bartender's Manual (Revised Edition)",
+    "author": "Theodore Proulx (with Chapin & Gore, Chicago)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "J.M.W. Jones Stationery & Printing Co.",
+    "city": "Chicago, Illinois",
+    "edition": "Revised Edition (1888 — Copyright 1888)",
+    "notes": "'Latest Mode of Mixing Drinks' — manual de Theodore Proulx de Chapin & Gore (Chicago). Ordenado alfabéticamente con prosa detallada por receta (incluye técnica del Blue Blazer con fuego, el Absinthe Frappé con cambio de glass entre dos shakers). Skeleton custom + parser prose-aware. 90 recetas; ~49% (44/90) parseado (algunas recetas son advice/cleaning/no-recipe que conservan raw_text + notes).",
+    "sectionCount": 2,
+    "recipeCount": 90,
+    "bookFile": "data/euvs-books/1888-bartenders-manual-by-theodore-proulx-revised-edition.json"
   },
   {
     "id": "1893-beverages-and-sandwiches-for-your-husbands-friends-1893",
@@ -254,6 +286,22 @@
     "sectionCount": 5,
     "recipeCount": 58,
     "bookFile": "data/euvs-books/1917-seventy-recipes-for-cocktails-cups-and-punches-by-ggd-and-eefp.json"
+  },
+  {
+    "id": "1917-the-ideal-bartender-by-tom-bullock",
+    "year": 1917,
+    "decade": "1910s",
+    "title": "The Ideal Bartender",
+    "author": "Tom Bullock (Pendennis Club, Louisville & St. Louis Country Club)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Buxton & Skinner Stationery Co.",
+    "city": "St. Louis, Missouri",
+    "edition": "First Edition (1917)",
+    "notes": "Primer libro de coctelería publicado por un afroamericano en EE.UU. (1917). Bullock fue el bartender legendario del Pendennis Club de Louisville y luego del St. Louis Country Club, donde sirvió a múltiples presidentes (incluyendo Theodore Roosevelt, cuyo testimonio sobre 'just a part of one julep' se cita en el prefacio jurídico). Open con anecdotario humorístico sobre un caso judicial donde Bullock testificó. Skeleton custom + parser estructurado. 109 recetas; ~80% (87/109) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 109,
+    "bookFile": "data/euvs-books/1917-the-ideal-bartender-by-tom-bullock.json"
   },
   {
     "id": "1919-julians-recipes-by-julian-anderson",
@@ -656,6 +704,22 @@
     "bookFile": "data/euvs-books/1933-sloppy-joes-bar.json"
   },
   {
+    "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "The Cocktail Book — A Sideboard Manual for Gentlemen (Repeal Edition)",
+    "author": "Anonymous (issued for The St. Botolph Society)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "L.C. Page & Company",
+    "city": "Boston",
+    "edition": "Repeal Edition (New Revised Edition, 1933)",
+    "notes": "Edición revisada post-Repeal de un manual de coctelería 'sideboard for gentlemen'. Open con cita de Lord Byron ('Let us have wine and women, mirth and laughter; sermons and soda-water the day after'). Incluye una sección de 'Recent Favorites' con Bacardi y Daiquirí. Open con un relato narrativo sobre Mistress Peggy del bodegón de Van Eyck (Hudson, NY) y el cocktail original. 64 recetas con custom skeleton + parser word-fraction prose. ~95% (61/64) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 64,
+    "bookFile": "data/euvs-books/1933-the-cocktail-book-repeal-edition-new-revised-edition.json"
+  },
+  {
     "id": "1933-the-merry-mixer-by-william-guyer",
     "year": 1933,
     "decade": "1930s",
@@ -718,6 +782,22 @@
     "sectionCount": 2,
     "recipeCount": 70,
     "bookFile": "data/euvs-books/1934-charles-book-of-punches-and-cocktails.json"
+  },
+  {
+    "id": "1934-cocktails-bar-la-florida-by-constante-ribalaigua-vert",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Cocktails Bar 'La Florida' (Bilingüe ES/EN)",
+    "author": "Constante Ribalaigua Vert ('La Catedral de los Cocktails'), with Sala brothers; Director: Segundo Menéndez",
+    "language": "es",
+    "languageName": "Español/Inglés (bilingüe)",
+    "publisher": "Bar 'La Florida' / El Floridita",
+    "city": "La Habana, Cuba — San Rafael y Águila",
+    "edition": "Publicación Anual (1934)",
+    "notes": "El Floridita — 'La Catedral de los Cocktails' de La Habana. Constante Ribalaigua Vert (el inventor del Daiquirí Frozen #4 y los rituales del bar pre-Castro) fue el cantinero head durante décadas. Ernest Hemingway lo frecuentó (su Daiquirí Hemingway nació allí). El bar abrió en 1817 como bodegón 'La Piña de Plata'; tras la intervención americana se transformó en 'La Florida' / Floridita. Manual bilingüe ES/EN en columnas. Skeleton custom + parser bilingüe (extrae ES, EN preserved en raw_text). 85 recetas; ~93% (79/85) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 85,
+    "bookFile": "data/euvs-books/1934-cocktails-bar-la-florida-by-constante-ribalaigua-vert.json"
   },
   {
     "id": "1934-heres-how-to-be-healthy-by-b-g-hauser",
@@ -958,6 +1038,22 @@
     "sectionCount": 13,
     "recipeCount": 80,
     "bookFile": "data/euvs-books/1936-sloppy-joes-bar.json"
+  },
+  {
+    "id": "1937-liquid-gems-a-book-of-drinks-for-the-fastiduous-drinker",
+    "year": 1937,
+    "decade": "1930s",
+    "title": "Liquid Gems — A Book of Drinks for the Fastidious Drinker",
+    "author": "John R. Iverson (of the California Golf Club of San Francisco)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published / California Golf Club",
+    "city": "San Francisco, California",
+    "edition": "First Edition (1937)",
+    "notes": "Manual del bartender del California Golf Club de San Francisco. Cada receta viene seguida por una sección de 'Observations' que comenta historia, brand, fortaleza alcohólica y consideraciones culturales (incluyendo notas sobre la Absinthe prohibida en EE.UU. — 'so a genuine Absinthe drink cannot be legally obtained in this country'). Skeleton custom + parser oz/dash. 53 recetas; ~94% (50/53) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 53,
+    "bookFile": "data/euvs-books/1937-liquid-gems-a-book-of-drinks-for-the-fastiduous-drinker.json"
   },
   {
     "id": "1938-mixed-drinks-by-hotel-martinique-broadway",

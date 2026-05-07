@@ -1,0 +1,3554 @@
+{
+  "book_id": "1917-the-ideal-bartender-by-tom-bullock",
+  "metadata": {
+    "title": "The Ideal Bartender",
+    "author": "Tom Bullock (Pendennis Club, Louisville & St. Louis Country Club)",
+    "year": 1917,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Buxton & Skinner Stationery Co.",
+    "city": "St. Louis, Missouri",
+    "edition": "First Edition (1917)",
+    "source_file": "1917 The Ideal Bartender by Tom Bullock.txt",
+    "notes": "Primer libro de coctelería publicado por un afroamericano en EE.UU. (1917). Bullock fue el bartender legendario del Pendennis Club de Louisville y luego del St. Louis Country Club, donde sirvió a múltiples presidentes (incluyendo Theodore Roosevelt, cuyo testimonio sobre 'just a part of one julep' se cita en el prefacio jurídico). Open con anecdotario humorístico sobre un caso judicial donde Bullock testificó. Skeleton custom + parser estructurado. 109 recetas; ~80% (87/109) con ingredientes parseados."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Roosevelt anecdote",
+      "title_es": "Prefacio + anécdota de Roosevelt",
+      "content_original": "Tom Bullock fue el primer bartender afroamericano publicado en EE.UU. (1917). Sirvió 25 años en el Pendennis Club de Louisville y el St. Louis Country Club. Le enseñó el arte del julep 'no less than Marse Lilburn G. McNair, the father of the julep'. Open con anécdota: Theodore Roosevelt afirmó haber bebido 'just a part of one julep' en el St. Louis Country Club; el juez especula que esta declaración 'va a perder su caso', porque '¿quién bebió alguna vez sólo una parte de uno de los de Tom?'.",
+      "content_es": "Tom Bullock fue el primer bartender afroamericano en publicar un libro de coctelería (1917). Sirvió 25 años en el Pendennis Club de Louisville y el St. Louis Country Club. Open con anécdota sobre Theodore Roosevelt y su 'just a part of one julep'."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Drinks (alphabetical)",
+      "title_es": "Bebidas (alfabético)",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-001",
+      "order": 1,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ABSINTHE",
+      "name_es": "ABSINTHE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour one pony of Absinthe into large Barrglass and letjce filling the bowl of the Absinthe glass partly with Shaved drops from the Absinthe glass.",
+      "method_es": "Pour one pony of Absinthe into large Barrglass and letjce filling the bowl of the Absinthe glass partly with Shaved drops from the Absinthe glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE\n    (When the customer asks for Absinthe without specifying\n    any particular style of service).\n  Pour one pony of Absinthe into large Barrglass and letjce\n    cold water drip from the Absinthe glass into Bar glass until\n    full- The Absinthe glass has a hole in the center. By\n    filling the bowl of the Absinthe glass partly with Shaved\n    Ice, and the rest with water, the water will be ice cold as it\n    drops from the Absinthe glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-002",
+      "order": 2,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ABSINTHE, AMERICAN SERVICE",
+      "name_es": "ABSINTHE, AMERICAN SERVICE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Mixing glass % full Shaved Ice. Shake until outside of shaker is well frosted; strain into",
+      "method_es": "Mixing glass % full Shaved Ice. Shake until outside of shaker is well frosted; strain into",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE, AMERICAN SERVICE\n      Mixing glass % full Shaved Ice.\n      4 dashes Gum Syrup.\n      1 pony Absinthe.\n      Shake until outside of shaker is well frosted; strain into\nlarge Champagne glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-003",
+      "order": 3,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ABSINTHE COCKTAIL",
+      "name_es": "ABSINTHE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill Mixing glass % full Shaved Ice. Stir; strain into Cocktail glass and serve.",
+      "method_es": "Fill Mixing glass % full Shaved Ice. Stir; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE COCKTAIL\n   Fill Mixing glass % full Shaved Ice.\n      Yi jigger Water.\n      Y jigger Absinthe.\n     2 dashes Angostura Bitters.\n     1 teaspoonful Benedictine.\n     Stir; strain into Cocktail glass and serve.\n                             [7]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-004",
+      "order": 4,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ABSINTHE FRAPPE",
+      "name_es": "ABSINTHE FRAPPE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill medium Bar glass full of Shaved lee. Shake until outside of Shaker has frosty appearance; strain into six-ounce Shell glass and serve.",
+      "method_es": "Fill medium Bar glass full of Shaved lee. Shake until outside of Shaker has frosty appearance; strain into six-ounce Shell glass and serve.",
+      "glassware": "six-ounce shell glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE FRAPPE\n      Fill medium Bar glass full of Shaved lee.\n      1 teaspoonful Benedictine.\n      1 pony Absinthe.\n      Shake until outside of Shaker has frosty appearance;\nstrain into six-ounce Shell glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-005",
+      "order": 5,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ABSINTHE, FRENCH SERVICE",
+      "name_es": "ABSINTHE, FRENCH SERVICE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour 1 pony of Absinthe Into a Champagne glass which is",
+      "method_es": "Pour 1 pony of Absinthe Into a Champagne glass which is",
+      "glassware": "a champagne glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE, FRENCH SERVICE\n  Pour 1 pony of Absinthe Into a Champagne glass which is\n    standing In a bowl. Fill the bowl of your Absinthe glass\n    with Shaved Ice and water. Raise the bowl and let the\n    Ice Water drip into the Absinthe until the proper color is\n    obtained. Serve in thin Bar glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-006",
+      "order": 6,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ABSINTHE, ITALUN SERVICE",
+      "name_es": "ABSINTHE, ITALUN SERVICE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of absinthe in a large bar glass",
+          "item_es": "of absinthe in a large bar glass",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour Ice Water'in glass, at same time stirring gently",
+      "method_es": "Pour Ice Water'in glass, at same time stirring gently",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ABSINTHE, ITALUN SERVICE\n      1 pony of Absinthe in a large Bar glass.\n      3 pieces Cracked Ice.\n      3 dashes Maraschino.\n      3^ pony Anisette.\n      Pour Ice Water'in glass, at same time stirring gently\n    with Bar Spoon. Serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-007",
+      "order": 7,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ADMIRAL SCHLEY HIGH BALL",
+      "name_es": "ADMIRAL SCHLEY HIGH BALL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapple syrup",
+          "item_es": "jarabe de piña",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "tokay, angelica or sweet catawba wine",
+          "item_es": "tokay, angelica or sweet catawba wine",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Drop a piece of Ice Into a High Ball glass. Fill up with Apollinarls or Seltzer.",
+      "method_es": "Drop a piece of Ice Into a High Ball glass. Fill up with Apollinarls or Seltzer.",
+      "glassware": "a high ball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ADMIRAL SCHLEY HIGH BALL\n   Drop a piece of Ice Into a High Ball glass.\n      1 teaspoonful Pineapple Syrup.\n      1 teaspoonful Lemon Juice.\n       jigger Irish Whiskey.\n      % jigger Tokay, Angelica or Sweet Catawba Wine.\n      Fill up with Apollinarls or Seltzer."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-008",
+      "order": 8,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "ALE FLIP",
+      "name_es": "ALE FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of bar sugar",
+          "item_es": "of bar sugar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Break in 1 whole Egg; grate a little Nutmeg on top and serve the drink with a spoon alongside of the glass.",
+      "method_es": "Break in 1 whole Egg; grate a little Nutmeg on top and serve the drink with a spoon alongside of the glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALE FLIP\n       Pill an Ale glass nearly full.\n       1 teaspoonful of Bar Sugar.\n      Break in 1 whole Egg; grate a little Nutmeg on top and\n    serve the drink with a spoon alongside of the glass.\n                                [8]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-009",
+      "order": 9,
+      "section_title": "Drinks",
+      "category": "sangaree",
+      "name_original": "ALE SANGAREE",
+      "name_es": "ALE SANGAREE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALE SANGAREE\n      Dissolve in an Ale glass 1 teaspoonful Bar Sugar. Fill\n      up with Ale and serve with grated Nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-010",
+      "order": 10,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "AMERICAN POUSSE CAFE",
+      "name_es": "AMERICAN POUSSE CAFE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill a Pousse Cafe glass yi full of Chartreuse, and add",
+      "method_es": "Fill a Pousse Cafe glass yi full of Chartreuse, and add",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "AMERICAN POUSSE CAFE\n      Fill a Pousse Cafe glass yi full of Chartreuse, and add\n    Maraschino, Curacoa and Brandy in equal proportions until\n    the glass is filled. Then proceed as for Abricontine Pousse\n    Cafe.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-011",
+      "order": 11,
+      "section_title": "Drinks",
+      "category": "other",
+      "name_original": "APOLLINARIS LEMONADE",
+      "name_es": "APOLLINARIS LEMONADE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon's juice",
+          "item_es": "zumo de 1 limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Fill up with Apollinaris; stir; strain into Lemonade glass; dress with Fruit and serve.",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Fill up with Apollinaris; stir; strain into Lemonade glass; dress with Fruit and serve.",
+      "glassware": "lemonade glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APOLLINARIS LEMONADE\n      Fill large Bar glass % full Shaved Ice.\n      2 teaspoonfuls Powdered Sugar.\n      1 Lemon's Juice.\n      Fill up with Apollinaris; stir; strain into Lemonade glass;\ndress with Fruit and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-012",
+      "order": 12,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "APPLE JACK COCKTAIL",
+      "name_es": "APPLE JACK COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Shake; strain into Cocktail glass and serve with piece",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Shake; strain into Cocktail glass and serve with piece",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLE JACK COCKTAIL\n      Fill large Bar glass % full Shaved Ice.\n      3 dashes Gum Syrup.\n      3 dashes Raspberry Syrup.\n          jiggers Applejack.\n      Shake; strain into Cocktail glass and serve with piece\n    of Lemon Peel twisted on top."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-013",
+      "order": 13,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "APPLEJACK FIX",
+      "name_es": "APPLEJACK FIX",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of curacoa",
+          "item_es": "of curacoa",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "of any fruit syrup",
+          "item_es": "of any fruit syrup",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "applejack brandy",
+          "item_es": "applejack brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass with Shaved Ice. Stir; dress with Fruits; serve with Straws.",
+      "method_es": "Fill large Bar glass with Shaved Ice. Stir; dress with Fruits; serve with Straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLEJACK FIX\n      Fill large Bar glass with Shaved Ice.\n      2 teaspoonfuls Bar Sugar, dissolved in little Water.\n      yi Juice of 1 Lemon.\n      3 dashes of Curacoa.\n      4 dashes of any Fruit Syrup.\n      1 jigger Applejack Brandy.\n      Stir; dress with Fruits; serve with Straws.\n                              [9]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-014",
+      "order": 14,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "APPLEJACK SOUR",
+      "name_es": "APPLEJACK SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon or lime juice",
+          "item_es": "lemon or lime juice",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "applejack",
+          "item_es": "applejack",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ ftUl Shaved Ice. Stir well; strain into Sour glass; dress with Fruit and Pour into an Ale glass or mug      Porter and H Ale, or",
+      "method_es": "Fill large Bar glass ^ ftUl Shaved Ice. Stir well; strain into Sour glass; dress with Fruit and Pour into an Ale glass or mug      Porter and H Ale, or",
+      "glassware": "sour glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APPLEJACK SOUR\n    Fill large Bar glass ^ ftUl Shaved Ice.\n    2 teaspoonfuls Bar Sugar, dissolved in little Water.\n    3 dashes Lemon or Lime Juice.\n    1 Jigger Applejack.\n    Stir well; strain into Sour glass; dress with Fruit and\n  Berries and sjvve.\n\n'ARF-AND-ARF\"\n    Pour into an Ale glass or mug      Porter and H Ale, or\n  Porter and Stout with Ale, or H Old and      New Ale.\n    The use of the Porter and Ale is more prevalent in\n  England. In the United States ^ Old and ^ New Ale Is\n  usually used when this drink is called for, unless other«\n  wise specified."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-015",
+      "order": 15,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "ARRACK PUNCH",
+      "name_es": "ARRACK PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "yi",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a Punch glass the Juice of I Lime and a little Stir well; dash with Champagne; stir again briskly; dress",
+      "method_es": "Pour into a Punch glass the Juice of I Lime and a little Stir well; dash with Champagne; stir again briskly; dress",
+      "glassware": "a punch glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ARRACK PUNCH\n   Pour into a Punch glass the Juice of I Lime and a little\n  ApoUinaris Water in which a heaping teaspoonful of Bar\n  Sugar has been dissolved. Add 1 Lump Ice.\n   ^jigger Batavia Arrack.\n    yi jigger Jamaica Rum.\n    Stir well; dash with Champagne; stir again briskly; dress\n  with Fruit and Serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-016",
+      "order": 16,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ASTRINGENT",
+      "name_es": "ASTRINGENT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica ginger",
+          "item_es": "jamaica ginger",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up with Brandy; stir gently and serve with little",
+      "method_es": "Fill up with Brandy; stir gently and serve with little",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ASTRINGENT\n    M Wineglass Port Wine.\n   6 dashes Jamaica Ginger.\n    Fill up with Brandy; stir gently and serve with little\n  Nutmeg on top."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-017",
+      "order": 17,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "AUDITORIUM COOLER",
+      "name_es": "AUDITORIUM COOLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir; decorate with Fruit and Berries. Serve.",
+      "method_es": "Stir; decorate with Fruit and Berries. Serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "AUDITORIUM COOLER\n    Into large Bar glass squeeze Juice of 1 Lemon.\n    1 teaspoonful Bar Sugar.\n    1 bottle Ginger Ale off the ice.\n    Stir; decorate with Fruit and Berries. Serve.\n                           110]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-018",
+      "order": 18,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ALL RIGHT COCKTAIL",
+      "name_es": "ALL RIGHT COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange curacoa",
+          "item_es": "orange curacoa",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALL RIGHT COCKTAIL\n    I     Use a large Mixing glass filled with Lump Ice.\n    I     1 jigger Rye Whiskey.\n          % jigger Orange Curacoa.\n          1 dash Angostura Bitters.\n          Shake well; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-019",
+      "order": 19,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BACARDI COCKTAIL",
+      "name_es": "BACARDI COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "imported grenadine",
+          "item_es": "imported grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Mixing glass. Fill with Lump Ice. Shake well and serve in a Cocktail glass. Use a large Mixing glass. Fill with Lump Ice. Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Use a large Mixing glass. Fill with Lump Ice. Shake well and serve in a Cocktail glass. Use a large Mixing glass. Fill with Lump Ice. Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BACARDI COCKTAIL\n          Use a large Mixing glass.\n          Fill with Lump Ice.\n             jigger Cusiner Grenadine.\n          1 jigger Bacardi Rum.\n        Shake well and serve in a Cocktail glass.\n\nBACARDI COCKTAIL—Country Club Style\n          Use a large Mixing glass.\n          Fill with Lump Ice.\n          H Lime Juice.\n          2 dashes Imported Grenadine.\n          1 jigger Bacardi Rum.\n          Shake well; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-020",
+      "order": 20,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BALDY COCKTAIL",
+      "name_es": "BALDY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of burnette's old tom gin",
+          "item_es": "of burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "of orange juice",
+          "item_es": "of orange juice",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "of orange bitters",
+          "item_es": "of orange bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Mixing glass with Lump Ice. Shake; strain into Cocktail glass and serve.",
+      "method_es": "Use a large Mixing glass with Lump Ice. Shake; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BALDY COCKTAIL\n          Use a large Mixing glass with Lump Ice.\n          1 jigger of Burnette's Old Tom Gin.\n          1 pony of Orange Juice.\n          1 Dash of Orange Bitters.\n          Shake; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-021",
+      "order": 21,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BAMBOO COCKTAIL",
+      "name_es": "BAMBOO COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bnrnette's old tom gin",
+          "item_es": "bnrnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Fine Ice. Stir; strain into Cocktail glass. Serve. Use a large Mixing glass with Lnmp Ice. Stir well and serve with Straws. Fill large Bar glass H  Shaved Ice. Shake well; strain into Cocktml glass and serve. Use a Claret glass. Break one Ice Cold Egg into glass. Add salt and Spanish Paprica and serve. Fill glass with Hot Water. Stir well while seasoning with",
+      "method_es": "Fill large Bar glass % full Fine Ice. Stir; strain into Cocktail glass. Serve. Use a large Mixing glass with Lnmp Ice. Stir well and serve with Straws. Fill large Bar glass H  Shaved Ice. Shake well; strain into Cocktml glass and serve. Use a Claret glass. Break one Ice Cold Egg into glass. Add salt and Spanish Paprica and serve. Fill glass with Hot Water. Stir well while seasoning with",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BAMBOO COCKTAIL\n         Fill large Bar glass % full Fine Ice.\nI        % jigger Sherry Wine.\n         % jigger Italian Vermouth.\n         Stir; strain into Cocktail glass. Serve.\n                                  [Ill\n                                                                    ■1\n    BLACK COW\n        Use a large Mixing glass with Lnmp Ice.\n        2 jiggers of Cream.\n        1 bottle Sarsaparilla.\n        Stir well and serve with Straws.\n\n\n    BLOOD HOUND COCKTAIL\n        Fill large Bar glass H  Shaved Ice.\n\\       Add ^ dozen fresh Strawberries.\n        1 jigger Bnrnette's Old Tom Gin.\n        Shake well; strain into Cocktml glass and serve.\n\n\n    BOMBAY COCKTAIL\n        Use a Claret glass.\n        3^ pony Olive Oil.\n           pony Vinegar.\n        3^ pony Worcestershire Sauce.\n        Break one Ice Cold Egg into glass.\n        Add salt and Spanish Paprica and serve.\n\n\n    BENEDICTINE\n         Place an inverted Whiskey glass on the bar, set a Pony\n      glass on it and fill up with Benedictine. Serve all liquors\n      straight in this manner.\n\n\n    BEEF TEA\n\n        y2 teaspoonful Beef Extract in small Bar glass.\n        Fill glass with Hot Water. Stir well while seasoning with\n      Pepper, Salt and Celery Salt. Serve with small glass of\n      Cracked Ice and spoon on the side.\n\n                                 [12]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-022",
+      "order": 22,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BISHOP",
+      "name_es": "BISHOP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice with the skin of two slices",
+          "item_es": "lemon juice with the skin of two slices",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "seltzer water",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass ^ full Shaved Ice. Fill up with Claret or Burgundy; shake; ornament with",
+      "method_es": "Fill glass ^ full Shaved Ice. Fill up with Claret or Burgundy; shake; ornament with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BISHOP\n\n    1 tcaspoonful Bar Sugar in large Bar glass.\n    2 dashes Lemon Juice with the Skin of Two Slices.\n    Fill glass ^ full Shaved Ice.\n    1 dash Seltzer Water.\n    2 dashes Jamaica Rum.\n    Fill up with Claret or Burgundy; shake; ornament with\n  Fruit and serve with Straws."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-023",
+      "order": 23,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BISHOP A LA PRUSSE",
+      "name_es": "BISHOP A LA PRUSSE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BISHOP A LA PRUSSE\n    Before a Fire or in a Hot Oven roast 6 large Oranges until\n  they are of a light brown color, and then place them in a\n  deep dish and scatter over them Y2 lb. of Granulated Sugar\n  and pour on 1 pint of Port or Claret Wine. Then cover\n  the dish and set aside for 24 hours before the time to serve.\n  When about ready for the service, set the dish In boiling\n  water; press the Juice from the Oranges with a large spoon\n  or wooden potato masher and strain the Juice through a\n  fine seive or cheese cloth. Then boil 1 pint of Port or Claret\n  and mix it with the Strained Juice.    Serve in stem Claret\n  glasses while warm. A little Nutmeg on top improves the\n  drink, but should not be added unless requested by customer\n  or guest.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-024",
+      "order": 24,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BISMARCK",
+      "name_es": "BISMARCK",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "kuemmel",
+          "item_es": "kuemmel",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "break the yolk.",
+      "method_es": "break the yolk.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BISMARCK\n    2 teaspoonfuls Vanilla Cordial in Sherry Wine glass.\n    1 yolk of an Egg covered with Benedictine so as not to\n  break the yolk.\n    Yz Wineglass Kuemmel.\n    1 light dash Angostura Bitters.\n    The colors should be kept separate and great care exer\n  cised to prevent the ingredients from running together.\n                            [131"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-025",
+      "order": 25,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BIZZY IZZY HIGH BALL",
+      "name_es": "BIZZY IZZY HIGH BALL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon jnice",
+          "item_es": "lemon jnice",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Drop 1 piece of Ice into a Highball glass.",
+      "method_es": "Drop 1 piece of Ice into a Highball glass.",
+      "glassware": "a highball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BIZZY IZZY HIGH BALL\n     Drop 1 piece of Ice into a Highball glass.\n    2 dashes Lemon Jnice.\n    2 teaspoonfuls Pineapple Syrup.\n    3^ jigger Sherry Wine.\n    M jigger Rye or Bourbon Whiskey."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-026",
+      "order": 26,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BLACK STRIPE",
+      "name_es": "BLACK STRIPE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour Wineglass Santa Cruz or Jamaica Rum into a small Stir well and fill up with Shaved Ice. Pour into mixture of Lemon Juice and Sugar the Cham",
+      "method_es": "Pour Wineglass Santa Cruz or Jamaica Rum into a small Stir well and fill up with Shaved Ice. Pour into mixture of Lemon Juice and Sugar the Cham",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLACK STRIPE\n    Pour Wineglass Santa Cruz or Jamaica Rum into a small\n  Bar glass and add 1 tablespoonfnl of Molasses.\n    If to serve hot, fill glass with boiling Water and sprinkle\n  Nutmeg on top.\n    If to serve cold, add H Wineglass Water.\n    Stir well and fill up with Shaved Ice.\n\n\nBLACK AND TAN PUNCH (For party of 10)\n     1 lb. white Sugar.\n     Jnice of 6 Lemons.\n    1 quart Guinness Stout.\n     1 quart Champagne.\n     Pour into mixture of Lemon Juice and Sugar the Cham\n   pagne and Stout, ice cold. Serve in Punch glasses dressed\n   with Fruit.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-027",
+      "order": 27,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BLACKTHORNE COCKTAIL",
+      "name_es": "BLACKTHORNE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lime or lemon juice",
+          "item_es": "lime or lemon juice",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple syrup",
+          "item_es": "jarabe de piña",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermut",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "bar sugar dissolved in a little hot water",
+          "item_es": "bar sugar dissolved in a little hot water",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "(or jigger) scotch whiskey",
+          "item_es": "(or jigger) scotch whiskey",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "santa cruz rum",
+          "item_es": "santa cruz rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill Mixing glass % full Shaved Ice. Stir; strain into Cocktail glass and serve. Fill large Bar glass ^ full Shaved Ice. Stir; strain into Claret glass; ornament with Fruit and serve. Drop 3 lumps Cracked Ice in a Bickey (thin Champagne) Fill up with Ginger Ale (imported); stir; dress with Use two Pewter or Silver Mugs. Fill up with Shaved Ice and add: Stir; dress with Fruit and serve with Straws. put the Sugar in a Punch bowl and add: Stir well; empty into another bowl in which a block of Serve into Punch glasses so that each person will have Fill a Sherry glass H fuO of Shaved Ice. Fill up with Ginger Ale; stir gently and serve with a",
+      "method_es": "Fill Mixing glass % full Shaved Ice. Stir; strain into Cocktail glass and serve. Fill large Bar glass ^ full Shaved Ice. Stir; strain into Claret glass; ornament with Fruit and serve. Drop 3 lumps Cracked Ice in a Bickey (thin Champagne) Fill up with Ginger Ale (imported); stir; dress with Use two Pewter or Silver Mugs. Fill up with Shaved Ice and add: Stir; dress with Fruit and serve with Straws. put the Sugar in a Punch bowl and add: Stir well; empty into another bowl in which a block of Serve into Punch glasses so that each person will have Fill a Sherry glass H fuO of Shaved Ice. Fill up with Ginger Ale; stir gently and serve with a",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLACKTHORNE COCKTAIL\n     Fill Mixing glass % full Shaved Ice.\n     14, teaspoonful Lemon Juice.\n     1 teaspoonful Syrup.\n     Vi jigger Vermouth.\n     3^ jigger Sloe Gin.\n     1 dash Angostura Bitters.\n     2 dashes Orange Bitters.\n     Stir; strain into Cocktail glass and serve.\n                             114]\n     BLACKTHORNE SOUR\n         Fill large Bar glass ^ full Shaved Ice.\n         4 dashes Lime or Lemon Juice.\n         1 teaspoonful Pineapple Syrup.\n            teaspoonful green Chartreuse.\n         1 jigger Sloe Gin.\n         Stir; strain into Claret glass; ornament with Fruit and\n       serve.\n\n\n\n     BLIZ'S ROYAL RICKEY\n         Drop 3 lumps Cracked Ice in a Bickey (thin Champagne)\n       glass.\n            Lime or    Lemon.\n         4 dashes Raspberry Syrup.\n         1 pony Vermouth.\n         M jigger Gin.\n         Fill up with Ginger Ale (imported); stir; dress with\n       Fruit and serve.\n\n     BLUE BLAZER\n         Use two Pewter or Silver Mugs.\n         1 teaspoonful Bar Sugar dissolved in a little Hot Water.\n         1 Wineglass (or jigger) Scotch Whiskey.\n         Ignite the nmture, and while blazing pour it several\n       times from one mug to the other. Serve with a piece of\n       twisted Lemon Peel on top.\n\n     BOATING PUNCH\n        Into a large Bar glass put:\n        2 teaspoonfuls Bar Sugar.\n        2 dashes Lemon Juice.\n        1 dash Lime Juice.\n        Fill up with Shaved Ice and add:\n        1 pony Brandy.\n        1 jigger Santa Cruz Rum.\n        Stir; dress with Fruit and serve with Straws.\n                              [15]\n\n\n\n\nX.\nBOMBAY PUNCH (2J^.galIon mixture for 40 people)\n     Bruise the skins of 6 Lemons in 1 lb. of Bar sugar and\n   put the Sugar in a Punch bowl and add:\n     1 box Strawberries.\n     2 Lemons, sliced.\n     6 Oranges, sliced.\n     1 Pineapple, cut into small pieces.\n     1 quart Brandy.\n     1 quart Sherry Wine.\n     1 quart Madeira Wine.\n     Stir well; empty into another bowl in which a block of\n   Clear Ice has been placed and add:\n     4 quarts of Champagne.\n     2 quarts Carbonated Water.\n     Serve into Punch glasses so that each person will have\n   some of the Fruit.\n\n\n\nBON SOIR (\"Good Night\")\n     Fill a Sherry glass H fuO of Shaved Ice.\n     H pony Benedictine.\n        pony Creme Yvette.\n     Fill up with Ginger Ale; stir gently and serve with a\n   Straw cut in two."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-028",
+      "order": 28,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BOSTON COOLER",
+      "name_es": "BOSTON COOLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon rind in large bar glass",
+          "item_es": "lemon rind in large bar glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve.",
+      "method_es": "Serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BOSTON COOLER\n     1 Lemon Rind in large Bar glass.\n     3 lumps Ice.\n     1 bottle Giner Ale.\n     1 bottle Sarsaparilla.\n     Serve.\n\n                              H6I                             1"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-029",
+      "order": 29,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BOTTLE OF COCKTAIL",
+      "name_es": "BOTTLE OF COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour a quart of Whiskey or other Liquor desired into a Pour back and forth from one measure or pitcher into mixed.   Bottle and cork.",
+      "method_es": "Pour a quart of Whiskey or other Liquor desired into a Pour back and forth from one measure or pitcher into mixed.   Bottle and cork.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BOTTLE OF COCKTAIL\n    Pour a quart of Whiskey or other Liquor desired into a\n  Bar measure or glass pitcher and add:\n    1 jigger Gum Syrup.\n    1 pony Curacoa.\n   ^ pony Angostura Bitters.\n    Pour back and forth from one measure or pitcher into\n  another measure or pitcher until the liquid is thoroughly\n  mixed.   Bottle and cork."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-030",
+      "order": 30,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRACE UP",
+      "name_es": "BRACE UP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar in large mixing glass",
+          "item_es": "bar sugar in large mixing glass",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "boker's or angostura bitters",
+          "item_es": "boker's or angostura bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well; strain Into tall, thin glass; fill with ApoHinaris",
+      "method_es": "Shake well; strain Into tall, thin glass; fill with ApoHinaris",
+      "glassware": "tall, thin glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRACE UP\n    1 tablespoonful Bar Sugar in large Mixing glass.\n    3 dashes Boker's or Angostura Bitters.\n    3 dashes Lemon Juice.\n    2 dashes Anisette.\n    lEgg.\n    1 jigger Brandy\n    ^ glass Shaved Ice.\n    Shake well; strain Into tall, thin glass; fill with ApoHinaris\n  and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-031",
+      "order": 31,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY AND GINGER ALE",
+      "name_es": "BRANDY AND GINGER ALE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir briskly and serve.",
+      "method_es": "Stir briskly and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY AND GINGER ALE\n    3 lumps of Ice in tall, thin glass.\n    1 Wineglass Brandy.\n    1 bottle Ginger Ale.\n    Stir briskly and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-032",
+      "order": 32,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY AND SODA",
+      "name_es": "BRANDY AND SODA",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir briskly and serve.",
+      "method_es": "Stir briskly and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY AND SODA\n    2 pieces of Ice in tall, thin glass.\n    1 Wineglass Brandy.\n    1 bottle plain Soda.\n    Stir briskly and serve.\n                              117]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-033",
+      "order": 33,
+      "section_title": "Drinks",
+      "category": "flip",
+      "name_original": "BRANDY FLIP",
+      "name_es": "BRANDY FLIP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "egg broken in whole",
+          "item_es": "egg broken in whole",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill mediam Bar glass 14 foU Shaved Ice. Shake well; strain into small Shell glass; grate a little",
+      "method_es": "Fill mediam Bar glass 14 foU Shaved Ice. Shake well; strain into small Shell glass; grate a little",
+      "glassware": "small shell glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY FLIP\n      Fill mediam Bar glass 14 foU Shaved Ice.\n      1 Egg broken in whole.\n      2 level teaspoonfuls Bar Sugar.\n      1 jigger Brandy.\n      Shake well; strain into small Shell glass; grate a little\n    Nntmeg on top and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-034",
+      "order": 34,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY FLOAT",
+      "name_es": "BRANDY FLOAT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy floated on top",
+          "item_es": "brandy floated on top",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a Cocktail glass % full of Carbonated Water.",
+      "method_es": "Fill a Cocktail glass % full of Carbonated Water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY FLOAT\n   Fill a Cocktail glass % full of Carbonated Water.\n   1 pony Brandy floated on top.\n      (Use spoon to float the Brandy)."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-035",
+      "order": 35,
+      "section_title": "Drinks",
+      "category": "julep",
+      "name_original": "BRANDY JULEP",
+      "name_es": "BRANDY JULEP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of brandy",
+          "item_es": "of brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "stir in 1 heaping teaspoonful of Bar Sugar. Bruise 3 or Stir well; decorate with few sprigs of Mint by planting",
+      "method_es": "stir in 1 heaping teaspoonful of Bar Sugar. Bruise 3 or Stir well; decorate with few sprigs of Mint by planting",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY JULEP\n     Into a small Bar glass pour % Wineglass of Water and\n  stir in 1 heaping teaspoonful of Bar Sugar. Bruise 3 or\n  4 sprigs of Mint in the Sugar and Water with a Muddler\n    until the flavor of the Mint has been extracted.      Then\n    withdraw the Mint and pour the flavored Water into a tall\n    Shell glass or large Goblet, which has been filled with fine\n    Ice, and add:\n      1 jigger of Brandy.\n      2 dashes Jamaica Rum.\n      Stir well; decorate with few sprigs of Mint by planting\n    the sprigs stems downward in the Ice around the rim of\n    gla^s; dress with Fruit and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-036",
+      "order": 36,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "BRANDY PUNCH",
+      "name_es": "BRANDY PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "santa cruz rum",
+          "item_es": "santa cruz rum",
+          "amount": "yi",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "of pineapple",
+          "item_es": "of pineapple",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Shake: dress with Fruit and serve with Straw.",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Shake: dress with Fruit and serve with Straw.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY PUNCH\n   Fill large Bar glass % full Shaved Ice.\n   2 teaspoonfuls Bar Sugar dissolved in little Water.\n      H Juice of 1 Lemon.\n      yi jigger Santa Cruz Rum.\n          jiggers Brandy.\n      1 slice Orange.\n      1 piece of Pineapple.\n      Shake: dress with Fruit and serve with Straw.\n                              1181"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-037",
+      "order": 37,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY SCAFFA",
+      "name_es": "BRANDY SCAFFA",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SCAFFA\n     Into a small Wineglass pour:\n     Green Chartreuse.\n     Maraschino.\n     Old Brandy.\n     In equal proportion to fill the glass, using care as in pre\n   paring Crustas, not to allow the colors to blend.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-038",
+      "order": 38,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY SHAKE",
+      "name_es": "BRANDY SHAKE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill small Bar glass 54 full Shaved Ice. Shake; strain into small fancy glass and serve. Strain through a bag and bottle.",
+      "method_es": "Fill small Bar glass 54 full Shaved Ice. Shake; strain into small fancy glass and serve. Strain through a bag and bottle.",
+      "glassware": "small fancy glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SHAKE\n     Fill small Bar glass 54 full Shaved Ice.\n     1 teaspoonJTul Bar Sugar.\n     Juice of 2 Limes.\n     1 jigger Brandy.\n     Shake; strain into small fancy glass and serve.\nBRANDY SHRUB (2-gallon mixture for 40 people)\n     Into a Punch bowl put the Peeled Rinds of6 Lemons and\n   the Juice of 12 Lemons and add 5 quarts of Brandy. Make\n   the bowl airtight and set it aside. At the expiration of 6\n   days add 3 quarts of Sherry wine and 6 pounds of Loaf\n   Sugar, which has been dissolved in 1 quart of plain Soda.\n   Strain through a bag and bottle."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-039",
+      "order": 39,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRANDY SKIN",
+      "name_es": "BRANDY SKIN",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SKIN\n     FiU a Whiskey glass H full Hot Water and poiu- in:\n     1 jigger Brandy.\n     Twist a piece of Lemon Skin on top and serve.\n     (It may occur that a customer will ask for a little Sugar.\n   In that case add 54 small teaspoonful, and stir)."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-040",
+      "order": 40,
+      "section_title": "Drinks",
+      "category": "sling",
+      "name_original": "BRANDY SLING",
+      "name_es": "BRANDY SLING",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved in little water",
+          "item_es": "sugar dissolved in little water",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir; twist in a piece of Lemon Peel; grate Nutmeg on",
+      "method_es": "Stir; twist in a piece of Lemon Peel; grate Nutmeg on",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SLING\n     In a Whiskey glass:\n     1 lump Ice.\n     1 teaspoonful Sugar dissolved in little Water.\n     1 jigger Brandy.\n     Stir; twist in a piece of Lemon Peel; grate Nutmeg on\n   top and serve.\n                            (19 1"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-041",
+      "order": 41,
+      "section_title": "Drinks",
+      "category": "smash",
+      "name_original": "BRANDY SMASH",
+      "name_es": "BRANDY SMASH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass  full Shaved Ice. Stir; strain into fancy Stem glass and serve.",
+      "method_es": "Fill large Bar glass  full Shaved Ice. Stir; strain into fancy Stem glass and serve.",
+      "glassware": "fancy stem glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SMASH\n      Fill large Bar glass  full Shaved Ice.\n      1 heaping teaspoonful Bar Sugar.\n      3 sprigs of Mint.\n      1 jigger Brandy.\n      Stir; strain into fancy Stem glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-042",
+      "order": 42,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "BRANDY SOUR",
+      "name_es": "BRANDY SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon or lime juice",
+          "item_es": "lemon or lime juice",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer or apollinaris water",
+          "item_es": "seltzer or apollinaris water",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Stir; strain into Sour glass; dress with Fruit and serve.",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Stir; strain into Sour glass; dress with Fruit and serve.",
+      "glassware": "sour glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SOUR\n   Fill large Bar glass % full Shaved Ice.\n   2 teaspoonfuls Bar Sugar.\n      3 dashes Lemon or Lime Juice.\n      3 dashes Seltzer or Apollinaris Water.\n      1 j'igger Brandy.\n    Stir; strain into Sour glass; dress with Fruit and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-043",
+      "order": 43,
+      "section_title": "Drinks",
+      "category": "toddy",
+      "name_original": "BRANDY TODDY",
+      "name_es": "BRANDY TODDY",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of bar sugar dissolved in little water",
+          "item_es": "of bar sugar dissolved in little water",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir; place the bottle before the customer and allow him",
+      "method_es": "Stir; place the bottle before the customer and allow him",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY TODDY\n      Into a Whiskey glass drop 1 lump Cracked Ice.\n      1 teaspoonful of Bar Sugar dissolved in little Water.\n      Stir; place the bottle before the customer and allow him\n    to pour his o^vn drink."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-044",
+      "order": 44,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BRONX COCKTAIL",
+      "name_es": "BRONX COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "slice orange",
+          "item_es": "slice orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ full Shaved Ice. Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Fill large Bar glass ^ full Shaved Ice. Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRONX COCKTAIL\n      Fill large Bar glass ^ full Shaved Ice.\n      H j'igger Dry Gin.\n      H j'igger French Vermouth.\n      H jigger Italian Vermouth.\n      1 Slice Orange.\n      Shake well; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-045",
+      "order": 45,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BURNT BRANDY",
+      "name_es": "BURNT BRANDY",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BURNT BRANDY\n      Place two lumps of Cut Loaf Sugar in a small, shallow\n    dish or saucer and pour over the Sugar 13^ jiggers of\n    Cognac Brandy. Ignite the Sugar and Brandy and let them\n    burn for about two minutes. Then cover the dish or saucer\n    with a plate, and when the fire is extinguished pour the\n    liquid into a small Bar glass and serve.\n                              1201",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-046",
+      "order": 46,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BUSTER BROWN COCKTAIL",
+      "name_es": "BUSTER BROWN COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass    full Shaved Ice. Stir; strain into Cocktail glass and serve.",
+      "method_es": "Fill large Bar glass    full Shaved Ice. Stir; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BUSTER BROWN COCKTAIL\n      Fill large Bar glass    full Shaved Ice.\n      1 teaspoonful Gum Syrup.\n      2 dashes Lemon Juice.\n      2 dashes Orange Bitters.\n      1 jigger Whiskey.\n      Stir; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-047",
+      "order": 47,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "BUTTERED RUM",
+      "name_es": "BUTTERED RUM",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of butter about the size of a walnut",
+          "item_es": "of butter about the size of a walnut",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Grate Nutmeg on top and serve.",
+      "method_es": "Grate Nutmeg on top and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BUTTERED RUM\n      In a Tumbler drop 1 lump of Sugar and dissolve it In a\n    little hot Water, and add:\n           jiggers Rum.\n      1 piece of Butter about the size of a Walnut.\n      Grate Nutmeg on top and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-048",
+      "order": 48,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "CALIFORNIA SHERRY COBBLER",
+      "name_es": "CALIFORNIA SHERRY COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of pineapple syrup in large bar glass",
+          "item_es": "of pineapple syrup in large bar glass",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with Shaved Ice; stir well; decorate with Fruit;",
+      "method_es": "Fill glass with Shaved Ice; stir well; decorate with Fruit;",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CALIFORNIA SHERRY COBBLER\n    1 pony of Pineapple Syrup in large Bar glass.\n      2 jiggers California Sherry.\n      Fill glass with Shaved Ice; stir well; decorate with Fruit;\n    dash a little Port Wine on top and serve with Straws."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-049",
+      "order": 49,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "CAUFORNIA WINE COBBLER",
+      "name_es": "CAUFORNIA WINE COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "old bourbon whiskey",
+          "item_es": "old bourbon whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tall, thin glass nearly full Shaved Ice. Stir; ornament with Fruit and serve with Straws. Use a large Mixing glass; fill with Lump Ice. Drop squeezed Lime in glass. Fill with Sweet Soda. Stir well and serve.",
+      "method_es": "Fill tall, thin glass nearly full Shaved Ice. Stir; ornament with Fruit and serve with Straws. Use a large Mixing glass; fill with Lump Ice. Drop squeezed Lime in glass. Fill with Sweet Soda. Stir well and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CAUFORNIA WINE COBBLER\n      Fill tall, thin glass nearly full Shaved Ice.\n      1 heaping teaspoonful Bar Sugar.\n     Juice of 1 Orange.\n     2M jiggers California Wine.\n     Stir; ornament with Fruit and serve with Straws.\n\nCARLETON RICKEY—St. Louis Style\n      Use a large Mixing glass; fill with Lump Ice.\n      Juice I Lime.\n      Drop squeezed Lime in glass.\n      1 jigger Old Bourbon Whiskey.\n      Fill with Sweet Soda.\n      Stir well and serve.\n\n                              121]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-050",
+      "order": 50,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "CATAWBA COBBLER",
+      "name_es": "CATAWBA COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar dissolved in a little water",
+          "item_es": "bar sugar dissolved in a little water",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass  full of Shaved Ice. Fill with Shaved Ice; stir well; decorate with Berries and serve with Straws.",
+      "method_es": "Fill large Bar glass  full of Shaved Ice. Fill with Shaved Ice; stir well; decorate with Berries and serve with Straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CATAWBA COBBLER\n     Fill large Bar glass  full of Shaved Ice.\n     1 teaspoonful Bar Sugar dissolved in a little Water,\n         jiggers Catawba Wine,\n        slice of Orange.\n     Fill with Shaved Ice; stir well; decorate with Berries and\n   serve with Straws."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-051",
+      "order": 51,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "CELERY SOUR",
+      "name_es": "CELERY SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "celery bitters",
+          "item_es": "celery bitters",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass full Shaved Ice. Stir; strain into Fancy Wineglass with Fruit and serve. Fill glass Pitcher ^ full Cracked Ice. Stir well and serve in Punch glasses.",
+      "method_es": "Fill large Bar glass full Shaved Ice. Stir; strain into Fancy Wineglass with Fruit and serve. Fill glass Pitcher ^ full Cracked Ice. Stir well and serve in Punch glasses.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CELERY SOUR\n     Fill large Bar glass full Shaved Ice.\n    1 teaspoonful Lemon Juice.\n    1 teaspoonlul Pineapple Syrup.\n    1 teaspoonful Celery Bitters.\n     Stir; strain into Fancy Wineglass with Fruit and serve.\n\nCENTURY CLUB PUNCH (for a party of 5)\n     Fill glass Pitcher ^ full Cracked Ice.\n    ^ pint Jamaica Rum.\n      pint Santa Cruz Rum.\n    21/2 pints aerated Water.\n    23^ tablespoonfuls Bar Sugar.\n    Stir well and serve in Punch glasses."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-052",
+      "order": 52,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE",
+      "name_es": "CHAMPAGNE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Serve off the Ice very cold. Ice should never be put in",
+      "method_es": "Serve off the Ice very cold. Ice should never be put in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE\n     Serve off the Ice very cold. Ice should never be put in\n   the Wine.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-053",
+      "order": 53,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "CHAMPAGNE COBBLER",
+      "name_es": "CHAMPAGNE COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar in large bar glass",
+          "item_es": "bar sugar in large bar glass",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass Yi full Shaved Ice and fill up with Champagne.",
+      "method_es": "Fill glass Yi full Shaved Ice and fill up with Champagne.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE COBBLER\n     1 teaspoonful Bar Sugar in large Bar glass.\n     1 slice Lemon Peel.\n     1 slice Orange Peel.\n     Fill glass Yi full Shaved Ice and fill up with Champagne.\n   Decorate with Fruit and serve with Straws.\n                            [22]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-054",
+      "order": 54,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE COCKTAIL",
+      "name_es": "CHAMPAGNE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar in tall, thin glass",
+          "item_es": "sugar in tall, thin glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "twisted lemon peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up with Champagne. Stir and serve. Stir well and allow mixture to stand three hours. Strain Stir well; decorate with Fruit; float slices of Grape Fruit",
+      "method_es": "Fill up with Champagne. Stir and serve. Stir well and allow mixture to stand three hours. Strain Stir well; decorate with Fruit; float slices of Grape Fruit",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE COCKTAIL\n     1 lump Sugar in tall, thin glass.\n     1 small piece Ice.\n     2 dashes Angostura Bitters.\n     1 piece twisted Lemon Peel.\n     Fill up with Champagne.\n     Stir and serve.\n\n\n\nCHAMPAGNE CUP (2-ganon mixture)\n     For mixing use a large Punch bowl or other suitable\n  vessel of glass or porcelain lined.\n    4 Oranges, sliced.\n    4 Lemons, sliced.\n     H Pineapple, sliced.\n    ^ pint Chartreuse.\n    H pint Abricontine.\n    1 pint Curacoa.\n    1 pint Cognac Brandy.\n    1 pint Tokay Wine.\n    Stir well and allow mixture to stand three hours. Strain\n  into another bowl and add:\n    3 quarts Champagne.\n    3 pints Apollinaris Water.\n    1 large piece of Ice.\n    Stir well; decorate with Fruit; float slices of Grape Fruit\n  on top and serve in Champagne glasses."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-055",
+      "order": 55,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE FRAPPE",
+      "name_es": "CHAMPAGNE FRAPPE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE FRAPPE\n    Place a bottle in a Champagne cooler and around It a\n  freezing mixture of fine Ice and Salt. Twirl the bottle until\n  it is about to freeze, when It will be ready to serve.\n                            [23]",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-056",
+      "order": 56,
+      "section_title": "Drinks",
+      "category": "julep",
+      "name_original": "CHAMPAGNE JULEP",
+      "name_es": "CHAMPAGNE JULEP",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "strawberry syrup",
+          "item_es": "strawberry syrup",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill medium size Shell glass       full Cracked Ice. Pour Champagne slowly into the glass, stirring gently at Dress with fruit; dash with Brandy and serve with Straws. Stir with Ladle and drop in:",
+      "method_es": "Fill medium size Shell glass       full Cracked Ice. Pour Champagne slowly into the glass, stirring gently at Dress with fruit; dash with Brandy and serve with Straws. Stir with Ladle and drop in:",
+      "glassware": "the glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE JULEP\n   Fill medium size Shell glass       full Cracked Ice.\n     2 teaspoonfuls Bar Sugar.\n     2 sprigs bruised Mint.\n      Pour Champagne slowly into the glass, stirring gently at\n    the same time.\n      Dress with fruit; dash with Brandy and serve with Straws.\n\nCHAMPAGNE PUNCH (for a party of 6)\n      Into a glass Pitcher poor the Juice of 1 Lemon, and add:\n      14 lb. Bar Sugar.\n      1 jigger Strawberry Syrup.\n      1 quart bottle Champagne.\n      Stir with Ladle and drop in:\n      1 sliced Orange.\n      3 slices Pineapple.\n      Decorate with Fruit and serve in Champagne goblets."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-057",
+      "order": 57,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "CHAMPAGNE SOUR",
+      "name_es": "CHAMPAGNE SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill medium Bar glass ^ full Shaved Ice. Fill up with Champagne. Stir gently; dress with Fruit and Berries; dash with",
+      "method_es": "Fill medium Bar glass ^ full Shaved Ice. Fill up with Champagne. Stir gently; dress with Fruit and Berries; dash with",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE SOUR\n      Fill medium Bar glass ^ full Shaved Ice.\n      3 dashes Lemon Juice.\n      Fill up with Champagne.\n      Stir gently; dress with Fruit and Berries; dash with\n    Brandy and serve with Straws."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-058",
+      "order": 58,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE VELVET",
+      "name_es": "CHAMPAGNE VELVET",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill Goblet K full ice-cold Champagne. Fill up balance of",
+      "method_es": "Fill Goblet K full ice-cold Champagne. Fill up balance of",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE VELVET\n   Fill Goblet K full ice-cold Champagne. Fill up balance of\n    Goblet with ice-cold Porter. Stir and serve.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-059",
+      "order": 59,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "CHOCOLATE PUNCH",
+      "name_es": "CHOCOLATE PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Fill up with Milk; shake well; strain into Punch glass; grate Nutmeg on top and serve.",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Fill up with Milk; shake well; strain into Punch glass; grate Nutmeg on top and serve.",
+      "glassware": "punch glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHOCOLATE PUNCH\n   Fill large Bar glass % full Shaved Ice.\n^     1 teaspoonful Bar Sugar.\n      M jigger Curacoa.\n      1 jigger Port Wine. ,\n      1 Egg.\n      Fill up with Milk; shake well; strain into Punch glass;\n    grate Nutmeg on top and serve.\n                              124 1"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-060",
+      "order": 60,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CIDER EGGNOG",
+      "name_es": "CIDER EGGNOG",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up with Sweet Cider. Shake; strain into tall, thin glass and serve with grated",
+      "method_es": "Fill up with Sweet Cider. Shake; strain into tall, thin glass and serve with grated",
+      "glassware": "tall, thin glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CIDER EGGNOG\n     Into a large Bar glass break a fresh Egg.\n     1 teaspoonful Sugar.\n     4 lumps Cracked Ice.\n     Fill up with Sweet Cider.\n     Shake; strain into tall, thin glass and serve with grated\n   Nutmeg on top."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-061",
+      "order": 61,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CLARET AND ICE",
+      "name_es": "CLARET AND ICE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill up with Claret and serve.",
+      "method_es": "Fill up with Claret and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLARET AND ICE\n     4 lumps Ice in medium size Mineral Water glass.\n     Fill up with Claret and serve.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-062",
+      "order": 62,
+      "section_title": "Drinks",
+      "category": "cobbler",
+      "name_original": "CLARET COBBLER",
+      "name_es": "CLARET COBBLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapples",
+          "item_es": "pineapples",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "egg broken in",
+          "item_es": "egg broken in",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up with Shaved Ice and serve with Straws. Mix well with a Ladle and set aside for three hours before use add 3 pints of some sparkling Wine, preferably Cham Fill large Bar glass H full Shaved Ice. Shake thoroughly; strain into Pnnch glass; sprinkle with Fill large Bar glass ^ full Shaved Ice. Shake; strain into thin glass; dress with Fruit and serve Stir well. Serve from the bowl into Punch glasses with a Ladle,",
+      "method_es": "Fill up with Shaved Ice and serve with Straws. Mix well with a Ladle and set aside for three hours before use add 3 pints of some sparkling Wine, preferably Cham Fill large Bar glass H full Shaved Ice. Shake thoroughly; strain into Pnnch glass; sprinkle with Fill large Bar glass ^ full Shaved Ice. Shake; strain into thin glass; dress with Fruit and serve Stir well. Serve from the bowl into Punch glasses with a Ladle,",
+      "glassware": "pnnch glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLARET COBBLER\n     Dissolve one teaspoonful of Sugar with little Water in\n   large Bar glass.\n     1 quartered slice Orange.\n     2 jiggers Claret.\n     Fill up with Shaved Ice and serve with Straws.\nCLARET CUP (2-gaIloii mixture)\n     For mixing use a large Punch bowl or other suitable\n   vessel of glass or porcelain lined.\n     6 Oranges, sliced.\n     3 Lemons, sliced.\n     2 Pineapples.\n     2 jiggers Abricontine.\n     4 jiggers Curacoa.\n     4 quarts Claret.\n     3 pints ApoIIinaris.\n     Mix well with a Ladle and set aside for three hours before\n   using. Then strain into another bowl, and when ready to\n   use add 3 pints of some sparkling Wine, preferably Cham\n   pagne. Stir gently once or twice, and then put in a block\n   of clear Ice and decorate the top of it tastily with Fruits\n   and let several slices of Grape Fruit float around in the\n   bowl. Serve in Champagne glasses.\n                              125]\n[•'\n\n\n\n\n      CLlVRET FLIP\n           Fill large Bar glass H full Shaved Ice.\n           2 heaping teaspoonfuls Bar Sugar dissolved in a little\n         Water.\n           1 whole Egg broken in.\n               jiggers Claret Wine.\n           Shake thoroughly; strain into Pnnch glass; sprinkle with\n         Nutmeg on top and serve.\n\n      CLARET PUNCH\n           Fill large Bar glass ^ full Shaved Ice.\n           3 teaspoonfuls Bar Sugar.\n           4 dashes Lemon Juice.\n           2 slices Orange.\n           2 jiggers Claret.\n           Shake; strain into thin glass; dress with Fruit and serve\n         with Straws.\n\n      CLARET PUNCH (5-gaIlon mixture for a large recep\n       tion or party of 100 people)\n           For mixing use a large agate or porcelain-lined vessel.\n           4 lbs. Cut Loaf Sugar.\n           Juice of 25 Lemons.\n           2 quarts Brandy.\n           10 quarts Claret.\n           7 jiggers Chartreuse (green).\n           8 quarts Carbonated Water.\n           Stir well.\n           Place a large block of Ice in a Punch bowl and fill nearly\n         full of the mixture, adding:\n           18 Oranges, cut in slices.\n           IM cans sliced Pineapples.\n           Serve from the bowl into Punch glasses with a Ladle,\n         and renew the contents of the bowl from the mixing vessel\n         as needed.\n\n                                    [20]\n                                                       v\n\n                                                       \\"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-063",
+      "order": 63,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB COCKTAIL",
+      "name_es": "CLOVER CLUB COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill large Bar glass ^ full Fine Ice. Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Fill large Bar glass ^ full Fine Ice. Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB COCKTAIL\n    Fill large Bar glass ^ full Fine Ice.\n       pony Raspberry Syrup,\n      jigger Dry Gin.\n      jigger French Vermouth.\n    White of 1 Egg.\n    Shake well; strain into Cocktail glass and serve.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-064",
+      "order": 64,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CLOVER LEAF COCKTAIL",
+      "name_es": "CLOVER LEAF COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sir robert burnette's old tom gin",
+          "item_es": "sir robert burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill Mixing glass with Lump Ice. Shake well and strain into a Cocktail glass.",
+      "method_es": "Fill Mixing glass with Lump Ice. Shake well and strain into a Cocktail glass.",
+      "glassware": "a cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER LEAF COCKTAIL\n    Fill Mixing glass with Lump Ice.\n    H pony Cnsenier Grenadine.\n    The white of one Egg.\n    1 jigger Sir Robert Burnette's Old Tom Gin.\n    Shake well and strain into a Cocktail glass."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-065",
+      "order": 65,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CLUB COCKTAIL",
+      "name_es": "CLUB COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple syrup",
+          "item_es": "jarabe de piña",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ full Shaved Ice. Stir; strain into Cocktail glass; dress with Berries: dash",
+      "method_es": "Fill large Bar glass ^ full Shaved Ice. Stir; strain into Cocktail glass; dress with Berries: dash",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLUB COCKTAIL\n    Fill large Bar glass ^ full Shaved Ice.\n    2 dashes Angostura Bitters.\n    2 dashes Pineapple Syrup.\n    1 jigger Brandy.\n    Stir; strain into Cocktail glass; dress with Berries: dash\n  with Champagne; twist a piece of Lemon Skin over the\n  drink and drop it on top. Serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-066",
+      "order": 66,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "CLUB HOUSE CLARET PUNCH",
+      "name_es": "CLUB HOUSE CLARET PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum sjrrup",
+          "item_es": "gum sjrrup",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "green chartreuse",
+          "item_es": "Chartreuse verde",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ full Shaved Ice. Shake; strain into tall, thin gla-s; fill up with Apollinaris strain in the mixture from the Mixing bowl. Dress the Ice",
+      "method_es": "Fill large Bar glass ^ full Shaved Ice. Shake; strain into tall, thin gla-s; fill up with Apollinaris strain in the mixture from the Mixing bowl. Dress the Ice",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLUB HOUSE CLARET PUNCH\n    Fill large Bar glass ^ full Shaved Ice.\n    4 dashes Gum Sjrrup.\n    1 teaspoonful Lemon Juice.\n    1 teaspoonful Orange Juice.\n    2 jiggers Claret.\n    Shake; strain into tall, thin gla-s; fill up with Apollinaris\n  or Seltzer; dress with Fruit and serve.\n                            127]\n                                                                 1\n                                                                 \\i\n\n\nCLUB HOUSE PUNCH (for a party of 20)\n     For mixing nse a large Punch bowl.\n     H can Peaches,\n        can Pineapples.\n     3 Oranges, sliced.\n     3 Lemons, sliced.\n     3 quarts Sweet Catawba or Tokay.\n     1 pint Brandy.\n     IK jiggers Jamaica Rum.\n     1 jigger Green Chartreuse.\n     Set this mixture aside in ice box for 6 hours. Then place\n   block of Ice in another bowl of sufficient capacity and\n   strain in the mixture from the Mixing bowl. Dress the Ice\n   with Fruit and serve with a Ladle into Punch glasses."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-067",
+      "order": 67,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COFFEE COCKTAIL",
+      "name_es": "COFFEE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Shake; strain into medium thin glass; grate Nutmeg on",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Shake; strain into medium thin glass; grate Nutmeg on",
+      "glassware": "medium thin glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COFFEE COCKTAIL\n     Fill large Bar glass % full Shaved Ice.\n    .1 fresh Egg.\n     1 teaspoonful Bar Sugar.\n     1 jigger Port Wine.\n     1 pony Brandy.\n     Shake; strain into medium thin glass; grate Nutmeg on\n   top and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-068",
+      "order": 68,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "COHASSET PUNCH",
+      "name_es": "COHASSET PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "new england rum",
+          "item_es": "new england rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermut",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass K full Shaved Ice. Stir and serve with a Preserved Peach and its Uquor.",
+      "method_es": "Fill large Bar glass K full Shaved Ice. Stir and serve with a Preserved Peach and its Uquor.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COHASSET PUNCH\n     Fill large Bar glass K full Shaved Ice.\n     1 jigger New England Rum.\n     1 jigger Vermouth\n     3 dashes Gum Syrup.\n     1 dash Orange Bitters.\n     K juice of a Lemon.\n     Stir and serve with a Preserved Peach and its Uquor.\n                           1281\nCOLD RUBY PUNCH (2M-gaMon mixture for 50\n  people)\n     4 lbs. Cut Loaf Sugar.\n     2 quarts Port Wine.\n     2 quarts Batavia Arrack.\n     6 quarts green Tea.\n     Juice of 24 Lemons.\n     (See instructions for mixing and serving Punches in\n   quantities.)"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-069",
+      "order": 69,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COLUMBIA SKIN",
+      "name_es": "COLUMBIA SKIN",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COLUMBIA SKIN\n     This drink is identical with Whiskey Skin.\n\n\nCOMPANION PUNCH (2j^-gaIIon mixture for a\n reception or party of 50 people)\n    Into a large Punch bowl pour:\n    IM pints Lemon Juice.\n    2 pints Gum Syrup.\n    % pint Orange Juice.\n    Xyi pints Brandy.\n    6 quarts equal parts Sweet and Dry Catawba.\n    2 quarts Carbonated Water.\n    When well stirred place large block of Ice in center of\n  bowl; dress the Ice with Fruit and serve with a Ladle into\n  Punch glasses.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-070",
+      "order": 70,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "CONTINENTAL SOUR",
+      "name_es": "CONTINENTAL SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of whiskey, brandy or gin, as preferred",
+          "item_es": "of whiskey, brandy or gin, as preferred",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a large Bar glass % full Shaved Ice. Shake; strain into Sour glass; dash with Claret and serve.",
+      "method_es": "Fill a large Bar glass % full Shaved Ice. Shake; strain into Sour glass; dash with Claret and serve.",
+      "glassware": "sour glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CONTINENTAL SOUR\n    Fill a large Bar glass % full Shaved Ice.\n    1 teaspoonfnl Bar Sugar dissolved in little Water.\n    Juice of      Lemon.\n    1 jigger of Whiskey, Brandy or Gin, as preferred.\n    Shake; strain into Sour glass; dash with Claret and serve.\n                           [291\n                                                                  •iN"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-071",
+      "order": 71,
+      "section_title": "Drinks",
+      "category": "other",
+      "name_original": "CORDIAL LEMONADE",
+      "name_es": "CORDIAL LEMONADE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Add to a plain Lemonade H jigger of any Cordial which",
+      "method_es": "Add to a plain Lemonade H jigger of any Cordial which",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CORDIAL LEMONADE\n      Add to a plain Lemonade H jigger of any Cordial which\n    the customer may prefer, and serve.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-072",
+      "order": 72,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COUNTRY COCKTAIL",
+      "name_es": "COUNTRY COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Shake well; strain into thin glass; grate Nutmeg on top",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Shake well; strain into thin glass; grate Nutmeg on top",
+      "glassware": "thin glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COUNTRY COCKTAIL\n      Fill large Bar glass % full Shaved Ice.\n      1 teaspoonful Bar Sugar.\n      1 pony Brandy.\n      1 jigger Port Wine.\n      1 Egg.\n      Shake well; strain into thin glass; grate Nutmeg on top\n    and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-073",
+      "order": 73,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COUPEREE",
+      "name_es": "COUPEREE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "red curacoa",
+          "item_es": "red curacoa",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Ice Cream. Mix thoroughly with a spoon. Fill up with Plain Soda; grate Nutmeg on top and serve.",
+      "method_es": "Fill large Bar glass % full Ice Cream. Mix thoroughly with a spoon. Fill up with Plain Soda; grate Nutmeg on top and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COUPEREE\n    Fill large Bar glass % full Ice Cream.\n      M jigger Brandy.\n      1 pony Red Curacoa.\n      Mix thoroughly with a spoon.\n      Fill up with Plain Soda; grate Nutmeg on top and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-074",
+      "order": 74,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CREME DE MENTHE",
+      "name_es": "CREME DE MENTHE",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a Sherry glass with Shaved Ice. Stir well; pack the bowl in Fine Ice, and when cold serve",
+      "method_es": "Fill a Sherry glass with Shaved Ice. Stir well; pack the bowl in Fine Ice, and when cold serve",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CREME DE MENTHE\n      Fill a Sherry glass with Shaved Ice.\n      1 pony Creme de Menthe.\n      Cut Straw in two pieces^^and serve.\nCRIMEAN CUP A LA MARMORA (for a party of 10)\n      Into a small Punch bowl pour:\n      1 pint Orgeat Syrup.\n      2jiggers Jamaica Rum.\n      2jiggers Maraschino.\n          jiggers Brandy.\n      2 tablespoonfuls Bar Sugar.\n      1 quart Champagne.\n      1 quart Plain Soda.\n      Stir well; pack the bowl in Fine Ice, and when cold serve\n    in fancy Stem glasses.\n                              30 ]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-075",
+      "order": 75,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "COUNTRY CLUB PUNCH",
+      "name_es": "COUNTRY CLUB PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bed curacoa",
+          "item_es": "bed curacoa",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "put the Sugar thus prepared into a large porcelain-lined or Stir thoroughly with oak paddle or large silver ladle, and add: Mix well with oak paddle or ladle and strain into another pour in 6 quarts Champagne. Decorate the Ice with Fruits,",
+      "method_es": "put the Sugar thus prepared into a large porcelain-lined or Stir thoroughly with oak paddle or large silver ladle, and add: Mix well with oak paddle or ladle and strain into another pour in 6 quarts Champagne. Decorate the Ice with Fruits,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COUNTRY CLUB PUNCH\n    Take     lbs. of Cut Loaf Sugar and rub the lumps on\n  the skins of 4 Lemons and 2 Oranges until the Sugar\n  becomes well saturated with the oil from the skins.   Then\n  put the Sugar thus prepared into a large porcelain-lined or\n  agate Mixing vessel, and add:\n    12 Oranges, sliced.\n    1 Pineapple, sliced.\n    1 box Strawberries.\n    2 bottles (quarts) ApoUinaris Water.\n    Stir thoroughly with oak paddle or large silver ladle, and\n  add:\n    1 jigger Benedictine.\n    1 jigger Bed Curacoa.\n    1 jigger Maraschino.\n    M jigger Jamaica Bum.\n    1 quart Brandy.\n    4 quarts Tokay or Sweet Catawba Wine.\n    2 quarts Madeira Wine.\n    4 quarts Chateau Margaux.\n    Mix well with oak paddle or ladle and strain into another\n  bowl in which has been placed a block of clear ice. Then\n  pour in 6 quarts Champagne. Decorate the Ice with Fruits,\n  Berries, etc. Serve in Punch cups or glasses, dressing each\n  glass with Fruit and Berries from the bowl."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-076",
+      "order": 76,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "COOPERSTOWN COCKTAIL",
+      "name_es": "COOPERSTOWN COCKTAIL",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use a large Bar glass. Fill with Lump Ice. Shake ingredients well together. Strain and serve in Cocktail glass.",
+      "method_es": "Use a large Bar glass. Fill with Lump Ice. Shake ingredients well together. Strain and serve in Cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COOPERSTOWN COCKTAIL\n   Use a large Bar glass.\n   Fill with Lump Ice.\n   One jigger of Sir Bobert Bumette's Old Tom Gin.\n   ^ pony of Italian Vermouth.\n    Six leaves of fresh Mint.\n   Shake ingredients well together.\n   Strain and serve in Cocktail glass.\n                           [31]",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-077",
+      "order": 77,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "CURACOA",
+      "name_es": "CURACOA",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "drop 6 ounces of Orange Peel sliced very thin, and add 1 pint mixture back into the cleaned bottle and let it stand 3 days, pour a teacupful of the mixture into a mortar and beat up",
+      "method_es": "drop 6 ounces of Orange Peel sliced very thin, and add 1 pint mixture back into the cleaned bottle and let it stand 3 days, pour a teacupful of the mixture into a mortar and beat up",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CURACOA\n    Into a bottle which will hold a full quart, or a little over,\n    drop 6 ounces of Orange Peel sliced very thin, and add 1 pint\n    of \"Whiskey. Cork the bottle securely and let it stand two\n    weeks, shaking the bottle frequently during that time.\n    Next strain the mixture, add the Syrup, pour the strained\n    mixture back into the cleaned bottle and let it stand 3 days,\n    shaking well now and then during the first day. Next,\n    pour a teacupful of the mixture into a mortar and beat up\n    with it 1 drachm Powdered Alum, 1 drachm Carbonate of\n    Potash. Put this mixture back into the bottle and let it\n    stand for 10 days, at the expiration of which time the\n    Curacoa will be clear and ready for use.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-078",
+      "order": 78,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "CURACOA PUNCH",
+      "name_es": "CURACOA PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "red curacoa",
+          "item_es": "red curacoa",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica ginger",
+          "item_es": "jamaica ginger",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "milk and cream",
+          "item_es": "milk and cream",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "ginebra Old Tom",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "h apricot brandy",
+          "item_es": "h apricot brandy",
+          "amount": "7",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Stir; decorate with Fruit and Serve with Straws. Fill large Bar glass with Shaved Ice. Shake; strain into Cocktail glass and serve. Grate Nutmeg on top and serve. Add to a plain Whiskey Cocktail: Fill large Bar glass % full Shaved Ice. Shake thoroughly: strain into tall, thin glass; cover the Use a large Midng glass; fill with Shaved Ice. Shake well; strain into thin Stem glass and serve.",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Stir; decorate with Fruit and Serve with Straws. Fill large Bar glass with Shaved Ice. Shake; strain into Cocktail glass and serve. Grate Nutmeg on top and serve. Add to a plain Whiskey Cocktail: Fill large Bar glass % full Shaved Ice. Shake thoroughly: strain into tall, thin glass; cover the Use a large Midng glass; fill with Shaved Ice. Shake well; strain into thin Stem glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CURACOA PUNCH\n      Fill large Bar glass % full Shaved Ice.\n      2 teaspoonfuls Bar Sugar.\n      4 dashes Lemon Juice.\n       1 pony Red Curacoa.\n       1 jigger Brandy.\n          pony Jamaica Rum.\n       Stir; decorate with Fruit and Serve with Straws.\n\nCURRANT SHRUB\n   For mixing use a porcelain-lined or agate vessel,and putin:\n   IH lbs. Cut Loaf Sugar.\n       1 quart Currant Juice\n      Place vessel on the fire and let it boil slowly for 10 minutes,\n    and skim well while boiling. Then remove vessel from\n    fire and add      gill of Brandy to every pint of Shrub. Bottle\n    and cork securely. This drink is served by simply pouring\n    a little of the Syrup into Ice Water, as any drink from Fruit\n    Syrup is prepared: The basis preparation for all Shrubs or\n    Small Fruits, such as Cherries, Raspberries, etc., is pre\n     pared in the same way as directed for Currant Shrub,\n     varying the quantity of Sugar used to suit the kind of Fruit.\n                               [32]\n    DERONDA COCKTAIL\n            Fill large Bar glass with Shaved Ice.\n            114 jiggers Calisaya.\n            1}/2 jiggers Plymouth Gin.\n            Shake; strain into Cocktail glass and serve.\n\n    DIARRHEA DRAUGHT\n            Into a Whiskey glass pour:\n            H jigger Blackberry Brandy.\n            ^ pony Peach Brandy.\n            2 dashes Jamaica Ginger.\n            Grate Nutmeg on top and serve.\n\n/       DIXIE COCKTAIL\n            Add to a plain Whiskey Cocktail:\n            1 dash Curacoa.\n            6 drops Creme de Menthe.\n\n        DREAM\n            Fill large Bar glass % full Shaved Ice.\n            1 teaspoonful Bar Sugar.\n            3 dashes Lemon Juice.\n            1 white of an Egg.\n            1 Wineglass Milk and Cream.\n            1 jigger Tom Gin.\n            Shake thoroughly: strain into tall, thin glass; cover the\n          top lightly vrith Creme de Menthe and serve.\n\n    DELUSION\n            Use a large Midng glass; fill with Shaved Ice.\n            ^ Lime Juice.\n    ,       % white Creme de Menthe.\n7           H Apricot Brandy.\n            Shake well; strain into thin Stem glass and serve.\n                                   [33 1"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-079",
+      "order": 79,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "DORAY PUNCH",
+      "name_es": "DORAY PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapple syrup",
+          "item_es": "jarabe de piña",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "14",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Shake hard; strain into thin Bar glass; dress with Fruit;",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Shake hard; strain into thin Bar glass; dress with Fruit;",
+      "glassware": "thin bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DORAY PUNCH\n    Fill large Bar glass % full Shaved Ice.\n    2 teaspoonfuls Lemon Juice.\n    4 dashes Pineapple Syrup.\n    4 dashes Gum Syrup.\n    H jigger Jamaica Rum.\n    H jigger green Chartreuse.\n    14. jigger Tokay Wine.\n    14 jigger Brandy.\n    1 white of an Egg.\n    Shake hard; strain into thin Bar glass; dress with Fruit;\n  dash with Seltzer; grate Nutmeg on top and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-080",
+      "order": 80,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "DORAY SOUR",
+      "name_es": "DORAY SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anricontine or green chartreuse",
+          "item_es": "anricontine or green chartreuse",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Stir well and strain into a fancy Sour glass; dress with",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Stir well and strain into a fancy Sour glass; dress with",
+      "glassware": "a fancy sour glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DORAY SOUR\n    Fill large Bar glass % full Shaved Ice.\n    3 dashes Gum Syrup.\n    4 dashes Lemon Juice.\n    1 dash Lime Juice.\n    1 teaspoonful Anricontine or green Chartreuse.\n    M jigger Tokay or Sweet Catawba Wine.\n    }4 jigger Brandy.\n    Stir well and strain into a fancy Sour glass; dress with\n  Fruits; dash with Apolllnaris or Seltzer; top off with a little\n  Claret and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-081",
+      "order": 81,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "DUPLEX COCKTAIL",
+      "name_es": "DUPLEX COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "acid phosphate",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass with Shaved Ice. Shake; strain into Cocktail glass and serve.",
+      "method_es": "Fill large Bar glass with Shaved Ice. Shake; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DUPLEX COCKTAIL\n    Fill large Bar glass with Shaved Ice.\n    H jigger Old Tom Gin.\n    1 pony Italian Vermouth.\n    1 pony French Vermouth.\n    3 dashes Acid Phosphate.\n    4 dashes Orange Bitters.\n    Shake; strain into Cocktail glass and serve.\n                             134 I"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-082",
+      "order": 82,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "DURKEE COCKTAIL",
+      "name_es": "DURKEE COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass % full Shaved Ice. Shake well; strain into tall, thin glass; fill up with Plain",
+      "method_es": "Fill large Bar glass % full Shaved Ice. Shake well; strain into tall, thin glass; fill up with Plain",
+      "glassware": "tall, thin glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DURKEE COCKTAIL\n      Fill large Bar glass % full Shaved Ice.\n      1 tablespoonful Bar Sugar.\n      4 dashes Lemon Juice.\n      3 dashes Curacoa.\n      1 jigger Jamaica Rum.\n      Shake well; strain into tall, thin glass; fill up with Plain\n    Soda; stir gently and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-083",
+      "order": 83,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "EAGLE PUNCH",
+      "name_es": "EAGLE PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cut loaf sugar and dissolve in little hot water",
+          "item_es": "cut loaf sugar and dissolve in little hot water",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up with boiling Water; twist a piece of Lemon Peel",
+      "method_es": "Fill up with boiling Water; twist a piece of Lemon Peel",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EAGLE PUNCH\n    Into a Hot Water glass drop:\n      1 lump Cut Loaf Sugar and dissolve In little Hot Water,\n    crushing with muddler.\n      y2 jigger Bourbon Whiskey.\n         jigger Rye Whiskey.\n      Fill up with boiling Water; twist a piece of Lemon Peel\n    and grate Nutmeg on top and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-084",
+      "order": 84,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "EAST INDIA COCKTAIL",
+      "name_es": "EAST INDIA COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "red curacoa",
+          "item_es": "red curacoa",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ full Shaved Ice. Stir well; strain into Cocktail glass and serve with a",
+      "method_es": "Fill large Bar glass ^ full Shaved Ice. Stir well; strain into Cocktail glass and serve with a",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EAST INDIA COCKTAIL\n    Fill large Bar glass ^ full Shaved Ice.\n      3 dashes Maraschino.\n      3 dashes Red Curacoa.\n      3 dashes Angostura Bitters.\n      1 jigger Brandy.\n      Stir well; strain into Cocktail glass and serve with a\n    piece of twisted Lemon Peel on top."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-085",
+      "order": 85,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "EGG MILK PUNCH",
+      "name_es": "EGG MILK PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "santa cruz rum",
+          "item_es": "santa cruz rum",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "egg",
+          "item_es": "huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass M full Shaved Ice. Fill up with Milk; shake thoroughly until the mixture Fill large Bar glass Yz full Shaved Ice. Fill up with Milk; shake thoroughly; strain into tall, thin mixture pour: Mix the ingredients well by stirring. Then pour in the Shake well; grate Nutmeg on top and serve with Straw.",
+      "method_es": "Fill large Bar glass M full Shaved Ice. Fill up with Milk; shake thoroughly until the mixture Fill large Bar glass Yz full Shaved Ice. Fill up with Milk; shake thoroughly; strain into tall, thin mixture pour: Mix the ingredients well by stirring. Then pour in the Shake well; grate Nutmeg on top and serve with Straw.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EGG MILK PUNCH\n      Fill large Bar glass M full Shaved Ice.\n      2 teaspoonfuls Bar Sugar.\n      1 Egg\n      1 pony Santa Cruz Rum.\n      1 jigger Brandy.\n      Fill up with Milk; shake thoroughly until the mixture\n    creams; strain into tall thin glass; grate Nutmeg on top\n    and serve.\n                              135 1\n         EGGNOG\n                Fill large Bar glass Yz full Shaved Ice.\n                1 Egg\n                1 teaspoonful Bar Sugar.\n                ^ jigger Brandy.\n                M jigger Jamaica Rum.\n                Fill up with Milk; shake thoroughly; strain into tall, thin\n              glass and serve with little Nutmeg grated on top.\n\n\n         EGGNOG (bowl of 3 gallons)\n                Beat the yolks of 20 Eggs until thin and stir in 2^ lbs.\n              Bar Sugar until Sugar is thoroughly dissolved. Into this\n              mixture pour:\n                V/2 pints Jamaica Rum.\n                2 quarts old Brandy.\n                Mix the ingredients well by stirring. Then pour in the\n              milk slowly, stirring all the while to prevent curdling. Pour\n              carefully over the top of the mixture the whites of the\n              Eggs, which have been beaten to a stiff froth. Fill Punch\n              glasses from the bowl with ladle and sprinkle a little\n              Nutmeg over each glassful.\n\n\n         EGG SOUR\n         Into small Bar glass drop:\n                3 lumps Ice.\n                1 tablespoonful Bar Sugar.\n                1 Egg.\n                Juice of 1 Lemon.\n                Shake well; grate Nutmeg on top and serve with Straw.\n                                       [36]\n\n\n\n\nI.,   -..AH"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-086",
+      "order": 86,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "EL DORADO PUNCH",
+      "name_es": "EL DORADO PUNCH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass nearly full Shaved Ice. Shake; dress with Fruit and serve with Straws.",
+      "method_es": "Fill large Bar glass nearly full Shaved Ice. Shake; dress with Fruit and serve with Straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EL DORADO PUNCH\n    Fill large Bar glass nearly full Shaved Ice.\n    1 tablespoonful Bar Sugar.\n         jigger Whiskey.\n    M jigger Jamaica Rum.\n    M jigger Brandy.\n    1 slice Lemon.\n    Shake; dress with Fruit and serve with Straws."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-087",
+      "order": 87,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "ENGLISH BISHOP PUNCH",
+      "name_es": "ENGLISH BISHOP PUNCH",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "pour in 1 quart of hot Port Wine. Add 6 lumps Cut Loaf",
+      "method_es": "pour in 1 quart of hot Port Wine. Add 6 lumps Cut Loaf",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ENGLISH BISHOP PUNCH\n    Roast an Orange before a fire or in a hot oven. When\n  brown cut it in quarters and drop the pieces, with a few\n  Cloves, into a small porcelain-lined or agate vessel, and\n  pour in 1 quart of hot Port Wine. Add 6 lumps Cut Loaf\n  Sugar and let the mixture simmer over the fire for 30\n  minutes. Serve in Stem glasses with Nutmeg grated on\n  top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-088",
+      "order": 88,
+      "section_title": "Drinks",
+      "category": "smash",
+      "name_original": "FANCY WHISKEY SMASH",
+      "name_es": "FANCY WHISKEY SMASH",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ full Shaved Ice. Stir well; strain into Sour glass; dress with Fruit and serve.",
+      "method_es": "Fill large Bar glass ^ full Shaved Ice. Stir well; strain into Sour glass; dress with Fruit and serve.",
+      "glassware": "sour glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FANCY WHISKEY SMASH\n    Fill large Bar glass ^ full Shaved Ice.\n    2 teaspoonfuls Bar Sugar.\n    3 sprigs Mint pressed with muddler in 1 jigger aerated\n  Water.\n    1 jigger Whiskey.\n    Stir well; strain into Sour glass; dress with Fruit and\n  serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-089",
+      "order": 89,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "FANNIE WARD",
+      "name_es": "FANNIE WARD",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "imported grenadine",
+          "item_es": "imported grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Mixing glass with Lump Ice. Shake and strain into Cocktail glass.",
+      "method_es": "Use a large Mixing glass with Lump Ice. Shake and strain into Cocktail glass.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FANNIE WARD\n    Use a large Mixing glass with Lump Ice.\n    White of on Egg.\n    Juice }/2 Lime.\n    2 dashes imported Grenadine.\n    1 jigger Bacardi Rum.\n    Shake and strain into Cocktail glass.\n                            i37 1"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-090",
+      "order": 90,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "FEDORA",
+      "name_es": "FEDORA",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "burnette's old tom gin",
+          "item_es": "burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "old tom gin",
+          "item_es": "ginebra Old Tom",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "fresh cream",
+          "item_es": "fresh cream",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill large Bar glass ^ ftdl Shaved Ice. Shake well; dress with Fruit and serve with Straws. Stir well; ladle into Punch glass and serve. Use a large Mixing glass; fill with Lump Ice. Stir well; strain into tall, thin glass and fill with imported Use Shaker. Shake well, serve in Cocktail glass.",
+      "method_es": "Fill large Bar glass ^ ftdl Shaved Ice. Shake well; dress with Fruit and serve with Straws. Stir well; ladle into Punch glass and serve. Use a large Mixing glass; fill with Lump Ice. Stir well; strain into tall, thin glass and fill with imported Use Shaker. Shake well, serve in Cocktail glass.",
+      "glassware": "punch glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FEDORA\n     Fill large Bar glass ^ ftdl Shaved Ice.\n     2 teaspoonfuls Bar Sugar dissolved In little Water.\n     1 pony Curacoa.\n     1 pony Brandy.\n     M pony Jamaica Rum.\n     M pony Whiskey.\n     Shake well; dress with Fruit and serve with Straws.\n\nFISH CLUB PUNCH (for a party of 8)\n     Into a Punch bowl pour:\n        jiggers Lemon Juicei\n    4 Jiggers Peach Brandy.\n    2 jiggers Cognac Brandy.\n    2jiggers Jamaica Rum.\n    3 pints Ice Water.\n    Stir well; ladle into Punch glass and serve.\n\nFOG HORN—Country Club Style\n     Use a large Mixing glass; fill with Lump Ice.\n    M Lime Juice.\n    H Lemon Juice.\n    1 teaspoonful Bar Sugar.\n    1 jigger Burnette's Old Tom Gin.\n    Stir well; strain into tall, thin glass and fill with imported\n   Ginger Ale.\n\nFREE LOVE COCKTAIL—Club Style\n    Lump Ice.\n     Use Shaker.\n     H of the white of 1 Egg.\n    3 dashes Anisette.\n    1 jigger Old Tom Gin.\n    1 pony fresh Cream.\n    Shake well, serve in Cocktail glass.\n                             138"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-091",
+      "order": 91,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "FRENCH POUSSE CAFE",
+      "name_es": "FRENCH POUSSE CAFE",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill a P6usse Cafe glass ^ full of Maraschino and add: Stir well; ladle into Stem glasses, and decorate each Use a large Mixing glass with Lump of Ice. Fill with Seltzer Water. Stir; ornament with Fruit and serve with Straws.",
+      "method_es": "Fill a P6usse Cafe glass ^ full of Maraschino and add: Stir well; ladle into Stem glasses, and decorate each Use a large Mixing glass with Lump of Ice. Fill with Seltzer Water. Stir; ornament with Fruit and serve with Straws.",
+      "glassware": "stem glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FRENCH POUSSE CAFE\n     Fill a P6usse Cafe glass ^ full of Maraschino and add:\n   Raspberry Syrup, Vanilla, Curacoa, Chartreuse and Brandy\n   In equal proportions until the glass is flUed. Then proceed\n   as for Abricontine Pousse Cafe.\n\n\nGARDEN PUNCH (23^-gaUon mixture for a party of\n.50)\n     Place a good size block of Ice In a large Punch bowl.\n     4 jiggers Lemon Juice.\n         lbs. Bar Sugar.\n     2 jiggers Orange Juice.\n         jiggers green Chartreuse.\n     1 quart Brandy.\n     6 quarts Tokay or Sweet Catawba Wine.\n     2 quarts Claret Wine.\n     Stir well; ladle into Stem glasses, and decorate each\n   glass with Fruit before serving.\n\nG. O. P.\n    Use a large Mixing glass with Lump of Ice.\n    2 jiggers of Orange Juice.\n    2 jiggers of Grape Fruit Juice.\n     Fill with Seltzer Water.\n     Stir; ornament with Fruit and serve with Straws.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-092",
+      "order": 92,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "GIBSON COCKTAIL",
+      "name_es": "GIBSON COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "cusenier grenadine",
+          "item_es": "cusenier grenadine",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "sir robert burnette's old tom gin",
+          "item_es": "sir robert burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "burnette's old tom gin",
+          "item_es": "burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon joice",
+          "item_es": "lemon joice",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "rock candy syrup",
+          "item_es": "rock candy syrup",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "burnette's old tom gin",
+          "item_es": "burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Mixing glass with Lump Ice. Stir; strain and serve in Cocktail glass. Use a large Mixing glass; fill with Lump Ice. Stir well and strain into Cocktail glass. Put H oz. of Calamus Root, which has been steeped, into Serve as you would a Straight Drink. Serve in a Mug with Lump Ice; fill with Seltzer. Stir well and decorate with the skin of the Lime and Use a large Mixing glass. Fill with Lump Ice. Shake well; strain into Cocktail glass and serve. Use a large glass Stein; fill with Lump Ice. Fill with Seltzer: stir well and serve. Use a large glass Pitcher; fill with Lump Ice. Stir well and serve in a Beer glass.",
+      "method_es": "Use a large Mixing glass with Lump Ice. Stir; strain and serve in Cocktail glass. Use a large Mixing glass; fill with Lump Ice. Stir well and strain into Cocktail glass. Put H oz. of Calamus Root, which has been steeped, into Serve as you would a Straight Drink. Serve in a Mug with Lump Ice; fill with Seltzer. Stir well and decorate with the skin of the Lime and Use a large Mixing glass. Fill with Lump Ice. Shake well; strain into Cocktail glass and serve. Use a large glass Stein; fill with Lump Ice. Fill with Seltzer: stir well and serve. Use a large glass Pitcher; fill with Lump Ice. Stir well and serve in a Beer glass.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIBSON COCKTAIL\n     Use a large Mixing glass with Lump Ice.\n     1 jigger Gordon Gin.\n     1 pony French Vermouth.\n     Stir; strain and serve in Cocktail glass.\n                             [39 1\n    GILLETTE COCKTAIL—Chicago Style\n        Use a large Mixing glass; fill with Lump Ice.\n        Juice ]/^ Lime.\n            jiggers Burnette's Old Tom Gin.\n           teaspoonful Bar Sugar.\n        Stir well and strain into Cocktail glass.\n\n\n    GIN AND CALAMUS\n\n        Put H oz. of Calamus Root, which has been steeped, into\n      a quart bottle of Gin.\n        Serve as you would a Straight Drink.\n\n\n^ GIN DAISY\n        Juice of    of a Lime.\n        1 pony Cusenier Grenadine.\n        1 jigger Sir Robert Burnette's Old Tom Gin.\n        Serve in a Mug with Lump Ice; fill with Seltzer.\n        Stir well and decorate with the skin of the Lime and\n      fresh Mint and serve with Straws.\n\n\n\n    GIN SOUR—Country Club Style\n        Use a large Mixing glass.\n        Fill with Lump Ice.\n           Lime Juice.\n           Orange Juice.\n        2 dashes Pineapple Juice.\n        A pony Rock Candy Syrup.\n        1 jigger Burnette's Old Tom Gin.\n        Shake well; strain into Cocktail glass and serve.\n                                 1401\nGIN SQUASH—Country Club Style\n    Use a large glass Stein; fill with Lump Ice.\n    1 pony Lemon Joice.\n    1 jigger Orange Juice.\n    1 pony Pineapple Juice.\n    1 pony Rock Candy Syrup.\n    1 jigger Burnette's Old Tom Gin.\n    Fill with Seltzer: stir well and serve.\n\nGOLFER'S DELIGHT—Home of Bevo—18th Hole.\n    Use a large glass Pitcher; fill with Lump Ice.\n    2 bottles Bevo.\n    2 bottles Sweet Soda.\n    Stir well and serve in a Beer glass.\n    Fifty-fifty."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-093",
+      "order": 93,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "HORSE THIEF COCKTAIL",
+      "name_es": "HORSE THIEF COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "green absinthe",
+          "item_es": "green absinthe",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sir robert burnette's old tom gin",
+          "item_es": "sir robert burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "imported grenadine",
+          "item_es": "imported grenadine",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "old bushmill whiskey",
+          "item_es": "old bushmill whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a large Mixing glass with Lump Ice. Stir well and serve in a Cocktail glass.' Use a tall, thin glass; fill with Cracked Ice. Fill with Seltzer. Stir well and serve.",
+      "method_es": "Fill a large Mixing glass with Lump Ice. Stir well and serve in a Cocktail glass.' Use a tall, thin glass; fill with Cracked Ice. Fill with Seltzer. Stir well and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HORSE THIEF COCKTAIL\n    Fill a large Mixing glass with Lump Ice.\n    2 dashes green Absinthe.\n       pony Italian Vermouth.\n    1 jigger Sir Robert Burnette's Old Tom Gin.\n    Stir well and serve in a Cocktail glass.'\n\nIRISH ROSE—Country Club Style\n    Use a tall, thin glass; fill with Cracked Ice.\n    1 pony imported Grenadine.\n    1 jigger Old Bushmill Whiskey.\n    Fill with Seltzer.\n    Stir well and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-094",
+      "order": 94,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "JERSEY LIGHTNING COCKTAIL",
+      "name_es": "JERSEY LIGHTNING COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "of sir robert bumette's old tom gin",
+          "item_es": "of sir robert bumette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use large Mixing glass; fill with Lump Ice. Stir well; strain and serve in Cocktail glass. Use a small stone Mug;Lump Ice. Fill with Champagne. Stir well; dress with fresh Mint and serve. Use a large Mixing glass. Fill with Lump Ice. Stir well and strain into a Cocktail glass. Add a Fickeled Onion and serve. Use a large Punch bowl with one Lump of Ice. Pour in mixture; add one quart of Cook's Imperial Cham Stir well; decorate with fresh Mint, Fruit In season, and serve.",
+      "method_es": "Use large Mixing glass; fill with Lump Ice. Stir well; strain and serve in Cocktail glass. Use a small stone Mug;Lump Ice. Fill with Champagne. Stir well; dress with fresh Mint and serve. Use a large Mixing glass. Fill with Lump Ice. Stir well and strain into a Cocktail glass. Add a Fickeled Onion and serve. Use a large Punch bowl with one Lump of Ice. Pour in mixture; add one quart of Cook's Imperial Cham Stir well; decorate with fresh Mint, Fruit In season, and serve.",
+      "glassware": "a cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JERSEY LIGHTNING COCKTAIL\n    Use large Mixing glass; fill with Lump Ice.\n    I jigger Apple Jack Brandy.\n    1 pony Italian Vermouth.\n    Stir well; strain and serve in Cocktail glass.\n                            [ 41 1\n    / /\n\nKNABENSCHUE—Country Club Style\n    Use a small stone Mug;Lump Ice.\n    1 lump Sugar.\n    2 dashes Angostura Bitters.\n    Fill with Champagne.\n    Stir well; dress with fresh Mint and serve.\n\nL. P. W.\n    Use a large Mixing glass.\n    Fill with Lump Ice.\n    1 jigger of Sir Robert Bumette's Old Tom Gin.\n       pony of Italian Vermouth,\n       pony of French Vermouth.\n    Stir well and strain into a Cocktail glass.\n    Add a Fickeled Onion and serve.\n\nLADIES* DELIGHT—Thursday Luncheon Punch\n    1 quart of Orange Pekoe Tea (cold).\n    1 quart of Old Country Club Brandy.\n    1 pint of Lemon Juice.\n    1 pint of Orange Juice.\n    3^ pint of Pineapple Juice.\n    2 quarts Berncastler Berg.\n    1 pint of Bar Sugar.\n     Use a large Punch bowl with one Lump of Ice.\n    Pour in mixture; add one quart of Cook's Imperial Cham\n   pagne.\n     Stir well; decorate with fresh Mint, Fruit In season, and\n   serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-095",
+      "order": 95,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "LEAPING FROG",
+      "name_es": "LEAPING FROG",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bar sugar",
+          "item_es": "azúcar de bar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "burnette's old tom gin",
+          "item_es": "burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with Lump Ice. Shake well and strain into Stem gla^. Fill large Mixing glass % full fine Ice.        \\ Fill up with Apollinaris or suitable Carbonated Water. Stir; strain into Lemonade glass; dress with Fruit and serve. Use a large Mixing glass; fill with Lump Ice. Shake well; serve in Cocktail glass. Use a large Silver Mug. Fill mug with Fine Ice. Stir well; add one boquet of Mint and serve. Use a large Mixing glass; fill vrith Lump Ice. Shake well; pour into tall, thin glass; add one bottle",
+      "method_es": "Fill glass with Lump Ice. Shake well and strain into Stem gla^. Fill large Mixing glass % full fine Ice.        \\ Fill up with Apollinaris or suitable Carbonated Water. Stir; strain into Lemonade glass; dress with Fruit and serve. Use a large Mixing glass; fill with Lump Ice. Shake well; serve in Cocktail glass. Use a large Silver Mug. Fill mug with Fine Ice. Stir well; add one boquet of Mint and serve. Use a large Mixing glass; fill vrith Lump Ice. Shake well; pour into tall, thin glass; add one bottle",
+      "glassware": "lemonade glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LEAPING FROG\n     I jigger Hungarian Apricot Brandy.\n     Juice of H Lime.\n     Fill glass with Lump Ice.\n     Shake well and strain into Stem gla^.\n                             142]\n   LEMONADE APOLLINARIS (or Carbonated Water)\n        Fill large Mixing glass % full fine Ice.        \\\n        1 tablespoonful Bar Sugar.\n        Juice of 1 Lemon.\n        Fill up with Apollinaris or suitable Carbonated Water.\n        Stir; strain into Lemonade glass; dress with Fruit and\n      serve.\n\n\n\n\n   LONE TREE COCKTAIL\n        Use a large Mixing glass; fill with Lump Ice.\n        1 jigger Burnette's Old Tom Gin.\n        }i Italian Vermouth.\n           French Vermouth.\n        Shake well; serve in Cocktail glass.\n\n\n   MINT JULEP—Kentucky Style\n        Use a large Silver Mug.\n        Dissolve one lump of Sugar in one-half pony of Water.\n       Fill mug with Fine Ice.\n       Two jiggers of Old Bourbon Whiskey.\n       Stir well; add one boquet of Mint and serve.\n       Be careful and not bruise the Mint.\n\n\n^ OVERALL JULEP~St. Louis Style\n       Use a large Mixing glass; fill vrith Lump Ice.\n       % Wineglass Rye Whiskey.\n       ^ Wineglass Gordon Gin.\n       ^ Wineglass Imported Grenadine.\n       Juice H Lemon.\n       Juice Yi Lime.\n       Shake well; pour into tall, thin glass; add one bottle\n     Imported Club Soda and serve.\n                               (43)"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-096",
+      "order": 96,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "ONION COCKTAIL",
+      "name_es": "ONION COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of bnrnette's tom gin",
+          "item_es": "of bnrnette's tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Strain and serve with an Onion.",
+      "method_es": "Strain and serve with an Onion.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ONION COCKTAIL\n   1 jigger of Bnrnette's Tom Gin.\n      of Italian Vermouth and no Bitters used.\n   Large Bar glass with Cracked Ice and stir well.\n   Strain and serve with an Onion."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-097",
+      "order": 97,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "OLD FASHION COCKTAIL",
+      "name_es": "OLD FASHION COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of ice",
+          "item_es": "of ice",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "of angostura bitters",
+          "item_es": "of angostura bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "of sugar and dissolve in water",
+          "item_es": "of sugar and dissolve in water",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a Toddy glass. Stir well and serve.",
+      "method_es": "Use a Toddy glass. Stir well and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OLD FASHION COCKTAIL\n   Use a Toddy glass.\n   1 lump of Ice.\n   2 dashes of Angostura Bitters.\n   1 lump of Sugar and dissolve in Water.\n   1/^ jiggers of Bourbon Whiskey.\n   Twist piece of Lemon Skin over the drink and drop it in.\n   Stir well and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-098",
+      "order": 98,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "OJEN COCKTAIL",
+      "name_es": "OJEN COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "of seltzer water",
+          "item_es": "of seltzer water",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use an old-fashion Toddy glass. Stir well and serve.",
+      "method_es": "Use an old-fashion Toddy glass. Stir well and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OJEN COCKTAIL\n   Use an old-fashion Toddy glass.\n   1 lump Ice.\n    Juice of H of a Lime.\n   1 dash Angostura Bitters.\n   2 dashes of Seltzer Water.\n   Stir well and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-099",
+      "order": 99,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "PEQUOT SEMER",
+      "name_es": "PEQUOT SEMER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cusinier grenadine",
+          "item_es": "cusinier grenadine",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "of sir robert burnette's old tom gin",
+          "item_es": "of sir robert burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "cusenier grenadine",
+          "item_es": "cusenier grenadine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sir robert burnette's old tom gin",
+          "item_es": "sir robert burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sir robert burnette's old tom gin",
+          "item_es": "sir robert burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemons",
+          "item_es": "lemons",
+          "amount": "10",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange water",
+          "item_es": "orange water",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "burnette's old tom gin",
+          "item_es": "burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "seltzer water",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a tall, thin Bar glass. Use a tall, thin glass. Stir well and serve. Pour in Pousse Cafe glass as follows: Strain through a Sieve into a bowl and add by degrees the Shake well; strain into Highball glass and serve.",
+      "method_es": "Use a tall, thin Bar glass. Use a tall, thin glass. Stir well and serve. Pour in Pousse Cafe glass as follows: Strain through a Sieve into a bowl and add by degrees the Shake well; strain into Highball glass and serve.",
+      "glassware": "highball glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PEQUOT SEMER\n    Use a tall, thin Bar glass.\n    Juice of a Lime.\n    Three sprigs of fresh Mint.\n    1 dash Cusinier Grenadine.\n    Yz pony Pineapple Juice.\n    Yi pony Orange Juice.\n    1 jigger of Sir Robert Burnette's Old Tom Gin.\n    Crush ingredients together; fill with Lump Ice; add\n  Seltzer. Stir well and serve.\n\n                            I 44 ]\nPINEAPPLE JULEP (for a party of 6—Use a small\n   punch bow!)\n       1 quart of Sparkling Moselle.\n      1 jigger Cusenier Grenadine.\n      1 jigger Maraschino.\n      1 jigger Sir Robert Burnette's Old Tom Gin.\n      1 jigger Lemon Juice.\n      1 jigger Orange Bitters.\n      1 jigger Angostura Bitters.\n      4 Oranges, sliced.\n      2 Lemons, sliced.\n      1 ripe Pineapple, sliced and quartered.\n      4 tablespoonfuls Sugar.\n      1 bottle ApoIIinaris Water.\n      Place large square of Ice in bowl; dress with the Fruits\n    and serve Julep in fancy Stem glass.\n\nPOLO PLAYERS' DELIGHT—Horse's Neck\n      Use a tall, thin glass.\n      1 lump Ice.\n      1 jigger Sir Robert Burnette's Old Tom Gin.\n      1 Cantrell & Cochran's Ginger Ale.\n      Stir well and serve.\n\nPOUSSE CAFE—St. Louis\n    Pour in Pousse Cafe glass as follows:\n      1/6 glass Raspberry Syrup.\n      1/6 glass Maraschino.\n      1/6 glass Green Vanilla.\n      1/6 glass Curacao.\n      1/6 glass Yellow Chartreuse.\n      1/6 glass Brandy.\n      In preparing the above use a small Wineglass with spoon\n    for pouring in each Cordial separately.\n      Be careful they do not mix together.\n                                [451\nPUNCH A LA ROMAINE (for a party of 16)\n    1 bottle Champagne.\n    1 bottle Rum.\n    2 tablespoons Dr. Siegert's genuine Angostura Bitters.\n    10 Lemons.\n    3 sweet Oranges.\n    2 pounds Powdered Sugar.\n    10 fresh Eggs.\n     Dissolve the Sugar in the Juice of the Lemons and\n   Oranges adding the Rind of 1 Orange.\n     Strain through a Sieve into a bowl and add by degrees the\n   whites of the Eggs beaten to a froth.\n    Place the bowl on Ice till cold, then stir In the Rum and\n   Wine until thoroughly mixed. Serve in fancy Stem glasses.\n\nRAMOS GIN FIZZ—Country Club Style\n     1 lump Ice.\n     1 dash Lemon Juice.\n     1 dash Orange Water.\n     White of Egg.\n     1 jigger Burnette's Old Tom Gin.\n     1 teaspoonful Powdered Sugar.\n     1 pony Milk.\n     1 dash Seltzer Water.\n     Shake well; strain into Highball glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-100",
+      "order": 100,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "REMSEN COOLER",
+      "name_es": "REMSEN COOLER",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of remsen scotch whiskey",
+          "item_es": "of remsen scotch whiskey",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "burnette's old tom gin",
+          "item_es": "burnette's old tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "imported grenadine",
+          "item_es": "imported grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a medium size Fizz glass. Fill up the balance with Club Soda; stir up slowly with a Use a large Mixing glass; fill with Lump Ice. Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Use a medium size Fizz glass. Fill up the balance with Club Soda; stir up slowly with a Use a large Mixing glass; fill with Lump Ice. Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "REMSEN COOLER\n     Use a medium size Fizz glass.\n     Peel a Lemon as you would an Apple.\n     Place the Rind or Peeling into the Fizz glass.\n     2 or 3 lumps of Crystal Ice.\n     1 Wineglass of Remsen Scotch Whiskey.\n     Fill up the balance with Club Soda; stir up slowly with a\n   spoon and serve.\n                             [46 ]\n     In this country it is often the case that people call a Rem-\n   sen Cooler where they want Old Tom Gin or Sloe Gin\n   instead of Scotch Whiskey. It is therefore the bartender's\n   duty to mix as desired.\n\n\nSEPTEMBER MORN COCKTAIL—Country Club\n  Style\n     Use a large Mixing glass; fill with Lump Ice.\n        Lime Juice.\n     1 jigger Burnette's Old Tom Gin.\n     2 dashes Imported Grenadine.\n     Shake well; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-101",
+      "order": 101,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SHANDY GAFF",
+      "name_es": "SHANDY GAFF",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use a large Bar glass. Fill half the glass with Porter and half with Ginger Ale.",
+      "method_es": "Use a large Bar glass. Fill half the glass with Porter and half with Ginger Ale.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHANDY GAFF\n     Use a large Bar glass.\n     Fill half the glass with Porter and half with Ginger Ale.\n     It is also made with half Ale and half Ginger Ale.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-102",
+      "order": 102,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SHERRY AND BITTERS",
+      "name_es": "SHERRY AND BITTERS",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "old brandy",
+          "item_es": "old brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "white creme de menthe",
+          "item_es": "white creme de menthe",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Put 2 dashes Dr. Siegert's genuine Angostura Bitters in a Fill the glass with Sherry and serve. Use a large Mixing glass; fill with Lump Ice. Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Put 2 dashes Dr. Siegert's genuine Angostura Bitters in a Fill the glass with Sherry and serve. Use a large Mixing glass; fill with Lump Ice. Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY AND BITTERS\n     Put 2 dashes Dr. Siegert's genuine Angostura Bitters in a\n   Sherry glass and roll the glass 'till the Bitters entirely cover\n  the inside surface.\n     Fill the glass with Sherry and serve.\n\n\nSTINGER—Country Club Style\n     Use a large Mixing glass; fill with Lump Ice.\n     1 jigger Old Brandy.\n     1 pony white Creme de Menthe.\n     Shake well; strain into Cocktail glass and serve.\n                              147 1"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-103",
+      "order": 103,
+      "section_title": "Drinks",
+      "category": "sour",
+      "name_original": "STONE SOUR",
+      "name_es": "STONE SOUR",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rock candy syrup",
+          "item_es": "rock candy syrup",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "old tom gin",
+          "item_es": "ginebra Old Tom",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a tall, thin glass; fill with fine Ice.",
+      "method_es": "Use a tall, thin glass; fill with fine Ice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "STONE SOUR\n    Use a tall, thin glass; fill with fine Ice.\n    H pony Lemon Juice.\n    H pony Orange Juice.\n    2 dashes Rock Candy Syrup.\n    1 jigger Old Tom Gin.\n    Leave in Ice; stir well and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-104",
+      "order": 104,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "SAMTON COCKTAIL",
+      "name_es": "SAMTON COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "imported ginger ale",
+          "item_es": "imported ginger ale",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Mixing glass with Cracked Ice. Shake well; strain into Cocktail glass and serve.",
+      "method_es": "Use a large Mixing glass with Cracked Ice. Shake well; strain into Cocktail glass and serve.",
+      "glassware": "cocktail glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SAMTON COCKTAIL\n    Use a large Mixing glass with Cracked Ice.\n    1 jigger Orange Juice.\n    1 jigger imported Ginger Ale.\n    Fifty-fifty.\n    Shake well; strain into Cocktail glass and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-105",
+      "order": 105,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "TOM TOM",
+      "name_es": "TOM TOM",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "of green creme de menthe and serve",
+          "item_es": "of green creme de menthe and serve",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Brandy Roller glass. Fill RoUer half full of Fine Ice. Add 1 pony of Old Brandy.",
+      "method_es": "Use a large Brandy Roller glass. Fill RoUer half full of Fine Ice. Add 1 pony of Old Brandy.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM TOM\n    Use a large Brandy Roller glass.\n    Fill RoUer half full of Fine Ice.\n    Add 1 pony of Old Brandy.\n    1 jigger of green Creme de Menthe and serve."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-106",
+      "order": 106,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "TOM AND JERRY",
+      "name_es": "TOM AND JERRY",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill Tom and Jerry Mug       full of Batter. Stir well with Bar spoon;fill up with Hot Water; stir more; grate Nutmeg on top and serve.",
+      "method_es": "Fill Tom and Jerry Mug       full of Batter. Stir well with Bar spoon;fill up with Hot Water; stir more; grate Nutmeg on top and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM AND JERRY\n    Make a batter by separating the yolks from whites of a\n  given number of Eggs; beating the whites to a stiff froth\n  and stirring the yolks until very thin. Then mix together\n  in a Tom and Jerry bowl, stirring in Bar Sugar slowly until\n  the batter is stiff and serve as follows:\n    Fill Tom and Jerry Mug       full of Batter.\n    H jigger Rum.\n    H jigger Brandy.\n    Stir well with Bar spoon;fill up with Hot Water; stir more;\n  grate Nutmeg on top and serve.\n                            I 48}",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-107",
+      "order": 107,
+      "section_title": "Drinks",
+      "category": "punch",
+      "name_original": "TOKAY PUNCH",
+      "name_es": "TOKAY PUNCH",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "pour this over the remaining five pounds of Grapes. When drop in the remaining Grapes.",
+      "method_es": "pour this over the remaining five pounds of Grapes. When drop in the remaining Grapes.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOKAY PUNCH\n    Out of 6 pounds of Tokay Grapes, select one pound to\n  be put into the Punch last. Now make a boiling Syrup of\n  three pounds of Sugar and one quart of boiling Water and\n  pour this over the remaining five pounds of Grapes. When\n  partly cold rub it through a sieve, leaving skins and seeds\n  behind. Then add the Juice of two Oranges and two Lem\n  ons and one quart of St. Julien Claret, 1 jigger of Angostura\n  Bitters.\n\n    Then strain and freeze.\n    Before serving add 1 pint of good Brandy and an Italian\n  Meringue Paste of six Egg whites, colored a nice red and\n  drop in the remaining Grapes.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-108",
+      "order": 108,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "TWILIGHT COCKTAIL",
+      "name_es": "TWILIGHT COCKTAIL",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bourbon",
+          "item_es": "bourbon",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large Mixing glass with Lump Ice. Shake well; strain into a Champagne glass; fill with Use a large Mixing glass; fill with Lump Ice. Shake well; strain into Stem glass and serve.",
+      "method_es": "Use a large Mixing glass with Lump Ice. Shake well; strain into a Champagne glass; fill with Use a large Mixing glass; fill with Lump Ice. Shake well; strain into Stem glass and serve.",
+      "glassware": "a champagne glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TWILIGHT COCKTAIL\n    Use a large Mixing glass with Lump Ice.\n    1 jigger Bourbon.\n    3^ pony Italian Vermouth.\n    Juice of whole Lime.\n    Shake well; strain into a Champagne glass; fill with\n  Seltzer and serve.\n\n\n\nWHISKEY PUNCH—St. Louis Style\n    Use a large Mixing glass; fill with Lump Ice.\n    One jigger Bourbon Whiskey.\n    3^ pony Italian Vermouth.\n    3^ pony Pineapple Syrup.\n    3^ pony Lemon Juice.\n    Shake well; strain into Stem glass and serve.\n                            {49 ]"
+    },
+    {
+      "id": "1917-the-ideal-bartender-by-tom-bullock-109",
+      "order": 109,
+      "section_title": "Drinks",
+      "category": "cocktail",
+      "name_original": "WHISKEY SCOTCH HOT",
+      "name_es": "WHISKEY SCOTCH HOT",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar dissolved in hot whiskey glass",
+          "item_es": "sugar dissolved in hot whiskey glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill up with Hot Water. Stir and serve with Nutmeg sprinkled on top.",
+      "method_es": "Fill up with Hot Water. Stir and serve with Nutmeg sprinkled on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY SCOTCH HOT\n     1 lump Sugar dissolved in Hot Whiskey glass.\n     1 jigger Scotch Whiskey.\n     Fill up with Hot Water.\n     1 slice Lemon Peel.\n     Stir and serve with Nutmeg sprinkled on top.\n\n\nWHISKEY IRISH HOT\n     Substitute Irish for Scotch Whiskey and proceed as for\nHot Scotch Whiskey.\n\n\n\n\n                           [ 50 ]\n                       INDEX\n\n                         Pago                             P^e\nAbricontine Pousse Cafe... 7     Bizzy Izzy High Ball       14\nAbsinthe                   7     Black Stripe               14\nAbsinthe, American Service. 7    Black and Tan Punch        14\nAbsinthe Cocktail           7    Blackthorne Cocktail       14\nAbsinthe Frappe             8    Blackthorne Sour           15\nAbsinthe, French Service... 8    Bliz's Royal Rickey        15\nAbsinthe, Italian Service... 8   Blue Blazer                15\nAdmiral Schley High Ball... 8    Boating Punch              15\nAle Flip                    8    Bombay Punch               16\nAle Sangaree                9    Bon Soir (\"Good Night\")..16\nAmerican Pousse Cafe        9    Boston Cooler              16\nApoUinaris Lemonade         9    Bottle of Cocktail         17\nApple Jack Cocktail         9    Brace Up                   17\nApple Jack Fix              9    Brandy and Ginger Ale      17\nApplejack Sour             10    Brandy and Soda            17\n\"Arf-And-Arf\"              10    Brandy Flip                18\nArrack Punch               10    Brandy Float               18\nAstringent                 10    Brandy Julep               18\nAuditorium Cooler          10    Brandy Punch               18\nAll Right Cocktail         11    Brandy ScafTa              19\nBacardi Cocktail          11     Brandy Shake               19\nBacardi Cocktail — Country       Brandy Shrub               19\n  Club Style               H     Brandy Skin                19\nBaldy Cocktail             11    Brandy Sling               19\nBamboo Cocktail            11    Brandy Smash               20\nBlack Cow                  12    Brandy Sour                20\nBlood Hound Cocktail       12    Brandy Toddy               20\nBombay Cocktail            12    Bronx Cocktail             20\nBenedictine                12    Burnt Brandy               20\nBeef Tea                   12    Buster Brown Cocktail      21\nBishop                     13    Buttered Rum               21\nBishop A La Prusse         13    California Sherry Cobbler...21\nBismarck...                13    California Wine Cobbler—21\n                             151]\n                          Page                               Page\nCarleton Rickey—St. Lonls        Cold Ruby Punch (2)/^-gaI-\n  Style                    21       lon mixture for 50 people) 29\nCatawba Cobbler            22    Columbia Skin                 29\nCelery Sour                22\n                                 Companion Punch (2>^-gal-\nCentury Club Punch         22       lon mixtiu-e for a reception\nChampagne                  22       or party o"
+    }
+  ]
+}

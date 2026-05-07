@@ -1,0 +1,2404 @@
+{
+  "book_id": "1933-the-cocktail-book-repeal-edition-new-revised-edition",
+  "metadata": {
+    "title": "The Cocktail Book — A Sideboard Manual for Gentlemen (Repeal Edition)",
+    "author": "Anonymous (issued for The St. Botolph Society)",
+    "year": 1933,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "L.C. Page & Company",
+    "city": "Boston",
+    "edition": "Repeal Edition (New Revised Edition, 1933)",
+    "source_file": "1933 The Cocktail Book Repeal Edition (New Revised Edition).txt",
+    "notes": "Edición revisada post-Repeal de un manual de coctelería 'sideboard for gentlemen'. Open con cita de Lord Byron ('Let us have wine and women, mirth and laughter; sermons and soda-water the day after'). Incluye una sección de 'Recent Favorites' con Bacardi y Daiquirí. Open con un relato narrativo sobre Mistress Peggy del bodegón de Van Eyck (Hudson, NY) y el cocktail original. 64 recetas con custom skeleton + parser word-fraction prose. ~95% (61/64) parseado."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "The Real Tale of the Cocktail",
+      "title_es": "La verdadera historia del cóctel",
+      "content_original": "Edición revisada post-Repeal (1933) de un manual 'sideboard for gentlemen' del St. Botolph Society de Boston. Apertura con cita de Byron. Open con un relato narrativo: 'The Real Tale of the Cocktail' — Mistress Peggy, hija del posadero Van Eyck en Hudson, NY, inventó un brebaje secreto para el clipper-ship navigator Master Appleton, que luego se hizo famoso en toda New York-Albany. Recent Favorites: Bacardi Rum, Daiquirí, Mint Spray, T.N.T., Zelli's Special.",
+      "content_es": "Edición revisada post-Repeal (1933) del St. Botolph Society de Boston. Cita de Byron. Apertura narrativa: Mistress Peggy del bodegón de Van Eyck (Hudson, NY). Recent Favorites: Bacardi, Daiquirí, Mint Spray, T.N.T., Zelli's Special."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Absinthe Cocktail",
+      "name_es": "Absinthe Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. dashes Angostura bitters; two dashes gum syrup; one pony ab sinthe. Fill with ice, mix well, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. dashes Angostura bitters; two dashes gum syrup; one pony ab sinthe. Fill with ice, mix well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe Cocktail.\n                   Use Mixing Glass.\n\n          dashes Angostura bitters; two\n     dashes gum syrup; one pony ab\nsinthe. Fill with ice, mix well, and strain\ninto a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Algonquin Cocktail",
+      "name_es": "Algonquin Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use Mixing Glass. ■p U                                                      ;             p i ll       i .  ill                     i           ic ,      i , i i          c c il l                   . ppl                                  c           il. U        i i           l       . ' '                                   '   i                   ;         p     i ppl                 .       ill i                     ic ,      i , i i          c c          il l .",
+      "method_es": "Use Mixing Glass. ■p U                                                      ;             p i ll       i .  ill                     i           ic ,      i , i i          c c il l                   . ppl                                  c           il. U        i i           l       . ' '                                   '   i                   ;         p     i ppl                 .       ill i                     ic ,      i , i i          c c          il l .",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Algonquin Cocktail.\n                       Use Mixing Glass.\n■p U                                                      ;             p i\n            ll       i .  ill                     i           ic ,      i ,\n      i i          c c il l                   .\n\n                 ppl                                  c           il.\n                       U        i i           l       .\n\n' '                                   '   i                   ;         p     i\n        ppl                 .       ill i                     ic ,      i ,\n      i i          c c          il l .",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Bamboo Cocktail",
+      "name_es": "Bamboo Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. dashes orange bitters; one-half sherry and one-half Italian vermouth. FiU with ice, mix well, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. dashes orange bitters; one-half sherry and one-half Italian vermouth. FiU with ice, mix well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bamboo Cocktail.\n              Use Mixing Glass.\n\n          dashes orange bitters; one-half\n     sherry and one-half Italian vermouth.\nFiU with ice, mix well, and strain into a\ncocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Blackthorn Cocktail",
+      "name_es": "Blackthorn Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. '^'WO dashes orange bitters; two-thirds Sloe gin; one-third Italian vermouth. Fill with ice, mix, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. '^'WO dashes orange bitters; two-thirds Sloe gin; one-third Italian vermouth. Fill with ice, mix, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Blackthorn Cocktail.\n               Use Mixing Glass.\n\n'^'WO dashes orange bitters; two-thirds\n      Sloe gin; one-third Italian vermouth.\nFill with ice, mix, and strain into a cocktail\nglass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Brandy Cocktail",
+      "name_es": "Brandy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french ver mouth",
+          "item_es": "french ver mouth",
+          "amount": "0.167",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "fosfato ácido",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. '^'WO dashes gum syrup; two dashes Boker's bitters; one portion brandy. FiU with ice, mix, and strain into a cock tail glass. m Brandy Gjcktail — Fancy. Use Mixing Glass. '^^HREE dashes maraschino; two dashei Vk Boker's bitters; one dash orange bit ters; one portion brandy. Fill with ice, mix, and strain into a cocktail glass, the rim of which has been moistened with a piece of lemon and dipped in powdered sugar. Brandy Cocktail—Old-fashioned. CRUSH lump of sugar in a whiskey glass with sufficient hot water to cover the sugar. Add one lump of ice; two dashes bitters; a small piece lemon peel; one portion brandy. Stir with small bar spoon. Serve, leaving spoon in glass. Bronx Cocktai!. Use Mixing Glass. '^^0-THIRDS dry gin; one-sixth Ital- ^ ian vermouth; one-sixth French ver mouth; orange juice and orange pulp. Fill with ice, shake well, and strain into a cocktail glass. Brut CocktaiL Use Mixing Glass. '^TIREE dashes orange bitters; one por- tion Italian vermouth; three dashes acid phosphate. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. '^'WO dashes gum syrup; two dashes Boker's bitters; one portion brandy. FiU with ice, mix, and strain into a cock tail glass. m Brandy Gjcktail — Fancy. Use Mixing Glass. '^^HREE dashes maraschino; two dashei Vk Boker's bitters; one dash orange bit ters; one portion brandy. Fill with ice, mix, and strain into a cocktail glass, the rim of which has been moistened with a piece of lemon and dipped in powdered sugar. Brandy Cocktail—Old-fashioned. CRUSH lump of sugar in a whiskey glass with sufficient hot water to cover the sugar. Add one lump of ice; two dashes bitters; a small piece lemon peel; one portion brandy. Stir with small bar spoon. Serve, leaving spoon in glass. Bronx Cocktai!. Use Mixing Glass. '^^0-THIRDS dry gin; one-sixth Ital- ^ ian vermouth; one-sixth French ver mouth; orange juice and orange pulp. Fill with ice, shake well, and strain into a cocktail glass. Brut CocktaiL Use Mixing Glass. '^TIREE dashes orange bitters; one por- tion Italian vermouth; three dashes acid phosphate. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Cocktail.\n              Use Mixing Glass.\n\n'^'WO dashes gum syrup; two dashes\n      Boker's bitters; one portion brandy.\nFiU with ice, mix, and strain into a cock\ntail glass.\n\n\n\n\n                                                 m\n         Brandy Gjcktail — Fancy.\n              Use Mixing Glass.\n\n'^^HREE dashes maraschino; two dashei\n Vk Boker's bitters; one dash orange bit\nters; one portion brandy. Fill with ice,\nmix, and strain into a cocktail glass, the\nrim of which has been moistened with a\npiece of lemon and dipped in powdered\nsugar.\n\n   Brandy Cocktail—Old-fashioned.\nCRUSH lump of sugar in a whiskey glass\n     with sufficient hot water to cover the\nsugar. Add one lump of ice; two dashes\nbitters; a small piece lemon peel; one\nportion brandy. Stir with small bar spoon.\nServe, leaving spoon in glass.\n\n              Bronx Cocktai!.\n              Use Mixing Glass.\n\n'^^0-THIRDS dry gin; one-sixth Ital-\n^ ian vermouth; one-sixth French ver\nmouth; orange juice and orange pulp.\nFill with ice, shake well, and strain into a\ncocktail glass.\n                Brut CocktaiL\n                Use Mixing Glass.\n\n'^TIREE dashes orange bitters; one por-\n     tion Italian vermouth; three dashes\nacid phosphate. Fill with ice, shake well,\nand strain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Calisaya Cocktail",
+      "name_es": "Calisaya Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry wine",
+          "item_es": "jerez",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "calisaya",
+          "item_es": "Calisaya",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. *^^0 dashes orange bitters; one-third sherry wine; two-thirds Calisaya. Fill with ice, stir well, and strain into a cock tail glass. Champagfne Cocktail. Use Long, Thin Glass. ®NE lump cut loaf sugar,saturated with Boker's bitters; one lump ice; one piece lemon peel. Fill glass with cold champagne, stir with spoon, and serve.",
+      "method_es": "Use Mixing Glass. *^^0 dashes orange bitters; one-third sherry wine; two-thirds Calisaya. Fill with ice, stir well, and strain into a cock tail glass. Champagfne Cocktail. Use Long, Thin Glass. ®NE lump cut loaf sugar,saturated with Boker's bitters; one lump ice; one piece lemon peel. Fill glass with cold champagne, stir with spoon, and serve.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Calisaya Cocktail.\n                Use Mixing Glass.\n\n*^^0 dashes orange bitters; one-third\n     sherry wine; two-thirds Calisaya. Fill\nwith ice, stir well, and strain into a cock\ntail glass.\n          Champagfne Cocktail.\n              Use Long, Thin Glass.\n\n®NE lump cut loaf sugar,saturated with\n     Boker's bitters; one lump ice; one\npiece lemon peel. Fill glass with cold\nchampagne, stir with spoon, and serve."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Champagne Cocktail—Fancy",
+      "name_es": "Champagne Cocktail—Fancy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "a pony brandy",
+          "item_es": "a pony brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "a pony port wine",
+          "item_es": "a pony port wine",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ponies cherry brandy",
+          "item_es": "ponies cherry brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ponies blackberry brandy",
+          "item_es": "ponies blackberry brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "S above, adding one slice each of H orange and pineapple. Cholera CocktaiL Use Bar Glass. |ALF a teaspoonful Jamaica ginger; HD 'half a pony brandy; half a pony port wine; one and a half ponies cherry brandy, one and a half ponies blackberry brandy. Grate nutmeg, and stir in with spoon. Use no ice.",
+      "method_es": "S above, adding one slice each of H orange and pineapple. Cholera CocktaiL Use Bar Glass. |ALF a teaspoonful Jamaica ginger; HD 'half a pony brandy; half a pony port wine; one and a half ponies cherry brandy, one and a half ponies blackberry brandy. Grate nutmeg, and stir in with spoon. Use no ice.",
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Cocktail—Fancy.\n    S above, adding one slice each of\nH orange and pineapple.\n            Cholera CocktaiL\n               Use Bar Glass.\n\n   |ALF a teaspoonful Jamaica ginger;\nHD\n 'half a pony brandy; half a pony\nport wine; one and a half ponies cherry\nbrandy, one and a half ponies blackberry\nbrandy. Grate nutmeg, and stir in with\nspoon. Use no ice."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Chocolate Cocktail",
+      "name_es": "Chocolate Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fine sugar",
+          "item_es": "azúcar fino",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ©NE fresh egg; one dash bitters; one portion port wine; one teaspoonful fine sugar. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. ©NE fresh egg; one dash bitters; one portion port wine; one teaspoonful fine sugar. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chocolate Cocktail.\n              Use Mixing Glass.\n\n©NE fresh egg; one dash bitters; one\n      portion port wine; one teaspoonful\nfine sugar. Fill with ice, shake well, and\nstrain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Cider Cocktail",
+      "name_es": "Cider Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lime",
+          "item_es": "lima",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Thin Cider Glass. ©NE lump cut loaf sugar, saturated with Boker's bitters; one lump ice; one small piece lemon peel.         Fill with cold cider, stir with spoon, and serve. II Qover Club CocktaiL Use Mixing Glass. ®NE portion diy gin; juice of one-half lime; white of one egg; tablespoonful Grenadine or strawberry syrup. Fill with ice, shake well, strain into a large cocktail glass, and serve with sprig of mint on top.",
+      "method_es": "Use Thin Cider Glass. ©NE lump cut loaf sugar, saturated with Boker's bitters; one lump ice; one small piece lemon peel.         Fill with cold cider, stir with spoon, and serve. II Qover Club CocktaiL Use Mixing Glass. ®NE portion diy gin; juice of one-half lime; white of one egg; tablespoonful Grenadine or strawberry syrup. Fill with ice, shake well, strain into a large cocktail glass, and serve with sprig of mint on top.",
+      "glassware": "thin cider glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cider Cocktail.\n            Use Thin Cider Glass.\n\n©NE lump cut loaf sugar, saturated with\n      Boker's bitters; one lump ice; one\nsmall piece lemon peel.         Fill with cold\ncider, stir with spoon, and serve.\n\n                      II\n           Qover Club CocktaiL\n               Use Mixing Glass.\n\n ®NE portion diy gin; juice of one-half\n      lime; white of one egg; tablespoonful\nGrenadine or strawberry syrup. Fill with\nice, shake well, strain into a large cocktail\nglass, and serve with sprig of mint on top."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Coffee Cocktail",
+      "name_es": "Coffee Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. /^NE teaspoonful powdered sugar; one fresh egg; one portion port wine; one portion brandy. Fill with ice, shake thor- • oughly, and strain into a large cocktail glass. Grate a little nutmeg on top before serving.",
+      "method_es": "Use Mixing Glass. /^NE teaspoonful powdered sugar; one fresh egg; one portion port wine; one portion brandy. Fill with ice, shake thor- • oughly, and strain into a large cocktail glass. Grate a little nutmeg on top before serving.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Coffee Cocktail.\n              Use Mixing Glass.\n\n/^NE teaspoonful powdered sugar; one\n     fresh egg; one portion port wine; one\nportion brandy. Fill with ice, shake thor- •\noughly, and strain into a large cocktail\nglass. Grate a little nutmeg on top before\nserving."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Cooperstown Cocktail",
+      "name_es": "Cooperstown Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ital- ian vermouth",
+          "item_es": "ital- ian vermouth",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. UlCE of quarter orange; one-third Ital- ian vermouth; two-thirds dry gin; sprig of mint. Fill with ice, shake well, and strain into a cocktail glass. 12",
+      "method_es": "Use Mixing Glass. UlCE of quarter orange; one-third Ital- ian vermouth; two-thirds dry gin; sprig of mint. Fill with ice, shake well, and strain into a cocktail glass. 12",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cooperstown Cocktail.\n              Use Mixing Glass.\n\n   UlCE of quarter orange; one-third Ital-\n     ian vermouth; two-thirds dry gin;\nsprig of mint. Fill with ice, shake well,\nand strain into a cocktail glass.\n\n                     12"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Country Cocktail",
+      "name_es": "Country Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. dashes orange bitters; two dashes ^ Boker's bitters; one piece lemon peel; one portion rye whiskey. Fill with ice, mix well, and strain into a cocktail glass.     « _ _ ''tS . . li-'i",
+      "method_es": "Use Mixing Glass. dashes orange bitters; two dashes ^ Boker's bitters; one piece lemon peel; one portion rye whiskey. Fill with ice, mix well, and strain into a cocktail glass.     « _ _ ''tS . . li-'i",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Country Cocktail.\n              Use Mixing Glass.\n\n         dashes orange bitters; two dashes\n^ Boker's bitters; one piece lemon peel;\none portion rye whiskey. Fill with ice,\nmix well, and strain into a cocktail glass.     « _ _ ''tS\n                                                    . . li-'i"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Deronda Cocktail",
+      "name_es": "Deronda Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "( Use Mixing Glass. ©NE-THIRD Calisaya; two-thirds Plymouth gin. Fill with ice, mix well, and strain into a cocktail glass.",
+      "method_es": "( Use Mixing Glass. ©NE-THIRD Calisaya; two-thirds Plymouth gin. Fill with ice, mix well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Deronda Cocktail.\n                                                         (\n              Use Mixing Glass.\n\n©NE-THIRD Calisaya; two-thirds\n     Plymouth gin. Fill with ice, mix well,\nand strain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Dubonnet Cocktail",
+      "name_es": "Dubonnet Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "du bonnet",
+          "item_es": "du bonnet",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ©NE-THIRD dry gin; two-thirds Du bonnet. Fill with ice, stir well (do not shake), and strain into a cocktail glass. IS",
+      "method_es": "Use Mixing Glass. ©NE-THIRD dry gin; two-thirds Du bonnet. Fill with ice, stir well (do not shake), and strain into a cocktail glass. IS",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dubonnet Cocktail.\n              Use Mixing Glass.\n\n©NE-THIRD dry gin; two-thirds Du\n     bonnet. Fill with ice, stir well (do\nnot shake), and strain into a cocktail glass.\n                     IS"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Duchess Cocktail",
+      "name_es": "Duchess Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ab sinthe",
+          "item_es": "ab sinthe",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french ver mouth",
+          "item_es": "french ver mouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "fosfato ácido",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ©NE-THIRD French vermouth; one- third Italian vermouth; one-third ab sinthe. Fill with ice, shake well, and strain into a cocktail glass. Duplex CocktaiL Use Mixing Glass. ^^HREE dashes orange bitters; one-half Italian vermouth; one-half French ver mouth ; three dashes acid phosphate. Fill with ice, shake well, and strain into a cock tail glass. Florida CocktaiL Use Medium-sized Tumbler. x^ILL glass three-quarters with ice, «|| juice of one lemon and one and a half orange.    Stir with spoon and serve. 14",
+      "method_es": "Use Mixing Glass. ©NE-THIRD French vermouth; one- third Italian vermouth; one-third ab sinthe. Fill with ice, shake well, and strain into a cocktail glass. Duplex CocktaiL Use Mixing Glass. ^^HREE dashes orange bitters; one-half Italian vermouth; one-half French ver mouth ; three dashes acid phosphate. Fill with ice, shake well, and strain into a cock tail glass. Florida CocktaiL Use Medium-sized Tumbler. x^ILL glass three-quarters with ice, «|| juice of one lemon and one and a half orange.    Stir with spoon and serve. 14",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Duchess Cocktail.\n                Use Mixing Glass.\n\n©NE-THIRD French vermouth; one-\n     third Italian vermouth; one-third ab\nsinthe. Fill with ice, shake well, and strain\ninto a cocktail glass.\n\n\n\n               Duplex CocktaiL\n                Use Mixing Glass.\n\n^^HREE dashes orange bitters; one-half\n     Italian vermouth; one-half French ver\nmouth ; three dashes acid phosphate. Fill\nwith ice, shake well, and strain into a cock\ntail glass.\n\n\n               Florida CocktaiL\n         Use Medium-sized Tumbler.\n\nx^ILL glass three-quarters with ice,\n«|| juice of one lemon and one and a\nhalf orange.    Stir with spoon and serve.\n\n\n                      14"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Gaby Cocktail",
+      "name_es": "Gaby Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "crsme d'yvette",
+          "item_es": "crsme d'yvette",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "holland gin",
+          "item_es": "ginebra holandesa",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gum sjnrup",
+          "item_es": "gum sjnrup",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing doss. /^NE-THIRD dry gin; one-third crSme d'Yvette; one-third creme de menthe (white). Fill with ice, shake well, and strain into a cocktail glass. .^1 Gin CocktaiL Use Mixing doss. •/\\ \\Y0 dashes Boker's bitters; two dashes gum sjnrup; one portion Holland gin. Fill with ice, mix, and strain into a cock tail glass. Gin Cocktail — Old Fashioned* tlVUT a lump of sugar in a whiskey glass, IIV and cover it with hot water. Crush the sugar; add lump of ice, two dashes Boker's bitters, smaU piece lemon peel, one portion Holland gin. Mix with small bar snoon, and serve with spoon in glass. IS 1 Gin G)cktail —Old-fashioned Tom, Vn^AKE the same as an Old-fashioned Holland Gin Cocktail, using Tom in the place of Holland gin.",
+      "method_es": "Use Mixing doss. /^NE-THIRD dry gin; one-third crSme d'Yvette; one-third creme de menthe (white). Fill with ice, shake well, and strain into a cocktail glass. .^1 Gin CocktaiL Use Mixing doss. •/\\ \\Y0 dashes Boker's bitters; two dashes gum sjnrup; one portion Holland gin. Fill with ice, mix, and strain into a cock tail glass. Gin Cocktail — Old Fashioned* tlVUT a lump of sugar in a whiskey glass, IIV and cover it with hot water. Crush the sugar; add lump of ice, two dashes Boker's bitters, smaU piece lemon peel, one portion Holland gin. Mix with small bar snoon, and serve with spoon in glass. IS 1 Gin G)cktail —Old-fashioned Tom, Vn^AKE the same as an Old-fashioned Holland Gin Cocktail, using Tom in the place of Holland gin.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gaby Cocktail.\n             Use Mixing doss.\n\n/^NE-THIRD dry gin; one-third crSme\n     d'Yvette; one-third creme de menthe\n(white). Fill with ice, shake well, and\nstrain into a cocktail glass.\n\n                                             .^1\n             Gin CocktaiL\n             Use Mixing doss.\n\n•/\\ \\Y0 dashes Boker's bitters; two dashes\n      gum sjnrup; one portion Holland gin.\nFill with ice, mix, and strain into a cock\ntail glass.\n\n\n    Gin Cocktail — Old Fashioned*\ntlVUT a lump of sugar in a whiskey glass,\nIIV and cover it with hot water. Crush\nthe sugar; add lump of ice, two dashes\nBoker's bitters, smaU piece lemon peel,\none portion Holland gin. Mix with small\nbar snoon, and serve with spoon in glass.\n\n                   IS\n                                                1\n\n  Gin G)cktail —Old-fashioned Tom,\n Vn^AKE the same as an Old-fashioned\n        Holland Gin Cocktail, using Tom\nin the place of Holland gin."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Harvard Cocktail",
+      "name_es": "Harvard Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian ver mouth",
+          "item_es": "italian ver mouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ®NE dash gum syrup; three dashes Boker's bitters; one-half Italian ver mouth ; one-half brandy.       Fill with ice, mix, and strain into a cocktail glass, then fill with seltzer and serve quickly. H. P. W. Cocktail, Use Mixing Glass. ©NE-SIXTH Italian vermouth; one- sixth French vermouth; two-thirds dry gin. Fill with ice, shake well, and strain into a whiskey tumbler. Twist of orange peel dropped into tumbler. i5 ,.A,I",
+      "method_es": "Use Mixing Glass. ®NE dash gum syrup; three dashes Boker's bitters; one-half Italian ver mouth ; one-half brandy.       Fill with ice, mix, and strain into a cocktail glass, then fill with seltzer and serve quickly. H. P. W. Cocktail, Use Mixing Glass. ©NE-SIXTH Italian vermouth; one- sixth French vermouth; two-thirds dry gin. Fill with ice, shake well, and strain into a whiskey tumbler. Twist of orange peel dropped into tumbler. i5 ,.A,I",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Harvard Cocktail.\n              Use Mixing Glass.\n\n®NE dash gum syrup; three dashes\n     Boker's bitters; one-half Italian ver\nmouth ; one-half brandy.       Fill with ice,\nmix, and strain into a cocktail glass, then\nfill with seltzer and serve quickly.\n\n\n           H. P. W. Cocktail,\n              Use Mixing Glass.\n\n©NE-SIXTH Italian vermouth; one-\n     sixth French vermouth; two-thirds\ndry gin. Fill with ice, shake well, and\nstrain into a whiskey tumbler. Twist of\norange peel dropped into tumbler.\n\n                     i5\n\n\n\n\n                                                ,.A,I"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Irish Cocktail",
+      "name_es": "Irish Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. /^NE dash orange bitters; one-third French vermouth; two-thirds creme de menthe (green). Fill with ice, shake well, and strain into a cocktail glass. Jack Rose CocktaiL Use Mixing Glass. /^NE-QUARTER dry gin; three-quar- ters apple brandy; juice of hah-lime; tablespoonful of Grenadine syrup. Fill with ice, shake well, and strain into a large cock tail glass.",
+      "method_es": "Use Mixing Glass. /^NE dash orange bitters; one-third French vermouth; two-thirds creme de menthe (green). Fill with ice, shake well, and strain into a cocktail glass. Jack Rose CocktaiL Use Mixing Glass. /^NE-QUARTER dry gin; three-quar- ters apple brandy; juice of hah-lime; tablespoonful of Grenadine syrup. Fill with ice, shake well, and strain into a large cock tail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Irish Cocktail.\n                Use Mixing Glass.\n\n/^NE dash orange bitters; one-third\n      French vermouth; two-thirds creme\nde menthe (green). Fill with ice, shake\nwell, and strain into a cocktail glass.\n\n              Jack Rose CocktaiL\n                Use Mixing Glass.\n\n/^NE-QUARTER dry gin; three-quar-\n     ters apple brandy; juice of hah-lime;\ntablespoonful of Grenadine syrup. Fill with\nice, shake well, and strain into a large cock\ntail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Jamaica Rum Cocktail",
+      "name_es": "Jamaica Rum Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonfnl fine sugar",
+          "item_es": "teaspoonfnl fine sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. '^'WO dashes gum syrup; two dashes orange bitters; two dashes Boker's bitters; one portion Jamaica rum. Fill with ice, mix, and strain into a cocktail glass. 17 Jersey Gjcfctail. Use Thin Cider Glass. ®NE lump ice; one-half teaspoonfnl fine sugar; two dashes Boker's bitters; one piece lemon peel. FiU up with cold cider. Stir well, and serve while efferves cent. Kemble House GjcktaiL Use Mixing Glass. 'UR dashes Femet-Branca bitters; one- r.quarter French vermouth; three-quar ^ .1 t ters orange gin. Fill with ice,shake well, and strain into a cocktail glass. I- y i):- Lemon G)cktail. Use Mixing Glass. dashes Angostura bitters; two dashes gum syrup; lemon juice. Fill with ice, mix, and strain into a cocktail glass. i8 'jy ')h\\",
+      "method_es": "Use Mixing Glass. '^'WO dashes gum syrup; two dashes orange bitters; two dashes Boker's bitters; one portion Jamaica rum. Fill with ice, mix, and strain into a cocktail glass. 17 Jersey Gjcfctail. Use Thin Cider Glass. ®NE lump ice; one-half teaspoonfnl fine sugar; two dashes Boker's bitters; one piece lemon peel. FiU up with cold cider. Stir well, and serve while efferves cent. Kemble House GjcktaiL Use Mixing Glass. 'UR dashes Femet-Branca bitters; one- r.quarter French vermouth; three-quar ^ .1 t ters orange gin. Fill with ice,shake well, and strain into a cocktail glass. I- y i):- Lemon G)cktail. Use Mixing Glass. dashes Angostura bitters; two dashes gum syrup; lemon juice. Fill with ice, mix, and strain into a cocktail glass. i8 'jy ')h\\",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Jamaica Rum Cocktail.\n                Use Mixing Glass.\n\n'^'WO dashes gum syrup; two dashes\n     orange bitters; two dashes Boker's\nbitters; one portion Jamaica rum. Fill\nwith ice, mix, and strain into a cocktail\nglass.\n\n                       17\n                     Jersey Gjcfctail.\n                     Use Thin Cider Glass.\n\n         ®NE lump ice; one-half teaspoonfnl fine\n             sugar; two dashes Boker's bitters;\n         one piece lemon peel. FiU up with cold\n         cider. Stir well, and serve while efferves\n         cent.\n\n\n\n                  Kemble House GjcktaiL\n                       Use Mixing Glass.\n\n             'UR dashes Femet-Branca bitters; one-\n         r.quarter French vermouth; three-quar\n^ .1 t\n         ters orange gin. Fill with ice,shake well,\n         and strain into a cocktail glass.\n  I- y\n i):-\n                     Lemon G)cktail.\n                       Use Mixing Glass.\n\n                   dashes Angostura bitters; two\n              dashes gum syrup; lemon juice. Fill\n         with ice, mix, and strain into a cocktail\n         glass.\n\n                              i8\n\n\n\n\n                                   'jy\n                                                ')h\\"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Liberal Cocktail",
+      "name_es": "Liberal Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "picon bitters",
+          "item_es": "picon bitters",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. /^NE dash syrup; half Picon bitters; one-half whiskey. Fill with ice, mix, strain into a cocktail glass, and put a small piece of lemon peel on top.",
+      "method_es": "Use Mixing Glass. /^NE dash syrup; half Picon bitters; one-half whiskey. Fill with ice, mix, strain into a cocktail glass, and put a small piece of lemon peel on top.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Liberal Cocktail.\n               Use Mixing Glass.\n\n/^NE dash syrup; half Picon bitters;\n      one-half whiskey. Fill with ice, mix,\nstrain into a cocktail glass, and put a small\npiece of lemon peel on top."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Lone Tree Cocktail",
+      "name_es": "Lone Tree Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "©NE-HALF Italian vermouth; one-half Tom gin. No bitters. Fill with ice, mix, and strain into a cocktail glass.",
+      "method_es": "©NE-HALF Italian vermouth; one-half Tom gin. No bitters. Fill with ice, mix, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lone Tree Cocktail.\n©NE-HALF Italian vermouth; one-half\n     Tom gin. No bitters. Fill with ice,\nmix, and strain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Manhattan Cocktail",
+      "name_es": "Manhattan Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian ver mouth",
+          "item_es": "italian ver mouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. dashes gum syrup; two dashes Boker's bitters; one-half Italian ver mouth ; one-half whiskey. Fill with ice, mix, and strain. Add a small twist of lemon peel. 19 Manhattan Cocktail — Dry. itta^AKE the same as a Manhattan cock* JLlU tail, leaving out the syrup. Manhattan Cocktail—Extra Dry. [I^AKE the same as the dry cocktail, IIJ using French vermouth instead of Italian.",
+      "method_es": "Use Mixing Glass. dashes gum syrup; two dashes Boker's bitters; one-half Italian ver mouth ; one-half whiskey. Fill with ice, mix, and strain. Add a small twist of lemon peel. 19 Manhattan Cocktail — Dry. itta^AKE the same as a Manhattan cock* JLlU tail, leaving out the syrup. Manhattan Cocktail—Extra Dry. [I^AKE the same as the dry cocktail, IIJ using French vermouth instead of Italian.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Manhattan Cocktail.\n               Use Mixing Glass.\n\n          dashes gum syrup; two dashes\n     Boker's bitters; one-half Italian ver\nmouth ; one-half whiskey. Fill with ice,\nmix, and strain. Add a small twist of\nlemon peel.\n\n                      19\n       Manhattan Cocktail — Dry.\n itta^AKE the same as a Manhattan cock*\nJLlU tail, leaving out the syrup.\n\n\n\n\n   Manhattan Cocktail—Extra Dry.\n  [I^AKE the same as the dry cocktail,\n   IIJ using French vermouth instead of\nItalian."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Marguerite Cocktail",
+      "name_es": "Marguerite Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use Mixing Glass. ^T^O-THIRDS Plymouth gin; one- third French vermouth. Fill with ice, shake well, and strain into a cocktail glass. i i            c                    il. w                                   U          i i                   l        . i' \"                                                                         i             ;             - Els ■ '■ VJ \"       i                        i ;                    - i I li ;              ll pi c l                             p l. ill                         i ic ,       i ,                   i i                             c c il l                         . i i            c         il                         . U          i i                   l        . i                    ;              - i i ;               - i                                 c                            ; ll pi c l                      p l.  ill i                                      ic ,       i , i i                     c c il l .                                                           V   '', f                                         c               il. U          i i               l            . p; '           i          ;                 p             i                   f .     ill       i           ic ,           i ,                              i i c c        il l            .",
+      "method_es": "Use Mixing Glass. ^T^O-THIRDS Plymouth gin; one- third French vermouth. Fill with ice, shake well, and strain into a cocktail glass. i i            c                    il. w                                   U          i i                   l        . i' \"                                                                         i             ;             - Els ■ '■ VJ \"       i                        i ;                    - i I li ;              ll pi c l                             p l. ill                         i ic ,       i ,                   i i                             c c il l                         . i i            c         il                         . U          i i                   l        . i                    ;              - i i ;               - i                                 c                            ; ll pi c l                      p l.  ill i                                      ic ,       i , i i                     c c il l .                                                           V   '', f                                         c               il. U          i i               l            . p; '           i          ;                 p             i                   f .     ill       i           ic ,           i ,                              i i c c        il l            .",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Marguerite Cocktail.\n              Use Mixing Glass.\n\n^T^O-THIRDS Plymouth gin; one-\n     third French vermouth. Fill with ice,\nshake well, and strain into a cocktail glass.\n                                              i i            c                    il.\nw                                   U          i i                   l        .\ni'\n         \"                                                                         i             ;             -\nEls\n■\n    '■\n          VJ \"       i                        i ;                    - i I li\n                     ;              ll pi c l                             p l. ill                         i\n         ic ,       i ,                   i i                             c c il l                         .\n\n\n                                        i i            c         il                         .\n                                    U          i i                   l        .\n\n                                                                 i                    ;              - i\n                            i ;               - i                                 c                            ;\n                ll pi c l                      p l.  ill i                                      ic ,       i ,\n                      i i                     c c il l .                                                           V   '',\n\n\n\n\n                                f                                         c               il.\n                                    U          i i               l            .\n\n                                                                         p;\n                            '           i          ;                 p             i                   f\n                .     ill       i           ic ,           i ,                              i i\n         c c        il l            .",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Metropole Cocktail",
+      "name_es": "Metropole Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ■                                                                    p; c                     i              ; i         ;            -      lf   ;                                  -             lf               c .              UI i ic ,                                i ,                               i '             c c              il l . c       il. U                i i             l       . -       I                 S          i            ;               - i I l- i                                     ;                                   i                . i         .        UI              i        ic ,           i ,                               i i c c           U l               . c            il, U             i i            l           . f                                             ;                                     - i          ;                 -                        I li ;                    -                                   c            i                . UI        i       i ,                                                                        ' c c           U l              - New Orleans G^cktail. Use Mixing Glass. ^NE dash Angostura bitters; one por tion Italian vermouth. Fill with ice, shake well, strain into a star champagne glass. Fill with soda water. Orange Blossom Cocktail, Use Mixing Glass. UICE of quarter orange; one portion dry gin. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. ■                                                                    p; c                     i              ; i         ;            -      lf   ;                                  -             lf               c .              UI i ic ,                                i ,                               i '             c c              il l . c       il. U                i i             l       . -       I                 S          i            ;               - i I l- i                                     ;                                   i                . i         .        UI              i        ic ,           i ,                               i i c c           U l               . c            il, U             i i            l           . f                                             ;                                     - i          ;                 -                        I li ;                    -                                   c            i                . UI        i       i ,                                                                        ' c c           U l              - New Orleans G^cktail. Use Mixing Glass. ^NE dash Angostura bitters; one por tion Italian vermouth. Fill with ice, shake well, strain into a star champagne glass. Fill with soda water. Orange Blossom Cocktail, Use Mixing Glass. UICE of quarter orange; one portion dry gin. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Metropole Cocktail.\n                               Use Mixing Glass.\n\n■                                                                    p;\n                      c                     i              ;\n    i         ;            -      lf   ;                                  -             lf               c\n                .              UI i ic ,                                i ,                               i\n'             c c              il l .\n\n\n                                                                        c       il.\n                               U                i i             l       .\n\n                  -       I                 S          i            ;               - i I l-\n          i                                     ;                                   i                .\n    i         .        UI              i        ic ,           i ,                               i i\n        c c           U l               .\n\n                                                           c            il,\n                                   U             i i            l           .\n\n                          f                                             ;                                     -\n                                       i          ;                 -                        I li\n                       ;                    -                                   c            i                .\n    UI        i       i ,                                                                        '\nc c           U l              -\n         New Orleans G^cktail.\n             Use Mixing Glass.\n\n  ^NE dash Angostura bitters; one por\n      tion Italian vermouth. Fill with ice,\nshake well, strain into a star champagne\nglass. Fill with soda water.\n\n\n       Orange Blossom Cocktail,\n              Use Mixing Glass.\n\n   UICE of quarter orange; one portion\n    dry gin. Fill with ice, shake well, and\nstrain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Oyster Cocktail",
+      "name_es": "Oyster Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vine gar",
+          "item_es": "vine gar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Tumbler. HFEW dashes lemon juice; one dash Tobasco sauce; one teaspoonful vine gar; a few dashes tomato catsup; six oysters with all their liquor. Season to taste with pepper and salt. Mix, and serve with small fork in the glass. 23 Perfect CocktaiL Use Mixing Glass. ^NE-THIRD French vermouth; one- third Italian vermouth; one-third dry gin. FiU with ice, mix, and strain into a cocktail glass.",
+      "method_es": "Use Tumbler. HFEW dashes lemon juice; one dash Tobasco sauce; one teaspoonful vine gar; a few dashes tomato catsup; six oysters with all their liquor. Season to taste with pepper and salt. Mix, and serve with small fork in the glass. 23 Perfect CocktaiL Use Mixing Glass. ^NE-THIRD French vermouth; one- third Italian vermouth; one-third dry gin. FiU with ice, mix, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Oyster Cocktail.\n                Use Tumbler.\n\nHFEW dashes lemon juice; one dash\n     Tobasco sauce; one teaspoonful vine\ngar; a few dashes tomato catsup; six\noysters with all their liquor. Season to\ntaste with pepper and salt. Mix, and serve\nwith small fork in the glass.\n\n                     23\n             Perfect CocktaiL\n              Use Mixing Glass.\n\n   ^NE-THIRD French vermouth; one-\n    third Italian vermouth; one-third dry\ngin. FiU with ice, mix, and strain into a\ncocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Princeton Cocktail",
+      "name_es": "Princeton Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. •^T^HREE dashes orange bitters; three- quarters Tom gin.     Fill with ice, mix, and strain into a cocktail glass. Add one- quarter port wine carefully, and let it settle to bottom before serving. Puritan CocktaiL Use Mixing Glass. 'JVHREE dashes orange bitters; one spoonful yellow chartreuse; two-thirds Plymouth gin; one-third French vermouth. Fill with ice, mix, and strain into a cocktail glass. 24",
+      "method_es": "Use Mixing Glass. •^T^HREE dashes orange bitters; three- quarters Tom gin.     Fill with ice, mix, and strain into a cocktail glass. Add one- quarter port wine carefully, and let it settle to bottom before serving. Puritan CocktaiL Use Mixing Glass. 'JVHREE dashes orange bitters; one spoonful yellow chartreuse; two-thirds Plymouth gin; one-third French vermouth. Fill with ice, mix, and strain into a cocktail glass. 24",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Princeton Cocktail.\n              Use Mixing Glass.\n\n•^T^HREE dashes orange bitters; three-\n     quarters Tom gin.     Fill with ice, mix,\nand strain into a cocktail glass. Add one-\nquarter port wine carefully, and let it settle\nto bottom before serving.\n\n\n            Puritan CocktaiL\n              Use Mixing Glass.\n\n'JVHREE dashes orange bitters; one\n      spoonful yellow chartreuse; two-thirds\nPlymouth gin; one-third French vermouth.\nFill with ice, mix, and strain into a cocktail\nglass.\n\n                      24"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Queen's Cocktail",
+      "name_es": "Queen's Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vennouth",
+          "item_es": "italian vennouth",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "calisaya",
+          "item_es": "Calisaya",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian ver mouth",
+          "item_es": "italian ver mouth",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "an gostura bitters",
+          "item_es": "an gostura bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. 'TTABLESPOONFUL of grape fruit juice; one-third Italian vennouth;       two- thirds dry gin. Fill with ice, shake well, and strain into a cocktail glass. Riding; Club Cocktail. Use Mixing. Glass. ^NE glass Angostura bitters; small spoonful Horsford's acid phosphate; one portion Calisaya. Fill with ice, mix, and strain into a cocktail glass. Rob Roy CocktaiL Use Mixing Glass. vVO dashes orange bitters; two-thirds Scotch whiskey; one-third Italian ver mouth. Fill with ice, mix, and strain into a cocktail glass. Serve an olive in the glass. Sazarac Cocktail, Use Whiskey TumUer )UR dashes absinthe, turn glass around slowly; one lump sugar; three dashes Peychaud bitters; one portion whiskey; one cube ice; sprig of mint. Stir and serve in tumbler. 2S Soda Cocktail* Use Large Glass. 'TTTIREE or four lumps of ice; one tea- spoonful fine sugar; three dashes An gostura bitters; one bottle plain soda, or lemon soda; one twist lemon peel. Stir well and serve while effervescent.",
+      "method_es": "Use Mixing Glass. 'TTABLESPOONFUL of grape fruit juice; one-third Italian vennouth;       two- thirds dry gin. Fill with ice, shake well, and strain into a cocktail glass. Riding; Club Cocktail. Use Mixing. Glass. ^NE glass Angostura bitters; small spoonful Horsford's acid phosphate; one portion Calisaya. Fill with ice, mix, and strain into a cocktail glass. Rob Roy CocktaiL Use Mixing Glass. vVO dashes orange bitters; two-thirds Scotch whiskey; one-third Italian ver mouth. Fill with ice, mix, and strain into a cocktail glass. Serve an olive in the glass. Sazarac Cocktail, Use Whiskey TumUer )UR dashes absinthe, turn glass around slowly; one lump sugar; three dashes Peychaud bitters; one portion whiskey; one cube ice; sprig of mint. Stir and serve in tumbler. 2S Soda Cocktail* Use Large Glass. 'TTTIREE or four lumps of ice; one tea- spoonful fine sugar; three dashes An gostura bitters; one bottle plain soda, or lemon soda; one twist lemon peel. Stir well and serve while effervescent.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Queen's Cocktail.\n               Use Mixing Glass.\n'TTABLESPOONFUL of grape fruit juice;\n     one-third Italian vennouth;       two-\nthirds dry gin. Fill with ice, shake well,\nand strain into a cocktail glass.\n         Riding; Club Cocktail.\n               Use Mixing. Glass.\n   ^NE glass Angostura bitters; small\n     spoonful Horsford's acid phosphate;\none portion Calisaya. Fill with ice, mix,\nand strain into a cocktail glass.\n           Rob Roy CocktaiL\n               Use Mixing Glass.\n    vVO dashes orange bitters; two-thirds\n     Scotch whiskey; one-third Italian ver\nmouth. Fill with ice, mix, and strain into a\ncocktail glass. Serve an olive in the glass.\n              Sazarac Cocktail,\n              Use Whiskey TumUer\n    )UR dashes absinthe, turn glass around\n    slowly; one lump sugar; three dashes\nPeychaud bitters; one portion whiskey;\none cube ice; sprig of mint. Stir and serve\nin tumbler.\n                      2S\n             Soda Cocktail*\n              Use Large Glass.\n\n'TTTIREE or four lumps of ice; one tea-\n     spoonful fine sugar; three dashes An\ngostura bitters; one bottle plain soda, or\nlemon soda; one twist lemon peel. Stir\nwell and serve while effervescent."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Star Cocktail",
+      "name_es": "Star Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "apple brandy",
+          "item_es": "apple brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. '^'WO dashes gum syrup; three dashes orange bitters; one-half apple brandy; one-half Italian vermouth. Fill with ice, mix, strain into a cocktail glass, and add small twist of lemon peel. Thorndike Cocktail* Use Mixing Glass. <^UICE of quarter orange; one-third Italian vermouth; two-thirds dry gin. Fill with ice, shake well, and strain into a cocktail glass. 26",
+      "method_es": "Use Mixing Glass. '^'WO dashes gum syrup; three dashes orange bitters; one-half apple brandy; one-half Italian vermouth. Fill with ice, mix, strain into a cocktail glass, and add small twist of lemon peel. Thorndike Cocktail* Use Mixing Glass. <^UICE of quarter orange; one-third Italian vermouth; two-thirds dry gin. Fill with ice, shake well, and strain into a cocktail glass. 26",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Star Cocktail.\n             Use Mixing Glass.\n\n'^'WO dashes gum syrup; three dashes\n     orange bitters; one-half apple brandy;\none-half Italian vermouth. Fill with ice,\nmix, strain into a cocktail glass, and add\nsmall twist of lemon peel.\n\n          Thorndike Cocktail*\n              Use Mixing Glass.\n\n<^UICE of quarter orange; one-third\n     Italian vermouth; two-thirds dry gin.\nFill with ice, shake well, and strain into a\ncocktail glass.\n\n                     26"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Trilby Cocktail",
+      "name_es": "Trilby Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "calisaya",
+          "item_es": "Calisaya",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "fosfato ácido",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. '^nREE dashes orange bitters; three dashes acid phosphate; two-thirds whiskey; one-third Calisaya. FUl with ice, mix, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. '^nREE dashes orange bitters; three dashes acid phosphate; two-thirds whiskey; one-third Calisaya. FUl with ice, mix, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Trilby Cocktail.\n              Use Mixing Glass.\n\n'^nREE dashes orange bitters; three\n     dashes acid phosphate; two-thirds\nwhiskey; one-third Calisaya. FUl with ice,\nmix, and strain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-030",
+      "order": 30,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Turf Cocktail",
+      "name_es": "Turf Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "med- ford rum",
+          "item_es": "med- ford rum",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. '^'WO dashes Boker's bitters; one-third Italian vermouth; two-thirds Med- ford rum. Fill glass with ice, stir well, and strain into a cocktail glass.",
+      "method_es": "Use Mixing Glass. '^'WO dashes Boker's bitters; one-third Italian vermouth; two-thirds Med- ford rum. Fill glass with ice, stir well, and strain into a cocktail glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Turf Cocktail.\n              Use Mixing Glass.\n\n'^'WO dashes Boker's bitters; one-third\n     Italian vermouth; two-thirds Med-\nford rum. Fill glass with ice, stir well, and\nstrain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-031",
+      "order": 31,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Tttxedo Cocktail",
+      "name_es": "Tttxedo Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ®NE dash Angostura bitters; one spoon ful sherry; one-half Tom gin; one- half Italian vermouth. Fill with ice, mix, and strain into a cocktail glass. 27",
+      "method_es": "Use Mixing Glass. ®NE dash Angostura bitters; one spoon ful sherry; one-half Tom gin; one- half Italian vermouth. Fill with ice, mix, and strain into a cocktail glass. 27",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Tttxedo Cocktail.\n              Use Mixing Glass.\n\n®NE dash Angostura bitters; one spoon\n     ful sherry; one-half Tom gin; one-\nhalf Italian vermouth. Fill with ice, mix,\nand strain into a cocktail glass.\n\n                     27"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-032",
+      "order": 32,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Vermoutli Cocktail",
+      "name_es": "Vermoutli Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. wo dashes Boker's or Peyschaud bit- tars; one portion Italian vermouth. Fill with ice, mix, and strain into a cocktail glass. Vermouth Cocktail — Dry. >I1V AKE the same as Vermouth Cock- tail, substituting French vermouth for Italian.",
+      "method_es": "Use Mixing Glass. wo dashes Boker's or Peyschaud bit- tars; one portion Italian vermouth. Fill with ice, mix, and strain into a cocktail glass. Vermouth Cocktail — Dry. >I1V AKE the same as Vermouth Cock- tail, substituting French vermouth for Italian.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Vermoutli Cocktail.\n                 Use Mixing Glass.\n\n     wo dashes Boker's or Peyschaud bit-\n      tars; one portion Italian vermouth.\nFill with ice, mix, and strain into a cocktail\nglass.\n\n\n\n        Vermouth Cocktail — Dry.\n>I1V AKE the same as Vermouth Cock-\n      tail, substituting French vermouth\nfor Italian."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-033",
+      "order": 33,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Vermouth Cocktail — Fancy",
+      "name_es": "Vermouth Cocktail — Fancy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixisig Glass, HREE dashes maraschino, two dashes Boker's bitters; one portion Italian vermouth; one dash orange bitters. Fill with ice, mix, and strain into a cocktail glass, the rim of which has been moistened with a piece of lemon peel and dipped into powdered sugar. 38 Vermouth Cochtail — French. Use Mixing Glass. \"T^HREE dashes orange bitters; one por- tion French vermouth. Fill with ice, mix, and strain into a,cocktail glass.",
+      "method_es": "Use Mixisig Glass, HREE dashes maraschino, two dashes Boker's bitters; one portion Italian vermouth; one dash orange bitters. Fill with ice, mix, and strain into a cocktail glass, the rim of which has been moistened with a piece of lemon peel and dipped into powdered sugar. 38 Vermouth Cochtail — French. Use Mixing Glass. \"T^HREE dashes orange bitters; one por- tion French vermouth. Fill with ice, mix, and strain into a,cocktail glass.",
+      "glassware": "mixisig glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Vermouth Cocktail — Fancy.\n                Use Mixisig Glass,\n\n   HREE dashes maraschino, two dashes\n     Boker's bitters; one portion Italian\nvermouth; one dash orange bitters. Fill\nwith ice, mix, and strain into a cocktail\nglass, the rim of which has been moistened\nwith a piece of lemon peel and dipped into\npowdered sugar.\n                       38\n        Vermouth Cochtail — French.\n                Use Mixing Glass.\n\n\"T^HREE dashes orange bitters; one por-\n        tion French vermouth. Fill with ice,\nmix, and strain into a,cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-034",
+      "order": 34,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Whisfcey Cocktail",
+      "name_es": "Whisfcey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. *^^0 dashes gum syrup; two dashes Angostura bitters; one portion rye whiskey. Fill with ice, mix, and strain into a cocktail glass. Add a twist of lemon peel.",
+      "method_es": "Use Mixing Glass. *^^0 dashes gum syrup; two dashes Angostura bitters; one portion rye whiskey. Fill with ice, mix, and strain into a cocktail glass. Add a twist of lemon peel.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whisfcey Cocktail.\n                Use Mixing Glass.\n\n*^^0 dashes gum syrup; two dashes\n     Angostura bitters; one portion rye\nwhiskey. Fill with ice, mix, and strain into\na cocktail glass. Add a twist of lemon\npeel."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-035",
+      "order": 35,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Whiskey Cocktail—Fancy",
+      "name_es": "Whiskey Cocktail—Fancy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "amargo Boker's",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. dashes maraschino; two dashes Boker's bitters; one dash orange bit ters; one portion rye whiskey. Fill with ice and mix till very cold. Strain into a cocktail glass, the rim of which has been moistened vdth lemon juice and dipped into powdered sugar. 29 i- Whiskey Cocktail — Old-fashioned. UT a lump of sugar in a whiskey 1P>   glass; add enqugh hot water to cover the sugar. Crush the sugar; add a lump of ice, two dashes Boker's bitters, one por tion whiskey, small piece lemon peel. Mix with small spoon, and serve with spoon in glass.",
+      "method_es": "Use Mixing Glass. dashes maraschino; two dashes Boker's bitters; one dash orange bit ters; one portion rye whiskey. Fill with ice and mix till very cold. Strain into a cocktail glass, the rim of which has been moistened vdth lemon juice and dipped into powdered sugar. 29 i- Whiskey Cocktail — Old-fashioned. UT a lump of sugar in a whiskey 1P>   glass; add enqugh hot water to cover the sugar. Crush the sugar; add a lump of ice, two dashes Boker's bitters, one por tion whiskey, small piece lemon peel. Mix with small spoon, and serve with spoon in glass.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Cocktail—Fancy.\n                Use Mixing Glass.\n\n            dashes maraschino; two dashes\n        Boker's bitters; one dash orange bit\nters; one portion rye whiskey. Fill with\nice and mix till very cold. Strain into a\ncocktail glass, the rim of which has been\nmoistened vdth lemon juice and dipped into\npowdered sugar.\n\n                       29\n\n\n\n\n                                               i-\n  Whiskey Cocktail — Old-fashioned.\n     UT a lump of sugar in a whiskey\n1P>   glass; add enqugh hot water to cover\nthe sugar. Crush the sugar; add a lump\nof ice, two dashes Boker's bitters, one por\ntion whiskey, small piece lemon peel. Mix\nwith small spoon, and serve with spoon in\nglass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-036",
+      "order": 36,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Yale Cocktail",
+      "name_es": "Yale Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ^pHREE dashes orange bitters; one dash Boker's bitters; piece lemon peel; one portion Tom gin. Fill with ice, mix, and strain into a cocktail glass; add a squirt of siphon seltzer. 30 .1 :r;}i II j- I   I -'i I- Some IRccent ifavorlteo",
+      "method_es": "Use Mixing Glass. ^pHREE dashes orange bitters; one dash Boker's bitters; piece lemon peel; one portion Tom gin. Fill with ice, mix, and strain into a cocktail glass; add a squirt of siphon seltzer. 30 .1 :r;}i II j- I   I -'i I- Some IRccent ifavorlteo",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Yale Cocktail.\n                     Use Mixing Glass.\n\n^pHREE dashes orange bitters; one\n     dash Boker's bitters; piece lemon\npeel; one portion Tom gin. Fill with ice,\nmix, and strain into a cocktail glass; add\na squirt of siphon seltzer.\n\n\n\n\n                                30\n\n\n\n\n                                          .1\n\n                                         :r;}i\n\n\n\n\n           II j- I   I -'i I-\n     Some IRccent ifavorlteo"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-037",
+      "order": 37,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Bacardi Ram Cocktail",
+      "name_es": "Bacardi Ram Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion orange juice",
+          "item_es": "portion orange juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion lemon juice",
+          "item_es": "portion lemon juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker /^NE teaspoon sugar; one portion Bacardi rum; half portion orange juice; half portion lemon juice. Fill with ice, shake until very cold, and strain into a cocktail glass.",
+      "method_es": "Use Shaker /^NE teaspoon sugar; one portion Bacardi rum; half portion orange juice; half portion lemon juice. Fill with ice, shake until very cold, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bacardi Ram Cocktail\n                  Use Shaker\n\n/^NE teaspoon sugar; one portion Bacardi\n     rum; half portion orange juice; half\nportion lemon juice. Fill with ice, shake\nuntil very cold, and strain into a cocktail\nglass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-038",
+      "order": 38,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Bacardi Ram Cocktail —Dry",
+      "name_es": "Bacardi Ram Cocktail —Dry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi rum",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker ®NEdash grenadine;one portion Bacardi rum; one portion lemon juice. Fill with ice, shake until very cold, and strain into a cocktail glass.",
+      "method_es": "Use Shaker ®NEdash grenadine;one portion Bacardi rum; one portion lemon juice. Fill with ice, shake until very cold, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bacardi Ram Cocktail —Dry\n                  Use Shaker\n\n®NEdash grenadine;one portion Bacardi\n     rum; one portion lemon juice. Fill\nwith ice, shake until very cold, and strain\ninto a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-039",
+      "order": 39,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Daiqairi Cocktail",
+      "name_es": "Daiqairi Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of lime",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker iNE portion grenadine syrup, three por tions Bacardi rum, juice of one lime. Shake well, and strain into a cocktail glass. 31",
+      "method_es": "Use Shaker iNE portion grenadine syrup, three por tions Bacardi rum, juice of one lime. Shake well, and strain into a cocktail glass. 31",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Daiqairi Cocktail\n                  Use Shaker\n\n    iNE portion grenadine syrup, three por\n     tions Bacardi rum, juice of one lime.\nShake well, and strain into a cocktail glass.\n                         31"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-040",
+      "order": 40,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Ladies' Delight Cocktail",
+      "name_es": "Ladies' Delight Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoon powdered sugar",
+          "item_es": "teaspoon powdered sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker Z^NE dash of lemon juice; one dash of Curacao; half teaspoon powdered sugar; one portion gin; one portion orange juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker Z^NE dash of lemon juice; one dash of Curacao; half teaspoon powdered sugar; one portion gin; one portion orange juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ladies' Delight Cocktail\n                  Use Shaker\n\nZ^NE dash of lemon juice; one dash of\n      Curacao; half teaspoon powdered\nsugar; one portion gin; one portion orange\njuice. Fill with ice, shake well, and strain\ninto a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-041",
+      "order": 41,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Ma Cherie Cocktail",
+      "name_es": "Ma Cherie Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker /^NE dash lemon juice; two good-sized sprays fresh mint; one portion sherry. Fill with ice, shake until very cold, and strain into a cocktail glass.",
+      "method_es": "Use Shaker /^NE dash lemon juice; two good-sized sprays fresh mint; one portion sherry. Fill with ice, shake until very cold, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ma Cherie Cocktail\n                  Use Shaker\n\n/^NE dash lemon juice; two good-sized\n     sprays fresh mint; one portion sherry.\nFill with ice, shake until very cold, and\nstrain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-042",
+      "order": 42,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Mint Spray Cocktail",
+      "name_es": "Mint Spray Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoon powdered sugar",
+          "item_es": "teaspoon powdered sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker /^NE dash of lemon juice; half teaspoon powdered sugar; one good-sized spray fresh mint; one portion gin; one portion orange juice. Fill with ice, shake very thoroughly, and strain into a cocktail glass. 32",
+      "method_es": "Use Shaker /^NE dash of lemon juice; half teaspoon powdered sugar; one good-sized spray fresh mint; one portion gin; one portion orange juice. Fill with ice, shake very thoroughly, and strain into a cocktail glass. 32",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mint Spray Cocktail\n                  Use Shaker\n/^NE dash of lemon juice; half teaspoon\n     powdered sugar; one good-sized spray\nfresh mint; one portion gin; one portion\norange juice. Fill with ice, shake very\nthoroughly, and strain into a cocktail glass.\n                         32"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-043",
+      "order": 43,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Natley Special Cocktail",
+      "name_es": "Natley Special Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use Shaker /^NE portion dry gin; one-quarter portion prepared orange Juice; small amount Five Fruit syrup; a few sprigs of fresh mint. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker /^NE portion dry gin; one-quarter portion prepared orange Juice; small amount Five Fruit syrup; a few sprigs of fresh mint. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Natley Special Cocktail\n                   Use Shaker\n\n/^NE portion dry gin; one-quarter\n     portion prepared orange Juice; small\namount Five Fruit syrup; a few sprigs of\nfresh mint. Fill with ice, shake well, and\nstrain into a cocktail glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-044",
+      "order": 44,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Orange Blossom Special Cocktail",
+      "name_es": "Orange Blossom Special Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker ^NE portion gin; one portion orange juice. Dip a spoon into honey, and dissolve in the gin only what honey adheres to the spoon. Then add the orange juice, fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker ^NE portion gin; one portion orange juice. Dip a spoon into honey, and dissolve in the gin only what honey adheres to the spoon. Then add the orange juice, fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Orange Blossom Special Cocktail\n                   Use Shaker\n\n   ^NE portion gin; one portion orange\n      juice. Dip a spoon into honey, and\ndissolve in the gin only what honey adheres\nto the spoon. Then add the orange juice,\nfill with ice, shake well, and strain into a\ncocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-045",
+      "order": 45,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Page Coart Cocktail",
+      "name_es": "Page Coart Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "portion jamaica rum",
+          "item_es": "portion jamaica rum",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion dry gin",
+          "item_es": "portion dry gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "onion juice",
+          "item_es": "onion juice",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker ®NE portion rye whiskey;* half portion Jamaica Rum; half portion dry gin; juice -of one orange; dash of bitters. Fill with ice, shake well, and strain into a cock tail glass. *Scotch whiskey can be substituted, and the bitters omitted. 33 Pearl Cocfctail Use Shaker /^NE portion French Vermouth, two portions dry gin; two or three dashes of Orange Bitters; three or four dashes of Onion Juice. Shake well, and serve in fancy cocktail glass with small pearl onion in place of the usual olive.",
+      "method_es": "Use Shaker ®NE portion rye whiskey;* half portion Jamaica Rum; half portion dry gin; juice -of one orange; dash of bitters. Fill with ice, shake well, and strain into a cock tail glass. *Scotch whiskey can be substituted, and the bitters omitted. 33 Pearl Cocfctail Use Shaker /^NE portion French Vermouth, two portions dry gin; two or three dashes of Orange Bitters; three or four dashes of Onion Juice. Shake well, and serve in fancy cocktail glass with small pearl onion in place of the usual olive.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Page Coart Cocktail\n                   Use Shaker\n®NE portion rye whiskey;* half portion\n      Jamaica Rum; half portion dry gin;\njuice -of one orange; dash of bitters. Fill\nwith ice, shake well, and strain into a cock\ntail glass.\n  *Scotch whiskey can be substituted, and the\nbitters omitted.\n\n                       33\n              Pearl Cocfctail\n                  Use Shaker\n\n/^NE portion French Vermouth, two\n     portions dry gin; two or three dashes\nof Orange Bitters; three or four dashes of\nOnion Juice. Shake well, and serve in fancy\ncocktail glass with small pearl onion in\nplace of the usual olive."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-046",
+      "order": 46,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Pineapple Blossom Cocktail",
+      "name_es": "Pineapple Blossom Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "portion pineapple juice",
+          "item_es": "portion pineapple juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion lemon juice",
+          "item_es": "portion lemon juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker /^NE portion Scotch or rye whiskey; half portion pineapple juice; half portion lemon juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker /^NE portion Scotch or rye whiskey; half portion pineapple juice; half portion lemon juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pineapple Blossom Cocktail\n                  Use Shaker\n/^NE portion Scotch or rye whiskey; half\n    portion pineapple juice; half portion\nlemon juice. Fill with ice, shake well, and\nstrain into a cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-047",
+      "order": 47,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Pink Beattty Cocktail",
+      "name_es": "Pink Beattty Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion vermouth",
+          "item_es": "portion vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker /^NE dash of Five Fruit S3nrup; one portion gin; half portion Vermouth. Fill with ice, shake well, and strain into a cocktail glass. 34",
+      "method_es": "Use Shaker /^NE dash of Five Fruit S3nrup; one portion gin; half portion Vermouth. Fill with ice, shake well, and strain into a cocktail glass. 34",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pink Beattty Cocktail\n                  Use Shaker\n/^NE dash of Five Fruit S3nrup; one\n      portion gin; half portion Vermouth.\nFill with ice, shake well, and strain into a\ncocktail glass.\n\n                      34"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-048",
+      "order": 48,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Rosy Cocktail",
+      "name_es": "Rosy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "portion claret",
+          "item_es": "portion claret",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion orange juice",
+          "item_es": "portion orange juice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker ®NE portion gin; half portion claret; half portion orange juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker ®NE portion gin; half portion claret; half portion orange juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rosy Cocktail\n                    Use Shaker\n\n®NE portion gin; half portion claret;\n      half portion orange juice. Fill with\nice, shake well, and strain into a cocktail\nglass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-049",
+      "order": 49,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Standard Cocktail",
+      "name_es": "Standard Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "portion french vermouth",
+          "item_es": "portion french vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion italian ver mouth",
+          "item_es": "portion italian ver mouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "portion orange juice",
+          "item_es": "portion orange juice",
+          "amount": "0.75",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker /^NE portion gin; half portion French Vermouth; half portion Italian Ver mouth; three-fourths portion orange juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker /^NE portion gin; half portion French Vermouth; half portion Italian Ver mouth; three-fourths portion orange juice. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Standard Cocktail\n                    Use Shaker\n\n/^NE portion gin; half portion French\n     Vermouth; half portion Italian Ver\nmouth; three-fourths portion orange juice.\n  Fill with ice, shake well, and strain into\na cocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-050",
+      "order": 50,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Stirrtip Cap Cocktail",
+      "name_es": "Stirrtip Cap Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker ©NE portion Scotch or rye whiskey; one portion orange juice. Fill with ice, shake thoroughly and strain into a cocktail glass. 35",
+      "method_es": "Use Shaker ©NE portion Scotch or rye whiskey; one portion orange juice. Fill with ice, shake thoroughly and strain into a cocktail glass. 35",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Stirrtip Cap Cocktail\n                    Use Shaker\n\n©NE portion Scotch or rye whiskey; one\n     portion orange juice. Fill with ice,\nshake thoroughly and strain into a cocktail\nglass.\n\n\n                        35"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-051",
+      "order": 51,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Sweet Cider Cocktail",
+      "name_es": "Sweet Cider Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sweet cider",
+          "item_es": "sweet cider",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker '7T LASPOON grenadine syrup; one por- tion gin; one portion sweet cider. Fill with ice, shake well, and strain into a cocktail glass.",
+      "method_es": "Use Shaker '7T LASPOON grenadine syrup; one por- tion gin; one portion sweet cider. Fill with ice, shake well, and strain into a cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sweet Cider Cocktail\n                 Use Shaker\n\n'7T LASPOON grenadine syrup; one por-\n      tion gin; one portion sweet cider.\nFill with ice, shake well, and strain into a\ncocktail glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-052",
+      "order": 52,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "T.N.T. Cocktail",
+      "name_es": "T.N.T. Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "port",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker *f[AALF teaspoon powdered sugar; one raw egg; one portion brandy; one portion port. Fill with ice, shake very thoroughly, and strain into a glass.",
+      "method_es": "Use Shaker *f[AALF teaspoon powdered sugar; one raw egg; one portion brandy; one portion port. Fill with ice, shake very thoroughly, and strain into a glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "T.N.T. Cocktail\n                 Use Shaker\n\n*f[AALF teaspoon powdered sugar; one\n      raw egg; one portion brandy; one\nportion port. Fill with ice, shake very\nthoroughly, and strain into a glass."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-053",
+      "order": 53,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Zelli's Special Cocktail",
+      "name_es": "Zelli's Special Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry vermouth",
+          "item_es": "dry vermouth",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Shaker '^'WO portions gin; one portion dry Vermouth; two limes cut into small pieces and added, peels and all, to the shaker; dash of grenadine. Fill with ice, shake well, and strain into a cocktail glass. 36 flDi6celIaneou0 fftixet) SJrinfts. THEY that lev mir-'h, let them heartily drink, Tis the only receipt to make sorrow sink. —Jaiuon. ■   '■ c ''   . i' - -V - ■ .- i'.'. fIDiscellaneous fUMieb HJrinfts. Those starred (*) are after-dinner liqueurs.",
+      "method_es": "Use Shaker '^'WO portions gin; one portion dry Vermouth; two limes cut into small pieces and added, peels and all, to the shaker; dash of grenadine. Fill with ice, shake well, and strain into a cocktail glass. 36 flDi6celIaneou0 fftixet) SJrinfts. THEY that lev mir-'h, let them heartily drink, Tis the only receipt to make sorrow sink. —Jaiuon. ■   '■ c ''   . i' - -V - ■ .- i'.'. fIDiscellaneous fUMieb HJrinfts. Those starred (*) are after-dinner liqueurs.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Zelli's Special Cocktail\n                 Use Shaker\n\n'^'WO portions gin; one portion dry\n     Vermouth; two limes cut into small\npieces and added, peels and all, to the\nshaker; dash of grenadine. Fill with ice,\nshake well, and strain into a cocktail glass.\n\n                     36\nflDi6celIaneou0 fftixet) SJrinfts.\n  THEY that lev mir-'h, let them heartily drink,\n  Tis the only receipt to make sorrow sink.\n                                       —Jaiuon.\n                      ■   '■\n     c ''   .\n\n            i' - -V\n\n\n\n\n -\n\n\n\n\n■ .-\n\n\n\n\n                               i'.'.\nfIDiscellaneous fUMieb HJrinfts.\n  Those starred (*) are after-dinner liqueurs."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-054",
+      "order": 54,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Absinthe Frappe",
+      "name_es": "Absinthe Frappe",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ©NE pony absinthe. Fill glass with fine ice, shake well, and strain into a cocktail glass. Blue Blazes. Use Two Hot-water Glasses. ®NE lump sugar; one portion Scotch whiskey. Fill glass with hot water, ignite, and pour from one glass to another. Add a little grated nutmeg.",
+      "method_es": "Use Mixing Glass. ©NE pony absinthe. Fill glass with fine ice, shake well, and strain into a cocktail glass. Blue Blazes. Use Two Hot-water Glasses. ®NE lump sugar; one portion Scotch whiskey. Fill glass with hot water, ignite, and pour from one glass to another. Add a little grated nutmeg.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe Frappe.\n               Use Mixing Glass.\n\n©NE pony absinthe. Fill glass with\n     fine ice, shake well, and strain into a\ncocktail glass.\n\n                Blue Blazes.\n           Use Two Hot-water Glasses.\n\n®NE lump sugar; one portion Scotch\n      whiskey. Fill glass with hot water,\nignite, and pour from one glass to another.\nAdd a little grated nutmeg."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-055",
+      "order": 55,
+      "section_title": "Cocktails",
+      "category": "flip",
+      "name_original": "Brandy Flip",
+      "name_es": "Brandy Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "full of fine shaved ice",
+          "item_es": "full of fine shaved ice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hot water",
+          "item_es": "agua caliente",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "of the pressed lime",
+          "item_es": "of the pressed lime",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fresh mint",
+          "item_es": "menta fresca",
+          "amount": "4",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ©NE teaspoonful sugar; one wine glass brandy; one fresh egg.            FiU glass half full of fine shaved ice. Shake well in shaker. Strain into star champagne glass, and grate a little nutmeg on top. 39 Brandy Smasli. Use Small Tumbler. •^TIRjEE or four sprigs of fresh mint; cover bottom with water; one lump sugar; crush the mint; add one or two lumps of ice; one portion brandy. Stir well, and serve in same glass. Buttered Rum. Use Tumbler. /^NE lump sugar; dissolve in hot water; one-third rum; two-thirds hot water; butter the size of a walnut. Grate a little nutmeg on top. Cafe au Kirsch.* Use Mixing Glass. jpILL glass hah full of fine ice; half *81 a cup of hot black coffee; one pony Kirschwasser.      Shake, and strain into a cocktail glass. * After-dinner drink. 40 California Absinthe. Use Mixing Glass. ®NE pony absinthe. Fill glass with fine ice.       Shake well, strain into star champagne glass, and fill with siphon. Champagne Cobbler. Use Delicate Wine Glass. SMALL lump sugar. Fill glass with shaved ice. Pour in champagne till the glass is full. Serve with straw, and decorate with fruit and leaves. Champagne Cup. Use Glass Pitcher. l p       f l                       ;               i           f   ■i l         ;                     lic                           ; lic l               ;         i       ;                 lic c c                                  ■ p l;            p                            ;              p c i       ;         p     ",
+      "method_es": "Use Mixing Glass. ©NE teaspoonful sugar; one wine glass brandy; one fresh egg.            FiU glass half full of fine shaved ice. Shake well in shaker. Strain into star champagne glass, and grate a little nutmeg on top. 39 Brandy Smasli. Use Small Tumbler. •^TIRjEE or four sprigs of fresh mint; cover bottom with water; one lump sugar; crush the mint; add one or two lumps of ice; one portion brandy. Stir well, and serve in same glass. Buttered Rum. Use Tumbler. /^NE lump sugar; dissolve in hot water; one-third rum; two-thirds hot water; butter the size of a walnut. Grate a little nutmeg on top. Cafe au Kirsch.* Use Mixing Glass. jpILL glass hah full of fine ice; half *81 a cup of hot black coffee; one pony Kirschwasser.      Shake, and strain into a cocktail glass. * After-dinner drink. 40 California Absinthe. Use Mixing Glass. ®NE pony absinthe. Fill glass with fine ice.       Shake well, strain into star champagne glass, and fill with siphon. Champagne Cobbler. Use Delicate Wine Glass. SMALL lump sugar. Fill glass with shaved ice. Pour in champagne till the glass is full. Serve with straw, and decorate with fruit and leaves. Champagne Cup. Use Glass Pitcher. l p       f l                       ;               i           f   ■i l         ;                     lic                           ; lic l               ;         i       ;                 lic c c                                  ■ p l;            p                            ;              p c i       ;         p     ",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Flip.\n                Use Mixing Glass.\n\n©NE teaspoonful sugar; one wine glass\n      brandy; one fresh egg.            FiU glass\nhalf full of fine shaved ice. Shake well in\nshaker. Strain into star champagne glass,\nand grate a little nutmeg on top.\n                       39\n               Brandy Smasli.\n               Use Small Tumbler.\n\n•^TIRjEE or four sprigs of fresh mint;\n      cover bottom with water; one lump\nsugar; crush the mint; add one or two\nlumps of ice; one portion brandy. Stir\nwell, and serve in same glass.\n\n               Buttered Rum.\n                  Use Tumbler.\n\n/^NE lump sugar; dissolve in hot water;\n     one-third rum; two-thirds hot water;\nbutter the size of a walnut. Grate a little\nnutmeg on top.\n\n\n             Cafe au Kirsch.*\n               Use Mixing Glass.\n\njpILL glass hah full of fine ice; half\n*81 a cup of hot black coffee; one pony\nKirschwasser.      Shake, and strain into a\ncocktail glass.\n  * After-dinner drink.\n\n\n                      40\n                 California Absinthe.\n                         Use Mixing Glass.\n\n®NE pony absinthe. Fill glass with\n           fine ice.       Shake well, strain into star\nchampagne glass, and fill with siphon.\n\n                Champagne Cobbler.\n                Use Delicate Wine Glass.\n\nSMALL lump sugar. Fill glass with\n    shaved ice. Pour in champagne till\nthe glass is full. Serve with straw, and\ndecorate with fruit and leaves.\n\n                  Champagne Cup.\n                         Use Glass Pitcher.\n\n\n                         l p       f l                       ;               i           f   ■i\n           l         ;                     lic                           ;\n lic l               ;         i       ;                 lic c c                                  ■\np l;            p                            ;              p\n c i       ;         p             i         c                   ;                   i\n l                   ;                           c               p               ;\n       l         ;                                   l               l           p       f\nic .                           i   f                     i\n                Cidet Cup.\n    AME as Champagne Cup, using cider\ns in the place of champagne.\n\n\n              Circus Rickey.\n          Use Medium-sized Tumller.\n\n\n    UICE one lime; leave half of the pressed\n     lime in glass; one lump ice; one por\ntion dry gin; tablespoonful Grenadine\nsyrup. Fill with siphon.\n\n\n\n\n             Claret Cobfeler.\n\n              Use Large Glass.\n\n^^NE tablespoonful powdered sugar. Fill\n     glass with shaved ice. Pour fuU ol\nclaret. Shake in shaker.    Ornament with\nfruit and serve with straws.\n\n                     42\n                      Qaret C«p.\n     AME as Champagne Cup, using claret\ns in the place of champagne."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-056",
+      "order": 56,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Claret Punch",
+      "name_es": "Claret Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pints st",
+          "item_es": "pints st",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gallons rich milk",
+          "item_es": "gallons rich milk",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lime",
+          "item_es": "lima",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Large Glass. ®NE tablespoonful powdered sugar; two dashes lemon juice. Fill glass with shaved ice. Fill with claret. Shake well. Ornament with fruit, serve with straws. Egg Nog. Use Mixing Glass. ■           - U                   S                   l       p ;                i       l                   i ;         -      lf  l                            ic ; f          .         ill l               i       f                   il . S          ll,           i i             l               l       , i        li l                    . Bowl of Egfg; Nogf. Suitable for New Year's Party. This recipe is for making a two-gallon bowl full, '^'WO pounds fine powdered sugar; twenty fresh eggs. Have the yolks separated and beaten till thin as water. Add the yolks to the sugar, and dissolve well with spoon. Two quarts good old brandy; one and a half pints St. Croix or Jamaica rum; one and a half gallons rich milk. Mix the ingredients well with ladle, stirring continually while pouring in the milk. Beat the whites of eggs to stiff froth. Pour this froth carefully over the mixture. In serving, dip out with ladle. Put a little of the white on the top of each help, and grate on a little nutmeg. Serve in punch glasses. 44 Fog Horn, Use Large Tumbler. Q|NE portion dry gin; juice of half lime, one lump ice. Fill with ginger ale.",
+      "method_es": "Use Large Glass. ®NE tablespoonful powdered sugar; two dashes lemon juice. Fill glass with shaved ice. Fill with claret. Shake well. Ornament with fruit, serve with straws. Egg Nog. Use Mixing Glass. ■           - U                   S                   l       p ;                i       l                   i ;         -      lf  l                            ic ; f          .         ill l               i       f                   il . S          ll,           i i             l               l       , i        li l                    . Bowl of Egfg; Nogf. Suitable for New Year's Party. This recipe is for making a two-gallon bowl full, '^'WO pounds fine powdered sugar; twenty fresh eggs. Have the yolks separated and beaten till thin as water. Add the yolks to the sugar, and dissolve well with spoon. Two quarts good old brandy; one and a half pints St. Croix or Jamaica rum; one and a half gallons rich milk. Mix the ingredients well with ladle, stirring continually while pouring in the milk. Beat the whites of eggs to stiff froth. Pour this froth carefully over the mixture. In serving, dip out with ladle. Put a little of the white on the top of each help, and grate on a little nutmeg. Serve in punch glasses. 44 Fog Horn, Use Large Tumbler. Q|NE portion dry gin; juice of half lime, one lump ice. Fill with ginger ale.",
+      "glassware": "large glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Punch.\n                  Use Large Glass.\n\n®NE tablespoonful powdered sugar; two\n      dashes lemon juice. Fill glass with\nshaved ice. Fill with claret. Shake well.\nOrnament with fruit, serve with straws.\n\n\n\n\n                       Egg Nog.\n                  Use Mixing Glass.\n\n■           - U                   S                   l       p\n             ;                i       l                   i\n        ;         -      lf  l                            ic ;\n f          .         ill l               i       f                   il .\n S          ll,           i i             l               l       ,\n             i        li l                    .\n            Bowl of Egfg; Nogf.\n        Suitable for New Year's Party.\nThis recipe is for making a two-gallon bowl full,\n\n'^'WO pounds fine powdered sugar;\n     twenty fresh eggs. Have the yolks\nseparated and beaten till thin as water.\nAdd the yolks to the sugar, and dissolve\nwell with spoon. Two quarts good old\nbrandy; one and a half pints St. Croix or\nJamaica rum; one and a half gallons rich\nmilk. Mix the ingredients well with ladle,\nstirring continually while pouring in the\nmilk. Beat the whites of eggs to stiff\nfroth. Pour this froth carefully over the\nmixture. In serving, dip out with ladle.\nPut a little of the white on the top of each\nhelp, and grate on a little nutmeg. Serve\nin punch glasses.\n\n\n\n\n                     44\n                Fog Horn,\n             Use Large Tumbler.\n\n\nQ|NE portion dry gin; juice of half lime,\n  one lump ice. Fill with ginger ale."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-057",
+      "order": 57,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Gin Daisy",
+      "name_es": "Gin Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lime",
+          "item_es": "lima",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tom gm",
+          "item_es": "tom gm",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tablespoonful sugar",
+          "item_es": "tablespoonful sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "of the pressed lime",
+          "item_es": "of the pressed lime",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "full of boiling water",
+          "item_es": "full of boiling water",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. teaspoonful fine sugar; juice of half lime;    one portion Tom gm; tablespoonful raspberry syrup; fill with ice. Shake well; strain into tumbler; fill up with siphon; ornament with fruit, and serve. Gin Fizz, Use Mixing Glass. ^^NE-HALF tablespoonful sugar; three or four dashes lemon juice; one wine glass Tom gin. Fill glass with ice; shake; strain into fizz glass, and fill up with soda. 45 Gin Rickey. Use Medium-sized Tumbler. UICE one lime; leave half of the pressed lime in glass; one lump ice; one wine glass Tom gin. Fill with siphon. Golden Fizz» Use Mixing Glass. ©NE-HALF tablespoonful sugar; three or four dashes lemon juice; one wine glass Tom gin; yolk of one egg. Fill glass with ice, shake well, and strain into fizz glass. Fill with siphon. Hot Applejack. Use Hot Water Glass. '^WO lumps sugar. Fill glass two-thirds full of boiling water and dissolve sugar. One wine glass applejack; one slice lemon. Serve with spoon. 46",
+      "method_es": "Use Mixing Glass. teaspoonful fine sugar; juice of half lime;    one portion Tom gm; tablespoonful raspberry syrup; fill with ice. Shake well; strain into tumbler; fill up with siphon; ornament with fruit, and serve. Gin Fizz, Use Mixing Glass. ^^NE-HALF tablespoonful sugar; three or four dashes lemon juice; one wine glass Tom gin. Fill glass with ice; shake; strain into fizz glass, and fill up with soda. 45 Gin Rickey. Use Medium-sized Tumbler. UICE one lime; leave half of the pressed lime in glass; one lump ice; one wine glass Tom gin. Fill with siphon. Golden Fizz» Use Mixing Glass. ©NE-HALF tablespoonful sugar; three or four dashes lemon juice; one wine glass Tom gin; yolk of one egg. Fill glass with ice, shake well, and strain into fizz glass. Fill with siphon. Hot Applejack. Use Hot Water Glass. '^WO lumps sugar. Fill glass two-thirds full of boiling water and dissolve sugar. One wine glass applejack; one slice lemon. Serve with spoon. 46",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Daisy.\n              Use Mixing Glass.\n\n         teaspoonful fine sugar; juice of\n     half lime;    one portion Tom gm;\ntablespoonful raspberry syrup; fill with\nice. Shake well; strain into tumbler; fill\nup with siphon; ornament with fruit, and\nserve.\n\n\n\n\n                  Gin Fizz,\n              Use Mixing Glass.\n\n^^NE-HALF tablespoonful sugar; three\n      or four dashes lemon juice; one wine\nglass Tom gin. Fill glass with ice; shake;\nstrain into fizz glass, and fill up with soda.\n\n                     45\n               Gin Rickey.\n          Use Medium-sized Tumbler.\n\n    UICE one lime; leave half of the\n     pressed lime in glass; one lump ice;\n one wine glass Tom gin. Fill with siphon.\n\n\n              Golden Fizz»\n              Use Mixing Glass.\n\n ©NE-HALF tablespoonful sugar; three\n      or four dashes lemon juice; one wine\n glass Tom gin; yolk of one egg. Fill\nglass with ice, shake well, and strain into\nfizz glass. Fill with siphon.\n\n\n\n             Hot Applejack.\n            Use Hot Water Glass.\n\n'^WO lumps sugar. Fill glass two-thirds\n      full of boiling water and dissolve\nsugar. One wine glass applejack; one\nslice lemon. Serve with spoon.\n\n                    46"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-058",
+      "order": 58,
+      "section_title": "Cocktails",
+      "category": "toddy",
+      "name_original": "Hot Apple Toddy",
+      "name_es": "Hot Apple Toddy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "with boiling water",
+          "item_es": "with boiling water",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "full boiling water",
+          "item_es": "full boiling water",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonful sugar",
+          "item_es": "teaspoonful sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lime",
+          "item_es": "lima",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "glass shaved ice",
+          "item_es": "glass shaved ice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tablespoonful sugar",
+          "item_es": "tablespoonful sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass water",
+          "item_es": "wine glass water",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whis key",
+          "item_es": "scotch whis key",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "loaf sugar",
+          "item_es": "loaf sugar",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fresh mint",
+          "item_es": "menta fresca",
+          "amount": "4",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Hot Water Glass. »I|^ALF tablespoonful sugar. Fill glass II*/ two-thirds with boiling water. One wine glass applejack; two spoonfuls baked apple. Grate over a little nutmeg, and serve with spoon. Hot Irish. '^'WO lumps sugar. Fill glass two-thirds with boiling water; dissolve sugar. One wine glass full Irish whiskey; one slice lemon peel. Serve with spoon. Hot Scotch. Use Hot Water Glass. •^yWO lumps sugar. Fill glass two-thirds full boiling water, and dissolve sugar. One wine glass Scotch whiskey; one slice lemon peel. Serve with spoon. 47 f: Hot Spiced Rum. Use Hoi Water Glass. ®NE or two lumps loaf sugar. Fill glass two-thirds full boiling water, and dissolve sugar; one wine glass Jamaica rum; six or eight cloves. Serve with spoon. Good for sore throat. John Callins* Use Long Glass. ©NE-HALF teaspoonful sugar; five or six dashes lemon juice; one wine glass Holland gin. Dissolve the sugar with spoon; add three or four lumps of ice, and pour in a bottle of soda water. Maiden's Dream.* Use Pousse Cafg Glass. '^^HREE-QUARTERS pony Benedictine, fill with cream, and serve. * After-dinner drink. . 48 Mamie Taylon Use Large Glass. UICE of half lime; one portion Scotch %J whiskey; one bottle ginger ale; one lump ice. Stir weU and serve. Medford Rom Ponch. Use Large Glass. '^THREE - QUARTERS                tablespoonful powdered sugar; two or three dashes lemon juice. Dissolve with a little water. Fill glass with fine shaved ice. One and a quarter wine glass Medford rum. Shake w",
+      "method_es": "Use Hot Water Glass. »I|^ALF tablespoonful sugar. Fill glass II*/ two-thirds with boiling water. One wine glass applejack; two spoonfuls baked apple. Grate over a little nutmeg, and serve with spoon. Hot Irish. '^'WO lumps sugar. Fill glass two-thirds with boiling water; dissolve sugar. One wine glass full Irish whiskey; one slice lemon peel. Serve with spoon. Hot Scotch. Use Hot Water Glass. •^yWO lumps sugar. Fill glass two-thirds full boiling water, and dissolve sugar. One wine glass Scotch whiskey; one slice lemon peel. Serve with spoon. 47 f: Hot Spiced Rum. Use Hoi Water Glass. ®NE or two lumps loaf sugar. Fill glass two-thirds full boiling water, and dissolve sugar; one wine glass Jamaica rum; six or eight cloves. Serve with spoon. Good for sore throat. John Callins* Use Long Glass. ©NE-HALF teaspoonful sugar; five or six dashes lemon juice; one wine glass Holland gin. Dissolve the sugar with spoon; add three or four lumps of ice, and pour in a bottle of soda water. Maiden's Dream.* Use Pousse Cafg Glass. '^^HREE-QUARTERS pony Benedictine, fill with cream, and serve. * After-dinner drink. . 48 Mamie Taylon Use Large Glass. UICE of half lime; one portion Scotch %J whiskey; one bottle ginger ale; one lump ice. Stir weU and serve. Medford Rom Ponch. Use Large Glass. '^THREE - QUARTERS                tablespoonful powdered sugar; two or three dashes lemon juice. Dissolve with a little water. Fill glass with fine shaved ice. One and a quarter wine glass Medford rum. Shake w",
+      "glassware": "hot water glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Apple Toddy.\n           Use Hot Water Glass.\n\n»I|^ALF tablespoonful sugar. Fill glass\nII*/ two-thirds with boiling water. One\nwine glass applejack; two spoonfuls baked\napple. Grate over a little nutmeg, and\nserve with spoon.\n\n\n\n                Hot Irish.\n'^'WO lumps sugar. Fill glass two-thirds\n      with boiling water; dissolve sugar.\nOne wine glass full Irish whiskey; one\nslice lemon peel. Serve with spoon.\n\n\n\n               Hot Scotch.\n            Use Hot Water Glass.\n\n•^yWO lumps sugar. Fill glass two-thirds\n    full boiling water, and dissolve sugar.\nOne wine glass Scotch whiskey; one slice\nlemon peel. Serve with spoon.\n\n                    47\n                                      f:\n\n\n             Hot Spiced Rum.\n              Use Hoi Water Glass.\n\n®NE or two lumps loaf sugar. Fill\n     glass two-thirds full boiling water, and\ndissolve sugar; one wine glass Jamaica\nrum; six or eight cloves. Serve with\nspoon. Good for sore throat.\n\n\n               John Callins*\n                Use Long Glass.\n\n©NE-HALF teaspoonful sugar; five or\n     six dashes lemon juice; one wine\nglass Holland gin. Dissolve the sugar\nwith spoon; add three or four lumps of\nice, and pour in a bottle of soda water.\n\n\n             Maiden's Dream.*\n             Use Pousse Cafg Glass.\n\n'^^HREE-QUARTERS pony Benedictine,\n     fill with cream, and serve.\n  * After-dinner drink. .\n\n\n                      48\n             Mamie Taylon\n               Use Large Glass.\n\n   UICE of half lime; one portion Scotch\n%J whiskey; one bottle ginger ale; one\nlump ice. Stir weU and serve.\n\n          Medford Rom Ponch.\n              Use Large Glass.\n\n'^THREE - QUARTERS                tablespoonful\n      powdered sugar; two or three dashes\nlemon juice. Dissolve with a little water.\nFill glass with fine shaved ice. One and a\nquarter wine glass Medford rum. Shake\nwell, and ornament with fruit. Serve with\nstraws.\n\n              Milfc Ponch,\n              Use Mixing Glass.\n\n'^'HREE - QUARTERS                tablespoonful\n      sugar; one wine glass whiskey or\nbrandy; one-half glass shaved ice. Fill\nglass with good milk, shake, and strain into\nlarge glass. Grate a little nutmeg on top.\n\n                     49\n                Mint Jttlep.\n                Vsa Large Glass.\n\n©NE-HALF tablespoonful sugar; one-\n     half wine glass water; three or four\nsprigs fresh mint. Fill up glass with shaved\nice. Do not stir or shake, but let stand\nthree or four minutes till glass is frosted.\nOne wine glass Bourbon whiskey. Orna\nment with cluster of mint.\n\n\n\n          Mint Julep — Brandy,\n      AKE the same as above, using brandy\n       instead of Bourbon whiskey.\n\n\n           Morning-GIory Fizz*\n              Use Mixing Glass.\n\n©NE tablespoonful fine sugar; juice of\n     half lemon; one portion Scotch whis\nkey; three dashes absinthe; white of one\negg. Fill glass with ice, shake well, strain\ninto fizz glass, and fill with siphon.\n\n                     so\n             New York Sour*\n              Use Mixing Glass.\n\n/"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-059",
+      "order": 59,
+      "section_title": "Cocktails",
+      "category": "flip",
+      "name_original": "Port Wine Flip",
+      "name_es": "Port Wine Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "full of shaved ice",
+          "item_es": "full of shaved ice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixi7tg Glass. ®NE teaspoonful powdered sugar; one wine glass port wine; one fresh egg. Fill glass half full of shaved ice. Shake well, strain into star champagne glass, and grate a little nutmeg on top.",
+      "method_es": "Use Mixi7tg Glass. ®NE teaspoonful powdered sugar; one wine glass port wine; one fresh egg. Fill glass half full of shaved ice. Shake well, strain into star champagne glass, and grate a little nutmeg on top.",
+      "glassware": "mixi7tg glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Port Wine Flip.\n                     Use Mixi7tg Glass.\n\n        ®NE teaspoonful powdered sugar; one\n             wine glass port wine; one fresh egg.\n        Fill glass half full of shaved ice. Shake\n        well, strain into star champagne glass, and\n        grate a little nutmeg on top."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-060",
+      "order": 60,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Port Wine Sangaree",
+      "name_es": "Port Wine Sangaree",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ®NE teaspoonful sugar dissolved in a little water; one wine glass port wine; five or six lumps of ice. Stir with spoon. Strain into a star champagne glass, and grate a little nutmeg on top. S3 ItV;' Wl Pousse Caf^* Use Pousse Cafi Glass. ^^NE-SIXTH each of the following; Raspberry syrup, maraschino, orange cura^oa, yellow Chartreuse, green Char treuse, and brandy. Pour in carefully so that they will not mix. * After-dinner drink. Pousse L'Amour.* Use Slurry Glass. ^^NE-QUARTER sherry glass mara schino; yolk of egg, cold; quarter of a glass of vanilla; quarter of a glass of cognac. Take great care that the egg does not mix with the cordials. * After-dinner drink.",
+      "method_es": "Use Mixing Glass. ®NE teaspoonful sugar dissolved in a little water; one wine glass port wine; five or six lumps of ice. Stir with spoon. Strain into a star champagne glass, and grate a little nutmeg on top. S3 ItV;' Wl Pousse Caf^* Use Pousse Cafi Glass. ^^NE-SIXTH each of the following; Raspberry syrup, maraschino, orange cura^oa, yellow Chartreuse, green Char treuse, and brandy. Pour in carefully so that they will not mix. * After-dinner drink. Pousse L'Amour.* Use Slurry Glass. ^^NE-QUARTER sherry glass mara schino; yolk of egg, cold; quarter of a glass of vanilla; quarter of a glass of cognac. Take great care that the egg does not mix with the cordials. * After-dinner drink.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Port Wine Sangaree.\n                     Use Mixing Glass.\n\n        ®NE teaspoonful sugar dissolved in a\n             little water; one wine glass port\n        wine; five or six lumps of ice. Stir with\n        spoon. Strain into a star champagne glass,\n        and grate a little nutmeg on top.\n\n                            S3\n\n\n\n\nItV;'\n                                             Wl\n\n\n\n\n                Pousse Caf^*\n             Use Pousse Cafi Glass.\n^^NE-SIXTH each of the following;\n     Raspberry syrup, maraschino, orange\ncura^oa, yellow Chartreuse, green Char\ntreuse, and brandy. Pour in carefully so\nthat they will not mix.\n  * After-dinner drink.\n\n             Pousse L'Amour.*\n                Use Slurry Glass.\n^^NE-QUARTER sherry glass mara\n     schino; yolk of egg, cold; quarter of\na glass of vanilla; quarter of a glass of\ncognac. Take great care that the egg does\nnot mix with the cordials.\n  * After-dinner drink."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-061",
+      "order": 61,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "Ramos Fizz",
+      "name_es": "Ramos Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "glass water",
+          "item_es": "glass water",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange flower water",
+          "item_es": "orange flower water",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ®NE tablespoonful sugar; juice of half lemon; white of one egg; one portion Tom gin; three dashes orange flower water. Fill with ice, shake weU, strain into fizz glass and fill with siphon 54 Remsen Cooler. Use Large Glass. NE whole rind of lemon; three lumps © of ice; one portion Tom gin; one bottle plain soda. Rhine Wine Cobblen ®NE tablespoonful powdered sugar; one-half glass water. Dissolve well with spoon. Fill glass with shaved ice. Fill with Rhine wine.      Shake well and ornament with fruits.     Serve with straws. Rickety Scotch. Use Medium-sized Ttimbler. MALF a lime squeezed into glass; two dashes lemon juice; one wine glass Scotch whiskey; one lump ice. Fill with siphon. 55",
+      "method_es": "Use Mixing Glass. ®NE tablespoonful sugar; juice of half lemon; white of one egg; one portion Tom gin; three dashes orange flower water. Fill with ice, shake weU, strain into fizz glass and fill with siphon 54 Remsen Cooler. Use Large Glass. NE whole rind of lemon; three lumps © of ice; one portion Tom gin; one bottle plain soda. Rhine Wine Cobblen ®NE tablespoonful powdered sugar; one-half glass water. Dissolve well with spoon. Fill glass with shaved ice. Fill with Rhine wine.      Shake well and ornament with fruits.     Serve with straws. Rickety Scotch. Use Medium-sized Ttimbler. MALF a lime squeezed into glass; two dashes lemon juice; one wine glass Scotch whiskey; one lump ice. Fill with siphon. 55",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ramos Fizz.\n               Use Mixing Glass.\n®NE tablespoonful sugar; juice of half\n     lemon; white of one egg; one portion\nTom gin; three dashes orange flower water.\nFill with ice, shake weU, strain into fizz\nglass and fill with siphon\n\n                          54\n            Remsen Cooler.\n              Use Large Glass.\n\n    NE whole rind of lemon; three lumps\n© of ice; one portion Tom gin; one\nbottle plain soda.\n\n\n\n\n         Rhine Wine Cobblen\n®NE tablespoonful powdered sugar;\n     one-half glass water. Dissolve well\nwith spoon. Fill glass with shaved ice.\nFill with Rhine wine.      Shake well and\nornament with fruits.     Serve with straws.\n\n\n\n\n            Rickety Scotch.\n         Use Medium-sized Ttimbler.\n\nMALF a lime squeezed into glass; two\n      dashes lemon juice; one wine glass\nScotch whiskey; one lump ice. Fill with\nsiphon.\n                     55"
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-062",
+      "order": 62,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "Royal Fizz",
+      "name_es": "Royal Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "wine glassfuls sauteme",
+          "item_es": "wine glassfuls sauteme",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. ®NE tablespoonful fine sugar; three or four dashes lemon juice; one wine glass Tom gin; one egg. Fill glass with ice, shake well, strain into fizz glass, and fill with siphon. Royal Plash. Use Glass Pitcher. *^^0 or three large lumps ice; one pint champagne; one pint of Burgundy. Pour into glass pitcher and stir with spoon. Sam Ward.* I l              f      l    pl c         i   c c     il l     ; fill i fi ic ;               fill l                 i       - lf U -        lf           c       c . f        - i         i   . S Sauterne Cotjfcler. Use Large Glass. H REE-QUARTERS tablespoonful XL powdered sugar; one-quarter wine glass water. Dissolve well with spoon. Fill glass with fine shaved ice; one and a half wine glassfuls sauteme. Shake well and     ornament with fruit.        Serve   with straws. Sauteme or Hock Cup. Use Glass Pitcher. ®NE tablespoonful sugar; rind of one lemon; three slices orange; three slices lemon; berries; one slice cucumber peel; one pony brandy; one pony mara schino ; one wine glass sherry; one quart sauterne or hock ; one bottle soda; two or three lumps ice. Ornament with fresh mint. 57 Shandy GafL Use Large Glass. fl                                                 l ;                   lf        i           l . i i                      if             p                         p i                             . S                              l . U                      l           . l p fl p i          l         i             li l",
+      "method_es": "Use Mixing Glass. ®NE tablespoonful fine sugar; three or four dashes lemon juice; one wine glass Tom gin; one egg. Fill glass with ice, shake well, strain into fizz glass, and fill with siphon. Royal Plash. Use Glass Pitcher. *^^0 or three large lumps ice; one pint champagne; one pint of Burgundy. Pour into glass pitcher and stir with spoon. Sam Ward.* I l              f      l    pl c         i   c c     il l     ; fill i fi ic ;               fill l                 i       - lf U -        lf           c       c . f        - i         i   . S Sauterne Cotjfcler. Use Large Glass. H REE-QUARTERS tablespoonful XL powdered sugar; one-quarter wine glass water. Dissolve well with spoon. Fill glass with fine shaved ice; one and a half wine glassfuls sauteme. Shake well and     ornament with fruit.        Serve   with straws. Sauteme or Hock Cup. Use Glass Pitcher. ®NE tablespoonful sugar; rind of one lemon; three slices orange; three slices lemon; berries; one slice cucumber peel; one pony brandy; one pony mara schino ; one wine glass sherry; one quart sauterne or hock ; one bottle soda; two or three lumps ice. Ornament with fresh mint. 57 Shandy GafL Use Large Glass. fl                                                 l ;                   lf        i           l . i i                      if             p                         p i                             . S                              l . U                      l           . l p fl p i          l         i             li l",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Royal Fizz.\n                          Use Mixing Glass.\n\n®NE tablespoonful fine sugar; three or\n          four dashes lemon juice; one wine\nglass Tom gin; one egg. Fill glass with ice,\nshake well, strain into fizz glass, and fill\nwith siphon.\n\n\n                          Royal Plash.\n                          Use Glass Pitcher.\n\n*^^0 or three large lumps ice; one pint\n    champagne; one pint of Burgundy.\nPour into glass pitcher and stir with spoon.\n\n\n                           Sam Ward.*\n\n     I l              f      l    pl c         i   c c     il\n               l     ; fill i fi ic ;               fill\n l                 i       - lf U\n      -        lf           c       c .\n           f        - i         i   .\n\n                                        S\n             Sauterne Cotjfcler.\n               Use Large Glass.\n\n      H REE-QUARTERS tablespoonful\nXL powdered sugar; one-quarter wine\nglass water. Dissolve well with spoon.\nFill glass with fine shaved ice; one and a\nhalf wine glassfuls sauteme. Shake well\nand     ornament with fruit.        Serve   with\nstraws.\n\n\n\n\n          Sauteme or Hock Cup.\n               Use Glass Pitcher.\n\n®NE tablespoonful sugar; rind of one\n      lemon; three slices orange; three\nslices lemon; berries; one slice cucumber\npeel; one pony brandy; one pony mara\nschino ; one wine glass sherry; one quart\nsauterne or hock ; one bottle soda; two or\nthree lumps ice. Ornament with fresh\nmint.\n\n\n\n                      57\n                                      Shandy GafL\n                                          Use Large Glass.\n\n    fl                                                 l ;                   lf        i           l .\n                         i i                      if             p                         p\ni                             .\n\n\n                                      S                              l .\n                                      U                      l           .\n\n                                      l p fl p\n               i          l         i             li l                            .        ill l\n    i                             ic .             ill i                                   ;\n        ll.                                   i        f     i                                     i\n               .\n\n\n\n\n                                          S                lip.\n                                      U        i i               l           .\n\n                                      p       f l p                                         ;\n                   i              l                                  i            ;         f\n         .              ill l                 lf f ll                                 ic . S\n         ll;               i i                    c              p                       l\n                       li l                                      p.\n\n                                                  5\n                            Silver Fizz-\n         "
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-063",
+      "order": 63,
+      "section_title": "Cocktails",
+      "category": "sour",
+      "name_original": "St. Croix Rum Sour",
+      "name_es": "St. Croix Rum Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grena dine syrup",
+          "item_es": "grena dine syrup",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use Mixing Glass. fl                  l p         f l            ; l                   ic ;               i    f l        .     i       l       ll.                i   l       S. i          .       iU l               i   ic ,    i       ll, i i                   l     . f        i . . 5 i ' I; Stingfer.* Use Mixing Glass. ©NE-THIRD white creme de menthe; two-thirds brandy. Fill with ice, shake well, and strain into a cocktail glass. * After-dinner drink. Syracuse Cooler. Use Large Glass. l              f             l l          ,                   l       p ic , p        i               f                     ;                l i              l . . U                        fS    l           . - I                        c,                 ,           i c                                   .                    l   l iU              i . f   - i              i     . Tom Collins. Use Large Glass. ^IjVAKE same as John Collins, using Tom gin instead of Holland. Tom and Jetry. Use a Mug. ©NE egg. Beat the white and yoke separately, then beat together, with one tablespoonful sugar, one-quarter por tion mm, three-quarters portion brandy. Add hot milk and serve with nutmeg on top. Velvet. Use Large Pitcher. jNE'bottle of stout; one bottle of cham pagne. Stir well and serve. 6i Ward Eigfht. Use Goblet. ®NE teaspoonful fine sugar; juice of half lemon; one tablespoonful Grena dine syrup; one portion rye whiskey; one lump ice. Fill glass with siphon, stir well, ornament with fruit, and serve.",
+      "method_es": "Use Mixing Glass. fl                  l p         f l            ; l                   ic ;               i    f l        .     i       l       ll.                i   l       S. i          .       iU l               i   ic ,    i       ll, i i                   l     . f        i . . 5 i ' I; Stingfer.* Use Mixing Glass. ©NE-THIRD white creme de menthe; two-thirds brandy. Fill with ice, shake well, and strain into a cocktail glass. * After-dinner drink. Syracuse Cooler. Use Large Glass. l              f             l l          ,                   l       p ic , p        i               f                     ;                l i              l . . U                        fS    l           . - I                        c,                 ,           i c                                   .                    l   l iU              i . f   - i              i     . Tom Collins. Use Large Glass. ^IjVAKE same as John Collins, using Tom gin instead of Holland. Tom and Jetry. Use a Mug. ©NE egg. Beat the white and yoke separately, then beat together, with one tablespoonful sugar, one-quarter por tion mm, three-quarters portion brandy. Add hot milk and serve with nutmeg on top. Velvet. Use Large Pitcher. jNE'bottle of stout; one bottle of cham pagne. Stir well and serve. 6i Ward Eigfht. Use Goblet. ®NE teaspoonful fine sugar; juice of half lemon; one tablespoonful Grena dine syrup; one portion rye whiskey; one lump ice. Fill glass with siphon, stir well, ornament with fruit, and serve.",
+      "glassware": "mixing glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "St. Croix Rum Sour.\n                        Use Mixing Glass.\n\n    fl                  l p         f l            ;\n                        l                   ic ;               i    f\n     l        .     i       l       ll.                i   l       S.\n         i          .       iU l               i   ic ,    i       ll,\n                  i i                   l     .\nf        i . .\n\n                                    5\n\n\n\n\n                                              i\n                                              '\n                                             I;\n                                    Stingfer.*\n                           Use Mixing Glass.\n\n©NE-THIRD white creme de menthe;\n    two-thirds brandy. Fill with ice,\nshake well, and strain into a cocktail glass.\n     * After-dinner drink.\n\n\n\n\n                          Syracuse Cooler.\n                               Use Large Glass.\n\n       l              f             l l          ,                   l       p ic ,\n                  p        i               f                     ;                l\n i              l .\n\n\n                                                     .\n\n                      U                        fS    l           .\n\n               - I                        c,                 ,           i\n                     c                                   .                    l   l\n                           iU              i .\n           f   - i              i     .\n             Tom Collins.\n\n             Use Large Glass.\n\n^IjVAKE same as John Collins, using\n      Tom gin instead of Holland.\n\n\n\n           Tom and Jetry.\n               Use a Mug.\n\n©NE egg. Beat the white and yoke\n    separately, then beat together, with\none tablespoonful sugar, one-quarter por\ntion mm, three-quarters portion brandy.\nAdd hot milk and serve with nutmeg on\ntop.\n\n\n                 Velvet.\n\n             Use Large Pitcher.\n\n   jNE'bottle of stout; one bottle of cham\n     pagne. Stir well and serve.\n                     6i\n              Ward Eigfht.\n                 Use Goblet.\n\n\n®NE teaspoonful fine sugar; juice of\n     half lemon; one tablespoonful Grena\ndine syrup; one portion rye whiskey; one\nlump ice. Fill glass with siphon, stir well,\nornament with fruit, and serve.\n\n\n\n\n            Whiskey Rickey.\n(^^AME asLS gin\n            gin rickey,\n                rick( using whiskey in\n    the place of gin."
+    },
+    {
+      "id": "1933-the-cocktail-book-repeal-edition-new-revised-edition-064",
+      "order": 64,
+      "section_title": "Cocktails",
+      "category": "sour",
+      "name_original": "Whiskey Sour",
+      "name_es": "Whiskey Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint cider",
+          "item_es": "pint cider",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "juice of orange",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "^AME as St. Croix Rum Sour, using S whiskey in place of nun. 62 Some IRecent jTavoritea Bandol Melange portion Kiimniel; one portion Jamaica rum. Pour into a champagne glass full of shaved ice. Allow to set for one hour. Serve with a straw. Shelboome Cooler Use Shaker of one egg; one portion Gordon gin; juice of one orange; one-quarter portion of Grenadine. Fill with ice, shake well, and strain into a tall glass, and then fill with soda water. 63 1''       ' F' lef m      f f. -''* V'M \".'■   , ' ' )' I   ic   Uc   )i f c p c     i    i     . ■       p . '•M '■ '■' I flon^aicobolic IBJrlnfte. Boston Cooler. Use Large Glass. i l                     f           l              ;           l           p ic ; l                   p ill ;                l           i          l . ic U          i i            l   , f                             l p             f l              ;              f ;          lf       l                              ic .        ill l           i               ic ,               ,           i       i      l l       ,                                                              p. S i                   . Boll's Eye. Use Large Glass. IND of one lemon; three lumps ice; 1R half pint cider; one bottle ginger ale. er Horse's Necfc. Use Large Glass. I I                        l         ;                                  l       p ll ic ;                           l       i                   l . Si             i p              . . U                     l       . ''",
+      "method_es": "^AME as St. Croix Rum Sour, using S whiskey in place of nun. 62 Some IRecent jTavoritea Bandol Melange portion Kiimniel; one portion Jamaica rum. Pour into a champagne glass full of shaved ice. Allow to set for one hour. Serve with a straw. Shelboome Cooler Use Shaker of one egg; one portion Gordon gin; juice of one orange; one-quarter portion of Grenadine. Fill with ice, shake well, and strain into a tall glass, and then fill with soda water. 63 1''       ' F' lef m      f f. -''* V'M \".'■   , ' ' )' I   ic   Uc   )i f c p c     i    i     . ■       p . '•M '■ '■' I flon^aicobolic IBJrlnfte. Boston Cooler. Use Large Glass. i l                     f           l              ;           l           p ic ; l                   p ill ;                l           i          l . ic U          i i            l   , f                             l p             f l              ;              f ;          lf       l                              ic .        ill l           i               ic ,               ,           i       i      l l       ,                                                              p. S i                   . Boll's Eye. Use Large Glass. IND of one lemon; three lumps ice; 1R half pint cider; one bottle ginger ale. er Horse's Necfc. Use Large Glass. I I                        l         ;                                  l       p ll ic ;                           l       i                   l . Si             i p              . . U                     l       . ''",
+      "glassware": "large glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Sour.\n   ^AME as St. Croix Rum Sour, using\nS whiskey in place of nun.\n                    62\n    Some IRecent jTavoritea\n             Bandol Melange\n\n          portion Kiimniel; one portion\n      Jamaica rum. Pour into a champagne\nglass full of shaved ice. Allow to set for one\nhour. Serve with a straw.\n\n\n\n            Shelboome Cooler\n                  Use Shaker\n\n              of one egg; one portion Gordon\n        gin; juice of one orange; one-quarter\nportion of Grenadine. Fill with ice, shake\nwell, and strain into a tall glass, and then\nfill with soda water.\n\n\n\n\n                      63\n 1''       '\n           F'\nlef\nm      f\n              f. -''* V'M \".'■   ,\n\n\n\n\n                                       ' ' )'\n\n\n\n\nI   ic   Uc   )i f\n              c p\n    c     i    i     .\n                         ■       p .\n'•M\n\n'■\n\n\n\n\n     '■' I\n        flon^aicobolic IBJrlnfte.\n\n                             Boston Cooler.\n\n                              Use Large Glass.\n\ni l                     f           l              ;           l           p ic ;\n                l                   p ill ;                l           i          l .\n\n\n\n\n                                               ic\n                             U          i i            l   ,\n\nf                             l p             f l              ;              f\n                    ;          lf       l                              ic .        ill\nl           i               ic ,               ,           i       i      l\nl       ,                                                              p. S\n    i                   .\n                                         Boll's Eye.\n                                      Use Large Glass.\n\n                    IND of one lemon; three lumps ice;\n     1R half pint cider; one bottle ginger\n         ale.\n\ner\n                                     Horse's Necfc.\n                                     Use Large Glass.\n\n          I I                        l         ;                                  l       p\n         ll ic ;                           l       i                   l . Si             i\n         p              .\n\n\n\n\n                                                               .\n                                     U                     l       .\n\n     ''                     S                  U                        ;\n                    f                    l                     ic ;                   f\n     l         p            f ic .        ill l                  i            ,\n              ll,                                      i           f    i .       S\n          i                     .\n              Egfg Lemonacie*\n               Use Mixing Glass.\n          fresh egg; tablespoonful sugar;\n     four or five dashes lemon juice; four\nor five lumps of ice. Fill with water,\nshake well, and strain into a large glass.\n\n\n\n             Soda Lemonade.\n                Use Large Glass.\n\n'^'ABLESPOONFUL sugar; three or\n     four dashes lemon"
+    }
+  ]
+}
