@@ -368,6 +368,22 @@
     "bookFile": "data/euvs-books/1889-methode-pour-composer-soi-meme-les-boissons-americaines-by-emile-lefeuvre.json"
   },
   {
+    "id": "1890-the-art-of-drinking-by-g-g-gervinus",
+    "year": 1890,
+    "decade": "1890s",
+    "title": "Art of Drinking Gervinus",
+    "author": "G. G. Gervinus",
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": "Self-published",
+    "city": "DE",
+    "edition": "Edition",
+    "notes": "Manual de Gervinus (1890).",
+    "sectionCount": 2,
+    "recipeCount": 5,
+    "bookFile": "data/euvs-books/1890-the-art-of-drinking-by-g-g-gervinus.json"
+  },
+  {
     "id": "1891-drinks-a-la-mode-by-mrs-de-salis",
     "year": 1891,
     "decade": "1890s",
@@ -496,6 +512,22 @@
     "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
   },
   {
+    "id": "1904-one-hundred-and-one-beverages",
+    "year": 1904,
+    "decade": "1900s",
+    "title": "101 Beverages",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Edition",
+    "notes": "Compendio (1904).",
+    "sectionCount": 2,
+    "recipeCount": 6,
+    "bookFile": "data/euvs-books/1904-one-hundred-and-one-beverages.json"
+  },
+  {
     "id": "1905-bebidas-americanas-refrescos-y-licores",
     "year": 1905,
     "decade": "1900s",
@@ -622,6 +654,22 @@
     "sectionCount": 9,
     "recipeCount": 76,
     "bookFile": "data/euvs-books/1910-ca-101-drinks-and-how-to-mix-them.json"
+  },
+  {
+    "id": "1910-das-buch-der-american-drinks-by-richard-andeck",
+    "year": 1910,
+    "decade": "1910s",
+    "title": "Das Buch der American Drinks",
+    "author": "Richard Andeck",
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": "Self-published",
+    "city": "DE",
+    "edition": "Edition",
+    "notes": "Manual alemán pre-WWI.",
+    "sectionCount": 2,
+    "recipeCount": 53,
+    "bookFile": "data/euvs-books/1910-das-buch-der-american-drinks-by-richard-andeck.json"
   },
   {
     "id": "1910-the-barkeepers-manual-by-raymond-e-sullivan-second-edition",
