@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "LA FLEUR DE L'ORANGER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème de cassis et deux d'abricotine",
+          "item_es": "crème de cassis et deux d'abricotine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "frapper avec de la glace en morceaux. Agiter fortement",
       "method_es": "frapper avec de la glace en morceaux. Agiter fortement",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -74,13 +82,21 @@
       "category": "cocktail",
       "name_es": "LE DIABLE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao blanc",
+          "item_es": "curaçao blanc",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +107,28 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL A LA PIE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "quin-",
+          "item_es": "quin-",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jus de citron et du sirop de sucre",
+          "item_es": "jus de citron et du sirop de sucre",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +139,21 @@
       "category": "cocktail",
       "name_es": "LE WESTBROOK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth italien",
+          "item_es": "vermouth italien",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "débarrassé soigneusement de toute la moelle blanche",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -142,13 +181,21 @@
       "category": "cocktail",
       "name_es": "LE COUP DE DENT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ahsinthe",
+          "item_es": "ahsinthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +206,42 @@
       "category": "cocktail",
       "name_es": "LA MARMELADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zes te d'orange",
+          "item_es": "zes te d'orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe ainsi",
+          "item_es": "absinthe ainsi",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bitter et servir avec nn e olive",
+          "item_es": "bitter et servir avec nn e olive",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gin el trois v erres d 'a hsintlh'",
+          "item_es": "gin el trois v erres d 'a hsintlh'",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -176,13 +252,21 @@
       "category": "cocktail",
       "name_es": "LE CLAIR DE LUNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitter d'absinthe",
+          "item_es": "bitter d'absinthe",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +277,28 @@
       "category": "cocktail",
       "name_es": "LA MARGUEHITE JAUNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth",
+          "item_es": "vermouth",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +309,28 @@
       "category": "cocktail",
       "name_es": "L'OPALE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus d'o-",
+          "item_es": "jus d'o-",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "triple-sec",
+          "item_es": "triple-sec",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -261,13 +375,21 @@
       "category": "cocktail",
       "name_es": "LE DIABLE VERT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitter à",
+          "item_es": "bitter à",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper soig·neusement. Doit être servi assez froid pour que la buée glace les verres .",
       "method_es": "Frapper soig·neusement. Doit être servi assez froid pour que la buée glace les verres .",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -295,13 +417,21 @@
       "category": "cocktail",
       "name_es": "DOUX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "un vin",
+          "item_es": "un vin",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -312,13 +442,21 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL AUX AMANDES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "un vin blanc un",
+          "item_es": "un vin blanc un",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -329,13 +467,28 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL A LA VIERGE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitter d'orange et deux traits de",
+          "item_es": "bitter d'orange et deux traits de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "glace pilée",
+          "item_es": "glace pilée",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "pourra. Sur ce zeste, dans le gobelet à frapper, verser Frapper soigneusement. Servir avec un peu de zeste de",
       "method_es": "pourra. Sur ce zeste, dans le gobelet à frapper, verser Frapper soigneusement. Servir avec un peu de zeste de",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -346,13 +499,21 @@
       "category": "cocktail",
       "name_es": "LA NUIT DE LUNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vin",
+          "item_es": "vin",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +524,21 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL A LA MENTHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin et un verre e t de mi d e cc'",
+          "item_es": "gin et un verre e t de mi d e cc'",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -397,13 +566,42 @@
       "category": "sour",
       "name_es": "LE SOURIRE DU ROI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "liqueur de",
+          "item_es": "liqueur de",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "char-",
+          "item_es": "char-",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italien et deux",
+          "item_es": "vermouth italien et deux",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth fran-",
+          "item_es": "vermouth fran-",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper fortement le m élange suivant : trois verres",
       "method_es": "Frapper fortement le m élange suivant : trois verres",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -414,13 +612,35 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL BLANC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin et deux",
+          "item_es": "gin et deux",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sauternes",
+          "item_es": "sauternes",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth fra n çais",
+          "item_es": "vermouth fra n çais",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper cinq verres de g·in , un demi-verre d'anisette Frapper soig·neusement quatre verres de gin et deux Frapper très soig·neusem ent quatre verres de sauternes ADDITIONS",
       "method_es": "Frapper cinq verres de g·in , un demi-verre d'anisette Frapper soig·neusement quatre verres de gin et deux Frapper très soig·neusem ent quatre verres de sauternes ADDITIONS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -448,13 +668,21 @@
       "category": "cocktail",
       "name_es": "LE FAHFADET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth ital icn",
+          "item_es": "vermouth ital icn",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper et servir.",
       "method_es": "Frapper et servir.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -465,13 +693,70 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL A LA LINSTEAD",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky ajouter trois verres de jus",
+          "item_es": "whisky ajouter trois verres de jus",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de prw1e",
+          "item_es": "sirop de prw1e",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre et quel-",
+          "item_es": "sucre en poudre et quel-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "whisky d'e-",
+          "item_es": "whisky d'e-",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao et d'une d emie de bitte r",
+          "item_es": "curaçao et d'une d emie de bitte r",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ver-",
+          "item_es": "ver-",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "crème de parfait",
+          "item_es": "crème de parfait",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe et deux ou trois traits de",
+          "item_es": "absinthe et deux ou trois traits de",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "pour que la glace en fondant fass e la quantité requis e. Frapper soig·neusement trois verres de whisky d'E- Frapper très soign eusem ent et plus longtemps qu'à",
       "method_es": "pour que la glace en fondant fass e la quantité requis e. Frapper soig·neusement trois verres de whisky d'E- Frapper très soign eusem ent et plus longtemps qu'à",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -584,13 +869,21 @@
       "category": "cocktail",
       "name_es": "LE DAIQUIHI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gtenadine et trois",
+          "item_es": "gtenadine et trois",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -601,13 +894,35 @@
       "category": "cocktail",
       "name_es": "LE RAYON DE SOLEIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum e t trois verres de jus",
+          "item_es": "rhum e t trois verres de jus",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitter à l'absinthe",
+          "item_es": "bitter à l'absinthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "rhwn de la",
+          "item_es": "rhwn de la",
+          "amount": "5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper soigneusement cinq verres de rhwn de la",
       "method_es": "Frapper soigneusement cinq verres de rhwn de la",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -618,13 +933,35 @@
       "category": "cocktail",
       "name_es": "L'A IE U LE NOIRE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse et un verre et de1ni d e",
+          "item_es": "chartreuse et un verre et de1ni d e",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "quinquina et deux verres de",
+          "item_es": "quinquina et deux verres de",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "ADDITIONS",
       "method_es": "ADDITIONS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -669,13 +1006,21 @@
       "category": "cocktail",
       "name_es": "LE DOCKER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "triplc-",
+          "item_es": "triplc-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -686,13 +1031,21 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL DE LAW",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper soigneusement dans le gobelet trois jaunes Frapper cnscmhlc trois verres de cog·nac et trois",
       "method_es": "Frapper soigneusement dans le gobelet trois jaunes Frapper cnscmhlc trois verres de cog·nac et trois",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -703,13 +1056,21 @@
       "category": "cocktail",
       "name_es": "LE F AN TAISISTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper très soigneusement cinq verres de cog·nac Frapper soigneusement <leux verres et demi de cognac Frapper très soig·neusement trois verres de cog·nac et Frapper soigneusement cinq verres de cognac, aux- ADDITIONS",
       "method_es": "Frapper très soigneusement cinq verres de cog·nac Frapper soigneusement <leux verres et demi de cognac Frapper très soig·neusement trois verres de cog·nac et Frapper soigneusement cinq verres de cognac, aux- ADDITIONS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 41,
@@ -720,13 +1081,21 @@
       "category": "cocktail",
       "name_es": "NIELKA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth",
+          "item_es": "vermouth",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper très énergiquement deux verres d e whisky,",
       "method_es": "Frapper très énergiquement deux verres d e whisky,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -754,13 +1123,21 @@
       "category": "cocktail",
       "name_es": "LA PERLE ROSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "xérès",
+          "item_es": "xérès",
+          "amount": "6",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -771,13 +1148,42 @@
       "category": "cocktail",
       "name_es": "ELECTRA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "xérès et un verre de ver-",
+          "item_es": "xérès et un verre de ver-",
+          "amount": "5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao e t nn verre d0",
+          "item_es": "curaçao e t nn verre d0",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italien accompagnés d'une",
+          "item_es": "vermouth italien accompagnés d'une",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper soigneusement trois verres de sloe g·in et",
       "method_es": "Frapper soigneusement trois verres de sloe g·in et",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -788,13 +1194,28 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL AU CHAMPAGNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitter",
+          "item_es": "bitter",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fine cham-",
+          "item_es": "fine cham-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -805,13 +1226,28 @@
       "category": "cocktail",
       "name_es": "LE CALVADOS AU NATUREL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "triple-sec et un de bitter",
+          "item_es": "triple-sec et un de bitter",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cal-",
+          "item_es": "cal-",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -924,13 +1360,28 @@
       "category": "cocktail",
       "name_es": "LE COCKTAIL A L'ANANAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitter à l'orange",
+          "item_es": "bitter à l'orange",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch et un de sirop de",
+          "item_es": "kirsch et un de sirop de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper ensemble quatre verres d e quinquina , d eux Frapper ensemble d eux v erres de quinquina, d eux",
       "method_es": "Frapper ensemble quatre verres d e quinquina , d eux Frapper ensemble d eux v erres de quinquina, d eux",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -1026,13 +1477,21 @@
       "category": "julep",
       "name_es": "LE JULEP AU RHUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mandarine",
+          "item_es": "mandarine",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1043,13 +1502,21 @@
       "category": "julep",
       "name_es": "LE JULEP AU COGNAC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum pour chaque",
+          "item_es": "rhum pour chaque",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 61,
@@ -1094,13 +1561,21 @@
       "category": "cocktail",
       "name_es": "V ARI AN T E",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ananas et enfin une",
+          "item_es": "ananas et enfin une",
+          "amount": "4",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 64,
@@ -1179,13 +1654,21 @@
       "category": "cocktail",
       "name_es": "LA COUPE DE VIN DU RHIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vin",
+          "item_es": "vin",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1196,13 +1679,21 @@
       "category": "cocktail",
       "name_es": "LA COUPE DE SAUTERNES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sau-",
+          "item_es": "sau-",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 70,
@@ -1315,13 +1806,28 @@
       "category": "toddy",
       "name_es": "LE TODDY AU GIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron et un peu d e cannelle",
+          "item_es": "citron et un peu d e cannelle",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "citron et du rhum",
+          "item_es": "citron et du rhum",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "ADDITIONS",
       "method_es": "ADDITIONS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 77,
@@ -1332,13 +1838,21 @@
       "category": "cocktail",
       "name_es": "L'OR A NGEADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky m élangé",
+          "item_es": "whisky m élangé",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 78,
@@ -1400,13 +1914,21 @@
       "category": "cocktail",
       "name_es": "LE TRISMEGISTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitter",
+          "item_es": "bitter",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper et servir dans des gTands verres en complétant",
       "method_es": "Frapper et servir dans des gTands verres en complétant",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1451,13 +1973,42 @@
       "category": "cocktail",
       "name_es": "MAGNOLIA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cherry-brandy",
+          "item_es": "cherry-brandy",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitter",
+          "item_es": "bitter",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao rouge",
+          "item_es": "curaçao rouge",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao et deux verres",
+          "item_es": "curaçao et deux verres",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper dans le gobelet trois jaunes d 'œuf, trois Frapper soigneusement dans le gobelet trois œufs, Frapper soigneusement trois jaunes d'œuf avec deux",
       "method_es": "Frapper dans le gobelet trois jaunes d 'œuf, trois Frapper soigneusement dans le gobelet trois œufs, Frapper soigneusement trois jaunes d'œuf avec deux",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1468,13 +2019,28 @@
       "category": "cocktail",
       "name_es": "LE LION BLANC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "porto et du sirop d e sucre",
+          "item_es": "porto et du sirop d e sucre",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "poivre",
+          "item_es": "poivre",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper soigneusement et servir dans de grands verres Frapper soig·neusement trois œufs avec deux verres",
       "method_es": "Frapper soigneusement et servir dans de grands verres Frapper soig·neusement trois œufs avec deux verres",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1502,13 +2068,21 @@
       "category": "cocktail",
       "name_es": "L'HUITRE DE LA PRAIRIE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "catsup à la tomate",
+          "item_es": "catsup à la tomate",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "ADDITIONS Pour chaque p ersonne prendre une grande tasse de Pour ce thé employer la valeur d 'une pleine cuillerée à ADDITIONS",
       "method_es": "ADDITIONS Pour chaque p ersonne prendre une grande tasse de Pour ce thé employer la valeur d 'une pleine cuillerée à ADDITIONS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1519,13 +2093,21 @@
       "category": "punch",
       "name_es": "LE PUNCH AU LA I T",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bon vinaig-re d ' or-",
+          "item_es": "bon vinaig-re d ' or-",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 89,

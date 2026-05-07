@@ -74,13 +74,35 @@
       "category": "cocktail",
       "name_es": "COCKTAILS NUTRITIVOS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de carne",
+          "item_es": "jugo de carne",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "agua hirviendo",
+          "item_es": "agua hirviendo",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "consomé frío",
+          "item_es": "consomé frío",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Especial para los inapetentes.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -108,13 +130,112 @@
       "category": "cocktail",
       "name_es": "APERITIVOS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cassis",
+          "item_es": "cassis",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermut",
+          "item_es": "vermut",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de fresas",
+          "item_es": "jarabe de fresas",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermut francés",
+          "item_es": "vermut francés",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "dubonet",
+          "item_es": "dubonet",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "fruta del tiempo picada sin",
+          "item_es": "fruta del tiempo picada sin",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra inglesa",
+          "item_es": "ginebra inglesa",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermut se ponen",
+          "item_es": "vermut se ponen",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo muy picado",
+          "item_es": "hielo muy picado",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "cura9ao",
+          "item_es": "cura9ao",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +246,77 @@
       "category": "cocktail",
       "name_es": "B ULL-DOG-COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de licor de d ry gin",
+          "item_es": "las de licor de d ry gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cidra",
+          "item_es": "cidra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de goma",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "alta de cristal y humedéz-",
+          "item_es": "alta de cristal y humedéz-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +327,42 @@
       "category": "fizz",
       "name_es": "GIN-FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de azúcar",
+          "item_es": "jarabe de azúcar",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande y termínese de llenar de agua de",
+          "item_es": "grande y termínese de llenar de agua de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +373,70 @@
       "category": "fizz",
       "name_es": "MORNING-GLORY-FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de azúcar",
+          "item_es": "jarabe de azúcar",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de granadina",
+          "item_es": "jarabe de granadina",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande y termínese de llenar de agua de",
+          "item_es": "grande y termínese de llenar de agua de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de granadina",
+          "item_es": "jarabe de granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pequeñas de jarabe de azúcar",
+          "item_es": "pequeñas de jarabe de azúcar",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -176,13 +447,49 @@
       "category": "cocktail",
       "name_es": "GROGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua hirviendo",
+          "item_es": "agua hirviendo",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gran-",
+          "item_es": "gran-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las de licor de ron",
+          "item_es": "las de licor de ron",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar en polvo",
+          "item_es": "grande de azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +500,42 @@
       "category": "cocktail",
       "name_es": "LIMONADAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande de azúcar en polvo",
+          "item_es": "grande de azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bielo",
+          "item_es": "bielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar",
+          "item_es": "grande de azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "agua",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +546,21 @@
       "category": "cocktail",
       "name_es": "IMPERIAL-LIMONADA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Proporción para cuatro personas.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +571,49 @@
       "category": "cocktail",
       "name_es": "LEMON-SQUASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "hielo muy picado",
+          "item_es": "hielo muy picado",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar en polvo",
+          "item_es": "grande de azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fruta del tiempo muy picada",
+          "item_es": "fruta del tiempo muy picada",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "vino del rin",
+          "item_es": "vino del rin",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -244,13 +624,42 @@
       "category": "cocktail",
       "name_es": "NARANJADAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande de azúcar en polvo",
+          "item_es": "grande de azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar",
+          "item_es": "grande de azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "agua natural",
+          "item_es": "agua natural",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -261,13 +670,21 @@
       "category": "cocktail",
       "name_es": "PONCHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande de azúcar",
+          "item_es": "grande de azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +695,63 @@
       "category": "cocktail",
       "name_es": "PEDRO CHICOTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar",
+          "item_es": "grande de azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fruta del tiempo",
+          "item_es": "fruta del tiempo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky canadian",
+          "item_es": "whisky canadian",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande con un po-",
+          "item_es": "grande con un po-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "piña de américa y naranja",
+          "item_es": "piña de américa y naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +762,35 @@
       "category": "cocktail",
       "name_es": "PARISIEN-PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar",
+          "item_es": "grande de azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fruta del tiempo",
+          "item_es": "fruta del tiempo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -312,13 +801,56 @@
       "category": "cocktail",
       "name_es": "PORTO-PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande de azúcar",
+          "item_es": "grande de azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fruta del tiempo",
+          "item_es": "fruta del tiempo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fruta variada",
+          "item_es": "fruta variada",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de fresa",
+          "item_es": "jarabe de fresa",
+          "amount": "6",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -329,13 +861,49 @@
       "category": "sangaree",
       "name_es": "SANGAREES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "las de vino de coñac",
+          "item_es": "las de vino de coñac",
+          "amount": "9",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "las de vino de crema de cacao",
+          "item_es": "las de vino de crema de cacao",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -346,13 +914,56 @@
       "category": "toddy",
       "name_es": "TODDYES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "lúelo",
+          "item_es": "lúelo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las de licor de jerez",
+          "item_es": "las de licor de jerez",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +974,42 @@
       "category": "cocktail",
       "name_es": "VARIOS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cointreau",
+          "item_es": "cointreau",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "crema de cacao",
+          "item_es": "crema de cacao",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "pipermint",
+          "item_es": "pipermint",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -380,13 +1020,112 @@
       "category": "cocktail",
       "name_es": "BISHOP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande de miel",
+          "item_es": "grande de miel",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las de vino de agua caliente",
+          "item_es": "las de vino de agua caliente",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "vino de madera",
+          "item_es": "vino de madera",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermut",
+          "item_es": "vermut",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "angostura bitters",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "dry gin",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pi-",
+          "item_es": "pi-",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermut italiano",
+          "item_es": "vermut italiano",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

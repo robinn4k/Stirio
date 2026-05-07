@@ -40,13 +40,77 @@
       "category": "cocktail",
       "name_es": "Absinthe cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana de agua",
+          "item_es": "mediana de agua",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de azú",
+          "item_es": "jarabe de azú",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac",
+          "item_es": "mediana de cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pequeña de line cham",
+          "item_es": "pequeña de line cham",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de fram",
+          "item_es": "jarabe de fram",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +121,42 @@
       "category": "cocktail",
       "name_es": "Chicago cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac fi ne",
+          "item_es": "mediana de cognac fi ne",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de ginebra",
+          "item_es": "mediana de ginebra",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +184,35 @@
       "category": "cocktail",
       "name_es": "Se llenan las tres cuartas partes",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de azú",
+          "item_es": "jarabe de azú",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao rojo",
+          "item_es": "curacao rojo",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -125,13 +240,28 @@
       "category": "cocktail",
       "name_es": "Se, media la colélera de pedaci",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de hor",
+          "item_es": "jarabe de hor",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac",
+          "item_es": "mediana de cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +272,35 @@
       "category": "cocktail",
       "name_es": "Jersey cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de sidra",
+          "item_es": "mediana de sidra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +311,42 @@
       "category": "cocktail",
       "name_es": "Manhatan cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curooao",
+          "item_es": "curooao",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de vermout",
+          "item_es": "mediana de vermout",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -176,13 +357,21 @@
       "category": "cocktail",
       "name_es": "Martínez cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +382,28 @@
       "category": "cocktail",
       "name_es": "Metropolitan cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana de vermout",
+          "item_es": "mediana de vermout",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac",
+          "item_es": "mediana de cognac",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +414,28 @@
       "category": "cocktail",
       "name_es": "Oíd Totn, cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +446,28 @@
       "category": "cocktail",
       "name_es": "Soda cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -244,13 +478,42 @@
       "category": "cocktail",
       "name_es": "Whisky cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "mediana scotch whisky",
+          "item_es": "mediana scotch whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -261,13 +524,35 @@
       "category": "cocktail",
       "name_es": "Vermout cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana de vermout",
+          "item_es": "mediana de vermout",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de ron jamaica",
+          "item_es": "mediana de ron jamaica",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +563,42 @@
       "category": "cocktail",
       "name_es": "Laicñ cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de oportc tinto",
+          "item_es": "mediana de oportc tinto",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor",
+          "item_es": "licor",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +609,28 @@
       "category": "cocktail",
       "name_es": "Oniniuni Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "paca bufdeos",
+          "item_es": "paca bufdeos",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -329,13 +658,28 @@
       "category": "cocktail",
       "name_es": "Llénese la cotelera, como dos",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar pulveri",
+          "item_es": "azúcar pulveri",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "medianas de jerez pá",
+          "item_es": "medianas de jerez pá",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -380,13 +724,21 @@
       "category": "cocktail",
       "name_es": "Se agita fuei lemenle y se echa",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "opor-",
+          "item_es": "opor-",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -448,13 +800,35 @@
       "category": "cobbler",
       "name_es": "Clarei cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande se echan",
+          "item_es": "grande se echan",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "burdeos tinto",
+          "item_es": "burdeos tinto",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -499,13 +873,28 @@
       "category": "cobbler",
       "name_es": "Sauterne cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar pulve",
+          "item_es": "azúcar pulve",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "medianas de vino sau",
+          "item_es": "medianas de vino sau",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -516,13 +905,28 @@
       "category": "cocktail",
       "name_es": "Whisky cobhler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar pulve",
+          "item_es": "azúcar pulve",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "medianas de whisky",
+          "item_es": "medianas de whisky",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -533,13 +937,42 @@
       "category": "crusta",
       "name_es": "Brandy crusta",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tamaño muy gi'ande",
+          "item_es": "tamaño muy gi'ande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "zumo de limón",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -550,13 +983,42 @@
       "category": "cocktail",
       "name_es": "Jamaica crasta",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de gra",
+          "item_es": "jarabe de gra",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de ron jamaica",
+          "item_es": "mediana de ron jamaica",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -584,13 +1046,28 @@
       "category": "cocktail",
       "name_es": "Gin daisges",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cordial de na",
+          "item_es": "cordial de na",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -601,13 +1078,28 @@
       "category": "flip",
       "name_es": "Impefial egg nogg",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac",
+          "item_es": "mediana de cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -618,13 +1110,28 @@
       "category": "flip",
       "name_es": "Sherry egg nogg",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar pulveri",
+          "item_es": "azúcar pulveri",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "medianas de jerez",
+          "item_es": "medianas de jerez",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -669,13 +1176,35 @@
       "category": "cocktail",
       "name_es": "Brandy fix",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar disuel",
+          "item_es": "azúcar disuel",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de",
+          "item_es": "mediana de",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de ananas",
+          "item_es": "jarabe de ananas",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -703,13 +1232,28 @@
       "category": "fizz",
       "name_es": "Brandy fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac",
+          "item_es": "mediana de cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 41,
@@ -720,13 +1264,35 @@
       "category": "cocktail",
       "name_es": "Ginflzz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "zumo    de",
+          "item_es": "zumo    de",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de buena gi",
+          "item_es": "mediana de buena gi",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -737,13 +1303,21 @@
       "category": "fizz",
       "name_es": "Glory fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "clara de huevo",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -771,13 +1345,28 @@
       "category": "cocktail",
       "name_es": "Echese en la cotelera mediada",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -805,13 +1394,35 @@
       "category": "cocktail",
       "name_es": "Grog común",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "para grog se disuel",
+          "item_es": "para grog se disuel",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "2",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de cognac",
+          "item_es": "mediana de cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -822,13 +1433,28 @@
       "category": "cocktail",
       "name_es": "Grog americano",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "este grog se",
+          "item_es": "este grog se",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -839,13 +1465,21 @@
       "category": "cocktail",
       "name_es": "Ponche helado d la imperial",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tierra",
+          "item_es": "tierra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

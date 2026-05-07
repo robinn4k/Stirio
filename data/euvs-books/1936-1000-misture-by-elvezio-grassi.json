@@ -49,13 +49,28 @@
       "category": "cocktail",
       "name_es": "MARESCIALLO DE BONO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rum di marca",
+          "item_es": "rum di marca",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura                    c10",
+          "item_es": "angostura                    c10",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "COCKTAIL MACALLÈ COCKTAIL Agitare nel shaker con ghiaccio: Agitare nel shaker con ghiaccio: 50% Vermouth Cinzano 50% Select 25% Cognac vecchio 10% Cognac vecchio 25% Liquore Aurum (del Vit- ro% Elisir di china toriale). 30% Cinzanino r spruzzo amaro di Venezia I spruzzo di bitter Campari. Servirlo c",
       "method_es": "COCKTAIL MACALLÈ COCKTAIL Agitare nel shaker con ghiaccio: Agitare nel shaker con ghiaccio: 50% Vermouth Cinzano 50% Select 25% Cognac vecchio 10% Cognac vecchio 25% Liquore Aurum (del Vit- ro% Elisir di china toriale). 30% Cinzanino r spruzzo amaro di Venezia I spruzzo di bitter Campari. Servirlo c",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -168,13 +183,21 @@
       "category": "julep",
       "name_es": "JULEPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "arancia",
+          "item_es": "arancia",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Brandy Julep. Francy Julep. Scegliete 5 foglie di menta fre- Versate in un calice piccolo: sca, trituratele e aggiungete 3 / 4 ghiaccio neve nel shaker assieme a questo: r cucchiaio Sciroppo bianco r cucchiaio zucchero r bicchiere da vermouth di 50%. Cognac, mescolate bene Gin poi: r spruzzo N oyeau",
       "method_es": "Brandy Julep. Francy Julep. Scegliete 5 foglie di menta fre- Versate in un calice piccolo: sca, trituratele e aggiungete 3 / 4 ghiaccio neve nel shaker assieme a questo: r cucchiaio Sciroppo bianco r cucchiaio zucchero r bicchiere da vermouth di 50%. Cognac, mescolate bene Gin poi: r spruzzo N oyeau",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -287,13 +310,21 @@
       "category": "cocktail",
       "name_es": "DECOTTI, INFUSIONI, TISANE, MACERAZIONI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "acqua",
+          "item_es": "acqua",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "DECOZIONI, ecc. Ricette con la dose per una porzione. Decozione di Lichene (Toni- Yz litro d'acqua. co emolliente) . Rimestare, filtrare e servire a Si fa cuocere a fuoco lento per piacere. 8 minuti: 5 grammi fronde di lichene Decozione di Regolizia (Las- r cucchiaino zucchero sativo). Yz litro d'ac",
       "method_es": "DECOZIONI, ecc. Ricette con la dose per una porzione. Decozione di Lichene (Toni- Yz litro d'acqua. co emolliente) . Rimestare, filtrare e servire a Si fa cuocere a fuoco lento per piacere. 8 minuti: 5 grammi fronde di lichene Decozione di Regolizia (Las- r cucchiaino zucchero sativo). Yz litro d'ac",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

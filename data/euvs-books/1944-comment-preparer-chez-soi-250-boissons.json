@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "Vous pouvez encore influer sur le goût de vos vins",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "votre vin de fruit",
+          "item_es": "votre vin de fruit",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "pour les autres vins dont nous allons exposer la fabri-",
       "method_es": "pour les autres vins dont nous allons exposer la fabri-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -74,13 +82,28 @@
       "category": "cocktail",
       "name_es": "Sirop d'Orgeat",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bonne eau de fleur d'oranger",
+          "item_es": "bonne eau de fleur d'oranger",
+          "amount": "6",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "large glass",
+          "notes": null
+        }
+      ],
       "method_original": "Pour réussir ce sirop, il faut prendre soin , d'abord,",
       "method_es": "Pour réussir ce sirop, il faut prendre soin , d'abord,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +114,28 @@
       "category": "cocktail",
       "name_es": "Sirop de Café",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "teinture de ci tron et 6 grs",
+          "item_es": "teinture de ci tron et 6 grs",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "eau-de-vie blanche",
+          "item_es": "eau-de-vie blanche",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +146,35 @@
       "category": "cocktail",
       "name_es": "Bischof",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vin blanc et",
+          "item_es": "vin blanc et",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "alcool",
+          "item_es": "alcool",
+          "amount": "10",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "alcool à 9qo",
+          "item_es": "alcool à 9qo",
+          "amount": "5",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,

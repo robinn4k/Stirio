@@ -57,13 +57,21 @@
       "category": "cocktail",
       "name_es": "ALEXANDER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura ''",
+          "item_es": "angostura ''",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +99,35 @@
       "category": "cocktail",
       "name_es": "AVIATION",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "crema de violeta",
+          "item_es": "crema de violeta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "kummel",
+          "item_es": "kummel",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -176,13 +206,28 @@
       "category": "cocktail",
       "name_es": "Una cáscara de naranja",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "chartreus amarillo",
+          "item_es": "chartreus amarillo",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -227,13 +272,42 @@
       "category": "cocktail",
       "name_es": "Casino",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "olo tom gin",
+          "item_es": "olo tom gin",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bictter",
+          "item_es": "orange bictter",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jugo limón",
+          "item_es": "jugo limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -295,13 +369,28 @@
       "category": "cocktail",
       "name_es": "COCKTAlLS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cllampagne póngase",
+          "item_es": "cllampagne póngase",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -380,13 +469,28 @@
       "category": "cocktail",
       "name_es": "Ooffee",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -414,13 +518,35 @@
       "category": "cocktail",
       "name_es": "DIXIE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "112",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostur a",
+          "item_es": "angostur a",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -567,13 +693,35 @@
       "category": "punch",
       "name_es": "BACARDI PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "112",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo limón",
+          "item_es": "jugo limón",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "crema cacao",
+          "item_es": "crema cacao",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -601,13 +749,35 @@
       "category": "fizz",
       "name_es": "Gin Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo limón",
+          "item_es": "jugo limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "fizz acaba-",
+          "item_es": "fizz acaba-",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -686,13 +856,21 @@
       "category": "fizz",
       "name_es": "Como nn gin fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -788,13 +966,21 @@
       "category": "cocktail",
       "name_es": "H OT TARY WHISKY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -924,13 +1110,21 @@
       "category": "cocktail",
       "name_es": "JACK SLOAT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth francés",
+          "item_es": "vermouth francés",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -958,13 +1152,28 @@
       "category": "cocktail",
       "name_es": "JAPANESE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "112",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura_",
+          "item_es": "angostura_",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 56,
@@ -1077,13 +1286,21 @@
       "category": "cocktail",
       "name_es": "COCKTAILB",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "anisete",
+          "item_es": "anisete",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 63,
@@ -1094,13 +1311,42 @@
       "category": "cocktail",
       "name_es": "METROPOLITAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "alniíbar",
+          "item_es": "alniíbar",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angosturn",
+          "item_es": "angosturn",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "benedietine",
+          "item_es": "benedietine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ajenjo",
+          "item_es": "ajenjo",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 64,
@@ -1298,13 +1544,28 @@
       "category": "cocktail",
       "name_es": "POMBIER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema casú",
+          "item_es": "crema casú",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth francfa",
+          "item_es": "vermouth francfa",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1349,13 +1610,35 @@
       "category": "cocktail",
       "name_es": "DE PEMARTIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac p emartin",
+          "item_es": "coñac p emartin",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "de 'frambuesa",
+          "item_es": "de 'frambuesa",
+          "amount": "112",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 79,
@@ -1383,13 +1666,21 @@
       "category": "cocktail",
       "name_es": "HERALDO PEMARTIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "viña pemartia",
+          "item_es": "viña pemartia",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 81,
@@ -1400,13 +1691,28 @@
       "category": "cocktail",
       "name_es": "DB PEMARTIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1451,13 +1757,21 @@
       "category": "cocktail",
       "name_es": "Vrnra de uu huevo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1468,13 +1782,28 @@
       "category": "cocktail",
       "name_es": "ROYAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oordorí gin",
+          "item_es": "oordorí gin",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "112",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1519,13 +1848,28 @@
       "category": "cocktail",
       "name_es": "Queern",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth italiano",
+          "item_es": "vermouth italiano",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "almlbar",
+          "item_es": "almlbar",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 89,
@@ -1655,13 +1999,28 @@
       "category": "cocktail",
       "name_es": "TWIN SIX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth lt111ia110",
+          "item_es": "vermouth lt111ia110",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 97,
@@ -1672,13 +2031,21 @@
       "category": "cocktail",
       "name_es": "TURF",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ajenjo",
+          "item_es": "ajenjo",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 98,
@@ -1740,13 +2107,21 @@
       "category": "cocktail",
       "name_es": "UNION J AOK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gran marnier",
+          "item_es": "gran marnier",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 102,
@@ -1757,13 +2132,21 @@
       "category": "cocktail",
       "name_es": "VERMOUTH BATI DO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 103,
@@ -1791,13 +2174,21 @@
       "category": "cocktail",
       "name_es": "White Rose",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 105,
@@ -1842,13 +2233,49 @@
       "category": "cocktail",
       "name_es": "SCOTCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cnraeao",
+          "item_es": "cnraeao",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "champagoe",
+          "item_es": "champagoe",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "mnrrasquoni",
+          "item_es": "mnrrasquoni",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "clll'acao",
+          "item_es": "clll'acao",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 108,
@@ -1876,13 +2303,35 @@
       "category": "cocktail",
       "name_es": "BAOARDJ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "112",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediano de granadina",
+          "item_es": "mediano de granadina",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 110,
@@ -1927,13 +2376,28 @@
       "category": "punch",
       "name_es": "PUNCHS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gol'don",
+          "item_es": "gol'don",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "do marrasquino",
+          "item_es": "do marrasquino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 113,

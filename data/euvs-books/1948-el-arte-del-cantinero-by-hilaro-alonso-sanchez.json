@@ -49,13 +49,21 @@
       "category": "cocktail",
       "name_es": "DEL COCTEL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "o uno o dos",
+          "item_es": "o uno o dos",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "\"The Standard Dictionary\", define así el coctel —cock- tail—; una bebida preparada con licores mezclados» gotas amargas y saínete (chorros breves). En el \"Oíd Waldorf Bar Book\", Albert Stevens Crockett, nos da a conocer» que los amargos de una clase u otra, se con- sideraban indispensables para la p",
       "method_es": "\"The Standard Dictionary\", define así el coctel —cock- tail—; una bebida preparada con licores mezclados» gotas amargas y saínete (chorros breves). En el \"Oíd Waldorf Bar Book\", Albert Stevens Crockett, nos da a conocer» que los amargos de una clase u otra, se con- sideraban indispensables para la p",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +74,21 @@
       "category": "cocktail",
       "name_es": "LISTA DE LOS VASOS Y COPAS PARA EL BAR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sencillo de los",
+          "item_es": "sencillo de los",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Copas de Cerveza clara Inglesa: 1) Alta» con cierta estre- chez en el centro, con talle corto» de 8 onzas, 2) Otra para la cerveza oscura: alta, fina, ligeramente cóncava hacia el borde, de 6 onzas. Copa para Cerveza Alemana; 1) De forma de pera, de ocho onzas. 2) Copa en forma de globo, con talle»",
       "method_es": "Copas de Cerveza clara Inglesa: 1) Alta» con cierta estre- chez en el centro, con talle corto» de 8 onzas, 2) Otra para la cerveza oscura: alta, fina, ligeramente cóncava hacia el borde, de 6 onzas. Copa para Cerveza Alemana; 1) De forma de pera, de ocho onzas. 2) Copa en forma de globo, con talle»",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +99,49 @@
       "category": "cocktail",
       "name_es": "CHARLIE ROSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sirope",
+          "item_es": "sirope",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse",
+          "item_es": "chartreuse",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "amargo de na-",
+          "item_es": "amargo de na-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "En un barrüito de licor: CLOVER CLUB (Original) Un trago de brandy. Jugo de medio limón. Una rebanada de limón» Media cucharada de azúcar. colocada en el tope. Media cucharadita de sirope Raspberry. CHOCOLATE SOLDIER Un cuarto vasito de clara de huevo. 09 yñ de Dubonnet. Un vasito de ginebra seca. 2",
       "method_es": "En un barrüito de licor: CLOVER CLUB (Original) Un trago de brandy. Jugo de medio limón. Una rebanada de limón» Media cucharada de azúcar. colocada en el tope. Media cucharadita de sirope Raspberry. CHOCOLATE SOLDIER Un cuarto vasito de clara de huevo. 09 yñ de Dubonnet. Un vasito de ginebra seca. 2",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -100,13 +152,42 @@
       "category": "cocktail",
       "name_es": "FIN DE SIECLE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo de na-",
+          "item_es": "amargo de na-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "high-",
+          "item_es": "high-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "granadi-         1 jugo de limón francés",
+          "item_es": "granadi-         1 jugo de limón francés",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "FLOATER",
       "method_es": "FLOATER",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -117,13 +198,56 @@
       "category": "cocktail",
       "name_es": "FULL HOUSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "largo de angos-",
+          "item_es": "largo de angos-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sirope de al-",
+          "item_es": "sirope de al-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "crema de",
+          "item_es": "crema de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargo de na-",
+          "item_es": "amargo de na-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "*4 de Fernet Blanca. % de vermouth italiano. Un chorro largo de Angos- 14 de whisky. tura. Servido frappé o no. Los U de Chartreuse amarillo. buenos tomadores lo toman % de Benedictine. sin hielo. ||t de whisky de manzana. GINGER ALE G0ATS DELIGHT Un cuadrado de hielo. i/l de Kirschwasser. Dos chorr",
       "method_es": "*4 de Fernet Blanca. % de vermouth italiano. Un chorro largo de Angos- 14 de whisky. tura. Servido frappé o no. Los U de Chartreuse amarillo. buenos tomadores lo toman % de Benedictine. sin hielo. ||t de whisky de manzana. GINGER ALE G0ATS DELIGHT Un cuadrado de hielo. i/l de Kirschwasser. Dos chorr",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -134,13 +258,28 @@
       "category": "cocktail",
       "name_es": "CRAND VIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo de na-",
+          "item_es": "amargo de na-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "be-",
+          "item_es": "be-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "M ia 1 Vasita de onza y media 14 de vermouth italiano. at Ginebra seca. !/4 de vermouth francés. i st Un chorro de Orange Bitters. 14 de ginebra Plymouth. An Trozos de hielo. Revuél- Con hielo» revuelto» cola- & vase bien y agregúesele un do y servido en su copa. n ow pedazo de cascara de limón Br y",
       "method_es": "M ia 1 Vasita de onza y media 14 de vermouth italiano. at Ginebra seca. !/4 de vermouth francés. i st Un chorro de Orange Bitters. 14 de ginebra Plymouth. An Trozos de hielo. Revuél- Con hielo» revuelto» cola- & vase bien y agregúesele un do y servido en su copa. n ow pedazo de cascara de limón Br y",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -151,13 +290,63 @@
       "category": "cocktail",
       "name_es": "DISTRIBUIDORES EXCLUSIVOS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth fran-",
+          "item_es": "vermouth fran-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ron bacardí",
+          "item_es": "ron bacardí",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "PINK LADY No. 2 POMEROY ! 3 de jugo de limón. % de vermouth italiano. % de ginebra. Y¿ de vermouth francés. )-H de Apple-jaek. Vs de ginebra Gordon. Gotas de granadina. Con hielo, revuelto, cola- Hielo. Bien batido, cola- do y servido con una cascara do y sírvase. de naranja. PINK ROSE PRUDENCE PRIM",
       "method_es": "PINK LADY No. 2 POMEROY ! 3 de jugo de limón. % de vermouth italiano. % de ginebra. Y¿ de vermouth francés. )-H de Apple-jaek. Vs de ginebra Gordon. Gotas de granadina. Con hielo, revuelto, cola- Hielo. Bien batido, cola- do y servido con una cascara do y sírvase. de naranja. PINK ROSE PRUDENCE PRIM",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -168,13 +357,63 @@
       "category": "cocktail",
       "name_es": "THUNDERBOLT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermoutli fran-",
+          "item_es": "vermoutli fran-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth fran-",
+          "item_es": "vermouth fran-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bi-",
+          "item_es": "orange bi-",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "amargo de na-",
+          "item_es": "amargo de na-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "1 parte de ginebra. TUXEDO No. 2 1 parte de brandy. Gotas de Marrasquino. 1 parte de whisky. Gotas de Angostura. Hielo. Batirlo 30 veces, Gotas de Ajenjo. colarlo y servirlo. y*> de ginebra seca. y¿ de vermouth francés, 09 í cucharada de Jerez. 20 TURF No. 1 Hielo, revuélvase, cuélese r, ille 1 part",
       "method_es": "1 parte de ginebra. TUXEDO No. 2 1 parte de brandy. Gotas de Marrasquino. 1 parte de whisky. Gotas de Angostura. Hielo. Batirlo 30 veces, Gotas de Ajenjo. colarlo y servirlo. y*> de ginebra seca. y¿ de vermouth francés, 09 í cucharada de Jerez. 20 TURF No. 1 Hielo, revuélvase, cuélese r, ille 1 part",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -185,13 +424,84 @@
       "category": "cocktail",
       "name_es": "VANDERVERE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "14",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sirope rasp-",
+          "item_es": "sirope rasp-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth ita-",
+          "item_es": "vermouth ita-",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de vainilla",
+          "item_es": "crema de vainilla",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "de 12 on-",
+          "item_es": "de 12 on-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "TURF No. 3 x /i de ginebra Nicholson. Gotas de Angostura. V4 de vermouth francés. '{i de vermouth francés. Í4 de vermouth italiano. Con hielo, batido, colado % de ginebra holandesa. y servido en su copa con una Hielo. Revuélvase, euéle- cascara de limón enrollada se y sírvase. en el tope. — 354 — VE",
       "method_es": "TURF No. 3 x /i de ginebra Nicholson. Gotas de Angostura. V4 de vermouth francés. '{i de vermouth francés. Í4 de vermouth italiano. Con hielo, batido, colado % de ginebra holandesa. y servido en su copa con una Hielo. Revuélvase, euéle- cascara de limón enrollada se y sírvase. en el tope. — 354 — VE",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -202,13 +512,21 @@
       "category": "cocktail",
       "name_es": "AMARANTH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de Orange Bitters. Gotas de Ajenjo. Un chorro de Angostura. Vasito de ginebra Oíd Tom. Onza y media de whisky. Hielo, bátase y sírvase en Cascara de limón. vaso Delmónico con agua de Hielo. Batido» colado y sifón o mineral gaseada, con sírvase. azúcar si lo desean. •356 — BATIDORAS OSTER TRIS",
       "method_es": "Gotas de Orange Bitters. Gotas de Ajenjo. Un chorro de Angostura. Vasito de ginebra Oíd Tom. Onza y media de whisky. Hielo, bátase y sírvase en Cascara de limón. vaso Delmónico con agua de Hielo. Batido» colado y sifón o mineral gaseada, con sírvase. azúcar si lo desean. •356 — BATIDORAS OSTER TRIS",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -219,13 +537,63 @@
       "category": "cocktail",
       "name_es": "HOT RUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "onza y media",
+          "item_es": "onza y media",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italia-",
+          "item_es": "vermouth italia-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ajenjo eché-",
+          "item_es": "ajenjo eché-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "onza y media de",
+          "item_es": "onza y media de",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "ia 1 vasito de onza y media at En vaso alto échese: Ajenjo» échese en un vaso i st An 1 va sito de ron cubano. alto. 1 terrón de azúcar. En otro vaso alto llénese & n El jugo de un limón. de hielo y agua y vayase ow Agregúesele agua calien- echando despacio el agua, en Br te hasta casi llenar el vas",
       "method_es": "ia 1 vasito de onza y media at En vaso alto échese: Ajenjo» échese en un vaso i st An 1 va sito de ron cubano. alto. 1 terrón de azúcar. En otro vaso alto llénese & n El jugo de un limón. de hielo y agua y vayase ow Agregúesele agua calien- echando despacio el agua, en Br te hasta casi llenar el vas",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -236,13 +604,91 @@
       "category": "cocktail",
       "name_es": "AMERICANO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de cassis",
+          "item_es": "crema de cassis",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italiano",
+          "item_es": "vermouth italiano",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "de                 1 parte amer picón",
+          "item_es": "de                 1 parte amer picón",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "applejacfe",
+          "item_es": "applejacfe",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth fran-",
+          "item_es": "vermouth fran-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "coctel benedictine",
+          "item_es": "coctel benedictine",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "benedictine",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de leche",
+          "item_es": "crema de leche",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whisky bourbon",
+          "item_es": "whisky bourbon",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italia-",
+          "item_es": "vermouth italia-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "1 parte Crema de Cassis. Bu vaso de coctelera échese: 1 parte vermouth italiano. 1 vasito de 1*4 onza de 1 parte Amer Picón. Ajenjo. Hielo» revuélvase y sír- 6 ehorritos de jarabe de vase. sorgo. 2 vasitos de agua. KLONDYKE Hielo. Bátase hasta que 1 parte de Applejacfe. la coctelera por fuera se cu-",
       "method_es": "1 parte Crema de Cassis. Bu vaso de coctelera échese: 1 parte vermouth italiano. 1 vasito de 1*4 onza de 1 parte Amer Picón. Ajenjo. Hielo» revuélvase y sír- 6 ehorritos de jarabe de vase. sorgo. 2 vasitos de agua. KLONDYKE Hielo. Bátase hasta que 1 parte de Applejacfe. la coctelera por fuera se cu-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -253,13 +699,91 @@
       "category": "cocktail",
       "name_es": "COLME SPRING",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cerveza negra",
+          "item_es": "cerveza negra",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bi-",
+          "item_es": "angostura bi-",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "birrh",
+          "item_es": "birrh",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vino de jerez",
+          "item_es": "vino de jerez",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "miel de abejas",
+          "item_es": "miel de abejas",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bit-",
+          "item_es": "angostura bit-",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vino del rhin",
+          "item_es": "vino del rhin",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "menta",
+          "item_es": "menta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "M 1 cucharada de Granadina. ia 1 yema de huevo. 3 partes de cerveza negra. at Hielo. Batido 35 veces» st 3 chorros de Angostura Bi- i An cuélese y sírvase en su copa. tters. & 1 parte de Birrh. BATISTE n (Este cotel es prepara- ow ción especial del Bar Antílo- Br % de ron Bacardí. % de Grand Marnier",
       "method_es": "M 1 cucharada de Granadina. ia 1 yema de huevo. 3 partes de cerveza negra. at Hielo. Batido 35 veces» st 3 chorros de Angostura Bi- i An cuélese y sírvase en su copa. tters. & 1 parte de Birrh. BATISTE n (Este cotel es prepara- ow ción especial del Bar Antílo- Br % de ron Bacardí. % de Grand Marnier",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -270,13 +794,21 @@
       "category": "cocktail",
       "name_es": "ABSINTHE COCTEL ARDSLEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "% Ajenjo verde. % Calisaya. Gotas de Orange Bitters. 1/2 Sloe gin. Gotas de Angostura Bitters. Hielo. Bátase y sírvase. Gotas» de Anisette. Bien batido con hielo y ARMOUR colado. Servido en copa de coctel. y* vermouth italiano. y¿ Jerez seco. ABSINTHE FRAPPE Gotas de Orange Bitters. Hielo. Revuélvas",
       "method_es": "% Ajenjo verde. % Calisaya. Gotas de Orange Bitters. 1/2 Sloe gin. Gotas de Angostura Bitters. Hielo. Bátase y sírvase. Gotas» de Anisette. Bien batido con hielo y ARMOUR colado. Servido en copa de coctel. y* vermouth italiano. y¿ Jerez seco. ABSINTHE FRAPPE Gotas de Orange Bitters. Hielo. Revuélvas",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -287,13 +819,35 @@
       "category": "cocktail",
       "name_es": "BAMBOO BEAUTY SPOT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ron jamaica",
+          "item_es": "ron jamaica",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "almíbar",
+          "item_es": "almíbar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vino clarete",
+          "item_es": "vino clarete",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "% vermouth italiano. Vi veimouth italiano. % Jerez seco. V4 vermouth francés. Gotas de Ürange Bitters. i/j ginebra. Gotas jugo de naranja. Hielo. Revuélvase, cuéle- Hielo. Revuélvase» cuéle- se y sírvase. se y sírvase con golas de granadina. BARACOAS % vermouth italiano. BIRD Vi Fernet Branca. % Cur",
       "method_es": "% vermouth italiano. Vi veimouth italiano. % Jerez seco. V4 vermouth francés. Gotas de Ürange Bitters. i/j ginebra. Gotas jugo de naranja. Hielo. Revuélvase, cuéle- Hielo. Revuélvase» cuéle- se y sírvase. se y sírvase con golas de granadina. BARACOAS % vermouth italiano. BIRD Vi Fernet Branca. % Cur",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -321,13 +875,21 @@
       "category": "cocktail",
       "name_es": "BOBBIE BURNS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marrasquino         gotas marrasquino",
+          "item_es": "marrasquino         gotas marrasquino",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "ig D 1/4 vermouth francés. Yt whisky escocés. Y\"i whisky Rye. 14 vermouth italiano. Gotas de Amer Picón. 1 cucharadita Marrasquino Gotas Marrasquino. 1 cucharadita jugo naranja. Hielo. Revuélvase, cuéle- Hielo. Bátase, cuélese y se y sírvase. sírvase. BRONX No. 3 (Dulcex. BOLES Y2 ginebra seca. J Vé",
       "method_es": "ig D 1/4 vermouth francés. Yt whisky escocés. Y\"i whisky Rye. 14 vermouth italiano. Gotas de Amer Picón. 1 cucharadita Marrasquino Gotas Marrasquino. 1 cucharadita jugo naranja. Hielo. Revuélvase, cuéle- Hielo. Bátase, cuélese y se y sírvase. sírvase. BRONX No. 3 (Dulcex. BOLES Y2 ginebra seca. J Vé",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -355,13 +917,70 @@
       "category": "cocktail",
       "name_es": "CABALLITO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "crema leche",
+          "item_es": "crema leche",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "calisaya",
+          "item_es": "calisaya",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "BROWN En el vaso de composición % whisky Rye. échese y macháquese: % ginebra seca. 1 pedazo de limón. Gotas de Orange Bitters. 1 cucharadita de azúcar. Hojas de hierba buena. Hielo. Bátase» cuélese y 1/2 vasito de ron. sírvase. 1/2 vasito de vermouth ita- liano. BRÜT 09 Hielo. Bátase» cuélese y 20 \\",
       "method_es": "BROWN En el vaso de composición % whisky Rye. échese y macháquese: % ginebra seca. 1 pedazo de limón. Gotas de Orange Bitters. 1 cucharadita de azúcar. Hojas de hierba buena. Hielo. Bátase» cuélese y 1/2 vasito de ron. sírvase. 1/2 vasito de vermouth ita- liano. BRÜT 09 Hielo. Bátase» cuélese y 20 \\",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -372,13 +991,42 @@
       "category": "cocktail",
       "name_es": "CALUMET CLUB CHANTECLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ácido fosfático",
+          "item_es": "ácido fosfático",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jugo toronja",
+          "item_es": "jugo toronja",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italiano",
+          "item_es": "vermouth italiano",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "14 whisky Bourbon. La misma fórmula del V¿ vermouth italiano. Bronx con gotas de granadi- Gotas Angostura. na. Batido. 2 gotas ácido fosfático. Hielo. Revuélvase» cuéle- CHAPARRA se y sírvase. En vaso de composición, CAMEO KIRBY échese: 1 cascara de limón. y% ginebra seca. y> vermouth italiano. Y* v",
       "method_es": "14 whisky Bourbon. La misma fórmula del V¿ vermouth italiano. Bronx con gotas de granadi- Gotas Angostura. na. Batido. 2 gotas ácido fosfático. Hielo. Revuélvase» cuéle- CHAPARRA se y sírvase. En vaso de composición, CAMEO KIRBY échese: 1 cascara de limón. y% ginebra seca. y> vermouth italiano. Y* v",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -423,13 +1071,77 @@
       "category": "cocktail",
       "name_es": "COFFEE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sidra",
+          "item_es": "sidra",
+          "amount": "52",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.25",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vino oporto",
+          "item_es": "vino oporto",
+          "amount": "4",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "cerveza",
+          "item_es": "cerveza",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra tom",
+          "item_es": "ginebra tom",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo toronja",
+          "item_es": "jugo toronja",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "V52 botella de sidra. Cascara de limón. 1/4 cucharadita azúcar. Gotas de Angostura. 1 huevo fresco. Trozo de Meló. !4 vasito vino Oporto. Servido en vaso alto. 1/4 vasito coñac. Hielo. Bátase» cuélese y 09 20 CINCfNATTl sírvase en copa de vino. r, ille En vaso de refresco: M COLUMBUS J /4 vaso de ce",
       "method_es": "V52 botella de sidra. Cascara de limón. 1/4 cucharadita azúcar. Gotas de Angostura. 1 huevo fresco. Trozo de Meló. !4 vasito vino Oporto. Servido en vaso alto. 1/4 vasito coñac. Hielo. Bátase» cuélese y 09 20 CINCfNATTl sírvase en copa de vino. r, ille En vaso de refresco: M COLUMBUS J /4 vaso de ce",
       "glassware": "Para dos personas",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -457,13 +1169,49 @@
       "category": "cocktail",
       "name_es": "CONGRESS CUBAN MANHATTAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua de azahar",
+          "item_es": "agua de azahar",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italiano",
+          "item_es": "vermouth italiano",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "1 copita de coñac. V2 ron Carta Oro. 1 vasito de Crema de Rosas. y% vermouth italiano. 3 gotas de agua de azahar. 1 clara de huevo. Revuélvase con hielo, cué- Hielo. Bátase, cuélese y lese y sírvase con una guin- sírvase en copa de vino. da. COOPERSTOWN DAIQU1RI FRAPPE í/4 vermouth italiano. 1 vasit",
       "method_es": "1 copita de coñac. V2 ron Carta Oro. 1 vasito de Crema de Rosas. y% vermouth italiano. 3 gotas de agua de azahar. 1 clara de huevo. Revuélvase con hielo, cué- Hielo. Bátase, cuélese y lese y sírvase con una guin- sírvase en copa de vino. da. COOPERSTOWN DAIQU1RI FRAPPE í/4 vermouth italiano. 1 vasit",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -474,13 +1222,28 @@
       "category": "cocktail",
       "name_es": "EVANS FLAMENCO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "cointreau",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "1 vasito de whisky Rye. Jugo de !/4 toronja. Gotas de Apricot. i/> parte de vino de Jerez. Gotas de Curazao. % coñac» Hielo. Revuélvase, cuéle- 1 cucharadita de azúcar. se y sírvase. % de agua mineral. Sírvase en un vaso de EWING Tom Collins y adórnese con 1 vasito de wMsky Rye. frutas. Gotas de Ang",
       "method_es": "1 vasito de whisky Rye. Jugo de !/4 toronja. Gotas de Apricot. i/> parte de vino de Jerez. Gotas de Curazao. % coñac» Hielo. Revuélvase, cuéle- 1 cucharadita de azúcar. se y sírvase. % de agua mineral. Sírvase en un vaso de EWING Tom Collins y adórnese con 1 vasito de wMsky Rye. frutas. Gotas de Ang",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -610,13 +1373,28 @@
       "category": "cocktail",
       "name_es": "HILLARD",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de",
+          "item_es": "jugo de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "laguer",
+          "item_es": "laguer",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "% vermouth italiano. % vermouth italiano. yB vermouth francés. % ginebra seca. % ginebra seca. Gotas de Angostura. 1 cucharadita de jugo de Hielo. Revuélvase» cuéle- toronja. se y sírvase. Hielo. Bátase, cuélese y sírvase con una almendra. HOLSTEIN IMPROVED MARTINI 09 1/2 coñac. 20 Va Blackberry bra",
       "method_es": "% vermouth italiano. % vermouth italiano. yB vermouth francés. % ginebra seca. % ginebra seca. Gotas de Angostura. 1 cucharadita de jugo de Hielo. Revuélvase» cuéle- toronja. se y sírvase. Hielo. Bátase, cuélese y sírvase con una almendra. HOLSTEIN IMPROVED MARTINI 09 1/2 coñac. 20 Va Blackberry bra",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -712,13 +1490,49 @@
       "category": "cocktail",
       "name_es": "LONE TREE MARCONI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de",
+          "item_es": "jugo de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "apple",
+          "item_es": "apple",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "3 ¿ vermouth italiano. íá vermouth italiano. % ginebra Tom. % Applejack. Hielo. Bien batido» cuéle- Hielo. Bátase» cuélese y sírvase. sírvase. MARQUERAY McLANE 1 vasito ginebra seca. Lo mismo que el Perfect 1 clara de huevo. Coctel. Jugo de medio limón. MÉNDEZ VIGO Gotas de Ajenjo. Gotas de granadin",
       "method_es": "3 ¿ vermouth italiano. íá vermouth italiano. % ginebra Tom. % Applejack. Hielo. Bien batido» cuéle- Hielo. Bátase» cuélese y sírvase. sírvase. MARQUERAY McLANE 1 vasito ginebra seca. Lo mismo que el Perfect 1 clara de huevo. Coctel. Jugo de medio limón. MÉNDEZ VIGO Gotas de Ajenjo. Gotas de granadin",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -729,13 +1543,21 @@
       "category": "cocktail",
       "name_es": "NEWMAN OPERA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de",
+          "item_es": "crema de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "ig D V* Ginebra seca. Vá Vermouth francés. */4 Dubonnet. Gotas de Amer Picón. 14 ginebra seca. 2 cucharaditas de crema de Hielo. Bien batido, cuéle- mandarina. se y sírvase. Cascara de naranja retorci- NORTH POLE da dentro. 1$ Marrasquino. Hielo. Bátase, cuélese y hn Ginebra seca. sírvase, 1 clara d",
       "method_es": "ig D V* Ginebra seca. Vá Vermouth francés. */4 Dubonnet. Gotas de Amer Picón. 14 ginebra seca. 2 cucharaditas de crema de Hielo. Bien batido, cuéle- mandarina. se y sírvase. Cascara de naranja retorci- NORTH POLE da dentro. 1$ Marrasquino. Hielo. Bátase, cuélese y hn Ginebra seca. sírvase, 1 clara d",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -763,13 +1585,35 @@
       "category": "cocktail",
       "name_es": "PAN AMERICAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de",
+          "item_es": "jugo de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "r, Jugo de un limón. ille 1 vasito whisky Rye. M Gotas de limón. 1 cucharadita azúcar. ia Clara de un huevo. at Gotas de Almíbar. st \\A¿ de vermouth italiano. i Hielo. Bátase» cuélese y An sírvase. V¿ de ron. & Hielo» bátase» cuélese y n sírvase. ow PARADISE Br % ginebra. PERRY M d % Apricot brandy.",
       "method_es": "r, Jugo de un limón. ille 1 vasito whisky Rye. M Gotas de limón. 1 cucharadita azúcar. ia Clara de un huevo. at Gotas de Almíbar. st \\A¿ de vermouth italiano. i Hielo. Bátase» cuélese y An sírvase. V¿ de ron. & Hielo» bátase» cuélese y n sírvase. ow PARADISE Br % ginebra. PERRY M d % Apricot brandy.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -797,13 +1641,21 @@
       "category": "cocktail",
       "name_es": "PHEASANT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Prepárase como el Pousse Café» pero batido y colado. 1/2 coñac. Y¿ ginebra seca» PEACOCK Hielo. Bien batido, cuéle- se y sírvase. 1 vasito de coñac. Gotas de Amer Picón. PH1LADELPHIA Gotas de ajenjo. Prepárase como el Marti- Hielo. Bátase, cuélese y ni, pero con gotas de Cura- sírvase. zao.",
       "method_es": "Prepárase como el Pousse Café» pero batido y colado. 1/2 coñac. Y¿ ginebra seca» PEACOCK Hielo. Bien batido, cuéle- se y sírvase. 1 vasito de coñac. Gotas de Amer Picón. PH1LADELPHIA Gotas de ajenjo. Prepárase como el Marti- Hielo. Bátase, cuélese y ni, pero con gotas de Cura- sírvase. zao.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -831,13 +1683,21 @@
       "category": "cocktail",
       "name_es": "POGOLOTTI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra tom",
+          "item_es": "ginebra tom",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "PICÓN % vermouth italiano. Vi vermouth italiano. % ginebra seca. % Amer Picón. % Dubonnet. Cascara de naranja. Gotas de Curazao rojo. Hielo. Bátase, cuélese y Gotas de Angostura. sírvase, Hielo. Bátase» cuélese y sírvase. 09 20 PINE TREE POLO r, ille % vermouth italiano. % ginebra. % ginebra Tom. M",
       "method_es": "PICÓN % vermouth italiano. Vi vermouth italiano. % ginebra seca. % Amer Picón. % Dubonnet. Cascara de naranja. Gotas de Curazao rojo. Hielo. Bátase, cuélese y Gotas de Angostura. sírvase, Hielo. Bátase» cuélese y sírvase. 09 20 PINE TREE POLO r, ille % vermouth italiano. % ginebra. % ginebra Tom. M",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -848,13 +1708,21 @@
       "category": "cocktail",
       "name_es": "PRESIDENTE REMERO SPECIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "y¿ vermouth Chambery. En vaso de composición, \\¿* ron, échese: Cucharadita de granadina. y* de ron. l Hielo, Revuélvase, cuéle- /t de vermouth italiano. se y sírvase con una cereza Gotas de Curazao. y cascara de naranja. Hielo. Revuélvase» cuéle- se y sírvase con una medita PRINCE de limón. RENE MOR",
       "method_es": "y¿ vermouth Chambery. En vaso de composición, \\¿* ron, échese: Cucharadita de granadina. y* de ron. l Hielo, Revuélvase, cuéle- /t de vermouth italiano. se y sírvase con una cereza Gotas de Curazao. y cascara de naranja. Hielo. Revuélvase» cuéle- se y sírvase con una medita PRINCE de limón. RENE MOR",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -865,13 +1733,42 @@
       "category": "cocktail",
       "name_es": "REINA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky escocés",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "café",
+          "item_es": "café",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "D y¿ de ginebra. ROBERT BURNS y*2 de vermouth francés. Gotas de Ajenjo. Jugo de \\A> naranja. 14 vermouth italiano. Cucharadita de azúcar. % whisky Rye o escocés. Bien batido con hielo, cuélese y sírvase. REÍS 1 vasito de ginebra Tom, ROBÍN Gotas de Ajenjo. 1 vasito de whisky escocés. Gotas de Angost",
       "method_es": "D y¿ de ginebra. ROBERT BURNS y*2 de vermouth francés. Gotas de Ajenjo. Jugo de \\A> naranja. 14 vermouth italiano. Cucharadita de azúcar. % whisky Rye o escocés. Bien batido con hielo, cuélese y sírvase. REÍS 1 vasito de ginebra Tom, ROBÍN Gotas de Ajenjo. 1 vasito de whisky escocés. Gotas de Angost",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -899,13 +1796,35 @@
       "category": "cocktail",
       "name_es": "ROYAL SIVIILE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de naranja",
+          "item_es": "jugo de naranja",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "ow 1 toma de ron. Gotas de Kirsch. Br Vé apple-jack. M Vé vermouth francés. Hielo. Bátase» cuélese y d Vé jugo de limón. sírvase. re Vé granadina. Ja 1 clara de huevo. by SANDY McKAY Hielo. Bien batido, cuéle- d se se y sírvase. vasito de vermouth italia- iti no. ig D RUBY V2 vasito de jugo de naran",
       "method_es": "ow 1 toma de ron. Gotas de Kirsch. Br Vé apple-jack. M Vé vermouth francés. Hielo. Bátase» cuélese y d Vé jugo de limón. sírvase. re Vé granadina. Ja 1 clara de huevo. by SANDY McKAY Hielo. Bien batido, cuéle- d se se y sírvase. vasito de vermouth italia- iti no. ig D RUBY V2 vasito de jugo de naran",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 53,
@@ -933,13 +1852,21 @@
       "category": "cocktail",
       "name_es": "SECANTE SLOME",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de",
+          "item_es": "crema de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Jugo de 14 naranja. %. whisky Bourbon. % coñac francés. ¥t de ginebra. % Dubonnet. i/4 de vermouth francés. Hielo frappé. Revuélvase» 1 cueharadita de azúcar. cuélese y sírvase. Gotas de Amer Picón. SLOPPY JOEfS SPECIAL 09 SEVERIO COCTEL Vi vino Oporto. 20 y*i ron. Vá coñac. r, ille V± Jugo de pina.",
       "method_es": "Jugo de 14 naranja. %. whisky Bourbon. % coñac francés. ¥t de ginebra. % Dubonnet. i/4 de vermouth francés. Hielo frappé. Revuélvase» 1 cueharadita de azúcar. cuélese y sírvase. Gotas de Amer Picón. SLOPPY JOEfS SPECIAL 09 SEVERIO COCTEL Vi vino Oporto. 20 y*i ron. Vá coñac. r, ille V± Jugo de pina.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 55,
@@ -950,13 +1877,35 @@
       "category": "cocktail",
       "name_es": "SHERMAN SOCIETY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "gaseosa de li-",
+          "item_es": "gaseosa de li-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "ig D l % vermouth italiano. - ginebra. 2 :i n vermouth francés. % whisky Rye. Gotas de granadina. Gotas de Ajenjo. Hielo. Bátase» cuélese y Hielo. Bátase» cuélese y sírvase. sírvase. SODA S1DE CAR En vaso grande con un tro- % Triple Seo. zo de hielo: 1 cucharadita de azúcar. % coñac. Gotas de Angost",
       "method_es": "ig D l % vermouth italiano. - ginebra. 2 :i n vermouth francés. % whisky Rye. Gotas de granadina. Gotas de Ajenjo. Hielo. Bátase» cuélese y Hielo. Bátase» cuélese y sírvase. sírvase. SODA S1DE CAR En vaso grande con un tro- % Triple Seo. zo de hielo: 1 cucharadita de azúcar. % coñac. Gotas de Angost",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 56,
@@ -984,13 +1933,35 @@
       "category": "cocktail",
       "name_es": "TIP TOP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth fran-                   two spot",
+          "item_es": "vermouth fran-                   two spot",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermouth",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "1 vasito de vermouth fran- TWO SPOT cés. Gotas de Benedictine. Vá coñac francés. y* Curazao rojo. Gotas de Angostura. Hielo. Bátase, cuélese y Gotas de Orange Bitters. sírvase después de retorcer Hielo, bátase, cuélese y sobre la copa una cascara de sírvase. naranja. u. c. VERMOUTH BATIDO 1/4 vermou",
       "method_es": "1 vasito de vermouth fran- TWO SPOT cés. Gotas de Benedictine. Vá coñac francés. y* Curazao rojo. Gotas de Angostura. Hielo. Bátase, cuélese y Gotas de Orange Bitters. sírvase después de retorcer Hielo, bátase, cuélese y sobre la copa una cascara de sírvase. naranja. u. c. VERMOUTH BATIDO 1/4 vermou",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 58,
@@ -1018,13 +1989,21 @@
       "category": "cocktail",
       "name_es": "ZABRISKIE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "WHITE LION % vermouth italiano. % ginebra seca. 1 vasito de ron. Gotas de Orange Bitters. 1 eueharadita de azúcar. Gotas de Marrasquino» Jugo de l/± limón. Gotas de Angostura. Gotas de Angostura. Hielo. Revuélvase, cuéle- Gotas de granadina. se y sírvase. Hielo. Bátase bien, cué- 09 lese y sírvase.",
       "method_es": "WHITE LION % vermouth italiano. % ginebra seca. 1 vasito de ron. Gotas de Orange Bitters. 1 eueharadita de azúcar. Gotas de Marrasquino» Jugo de l/± limón. Gotas de Angostura. Gotas de Angostura. Hielo. Revuélvase, cuéle- Gotas de granadina. se y sírvase. Hielo. Bátase bien, cué- 09 lese y sírvase.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1035,13 +2014,42 @@
       "category": "cocktail",
       "name_es": "WHITE RAT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "whisky rye o",
+          "item_es": "whisky rye o",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "14",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "de 'granadina",
+          "item_es": "de 'granadina",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "ille 1/2 Dubonnet M % Ajenjo. Gotas de Angostura. ia Hielo. Revuélvase, cuéle- at 1/4 Anisette. st Hielo. Bien batido, cuéle- se y sírvase. i An se y sírvase. ZAZERAC & n ow WINTER CARDEN En vaso grueso antiguo éche- se: Br Vá vasito de ron. M V2 terrón de azúcar. d Í4 vasito de jugo de pina. Gotas",
       "method_es": "ille 1/2 Dubonnet M % Ajenjo. Gotas de Angostura. ia Hielo. Revuélvase, cuéle- at 1/4 Anisette. st Hielo. Bien batido, cuéle- se y sírvase. i An se y sírvase. ZAZERAC & n ow WINTER CARDEN En vaso grueso antiguo éche- se: Br Vá vasito de ron. M V2 terrón de azúcar. d Í4 vasito de jugo de pina. Gotas",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 61,
@@ -1069,13 +2077,84 @@
       "category": "cocktail",
       "name_es": "KRISS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "salsa tomate",
+          "item_es": "salsa tomate",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "salsa paprika",
+          "item_es": "salsa paprika",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vinagre",
+          "item_es": "vinagre",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "salsa tabasco",
+          "item_es": "salsa tabasco",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jerez seco",
+          "item_es": "jerez seco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vino la ina",
+          "item_es": "vino la ina",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de jugo de limón. 1 cucharadita salsa tomate. Una toronja exprimida. 3 gotas salsa Paprika. Una pera cortada en trozos que se pasa por el expri- 2 gotas de vinagre. midor. 1 gota salsa tabasco. Gotas de limón. Pimienta y salsa a gusto. Hielo. Revuélvase bien, Sírvase acompañada de cuélese y sí",
       "method_es": "Gotas de jugo de limón. 1 cucharadita salsa tomate. Una toronja exprimida. 3 gotas salsa Paprika. Una pera cortada en trozos que se pasa por el expri- 2 gotas de vinagre. midor. 1 gota salsa tabasco. Gotas de limón. Pimienta y salsa a gusto. Hielo. Revuélvase bien, Sírvase acompañada de cuélese y sí",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 63,
@@ -1103,13 +2182,35 @@
       "category": "cocktail",
       "name_es": "COUNTRY CLUB SPECIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bourbon whisky",
+          "item_es": "bourbon whisky",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Jugo de medio limón. » vermouth Cinzano blanco. Jugo de media naranja. whisky Canadian Club. 1 onza Bourbon whisky. ;{ Grand Marnier. Jugo de medio limón. 1 cucharadita de azúcar. 1 cucharadita de azúcar. 10 gotas de granadina. 1 clara de huevo. Hierbabuena. Hielo, bien Hielo. Bien batido, colado ba",
       "method_es": "Jugo de medio limón. » vermouth Cinzano blanco. Jugo de media naranja. whisky Canadian Club. 1 onza Bourbon whisky. ;{ Grand Marnier. Jugo de medio limón. 1 cucharadita de azúcar. 1 cucharadita de azúcar. 10 gotas de granadina. 1 clara de huevo. Hierbabuena. Hielo, bien Hielo. Bien batido, colado ba",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 65,
@@ -1120,13 +2221,21 @@
       "category": "flip",
       "name_es": "PERROQUET FLIP MONKEY GLAND",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "x 1 onza whisky Rye. h jugo de naranja. 1 yema de huevo. 1/2 ginebra seca. 1 eueharadita de azúcar. 1 chorro de granadina. 10 gotas de Kirsch. 1 choro de ajenjo. Hielo. Batido» colado y Hielo. Bátase, cuélese y se sirve espolvoreado -con sírvase. nuez moscada.",
       "method_es": "x 1 onza whisky Rye. h jugo de naranja. 1 yema de huevo. 1/2 ginebra seca. 1 eueharadita de azúcar. 1 chorro de granadina. 10 gotas de Kirsch. 1 choro de ajenjo. Hielo. Batido» colado y Hielo. Bátase, cuélese y se sirve espolvoreado -con sírvase. nuez moscada.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 66,
@@ -1154,13 +2263,28 @@
       "category": "cocktail",
       "name_es": "EUROPE SPECIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "r, MOTHERLAND PLAZA 1 ille copita de Aperital. M SOUR ia 1 cucharadita de coñac. at 1 cucharadita de granadina. st Jugo de medio limón. i An 10 gotas de granadina. 1 corteza de limón. & % ginebra seca. Hielo. Bátase, cuélese y n % vermouth francés. sírvase. ow Hielo. Batido, cuélese y Br sírvase en",
       "method_es": "r, MOTHERLAND PLAZA 1 ille copita de Aperital. M SOUR ia 1 cucharadita de coñac. at 1 cucharadita de granadina. st Jugo de medio limón. i An 10 gotas de granadina. 1 corteza de limón. & % ginebra seca. Hielo. Bátase, cuélese y n % vermouth francés. sírvase. ow Hielo. Batido, cuélese y Br sírvase en",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 68,
@@ -1171,13 +2295,49 @@
       "category": "cocktail",
       "name_es": "KALKARTZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "menta verde          10 gotas de kirsch",
+          "item_es": "menta verde          10 gotas de kirsch",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bi-",
+          "item_es": "angostura bi-",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vino tinto o blan-",
+          "item_es": "vino tinto o blan-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "% de whisky Rye. % de ron. % de vermouth francés. Vi vermouth francés. % de vermouth Torino. y* Jugo de pina. 1 chorrito de Menta verde 10 gotas de Kirsch, 1 chorrito de Marrasquino. 10 gotas de granadina. Hielo. Bátase, cuélese y Hielo. Batido» colado y sírvase. servido en su copa. •—402 — COTEL LU",
       "method_es": "% de whisky Rye. % de ron. % de vermouth francés. Vi vermouth francés. % de vermouth Torino. y* Jugo de pina. 1 chorrito de Menta verde 10 gotas de Kirsch, 1 chorrito de Marrasquino. 10 gotas de granadina. Hielo. Bátase, cuélese y Hielo. Batido» colado y sírvase. servido en su copa. •—402 — COTEL LU",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1205,13 +2365,56 @@
       "category": "cobbler",
       "name_es": "RHINE WINE COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino de jerez",
+          "item_es": "vino de jerez",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra oíd",
+          "item_es": "ginebra oíd",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ron jamaica",
+          "item_es": "ron jamaica",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Prepáranse todos como el En copa de agua llena de Tom Collins» y sólo varía, la hielo fino: cantidad del whisky, el bran- Vá vasito de almíbar. dy o el ron. El Rum es ron. lVá vasito de vino del Rhm. El brandy» coñac. El Irish» Gotas de limón. whisky irlandés. El John» gi- Revuélvase, adórnese con n",
       "method_es": "Prepáranse todos como el En copa de agua llena de Tom Collins» y sólo varía, la hielo fino: cantidad del whisky, el bran- Vá vasito de almíbar. dy o el ron. El Rum es ron. lVá vasito de vino del Rhm. El brandy» coñac. El Irish» Gotas de limón. whisky irlandés. El John» gi- Revuélvase, adórnese con n",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 71,
@@ -1222,13 +2425,56 @@
       "category": "cocktail",
       "name_es": "KHATURA COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth francés",
+          "item_es": "vermouth francés",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth italiano",
+          "item_es": "vermouth italiano",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "FLORODORA COOLER 14 vasito vermouth francés. 1 pedazo de hielo. 14 vasito vermouth italiano. 1 vasito de ginebra seca. V¿ vasito ginebra seca. Vt vasito de granadina. Gotas de Angostura. Jugo de un limón. Pedazos de hielo. Vé ginger ale. 14 agua mineral. . 405 • MINT COOLER SABBATH COOLER Manojito d",
       "method_es": "FLORODORA COOLER 14 vasito vermouth francés. 1 pedazo de hielo. 14 vasito vermouth italiano. 1 vasito de ginebra seca. V¿ vasito ginebra seca. Vt vasito de granadina. Gotas de Angostura. Jugo de un limón. Pedazos de hielo. Vé ginger ale. 14 agua mineral. . 405 • MINT COOLER SABBATH COOLER Manojito d",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 72,
@@ -1239,13 +2485,70 @@
       "category": "cup",
       "name_es": "GRAPE JUICE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse ama-",
+          "item_es": "chartreuse ama-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "fruta y hier-",
+          "item_es": "fruta y hier-",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "jerez seco",
+          "item_es": "jerez seco",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino clarete",
+          "item_es": "vino clarete",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "D 1 vasito de coñac. 1 copita de Marrasquino. (Jugo ele Uva) 1 copita de Chartreuse ama- (Para seis personas) rillo. En una jarra grande un tro- 1 vasito de almíbar. zo largo de hielo: Rueditas de limón. 1 copa de coñac. Rueditas de naranja. 1 copa de Marrasquino. 6 tajadas de pifia. 1 copa de Chart",
       "method_es": "D 1 vasito de coñac. 1 copita de Marrasquino. (Jugo ele Uva) 1 copita de Chartreuse ama- (Para seis personas) rillo. En una jarra grande un tro- 1 vasito de almíbar. zo largo de hielo: Rueditas de limón. 1 copa de coñac. Rueditas de naranja. 1 copa de Marrasquino. 6 tajadas de pifia. 1 copa de Chart",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 73,
@@ -1256,13 +2559,56 @@
       "category": "cup",
       "name_es": "GINGER ALE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino mosela",
+          "item_es": "vino mosela",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "un pe-",
+          "item_es": "un pe-",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "lar-       dazo largo de hielo y",
+          "item_es": "lar-       dazo largo de hielo y",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "cerveza negra",
+          "item_es": "cerveza negra",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "D largo de hielo y: (Sin licor) 1 copita de brandy. (Para 6 personas) 1 copita de marrasquino. En una jarra grande: Gotas de Chartreuse. Jugo de 3 limones. Gotas de Benedictine. Jugo de 3 naranjas. Cerezas o uvas. Azúcar a gusto. Ruedas de naranja y limón. 2 botellas ginger ale. Tres tajadas de pina",
       "method_es": "D largo de hielo y: (Sin licor) 1 copita de brandy. (Para 6 personas) 1 copita de marrasquino. En una jarra grande: Gotas de Chartreuse. Jugo de 3 limones. Gotas de Benedictine. Jugo de 3 naranjas. Cerezas o uvas. Azúcar a gusto. Ruedas de naranja y limón. 2 botellas ginger ale. Tres tajadas de pina",
       "glassware": "Vino del Rhin",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 74,
@@ -1273,13 +2619,42 @@
       "category": "cup",
       "name_es": "SAUTERNES CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac francés",
+          "item_es": "coñac francés",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino sauternes",
+          "item_es": "vino sauternes",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "r, ille En jarra grande un trozo M largo de hielo y: DA 1 S I ES ia 1 copita coñac francés. at Copita Chartreuse amarillo. BRANDY DAISY ist Copita de Marrasquino. An Copita de Curazao. En copa de agua llena de & Jugo de un limón. Cerezas. hielo fino: n Jugo de medio limón. ow 4 tajadas de pina. 1/4",
       "method_es": "r, ille En jarra grande un trozo M largo de hielo y: DA 1 S I ES ia 1 copita coñac francés. at Copita Chartreuse amarillo. BRANDY DAISY ist Copita de Marrasquino. An Copita de Curazao. En copa de agua llena de & Jugo de un limón. Cerezas. hielo fino: n Jugo de medio limón. ow 4 tajadas de pina. 1/4",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 75,
@@ -1290,13 +2665,35 @@
       "category": "cocktail",
       "name_es": "GINGER DAISY COMODORO GIN DAISY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra seca",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Jugo de medio limón. Jugo de medio limón. Cueharadita de azúcar. 1 cueharadita de azúcar. 1/4 vasito de ginebra. 1 onza ginebra seca. Y¿ vasito de brandy. 10 gotas de granadina. Bátase con hielo fino, Hielo. Batido y servido cuélese y sírvase en copa de en vaso de ponche con hie- agua adornado con f",
       "method_es": "Jugo de medio limón. Jugo de medio limón. Cueharadita de azúcar. 1 cueharadita de azúcar. 1/4 vasito de ginebra. 1 onza ginebra seca. Y¿ vasito de brandy. 10 gotas de granadina. Bátase con hielo fino, Hielo. Batido y servido cuélese y sírvase en copa de en vaso de ponche con hie- agua adornado con f",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1324,13 +2721,42 @@
       "category": "fizz",
       "name_es": "F I Z Z E S BISMARCK FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino oporto",
+          "item_es": "vino oporto",
+          "amount": "1.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron jamaica",
+          "item_es": "ron jamaica",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino clarete",
+          "item_es": "vino clarete",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "AMER PICÓN POUFFLE Jugo de medio limón. FIZZ Cucharadita de azúcar. Un huevo fresco. (Los fizzes sírvense en vasos Vasito de Sloe Gin. delmónico). Hielo, bátase, cuélese» sír- vase y llénese con agua mi- 1 vasito de Amer Picón. neral. 1 copita de granadina. 1 clara de huevo. CANADIAN WHISKY FIZZ Hie",
       "method_es": "AMER PICÓN POUFFLE Jugo de medio limón. FIZZ Cucharadita de azúcar. Un huevo fresco. (Los fizzes sírvense en vasos Vasito de Sloe Gin. delmónico). Hielo, bátase, cuélese» sír- vase y llénese con agua mi- 1 vasito de Amer Picón. neral. 1 copita de granadina. 1 clara de huevo. CANADIAN WHISKY FIZZ Hie",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 78,
@@ -1358,13 +2784,35 @@
       "category": "fizz",
       "name_es": "SILVER FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Jugo de medio limón. Gotas de granadina. Jugo de medio limón. Cucharadita de azúcar. Cucharadita de azúcar. Vasito de ginebra seca. Vasito de ginebra seca. í/4 vasito de crema de leche. Clara de un huevo. Hielo. Bátase, cuélese y Hielo, bátase, cuélese y sírvase en vaso de refresco, llénese el vaso",
       "method_es": "Jugo de medio limón. Gotas de granadina. Jugo de medio limón. Cucharadita de azúcar. Cucharadita de azúcar. Vasito de ginebra seca. Vasito de ginebra seca. í/4 vasito de crema de leche. Clara de un huevo. Hielo. Bátase, cuélese y Hielo, bátase, cuélese y sírvase en vaso de refresco, llénese el vaso",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 80,
@@ -1375,13 +2823,21 @@
       "category": "cocktail",
       "name_es": "LIMONADA NATURAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "r, ille LIMONADA CALIENTE Jugo de un limón. M Una cucharada de azúcar. ia Prepárase lo mismo que at la limonada {ría, echándole Llénese el vaso con hielo st agua caliente. i y agua. Revuélvase y sírva- An Revuélvase y adórnese se con una rueda de limón. & con ruedas de limón. n ow LIMONADA CON GASEO",
       "method_es": "r, ille LIMONADA CALIENTE Jugo de un limón. M Una cucharada de azúcar. ia Prepárase lo mismo que at la limonada {ría, echándole Llénese el vaso con hielo st agua caliente. i y agua. Revuélvase y sírva- An Revuélvase y adórnese se con una rueda de limón. & con ruedas de limón. n ow LIMONADA CON GASEO",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 81,
@@ -1409,13 +2865,28 @@
       "category": "cocktail",
       "name_es": "ANGOSTURA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ju-          fino llena",
+          "item_es": "ju-          fino llena",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin arriba",
+          "item_es": "sloe gin arriba",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Agregúesele un vasito de Prepárese una limonada whisky, revuélvase y sír- como es costumbre y agre- vase. gúesele una cucharadita de Angostura. MAZAGRAN LIMONADA CON VINO Jugo de medio limón. TINTO Cucharada de azúcar. A una limonada natural, Yasito de ron. se le añade un poco de vino Tacita de café",
       "method_es": "Agregúesele un vasito de Prepárese una limonada whisky, revuélvase y sír- como es costumbre y agre- vase. gúesele una cucharadita de Angostura. MAZAGRAN LIMONADA CON VINO Jugo de medio limón. TINTO Cucharada de azúcar. A una limonada natural, Yasito de ron. se le añade un poco de vino Tacita de café",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -1426,13 +2897,42 @@
       "category": "punch",
       "name_es": "CARDINAL PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "4",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "benedictine",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "rioja clarete",
+          "item_es": "rioja clarete",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de limón. d se En una ponchera grande, cú- Gotas de Curazao. iti brase el fondo con azúcar de Gotas de almíbar. ig D cuadradillo y agregúesele: Adornado con fruta y % agua mineral. sírvase. 2 botellas de vino clarete. CLARET PUNCH !/4 botella de coñac. (Un galón) J /4 botella de ron. Jugo de s",
       "method_es": "Gotas de limón. d se En una ponchera grande, cú- Gotas de Curazao. iti brase el fondo con azúcar de Gotas de almíbar. ig D cuadradillo y agregúesele: Adornado con fruta y % agua mineral. sírvase. 2 botellas de vino clarete. CLARET PUNCH !/4 botella de coñac. (Un galón) J /4 botella de ron. Jugo de s",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 84,
@@ -1443,13 +2943,42 @@
       "category": "punch",
       "name_es": "PLANTER'S PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "de té",
+          "item_es": "de té",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "4",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "0.25",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "MERRY W1D0W PUNCH En copa de agua llena de Jugo de un limón. hielo fino: Cueharadita de azúcar. Gotas de vainilla. Échesele un Daíquírí y enci- Vasito de Sloe gin. ma: Batido, colado y servido Gotas de ron Jamaica. en copa de agua con hielo Adórnese con hierbabuena 09 fino» con una cueharadita y fru",
       "method_es": "MERRY W1D0W PUNCH En copa de agua llena de Jugo de un limón. hielo fino: Cueharadita de azúcar. Gotas de vainilla. Échesele un Daíquírí y enci- Vasito de Sloe gin. ma: Batido, colado y servido Gotas de ron Jamaica. en copa de agua con hielo Adórnese con hierbabuena 09 fino» con una cueharadita y fru",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1460,13 +2989,42 @@
       "category": "sour",
       "name_es": "EGG SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amer picón",
+          "item_es": "amer picón",
+          "amount": "4",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "applejack",
+          "item_es": "applejack",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "S O U R S Jugo de un limón. AMER PICÓN SOUR Cucharadita de azúcar. Yema de un huevo. Jugo de un limón. Gotas de anisette. Cucharadita de azúcar. Vasito de coñac. 1/4 vasito de granadina. Hielo. Batido, colado y : cérvido en vaso delmónico. )4 vasito de Amer Picón. — 420 — GIN SOUR RUM SOUR Jugo de u",
       "method_es": "S O U R S Jugo de un limón. AMER PICÓN SOUR Cucharadita de azúcar. Yema de un huevo. Jugo de un limón. Gotas de anisette. Cucharadita de azúcar. Vasito de coñac. 1/4 vasito de granadina. Hielo. Batido, colado y : cérvido en vaso delmónico. )4 vasito de Amer Picón. — 420 — GIN SOUR RUM SOUR Jugo de u",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1477,13 +3035,28 @@
       "category": "cocktail",
       "name_es": "BRANDY FIX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "licor          jugo de medio limón",
+          "item_es": "licor          jugo de medio limón",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "collins sír-",
+          "item_es": "collins sír-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "BLACKSTONE JACK Jugo de un limón. ]•$ café puro frío. Cucharadita de azúcar. % coñac. Copita de jugo de pifia. % Kirsch. Gotas de Chartreuse amarillo. Hielo. Bien batido, cola- % vasito de coñac. do y servido en copa bordea- Batido, colado y servido da de azúcar sobre zumo de en copa de agua llena d",
       "method_es": "BLACKSTONE JACK Jugo de un limón. ]•$ café puro frío. Cucharadita de azúcar. % coñac. Copita de jugo de pifia. % Kirsch. Gotas de Chartreuse amarillo. Hielo. Bien batido, cola- % vasito de coñac. do y servido en copa bordea- Batido, colado y servido da de azúcar sobre zumo de en copa de agua llena d",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 87,
@@ -1494,13 +3067,28 @@
       "category": "cocktail",
       "name_es": "DE LUXE BRACER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ron échese",
+          "item_es": "ron échese",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "collins mé-",
+          "item_es": "collins mé-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "at Un huevo fresco. st Copita de Ajenjo blanco. i Cucharada de azúcar. An Gotas de vermouth francés. Jugo de una naranja. & Gotas de Anisette. n Gotas de ácido fosfático. ow Gotas de Ciiartreuse. Hielo. Batido» colado y Br Hielo. Batido» colado y servido en vaso delmónico. M servido en vaso delmónic",
       "method_es": "at Un huevo fresco. st Copita de Ajenjo blanco. i Cucharada de azúcar. An Gotas de vermouth francés. Jugo de una naranja. & Gotas de Anisette. n Gotas de ácido fosfático. ow Gotas de Ciiartreuse. Hielo. Batido» colado y Br Hielo. Batido» colado y servido en vaso delmónico. M servido en vaso delmónic",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1511,13 +3099,21 @@
       "category": "cocktail",
       "name_es": "PORTO RICO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "14",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Un huevo fresco. M Hácese como el Gin Ric- ia Hielo. Bien batido, cola- at do y servido en vaso de 12 key con gotas de granadina. i st onzas fino, llenándolo con An PORT WINE SANGAREE agua mineral. & Cucharadita de azúcar. n ow Vasito de vino de Oporto. PEACH BLOW Br Sírvase en vaso de limo- M nada,",
       "method_es": "Un huevo fresco. M Hácese como el Gin Ric- ia Hielo. Bien batido, cola- at do y servido en vaso de 12 key con gotas de granadina. i st onzas fino, llenándolo con An PORT WINE SANGAREE agua mineral. & Cucharadita de azúcar. n ow Vasito de vino de Oporto. PEACH BLOW Br Sírvase en vaso de limo- M nada,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 89,
@@ -1528,13 +3124,49 @@
       "category": "cocktail",
       "name_es": "SILVER DREAM SUISETTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "chartreuse",
+          "item_es": "chartreuse",
+          "amount": "4",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "benedictine",
+          "amount": "34",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "benedicti-",
+          "item_es": "benedicti-",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "delmónico me-",
+          "item_es": "delmónico me-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "FLOAT",
       "method_es": "FLOAT",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 90,
@@ -1579,13 +3211,35 @@
       "category": "cocktail",
       "name_es": "AMOR, AMOR BANANA HAPPY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "licor de banana",
+          "item_es": "licor de banana",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "licor de pina",
+          "item_es": "licor de pina",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "í /2 onza de jugo de toronja. 3 partes de licor de Banana. y¿ onza de vermouth blanco. 1 parte de jugo de limón. Vá onza de ginebra seca. Hielo» batido» colado y ser- 5 gotas de Amer Picón. vido en copa de coctel. Con hielo» batido, colado y servido en copa de coctel, PINEAPLE HAPPY 3 partes de lico",
       "method_es": "í /2 onza de jugo de toronja. 3 partes de licor de Banana. y¿ onza de vermouth blanco. 1 parte de jugo de limón. Vá onza de ginebra seca. Hielo» batido» colado y ser- 5 gotas de Amer Picón. vido en copa de coctel. Con hielo» batido, colado y servido en copa de coctel, PINEAPLE HAPPY 3 partes de lico",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

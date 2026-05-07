@@ -32,13 +32,21 @@
       "category": "cocktail",
       "name_es": "Siegfried Gessler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "an-",
+          "item_es": "an-",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "k. und k. Hoflieferant = Jägerndorf. = Nur echt mit Schutzmarke! K Kaffee-Cocktail. Mixbecher fülle zu 1/3 mit Eis, 1 Bolsglas Cherry - Brandy, 1/2 Glas Rotwein, 2 Teelöffel ff. Zucker, 1 Eigelb, schüttle alles gut und seihe die Mischungj in einen Champagnerbecher, serviere mit Strohhalmen. Kaffeeli",
       "method_es": "k. und k. Hoflieferant = Jägerndorf. = Nur echt mit Schutzmarke! K Kaffee-Cocktail. Mixbecher fülle zu 1/3 mit Eis, 1 Bolsglas Cherry - Brandy, 1/2 Glas Rotwein, 2 Teelöffel ff. Zucker, 1 Eigelb, schüttle alles gut und seihe die Mischungj in einen Champagnerbecher, serviere mit Strohhalmen. Kaffeeli",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,

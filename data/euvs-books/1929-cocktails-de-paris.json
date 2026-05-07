@@ -57,13 +57,42 @@
       "category": "cocktail",
       "name_es": "N'ERMOUTH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "augustura",
+          "item_es": "augustura",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sauce tobasco",
+          "item_es": "sauce tobasco",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sirop d'orange",
+          "item_es": "sirop d'orange",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -98,13 +127,21 @@
       "category": "cocktail",
       "name_es": "FRISSON",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -115,13 +152,35 @@
       "category": "cocktail",
       "name_es": "GREEN STAR COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cayenne",
+          "item_es": "cayenne",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,

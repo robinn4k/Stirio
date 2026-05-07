@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "ABSINTHE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -125,13 +133,28 @@
       "category": "cocktail",
       "name_es": "AMERICAN BEAUTY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "martini vermouth",
+          "item_es": "martini vermouth",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cognac camus et pour",
+          "item_es": "cognac camus et pour",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +165,21 @@
       "category": "cocktail",
       "name_es": "AMOUR COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marsala florio",
+          "item_es": "marsala florio",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -176,13 +207,21 @@
       "category": "cocktail",
       "name_es": "APPETISER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -244,13 +283,21 @@
       "category": "cocktail",
       "name_es": "BYRRH CASSIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème de cassis",
+          "item_es": "crème de cassis",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -261,13 +308,21 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE DE PAUVRE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +333,21 @@
       "category": "cocktail",
       "name_es": "DUBONNET CITRON",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de citron",
+          "item_es": "sirop de citron",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +358,21 @@
       "category": "cocktail",
       "name_es": "KIRSCH CASSIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème de cassis",
+          "item_es": "crème de cassis",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -346,13 +417,21 @@
       "category": "cocktail",
       "name_es": "SUZE CASSIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème de cassis",
+          "item_es": "crème de cassis",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +442,21 @@
       "category": "cocktail",
       "name_es": "VERMOUTH CASSIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème de cassis",
+          "item_es": "crème de cassis",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -516,13 +603,28 @@
       "category": "cocktail",
       "name_es": "BACARDI ZOOM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème",
+          "item_es": "crème",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "bacardi",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -550,13 +652,21 @@
       "category": "cocktail",
       "name_es": "BARBOTAGE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -584,13 +694,21 @@
       "category": "cocktail",
       "name_es": "BISHOP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange et",
+          "item_es": "orange et",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -635,13 +753,21 @@
       "category": "cocktail",
       "name_es": "BLUE BLAZER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre et",
+          "item_es": "sucre en poudre et",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,
@@ -669,13 +795,35 @@
       "category": "flip",
       "name_es": "BOSTON FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "madeira perestello",
+          "item_es": "madeira perestello",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "seagram's bourbon whiskey",
+          "item_es": "seagram's bourbon whiskey",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -686,13 +834,21 @@
       "category": "cocktail",
       "name_es": "BRAIN DUSTER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "per-",
+          "item_es": "per-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "par FRANK, du Bar Ritz.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -703,13 +859,21 @@
       "category": "cobbler",
       "name_es": "BRANDY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron et une",
+          "item_es": "citron et une",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 41,
@@ -720,13 +884,21 @@
       "category": "cocktail",
       "name_es": "BRANDY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -754,13 +926,21 @@
       "category": "cocktail",
       "name_es": "BRANDY DAISY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -771,13 +951,21 @@
       "category": "cocktail",
       "name_es": "BRANDY FIX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Pour le Cin, Rhum et Whisky fix, on",
       "method_es": "Pour le Cin, Rhum et Whisky fix, on",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -788,13 +976,21 @@
       "category": "fizz",
       "name_es": "BRANDY FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -805,13 +1001,21 @@
       "category": "flip",
       "name_es": "BRANDY FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Pour le Cin, Rhum ou Whisky flip, on Pour les Bacardi, Gin, Rhum ou Whisky,",
       "method_es": "Pour le Cin, Rhum ou Whisky flip, on Pour les Bacardi, Gin, Rhum ou Whisky,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -822,13 +1026,35 @@
       "category": "punch",
       "name_es": "BRANDY PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "eau bouillante",
+          "item_es": "eau bouillante",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "Pour la préparation des Apricot, Gin, Pour environ 15 personnes",
       "method_es": "Pour la préparation des Apricot, Gin, Pour environ 15 personnes",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -839,13 +1065,28 @@
       "category": "cocktail",
       "name_es": "BRANDY SANCAREE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Let us have wine and women — mirlh and laughter —",
       "method_es": "Let us have wine and women — mirlh and laughter —",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -856,13 +1097,21 @@
       "category": "smash",
       "name_es": "BRANDY SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -873,13 +1122,21 @@
       "category": "sour",
       "name_es": "BRANDY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Pour la préparation du Calvados, Bacardi,",
       "method_es": "Pour la préparation du Calvados, Bacardi,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -924,13 +1181,21 @@
       "category": "cocktail",
       "name_es": "BULL DOC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seagers dry gin",
+          "item_es": "seagers dry gin",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -941,13 +1206,42 @@
       "category": "cocktail",
       "name_es": "BUNNY HUC COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de fram",
+          "item_es": "sirop de fram",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "crème fraîche",
+          "item_es": "crème fraîche",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "seager's spécial dry gin",
+          "item_es": "seager's spécial dry gin",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 55,
@@ -1043,13 +1337,21 @@
       "category": "cup",
       "name_es": "CHAMPAGNE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne perrier",
+          "item_es": "champagne perrier",
+          "amount": "3",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Pour 15 personnes :",
       "method_es": "Pour 15 personnes :",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 61,
@@ -1060,13 +1362,35 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE JULER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "maras-",
+          "item_es": "maras-",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "fine camus",
+          "item_es": "fine camus",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Pour 25 personnes :",
       "method_es": "Pour 25 personnes :",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 62,
@@ -1077,13 +1401,21 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE PICK-ME-UP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 63,
@@ -1094,13 +1426,21 @@
       "category": "cocktail",
       "name_es": "CHARLIE COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 64,
@@ -1128,13 +1468,35 @@
       "category": "cocktail",
       "name_es": "CHOCOLATE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao rouge bardinet",
+          "item_es": "curaçao rouge bardinet",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "4",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "champagne per-",
+          "item_es": "champagne per-",
+          "amount": "4",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Pour 40 personnes.",
       "method_es": "Pour 40 personnes.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 66,
@@ -1145,13 +1507,35 @@
       "category": "cup",
       "name_es": "CLARET CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ananas bien mûrs",
+          "item_es": "ananas bien mûrs",
+          "amount": "6",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "bordeaux blanc",
+          "item_es": "bordeaux blanc",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Pour 10 personnes.",
       "method_es": "Pour 10 personnes.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 67,
@@ -1230,13 +1614,21 @@
       "category": "fizz",
       "name_es": "CREAM FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seacers dry gin",
+          "item_es": "seacers dry gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 72,
@@ -1247,13 +1639,21 @@
       "category": "cocktail",
       "name_es": "CUBANO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 73,
@@ -1298,13 +1698,21 @@
       "category": "cocktail",
       "name_es": "DERBY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seagers gin",
+          "item_es": "seagers gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1417,13 +1825,21 @@
       "category": "cocktail",
       "name_es": "EAST INDIA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -1434,13 +1850,21 @@
       "category": "flip",
       "name_es": "ECC FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 84,
@@ -1451,13 +1875,21 @@
       "category": "cocktail",
       "name_es": "ECC LEMONADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lait",
+          "item_es": "lait",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1485,13 +1917,21 @@
       "category": "cocktail",
       "name_es": "EVENINC DELICHT COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky sea-",
+          "item_es": "whisky sea-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 87,
@@ -1502,13 +1942,21 @@
       "category": "cocktail",
       "name_es": "EYE-OPENER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1553,13 +2001,28 @@
       "category": "cocktail",
       "name_es": "FOC HORN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seager's",
+          "item_es": "seager's",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "citron et servir",
+          "item_es": "citron et servir",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 91,
@@ -1638,13 +2101,21 @@
       "category": "cocktail",
       "name_es": "GIN AND TONIC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seacer's",
+          "item_es": "seacer's",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 96,
@@ -1672,13 +2143,21 @@
       "category": "fizz",
       "name_es": "GIN FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seacer's dry cin",
+          "item_es": "seacer's dry cin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 98,
@@ -1723,13 +2202,28 @@
       "category": "cup",
       "name_es": "CINGER ALE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cinger aie",
+          "item_es": "cinger aie",
+          "amount": "5",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Pour dix personnes.",
       "method_es": "Pour dix personnes.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 101,
@@ -1791,13 +2285,21 @@
       "category": "cocktail",
       "name_es": "HAWAIAN COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "schenley's golden",
+          "item_es": "schenley's golden",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 105,
@@ -1876,13 +2378,21 @@
       "category": "cocktail",
       "name_es": "HORSE'S NECK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 110,
@@ -1910,13 +2420,21 @@
       "category": "fizz",
       "name_es": "IMPERIAL FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seagram's bourbon whiskey",
+          "item_es": "seagram's bourbon whiskey",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 112,
@@ -1961,13 +2479,21 @@
       "category": "cocktail",
       "name_es": "JOHN COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 115,
@@ -1978,13 +2504,28 @@
       "category": "fizz",
       "name_es": "JUBILEE FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus d'ananas diamond",
+          "item_es": "jus d'ananas diamond",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "seager's gin",
+          "item_es": "seager's gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 116,
@@ -2080,13 +2621,21 @@
       "category": "cocktail",
       "name_es": "LEMON SQUASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 122,
@@ -2131,13 +2680,21 @@
       "category": "cocktail",
       "name_es": "LONDON DELICHT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seacer's gin",
+          "item_es": "seacer's gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 125,
@@ -2182,13 +2739,21 @@
       "category": "cocktail",
       "name_es": "MAGNOLIA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 128,
@@ -2216,13 +2781,28 @@
       "category": "cocktail",
       "name_es": "MAMAY TAYLOR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seager's",
+          "item_es": "seager's",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 130,
@@ -2250,13 +2830,21 @@
       "category": "fizz",
       "name_es": "MAY BLOSSOM FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "swedish punch",
+          "item_es": "swedish punch",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 132,
@@ -2267,13 +2855,21 @@
       "category": "cocktail",
       "name_es": "MILLIONNAIRE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 133,
@@ -2284,13 +2880,21 @@
       "category": "julep",
       "name_es": "MINT JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron et",
+          "item_es": "citron et",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 134,
@@ -2318,13 +2922,28 @@
       "category": "cocktail",
       "name_es": "MORNINC SMILE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "schenley's golden wedding",
+          "item_es": "schenley's golden wedding",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "lait",
+          "item_es": "lait",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 136,
@@ -2335,13 +2954,28 @@
       "category": "cocktail",
       "name_es": "MASTER JACK COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum pen",
+          "item_es": "rhum pen",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "rhum et deux",
+          "item_es": "rhum et deux",
+          "amount": "3",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 137,
@@ -2352,13 +2986,21 @@
       "category": "fizz",
       "name_es": "NEW ORLEANS FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seacer's dry",
+          "item_es": "seacer's dry",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 138,
@@ -2403,13 +3045,21 @@
       "category": "cocktail",
       "name_es": "OLD FASHION COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "schenley's rye ou bourbon",
+          "item_es": "schenley's rye ou bourbon",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 141,
@@ -2454,13 +3104,28 @@
       "category": "fizz",
       "name_es": "ORANGE FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus",
+          "item_es": "jus",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "seager's dry gin",
+          "item_es": "seager's dry gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 144,
@@ -2471,13 +3136,21 @@
       "category": "cocktail",
       "name_es": "ORANGEADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 145,
@@ -2505,13 +3178,21 @@
       "category": "cocktail",
       "name_es": "PANSY BLOSSOM COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pernod fils",
+          "item_es": "pernod fils",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 147,
@@ -2573,13 +3254,35 @@
       "category": "fizz",
       "name_es": "PINEAPPLE FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus d'ananas diamond",
+          "item_es": "jus d'ananas diamond",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "glace et 4 bou",
+          "item_es": "glace et 4 bou",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Pour environ 15 personnes :",
       "method_es": "Pour environ 15 personnes :",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 151,
@@ -2624,13 +3327,35 @@
       "category": "punch",
       "name_es": "PLANTER'S PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "citron et une d orange",
+          "item_es": "citron et une d orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 154,
@@ -2641,13 +3366,21 @@
       "category": "cocktail",
       "name_es": "PORTO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "porto",
+          "item_es": "porto",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 155,
@@ -2658,13 +3391,21 @@
       "category": "flip",
       "name_es": "PORTO FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "porto",
+          "item_es": "porto",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 156,
@@ -2675,13 +3416,28 @@
       "category": "cocktail",
       "name_es": "PORTO NEGUS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "porto",
+          "item_es": "porto",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 157,
@@ -2709,13 +3465,21 @@
       "category": "cocktail",
       "name_es": "PRAIRIE OYSTER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tomafo",
+          "item_es": "tomafo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "par GEORGES, du Bar Anglais",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 159,
@@ -2726,13 +3490,21 @@
       "category": "cocktail",
       "name_es": "PRINCESS MARY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "an-",
+          "item_es": "an-",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 160,
@@ -2794,13 +3566,21 @@
       "category": "cocktail",
       "name_es": "REMSEN COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 164,
@@ -2828,13 +3608,28 @@
       "category": "cocktail",
       "name_es": "ROCK AND RYE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "schenley's gol",
+          "item_es": "schenley's gol",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino luxardo",
+          "item_es": "maraschino luxardo",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Pour environ 20 personnes.",
       "method_es": "Pour environ 20 personnes.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 166,
@@ -2896,13 +3691,21 @@
       "category": "fizz",
       "name_es": "ROYAL FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de framboise",
+          "item_es": "sirop de framboise",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Inventé au Bar Chatham.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 170,
@@ -2913,13 +3716,21 @@
       "category": "cocktail",
       "name_es": "SARATOCA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac camus",
+          "item_es": "cognac camus",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 171,
@@ -2930,13 +3741,21 @@
       "category": "cocktail",
       "name_es": "SAZERAC COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "per",
+          "item_es": "per",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 172,
@@ -2964,13 +3783,21 @@
       "category": "fizz",
       "name_es": "SCOTCH WHISKY FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky white horse",
+          "item_es": "whisky white horse",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 174,
@@ -2981,13 +3808,21 @@
       "category": "cocktail",
       "name_es": "SCOTCH WHISKY COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "white label whisky",
+          "item_es": "white label whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 175,
@@ -2998,13 +3833,21 @@
       "category": "cocktail",
       "name_es": "SCRIBE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "per",
+          "item_es": "per",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "par FRANK, du Bar Ritz.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 176,
@@ -3015,13 +3858,21 @@
       "category": "cocktail",
       "name_es": "SEVENTY-FIVE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seager's spécial dry",
+          "item_es": "seager's spécial dry",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 177,
@@ -3049,13 +3900,21 @@
       "category": "cobbler",
       "name_es": "SHERRY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange et de citron",
+          "item_es": "orange et de citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 179,
@@ -3066,13 +3925,28 @@
       "category": "cocktail",
       "name_es": "SHERRY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brown",
+          "item_es": "brown",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sherry osborne",
+          "item_es": "sherry osborne",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 180,
@@ -3151,13 +4025,21 @@
       "category": "cocktail",
       "name_es": "SLOE BERRY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 185,
@@ -3168,13 +4050,21 @@
       "category": "cocktail",
       "name_es": "SOYER AU CHAMPAGNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange et",
+          "item_es": "orange et",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 186,
@@ -3202,13 +4092,21 @@
       "category": "cocktail",
       "name_es": "STONE WALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky king george iv",
+          "item_es": "whisky king george iv",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 188,
@@ -3219,13 +4117,21 @@
       "category": "cocktail",
       "name_es": "SWISSESS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pernod fils",
+          "item_es": "pernod fils",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 189,
@@ -3253,13 +4159,21 @@
       "category": "fizz",
       "name_es": "TEXAS FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seagers dry gin",
+          "item_es": "seagers dry gin",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 191,
@@ -3321,13 +4235,21 @@
       "category": "cocktail",
       "name_es": "TIPPERARY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "shaker.",
       "method_es": "shaker.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 195,
@@ -3338,13 +4260,28 @@
       "category": "cocktail",
       "name_es": "TOM COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "seager's gin",
+          "item_es": "seager's gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 196,
@@ -3355,13 +4292,21 @@
       "category": "cocktail",
       "name_es": "TOMATE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 197,
@@ -3372,13 +4317,21 @@
       "category": "cocktail",
       "name_es": "TOMATO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus de tomate",
+          "item_es": "jus de tomate",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 198,
@@ -3423,13 +4376,21 @@
       "category": "cocktail",
       "name_es": "VALENCIA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne",
+          "item_es": "champagne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 201,
@@ -3474,13 +4435,21 @@
       "category": "sour",
       "name_es": "WHISKY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 204,
@@ -3491,13 +4460,28 @@
       "category": "cocktail",
       "name_es": "WHITE LION",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop",
+          "item_es": "sirop",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Recette de M'' ZABRISKIE.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 205,
@@ -3559,13 +4543,28 @@
       "category": "cocktail",
       "name_es": "YALE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de",
+          "item_es": "sirop de",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 209,
@@ -3610,13 +4609,28 @@
       "category": "cocktail",
       "name_es": "ZAZARAC COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seagram's",
+          "item_es": "seagram's",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bonne huile d'olive et",
+          "item_es": "bonne huile d'olive et",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

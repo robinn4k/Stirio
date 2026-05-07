@@ -32,13 +32,21 @@
       "category": "cocktail",
       "name_es": "AMAN Y ROGER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande de axúcar",
+          "item_es": "grande de axúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "[OCR skipped on page(s) 76][OCR skipped on page(s) 78]Fr Una rodaja de món. Llonese el vaso con agua de Seltz y ti e con paa LIMONADA soso un vaso imperia! BRANOY Unos pacctos de alo, Una cucharada grande de axúcar El iudo de un limón na Copa de Cognac Bisgult V. O. ra icóala de limón Llonese don ag",
       "method_es": "[OCR skipped on page(s) 76][OCR skipped on page(s) 78]Fr Una rodaja de món. Llonese el vaso con agua de Seltz y ti e con paa LIMONADA soso un vaso imperia! BRANOY Unos pacctos de alo, Una cucharada grande de axúcar El iudo de un limón na Copa de Cognac Bisgult V. O. ra icóala de limón Llonese don ag",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -66,13 +74,56 @@
       "category": "cocktail",
       "name_es": "PORTERO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jorabe de grosella for",
+          "item_es": "jorabe de grosella for",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "licor de whisky ha mai",
+          "item_es": "licor de whisky ha mai",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor de crema de cacao ma",
+          "item_es": "licor de crema de cacao ma",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "irocrial",
+          "item_es": "irocrial",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "axpcar",
+          "item_es": "axpcar",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "e operto de wisky jar ha",
+          "item_es": "e operto de wisky jar ha",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la coctelera Usese e cocktotera.",
       "method_es": "Use la coctelera Usese e cocktotera.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -134,13 +185,35 @@
       "category": "cocktail",
       "name_es": "EOCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pipstmim cad freres",
+          "item_es": "pipstmim cad freres",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin sorper'",
+          "item_es": "dry gin sorper'",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sed water",
+          "item_es": "sed water",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "sosa la cocker. res pedacitos de helo, 8 gotas de Pipstmim Cad Freres. Va cucharadita de orbe de Ginsdina 2/3 port de Aperal 1/3 parte de Dry Gin Sorper' Alte bien. cullese y sirve en cepas 0120 ramos aa seso la cocker, ños pedacinos de hilo Bota e Popermint Crd Feres Dña cbc de Granadino Fortuny 2",
       "method_es": "sosa la cocker. res pedacitos de helo, 8 gotas de Pipstmim Cad Freres. Va cucharadita de orbe de Ginsdina 2/3 port de Aperal 1/3 parte de Dry Gin Sorper' Alte bien. cullese y sirve en cepas 0120 ramos aa seso la cocker, ños pedacinos de hilo Bota e Popermint Crd Feres Dña cbc de Granadino Fortuny 2",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -151,13 +224,112 @@
       "category": "cocktail",
       "name_es": "COCKTAI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "biter orange",
+          "item_es": "biter orange",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curscso marie brizoró",
+          "item_es": "curscso marie brizoró",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jerez seco peres",
+          "item_es": "jerez seco peres",
+          "amount": "13",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de lá",
+          "item_es": "jugo de lá",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hilo",
+          "item_es": "hilo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "marechino",
+          "item_es": "marechino",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "contresan seco",
+          "item_es": "contresan seco",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "chartrelsse tarna verd",
+          "item_es": "chartrelsse tarna verd",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao rojo more surard",
+          "item_es": "curacao rojo more surard",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dey cin sumnas",
+          "item_es": "dey cin sumnas",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cognac bisquit vo",
+          "item_es": "cognac bisquit vo",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermocth francés noily",
+          "item_es": "vermocth francés noily",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de imán",
+          "item_es": "jugo de imán",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese la coctelera Usese la cockteoa",
       "method_es": "Usese la coctelera Usese la cockteoa",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -168,13 +340,91 @@
       "category": "cocktail",
       "name_es": "ARRAZOLA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ory gin sumees",
+          "item_es": "ory gin sumees",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry cin summers",
+          "item_es": "dry cin summers",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jeraz quina",
+          "item_es": "jeraz quina",
+          "amount": "0.2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de anonds",
+          "item_es": "jugo de anonds",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cointreso",
+          "item_es": "cointreso",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth francés neill",
+          "item_es": "vermouth francés neill",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "elo",
+          "item_es": "elo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "e angélica",
+          "item_es": "e angélica",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "helo",
+          "item_es": "helo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jerez pálidn peres",
+          "item_es": "jerez pálidn peres",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Use la cocktelaa",
       "method_es": "Use la cocktelaa",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -219,13 +469,35 @@
       "category": "cocktail",
       "name_es": "CORTA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jorace de spend for-",
+          "item_es": "jorace de spend for-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "dibcnnss",
+          "item_es": "dibcnnss",
+          "amount": "0.125",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese la cocteles, Use e coctelera Usese la cocktelera.",
       "method_es": "Usese la cocteles, Use e coctelera Usese la cocktelera.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -253,13 +525,35 @@
       "category": "cocktail",
       "name_es": "EGCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de menta cet fréres",
+          "item_es": "crema de menta cet fréres",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "free de crorscina",
+          "item_es": "free de crorscina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "arabe de así for-",
+          "item_es": "arabe de así for-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "8 gotas de Crema de Menta Cet Fréres. E fotos de Licor Crema de Vainilla 1/8 pacto de Dry Cin Summers, 2/3 pane de Vermont Nal Prat Agites, cuáles y svaseetn copa de 120 gramos, agregindole un clave de lor sol cir o pedscitos de helo, Una cucharadita de free de Crorscina $ gotas de jugo de limón por",
       "method_es": "8 gotas de Crema de Menta Cet Fréres. E fotos de Licor Crema de Vainilla 1/8 pacto de Dry Cin Summers, 2/3 pane de Vermont Nal Prat Agites, cuáles y svaseetn copa de 120 gramos, agregindole un clave de lor sol cir o pedscitos de helo, Una cucharadita de free de Crorscina $ gotas de jugo de limón por",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -270,13 +564,168 @@
       "category": "cocktail",
       "name_es": "BLUE MONDAY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bxrzeto al vegen",
+          "item_es": "bxrzeto al vegen",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "extracto azul vegetal",
+          "item_es": "extracto azul vegetal",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin summer",
+          "item_es": "dry gin summer",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "helo",
+          "item_es": "helo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "al vegetal",
+          "item_es": "al vegetal",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "velo",
+          "item_es": "velo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jarabo de ananá fo",
+          "item_es": "jarabo de ananá fo",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja sesic",
+          "item_es": "jugo de naranja sesic",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "e jerez seco perea",
+          "item_es": "e jerez seco perea",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hilo",
+          "item_es": "hilo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "kireh",
+          "item_es": "kireh",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "chortreuse amarillo",
+          "item_es": "chortreuse amarillo",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry on simmners",
+          "item_es": "dry on simmners",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hito",
+          "item_es": "hito",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de sra",
+          "item_es": "jugo de sra",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jus de mandarina",
+          "item_es": "jus de mandarina",
+          "amount": "149",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry cin sumar",
+          "item_es": "dry cin sumar",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jerez dulce peres",
+          "item_es": "jerez dulce peres",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "binter secrtat",
+          "item_es": "binter secrtat",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jerez seco perea",
+          "item_es": "jerez seco perea",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermonih francés nolly",
+          "item_es": "vermonih francés nolly",
+          "amount": "172",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese la cocktelera Usesa la cocktelra",
       "method_es": "Usese la cocktelera Usesa la cocktelra",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -321,13 +770,98 @@
       "category": "cocktail",
       "name_es": "COCKTANL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grand marmier",
+          "item_es": "grand marmier",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "benedictne",
+          "item_es": "benedictne",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "mosperidina",
+          "item_es": "mosperidina",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "croma de cacso marie",
+          "item_es": "croma de cacso marie",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "helo",
+          "item_es": "helo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "oporto peres",
+          "item_es": "oporto peres",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao mario brizard",
+          "item_es": "curacao mario brizard",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "velo",
+          "item_es": "velo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "caspar bisquit vo",
+          "item_es": "caspar bisquit vo",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth torino cinzano",
+          "item_es": "vermouth torino cinzano",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fermer",
+          "item_es": "fermer",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese la cckrelera.",
       "method_es": "Usese la cckrelera.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -338,13 +872,133 @@
       "category": "cocktail",
       "name_es": "ENANA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hilo",
+          "item_es": "hilo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "do curacao mare drizard",
+          "item_es": "do curacao mare drizard",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de lima",
+          "item_es": "jugo de lima",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "diy cin sumner's",
+          "item_es": "diy cin sumner's",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de gi",
+          "item_es": "jarabe de gi",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vino málaga",
+          "item_es": "vino málaga",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de leche",
+          "item_es": "crema de leche",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "caño quemada",
+          "item_es": "caño quemada",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ron charleston",
+          "item_es": "ron charleston",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao mario bvizard",
+          "item_es": "curacao mario bvizard",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "wnsky excocás john hale",
+          "item_es": "wnsky excocás john hale",
+          "amount": "0.75",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "meracmo",
+          "item_es": "meracmo",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "chery brandy marie br",
+          "item_es": "chery brandy marie br",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cae lrsco",
+          "item_es": "cae lrsco",
+          "amount": "0.167",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "who joy hai",
+          "item_es": "who joy hai",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "helo",
+          "item_es": "helo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "User la coctelera",
       "method_es": "User la coctelera",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -355,13 +1009,91 @@
       "category": "cocktail",
       "name_es": "MONITOR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de menta cer fstres",
+          "item_es": "crema de menta cer fstres",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "elo",
+          "item_es": "elo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "de 100",
+          "item_es": "de 100",
+          "amount": "0",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor de jugo de limón",
+          "item_es": "licor de jugo de limón",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dry cin samer",
+          "item_es": "dry cin samer",
+          "amount": "0.125",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "baer secrestar tercera",
+          "item_es": "baer secrestar tercera",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac blaquit yo",
+          "item_es": "cognac blaquit yo",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "bitter angostura",
+          "item_es": "bitter angostura",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "melo",
+          "item_es": "melo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "comirosu",
+          "item_es": "comirosu",
+          "amount": "7",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese la cocker, Use la ockrcle",
       "method_es": "Usese la cocker, Use la ockrcle",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -372,13 +1104,98 @@
       "category": "cocktail",
       "name_es": "FAVORITA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de cacao ma",
+          "item_es": "crema de cacao ma",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "e vermont francis nail",
+          "item_es": "e vermont francis nail",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "croma de cosís",
+          "item_es": "croma de cosís",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "agnjo",
+          "item_es": "agnjo",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin summers",
+          "item_es": "dry gin summers",
+          "amount": "172",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin sameer'",
+          "item_es": "dry gin sameer'",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "calvados",
+          "item_es": "calvados",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "melo",
+          "item_es": "melo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "qui ll",
+          "item_es": "qui ll",
+          "amount": "1.0",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "comes",
+          "item_es": "comes",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dey gin sumners",
+          "item_es": "dey gin sumners",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Useso la coctelera User la ester",
       "method_es": "Useso la coctelera User la ester",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -406,13 +1223,98 @@
       "category": "cocktail",
       "name_es": "HAMPSTEAD",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "biter argostua",
+          "item_es": "biter argostua",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "creus amarillo",
+          "item_es": "creus amarillo",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vii escocés john haig",
+          "item_es": "vii escocés john haig",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ren baca",
+          "item_es": "ren baca",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hilo",
+          "item_es": "hilo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lore cunscao mane br",
+          "item_es": "lore cunscao mane br",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "juge de timón",
+          "item_es": "juge de timón",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "e nianja sade",
+          "item_es": "e nianja sade",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "e hielo",
+          "item_es": "e hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "vedia",
+          "item_es": "vedia",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "doy cin surmners",
+          "item_es": "doy cin surmners",
+          "amount": "0.167",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "forabe de granadina",
+          "item_es": "forabe de granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Useso la coctelera, Usese la cocktelera",
       "method_es": "Useso la coctelera, Usese la cocktelera",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -423,13 +1325,126 @@
       "category": "cocktail",
       "name_es": "GRAN APERITIVO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisiy escocés john hal",
+          "item_es": "whisiy escocés john hal",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "elo",
+          "item_es": "elo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "kad",
+          "item_es": "kad",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de granadina",
+          "item_es": "jarabe de granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "0.167",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry ci sumnars",
+          "item_es": "dry ci sumnars",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "colntrasa mil seco",
+          "item_es": "colntrasa mil seco",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "la de son martin de jugo",
+          "item_es": "la de son martin de jugo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jara de azúcar for",
+          "item_es": "jara de azúcar for",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curncso mari brizara",
+          "item_es": "curncso mari brizara",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "delos de aperial de ajonio",
+          "item_es": "delos de aperial de ajonio",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarebe de craradina",
+          "item_es": "jarebe de craradina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ce dry gin summers",
+          "item_es": "ce dry gin summers",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "croma do cope mario br",
+          "item_es": "croma do cope mario br",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "User la cocltelra Usese la cocktelar Use lcccisn",
       "method_es": "User la cocltelra Usese la cocktelar Use lcccisn",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -457,13 +1472,154 @@
       "category": "cocktail",
       "name_es": "LAUTARO FILM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marachivo",
+          "item_es": "marachivo",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao marie brizrd",
+          "item_es": "curacao marie brizrd",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "srácar",
+          "item_es": "srácar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermostn peces nolly",
+          "item_es": "vermostn peces nolly",
+          "amount": "243",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ajeno",
+          "item_es": "ajeno",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "old tom cin summers",
+          "item_es": "old tom cin summers",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "chostreuse verde",
+          "item_es": "chostreuse verde",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "licor amarlo",
+          "item_es": "licor amarlo",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "helo",
+          "item_es": "helo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bereditin",
+          "item_es": "bereditin",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cointra",
+          "item_es": "cointra",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "e pulo",
+          "item_es": "e pulo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "crema de noya",
+          "item_es": "crema de noya",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry qin camer's",
+          "item_es": "dry qin camer's",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "slo",
+          "item_es": "slo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja soic",
+          "item_es": "jugo de naranja soic",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry cin sumner'",
+          "item_es": "dry cin sumner'",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ron bacaró",
+          "item_es": "ron bacaró",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "las de oporto de cinzano",
+          "item_es": "las de oporto de cinzano",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la de composición User la cocktelera Usese la cocktelera",
       "method_es": "Use la de composición User la cocktelera Usese la cocktelera",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -491,13 +1647,77 @@
       "category": "cocktail",
       "name_es": "MARMY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "eiter orange",
+          "item_es": "eiter orange",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac bisqut yo",
+          "item_es": "cognac bisqut yo",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao marie brizard",
+          "item_es": "curacao marie brizard",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "crema de cacao marie dri",
+          "item_es": "crema de cacao marie dri",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ron charleston",
+          "item_es": "ron charleston",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacso mane brizard",
+          "item_es": "curacso mane brizard",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth torio cinzano",
+          "item_es": "vermouth torio cinzano",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jos pálido peces",
+          "item_es": "jos pálido peces",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "americano cancia",
+          "item_es": "americano cancia",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Users la cockteleca",
       "method_es": "Users la cockteleca",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -525,13 +1745,119 @@
       "category": "cocktail",
       "name_es": "OLD FASMIONED",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cuerscso rojo marie br",
+          "item_es": "cuerscso rojo marie br",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "kien",
+          "item_es": "kien",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cerda or",
+          "item_es": "cerda or",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "crema de leche",
+          "item_es": "crema de leche",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "foreve de cesnadina",
+          "item_es": "foreve de cesnadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "hilo",
+          "item_es": "hilo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bitor sector",
+          "item_es": "bitor sector",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curscro rojo marie",
+          "item_es": "curscro rojo marie",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naránja sic",
+          "item_es": "jugo de naránja sic",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de menta cat fe",
+          "item_es": "crema de menta cat fe",
+          "amount": "174",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "azicar impalpable",
+          "item_es": "azicar impalpable",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "e copec enqui yo",
+          "item_es": "e copec enqui yo",
+          "amount": "17",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "croma de leche",
+          "item_es": "croma de leche",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "fon charleston",
+          "item_es": "fon charleston",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese el vaso de composición. Usese la ee, Usere la cochtetera Usese el vaso ce composición Usese el vaso de composición Useso el vato ce composición,",
       "method_es": "Usese el vaso de composición. Usese la ee, Usere la cochtetera Usese el vaso ce composición Usese el vaso de composición Useso el vato ce composición,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -542,13 +1868,105 @@
       "category": "cocktail",
       "name_es": "KTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry cin sumner'",
+          "item_es": "dry cin sumner'",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de granadina",
+          "item_es": "jarabe de granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "halo",
+          "item_es": "halo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "benedict",
+          "item_es": "benedict",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "anisette marie br",
+          "item_es": "anisette marie br",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "benedictne",
+          "item_es": "benedictne",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth francés nolly",
+          "item_es": "vermouth francés nolly",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin summer",
+          "item_es": "dry gin summer",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grand marmer",
+          "item_es": "grand marmer",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dry cin sumners",
+          "item_es": "dry cin sumners",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "do cher brandy mare ri",
+          "item_es": "do cher brandy mare ri",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jraba de canedina",
+          "item_es": "jraba de canedina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Usese el vaso de composición",
       "method_es": "Usese el vaso de composición",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -576,13 +1994,70 @@
       "category": "cocktail",
       "name_es": "ROSINCTON",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de imén",
+          "item_es": "jugo de imén",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin summers",
+          "item_es": "dry gin summers",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ron charleston",
+          "item_es": "ron charleston",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "de 90",
+          "item_es": "de 90",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor'de ron charleston",
+          "item_es": "licor'de ron charleston",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hilo",
+          "item_es": "hilo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "de c",
+          "item_es": "de c",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usese la coctelera Usese el vaso de compssición",
       "method_es": "Usese la coctelera Usese el vaso de compssición",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -593,13 +2068,35 @@
       "category": "cocktail",
       "name_es": "ZAZA IMPERIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "br orange",
+          "item_es": "br orange",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "reina do caco maria br",
+          "item_es": "reina do caco maria br",
+          "amount": "0.125",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vino oporto peres",
+          "item_es": "vino oporto peres",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usera a cockteloa",
       "method_es": "Usera a cockteloa",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

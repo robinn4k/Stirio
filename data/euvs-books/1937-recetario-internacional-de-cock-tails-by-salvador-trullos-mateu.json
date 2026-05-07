@@ -32,13 +32,56 @@
       "category": "cocktail",
       "name_es": "ABSINTHE COOK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "coñac tres",
+          "item_es": "coñac tres",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "prunelle brandy",
+          "item_es": "prunelle brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jerez tio pepe",
+          "item_es": "jerez tio pepe",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Tres cuartas partes ajenjo verde. Gotas de orange bitters y Angostura . Gotas anisete. Bátase bien. Sírvase. ABSINTHE FRAPE COCK·TAIL (Ajenjo Frapé) Tres cuartos vasito aj enjo. Un cuarto vasito anisete. 78 Tome Cerveza POLAR y tomará calidad. Bien batido. Colado a vaso Delm6nico. Llénese con agua m",
       "method_es": "Tres cuartas partes ajenjo verde. Gotas de orange bitters y Angostura . Gotas anisete. Bátase bien. Sírvase. ABSINTHE FRAPE COCK·TAIL (Ajenjo Frapé) Tres cuartos vasito aj enjo. Un cuarto vasito anisete. 78 Tome Cerveza POLAR y tomará calidad. Bien batido. Colado a vaso Delm6nico. Llénese con agua m",
       "glassware": "Ajenjo Frapé",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -49,13 +92,28 @@
       "category": "cocktail",
       "name_es": "BARRY OOCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "perfecto amor",
+          "item_es": "perfecto amor",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas Angostura. Gotas crema de menta. Una tercera parte vermouth FERRERO. 81 -��ara J Q D P I C ff J¡ y un sandwich UN ALI M ENTO COMPLETO Cerve cería La Tropical Tome Cerveza POLAR; siempre la mejor. Dos terceras partes ginebra B00'rH '$. Bátase. BEADLESTONE COCK-TAIL Media pa rte wbiskey NEPLU:::",
       "method_es": "Gotas Angostura. Gotas crema de menta. Una tercera parte vermouth FERRERO. 81 -��ara J Q D P I C ff J¡ y un sandwich UN ALI M ENTO COMPLETO Cerve cería La Tropical Tome Cerveza POLAR; siempre la mejor. Dos terceras partes ginebra B00'rH '$. Bátase. BEADLESTONE COCK-TAIL Media pa rte wbiskey NEPLU:::",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +124,49 @@
       "category": "cocktail",
       "name_es": "BISHOP POTTER COOK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra b0 0th 's",
+          "item_es": "ginebra b0 0th 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey mont vernon",
+          "item_es": "whiskey mont vernon",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "aloe gin",
+          "item_es": "aloe gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de orange bitters. Gotas de calisaya. Cuarta parte vermouth CAZALIS & PR.A.TS. Cuarta parte vermouth ]WRRERO . Media parte ginebra B0 0TH 'S. Revuélvase bien. BLACK HAWK COOK-TAIL Media parte whiskey MONT VERNON. Media parte aloe gin. Revuélvase. Una, cereza. BLACKSTONE COCKTAIL Cuarta parte v",
       "method_es": "Gotas de orange bitters. Gotas de calisaya. Cuarta parte vermouth CAZALIS & PR.A.TS. Cuarta parte vermouth ]WRRERO . Media parte ginebra B0 0TH 'S. Revuélvase bien. BLACK HAWK COOK-TAIL Media parte whiskey MONT VERNON. Media parte aloe gin. Revuélvase. Una, cereza. BLACKSTONE COCKTAIL Cuarta parte v",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +177,56 @@
       "category": "cocktail",
       "name_es": "BLUE BIRD COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey victoria vat",
+          "item_es": "whiskey victoria vat",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Cuatro gotas angostura. bitters. Tres cuartos vasito de giuebra BOOTH 'S. Cinco gotas curacao. Bátase. BOBBIE BURNS COCK-TAIL Cucharadita jugo de naranja. Cucharadita marraschino. Disuélvase un terrón de azúcar. Media parte whiskey VICTORIA VAT. Media parte vermouth FERRERO. Bátase. BOLES COOK-TAIL",
       "method_es": "Cuatro gotas angostura. bitters. Tres cuartos vasito de giuebra BOOTH 'S. Cinco gotas curacao. Bátase. BOBBIE BURNS COCK-TAIL Cucharadita jugo de naranja. Cucharadita marraschino. Disuélvase un terrón de azúcar. Media parte whiskey VICTORIA VAT. Media parte vermouth FERRERO. Bátase. BOLES COOK-TAIL",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -100,13 +237,21 @@
       "category": "cocktail",
       "name_es": "BRANDY COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas orange bitters. Vasito de coñac SOBERANO. Gotas de almíb ar. Revuélvase. B:RANT COCK-TAIL Gotas Angostura. Cuarta parte menta blanc a. 85 Pida POLAR y le darán la mejor Cerveza. Tres cuartas partes coñac T.RES COPAS. Oliscara de limón. Bátase. BRIDAL OOOK-TAIL Gotas orange bitters. Tercera par",
       "method_es": "Gotas orange bitters. Vasito de coñac SOBERANO. Gotas de almíb ar. Revuélvase. B:RANT COCK-TAIL Gotas Angostura. Cuarta parte menta blanc a. 85 Pida POLAR y le darán la mejor Cerveza. Tres cuartas partes coñac T.RES COPAS. Oliscara de limón. Bátase. BRIDAL OOOK-TAIL Gotas orange bitters. Tercera par",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -117,13 +262,49 @@
       "category": "cocktail",
       "name_es": "BROOKLYN COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey mont vernon",
+          "item_es": "whiskey mont vernon",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra       booth 's",
+          "item_es": "ginebra       booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth's",
+          "item_es": "ginebra booth's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth",
+          "item_es": "ginebra booth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Use copa de .agua. con dos p ed azos de hielo.",
       "method_es": "Use copa de .agua. con dos p ed azos de hielo.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -134,13 +315,105 @@
       "category": "cocktail",
       "name_es": "CAFE AU KIRSCH COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ácido fosfático",
+          "item_es": "ácido fosfático",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey old crow",
+          "item_es": "whiskey old crow",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de pifia",
+          "item_es": "jugo de pifia",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja",
+          "item_es": "jugo de naranja",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra bootei 's",
+          "item_es": "ginebra bootei 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sidra gaitero",
+          "item_es": "sidra gaitero",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "cerveza polar",
+          "item_es": "cerveza polar",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Copita de Kirsch. Copita de cofiac IN'SUPERABLF.. Cla ra de un huevo. Copita de café frío. Frapé. Sirvasa en copa de vin9 tinto. CAFE DE PAREE COCK-TAI;r,. Vasito de ginebra BOOTH 'S. Clarai de un huevo. Curharadita crema de leche. 1(1: charadita anisete. Fraplí. Sirvase !ln r opa de vin? t l n�o. C",
       "method_es": "Copita de Kirsch. Copita de cofiac IN'SUPERABLF.. Cla ra de un huevo. Copita de café frío. Frapé. Sirvasa en copa de vin9 tinto. CAFE DE PAREE COCK-TAI;r,. Vasito de ginebra BOOTH 'S. Clarai de un huevo. Curharadita crema de leche. 1(1: charadita anisete. Fraplí. Sirvase !ln r opa de vin? t l n�o. C",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -151,13 +424,70 @@
       "category": "cocktail",
       "name_es": "CONGRESS COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua ele azahar",
+          "item_es": "agua ele azahar",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra boo'rh 's",
+          "item_es": "ginebra boo'rh 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "cointreau",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "baoardl carta oro",
+          "item_es": "baoardl carta oro",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermoutb francés",
+          "item_es": "vermoutb francés",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "bacardi",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Copita de co ñac TRES COPAS. Vasito crema de rosas. Tres gotas agua ele azahar. Clara de un huevo. Bátase. Sírvase en copa ele vi110 tinto. COOPERSTOWN COCK-TAIL Cuarta parte vermouth FERRERO. Cuarta parte vermouth OAZALIS � .. PRA'DS. Media parte ginebra BOO'rH 'S. Cucharadita de jugo de naranja. H",
       "method_es": "Copita de co ñac TRES COPAS. Vasito crema de rosas. Tres gotas agua ele azahar. Clara de un huevo. Bátase. Sírvase en copa ele vi110 tinto. COOPERSTOWN COCK-TAIL Cuarta parte vermouth FERRERO. Cuarta parte vermouth OAZALIS � .. PRA'DS. Media parte ginebra BOO'rH 'S. Cucharadita de jugo de naranja. H",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -168,13 +498,35 @@
       "category": "cocktail",
       "name_es": "EVANS COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vcrmouth ferrero",
+          "item_es": "vcrmouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey white label",
+          "item_es": "whiskey white label",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskcy mont vernon",
+          "item_es": "whiskcy mont vernon",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de apricot brandy. Gotas de curacao. Vasito .de whiskey MONT VER.NON. Revuélvase. EWING OO CK-TAIL Gota sangostura. Vasito de whi sk ey MONT VERNON. Revuélvase. !JG POLAR, la mejor de las cervezas cubanas. EXPRESS COCK-TAIL Gotas orange bitters. . Media parte vcrmouth FERRERO. Media parte whis",
       "method_es": "Gotas de apricot brandy. Gotas de curacao. Vasito .de whiskey MONT VER.NON. Revuélvase. EWING OO CK-TAIL Gota sangostura. Vasito de whi sk ey MONT VERNON. Revuélvase. !JG POLAR, la mejor de las cervezas cubanas. EXPRESS COCK-TAIL Gotas orange bitters. . Media parte vcrmouth FERRERO. Media parte whis",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -185,13 +537,21 @@
       "category": "cocktail",
       "name_es": "FANCY BRANDY COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de almíbar. Gotas de curncao. Gotas de angostura. Un vasito de coñac TRES COPAS. Bátase y cuélese. Exprímnse c{1scnra de naranja encima.",
       "method_es": "Gotas de almíbar. Gotas de curncao. Gotas de angostura. Un vasito de coñac TRES COPAS. Bátase y cuélese. Exprímnse c{1scnra de naranja encima.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -202,13 +562,63 @@
       "category": "cocktail",
       "name_es": "FANCY RUM OOCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "baoardi",
+          "item_es": "baoardi",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja",
+          "item_es": "jugo de naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "verm-0uth ferrero",
+          "item_es": "verm-0uth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cherry brandy",
+          "item_es": "cherry brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vcrmouth ferrero",
+          "item_es": "vcrmouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de almibar. Gotas de curacuo. Gotas de angostura. Un vasito de BAOARDI. Bátase y cuélese. E,.,-prímase cáscara de naranja encima. FLORIDA SPEOIAL COOK-TAIL Media parte jugo de naranja. 2-fedia parte BACARDI Carta de Oro. Poquito curncno rojo. Gotas marraschino. Bátase. FLUSHING OOCK-TAIL Terce",
       "method_es": "Gotas de almibar. Gotas de curacuo. Gotas de angostura. Un vasito de BAOARDI. Bátase y cuélese. E,.,-prímase cáscara de naranja encima. FLORIDA SPEOIAL COOK-TAIL Media parte jugo de naranja. 2-fedia parte BACARDI Carta de Oro. Poquito curncno rojo. Gotas marraschino. Bátase. FLUSHING OOCK-TAIL Terce",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -219,13 +629,49 @@
       "category": "cocktail",
       "name_es": "GRETA GARBO COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de piña",
+          "item_es": "jugo de piña",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "bacardl bátase",
+          "item_es": "bacardl bátase",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "eoñae tres copas",
+          "item_es": "eoñae tres copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "blaekberry brandy",
+          "item_es": "blaekberry brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Igua l al Daiquiri, eon gotas de ajenjo. HARVARD OOCK-TAIL Gotas de orauge bitters. Dos terc.eras partes J erez sec o ·.r10 PEPE. •.rercera parte var1nouLli .FER IU:..110. Rtvuélvasc bien. C.:úsc'ara de limón en copa al servir. HARRY M. STEVENS COCK-TAIL C:iarta parte jugo de na1·anja. Cua1 ta parte",
       "method_es": "Igua l al Daiquiri, eon gotas de ajenjo. HARVARD OOCK-TAIL Gotas de orauge bitters. Dos terc.eras partes J erez sec o ·.r10 PEPE. •.rercera parte var1nouLli .FER IU:..110. Rtvuélvasc bien. C.:úsc'ara de limón en copa al servir. HARRY M. STEVENS COCK-TAIL C:iarta parte jugo de na1·anja. Cua1 ta parte",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -236,13 +682,21 @@
       "category": "cocktail",
       "name_es": "PRATS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Media parte coñac TRES COPAS. Gotas Angostura. Gotas vino Oporto. Gotas anisete. Bien batido.",
       "method_es": "Media parte coñac TRES COPAS. Gotas Angostura. Gotas vino Oporto. Gotas anisete. Bien batido.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -253,13 +707,56 @@
       "category": "cocktail",
       "name_es": "MORNING OOOK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac tres cop as",
+          "item_es": "coñac tres cop as",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar disuelto en",
+          "item_es": "azúcar disuelto en",
+          "amount": "1",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "agua",
+          "item_es": "agua",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey mont vernon",
+          "item_es": "whiskey mont vernon",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja",
+          "item_es": "jugo de naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas ajenjo. Gotas Angostura. 110 __ Tome Cerveza POLAR y tom!lrá calidad. Media parte coñac TRES COP AS. Media parte \\·ermoulh FERREHO. Frnpé. MOTHER ' S COCK-TAIL Cuarta parte crema, de leche. Cuarta parte coñac TRES COPAS. Media parte crema de cacao. Bátase. MUD IN YOUR EYE COCK-TAIL Tercera par",
       "method_es": "Gotas ajenjo. Gotas Angostura. 110 __ Tome Cerveza POLAR y tom!lrá calidad. Media parte coñac TRES COP AS. Media parte \\·ermoulh FERREHO. Frnpé. MOTHER ' S COCK-TAIL Cuarta parte crema, de leche. Cuarta parte coñac TRES COPAS. Media parte crema de cacao. Bátase. MUD IN YOUR EYE COCK-TAIL Tercera par",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -270,13 +767,49 @@
       "category": "cocktail",
       "name_es": "OLIVETTE C OCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra bootii 's",
+          "item_es": "ginebra bootii 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dubonnet",
+          "item_es": "dubonnet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja",
+          "item_es": "jugo de naranja",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao blanco",
+          "item_es": "curacao blanco",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas orange bitters. Gotas ajenjo. Gotas almíbar. 112 Pida la mejor Cerve za y le darán POLAlf.. Gotas .Angostura. Media. parte ginebra. BOOTH 'S. Media. parte vermouth Q.AZALIS & PR.ATS. Revuélvase bien. Retorcer cáscara de naranja al servir. OPAL COCK-TAIL Media parte vermouth C.A.Z.ALIS & PRATS.",
       "method_es": "Gotas orange bitters. Gotas ajenjo. Gotas almíbar. 112 Pida la mejor Cerve za y le darán POLAlf.. Gotas .Angostura. Media. parte ginebra. BOOTH 'S. Media. parte vermouth Q.AZALIS & PR.ATS. Revuélvase bien. Retorcer cáscara de naranja al servir. OPAL COCK-TAIL Media parte vermouth C.A.Z.ALIS & PRATS.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -287,13 +820,49 @@
       "category": "cocktail",
       "name_es": "PEACOCK COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "oofiac trbs copas",
+          "item_es": "oofiac trbs copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao roj o",
+          "item_es": "curacao roj o",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas Amer Picon. Gotas de ajenjo. 113 Tome Cerveza POLAR ; siempre la mejor. Vasito de coñac TRE S COPAS. B:'itase. PERFECTO COC;K-TAIL Dos gotas de angostura. M.pdia par te ginebra seca. Cuarta parte vermouth francés. •Cuarta parte vcrmouth FERRERO. Una · cucharadita jugo de na•anja. Bátase. Este",
       "method_es": "Gotas Amer Picon. Gotas de ajenjo. 113 Tome Cerveza POLAR ; siempre la mejor. Vasito de coñac TRE S COPAS. B:'itase. PERFECTO COC;K-TAIL Dos gotas de angostura. M.pdia par te ginebra seca. Cuarta parte vermouth francés. •Cuarta parte vcrmouth FERRERO. Una · cucharadita jugo de na•anja. Bátase. Este",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -304,13 +873,56 @@
       "category": "cocktail",
       "name_es": "REIS COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "bacardi",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermoutb ferrero",
+          "item_es": "vermoutb ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vcrmouth ferrero",
+          "item_es": "vcrmouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "bacardi",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino oporto",
+          "item_es": "vino oporto",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas Angostura. Gotas ajenjo. Vasito ginebra Tom. Bátase. ROMER O ::E;SPE-OI_.µ. COCK-TAIL En vaso de composición. Gotas de cnracao. Media parte BACARDI. Media parte vermoutb FERRERO. Revuélvase y sírvase. Adórnese con ruedita de limón. REN;E MORALES COCKTAI;L Cucharadita d-e granadina. Tercera par",
       "method_es": "Gotas Angostura. Gotas ajenjo. Vasito ginebra Tom. Bátase. ROMER O ::E;SPE-OI_.µ. COCK-TAIL En vaso de composición. Gotas de cnracao. Media parte BACARDI. Media parte vermoutb FERRERO. Revuélvase y sírvase. Adórnese con ruedita de limón. REN;E MORALES COCKTAI;L Cucharadita d-e granadina. Tercera par",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -321,13 +933,42 @@
       "category": "cocktail",
       "name_es": "SARATOGA COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "bacardi",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vcrmouth ferrero",
+          "item_es": "vcrmouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dubonnet",
+          "item_es": "dubonnet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de· jugo de piña. Gotas marraschino. Gotas orange bitters. Vasito de coñac TRES COPAS. Bátase. SAVOY HOTEL COCK-TAIL Tercera parte crema ·de cacao. Tereera parte BcnGdictinc. Tercera parte coñac TRES COPAS. En vaso ele licor y Pó.n gasc los ingr�dien­ tes cuidadosamente a fin de que no se mezc",
       "method_es": "Gotas de· jugo de piña. Gotas marraschino. Gotas orange bitters. Vasito de coñac TRES COPAS. Bátase. SAVOY HOTEL COCK-TAIL Tercera parte crema ·de cacao. Tereera parte BcnGdictinc. Tercera parte coñac TRES COPAS. En vaso ele licor y Pó.n gasc los ingr�dien­ tes cuidadosamente a fin de que no se mezc",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -338,13 +979,56 @@
       "category": "cocktail",
       "name_es": "SHERRY OOCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac tres oopas",
+          "item_es": "coñac tres oopas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vino de jerez tio pepe",
+          "item_es": "vino de jerez tio pepe",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "boonekamp bitters",
+          "item_es": "boonekamp bitters",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Vasito de .Jerez seco TIO PE:PE. Gotas orange bitters. Gotas angostura. Revuélvase. SIDE CAR COCK-TAI;L Tercera parte jugo de limón. - Tercera parte triple seo. Terce�n ¡mi te coñac TRES COPA.S. Bien batido. SILVER COCK-TAIL Gotas orange bitter�. Tercera parte v ermout h FEH.RERO: . Dos terceras par",
       "method_es": "Vasito de .Jerez seco TIO PE:PE. Gotas orange bitters. Gotas angostura. Revuélvase. SIDE CAR COCK-TAI;L Tercera parte jugo de limón. - Tercera parte triple seo. Terce�n ¡mi te coñac TRES COPA.S. Bien batido. SILVER COCK-TAIL Gotas orange bitter�. Tercera parte v ermout h FEH.RERO: . Dos terceras par",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -355,13 +1039,21 @@
       "category": "cocktail",
       "name_es": "TUXEDO COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "G ot a s marraschino. Gotas de A ngostura . Gotas ajenjo. Dos terceras pa rtes ginebra BOOTH 'S. Tercera parte vermouth CAZALIS & PRATS. Cucharada de .Jerez ' TIO 'PEPE. Revuélvase. TWO SPOT OOOK-TAIL Media parte coñac TRES COPAS. Media parte euracao rojo. Bátase. Ex¡rrímase cáscara de naranja.",
       "method_es": "G ot a s marraschino. Gotas de A ngostura . Gotas ajenjo. Dos terceras pa rtes ginebra BOOTH 'S. Tercera parte vermouth CAZALIS & PRATS. Cucharada de .Jerez ' TIO 'PEPE. Revuélvase. TWO SPOT OOOK-TAIL Media parte coñac TRES COPAS. Media parte euracao rojo. Bátase. Ex¡rrímase cáscara de naranja.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -372,13 +1064,21 @@
       "category": "cocktail",
       "name_es": "U. C. COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Media part.e vermouth 1CA ZALIS & PRATS. Me d i a parto gi nebra BOOTH 'S. Gotas de ajenjo. Batido. UNION LEAGUE COOK-TAIL G otas on\\nge bitters. Tercera parte vino Oporto. Dos terceras partes ginebra Old Tom. Revuélvase. U. R. S. S. OOOK-TAIL Media parte wodka (licor ruso). Cuarta parte Te q uila.",
       "method_es": "Media part.e vermouth 1CA ZALIS & PRATS. Me d i a parto gi nebra BOOTH 'S. Gotas de ajenjo. Batido. UNION LEAGUE COOK-TAIL G otas on\\nge bitters. Tercera parte vino Oporto. Dos terceras partes ginebra Old Tom. Revuélvase. U. R. S. S. OOOK-TAIL Media parte wodka (licor ruso). Cuarta parte Te q uila.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -389,13 +1089,35 @@
       "category": "cocktail",
       "name_es": "OOCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth     ferrero",
+          "item_es": "vermouth     ferrero",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Vasito de vermouth FERRERO. Gotas de Angostura. Gotas de almíbar. Gotas jugo de limón. Revuélvase. Adórnesc con una guinda. VERMOUTH BATIDO COCK-TAiL Vasito de vermouth FERRERO. Casca.rita de limón.. Gotas de Angostura. Gotas de curacao. Gotas de amer pico.n. Cucharadita de azúcar. Bien batido. VIEN",
       "method_es": "Vasito de vermouth FERRERO. Gotas de Angostura. Gotas de almíbar. Gotas jugo de limón. Revuélvase. Adórnesc con una guinda. VERMOUTH BATIDO COCK-TAiL Vasito de vermouth FERRERO. Casca.rita de limón.. Gotas de Angostura. Gotas de curacao. Gotas de amer pico.n. Cucharadita de azúcar. Bien batido. VIEN",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -423,13 +1145,84 @@
       "category": "cocktail",
       "name_es": "ZABRISKIE COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra booth 's",
+          "item_es": "ginebra booth 's",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dnbonuet",
+          "item_es": "dnbonuet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey rye o bourbou",
+          "item_es": "whiskey rye o bourbou",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediano",
+          "item_es": "mediano",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "s i ro p de citron",
+          "item_es": "s i ro p de citron",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "coñac 'tres copas",
+          "item_es": "coñac 'tres copas",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use vaso grueso antiguo.",
       "method_es": "Use vaso grueso antiguo.",
       "glassware": "vaso de Collins",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -440,13 +1233,35 @@
       "category": "punch",
       "name_es": "HOT CREOLE PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "almíbar",
+          "item_es": "almíbar",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "almibar",
+          "item_es": "almibar",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cerveza polar",
+          "item_es": "cerveza polar",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Dos cucharaditas almíbar. Gotas de ron Jamaica. Gotas apricot brandy.' Vasito de vino clarete. Cucl111rndita do especias. Cásc�ara do un limón. Póngase en la estufa hasta casi hervir. HOT LEMONADE (Limonada. caliente) J ugo de un limón. Cucharada do azúcar. Llénese con agua caliente. lfoeda de limón",
       "method_es": "Dos cucharaditas almíbar. Gotas de ron Jamaica. Gotas apricot brandy.' Vasito de vino clarete. Cucl111rndita do especias. Cásc�ara do un limón. Póngase en la estufa hasta casi hervir. HOT LEMONADE (Limonada. caliente) J ugo de un limón. Cucharada do azúcar. Llénese con agua caliente. lfoeda de limón",
       "glassware": "Usese vaso de limonada",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -457,13 +1272,49 @@
       "category": "cocktail",
       "name_es": "DE LUXE BRAOER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac tres copas",
+          "item_es": "coñac tres copas",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "champán codorniu",
+          "item_es": "champán codorniu",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey mont vernon",
+          "item_es": "whiskey mont vernon",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "Usesc vaso de Collins. Usese vaso de Collins. Use vaso de Collins. Use copa de Pousse c a fé. Usese copa de Jerez. Usese jarra    de cristal. Usese copa ele Pousse café. Usese vasito de ron.",
       "method_es": "Usesc vaso de Collins. Usese vaso de Collins. Use vaso de Collins. Use copa de Pousse c a fé. Usese copa de Jerez. Usese jarra    de cristal. Usese copa ele Pousse café. Usese vasito de ron.",
       "glassware": "Bandel'a rrancesa",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -474,13 +1325,28 @@
       "category": "cocktail",
       "name_es": "SABOYA COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vermouth ferrero",
+          "item_es": "vermouth ferrero",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "menta blanca",
+          "item_es": "menta blanca",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Gotas de angostura. Gotas de Dubonnet. Gotas de triple sec. Una tercera parte de jugo de piña. Tres partes de vermouth FERRERO. 198 ¿Una Cerveza pura? CEBVEZA POLAB. Batido y servido on copa de cock-tail con una guinda. Autor: LUIS CADAHIA, Cantinero de la \"Taberna Española\". Segunda mención honoríf",
       "method_es": "Gotas de angostura. Gotas de Dubonnet. Gotas de triple sec. Una tercera parte de jugo de piña. Tres partes de vermouth FERRERO. 198 ¿Una Cerveza pura? CEBVEZA POLAB. Batido y servido on copa de cock-tail con una guinda. Autor: LUIS CADAHIA, Cantinero de la \"Taberna Española\". Segunda mención honoríf",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -525,13 +1391,56 @@
       "category": "cocktail",
       "name_es": "ALTIVEZ COCK-TAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "anis del mono",
+          "item_es": "anis del mono",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "orange bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey mont vernon",
+          "item_es": "whiskey mont vernon",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Una copa de ANIS DEL MONO. Unas gotas de angostura. Unas gotas de orange bitters. Bien batido. Autor: RICARDO GONZALEZ, Cantinero del \"Hotel Sevilla\". 199 Tome Cerveza. POLA.lt; siempre la mejor. PREMIO MONT VERNON .Primer premio : MONT VERNON COCK-TAIL Eu vaso de Julep. Un vasito de whiskey MONT VE",
       "method_es": "Una copa de ANIS DEL MONO. Unas gotas de angostura. Unas gotas de orange bitters. Bien batido. Autor: RICARDO GONZALEZ, Cantinero del \"Hotel Sevilla\". 199 Tome Cerveza. POLA.lt; siempre la mejor. PREMIO MONT VERNON .Primer premio : MONT VERNON COCK-TAIL Eu vaso de Julep. Un vasito de whiskey MONT VE",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

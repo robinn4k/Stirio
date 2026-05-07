@@ -32,13 +32,21 @@
       "category": "cocktail",
       "name_es": "Drinks",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ist die",
+          "item_es": "ist die",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Dark = dunkel Dark-Beer . . . = dunkles Bier Dash = Spritzer. Ein Spritzer ist die Menge einer Flüssigkeit, die durch die einmalige Bewe gung einer Spritzflasche aus dem dünnen Röhrchen des Spritzkorken entweicht. Dashbottle . . . = Spritzflasche Destillieren . . = der Ausscheidungsvorgang bei der B",
       "method_es": "Dark = dunkel Dark-Beer . . . = dunkles Bier Dash = Spritzer. Ein Spritzer ist die Menge einer Flüssigkeit, die durch die einmalige Bewe gung einer Spritzflasche aus dem dünnen Röhrchen des Spritzkorken entweicht. Dashbottle . . . = Spritzflasche Destillieren . . = der Ausscheidungsvorgang bei der B",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -83,13 +91,28 @@
       "category": "cocktail",
       "name_es": "Toddies",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lege würfelzucker nach geschmack und",
+          "item_es": "lege würfelzucker nach geschmack und",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "zitrone und ebensoviel heißes oder kaltes",
+          "item_es": "zitrone und ebensoviel heißes oder kaltes",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "In ein Weinglas lege Würfelzucker nach Geschmack und füge 1 Cocktailglas der gewünschten Spirituose zu, gebe 1 Scheibe Zitrone und ebensoviel heißes oder kaltes Wasser hinzu. Bei Toddy kalt kann man ein kleines Stückchen Eis in das Getränk einlegen. Zu allen Toddies gibt man ein Holz- oder Glasstäb",
       "method_es": "In ein Weinglas lege Würfelzucker nach Geschmack und füge 1 Cocktailglas der gewünschten Spirituose zu, gebe 1 Scheibe Zitrone und ebensoviel heißes oder kaltes Wasser hinzu. Bei Toddy kalt kann man ein kleines Stückchen Eis in das Getränk einlegen. Zu allen Toddies gibt man ein Holz- oder Glasstäb",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -100,13 +123,28 @@
       "category": "cocktail",
       "name_es": "Grogs",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitrone",
+          "item_es": "zitrone",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "oder muddler beifügen",
+          "item_es": "oder muddler beifügen",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "In einen Tumbler oder Grogglas lege Würfelzucker nach Geschmack, füge I Cocktailglasvoll der gewünschten Spirituose 1 Scheibe Zitrone dazu und fülle das Glas mit heißem Wasser auf. Einen Teelöffel oder Muddler beifügen. Die Gläser sind, wie bei allen heißen Getränken, vorzuwärmen. Man kann das heiße",
       "method_es": "In einen Tumbler oder Grogglas lege Würfelzucker nach Geschmack, füge I Cocktailglasvoll der gewünschten Spirituose 1 Scheibe Zitrone dazu und fülle das Glas mit heißem Wasser auf. Einen Teelöffel oder Muddler beifügen. Die Gläser sind, wie bei allen heißen Getränken, vorzuwärmen. Man kann das heiße",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -253,13 +291,28 @@
       "category": "cocktail",
       "name_es": "Long Whistle",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seihen",
+          "item_es": "seihen",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "voll zucker",
+          "item_es": "voll zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "(sprich: long Wistl = Zucker n. Geschmack Cocktailgl. Weinbrand deutsch: Langer Pfiff) oder Whisky Das Getränk ist in England in Tumbler geben und als Morgentrunk sehr ver mit eiskalter oder breitet. heißer Milch auffüllen. Muskat darüber streuen. Maiden's Blush Originalrezept von Im Schüttelbecher",
       "method_es": "(sprich: long Wistl = Zucker n. Geschmack Cocktailgl. Weinbrand deutsch: Langer Pfiff) oder Whisky Das Getränk ist in England in Tumbler geben und als Morgentrunk sehr ver mit eiskalter oder breitet. heißer Milch auffüllen. Muskat darüber streuen. Maiden's Blush Originalrezept von Im Schüttelbecher",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,

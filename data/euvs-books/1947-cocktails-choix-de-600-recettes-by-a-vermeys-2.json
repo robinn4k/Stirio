@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "AMERICAN BEAUTY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème",
+          "item_es": "crème",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +65,49 @@
       "category": "cocktail",
       "name_es": "ANGEL'S KISS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angustura",
+          "item_es": "angustura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "marasquin",
+          "item_es": "marasquin",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "0.333",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Shaker)",
       "method_es": "Shaker)",
       "glassware": "Voir Brandy Punch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -74,13 +118,35 @@
       "category": "toddy",
       "name_es": "BACARDI TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "bacardi",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "crème fraî",
+          "item_es": "crème fraî",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +157,42 @@
       "category": "cocktail",
       "name_es": "BAISER D'AMOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lait",
+          "item_es": "lait",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitter",
+          "item_es": "orange bitter",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "rhum négrita",
+          "item_es": "rhum négrita",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +203,77 @@
       "category": "cocktail",
       "name_es": "BLEUE BLAZER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "sherry",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao rouge",
+          "item_es": "curaçao rouge",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angustura",
+          "item_es": "angustura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Pour le Gin, Rhum, Whisky, Crustas, on Pour le Gin, Rhum ou Whisky Daisy, on",
       "method_es": "Pour le Gin, Rhum, Whisky, Crustas, on Pour le Gin, Rhum ou Whisky Daisy, on",
       "glassware": "Voir Bleue Blazer",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +284,56 @@
       "category": "cocktail",
       "name_es": "BRANDY FIX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "eau pour",
+          "item_es": "eau pour",
+          "amount": "1",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de framboise",
+          "item_es": "sirop de framboise",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "noix de mus",
+          "item_es": "noix de mus",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Pour le Gin, Rhum, Whishy Fix, on pro- Pour le Gin, Porto, Rhum, Sherry, Whishy Pour le Gin, Porto, Rhum et Sherry Flip, Pour Bacardi, Gin, Rhum, Whisky Hig- pour chaque personne un \"verre de Cognac. Pour la préparation des Apricots. Gin,",
       "method_es": "Pour le Gin, Rhum, Whishy Fix, on pro- Pour le Gin, Porto, Rhum, Sherry, Whishy Pour le Gin, Porto, Rhum et Sherry Flip, Pour Bacardi, Gin, Rhum, Whisky Hig- pour chaque personne un \"verre de Cognac. Pour la préparation des Apricots. Gin,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +344,35 @@
       "category": "cup",
       "name_es": "CLARET CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maras",
+          "item_es": "maras",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bordeauxi et",
+          "item_es": "bordeauxi et",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "4",
+          "unit": "large glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Shaker",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +383,35 @@
       "category": "cocktail",
       "name_es": "FLEPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jus de ditron",
+          "item_es": "jus de ditron",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Voir Breindy Higball",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -193,13 +439,49 @@
       "category": "cocktail",
       "name_es": "HIGBALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ananas et",
+          "item_es": "ananas et",
+          "amount": "3",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "liqueur de curaçao",
+          "item_es": "liqueur de curaçao",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vin du rhin et une demi-",
+          "item_es": "vin du rhin et une demi-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cognac ou",
+          "item_es": "cognac ou",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +492,63 @@
       "category": "punch",
       "name_es": "ORDINARY PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "sauce",
+          "item_es": "sauce",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grena",
+          "item_es": "grena",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitter de",
+          "item_es": "bitter de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vin blanc ou",
+          "item_es": "vin blanc ou",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Voir Brandy Toddy",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +559,28 @@
       "category": "cocktail",
       "name_es": "REMSEN COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "jus",
+          "item_es": "jus",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Voir Brandy Daisy",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -261,13 +608,49 @@
       "category": "cocktail",
       "name_es": "RHUM HIGBALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mandarine et",
+          "item_es": "mandarine et",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagne bien",
+          "item_es": "champagne bien",
+          "amount": "5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de framboise",
+          "item_es": "sirop de framboise",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Par le Bar Chatham",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +661,35 @@
       "category": "cocktail",
       "name_es": "ROSE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jus de citron",
+          "item_es": "jus de citron",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "calvados",
+          "item_es": "calvados",
+          "amount": "6",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Pour 1 litre : 4/10 Dry Gin: 1/10 Kirsch:",
       "method_es": "Pour 1 litre : 4/10 Dry Gin: 1/10 Kirsch:",
       "glassware": "Voir Horse's Neck",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +700,49 @@
       "category": "cocktail",
       "name_es": "RECUEIL DE COCKTAILS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angustura",
+          "item_es": "angustura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Par Frank, du Bar Ritz",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -329,13 +770,35 @@
       "category": "cobbler",
       "name_es": "SHERRY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sherry san-",
+          "item_es": "sherry san-",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sucre et ajouter muscade",
+          "item_es": "sucre et ajouter muscade",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "marasquin",
+          "item_es": "marasquin",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Voir Brandy Flip",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -346,13 +809,35 @@
       "category": "cocktail",
       "name_es": "TOM AND JERRY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum négrita",
+          "item_es": "rhum négrita",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +848,63 @@
       "category": "cocktail",
       "name_es": "VELVET CIIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gui-",
+          "item_es": "gui-",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagne demi-",
+          "item_es": "champagne demi-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "crème de cassis",
+          "item_es": "crème de cassis",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "marasquin",
+          "item_es": "marasquin",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jus d'orange",
+          "item_es": "jus d'orange",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau bouillante",
+          "item_es": "eau bouillante",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Tumbler",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

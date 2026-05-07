@@ -32,13 +32,28 @@
       "category": "cocktail",
       "name_es": "COCKTAILS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitier d'angostura",
+          "item_es": "bitier d'angostura",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "servez avec de pelites pailles. Servez avec de petites pailles. servez avec de petites pailles. servez avec de petites pailles.",
       "method_es": "servez avec de pelites pailles. Servez avec de petites pailles. servez avec de petites pailles. servez avec de petites pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -49,13 +64,42 @@
       "category": "cobbler",
       "name_es": "COBBLERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange sur lesquelles vous",
+          "item_es": "orange sur lesquelles vous",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "ananas et quatre belles fraises",
+          "item_es": "ananas et quatre belles fraises",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "bordeaux rouge",
+          "item_es": "bordeaux rouge",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Sherry Cobbler [A préparer dans un grand gobelet.] Remplissez aux deux liers de glace pilée. Ajoutez : 1 cuiller à bouche de sucre en poudre; : verre à Hasot de ci CuraÇAO ; ; 5 verres à madète de xérès pâle, Versez le tout dansunedoubletimbale (SAaler). Agitez fortement, remettez dans le verre. Orn",
       "method_es": "Sherry Cobbler [A préparer dans un grand gobelet.] Remplissez aux deux liers de glace pilée. Ajoutez : 1 cuiller à bouche de sucre en poudre; : verre à Hasot de ci CuraÇAO ; ; 5 verres à madète de xérès pâle, Versez le tout dansunedoubletimbale (SAaler). Agitez fortement, remettez dans le verre. Orn",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +110,28 @@
       "category": "cocktail",
       "name_es": "COOLERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginger ale frappée",
+          "item_es": "ginger ale frappée",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "6",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Brunswick Cooler [A préparer dans un grand gobelet.] Prenez le jus d’un citron. Ajoutez : 4/2 cuiller à bouche de sucre en poudre; 1 bouteille de ginger ale frappée. Agitez bien et servez. Rocky Cooler [A préparer dans un grand gobelet.] 1 œuf frais. Ajoutez : - 1/2 cuiller à bouche de sucre en poud",
       "method_es": "Brunswick Cooler [A préparer dans un grand gobelet.] Prenez le jus d’un citron. Ajoutez : 4/2 cuiller à bouche de sucre en poudre; 1 bouteille de ginger ale frappée. Agitez bien et servez. Rocky Cooler [A préparer dans un grand gobelet.] 1 œuf frais. Ajoutez : - 1/2 cuiller à bouche de sucre en poud",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +142,21 @@
       "category": "crusta",
       "name_es": "CRUSTAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marasquin",
+          "item_es": "marasquin",
+          "amount": "4",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "servez.",
       "method_es": "servez.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -100,13 +167,21 @@
       "category": "flip",
       "name_es": "EGG NOGGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec de grandes pailles. Servez avec de grandes pailles. Servez avec des grandes pailles.",
       "method_es": "Servez avec de grandes pailles. Servez avec de grandes pailles. Servez avec des grandes pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -168,13 +243,21 @@
       "category": "julep",
       "name_es": "JULEPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oranges et six grains",
+          "item_es": "oranges et six grains",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec de grandes pailles.",
       "method_es": "Servez avec de grandes pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -185,13 +268,21 @@
       "category": "sling",
       "name_es": "SLINGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Pour le « Cold Brandy Sling », employez de Ja",
       "method_es": "Pour le « Cold Brandy Sling », employez de Ja",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -202,13 +293,28 @@
       "category": "smash",
       "name_es": "SMASHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jus de citron ajoutez",
+          "item_es": "jus de citron ajoutez",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "orange ou de citron et servez",
+          "item_es": "orange ou de citron et servez",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Pour 1/2 litre de jus de citron ajoutez : Pour 2/3 de litre de jus d'oranges ajoutez : Pour servir, versez dans un grand verre à Servez avec de grandes pailles.",
       "method_es": "Pour 1/2 litre de jus de citron ajoutez : Pour 2/3 de litre de jus d'oranges ajoutez : Pour servir, versez dans un grand verre à Servez avec de grandes pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -219,13 +325,42 @@
       "category": "sangaree",
       "name_es": "SANGAREES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace et remplissez d'une demi-",
+          "item_es": "glace et remplissez d'une demi-",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "glace el remplissez de xérès",
+          "item_es": "glace el remplissez de xérès",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "glace et 1 v",
+          "item_es": "glace et 1 v",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "servez.",
       "method_es": "servez.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -236,13 +371,35 @@
       "category": "punch",
       "name_es": "PUNCHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ananas",
+          "item_es": "ananas",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec Servez avec une cuiller à café.",
       "method_es": "Servez avec Servez avec une cuiller à café.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -253,13 +410,35 @@
       "category": "cocktail",
       "name_es": "GROGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre bien dissous dans de",
+          "item_es": "sucre bien dissous dans de",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "4",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "citron et une cuiller à café",
+          "item_es": "citron et une cuiller à café",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec une cuiller à café. Servez avec une cuiller cufé.",
       "method_es": "Servez avec une cuiller à café. Servez avec une cuiller cufé.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -270,13 +449,28 @@
       "category": "cocktail",
       "name_es": "TODDIES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "Pour le «hot Brandy Toddy », mettez de l'eau Servez de la même manière que le Pousse- Servez sans mélanger et ayez soin que le jaune Servez sans mélanger. Servez sans mélanger.",
       "method_es": "Pour le «hot Brandy Toddy », mettez de l'eau Servez de la même manière que le Pousse- Servez sans mélanger et ayez soin que le jaune Servez sans mélanger. Servez sans mélanger.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -287,13 +481,21 @@
       "category": "cocktail",
       "name_es": "DIVERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "6",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "John Collins Gin |A préparer dans un gobelet en cristal extra grand.] 1 cuiller à bouche de sucre en poudre. Ajoulez : 4/2 verre à madère de jus de citron; — de gin old lom: 5à6 morceaux de glace: 4 bouleille de soda-waler Schweppes’. Mélangez bien avec une cuiller à soda et pen- dant l'effervescenc",
       "method_es": "John Collins Gin |A préparer dans un gobelet en cristal extra grand.] 1 cuiller à bouche de sucre en poudre. Ajoulez : 4/2 verre à madère de jus de citron; — de gin old lom: 5à6 morceaux de glace: 4 bouleille de soda-waler Schweppes’. Mélangez bien avec une cuiller à soda et pen- dant l'effervescenc",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

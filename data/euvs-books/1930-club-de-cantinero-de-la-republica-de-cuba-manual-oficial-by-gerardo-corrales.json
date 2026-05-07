@@ -91,13 +91,42 @@
       "category": "cocktail",
       "name_es": "PARA HOTELES, RESTAURANTS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "almíbar",
+          "item_es": "almíbar",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino oporto",
+          "item_es": "vino oporto",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino del rhin",
+          "item_es": "vino del rhin",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE COPA DE· AGUA",
       "method_es": "USE COPA DE· AGUA",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -125,13 +154,35 @@
       "category": "cocktail",
       "name_es": "SALVO OPORTUN A INDICACION",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ajonjo",
+          "item_es": "ajonjo",
+          "amount": "4",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "aniset e",
+          "item_es": "aniset e",
+          "amount": "0.25",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "2",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Ajenj o l!' rapé",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "GOGKTAILS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +65,28 @@
       "category": "cocktail",
       "name_es": "BRANDY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -74,13 +97,28 @@
       "category": "cocktail",
       "name_es": "IRISH WHISKY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -108,13 +146,28 @@
       "category": "cocktail",
       "name_es": "WHISKY D'ECOSSE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +178,35 @@
       "category": "cocktail",
       "name_es": "RYE WHISKEY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +217,56 @@
       "category": "cocktail",
       "name_es": "VERMOUTH GOGKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "5",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "5",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "rhum saint-james",
+          "item_es": "rhum saint-james",
+          "amount": "6",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -176,13 +294,63 @@
       "category": "cocktail",
       "name_es": "SHERRY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "2.0",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.333",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "porto et",
+          "item_es": "porto et",
+          "amount": "2",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +361,21 @@
       "category": "cocktail",
       "name_es": "SHERRY GOBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec deux pailles.",
       "method_es": "Servez avec deux pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +386,28 @@
       "category": "cocktail",
       "name_es": "WHISKY GOBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +418,35 @@
       "category": "cocktail",
       "name_es": "EMBRASSEZ-MOI DE SUITE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "2",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -278,13 +491,21 @@
       "category": "cocktail",
       "name_es": "GIN AND BITTER ANGOSTURA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitter dans le",
+          "item_es": "angostura bitter dans le",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -346,13 +567,21 @@
       "category": "cocktail",
       "name_es": "LIMONADE FRAICHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +592,21 @@
       "category": "julep",
       "name_es": "MINT JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en",
+          "item_es": "sucre en",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -380,13 +617,21 @@
       "category": "julep",
       "name_es": "GIN JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -397,13 +642,21 @@
       "category": "julep",
       "name_es": "WHISKY JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "suci'e en poudre",
+          "item_es": "suci'e en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -431,13 +684,21 @@
       "category": "flip",
       "name_es": "EGG NOGG",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lait",
+          "item_es": "lait",
+          "amount": "40",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -465,13 +726,21 @@
       "category": "sour",
       "name_es": "BRANDY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -482,13 +751,21 @@
       "category": "sour",
       "name_es": "GIN SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -499,13 +776,21 @@
       "category": "sour",
       "name_es": "WHISKY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -516,13 +801,21 @@
       "category": "cocktail",
       "name_es": "BRANDY FIX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -533,13 +826,21 @@
       "category": "cocktail",
       "name_es": "WHISKY FIX",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -567,13 +868,35 @@
       "category": "cocktail",
       "name_es": "GIN DAISY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de gomme",
+          "item_es": "sirop de gomme",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cordial d'orange",
+          "item_es": "cordial d'orange",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cordial d'orange",
+          "item_es": "cordial d'orange",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -584,13 +907,21 @@
       "category": "cocktail",
       "name_es": "RHUM DAISY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "su'op de gomme",
+          "item_es": "su'op de gomme",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -601,13 +932,49 @@
       "category": "cocktail",
       "name_es": "AMERIGAN GOFFEE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en",
+          "item_es": "sucre en",
+          "amount": "8",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "rhum jamaïqu",
+          "item_es": "rhum jamaïqu",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "huile de vanille",
+          "item_es": "huile de vanille",
+          "amount": "2",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "bon cognac",
+          "item_es": "bon cognac",
+          "amount": "25",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "bon rhum",
+          "item_es": "bon rhum",
+          "amount": "25",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -618,13 +985,21 @@
       "category": "cocktail",
       "name_es": "TOM GOLLINS WHISKY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -635,13 +1010,21 @@
       "category": "cocktail",
       "name_es": "TOM GOLLINS GIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,
@@ -669,13 +1052,21 @@
       "category": "cocktail",
       "name_es": "TOM GOLLINS RHUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -686,13 +1077,21 @@
       "category": "cocktail",
       "name_es": "RHUM ORANGEADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -720,13 +1119,42 @@
       "category": "cocktail",
       "name_es": "NIGKERBOGKER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "10",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "vin rouge ou blanc",
+          "item_es": "vin rouge ou blanc",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -737,13 +1165,28 @@
       "category": "toddy",
       "name_es": "GIN TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -754,13 +1197,21 @@
       "category": "toddy",
       "name_es": "WHISKY TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -788,13 +1239,21 @@
       "category": "cocktail",
       "name_es": "STONE FENGE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -805,13 +1264,35 @@
       "category": "cocktail",
       "name_es": "SODA NECTAR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "3",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de framboises ou gro",
+          "item_es": "sirop de framboises ou gro",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -822,13 +1303,56 @@
       "category": "cocktail",
       "name_es": "BONNET DE NUIT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marasquin dans un verre",
+          "item_es": "marasquin dans un verre",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "crème de vanille",
+          "item_es": "crème de vanille",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de framboises",
+          "item_es": "sirop de framboises",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "écorce de citron",
+          "item_es": "écorce de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "eam",
+          "item_es": "eam",
+          "amount": "25",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -839,13 +1363,28 @@
       "category": "cocktail",
       "name_es": "IRISH WHISKY SKIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "écorce de citron",
+          "item_es": "écorce de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "25",
+          "unit": "cl",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -856,13 +1395,42 @@
       "category": "punch",
       "name_es": "CENTURY PUNCH CLUB",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vieux rhum santa-cruz",
+          "item_es": "vieux rhum santa-cruz",
+          "amount": "20",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "vieux rhum jamaïque",
+          "item_es": "vieux rhum jamaïque",
+          "amount": "40",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "écorce de citron",
+          "item_es": "écorce de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fantaisie et de co u",
+          "item_es": "fantaisie et de co u",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -873,13 +1441,35 @@
       "category": "punch",
       "name_es": "GIN PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de framboises",
+          "item_es": "sirop de framboises",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ananas",
+          "item_es": "ananas",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -890,13 +1480,28 @@
       "category": "punch",
       "name_es": "PUNCH CLARET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "orange",
+          "amount": "3",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 52,
@@ -924,13 +1529,28 @@
       "category": "punch",
       "name_es": "PUNCH AU LAIT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre blanc en poudre",
+          "item_es": "sucre blanc en poudre",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -958,13 +1578,105 @@
       "category": "punch",
       "name_es": "PUNCH AU LAIT CHAUD",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre dissous",
+          "item_es": "sucre en poudre dissous",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau bouillante",
+          "item_es": "eau bouillante",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vin de champagne",
+          "item_es": "vin de champagne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ananas",
+          "item_es": "ananas",
+          "amount": "3",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "rhum saint-james",
+          "item_es": "rhum saint-james",
+          "amount": "50",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "lait bouillant",
+          "item_es": "lait bouillant",
+          "amount": "50",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "eau froide",
+          "item_es": "eau froide",
+          "amount": "50",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "muscade",
+          "item_es": "muscade",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "50",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "50",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "porter",
+          "item_es": "porter",
+          "amount": "50",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "eau bouillante",
+          "item_es": "eau bouillante",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 56,
@@ -975,13 +1687,49 @@
       "category": "punch",
       "name_es": "EGG MILK PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rhum saint-james",
+          "item_es": "rhum saint-james",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "thé",
+          "item_es": "thé",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "rhum saint-",
+          "item_es": "rhum saint-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 57,
@@ -992,13 +1740,28 @@
       "category": "punch",
       "name_es": "ROMAN PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirop de framboises",
+          "item_es": "sirop de framboises",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 58,
@@ -1009,13 +1772,28 @@
       "category": "cocktail",
       "name_es": "HOT SPIGED RHUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "épices mêlées",
+          "item_es": "épices mêlées",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "beurre gros comme demi-",
+          "item_es": "beurre gros comme demi-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "servez.",
       "method_es": "servez.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 59,
@@ -1043,13 +1821,21 @@
       "category": "cocktail",
       "name_es": "HOT WHISKY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron et servez",
+          "item_es": "citron et servez",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 61,
@@ -1060,13 +1846,28 @@
       "category": "cocktail",
       "name_es": "HOT BRANDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 62,
@@ -1094,13 +1895,28 @@
       "category": "cocktail",
       "name_es": "AQUAVIT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "0.333",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 64,
@@ -1111,13 +1927,28 @@
       "category": "smash",
       "name_es": "GIN SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 65,
@@ -1128,13 +1959,28 @@
       "category": "smash",
       "name_es": "WHISKY SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 66,
@@ -1145,13 +1991,28 @@
       "category": "smash",
       "name_es": "RHUM SMASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 67,
@@ -1162,13 +2023,28 @@
       "category": "sling",
       "name_es": "GIN SLING",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "10",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 68,
@@ -1179,13 +2055,21 @@
       "category": "cocktail",
       "name_es": "SODA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1264,13 +2148,21 @@
       "category": "cocktail",
       "name_es": "GIN FIZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "27",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 74,
@@ -1281,13 +2173,63 @@
       "category": "cocktail",
       "name_es": "IMPROVED BRANDY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sii-oid de gomme",
+          "item_es": "sii-oid de gomme",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "écorce de citron",
+          "item_es": "écorce de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fantaisie de 25 centilitres en",
+          "item_es": "fantaisie de 25 centilitres en",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de gomme",
+          "item_es": "sirop de gomme",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "pour en extraire l'huile ; remplissez votre pour les cocktails simples, et servez dans",
       "method_es": "pour en extraire l'huile ; remplissez votre pour les cocktails simples, et servez dans",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 75,
@@ -1298,13 +2240,56 @@
       "category": "cocktail",
       "name_es": "RHUM SAINT-JAMES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "écorce de citron que vous",
+          "item_es": "écorce de citron que vous",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fantaisie de 25",
+          "item_es": "fantaisie de 25",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "pour le Cocktail simple. Servez avec paille.",
       "method_es": "pour le Cocktail simple. Servez avec paille.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1315,13 +2300,49 @@
       "category": "cocktail",
       "name_es": "IMPROVED GIN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sirop de gomme",
+          "item_es": "sirop de gomme",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absinthe",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": "2.0",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 77,
@@ -1332,13 +2353,35 @@
       "category": "cocktail",
       "name_es": "ABSINTHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau de menthe",
+          "item_es": "eau de menthe",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "fleur d'oranger",
+          "item_es": "fleur d'oranger",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 78,
@@ -1451,13 +2494,28 @@
       "category": "cocktail",
       "name_es": "BITTER HAYRAIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre",
+          "item_es": "sucre",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "levure",
+          "item_es": "levure",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1468,13 +2526,21 @@
       "category": "cocktail",
       "name_es": "PEAGH AND HONEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "miel",
+          "item_es": "miel",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1485,13 +2551,28 @@
       "category": "cocktail",
       "name_es": "TOM AND JERRY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhum jamaïque",
+          "item_es": "rhum jamaïque",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "la mixture",
+          "item_es": "la mixture",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 87,
@@ -1502,13 +2583,56 @@
       "category": "cocktail",
       "name_es": "AVIS IMPORTANT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crème de",
+          "item_es": "crème de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "eau bouillante",
+          "item_es": "eau bouillante",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "rhum",
+          "item_es": "rhum",
+          "amount": "10",
+          "unit": "cl",
+          "notes": null
+        },
+        {
+          "item_original": "vin rouge",
+          "item_es": "vin rouge",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "6",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "arrack de batavia",
+          "item_es": "arrack de batavia",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "Pour faire ce punch, il faut mettre 2 pour accorder avec le jus de citron, et",
       "method_es": "Pour faire ce punch, il faut mettre 2 pour accorder avec le jus de citron, et",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1519,13 +2643,35 @@
       "category": "cocktail",
       "name_es": "HUITRE DE PRAIRIE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vinaigre et 5 à 6 gouttes de",
+          "item_es": "vinaigre et 5 à 6 gouttes de",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "sauce anglaise",
+          "item_es": "sauce anglaise",
+          "amount": "6",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "mie de pain",
+          "item_es": "mie de pain",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "servez.",
       "method_es": "servez.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }
