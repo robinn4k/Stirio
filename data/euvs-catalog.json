@@ -784,6 +784,22 @@
     "bookFile": "data/euvs-books/1938-the-merry-mixer-from-the-house-of-schenley.json"
   },
   {
+    "id": "1939-sloppy-joes-bar",
+    "year": 1939,
+    "decade": "1930s",
+    "title": "Sloppy Joe's Cocktail Manual",
+    "author": "Compilado por Agustín Rios (bar man), bajo José \"Sloppy Joe\" Abeal",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "F. Diaz",
+    "city": "Havana, Cuba",
+    "edition": "Cocktail Manual",
+    "notes": "Manual del icónico Sloppy Joe's Bar de La Habana — punto de encuentro de Hollywood (Hemingway, Sinatra) y políticos pre-Castro. José Abeal ('Sloppy Joe') llegó de España a Cuba en 1904 y, tras barman en La Habana, New Orleans y Miami, en 1918 vuelve y compra una grocery store que se transforma en el famoso bar. El nombre se lo puso un cliente americano viendo el agua que corría por debajo del mostrador ('Why, Joe, this place is certainly sloppy'). 84 recetas compiladas por su bartender principal Agustín Rios. Skeleton custom rebuilt con detector de cabecera centrada-mayúscula + verificación de bloque ingrediente; parser estructural extrae '1 Teaspoonful of X.', '2 oz. of Y.', 'Dash of Z.', 'The juice of a lime.', 'White/Yolk of an egg.', 'Leaves of Mint.', 'Shell of a lime.' (~88% recetas con ingredientes parseados).",
+    "sectionCount": 2,
+    "recipeCount": 84,
+    "bookFile": "data/euvs-books/1939-sloppy-joes-bar.json"
+  },
+  {
     "id": "1940-sloppy-joes-season-1940",
     "year": 1940,
     "decade": "1940s",
