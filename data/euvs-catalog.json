@@ -76,7 +76,7 @@
     "edition": "1827 Edition (copy 2)",
     "notes": "Variante de Oxford Night Caps 1827.",
     "sectionCount": 2,
-    "recipeCount": 22,
+    "recipeCount": 21,
     "bookFile": "data/euvs-books/1827-oxford-night-caps-by-richard-cook-2.json"
   },
   {
@@ -236,7 +236,7 @@
     "edition": "Edition",
     "notes": "Pre-Civil War UK.",
     "sectionCount": 2,
-    "recipeCount": 22,
+    "recipeCount": 19,
     "bookFile": "data/euvs-books/1863-cups-their-custom-by-henry-porter-george-roberts.json"
   },
   {
@@ -252,7 +252,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 47,
+    "recipeCount": 46,
     "bookFile": "data/euvs-books/1863-the-manufacture-of-liquors-wines-and-cordials.json"
   },
   {
@@ -316,7 +316,7 @@
     "edition": "Edition",
     "notes": "Manual victoriano UK.",
     "sectionCount": 2,
-    "recipeCount": 20,
+    "recipeCount": 19,
     "bookFile": "data/euvs-books/1869-drinking-cups-their-custom-by-henry-porter-george-roberts.json"
   },
   {
@@ -428,7 +428,7 @@
     "edition": "First Edition (1874)",
     "notes": "Manual histórico — 'Art and Mystery of Mixing Drinks'.",
     "sectionCount": 2,
-    "recipeCount": 15,
+    "recipeCount": 13,
     "bookFile": "data/euvs-books/1874-the-american-bar-tender-or-the-art-and-mystery-of-mixing-drinks-by-e-a-simmons.json"
   },
   {
@@ -524,7 +524,7 @@
     "edition": "First Edition (1878)",
     "notes": "⭐ Primera edición del Leo Engel — anterior a la 1880 que ya tenemos.",
     "sectionCount": 2,
-    "recipeCount": 30,
+    "recipeCount": 8,
     "bookFile": "data/euvs-books/1878-american-and-other-drinks.json"
   },
   {
@@ -540,7 +540,7 @@
     "edition": "First Edition (1879)",
     "notes": "Folleto promocional de Yeatman's Calisayine Cocktail Bitters ('The Prince of Pick-me-ups'). Cada cóctel los lleva como ingrediente. Incluye testimonios de doctores, un poema sobre cruzar el Canal sin marearse, y citas de Shakespeare en cada receta (Twelfth Night, Henry IV, Midsummer Night's Dream, Merry Wives of Windsor). Skeleton custom rebuilt detectando 'No. N—Name.' patterns. 30 recetas con ~90% (27/30) parseado.",
     "sectionCount": 2,
-    "recipeCount": 30,
+    "recipeCount": 29,
     "bookFile": "data/euvs-books/1879-drinks-and-how-to-make-them-by-yeatman-co.json"
   },
   {
@@ -556,7 +556,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 10,
+    "recipeCount": 8,
     "bookFile": "data/euvs-books/1879-facts-about-champagne-and-other-sparkling-wines.json"
   },
   {
@@ -572,7 +572,7 @@
     "edition": "Second Edition (1880)",
     "notes": "⭐ Libro citado por Yeatman 1879 como referencia inicial. Leo Engel — bartender mítico del Criterion de Londres, autor de fantasiosos nombres de cócteles como 'Alabama Fog-cutters', 'Connecticut Eye-openers', 'Thunderbolt Cocktails'. +200 recetas patronizadas desde el Príncipe de Gales hasta el cockney más humilde. Skeleton custom + parser numerado-prosa. 181 recetas; ~78% (142/181) parseado.",
     "sectionCount": 2,
-    "recipeCount": 181,
+    "recipeCount": 179,
     "bookFile": "data/euvs-books/1880-american-other-drinks-by-leo-engel-second-edition.json"
   },
   {
@@ -604,7 +604,7 @@
     "edition": "Hardcover 2nd Edition (1881)",
     "notes": "Hardcover de la 2ª edición de Leo Engel.",
     "sectionCount": 2,
-    "recipeCount": 36,
+    "recipeCount": 14,
     "bookFile": "data/euvs-books/1881-american-and-other-drinks-second-edition-hard-cover-by-leo-engel.json"
   },
   {
@@ -652,7 +652,7 @@
     "edition": "First Edition (1884)",
     "notes": "Bartender del Royal Aquarium de Londres tras temporadas en París y Nueva York. Presenta los 'American Drinks' como innovación estadounidense. 97 recetas en 4 secciones (Short Drinks, Punches for Parties, Hot Drinks). Skeleton custom rebuilt usando el patrón 'N—NAME.' del cuerpo (98 cabeceras detectadas, 1 marcador de sección descartado). Parser prose-aware extrae ingredientes embebidos en prosa ('half a teaspoonful of X', 'three or four drops of Y', 'the yolk of an egg', 'half a lemon'). ~65% de recetas con ingredientes parseados; el resto conserva method_original íntegro.",
     "sectionCount": 2,
-    "recipeCount": 97,
+    "recipeCount": 96,
     "bookFile": "data/euvs-books/1884-american-and-other-drinks-1-st-edition-by-charlie-paul.json"
   },
   {
@@ -732,7 +732,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 36,
+    "recipeCount": 34,
     "bookFile": "data/euvs-books/1885-new-guide-hotel-bar-restaurant.json"
   },
   {
@@ -764,7 +764,7 @@
     "edition": "Revised Edition (1888 — Copyright 1888)",
     "notes": "'Latest Mode of Mixing Drinks' — manual de Theodore Proulx de Chapin & Gore (Chicago). Ordenado alfabéticamente con prosa detallada por receta (incluye técnica del Blue Blazer con fuego, el Absinthe Frappé con cambio de glass entre dos shakers). Skeleton custom + parser prose-aware. 90 recetas; ~49% (44/90) parseado (algunas recetas son advice/cleaning/no-recipe que conservan raw_text + notes).",
     "sectionCount": 2,
-    "recipeCount": 90,
+    "recipeCount": 87,
     "bookFile": "data/euvs-books/1888-bartenders-manual-by-theodore-proulx-revised-edition.json"
   },
   {
@@ -860,7 +860,7 @@
     "edition": "First Edition (1891)",
     "notes": "Manual victoriano UK de Mrs. de Salis — autora de la serie 'à la Mode' de cookery + drinks.",
     "sectionCount": 2,
-    "recipeCount": 68,
+    "recipeCount": 67,
     "bookFile": "data/euvs-books/1891-drinks-a-la-mode-by-mrs-de-salis.json"
   },
   {
@@ -940,7 +940,7 @@
     "edition": "First Edition (1895)",
     "notes": "Manual de Berner-Mayer (1895).",
     "sectionCount": 2,
-    "recipeCount": 143,
+    "recipeCount": 141,
     "bookFile": "data/euvs-books/1895-bartenders-guide-by-berner-mayer-co.json"
   },
   {
@@ -956,7 +956,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 111,
+    "recipeCount": 110,
     "bookFile": "data/euvs-books/1895-mixed-drinks-by-herbert-w-green.json"
   },
   {
@@ -972,7 +972,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 51,
+    "recipeCount": 50,
     "bookFile": "data/euvs-books/1895-modern-american-drinks-how-to-mix-and-serve-all-kinds-of-cups-and-drinks.json"
   },
   {
@@ -1020,7 +1020,7 @@
     "edition": "Edition (1895)",
     "notes": "Manual histórico de Lawlor.",
     "sectionCount": 2,
-    "recipeCount": 11,
+    "recipeCount": 10,
     "bookFile": "data/euvs-books/1895-the-mixicologist-by-c-f-lawlor.json"
   },
   {
@@ -1036,7 +1036,7 @@
     "edition": "First Edition (1895)",
     "notes": "1ª ed Lawlor.",
     "sectionCount": 2,
-    "recipeCount": 9,
+    "recipeCount": 8,
     "bookFile": "data/euvs-books/1895-the-mixicologist-first-edition-by-c-f-lawlor.json"
   },
   {
@@ -1052,7 +1052,7 @@
     "edition": null,
     "notes": "Uno de los primeros recetarios franceses de cocteles. Su autor, Louis Fouquet, era jefe de barra del Criterion en la rue Saint-Lazare 121 (Paris). El libro se divide en seis partes: Cocktails, Short Drinks, Cobblers y Punchs, Summer Drinks, Winter Drinks y Punchs para sociedades. Contiene 215 recetas numeradas y se intercalan anuncios y secciones sobre utensilios.",
     "sectionCount": 17,
-    "recipeCount": 87,
+    "recipeCount": 86,
     "bookFile": "data/euvs-books/1896-bariana-louis-fouquet.json"
   },
   {
@@ -1084,7 +1084,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 6,
+    "recipeCount": 5,
     "bookFile": "data/euvs-books/1896-fancy-drinks-and-popular-beverages-by-the-only-william.json"
   },
   {
@@ -1196,7 +1196,7 @@
     "edition": "Second Edition, Revised (1904; orig. 1899)",
     "notes": "John Applegreen — bartender de Kinsley's (Chicago) y Holland House (NY), publica esta segunda edición revisada (1904). Variantes 'Dry' (omite syrup) para Martini y Manhattan. Skeleton custom + parser jigger/dash con Yz ½ OCR fix. 185 recetas; ~21% (38/185) parseado (formato OCR variable, raw_text íntegro).",
     "sectionCount": 2,
-    "recipeCount": 185,
+    "recipeCount": 184,
     "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
   },
   {
@@ -1276,7 +1276,7 @@
     "edition": "First Edition (1905)",
     "notes": "Folleto Gorham.",
     "sectionCount": 2,
-    "recipeCount": 60,
+    "recipeCount": 59,
     "bookFile": "data/euvs-books/1905-the-gorham-cocktail-book.json"
   },
   {
@@ -1308,7 +1308,7 @@
     "edition": "First Edition (1906)",
     "notes": "Manual pre-Prohibición de Spaulding & Rositer.",
     "sectionCount": 2,
-    "recipeCount": 103,
+    "recipeCount": 90,
     "bookFile": "data/euvs-books/1906-how-to-mix-drinks-compiled-selected-and-concocted-by-g-spaulding-and-w-rositer.json"
   },
   {
@@ -1324,7 +1324,7 @@
     "edition": "First Edition (1906)",
     "notes": "Manual pre-Prohibición de Muckensturm — 'Louis' Mixed Drinks'.",
     "sectionCount": 2,
-    "recipeCount": 60,
+    "recipeCount": 59,
     "bookFile": "data/euvs-books/1906-louis-mixed-drinks-by-muckensturm.json"
   },
   {
@@ -1372,7 +1372,7 @@
     "edition": "Tenth Edition (1907)",
     "notes": "Manual pre-Prohibición de Charles Smith en su 10ª edición. Open con secciones detalladas sobre estilos de Absinthe (American, French, Italian) y 11 tipos de glassware. Compendio de la era dorada de la mixología.",
     "sectionCount": 2,
-    "recipeCount": 419,
+    "recipeCount": 396,
     "bookFile": "data/euvs-books/1907-smacks-and-smiles-tenth-edition-by-charles-smith.json"
   },
   {
@@ -1388,7 +1388,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 61,
+    "recipeCount": 60,
     "bookFile": "data/euvs-books/1908-jacks-manual-by-j-a-grohusko.json"
   },
   {
@@ -1404,7 +1404,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 102,
+    "recipeCount": 97,
     "bookFile": "data/euvs-books/1908-the-worlds-drinks-and-how-to-mix-them-by-hon-wm-boothby.json"
   },
   {
@@ -1484,7 +1484,7 @@
     "edition": "Third Edition (1909)",
     "notes": "Manual pre-Prohibición de Jacob A. Didier en su 3ª edición (1909).",
     "sectionCount": 2,
-    "recipeCount": 187,
+    "recipeCount": 183,
     "bookFile": "data/euvs-books/1909-the-reminder-by-jacob-a-didier-3rd-edition.json"
   },
   {
@@ -1660,7 +1660,7 @@
     "edition": "First Edition (1912)",
     "notes": "Folleto alemán Holtz & Freystedt.",
     "sectionCount": 2,
-    "recipeCount": 99,
+    "recipeCount": 95,
     "bookFile": "data/euvs-books/1912-holtz-freystedt.json"
   },
   {
@@ -1692,7 +1692,7 @@
     "edition": "First Edition (1912, pre-Prohibición)",
     "notes": "Manual pre-Prohibición de John H. Considine — Buffet Blue Book.",
     "sectionCount": 2,
-    "recipeCount": 245,
+    "recipeCount": 244,
     "bookFile": "data/euvs-books/1912-the-buffet-blue-book-bu-john-h-considine.json"
   },
   {
@@ -1820,7 +1820,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 31,
+    "recipeCount": 25,
     "bookFile": "data/euvs-books/1914-drinks-by-jacques-straub.json"
   },
   {
@@ -1868,7 +1868,7 @@
     "edition": "First Edition (1915)",
     "notes": "Manual del Cantinero de John Escalante.",
     "sectionCount": 2,
-    "recipeCount": 220,
+    "recipeCount": 189,
     "bookFile": "data/euvs-books/1915-manual-del-cantinero-by-john-escalante.json"
   },
   {
@@ -1932,7 +1932,7 @@
     "edition": "Second Edition",
     "notes": "Manual del barman del Hotel Wallick (Times Square, Nueva York). Es la primera fuente impresa conocida del Aviation Cocktail (con Crème de Violette). Listado alfabético continuo de cócteles, fizzes, coolers, lemonades, juleps, sours y otras categorías. La extracción heurística rescató 236 recetas reales de 394 candidatas; el resto eran fragmentos de ingredientes mal segmentados, anuncios (Tivoli Beer, Dubonnet) o entradas de índice. Fracciones OCR (¥%, ¥Y, ¥4, %) normalizadas a ½, ¾, ¼. Saltadas (no son recetas reales): Silver Black Foxes (ingredient_fragment); The Pre-eminent Cuvées (ingredient_fragment); ENSSLIN, (front_matter); Italian Vermouth (ingredient_fragment); Y% French Vermouth (ingredient_fragment); Y% Gin (ingredient_fragment); Juice of 44 an Ora (ingredient_fragment); APPETIZER No. III (ingredient_fragment); APPETIZER No. IV (ingredient_fragment); Y% Dubonnet (ingredient_fragment); A Italian Vermouth (ingredient_fragment); Juice of 44 Lime (ingredient_fragment); Cube of Ice (ingredient_fragment); White of 1 Egg (ingredient_fragment); Y% Italian Vermouth (ingredient_fragment); Sloe Gin (ingredient_fragment); Juice of 4 Lime (ingredient_fragment); Y% Dry Gin (ingredient_fragment); Italian Vermouth (ingredient_fragment); Juice of 4 Lemon (ingredient_fragment); Cube of Ice (ingredient_fragment); Juice of 4 Lime (ingredient_fragment); Y% Sherry (ingredient_fragment); White of 1 Egg (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Bacardi Rum (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Y% Benedictine (ingredient_fragment); Y Italian Vermouth (ingredient_fragment); Orange Gin (ingredient_fragment); Cube of Ice (ingredient_fragment); French Vermouth (ingredient_fragment); Cube of Ice (ingredient_fragment); Split of Ginger Ale (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Juice 1 Lime (ingredient_fragment); White of 1 Egg (ingredient_fragment); Cube of Ice (ingredient_fragment); Cube of Ice (ingredient_fragment); Split of Ginger Ale (ingredient_fragment); Y% Dubonnet (ingredient_fragment); Y% Apricot Brandy (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); White of 1 Egg (ingredient_fragment); Dry Gin (ingredient_fragment); Orange Gin (ingredient_fragment); Cube of Tee (ingredient_fragment); Cube of Ice (ingredient_fragment); Amer Picon (ingredient_fragment); White of 1 Egg (ingredient_fragment); Vs Scotch Whiskey (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); White of 1 Egg (ingredient_fragment); Juice of 4 Lime (ingredient_fragment); Vy Applejack (ingredient_fragment); Irish Whiskey (ingredient_fragment); Y% Créme de Cacao (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Y% French Vermouth (ingredient_fragment); White of 1 Egg (ingredient_fragment); White of 1 Egg (ingredient_fragment); WHITE WAY No. I. (ingredient_fragment); WHITE WAY No. II. (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); White of 1 Egg (ingredient_fragment); Juice of 44 Lemon (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Juice of 1 Lemon (ingredient_fragment); Split of Club Soda or Carbonated Water (ingredient_fragment); JOHN Haig’s (ingredient_fragment); Genuine Haig Whisky (ingredient_fragment); Cups (ingredient_fragment); Juice of 5 Limes (ingredient_fragment); Rum_ Dais; (ingredient_fragment); Carbonated Water (ingredient_fragment); The Greatest Tonic and Appetizer (ingredient_fragment); BOTTLES (advertisement); White of 1 Egg (ingredient_fragment); Juice of 4 Lime (ingredient_fragment); St. Croix Rum (ingredient_fragment); White of 1 Egg (ingredient_fragment); Drink El Bart Gin (ingredient_fragment); White 1 Egg (ingredient_fragment); Juice 2 Limes (ingredient_fragment); ST. CROIX RUM FIZz (ingredient_fragment); Whiskey Flip (ingredient_fragment); Mint Highball (ingredient_fragment); Cordials Highball (ingredient_fragment); Juice of 1 Lemon (ingredient_fragment); Juice of 1 Lemon (ingredient_fragment); Great Western (ingredient_fragment); Juice of 1 Lime (ingredient_fragment); Juice 1 Lemon (ingredient_fragment); Juice of 2 Limes (ingredient_fragment); Yolk of 1 Egg (ingredient_fragment); Juice of 3 Limes (ingredient_fragment); GOLD MEDAL TIVOLI BEER (advertisement); Juice of 1 Lemon (ingredient_fragment); Juice of 4 Oranges (ingredient_fragment); Sliced Oranges and Pineapple (ingredient_fragment); Juice of 6 Lemons (ingredient_fragment); Juice of 4 Lemon (ingredient_fragment); Y% Ib. Powdered Sugar (ingredient_fragment); Juice 3 Lemons (ingredient_fragment); Juice 6 Lemons (ingredient_fragment); Juice of 3 Oranges (ingredient_fragment); Juice of 1 Lemon (ingredient_fragment); Juice of 2 Lemons (ingredient_fragment); Apricot Rickey Raspberry Rickey (ingredient_fragment); BREWERY BOTTLING (advertisement); Scotch Smash (ingredient_fragment); Juice 4 Lime (ingredient_fragment); Use Cordial Glass (ingredient_fragment); Use Cordial Glass. (ingredient_fragment); Use Cordial Glass. (ingredient_fragment); Juice of 1 Lemon or 2 Limes (ingredient_fragment); Y% White Curacao (ingredient_fragment); Rind of 1 Orange (ingredient_fragment); Use Cordial Glass (ingredient_fragment); Cube of Ice (ingredient_fragment); Cube of Ice (ingredient_fragment); Cube of Ice (ingredient_fragment); Cube of Ice (ingredient_fragment); Use Cordial Glass. (ingredient_fragment); White of 1 Egg (ingredient_fragment); White of 1 Egg (ingredient_fragment); Juice of 2 Limes or 1 Lemon (ingredient_fragment); Top with Cream (ingredient_fragment); Sparkling Water (ingredient_fragment); Gold Seal (ingredient_fragment); Fermented in the Bottle (ingredient_fragment); Flag (ingredient_fragment); Burgundy (ingredient_fragment); Gines. a (ingredient_fragment); Albemarle (ingredient_fragment); New Orleans (ingredient_fragment); Blackberry (ingredient_fragment); Port Wine (ingredient_fragment); Grape Juice (ingredient_fragment); Dubonnet™ (ingredient_fragment); Hot Lemonade (ingredient_fragment); Aster : (ingredient_fragment); Claret...) (ingredient_fragment); May Wine (ingredient_fragment); Roman (ingredient_fragment); Milk Shake (ingredient_fragment); RICKEYS (index_divider); Apricot (ingredient_fragment); Apple Jack (ingredient_fragment); SMASHES (index_divider); Apple Jack . (ingredient_fragment); Fireman's .. (ingredient_fragment); St. Croix Rum . (ingredient_fragment); Brandy Float ... (ingredient_fragment); Florida. Special (ingredient_fragment); Rock and Rye .... (ingredient_fragment); Direct Receivers of (ingredient_fragment)",
     "sectionCount": 2,
-    "recipeCount": 236,
+    "recipeCount": 234,
     "bookFile": "data/euvs-books/1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition.json"
   },
   {
@@ -1980,7 +1980,7 @@
     "edition": "Fifth Edition (1917)",
     "notes": "5ª ed Didier.",
     "sectionCount": 2,
-    "recipeCount": 16,
+    "recipeCount": 15,
     "bookFile": "data/euvs-books/1917-the-reminder-by-jacob-a-didier-5th-edition.json"
   },
   {
@@ -2076,7 +2076,7 @@
     "edition": "Only for Foreign Use",
     "notes": "Folleto compilado por la Cunard Steam Ship Company a partir de las recetas originales del bar del Metropolitan Club de Washington D.C., distribuido en el extranjero durante la Ley Seca estadounidense. Las recetas numeradas (1-99) se identifican únicamente por número, mientras que la sección 'Standard Cocktails' lista los cócteles clásicos por nombre.",
     "sectionCount": 3,
-    "recipeCount": 56,
+    "recipeCount": 54,
     "bookFile": "data/euvs-books/1920-cocktails-metropolitan-club-washington-dc.json"
   },
   {
@@ -2108,7 +2108,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 7,
+    "recipeCount": 4,
     "bookFile": "data/euvs-books/1920-drinks-by-jacques-straub.json"
   },
   {
@@ -2124,7 +2124,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 16,
+    "recipeCount": 15,
     "bookFile": "data/euvs-books/1920-for-snakes-bites-or-something.json"
   },
   {
@@ -2204,7 +2204,7 @@
     "edition": "First Edition (1922)",
     "notes": "Manual UK.",
     "sectionCount": 2,
-    "recipeCount": 29,
+    "recipeCount": 25,
     "bookFile": "data/euvs-books/1922-home-made-beverages-and-american-drinks-by-m-e-steedman.json"
   },
   {
@@ -2220,7 +2220,7 @@
     "edition": "Fourth Edition (1922)",
     "notes": "Manual histórico de licores caseros.",
     "sectionCount": 2,
-    "recipeCount": 79,
+    "recipeCount": 65,
     "bookFile": "data/euvs-books/1922-old-time-recipes-liquors-shrubs-4th-edition-by-helen-s-wright.json"
   },
   {
@@ -2284,7 +2284,7 @@
     "edition": "First Edition (1924)",
     "notes": "Manual francés de Carlo Beltramo (1924).",
     "sectionCount": 2,
-    "recipeCount": 107,
+    "recipeCount": 106,
     "bookFile": "data/euvs-books/1924-carlos-cocktail-et-boissons-americaines-by-carlo-beltramo.json"
   },
   {
@@ -2348,7 +2348,7 @@
     "edition": "First Edition (1925)",
     "notes": "Manual UK de Joe Fitchett — 'About Town' Cocktail Book.",
     "sectionCount": 2,
-    "recipeCount": 128,
+    "recipeCount": 127,
     "bookFile": "data/euvs-books/1925-about-town-cocktail-book-by-joe-fitchett.json"
   },
   {
@@ -2428,7 +2428,7 @@
     "edition": "First Edition (1925)",
     "notes": "Manual UK estacional de C.F. Leyel — Summer Drinks + Winter Cordials.",
     "sectionCount": 2,
-    "recipeCount": 81,
+    "recipeCount": 80,
     "bookFile": "data/euvs-books/1925-summer-drinks-and-winter-codials-by-c-f-leyel.json"
   },
   {
@@ -2460,7 +2460,7 @@
     "edition": "Edition (1926)",
     "notes": "Manual de coctelería 'sideboard for gentlemen', edición 1926.",
     "sectionCount": 2,
-    "recipeCount": 146,
+    "recipeCount": 123,
     "bookFile": "data/euvs-books/1926-the-cocktail-book-a-sideboard-manual-for-gentlemen.json"
   },
   {
@@ -2492,7 +2492,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 12,
+    "recipeCount": 11,
     "bookFile": "data/euvs-books/1927-barflies-and-cocktails.json"
   },
   {
@@ -2540,7 +2540,7 @@
     "edition": "First Edition (1927)",
     "notes": "Manual Prohibición.",
     "sectionCount": 2,
-    "recipeCount": 347,
+    "recipeCount": 296,
     "bookFile": "data/euvs-books/1927-drinks-of-all-kinds.json"
   },
   {
@@ -2620,7 +2620,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 24,
+    "recipeCount": 23,
     "bookFile": "data/euvs-books/1927-pour-le-distillateur-le-debitant-le-barman-by-paul-fouassier.json"
   },
   {
@@ -2636,7 +2636,7 @@
     "edition": "First Edition (1928)",
     "notes": "Manual francés Lupoiu 1928.",
     "sectionCount": 2,
-    "recipeCount": 35,
+    "recipeCount": 34,
     "bookFile": "data/euvs-books/1928-370-recettes-de-cocktails-par-jean-lupoiu.json"
   },
   {
@@ -2668,7 +2668,7 @@
     "edition": "Edition (1928)",
     "notes": "1928 Cheerio edition.",
     "sectionCount": 2,
-    "recipeCount": 111,
+    "recipeCount": 110,
     "bookFile": "data/euvs-books/1928-cheerio-a-book-of-punches-and-cocktails-by-charles.json"
   },
   {
@@ -2700,7 +2700,7 @@
     "edition": "First Edition (1928)",
     "notes": "Manual de Prohibición.",
     "sectionCount": 2,
-    "recipeCount": 8,
+    "recipeCount": 7,
     "bookFile": "data/euvs-books/1928-giggle-water-by-charles-s-warnock.json"
   },
   {
@@ -2924,7 +2924,7 @@
     "edition": "Manuscrito (libro de recetas a mano del East Bar)",
     "notes": "Cuaderno manuscrito Art Deco del barman F. Koki del East Bar del Hotel Esplanade en Praga (c. 1930). El OCR del documento está extremadamente degradado: la caligrafía decorativa, las pestañas alfabéticas índice (J K L M N O P R S St U V) y los anuncios litográficos confunden el reconocimiento. Solo es posible recuperar fragmentos: las marcas anunciadas (Rhum Charleston, Isolabella, Kümmel Daoff, John Dewar & Sons, Prunelle, Marasquin, Martini, Acossato Vermouth, Cognac à l'Orange Sallandrouze, Ayala Champagne, Bols) y la estructura general (índice alfabético + recetas en proporciones de tercios 1/3 + 1/3 + 1/3, típicas de la coctelería europea de los años 1920-1930). Para reconstruir el contenido íntegro de las recetas se requiere una transcripción manual de las imágenes originales.",
     "sectionCount": 17,
-    "recipeCount": 11,
+    "recipeCount": 5,
     "bookFile": "data/euvs-books/1930-cocktails-art-deco-manuscript-book-east-bar-hotel-esplanade-prague-by-f-koki.json"
   },
   {
@@ -2940,7 +2940,7 @@
     "edition": "First Edition (1930)",
     "notes": "Recetas de 'Jimmy', bartender mítico del Ciro's de Londres durante los años locos. Open con cita de Omar Khayyam ('While you live, Drink!'). 237 recetas con custom skeleton (ALL CAPS + bloque ingrediente) y custom parser para 'N part X', 'N dashes Y per cocktail', 'Sugar to taste'. ~89% (212/237) recetas con ingredientes parseados.",
     "sectionCount": 2,
-    "recipeCount": 237,
+    "recipeCount": 233,
     "bookFile": "data/euvs-books/1930-cocktails-by-jimmy-late-of-ciros-london.json"
   },
   {
@@ -2972,7 +2972,7 @@
     "edition": "1930",
     "notes": "Manual de coctelería de la era de la Prohibición (1930). 130 recetas reales rescatadas de 156 candidatas tras descartar 16 entradas de front matter (definiciones de medidas + glosario de tipos de vino), 4 cabeceras de página, 1 divisor de sección y 6 duplicados (la edición original imprimió varios de los Sours/Rickey dos veces). Auto-extractor procesó el 100%; ~10% sin ingredientes parseados por raw_text muy degradado. Unidad 'shot' del libro mapeada a 'oz' en el campo unit. Saltadas (no son recetas reales): DEFINITIONS (front_matter (definitions/wine glossary)); Their Food and Médicinal Values (front_matter (definitions/wine glossary)); HERE'S HOW (front_matter (definitions/wine glossary)); Température M Whtch To Serve (front_matter (definitions/wine glossary)); DEFINITIONS (front_matter (definitions/wine glossary)); Their Food and Médicinal Values (front_matter (definitions/wine glossary)); Température At Whîch To Serve (front_matter (definitions/wine glossary)); HERE'S HOW (front_matter (definitions/wine glossary)); BuTQundîes (front_matter (definitions/wine glossary)); Clarets (front_matter (definitions/wine glossary)); Sauternes (front_matter (definitions/wine glossary)); Rhine Wines (front_matter (definitions/wine glossary)); Moselle IFincs (front_matter (definitions/wine glossary)); 8 HERE'S HOW (front_matter (definitions/wine glossary)); HERE'S HOW (front_matter (definitions/wine glossary)); Madeira (front_matter (definitions/wine glossary)); 18 HERE'S HOW (page_header); 20 HERE'S HOW (page_header); 22 HERE'S HOW (page_header); HOT DRINKS (section_divider); Gin Rickey (duplicate (book reprints earlier recipe)); Apricot Brandy Rickey (duplicate (book reprints earlier recipe)); Brandy Sour (duplicate (book reprints earlier recipe)); Double Standard Saur (duplicate (book reprints earlier recipe)); Gin Saur (duplicate (book reprints earlier recipe)); Roosevelt Sour (duplicate (book reprints earlier recipe))",
     "sectionCount": 2,
-    "recipeCount": 130,
+    "recipeCount": 126,
     "bookFile": "data/euvs-books/1930-heres-how.json"
   },
   {
@@ -3084,7 +3084,7 @@
     "edition": "First Edition (1930)",
     "notes": "Edición previa de 1931 Tipple and Snack.",
     "sectionCount": 2,
-    "recipeCount": 35,
+    "recipeCount": 30,
     "bookFile": "data/euvs-books/1930-the-art-of-drinking-what-and-how-by-dexter-mason.json"
   },
   {
@@ -3100,7 +3100,7 @@
     "edition": "First Edition (1930)",
     "notes": "Manual de Prohibición — recopilación de bebidas pre-Prohibición.",
     "sectionCount": 2,
-    "recipeCount": 160,
+    "recipeCount": 144,
     "bookFile": "data/euvs-books/1930-the-drinks-of-yesteryear-a-mixology.json"
   },
   {
@@ -3132,7 +3132,7 @@
     "edition": "First Edition (1930, mid-Prohibición)",
     "notes": "Manual de Prohibición — saloon casero. Era seca.",
     "sectionCount": 2,
-    "recipeCount": 75,
+    "recipeCount": 72,
     "bookFile": "data/euvs-books/1930-the-saloon-in-the-home.json"
   },
   {
@@ -3164,7 +3164,7 @@
     "edition": "Little Blue Book",
     "notes": "Pequeño libro azul (Little Blue Book) de la era de la Prohibición estadounidense. El autor describe sus recetas con humor, refiriéndose irónicamente al uso de licores 'no alcohólicos'. Incluye una sección de aperitivos y maridajes para acompañar los cócteles.",
     "sectionCount": 12,
-    "recipeCount": 107,
+    "recipeCount": 106,
     "bookFile": "data/euvs-books/1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them.json"
   },
   {
@@ -3180,7 +3180,7 @@
     "edition": "First Edition (1931)",
     "notes": "Manual cubano de cocina con sección de bebidas.",
     "sectionCount": 2,
-    "recipeCount": 26,
+    "recipeCount": 25,
     "bookFile": "data/euvs-books/1931-cuban-cookery-by-blanche-z-de-baralt.json"
   },
   {
@@ -3356,7 +3356,7 @@
     "edition": "First Edition (1933, post-Repeal)",
     "notes": "Compendio post-Repeal de 300 bebidas. Cada receta tiene su sección 'Use ... bar glass' + lista de ingredientes con tablespoon/teaspoon/wine glass + método. 237 recetas; ~71% (168/237) parseado.",
     "sectionCount": 2,
-    "recipeCount": 237,
+    "recipeCount": 224,
     "bookFile": "data/euvs-books/1933-300-drinks-and-how-to-mixem.json"
   },
   {
@@ -3404,7 +3404,7 @@
     "edition": "First Printing, March 1933",
     "notes": "Pequeño folleto de cócteles publicado en plena Ley Seca tardía (marzo 1933). Las recetas están agrupadas por base alcohólica (gin, alcohol, Bacardi/ron, whisky, applejack) y muchas incluyen versiones no alcohólicas mediante el uso de siropes y zumos. Contiene rimas humorísticas intercaladas entre las recetas.",
     "sectionCount": 9,
-    "recipeCount": 64,
+    "recipeCount": 63,
     "bookFile": "data/euvs-books/1933-cocktail-parade.json"
   },
   {
@@ -3484,7 +3484,7 @@
     "edition": "Third Printing (1933, 'Whenever it Becomes Legal to Serve' — anticipating Repeal)",
     "notes": "Manual de cócteles publicado en Hollywood al final de la Prohibición ('Whenever it Becomes Legal to Serve'). Layout en dos columnas con cocktails interleaved. Skeleton custom + parser oz/dash/word-fraction. 42 recetas (post-cleanup); ~79% (33/42) con ingredientes parseados.",
     "sectionCount": 2,
-    "recipeCount": 42,
+    "recipeCount": 41,
     "bookFile": "data/euvs-books/1933-hollywood-cocktails-third-printing.json"
   },
   {
@@ -3532,7 +3532,7 @@
     "edition": "First Edition (1933, post-Repeal)",
     "notes": "Manual nostálgico post-Repeal — 'Lest We Forget' las recetas pre-Prohibición.",
     "sectionCount": 2,
-    "recipeCount": 45,
+    "recipeCount": 21,
     "bookFile": "data/euvs-books/1933-lest-we-forget.json"
   },
   {
@@ -3664,22 +3664,6 @@
     "bookFile": "data/euvs-books/1933-the-merry-mixer-by-william-guyer.json"
   },
   {
-    "id": "1933-when-good-fellows-get-together-drink-and-service-manual",
-    "year": 1933,
-    "decade": "1930s",
-    "title": "When Good Fellows Get Together",
-    "author": "Anonymous",
-    "language": "en",
-    "languageName": "Inglés",
-    "publisher": "Self-published",
-    "city": "USA",
-    "edition": "First Edition (1933)",
-    "notes": "Manual post-Repeal.",
-    "sectionCount": 2,
-    "recipeCount": 3,
-    "bookFile": "data/euvs-books/1933-when-good-fellows-get-together-drink-and-service-manual.json"
-  },
-  {
     "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf",
     "year": 1934,
     "decade": "1930s",
@@ -3692,7 +3676,7 @@
     "edition": "Second Printing, January 26, 1934",
     "notes": "Drinks Made Famous at the Waldorf — recetas del antiguo Waldorf-Astoria de NYC (1893-1929, demolido para el Empire State) y el nuevo Waldorf-Astoria de Park Avenue. Editado en colaboración con la dirección del hotel. Frecuentado por J.P. Morgan, Mark Twain, Buffalo Bill Cody, Diamond Jim Brady, John L. Sullivan. 115 recetas con detector ALL CAPS + verificación bloque ingrediente + custom parser para ratios 'Two-thirds X' / 'One-half Y'. ~63% recetas con ingredientes parseados.",
     "sectionCount": 2,
-    "recipeCount": 115,
+    "recipeCount": 113,
     "bookFile": "data/euvs-books/1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf.json"
   },
   {
@@ -3708,7 +3692,7 @@
     "edition": "First Edition (1934, post-Repeal)",
     "notes": "Compendio post-Repeal de 688 recetas.",
     "sectionCount": 2,
-    "recipeCount": 9,
+    "recipeCount": 8,
     "bookFile": "data/euvs-books/1934-a-lifetime-collection-of-688-recipes-for-drinks.json"
   },
   {
@@ -3772,7 +3756,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 681,
+    "recipeCount": 680,
     "bookFile": "data/euvs-books/1934-cocktail-bill-boothbys-world-drinks-and-how-to-mix-them.json"
   },
   {
@@ -3820,7 +3804,7 @@
     "edition": "First Edition (1934, post-Repeal)",
     "notes": "Manual nostálgico post-Repeal de Ira D. Altschul (Santa Barbara, CA). Reflexiona sobre cómo durante la Prohibición se servía 'rotten and rancid poison' como whisky, y ahora hay que 'teach the people how and what to drink'. Incluye una sección sobre el setup ideal del bar pre-Prohibición (glasses, tools, fruit handling). Cocktails recopilados antes de la Prohibición.",
     "sectionCount": 2,
-    "recipeCount": 86,
+    "recipeCount": 84,
     "bookFile": "data/euvs-books/1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul.json"
   },
   {
@@ -3900,7 +3884,7 @@
     "edition": "First Edition (1934, post-Repeal)",
     "notes": "Folleto promocional de Frankfort Distilleries (Paul Jones, Four Roses) escrito por el humorista Irvin S. Cobb (autor de 'Red Likker'). 78 recetas en formato 'NAME: ingredient1, ingredient2,...' embebidas en una 'rollicking dissertation' sobre el bourbon. Discurso satírico de Lincoln en epígrafe. Skeleton custom rebuilt detectando 'NAME: body' patterns. ~81% (38/47) recetas con ingredientes parseados (algunos con OCR truncated por el texto pícaro).",
     "sectionCount": 2,
-    "recipeCount": 47,
+    "recipeCount": 46,
     "bookFile": "data/euvs-books/1934-irvin-s-cobbs-own-recipe-book.json"
   },
   {
@@ -3932,7 +3916,7 @@
     "edition": "Second Edition (1934, post-Repeal)",
     "notes": "Manual post-Repeal de G.F. Steele en su 2ª edición.",
     "sectionCount": 2,
-    "recipeCount": 54,
+    "recipeCount": 53,
     "bookFile": "data/euvs-books/1934-my-new-cocktail-book-2-nd-edition-by-g-f-steele.json"
   },
   {
@@ -4012,7 +3996,7 @@
     "edition": "First Edition (1934)",
     "notes": "Manual post-Repeal.",
     "sectionCount": 2,
-    "recipeCount": 129,
+    "recipeCount": 128,
     "bookFile": "data/euvs-books/1934-tom-and-jerrys-bartenders-guide.json"
   },
   {
@@ -4028,7 +4012,7 @@
     "edition": "First Edition (1934)",
     "notes": "Guía de maridaje post-Repeal.",
     "sectionCount": 2,
-    "recipeCount": 49,
+    "recipeCount": 47,
     "bookFile": "data/euvs-books/1934-what-goes-with-what.json"
   },
   {
@@ -4108,7 +4092,7 @@
     "edition": null,
     "notes": "Folleto promocional de la destilería Calvert (precio: 10 centavos). Presenta una colección práctica de cócteles caseros que pueden prepararse con pocos ingredientes (whisky, ginebra, vermut, bíter y granadina). Incluye material publicitario sobre las marcas de whisky Calvert, Silver Dollar, Virginia Club, Old Drum y Calico.",
     "sectionCount": 6,
-    "recipeCount": 39,
+    "recipeCount": 38,
     "bookFile": "data/euvs-books/1935-cocktails-recommended-by-calvert.json"
   },
   {
@@ -4156,7 +4140,7 @@
     "edition": "1935",
     "notes": "Manual francés de coctelería por George Pillaert (1935). Recopila las recetas de los bares americanos de París (Bar Napoléon, Cintra, Le Dôme, Le Floréal de Ostende). 74 recetas reales rescatadas de 162 candidatas heurísticas; 88 saltadas (la mayoría son nombres de marcas, ingredientes sueltos, banners de venues 'Création Bar X Paris' y la jerga francesa de barra mal segmentada por el extractor). Parser custom French-aware procesa fracciones del libro (1/2, 1/3, 2/3, 1/4) + medidas FR (traits, gouttes, jus de) + traduce ingredientes principales al español. Saltadas (no son recetas reales): Shakers : (non_recipe (brand/ingredient/glossary/banner)); Sucerier (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers : (non_recipe (brand/ingredient/glossary/banner)); Zeste (non_recipe (brand/ingredient/glossary/banner)); GORDON'S DRY GIN (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); CINZANQ (non_recipe (brand/ingredient/glossary/banner)); CREATION - BAR NAPOLEON PARIS (non_recipe (brand/ingredient/glossary/banner)); Twel (non_recipe (brand/ingredient/glossary/banner)); Mixte Vermouth (non_recipe (brand/ingredient/glossary/banner)); PERD CREER (non_recipe (brand/ingredient/glossary/banner)); Amarosa (non_recipe (brand/ingredient/glossary/banner)); Amaros (non_recipe (brand/ingredient/glossary/banner)); Tumbler (non_recipe (brand/ingredient/glossary/banner)); Création - Bar Cintra Paris (non_recipe (brand/ingredient/glossary/banner)); IDD (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Dôme Paris (non_recipe (brand/ingredient/glossary/banner)); Création Bar Napoléon Paris (non_recipe (brand/ingredient/glossary/banner)); Sel (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Finir Champagnë Charles Heidsieck (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Noilly Prat (non_recipe (brand/ingredient/glossary/banner)); Marie Brizard (non_recipe (brand/ingredient/glossary/banner)); Création Bar Napoléon Paris (non_recipe (brand/ingredient/glossary/banner)); Cognac Martel (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); Burnett Dry Gin (non_recipe (brand/ingredient/glossary/banner)); Merasquin (non_recipe (brand/ingredient/glossary/banner)); Whisky Robertson (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Egs-Nogg (non_recipe (brand/ingredient/glossary/banner)); Baltimore Egg-Nogg (non_recipe (brand/ingredient/glossary/banner)); Fine Martell (non_recipe (brand/ingredient/glossary/banner)); Scotch Whisky (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Floréal Ostende (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Floréal Ostende (non_recipe (brand/ingredient/glossary/banner)); PALE DRY Sherry-Sherry Rossel (non_recipe (brand/ingredient/glossary/banner)); John Begg's Scotch Whisky (non_recipe (brand/ingredient/glossary/banner)); Sherry Cobbler (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Chamberry (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Fine Martell (non_recipe (brand/ingredient/glossary/banner)); Gin Smack (non_recipe (brand/ingredient/glossary/banner)); Whisky Smack (non_recipe (brand/ingredient/glossary/banner)); Whisky John Begg (non_recipe (brand/ingredient/glossary/banner)); Neck (non_recipe (brand/ingredient/glossary/banner)); Dry Gin Burnett (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Floréal Ostende (non_recipe (brand/ingredient/glossary/banner)); Bar Napoléon Paris (non_recipe (brand/ingredient/glossary/banner)); Bénédictine (non_recipe (brand/ingredient/glossary/banner)); Cherry Peter HEERING (non_recipe (brand/ingredient/glossary/banner)); Son (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); Pampl's Cocktail (non_recipe (brand/ingredient/glossary/banner)); Plam's IBlossom (non_recipe (brand/ingredient/glossary/banner)); Kirach (non_recipe (brand/ingredient/glossary/banner)); Tomates Juice (non_recipe (brand/ingredient/glossary/banner)); REIMS (non_recipe (brand/ingredient/glossary/banner)); Dry Gin Burnett (non_recipe (brand/ingredient/glossary/banner)); Dry Gin Burnett (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Whisky John Robertson (non_recipe (brand/ingredient/glossary/banner)); Rhum Charleston (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Diablotin (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Ginger-Ale (non_recipe (brand/ingredient/glossary/banner)); Ginger -Beer (non_recipe (brand/ingredient/glossary/banner)); Jus de Baïsin (non_recipe (brand/ingredient/glossary/banner)); Jus de Ciîtro (non_recipe (brand/ingredient/glossary/banner)); Ordina Puncelh (non_recipe (brand/ingredient/glossary/banner)); Sucre (non_recipe (brand/ingredient/glossary/banner)); Gin Burnett DRY (non_recipe (brand/ingredient/glossary/banner)); Sucre (non_recipe (brand/ingredient/glossary/banner)); Whisky John Robertson (non_recipe (brand/ingredient/glossary/banner)); W. P. Lowrie (non_recipe (brand/ingredient/glossary/banner)); Dry Gordon's Gin (non_recipe (brand/ingredient/glossary/banner)); Burnette Dry Gin (non_recipe (brand/ingredient/glossary/banner))",
     "sectionCount": 2,
-    "recipeCount": 74,
+    "recipeCount": 73,
     "bookFile": "data/euvs-books/1935-le-bar-american-cocktails-by-george-pillaert.json"
   },
   {
@@ -4172,7 +4156,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 38,
+    "recipeCount": 37,
     "bookFile": "data/euvs-books/1935-old-waldorf-astoria-bar-book.json"
   },
   {
@@ -4188,7 +4172,7 @@
     "edition": null,
     "notes": "Folleto promocional de Peychaud's Cocktail Bitters y Greenopal (sustituto de absenta) producido por A. M. & J. Solari, Ltd. de Nueva Orleans. Incluye material publicitario y aproximadamente 35 recetas de cócteles, muchas con guiños a Nueva Orleans. Precio original: 50 centavos.",
     "sectionCount": 6,
-    "recipeCount": 40,
+    "recipeCount": 39,
     "bookFile": "data/euvs-books/1935-peychauds-new-orleans-cocktails.json"
   },
   {
@@ -4220,7 +4204,7 @@
     "edition": "First Edition (1935)",
     "notes": "Antología poética de cócteles.",
     "sectionCount": 2,
-    "recipeCount": 19,
+    "recipeCount": 18,
     "bookFile": "data/euvs-books/1935-so-red-the-nose-or-breath-in-the-afternoon.json"
   },
   {
@@ -4348,7 +4332,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 121,
+    "recipeCount": 118,
     "bookFile": "data/euvs-books/1936-the-artistry-of-mixing-drinks-by-frank-meier.json"
   },
   {
@@ -4412,7 +4396,7 @@
     "edition": "Third Edition (1937, post-Repeal)",
     "notes": "Manual post-Repeal anónimo, 3ª edición.",
     "sectionCount": 2,
-    "recipeCount": 38,
+    "recipeCount": 28,
     "bookFile": "data/euvs-books/1937-here-is-something-that-will-interest-you-3-rd-edition.json"
   },
   {
@@ -4428,7 +4412,7 @@
     "edition": "First Edition (1937)",
     "notes": "Manual del bartender del California Golf Club de San Francisco. Cada receta viene seguida por una sección de 'Observations' que comenta historia, brand, fortaleza alcohólica y consideraciones culturales (incluyendo notas sobre la Absinthe prohibida en EE.UU. — 'so a genuine Absinthe drink cannot be legally obtained in this country'). Skeleton custom + parser oz/dash. 53 recetas; ~94% (50/53) parseado.",
     "sectionCount": 2,
-    "recipeCount": 53,
+    "recipeCount": 52,
     "bookFile": "data/euvs-books/1937-liquid-gems-a-book-of-drinks-for-the-fastiduous-drinker.json"
   },
   {
@@ -4540,7 +4524,7 @@
     "edition": "First Edition (1938)",
     "notes": "Manual post-Repeal de Bud Carroll.",
     "sectionCount": 2,
-    "recipeCount": 172,
+    "recipeCount": 170,
     "bookFile": "data/euvs-books/1938-the-art-of-bartending-and-mixing-drinks-by-bud-carroll.json"
   },
   {
@@ -4604,7 +4588,7 @@
     "edition": "Edition (1939)",
     "notes": "1939 La Florida edition.",
     "sectionCount": 2,
-    "recipeCount": 90,
+    "recipeCount": 89,
     "bookFile": "data/euvs-books/1939-cocktails-bar-la-florida-by-constante-ribalaigua-vert.json"
   },
   {
@@ -4620,7 +4604,7 @@
     "edition": "Edition (1939-2)",
     "notes": "1939-2 La Florida edition.",
     "sectionCount": 2,
-    "recipeCount": 86,
+    "recipeCount": 85,
     "bookFile": "data/euvs-books/1939-cocktails-bar-la-florida-by-constante-ribalaigua-vert-2.json"
   },
   {
@@ -4636,7 +4620,7 @@
     "edition": "Edition (1939)",
     "notes": "Floridita Cocktails (1939).",
     "sectionCount": 2,
-    "recipeCount": 93,
+    "recipeCount": 92,
     "bookFile": "data/euvs-books/1939-floridita-cocktails-by-constante-ribalaigua-vert.json"
   },
   {
@@ -4652,7 +4636,7 @@
     "edition": "Cocktail Manual",
     "notes": "Manual del icónico Sloppy Joe's Bar de La Habana — punto de encuentro de Hollywood (Hemingway, Sinatra) y políticos pre-Castro. José Abeal ('Sloppy Joe') llegó de España a Cuba en 1904 y, tras barman en La Habana, New Orleans y Miami, en 1918 vuelve y compra una grocery store que se transforma en el famoso bar. El nombre se lo puso un cliente americano viendo el agua que corría por debajo del mostrador ('Why, Joe, this place is certainly sloppy'). 84 recetas compiladas por su bartender principal Agustín Rios. Skeleton custom rebuilt con detector de cabecera centrada-mayúscula + verificación de bloque ingrediente; parser estructural extrae '1 Teaspoonful of X.', '2 oz. of Y.', 'Dash of Z.', 'The juice of a lime.', 'White/Yolk of an egg.', 'Leaves of Mint.', 'Shell of a lime.' (~88% recetas con ingredientes parseados).",
     "sectionCount": 2,
-    "recipeCount": 84,
+    "recipeCount": 83,
     "bookFile": "data/euvs-books/1939-sloppy-joes-bar.json"
   },
   {
@@ -4668,7 +4652,7 @@
     "edition": null,
     "notes": "",
     "sectionCount": 1,
-    "recipeCount": 43,
+    "recipeCount": 41,
     "bookFile": "data/euvs-books/1939-the-gentlemans-companion-volume-ii-an-exotic-drinking-book-by-charles-h-baker-jr.json"
   },
   {
@@ -4732,7 +4716,7 @@
     "edition": "First Edition (1943)",
     "notes": "Manual del bartender Oscar Haimo (Hotel Pierre, NYC). Foto en portada con Edward G. Robinson concoctando el MacArthur Cocktail (descrito por Walter Winchell como 'as zingy as its name'). Haimo trabajó en Fouquet's (Paris), Royalty Bar Monte Carlo, Ritz Paris, Embassy Club, Surf Club Miami Beach, Belgian Pavilion NY World's Fair, antes del Hotel Pierre. Format en dos columnas (NAME left, ingredients right). Skeleton custom con detector left-col-name + right-col-ingredient. 166 recetas; ~92% (152/166) parseado.",
     "sectionCount": 2,
-    "recipeCount": 166,
+    "recipeCount": 161,
     "bookFile": "data/euvs-books/1943-cocktail-digest-by-oscar-haimo-of-the-hotel-pierre.json"
   },
   {
@@ -4796,7 +4780,7 @@
     "edition": "First Edition (1945)",
     "notes": "Manual sindical de bartenders.",
     "sectionCount": 2,
-    "recipeCount": 35,
+    "recipeCount": 34,
     "bookFile": "data/euvs-books/1945-chicago-bartenders-and-beverage-dispensers-union.json"
   },
   {
@@ -4908,7 +4892,7 @@
     "edition": "2nd Ed (1948)",
     "notes": "Sequel post-WWII de la 1933 Bon Vivant's Companion.",
     "sectionCount": 2,
-    "recipeCount": 406,
+    "recipeCount": 388,
     "bookFile": "data/euvs-books/1948-the-bon-vivants-companion-by-george-a-zabriskie-2nd-edition.json"
   },
   {
@@ -4988,7 +4972,7 @@
     "edition": "1950",
     "notes": "Manual del barman publicado por Julio César Clavé en Buenos Aires (1950). 200 recetas extraídas mediante un heurístico Spanish-aware que detecta cabeceras del tipo 'NOMBRE:' (las recetas anteriores con el extractor inglés capturaron sólo 60 fragmentos, mayoritariamente artefactos del OCR). Las recetas siguen el patrón 'NOMBRE: ingrediente - ingrediente - ... - método - copa'. Algunos ingredientes pueden tener saltos de palabra por OCR (e.g., 'Ba- tido' → Batido). Recetas con OCR muy degradado conservan raw_text y un campo notes.",
     "sectionCount": 2,
-    "recipeCount": 200,
+    "recipeCount": 199,
     "bookFile": "data/euvs-books/1950-el-barman-practico-de-julio-cesar-clave.json"
   },
   {
@@ -5006,22 +4990,6 @@
     "sectionCount": 1,
     "recipeCount": 15,
     "bookFile": "data/euvs-books/1951-l-abc-per-miscelare-i-cocktails.json"
-  },
-  {
-    "id": "1954-anis-esprit-de-joie-et-de-sante-by-andre-montagard",
-    "year": 1954,
-    "decade": "1950s",
-    "title": "Anis: Esprit de Joie et de Santé",
-    "author": "André Montagard (poemas) y Roger Courteville (investigación científica)",
-    "language": "fr",
-    "languageName": "Francés",
-    "publisher": "Distilleries Ricard / Éditions Bendor",
-    "city": "Sainte-Marthe, Marsella",
-    "edition": "Edición ilustrada",
-    "notes": "Folleto poético-publicitario encargado por las Distilleries Ricard para celebrar el anís. No contiene recetas estructuradas: alterna poemas de André Montagard sobre la planta del anís (Illicium anisatum) y el regaliz (Glycyrrhiza glabra), referencias a Madame de Sévigné, Luis XV y la marquesa de Pompadour, e ilustraciones del Bureau d'Études et de Dessin de la Société Ricard (dibujos de Yermel y H. Couve, litografía de L. Dechaume, H. Couve y G. Potier). Impreso el 30 de diciembre de 1954 en las Presses des Distilleries Ricard, Sainte-Marthe, Marsella. Texto extraído por OCR Tesseract (fra).",
-    "sectionCount": 3,
-    "recipeCount": 0,
-    "bookFile": "data/euvs-books/1954-anis-esprit-de-joie-et-de-sante-by-andre-montagard.json"
   },
   {
     "id": "1955-tragos-magicos-by-pichin",
@@ -5052,7 +5020,7 @@
     "edition": "First Edition (1959)",
     "notes": "Manual latinoamericano de cocteles.",
     "sectionCount": 2,
-    "recipeCount": 155,
+    "recipeCount": 154,
     "bookFile": "data/euvs-books/1959-el-coctel-y-sus-derivados-por-fernando-gaviria.json"
   },
   {

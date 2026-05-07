@@ -88,51 +88,6 @@
       "order": 2,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
-      "name_original": "DRY",
-      "name_es": "Dry",
-      "yield": null,
-      "ingredients": [
-        {
-          "item_original": "Vermouth Mart",
-          "item_es": "Vermut Martini",
-          "amount": "0.667",
-          "unit": null,
-          "notes": null
-        },
-        {
-          "item_original": "Gordon's Dry Gin",
-          "item_es": "Gordon's Dry Gin",
-          "amount": "0.333",
-          "unit": null,
-          "notes": null
-        },
-        {
-          "item_original": "angostura",
-          "item_es": "Angostura",
-          "amount": "2",
-          "unit": "dash",
-          "notes": null
-        },
-        {
-          "item_original": "Zeste de citron",
-          "item_es": "piel de citron",
-          "amount": "1",
-          "unit": "piece",
-          "notes": null
-        }
-      ],
-      "method_original": null,
-      "method_es": null,
-      "glassware": "Tumbler",
-      "garnish": null,
-      "page_reference": null,
-      "raw_text": "DRY\n2/3 Vermouth Mart\n1/3 Gordon'e Dry Gin\n\n2 traits angostura Tumbler\nun Zeste de citron améliore son parfum"
-    },
-    {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-003",
-      "order": 3,
-      "section_title": "POUR LES COCKTAILS",
-      "category": "cocktail",
       "name_original": "Rubis",
       "name_es": "Rubis",
       "yield": null,
@@ -216,8 +171,8 @@
       "raw_text": "Rubis\n2/3 Rossi\n1/3 Gordon's Dry Gin Tumbler\nun zeste de citron améliore son parfum\n\nRubis _- Autre Recette\n\nge prépare et se sert directement dans le même verre\n\\ 1 gros glaçon\n| 1/3 Rossi\n| 1/3 Vermouth Martini\n1/3 Gordon's Dry Gin\nun large Zeste de citron améliore son parfum\n\n_— 15 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-004",
-      "order": 4,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-003",
+      "order": 3,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Martini",
@@ -261,8 +216,8 @@
       "raw_text": "Martini\n2/3 Gordon's DRY Gin\n1/3 Martini Vermouth DRY\n1 trait angostura\nZeste de citron Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-005",
-      "order": 5,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-004",
+      "order": 4,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Martini",
@@ -376,8 +331,8 @@
       "raw_text": "Martini\n2/3 Gordon's DRY Gin\n\n1/3 Noilly Prat\n\n1 trait angostura\n\nZeste de citron Tumbler\n\nrtini (doux)\n\n1/2 Gordon's DRY Gin\n1/2 Vermouth Martini\n1 trait angostura\nZeste de citron Tumbler\n\nBrandy\n3/4 Fine Martell\n\n1/4 Vermouth Martini DRY\n\n1 trait angostnra Passer Tumbler\n\nZeste de citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-006",
-      "order": 6,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-005",
+      "order": 5,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Bronx",
@@ -421,8 +376,8 @@
       "raw_text": "Bronx\n1/3 Gordon's Gin\n1/3 Noilly Prat\n\n1/3 Vermouth Martini Passer Shakers\nLe jus d'une 1/2 orange Zeste d'orange\n— 16 —\n\n|\n;"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-007",
-      "order": 7,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-006",
+      "order": 6,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Manhattan",
@@ -473,8 +428,8 @@
       "raw_text": "Manhattan\n1/2 Whisky Canadian\n1/4 Noilly Prat\n1/4 Vermouth Martini\n\n1 Trait angostura\n\nZeste de citron - Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-008",
-      "order": 8,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-007",
+      "order": 7,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Américano",
@@ -525,8 +480,8 @@
       "raw_text": "Américano\n1/2 Vermouth Martini\n1/2 Rossi\n\n2 Traits orange Bitter\n\n2 > angostura\nUn large Zeste de citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-009",
-      "order": 9,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-008",
+      "order": 8,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Canadian",
@@ -563,8 +518,8 @@
       "raw_text": "Canadian\n1/2 Canadian Whisky\n1/2 Noilly Pret\n\n2 Traits angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-010",
-      "order": 10,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-009",
+      "order": 9,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Paradis",
@@ -608,8 +563,8 @@
       "raw_text": "Paradis\n1/3 Gordon'e Gin\n1/3 Fine Martell\n\n1/3 Apricot Brandy\n\nLe jus d'une 1/2 orange"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-011",
-      "order": 11,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-010",
+      "order": 10,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Side-Car",
@@ -653,8 +608,8 @@
       "raw_text": "Side-Car\n1/2 fine Tricoche\n1/2 Cointreau\n3 traits curaçao blanc\nLe jus d'un 1/2 citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-012",
-      "order": 12,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-011",
+      "order": 11,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "White-Lady",
@@ -698,8 +653,8 @@
       "raw_text": "White-Lady\n1/2 Gordon's DRY Gin\n1/2 Cointreau\n3 traits curaçao blanc\nLe jus d'un 1/2 citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-013",
-      "order": 13,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-012",
+      "order": 12,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Ferrarrin",
@@ -750,8 +705,8 @@
       "raw_text": "Ferrarrin\n1/2 Gordon's DRY Gin\n\n1/4 Eau de vie de Danzig\n: (Gold Leaf) Marie Brizard\n\n1/4 Maraskin\nQuelques gouttes de noyaux de cerises"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-014",
-      "order": 14,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-013",
+      "order": 13,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Falstaff",
@@ -788,8 +743,8 @@
       "raw_text": "Falstaff\n1/3 Gordon's DRY Gin\n1/3 Cointreau\n\nLe jus d'un 1/2 citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-015",
-      "order": 15,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-014",
+      "order": 14,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Napoléon",
@@ -840,8 +795,8 @@
       "raw_text": "Napoléon\n1/3 Gordon'e DRY Gin\n\nJus d'orange\nGrand Marnier rouge\n\nP\n\nFinir champagne Bollinger\nLarge Zeste d'orange\n\nser Shakers\n\n_— 19 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-016",
-      "order": 16,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-015",
+      "order": 15,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Benito",
@@ -913,8 +868,8 @@
       "raw_text": "Benito\n1/3 Gordon's DRY Gin\n\n1/3 Abricot Brandy Marie Brizard\n\n1/3 Cherry ‘Rocher,\n\n2 traits orange Bitter Tumbler\n| Gin Cocktail\n\n3/4 Gordon's Dry Gin\n\n1/4 Noilly Prat\n\n1 trait angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-017",
-      "order": 17,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-016",
+      "order": 16,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Joséphine",
@@ -951,8 +906,8 @@
       "raw_text": "Joséphine\n1/3 Pernod\n\n1/3 Canadian club\n\n1/3 Noilly Prat Tumbler\n\nFinir avec 2 gouttes de grenadine sans remuer"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-018",
-      "order": 18,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-017",
+      "order": 17,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Mimosa",
@@ -982,8 +937,8 @@
       "raw_text": "Mimosa\n1/4 Gordon's DRY Gin\n1/4 jus d'orange\n1/2 chartreuse jaune Passer Shakers"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-019",
-      "order": 19,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-018",
+      "order": 18,
       "section_title": "POUR LES COCKTAILS",
       "category": "cocktail",
       "name_original": "Exprinter",
@@ -1027,8 +982,8 @@
       "raw_text": "Exprinter\n1/2 Gordon's DRY Gin\n2/3 Punch suédois\n1 trait angostura\n\n2 gouttes de grenadine\nPasser Shakers - Zeste d'oanger"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-020",
-      "order": 20,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-019",
+      "order": 19,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Maidens Prayer",
@@ -1065,8 +1020,8 @@
       "raw_text": "Maidens Prayer\n1/2 Rhum Charleston\n1/4 Menthe verte\n1/4 jus de citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-021",
-      "order": 21,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-020",
+      "order": 20,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Miramar",
@@ -1117,8 +1072,8 @@
       "raw_text": "Miramar\n122 Gordon's DRY Gin\n1/4 Vermouth Martini DRY\n1/4 Dubonnet\n\n1 trait Angostura\nZeste d'orange - Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-022",
-      "order": 22,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-021",
+      "order": 21,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Macca",
@@ -1169,8 +1124,8 @@
       "raw_text": "Macca\nse prépare et se sert directement dans le même\nverre avec un glaçon et un large Zeste de citron.\n1/4 Gordon's DRY Gin\n\n1/4 Rossi\n\n1/2 Vermouth Martini"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-023",
-      "order": 23,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-022",
+      "order": 22,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Baccardi",
@@ -1207,8 +1162,8 @@
       "raw_text": "Baccardi\n1/3 Dry Gordon Gin\n23 Ron Baccardi\n1/4 jus de citron\n3 traits de grenadine Passer Shakers"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-024",
-      "order": 24,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-023",
+      "order": 23,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Gin and Vermouth",
@@ -1259,8 +1214,8 @@
       "raw_text": "Gin and Vermouth\n1/2 Gordon's Gin\n1/2 Cinzano\n1 trait d'angostura\nsouvent demandé sous le nom de G. V.\n\n— 21 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-025",
-      "order": 25,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-024",
+      "order": 24,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Joungma",
@@ -1311,8 +1266,8 @@
       "raw_text": "Joungma\nEATIO? . BAR NAPOLEON PARIS\n‘1/2 fine Marteli\n1/2 Cinzano\n1 trait angostura\nZeste de citron - Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-026",
-      "order": 26,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-025",
+      "order": 25,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Sport",
@@ -1363,8 +1318,8 @@
       "raw_text": "Sport\n1/2 Gordon's Gin «\n1/4 Cinzano\n1/4 Campari\n1 trait angostura\nGarnir une cerise Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-027",
-      "order": 27,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-026",
+      "order": 26,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Cirio’s Cocktail",
@@ -1415,8 +1370,8 @@
       "raw_text": "Cirio’s Cocktail\n1/2 Vermouth Gancia\n1/2 Cinzano\n2 traits angostura Zeste de citron -, Tumbler\n\n— 23 —\n\n\n— 24 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-028",
-      "order": 28,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-027",
+      "order": 27,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Old Man",
@@ -1453,8 +1408,8 @@
       "raw_text": "Old Man\n1/2 Whisky Me. Nish\n1/2 Cinzano\n1 trait angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-029",
-      "order": 29,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-028",
+      "order": 28,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Pink Lady",
@@ -1498,8 +1453,8 @@
       "raw_text": "Pink Lady\n1/2 Gordon'e Gin\n1/2 Grand Marnier rouge\nGarnir une cerise\n\n“‘Pink,, œillet couleur de rose"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-030",
-      "order": 30,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-029",
+      "order": 29,
       "section_title": "Old Fashion",
       "category": "cocktail",
       "name_original": "Alasca",
@@ -1536,8 +1491,8 @@
       "raw_text": "Alasca\n2/3 Gordon's Dry Gin\n1/3 Chartreuse jaune\n1 trait orange Bitter"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-031",
-      "order": 31,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-030",
+      "order": 30,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Gin and French",
@@ -1574,8 +1529,8 @@
       "raw_text": "Gin and French\n1/2 Gordon's Gin\n1/2 Noilly Prat\n1 trait angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-032",
-      "order": 32,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-031",
+      "order": 31,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Fernet - Branca",
@@ -1619,8 +1574,8 @@
       "raw_text": "Fernet - Branca\n2/3 Fernet-Branca\n1/3 Cinzano\n“Fernet-Branca,, Bitter italien très dur\n\n— 28 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-033",
-      "order": 33,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-032",
+      "order": 32,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Old Tom",
@@ -1657,8 +1612,8 @@
       "raw_text": "Old Tom\n2/3 Whisky Robertson\n1/8 Vermouth Martini DRY\n2 traite angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-034",
-      "order": 34,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-033",
+      "order": 33,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Perfect",
@@ -1702,8 +1657,8 @@
       "raw_text": "Perfect\n2/3 Whisky Me Nish'e\n1/3 Noilly Prat\n1 trait angostura\n\n1 trait orange Bitter"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-035",
-      "order": 35,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-034",
+      "order": 34,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Fifty-Hifty",
@@ -1740,8 +1695,8 @@
       "raw_text": "Fifty-Hifty\n1/2 Whisky Me Nish'o\n1/2 Burnett Dry Gin\n\n2 traits angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-036",
-      "order": 36,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-035",
+      "order": 35,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Shangai",
@@ -1792,8 +1747,8 @@
       "raw_text": "Shangai\nEt es\n1/3 Chartreuse jaune\n1/3 Grand Marnier rouge\n1/3 Burnett Dry Gin\n\n— 31 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-037",
-      "order": 37,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-036",
+      "order": 36,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Campari Cocktail",
@@ -1837,8 +1792,8 @@
       "raw_text": "Campari Cocktail\n1/2 Campa\n\n1/2 Burnett Dry Gin\n1 trait angostura\n\nZeste d'orange - Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-038",
-      "order": 38,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-037",
+      "order": 37,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Swiss Cocktail",
@@ -1875,8 +1830,8 @@
       "raw_text": "Swiss Cocktail\n1/2 Pernod\n1/2 Suze gentiane\n1 trait angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-039",
-      "order": 39,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-038",
+      "order": 38,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Mountainers",
@@ -1906,8 +1861,8 @@
       "raw_text": "Mountainers\n2/3 fine Tricoche\n1/3 essence de café"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-040",
-      "order": 40,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-039",
+      "order": 39,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Knickerbocker",
@@ -1965,8 +1920,8 @@
       "raw_text": "Knickerbocker\nRhum charleston\n\nLiqueur de framboise\n\nLe jus d'un 1/2 citron\n\nse prépare et se sert directement dans un verre à\nvin avec glace pillée.\n\nRemuer Zeste de citron\nServir avec pailles"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-041",
-      "order": 41,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-040",
+      "order": 40,
       "section_title": "COCKTAILS",
       "category": "cocktail",
       "name_original": "Green Star",
@@ -2003,8 +1958,8 @@
       "raw_text": "Green Star\nDans un verre à vin\n\nLe jus d'une orange\nPippermint ‘Get,"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-042",
-      "order": 42,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-041",
+      "order": 41,
       "section_title": "Champagne Charles Heidsieck",
       "category": "cocktail",
       "name_original": "Piccadilly",
@@ -2048,8 +2003,8 @@
       "raw_text": "Piccadilly\n1/3 Curaçao rouge Foekink\n1/3 Cherry Peter Heering\n1/3 Noilly Prat\n1 trait angostura"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-043",
-      "order": 43,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-042",
+      "order": 42,
       "section_title": "Champagne Charles Heidsieck",
       "category": "cocktail",
       "name_original": "Sloe Gin Cocktail",
@@ -2107,8 +2062,8 @@
       "raw_text": "Sloe Gin Cocktail\n2/3 Sloe Gordon's\n\n1/3 Noilly Prat\n\n1 trait angostura Tumbler\n\n“*Sloe Gordon's Gin,, eau de vie de grain pur à la\n\nprunelle.\n\n— 33 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-044",
-      "order": 44,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-043",
+      "order": 43,
       "section_title": "Champagne Charles Heidsieck",
       "category": "other",
       "name_original": "Drop-Rickey",
@@ -2208,8 +2163,8 @@
       "raw_text": "Drop-Rickey\n1/3 Gordon'e Dry Gin\n1/8 Sherry Peter Heering\n1/8 Sherry Sandeman\n\n2 traite Pippermint Get\n\nd. Cocktail\n2/3 mjsd\n1/3 Gordon Gin\n\n1 trait angostura\nZeste d'orange - Tumbler\n\n‘’Mjëd,, Vin généreux à l'Hydromel provenance Suédoise\n\nHalf and Half\n\n1/2 Dry Gin, Burnett\n1/2 Jus d'orange"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-045",
-      "order": 45,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-044",
+      "order": 44,
       "section_title": "Champagne Charles Heidsieck",
       "category": "cocktail",
       "name_original": "Pompéi Cocktail",
@@ -2260,8 +2215,8 @@
       "raw_text": "Pompéi Cocktail\n2/3 ‘*Lacryma-Ch:\n1/3 Vermouth Marti:\n1 trait orange bitter\n\nlarge Zeste d'orange - Tumbler\n“‘Lacryma-Chrieti,, célèbre vin de Muscat."
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-046",
-      "order": 46,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-045",
+      "order": 45,
       "section_title": "Champagne Charles Heidsieck",
       "category": "cocktail",
       "name_original": "Dubonnet-Cocktail",
@@ -2319,8 +2274,8 @@
       "raw_text": "Dubonnet-Cocktail\n2/3 Dubonnet\n\n1/3 Dry Gin Burnett\n1 trait absinthe\n1 trait anisette\n\nZeste de”citron - Tumbler\n\n— 37 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-047",
-      "order": 47,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-046",
+      "order": 46,
       "section_title": "Finir Champagne Charles Heï",
       "category": "cocktail",
       "name_original": "Eye Opener",
@@ -2371,8 +2326,8 @@
       "raw_text": "Eye Opener\n1/2 Rhum\n1/4 Kirsch\n1/4 Curaçao\n1 jaune d'œuf\n2 cuillères de suere"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-048",
-      "order": 48,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-047",
+      "order": 47,
       "section_title": "Finir Champagne Charles Heï",
       "category": "cocktail",
       "name_original": "Gin Burnett Dry",
@@ -2409,8 +2364,8 @@
       "raw_text": "Gin Burnett Dry\nVermouth martini Dry\nLe jus d'un 1/4 citron\n1 cuillère sucre"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-049",
-      "order": 49,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-048",
+      "order": 48,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Dream",
@@ -2447,8 +2402,8 @@
       "raw_text": "Dream\n1/3 Marie Brizard Curaçao\n2/3 Cognac Martell\nQuelques traits anisette Marie Brirard"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-050",
-      "order": 50,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-049",
+      "order": 49,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Apry",
@@ -2485,8 +2440,8 @@
       "raw_text": "Apry\n1/3 Marie Brizard Apry\n2/3 Gordon'e Gin\nLe jus d'un 1/4 citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-051",
-      "order": 51,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-050",
+      "order": 50,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "K Alexander",
@@ -2523,8 +2478,8 @@
       "raw_text": "K Alexander\n1/3 Marie Brizard crème de cacao\n1/3 Dry Gordon Gin\n1/3 Crème fraîche"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-052",
-      "order": 52,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-051",
+      "order": 51,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Old Faithful",
@@ -2568,8 +2523,8 @@
       "raw_text": "Old Faithful\n1/4 Marie Brizard Apry\n3/4 Rye Whickey\n\nMarie Brizard Crème de Cacao ie also prefe:\nnable cocktails, particularly in the ‘’Alerander,,"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-053",
-      "order": 53,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-052",
+      "order": 52,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Between-The-Sheets",
@@ -2606,8 +2561,8 @@
       "raw_text": "Between-The-Sheets\n1/3 Marie Brizard Rhum Charleston\n1/3 Marie Brizard Curaçao triple-sec (orange)\n1/3 Cognac Brandy"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-054",
-      "order": 54,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-053",
+      "order": 53,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Stinger",
@@ -2658,8 +2613,8 @@
       "raw_text": "Stinger\n(A Perfect After-Dinner Cocktail)\n1/4 Marie Brizard Crème de Menthe, white\n3/4 Cognac Brandy\nIce : shake well, strain äinto\nCocktail glass"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-055",
-      "order": 55,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-054",
+      "order": 54,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Mele Cassis",
@@ -2738,8 +2693,8 @@
       "raw_text": "Mele Cassis\n1/2 Marie Brizard Blackberry Cordial\n\n1/2 Cognac Brandy\nShake well with Ice ; strain\ninto short Highball glass\n\nMenthe\n1/2 Marie Brizard Crème de Menthe\n1/2 Dry Gin\nShake well with Ice ; strain\ninto chilled Cocktail glass"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-056",
-      "order": 56,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-055",
+      "order": 55,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Apple Jack",
@@ -2790,8 +2745,8 @@
       "raw_text": "Apple Jack\n2/3 Apricot Marie Brizard\n\n1/3 Gordon's Dry Gin\n\nLe jus d'un 1/4 de citron\n\n2 traits de grenadine\n\nQuelques tranches de pomme, Fruit escalopé"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-057",
-      "order": 57,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-056",
+      "order": 56,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Mariani Cocktail",
@@ -2835,8 +2790,8 @@
       "raw_text": "Mariani Cocktail\n2/3 Vin de Mariani\n1/3 Cinzano\n1 Trait orange bitter\nZeste d'orange"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-058",
-      "order": 58,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-057",
+      "order": 57,
       "section_title": "FAMOUS RECIPES",
       "category": "cocktail",
       "name_original": "Lady Diana Cocktail",
@@ -2894,8 +2849,8 @@
       "raw_text": "Lady Diana Cocktail\n2/3 Bénédictine\n1/4 Gin Burnett Dry\n1/4 Noilly Prat Z\n\nte de citron - Tumbler\n\n— 49 —\n\nTout Bar de premier ordre doit avoir :"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-059",
-      "order": 59,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-058",
+      "order": 58,
       "section_title": "Vintage Champagne",
       "category": "cocktail",
       "name_original": "Côte Basque",
@@ -2939,8 +2894,8 @@
       "raw_text": "Côte Basque\n1/2 Gordon's Gin\n\n1/4 Cointreau\n\n1/4 Sherry Rocher\n\nQuelques gouttes de citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-060",
-      "order": 60,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-059",
+      "order": 59,
       "section_title": "Champagne Cobbler",
       "category": "cocktail",
       "name_original": "Clover Club",
@@ -2991,8 +2946,8 @@
       "raw_text": "Clover Club\n“Club du Trèfle,,\n\nun blanc d'œuf\nLe jus d'un 1/4 citron\n\n3/4 Gin BURNETT DRY\n\n1/4 Cinzano\n\nLégèrement grenadine Passer Shakers\nFinir champagne Ernest Irroy"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-061",
-      "order": 61,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-060",
+      "order": 60,
       "section_title": "Soyer au Champagne",
       "category": "cocktail",
       "name_original": "Miami",
@@ -3043,8 +2998,8 @@
       "raw_text": "Miami\nDans un verre à Vin\n\nLe jus d'une 1/2 orange\n\n1/2 Champagne Bollinger\n\n12 Moselle\n\nGarnir d'une tranche d'orange"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-062",
-      "order": 62,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-061",
+      "order": 61,
       "section_title": "Soyer au Champagne",
       "category": "cocktail",
       "name_original": "Maïitrank",
@@ -3095,8 +3050,8 @@
       "raw_text": "Maïitrank\n1/2 Champagne Bollinger\n\n1/2 Moselle\n\nUne cuillère de Sherry Rossel\nGarnir d'une tranche d'orange\n\nBrandy Smack ©"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-063",
-      "order": 63,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-062",
+      "order": 62,
       "section_title": "Soyer au Champagne",
       "category": "cocktail",
       "name_original": "Horse Neck",
@@ -3119,8 +3074,8 @@
       "raw_text": "Horse Neck\nDans un verre 1/2 mousseline"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-064",
-      "order": 64,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-063",
+      "order": 63,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "White Lady Cocktail",
@@ -3157,8 +3112,8 @@
       "raw_text": "White Lady Cocktail\n1/6 cognac Hennessy\n\n1/6 crème de menthe blanche\n\n2/3 Curaçao blanc triple sec Fockink"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-065",
-      "order": 65,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-064",
+      "order": 64,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "Blanche Cocktail",
@@ -3195,8 +3150,8 @@
       "raw_text": "Blanche Cocktail\n1/3 Curaçao blanc triple sec Fockink\n1/3 Anisette\n1/3 Curaçao blanc Fockink"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-066",
-      "order": 66,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-065",
+      "order": 65,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "Express Cocktail",
@@ -3233,8 +3188,8 @@
       "raw_text": "Express Cocktail\n12 cognac Hennessy\n1/2 vieux genièvre Fockink\n4 traits angostura Tumbler"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-067",
-      "order": 67,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-066",
+      "order": 66,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "Home Cocktail",
@@ -3271,8 +3226,8 @@
       "raw_text": "Home Cocktail\nLe jus d'un 1/2 citron =\n1/8 Curaçao blanc Fockink\n1/3 vermouth français"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-068",
-      "order": 68,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-067",
+      "order": 67,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "Moraing Cocktail",
@@ -3323,8 +3278,8 @@
       "raw_text": "Moraing Cocktail\n1/8 Cherry Brandy\n\n1/8 Curaçao orange Fockink\n1/4 Cognac\n\n1/2 Vermouth italien\n\n3 traits angostura Bitter"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-069",
-      "order": 69,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-068",
+      "order": 68,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "Summit Cocktail",
@@ -3361,8 +3316,8 @@
       "raw_text": "Summit Cocktail\n1/4 jus de citron\n1/4 Curaçao orange Fockink\n1/2 Cognac"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-070",
-      "order": 70,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-069",
+      "order": 69,
       "section_title": "Pousse Café",
       "category": "cocktail",
       "name_original": "Soda Cocktail",
@@ -3392,8 +3347,8 @@
       "raw_text": "Soda Cocktail\nSe prépare et se sert directement dans verre gobelet :\nUn 1/2 morceau de sucre fortement imbibé d'angostura\nBitter remplir avec Tonic Soda Water, garnir une\ntranche citron\n\n— 62 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-071",
-      "order": 71,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-070",
+      "order": 70,
       "section_title": "CHAMPAGNE",
       "category": "fizz",
       "name_original": "Absinthe KFizz",
@@ -3430,8 +3385,8 @@
       "raw_text": "Absinthe KFizz\nAbsinthe\nLe jus d'un 1/2 citron\nSucre en -poudre"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-072",
-      "order": 72,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-071",
+      "order": 71,
       "section_title": "Pousse Café",
       "category": "other",
       "name_original": "Gin Bickey",
@@ -3489,8 +3444,8 @@
       "raw_text": "Gin Bickey\nDans un grand verre :\n\n1 morceau de glace\n\nle jus d'un demi-citron\n\n1 verre de Gordon's Dry Gin\n\n2e\n\n— 67 —"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-073",
-      "order": 73,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-072",
+      "order": 72,
       "section_title": "Pousse Café",
       "category": "other",
       "name_original": "Lemon Squash",
@@ -3527,8 +3482,8 @@
       "raw_text": "Lemon Squash\nDans un verre 1/2 mousseline plein de glace pillée :\nle jus d'un citron\n\nsucre en poudre\n\nremplir eau de seltz\n\ngarnir une tranche de citron"
     },
     {
-      "id": "1935-le-bar-american-cocktails-by-george-pillaert-074",
-      "order": 74,
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-073",
+      "order": 73,
       "section_title": "Pousse Café",
       "category": "other",
       "name_original": "Orange Squash",
