@@ -1,0 +1,1408 @@
+{
+  "book_id": "1934-irvin-s-cobbs-own-recipe-book",
+  "metadata": {
+    "title": "Irvin S. Cobb's Own Recipe Book — 78 Famous Drinks + Rollicking Dissertation on King Bourbon",
+    "author": "Irvin S. Cobb (Colonel, 'born and bred in ol' Kaintucky')",
+    "year": 1934,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Frankfort Distilleries, Incorporated",
+    "city": "Louisville and Baltimore",
+    "edition": "First Edition (1934, post-Repeal)",
+    "source_file": "1934 Irvin S Cobb's own Recipe Book.txt",
+    "notes": "Folleto promocional de Frankfort Distilleries (Paul Jones, Four Roses) escrito por el humorista Irvin S. Cobb (autor de 'Red Likker'). 78 recetas en formato 'NAME: ingredient1, ingredient2,...' embebidas en una 'rollicking dissertation' sobre el bourbon. Discurso satírico de Lincoln en epígrafe. Skeleton custom rebuilt detectando 'NAME: body' patterns. ~81% (38/47) recetas con ingredientes parseados (algunos con OCR truncated por el texto pícaro)."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Mint Julep dissertation",
+      "title_es": "Prefacio + disertación sobre el Mint Julep",
+      "content_original": "Frankfort Distilleries (Paul Jones, Four Roses) presenta este folleto del humorista Irvin S. Cobb. Cobb 'born and bred in ol' Kaintucky', autor de 'Red Likker' (best whiskey-making story in American literature según el publicista). Open con cita de Abraham Lincoln. Disertación sobre el Mint Julep como 'queen mother of all infusions', con anécdotas regionales (Kentucky vs Maryland vs Yankee 'criminals' que añaden nuez moscada o peppermint). 78 recetas embebidas.",
+      "content_es": "Frankfort Distilleries (Paul Jones, Four Roses) publica este folleto del humorista Irvin S. Cobb (autor de 'Red Likker'). Cita de Lincoln en epígrafe. Disertación sobre el Mint Julep con anécdotas regionales sobre las herejías yanquis."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Recipes",
+      "title_es": "Recetas",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-001",
+      "order": 1,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "ALEXANDER",
+      "name_es": "Alexander",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones four star gin",
+          "item_es": "ginebra Paul Jones Four Star",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacao",
+          "item_es": "crème de cacao",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sweet",
+          "item_es": "sweet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALEXANDER: ¥.i Paul Jones Four Star Gin, ¥.i Creme de Cacao, ¥.i Sweet"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-002",
+      "order": 2,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "RUM",
+      "name_es": "Rum",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cuban-type rum",
+          "item_es": "ron tipo cubano",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "juice of 1 lime",
+          "item_es": "zumo de 1 lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "2 dashes Grenadine. Shake well with cracked ice and strain. More popular in Cuba than revolutions",
+      "method_es": "2 dashes Grenadine. Shake well with cracked ice and strain. More popular in Cuba than revolutions",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM: 1 jigger Cuban-type Rum, juice of 1 Lime, 2 dashes Grenadine. Shake well with cracked ice and strain. More popular in Cuba than revolutions."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-003",
+      "order": 3,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "BLINKER",
+      "name_es": "Blinker",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones or four roses whiskey",
+          "item_es": "whisky Paul Jones o Four Roses",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grapefruit",
+          "item_es": "pomelo",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLINKER: 1 jigger Paul Jones or Four Roses Whiskey, % jigger Grapefruit"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-004",
+      "order": 4,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "BLUE BLAZER",
+      "name_es": "Blue Blazer",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Use 2 large\" silver mugs with handles. Into one mug put 1 glass Paul Jones or Antique Whiskey; into the other mug mix both ingredients by pouring them from one mug to the other four or five times. Sweeten with 1 teaspoon",
+      "method_es": "Use 2 large\" silver mugs with handles. Into one mug put 1 glass Paul Jones or Antique Whiskey; into the other mug mix both ingredients by pouring them from one mug to the other four or five times. Sweeten with 1 teaspoon",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BLUE BLAZER: Use 2 large\" silver mugs, with handles. Into one mug put 1 glass Paul Jones or Antique Whiskey; into the other mug, put 1 glass boiling water. Ignite the whiskey and· while blazing, mix both ingredients by pouring them from one mug to the other four or five times. Sweeten with 1 teaspoon",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-005",
+      "order": 5,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "BRONX",
+      "name_es": "Bronx",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones four star gin",
+          "item_es": "ginebra Paul Jones Four Star",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian ver- 39 mouth",
+          "item_es": "italian ver- 39 mouth",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice. shake well with cracked ice and strain. history credits",
+          "item_es": "orange juice. shake well with cracked ice and strain. history credits",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRONX: 1h Paul Jones Four Star Gin, % French Vermouth, % Italian Ver- 39 mouth,% Orange Juice. Shake well with cracked ice and strain. History credits"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-006",
+      "order": 6,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE",
+      "name_es": "Champagne",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "1 cube of ice. Fill up with Champagne. And don't let 'em dump a lot of fruit in it for you",
+      "method_es": "1 cube of ice. Fill up with Champagne. And don't let 'em dump a lot of fruit in it for you",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE: 1 lump Sugar, 1 dash Angostura Bitters, 1 piece Lemon Peel, 1 cube of ice. Fill up with Champagne. And don't let 'em dump a lot of fruit in it for you."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-007",
+      "order": 7,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB",
+      "name_es": "Clover Club",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones four star gin",
+          "item_es": "ginebra Paul Jones Four Star",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB: % Paul Jones Four Star Gin, % Grenadine, % Lime Juice, . white of 1 Egg. Shake well with cracked ice and strain. Born at the Bellevue-"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-008",
+      "order": 8,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "COMMODORE",
+      "name_es": "Commodore",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "juice of 1h lime or ~ lemon",
+          "item_es": "zumo de 1h lime or ~ limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "1 glass Paul Jones or Four Roses Whiskey. Shake well with cracked ice and strain. !IVorthy of Commodore Paul Jones",
+      "method_es": "1 glass Paul Jones or Four Roses Whiskey. Shake well with cracked ice and strain. !IVorthy of Commodore Paul Jones",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "COMMODORE: 1 teaspoon Syrup, 2 dashes Orange Bitters, Juice of 1h Lime or ~ Lemon, 1 glass Paul Jones or Four Roses Whiskey. Shake well with cracked ice and strain. !IVorthy of Commodore Paul Jones, who didn't invent it. He preferred his liquor straight."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-009",
+      "order": 9,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "DE RIGEUR",
+      "name_es": "De Rigeur",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones or four roses whiskey",
+          "item_es": "whisky Paul Jones o Four Roses",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grapefruit juice",
+          "item_es": "zumo de pomelo",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "1 teaspoon Honey. Shake well with cracked ice and strain. A Prohibition inve~tion. I don:.; go for it",
+      "method_es": "1 teaspoon Honey. Shake well with cracked ice and strain. A Prohibition inve~tion. I don:.; go for it",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DE RIGEUR: % Paul Jones or Four Roses Whiskey, 1h Grapefruit Juice, 1 teaspoon Honey. Shake well with cracked ice and strain. A Prohibition inve~tion. I don:.; go for it."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-010",
+      "order": 10,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "DIXIE WHISKEY",
+      "name_es": "Dixie Whiskey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones or four roses whiskey",
+          "item_es": "whisky Paul Jones o Four Roses",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DIXIE WHISKEY: 4 glasses Paul Jones or Four Roses Whiskey, ~ teaspoon"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-011",
+      "order": 11,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "DUBONNET",
+      "name_es": "Dubonnet",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dubonnet",
+          "item_es": "dubonnet",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "paul jones four star gin. stir with cracked 40 ice",
+          "item_es": "paul jones four star gin. stir with cracked 40 ice",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "strain and add twist of Lemon Peel. One of the world's best appetize1·s. I heartily endorse it",
+      "method_es": "strain and add twist of Lemon Peel. One of the world's best appetize1·s. I heartily endorse it",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DUBONNET: 1h Dubonnet, 1h Paul Jones Four Star Gin. Stir with cracked 40 ice, strain and add twist of Lemon Peel. One of the world's best appetize1·s. I heartily endorse it."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-012",
+      "order": 12,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "ED DEXTER",
+      "name_es": "Ed Dexter",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "four roses or paul jones whiskey",
+          "item_es": "four roses or paul jones whiskey",
+          "amount": "0.667",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ED DEXTER: % glass Four Roses or Paul Jones Whiskey, 2 dashes Curacao."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-013",
+      "order": 13,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "JACK ROSE",
+      "name_es": "Jack Rose",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "% Applejack. Shake with cracked ice and strain. So named because its color is that of the f acq11emot Rose",
+      "method_es": "% Applejack. Shake with cracked ice and strain. So named because its color is that of the f acq11emot Rose",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK ROSE: % Lime Juice, % Grenadine, % Applejack. Shake with cracked ice and strain. So named because its color is that of the f acq11emot Rose."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-014",
+      "order": 14,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "MAMIE TAYLOR",
+      "name_es": "Mamie Taylor",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1h lime",
+          "item_es": "zumo de 1h lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "paul jones or four roses",
+          "item_es": "paul jones or four roses",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MAMIE TAYLOR: Juice of 1h Lime, 1 jigger Paul Jones or Four Roses"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-015",
+      "order": 15,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "MANHATTAN (DRY)",
+      "name_es": "Manhattan (Dry)",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "four roses or paul jones whiskey",
+          "item_es": "four roses or paul jones whiskey",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MANHATTAN (DRY): % Four Roses or Paul Jones Whiskey, 11.i Italian"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-016",
+      "order": 16,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "MOUNTAIN",
+      "name_es": "Mountain",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paal jones or four roses whiskey",
+          "item_es": "paal jones or four roses whiskey",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MOUNTAIN: White of 1 Egg, 1h Paal Jones or Four Roses Whiskey, % Lemon"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-017",
+      "order": 17,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "OLD-FASHIONED WHISKEY",
+      "name_es": "Old-Fashioned Whiskey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angoscura",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OLD-FASHIONED WHISKEY: One-half piece Sugar, 2             dashes Angoscura"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-018",
+      "order": 18,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "ORANGE BLOSSOM",
+      "name_es": "Orange Blossom",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1h orange",
+          "item_es": "zumo de 1h naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORANGE BLOSSOM: 11h jiggers Paul Jones Four Star Gin, juice of 1h Orange."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-019",
+      "order": 19,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "ORIENTAL",
+      "name_es": "Oriental",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones or four roses whiskey",
+          "item_es": "whisky Paul Jones o Four Roses",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "% Lime Juice. Shake well with cracked ice and strain. Then grab a shawl and go into your dance",
+      "method_es": "% Lime Juice. Shake well with cracked ice and strain. Then grab a shawl and go into your dance",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORIENTAL: 1h Paul Jones or Four Roses Whiskey, ~ Italian Vermouth, % Curacao, % Lime Juice. Shake well with cracked ice and strain. Then grab a shawl and go into your dance."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-020",
+      "order": 20,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "PINK LADY",
+      "name_es": "Pink Lady",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PINK LADY: White of 1 Egg, 1 tablespoon Grenadine, 11h jiggers Paul"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-021",
+      "order": 21,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "RYE WHISKEY",
+      "name_es": "Rye Whiskey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "paul jones or four roses rye. stir well with cracked ice",
+          "item_es": "paul jones or four roses rye. stir well with cracked ice",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "strain and serve with Cherry. This is the daddy of all whiskey cocktails",
+      "method_es": "strain and serve with Cherry. This is the daddy of all whiskey cocktails",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RYE WHISKEY: 1 dash Angostura Bitters, 4 dashes Syrup, 1 glass Paul Jones or Four Roses Rye. Stir well with cracked ice, strain and serve with Cherry. This is the daddy of all whiskey cocktails."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-022",
+      "order": 22,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "SAZERAC",
+      "name_es": "Sazerac",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SAZERAC: Dissolve 1 lump of Sugar in a teaspoonful of Water. 1 dash",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-023",
+      "order": 23,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "SIDECAR",
+      "name_es": "Sidecar",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "lf.i Brandy. Shake well with cracked ice and strain. One of America's best loved compounds. I'",
+      "method_es": "lf.i Brandy. Shake well with cracked ice and strain. One of America's best loved compounds. I'",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SIDECAR: lf.i Lemon Juice, % Cointreau, lf.i Brandy. Shake well with cracked ice and strain. One of America's best loved compounds. I'"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-024",
+      "order": 24,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "STINGER",
+      "name_es": "Stinger",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "white creme de menthe",
+          "item_es": "white creme de menthe",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "% Brandy. Shake well with cracked ice and strain. JJV bile classified as a cocktail served in place of a liqueur",
+      "method_es": "% Brandy. Shake well with cracked ice and strain. JJV bile classified as a cocktail served in place of a liqueur",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "STINGER: % White Creme de Menthe, % Brandy. Shake well with cracked ice and strain. JJV bile classified as a cocktail, this is really an after-dinner drink, served in place of a liqueur."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-025",
+      "order": 25,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "SWISS FAMILY",
+      "name_es": "Swiss Family",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french",
+          "item_es": "french",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SWISS FAMILY: 2 dashes Pernod, 2 dashes Angostura Bitters, % French"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-026",
+      "order": 26,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "WHISKEY SPECIAL",
+      "name_es": "Whiskey Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.667",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "strain and serve with an Olive. JP-hen the above six 43 people begin to look like twelve people",
+      "method_es": "strain and serve with an Olive. JP-hen the above six 43 people begin to look like twelve people",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY SPECIAL: ( 6 people) 3 glasses Paul Jones or Four Roses Whiskey, 2 glasses French Vermouth, % glass Orange Juice, dash of Nutmeg. Shake well with cracked ice, strain and serve with an Olive. JP-hen the above six 43 people begin to look like twelve people, it is then time to q11it serving this"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-027",
+      "order": 27,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "GINGER ALE HIGHBALL",
+      "name_es": "Ginger Ale Highball",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GINGER ALE HIGHBALL: Made as above, using any Frankfort Distilleries",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-028",
+      "order": 28,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "POKER HIGHBALL",
+      "name_es": "Poker Highball",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "POKER HIGHBALL: Put three lumps of ice in each of four 24-oz. glasses.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-029",
+      "order": 29,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "GIN FIZZ",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1h lemon",
+          "item_es": "zumo de 1h limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "paul",
+          "item_es": "paul",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZZ: Juice of 1h Lemon, 1h tablespoon Powdered Sugar, 1 jigger Paul"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-030",
+      "order": 30,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "GOLDEN FIZZ",
+      "name_es": "Golden Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "adding Yolk of 1 Egg",
+      "method_es": "adding Yolk of 1 Egg",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GOLDEN FIZZ: Same as Gin Fizz, adding Yolk of 1 Egg.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-031",
+      "order": 31,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "IMPERIAL HOTEL FIZZ",
+      "name_es": "Imperial Hotel Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "paul jones or four roses",
+          "item_es": "paul jones or four roses",
+          "amount": "0.667",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IMPERIAL HOTEL FIZZ: lf.i Jamaica Rum, % Paul Jones or Four Roses"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-032",
+      "order": 32,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "MORNING GLORY FIZZ",
+      "name_es": "Morning Glory Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1h lemon",
+          "item_es": "zumo de 1h limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pernod",
+          "item_es": "pernod",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "four roses or paul jones whiskey",
+          "item_es": "four roses or paul jones whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MORNING GLORY FIZZ: Juice of 1h Lemon, 1h tablespoon Powdered Sugar, white of 1 Egg, 2 dashes Pernod, 1 jigger Four Roses or Paul Jones Whiskey."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-033",
+      "order": 33,
+      "section_title": "Recipes",
+      "category": "fizz",
+      "name_original": "NEW ORLEANS FIZZ",
+      "name_es": "New Orleans Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1h lemon",
+          "item_es": "zumo de 1h limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "paul jones four star gin",
+          "item_es": "ginebra Paul Jones Four Star",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sweet cream. shake well with cracked ice",
+          "item_es": "sweet cream. shake well with cracked ice",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "strain into small highball g ass fill with carbonated water. This edifying delicacy o .iginated at the famous old Ramos bar in New Orleans. If you shake it as the ba1·-boys",
+      "method_es": "strain into small highball g ass fill with carbonated water. This edifying delicacy o .iginated at the famous old Ramos bar in New Orleans. If you shake it as the ba1·-boys",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW ORLEANS FIZZ: Juice of 1h Lemon, 1h tablespoon Powdered Sugar, white of 1 Egg, 1 jigger Paul Jones Four Star Gin, dash of Orange Juice, 1 tablespoon Sweet Cream. Shake well with cracked ice, strain into small highball g ass, fill with carbonated water. This edifying delicacy o,.iginated at the famous old Ramos bar in New Orleans. If you shake it as the ba1·-boys"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-034",
+      "order": 34,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "TOM COLLINS",
+      "name_es": "Tom Collins",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1 lime or 1h lemon",
+          "item_es": "zumo de 1 lime or 1h limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM COLLINS: Juice of 1 Lime or 1h Lemon, 1 teaspoon Powdered Sugar,"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-035",
+      "order": 35,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "JOHN COLLINS",
+      "name_es": "John Collins",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JOHN COLLINS: Made as a Tom Collins, using Holland Gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-036",
+      "order": 36,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "TOM COLLINS, WHISKEY",
+      "name_es": "Tom Collins, Whiskey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "juice of 1 small lemon",
+          "item_es": "zumo de 1 small limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM COLLINS, WHISKEY: 5 dashes Syrup, juice of 1 small Lemon, 1 glass"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-037",
+      "order": 37,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "WHISKEY DAISY",
+      "name_es": "Whiskey Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice of 1h lime and 14 lemon",
+          "item_es": "zumo de 1h lime and 14 limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "carbonated water",
+          "item_es": "carbonated water",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "antique or paul jones whiskey. use silver mug",
+          "item_es": "antique or paul jones whiskey. use silver mug",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "fill with finely crushed ice",
+      "method_es": "fill with finely crushed ice",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY DAISY: Juice of 1h Lime and 14 Lemon, 2 dashes Grenadine, 2 dashes Carbonated Water, 1 jigger Antique or Paul Jones Whiskey. Use silver mug, or highball glass~ put in above ingredients, fill with finely crushed ice, scir until mug or glass is frosted, decorate with Fruit and Fresh Mint 47"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-038",
+      "order": 38,
+      "section_title": "Recipes",
+      "category": "smash",
+      "name_original": "WHISKEY SMASH",
+      "name_es": "Whiskey Smash",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY SMASH: Dissolve 1 lump of Sugar in a little Carbonated Water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-039",
+      "order": 39,
+      "section_title": "Recipes",
+      "category": "smash",
+      "name_original": "GIN SMASH",
+      "name_es": "Gin Smash",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "using Paul J ones Four Star Gin instead of W h iskey. T he1·e is as much diffe1·ence between good gin and the bath-tub variety as thei·e is between finely distilled",
+      "method_es": "using Paul J ones Four Star Gin instead of W h iskey. T he1·e is as much diffe1·ence between good gin and the bath-tub variety as thei·e is between finely distilled",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN SMASH: Same as Whiskey Smash, using Paul J ones Four Star Gin instead of W h iskey. T he1·e is as much diffe1·ence between good gin and the bath-tub variety as thei·e is between finely distilled, aged whiskey and moon- shine. Use Paul Jones Four Star Gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-040",
+      "order": 40,
+      "section_title": "Recipes",
+      "category": "cobbler",
+      "name_original": "WHISKEY COBBLER",
+      "name_es": "Whiskey Cobbler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "antique or four",
+          "item_es": "antique or four",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY COBBLER: 1 teaspoon Powdered Sugar, 1 jigger Antique or Four"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-041",
+      "order": 41,
+      "section_title": "Recipes",
+      "category": "flip",
+      "name_original": "WHISKEY FLIP",
+      "name_es": "Whiskey Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "paul j ones or",
+          "item_es": "paul j ones or",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY FLIP: 1 Egg, 1 teaspoon Powdered Sugar, 1 jigger Paul J ones or"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-042",
+      "order": 42,
+      "section_title": "Recipes",
+      "category": "flip",
+      "name_original": "SHERRY FLIP",
+      "name_es": "Sherry Flip",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY FLIP: Same as Whiskey Flip, using Sherry instead of Whiskey.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-043",
+      "order": 43,
+      "section_title": "Recipes",
+      "category": "toddy",
+      "name_original": "WHISKEY TODDY",
+      "name_es": "Whiskey Toddy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
+      "method_original": "sti r with a spoon and serve. Ah! H ow this takes me back to my grandfather's knee! 49 •     H     0     T        DRINKS                            •",
+      "method_es": "sti r with a spoon and serve. Ah! H ow this takes me back to my grandfather's knee! 49 •     H     0     T        DRINKS                            •",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY TODDY: 1 teaspoon Sugar, 1h glass Water,         glass Four Roses or Paul Jones Whiskey, 1 small lump of Ice. Put in toddy glass, sti r with a spoon and serve. Ah! H ow this takes me back to my grandfather's knee! 49 •     H     0     T        DRINKS                            •"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-044",
+      "order": 44,
+      "section_title": "Recipes",
+      "category": "toddy",
+      "name_original": "HOT WHISKEY TODDY",
+      "name_es": "Hot Whiskey Toddy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "cinnamon",
+          "item_es": "cinnamon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "of",
+          "item_es": "of",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOT WHISKEY TODDY: 1 piece of Sugar, 1 piece Cinnamon, 1 piece of"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-045",
+      "order": 45,
+      "section_title": "Recipes",
+      "category": "punch",
+      "name_original": "MILK PUNCH",
+      "name_es": "Milk Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MILK PUNCH: 1 tumbler Sweet Milk, 1 tablespoon Powdered Sugar, 1 jigger"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-046",
+      "order": 46,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "EGGNOG",
+      "name_es": "Eggnog",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "paul jones or",
+          "item_es": "paul jones or",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EGGNOG: 1 Egg, 1h tablespoon Powdered Sugar, 1 jigger Paul Jones or"
+    },
+    {
+      "id": "1934-irvin-s-cobbs-own-recipe-book-047",
+      "order": 47,
+      "section_title": "Recipes",
+      "category": "cocktail",
+      "name_original": "TOM AND JERRY",
+      "name_es": "Tom And Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered",
+          "item_es": "powdered",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM AND JERRY: 1 Egg, 1/z jigger Jamaica Rum, 1 teaspoon Powdered"
+    }
+  ]
+}

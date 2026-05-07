@@ -144,6 +144,22 @@
     "bookFile": "data/euvs-books/1900-modern-american-drinks-by-j-kappeler.json"
   },
   {
+    "id": "1909-recipes-of-american-and-other-iced-drinks",
+    "year": 1909,
+    "decade": "1900s",
+    "title": "Recipes of American and Other Iced Drinks",
+    "author": "Charlie Paul (compiled & edited; 'a well-known Expert')",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Farrow & Jackson, Limited (16 Great Tower Street, EC; 8 Haymarket SW)",
+    "city": "London",
+    "edition": "First Edition (1909)",
+    "notes": "Sequel/sister del 1884 'American & Other Drinks' por Charlie Paul (ya en catálogo). Esta edición de 1909 expande el repertorio con énfasis en bebidas frías ('Iced Drinks') y añade una sección de 'Temperance Drinks' (no alcohólicas) gracias a contribuciones de W. J. Bush & Co. de Hackney. Skeleton reutiliza el patrón 'N—NAME.' del 1884; parser prose-aware. 115 recetas; ~62% (71/115) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 115,
+    "bookFile": "data/euvs-books/1909-recipes-of-american-and-other-iced-drinks.json"
+  },
+  {
     "id": "1910-ca-101-drinks-and-how-to-mix-them",
     "year": 1910,
     "decade": "1910s",
@@ -158,6 +174,22 @@
     "sectionCount": 9,
     "recipeCount": 76,
     "bookFile": "data/euvs-books/1910-ca-101-drinks-and-how-to-mix-them.json"
+  },
+  {
+    "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose",
+    "year": 1910,
+    "decade": "1910s",
+    "title": "Toasts, Wines and How to Serve Them — With Many Valuable Recipes",
+    "author": "Compiled by Randolph Rose",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published (copyright 1910)",
+    "city": "USA",
+    "edition": "First Edition (1910)",
+    "notes": "Compendio que combina toasts (brindis), vinos y cócteles. Recetas con formato 'One-half X', 'Three-fourths Y' (word-fractions). OCR moderado con espaciado en mayúsculas ('WH I S K E Y' → 'WHISKEY'). Skeleton custom rebuilt con normalización de letras espaciadas + detector ALL CAPS + type-word. 29 recetas; ~69% (20/29) parseadas (algunas con OCR severo donde 's rye whiskey' es OCR de 'Three-fourths Rye whiskey').",
+    "sectionCount": 2,
+    "recipeCount": 29,
+    "bookFile": "data/euvs-books/1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose.json"
   },
   {
     "id": "1912-the-squires-recipe",
@@ -496,6 +528,22 @@
     "bookFile": "data/euvs-books/1931-sloppy-joes-bar-1932.json"
   },
   {
+    "id": "1931-the-art-of-drinking-more-by-dexter-mason",
+    "year": 1931,
+    "decade": "1930s",
+    "title": "Tipple and Snack — Good Things to Eat and Better Things to Drink",
+    "author": "Dexter Mason (author of 'The Art of Drinking')",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Farrar & Rinehart, Incorporated",
+    "city": "New York",
+    "edition": "First Edition (1931)",
+    "notes": "Tipple and Snack — guía de entretenimiento durante la Prohibición. Pares cócteles con canapés y snacks. Cócteles agrupados por base spirit (Applejack, Brandy, Champagne, Gin, Rum, Whiskey, Vodka). Open con un diálogo simulado entre dos cocineros sobre la historia de la cocina francesa. Skeleton custom + parser para 'N parts X' / '1~ parts Y' (OCR de fracciones rotas). 43 recetas, ~67% (29/43) con ingredientes. Algunas amounts presentan OCR (`s brandy`, `0.0 lemon juice`) por OCR severo en este libro.",
+    "sectionCount": 2,
+    "recipeCount": 43,
+    "bookFile": "data/euvs-books/1931-the-art-of-drinking-more-by-dexter-mason.json"
+  },
+  {
     "id": "1932-one-hundred-ways-by-stafford-brothers",
     "year": 1932,
     "decade": "1930s",
@@ -576,6 +624,22 @@
     "bookFile": "data/euvs-books/1933-cocktail-parade.json"
   },
   {
+    "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "Cocktails: Their Kicks and Side-Kicks",
+    "author": "A. E. P. Bird & William C. Turner",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "The Read Printing Company / Bird & Turner Publishers, 79 Wall Street",
+    "city": "New York",
+    "edition": "First Edition (December 1933, post-Repeal)",
+    "notes": "Publicado en diciembre de 1933, días después de la derogación de la Prohibición ('Repeal'). Cada cóctel incluye un 'side-kick' — un canapé sugerido para acompañar (en `garnish`). 5 secciones: Cosmopolitans, Tropical Cruise Specials, Dixie Gems, Holiday Cheer, Country Club Echoes. Skeleton custom + parser comma-aware ('Item, N parts'). 68 recetas; ~75% (51/68) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 68,
+    "bookFile": "data/euvs-books/1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner.json"
+  },
+  {
     "id": "1933-sloppy-joes-bar",
     "year": 1933,
     "decade": "1930s",
@@ -624,6 +688,22 @@
     "bookFile": "data/euvs-books/1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf.json"
   },
   {
+    "id": "1934-angostura-recipes",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Angostura Recipes — 42 Cocktails + 42 Home Dishes",
+    "author": "Anonymous (compiled by 'leading bartenders' & 'world-famous chefs', sponsored by Angostura)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Angostura Bitters (Dr. J.G.B. Siegert & Sons), Trinidad",
+    "city": "Port of Spain, Trinidad / NYC distribution",
+    "edition": "First Edition (1934)",
+    "notes": "Folleto promocional de Angostura Bitters — 42 recetas de cócteles 'as mixed at' bares famosos (Delmonico's, Longchamps, Embassy Club, Hotel New Yorker, Cafe Madison, Hotel Barclay, etc.) + 42 recetas de comida de chefs reconocidos (Ritz-Carlton, etc.). Open con la historia de Dr. Johann Gottlieb Benjamin Siegert (1824, surgeon de Blücher's army en Angostura). Skeleton custom rebuilt detectando el marker 'as mixed at|by'. 29 cócteles extraídos (las recetas de comida no se incluyen). ~79% (23/29) con ingredientes parseados.",
+    "sectionCount": 2,
+    "recipeCount": 29,
+    "bookFile": "data/euvs-books/1934-angostura-recipes.json"
+  },
+  {
     "id": "1934-charles-book-of-punches-and-cocktails",
     "year": 1934,
     "decade": "1930s",
@@ -670,6 +750,22 @@
     "sectionCount": 3,
     "recipeCount": 65,
     "bookFile": "data/euvs-books/1934-how-to-mix-drinks-by-tom-and-jerry.json"
+  },
+  {
+    "id": "1934-irvin-s-cobbs-own-recipe-book",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Irvin S. Cobb's Own Recipe Book — 78 Famous Drinks + Rollicking Dissertation on King Bourbon",
+    "author": "Irvin S. Cobb (Colonel, 'born and bred in ol' Kaintucky')",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Frankfort Distilleries, Incorporated",
+    "city": "Louisville and Baltimore",
+    "edition": "First Edition (1934, post-Repeal)",
+    "notes": "Folleto promocional de Frankfort Distilleries (Paul Jones, Four Roses) escrito por el humorista Irvin S. Cobb (autor de 'Red Likker'). 78 recetas en formato 'NAME: ingredient1, ingredient2,...' embebidas en una 'rollicking dissertation' sobre el bourbon. Discurso satírico de Lincoln en epígrafe. Skeleton custom rebuilt detectando 'NAME: body' patterns. ~81% (38/47) recetas con ingredientes parseados (algunos con OCR truncated por el texto pícaro).",
+    "sectionCount": 2,
+    "recipeCount": 47,
+    "bookFile": "data/euvs-books/1934-irvin-s-cobbs-own-recipe-book.json"
   },
   {
     "id": "1934-lairds-applejack-how-to-serve-recipes",

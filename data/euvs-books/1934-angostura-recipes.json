@@ -1,0 +1,1018 @@
+{
+  "book_id": "1934-angostura-recipes",
+  "metadata": {
+    "title": "Angostura Recipes — 42 Cocktails + 42 Home Dishes",
+    "author": "Anonymous (compiled by 'leading bartenders' & 'world-famous chefs', sponsored by Angostura)",
+    "year": 1934,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Angostura Bitters (Dr. J.G.B. Siegert & Sons), Trinidad",
+    "city": "Port of Spain, Trinidad / NYC distribution",
+    "edition": "First Edition (1934)",
+    "source_file": "1934 Angostura Recipes.txt",
+    "notes": "Folleto promocional de Angostura Bitters — 42 recetas de cócteles 'as mixed at' bares famosos (Delmonico's, Longchamps, Embassy Club, Hotel New Yorker, Cafe Madison, Hotel Barclay, etc.) + 42 recetas de comida de chefs reconocidos (Ritz-Carlton, etc.). Open con la historia de Dr. Johann Gottlieb Benjamin Siegert (1824, surgeon de Blücher's army en Angostura). Skeleton custom rebuilt detectando el marker 'as mixed at|by'. 29 cócteles extraídos (las recetas de comida no se incluyen). ~79% (23/29) con ingredientes parseados."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "The World's Best Kept Secret + Cellarette",
+      "title_es": "El mejor secreto del mundo + uso del Angostura",
+      "content_original": "Folleto promocional de Angostura Bitters (1934). En 1824 Dr. Johann Gottlieb Benjamin Siegert, ex-surgeon del ejército de Blücher, desarrolló el Angostura como tónico contra la fiebre tropical en Angostura (hoy Ciudad Bolívar, Venezuela). Más tarde la familia se mudó a Trinidad. La fórmula secreta es conocida solo por 7 personas (todos miembros de la familia Siegert). El folleto presenta 42 recetas de cócteles 'as mixed at' bares famosos + 42 recetas de comida de chefs renombrados.",
+      "content_es": "Folleto promocional de Angostura Bitters (1934). En 1824 Dr. Johann Gottlieb Benjamin Siegert (ex-surgeon de Blücher) desarrolló el Angostura como tónico contra la fiebre tropical. La fórmula secreta es conocida solo por la familia Siegert. 42 recetas de cócteles 'as mixed at' bares famosos + 42 recetas de comida."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails (food recipes excluded)",
+      "title_es": "Cócteles (recetas de comida excluidas)",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1934-angostura-recipes-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Thistle Cocktail",
+      "name_es": "Thistle Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir in ice, strain into glass and add a curl of lemon peel.",
+      "method_es": "Stir in ice, strain into glass and add a curl of lemon peel.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "thistle cocktail\nas mixed at ANGOSTURA BAR,.Trinidad\n% Scotch Whisky\nYi Italian Vermouth\n3 Dashes Angostura Bitters\nStir in ice, strain into glass and add a curl\nof lemon peel."
+    },
+    {
+      "id": "1934-angostura-recipes-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Palmetto Cocktail",
+      "name_es": "Palmetto Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Mixing glass half-full ice 3 Dashes Angostura Bitters 1/2 Bouquet Rum. l/^ French Vermouth Stir, strain and serve.",
+      "method_es": "Mixing glass half-full ice 3 Dashes Angostura Bitters 1/2 Bouquet Rum. l/^ French Vermouth Stir, strain and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "palmetto cocktail\n                     as mixed at ANGOSTURA BAR,Trinidad\n                     Mixing glass half-full ice\n                     3 Dashes Angostura Bitters\n                     1/2 Bouquet Rum. l/^ French Vermouth\n                     Stir, strain and serve.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-angostura-recipes-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Tom Collins Angostura",
+      "name_es": "Tom Collins Angostura",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "juice 1 lemon or 2 limes",
+          "item_es": "juice 1 lemon or 2 limes",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with cracked ice, strain into glass, add cube of ice, fill with Club Soda.",
+      "method_es": "Shake with cracked ice, strain into glass, add cube of ice, fill with Club Soda.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "torn Collins angostura\n                     as mixed at ANGOSTURA BAR,Trinidad\n SAMBO OF TRIMDAD\n                     1 jigger Dry Gin\n                     1 tablespoon Powdered Sugar\n                     Juice of 1 Lemon or 2 Limes\n                     3 dashes Angostura\n                      Shake with cracked ice, strain into glass,\n                      add cube of ice, fill with Club Soda."
+    },
+    {
+      "id": "1934-angostura-recipes-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Abbey Cocktail",
+      "name_es": "Abbey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "kina lillet",
+          "item_es": "Kina Lillet (Lillet Blanc)",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well in ice, strain. Twist lemon peel.",
+      "method_es": "Stir well in ice, strain. Twist lemon peel.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "aObey cocktail\nas mixed at LONGCHAMPS\n\n V2 Plymouth Gin\n 1/4 Kina Lillet\n 1/4 Italian Vermouth\n I Dash Angostura Bitters\n Stir well in ice, strain. Twist lemon peel.\nAngostura Home Recipes\n\n                                                   Chef\n                                       CHARLES L. BANINO\n                                          RITZ-CARLTON HOTEL,\n                                            OF BOSTON, MASS.\n\n                                         Offers Simple Recipes for\n                                                 Home Use\n\n                                       .SWEETBREAD AND\n                                            LOBSTER EN\n                                        CREPINETTE RITZ\n                                                  (Jar 4)\n\n                                     Remove the spleen of two white\n                                     blanched sweetbreads, dice them\n                                     'A inch thick. Take same amount\n                                     of lobster meat (claws pre\n                                     ferred), out the same thickness\nBAKED CAPE BLCEFISII\n                                     as sweetbread. Take four me\n       ANGOSTCRA                     dium sized shallots, a little piece\n             (Jor 4)\n                                     of garlic and 1 oz. salt pork.\n                                     Chop everything separately, start\nTake a 5 lb. Bluebsh, split and      by heating the salt pork in skil\nremove all bones. Place in a but     let, adding the shallots, garlic,\ntered baking pan, season with        and a little coarsely chopped\njuice of one lemon, salt, finely     parsley. Let simmer slowly a few\ncrushed pepper and one half cup      minutes, mix in briskly 5/2 cup\nof water. Sprinkle on top the fol    finely ground white bread\nlowing mixture: One small            crumbs and tahlespoonful of\nonion, one half green pepper,        ANGOSTURA. Remove from\none slice eggplant, two beads of     fire. Add sweetbread and lobster\nmushrooms, a little parsley, a       previously prepared, salt and\ndozen filets of anchovies and four   fresh ground pepper to taste. Set\nripe olives. Chop everything sep     aside until cold enough to handle,\narately and mix together, and        divide into (8) equal parts, ea<-h\nspread on the fish. Cover the        the shape of an egg. Place on\nwhole with a piece of buttered       each two slices of truffle and wrap\nbrown paper and hake in mod          each one in pig's caul. Bake fif\nerate oven for about twenty min      teen minutes in medium hot\nutes. When ready to serve, ar        oven, basting frequently. Serve\nrange the fish on a platter, and     on individual mounts of baked\nadd to the remaining juice one       rice, with two crepinettes on\nounce of fresh butter and several    each. Pour Brown Sauce flavored\ndashes ANGOSTURA BITTERS.            with ANGOSTURA.\n8                                  Angostura Home Recipes\n\nzazarak cocktaU\nas "
+    },
+    {
+      "id": "1934-angostura-recipes-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Reeves Special",
+      "name_es": "Reeves Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice % lime",
+          "item_es": "juice % lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth.^ gin",
+          "item_es": "french vermouth.^ gin",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir in ice, strain and float 2 Dashes of Angostura Bitters on top.",
+      "method_es": "Stir in ice, strain and float 2 Dashes of Angostura Bitters on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "reeves special\n                      as mixed at THE CAFE MADISON\n                      Juice % Lime\n                      Yi French Vermouth.^ Gin\n                      Stir in ice, strain and float 2 Dashes of\n                      Angostura Bitters on top."
+    },
+    {
+      "id": "1934-angostura-recipes-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Packard Twins",
+      "name_es": "Packard Twins",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino (alcoholic)",
+          "item_es": "maraschino (alcoholic)",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "rye whisky",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice and serve in cocktail glass.",
+      "method_es": "Stir with ice and serve in cocktail glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "paekard twins                                     ,*.ARO f.\nas mixed at THE HOTEL BARCLAY\n2 Dashes Orange Bitters\n2 Dashes Angostura Bitters\n2 Dashes Maraschino (alcoholic)\n1 Jigger Rye Whisky\n    Jigpr Sherry\nStir with ice and serve in cocktail glass.\nAngostura Home Recipes\n\n\n                                         RIUE PUDDING-\n                                           ANGOSTURA\n                                     Scald 1 quart of milk in double\n                                     boiler, add    cup of rice, Vi cup\n                                     of sugar, 14 teaspoon salt, and\n                                     cook 40 minutes, or until rice is\n                                     tender, stirring frequently. Add\n                                     a grating of lemon rind and a\n                                     few dashes ANGOSTURA BIT\n                                     TERS. Put in deep baking, dish\n                                     and brown in hot oven. Serves\n                                     4 persons.\n\n\n Chef GABRIEL LUGOT\n HOTEL WALDORF-ASTORIA, OF\n             NEW YORK\n\n   Offers Simple Recipes for          \"WALDORF\" SALAD-\n             Home Use                        ANGOSTURA\n                                     4 apples     Few leaves of lettuce\n                                     1 stalk celery Angostura Bitters\n            SUPREME                  4 tablespoons light mayonnaise,\n  OE GRAPEFRUIT—                        very well seasoned\n       AA'COSTURA                    Peel apples, remove core and\nSelect a ripe, heavy grapefruit;     slice. Reserve 4 slices. Cut other\nskin it carefully. With a special    slices in small strips. Clean cel\nsharp knife remove each section      ery, reserve a few small leaves\nof grapefruit without inside         and cut the rest in small strips.\nskin. Place sections in bowl;        Season celery, mix with apple,\npour over them all juice from        add 2 parts of mayonnaise and a\nthe fruit. Add a few dashes of       few dashes ANGOSTURA BIT\nANGOSTURA, V2 ounce Kirsch,          TERS. Arrange in salad bowl\n1 teaspoon of granulated sugar       with the leaves of lettuce around; >\nand let stand 15 minutes. In a       cover with the rest of mayon\nsherbet glass arrange the grape      naise; in the center arrange the\nfruit sections,pour over the juice   leaves of celery and slices of\nand decorate with red and green      apple for decoration.\ncherries. Serve very thoroughly\n chilled.\n10                                  Angostura Home Recipes\n                                                    flip"
+    },
+    {
+      "id": "1934-angostura-recipes-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "flip",
+      "name_original": "Rum Flip",
+      "name_es": "Rum Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar with splash of seltzer",
+          "item_es": "sugar with splash of seltzer",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass bouquet rum. 1 fresh egg",
+          "item_es": "wine glass bouquet rum. 1 fresh egg",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Strain into fancy glass, grate nutmeg and serve.",
+      "method_es": "Strain into fancy glass, grate nutmeg and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "rum flip\nas mixed at ANGOSTURA BAR,Trinidad\nLarge Glass    Full Ice\n1 Teaspoon Sugar with Splash of Seltzer\n1 Wine Glass Bouquet Rum. 1 fresh egg.\n3 Dashes of Angostura Bitters\nStrain into fancy glass, grate nutmeg and\nserve."
+    },
+    {
+      "id": "1934-angostura-recipes-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Egg Nogg",
+      "name_es": "Egg Nogg",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Add 1 Pint Bourbon and 1 Sherry Glass Jamaica Rum,stir continuously. Whip 1 Qt. Rich Cream and stir slowly into mixture. Sprinkle with nutmeg.",
+      "method_es": "Add 1 Pint Bourbon and 1 Sherry Glass Jamaica Rum,stir continuously. Whip 1 Qt. Rich Cream and stir slowly into mixture. Sprinkle with nutmeg.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "egg nogg\n                    as mixed at SHERRY'S\n                    Yolks of 6 Eggs. Beat till very light\n                    Beat 1/2   sugar into eggs.\n                    Add 1 Pint Bourbon and 1 Sherry Glass\n                    Jamaica Rum,stir continuously.\n                    Whip 1 Qt. Rich Cream and stir slowly\n                    into mixture. Sprinkle with nutmeg.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-angostura-recipes-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Martini Cocktail",
+      "name_es": "Martini Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": null,
+          "unit": null,
+          "notes": "as listed"
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir in ice and strain. Add twisted lemon peel.",
+      "method_es": "Stir in ice and strain. Add twisted lemon peel.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "martini cocktail\n                    as mixed at ANGOSTURA BAR,Trinidad\n                    Ys Gin\n                    yi French Vermouth\n                       Italian Vermouth\n                    3 Dashes Angostura Bitters\n                    Stir in ice and strain. Add twisted lemon\n                    peel."
+    },
+    {
+      "id": "1934-angostura-recipes-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "September morn cocktail",
+      "name_es": "September morn cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "juice 1/2 lime",
+          "item_es": "juice 1/2 lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "teaspoonful of syrup",
+          "item_es": "teaspoonful of syrup",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass of bouquet rum",
+          "item_es": "wine glass of bouquet rum",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in fairly large wine glass.",
+      "method_es": "Serve in fairly large wine glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "September morn cocktail\nas mixed at ANGOSTURA BAR,Trinidad\n3 Dashes Angostura Bitters\nWhite of 1 Egg\nJuice of 1/2 Lime\n1 Teaspoonful of Syrup\n1 Wine Glass of Bouquet Rum\nServe in fairly large wine glass.\nAngostura Home Recipes                                            11\n\n\n\n                                                  Chef\n                                     CHARLES A. CHAMPION\n                                          HOTEL SAVOY.PI.AZA, OF\n                                                 NEW YORK\n\n                                         Offers Simple Recipes for\n                                                 Home Use\n\n\n\n\n                                     CRE.AM OF MUSHROOM\n                                         SOUP .ANGOSTURA\n\n                                     1/4 lb. mushrooms i/4 cup butter\n                                     Grated nutmerg     1/4 cup cream\n                                     5 cups chicken broth for part\n                                        water)       Salt and pepper\n                                     2 tablespoons flour\n                                     ANGOSTURA BITTERS\n\nMACKDOl^VE OF FRESH                  Melt butter in saucepan, add\n  FRUITS ANGOSTURA                   flour and let cook for few min\n                                     utes, stir repeatedly; then add\nTake any fresh fruits in season,     the mushrooms which have been\nsuch as raspberries, strawberries,   previously well cleaned, washed\ncherries, diced pears, pineapple,    and flnely chopped. Let cook to\norange, etc. Set mixed fruits in     gether for a few more minutes,\nglass howl and pour over a syrup     add the chicken broth, bring to a\nmade as follows: '/i fup sugar,      boil and let it simmer for 20 or\n   cup water, let boil few min       25 minutes. Pa.ss through a fine\nutes until it becomes a little       sieve and if soup is too thick add\nthick. Let cool off and add about    little more chicken broth or\n1/4 cup orange juice and 1/4 cup     some rich milk. Season with salt,\nKirsch or Maraschino. Let stand      pepper and grated nutmeg. Add\naltogether for about 2 hours in      cream wh.ch has been previously\nice box. When ready to serve add     heated; add several dashes AN\nseveral dashes ANGOSTURA             GOSTURA BITTERS according\nBITTERS according to taste.          to taste.\n12\n               * SOFT DRIXKS ★\n     $ai<ar Syrup-The sugiir syrup referred to in these recipes is\n     made by bofiiiig together, for 3 minutes, 2 parts .sugar to 1 part water.\n     Stir until sugar dis.solves, then boil without stirring. Keep some in a\n     jar in your refrigerator; it is better to .sweeten cold iirinks with this\n     syrup tlian with sugar because it blends more quickly with the other\n     ingredients.\n\nLime Ulint—liV'ith                           Summer Jfulep\nAngostura                                    I pt. raspberry juice\n                                             Ju ice of 6 lemons\nFill a tall glass Yi full of"
+    },
+    {
+      "id": "1934-angostura-recipes-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Mississippi Panch",
+      "name_es": "Mississippi Panch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "or 4 dashes lemon juice",
+          "item_es": "or 4 dashes lemon juice",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass bourhon",
+          "item_es": "wine glass bourhon",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass brandy",
+          "item_es": "wine glass brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix well—fill with ice—trim with Fruit. Serve with straw. bronx eocktail as m ixed at ANGOSTURA BAR,Trinidad Yi French Vermouth Yi Italian Vermouth Yi Gin 3 Dashes Angostura Bitters 1 Slice of orange.",
+      "method_es": "Mix well—fill with ice—trim with Fruit. Serve with straw. bronx eocktail as m ixed at ANGOSTURA BAR,Trinidad Yi French Vermouth Yi Italian Vermouth Yi Gin 3 Dashes Angostura Bitters 1 Slice of orange.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "mississippi panch\nas mixed at ANGOSTURA BAR,Trinidad\nLarge Bar Glass 1 Teaspoon Sugar\nWater to dissolve Sugar\n3 or 4 Dashes Lemon Juice\n2 Dashes Angostura Bitters\nY2 Wine Glass Bouquet Rum\nV2 Wine Glass Bourhon\n1/2 Wine Glass Brandy\nMix well—fill with ice—trim with Fruit.\nServe with straw.\n\n\n                    bronx eocktail\n                    as m ixed at ANGOSTURA BAR,Trinidad\n                    Yi French Vermouth\n                    Yi Italian Vermouth\n                    Yi Gin\n                    3 Dashes Angostura Bitters\n                    1 Slice of orange."
+    },
+    {
+      "id": "1934-angostura-recipes-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "juice half lemon 1 teaspoon sugar",
+          "item_es": "juice half lemon 1 teaspoon sugar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "gin fizz\n                    as mixed at ANGOSTURA BAR,Trinidad\n                    1 Jigger Gin\n                    Juice half lemon 1 Teaspoon sugar\n                    2 Dashes Angostura Bitters\n                    Ice and Fizz Water.\n\n\ndoctor cocktail\nas mixed hy HANS NEUMANN at\nHOTEL McALPIN\n% Rye.^ Benedictine\nSprig of Fresh Mint\nAngostura Home Recipes                                          15\n\n\n\n\n                                       ROSTOX FISH\n                                            CHOWDER\n\n                                  4 lbs. fresh haddock or cod\n                                  Vz lb. salt pork, chopped\n                                  % lb. onions, cut fine\n                                  1 lb. potatoes,sliced\n                                  Fish stock\nChef JACQUES GESELL               4 cups rich milk (or part cream)\n     HOTEL NEW YORKER\n                                  Salt and pepper\n   Offers Simple Recipes for      Butter.\n          Home Use\n                                  ANGOSTURA BITTERS.\n\n                                  Wash fish, remove bones and\n                                  skin. Cut solid part in 1-inch\n                                  pieces. Cook skin, bones and\n    iSTRAWBERRY\n                                  trimmings with about 3 cups\n     AYGOSTURA—                   water for 20 minutes to make\n    OR   ROMAXOFF                 stock. Strain. Fry pork, add\n                                  onions and cook without brown\nClean two pints of nice ripe      ing. Add potatoes, which have\nstrawberries and wash well. Add   first been parboiled, and the fish\n5 tablespoons of granulated       stock. Cook all together 5 min\nsugar, a glass of O'Porto wine    utes. Add cut-up fish and simmer\nand a few dashes of ANGOS         about 10 minutes longer. Add\nTURA BITTERS. Place on ice        scalded milk, or part cream. Sea\nfor one hour—and cover with       son well with salt, pepper, but\nwhipped cream just before serv    ter and several dashes ANGOS\ning. Serves four people.          TURA BITTERS. Serve with\n                                  soft crackers on the side.\n16                                  Angostura Home Recipes\n\n  Other Uses for Angostura Bitters\n                               ★\n\nangostura Litters—The Chef's secret! That elusive\nflavor that has helped to make great restaurants famous.\nit gives you an appetite—Taken before meals, this\nhighly concentrated aromatic bitters stimulates the secre\ntive glands and creates usually an immediate desire for food.\nit makes food delicious —Angostura Bitters is a most\ndelicious flavoring for many foods:\n       Flavor tomato, clam and fruit juice cocktails with\n       Angostura Bitters.\n\n       Use a few dashes with fruit in any form—canned,\n       cooked or raw; plain or in combinations—whether\n       served as appetizer or dessert—with sugar to taste.\n\n       Put it in soups; it adds zest to canned soups and\n       makes some of the home-made standbys,"
+    },
+    {
+      "id": "1934-angostura-recipes-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Apricot Cocktail",
+      "name_es": "Apricot Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "apricot brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "apricot cocktail\n                     as mixed at THE EMBASSY CLUB\n\n                    V2 Jigger Gin\n                    Yi Jigger Apricot Brandy\n                    3 Dashes Angostura Bitters"
+    },
+    {
+      "id": "1934-angostura-recipes-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Scotch Whisky Punch",
+      "name_es": "Scotch Whisky Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "or 5 dashes lime (or lemon) juice",
+          "item_es": "or 5 dashes lime (or lemon) juice",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "or 5 dashes angostura bitters",
+          "item_es": "or 5 dashes angostura bitters",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, strain into punch glass with Slice of Orange—3 or 4 Dashes Curasao on top. Splash with Seltzer.",
+      "method_es": "Shake well, strain into punch glass with Slice of Orange—3 or 4 Dashes Curasao on top. Splash with Seltzer.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "scotch whisky punch\n                    as mixed at ANGOSTURA BAR,Trinidad\n                    Large Glass,       Ice. 1 Teaspoon Sugar\n                    4 or 5 Dashes Lime (or Lemon) Juice\n                     1/^ Pint Scotch Whisky and Rum, mixed\n                    4 or 5 Dashes Angostura Bitters\n                    Shake well, strain into punch glass with\n                    Slice of Orange—3 or 4 Dashes Curasao\n                    on top. Splash with Seltzer."
+    },
+    {
+      "id": "1934-angostura-recipes-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "National Cocktail",
+      "name_es": "National Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "juice 1 fresh lime",
+          "item_es": "juice 1 fresh lime",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bar spoon of powdered sugar",
+          "item_es": "bar spoon of powdered sugar",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "drink of bacardi rum",
+          "item_es": "drink of bacardi rum",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve in Champagne glass.",
+      "method_es": "Serve in Champagne glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "national cocktail\nas mixed at HOTEL NATIONAL, CUBA\nJuice 1 Fresh Lime\nEqual amount of Pineapple Juice\n1 Bar Spoon of Powdered Sugar\n1 Drink of Bacardi Rum\nServe in Champagne glass.\nAngostura Home Recipes                                             19\n\n\n                                      Chef JOSEPH BOGGIA\n                                        HOTEL PLAZA, OF NEW YORK\n\n                                         Offers Simple Recipes for\n                                                 Home Use\n\n                                                     ★\n\n                                           REMICK S.AUCE\n                                            (For fish cocktails)\n                                             I cup mayonnaise\n                                      14 oup chili sauce 14 tsp. mustard\n                                      14 tsp.paprika Pinch celery salt\n                                      I tsp. tarragon vinegar\n                                      ANGOSTURA BITTERS\n                                      Combine mayonnaise and chili\n     BKEF «OUEA<^ll                   sauce and add the seasonings.\n                                      Add two dashes ANGOSTURA\n3 lbs.shin beef   Suet or other fat   BITTERS and chill before serv\n6 tomatoes (or 2 cups canned)\n                                      ing. (Especially good with oys\n                                      ters, clams or crabmeat.l\n1 lb. onions            Paprika\nStock, or water Salt and pepper\nANGOSTURA BITTERS                         TOMATO          JUICE\n                                               COCKTAIE\nCut meat into small pieces brown\nin a little hot fat with onions,      Strain I can tomatoes through a\npeeled and sliced. Sprinkle with      sieve. To one pint of this juice\nsalt, pepper and paprika. Add to      add one pint fresh tomato pulp\nmatoes and a little soup stock or     (concentrate) and if too thick,\nbouillon. Turn into casserole,        add a little water. Season with a\ncover and cook in moderate oven       few drops onion juice, dash of\nIV2 hours. When done, add extra       Tabasco sauce, few drops of\nseasoning to taste and a few          lemon juice, salt to taste and sev\ndashesANGOSTURA BITTERS.              eral dashes ANGOSTURA BIT\nServe with boiled potatoes or         TERS. You may add a little red\npotatoes may he cooked with the       vegetable coloring for a brighter\nstew.                                 color; serve in cracked ice.\n20                                  Angostura Home Recipes\n\nalexander cocktail\nas ntixed at HOTEL PENNSYLVANIA\n\nVi Gin\nYi Creme de Cacoa\nYi Heavy Cream."
+    },
+    {
+      "id": "1934-angostura-recipes-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Whisky Cocktail",
+      "name_es": "Whisky Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass whisky",
+          "item_es": "wine glass whisky",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix in ice till very cold. Strain into a moistened with lime juice and dipped into powdered sugar.",
+      "method_es": "Mix in ice till very cold. Strain into a moistened with lime juice and dipped into powdered sugar.",
+      "glassware": "cocktail glass the rim of which has been",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "whisky cocktail\n                    as mixed at ANGOSTURA BAR,Trinidad\n                    3 Dashes Maraschino\n                    3 Dashes Angostura Bitters\n                    1 Wine Glass Whisky\n                    Mix in ice till very cold. Strain into a\n                    cocktail glass the rim of which has been\n                    moistened with lime juice and dipped\n                    into powdered sugar."
+    },
+    {
+      "id": "1934-angostura-recipes-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Whisky Punch",
+      "name_es": "Whisky Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "strain into punch glass with slice of orange —3 or 4 dashes Curasao on top, with Seltzer. grenadine cocktail a« mixed       ANGOSTURA BAR,Trinidad Yi Grenadine Syrup % Gin Juice of Yi Lemon Stir in ice. Serve with dash of Angostura Bitters on top.",
+      "method_es": "strain into punch glass with slice of orange —3 or 4 dashes Curasao on top, with Seltzer. grenadine cocktail a« mixed       ANGOSTURA BAR,Trinidad Yi Grenadine Syrup % Gin Juice of Yi Lemon Stir in ice. Serve with dash of Angostura Bitters on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "whisky punch\n                    as mixed at ANGOSTURA BAR,Trinidad\n                    Large glass ^ ice—1 Teaspoon Sugar—4\n                    or 5 dashes Lime (or Lemon) Juice—%\n                    Pint Whisky and Rum mixed —4 or 5\n                    dashes Angostura Bitters. Shake well,\n                    strain into punch glass with slice of\n                    orange —3 or 4 dashes Curasao on top,\n                    with Seltzer.\n\ngrenadine cocktail\na« mixed       ANGOSTURA BAR,Trinidad\nYi Grenadine Syrup\n% Gin\nJuice of Yi Lemon\nStir in ice. Serve with dash of Angostura\nBitters on top.\nAngostura Home Recipes                                          21\n\n\n\n\n                                     HENRI CHARPENTIER\n                                       CAFE HENRI CHARPENTIER\n                                         AT MAISON FRANCAISE,\n                                             OF NEW YORK\n\n                                        Offers Simple Recipes for\n                                               Home Use\n\n\n\n\n  ANGOSTURA SUGAR                      ANGOSTUR.4 TOAST\n\nMix 2 tablespoons ANGOS              Toast slices of very fresh hread\nTURA BITTERS with 1/2 cup            (crusts removed). Butter gener\ngranulated sugar. Spread thinly      ously and sprinkle with ANGOS\non a dish and dry out over night.    TURA sugar. Cut into dainty\nMay he stored in a dry place for     slices and serve piping hot.\n2 or 3 weeks.\n\n         DEUICIOUS                          RREAKFAST\n    HOT CHOCOU.ATE                          CUOUOUATE\n         ANGOSTURA                      HENRI EXCELSIOR\n                                                (for 2)\nStir grated chocolate into boiling\nwater (I/2 square per cup) and       Heat 2 cups milk, add 4 tea\nadd ANGOSTURA sugar to               spoons ANGOSTURA sugar and\ntaste.Put 2 dashes ANGOSTURA         a few drops of vanilla; when\nBITTERS,1 clove and 1 hay leaf       almost boiling add chocolate (V2\nin each cup, then pour in the        square per person) and stir until\nboiling chocolate. Stir 3 times      smooth. Have 2 tablespoons of\nand remove the clove and hay         whipped cream in each cup and\nleaf. Serve with ANGOSTURA           slowly pour the hot chocolate\ntoast.                               into this, stirring all the time.\n22                                  Angostura Home Recipes\n\n Our Otvn Recipes                    CniCKEX EASSEBOLE\n\n               ★                    Dress and clean a tender fowl,\n                                    weighing about 4 lbs. Cut in\n       MELOI¥ BAEE\n        COCKTAIL\n                                    pieces for serving. Sprinkle with\n                                    salt and pepper and dot over with\nWith a French vegetable cntter      bits of butter. Place in casserole,\nscoop out halls from watermelon,    add 1 cup boiling water, cover\ncanteloupe, honeydew or any         and cook in moderate oven about\nmelon in season. Arrange in fruit   1 hour, or until chicken i",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-angostura-recipes-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Biltmore Coektail",
+      "name_es": "Biltmore Coektail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "marasehino",
+          "item_es": "marasehino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth % dry gin",
+          "item_es": "italian vermouth % dry gin",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hazel nut preserved in maraschino",
+          "item_es": "hazel nut preserved in maraschino",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "dubonnet",
+          "item_es": "Dubonnet",
+          "amount": "0.111",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice, strain and serve. - H A rj. manhattan cocktail as mixed.at PIERRE'S Dash of Angostura Bitters Yi Italian Vermouth. % Rye Whisky A quick, short shake with large ice.",
+      "method_es": "Stir with ice, strain and serve. - H A rj. manhattan cocktail as mixed.at PIERRE'S Dash of Angostura Bitters Yi Italian Vermouth. % Rye Whisky A quick, short shake with large ice.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "biltmore coektail\n                        as mixed at THE BILTMORE HOTEL\n                        Fresh Pineapple muddled\n                        1 Dash of Marasehino\n                        1/4 Italian Vermouth % Dry Gin\n                        1 Hazel Nut preserved in Maraschino\n\n                        dubonnet cocktail\n                        as mixesl at THE EMBASSY CLUB\n                        1/9 Dubonnet\n                        1/2 Gin\n                        3 Dashes Angostura\n                        Stir with ice, strain and serve.\n                                                       - H A rj.\n\nmanhattan cocktail\nas mixed.at PIERRE'S\nDash of Angostura Bitters\nYi Italian Vermouth. % Rye Whisky\nA quick, short shake with large ice.\nAngostura Home Recipes                                             25\n\n\n\n                                             Chef\n                                        EDMUND SCHUNCK\n                                       HOTEL ST. REGIS, OF NEW YORK\n\n                                          Offers Simple Recipes for\n                                                 Home Use\n\n\n\n                        ,J\n\n                                               SPAGHETTI\n                                           A LA LAURENCE\n\n                                       Boil half a pound of spaghetti,\n                                       drain and put in a Sautoir (fry\n  ROAST TEG OF LAMB                    ing pan) with a quarter pound\n                                       (14        butter. Cut 5 peeled\n Prepare leg of young lamb for         tomatoes in halves,crosswise; fry\n roasting; season with salt. Place     in butter over a brisk fire, keep\n in a heavy pan with a little fat      ing them intact. Grate quarter\n and put in a hot oven. Baste it       pound of Swiss or Parmesan\n once in a while with the fat. After   cheese. Chop up a small onion,\n a half hour, add some cut up          fry it in butter with 2 oz. cooked\n onions, carrots, celery. When the     lean ham and as much bacon,\n leg is cooked (one hour or more,      both cut in very small squares.\n depending on age of lamh) take        Drain off some of the fat and\n it out of pan and lay on a plat       add some brown meat gravy or\n ter. Pour off some of fat remain      stock (bouillon paste or cubes\n ing in pan, add some stock to         may be used to make stock); let\n make a nice gravy and let it sim      cook for 10 minutes. Add sev\n mer down to half. Strain through      eral dashes ANGOSTURA BIT\n a fine sieve and thicken gravy he-    TERS. Arrange the spaghetti in\n fore serving if desired; add sev      a vegetable dish, alternating\n eral dashes ANGOSTURA BIT             each layer with one of grated\n TERS and season to taste with         cheese; cover surface with\n salt and pepper.                      halved tomatoes and pour meat\n                                       sauce over the whole.\n26                                Aneostura Home Recipes"
+    },
+    {
+      "id": "1934-angostura-recipes-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Old Fashioned Cocktail",
+      "name_es": "Old Fashioned Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "old fashioned cocktail                            »ash;o^\nas mixed at PIERRE'S\n^ Lump Sugar\nDash of Angostura Bitters\nTeaspoonful Water\nMash Sugar—add 1 Jigger Rye or Bour\nbon, lump of ice, piece of lemon and",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-angostura-recipes-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Princess'Cocktail",
+      "name_es": "Princess'Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "princess'cocktail\n                    as mixed at PIERRE'S\n                    Jigger Jamaica Rum. Juice of Yz Lime\n                    Dash of Grenadine\n                    Dash of Angostura Bitters",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-angostura-recipes-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "French'\"75\"",
+      "name_es": "French'\"75\"",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoons lemon juice",
+          "item_es": "teaspoons lemon juice",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with Dry Champagne bronx cocktail as mixed a£ The HOTEL NEW YORKER Fill mixing glass half full cracked ice Yg of an orange, squeezed and dropped into the glass 1/4 Italian Vermouth 1/4 French Vermouth Yz Dry Gin Stir, strain and serve.",
+      "method_es": "Fill glass with Dry Champagne bronx cocktail as mixed a£ The HOTEL NEW YORKER Fill mixing glass half full cracked ice Yg of an orange, squeezed and dropped into the glass 1/4 Italian Vermouth 1/4 French Vermouth Yz Dry Gin Stir, strain and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "french'\"75\"\n                    as mixed by CONSTANT RENAUD of\n                    The S.S. ILE DE FRANCE\n                    Use Tom Collins Glass\n                    Splash of Gum Syrup or Teaspoon Sugar\n                    2 Teaspoons Lemon Juice\n                        Jiggers of Gin. 2 Cubes Ice\n                    Fill glass with Dry Champagne\nbronx cocktail\nas mixed a£ The HOTEL NEW YORKER\nFill mixing glass half full cracked ice\nYg of an orange, squeezed and dropped\ninto the glass\n1/4 Italian Vermouth\n1/4 French Vermouth\nYz Dry Gin\nStir, strain and serve.\nAngostura Home Recipes                                           27\n\n\n                                      General Supervisor of Service\n                                          CARL SCHILLER\n                                            PENNSYLVANIA R.R.\n\n                                         Offers Simple Recipes for\n                                                 Home Use\n\n\n\n\n                                        STCEEED CEIERV\n\n                                     1 stalk of celery (well washed,\n                                        trimmed and separated into\n                                       six pieces)\n                                     iy2 oz. cake Roquefort cheese\n BnOILED MACKEREL                    2 oz. sweet butter\n AI^'OOSTCRA        BCTTEn           y2 teaspoon ANGOSTURA\n                                       BITTERS\n1 mackerel(2 lbs.) or 2 mackerel\n                                     iy2 tablespoons finely chopped\n(1 lb. each)     4 this, olive oil     unsalted almonds\nSalt & pepper 2 oz.sweet butter      iy2 tablespoons finely chopped\n1 teaspoon Angostura Bitters           crystallized ginger\nHave mackerel split and side\nbones removed. Wash in cold\nwater and dry well. Spread with      Mix cheese, sweet butter and\nolive oil, sprinkle with salt and    BITTERS weU together until\npepper and broil until well          smooth. Fill each piece of eelery\nbrowned (about 15 minutes). In       with this mixture using either a\nthe meantime mix butter with         silver knife or small force bag.\nANGOSTURA and form into a            While filling is still soft, sprin\nsmall roll like a croquette. Place   kle each piece of celery gen\non plate and put in refrigerator     erously with chopped almonds,\nuntil very firm and cold. Just       and last of all with chopped\nbefore serving fish, cut this        crystallized ginger. Place in re\nAngostura Butter roll in four        frigerator to get very cold and\nslices; place one on top each        serve either on linen napkin or\npiece of fish and garnish with       silver tray or in china celery\nlemon and parsley.                   trough.\n28                                Angostura Home Recipes"
+    },
+    {
+      "id": "1934-angostura-recipes-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Fish House Punch",
+      "name_es": "Fish House Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pint peach brandy",
+          "item_es": "pint peach brandy",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pint jamaica rum",
+          "item_es": "pint jamaica rum",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "tablespoons angostura bitters",
+          "item_es": "tablespoons angostura bitters",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pints cold water",
+          "item_es": "pints cold water",
+          "amount": "5.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "fish house punch                                f I S//\n\nas mixed at ANGOSTURA BAR,Trinidad\nYs Pint Lemon Juice\n% Lb. White Sugar dissolved in water\nY2 Pint Cognac\n1/4 Pint Peach Brandy\n1/4 Pint Jamaica Rum\n4 Tablespoons Angostura Bitters\n21/4 Pints Cold Water\nIce and serve."
+    },
+    {
+      "id": "1934-angostura-recipes-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "sour",
+      "name_original": "Gin Sour",
+      "name_es": "Gin Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "teaspoons lemon juice",
+          "item_es": "teaspoons lemon juice",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice Splash of Seltzer and serve with cherry.",
+      "method_es": "Shake with ice Splash of Seltzer and serve with cherry.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "gin sour\n                   as mixed at HOTEL AMBASSADOR\n                  2 Teaspoons Lemon Juice\n                  1 Jigger Gin\n                  Dash Angostura Bitters\n                  Shake with ice\n                  Splash of Seltzer and serve with cherry."
+    },
+    {
+      "id": "1934-angostura-recipes-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Delmonico Special",
+      "name_es": "Delmonico Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth, italian vermouth",
+          "item_es": "french vermouth, italian vermouth",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Twisted orange peel Three Dashes of Angostura Bitters Stir with ice and strain.",
+      "method_es": "Twisted orange peel Three Dashes of Angostura Bitters Stir with ice and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "delmonico special\n                  as mixed by AGOSTO FORTE at\n                  DELMONICO'S\n\n                  1/4 Gin\n                  1/4 French Vermouth, Italian Vermouth\n                  and Brandy in equal proportions\n                  Twisted orange peel\n                  Three Dashes of Angostura Bitters\n                  Stir with ice and strain."
+    },
+    {
+      "id": "1934-angostura-recipes-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Pink Lady Cocktail",
+      "name_es": "Pink Lady Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin. white of one egg",
+          "item_es": "gin. white of one egg",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "pink lady cocktail\nas mixed at RITZ-CARLTON HOTEL\n1 Jigger Gin. White of One Egg.\n2 Dashes of Lemon Juice\n2 Dashes of Grenadine\nAngostura Home Recipes                                                29\n\n\n                                                       Chef\n                                           FRED R. MAHLKE\n                                                    RAINBOW   ROOM\n                                          ROCKEFELLER CENTER ROOF,\n                                                    OF NEW YORK\n\n                                            Offers Simple Recipes for\n                                                     Home Use\n\n\n\n\n                                                    HAY    THEE\n                                                nilEKEX CUHHY\n\n                                         1—2 lb. chicken\n                                         1 teaspoon curry powder\n                                         1 onion (finely chopped)\n                                         Juice of    lemon\n       FniJlT SALAD                        cup of sherry\n                                         Salt\n1/^ lb. seedless grapes 2 oranges        1 tablespoon flour\n3 fresh pears      i/4 lb. brazil nuts   1 tablespoon currant jelly\n4 fresh green gage plums\n                                         14 orange peel grated\n% lb. filberts              2 bananas    '/> cup rich milk\nVz lb. fresh pitted cherries             2 dashes ANGOSTURA\nYi lb. marshmallows                        BITTERS\n1 pint fresh strawberries\n1 small fresh pineapple                  Cut chicken into 4 pieces and\n1 teaspoon ANGOSTURA                     parboil; take out of stock and\nDressing: Vz bottle white wine,          sprinkle with salt and curry pow\nyolks of 3 eggs, 3 tablespoons           der. Melt 2 tablespoons butter\nsugar, 1 dash vanilla extract,           in a frying pan, add chopped\njuice of     orange, '/4 teaspoon        onion and chicken, cover and\ncornstarch.\n                                         cook slowly (until onion is ten\nCook wine, eggs, sugar, vanilla          der but not brown), then add\nand orange juice in a double             flour, re-cover and simmer 5 min\nboiler; when the mixture thick           utes. Add 3 cups of the stock in\nens slightly add cornstarch and          which chicken was parboiled and\nstir for about 5 minutes. Remove         bring to boiling point, then add\nfrom fire, add ANGOSTURA                 currant jelly, grated orange peel,\nand chill. Prepare fruit and chill,      lemon iuice, sherrv and ANGOS\ndrain and toss lightly with the          TURA BITTERS. Simmer for 25\ndressing and serve very cold on          minutes, then add milk. Serve\ncrisp lettuce leaves.                    with hoiled rice.\n 30                               Angostura Home Recipes\n                                                 y(t^ S10^^"
+    },
+    {
+      "id": "1934-angostura-recipes-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "El Presidente Cocktail",
+      "name_es": "El Presidente Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir. Serve with a Maraschino Cherry.",
+      "method_es": "Stir. Serve with a Maraschino Cherry.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "el presidente cocktail\nas mixed at LONGCHAMPS\n^ Curagao. 1/4 Italian Vermouth\nt/2 White Bacardi\nStir. Serve with a Maraschino Cherry.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1934-angostura-recipes-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Irish whiskey cocktail",
+      "name_es": "Irish whiskey cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curagao",
+          "item_es": "curagao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake with ice and twisted lemon peel in drink. Strain and serve.",
+      "method_es": "Shake with ice and twisted lemon peel in drink. Strain and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Irish whiskey cocktail\n                    as mixed at HOTEL AMBASSADOR\n                    2 Dashes Curagao\n                    2 Dashes Angostura Bitters\n                    Jigger of Irish Whiskey\n                    Shake with ice and twisted lemon peel in\n                    drink. Strain and serve."
+    },
+    {
+      "id": "1934-angostura-recipes-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "Rum Cocktail",
+      "name_es": "Rum Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "syrup",
+          "item_es": "syrup",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "wine glass bouquet rum",
+          "item_es": "wine glass bouquet rum",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "rum cocktail\n                    as mixed at ANGOSTURA BAR,Trinidad\n                    3 Dashes Angostura Bitters\n                    3 Dashes Syrup\n                    3 Dashes Maraschino\n                    3 Dashes Lemon Juice\n                    1 Wine Glass Bouquet Rum\n                    Wipe rim of stem glass with lime. Dip in\n                    powdered sugar."
+    },
+    {
+      "id": "1934-angostura-recipes-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "Planter'S Punch",
+      "name_es": "Planter'S Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "liqueur glass lime (or lemon) juice",
+          "item_es": "liqueur glass lime (or lemon) juice",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "liqueur glasses syrup",
+          "item_es": "liqueur glasses syrup",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "liqueur glasses bouquet rum",
+          "item_es": "liqueur glasses bouquet rum",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Add a Slice of Lime (or Lemon) Fill with cracked ice 1 Teaspoon Angostura Bitters Serve with Nutmeg on top.",
+      "method_es": "Add a Slice of Lime (or Lemon) Fill with cracked ice 1 Teaspoon Angostura Bitters Serve with Nutmeg on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "planter's punch\nas mixed at ANGOSTURA BAR,Trinidad\nInto small tumbler, pour:\n1 Liqueur Glass Lime (or Lemon) Juice\n2 Liqueur Glasses Syrup\n3 Liqueur Glasses Bouquet Rum\nAdd a Slice of Lime (or Lemon)\nFill with cracked ice\n1 Teaspoon Angostura Bitters\nServe with Nutmeg on top.\nAngostura Home Recipes                                         31\n\n\n                                          Chef-Steward\n                                      GASTON MICHEL\n                                       HOTF.L ROOSEVELT, OF\n                                             NEW YORK\n\n                                      Offers Simple Recipes for\n                                             Home Use\n\n\n\n\n                                   and pepper and saute in butter.\n                                   Remove kidneys and cook, in\n                                   remaining butter,   dozen small\n                                   mushrooms and a little chopped\n                                   onion. Remove these and brown\n                                   two tablespoons of flour in the\n                                   juices, adding more butter if\n  CHEAM OF BARLEY                  necessary. Add    cup of stock.\n             SOUP                  Reheat kidneys, etc., in this\n                                   brown sauce and add V2 teaspoon\n4 tablespoons butter\n                                   ANGOSTURA BITTERS. Serve\nV4 eup pearl barley                on hot buttered toast.\n3 tablespoons barley flour\n  stalk celery\n   teaspoon ANGOSTURA                      BAVARIAIV\n1 qt. cbicken brotb                    A L*AIV«O.STlIRA\n1 leek\n1 carrot cut fine\n                                   Cream together six tablespoons\nMake a roux witb butter and        of sugar and three egg yolks. Add\nbarley flour, add cbicken brotb,   one cup of boiling milk and (4\nvegetables and pearl barley and    teaspoon of ANGOSTURA BIT\ncook for tbree bours. Season to    TERS. Reheat almost to boiling\ntaste, add Vi eup cream or ricb    point but do not allow to boil.\nmilk and a tablespoon of butter    Remove from fire, add U/i table\nand ANGOSTURA BITTERS.             spoons of powdered gelatine\n                                   (previously cooked for five min\n                                   utes in (4 cup cold water). Set\n     LA>IB KIDA'EY.S,              aside to cool, whip 1 cup heavy\n           TITRRIBO                cream and fold in the cold Bava\nSkin and core six lamb kidneys     rian mixture. Put into a mould\n(split in two), season witb salt   and chill thoroughly.\n32\n                          Our Oirn Recip^H      ★\n PINEAPPLE SlIERBET                     SWEET POTATOES\n1 teaspoon gelatin     cup water             ANGOSTURA\n1 cup pineapple juice                Cook two pounds sweet pota\nVi cup sugar                         toes; while they are still hot,\n1 cup crushed pineapple               peel and mash them; then press\n1 tablespoon chopped mint            through a sieve.\n3 "
+    }
+  ]
+}

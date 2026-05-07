@@ -1,0 +1,3222 @@
+{
+  "book_id": "1909-recipes-of-american-and-other-iced-drinks",
+  "metadata": {
+    "title": "Recipes of American and Other Iced Drinks",
+    "author": "Charlie Paul (compiled & edited; 'a well-known Expert')",
+    "year": 1909,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Farrow & Jackson, Limited (16 Great Tower Street, EC; 8 Haymarket SW)",
+    "city": "London",
+    "edition": "First Edition (1909)",
+    "source_file": "1909 Recipes of American and other Iced Drinks.txt",
+    "notes": "Sequel/sister del 1884 'American & Other Drinks' por Charlie Paul (ya en catálogo). Esta edición de 1909 expande el repertorio con énfasis en bebidas frías ('Iced Drinks') y añade una sección de 'Temperance Drinks' (no alcohólicas) gracias a contribuciones de W. J. Bush & Co. de Hackney. Skeleton reutiliza el patrón 'N—NAME.' del 1884; parser prose-aware. 115 recetas; ~62% (71/115) con ingredientes parseados."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Index + Preface",
+      "title_es": "Índice + prefacio",
+      "content_original": "Farrow & Jackson Limited de Londres publican esta edición ampliada de las recetas de Charlie Paul (compilador del 1884 'American & Other Drinks'). Incluye recetas de bebidas no alcohólicas ('Temperance Drinks') aportadas por la firma W. J. Bush & Co. (Ash Grove, Hackney). Secciones: Short Drinks, Punches for Parties, Hot Drinks, Temperance Drinks, Stock Drinks.",
+      "content_es": "Farrow & Jackson Limited de Londres publican esta edición ampliada de las recetas de Charlie Paul. Incluye recetas no alcohólicas ('Temperance Drinks') de la firma W. J. Bush & Co. de Hackney."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Short Drinks, Punches, Hot Drinks, Temperance Drinks, Stock Drinks",
+      "title_es": "Bebidas cortas, ponches, calientes, no-alcohólicas, stock",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-001",
+      "order": 1,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Alabazam",
+      "name_es": "Alabazam",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "' Fill a tumbler with chipped ice ; put in half\n a teaspoonful of Angostura bitters, a liqueur-glassful\n of cura';0a; and half a wine-glassful of brandy ;\n shake well and strain into pony tumbler",
+      "method_es": "' Fill a tumbler with chipped ice ; put in half\n a teaspoonful of Angostura bitters, a liqueur-glassful\n of cura';0a; and half a wine-glassful of brandy ;\n shake well and strain into pony tumbler",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Alabazam\n\n' Fill a tumbler with chipped ice ; put in half\n a teaspoonful of Angostura bitters, a liqueur-glassful\n of cura';0a. and half a wine-glassful of brandy ;\n shake well and strain into pony tumbler. •»"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-002",
+      "order": 2,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "American Lemonade",
+      "name_es": "American Lemonade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a soda-water glass and fill with chipped\n ice ; squeeze a whole lemon in, add a teaspoonful-\n and-a-half of powdered sugar, fill up the glass with\n water ; shake up well, place a slice of lemon on top\n and serve with straws",
+      "method_es": "Take a soda-water glass and fill with chipped\n ice ; squeeze a whole lemon in, add a teaspoonful-\n and-a-half of powdered sugar, fill up the glass with\n water ; shake up well, place a slice of lemon on top\n and serve with straws",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "American Lemonade\n\nTake a soda-water glass and fill with chipped\n ice ; squeeze a whole lemon in, add a teaspoonful-\n and-a-half of powdered sugar, fill up the glass with\n water ; shake up well, place a slice of lemon on top\n and serve with straws.\n                            H",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-003",
+      "order": 3,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Anglers' Cocktail",
+      "name_es": "Anglers' Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "orange bitters",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tumbler with chipped ice ; put in two or\nthree drops of Angostura bitters, half a teaspoonful\nof orange bitters, and three or four drops of rasp\nberry syrup ; add half a wine-glassful of gin, then\nstir well and strain off.",
+      "method_es": "Fill a tumbler with chipped ice ; put in two or\nthree drops of Angostura bitters, half a teaspoonful\nof orange bitters, and three or four drops of rasp\nberry syrup ; add half a wine-glassful of gin, then\nstir well and strain off.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Anglers' Cocktail\n\nFill a tumbler with chipped ice ; put in two or\nthree drops of Angostura bitters, half a teaspoonful\nof orange bitters, and three or four drops of rasp\nberry syrup ; add half a wine-glassful of gin, then\nstir well and strain off."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-004",
+      "order": 4,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Appetizer",
+      "name_es": "Appetizer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters and of plain syrup ;\nadd two drops of lemon juice, half a wine-glassful\nof old Scotch whiskey ; then stir well; strain off\nand add a small piece of lemon peel.",
+      "method_es": "Fill a tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters and of plain syrup ;\nadd two drops of lemon juice, half a wine-glassful\nof old Scotch whiskey ; then stir well; strain off\nand add a small piece of lemon peel.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Appetizer\n\nFill a tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters and of plain syrup ;\nadd two drops of lemon juice, half a wine-glassful\nof old Scotch whiskey ; then stir well; strain off\nand add a small piece of lemon peel."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-005",
+      "order": 5,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "B. & Co.'S Punch",
+      "name_es": "B. & Co.'S Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bertram frere",
+          "item_es": "bertram frere",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a large punch bowl, into which squeeze the\njuice of five lemons and two sweet oranges ; dissolve\nthese in half a pound of powdered sugar ; next add\nthe thin rind of an orange ; stir in by degrees the\nwhite of six eggs beaten into a froth ; put in a bottle\nof Bertram Frere.s' superior champagne and half\na bottle of rum ; mix well, and decorate with fruits\nin season, after which put the bowl into a refrigerator\nand let it remain until the compound is thoroughly\ncooled; This will serve for a p",
+      "method_es": "Take a large punch bowl, into which squeeze the\njuice of five lemons and two sweet oranges ; dissolve\nthese in half a pound of powdered sugar ; next add\nthe thin rind of an orange ; stir in by degrees the\nwhite of six eggs beaten into a froth ; put in a bottle\nof Bertram Frere.s' superior champagne and half\na bottle of rum ; mix well, and decorate with fruits\nin season, after which put the bowl into a refrigerator\nand let it remain until the compound is thoroughly\ncooled; This will serve for a p",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "B. & Co.'S Punch\n\nTake a large punch bowl, into which squeeze the\njuice of five lemons and two sweet oranges ; dissolve\nthese in half a pound of powdered sugar ; next add\nthe thin rind of an orange ; stir in by degrees the\nwhite of six eggs beaten into a froth ; put in a bottle\nof Bertram Frere.s' superior champagne and half\na bottle of rum ; mix well, and decorate with fruits\nin season, after which put the bowl into a refrigerator\nand let it remain until the compound is thoroughly\ncooled. This will serve for a party of fifteen."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-006",
+      "order": 6,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Bishop A La Prusse",
+      "name_es": "Bishop A La Prusse",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "plain syrup",
+          "item_es": "jarabe simple",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take four good-sized Seville oranges and roast\nuntil they are a pale brorvn ; lay them in a tureen\nand cover them with half a pound of powdered\nsugar, adding three glasses of claret ; cover the\ntureen and let it stand for twenty-four hours, then\nplace it in a pan of boiling water ; press the oranges\nwith a wooden spoon, and run the juice through\na sieve ; make the remainder of the bottle of claret\nhot, and add the juice and serve hot in grog glasses; Fill tumbler rvith chipped ice ; put in three",
+      "method_es": "Take four good-sized Seville oranges and roast\nuntil they are a pale brorvn ; lay them in a tureen\nand cover them with half a pound of powdered\nsugar, adding three glasses of claret ; cover the\ntureen and let it stand for twenty-four hours, then\nplace it in a pan of boiling water ; press the oranges\nwith a wooden spoon, and run the juice through\na sieve ; make the remainder of the bottle of claret\nhot, and add the juice and serve hot in grog glasses; Fill tumbler rvith chipped ice ; put in three",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bishop A La Prusse\n\nTake four good-sized Seville oranges and roast\nuntil they are a pale brorvn ; lay them in a tureen\nand cover them with half a pound of powdered\nsugar, adding three glasses of claret ; cover the\ntureen and let it stand for twenty-four hours, then\nplace it in a pan of boiling water ; press the oranges\nwith a wooden spoon, and run the juice through\na sieve ; make the remainder of the bottle of claret\nhot, and add the juice and serve hot in grog glasses.\n                         15\n\n\n           8_bombay cocktail. S. D.\n\n   Fill tumbler rvith chipped ice ; put in three or\n four drops Of Angostura bitters, four or five drops\n of curacoa, and two drops of plain syrup ; add half\n a wine-glass of brandy ; stir well with long spoon ;\n strain off and put in a piece of lemon peel."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-007",
+      "order": 7,
+      "section_title": "Short Drinks",
+      "category": "flip",
+      "name_original": "Boston Flip",
+      "name_es": "Boston Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "plain syrup",
+          "item_es": "jarabe simple",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in a teaspoonful\n of powdered sugar and a new laid egg ; add half a\n glassful of rye whiskey : shake well, and strain mto\n a small pony tumbler, putting a little grated nutmeg\n on top; Fill tumbler with chipped ice ; put in a teaspoonful\n of raspberry syrup and a new laid egg 1              ^\n liqueur-glassful of brandy and a little milk , sha e\n well, and strain off into a pony tumbler; Fill tumbler with chipped ice ; put in three or\n four drops of Angostura ",
+      "method_es": "Fill tumbler with chipped ice ; put in a teaspoonful\n of powdered sugar and a new laid egg ; add half a\n glassful of rye whiskey : shake well, and strain mto\n a small pony tumbler, putting a little grated nutmeg\n on top; Fill tumbler with chipped ice ; put in a teaspoonful\n of raspberry syrup and a new laid egg 1              ^\n liqueur-glassful of brandy and a little milk , sha e\n well, and strain off into a pony tumbler; Fill tumbler with chipped ice ; put in three or\n four drops of Angostura ",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Boston Flip\n\nFill tumbler with chipped ice ; put in a teaspoonful\n of powdered sugar and a new laid egg ; add half a\n glassful of rye whiskey : shake well, and strain mto\n a small pony tumbler, putting a little grated nutmeg\n on top.\n\n\n           10—bosom CARESSER. S. D.\n   Fill tumbler with chipped ice ; put in a teaspoonful\n of raspberry syrup and a new laid egg 1              ^\n liqueur-glassful of brandy and a little milk , sha e\n well, and strain off into a pony tumbler.\n\n        ii_bottle cocktails, s. d.\n\n   The following ingredients will inake a very fine\n bottle of brandy cocktail;—Two-thirds brandy, one-\n third water, a pony-glass of Boker s bitters, a wine-\n glassful of gum syrup, and half a pony-glassful of\n   Whiskey and gin cocktails in bottles are made\n the same way, substituting whiskey or gin for the\n brandy.\n\n           12.—BRANDY COCKTAIL. S. D.\n\n   Fill tumbler with chipped ice ; put in three or\n four drops of Angostura bitters, three or four drops\n of plain syrup, and half a wine-glassful of brandy ;\n.stir well with a long spoon ; strain off into a wme\n glass, and put in a small piece of lemon peel.\n                          i6"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-008",
+      "order": 8,
+      "section_title": "Short Drinks",
+      "category": "crusta",
+      "name_original": "Brandy Crusta",
+      "name_es": "Brandy Crusta",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Crusta\n\nSame as No. 153, substituting brandy for whiskey.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-009",
+      "order": 9,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy Daisy",
+      "name_es": "Brandy Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a half-pint tumbler half full of chipped ice ;\nadd three or four dashes gum syrup, two or three\ndashes curagoa cordial, the juice of half a lemon,\na small wine-glassful of brand}', two dashes of\n\"Liquid Sunshine\" rum ; shake well, and strain\ninto a large cocktail glass, and fill up with a syphon\nseltzer water; Take a wine glass ; put in a small piece of ice;\nadd half a teaspoonful of gum syrup, half a wine-\nglassful of brandy ; stir well with spoon.",
+      "method_es": "Take a half-pint tumbler half full of chipped ice ;\nadd three or four dashes gum syrup, two or three\ndashes curagoa cordial, the juice of half a lemon,\na small wine-glassful of brand}', two dashes of\n\"Liquid Sunshine\" rum ; shake well, and strain\ninto a large cocktail glass, and fill up with a syphon\nseltzer water; Take a wine glass ; put in a small piece of ice;\nadd half a teaspoonful of gum syrup, half a wine-\nglassful of brandy ; stir well with spoon.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Daisy\n\nTake a half-pint tumbler half full of chipped ice ;\nadd three or four dashes gum syrup, two or three\ndashes curagoa cordial, the juice of half a lemon,\na small wine-glassful of brand}', two dashes of\n\"Liquid Sunshine\" rum ; shake well, and strain\ninto a large cocktail glass, and fill up with a syphon\nseltzer water.\n\n\n       IS—BRANDY AND GUM. S. D.\n  Take a wine glass ; put in a small piece of ice;\nadd half a teaspoonful of gum syrup, half a wine-\nglassful of brandy ; stir well with spoon."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-010",
+      "order": 10,
+      "section_title": "Short Drinks",
+      "category": "fizz",
+      "name_original": "Brandy Fizz",
+      "name_es": "Brandy Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Fizz\n\nSame as No. 64, substituting brandy for gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-011",
+      "order": 11,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy and Honey",
+      "name_es": "Brandy and Honey",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy and Honey\n\nSame as No. 122, substituting brandy for\"Liquid\nSunshine\" rum.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-012",
+      "order": 12,
+      "section_title": "Short Drinks",
+      "category": "julep",
+      "name_original": "Brandy Julep",
+      "name_es": "Brandy Julep",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Julep\n\nThe Brandy Julep is made with the same in\ngredients as the Mint Julep, No. 97, omitting the\nfancy adornments.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-013",
+      "order": 13,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy and Lemon",
+      "name_es": "Brandy and Lemon",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy and Lemon\n\nSame as No. 15, substituting lemon syrup for\ngum syrup.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-014",
+      "order": 14,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy and              Noyeau",
+      "name_es": "Brandy and              Noyeau",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "17\n\n\n\n\n                      strainer",
+      "method_es": "17\n\n\n\n\n                      strainer",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy and              Noyeau\n\nSame as No. 15 substituting noyeau for lemon.\n                          17\n\n\n\n\n                      strainer.\n\n\n\n\nSBgiEffl?::.' r j\n\n\n\n\n                    COBRLER MIXERS.\n                          i8",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-015",
+      "order": 15,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Brandy Punch",
+      "name_es": "Brandy Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a half-pint tumbler with chipped ice ; put\n in a teaspoonful of powdered sugar ; squeeze half\n a lemon in ; add a wine-glassful of brandy ; shake\n well, place a slice of lemon on the top, and serve\n with straws.",
+      "method_es": "Fill a half-pint tumbler with chipped ice ; put\n in a teaspoonful of powdered sugar ; squeeze half\n a lemon in ; add a wine-glassful of brandy ; shake\n well, place a slice of lemon on the top, and serve\n with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Punch\n\nFill a half-pint tumbler with chipped ice ; put\n in a teaspoonful of powdered sugar ; squeeze half\n a lemon in ; add a wine-glassful of brandy ; shake\n well, place a slice of lemon on the top, and serve\n with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-016",
+      "order": 16,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy Scaffa",
+      "name_es": "Brandy Scaffa",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Scaffa\n\nTake a long thin liqueur glass ; put in half a\nliqueur-glassful of brandy and a half of maraschino ;\nadd two dashes of Angostura bitters on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-017",
+      "order": 17,
+      "section_title": "Short Drinks",
+      "category": "sour",
+      "name_original": "Brandy Sour",
+      "name_es": "Brandy Sour",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Sour\n\nSame as No. 69, substituting brandy for gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-018",
+      "order": 18,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy Skin",
+      "name_es": "Brandy Skin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "strawberry syrup",
+          "item_es": "jarabe de fresa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in a teaspoon\nful of powdered sugar ; squeeze in half a lemon ;\nadd a teaspoonful of strawberry syrup and half a\nwine-glassful of brandy; then pare half a lemon\n(same as an apple) and put in wine glass ; shake\nwell and strain off.",
+      "method_es": "Fill tumbler with chipped ice ; put in a teaspoon\nful of powdered sugar ; squeeze in half a lemon ;\nadd a teaspoonful of strawberry syrup and half a\nwine-glassful of brandy; then pare half a lemon\n(same as an apple) and put in wine glass ; shake\nwell and strain off.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Skin\n\nFill tumbler with chipped ice ; put in a teaspoon\nful of powdered sugar ; squeeze in half a lemon ;\nadd a teaspoonful of strawberry syrup and half a\nwine-glassful of brandy; then pare half a lemon\n(same as an apple) and put in wine glass ; shake\nwell and strain off."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-019",
+      "order": 19,
+      "section_title": "Short Drinks",
+      "category": "sling",
+      "name_original": "Brandy Sling",
+      "name_es": "Brandy Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Sling\n\nSame as No. 67, substituting brandy for gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-020",
+      "order": 20,
+      "section_title": "Short Drinks",
+      "category": "smash",
+      "name_original": "Brandy Smash",
+      "name_es": "Brandy Smash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "half a",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange-peel",
+          "item_es": "orange-peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use\na half-pint tumbler, which fill with chipped ice ;\nput in a teaspoonful of powdered sugar, and half a\ntablespoonful of water ; add half a wine-glassful of\nbrandy, and a liqueur-glassful of \"Liquid Sunshine\"\nrum ; use sprigs of mint, same as in Mint Julep ;\nplace a piece of orange-peel on top, and ornament\nwith fruit in season",
+      "method_es": "Use\na half-pint tumbler, which fill with chipped ice ;\nput in a teaspoonful of powdered sugar, and half a\ntablespoonful of water ; add half a wine-glassful of\nbrandy, and a liqueur-glassful of \"Liquid Sunshine\"\nrum ; use sprigs of mint, same as in Mint Julep ;\nplace a piece of orange-peel on top, and ornament\nwith fruit in season",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Smash\n\nThis beverage is a julep on a small scale. Use\na half-pint tumbler, which fill with chipped ice ;\nput in a teaspoonful of powdered sugar, and half a\ntablespoonful of water ; add half a wine-glassful of\nbrandy, and a liqueur-glassful of \"Liquid Sunshine\"\nrum ; use sprigs of mint, same as in Mint Julep ;\nplace a piece of orange-peel on top, and ornament\nwith fruit in season.\n                          19"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-021",
+      "order": 21,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy Swizzle",
+      "name_es": "Brandy Swizzle",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill tumblor with fine chipped ice ; put in half a\ntea.spoonful of powdered sugar ; add four or five\ndrops of Boker's bitters, a dash of noyeau, and half\na wine-glassful of brandy ; then take a swizzle stick\nand swizzle well until you obtain a froth ; after which\nstrain off into a wine glass.",
+      "method_es": "Fill tumblor with fine chipped ice ; put in half a\ntea.spoonful of powdered sugar ; add four or five\ndrops of Boker's bitters, a dash of noyeau, and half\na wine-glassful of brandy ; then take a swizzle stick\nand swizzle well until you obtain a froth ; after which\nstrain off into a wine glass.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Swizzle\n\nFill tumblor with fine chipped ice ; put in half a\ntea.spoonful of powdered sugar ; add four or five\ndrops of Boker's bitters, a dash of noyeau, and half\na wine-glassful of brandy ; then take a swizzle stick\nand swizzle well until you obtain a froth ; after which\nstrain off into a wine glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-022",
+      "order": 22,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Brandy Twist",
+      "name_es": "Brandy Twist",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Brandy Twist\n\nSame as No. 160, substituting brandy for whiskey.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-023",
+      "order": 23,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Bourbon Cockt.Ail",
+      "name_es": "Bourbon Cockt.Ail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bourbon Cockt.Ail\n\nSame as No. 12, substituting Bourbon whiskey\nfor brandy.\n\n          30—bourbon sour. S. D.\n  Same as No. 69, substituting Bourbon for gin.\n   31—bourbon wfiiskey skin. S. D.\n  Same as No. 24, substituting Bourbon whiskey\nfor brandy.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-024",
+      "order": 24,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Champagne Cocktail",
+      "name_es": "Champagne Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a pony tumbler and half fill it with chipped\nice ; put in three or four drops of Angostura bitters ;\nsame of plain syrup ; fill up the glass with cham\npagne, and squeeze a small piece of lemon peel on\ntop.",
+      "method_es": "Take a pony tumbler and half fill it with chipped\nice ; put in three or four drops of Angostura bitters ;\nsame of plain syrup ; fill up the glass with cham\npagne, and squeeze a small piece of lemon peel on\ntop.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Cocktail\n\nTake a pony tumbler and half fill it with chipped\nice ; put in three or four drops of Angostura bitters ;\nsame of plain syrup ; fill up the glass with cham\npagne, and squeeze a small piece of lemon peel on\ntop."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-025",
+      "order": 25,
+      "section_title": "Short Drinks",
+      "category": "cobbler",
+      "name_original": "Champagne Cobbler",
+      "name_es": "Champagne Cobbler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a large soda-water glass and fill with chipped\nice ; put in a teaspoonful of sugar ; squeeze half\na lemon in ; add half a liqueur-glassful of brandy,\nditto of curafoa : fill up with champagne ; decorate\nwith fruits in season ; dash the top with claret, and\nserve with straws.",
+      "method_es": "Take a large soda-water glass and fill with chipped\nice ; put in a teaspoonful of sugar ; squeeze half\na lemon in ; add half a liqueur-glassful of brandy,\nditto of curafoa : fill up with champagne ; decorate\nwith fruits in season ; dash the top with claret, and\nserve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Cobbler\n\nTake a large soda-water glass and fill with chipped\nice ; put in a teaspoonful of sugar ; squeeze half\na lemon in ; add half a liqueur-glassful of brandy,\nditto of curafoa : fill up with champagne ; decorate\nwith fruits in season ; dash the top with claret, and\nserve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-026",
+      "order": 26,
+      "section_title": "Short Drinks",
+      "category": "cup",
+      "name_original": "Champagne Cup",
+      "name_es": "Champagne Cup",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Cup\n\nSame as No. 131, substituting champagne foi\nsauterne.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-027",
+      "order": 27,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Charlie'S Knickebein",
+      "name_es": "Charlie'S Knickebein",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Charlie'S Knickebein\n\nTake a wine glass ; put in half a liqueur-glassful\nof red noyeau, half ditto of maraschino, half ditto\nof yellow chartreuse in the order named, and be\ncareful not to let them mix ; next, float the un\nbroken yolk of a new laid egg on the surface, then\nbuild up a pyramid of the whisked white of the egg,\nand finally, dash a few drops of Angostura bitters\non the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-028",
+      "order": 28,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Charlie'S Own",
+      "name_es": "Charlie'S Own",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar, half ditto strawberry\n.syrup, half liqueur-glassful of yellow chartreuse, one\nliqueur-glassful of brandy, and one new laid egg ;\nshake this up well first, then add half a glassful of\nchampagne ; after which, mix well, then strain off\ninto a pony tumbler.",
+      "method_es": "Fill a tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar, half ditto strawberry\n.syrup, half liqueur-glassful of yellow chartreuse, one\nliqueur-glassful of brandy, and one new laid egg ;\nshake this up well first, then add half a glassful of\nchampagne ; after which, mix well, then strain off\ninto a pony tumbler.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Charlie'S Own\n\nFill a tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar, half ditto strawberry\n.syrup, half liqueur-glassful of yellow chartreuse, one\nliqueur-glassful of brandy, and one new laid egg ;\nshake this up well first, then add half a glassful of\nchampagne ; after which, mix well, then strain off\ninto a pony tumbler."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-029",
+      "order": 29,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Chest Protector",
+      "name_es": "Chest Protector",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Bertram.)\n  Fill a half-pint tumbler with chipped ice ; put in\na teaspoonful of sugar and a new laid egg ; add a\nliqueur-glassful of old brandy ; then shake well and\nstrain off into a small pony tumbler, sprinkling a\nlittle nutmeg on top.",
+      "method_es": "Bertram.)\n  Fill a half-pint tumbler with chipped ice ; put in\na teaspoonful of sugar and a new laid egg ; add a\nliqueur-glassful of old brandy ; then shake well and\nstrain off into a small pony tumbler, sprinkling a\nlittle nutmeg on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chest Protector\n\n(Recommended by Mr. Bertram.)\n  Fill a half-pint tumbler with chipped ice ; put in\na teaspoonful of sugar and a new laid egg ; add a\nliqueur-glassful of old brandy ; then shake well and\nstrain off into a small pony tumbler, sprinkling a\nlittle nutmeg on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-030",
+      "order": 30,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Champagne Punch",
+      "name_es": "Champagne Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "(About I Quart.)\n  Take a small punch bowl, empty into it one\nbottle of champagne, three tablespoonfuls sugar ;\none sliced orange, the juice of one lemon, two slices\nof pine apple cut in small pieces, a wine-glassful of\nraspberry or strawberry syrup ; ornament with\nfruits in season, and serve in champagne glasses; Take a large bottle or decanter, and put in\nquarter pound of raisins, two ounces cinnamon, one\nounce snake root, one lemon and one orange cut in\nslices, one ounce cloves, one ounce all",
+      "method_es": "(About I Quart.)\n  Take a small punch bowl, empty into it one\nbottle of champagne, three tablespoonfuls sugar ;\none sliced orange, the juice of one lemon, two slices\nof pine apple cut in small pieces, a wine-glassful of\nraspberry or strawberry syrup ; ornament with\nfruits in season, and serve in champagne glasses; Take a large bottle or decanter, and put in\nquarter pound of raisins, two ounces cinnamon, one\nounce snake root, one lemon and one orange cut in\nslices, one ounce cloves, one ounce all",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Champagne Punch\n\n(About I Quart.)\n  Take a small punch bowl, empty into it one\nbottle of champagne, three tablespoonfuls sugar ;\none sliced orange, the juice of one lemon, two slices\nof pine apple cut in small pieces, a wine-glassful of\nraspberry or strawberry syrup ; ornament with\nfruits in season, and serve in champagne glasses.\n 39—CHARLIE PAUL'S OWN DECANTER\n                     BITTERS.\n\n  Take a large bottle or decanter, and put in\nquarter pound of raisins, two ounces cinnamon, one\nounce snake root, one lemon and one orange cut in\nslices, one ounce cloves, one ounce allspice, and fill\nwith Santa Cruz rum, and remain until it suits the\npalate ; then decant and fill up again with the rum.\nTo be kept in bottles and served in pony glasses."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-031",
+      "order": 31,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Chinese Cocktail",
+      "name_es": "Chinese Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar ; add three or four\ndrops of Angostura bitters and half a wine-glassful\nof brandy, shake well and strain off into an ordinary\nwine glass, putting a small piece of lemon peel on\ntop.",
+      "method_es": "Fill the tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar ; add three or four\ndrops of Angostura bitters and half a wine-glassful\nof brandy, shake well and strain off into an ordinary\nwine glass, putting a small piece of lemon peel on\ntop.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Chinese Cocktail\n\nFill the tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar ; add three or four\ndrops of Angostura bitters and half a wine-glassful\nof brandy, shake well and strain off into an ordinary\nwine glass, putting a small piece of lemon peel on\ntop."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-032",
+      "order": 32,
+      "section_title": "Short Drinks",
+      "category": "cup",
+      "name_original": "Claret Cup",
+      "name_es": "Claret Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar, and squeeze half\na lemon in ; add half a liqueur-glassful of cura90a\nand a glass of claret, fill up with soda water ;\nornament with fruits in season, and serve with\nstraws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar, and squeeze half\na lemon in ; add half a liqueur-glassful of cura90a\nand a glass of claret, fill up with soda water ;\nornament with fruits in season, and serve with\nstraws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Cup\n\nFill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar, and squeeze half\na lemon in ; add half a liqueur-glassful of cura90a\nand a glass of claret, fill up with soda water ;\nornament with fruits in season, and serve with\nstraws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-033",
+      "order": 33,
+      "section_title": "Short Drinks",
+      "category": "cup",
+      "name_original": "Claret Cup A La Lord Saltoun",
+      "name_es": "Claret Cup A La Lord Saltoun",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "soda water",
+          "item_es": "agua de soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a small punch bowl: peel the rind off one\nlemon, add a tablespoonful of powdered sugar,\npour upon it a glass of sherry and a bottle of claret\nand sweeten to taste ; add a sprig of verbena and\na bottle of soda water ; strain and ice it well, and\nserve with nutmeg.",
+      "method_es": "Take a small punch bowl: peel the rind off one\nlemon, add a tablespoonful of powdered sugar,\npour upon it a glass of sherry and a bottle of claret\nand sweeten to taste ; add a sprig of verbena and\na bottle of soda water ; strain and ice it well, and\nserve with nutmeg.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Cup A La Lord Saltoun\n\nTake a small punch bowl: peel the rind off one\nlemon, add a tablespoonful of powdered sugar,\npour upon it a glass of sherry and a bottle of claret\nand sweeten to taste ; add a sprig of verbena and\na bottle of soda water ; strain and ice it well, and\nserve with nutmeg."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-034",
+      "order": 34,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Claret Punch",
+      "name_es": "Claret Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; squeeze\nhalf a lemon in ; add a teaspoonful of powdered\nsugar, and a teaspoonful of raspberry syrup ; fill up\nwith claret ; shake well ; ornament with fruits in\nseason, and serve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; squeeze\nhalf a lemon in ; add a teaspoonful of powdered\nsugar, and a teaspoonful of raspberry syrup ; fill up\nwith claret ; shake well ; ornament with fruits in\nseason, and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Punch\n\nFill half-pint tumbler with chipped ice ; squeeze\nhalf a lemon in ; add a teaspoonful of powdered\nsugar, and a teaspoonful of raspberry syrup ; fill up\nwith claret ; shake well ; ornament with fruits in\nseason, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-035",
+      "order": 35,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Claret Sangaree",
+      "name_es": "Claret Sangaree",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; fill up the tumbler with claret ; shake\nwell; add a slice of orange ; sprinkle a little nut\nmeg on top, and serve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; fill up the tumbler with claret ; shake\nwell; add a slice of orange ; sprinkle a little nut\nmeg on top, and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Claret Sangaree\n\nFill half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; fill up the tumbler with claret ; shake\nwell; add a slice of orange ; sprinkle a little nut\nmeg on top, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-036",
+      "order": 36,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Coaxer",
+      "name_es": "Coaxer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "honey",
+          "item_es": "miel",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take half-pint tumbler ; fill with chipped ice;\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add the white of an egg, half a wine-\nglassful of old Scotch whiskey ; shake up well, and\nstrain into a pony tumbler; Break an egg into a large glass ; put one teaspoonful\nof powdered sugar, a large wine-glass of port wine,\na pony-glassful of Ijrandy, and then fill up with ice ;\nshake well, and strain into a medium bar goblet ;\ngrate a little nutmeg on top, and serve with straws; Take a half-",
+      "method_es": "Take half-pint tumbler ; fill with chipped ice;\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add the white of an egg, half a wine-\nglassful of old Scotch whiskey ; shake up well, and\nstrain into a pony tumbler; Break an egg into a large glass ; put one teaspoonful\nof powdered sugar, a large wine-glass of port wine,\na pony-glassful of Ijrandy, and then fill up with ice ;\nshake well, and strain into a medium bar goblet ;\ngrate a little nutmeg on top, and serve with straws; Take a half-",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Coaxer\n\nTake half-pint tumbler ; fill with chipped ice;\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add the white of an egg, half a wine-\nglassful of old Scotch whiskey ; shake up well, and\nstrain into a pony tumbler.\n\n        46_C0FFEE cocktail. L. D.\n  The name of this drink arises only from its ap\npearance, which, when properly made, it resembles.\nBreak an egg into a large glass ; put one teaspoonful\nof powdered sugar, a large wine-glass of port wine,\na pony-glassful of Ijrandy, and then fill up with ice ;\nshake well, and strain into a medium bar goblet ;\ngrate a little nutmeg on top, and serve with straws.\n\n          47_C0FFEE punch. L. D.\n  Take a half-pint tumbler and fill with chipped\nice ; put in a teaspoonful of powdered sugar and\na liqueur-glass of brandy ; fill up the tumbler with\nblack coffee ; shake well and serve with straws,\n[In making coffee and milk punch allow the shaker\nto remain on top of the glass for a moment after\nhaving shaken,]\n       23\n\n\n\n\nCOBBLER MIXER.\n\n\n (A new pattern.)\n                          24\n\n               4S—CORKER. S.D.\n\n  Put the yolk of one egg in a goblet ; then a tea-\nspoonful of honey, two or three drops of essence of\ncloves, and a liqueur-glassful of curafoa ; mix this\nwell; then add half a pint of high burgundy made\nhot; mix well, and serve hot."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-037",
+      "order": 37,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Corpse Reviver",
+      "name_es": "Corpse Reviver",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a long, thin liqueur glass, which fill wth\nequal portions of noyeau, maraschino, and yellow\nchartreuse respectively, taking care not to mix the\ningredients, and take off at one draught.",
+      "method_es": "Take a long, thin liqueur glass, which fill wth\nequal portions of noyeau, maraschino, and yellow\nchartreuse respectively, taking care not to mix the\ningredients, and take off at one draught.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Corpse Reviver\n\nTake a long, thin liqueur glass, which fill wth\nequal portions of noyeau, maraschino, and yellow\nchartreuse respectively, taking care not to mix the\ningredients, and take off at one draught.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-038",
+      "order": 38,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Cosmopolitan Delight",
+      "name_es": "Cosmopolitan Delight",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "half a",
+          "unit": "wine glass",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of powdered sugar ;\nsqueeze half a lemon in ; add half a liqueur-glass\nful of curajoa, a tea.spoonful of orgeat syrup, and\nhalf a wine glassful of brandy ; shake well ; decorate\nwith fruits in season ; dash the top with claret, and\nserve with straws.",
+      "method_es": "Take a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of powdered sugar ;\nsqueeze half a lemon in ; add half a liqueur-glass\nful of curajoa, a tea.spoonful of orgeat syrup, and\nhalf a wine glassful of brandy ; shake well ; decorate\nwith fruits in season ; dash the top with claret, and\nserve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cosmopolitan Delight\n\nTake a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of powdered sugar ;\nsqueeze half a lemon in ; add half a liqueur-glass\nful of curajoa, a tea.spoonful of orgeat syrup, and\nhalf a wine glassful of brandy ; shake well ; decorate\nwith fruits in season ; dash the top with claret, and\nserve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-039",
+      "order": 39,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Crystal Palace Punch",
+      "name_es": "Crystal Palace Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac brandy",
+          "item_es": "cognac brandy",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer",
+          "item_es": "seltzer",
+          "amount": "3",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a large punch bowl, into which slice up\nthree oranges and a pine-apple ; then pour in a\nbottle of cognac brandy ; let them steep well, after\nwhich add two bottles of champagne, three bottles\nof seltzer ; cool it thoroughly, and serve immedi\nately; This will serve for a party of twenty.",
+      "method_es": "Take a large punch bowl, into which slice up\nthree oranges and a pine-apple ; then pour in a\nbottle of cognac brandy ; let them steep well, after\nwhich add two bottles of champagne, three bottles\nof seltzer ; cool it thoroughly, and serve immedi\nately; This will serve for a party of twenty.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Crystal Palace Punch\n\nTake a large punch bowl, into which slice up\nthree oranges and a pine-apple ; then pour in a\nbottle of cognac brandy ; let them steep well, after\nwhich add two bottles of champagne, three bottles\nof seltzer ; cool it thoroughly, and serve immedi\nately. This will serve for a party of twenty."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-040",
+      "order": 40,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Dan Godfrey'S Tickler",
+      "name_es": "Dan Godfrey'S Tickler",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "strawberry syrup",
+          "item_es": "jarabe de fresa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "fS Fill half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; add a teaspoonful of strawberry syrup,\nthe white of an egg, half a wine-glassful of Old\nTom gin ; fiU up with seltzer water ; decorate with\nfniits in season, and serve with straws",
+      "method_es": "fS Fill half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; add a teaspoonful of strawberry syrup,\nthe white of an egg, half a wine-glassful of Old\nTom gin ; fiU up with seltzer water ; decorate with\nfniits in season, and serve with straws",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dan Godfrey'S Tickler\n\nfS Fill half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; add a teaspoonful of strawberry syrup,\nthe white of an egg, half a wine-glassful of Old\nTom gin ; fiU up with seltzer water ; decorate with\nfniits in season, and serve with straws.\n\n\n\n\n                                                         -.JkW\n                        25"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-041",
+      "order": 41,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Egg Lemonade",
+      "name_es": "Egg Lemonade",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large soda glass with a few pieces of ice ;\ntake a large tablespoonful of powdered sugar ; juice\nof half a lemon ; a fresh egg ; shake well; strain\ninto a soda-water glass ; and fill up with soda or\nseltzer, and ornament with berries in season; Take a large punch bowl; empty into it two and\na half quarts fine old brandy ; one pint of Santa\nCruz rum ; one pound of white sugar ; take twenty\neggs and separate the yolks from the white, and\nbeat each separately with an egg whisk until the\nyolks",
+      "method_es": "Use a large soda glass with a few pieces of ice ;\ntake a large tablespoonful of powdered sugar ; juice\nof half a lemon ; a fresh egg ; shake well; strain\ninto a soda-water glass ; and fill up with soda or\nseltzer, and ornament with berries in season; Take a large punch bowl; empty into it two and\na half quarts fine old brandy ; one pint of Santa\nCruz rum ; one pound of white sugar ; take twenty\neggs and separate the yolks from the white, and\nbeat each separately with an egg whisk until the\nyolks",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Lemonade\n\nUse a large soda glass with a few pieces of ice ;\ntake a large tablespoonful of powdered sugar ; juice\nof half a lemon ; a fresh egg ; shake well; strain\ninto a soda-water glass ; and fill up with soda or\nseltzer, and ornament with berries in season.\n\n\n\n    54.—egg nogg for a party, l. d.\n  Take a large punch bowl; empty into it two and\na half quarts fine old brandy ; one pint of Santa\nCruz rum ; one pound of white sugar ; take twenty\neggs and separate the yolks from the white, and\nbeat each separately with an egg whisk until the\nyolks are well cut up, and the whites assume a light\nfrothy appearance ; mix all the ingredients in the\nbowl (except the whites of the eggs) ; then pour\ngradually two and a half gallons of rich milk, with\nwhich is mixed the yolks, taking care to keep it\nwell stirred ; then float on the top the whites, and\nornament with coloured sugars ; then cool in an\nice tub and serve."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-042",
+      "order": 42,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Egg Nogg",
+      "name_es": "Egg Nogg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "1       1-          .f.-l   U,        ^\n\n\n\n\"Liquid Sunshme\"i\"um, -    an fill up with new milk ;\n                           and\nshake well, and strain off into pony tumblers,\nsprinkling a little grated nutmeg on top; Fill tumbler with chipped ice ; put in a teaspoon-\nful of powdered sugar and a new laid egg ; add a\nliqueur-glassful of brandy, and a liqueur-glass of\n rum ; then shake well and strain ofi; Half fill a half-pint tumbler with chipped ice ;\n add two dashes of cura90a or maraschino ; a",
+      "method_es": "1       1-          .f.-l   U,        ^\n\n\n\n\"Liquid Sunshme\"i\"um, -    an fill up with new milk ;\n                           and\nshake well, and strain off into pony tumblers,\nsprinkling a little grated nutmeg on top; Fill tumbler with chipped ice ; put in a teaspoon-\nful of powdered sugar and a new laid egg ; add a\nliqueur-glassful of brandy, and a liqueur-glass of\n rum ; then shake well and strain ofi; Half fill a half-pint tumbler with chipped ice ;\n add two dashes of cura90a or maraschino ; a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Egg Nogg\n\nFiU a tumbler with chipped ice ; put in a new\nlaid egg, a liqueur-glassful of brandy, one ditto of\n  . 1       1-          .f.-l   U,        ^\n\n\n\n\"Liquid Sunshme\"i\"um, -    an fill up with new milk ;\n                           and\nshake well, and strain off into pony tumblers,\nsprinkling a little grated nutmeg on top.\n\n\n            5&—EYE OPENER. S. D.\n\n   Fill tumbler with chipped ice ; put in a teaspoon-\nful of powdered sugar and a new laid egg ; add a\nliqueur-glassful of brandy, and a liqueur-glass of\n rum ; then shake well and strain ofi.\n                           26\n\n\n 57—fancy MANHATTAN COCKTAIL. S. D.\n   Half fill a half-pint tumbler with chipped ice ;\n add two dashes of cura90a or maraschino ; a pony\n of rye whiskey ; one wine-glass of vermouth ; three\n dashes Boker's bitters ; shake well; strain into a\n claret glass, and add a small piece of lemon ; if\nrequired sweet add two dashes of gum syrup."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-043",
+      "order": 43,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Fisherm.A.N'S Prayer",
+      "name_es": "Fisherm.A.N'S Prayer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "FiU a half-pint tumbler with chipped ice ; put in\nhalf a teaspoonful of powdered sugar ; squeeze half\na lemon in, add a liqueur-glassful of raspberry syrup\nand half a wine-glassful of\"Liquid Sunshine\"rum ;\nshake well; decorate with fruits in season, and serve\nrvith straws.",
+      "method_es": "FiU a half-pint tumbler with chipped ice ; put in\nhalf a teaspoonful of powdered sugar ; squeeze half\na lemon in, add a liqueur-glassful of raspberry syrup\nand half a wine-glassful of\"Liquid Sunshine\"rum ;\nshake well; decorate with fruits in season, and serve\nrvith straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fisherm.A.N'S Prayer\n\nFiU a half-pint tumbler with chipped ice ; put in\nhalf a teaspoonful of powdered sugar ; squeeze half\na lemon in, add a liqueur-glassful of raspberry syrup\nand half a wine-glassful of\"Liquid Sunshine\"rum ;\nshake well; decorate with fruits in season, and serve\nrvith straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-044",
+      "order": 44,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Flash of Lightning. 8. D",
+      "name_es": "Flash of Lightning. 8. D",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice, into which squeeze\nhalf a lemon ; then add half a teaspoonful of sugar,\na teaspoonful of raspberry syrup, half a wineglass-\nful of brandy, a little cayenne pepper ; then strain\noff.",
+      "method_es": "Fill tumbler with chipped ice, into which squeeze\nhalf a lemon ; then add half a teaspoonful of sugar,\na teaspoonful of raspberry syrup, half a wineglass-\nful of brandy, a little cayenne pepper ; then strain\noff.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Flash of Lightning. 8. D\n\nFill tumbler with chipped ice, into which squeeze\nhalf a lemon ; then add half a teaspoonful of sugar,\na teaspoonful of raspberry syrup, half a wineglass-\nful of brandy, a little cayenne pepper ; then strain\noff."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-045",
+      "order": 45,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Fruit Punch",
+      "name_es": "Fruit Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a half-pint tumbler with chipped ice ; squeeze\na lemon in ; add half a liqueur-glass of vanilla\nsyrup, half ditto of strawberry, half ditto of nectar ;\nfill up the tumbler with soda-water ; decorate with\nfruits in season, and serve with straws.",
+      "method_es": "Fill a half-pint tumbler with chipped ice ; squeeze\na lemon in ; add half a liqueur-glass of vanilla\nsyrup, half ditto of strawberry, half ditto of nectar ;\nfill up the tumbler with soda-water ; decorate with\nfruits in season, and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fruit Punch\n\nFill a half-pint tumbler with chipped ice ; squeeze\na lemon in ; add half a liqueur-glass of vanilla\nsyrup, half ditto of strawberry, half ditto of nectar ;\nfill up the tumbler with soda-water ; decorate with\nfruits in season, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-046",
+      "order": 46,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Gin     Cocktail",
+      "name_es": "Gin     Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin     Cocktail\n\nSame as No. 12, substituting gin for brandy.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-047",
+      "order": 47,
+      "section_title": "Short Drinks",
+      "category": "crusta",
+      "name_original": "Gin     Crusta",
+      "name_es": "Gin     Crusta",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "27\n\n\n\n\n                    m\n\n\nICE SPOON   AND STRAINER",
+      "method_es": "27\n\n\n\n\n                    m\n\n\nICE SPOON   AND STRAINER",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin     Crusta\n\nSame as No. 153, substituting gin for Bourbon\nwhiskey.\n            27\n\n\n\n\n                    m\n\n\nICE SPOON   AND STRAINER.\n\n\n\n\n        ICE PAIL.\n\n\n\n\n       ICE TONGS.\n        28\n\n\n\n\nmixing spoons.\n\n\n\n\nWINE COOLER.\n\n\n\n\nICE breaker.\n\n\n\n\n  ICE   AXE.\n                         29",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-048",
+      "order": 48,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Gin Daisy",
+      "name_es": "Gin Daisy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take half-pint tumbler half full chipped ice, add\nthree or four dashes of orgeat or gum syrup, three\ndashes of maraschino, juice of half lemon, a wine-\nglassful of Hollands gin ; shake well ; strain into\nlarge cocktail glass, and fill up with seltzer or\napollinaris water.",
+      "method_es": "Take half-pint tumbler half full chipped ice, add\nthree or four dashes of orgeat or gum syrup, three\ndashes of maraschino, juice of half lemon, a wine-\nglassful of Hollands gin ; shake well ; strain into\nlarge cocktail glass, and fill up with seltzer or\napollinaris water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Daisy\n\nTake half-pint tumbler half full chipped ice, add\nthree or four dashes of orgeat or gum syrup, three\ndashes of maraschino, juice of half lemon, a wine-\nglassful of Hollands gin ; shake well ; strain into\nlarge cocktail glass, and fill up with seltzer or\napollinaris water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-049",
+      "order": 49,
+      "section_title": "Short Drinks",
+      "category": "fizz",
+      "name_original": "Gin Fizz",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add half a wine-glassful of Old Tom gin ;\nfill up with soda-water, and serve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add half a wine-glassful of Old Tom gin ;\nfill up with soda-water, and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Fizz\n\nFill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add half a wine-glassful of Old Tom gin ;\nfill up with soda-water, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-050",
+      "order": 50,
+      "section_title": "Short Drinks",
+      "category": "julep",
+      "name_original": "Gin Julep",
+      "name_es": "Gin Julep",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Julep\n\nThe Gin Julep is made with the same ingredients\nas the Mint Julep (No. 97), omitting the fancy\nadornments, and using gin as the basis.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-051",
+      "order": 51,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Gin Skin",
+      "name_es": "Gin Skin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler\nwith chipped ice ; put in a liqueur-glassful of plain\nsyrup ; squeeze half a lemon in ; add half glassful\nof Old Tom gin, and fill up with soda-water; Then\nplace slice of lemon and orange on top, and serve\nwith straws.",
+      "method_es": "Fill half-pint tumbler\nwith chipped ice ; put in a liqueur-glassful of plain\nsyrup ; squeeze half a lemon in ; add half glassful\nof Old Tom gin, and fill up with soda-water; Then\nplace slice of lemon and orange on top, and serve\nwith straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Skin\n\nSame as No. 24, substituting gin for brandy.\n\n\n            67.—GIN SLING. L. D.\n  This is a favourite drink. Fill half-pint tumbler\nwith chipped ice ; put in a liqueur-glassful of plain\nsyrup ; squeeze half a lemon in ; add half glassful\nof Old Tom gin, and fill up with soda-water. Then\nplace slice of lemon and orange on top, and serve\nwith straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-052",
+      "order": 52,
+      "section_title": "Short Drinks",
+      "category": "smash",
+      "name_original": "Gin Smash",
+      "name_es": "Gin Smash",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Smash\n\nSame as No. 26, substituting gin for brandy.\n                          30",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-053",
+      "order": 53,
+      "section_title": "Short Drinks",
+      "category": "sour",
+      "name_original": "Gin Sour",
+      "name_es": "Gin Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "strawberry syrup",
+          "item_es": "jarabe de fresa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar and a teaspoonful\nof raspberrj' syrup ; squeeze into the tumbler half a\nlemon ; add half a wine-glassful of gin, and strain\noff, putting a small piece of lemon peel on toj^; Take a wine glass ; put in a small piece of ice, a\nteaspoonful of strawberry syrup and half a tea\nspoonful of lemon juice ; fill up with Old Tom gin,\nthen pare half a lemon, twist, and drop in.",
+      "method_es": "Fill the tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar and a teaspoonful\nof raspberrj' syrup ; squeeze into the tumbler half a\nlemon ; add half a wine-glassful of gin, and strain\noff, putting a small piece of lemon peel on toj^; Take a wine glass ; put in a small piece of ice, a\nteaspoonful of strawberry syrup and half a tea\nspoonful of lemon juice ; fill up with Old Tom gin,\nthen pare half a lemon, twist, and drop in.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Sour\n\nFill the tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar and a teaspoonful\nof raspberrj' syrup ; squeeze into the tumbler half a\nlemon ; add half a wine-glassful of gin, and strain\noff, putting a small piece of lemon peel on toj^.\n\n\n            70.—GIN SWIZZLE. S. D.\n   Same as No. 27, substituting gin for brandy.\n\n\n             7i_GIN twist.          S. D.\n  Take a wine glass ; put in a small piece of ice, a\nteaspoonful of strawberry syrup and half a tea\nspoonful of lemon juice ; fill up with Old Tom gin,\nthen pare half a lemon, twist, and drop in."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-054",
+      "order": 54,
+      "section_title": "Short Drinks",
+      "category": "fizz",
+      "name_original": "Golden Fizz",
+      "name_es": "Golden Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "yolk of an egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; add half a wine-glassful of Old lorn\ngin, the yolk of an egg ; shake well ; fill up with\nsoda-water, and seiwe with straws.",
+      "method_es": "Fill a half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; add half a wine-glassful of Old lorn\ngin, the yolk of an egg ; shake well ; fill up with\nsoda-water, and seiwe with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Golden Fizz\n\nFill a half-pint tumbler with chipped ice ; put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon in ; add half a wine-glassful of Old lorn\ngin, the yolk of an egg ; shake well ; fill up with\nsoda-water, and seiwe with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-055",
+      "order": 55,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "H0T American Punch",
+      "name_es": "H0T American Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "The compound must be served\nflaming, and will be found sufficient for a party of\nfifteen.",
+      "method_es": "The compound must be served\nflaming, and will be found sufficient for a party of\nfifteen.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "H0T American Punch\n\nTake a punch bowl ; put in a quarter pound of\nloaf sugar, the juice of a lemon; then add half a\npint of brandy and half a pint of\"Liquid Sunshine\"\nrum ; then set light to this ; next make an infusion\nof green tea, one ounce to a quart and a half of watM ;\npour the tea gently into the bowl, and add the rind\nof half a lemon. The compound must be served\nflaming, and will be found sufficient for a party of\nfifteen."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-056",
+      "order": 56,
+      "section_title": "Short Drinks",
+      "category": "flip",
+      "name_original": "Hot Brandy Flip",
+      "name_es": "Hot Brandy Flip",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a tumbler ; put in a teaspoonful of powdered\nsugar and three parts of a wineglassful of brandy ■\nfill the tumbler one-third of boiling water ; mix and\nplace a toasted biscuit on top, and grate a little\nnutmeg on it",
+      "method_es": "Take a tumbler ; put in a teaspoonful of powdered\nsugar and three parts of a wineglassful of brandy ■\nfill the tumbler one-third of boiling water ; mix and\nplace a toasted biscuit on top, and grate a little\nnutmeg on it",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Brandy Flip\n\nTake a tumbler ; put in a teaspoonful of powdered\nsugar and three parts of a wineglassful of brandy ■\nfill the tumbler one-third of boiling water ; mix and\nplace a toasted biscuit on top, and grate a little\nnutmeg on it.\n\n          7S—HOT EGG NOGG. L. D.\nSame as No. 55, using boiling water in place of ice.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-057",
+      "order": 57,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Hot Milk Punch",
+      "name_es": "Hot Milk Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Milk Punch\n\nTake a punch bowl ; add half a pound of\npowdered sugar, two quarts of boiling milk one\nbottle of brandy, half of \"Liquid Sunshine\" rum •\nmix well, and grate half a nutmeg on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-058",
+      "order": 58,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Fiot Port Negus",
+      "name_es": "Fiot Port Negus",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a tumbler ; put in a teaspoonful of sugar\nand a glass of port wine ; fill up with boiling water\nand grate a little nutmeg on top.",
+      "method_es": "Take a tumbler ; put in a teaspoonful of sugar\nand a glass of port wine ; fill up with boiling water\nand grate a little nutmeg on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fiot Port Negus\n\nTake a tumbler ; put in a teaspoonful of sugar\nand a glass of port wine ; fill up with boiling water\nand grate a little nutmeg on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-059",
+      "order": 59,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Hot Tom and Jerry",
+      "name_es": "Hot Tom and Jerry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ground cinnamon",
+          "item_es": "ground cinnamon",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "grated nutmeg",
+          "item_es": "grated nutmeg",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "(the way to serve TOM AND JERRY.)\n  Take two shakers, heat them well with boiling\nwater ; then pour in half of the mixture and half of\nboiling water, and keep pouring them from one\nshaker to the other, until you have attained a vood\nfroth ; then heat a jug and pour the liquid in, v^ich\nsprinkle with a little grated nutmeg on top",
+      "method_es": "(the way to serve TOM AND JERRY.)\n  Take two shakers, heat them well with boiling\nwater ; then pour in half of the mixture and half of\nboiling water, and keep pouring them from one\nshaker to the other, until you have attained a vood\nfroth ; then heat a jug and pour the liquid in, v^ich\nsprinkle with a little grated nutmeg on top",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Hot Tom and Jerry\n\nTake a punch bowl, into which put the yolks of\ntwelve eggs, and beat them up until as thin as\nwater ; then add one pound of powdered sugar, half\na teaspoonful of ground cinnamon, ditto of ground\nclove.?, ditto of allspice; next beat the whites of eggs\ninto a stiff froth, pour into the first bowl, and mix\nwell; then add one bottle of brandy, one ditto of\n\"I-iquid Sunshine\"rum. This will be sufficient for\na party of twenty.\n      (the way to serve TOM AND JERRY.)\n  Take two shakers, heat them well with boiling\nwater ; then pour in half of the mixture and half of\nboiling water, and keep pouring them from one\nshaker to the other, until you have attained a vood\nfroth ; then heat a jug and pour the liquid in, v^ich\nsprinkle with a little grated nutmeg on top. This\nwill be found a delicious drink for a cold winter'.?\nnight.\n                           32\n\n\n             79—imperial punch.\n\n  Take a large punch bowl, into which pnt a\nquarter pound of powdered sugar, a wine-glassful of\nmaraschino, two bottles of claret, one ditto of soda-\nwater, six slices of pucumber peel, quarter of a\nteaspoonful of grated nutmeg ; then slice two\nlemons in ; mix well and put in a large block of ice.\nThis will servo for a party of ten."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-060",
+      "order": 60,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Improved          Brandy Cocktail",
+      "name_es": "Improved          Brandy Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint glass one third of chipped ice, two\ndashes Boker's (or Angostura) bitters, three dashes\ngum syrup, two dashes maraschino, one dash\nabsinthe, a small wine-glass of brandy ; .shake well\nand strain into cocktail glass; squeeze a small piece\nof lemon peel and leave it in the glass, and serve",
+      "method_es": "Fill half-pint glass one third of chipped ice, two\ndashes Boker's (or Angostura) bitters, three dashes\ngum syrup, two dashes maraschino, one dash\nabsinthe, a small wine-glass of brandy ; .shake well\nand strain into cocktail glass; squeeze a small piece\nof lemon peel and leave it in the glass, and serve",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Improved          Brandy Cocktail\n\nFill half-pint glass one third of chipped ice, two\ndashes Boker's (or Angostura) bitters, three dashes\ngum syrup, two dashes maraschino, one dash\nabsinthe, a small wine-glass of brandy ; .shake well\nand strain into cocktail glass; squeeze a small piece\nof lemon peel and leave it in the glass, and serve.\nThe flavour is improved by moistening the edge of\nthe glass with a piece of lemon."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-061",
+      "order": 61,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Italian Lemonade",
+      "name_es": "Italian Lemonade",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "(For a party of Ten.)\n  Use a large pitcher; pare the rind of twenty-four\nlemons, squeeze the juice upon the peel and let it\nremain all night ; then add two pounds of sugar,\none quart of sherry, three quarts of boiling water ;\nmix well, and then add one quart of boiling milk\nand strain through a jelly bag till it is clear.",
+      "method_es": "(For a party of Ten.)\n  Use a large pitcher; pare the rind of twenty-four\nlemons, squeeze the juice upon the peel and let it\nremain all night ; then add two pounds of sugar,\none quart of sherry, three quarts of boiling water ;\nmix well, and then add one quart of boiling milk\nand strain through a jelly bag till it is clear.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Italian Lemonade\n\n(For a party of Ten.)\n  Use a large pitcher; pare the rind of twenty-four\nlemons, squeeze the juice upon the peel and let it\nremain all night ; then add two pounds of sugar,\none quart of sherry, three quarts of boiling water ;\nmix well, and then add one quart of boiling milk\nand strain through a jelly bag till it is clear.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-062",
+      "order": 62,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Japanese Cocktail",
+      "name_es": "Japanese Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Half fill a tumbler with chipped ice ; add a table-\nspoonful of orgeat syrup, two dashes of Boker's^\n.spuuuiui 01 orgeat syrup, two uasuca\nbitters, -\nbitters  a —'\n           wine-glass\n                ' '   of'\n                        brandy, one or two pieces \"f\n                                                  of\nlemon peel ; stir well, and strain into a cocktail\nlemon\nglass; 33\n\n\n\n\n\\o\n\n\n\n\n     THE \"IMPERIAL\" SHAKER; 34\n\n\n\n\n        V'\np:_         ^\n\n h-.' H'f\n\n\n\n\n                MILK SHAKE AN",
+      "method_es": "Half fill a tumbler with chipped ice ; add a table-\nspoonful of orgeat syrup, two dashes of Boker's^\n.spuuuiui 01 orgeat syrup, two uasuca\nbitters, -\nbitters  a —'\n           wine-glass\n                ' '   of'\n                        brandy, one or two pieces \"f\n                                                  of\nlemon peel ; stir well, and strain into a cocktail\nlemon\nglass; 33\n\n\n\n\n\\o\n\n\n\n\n     THE \"IMPERIAL\" SHAKER; 34\n\n\n\n\n        V'\np:_         ^\n\n h-.' H'f\n\n\n\n\n                MILK SHAKE AN",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Japanese Cocktail\n\nHalf fill a tumbler with chipped ice ; add a table-\nspoonful of orgeat syrup, two dashes of Boker's^\n.spuuuiui 01 orgeat syrup, two uasuca\nbitters, -\nbitters  a —'\n           wine-glass\n                ' '   of'\n                        brandy, one or two pieces \"f\n                                                  of\nlemon peel ; stir well, and strain into a cocktail\nlemon\nglass.\n               33\n\n\n\n\n\\o\n\n\n\n\n     THE \"IMPERIAL\" SHAKER.\n                             34\n\n\n\n\n        V'\np:_         ^\n\n h-.' H'f\n\n\n\n\n                MILK SHAKE AND BEVERAGE MIXER.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-063",
+      "order": 63,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Java Punch",
+      "name_es": "Java Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in half a tea-\nspoonful of powdered sugar, a teaspoonful of vanilla\nsyrup ; squeeze half a lemon in ; add a liqueur-\nglassful of brandy and the same of rum ; shake well\nand strain off, putting a slice of orange on top.",
+      "method_es": "Fill tumbler with chipped ice ; put in half a tea-\nspoonful of powdered sugar, a teaspoonful of vanilla\nsyrup ; squeeze half a lemon in ; add a liqueur-\nglassful of brandy and the same of rum ; shake well\nand strain off, putting a slice of orange on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Java Punch\n\nFill tumbler with chipped ice ; put in half a tea-\nspoonful of powdered sugar, a teaspoonful of vanilla\nsyrup ; squeeze half a lemon in ; add a liqueur-\nglassful of brandy and the same of rum ; shake well\nand strain off, putting a slice of orange on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-064",
+      "order": 64,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Jersey Cocktail",
+      "name_es": "Jersey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "5-6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in\nfive or six drops of Angostura bitters, add half a tea-\nspoonful of powdered sugar ; fill up the tumbler\nwith cyder ; place a piece of lemon peel on top and\nserve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in\nfive or six drops of Angostura bitters, add half a tea-\nspoonful of powdered sugar ; fill up the tumbler\nwith cyder ; place a piece of lemon peel on top and\nserve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Jersey Cocktail\n\nFill half-pint tumbler with chipped ice ; put in\nfive or six drops of Angostura bitters, add half a tea-\nspoonful of powdered sugar ; fill up the tumbler\nwith cyder ; place a piece of lemon peel on top and\nserve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-065",
+      "order": 65,
+      "section_title": "Short Drinks",
+      "category": "cup",
+      "name_original": "Jersey Cup",
+      "name_es": "Jersey Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar ; squeeze half a\nlemon in ; add a teaspoonful of pine-apple syrup\nhalf wine-glassful of brandy ; fill up the balance\nwith cyder : ornament with fruit in season, and\nserve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar ; squeeze half a\nlemon in ; add a teaspoonful of pine-apple syrup\nhalf wine-glassful of brandy ; fill up the balance\nwith cyder : ornament with fruit in season, and\nserve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Jersey Cup\n\nFill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar ; squeeze half a\nlemon in ; add a teaspoonful of pine-apple syrup\nhalf wine-glassful of brandy ; fill up the balance\nwith cyder : ornament with fruit in season, and\nserve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-066",
+      "order": 66,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "John Collins",
+      "name_es": "John Collins",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice • put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon m ; add half wine-glassful of Old Tom gin •\nfill up with soda-water ; ornament with fniits in\nseason, and serve with straws; [This drink originated from the fact of many\npeople wishing to taste an American drink, but really\nnot knowing which to choose.]\n  Fill tumbler with chipped ice ; put in half a tea\nspoonful of powdered sugar ; squeeze half a lemon\nin , add a teaspoonful of raspberry syru",
+      "method_es": "Fill half-pint tumbler with chipped ice • put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon m ; add half wine-glassful of Old Tom gin •\nfill up with soda-water ; ornament with fniits in\nseason, and serve with straws; [This drink originated from the fact of many\npeople wishing to taste an American drink, but really\nnot knowing which to choose.]\n  Fill tumbler with chipped ice ; put in half a tea\nspoonful of powdered sugar ; squeeze half a lemon\nin , add a teaspoonful of raspberry syru",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "John Collins\n\nFill half-pint tumbler with chipped ice • put in\na teaspoonful of powdered sugar ; squeeze half a\nlemon m ; add half wine-glassful of Old Tom gin •\nfill up with soda-water ; ornament with fniits in\nseason, and serve with straws.\n\n\n         87—leave it to me. S. D.\n  [This drink originated from the fact of many\npeople wishing to taste an American drink, but really\nnot knowing which to choose.]\n  Fill tumbler with chipped ice ; put in half a tea\nspoonful of powdered sugar ; squeeze half a lemon\nin , add a teaspoonful of raspberry syrup and one\nof maraschino ; half a wine-glassful of Old Tom gin ;\nthen strain off with a small pony tumbler, and place\na slice of lemon on top.\n  [You will find this a very pleasant beverage.]\n                          36"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-067",
+      "order": 67,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Lemonade For Parties",
+      "name_es": "Lemonade For Parties",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "(About a Gallon.)\n\n  Take tlie rind of eight lemons, and rub with two\npounds of sugar to extract the oil, which is all to\nbe put in a large punch bowl ; add the juice of\ntwelve lemons, and pour boiling water over all, and\nwhen mixed strain through muslin; when cold\nready for use",
+      "method_es": "(About a Gallon.)\n\n  Take tlie rind of eight lemons, and rub with two\npounds of sugar to extract the oil, which is all to\nbe put in a large punch bowl ; add the juice of\ntwelve lemons, and pour boiling water over all, and\nwhen mixed strain through muslin; when cold\nready for use",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lemonade For Parties\n\n(About a Gallon.)\n\n  Take tlie rind of eight lemons, and rub with two\npounds of sugar to extract the oil, which is all to\nbe put in a large punch bowl ; add the juice of\ntwelve lemons, and pour boiling water over all, and\nwhen mixed strain through muslin; when cold\nready for use. This can be improved by adding\nthe whites of four eggs, beaten up in it.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-068",
+      "order": 68,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Lemon Squash",
+      "name_es": "Lemon Squash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "(A very cool and refreshing drink.)\n  Take a soda-water glass, and fill with chipped\nice • squeeze a whole lemon in ; add i h teaspoonfuls\nof powdered sugar ; fill up the glass with soda-\nwater ; stir well with spoon ; ornament with fruits\nin season, and serve with straws; Fill tumbler with chipped ice ; put in two or three\ndrops of Angostura bitters, two or three drops ot\nlemon juice ; add a teaspoonful of raspberry syrup,\na liqueur-glassful of brandy, half a glassful of\ncharhpagne ; then stir ",
+      "method_es": "(A very cool and refreshing drink.)\n  Take a soda-water glass, and fill with chipped\nice • squeeze a whole lemon in ; add i h teaspoonfuls\nof powdered sugar ; fill up the glass with soda-\nwater ; stir well with spoon ; ornament with fruits\nin season, and serve with straws; Fill tumbler with chipped ice ; put in two or three\ndrops of Angostura bitters, two or three drops ot\nlemon juice ; add a teaspoonful of raspberry syrup,\na liqueur-glassful of brandy, half a glassful of\ncharhpagne ; then stir ",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lemon Squash\n\n(A very cool and refreshing drink.)\n  Take a soda-water glass, and fill with chipped\nice • squeeze a whole lemon in ; add i h teaspoonfuls\nof powdered sugar ; fill up the glass with soda-\nwater ; stir well with spoon ; ornament with fruits\nin season, and serve with straws.\n\n\n               90- -LIVENER.       S. D.\n\n  Fill tumbler with chipped ice ; put in two or three\ndrops of Angostura bitters, two or three drops ot\nlemon juice ; add a teaspoonful of raspberry syrup,\na liqueur-glassful of brandy, half a glassful of\ncharhpagne ; then stir well with large spoon and strain\noff into a pony tumbler ; put a piece of lemon on\ntop."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-069",
+      "order": 69,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Locomotive",
+      "name_es": "Locomotive",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "essence of cloves",
+          "item_es": "esencia de clavo",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "yolk of an egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the tumbler with chipped ice ; put in a tea-\nspoonful of sugar, the yolk of an egg, half a\nliqueur-glassful of ciirajoa, two or three drops of\n essence of cloves, one wine-glassful of Burgundy,\n and strain off into an ordinary wine glass",
+      "method_es": "Fill the tumbler with chipped ice ; put in a tea-\nspoonful of sugar, the yolk of an egg, half a\nliqueur-glassful of ciirajoa, two or three drops of\n essence of cloves, one wine-glassful of Burgundy,\n and strain off into an ordinary wine glass",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Locomotive\n\nFill the tumbler with chipped ice ; put in a tea-\nspoonful of sugar, the yolk of an egg, half a\nliqueur-glassful of ciirajoa, two or three drops of\n essence of cloves, one wine-glassful of Burgundy,\n and strain off into an ordinary wine glass.\n     37\n\n\n\n\n                            .1 '|;lA\n\n\n\n\nICE CRUSHER.\n\n\n\n\n               ..   ■   ■\n       38\n\n\n\n\nROTARY ICE SHAVER.\n                           39"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-070",
+      "order": 70,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Maiden'S Blush",
+      "name_es": "Maiden'S Blush",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tumbler with chipped ice ; put in half a\n teaspoonful of powdered sugar, a teaspoonful of\nraspberry syrup ; squeeze half a lemon in ; add half\na teaspoonful of absinthe, half a wine-glassfnl of\nOld Tom gin ; .shake well and strain off into a\ncoloured glass, putting a slice of lemon-on top.",
+      "method_es": "Fill a tumbler with chipped ice ; put in half a\n teaspoonful of powdered sugar, a teaspoonful of\nraspberry syrup ; squeeze half a lemon in ; add half\na teaspoonful of absinthe, half a wine-glassfnl of\nOld Tom gin ; .shake well and strain off into a\ncoloured glass, putting a slice of lemon-on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Maiden'S Blush\n\nFill a tumbler with chipped ice ; put in half a\n teaspoonful of powdered sugar, a teaspoonful of\nraspberry syrup ; squeeze half a lemon in ; add half\na teaspoonful of absinthe, half a wine-glassfnl of\nOld Tom gin ; .shake well and strain off into a\ncoloured glass, putting a slice of lemon-on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-071",
+      "order": 71,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Manhattan Cocktail",
+      "name_es": "Manhattan Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters, ditto of plain\nsyrup ; add half a liqueur-gla.ssful of vermouth\nhalf wine-glassful of Scotch whiskey ; stir well with\nspoon and put small piece of lemon on top.",
+      "method_es": "Fill tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters, ditto of plain\nsyrup ; add half a liqueur-gla.ssful of vermouth\nhalf wine-glassful of Scotch whiskey ; stir well with\nspoon and put small piece of lemon on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Manhattan Cocktail\n\nFill tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters, ditto of plain\nsyrup ; add half a liqueur-gla.ssful of vermouth\nhalf wine-glassful of Scotch whiskey ; stir well with\nspoon and put small piece of lemon on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-072",
+      "order": 72,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Martinez Cocktail",
+      "name_es": "Martinez Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "shake well, and strain into a large cocktail glass'\nserve with a slice of lemon ; if required sweet add\ntwo dashes of gum syrup",
+      "method_es": "shake well, and strain into a large cocktail glass'\nserve with a slice of lemon ; if required sweet add\ntwo dashes of gum syrup",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Martinez Cocktail\n\nTake half-pint tumbler half full chipped ice • add\none da.sh Boker's bitter^ two dashes maraschino\npony of Old Tom gin, wine-glassful vermouth .\nshake well, and strain into a large cocktail glass'\nserve with a slice of lemon ; if required sweet add\ntwo dashes of gum syrup.                      '",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-073",
+      "order": 73,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Milk Punch",
+      "name_es": "Milk Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice • put in\na teaspoonful of powdered sugar, half wine-glassful\nof brandy, and a liqueur-glassful of \"Liquid Sun\n.shine\" rum ; fill up with new milk ; shake well ■\nsprinkle a little nutmeg on top, and serve with\nstraws; Take a large soda glass and fill up half milk and\nhalf seltzer water; Take a large soda-water glass; put in a tea-\n  spoonful of powdered sugar, a table-spoonful of\n  water; mix r/ell with a spoon ; take two or three\n  sprigs of fresh mint and",
+      "method_es": "Fill half-pint tumbler with chipped ice • put in\na teaspoonful of powdered sugar, half wine-glassful\nof brandy, and a liqueur-glassful of \"Liquid Sun\n.shine\" rum ; fill up with new milk ; shake well ■\nsprinkle a little nutmeg on top, and serve with\nstraws; Take a large soda glass and fill up half milk and\nhalf seltzer water; Take a large soda-water glass; put in a tea-\n  spoonful of powdered sugar, a table-spoonful of\n  water; mix r/ell with a spoon ; take two or three\n  sprigs of fresh mint and",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Milk Punch\n\nFill half-pint tumbler with chipped ice • put in\na teaspoonful of powdered sugar, half wine-glassful\nof brandy, and a liqueur-glassful of \"Liquid Sun\n.shine\" rum ; fill up with new milk ; shake well ■\nsprinkle a little nutmeg on top, and serve with\nstraws.\n\n\n\n          9(S—MILK SELTZER. L. D.\n\n  Take a large soda glass and fill up half milk and\nhalf seltzer water.\n                             40\n\n\n              97—mint julep. L. D.\n    Take a large soda-water glass; put in a tea-\n  spoonful of powdered sugar, a table-spoonful of\n  water; mix r/ell with a spoon ; take two or three\n  sprigs of fresh mint and press them well in the\n  sugar and water until the flavour of the mint is\n  extracted ; then take out the mint, add half a wine-\n glassful of brandy, half a liqueur-glassful of old\n \"Liquid Sunshine\" rum, half a liqueur-glassful of\n yellow chartreuse: then fill the tumbler full of ,\n chipped ice ; shake well; decorate the top with\n  fruits in season, and place a bouquet of mint on top ;\n  finally, dash with claret and sprinkle a little white\n  powdered sugar over the mint, and serve with straws.\n  This is a drink fit for a king."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-074",
+      "order": 74,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Mixed Punch",
+      "name_es": "Mixed Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a half-pint tumbler with chipped ice ; squeeze\n  half a lemon in, add half a teaspoonful of powdered\n  sugar, a liqueur-glass of pineapple syrup, half a\n  glass of brandy, one liqueur-glass of \"Liquid\n  Sunshine\"rum ; then shake well and decorate with\n  fruits in season and serve with straws.",
+      "method_es": "Fill a half-pint tumbler with chipped ice ; squeeze\n  half a lemon in, add half a teaspoonful of powdered\n  sugar, a liqueur-glass of pineapple syrup, half a\n  glass of brandy, one liqueur-glass of \"Liquid\n  Sunshine\"rum ; then shake well and decorate with\n  fruits in season and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mixed Punch\n\nFill a half-pint tumbler with chipped ice ; squeeze\n  half a lemon in, add half a teaspoonful of powdered\n  sugar, a liqueur-glass of pineapple syrup, half a\n  glass of brandy, one liqueur-glass of \"Liquid\n  Sunshine\"rum ; then shake well and decorate with\n  fruits in season and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-075",
+      "order": 75,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Morning Glory Cocktail",
+      "name_es": "Morning Glory Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a large tumbler half full of chipped ice ;\n  add three dashes gum syrup, two dashes of curaqoa,\n' two dashes Boker's bitters, one dash absinthe, one\n  pony brandy, one pony whiskey ; stir thoroughly\n  and strain into a small tumbler ; fill up with soda or\n  seltzer, and stir with half teaspoonful of sugar.",
+      "method_es": "Take a large tumbler half full of chipped ice ;\n  add three dashes gum syrup, two dashes of curaqoa,\n' two dashes Boker's bitters, one dash absinthe, one\n  pony brandy, one pony whiskey ; stir thoroughly\n  and strain into a small tumbler ; fill up with soda or\n  seltzer, and stir with half teaspoonful of sugar.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Morning Glory Cocktail\n\nTake a large tumbler half full of chipped ice ;\n  add three dashes gum syrup, two dashes of curaqoa,\n' two dashes Boker's bitters, one dash absinthe, one\n  pony brandy, one pony whiskey ; stir thoroughly\n  and strain into a small tumbler ; fill up with soda or\n  seltzer, and stir with half teaspoonful of sugar.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-076",
+      "order": 76,
+      "section_title": "Short Drinks",
+      "category": "cup",
+      "name_original": "Moselle Cup",
+      "name_es": "Moselle Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "plain soda",
+          "item_es": "plain soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in a\n  teaspoonful of raspberry syrup and a liqueur-glass\n  ful of brandy, fill up with new milk ; shake well and\n  serve with straws",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in a\n  teaspoonful of raspberry syrup and a liqueur-glass\n  ful of brandy, fill up with new milk ; shake well and\n  serve with straws",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Moselle Cup\n\nSame as No. 131, substituting moselle for s--:-.terne.\n\n            ioi_MOTHER'S MILK. L. D.\n    Fill half-pint tumbler with chipped ice ; put in a\n  teaspoonful of raspberry syrup and a liqueur-glass\n  ful of brandy, fill up with new milk ; shake well and\n  serve with straws.\n       41\n\n\n\n\nHAND ICE SHAVE.\n                        42\n\n\n  •102—NECTAR FOR DOG DAYS. L. D.\n  Use a large soda glass with some ice, one lemon\nice, and pour upon it a bottle of plain soda."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-077",
+      "order": 77,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Nerver",
+      "name_es": "Nerver",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in three or\nfour drops of absinthe and of plain sugar ; add two\nor three drops of lemon juice, half a wine-glassful\nof brandy ; then sbr well with a long spoon and\nstrain off; Take a large soda-water glass and fill with\nchipped ice; put in a teaspoonful of povvdered\nsugar and squeeze half a lemon in ; add nail a\nliqueur-glassful of vanilla syrup, half a wine-glassful\nof Hollands gin ; fill up with soda water, then\n decorate with fruits in season, and serve wit",
+      "method_es": "Fill tumbler with chipped ice ; put in three or\nfour drops of absinthe and of plain sugar ; add two\nor three drops of lemon juice, half a wine-glassful\nof brandy ; then sbr well with a long spoon and\nstrain off; Take a large soda-water glass and fill with\nchipped ice; put in a teaspoonful of povvdered\nsugar and squeeze half a lemon in ; add nail a\nliqueur-glassful of vanilla syrup, half a wine-glassful\nof Hollands gin ; fill up with soda water, then\n decorate with fruits in season, and serve wit",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Nerver\n\nFill tumbler with chipped ice ; put in three or\nfour drops of absinthe and of plain sugar ; add two\nor three drops of lemon juice, half a wine-glassful\nof brandy ; then sbr well with a long spoon and\nstrain off.\n\n\n  ■io4_NETHERLANDS COBBLER. L. D.\n  Take a large soda-water glass and fill with\nchipped ice; put in a teaspoonful of povvdered\nsugar and squeeze half a lemon in ; add nail a\nliqueur-glassful of vanilla syrup, half a wine-glassful\nof Hollands gin ; fill up with soda water, then\n decorate with fruits in season, and serve with\n straws.\n\n\n\n              105—NIGHT-CAP. S. D.\n    [This to be taken the last thing at night as a\n digester for other drinks previously imbibed. 'Ihe\n recipe was given to Charlie by a very old Norwegian\n captain.]\n   Take a small wine glass ; put in a liqueur-glassful\n of old brandy, ditto curajoa, ditto of bcnedictine ;\n let them blend for a moment ; then take off at a\n single draught, after which say—\" Good Night.'"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-078",
+      "order": 78,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Noyeau Cocktail",
+      "name_es": "Noyeau Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in half a\n liqueur-glassful of white noyeaii.half a wine-glassful\n  of gin and two or three drops of Angostura bitters ;\n  stir well with a long spoon ; strain off, and put a\n  small piece of lemon peel on top; Fill a half-pint tumbler with chipped ice ; squeeze\nhalf a lemon in ; add half a teaspoonful of sugar,\none liqueur-glassful of strawberry syrup, and half\na wine-glassful of brand}'; fill up with soda-water ;\nplace slice of lemon on top, and serve with s",
+      "method_es": "Fill tumbler with chipped ice ; put in half a\n liqueur-glassful of white noyeaii.half a wine-glassful\n  of gin and two or three drops of Angostura bitters ;\n  stir well with a long spoon ; strain off, and put a\n  small piece of lemon peel on top; Fill a half-pint tumbler with chipped ice ; squeeze\nhalf a lemon in ; add half a teaspoonful of sugar,\none liqueur-glassful of strawberry syrup, and half\na wine-glassful of brand}'; fill up with soda-water ;\nplace slice of lemon on top, and serve with s",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Noyeau Cocktail\n\nFill tumbler with chipped ice ; put in half a\n liqueur-glassful of white noyeaii.half a wine-glassful\n  of gin and two or three drops of Angostura bitters ;\n  stir well with a long spoon ; strain off, and put a\n  small piece of lemon peel on top.\n\\DJUSTA13LE ICE GRIP.\n                 44                     4\n\n\n\n\nGLASSES OF ALL KINDS FOR SERVING ICED\n              DRINKS.\n\n\n\n\n    STRAWS FOR AJIERICAN DRINKS.\n                         45\n\n     I07—OLD CHUM'S REVIVER. L. D.\n  Fill a half-pint tumbler with chipped ice ; squeeze\nhalf a lemon in ; add half a teaspoonful of sugar,\none liqueur-glassful of strawberry syrup, and half\na wine-glassful of brand}'; fill up with soda-water ;\nplace slice of lemon on top, and serve with straws.\n\n       io8—ORGEAT LEMONADE. L. D.\n\n  Use a large soda glass one-third full of ice, add\na tablespoonful of powdered sugar, half a wine-\nglassful of orgeat syrup, juice of half lemon, fill up\nwith water ; shake well; ornament with fruit in\n.season, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-079",
+      "order": 79,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Peach Br.4.Ndy and Honey",
+      "name_es": "Peach Br.4.Ndy and Honey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "seltzer water",
+          "item_es": "seltzer water",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large soda-water glass, which half fill with\nchipped ice ; squeeze a whole lemon in ; add half\nteaspoonful of Angostura bitters ; then pour in a\nbottle of seltzer water, stir well with long spoon,\nand serve with straws; Take a small bowl with about a pound of ice;\nadd the juice of one orange, half gill raspberry\nsyrup, half gill of maraschino, half gill Old Tom,\na pint sparkling moselle, the half of a ripe pine\napple cut up in slices ; serve in large bar glasses,\nand ornament with berries ",
+      "method_es": "Use a large soda-water glass, which half fill with\nchipped ice ; squeeze a whole lemon in ; add half\nteaspoonful of Angostura bitters ; then pour in a\nbottle of seltzer water, stir well with long spoon,\nand serve with straws; Take a small bowl with about a pound of ice;\nadd the juice of one orange, half gill raspberry\nsyrup, half gill of maraschino, half gill Old Tom,\na pint sparkling moselle, the half of a ripe pine\napple cut up in slices ; serve in large bar glasses,\nand ornament with berries ",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Peach Br.4.Ndy and Honey\n\nSame as No. 122, .substituting peach brandy for\nrum.\n\n\n    no—PICK-ME-UP, OR BRACER. L. D.\n  Use a large soda-water glass, which half fill with\nchipped ice ; squeeze a whole lemon in ; add half\nteaspoonful of Angostura bitters ; then pour in a\nbottle of seltzer water, stir well with long spoon,\nand serve with straws.\n\n       Ill—PINE-APPLE JULEP. L. D.\n  Take a small bowl with about a pound of ice;\nadd the juice of one orange, half gill raspberry\nsyrup, half gill of maraschino, half gill Old Tom,\na pint sparkling moselle, the half of a ripe pine\napple cut up in slices ; serve in large bar glasses,\nand ornament with berries in season.\n\n           112—PINE-APPLE PUNCH.\n  Fill half-pint tumbler with chipped ice ; squeeze\na lemon in ; add a liqueur-glassful of brandy, and\nhalf wine-glassful of pine apple syrup ; fill up with\nsoda-water ; decorate with fruits in season, and\nserve with straws.\n                         46"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-080",
+      "order": 80,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Plain Lemonade",
+      "name_es": "Plain Lemonade",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large soda glass ; take the juice of half a\nlarge lemon, a tablcspoonful and half of powdered\nsugar, two or three pieces of orange, half fill up\nwith chipped ice and the rest with water ; dash a\nlittle raspberry syrup ; ornament with fruits in\nseason, and serve with straws.",
+      "method_es": "Use a large soda glass ; take the juice of half a\nlarge lemon, a tablcspoonful and half of powdered\nsugar, two or three pieces of orange, half fill up\nwith chipped ice and the rest with water ; dash a\nlittle raspberry syrup ; ornament with fruits in\nseason, and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Plain Lemonade\n\nUse a large soda glass ; take the juice of half a\nlarge lemon, a tablcspoonful and half of powdered\nsugar, two or three pieces of orange, half fill up\nwith chipped ice and the rest with water ; dash a\nlittle raspberry syrup ; ornament with fruits in\nseason, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-081",
+      "order": 81,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Porx Wine Sangaree",
+      "name_es": "Porx Wine Sangaree",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Porx Wine Sangaree\n\nSame as No. 44, substituting port for claret.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-082",
+      "order": 82,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Pousse L'Amour",
+      "name_es": "Pousse L'Amour",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pousse L'Amour\n\nTake a wine glass ; pour in half a liqueur-glassful\nof red noyeau, ditto of maraschino, ditto of brandy;\nthen put in gently the yolk of a new laid egg.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-083",
+      "order": 83,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Prairie Oyster",
+      "name_es": "Prairie Oyster",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "vinegar",
+          "item_es": "vinagre",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Prairie Oyster\n\nTake a wine glass ; put in half a teaspoonful of\nvinegar, a new laid egg, a little salt and pepper. A\ndrop of Worcestershire sauce added gives it a fine\nrelish."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-084",
+      "order": 84,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "The Prince of Wales' Punch",
+      "name_es": "The Prince of Wales' Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "madeira",
+          "item_es": "madeira",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "seltzer water",
+          "amount": "3",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "49\n\n\ntwo pounds of sugar in the juice of ten lemons\nand two sweet oranges, which strain into the bowl,\nand add the rind of an orange, and, by degrees, the\nwhites of ten eggs, beaten previously up to a froth ;\nplace on ice for a while ; then stir briskly and serve\nin goblets.",
+      "method_es": "49\n\n\ntwo pounds of sugar in the juice of ten lemons\nand two sweet oranges, which strain into the bowl,\nand add the rind of an orange, and, by degrees, the\nwhites of ten eggs, beaten previously up to a froth ;\nplace on ice for a while ; then stir briskly and serve\nin goblets.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Prince of Wales' Punch\n\nTake a large bowl; put in two bottles of Bertram\nFreres' champagne, and ditto of hock, half a bottle\nof orange curacoa, half ditto of cognac, half pint of\n\"Liquid Sunshine\" rum, one bottle of Madeira,\nthree bottles of seltzer water, three ditto of soda-\nwater, and a wine-glassful of strawberry syrup ;\nsqueeze two oranges and two lemons in. Finally\nput the bowl into a refrigerator until the compound\nis thoroughly cool. This will be sufficient for a\nparty of twenty.\n\n          I rS—PUNCH    A LA     ROMAINE.\n\n  Take a medium-size punch bowl; empty into it\na bottle of rum, a bottle of champagne ; dissolve\n       47\n\n\n\n\nPATENT MEASURE TAPS.\n                  48\n\n\n\n\nCHAMPAGNE STAND FOR WINE ON DRAUGHT..\n                         49\n\n\ntwo pounds of sugar in the juice of ten lemons\nand two sweet oranges, which strain into the bowl,\nand add the rind of an orange, and, by degrees, the\nwhites of ten eggs, beaten previously up to a froth ;\nplace on ice for a while ; then stir briskly and serve\nin goblets."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-085",
+      "order": 85,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Rocky Mountain Punch",
+      "name_es": "Rocky Mountain Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "yolk of an egg",
+          "item_es": "yema de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of sugar, and\nsqueeze half a lemon in ; add half a liqueur-glassful\nof maraschino and a liqueur-glass of rum ; shake\nwell; fill up with champagne ; decorate \\vith fruits\nin season, and dash the top with claret ; then build\nup a pyramid with the whisked white of an egg,\ndash the top with claret or Angostura bitters, and\nserve with straws; Take a half-pint tumbler and fill with chipped\nice ; put in a teaspoonful of powd",
+      "method_es": "Take a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of sugar, and\nsqueeze half a lemon in ; add half a liqueur-glassful\nof maraschino and a liqueur-glass of rum ; shake\nwell; fill up with champagne ; decorate \\vith fruits\nin season, and dash the top with claret ; then build\nup a pyramid with the whisked white of an egg,\ndash the top with claret or Angostura bitters, and\nserve with straws; Take a half-pint tumbler and fill with chipped\nice ; put in a teaspoonful of powd",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rocky Mountain Punch\n\nTake a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of sugar, and\nsqueeze half a lemon in ; add half a liqueur-glassful\nof maraschino and a liqueur-glass of rum ; shake\nwell; fill up with champagne ; decorate \\vith fruits\nin season, and dash the top with claret ; then build\nup a pyramid with the whisked white of an egg,\ndash the top with claret or Angostura bitters, and\nserve with straws.\n\n\n\n     lac^ROYAL AQUARIUM COFFEE\n                  PUNCH.      L. D.\n\n  Take a half-pint tumbler and fill with chipped\nice ; put in a teaspoonful of powdered sugar, the\nyolk of an egg, and a liqueur-glassful of old brandy ;\nfill up the tumbler with cafi noir:shake well; then\nput a little coloured sugar on top, and serve with\nstraws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-086",
+      "order": 86,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Royal Aquarium Punch",
+      "name_es": "Royal Aquarium Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "soda-water",
+          "item_es": "soda-water",
+          "amount": "3",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon honey",
+          "item_es": "bourbon honey",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a wine glass ; put in a small piece of ice ;\nadd a teaspoonful of Bourbon honey ; fill up glass\nwith\"Liquid Sunshine\"rum ; stir well with spoon,\nand place slice of lemon on top.",
+      "method_es": "Take a wine glass ; put in a small piece of ice ;\nadd a teaspoonful of Bourbon honey ; fill up glass\nwith\"Liquid Sunshine\"rum ; stir well with spoon,\nand place slice of lemon on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Royal Aquarium Punch\n\nTake a large punch bowl; put in the yolks of six\neggs and half-pound of powdered sugar ; mix this\nwell; beat up the whites of the eggs separately,\nand then mix in the bowl; add one wine-glassful of\ncuracoa, a bottle of brandy, a ditto of \"Liquid\nSunshine\" rum, two quarts of new milk, three\nbottles of soda-water ; mix well together ; you will\nhave sufficient to supply a party of twenty-five.\n                           so\n\n\n          122-^RUM    and     honey, s. d.\n\n  Take a wine glass ; put in a small piece of ice ;\nadd a teaspoonful of Bourbon honey ; fill up glass\nwith\"Liquid Sunshine\"rum ; stir well with spoon,\nand place slice of lemon on top."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-087",
+      "order": 87,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Rye Cocktail",
+      "name_es": "Rye Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rye Cocktail\n\nSame as No. 12, substituting r}'e whiskey for\nbrandy.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-088",
+      "order": 88,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Rye Whiskey Skin",
+      "name_es": "Rye Whiskey Skin",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rye Whiskey Skin\n\nSame as No. 24, substituting rye whiskey for\nbrandy.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-089",
+      "order": 89,
+      "section_title": "Short Drinks",
+      "category": "sour",
+      "name_original": "Rye Sour",
+      "name_es": "Rye Sour",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rye Sour\n\nSame as No. 69, substituting rye whiskey for\ngin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-090",
+      "order": 90,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Sam Ward",
+      "name_es": "Sam Ward",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3-4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters, a good liqueur-\nglass of green chartreuse ; .shake well, and strain\noff.",
+      "method_es": "Fill a tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters, a good liqueur-\nglass of green chartreuse ; .shake well, and strain\noff.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sam Ward\n\nFill a tumbler with chipped ice ; put in three or\nfour drops of Angostura bitters, a good liqueur-\nglass of green chartreuse ; .shake well, and strain\noff."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-091",
+      "order": 91,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Santa Cruz Rum Daisy",
+      "name_es": "Santa Cruz Rum Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take half-pint tumbler half full of chipped ice ;\nadd three or four dashes of gum syrup, two or three\ndashes of maraschino or curajoa, the juice of half\na lemon, a wine-glassful of Santa Cruz rum ; shake\nthoroughly, and strain into a large cocktail glass,\nand fill up with seltzer or apollinaris water",
+      "method_es": "Take half-pint tumbler half full of chipped ice ;\nadd three or four dashes of gum syrup, two or three\ndashes of maraschino or curajoa, the juice of half\na lemon, a wine-glassful of Santa Cruz rum ; shake\nthoroughly, and strain into a large cocktail glass,\nand fill up with seltzer or apollinaris water",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Santa Cruz Rum Daisy\n\nTake half-pint tumbler half full of chipped ice ;\nadd three or four dashes of gum syrup, two or three\ndashes of maraschino or curajoa, the juice of half\na lemon, a wine-glassful of Santa Cruz rum ; shake\nthoroughly, and strain into a large cocktail glass,\nand fill up with seltzer or apollinaris water.\nLEMON PRESSES\n\n\n\n\n     iti-.nulilt 'iiWliii^iii^lillMii\n         52\n\n\n\n\nSERRATED LEMON KNIFE.\n\n\n\n\n GLASS LEMON PRESS.\n\n\n\n\n     ICE SCOOP.\n                         S3"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-092",
+      "order": 92,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Saratoga Brace Up. E. D",
+      "name_es": "Saratoga Brace Up. E. D",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a pint tumbler with some ice, add a table-\nspoonful of powdered white sugar, two dashe.s\nAngostura bitters, four dashes of lemon juice, two\ndashes absinthe, a fresh egg, a wine-glass of brandy :\nshake well and strain into half-pint tumbler, and\nfill up with seltzer; D.'\n  Take half-pint tumbler half full chipped ice ; add\ntwo dashe.s Angostura bitters, a pony of brandy, a\npony of whiskey, a pony of vermouth ; shake well,\nstrain into a claret glass, and serve with a slice of\nlemon; Take a la",
+      "method_es": "Take a pint tumbler with some ice, add a table-\nspoonful of powdered white sugar, two dashe.s\nAngostura bitters, four dashes of lemon juice, two\ndashes absinthe, a fresh egg, a wine-glass of brandy :\nshake well and strain into half-pint tumbler, and\nfill up with seltzer; D.'\n  Take half-pint tumbler half full chipped ice ; add\ntwo dashe.s Angostura bitters, a pony of brandy, a\npony of whiskey, a pony of vermouth ; shake well,\nstrain into a claret glass, and serve with a slice of\nlemon; Take a la",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Saratoga Brace Up. E. D\n\nTake a pint tumbler with some ice, add a table-\nspoonful of powdered white sugar, two dashe.s\nAngostura bitters, four dashes of lemon juice, two\ndashes absinthe, a fresh egg, a wine-glass of brandy :\nshake well and strain into half-pint tumbler, and\nfill up with seltzer.\n\n      129—SARATOGA COCKTAIL. S. D.'\n  Take half-pint tumbler half full chipped ice ; add\ntwo dashe.s Angostura bitters, a pony of brandy, a\npony of whiskey, a pony of vermouth ; shake well,\nstrain into a claret glass, and serve with a slice of\nlemon.\n\n\n\n         130—SARATOGA COOLER. L. X).\n  Take a large soda glass ; put in a teaspoonful of\nsugar, juice of half lemon, a bottle of ginger ale, a\nsmall piece of ice ; stir well and serve with straws.\n\n          i3i_SAUTERNE cup. L. D.\n   Use a large soda-water tumbler, which fill with\nchipped ice; put in a teaspoonful of powdered\nsugar ; squeeze half a lemon in ; add half a liqueur-\nglassful of maraschino, a wine-glassful of sauterne ;\nshake well, ornament with fruits in season ; dash\nwith claret and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-093",
+      "order": 93,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Seltzer Lemonade",
+      "name_es": "Seltzer Lemonade",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice; put in a tea\n spoonful of powdered sugar; squeeze half a lemon\n                          54\n\n in, add half a wine-glassful of sweet brandy, and\n half a liqueur-glassful of kiimmel; then strain off\n into a pony tumbler.",
+      "method_es": "Fill tumbler with chipped ice; put in a tea\n spoonful of powdered sugar; squeeze half a lemon\n                          54\n\n in, add half a wine-glassful of sweet brandy, and\n half a liqueur-glassful of kiimmel; then strain off\n into a pony tumbler.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Seltzer Lemonade\n\nSame as Soda Lemonade, substituting seltzer for\nsoda.    See No. 140.\n\n                   !—SETTLER.\n                 133                S. D.\n\n   Fill tumbler with chipped ice; put in a tea\n spoonful of powdered sugar; squeeze half a lemon\n                          54\n\n in, add half a wine-glassful of sweet brandy, and\n half a liqueur-glassful of kiimmel; then strain off\n into a pony tumbler."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-094",
+      "order": 94,
+      "section_title": "Short Drinks",
+      "category": "cobbler",
+      "name_original": "Sherry Cobbler",
+      "name_es": "Sherry Cobbler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in\nhalf wine-glassful of plain syrup, a good wine-\nglassful of pale sherry ; shako well and decorate\nwith fruits in season ; dash the top with claret and\nserve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in\nhalf wine-glassful of plain syrup, a good wine-\nglassful of pale sherry ; shako well and decorate\nwith fruits in season ; dash the top with claret and\nserve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sherry Cobbler\n\nFill half-pint tumbler with chipped ice ; put in\nhalf wine-glassful of plain syrup, a good wine-\nglassful of pale sherry ; shako well and decorate\nwith fruits in season ; dash the top with claret and\nserve with straws.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-095",
+      "order": 95,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Sherry Egg Nogg",
+      "name_es": "Sherry Egg Nogg",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a pint tumbler with some ice ; add one-and-\na-half teaspoonfuls of fine white sugar, a fresh egg,\ntwo wine-glasses sherry, fill up with new milk and\nshake until well mixed ; strain into a large goblet\nand grate a little nutmeg on top.",
+      "method_es": "Take a pint tumbler with some ice ; add one-and-\na-half teaspoonfuls of fine white sugar, a fresh egg,\ntwo wine-glasses sherry, fill up with new milk and\nshake until well mixed ; strain into a large goblet\nand grate a little nutmeg on top.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sherry Egg Nogg\n\nTake a pint tumbler with some ice ; add one-and-\na-half teaspoonfuls of fine white sugar, a fresh egg,\ntwo wine-glasses sherry, fill up with new milk and\nshake until well mixed ; strain into a large goblet\nand grate a little nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-096",
+      "order": 96,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Sherry Sangaree",
+      "name_es": "Sherry Sangaree",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sherry Sangaree\n\nSame as No. 44, substituting sherrj' for claret.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-097",
+      "order": 97,
+      "section_title": "Short Drinks",
+      "category": "fizz",
+      "name_original": "Silver Fizz",
+      "name_es": "Silver Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "white of an egg",
+          "item_es": "clara de huevo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar ; squeeze half a\nlemon in ; add half a wine-glassful of Old Tom gin\nand the white of an egg ; shake well; fill up with\nsoda-water and serve with straws.",
+      "method_es": "Fill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar ; squeeze half a\nlemon in ; add half a wine-glassful of Old Tom gin\nand the white of an egg ; shake well; fill up with\nsoda-water and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Silver Fizz\n\nFill half-pint tumbler with chipped ice ; put in a\nteaspoonful of powdered sugar ; squeeze half a\nlemon in ; add half a wine-glassful of Old Tom gin\nand the white of an egg ; shake well; fill up with\nsoda-water and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-098",
+      "order": 98,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Sleeper",
+      "name_es": "Sleeper",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take a large tumbler ; put in a teaspoonful of\nsugar, the yolk of one egg, and a teaspoonful of\nlemon juice ; add half a wine-glassful of rum, and\nfill up with boiling water ; put in two or three\ncloves, and mix well",
+      "method_es": "Take a large tumbler ; put in a teaspoonful of\nsugar, the yolk of one egg, and a teaspoonful of\nlemon juice ; add half a wine-glassful of rum, and\nfill up with boiling water ; put in two or three\ncloves, and mix well",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sleeper\n\nTake a large tumbler ; put in a teaspoonful of\nsugar, the yolk of one egg, and a teaspoonful of\nlemon juice ; add half a wine-glassful of rum, and\nfill up with boiling water ; put in two or three\ncloves, and mix well.\n                55\n\n\n\n\nDECANTER WITH DROP CORK FOR BITTERS\n\n\n\n\n                            :yyi\\N;\n\n\n\n           BAR DECANTERS.\n\n\n\n\n                                      . iiiiiniDiiiii'i ' I\n            56\n\n\n\n\nTILTING SPIRIT MPZASURE.\n                         57"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-099",
+      "order": 99,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Soda Cocktail",
+      "name_es": "Soda Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "plain soda",
+          "item_es": "plain soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": "garnish"
+        }
+      ],
+      "method_original": "Use a large soda-water glass, which half fill with\nchipped ice ; put in half a teaspoonful of Angostura\nbitters and half a teaspoonful of powdered sugar ;\nfill up with scca ; place small piece of lemon peel\non top, and serve with straws; D_\n  Use a large soda glass ; put in a few pieces of\nchipped ice, a tablespoonful of powdered sugar,\njuice of half a lemon, a bottle of plain soda ; stir\nwell and strain.",
+      "method_es": "Use a large soda-water glass, which half fill with\nchipped ice ; put in half a teaspoonful of Angostura\nbitters and half a teaspoonful of powdered sugar ;\nfill up with scca ; place small piece of lemon peel\non top, and serve with straws; D_\n  Use a large soda glass ; put in a few pieces of\nchipped ice, a tablespoonful of powdered sugar,\njuice of half a lemon, a bottle of plain soda ; stir\nwell and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Cocktail\n\nUse a large soda-water glass, which half fill with\nchipped ice ; put in half a teaspoonful of Angostura\nbitters and half a teaspoonful of powdered sugar ;\nfill up with scca ; place small piece of lemon peel\non top, and serve with straws.\n\n\n          140—SODA LEMONADE. L. D_\n  Use a large soda glass ; put in a few pieces of\nchipped ice, a tablespoonful of powdered sugar,\njuice of half a lemon, a bottle of plain soda ; stir\nwell and strain."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-100",
+      "order": 100,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Soda Nectar",
+      "name_es": "Soda Nectar",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "carbonate of soda",
+          "item_es": "carbonate of soda",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Use a large soda glass, with a few pieces of ice ;\nadd the juice of a lemon, a tablespoonful of sugar,\nhalf tumblerful of water ; stir until cool, then put in\nhalf a teaspoonful of carbonate of soda, and drink\nwhile efiervescing.",
+      "method_es": "Use a large soda glass, with a few pieces of ice ;\nadd the juice of a lemon, a tablespoonful of sugar,\nhalf tumblerful of water ; stir until cool, then put in\nhalf a teaspoonful of carbonate of soda, and drink\nwhile efiervescing.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Nectar\n\nUse a large soda glass, with a few pieces of ice ;\nadd the juice of a lemon, a tablespoonful of sugar,\nhalf tumblerful of water ; stir until cool, then put in\nhalf a teaspoonful of carbonate of soda, and drink\nwhile efiervescing."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-101",
+      "order": 101,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Soda Negus",
+      "name_es": "Soda Negus",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "grated nutmeg",
+          "item_es": "grated nutmeg",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "soda-water",
+          "item_es": "soda-water",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
+      "method_original": "(About a quart.)            \"          ^\n  Take a thoroughly clean saucepan, and put in a\npint of port wine, eight lumps of sugar, six cloves,\nand about a teaspoonful of grated nutmeg ; stir\nwell over a fire, but be careful not to let it boil;\nthen empty it into a bowl, and add a bottle of\nsoda-water",
+      "method_es": "(About a quart.)            \"          ^\n  Take a thoroughly clean saucepan, and put in a\npint of port wine, eight lumps of sugar, six cloves,\nand about a teaspoonful of grated nutmeg ; stir\nwell over a fire, but be careful not to let it boil;\nthen empty it into a bowl, and add a bottle of\nsoda-water",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Negus\n\n(About a quart.)            \"          ^\n  Take a thoroughly clean saucepan, and put in a\npint of port wine, eight lumps of sugar, six cloves,\nand about a teaspoonful of grated nutmeg ; stir\nwell over a fire, but be careful not to let it boil;\nthen empty it into a bowl, and add a bottle of\nsoda-water. This is a fine effervescing drink."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-102",
+      "order": 102,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Soda Nogg",
+      "name_es": "Soda Nogg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "curagoa",
+          "item_es": "curagoa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Pill large soda-water tumbler with chipped ice ;\nput in a teaspoonful of powdered sugar, a new\nlaid egg ; fill up with soda-water, and serve with\nstraws; ,\nSouth-West Coast of Africa, 1883.]\n  Take a soda-water glass and half fill with fine\nchipped ice; put in a teaspoonful of powdered\nsugar, half a teaspoonful of Angostura bitters, a\nteaspoonful of curagoa ; squeeze half a lemon in ;\nadd one and a half wine-glassful of old Scotch\nwhiskey ; then fill up the glass with soda water,\nafter which tak",
+      "method_es": "Pill large soda-water tumbler with chipped ice ;\nput in a teaspoonful of powdered sugar, a new\nlaid egg ; fill up with soda-water, and serve with\nstraws; ,\nSouth-West Coast of Africa, 1883.]\n  Take a soda-water glass and half fill with fine\nchipped ice; put in a teaspoonful of powdered\nsugar, half a teaspoonful of Angostura bitters, a\nteaspoonful of curagoa ; squeeze half a lemon in ;\nadd one and a half wine-glassful of old Scotch\nwhiskey ; then fill up the glass with soda water,\nafter which tak",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Nogg\n\nPill large soda-water tumbler with chipped ice ;\nput in a teaspoonful of powdered sugar, a new\nlaid egg ; fill up with soda-water, and serve with\nstraws.\n                          58\n\n   144—A SOUTH-COAST COCKTAIL. S. D.\n\n  [The recipe for this drink was given to the author\nby Lieut.-Commander Testing, R.N., H.M.S.          ,\nSouth-West Coast of Africa, 1883.]\n  Take a soda-water glass and half fill with fine\nchipped ice; put in a teaspoonful of powdered\nsugar, half a teaspoonful of Angostura bitters, a\nteaspoonful of curagoa ; squeeze half a lemon in ;\nadd one and a half wine-glassful of old Scotch\nwhiskey ; then fill up the glass with soda water,\nafter which take a swizzle stick, and swizzle well\nuntil you obtain a froth on top, then pour out into\nwine glasses. This decoction would be sufficient\nfor three or four persons."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-103",
+      "order": 103,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Spanish Delight",
+      "name_es": "Spanish Delight",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Take half-pint tumbler ; put in a teaspoonful of\npowdered sugar and a new laid egg ; add half\nliqueur-glassful of cura^oa and a glass of port\nwine ; shake well, and serve with straws.",
+      "method_es": "Take half-pint tumbler ; put in a teaspoonful of\npowdered sugar and a new laid egg ; add half\nliqueur-glassful of cura^oa and a glass of port\nwine ; shake well, and serve with straws.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Spanish Delight\n\nTake half-pint tumbler ; put in a teaspoonful of\npowdered sugar and a new laid egg ; add half\nliqueur-glassful of cura^oa and a glass of port\nwine ; shake well, and serve with straws."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-104",
+      "order": 104,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Stars and Stripes",
+      "name_es": "Stars and Stripes",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Stars and Stripes\n\nTake a thin, long liqueur glass ; put in equal\nquantities of red noyeau, maraschino, yellow char\ntreuse, green curajoa, and brandy in the order\ngiven, and you will see stripes in the glass. When\nyon have drunk the compound, look up to the sky\nand you will see stars.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-105",
+      "order": 105,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Stone Fence",
+      "name_es": "Stone Fence",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "half a",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add half glassful of Bourbon whiskey ;\nthen fill up the tumbler with Jersey cider ; serve\nwith straws, and ornament with fruits in season",
+      "method_es": "Fill a tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add half glassful of Bourbon whiskey ;\nthen fill up the tumbler with Jersey cider ; serve\nwith straws, and ornament with fruits in season",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Stone Fence\n\nFill a tumbler with chipped ice ; put in half a\nteaspoonful of powdered sugar; squeeze half a\nlemon in ; add half glassful of Bourbon whiskey ;\nthen fill up the tumbler with Jersey cider ; serve\nwith straws, and ornament with fruits in season.\n            59\n\n\n\n\n  MARBLE SYRUP TANK,\n\nWith Automatic Measuring Taps.\n\n\n\n\n                                  fjjil\n\n                                 ',^1\n                 66\n\n\n\n\n        SYRUP measuring PUMP.\n\n\n\n\n> 'i'\n   '\n                         6i"
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-106",
+      "order": 106,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Thunder",
+      "name_es": "Thunder",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill tumbler with chipped ice ; put in a small\nteaspoonful of powdered sugar, an egg; half a wine-\nglassful of brandy, a pinch of cayenne pepper ; then\nshake well and strain off.",
+      "method_es": "Fill tumbler with chipped ice ; put in a small\nteaspoonful of powdered sugar, an egg; half a wine-\nglassful of brandy, a pinch of cayenne pepper ; then\nshake well and strain off.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Thunder\n\nFill tumbler with chipped ice ; put in a small\nteaspoonful of powdered sugar, an egg. half a wine-\nglassful of brandy, a pinch of cayenne pepper ; then\nshake well and strain off.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-107",
+      "order": 107,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "Too Too",
+      "name_es": "Too Too",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; put in a tea-\nspooonful of sugar, an egg, and a teaspoonful of\nraspberry syrup ; add a liqueur-glassful of brandy\nand a ditto of rum ; shake well and strain.",
+      "method_es": "Fill tumbler with chipped ice ; put in a tea-\nspooonful of sugar, an egg, and a teaspoonful of\nraspberry syrup ; add a liqueur-glassful of brandy\nand a ditto of rum ; shake well and strain.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Too Too\n\nFill tumbler with chipped ice ; put in a tea-\nspooonful of sugar, an egg, and a teaspoonful of\nraspberry syrup ; add a liqueur-glassful of brandy\nand a ditto of rum ; shake well and strain."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-108",
+      "order": 108,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Vanilla Punch",
+      "name_es": "Vanilla Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Vanilla Punch\n\nSame as No. 112, substituting vanilla for pine\napple.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-109",
+      "order": 109,
+      "section_title": "Short Drinks",
+      "category": "cocktail",
+      "name_original": "Vermouth Cocktail",
+      "name_es": "Vermouth Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take half-pint tumbler half full chipped ice ; two\ndashes of Boker's bitters, one wine-glassful of\nvermouth ; shake a little ; strain off into a cocktail\nglass, into which a quarter slice of lemon has been\nlaid ; if required sweet, add two dashes gum syrup.",
+      "method_es": "Take half-pint tumbler half full chipped ice ; two\ndashes of Boker's bitters, one wine-glassful of\nvermouth ; shake a little ; strain off into a cocktail\nglass, into which a quarter slice of lemon has been\nlaid ; if required sweet, add two dashes gum syrup.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Vermouth Cocktail\n\nTake half-pint tumbler half full chipped ice ; two\ndashes of Boker's bitters, one wine-glassful of\nvermouth ; shake a little ; strain off into a cocktail\nglass, into which a quarter slice of lemon has been\nlaid ; if required sweet, add two dashes gum syrup.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-110",
+      "order": 110,
+      "section_title": "Short Drinks",
+      "category": "punch",
+      "name_original": "Washington Punch",
+      "name_es": "Washington Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of powdered\nsugar, half a liqueur-glassful of noyeau, half a\nwine-glassful of brandy, fill up with new milk ;\nshake well; sprinkle the top with powdered sugar,\nand serve with straws",
+      "method_es": "Take a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of powdered\nsugar, half a liqueur-glassful of noyeau, half a\nwine-glassful of brandy, fill up with new milk ;\nshake well; sprinkle the top with powdered sugar,\nand serve with straws",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Washington Punch\n\nTake a large soda-water glass and fill with\nchipped ice ; put in a teaspoonful of powdered\nsugar, half a liqueur-glassful of noyeau, half a\nwine-glassful of brandy, fill up with new milk ;\nshake well; sprinkle the top with powdered sugar,\nand serve with straws.\n\n\n\n         IS2A—WHISKEY COCKTAIL.\n\n  Same as No. 12, substituling whiskey for brandy.\n                             62",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-111",
+      "order": 111,
+      "section_title": "Short Drinks",
+      "category": "crusta",
+      "name_original": "Whiskey Crusta",
+      "name_es": "Whiskey Crusta",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "strawberry syrup",
+          "item_es": "jarabe de fresa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "half a",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill tumbler with chipped ice ; squeeze half a\n    lemon in ; add a teaspoonful of strawberry syrup,\n    and half a wine-glassful of Bourbon whiskey ;\n    shake well and strain into a wine glass, first having\n    moistened the outside of the glass and dipped it\n    into powdered sugar ; place a slice of lemon on\n    top; Take half-pint tumbler half-full chipped ice ; add\n    three dashes gum syrup, two dashes orgeat syrup,\n    the juice of half lemon, a wine-glass of Bourbon or\n    rye whiskey ;",
+      "method_es": "Fill tumbler with chipped ice ; squeeze half a\n    lemon in ; add a teaspoonful of strawberry syrup,\n    and half a wine-glassful of Bourbon whiskey ;\n    shake well and strain into a wine glass, first having\n    moistened the outside of the glass and dipped it\n    into powdered sugar ; place a slice of lemon on\n    top; Take half-pint tumbler half-full chipped ice ; add\n    three dashes gum syrup, two dashes orgeat syrup,\n    the juice of half lemon, a wine-glass of Bourbon or\n    rye whiskey ;",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Crusta\n\nFill tumbler with chipped ice ; squeeze half a\n    lemon in ; add a teaspoonful of strawberry syrup,\n    and half a wine-glassful of Bourbon whiskey ;\n    shake well and strain into a wine glass, first having\n    moistened the outside of the glass and dipped it\n    into powdered sugar ; place a slice of lemon on\n    top.\n\n\n             154—WHISKEY DAISY. S-D.\n\n      Take half-pint tumbler half-full chipped ice ; add\n    three dashes gum syrup, two dashes orgeat syrup,\n    the juice of half lemon, a wine-glass of Bourbon or\n    rye whiskey ; shake well and strain into a large\n    cocktail glass, and fill up with syphon seltzer or\n    apollinaris water.\n\n             i55_WHISKEY fizz. L. D.\n      Same as No. 64, substituting whiskey for gin."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-112",
+      "order": 112,
+      "section_title": "Short Drinks",
+      "category": "julep",
+      "name_original": "Whiskey Julep",
+      "name_es": "Whiskey Julep",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Julep\n\nI Same as No. 97, substituting whiskey for brandy,\n    omitting fancy adornments. See Gin Julep, No. 65.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-113",
+      "order": 113,
+      "section_title": "Short Drinks",
+      "category": "sling",
+      "name_original": "Whiskey Sling",
+      "name_es": "Whiskey Sling",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Sling\n\nSame as No. 67, substituting whiskey for gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-114",
+      "order": 114,
+      "section_title": "Short Drinks",
+      "category": "sour",
+      "name_original": "Whiskey Sour",
+      "name_es": "Whiskey Sour",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Whiskey Sour\n\nSame as No. 69, substituting whiskey for gin.\n\n            i59_whiskey'SMASH. L. D.\n     Same as No. 26, substituting'whiskey for brandy.\n\n\nL\n            ■' iVinir'\n\n\n\n\n*JDUPLEX\"        FOR ICED DRINKS.\n                          64\n\n         i6o_WHISKEY twist.             S. D.\n\n\n  Same as No. 71, substituting whiskey for gin.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1909-recipes-of-american-and-other-iced-drinks-115",
+      "order": 115,
+      "section_title": "Short Drinks",
+      "category": "other",
+      "name_original": "The Hoffman Strawberry",
+      "name_es": "The Hoffman Strawberry",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill half-pint tumbler with shaved ice ; add half-\nteaspoonful of powdered sugar, half a liqueur-glass\nof strawberry syrup ; add the white of one egg, a\nwine-glassful of light old East India sherry ; shake\nwell, and strain in a champagne bowl glass, and\ndrop in a few strawberries; When the syrup has cooled, and is about\n        lukewarm, add gradually the essence—stirring at\n        the same time—then the French cream, preservative,\n        and other ingredients",
+      "method_es": "Fill half-pint tumbler with shaved ice ; add half-\nteaspoonful of powdered sugar, half a liqueur-glass\nof strawberry syrup ; add the white of one egg, a\nwine-glassful of light old East India sherry ; shake\nwell, and strain in a champagne bowl glass, and\ndrop in a few strawberries; When the syrup has cooled, and is about\n        lukewarm, add gradually the essence—stirring at\n        the same time—then the French cream, preservative,\n        and other ingredients",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "The Hoffman Strawberry\n\nFill half-pint tumbler with shaved ice ; add half-\nteaspoonful of powdered sugar, half a liqueur-glass\nof strawberry syrup ; add the white of one egg, a\nwine-glassful of light old East India sherry ; shake\nwell, and strain in a champagne bowl glass, and\ndrop in a few strawberries.\n\n\n\n\n  Additional Non=alcohoIic Beverages.\n\n\n  Note.—The following Recipes arc those in general\nuse, and make the highest class beverages.      Taste,\nhowever, varies in different parts of the country,\nespecially in regard to colour and acidity, and it\nwould be impossible to give absolute directions to suit\neverybody. It must, therefore, be left to the fudgment\nand sk''ll of the manipulator to make such alterations\nas may ne most suited to his trade.\n\n\n\n          TO MAKE PLAIN SYRUP.\n\n\n  Take of finest refined sugar 6 lbs. ; add 2 pints\nof water. When all dissolved, gently boil for one\nminute ; withdraw the heat and remove the scum ;\ngently boil up again for another minute, and remove\nany further scum ; then add sufhcient cold water to\nmake i gallon (about 3 pints of        water will be\n    65\n\n\n\n\nCOUNTEK FOUNTAIN.\n                                  66\n\n.. v\\\n        required). This produces a syrup equal to about\n        47 Twaddell, its specific gravity i\"235, and is the\n        strength generally used by aerated water makers,\n        and upon which the following recipes are based.\n          If a sugar be employed of such purity that no\n        scum or only a small trace rise to the surface after\n        boiling, then it is preferable not to boil the syrup,\n        but simply to boil the water to destroy any germs\n        that may be present, and then whilst hot add the\n        sugar, and when dissolved the other ingredients.\n          In order to assist the solution of the 6 lbs. of\n        sugar in the first 2 pints of water, a little heat may\n        be used, not brought up to boiling point, but only\n        until the sugar be dissolved.                        ^\n\n                      Directions for Mixing.\n          While the syrup is still warm add the citric or\n        tartaric acid, and when dissolved add the colouring\n        (previously thinned if it be a thick colouring by\n        mixing with two or three times its bulk of warm\n        water). When the syrup has cooled, and is about\n        lukewarm, add gradually the essence—stirring at\n        the same time—then the French cream, preservative,\n        and other ingredients.\n          These syrups are generally perfectly bright when\n        made, but for various reasons they are sometimes\n        cloudy after being mixed. AVhen such is the case\n        pass them through a filtering bag.\n          The quantity of flavouyed syrup to be used is\n        ij ozs. to the lo oz. bottle, and, of course, half the\n        quantity for splits.\n           Caution.—No matter how pressed the mineral\n         water maker may be for the time, he must never\n         bottle while the syrup is hot; it sh",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    }
+  ]
+}

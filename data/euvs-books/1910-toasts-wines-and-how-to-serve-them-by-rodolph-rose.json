@@ -1,0 +1,934 @@
+{
+  "book_id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose",
+  "metadata": {
+    "title": "Toasts, Wines and How to Serve Them — With Many Valuable Recipes",
+    "author": "Compiled by Randolph Rose",
+    "year": 1910,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Self-published (copyright 1910)",
+    "city": "USA",
+    "edition": "First Edition (1910)",
+    "source_file": "1910 Toasts Wines, and How to Serve Them by Rodolph Rose.txt",
+    "notes": "Compendio que combina toasts (brindis), vinos y cócteles. Recetas con formato 'One-half X', 'Three-fourths Y' (word-fractions). OCR moderado con espaciado en mayúsculas ('WH I S K E Y' → 'WHISKEY'). Skeleton custom rebuilt con normalización de letras espaciadas + detector ALL CAPS + type-word. 29 recetas; ~69% (20/29) parseadas (algunas con OCR severo donde 's rye whiskey' es OCR de 'Three-fourths Rye whiskey')."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Toasts + Wines",
+      "title_es": "Brindis + vinos",
+      "content_original": "Randolph Rose compila este librito sobre toasts (brindis), vinos y cócteles. Incluye orientación práctica para servirlos. Era pre-Prohibición, justo antes de los grandes cambios.",
+      "content_es": "Randolph Rose compila este librito sobre brindis, vinos y cócteles, con orientación para servirlos."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MAXIM COCKTAIL",
+      "name_es": "Maxim Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s rye whiskey",
+          "item_es": "s rye whiskey",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "th benedictine",
+          "item_es": "th benedictine",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir ana serve.",
+      "method_es": "Stir ana serve.",
+      "glassware": "bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MAXIM COCKTAIL\n                                              (Use Bar Glass)\n                                   Three-fourth s Rye whiskey.\n                                   One-four th Benedictine.\n                                   1 piece o f ice.\n                                   T wist .o f orange peel.\n                                   Stir ana serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BRONX COCKTAIL",
+      "name_es": "Bronx Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ital ian v ermouth",
+          "item_es": "ital ian v ermouth",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill g lass with ice, shake and strain; serve.",
+      "method_es": "Fill g lass with ice, shake and strain; serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "B RONX COCKTAIL\n                                   One-half Dry gin.\n                                   One-fourth French Vermouth.\n                                   One-fourth Ital ian V ermouth.\n                                   T wist of orange peel.\n                                   Fill g lass with ice, shake and\n                                     strain; serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ROSE COCKTAIL",
+      "name_es": "Rose Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostu ra bitters",
+          "item_es": "angostu ra bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with ice, m ix well, strain into a cockt ail glass and add a",
+      "method_es": "Fill with ice, m ix well, strain into a cockt ail glass and add a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROSE COCKTAIL\n                       (U se Sma.ll Bar Glass)\n   2 dashes of Curacao.\n   2 dashes Angostu ra Bitters.\n  ~ pony of whiskey.\n   I pony of French Vermouth.\n   Fill with ice, m ix well, strain into a cockt ail glass and add a\ncherry."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DR YMARTINI COCKTAIL",
+      "name_es": "Dr Ymartini Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french verm outh",
+          "item_es": "french verm outh",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "s loe gin",
+          "item_es": "s loe gin",
+          "amount": "0.75",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermut",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with fine ice; sh ake well until frapped , s traitr' in",
+      "method_es": "Fill glass with fine ice; sh ake well until frapped , s traitr' in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DR Y MARTINI COCKTAIL\n   One-half Dry Gin .\n   One-half French Verm outh.\n   F ill glass with cracked ice; sti r, stra in and serve.\n                                   5\n                     ABSINTH E COC KTAIL\n   I dash An gos tura B itte rs.\n   I da sh Anisette.\n   T h ree-fourths Green Absinthe.\n   Fill glass with fine ice; sh ake well until frapped , s traitr' in\ncocktail g lass.\n\n                      SLOE GIN COC KTAIL.\n   Three-fourths S loe Gin.\n   One-fourth Vermouth.\n   Fi ll g lass with ice, stir and s train in cocktail g lass; serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WHISKEY COCKTAIL",
+      "name_es": "Whiskey Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "o f bitters (an gostura)",
+          "item_es": "o f bitters (an gostura)",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "b ened ictine",
+          "item_es": "b ened ictine",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "a lf vermo uth",
+          "item_es": "a lf vermo uth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill one- third fu ll of fi ne ice, shake an d s train in a fancy r ed serve. Stir, to p off with ca rbonic and serve.",
+      "method_es": "Fill one- third fu ll of fi ne ice, shake an d s train in a fancy r ed serve. Stir, to p off with ca rbonic and serve.",
+      "glassware": "champagne glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WH I S K E Y COCKTAIL\n   Tak e 3 or 4 dash es of su gar syrup.\n   2 dashes o f bitters (An gostura) .\n   I wi n e glass of Wh is key.\n   Fill one- third fu ll of fi ne ice, shake an d s train in a fancy r ed\nwin e g lass ; put in a piece of t wisted lemon peel in t he g lass, and\nserve.\n\n                    SOUL K ISS COCK TAIL\n                      (Use Champagne Glass )\n   Juice o f one lim e.\n   One-hall B ened ictine.\n   One-h a lf Vermo uth.\n    I piece of ice.\n    I slice o f p ineapple.\n    Stir, to p off with ca rbonic and serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MERR YWI DOW COCKTAIL",
+      "name_es": "Merr Ywi Dow Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "alf c ognac bra ndy",
+          "item_es": "alf c ognac bra ndy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "alf french v e rm o uth",
+          "item_es": "alf french v e rm o uth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill g lass with cracked ice. Stir with s poon, s t ra in in whiskey glass, twist of lemon peel",
+      "method_es": "Fill g lass with cracked ice. Stir with s poon, s t ra in in whiskey glass, twist of lemon peel",
+      "glassware": "large glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "M E RR Y W I DOW COCKTAIL\n                           (Use Large Glass )\n    Fill g lass with cracked ice.\n    1 dash Curacao.\n    I dash Maraschino.\n    1 d as h Abs inthe.\n    I dash Angostura Bitters.\n    One-h alf C ognac Bra ndy.\n    One-h alf French V e rm o uth .\n    Stir with s poon, s t ra in in whiskey glass, twist of lemon peel\no n to p, and serve.\n                                    6"
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN COCKTAIL",
+      "name_es": "Gin Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bit t ers ( a ngostura )",
+          "item_es": "bit t ers ( a ngostura )",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the g lass on e·third full o f shaved ice and strai n into a",
+      "method_es": "Fill the g lass on e·third full o f shaved ice and strai n into a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN COCKTAIL\n    T ake t h ree or fo ur dashes of s ugar syrup.\n    2 dashes of bit t ers ( A ngostura ) .\n    1 wine g lass of Dry Gin.\n    1 o r .2 dashes of Curacao.\n    Fill the g lass on e·third full o f shaved ice and strai n into a\nc ocktail g lass. T wist a small piece of lemon peel, place it in the\nglass, and serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE COCKTAIL",
+      "name_es": "Champagne Cocktail",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take 1 lum p of sugar. Fill t he goblet with Cham pa gne, s tir up with a spoon a nd",
+      "method_es": "Take 1 lum p of sugar. Fill t he goblet with Cham pa gne, s tir up with a spoon a nd",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE COCKTAIL\n    Take 1 lum p of sugar.\n    1 o r 2 dashes of A n gostura Bitters.\n    1 small Jump of ice.\n    Fill t he goblet with Cham pa gne, s tir up with a spoon a nd\ns erve with a thin t wisted piece of lemon peel.\n    A q ua rt bottle of Champagne will m!lk e six cocktails.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ITALIAN MANHATTAN COCKTAIL",
+      "name_es": "Italian Manhattan Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angost u ra b itters",
+          "item_es": "angost u ra b itters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lf rye w hiskey",
+          "item_es": "lf rye w hiskey",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "ita lian vermouth",
+          "item_es": "ita lian vermouth",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lf g lass of c racked ice ; s ti r, strain a nd ser ve",
+          "item_es": "lf g lass of c racked ice ; s ti r, strain a nd ser ve",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ITALIAN MANHATTAN COCKTAIL\n   1 dash Angost u ra B itters.\n   I d ash o f Mar asch ino.\n   One-ha lf Rye W hiskey.\n   One-half Ita lian Vermouth.\n   One-ha lf g lass of c racked ice ; s ti r, strain a nd ser ve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "VERMOUTH COCKTAIL",
+      "name_es": "Vermouth Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "es o f a n gostura bitters",
+          "item_es": "es o f a n gostura bitters",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "oran ge cut into q ua rters",
+          "item_es": "oran ge cut into q ua rters",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "m ar aschino",
+          "item_es": "m ar aschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "b ra ndy",
+          "item_es": "b ra ndy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "orange cut up in quarters",
+          "item_es": "orange cut up in quarters",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake the Bitters and V ermout h wit h a small lump o f ice · Stir well and t wist a piece o f lemon peel on t op and serve.        I   I Stir up well with spoon, strain in to a cock tail g las s, put a Take 10 w ine g lass of Whisk ey. Fill the tumbl er with sh aved ice, shake up thorou ghl y, orna- Put t he above in g red ients in a sma ll whiskey g lass, fi lled on e- Fill up wi t h m ilk a nd c ream a nd serve. Take I tablespoonful of fine white su gar.",
+      "method_es": "Shake the Bitters and V ermout h wit h a small lump o f ice · Stir well and t wist a piece o f lemon peel on t op and serve.        I   I Stir up well with spoon, strain in to a cock tail g las s, put a Take 10 w ine g lass of Whisk ey. Fill the tumbl er with sh aved ice, shake up thorou ghl y, orna- Put t he above in g red ients in a sma ll whiskey g lass, fi lled on e- Fill up wi t h m ilk a nd c ream a nd serve. Take I tablespoonful of fine white su gar.",
+      "glassware": "large bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "VERMOUTH COCKTAIL\n                            ( Use Small B ar Glass)\n     T a ke 2 dashes of An gost ura Bitters.\n     1 wine g lass of Vermouth.\n     I q ua rter s lice o f lemon.\n     Shake the Bitters and V ermout h wit h a small lump o f ice ·\ns train in a cockt a il ll\"lass in which the lemon has been placed. If\nprefer red very s weet, add 2 dashes of s ugar sy rup.\n     F o r a Fancy V ermou t h Cockt ail in making t he above, add 2\ndashes of Maraschino.\n\n          OLD-FASHION SOUTHERN COCKTAIL\n     d ash A n gostura Bitters.\n   1 dash Curacao.\n   Piece o f cut loaf sugar.\n   D issolve in t wo spoon fuls o f water.\n   One wine !;las s o f Old Co rn Whisk ey.\n   I piece o f ice in g lass.\n   Stir well and t wist a piece o f lemon peel on t op and serve.        I   I\n                                     7\n                       $HERRY COCKTAIL\n                        (Us e Large Bar Glass )\n   ~ glass full of shaved ic e.\n    2 or 3 dash es o f A n gostura Bitters.\n    J das h ~faraschin o.\n    J wine g lass of S herry Wine.\n    Stir up well with spoon, strain in to a cock tail g las s, put a\ncherry or cocktail o1iv e in it, s queeze a piece o f l emon peel on\nt op and serve.\n\n                      WHI S KEY CO BBLER\n   Take 10 w ine g lass of Whisk ey.\n   1 teaspoonful of white sugar dissolved in a little wa ter.\n    I slice of oran ge cut into q ua rters.\n   1 dash of M ar aschino.\n   Fill the tumbl er with sh aved ice, shake up thorou ghl y, orna-\nm ent with berri es and ser ve with a straw.\n\n\n                            BRANDY CR US TA\n                          ( Use S mall B ar Glass )\n      T ake 3 or 4 dash es o f s uga r syrup.\n      I dash of A n gostura Bitte rs.\n      1 wine glass of B ra ndy.\n      2 das hes Curacao.\n      I dash lemon juice.\n      Before mixin g the above in gredients, p repare a cocktail g lass\nas follo ws :\n      Rub a slice o f lemon around the rim of the glass a nd d ip it in\npul veri zed whi t e suga r so t hat t h e sugar w ill ad here t o the edge\no f th e glass. P a r e half a le mon , the same as yo u would an apple\n( a ll in one piece) , so t h at th e paring will fit in the w ine g lass.\nPut t he above in g red ients in a sma ll whiskey g lass, fi lled on e-\nthird full of shaved ice, shake up well and strain t h e liq u id in\nt he cocktail g lass, prepared as di r ected above.\n      Whisk ey o r Gin C rusta made as t he ab ove ex cept s ubs ti t ute\nth e W hiskey o r Gin fo r t he B randy.\n\n\n                         WID O W' S DREAM\n   1 ji gger B enedict ine.\n   1 fresh egg.\n   Fill up wi t h m ilk a nd c ream a nd serve.\n                                    8\n                        SHERRY COBBL ER\n                        (Use Large Bar Glass)\n     Take I tablespoonful of fine white su gar.\n     1 slice of orange cut up in quarters.\n     2 small pieces o f pineapple.\n    ·Fill the glass nearly full of shaved ice, then fill it up with\nSherry Wine. Shake up, ornament the top wit h berries in\niteason, a"
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "VERM OUTH FRAPPE",
+      "name_es": "Verm Outh Frappe",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill with ice cold seltzer and serve.",
+      "method_es": "Fill with ice cold seltzer and serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "VERM OUTH FRAPPE\n                        (Large Bar Glass)\n  0 glass shaved ice:\n   1 wine glass Vermouth.\n   1 dash Maraschino.\n   Fill with ice cold seltzer and serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "julep",
+      "name_original": "CHAMP AGNE JULEP",
+      "name_es": "Champ Agne Julep",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "mint, squeezed to bring out the flavor",
+          "item_es": "mint, squeezed to bring out the flavor",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "tablespoonful of sugar",
+          "item_es": "tablespoonful of sugar",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with Champagne, slowly stirring as you pour Fill glass one-third full of fine ice, and fill with Champagne;",
+      "method_es": "Fill the glass with Champagne, slowly stirring as you pour Fill glass one-third full of fine ice, and fill with Champagne;",
+      "glassware": "champagne julep glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMP A G NE JULEP\n                  (Use Champagne Julep Glass)\n   1 lump of sugar.\n   1 sprig of mint, squeezed to bring out the flavor.\n   Fill the glass with Champagne, slowly stirring as you pour\nin. Trim with berries and grapes, or Cherries in Maraschino,\nand serve quick.\n\n                    CHAMPAGNE CO BBL ER\n   One-half tablespoonful of sugar.\n   1 slice of orange.\n   1 piece of lemon peel.\n   Fill glass one-third full of fine ice, and fill with Champagne;\ndress with fruits in season; serve with straws."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "smash",
+      "name_original": "BRANDY SMASH",
+      "name_es": "Brandy Smash",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take 1 teaspoonful of white sugar. add the Brandy and fill the g lass two-thirds full of shaved ice. Stir thoroughly a nd ornament with a half s lice of an orange and",
+      "method_es": "Take 1 teaspoonful of white sugar. add the Brandy and fill the g lass two-thirds full of shaved ice. Stir thoroughly a nd ornament with a half s lice of an orange and",
+      "glassware": "small bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY SMASH\n                       (Use Small Bar Glass)\n    Take 1 teaspoonful of white sugar.\n    2 tablespoonfuls of water.\n    3 or 4 sprigs of tender mint.\n    1 wine glass full of Brandy.\n    Press the mint in the sugar and water to extract the flavor,\nadd the Brandy and fill the g lass two-thirds full of shaved ice.\nStir thoroughly a nd ornament with a half s lice of an orange and\na few sprigs of mint. Serve with a straw.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "flip",
+      "name_original": "SHERRY FLIP",
+      "name_es": "Sherry Flip",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "powdered sugar",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon.                      -",
+          "item_es": "lemon.                      -",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ora nge or pineapple (cut in quar ters)",
+          "item_es": "ora nge or pineapple (cut in quar ters)",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well together, strain and serve.   Nutmeg if desired. Take I t easpoo n ful of fine sugar. _ Fill the glass one- third full of Vanilla ice cream, mix thor-",
+      "method_es": "Shake well together, strain and serve.   Nutmeg if desired. Take I t easpoo n ful of fine sugar. _ Fill the glass one- third full of Vanilla ice cream, mix thor-",
+      "glassware": "large soda glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SHERRY FLIP\n   2 teaspoons of powdered sugar.\n   Wine glass Sherry Wine.\n   1 fresh egg.\n  0 glass cracked ice.\n   Shake well together, strain and serve.   Nutmeg if desired.\n                               JO\n                 ANGOSTURA GRAPE F RUIT\n   Cut the fruit in h alf, extract the core or pithy sub stance in\nthe center with sharp knife , insert the knife around the inner\nedge o f the peel and di sengage the fruit from the peel wi thout\nremoving the fruit o r b reakin g the peel; sprinkle plentifuJly with\npowdered sugar and dash the openm g caused by t he r emoval of\nthe co re wi t h A ngostura Bitter s. Ice well before serving.\n\n\n                       ABSINTHE FRAPPE\n    Tk ree·fourth s Absinthe.\n    One- four th Anisette.\n    F ill gla ss with shaved ice, shake well with shaker, strain, fi ll\ng lass with carbonated wa t er.\n\n\n                         CLA R E T PUNCH\n    Take I t easpoo n ful of fine sugar. _\n     I slice of lemon.                      -\n     I slice of ora nge or pineapple (cut in quar ters).\n     F ill the tumbler t wo- thirds fu ll of ice, t hen pour in the\nC la ret unti l t he g lass is full , shake well and orna ment with b er-\nries in seaso n. Serve with a straw.\n\n\n                        V{ E ST INDIA COUP E RE E\n                           (Use Large Soda Glass )\n       T ake l V. pony g lass of Whiskey.\n        J pon y glass o f Maraschino or Cur acao.\n        Fill the glass one- third full of Vanilla ice cream, mix thor-\no ughly and fill the glass nearly full with plain soda. Grat e a\nli t t le nut meg on t o p a nd serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "sour",
+      "name_original": "WHIS KEY SOUR",
+      "name_es": "Whis Key Sour",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "W H IS KEY SOUR\n                          ( Use Small Bar Gla ss)\n   T ak e 1 large t easpoonful o f powdered wh it e su gar, dissolve\nin a little Seltze r o r Apoll inari s •Yater.\n    T he juice of h alf a lemon.\n    1 wine g lass of B o urb on o r R ye W hiskey.\n    F ill t he g lass full of shaved ice, sbake up and s train into a\nClaret glass. Ornam ent with b erries.                                      I   I\n                                   11",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BRANDY DAISY",
+      "name_es": "Brandy Daisy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "curaca o",
+          "item_es": "curaca o",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Take 3 or 4 das hes of suga r syrup. Fill glass one-third full of shaved ice, shake well, strain into",
+      "method_es": "Take 3 or 4 das hes of suga r syrup. Fill glass one-third full of shaved ice, shake well, strain into",
+      "glassware": "small ba r gla ss",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY DAISY\n                      (Use Small Ba r Gla ss)\n   Take 3 or 4 das hes of suga r syrup.\n   2 or 3 dashes of Curaca o.\n   The juice of half a sma ll lemon.\n   1 small wine glass of B randy.\n   2 dashes of Jamaica Rum.\n   Fill glass one-third full of shaved ice, shake well, strain into\na large cocktail glass and fi ll up with Seltzer 'Nater from a\nsyphon."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "MILK PUNCH",
+      "name_es": "Milk Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Take I teaspoonful of fine white sugar. Fill with milk, shake the in gredients well together, stra.in",
+      "method_es": "Take I teaspoonful of fine white sugar. Fill with milk, shake the in gredients well together, stra.in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MILK PUNCH\n                      ( Use Large Bar Glass)\n    Take I teaspoonful of fine white sugar.\n    I wine glass of Brandy.\n   Y. wine glass of rum.\n    Small Jump of ice.\n    Fill with milk, shake the in gredients well together, stra.in\ninto a large glass and gra te a little nutmeg on to p."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "EGG MILK PUNCH",
+      "name_es": "Egg Milk Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy or whiskey",
+          "item_es": "brandy or whiskey",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Take I teaspoonful of fine white sugar. Fill the glass with pure fre sh milk, shake the ingredients",
+      "method_es": "Take I teaspoonful of fine white sugar. Fill the glass with pure fre sh milk, shake the ingredients",
+      "glassware": "large bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EGG MILK PUNCH\n                     (Use Large Bar Glass)\n   Take I teaspoonful of fine white sugar.\n   I wine glass of Brandy or Whiskey.\n  l4 wine glass Rum.\n   1 egg.\n   Small lump of ice.                  .\n   Fill the glass with pure fre sh milk, shake the ingredients\nwell together and strain into a large glass.\n   For Sherry Ei;g Nogg, leave out the Brandy and Rum and\nsubstitute large wme glass of Sherry \\Vine. ·"
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BALTIMORE EGG NOGG",
+      "name_es": "Baltimore Egg Nogg",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "co gnac brandy",
+          "item_es": "co gnac brandy",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "madeira wine",
+          "item_es": "madeira wine",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "jamaica rum",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Add a little nutmeg and beat to a cream. Fill glass with milk, shake well, strain into a large glass and serve. Take 1 teaspoon fu l of white powdered sugar. Put the mint in the tumbler, add the sugar, having previously served. Take I large teaspoonful o f p owdered sugar ( white). Fill the g lass with r ich millc and shake u p the in gred ients",
+      "method_es": "Add a little nutmeg and beat to a cream. Fill glass with milk, shake well, strain into a large glass and serve. Take 1 teaspoon fu l of white powdered sugar. Put the mint in the tumbler, add the sugar, having previously served. Take I large teaspoonful o f p owdered sugar ( white). Fill the g lass with r ich millc and shake u p the in gred ients",
+      "glassware": "large bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BALTIMORE EGG NOGG\n    Volle of one egg.\n    I tablespoon of sugar.\n   Add a little nutmeg and beat to a cream.\n    One-half Co gnac Brandy.\n    One-fourth Madeira Wine.\n    3 lumps cracked ice.\n    One-fourth Jamaica Rum.\n    Fill glass with milk, shake well, strain into a large glass and\nserve.\n                                12\n              THE REAL GE O RGI A MI N T JULE P\n                        (Use Large Bar Glass)\n    Take 1 teaspoon fu l of white powdered sugar.\n    M wine glass of Cognac Brandy.\n    ;y.; wine glass of Peach Brandy.\n    About 12 sprigs of the tender shoots of the mint.\n    Put the mint in the tumbler, add the sugar, having previously\ndissolved it in a little water, then the Brandy, and lastly fill up\nthe glass with shaved ice. Stir with a spoon, but do not crush\nthe mint. This is the genuine method of concocting a Sou thern\nM int Julep, but whiskey may b e substituted for Brandy if pre-\nferred.\n\n\n\n T HE O L D MINT J ULEP - A SOUT H E RN VALE DICTORY\n     A Georgia paper speaking on this subject says:\n     \" Probably the old-fashioned julep is in its decadence as a\n public drink, but it does not follow that -the art of constructing\n this famous Southern refresher is lost. On the contrary, we\n have kno wledge of several old-fashioned gardens where the mint\n bed under the southern wall still blooms luxuriantly; where\n white fingers o f the household angels come every day about this\n time of the year and pluck a few sprays of the aromatic herb to\n build a jule p for poor old shaky grandpa, who sits in the shady\ncorner of the veranda with his feet on the rail and his head busy\n with the o lden days. In such a household, the art is still pre·\nserved.\n     \" \\\"1ith her sleeves rolled up, the rosy granddaughter stirs\nsugar in a co uple of tablespoonfuls of sparkling water, packs\ncrushed ice to the t op of the heavy cut glass goblet, pours in\nthe mellow whiskey, until an overthrow threatens, and then\ndaintily thrus ts the mint sprays into the crevices. And the old\nman, rousing from his dreams, blesses the vision which seems to\nrise up from the buried days of his youth, and with his gay nose\nresting peacefully in .the '\"?segay at t!1e summit of his midday\nrefresher, quaffs the tcy drmk, and with a lo ng drawn sigh of\nrelief, sinks back t o dream again until the dinner-bell sounds its\nhospitable summons.\n    \"The mint julep still lives, but is by no means fashionable.\nSomehow the idea has gotten abroad that the mint should be\nc_rushed and shaken up w ith. water an<;! whiskey in equal propor-\nt10ns. No man c o uld fall 111 love with such a mixture. Poor\njuleps have ruined the reputation of the South's most famous\ndrink.\"\n                                13\n                             E GG N OGG\n      Take I large teaspoonful o f p owdered sugar ( white).\n       I fre sh egg.\n    0 wine g lass of Brandy.\n    V. glass of Rum.\n      A little shaved ice.\n      Fill the g lass with r ich millc and shake u p the in gred ients\n un t il th"
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SLO EGI NHIGHBALL",
+      "name_es": "Slo Egi Nhighball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice in glass",
+          "item_es": "ice in glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "mint",
+          "item_es": "menta",
+          "amount": "2",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with carbonated wa ter and ser ve. Drop sq ueezed lime in g lass. Fill g lass with ca rbonat ed water, sti r wit h spoon and serve. Stir well, trim with fruits in season a nd serve. Take I teaspoonful of fine white sugar. Put the mint in the glass, then the sugar and water. Mash",
+      "method_es": "Fill glass with carbonated wa ter and ser ve. Drop sq ueezed lime in g lass. Fill g lass with ca rbonat ed water, sti r wit h spoon and serve. Stir well, trim with fruits in season a nd serve. Take I teaspoonful of fine white sugar. Put the mint in the glass, then the sugar and water. Mash",
+      "glassware": "small bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLO E GI N HIGHBALL\n   One piece of ice in glass.\n   Tuice of one half lime.\n   brop sq ueezed lime in glass.\n   Win e glass S loe Gin.\n   Fill glass with carbonated wa ter and ser ve.\n   Gin Highball can be made t he same way, except s ubstitu te\nDry Gin for the Sloe.\n\n                            GIN RI C KEY\n    1 piece of ice in glass.\n    Juice of one half li me.\n    Drop sq ueezed lime in g lass.\n    Wine g lass o f Gin.\n    Fill g lass with ca rbonat ed water, sti r wit h spoon and serve.\n\n\n                           GI N J ULEP.\n   One h alf tablespoonful of s ngar.\n   2 sprigs of mint.\n   One half g lass of fine ice.\n   One wine glas s of Dry Gin.\n   Stir well, trim with fruits in season a nd serve.\n                                 14\n                             GIN SMA SH.\n                         (Use Small Bar Glass)\n    Take I teaspoonful of fine white sugar.\n    2 teaspoonfuls of water.\n    I wine glass of Dry Gin.\n    3 or 4 sprigs of tender mint.\n    Put the mint in the glass, then the sugar and water. Mash\nthe m int to e,..-tract the flavo r , add the Gin and fi ll t he glass up\nwith shaved ice. Stir up well and ornament with t wo or t hree\nfresh sprigs of mint.\n\n                            GIN F IZZ\n   l teaspoonful o f sugar.\n   Juice of one lemon.\n   I dash of cream.\n   J wine glass of Dry Gin.\n   Fi ll glass with fine ice; shake, strain, fi ll glass with car-\nbonated water; serve.\n\n                          GI N CRUSTA -:\n   Peel of one half lem on in long string.\n   Place in glass.\n   One half glass of fine ice.\n   Dash o f Angostura Bitters.\n   Juice of one half lemon.\n   D ash of Maraschino.\n   Wine glass of Dry Gin.\n   And serve."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "sour",
+      "name_original": "GIN SOUR",
+      "name_es": "Gin Sour",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "2-3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "ice in glass",
+          "item_es": "ice in glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Take one large teaspoon ful of wh ite sugar, d issolved in a Fill the glass with shaved ice, shake u p and strain into a Drop squeezed lime it~ glass. Fill glass with carbonated water, stir with spoon and serve.",
+      "method_es": "Take one large teaspoon ful of wh ite sugar, d issolved in a Fill the glass with shaved ice, shake u p and strain into a Drop squeezed lime it~ glass. Fill glass with carbonated water, stir with spoon and serve.",
+      "glassware": "small bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN SOUR\n                        (Use Small Bar Glass)\n     Take one large teaspoon ful of wh ite sugar, d issolved in a\nlittle seltzer or Apoll inaris water.\n     2 or 3 dashes of lemon juice.\n     1 wine glass of Dry Gin.\n     Fill the glass with shaved ice, shake u p and strain into a\nclaret glass. Ornament with berries.\n\n                       SLO E GIN RICK Y\n   l piece of ice in glass.\n   Juice of half lime.\n   Drop squeezed lime it~ glass.\n   'Vine glass of S loe Gm.\n   Fill glass with carbonated water, stir with spoon and serve.\n                                15"
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN HIGHBALL",
+      "name_es": "Gin Highball",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "ice in glass",
+          "item_es": "ice in glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon or lime juice",
+          "item_es": "lemon or lime juice",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill glass with carbonated water, stir and serve. Take 1 tablespoonful of fine white sugar. Shake up thoroughly, strain into a m edium bar glass and fill",
+      "method_es": "Fill glass with carbonated water, stir and serve. Take 1 tablespoonful of fine white sugar. Shake up thoroughly, strain into a m edium bar glass and fill",
+      "glassware": "large bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN HIGHBALL\n   1 piece of ice in glass.\n   Wine glass of Dry Gin.\n   Fill glass with carbonated water, stir and serve.\n\n\n                         GO LDE!f FIZZ\n                     (Use Large Bar Glass)\n    Take 1 tablespoonful of fine white sugar.\n    3 dashes of lemon or lime juice.\n    The yolk of one egg.\n    1 wine glass of Dry Gin.\n    2 or 3 small lumps o f ice.\n    Shake up thoroughly, strain into a m edium bar glass and fill\nit up with Seltzer water."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "SILVER FIZZ",
+      "name_es": "Silver Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take I tablespoonful of pulveri zed white su gar. Shake up thoroughly , strain into a medium bar glass and fill",
+      "method_es": "Take I tablespoonful of pulveri zed white su gar. Shake up thoroughly , strain into a medium bar glass and fill",
+      "glassware": "large bar glass",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SILVER FIZZ\n                      (Use Large Bar Glass)\n    Take I tablespoonful of pulveri zed white su gar.\n    J da shes of lemon or lime juice.\n    The white of one egg.\n    1 wine ,glass of Dry Gin.\n    2 or 3 small lumps of ice.\n    Shake up thoroughly , strain into a medium bar glass and fill\nit up with Seltzer water.\n\n\n\n\n                                16\n                Pl-I.NC-HBS for\n                   BCBPTIOl'ij\n                          ~\n                             T   IS highly necessary in making a\n                          ~ good punch to sec that all of the\n                               ingredients arc thoroughly mL'<ed.\n                          This must be looked after carefully.\n                             It is usual to allow a quart for four\n                          persons, but this . is not a fixed rule.\n                          For example, a nuxcd party would use\n                          more punch than a party composed of\n                          ladies only, and on a very warm night\n                          more punch would be consumed than\n                          on a cold night.-\n                               It is not advisable to place more\n                            Champagne at a time on ice than is\n                            likely t o be used, because ii you re-\n                            move the Champagne from the ice and\n                            the Champagne is not used but is al·\n                            lowed to get warmer, the wine loses in\n                            flavor.\n    When Champagne is to be iced before being put in the punch\nplace it in a tub and put cracked ice all around it. A little salt\nespecially rock salt, sprinkled on the ice, will help to get th~\nwine cold quickly.               .\n    In the middle of the punch bowl pla.ce .a square block of ice,\ncut a bole in the ice and place frmt m it, sue~ as berries or\ngrapes, but if these arc not in season l\\farasch1no cherries or\npineapples can be used. There arc several good brands of pine·\napples on the market, but it is advisable to use fresh pineapples\nwhere poss ible as the fresh pineapple adds very much to the\nflavor of the punch_\n    One or two red or white Maras.chino che.rrics should be\nplaced in each glass before the punch IS poured m.\n    If the occasion is such that a lighter punch is desired I\nwould suggest that one-half \\Vine or Ch\".mpagne and one-half\nApollinaris or Carbonated Water ~e used instead of the quanti-\nties prescribed in the following recipes:\n                                 17\n                                           ,.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "PUNCH ALA ROMAINE '",
+      "name_es": "Punch Ala Romaine '",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take 1 bottle of Rum. addin g the thin nnd of on e oran ge ; s train 'through a s ieve into Take 4 bottles of Sweet Catawba Win e.",
+      "method_es": "Take 1 bottle of Rum. addin g the thin nnd of on e oran ge ; s train 'through a s ieve into Take 4 bottles of Sweet Catawba Win e.",
+      "glassware": "punch bowl",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PUNCH A LA R O MAINE '\n                      (For a party of fifteen)\n   Take 1 bottle of Rum.\n    I bottle of Wine.\n    10 Lemons\n    2 Sweet Oranges.\n    2 pounds of P owd ered Sugar. ·\n    10 Eggs.\n    D issolve the sugar in the juitc of the oranges and lemons,\naddin g the thin nnd of on e oran ge ; s train 'through a s ieve into\na bo wl and ad d by degrees the whites o r the eggs , b eaten to a\nfroth. Place the bow l on ice fo r a while, th en stir in bri sk ly th e\nRum and the Wine.\n\n                          DU BARRY PUNCH\n                           (Use Punch Bowl)\n     Take 4 bottles of Sweet Catawba Win e.\n     I' bottle of Claret.\n     I bottle of Champagne.\n     3 oranges.\n     I 0 tablespoonfuls of sugar.\n     Dissolve the suga r in th e Catawba and Claret \\Vines, add th e\njui ce of the oranges. \\Vh en mixed, put it in ice for an hour o r\nmore and then add the Cham pagne.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "ORLEANS PUNCH",
+      "name_es": "Orleans Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take I quart bottl e of Champagne \\Vin e. add all the other ing redient s, except th e Cham pagne.",
+      "method_es": "Take I quart bottl e of Champagne \\Vin e. add all the other ing redient s, except th e Cham pagne.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORLEANS PUNCH\n                       (One q uart o r Punch)\n   Take I quart bottl e of Champagne \\Vin e.\n   3 tablespoonful s of s uga r.\n   I orange, sliced .\n   The juice of a lemon.\n   2 s lices of pineapple (cut in small p ieces. )\n   I wine g lass of Maraschino.\n   Orn ament w ith frui ts in seaso n an d serve in Champagne\ngoble ts.\n\n                       PIEDMONT PUNCH\n   T a ke 4 bottles of Champagne.\n   I pint o f Jamaica Rum.\n   1 p int of Brandy.\n   I g ill of Curacao.\n                                                                           .\n   Juice of four lemon s.\n   2 pineapples, sliced.\n   Sweet en to t as te with pu lverized whi te suga r.   Put t he pine·\n                                   18\napple with quarter o f pound o f s~1ga r in a glass bowl and le t\nthe m stand until the sugar is well soaked in the pineapple, then\nadd all the other ing redient s, except th e Cham pagne.\n    L et this mixture stand in ice for abou t an hour, t hen 3.dd the\nChampagne, and ornament with sliced oran ge and other fruits in\nseason. Serve in champagne g!asses.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "ROSE CHAMPA GNEPUNCH",
+      "name_es": "Rose Champa Gnepunch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take l pint b ottl e of Claret. Put a ll of the ing redie nts into a pitcher and mix well. Vary Take 3 bo ttl es o f Champag ne, iced . addin g the rind of one orange; strain throu gh a s ieve into a",
+      "method_es": "Take l pint b ottl e of Claret. Put a ll of the ing redie nts into a pitcher and mix well. Vary Take 3 bo ttl es o f Champag ne, iced . addin g the rind of one orange; strain throu gh a s ieve into a",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "R O SE C HAMPA GN E P U N C H\n   4 quarts o f Champagne.\n   8 spoon ful s of fine sugar.\n   2 wine g lasses o f Brandy.\n   2 wine g lasses o f l\\faraschino.\n   1 w ine g lass Jamaica Rum.\n   2 quarts of carbonated water.\n   Juice of o ne le.man .\n   Slice two ora nges and t wo lemons.\n    Large piece o f ice when served.\n\n\n                       IMPERIAL P U ~ C H\n                       (One q u a rt of Punch)\n     Take l pint b ottl e of Claret.\n      I pint bottle of Apollin a ri s water.\n     4 t ab lespoonfu ls o f powdered white suga r, dissolved in a\nlittl e of the Apollinaris water.\n   ;-:I teaspoonfu l o f grated nutmeg .\n      I liquer glass o f Maraschino.\n     Abo ut V. pound of ice.                           .\n     Put a ll of the ing redie nts into a pitcher and mix well. Vary\nquantity accord in g to numbe r o f g uests, using punch bowl for\nlarge party.\n\n\n                     P O MPAD O UR PUNCH\n                       (For a party of ten)\n    Take 3 bo ttl es o f Champag ne, iced .\n    I bottle of Cognac Brandy.\n   4 oranges.\n    I p ineapple.\n    Slice tbe oranges and pineapple in a bowl, pour the cognac\nover them, and let th em steep for a couple of hours; then pour\nin the Champagne a nd serve immed iately.\n                                 19\n                   PUNCH A LA R O MAINE\n                     (For a party of fifteen)\n   1 bottle Champagne.\n   1 bottle Rum.\n   2 tablespoonfuls Angostura Bitters.\n   10 lemons.\n   3 sweet oranges.\n   2 pounds powdered sugar.\n   I 0 fresh eggs.\n   Dissolve the sugar in the iu1ce of the lemons and oran ges,\naddin g the rind of one orange; strain throu gh a s ieve into a\nbowl and add by degrees the whites of the eggs beaten to a\nfroth .\n    Place the bo wl on ice till cold, then stir in the rum and wine\nuntil thoroughly mixed. Serve in fancy stem glass.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "ROYAL BRANDY PUNCH",
+      "name_es": "Royal Brandy Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take 1 gallon of water. Mix the materials well together in a large bowl and you have Take 5 bottles of Champagne. Mix the above ingredients (except the win~) in a lar ge punch",
+      "method_es": "Take 1 gallon of water. Mix the materials well together in a large bowl and you have Take 5 bottles of Champagne. Mix the above ingredients (except the win~) in a lar ge punch",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "R O YAL BRANDY PUNCH\n                      (For a party of t wenty)\n   Take 1 gallon of water.\n   3 q uarts of Brandy.\n   I pint of Jamaica Rum .\n    I Y. pounds of white sugar.\n   Juice of 6 lemons.\n   3 oranges, sliced.\n   1 pineapple pared and cut up.\n   1 gill of Curacao.\n   2 gills o f raspberry syrup.\n   Ice and add berries in season.\n   Mix the materials well together in a large bowl and you have\na splendid punch. If n o t sweet enough, add more sugar.\n\n\n                       DUVAL PUNCH\n                 (For a mixed party of twenty)\n   Take 5 bottles of Champagne.\n   I quart of Jamaica Rum.\n   1 pint <>f Maraschino.\n   6 lemons, sliced.\n   Sugar to taste.\n   Mix the above ingredients (except the win~) in a lar ge punch\nbowl. Wh en the icin g has been completed, and just before the\npunch is to be served, add the wine and some slices of or?nge\nand lemon.\n                                20",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "CHAMPAGNE PUNCH",
+      "name_es": "Champagne Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s ugar",
+          "item_es": "s ugar",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with I d ie.",
+      "method_es": "Stir with I d ie.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE PUNCH\n                 ( F or eig ht people in a mLxed party)\n    4 lumps of s ugar.\n    2 ponies of Curacao.\n    I quart Champagne.\n    I quart Apollinaris water.\n    J uice of 011c lemon.\n    Stir with I d ie.\n  ' 1 large piece of ice."
+    },
+    {
+      "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "RAN DOLPH PUNCH",
+      "name_es": "Ran Dolph Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Take 5 q ua rts Cha mpagne.",
+      "method_es": "Take 5 q ua rts Cha mpagne.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RAN DOLPH PUNCH\n   Take 5 q ua rts Cha mpagne.\n   2 wine g lasses of M araschino.\n   2 wine g lasses o f Curacao.\n   F lavor with ripe strawberries. Should strawberr ies n ot be in\nseason, add a few· drops of extract of r each or Vanilla.\n\n\n\n\n                                   21\n         A BRIEF HISTORY OF W ELL\n              KNOW N W INES\n    17T'HE people of Italy and France, with a population equal t o\n    ~ that of the United States, consume annually about two bil-\n           lion gallons o f wine, while the United States barely con-\n    sumes forty million gallons per annum. D yspepsia, that great\n    foe of the American nation, is almost unknown in these coun-\n    tries (Italy and France), which is unquestionably due to the\n    fact that they drink wine with t heir meals. The people of the\n    U nited States arc now understanding tbe fact that wine is one\n    of the most healthful of all beverages, and hence the d emand\n    for li gh t, native tabl e wines is growing every day.\n        Domestic \\Vines (that is , wines made in the Un ited States )\n    are steadily growin g in favor, a nd the compiler h as s amp led\n    many California and Ohio wines that would rival the fine st\n    grades of foreign production.\n        \"At the late French Exposition, a California wine made from\n    the Claret type, received the highest award for excell ence, over\n    all the other wines offered in competition, including the fine st\n    vintage of France. The grapes o f which these (California) wines\n    are made are not native to California, as is often thought, but\n    are the offspring of cuttings originally introduced from France ,\n    Germany, Spain and Italy. The so-called . 'Mission' g rape of\n    California is evidently of Spanish origin, having been brou ght\n    over by the Catholic missionaries in the early history of the\n    country.\" - United States Dispcnsatory.\n                                SHERRY\n       Sherry is derived from the town of Xeres de la Frontera, in\n    An da lusia. Xeres is the way the Spaniards spell ·it. Sherry was\n    a popular wine four hund r ed years a go.\n       Average alcoholic strength 18 per cent. A swee t wine, but\n    can also be obtain ed dry. The dry S herry is usually prescribed\n    by physicians. It is the most popular tonic wine on the marke t\n    today. Properties, tonic and digestive.\n                                  PORT\n       This wine is a great restorative and means of refreshment\n    when the powers o f life are exhausted. As a pro tection a ga ins t\n    transient and o rganic disturbances, fine o 1d Port is unsurpassed\n    by any o ther product of Nature.\n       It derives its name from the city o f Oporto, in Portu g al ,\n    from wh ence ~t was originally sh ipped. It is the heaviest of all\n    wines. Average alcoholic strength 20 per cent.\n       It is usually a sweet wi n e, but the dry is obtainable al so.\n                                    22\n\n•\n                                CLARET\n    A lig",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    }
+  ]
+}
