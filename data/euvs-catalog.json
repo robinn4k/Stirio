@@ -64,6 +64,22 @@
     "bookFile": "data/euvs-books/1879-drinks-and-how-to-make-them-by-yeatman-co.json"
   },
   {
+    "id": "1880-american-other-drinks-by-leo-engel-second-edition",
+    "year": 1880,
+    "decade": "1880s",
+    "title": "American & Other Drinks (Second Edition)",
+    "author": "Leo Engel (formerly of the Criterion, London)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Tinsley Brothers",
+    "city": "London (Catherine Street, Strand)",
+    "edition": "Second Edition (1880)",
+    "notes": "⭐ Libro citado por Yeatman 1879 como referencia inicial. Leo Engel — bartender mítico del Criterion de Londres, autor de fantasiosos nombres de cócteles como 'Alabama Fog-cutters', 'Connecticut Eye-openers', 'Thunderbolt Cocktails'. +200 recetas patronizadas desde el Príncipe de Gales hasta el cockney más humilde. Skeleton custom + parser numerado-prosa. 181 recetas; ~78% (142/181) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 181,
+    "bookFile": "data/euvs-books/1880-american-other-drinks-by-leo-engel-second-edition.json"
+  },
+  {
     "id": "1883-mcdonoughs-bar-keepers-guide-and-gentlemens-sideboard-companion-1883",
     "year": 1883,
     "decade": "1880s",
@@ -222,6 +238,22 @@
     "sectionCount": 2,
     "recipeCount": 185,
     "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
+  },
+  {
+    "id": "1907-smacks-and-smiles-tenth-edition-by-charles-smith",
+    "year": 1907,
+    "decade": "1900s",
+    "title": "Smacks and Smiles (Tenth Edition)",
+    "author": "Charles Smith (with thanks to John F. Doyle, J. Walter Seay, Stephen Howley, R.F. Byron, T.J. Jordan)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Tenth Edition (1907)",
+    "notes": "Manual pre-Prohibición de Charles Smith en su 10ª edición. Open con secciones detalladas sobre estilos de Absinthe (American, French, Italian) y 11 tipos de glassware. Compendio de la era dorada de la mixología.",
+    "sectionCount": 2,
+    "recipeCount": 419,
+    "bookFile": "data/euvs-books/1907-smacks-and-smiles-tenth-edition-by-charles-smith.json"
   },
   {
     "id": "1909-recipes-of-american-and-other-iced-drinks",
@@ -430,6 +462,22 @@
     "sectionCount": 17,
     "recipeCount": 89,
     "bookFile": "data/euvs-books/1920-down-the-hatch.json"
+  },
+  {
+    "id": "1923-harry-of-ciros-abc-of-mixing-cocktails-second-impression",
+    "year": 1923,
+    "decade": "1920s",
+    "title": "ABC of Mixing Cocktails (Second Impression)",
+    "author": "Harry McElhone (later founder of Harry's New York Bar, Paris)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Christopher & Co., Ltd. (Wine Merchants to H.M. The King)",
+    "city": "London",
+    "edition": "Second Impression (1923; orig. 1919)",
+    "notes": "⭐ Harry McElhone (Harry of Ciro's London) — futuro fundador del legendario Harry's New York Bar de París. Publicado por Christopher & Co., Wine Merchants to H.M. The King. Incluye famosos Harry-coined cocktails: Monkey's Gland (su invención, deriving its name from Voronoff's rejuvenation experiments). Citas de Ritz Hotel London, Knickerbocker Club NY, Hoffman House. Skeleton custom + parser word-fraction prose. 256 recetas; ~87% (223/256) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 256,
+    "bookFile": "data/euvs-books/1923-harry-of-ciros-abc-of-mixing-cocktails-second-impression.json"
   },
   {
     "id": "1924-angostura-bitters-centenary-gift-book-of-cocktail-and-other-recipes",
@@ -784,6 +832,22 @@
     "bookFile": "data/euvs-books/1932-wet-drinks-for-dry-people-by-william-c-feery.json"
   },
   {
+    "id": "1933-300-drinks-and-how-to-mixem",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "300 Drinks and How to Mix 'Em",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "United States",
+    "edition": "First Edition (1933, post-Repeal)",
+    "notes": "Compendio post-Repeal de 300 bebidas. Cada receta tiene su sección 'Use ... bar glass' + lista de ingredientes con tablespoon/teaspoon/wine glass + método. 237 recetas; ~71% (168/237) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 237,
+    "bookFile": "data/euvs-books/1933-300-drinks-and-how-to-mixem.json"
+  },
+  {
     "id": "1933-cocktail-parade",
     "year": 1933,
     "decade": "1930s",
@@ -942,6 +1006,22 @@
     "sectionCount": 2,
     "recipeCount": 85,
     "bookFile": "data/euvs-books/1934-cocktails-bar-la-florida-by-constante-ribalaigua-vert.json"
+  },
+  {
+    "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Drinks as They Were Made Before Prohibition",
+    "author": "Ira D. Altschul (Santa Barbara, California)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "Santa Barbara, California",
+    "edition": "First Edition (1934, post-Repeal)",
+    "notes": "Manual nostálgico post-Repeal de Ira D. Altschul (Santa Barbara, CA). Reflexiona sobre cómo durante la Prohibición se servía 'rotten and rancid poison' como whisky, y ahora hay que 'teach the people how and what to drink'. Incluye una sección sobre el setup ideal del bar pre-Prohibición (glasses, tools, fruit handling). Cocktails recopilados antes de la Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 86,
+    "bookFile": "data/euvs-books/1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul.json"
   },
   {
     "id": "1934-heres-how-to-be-healthy-by-b-g-hauser",
@@ -1358,6 +1438,22 @@
     "sectionCount": 30,
     "recipeCount": 52,
     "bookFile": "data/euvs-books/1948-ron-daiquiri-coctelera-cocktail-book-habana-cuba.json"
+  },
+  {
+    "id": "1949-bottoms-up-guide-to-pleasant-drinking",
+    "year": 1949,
+    "decade": "1940s",
+    "title": "Bottoms Up — Guide to Pleasant Drinking",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1949, post-WWII)",
+    "notes": "Guía post-WWII de drinking estilo americano. 'Pleasant Drinking' tras la era dura de la guerra.",
+    "sectionCount": 2,
+    "recipeCount": 57,
+    "bookFile": "data/euvs-books/1949-bottoms-up-guide-to-pleasant-drinking.json"
   },
   {
     "id": "1950-cinzano-en-el-cocktail",
