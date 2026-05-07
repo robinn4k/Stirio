@@ -1,0 +1,3624 @@
+{
+  "book_id": "1935-le-bar-american-cocktails-by-george-pillaert",
+  "metadata": {
+    "title": "Le Bar — Cocktails Américains",
+    "author": "George Pillaert",
+    "year": 1935,
+    "language": "fr",
+    "language_name": "Francés",
+    "publisher": null,
+    "city": "Paris",
+    "edition": "1935",
+    "source_file": "1935 Le Bar Américan Cocktails by George Pillaert.txt",
+    "notes": "Manual francés de coctelería por George Pillaert (1935). Recopila las recetas de los bares americanos de París (Bar Napoléon, Cintra, Le Dôme, Le Floréal de Ostende). 74 recetas reales rescatadas de 162 candidatas heurísticas; 88 saltadas (la mayoría son nombres de marcas, ingredientes sueltos, banners de venues 'Création Bar X Paris' y la jerga francesa de barra mal segmentada por el extractor). Parser custom French-aware procesa fracciones del libro (1/2, 1/3, 2/3, 1/4) + medidas FR (traits, gouttes, jus de) + traduce ingredientes principales al español. Saltadas (no son recetas reales): Shakers : (non_recipe (brand/ingredient/glossary/banner)); Sucerier (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers : (non_recipe (brand/ingredient/glossary/banner)); Zeste (non_recipe (brand/ingredient/glossary/banner)); GORDON'S DRY GIN (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); CINZANQ (non_recipe (brand/ingredient/glossary/banner)); CREATION - BAR NAPOLEON PARIS (non_recipe (brand/ingredient/glossary/banner)); Twel (non_recipe (brand/ingredient/glossary/banner)); Mixte Vermouth (non_recipe (brand/ingredient/glossary/banner)); PERD CREER (non_recipe (brand/ingredient/glossary/banner)); Amarosa (non_recipe (brand/ingredient/glossary/banner)); Amaros (non_recipe (brand/ingredient/glossary/banner)); Tumbler (non_recipe (brand/ingredient/glossary/banner)); Création - Bar Cintra Paris (non_recipe (brand/ingredient/glossary/banner)); IDD (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Dôme Paris (non_recipe (brand/ingredient/glossary/banner)); Création Bar Napoléon Paris (non_recipe (brand/ingredient/glossary/banner)); Sel (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Finir Champagnë Charles Heidsieck (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Noilly Prat (non_recipe (brand/ingredient/glossary/banner)); Marie Brizard (non_recipe (brand/ingredient/glossary/banner)); Création Bar Napoléon Paris (non_recipe (brand/ingredient/glossary/banner)); Cognac Martel (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); Burnett Dry Gin (non_recipe (brand/ingredient/glossary/banner)); Merasquin (non_recipe (brand/ingredient/glossary/banner)); Whisky Robertson (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Egs-Nogg (non_recipe (brand/ingredient/glossary/banner)); Baltimore Egg-Nogg (non_recipe (brand/ingredient/glossary/banner)); Fine Martell (non_recipe (brand/ingredient/glossary/banner)); Scotch Whisky (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Floréal Ostende (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Floréal Ostende (non_recipe (brand/ingredient/glossary/banner)); PALE DRY Sherry-Sherry Rossel (non_recipe (brand/ingredient/glossary/banner)); John Begg's Scotch Whisky (non_recipe (brand/ingredient/glossary/banner)); Sherry Cobbler (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Chamberry (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Fine Martell (non_recipe (brand/ingredient/glossary/banner)); Gin Smack (non_recipe (brand/ingredient/glossary/banner)); Whisky Smack (non_recipe (brand/ingredient/glossary/banner)); Whisky John Begg (non_recipe (brand/ingredient/glossary/banner)); Neck (non_recipe (brand/ingredient/glossary/banner)); Dry Gin Burnett (non_recipe (brand/ingredient/glossary/banner)); Création Bar Le Floréal Ostende (non_recipe (brand/ingredient/glossary/banner)); Bar Napoléon Paris (non_recipe (brand/ingredient/glossary/banner)); Bénédictine (non_recipe (brand/ingredient/glossary/banner)); Cherry Peter HEERING (non_recipe (brand/ingredient/glossary/banner)); Son (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); Passer Shakers (non_recipe (brand/ingredient/glossary/banner)); Pampl's Cocktail (non_recipe (brand/ingredient/glossary/banner)); Plam's IBlossom (non_recipe (brand/ingredient/glossary/banner)); Kirach (non_recipe (brand/ingredient/glossary/banner)); Tomates Juice (non_recipe (brand/ingredient/glossary/banner)); REIMS (non_recipe (brand/ingredient/glossary/banner)); Dry Gin Burnett (non_recipe (brand/ingredient/glossary/banner)); Dry Gin Burnett (non_recipe (brand/ingredient/glossary/banner)); Fine Hennessy (non_recipe (brand/ingredient/glossary/banner)); Whisky John Robertson (non_recipe (brand/ingredient/glossary/banner)); Rhum Charleston (non_recipe (brand/ingredient/glossary/banner)); Marasquin (non_recipe (brand/ingredient/glossary/banner)); Diablotin (non_recipe (brand/ingredient/glossary/banner)); Fine Tricoche (non_recipe (brand/ingredient/glossary/banner)); Ginger-Ale (non_recipe (brand/ingredient/glossary/banner)); Ginger -Beer (non_recipe (brand/ingredient/glossary/banner)); Jus de Baïsin (non_recipe (brand/ingredient/glossary/banner)); Jus de Ciîtro (non_recipe (brand/ingredient/glossary/banner)); Ordina Puncelh (non_recipe (brand/ingredient/glossary/banner)); Sucre (non_recipe (brand/ingredient/glossary/banner)); Gin Burnett DRY (non_recipe (brand/ingredient/glossary/banner)); Sucre (non_recipe (brand/ingredient/glossary/banner)); Whisky John Robertson (non_recipe (brand/ingredient/glossary/banner)); W. P. Lowrie (non_recipe (brand/ingredient/glossary/banner)); Dry Gordon's Gin (non_recipe (brand/ingredient/glossary/banner)); Burnette Dry Gin (non_recipe (brand/ingredient/glossary/banner))"
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Le Bar — Cocktails Américains",
+      "title_es": "Le Bar — Cócteles Americanos",
+      "content_original": "Manual francés de coctelería por George Pillaert (1935).",
+      "content_es": "Manual francés de coctelería por George Pillaert (1935)."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails américains",
+      "title_es": "Cócteles americanos",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-001",
+      "order": 1,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Crowe Cocktail",
+      "name_es": "Crowe Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine Hennessy",
+          "item_es": "Fine Hennessy (cognac)",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini",
+          "item_es": "Vermut Martini",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "de Cointreau",
+          "item_es": "de cointreau",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "très répandu à Londres",
+          "item_es": "très répandu à londres",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Crowe Cocktail\n1/3 fine Hennessy\n1/3 Gordon'a Dry Gin\n1/3 Vermouth Matini\n\n2 traits de Cointreau Tumbler\ntrès répandu à Londres"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-002",
+      "order": 2,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "DRY",
+      "name_es": "Dry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Vermouth Mart",
+          "item_es": "Vermut Martini",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DRY\n2/3 Vermouth Mart\n1/3 Gordon'e Dry Gin\n\n2 traits angostura Tumbler\nun Zeste de citron améliore son parfum"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-003",
+      "order": 3,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Rubis",
+      "name_es": "Rubis",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Rossi",
+          "item_es": "Rossi (vermut)",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Rubis _- Autre Recette",
+          "item_es": "rubis _- autre recette",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "\\ 1 gros glaçon",
+          "item_es": "\\ 1 gros glaçon",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "| 1/3 Rossi",
+          "item_es": "| 1/3 rossi",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "| 1/3 Vermouth Martini",
+          "item_es": "| 1/3 vermouth martini",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "_— 15 —",
+          "item_es": "_— 15 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Rubis\n2/3 Rossi\n1/3 Gordon's Dry Gin Tumbler\nun zeste de citron améliore son parfum\n\nRubis _- Autre Recette\n\nge prépare et se sert directement dans le même verre\n\\ 1 gros glaçon\n| 1/3 Rossi\n| 1/3 Vermouth Martini\n1/3 Gordon's Dry Gin\nun large Zeste de citron améliore son parfum\n\n_— 15 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-004",
+      "order": 4,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Martini",
+      "name_es": "Martini",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Martini Vermouth DRY",
+          "item_es": "martini vermouth dry",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Martini\n2/3 Gordon's DRY Gin\n1/3 Martini Vermouth DRY\n1 trait angostura\nZeste de citron Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-005",
+      "order": 5,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Martini",
+      "name_es": "Martini",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "rtini (doux)",
+          "item_es": "rtini (doux)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini",
+          "item_es": "Vermut Martini",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Brandy",
+          "item_es": "brandy",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Fine Martell",
+          "item_es": "Fine Martell (cognac)",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini DRY",
+          "item_es": "Vermut Martini Seco",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostnra Passer",
+          "item_es": "angostnra passer",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Martini\n2/3 Gordon's DRY Gin\n\n1/3 Noilly Prat\n\n1 trait angostura\n\nZeste de citron Tumbler\n\nrtini (doux)\n\n1/2 Gordon's DRY Gin\n1/2 Vermouth Martini\n1 trait angostura\nZeste de citron Tumbler\n\nBrandy\n3/4 Fine Martell\n\n1/4 Vermouth Martini DRY\n\n1 trait angostnra Passer Tumbler\n\nZeste de citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-006",
+      "order": 6,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Bronx",
+      "name_es": "Bronx",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 orange",
+          "item_es": "zumo de orange",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "— 16 —",
+          "item_es": "— 16 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "1/3 Vermouth Martini Passer Shakers",
+      "method_es": "1/3 Vermouth Martini pasar por la coctelera",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Bronx\n1/3 Gordon's Gin\n1/3 Noilly Prat\n\n1/3 Vermouth Martini Passer Shakers\nLe jus d'une 1/2 orange Zeste d'orange\n— 16 —\n\n|\n;"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-007",
+      "order": 7,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Manhattan",
+      "name_es": "Manhattan",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Whisky Canadian",
+          "item_es": "whisky canadiense",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini",
+          "item_es": "Vermut Martini",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Manhattan\n1/2 Whisky Canadian\n1/4 Noilly Prat\n1/4 Vermouth Martini\n\n1 Trait angostura\n\nZeste de citron - Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-008",
+      "order": 8,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Américano",
+      "name_es": "Américano",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Vermouth Martini",
+          "item_es": "Vermut Martini",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Rossi",
+          "item_es": "Rossi (vermut)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange Bitter",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Américano\n1/2 Vermouth Martini\n1/2 Rossi\n\n2 Traits orange Bitter\n\n2 > angostura\nUn large Zeste de citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-009",
+      "order": 9,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Canadian",
+      "name_es": "Canadian",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Canadian Whisky",
+          "item_es": "whisky canadiense",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Pret",
+          "item_es": "Noilly Prat",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Canadian\n1/2 Canadian Whisky\n1/2 Noilly Pret\n\n2 Traits angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-010",
+      "order": 10,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Paradis",
+      "name_es": "Paradis",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Fine Martell",
+          "item_es": "Fine Martell (cognac)",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Apricot Brandy",
+          "item_es": "brandy de albaricoque",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 orange",
+          "item_es": "zumo de orange",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Paradis\n1/3 Gordon'e Gin\n1/3 Fine Martell\n\n1/3 Apricot Brandy\n\nLe jus d'une 1/2 orange"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-011",
+      "order": 11,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Side-Car",
+      "name_es": "Side-Car",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine Tricoche",
+          "item_es": "Fine Tricoche (cognac)",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "curaçao blanc",
+          "item_es": "curaçao blanco",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Side-Car\n1/2 fine Tricoche\n1/2 Cointreau\n3 traits curaçao blanc\nLe jus d'un 1/2 citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-012",
+      "order": 12,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "White-Lady",
+      "name_es": "White-Lady",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "curaçao blanc",
+          "item_es": "curaçao blanco",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "White-Lady\n1/2 Gordon's DRY Gin\n1/2 Cointreau\n3 traits curaçao blanc\nLe jus d'un 1/2 citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-013",
+      "order": 13,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Ferrarrin",
+      "name_es": "Ferrarrin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Eau de vie de Danzig",
+          "item_es": "aguardiente de Danzig",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": ": (Gold Leaf) Marie Brizard",
+          "item_es": ": (gold leaf) marie brizard",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Maraskin",
+          "item_es": "maraschino",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Quelques gouttes de noyaux de cerises",
+          "item_es": "quelques gouttes de noyaux de cerises",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Ferrarrin\n1/2 Gordon's DRY Gin\n\n1/4 Eau de vie de Danzig\n: (Gold Leaf) Marie Brizard\n\n1/4 Maraskin\nQuelques gouttes de noyaux de cerises"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-014",
+      "order": 14,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Falstaff",
+      "name_es": "Falstaff",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Falstaff\n1/3 Gordon's DRY Gin\n1/3 Cointreau\n\nLe jus d'un 1/2 citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-015",
+      "order": 15,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Napoléon",
+      "name_es": "Napoléon",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Jus d'orange",
+          "item_es": "jus d'orange",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Grand Marnier rouge",
+          "item_es": "grand marnier rouge",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Large Zeste d'orange",
+          "item_es": "large zeste d'orange",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "_— 19 —",
+          "item_es": "_— 19 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Finir champagne Bollinger; ser Shakers",
+      "method_es": "terminar champagne Bollinger; ser Shakers",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Napoléon\n1/3 Gordon'e DRY Gin\n\nJus d'orange\nGrand Marnier rouge\n\nP\n\nFinir champagne Bollinger\nLarge Zeste d'orange\n\nser Shakers\n\n_— 19 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-016",
+      "order": 16,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Benito",
+      "name_es": "Benito",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Abricot Brandy Marie Brizard",
+          "item_es": "abricot brandy marie brizard",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cherry ‘Rocher",
+          "item_es": "cherry ‘rocher",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange Bitter",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "| Gin Cocktail",
+          "item_es": "| gin cocktail",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Benito\n1/3 Gordon's DRY Gin\n\n1/3 Abricot Brandy Marie Brizard\n\n1/3 Cherry ‘Rocher,\n\n2 traits orange Bitter Tumbler\n| Gin Cocktail\n\n3/4 Gordon's Dry Gin\n\n1/4 Noilly Prat\n\n1 trait angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-017",
+      "order": 17,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Joséphine",
+      "name_es": "Joséphine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Pernod",
+          "item_es": "pernod",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Canadian club",
+          "item_es": "canadian club",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Finir avec 2 gouttes de grenadine sans remuer",
+      "method_es": "terminar avec 2 gouttes de grenadine sans remover",
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Joséphine\n1/3 Pernod\n\n1/3 Canadian club\n\n1/3 Noilly Prat Tumbler\n\nFinir avec 2 gouttes de grenadine sans remuer"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-018",
+      "order": 18,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Mimosa",
+      "name_es": "Mimosa",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'orange",
+          "item_es": "jus d'orange",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "1/2 chartreuse jaune Passer Shakers",
+      "method_es": "1/2 chartreuse jaune pasar por la coctelera",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mimosa\n1/4 Gordon's DRY Gin\n1/4 jus d'orange\n1/2 chartreuse jaune Passer Shakers"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-019",
+      "order": 19,
+      "section_title": "POUR LES COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Exprinter",
+      "name_es": "Exprinter",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Punch suédois",
+          "item_es": "punch suédois",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "de grenadine",
+          "item_es": "de grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Passer Shakers - Zeste d'oanger",
+      "method_es": "pasar por la coctelera - Zeste d'oanger",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Exprinter\n1/2 Gordon's DRY Gin\n2/3 Punch suédois\n1 trait angostura\n\n2 gouttes de grenadine\nPasser Shakers - Zeste d'oanger"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-020",
+      "order": 20,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Maidens Prayer",
+      "name_es": "Maidens Prayer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Rhum Charleston",
+          "item_es": "ron Charleston",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Menthe verte",
+          "item_es": "menthe verte",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus de citron",
+          "item_es": "jus de citron",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Maidens Prayer\n1/2 Rhum Charleston\n1/4 Menthe verte\n1/4 jus de citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-021",
+      "order": 21,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Miramar",
+      "name_es": "Miramar",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "122 Gordon's DRY Gin",
+          "item_es": "122 gordon's dry gin",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini DRY",
+          "item_es": "Vermut Martini Seco",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dubonnet",
+          "item_es": "Dubonnet",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de orange",
+          "item_es": "piel de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Miramar\n122 Gordon's DRY Gin\n1/4 Vermouth Martini DRY\n1/4 Dubonnet\n\n1 trait Angostura\nZeste d'orange - Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-022",
+      "order": 22,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Macca",
+      "name_es": "Macca",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "se prépare et se sert directement dans le même",
+          "item_es": "se prépare et se sert directement dans le même",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "verre avec un glaçon et un large Zeste de citron",
+          "item_es": "verre avec un glaçon et un large zeste de citron.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's DRY Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Rossi",
+          "item_es": "Rossi (vermut)",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini",
+          "item_es": "Vermut Martini",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Macca\nse prépare et se sert directement dans le même\nverre avec un glaçon et un large Zeste de citron.\n1/4 Gordon's DRY Gin\n\n1/4 Rossi\n\n1/2 Vermouth Martini"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-023",
+      "order": 23,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Baccardi",
+      "name_es": "Baccardi",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Dry Gordon Gin",
+          "item_es": "dry gordon gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "23 Ron Baccardi",
+          "item_es": "23 ron baccardi",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus de citron",
+          "item_es": "jus de citron",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "3 traits de grenadine Passer Shakers",
+      "method_es": "3 traits de grenadine pasar por la coctelera",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Baccardi\n1/3 Dry Gordon Gin\n23 Ron Baccardi\n1/4 jus de citron\n3 traits de grenadine Passer Shakers"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-024",
+      "order": 24,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Gin and Vermouth",
+      "name_es": "Gin And Vermouth",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "d'angostura",
+          "item_es": "d'angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "souvent demandé sous le nom de G. V",
+          "item_es": "souvent demandé sous le nom de g. v.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 21 —",
+          "item_es": "— 21 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin and Vermouth\n1/2 Gordon's Gin\n1/2 Cinzano\n1 trait d'angostura\nsouvent demandé sous le nom de G. V.\n\n— 21 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-025",
+      "order": 25,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Joungma",
+      "name_es": "Joungma",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "EATIO? . BAR NAPOLEON PARIS",
+          "item_es": "eatio? . bar napoleon paris",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "‘1/2 fine Marteli",
+          "item_es": "‘1/2 fine marteli",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de citron",
+          "item_es": "piel de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Joungma\nEATIO? . BAR NAPOLEON PARIS\n‘1/2 fine Marteli\n1/2 Cinzano\n1 trait angostura\nZeste de citron - Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-026",
+      "order": 26,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Sport",
+      "name_es": "Sport",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin «",
+          "item_es": "gordon's gin «",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Campari",
+          "item_es": "Campari",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Garnir une cerise",
+          "item_es": "garnir une cerise",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sport\n1/2 Gordon's Gin «\n1/4 Cinzano\n1/4 Campari\n1 trait angostura\nGarnir une cerise Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-027",
+      "order": 27,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Cirio’s Cocktail",
+      "name_es": "Cirio’S Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Vermouth Gancia",
+          "item_es": "vermouth gancia",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura Zeste de citron -",
+          "item_es": "angostura zeste de citron -",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "— 23 —",
+          "item_es": "— 23 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 24 —",
+          "item_es": "— 24 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Cirio’s Cocktail\n1/2 Vermouth Gancia\n1/2 Cinzano\n2 traits angostura Zeste de citron -, Tumbler\n\n— 23 —\n\n\n— 24 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-028",
+      "order": 28,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Old Man",
+      "name_es": "Old Man",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Whisky Me. Nish",
+          "item_es": "whisky me. nish",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Old Man\n1/2 Whisky Me. Nish\n1/2 Cinzano\n1 trait angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-029",
+      "order": 29,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Pink Lady",
+      "name_es": "Pink Lady",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Grand Marnier rouge",
+          "item_es": "grand marnier rouge",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Garnir une cerise",
+          "item_es": "garnir une cerise",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "“‘Pink,, œillet couleur de rose",
+          "item_es": "“‘pink,, œillet couleur de rose",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pink Lady\n1/2 Gordon'e Gin\n1/2 Grand Marnier rouge\nGarnir une cerise\n\n“‘Pink,, œillet couleur de rose"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-030",
+      "order": 30,
+      "section_title": "Old Fashion",
+      "category": "cocktail",
+      "name_original": "Alasca",
+      "name_es": "Alasca",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Chartreuse jaune",
+          "item_es": "chartreuse jaune",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange Bitter",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Alasca\n2/3 Gordon's Dry Gin\n1/3 Chartreuse jaune\n1 trait orange Bitter"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-031",
+      "order": 31,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Gin and French",
+      "name_es": "Gin And French",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin and French\n1/2 Gordon's Gin\n1/2 Noilly Prat\n1 trait angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-032",
+      "order": 32,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Fernet - Branca",
+      "name_es": "Fernet - Branca",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Fernet-Branca",
+          "item_es": "fernet-branca",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "“Fernet-Branca,, Bitter italien très dur",
+          "item_es": "“fernet-branca,, bitter italien très dur",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 28 —",
+          "item_es": "— 28 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fernet - Branca\n2/3 Fernet-Branca\n1/3 Cinzano\n“Fernet-Branca,, Bitter italien très dur\n\n— 28 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-033",
+      "order": 33,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Old Tom",
+      "name_es": "Old Tom",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Whisky Robertson",
+          "item_es": "whisky Robertson",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Martini DRY",
+          "item_es": "Vermut Martini Seco",
+          "amount": "0.125",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "2 traite angostura",
+          "item_es": "2 traite angostura",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Old Tom\n2/3 Whisky Robertson\n1/8 Vermouth Martini DRY\n2 traite angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-034",
+      "order": 34,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Perfect",
+      "name_es": "Perfect",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Whisky Me Nish'e",
+          "item_es": "whisky me nish'e",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange Bitter",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Perfect\n2/3 Whisky Me Nish'e\n1/3 Noilly Prat\n1 trait angostura\n\n1 trait orange Bitter"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-035",
+      "order": 35,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Fifty-Hifty",
+      "name_es": "Fifty-Hifty",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Whisky Me Nish'o",
+          "item_es": "whisky me nish'o",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Burnett Dry Gin",
+          "item_es": "ginebra Burnett seca",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Fifty-Hifty\n1/2 Whisky Me Nish'o\n1/2 Burnett Dry Gin\n\n2 traits angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-036",
+      "order": 36,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Shangai",
+      "name_es": "Shangai",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Et es",
+          "item_es": "et es",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Chartreuse jaune",
+          "item_es": "chartreuse jaune",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Grand Marnier rouge",
+          "item_es": "grand marnier rouge",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Burnett Dry Gin",
+          "item_es": "ginebra Burnett seca",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 31 —",
+          "item_es": "— 31 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Shangai\nEt es\n1/3 Chartreuse jaune\n1/3 Grand Marnier rouge\n1/3 Burnett Dry Gin\n\n— 31 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-037",
+      "order": 37,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Campari Cocktail",
+      "name_es": "Campari Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Campa",
+          "item_es": "campa",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Burnett Dry Gin",
+          "item_es": "ginebra Burnett seca",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de orange",
+          "item_es": "piel de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Campari Cocktail\n1/2 Campa\n\n1/2 Burnett Dry Gin\n1 trait angostura\n\nZeste d'orange - Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-038",
+      "order": 38,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Swiss Cocktail",
+      "name_es": "Swiss Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Pernod",
+          "item_es": "pernod",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Suze gentiane",
+          "item_es": "suze gentiane",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Swiss Cocktail\n1/2 Pernod\n1/2 Suze gentiane\n1 trait angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-039",
+      "order": 39,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Mountainers",
+      "name_es": "Mountainers",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "fine Tricoche",
+          "item_es": "Fine Tricoche (cognac)",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "essence de café",
+          "item_es": "essence de café",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mountainers\n2/3 fine Tricoche\n1/3 essence de café"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-040",
+      "order": 40,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Knickerbocker",
+      "name_es": "Knickerbocker",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Rhum charleston",
+          "item_es": "ron Charleston",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Liqueur de framboise",
+          "item_es": "liqueur de framboise",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "se prépare et se sert directement dans un verre à",
+          "item_es": "se prépare et se sert directement dans un verre à",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "vin avec glace pillée",
+          "item_es": "vin avec glace pillée.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Servir avec pailles",
+          "item_es": "servir avec pailles",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Remuer Zeste de citron",
+      "method_es": "remover Zeste de citron",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Knickerbocker\nRhum charleston\n\nLiqueur de framboise\n\nLe jus d'un 1/2 citron\n\nse prépare et se sert directement dans un verre à\nvin avec glace pillée.\n\nRemuer Zeste de citron\nServir avec pailles"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-041",
+      "order": 41,
+      "section_title": "COCKTAILS",
+      "category": "cocktail",
+      "name_original": "Green Star",
+      "name_es": "Green Star",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Dans un verre à vin",
+          "item_es": "dans un verre à vin",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1 orange",
+          "item_es": "zumo de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Pippermint ‘Get",
+          "item_es": "pippermint ‘get,",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Green Star\nDans un verre à vin\n\nLe jus d'une orange\nPippermint ‘Get,"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-042",
+      "order": 42,
+      "section_title": "Champagne Charles Heidsieck",
+      "category": "cocktail",
+      "name_original": "Piccadilly",
+      "name_es": "Piccadilly",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Curaçao rouge Foekink",
+          "item_es": "curaçao rouge foekink",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cherry Peter Heering",
+          "item_es": "Cherry Peter Heering",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Piccadilly\n1/3 Curaçao rouge Foekink\n1/3 Cherry Peter Heering\n1/3 Noilly Prat\n1 trait angostura"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-043",
+      "order": 43,
+      "section_title": "Champagne Charles Heidsieck",
+      "category": "cocktail",
+      "name_original": "Sloe Gin Cocktail",
+      "name_es": "Sloe Gin Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Sloe Gordon's",
+          "item_es": "sloe gordon's",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat",
+          "item_es": "Noilly Prat",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "“*Sloe Gordon's Gin,, eau de vie de grain pur à la",
+          "item_es": "“*sloe gordon's gin,, eau de vie de grain pur à la",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "prunelle",
+          "item_es": "prunelle.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 33 —",
+          "item_es": "— 33 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Sloe Gin Cocktail\n2/3 Sloe Gordon's\n\n1/3 Noilly Prat\n\n1 trait angostura Tumbler\n\n“*Sloe Gordon's Gin,, eau de vie de grain pur à la\n\nprunelle.\n\n— 33 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-044",
+      "order": 44,
+      "section_title": "Champagne Charles Heidsieck",
+      "category": "other",
+      "name_original": "Drop-Rickey",
+      "name_es": "Drop-Rickey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Sherry Peter Heering",
+          "item_es": "sherry peter heering",
+          "amount": "0.125",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Sherry Sandeman",
+          "item_es": "sherry sandeman",
+          "amount": "0.125",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "2 traite Pippermint Get",
+          "item_es": "2 traite pippermint get",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "d. Cocktail",
+          "item_es": "d. cocktail",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "mjsd",
+          "item_es": "mjsd",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon Gin",
+          "item_es": "gordon gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de orange",
+          "item_es": "piel de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Half and Half",
+          "item_es": "half and half",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gin, Burnett",
+          "item_es": "dry gin, burnett",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Jus d'orange",
+          "item_es": "jus d'orange",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Drop-Rickey\n1/3 Gordon'e Dry Gin\n1/8 Sherry Peter Heering\n1/8 Sherry Sandeman\n\n2 traite Pippermint Get\n\nd. Cocktail\n2/3 mjsd\n1/3 Gordon Gin\n\n1 trait angostura\nZeste d'orange - Tumbler\n\n‘’Mjëd,, Vin généreux à l'Hydromel provenance Suédoise\n\nHalf and Half\n\n1/2 Dry Gin, Burnett\n1/2 Jus d'orange"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-045",
+      "order": 45,
+      "section_title": "Champagne Charles Heidsieck",
+      "category": "cocktail",
+      "name_original": "Pompéi Cocktail",
+      "name_es": "Pompéi Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "‘*Lacryma-Ch:",
+          "item_es": "‘*lacryma-ch:",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth Marti:",
+          "item_es": "vermouth marti:",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange bitter",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "large Zeste d'orange -",
+          "item_es": "large zeste d'orange -",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "“‘Lacryma-Chrieti,, célèbre vin de Muscat",
+          "item_es": "“‘lacryma-chrieti,, célèbre vin de muscat.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Pompéi Cocktail\n2/3 ‘*Lacryma-Ch:\n1/3 Vermouth Marti:\n1 trait orange bitter\n\nlarge Zeste d'orange - Tumbler\n“‘Lacryma-Chrieti,, célèbre vin de Muscat."
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-046",
+      "order": 46,
+      "section_title": "Champagne Charles Heidsieck",
+      "category": "cocktail",
+      "name_original": "Dubonnet-Cocktail",
+      "name_es": "Dubonnet-Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Dubonnet",
+          "item_es": "Dubonnet",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gin Burnett",
+          "item_es": "ginebra Burnett seca",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "Anisette",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de”citron -",
+          "item_es": "zeste de”citron -",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 37 —",
+          "item_es": "— 37 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dubonnet-Cocktail\n2/3 Dubonnet\n\n1/3 Dry Gin Burnett\n1 trait absinthe\n1 trait anisette\n\nZeste de”citron - Tumbler\n\n— 37 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-047",
+      "order": 47,
+      "section_title": "Finir Champagne Charles Heï",
+      "category": "cocktail",
+      "name_original": "Eye Opener",
+      "name_es": "Eye Opener",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Rhum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Kirsch",
+          "item_es": "Kirsch",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Curaçao",
+          "item_es": "curaçao",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1 jaune d'œuf",
+          "item_es": "1 jaune d'œuf",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "2 cuillères de suere",
+          "item_es": "2 cuillères de suere",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Eye Opener\n1/2 Rhum\n1/4 Kirsch\n1/4 Curaçao\n1 jaune d'œuf\n2 cuillères de suere"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-048",
+      "order": 48,
+      "section_title": "Finir Champagne Charles Heï",
+      "category": "cocktail",
+      "name_original": "Gin Burnett Dry",
+      "name_es": "Gin Burnett Dry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Vermouth martini Dry",
+          "item_es": "Vermut Martini Seco",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/4 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.25",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "1 cuillère sucre",
+          "item_es": "1 cuillère sucre",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Burnett Dry\nVermouth martini Dry\nLe jus d'un 1/4 citron\n1 cuillère sucre"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-049",
+      "order": 49,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Dream",
+      "name_es": "Dream",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Marie Brizard Curaçao",
+          "item_es": "marie brizard curaçao",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cognac Martell",
+          "item_es": "cognac martell",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Quelques traits anisette Marie Brirard",
+          "item_es": "quelques traits anisette marie brirard",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Dream\n1/3 Marie Brizard Curaçao\n2/3 Cognac Martell\nQuelques traits anisette Marie Brirard"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-050",
+      "order": 50,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Apry",
+      "name_es": "Apry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Marie Brizard Apry",
+          "item_es": "marie brizard apry",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/4 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.25",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Apry\n1/3 Marie Brizard Apry\n2/3 Gordon'e Gin\nLe jus d'un 1/4 citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-051",
+      "order": 51,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "K Alexander",
+      "name_es": "K Alexander",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Marie Brizard crème de cacao",
+          "item_es": "marie brizard crème de cacao",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gordon Gin",
+          "item_es": "dry gordon gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Crème fraîche",
+          "item_es": "crème fraîche",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "K Alexander\n1/3 Marie Brizard crème de cacao\n1/3 Dry Gordon Gin\n1/3 Crème fraîche"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-052",
+      "order": 52,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Old Faithful",
+      "name_es": "Old Faithful",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Marie Brizard Apry",
+          "item_es": "marie brizard apry",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Rye Whickey",
+          "item_es": "rye whickey",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Marie Brizard Crème de Cacao ie also prefe:",
+          "item_es": "marie brizard crème de cacao ie also prefe:",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "nable cocktails, particularly in the ‘’Alerander",
+          "item_es": "nable cocktails, particularly in the ‘’alerander,,",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Old Faithful\n1/4 Marie Brizard Apry\n3/4 Rye Whickey\n\nMarie Brizard Crème de Cacao ie also prefe:\nnable cocktails, particularly in the ‘’Alerander,,"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-053",
+      "order": 53,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Between-The-Sheets",
+      "name_es": "Between-The-Sheets",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Marie Brizard Rhum Charleston",
+          "item_es": "marie brizard rhum charleston",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Marie Brizard Curaçao triple-sec (orange)",
+          "item_es": "marie brizard curaçao triple-sec (orange)",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cognac Brandy",
+          "item_es": "cognac brandy",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Between-The-Sheets\n1/3 Marie Brizard Rhum Charleston\n1/3 Marie Brizard Curaçao triple-sec (orange)\n1/3 Cognac Brandy"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-054",
+      "order": 54,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Stinger",
+      "name_es": "Stinger",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "(A Perfect After-Dinner Cocktail)",
+          "item_es": "(a perfect after-dinner cocktail)",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Marie Brizard Crème de Menthe, white",
+          "item_es": "marie brizard crème de menthe, white",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cognac Brandy",
+          "item_es": "cognac brandy",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Ice : shake well, strain äinto",
+          "item_es": "ice : shake well, strain äinto",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cocktail glass",
+          "item_es": "cocktail glass",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Stinger\n(A Perfect After-Dinner Cocktail)\n1/4 Marie Brizard Crème de Menthe, white\n3/4 Cognac Brandy\nIce : shake well, strain äinto\nCocktail glass"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-055",
+      "order": 55,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Mele Cassis",
+      "name_es": "Mele Cassis",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Marie Brizard Blackberry Cordial",
+          "item_es": "marie brizard blackberry cordial",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cognac Brandy",
+          "item_es": "cognac brandy",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Shake well with Ice ; strain",
+          "item_es": "shake well with ice ; strain",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "into short Highball glass",
+          "item_es": "into short highball glass",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Menthe",
+          "item_es": "menthe",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Marie Brizard Crème de Menthe",
+          "item_es": "marie brizard crème de menthe",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Dry Gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Shake well with Ice ; strain",
+          "item_es": "shake well with ice ; strain",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "into chilled Cocktail glass",
+          "item_es": "into chilled cocktail glass",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mele Cassis\n1/2 Marie Brizard Blackberry Cordial\n\n1/2 Cognac Brandy\nShake well with Ice ; strain\ninto short Highball glass\n\nMenthe\n1/2 Marie Brizard Crème de Menthe\n1/2 Dry Gin\nShake well with Ice ; strain\ninto chilled Cocktail glass"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-056",
+      "order": 56,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Apple Jack",
+      "name_es": "Apple Jack",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Apricot Marie Brizard",
+          "item_es": "apricot marie brizard",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gordon's Dry Gin",
+          "item_es": "Gordon's Dry Gin",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/4 de",
+          "item_es": "zumo de de",
+          "amount": "0.25",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "de grenadine",
+          "item_es": "de grenadine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Quelques tranches de pomme, Fruit escalopé",
+          "item_es": "quelques tranches de pomme, fruit escalopé",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Apple Jack\n2/3 Apricot Marie Brizard\n\n1/3 Gordon's Dry Gin\n\nLe jus d'un 1/4 de citron\n\n2 traits de grenadine\n\nQuelques tranches de pomme, Fruit escalopé"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-057",
+      "order": 57,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Mariani Cocktail",
+      "name_es": "Mariani Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Vin de Mariani",
+          "item_es": "vin de mariani",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "orange bitter",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "Zeste de orange",
+          "item_es": "piel de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Mariani Cocktail\n2/3 Vin de Mariani\n1/3 Cinzano\n1 Trait orange bitter\nZeste d'orange"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-058",
+      "order": 58,
+      "section_title": "FAMOUS RECIPES",
+      "category": "cocktail",
+      "name_original": "Lady Diana Cocktail",
+      "name_es": "Lady Diana Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Bénédictine",
+          "item_es": "Bénédictine",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Gin Burnett Dry",
+          "item_es": "gin burnett dry",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Noilly Prat Z",
+          "item_es": "noilly prat z",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "te de citron -",
+          "item_es": "te de citron -",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 49 —",
+          "item_es": "— 49 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Tout Bar de premier ordre doit avoir :",
+          "item_es": "tout bar de premier ordre doit avoir :",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lady Diana Cocktail\n2/3 Bénédictine\n1/4 Gin Burnett Dry\n1/4 Noilly Prat Z\n\nte de citron - Tumbler\n\n— 49 —\n\nTout Bar de premier ordre doit avoir :"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-059",
+      "order": 59,
+      "section_title": "Vintage Champagne",
+      "category": "cocktail",
+      "name_original": "Côte Basque",
+      "name_es": "Côte Basque",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Gordon's Gin",
+          "item_es": "Gordon's Gin",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cointreau",
+          "item_es": "Cointreau",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Sherry Rocher",
+          "item_es": "sherry rocher",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Quelques gouttes de citron",
+          "item_es": "quelques gouttes de citron",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Côte Basque\n1/2 Gordon's Gin\n\n1/4 Cointreau\n\n1/4 Sherry Rocher\n\nQuelques gouttes de citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-060",
+      "order": 60,
+      "section_title": "Champagne Cobbler",
+      "category": "cocktail",
+      "name_original": "Clover Club",
+      "name_es": "Clover Club",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "“Club du Trèfle",
+          "item_es": "“club du trèfle,,",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "un blanc d'œuf",
+          "item_es": "un blanc d'œuf",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/4 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.25",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Gin BURNETT DRY",
+          "item_es": "gin burnett dry",
+          "amount": "0.75",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cinzano",
+          "item_es": "cinzano",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Légèrement grenadine Passer Shakers; Finir champagne Ernest Irroy",
+      "method_es": "Légèrement grenadine pasar por la coctelera; terminar champagne Ernest Irroy",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Clover Club\n“Club du Trèfle,,\n\nun blanc d'œuf\nLe jus d'un 1/4 citron\n\n3/4 Gin BURNETT DRY\n\n1/4 Cinzano\n\nLégèrement grenadine Passer Shakers\nFinir champagne Ernest Irroy"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-061",
+      "order": 61,
+      "section_title": "Soyer au Champagne",
+      "category": "cocktail",
+      "name_original": "Miami",
+      "name_es": "Miami",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Dans un verre à Vin",
+          "item_es": "dans un verre à vin",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 orange",
+          "item_es": "zumo de orange",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Champagne Bollinger",
+          "item_es": "champagne bollinger",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "12 Moselle",
+          "item_es": "12 moselle",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Garnir d'une tranche d'orange",
+          "item_es": "garnir d'une tranche d'orange",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Miami\nDans un verre à Vin\n\nLe jus d'une 1/2 orange\n\n1/2 Champagne Bollinger\n\n12 Moselle\n\nGarnir d'une tranche d'orange"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-062",
+      "order": 62,
+      "section_title": "Soyer au Champagne",
+      "category": "cocktail",
+      "name_original": "Maïitrank",
+      "name_es": "Maïitrank",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Champagne Bollinger",
+          "item_es": "champagne bollinger",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Moselle",
+          "item_es": "moselle",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Une cuillère de Sherry Rossel",
+          "item_es": "une cuillère de sherry rossel",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Garnir d'une tranche d'orange",
+          "item_es": "garnir d'une tranche d'orange",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Brandy Smack ©",
+          "item_es": "brandy smack ©",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Maïitrank\n1/2 Champagne Bollinger\n\n1/2 Moselle\n\nUne cuillère de Sherry Rossel\nGarnir d'une tranche d'orange\n\nBrandy Smack ©"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-063",
+      "order": 63,
+      "section_title": "Soyer au Champagne",
+      "category": "cocktail",
+      "name_original": "Horse Neck",
+      "name_es": "Horse Neck",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Dans un verre 1/2 mousseline",
+          "item_es": "dans un verre 1/2 mousseline",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Horse Neck\nDans un verre 1/2 mousseline"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-064",
+      "order": 64,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "White Lady Cocktail",
+      "name_es": "White Lady Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac Hennessy",
+          "item_es": "cognac hennessy",
+          "amount": "0.167",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "crème de menthe blanche",
+          "item_es": "crème de menthe blanche",
+          "amount": "0.167",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Curaçao blanc triple sec Fockink",
+          "item_es": "curaçao blanc triple sec fockink",
+          "amount": "0.667",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "White Lady Cocktail\n1/6 cognac Hennessy\n\n1/6 crème de menthe blanche\n\n2/3 Curaçao blanc triple sec Fockink"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-065",
+      "order": 65,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "Blanche Cocktail",
+      "name_es": "Blanche Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Curaçao blanc triple sec Fockink",
+          "item_es": "curaçao blanc triple sec fockink",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Anisette",
+          "item_es": "Anisette",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Curaçao blanc Fockink",
+          "item_es": "curaçao blanc fockink",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Blanche Cocktail\n1/3 Curaçao blanc triple sec Fockink\n1/3 Anisette\n1/3 Curaçao blanc Fockink"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-066",
+      "order": 66,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "Express Cocktail",
+      "name_es": "Express Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "12 cognac Hennessy",
+          "item_es": "12 cognac hennessy",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "vieux genièvre Fockink",
+          "item_es": "vieux genièvre fockink",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "Angostura",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": "Tumbler",
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Express Cocktail\n12 cognac Hennessy\n1/2 vieux genièvre Fockink\n4 traits angostura Tumbler"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-067",
+      "order": 67,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "Home Cocktail",
+      "name_es": "Home Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jus d'une 1/2 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Curaçao blanc Fockink",
+          "item_es": "curaçao blanc fockink",
+          "amount": "0.125",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "vermouth français",
+          "item_es": "vermouth français",
+          "amount": "0.333",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Home Cocktail\nLe jus d'un 1/2 citron =\n1/8 Curaçao blanc Fockink\n1/3 vermouth français"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-068",
+      "order": 68,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "Moraing Cocktail",
+      "name_es": "Moraing Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Cherry Brandy",
+          "item_es": "cherry brandy",
+          "amount": "0.125",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Curaçao orange Fockink",
+          "item_es": "curaçao orange fockink",
+          "amount": "0.125",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cognac",
+          "item_es": "cognac",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Vermouth italien",
+          "item_es": "vermouth italien",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "angostura Bitter",
+          "item_es": "angostura bitter",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Moraing Cocktail\n1/8 Cherry Brandy\n\n1/8 Curaçao orange Fockink\n1/4 Cognac\n\n1/2 Vermouth italien\n\n3 traits angostura Bitter"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-069",
+      "order": 69,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "Summit Cocktail",
+      "name_es": "Summit Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jus de citron",
+          "item_es": "jus de citron",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Curaçao orange Fockink",
+          "item_es": "curaçao orange fockink",
+          "amount": "0.25",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Cognac",
+          "item_es": "cognac",
+          "amount": "0.5",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Summit Cocktail\n1/4 jus de citron\n1/4 Curaçao orange Fockink\n1/2 Cognac"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-070",
+      "order": 70,
+      "section_title": "Pousse Café",
+      "category": "cocktail",
+      "name_original": "Soda Cocktail",
+      "name_es": "Soda Cóctel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tranche citron",
+          "item_es": "tranche citron",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 62 —",
+          "item_es": "— 62 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "Bitter remplir avec Tonic Soda Water, garnir une",
+      "method_es": "Bitter remplir avec Tonic Soda Water, garnir une",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Soda Cocktail\nSe prépare et se sert directement dans verre gobelet :\nUn 1/2 morceau de sucre fortement imbibé d'angostura\nBitter remplir avec Tonic Soda Water, garnir une\ntranche citron\n\n— 62 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-071",
+      "order": 71,
+      "section_title": "CHAMPAGNE",
+      "category": "fizz",
+      "name_original": "Absinthe KFizz",
+      "name_es": "Absinthe Kfizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Absinthe",
+          "item_es": "absenta",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1/2 citron",
+          "item_es": "zumo de citron",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "Sucre en -poudre",
+          "item_es": "sucre en -poudre",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Absinthe KFizz\nAbsinthe\nLe jus d'un 1/2 citron\nSucre en -poudre"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-072",
+      "order": 72,
+      "section_title": "Pousse Café",
+      "category": "other",
+      "name_original": "Gin Bickey",
+      "name_es": "Gin Bickey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "Dans un grand verre :",
+          "item_es": "dans un grand verre :",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "1 morceau de glace",
+          "item_es": "1 morceau de glace",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "jus d'une 1 demi",
+          "item_es": "zumo de demi",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "1 verre de Gordon's Dry Gin",
+          "item_es": "1 verre de gordon's dry gin",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "2e",
+          "item_es": "2e",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 67 —",
+          "item_es": "— 67 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Gin Bickey\nDans un grand verre :\n\n1 morceau de glace\n\nle jus d'un demi-citron\n\n1 verre de Gordon's Dry Gin\n\n2e\n\n— 67 —"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-073",
+      "order": 73,
+      "section_title": "Pousse Café",
+      "category": "other",
+      "name_original": "Lemon Squash",
+      "name_es": "Lemon Squash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jus d'une 1 citron",
+          "item_es": "zumo de citron",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "garnir une tranche de citron",
+          "item_es": "garnir une tranche de citron",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "remplir eau de seltz",
+      "method_es": "remplir eau de seltz",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Lemon Squash\nDans un verre 1/2 mousseline plein de glace pillée :\nle jus d'un citron\n\nsucre en poudre\n\nremplir eau de seltz\n\ngarnir une tranche de citron"
+    },
+    {
+      "id": "1935-le-bar-american-cocktails-by-george-pillaert-074",
+      "order": 74,
+      "section_title": "Pousse Café",
+      "category": "other",
+      "name_original": "Orange Squash",
+      "name_es": "Orange Squash",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jus d'une 1 orange",
+          "item_es": "zumo de orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sucre en poudre",
+          "item_es": "sucre en poudre",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "garnir une tranche d'orange",
+          "item_es": "garnir une tranche d'orange",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Pour LEMON et ORANGE SQUASH ont peut faire",
+          "item_es": "pour lemon et orange squash ont peut faire",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "modifier selon les goûts la formule classique :",
+          "item_es": "modifier selon les goûts la formule classique :",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "grenadine, groseille, framboise ou autre",
+          "item_es": "grenadine, groseille, framboise ou autre.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Crème de Bananes — Crème de Vanille — Crème de",
+          "item_es": "crème de bananes — crème de vanille — crème de",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Rose — Crème de Violette — Apry — Peach",
+          "item_es": "rose — crème de violette — apry — peach.",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "Produits ‘‘Marie Brizard",
+          "item_es": "produits ‘‘marie brizard,,",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "— 68 —",
+          "item_es": "— 68 —",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item_original": "il",
+          "item_es": "il",
+          "amount": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "remplir eau de seltz",
+      "method_es": "remplir eau de seltz",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "Orange Squash\nDans un verre 1/2 mousseline plein de glace pillée :\nle jus d'une orange\n\nsucre en poudre\n\nremplir eau de seltz\n\ngarnir une tranche d'orange\n\nPour LEMON et ORANGE SQUASH ont peut faire\ndiverses variétés en y mettant un peu de fantaisie et\nmodifier selon les goûts la formule classique :\n\nExemple : le sucre peut-être remplacé par le sirop de\ngrenadine, groseille, framboise ou autre.\n\nToute orangeade peut également être parfumée avec :\nCrème de Bananes — Crème de Vanille — Crème de\nRose — Crème de Violette — Apry — Peach.\nProduits ‘‘Marie Brizard,,\n\n— 68 —\n\n\nil"
+    }
+  ]
+}
