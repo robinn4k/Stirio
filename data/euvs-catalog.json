@@ -368,6 +368,22 @@
     "bookFile": "data/euvs-books/1930-cocktails-art-deco-manuscript-book-east-bar-hotel-esplanade-prague-by-f-koki.json"
   },
   {
+    "id": "1930-heres-how",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "Here's How",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": "1930",
+    "notes": "Manual de coctelería de la era de la Prohibición (1930). 130 recetas reales rescatadas de 156 candidatas tras descartar 16 entradas de front matter (definiciones de medidas + glosario de tipos de vino), 4 cabeceras de página, 1 divisor de sección y 6 duplicados (la edición original imprimió varios de los Sours/Rickey dos veces). Auto-extractor procesó el 100%; ~10% sin ingredientes parseados por raw_text muy degradado. Unidad 'shot' del libro mapeada a 'oz' en el campo unit. Saltadas (no son recetas reales): DEFINITIONS (front_matter (definitions/wine glossary)); Their Food and Médicinal Values (front_matter (definitions/wine glossary)); HERE'S HOW (front_matter (definitions/wine glossary)); Température M Whtch To Serve (front_matter (definitions/wine glossary)); DEFINITIONS (front_matter (definitions/wine glossary)); Their Food and Médicinal Values (front_matter (definitions/wine glossary)); Température At Whîch To Serve (front_matter (definitions/wine glossary)); HERE'S HOW (front_matter (definitions/wine glossary)); BuTQundîes (front_matter (definitions/wine glossary)); Clarets (front_matter (definitions/wine glossary)); Sauternes (front_matter (definitions/wine glossary)); Rhine Wines (front_matter (definitions/wine glossary)); Moselle IFincs (front_matter (definitions/wine glossary)); 8 HERE'S HOW (front_matter (definitions/wine glossary)); HERE'S HOW (front_matter (definitions/wine glossary)); Madeira (front_matter (definitions/wine glossary)); 18 HERE'S HOW (page_header); 20 HERE'S HOW (page_header); 22 HERE'S HOW (page_header); HOT DRINKS (section_divider); Gin Rickey (duplicate (book reprints earlier recipe)); Apricot Brandy Rickey (duplicate (book reprints earlier recipe)); Brandy Sour (duplicate (book reprints earlier recipe)); Double Standard Saur (duplicate (book reprints earlier recipe)); Gin Saur (duplicate (book reprints earlier recipe)); Roosevelt Sour (duplicate (book reprints earlier recipe))",
+    "sectionCount": 2,
+    "recipeCount": 130,
+    "bookFile": "data/euvs-books/1930-heres-how.json"
+  },
+  {
     "id": "1931-100-cocktails-how-to-make-them-and-what-to-eat-with-them",
     "year": 1931,
     "decade": "1930s",
