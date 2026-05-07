@@ -1,0 +1,2108 @@
+{
+  "book_id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner",
+  "metadata": {
+    "title": "Cocktails: Their Kicks and Side-Kicks",
+    "author": "A. E. P. Bird & William C. Turner",
+    "year": 1933,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "The Read Printing Company / Bird & Turner Publishers, 79 Wall Street",
+    "city": "New York",
+    "edition": "First Edition (December 1933, post-Repeal)",
+    "source_file": "1933 Cocktails Their Kicks and Side-Kicks by Bird and Turner.txt",
+    "notes": "Publicado en diciembre de 1933, días después de la derogación de la Prohibición ('Repeal'). Cada cóctel incluye un 'side-kick' — un canapé sugerido para acompañar (en `garnish`). 5 secciones: Cosmopolitans, Tropical Cruise Specials, Dixie Gems, Holiday Cheer, Country Club Echoes. Skeleton custom + parser comma-aware ('Item, N parts'). 68 recetas; ~75% (51/68) con ingredientes parseados."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Cellarette",
+      "title_es": "Prefacio + 'Cellarette' (despensa)",
+      "content_original": "Bird & Turner publican días después del Repeal (diciembre 1933) este librito 'as a toast to the Cocktail Shaker of today and tomorrow'. Cada cóctel viene con un 'side-kick' — un canapé sugerido. Estructura: 5 secciones temáticas + capítulo 'The Dutchess Entertains' (etiqueta) + 'Cellarette' (lista de spirits/syrups esenciales). Cita en epígrafe: 'To know the vintage... one need not swallow the whole cask.'",
+      "content_es": "Bird & Turner publican días después del Repeal (diciembre 1933) este librito como brindis al cocktail shaker. Cada cóctel viene con un 'side-kick' (canapé sugerido) y se agrupa en 5 secciones temáticas. Incluye sección de etiqueta y de despensa esencial."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ABSINTHE SPECIAL",
+      "name_es": "Absinthe Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sjtup of anisette",
+          "item_es": "sjtup of anisette",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake thoroughly, strain into glasses, garnish with a green olive; serve. The above will serve 6.",
+      "method_es": "Shake thoroughly, strain into glasses, garnish with a green olive; serve. The above will serve 6.",
+      "glassware": null,
+      "garnish": "As a side-kick, spread soda crackers with a paste made of cream cheese, a little cream and plenty of horseradish.",
+      "page_reference": null,
+      "raw_text": "ABSINTHE SPECIAL\n        Absinthe, 4 parts         Gin, 1 part\nSjTup of Anisette, 1 part     Orange Bitters, 6 dashes\n             Angostura Bitters, 6 dashes\n                                                              PAGE\n  Shake thoroughly, strain into glasses, garnish with a\ngreen olive; serve. The above will serve 6.\n  As a side-kick, spread soda crackers with a paste made\nof cream cheese, a little cream and plenty of horseradish."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BACARDI GRENADINE",
+      "name_es": "Bacardi Grenadine",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into glasses, add maraschino cherry; serve. This will make 6 cocktails. (The propor tion of Grenadine to lemon may he varied to suit individual taste. The fair sex prefer them sweet.) For a canape, spread round saltine cracker with anchovie paste and garnish with pimento.",
+      "method_es": "Stir well with ice, strain into glasses, add maraschino cherry; serve. This will make 6 cocktails. (The propor tion of Grenadine to lemon may he varied to suit individual taste. The fair sex prefer them sweet.) For a canape, spread round saltine cracker with anchovie paste and garnish with pimento.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BACARDI GRENADINE\n\n      Bacardi, 4 parts          Grenadine, 1 part\n                  Lemon juice, 1 part\n  Stir well with ice, strain into glasses, add maraschino\ncherry; serve. This will make 6 cocktails. (The propor\ntion of Grenadine to lemon may he varied to suit individual\ntaste. The fair sex prefer them sweet.)\n  For a canape, spread round saltine cracker with anchovie\npaste and garnish with pimento."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BRONX",
+      "name_es": "Bronx",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1/3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, add pickled filbert to each; serve. Two per person give good appetite. The above makes 4 portions.",
+      "method_es": "Shake well with ice, strain into glasses, add pickled filbert to each; serve. Two per person give good appetite. The above makes 4 portions.",
+      "glassware": null,
+      "garnish": "As a side-kick, wrap green olive with bacon strip, secur ing both with toothpick; grill till bacon is crisp; serve.",
+      "page_reference": null,
+      "raw_text": "BRONX\n\n    Gin, 2 parts      French Vermouth, 1 part\nItalian Vermouth, 1 part     Orange juice, 1/3 part\n   Shake well with ice, strain into glasses, add pickled\nfilbert to each; serve. Two per person give good appetite.\nThe above makes 4 portions.\n  As a side-kick, wrap green olive with bacon strip, secur\ning both with toothpick; grill till bacon is crisp; serve."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BRONX SPECIAL",
+      "name_es": "Bronx Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth, 2 parts orange bitters",
+          "item_es": "italian vermouth, 2 parts orange bitters",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1/4",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRONX SPECIAL\n     Gin, 2 parts     French Vermouth, 2 parts\nItalian Vermouth, 2 parts Orange Bitters, 6 dashes\n                Orange Juice, 1/4 part\n  This is prepared and served identically as is the preced\ning. It gives, however, 6 servings.\n  As a canape, place sliced tomato on small circular\npieces of toast, garnish with bacon and green pepper;\ngrill; serve.\nCOSMOPOLITANS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CHAMPAGNE",
+      "name_es": "Champagne",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "serve without stirring. This cocktail is in vogue among the fastidious. (Each cocktail may or may not be gar nished with lemon peel according to taste.) As a canape, spread caviar on circular pieces of bread toasted only on the bottom; garnish with finely chopped egg.",
+      "method_es": "serve without stirring. This cocktail is in vogue among the fastidious. (Each cocktail may or may not be gar nished with lemon peel according to taste.) As a canape, spread caviar on circular pieces of bread toasted only on the bottom; garnish with finely chopped egg.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE\n\n           Champagne, to fill          Angostura Bitters, 5 drops\n                                Sugar, 1 lump\n             Use Champagne type glasses. 1 pint of Champagne will\n          make 4 cocktails. Place sugar in each glass; saturate\n PAGE     sugar with 5 drops Angostura; pour chilled Champagne;\n          serve without stirring. This cocktail is in vogue among\n          the fastidious. (Each cocktail may or may not be gar\n          nished with lemon peel according to taste.)\n            As a canape, spread caviar on circular pieces of bread\n          toasted only on the bottom; garnish with finely chopped\n          egg."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CHUCK'S SPECIAL",
+      "name_es": "Chuck'S Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1/2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, add maraschino cherry having frosted the rims of the glasses in advance with sugar; serve. The Absinthe may be omitted though it imparts zest and piquant flavor. The above will serve 4. This is a strong drink with a mild first delivery. Two per person make a most adequate appetizer ... but three or more are apt to prolong the day into a week-end. As a canape, fill Appetizer Shells with caviar; garnish with finely minced hard boiled egg; serve.",
+      "method_es": "Shake well with ice, strain into glasses, add maraschino cherry having frosted the rims of the glasses in advance with sugar; serve. The Absinthe may be omitted though it imparts zest and piquant flavor. The above will serve 4. This is a strong drink with a mild first delivery. Two per person make a most adequate appetizer ... but three or more are apt to prolong the day into a week-end. As a canape, fill Appetizer Shells with caviar; garnish with finely minced hard boiled egg; serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHUCK'S SPECIAL\n\n                 Gin, 2 parts          Grenadine, 1/2 part\n                Lemon, 1 part             Absinthe, 6 dashes\n            Shake well with ice, strain into glasses, add maraschino\n          cherry having frosted the rims of the glasses in advance\n          with sugar; serve. The Absinthe may be omitted though\n          it imparts zest and piquant flavor. The above will serve 4.\n          This is a strong drink with a mild first delivery. Two\n          per person make a most adequate appetizer ... but three\n          or more are apt to prolong the day into a week-end.\n            As a canape, fill Appetizer Shells with caviar; garnish\n          with finely minced hard boiled egg; serve."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CLAM JUICE",
+      "name_es": "Clam Juice",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLAM JUICE\n\n            Using a 7 oz. tumbler with plenty of ice fill gen\n          erously with clam juice; add 1 teaspoon tomato catsup,\n          1 dash Worcestershire Sauce, juice of      lemon, 1 dash\n          celery salt. An excellent eye-opener at tomorrow's break\n          fast.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CLOVER CLUB",
+      "name_es": "Clover Club",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, grate nutmeg over each; serve. The smoothness of this cocktail belies its potency. The above gives 4 servings. COSMOPOLITANS",
+      "method_es": "Shake well with ice, strain into glasses, grate nutmeg over each; serve. The smoothness of this cocktail belies its potency. The above gives 4 servings. COSMOPOLITANS",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER CLUB\n\n              Gin, 3 parts           Grenadine, 2 teaspoons\n            Egg, 2 whites only            Lemon, 2 teaspoons\n            Shake well with ice, strain into glasses, grate nutmeg\n          over each; serve. The smoothness of this cocktail belies\n          its potency. The above gives 4 servings.\n                                                     COSMOPOLITANS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CLOVER ROYAL",
+      "name_es": "Clover Royal",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLOVER ROYAL\n\n  Gin, 2 parts         French Vermouth, 1 part\nGrenadine, 2 teaspoons        Lemon, 2 teaspoons\n               Egg, 2 yolks only\n  This is prepared and served identically as.,is the pre\nceding. This gives 4 portions.                               PAGE"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DUTCHESS",
+      "name_es": "Dutchess",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses; garnish with stuffed olive; serve. The above will serve 6. As a savory spread heart shapes of bread with a paste of sardines, honed and mashed, and mixed with Chili Sauee, lemon juice and several dashes of Tobasco; garnish with stuffed olive.",
+      "method_es": "Shake well with ice, strain into glasses; garnish with stuffed olive; serve. The above will serve 6. As a savory spread heart shapes of bread with a paste of sardines, honed and mashed, and mixed with Chili Sauee, lemon juice and several dashes of Tobasco; garnish with stuffed olive.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DUTCHESS\n\nFrench Vermouth, 2 parts         Absinthe, 2 parts\n            Italian Vermouth, 2 parts\n   Shake well with ice, strain into glasses; garnish with\nstuffed olive; serve. The above will serve 6.\n  As a savory spread heart shapes of bread with a paste\nof sardines, honed and mashed, and mixed with Chili\nSauee, lemon juice and several dashes of Tobasco; garnish\nwith stuffed olive."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cup",
+      "name_original": "GREEN CUP",
+      "name_es": "Green Cup",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "add Angostura; the champagne being well iced should now he poured in. Serve. Among Eli's sons this loving cup is redolent with memories of friendships formed at Yale, where at Morey's again the rafters ring.",
+      "method_es": "add Angostura; the champagne being well iced should now he poured in. Serve. Among Eli's sons this loving cup is redolent with memories of friendships formed at Yale, where at Morey's again the rafters ring.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GREEN CUP\n\nChampagne (Dry), 1 cpiart      Carypton, 1/2 pint\n          Angostura, 4 to 6 teaspoons\n  Use large silver or pewter loving eup; pour in Carypton;\nadd Angostura; the champagne being well iced should\nnow he poured in. Serve.\n  Among Eli's sons this loving cup is redolent with\nmemories of friendships formed at Yale, where at Morey's\nagain the rafters ring.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HARLEM",
+      "name_es": "Harlem",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "rye whiskey",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup",
+          "item_es": "sugar syrup",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1/4",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with iee, strain into glasses; serve. This drink as the locality for which it is named, is noted for its \"hot-cha-cha.\" The above will serve 6. COSMOPOLITANS",
+      "method_es": "Shake well with iee, strain into glasses; serve. This drink as the locality for which it is named, is noted for its \"hot-cha-cha.\" The above will serve 6. COSMOPOLITANS",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HARLEM\n\n        Rye Whiskey, 2 parts          Gin, 2_parts\nSugar Syrup, 1 part                Lime Juice, 1/4 part\n                      Egg, 3 whites only\n  Shake well with iee, strain into glasses; serve. This\ndrink as the locality for which it is named, is noted for\nits \"hot-cha-cha.\" The above will serve 6.\nCOSMOPOLITANS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "IDEAL",
+      "name_es": "Ideal",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grape fruit juice, 1-1/4 parts chartreuse",
+          "item_es": "grape fruit juice, 1-1/4 parts chartreuse",
+          "amount": "1/4",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, garnish with As a savory spread small rounds of bread with melted butter, cover with a paste of anchovie and lemon; garnish 8       with curled anchovie, pearl onion and sprig parsley.",
+      "method_es": "Shake well with ice, strain into glasses, garnish with As a savory spread small rounds of bread with melted butter, cover with a paste of anchovie and lemon; garnish 8       with curled anchovie, pearl onion and sprig parsley.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IDEAL\n\n             Gin, 2 parts        French Vermouth, 2 parts\n          Grape Fruit Juice, 1-1/4 parts Chartreuse, 1/4 part\n             Shake well with ice, strain into glasses, garnish with\n PAGE     filbert; serve. The above will serve 6.\n             As a savory spread small rounds of bread with melted\n          butter, cover with a paste of anchovie and lemon; garnish\n  8       with curled anchovie, pearl onion and sprig parsley."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JACK ROSE",
+      "name_es": "Jack Rose",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juiee",
+          "item_es": "lemon juiee",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into glasses; serve. Applejack may be substituted for Brandy. The above will serve 6.",
+      "method_es": "Stir well with ice, strain into glasses; serve. Applejack may be substituted for Brandy. The above will serve 6.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JACK ROSE\n\n                Brandy, 4 parts       Lemon Juiee, 1 part\n                            Grenadine, 1 part\n            Stir well with ice, strain into glasses; serve. Applejack\n          may be substituted for Brandy. The above will serve 6."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MANHATTAN",
+      "name_es": "Manhattan",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bourbon",
+          "item_es": "bourbon",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "12",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "12",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into glasses, add maraschino cherry; serve. This one appeals to feminine taste. The above makes 6.",
+      "method_es": "Stir well with ice, strain into glasses, add maraschino cherry; serve. This one appeals to feminine taste. The above makes 6.",
+      "glassware": null,
+      "garnish": "As a side-kick, cut diamond shaped pieces of bread and spread after toasting with smoked sturgeon; sprinkle with grated egg and garnish with a dash of Chili Sauce.",
+      "page_reference": null,
+      "raw_text": "MANHATTAN\n\n            Bourbon, 4 parts          Italian Vermouth, 1 part\n                         Orange Bitters, 12 dashes\n                       Angostura Bitters, 12 drops\n            Stir well with ice, strain into glasses, add maraschino\n          cherry; serve. This one appeals to feminine taste. The\n          above makes 6.\n            As a side-kick, cut diamond shaped pieces of bread and\n          spread after toasting with smoked sturgeon; sprinkle with\n          grated egg and garnish with a dash of Chili Sauce."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MANHATTAN, DRY",
+      "name_es": "Manhattan, Dry",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bourbon",
+          "item_es": "bourbon",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MANHATTAN, DRY\n\n           Bourbon, 2 parts            Italian Vermouth, 1 part\n          Orange Bitters, 8 dashes     Angostura Bitters, 8 drops\n            This one is prepared and served exactly as is the pre\n          ceding, except that a pickled hazel-nut is used as the\n           flourish instead of the maraschino. The above makes 4\n          portions.\n                                                     COS9IOPOLITANS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MARTINI",
+      "name_es": "Martini",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into glasses, add olive or pickled onion to each; twist lemon peel over each; serve.     PAGE Two per person are considered amply appetizing.       The above makes 4.",
+      "method_es": "Stir well with ice, strain into glasses, add olive or pickled onion to each; twist lemon peel over each; serve.     PAGE Two per person are considered amply appetizing.       The above makes 4.",
+      "glassware": null,
+      "garnish": "As a side-kick, spread unsweetened crackers with peanut butter, garnish with bacon; grill; serve hot. 3IARTINI, DRY Gin, 2 parts           French Vermouth, 2 parts Orange Bitters, 8 dashes This is prepared identically as is the preceding, except that a stuffed olive is used as the \"flourish.\" This recipe serves 4.",
+      "page_reference": null,
+      "raw_text": "MARTINI\n\n   Gin, 2 parts          Italian Vermouth, 2 parts\n                 Orange Bitters, 8 dashes\n  Stir well with ice, strain into glasses, add olive or\npickled onion to each; twist lemon peel over each; serve.     PAGE\nTwo per person are considered amply appetizing.       The\nabove makes 4.\n  As a side-kick, spread unsweetened crackers with peanut\nbutter, garnish with bacon; grill; serve hot.\n\n\n                    3IARTINI, DRY\n   Gin, 2 parts           French Vermouth, 2 parts\n                 Orange Bitters, 8 dashes\n  This is prepared identically as is the preceding, except\nthat a stuffed olive is used as the \"flourish.\" This recipe\nserves 4."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "OLD FASHIONED",
+      "name_es": "Old Fashioned",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye or bourbon",
+          "item_es": "rye or bourbon",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Add sugar to 5 ounce tumbler; dash Bitters over it; crush sugar; add 1 lump of ice; garnish with twist of lemon peel, slice of orange, maraschino cherry; stir briskly and add water as desired. Brandy, Rum or Gin may be substituted for Bourbon.",
+      "method_es": "Add sugar to 5 ounce tumbler; dash Bitters over it; crush sugar; add 1 lump of ice; garnish with twist of lemon peel, slice of orange, maraschino cherry; stir briskly and add water as desired. Brandy, Rum or Gin may be substituted for Bourbon.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OLD FASHIONED\n\n  Rye or Bourbon, 1 part        Sugar, 1 lump\n              Angostura, 2 dashes\n  Add sugar to 5 ounce tumbler; dash Bitters over it;\ncrush sugar; add 1 lump of ice; garnish with twist of\nlemon peel, slice of orange, maraschino cherry; stir\nbriskly and add water as desired. Brandy, Rum or Gin\nmay be substituted for Bourbon."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "OLD MONTEREY",
+      "name_es": "Old Monterey",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse",
+          "item_es": "Chartreuse",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, garnish with maraschino; serve. The above serves 6. As a savory, roll cream cheese into small balls and roll them in caviar placing them individually on toast squares or crackers. COSMOPOLITANS",
+      "method_es": "Shake well with ice, strain into glasses, garnish with maraschino; serve. The above serves 6. As a savory, roll cream cheese into small balls and roll them in caviar placing them individually on toast squares or crackers. COSMOPOLITANS",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OLD MONTEREY\n\n  Gin, 2 parts            Italian Vermouth, 2 parts\n                   Chartreuse, 2 parts\n  Shake well with ice, strain into glasses, garnish with\nmaraschino; serve. The above serves 6.\n  As a savory, roll cream cheese into small balls and roll\nthem in caviar placing them individually on toast squares\nor crackers.\nCOSMOPOLITANS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ORANGE BLOSSOM",
+      "name_es": "Orange Blossom",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juir.e",
+          "item_es": "orange juir.e",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses; serve. (The Orange Silver Blossom is made by the addition of the whites of two eggs to the mixture, sprinkling each glass naturally a favorite with the ladies.) The above serves 4. 10                                SOURS All Sours are prepared according to the following, using 5 oz. glass or tumbler. Lemon, Juice of 1/2              Sugar, 1 teaspoon Spirits, 1 part According to individual taste the following only are used; Rye, Bourbon, Gin, Brandy, Rum. Shake well with ice, strain into glass, add one slice orange and maraschino cherry; serve.",
+      "method_es": "Shake well with ice, strain into glasses; serve. (The Orange Silver Blossom is made by the addition of the whites of two eggs to the mixture, sprinkling each glass naturally a favorite with the ladies.) The above serves 4. 10                                SOURS All Sours are prepared according to the following, using 5 oz. glass or tumbler. Lemon, Juice of 1/2              Sugar, 1 teaspoon Spirits, 1 part According to individual taste the following only are used; Rye, Bourbon, Gin, Brandy, Rum. Shake well with ice, strain into glass, add one slice orange and maraschino cherry; serve.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORANGE BLOSSOM\n\n               Gin, 2 parts           Orange Juir.e, 2 parts\n           Shake well with ice, strain into glasses; serve. (The\n         Orange Silver Blossom is made by the addition of the\n         whites of two eggs to the mixture, sprinkling each glass\n PAGE    with nutmeg after pouring. A sweet smooth drink it is\n         naturally a favorite with the ladies.) The above serves 4.\n\n 10                                SOURS\n\n           All Sours are prepared according to the following, using\n         5 oz. glass or tumbler.\n             Lemon, Juice of 1/2              Sugar, 1 teaspoon\n                                 Spirits, 1 part\n           According to individual taste the following only are\n         used; Rye, Bourbon, Gin, Brandy, Rum. Shake well with\n         ice, strain into glass, add one slice orange and maraschino\n         cherry; serve."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SIDE-CAR",
+      "name_es": "Side-Car",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into glasses; serve. The above serves 4.",
+      "method_es": "Stir well with ice, strain into glasses; serve. The above serves 4.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SIDE-CAR\n\n             Brandy, 2 parts                Cointreau, 2 parts\n           Stir well with ice, strain into glasses; serve. The above\n         serves 4."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "STINGER",
+      "name_es": "Stinger",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, twist lemon peel over, garnish with maraschino cherry; serve. If green Creme de Menthe is used this is called a Tipperary. There is no difference in flavor. A strong, sweet drink, popular with the ladies. The above will serve 6.",
+      "method_es": "Shake well with ice, strain into glasses, twist lemon peel over, garnish with maraschino cherry; serve. If green Creme de Menthe is used this is called a Tipperary. There is no difference in flavor. A strong, sweet drink, popular with the ladies. The above will serve 6.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "STINGER\n\n            Brandy, 4 parts         Creme de Menthe, 2 parts\n           Shake well with ice, strain into glasses, twist lemon\n         peel over, garnish with maraschino cherry; serve. If green\n         Creme de Menthe is used this is called a Tipperary. There\n         is no difference in flavor. A strong, sweet drink, popular\n          with the ladies. The above will serve 6."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WHISKEY SPECIAL",
+      "name_es": "Whiskey Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye or bourbon",
+          "item_es": "rye or bourbon",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1/2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, garnish with olive and sprinkle with nutmeg; serve. The above serves 6. As a canape serve small crisp wheaten crackers spread with Wine-Stilton Cheese. (To make Wine-Stilton, mix Stilton Cheese with good Port Wine to a thick paste; return to covered jar; keep in ice box.) Tropical Cruise Speciaus",
+      "method_es": "Shake well with ice, strain into glasses, garnish with olive and sprinkle with nutmeg; serve. The above serves 6. As a canape serve small crisp wheaten crackers spread with Wine-Stilton Cheese. (To make Wine-Stilton, mix Stilton Cheese with good Port Wine to a thick paste; return to covered jar; keep in ice box.) Tropical Cruise Speciaus",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY SPECIAL\n\n         Rye or Bourbon, 3 parts       French Vermouth, 2 parts\n                          Orange Juice, 1/2 part\n            Shake well with ice, strain into glasses, garnish with\n         olive and sprinkle with nutmeg; serve. The above serves 6.\n            As a canape serve small crisp wheaten crackers spread\n         with Wine-Stilton Cheese. (To make Wine-Stilton, mix\n         Stilton Cheese with good Port Wine to a thick paste;\n         return to covered jar; keep in ice box.)\n  Tropical Cruise Speciaus"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "APERITAL",
+      "name_es": "Aperital",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac brandy",
+          "item_es": "cognac brandy",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "aperital",
+          "item_es": "aperital",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer",
+          "item_es": "seltzer",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake vigorously with ice, strain into..glasses, garnish     PAGE with thin slice of orange, slit and hung on rim of 5 oz. glass. Before drinking one should wait until the foam partially subsides. The above serves 6.                       11",
+      "method_es": "Shake vigorously with ice, strain into..glasses, garnish     PAGE with thin slice of orange, slit and hung on rim of 5 oz. glass. Before drinking one should wait until the foam partially subsides. The above serves 6.                       11",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "APERITAL\n\n                Cognac Brandy, 3 parts\n      Aperital, 3 parts           Seltzer, 3 parts\n Shake vigorously with ice, strain into..glasses, garnish     PAGE\nwith thin slice of orange, slit and hung on rim of 5 oz.\nglass. Before drinking one should wait until the foam\npartially subsides. The above serves 6.                       11"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BESO TROPICAL",
+      "name_es": "Beso Tropical",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into 5 oz. tumblers; garnish with a small piece of pineapple; serve. The above will serve 4. As a savory spread whole-wheat crackers with Roquefort Cheese made into a paste by the addition of a little cream and Worcestershire Sauce; garnish with strips of Ancho^e.",
+      "method_es": "Shake well with ice and strain into 5 oz. tumblers; garnish with a small piece of pineapple; serve. The above will serve 4. As a savory spread whole-wheat crackers with Roquefort Cheese made into a paste by the addition of a little cream and Worcestershire Sauce; garnish with strips of Ancho^e.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BESO TROPICAL\n\n    Rum,2 parts           Pineapple Juice, 2 parts\n  Shake well with ice and strain into 5 oz. tumblers;\ngarnish with a small piece of pineapple; serve. The above\nwill serve 4.\n  As a savory spread whole-wheat crackers with Roquefort\nCheese made into a paste by the addition of a little cream\nand Worcestershire Sauce; garnish with strips of Ancho^e."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "BUCCANEER",
+      "name_es": "Buccaneer",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi (white label)",
+          "item_es": "bacardi (white label)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "haytian rum (sartle)",
+          "item_es": "haytian rum (sartle)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rixm",
+          "item_es": "jamaica rixm",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir lightly without ice, imbibe with eyes closed and if you survive, your malaria has departed. The above serves 3. As an appetizer nibble hardtack spread with \"guaca- mole,\" which is alligator pear, crushed and seasoned with minced garlic and Tobasco Sauce to taste.",
+      "method_es": "Stir lightly without ice, imbibe with eyes closed and if you survive, your malaria has departed. The above serves 3. As an appetizer nibble hardtack spread with \"guaca- mole,\" which is alligator pear, crushed and seasoned with minced garlic and Tobasco Sauce to taste.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BUCCANEER\n\n            Bacardi (White Label), 1 part\n             Haytian Rum (Sartle), 1 part\n                 Jamaica Rixm, 1 part\n  Stir lightly without ice, imbibe with eyes closed and if\nyou survive, your malaria has departed. The above serves 3.\n As an appetizer nibble hardtack spread with \"guaca-\nmole,\" which is alligator pear, crushed and seasoned with\nminced garlic and Tobasco Sauce to taste."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CHURUBUSCO",
+      "name_es": "Churubusco",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "8",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "8",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1/2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Strain to champagne type glasses (4 oz.) ; garnish with maraschino cherry, and piece of pineapple pierced with a toothpick. The above will serve 8. TROPICAL CRUISE SPECIALS",
+      "method_es": "Strain to champagne type glasses (4 oz.) ; garnish with maraschino cherry, and piece of pineapple pierced with a toothpick. The above will serve 8. TROPICAL CRUISE SPECIALS",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHURUBUSCO\n\n     Rum, 8 parts         Pineapple Juice, 8 parts\nOrange Juice, 1/2 part              Grenadine, 1 part\n                  Egg, 4 whites only\n   Beat whites of egg separately and lightly. Shake all\ningredients together with ice, including whites of egg.\nStrain to champagne type glasses (4 oz.) ; garnish with\nmaraschino cherry, and piece of pineapple pierced with a\ntoothpick. The above will serve 8.\nTROPICAL CRUISE SPECIALS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CUBA LIBRE",
+      "name_es": "Cuba Libre",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "coca cola",
+          "item_es": "coca cola",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice, strain into 5 oz. tumblers; serve. This is the favorite drink of the \"guajiro\" or Cuban peasant. The 12                               DAIQUIRI Bacardi (White Label), 4 parts       Lime Juice, 2 parts Sugar, 1/2 part Sbake well with ice, garnish with pickled onion; serve. This famous cocktail originated with American Soldiers in the War with Spain. Landing through the surf near the village of Daiquiri, they made use of discarded sugar kettles, picked their own limes in the neighborhood and mixed them with native rum and sugar. Their Alger beef and raw onion rations, washed down with this delectable potation, made a pleasant prelude to tbe next day's fight ing. This recipe serves 6. The ideal canape with this drink is a tiny hard cracker spread with crushed avocado and minced onion, garnished with pimento.",
+      "method_es": "Stir with ice, strain into 5 oz. tumblers; serve. This is the favorite drink of the \"guajiro\" or Cuban peasant. The 12                               DAIQUIRI Bacardi (White Label), 4 parts       Lime Juice, 2 parts Sugar, 1/2 part Sbake well with ice, garnish with pickled onion; serve. This famous cocktail originated with American Soldiers in the War with Spain. Landing through the surf near the village of Daiquiri, they made use of discarded sugar kettles, picked their own limes in the neighborhood and mixed them with native rum and sugar. Their Alger beef and raw onion rations, washed down with this delectable potation, made a pleasant prelude to tbe next day's fight ing. This recipe serves 6. The ideal canape with this drink is a tiny hard cracker spread with crushed avocado and minced onion, garnished with pimento.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CUBA LIBRE\n\n                Rum, 2 parts              Coca Cola, 2 parts\n            Stir with ice, strain into 5 oz. tumblers; serve. This is\n          the favorite drink of the \"guajiro\" or Cuban peasant. The\n PAGE     above will serve 4.\n\n\n 12                               DAIQUIRI\n\n          Bacardi (White Label), 4 parts       Lime Juice, 2 parts\n                               Sugar, 1/2 part\n            Sbake well with ice, garnish with pickled onion; serve.\n          This famous cocktail originated with American Soldiers\n          in the War with Spain. Landing through the surf near\n          the village of Daiquiri, they made use of discarded sugar\n          kettles, picked their own limes in the neighborhood and\n          mixed them with native rum and sugar. Their Alger beef\n          and raw onion rations, washed down with this delectable\n           potation, made a pleasant prelude to tbe next day's fight\n          ing. This recipe serves 6.\n            The ideal canape with this drink is a tiny hard cracker\n          spread with crushed avocado and minced onion, garnished\n          with pimento."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "DON PEPE",
+      "name_es": "Don Pepe",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "riun",
+          "item_es": "riun",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into six glasses, % part each of green Creme de Menthe. Now shake the other materials together with ice; strain carefully into glasses so as not to disturb Creme de Mentbe; garnish with mint leaf; serve. The cocktail should be taken at one swallow or sipped in such a way that the Creme de Menthe acts as a follow through. It is the usual choice of the Hacendado, the plantation owner. This is a recipe for a strong potion that will serve 6. Don Pepe serves, on festive occasions, tender center celery stalks stuffed with caviar and sprinkled with paprika chilled thoroughly before serving. TROPICAL CRUISE SPECIALS",
+      "method_es": "Pour into six glasses, % part each of green Creme de Menthe. Now shake the other materials together with ice; strain carefully into glasses so as not to disturb Creme de Mentbe; garnish with mint leaf; serve. The cocktail should be taken at one swallow or sipped in such a way that the Creme de Menthe acts as a follow through. It is the usual choice of the Hacendado, the plantation owner. This is a recipe for a strong potion that will serve 6. Don Pepe serves, on festive occasions, tender center celery stalks stuffed with caviar and sprinkled with paprika chilled thoroughly before serving. TROPICAL CRUISE SPECIALS",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "DON PEPE\n\n               Riun, 2 parts            Lime Juice, 2 parts\n                             Grenadine, 1 part\n            Pour into six glasses, % part each of green Creme de\n          Menthe. Now shake the other materials together with ice;\n          strain carefully into glasses so as not to disturb Creme\n          de Mentbe; garnish with mint leaf; serve. The cocktail\n          should be taken at one swallow or sipped in such a way\n          that the Creme de Menthe acts as a follow through. It\n          is the usual choice of the Hacendado, the plantation\n          owner. This is a recipe for a strong potion that will\n          serve 6.\n            Don Pepe serves, on festive occasions, tender center\n          celery stalks stuffed with caviar and sprinkled with\n          paprika chilled thoroughly before serving.\n                                       TROPICAL CRUISE SPECIALS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-030",
+      "order": 30,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ESCARGOT",
+      "name_es": "Escargot",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac brandy",
+          "item_es": "cognac brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir ivith ice, strain into 5 oz. glasses until each is half full, garnish with slice of orange; fill with seltzer; serve.     PAGE The above will serve 3. As a savory, serve snails in oil on wholewheat crackers. 13",
+      "method_es": "Stir ivith ice, strain into 5 oz. glasses until each is half full, garnish with slice of orange; fill with seltzer; serve.     PAGE The above will serve 3. As a savory, serve snails in oil on wholewheat crackers. 13",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ESCARGOT\n\n       Cognac Brandy, 1 part       Gin, 1 part\n                Orange Juice, 1 part\n   Stir ivith ice, strain into 5 oz. glasses until each is half\nfull, garnish with slice of orange; fill with seltzer; serve.     PAGE\nThe above will serve 3.\n  As a savory, serve snails in oil on wholewheat crackers.\n                                                                  13"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-031",
+      "order": 31,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HAVANA PALM",
+      "name_es": "Havana Palm",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rtun",
+          "item_es": "rtun",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, twist orange peel over; serve. The above gives 6 portions.",
+      "method_es": "Shake well with ice, strain into glasses, twist orange peel over; serve. The above gives 6 portions.",
+      "glassware": null,
+      "garnish": "As a side-kick, wrap pickled onion with anchovie filet; secure with toothpick; serve.",
+      "page_reference": null,
+      "raw_text": "HAVANA PALM\n\n    Rtun, 4 parts           Italian Vermouth, 2 parts\n  Shake well with ice, strain into glasses, twist orange peel\nover; serve. The above gives 6 portions.\n  As a side-kick, wrap pickled onion with anchovie filet;\nsecure with toothpick; serve."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-032",
+      "order": 32,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HAWAIIAN",
+      "name_es": "Hawaiian",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, garnish with maraschino cherry and piece of pineapple pierced with toothpick; serve. The above serves 4. As a canape, center shrimps on small soda crackers, sprinkle with lemon and fill center with Chili Sauce.",
+      "method_es": "Shake well with ice, strain into glasses, garnish with maraschino cherry and piece of pineapple pierced with toothpick; serve. The above serves 4. As a canape, center shrimps on small soda crackers, sprinkle with lemon and fill center with Chili Sauce.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HAWAIIAN\n\n    Gin, 2 parts       Pineapple Juice, 2 parts\nOrange Bitters, 4 dashes        Egg, 2 whites only\n  Shake well with ice, strain into glasses, garnish with\nmaraschino cherry and piece of pineapple pierced with\ntoothpick; serve. The above serves 4.\n  As a canape, center shrimps on small soda crackers,\nsprinkle with lemon and fill center with Chili Sauce."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-033",
+      "order": 33,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "KING'S PEG",
+      "name_es": "King'S Peg",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "KING'S PEG\n\nChampagne, 1 pint           Cognac, 2 Champagne glasses\n  The Champagne should be well iced. Pour cognac into\n6 Champagne-type glasses until each is 1/3 full. Fill with\nChampagne. Garnish with a twist of lemon peel; serve.\nA popular number aboard ship with the sweet girl gradu\nate, and a splendid antidote for mal-de-mer.\n   As a savory, fresh caviar on thin oblongs of toast;'\nsprinkle with lemon and garnish with grated egg.\nTROPICAL, CRUISE SPECIALS",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-034",
+      "order": 34,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "LUPITA",
+      "name_es": "Lupita",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "tequila or mezcal",
+          "item_es": "tequila or mezcal",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir gently with ice, strain into glasses; serve. Two of these will answer \"a maiden's prayer.\" This recipe makes As a \"hot-cha,\" use the tiny spiced cocktail sausage, 14        wrap with bacon; secure with toothpick; grill until crisp; serve hot.",
+      "method_es": "Stir gently with ice, strain into glasses; serve. Two of these will answer \"a maiden's prayer.\" This recipe makes As a \"hot-cha,\" use the tiny spiced cocktail sausage, 14        wrap with bacon; secure with toothpick; grill until crisp; serve hot.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "LUPITA\n\n           Tequila or Mezcal, 4 parts       Lime Juice, 2 teaspoons\n                           Grenadine, 2 teaspoons\n             Stir gently with ice, strain into glasses; serve. Two of\n           these will answer \"a maiden's prayer.\" This recipe makes\n PAGE      4 cocktails.\n             As a \"hot-cha,\" use the tiny spiced cocktail sausage,\n 14        wrap with bacon; secure with toothpick; grill until crisp;\n           serve hot."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-035",
+      "order": 35,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "EL TORERO",
+      "name_es": "El Torero",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac brandy",
+          "item_es": "cognac brandy",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir with ice, strain into glasses and as a flourish use a filbert; serve. This drink was evolved in the old days of the Cafe Ingles of Mexico City. Here the heroes of the bull-ring and their fans gathered to discuss their most graceful passes, and after many passes over the bar usually ended in making vicious passes with the dagger. The above will serve 4.",
+      "method_es": "Stir with ice, strain into glasses and as a flourish use a filbert; serve. This drink was evolved in the old days of the Cafe Ingles of Mexico City. Here the heroes of the bull-ring and their fans gathered to discuss their most graceful passes, and after many passes over the bar usually ended in making vicious passes with the dagger. The above will serve 4.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EL TORERO\n\n            Cognac Brandy, 2 parts          French Vermouth, 2 parts\n                             Port Wine, 4 teaspoons\n              Stir with ice, strain into glasses and as a flourish use a\n           filbert; serve. This drink was evolved in the old days\n           of the Cafe Ingles of Mexico City. Here the heroes of\n           the bull-ring and their fans gathered to discuss their\n           most graceful passes, and after many passes over the bar\n            usually ended in making vicious passes with the dagger.\n           The above will serve 4."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-036",
+      "order": 36,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "PLANTER'S PUNCH",
+      "name_es": "Planter'S Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "6",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PLANTER'S PUNCH\n                             (use 7 oz. tumbler)\n           Rum,(Jamaica), 8 parts Sugar Syrup, 4 teaspoons\n           Lime Juice, 2 teaspoons        Pineapple Juice, 6 parts\n            Using a separate vessel stir mixture together; now pour\n           into the required number of glasses (4) full cracked ice,\n           equally; stir; fill with charged water; garnish with orange,\n           fresh pineapple or both. A favorite drink among the\n           Jamaica planters. It makes a splendid thirst quencher on\n           sultry days and hot nights. The above serves 4."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-037",
+      "order": 37,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PRESIDENTE",
+      "name_es": "Presidente",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curacoa",
+          "amount": "12",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "12",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, garnish with a maraschino; serve. This gives 6 servings.",
+      "method_es": "Shake well with ice, strain into glasses, garnish with a maraschino; serve. This gives 6 servings.",
+      "glassware": null,
+      "garnish": "As a side-kick, fill celery stalks with a paste made of Roquefort Cheese, cream and chopped pimento. TROPICAL CRUISE SPECIALS",
+      "page_reference": null,
+      "raw_text": "PRESIDENTE\n\n              Bacardi, 2 parts        Italian Vermouth, 2 parts\n           French Vermouth, 2 parts             Curacoa, 12 dashes\n                        Angostura Bitters, 12 drops\n             Shake well with ice, strain into glasses, garnish with a\n           maraschino; serve. This gives 6 servings.\n             As a side-kick, fill celery stalks with a paste made of\n           Roquefort Cheese, cream and chopped pimento.\n                                    TROPICAL CRUISE SPECIALS"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-038",
+      "order": 38,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RUM ANTIQUARIAN",
+      "name_es": "Rum Antiquarian",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into glasses, add twist lemon   PAGE peel, garnish with maraschino cherry; serve. This will serve 4. RUM-GIN                              15 Rum, 2 parts           Gin, 2 parts Lemon Juice, 2 teaspoons Shake well with ice, strain into glasses, garnish with a pickled onion; serve. This will make 4 cocktails. As a savory spread thin sliced ham with catsup and English mustard to taste; cover with thin slieed Swiss cheese; cut into small squares; place on crackers; grill; garnish with paprika; serve hot. RUM GROG (HOT) Rum (heavy), 1 quart               Strong Tea, 1 quart Hot Water, 1 quart            Sugar, 1/2 pound Dissolve sugar in water, add other ingredients and pour into punch bowl. Add large lump of ice. Stir until chilled; serve in 4 oz. punch cups with diced pineapple and dash of nutmeg. This gives approximately 30 full servings.",
+      "method_es": "Stir well with ice, strain into glasses, add twist lemon   PAGE peel, garnish with maraschino cherry; serve. This will serve 4. RUM-GIN                              15 Rum, 2 parts           Gin, 2 parts Lemon Juice, 2 teaspoons Shake well with ice, strain into glasses, garnish with a pickled onion; serve. This will make 4 cocktails. As a savory spread thin sliced ham with catsup and English mustard to taste; cover with thin slieed Swiss cheese; cut into small squares; place on crackers; grill; garnish with paprika; serve hot. RUM GROG (HOT) Rum (heavy), 1 quart               Strong Tea, 1 quart Hot Water, 1 quart            Sugar, 1/2 pound Dissolve sugar in water, add other ingredients and pour into punch bowl. Add large lump of ice. Stir until chilled; serve in 4 oz. punch cups with diced pineapple and dash of nutmeg. This gives approximately 30 full servings.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM ANTIQUARIAN\n\n   Rum, 4 parts        Angostura Bitters, 8 drops\nOrange Bitters, 8 dashes   Lemon Juice, 2 teaspoons\n             Sugar Syrup, 1 teaspoon\n  Stir well with ice, strain into glasses, add twist lemon   PAGE\npeel, garnish with maraschino cherry; serve. This will\nserve 4.\n\n                        RUM-GIN                              15\n          Rum, 2 parts           Gin, 2 parts\n              Lemon Juice, 2 teaspoons\n  Shake well with ice, strain into glasses, garnish with\na pickled onion; serve. This will make 4 cocktails.\n  As a savory spread thin sliced ham with catsup and\nEnglish mustard to taste; cover with thin slieed Swiss\ncheese; cut into small squares; place on crackers; grill;\ngarnish with paprika; serve hot.\n\n                  RUM GROG (HOT)\n\nRum (heavy), 1 quart               Strong Tea, 1 quart\n    Hot Water, 1 quart            Sugar, 1/2 pound\n  Dissolve sugar in water, add other ingredients and pour\ninto punch bowl. Add large lump of ice. Stir until\nchilled; serve in 4 oz. punch cups with diced pineapple\nand dash of nutmeg. This gives approximately 30 full\nservings."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-039",
+      "order": 39,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RUM SWIZZLE",
+      "name_es": "Rum Swizzle",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum (light)",
+          "item_es": "rum (light)",
+          "amount": "8",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "shaved ice",
+          "amount": "8",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix the Rum, Sugar and Bitters in a separate vessel. Next place shaved ice in pitcher; now pour in the mixture. Using the swizzle stick, rotate handle between palms vigorously until ice has melted. Pour quickly into glasses so that each will have a bead of foam. This recipe will serve 8. Note that a swizzle should only be prepared TROPICAL CRUISE SPECIALS for the number of people present and only one round should be prepared at a time. The Rum Swizzle originated in Demerara which is British Guiana; its peculiarity is that it should never be sipped, but quaffed immediately. A proper Swizzle Stick is a can be substituted for it.) 16                               GIN SWIZZLE (use pitcher and 5 oz. tumblers) Old Tom Gin, 8 parts          Sugar, 8 teaspoons Angostura Bitters, 4 teaspoons     Shaved ice, 8 parts This is prepared and served identically as the preeed- ing. It will serve 8.",
+      "method_es": "Mix the Rum, Sugar and Bitters in a separate vessel. Next place shaved ice in pitcher; now pour in the mixture. Using the swizzle stick, rotate handle between palms vigorously until ice has melted. Pour quickly into glasses so that each will have a bead of foam. This recipe will serve 8. Note that a swizzle should only be prepared TROPICAL CRUISE SPECIALS for the number of people present and only one round should be prepared at a time. The Rum Swizzle originated in Demerara which is British Guiana; its peculiarity is that it should never be sipped, but quaffed immediately. A proper Swizzle Stick is a can be substituted for it.) 16                               GIN SWIZZLE (use pitcher and 5 oz. tumblers) Old Tom Gin, 8 parts          Sugar, 8 teaspoons Angostura Bitters, 4 teaspoons     Shaved ice, 8 parts This is prepared and served identically as the preeed- ing. It will serve 8.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM SWIZZLE\n\n        (use pitcher and 5 oz. tumblers)\n   Rum (light), 8 parts     Sugar, 8 teaspoons\nAngostura Bitters, 4 teaspoons      Shaved Ice, 8 parts\n  Mix the Rum, Sugar and Bitters in a separate vessel.\nNext place shaved ice in pitcher; now pour in the mixture.\nUsing the swizzle stick, rotate handle between palms\nvigorously until ice has melted. Pour quickly into glasses\nso that each will have a bead of foam. This recipe will\nserve 8. Note that a swizzle should only be prepared\nTROPICAL CRUISE SPECIALS\n\n\n           for the number of people present and only one round\n           should be prepared at a time.\n             The Rum Swizzle originated in Demerara which is British\n           Guiana; its peculiarity is that it should never be sipped,\n           but quaffed immediately. A proper Swizzle Stick is a\n PAGE      pealed, five branch orange stick. (However an egg-beater\n           can be substituted for it.)\n\n 16                               GIN SWIZZLE\n                     (use pitcher and 5 oz. tumblers)\n              Old Tom Gin, 8 parts          Sugar, 8 teaspoons\n           Angostura Bitters, 4 teaspoons     Shaved ice, 8 parts\n             This is prepared and served identically as the preeed-\n          ing. It will serve 8."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-040",
+      "order": 40,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GREEN SWIZZLE",
+      "name_es": "Green Swizzle",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "carypton",
+          "item_es": "carypton",
+          "amount": "8",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "shaved ice",
+          "amount": "8",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GREEN SWIZZLE\n                     (use pitcher and 5 oz. tumblers)\n              Carypton, 8 parts           Shaved Ice, 8 parts\n                           Angostura, 4 teaspoons\n            Place ice in pitcher; add Angostura; now pour in\n          Carypton; using the swizzle stick, swizzle the contents of\n          the pitcher until ice is melted and contents frothy. Serve\n          immediately. (A variation of this recipe, preferred by\n          some, is to use 4 parts French Vermouth and 4 parts only\n          Carypton with the above parts shaved ice and Angostura.)"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-041",
+      "order": 41,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "TWINKLE TWINKLE",
+      "name_es": "Twinkle Twinkle",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cognac brandy",
+          "item_es": "cognac brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, sprinkle with nutmeg; serve. A heavenly concoction this, and one that banishes care and strife. In the proportions given it will serve 4.",
+      "method_es": "Shake well with ice, strain into glasses, sprinkle with nutmeg; serve. A heavenly concoction this, and one that banishes care and strife. In the proportions given it will serve 4.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TWINKLE TWINKLE\n\n               Cognac Brandy, 1 part              Rum, 1 part\n                   Egg, 2 whole              Milk, 1 part\n             Shake well with ice, strain into glasses, sprinkle with\n           nutmeg; serve. A heavenly concoction this, and one that\n           banishes care and strife. In the proportions given it will\n           serve 4."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-042",
+      "order": 42,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WHISKEY CANA",
+      "name_es": "Whiskey Cana",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey cana",
+          "item_es": "whiskey cana",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1/2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY CANA\n           Whiskey Cana, 2 parts         Italian Vermouth, 2 parts\n               Lemon Juice, 1/2 part          Sugar, 2 teaspoons\n             Stii gently with ice, strain into glasses; serve. Whiskey\n           Cana is made from the juice of the Sugar Cane and is a\n           favorite drink of the Cauchos of the Pampas.\n                    Dixie Gems"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-043",
+      "order": 43,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ALEXANDER COCKTAIL",
+      "name_es": "Alexander Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacoa",
+          "item_es": "creme de cacoa",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sweet cream",
+          "item_es": "sweet cream",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses; serve. The above will serve 4. Gin, 2 parts",
+      "method_es": "Shake well with ice, strain into glasses; serve. The above will serve 4. Gin, 2 parts",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALEXANDER COCKTAIL\n     Gin, 2 parts           Creme de Cacoa, 1 part\n                Sweet Cream, 1 part\n  Shake well with ice, strain into glasses; serve. The\nabove will serve 4.\n                                                              PAGE\n\n\n   Gin, 2 parts"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-044",
+      "order": 44,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ALEXANDRINA COCKTAIL",
+      "name_es": "Alexandrina Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "creme de menthe",
+          "item_es": "crème de menthe",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sweet cream",
+          "item_es": "sweet cream",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice and strain into glasses; serve. Ladies BEWARE ... this is a heady drink. As above to serve 6. APPLE TODDY Apples, 6 Red           Sugar, 1/4 pound Water, 4 ozs.              Butter, 2 teaspoons Cinnamon, 1 teaspoon             W liiskey, 1 pint Core and bake apples well, leaving skins on; boil water, butter, sugar and cinnamon together until liquid; as mixture comes to a boil add whiskey; the apples being well baked and bot place in dessert glasses and add the hot whiskey mixture to each. Serve with spoons.",
+      "method_es": "Shake well with ice and strain into glasses; serve. Ladies BEWARE ... this is a heady drink. As above to serve 6. APPLE TODDY Apples, 6 Red           Sugar, 1/4 pound Water, 4 ozs.              Butter, 2 teaspoons Cinnamon, 1 teaspoon             W liiskey, 1 pint Core and bake apples well, leaving skins on; boil water, butter, sugar and cinnamon together until liquid; as mixture comes to a boil add whiskey; the apples being well baked and bot place in dessert glasses and add the hot whiskey mixture to each. Serve with spoons.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ALEXANDRINA COCKTAIL\n                       Creme de Menthe, 2 parts\n                                                              17\n               Sweet Cream, 2 parts\n  Shake well with ice and strain into glasses; serve.\nLadies BEWARE ... this is a heady drink. As above to\nserve 6.\n\n                       APPLE TODDY\n       Apples, 6 Red           Sugar, 1/4 pound\n     Water, 4 ozs.              Butter, 2 teaspoons\n    Cinnamon, 1 teaspoon             W liiskey, 1 pint\n  Core and bake apples well, leaving skins on; boil\nwater, butter, sugar and cinnamon together until liquid;\nas mixture comes to a boil add whiskey; the apples being\nwell baked and bot place in dessert glasses and add the\nhot whiskey mixture to each. Serve with spoons."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-045",
+      "order": 45,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "CORAL COCKTAIL",
+      "name_es": "Coral Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses; serve. The above will serve 4.",
+      "method_es": "Shake well with ice, strain into glasses; serve. The above will serve 4.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CORAL COCKTAIL\nBacardi, 4 parts      Grape Fruit Juice, 3 teaspoons\n            Apricot Cordial, 3 teaspoons\n               Lemon Juiee, 1 teaspoon\n  Shake well with ice, strain into glasses; serve. The\nabove will serve 4."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-046",
+      "order": 46,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "KENTUCKY EGG NOG",
+      "name_es": "Kentucky Egg Nog",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye or bourbon",
+          "item_es": "rye or bourbon",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "pour over mint sprigs and ice in glass. DO NOT STIR. 18          After an interval the glass will frost. Never crush the mint sprigs against the glass in prepar ing, as the above is the true Southern Mint Julep",
+      "method_es": "pour over mint sprigs and ice in glass. DO NOT STIR. 18          After an interval the glass will frost. Never crush the mint sprigs against the glass in prepar ing, as the above is the true Southern Mint Julep",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "KENTUCKY EGG NOG\n   Rye or Bourbon, 1 quart                 Eggs, 2 doz.\n        Sugar, 2 pounds              Cream, 1 pint\n  Separate the yolks from the whites; beat yolks until\nvery light; beat whites 'till stiff; now add sugar to yolks\nand beat adding whiskey gradually; \"fold-in\" cream hav\ning whipped it in advance. Serve in 7 oz. tumblers .with\nspoon. Nutmeg should be provided on the side for in\ndividual use. The above serves 12 portions.\nDIXIE GEMS\n\n\n                                    3IINT JULEP\n\n              Rye or Bourbon, 2 parts                 Sugar, 2 lumps\n                                Fresh Mint Sprigs\n                Dry 7 oz. tumbler thoroughly; stand on folded napkin\n             or blotting paper to insulate; fill glass with shaved ice;\n PAGE         place mint sprigs on top; dissolve sugar separately in a\n             little water and add whiskey to it; when thoroughly mixed\n             pour over mint sprigs and ice in glass. DO NOT STIR.\n 18          After an interval the glass will frost.\n                Never crush the mint sprigs against the glass in prepar\n             ing, as the above is the true Southern Mint Julep"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-047",
+      "order": 47,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PALM BEACH SPECIAL",
+      "name_es": "Palm Beach Special",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "4",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grape fruit juice",
+          "item_es": "grape fruit juice",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses, garnish with a stuffed olive; serve. The above will serve 6. As a canape, roll small stuffed olives in paste of cream cheese and anchovie; place on small crackers and garnish generously with caviar.",
+      "method_es": "Shake well with ice, strain into glasses, garnish with a stuffed olive; serve. The above will serve 6. As a canape, roll small stuffed olives in paste of cream cheese and anchovie; place on small crackers and garnish generously with caviar.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PALM BEACH SPECIAL\n\n                  Gin, 4 parts          Italian Vermouth, 1 part\n                             Grape Fruit Juice, 1 part\n               Shake well with ice, strain into glasses, garnish with a\n             stuffed olive; serve. The above will serve 6.\n               As a canape, roll small stuffed olives in paste of cream\n             cheese and anchovie; place on small crackers and garnish\n             generously with caviar."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-048",
+      "order": 48,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "RAMOS GIN FIZZ",
+      "name_es": "Ramos Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "orange water",
+          "item_es": "orange water",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into 7 oz. tumbler and fill with charged water; serve immediately. Famous indeed, it originated at the Stagg Bar in New Orleans.",
+      "method_es": "Shake well with ice, strain into 7 oz. tumbler and fill with charged water; serve immediately. Famous indeed, it originated at the Stagg Bar in New Orleans.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RAMOS GIN FIZZ\n\n                   Gin, 3 oz.           Lemon Juice,1/2 teaspoon\n                Egg, 1/2 white             Sugar, 1/2 teaspoon\n                 Cream,1 oz.             Orange Water, 3 dashes\n               Shake well with ice, strain into 7 oz. tumbler and fill\n             with charged water; serve immediately. Famous indeed, it\n             originated at the Stagg Bar in New Orleans."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-049",
+      "order": 49,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SAZERAC",
+      "name_es": "Sazerac",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye",
+          "item_es": "centeno",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir well with ice, strain into chilled glasses, having wet each with a twirl of Absinthe and discarded excess; add slice lemon peel; serve. This favorite originated in the Cafe Sazerac of New Orleans. The above gives 4 portions. As a savory, peel and split shrimps; dip in a mixture 2 tablespoons flour and 1 beaten egg; fry in deep fat; salt to taste and lay on brown paper to absorb grease; pierce with toothpick; serve hot. Holiday Cheer BURNED BRANDY (HOT) Brandy, 1 meas.              Sugar, 2 lumps Place sugar in small saucer, pour Brandy over it and set afire; stir while burning; as soon as sugar is entirely   PAGE melted serve in whiskey glass with spoon. BUTTERED RUM (HOT)                              19 Rum, 1 part             Butter, size of pea Spice, to taste            Hot Water, to fill Sugar Syrup, 1/2 teaspoon Using a 7 oz. highball glass, stir rum and sugar syrup with hot water; stir in butter; add spice to taste and serve with spoon in glass. An excellent way to serve at home is to have the materials assembled on a tray . • • the hot water in the kettle on the hearth ... permitting each and every one to mix their own.",
+      "method_es": "Stir well with ice, strain into chilled glasses, having wet each with a twirl of Absinthe and discarded excess; add slice lemon peel; serve. This favorite originated in the Cafe Sazerac of New Orleans. The above gives 4 portions. As a savory, peel and split shrimps; dip in a mixture 2 tablespoons flour and 1 beaten egg; fry in deep fat; salt to taste and lay on brown paper to absorb grease; pierce with toothpick; serve hot. Holiday Cheer BURNED BRANDY (HOT) Brandy, 1 meas.              Sugar, 2 lumps Place sugar in small saucer, pour Brandy over it and set afire; stir while burning; as soon as sugar is entirely   PAGE melted serve in whiskey glass with spoon. BUTTERED RUM (HOT)                              19 Rum, 1 part             Butter, size of pea Spice, to taste            Hot Water, to fill Sugar Syrup, 1/2 teaspoon Using a 7 oz. highball glass, stir rum and sugar syrup with hot water; stir in butter; add spice to taste and serve with spoon in glass. An excellent way to serve at home is to have the materials assembled on a tray . • • the hot water in the kettle on the hearth ... permitting each and every one to mix their own.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SAZERAC\n\n                  Rye, 3 parts          Sugar Syrup, 1 teaspoon\n             Peychaud Bitters, 8 dashes             Absinthe, 4 dashes\n               Stir well with ice, strain into chilled glasses, having wet\n             each with a twirl of Absinthe and discarded excess; add\n             slice lemon peel; serve. This favorite originated in the\n             Cafe Sazerac of New Orleans. The above gives 4 portions.\n                As a savory, peel and split shrimps; dip in a mixture\n             2 tablespoons flour and 1 beaten egg; fry in deep fat;\n             salt to taste and lay on brown paper to absorb grease;\n             pierce with toothpick; serve hot.\n            Holiday Cheer\n\n             BURNED BRANDY (HOT)\n\n     Brandy, 1 meas.              Sugar, 2 lumps\n  Place sugar in small saucer, pour Brandy over it and\nset afire; stir while burning; as soon as sugar is entirely   PAGE\nmelted serve in whiskey glass with spoon.\n\n              BUTTERED RUM (HOT)                              19\n       Rum, 1 part             Butter, size of pea\n     Spice, to taste            Hot Water, to fill\n              Sugar Syrup, 1/2 teaspoon\n  Using a 7 oz. highball glass, stir rum and sugar syrup\nwith hot water; stir in butter; add spice to taste and\nserve with spoon in glass. An excellent way to serve at\nhome is to have the materials assembled on a tray . • •\nthe hot water in the kettle on the hearth ... permitting\neach and every one to mix their own."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-050",
+      "order": 50,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "CHRISTMAS EVE PUNCH",
+      "name_es": "Christmas Eve Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Stir well in punch bowl with a large lump of ice; garnish with maraschino cherries, sliced orange and lemon. The above will give over 16 seven ounce glasses. The Night Before Christmas while decorating the Tree and after, this punch adds cheer to the crackling of the fire upon the hearth and the expectations of the morrow.",
+      "method_es": "Stir well in punch bowl with a large lump of ice; garnish with maraschino cherries, sliced orange and lemon. The above will give over 16 seven ounce glasses. The Night Before Christmas while decorating the Tree and after, this punch adds cheer to the crackling of the fire upon the hearth and the expectations of the morrow.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHRISTMAS EVE PUNCH\n\n      Rum, 1 quart            Grenadine, 1/2 pint\nGrape Fruit Juice, 1/2 pint          Ginger Ale, 4 pints\n Stir well in punch bowl with a large lump of ice; garnish\nwith maraschino cherries, sliced orange and lemon. The\nabove will give over 16 seven ounce glasses.\n   The Night Before Christmas while decorating the Tree\nand after, this punch adds cheer to the crackling of the\nfire upon the hearth and the expectations of the morrow.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-051",
+      "order": 51,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "EGG NOG",
+      "name_es": "Egg Nog",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "eggs",
+          "item_es": "eggs",
+          "amount": "12",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "method_original": "stir sugar into beaten yolks; pour into punch bowl; add Brandy, Rum, Curacoa in order named; stir well; use beaten whites as a float. As garnish, fancy colored granu lated sugar may be dusted over surface. Serve in 4 oz. HOLIDAY CHEER punch glasses. Nutmeg should be provided, on the side, for individual use. The above will give approximately 40 servings. It is the practice in many places to have a never empty bowl of this punch upon the dining room table New GROG (HOT) 20      Rum, 2 oz. meas.             Lemon Juice, 1/2 teaspoon Sugar Syrup, 1/2 teaspoon              Hot Water, to fiU Stir materials in 7 oz. glass, add hot water to fill, twist lemon peel over; serve with spoon. MULLED WINE (HOT) Choice of Wines, 1 quart         Hot Water, to fiU Lemon Juice, 4 teaspoons Sugar Syrup, 8 teaspoons           Verbena, 1 leaf Heat wine to boiling point, add all except water, stir thoroughly, pour into 7 oz. glasses equally, fill with hot water and serve with a spoon. The above gives 8 portions. NOEL CHAMPAGNE CUP Powdered Sugar, 1/2 pound           Champagne, 2 quarts Charged Water, 1 quart              Brandy, 4 ozs. Maraschino Syrup, 4 ozs.                Curacoa, 4 ozs. Mix well in punch bowl embedded in cracked ice; garnisb with sliced fruits in season. The above will give 30 servings in 4 oz. punch cups. A splendid punch for any occasion between Christmas Eve and Twelfth Night. SPICED RUM (HOT) Rum, 1-1/2 parts         Sugar Syrup, 1/2 teaspoon Allspice, 1/2 teaspoon       Butter, size of pea Hot Water, to fill Using a highball glass, stir together and add hot water to fill, dusting Allspice over and adding 1/2 slice of lemon; serve with spoon in the glass. HOLIDAY CHEER TODDIES (HOT) Using 7 oz. glass dissolve 1 lump of sugar in 1 measure of spirits; fill with hot water; serve with a spoon. All toddies (hot) are made the same way whether Rye, Bour bon or Scotch is used. TOM AND JERRY (HOT)                             21 Brandy, 4 parts       Rum, 4 dashes Butter, 4 teaspoons      Hot Milk, to fill Nutmeg, to taste Prepare batter by first separating yolk and white of 1 egg, beati",
+      "method_es": "stir sugar into beaten yolks; pour into punch bowl; add Brandy, Rum, Curacoa in order named; stir well; use beaten whites as a float. As garnish, fancy colored granu lated sugar may be dusted over surface. Serve in 4 oz. HOLIDAY CHEER punch glasses. Nutmeg should be provided, on the side, for individual use. The above will give approximately 40 servings. It is the practice in many places to have a never empty bowl of this punch upon the dining room table New GROG (HOT) 20      Rum, 2 oz. meas.             Lemon Juice, 1/2 teaspoon Sugar Syrup, 1/2 teaspoon              Hot Water, to fiU Stir materials in 7 oz. glass, add hot water to fill, twist lemon peel over; serve with spoon. MULLED WINE (HOT) Choice of Wines, 1 quart         Hot Water, to fiU Lemon Juice, 4 teaspoons Sugar Syrup, 8 teaspoons           Verbena, 1 leaf Heat wine to boiling point, add all except water, stir thoroughly, pour into 7 oz. glasses equally, fill with hot water and serve with a spoon. The above gives 8 portions. NOEL CHAMPAGNE CUP Powdered Sugar, 1/2 pound           Champagne, 2 quarts Charged Water, 1 quart              Brandy, 4 ozs. Maraschino Syrup, 4 ozs.                Curacoa, 4 ozs. Mix well in punch bowl embedded in cracked ice; garnisb with sliced fruits in season. The above will give 30 servings in 4 oz. punch cups. A splendid punch for any occasion between Christmas Eve and Twelfth Night. SPICED RUM (HOT) Rum, 1-1/2 parts         Sugar Syrup, 1/2 teaspoon Allspice, 1/2 teaspoon       Butter, size of pea Hot Water, to fill Using a highball glass, stir together and add hot water to fill, dusting Allspice over and adding 1/2 slice of lemon; serve with spoon in the glass. HOLIDAY CHEER TODDIES (HOT) Using 7 oz. glass dissolve 1 lump of sugar in 1 measure of spirits; fill with hot water; serve with a spoon. All toddies (hot) are made the same way whether Rye, Bour bon or Scotch is used. TOM AND JERRY (HOT)                             21 Brandy, 4 parts       Rum, 4 dashes Butter, 4 teaspoons      Hot Milk, to fill Nutmeg, to taste Prepare batter by first separating yolk and white of 1 egg, beati",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "EGG NOG\n\n         Brandy, 1 quart            Rum, 6 ozs.\n           Curacoa, 4 ozs.           Eggs, 12\n        Sugar, 1 pound             Milk, 3 quarts\n   Separate eggs and beat whites and yolks separately;\nstir sugar into beaten yolks; pour into punch bowl; add\nBrandy, Rum, Curacoa in order named; stir well; use\nbeaten whites as a float. As garnish, fancy colored granu\nlated sugar may be dusted over surface. Serve in 4 oz.\nHOLIDAY CHEER\n\n\n         punch glasses. Nutmeg should be provided, on the side,\n         for individual use. The above will give approximately\n         40 servings.\n            It is the practice in many places to have a never empty\n          bowl of this punch upon the dining room table New\n PAGE    Year's Day, to welcome those who call.\n\n                                GROG (HOT)\n 20      Rum, 2 oz. meas.             Lemon Juice, 1/2 teaspoon\n         Sugar Syrup, 1/2 teaspoon              Hot Water, to fiU\n           Stir materials in 7 oz. glass, add hot water to fill, twist\n         lemon peel over; serve with spoon.\n\n                           MULLED WINE (HOT)\n            Choice of Wines, 1 quart         Hot Water, to fiU\n                       Lemon Juice, 4 teaspoons\n            Sugar Syrup, 8 teaspoons           Verbena, 1 leaf\n           Heat wine to boiling point, add all except water, stir\n         thoroughly, pour into 7 oz. glasses equally, fill with hot\n         water and serve with a spoon. The above gives 8 portions.\n\n                          NOEL CHAMPAGNE CUP\n\n          Powdered Sugar, 1/2 pound           Champagne, 2 quarts\n             Charged Water, 1 quart              Brandy, 4 ozs.\n         Maraschino Syrup, 4 ozs.                Curacoa, 4 ozs.\n           Mix well in punch bowl embedded in cracked ice;\n         garnisb with sliced fruits in season. The above will give\n         30 servings in 4 oz. punch cups.\n           A splendid punch for any occasion between Christmas\n         Eve and Twelfth Night.\n\n                            SPICED RUM (HOT)\n          Rum, 1-1/2 parts         Sugar Syrup, 1/2 teaspoon\n            Allspice, 1/2 teaspoon       Butter, size of pea\n                             Hot Water, to fill\n            Using a highball glass, stir together and add hot water\n         to fill, dusting Allspice over and adding 1/2 slice of lemon;\n         serve with spoon in the glass.\n                                                     HOLIDAY CHEER\n\n\n                  TODDIES (HOT)\n\n  Using 7 oz. glass dissolve 1 lump of sugar in 1 measure\nof spirits; fill with hot water; serve with a spoon. All\ntoddies (hot) are made the same way whether Rye, Bour\nbon or Scotch is used.\n                                                              PAGE\n\n              TOM AND JERRY (HOT)                             21\n       Brandy, 4 parts       Rum, 4 dashes\n     Butter, 4 teaspoons      Hot Milk, to fill\n                  Nutmeg, to taste\n  Prepare batter by first separating yolk and white of 1\negg, beati"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-052",
+      "order": 52,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIN DAISY",
+      "name_es": "Gin Daisy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN DAISY\n\n  Use 7 oz. tumbler; add juice 1/2 lemon; 1/2 teaspoon\npowered sugar; 2 oz. measure Dry Gin; 6 dashes Grena\ndine; cracked ice generously. Fill with charged water;        PAGE\ndecorate with sprigs green mint; garnish with fresh fruits\nin season and maraschino cherry.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-053",
+      "order": 53,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WHISKEY DAISY",
+      "name_es": "Whiskey Daisy",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY DAISY\n                                                              25\n  Use 5 oz. tumbler; add juice 1/2 lemon; 2 oz. measure\nBourbon or Rye; 1/2 teaspoon Sugar Syrup; fill 1/3 full\nfinely cracked ice; stir vigorously; fill with charged\nwater.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-054",
+      "order": 54,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "BRANDY FIZZ",
+      "name_es": "Brandy Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well with ice, strain into 7 oz. tumbler; fill with charged water and serve immediately.",
+      "method_es": "Shake well with ice, strain into 7 oz. tumbler; fill with charged water and serve immediately.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY FIZZ\n\nBrandy, 1-1/2 parts           Lemon Juice, 1 teaspoon\n    Rum, 1 dash           Sugar Syrup, 1 teaspoon\n  Shake well with ice, strain into 7 oz. tumbler; fill with\ncharged water and serve immediately.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-055",
+      "order": 55,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "GIN FIZZ",
+      "name_es": "Gin Fizz",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well with ice, strain into 7 oz. tumbler, fill with charged water. Adding 2 dashes Cointreau gives zest.",
+      "method_es": "Shake well with ice, strain into 7 oz. tumbler, fill with charged water. Adding 2 dashes Cointreau gives zest.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZZ\n\n     Gin, 3 oz. meas.             Juice 1/2 Lemon\n             Powdered Sugar, 1 teaspoon\n  Shake well with ice, strain into 7 oz. tumbler, fill with\ncharged water. Adding 2 dashes Cointreau gives zest.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-056",
+      "order": 56,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "GIN FIZZ, GOLDEN",
+      "name_es": "Gin Fizz, Golden",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "6",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1/3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "sugar syrup",
+          "item_es": "sugar syrup",
+          "amount": "1/3",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into 4 (7 oz.) tumblers equally, fill with charged water and serve immediately. GIN FIZZ, SILVER Follow the same recipe and procedure in preparation as in the mixing of the preceding Golden Gin Fizz EXCEPT that the whites only of 4 eggs are used. COUNTRY CLUB ECHOES",
+      "method_es": "Shake well with ice, strain into 4 (7 oz.) tumblers equally, fill with charged water and serve immediately. GIN FIZZ, SILVER Follow the same recipe and procedure in preparation as in the mixing of the preceding Golden Gin Fizz EXCEPT that the whites only of 4 eggs are used. COUNTRY CLUB ECHOES",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIN FIZZ, GOLDEN\n     Gin, 6 parts           Lemon Juice, 1/3 part\nSugar Syrup, 1/3 part                       4 yolks only\n  Shake well with ice, strain into 4 (7 oz.) tumblers\nequally, fill with charged water and serve immediately.\n\n                    GIN FIZZ, SILVER\n  Follow the same recipe and procedure in preparation as\nin the mixing of the preceding Golden Gin Fizz EXCEPT\nthat the whites only of 4 eggs are used.\nCOUNTRY CLUB ECHOES"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-057",
+      "order": 57,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "SLGE-GIN FIZZ",
+      "name_es": "Slge-Gin Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sloe-gin",
+          "item_es": "sloe-gin",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into 7 oz. tumhler, fill with charged water and serve immediately.",
+      "method_es": "Shake well with ice, strain into 7 oz. tumhler, fill with charged water and serve immediately.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SLGE-GIN FIZZ\n\n           Sloe-Gin, 2 parts       Angostura Bitters, 1 dash\n                        Lemon Juice, I teaspoon\n             Shake well with ice, strain into 7 oz. tumhler, fill with\n           charged water and serve immediately.\n PAGE"
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-058",
+      "order": 58,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "RUM FIZZ",
+      "name_es": "Rum Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into 7 oz. tumbler, fill with charged water and serve immediately. HIGHBALLS All Highballs are made as follows: Use 7 oz. tumbler; add 1 lump of ice; 1 measure of any spirit or wine desired; fill glass with charged water. If Ginger Ale is used instead of charged water it should only be with Gin, Rye and Bourbon.",
+      "method_es": "Shake well with ice, strain into 7 oz. tumbler, fill with charged water and serve immediately. HIGHBALLS All Highballs are made as follows: Use 7 oz. tumbler; add 1 lump of ice; 1 measure of any spirit or wine desired; fill glass with charged water. If Ginger Ale is used instead of charged water it should only be with Gin, Rye and Bourbon.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM FIZZ\n\n 26          Riun, 1-1/2 parts\n           Benedictine, 2 dashes\n                                      Lemon Juice, 1 teaspoon\n                                         Sugar Syrup, 1 teaspoon\n            Shake well with ice, strain into 7 oz. tumbler, fill with\n          charged water and serve immediately.\n\n                                 HIGHBALLS\n\n            All Highballs are made as follows:\n            Use 7 oz. tumbler; add 1 lump of ice; 1 measure of\n          any spirit or wine desired; fill glass with charged water.\n          If Ginger Ale is used instead of charged water it should\n          only be with Gin, Rye and Bourbon."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-059",
+      "order": 59,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HIGHLAND COOLER",
+      "name_es": "Highland Cooler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Add 1 lump of ice to long tumbler (9 to 10 oz.) and pour in one 3 oz. measure Scotch Whiskey; add 2 dashes Angostura, the juice of one half lemon and one teaspoon powdered sugar. Stir merrily and fill with ginger-ale.",
+      "method_es": "Add 1 lump of ice to long tumbler (9 to 10 oz.) and pour in one 3 oz. measure Scotch Whiskey; add 2 dashes Angostura, the juice of one half lemon and one teaspoon powdered sugar. Stir merrily and fill with ginger-ale.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HIGHLAND COOLER\n\n            Add 1 lump of ice to long tumbler (9 to 10 oz.) and\n          pour in one 3 oz. measure Scotch Whiskey; add 2 dashes\n          Angostura, the juice of one half lemon and one teaspoon\n          powdered sugar. Stir merrily and fill with ginger-ale.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-060",
+      "order": 60,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "TOM COLLINS",
+      "name_es": "Tom Collins",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Pour one 3 oz. measure Dry Gin into shaker with ice; add juice one half lemon, one teaspoon powdered sugar; shake well and strain into 9 to 10 oz. tumbler containing one lump of ice. Fill with charged water.",
+      "method_es": "Pour one 3 oz. measure Dry Gin into shaker with ice; add juice one half lemon, one teaspoon powdered sugar; shake well and strain into 9 to 10 oz. tumbler containing one lump of ice. Fill with charged water.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM COLLINS\n\n            Pour one 3 oz. measure Dry Gin into shaker with ice;\n          add juice one half lemon, one teaspoon powdered sugar;\n          shake well and strain into 9 to 10 oz. tumbler containing\n          one lump of ice. Fill with charged water.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-061",
+      "order": 61,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "RICKEYS",
+      "name_es": "Rickeys",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RICKEYS\n\n            The majority of Rickeys are mixed as follows:\n            Use 7 oz. tumbler; juice of 1/2 lime or 1/4 lemon;\n          1 lump of ice; 1 measure of any spirit; fill with charged\n          water; garnish with slice of lemon or lime.\n                                          COUNTRY CLUB ECHOES",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-062",
+      "order": 62,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "BRANDY PUNCH",
+      "name_es": "Brandy Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Mix materials together vigorously in punch bowl; add        PAGE large piece of ice, two oranges sliced, one half pineapple and other fruits in season; serve in 4 oz. punch glasses. The above will serve 10 people, two to three servings each.   27",
+      "method_es": "Mix materials together vigorously in punch bowl; add        PAGE large piece of ice, two oranges sliced, one half pineapple and other fruits in season; serve in 4 oz. punch glasses. The above will serve 10 people, two to three servings each.   27",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY PUNCH\n\n   Brandy, 3 pints       Jamaica Rum, 1/4 pint\n     Sugar, 1 pound        Lemon, Juice of 3\n               Curacoa, I oz. meas.\nRaspberry Syrup, 2 oz. meas.             Water, 2 _{iuarts\n  Mix materials together vigorously in punch bowl; add        PAGE\nlarge piece of ice, two oranges sliced, one half pineapple\nand other fruits in season; serve in 4 oz. punch glasses.\nThe above will serve 10 people, two to three servings each.   27",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-063",
+      "order": 63,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "CHAMPAGNE CLUB PUNCH",
+      "name_es": "Champagne Club Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "garnish with sliced orange; serve in punch glasses (4 oz.). The above will serve 32 portions.",
+      "method_es": "garnish with sliced orange; serve in punch glasses (4 oz.). The above will serve 32 portions.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CHAMPAGNE CLUB PUNCH\n    Champagne, 2 quarts        Brandy, 1 quart\n     Curacoa, 6 ozs.     Orange Bitters, 1 oz.\n                 Lemons, Juice 10\n   Sugar, 1/2 pound          Charged Water, 1 quart\n   In a punch bowl stir all ingredients, EXCEPT Cham\n pagne and charged water, together with a large lump of\nice. Add Champagne and charged water; stir gently;\ngarnish with sliced orange; serve in punch glasses (4 oz.).\nThe above will serve 32 portions.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-064",
+      "order": 64,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "CLARET PUNCH",
+      "name_es": "Claret Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Mix well in punch bowl embedded in cracked ice; add fruits in season sliced and diced. The above will give 40 four ounce glasses.",
+      "method_es": "Mix well in punch bowl embedded in cracked ice; add fruits in season sliced and diced. The above will give 40 four ounce glasses.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CLARET PUNCH\n\n        Claret, 3 quarts        Curacoa, 2 ozs.\nLemons, Juice 8           Powdered Sugar, 1/2 pound\n               Charged Water, 2 quarts\n   Mix well in punch bowl embedded in cracked ice; add\nfruits in season sliced and diced. The above will give\n40 four ounce glasses.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-065",
+      "order": 65,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "FISH HOUSE PUNCH",
+      "name_es": "Fish House Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Mix materials together vigorously in punch bowl; add large piece of ice; serve in 4 oz. punch glasses. The above will serve 10 people 2 portions each. COUATRY CLUB ECHOES",
+      "method_es": "Mix materials together vigorously in punch bowl; add large piece of ice; serve in 4 oz. punch glasses. The above will serve 10 people 2 portions each. COUATRY CLUB ECHOES",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "FISH HOUSE PUNCH\n   Brandy, 1/2 pint         Peach Brandy, 1/4 pint\nJamaica Rum,1/4 pint        Powdered Sugar, 1/2 pound\n    Lemons, Juice 6            Charged Water, 3 pints\n  Mix materials together vigorously in punch bowl; add\nlarge piece of ice; serve in 4 oz. punch glasses. The above\nwill serve 10 people 2 portions each.\nCOUATRY CLUB ECHOES",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-066",
+      "order": 66,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "MILK PUNCH",
+      "name_es": "Milk Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Shake well with ice, strain into long tumbler (12 to 14 oz.), grate nutmeg over; serve with Arrowroot Biscuit or 28                          WHISKEY PUNCH Rye or Bourbon, 1 pint      Rum,8 dashes Curacoa, 8 dashes      Lemons, Juice of 4 Sugar Syrup, 2 ozs.       Charged Water, 1 quart Mix materials together in punch howl and add large piece of ice; garnish with sliced lemon and orange. The above will serve 16 four ounce portions. YE OLDE TAVERN PUNCH (HOT) Burgundy, 1 quart         Sugar Syrup, 2 teaspoons Allspice, to taste Heat Burgundy with sugar syrup until hot; pour into Tom and Jerry Mugs which have been heated in hot water before hand; dust with Allspice; serve. This gives 4 servings.",
+      "method_es": "Shake well with ice, strain into long tumbler (12 to 14 oz.), grate nutmeg over; serve with Arrowroot Biscuit or 28                          WHISKEY PUNCH Rye or Bourbon, 1 pint      Rum,8 dashes Curacoa, 8 dashes      Lemons, Juice of 4 Sugar Syrup, 2 ozs.       Charged Water, 1 quart Mix materials together in punch howl and add large piece of ice; garnish with sliced lemon and orange. The above will serve 16 four ounce portions. YE OLDE TAVERN PUNCH (HOT) Burgundy, 1 quart         Sugar Syrup, 2 teaspoons Allspice, to taste Heat Burgundy with sugar syrup until hot; pour into Tom and Jerry Mugs which have been heated in hot water before hand; dust with Allspice; serve. This gives 4 servings.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MILK PUNCH\n\n                       Whiskey or Rum, 4 ozs.\n                Sugar, 2 teaspoons       Milk, 6 ozs.\n            Shake well with ice, strain into long tumbler (12 to 14\n          oz.), grate nutmeg over; serve with Arrowroot Biscuit or\n PAGE     other slightly sweetened cracker.\n\n\n 28                          WHISKEY PUNCH\n\n             Rye or Bourbon, 1 pint      Rum,8 dashes\n             Curacoa, 8 dashes      Lemons, Juice of 4\n          Sugar Syrup, 2 ozs.       Charged Water, 1 quart\n            Mix materials together in punch howl and add large\n          piece of ice; garnish with sliced lemon and orange. The\n          above will serve 16 four ounce portions.\n\n                   YE OLDE TAVERN PUNCH (HOT)\n          Burgundy, 1 quart         Sugar Syrup, 2 teaspoons\n                          Allspice, to taste\n            Heat Burgundy with sugar syrup until hot; pour into\n          Tom and Jerry Mugs which have been heated in hot\n          water before hand; dust with Allspice; serve. This gives\n          4 servings.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-067",
+      "order": 67,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PRAIRIE OYSTER",
+      "name_es": "Prairie Oyster",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "PRAIRIE OYSTER\n\n             Using 7 oz. tumbler, carefully separate the yolk of 1\n           egg; add 2 dashes of vinegar; 1 teaspoon Worcestershire\n           Sauce; 1 teaspoon Tomato Catsup; 1 dash pepper on top.\n           Care should be taken not to break the yolk in preparing\n          this \"pick-me-up.\" Drink at one swallow.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1933-cocktails-their-kicks-and-side-kicks-by-bird-and-turner-068",
+      "order": 68,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WARD EIGHT",
+      "name_es": "Ward Eight",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye or bourbon",
+          "item_es": "rye or bourbon",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well with ice, strain into glasses; serve. This recipe serves 4. INDEX Cocktails Absinthe Special                5      Jack Rose                 8 Alexander                      17      Kentucky Egg Nog          17 Alexandrina                    17      King's Peg                13 Aperital                       II      Lupita Apple Toddy                    17      Manhattan                 8 Bacardi Grenadine               5      Manhattan, Dry            8 Beso Tropical                  11      Martini -x.               9 Bronx                           5      Martini, Dry              9 Bronx Special                   5      El Torero                 14 Buccaneer                      11      Old Fashioned             9 Chuck's Special                 6      Old Monterey               9 Champagne                       6      Orange Blossom            10 Churubusco                     11      Orange Blossom (Silver)   10 Clam Juice                      6      Palm Beach Special        18 Clover Club                     6      Prairie Oyster            28 Clover Royal                    7      Presidente                14 Coral                          17      Rum Antiquarian           15 Cuba Libre                     12      Rum-Gin                   IS Daiquirii                      12      Sazerac                   18 Don Pepe                       12      Side-Car                  10 Dutchess                        7      Stinger                   10 Escargot                       13      Swizzle-Rum               IS Green Cup                       7      Swizzle-Gin               16 Harlem                          7      Swizzle Green             16 Havana Palm                    13      Twinkle-Twinkle           16 Plawaiian                      13      Ward-Eight                28 Ideal                           8,     Whiskey Cana              16 Whiskey Special               10 Daisies Gin Daisy                      25      Whiskey Daisy             25 Fizzes Gin Fiz                        25      Brandy Fizz               25 Gin Fizz, Golden               25      Ramos Gin Fizz            18 Gin Fizz, Silver               25      Rum Fizz                  26 Sloe-Gin Fizz                 26 Punches Brandy                         27      Fish House                27 Christmas Eve                  19      Milk                      28 Champagne Club                 27      Noel Champagne Cup        20 Claret                         27      Planters                  14 Egg Nog                        19      Twelfth Night (Hot)       21 Ye Olde Tavern (Hot)           28      Whiskey",
+      "method_es": "Shake well with ice, strain into glasses; serve. This recipe serves 4. INDEX Cocktails Absinthe Special                5      Jack Rose                 8 Alexander                      17      Kentucky Egg Nog          17 Alexandrina                    17      King's Peg                13 Aperital                       II      Lupita Apple Toddy                    17      Manhattan                 8 Bacardi Grenadine               5      Manhattan, Dry            8 Beso Tropical                  11      Martini -x.               9 Bronx                           5      Martini, Dry              9 Bronx Special                   5      El Torero                 14 Buccaneer                      11      Old Fashioned             9 Chuck's Special                 6      Old Monterey               9 Champagne                       6      Orange Blossom            10 Churubusco                     11      Orange Blossom (Silver)   10 Clam Juice                      6      Palm Beach Special        18 Clover Club                     6      Prairie Oyster            28 Clover Royal                    7      Presidente                14 Coral                          17      Rum Antiquarian           15 Cuba Libre                     12      Rum-Gin                   IS Daiquirii                      12      Sazerac                   18 Don Pepe                       12      Side-Car                  10 Dutchess                        7      Stinger                   10 Escargot                       13      Swizzle-Rum               IS Green Cup                       7      Swizzle-Gin               16 Harlem                          7      Swizzle Green             16 Havana Palm                    13      Twinkle-Twinkle           16 Plawaiian                      13      Ward-Eight                28 Ideal                           8,     Whiskey Cana              16 Whiskey Special               10 Daisies Gin Daisy                      25      Whiskey Daisy             25 Fizzes Gin Fiz                        25      Brandy Fizz               25 Gin Fizz, Golden               25      Ramos Gin Fizz            18 Gin Fizz, Silver               25      Rum Fizz                  26 Sloe-Gin Fizz                 26 Punches Brandy                         27      Fish House                27 Christmas Eve                  19      Milk                      28 Champagne Club                 27      Noel Champagne Cup        20 Claret                         27      Planters                  14 Egg Nog                        19      Twelfth Night (Hot)       21 Ye Olde Tavern (Hot)           28      Whiskey",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WARD EIGHT\n\n           Rye or Bourbon, 2 parts          Lemon Juice, 1 part\n             Orange Juice, 1 part       Grenadine, 2 teaspoons\n            Shake well with ice, strain into glasses; serve. This\n          recipe serves 4.\n                          INDEX\n                              Cocktails\nAbsinthe Special                5      Jack Rose                 8\nAlexander                      17      Kentucky Egg Nog          17\nAlexandrina                    17      King's Peg                13\nAperital                       II      Lupita\nApple Toddy                    17      Manhattan                 8\nBacardi Grenadine               5      Manhattan, Dry            8\nBeso Tropical                  11      Martini -x.               9\nBronx                           5      Martini, Dry              9\nBronx Special                   5      El Torero                 14\nBuccaneer                      11      Old Fashioned             9\nChuck's Special                 6      Old Monterey               9\nChampagne                       6      Orange Blossom            10\nChurubusco                     11      Orange Blossom (Silver)   10\nClam Juice                      6      Palm Beach Special        18\nClover Club                     6      Prairie Oyster            28\nClover Royal                    7      Presidente                14\nCoral                          17      Rum Antiquarian           15\nCuba Libre                     12      Rum-Gin                   IS\nDaiquirii                      12      Sazerac                   18\nDon Pepe                       12      Side-Car                  10\nDutchess                        7      Stinger                   10\nEscargot                       13      Swizzle-Rum               IS\nGreen Cup                       7      Swizzle-Gin               16\nHarlem                          7      Swizzle Green             16\nHavana Palm                    13      Twinkle-Twinkle           16\nPlawaiian                      13      Ward-Eight                28\nIdeal                           8,     Whiskey Cana              16\n                     Whiskey Special               10\n\n                                Daisies\nGin Daisy                      25      Whiskey Daisy             25\n                                 Fizzes\nGin Fiz                        25      Brandy Fizz               25\nGin Fizz, Golden               25      Ramos Gin Fizz            18\nGin Fizz, Silver               25      Rum Fizz                  26\n                     Sloe-Gin Fizz                 26\n\n                               Punches\nBrandy                         27      Fish House                27\nChristmas Eve                  19      Milk                      28\nChampagne Club                 27      Noel Champagne Cup        20\nClaret                         27      Planters                  14\nEgg Nog                        19      Twelfth Night (Hot)       21\nYe Olde Tavern (Hot)           28      Whiskey "
+    }
+  ]
+}

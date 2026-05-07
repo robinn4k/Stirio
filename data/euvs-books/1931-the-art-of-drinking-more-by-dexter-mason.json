@@ -1,0 +1,1459 @@
+{
+  "book_id": "1931-the-art-of-drinking-more-by-dexter-mason",
+  "metadata": {
+    "title": "Tipple and Snack — Good Things to Eat and Better Things to Drink",
+    "author": "Dexter Mason (author of 'The Art of Drinking')",
+    "year": 1931,
+    "language": "en",
+    "language_name": "Inglés",
+    "publisher": "Farrar & Rinehart, Incorporated",
+    "city": "New York",
+    "edition": "First Edition (1931)",
+    "source_file": "1931 The Art of Drinking More by Dexter Mason.txt",
+    "notes": "Tipple and Snack — guía de entretenimiento durante la Prohibición. Pares cócteles con canapés y snacks. Cócteles agrupados por base spirit (Applejack, Brandy, Champagne, Gin, Rum, Whiskey, Vodka). Open con un diálogo simulado entre dos cocineros sobre la historia de la cocina francesa. Skeleton custom + parser para 'N parts X' / '1~ parts Y' (OCR de fracciones rotas). 43 recetas, ~67% (29/43) con ingredientes. Algunas amounts presentan OCR (`s brandy`, `0.0 lemon juice`) por OCR severo en este libro."
+  },
+  "sections": [
+    {
+      "order": 1,
+      "type": "front_matter",
+      "title": "Foreword + Bachelor Kitchen + Canapes",
+      "title_es": "Prefacio + cocina de soltero + canapés",
+      "content_original": "Dexter Mason (autor previo de 'The Art of Drinking') publica 'Tipple and Snack' en 1931, presentando recetas de cócteles emparejadas con canapés y snacks. Open con un diálogo entre dos cocineros sobre la historia de la cocina francesa: 'After the wars in Italy, Francois Premier brought back artists like DaVinci and Cellini... but he brought also the first secular cooks.' Sukiaki, Oyster Roast, Spaghetti Party, Sadie Lou's, Devil's Tongue.",
+      "content_es": "Dexter Mason publica 'Tipple and Snack' en 1931 — guía de entretenimiento que empareja cócteles con canapés. Cócteles agrupados por base spirit. Inspiración historiográfica francesa."
+    },
+    {
+      "order": 2,
+      "type": "recipes_section",
+      "title": "Cocktails",
+      "title_es": "Cócteles",
+      "content_original": null,
+      "content_es": null
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-001",
+      "order": 1,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "THE SIDE CAR",
+      "name_es": "The Side Car",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "s brandy",
+          "item_es": "s brandy",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.0",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake vigorously with Plenty of cracked ice. Toast some bread, first clip-",
+      "method_es": "Shake vigorously with Plenty of cracked ice. Toast some bread, first clip-",
+      "glassware": null,
+      "garnish": "[ 12]",
+      "page_reference": null,
+      "raw_text": "THE SIDE CAR\n            1 part Cointreau\n            3 parts brandy\n            _0 part lemon juice\n            Shake vigorously with Plenty of cracked ice.\n\n                          Toast some bread, first clip-\n                       ping off the crusts. On each slice\n                       lay thin slivers of good dill pickle.\n                       Sprinkle with grated snappy or\n                       Parmesan cheese, and bake in a\n                       hot oven until the cheese melts.\n\n\n\n\n                                   [ 12]"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-002",
+      "order": 2,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "THE LOUISVILLE",
+      "name_es": "The Louisville",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "es benedictine",
+          "item_es": "es benedictine",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Let them cool a little so that you",
+      "method_es": "Let them cool a little so that you",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "THE LOUISVILLE\n    1 part brandy\n    1 dash of grenadine\n    2 dashes Benedictine\n    1 teaspoon of lime juice.\n    Sti_r in a large bar-glass with several cubes of\n       ice, and strain into cold cocktail glasses.\n\n\n          SAUSAGE PIE\n                    These are famous at the Louis-\n                 ville Hunt Club. Fry some small\n                 link sausage until they are crisp.\n                 Let them cool a little so that you\n                 can handle them; roll each one\n                 up in thin pie pastry, and bake in\n                 quick oven until the pastry is\n                 brown.\n                    These are a little trouble to\n                 make, but you will find them a\n                 huge success, so be sure to make\n                 plenty for the crowd.\n\n                             [ 13]\n             TIPPLE        AND       SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-003",
+      "order": 3,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "ROYAL HAWAIIAN",
+      "name_es": "Royal Hawaiian",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Serve with this, rounds of bread toasted",
+      "method_es": "Serve with this, rounds of bread toasted",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ROYAL HAWAIIAN\n\n    1 part sloe gin\n    1 part Italian vermouth\n    1 part French vermouth\n    1 dash Angostura bitters\n    A twist of orange peel.\n\n\n\n         WATERCRESS DAINTIES\n\n                 Chop up some fresh watercress\n              that has been soaked for a time\n              in iced salt water, and thoroughly\n              dried with a clean dishtowel. To\n              a cup of this chopped cress, add\n              a teaspoon of chopped chive, and\n              a tablespoon of mayonnaise.\n              Spread the mixture on thin\n              squares of bread that have been\n              spread with sweet butter, or\n              cream cheese.\n\n\n\n                        [ 14]\n              TIPPLE         AND      SNACK\n\n\n\n\nRUSSIAN\n        Frost the inside of an iced cocktail glass\n     with granulated sugar. Dash in a flavor of\n      Angostura bitters. Add a jigger of good\n      brandy, and a twist of lemon peel. Fill the\n    · glass with iced champagne.\n       This is expensive, but most delicious.\n\n\n\nCANAPE\n\n        Serve with this, rounds of bread toasted\n     on one side, and spread heavily with black\n     caviare, on the untoasted side. Add a dash\n     of lemon juice, and slide in the oven for a\n     moment. This will bring out the full rich\n     flavor of the caviare.\n\n\n\n\n                             [ 15 ]\n             TIPPLE                     A    ND    SNACK\n                         ............       -~- ......   --   _.__......"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-004",
+      "order": 4,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HOT BRICK",
+      "name_es": "Hot Brick",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sweet butter",
+          "item_es": "sweet butter",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "s confectioners' sugar",
+          "item_es": "s confectioners' sugar",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "s of whiskey; either scotch, rye",
+          "item_es": "s of whiskey; either scotch, rye",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Toast crisp some crusted slices",
+      "method_es": "Toast crisp some crusted slices",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOT BRICK\n\n    1 part sweet butter\n    2 parts confectioners' sugar\n    Cream these together to a smooth consistency.\n      Then add:\n    2 jiggers of whiskey; either Scotch, rye,\n      Bourbon, or an intelligently aged corn-\n      whiskey.\n    Beat these together, and fill the glass with\n      boiling water.\n\n                  With this drink, which is deli-\n               cious, and altogether satisfying\n               if you are chilled through,\n               nothing is more succulent than\n               cinnamon toast.\n                Toast crisp some crusted slices\n              of white bread. Spread them\n              generously with sweet butter and\n              sprinkle with a combination of\n              one-half powdered cinnamon, and\n              one-half confectioners' sugar.\n\n\n                            [ 16]\n             TIPPLE         AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-005",
+      "order": 5,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "SAZERAC COCKTAIL",
+      "name_es": "Sazerac Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rye whiskey",
+          "item_es": "rye whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "es of anisette",
+          "item_es": "es of anisette",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Put the number of stem cocktail glasses",
+      "method_es": "Put the number of stem cocktail glasses",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "SAZERAC COCKTAIL\n\n    1 jigger of Rye whiskey\n    1 dash of absinthe\n    2 dashes of anisette\n    1 dash of Angostura bitters.\n\n\n\n         OLD FAVORITES\n                  Cut some rounds of bread, and\n               pile them with grated American\n               cheese. If the cheese that you\n               grate is quite stale, the canapes\n               will have a rich flavor. Fry these\n               rounds in sizzling hot butter, un-\n               til the cheese melts. Serve pip-\n               ing hot.\n\n\n\n\n                          [ 17]\nBRUT CHAMPAGNE COCKTAIL\n      Put the number of stem cocktail glasses\n    that you will need on a tray. Pack each glass\n    with shaved ice. Place the tray in the ice-box,\n    and let it stand until you are ready for the\n    cocktails. Be sure that the outsides of the\n    glasses have been wiped dry before you fill\n    them with ice, and afterwards do not touch\n    them with your fingers. If these directions\n    are followed carefully, the glasses will frost.\n       When you are ready, shake the ice from\n    the glasses, place in each one a lump of sugar,\n    and squirt onto this a dash of Angostura\n    bitters. Now fill the glasses with well chilled\n    champagne.\n      Roasted unsalted almonds, crushed, mixed\n    with anchovy paste, and spread upon thin\n    unsalted crackers develop the luxury of this\n    cocktail.\n\n\n\n\n                            [ 18]\n            TIPPLE          AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-006",
+      "order": 6,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "GIMLET",
+      "name_es": "Gimlet",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "rose bottled lime juice",
+          "item_es": "rose bottled lime juice",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill champagne glasses with shaved ice, and pour the mixture over the ice Garnish with a peppermint cherry.",
+      "method_es": "Fill champagne glasses with shaved ice, and pour the mixture over the ice Garnish with a peppermint cherry.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "GIMLET\n    1 part gin\n    1 part Rose bottled lime juice\n    Simple syrup to taste\n    Fill champagne glasses with shaved ice, and\n       pour the mixture over the ice\n    Garnish with a peppermint cherry.\n\n\n\n                 With this serve very thin slices\n               of smoked sturgeon that have\n               been dusted with white pepper\n               and finely chopped chives.\n\n\n\n\n                          [ 19]"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-007",
+      "order": 7,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "THE SHOT GUN",
+      "name_es": "The Shot Gun",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey (scotch or rye)",
+          "item_es": "whiskey (scotch or rye)",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix in a tall glass half filled with finely Put the slices together in the",
+      "method_es": "Mix in a tall glass half filled with finely Put the slices together in the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "THE SHOT GUN\n    1 part French vermouth\n    1 part Italian vermouth\n    1 part whiskey (Scotch or rye)\n    1 dash of orange bitters\n    1 dash of Angostura bitters\n    Mix in a tall glass half filled with finely\n      chopped ice.\n\n\n\n         SADIE LOU'S\n\n                 Take four slices of bread the\n               same size. Spread the first slice\n               with cream cheese, the second\n               with mayonnaise, the third with\n               roquefort creamed with butter.\n               Put the slices together in the\n               order spread, and pack them close\n               with the palm of your hand.\n               Now slice into slivers, and serve\n               with sweet pickled onions.\n\n\n                           [ 20]\n              TIPPLE           AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-008",
+      "order": 8,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "APPLE JIGGER",
+      "name_es": "Apple Jigger",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "applejack",
+          "item_es": "applejack",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix in a tall glass half filled with cracked ice, strain into cocktail glasses, and twist a",
+      "method_es": "Mix in a tall glass half filled with cracked ice, strain into cocktail glasses, and twist a",
+      "glassware": null,
+      "garnish": "SNACK :~-----~w\"\"<w~   . ..:;",
+      "page_reference": null,
+      "raw_text": "APPLE JIGGER\n    1 part applejack\n    0 part Italian vermouth\n    Mix in a tall glass half filled with cracked ice,\n      strain into cocktail glasses, and twist a\n      piece of lemon peel on each drink.\n\n\n\n                    Spread some Matzos crackers\n                 with butter, sprinkle generously\n                 with parmesan cheese, and run\n                 in the oven until the cheese melts\n                 and browns.\n\n\n\n\n                             [ 21]\n~-                                               TIPPLE                                       AND\n::::;: . . . . . . . . . . . . . - ................ ___. . _.. . . . . . . . . . . . . . . . . .\n                                                                                                         SNACK\n                                                                                                   :~-----~w\"\"<w~   . ..:;"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-009",
+      "order": 9,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "COLOMBIA SKIN",
+      "name_es": "Colombia Skin",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "confectioners' sugar",
+          "item_es": "confectioners' sugar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir in a glass filled with cracked ice, and pour into a glass in which has been placed",
+      "method_es": "Stir in a glass filled with cracked ice, and pour into a glass in which has been placed",
+      "glassware": null,
+      "garnish": "CHEESE BOARD A novelty is to serve a cheese board with cocktails. A clean bread board will .do. On it place various ·kinds of cheese; Ched- dar, Roquefort, Brie, Camem- bert, English Stilton. Be sure to have plenty of saltines and plain water crackers upon which the cheese may be spread. [ 22] TIPPL",
+      "page_reference": null,
+      "raw_text": "COLOMBIA SKIN\n                       1 jigger of Jamaica rum\n                       1 teaspoon confectioners' sugar\n                       Stir in a glass filled with cracked ice, and\n                         pour into a glass in which has been placed\n                         a slice of lemon. Grate a little nutmeg\n                         over each drink.\n\n\n\n                                        CHEESE BOARD\n                                                            A novelty is to serve a cheese\n                                                          board with cocktails. A clean\n                                                          bread board will .do. On it place\n                                                          various ·kinds of cheese; Ched-\n                                                          dar, Roquefort, Brie, Camem-\n                                                          bert, English Stilton. Be sure\n                                                          to have plenty of saltines and\n                                                          plain water crackers upon which\n                                                          the cheese may be spread.\n\n\n\n\n                                                                                            [ 22]\n                                  TIPPLE                AND        SNACK\n...............................   ~     ..........   ----- ... - _ ......\n                                                           ...."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-010",
+      "order": 10,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HUNT CLUB COCKTAIL",
+      "name_es": "Hunt Club Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "corn whiskey",
+          "item_es": "corn whiskey",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "peach brandy",
+          "item_es": "peach brandy",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": "Ripe olives stuffed with an- chovies, and potato chips go best with this potent drink. [ 23]",
+      "page_reference": null,
+      "raw_text": "HUNT CLUB COCKTAIL\n\n                 1 part corn whiskey\n                 0 part Italian vermouth\n                 1 dash peach brandy\n                 A dash of Angostura bitters\n                 Twist a piece of orange peel into each glass.\n\n\n\n                                     Ripe olives stuffed with an-\n                                   chovies, and potato chips go best\n                                   with this potent drink.\n\n\n\n\n                                                      [ 23]\n,vl{((f       TIPPLE            AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-011",
+      "order": 11,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "OJEN COCKTAIL",
+      "name_es": "Ojen Cocktail",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": ".5",
+          "unit": "part",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, and serve frapped. Put some good Swiss cheese",
+      "method_es": "Shake well, and serve frapped. Put some good Swiss cheese",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "OJEN COCKTAIL\n     1 part gin\n     °}~ part Ojen (New Orleans absinthe)\n     ~  part Italian vermouth\n     Shake well, and serve frapped.\n\n\n\n          SWISS ONION CHIPS\n\n                      Put some good Swiss cheese\n                  and some Bermuda onion, about\n                  half and half, through the meat\n                  grinder.    Spread on buttered\n                  slices of bread, and cut into little\n                  sandwich squares. These are ex-\n                  ceptionally delicious,\n\n\n\n\n                             [ 24]\nQlfkf\n   -\n...................\n                           ........   __T_.,,,._"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-012",
+      "order": 12,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "I P P L E A ND SNAC K",
+      "name_es": "I P P L E A Nd Snac K",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": "_ ..... ........,,.._ _....................... .....           .....           -~",
+      "page_reference": null,
+      "raw_text": "I P P L E A ND SNAC K\n                                                 _ ..... ........,,.._ _.......................\n                                                .....           .....           -~",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-013",
+      "order": 13,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "PORTO RICO",
+      "name_es": "Porto Rico",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "molasses",
+          "item_es": "molasses",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well, and serve in glasses each contain-",
+      "method_es": "Shake well, and serve in glasses each contain-",
+      "glassware": null,
+      "garnish": "Slice thin some smoked tongue; spread with English mustard, red pepper and olive oil. Pack the slices together, and let them stand in the ice-box for several hours. Then, pull apart and fry in butter. Serve a piece on thin slices ·of brown bread. [ 25]",
+      "page_reference": null,
+      "raw_text": "PORTO RICO\n\n                      1 part Jamaica rum\n                      1 teaspoon molasses\n                      1 dash of Angostura bitters\n                      Shake well, and serve in glasses each contain-\n                        ing a twist of lemon and of orange peel.\n\n\n\n                            THE DEVIL'S TONGUE\n                                               Slice thin some smoked tongue;\n                                           spread with English mustard, red\n                                           pepper and olive oil. Pack the\n                                           slices together, and let them stand\n                                           in the ice-box for several hours.\n                                           Then, pull apart and fry in\n                                           butter. Serve a piece on thin\n                                           slices ·of brown bread.\n\n\n\n\n                                                             [ 25]\n~\n=~~~::::~~~\n            TIPPLE          AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-014",
+      "order": 14,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "MANILA HOTEL",
+      "name_es": "Manila Hotel",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "curai;ao",
+          "item_es": "curai;ao",
+          "amount": ".5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": ".5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": ".5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Stir in a tall glass half filled with ice and strain into glasses. mixed with mayonnaise and",
+      "method_es": "Stir in a tall glass half filled with ice and strain into glasses. mixed with mayonnaise and",
+      "glassware": null,
+      "garnish": "-~   .... AND . .-.. =~         -   SNACK ....~..................................",
+      "page_reference": null,
+      "raw_text": "MANILA HOTEL\n    1 part brandy\n    ~  part Curai;ao\n    ~  part maraschino\n    ~ teaspoon lemon juice\n    Stir in a tall glass half filled with ice and\n      strain into glasses.\n\n\n\n         DEEP SEA DELIGHTS-\n\n                 Chopped lobster or crab meat\n               mixed with mayonnaise and\n               anchovy paste, and spread upon\n               unsalted soda crackers is the\n               favorite tropical canape with this\n               cocktail.\n\n\n\n\n                          [ 26]\nTIPPLE   AND   SNACK\n\n\n\n\nCOOLERS\n,\n~=--=~-\n                           TIPPLE\n             ........-.. -.. . .\n                               -~   ....\n                                                AND\n                                            . .-..\n                                           =~         -   SNACK\n                                                      ....~.................................."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-015",
+      "order": 15,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "TOM COLLINS",
+      "name_es": "Tom Collins",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "filled with ice cubes, and pour in a bottle of",
+      "method_es": "filled with ice cubes, and pour in a bottle of",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TOM COLLINS\n\n            Place half a lemon and a tablespoon of\n        sugar into a mixing glass. Crush this up\n        with a muddler, and add a generous jigger\n        of gin, then fill the glass with ice, and stir\n        well. Now pour the mixture into a tall glass\n        filled with ice cubes, and pour in a bottle of\n        club soda or White Rock.\n\n\n    BRANDY COLLINS\n\n           Brandy Collins is made the same as Tom\n        c.ollins, except that you substitute brandy for\n        gm.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-016",
+      "order": 16,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "WINE COLLINS",
+      "name_es": "Wine Collins",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": "[ 29]",
+      "page_reference": null,
+      "raw_text": "WINE COLLINS\n           This is a very light drink, but quite re-\n        freshing. It is made the same as a Tom\n        Collins except that you substitute two ( 2)\n        jiggers of a good red wine.\n\n\n                                            [ 29]\n            TIPPLE        AND      SNACK\n\n\n\n\nRUM COOLER\n      Ditto again substituting Jamaica rum for\n    gin.\n\n\n\nBACARDI COOLER\n\n    Again ditto, substituting Bacardi for gin,\n    and lime for the lemon. However, use a\n    whole lime to each drink.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-017",
+      "order": 17,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "JUNIOR AIDE-DE-CAMP",
+      "name_es": "Junior Aide-De-Camp",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Fill a tall glass with shaved ice. Pour in",
+      "method_es": "Fill a tall glass with shaved ice. Pour in",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "JUNIOR AIDE-DE-CAMP\n\n      Fill a tall glass with shaved ice. Pour in\n    a jigger of fresh lime juice, and one of\n    Bacardi rum. Fill up the glass with ginger\n    beer ; ( gingerale will not do) .\n\n\n\n\n                          [ 30]\n                       TIPPLE           AND      SNACK\n....   - .. ---",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-018",
+      "order": 18,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "TROPIC COOLER",
+      "name_es": "Tropic Cooler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TROPIC COOLER\n\n                 Pare a whole lemon in one piece, and drop\n              the peel into a tall glass. Add a generous\n              jigger of gin, and let this stand a few minutes\n              so that the gin will draw out the lemon oil.\n              Now fill the glass with cracked ice, and pour\n              in a good gingerale.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-019",
+      "order": 19,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "UNION CLUB COOLER",
+      "name_es": "Union Club Cooler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": "[ 31 ]",
+      "page_reference": null,
+      "raw_text": "UNION CLUB COOLER\n\n                 Pare a lemon, and throw the peel in a\n              glass. Add a jigger of dry gin, and let\n              stand for a few minutes to draw the essential\n              oil of the lemon. Fill the glass with cubes\n              of ice, and pour in a bottle of club soda.\n\n\n\n\n                                      [ 31 ]\n~                       TIPPLE                 AND          SNACK\n:::::--- ...... _ .:. ~......-~:- -::-~~~...;.:....,.. ..._-...;:..;::::;,;--~\n\n\n\nSACRAMENTO COOLER\n\n             Beat up an egg, together with a teaspoon\n           of confectioners' sugar and the juice of half\n           a lemon. Pour this into a tall glass and fill\n           up with cider, stiring well as you add the\n           cider. Grate some nutmeg over the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-020",
+      "order": 20,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "INDIA COOLER",
+      "name_es": "India Cooler",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put several cubes of ice into a tall glass. Add the juice of a lime, one jigger of French",
+      "method_es": "Put several cubes of ice into a tall glass. Add the juice of a lime, one jigger of French",
+      "glassware": null,
+      "garnish": "[ 32] [ 33] TIPPLE   AND   SNACK (The Wine Press) [ 34]",
+      "page_reference": null,
+      "raw_text": "INDIA COOLER\n\n             Put several cubes of ice into a tall glass.\n           Add the juice of a lime, one jigger of French\n           vermouth and a jigger of gin. Fill the glass\n           with club soda or White Rock.\n\n\n\n\n                                             [ 32]\n                 TIPPLE           AND       SNACK\n\n\n\n\n                 WINE GLASSES\n   In Cyrus Redding's \"History and Description of\nWines\" there is an excellent description in regard\nto modern vessels. To make a perfect wine-glass\nrequires an artist, a philosopher, and an antiquary.\nWe must, therefore, be content with what we find,\nsome of which approach perfection very nearly. A\ndelicate wine is enhanced in value by a delicate glass.\nMadeiras and Sherries should be drunk in a thin\nUNCUT glass with a stem like a straw and a lip\nlike a lilly. The glass should be light as a bubble,\nand made a clear crystal; Hock glasses should have\na round cup like a Dutch tulip, a good grasping stem,\nand, if ornamented at all, with an eagle's claw at\nthe base.\n   Dark green suggests coolness, and is appropriate\nfor cool wines. Burgundy would not have the\nproper flavor in a green glass, because the impression\nmade on the eye affects not a little the sense of taste.\n   For champagne, much depends upon fancy. If\nyou like a pungent effervescing wine, the old fash-\nioned, long bodied Minster glass is the best; if a\nstill wine, the broad, flat .dish-shaped pattern. For\nflavor and aroma this pattern is the better of the two.\n\n                                [ 33]\n                                   TIPPLE   AND   SNACK\n................................\n\n\n\n\n  Sauterne should be drunk from thin white glasses\nwith round full cups and long slender stems. Bur-\ngundy and costly clarets need thin crystal glasses\nwith full generous mouths.\n  Liqueurs require small, heavy knobby glasses as\nexpensively cut as possible. Heavy sweet Port is\nbest in a heavy cut glass, but dry delicate wines are\nbest in thin delicate clear glasses.\n\n                                            (The Wine Press)\n\n\n\n\n                                        [ 34]\nTIPPLE   AND   SNACK\n\n\n\n\nHEATERS\n             TIPPLE          AND       SNACK\n\n\n\n\nHOT TOM .AND JERRY\n\n      Beat up an egg in a bowl. Add enough\n    confectioners' sugar to make a thick paste.\n      Wann a mug, or a thick glass with boiling\n    water. Put a tablespoon of the Tom and\n    Jerry paste into the glass, add a jigger of\n    brandy and .0 jigger of rum. Fill the glass\n    with scalding milk, stirring the while to be\n    sure the paste is dissolved. Grate some nut-\n    meg over the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-021",
+      "order": 21,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HOT BUTTER RUM",
+      "name_es": "Hot Butter Rum",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Put a spoon in the glass so that it will not Fill the glass with boiling water and serve",
+      "method_es": "Put a spoon in the glass so that it will not Fill the glass with boiling water and serve",
+      "glassware": null,
+      "garnish": "- -- .... AND ~----- -~ SNACK",
+      "page_reference": null,
+      "raw_text": "HOT BUTTER RUM\n\n       Place a dessert spoon of sugar into a glass.\n    Put a spoon in the glass so that it will not\n    break, pour in a little hot water to melt the\n    sugar. When the sugar is dissolved, add a\n    jigger of rum and a pat of sweet butter.\n    Fill the glass with boiling water and serve\n    hot.\n\n\n\n                            [ 37]\n~ -\n.....,._      ...   ......\n                             TIPPLE\n                                 - --\n                               ....\n                                         AND\n                                        ~----- -~\n                                                 SNACK",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-022",
+      "order": 22,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "HOT MILK PUNCH",
+      "name_es": "Hot Milk Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOT MILK PUNCH\n\n             Place a teaspoon of sugar in a glass, dis-\n           solve the sugar with a little hot water. Add\n           a jigger of rum, and fill the glass with scald-\n           ing milk. Grate some nutmeg over the top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-023",
+      "order": 23,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HOT SPICED RUM",
+      "name_es": "Hot Spiced Rum",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "Add a jigger of rum, a pinch of cinnamon, add a pat of butter, stir well and serve.",
+      "method_es": "Add a jigger of rum, a pinch of cinnamon, add a pat of butter, stir well and serve.",
+      "glassware": null,
+      "garnish": "[ 38] - - ---- --- - TIPPLE      AND    SNACK",
+      "page_reference": null,
+      "raw_text": "HOT SPICED RUM\n\n             Dissolve a teaspoon of sugar in a glass.\n           Add a jigger of rum, a pinch of cinnamon,\n           one of clove, one of allspice, and one of\n           ginger. Fill the glass with boiling water,\n           add a pat of butter, stir well and serve.\n\n\n\n\n                                         [ 38]\n\n\n\n\n                                            - - ---- --- -\n                                                TIPPLE      AND    SNACK\n........................   -   ............ ~",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-024",
+      "order": 24,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "HOT EGGNOG",
+      "name_es": "Hot Eggnog",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "HOT EGGNOG\n\n                              Break an egg into a cocktail shaker. Add\n                           a d.essertspoon of sugar, and a jigger of\n                           rum or whiskey. Fill the shaker with boiling\n                           milk, wrap the shaker in a towel, and shake\n                           vi.gorously. Strain into a glass with a spoon\n                           in it so it will not break, and serve with .a\n                           dash of nutmeg on top.",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-025",
+      "order": 25,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "HOT WHISKEY PUNCH",
+      "name_es": "Hot Whiskey Punch",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": "[ 39] -   - --   - --    - -- TIPPLE AND --~ SNACK",
+      "page_reference": null,
+      "raw_text": "HOT WHISKEY PUNCH\n\n                             Dissolve a teaspoon of sugar in a glass, add\n                           a jigger of whiskey (Scotch or rye) and a\n                           pinch of clove and cinnamon. Fill the glass\n                           with boiling water, and drop in a slice of\n                           lemon, and one of orange.\n\n\n\n\n                                                           [ 39]\n\n\n\n\n                                                -   - --   - --    - --\n-~ _\n~---   .......\n                               TIPPLE\n                 .................   ...,,,....,,,   __ .........\n                                                                       AND\n                                                                     --~\n                                                                             SNACK",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-026",
+      "order": 26,
+      "section_title": "Cocktails",
+      "category": "toddy",
+      "name_original": "HOT APPLE TODDY",
+      "name_es": "Hot Apple Toddy",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s of brandy",
+          "item_es": "s of brandy",
+          "amount": "7",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Put a wine glass of claret seasoned with a let it come to a boil. Beat the yolks of two Pour all this into a fire-proof",
+      "method_es": "Put a wine glass of claret seasoned with a let it come to a boil. Beat the yolks of two Pour all this into a fire-proof",
+      "glassware": null,
+      "garnish": "[ 40 ]",
+      "page_reference": null,
+      "raw_text": "HOT APPLE TODDY\n\n       Place a small baked apple in the bottom of\n    a squat thick glass. Pour a teaspoon of\n    simple syrup over this, then two jiggers\n    applejack. Fill the glass with boiling water.\n\n\n\nMULLED CLARET AND EGGS\n\n       Put a wine glass of claret seasoned with a\n    pinch of cloves and cinnamon on the fire and\n    let it come to a boil. Beat the yolks of two\n    eggs frothy, and stir in a tablespoon of con-\n    fectioners' sugar. As soon as the wine comes\n    to a boil POUR THE WINE OVER THE\n    EGGS, stirring constantly. Pour into a glass\n    and serve,\n\n\n\n\n                                                                    [ 40 ]\n            TIPPLE          AND      SNACK\n\n\n\n\nCAFE BROUILL:E\n\n    (For six persons)\n    Peel of one large orange\n    Peel of one large lemon\n    18 cloves\n    1 stick of cinnamon\n    7 lumps of sugar\n    7 jiggers of brandy.\n\n\n                  Pour all this into a fire-proof\n               bowl, or chafing dish. Light it,\n               and let it burn out, stirring con-\n               stantly. Now divide the mixture\n               among six demi-tasse cups of\n               strong coffee.\n\n\n\n\n                          [ 41]\nPUNCHES AND CUPS\n         AND FIZZES\n\n\n\n\n             -~~   --   ~-\n,                                                    TIPPLE              AND     SNACK\n           -\n::::..,..;. ......... ....-.;;:::::;:.,_-_-_-...;::_-_-_,,. .... ~--~-"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-027",
+      "order": 27,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "CURAQAO PUNCH",
+      "name_es": "Curaqao Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "cura<;ao",
+          "item_es": "cura<;ao",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix with plenty of ice, strain to a tall glass,",
+      "method_es": "Mix with plenty of ice, strain to a tall glass,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "CURAQAO PUNCH\n\n                 1 jigger Cura<;ao\n                 0 jigger brandy\n                 1 teaspoon of lemon juice\n                 1 teaspoon of simple syrup\n                 Mix with plenty of ice, strain to a tall glass,\n                   decorate with fruits in season and serve."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-028",
+      "order": 28,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "ROMAN PUNCH",
+      "name_es": "Roman Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "cura<;ao",
+          "item_es": "cura<;ao",
+          "amount": "0",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "raspberry syrup",
+          "amount": "0",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Mix together with ice, and pour into a tall",
+      "method_es": "Mix together with ice, and pour into a tall",
+      "glassware": null,
+      "garnish": "[ 45] . SNACK",
+      "page_reference": null,
+      "raw_text": "ROMAN PUNCH\n                  1 jigger of rum\n                  0 jigger of brandy\n                  0 jigger of Cura<;ao\n                  0 jigger of raspberry syrup\n                  1 t easpoon of simple syrup\n                  1 teaspoon of lemon juice.\n                  Mix together with ice, and pour into a tall\n                    glass, decorate with pineapple and straw-\n                    berries and serve.\n\n\n\n                                                                         [ 45]\n,~\n ~..tf~j!b          TIPPLE             AND\n                                                .\n                                                    SNACK\n:.   .... ... ;;~--:::c-...Y .........~...-: ...- ...· ... ~~=-~"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-029",
+      "order": 29,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "BRANDY PUNCH",
+      "name_es": "Brandy Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lime juice",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a tall glass filled with shaved ice,",
+      "method_es": "Pour into a tall glass filled with shaved ice,",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BRANDY PUNCH\n\n         1 jigger of brandy\n         1 teaspoon of lime juice\n         1 teaspoon of simple syrup\n         Pour into a tall glass filled with shaved ice,\n           decorate with fruit and serve."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-030",
+      "order": 30,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "MILK PUNCH",
+      "name_es": "Milk Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orgeat syrup",
+          "item_es": "orgeat syrup",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a tall glass filled with cubes of ice, add milk to fill the glass, stir well, and shake some nutmeg over the top. Pour into a tall glass, and fill up with a good",
+      "method_es": "Pour into a tall glass filled with cubes of ice, add milk to fill the glass, stir well, and shake some nutmeg over the top. Pour into a tall glass, and fill up with a good",
+      "glassware": null,
+      "garnish": "[ 46]",
+      "page_reference": null,
+      "raw_text": "MILK PUNCH\n\n         1 large jigger of brandy\n         0 jigger of rum\n         Pour into a tall glass filled with cubes of ice,\n           add milk to fill the glass, stir well, and\n           shake some nutmeg over the top.\n\n\n\n\n                                    [ 46]\n             TIPPLE          AND       SNACK\n\n\n\n\nPORT PUNCH\n\n    1 tablespoon of orgeat syrup\n    1 tablespoon of simple syrup\n    Yz tablespoon of lemon juice\n    Pour into a tall glass, and fill up with a good\n       port wine."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-031",
+      "order": 31,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "RUM PUNCH",
+      "name_es": "Rum Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a glass containing several cubes",
+      "method_es": "Pour into a glass containing several cubes",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "RUM PUNCH\n\n    1 jigger of rum\n    1 tablespoon of lemon juice\n    1 tablespoon of simple syrup\n    Pour into a glass containing several cubes\n      of ice, decorate with fruits and serve.\n\n\n\n\n                             [ 47]\n             TIPPLE          AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-032",
+      "order": 32,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "ORGEAT PUNCH",
+      "name_es": "Orgeat Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orgeat ·",
+          "item_es": "orgeat ·",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour this into a tall glass containing several",
+      "method_es": "Pour this into a tall glass containing several",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "ORGEAT PUNCH\n\n    1 jigger of whiskey\n    1 jigger of orgeat ·\n    The juice of half a lemon\n    Pour this into a tall glass containing several\n      cubes of ice, and fill up with a good claret."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-033",
+      "order": 33,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "NEW ORLEANS PUNCH",
+      "name_es": "New Orleans Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "bourbon",
+          "item_es": "bourbon",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "creme d.e ca~ao",
+          "item_es": "creme d.e ca~ao",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "applejack",
+          "item_es": "applejack",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "s of whiskey",
+          "item_es": "s of whiskey",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "s of grenadine",
+          "item_es": "s of grenadine",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Pour into a slender glass, decorate with fruit Fill the glass with good cold milk and shake Pour into a tall glass containing several cubes",
+      "method_es": "Pour into a slender glass, decorate with fruit Fill the glass with good cold milk and shake Pour into a tall glass containing several cubes",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW ORLEANS PUNCH\n\n     1 jigger of Bourbon\n     1 jigger of brandy\n    ·~ jigger of rum\n    The juice of half a lemon\n     1 tablespoon of simple syrup\n     Pour into a slender glass, decorate with fruit\n       and serve.\n\n\n\n\n                            [ 48]\n\n\n\n\n                              --------~--~-----=---\n       -   --------\n\n\n\n              TIPPLE           AND       SNACK\n\n\n\n\nST. LOUIS PUNCH\n\n    1 jigger creme d.e ca~ao\n    1 jigger of applejack\n    1 teaspoon of simple syrup\n    Fill the glass with good cold milk and shake\n    Pour into a tall glass containing several cubes\n      of ice, and sprinkle a little nutmeg over the\n      top.\n\n\n\nMcKINLEY PUNCH\n\n     2 jiggers of whiskey\n     2 jiggers of grenadine\n     The juice of two lemons\n     Several cubes of ice in the glass, and fill with\n       seltzer.\n\n\n\n\n                              [ 49]\nflit_ _ _\n~~   .....   ..,_ ......   ......"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-034",
+      "order": 34,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "TIPPLE AND S NA CK",
+      "name_es": "Tipple And S Na Ck",
+      "yield": null,
+      "ingredients": [],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "TIPPLE   AND     S NA CK",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-035",
+      "order": 35,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "IMPERIAL PUNCH",
+      "name_es": "Imperial Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s of whiskey",
+          "item_es": "s of whiskey",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "cura<;ao",
+          "item_es": "cura<;ao",
+          "amount": "0.0",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with champagne.",
+      "method_es": "Fill the glass with champagne.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "IMPERIAL PUNCH\n\n             2 jiggers of whiskey\n             _0 jigger of Cura<;ao\n             The juice of one lemon\n             1 tablespoon of simple syrup\n             Several cubes of ice\n             Fill the glass with champagne."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-036",
+      "order": 36,
+      "section_title": "Cocktails",
+      "category": "punch",
+      "name_original": "APPLEJACK PUNCH",
+      "name_es": "Applejack Punch",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s of applejack",
+          "item_es": "s of applejack",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "s of whiskey",
+          "item_es": "s of whiskey",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill the glass with cracked ice Add a bottle of club soda. Stir this all together, pour it into glasses con-",
+      "method_es": "Fill the glass with cracked ice Add a bottle of club soda. Stir this all together, pour it into glasses con-",
+      "glassware": null,
+      "garnish": "[ 50]",
+      "page_reference": null,
+      "raw_text": "APPLEJACK PUNCH\n\n              2 jiggers of applejack\n              1 jigger of grenadine\n              The ju.ice of one lime\n              Fill the glass with cracked ice\n              Add a bottle of club soda.\n\n\n\n\n                                             [ 50]\n              TIPPLE           AND       SNACK\n\n\n\n\nALE CUP\n\n    Use a pitcher\n    The juice of one lemon\n    2 jiggers of whiskey\n    1 tablespoon of simple syrup\n    1 quart of ale\n    Stir this all together, pour it into glasses con-\n      taining several cubes of ice, and sprinkle a\n      little nutmeg over the top of each glass."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-037",
+      "order": 37,
+      "section_title": "Cocktails",
+      "category": "cup",
+      "name_original": "BADMINTON CUP",
+      "name_es": "Badminton Cup",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "port wine",
+          "item_es": "port wine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": null,
+      "method_es": null,
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BADMINTON CUP\n    1 jigger of sherry\n    1 jigger of port wine\n    1 jigger of maraschino\n    1 quart of claret\n    1 bottle of club soda\n    Use a punch bowl containing a good size\n      piece of ice.\n\n\n\n\n                             [ 51 ]\n             TIPPLE           AND      SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-038",
+      "order": 38,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "FIZZES",
+      "name_es": "Fizzes",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s of gin",
+          "item_es": "s of gin",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "s of gin",
+          "item_es": "s of gin",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "s of gin",
+          "item_es": "s of gin",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "s of rum",
+          "item_es": "s of rum",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "filled with cubes of ice, and seltzer-water used Shake this well in a cocktail shaker. Dump Shake together well in a cocktail shaker, pour",
+      "method_es": "filled with cubes of ice, and seltzer-water used Shake this well in a cocktail shaker. Dump Shake together well in a cocktail shaker, pour",
+      "glassware": null,
+      "garnish": "-----~-]",
+      "page_reference": null,
+      "raw_text": "FIZZES\n\n        The ingredients of a fizz should be mixed\n    in one glass, then strained into another glass\n    filled with cubes of ice, and seltzer-water used\n    to give the .drink the \"fizz.\"\n\n\n\nGIN FIZZ\n\n     2 jiggers of gin\n     The juice of half a lemon\n     1 tablespoon of simple syrup.\n\n\n\n\n                            [ 52]\n\n\n\n\n                                             -----~-]\n             TIPPLE         AND      SNACK\n\n\n\n\nROYAL FIZZ\n\n    2 jiggers of gin\n    The juice of half a lemon\n    1 egg, both the yolk and the white\n    1 tablespoon of simple syrup\n    Shake this well in a cocktail shaker. Dump\n      the mixture into a glass, and fill with\n      seltzer.\n\n\n\nGOLDEN FIZZ\n\n    2 jiggers of gin\n    The juice of one lime\n    The yolk only of an egg\n    1 tablespoon of simple syrup\n    The drink is mixed the same as a Royal Fizz,\n\n\n\n\n                           [ 53]\n             TIPPLE           AND           SNACK\n                     ---   -~------- ......................   ..,,\n\n\nRUM FIZZ\n\n    2 jiggers of rum\n    The juice of half a lemon\n    The white of one egg\n    1 tablespoon of simple syrup\n    Shake together well in a cocktail shaker, pour\n       into the glass, and add seltzer."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-039",
+      "order": 39,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "MORNING GLORY FIZZ",
+      "name_es": "Morning Glory Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in a cocktail shaker, pour into the",
+      "method_es": "Shake well in a cocktail shaker, pour into the",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "MORNING GLORY FIZZ\n\n    1 jigger of whiskey\n    The white of one egg\n    1 tablespoon of simple syrup\n    The juice of half a lemon\n    1 tablespoon of absinthe\n    Shake well in a cocktail shaker, pour into the\n      glass, and add seltzer.\n\n\n\n\n                           [ 54]\n              TIPPLE           AND          SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-040",
+      "order": 40,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "WHISKEY FIZZ",
+      "name_es": "Whiskey Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Fill a tall glass half full of cider",
+      "method_es": "Fill a tall glass half full of cider",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "WHISKEY FIZZ\n\n    1 jigger of whiskey\n    The juice of half a lemon\n    1 tablespoon of simple syrup.\n\n\n\nCIDER FIZZ\n\n     Fill a tall glass half full of cider\n     The juice of one lemon\n     1 tablespoon of simple syrup\n    .Fill the glass with seltzer.\n\n\n\n\n                             [SS]\n             TIPPLE          AND       SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-041",
+      "order": 41,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "NEW ORLEANS CREAM FIZZ",
+      "name_es": "New Orleans Cream Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "good cream",
+          "item_es": "good cream",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake these well together in a cocktail shaker, pour into a glass containing several cubes",
+      "method_es": "Shake these well together in a cocktail shaker, pour into a glass containing several cubes",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "NEW ORLEANS CREAM FIZZ\n\n    1 tablespoon of simple syrup\n    1 jigger of gin\n    1 jigger of good cream\n    Shake these well together in a cocktail shaker,\n      pour into a glass containing several cubes\n      of ice, twist over it a slice of lemon pee.\\,_\n      and fill the glass with seltzer."
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-042",
+      "order": 42,
+      "section_title": "Cocktails",
+      "category": "fizz",
+      "name_original": "BACARDI FIZZ",
+      "name_es": "Bacardi Fizz",
+      "yield": null,
+      "ingredients": [
+        {
+          "item_original": "s of bacardi",
+          "item_es": "s of bacardi",
+          "amount": "2",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "simple syrup",
+          "item_es": "jarabe simple",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
+      "method_original": "Shake well in a cocktail shaker, pour into a fill with seltzer.",
+      "method_es": "Shake well in a cocktail shaker, pour into a fill with seltzer.",
+      "glassware": null,
+      "garnish": null,
+      "page_reference": null,
+      "raw_text": "BACARDI FIZZ\n\n    2 jiggers of bacardi\n    Yi jigger of lime juice\n    Yi jigger of lemon juice\n    1 tablespoon of simple syrup\n    The white of one egg\n    Shake well in a cocktail shaker, pour into a\n      glass containing several cubes of ice, .and.\n      fill with seltzer.\n\n\n\n\n                            [ 56]\n     TIPPLE   AND   SNACK"
+    },
+    {
+      "id": "1931-the-art-of-drinking-more-by-dexter-mason-043",
+      "order": 43,
+      "section_title": "Cocktails",
+      "category": "cocktail",
+      "name_original": "THE HUNT BREAKFAST",
+      "name_es": "The Hunt Breakfast",
+      "yield": null,
+      "ingredients": [],
+      "method_original": "served at some of the great hunt clubs in",
+      "method_es": "served at some of the great hunt clubs in",
+      "glassware": null,
+      "garnish": "[ 59]",
+      "page_reference": null,
+      "raw_text": "THE HUNT BREAKFAST\n                  TIPPLE          AND      SNACK\n\n\n\n\n    THE HUNT BREAKFAST\n\n            In the early afternoon of a brisk fall day,\n        when the hunters return from the fox-hunt\n         or the drag, their main idea in life at the\n        moment is food, good food, plenty of food,\n        and a wide variety. Have variety to suit\n        the individual appetite, and having suited the\n        tasting eye, satisfy the palate and humor the\n        disposition with a culinary masterpiece.\n            The thin-blooded hunters, dismounting\n        stiffly and blowing their chilled fingers\n        through blue lips, will want hot, satisfying\n       dishes; the thick-blooded ones, arriving\n       flushed, panting and famished will scorn any\n       hot dishes, but will devour with avidity the\n       salads and cold sliced fowls. However, both\n       the hot and cold hunters will want liquor-\n       both hot and cold too.\n           The hunt breakfast is a problem. If the\n       run is a drag, you can count pretty well on\n       time; if it is a fox-hunt, there is no telling\n       when the riders will begin to straggle in. But\n       if you know your hunting country, or better\n       still if you know your hunters, you can\n\n                               [ 59]\n\n\n\n\nL\n          TIPPLE          AND       SNACK\n\n\n\njudge pretty accurately who will return when.\n    Spread the food out a la buffet. Keep the\nserving tables away from the walls, so that\nthey can be worked from all sides-espe-\ncially is this true of the liquor table. If you\n have a six sided table use it to hold the liquor.\n Arrange sufficient small tables so that the\n worn and famished hunter can sit down, and\nwon't have to bolt his food standing up. And\n give 'em plenty of room to mill around!\n    Place the hot food in vessels that you can\n keep hot by some means or other; copper\n plates with alcohol burners, electric hot plates,\n chafing dishes will all do the trick.\n    On one table a good stunt is to have a. three\n burner electric plate, and beside it four or\n five small copper frying pans, and as many\n French pottery casseroles. Range the fol-\n lowing materials on a white board beside the\n burner: A large bowl of Leghorn eggs, a\n crock of sweet butter, a small bowl of chopped\n onion, one of chopped parsely, one of chopped\n green pepper, one of chopped chicken livers,\n and a pife of bacon. Have also a shaker of\n salt, a pepper grinder, spices, and spoons and\n forks to cook with. This is most popular,\n\n                          [ 60]\n         TIPPLE         AND     SNACK\n\n\n\nbecause the guests can cook their eggs the\nway they want them.\n   Now for the food. Here is a list of deli-\ncious hunt breakfast dishes that have been\nserved at some of the great hunt clubs in\nAmerica and England: The recipes follow\nthe list:\n       Clam juice cocktails\n       Tomato juice cocktails\n       Assorted hors d' oeuvres\n       Eggs in cheese sauce\n       Codfish cakes\n       Corn meal waffies",
+      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+    }
+  ]
+}
