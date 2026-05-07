@@ -32,6 +32,22 @@
     "bookFile": "data/euvs-books/1757-the-complete-distiller-by-ambrose-cooper.json"
   },
   {
+    "id": "1804-art-du-limonadier",
+    "year": 1804,
+    "decade": "1800s",
+    "title": "Art du Limonadier",
+    "author": null,
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 8,
+    "bookFile": "data/euvs-books/1804-art-du-limonadier.json"
+  },
+  {
     "id": "1827-oxford-night-caps-by-richard-cook",
     "year": 1827,
     "decade": "1820s",
@@ -126,6 +142,22 @@
     "sectionCount": 1,
     "recipeCount": 11,
     "bookFile": "data/euvs-books/1851-the-modern-houeswife-or-menagere-by-soyer.json"
+  },
+  {
+    "id": "1855-traite-des-liqueurs-et-de-la-distillation-des-alcools-ou-le-liquoriste-et-le-distillateur-modernes",
+    "year": 1855,
+    "decade": "1850s",
+    "title": "Traité des Liqueurs",
+    "author": null,
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 5,
+    "bookFile": "data/euvs-books/1855-traite-des-liqueurs-et-de-la-distillation-des-alcools-ou-le-liquoriste-et-le-distillateur-modernes.json"
   },
   {
     "id": "1857-the-bordeaux-wine-and-liquor-dealers-guide",
@@ -928,6 +960,22 @@
     "bookFile": "data/euvs-books/1895-mixed-drinks-by-herbert-w-green.json"
   },
   {
+    "id": "1895-modern-american-drinks-how-to-mix-and-serve-all-kinds-of-cups-and-drinks",
+    "year": 1895,
+    "decade": "1890s",
+    "title": "Modern American Drinks",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 51,
+    "bookFile": "data/euvs-books/1895-modern-american-drinks-how-to-mix-and-serve-all-kinds-of-cups-and-drinks.json"
+  },
+  {
     "id": "1895-official-hand-book-and-guide-1895",
     "year": 1895,
     "decade": "1890s",
@@ -1038,6 +1086,22 @@
     "sectionCount": 1,
     "recipeCount": 6,
     "bookFile": "data/euvs-books/1896-fancy-drinks-and-popular-beverages-by-the-only-william.json"
+  },
+  {
+    "id": "1898-anleitung-zur-bereitung-amerikanischer-eis-getrank",
+    "year": 1898,
+    "decade": "1890s",
+    "title": "Anleitung zur Bereitung Amerikanischer Eis-Getränke",
+    "author": null,
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 17,
+    "bookFile": "data/euvs-books/1898-anleitung-zur-bereitung-amerikanischer-eis-getrank.json"
   },
   {
     "id": "1898-cocktails-how-to-make-them-providence-livermore-knight-co",
@@ -1920,6 +1984,22 @@
     "bookFile": "data/euvs-books/1917-the-reminder-by-jacob-a-didier-5th-edition.json"
   },
   {
+    "id": "1918-distillateur-liquoriste-by-roret",
+    "year": 1918,
+    "decade": "1910s",
+    "title": "Distillateur Liquoriste (Roret)",
+    "author": null,
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 10,
+    "bookFile": "data/euvs-books/1918-distillateur-liquoriste-by-roret.json"
+  },
+  {
     "id": "1918-home-brewed-wines-and-beers-and-bartenders-guide",
     "year": 1918,
     "decade": "1910s",
@@ -2080,6 +2160,22 @@
     "bookFile": "data/euvs-books/1921-american-drinks-by-victor-hugo-himmelreich.json"
   },
   {
+    "id": "1921-le-barman-guide-du-limonadier-et-du-restaurateur-by-olivier-mayor",
+    "year": 1921,
+    "decade": "1920s",
+    "title": "Le Barman Guide du Limonadier (Mayor)",
+    "author": null,
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 6,
+    "bookFile": "data/euvs-books/1921-le-barman-guide-du-limonadier-et-du-restaurateur-by-olivier-mayor.json"
+  },
+  {
     "id": "1922-hoe-maakt-men-american-plain-en-fancy-drinks-by-w-slagter",
     "year": 1922,
     "decade": "1920s",
@@ -2190,6 +2286,38 @@
     "sectionCount": 2,
     "recipeCount": 107,
     "bookFile": "data/euvs-books/1924-carlos-cocktail-et-boissons-americaines-by-carlo-beltramo.json"
+  },
+  {
+    "id": "1924-das-mixerbuch-by-a-brehmer",
+    "year": 1924,
+    "decade": "1920s",
+    "title": "Das Mixerbuch (Brehmer)",
+    "author": null,
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 84,
+    "bookFile": "data/euvs-books/1924-das-mixerbuch-by-a-brehmer.json"
+  },
+  {
+    "id": "1924-manual-del-bar-by-antonio-fernandez-tony",
+    "year": 1924,
+    "decade": "1920s",
+    "title": "Manual del Bar (Antonio Fernández Tony)",
+    "author": null,
+    "language": "es",
+    "languageName": "Español",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 60,
+    "bookFile": "data/euvs-books/1924-manual-del-bar-by-antonio-fernandez-tony.json"
   },
   {
     "id": "1924-manual-del-cantinero-by-leon-pujol-and-oscar-muniz",
@@ -2352,6 +2480,22 @@
     "bookFile": "data/euvs-books/1927-900-recettes-de-cocktails-et-boissons-americaines.json"
   },
   {
+    "id": "1927-barflies-and-cocktails",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "Barflies and Cocktails",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 12,
+    "bookFile": "data/euvs-books/1927-barflies-and-cocktails.json"
+  },
+  {
     "id": "1927-cocktails-bebidas-heladas-ponches-de-todas-clases-by-maraya-velez-de-sanchez",
     "year": 1927,
     "decade": "1920s",
@@ -2462,6 +2606,22 @@
     "sectionCount": 2,
     "recipeCount": 91,
     "bookFile": "data/euvs-books/1927-petits-et-grands-verres-choix-des-meilleures-recettes-de-cocktails.json"
+  },
+  {
+    "id": "1927-pour-le-distillateur-le-debitant-le-barman-by-paul-fouassier",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "Pour le Distillateur (Fouassier)",
+    "author": null,
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 24,
+    "bookFile": "data/euvs-books/1927-pour-le-distillateur-le-debitant-le-barman-by-paul-fouassier.json"
   },
   {
     "id": "1928-370-recettes-de-cocktails-par-jean-lupoiu",
@@ -2606,6 +2766,22 @@
     "sectionCount": 1,
     "recipeCount": 6,
     "bookFile": "data/euvs-books/1928-when-its-cocktail-time-in-cuba-by-basil-woon.json"
+  },
+  {
+    "id": "1929-a-mixer-by-shurger-rezso",
+    "year": 1929,
+    "decade": "1920s",
+    "title": "A Mixer (Shurger Rezsõ)",
+    "author": null,
+    "language": "mixed",
+    "languageName": "mixed",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 26,
+    "bookFile": "data/euvs-books/1929-a-mixer-by-shurger-rezso.json"
   },
   {
     "id": "1929-cocktails-de-paris",
@@ -4064,6 +4240,22 @@
     "bookFile": "data/euvs-books/1935-the-barkeepers-golden-book-by-o-blunier.json"
   },
   {
+    "id": "1936-1000-misture-by-elvezio-grassi",
+    "year": 1936,
+    "decade": "1930s",
+    "title": "1000 Misture (Grassi)",
+    "author": null,
+    "language": "it",
+    "languageName": "Italiano",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 16,
+    "bookFile": "data/euvs-books/1936-1000-misture-by-elvezio-grassi.json"
+  },
+  {
     "id": "1936-cocktails-and-appetizers-by-a-connnoisseur",
     "year": 1936,
     "decade": "1930s",
@@ -4798,6 +4990,22 @@
     "sectionCount": 2,
     "recipeCount": 200,
     "bookFile": "data/euvs-books/1950-el-barman-practico-de-julio-cesar-clave.json"
+  },
+  {
+    "id": "1951-l-abc-per-miscelare-i-cocktails",
+    "year": 1951,
+    "decade": "1950s",
+    "title": "L'ABC per miscelare i cocktails",
+    "author": null,
+    "language": "it",
+    "languageName": "Italiano",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 15,
+    "bookFile": "data/euvs-books/1951-l-abc-per-miscelare-i-cocktails.json"
   },
   {
     "id": "1954-anis-esprit-de-joie-et-de-sante-by-andre-montagard",
