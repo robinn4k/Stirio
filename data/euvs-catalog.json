@@ -64,6 +64,22 @@
     "bookFile": "data/euvs-books/1879-drinks-and-how-to-make-them-by-yeatman-co.json"
   },
   {
+    "id": "1883-mcdonoughs-bar-keepers-guide-and-gentlemens-sideboard-companion-1883",
+    "year": 1883,
+    "decade": "1880s",
+    "title": "McDonough's Barkeepers' Guide & Gentlemen's Sideboard Companion",
+    "author": "Patsy McDonough (head bartender, 25 years' experience)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published / Wm. S. Kimball & Co. ads",
+    "city": "Rochester, New York",
+    "edition": "First Edition (1883, copyright secured)",
+    "notes": "Manual de bar pre-Prohibición de Patsy McDonough, head bar-keeper de Rochester, NY con 25 años de experiencia. Publicidad de cervecerías locales (Bartholomay Brewing), licores (J.W. Hannan & Co.), cigarrillos Cloth of Gold (Wm. S. Kimball). Numerado No.1 → No.N. 126 recetas; ~44% (55/126) parseado (recetas en prosa con OCR variable).",
+    "sectionCount": 2,
+    "recipeCount": 126,
+    "bookFile": "data/euvs-books/1883-mcdonoughs-bar-keepers-guide-and-gentlemens-sideboard-companion-1883.json"
+  },
+  {
     "id": "1884-american-and-other-drinks-1-st-edition-by-charlie-paul",
     "year": 1884,
     "decade": "1880s",
@@ -78,6 +94,22 @@
     "sectionCount": 2,
     "recipeCount": 97,
     "bookFile": "data/euvs-books/1884-american-and-other-drinks-1-st-edition-by-charlie-paul.json"
+  },
+  {
+    "id": "1884-how-to-mix-drinks-bar-keepers-handbook-1884",
+    "year": 1884,
+    "decade": "1880s",
+    "title": "How To Mix Drinks — Bar Keepers' Handbook",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published / Lion Brewery (with advertisements)",
+    "city": "Brooklyn / New York",
+    "edition": "First Edition (1884)",
+    "notes": "Manual de bar de la era pre-Prohibición publicado en NYC con publicidad cruzada de Lion Brewery (Brooklyn), Eclipse Champagne (Arpad Haraszthy), Gorham Plated Ware. Skeleton custom + parser word/numeric amounts. 88 recetas (post-cleanup); ~84% (74/88) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 88,
+    "bookFile": "data/euvs-books/1884-how-to-mix-drinks-bar-keepers-handbook-1884.json"
   },
   {
     "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition",
@@ -176,6 +208,22 @@
     "bookFile": "data/euvs-books/1900-modern-american-drinks-by-j-kappeler.json"
   },
   {
+    "id": "1904-applegreens-bar-book-by-john-applegreen",
+    "year": 1904,
+    "decade": "1900s",
+    "title": "Applegreen's Barkeeper's Guide — How to Mix Drinks",
+    "author": "John Applegreen (formerly of Kinsley's, Chicago and Holland House, New York)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "The Hotel Monthly",
+    "city": "Chicago, 325 Dearborn Street",
+    "edition": "Second Edition, Revised (1904; orig. 1899)",
+    "notes": "John Applegreen — bartender de Kinsley's (Chicago) y Holland House (NY), publica esta segunda edición revisada (1904). Variantes 'Dry' (omite syrup) para Martini y Manhattan. Skeleton custom + parser jigger/dash con Yz ½ OCR fix. 185 recetas; ~21% (38/185) parseado (formato OCR variable, raw_text íntegro).",
+    "sectionCount": 2,
+    "recipeCount": 185,
+    "bookFile": "data/euvs-books/1904-applegreens-bar-book-by-john-applegreen.json"
+  },
+  {
     "id": "1909-recipes-of-american-and-other-iced-drinks",
     "year": 1909,
     "decade": "1900s",
@@ -206,6 +254,22 @@
     "sectionCount": 9,
     "recipeCount": 76,
     "bookFile": "data/euvs-books/1910-ca-101-drinks-and-how-to-mix-them.json"
+  },
+  {
+    "id": "1910-the-barkeepers-manual-by-raymond-e-sullivan-second-edition",
+    "year": 1910,
+    "decade": "1910s",
+    "title": "The Barkeeper's Manual — The Art of Mixing",
+    "author": "Raymond E. Sullivan (Baltimore Country Club, Roland Park, Md.)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "Baltimore, Maryland (Roland Park)",
+    "edition": "Second Edition (1910)",
+    "notes": "Manual del bartender del Baltimore Country Club. Subtítulo: 'Cocktails, Punches, Coolers, Cobblers, Juleps, Smashes, Flips, Toddies, Sangarees, Egg-Nog and the Fizz'. Segunda edición motivada por la 'sincere appreciation' de los miembros del club. Body con OCR severamente dañado por character-spacing ('O n e d ash O r an ge Bi t t er s' = 'One dash Orange Bitters'); el skeleton captura las 93 recetas correctamente desde las cabeceras pero el cuerpo necesita normalización OCR más sofisticada (no incluida en esta wave). raw_text íntegro preservado.",
+    "sectionCount": 2,
+    "recipeCount": 93,
+    "bookFile": "data/euvs-books/1910-the-barkeepers-manual-by-raymond-e-sullivan-second-edition.json"
   },
   {
     "id": "1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose",
@@ -558,6 +622,22 @@
     "sectionCount": 2,
     "recipeCount": 130,
     "bookFile": "data/euvs-books/1930-heres-how.json"
+  },
+  {
+    "id": "1930-prohibition-punches-a-book-of-beverage-by-roxan-b-doran",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "Prohibition Punches — A Book of Beverages",
+    "author": "Roxana B. Doran (Mrs. James M. Doran, esposa del Prohibition Commissioner federal 1927-1933)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Dorrance & Company, Inc.",
+    "city": "Philadelphia",
+    "edition": "First Printing, August 1930",
+    "notes": "Manual de bebidas NO alcohólicas durante la Prohibición. La autora es Roxana B. Doran, esposa de James M. Doran (Commissioner of Prohibition para el gobierno federal de EE.UU. 1927-1933). Preface por Dr. Harvey W. Wiley ('father of the Pure Food and Drug Act'). Recetas firmadas por esposas de políticos: Mrs. Newton (Hoover Cabinet), Mrs. Christianson (Gov. Minnesota), Mrs. Carlton (Gov. Florida), Mrs. Youngquist (Asst. Attorney General), Miss Ida B. Wise Smith (W.C.T.U.). 7 capítulos según hora del día. Categoría 'other' (sin alcohol). 68 recetas; ~63% (43/68) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 68,
+    "bookFile": "data/euvs-books/1930-prohibition-punches-a-book-of-beverage-by-roxan-b-doran.json"
   },
   {
     "id": "1930-shakeem-up-by-virginia-elliott-and-phil-d-stong",
@@ -1246,6 +1326,22 @@
     "sectionCount": 27,
     "recipeCount": 56,
     "bookFile": "data/euvs-books/1940-sloppy-joes-season-1940.json"
+  },
+  {
+    "id": "1943-cocktail-digest-by-oscar-haimo-of-the-hotel-pierre",
+    "year": 1943,
+    "decade": "1940s",
+    "title": "Cocktail Digest by Oscar Haimo (Hotel Pierre)",
+    "author": "Oscar Haimo (President, International Barmen's Association; Hotel Pierre, NYC)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "New York City",
+    "edition": "First Edition (1943)",
+    "notes": "Manual del bartender Oscar Haimo (Hotel Pierre, NYC). Foto en portada con Edward G. Robinson concoctando el MacArthur Cocktail (descrito por Walter Winchell como 'as zingy as its name'). Haimo trabajó en Fouquet's (Paris), Royalty Bar Monte Carlo, Ritz Paris, Embassy Club, Surf Club Miami Beach, Belgian Pavilion NY World's Fair, antes del Hotel Pierre. Format en dos columnas (NAME left, ingredients right). Skeleton custom con detector left-col-name + right-col-ingredient. 166 recetas; ~92% (152/166) parseado.",
+    "sectionCount": 2,
+    "recipeCount": 166,
+    "bookFile": "data/euvs-books/1943-cocktail-digest-by-oscar-haimo-of-the-hotel-pierre.json"
   },
   {
     "id": "1948-ron-daiquiri-coctelera-cocktail-book-habana-cuba",
