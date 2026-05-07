@@ -208,6 +208,22 @@
     "bookFile": "data/euvs-books/1872-the-gentlemans-table-guide-2nd-edition.json"
   },
   {
+    "id": "1876-the-bar-tenders-guide-or-how-to-mix-all-kinds-of-plain-and-fancy-drinks-by-jerry-thomas",
+    "year": 1876,
+    "decade": "1870s",
+    "title": "The Bar-Tenders' Guide",
+    "author": "Jerry Thomas",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "NY",
+    "edition": "Edition (1876)",
+    "notes": "⭐ ⭐ Jerry Thomas — el padre de la mixología americana.",
+    "sectionCount": 2,
+    "recipeCount": 78,
+    "bookFile": "data/euvs-books/1876-the-bar-tenders-guide-or-how-to-mix-all-kinds-of-plain-and-fancy-drinks-by-jerry-thomas.json"
+  },
+  {
     "id": "1878-american-and-other-drinks",
     "year": 1878,
     "decade": "1870s",
@@ -624,6 +640,22 @@
     "bookFile": "data/euvs-books/1905-bebidas-americanas-refrescos-y-licores.json"
   },
   {
+    "id": "1905-the-gorham-cocktail-book",
+    "year": 1905,
+    "decade": "1900s",
+    "title": "The Gorham Cocktail Book",
+    "author": "Gorham Mfg Co.",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1905)",
+    "notes": "Folleto Gorham.",
+    "sectionCount": 2,
+    "recipeCount": 60,
+    "bookFile": "data/euvs-books/1905-the-gorham-cocktail-book.json"
+  },
+  {
     "id": "1906-how-to-mix-drinks-compiled-selected-and-concocted-by-g-spaulding-and-w-rositer",
     "year": 1906,
     "decade": "1900s",
@@ -670,6 +702,22 @@
     "sectionCount": 2,
     "recipeCount": 419,
     "bookFile": "data/euvs-books/1907-smacks-and-smiles-tenth-edition-by-charles-smith.json"
+  },
+  {
+    "id": "1909-der-mixologist-by-carl-a-seutter",
+    "year": 1909,
+    "decade": "1900s",
+    "title": "Der Mixologist (1ª ed.)",
+    "author": "Carl A. Seutter",
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": "Self-published",
+    "city": "Germany",
+    "edition": "First Edition (1909)",
+    "notes": "Manual alemán.",
+    "sectionCount": 2,
+    "recipeCount": 70,
+    "bookFile": "data/euvs-books/1909-der-mixologist-by-carl-a-seutter.json"
   },
   {
     "id": "1909-guia-pratica-del-cantinero-bar-tender",
@@ -750,6 +798,22 @@
     "sectionCount": 2,
     "recipeCount": 53,
     "bookFile": "data/euvs-books/1910-das-buch-der-american-drinks-by-richard-andeck.json"
+  },
+  {
+    "id": "1910-jacks-manual-by-j-a-grohusko",
+    "year": 1910,
+    "decade": "1910s",
+    "title": "Jack's Manual",
+    "author": "J. A. Grohusko",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1910)",
+    "notes": "Manual pre-Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 234,
+    "bookFile": "data/euvs-books/1910-jacks-manual-by-j-a-grohusko.json"
   },
   {
     "id": "1910-the-barkeepers-manual-by-raymond-e-sullivan-second-edition",
@@ -1008,6 +1072,22 @@
     "bookFile": "data/euvs-books/1917-the-ideal-bartender-by-tom-bullock.json"
   },
   {
+    "id": "1917-the-reminder-by-jacob-a-didier-5th-edition",
+    "year": 1917,
+    "decade": "1910s",
+    "title": "The Reminder (5th Ed.)",
+    "author": "Jacob A. Didier",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Fifth Edition (1917)",
+    "notes": "5ª ed Didier.",
+    "sectionCount": 2,
+    "recipeCount": 16,
+    "bookFile": "data/euvs-books/1917-the-reminder-by-jacob-a-didier-5th-edition.json"
+  },
+  {
     "id": "1919-julians-recipes-by-julian-anderson",
     "year": 1919,
     "decade": "1910s",
@@ -1086,6 +1166,22 @@
     "sectionCount": 2,
     "recipeCount": 24,
     "bookFile": "data/euvs-books/1921-american-drinks-by-victor-hugo-himmelreich.json"
+  },
+  {
+    "id": "1922-home-made-beverages-and-american-drinks-by-m-e-steedman",
+    "year": 1922,
+    "decade": "1920s",
+    "title": "Home-Made Beverages and American Drinks",
+    "author": "M. E. Steedman",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1922)",
+    "notes": "Manual UK.",
+    "sectionCount": 2,
+    "recipeCount": 29,
+    "bookFile": "data/euvs-books/1922-home-made-beverages-and-american-drinks-by-m-e-steedman.json"
   },
   {
     "id": "1922-quelques-recettes-pour-boissons-americaines",
@@ -1296,6 +1392,38 @@
     "bookFile": "data/euvs-books/1927-cocktails-by-piero-grandi.json"
   },
   {
+    "id": "1927-drinks-of-all-kinds",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "Drinks of All Kinds",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1927)",
+    "notes": "Manual Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 347,
+    "bookFile": "data/euvs-books/1927-drinks-of-all-kinds.json"
+  },
+  {
+    "id": "1927-el-bar-americano-en-espana-by-pedro-chicote",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "El Bar Americano en España",
+    "author": "Pedro Chicote",
+    "language": "es",
+    "languageName": "Español",
+    "publisher": "Self-published",
+    "city": "España",
+    "edition": "First Edition (1927)",
+    "notes": "Manual español de Chicote.",
+    "sectionCount": 2,
+    "recipeCount": 21,
+    "bookFile": "data/euvs-books/1927-el-bar-americano-en-espana-by-pedro-chicote.json"
+  },
+  {
     "id": "1927-heres-how-by-judge-jr-2nd-impression",
     "year": 1927,
     "decade": "1920s",
@@ -1376,6 +1504,22 @@
     "bookFile": "data/euvs-books/1928-cheerio-a-book-of-punches-and-cocktails-by-charles.json"
   },
   {
+    "id": "1928-giggle-water-by-charles-s-warnock",
+    "year": 1928,
+    "decade": "1920s",
+    "title": "Giggle Water",
+    "author": "Charles S. Warnock",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1928)",
+    "notes": "Manual de Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 8,
+    "bookFile": "data/euvs-books/1928-giggle-water-by-charles-s-warnock.json"
+  },
+  {
     "id": "1928-goderham-and-worts-abc-of-mixing-cocktails",
     "year": 1928,
     "decade": "1920s",
@@ -1454,6 +1598,22 @@
     "sectionCount": 15,
     "recipeCount": 33,
     "bookFile": "data/euvs-books/1929-for-home-use-by-e-g-g-smythers-pty-ltd.json"
+  },
+  {
+    "id": "1929-lheure-du-cocktail-recettes-de-cocktails-pour-1929-by-mm-alimbau-and-milhorat",
+    "year": 1929,
+    "decade": "1920s",
+    "title": "L'Heure du Cocktail",
+    "author": "Alimbau & Milhorat",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1929)",
+    "notes": "Manual francés.",
+    "sectionCount": 2,
+    "recipeCount": 206,
+    "bookFile": "data/euvs-books/1929-lheure-du-cocktail-recettes-de-cocktails-pour-1929-by-mm-alimbau-and-milhorat.json"
   },
   {
     "id": "1929-libro-de-cocktail-the-cocktail-book-by-juan-a-lasa",
@@ -2016,6 +2176,22 @@
     "bookFile": "data/euvs-books/1933-lest-we-forget.json"
   },
   {
+    "id": "1933-mixers-guide",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "Mixer's Guide",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933)",
+    "notes": "Manual post-Repeal.",
+    "sectionCount": 2,
+    "recipeCount": 525,
+    "bookFile": "data/euvs-books/1933-mixers-guide.json"
+  },
+  {
     "id": "1933-sloppy-joes-bar",
     "year": 1933,
     "decade": "1930s",
@@ -2030,6 +2206,22 @@
     "sectionCount": 16,
     "recipeCount": 80,
     "bookFile": "data/euvs-books/1933-sloppy-joes-bar.json"
+  },
+  {
+    "id": "1933-the-bartenders-friend-by-a-mixer",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "The Bartender's Friend",
+    "author": "Anonymous (a Mixer)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933)",
+    "notes": "Manual post-Repeal.",
+    "sectionCount": 2,
+    "recipeCount": 15,
+    "bookFile": "data/euvs-books/1933-the-bartenders-friend-by-a-mixer.json"
   },
   {
     "id": "1933-the-bon-vivants-companion-by-george-a-zabriskie",
@@ -2384,6 +2576,22 @@
     "bookFile": "data/euvs-books/1934-the-mixer-of-beverages.json"
   },
   {
+    "id": "1934-tom-and-jerrys-bartenders-guide",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "Tom and Jerry's Bartender's Guide",
+    "author": "Tom & Jerry",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1934)",
+    "notes": "Manual post-Repeal.",
+    "sectionCount": 2,
+    "recipeCount": 129,
+    "bookFile": "data/euvs-books/1934-tom-and-jerrys-bartenders-guide.json"
+  },
+  {
     "id": "1934-what-goes-with-what",
     "year": 1934,
     "decade": "1930s",
@@ -2672,6 +2880,22 @@
     "bookFile": "data/euvs-books/1937-liquid-gems-a-book-of-drinks-for-the-fastiduous-drinker.json"
   },
   {
+    "id": "1937-u-k-b-g-approved-cocktails-united-kingdom-bartenders-guild",
+    "year": 1937,
+    "decade": "1930s",
+    "title": "U.K.B.G. Approved Cocktails",
+    "author": "UK Bartender's Guild",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1937)",
+    "notes": "Manual oficial UKBG.",
+    "sectionCount": 2,
+    "recipeCount": 43,
+    "bookFile": "data/euvs-books/1937-u-k-b-g-approved-cocktails-united-kingdom-bartenders-guild.json"
+  },
+  {
     "id": "1938-cocktails-by-jean-lupoiu",
     "year": 1938,
     "decade": "1930s",
@@ -2958,6 +3182,22 @@
     "sectionCount": 2,
     "recipeCount": 35,
     "bookFile": "data/euvs-books/1945-chicago-bartenders-and-beverage-dispensers-union.json"
+  },
+  {
+    "id": "1947-cocktails-choix-de-600-recettes-by-a-vermeys",
+    "year": 1947,
+    "decade": "1940s",
+    "title": "Cocktails — Choix de 600 Recettes",
+    "author": "A. Vermeys",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "France",
+    "edition": "First Edition (1947)",
+    "notes": "Manual francés post-WWII.",
+    "sectionCount": 2,
+    "recipeCount": 20,
+    "bookFile": "data/euvs-books/1947-cocktails-choix-de-600-recettes-by-a-vermeys.json"
   },
   {
     "id": "1948-cocktails-by-jean-lupoiu",
