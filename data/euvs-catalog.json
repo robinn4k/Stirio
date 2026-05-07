@@ -112,6 +112,38 @@
     "bookFile": "data/euvs-books/1862-jerry-thomas-bartenders-guide.json"
   },
   {
+    "id": "1863-cups-their-custom-by-henry-porter-george-roberts",
+    "year": 1863,
+    "decade": "1860s",
+    "title": "Cups & Their Custom (1863)",
+    "author": "Porter & Roberts",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "Edition",
+    "notes": "Pre-Civil War UK.",
+    "sectionCount": 2,
+    "recipeCount": 22,
+    "bookFile": "data/euvs-books/1863-cups-their-custom-by-henry-porter-george-roberts.json"
+  },
+  {
+    "id": "1869-drinking-cups-their-custom-by-henry-porter-george-roberts",
+    "year": 1869,
+    "decade": "1860s",
+    "title": "Drinking Cups (1869)",
+    "author": "Porter & Roberts",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "Edition",
+    "notes": "Manual victoriano UK.",
+    "sectionCount": 2,
+    "recipeCount": 20,
+    "bookFile": "data/euvs-books/1869-drinking-cups-their-custom-by-henry-porter-george-roberts.json"
+  },
+  {
     "id": "1871-barkeepers-ready-reference",
     "year": 1871,
     "decade": "1870s",
@@ -624,6 +656,22 @@
     "bookFile": "data/euvs-books/1910-toasts-wines-and-how-to-serve-them-by-rodolph-rose.json"
   },
   {
+    "id": "1912-156-recettes-de-boissons-americaines-by-n-larsen",
+    "year": 1912,
+    "decade": "1910s",
+    "title": "Larsen 1912",
+    "author": "N. Larsen",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "FR",
+    "edition": "Edition",
+    "notes": "Larsen 1912.",
+    "sectionCount": 2,
+    "recipeCount": 5,
+    "bookFile": "data/euvs-books/1912-156-recettes-de-boissons-americaines-by-n-larsen.json"
+  },
+  {
     "id": "1912-holtz-freystedt",
     "year": 1912,
     "decade": "1910s",
@@ -752,6 +800,22 @@
     "bookFile": "data/euvs-books/1916-cocktail-ology-by-count-benvenito-martini.json"
   },
   {
+    "id": "1916-recipes-of-american-and-other-iced-drinks-by-charlie-paul",
+    "year": 1916,
+    "decade": "1910s",
+    "title": "Charlie Paul Iced 1916",
+    "author": "Charlie Paul",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "London",
+    "edition": "Edition",
+    "notes": "1916 ed.",
+    "sectionCount": 2,
+    "recipeCount": 15,
+    "bookFile": "data/euvs-books/1916-recipes-of-american-and-other-iced-drinks-by-charlie-paul.json"
+  },
+  {
     "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition",
     "year": 1917,
     "decade": "1910s",
@@ -814,6 +878,22 @@
     "sectionCount": 10,
     "recipeCount": 51,
     "bookFile": "data/euvs-books/1919-julians-recipes-by-julian-anderson.json"
+  },
+  {
+    "id": "1920-156-recettes-de-boissons-americaines-by-n-larsen",
+    "year": 1920,
+    "decade": "1920s",
+    "title": "Larsen 1920",
+    "author": "N. Larsen",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "FR",
+    "edition": "Edition",
+    "notes": "Larsen 1920.",
+    "sectionCount": 2,
+    "recipeCount": 9,
+    "bookFile": "data/euvs-books/1920-156-recettes-de-boissons-americaines-by-n-larsen.json"
   },
   {
     "id": "1920-cocktails-metropolitan-club-washington-dc",
@@ -1152,6 +1232,22 @@
     "bookFile": "data/euvs-books/1928-recettes-de-cocktails-pour-1929-par-mm-alimbau-et-milhorat.json"
   },
   {
+    "id": "1929-cocktails-de-paris",
+    "year": 1929,
+    "decade": "1920s",
+    "title": "Cocktails de Paris",
+    "author": "Anonymous",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "FR",
+    "edition": "Edition",
+    "notes": "Manual francés.",
+    "sectionCount": 2,
+    "recipeCount": 10,
+    "bookFile": "data/euvs-books/1929-cocktails-de-paris.json"
+  },
+  {
     "id": "1929-for-home-use-by-e-g-g-smythers-pty-ltd",
     "year": 1929,
     "decade": "1920s",
@@ -1278,6 +1374,22 @@
     "sectionCount": 2,
     "recipeCount": 130,
     "bookFile": "data/euvs-books/1930-heres-how.json"
+  },
+  {
+    "id": "1930-les-meilleurs-cocktails-by-edgar-baudoin-from-collective-1806",
+    "year": 1930,
+    "decade": "1930s",
+    "title": "Les Meilleurs Cocktails",
+    "author": "Edgar Baudoin",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "FR",
+    "edition": "Edition",
+    "notes": "Manual francés.",
+    "sectionCount": 2,
+    "recipeCount": 15,
+    "bookFile": "data/euvs-books/1930-les-meilleurs-cocktails-by-edgar-baudoin-from-collective-1806.json"
   },
   {
     "id": "1930-los-cock-tails-mas-sabrosos-202-formulas",
@@ -1518,6 +1630,22 @@
     "sectionCount": 2,
     "recipeCount": 161,
     "bookFile": "data/euvs-books/1932-the-art-of-mixing-by-james-a-wiley.json"
+  },
+  {
+    "id": "1932-the-green-cocktail-book-by-jimmy",
+    "year": 1932,
+    "decade": "1930s",
+    "title": "Green Jimmy 1932",
+    "author": "Jimmy",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "London",
+    "edition": "Edition",
+    "notes": "Green Jimmy 1932.",
+    "sectionCount": 2,
+    "recipeCount": 38,
+    "bookFile": "data/euvs-books/1932-the-green-cocktail-book-by-jimmy.json"
   },
   {
     "id": "1932-wet-drinks-for-dry-people-by-william-c-feery",
@@ -2542,6 +2670,22 @@
     "sectionCount": 2,
     "recipeCount": 166,
     "bookFile": "data/euvs-books/1943-cocktail-digest-by-oscar-haimo-of-the-hotel-pierre.json"
+  },
+  {
+    "id": "1944-bartenders-friend-by-nick-thomas",
+    "year": 1944,
+    "decade": "1940s",
+    "title": "Bartender's Friend",
+    "author": "Nick Thomas",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Edition",
+    "notes": "Late-WWII.",
+    "sectionCount": 2,
+    "recipeCount": 11,
+    "bookFile": "data/euvs-books/1944-bartenders-friend-by-nick-thomas.json"
   },
   {
     "id": "1945-300-ways-to-mix-drinks-cartoons-recipes-toasts",
