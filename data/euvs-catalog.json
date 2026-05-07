@@ -176,6 +176,38 @@
     "bookFile": "data/euvs-books/1871-oxford-night-caps-by-richard-cook.json"
   },
   {
+    "id": "1871-the-gentlemans-table-guide-by-e-ricket-and-c-thomas",
+    "year": 1871,
+    "decade": "1870s",
+    "title": "Gentleman's Table Guide",
+    "author": "E. Ricket & C. Thomas",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1871)",
+    "notes": "Guía Victoriana 1ª ed.",
+    "sectionCount": 2,
+    "recipeCount": 14,
+    "bookFile": "data/euvs-books/1871-the-gentlemans-table-guide-by-e-ricket-and-c-thomas.json"
+  },
+  {
+    "id": "1872-the-gentlemans-table-guide-2nd-edition",
+    "year": 1872,
+    "decade": "1870s",
+    "title": "Gentleman's Table Guide (2nd Ed.)",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "Second Edition (1872)",
+    "notes": "Guía Victoriana.",
+    "sectionCount": 2,
+    "recipeCount": 7,
+    "bookFile": "data/euvs-books/1872-the-gentlemans-table-guide-2nd-edition.json"
+  },
+  {
     "id": "1878-american-and-other-drinks",
     "year": 1878,
     "decade": "1870s",
@@ -416,6 +448,22 @@
     "bookFile": "data/euvs-books/1893-beverages-and-sandwiches-for-your-husbands-friends-1893.json"
   },
   {
+    "id": "1895-bartenders-guide-by-berner-mayer-co",
+    "year": 1895,
+    "decade": "1890s",
+    "title": "Bartender's Guide",
+    "author": "Berner-Mayer Co.",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1895)",
+    "notes": "Manual de Berner-Mayer (1895).",
+    "sectionCount": 2,
+    "recipeCount": 143,
+    "bookFile": "data/euvs-books/1895-bartenders-guide-by-berner-mayer-co.json"
+  },
+  {
     "id": "1895-official-hand-book-and-guide-1895",
     "year": 1895,
     "decade": "1890s",
@@ -446,6 +494,38 @@
     "sectionCount": 2,
     "recipeCount": 110,
     "bookFile": "data/euvs-books/1895-official-hand-book-and-guide-bartenders-association-of-new-york-city.json"
+  },
+  {
+    "id": "1895-the-mixicologist-by-c-f-lawlor",
+    "year": 1895,
+    "decade": "1890s",
+    "title": "The Mixicologist",
+    "author": "C. F. Lawlor",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Edition (1895)",
+    "notes": "Manual histórico de Lawlor.",
+    "sectionCount": 2,
+    "recipeCount": 11,
+    "bookFile": "data/euvs-books/1895-the-mixicologist-by-c-f-lawlor.json"
+  },
+  {
+    "id": "1895-the-mixicologist-first-edition-by-c-f-lawlor",
+    "year": 1895,
+    "decade": "1890s",
+    "title": "The Mixicologist (1st Ed.)",
+    "author": "C. F. Lawlor",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1895)",
+    "notes": "1ª ed Lawlor.",
+    "sectionCount": 2,
+    "recipeCount": 9,
+    "bookFile": "data/euvs-books/1895-the-mixicologist-first-edition-by-c-f-lawlor.json"
   },
   {
     "id": "1896-bariana-louis-fouquet",
@@ -784,6 +864,22 @@
     "bookFile": "data/euvs-books/1912-the-squires-recipe.json"
   },
   {
+    "id": "1914-beverages-de-luxe",
+    "year": 1914,
+    "decade": "1910s",
+    "title": "Beverages de Luxe",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1914)",
+    "notes": "Manual pre-Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 14,
+    "bookFile": "data/euvs-books/1914-beverages-de-luxe.json"
+  },
+  {
     "id": "1914-rawlings-of-book-mixed-drinks-by-e-p-rawling",
     "year": 1914,
     "decade": "1910s",
@@ -976,6 +1072,22 @@
     "bookFile": "data/euvs-books/1920-down-the-hatch.json"
   },
   {
+    "id": "1921-american-drinks-by-victor-hugo-himmelreich",
+    "year": 1921,
+    "decade": "1920s",
+    "title": "American Drinks",
+    "author": "Victor Hugo Himmelreich",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1921)",
+    "notes": "Manual Prohibición.",
+    "sectionCount": 2,
+    "recipeCount": 24,
+    "bookFile": "data/euvs-books/1921-american-drinks-by-victor-hugo-himmelreich.json"
+  },
+  {
     "id": "1922-quelques-recettes-pour-boissons-americaines",
     "year": 1922,
     "decade": "1920s",
@@ -1088,6 +1200,22 @@
     "bookFile": "data/euvs-books/1925-ca-buckstone-book-of-cocktails.json"
   },
   {
+    "id": "1925-der-mixologist-by-carl-a-seutter",
+    "year": 1925,
+    "decade": "1920s",
+    "title": "Der Mixologist",
+    "author": "Carl A. Seutter",
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": "Self-published",
+    "city": "Germany",
+    "edition": "First Edition (1925)",
+    "notes": "Manual alemán de Seutter.",
+    "sectionCount": 2,
+    "recipeCount": 62,
+    "bookFile": "data/euvs-books/1925-der-mixologist-by-carl-a-seutter.json"
+  },
+  {
     "id": "1925-drinks-long-short-by-nina-toye-and-a-h-adair",
     "year": 1925,
     "decade": "1920s",
@@ -1198,6 +1326,22 @@
     "sectionCount": 2,
     "recipeCount": 91,
     "bookFile": "data/euvs-books/1927-petits-et-grands-verres-choix-des-meilleures-recettes-de-cocktails.json"
+  },
+  {
+    "id": "1928-370-recettes-de-cocktails-par-jean-lupoiu",
+    "year": 1928,
+    "decade": "1920s",
+    "title": "370 Recettes de Cocktails",
+    "author": "Jean Lupoiu",
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": "Self-published",
+    "city": "Paris",
+    "edition": "First Edition (1928)",
+    "notes": "Manual francés Lupoiu 1928.",
+    "sectionCount": 2,
+    "recipeCount": 35,
+    "bookFile": "data/euvs-books/1928-370-recettes-de-cocktails-par-jean-lupoiu.json"
   },
   {
     "id": "1928-a-few-beverage-recipes",
@@ -1744,6 +1888,22 @@
     "bookFile": "data/euvs-books/1933-american-bar-guide-by-r-c-miller.json"
   },
   {
+    "id": "1933-bacchus-behave-by-alma-whitaker",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "Bacchus, Behave!",
+    "author": "Alma Whitaker",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933)",
+    "notes": "Manual humorístico post-Repeal.",
+    "sectionCount": 2,
+    "recipeCount": 7,
+    "bookFile": "data/euvs-books/1933-bacchus-behave-by-alma-whitaker.json"
+  },
+  {
     "id": "1933-cocktail-parade",
     "year": 1933,
     "decade": "1930s",
@@ -1934,6 +2094,22 @@
     "sectionCount": 17,
     "recipeCount": 78,
     "bookFile": "data/euvs-books/1933-the-merry-mixer-by-william-guyer.json"
+  },
+  {
+    "id": "1933-when-good-fellows-get-together-drink-and-service-manual",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "When Good Fellows Get Together",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933)",
+    "notes": "Manual post-Repeal.",
+    "sectionCount": 2,
+    "recipeCount": 3,
+    "bookFile": "data/euvs-books/1933-when-good-fellows-get-together-drink-and-service-manual.json"
   },
   {
     "id": "1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf",
@@ -2510,6 +2686,22 @@
     "sectionCount": 2,
     "recipeCount": 213,
     "bookFile": "data/euvs-books/1938-cocktails-by-jean-lupoiu.json"
+  },
+  {
+    "id": "1938-famous-orleans-drinks-and-how-to-mix-em-by-stanley-clisby-arthur",
+    "year": 1938,
+    "decade": "1930s",
+    "title": "Famous New Orleans Drinks and How to Mix 'Em",
+    "author": "Stanley Clisby Arthur",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "New Orleans",
+    "edition": "First Edition (1938)",
+    "notes": "⭐ Manual histórico de New Orleans, post-Repeal.",
+    "sectionCount": 2,
+    "recipeCount": 44,
+    "bookFile": "data/euvs-books/1938-famous-orleans-drinks-and-how-to-mix-em-by-stanley-clisby-arthur.json"
   },
   {
     "id": "1938-mixed-drinks-by-hotel-martinique-broadway",
