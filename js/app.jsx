@@ -1139,7 +1139,6 @@ const App = () => {
       minHeight: asDesktop ? '100dvh' : 0,
       overflow: asDesktop ? 'visible' : 'auto',
       WebkitOverflowScrolling: 'touch',
-      background: 'var(--bg-0)',
     }}>
 
       {updateAvailable && (
