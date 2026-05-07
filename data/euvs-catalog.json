@@ -1,5 +1,37 @@
 [
   {
+    "id": "1753-the-new-english-dispensatory-by-william-lewis",
+    "year": 1753,
+    "decade": "1750s",
+    "title": "The New English Dispensatory by William Lewis (1753)",
+    "author": null,
+    "language": "la",
+    "languageName": "la",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 83,
+    "bookFile": "data/euvs-books/1753-the-new-english-dispensatory-by-william-lewis.json"
+  },
+  {
+    "id": "1757-the-complete-distiller-by-ambrose-cooper",
+    "year": 1757,
+    "decade": "1750s",
+    "title": "The Complete Distiller by Ambrose Cooper (1757)",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 9,
+    "bookFile": "data/euvs-books/1757-the-complete-distiller-by-ambrose-cooper.json"
+  },
+  {
     "id": "1827-oxford-night-caps-by-richard-cook",
     "year": 1827,
     "decade": "1820s",
@@ -32,6 +64,22 @@
     "bookFile": "data/euvs-books/1827-oxford-night-caps-by-richard-cook-2.json"
   },
   {
+    "id": "1827-wine-and-spirit-adulterators-unmasked",
+    "year": 1827,
+    "decade": "1820s",
+    "title": "1827 Wine and spirit adulterators unmasked",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 10,
+    "bookFile": "data/euvs-books/1827-wine-and-spirit-adulterators-unmasked.json"
+  },
+  {
     "id": "1835-oxford-night-caps-by-richard-cook",
     "year": 1835,
     "decade": "1830s",
@@ -62,6 +110,38 @@
     "sectionCount": 2,
     "recipeCount": 23,
     "bookFile": "data/euvs-books/1847-oxford-night-caps-by-richard-cook.json"
+  },
+  {
+    "id": "1851-the-modern-houeswife-or-menagere-by-soyer",
+    "year": 1851,
+    "decade": "1850s",
+    "title": "The Modern Houeswife or Ménagère by Soyer (1851)",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 11,
+    "bookFile": "data/euvs-books/1851-the-modern-houeswife-or-menagere-by-soyer.json"
+  },
+  {
+    "id": "1857-the-bordeaux-wine-and-liquor-dealers-guide",
+    "year": 1857,
+    "decade": "1850s",
+    "title": "1857 The Bordeaux wine and liquor dealers' guide",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 16,
+    "bookFile": "data/euvs-books/1857-the-bordeaux-wine-and-liquor-dealers-guide.json"
   },
   {
     "id": "1859-the-book-of-one-hundred-beverages-by-william-bernhard",
@@ -126,6 +206,38 @@
     "sectionCount": 2,
     "recipeCount": 22,
     "bookFile": "data/euvs-books/1863-cups-their-custom-by-henry-porter-george-roberts.json"
+  },
+  {
+    "id": "1863-the-manufacture-of-liquors-wines-and-cordials",
+    "year": 1863,
+    "decade": "1860s",
+    "title": "1863 The manufacture of liquors, wines, and cordials",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 47,
+    "bookFile": "data/euvs-books/1863-the-manufacture-of-liquors-wines-and-cordials.json"
+  },
+  {
+    "id": "1868-the-complete-practical-distiller",
+    "year": 1868,
+    "decade": "1860s",
+    "title": "1868 The complete Practical Distiller",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 21,
+    "bookFile": "data/euvs-books/1868-the-complete-practical-distiller.json"
   },
   {
     "id": "1869-cooling-cups-and-dainty-drinks-by-william-terrington",
@@ -288,6 +400,22 @@
     "bookFile": "data/euvs-books/1876-the-bar-tenders-guide-or-how-to-mix-all-kinds-of-plain-and-fancy-drinks-by-jerry-thomas.json"
   },
   {
+    "id": "1876-traite-de-la-fabrication-des-liqueurs-et-de-la-distillation-des-alcools",
+    "year": 1876,
+    "decade": "1870s",
+    "title": "1876 Traité de la Fabrication des liqueurs et de la distillation des alcools",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 9,
+    "bookFile": "data/euvs-books/1876-traite-de-la-fabrication-des-liqueurs-et-de-la-distillation-des-alcools.json"
+  },
+  {
     "id": "1878-american-and-other-drinks",
     "year": 1878,
     "decade": "1870s",
@@ -320,6 +448,22 @@
     "bookFile": "data/euvs-books/1879-drinks-and-how-to-make-them-by-yeatman-co.json"
   },
   {
+    "id": "1879-facts-about-champagne-and-other-sparkling-wines",
+    "year": 1879,
+    "decade": "1870s",
+    "title": "1879 Facts About Champagne and Other Sparkling Wines",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 10,
+    "bookFile": "data/euvs-books/1879-facts-about-champagne-and-other-sparkling-wines.json"
+  },
+  {
     "id": "1880-american-other-drinks-by-leo-engel-second-edition",
     "year": 1880,
     "decade": "1880s",
@@ -334,6 +478,22 @@
     "sectionCount": 2,
     "recipeCount": 181,
     "bookFile": "data/euvs-books/1880-american-other-drinks-by-leo-engel-second-edition.json"
+  },
+  {
+    "id": "1880-facts-about-port-and-madeira-by-henry-vizetelly",
+    "year": 1880,
+    "decade": "1880s",
+    "title": "1880 Facts about Port and Madeira by Henry Vizetelly",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 11,
+    "bookFile": "data/euvs-books/1880-facts-about-port-and-madeira-by-henry-vizetelly.json"
   },
   {
     "id": "1881-american-and-other-drinks-second-edition-hard-cover-by-leo-engel",
@@ -462,6 +622,22 @@
     "sectionCount": 2,
     "recipeCount": 121,
     "bookFile": "data/euvs-books/1884-the-modern-bartenders-guide-by-o-h-byron-paper-wrap.json"
+  },
+  {
+    "id": "1885-new-guide-hotel-bar-restaurant",
+    "year": 1885,
+    "decade": "1880s",
+    "title": "1885 New Guide Hotel Bar Restaurant",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 36,
+    "bookFile": "data/euvs-books/1885-new-guide-hotel-bar-restaurant.json"
   },
   {
     "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition",
@@ -848,6 +1024,22 @@
     "bookFile": "data/euvs-books/1900-modern-american-drinks-by-j-kappeler.json"
   },
   {
+    "id": "1902-156-recettes-de-boissons-americaines-by-n-larsen",
+    "year": 1902,
+    "decade": "1900s",
+    "title": "1902 156 Recettes de Boissons Américaines by N Larsen",
+    "author": null,
+    "language": "fr",
+    "languageName": "Francés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 16,
+    "bookFile": "data/euvs-books/1902-156-recettes-de-boissons-americaines-by-n-larsen.json"
+  },
+  {
     "id": "1904-applegreens-bar-book-by-john-applegreen",
     "year": 1904,
     "decade": "1900s",
@@ -1102,6 +1294,22 @@
     "sectionCount": 2,
     "recipeCount": 23,
     "bookFile": "data/euvs-books/1909-guia-pratica-del-cantinero-bar-tender.json"
+  },
+  {
+    "id": "1909-manual-del-cantinero-by-carlos-golfrin",
+    "year": 1909,
+    "decade": "1900s",
+    "title": "1909 Manual del Cantinero by Carlos Golfrin",
+    "author": null,
+    "language": "es",
+    "languageName": "Español",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 6,
+    "bookFile": "data/euvs-books/1909-manual-del-cantinero-by-carlos-golfrin.json"
   },
   {
     "id": "1909-recipes-of-american-and-other-iced-drinks",
@@ -1392,6 +1600,22 @@
     "bookFile": "data/euvs-books/1913-bartenders-manual-bartenders-association-of-america.json"
   },
   {
+    "id": "1913-lexicon-der-getranke-by-hans-schonfeld-and-john-leybold",
+    "year": 1913,
+    "decade": "1910s",
+    "title": "1913 Lexicon der Getränke by Hans Schonfeld and John Leybold",
+    "author": null,
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 5,
+    "bookFile": "data/euvs-books/1913-lexicon-der-getranke-by-hans-schonfeld-and-john-leybold.json"
+  },
+  {
     "id": "1913-the-up-to-date-bartenders-guide-by-harry-montague",
     "year": 1913,
     "decade": "1910s",
@@ -1582,6 +1806,22 @@
     "sectionCount": 2,
     "recipeCount": 16,
     "bookFile": "data/euvs-books/1917-the-reminder-by-jacob-a-didier-5th-edition.json"
+  },
+  {
+    "id": "1918-home-brewed-wines-and-beers-and-bartenders-guide",
+    "year": 1918,
+    "decade": "1910s",
+    "title": "1918 Home Brewed Wines and Beers and Bartender's Guide",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 32,
+    "bookFile": "data/euvs-books/1918-home-brewed-wines-and-beers-and-bartenders-guide.json"
   },
   {
     "id": "1919-home-made-beverages",
@@ -1936,6 +2176,22 @@
     "bookFile": "data/euvs-books/1925-summer-drinks-and-winter-codials-by-c-f-leyel.json"
   },
   {
+    "id": "1926-cocktails-by-w-slagter",
+    "year": 1926,
+    "decade": "1920s",
+    "title": "1926 Cocktails by W Slagter",
+    "author": null,
+    "language": "mixed",
+    "languageName": "Holandés/Inglés (mixto)",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 82,
+    "bookFile": "data/euvs-books/1926-cocktails-by-w-slagter.json"
+  },
+  {
     "id": "1926-the-cocktail-book-a-sideboard-manual-for-gentlemen",
     "year": 1926,
     "decade": "1920s",
@@ -2014,6 +2270,22 @@
     "sectionCount": 2,
     "recipeCount": 347,
     "bookFile": "data/euvs-books/1927-drinks-of-all-kinds.json"
+  },
+  {
+    "id": "1927-el-arte-de-hacer-un-cocktail-y-algo-mas",
+    "year": 1927,
+    "decade": "1920s",
+    "title": "El Arte de Hacer un Cocktail y Algo Mas (1927)",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 75,
+    "bookFile": "data/euvs-books/1927-el-arte-de-hacer-un-cocktail-y-algo-mas.json"
   },
   {
     "id": "1927-el-bar-americano-en-espana-by-pedro-chicote",
@@ -3328,6 +3600,22 @@
     "bookFile": "data/euvs-books/1934-my-new-cocktail-book-2-nd-edition-by-g-f-steele.json"
   },
   {
+    "id": "1934-rund-um-die-bar-ein-lehrbuch-fur-bartender-und-mixer",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "1934 Rund um die Bar Ein Lehrbuch für Bartender und Mixer",
+    "author": null,
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 17,
+    "bookFile": "data/euvs-books/1934-rund-um-die-bar-ein-lehrbuch-fur-bartender-und-mixer.json"
+  },
+  {
     "id": "1934-sloppy-joes-bar",
     "year": 1934,
     "decade": "1930s",
@@ -3598,6 +3886,22 @@
     "sectionCount": 2,
     "recipeCount": 19,
     "bookFile": "data/euvs-books/1935-so-red-the-nose-or-breath-in-the-afternoon.json"
+  },
+  {
+    "id": "1935-the-barkeepers-golden-book-by-o-blunier",
+    "year": 1935,
+    "decade": "1930s",
+    "title": "1935 The Barkeeper's Golden Book by O Blunier",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 78,
+    "bookFile": "data/euvs-books/1935-the-barkeepers-golden-book-by-o-blunier.json"
   },
   {
     "id": "1936-cocktails-and-appetizers-by-a-connnoisseur",
@@ -4208,6 +4512,22 @@
     "bookFile": "data/euvs-books/1948-cocktails-by-jean-lupoiu.json"
   },
   {
+    "id": "1948-el-arte-del-cantinero-by-hilaro-alonso-sanchez",
+    "year": 1948,
+    "decade": "1940s",
+    "title": "El Arte del Cantinero by Hilaro Alonso Sanchez (1948)",
+    "author": null,
+    "language": "es",
+    "languageName": "Español",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 92,
+    "bookFile": "data/euvs-books/1948-el-arte-del-cantinero-by-hilaro-alonso-sanchez.json"
+  },
+  {
     "id": "1948-ron-daiquiri-coctelera-cocktail-book-habana-cuba",
     "year": 1948,
     "decade": "1940s",
@@ -4286,6 +4606,22 @@
     "sectionCount": 5,
     "recipeCount": 16,
     "bookFile": "data/euvs-books/1950-cinzano-en-el-cocktail.json"
+  },
+  {
+    "id": "1950-der-perfekte-mixer-by-martin-heile",
+    "year": 1950,
+    "decade": "1950s",
+    "title": "1950 - Der_Perfekte_Mixer by Martin Heile",
+    "author": null,
+    "language": "de",
+    "languageName": "Alemán",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 25,
+    "bookFile": "data/euvs-books/1950-der-perfekte-mixer-by-martin-heile.json"
   },
   {
     "id": "1950-el-barman-practico-de-julio-cesar-clave",
@@ -4382,5 +4718,53 @@
     "sectionCount": 2,
     "recipeCount": 36,
     "bookFile": "data/euvs-books/1959-manzarbeitia-y-compania-cocktail-book.json"
+  },
+  {
+    "id": "1960-recetaria-bols-by-erven-lucas-bols-sa",
+    "year": 1960,
+    "decade": "1960s",
+    "title": "1960 Recetaria Bols by Erven Lucas Bols SA",
+    "author": null,
+    "language": "mixed",
+    "languageName": "Holandés/Inglés (mixto)",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 38,
+    "bookFile": "data/euvs-books/1960-recetaria-bols-by-erven-lucas-bols-sa.json"
+  },
+  {
+    "id": "1961-cocktails-y-bocaditos-2-edicion",
+    "year": 1961,
+    "decade": "1960s",
+    "title": "1961 COCKTAILS Y BOCADITOS 2° EDICIÓN",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 71,
+    "bookFile": "data/euvs-books/1961-cocktails-y-bocaditos-2-edicion.json"
+  },
+  {
+    "id": "1966-tratado-practico-de-cocteleria-pasteleria-y-afines-enzo-antonetti-y-mario-kardahi",
+    "year": 1966,
+    "decade": "1960s",
+    "title": "1966 TRATADO PRÁCTICO DE COCTELERÍA, PASTELERÍA Y AFINES. ENZO ANTONETTI Y MARIO KARDAHI",
+    "author": null,
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": null,
+    "city": null,
+    "edition": null,
+    "notes": "",
+    "sectionCount": 1,
+    "recipeCount": 24,
+    "bookFile": "data/euvs-books/1966-tratado-practico-de-cocteleria-pasteleria-y-afines-enzo-antonetti-y-mario-kardahi.json"
   }
 ]
