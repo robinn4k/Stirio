@@ -48,6 +48,22 @@
     "bookFile": "data/euvs-books/1862-jerry-thomas-bartenders-guide.json"
   },
   {
+    "id": "1884-american-and-other-drinks-1-st-edition-by-charlie-paul",
+    "year": 1884,
+    "decade": "1880s",
+    "title": "American & Other Drinks (1st edition)",
+    "author": "Charlie Paul (of the Aquarium, late of Paris and New York)",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "T. F. Shaw and Co., Plough Court, Fetter Lane, E.C.",
+    "city": "London",
+    "edition": "First Edition (1884)",
+    "notes": "Bartender del Royal Aquarium de Londres tras temporadas en París y Nueva York. Presenta los 'American Drinks' como innovación estadounidense. 97 recetas en 4 secciones (Short Drinks, Punches for Parties, Hot Drinks). Skeleton custom rebuilt usando el patrón 'N—NAME.' del cuerpo (98 cabeceras detectadas, 1 marcador de sección descartado). Parser prose-aware extrae ingredientes embebidos en prosa ('half a teaspoonful of X', 'three or four drops of Y', 'the yolk of an egg', 'half a lemon'). ~65% de recetas con ingredientes parseados; el resto conserva method_original íntegro.",
+    "sectionCount": 2,
+    "recipeCount": 97,
+    "bookFile": "data/euvs-books/1884-american-and-other-drinks-1-st-edition-by-charlie-paul.json"
+  },
+  {
     "id": "1893-beverages-and-sandwiches-for-your-husbands-friends-1893",
     "year": 1893,
     "decade": "1890s",
