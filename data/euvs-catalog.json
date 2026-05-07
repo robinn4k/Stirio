@@ -128,6 +128,22 @@
     "bookFile": "data/euvs-books/1884-how-to-mix-drinks-bar-keepers-handbook-1884.json"
   },
   {
+    "id": "1884-the-modern-bartenders-guide-by-o-h-byron",
+    "year": 1884,
+    "decade": "1880s",
+    "title": "The Modern Bartenders' Guide",
+    "author": "O. H. Byron",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Excelsior Publishing House",
+    "city": "New York",
+    "edition": "First Edition (1884)",
+    "notes": "⭐ Manual histórico de O.H. Byron — incluye una de las primeras descripciones del Manhattan Cocktail.",
+    "sectionCount": 2,
+    "recipeCount": 121,
+    "bookFile": "data/euvs-books/1884-the-modern-bartenders-guide-by-o-h-byron.json"
+  },
+  {
     "id": "1888-bartenders-manual-by-theodore-proulx-revised-edition",
     "year": 1888,
     "decade": "1880s",
@@ -142,6 +158,22 @@
     "sectionCount": 2,
     "recipeCount": 90,
     "bookFile": "data/euvs-books/1888-bartenders-manual-by-theodore-proulx-revised-edition.json"
+  },
+  {
+    "id": "1891-drinks-a-la-mode-by-mrs-de-salis",
+    "year": 1891,
+    "decade": "1890s",
+    "title": "Drinks à La Mode",
+    "author": "Mrs. De Salis",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "UK",
+    "edition": "First Edition (1891)",
+    "notes": "Manual victoriano UK de Mrs. de Salis — autora de la serie 'à la Mode' de cookery + drinks.",
+    "sectionCount": 2,
+    "recipeCount": 68,
+    "bookFile": "data/euvs-books/1891-drinks-a-la-mode-by-mrs-de-salis.json"
   },
   {
     "id": "1893-beverages-and-sandwiches-for-your-husbands-friends-1893",
@@ -1040,6 +1072,22 @@
     "bookFile": "data/euvs-books/1933-the-cocktail-book-repeal-edition-new-revised-edition.json"
   },
   {
+    "id": "1933-the-home-bartender",
+    "year": 1933,
+    "decade": "1930s",
+    "title": "The Home Bartender",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1933, post-Repeal)",
+    "notes": "Manual post-Repeal para el bartender casero.",
+    "sectionCount": 2,
+    "recipeCount": 315,
+    "bookFile": "data/euvs-books/1933-the-home-bartender.json"
+  },
+  {
     "id": "1933-the-merry-mixer-by-william-guyer",
     "year": 1933,
     "decade": "1930s",
@@ -1070,6 +1118,22 @@
     "sectionCount": 2,
     "recipeCount": 115,
     "bookFile": "data/euvs-books/1934-100-famous-cocktails-second-printing-by-oscar-of-the-waldorf.json"
+  },
+  {
+    "id": "1934-a-lifetime-collection-of-688-recipes-for-drinks",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "A Lifetime Collection of 688 Recipes for Drinks",
+    "author": "Anonymous",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "First Edition (1934, post-Repeal)",
+    "notes": "Compendio post-Repeal de 688 recetas.",
+    "sectionCount": 2,
+    "recipeCount": 9,
+    "bookFile": "data/euvs-books/1934-a-lifetime-collection-of-688-recipes-for-drinks.json"
   },
   {
     "id": "1934-angostura-recipes",
@@ -1214,6 +1278,22 @@
     "sectionCount": 5,
     "recipeCount": 32,
     "bookFile": "data/euvs-books/1934-lairds-applejack-how-to-serve-recipes.json"
+  },
+  {
+    "id": "1934-my-new-cocktail-book-2-nd-edition-by-g-f-steele",
+    "year": 1934,
+    "decade": "1930s",
+    "title": "My New Cocktail Book (2nd Edition)",
+    "author": "G. F. Steele",
+    "language": "en",
+    "languageName": "Inglés",
+    "publisher": "Self-published",
+    "city": "USA",
+    "edition": "Second Edition (1934, post-Repeal)",
+    "notes": "Manual post-Repeal de G.F. Steele en su 2ª edición.",
+    "sectionCount": 2,
+    "recipeCount": 54,
+    "bookFile": "data/euvs-books/1934-my-new-cocktail-book-2-nd-edition-by-g-f-steele.json"
   },
   {
     "id": "1934-sloppy-joes-bar",
