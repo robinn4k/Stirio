@@ -450,14 +450,29 @@
       "name_original": "BACARDI",
       "name_es": "BACARDI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lime",
+          "item_es": "zumo de lima",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well in crushed ice. Shake well and pour into champagne glass, filled with",
       "method_es": "Shake well in crushed ice. Shake well and pour into champagne glass, filled with",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "BACARDI\n             2 jiggers Bacardi\n             2 Limes\n             A little Sugar\n             A little Grenadine\n          Shake well in crushed ice.\nBACARDI No. 2\n             Juice of 1 Lime\n                   tablespoonful Sugar or 54 oz. Rock Candy Syrup\n             A drink of Bacardi\n             A glass of Pineapple Juice\n          Shake well and pour into champagne glass, filled with\n          shaved ice.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-013",
@@ -1525,14 +1540,29 @@
       "name_original": "CLARET PUNCH",
       "name_es": "CLARET PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "CLARET PUNCH\n        1J4 tablespoons Sugar\n             1 slice Lemon\n           2 slices Orange\n—         Fill glass with fine ice. Pour in claret wine. Shake well. Dress\n          with fruit in season, and serve with a straw.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-047",
@@ -1984,14 +2014,29 @@
       "name_original": "EAGLE PUNCH",
       "name_es": "EAGLE PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "monongahela",
+          "item_es": "monongahela",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "EAGLE PUNCH\n             1 bottle of Whiskey\n             1 bottle of Monongahela\n             Lemon Peel, Sugar and—boiling Water",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-060",
@@ -2521,14 +2566,36 @@
       "name_original": "GOLDEN DAWN",
       "name_es": "GOLDEN DAWN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cointreau",
+          "item_es": "Cointreau",
+          "amount": "54",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "54",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "apricot brandy",
+          "item_es": "brandy de albaricoque",
+          "amount": "54",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "GOLDEN DAWN\n           Juice 54 Lemon or 54 oz. Lemon Mixer\n           White of Egg                                                                                                            ,I\n           54 oz. Cointreau\n           54 oz. Dry Gin\n           54 oz. Apricot Brandy\n           Dash Grenadine\n           Use champagne glass, fill stem with Green Creme de Menthe,\n           plug end with Cherry.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-078",
@@ -2982,14 +3049,22 @@
       "name_original": "HOT WHISKEY PUNCH",
       "name_es": "HOT WHISKEY PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "scotch or irish whiskey",
+          "item_es": "scotch or irish whiskey",
+          "amount": "2",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with boiling water and place on top a thin slice",
       "method_es": "Fill glass with boiling water and place on top a thin slice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "HOT WHISKEY PUNCH\n           The juice of half a Lemon, one or two lumps of Sugar\n           dissolved in 1 wine-glass hot Water.\n           2 wine-glasses Scotch or Irish Whiskey\n           Fill glass with boiling water and place on top a thin slice\n           of lemon or a piece of the peel. Some grate a little nutmeg\n           on top.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-094",
@@ -3244,14 +3319,29 @@
       "name_original": "LEMONADE FOR PARTIES",
       "name_es": "LEMONADE FOR PARTIES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lemons",
+          "item_es": "zumo de lemons",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "boiling water",
+          "item_es": "agua hirviendo",
+          "amount": "1",
+          "unit": "gallon",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "LEMONADE FOR PARTIES\n                                    (Use a punch bowl—1 gallon)\n          Take the rind of 8 Lemons\n          Juice of 12 Lemons\n          2 lbs. of Loaf Sugar\n          1 gallon of boiling Water\n          Rub the rinds of the 8 lemons in the sugar until it has ab\n          sorbed all the oil, and put it with the remainder of the sugar\n          in a jug; add the lemon juice and pour the boiling water over\n          the whole. When the sugar is dissolved, strain the lemonade\n          through a piece of muslin, and when cool, it will be ready\n          for use. To improve the lemonade add the white of 4 eggs\n          beaten up with it.\n22                                                                                  FANCY                     DRINKS —\n(iMiiiiiintiiiiititiiiiiiiiiitniiniiiiiiniiiiiiuiiiiiniiiniiiiniiiiiiiinnniinniiniiiiiiiiiiiiiitiiiuimiiiiiiiiiiinniiniuimiiniiiuiiiiiiiiuiD",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-102",
@@ -4114,14 +4204,43 @@
       "name_original": "PINEAPPLE JULEP",
       "name_es": "PINEAPPLE JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "bottle sparkling moselle",
+          "item_es": "bottle sparkling moselle",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Put all the materials in a glass bowl, ice, and serve in cocktail",
       "method_es": "Put all the materials in a glass bowl, ice, and serve in cocktail",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "PINEAPPLE JULEP\n   The juice of two Oranges\n          1 gill of Raspberry Syrup\n          1 gill of Maraschino\n          1 gill of Gin\n          1 quart bottle Sparkling Moselle\n          1 ripe Pineapple, peeled and sliced small and cut up\n          Put all the materials in a glass bowl, ice, and serve in cocktail\n          glasses, ornamented with berries in season.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-126",
@@ -4131,14 +4250,36 @@
       "name_original": "PINEAPPLE PUNCH",
       "name_es": "PINEAPPLE PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "2",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "2",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "juice of lemons",
+          "item_es": "zumo de lemons",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "PINEAPPLE PUNCH\n          Take 8 bottles of Champagne\n          2 pints of Jamaica Rum\n          2 pints of Brandy\n          2 gills of Curacao\n          Juice of 6 Lemons\n          4 Pineapples sliced\n          Sweeten to taste with pulverized white sugar.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-127",
@@ -5495,14 +5636,22 @@
       "name_original": "STINGER",
       "name_es": "STINGER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well with ice, strain and serve.",
       "method_es": "Shake well with ice, strain and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "STINGER\n           yz jigger Cognac\n          /z jigger Creme de Menthe\n          Shake well with ice, strain and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1935-fancy-drinks-how-to-mix-them-171",

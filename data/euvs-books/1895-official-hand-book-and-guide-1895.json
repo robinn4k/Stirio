@@ -1361,13 +1361,21 @@
       "category": "cocktail",
       "name_es": "Gin and Wormwood",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin.  serve the same as gin and",
+          "item_es": "gin.  serve the same as gin and",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "small whiskey glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 62,
@@ -2535,13 +2543,21 @@
       "category": "flip",
       "name_es": "Rum Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine nutmeg, 2 dashes of rum",
+          "item_es": "fine nutmeg, 2 dashes of rum",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "two large cups.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 115,

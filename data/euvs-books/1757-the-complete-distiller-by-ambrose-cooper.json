@@ -151,13 +151,28 @@
       "category": "cocktail",
       "name_es": "CHAP, XXXI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "; peels of oranges and citrons",
+          "item_es": "; peels of oranges and citrons",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "; myrrh four ounces ; cloves |",
+          "item_es": "; myrrh four ounces ; cloves |",
+          "amount": "8",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Of Spiritum. Praniropal Water. \"T*HE Plant from whence this Watet = hasits Name has been already deferib- ed Chap, zMi. Part II. . Recipe For ten Gallons of Spiritusus Penni« B royal IF ater, — \"Take of the Leaves of Pennizoyal dried fifteen Pounds; Proof Spirit ten Gallons ;_ AW ater two Gallons: d",
       "method_es": "Of Spiritum. Praniropal Water. \"T*HE Plant from whence this Watet = hasits Name has been already deferib- ed Chap, zMi. Part II. . Recipe For ten Gallons of Spiritusus Penni« B royal IF ater, — \"Take of the Leaves of Pennizoyal dried fifteen Pounds; Proof Spirit ten Gallons ;_ AW ater two Gallons: d",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -168,13 +183,21 @@
       "category": "cocktail",
       "name_es": "CHAP. LXI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "the effence of ambergrife",
+          "item_es": "the effence of ambergrife",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "- Of Veftal Water, or Eau de Vettale. HIS isa very agreeable Water, and has been long in ufe in feveral Parts of Europe. | Recipe for a Gallon of Vefial Water. Take of the Seeds of Daucus Creticus or Candy Carrots, two Ounces; Spitit of Wine a Gallon; Water two Quarts. Diftil in Balneum Marie till t",
       "method_es": "- Of Veftal Water, or Eau de Vettale. HIS isa very agreeable Water, and has been long in ufe in feveral Parts of Europe. | Recipe for a Gallon of Vefial Water. Take of the Seeds of Daucus Creticus or Candy Carrots, two Ounces; Spitit of Wine a Gallon; Water two Quarts. Diftil in Balneum Marie till t",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

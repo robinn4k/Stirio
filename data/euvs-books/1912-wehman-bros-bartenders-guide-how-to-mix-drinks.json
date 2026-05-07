@@ -40,13 +40,42 @@
       "category": "cocktail",
       "name_es": "LEMONADE POWDERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "o f su gar",
+          "item_es": "o f su gar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "su1<ar, di ssol ved in a little w a t er",
+          "item_es": "su1<ar, di ssol ved in a little w a t er",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "stirred b riskl y in a tumble r of wa t e r, will make a ver y pleas- Fill up the glass with seltzer water, stir up well with a Stir u p well with a spoou, rtlllUYtO tl.Je ice and serve. Fill up with water; stir well; drPSS t.op with fruits, and Mix all thoroughly together; place a t hins1ice o. e o Fill glass with ginger a le, stir and serve. Fill balance with seltzer.",
       "method_es": "stirred b riskl y in a tumble r of wa t e r, will make a ver y pleas- Fill up the glass with seltzer water, stir up well with a Stir u p well with a spoou, rtlllUYtO tl.Je ice and serve. Fill up with water; stir well; drPSS t.op with fruits, and Mix all thoroughly together; place a t hins1ice o. e o Fill glass with ginger a le, stir and serve. Fill balance with seltzer.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +86,21 @@
       "category": "cocktail",
       "name_es": "MULLED ALE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +128,56 @@
       "category": "cocktail",
       "name_es": "ORANGEADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "b !onedictine",
+          "item_es": "b !onedictine",
+          "amount": "0.333",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa       '",
+          "item_es": "curacoa       '",
+          "amount": "0.333",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch w'asser",
+          "item_es": "kirsch w'asser",
+          "amount": "0.333",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitter s.           •",
+          "item_es": "bitter s.           •",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "r a spberr y syrup",
+          "item_es": "r a spberr y syrup",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cura coa",
+          "item_es": "cura coa",
+          "amount": "0.25",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Pour brandy in c ..r ef ully, so as not to diat urb the ch ar-",
       "method_es": "Pour brandy in c ..r ef ully, so as not to diat urb the ch ar-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +188,63 @@
       "category": "cocktail",
       "name_es": "FAMILY BEER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "c rer..m of tar tar",
+          "item_es": "c rer..m of tar tar",
+          "amount": "10",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "2",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "molas~es",
+          "item_es": "molas~es",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "g round gin ger",
+          "item_es": "g round gin ger",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "boiling water",
+          "item_es": "agua hirviendo",
+          "amount": "2",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "molasses",
+          "item_es": "molasses",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "of.h ops.                                     .•",
+          "item_es": "of.h ops.                                     .•",
+          "amount": "6",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Stir wPll together. Put in n keg. Ad<l a pint of good yeR;St ; Mix th or oughl y a nd le t i t stand fo r one d ay (24 h ou r s), w h e n Mix four qu a rts ~ f molasses with thirteen gallons of water.",
       "method_es": "Stir wPll together. Put in n keg. Ad<l a pint of good yeR;St ; Mix th or oughl y a nd le t i t stand fo r one d ay (24 h ou r s), w h e n Mix four qu a rts ~ f molasses with thirteen gallons of water.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +255,28 @@
       "category": "cocktail",
       "name_es": "ROOT BEER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "wi nte rg reen",
+          "item_es": "wi nte rg reen",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "o f sassa fras",
+          "item_es": "o f sassa fras",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +287,28 @@
       "category": "cocktail",
       "name_es": "SPRUCE BEER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "essence of g in ger",
+          "item_es": "essence of g in ger",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "essence of g1·ound a llspice",
+          "item_es": "essence of g1·ound a llspice",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Put. in a keg, a nd wh en cold nrl d onA qua r t of yeast ; after",
       "method_es": "Put. in a keg, a nd wh en cold nrl d onA qua r t of yeast ; after",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +319,70 @@
       "category": "cocktail",
       "name_es": "WAHOO BEER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "s weet fern",
+          "item_es": "s weet fern",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "sassa fras",
+          "item_es": "sassa fras",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "prin ce's pine",
+          "item_es": "prin ce's pine",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "o f comfrey ~oot",
+          "item_es": "o f comfrey ~oot",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "solomon\"s seal",
+          "item_es": "solomon\"s seal",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "r a w potatoes",
+          "item_es": "r a w potatoes",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "4",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "gen t i1m r oot",
+          "item_es": "gen t i1m r oot",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "add t wo ga llo::is of bra nd y. .Ma cer atk for abo ut a m on t h,",
       "method_es": "add t wo ga llo::is of bra nd y. .Ma cer atk for abo ut a m on t h,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -176,13 +393,49 @@
       "category": "cocktail",
       "name_es": "ESSENCE OF BITTERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "o f r ectifi ed spiri ts (60 0. p.)",
+          "item_es": "o f r ectifi ed spiri ts (60 0. p.)",
+          "amount": "6",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "o f burned su ga r",
+          "item_es": "o f burned su ga r",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "or s yrup",
+          "item_es": "or s yrup",
+          "amount": "7",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "ch.i'~. wrne,    \\",
+          "item_es": "ch.i'~. wrne,    \\",
+          "amount": "2",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "proof sp11·1t",
+          "item_es": "proof sp11·1t",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "mixed tog~ther, a nd first t h e coloring and th e n th\" SF'!l>",
       "method_es": "mixed tog~ther, a nd first t h e coloring and th e n th\" SF'!l>",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +446,112 @@
       "category": "cocktail",
       "name_es": "AQUA BIANCA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "es~enc e of lemon",
+          "item_es": "es~enc e of lemon",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "essence of cilt·on",
+          "item_es": "essence of cilt·on",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "essence of amber",
+          "item_es": "essence of amber",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "essence of peppermi\"\\t",
+          "item_es": "essence of peppermi\"\\t",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "essence of bngamor",
+          "item_es": "essence of bngamor",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "ess!lnce of rose",
+          "item_es": "ess!lnce of rose",
+          "amount": "0.5",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "12",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "essence of saffron",
+          "item_es": "essence of saffron",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "proof sr.irit",
+          "item_es": "proof sr.irit",
+          "amount": "2",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "cap1llaire",
+          "item_es": "cap1llaire",
+          "amount": "0.5",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "orange fiower water",
+          "item_es": "orange fiower water",
+          "amount": "0.25",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "capill a ire",
+          "item_es": "capill a ire",
+          "amount": "4",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "ors nge p eel, cut small",
+          "item_es": "ors nge p eel, cut small",
+          "amount": "6",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "capillaire",
+          "item_es": "capillaire",
+          "amount": "2",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Mix a ll together; shake frequently, and in °u' l.\"'nnth fiJ •,er Mix all t ogeth er, and in one month press and filter. This",
       "method_es": "Mix a ll together; shake frequently, and in °u' l.\"'nnth fiJ •,er Mix all t ogeth er, and in one month press and filter. This",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +562,35 @@
       "category": "cocktail",
       "name_es": "EAU D'ABSINTHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ange'lica r oot",
+          "item_es": "ange'lica r oot",
+          "amount": "0.25",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "cinnamon ba1·k",
+          "item_es": "cinnamon ba1·k",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "orange flower water",
+          "item_es": "orange flower water",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +601,119 @@
       "category": "cocktail",
       "name_es": "EAU D'AMIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "s of rai s in ~",
+          "item_es": "s of rai s in ~",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "date~. 1",
+          "item_es": "date~. 1",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "e~sp n ce of be 1'gamot",
+          "item_es": "e~sp n ce of be 1'gamot",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "essence of citro n",
+          "item_es": "essence of citro n",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "dis lilled wate1·",
+          "item_es": "dis lilled wate1·",
+          "amount": "6",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "20",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "o'f cinnamon bnr k, bruised",
+          "item_es": "o'f cinnamon bnr k, bruised",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "powcler~d mace",
+          "item_es": "powcler~d mace",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "o f powde red nutmeg",
+          "item_es": "o f powde red nutmeg",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "distilled water,          \\",
+          "item_es": "distilled water,          \\",
+          "amount": "2",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "capiilait·e",
+          "item_es": "capiilait·e",
+          "amount": "1",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "very thi n orange p eel",
+          "item_es": "very thi n orange p eel",
+          "amount": "6",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "distilled w a t e r",
+          "item_es": "distilled w a t e r",
+          "amount": "3",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "whi te syrup",
+          "item_es": "whi te syrup",
+          "amount": "1",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "essen c\" of strawb erry",
+          "item_es": "essen c\" of strawb erry",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -261,13 +741,21 @@
       "category": "cocktail",
       "name_es": "VANILLA SY RUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "extraot of vanilla",
+          "item_es": "extraot of vanilla",
+          "amount": "0.5",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "strain, or fil ter into a nothe r k eg In which you he.ve burned a.",
       "method_es": "strain, or fil ter into a nothe r k eg In which you he.ve burned a.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +766,35 @@
       "category": "cocktail",
       "name_es": "BLACK CURRANT WINE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "5",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "s pirits, 95 per cen t. above proof . filter and bot-",
+          "item_es": "s pirits, 95 per cen t. above proof . filter and bot-",
+          "amount": "1",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "wate r",
+          "item_es": "wate r",
+          "amount": "12",
+          "unit": "gallon",
+          "notes": null
+        }
+      ],
       "method_original": "Add yea.st, an.: ~ 3t a side to f ermeu t.",
       "method_es": "Add yea.st, an.: ~ 3t a side to f ermeu t.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -397,13 +907,21 @@
       "category": "cocktail",
       "name_es": "CINNAMON CORDIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bolling water",
+          "item_es": "bolling water",
+          "amount": "4",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -414,13 +932,21 @@
       "category": "cocktail",
       "name_es": "CLOVES CORDIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "white syrup",
+          "item_es": "white syrup",
+          "amount": "6",
+          "unit": "gallon",
+          "notes": null
+        }
+      ],
       "method_original": "shake a ll t oge the r, and i f no~ brig qt in a ' f e w h ou rs, fine Add three gallons of pure sp1r: ts, 95 per cent. above; filter Let this be stramed through m ushn. Throw the g inger from add 1en pounds of refined sugar.                    ·",
       "method_es": "shake a ll t oge the r, and i f no~ brig qt in a ' f e w h ou rs, fine Add three gallons of pure sp1r: ts, 95 per cent. above; filter Let this be stramed through m ushn. Throw the g inger from add 1en pounds of refined sugar.                    ·",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -516,13 +1042,35 @@
       "category": "cocktail",
       "name_es": "STRAWBERRY CORDIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "essence of sh'h,wber r y",
+          "item_es": "essence of sh'h,wber r y",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "tinc ture o f c udbear",
+          "item_es": "tinc ture o f c udbear",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "oil of cinnamon",
+          "item_es": "oil of cinnamon",
+          "amount": "20",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Mix all the oils• together, shaki ng well occas ionall y for a",
       "method_es": "Mix all the oils• together, shaki ng well occas ionall y for a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -533,13 +1081,28 @@
       "category": "cocktail",
       "name_es": "BA NANA SYRUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whit.a syrup",
+          "item_es": "whit.a syrup",
+          "amount": "1",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "essence of banana",
+          "item_es": "essence of banana",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -550,13 +1113,49 @@
       "category": "cocktail",
       "name_es": "CAPILLAIRE SYRUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "10",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "boiling wat.er·",
+          "item_es": "boiling wat.er·",
+          "amount": "3",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup,                   •",
+          "item_es": "gum syrup,                   •",
+          "amount": "5",
+          "unit": "gallon",
+          "notes": null
+        },
+        {
+          "item_original": "tar tar ic acid (tincture)",
+          "item_es": "tar tar ic acid (tincture)",
+          "amount": "8",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "oil of lttmon, cut in one pmt of alcohol",
+          "item_es": "oil of lttmon, cut in one pmt of alcohol",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Put two ounces of J a maica. ginger into a. qua.rt of boili ng strain, and add t hree pounds of crushed sugar ; b oil to a.",
       "method_es": "Put two ounces of J a maica. ginger into a. qua.rt of boili ng strain, and add t hree pounds of crushed sugar ; b oil to a.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -567,13 +1166,28 @@
       "category": "cocktail",
       "name_es": "ORGEAT SYRUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powder ed sugar",
+          "item_es": "powder ed sugar",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "s weet almonds",
+          "item_es": "s weet almonds",
+          "amount": "3",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Strain, and if dedir ed, a dd one-qua r ter gill of bra.lldy.",
       "method_es": "Strain, and if dedir ed, a dd one-qua r ter gill of bra.lldy.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,

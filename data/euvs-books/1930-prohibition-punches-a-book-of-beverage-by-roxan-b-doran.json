@@ -547,7 +547,22 @@
       "name_original": "MERIDIAN MANSIONS PUNCH",
       "name_es": "MERIDIAN MANSIONS PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "juice of lemons",
+          "item_es": "zumo de lemons",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Chill by adding lemon water-ice made in freezer.",
       "method_es": "Chill by adding lemon water-ice made in freezer.",
       "glassware": null,
@@ -564,7 +579,22 @@
       "name_original": "FIJI FR.APPE",
       "name_es": "FIJI FR.APPE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice and three bottles of ginger ale. arid pint",
+          "item_es": "ice and three bottles of ginger ale. arid pint",
+          "amount": "large",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grape juice",
+          "item_es": "grape juice",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Put in double boiler and bring to boiling point. Sene hot.",
       "method_es": "Put in double boiler and bring to boiling point. Sene hot.",
       "glassware": null,
@@ -1391,7 +1421,29 @@
       "name_original": "THREE-TONE COCKTAIL",
       "name_es": "THREE-TONE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of grapefruit",
+          "item_es": "zumo de grapefruit",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "juice of oranges",
+          "item_es": "zumo de oranges",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "juice of limes",
+          "item_es": "zumo de limes",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Pour over crushed ice and garnish with sprig of mint.",
       "method_es": "Pour over crushed ice and garnish with sprig of mint.",
       "glassware": null,

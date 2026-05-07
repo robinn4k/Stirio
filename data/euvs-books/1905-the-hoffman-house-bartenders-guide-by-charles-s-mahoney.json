@@ -66,13 +66,168 @@
       "category": "cocktail",
       "name_es": "ABSINTHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glass absinthe",
+          "item_es": "glass absinthe",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "3",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "glass absinthe",
+          "item_es": "glass absinthe",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "iniarascliino",
+          "item_es": "iniarascliino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "glass anisette",
+          "item_es": "glass anisette",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "and serve",
+          "item_es": "and serve",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "boker's bitters",
+          "item_es": "boker's bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.25",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo picado",
+          "amount": "0.75",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermouth",
+          "item_es": "vermut francés (seco)",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "applejack",
+          "item_es": "applejack",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "amargos",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "irish whiskey",
+          "item_es": "whisky irlandés",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Shake ingredients until outside of shaker is cov serve. This is also called Trapped Absinthe. Pour ice water slowly into the mixture, stir with Use large ale glass. Use large bar glass. Fill with ice. Shake until almost frozen and then strain in Use large bar glass. Stir with spoon, and after straining into cocktail Use large bar glass. Stir with spoon, and after straining in cocktail Use large bar glass. Fill glass with shaved ice. Stir well with spoon, and after straining in cock Use large bar glass. Fill gl",
       "method_es": "Shake ingredients until outside of shaker is cov serve. This is also called Trapped Absinthe. Pour ice water slowly into the mixture, stir with Use large ale glass. Use large bar glass. Fill with ice. Shake until almost frozen and then strain in Use large bar glass. Stir with spoon, and after straining into cocktail Use large bar glass. Stir with spoon, and after straining in cocktail Use large bar glass. Fill glass with shaved ice. Stir well with spoon, and after straining in cock Use large bar glass. Fill gl",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -124,13 +279,84 @@
       "category": "cocktail",
       "name_es": "POUSSE L'AMOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "green vanilla",
+          "item_es": "green vanilla",
+          "amount": "0.25",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.25",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "imported ginger ale",
+          "item_es": "imported ginger ale",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "with fine ice",
+          "item_es": "with fine ice",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "glass jamaica rum",
+          "item_es": "glass jamaica rum",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice",
+          "item_es": "hielo picado",
+          "amount": "0.75",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar powdered",
+          "item_es": "sugar powdered",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use sherry zviiie-glass. Use large bar glass. Stir with spoon. Use large bar glass. Fill up with plain soda. Use small bar glass.           r Use punch-bowl for the mixture. Use mug. Fill with hot water or hot milk; stir well; pour Use zvhiskcy glass. Use only the best rock candy and the best rye Put one-half tablespoonful rock candy syrup added. Use large bar glass. Fill up with water, shake well; dress with fruit, Use large bar glass. Shake well, strain in large bar glass and serve; Use large bar glass. Fill glass up with water; stir well; dres",
       "method_es": "Use sherry zviiie-glass. Use large bar glass. Stir with spoon. Use large bar glass. Fill up with plain soda. Use small bar glass.           r Use punch-bowl for the mixture. Use mug. Fill with hot water or hot milk; stir well; pour Use zvhiskcy glass. Use only the best rock candy and the best rye Put one-half tablespoonful rock candy syrup added. Use large bar glass. Fill up with water, shake well; dress with fruit, Use large bar glass. Shake well, strain in large bar glass and serve; Use large bar glass. Fill glass up with water; stir well; dres",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -172,13 +398,77 @@
       "category": "cocktail",
       "name_es": "HOW TO MAKE BITTERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oil of lemon",
+          "item_es": "oil of lemon",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "oil absinthe",
+          "item_es": "oil absinthe",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "e.xlract of licorice",
+          "item_es": "e.xlract of licorice",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "e.xtract of chamomile",
+          "item_es": "e.xtract of chamomile",
+          "amount": "0.5",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "rectified spirit (60 o. p.)",
+          "item_es": "rectified spirit (60 o. p.)",
+          "amount": "3",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "3",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bark",
+          "item_es": "angostura bark",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "chamomile flowers",
+          "item_es": "chamomile flowers",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "orange peel",
+          "item_es": "piel de naranja",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Wormwood Bitters. Two drops oil of lemon. 1 wo drops oil of caraway. Two drops of oil absinthe. Two ounces e.xlract of licorice. One-half ounce e.xtract of chamomile. Three pints rectified spirit (60 O. P.). Three pints syrup. Water, enough to make two gallons. Dissolve the oils in the spirit, and t",
       "method_es": "Wormwood Bitters. Two drops oil of lemon. 1 wo drops oil of caraway. Two drops of oil absinthe. Two ounces e.xlract of licorice. One-half ounce e.xtract of chamomile. Three pints rectified spirit (60 O. P.). Three pints syrup. Water, enough to make two gallons. Dissolve the oils in the spirit, and t",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

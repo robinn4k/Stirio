@@ -193,13 +193,21 @@
       "category": "cocktail",
       "name_es": "Frappe",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -244,13 +252,21 @@
       "category": "cocktail",
       "name_es": "One-half lime muddleil",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pineapple well nuid-                                      roote's         summer sollr",
+          "item_es": "pineapple well nuid-                                      roote's         summer sollr",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Frappe       . Frappe         thorouglily   and     serve     in       anv     liquor      ilc^irrd       can    be used in Stirred witli spoon or shaken.",
       "method_es": "Frappe       . Frappe         thorouglily   and     serve     in       anv     liquor      ilc^irrd       can    be used in Stirred witli spoon or shaken.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,

@@ -378,13 +378,21 @@
       "category": "cocktail",
       "name_es": "BEAD FOR LIQUORS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sulphuric acid and one half oz. sweet oil",
+          "item_es": "sulphuric acid and one half oz. sweet oil",
+          "amount": "1",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "mixed together in a glass bottle. . One drop is",
       "method_es": "mixed together in a glass bottle. . One drop is",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

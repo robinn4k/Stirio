@@ -244,13 +244,21 @@
       "category": "cocktail",
       "name_es": "V THE BARTENDER'S FRIEND",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "the wine mixture, stirring",
+          "item_es": "the wine mixture, stirring",
+          "amount": "1",
+          "unit": "cup",
+          "notes": null
+        }
+      ],
       "method_original": "use Vermouth in lieu of brandy. mixture, stirring briskly to a froth. use whiskey in place of brandy.",
       "method_es": "use Vermouth in lieu of brandy. mixture, stirring briskly to a froth. use whiskey in place of brandy.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,

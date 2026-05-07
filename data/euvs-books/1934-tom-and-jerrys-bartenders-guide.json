@@ -91,13 +91,28 @@
       "category": "cocktail",
       "name_es": "PREVENTION",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "milk is a conservative preparation",
+          "item_es": "milk is a conservative preparation",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "olive oil to coat the stomach lining and amelio rate",
+          "item_es": "olive oil to coat the stomach lining and amelio rate",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -466,13 +481,21 @@
       "category": "cocktail",
       "name_es": "BIDE-A-WEE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice in 4-ounce glass and pour drink into glass",
+          "item_es": "ice in 4-ounce glass and pour drink into glass",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -2943,13 +2966,21 @@
       "category": "cocktail",
       "name_es": "SAM WARD",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "yellow chartreuse, or any cordial you may prefer",
+          "item_es": "yellow chartreuse, or any cordial you may prefer",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a sauterne glass with shaved ice.",
       "method_es": "Fill a sauterne glass with shaved ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 104,
@@ -3029,13 +3060,21 @@
       "category": "cocktail",
       "name_es": "SCOTCH WHISKY COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "soda",
+          "item_es": "soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large thin glass. Add 1 jigger of good Scotch whisky. Stir well with large bar spoon and serve.",
       "method_es": "Use a large thin glass. Add 1 jigger of good Scotch whisky. Stir well with large bar spoon and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 107,
@@ -3314,13 +3353,21 @@
       "category": "cocktail",
       "name_es": "THE SUBWAY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "each of lime juice and lemon juice",
+          "item_es": "each of lime juice and lemon juice",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Add cracked ice to fill shaker and shake till frosted.",
       "method_es": "Add cracked ice to fill shaker and shake till frosted.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 118,

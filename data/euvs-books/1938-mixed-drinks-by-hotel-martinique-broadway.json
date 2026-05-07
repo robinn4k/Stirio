@@ -702,14 +702,22 @@
       "name_original": "MORNING GLORY COCKTAIL",
       "name_es": "Cóctel Morning Glory",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "juice of lemon",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "MORNING GLORY COCKTAIL\nJuice of one Lemon",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1938-mixed-drinks-by-hotel-martinique-broadway-027",
@@ -1440,14 +1448,22 @@
       "name_original": "ORIGINAL KENTUCKY",
       "name_es": "Original Kentucky",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Place half the crushed mint and liquid in the bottom of a cracked glass tumbler, or in sterling silver or pewter tankard. Fill glass half full of finely crushed ice. Add rest of crushed mint and fill remainder of glass with crushed ice. Pour in whiskey until glass is brimming. Place in ice box for at least an hour (if possible). Decorate with sprigs of mint covered with powdered sugar when ready to serve. MINT JULEP (Georgia) 4 Sprigs Fresh Mint ½ Tablespoon Powdered Sugar",
       "method_es": "servir.",
       "glassware": null,
       "garnish": "fresh mint",
       "page_reference": null,
       "raw_text": "ORIGINAL KENTUCKY\n[Recipes for fhe Mint Julep are widely dis\ncussed and debated. NMe believe the following\nrecipe Is the original and authentic one.)\n   Put 12 sprigs fresh mint in bowl, covered with\npowdered sugar and just enough water to dis\nsolve the sugar, and crush with wooden pestle.\nPlace half the crushed mint and liquid in the\nbottom of a cracked glass tumbler, or in sterling\nsilver or pewter tankard. Fill glass half full of\nfinely crushed ice. Add rest of crushed mint and\nfill remainder of glass with crushed ice. Pour in\nwhiskey until glass is brimming. Place in ice box\nfor at least an hour (if possible). Decorate with\nsprigs of mint covered with powdered sugar\nwhen ready to serve.\n\n          MINT JULEP (Georgia)\n          4 Sprigs Fresh Mint\n         1/2 Tablespoon Powdered Sugar",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1938-mixed-drinks-by-hotel-martinique-broadway-056",

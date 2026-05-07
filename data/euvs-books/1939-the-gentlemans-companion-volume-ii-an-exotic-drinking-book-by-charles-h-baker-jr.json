@@ -287,13 +287,21 @@
       "category": "cocktail",
       "name_es": "ABSINTHE PHOSPHATE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon phosphate, per drink",
+          "item_es": "lemon phosphate, per drink",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well with cracked ice and serve in a tall glass with stem. Shake with cracked ice until busily frothing, and pour into a tall Frappe with cracked ice, strain into old fashioned glass, add small serve them three ounces at a time, and as cold as may be with chilled Frappe well, and strain.",
       "method_es": "Shake well with cracked ice and serve in a tall glass with stem. Shake with cracked ice until busily frothing, and pour into a tall Frappe with cracked ice, strain into old fashioned glass, add small serve them three ounces at a time, and as cold as may be with chilled Frappe well, and strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -338,13 +346,28 @@
       "category": "cocktail",
       "name_es": "OLD PEPPER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhine, or one quart chablis",
+          "item_es": "rhine, or one quart chablis",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "iced club soda",
+          "item_es": "iced club soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Frappe hard, and serve in any sort of fu~proof glass. Squeeze and strain through a sieve juice of two lemons, one orange Stir in two level tablespoons of brown sugar",
       "method_es": "Frappe hard, and serve in any sort of fu~proof glass. Squeeze and strain through a sieve juice of two lemons, one orange Stir in two level tablespoons of brown sugar",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -423,13 +446,21 @@
       "category": "cocktail",
       "name_es": "PANAMA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cura~ao, juice half a lime, and a dash of orange bitters",
+          "item_es": "cura~ao, juice half a lime, and a dash of orange bitters",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a large glass with shaved ice, then mix two ponies cognac with Pour over ice, and garnish with a stick of really ripe pineapple. Cherry",
       "method_es": "Fill a large glass with shaved ice, then mix two ponies cognac with Pour over ice, and garnish with a stick of really ripe pineapple. Cherry",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -491,13 +522,21 @@
       "category": "cocktail",
       "name_es": "KILL CLASSIC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mint in each cup is a nice touch",
+          "item_es": "mint in each cup is a nice touch",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        }
+      ],
       "method_original": "Put sugar in bowl, put on enough water to dissolve completely, Fresh pineapple juice, 4 cups            sugar garnish with bits of really ripe pineapple, and grapefruit pulp. . . .",
       "method_es": "Put sugar in bowl, put on enough water to dissolve completely, Fresh pineapple juice, 4 cups            sugar garnish with bits of really ripe pineapple, and grapefruit pulp. . . .",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,

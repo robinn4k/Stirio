@@ -57,13 +57,21 @@
       "category": "cocktail",
       "name_es": "Recipe",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water ; let it boil until it is",
+          "item_es": "water ; let it boil until it is",
+          "amount": "0.5",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "put the sugar into a bowl or jug, with pour the wine into it, grate some nutmeg",
       "method_es": "put the sugar into a bowl or jug, with pour the wine into it, grate some nutmeg",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -108,13 +116,21 @@
       "category": "cocktail",
       "name_es": "WHITE WINE NEGUS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water upon it, cover",
+          "item_es": "boiling water upon it, cover",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "add a teaspoonful and a half of pounded Mix by pouring rapidly from one tumbler to",
       "method_es": "add a teaspoonful and a half of pounded Mix by pouring rapidly from one tumbler to",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -176,13 +192,21 @@
       "category": "punch",
       "name_es": "OXFORD MILK PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange brandy shrub ; strain",
+          "item_es": "orange brandy shrub ; strain",
+          "amount": "3",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "add to it a quarter of a pint of orange-flower add three quarts of white brandy and",
       "method_es": "add to it a quarter of a pint of orange-flower add three quarts of white brandy and",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +217,28 @@
       "category": "punch",
       "name_es": "NORFOLK MILK PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky, (irish if possible)",
+          "item_es": "whisky, (irish if possible)",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy, and the juice and peel",
+          "item_es": "brandy, and the juice and peel",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Stir it till the sugar is dissolved. Let the mixture stand twelve hours, then strain it put the whole into a jug, pour on it one quart stir it well together, and it ia fit for use.• put the froth into the punch with one table- stir it. If it stands in a jug near the fire for Let the juice of six or eight additional put into it a sufficient quantity of double",
       "method_es": "Stir it till the sugar is dissolved. Let the mixture stand twelve hours, then strain it put the whole into a jug, pour on it one quart stir it well together, and it ia fit for use.• put the froth into the punch with one table- stir it. If it stands in a jug near the fire for Let the juice of six or eight additional put into it a sufficient quantity of double",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +249,21 @@
       "category": "punch",
       "name_es": "EGG PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cold water, the juice of six",
+          "item_es": "cold water, the juice of six",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Put some pulverised sugar and ten fresh.",
       "method_es": "Put some pulverised sugar and ten fresh.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -261,13 +308,21 @@
       "category": "punch",
       "name_es": "INN KEEPERS' PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "milk from gentle cow will fill it",
+          "item_es": "milk from gentle cow will fill it",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Stir them with steady hand and conscience' pricking,",
       "method_es": "Stir them with steady hand and conscience' pricking,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -295,13 +350,21 @@
       "category": "cocktail",
       "name_es": "CIDER POSSET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, and one quart of milk",
+          "item_es": "brandy, and one quart of milk",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "pour on it one quart of fresh ·drawn cider ; use.",
       "method_es": "pour on it one quart of fresh ·drawn cider ; use.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -363,13 +426,21 @@
       "category": "cup",
       "name_es": "BEER CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "strong beer instead of cider",
+          "item_es": "strong beer instead of cider",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -380,13 +451,21 @@
       "category": "cup",
       "name_es": "RED CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon, and a few lumps of",
+          "item_es": "lemon, and a few lumps of",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use one pint of port wine instead of white; added. In other respects the same as Cider Put into a bowl half a pound of Lisbon grate a nutmeg and some ginger into it ; add four glasses of sherry and five additional",
       "method_es": "Use one pint of port wine instead of white; added. In other respects the same as Cider Put into a bowl half a pound of Lisbon grate a nutmeg and some ginger into it ; add four glasses of sherry and five additional",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -397,13 +476,21 @@
       "category": "cocktail",
       "name_es": "BROWN BETTY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "strong ale made moderately",
+          "item_es": "strong ale made moderately",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Adde sugar, nutmeg, and ginger, Mix the pulp of half a dozen roasted",
       "method_es": "Adde sugar, nutmeg, and ginger, Mix the pulp of half a dozen roasted",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,

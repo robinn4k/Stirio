@@ -66,13 +66,63 @@
       "category": "cocktail",
       "name_es": "PRE-P ROHIBITION COCKTAILS SI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tom gin (stir)",
+          "item_es": "tom gin (stir)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orgeat syrup",
+          "item_es": "orgeat syrup",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine on top",
+          "item_es": "benedictine on top",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermouth",
+          "item_es": "vermut italiano (dulce)",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Squeeze Lemon Peel on top Squeeze Orange Peel (whiskey glass)",
       "method_es": "Squeeze Lemon Peel on top Squeeze Orange Peel (whiskey glass)",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -107,13 +157,21 @@
       "category": "cocktail",
       "name_es": "PRE-PROHIBITION COCKTAILS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amer picon",
+          "item_es": "Amer Picon",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Serve with Maraschino Cherry",
       "method_es": "Serve with Maraschino Cherry",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -179,13 +237,42 @@
       "category": "fizz",
       "name_es": "FIZZES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin (lemonade)",
+          "item_es": "tom gin (lemonade)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Frappe; fizz with Carbonic",
       "method_es": "Frappe; fizz with Carbonic",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -196,13 +283,161 @@
       "category": "cocktail",
       "name_es": "OTHER PRE-WAR MIXED DRINKS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.333",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "each of rye whiskey",
+          "item_es": "each of rye whiskey",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "scotch",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rye whiskey",
+          "item_es": "whisky de centeno",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange water",
+          "item_es": "orange water",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Shake and strain; fill with chilled Shake and strain; fill from chilled Shake; strain; fill from chilled siphon Frappe; strain; serve with Seltzer Shake; strain; fill from       chilled Fill glass with Ice Fill from chilled siphon Fill wit",
       "method_es": "Shake and strain; fill with chilled Shake and strain; fill from chilled Shake; strain; fill from chilled siphon Frappe; strain; serve with Seltzer Shake; strain; fill from       chilled Fill glass with Ice Fill from chilled siphon Fill wit",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -213,13 +448,56 @@
       "category": "flip",
       "name_es": "FLIPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice; fill from siphon",
+          "item_es": "ice; fill from siphon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill from siphon Shake; strain; Nutmeg grated on top Fill from siphon used. In a GINGER ALE HIGH-BALL, Ginger Ale is used Fill from chilled 'siphon",
       "method_es": "Fill from siphon Shake; strain; Nutmeg grated on top Fill from siphon used. In a GINGER ALE HIGH-BALL, Ginger Ale is used Fill from chilled 'siphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -230,13 +508,84 @@
       "category": "cocktail",
       "name_es": "HOT POTATIONS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "twisted lemon peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "scotch",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel, twisted",
+          "item_es": "lemon peel, twisted",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "twisted lemon peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "triple sec",
+          "item_es": "triple sec",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "hot burgundy",
+          "item_es": "hot burgundy",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with hot Water; small spoon Fill two-thirds with hot Water Fill two-thirds with hot Water Fill glass with hot Water Fill with hot Water Stir well; serve in hot glasses Let come to a boil; add Wine Pour one-half tablespoon of this Fill with hot Water; add Nutmeg",
       "method_es": "Fill with hot Water; small spoon Fill two-thirds with hot Water Fill two-thirds with hot Water Fill glass with hot Water Fill with hot Water Stir well; serve in hot glasses Let come to a boil; add Wine Pour one-half tablespoon of this Fill with hot Water; add Nutmeg",
       "glassware": "See also TODDIES, and \"Drinks from e.>ther Climes\"",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -247,13 +596,35 @@
       "category": "cocktail",
       "name_es": "HOT-WITH FLAMES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "scotch",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel                 ,  .·",
+          "item_es": "lemon peel                 ,  .·",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "apple whiskey",
+          "item_es": "apple whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with hot Water; ignite the whole •    · . ·· ~ Mix while blazing                                -",
       "method_es": "Fill with hot Water; ignite the whole •    · . ·· ~ Mix while blazing                                -",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -264,13 +635,77 @@
       "category": "julep",
       "name_es": "JULEPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "water; crush well",
+          "item_es": "water; crush well",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "st. croix rum; shaved",
+          "item_es": "st. croix rum; shaved",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "mixing glass Fill goblet two-thirds with Ice Strain mixture on top Fill with Champagne Add one jigger Whiskey; stir Pour into glass two-thirds full Ice",
       "method_es": "mixing glass Fill goblet two-thirds with Ice Strain mixture on top Fill with Champagne Add one jigger Whiskey; stir Pour into glass two-thirds full Ice",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -298,13 +733,126 @@
       "category": "punch",
       "name_es": "PUNCHES-",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "apollinaris",
+          "item_es": "apollinaris",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "apollinaris",
+          "item_es": "apollinaris",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "2",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "white curac;ao",
+          "item_es": "white curac;ao",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with chilled Milk; shake well; strain Fill two-thirds with chilled Milk Shake well; strain; Nutmeg Fill with Milk; shake; strain; Nutmeg",
       "method_es": "Fill with chilled Milk; shake well; strain Fill two-thirds with chilled Milk Shake well; strain; Nutmeg Fill with Milk; shake; strain; Nutmeg",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -315,13 +863,98 @@
       "category": "cocktail",
       "name_es": "OLD WALDORF-ASTORIA BAR BOOK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "apple whiskey",
+          "item_es": "apple whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "st. croix rum",
+          "item_es": "st. croix rum",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass two-thirds fine Ice; Fruit Fill with chilled Seltzer Stir; strain; Fruit Fill glass two-thirds with fine Ice Stir; fruit well in season Fill three-quarters with chilled Shake well; strain; Nutmeg on top Fill from siphon",
       "method_es": "Fill glass two-thirds fine Ice; Fruit Fill with chilled Seltzer Stir; strain; Fruit Fill glass two-thirds with fine Ice Stir; fruit well in season Fill three-quarters with chilled Shake well; strain; Nutmeg on top Fill from siphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -332,13 +965,35 @@
       "category": "sangaree",
       "name_es": "SANGAREES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "acid phosphate                                   ~- ~",
+          "item_es": "acid phosphate                                   ~- ~",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with Ice (fizz glass)",
       "method_es": "Fill with Ice (fizz glass)",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -349,13 +1004,98 @@
       "category": "sling",
       "name_es": "SLINGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "twisted lemon peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice; serve with small spoon",
+          "item_es": "ice; serve with small spoon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin; more hot water",
+          "item_es": "gin; more hot water",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel; ice (spoon)",
+          "item_es": "lemon peel; ice (spoon)",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.25",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Stir with spoon; grated Nutmeg Fill mixing glass with fine Ice Stir; strain; fruit well; Mint on top",
       "method_es": "Stir with spoon; grated Nutmeg Fill mixing glass with fine Ice Stir; strain; fruit well; Mint on top",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -366,13 +1106,21 @@
       "category": "sour",
       "name_es": "SOURS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "SouR: A good old Anglo-Saxon word, and it started as surigan, was shortened to sur, and finally in its more modern version became the name of an alcoholic drink because of the taste of the lemon or lime that is an essential. BRANDY Juice one-half Lemon (star glass) One-half spoon Sugar",
       "method_es": "SouR: A good old Anglo-Saxon word, and it started as surigan, was shortened to sur, and finally in its more modern version became the name of an alcoholic drink because of the taste of the lemon or lime that is an essential. BRANDY Juice one-half Lemon (star glass) One-half spoon Sugar",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -383,13 +1131,63 @@
       "category": "cocktail",
       "name_es": "IOO OLD WALDORF-ASTORIA BAR BOOK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "rye",
+          "item_es": "centeno",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon",
+          "item_es": "bourbon",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with Ice; stir; strain; fruit",
       "method_es": "Fill with Ice; stir; strain; fruit",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -400,13 +1198,105 @@
       "category": "cocktail",
       "name_es": "OTHER PRE-WAR MIXED DRINKS IOI",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "apple whiskey",
+          "item_es": "apple whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "st. croix rum",
+          "item_es": "st. croix rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey_",
+          "item_es": "whiskey_",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Stir well; fruit",
       "method_es": "Stir well; fruit",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -417,13 +1307,63 @@
       "category": "cocktail",
       "name_es": "TODDIES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "apple whiskey",
+          "item_es": "apple whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice (whiskey glass)",
+          "item_es": "ice (whiskey glass)",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "apple whiskey",
+          "item_es": "apple whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Serve with spoon and Nutmeg Fill two-thirds with boiling Water Grate Nutmeg on top Fill two-thirds with hot Water",
       "method_es": "Serve with spoon and Nutmeg Fill two-thirds with boiling Water Grate Nutmeg on top Fill two-thirds with hot Water",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -434,13 +1374,35 @@
       "category": "cocktail",
       "name_es": "OTHER PRE-WAR MIXED DRINKS IOJ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "kentucky whiskey",
+          "item_es": "kentucky whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill two-thirds with hot Water Fill from siphon",
       "method_es": "Fill two-thirds with hot Water Fill from siphon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -451,13 +1413,63 @@
       "category": "cocktail",
       "name_es": "OTHER MIXED POTATIONS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "angostura on top",
+          "item_es": "angostura on top",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "each, brandy, kirsch-",
+          "item_es": "each, brandy, kirsch-",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "FRAPPE               Ice; shake well; strain Fill with plain Water FRAPPE               Ice; shake well; strain Fill with fine Ice Fill with Apricot Brandy Serve with Cherry on top FRAPPE              Shake well; strain; fill with cold Float pony of Brandy on top by Shake well; stra!~",
       "method_es": "FRAPPE               Ice; shake well; strain Fill with plain Water FRAPPE               Ice; shake well; strain Fill with fine Ice Fill with Apricot Brandy Serve with Cherry on top FRAPPE              Shake well; strain; fill with cold Float pony of Brandy on top by Shake well; stra!~",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -533,13 +1545,84 @@
       "category": "cocktail",
       "name_es": "NON-ALCOHOLIC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar; seltzer",
+          "item_es": "sugar; seltzer",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphgte",
+          "item_es": "acid phosphgte",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice                                   '",
+          "item_es": "ice                                   '",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar; ice",
+          "item_es": "sugar; ice",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.25",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "acid phosphate",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well; fill with chilled Cider Stir well; serve with napkin Fill two-thirds goblet with Milk Fill with Water Shake well; fill with chilled Fill with plain Water Fill with Lemon Soda; Stir Fill with plain Soda; Ice; stir Fill two-thirds with Water Fill one-half with Sarsaparilla",
       "method_es": "Shake well; fill with chilled Cider Stir well; serve with napkin Fill two-thirds goblet with Milk Fill with Water Shake well; fill with chilled Fill with plain Water Fill with Lemon Soda; Stir Fill with plain Soda; Ice; stir Fill two-thirds with Water Fill one-half with Sarsaparilla",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -550,13 +1633,147 @@
       "category": "cocktail",
       "name_es": "BRANDY POTATIONS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "aerated water",
+          "item_es": "aerated water",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "soda water",
+          "item_es": "agua de soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino (tall",
+          "item_es": "maraschino (tall",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange, quartered",
+          "item_es": "orange, quartered",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy; s~ir (spoon)",
+          "item_es": "brandy; s~ir (spoon)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "syrup",
+          "item_es": "jarabe",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cura~o",
+          "item_es": "cura~o",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with plain Soda Water Use plenty of Fruit; mix well Grate Nutmeg on top Add sprig of Verbena and dash Fill with Ice; stir well; dress Fill glass with Brandy Twist piece of Lemon Peel Fill with aerated Water Shake; strain; fill with aerated stir",
       "method_es": "Fill with plain Soda Water Use plenty of Fruit; mix well Grate Nutmeg on top Add sprig of Verbena and dash Fill with Ice; stir well; dress Fill glass with Brandy Twist piece of Lemon Peel Fill with aerated Water Shake; strain; fill with aerated stir",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -567,13 +1784,35 @@
       "category": "cocktail",
       "name_es": "IJO OLD WALDORF BAR BOOK-AMENDMENTS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine (shake or",
+          "item_es": "grenadine (shake or",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Twist Orange Peel, on top stir) Twist Orange Peel on top",
       "method_es": "Twist Orange Peel, on top stir) Twist Orange Peel on top",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -584,13 +1823,84 @@
       "category": "fizz",
       "name_es": "FIZZES AND FLIPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; ice; shake",
+          "item_es": "bacardi; ice; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; ice; shake",
+          "item_es": "bacardi; ice; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; ice; shake",
+          "item_es": "bacardi; ice; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; ice; shake",
+          "item_es": "bacardi; ice; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; ice; shake",
+          "item_es": "bacardi; ice; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Strain into fizz glass; fill from Strain into fizz glass; fill from Strain into fizz glass; fill from Strain into fizz glass and fill from Strain into fizz glass; fill from Strain into fizz glass; fill from Strain into a Delmonico glass Serve in a ~zz glass",
       "method_es": "Strain into fizz glass; fill from Strain into fizz glass; fill from Strain into fizz glass; fill from Strain into fizz glass and fill from Strain into fizz glass; fill from Strain into fizz glass; fill from Strain into a Delmonico glass Serve in a ~zz glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -601,13 +1911,77 @@
       "category": "cocktail",
       "name_es": "MISCELLANEOUS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; ice; shake",
+          "item_es": "bacardi; ice; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi; lee; shake",
+          "item_es": "bacardi; lee; shake",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cacao",
+          "item_es": "crème de cacao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "bacardi",
+          "item_es": "ron Bacardi",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Strain into Collins glass in which Fill with Club Soda Stir with spoon Strain into goblet filled with shaved Dress with ·Fruit and Mint Strain into Collins glass Fill with shaved Ice Strain into a Delmonico glass Dress with Fruit Strain into Delmonico glass",
       "method_es": "Strain into Collins glass in which Fill with Club Soda Stir with spoon Strain into goblet filled with shaved Dress with ·Fruit and Mint Strain into Collins glass Fill with shaved Ice Strain into a Delmonico glass Dress with Fruit Strain into Delmonico glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -618,13 +1992,63 @@
       "category": "cocktail",
       "name_es": "JAMAICA RUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kilmmel",
+          "item_es": "kilmmel",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "lime or lemon",
+          "item_es": "lime or lemon",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Serve with crushed Ice Moisten edge in Lemon, dip m Fill shaker with Ice Shake; strain into glass Fill with crushed Ice and stir again :~, .:_ - ~.: .",
       "method_es": "Serve with crushed Ice Moisten edge in Lemon, dip m Fill shaker with Ice Shake; strain into glass Fill with crushed Ice and stir again :~, .:_ - ~.: .",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -635,13 +2059,91 @@
       "category": "punch",
       "name_es": "PUNCHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "peach brandy",
+          "item_es": "peach brandy",
+          "amount": "Large",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "sugar, dissolved in",
+          "item_es": "sugar, dissolved in",
+          "amount": "12",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "peach brandy",
+          "item_es": "peach brandy",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        },
+        {
+          "item_original": "plain syrup",
+          "item_es": "plain syrup",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "plain syrup",
+          "item_es": "plain syrup",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whiskey",
+          "item_es": "bourbon whiskey",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "3",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.667",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "peach brandy",
+          "item_es": "peach brandy",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "Add Ice; mix Add three pints boiling Water Stir up well Fill with rich MiTh: Shake; strain; serve in tumbler strain Mix well; pour into tumbler; fill Shake well Fill with cold Water Grate Nutmeg on top",
       "method_es": "Add Ice; mix Add three pints boiling Water Stir up well Fill with rich MiTh: Shake; strain; serve in tumbler strain Mix well; pour into tumbler; fill Shake well Fill with cold Water Grate Nutmeg on top",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -652,13 +2154,42 @@
       "category": "cocktail",
       "name_es": "OLD WALDORF BAR BOOK-AMENDMENTS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "prune syrup",
+          "item_es": "prune syrup",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cura910",
+          "item_es": "cura910",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "essence of orange",
+          "item_es": "essence of orange",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Put in tumblers, one for each Fill from siphon Add slice of Lime or Lemon Strain into bar glass; Ice Shake; strain into glass thus pre- fresh Mint, dipped in powdered Let jug stand on Ice one hour Serve, filling glasses with aerated Use swizzle stick, rolling top be- shaker; Ice Shake; strain; decorate with fruit; serve with spoon Squeeze half Lime or Lemon Fill with chilled aerated Water; •      . ·· 1 serve with spoon                      . ··",
       "method_es": "Put in tumblers, one for each Fill from siphon Add slice of Lime or Lemon Strain into bar glass; Ice Shake; strain into glass thus pre- fresh Mint, dipped in powdered Let jug stand on Ice one hour Serve, filling glasses with aerated Use swizzle stick, rolling top be- shaker; Ice Shake; strain; decorate with fruit; serve with spoon Squeeze half Lime or Lemon Fill with chilled aerated Water; •      . ·· 1 serve with spoon                      . ··",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,

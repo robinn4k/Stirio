@@ -175,13 +175,21 @@
       "category": "cocktail",
       "name_es": "Ys Benedictine",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon peel, the juice of a second piece of lemon peel",
+          "item_es": "lemon peel, the juice of a second piece of lemon peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "4 ds. Angostura balance with Champagne Rub the rond of the glass with a piece of Lemon and put the top of the glass in powder sugar. Verre borde, passer sur le bord du verre un mor- ceau de citron tremper le verre dans du sucre d'un centimetre. Der Glasrand wird in zirka Fingerbreite mit einem .ell",
       "method_es": "4 ds. Angostura balance with Champagne Rub the rond of the glass with a piece of Lemon and put the top of the glass in powder sugar. Verre borde, passer sur le bord du verre un mor- ceau de citron tremper le verre dans du sucre d'un centimetre. Der Glasrand wird in zirka Fingerbreite mit einem .ell",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -309,13 +317,21 @@
       "category": "sangaree",
       "name_es": "Sangarees",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": ";— nutmeg on top",
+          "item_es": ";— nutmeg on top",
+          "amount": "small",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "grate Nutmeg on top grate Nutmeg on top shake well, strain into shake well — slice Orange grate Nutmeg on top shake well",
       "method_es": "grate Nutmeg on top grate Nutmeg on top shake well, strain into shake well — slice Orange grate Nutmeg on top shake well",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -357,13 +373,28 @@
       "category": "fizz",
       "name_es": "Fizzes",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "shake well",
       "method_es": "shake well",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -374,13 +405,21 @@
       "category": "cocktail",
       "name_es": "Vi Brandy",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "balance Soda Champagne Fizz Juice a half Lemon 1 Egg 1 Barspoon Sugar balance Champagne Cream Fizz Juice a half Lemon",
       "method_es": "balance Soda Champagne Fizz Juice a half Lemon 1 Egg 1 Barspoon Sugar balance Champagne Cream Fizz Juice a half Lemon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -994,13 +1033,21 @@
       "category": "punch",
       "name_es": "Cold Punches",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "shake well and serve with stir well, decorate, Slice of stir well",
       "method_es": "shake well and serve with stir well, decorate, Slice of stir well",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -1714,13 +1761,21 @@
       "category": "cocktail",
       "name_es": "Bosom Caresser Yolk Egg",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "1 Barspoon Grenadine",
       "method_es": "1 Barspoon Grenadine",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,

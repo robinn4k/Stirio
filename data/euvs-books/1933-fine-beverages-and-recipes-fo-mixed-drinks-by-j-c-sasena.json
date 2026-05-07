@@ -178,13 +178,28 @@
       "category": "cocktail",
       "name_es": "Mayor of Cleveland Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "apricot brandy",
+          "item_es": "brandy de albaricoque",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass half filled with fine ice Stir, and strain into cocktail glass. Squeeze lemon peel on top.",
       "method_es": "Use mixing glass half filled with fine ice Stir, and strain into cocktail glass. Squeeze lemon peel on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -236,13 +251,21 @@
       "category": "cocktail",
       "name_es": "Manhattan Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill mixing glass with fine ice Stir, and strain into cocktail glass Add a cherry",
       "method_es": "Fill mixing glass with fine ice Stir, and strain into cocktail glass Add a cherry",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -480,13 +503,21 @@
       "category": "cocktail",
       "name_es": "Bacardi Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Putjuice of one lime into a mixing glass with one teaspoonful Fill glass with ice Add 2 oz. Bacardi Rum Shake well, and strain into a cocktail glass",
       "method_es": "Putjuice of one lime into a mixing glass with one teaspoonful Fill glass with ice Add 2 oz. Bacardi Rum Shake well, and strain into a cocktail glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -1042,13 +1073,28 @@
       "category": "cocktail",
       "name_es": "Soda Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "seltzer water",
+          "item_es": "seltzer water",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Add three cubes of ice Fill glass with bottled Club Soda Stir gently and serve",
       "method_es": "Add three cubes of ice Fill glass with bottled Club Soda Stir gently and serve",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -1076,13 +1122,28 @@
       "category": "cocktail",
       "name_es": "Champagne Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "twisted lemon peel",
+          "item_es": "twisted lemon peel",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters, two cubes of ice, one slice",
+          "item_es": "angostura bitters, two cubes of ice, one slice",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with Champagne. Stir gently and serve",
       "method_es": "Fill glass with Champagne. Stir gently and serve",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -1093,13 +1154,21 @@
       "category": "cocktail",
       "name_es": "Zazarack Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe rolled around the glass, one lump",
+          "item_es": "absinthe rolled around the glass, one lump",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use old fashioned cocktail glass Add two cubes of ice, 2 oz. of Whiskey Serve with water on the side.",
       "method_es": "Use old fashioned cocktail glass Add two cubes of ice, 2 oz. of Whiskey Serve with water on the side.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -1199,13 +1268,21 @@
       "category": "fizz",
       "name_es": "Silver Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sweet cream",
+          "item_es": "sweet cream",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Put juice of one lemon into a mixing glass, with one table- Fill glass with fine ice Add 2 oz. Gin Shake well. Strain into lemonade glass Add a cube of ice. Fill with White Rock",
       "method_es": "Put juice of one lemon into a mixing glass, with one table- Fill glass with fine ice Add 2 oz. Gin Shake well. Strain into lemonade glass Add a cube of ice. Fill with White Rock",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -1835,13 +1912,28 @@
       "category": "cobbler",
       "name_es": "Sherry Cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "azúcar fino",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use lemonade glass Add 2 oz. Sherry Stir. Decorate with fruit and serve with straws",
       "method_es": "Use lemonade glass Add 2 oz. Sherry Stir. Decorate with fruit and serve with straws",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 73,
@@ -1876,13 +1968,21 @@
       "category": "julep",
       "name_es": "Mint Julep",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "azúcar fino",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use lemonade glass Fill glass up to the top with very fine ice Add 2 oz. Whiskey Stir well, and fill up with fine ice again",
       "method_es": "Use lemonade glass Fill glass up to the top with very fine ice Add 2 oz. Whiskey Stir well, and fill up with fine ice again",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 75,
@@ -1910,13 +2010,21 @@
       "category": "cocktail",
       "name_es": "Suissesse",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "azúcar fino",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass with juice of half a lemon Fill glass up to the rim with fine ice Add 1^3 oz. Absinthe Shake thoroughly. Strain into Whiskey Sour glass. Fill up",
       "method_es": "Use mixing glass with juice of half a lemon Fill glass up to the rim with fine ice Add 1^3 oz. Absinthe Shake thoroughly. Strain into Whiskey Sour glass. Fill up",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 77,
@@ -1961,13 +2069,21 @@
       "category": "flip",
       "name_es": "Sherry Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass Fill glass with ice Add 2 oz. Sherry Shake well. Strain into a small shell glass, and fill up with Same as Sherry, using old Spanish Port in place of Sherry.",
       "method_es": "Use mixing glass Fill glass with ice Add 2 oz. Sherry Shake well. Strain into a small shell glass, and fill up with Same as Sherry, using old Spanish Port in place of Sherry.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 80,
@@ -1995,13 +2111,28 @@
       "category": "flip",
       "name_es": "Egg-Nog",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass with one tablespoonful of sugar Fill glass with ice Add 2 oz. Whiskey Add some milk and one egg. Shake well and strain into a",
       "method_es": "Use mixing glass with one tablespoonful of sugar Fill glass with ice Add 2 oz. Whiskey Add some milk and one egg. Shake well and strain into a",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -2084,13 +2215,21 @@
       "category": "punch",
       "name_es": "Whiskey Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "azúcar fino",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with fine ice Add 2 oz. Whiskey Shake well. Strain into lemonade glass,and fill up with seltzer.",
       "method_es": "Fill glass with fine ice Add 2 oz. Whiskey Shake well. Strain into lemonade glass,and fill up with seltzer.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -2748,13 +2887,21 @@
       "category": "cocktail",
       "name_es": "Egg Chocolate Malted Milk",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "malted milk",
+          "item_es": "malted milk",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use a mixing glass Fill glass with milk and shake well. Strain into a lemonade",
       "method_es": "Use a mixing glass Fill glass with milk and shake well. Strain into a lemonade",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 116,
@@ -2918,13 +3065,28 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rock salt",
+          "item_es": "rock salt",
+          "amount": "1",
+          "unit": "cup",
+          "notes": null
+        },
+        {
+          "item_original": "served with your meals, has a stimulating and",
+          "item_es": "served with your meals, has a stimulating and",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 126,

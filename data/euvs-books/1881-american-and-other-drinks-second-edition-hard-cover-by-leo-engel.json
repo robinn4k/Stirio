@@ -40,13 +40,42 @@
       "category": "cocktail",
       "name_es": "Another",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bottle of champagne ; two ounces of sugar; one orange",
+          "item_es": "bottle of champagne ; two ounces of sugar; one orange",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "sugar; one slice of lemon",
+          "item_es": "sugar; one slice of lemon",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar; one wine glass of brandy ; one",
+          "item_es": "sugar; one wine glass of brandy ; one",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "champagne; one pint of jamaica rum ; one pint",
+          "item_es": "champagne; one pint of jamaica rum ; one pint",
+          "amount": "4",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Use large tumbler. Use large tumbler. Use large tumbler. Use large tumbler. shake well, ornament with one or two slices of lemon, and flavour serve in Champagne glasses as soon as made. Pine-apple Punch",
       "method_es": "Use large tumbler. Use large tumbler. Use large tumbler. Use large tumbler. shake well, ornament with one or two slices of lemon, and flavour serve in Champagne glasses as soon as made. Pine-apple Punch",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -74,13 +103,21 @@
       "category": "cocktail",
       "name_es": "TJse large tumbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "plain syrup ; two or three dashes of bitters",
+          "item_es": "plain syrup ; two or three dashes of bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use large tumbler. Use large tumbler. Use large tumbler. used as the\"proper beverage\" for fishing and other sporting parties,,",
       "method_es": "Use large tumbler. Use large tumbler. Use large tumbler. used as the\"proper beverage\" for fishing and other sporting parties,,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -108,13 +145,42 @@
       "category": "sling",
       "name_es": "TODDIES AND SLINGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine white sugar ; one wine glass of cider",
+          "item_es": "fine white sugar ; one wine glass of cider",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar ; half a wine glass of water ; one wine",
+          "item_es": "sugar ; half a wine glass of water ; one wine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar ; half a wine glass of water ; one wine",
+          "item_es": "sugar ; half a wine glass of water ; one wine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar ; half a wine glass of water ; one wine",
+          "item_es": "sugar ; half a wine glass of water ; one wine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use small tumbler. Use small tumbler. Use small tumbler. Use small tumbler.",
       "method_es": "Use small tumbler. Use small tumbler. Use small tumbler. Use small tumbler.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -142,13 +208,28 @@
       "category": "cocktail",
       "name_es": "TJse small tumbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar ; half a wine glass of water ; quarter",
+          "item_es": "sugar ; half a wine glass of water ; quarter",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar ; half a wine glass of water ; quarter",
+          "item_es": "sugar ; half a wine glass of water ; quarter",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use small tumbler. Use small tumbler.",
       "method_es": "Use small tumbler. Use small tumbler.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -261,13 +342,21 @@
       "category": "cup",
       "name_es": "MASTADON cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "wachter's extra dry, pint wilhelm's ouelle, two",
+          "item_es": "wachter's extra dry, pint wilhelm's ouelle, two",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

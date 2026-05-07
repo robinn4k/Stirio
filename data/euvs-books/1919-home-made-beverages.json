@@ -210,13 +210,28 @@
       "category": "cocktail",
       "name_es": "SUNDAES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sliced orange and a whole cherry",
+          "item_es": "sliced orange and a whole cherry",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice cream in sundae cup, then pour",
+          "item_es": "ice cream in sundae cup, then pour",
+          "amount": "Small",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "crushed raspberries, 1 oz. Place a lady finger at each side Use souffle' dish; put 5 stuffed dates around ice cream; mixed, raspberries, sliced peaches and claret syrup; a tea-",
       "method_es": "crushed raspberries, 1 oz. Place a lady finger at each side Use souffle' dish; put 5 stuffed dates around ice cream; mixed, raspberries, sliced peaches and claret syrup; a tea-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -227,13 +242,21 @@
       "category": "cocktail",
       "name_es": "HOT BEVERAGES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "concentrated chicken and j^ oz. of sweet",
+          "item_es": "concentrated chicken and j^ oz. of sweet",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "ADD 1 oz. of sweet cream to a cup of beef bouillon and Stir well and add loaf sugar,4 cubes; prepared milk, 1",
       "method_es": "ADD 1 oz. of sweet cream to a cup of beef bouillon and Stir well and add loaf sugar,4 cubes; prepared milk, 1",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,

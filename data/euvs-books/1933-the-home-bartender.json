@@ -57,13 +57,21 @@
       "category": "cocktail",
       "name_es": "STOUT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ale, 1 tablespoon sugar, 1 blade of mace",
+          "item_es": "ale, 1 tablespoon sugar, 1 blade of mace",
+          "amount": "3",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Fill pitcher with beer. Then heat Poker. Heat over Put into bowl one quart ofl Ale or beer, one wine glass mix and stir. Serve. Put i:nto mixer, half pint of boiling hot ale' or beer, 3 pour it out. Grate ~5th of a nutmeg over it and add a Fill glass :i.2 full Stout, other ~2 Beer or else, :i.2 full of",
       "method_es": "Fill pitcher with beer. Then heat Poker. Heat over Put into bowl one quart ofl Ale or beer, one wine glass mix and stir. Serve. Put i:nto mixer, half pint of boiling hot ale' or beer, 3 pour it out. Grate ~5th of a nutmeg over it and add a Fill glass :i.2 full Stout, other ~2 Beer or else, :i.2 full of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +99,21 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE WINE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "wine. bottle in champagne bottles. corks",
+          "item_es": "wine. bottle in champagne bottles. corks",
+          "amount": "5",
+          "unit": "gallon",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +124,21 @@
       "category": "cocktail",
       "name_es": "CHERRY RED WINE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pure juice of cherries, add 24 pound! gran-",
+          "item_es": "pure juice of cherries, add 24 pound! gran-",
+          "amount": "10",
+          "unit": "gallon",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -2112,13 +2136,21 @@
       "category": "cup",
       "name_es": "HOLLYWOOD CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne, 1 pony of yellow chartreuse, a",
+          "item_es": "champagne, 1 pony of yellow chartreuse, a",
+          "amount": "2",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 100,
@@ -2129,13 +2161,21 @@
       "category": "cup",
       "name_es": "MOSELLE WINE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "moselle wint·, 1 jigger maraschino syrup, 1",
+          "item_es": "moselle wint·, 1 jigger maraschino syrup, 1",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 101,
@@ -2170,13 +2210,28 @@
       "category": "cup",
       "name_es": "GINGER ALE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "canadian club ginger ale, four jiggers",
+          "item_es": "canadian club ginger ale, four jiggers",
+          "amount": "4",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "large",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 103,
@@ -2211,13 +2266,21 @@
       "category": "cup",
       "name_es": "BROADWAY CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "claret, one half pint (8 oz. glass of",
+          "item_es": "claret, one half pint (8 oz. glass of",
+          "amount": "2",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "serve with large piece of ice in a pitcher, stir before serving.",
       "method_es": "serve with large piece of ice in a pitcher, stir before serving.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 105,
@@ -2933,13 +2996,21 @@
       "category": "cobbler",
       "name_es": "RHINE WINE COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "imported irish whiskey juice of ;f a lemon",
+          "item_es": "imported irish whiskey juice of ;f a lemon",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Stir and Serve. Fruits on top.",
       "method_es": "Stir and Serve. Fruits on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 138,
@@ -2984,13 +3055,21 @@
       "category": "cobbler",
       "name_es": "CANADIAN COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "canadian club whiskey, ~ jigger curacao",
+          "item_es": "canadian club whiskey, ~ jigger curacao",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 141,
@@ -3223,13 +3302,21 @@
       "category": "sour",
       "name_es": "JAMAICA SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jamaica rum, one barspoon sugar, juice of ~2",
+          "item_es": "jamaica rum, one barspoon sugar, juice of ~2",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 153,
@@ -3873,13 +3960,21 @@
       "category": "punch",
       "name_es": "PINEAPLE MINT JULEP PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sparkling moselle wine one pint of gin",
+          "item_es": "sparkling moselle wine one pint of gin",
+          "amount": "3",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 183,
@@ -4251,13 +4346,21 @@
       "category": "cocktail",
       "name_es": "TOM AND JERRY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bicarb of soda, whip again extra good",
+          "item_es": "bicarb of soda, whip again extra good",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use large bowl also Tom and Jerry Mugs. Arrange bowl",
       "method_es": "Use large bowl also Tom and Jerry Mugs. Arrange bowl",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 204,
@@ -4309,13 +4412,21 @@
       "category": "cocktail",
       "name_es": "DEMITASSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "french made coffee",
+          "item_es": "french made coffee",
+          "amount": "Small",
+          "unit": "cup",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 207,
@@ -4326,13 +4437,21 @@
       "category": "cocktail",
       "name_es": "HOT CLARET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, ~4 slice lemon, % glass claret. fill",
+          "item_es": "sugar, ~4 slice lemon, % glass claret. fill",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 208,
@@ -5336,13 +5455,21 @@
       "category": "cocktail",
       "name_es": "SPEEDY GIRL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "canadian club whiskey, juice of one",
+          "item_es": "canadian club whiskey, juice of one",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 260,
@@ -5496,13 +5623,21 @@
       "category": "cocktail",
       "name_es": "ANISEED CORDIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "simple syrup, 1 pint brandy, 25 drops aniseed",
+          "item_es": "simple syrup, 1 pint brandy, 25 drops aniseed",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "mix well, bottle.",
       "method_es": "mix well, bottle.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 269,
@@ -5755,13 +5890,21 @@
       "category": "cocktail",
       "name_es": "PLEASANT GIRL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "syrup, ice, mix, and serve in lemonade.• glass",
+          "item_es": "syrup, ice, mix, and serve in lemonade.• glass",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 283,
@@ -5772,13 +5915,21 @@
       "category": "cocktail",
       "name_es": "QUICK CURE FOR INTOXICATION",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "salt. gargle: and rinse mouth and throat, cold",
+          "item_es": "salt. gargle: and rinse mouth and throat, cold",
+          "amount": "74",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 284,

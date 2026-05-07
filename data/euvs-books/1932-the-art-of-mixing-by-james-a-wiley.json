@@ -1662,14 +1662,22 @@
       "name_original": "FISH HOUSE PUNCH",
       "name_es": "Fish House Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey, the juice of 1 lemon. fill",
+          "item_es": "whiskey, the juice of 1 lemon. fill",
+          "amount": "small",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "FISH HOUSE PUNCH\n    Half fill a large glass ·with chopped ice, add 1\n    small glass of Whiskey, the juice of 1 lemon. Fill\n    with syphon.\n       Stir, d ecorate with fruits in season, float a\n    little Rum on top, and serve with straw.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1932-the-art-of-mixing-by-james-a-wiley-053",

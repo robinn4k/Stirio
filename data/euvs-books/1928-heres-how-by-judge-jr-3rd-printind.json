@@ -917,14 +917,22 @@
       "name_original": "Bacardi Punch",
       "name_es": "Bacardi Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grated nutmeg",
+          "item_es": "grated nutmeg",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": "40",
       "raw_text": "Bacardi Punch\n[ 39]\n\f..............................................................................\nTHIS drink was graciously con-\ntributed by Mr. Cadman, to\nwhom we give thanks:\n\n            I jigger of McCarty;\n            I glass of hot milk;\n            I tablespoonful of sugar;\n           a pinch of grated nutmeg;\n           the yolk of an egg.\n           Serve in a highball glass.\n\n\n\n\nTo As 'l' : Here's looking at you-\ndouble!",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1928-heres-how-by-judge-jr-3rd-printind-031",

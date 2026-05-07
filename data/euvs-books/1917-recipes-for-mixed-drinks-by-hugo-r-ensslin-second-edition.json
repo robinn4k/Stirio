@@ -374,14 +374,29 @@
       "name_original": "BARNEY FRENCH COCKTAIL",
       "name_es": "Cóctel Barney French",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Muddle well 4 slices of Orange 2 dashes Peychaud Bitters 1 piece Lemon Peel",
       "method_es": "Macerar los ingredientes.",
       "glassware": "Old Fashioned",
       "garnish": null,
       "page_reference": null,
       "raw_text": "BARNEY FRENCH COCKTAIL\nUse old fashioned cocktail glass.\nMuddle well 4 slices of Orange\n2 dashes Peychaud Bitters\n1 piece Lemon Peel",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition-011",
@@ -1370,14 +1385,22 @@
       "name_original": "CINCINNATI COCKTAIL",
       "name_es": "Cóctel Cincinnati",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "beer, fill vp with soda water and serve",
+          "item_es": "beer, fill vp with soda water and serve",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "CINCINNATI COCKTAIL\nHalf a glass of beer, fill vp with soda water and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition-042",
@@ -3081,14 +3104,22 @@
       "name_original": "POLLYANNA COCKTAIL",
       "name_es": "Cóctel Pollyanna",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "el bart gin",
+          "item_es": "el bart gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Muddle 3 slices Orange and 3 slices Pineapple ½ pony Grenadine Syrup 1 jigger El Bart Gin ¾, jigger Italian Vermouth Shake well in a mixing glass with cracked ice, strain into bar glass and serve. 26) RECIPES FOR MIXED DRINKS ]",
       "method_es": "Agitar bien con hielo picado, colar, servir.",
       "glassware": "bar glass",
       "garnish": null,
       "page_reference": null,
       "raw_text": "POLLYANNA COCKTAIL\nMuddle 3 slices Orange and 3 slices Pineapple\n% pony Grenadine Syrup\n1 jigger El Bart Gin\n¥Y, jigger Italian Vermouth\nShake well in a mixing glass with cracked ice, strain into bar glass and serve.\n\n\n26) RECIPES FOR MIXED DRINKS ]",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition-092",
@@ -5377,14 +5408,22 @@
       "name_original": "GRAND ROYAL FIZZ",
       "name_es": "Fizz Grand Royal",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Made same as plain Gin Fizz, adding ‘ 1 dash Maraschino 3 dashes Orange Juice ¾ pony Cream",
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "GRAND ROYAL FIZZ\nMade same as plain Gin Fizz, adding\n‘ 1 dash Maraschino\n3 dashes Orange Juice\nY% pony Cream",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition-162",
@@ -5432,14 +5471,22 @@
       "name_original": "NEW ORLEANS FIZZ",
       "name_es": "Fizz New Orleans",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "NEW ORLEANS FIZZ\nJuice % Lemon\nJuice % Lime\n2 teaspoonsful Powdered Sugar",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition-164",
@@ -5788,14 +5835,22 @@
       "name_original": "HOT SPICED RUM",
       "name_es": "Hot Spiced Rum",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "butter",
+          "item_es": "butter",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Made same as Hot Rum, adding a few cloves and allspice. If desired add small piece of butter.",
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "HOT SPICED RUM\nMade same as Hot Rum, adding a few cloves and allspice. If desired add\nsmall piece of butter.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1917-recipes-for-mixed-drinks-by-hugo-r-ensslin-second-edition-180",

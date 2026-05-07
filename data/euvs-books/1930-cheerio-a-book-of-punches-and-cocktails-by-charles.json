@@ -91,13 +91,21 @@
       "category": "sour",
       "name_es": "Gin Sour",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gin. fill the glass with shaved ice. shake",
+          "item_es": "gin. fill the glass with shaved ice. shake",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Mix in a small bar glass a large teaspoonful of",
       "method_es": "Mix in a small bar glass a large teaspoonful of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -159,13 +167,21 @@
       "category": "cocktail",
       "name_es": "Pearl Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "onion juice, three dashes orange bitters",
+          "item_es": "onion juice, three dashes orange bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well and strain into cocktail glass. Garnish with",
       "method_es": "Shake well and strain into cocktail glass. Garnish with",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -278,13 +294,21 @@
       "category": "cocktail",
       "name_es": "Holland Old Fashioned",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitters, add a twist of lemon peel and a",
+          "item_es": "bitters, add a twist of lemon peel and a",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -414,13 +438,21 @@
       "category": "cocktail",
       "name_es": "Hot Spiced Rum",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar, juice of a quarter of a lemon",
+          "item_es": "sugar, juice of a quarter of a lemon",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler two thirds full of hot water after plac",
       "method_es": "Fill a tumbler two thirds full of hot water after plac",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -448,13 +480,21 @@
       "category": "cocktail",
       "name_es": "Albermarle Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "holland gin to one half ounce absinthe",
+          "item_es": "holland gin to one half ounce absinthe",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Fill shaker with ice, shake and strain into cocktail glass.",
       "method_es": "Fill shaker with ice, shake and strain into cocktail glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -499,13 +539,35 @@
       "category": "cocktail",
       "name_es": "Hot Irish",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "in glass first to prevent cracking. in this dissolve",
+          "item_es": "in glass first to prevent cracking. in this dissolve",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar and add a portion of irish whiskey",
+          "item_es": "sugar and add a portion of irish whiskey",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon. serve with a spoon",
+          "item_es": "lemon. serve with a spoon",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler two thirds full of boiling water, putting",
       "method_es": "Fill a tumbler two thirds full of boiling water, putting",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -703,13 +765,21 @@
       "category": "cocktail",
       "name_es": "Whiskey Fruit Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters if added will enhance the",
+          "item_es": "angostura bitters if added will enhance the",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 41,
@@ -720,13 +790,21 @@
       "category": "cocktail",
       "name_es": "Jamaica Rum Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters, two dashes angostura bitters",
+          "item_es": "orange bitters, two dashes angostura bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -771,13 +849,21 @@
       "category": "cocktail",
       "name_es": "Bishop",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar has been dissolved. add",
+          "item_es": "powdered sugar has been dissolved. add",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -788,13 +874,21 @@
       "category": "fizz",
       "name_es": "Brandy Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "full of brandy. fill up the glass with seltzer",
+          "item_es": "full of brandy. fill up the glass with seltzer",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Mix in a glass a teaspoonful of powdered sugar, three",
       "method_es": "Mix in a glass a teaspoonful of powdered sugar, three",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -1179,13 +1273,21 @@
       "category": "punch",
       "name_es": "Brandy Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jamaica rum, a quart of brandy and a tea",
+          "item_es": "jamaica rum, a quart of brandy and a tea",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "stir thoroughly and dress the top with berries in season. Serve with a straw.",
       "method_es": "stir thoroughly and dress the top with berries in season. Serve with a straw.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1213,13 +1315,21 @@
       "category": "cup",
       "name_es": "Claret Cup a la Henry VIII",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "verbena and a bottle of soda water with a little",
+          "item_es": "verbena and a bottle of soda water with a little",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        }
+      ],
       "method_original": "grated nutmeg. Strain the mixture and serve with ice.",
       "method_es": "grated nutmeg. Strain the mixture and serve with ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 71,
@@ -1298,13 +1408,35 @@
       "category": "cocktail",
       "name_es": "Hot Italian",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water. stir well, add three large",
+          "item_es": "boiling water. stir well, add three large",
+          "amount": "large",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "boiling water. add two lumps of",
+          "item_es": "boiling water. add two lumps of",
+          "amount": "2",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "boiling water, two lumps of sugar",
+          "item_es": "boiling water, two lumps of sugar",
+          "amount": "2",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": "Mix in a large glass, one wine-glass of Scotch whiskey, Mix in large glass, one wine-glass of Irish whiskey, Put in a small piece of lemon rind or a thin slice of lemon. Add a little grated nutmeg on top and serve.",
       "method_es": "Mix in a large glass, one wine-glass of Scotch whiskey, Mix in large glass, one wine-glass of Irish whiskey, Put in a small piece of lemon rind or a thin slice of lemon. Add a little grated nutmeg on top and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1400,13 +1532,21 @@
       "category": "punch",
       "name_es": "Planter's Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "red pepper, and serve very cold with long",
+          "item_es": "red pepper, and serve very cold with long",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use long glass. Squirt in the juice of a fresh lime, two",
       "method_es": "Use long glass. Squirt in the juice of a fresh lime, two",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1417,13 +1557,21 @@
       "category": "cocktail",
       "name_es": "Vermouth Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bitters, fill with ice and strain into a cocktail",
+          "item_es": "bitters, fill with ice and strain into a cocktail",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -1451,13 +1599,21 @@
       "category": "cocktail",
       "name_es": "Rob Roy Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice, squirt full with seltzer water, and drink",
+          "item_es": "ice, squirt full with seltzer water, and drink",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1502,13 +1658,21 @@
       "category": "cocktail",
       "name_es": "Orange Curacoa Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacoa, sweeten with half a teaspoonful of",
+          "item_es": "curacoa, sweeten with half a teaspoonful of",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1638,13 +1802,21 @@
       "category": "sour",
       "name_es": "Fancy Sour Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "plain grape juice. ice well and squeeze",
+          "item_es": "plain grape juice. ice well and squeeze",
+          "amount": "one half",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Fill with ice, shake and strain into cocktail glass. serve.",
       "method_es": "Fill with ice, shake and strain into cocktail glass. serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 96,
@@ -1706,13 +1878,21 @@
       "category": "cocktail",
       "name_es": "Soda Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "soda water, add a squirt of lemon juice",
+          "item_es": "soda water, add a squirt of lemon juice",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Mix in a small pitcher two bottles of sarsaparilla, Fill half a glass with cold milk, and the rest with iced",
       "method_es": "Mix in a small pitcher two bottles of sarsaparilla, Fill half a glass with cold milk, and the rest with iced",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 100,
@@ -1927,13 +2107,21 @@
       "category": "cocktail",
       "name_es": "Club Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy; to this add two dashes of angostura",
+          "item_es": "brandy; to this add two dashes of angostura",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a large bar glass half full of shaved ice. Pour in Garnish with berries, and on top of the drink drop a thin",
       "method_es": "Fill a large bar glass half full of shaved ice. Pour in Garnish with berries, and on top of the drink drop a thin",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 113,
@@ -1944,13 +2132,21 @@
       "category": "cocktail",
       "name_es": "Brandy Vermouth Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar, a dash of bitters; stir",
+          "item_es": "powdered sugar, a dash of bitters; stir",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "add two dashes of bitters, fill with ice, mix and strain in",
       "method_es": "add two dashes of bitters, fill with ice, mix and strain in",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 114,

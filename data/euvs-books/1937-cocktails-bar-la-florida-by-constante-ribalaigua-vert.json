@@ -1147,13 +1147,21 @@
       "category": "cocktail",
       "name_es": "PALM OLIVE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "c h e r r y",
+          "item_es": "c h e r r y",
+          "amount": "small",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Cocktail Especial",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 63,

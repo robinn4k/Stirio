@@ -519,14 +519,22 @@
       "name_original": "Champagne Cocktail",
       "name_es": "Champagne Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice and fill the glass with iced",
+          "item_es": "ice and fill the glass with iced",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "squeeze and drop another piece of lemon peel",
       "method_es": "squeeze and drop another piece of lemon peel",
       "glassware": null,
       "garnish": null,
       "page_reference": "14",
       "raw_text": "No. 14.       Champagne Cocktail.\n     In a champagne glass put a lump of sugar,\n  soak it with Angostura Bitter, squeeze the essence\n  of two or three lemon peels in the glass, add\n  a lump of ice and fill the glass with iced\n. Champagne,stir up slightly with the mixing spoon,\nsqueeze and drop another piece of lemon peel\nin the glass.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-015",
@@ -1841,14 +1849,29 @@
       "name_original": "Olle Cocktail",
       "name_es": "Olle Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grenadine syrup",
+          "item_es": "grenadine syrup",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "fresh orange juice, iced and well",
+          "item_es": "fresh orange juice, iced and well",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Put a large lump of ice in a tumbler and add: Fill the balance with Champagne. Put a large lump of ice in a tumbler and add: Stir well and fill the balance with Champagne. shaken with two dashes of orange bitter. Two",
       "method_es": "Put a large lump of ice in a tumbler and add: Fill the balance with Champagne. Put a large lump of ice in a tumbler and add: Stir well and fill the balance with Champagne. shaken with two dashes of orange bitter. Two",
       "glassware": null,
       "garnish": null,
       "page_reference": "52",
       "raw_text": "No. 52.           Olle Cocktail.\n  Recipe by Olle, the well known bartender\nof the Vikings in Paris.\n  Put a large lump of ice in a tumbler and add:\n          Halt a cocktail glass of Gin\n          Halt a cocktail glass of Cointreau\n          Fill the balance with Champagne.\n\nNo 53.          Olle Pick-me-up.\n  Put a large lump of ice in a tumbler and add:\n          Half a cocktail glass of Brandy\n          Half a cocktail glass of Bacardi\n          A few drops of lemon juice\n          A dash of Grenadine syrup.\n     Stir well and fill the balance with Champagne.\n\nNo 54. Orange Blossom Cocktail.\n  Half a cocktail glass of Dry Gin and half\na glass of fresh orange juice, iced and well\nshaken with two dashes of orange bitter. Two\nor three dashes of Grenadine syrup, if desi\nred sweet.\n\n\n26\n\n\n\n\n                                               ^      ..a.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-052",
@@ -2984,14 +3007,29 @@
       "name_original": "Brandy Cobbler",
       "name_es": "Brandy Cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ot rhine wine",
+          "item_es": "ot rhine wine",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler 3/4 full of broken ice and add: Fill up with cold soda water, decorate the",
       "method_es": "Fill a tumbler 3/4 full of broken ice and add: Fill up with cold soda water, decorate the",
       "glassware": null,
       "garnish": null,
       "page_reference": "87",
       "raw_text": "No. 87.         Brandy Cobbler.\n  Fill a tumbler 3/4 full of broken ice and add:\n          The juice ot half a lemon\n          Sugar according to taste\n          2 glasses ot Rhine wine\n          One and a half glass of Brandy.\n  Fill up with cold soda water, decorate the\ntop with fruit in season and serve with straws\nand a spoon.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-083",
@@ -3063,14 +3101,22 @@
       "name_original": "Claret Cobbler",
       "name_es": "Claret Cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler 2/3 full of broken ice and add: Fill up with cold soda water and stir up,",
       "method_es": "Fill a tumbler 2/3 full of broken ice and add: Fill up with cold soda water and stir up,",
       "glassware": null,
       "garnish": null,
       "page_reference": "90",
       "raw_text": "No. 90.          Claret Cobbler.\n            Fill a tumbler 2/3 full of broken ice and add:\n                    The juice oi half a lemon\n                    Sugar according to taste\n                    One and a half glass of Claret\n                    Halt a glass of Brandy.\n            Fill up with cold soda water and stir up,\n          decorate the top neatly with slices of fruit in\n          season, serve with straws and a spoon.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-086",
@@ -3128,14 +3174,29 @@
       "name_original": "Hoch Cobbler",
       "name_es": "Hoch Cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rhine wine",
+          "item_es": "rhine wine",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler 3/4 full of broken ice and add: Fill up with cold soda water, decorate the",
       "method_es": "Fill a tumbler 3/4 full of broken ice and add: Fill up with cold soda water, decorate the",
       "glassware": null,
       "garnish": null,
       "page_reference": "93",
       "raw_text": "No. 93.           Hoch Cobbler.\n  Fill a tumbler 3/4 full of broken ice and add:\n          The juice of halt a lemon\n          Sugar according to taste\n          2 glasses of Rhine wine\n          Half a glass of Brandy.\n  Fill up with cold soda water, decorate the\ntop neatly with slices of fruit in season, serve\nwith straws and a spoon.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-089",
@@ -3255,14 +3316,22 @@
       "name_original": "Tip Top Gobbler",
       "name_es": "Tip Top Gobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ot brandy",
+          "item_es": "ot brandy",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler 2/3 full of broken ice and add: Fill up with Champagne, decorate the top",
       "method_es": "Fill a tumbler 2/3 full of broken ice and add: Fill up with Champagne, decorate the top",
       "glassware": null,
       "garnish": null,
       "page_reference": "98",
       "raw_text": "No. 98.         Tip Top Gobbler.\n  Fill a tumbler 2/3 full of broken ice and add:\n           The juice of half a lemon\n           Sugar according to taste\n           Half a glass ot Brandy.\n           Halt a glass of Brown Curacao.\n  Fill up with Champagne, decorate the top\nwith slices of fruit in season, serve with straws\nand a spoon.\n\n40",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-094",
@@ -3272,14 +3341,22 @@
       "name_original": "Whisky Cobbler",
       "name_es": "Whisky Cobbler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mosel wine",
+          "item_es": "mosel wine",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a tumbler 3/4 full of broken ice and add: Fill up with soda water decorate the top with",
       "method_es": "Fill a tumbler 3/4 full of broken ice and add: Fill up with soda water decorate the top with",
       "glassware": null,
       "garnish": null,
       "page_reference": "99",
       "raw_text": "No. 99.        Whisky Cobbler.\n  Fill a tumbler 3/4 full of broken ice and add:\n          The juice of half a lemon\n          Sugar according to taste\n          2 glasses of Mosel wine\n          Halt a glass of Whisky.\n  Fill up with soda water decorate the top with\nfruit in season, serve with straws and a spoon.\n\n\n\n\n                                                   -.'if\n\n\n\n\n                                              41\nINVERNESS BRUNN A.-B\n           STOCKSUND               SWEDEN\n\n\n                             ■V\n\n\n\n\n    INVERNESS BORDSV TTEN\n     S     ty a a      R fr                  ta t\n             K    f ta      at r\n\n\n    NVERNESS CLUB SOD\n     T           t S    a Wat r I            t   c\n\n\n\n\n                             STOCKHOL            S\n\n\nD    't f r t t                   t •\n\nC. E.                   r t                  Lt       .\n                  STOCKHOL\n\n\nLE DIN     BOOKSELLER a                 RT       LLERIES\n\n     Lar        t t c    f   ORN ETCHIN S\n         ct r          y BRUNO LIL E ORS\n     Sc     t r          y C RL         ILLES\n                    Egg Noggs.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-095",
@@ -3908,14 +3985,29 @@
       "name_original": "Butterfly Flip",
       "name_es": "Butterfly Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "fresh cream",
+          "item_es": "nata fresca",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well, strain into a small wine glass and add grated nutmeg on top.",
       "method_es": "Shake well, strain into a small wine glass and add grated nutmeg on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": "126",
       "raw_text": "No. 126.           Butterfly Flip.\n  FUl the shaker half full of broken ice and add:\n        The yolk of a fresh egg\n           Sugar according to taste\n           Half a glass of Brandy\n           Halt a glass of Brown Curacao\n           Half a glass of fresh cream.\n  Shake well, strain into a small wine glass and\nadd grated nutmeg on top.\n\n52",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-118",
@@ -4277,14 +4369,22 @@
       "name_original": "Tropical Fruit Lemonade",
       "name_es": "Tropical Fruit Lemonade",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "half full of broken ice. fill the",
+          "item_es": "half full of broken ice. fill the",
+          "amount": "large",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": "144",
       "raw_text": "No. 144. Tropical Fruit Lemonade.\n  A Tropical Fruit Lemonade is made of the\njuice of two limes, the juice of one orange.\nGrenadine to sweeten according to taste, 3 or 3\nsprigs of mint. Shake well and strain into a\nlarge tumbler half full of broken ice. Fill the\nbalance up with plain water or Ginger ale.\n\n\n\n\n                                                   59\nThe Swedish Drugstore\n679 Columbus Ave. / 93rd St. and Columbus Ave.\n                      Next to Elevated Station\n\n                      NEW YORK CITY\n\n\n\n\nOnly Swedish\nDRUGSTORE\nin New York\n\n                      CEDERLUNDS\n                      non alcoholic Punsch,\n                      Aquavit and Julgldgg\n                      RULLES and\n                      CITRONOMAS Extracts\n                      Curacao, Chartreuse, Ca\n                      cao, Anisette,Benedictine,\n                      Cognac Brandy, Punsch,\n                      Arrac, Aquavit etc.\n\n\n\n\nThe Swedish Drugstore\n93rd   Street and     Columbus Avenue\nNEW YORK CITY\n\n                      GERHARD        T. ROOTH\n\nTelephone Riverside 5 8 6 9 & 0 6 8 4\n                  Long Drinks.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-136",
@@ -4362,14 +4462,22 @@
       "name_original": "John Collins",
       "name_es": "John Collins",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the shaker half full of broken ice and add: Shake well and pour this into a large bar glass",
       "method_es": "Fill the shaker half full of broken ice and add: Shake well and pour this into a large bar glass",
       "glassware": null,
       "garnish": null,
       "page_reference": "149",
       "raw_text": "No. 149.            John Collins.\n  Fill the shaker half full of broken ice and add:\n           The juice of one and a half lemon\n           Sugar according to taste\n           One and a half glass of Whisky.\n  Shake well and pour this into a large bar glass\nand fill up with cold soda water,serve with straws.\n                                                  6r",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-141",
@@ -4434,14 +4542,22 @@
       "name_original": "Tom Collins",
       "name_es": "Tom Collins",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the shaker half full of broken ice and add: Shake well, pour into a large bar glass and fill",
       "method_es": "Fill the shaker half full of broken ice and add: Shake well, pour into a large bar glass and fill",
       "glassware": null,
       "garnish": null,
       "page_reference": "152",
       "raw_text": "No. 152.            Tom Collins.\n  Fill the shaker half full of broken ice and add:\n           The juice of one and a halt lemon\n           Sugar according to taste\n           One and a half glass of Dry Gin.\n  Shake well, pour into a large bar glass and fill\nwith cold soda water. Serve with straws.\n\n\n\n\n62\n                  Pousse-Cafes.\n\n   The Pousse-Cafes are usually served after the\nmeals like Luncheon and. Dinner.\n   They are French drinks, very popular in France.\n   The different and several liqueurs required in\nthe preparation of these Pousse-Cafes must be\nheld perfectly separate from each other. The\nbest way is to pour the liqueurs from the bottles\ninto a spoon, and thereupon slowly into the\nglass along its side.\n   A Pousse-Cafe may contain 8 different liqueurs,\nor only 2 or 3 ones.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-144",
@@ -4613,14 +4729,22 @@
       "name_original": "American Punch",
       "name_es": "American Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "portwine",
+          "item_es": "portwine",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a stew pan with following ingredients:",
       "method_es": "Fill a stew pan with following ingredients:",
       "glassware": null,
       "garnish": null,
       "page_reference": "158",
       "raw_text": "No. 158.          American Punch,\n                         (4—6 persons)\n   Fill a stew pan with following ingredients:\n           4 pieces of sugar\n           1 little piece of cinnamon\n           Lemon peel\n           5   cloves\n           Halt a wine glass of Whisky\n           Half a glass of Portwine\n         Two wine glasses of plain water.\n   Let boil and serve in a tumbler.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-150",
@@ -5335,14 +5459,36 @@
       "name_original": "Castle Cup",
       "name_es": "Castle Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "graves wine",
+          "item_es": "graves wine",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "soda water",
+          "item_es": "agua de soda",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Put a large piece of ice in a big jug and add: Stir up and serve in Champagne glasses.",
       "method_es": "Put a large piece of ice in a big jug and add: Stir up and serve in Champagne glasses.",
       "glassware": null,
       "garnish": null,
       "page_reference": "185",
       "raw_text": "No. 185.            Castle Cup.\n                    (12—14 persons)\n\n  Put a large piece of ice in a big jug and add:\n           2 bottles of Claret\n           2 bottles of Graves Wine\n           5 wine glasses of Brandy\n           2 bottles of Soda water\n           2 cocktail glasses oh Brown Curacao\n           2 large peels of cucumber\n           Some grated nutmeg on top\n           Sugar according to taste.\n  Stir up and serve in Champagne glasses.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-176",
@@ -5431,14 +5577,22 @@
       "name_original": "King's Cup",
       "name_es": "King's Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry champagne",
+          "item_es": "dry champagne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Put a large piece of ice in a big jug and add: Stir up and serve in Champagne glasses.",
       "method_es": "Put a large piece of ice in a big jug and add: Stir up and serve in Champagne glasses.",
       "glassware": null,
       "garnish": null,
       "page_reference": "189",
       "raw_text": "No. 189.              King's Cup.\n                       (4—6 persons)\n  Put a large piece of ice in a big jug and add:\n            1 bottle of Dry Champagne\n            1 cocktail glass of Yellow Chartreuse\n            1 cocktail glass of Brandy\n            Halt a hottle of Mosel Wine\n            A little bunch of celery.\n  Stir up and serve in Champagne glasses.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-180",
@@ -5503,14 +5657,22 @@
       "name_original": "Punsch Cup",
       "name_es": "Punsch Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "niersteiner wine",
+          "item_es": "niersteiner wine",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Put a large lump of ice in a glass can and add: Stir well and serve in Champagne glasses.",
       "method_es": "Put a large lump of ice in a glass can and add: Stir well and serve in Champagne glasses.",
       "glassware": null,
       "garnish": null,
       "page_reference": "193",
       "raw_text": "No. 193.             Punsch Cup.\n                         (4 persons)\n\n   Put a large lump of ice in a glass can and add:\n            Halt a bottle of Swedish Punsch\n            One bottle of Niersteiner Wine\n            Halt a wine glass of Green Curacao.\n   Stir well and serve in Champagne glasses.\n\n\n76\n\n\n\n\n                            I   •'\n                     Toddies.\n  These drinks can be served hot or cold, by\nusing respectively hot water or ice and cold\nwater.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-two-hundred-selected-drinks-by-k-w-sundin-183",

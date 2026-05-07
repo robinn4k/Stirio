@@ -39,14 +39,36 @@
       "name_original": "Alphonse",
       "name_es": "Alphonse",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "creme de cocoa",
+          "item_es": "creme de cocoa",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Shake well in shaved ice.",
       "method_es": "Use a small mixing glass. Shake well in shaved ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Alphonse\nUse a small mixing glass.\nOne-third jigger Creme de Cocoa.\nOne-third jigger Dry Gin.\nOne-third jigger cream.\nShake well in shaved ice.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-002",
@@ -56,14 +78,29 @@
       "name_original": "Ammonia",
       "name_es": "Ammonia",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "aromatic spirits ammonia",
+          "item_es": "aromatic spirits ammonia",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass.",
       "method_es": "Use a small mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Ammonia\nUse a small mixing glass.\nHalf f i l l with shaved ioe.\nOne jigger water.\nFive drops Aromatic Spirits Ammonia.\nS t i r well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-003",
@@ -73,14 +110,22 @@
       "name_original": "Appetizer",
       "name_es": "Appetizer",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well in shaved ice, strain, squeeze the oil of a piece of",
       "method_es": "Shake well in shaved ice, strain, squeeze the oil of a piece of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Appetizer\nOne-third wine glass brandy.\nOne-third wine glass Maraschino.\nOne-third wine glass Red Curaooa.\nThree dashes Orange bitters.\nShake well in shaved ice, strain, squeeze the oil of a piece of\nlemon peel on top and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-004",
@@ -90,14 +135,43 @@
       "name_original": "Apple Jack",
       "name_es": "Apple Jack",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a    large mixing glass. Stir and after straining into a cocktail glass add a cherry or",
       "method_es": "Use a    large mixing glass. Stir and after straining into a cocktail glass add a cherry or",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Apple Jack\nUse a    large mixing glass.\nHalf f i l l with shaved ice.\nTwo dashes gum syrup.\nTwo dashes Angostura bitters.\nOne dash Curacoa.\nOne jigger Apple Jack.\nStir and after straining into a cocktail glass add a cherry or\nolive.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-005",
@@ -107,14 +181,29 @@
       "name_original": "Auto",
       "name_es": "Auto",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well, strain and serve with a cherry or olive, as desired.",
       "method_es": "Use a large mixing glass. Shake well, strain and serve with a cherry or olive, as desired.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Auto\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nTwo dashes gum syrup.\nTwo dashes Orange bitters.\nOne-third each Italian Vermuth, Scotch Whiskey, Old Tom Gin.\nShake well, strain and serve with a cherry or olive, as desired.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-006",
@@ -124,14 +213,36 @@
       "name_original": "Bamboo",
       "name_es": "Bamboo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sherry wine",
+          "item_es": "sherry wine",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass.",
       "method_es": "Use a small mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Bamboo\nUse a small mixing glass.\nHalf f i l l   with shaved ice.\nTwo dashes Orange bitters.\nOne-half jigger Sherry wine.\nOne-half jigger French vermuth.\nS t i r will and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-007",
@@ -165,14 +276,36 @@
       "name_original": "Bij ou",
       "name_es": "Bij ou",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "green chartreuse",
+          "item_es": "green chartreuse",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain into cocktail glass, add a cherry or olive, squeeze the oil from a piece of lemon peel and serve.",
       "method_es": "Use a large mixing glass. Stir well, strain into cocktail glass, add a cherry or olive, squeeze the oil from a piece of lemon peel and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Bij ou\nUse a large mixing glass.\nThree-quarters full shaved ice.\nOne-third jigger green Chartreuse.\nOne-third jigger Italian Vermuth.\nOne-third jigger Plymouth gin.\nStir well, strain into cocktail glass, add a cherry or olive,\n squeeze the oil from a piece of lemon peel and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-009",
@@ -182,14 +315,22 @@
       "name_original": "Blackthorn",
       "name_es": "Blackthorn",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass.",
       "method_es": "Use a small mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Blackthorn\nUse a small mixing glass.\nHalf full      of shaved ice.\nTwo dashes Orange bitters.\nOne-third Italian Vermuth.\nTwo-thirds Sloe gin.\nS t i r well   and s t r a i n .",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-010",
@@ -199,14 +340,29 @@
       "name_original": "Brandy",
       "name_es": "Brandy",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass.",
       "method_es": "Use a small mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Brandy\nUse a small mixing glass.\nThree or four dashes gum syrup.\nTwo dashes Angostura bitters.\nOne jigger Brandy.\nTwo or three dashes Curacoa.\nHalf fill glass with shaved ice, stir well, strain into cocktail\nglass and squeeze oil from lemon peel and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-011",
@@ -216,14 +372,22 @@
       "name_original": "Bronx",
       "name_es": "Bronx",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Squeeze one-eighth of a small orange, dropping all into glass. Shake well,       strain and serve.",
       "method_es": "Use a large mixing glass. Squeeze one-eighth of a small orange, dropping all into glass. Shake well,       strain and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Bronx\nUse a large mixing glass.\nSqueeze one-eighth of a small orange, dropping all into glass.\nOne-quarter each Italian and French Vermuth.\nOne-half jigger Dry Gin.\nHalf fill glass with shaved ice.\nShake well,       strain and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-012",
@@ -233,14 +397,22 @@
       "name_original": "Brut",
       "name_es": "Brut",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use small mixing glass. Stir well strain and add meat of half pecon nut.",
       "method_es": "Use small mixing glass. Stir well strain and add meat of half pecon nut.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Brut\nUse small mixing glass.\nHalf f i l l   with shaved ice.\nThree dashes Peychaud bitters.\nOne-third Amer Fecon.\nTwo-thirds French Vermuth.\nStir well strain and add meat of half pecon nut.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-013",
@@ -250,14 +422,36 @@
       "name_original": "Champagne",
       "name_es": "Champagne",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "or lump of ice on top of sugar",
+          "item_es": "or lump of ice on top of sugar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "wine will serve four in this manner",
+          "item_es": "wine will serve four in this manner",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "will serve eight",
+          "item_es": "will serve eight",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Use the hollow stem champagne glass if available. Pour wine on top of this mixture and serve.",
       "method_es": "Use the hollow stem champagne glass if available. Pour wine on top of this mixture and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Champagne\n\nUse the hollow stem champagne glass if available.\nIf not, use ordinary stem punch glass.\nPlace one lump of sugar at bottom of glass.\nTwo or three dashes Angostura bitters on sugar.\nOne cube or lump of ice on top of sugar.\nOne strip of lemon peel squeezed on top of ice and left in glass.\nPour wine on top of this mixture and serve.\nOne pint of wine will serve four in this manner.\nOne quart will serve eight.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-014",
@@ -267,14 +461,29 @@
       "name_original": "Cholocate",
       "name_es": "Cholocate",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "yellow chartreuse",
+          "item_es": "yellow chartreuse",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Fill glass with shaved ice. Shake well, strain and serve.",
       "method_es": "Use a large mixing glass. Fill glass with shaved ice. Shake well, strain and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Cholocate\n\nUse a large mixing glass.\nOne-half jigger Yellow Chartreuse.\nOne-half jigger Maraschino.\nYolk of one egg.\nFill glass with shaved ice.\nShake well, strain and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-015",
@@ -284,14 +493,22 @@
       "name_original": "Cider",
       "name_es": "Cider",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sweet cider—stir and serve",
+          "item_es": "sweet cider—stir and serve",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Use a Collins glass. (A tall glass holding 16 oz.)",
       "method_es": "Use a Collins glass. (A tall glass holding 16 oz.)",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Cider\n\nUse a Collins glass. (A tall glass holding 16 oz.)\nThe rind of one lemon pared in one piece.\nOne large lump of ice.\nTwo or three dashes Angostura bitters.\nOne pint sweet cider—stir and serve.\n\n\n\n\n                                                                    • '''.M   'i",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-016",
@@ -301,14 +518,22 @@
       "name_original": "Clover Club",
       "name_es": "Clover Club",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well and strain into cocktail glass.",
       "method_es": "Use a large mixing glass. Shake well and strain into cocktail glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Clover Club\n Use a large mixing glass.\n Half f i l l with shaved ice.\n Juice of half lime.\n Half white of one egg.\n Half spoon Grenadine syrup.\n One jigger Dry Gin.\nShake well and strain into cocktail glass.\nThe whole white of one egg adding a little extra gin will make\n two cocktails.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-017",
@@ -318,14 +543,29 @@
       "name_original": "Coffee",
       "name_es": "Coffee",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Fill mixing glass with shaved ice and shake well. Strain into a goblet and sprinkle a little nutmeg on top.",
       "method_es": "Use a large mixing glass. Fill mixing glass with shaved ice and shake well. Strain into a goblet and sprinkle a little nutmeg on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Coffee\nUse a large mixing glass.\nOne spoonfull powdered sugar.\nOne fresh egg.\nOne jigger Port wine.\nOne-half jigger Brandy.\nFill mixing glass with shaved ice and shake well.\nStrain into a goblet and sprinkle a little nutmeg on top.\n (The name of this drink is a misnomer, as coffee and bitters are\nnot any of the ingredients, but when properly concocted the color\nis like coffee with cream in it.)",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-018",
@@ -335,14 +575,43 @@
       "name_original": "Coronation",
       "name_es": "Coronation",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sherry wine",
+          "item_es": "sherry wine",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain, add a cherry or olive, twist a strip of lemon",
       "method_es": "Use a large mixing glass. Stir well, strain, add a cherry or olive, twist a strip of lemon",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Coronation\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nTwo dashes Maraschino.\nThree dashes Angostura bitters.\nOne-half jigger French Vermuth.\nOne-half jigger Sherry wine.\nStir well, strain, add a cherry or olive, twist a strip of lemon\npeel,   and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-019",
@@ -352,14 +621,36 @@
       "name_original": "Dewey",
       "name_es": "Dewey",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Shake well and strain.",
       "method_es": "Use a small mixing glass. Shake well and strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Dewey\nUse a small mixing glass.\nHalf f i l l with shaved ice.\nOne dash Orange bitters.\nOne-half jigger Plymouth Gin.\nOne-half jigger French Vermuth.\nShake well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-020",
@@ -369,14 +660,43 @@
       "name_original": "Dewing",
       "name_es": "Dewing",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "each, lime, lemon and orange",
+          "item_es": "each, lime, lemon and orange",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well, strain and add one small pickled onion.",
       "method_es": "Use a large mixing glass. Shake well, strain and add one small pickled onion.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Dewing\nUse a large mixing glass.\nTwo-thirds full of shaved ice.\nOne-half jigger Whiskey\nOne-quarter jigger Italian Vermuth.\nOne-quarter jigger French Vermuth.\nTwo or three dashes Angostura bitters.\nOne slice each, lime, lemon and orange.\nShake well, strain and add one small pickled onion.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-021",
@@ -386,14 +706,29 @@
       "name_original": "Dubonnet",
       "name_es": "Dubonnet",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dubonnet",
+          "item_es": "Dubonnet",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use small mixing glass. Stir well and strain.",
       "method_es": "Use small mixing glass. Stir well and strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Dubonnet\nUse small mixing glass.\nTwo limps or cubes of ice.\nOne-half jigger Dubonnet.\nOne-half jigger Dry gin.\nStir well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-022",
@@ -403,14 +738,29 @@
       "name_original": "Gibson",
       "name_es": "Gibson",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain and add meat of one hazel nut.",
       "method_es": "Use a large mixing glass. Stir well, strain and add meat of one hazel nut.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Gibson\nUse a large mixing glass.\nTwo or three cubes or lumps of ice.\nTwo-thirds jigger of Plymouth Gin.\nOne-third jigger French Vermuth.\nStir well, strain and add meat of one hazel nut.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-023",
@@ -437,14 +787,22 @@
       "name_original": "Honolulu",
       "name_es": "Honolulu",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well and s t r a i n .",
       "method_es": "Use a large mixing glass. Shake well and s t r a i n .",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Honolulu\nUse a large mixing glass.\nMuddle a lump of sugar at bottom of mixing glass.\nOne jigger Dry Gin.\nOne-eighth of small orange.\nF i l l with shaved ice.\nShake well and s t r a i n .",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-025",
@@ -454,14 +812,50 @@
       "name_original": "Indian",
       "name_es": "Indian",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rye",
+          "item_es": "centeno",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Fill glass with shaved ice. Shake well       and s t r a i n .",
       "method_es": "Use a large mixing glass. Fill glass with shaved ice. Shake well       and s t r a i n .",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Indian\nUse a large mixing glass.\nOne-half jigger Rye.\nOne-half jigger Sloe gin.\nOne dash Absinthe.\nTwo dashes Curacoa.\nOne slice of orange.\nFill glass with shaved ice.\nShake well       and s t r a i n .",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-026",
@@ -471,14 +865,43 @@
       "name_original": "Irish",
       "name_es": "Irish",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bokers b i t t e r s",
+          "item_es": "bokers b i t t e r s",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "irish whiskey",
+          "item_es": "whisky irlandés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a       large mixing glass. Fill glass with shaved ice.                             x   • Stir well, strain, add an olive and squeeze oil out of strip of",
       "method_es": "Use a       large mixing glass. Fill glass with shaved ice.                             x   • Stir well, strain, add an olive and squeeze oil out of strip of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Irish\nUse a       large mixing glass.\nTwo dashes Absinthe.\nOne dash Curacoa.\nTwo dashes Bokers B i t t e r s .\nOne jigger Irish whiskey.\nFill glass with shaved ice.                             x   •\nStir well, strain, add an olive and squeeze oil out of strip of\nlemon peel.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-027",
@@ -488,14 +911,43 @@
       "name_original": "Japanese",
       "name_es": "Japanese",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orgeat syrup",
+          "item_es": "orgeat syrup",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass.",
       "method_es": "Use a small mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Japanese\nUse a small mixing glass.\nHalf f i l l    with shaved ice.\nThree dashes Orgeat syrup.\nTwo dashes Peychaud bitters.\nOne slice of lemon.\nOne jigger brandy.\nS t i r well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-028",
@@ -505,14 +957,22 @@
       "name_original": "Jersey",
       "name_es": "Jersey",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use    a large mixing glass. Fill glass with sweet cider, stir well and strain into stem punch",
       "method_es": "Use    a large mixing glass. Fill glass with sweet cider, stir well and strain into stem punch",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Jersey\nUse    a large mixing glass.\nTwo    or three lumps or cubes of ice.\nOne    bar spoon sugar.\nTwo    dashes Angostura bitters.\nFill glass with sweet cider, stir well and strain into stem punch\nglass.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-029",
@@ -522,14 +982,22 @@
       "name_original": "Lone Tree",
       "name_es": "Lone Tree",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well and strain.",
       "method_es": "Use a large mixing glass. Shake well and strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Lone Tree\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nOne—third each French and Italian Vermuth.\nOne-third Dry Gin.\nOne dash Absinthe.\nOne strip of orange rind.\nShake well and strain.\n\n                                          9",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-030",
@@ -539,14 +1007,43 @@
       "name_original": "Manhattan",
       "name_es": "Manhattan",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "good rye whiskey",
+          "item_es": "good rye whiskey",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain, add a small cherry and squeeze the oil from a Use a small mixing glass. Add a cherry and a strip of lemon rind.",
       "method_es": "Use a small mixing glass. Stir well, strain, add a small cherry and squeeze the oil from a Use a small mixing glass. Add a cherry and a strip of lemon rind.",
       "glassware": "As served at the famous Potter Hotel at Santa Barbara, Calif.",
       "garnish": null,
       "page_reference": null,
       "raw_text": "Manhattan\n(As served at the famous Potter Hotel at Santa Barbara, Calif.)\nUse a small mixing glass.\nTwo or three small lumps of ice.\nOne-half jigger GOOD Rye Whiskey.\nOne-half jigger Italian Vermuth.\nTwo dashes Angostura bitters.\nStir well, strain, add a small cherry and squeeze the oil from a\nstrip of lemon rind.\n\n                                  Manhattan\nUse a small mixing glass.\nHalf f i l l with shaved ice.\nTwo dashes gum syrup.\nOne-third Italian Vermuth.\nTwo-thirds whiskey.\nS t i r and strain.\nAdd a cherry and a strip of lemon rind.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-031",
@@ -556,14 +1053,29 @@
       "name_original": "Manhattan Dry",
       "name_es": "Manhattan Dry",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Add an olive and a strip of lemon rind.",
       "method_es": "Use a small mixing glass. Add an olive and a strip of lemon rind.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Manhattan Dry\nUse a small mixing glass.\nHalf f i l l with shaved ice.\nOne-half jigger Whiskey.\nOne-half jigger French Vermuth.\nS t i r and strain.\nAdd an olive and a strip of lemon rind.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-032",
@@ -573,14 +1085,22 @@
       "name_original": "Martini",
       "name_es": "Martini",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir, strain and add a cherry.",
       "method_es": "Use a small mixing glass. Stir, strain and add a cherry.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Martini\nUse a small mixing glass.\nHalf f i l l with shaved ice.\nTwo dashes gum syrup.\nOne-third Italian Vermuth.\nTwo-thirds Gin.\nStir, strain and add a cherry.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-033",
@@ -590,14 +1110,29 @@
       "name_original": "Martini Dry",
       "name_es": "Martini Dry",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gordon dry gin",
+          "item_es": "gordon dry gin",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain into glass, squeeze the oil from a strip of",
       "method_es": "Use a small mixing glass. Stir well, strain into glass, squeeze the oil from a strip of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Martini Dry\nUse a small mixing glass.\nTwo or three small cubes of ice.\nOne-half jigger Gordon Dry Gin.\nOne-half jigger French Vermuth.\nTwo, only, drops of orange bitters.\nStir well, strain into glass, squeeze the oil from a strip of\nlemon rind on top and add an olive or a hazel nut.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-034",
@@ -607,14 +1142,57 @@
       "name_original": "Milo",
       "name_es": "Milo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boonekamp bitters",
+          "item_es": "boonekamp bitters",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain and serve with an olive. Use a small mixing glass. Crush two or three sprigs fresh mint in bottom of glass. Fill glass with shaved ice, stir well and strain. Drop in a cherry.",
       "method_es": "Use a small mixing glass. Stir well, strain and serve with an olive. Use a small mixing glass. Crush two or three sprigs fresh mint in bottom of glass. Fill glass with shaved ice, stir well and strain. Drop in a cherry.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Milo\nUse a small mixing glass.\nTwo or three lumps or cubes of ice\nOne-quarter jigger Boonekamp bitters\nOne-quarter jigger French Vermuth.\nOne-half jigger Plymouth Gin.\nStir well, strain and serve with an olive.\n\n        n    • •                   Mint\nUse a small mixing glass.\nCrush two or three sprigs fresh mint in bottom of glass.\nTwo dashes Orange bitters.\nTwo dashes gum syrup.\nOne jigger whiskey.\nFill glass with shaved ice, stir well and strain.\nDrop in a cherry.\n                                     10",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-035",
@@ -641,14 +1219,57 @@
       "name_original": "Mountain Dew",
       "name_es": "Mountain Dew",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain into glass and serve with an olive.",
       "method_es": "Use a small mixing glass. Stir well, strain into glass and serve with an olive.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Mountain Dew\nUse a small mixing glass.\nTwo or three lumps or cubes of ice.\nThree dashes of gum syrup.\nTwo dashes    Curacoa.\nTwo dashes Angostura bitters.\nTwo   dashes Absinthe.\nOne-half jigger Brandy.\nOne-half jigger Whiskey.\nStir well, strain into glass and serve with an olive.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-037",
@@ -658,14 +1279,36 @@
       "name_original": "Navy",
       "name_es": "Navy",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well, strain into a cocktail glass and add an olive.",
       "method_es": "Use a large mixing glass. Shake well, strain into a cocktail glass and add an olive.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Navy\nUse a large mixing glass.\nTwo-thirds filled with shaved ice.\nTwo dashes orange bitters.\nOne-half jigger Italian Vermuth.\nOne-half jigger Dry Gin.\nShake well, strain into a cocktail glass and add an olive.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-038",
@@ -675,14 +1318,22 @@
       "name_original": "Nutting",
       "name_es": "Nutting",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters on top and add an olive",
+          "item_es": "orange bitters on top and add an olive",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain into a cocktail glass.",
       "method_es": "Use a large mixing glass. Stir well, strain into a cocktail glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Nutting\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nOne—third French Vermuth.\nTwo-thirds Plymouth gin.\nStir well, strain into a cocktail glass.\nOne dash Orange bitters on top and add an olive.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-039",
@@ -692,14 +1343,36 @@
       "name_original": "Old Fashion Whiskey",
       "name_es": "Old Fashion Whiskey",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Crush these at the bottom of an old fashion cocktail glass. Add one lump or cube of ice. Add one jigger of whiskey, or if possible let guest or customer Serve a toddy spoon and strainer, with a glass of water on the",
       "method_es": "Crush these at the bottom of an old fashion cocktail glass. Add one lump or cube of ice. Add one jigger of whiskey, or if possible let guest or customer Serve a toddy spoon and strainer, with a glass of water on the",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Old Fashion Whiskey\nOne lump of sugar.\nTwo dashes Angostura bitters.\nOne spoon water.\nCrush these at the bottom of an old fashion cocktail glass.\nAdd one lump or cube of ice.\nOne strip of lemon peel twisted on top of the aforesaid.\nAdd one jigger of whiskey, or if possible let guest or customer\nhelp himself.\nServe a toddy spoon and strainer, with a glass of water on the\nside.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-040",
@@ -709,14 +1382,22 @@
       "name_original": "Old Tom Gin",
       "name_es": "Old Tom Gin",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a    small mixing glass. Stir well, strain into cocktail glass. Twist a strip of lemon peel on top and serve.",
       "method_es": "Use a    small mixing glass. Stir well, strain into cocktail glass. Twist a strip of lemon peel on top and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Old Tom Gin\nUse a    small mixing glass.\nTwo or three lumps of ice.\nTwo or three dashes gum syrup.\nOne or two dashes Angustora bitters.\nOne or two dashes    Curacoa.\nOne jigger Tom Gin.\nStir well, strain into cocktail glass.\nTwist a strip of lemon peel on top and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-041",
@@ -726,14 +1407,43 @@
       "name_original": "Olivette",
       "name_es": "Olivette",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, twist the oil from a strip of lemon peel and add an",
       "method_es": "Use a large mixing glass. Stir well, twist the oil from a strip of lemon peel and add an",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Olivette\nUse a large mixing glass.\nThree or four small lumps of ice.\nTwo dashes gum syrup.\nThree dashes Orange bitters.\nThree dashes Absinthe.\nOne jigger Plymouth Gin.\nStir well, twist the oil from a strip of lemon peel and add an\nolive.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-042",
@@ -743,14 +1453,29 @@
       "name_original": "Orange",
       "name_es": "Orange",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "plymouth gin",
+          "item_es": "ginebra Plymouth",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well, strain into cocktail glass and add a slice of orange.",
       "method_es": "Use a large mixing glass. Shake well, strain into cocktail glass and add a slice of orange.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Orange\nUse a large mixing glass.\nTwo-thirds full shaved ice.\nOne—third jigger orange juice.\nOne-third jigger Plymouth gin.\nOne-third jigger French Vermuth.\nShake well, strain into cocktail glass and add a slice of orange.\n                                     11",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-043",
@@ -760,14 +1485,22 @@
       "name_original": "Oyster",
       "name_es": "Oyster",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a medium size wine glass.",
       "method_es": "Use a medium size wine glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Oyster\nUse a medium size wine glass.\nEnough catsup to fill bottom of glass.\nTwo medium sized oysters.\nPepper and salt to suit taste.\nOne dash lemon juice.\nThese can be made any size to suit the occasion.\n(The above is the size and style served over the bars in the good\nold times.)",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-044",
@@ -794,14 +1527,22 @@
       "name_original": "Prairie",
       "name_es": "Prairie",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "tobasco.                            i'",
+          "item_es": "tobasco.                            i'",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a toddy glass. (Old fashioned.)",
       "method_es": "Use a toddy glass. (Old fashioned.)",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Prairie\nUse a toddy glass. (Old fashioned.)\nOne tea spoon white vinegar.\nOne fresh egg.\nDash of pepper and salt.\nThree drops Tobasco.                            i'\nTea spoon full Worcestershire Sauce.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-046",
@@ -811,14 +1552,22 @@
       "name_original": "Polo",
       "name_es": "Polo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Fill glass with shaved ice, shake well and serve.",
       "method_es": "Use a small mixing glass. Fill glass with shaved ice, shake well and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Polo\nUse a small mixing glass.\nOne-quarter lemon juice.\nOne-quarter orange juice.\nOne-half jigger Rum.\nFill glass with shaved ice, shake well and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-047",
@@ -828,14 +1577,22 @@
       "name_original": "Queen",
       "name_es": "Queen",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "each, french and italian vermuth and dry gin",
+          "item_es": "each, french and italian vermuth and dry gin",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass.",
       "method_es": "Use a large mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Queen\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nOne-third jigger each, French and Italian Vermuth and Dry Gin.\nDrcp a slice of pineapple on top, shake well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-048",
@@ -845,14 +1602,36 @@
       "name_original": "Rob Roy",
       "name_es": "Rob Roy",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain, and add one small pickled onion.",
       "method_es": "Use a small mixing glass. Stir well, strain, and add one small pickled onion.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Rob Roy\nUse a small mixing glass.\nOne or two lumps of ice.\nTwo dashes Orange bitters.\nOne-half jigger Scotch Whiskey.\nOne-half jigger Italian Vermuth.\nStir well, strain, and add one small pickled onion.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-049",
@@ -862,14 +1641,50 @@
       "name_original": "Roosevelt",
       "name_es": "Roosevelt",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "san juan rum (cuba)",
+          "item_es": "san juan rum (cuba)",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth (italy)",
+          "item_es": "italian vermuth (italy)",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin (england)",
+          "item_es": "dry gin (england)",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe (france)",
+          "item_es": "absinthe (france)",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "kirschwaser (germany)",
+          "item_es": "kirschwaser (germany)",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain into Venetian (Austria) Cocktail glass.",
       "method_es": "Use a large mixing glass. Stir well, strain into Venetian (Austria) Cocktail glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Roosevelt\nUse a large mixing glass.\nTwo or three lumps of ice.\nOne-half jigger San Juan Rum (Cuba).\nOne-quarter jigger Italian Vermuth (Italy).\nOne-quarter jigger Dry Gin (England).\nOne dash Absinthe (France).\nOne dash Kirschwaser (Germany).\nStir well, strain into Venetian (Austria) Cocktail glass.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-050",
@@ -896,14 +1711,57 @@
       "name_original": "Royal Fox",
       "name_es": "Royal Fox",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sloe gin",
+          "item_es": "sloe gin",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well,      strain, add a        slioe of lemon and serve. Use a small mixing glass.",
       "method_es": "Use a large mixing glass. Stir well,      strain, add a        slioe of lemon and serve. Use a small mixing glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Royal Fox\nUse a large mixing glass.\nOne-half full        shaved ice.\nThree dashes Angostura bitters.\nTwo dashes gum syrup.\nTwo-thirds jigger Brandy.\nOne-third I t a l i a n Vermuth.\nStir well,      strain, add a        slioe of lemon and serve.\n\n                                        Sloe Gin                 ^\nUse a small mixing glass.\nHalf full      shaved ice.\nOne dash Orange bitters.\nTwo-thirds jigger Sloe Gin.\nOne-third jigger Gordon Gin.\nS t i r well   and s t r a i n .",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-052",
@@ -913,14 +1771,36 @@
       "name_original": "Sazerac",
       "name_es": "Sazerac",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angustora bitters",
+          "item_es": "angustora bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain, squeeze the oil from a strip of lemon peel and serve.",
       "method_es": "Use a small mixing glass. Stir well, strain, squeeze the oil from a strip of lemon peel and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Sazerac\nUse a small mixing glass.\nOne bar spoon sugar.\nHalf f i l l with shaved ice.\nThree-quarter jigger Rye Whiskey.\nOne-quarter jigger Italian Vermuth.\nThree or four dashes Absinthe.\nTwo dashes Angustora bitters.\nTwo dashes Orange bitters.\nStir well, strain, squeeze the oil from a strip of lemon peel and\nserve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-053",
@@ -930,14 +1810,22 @@
       "name_original": "Soda",
       "name_es": "Soda",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use a tall Fizz glass (10 oz).",
       "method_es": "Use a tall Fizz glass (10 oz).",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Soda\nUse a tall Fizz glass (10 oz).\nOne cube of sugar.\nThree or four dashes Angostura bitters.\nTwo or three small cubes of ice.\nF i l l with sweet soda.\nTake bar spoon sugar and stir into the above.              Take care that\nsoda does not flow over the top of the glass while stirring.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-054",
@@ -947,14 +1835,29 @@
       "name_original": "Soul Kiss",
       "name_es": "Soul Kiss",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.333",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "0.667",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake well,      and strain.",
       "method_es": "Use a large mixing glass. Shake well,      and strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Soul Kiss\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nOne-third jigger French Vermuth.\nTwo-thirds jigger dry gin.\nThe white of an egg.\nShake well,      and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-055",
@@ -964,14 +1867,43 @@
       "name_original": "Southern Club",
       "name_es": "Southern Club",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Crush two or three sprigs of fresh mint in bottom of glass. Fill mixing glass with cracked ice.",
       "method_es": "Use a large mixing glass. Crush two or three sprigs of fresh mint in bottom of glass. Fill mixing glass with cracked ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Southern Club\nUse a large mixing glass.\nCrush two or three sprigs of fresh mint in bottom of glass.\nTwo dashes Orange bitters.\nTwo dashes gum syrup.\nOne dash Absinthe.\nOne jigger Whiskey.\nFill mixing glass with cracked ice.\nOne squirt of seltzer,             stir well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-056",
@@ -981,14 +1913,36 @@
       "name_original": "Star",
       "name_es": "Star",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain, squeeze oil from a strip of lemon peel and serve.",
       "method_es": "Use a large mixing glass. Stir well, strain, squeeze oil from a strip of lemon peel and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Star\nUse a large mixing glass.\nThree-quarters full shaved ice.\nTwo dashes gum syrup.\nThree dashes Angostura bitters.\nOne-half jigger Apple Jack.\nOne—half jigger French Vermuth.\nStir well, strain, squeeze oil from a strip of lemon peel and\nserve.\n\n\n                                           13",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-057",
@@ -998,14 +1952,50 @@
       "name_original": "Trilby",
       "name_es": "Trilby",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "parfait d'amour",
+          "item_es": "parfait d'amour",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain, add a cherry, squeeze the oil from a strip of",
       "method_es": "Use a large mixing glass. Stir well, strain, add a cherry, squeeze the oil from a strip of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Trilby\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nTwo dashes Absinthe.\nTwo dashes Orange bitters.\nTwo dashes Parfait d'Amour.\nOne-half jigger Scotch Whiskey.\nOne-half jigger Italian Vermuth.\nStir well, strain, add a cherry, squeeze the oil from a strip of\n lemon peel.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-058",
@@ -1015,14 +2005,50 @@
       "name_original": "Tropical",
       "name_es": "Tropical",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bookers bitters",
+          "item_es": "bookers bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "creme de cocoa",
+          "item_es": "creme de cocoa",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain, add a cherry, squeeze the oil from a strip of",
       "method_es": "Use a large mixing glass. Stir well, strain, add a cherry, squeeze the oil from a strip of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Tropical\n Use a large mixing glass.\nHalf f i l l with shaved ice.\n One dash Orange bitters.\n One dash Bookers bitters.\n Two or three dashes gum syrup.\n One-quarter jigger Creme de Cocoa.\n One-quarter jigger Maraschino.\n One-half jigger French Vermuth.\n Stir well, strain, add a cherry, squeeze the oil from a strip of\n lemon peel.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-059",
@@ -1032,14 +2058,43 @@
       "name_original": "Turf",
       "name_es": "Turf",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "each french vermuth and plymouth gin",
+          "item_es": "each french vermuth and plymouth gin",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain, add an olive and serve.",
       "method_es": "Use a large mixing glass. Stir well, strain, add an olive and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Turf\n Use a large mixing glass.\n Half glass shaved ice.\n Two dashes Orange bitters.\n Two dashes Maraschino.\n Two dashes Absinthe.\n One-half jigger each French Vermuth and Plymouth Gin.\n Stir well, strain, add an olive and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-060",
@@ -1049,14 +2104,36 @@
       "name_original": "Tuxedo",
       "name_es": "Tuxedo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "old tom gin",
+          "item_es": "ginebra Old Tom",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Stir well, strain, add a cherry, squeeze the oil from a strip of",
       "method_es": "Use a large mixing glass. Stir well, strain, add a cherry, squeeze the oil from a strip of",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Tuxedo\n Use a large mixing glass.\n  One-half full shaved ice.\n• One dash Maraschino.\n  One dash Absinthe.\n One-half jigger Old Tom Gin.\n One-half jigger French Vermuth.\n Stir well, strain, add a cherry, squeeze the oil from a strip of\n lemon peel.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-061",
@@ -1066,14 +2143,36 @@
       "name_original": "Vermuth",
       "name_es": "Vermuth",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "italian vermuth",
+          "item_es": "italian vermuth",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain and serve.",
       "method_es": "Use a small mixing glass. Stir well, strain and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Vermuth\n Use a small mixing glass.\n Two cubes of ice.\n One dash of lemon juice.\n Two dashes Peychaud bitters.\n One jigger Italian Vermuth.\n Stir well, strain and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-062",
@@ -1083,14 +2182,43 @@
       "name_original": "Washington",
       "name_es": "Washington",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "angostura bitters",
+          "item_es": "amargo de Angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well, strain, add one-half pecan nut and serve.",
       "method_es": "Use a small mixing glass. Stir well, strain, add one-half pecan nut and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Washington\n Use a small mixing glass.\n Two   cubes of ice.\n One-half jigger Brandy.\n One-half jigger French Vermuth.\n Three dashes Angostura bitters.\n Three dashes gum syrup.\n Stir well, strain, add one-half pecan nut and serve.\n                                    14",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-063",
@@ -1100,14 +2228,36 @@
       "name_original": "Whiskey",
       "name_es": "Whiskey",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir thoroughly, strain, add a cherry, squeeze oil from a strip",
       "method_es": "Use a small mixing glass. Stir thoroughly, strain, add a cherry, squeeze oil from a strip",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Whiskey\n            Use a small mixing glass.\n            Two or three cubes of ice.\n            One dash Peychaud bitters.\n            Three dashes gum syrup.\n            One jigger Whiskey.\n            Stir thoroughly, strain, add a cherry, squeeze oil from a strip\n            of lemon peel and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-064",
@@ -1117,14 +2267,29 @@
       "name_original": "Widow",
       "name_es": "Widow",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "0.25",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Shake well and strain.",
       "method_es": "Use a small mixing glass. Shake well and strain.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Widow\n\n            Use a small mixing glass.\n            Half full   shaved ice.\n            One-half jigger Gordon Gin.\n            One-quarter French Vermuth.\n            One-quarter jigger orange juice.\n            Shake well and strain.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-065",
@@ -1134,14 +2299,29 @@
       "name_original": "Yale",
       "name_es": "Yale",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitters",
+          "item_es": "amargo de naranja",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "each, tom gin and italian vermuth",
+          "item_es": "each, tom gin and italian vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass half filled with shaved ice. Stir well and add a dash of seltzer on top.",
       "method_es": "Use a small mixing glass half filled with shaved ice. Stir well and add a dash of seltzer on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Yale\n\n            Use a small mixing glass half filled with shaved ice.\n            One dash Orange bitters.\n            One-half jigger each, Tom Gin and Italian Vermuth.\n            Stir well and add a dash of seltzer on top.\n\n\n\n\n                                           15\n\n\n\n\ni' •   ..\n                                                      '•'''tlii it.\nI,     '.               ?•\n\n '•       •' --r;   ;\n      v/iw'\n\n\n•^>r^ •' %,•• \"•''••••,      •",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-066",
@@ -1185,14 +2365,29 @@
       "name_original": "AMERICAN STYLE",
       "name_es": "AMERICAN STYLE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Shake until outside of shaker is frosted. Strain into a sour glass and serve.",
       "method_es": "Use a large mixing glass. Shake until outside of shaker is frosted. Strain into a sour glass and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "AMERICAN STYLE\nUse a large mixing glass.\nThree-quarters full shaved ice.\nSix dashes gum syrup.\nOne pony absinthe.\nThree wine glasses water.\nShake until outside of shaker is frosted.\nStrain into a sour glass and serve.\nThis is also called absinthe frappe.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-069",
@@ -1202,14 +2397,36 @@
       "name_original": "ITALIAN STYLE",
       "name_es": "ITALIAN STYLE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anisette",
+          "item_es": "anisette",
+          "amount": "0.5",
+          "unit": "pony",
+          "notes": null
+        }
+      ],
       "method_original": "Use a stem punch glass. Pour ice water slowly into glass, stir with spoon and serve.",
       "method_es": "Use a stem punch glass. Pour ice water slowly into glass, stir with spoon and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "ITALIAN STYLE\nUse a stem punch glass.\nOne pony absinthe.\nThree dashes Maraschino.\nOne-half pony Anisette.\nThree or four lumps of ice.\nPour ice water slowly into glass, stir with spoon and serve.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-070",
@@ -1219,14 +2436,36 @@
       "name_original": "ABSINTHE COCKTAIL",
       "name_es": "ABSINTHE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "peychaud bitters",
+          "item_es": "peychaud bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Mixing glass three-quarters full shaved ice. Stir well and strain into a cocktail glass.",
       "method_es": "Mixing glass three-quarters full shaved ice. Stir well and strain into a cocktail glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "ABSINTHE COCKTAIL\nMixing glass three-quarters full shaved ice.\nOne-half jigger absinthe.\nOne-half jigger water.\nOne small spoon gum syrup.\nOne dash Peychaud bitters.\nStir well and strain into a cocktail glass.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-071",
@@ -1236,14 +2475,64 @@
       "name_original": "SUISSESSE",
       "name_es": "SUISSESSE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "dublin stout",
+          "item_es": "dublin stout",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "white label or dog head ale",
+          "item_es": "white label or dog head ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "good brandy",
+          "item_es": "good brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "french vermuth",
+          "item_es": "french vermuth",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "st. croix or jamaica rum",
+          "item_es": "st. croix or jamaica rum",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Mixing glass three-quarters full shaved ice. Shake until shaker is frosted and strain into a sour glass. Use a large Collins glass, (tall 16 oz). Pour ale first very slowly holding the glass in a horizontal Use a tall 10 oz. fizz glass. Fill glass with shaved ioe. Stir well, pour into fizz glass, float port wine on top. Dress with a few sprigs of fresh mint, fruit and serve with Use a Pousse Cafe glass. Float one-third cream on top. Use a Pousse Cafe glass. Use a sherry glass. Float a little rich cream on top, cut a cherry in half and place Use a Sherry  -1 Pour separately and distinctly. Use a large mixing glass. Fill glass with claret or still Burgundy. Shake well, strain into a fizz glass. Use a small                  Black Stripe. serve with ice. Use two",
       "method_es": "Mixing glass three-quarters full shaved ice. Shake until shaker is frosted and strain into a sour glass. Use a large Collins glass, (tall 16 oz). Pour ale first very slowly holding the glass in a horizontal Use a tall 10 oz. fizz glass. Fill glass with shaved ioe. Stir well, pour into fizz glass, float port wine on top. Dress with a few sprigs of fresh mint, fruit and serve with Use a Pousse Cafe glass. Float one-third cream on top. Use a Pousse Cafe glass. Use a sherry glass. Float a little rich cream on top, cut a cherry in half and place Use a Sherry  -1 Pour separately and distinctly. Use a large mixing glass. Fill glass with claret or still Burgundy. Shake well, strain into a fizz glass. Use a small                  Black Stripe. serve with ice. Use two",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "SUISSESSE\nMixing glass three-quarters full shaved ice.\nOne-half jigger absinthe.\nOne bar spoon Anisette.\nThe white of one egg.\nShake until shaker is frosted and strain into a sour glass.\n                             'Arf and Arf\nThis is a very popular drink in England; The American people\nlearned to drink it in the early days, especially in the Eastern\nStates.\nUse a large Collins glass, (tall 16 oz).\nOne bottle Dublin Stout.\nOne bottle White label or Dog head ale.\nPour ale first very slowly holding the glass in a horizontal\nposition so as not to allow any sediment to flow into glass. All\nale has some sediment in the bottom of the bottle.  On top of the\nale pour the bottle of stout in the same manner as the ale. The\nstout being the heaviest will percolate through the ale. Be sure\nto pour both very slowly. Do not pour the entire contents of\neither bottle as both ale and stout have sediment in the bottom\nof the bottle.\nDomestic ales such as new and old ale can be used to a certain\ndegree of satisfaction.\n\n                                  17\n                        American Beauty.\nUse a tall 10 oz. fizz glass.\nOne bar spoon Creme de Menthe in the bottom of the glass.\nFill glass with shaved ioe.\nThen take a mixing glass filled with shaved ioe.\nOne jigger orange juice.\nBar spoon sugar.\nOne-half jigger good brandy.\nOne-half jigger French vermuth.\nStir well, pour into fizz glass, float port wine on top.\nDress with a few sprigs of fresh mint, fruit and serve with\nstraws.\n\n                             Angels Blush.\nUse a Pousse Cafe glass.\nTwo-thirds Benedictine.\nFloat one-third cream on top.\n                             Angels Dream.\nUse a Pousse Cafe glass.\nOne-third Maraschino.\nOne-third Creme Yvette.\nOne-third Cream.\nColors should be separate and distinct.\n\n                              Angels Tit.\nUse a sherry glass.\nOne-third each.\nAnisette,   first\nCreme de Yvette, second\nRed Curacao,    third.\nFloat a little rich cream on top, cut a cherry in half and place\non top of cream.\n               Why all these Angels is beyond me.\n               Perhaps we will know in the next world.\n\nII    et,\nUse a Sherry  -1\n             glass.                Titty.\nOne-third each\nAnisette,\nCreme Yvette,\nWhipped cream;\nPour separately and distinctly.\nCut a cherry in half and place on top of cream.\n                                Bishop.\nUse a large mixing glass.\nTwo-thirds shaved ice.\nOne bar spocn sugar.\nTwo thin slices of lemon.\nTwo or three dashes of rum.\nFill glass with claret or still Burgundy.\nShake well, strain into a fizz glass.\nDecorate with fruit and serve with straws.\n\nTi       I-, China mug.\nUse a small                  Black Stripe.\nOne jigger St. Croix or Jamaica rum.\nOne table spoon New Orleans molasses.\nIf called for in hot weather, add a large spoon full of water and\nserve with ice.\nIf called for in cold weather, fill mug with hot water and grate\nnutmeg on top.\n\n                                  18\n                                Blue Blazer.\nUse two",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-072",
@@ -1253,14 +2542,22 @@
       "name_original": "End of Champagne",
       "name_es": "End of Champagne",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "water",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a fizz glass. Use a goblet. Stir well, fill glass with shaved ioe, float Claret wine on top.",
       "method_es": "Use a fizz glass. Use a goblet. Stir well, fill glass with shaved ioe, float Claret wine on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "End of Champagne\n\n\n\n                              Cincinnati.\nUse a fizz glass.\nOne—half Lager Beer\nOne-half sweet soda. (Pop)\nThis is a particularly palatable drink for warm weather.\n\n                                  21\n                               Cobblers.\n\n\n\n                                Sherry.\nUse a goblet.\nOne bar spoon sugar.\nOne-half jigger water.\nOne and one-half jigger sherry.\nStir well, fill glass with shaved ioe, float Claret wine on top.\nDeoorate with fruit and serve with straws.\n                               Catawaba\n                               Champagne\n                               Claret",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-073",
@@ -1311,14 +2608,204 @@
       "name_original": "End of Coolers",
       "name_es": "End of Coolers",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "cream",
+          "item_es": "nata",
+          "amount": "1",
+          "unit": "pony",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "acid phosphate",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "white curacoa",
+          "item_es": "white curacoa",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschinc",
+          "item_es": "maraschinc",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "bourbon whiskey",
+          "item_es": "bourbon whiskey",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "old madeira wine",
+          "item_es": "old madeira wine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "apricotine",
+          "item_es": "apricotine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "burgundy",
+          "item_es": "burgundy",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "appollinaris water",
+          "item_es": "appollinaris water",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "beaune",
+          "item_es": "beaune",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "apollinaris water",
+          "item_es": "apollinaris water",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "or several cubes of ice",
+          "item_es": "or several cubes of ice",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "beaune",
+          "item_es": "beaune",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "carbonated water",
+          "item_es": "carbonated water",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "gum syrup",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "each, lemon juice. maraschino, curacoa and",
+          "item_es": "each, lemon juice. maraschino, curacoa and",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Fill with milk, shake well, strain into glass and serve. Shake, strain into a fizz glass and fill with plain soda. Use a large mixing glass. Fill up with milk. Shake, strain into a Goblet and sprinkle nutmeg on top. Use a small mixing glass. Fill glass with lump ice. Stir well, strain into a stem punch glass and serve. Use a large glass pitcher. Mix thoroughly with a long spoon. Add two strips of Cucumber rind. Fill with cubes of ice. Add fruit in season. Serve in stem glasses. Stir well, fill pitcher with cubes of ice. Stir again and add fruit in season. Use a large glass pitcher. Mix well, add one siphon. Use a large glass pitcher. Fill pitcher with cubes of ice. Stir well and decorate with fruit. Use a large pitcher. Stir well and strain into the pitcher. Fill with cubes or lumps of ice.",
       "method_es": "Use a large mixing glass. Fill with milk, shake well, strain into glass and serve. Shake, strain into a fizz glass and fill with plain soda. Use a large mixing glass. Fill up with milk. Shake, strain into a Goblet and sprinkle nutmeg on top. Use a small mixing glass. Fill glass with lump ice. Stir well, strain into a stem punch glass and serve. Use a large glass pitcher. Mix thoroughly with a long spoon. Add two strips of Cucumber rind. Fill with cubes of ice. Add fruit in season. Serve in stem glasses. Stir well, fill pitcher with cubes of ice. Stir again and add fruit in season. Use a large glass pitcher. Mix well, add one siphon. Use a large glass pitcher. Fill pitcher with cubes of ice. Stir well and decorate with fruit. Use a large pitcher. Stir well and strain into the pitcher. Fill with cubes or lumps of ice.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "End of Coolers\n\n\n\n\n                                 Conclave.\nUse a large mixing glass.\nOne jigger Raspberry syrup.\nOne bar spoon sugar.\nHalf f i l l with shaved ice.\nFill with milk, shake well, strain into glass and serve.\n\n                             Cream Phosphate.\n'Use a large mixing glass.\nHalf fill mixing glass with ice.\nYolk of one egg.\nOne pony Kirsch.\nOne pony cream.\nThree dashes Acid Phosphate.\nShake, strain into a fizz glass and fill with plain soda.\n\n                                Cream Punch.\nUse a large mixing glass.\nHalf fill glass with shaved ice.\nOne bar spoon sugar.\nOne-half jigger White Curacoa.\nOne-half jigger Brandy.\nFill up with milk.\nShake, strain into a Goblet and sprinkle nutmeg on top.\n\n                                Creole Lady.\nUse a small mixing glass.\nTwo Maraschino   cherries.\nOne-half jigger Maraschinc.\nOne jigger Bourbon Whiskey.\nOne jigger Old Madeira Wine.\nFill glass with lump ice.\nStir well, strain into a stem punch glass and serve.\n\n                                     23\n                                 Cups.\n\n\n                               Burgundy.\nUse a large glass pitcher.\nSix or eight cubes of sugar.\nA few cubes cf ice.\nSlice one lemon.\nSlice one orange.\nQuarter two slices of pineapple.\nSix or eight Maraschino cherries.\nOne jigger Brandy.\nOne jigger Maraschino.\nOne jigger Apricotine.\nOne quart of Burgundy.\nOne pint of Appollinaris water.\nMix thoroughly with a long spoon.\nAdd two strips of Cucumber rind.\nFill with cubes of ice.\nAdd fruit in season.\nServe in stem glasses.\n„Use a large\n       ,      ,\n             glass pitcher.    Champagne\nThree cubes of sugar.\nOne sliced lemon.\nOne small orange sliced.\nOne pint of Champagne.\nOne pint Beaune.\nOne pint Apollinaris Water.\nStir well, fill pitcher with cubes of ice.\nStir again and add fruit in season.\n,,    ,      ,                 Champagne\nUse a large glass pitcher.\nOne and one-half jigger Brandy.\nOne jigger Benedictine.\nOne jigger Maraschino.\nOne lump or several cubes of ice.\nOne bottle Champagne.\nMix well, add one siphon.\nDecorate with fruit in season and fresh mint.\n„     ,      ,                 Champagne\nUse a large glass pitcher.\nAt bottom of pitcher place three cubes of sugar.\nSaturate sugar with Angostura bitters.\nOne small orange sliced.\nOne pint Beaune.\nOne pint Champagne.\nOne pint of carbonated water.\nFill pitcher with cubes of ice.\nStir well and decorate with fruit.\n                                Claret.\nUse a large pitcher.\nIn a small vessel mix thoroughly.\nTwo or three lumps or cubes of ice.\nOne jigger gum syrup.\nOne-half jigger each, lemon juice. Maraschino, Curacoa and\nBrandy. '\nOne quart of claret.\nStir well and strain into the pitcher.\nFill with cubes or lumps of ice.\nDecorate with fruit in season and serve in stem glasses.     i\n                                  24",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-076",
@@ -1328,14 +2815,71 @@
       "name_original": "Cups Continued",
       "name_es": "Cups Continued",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "carbonated water",
+          "item_es": "carbonated water",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin.                                   ,   iv j",
+          "item_es": "tom gin.                                   ,   iv j",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rich cream",
+          "item_es": "rich cream",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large pitcher. Strain into pitcher filled with cubes of ice. Use a large mixing glass. Shake well and strain into a hollow stem champagne glass that has Float a little claret on top. Use a large mixing glass. Shake well and serve the same as above dream. Use a large mixing glass. Shake well and serve in the same manner as the above dreams.",
       "method_es": "Use a large pitcher. Strain into pitcher filled with cubes of ice. Use a large mixing glass. Shake well and strain into a hollow stem champagne glass that has Float a little claret on top. Use a large mixing glass. Shake well and serve the same as above dream. Use a large mixing glass. Shake well and serve in the same manner as the above dreams.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Cups Continued\n\n                                Claret.\nUse a large pitcher.\nIn a small vessel mix the following.\nTwo or three cubes of sugar.\nOne jigger of Brandy.\nJuice of one—half of lemon.\nOne pint of carbonated water.\nOne quart of Claret.                          .\nStrain into pitcher filled with cubes of ice.\nDecorate with a few strips of cucumber rind, fruit and fresh\nmint.\nOn top pour a cup of hot black tea.\n                                Dreams.\n\n\n                                Eagles.\nUse a large mixing glass.\nHalf fill with shaved ice.\nOne bar spoon sugar.\nThree dashes lemon juice.\nThe white of one egg.\nOne jigger Tom gin.                                   ,   iv j.\nShake well and strain into a hollow stem champagne glass that has\nhad the stem filled with any heavy cordial.\nFloat a little claret on top.\n                                Golden.\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nTwo or three dashes lemon juice.\nOne bar spoon sugar.\nOne fresh egg.\nOne jigger Tom gin.\nShake well and serve the same as above dream.\n                                Silver.\nUse a large mixing glass.\nShaved ice.               . .\nTwo or three dashes lemon juioe.\nOne bar spoon sugar.\n One jigger Tom gin.\n One spoon rich cream.\n The white   of one egg.\n Shake well and serve in the same manner as the above dreams.\n                             End of Dreams.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-077",
@@ -1345,14 +2889,71 @@
       "name_original": "Egg Nogs",
       "name_es": "Egg Nogs",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "each of ground nutmeg and cinnamon",
+          "item_es": "each of ground nutmeg and cinnamon",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "madeira wine",
+          "item_es": "madeira wine",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sherry wine",
+          "item_es": "sherry wine",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "mixed nutmeg, cinnamon and all spice",
+          "item_es": "mixed nutmeg, cinnamon and all spice",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use a large mixing glass. Fill glass with rich milk. Shake well and long. Strain into a Collins glass. Use a large mixing glass. Fill glass with sweet cider. Shake well and strain into a fizz glass. Use a large mixing glass. Add one-half jigger of Brandy. Use a large mixing glass. Fill glass with rich milk. Shake well and strain into a Collins glass. Mix these well with a bar spoon. Pour the mixture into a China mug. Stir and while stiring pour hot milk on the mixture Use a crock or large pan for mixing Add sugar to yolks and make a batter. Add one quart of Brandy and one quart of Jamaica rum. Mix these and fill with rich milk. Pour into a bowl.",
       "method_es": "Use a large mixing glass. Fill glass with rich milk. Shake well and long. Strain into a Collins glass. Use a large mixing glass. Fill glass with sweet cider. Shake well and strain into a fizz glass. Use a large mixing glass. Add one-half jigger of Brandy. Use a large mixing glass. Fill glass with rich milk. Shake well and strain into a Collins glass. Mix these well with a bar spoon. Pour the mixture into a China mug. Stir and while stiring pour hot milk on the mixture Use a crock or large pan for mixing Add sugar to yolks and make a batter. Add one quart of Brandy and one quart of Jamaica rum. Mix these and fill with rich milk. Pour into a bowl.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Egg Nogs\n\n Use a large mixing glass.\n One fresh egg.\n One bar spoon sugar.\n Half fill glass with shaved ice.\n One—half jigger Jamaica Rum.\n One jigger Brandy.\n Fill glass with rich milk.\n Shake well and long.\n Strain into a Collins glass.\n A sprinkle of nutmeg on top and serve with straws.\n                                    25\n „       ,                   Egg Nogg-Cider.\n Use a large mixing glass.\n One fresh egg.\n One bar spoon sugar.\n Half fill glass with shaved ice.\n Fill glass with sweet cider.\nShake well and strain into a fizz glass.\nA sprinkle of nutmeg on top.\nspoil^this^drink'^f^ obtainable as a poor quality of Cider will\n                          Egg Nogg-Baltimore.\nUse a large mixing glass.\nHalf fill glass with shaved ice.\nThe yolk of an egg.\nOne bar spoon sugar.\nA pinch each of ground nutmeg and cinnamon.\nBeat into a creamy consistency.\nAdd one-half jigger of Brandy.\nOne-half jigger Jamaica Rum.\nOne-half jigger Madeira Wine.\ngiass^^^^^ with rich milk, shake well, strain into a Collins\nSprinkle nutmeg on top and serve with straws.\n                          Egg Nogg-Brandy.\nMade the same as the ordinary Egg Nogg using only Brandy.\n                             Egg Nogg-Rum.\nMade the same as the ordinary Egg Nogg using only Jamaica Rum.\n                          Egg Nogg-Sherry.\nUse a large mixing glass.\nOne fresh egg.\nOne bar spoon sugar.\nHalf fill glass with shaved ice.\nHalf jigger Brandy.\nOne jigger Sherry wine.\nFill glass with rich milk.\nShake well and strain into a Collins glass.\nSprinkle nutmeg on top and serve with straws.\n„Use a small\n         TT mixing\n             . .    ,\n                   glass. Egg Nogg-Hot.\nOne fresh egg.\nTwo bar spoons sugar.\nOne-half jigger Brandy.\nOne-half jigger Rum.\nMix these well with a bar spoon.\nPour the mixture into a China mug.\nStir and while stiring pour hot milk on the mixture\nSprinkle nutmeg on top and serve.\n                          Egg Nogg-in Bowl.\nUse a crock or large pan for mixing\nOne dozen eggs, and separate them\nBeat yolks until thin as water.\nAdd sugar to yolks and make a batter.\nAdd one quart of Brandy and one quart of Jamaica rum.\nA spoon of mixed nutmeg, cinnamon and all spice\nMix these and fill with rich milk. Pour into a bowl.\nBeat the white of the eggs to a stiff frosting and spread on top\nof   mixture.                                                     ^\nDecorate with colored sugar and nutmeg.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-078",
@@ -1362,14 +2963,155 @@
       "name_original": "End of Egg Noggs",
       "name_es": "End of Egg Noggs",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "port wine",
+          "item_es": "oporto",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rich cream",
+          "item_es": "rich cream",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "creme de vanilla",
+          "item_es": "creme de vanilla",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "orange flower water",
+          "item_es": "orange flower water",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "tom gin",
+          "item_es": "tom gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "absinthe",
+          "item_es": "absenta",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "rich cream",
+          "item_es": "rich cream",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gordon gin",
+          "item_es": "gordon gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange flower water",
+          "item_es": "orange flower water",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Fill glass with shaved ice. Shake well and strain into a punch glass. Use a small mixing glass. Shake well, strain into a split glass.      (6 oz) Use a large mixing glass in making all fizzes. Shake all fizzes well and long;     the longer shaken the better the Use a 10 oz.   fizz glass for all fizzes Strain into fizz glass and fill with siphon. Same as a plain fizz using Brandy instead of Gin. Fill glass with rich milk. Shake well and fill with siphon. Shake well, strain and fill with siphon. Use a very large mixing glass. Shake until the shaker is frosted.       • Strain into a Collins glass.     The glass should be about two-",
       "method_es": "Use a small mixing glass. Fill glass with shaved ice. Shake well and strain into a punch glass. Use a small mixing glass. Shake well, strain into a split glass.      (6 oz) Use a large mixing glass in making all fizzes. Shake all fizzes well and long;     the longer shaken the better the Use a 10 oz.   fizz glass for all fizzes Strain into fizz glass and fill with siphon. Same as a plain fizz using Brandy instead of Gin. Fill glass with rich milk. Shake well and fill with siphon. Shake well, strain and fill with siphon. Use a very large mixing glass. Shake until the shaker is frosted.       • Strain into a Collins glass.     The glass should be about two-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "End of Egg Noggs\n                                  26\n                               Elks Walk.\nUse a small mixing glass.\nOne or two bar spoons sugar.\nThe yolk of an egg.\nOne large spoon cream.\nOne jigger Whiskey.\nFill glass with shaved ice.\nShake well and strain into a punch glass.\n                          Evening Star.\nUse a small mixing glass.\nHalf fill glass with shaved ice.\nOne bar spoon sugar.\nOne jigger Port wine.\nOne-half jigger Scotch Whiskey.\nOne jigger rich cream.\nOne egg.\nShake well, strain into a split glass.      (6 oz)\nSquirt of siphon and serve.\n\n                                 Fizzes.\n\n\n\n           Use a large mixing glass in making all fizzes.\nShake all fizzes well and long;     the longer shaken the better the\nfizz.\n               Use a 10 oz.   fizz glass for all fizzes\n\n                                 Plain.\nJuice of one-half lemon.\nHalf fill glass with shaved ice.\nTwo bar spoons sugar.\nOne jigger Gin.\nStrain into fizz glass and fill with siphon.\nDrink while fizzing.\n                                Silver.\nThe same as a plain fizz adding the white of an egg.\n                                Golden.\nThe same as a plain fizz adding the yolk of an egg.\n                                Royal.\nThe same as a plain fizz adding a whole egg.\n                               Bismarck.\nJuice of one-half lemon.\nOne spoon sugar.\nOne-half jigger Raspberry syrup.\nOne and one-half Rhine wine.\n\n                                Brandy.\nSame as a plain fizz using Brandy instead of Gin.\n                                Cream.\nThe same as a plain fizz adding a jigger of rich cream.\n                                 Elks.\nTwo spoons sugar.\nJuice   of one-half lemon.\nThe white of one egg.\nOne dash Creme de Vanilla.\nTwo dashes Orange Flower Water.\nOne squirt siphon.\nFill glass with rich milk.\n                                   27\n                              Grenadine.\nJuice of one-half lemon.\nOne spoon sugar.\nOne-half jigger grenadine.\nOne-half jigger milk.\nOne jigger Tom gin.\nShake well and fill with siphon.\n\n                           Morning Glory.\nJuice of one-half lemon.\nOne spoon sugar.\nWhite of one egg.\nOne jigger Scotch whiskey.\nTwo dashes Absinthe.\nShake well, strain and fill with siphon.\n\n                             New Orleans.\nEverybody that has ever visted New Orleans must have visited the\nfamous Ramos Bar. No place in the World was as famous for cer\ntain mixed drinks.     The New Orleans Fizz was known the world over\nand every bartender in the country thought he had it; but New\nOrleans held the secret and though many did make a good imitation\nno one ever got it.     The following is the best I could figure\nout.\n\nUse a very large mixing glass.\nHalf fill with shaved ice.\nTwo bar spoons sugar.\nJuice of one-half lemon.\nThe white of one egg.\nOne jigger rich cream.\nOne jigger Gordon gin.\nTwo dashes Orange flower water.\nShake until the shaker is frosted.       •\nStrain into a Collins glass.     The glass should be about two-\nthirds full of bod",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-079",
@@ -1379,14 +3121,43 @@
       "name_original": "See Punches",
       "name_es": "See Punches",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "or cube of ice",
+          "item_es": "or cube of ice",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a Hi-Ball Glass or split beer (6 oz). Fill with siphon and serve a spoon, in glass. Use a small mixing glass. Stir well, strain into a sour glass. Use a whiskey glass.",
       "method_es": "Use a Hi-Ball Glass or split beer (6 oz). Fill with siphon and serve a spoon, in glass. Use a small mixing glass. Stir well, strain into a sour glass. Use a whiskey glass.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "See Punches\n\n                              Gin Rickey.\nUse a Hi-Ball Glass or split beer (6 oz).\nMuddle one-half lime in bottom of glass\nOne lump or cube of ice.\nOne jigger Gin.\nFill with siphon and serve a spoon, in glass.\n             . .           Gin Smash.\nUse a small mixing glass.\nOne spoon sugar.\nTwo or three sprigs fresh mint.\nExtract essence by muddling with a little water.\nHalf fill with shaved ice.\nOne jigger Gin.\nStir well, strain into a sour glass.\nDecorate with fruit and serve.\n\n          . ,     ,        Gin and Tansy.\nUse a whiskey glass.\nThis old fashioned, but exoellent tonic is prepared by steeping a\nbunch of tansy in a bottle of Holland Gin; the gin extracts the\nessence of tansy.\nIn serving, place a small lump of ice in the glass and allow the\n                                                                    i\nguest to help him (or her) self to the gin.                         i\n                                  30\n                                 Hi-Balls.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-080",
@@ -1396,14 +3167,197 @@
       "name_original": "Unless otherwise specified",
       "name_es": "Unless otherwise specified",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "or cube of ice, never more",
+          "item_es": "or cube of ice, never more",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "tokay",
+          "item_es": "tokay",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "alcohol (grain only)",
+          "item_es": "alcohol (grain only)",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "nicholson gin",
+          "item_es": "nicholson gin",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "apricotine",
+          "item_es": "apricotine",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple juice",
+          "item_es": "zumo de piña",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "dry gin",
+          "item_es": "ginebra seca",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "apple jack",
+          "item_es": "applejack",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "whiskey, rye, bourbon or scotch",
+          "item_es": "whiskey, rye, bourbon or scotch",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a regulation Hi—Ball glass Fill with siphon, ginger ale, white rock or what have you. Serve a small spoon. Fill with Ginger ale. Pour one-half jigger Green Creme de Menth on top. Fill with Ginger ale. Serve a small spoon. Use a large fizz glass. Fill with a bottle of Club soda.          (English) Fill with Ginger ale. Fill with Ginger ale. Serve a small spoon. Use a Collins glass. Fill with one bottle C. and C. Ginger ale. Use a punch Goblet. Fill with hot water. Use a Collins glass. Fill with hot Milk. Stir well and sprinkle nutmeg on top.            n Use a Hot water glass. Fill with hot water. Serve a small spoon. Use a Hot water glass. Fill glass with hot water.",
       "method_es": "Use a regulation Hi—Ball glass Fill with siphon, ginger ale, white rock or what have you. Serve a small spoon. Fill with Ginger ale. Pour one-half jigger Green Creme de Menth on top. Fill with Ginger ale. Serve a small spoon. Use a large fizz glass. Fill with a bottle of Club soda.          (English) Fill with Ginger ale. Fill with Ginger ale. Serve a small spoon. Use a Collins glass. Fill with one bottle C. and C. Ginger ale. Use a punch Goblet. Fill with hot water. Use a Collins glass. Fill with hot Milk. Stir well and sprinkle nutmeg on top.            n Use a Hot water glass. Fill with hot water. Serve a small spoon. Use a Hot water glass. Fill glass with hot water.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Unless otherwise specified\n                     Use a regulation Hi—Ball glass\n                     or a split beer glass in serving.\n\n                                 Hi-Balls.\n\nIn serving a Hi-Ball always allow the customer or your guest to\nhelp him or herself to the liquor. If served at a table away from\nwhere the drink is being prepared, i t is permissible to pour the\nliquor yourself.\nOne lump or cube of ice, never more.\nOne strip of lemon peel, squeezed and dropped into glass.\nLiquor as desired, or one jigger if made up, as above.\nFill with siphon, ginger ale, white rock or what have you.\nServe a small spoon.\n\n                                 California.\nOne lump of ice.\nOne spoon pineapple juice.\nOne spoon lemon juice.\nOne-half jigger Tokay.\nOne jigger Scotch whiskey.\nF i l l with carbonated water.\n\n\n                            Carson (Dewey)\nOne lump of ice.\nOne jigger Gin.\nFill with Ginger ale.\nPour one-half jigger Green Creme de Menth on top.\n\n                             Filus Nullis.\nOne lump of ice.\nOne jigger Alcohol (Grain only).\nOne strip of lemon peel.\nFill with Ginger ale.\nServe a small spoon.\n\n                           Hoffman House.\nUse a large fizz glass.\nOne jigger Nicholson Gin.\nTwo or three lumps of ice.\nFill with a bottle of Club soda.          (English)\n\n                                 Honolulu.\nOne lump of ice.\nOne jigger Gin.\nFill with Ginger ale.\n\n                                  Unseen.\nOne lump of ice.\nOne spoon Apricotine.\nOne spoon lemon juice.\nOne spoon pineapple juice.\nOne jigger Dry gin.\nFill with Ginger ale.\nServe a small spoon.\n\n\n                                     31\n                                Horses Neck.\nUse a Collins glass.\nPare a lemon in one piece, slip it around a stick of ice and\nplace in glass with one end over the glass.\nFill with one bottle C. and C. Ginger ale.\nThis is all there is to a Horses Neck. Anything you hear, or see,\nor read in a guide, or advertisement, that tells that a Horses\nNeck has any other ingredent in it, is wrong.\n\n                                Hot Drinks.\nIn making hot drinks always rinse glass with hot water, then\nplace a spoon in glass to keep it from breaking, leaving the\nspoon in the glass.\n                          Baked Apple Toddy.\nUse a punch Goblet.\nOne lump of sugar.\nOne—quarter Baked Apple, at bottom of glass.\nOne jigger Apple Jack.\nFill with hot water.\n                                Milk Punch.\nUse a Collins glass.\nOne jigger Brandy.\nOne-half jigger Rum.\nFill with hot Milk.\nStir well and sprinkle nutmeg on top.            n\n                                Spiced Rum.\nUse a Hot water glass.\nOne lump of sugar.\nOne jigger Rum.\nFive whole cloves.\nFill with hot water.\nServe a small spoon.\n                                 ' Whiskey.\nUse a Hot water glass.\nOne lump of sugar.\nOne jigger of Whiskey, Rye, Bourbon or Scotch.\nFill glass with hot water.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-081",
@@ -1413,14 +3367,43 @@
       "name_original": "End of Hot Drinks",
       "name_es": "End of Hot Drinks",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "creme de cocoa",
+          "item_es": "creme de cocoa",
+          "amount": "0.667",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "each of the following",
+          "item_es": "each of the following",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "lemon juice",
+          "item_es": "zumo de limón",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "acid phosphate",
+          "item_es": "acid phosphate",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a   Pousse Cafe Glass. Use a   large mixing glass. Put at least one jigger of lemon juice in mixing glass. Fill with water. Shake well, long enough to mix thoroughly. Strain into a tall glass, filled with fresh shaved or lump ioe. Same as above adding two or three jiggers of Claret. Same as a plain lemonade, floating Claret on top. If poured care Same as above using any Cordial asked for. Same as a plain lemonade adding a whole egg. Use a large mixing glass. Fill with siphon water, stir while filling. Same as a plain lemonade, adding a jigger of Orgeat syrup. Use a large mixing glass. Fill with Lemon soda, stir. Same as above using a bottle of Club soda.          (Imported) Same as a plain lemonade adding Whiskey floated on top.",
       "method_es": "Use a   Pousse Cafe Glass. Use a   large mixing glass. Put at least one jigger of lemon juice in mixing glass. Fill with water. Shake well, long enough to mix thoroughly. Strain into a tall glass, filled with fresh shaved or lump ioe. Same as above adding two or three jiggers of Claret. Same as a plain lemonade, floating Claret on top. If poured care Same as above using any Cordial asked for. Same as a plain lemonade adding a whole egg. Use a large mixing glass. Fill with siphon water, stir while filling. Same as a plain lemonade, adding a jigger of Orgeat syrup. Use a large mixing glass. Fill with Lemon soda, stir. Same as above using a bottle of Club soda.          (Imported) Same as a plain lemonade adding Whiskey floated on top.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "End of Hot Drinks\n\n\n\n                              King Alphonse.\nUse a   Pousse Cafe Glass.\nTwo-thirds glass of Creme de Cocoa.\nTop with rich cream.\n                                Lemonades.\n\nA word about Lemonades. This is the most abused of all refreshing\ndrinks. People seem to think that all there is to a lemonade is\nto put some sugar, lemon juice and water into a glass and stir it\nor give i t a little shake and that makes a lemonade. This de\nlightful drink should have as much attention as any other drink.\n                                   Plain.\nUse a   large mixing glass.\nPut at least one jigger of lemon juice in mixing glass.\nHalf f i l l with shaved ice.\nThree table spoons sugar.\nFill with water. Shake well, long enough to mix thoroughly.\nStrain into a tall glass, filled with fresh shaved or lump ioe.\nDecorate with fruit and serve with straws.\nOr if desired strained, use a fizz glass.\n                                      32\n                                   Claret.\nSame as above adding two or three jiggers of Claret.\n                                Claret Float.\nSame as a plain lemonade, floating Claret on top. If poured care\nfully it will float.\n                                  Cordial.\nSame as above using any Cordial asked for.\nDo not add fruit.\n\n                                    Egg.\n                         This one i s delicious.\nSame as a plain lemonade adding a whole egg.\nNo   fruit.   The hen fruit suffices.\n\n                                   Fruit.\nUse a large mixing glass.\nHalf f i l l with shaved ice.\nOne-half jigger each of the following:\nRaspberry syrup, strawberry syrup, pineapple syrup, grenadine\nsyrup.\nLemon juice and orange juice.\nFill with siphon water, stir while filling.\nDecorate with fruit in season and serve with straws.\n\n                                   Orgeat.\nSame as a plain lemonade, adding a jigger of Orgeat syrup.\n\n                                 Phosphate.\nUse a large mixing glass.\nHalf fill glass with shaved ice.\nOne-half jigger lemon juice.\nOne table spoon sugar.\nThree dashes Acid Phosphate.\nFill with Lemon soda, stir.\n\n                                   Seltzer.\nThe same as a plain lemonade but instead of plain water use\nsiphon seltzer and stir instead of shaking. Never try to shake\ncarbonated water. You may blow your head off.\n\n                                    Soda.\nSame as above using a bottle of Club soda.          (Imported)\n                                  Whiskey.\nSame as a plain lemonade adding Whiskey floated on top.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-082",
@@ -1430,14 +3413,99 @@
       "name_original": "End of Lemonades",
       "name_es": "End of Lemonades",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "scotch whiskey",
+          "item_es": "whisky escocés",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "rum",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "or cube of ice",
+          "item_es": "or cube of ice",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "fresh mint",
+          "item_es": "menta fresca",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange juice",
+          "item_es": "zumo de naranja",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": "Use a Collins glass. Fill with a bottle C. & C. Ginger ale.          (Imported) Use a large mixing glass. Fill glass with milk. Shake well and strain into a Collins glass. Use a large mixing glass. Fill glass with milk. Shake well, strain into a Collins glass. Use a Collins glass. Fill glass with shaved ice. Add one jigger Bourbon whiskey. Stir and fill glass to top with more shaved ice. Use a large mixing glass. Fill glass with shaved ice. Add one jigger Bourbon whiskey. Shake well; strain into a goblet that has been filled with fresh Serve the same as other juleps. Use an old fashion cocktail glass. Serve a side of water and a toddy spoon and an individual strainer. Use an old fashion cocktail glass. Serve the same as Mint Smash. Use a whiskey glass. Use a large mixing glass. Shake well and strain into a goblet that has been filled with",
       "method_es": "Use a Collins glass. Fill with a bottle C. & C. Ginger ale.          (Imported) Use a large mixing glass. Fill glass with milk. Shake well and strain into a Collins glass. Use a large mixing glass. Fill glass with milk. Shake well, strain into a Collins glass. Use a Collins glass. Fill glass with shaved ice. Add one jigger Bourbon whiskey. Stir and fill glass to top with more shaved ice. Use a large mixing glass. Fill glass with shaved ice. Add one jigger Bourbon whiskey. Shake well; strain into a goblet that has been filled with fresh Serve the same as other juleps. Use an old fashion cocktail glass. Serve a side of water and a toddy spoon and an individual strainer. Use an old fashion cocktail glass. Serve the same as Mint Smash. Use a whiskey glass. Use a large mixing glass. Shake well and strain into a goblet that has been filled with",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "End of Lemonades\n\n\n\n\n                                Mamie Taylor.\nUse a Collins glass.\nJuice    of one-half lime.\nOne or two lumps of ice.\nOne jigger Scotch whiskey.\nFill with a bottle C. & C. Ginger ale.          (Imported)\n\n                             Medford Rum Punch.\n                               See Punches.\n\n                                     33\n                                  Milk Punch.\nUse a large mixing glass.\nHalf fill glass with shaved ice.\nOne table spoon sugar.\nOne jigger Brandy.\nOne-half jigger Rum.\nFill glass with milk.\nShake well and strain into a Collins glass.\nSprinkle nutmeg on top and serve with straws.\n\n                                  Milk Shake.\nUse a large mixing glass.\nHalf fill glass with shaved ice.\nOne egg.\nOne spoon sugar.\nFill glass with milk.\nShake well, strain into a Collins glass.\nSprinkle nutmeg on top and serve with straws.\n\n                            Mint Julep.\nUse a Collins glass.\nDissolve in a little water one cube of sugar.\nThree or four sprigs of fresh mint.\nMuddle these together very lightly to extract the essence of mint.\nFill glass with shaved ice.\nAdd one jigger Bourbon whiskey.\nStir and fill glass to top with more shaved ice.\nInsert a small bunch of fresh mint, stem down, into the ice.\nDecorate with fruit and serve with straws.\n\n\n                         Mint Julep-a la Potter Hotel.\nUse a large mixing glass.\nA few sprigs of fresh mint.\nOne spoon sugar.\nA   l i t t l e water.\nMuddle these together.\nFill glass with shaved ice.\nAdd one jigger Bourbon whiskey.\nShake well; strain into a goblet that has been filled with fresh\nshaved     ice.\nServe the same as other juleps.\n\n                                  Mint Smash.\n\nUse an old fashion cocktail glass.\nTwo sprigs, of fresh mint, one cube of sugar and a little water.\nMuddle these together.\nOne lump or cube of ice.\nAllow customer or guest to pour his own Bourbon whiskey, serving\nan empty whiskey glass for that purpose.\nServe a side of water and a toddy spoon and an individual\nstrainer.\n\n                                 Mint Toddy.\nUse an old fashion cocktail glass.\nOne sprig of fresh mint.\nOne cube of sugar.\nA little water added and muddle these together.\nOne cube of ice.\nServe the same as Mint Smash.\n\n                                      34\n                        Mountain Oyster.\nUse a whiskey glass.\nOne bar spoon lemon juice.\nOne\nUIIB egg\nDash of salt and pepper.\nDown i t , that's all.\n\n                              Orangeade.\nMade the same as a lemonade substituting orange juice for the\nlemon juice, except, use twice as much orange juice as you would\nlemon juice making a lemonade.\n\n                            Orange Blossom.\nUse a large mixing glass.\nTwo-thirds full of shaved ice.\nOne spoon sugar.\nOne jigger orange juice.\nOne jigger Gin.\nShake well and strain into a goblet that has been filled with\nshaved ice.\nDecorate with slices of orange and serve with straws.\n\n                        Orange Brandy Cup.\nCup an orange.   (That is, scoop t",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-083",
@@ -1447,14 +3515,127 @@
       "name_original": "Potter Hotel",
       "name_es": "Potter Hotel",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "batavia arrack",
+          "item_es": "batavia arrack",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple",
+          "item_es": "pineapple",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple",
+          "item_es": "pineapple",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "beaune",
+          "item_es": "beaune",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "apollinaris water",
+          "item_es": "apollinaris water",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "lemon",
+          "item_es": "limón",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "green chartreuse",
+          "item_es": "green chartreuse",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "tokay",
+          "item_es": "tokay",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "appollinaris water",
+          "item_es": "appollinaris water",
+          "amount": "4",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Use a   Pousse Cafe Glass. Use a small mixing glass. Fill mixing glass with shaved ice, shake well, strain into a Use a small mixing glass. Fill glass with shaved ice. Shake thoroughly and strain into a goblet that has been filled Use a two quart pitcher. Stir well, fill pitcher with lump ice, decorate with fruit, and serve in hollow champagne glasses. Serve from a punch bowl. Stir this mixture well and allow to stand for two hours at least. Strain into a punch bowl. Add a few strips of cucumber rind and fruit in season. Serve in glass punch cups. Use a glass pitcher. Pour one pint of sherry on the lemon. Add one cup sugar, the juice of a lemon and one bottle Cider.",
       "method_es": "Use a   Pousse Cafe Glass. Use a small mixing glass. Fill mixing glass with shaved ice, shake well, strain into a Use a small mixing glass. Fill glass with shaved ice. Shake thoroughly and strain into a goblet that has been filled Use a two quart pitcher. Stir well, fill pitcher with lump ice, decorate with fruit, and serve in hollow champagne glasses. Serve from a punch bowl. Stir this mixture well and allow to stand for two hours at least. Strain into a punch bowl. Add a few strips of cucumber rind and fruit in season. Serve in glass punch cups. Use a glass pitcher. Pour one pint of sherry on the lemon. Add one cup sugar, the juice of a lemon and one bottle Cider.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Potter Hotel\nUse a   Pousse Cafe Glass.\nOne-sixth each of the following.\nRaspberry syrup.\nCuracoa.\nMaraschino.\nGreen Chartreuse.\nYellow Chartreuse.\nCognac.\nSame direction as the above.\n\n\n                              PUNCHES\n\n\n\n                                Arrack.\nUse a small mixing glass.\nDissolve two spoons full of sugar in a little water.\nJuice of one-half lemon.\nOne-half jigger Batavia Arrack.\nOne jigger Jamaica Rum.\nOne-half slice pineapple.\nFill mixing glass with shaved ice, shake well, strain into a\ngoblet filled with fresh shaved ice, dress with fruit and serve\nwith straws.\n                                 Brandy.\nUse a small mixing glass.\nDissolve one spoonful of sugar in a little water.\nOne spoonful raspberry syrup.\nOne wine glass Brandy.\nOne-half wine glass Jamaica Rum.\nJuice of one-half lemon.\nTwo slices orange.\nOne piece of pineapple.\nFill glass with shaved ice.\nShake thoroughly and strain into a goblet that has been filled\nwith shaved ice.\nDecorate with fruit and serve with straws.\n                                   37\n                                Champagne.\nUse a two quart pitcher.\nOne pint Champagne.\nOne pint Beaune.\nOne pint Apollinaris water.\nThree slices of orange.\nThree slices of lemon.\nThree cubes of sugar.\nThree or four dashes of Angostura bitters.\nStir well, fill pitcher with lump ice, decorate with fruit, and\nserve in hollow champagne glasses.\n\n\n                                Champagne.\n                               For a party.\n                         Serve from a punch bowl.\nTake a large crock to mix body of punch.\nTwo jiggers pineapple syrup.\nFour to six sprigs fresh mint.\nOne quart Curacoa.\nOne pint green Chartreuse.\nOne quart Cognac.\nOne quart of Tokay.\nFour bottles Appollinaris water.\nTwo sliced oranges.\nOne   sliced lemon.\nStir this mixture well and allow to stand for two hours at least.\nStrain into a punch bowl.\nOne large chunk of ice.\nAdd a few strips of cucumber rind and fruit in season.\nServe in glass punch cups.\n\n\n                                  Cider.\n                           Use a glass pitcher.\nPare a lemon very thin and place in the pitcher.\nPour one pint of sherry on the lemon.\nAdd one cup sugar, the juice of a lemon and one bottle Cider.\nSprinkle a little nutmeg on this. Mix well and place on ice.\nWhen cold add two jiggers Brandy and a few strips cucumber rind.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1934-drinks-as-they-were-made-before-prohibition-by-ira-d-altschul-084",
@@ -1464,14 +3645,190 @@
       "name_original": "Claret",
       "name_es": "Claret",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange",
+          "item_es": "naranja",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "curacoa",
+          "item_es": "curaçao",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "cup",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "benedictine",
+          "item_es": "Bénédictine",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "claret",
+          "item_es": "burdeos tinto",
+          "amount": "3",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "each. sherry and french brandy or cognac",
+          "item_es": "each. sherry and french brandy or cognac",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved in a little water",
+          "item_es": "sugar dissolved in a little water",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "red curacoa",
+          "item_es": "red curacoa",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "0.5",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "sugar dissolved in a little water",
+          "item_es": "sugar dissolved in a little water",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "raspberry syrup",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        },
+        {
+          "item_original": "orange quartered",
+          "item_es": "orange quartered",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "pineapple",
+          "item_es": "pineapple",
+          "amount": "0.5",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "maraschino",
+          "item_es": "maraschino",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use a small mixing glass. Stir well and strain into a punch glass filled with shaved ice. Dress with fruit and top with a dash of rum. Serve   straws. Pour this mixture into pitcher; add several cubes of ice. Use a large punch bowl. Stir and sweeten to suit taste. Let stand for an hour or so. Strain over a clear, large piece of ice that has been deposited Pour into this two quarts of Champagne. Use a small mixing glas's. Fill with shaved ice, shake well and strain into a punch glass. Use a large mixing glass. Shake well and strain into a Collins glass. Use a small mixing glass. Fill glass with shaved ice. Shake, strain into a punch glass. Dress with     fruit. Use a.large mixing glass. Fill glass with shaved ice. Punch glass. Shake, decorate with sliced lime and a berry and serve straws.",
       "method_es": "Use a small mixing glass. Stir well and strain into a punch glass filled with shaved ice. Dress with fruit and top with a dash of rum. Serve   straws. Pour this mixture into pitcher; add several cubes of ice. Use a large punch bowl. Stir and sweeten to suit taste. Let stand for an hour or so. Strain over a clear, large piece of ice that has been deposited Pour into this two quarts of Champagne. Use a small mixing glas's. Fill with shaved ice, shake well and strain into a punch glass. Use a large mixing glass. Shake well and strain into a Collins glass. Use a small mixing glass. Fill glass with shaved ice. Shake, strain into a punch glass. Dress with     fruit. Use a.large mixing glass. Fill glass with shaved ice. Punch glass. Shake, decorate with sliced lime and a berry and serve straws.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Claret\nUse a small mixing glass.\nHalf f i l l with shaved ice.\nJuice of one-half lemon.\nTwo slices of orange.\nTwo jiggers Claret.\nStir well and strain into a punch glass filled with shaved ice.\nDress with fruit and top with a dash of rum.\nServe   straws.\n\n\n                                  Claret\n\n                                One gallon.\nJuice   of six lemons.\nOne   jigger Curacoa.\nOne   jigger Brandy.\nOne   cup sugar.\nTwo   siphons.\n\n                                    38\n                                    Claret\n\n                                   Pitcher.\n\nIn a large mixing glass put.\nTwo or three spoons sugar.\nOne jigger Brandy.\nOne-half jigger Benedictine.\nOne-half jigger Maraschino.\nSiphon to fill glass. Stir.\nPour this mixture into pitcher; add several cubes of ice.\nOne quart of Claret.\nDecorate with fruit and fresh mint.\nOn top of this pour one-half cup hot black tea.\n\n                           Claret and Champagne.\n                          Use a large punch bowl.\nIn a crock mix the following.\nThree quarts of claret.\nOne—half pint Red Curacoa.\nOne pint each. Sherry and French Brandy or Cognac.\nTwc jiggers Raspberry syrup.\nTwo each, oranges and lemons, sliced.\nSeveral sprigs of fresh mint, green balm and borage.\nThree siphons or six bottles Club soda.\nStir and sweeten to suit taste. Let stand for an hour or so.\nStrain over a clear, large piece of ice that has been deposited\nin bowl.\nPour into this two quarts of Champagne.\nThis will serve about twenty persons in glass punch cups.\n\n\n                                    Curacoa.\nUse a small mixing glas's.\nTwo spoons sugar dissolved in a little water.\nJuice   of one-half lemon.\nOne-half jigger Red Curacoa.\nOne-half jigger Jamaica Rum.\nFill with shaved ice, shake well and strain into a punch glass.\nDecorate with fruit and serve with straws.\n\n\n                                      Milk.\nUse a large mixing glass.\nHalf    f i l l with shaved ice.\nOne spoon sugar.\nOne jigger Brandy.\nOne-half jigger Jamaica Rum.\nF i l l with milk.\nShake well and strain into a Collins glass.\nSprinkle grated nutmeg on top and serve straws.\n\n                                   Fish House.\nUse a small mixing glass.\nJuice of one-half lemon.\nOne spoon sugar.\nFill glass with shaved ice.\nOne-half jigger Brandy.\nOne-half jigger Jamaica Rum.\nShake, strain into a punch glass.\nDress with     fruit.\n\n                                       39\n\n\n\n\n                                                                  1 HVl.!.,.;.' ./V\n                                  Gin.\nUse a.large mixing glass.\nOne spoon sugar dissolved in a little water.\nOne spoon Raspberry syrup.\nOne jigger Gin.\nJuice of one-half lemon.\nOne slice orange quartered.\nOne-half piece pineapple.\nTwo dashes Maraschino.\nFill glass with shaved ice. Punch glass.\nShake, decorate with sliced lime and a berry and serve straws.\n                                                     «\n\n\n\n\n                              Grenadine.\nIn a fizz glass put.\nTwo or three dashes lemon ",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

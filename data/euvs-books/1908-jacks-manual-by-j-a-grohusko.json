@@ -107,13 +107,28 @@
       "category": "fizz",
       "name_es": "ANGOSTURA FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "field's orange bitters",
+          "item_es": "field's orange bitters",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "lemon peel",
+          "item_es": "piel de limón",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well in shaker and serve. Stir up with spoon and strain Drop medium-sized olive in",
       "method_es": "Shake well in shaker and serve. Stir up with spoon and strain Drop medium-sized olive in",
       "glassware": "Bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -1279,13 +1294,28 @@
       "category": "cocktail",
       "name_es": "SHANDY GAFF",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lager",
+          "item_es": "lager",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Put 2 dashes Angostura bitters           I dash of bitters. Fill the glass with sherry",
       "method_es": "Put 2 dashes Angostura bitters           I dash of bitters. Fill the glass with sherry",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -1441,13 +1471,21 @@
       "category": "cocktail",
       "name_es": "STAR COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginger ale",
+          "item_es": "ginger ale",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with ice. Stir and strain.         Serve                        \\v 1 Fill glass with cider.                  100% whiskey Stir well and serve.                  I bottle of club soda. Stir up well with spoon, re Frappe, strain and serve. Fill with shaved ice.                  Juice of ka orange Shake well in shakfer, strain        100% Byrrh wine Serve with straws.",
       "method_es": "Fill glass with ice. Stir and strain.         Serve                        \\v 1 Fill glass with cider.                  100% whiskey Stir well and serve.                  I bottle of club soda. Stir up well with spoon, re Frappe, strain and serve. Fill with shaved ice.                  Juice of ka orange Shake well in shakfer, strain        100% Byrrh wine Serve with straws.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,

@@ -108,13 +108,21 @@
       "category": "cocktail",
       "name_es": "OXFORD MULL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water upon it, cover",
+          "item_es": "boiling water upon it, cover",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "mixture stand until it is quite cold, and then pour a bottle of white wine into it.",
       "method_es": "mixture stand until it is quite cold, and then pour a bottle of white wine into it.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -176,13 +184,28 @@
       "category": "punch",
       "name_es": "PUNCH EGYAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water on it. add the",
+          "item_es": "boiling water on it. add the",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        },
+        {
+          "item_original": "port wine. sweeten it to your",
+          "item_es": "port wine. sweeten it to your",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -210,13 +233,35 @@
       "category": "cocktail",
       "name_es": "STOEATIYE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water; add four glasses",
+          "item_es": "boiling water; add four glasses",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "whisky, (irish if possible)",
+          "item_es": "whisky, (irish if possible)",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy, and the juice and peel",
+          "item_es": "brandy, and the juice and peel",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "put the froth into the punch ■with one table- stir it. If it stands in a jug near the fire for Let the juice of six or eight additional put into it a sufficient quantity of double",
       "method_es": "put the froth into the punch ■with one table- stir it. If it stands in a jug near the fire for Let the juice of six or eight additional put into it a sufficient quantity of double",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +272,21 @@
       "category": "punch",
       "name_es": "EGG PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cold water, tlie juice of six",
+          "item_es": "cold water, tlie juice of six",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Put some pulverised sugar and ten fresh-",
       "method_es": "Put some pulverised sugar and ten fresh-",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -261,13 +314,21 @@
       "category": "punch",
       "name_es": "SHEUB PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champagne",
+          "item_es": "champán",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +339,21 @@
       "category": "cocktail",
       "name_es": "POSSET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "milk from gentle cow will fill it",
+          "item_es": "milk from gentle cow will fill it",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Stir them with steady hand and conscience pricking, Put one pint of millc into a saucepan, and put them into the Whey; grate a small",
       "method_es": "Stir them with steady hand and conscience pricking, Put one pint of millc into a saucepan, and put them into the Whey; grate a small",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +364,21 @@
       "category": "cocktail",
       "name_es": "CIDER POSSET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, and one quart of milk",
+          "item_es": "brandy, and one quart of milk",
+          "amount": "1",
+          "unit": "gill",
+          "notes": null
+        }
+      ],
       "method_original": "pour on it one quart of fresh drawn cider ; use.",
       "method_es": "pour on it one quart of fresh drawn cider ; use.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -346,13 +423,21 @@
       "category": "cup",
       "name_es": "BEER CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "strong teer instead of cider",
+          "item_es": "strong teer instead of cider",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,

@@ -205,13 +205,21 @@
       "category": "cocktail",
       "name_es": "ROAST TURNEDOES OF SIRLOIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "seasoned tomatoes thick, hash and",
+          "item_es": "seasoned tomatoes thick, hash and",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "add the plaster to the m ust. The intention is to add to the chemical stabi lity of the wine.",
       "method_es": "add the plaster to the m ust. The intention is to add to the chemical stabi lity of the wine.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -239,13 +247,21 @@
       "category": "cocktail",
       "name_es": "RECIPES FOR COOKING",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cooked calf 's h ead fo r t h e turtle",
+          "item_es": "cooked calf 's h ead fo r t h e turtle",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Put in cloth and boil for three hours. Serve with",
       "method_es": "Put in cloth and boil for three hours. Serve with",
       "glassware": "For 6 p eople.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,

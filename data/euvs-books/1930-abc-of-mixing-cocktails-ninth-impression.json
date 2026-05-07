@@ -278,13 +278,21 @@
       "category": "smash",
       "name_es": "Brandy Smash",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "brandy, shak e w e ll, a nd po ur in to",
+          "item_es": "brandy, shak e w e ll, a nd po ur in to",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -2023,13 +2031,21 @@
       "category": "cocktail",
       "name_es": "Three Mile Limit Cocktail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": ", th en p o ur the mixture fro m o n e g lass t o",
+          "item_es": ", th en p o ur the mixture fro m o n e g lass t o",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Shake \"·e ll and s train into coc kta il g lass . Shake we ll a n d s train into cockt a il gl ass .                 x Use E ggs acco rdin g t o qu a ntity . T a ke bo ,,·Js mixing th e yo lks wi t h th e whites , but h a ve th e mixture /'ve ry li tt le w h i le to prevent th e E ggs mixed t o geth e r. Grate a littl e nutm eg o n t o p and serve.",
       "method_es": "Shake \"·e ll and s train into coc kta il g lass . Shake we ll a n d s train into cockt a il gl ass .                 x Use E ggs acco rdin g t o qu a ntity . T a ke bo ,,·Js mixing th e yo lks wi t h th e whites , but h a ve th e mixture /'ve ry li tt le w h i le to prevent th e E ggs mixed t o geth e r. Grate a littl e nutm eg o n t o p and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 117,

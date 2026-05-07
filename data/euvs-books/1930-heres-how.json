@@ -1538,14 +1538,22 @@
       "name_original": "Tom Coltins",
       "name_es": "Tom Coltins",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar",
+          "item_es": "azúcar glas",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill goblet with fine icc. Juicc one small lemon. 1 spoon powdered sugar. 1 shot dry gin. Shake well. Strain into large thin glasa and fiU with one bottle club soda or domestic soda. Stir with spoon.",
       "method_es": "Agitar bien con hielo picado, colar.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
       "raw_text": "Tom Coltins\nFill goblet with fine icc.\nJuicc one small lemon.\n1 spoon powdered sugar.\n1 shot dry gin. Shake well.\nStrain into large thin glasa and fiU with one\n  bottle club soda or domestic soda.\nStir with spoon.",
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "id": "1930-heres-how-049",

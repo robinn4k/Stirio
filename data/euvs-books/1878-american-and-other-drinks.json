@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "Usi' large iuriblet",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "raspberry syrup ; the same of white sugar",
+          "item_es": "raspberry syrup ; the same of white sugar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +65,28 @@
       "category": "cocktail",
       "name_es": "Another",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bottle of champagne ; two ounces of sugar ; one orange",
+          "item_es": "bottle of champagne ; two ounces of sugar ; one orange",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        },
+        {
+          "item_original": "sugar; one slice of lemon",
+          "item_es": "sugar; one slice of lemon",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use large tumbler.",
       "method_es": "Use large tumbler.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -74,13 +97,21 @@
       "category": "punch",
       "name_es": "ORGEAT PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orgeat syrup ; one and a half",
+          "item_es": "orgeat syrup ; one and a half",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use large tumbler.",
       "method_es": "Use large tumbler.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +122,35 @@
       "category": "punch",
       "name_es": "CURACOA PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar; one wine glass of brandy ; half a wine",
+          "item_es": "sugar; one wine glass of brandy ; half a wine",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "fine white sugar; one table-spoonful of",
+          "item_es": "fine white sugar; one table-spoonful of",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy ; one pint of rum ; one gill of arrack; one cup",
+          "item_es": "brandy ; one pint of rum ; one gill of arrack; one cup",
+          "amount": "1",
+          "unit": "pint",
+          "notes": null
+        }
+      ],
       "method_original": "Use large tumbler. Use large tumbler. shake the ingredients well together,and grate a little nutmeg on top. Use large tumbler. Put the following ingredients into a very clean pitcher:—The",
       "method_es": "Use large tumbler. Use large tumbler. shake the ingredients well together,and grate a little nutmeg on top. Use large tumbler. Put the following ingredients into a very clean pitcher:—The",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +161,28 @@
       "category": "sling",
       "name_es": "TODDIES AND SLINGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar ; half a wine glass of water ; quarter",
+          "item_es": "sugar ; half a wine glass of water ; quarter",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar ; half a wine glass of water ; quarter",
+          "item_es": "sugar ; half a wine glass of water ; quarter",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use small tumbler. Use small tumbler. Use small tumbler. Use small tumbler. Use small tumbler.",
       "method_es": "Use small tumbler. Use small tumbler. Use small tumbler. Use small tumbler. Use small tumbler.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,

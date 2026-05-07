@@ -684,13 +684,28 @@
       "category": "cocktail",
       "name_es": "TOM AND JERRY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "and beat the whites to a stiff",
+          "item_es": "and beat the whites to a stiff",
+          "amount": "large",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "the above mixture in",
+          "item_es": "the above mixture in",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use two chilled bowls to prepare the mixture, a'nd mix well with a little carbonate Use Tom and Jerry mugs or cups. Put",
       "method_es": "Use two chilled bowls to prepare the mixture, a'nd mix well with a little carbonate Use Tom and Jerry mugs or cups. Put",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -1284,13 +1299,28 @@
       "category": "cocktail",
       "name_es": "LEMONADES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sugar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use mixing glass Fill !h fine Ice Fill g lass with w a ter. Shake well. Top off w ith Claret Wine. Serve w ith straws. Strain if requested. Use mixing glass Fill \\/2 fine Ice Fill glass with wate r. Shake well. Strain into lemonade g lass. Use mixing g lass Fill \\/2 fine Ice Fill glass w ith water. Shake well. Pour Strain if requested. Use mixing glass Fill 'h fine Ice Fill glass w ith Seltzer. Stir Strain if requested.",
       "method_es": "Use mixing glass Fill !h fine Ice Fill g lass with w a ter. Shake well. Top off w ith Claret Wine. Serve w ith straws. Strain if requested. Use mixing glass Fill \\/2 fine Ice Fill glass with wate r. Shake well. Strain into lemonade g lass. Use mixing g lass Fill \\/2 fine Ice Fill glass w ith water. Shake well. Pour Strain if requested. Use mixing glass Fill 'h fine Ice Fill glass w ith Seltzer. Stir Strain if requested.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,

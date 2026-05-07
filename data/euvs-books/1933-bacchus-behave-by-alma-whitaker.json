@@ -74,13 +74,21 @@
       "category": "cocktail",
       "name_es": "WINES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "the finest wine in his cellar. n e p h e w",
+          "item_es": "the finest wine in his cellar. n e p h e w",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,

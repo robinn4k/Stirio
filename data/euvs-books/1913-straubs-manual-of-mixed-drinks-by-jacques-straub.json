@@ -1499,13 +1499,21 @@
       "category": "cocktail",
       "name_es": "JOHN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ice",
+          "item_es": "hielo",
+          "amount": "Small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well. Shake.",
       "method_es": "Shake well. Shake.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -3324,13 +3332,21 @@
       "category": "cocktail",
       "name_es": "WALDORF QUEENS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange.            >",
+          "item_es": "orange.            >",
+          "amount": "Small",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Frappe well. Strain into Cocktail glass and serve.",
       "method_es": "Frappe well. Strain into Cocktail glass and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 110,
@@ -3576,13 +3592,21 @@
       "category": "cup",
       "name_es": "CHAMPAGNE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cube ice",
+          "item_es": "cube ice",
+          "amount": "Large",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use Glass Pitcher. Stir well and put a little powdered sugar Use Large Glass Pitcher.",
       "method_es": "Use Glass Pitcher. Stir well and put a little powdered sugar Use Large Glass Pitcher.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 117,
@@ -5106,13 +5130,21 @@
       "category": "cocktail",
       "name_es": "WHITE PLUSH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "milk",
+          "item_es": "leche",
+          "amount": "Small",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Shake, strain into thin Glass and serve. Shake, strain and serve.",
       "method_es": "Shake, strain into thin Glass and serve. Shake, strain and serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 158,

@@ -73,13 +73,21 @@
       "category": "cocktail",
       "name_es": "HOME BREWED WTCNES, BEERS, MQUEURS, ETC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mix",
+          "item_es": "mix",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "into paste with % lb. flour, and 1 pint of the oil of coriander, and % oz. of the water. Put altog-ether in a barrel, which oil of caraway; put this into the recti it will fill, and let it work 24 hours— fied spirit and well rummage it up; this is what the rectifiers call strong the yeast running ou",
       "method_es": "into paste with % lb. flour, and 1 pint of the oil of coriander, and % oz. of the water. Put altog-ether in a barrel, which oil of caraway; put this into the recti it will fill, and let it work 24 hours— fied spirit and well rummage it up; this is what the rectifiers call strong the yeast running ou",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -192,13 +200,21 @@
       "category": "cocktail",
       "name_es": "CARAWAY BRANDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine sugar",
+          "item_es": "azúcar fino",
+          "amount": "2",
+          "unit": "oz",
+          "notes": null
+        }
+      ],
       "method_original": "Mix the ginger and sugar together.          ginger, 1 qt. whisky, and to each nint Add them to the brandy along with the        of liquid allow    lb. loaf sugar. Use pure cranberry juice without any       off the yellow rinds as thinly as",
       "method_es": "Mix the ginger and sugar together.          ginger, 1 qt. whisky, and to each nint Add them to the brandy along with the        of liquid allow    lb. loaf sugar. Use pure cranberry juice without any       off the yellow rinds as thinly as",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -260,13 +276,28 @@
       "category": "cocktail",
       "name_es": "POTASS WATER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sugar; % lemon",
+          "item_es": "sugar; % lemon",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice; 2 table-",
+          "item_es": "shaved ice; 2 table-",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "squeezed well; till the glass with hot Pour a little hot water into the glass",
       "method_es": "squeezed well; till the glass with hot Pour a little hot water into the glass",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -318,13 +349,21 @@
       "category": "cocktail",
       "name_es": "PONY BRANDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gum syrup; 1 or 2                         champagne cobbler",
+          "item_es": "gum syrup; 1 or 2                         champagne cobbler",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "dress with fruit. Top with Port wine.",
       "method_es": "dress with fruit. Top with Port wine.",
       "glassware": "small bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -390,13 +429,35 @@
       "category": "flip",
       "name_es": "SHBRBY WINE FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "benedictine, or char",
+          "item_es": "benedictine, or char",
+          "amount": "0.333",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "shaved ice; 1 egg; 2",
+          "item_es": "shaved ice; 1 egg; 2",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "white pulverized                      and see that the colors do not run into",
+          "item_es": "white pulverized                      and see that the colors do not run into",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well; strain into a fancy glass                            (Use sherry wine-glass.) Pour the wine into the glass slowly, stirring gently.                                                    (Use a bar glass.) Dress with sliced orange, grapes and                     Two teaspoonfuls powdered sugar in Stir well and dress            with       fruit    in   a little water; % of a small lemon; % Fill % with shaved ice; balance with                                 CHAMPAGNE PUNCH.",
       "method_es": "Shake well; strain into a fancy glass                            (Use sherry wine-glass.) Pour the wine into the glass slowly, stirring gently.                                                    (Use a bar glass.) Dress with sliced orange, grapes and                     Two teaspoonfuls powdered sugar in Stir well and dress            with       fruit    in   a little water; % of a small lemon; % Fill % with shaved ice; balance with                                 CHAMPAGNE PUNCH.",
       "glassware": "sherry wine-glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -407,13 +468,21 @@
       "category": "punch",
       "name_es": "CUARET PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "honey; 1 •wine-glass                    with     a   straw",
+          "item_es": "honey; 1 •wine-glass                    with     a   straw",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill up with water; shake well; dress                  Place a slice of lemon on top; grate a serve.                                                    dashes lemon juice; 1%      wine-glass serve. Fill glass with boiling water and                           One teaspoonful powdered sugar;                   li",
       "method_es": "Fill up with water; shake well; dress                  Place a slice of lemon on top; grate a serve.                                                    dashes lemon juice; 1%      wine-glass serve. Fill glass with boiling water and                           One teaspoonful powdered sugar;                   li",
       "glassware": "large bar glass.)                                  (Use large bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -424,13 +493,42 @@
       "category": "cocktail",
       "name_es": "HOT BUM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sugar; a                       stir,       and grate a          little nutmeg on",
+          "item_es": "powdered sugar; a                       stir,       and grate a          little nutmeg on",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "butter; 1 wine-glass                      top.     serve",
+          "item_es": "butter; 1 wine-glass                      top.     serve",
+          "amount": "small",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sug                     sugar; % wine-glass water; 2 or 3",
+          "item_es": "powdered sug                     sugar; % wine-glass water; 2 or 3",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "powdered sugar; %                             (usp large bar glass.)",
+          "item_es": "powdered sugar; %                             (usp large bar glass.)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill glass with hot water.              Stir well                  WHISKEY SUING (Cold). Stir well; give a          dash of Port wine                            BRANDY SMASH. Stir with a spoon; put about a tea                    shaved         ice. Stir well; grate nutmeg on top, and                   spoonfuls powdered sugar; 2 or 3 sprigs serve. Stir well; strain into a sour glass; dress with fruit; serve. Shake well; grate a little nutmeg on",
       "method_es": "Fill glass with hot water.              Stir well                  WHISKEY SUING (Cold). Stir well; give a          dash of Port wine                            BRANDY SMASH. Stir with a spoon; put about a tea                    shaved         ice. Stir well; grate nutmeg on top, and                   spoonfuls powdered sugar; 2 or 3 sprigs serve. Stir well; strain into a sour glass; dress with fruit; serve. Shake well; grate a little nutmeg on",
       "glassware": "small bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -458,13 +556,21 @@
       "category": "cocktail",
       "name_es": "TOM AND JERRY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bourbon whiskey ; 1 bot               (use large bar glass.)",
+          "item_es": "bourbon whiskey ; 1 bot               (use large bar glass.)",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Fill up with cold Seltzer or Apolll        glass of apple Jack.",
       "method_es": "Fill up with cold Seltzer or Apolll        glass of apple Jack.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -475,13 +581,21 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE VELVET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "powdered sug",
+          "item_es": "powdered sug",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the glass half full with porter, the                  brandy;       %   glass of shaved ice. Stir up with a spoon slowly, and you                     er, strain it into a large glass, and fill serve.",
       "method_es": "Fill the glass half full with porter, the                  brandy;       %   glass of shaved ice. Stir up with a spoon slowly, and you                     er, strain it into a large glass, and fill serve.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -492,13 +606,21 @@
       "category": "toddy",
       "name_es": "APPLE TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "fine white sug                        mix well with a ladle, place this into",
+          "item_es": "fine white sug                        mix well with a ladle, place this into",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Fill the glass two-thirds full of boil                   lemon juice; 1 wine-glass of Santa Cruz shake up and strain into a claret winei Shake thoroughly, strain into anoth                        Mix thoroughly and place sufficient",
       "method_es": "Fill the glass two-thirds full of boil                   lemon juice; 1 wine-glass of Santa Cruz shake up and strain into a claret winei Shake thoroughly, strain into anoth                        Mix thoroughly and place sufficient",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,

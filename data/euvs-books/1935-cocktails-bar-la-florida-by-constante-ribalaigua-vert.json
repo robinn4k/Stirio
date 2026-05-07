@@ -176,13 +176,21 @@
       "category": "flip",
       "name_es": "BRANDY FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pep-",
+          "item_es": "pep-",
+          "amount": "Small",
+          "unit": "sprig",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,

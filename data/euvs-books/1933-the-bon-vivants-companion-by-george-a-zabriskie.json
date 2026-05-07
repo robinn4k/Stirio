@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "NOTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "is a wineglass full, but good bar",
+          "item_es": "is a wineglass full, but good bar",
+          "amount": "1",
+          "unit": "jigger",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -3176,13 +3184,21 @@
       "category": "cocktail",
       "name_es": "MULLED WINE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "good wine, or more—",
+          "item_es": "good wine, or more—",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "Let Betty beat the whites with switch. Put half a pint of water, too. Mixing them well, then gently pour Grate nutmeg in to make it richer;",
       "method_es": "Let Betty beat the whites with switch. Put half a pint of water, too. Mixing them well, then gently pour Grate nutmeg in to make it richer;",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 107,
@@ -3344,13 +3360,21 @@
       "category": "cocktail",
       "name_es": "BOTTLED VELVET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "moselle; half a pint of sherry; the peel of",
+          "item_es": "moselle; half a pint of sherry; the peel of",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 114,
@@ -3475,13 +3499,28 @@
       "category": "cocktail",
       "name_es": "RUMFUSTIAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jamaica rum",
+          "item_es": "ron Jamaica",
+          "amount": "small",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cream of tartar, or as much bicar",
+          "item_es": "cream of tartar, or as much bicar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "put into a quart of strong beer; to this is added a pint used to each tumbler of Tom and Jerry.",
       "method_es": "put into a quart of strong beer; to this is added a pint used to each tumbler of Tom and Jerry.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 118,
@@ -3598,13 +3637,21 @@
       "category": "cocktail",
       "name_es": "POUSSE L'AMOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "claret; cover, and let it stand six hours; then",
+          "item_es": "claret; cover, and let it stand six hours; then",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "pour it through a muslin bag and send it up immediately.",
       "method_es": "pour it through a muslin bag and send it up immediately.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 124,
@@ -4521,13 +4568,21 @@
       "category": "punch",
       "name_es": "TEA PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boiling water. put before the fire a silver or",
+          "item_es": "boiling water. put before the fire a silver or",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 147,

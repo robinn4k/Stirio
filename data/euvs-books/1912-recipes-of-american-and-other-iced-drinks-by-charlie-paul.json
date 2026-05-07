@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "Ta ke a large soda glass and fill up half milk and",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "absinthe and of plain s ugar; add two",
+          "item_es": "absinthe and of plain s ugar; add two",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Fill a half-pint tumbler with chipped ice ; squeeze add _three dashes gum .syrup, two d ashes of cura<;oa. serve with s traws. Fill tumbler w ith cili pped ice ; p u t in t hree• or strain ofI.",
       "method_es": "Fill a half-pint tumbler with chipped ice ; squeeze add _three dashes gum .syrup, two d ashes of cura<;oa. serve with s traws. Fill tumbler w ith cili pped ice ; p u t in t hree• or strain ofI.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -244,13 +252,21 @@
       "category": "cocktail",
       "name_es": "I CE CREAi'vI SH AKE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "lemon when serving",
+          "item_es": "lemon when serving",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "fill glass with soda water, without foam. Drop in Use lemon flavouring for Phospha te, Orange or",
       "method_es": "fill glass with soda water, without foam. Drop in Use lemon flavouring for Phospha te, Orange or",
       "glassware": "An Excellent Tonic.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,

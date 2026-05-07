@@ -1145,13 +1145,21 @@
       "category": "cocktail",
       "name_es": "MIXING ABSINTHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "and sends this and a pitcher of water",
+          "item_es": "and sends this and a pitcher of water",
+          "amount": "large",
+          "unit": "tumbler",
+          "notes": null
+        }
+      ],
       "method_original": "(Use a large bar glass.) The Germans and the Swiss have the simplest way of drinking absinthe that I met with in my travels through Europe. If a person goes to a cafe, or bar room (as we call it), and asks for absinthe, the bar- tender or waiter puts a pony-glass of absinthe into a large tumbler and",
       "method_es": "(Use a large bar glass.) The Germans and the Swiss have the simplest way of drinking absinthe that I met with in my travels through Europe. If a person goes to a cafe, or bar room (as we call it), and asks for absinthe, the bar- tender or waiter puts a pony-glass of absinthe into a large tumbler and",
       "glassware": "large bar glass.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,

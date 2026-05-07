@@ -1285,13 +1285,21 @@
       "category": "cocktail",
       "name_es": "ORANGE BLOSSOM",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grenadine",
+          "item_es": "granadina",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Shake well and strain into",
       "method_es": "Shake well and strain into",
       "glassware": "Guillermina Special",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,

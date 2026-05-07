@@ -176,13 +176,21 @@
       "category": "cocktail",
       "name_es": "New-born from tread of cock and rump of hen",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "milk from gentle cow will        fill it",
+          "item_es": "milk from gentle cow will        fill it",
+          "amount": "1",
+          "unit": "quart",
+          "notes": null
+        }
+      ],
       "method_original": "Stir them with steady hand, and conscience pricking.",
       "method_es": "Stir them with steady hand, and conscience pricking.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -261,13 +269,21 @@
       "category": "cocktail",
       "name_es": "That foams and dances in his crystal bounds",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rum, and a piece of the outer rind",
+          "item_es": "rum, and a piece of the outer rind",
+          "amount": "0.5",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
