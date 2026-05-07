@@ -372,13 +372,21 @@
       "category": "cocktail",
       "name_es": "Serbet",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskyt jdl belekeverni",
+          "item_es": "whiskyt jdl belekeverni",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": "iJllatos cukorU Rdzsa v. Jdcint illattal illatositjuk) 1 hosszu poharban fdlig cukorld (illatos) 1 pohar Maraskino vagy Curacao, 1 kdveskandl cacad likdr, 1 kandl Chartreuse, 1 kanal Rozsalikdr, 1 kandl vanilialikor, 1 pobdr pezsgd, mdlndval vagy fbldi eperrel diszitjiik, 1 darab jdggel, szalmdval f",
       "method_es": "iJllatos cukorU Rdzsa v. Jdcint illattal illatositjuk) 1 hosszu poharban fdlig cukorld (illatos) 1 pohar Maraskino vagy Curacao, 1 kdveskandl cacad likdr, 1 kandl Chartreuse, 1 kanal Rozsalikdr, 1 kandl vanilialikor, 1 pobdr pezsgd, mdlndval vagy fbldi eperrel diszitjiik, 1 darab jdggel, szalmdval f",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,

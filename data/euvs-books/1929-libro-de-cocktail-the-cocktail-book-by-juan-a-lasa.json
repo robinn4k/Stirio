@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "AJENJO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +65,21 @@
       "category": "cocktail",
       "name_es": "BRIDGE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa frta",
       "method_es": "Use la copa frta",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -74,13 +90,21 @@
       "category": "cocktail",
       "name_es": "BRONX COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria Use la copa fr'ia Use cuchara de Bar (Cantina).",
       "method_es": "Use la copa fria Use la copa fr'ia Use cuchara de Bar (Cantina).",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +115,63 @@
       "category": "cocktail",
       "name_es": "CLOVER CLUB COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sirope de fresa",
+          "item_es": "sirope de fresa",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "limon",
+          "item_es": "limon",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "granadma",
+          "item_es": "granadma",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "larga de cocktail",
+          "item_es": "larga de cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "aziicar mojado en curacao",
+          "item_es": "aziicar mojado en curacao",
+          "amount": "1",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "hierbabuena",
+          "item_es": "hierbabuena",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fna Use la copa jria Use la copa jria Use la copa fna Use la copa fna Use la copa fria",
       "method_es": "Use la copa fna Use la copa jria Use la copa jria Use la copa fna Use la copa fna Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +182,28 @@
       "category": "cocktail",
       "name_es": "DUEONETT COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "con dos trozos de hielo revuelvalo",
+          "item_es": "con dos trozos de hielo revuelvalo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cock",
+          "item_es": "cock",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +214,28 @@
       "category": "cocktail",
       "name_es": "DAIQUIRI COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rasa de azucar",
+          "item_es": "rasa de azucar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fr'ia",
       "method_es": "Use la copa fr'ia",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +246,49 @@
       "category": "fizz",
       "name_es": "GREEN FIZZ COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "agua de soda una",
+          "item_es": "agua de soda una",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail",
+          "item_es": "cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "azucar disuelta en un cho",
+          "item_es": "azucar disuelta en un cho",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria Use la copa fria Use la copa fria",
       "method_es": "Use la copa fria Use la copa fria Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -176,13 +316,21 @@
       "category": "cocktail",
       "name_es": "IDEAR COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar en una tercera de",
+          "item_es": "azucar en una tercera de",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -210,13 +358,21 @@
       "category": "cocktail",
       "name_es": "JACK ROSE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +383,35 @@
       "category": "cocktail",
       "name_es": "MAHJONG COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "con dos trozos de hielo",
+          "item_es": "con dos trozos de hielo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria Use la copa fria Use la copa fria",
       "method_es": "Use la copa fria Use la copa fria Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -244,13 +422,28 @@
       "category": "cocktail",
       "name_es": "MOJO DE RON",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediano una cucharadita llena de",
+          "item_es": "mediano una cucharadita llena de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Use el Vaso fria",
       "method_es": "Use el Vaso fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -261,13 +454,42 @@
       "category": "cocktail",
       "name_es": "MOJO DE GINEBRA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo angostvrra",
+          "item_es": "amargo angostvrra",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "con dos trozos de hielo desele vuelta",
+          "item_es": "con dos trozos de hielo desele vuelta",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "con dos trozos de hielo",
+          "item_es": "con dos trozos de hielo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use el vaso frio Use el vaso frio Use la copa fria Use la copa fria Use la copa fna",
       "method_es": "Use el vaso frio Use el vaso frio Use la copa fria Use la copa fria Use la copa fna",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +500,28 @@
       "category": "cocktail",
       "name_es": "MARAGATO ESPECIAL COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar disuelta con un cho-",
+          "item_es": "azucar disuelta con un cho-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -295,13 +532,21 @@
       "category": "cocktail",
       "name_es": "NAVY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -329,13 +574,35 @@
       "category": "cocktail",
       "name_es": "PRESIDENTE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "con dos trozos de",
+          "item_es": "con dos trozos de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitter",
+          "item_es": "orange bitter",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria Use la copa fria",
       "method_es": "Use la copa fria Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -346,13 +613,21 @@
       "category": "cocktail",
       "name_es": "RAMONA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -380,13 +655,28 @@
       "category": "fizz",
       "name_es": "SILVER FIZZ COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rasa de azucar",
+          "item_es": "rasa de azucar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "agua de soda",
+          "item_es": "agua de soda",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -397,13 +687,21 @@
       "category": "fizz",
       "name_es": "SLOE GIN FIZZ COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -414,13 +712,28 @@
       "category": "cobbler",
       "name_es": "SHERRY COBBLER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediano una cucharadita de",
+          "item_es": "mediano una cucharadita de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use el vaso fr'io Use cuchara de Bar o pajitas.",
       "method_es": "Use el vaso fr'io Use cuchara de Bar o pajitas.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -431,13 +744,21 @@
       "category": "cocktail",
       "name_es": "SUAVE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa frla",
       "method_es": "Use la copa frla",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -448,13 +769,28 @@
       "category": "cocktail",
       "name_es": "YACHT CLUB COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange bitter",
+          "item_es": "orange bitter",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -465,13 +801,28 @@
       "category": "cocktail",
       "name_es": "VALENTINO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange bitter",
+          "item_es": "orange bitter",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -482,13 +833,21 @@
       "category": "cocktail",
       "name_es": "RON RICKEY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediano con dos trozos de hielo el",
+          "item_es": "mediano con dos trozos de hielo el",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use cl aso fr'io",
       "method_es": "Use cl aso fr'io",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -499,13 +858,28 @@
       "category": "cocktail",
       "name_es": "MARY PICKFORD COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -516,13 +890,21 @@
       "category": "cocktail",
       "name_es": "CHAPARRA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -550,13 +932,28 @@
       "category": "cocktail",
       "name_es": "JEREZ CON HUEVO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jerez",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fr'ia",
       "method_es": "Use la copa fr'ia",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -567,13 +964,28 @@
       "category": "cocktail",
       "name_es": "MIAMI SPECIAL COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "kummel",
+          "item_es": "kummel",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa frla",
       "method_es": "Use la copa frla",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -618,13 +1030,28 @@
       "category": "cocktail",
       "name_es": "TRUENO DE MARGATO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -635,13 +1062,28 @@
       "category": "cocktail",
       "name_es": "COCKTAIL PURITANO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "naranja amarga",
+          "item_es": "naranja amarga",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "chartreuse amarillo",
+          "item_es": "chartreuse amarillo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,
@@ -652,13 +1094,28 @@
       "category": "cocktail",
       "name_es": "VERMOUTH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "boher's o peyschaud amargo",
+          "item_es": "boher's o peyschaud amargo",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail fria",
+          "item_es": "cocktail fria",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -686,13 +1143,35 @@
       "category": "julep",
       "name_es": "MINT JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "los de vino de agua",
+          "item_es": "los de vino de agua",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "los de vino bourdon whiskey",
+          "item_es": "los de vino bourdon whiskey",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -720,13 +1199,21 @@
       "category": "cocktail",
       "name_es": "KOCKTAIL SOL DE CUBA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -737,13 +1224,21 @@
       "category": "cocktail",
       "name_es": "SICLON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo angostura",
+          "item_es": "amargo angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -754,13 +1249,56 @@
       "category": "cocktail",
       "name_es": "SPECIAL ANDRES COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azucar",
+          "item_es": "azucar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "leche",
+          "item_es": "leche",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "agua de seltz",
+          "item_es": "agua de seltz",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sirope",
+          "item_es": "sirope",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "con un pedazo de hielo hasta",
+          "item_es": "con un pedazo de hielo hasta",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria Use la copa fria",
       "method_es": "Use la copa fria Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -788,13 +1326,42 @@
       "category": "cocktail",
       "name_es": "FLAPPER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "triple sec",
+          "item_es": "triple sec",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "sirope",
+          "item_es": "sirope",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "con trozos de hielo y sirvase",
+          "item_es": "con trozos de hielo y sirvase",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Use la copa fria",
       "method_es": "Use la copa fria",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -805,13 +1372,21 @@
       "category": "cup",
       "name_es": "CUP DE CLARET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua apollinaris",
+          "item_es": "agua apollinaris",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 47,
@@ -822,13 +1397,42 @@
       "category": "cup",
       "name_es": "CUP DE CHAMPAGNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cham",
+          "item_es": "cham",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "vino",
+          "item_es": "vino",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ahucandolo por",
+          "item_es": "ahucandolo por",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "vinagre",
+          "item_es": "vinagre",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Usese una jarra de crislal",
       "method_es": "Usese una jarra de crislal",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,

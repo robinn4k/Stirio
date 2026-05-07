@@ -32,13 +32,35 @@
       "category": "cocktail",
       "name_es": "SODA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el",
+          "item_es": "las que se bebe el",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el madera",
+          "item_es": "las que se bebe el madera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal) Cinco o seis pedacitos de hielo, y añadir: Una cucharada de las de café, de azúcar en polvo, seis gotas de angostura; llenar la copa o vaso de media botella de limón soda (gaseosa de limón). Muévase bien con una cuchara, y sírvase con una rodaja de naranja jug",
       "method_es": "(prepararlo en un gran vaso de cristal) Cinco o seis pedacitos de hielo, y añadir: Una cucharada de las de café, de azúcar en polvo, seis gotas de angostura; llenar la copa o vaso de media botella de limón soda (gaseosa de limón). Muévase bien con una cuchara, y sírvase con una rodaja de naranja jug",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -49,13 +71,28 @@
       "category": "cocktail",
       "name_es": "COLO WHISKY-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en polvo dentro de medio vaso",
+          "item_es": "azúcar en polvo dentro de medio vaso",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "wljiisky y algunos pedacitos de",
+          "item_es": "wljiisky y algunos pedacitos de",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal) Meter una cucharada de azúcar en polvo dentro de medio vaso de agua. Añadir una copita de wljiisky y algunos pedacitos de hielo picado ;^remuévase y sírvase en copas medianas. CIDER-COCKTAIL (prepararlo en un gran vaso de cristal) Una parte de una pequeña copa",
       "method_es": "(prepararlo en un gran vaso de cristal) Meter una cucharada de azúcar en polvo dentro de medio vaso de agua. Añadir una copita de wljiisky y algunos pedacitos de hielo picado ;^remuévase y sírvase en copas medianas. CIDER-COCKTAIL (prepararlo en un gran vaso de cristal) Una parte de una pequeña copa",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +103,35 @@
       "category": "crusta",
       "name_es": "GIN CRUSTA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "licor",
+          "item_es": "licor",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las de café",
+          "item_es": "las de café",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal). El jugo de un lim.ón dentro de un vaso, una copita de licor gin, una copita de jarabe de goma, una docena de gotas de ciuacao, seis gotas de bitters, una cucharada de hielo picado ; remuévase bien, y se vierte dentro de copa o copas de cocktails de color rojo",
       "method_es": "(prepararlo en un gran vaso de cristal). El jugo de un lim.ón dentro de un vaso, una copita de licor gin, una copita de jarabe de goma, una docena de gotas de ciuacao, seis gotas de bitters, una cucharada de hielo picado ; remuévase bien, y se vierte dentro de copa o copas de cocktails de color rojo",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +142,70 @@
       "category": "cocktail",
       "name_es": "FIXWHISKY-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las que se toma la sopa",
+          "item_es": "las que se toma la sopa",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en pol",
+          "item_es": "azúcar en pol",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino madera de sherry",
+          "item_es": "las que se bebe el vino madera de sherry",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se toma el",
+          "item_es": "las que se toma el",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "ron santa",
+          "item_es": "ron santa",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino de",
+          "item_es": "vino de",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal) En el vaso se pone una cucharada de las que se toma la sopa, de azúcar, una copita de licor de whisky, una cucharada de hielo picado, una rodaja fina de limón ; llénese con agua filtrada ; méz clese con una cuchara; incorporar algunas fresas o frambuesas, gros",
       "method_es": "(prepararlo en un gran vaso de cristal) En el vaso se pone una cucharada de las que se toma la sopa, de azúcar, una copita de licor de whisky, una cucharada de hielo picado, una rodaja fina de limón ; llénese con agua filtrada ; méz clese con una cuchara; incorporar algunas fresas o frambuesas, gros",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -100,13 +216,49 @@
       "category": "cocktail",
       "name_es": "CAFE-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pequeñas de",
+          "item_es": "pequeñas de",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "scotch whisky",
+          "item_es": "scotch whisky",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "esencia de tamarin",
+          "item_es": "esencia de tamarin",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal) Una copa de vino Porto, de Madera, una cucharada de coñac una cucharada de azúcar en polvo, dos yemas de huevo, una cucharada de hielo picado ; hacer una mezcla moviéndola con una cuchara ; se agita, y aumentar agua Seltz. Se le da este nombre de café a este c",
       "method_es": "(prepararlo en un gran vaso de cristal) Una copa de vino Porto, de Madera, una cucharada de coñac una cucharada de azúcar en polvo, dos yemas de huevo, una cucharada de hielo picado ; hacer una mezcla moviéndola con una cuchara ; se agita, y aumentar agua Seltz. Se le da este nombre de café a este c",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -117,13 +269,28 @@
       "category": "cocktail",
       "name_es": "GRAN COCKTAIL MUNDIAL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marras",
+          "item_es": "marras",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Proporción para dos personas: En una cocktelera de cristal se echa dos cucharadas de curasao, una cucharada de marras quino, una cucharada de coñac, ocho gotas de bitter, cuatro cucharadas de hielo; se bate y se sirve en vasos pequeños de cocktail con una paja. GIOCONDA-COCKTAIL (prepararlo en un gr",
       "method_es": "Proporción para dos personas: En una cocktelera de cristal se echa dos cucharadas de curasao, una cucharada de marras quino, una cucharada de coñac, ocho gotas de bitter, cuatro cucharadas de hielo; se bate y se sirve en vasos pequeños de cocktail con una paja. GIOCONDA-COCKTAIL (prepararlo en un gr",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -134,13 +301,49 @@
       "category": "cocktail",
       "name_es": "FORNARINA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grosella roja fresca en",
+          "item_es": "grosella roja fresca en",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermouth",
+          "amount": "4",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el",
+          "item_es": "las que se bebe el",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kirsch",
+          "item_es": "kirsch",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporción para una persona : En la cocktelera se echa una cucharada de jarabe de horchata, una cucharada de kirsch, ima cucharada de curasao, una cucharada de grosella roja fresca en ^da cocktail, una cucharada de hielo raspado, cucharada y me dia de agua de Seltz; se bate un poco y se pasa a la co",
       "method_es": "Proporción para una persona : En la cocktelera se echa una cucharada de jarabe de horchata, una cucharada de kirsch, ima cucharada de curasao, una cucharada de grosella roja fresca en ^da cocktail, una cucharada de hielo raspado, cucharada y me dia de agua de Seltz; se bate un poco y se pasa a la co",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -151,13 +354,21 @@
       "category": "cocktail",
       "name_es": "BRANDY-TWIST-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las que se bebe el vino de burdeos",
+          "item_es": "las que se bebe el vino de burdeos",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Dentro de una copa de las que se bebe el vino de Burdeos: El jugo de medio limón, una cucharada de las de cafe, de jarabe de grosella; una copa de las de Jerez de coñac; una cucharada de hielo picado, una rodaja fina de limón. Remover la mezcla, y se pasa en copa o copas de cocktail. Servir con paja",
       "method_es": "Dentro de una copa de las que se bebe el vino de Burdeos: El jugo de medio limón, una cucharada de las de cafe, de jarabe de grosella; una copa de las de Jerez de coñac; una cucharada de hielo picado, una rodaja fina de limón. Remover la mezcla, y se pasa en copa o copas de cocktail. Servir con paja",
       "glassware": "prepararlo en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -168,13 +379,35 @@
       "category": "cocktail",
       "name_es": "VITEL JEREZ-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino jerez",
+          "item_es": "vino jerez",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar erl",
+          "item_es": "azúcar erl",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "montilla",
+          "item_es": "montilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para un cocktail: Media copa de vino Jerez seco; doce gotas de ginebra, media cucharada de azúcar erl polvo, una cucharada de hielo picado. Remuévase bien, y pa sarlo en una copa de cocktail. Llénese con agua de Seltz. Servir con pajitas. VITEL ERITAÑA-COCKTAIL Proporciones para una per",
       "method_es": "Proporciones para un cocktail: Media copa de vino Jerez seco; doce gotas de ginebra, media cucharada de azúcar erl polvo, una cucharada de hielo picado. Remuévase bien, y pa sarlo en una copa de cocktail. Llénese con agua de Seltz. Servir con pajitas. VITEL ERITAÑA-COCKTAIL Proporciones para una per",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -185,13 +418,28 @@
       "category": "cocktail",
       "name_es": "VITEL SEVILLANA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino de jerez",
+          "item_es": "vino de jerez",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "aperitivo",
+          "item_es": "aperitivo",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para un cocktail: Media copa de vino de Jerez, media cucharada de azúcar, el jugo de media naranja dulce, una cucharada de hielo picado. Se mueve con una cuchara y «e pasa a una copa de cocktail, llenando esta con Seltz o soda, y una paja en cada copa. BYRRH o RADIUM-COCKTAIL Proporcion",
       "method_es": "Proporciones para un cocktail: Media copa de vino de Jerez, media cucharada de azúcar, el jugo de media naranja dulce, una cucharada de hielo picado. Se mueve con una cuchara y «e pasa a una copa de cocktail, llenando esta con Seltz o soda, y una paja en cada copa. BYRRH o RADIUM-COCKTAIL Proporcion",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -219,13 +467,21 @@
       "category": "cocktail",
       "name_es": "VITEL VIZCAYA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo pi",
+          "item_es": "hielo pi",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona : Medio vaso de sidra, medio vaso de vino blanco, dos gotas de anís del Mono, media copa jje vermouth, -medio azucarillo, media cucharada de hielo pi cado. Remuévase bien y terminar de llenar la copa con aguai de Seltz (sifón).",
       "method_es": "Proporciones para una persona : Medio vaso de sidra, medio vaso de vino blanco, dos gotas de anís del Mono, media copa jje vermouth, -medio azucarillo, media cucharada de hielo pi cado. Remuévase bien y terminar de llenar la copa con aguai de Seltz (sifón).",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -236,13 +492,28 @@
       "category": "cocktail",
       "name_es": "VITEL CONDAL-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "manzanilla",
+          "item_es": "manzanilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona : Medio vaso de sidra, una copa de ron, dos gotas de anís, una cucharada de hielo picado, una gota de esencia de vainilla. Se pasa a una copa alta, aña diendo agua de Seltz (sifón). > , ■ /■ 32 El arte del cocktelero europeo VITEL MANZANILLA-COCKTAIL Proporciones para u",
       "method_es": "Proporciones para una persona : Medio vaso de sidra, una copa de ron, dos gotas de anís, una cucharada de hielo picado, una gota de esencia de vainilla. Se pasa a una copa alta, aña diendo agua de Seltz (sifón). > , ■ /■ 32 El arte del cocktelero europeo VITEL MANZANILLA-COCKTAIL Proporciones para u",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -253,13 +524,28 @@
       "category": "cocktail",
       "name_es": "VITEL CUBANO-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "manzanilla",
+          "item_es": "manzanilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona : Medio vaso de manzanilla, media copita de licor de caña blanca, diez gotas de kirsch, dos cucharadas de hielo picado, media cucharada de azúcar en polvo. Se pone pasado por colador a copa de cocktail; llénese con agua de oeltz (siron), y sírvase con pajita.",
       "method_es": "Proporciones para una persona : Medio vaso de manzanilla, media copita de licor de caña blanca, diez gotas de kirsch, dos cucharadas de hielo picado, media cucharada de azúcar en polvo. Se pone pasado por colador a copa de cocktail; llénese con agua de oeltz (siron), y sírvase con pajita.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -270,13 +556,21 @@
       "category": "cocktail",
       "name_es": "VITEL BARONESA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino de bor-",
+          "item_es": "vino de bor-",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona: Media copa de vino de Bor- gona, media copita de chartreuse, seis gotag de kummel, seis gotas de angostura, el jugo de media naranja, una cucharada de hielo picado, unas grosellas frescas en cada cocktail. Se re- mueve y se toaspasa a la copa cocktail, y añadir un poco",
       "method_es": "Proporciones para una persona: Media copa de vino de Bor- gona, media copita de chartreuse, seis gotag de kummel, seis gotas de angostura, el jugo de media naranja, una cucharada de hielo picado, unas grosellas frescas en cada cocktail. Se re- mueve y se toaspasa a la copa cocktail, y añadir un poco",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -287,13 +581,21 @@
       "category": "cocktail",
       "name_es": "VITEL DIABLON-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "montilla",
+          "item_es": "montilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona; Medio vaso de Montilla, media copita de coñac, media copita de whisky, seis gotas de angostura, cinco gotas de pipers, dos cucharadas de hielo, el jugo de media naranja, un poquito de nuez moscada. Se remueve con una cuchara, y se pasa a una copa de cocktail, con paja.",
       "method_es": "Proporciones para una persona; Medio vaso de Montilla, media copita de coñac, media copita de whisky, seis gotas de angostura, cinco gotas de pipers, dos cucharadas de hielo, el jugo de media naranja, un poquito de nuez moscada. Se remueve con una cuchara, y se pasa a una copa de cocktail, con paja.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -321,13 +623,35 @@
       "category": "cocktail",
       "name_es": "VITEL NILSON-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "codorniu",
+          "item_es": "codorniu",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo pica",
+          "item_es": "hielo pica",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vino ma",
+          "item_es": "vino ma",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona: Una copita de byrrh, una copita de absenta, cuatro gotas de ginebra, media cucharada de azúcar, medio limón exprimido. Sírvase en copa alta, añadiendo un poco de agua de Seltz (sifón). VITEL CODORNIU-COCKTAIL Proporciones para una persona: Medio vaso de Codorniu (champ",
       "method_es": "Proporciones para una persona: Una copita de byrrh, una copita de absenta, cuatro gotas de ginebra, media cucharada de azúcar, medio limón exprimido. Sírvase en copa alta, añadiendo un poco de agua de Seltz (sifón). VITEL CODORNIU-COCKTAIL Proporciones para una persona: Medio vaso de Codorniu (champ",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -338,13 +662,21 @@
       "category": "cocktail",
       "name_es": "VITEL PONTE-CANET-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino ponte",
+          "item_es": "vino ponte",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones paira una persona : Medio vaso de vino Ponte Canet, cuatro gotas de marrasquino, seis gotas de coñac, dos gotas de angostura, una cucharada de hielo picado. Se pasa a una copa alta de cristal, y añadir un poco de agua de Seltz (sifón).",
       "method_es": "Proporciones paira una persona : Medio vaso de vino Ponte Canet, cuatro gotas de marrasquino, seis gotas de coñac, dos gotas de angostura, una cucharada de hielo picado. Se pasa a una copa alta de cristal, y añadir un poco de agua de Seltz (sifón).",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -355,13 +687,63 @@
       "category": "cocktail",
       "name_es": "VITEL RISCAL-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino rioja",
+          "item_es": "vino rioja",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marras",
+          "item_es": "marras",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "algo grande se",
+          "item_es": "algo grande se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el bur",
+          "item_es": "las que se bebe el bur",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el burdeos",
+          "item_es": "las que se bebe el burdeos",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail",
+          "item_es": "cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona; Medio vaso de vino Rioja o Riscal, media cucharada de azúcar, cuatro gotas de marras quino, una cucharada de hielo, un poco de jugo de limón. Se prepara en una copa alta, y añadir agua de Seltz; servirlo con una paja. CURACAO-COCKTAIL Proporciones para una persona : En",
       "method_es": "Proporciones para una persona; Medio vaso de vino Rioja o Riscal, media cucharada de azúcar, cuatro gotas de marras quino, una cucharada de hielo, un poco de jugo de limón. Se prepara en una copa alta, y añadir agua de Seltz; servirlo con una paja. CURACAO-COCKTAIL Proporciones para una persona : En",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -372,13 +754,56 @@
       "category": "cocktail",
       "name_es": "MARRASQUINO-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "delgadísimo de corteza",
+          "item_es": "delgadísimo de corteza",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "hielo dentro",
+          "item_es": "hielo dentro",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana de",
+          "item_es": "mediana de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "pequeña de azúcar en pol-",
+          "item_es": "pequeña de azúcar en pol-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona. En un gran vaso de cristal, mezclar lo siguiente : Media copita de marrasquino de Zara, un cuarto de copa de coñac, una cucharada de hielo picado, ocho gotas de angostura biters. Se remueve bien y se pasa a una copa de cocktail. Sírvase con pajita. Ig nació Do m én ech",
       "method_es": "Proporciones para una persona. En un gran vaso de cristal, mezclar lo siguiente : Media copita de marrasquino de Zara, un cuarto de copa de coñac, una cucharada de hielo picado, ocho gotas de angostura biters. Se remueve bien y se pasa a una copa de cocktail. Sírvase con pajita. Ig nació Do m én ech",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -389,13 +814,28 @@
       "category": "cocktail",
       "name_es": "LADIES BLUSH-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cocktail se",
+          "item_es": "cocktail se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "melaza",
+          "item_es": "melaza",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona. En una copa de cocktail se pone lo simiente: Una cucharada de hielo picado, una copita de licor anisette, una copita de curasao. Llenar la copa con ab senta blanca y agua. (Hiélese fuertemente al poder ser.) GIND-AND-MOLASSES-COCKTAIL Proporciones para una persona. En",
       "method_es": "Proporciones para una persona. En una copa de cocktail se pone lo simiente: Una cucharada de hielo picado, una copita de licor anisette, una copita de curasao. Llenar la copa con ab senta blanca y agua. (Hiélese fuertemente al poder ser.) GIND-AND-MOLASSES-COCKTAIL Proporciones para una persona. En",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -406,13 +846,112 @@
       "category": "cocktail",
       "name_es": "MODERNISTA-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cocktail",
+          "item_es": "cocktail",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "pequeña de márie brizard",
+          "item_es": "pequeña de márie brizard",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail se",
+          "item_es": "cocktail se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "la corteza de limón",
+          "item_es": "la corteza de limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "alta se ponen",
+          "item_es": "alta se ponen",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ron ja",
+          "item_es": "ron ja",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "mediana se po",
+          "item_es": "mediana se po",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "scotoh-whiskey",
+          "item_es": "scotoh-whiskey",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediana alta",
+          "item_es": "mediana alta",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "de co",
+          "item_es": "de co",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "alta de cocktail",
+          "item_es": "alta de cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kummel",
+          "item_es": "kummel",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": "Proporciones para una persona. En una copita de cocktail se mezclará: Una copita de chartreuse verde, una cucharada pequeña de coñac, una cucharada pequeña de Márie Brizard (anisette), cuatro gotas de angostura bitter, una cucharada de hielo. Terminar de llenar la copa con Jerez. Servir con paja. PO",
       "method_es": "Proporciones para una persona. En una copita de cocktail se mezclará: Una copita de chartreuse verde, una cucharada pequeña de coñac, una cucharada pequeña de Márie Brizard (anisette), cuatro gotas de angostura bitter, una cucharada de hielo. Terminar de llenar la copa con Jerez. Servir con paja. PO",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -423,13 +962,21 @@
       "category": "cocktail",
       "name_es": "MANDARINA SODA SZARINITA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "algo grande de hielo",
+          "item_es": "algo grande de hielo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "En una gran copa de beber limonadas se echa : el jugo de dos inandarinas jugosas, una cucharada algo grande de hielo aspado, una cucharada de azúcar en polvo, una cucharada de na^ f^sca, una gota de esencia de vainilla, llenar la copa con agua de 5eltz o soda water, y, por último, echar media cucha",
       "method_es": "En una gran copa de beber limonadas se echa : el jugo de dos inandarinas jugosas, una cucharada algo grande de hielo aspado, una cucharada de azúcar en polvo, una cucharada de na^ f^sca, una gota de esencia de vainilla, llenar la copa con agua de 5eltz o soda water, y, por último, echar media cucha",
       "glassware": "PREPARESE EN UN GRAN VASO DE CRISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -440,13 +987,21 @@
       "category": "cocktail",
       "name_es": "LEMON-SQUASH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal) El jugo de medio limón dulce. Añadir : Media cucharada de las que se toma la sopa, de azúcar en polvo, una buena cucharada de hielo clarificado y picado, llenar el vaso con agua Seltz. Mez clarlo bien y sírvase. NARANJADA O MANDARINA SQUASH Se procede idéntica",
       "method_es": "(prepararlo en un gran vaso de cristal) El jugo de medio limón dulce. Añadir : Media cucharada de las que se toma la sopa, de azúcar en polvo, una buena cucharada de hielo clarificado y picado, llenar el vaso con agua Seltz. Mez clarlo bien y sírvase. NARANJADA O MANDARINA SQUASH Se procede idéntica",
       "glassware": "prepárese en un gran vaso de cristal",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -457,13 +1012,49 @@
       "category": "cocktail",
       "name_es": "DAMITAS ESTIVALES-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de licor      i",
+          "item_es": "las de licor      i",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de licor de crema",
+          "item_es": "las de licor de crema",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "curasao",
+          "item_es": "curasao",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "y media",
+          "item_es": "y media",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Para uno. Prepárese en cocktelera, poniendo: Unos peda- citos de hielo, unas gotas de Curasao, una copita de las de licor i de anís del Mono, dulce; media copita de las de licor de Crema Moka, dos cucharaditas de las de café de jugo de limón, una cucharada sopera de jarabe natural. Agítese bien y sí",
       "method_es": "Para uno. Prepárese en cocktelera, poniendo: Unos peda- citos de hielo, unas gotas de Curasao, una copita de las de licor i de anís del Mono, dulce; media copita de las de licor de Crema Moka, dos cucharaditas de las de café de jugo de limón, una cucharada sopera de jarabe natural. Agítese bien y sí",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 27,
@@ -474,13 +1065,49 @@
       "category": "cocktail",
       "name_es": "ALPINO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de",
+          "item_es": "las de",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo pi-",
+          "item_es": "hielo pi-",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail y",
+          "item_es": "cocktail y",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor de azucenas",
+          "item_es": "licor de azucenas",
+          "amount": "8",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "anís del mono triple-se",
+          "item_es": "anís del mono triple-se",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "(prepararlo en un gran vaso de cristal) Se mezcla los siguientes ingredientes : Una copita de las de licor de Curagao, una copita de las de licor de Cognac, una cucharada de jarabe de Frambuesa, dos cucharadas de hielo pi- cádo. Rumuévase bien y se pasa a una copa de cocktail y servir una paja de re",
       "method_es": "(prepararlo en un gran vaso de cristal) Se mezcla los siguientes ingredientes : Una copita de las de licor de Curagao, una copita de las de licor de Cognac, una cucharada de jarabe de Frambuesa, dos cucharadas de hielo pi- cádo. Rumuévase bien y se pasa a una copa de cocktail y servir una paja de re",
       "glassware": "para un refresco",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -491,13 +1118,63 @@
       "category": "fizz",
       "name_es": "WHISKY FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las que se toma",
+          "item_es": "las que se toma",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se toma la soda watter",
+          "item_es": "las que se toma la soda watter",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de café",
+          "item_es": "las de café",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se",
+          "item_es": "las que se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de licor",
+          "item_es": "las de licor",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "pequeñas de ab",
+          "item_es": "pequeñas de ab",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "y se le añade agua de vichy",
+          "item_es": "y se le añade agua de vichy",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "(prepárese en una ponchera) Media cucharada de las que se toma la sopa, de azúcar en polvo, disuélvase dentro el jugo de un limón; una cucharada de lais de café, de clara de huevo, una copa de las que se toma el Burdeos, de whisky. Llenar hasta tres partes con hielo picado; se agita fuerte mente, se",
       "method_es": "(prepárese en una ponchera) Media cucharada de las que se toma la sopa, de azúcar en polvo, disuélvase dentro el jugo de un limón; una cucharada de lais de café, de clara de huevo, una copa de las que se toma el Burdeos, de whisky. Llenar hasta tres partes con hielo picado; se agita fuerte mente, se",
       "glassware": "prepárese en una ponchera",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -508,13 +1185,105 @@
       "category": "cocktail",
       "name_es": "BISHOP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de to",
+          "item_es": "las de to",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe",
+          "item_es": "las que se bebe",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de vino ma",
+          "item_es": "las de vino ma",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de",
+          "item_es": "las de",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "pequeños de",
+          "item_es": "pequeños de",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azú",
+          "item_es": "azú",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino made",
+          "item_es": "las que se bebe el vino made",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino",
+          "item_es": "las que se bebe el vino",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "altas se pone una buena cucharada de hie",
+          "item_es": "altas se pone una buena cucharada de hie",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de licor de",
+          "item_es": "las de licor de",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino de jerez amonti-",
+          "item_es": "vino de jerez amonti-",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "curag",
+          "item_es": "curag",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "(proporciones para dos personas) En una ponchera pequeña se pone primero : una cucharada de azúcar en polvo, una cucharada de jugo de limón, cuatro cucharadas de hielo picado, un poco de agua de Seltz y do» cucharadas de las que se toma el café, de ron Saint-James, el jugo de media naranja, un cuart",
       "method_es": "(proporciones para dos personas) En una ponchera pequeña se pone primero : una cucharada de azúcar en polvo, una cucharada de jugo de limón, cuatro cucharadas de hielo picado, un poco de agua de Seltz y do» cucharadas de las que se toma el café, de ron Saint-James, el jugo de media naranja, un cuart",
       "glassware": "proporciones para una persona",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -525,13 +1294,56 @@
       "category": "punch",
       "name_es": "KIRSCHWASSER-PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de",
+          "item_es": "jugo de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe",
+          "item_es": "las que se bebe",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "las",
+          "item_es": "las",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que",
+          "item_es": "las que",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "(proporciones para una persona) Prepárese en una copa de cristal. Póngase media cucharada de azúcar en polvo. Añadir una cucharada de jugo de media copa de chartreuse amarillo; una copa de las que se bebe el vino Madera, de Kirsch. Llenar la copa con hielo picado. Mézclese bien, y adórnese con algun",
       "method_es": "(proporciones para una persona) Prepárese en una copa de cristal. Póngase media cucharada de azúcar en polvo. Añadir una cucharada de jugo de media copa de chartreuse amarillo; una copa de las que se bebe el vino Madera, de Kirsch. Llenar la copa con hielo picado. Mézclese bien, y adórnese con algun",
       "glassware": "proporciones para una persona",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 31,
@@ -542,13 +1354,63 @@
       "category": "punch",
       "name_es": "ELDORADO-PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de licor de fin cham",
+          "item_es": "las de licor de fin cham",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "las",
+          "item_es": "las",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "7",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino madera de bourbon",
+          "item_es": "las que se bebe el vino madera de bourbon",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac viejo",
+          "item_es": "coñac viejo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "(proporciones para una persona) Prepárese en una copa de cristal, una cucharada pequeña de azúcar en polvo, una copita de las de licor de fin cham pán (coñac), media copa de ron la Negrita, media copa de bourbon Whisky, una rodaja de limón, hielo picado y una bue na cucharada de salpicón de frutas d",
       "method_es": "(proporciones para una persona) Prepárese en una copa de cristal, una cucharada pequeña de azúcar en polvo, una copita de las de licor de fin cham pán (coñac), media copa de ron la Negrita, media copa de bourbon Whisky, una rodaja de limón, hielo picado y una bue na cucharada de salpicón de frutas d",
       "glassware": "proporciones para una persona",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -559,13 +1421,35 @@
       "category": "cocktail",
       "name_es": "CHOCOLATE-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hjelo pica",
+          "item_es": "hjelo pica",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vino de oporto tinto",
+          "item_es": "vino de oporto tinto",
+          "amount": "0.5",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail a pro",
+          "item_es": "cocktail a pro",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "En una cocktelera pondremos una cucharada de hjelo pica do, una copita de crema de cacao o de chocolate Amatller fun dido, una yema de huevo, medio vasito de vino de Oporto tinto. Agüítese vivamente, y se sirye en una copa de cocktail a pro pósito , rallar una mínima cantidad de nuez moscada por enc",
       "method_es": "En una cocktelera pondremos una cucharada de hjelo pica do, una copita de crema de cacao o de chocolate Amatller fun dido, una yema de huevo, medio vasito de vino de Oporto tinto. Agüítese vivamente, y se sirye en una copa de cocktail a pro pósito , rallar una mínima cantidad de nuez moscada por enc",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -576,13 +1460,35 @@
       "category": "cocktail",
       "name_es": "BALTIMORE-CAFE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo pica",
+          "item_es": "hielo pica",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sopera de azú",
+          "item_es": "sopera de azú",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "los que se emplean para beber vino de",
+          "item_es": "los que se emplean para beber vino de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "En una cocktelera pondremos una cucharada de hielo pica do, una copita de Marrasquino, una cucharada sopera de azú car en polvo, un vaso de los que se emplean para beber vino de Jerez de cafe frío, igual cantidad de leche. Agítese vivamente y se vierte en una copa alta de cocktail. Servir pajas de r",
       "method_es": "En una cocktelera pondremos una cucharada de hielo pica do, una copita de Marrasquino, una cucharada sopera de azú car en polvo, un vaso de los que se emplean para beber vino de Jerez de cafe frío, igual cantidad de leche. Agítese vivamente y se vierte en una copa alta de cocktail. Servir pajas de r",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

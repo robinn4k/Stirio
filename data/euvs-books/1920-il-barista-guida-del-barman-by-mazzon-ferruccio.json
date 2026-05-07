@@ -233,13 +233,56 @@
       "category": "punch",
       "name_es": "Identico come il Cosmopolitan Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "succo di limone e ser-",
+          "item_es": "succo di limone e ser-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero",
+          "item_es": "zucchero",
+          "amount": "4",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "tokay",
+          "item_es": "tokay",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "rhum ed",
+          "item_es": "rhum ed",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champagne",
+          "amount": "10",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "3",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -250,13 +293,56 @@
       "category": "punch",
       "name_es": "Hot Punch Rhum",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "infusione di thè bollente",
+          "item_es": "infusione di thè bollente",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "birra inglese",
+          "item_es": "birra inglese",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "infusione di thè bollente in un",
+          "item_es": "infusione di thè bollente in un",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "vino bianco",
+          "item_es": "vino bianco",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "vino di porto",
+          "item_es": "vino di porto",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero vanigliato e",
+          "item_es": "zucchero vanigliato e",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Altra rr aniera",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -267,13 +353,21 @@
       "category": "punch",
       "name_es": "Punch al vino bianco",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino bianco",
+          "item_es": "vino bianco",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -284,13 +378,42 @@
       "category": "cocktail",
       "name_es": "Grog Washington",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucchero in un po' di",
+          "item_es": "zucchero in un po' di",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero in polvere",
+          "item_es": "zucchero in polvere",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero in polvere ed",
+          "item_es": "zucchero in polvere ed",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "canella",
+          "item_es": "canella",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -301,13 +424,21 @@
       "category": "cup",
       "name_es": "Soave Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "soave",
+          "item_es": "soave",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -318,13 +449,49 @@
       "category": "cup",
       "name_es": "Bombay Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "soda o seltz e lasciate in",
+          "item_es": "soda o seltz e lasciate in",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champagne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "curacao",
+          "item_es": "curacao",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "sciroppo d'ananas",
+          "item_es": "sciroppo d'ananas",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "per 100 persone",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -369,13 +536,35 @@
       "category": "cocktail",
       "name_es": "Mettete in una casseruola una bottiglia",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cham-",
+          "item_es": "cham-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champagne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero",
+          "item_es": "zucchero",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -386,13 +575,21 @@
       "category": "cup",
       "name_es": "May Cup o Bowt",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bianco fino",
+          "item_es": "bianco fino",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -403,13 +600,28 @@
       "category": "cocktail",
       "name_es": "Bowl di Fragole",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucchero in polvere",
+          "item_es": "zucchero in polvere",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champagne",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -420,13 +632,56 @@
       "category": "cocktail",
       "name_es": "Balaklava Nectar",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucchero in polvere",
+          "item_es": "zucchero in polvere",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "champagne",
+          "item_es": "champagne",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "soda o seltz",
+          "item_es": "soda o seltz",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "vino del reno",
+          "item_es": "vino del reno",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero in polvere",
+          "item_es": "zucchero in polvere",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "crema di latte e di una",
+          "item_es": "crema di latte e di una",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -437,13 +692,35 @@
       "category": "fizz",
       "name_es": "Oolden Fizz",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucchero in polvere",
+          "item_es": "zucchero in polvere",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero",
+          "item_es": "zucchero",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "crema di cioccolato",
+          "item_es": "crema di cioccolato",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "serve con del buon vino rosso invece di",
       "method_es": "serve con del buon vino rosso invece di",
       "glassware": "liquore",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -454,13 +731,21 @@
       "category": "cup",
       "name_es": "Night-Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucchero e frol-",
+          "item_es": "zucchero e frol-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -536,13 +821,42 @@
       "category": "cocktail",
       "name_es": "Mamie Taylor",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "r ye w hysky",
+          "item_es": "r ye w hysky",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "crema",
+          "item_es": "crema",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "zucchero con felte di ba-",
+          "item_es": "zucchero con felte di ba-",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "ghiaccio",
+          "item_es": "ghiaccio",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "serve con paglie.",
       "method_es": "serve con paglie.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

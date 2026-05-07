@@ -168,13 +168,21 @@
       "category": "cocktail",
       "name_es": "OSSOBUCCO AL TRIPLE SEC",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "colmada",
+          "item_es": "colmada",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Ossobucco tierno, 11/z Kg. - Sal y pimienta, a gusto - Laurel, 1 hoja - Or6- gano, 1 ramita - Aceite y manteca, para freír - Cebolla picada, 1 - Conserva de tomate, 1 cucharada - TRIPLE SEC BOLS, 1 copita - Perejil y ajo picados muy fino, 1 cucharada colmada. Cortar el ossoburco en rodnjas chicas y",
       "method_es": "Ossobucco tierno, 11/z Kg. - Sal y pimienta, a gusto - Laurel, 1 hoja - Or6- gano, 1 ramita - Aceite y manteca, para freír - Cebolla picada, 1 - Conserva de tomate, 1 cucharada - TRIPLE SEC BOLS, 1 copita - Perejil y ajo picados muy fino, 1 cucharada colmada. Cortar el ossoburco en rodnjas chicas y",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -406,13 +414,21 @@
       "category": "cocktail",
       "name_es": "POSTRE HELADO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "bizcochuelo",
+          "item_es": "bizcochuelo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "CHERRY BOLS o CREMA DE CACAO BOLS, 1 copita - Frutas confitadas, en trocitos, 1 taza - Ricota, 1¡2 Kg. - .Azúcar impalpable, 5 cucharadas - Crema de leche batida, 150 g. - Bizcochos o t rozos de bizcochuelo. D11rnntc uu par de hora.:; remojar los trocitos de fruta en el Chcrry Bols o Crema de Cartt0",
       "method_es": "CHERRY BOLS o CREMA DE CACAO BOLS, 1 copita - Frutas confitadas, en trocitos, 1 taza - Ricota, 1¡2 Kg. - .Azúcar impalpable, 5 cucharadas - Crema de leche batida, 150 g. - Bizcochos o t rozos de bizcochuelo. D11rnntc uu par de hora.:; remojar los trocitos de fruta en el Chcrry Bols o Crema de Cartt0",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -440,13 +456,21 @@
       "category": "cocktail",
       "name_es": "FLAN DE ADVOKAAT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "por porción",
+          "item_es": "por porción",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": "Clara de huevo, 1 por cada porción - Lim6n, a gusto - Azúcar, a gusto - Meren- gue - ADVOKAAT BOLS, 1 copita por porción. P oner en un bol 1 clara por porción y batir a punto de nieve bien espeso. Agregar l copita de Advokaat Bols por cada clara. D arle gusto con algunas gotas de limón y azúcar. Ser",
       "method_es": "Clara de huevo, 1 por cada porción - Lim6n, a gusto - Azúcar, a gusto - Meren- gue - ADVOKAAT BOLS, 1 copita por porción. P oner en un bol 1 clara por porción y batir a punto de nieve bien espeso. Agregar l copita de Advokaat Bols por cada clara. D arle gusto con algunas gotas de limón y azúcar. Ser",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -559,13 +583,21 @@
       "category": "cocktail",
       "name_es": "BOCADITOS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "papel metálico de alu-",
+          "item_es": "papel metálico de alu-",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "\"BOCADITOS DE AVENA\" Manteca derretida, 100 g. - Azúcar impalpable, 112 taza - Cacao amargo, 3 cucharadas - ADVOKAAT BOLS o CH ERRY BOLS, •¡2 copita - Avena arrollada - Pirotines de papel. MPi<·lar la mantec·a eon el azúc·ar, el cacao, el Advokaat Bols o Cheny Bols y a.vena arrollada de rocimiento r",
       "method_es": "\"BOCADITOS DE AVENA\" Manteca derretida, 100 g. - Azúcar impalpable, 112 taza - Cacao amargo, 3 cucharadas - ADVOKAAT BOLS o CH ERRY BOLS, •¡2 copita - Avena arrollada - Pirotines de papel. MPi<·lar la mantec·a eon el azúc·ar, el cacao, el Advokaat Bols o Cheny Bols y a.vena arrollada de rocimiento r",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -593,13 +625,168 @@
       "category": "cocktail",
       "name_es": "COCKTAIL BATIDO AL BOLS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "do leche - 1 cucharada",
+          "item_es": "do leche - 1 cucharada",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar -",
+          "item_es": "azúcar -",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "crema de vainilla bols",
+          "item_es": "crema de vainilla bols",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "kümmel bols -",
+          "item_es": "kümmel bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "silver top dry gin bols",
+          "item_es": "silver top dry gin bols",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de duraznos -",
+          "item_es": "jugo de duraznos -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "prunelle bols -",
+          "item_es": "prunelle bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "silver top dry gin bols",
+          "item_es": "silver top dry gin bols",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de menta verde bols",
+          "item_es": "crema de menta verde bols",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cacao blanco bols -",
+          "item_es": "cacao blanco bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de leche",
+          "item_es": "crema de leche",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "silver top dry gin bols -",
+          "item_es": "silver top dry gin bols -",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "jugo do limón -",
+          "item_es": "jugo do limón -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar impalpable",
+          "item_es": "azúcar impalpable",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "j ugo de limón",
+          "item_es": "j ugo de limón",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "vodka bols -",
+          "item_es": "vodka bols -",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "hielo - ginger ale o gingor beer",
+          "item_es": "hielo - ginger ale o gingor beer",
+          "amount": "2",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "crema dl pfpi r as ijoi h",
+          "item_es": "crema dl pfpi r as ijoi h",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cacao blanco uoi h",
+          "item_es": "cacao blanco uoi h",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de banana bols -",
+          "item_es": "crema de banana bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de cacao blanco bols -",
+          "item_es": "crema de cacao blanco bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema batida con caf6",
+          "item_es": "crema batida con caf6",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "1 vaso do leche - 1 cucharada de hielo granizado - 1 cucharada de azúcar - 1 copita de CREMA DE VAINILLA BOLS Poner E>ll la licuadora la leche, el hielo y el azí1rar. Agregar la Crema de Vaini lla Rols y batir 2 minutos. RAYO DE PLATA 1 parte de KÜMMEL BOLS - 1 parte de SILVER TOP DRY GIN BOLS Mezcl",
       "method_es": "1 vaso do leche - 1 cucharada de hielo granizado - 1 cucharada de azúcar - 1 copita de CREMA DE VAINILLA BOLS Poner E>ll la licuadora la leche, el hielo y el azí1rar. Agregar la Crema de Vaini lla Rols y batir 2 minutos. RAYO DE PLATA 1 parte de KÜMMEL BOLS - 1 parte de SILVER TOP DRY GIN BOLS Mezcl",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -610,13 +797,35 @@
       "category": "cocktail",
       "name_es": "GRASSHOPPER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema de menta verde bols -",
+          "item_es": "crema de menta verde bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema de cacao blanco bols -",
+          "item_es": "crema de cacao blanco bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "crema batida con café",
+          "item_es": "crema batida con café",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": "1 parte de CREMA DE MENTA VERDE BOLS - 1 parte de CREMA DE CACAO BLANCO BOLS - 1 parte de crema batida con café. - Batir con hielo, colar y servir en copa oara cocktail previamente enfriada. - ......",
       "method_es": "1 parte de CREMA DE MENTA VERDE BOLS - 1 parte de CREMA DE CACAO BLANCO BOLS - 1 parte de crema batida con café. - Batir con hielo, colar y servir en copa oara cocktail previamente enfriada. - ......",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -627,13 +836,77 @@
       "category": "flip",
       "name_es": "BOLS NOGGIN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "advokaat bols -",
+          "item_es": "advokaat bols -",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo - ginger ale o leche",
+          "item_es": "hielo - ginger ale o leche",
+          "amount": "2",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "hielo y llenar",
+          "item_es": "hielo y llenar",
+          "amount": "2",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "bolsberry -",
+          "item_es": "bolsberry -",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gold top whisky bols -",
+          "item_es": "gold top whisky bols -",
+          "amount": "2",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cherry bols -",
+          "item_es": "cherry bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "granadina - 1 parte de juoo de lima",
+          "item_es": "granadina - 1 parte de juoo de lima",
+          "amount": "0.5",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "gold top whisky bols -",
+          "item_es": "gold top whisky bols -",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "cacao",
+          "item_es": "cacao",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "1 copita de ADVOKAAT BOLS - 2 cubitos de hielo - Ginger Ale o leche. Utilizar un vaso grande (trago largo). Echar 1 copita de Advokaat Ilols, 2 cubitos de hielo y llenar con Ginger Ale o leche. BOLSBERRY 3 partes de BOLSBERRY - parte de SILVER TOP DRY GIN BOLS - o VODKA BOLS. Batir, colar y ser vir.",
       "method_es": "1 copita de ADVOKAAT BOLS - 2 cubitos de hielo - Ginger Ale o leche. Utilizar un vaso grande (trago largo). Echar 1 copita de Advokaat Ilols, 2 cubitos de hielo y llenar con Ginger Ale o leche. BOLSBERRY 3 partes de BOLSBERRY - parte de SILVER TOP DRY GIN BOLS - o VODKA BOLS. Batir, colar y ser vir.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 37,
@@ -661,13 +934,21 @@
       "category": "cocktail",
       "name_es": "EQUIVALENCIA DE MEDIDAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "equivale a    60 gotas o 5 ce",
+          "item_es": "equivale a    60 gotas o 5 ce",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "1 cucharadita equivale a 60 gotas o 5 ce. 3 cucharaditas equivalen • 1 cucharada. 16 cucharadas • 1 taza. 1 taza U litro. 1 copa (de las de vino) equivale a 4 cucharadas. 1¡2 kilo de harina equivale a 31¡ 2 tazas. 1/z • • azúcar molida 2 1/2 • impalpable 2'/z 1/z • morena • > 2~ > 1/z • • arroz 2 •",
       "method_es": "1 cucharadita equivale a 60 gotas o 5 ce. 3 cucharaditas equivalen • 1 cucharada. 16 cucharadas • 1 taza. 1 taza U litro. 1 copa (de las de vino) equivale a 4 cucharadas. 1¡2 kilo de harina equivale a 31¡ 2 tazas. 1/z • • azúcar molida 2 1/2 • impalpable 2'/z 1/z • morena • > 2~ > 1/z • • arroz 2 •",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

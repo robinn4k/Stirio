@@ -32,13 +32,77 @@
       "category": "cocktail",
       "name_es": "COCKTAILS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "gin gordon",
+          "item_es": "gin gordon",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de naranja",
+          "item_es": "jugo de naranja",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "0.333",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "graneidina",
+          "item_es": "graneidina",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": "Alfonso XIII Cocktail En una cocktelera, con hielo picado : Unas gotas de curazao » de Angostura 1/2 copa de ginebra 1/2 » de Birrh. Agítesebien y sírvase. Aliados Cocktail En una cocktelera, con hielo picado : 1/4 parte de Gin Gordon 1/4 » de vermouth francés 1/4 » » italiano 1/4 » de oporto.' Agít",
       "method_es": "Alfonso XIII Cocktail En una cocktelera, con hielo picado : Unas gotas de curazao » de Angostura 1/2 copa de ginebra 1/2 » de Birrh. Agítesebien y sírvase. Aliados Cocktail En una cocktelera, con hielo picado : 1/4 parte de Gin Gordon 1/4 » de vermouth francés 1/4 » » italiano 1/4 » de oporto.' Agít",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -49,13 +113,98 @@
       "category": "cocktail",
       "name_es": "COCKTAIUS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "brandy",
+          "item_es": "brandy",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth francés",
+          "item_es": "vermouth francés",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitter de ajenjo",
+          "item_es": "bitter de ajenjo",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ajenjo",
+          "item_es": "ajenjo",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "gin gordon",
+          "item_es": "gin gordon",
+          "amount": "0.25",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ajenjo",
+          "item_es": "ajenjo",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "Cocktail de Vermouth En una cocktelera, con hielo machacado Unas gotas de curazao » de Angostura. El resto de vermouth Torino Agítese y sírvase con corteza de limón. Cocktail de Vino En una cocktelera, con hielo machacado • • ''j \"i- 1/4 parte de Angostura 1/4 » de curazao 1/2 » de vino de Madera. A",
       "method_es": "Cocktail de Vermouth En una cocktelera, con hielo machacado Unas gotas de curazao » de Angostura. El resto de vermouth Torino Agítese y sírvase con corteza de limón. Cocktail de Vino En una cocktelera, con hielo machacado • • ''j \"i- 1/4 parte de Angostura 1/4 » de curazao 1/2 » de vino de Madera. A",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -66,13 +215,21 @@
       "category": "cobbler",
       "name_es": "COBBLERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "Sherry Cobbler En un vaso grande, lleno hasta la mitad de hielo picado : Una cucharada de azúcar Una rodaja de limón i. Otra de naranja >.-»• f j Una copa de Jerez ;i>- ' Unas gotas de curazao ^ » de granadina. Agítese con una cucharilla y añádase algunos trozos de frutas del tiempo. ' >••• • 'h i '",
       "method_es": "Sherry Cobbler En un vaso grande, lleno hasta la mitad de hielo picado : Una cucharada de azúcar Una rodaja de limón i. Otra de naranja >.-»• f j Una copa de Jerez ;i>- ' Unas gotas de curazao ^ » de granadina. Agítese con una cucharilla y añádase algunos trozos de frutas del tiempo. ' >••• • 'h i '",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -83,13 +240,56 @@
       "category": "fizz",
       "name_es": "FIZZES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "granadina",
+          "item_es": "granadina",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "¿íí^'.'•!•;•>:•••''I-'/ Coñac Fizz m ••. En una cocktelera, con hielo picado : teí:; íjU .!'• ' ¡I Una cucharada de granadina pVj,.';.' . '•'.'ij » de azúcar en polvo El jugo de medio limón Wfcí:' Un poco de clara de huevo Una copa de coñac. W-V-' Se agita y al servir se completa con agua de Seitz.",
       "method_es": "¿íí^'.'•!•;•>:•••''I-'/ Coñac Fizz m ••. En una cocktelera, con hielo picado : teí:; íjU .!'• ' ¡I Una cucharada de granadina pVj,.';.' . '•'.'ij » de azúcar en polvo El jugo de medio limón Wfcí:' Un poco de clara de huevo Una copa de coñac. W-V-' Se agita y al servir se completa con agua de Seitz.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -100,13 +300,77 @@
       "category": "flip",
       "name_es": "FLIPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "oporto rojo",
+          "item_es": "oporto rojo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "anisete",
+          "item_es": "anisete",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jerez",
+          "item_es": "jerez",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "f:. íí,-: • L-'.V- ••, Lemon Flip É . •: fe En una cocktelera, con hielo picado : Una cucharada de azúcar ,,?ü'i'\"^'ilH'| ¿; %'t-v- ' Una yema de huevo Unas gotas de coñac El jugo de un limón. Agítese y espolvoréese al servirlo con nuez moscada. ''•Cr I/Jí' ' •• Oporto Flip En una cocktelera, con hi",
       "method_es": "f:. íí,-: • L-'.V- ••, Lemon Flip É . •: fe En una cocktelera, con hielo picado : Una cucharada de azúcar ,,?ü'i'\"^'ilH'| ¿; %'t-v- ' Una yema de huevo Unas gotas de coñac El jugo de un limón. Agítese y espolvoréese al servirlo con nuez moscada. ''•Cr I/Jí' ' •• Oporto Flip En una cocktelera, con hi",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -117,13 +381,49 @@
       "category": "sour",
       "name_es": "SOURS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": "iV'\"' • Coñac Sours m-y -. : En un vaso : Varios trocitos de hielo El jugo de medio limón íí'v7>^'' Una cucharada de azúcar Una copita de coñac |??:7 •': El resto de agua natural. Mézclese y sírvase con una rodaja de limón. •<3-'' • . ir!'\"'*'- •\" . • v'- •V • .' • ' '' '• • .'4 '- Gin Sours ' V . P",
       "method_es": "iV'\"' • Coñac Sours m-y -. : En un vaso : Varios trocitos de hielo El jugo de medio limón íí'v7>^'' Una cucharada de azúcar Una copita de coñac |??:7 •': El resto de agua natural. Mézclese y sírvase con una rodaja de limón. •<3-'' • . ir!'\"'*'- •\" . • v'- •V • .' • ' '' '• • .'4 '- Gin Sours ' V . P",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -134,13 +434,35 @@
       "category": "cocktail",
       "name_es": "PONCHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ron                    i   411",
+          "item_es": "ron                    i   411",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "Ponche de sidra En u n vaso : Unos trocitos de hielo Una cucharada de azúcar Unas gotas de curazao El resto de sidra achampanada. Mézclese y agregúese fruta picada. Rum Punch En un vaso : Una cucharada de azúcar » de jugo de limón Una copa de ron I 411 Una corteza de limón",
       "method_es": "Ponche de sidra En u n vaso : Unos trocitos de hielo Una cucharada de azúcar Unas gotas de curazao El resto de sidra achampanada. Mézclese y agregúese fruta picada. Rum Punch En un vaso : Una cucharada de azúcar » de jugo de limón Una copa de ron I 411 Una corteza de limón",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

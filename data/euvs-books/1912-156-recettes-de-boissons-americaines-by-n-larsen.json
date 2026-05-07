@@ -40,13 +40,21 @@
       "category": "cocktail",
       "name_es": "RER A CRE ET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "4",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec de grands pailles,",
       "method_es": "Servez avec de grands pailles,",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +65,42 @@
       "category": "cocktail",
       "name_es": "COOLERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginger ale frappée",
+          "item_es": "ginger ale frappée",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "6",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "marasquin",
+          "item_es": "marasquin",
+          "amount": "4",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "4",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "servez.",
       "method_es": "servez.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -74,13 +111,28 @@
       "category": "punch",
       "name_es": "CE PUNCHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "cit",
+          "item_es": "cit",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec de grandes pailles. Servez avec de grandes pailles.",
       "method_es": "Servez avec de grandes pailles. Servez avec de grandes pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -91,13 +143,35 @@
       "category": "cocktail",
       "name_es": "GROGS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sucre bien dissous dans de",
+          "item_es": "sucre bien dissous dans de",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "citron",
+          "item_es": "citron",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "citron el une cuiller à café",
+          "item_es": "citron el une cuiller à café",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec une cuiller à caté. Servez avec une cuiller calé.",
       "method_es": "Servez avec une cuiller à caté. Servez avec une cuiller calé.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +182,42 @@
       "category": "cocktail",
       "name_es": "DIVERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "glace",
+          "item_es": "glace",
+          "amount": "6",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "curaçao rouge",
+          "item_es": "curaçao rouge",
+          "amount": "4",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "citron piquée de",
+          "item_es": "citron piquée de",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "citron et d'une tranche",
+          "item_es": "citron et d'une tranche",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "Servez avec une tranche de citron piquée de Servez avec de grandes pailles.",
       "method_es": "Servez avec une tranche de citron piquée de Servez avec de grandes pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

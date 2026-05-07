@@ -83,13 +83,28 @@
       "category": "cocktail",
       "name_es": "Hager",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "alcool et 30 à 40 gouttes",
+          "item_es": "alcool et 30 à 40 gouttes",
+          "amount": "90",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "eau",
+          "item_es": "eau",
+          "amount": "25",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": "On verse dans un verre à expérience 15 gouttes de l'essence qu'on veut essayer, et suivant son degré de solubilité, 45 à 90 gouttes d'alcool et 30 à 40 gouttes d'acide sulfurique étendu, on agite et on ajoute quel- ques rognures de feuilles de zinc (20 à 30 grammes). On chauffe alors jusqu'à ce qu'i",
       "method_es": "On verse dans un verre à expérience 15 gouttes de l'essence qu'on veut essayer, et suivant son degré de solubilité, 45 à 90 gouttes d'alcool et 30 à 40 gouttes d'acide sulfurique étendu, on agite et on ajoute quel- ques rognures de feuilles de zinc (20 à 30 grammes). On chauffe alors jusqu'à ce qu'i",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,

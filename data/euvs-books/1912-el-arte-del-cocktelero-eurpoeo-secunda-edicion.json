@@ -193,13 +193,21 @@
       "category": "cocktail",
       "name_es": "Seis gotas de ang ostura",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "limón exprimido",
+          "item_es": "limón exprimido",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +218,42 @@
       "category": "cocktail",
       "name_es": "Sírvase con pequeflas paj l S",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino de madera",
+          "item_es": "las que se bebe el vino de madera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "de-",
+          "item_es": "de-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "de-",
+          "item_es": "de-",
+          "amount": "5",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPARARLO EJll UN O RAN VASO Dli: CRISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +264,21 @@
       "category": "cocktail",
       "name_es": "Dos cucharadas de las de café, de jarabe de",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -295,13 +340,21 @@
       "category": "cocktail",
       "name_es": "Sírvase con pequefias pajas",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPARARLO EN UN GRAN VASO DE CRISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -312,13 +365,21 @@
       "category": "cocktail",
       "name_es": "Tres cucharadas de las de café, de jarabe de",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -346,13 +407,21 @@
       "category": "cocktail",
       "name_es": "Mézclese bien todo, y se pasa á una copa de",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPARARLO EN UN G~AN v~so DE CRISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -363,13 +432,21 @@
       "category": "cocktail",
       "name_es": "Una copa de las de beber vino Madera, de fin",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ó vaso",
+          "item_es": "ó vaso",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -380,13 +457,63 @@
       "category": "cocktail",
       "name_es": "Sírvase con pajas pequefias",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "limón exprimido",
+          "item_es": "limón exprimido",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo dentro",
+          "item_es": "azúcar en polvo dentro",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "licor gin",
+          "item_es": "licor gin",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de goma",
+          "item_es": "jarabe de goma",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "bitters",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPARARLO EN lJN ORAN VASO DE CRiSTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -431,13 +558,28 @@
       "category": "cocktail",
       "name_es": "Dos copitas de ron Santa C ruz, de la Negrita",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pifia de américa",
+          "item_es": "pifia de américa",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "licor de coflac",
+          "item_es": "licor de coflac",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPARARLO EN U N O RAN VASO DE C RISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -448,13 +590,70 @@
       "category": "cocktail",
       "name_es": "Mu évase b ien y déjese uno ó d os m inutos en tre",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "de2hie lo picado",
+          "item_es": "de2hie lo picado",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "d e azúcar en",
+          "item_es": "d e azúcar en",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cura9ao tinto",
+          "item_es": "cura9ao tinto",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac viejo",
+          "item_es": "coñac viejo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino",
+          "item_es": "vino",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coflac",
+          "item_es": "coflac",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREI'ARARLO EN UN ORAN VASO DE CRISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -703,13 +902,28 @@
       "category": "cocktail",
       "name_es": "Media copa de Mo ntilla",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cura9ao",
+          "item_es": "cura9ao",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 41,
@@ -737,13 +951,21 @@
       "category": "cocktail",
       "name_es": "Seis gotas de vermut Torino",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -822,13 +1044,21 @@
       "category": "cocktail",
       "name_es": "Medio vaso de a peritivo byrrh",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -856,13 +1086,154 @@
       "category": "cocktail",
       "name_es": "Una cucharada de ja rabe de h orchata",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino blanco",
+          "item_es": "vino blanco",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cock-",
+          "item_es": "cock-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cidra",
+          "item_es": "cidra",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino blanco",
+          "item_es": "vino blanco",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "a nís",
+          "item_es": "a nís",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vermut",
+          "item_es": "vermut",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "anís",
+          "item_es": "anís",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "manzanilla",
+          "item_es": "manzanilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "rnanzaoilla",
+          "item_es": "rnanzaoilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor de caña blanca",
+          "item_es": "licor de caña blanca",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "k irsch",
+          "item_es": "k irsch",
+          "amount": "10",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "montilla",
+          "item_es": "montilla",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cof'íac",
+          "item_es": "cof'íac",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "pipers",
+          "item_es": "pipers",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -873,13 +1244,140 @@
       "category": "cocktail",
       "name_es": "Media copa de vino Borgof'ía",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "chartreusse",
+          "item_es": "chartreusse",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "byrrh",
+          "item_es": "byrrh",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "chartreusse",
+          "item_es": "chartreusse",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "byrrh",
+          "item_es": "byrrh",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "absenta",
+          "item_es": "absenta",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pipermint",
+          "item_es": "pipermint",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "vino madera",
+          "item_es": "vino madera",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasquino",
+          "item_es": "marrasquino",
+          "amount": "4",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "hielo pica do",
+          "item_es": "hielo pica do",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vino riscal",
+          "item_es": "vino riscal",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "algo grande se pondrá lo siguiente",
+          "item_es": "algo grande se pondrá lo siguiente",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coi'iac",
+          "item_es": "coi'iac",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cock-",
+          "item_es": "cock-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "algo g ra nde se pondrá lo siguient e",
+          "item_es": "algo g ra nde se pondrá lo siguient e",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "a ngostura",
+          "item_es": "a ngostura",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -890,13 +1388,112 @@
       "category": "cocktail",
       "name_es": "Una cucharada de azúcar en polvo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana se ponen",
+          "item_es": "mediana se ponen",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de pilla de américa",
+          "item_es": "jarabe de pilla de américa",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediana a lta se ponen los si-",
+          "item_es": "mediana a lta se ponen los si-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pequeña de jarabe",
+          "item_es": "pequeña de jarabe",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "coilac",
+          "item_es": "coilac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "alta de cocktail se ponen los si-",
+          "item_es": "alta de cocktail se ponen los si-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kummel",
+          "item_es": "kummel",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "bitter",
+          "item_es": "bitter",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "bitters",
+          "item_es": "bitters",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "cr ema de menta",
+          "item_es": "cr ema de menta",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "ag ua en una vasija que",
+          "item_es": "ag ua en una vasija que",
+          "amount": "100",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 52,
@@ -924,13 +1521,49 @@
       "category": "cocktail",
       "name_es": "Para servirse se reparten cantidades razonables",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "na ta fresca",
+          "item_es": "na ta fresca",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "esencia de vainill a",
+          "item_es": "esencia de vainill a",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "con una botella de soda",
+          "item_es": "con una botella de soda",
+          "amount": "6",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "y media de las que se bebe el ma dera",
+          "item_es": "y media de las que se bebe el ma dera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PR.EPÁRASE EN UN ORAN VASO D E C RISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -958,13 +1591,21 @@
       "category": "cocktail",
       "name_es": "Una buena parte de hielo picado",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPÁRASE EN UN Ol{AN VASO DE CRISTAL",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 56,
@@ -992,13 +1633,28 @@
       "category": "cocktail",
       "name_es": "Una copa de las de licor, de jugo de limón",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "y media de las que se bebe el vino",
+          "item_es": "y media de las que se bebe el vino",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPÁRASE EN UNA ORAN COPA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 58,
@@ -1196,13 +1852,119 @@
       "category": "cocktail",
       "name_es": "Se mueve bien con una cuchara, y sírvase",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cristal",
+          "item_es": "cristal",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "cube",
+          "notes": null
+        },
+        {
+          "item_original": "grande de cristal",
+          "item_es": "grande de cristal",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de madera de gin old tom",
+          "item_es": "las de madera de gin old tom",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande se pone lo siguiente",
+          "item_es": "grande se pone lo siguiente",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "whisky",
+          "item_es": "whisky",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "fría de flips",
+          "item_es": "fría de flips",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPARARLO EN UNA ORAN COPA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 70,
@@ -1213,13 +1975,21 @@
       "category": "cocktail",
       "name_es": "Una cucharada de las de café, de azúcar en",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 71,
@@ -1230,13 +2000,21 @@
       "category": "cocktail",
       "name_es": "Mézclese bien y complétese con un poco de nuez",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo y llénese de buen",
+          "item_es": "hielo y llénese de buen",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPÁRESE EN U NA PEQUEÑA CO PA DE BU RD EOS",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 72,
@@ -1264,13 +2042,63 @@
       "category": "cocktail",
       "name_es": "Mézclese bien y añadir, por último, un poco de",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "h ielo y media botella de stout",
+          "item_es": "h ielo y media botella de stout",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "hielo y una copa de las que se",
+          "item_es": "hielo y una copa de las que se",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "licor bénédictine",
+          "item_es": "licor bénédictine",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "la medida de una copa de vino",
+          "item_es": "la medida de una copa de vino",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "angostura",
+          "item_es": "angostura",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "las que se sirve el vino madera",
+          "item_es": "las que se sirve el vino madera",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "que se sirve el",
+          "item_es": "que se sirve el",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPÁRES E EN UNA COPA FINA DE SERVIR EL BURDEOS",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 74,
@@ -1366,13 +2194,49 @@
       "category": "cocktail",
       "name_es": "Sírvase sin mezclar nada, teniendo muchísimo",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "d e las que se bebe",
+          "item_es": "d e las que se bebe",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "d e las en que se toma",
+          "item_es": "d e las en que se toma",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "se echan cinco partes",
+          "item_es": "se echan cinco partes",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "las en que se bebe el vino madera",
+          "item_es": "las en que se bebe el vino madera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PREPÁRESE EN UN VASO DE SERVIR LOS GROGS",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 80,
@@ -1400,13 +2264,63 @@
       "category": "cocktail",
       "name_es": "En una ponchera se ponen tres cucharadas de",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino",
+          "item_es": "vino",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "leche fres-",
+          "item_es": "leche fres-",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "azú-",
+          "item_es": "azú-",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "hielo pica-",
+          "item_es": "hielo pica-",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "licor",
+          "item_es": "licor",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "licor de ron la negrita",
+          "item_es": "licor de ron la negrita",
+          "amount": "2",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PROPORCI ONES PARA CUATRO PERSONAS",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1417,13 +2331,35 @@
       "category": "cocktail",
       "name_es": "Procurarse, por cada copa, un limón pequei'io",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "preparada de igual modo",
+          "item_es": "preparada de igual modo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino",
+          "item_es": "las que se bebe el vino",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PROPORCIONES PARA UNA P ERSONA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -1451,13 +2387,28 @@
       "category": "cocktail",
       "name_es": "Sírvase con pajas",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "licor",
+          "item_es": "licor",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de",
+          "item_es": "jugo de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PROPORCIONES PARA UNA PERSONA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1468,13 +2419,84 @@
       "category": "cocktail",
       "name_es": "Prepárese en una copa de cristal hasta la mi tad",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azú-",
+          "item_es": "azú-",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las",
+          "item_es": "las",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de",
+          "item_es": "las de",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las qu_e",
+          "item_es": "las qu_e",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de",
+          "item_es": "las de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "las que se",
+          "item_es": "las que se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las que se bebe el vino madera",
+          "item_es": "las que se bebe el vino madera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "las de licor decurayao tinto",
+          "item_es": "las de licor decurayao tinto",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron jamaica",
+          "item_es": "ron jamaica",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron",
+          "item_es": "ron",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PROPORCIONES PARA UNA PERSONA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1502,13 +2524,21 @@
       "category": "cocktail",
       "name_es": "Y agregar algunas frutas picadas y una copita de",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "PROPORCIONES PARA UNA PERSONA",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,

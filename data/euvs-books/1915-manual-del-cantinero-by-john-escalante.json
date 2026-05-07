@@ -108,13 +108,28 @@
       "category": "cocktail",
       "name_es": "AJENJOS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediano",
+          "item_es": "mediano",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "agua y hielo para que él mismo se",
+          "item_es": "agua y hielo para que él mismo se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -142,13 +157,21 @@
       "category": "cocktail",
       "name_es": "EAGLE APPETIZER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de uefresco",
+          "item_es": "los de uefresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Igucl apelaiscr",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -295,13 +318,21 @@
       "category": "cocktail",
       "name_es": "INGLATERRA BRACER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "chico y sírvase",
+          "item_es": "chico y sírvase",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GINCOTELERA",
       "method_es": "USE LA GINCOTELERA",
       "glassware": "Inglaterra breser",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 17,
@@ -329,13 +360,21 @@
       "category": "cocktail",
       "name_es": "SARATOGA BRACE-UP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GINCOTELERA",
       "method_es": "USE LA GINCOTELERA",
       "glassware": "Saraioga brcs-op",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -414,13 +453,21 @@
       "category": "cocktail",
       "name_es": "PONY BRANDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "do agua",
+          "item_es": "do agua",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA COPITA CHIC.A USE UN A'ASITO DE LOS DE AVHISKEY",
       "method_es": "USE UNA COPITA CHIC.A USE UN A'ASITO DE LOS DE AVHISKEY",
       "glassware": "Gu¡s(|ui estreit",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -448,13 +495,21 @@
       "category": "cocktail",
       "name_es": "BISHOP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GINCOTELERA",
       "method_es": "USE LA GINCOTELERA",
       "glassware": "Bisop",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 26,
@@ -482,13 +537,28 @@
       "category": "cocktail",
       "name_es": "USE LA GINCOTELERA Y UN VASO MEDIANO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "limón sobre",
+          "item_es": "limón sobre",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Guisqui crusta",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -584,13 +654,21 @@
       "category": "cocktail",
       "name_es": "ALBEMARLE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Alhemarl cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -618,13 +696,21 @@
       "category": "cocktail",
       "name_es": "ALPHONSO XIII COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN A^XSO DE LOS DE REFRESCO",
       "method_es": "USE UN A^XSO DE LOS DE REFRESCO",
       "glassware": "iMuría Barañano cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -669,13 +755,21 @@
       "category": "cocktail",
       "name_es": "BROADWAY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Brodguey cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -737,13 +831,28 @@
       "category": "cocktail",
       "name_es": "BELGA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marrasqui-",
+          "item_es": "marrasqui-",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Belgiú cocktcil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -822,13 +931,21 @@
       "category": "cocktail",
       "name_es": "USE UN VASO DE LOS DE UEFRESCO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "unión",
+          "item_es": "unión",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -839,13 +956,21 @@
       "category": "cocktail",
       "name_es": "CLUB COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de uefresco",
+          "item_es": "los de uefresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE UEFRESCO",
       "method_es": "USE UN VASO DE LOS DE UEFRESCO",
       "glassware": "Clob cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -856,13 +981,21 @@
       "category": "cocktail",
       "name_es": "COLISEO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Coliseo cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -873,13 +1006,21 @@
       "category": "cocktail",
       "name_es": "COLUMBUS COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Kiúban clover cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -924,13 +1065,35 @@
       "category": "cocktail",
       "name_es": "CHAMPAGNE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de champan",
+          "item_es": "las de champan",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "champán se pueden hacei",
+          "item_es": "champán se pueden hacei",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Sinsinalifcocktcil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -941,13 +1104,21 @@
       "category": "cocktail",
       "name_es": "CELERY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Selery cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 55,
@@ -975,13 +1146,21 @@
       "category": "cocktail",
       "name_es": "DENIS COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "l)enis cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 57,
@@ -992,13 +1171,21 @@
       "category": "cocktail",
       "name_es": "DERBY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Derbi cocktcil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 58,
@@ -1009,13 +1196,21 @@
       "category": "cocktail",
       "name_es": "DUBONET COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Dubonet cocktcil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 59,
@@ -1026,13 +1221,21 @@
       "category": "cocktail",
       "name_es": "ESCALANTE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de kefuesco                      '",
+          "item_es": "los de kefuesco                      '",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GINCOTELERA USE UN VASO DE LOS DE KEFUESCO                      '",
       "method_es": "USE LA GINCOTELERA USE UN VASO DE LOS DE KEFUESCO                      '",
       "glassware": "E.scalante cocteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1043,13 +1246,21 @@
       "category": "cocktail",
       "name_es": "EAST INDIA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Ist India cockieil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 61,
@@ -1060,13 +1271,21 @@
       "category": "cocktail",
       "name_es": "FITH AVE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Yin cockieil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 62,
@@ -1145,13 +1364,21 @@
       "category": "cocktail",
       "name_es": "IRISE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Airis cocktail",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 67,
@@ -1196,13 +1423,21 @@
       "category": "cocktail",
       "name_es": "INTERVENTION COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 70,
@@ -1213,13 +1448,21 @@
       "category": "cocktail",
       "name_es": "JAPANASE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Cliapanis cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 71,
@@ -1230,13 +1473,21 @@
       "category": "cocktail",
       "name_es": "JERSEY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 72,
@@ -1298,13 +1549,21 @@
       "category": "cocktail",
       "name_es": "LEMON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "limón",
+          "item_es": "limón",
+          "amount": "0.5",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "I.cmon cockieil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1332,13 +1591,21 @@
       "category": "cocktail",
       "name_es": "MADRID COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Madrid cockieil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 78,
@@ -1349,13 +1616,21 @@
       "category": "cocktail",
       "name_es": "MANHATTAN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de kefjteso",
+          "item_es": "los de kefjteso",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE KEFJtESO",
       "method_es": "USE UN VASO DE LOS DE KEFJtESO",
       "glassware": "Manjatan cocktcll",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 79,
@@ -1383,13 +1658,21 @@
       "category": "cocktail",
       "name_es": "MARTINI COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO USE UN V.\\SO DE LOS DE REKKESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO USE UN V.\\SO DE LOS DE REKKESCO",
       "glassware": ".Ment cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 81,
@@ -1400,13 +1683,21 @@
       "category": "cocktail",
       "name_es": "MALECON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Malecón cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1451,13 +1742,21 @@
       "category": "cocktail",
       "name_es": "MARGUERITE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Margaríl cockloil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 85,
@@ -1468,13 +1767,21 @@
       "category": "cocktail",
       "name_es": "NORTH POLE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Norz pol cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1502,13 +1809,21 @@
       "category": "cocktail",
       "name_es": "OBISPO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Obispo cockleil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1553,13 +1868,21 @@
       "category": "cocktail",
       "name_es": "OLIVETTE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ue los de refresco",
+          "item_es": "ue los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO UE LOS DE REFRESCO",
       "method_es": "USE UN VASO UE LOS DE REFRESCO",
       "glassware": "Olivct cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 91,
@@ -1570,13 +1893,21 @@
       "category": "cocktail",
       "name_es": "OLD TOM GIN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ue los de refresco",
+          "item_es": "ue los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO UE LOS DE REFRESCO",
       "method_es": "USE UN VASO UE LOS DE REFRESCO",
       "glassware": "Oíd ton yin cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 92,
@@ -1587,13 +1918,21 @@
       "category": "cocktail",
       "name_es": "PRINCENTON COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Frrsideu cockleil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 93,
@@ -1604,13 +1943,28 @@
       "category": "cocktail",
       "name_es": "QUINTANA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "naranja",
+          "item_es": "naranja",
+          "amount": "0.5",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Quintana cockleil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 94,
@@ -1621,13 +1975,28 @@
       "category": "cocktail",
       "name_es": "ROYAL PALACE COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "limón",
+          "item_es": "limón",
+          "amount": "0.5",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Royal palas cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 95,
@@ -1638,13 +2007,21 @@
       "category": "cocktail",
       "name_es": "SANTANDER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Santunder cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 96,
@@ -1655,13 +2032,21 @@
       "category": "cocktail",
       "name_es": "SOUTHER CLUB COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Sauzer clob cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 97,
@@ -1672,13 +2057,21 @@
       "category": "cocktail",
       "name_es": "SCOTCH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Escach cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 98,
@@ -1706,13 +2099,21 @@
       "category": "cocktail",
       "name_es": "SHERRY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO lete todo con una cuchara, cuélese en una copa de USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO lete todo con una cuchara, cuélese en una copa de USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Soda cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 100,
@@ -1723,13 +2124,21 @@
       "category": "cocktail",
       "name_es": "SLOE GIN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Eslo yin cocktail",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 101,
@@ -1774,13 +2183,21 @@
       "category": "cocktail",
       "name_es": "TOM LOPEZ COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ue los de refresco",
+          "item_es": "ue los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO UE LOS DE REFRESCO",
       "method_es": "USE UN VASO UE LOS DE REFRESCO",
       "glassware": "Tom Lói)cz cocktail",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 104,
@@ -1791,13 +2208,21 @@
       "category": "cocktail",
       "name_es": "UNDERWOOD COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Onder-ut cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 105,
@@ -1808,13 +2233,21 @@
       "category": "cocktail",
       "name_es": "VERMOUTH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Vernnz cockteil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 106,
@@ -1842,13 +2275,21 @@
       "category": "cocktail",
       "name_es": "XEBEC COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Sebee cccktcil",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 108,
@@ -1876,13 +2317,21 @@
       "category": "cocktail",
       "name_es": "USE UN VASO OE LOS DE REFRESCO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 110,
@@ -1944,13 +2393,21 @@
       "category": "cup",
       "name_es": "OTROS CUPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grandes",
+          "item_es": "grandes",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA PAILA GKANüE",
       "method_es": "USE UNA PAILA GKANüE",
       "glassware": "Champan cop",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 114,
@@ -1978,13 +2435,21 @@
       "category": "cocktail",
       "name_es": "USE UNA PAILA GRANDE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grand",
+          "item_es": "grand",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 116,
@@ -1995,13 +2460,21 @@
       "category": "cocktail",
       "name_es": "BRANDY COBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Brandi cobler",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 117,
@@ -2046,13 +2519,28 @@
       "category": "cocktail",
       "name_es": "CHICAGO COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de ueeitksco",
+          "item_es": "los de ueeitksco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE UEEItKSCO USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE UEEItKSCO USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Inglaterra culer",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 120,
@@ -2063,13 +2551,21 @@
       "category": "cocktail",
       "name_es": "PANAMA COOLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Panamá culer",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 121,
@@ -2114,13 +2610,21 @@
       "category": "cocktail",
       "name_es": "TOM COLLINS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO GRANDE",
       "method_es": "USE UN VASO GRANDE",
       "glassware": "Ton colins",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 124,
@@ -2165,13 +2669,21 @@
       "category": "cocktail",
       "name_es": "USE UN VASO DE LOS DE REI RESCO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Guisqui dcisi",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 127,
@@ -2284,13 +2796,28 @@
       "category": "flip",
       "name_es": "ESCALANTE FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ginper",
+          "item_es": "ginper",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA OrNCOTELEIÍA",
       "method_es": "USE LA OrNCOTELEIÍA",
       "glassware": "Kscach guisqui flip",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 134,
@@ -2301,13 +2828,21 @@
       "category": "flip",
       "name_es": "OTROS FLIPS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GINCOTELERA",
       "method_es": "USE LA GINCOTELERA",
       "glassware": "Jat ron bacardi flip",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 135,
@@ -2471,13 +3006,21 @@
       "category": "fizz",
       "name_es": "SOUTHERN CLUB GIN FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "white rock",
+          "item_es": "white rock",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Guisqui fiz",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 145,
@@ -2573,13 +3116,21 @@
       "category": "cocktail",
       "name_es": "INGLATERRA HIGHBALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Inglaterra jai-bol",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 151,
@@ -2641,13 +3192,21 @@
       "category": "cocktail",
       "name_es": "HORSES NECK",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO GRANDE",
       "method_es": "USE UN VASO GRANDE",
       "glassware": "Jorses neck",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 155,
@@ -2743,13 +3302,21 @@
       "category": "cocktail",
       "name_es": "LEMONADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ue los de itefresco",
+          "item_es": "ue los de itefresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO UE LOS DE ItEFRESCO",
       "method_es": "USE UN VASO UE LOS DE ItEFRESCO",
       "glassware": "Lemonei",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 161,
@@ -2760,13 +3327,21 @@
       "category": "cocktail",
       "name_es": "HOT LEMONADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Jnt lemonei",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 162,
@@ -2879,13 +3454,21 @@
       "category": "cocktail",
       "name_es": "MAMIE TAYLOR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO GRANDE",
       "method_es": "USE UN VASO GRANDE",
       "glassware": "Mcmi teilor",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 169,
@@ -2947,13 +3530,21 @@
       "category": "cocktail",
       "name_es": "HAVANA POUSSE CAFE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de jerez",
+          "item_es": "las de jerez",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA COPA DE LAS DE JEREZ",
       "method_es": "USE UNA COPA DE LAS DE JEREZ",
       "glassware": "Havana pus cafe",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 173,
@@ -2998,13 +3589,21 @@
       "category": "cocktail",
       "name_es": "JERSEY LILY POUSSE CAFE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de jerez",
+          "item_es": "las de jerez",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA COPA DE LAS DE JEREZ USE UNA COPA DE LAS DE JEREZ USE UNA COPA DE LAS DE JEREZ",
       "method_es": "USE UNA COPA DE LAS DE JEREZ USE UNA COPA DE LAS DE JEREZ USE UNA COPA DE LAS DE JEREZ",
       "glassware": "María Barañano pus cafe",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 176,
@@ -3015,13 +3614,21 @@
       "category": "cocktail",
       "name_es": "PARISIAN POUSSE CAFE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de jerez",
+          "item_es": "las de jerez",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA COPA DE LAS DE JEREZ",
       "method_es": "USE UNA COPA DE LAS DE JEREZ",
       "glassware": "Parisian pus cafe",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 177,
@@ -3032,13 +3639,21 @@
       "category": "cocktail",
       "name_es": "POUSSE CAFE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de jerez",
+          "item_es": "las de jerez",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA COPA DE LAS DE JEREZ",
       "method_es": "USE UNA COPA DE LAS DE JEREZ",
       "glassware": "Saratoga pus cafe",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 178,
@@ -3049,13 +3664,21 @@
       "category": "punch",
       "name_es": "ABSINTHE PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Champan 'punch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 179,
@@ -3117,13 +3740,21 @@
       "category": "punch",
       "name_es": "ESCALANTE PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de kefkesco",
+          "item_es": "los de kefkesco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE KEFKESCO",
       "method_es": "USE UN VASO DE LOS DE KEFKESCO",
       "glassware": "Escalante ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 183,
@@ -3168,13 +3799,21 @@
       "category": "punch",
       "name_es": "GOLDEN PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Golden ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 186,
@@ -3202,13 +3841,21 @@
       "category": "punch",
       "name_es": "HAVANA PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Havana ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 188,
@@ -3236,13 +3883,21 @@
       "category": "punch",
       "name_es": "LAREDO PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO USE UN VASO DE LOS DE REFRESCO",
       "glassware": "María Barnñniio ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 190,
@@ -3287,13 +3942,21 @@
       "category": "punch",
       "name_es": "ROMAN PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO",
       "method_es": "USE UN VASO DE LOS DE REFRESCO",
       "glassware": "Kon bacardi ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 193,
@@ -3321,13 +3984,28 @@
       "category": "punch",
       "name_es": "TEA PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "los de refresco",
+          "item_es": "los de refresco",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "largos y finos",
+          "item_es": "largos y finos",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO DE LOS DE REFRESCO USE UNA PAILA GKANDE",
       "method_es": "USE UN VASO DE LOS DE REFRESCO USE UNA PAILA GKANDE",
       "glassware": "Escalante ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 195,
@@ -3338,13 +4016,28 @@
       "category": "punch",
       "name_es": "GRANDEZA PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "largos y íinos",
+          "item_es": "largos y íinos",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA PAILA GRANDE USE UNA PAILA GRANDE USE UNA PAILA GR.ANDE",
       "method_es": "USE UNA PAILA GRANDE USE UNA PAILA GRANDE USE UNA PAILA GR.ANDE",
       "glassware": "Inglaterra ponch",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 196,
@@ -3474,13 +4167,21 @@
       "category": "sour",
       "name_es": "BRANDY SOUR",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GIXCOTELERA",
       "method_es": "USE LA GIXCOTELERA",
       "glassware": "Guisqui saKuar",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 204,
@@ -3559,13 +4260,28 @@
       "category": "sling",
       "name_es": "HOT BRANDY SLING",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediano",
+          "item_es": "mediano",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO MEDIANO",
       "method_es": "USE UN VASO MEDIANO",
       "glassware": "Jal Ruisqiii csIin",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 209,
@@ -3661,13 +4377,21 @@
       "category": "cocktail",
       "name_es": "SHERRY AND BITTERS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de jerez",
+          "item_es": "las de jerez",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UNA COPA DE LAS DE JEREZ",
       "method_es": "USE UNA COPA DE LAS DE JEREZ",
       "glassware": "Serri an bitcrs",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 215,
@@ -3695,13 +4419,21 @@
       "category": "cocktail",
       "name_es": "STONE WALL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO GRANDE",
       "method_es": "USE UN VASO GRANDE",
       "glassware": "Eston guol",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 217,
@@ -3712,13 +4444,21 @@
       "category": "cocktail",
       "name_es": "SANDY GAFF",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande",
+          "item_es": "grande",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN        VASO GRANDE",
       "method_es": "USE UN        VASO GRANDE",
       "glassware": "Sancli gaf",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 218,
@@ -3729,13 +4469,21 @@
       "category": "toddy",
       "name_es": "BRANDY TODDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE UN VASO .MEDIANO",
       "method_es": "USE UN VASO .MEDIANO",
       "glassware": "Guisqui todi",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 219,
@@ -3763,13 +4511,21 @@
       "category": "cocktail",
       "name_es": "TOURIST",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "mediana",
+          "item_es": "mediana",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": "USE LA GINCOTELERA",
       "method_es": "USE LA GINCOTELERA",
       "glassware": "Turist",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

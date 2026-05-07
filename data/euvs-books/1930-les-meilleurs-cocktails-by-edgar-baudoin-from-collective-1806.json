@@ -108,13 +108,21 @@
       "category": "cocktail",
       "name_es": "SIR JOHN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "angostura bitter",
+          "item_es": "angostura bitter",
+          "amount": "3",
+          "unit": "drop",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -193,13 +201,21 @@
       "category": "flip",
       "name_es": "VERA FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "citron sur le bord du verre",
+          "item_es": "citron sur le bord du verre",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": "Frapper, passer, muscader, pailles. Frapper fort, passer, muscader, pailles. Frapper, passer, muscader, pailles.",
       "method_es": "Frapper, passer, muscader, pailles. Frapper fort, passer, muscader, pailles. Frapper, passer, muscader, pailles.",
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -227,13 +243,42 @@
       "category": "cocktail",
       "name_es": "GEORGES COLIN'S",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orange et rem-",
+          "item_es": "orange et rem-",
+          "amount": "2",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "gin",
+          "item_es": "gin",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "citron et servir",
+          "item_es": "citron et servir",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "crème",
+          "item_es": "crème",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,

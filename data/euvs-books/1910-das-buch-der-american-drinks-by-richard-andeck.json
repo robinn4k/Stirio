@@ -74,13 +74,35 @@
       "category": "cocktail",
       "name_es": "Chicago-Codtail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gummifirup wird mit zwei tee-",
+          "item_es": "gummifirup wird mit zwei tee-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "angofturabiiter",
+          "item_es": "angofturabiiter",
+          "amount": "5",
+          "unit": "drop",
+          "notes": null
+        },
+        {
+          "item_original": "legt man drei heine stücchen eis",
+          "item_es": "legt man drei heine stücchen eis",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 4,
@@ -108,13 +130,21 @@
       "category": "cocktail",
       "name_es": "Wird Ahnlich wie der Sodtail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "yuder mit",
+          "item_es": "yuder mit",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +155,21 @@
       "category": "cocktail",
       "name_es": "Saflee-Codtail",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zuder wird mit einem frifchen ei",
+          "item_es": "zuder wird mit einem frifchen ei",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -210,13 +248,21 @@
       "category": "flip",
       "name_es": "Sherry Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "weißwein werden",
+          "item_es": "weißwein werden",
+          "amount": "0.25",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -244,13 +290,28 @@
       "category": "flip",
       "name_es": "Bortwein Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "portwein",
+          "item_es": "portwein",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "kognaf",
+          "item_es": "kognaf",
+          "amount": "0.25",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -346,13 +407,21 @@
       "category": "cocktail",
       "name_es": "Königin bon Saba",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -601,13 +670,21 @@
       "category": "cocktail",
       "name_es": "Ein Teelöffel Zuder, der Saft einer",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "nicht zu herben apfel-",
+          "item_es": "nicht zu herben apfel-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -618,13 +695,21 @@
       "category": "cocktail",
       "name_es": "Ein Saffeelöffel Yuder, der Saft einer Zitrone",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "apfeljinenjaft werden mit einer",
+          "item_es": "apfeljinenjaft werden mit einer",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -652,13 +737,21 @@
       "category": "cocktail",
       "name_es": "Soanal-Cuoler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "in fünf",
+          "item_es": "in fünf",
+          "amount": "1",
+          "unit": "part",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -669,13 +762,21 @@
       "category": "cocktail",
       "name_es": "Die Schale einer Halben Zitrone wird mit vier",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whisty und eine sodamwaljer",
+          "item_es": "whisty und eine sodamwaljer",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -754,13 +855,21 @@
       "category": "cocktail",
       "name_es": "Bordenur-Champagner-Linonade",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "weihwein",
+          "item_es": "weihwein",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -822,13 +931,35 @@
       "category": "cocktail",
       "name_es": "Mixed Drinks obne Eis",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "wird zur hälfte mit porter und dann",
+          "item_es": "wird zur hälfte mit porter und dann",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "legt man einige stüdchen eis",
+          "item_es": "legt man einige stüdchen eis",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "samaila-",
+          "item_es": "samaila-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -856,13 +987,28 @@
       "category": "cocktail",
       "name_es": "Burgunder-Bunich",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ananazfirup und der saft",
+          "item_es": "ananazfirup und der saft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "brandy milht man mit einem eb-",
+          "item_es": "brandy milht man mit einem eb-",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -873,13 +1019,28 @@
       "category": "cocktail",
       "name_es": "Arral-ZoddN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitrone in3 glas",
+          "item_es": "zitrone in3 glas",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "vorter oder ale heiß",
+          "item_es": "vorter oder ale heiß",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -907,13 +1068,21 @@
       "category": "cocktail",
       "name_es": "Drei Eidotter werden mit einem",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "halb heiße deilch",
+          "item_es": "halb heiße deilch",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 53,

@@ -40,13 +40,35 @@
       "category": "cocktail",
       "name_es": "COCKTAIL DE BRANDY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grande que tenga poco más o menos",
+          "item_es": "grande que tenga poco más o menos",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargo de angostura",
+          "item_es": "amargo de angostura",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 2,
@@ -57,13 +79,21 @@
       "category": "cocktail",
       "name_es": "COCKTAIL DE LECHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hasta sus dos terceras partes con leche",
+          "item_es": "hasta sus dos terceras partes con leche",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 3,
@@ -91,13 +121,28 @@
       "category": "cocktail",
       "name_es": "BRANDY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo de angostura",
+          "item_es": "amargo de angostura",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "y a cada uno se le pone una rebanada",
+          "item_es": "y a cada uno se le pone una rebanada",
+          "amount": "8",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 5,
@@ -108,13 +153,21 @@
       "category": "cocktail",
       "name_es": "OTRO COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "buen ron de jamaica",
+          "item_es": "buen ron de jamaica",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -125,13 +178,35 @@
       "category": "cocktail",
       "name_es": "VICTORIA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande un poco de hielo machacado",
+          "item_es": "grande un poco de hielo machacado",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "crema de menta y una rebanada de naranja",
+          "item_es": "crema de menta y una rebanada de naranja",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "menta",
+          "item_es": "menta",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -142,13 +217,21 @@
       "category": "cocktail",
       "name_es": "COCKTAIL DE GINEBRA X",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 8,
@@ -159,13 +242,21 @@
       "category": "cocktail",
       "name_es": "GIOCONDA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 9,
@@ -176,13 +267,35 @@
       "category": "crusta",
       "name_es": "GINEBRA CRUSTA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una cucharadita de jugo de limón",
+          "item_es": "una cucharadita de jugo de limón",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargas y una cucharada de hielo",
+          "item_es": "amargas y una cucharada de hielo",
+          "amount": "6",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "cocktail",
+          "item_es": "cocktail",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 10,
@@ -193,13 +306,21 @@
       "category": "cocktail",
       "name_es": "COCKTAIL DELICIOSO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curazao y una cantidad",
+          "item_es": "curazao y una cantidad",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 11,
@@ -210,13 +331,21 @@
       "category": "cocktail",
       "name_es": "FISHERMAN'S PRAYER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargas y se sirve",
+          "item_es": "amargas y se sirve",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 12,
@@ -227,13 +356,21 @@
       "category": "cocktail",
       "name_es": "FAST-INDIA COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "alta y se guar",
+          "item_es": "alta y se guar",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 13,
@@ -244,13 +381,28 @@
       "category": "cocktail",
       "name_es": "MARTINICAN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "y se",
+          "item_es": "y se",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 14,
@@ -261,13 +413,21 @@
       "category": "cocktail",
       "name_es": "IMTROVED VERMOUTH COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "marras",
+          "item_es": "marras",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 15,
@@ -278,13 +438,21 @@
       "category": "cocktail",
       "name_es": "SAINT JAMES COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ron saint-james",
+          "item_es": "ron saint-james",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 16,
@@ -312,13 +480,21 @@
       "category": "cocktail",
       "name_es": "COCKTAIL PRINCE OF WALES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino de madera",
+          "item_es": "vino de madera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 18,
@@ -329,13 +505,28 @@
       "category": "cocktail",
       "name_es": "COCKTAIL MUY BUENO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua y tres",
+          "item_es": "agua y tres",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth y dos copas de",
+          "item_es": "vermouth y dos copas de",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -346,13 +537,28 @@
       "category": "cocktail",
       "name_es": "WHISKY DAYSY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zumo",
+          "item_es": "zumo",
+          "amount": "2",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de frambuesa",
+          "item_es": "jarabe de frambuesa",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -380,13 +586,21 @@
       "category": "cocktail",
       "name_es": "PORTO NEGUS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "a grog dos pedacitos de azúcai'",
+          "item_es": "a grog dos pedacitos de azúcai'",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 22,
@@ -397,13 +611,28 @@
       "category": "cocktail",
       "name_es": "TOUCH-ME-NOT",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cassis",
+          "item_es": "cassis",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "y se sirve",
+          "item_es": "y se sirve",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -414,13 +643,28 @@
       "category": "cocktail",
       "name_es": "NIGHT CAP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "ésta preparación se",
+          "item_es": "ésta preparación se",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "marras",
+          "item_es": "marras",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -431,13 +675,21 @@
       "category": "cocktail",
       "name_es": "PORT WINE NEGUS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una ciicharadita de azúcar en polvo",
+          "item_es": "una ciicharadita de azúcar en polvo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -482,13 +734,28 @@
       "category": "cocktail",
       "name_es": "PORTO SANGARE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una cucbaradita de azúcar en polvo",
+          "item_es": "una cucbaradita de azúcar en polvo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo y una copa y media de oporto",
+          "item_es": "hielo y una copa y media de oporto",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 28,
@@ -499,13 +766,21 @@
       "category": "cocktail",
       "name_es": "BRANDY SANGARE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una cucbaradita de azúcar en polvo",
+          "item_es": "una cucbaradita de azúcar en polvo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -516,13 +791,21 @@
       "category": "fizz",
       "name_es": "GINEBRA FIZZ",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una cucbaradita de azúcar o de",
+          "item_es": "una cucbaradita de azúcar o de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -550,13 +833,28 @@
       "category": "cocktail",
       "name_es": "BYRRH-CASSIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cassis y",
+          "item_es": "cassis y",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe",
+          "item_es": "jarabe",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -567,13 +865,21 @@
       "category": "cocktail",
       "name_es": "CINZANO AND CURAZAO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 33,
@@ -601,13 +907,28 @@
       "category": "flip",
       "name_es": "EGG NOG",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande y se le pone una cucharadita",
+          "item_es": "grande y se le pone una cucharadita",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "a otro",
+          "item_es": "a otro",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -669,13 +990,28 @@
       "category": "cocktail",
       "name_es": "COCKTAIL DE FRESAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "o copa propia para ponches unas seis",
+          "item_es": "o copa propia para ponches unas seis",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -686,13 +1022,35 @@
       "category": "cocktail",
       "name_es": "MANHATTAN",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "whiskey y",
+          "item_es": "whiskey y",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargo de angostura y",
+          "item_es": "amargo de angostura y",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "limón por",
+          "item_es": "limón por",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -703,13 +1061,28 @@
       "category": "cocktail",
       "name_es": "SARATOGA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champaña y se",
+          "item_es": "champaña y se",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "aguardiente la",
+          "item_es": "aguardiente la",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 41,
@@ -737,13 +1110,21 @@
       "category": "flip",
       "name_es": "PORTO WINE FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "oporto rojo",
+          "item_es": "oporto rojo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -754,13 +1135,21 @@
       "category": "flip",
       "name_es": "MADERA FLIP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino de",
+          "item_es": "vino de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 44,
@@ -771,13 +1160,35 @@
       "category": "cocktail",
       "name_es": "LADIE'S COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "anisete",
+          "item_es": "anisete",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra",
+          "item_es": "ginebra",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "curazao y",
+          "item_es": "curazao y",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 45,
@@ -788,13 +1199,28 @@
       "category": "cocktail",
       "name_es": "KNICKERBOKER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de frambuesa",
+          "item_es": "jarabe de frambuesa",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        },
+        {
+          "item_original": "y se sirve",
+          "item_es": "y se sirve",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 46,
@@ -822,13 +1248,28 @@
       "category": "cocktail",
       "name_es": "OYSTER COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "unas gotas de amargo de angostura",
+          "item_es": "unas gotas de amargo de angostura",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curazao y se",
+          "item_es": "curazao y se",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -839,13 +1280,21 @@
       "category": "flip",
       "name_es": "OTRO EGQ NOG",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "con",
+          "item_es": "con",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 49,
@@ -856,13 +1305,21 @@
       "category": "cocktail",
       "name_es": "EGG-PICK-ME-UP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jai'abe",
+          "item_es": "jai'abe",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -873,13 +1330,21 @@
       "category": "cocktail",
       "name_es": "OTRO COCKTAIL DE VERMOUTH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "piña y se sirve",
+          "item_es": "piña y se sirve",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -907,13 +1372,21 @@
       "category": "cocktail",
       "name_es": "PINK LADY COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grana",
+          "item_es": "grana",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 53,
@@ -924,13 +1397,21 @@
       "category": "cocktail",
       "name_es": "PINK ROST COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grana",
+          "item_es": "grana",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -941,13 +1422,21 @@
       "category": "crusta",
       "name_es": "WHISKY CRUSTA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "pequeño de",
+          "item_es": "pequeño de",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 55,
@@ -958,13 +1447,21 @@
       "category": "cocktail",
       "name_es": "OLD TOM GIN COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "gine",
+          "item_es": "gine",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 56,
@@ -975,13 +1472,35 @@
       "category": "cocktail",
       "name_es": "COCKTAIL CALIENTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una cucharada de azúcar en polvo",
+          "item_es": "una cucharada de azúcar en polvo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "una cucharadíta de zumo de limón",
+          "item_es": "una cucharadíta de zumo de limón",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "curazao",
+          "item_es": "curazao",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 57,
@@ -1009,13 +1528,49 @@
       "category": "cocktail",
       "name_es": "COCKTAIL DE OSTRAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zumo de limón",
+          "item_es": "zumo de limón",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "manzana",
+          "item_es": "manzana",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "salsa propia para este cocktail ogster",
+          "item_es": "salsa propia para este cocktail ogster",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "zumo de",
+          "item_es": "zumo de",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        },
+        {
+          "item_original": "y se le pone",
+          "item_es": "y se le pone",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 59,
@@ -1026,13 +1581,28 @@
       "category": "cocktail",
       "name_es": "BRO US-COCKTAIL",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "media cucharadita de crema de",
+          "item_es": "media cucharadita de crema de",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "amargo de angostura y una copa",
+          "item_es": "amargo de angostura y una copa",
+          "amount": "5",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 60,
@@ -1060,13 +1630,35 @@
       "category": "flip",
       "name_es": "EGG-NOGG",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo picado",
+          "item_es": "hielo picado",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "vermouth",
+          "item_es": "vermouth",
+          "amount": "3",
+          "unit": "part",
+          "notes": null
+        },
+        {
+          "item_original": "amargo dé angostura y corteza de",
+          "item_es": "amargo dé angostura y corteza de",
+          "amount": "3",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 62,
@@ -1077,13 +1669,21 @@
       "category": "cup",
       "name_es": "CLARETE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de horchata",
+          "item_es": "jarabe de horchata",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 63,
@@ -1111,13 +1711,21 @@
       "category": "cup",
       "name_es": "WINE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino",
+          "item_es": "vino",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 65,
@@ -1128,13 +1736,21 @@
       "category": "cup",
       "name_es": "VIENNESE COFFEE CUP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "crema",
+          "item_es": "crema",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 66,
@@ -1145,13 +1761,35 @@
       "category": "cocktail",
       "name_es": "COPA DE MELOCOTONES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "curazao y otro",
+          "item_es": "curazao y otro",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "agua de soda",
+          "item_es": "agua de soda",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "verbena y unos pedacitos de            ''",
+          "item_es": "verbena y unos pedacitos de            ''",
+          "amount": "1",
+          "unit": "sprig",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 67,
@@ -1162,13 +1800,21 @@
       "category": "cocktail",
       "name_es": "COPAS DE VINO BLANCO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargas",
+          "item_es": "amargas",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 68,
@@ -1179,13 +1825,35 @@
       "category": "cup",
       "name_es": "CUP SICILIENNE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zumo de limón y azúcar",
+          "item_es": "zumo de limón y azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en'",
+          "item_es": "azúcar en'",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo",
+          "item_es": "azúcar en polvo",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 69,
@@ -1196,13 +1864,28 @@
       "category": "cocktail",
       "name_es": "MARQUISE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino blanco sauterne y agua",
+          "item_es": "vino blanco sauterne y agua",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "helado de",
+          "item_es": "helado de",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 70,
@@ -1213,13 +1896,21 @@
       "category": "cocktail",
       "name_es": "BEBIDA ARGENTINA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "sauterne",
+          "item_es": "sauterne",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 71,
@@ -1230,13 +1921,21 @@
       "category": "cocktail",
       "name_es": "FRUITS RAFRAICHIS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino espumoso",
+          "item_es": "vino espumoso",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 72,
@@ -1247,13 +1946,21 @@
       "category": "cocktail",
       "name_es": "OTRAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "o vaso con",
+          "item_es": "o vaso con",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 73,
@@ -1264,13 +1971,28 @@
       "category": "cocktail",
       "name_es": "COPA JACQUES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champaña y",
+          "item_es": "champaña y",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "pifia cortado en pedacitos muy",
+          "item_es": "pifia cortado en pedacitos muy",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 74,
@@ -1281,13 +2003,21 @@
       "category": "cocktail",
       "name_es": "LENOX STRAWBERRIES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "4",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 75,
@@ -1298,13 +2028,42 @@
       "category": "cocktail",
       "name_es": "BOL DE FRUTAS A LA RUSA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe",
+          "item_es": "jarabe",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "vino de burdeos",
+          "item_es": "vino de burdeos",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe y una botella de champaña",
+          "item_es": "jarabe y una botella de champaña",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "agua de",
+          "item_es": "agua de",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 76,
@@ -1315,13 +2074,28 @@
       "category": "cobbler",
       "name_es": "SHERRY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo macha",
+          "item_es": "hielo macha",
+          "amount": "4",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "dos cuchai'adas de hielo macha",
+          "item_es": "dos cuchai'adas de hielo macha",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 77,
@@ -1332,13 +2106,28 @@
       "category": "cobbler",
       "name_es": "OTRO SHERRY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "sherry",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 78,
@@ -1349,13 +2138,28 @@
       "category": "cobbler",
       "name_es": "CLARETE COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de grosellas o",
+          "item_es": "jarabe de grosellas o",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 79,
@@ -1366,13 +2170,91 @@
       "category": "cobbler",
       "name_es": "SAIJTERNE COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "coñac",
+          "item_es": "coñac",
+          "amount": "1",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "hasta",
+          "item_es": "hasta",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "naranja o unas",
+          "item_es": "naranja o unas",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo y dos cucharaditas de",
+          "item_es": "azúcar en polvo y dos cucharaditas de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "grande de hielo machacado",
+          "item_es": "grande de hielo machacado",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "champaña y se le mezclan algunas",
+          "item_es": "champaña y se le mezclan algunas",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "agua",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "jerez y una cucharada de coñac",
+          "item_es": "jerez y una cucharada de coñac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "grande lleno hasta la mitad con hielo",
+          "item_es": "grande lleno hasta la mitad con hielo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 80,
@@ -1383,13 +2265,21 @@
       "category": "cobbler",
       "name_es": "PORT WINE COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande media cucharada de azúcar",
+          "item_es": "grande media cucharada de azúcar",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 81,
@@ -1400,13 +2290,21 @@
       "category": "cocktail",
       "name_es": "SHERRY-BRANDY CON FRESAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en",
+          "item_es": "azúcar en",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 82,
@@ -1417,13 +2315,28 @@
       "category": "cobbler",
       "name_es": "DERBY COBBLER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "piña y se le echa sin",
+          "item_es": "piña y se le echa sin",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 83,
@@ -1434,13 +2347,28 @@
       "category": "cocktail",
       "name_es": "PONCHES",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "0.5",
+          "unit": "liqueur glass",
+          "notes": null
+        },
+        {
+          "item_original": "ron por",
+          "item_es": "ron por",
+          "amount": "1",
+          "unit": "dash",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 84,
@@ -1468,13 +2396,21 @@
       "category": "cocktail",
       "name_es": "SIR CHARLES PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "vino de oporto",
+          "item_es": "vino de oporto",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 86,
@@ -1485,13 +2421,21 @@
       "category": "cocktail",
       "name_es": "FRUITS PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua con media libra de azúcar y",
+          "item_es": "agua con media libra de azúcar y",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 87,
@@ -1502,13 +2446,35 @@
       "category": "cocktail",
       "name_es": "OTRO PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "el zumo de una",
+          "item_es": "el zumo de una",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "agua y un cuarto",
+          "item_es": "agua y un cuarto",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 88,
@@ -1536,13 +2502,28 @@
       "category": "cocktail",
       "name_es": "HOT PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "nuez",
+          "item_es": "nuez",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "leche hirviendo",
+          "item_es": "leche hirviendo",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 90,
@@ -1553,13 +2534,28 @@
       "category": "cocktail",
       "name_es": "PINEAPPLE PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua caliente",
+          "item_es": "agua caliente",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "este jarabe puestas en un vaso",
+          "item_es": "este jarabe puestas en un vaso",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 91,
@@ -1570,13 +2566,21 @@
       "category": "cocktail",
       "name_es": "PORT PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "0.5",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 92,
@@ -1587,13 +2591,28 @@
       "category": "cocktail",
       "name_es": "SHERRY PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "una cucharada de azúcar en polvo",
+          "item_es": "una cucharada de azúcar en polvo",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "jerez y",
+          "item_es": "jerez y",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 93,
@@ -1621,13 +2640,28 @@
       "category": "cocktail",
       "name_es": "CURAZAO PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en polvo disuelta en un poquito",
+          "item_es": "azúcar en polvo disuelta en un poquito",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "soda o un sifón de agua",
+          "item_es": "soda o un sifón de agua",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 95,
@@ -1638,13 +2672,28 @@
       "category": "cocktail",
       "name_es": "PONCHE DE VINO BLANCO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cham-",
+          "item_es": "cham-",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "hielo",
+          "item_es": "hielo",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 96,
@@ -1655,13 +2704,21 @@
       "category": "cocktail",
       "name_es": "CLARETE PONCHE CALIENTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "coñac y medio",
+          "item_es": "coñac y medio",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 97,
@@ -1672,13 +2729,35 @@
       "category": "cocktail",
       "name_es": "PONCHE DE FRAMBUESAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande hasta la mitad con hielo macha",
+          "item_es": "grande hasta la mitad con hielo macha",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "naranja cor",
+          "item_es": "naranja cor",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "agua para fundir el azúcar",
+          "item_es": "agua para fundir el azúcar",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 98,
@@ -1689,13 +2768,35 @@
       "category": "cocktail",
       "name_es": "OTRO PONCHE DE LECHE CALIENTE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "champaña y se",
+          "item_es": "champaña y se",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champaña",
+          "item_es": "champaña",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "apolli-",
+          "item_es": "apolli-",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 99,
@@ -1706,13 +2807,21 @@
       "category": "cocktail",
       "name_es": "APRICOT AND GRAPEFRUIT SHERBET",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zumo de limón y una clara de",
+          "item_es": "zumo de limón y una clara de",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 100,
@@ -1723,13 +2832,56 @@
       "category": "cocktail",
       "name_es": "WHISKY PONCHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "jugo de limón",
+          "item_es": "jugo de limón",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "naranja",
+          "item_es": "naranja",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "y se le pone la piña y la",
+          "item_es": "y se le pone la piña y la",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cham",
+          "item_es": "cham",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "éste ponche se baten",
+          "item_es": "éste ponche se baten",
+          "amount": "5",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "de r",
+          "item_es": "de r",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 101,
@@ -1757,13 +2909,28 @@
       "category": "cocktail",
       "name_es": "PONCHE CREMA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "3",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe",
+          "item_es": "jarabe",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 103,
@@ -1774,13 +2941,28 @@
       "category": "cocktail",
       "name_es": "PONCHE DE LECHE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "de- leche fría y'",
+          "item_es": "de- leche fría y'",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "ron de",
+          "item_es": "ron de",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 104,
@@ -1791,13 +2973,21 @@
       "category": "cocktail",
       "name_es": "PONCHE A LA RUSA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cham",
+          "item_es": "cham",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 105,
@@ -1808,13 +2998,21 @@
       "category": "punch",
       "name_es": "EGG NOG PUNCH",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "amargo de angostura y tres cuartos",
+          "item_es": "amargo de angostura y tres cuartos",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 106,
@@ -1825,13 +3023,21 @@
       "category": "cocktail",
       "name_es": "BEBIDAS FRESCAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua",
+          "item_es": "agua",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 107,
@@ -1859,13 +3065,21 @@
       "category": "cocktail",
       "name_es": "BEBIDA DE PINA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "agua caliente",
+          "item_es": "agua caliente",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 109,
@@ -1876,13 +3090,21 @@
       "category": "cocktail",
       "name_es": "AGUA HELADA DE FRESAS",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zumo de liriión",
+          "item_es": "zumo de liriión",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 110,
@@ -1893,13 +3115,56 @@
       "category": "julep",
       "name_es": "MINT JULEP",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "grande unas ramitas tiernas y muy",
+          "item_es": "grande unas ramitas tiernas y muy",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "azúcar en polvo y",
+          "item_es": "azúcar en polvo y",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "pulpa de duraznos muy ma",
+          "item_es": "pulpa de duraznos muy ma",
+          "amount": "5",
+          "unit": "tbsp",
+          "notes": null
+        },
+        {
+          "item_original": "muy",
+          "item_es": "muy",
+          "amount": "3",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "jarabe de",
+          "item_es": "jarabe de",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "ginebra y dos de champaña",
+          "item_es": "ginebra y dos de champaña",
+          "amount": "1",
+          "unit": "small glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 111,
@@ -1910,13 +3175,21 @@
       "category": "cocktail",
       "name_es": "SHERRY LEMONADE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar en polvo disuelta en un poquito",
+          "item_es": "azúcar en polvo disuelta en un poquito",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 112,
@@ -1961,13 +3234,35 @@
       "category": "cocktail",
       "name_es": "ALMOND WATER",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "almendras y dos onzas de almen",
+          "item_es": "almendras y dos onzas de almen",
+          "amount": "6",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "agua 5",
+          "item_es": "agua 5",
+          "amount": "1",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "esta mezcla con agua de soda",
+          "item_es": "esta mezcla con agua de soda",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 115,
@@ -1978,13 +3273,35 @@
       "category": "cocktail",
       "name_es": "SUMMER BEVERAGE",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "del licor que se prefiera",
+          "item_es": "del licor que se prefiera",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "champaña",
+          "item_es": "champaña",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "vino del",
+          "item_es": "vino del",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 116,
@@ -1995,13 +3312,35 @@
       "category": "cocktail",
       "name_es": "ROMPOPO",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "almíbar",
+          "item_es": "almíbar",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "ron y una onza de almendras molidas",
+          "item_es": "ron y una onza de almendras molidas",
+          "amount": "0.5",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "maicena y 150 gramos de",
+          "item_es": "maicena y 150 gramos de",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 117,
@@ -2012,13 +3351,49 @@
       "category": "cocktail",
       "name_es": "SORBETE O PONCHE A LA ROMANA",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "azúcar",
+          "item_es": "azúcar",
+          "amount": "4",
+          "unit": "oz",
+          "notes": null
+        },
+        {
+          "item_original": "limón o unas",
+          "item_es": "limón o unas",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "agua",
+          "item_es": "agua",
+          "amount": "0.5",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "canela",
+          "item_es": "canela",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "flores secas de camomi",
+          "item_es": "flores secas de camomi",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 118,
@@ -2029,13 +3404,21 @@
       "category": "cocktail",
       "name_es": "COPAS CHANTILLY",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "las de champaña",
+          "item_es": "las de champaña",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }

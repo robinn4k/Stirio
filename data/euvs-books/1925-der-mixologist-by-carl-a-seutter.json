@@ -115,13 +115,21 @@
       "category": "cocktail",
       "name_es": "Zucker nach Geschmack",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "selters-",
+          "item_es": "selters-",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 6,
@@ -132,13 +140,126 @@
       "category": "cup",
       "name_es": "Porter-Cup",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "porter",
+          "item_es": "porter",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "ingwer-sirup",
+          "item_es": "ingwer-sirup",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "burgunderwein",
+          "item_es": "burgunderwein",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "sherry",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "selterswasser und zucker nach ge-",
+          "item_es": "selterswasser und zucker nach ge-",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "moselwein",
+          "item_es": "moselwein",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "champagner",
+          "item_es": "champagner",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "selterswasser",
+          "item_es": "selterswasser",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "würfelzucker und löse sie",
+          "item_es": "würfelzucker und löse sie",
+          "amount": "15",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "champagner",
+          "item_es": "champagner",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "0.25",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "himbeer-sirup",
+          "item_es": "himbeer-sirup",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        },
+        {
+          "item_original": "balsam-extrakt",
+          "item_es": "balsam-extrakt",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "selterswasser",
+          "item_es": "selterswasser",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "französischen rotw_ein",
+          "item_es": "französischen rotw_ein",
+          "amount": "2",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 7,
@@ -518,13 +639,21 @@
       "category": "cocktail",
       "name_es": "Arrak-Punsch, II",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "würfel-",
+          "item_es": "würfel-",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 19,
@@ -535,13 +664,28 @@
       "category": "cocktail",
       "name_es": "Eier-Punsch, heiß",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker in einem dazu ge-",
+          "item_es": "zucker in einem dazu ge-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "würfel-",
+          "item_es": "würfel-",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Egg-Nogg siehe Rezept Seite 90.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 20,
@@ -552,13 +696,35 @@
       "category": "toddy",
       "name_es": "Whisky-Toddy, kalt",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "würfelzucker",
+          "item_es": "würfelzucker",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "zitrone hineingeben und servieren",
+          "item_es": "zitrone hineingeben und servieren",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "würfelzucker und",
+          "item_es": "würfelzucker und",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 21,
@@ -586,13 +752,35 @@
       "category": "sling",
       "name_es": "Brandy-Sling, kalt",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "honig",
+          "item_es": "honig",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "würfelzucker",
+          "item_es": "würfelzucker",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "würfel-",
+          "item_es": "würfel-",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 23,
@@ -603,13 +791,21 @@
       "category": "cocktail",
       "name_es": "Ananas-Punsch, heiß",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitrone hinzu",
+          "item_es": "zitrone hinzu",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 24,
@@ -620,13 +816,28 @@
       "category": "cocktail",
       "name_es": "Hot Locomotive",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "honig",
+          "item_es": "honig",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "rotwein hinzu",
+          "item_es": "rotwein hinzu",
+          "amount": "4",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 25,
@@ -695,13 +906,21 @@
       "category": "cocktail",
       "name_es": "Ein Barglas fülle zur Hälfte mit feinem Eis",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 29,
@@ -712,13 +931,21 @@
       "category": "cocktail",
       "name_es": "Lover's Dream",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 30,
@@ -746,13 +973,42 @@
       "category": "cocktail",
       "name_es": "Prairie-Oyster",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "w orcestershire-sauce",
+          "item_es": "w orcestershire-sauce",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "2",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "importiertem",
+          "item_es": "importiertem",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        },
+        {
+          "item_original": "schweppe's soda",
+          "item_es": "schweppe's soda",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche einen Sektbecher.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 32,
@@ -780,13 +1036,21 @@
       "category": "cocktail",
       "name_es": "Queen Charlotte",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche ein Barglas.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 34,
@@ -797,13 +1061,28 @@
       "category": "cocktail",
       "name_es": "Brunswick-Cooler",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "orangesaft",
+          "item_es": "orangesaft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "mittlerer größe",
+          "item_es": "mittlerer größe",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche ein Barglas.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 35,
@@ -814,13 +1093,35 @@
       "category": "cocktail",
       "name_es": "Brandy-Daisy",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitronen-",
+          "item_es": "zitronen-",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "impor-",
+          "item_es": "impor-",
+          "amount": "1",
+          "unit": "bottle",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 36,
@@ -848,13 +1149,28 @@
       "category": "cocktail",
       "name_es": "Ein Barglas fülle man zur",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "orange darauf",
+          "item_es": "orange darauf",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Siehe Horse's Neck Seite 62.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 38,
@@ -865,13 +1181,49 @@
       "category": "cocktail",
       "name_es": "High-Life",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "zitronensaft",
+          "item_es": "zitronensaft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        },
+        {
+          "item_original": "sherry",
+          "item_es": "sherry",
+          "amount": "2",
+          "unit": "liter",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 39,
@@ -882,13 +1234,21 @@
       "category": "cocktail",
       "name_es": "Stone-Wall",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 40,
@@ -923,13 +1283,35 @@
       "category": "flip",
       "name_es": "Mocca-Flip",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "feingeschlagenes eis",
+          "item_es": "feingeschlagenes eis",
+          "amount": "12",
+          "unit": "glass",
+          "notes": null
+        },
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kalten mocca",
+          "item_es": "kalten mocca",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 42,
@@ -940,13 +1322,21 @@
       "category": "cocktail",
       "name_es": "Glas feingeschlagenes Eis",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "rotwein",
+          "item_es": "rotwein",
+          "amount": "1",
+          "unit": "wineglass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 43,
@@ -1032,13 +1422,28 @@
       "category": "cocktail",
       "name_es": "Nicolaschka",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitrone und streue",
+          "item_es": "zitrone und streue",
+          "amount": "1",
+          "unit": "slice",
+          "notes": null
+        },
+        {
+          "item_original": "creme de chocolade",
+          "item_es": "creme de chocolade",
+          "amount": "1.0",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche ein Pousse-Cafe- oder Sherryglas.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 48,
@@ -1066,13 +1471,21 @@
       "category": "cocktail",
       "name_es": "Mississippi-Punsch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitronensaft",
+          "item_es": "zitronensaft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 50,
@@ -1083,13 +1496,28 @@
       "category": "cocktail",
       "name_es": "Kirschwasser-Punsch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitronensaft",
+          "item_es": "zitronensaft",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche einen Schüttelbecher.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 51,
@@ -1141,13 +1569,28 @@
       "category": "cocktail",
       "name_es": "Orange-Punsch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zitronen-saft",
+          "item_es": "zitronen-saft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 54,
@@ -1158,13 +1601,42 @@
       "category": "punch",
       "name_es": "Old fashioned amenccm Punch",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "3",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "zitronensaft",
+          "item_es": "zitronensaft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "kristalleis",
+          "item_es": "kristalleis",
+          "amount": "4",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche den Schüttelbecher.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 55,
@@ -1192,13 +1664,35 @@
       "category": "cocktail",
       "name_es": "Fülle ein Punschglas oder silbernen Punschbecher",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "zucker",
+          "item_es": "zucker",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "zitronensaft",
+          "item_es": "zitronensaft",
+          "amount": "0.5",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "1",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 57,
@@ -1209,13 +1703,21 @@
       "category": "cocktail",
       "name_es": "Punsch a la Romaine",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "cognac",
+          "item_es": "cognac",
+          "amount": "2",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": null,
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     },
     {
       "order": 58,
@@ -1301,13 +1803,35 @@
       "category": "sour",
       "name_es": "Champagner-Sour",
       "yield": null,
-      "ingredients": [],
+      "ingredients": [
+        {
+          "item_original": "würfelzucker",
+          "item_es": "würfelzucker",
+          "amount": "1",
+          "unit": "piece",
+          "notes": null
+        },
+        {
+          "item_original": "zitronensaft",
+          "item_es": "zitronensaft",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": null
+        },
+        {
+          "item_original": "eis",
+          "item_es": "eis",
+          "amount": "0.5",
+          "unit": "glass",
+          "notes": null
+        }
+      ],
       "method_original": null,
       "method_es": null,
       "glassware": "Gebrauche einen Champagner-Kelch.",
       "garnish": null,
       "page_reference": null,
-      "notes": "Receta con OCR demasiado dañado para extraer ingredientes; ver raw_text."
+      "notes": ""
     }
   ]
 }
