@@ -100,6 +100,17 @@ jobs:
           draft: true
           delete-branch: true
 
+      - name: Publish report inline (review / complete modes)
+        if: github.event.inputs.mode == 'review' || github.event.inputs.mode == 'complete'
+        run: |
+          set -euo pipefail
+          REPORT=$(ls -t tools/ai-content/reports/${{ github.event.inputs.mode }}-*.md 2>/dev/null | head -n 1 || true)
+          if [ -z "$REPORT" ]; then
+            echo '_(no report file produced)_' >> "$GITHUB_STEP_SUMMARY"
+          else
+            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Upload review report (review mode only)
         if: github.event.inputs.mode == 'review'
         uses: actions/upload-artifact@v4
