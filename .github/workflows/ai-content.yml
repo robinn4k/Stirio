@@ -78,8 +78,26 @@ jobs:
           npm install --no-audit --no-fund
           npm test --silent
 
-      - name: Open PR with the diff (translate / complete modes)
-        if: github.event.inputs.mode == 'translate' || github.event.inputs.mode == 'complete'
+      - name: Publish report (review / complete modes)
+        if: github.event.inputs.mode == 'review' || github.event.inputs.mode == 'complete'
+        run: |
+          set -euo pipefail
+          MODE='${{ github.event.inputs.mode }}'
+          REPORT=$(ls -t tools/ai-content/reports/${MODE}-*.md 2>/dev/null | head -n 1 || true)
+          if [ -z "$REPORT" ]; then
+            echo '_(no report file produced)_' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # 1. Inline summary on the run page (no auth needed if you can see the run).
+          cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          # 2. Persisted copy at data/ai-reports/<mode>-latest.md so it's viewable
+          #    on GitHub web (public repo, no auth) and fetchable by the admin
+          #    console as static content. peter-evans/create-pull-request below
+          #    will pick this file up in the diff.
+          mkdir -p data/ai-reports
+          cp "$REPORT" "data/ai-reports/${MODE}-latest.md"
+
+      - name: Open PR with the diff (all modes)
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: |
@@ -94,22 +112,12 @@ jobs:
             - Category: `${{ github.event.inputs.category || '(all)' }}`
             - Limit: `${{ github.event.inputs.limit || '(none)' }}`
 
-            Review the diff before merging. `npm test` already passed in the
-            workflow, but sample a few generated entries for tone / accuracy
-            before squashing — the model can hallucinate dates and ABV.
+            For `review` runs the only diff is `data/ai-reports/review-latest.md`
+            (the markdown report). For `translate` / `complete` the diff also
+            touches `i18n/*.json`. Sample a few entries before merging — the
+            model can hallucinate dates and ABV.
           draft: true
           delete-branch: true
-
-      - name: Publish report inline (review / complete modes)
-        if: github.event.inputs.mode == 'review' || github.event.inputs.mode == 'complete'
-        run: |
-          set -euo pipefail
-          REPORT=$(ls -t tools/ai-content/reports/${{ github.event.inputs.mode }}-*.md 2>/dev/null | head -n 1 || true)
-          if [ -z "$REPORT" ]; then
-            echo '_(no report file produced)_' >> "$GITHUB_STEP_SUMMARY"
-          else
-            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
-          fi
 
       - name: Upload review report (review mode only)
         if: github.event.inputs.mode == 'review'
