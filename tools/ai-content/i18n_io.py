@@ -2,8 +2,10 @@
 
 Encapsulates the only two read concerns the CLI has:
   1. Read i18n/{lang}.json preserving key order so writes are minimal-diff.
-  2. Parse `PARITY_EXCLUDE_PREFIXES` out of tests/i18n-coverage.test.js so
-     translate.py knows which key prefixes are still ES-only debt.
+  2. Parse `PARITY_EXCLUDE_PREFIXES` out of js/i18n-exclusions.js so
+     translate.py knows which key prefixes are still ES-only debt. The
+     same module is imported by tests/i18n-coverage.test.js (Vitest) and
+     loaded at runtime by js/screens/Admin.jsx — single source of truth.
 
 We parse the JS file with a deliberately narrow regex instead of importing
 a JS engine — the file shape has been stable for months and the test would
@@ -19,7 +21,7 @@ from typing import Iterable
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 I18N_DIR = REPO_ROOT / "i18n"
-COVERAGE_TEST = REPO_ROOT / "tests" / "i18n-coverage.test.js"
+EXCLUSIONS_JS = REPO_ROOT / "js" / "i18n-exclusions.js"
 
 LANGS = ("es", "en", "fr", "pt", "de")
 SOURCE_LANG = "es"
@@ -67,19 +69,19 @@ def merge_translations(
 
 
 _PREFIX_BLOCK_RE = re.compile(
-    r"const\s+PARITY_EXCLUDE_PREFIXES\s*=\s*\[(.*?)\];",
+    r"export\s+const\s+PARITY_EXCLUDE_PREFIXES\s*=\s*\[(.*?)\];",
     re.DOTALL,
 )
 _PREFIX_ITEM_RE = re.compile(r"['\"]([^'\"]+)['\"]")
 
 
 def parse_parity_exclusions() -> list[str]:
-    """Extract the PARITY_EXCLUDE_PREFIXES list from i18n-coverage.test.js."""
-    text = COVERAGE_TEST.read_text(encoding="utf-8")
+    """Extract the PARITY_EXCLUDE_PREFIXES list from js/i18n-exclusions.js."""
+    text = EXCLUSIONS_JS.read_text(encoding="utf-8")
     block_match = _PREFIX_BLOCK_RE.search(text)
     if not block_match:
         raise RuntimeError(
-            f"PARITY_EXCLUDE_PREFIXES block not found in {COVERAGE_TEST}. "
+            f"PARITY_EXCLUDE_PREFIXES export not found in {EXCLUSIONS_JS}. "
             "Did the file format change?"
         )
     return _PREFIX_ITEM_RE.findall(block_match.group(1))

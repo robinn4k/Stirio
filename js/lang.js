@@ -1,4 +1,6 @@
 // ─── Language Management Module ──────────────────────────────
+import { PARITY_EXCLUDE_PREFIXES } from './i18n-exclusions.js';
+
 const STORAGE_KEY = 'stirio_lang';
 const DEFAULT_LANG = 'es';
 export const SUPPORTED_LANGS = ['es', 'en', 'fr', 'pt', 'de'];
@@ -118,4 +120,38 @@ export function translateHTML() {
     el.placeholder = t(el.dataset.i18nPlaceholder);
   });
   document.documentElement.lang = getLang();
+}
+
+/**
+ * Coverage metrics for the admin console. Compares each target language
+ * against the ES baseline, EXCLUDING keys whose prefix is in
+ * PARITY_EXCLUDE_PREFIXES (those are intentionally pending). Returns null
+ * if translations haven't been loaded yet (callers should retry after
+ * preloadAllTranslations resolves).
+ *
+ * Shape: { baseline, en: { translated, missing, percent }, fr: ..., pt: ..., de: ... }
+ *   percent ∈ [0, 1]
+ */
+export async function getCoverage() {
+  await preloadAllTranslations();
+  const es = translations[DEFAULT_LANG] || {};
+  const baselineKeys = Object.keys(es).filter(k =>
+    !PARITY_EXCLUDE_PREFIXES.some(p => k.startsWith(p))
+  );
+  const baseline = baselineKeys.length;
+  const targets = ['en', 'fr', 'pt', 'de'];
+  const out = { baseline };
+  for (const lang of targets) {
+    const dict = translations[lang] || {};
+    let translated = 0;
+    for (const k of baselineKeys) {
+      if (Object.prototype.hasOwnProperty.call(dict, k)) translated++;
+    }
+    out[lang] = {
+      translated,
+      missing: baseline - translated,
+      percent: baseline ? translated / baseline : 0,
+    };
+  }
+  return out;
 }
