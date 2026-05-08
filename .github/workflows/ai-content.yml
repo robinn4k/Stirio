@@ -71,6 +71,10 @@ jobs:
           fi
           python tools/ai-content/cli.py "${ARGS[@]}"
 
+      - name: Prune settled exclusions (translate mode only)
+        if: github.event.inputs.mode == 'translate'
+        run: python tools/ai-content/prune.py
+
       - name: Verify i18n parity (translate / complete modes)
         if: github.event.inputs.mode == 'translate' || github.event.inputs.mode == 'complete'
         run: |
