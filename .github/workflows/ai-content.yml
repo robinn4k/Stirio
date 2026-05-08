@@ -7,19 +7,20 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Mode (only translate is wired up so far)'
+        description: 'Mode'
         required: true
         default: 'translate'
         type: choice
         options:
           - translate
+          - review
       scope:
-        description: 'Key prefix to translate (blank = all PARITY_EXCLUDE_PREFIXES)'
+        description: 'Key prefix (blank = all PARITY_EXCLUDE_PREFIXES)'
         required: false
         default: ''
         type: string
       limit:
-        description: 'Cap keys per language (blank = no cap, useful for smoke tests)'
+        description: 'Cap keys/articles (blank = no cap, useful for smoke tests)'
         required: false
         default: ''
         type: string
@@ -58,13 +59,15 @@ jobs:
           fi
           python tools/ai-content/cli.py "${ARGS[@]}"
 
-      - name: Verify i18n parity
+      - name: Verify i18n parity (translate mode only)
+        if: github.event.inputs.mode == 'translate'
         run: |
           set -euo pipefail
           npm install --no-audit --no-fund
           npm test --silent
 
-      - name: Open PR with the diff
+      - name: Open PR with the diff (translate mode only)
+        if: github.event.inputs.mode == 'translate'
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: |
@@ -82,3 +85,12 @@ jobs:
             workflow, but check a sample translation for tone/accuracy.
           draft: true
           delete-branch: true
+
+      - name: Upload review report (review mode only)
+        if: github.event.inputs.mode == 'review'
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-report-${{ github.run_id }}
+          path: tools/ai-content/reports/review-*.md
+          if-no-files-found: error
+          retention-days: 30
