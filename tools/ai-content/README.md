@@ -77,10 +77,31 @@ report as an artifact (downloadable for 30 days from the run page).
 Default model is `llama-3.3-70b-versatile` because review needs reasoning;
 override with `--model llama-3.1-8b-instant` if you're rate-limited.
 
-### `complete`
+### `complete` — generate ES content for empty wiki articles
 
-Planned (see `/root/.claude/plans/ahora-podemos-meter-un-purrfect-robin.md` —
-roadmap PR 6). Not implemented yet.
+```bash
+# Smoke-test on a single category, capping to 3 stubs:
+python cli.py complete --category liqueurs --limit 3 --dry-run
+
+# Generate ES content for every empty article in the encyclopedia:
+python cli.py complete
+
+# Just the techniques category:
+python cli.py complete --category techniques
+```
+
+`complete` parses `js/wiki-data.js` to enumerate every `(category, article_id)`
+pair the wiki UI expects, then flags articles with **zero** keys in
+`i18n/es.json` as stubs. For each stub it sends the category id, article id,
+and 1-2 sibling articles (few-shot) to Groq and asks for a JSON object keyed
+by section (`description`, `history`, `how`, `tips`, `origin`, `production`,
+`sub` — the canonical set varies by category).
+
+Generated keys are appended to `i18n/es.json` (never overwriting). Then run
+`translate` to propagate the new ES content to EN/FR/PT/DE.
+
+The workflow opens a draft PR with the `i18n/es.json` diff, plus uploads a
+markdown summary as an artifact.
 
 ## GitHub Actions
 

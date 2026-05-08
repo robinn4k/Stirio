@@ -4,7 +4,7 @@
 Subcommands:
   translate   Fill missing i18n keys in EN/FR/PT/DE from ES.
   review      Fact-check / consistency review of ES content; emits markdown report.
-  complete    Generate ES content for empty stubs (planned).
+  complete    Generate ES content for empty wiki stubs and merge into es.json.
 
 Run `python cli.py <mode> --help` for flags. Reads tools/ai-content/.env
 for GROQ_API_KEY (copy .env.example).
@@ -21,6 +21,7 @@ from pathlib import Path
 # so `from groq_client import ...` works without packaging.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from complete import CompleteOptions, run as complete_run  # noqa: E402
 from i18n_io import TARGET_LANGS  # noqa: E402
 from review import ReviewOptions, run as review_run  # noqa: E402
 from translate import TranslateOptions, run as translate_run  # noqa: E402
@@ -122,6 +123,45 @@ def _build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Print the plan without calling Groq or writing the report.",
     )
+
+    p_complete = sub.add_parser(
+        "complete",
+        help="Detect empty wiki articles and generate ES content for them.",
+    )
+    p_complete.add_argument(
+        "--category",
+        action="append",
+        default=[],
+        help=(
+            "Restrict to one or more wiki-data.js category ids "
+            "(e.g. --category liqueurs --category amaros). Default: all categories."
+        ),
+    )
+    p_complete.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Cap number of stubs processed (smoke test).",
+    )
+    p_complete.add_argument(
+        "--model",
+        default=None,
+        help=(
+            "Override Groq model. Default: llama-3.1-8b-instant (groq_client.DEFAULT_MODEL). "
+            "Pass llama-3.3-70b-versatile for higher-stakes content."
+        ),
+    )
+    p_complete.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Custom report path. Default: tools/ai-content/reports/complete-<ts>.md",
+    )
+    p_complete.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the plan without calling Groq or modifying es.json.",
+    )
     return parser
 
 
@@ -152,6 +192,16 @@ def main(argv: list[str] | None = None) -> int:
             out=args.out,
         )
         return review_run(opts)
+
+    if args.mode == "complete":
+        opts = CompleteOptions(
+            categories=tuple(args.category),
+            dry_run=args.dry_run,
+            limit=args.limit,
+            model=args.model,
+            out=args.out,
+        )
+        return complete_run(opts)
 
     raise SystemExit(f"Unknown mode: {args.mode}")
 
