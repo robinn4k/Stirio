@@ -105,21 +105,41 @@ markdown summary as an artifact.
 
 ## GitHub Actions
 
-`.github/workflows/ai-content.yml` exposes a manual `workflow_dispatch` trigger
-in the GitHub UI ("Run workflow" → fill the inputs → submit). Required:
+Two workflows ship together. Both need the repo secret `GROQ_API_KEY`
+(Settings → Secrets and variables → Actions). The repo also needs **Allow
+auto-merge** turned on (Settings → General → Pull Requests) for the auto
+workflow's PRs to land without a click.
 
-- Repository secret `GROQ_API_KEY` (Settings → Secrets and variables → Actions).
-- Push access to the `main` branch (the workflow opens a PR, doesn't push directly).
+### `ai-content.yml` — manual
 
-Inputs:
+Manual `workflow_dispatch` trigger from the GitHub UI ("Run workflow" → pick
+mode → submit). Inputs:
 
-- `mode` — `translate` (only mode wired up so far).
-- `scope` — optional prefix; leave blank to use every prefix in
-  `PARITY_EXCLUDE_PREFIXES`.
-- `limit` — optional integer cap per language for testing.
+- `mode` — `translate`, `review`, or `complete`.
+- `scope` — prefix for translate / review (blank = all `PARITY_EXCLUDE_PREFIXES`).
+- `category` — wiki-data category for complete (blank = all).
+- `limit` — cap keys/articles/stubs for smoke tests.
 
-The workflow installs Python deps, runs the CLI, and opens a draft PR with the
-i18n diff so you can review before merging.
+Opens a **draft** PR with the diff so you review before merging. Use this
+for one-off scoped runs (e.g. `mode=translate scope=wiki.brand.`).
+
+### `ai-content-auto.yml` — automated
+
+Two triggers:
+
+- **Daily cron** at `06:00 UTC`: runs `complete` → `translate` → `prune`.
+  `complete` fills any new wiki stubs in `i18n/es.json`; `translate` propagates
+  every pending key into EN/FR/PT/DE; `prune` removes prefixes from
+  `js/i18n-exclusions.js` once they're 100% covered.
+- **Push hook on `i18n/es.json`**: any commit to main that touches the source
+  language file fires `translate` → `prune`. Skips if the head commit was
+  authored by the workflow itself (deterministic title prefix `AI content (auto):`).
+
+Opens a non-draft PR and enables squash auto-merge. Once `npm test` passes,
+GitHub merges automatically. The user does nothing.
+
+If you need to disable a single run, comment out the `cron` line or close the
+auto-generated PR before CI completes.
 
 ## Files
 
@@ -129,8 +149,13 @@ i18n diff so you can review before merging.
 | `groq_client.py` | Groq SDK wrapper with retries + usage tally |
 | `i18n_io.py` | JSON load/write, parity-exclusion parser, merge helper |
 | `translate.py` | `translate` mode logic |
+| `review.py` | `review` mode logic |
+| `complete.py` | `complete` mode logic (parses `js/wiki-data.js` for stubs) |
+| `prune.py` | post-translate housekeeping — drops fully-translated prefixes from `js/i18n-exclusions.js` |
 | `prompts/translate.txt` | system prompt template (uses `{{TARGET_LANG_*}}` placeholders) |
-| `reports/` | per-run markdown reports for `review` / `complete` (gitignored) |
+| `prompts/review.txt` | review prompt — severity-graded JSON output |
+| `prompts/complete.txt` | complete prompt — generates ES sections by category |
+| `reports/` | per-run markdown reports for `review` / `complete` (gitignored locally; the workflow also commits a copy at `data/ai-reports/<mode>-latest.md`) |
 
 ## Cost
 

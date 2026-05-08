@@ -1,0 +1,91 @@
+name: AI content (auto)
+
+# Two triggers:
+#   - Daily cron at 06:00 UTC: runs the chain complete → translate → prune.
+#   - Push to main when i18n/es.json changes (e.g., manually edited keys):
+#     runs translate → prune so EN/FR/PT/DE catch up immediately.
+# Bot-authored pushes are skipped via the head_commit.message check, so the
+# workflow doesn't ping-pong with itself when the auto-merge lands its own PR.
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'i18n/es.json'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # Only one auto run at a time so a slow translate doesn't race a push hook.
+  group: ai-content-auto
+  cancel-in-progress: false
+
+jobs:
+  run:
+    # Skip when the push that triggered this workflow was the auto-merged PR
+    # we ourselves just landed — the title prefix is deterministic.
+    if: ${{ github.event_name == 'schedule' || !startsWith(github.event.head_commit.message, 'AI content') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        working-directory: tools/ai-content
+        run: pip install -r requirements.txt
+
+      # On schedule we run complete first so translate picks up any new ES keys
+      # in the same workflow. On push we skip complete (the push was somebody
+      # editing es.json by hand or the previous chain landing — translate is
+      # all that's needed to bring the other langs up to date).
+      - name: Run complete (scheduled only)
+        if: github.event_name == 'schedule'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python tools/ai-content/cli.py complete
+
+      - name: Run translate
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python tools/ai-content/cli.py translate
+
+      - name: Prune settled exclusions
+        run: python tools/ai-content/prune.py
+
+      - name: Verify i18n parity
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund
+          npm test --silent
+
+      - name: Open PR (non-draft so auto-merge can fire)
+        id: pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: |
+            AI content (auto): ${{ github.event_name }}
+          branch: ai-content/auto-${{ github.run_id }}
+          title: 'AI content (auto): ${{ github.event_name }}'
+          body: |
+            Auto-run by `.github/workflows/ai-content-auto.yml`.
+
+            - Trigger: `${{ github.event_name }}`
+            - Steps: ${{ github.event_name == 'schedule' && 'complete → translate → prune' || 'translate → prune' }}
+
+            `npm test` (i18n-coverage parity) already passed in the workflow.
+            Auto-merge enabled — once the PR's required checks land, GitHub
+            squash-merges automatically.
+          delete-branch: true
+
+      - name: Enable auto-merge
+        if: steps.pr.outputs.pull-request-number
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.pr.outputs.pull-request-number }}
+          merge-method: squash
