@@ -3,7 +3,7 @@
 // Split from the former monolithic js/screens.jsx (PR #145).
 
 // ═══════════════ PROFILE ═══════════════
-const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, tweaks, onChangeTweak, playShortcuts }) => {
+const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, tweaks, onChangeTweak, playShortcuts, onOpenAdmin }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const [editingName, setEditingName] = React.useState(false);
   const [tmpName, setTmpName] = React.useState(profile.name || '');
@@ -347,6 +347,20 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
               </span>
             }
           />
+          {window.isAdminUser && window.isAdminUser() && onOpenAdmin && (
+            <SettingsRow
+              icon="🔧"
+              label={tr('profile.admin_panel', 'Consola admin')}
+              value={
+                <button
+                  onClick={onOpenAdmin}
+                  style={{ color: 'var(--cyan, var(--amber))', fontSize: 13, fontFamily: 'var(--f-mono)', display: 'flex', alignItems: 'center', gap: 4 }}
+                >
+                  {tr('profile.admin_cta', 'Abrir')} <Icon name="arrowR" size={12} />
+                </button>
+              }
+            />
+          )}
 
           <SettingsDivider />
 

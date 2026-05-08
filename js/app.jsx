@@ -1313,7 +1313,7 @@ const App = () => {
         />
       )}
 
-      {screen === 'profile' && !activeLesson && (
+      {screen === 'profile' && !activeLesson && !subScreen && (
         <Profile
           profile={profile}
           onBack={() => setScreen('home')}
@@ -1321,6 +1321,7 @@ const App = () => {
           tweaks={tweaks}
           onChangeTweak={updateTweak}
           playShortcuts={PLAY_SHORTCUTS}
+          onOpenAdmin={() => setSubScreen('admin')}
           onResetData={() => {
             setProfile(p => ({ ...p, xp: 0, level: 1, streak: 0 }));
           }}
@@ -1331,6 +1332,10 @@ const App = () => {
             setScreen('onboarding');
           }}
         />
+      )}
+
+      {subScreen === 'admin' && !activeLesson && (
+        <AdminScreen onBack={() => setSubScreen(null)} />
       )}
 
       {activeLesson && (
