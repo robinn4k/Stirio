@@ -148,21 +148,22 @@ async function fetchLeaderboard() {
         } catch (e) { console.warn('leaderboard backstop query failed:', e); }
       }
 
-      // Firestore reachable — return whatever it had (possibly empty), NOT
-      // the single-user local fallback. The local fallback only kicks in
-      // when Firestore is genuinely unreachable; a transient query error
-      // shouldn't fake a one-row board that hides real users.
+      // Firestore reachable AND query succeeded — return whatever it had
+      // (possibly empty). This is a legitimate "no other players" empty state.
       return sortByRank(rows);
     } catch (e) {
       console.error('Leaderboard Firestore query failed:', e && e.code, e && e.message);
-      // Firestore was reachable but the query failed — return empty so the
-      // UI shows "no ranking yet" instead of a misleading solo board.
-      return [];
+      // Don't return [] here — that would leave a signed-in user staring at
+      // the empty-state copy ("juega una partida para aparecer aquí") even
+      // though they ARE in /users/{uid}. Fall through to the single-user
+      // fallback below, which at least shows them their own row.
     }
   }
 
-  // Firestore unavailable: synthesize a single-user row so the user still
-  // sees themselves on the offline/initial-boot ranking.
+  // Firestore unavailable OR query threw: synthesize a single-user row so the
+  // user still sees themselves on the offline / initial-boot / transient-error
+  // ranking. The "no ranking yet" empty state is reserved for the case where
+  // Firestore explicitly returned zero docs.
   const user = getCurrentUser();
   if (!user) return [];
   const local = getLocalUserStats();
