@@ -55,10 +55,32 @@ cd ../..
 npm test  # i18n-coverage.test.js verifies parity
 ```
 
-### `review` and `complete`
+### `review` — fact-check ES content
+
+```bash
+# Smoke-test on 5 spirit articles using the cheaper free-tier model:
+python cli.py review --scope wiki.art.spirits. --limit 5 --model llama-3.1-8b-instant
+
+# Full review of the freshly-translated content (default = PARITY_EXCLUDE_PREFIXES):
+python cli.py review
+
+# Just one article family with the better reasoning model (default for review):
+python cli.py review --scope wiki.art.history.
+```
+
+Output: `reports/review-<utc-timestamp>.md` with issues sorted by severity
+(high → medium → low). The mode never modifies `i18n/*.json` — apply fixes
+manually based on the suggestions, then run `translate` again if you want
+to re-sync the other languages. The GitHub Actions workflow uploads the
+report as an artifact (downloadable for 30 days from the run page).
+
+Default model is `llama-3.3-70b-versatile` because review needs reasoning;
+override with `--model llama-3.1-8b-instant` if you're rate-limited.
+
+### `complete`
 
 Planned (see `/root/.claude/plans/ahora-podemos-meter-un-purrfect-robin.md` —
-roadmap PRs 4 and 5). Not implemented in this initial drop.
+roadmap PR 6). Not implemented yet.
 
 ## GitHub Actions
 

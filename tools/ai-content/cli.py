@@ -2,11 +2,11 @@
 """Stirio AI content tooling — entrypoint.
 
 Subcommands:
-  translate   Fill missing i18n keys in EN/FR/PT/DE from ES (MVP).
-  review      Fact-check ES content, emit a markdown report (planned).
+  translate   Fill missing i18n keys in EN/FR/PT/DE from ES.
+  review      Fact-check / consistency review of ES content; emits markdown report.
   complete    Generate ES content for empty stubs (planned).
 
-Run `python cli.py translate --help` for flags. Reads tools/ai-content/.env
+Run `python cli.py <mode> --help` for flags. Reads tools/ai-content/.env
 for GROQ_API_KEY (copy .env.example).
 """
 
@@ -22,6 +22,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from i18n_io import TARGET_LANGS  # noqa: E402
+from review import ReviewOptions, run as review_run  # noqa: E402
 from translate import TranslateOptions, run as translate_run  # noqa: E402
 
 
@@ -81,6 +82,46 @@ def _build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Print the plan without calling Groq or writing files.",
     )
+
+    p_review = sub.add_parser(
+        "review",
+        help="Fact-check ES articles and emit a markdown report (no i18n writes).",
+    )
+    p_review.add_argument(
+        "--scope",
+        action="append",
+        default=[],
+        help=(
+            "Only review keys with this prefix (e.g. wiki.art.spirits.). "
+            "Default: every prefix in PARITY_EXCLUDE_PREFIXES, which is the "
+            "freshly-translated content most worth sanity-checking."
+        ),
+    )
+    p_review.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Cap the number of articles reviewed (smoke test).",
+    )
+    p_review.add_argument(
+        "--model",
+        default=None,
+        help=(
+            "Override Groq model. Default: llama-3.3-70b-versatile (review is "
+            "reasoning-heavy, low-volume — the 70b TPM cap rarely matters)."
+        ),
+    )
+    p_review.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Custom report path. Default: tools/ai-content/reports/review-<ts>.md",
+    )
+    p_review.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the plan without calling Groq or writing the report.",
+    )
     return parser
 
 
@@ -101,6 +142,16 @@ def main(argv: list[str] | None = None) -> int:
             model=args.model,
         )
         return translate_run(opts)
+
+    if args.mode == "review":
+        opts = ReviewOptions(
+            scopes=tuple(args.scope),
+            dry_run=args.dry_run,
+            limit=args.limit,
+            model=args.model,
+            out=args.out,
+        )
+        return review_run(opts)
 
     raise SystemExit(f"Unknown mode: {args.mode}")
 
