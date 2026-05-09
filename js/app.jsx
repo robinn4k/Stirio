@@ -1335,7 +1335,18 @@ const App = () => {
       )}
 
       {subScreen === 'admin' && !activeLesson && (
-        <AdminScreen onBack={() => setSubScreen(null)} />
+        window.AdminScreen
+          ? <AdminScreen onBack={() => setSubScreen(null)} />
+          : (
+            <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 720, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+              <button className="btn ghost" onClick={() => setSubScreen(null)} style={{ padding: 8, marginBottom: 18 }}>
+                <Icon name="arrowL" size={18} /> Back
+              </button>
+              <div className="card" style={{ padding: 24, textAlign: 'center', color: 'var(--ink-2)' }}>
+                Admin module not loaded yet — pull to refresh and try again.
+              </div>
+            </div>
+          )
       )}
 
       {activeLesson && (
