@@ -24,7 +24,11 @@ const GITHUB_API = 'https://api.github.com';
 
 function isAdminUser() {
   const me = window.stAuth?.getCurrentUser?.();
-  return !!(me && !me.isGuest && me.email === ADMIN_EMAIL);
+  if (!me || me.isGuest) return false;
+  const email = (me.email || '').trim().toLowerCase();
+  const ok = email === ADMIN_EMAIL;
+  if (!ok && email) console.info('[admin] gate denied for', email);
+  return ok;
 }
 
 const AdminScreen = ({ onBack }) => {
