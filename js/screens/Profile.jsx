@@ -356,7 +356,16 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
               </span>
             }
           />
-          {window.isAdminUser && window.isAdminUser() && onOpenAdmin && (
+          {(() => {
+            // Inline admin gate — kept self-contained so the row appears even
+            // if Admin.jsx failed to register window.isAdminUser (partial SW
+            // cache on iOS Safari, async script ordering, etc.). Same logic
+            // as Admin.jsx's isAdminUser, copied here on purpose.
+            const me = window.stAuth?.getCurrentUser?.();
+            if (!me || me.isGuest || !onOpenAdmin) return false;
+            const email = (me.email || '').trim().toLowerCase();
+            return email === 'robinn4k@gmail.com';
+          })() && (
             <SettingsRow
               icon="🔧"
               label={tr('profile.admin_panel', 'Consola admin')}
