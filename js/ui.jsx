@@ -234,6 +234,13 @@ const Skeleton = ({ h = 16, w = '100%', radius = 8, style }) => (
 
 // ── Confetti burst ────────────────────────────────────────────
 const confettiBurst = (x, y, colors = ['var(--amber)', 'var(--cyan)', 'var(--lime)', 'var(--berry)', 'var(--violet)']) => {
+  // Skip celebration animation for users who explicitly asked for less motion,
+  // either via the in-app toggle or at the OS level. Quiz/lesson logic is
+  // independent of confetti, so this only affects visuals.
+  try {
+    if (document.documentElement?.dataset?.reduceMotion === '1') return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  } catch {}
   const root = document.body;
   for (let i = 0; i < 26; i++) {
     const el = document.createElement('div');
@@ -392,7 +399,7 @@ const ToastHost = () => {
   const kindIcon = { xp: 'bolt', level: 'sparkle', achievement: 'trophy', info: 'check', error: 'close' };
   return (
     <div style={{
-      position: 'fixed', left: '50%', bottom: 'calc(80px + env(safe-area-inset-bottom, 0))',
+      position: 'fixed', left: '50%', bottom: 'calc(110px + env(safe-area-inset-bottom, 0))',
       transform: 'translateX(-50%)',
       zIndex: 1000, display: 'flex', flexDirection: 'column-reverse', gap: 8,
       pointerEvents: 'none', width: 'min(92vw, 360px)',

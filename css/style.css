@@ -33,6 +33,17 @@ html[data-reduce-motion="1"] *::after {
   scroll-behavior: auto !important;
 }
 
+/* Honour OS-level Reduce Motion in addition to the in-app toggle so users
+   who never opened the settings still get a calm experience. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   min-height: 100dvh;
   /* Three layered radials so the page reads warm instead of flat black:
@@ -70,10 +81,15 @@ body::before {
 /* ── Base elements ── */
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+button:disabled { cursor: not-allowed; }
 input, textarea, select { font: inherit; color: inherit; }
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--amber); outline-offset: 2px;
+}
 img { display: block; max-width: 100%; }
 a { color: var(--amber); text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 4px; }
 
 /* safe-area insets for mobile notch/home bar */
 @supports (env(safe-area-inset-top)) {
@@ -136,14 +152,23 @@ input[type=range]::-moz-range-thumb {
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 12px 18px; border-radius: var(--r-pill);
+  /* Trim vertical padding by 1px so adding min-height: 44 doesn't make .btn
+     visually grow on screens that already render at 40px. */
+  padding: 11px 18px; border-radius: var(--r-pill);
+  min-height: 44px;
   background: var(--bg-2); color: var(--ink-0);
   border: 1px solid var(--line-soft);
   font-weight: 500; font-size: 14px;
-  transition: transform .12s ease, background .2s, border-color .2s;
+  transition: transform .12s ease, background .2s, border-color .2s, opacity .15s;
 }
 .btn:hover { background: var(--bg-3); border-color: var(--line); }
 .btn:active { transform: translateY(1px); }
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 .btn.primary {
   background: var(--amber); color: oklch(0.2 0.04 60);
   border-color: transparent;
@@ -168,7 +193,10 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
   transition: background .15s, border-color .15s, transform .1s;
 }
-.choice-btn:disabled { cursor: default; }
+.choice-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
 @media (hover: hover) {
   .choice-btn:hover:not(:disabled) {
     background: var(--bg-3) !important;
@@ -177,6 +205,11 @@ input[type=range]::-moz-range-thumb {
   }
 }
 .choice-btn:focus:not(:focus-visible) { outline: none; }
+.choice-btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+  border-color: var(--amber);
+}
 
 /* ── Horizontal lesson carousel (Home → 60s queue) ── */
 .lesson-carousel::-webkit-scrollbar { display: none; }
@@ -274,7 +307,8 @@ body:has(.legal-page) {
 }
 .legal-page-header a {
   display: grid; place-items: center;
-  width: 38px; height: 38px;
+  width: 40px; height: 40px;
+  min-width: 40px; min-height: 40px;
   border-radius: var(--r-pill);
   background: var(--bg-1);
   border: 1px solid var(--line-soft);
@@ -434,7 +468,7 @@ body:has(.legal-page) {
 @media (max-width: 560px) {
   .legal-page { padding: 16px 12px 44px; font-size: 14.5px; line-height: 1.6; }
   .legal-page-header { padding: 2px 0 14px; margin-bottom: 14px; gap: 10px; }
-  .legal-page-header a { width: 34px; height: 34px; font-size: 16px; }
+  .legal-page-header a { width: 40px; height: 40px; min-width: 40px; min-height: 40px; font-size: 16px; }
   .legal-page-header h1 { font-size: 1.2rem; }
   .legal-nav { gap: 5px; margin-bottom: 16px; }
   .legal-nav a { padding: 6px 11px; font-size: 10.5px; }

@@ -245,7 +245,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound, onOpenFicha
       <div className="screen-frame" style={{ maxWidth: 760, margin: '0 auto', paddingBottom: 120 }}>
       {/* Header */}
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
-        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
+        <button onClick={onBack} className="btn" aria-label={tr('app.back', 'Volver')} style={{ padding: 0, width: 44, height: 44, borderRadius: '50%' }}>
           <Icon name="arrowL" size={16} />
         </button>
         <div>
@@ -269,7 +269,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound, onOpenFicha
               onClick={() => pickTrack(t)}
               className="chip"
               style={{
-                padding: '8px 14px', borderRadius: 'var(--r-pill)',
+                padding: '10px 14px', borderRadius: 'var(--r-pill)', minHeight: 40,
                 display: 'flex', alignItems: 'center', gap: 8,
                 background: active ? `linear-gradient(135deg, ${m.color}, oklch(0.3 0.05 60))` : 'var(--bg-2)',
                 color: active ? 'var(--bg-0)' : 'var(--ink-1)',
@@ -284,7 +284,7 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound, onOpenFicha
               {total > 0 && (
                 <span className="mono" style={{
                   fontSize: 10, opacity: 0.85,
-                  padding: '1px 6px', borderRadius: 99,
+                  padding: '1px 6px', borderRadius: 'var(--r-pill)',
                   background: active ? 'rgba(0,0,0,0.18)' : 'var(--bg-3)',
                 }}>{done}/{total}</span>
               )}
@@ -412,6 +412,11 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
   const _t = (k, f) => (window.stLang && window.stLang.t) ? window.stLang.t(k) : (f || k);
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const sequence = level.sequence || [];
+  React.useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose && onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
   return (
     <div onClick={onClose} style={{
       position: 'fixed', inset: 0, zIndex: 55,
@@ -419,11 +424,13 @@ const LevelDetail = ({ level, progress, onClose, onStartLesson, onStartPractice 
       display: 'grid', placeItems: 'end center',
       animation: 'fadeIn .25s',
     }}>
-      <div onClick={e => e.stopPropagation()} style={{
+      <div onClick={e => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={_t(level.key)} style={{
         width: '100%', maxWidth: 560, maxHeight: '86dvh',
         background: 'var(--bg-1)',
         borderRadius: '24px 24px 0 0',
-        padding: 24, overflowY: 'auto',
+        padding: 24,
+        paddingBottom: 'calc(24px + env(safe-area-inset-bottom, 0))',
+        overflowY: 'auto',
         borderTop: `4px solid ${level.color}`,
         animation: 'slideUp .35s cubic-bezier(.2,1.1,.3,1)',
       }}>
@@ -570,7 +577,7 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
     <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
       <div className="screen-frame" style={{ maxWidth: 1080, margin: '0 auto', paddingBottom: 120 }}>
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
-        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
+        <button onClick={onBack} className="btn" aria-label={tr('app.back', 'Volver')} style={{ padding: 0, width: 44, height: 44, borderRadius: '50%' }}>
           <Icon name="arrowL" size={16} />
         </button>
         <div>
@@ -608,10 +615,10 @@ const FichasScreen = ({ onBack, onOpenFicha }) => {
       {/* Category filter */}
       <div style={{ padding: '0 24px 14px', display: 'flex', gap: 6, overflowX: 'auto', scrollbarWidth: 'none' }}>
         {categories.map(c => (
-          <button key={c} onClick={() => setCat(c)} className="mono caps" style={{
+          <button key={c} onClick={() => setCat(c)} aria-pressed={cat === c} className="mono caps" style={{
             flexShrink: 0,
-            padding: '7px 12px',
-            borderRadius: 99,
+            padding: '10px 14px', minHeight: 36,
+            borderRadius: 'var(--r-pill)',
             fontSize: 10,
             background: cat === c ? 'var(--amber)' : 'var(--bg-2)',
             color: cat === c ? 'var(--bg-0)' : 'var(--ink-2)',
@@ -703,6 +710,11 @@ const mlStringToOz = (str) => str.replace(/(\d+(?:[.,]\d+)?)\s*ml\b/gi, (_, num)
 const FichaDetail = ({ ficha, units = 'ml', onClose }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const heroImg = window.getFichaImage ? window.getFichaImage(ficha.name) : null;
+  React.useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose && onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
   return (
   <div onClick={onClose} style={{
     position: 'fixed', inset: 0, zIndex: 60,
@@ -710,11 +722,12 @@ const FichaDetail = ({ ficha, units = 'ml', onClose }) => {
     display: 'grid', placeItems: 'end center',
     animation: 'fadeIn .25s',
   }}>
-    <div onClick={e => e.stopPropagation()} style={{
+    <div onClick={e => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={ficha.name} style={{
       width: '100%', maxWidth: 520, maxHeight: '90dvh',
       background: 'var(--bg-1)',
       borderRadius: '24px 24px 0 0',
       overflowY: 'auto',
+      paddingBottom: 'env(safe-area-inset-bottom, 0)',
       animation: 'slideUp .4s cubic-bezier(.2,1.1,.3,1)',
       position: 'relative',
     }}>
@@ -728,12 +741,14 @@ const FichaDetail = ({ ficha, units = 'ml', onClose }) => {
         borderRadius: '24px 24px 0 0',
         position: 'relative',
       }}>
-        <button onClick={onClose} style={{
-          position: 'absolute', top: 14, right: 14,
-          width: 32, height: 32, borderRadius: '50%',
-          background: 'rgba(0,0,0,0.4)', display: 'grid', placeItems: 'center',
+        <button onClick={onClose} aria-label={tr('mode.close', 'Cerrar')} style={{
+          position: 'absolute', top: 12, right: 12,
+          width: 40, height: 40, borderRadius: '50%',
+          background: 'rgba(0,0,0,0.55)', display: 'grid', placeItems: 'center',
+          border: '1px solid rgba(255,255,255,0.18)',
+          color: 'var(--ink-0)',
         }}>
-          <Icon name="close" size={16} />
+          <Icon name="close" size={18} />
         </button>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
           <div style={{ width: 40, height: 4, borderRadius: 4, background: 'rgba(255,255,255,0.3)' }} />
@@ -831,7 +846,7 @@ const FreeQuizScreen = ({ onBack, onStartRound }) => {
     <div style={{ minHeight: '100dvh', background: 'var(--bg-0)' }}>
       <div className="screen-frame" style={{ maxWidth: 760, margin: '0 auto', paddingBottom: 120 }}>
       <div style={{ padding: '20px 24px 8px', display: 'flex', alignItems: 'center', gap: 12 }}>
-        <button onClick={onBack} className="btn" style={{ padding: 8, width: 40, height: 40, borderRadius: '50%' }}>
+        <button onClick={onBack} className="btn" aria-label={tr('app.back', 'Volver')} style={{ padding: 0, width: 44, height: 44, borderRadius: '50%' }}>
           <Icon name="arrowL" size={16} />
         </button>
         <div>
