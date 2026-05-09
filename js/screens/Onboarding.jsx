@@ -323,6 +323,11 @@ const Onboarding = ({ onDone, bootstrapping }) => {
   const [googleUser, setGoogleUser] = useState(null); // {uid,name,email,photo} from Firebase
   const [authLoading, setAuthLoading] = useState(false);
   const [authError, setAuthError] = useState(null);
+  // iOS Safari escape hatch: when GIS prompt() is suppressed by the browser
+  // (auth/gis-not-displayed), we render the official Google button into
+  // gisBtnRef and ask the user to tap it. Set by handleGoogle.
+  const [showGISButton, setShowGISButton] = useState(false);
+  const gisBtnRef = useRef(null);
   // Email flow: 'idle' hides the form; 'signup' / 'signin' show it with the
   // matching mode. Inputs live in the same component so back/forward preserves.
   const [emailMode, setEmailMode] = useState('idle'); // 'idle' | 'signup' | 'signin'
@@ -386,8 +391,9 @@ const Onboarding = ({ onDone, bootstrapping }) => {
   //
   // The pending-onboarding stash is written once up-front; popup/redirect
   // paths need it on return, GIS path removes it after successful sign-in.
-  const handleGoogle = () => {
+  const handleGoogle = async () => {
     setAuthError(null);
+    setShowGISButton(false);
     if (!window.stAuth || !window.stAuth.isFirebaseReady?.()) {
       setAuthError(tr('onboarding.auth_unavailable', 'Auth no disponible'));
       return;
@@ -401,6 +407,7 @@ const Onboarding = ({ onDone, bootstrapping }) => {
 
     const completeWithUser = (user) => {
       try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+      setShowGISButton(false);
       setAuthMode('google');
       setGoogleUser(user);
       setName(user.name || name);
@@ -436,19 +443,61 @@ const Onboarding = ({ onDone, bootstrapping }) => {
         });
     };
 
-    // Try GIS first when configured + script available. Otherwise skip
-    // straight to popup/redirect.
-    if (window.stAuth.isGISReady?.()) {
-      window.stAuth.signInWithGoogleGIS()
-        .then(completeWithUser)
-        .catch((e) => {
-          console.warn('[auth] GIS failed, falling back to popup', e?.code || e);
-          fallbackToPopup();
-        });
-    } else {
+    // Wait briefly for the async-loaded GIS script to land before deciding.
+    const gisReady = window.stAuth.waitForGISReady
+      ? await window.stAuth.waitForGISReady(3000)
+      : !!window.stAuth.isGISReady?.();
+
+    if (!gisReady) {
+      fallbackToPopup();
+      return;
+    }
+
+    // Try GIS One Tap first. On iOS Safari it's typically suppressed
+    // (browser_not_supported / opt_out_or_no_session) — in that case we
+    // render the official Google button instead of falling back to
+    // popup/redirect, because both are broken on iOS Safari PWAs.
+    try {
+      const user = await window.stAuth.signInWithGoogleGIS();
+      completeWithUser(user);
+    } catch (e) {
+      const code = e?.code || '';
+      if (code === 'auth/gis-not-displayed') {
+        console.info('[auth] GIS prompt not displayed, rendering button instead', e?.message || '');
+        setShowGISButton(true);
+        // The useEffect below will pick this up and call renderGISButton.
+        return;
+      }
+      console.warn('[auth] GIS failed, falling back to popup', code || e);
       fallbackToPopup();
     }
   };
+
+  // When showGISButton flips to true, mount the official Google button via
+  // GIS renderButton. Only path that works on iOS Safari standalone PWAs.
+  useEffect(() => {
+    if (!showGISButton || !gisBtnRef.current) return;
+    const completeWithUser = (user) => {
+      try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+      setShowGISButton(false);
+      setAuthMode('google');
+      setGoogleUser(user);
+      setName(user.name || name);
+      submit({ authMode: 'google', googleUser: user, name: user.name || name });
+    };
+    window.stAuth.renderGISButton(gisBtnRef.current)
+      .then(completeWithUser)
+      .catch((err) => {
+        console.warn('[auth] renderGISButton failed', err?.code || err);
+        try { localStorage.removeItem(PENDING_ONBOARDING_KEY); } catch {}
+        setShowGISButton(false);
+        setAuthError(googleErrorMessage(err));
+        setAuthLoading(false);
+      });
+    // We deliberately re-fire this effect only when showGISButton transitions;
+    // re-renders that change `name` shouldn't tear down the rendered button.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showGISButton]);
 
   const handleGuest = () => {
     setAuthError(null);
@@ -849,6 +898,14 @@ const Onboarding = ({ onDone, bootstrapping }) => {
                   </svg>
                   {authLoading ? tr('ui.loading', 'Cargando…') : tr('login.google', 'Continuar con Google')}
                 </button>
+                {showGISButton && (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '4px 0' }}>
+                    <p style={{ color: 'var(--ink-2)', fontSize: 12, margin: 0, textAlign: 'center', maxWidth: 280 }}>
+                      {tr('onboarding.gis_button_hint', 'Toca el botón de Google de abajo para continuar')}
+                    </p>
+                    <div ref={gisBtnRef} />
+                  </div>
+                )}
                 <button
                   onClick={() => openEmail('signup')}
                   className="btn"
