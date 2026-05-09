@@ -2,6 +2,7 @@
 """Stirio AI content tooling — entrypoint.
 
 Subcommands:
+  seed        Pull N items from backlog.json into js/wiki-data.js (no API call).
   translate   Fill missing i18n keys in EN/FR/PT/DE from ES.
   review      Fact-check / consistency review of ES content; emits markdown report.
   complete    Generate ES content for empty wiki stubs and merge into es.json.
@@ -24,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from complete import CompleteOptions, run as complete_run  # noqa: E402
 from i18n_io import TARGET_LANGS  # noqa: E402
 from review import ReviewOptions, run as review_run  # noqa: E402
+import seed as seed_mod  # noqa: E402
 from translate import TranslateOptions, run as translate_run  # noqa: E402
 
 
@@ -162,6 +164,22 @@ def _build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Print the plan without calling Groq or modifying es.json.",
     )
+
+    p_seed = sub.add_parser(
+        "seed",
+        help="Pull N items from backlog.json into wiki-data.js (no API call).",
+    )
+    p_seed.add_argument(
+        "--limit",
+        type=int,
+        default=3,
+        help="Number of items to seed this run (default 3 — matches the cron rate).",
+    )
+    p_seed.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the plan without modifying wiki-data.js or backlog.json.",
+    )
     return parser
 
 
@@ -202,6 +220,12 @@ def main(argv: list[str] | None = None) -> int:
             out=args.out,
         )
         return complete_run(opts)
+
+    if args.mode == "seed":
+        seed_argv = ["--limit", str(args.limit)]
+        if args.dry_run:
+            seed_argv.append("--dry-run")
+        return seed_mod.main(seed_argv)
 
     raise SystemExit(f"Unknown mode: {args.mode}")
 

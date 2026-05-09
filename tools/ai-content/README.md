@@ -25,6 +25,24 @@ cp .env.example .env
 
 ## Modes
 
+### `seed` — pull article IDs from the backlog into wiki-data.js
+
+```bash
+# Plan-only — show what the next cron run would inject:
+python cli.py seed --limit 3 --dry-run
+
+# Real seed (default 3 items, round-robin across categories):
+python cli.py seed
+```
+
+`tools/ai-content/backlog.json` is the year-long content roadmap (~760
+article IDs across 16 categories). Each invocation pops N items and adds
+them to the matching category's `articles` array in `js/wiki-data.js`.
+Items already present are skipped. `complete` and `translate` (downstream
+in the workflow) generate ES content and propagate to EN/FR/PT/DE.
+
+
+
 ### `translate` — fill missing i18n keys
 
 ```bash

@@ -40,10 +40,15 @@ jobs:
         working-directory: tools/ai-content
         run: pip install -r requirements.txt
 
-      # On schedule we run complete first so translate picks up any new ES keys
-      # in the same workflow. On push we skip complete (the push was somebody
-      # editing es.json by hand or the previous chain landing — translate is
-      # all that's needed to bring the other langs up to date).
+      # On schedule: seed pulls 3 new article ids from backlog.json into
+      # wiki-data.js, complete fills ES content for them (and any other
+      # stubs), translate propagates to EN/FR/PT/DE. Push runs skip seed +
+      # complete because the trigger is es.json itself — only translate +
+      # prune are needed to bring targets in sync.
+      - name: Seed new articles from backlog (scheduled only)
+        if: github.event_name == 'schedule'
+        run: python tools/ai-content/cli.py seed --limit 3
+
       - name: Run complete (scheduled only)
         if: github.event_name == 'schedule'
         env:
