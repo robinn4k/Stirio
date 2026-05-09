@@ -351,6 +351,100 @@ async function signInWithGoogleGIS() {
   return currentUser;
 }
 
+// Polls isGISReady() until true or timeout. The GIS script
+// (accounts.google.com/gsi/client) is loaded `async defer` from index.html,
+// so on slow networks (or right after a Clear site data) the synchronous
+// isGISReady() may return false at the moment the user taps sign-in, sending
+// the flow straight to popup/redirect. waitForGISReady gives the script a few
+// seconds to land before we give up.
+function waitForGISReady(timeoutMs = 3000) {
+  return new Promise((resolve) => {
+    if (isGISReady()) return resolve(true);
+    const start = Date.now();
+    const poll = () => {
+      if (isGISReady()) return resolve(true);
+      if (Date.now() - start >= timeoutMs) return resolve(false);
+      setTimeout(poll, 100);
+    };
+    setTimeout(poll, 100);
+  });
+}
+
+// Renders the official Google "Sign in with Google" button into the given
+// container element via google.accounts.id.renderButton. The button click
+// triggers the GIS credential flow without redirect or popup, which is the
+// only reliable Google sign-in path on iOS Safari (ITP breaks
+// signInWithRedirect, and signInWithPopup is blocked in standalone PWAs).
+//
+// Used as a fallback by Onboarding.handleGoogle when GIS prompt() returns
+// `auth/gis-not-displayed` (the iOS Safari case).
+async function renderGISButton(containerEl, opts = {}) {
+  if (!auth || !authMod) {
+    const err = new Error('Firebase no configurado.');
+    err.code = 'auth/not-initialized';
+    throw err;
+  }
+  if (!isGISReady()) {
+    const err = new Error('GIS no disponible (cliente ID o script de Google no listo).');
+    err.code = 'auth/gis-unavailable';
+    throw err;
+  }
+  if (!containerEl) {
+    const err = new Error('renderGISButton requiere un elemento DOM.');
+    err.code = 'auth/gis-no-container';
+    throw err;
+  }
+  initGISIfNeeded();
+
+  const idToken = await new Promise((resolve, reject) => {
+    let settled = false;
+    gisTokenResolver = {
+      resolve: (token) => {
+        if (settled) return;
+        settled = true;
+        if (token) resolve(token);
+        else {
+          const err = new Error('Google no devolvió credencial.');
+          err.code = 'auth/gis-no-credential';
+          reject(err);
+        }
+      },
+    };
+    try {
+      window.google.accounts.id.renderButton(containerEl, {
+        type: 'standard',
+        theme: 'filled_black',
+        size: 'large',
+        text: 'continue_with',
+        shape: 'pill',
+        logo_alignment: 'left',
+        ...opts,
+      });
+    } catch (e) {
+      if (settled) return;
+      settled = true;
+      gisTokenResolver = null;
+      reject(e);
+    }
+  });
+
+  const { GoogleAuthProvider, signInWithCredential } = authMod;
+  const credential = GoogleAuthProvider.credential(idToken);
+  const result = await signInWithCredential(auth, credential);
+  const u = result.user;
+  currentUser = {
+    uid: u.uid,
+    name: u.displayName || u.email?.split('@')[0] || t('auth.google_player'),
+    email: u.email,
+    photo: u.photoURL,
+    provider: 'google',
+    isGuest: false,
+  };
+  saveUserLocal(currentUser);
+  seedUserDoc(currentUser);
+  return currentUser;
+}
+
 // Returns the user detected by getRedirectResult during the most recent
 // initFirebase, then clears it so subsequent boots don't re-consume. Null
 // when this boot wasn't a redirect return.
@@ -669,6 +763,8 @@ export {
   signInWithGoogleRedirect,
   signInWithGoogleGIS,
   isGISReady,
+  waitForGISReady,
+  renderGISButton,
   consumePendingRedirectUser,
   waitForRealAuthUser,
   signUpWithEmail,
