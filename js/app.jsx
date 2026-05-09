@@ -36,6 +36,7 @@ const ROUTES = {
   comanda:         { parent: 'home',         hidesNav: true },
   euvs:            { parent: 'home',         hidesNav: true },
   article:         { parent: 'wiki',         hidesNav: true },
+  admin:           { parent: 'profile',      hidesNav: true },
 
   // Overlays — render on top of the base screen rather than replacing it.
   lesson:      { overlay: true, hidesNav: true, hidesLegal: true },
