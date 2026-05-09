@@ -17,6 +17,15 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
     try { return localStorage.getItem('stirio::text_scale') || 'default'; } catch { return 'default'; }
   });
 
+  // Force re-render when Firebase auth resolves after Profile mounted, so the
+  // admin row (gated by window.isAdminUser()) appears without a manual reload.
+  const [, setAuthTick] = React.useState(0);
+  React.useEffect(() => {
+    const onAuthChange = () => setAuthTick(t => t + 1);
+    window.addEventListener('stirio:authchange', onAuthChange);
+    return () => window.removeEventListener('stirio:authchange', onAuthChange);
+  }, []);
+
   // Apply text scale + reduced motion to <html> as data-* attributes so
   // tokens.css / style.css media queries can react. Persist to localStorage.
   React.useEffect(() => {
