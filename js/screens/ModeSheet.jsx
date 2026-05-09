@@ -15,6 +15,15 @@
 const ModeSheet = ({ mode, onClose, onStart }) => {
   const tr = (k, f) => (window.stUiT ? window.stUiT(k, f) : (f || k));
   const stModes = window.stModes;
+  const closeLabel = tr('mode.close', 'Cerrar');
+
+  // Close on Escape — paired with the existing backdrop click. Without this
+  // the sheet is a keyboard trap once focus enters it.
+  React.useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose && onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
 
   // Picker mode: render the three grouped sections.
   if (mode === 'any') {
@@ -26,17 +35,25 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
         display: 'grid', placeItems: 'center', padding: 20,
         animation: 'fadeIn .25s ease', overflow: 'auto',
       }}>
-        <div onClick={e => e.stopPropagation()} className="card" style={{
+        <div onClick={e => e.stopPropagation()} className="card" role="dialog" aria-modal="true" aria-label={tr('mode.picker.title', '¿Qué quieres jugar?')} style={{
           maxWidth: 540, width: '100%',
           maxHeight: 'calc(100dvh - 40px)',
           padding: 24,
+          paddingBottom: 'calc(24px + env(safe-area-inset-bottom, 0))',
           background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2) 60%)',
           borderColor: 'oklch(0.82 0.17 75 / 0.3)',
           animation: 'slideUp .35s cubic-bezier(.2,1.1,.3,1)',
           position: 'relative',
           overflow: 'auto',
         }}>
-          <button onClick={onClose} style={{ position: 'absolute', top: 14, right: 14, padding: 6, color: 'var(--ink-3)' }}>
+          <button onClick={onClose} aria-label={closeLabel} style={{
+            position: 'absolute', top: 10, right: 10,
+            width: 40, height: 40, borderRadius: '50%',
+            display: 'grid', placeItems: 'center',
+            color: 'var(--ink-2)',
+            background: 'var(--bg-2)',
+            border: '1px solid var(--line-soft)',
+          }}>
             <Icon name="close" size={18} />
           </button>
           <div style={{ marginBottom: 20 }}>
@@ -87,15 +104,23 @@ const ModeSheet = ({ mode, onClose, onStart }) => {
       display: 'grid', placeItems: 'center', padding: 20,
       animation: 'fadeIn .25s ease',
     }}>
-      <div onClick={e => e.stopPropagation()} className="card" style={{
+      <div onClick={e => e.stopPropagation()} className="card" role="dialog" aria-modal="true" aria-label={title} style={{
         maxWidth: 460, width: '100%',
         padding: 28,
+        paddingBottom: 'calc(28px + env(safe-area-inset-bottom, 0))',
         background: 'linear-gradient(135deg, var(--amber-soft), var(--bg-2) 60%)',
         borderColor: 'oklch(0.82 0.17 75 / 0.3)',
         animation: 'slideUp .35s cubic-bezier(.2,1.1,.3,1)',
         position: 'relative',
       }}>
-        <button onClick={onClose} style={{ position: 'absolute', top: 14, right: 14, padding: 6, color: 'var(--ink-3)' }}>
+        <button onClick={onClose} aria-label={closeLabel} style={{
+          position: 'absolute', top: 10, right: 10,
+          width: 40, height: 40, borderRadius: '50%',
+          display: 'grid', placeItems: 'center',
+          color: 'var(--ink-2)',
+          background: 'var(--bg-2)',
+          border: '1px solid var(--line-soft)',
+        }}>
           <Icon name="close" size={18} />
         </button>
         <div style={{ fontSize: 64, marginBottom: 10, filter: 'drop-shadow(0 6px 20px var(--amber-glow))' }}>{m.icon}</div>

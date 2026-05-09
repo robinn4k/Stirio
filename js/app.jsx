@@ -1437,7 +1437,7 @@ const BottomNav = ({ current, onNav, onPlay, shortcut }) => {
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
       border: '1px solid var(--line)',
-      borderRadius: 99,
+      borderRadius: 'var(--r-pill)',
       boxShadow: '0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px var(--line-soft)',
       pointerEvents: 'auto',
     }}>
@@ -1466,11 +1466,18 @@ const BottomNav = ({ current, onNav, onPlay, shortcut }) => {
 };
 
 const NavBtn = ({ icon, label, active, onClick }) => (
-  <button className={`nav-btn ${active ? 'active' : ''}`} onClick={onClick} style={{
-    display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2,
-    padding: '8px 18px', borderRadius: 99,
-    background: active ? 'var(--amber-soft)' : 'transparent',
-  }}>
+  <button
+    className={`nav-btn ${active ? 'active' : ''}`}
+    onClick={onClick}
+    aria-label={label}
+    aria-pressed={!!active}
+    style={{
+      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2,
+      padding: '8px 18px', borderRadius: 'var(--r-pill)',
+      minWidth: 56, minHeight: 48,
+      background: active ? 'var(--amber-soft)' : 'transparent',
+    }}
+  >
     <Icon name={icon} size={20} />
     <span style={{ fontFamily: 'var(--f-mono)', fontSize: 9, letterSpacing: '0.08em', textTransform: 'uppercase' }}>{label}</span>
   </button>

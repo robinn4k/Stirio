@@ -13,7 +13,8 @@
   --ink-1: oklch(0.88 0.014 70);
   --ink-2: oklch(0.72 0.016 65);
   --ink-3: oklch(0.55 0.018 60);
-  --ink-4: oklch(0.42 0.02 60);
+  /* Bumped from 0.42 → 0.50 to clear WCAG AA 4.5:1 over --bg-1 in lounge. */
+  --ink-4: oklch(0.50 0.02 60);
 
   /* Signature */
   --amber: oklch(0.82 0.17 75);
@@ -264,6 +265,9 @@ input, textarea { font: inherit; color: inherit; }
   /* Slightly smaller baseline type so dense Home fits */
   --f-scale: 0.92;
 }
+[data-device="mobile"] body {
+  font-size: calc(16px * var(--f-scale, 1));
+}
 
 /* Inside-phone scrollable area needs room for status bar + home indicator + bottom nav */
 [data-device="mobile"] .mobile-safe {
@@ -425,6 +429,82 @@ input, textarea { font: inherit; color: inherit; }
 }
 
 /* ─────────────────────────────────────────────────────────── */
+/* TABLET VIEWPORT (768–1023px) — iPad portrait, big phones    */
+/* landscape. Without this block the layout jumps straight     */
+/* from phone-stacked to ≥1024 desktop, leaving featured cards */
+/* tall and lonely in the middle of an iPad screen.            */
+/* ─────────────────────────────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Cap reading width even when the user picked desktop mode so we
+     don't get 1000px paragraphs on iPad portrait. */
+  [data-device="desktop"] .mobile-safe {
+    max-width: 720px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Featured card: split layout reads much better than stacked
+     once we have ~750px of horizontal room. */
+  .mobile-featured {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .mobile-featured-art {
+    min-height: 100% !important;
+    order: 0 !important;
+  }
+  .mobile-featured-fade {
+    background: linear-gradient(
+      90deg,
+      var(--bg-1) 0%,
+      oklch(from var(--bg-1) l c h / 0.65) 18%,
+      transparent 55%,
+      oklch(0.08 0.02 40 / 0.35) 100%
+    ) !important;
+  }
+
+  /* Hero grid stays single column inside the capped container so
+     featured doesn't get squeezed beside the side rail. */
+  .mobile-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Mode tiles / mini-juegos / reference grids — auto-fit gives
+     iPad portrait three roomy columns instead of two oversized ones. */
+  .mobile-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  /* 60s queue: drop the carousel-margin trick and let the cards
+     wrap naturally — there's enough room for two side-by-side. */
+  .lesson-carousel {
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+    margin: 0 !important;
+    padding: 4px 0 12px !important;
+  }
+  .lesson-carousel > div {
+    flex: 1 1 calc(50% - 6px) !important;
+    max-width: none !important;
+    min-width: 240px;
+  }
+
+  /* Academy tracks: 3 mini cards across the top reads much better
+     than a tall stack at this width. */
+  .home-academy-tracks {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Featured copy: bump headline a touch — there's room. */
+  .mobile-featured-copy h2 {
+    font-size: 28px !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────── */
 /* DESKTOP VIEWPORT (1024–1279px) — narrow desktop / iPad      */
 /* portrait. We center Home in a phone-width column when the   */
 /* user explicitly chose device="mobile" preview, but we DO    */
@@ -554,7 +634,11 @@ input, textarea { font: inherit; color: inherit; }
     flex-wrap: wrap !important;
   }
   .lesson-carousel > div {
-    flex: 1 1 240px !important;
+    /* Cap each tile at 1/3 row so we never get 6 micro-cards in a
+       wide viewport. The min-width keeps a sane floor on narrower
+       desktop windows where 33% would still be too small. */
+    flex: 0 1 calc(33.333% - 12px) !important;
+    min-width: 260px !important;
     max-width: none !important;
   }
   /* Academy tracks on Home: render the 3 mini cards as columns */
