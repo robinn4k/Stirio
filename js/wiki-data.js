@@ -233,6 +233,51 @@ export const WIKI_CATEGORIES = [
       { id: 'tasting-terms', icon: '👅', has3d: false },
       { id: 'service-terms', icon: '🍽️', has3d: false },
     ]
+  },
+  // ─── Categories below are seeded by tools/ai-content/seed.py from
+  // tools/ai-content/backlog.json. Articles arrays start empty and grow
+  // 3/day via the auto cron (see ai-content-auto.yml).
+  {
+    id: 'bartenders',
+    icon: '👤',
+    gradient: 'linear-gradient(135deg, #c0392b, #8e44ad)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'bars',
+    icon: '🍸',
+    gradient: 'linear-gradient(135deg, #16a085, #2c3e50)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'regions',
+    icon: '🌍',
+    gradient: 'linear-gradient(135deg, #27ae60, #2980b9)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'ice',
+    icon: '🧊',
+    gradient: 'linear-gradient(135deg, #74b9ff, #0984e3)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'garnishes',
+    icon: '🌿',
+    gradient: 'linear-gradient(135deg, #00b894, #6c5ce7)',
+    has3d: false,
+    articles: []
+  },
+  {
+    id: 'science',
+    icon: '🧪',
+    gradient: 'linear-gradient(135deg, #6c5ce7, #fd79a8)',
+    has3d: false,
+    articles: []
   }
 ];
 
