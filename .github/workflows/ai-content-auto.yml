@@ -1,9 +1,11 @@
 name: AI content (auto)
 
-# Two triggers:
+# Three triggers:
 #   - Daily cron at 06:00 UTC: runs the chain complete → translate → prune.
 #   - Push to main when i18n/es.json changes (e.g., manually edited keys):
 #     runs translate → prune so EN/FR/PT/DE catch up immediately.
+#   - Manual workflow_dispatch (admin console "Pipeline completo" button or
+#     the GitHub Actions UI) — runs the same chain as the cron.
 # Bot-authored pushes are skipped via the head_commit.message check, so the
 # workflow doesn't ping-pong with itself when the auto-merge lands its own PR.
 on:
@@ -13,6 +15,7 @@ on:
     branches: [main]
     paths:
       - 'i18n/es.json'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -27,7 +30,7 @@ jobs:
   run:
     # Skip when the push that triggered this workflow was the auto-merged PR
     # we ourselves just landed — the title prefix is deterministic.
-    if: ${{ github.event_name == 'schedule' || !startsWith(github.event.head_commit.message, 'AI content') }}
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, 'AI content') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -46,11 +49,11 @@ jobs:
       # complete because the trigger is es.json itself — only translate +
       # prune are needed to bring targets in sync.
       - name: Seed new articles from backlog (scheduled only)
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: python tools/ai-content/cli.py seed --limit 3
 
       - name: Run complete (scheduled only)
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python tools/ai-content/cli.py complete
