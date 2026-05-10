@@ -720,6 +720,26 @@ const AdminScreen = ({ onBack }) => {
   const [runs, setRuns] = React.useState({ status: 'loading', items: [], error: null });
   const [prs, setPrs] = React.useState({ status: 'loading', items: [], error: null });
   const [refreshTick, setRefreshTick] = React.useState(0);
+  const [refreshing, setRefreshing] = React.useState(true);
+  // GitHub PAT for workflow_dispatch — lives in localStorage of this device only.
+  // Required scope: `repo` (or `public_repo` if Stirio repo stays public).
+  const [pat, setPatState] = React.useState(() => {
+    try { return localStorage.getItem('stirio::admin::github_pat') || ''; } catch { return ''; }
+  });
+  const setPat = (next) => {
+    try {
+      if (next) localStorage.setItem('stirio::admin::github_pat', next);
+      else localStorage.removeItem('stirio::admin::github_pat');
+    } catch {}
+    setPatState(next);
+  };
+
+  // Clear `refreshing` once all three panels exit their loading state.
+  React.useEffect(() => {
+    if (refreshing && coverage !== null && runs.status !== 'loading' && prs.status !== 'loading') {
+      setRefreshing(false);
+    }
+  }, [refreshing, coverage, runs.status, prs.status]);
 
   React.useEffect(() => {
     let cancelled = false;
@@ -807,11 +827,15 @@ const AdminScreen = ({ onBack }) => {
         </button>
         <button
           className="btn ghost"
-          onClick={() => setRefreshTick(t => t + 1)}
-          style={{ padding: '6px 12px', fontFamily: 'var(--f-mono)', fontSize: 11 }}
+          onClick={() => { setRefreshing(true); setCoverage(null); setRefreshTick(t => t + 1); }}
+          disabled={refreshing}
+          style={{ padding: '6px 12px', fontFamily: 'var(--f-mono)', fontSize: 11, opacity: refreshing ? 0.6 : 1 }}
           aria-label={tr('admin.refresh', 'Actualizar')}
         >
-          <Icon name="refresh" size={14} /> {tr('admin.refresh', 'Actualizar')}
+          <span style={refreshing ? { display: 'inline-block', animation: 'spin 0.8s linear infinite' } : null}>
+            <Icon name="refresh" size={14} />
+          </span>
+          {' '}{refreshing ? tr('admin.refreshing', 'Actualizando…') : tr('admin.refresh', 'Actualizar')}
         </button>
       </div>
 
@@ -844,6 +868,21 @@ const AdminScreen = ({ onBack }) => {
         />
         <div className="card" style={{ padding: 18 }}>
           <PendingList data={coverage} tr={tr} />
+        </div>
+      </section>
+
+      <section style={{ marginBottom: 28 }}>
+        <SectionHeader
+          eyebrow={tr('admin.actions_eyebrow', 'controls')}
+          title={tr('admin.actions_title', 'Lanzar workflows IA')}
+        />
+        <div className="card" style={{ padding: 18 }}>
+          <ActionsPanel
+            pat={pat}
+            setPat={setPat}
+            tr={tr}
+            onDispatched={() => { setRefreshing(true); setRefreshTick(t => t + 1); }}
+          />
         </div>
       </section>
 
@@ -959,6 +998,123 @@ const PendingList = ({ data, tr }) => {
           </span>
         </div>
       ))}
+    </div>
+  );
+};
+
+// Workflow trigger panel — POSTs to api.github.com/repos/.../workflows/.../dispatches
+// using a PAT stored in localStorage. Surfaces 4 actions covering the auto cron
+// pipeline plus the three granular modes of the manual ai-content.yml workflow.
+const ActionsPanel = ({ pat, setPat, tr, onDispatched }) => {
+  const [draft, setDraft] = React.useState('');
+  const [editing, setEditing] = React.useState(!pat);
+  const [busy, setBusy] = React.useState(null);
+
+  const dispatch = async (workflowFile, inputs) => {
+    if (!pat) return;
+    setBusy(workflowFile + JSON.stringify(inputs || {}));
+    try {
+      const res = await fetch(
+        `https://api.github.com/repos/robinn4k/Stirio/actions/workflows/${workflowFile}/dispatches`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${pat}`,
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ ref: 'main', inputs: inputs || {} }),
+        }
+      );
+      if (res.status === 204) {
+        window.stToast?.show?.(tr('admin.dispatch_ok', 'Workflow lanzado · revisa en 1-2 min'));
+        onDispatched?.();
+      } else {
+        const text = await res.text().catch(() => '');
+        window.stToast?.show?.(`HTTP ${res.status}: ${text.slice(0, 120)}`);
+      }
+    } catch (e) {
+      window.stToast?.show?.(`Error: ${e?.message || e}`);
+    } finally {
+      setBusy(null);
+    }
+  };
+
+  if (editing) {
+    return (
+      <div style={{ display: 'grid', gap: 10 }}>
+        <p style={{ fontSize: 12, color: 'var(--ink-2)', margin: 0, lineHeight: 1.5 }}>
+          {tr('admin.pat_required', 'Se necesita un GitHub PAT con scopes `repo` para disparar workflows')}
+        </p>
+        <input
+          type="password"
+          value={draft}
+          onChange={e => setDraft(e.target.value)}
+          placeholder={tr('admin.pat_placeholder', 'ghp_… (token con scope repo)')}
+          autoComplete="off"
+          spellCheck={false}
+          style={{
+            padding: '10px 12px', borderRadius: 8,
+            background: 'var(--bg-2)', border: '1px solid var(--line)',
+            color: 'var(--ink-0)', fontFamily: 'var(--f-mono)', fontSize: 12,
+          }}
+        />
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button
+            className="btn"
+            onClick={() => { if (draft.trim()) { setPat(draft.trim()); setDraft(''); setEditing(false); } }}
+            disabled={!draft.trim()}
+            style={{ padding: '8px 14px', fontSize: 12, flex: 1 }}
+          >
+            {tr('admin.pat_save', 'Guardar token')}
+          </button>
+          <a
+            href="https://github.com/settings/tokens/new?scopes=repo&description=Stirio%20admin%20console"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ padding: '8px 14px', fontSize: 12, color: 'var(--cyan, var(--amber))', textDecoration: 'none', alignSelf: 'center' }}
+          >
+            {tr('admin.pat_generate_link', 'Generar uno nuevo en github.com')} →
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  const actions = [
+    { label: tr('admin.action_full_pipeline', 'Pipeline completo'), file: 'ai-content-auto.yml', inputs: {} },
+    { label: tr('admin.action_translate', 'Solo traducir'), file: 'ai-content.yml', inputs: { mode: 'translate' } },
+    { label: tr('admin.action_review', 'Solo revisar'), file: 'ai-content.yml', inputs: { mode: 'review' } },
+    { label: tr('admin.action_complete', 'Solo completar'), file: 'ai-content.yml', inputs: { mode: 'complete' } },
+  ];
+
+  return (
+    <div style={{ display: 'grid', gap: 10 }}>
+      <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' }}>
+        {actions.map(({ label, file, inputs }) => {
+          const key = file + JSON.stringify(inputs);
+          const isBusy = busy === key;
+          return (
+            <button
+              key={label}
+              className="btn"
+              onClick={() => dispatch(file, inputs)}
+              disabled={!!busy}
+              style={{ padding: '10px 12px', fontSize: 12, opacity: busy && !isBusy ? 0.5 : 1 }}
+            >
+              {isBusy ? '…' : label}
+            </button>
+          );
+        })}
+      </div>
+      <button
+        className="btn ghost"
+        onClick={() => { setPat(''); setDraft(''); setEditing(true); }}
+        style={{ padding: '6px 12px', fontSize: 11, color: 'var(--ink-3)', alignSelf: 'flex-start' }}
+      >
+        {tr('admin.pat_change', 'Cambiar token')}
+      </button>
     </div>
   );
 };
