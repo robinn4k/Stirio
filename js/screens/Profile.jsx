@@ -702,7 +702,6 @@ Object.assign(window, { Profile });
 const ADMIN_EMAIL = 'robinn4k@gmail.com';
 const REPO_OWNER = 'robinn4k';
 const REPO_NAME = 'Stirio';
-const WORKFLOW_FILE = 'ai-content.yml';
 const GITHUB_API = 'https://api.github.com';
 
 function isAdminUser() {
@@ -757,20 +756,29 @@ const AdminScreen = ({ onBack }) => {
   React.useEffect(() => {
     let cancelled = false;
     setRuns({ status: 'loading', items: [], error: null });
+    // Repo-wide runs endpoint (not per-workflow), filtered by name starting
+    // with "AI content" so the panel shows runs from BOTH workflows:
+    // ai-content.yml (`name: 'AI content (Groq)'`, manual modes) and
+    // ai-content-auto.yml (`name: 'AI content (auto)'`, full pipeline).
+    // Without this filter the user pressing "Pipeline completo" sees no
+    // new run because the auto workflow is in a separate file.
     fetch(
-      `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=15`
+      `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs?per_page=30`
     )
       .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
       .then(data => {
         if (cancelled) return;
-        const items = (data.workflow_runs || []).map(run => ({
-          id: run.id,
-          name: run.display_title || run.name || `run ${run.id}`,
-          status: run.status,
-          conclusion: run.conclusion,
-          created_at: run.created_at,
-          html_url: run.html_url,
-        }));
+        const items = (data.workflow_runs || [])
+          .filter(run => typeof run.name === 'string' && run.name.startsWith('AI content'))
+          .slice(0, 15)
+          .map(run => ({
+            id: run.id,
+            name: run.display_title || run.name || `run ${run.id}`,
+            status: run.status,
+            conclusion: run.conclusion,
+            created_at: run.created_at,
+            html_url: run.html_url,
+          }));
         setRuns({ status: 'ready', items, error: null });
       })
       .catch(err => {
