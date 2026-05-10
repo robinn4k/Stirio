@@ -839,6 +839,16 @@ const AdminScreen = ({ onBack }) => {
 
       <section style={{ marginBottom: 28 }}>
         <SectionHeader
+          eyebrow={tr('admin.pending_eyebrow', 'i18n debt')}
+          title={tr('admin.pending_title', 'Deuda pendiente i18n')}
+        />
+        <div className="card" style={{ padding: 18 }}>
+          <PendingList data={coverage} tr={tr} />
+        </div>
+      </section>
+
+      <section style={{ marginBottom: 28 }}>
+        <SectionHeader
           eyebrow={tr('admin.runs_eyebrow', 'github actions')}
           title={tr('admin.runs_title', 'Últimas ejecuciones de la IA')}
         />
@@ -873,7 +883,8 @@ const CoverageList = ({ data, tr }) => {
       </div>
     );
   }
-  const langs = ['en', 'fr', 'pt', 'de'];
+  const langs = ['es', 'en', 'fr', 'pt', 'de'];
+  const pendingTotal = data.pending?.total || 0;
   return (
     <div style={{ display: 'grid', gap: 12 }}>
       <div style={{ fontSize: 12, color: 'var(--ink-3)', fontFamily: 'var(--f-mono)' }}>
@@ -883,6 +894,9 @@ const CoverageList = ({ data, tr }) => {
         const row = data[lang] || { translated: 0, missing: 0, percent: 0 };
         const pct = Math.round(row.percent * 100);
         const color = pct >= 95 ? 'var(--mint, var(--amber))' : pct >= 80 ? 'var(--amber)' : 'var(--berry)';
+        // ES uses its own translated count as denominator (4469 incl. pending);
+        // other languages compare against the post-exclusion baseline (4013).
+        const denom = lang === 'es' ? row.translated : data.baseline;
         return (
           <div key={lang}>
             <div style={{
@@ -891,9 +905,14 @@ const CoverageList = ({ data, tr }) => {
             }}>
               <span style={{ fontFamily: 'var(--f-mono)', fontSize: 12, textTransform: 'uppercase' }}>
                 {lang}
+                {lang === 'es' && pendingTotal > 0 && (
+                  <span style={{ fontFamily: 'var(--f-mono)', fontSize: 10, color: 'var(--ink-3)', marginLeft: 8, textTransform: 'none' }}>
+                    · {tr('admin.coverage_includes_pending', 'incluye {n} pendientes').replace('{n}', pendingTotal)}
+                  </span>
+                )}
               </span>
               <span style={{ fontFamily: 'var(--f-mono)', fontSize: 12, color: 'var(--ink-2)' }}>
-                {row.translated}/{data.baseline} · {pct}%
+                {row.translated}/{denom} · {pct}%
               </span>
             </div>
             <div style={{
@@ -908,6 +927,38 @@ const CoverageList = ({ data, tr }) => {
           </div>
         );
       })}
+    </div>
+  );
+};
+
+const PendingList = ({ data, tr }) => {
+  if (!data) return <AdminSkeleton lines={3} />;
+  if (!data.pending || !data.pending.total) {
+    return (
+      <div style={{ color: 'var(--ink-3)', fontSize: 13 }}>
+        {tr('admin.pending_empty', 'No hay claves pendientes 🎉')}
+      </div>
+    );
+  }
+  return (
+    <div style={{ display: 'grid', gap: 4 }}>
+      <div style={{ fontSize: 12, color: 'var(--ink-3)', fontFamily: 'var(--f-mono)', marginBottom: 6 }}>
+        {tr('admin.pending_total', 'total')}: {data.pending.total} {tr('admin.coverage_keys', 'claves')}
+        {' · '}{data.pending.byPrefix.length} {tr('admin.pending_prefixes', 'prefijos')}
+      </div>
+      {data.pending.byPrefix.map(({ prefix, count }) => (
+        <div key={prefix} style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+          padding: '8px 0', borderBottom: '1px solid var(--line-soft)',
+        }}>
+          <span style={{ fontFamily: 'var(--f-mono)', fontSize: 11, color: 'var(--ink-1)', wordBreak: 'break-all', marginRight: 12 }}>
+            {prefix}
+          </span>
+          <span style={{ fontFamily: 'var(--f-mono)', fontSize: 12, color: 'var(--ink-2)', flexShrink: 0 }}>
+            {count}
+          </span>
+        </div>
+      ))}
     </div>
   );
 };
