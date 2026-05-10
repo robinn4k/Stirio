@@ -7,7 +7,7 @@
 const SectionHeader = ({ eyebrow, title, action }) => (
   <div style={{ marginBottom: 14, display: 'flex', alignItems: 'end', justifyContent: 'space-between', gap: 12 }}>
     <div>
-      <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 2 }}>{eyebrow}</div>
+      <div className="mono caps" style={{ color: 'var(--ink-2)', fontSize: 10, marginBottom: 2 }}>{eyebrow}</div>
       <h2 style={{ fontFamily: 'var(--f-serif)', fontWeight: 400, fontSize: 24, margin: 0, letterSpacing: '-0.01em' }}>{title}</h2>
     </div>
     {action}

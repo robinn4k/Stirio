@@ -310,11 +310,10 @@ const LegalFooter = () => {
     <footer style={{
       padding: '6px 16px 8px',
       textAlign: 'center',
-      color: 'var(--ink-3)',
+      color: 'var(--ink-4)',
       fontSize: 9,
       fontFamily: 'var(--f-mono)',
-      letterSpacing: '0.04em',
-      opacity: 0.4,
+      letterSpacing: '0.06em',
       lineHeight: 1.4,
     }}>
       <a href="legal.html" target="_blank" rel="noopener" style={linkStyle}>Legal</a>

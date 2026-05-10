@@ -81,7 +81,7 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
       {/* header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 28 }}>
         <div>
-          <div className="mono caps" style={{ color: 'var(--ink-3)', fontSize: 10, marginBottom: 2 }}>
+          <div className="mono caps" style={{ color: 'var(--ink-2)', fontSize: 10, marginBottom: 2 }}>
             {greeting}, {profile.name || tr('home.guest', 'invitado')}
           </div>
           <div style={{
@@ -302,12 +302,12 @@ const Home = ({ profile, onPickLesson, onOpenProfile, onOpenMode }) => {
               <div style={{
                 width: 24, textAlign: 'center',
                 fontFamily: 'var(--f-mono)', fontSize: 13, fontWeight: 600,
-                color: i < 3 ? 'var(--amber)' : 'var(--ink-3)',
+                color: i < 3 ? 'var(--amber)' : 'var(--ink-2)',
               }}>{i + 1}</div>
               <div style={{ fontSize: 18 }}>{i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '•'}</div>
               <div style={{ flex: 1 }}>
                 <span style={{ fontWeight: p.self ? 600 : 400 }}>{p.name}</span>
-                <span style={{ marginLeft: 8, color: 'var(--ink-3)', fontSize: 12, fontFamily: 'var(--f-mono)' }}>Lv {p.level}</span>
+                <span style={{ marginLeft: 8, color: 'var(--ink-2)', fontSize: 12, fontFamily: 'var(--f-mono)' }}>Lv {p.level}</span>
               </div>
               <div style={{ fontFamily: 'var(--f-mono)', fontSize: 13, color: p.self ? 'var(--amber)' : 'var(--ink-1)', fontWeight: 600 }}>
                 {p.xp.toLocaleString()}
