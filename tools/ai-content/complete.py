@@ -55,6 +55,7 @@ SECTIONS_BY_CATEGORY = {
     "tools":      ["description", "when_to_use", "how", "tips", "sub"],
     "history":    ["description", "sub"],
     "mixers":     ["description", "production", "tips", "sub"],
+    "cocktails":  ["description", "history", "origin", "how", "tips", "sub"],
 }
 FALLBACK_SECTIONS = ["description", "history", "tips", "sub"]
 FEW_SHOT_LIMIT = 2
