@@ -4080,5 +4080,5 @@
   "admin.pr_open": "open",
   "admin.offline_warning": "Couldn't reach the GitHub API.",
   "admin.gate_denied": "This console is for the admin only.",
-  "admin.footer_note": "Public data · 60 req/h per IP · no client-side state"
+  "admin.footer_note": "Public data · {limit} req/h · no client-side state"
 }

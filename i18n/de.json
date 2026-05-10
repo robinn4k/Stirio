@@ -4080,5 +4080,5 @@
   "admin.pr_open": "offen",
   "admin.offline_warning": "GitHub-API nicht erreichbar.",
   "admin.gate_denied": "Diese Konsole ist nur für den Admin.",
-  "admin.footer_note": "Öffentliche Daten · 60 req/h pro IP · kein Client-State"
+  "admin.footer_note": "Öffentliche Daten · {limit} req/h · kein Client-State"
 }

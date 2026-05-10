@@ -4080,5 +4080,5 @@
   "admin.pr_open": "ouverte",
   "admin.offline_warning": "API GitHub injoignable.",
   "admin.gate_denied": "Cette console est réservée à l'admin.",
-  "admin.footer_note": "Données publiques · 60 req/h par IP · aucun état côté client"
+  "admin.footer_note": "Données publiques · {limit} req/h · aucun état côté client"
 }

@@ -4486,5 +4486,5 @@
   "admin.pr_open": "open",
   "admin.offline_warning": "Sin conexión a la API de GitHub.",
   "admin.gate_denied": "Esta consola es solo para el administrador.",
-  "admin.footer_note": "Datos públicos · 60 req/h por IP · sin estado en cliente"
+  "admin.footer_note": "Datos públicos · {limit} req/h · sin estado en cliente"
 }

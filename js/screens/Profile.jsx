@@ -740,6 +740,30 @@ const AdminScreen = ({ onBack }) => {
     }
   }, [refreshing, coverage, runs.status, prs.status]);
 
+  // Reuse the PAT (when configured) for GitHub GET requests too — anonymous
+  // calls are limited to 60 req/h shared across the carrier IP, which causes
+  // intermittent 403s on mobile. With a PAT the limit is 5000 req/h.
+  const githubHeaders = (token) => {
+    const h = {
+      'Accept': 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    };
+    if (token) h['Authorization'] = `Bearer ${token}`;
+    return h;
+  };
+  const apiErrorMessage = (err, hasPat) => {
+    const msg = String(err?.message || err);
+    if (msg.includes('403')) {
+      return hasPat
+        ? `${msg} · verifica que el PAT tiene scope 'repo'`
+        : `${msg} · configura un PAT abajo para subir el rate limit (60/h → 5000/h)`;
+    }
+    if (msg.includes('401')) {
+      return `${msg} · PAT inválido o expirado · "Cambiar token"`;
+    }
+    return msg;
+  };
+
   React.useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -760,10 +784,9 @@ const AdminScreen = ({ onBack }) => {
     // with "AI content" so the panel shows runs from BOTH workflows:
     // ai-content.yml (`name: 'AI content (Groq)'`, manual modes) and
     // ai-content-auto.yml (`name: 'AI content (auto)'`, full pipeline).
-    // Without this filter the user pressing "Pipeline completo" sees no
-    // new run because the auto workflow is in a separate file.
     fetch(
-      `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs?per_page=30`
+      `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs?per_page=30`,
+      { headers: githubHeaders(pat) }
     )
       .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
       .then(data => {
@@ -782,16 +805,17 @@ const AdminScreen = ({ onBack }) => {
         setRuns({ status: 'ready', items, error: null });
       })
       .catch(err => {
-        if (!cancelled) setRuns({ status: 'error', items: [], error: String(err?.message || err) });
+        if (!cancelled) setRuns({ status: 'error', items: [], error: apiErrorMessage(err, !!pat) });
       });
     return () => { cancelled = true; };
-  }, [refreshTick]);
+  }, [refreshTick, pat]);
 
   React.useEffect(() => {
     let cancelled = false;
     setPrs({ status: 'loading', items: [], error: null });
     fetch(
-      `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/pulls?state=open&per_page=30`
+      `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/pulls?state=open&per_page=30`,
+      { headers: githubHeaders(pat) }
     )
       .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
       .then(data => {
@@ -809,10 +833,10 @@ const AdminScreen = ({ onBack }) => {
         setPrs({ status: 'ready', items, error: null });
       })
       .catch(err => {
-        if (!cancelled) setPrs({ status: 'error', items: [], error: String(err?.message || err) });
+        if (!cancelled) setPrs({ status: 'error', items: [], error: apiErrorMessage(err, !!pat) });
       });
     return () => { cancelled = true; };
-  }, [refreshTick]);
+  }, [refreshTick, pat]);
 
   if (!isAdminUser()) {
     return (
@@ -915,7 +939,7 @@ const AdminScreen = ({ onBack }) => {
       </section>
 
       <div style={{ textAlign: 'center', color: 'var(--ink-3)', fontSize: 11, fontFamily: 'var(--f-mono)' }}>
-        {tr('admin.footer_note', 'Datos públicos · 60 req/h por IP · sin estado en cliente')}
+        {tr('admin.footer_note', 'Datos públicos · {limit} req/h · sin estado en cliente').replace('{limit}', pat ? '5000' : '60')}
       </div>
     </div>
   );
