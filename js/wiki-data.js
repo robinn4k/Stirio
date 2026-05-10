@@ -285,6 +285,13 @@ export const WIKI_CATEGORIES = [
     gradient: 'linear-gradient(135deg, #ff6b6b, #ffd93d)',
     has3d: false,
     articles: []
+  },
+  {
+    id: 'pairings',
+    icon: '🍴',
+    gradient: 'linear-gradient(135deg, #d35400, #8e44ad)',
+    has3d: false,
+    articles: []
   }
 ];
 

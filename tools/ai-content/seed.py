@@ -45,6 +45,7 @@ DEFAULT_ICONS = {
     "science": "🧪",
     "glossary": "📚",
     "cocktails": "🍹",
+    "pairings": "🍴",
 }
 
 logger = logging.getLogger("stirio.ai.seed")
