@@ -334,4 +334,10 @@ def run(opts: CompleteOptions) -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(report, encoding="utf-8")
     console.print(f"Report → [cyan]{out_path}[/cyan]")
-    return 0 if not sev_meta["stubs_errored"] else 1
+    # Partial success is the normal mode for AI runs (one stub may miss a
+    # section, hit a rate limit, etc.). Only fail the workflow if NO stubs
+    # produced keys — that signals a systemic error (auth, network) worth
+    # blocking the rest of the pipeline for.
+    if sev_meta["stubs_generated"] == 0 and sev_meta["stubs_errored"] > 0:
+        return 1
+    return 0

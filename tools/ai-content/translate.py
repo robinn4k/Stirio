@@ -145,6 +145,7 @@ def run(opts: TranslateOptions) -> int:
     client = GroqClient(model=opts.model) if opts.model else GroqClient()
     console.log(f"[dim]Using model {client.model}[/dim]")
     failed_batches: list[tuple[str, int]] = []
+    successful_batches = 0
 
     for lang, keys in plan.items():
         if not keys:
@@ -161,6 +162,7 @@ def run(opts: TranslateOptions) -> int:
                 failed_batches.append((lang, batch_idx))
                 continue
             existing = merge_translations(existing, translated)
+            successful_batches += 1
             console.log(
                 f"[green]+{len(translated)}[/green] {lang} "
                 f"(batch {batch_idx + 1})"
@@ -176,5 +178,8 @@ def run(opts: TranslateOptions) -> int:
         console.print(
             f"[red]{len(failed_batches)} batch(es) failed; rerun to retry just the misses.[/red]"
         )
+    # Partial success is fine — successful batches were written to disk.
+    # Only fail the workflow if EVERY batch failed (systemic auth/network issue).
+    if successful_batches == 0 and failed_batches:
         return 1
     return 0
