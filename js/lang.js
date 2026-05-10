@@ -135,12 +135,20 @@ export function translateHTML() {
 export async function getCoverage() {
   await preloadAllTranslations();
   const es = translations[DEFAULT_LANG] || {};
-  const baselineKeys = Object.keys(es).filter(k =>
+  const allEsKeys = Object.keys(es);
+  const baselineKeys = allEsKeys.filter(k =>
     !PARITY_EXCLUDE_PREFIXES.some(p => k.startsWith(p))
   );
   const baseline = baselineKeys.length;
   const targets = ['en', 'fr', 'pt', 'de'];
   const out = { baseline };
+  // ES is its own baseline — included so the admin panel can show the full
+  // ES key count (allEsKeys.length, including pending) alongside the others.
+  out.es = {
+    translated: allEsKeys.length,
+    missing: 0,
+    percent: 1,
+  };
   for (const lang of targets) {
     const dict = translations[lang] || {};
     let translated = 0;
@@ -153,5 +161,19 @@ export async function getCoverage() {
       percent: baseline ? translated / baseline : 0,
     };
   }
+  // Pending i18n debt — keys deliberately excluded from the baseline because
+  // they ship ES-only while translation lands. Grouped by prefix so the admin
+  // console can display a breakdown.
+  const exclusions = PARITY_EXCLUDE_PREFIXES
+    .map(prefix => ({
+      prefix,
+      count: allEsKeys.filter(k => k.startsWith(prefix)).length,
+    }))
+    .filter(e => e.count > 0)
+    .sort((a, b) => b.count - a.count);
+  out.pending = {
+    total: exclusions.reduce((sum, e) => sum + e.count, 0),
+    byPrefix: exclusions,
+  };
   return out;
 }
