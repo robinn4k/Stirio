@@ -28,8 +28,40 @@ from tenacity import (
     retry,
     retry_if_exception_type,
     stop_after_attempt,
-    wait_exponential,
 )
+
+logger = logging.getLogger(__name__)
+
+
+def _wait_for_groq_429(retry_state):
+    """Wait strategy that honours Groq's `Retry-After` header on 429s and
+    falls back to exponential backoff (cap 60s) for other transient errors.
+
+    Plain `wait_exponential` ignores Retry-After and reschedules at 2/4/8/16s
+    while the TPM bucket is fully drained — Groq usually asks for ~45-60s,
+    so the early retries fail again and exhaust `stop_after_attempt`.
+    """
+    exc = retry_state.outcome.exception() if retry_state.outcome else None
+    if isinstance(exc, RateLimitError):
+        headers = getattr(getattr(exc, "response", None), "headers", {}) or {}
+        retry_after = headers.get("retry-after") or headers.get("Retry-After")
+        if retry_after:
+            try:
+                secs = float(retry_after)
+                logger.info(
+                    "Groq 429: honouring Retry-After=%.1fs (attempt %d)",
+                    secs, retry_state.attempt_number,
+                )
+                # Cap at 90s as a safety net against pathological values.
+                return min(secs, 90.0)
+            except ValueError:
+                logger.debug("Could not parse Retry-After=%r", retry_after)
+    base = min(60.0, 2.0 * (2 ** (retry_state.attempt_number - 1)))
+    logger.debug(
+        "Transient error: backing off %.1fs (attempt %d)",
+        base, retry_state.attempt_number,
+    )
+    return base
 
 ROOT = Path(__file__).resolve().parent
 # Groq free tier (2026-05): llama-3.1-8b-instant has ~30k TPM vs 6k TPM on
@@ -110,11 +142,12 @@ class GroqClient:
 
     @retry(
         retry=retry_if_exception_type((RateLimitError, APIStatusError)),
-        stop=stop_after_attempt(int(os.environ.get("GROQ_MAX_RETRIES", "4"))),
-        # Bumped max from 30s → 60s: when the TPM bucket is fully drained
-        # Groq's reset header asks for ~45-60s, and tenacity capping at 30s
-        # forces another retry cycle that fails immediately.
-        wait=wait_exponential(multiplier=2, min=2, max=60),
+        stop=stop_after_attempt(int(os.environ.get("GROQ_MAX_RETRIES", "8"))),
+        # Honour Groq's Retry-After (typically 45-60s when the TPM bucket
+        # is empty) so we don't burn attempts on early backoffs that are
+        # guaranteed to fail. Falls back to exponential when the header
+        # is absent (5xx, network glitches).
+        wait=_wait_for_groq_429,
         reraise=True,
     )
     def chat_json(
