@@ -32,7 +32,15 @@ js/data.js          Bridge: LESSONS (10 cocktail 60s rounds), TRIVIA_ROUNDS, ACA
 js/ficha-images.js  IIFE: window.FICHA_IMAGES + getFichaImage() — ~30 Unsplash URLs for IBA cocktails
 js/ui.jsx           UI primitives: Icon, XPPop, StreakBadge, Placeholder, Prompt, confettiBurst, playChord
 js/lesson.jsx       LessonPlayer: step types (intro, choice, multi, ratio, earTrain, cutWords, colorMatch, timing) + guard fallback
-js/screens.jsx      Onboarding, Home, Profile, ModeSheet, FeaturedCard, RefTileLarge (Referencia rápida 2×2)
+js/screens/         Split-out screen files (post-PR #145):
+  shared.jsx          Cross-screen helpers (SectionHeader)
+  Onboarding.jsx      Onboarding flow (incl. GIS renderButton iOS Safari fallback in handleGoogle)
+  Home.jsx            Home screen with featured / 60s queue / academies grid / ranking widget
+  Profile.jsx         Profile + AdminScreen (co-located after PR #278 — separate Admin.jsx silently
+                      failed to register window.AdminScreen on iOS Safari due to const Skeleton
+                      collision with ui.jsx, so the admin console lives at the bottom of Profile.jsx
+                      with its local helper renamed AdminSkeleton)
+  ModeSheet.jsx       Bottom-sheet mode picker (FAB FAB)
 js/reference.jsx    AcademyScreen, LevelDetail, FichasScreen (aka Recetas), FichaDetail, FreeQuizScreen
 js/legacy-modes.jsx BlindScreen, ConstructorScreen (wrap stBlind / stConstructor ES modules)
 js/duel.jsx         DuelScreen (1v1 multiplayer + bot via stRivals / stBot)
@@ -41,6 +49,11 @@ js/euvs-archive.jsx EuvsArchiveScreen — catalog viewer for EUVS Vintage Cockta
 js/euvs-archive-utils.js  Pure helpers for the EUVS catalog (ES module, also testable from Vitest)
 data/euvs-catalog.json    EUVS catalog metadata (network-first via runtime cache; not precached)
 tools/euvs-archive/ Python CLI scripts to download EUVS PDFs and (re)build the catalog (dev-only)
+tools/ai-content/   Groq-powered i18n CLI: seed (pop items from backlog.json into wiki-data.js),
+                    complete (fill ES for empty articles), translate (ES→EN/FR/PT/DE),
+                    review (fact-check ES, emit markdown), prune (drop settled exclusions).
+                    Runs daily via .github/workflows/ai-content-auto.yml at 06:00 UTC, also
+                    triggerable manually from the admin console with a GitHub PAT.
 js/map.jsx          MapScreen — iframe wrapper to map.html (interactive Leaflet spirit map)
 js/library.jsx      LibraryScreen — iframe wrapper to wiki.html?filter=3d
 js/arcade.jsx       ArcadeScreen — Garnish Catcher mini-game (60s rAF)
@@ -87,7 +100,10 @@ Data/module modules expose APIs through `window.X` to avoid ES-module scoping:
 - Screen components: `window.AcademyScreen`, `window.FichasScreen`, `window.FichaDetail`,
   `window.FreeQuizScreen`, `window.BlindScreen`, `window.ConstructorScreen`, `window.DuelScreen`,
   `window.GlossaryScreen`, `window.MapScreen`, `window.LibraryScreen`, `window.ArcadeScreen`,
-  `window.MemoryScreen`, `window.RhythmScreen`, `window.EuvsArchiveScreen` — from respective `.jsx` files
+  `window.MemoryScreen`, `window.RhythmScreen`, `window.EuvsArchiveScreen`,
+  `window.AdminScreen`, `window.isAdminUser` — from respective `.jsx` files (AdminScreen +
+  isAdminUser are appended to Profile.jsx's bottom rather than living in a separate file —
+  see the screens/ note above for why)
 
 ### Error handling
 
@@ -213,6 +229,58 @@ The actual PDFs are downloaded by `download_euvs.py` to a gitignored folder
 under `tools/euvs-archive/data/downloads/` and **never committed or cached
 by the SW** (they're up to tens of GB). The screen only links out to
 `archive.org/details/<id>` — it never embeds PDFs.
+
+### Expanding the AI content backlog
+
+`tools/ai-content/backlog.json` holds curated article ideas the cron
+processes at 3/day. To add more:
+
+1. Append item IDs (kebab-case, no extension) to the relevant category array.
+2. If you create a brand-new category:
+   - Add an entry to `DEFAULT_ICONS` in `tools/ai-content/seed.py`.
+   - Add the category to `SECTIONS_BY_CATEGORY` in
+     `tools/ai-content/complete.py` so the model knows which sections
+     to generate. Pick from the set rendered by `article.jsx`:
+     `description`, `history`, `origin`, `when_to_use`, `how`,
+     `tips`, `production`, `sub`.
+   - Append an empty category block to `js/wiki-data.js`
+     (`{ id: '<cat>', icon: '...', gradient: '...', has3d: false, articles: [] }`)
+     so `seed.py` can insert items into it.
+   - Bump the SW version (the new wiki-data.js is precached).
+3. Don't worry about i18n — `complete` writes to `i18n/es.json`, then
+   `translate` propagates to EN/FR/PT/DE on the next cron tick.
+
+## Admin console
+
+Reachable from **Perfil → Cuenta → "🔧 Consola admin"** when the signed-in
+email matches `ADMIN_EMAIL` (`robinn4k@gmail.com`, hardcoded). Lives at the
+bottom of `js/screens/Profile.jsx` (intentionally co-located — see the
+Architecture note for the iOS Safari Babel-standalone scoping bug that
+forced the move from a separate Admin.jsx file).
+
+Five panels:
+
+1. **Cobertura de traducciones** — coverage % per language (ES + EN/FR/PT/DE)
+   computed locally from cached i18n JSONs via `getCoverage()` in `lang.js`.
+   ES row shows the full key count including pending (4469 vs the post-
+   exclusion baseline 4013); other rows compare against the post-exclusion
+   baseline. Excluded prefixes come from `js/i18n-exclusions.js`.
+2. **Deuda pendiente i18n** — list of pending exclusion prefixes with their
+   ES key counts, ordered by size. Surfaces what the coverage panel hides.
+3. **Lanzar workflows IA** — 4 buttons that POST to `api.github.com/.../dispatches`
+   using a PAT stored in `localStorage['stirio::admin::github_pat']`:
+   - "Pipeline completo" → `ai-content-auto.yml` (seed + complete + translate + prune)
+   - "Solo traducir/revisar/completar" → `ai-content.yml` with the matching mode
+   First-run UI prompts for the PAT with a deep link to
+   `github.com/settings/tokens/new?scopes=repo`.
+4. **Últimas ejecuciones de la IA** — last 15 runs of `ai-content.yml`
+   from the public GitHub REST API (CORS allowed; no auth needed).
+5. **PRs abiertos por la IA** — same API, filtered to titles starting with
+   "AI content".
+
+CSP requirement: `connect-src` in `index.html` must include
+`https://api.github.com` (added in v12.14). Without it, iOS Safari blocks
+every fetch and the runs/PRs panels show "Load failed".
 
 ## Service Worker
 
