@@ -65,19 +65,21 @@ const saveActiveTrack = (t) => {
   try { localStorage.setItem(ACTIVE_TRACK_KEY, t); } catch {}
 };
 
-// ── LevelPath: SVG sendero estilo Duolingo ──
-// Renders the academy levels as an illustrated path with nodes in a gentle
-// sine-wave layout. Locked nodes show a padlock; the next playable level
-// gets a pulsing halo. Each node carries a side label with the level title
-// and lesson progress so users can scan the track without tapping.
+// ── LevelPath: SVG sendero ──
+// Gentle sine-wave path with the title/desc/progress label centered below
+// each node. Earlier iteration had the labels alternating left/right of the
+// nodes with a wide AMP, which made the title text collide with the node
+// circles at the wave extremes. Centering below the node removes the
+// collision by construction and keeps the playful drift via a small AMP.
 const LevelPath = ({ levels, progress, onSelect }) => {
-  const NODE_R = 36;
-  const ROW_H = 128;
+  const NODE_R = 38;
+  const ROW_H = 180;
   const W = 320;
   const CENTER_X = W / 2;
-  const AMP = 70;
-  const LABEL_W = 120;
-  const H = levels.length * ROW_H + 60;
+  const AMP = 22;
+  const LABEL_W = 240;
+  const LABEL_H = 80;
+  const H = levels.length * ROW_H + 80;
   const positionFor = (i) => ({
     x: CENTER_X + Math.sin(i * 0.95) * AMP,
     y: i * ROW_H + 70,
@@ -112,17 +114,17 @@ const LevelPath = ({ levels, progress, onSelect }) => {
         {levels.map((level) => (
           <linearGradient key={`grad-${level.id}`} id={`level-node-grad-${level.id}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor={level.color} stopOpacity="0.95" />
-            <stop offset="100%" stopColor="oklch(0.28 0.04 60)" stopOpacity="1" />
+            <stop offset="100%" stopColor={`oklch(from ${level.color} calc(l - 0.2) c h)`} stopOpacity="1" />
           </linearGradient>
         ))}
       </defs>
       <path
         d={segments.join(' ')}
         stroke="var(--bg-3)"
-        strokeWidth="6"
+        strokeWidth="4"
         fill="none"
         strokeLinecap="round"
-        strokeDasharray="3 12"
+        opacity="0.6"
       />
       {levels.map((level, i) => {
         const { x, y } = positionFor(i);
@@ -134,12 +136,8 @@ const LevelPath = ({ levels, progress, onSelect }) => {
         const title = _t(level.key, level.key);
         const desc = _t(level.descKey, '');
         const progressLine = _tp('academy.level_progress_short', { done: doneCount, total: lessonCount }, `${doneCount}/${lessonCount}`);
-        // Label sits on the side opposite the node's wave displacement so it
-        // doesn't overlap the path. When the node is left-of-center we draw
-        // the label to the right, and vice versa.
-        const labelOnRight = x < CENTER_X;
-        const labelX = labelOnRight ? x + NODE_R + 12 : x - NODE_R - 12 - LABEL_W;
-        const labelAlign = labelOnRight ? 'left' : 'right';
+        const labelX = (W - LABEL_W) / 2;
+        const labelY = y + NODE_R + 14;
         return (
           <g
             key={level.id}
@@ -190,18 +188,18 @@ const LevelPath = ({ levels, progress, onSelect }) => {
             >
               {String(i).padStart(2, '0')}
             </text>
-            {/* Side label: title + progress. Uses foreignObject for HTML wrap */}
-            <foreignObject x={labelX} y={y - 32} width={LABEL_W} height={70} style={{ pointerEvents: 'none' }}>
+            {/* Label centered below the node — title + desc + progress. */}
+            <foreignObject x={labelX} y={labelY} width={LABEL_W} height={LABEL_H} style={{ pointerEvents: 'none' }}>
               <div xmlns="http://www.w3.org/1999/xhtml" style={{
                 fontFamily: 'var(--f-sans)',
                 color: 'var(--ink-1)',
                 opacity: locked ? 0.55 : 1,
-                textAlign: labelAlign,
-                lineHeight: 1.15,
+                textAlign: 'center',
+                lineHeight: 1.2,
               }}>
-                <div style={{ fontFamily: 'var(--f-serif)', fontSize: 14, color: locked ? 'var(--ink-2)' : 'var(--ink-1)' }}>{title}</div>
+                <div style={{ fontFamily: 'var(--f-serif)', fontSize: 15, color: locked ? 'var(--ink-2)' : 'var(--ink-1)', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{title}</div>
                 {desc && (
-                  <div style={{ fontSize: 10, color: 'var(--ink-3)', marginTop: 3, lineHeight: 1.25, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{desc}</div>
+                  <div style={{ fontSize: 11, color: 'var(--ink-2)', marginTop: 2, lineHeight: 1.25, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{desc}</div>
                 )}
                 <div style={{ fontFamily: 'var(--f-mono)', fontSize: 9, color: level.color, marginTop: 4, letterSpacing: '0.1em' }}>{progressLine}</div>
               </div>
@@ -257,7 +255,11 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound, onOpenFicha
       {/* Track tabs (Cocktails / Wine / Coffee) */}
       <div style={{
         padding: '4px 24px 8px',
-        display: 'flex', gap: 8, overflowX: 'auto', WebkitOverflowScrolling: 'touch',
+        paddingRight: 28,
+        display: 'flex', gap: 10, overflowX: 'auto', WebkitOverflowScrolling: 'touch',
+        scrollSnapType: 'x mandatory',
+        WebkitMaskImage: 'linear-gradient(90deg, #000 calc(100% - 28px), transparent)',
+        maskImage: 'linear-gradient(90deg, #000 calc(100% - 28px), transparent)',
       }}>
         {TRACKS.map(t => {
           const m = TRACK_META[t];
@@ -269,13 +271,16 @@ const AcademyScreen = ({ onBack, onStartAcademyLesson, onStartRound, onOpenFicha
               onClick={() => pickTrack(t)}
               className="chip"
               style={{
-                padding: '10px 14px', borderRadius: 'var(--r-pill)', minHeight: 40,
+                padding: '10px 14px', borderRadius: 'var(--r-pill)', minHeight: 48,
                 display: 'flex', alignItems: 'center', gap: 8,
-                background: active ? `linear-gradient(135deg, ${m.color}, oklch(0.3 0.05 60))` : 'var(--bg-2)',
+                background: active
+                  ? `linear-gradient(135deg, ${m.color}, oklch(from ${m.color} calc(l - 0.18) c h))`
+                  : 'var(--bg-2)',
                 color: active ? 'var(--bg-0)' : 'var(--ink-1)',
                 border: `1px solid ${active ? m.color : 'var(--line)'}`,
                 fontSize: 13, fontWeight: active ? 600 : 400,
                 cursor: 'pointer', flex: '0 0 auto', whiteSpace: 'nowrap',
+                scrollSnapAlign: 'start',
               }}
               aria-pressed={active}
             >
