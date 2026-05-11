@@ -14,10 +14,6 @@
 
 export const PARITY_EXCLUDE_PREFIXES = [
   'wiki.art.liqueurs.', // tracked for follow-up PR (pre-existing debt)
-  // New pairings category seeded manually (10 articles, ES-only); cron translate
-  // will propagate EN/FR/PT/DE in follow-up runs and prune.py will drop this
-  // prefix when all 70 keys land in the 4 target languages.
-  'wiki.art.pairings.',
   // Knowledge hub narrative content — long-form bios/descriptions/timeline
   // still ES-only. The short UI labels (section_*, hub_title, progress,
   // back, 3d_*, articles, eyebrow, tap_hint, view_3d) are now translated.
