@@ -28,9 +28,13 @@ concurrency:
 
 jobs:
   run:
-    # Skip when the push that triggered this workflow was the auto-merged PR
-    # we ourselves just landed — the title prefix is deterministic.
-    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, 'AI content') }}
+    # MANUALLY DISABLED 2026-05-11: the user is hand-translating the pairings
+    # corpus to EN/FR/PT/DE because Groq's free-tier daily token cap (500k TPD)
+    # cannot keep up with the volume in a single run. Re-enable by removing the
+    # `false &&` prefix below once the manual pass lands and translations are
+    # back to incremental sizes. Until then we still want the workflow file in
+    # place so schedule/dispatch events log clearly as skipped instead of failing.
+    if: ${{ false && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, 'AI content')) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
