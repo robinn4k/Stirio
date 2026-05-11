@@ -263,7 +263,28 @@ export const WIKI_CATEGORIES = [
     icon: '🧊',
     gradient: 'linear-gradient(135deg, #74b9ff, #0984e3)',
     has3d: false,
-    articles: []
+    articles: [
+      { id: 'ice-history-natural-trade', icon: '🧊', has3d: false },
+      { id: 'ice-physics-of-cooling', icon: '🧊', has3d: false },
+      { id: 'ice-clarity-science', icon: '🧊', has3d: false },
+      { id: 'ice-shapes-spheres', icon: '🧊', has3d: false },
+      { id: 'ice-shapes-large-cubes', icon: '🧊', has3d: false },
+      { id: 'ice-shapes-collins', icon: '🧊', has3d: false },
+      { id: 'ice-shapes-king-cube', icon: '🧊', has3d: false },
+      { id: 'ice-shaved-japanese', icon: '🧊', has3d: false },
+      { id: 'ice-crushed-pebble', icon: '🧊', has3d: false },
+      { id: 'ice-cracked', icon: '🧊', has3d: false },
+      { id: 'ice-block-craft', icon: '🧊', has3d: false },
+      { id: 'ice-flavored', icon: '🧊', has3d: false },
+      { id: 'ice-balls-techniques', icon: '🧊', has3d: false },
+      { id: 'ice-temperature-targets', icon: '🧊', has3d: false },
+      { id: 'ice-dilution-math', icon: '🧊', has3d: false },
+      { id: 'ice-vs-no-ice-stirring', icon: '🧊', has3d: false },
+      { id: 'ice-machine-types', icon: '🧊', has3d: false },
+      { id: 'ice-storage-bar', icon: '🧊', has3d: false },
+      { id: 'ice-carving-art', icon: '🧊', has3d: false },
+      { id: 'ice-spear-collins', icon: '🧊', has3d: false }
+    ]
   },
   {
     id: 'garnishes',
@@ -919,6 +940,29 @@ export const WIKI_ARTICLES = {
   'pairings.te-y-comida-segun-familia': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'principles' }, { type: 'text-block', key: 'classic_pairings' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
   'pairings.kombucha-como-maridaje': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'principles' }, { type: 'text-block', key: 'classic_pairings' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
   'pairings.shrubs-y-platos-grasos': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'principles' }, { type: 'text-block', key: 'classic_pairings' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+
+  // ── ICE ────────────────────────────────────────────────────
+  'ice.ice-history-natural-trade': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-physics-of-cooling': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-clarity-science': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-shapes-spheres': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-shapes-large-cubes': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-shapes-collins': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-shapes-king-cube': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-shaved-japanese': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-crushed-pebble': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-cracked': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-block-craft': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-flavored': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-balls-techniques': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-temperature-targets': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-dilution-math': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-vs-no-ice-stirring': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-machine-types': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-storage-bar': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-carving-art': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+  'ice.ice-spear-collins': { sections: [{ type: 'text-block', key: 'description' }, { type: 'text-block', key: 'science' }, { type: 'text-block', key: 'technique' }, { type: 'tips', key: 'tips' }, { type: 'text-block', key: 'sources' }] },
+
 };
 
 // ─── Timeline data (migrated from bartenders-wiki historia.html) ─────
