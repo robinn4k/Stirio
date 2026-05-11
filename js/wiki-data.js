@@ -291,7 +291,18 @@ export const WIKI_CATEGORIES = [
     icon: '🍴',
     gradient: 'linear-gradient(135deg, #d35400, #8e44ad)',
     has3d: false,
-    articles: []
+    articles: [
+      { id: 'maridaje-principios-basicos', icon: '🍴', has3d: false },
+      { id: 'food-pairing-hypothesis', icon: '🍴', has3d: false },
+      { id: 'umami-quinto-sabor', icon: '🍴', has3d: false },
+      { id: 'maridaje-tinto-carne', icon: '🍴', has3d: false },
+      { id: 'maridaje-blanco-pescado', icon: '🍴', has3d: false },
+      { id: 'maridaje-jerez-tapas', icon: '🍴', has3d: false },
+      { id: 'espresso-y-postre', icon: '🍴', has3d: false },
+      { id: 'aperitivo-italiano-spritz-negroni', icon: '🍴', has3d: false },
+      { id: 'cerveza-y-queso-garrett-oliver', icon: '🍴', has3d: false },
+      { id: 'mocktails-arte-del-no-alcohol', icon: '🍴', has3d: false }
+    ]
   }
 ];
 
