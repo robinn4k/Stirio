@@ -456,23 +456,23 @@ export const rounds = [
     ]
   },
   // TODO localize — round 25 ships in Spanish until translations land.
-  {
+    {
     id: 25,
-    title: "Historia & Cultura",
-    subtitle: "Orígenes, personajes y bares legendarios",
+    title: "História & Cultura",
+    subtitle: "Origens, personagens e bares lendários",
     icon: "📜",
     color: "#8e44ad",
     questions: [
-      { q: "¿En qué año apareció por primera vez en letra impresa la palabra 'cocktail'?", a: ["1806", "1862", "1920", "1776"], exp: "La palabra 'cocktail' apareció en 1806 en The Balance and Columbian Repository, definida como un licor estimulante de azúcar, agua y amargos." },
-      { q: "¿Qué libro publicó Jerry Thomas en 1862?", a: ["How to Mix Drinks (The Bartender's Guide)", "The Savoy Cocktail Book", "The Fine Art of Mixing Drinks", "The Joy of Mixology"], exp: "How to Mix Drinks or The Bon-Vivant's Companion (1862) de Jerry Thomas es el primer manual serio de coctelería publicado en EE.UU." },
-      { q: "¿Entre qué años estuvo vigente la Prohibición en EE.UU.?", a: ["1920-1933", "1918-1930", "1929-1941", "1900-1920"], exp: "La 18ª Enmienda entró en vigor el 17 de enero de 1920 y fue derogada por la 21ª Enmienda el 5 de diciembre de 1933." },
-      { q: "¿Dónde y en qué año se fundó la IBA (International Bartenders Association)?", a: ["Torquay, 1951", "Londres, 1945", "Nueva York, 1960", "París, 1938"], exp: "La IBA se fundó en 1951 en el Grand Hotel de Torquay, Inglaterra, por representantes de siete países." },
-      { q: "¿Cuál era el nombre real de Don the Beachcomber?", a: ["Ernest Raymond Beaumont Gantt", "Victor Bergeron", "Harry Craddock", "Trader Vic"], exp: "Ernest Raymond Beaumont Gantt (1907-1989) adoptó el personaje de Don the Beachcomber en 1933 al abrir el primer bar Tiki en Hollywood." },
-      { q: "¿Qué cóctel creó Ada Coleman en el American Bar del Savoy?", a: ["Hanky Panky", "White Lady", "Sidecar", "Bloody Mary"], exp: "Ada 'Coley' Coleman creó el Hanky Panky para el actor Charles Hawtrey alrededor de 1903, con ginebra, vermut rojo y Fernet Branca." },
-      { q: "¿Quién escribió The Savoy Cocktail Book en 1930?", a: ["Harry Craddock", "Jerry Thomas", "Dale DeGroff", "Ada Coleman"], exp: "Harry Craddock, bartender americano que huyó a Londres durante la Prohibición, recopiló 750 recetas en The Savoy Cocktail Book (1930)." },
-      { q: "¿De qué tradición cultural toman inspiración las tazas tiki?", a: ["Cultura polinesia", "Cultura azteca", "Cultura griega", "Cultura vikinga"], exp: "Las tazas tiki se inspiran en la iconografía polinesia (dioses maoríes, tótems) mezclada con fantasía americana mid-century." },
-      { q: "¿Qué licor se usa para enjuagar el vaso en un Sazerac?", a: ["Absenta", "Chartreuse verde", "Pastis", "Ouzo"], exp: "El Sazerac se sirve en un vaso previamente enjuagado con absenta (o Herbsaint tras la Prohibición), que deja sólo el aroma anisado." },
-      { q: "¿Quién lideró el renacimiento del cóctel clásico desde el Rainbow Room en los 80?", a: ["Dale DeGroff", "Audrey Saunders", "Sasha Petraske", "Dick Bradsell"], exp: "Dale DeGroff, conocido como 'King Cocktail', asumió en 1987 la barra del Rainbow Room e inició el renacimiento del classic cocktail." }
+      { q: "Em que ano a palavra 'cocktail' apareceu pela primeira vez impressa?", a: ["1806", "1862", "1920", "1776"], exp: "A palavra 'cocktail' apareceu em 1806 em The Balance and Columbian Repository, definida como um licor estimulante de açúcar, água e amargos." },
+      { q: "Que livro publicou Jerry Thomas em 1862?", a: ["How to Mix Drinks (The Bartender's Guide)", "The Savoy Cocktail Book", "The Fine Art of Mixing Drinks", "The Joy of Mixology"], exp: "How to Mix Drinks ou The Bon-Vivant's Companion (1862) de Jerry Thomas é o primeiro manual sério de coctelaria publicado nos EUA." },
+      { q: "Entre que anos vigorou a Lei Seca nos EUA?", a: ["1920-1933", "1918-1930", "1929-1941", "1900-1920"], exp: "A 18ª Emenda entrou em vigor a 17 de janeiro de 1920 e foi revogada pela 21ª Emenda a 5 de dezembro de 1933." },
+      { q: "Onde e em que ano se fundou a IBA (International Bartenders Association)?", a: ["Torquay, 1951", "Londres, 1945", "Nova Iorque, 1960", "Paris, 1938"], exp: "A IBA foi fundada em 1951 no Grand Hotel de Torquay, Inglaterra, por representantes de sete países." },
+      { q: "Qual era o nome real de Don the Beachcomber?", a: ["Ernest Raymond Beaumont Gantt", "Victor Bergeron", "Harry Craddock", "Trader Vic"], exp: "Ernest Raymond Beaumont Gantt (1907-1989) adoptou a personagem de Don the Beachcomber em 1933 ao abrir o primeiro bar Tiki em Hollywood." },
+      { q: "Que cocktail criou Ada Coleman no American Bar do Savoy?", a: ["Hanky Panky", "White Lady", "Sidecar", "Bloody Mary"], exp: "Ada 'Coley' Coleman criou o Hanky Panky para o ator Charles Hawtrey por volta de 1903, com gim, vermute tinto e Fernet Branca." },
+      { q: "Quem escreveu The Savoy Cocktail Book em 1930?", a: ["Harry Craddock", "Jerry Thomas", "Dale DeGroff", "Ada Coleman"], exp: "Harry Craddock, bartender americano que fugiu para Londres durante a Lei Seca, compilou 750 receitas em The Savoy Cocktail Book (1930)." },
+      { q: "De que tradição cultural se inspiram os copos tiki?", a: ["Cultura polinésia", "Cultura asteca", "Cultura grega", "Cultura viking"], exp: "Os copos tiki inspiram-se na iconografia polinésia (deuses maori, totens) misturada com fantasia americana de meados do século XX." },
+      { q: "Que licor se usa para enxaguar o copo num Sazerac?", a: ["Absinto", "Chartreuse verde", "Pastis", "Ouzo"], exp: "O Sazerac serve-se num copo previamente enxaguado com absinto (ou Herbsaint após a Lei Seca), que deixa apenas o aroma anisado." },
+      { q: "Quem liderou o renascimento do cocktail clássico desde o Rainbow Room nos anos 80?", a: ["Dale DeGroff", "Audrey Saunders", "Sasha Petraske", "Dick Bradsell"], exp: "Dale DeGroff, conhecido como 'King Cocktail', assumiu em 1987 o bar do Rainbow Room e iniciou o renascimento do classic cocktail." }
     ]
   }
 ];
