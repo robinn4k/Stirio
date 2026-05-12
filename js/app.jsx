@@ -1301,8 +1301,18 @@ const App = () => {
 
       {subScreen === 'article' && !activeLesson && (
         <ArticleScreen
-          article={(window.stArticles && window.stArticles.resolveArticle(articleEntry)) || (window.stArticles && window.stArticles.getArticleOfTheDay())}
-          onBack={() => setSubScreen(null)}
+          // When the user explicitly opened a specific article (reels tap,
+          // knowledge tap) we resolve it with allowPartial so a missing ES
+          // title produces a slug-cased fallback instead of silently
+          // redirecting to Article-of-the-Day. Only the no-entry case (deep
+          // link landing on /article) falls back to today's article.
+          article={articleEntry
+            ? window.stArticles?.resolveArticle(articleEntry, { allowPartial: true })
+            : window.stArticles?.getArticleOfTheDay()}
+          // router.back() pops just the article frame so the previous screen
+          // (reels / wiki / home) keeps its state. setSubScreen(null) would
+          // reset the whole stack and snap the user to Home.
+          onBack={() => { window.stRouter?.back(); }}
           onOpenWiki={() => setSubScreen('wiki')}
         />
       )}

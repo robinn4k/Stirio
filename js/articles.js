@@ -82,13 +82,31 @@
     return (v && v !== key) ? v : undefined;
   }
 
-  function resolveArticle(entry) {
+  // titleCase: turn "fat-wash-bacon" into "Fat Wash Bacon" — fallback when an
+  // article is listed in WIKI_CATEGORIES but has no i18n title yet. Used only
+  // when resolveArticle is called with `allowPartial: true` (explicit user
+  // navigation from reels / knowledge), so Article-of-the-Day on Home keeps
+  // its strict "null until translations load" behaviour.
+  function titleCase(slug) {
+    return String(slug || '')
+      .split(/[-_]+/)
+      .filter(Boolean)
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+  }
+
+  function resolveArticle(entry, opts = {}) {
     if (!entry) return null;
     const base = 'wiki.art.' + entry.cat + '.' + entry.art;
     const title = tr(base);
     // If translations haven't loaded yet, skip rendering instead of showing
     // a raw slug like "shake" — Home re-renders on `stirio:langchange`.
-    if (!title) return null;
+    // When `allowPartial: true`, fall through with a slug-derived title so the
+    // user that explicitly opened a reel sees at least a recognizable header
+    // instead of being silently redirected to a different article.
+    if (!title && !opts.allowPartial) return null;
+    const titleResolved = title || titleCase(entry.art);
+    const partial = !title;
     const sub = tr(base + '.sub');
     const description = tr(base + '.description');
     const history = tr(base + '.history');
@@ -121,7 +139,8 @@
       type: entry.type,
       cat: entry.cat,
       art: entry.art,
-      title,
+      title: titleResolved,
+      partial,
       excerpt,
       emoji: entry.emoji,
       color: entry.color,
