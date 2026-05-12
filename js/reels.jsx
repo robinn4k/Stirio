@@ -65,6 +65,10 @@ function reelsTitleCase(slug) {
 function buildReelsFeed(categories) {
   const out = [];
   if (!Array.isArray(categories)) return out;
+  const lookupPhoto = (cat, art) => {
+    try { return window.stWikiImages?.getReelPhoto(cat, art) || null; }
+    catch { return null; }
+  };
   for (const cat of categories) {
     if (!cat || !Array.isArray(cat.articles)) continue;
     for (const art of cat.articles) {
@@ -76,6 +80,7 @@ function buildReelsFeed(categories) {
         artIcon: art.icon || cat.icon || '📜',
         gradient: cat.gradient || 'linear-gradient(135deg, var(--bg-1), var(--bg-2))',
         has3d: !!(art.has3d || cat.has3d),
+        image: lookupPhoto(cat.id, art.id),
       });
     }
   }
@@ -84,11 +89,17 @@ function buildReelsFeed(categories) {
 
 // Tries to find the rich POOL entry (with image + verified emoji/color) so the
 // article overlay opens with the same hero asset wiki uses. Falls back to an
-// ad-hoc entry — same pattern as knowledge.jsx CategoryView.openArticle.
+// ad-hoc entry — same pattern as knowledge.jsx CategoryView.openArticle. Also
+// propagates the photo credit from POOL or the category-level catalog so the
+// article overlay can render attribution under the hero image.
 function buildReelEntry(slot) {
   const pool = (window.stArticles && window.stArticles.POOL) || [];
   const hit  = pool.find(e => e.cat === slot.cat && e.art === slot.art);
   if (hit) return { ...hit, has3d: !!(hit.has3d || slot.has3d) };
+  const catCredit = (() => {
+    try { return window.stWikiImages?.getPhotoCredit(slot.cat, slot.art) || null; }
+    catch { return null; }
+  })();
   return {
     id: slot.cat + '-' + slot.art,
     type: slot.cat === 'history' ? 'history' : (slot.cat === 'techniques' ? 'technique' : 'spirit'),
@@ -97,6 +108,8 @@ function buildReelEntry(slot) {
     emoji: slot.artIcon,
     color: 'var(--amber)',
     has3d: !!slot.has3d,
+    image: slot.image || null,
+    credit: catCredit,
   };
 }
 
@@ -120,6 +133,8 @@ const ReelCard = ({ slot, tr, onOpen }) => {
   const catLabel = tr('wiki.cat.' + slot.cat, '');
   const catLabelSafe = (catLabel && catLabel !== 'wiki.cat.' + slot.cat) ? catLabel : reelsTitleCase(slot.cat);
 
+  const hasPhoto = !!slot.image;
+
   return (
     <button
       type="button"
@@ -130,94 +145,139 @@ const ReelCard = ({ slot, tr, onOpen }) => {
         background: slot.gradient,
         border: 'none', textAlign: 'left',
         color: 'white', cursor: 'pointer',
-        padding: 'calc(24px + env(safe-area-inset-top, 0)) 22px calc(96px + env(safe-area-inset-bottom, 0)) 22px',
+        padding: 0,
+        overflow: 'hidden',
         WebkitTapHighlightColor: 'transparent',
       }}
       aria-label={title}
     >
-      {/* Top: category badge */}
-      <div style={{
-        display: 'inline-flex', alignItems: 'center', gap: 8,
-        alignSelf: 'flex-start',
-        padding: '6px 12px', borderRadius: 999,
-        background: 'rgba(0,0,0,0.32)',
-        backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
-        fontSize: 11, fontFamily: 'var(--f-mono)',
-        textTransform: 'uppercase', letterSpacing: 0.8,
-      }}>
-        <span style={{ fontSize: 14 }}>{slot.catIcon}</span>
-        <span>{catLabelSafe}</span>
-      </div>
+      {/* Photo background — fills the reel. Gradient stays underneath as a
+          fallback if the request 404s. */}
+      {hasPhoto && (
+        <img
+          src={slot.image}
+          loading="lazy"
+          decoding="async"
+          alt=""
+          aria-hidden="true"
+          style={{
+            position: 'absolute', inset: 0,
+            width: '100%', height: '100%',
+            objectFit: 'cover',
+            pointerEvents: 'none',
+          }}
+        />
+      )}
 
-      {/* Center: hero emoji */}
-      <div style={{
-        flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontSize: 'clamp(96px, 28vw, 160px)',
-        lineHeight: 1, filter: 'drop-shadow(0 6px 20px rgba(0,0,0,0.35))',
-        userSelect: 'none', pointerEvents: 'none',
-      }}>
-        {slot.artIcon}
-      </div>
-
-      {/* Bottom: title + sub + description preview + tip + CTA */}
-      <div style={{
-        background: 'linear-gradient(transparent, rgba(0,0,0,0.55) 30%, rgba(0,0,0,0.7))',
-        margin: '0 -22px -22px',
-        padding: '36px 22px 22px',
-        display: 'flex', flexDirection: 'column', gap: 10,
-      }}>
-        <h2 style={{
-          margin: 0, fontFamily: 'var(--f-serif)',
-          fontSize: 'clamp(28px, 7vw, 40px)',
-          lineHeight: 1.05, fontWeight: 700,
-          textShadow: '0 2px 12px rgba(0,0,0,0.4)',
-        }}>
-          {title}
-        </h2>
-
-        {sub && (
-          <div style={{
-            fontSize: 14, opacity: 0.85, lineHeight: 1.35,
-            fontStyle: 'italic',
-          }}>
-            {sub}
-          </div>
-        )}
-
-        {description && (
-          <div style={{
-            position: 'relative',
-            fontSize: 13, lineHeight: 1.45, opacity: 0.92,
-            maxHeight: '4.5em', overflow: 'hidden',
-          }}>
-            {description}
-            <div style={{
-              position: 'absolute', inset: 'auto 0 0 0', height: '1.4em',
-              background: 'linear-gradient(transparent, rgba(0,0,0,0.7))',
-              pointerEvents: 'none',
-            }} />
-          </div>
-        )}
-
-        {firstTip && (
-          <div style={{
-            display: 'flex', gap: 8, alignItems: 'flex-start',
-            padding: '8px 10px', borderRadius: 8,
-            background: 'rgba(255,255,255,0.12)',
-            fontSize: 12, lineHeight: 1.4,
-          }}>
-            <span style={{ fontSize: 14 }}>💡</span>
-            <span style={{ flex: 1 }}>{firstTip}</span>
-          </div>
-        )}
-
+      {/* Top overlay — keeps the badge legible without darkening the whole
+          hero. Skipped on no-photo so the gradient color stays vivid. */}
+      {hasPhoto && (
         <div style={{
-          marginTop: 4,
-          fontSize: 12, fontFamily: 'var(--f-mono)',
+          position: 'absolute', inset: '0 0 auto 0', height: '32%',
+          background: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%)',
+          pointerEvents: 'none',
+        }} />
+      )}
+
+      {/* Bottom overlay — anchors the text block to the lower third with a
+          fade strong enough to keep clamp(28px, 7vw, 40px) headings readable. */}
+      <div style={{
+        position: 'absolute', inset: 'auto 0 0 0', height: hasPhoto ? '62%' : '50%',
+        background: hasPhoto
+          ? 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.88) 100%)'
+          : 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.7) 100%)',
+        pointerEvents: 'none',
+      }} />
+
+      {/* Content layer — absolute over the photo + overlays. */}
+      <div style={{
+        position: 'relative', zIndex: 1,
+        display: 'flex', flexDirection: 'column',
+        height: '100%', width: '100%',
+        padding: 'calc(24px + env(safe-area-inset-top, 0)) 22px calc(96px + env(safe-area-inset-bottom, 0)) 22px',
+      }}>
+        {/* Top: category badge */}
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: 8,
+          alignSelf: 'flex-start',
+          padding: '6px 12px', borderRadius: 999,
+          background: 'rgba(0,0,0,0.42)',
+          backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
+          fontSize: 11, fontFamily: 'var(--f-mono)',
           textTransform: 'uppercase', letterSpacing: 0.8,
-          opacity: 0.85,
         }}>
-          {tr('reels.tap_to_read', 'Toca para leer →')}
+          <span style={{ fontSize: 14 }}>{slot.catIcon}</span>
+          <span>{catLabelSafe}</span>
+        </div>
+
+        {/* Center spacer — emoji only appears when there's no photo to fill
+            the hero area. With a photo the image is the hero. */}
+        {!hasPhoto && (
+          <div style={{
+            flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: 'clamp(96px, 28vw, 160px)',
+            lineHeight: 1, filter: 'drop-shadow(0 6px 20px rgba(0,0,0,0.35))',
+            userSelect: 'none', pointerEvents: 'none',
+          }}>
+            {slot.artIcon}
+          </div>
+        )}
+        {hasPhoto && <div style={{ flex: 1 }} />}
+
+        {/* Bottom: title + sub + description preview + tip + CTA */}
+        <div style={{
+          display: 'flex', flexDirection: 'column', gap: 10,
+          textShadow: hasPhoto ? '0 2px 14px rgba(0,0,0,0.55)' : 'none',
+        }}>
+          <h2 style={{
+            margin: 0, fontFamily: 'var(--f-serif)',
+            fontSize: 'clamp(28px, 7vw, 40px)',
+            lineHeight: 1.05, fontWeight: 700,
+          }}>
+            {title}
+          </h2>
+
+          {sub && (
+            <div style={{
+              fontSize: 14, opacity: 0.92, lineHeight: 1.35,
+              fontStyle: 'italic',
+            }}>
+              {sub}
+            </div>
+          )}
+
+          {description && (
+            <div style={{
+              fontSize: 13, lineHeight: 1.45, opacity: 0.92,
+              maxHeight: '4.5em', overflow: 'hidden',
+              display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
+            }}>
+              {description}
+            </div>
+          )}
+
+          {firstTip && (
+            <div style={{
+              display: 'flex', gap: 8, alignItems: 'flex-start',
+              padding: '8px 10px', borderRadius: 8,
+              background: 'rgba(255,255,255,0.14)',
+              backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
+              fontSize: 12, lineHeight: 1.4,
+              textShadow: 'none',
+            }}>
+              <span style={{ fontSize: 14 }}>💡</span>
+              <span style={{ flex: 1 }}>{firstTip}</span>
+            </div>
+          )}
+
+          <div style={{
+            marginTop: 4,
+            fontSize: 12, fontFamily: 'var(--f-mono)',
+            textTransform: 'uppercase', letterSpacing: 0.8,
+            opacity: 0.9,
+          }}>
+            {tr('reels.tap_to_read', 'Toca para leer →')}
+          </div>
         </div>
       </div>
     </button>

@@ -353,6 +353,60 @@ const ArticleScreen = ({ article, onBack, onOpenWiki }) => {
         )}
       </div>
 
+      {/* Photo credit — surfaced just under the hero so the photographer (or
+          at least the Unsplash photo page) is one tap away. Renders only when
+          the article has an image AND a credit object propagated from
+          articles.js POOL or the wiki-images.js category fallback. */}
+      {current.image && current.credit && (
+        <div
+          className="mono"
+          style={{
+            fontSize: 11,
+            opacity: 0.65,
+            padding: '8px 24px 0',
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: 4,
+            color: 'var(--ink-2)',
+            maxWidth: 720,
+            margin: '0 auto',
+          }}
+        >
+          {current.credit.photographer ? (
+            <>
+              <span>{tr('article.photo_credit_by', 'Foto por')}</span>
+              {current.credit.photographer_url ? (
+                <a
+                  href={current.credit.photographer_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'inherit', textDecoration: 'underline' }}
+                >
+                  {current.credit.photographer}
+                </a>
+              ) : (
+                <span>{current.credit.photographer}</span>
+              )}
+              <span>·</span>
+            </>
+          ) : (
+            <span>{tr('article.photo_credit_on', 'Foto en')}</span>
+          )}
+          {current.credit.source_url ? (
+            <a
+              href={current.credit.source_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'inherit', textDecoration: 'underline' }}
+            >
+              {current.credit.source === 'unsplash' ? 'Unsplash' : (current.credit.source || 'web')}
+            </a>
+          ) : (
+            <span>{current.credit.source === 'unsplash' ? 'Unsplash' : (current.credit.source || 'web')}</span>
+          )}
+        </div>
+      )}
+
       {/* Sections */}
       <div style={{ padding: '24px 24px 40px', display: 'grid', gap: 20, maxWidth: 720, margin: '0 auto' }}>
         {/* Inline 3D model (lazy-loaded). Rendered between the hero and the
