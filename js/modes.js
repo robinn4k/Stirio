@@ -45,6 +45,7 @@ export const MODES = [
   { id: 'glossary', group: 'consultar', icon: '📝',  color: 'var(--berry)',  route: 'glossary' },
   { id: 'map',      group: 'consultar', icon: '🗺️',  color: 'var(--violet)', route: 'map' },
   { id: 'euvs',     group: 'consultar', icon: '📚',  color: 'var(--cyan)',   route: 'euvs' },
+  { id: 'reels',    group: 'consultar', icon: '📱',  color: 'var(--berry)',  route: 'reels' },
 ];
 
 export const MODE_GROUPS = ['aprender', 'jugar', 'consultar'];
