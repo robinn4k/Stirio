@@ -35,6 +35,7 @@ const ROUTES = {
   rhythm:          { parent: 'home',         hidesNav: true },
   comanda:         { parent: 'home',         hidesNav: true },
   euvs:            { parent: 'home',         hidesNav: true },
+  reels:           { parent: 'home',         hidesNav: true },
   article:         { parent: 'wiki',         hidesNav: true },
   admin:           { parent: 'profile',      hidesNav: true },
 
@@ -96,6 +97,7 @@ const PLAY_SHORTCUTS = [
   { id: 'academy',   icon: '🎓' },
   { id: 'iba',       icon: '📇' },
   { id: 'freequiz',  icon: '🎲' },
+  { id: 'reels',     icon: '📱' },
   { id: 'mode-menu', icon: '⋯' },
 ];
 
@@ -768,6 +770,7 @@ const App = () => {
     map:      'map',
     article:  'article',
     euvs:     'euvs',
+    reels:    'reels',
   };
   const openMode = (m) => {
     if (m === 'mode-menu') { setActiveMode('any'); return; }
@@ -1263,6 +1266,13 @@ const App = () => {
 
       {subScreen === 'euvs' && !activeLesson && window.EuvsArchiveScreen && (
         <window.EuvsArchiveScreen onBack={() => setSubScreen(null)} />
+      )}
+
+      {subScreen === 'reels' && !activeLesson && window.ReelsScreen && (
+        <window.ReelsScreen
+          onBack={() => setSubScreen(null)}
+          onOpenArticle={(entry) => window.stRouter && window.stRouter.navigate('article', { entry })}
+        />
       )}
 
       {subScreen === 'map' && !activeLesson && (
