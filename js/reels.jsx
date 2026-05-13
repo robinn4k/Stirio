@@ -126,8 +126,26 @@ const ReelCard = ({ slot, tr, onOpen }) => {
 
   const tipsRaw = tr(base + '.tips', '');
   const tipsFull = (tipsRaw && tipsRaw !== base + '.tips') ? tipsRaw : '';
-  const firstTip = tipsFull
-    ? (tipsFull.split(/\n+|(?<=\.)\s+/).find(s => s.trim().length > 0) || '').trim()
+  // Split the whole tips block into individual bullets (sentences or
+  // newline-separated chunks). Cap at 4 chips so a verbose tips field doesn't
+  // overflow the scrollable body too much.
+  const tipsList = tipsFull
+    ? tipsFull
+        .split(/\n+|(?<=\.)\s+/)
+        .map(s => s.trim())
+        .filter(s => s.length > 5)
+        .slice(0, 4)
+    : [];
+
+  // History / origin snippet — first sentence of whichever exists. Surfaces
+  // narrative context inside the reel without forcing the user to tap through.
+  const histRaw = tr(base + '.history', '');
+  const historyText = (histRaw && histRaw !== base + '.history') ? histRaw : '';
+  const originRaw = tr(base + '.origin', '');
+  const originText = (originRaw && originRaw !== base + '.origin') ? originRaw : '';
+  const narrativeSource = historyText || originText;
+  const historySnippet = narrativeSource
+    ? (narrativeSource.split(/\n+|(?<=\.)\s+/).find(s => s.trim().length > 0) || '').trim()
     : '';
 
   const catLabel = tr('wiki.cat.' + slot.cat, '');
@@ -224,54 +242,97 @@ const ReelCard = ({ slot, tr, onOpen }) => {
         )}
         {hasPhoto && <div style={{ flex: 1 }} />}
 
-        {/* Bottom: title + sub + description preview + tip + CTA */}
+        {/* Bottom panel — header fixed (title + sub) + body scrollable
+            (description + history snippet + tips chips) + footer fixed (CTA).
+            The nested scroll uses overscroll-behavior:contain so reaching the
+            top/bottom of the inner content doesn't chain into the outer
+            scroll-snap-y reel switcher. */}
         <div style={{
           display: 'flex', flexDirection: 'column', gap: 10,
+          maxHeight: '60vh',
           textShadow: hasPhoto ? '0 2px 14px rgba(0,0,0,0.55)' : 'none',
         }}>
-          <h2 style={{
-            margin: 0, fontFamily: 'var(--f-serif)',
-            fontSize: 'clamp(28px, 7vw, 40px)',
-            lineHeight: 1.05, fontWeight: 700,
-          }}>
-            {title}
-          </h2>
-
-          {sub && (
-            <div style={{
-              fontSize: 14, opacity: 0.92, lineHeight: 1.35,
-              fontStyle: 'italic',
+          {/* HEADER — title + sub, never scrolled */}
+          <div style={{ flexShrink: 0 }}>
+            <h2 style={{
+              margin: 0, fontFamily: 'var(--f-serif)',
+              fontSize: 'clamp(28px, 7vw, 40px)',
+              lineHeight: 1.05, fontWeight: 700,
             }}>
-              {sub}
+              {title}
+            </h2>
+            {sub && (
+              <div style={{
+                marginTop: 6,
+                fontSize: 17, opacity: 0.95, lineHeight: 1.35,
+                fontStyle: 'italic',
+              }}>
+                {sub}
+              </div>
+            )}
+          </div>
+
+          {/* BODY — full description + history snippet + all tips. Scrolls
+              internally when it overflows; the outer reel switcher stays put.
+              A stationary tap still bubbles up to the parent <button> so the
+              article opens; only an actual scroll gesture suppresses the
+              click (iOS Safari handles that distinction natively via the
+              touch-movement threshold). */}
+          {(description || historySnippet || tipsList.length > 0) && (
+            <div
+              style={{
+                flex: 1, minHeight: 0,
+                overflowY: 'auto',
+                overscrollBehavior: 'contain',
+                WebkitOverflowScrolling: 'touch',
+                display: 'flex', flexDirection: 'column', gap: 10,
+                paddingRight: 2,
+                // Subtle fade at the bottom to hint at more content when
+                // overflow is present. When everything fits, the mask is
+                // invisible because no content reaches the gradient end.
+                maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+              }}
+            >
+              {description && (
+                <div style={{ fontSize: 13, lineHeight: 1.5, opacity: 0.94 }}>
+                  {description}
+                </div>
+              )}
+
+              {historySnippet && (
+                <div style={{
+                  display: 'flex', gap: 8, alignItems: 'flex-start',
+                  padding: '8px 10px', borderRadius: 8,
+                  background: 'rgba(255,255,255,0.14)',
+                  backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
+                  fontSize: 12, lineHeight: 1.4,
+                  textShadow: 'none',
+                }}>
+                  <span style={{ fontSize: 14 }}>📜</span>
+                  <span style={{ flex: 1 }}>{historySnippet}</span>
+                </div>
+              )}
+
+              {tipsList.map((tip, i) => (
+                <div key={i} style={{
+                  display: 'flex', gap: 8, alignItems: 'flex-start',
+                  padding: '8px 10px', borderRadius: 8,
+                  background: 'rgba(255,255,255,0.14)',
+                  backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
+                  fontSize: 12, lineHeight: 1.4,
+                  textShadow: 'none',
+                }}>
+                  <span style={{ fontSize: 14 }}>💡</span>
+                  <span style={{ flex: 1 }}>{tip}</span>
+                </div>
+              ))}
             </div>
           )}
 
-          {description && (
-            <div style={{
-              fontSize: 13, lineHeight: 1.45, opacity: 0.92,
-              maxHeight: '4.5em', overflow: 'hidden',
-              display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
-            }}>
-              {description}
-            </div>
-          )}
-
-          {firstTip && (
-            <div style={{
-              display: 'flex', gap: 8, alignItems: 'flex-start',
-              padding: '8px 10px', borderRadius: 8,
-              background: 'rgba(255,255,255,0.14)',
-              backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
-              fontSize: 12, lineHeight: 1.4,
-              textShadow: 'none',
-            }}>
-              <span style={{ fontSize: 14 }}>💡</span>
-              <span style={{ flex: 1 }}>{firstTip}</span>
-            </div>
-          )}
-
+          {/* FOOTER — CTA, never scrolled */}
           <div style={{
-            marginTop: 4,
+            flexShrink: 0, marginTop: 4,
             fontSize: 12, fontFamily: 'var(--f-mono)',
             textTransform: 'uppercase', letterSpacing: 0.8,
             opacity: 0.9,
