@@ -162,7 +162,7 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
   return (
     <div className="mobile-safe" style={{ padding: '24px 20px 120px', maxWidth: 760, margin: '0 auto', position: 'relative', zIndex: 2 }}>
       <button className="btn ghost" onClick={onBack} style={{ padding: 8, marginBottom: 18 }}>
-        <Icon name="arrowL" size={18} /> Back
+        <Icon name="arrowL" size={18} /> {tr('common.back', 'Volver')}
       </button>
 
       {/* hero */}
@@ -225,9 +225,19 @@ const Profile = ({ profile, onBack, onUpdateProfile, onLogout, onResetData, twea
             })()}
           </div>
           <div style={{ fontFamily: 'var(--f-serif)', fontSize: 32, fontWeight: 400, lineHeight: 1 }}>
-            {profile.name || tr('profile.stranger', 'stranger')}
+            {profile.name || tr('home.guest', 'invitado')}
           </div>
-          <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>{tr('profile.joined', 'joined · 🌍 earth')}</div>
+          {(() => {
+            // Real join date from the onboarding record (cq_onboarding.completedAt);
+            // the old copy was a hardcoded "joined · earth" placeholder.
+            let ts = null;
+            try { ts = JSON.parse(localStorage.getItem('cq_onboarding'))?.completedAt || null; } catch {}
+            if (!ts) return null;
+            let date;
+            try { date = new Date(ts).toLocaleDateString(lang, { month: 'long', year: 'numeric' }); } catch { date = new Date(ts).toISOString().slice(0, 7); }
+            const v = window.stLang?.t ? window.stLang.t('profile.joined_on', { date }) : '';
+            return <div style={{ color: 'var(--ink-2)', fontSize: 13, marginTop: 2 }}>{v && v !== 'profile.joined_on' ? v : `Desde ${date}`}</div>;
+          })()}
         </div>
         <StreakBadge count={profile.streak} />
       </div>

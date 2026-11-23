@@ -56,22 +56,18 @@
   }
   </script>
 
-  <!-- React 18 + Babel Standalone (CDN, no build step).
-       SRI integrity hashes atados a las versiones exactas: si alguna CDN
-       sirviera un bundle modificado, el navegador lo rechaza. Al subir de
-       versión, recalcular con `curl -sSL <url> | openssl dgst -sha384 -binary | openssl base64 -A`. -->
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
-          integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
-          crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
-          integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
-          crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"
-          integrity="sha384-x/ilTFv/u/eu6YSmkFDZl5V5Mm/pkxxcVv2cVJOrr1J0rvILhMvRBCy6yA75wYBj"
-          crossorigin="anonymous"></script>
+  <!-- React 18 (build de producción) + Babel Standalone, alojados en vendor/
+       y precacheados por el SW: antes venían de unpkg y el SW no cachea
+       recursos cross-origin, así que un arranque en frío sin red dejaba la
+       app en blanco. Copias sacadas de npm (react@18.3.1, react-dom@18.3.1,
+       @babel/standalone@7.26.4); babel.min.js coincide con el antiguo hash
+       SRI de unpkg. -->
+  <script src="vendor/react-18.3.1.production.min.js"></script>
+  <script src="vendor/react-dom-18.3.1.production.min.js"></script>
+  <script src="vendor/babel-standalone-7.26.4.min.js"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '12.50';</script>
+  <script>window.STIRIO_VERSION = '12.52';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -95,12 +91,14 @@
     import * as stLessonSteps from './js/lesson-steps.js';
     import * as stModes from './js/modes.js';
     import * as stEuvsUtils from './js/euvs-archive-utils.js';
+    import * as stCampaign from './js/campaign.js';
     window.stRouter = stRouter;
     window.stServices = stServices;
     window.stStore = stStore;
     window.stLessonSteps = stLessonSteps;
     window.stModes = stModes;
     window.stEuvsUtils = stEuvsUtils;
+    window.stCampaign = stCampaign;
   </script>
 
   <!-- Legacy ES modules (loaded asynchronously, exposed on window.st* AND in

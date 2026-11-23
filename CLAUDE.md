@@ -14,7 +14,7 @@ Stirio is a cocktail learning Progressive Web App. Users master mixology through
 
 ## Tech Stack
 
-- **Runtime**: React 18 via UMD CDN + Babel Standalone (in-browser JSX compilation, no build step). JSX files use `Object.assign(window, {...})` to expose components as globals.
+- **Runtime**: React 18 (production UMD) + Babel Standalone, self-hosted in `vendor/` and precached by the SW (in-browser JSX compilation, no build step). JSX files use `Object.assign(window, {...})` to expose components as globals.
 - **Styling**: `css/tokens.css` (OKLCH design tokens, 6 themes) + `css/style.css` (base styles). Themes applied via `[data-theme]`, `[data-density]`, `[data-featured]`, `[data-device]` HTML attributes.
 - **Backend**: Firebase (Auth, Firestore, Realtime Database, Storage)
 - **PWA**: Service Worker (`sw.js`) caches all static assets for offline use
@@ -249,6 +249,21 @@ processes at 3/day. To add more:
    - Bump the SW version (the new wiki-data.js is precached).
 3. Don't worry about i18n — `complete` writes to `i18n/es.json`, then
    `translate` propagates to EN/FR/PT/DE on the next cron tick.
+
+## Campaign deep links (Instagram / social)
+
+`js/campaign.js` (ES module, exposed as `window.stCampaign`) reads
+`?ref=<source>&c=<campaign>` on boot, stores first/last touch in
+`localStorage['stirio::attribution']`, strips the params, and once Home is
+reached (after onboarding) opens the target:
+
+- `c=reto-diario` / `daily`, `c=velocidad` / `speed` → that lesson
+- `c=mode-<id>` → any mode in `MODE_ROUTES` (`mode-blind`, `mode-academy`…)
+- `c=quiz-<slug>` / `ficha-<slug>` → recipe card; slug = `slugify(ficha.name)`
+  (`Piña Colada` → `pina-colada`)
+
+Example for a Reel: `https://<host>/?ref=ig&c=quiz-negroni`. Unknown `c`
+values are still recorded for attribution.
 
 ## Admin console
 
