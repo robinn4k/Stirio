@@ -24,9 +24,12 @@ const ThreeDSection = ({ sceneId, height = 280 }) => {
 
     const mount = async () => {
       try {
+        // Paths are resolved against the document (index.html at the root),
+        // not this file: Babel-standalone evaluates the script inline, so
+        // './wiki-3d.js' would 404 at /wiki-3d.js.
         const [engine, scenes] = await Promise.all([
-          import('./wiki-3d.js'),
-          import('./wiki-scenes.js'),
+          import('./js/wiki-3d.js'),
+          import('./js/wiki-scenes.js'),
         ]);
         if (!alive) return;
         const builder = scenes.SCENE_BUILDERS && scenes.SCENE_BUILDERS[sceneId];

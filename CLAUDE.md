@@ -14,7 +14,7 @@ Stirio is a cocktail learning Progressive Web App. Users master mixology through
 
 ## Tech Stack
 
-- **Runtime**: React 18 via UMD CDN + Babel Standalone (in-browser JSX compilation, no build step). JSX files use `Object.assign(window, {...})` to expose components as globals.
+- **Runtime**: React 18 (production UMD) + Babel Standalone, self-hosted in `vendor/` and precached by the SW (in-browser JSX compilation, no build step). JSX files use `Object.assign(window, {...})` to expose components as globals.
 - **Styling**: `css/tokens.css` (OKLCH design tokens, 6 themes) + `css/style.css` (base styles). Themes applied via `[data-theme]`, `[data-density]`, `[data-featured]`, `[data-device]` HTML attributes.
 - **Backend**: Firebase (Auth, Firestore, Realtime Database, Storage)
 - **PWA**: Service Worker (`sw.js`) caches all static assets for offline use

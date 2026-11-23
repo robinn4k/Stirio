@@ -272,13 +272,23 @@ const confettiBurst = (x, y, colors = ['var(--amber)', 'var(--cyan)', 'var(--lim
 
 // ── Cookie consent banner (GDPR) ──────────────────────────────
 const CookieBanner = () => {
-  const KEY = 'cq_cookie_consent';
+  // Same key as cookies.html / js/cookies.js so the decision made on the
+  // policy page is honoured here (and vice versa). The legacy key only ever
+  // stored 'accepted', so migrate it once.
+  const KEY = 'stirio_cookie_consent';
+  const LEGACY_KEY = 'cq_cookie_consent';
   const [hidden, setHidden] = useState(() => {
-    try { return localStorage.getItem(KEY) === 'accepted'; } catch { return false; }
+    try {
+      if (!localStorage.getItem(KEY) && localStorage.getItem(LEGACY_KEY) === 'accepted') {
+        localStorage.setItem(KEY, 'accepted');
+      }
+      const v = localStorage.getItem(KEY);
+      return v === 'accepted' || v === 'rejected';
+    } catch { return false; }
   });
   if (hidden) return null;
-  const accept = () => {
-    try { localStorage.setItem(KEY, 'accepted'); } catch {}
+  const decide = (value) => {
+    try { localStorage.setItem(KEY, value); } catch {}
     setHidden(true);
   };
   return (
@@ -296,8 +306,8 @@ const CookieBanner = () => {
         }}
       />
       <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
-        <a href="privacidad.html" target="_blank" rel="noopener" className="btn ghost" style={{ padding: '8px 12px', fontSize: 12 }}>{t('privacy', 'Privacidad')}</a>
-        <button className="btn primary" style={{ padding: '8px 14px', fontSize: 13 }} onClick={accept}>{t('cookie.accept', 'Aceptar')}</button>
+        <button className="btn ghost" style={{ padding: '8px 14px', fontSize: 13 }} onClick={() => decide('rejected')}>{t('cookie.reject', 'Rechazar')}</button>
+        <button className="btn primary" style={{ padding: '8px 14px', fontSize: 13 }} onClick={() => decide('accepted')}>{t('cookie.accept', 'Aceptar')}</button>
       </div>
     </div>
   );

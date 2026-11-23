@@ -18,6 +18,12 @@ const CACHE_PATHS = [
   'manifest.json',
   'css/style.css',
   'fonts/fonts.css',
+  'vendor/react-18.3.1.production.min.js',
+  'vendor/react-dom-18.3.1.production.min.js',
+  'vendor/babel-standalone-7.26.4.min.js',
+  'fonts/Fraunces-latin-wght-normal.woff2',
+  'fonts/Fraunces-latin-wght-italic.woff2',
+  'fonts/JetBrainsMono-latin-wght-normal.woff2',
   'trivias/all.json',
   'trivias/general.json',
   'trivias/historia_cocteles.json',
@@ -141,7 +147,7 @@ const CACHE_PATHS = [
 // Build full pathnames like /Stirio/index.html or /index.html
 const CACHE_LIST = CACHE_PATHS.map(p => BASE + p);
 
-const STATIC_CACHE_VERSION = `Stirio-v12.50`;
+const STATIC_CACHE_VERSION = `Stirio-v12.51`;
 const DEBUG = false;
 
 self.addEventListener('install', function(event) {
