@@ -281,6 +281,11 @@ const App = () => {
   const [tweaks, setTweaks]           = useState(loadTweaks());
   const [inviteCode, setInviteCode]   = useState(initialInvite);
   const [pendingDailyChallenge, setPendingDailyChallenge] = useState(initialDailyChallenge);
+  // Campaign deep link (?ref=ig&c=quiz-negroni …) — see js/campaign.js.
+  // Captured once (the helper strips the params and stores attribution).
+  const [pendingCampaign, setPendingCampaign] = useState(() => {
+    try { return window.stCampaign?.captureCampaignFromLocation?.()?.action || null; } catch { return null; }
+  });
 
   // ── Router shortcuts (stable across renders) ────────────────────────────
   // setScreen used to switch the top-level screen AND clear any subscreen.
@@ -736,6 +741,21 @@ const App = () => {
     if (activeLesson || subScreen) return;
     openMode('daily');
   }, [pendingDailyChallenge, screen, activeLesson, subScreen]);
+
+  // Campaign deep link: same timing as the daily challenge above — wait until
+  // Home is reached (after onboarding for new users), then open the target once.
+  useEffect(() => {
+    if (!pendingCampaign) return;
+    if (screen !== 'home') return;
+    if (activeLesson || subScreen || pendingDailyChallenge) return;
+    const action = pendingCampaign;
+    setPendingCampaign(null);
+    if (action.type === 'mode') { openMode(action.mode); return; }
+    if (action.type === 'ficha') {
+      const ficha = window.stCampaign?.findFichaBySlug?.(window.ALL_FICHAS, action.slug);
+      if (ficha) setFichaOpen(ficha);
+    }
+  }, [pendingCampaign, screen, activeLesson, subScreen, pendingDailyChallenge]);
 
   const updateTweak = (key, val) => {
     let next = { ...tweaks, [key]: val };

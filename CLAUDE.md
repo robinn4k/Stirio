@@ -250,6 +250,21 @@ processes at 3/day. To add more:
 3. Don't worry about i18n — `complete` writes to `i18n/es.json`, then
    `translate` propagates to EN/FR/PT/DE on the next cron tick.
 
+## Campaign deep links (Instagram / social)
+
+`js/campaign.js` (ES module, exposed as `window.stCampaign`) reads
+`?ref=<source>&c=<campaign>` on boot, stores first/last touch in
+`localStorage['stirio::attribution']`, strips the params, and once Home is
+reached (after onboarding) opens the target:
+
+- `c=reto-diario` / `daily`, `c=velocidad` / `speed` → that lesson
+- `c=mode-<id>` → any mode in `MODE_ROUTES` (`mode-blind`, `mode-academy`…)
+- `c=quiz-<slug>` / `ficha-<slug>` → recipe card; slug = `slugify(ficha.name)`
+  (`Piña Colada` → `pina-colada`)
+
+Example for a Reel: `https://<host>/?ref=ig&c=quiz-negroni`. Unknown `c`
+values are still recorded for attribution.
+
 ## Admin console
 
 Reachable from **Perfil → Cuenta → "🔧 Consola admin"** when the signed-in

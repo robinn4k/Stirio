@@ -67,7 +67,7 @@
   <script src="vendor/babel-standalone-7.26.4.min.js"></script>
 
   <!-- App version — kept in sync with STATIC_CACHE_VERSION in sw.js -->
-  <script>window.STIRIO_VERSION = '12.51';</script>
+  <script>window.STIRIO_VERSION = '12.52';</script>
 
   <!-- Google Identity Services — modern Google sign-in flow (no 3P cookies needed).
        Loaded async; auth.js polls for window.google.accounts.id before using it. -->
@@ -91,12 +91,14 @@
     import * as stLessonSteps from './js/lesson-steps.js';
     import * as stModes from './js/modes.js';
     import * as stEuvsUtils from './js/euvs-archive-utils.js';
+    import * as stCampaign from './js/campaign.js';
     window.stRouter = stRouter;
     window.stServices = stServices;
     window.stStore = stStore;
     window.stLessonSteps = stLessonSteps;
     window.stModes = stModes;
     window.stEuvsUtils = stEuvsUtils;
+    window.stCampaign = stCampaign;
   </script>
 
   <!-- Legacy ES modules (loaded asynchronously, exposed on window.st* AND in
